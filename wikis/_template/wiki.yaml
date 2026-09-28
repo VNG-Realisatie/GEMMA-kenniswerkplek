@@ -15,7 +15,7 @@ test_targets:
     code: staging
 
 content:
-  layout: namespace                  # namespace (default) | category (Klus 4)
+  layout: namespace                  # namespace (default) | category (nest categorie onder naamruimte, zie 'llmwiki pull --help')
   namespaces: [0]
 
 publish:

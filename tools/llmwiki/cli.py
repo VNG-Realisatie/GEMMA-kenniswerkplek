@@ -206,41 +206,214 @@ def _gate_command(args, action: str) -> int:
     return 0
 
 
+def _revisions_path(wiki_root: Path, doel: str) -> Path:
+    return wiki_root / "revisies.json" if doel == "site" else wiki_root / ".work" / "sync" / f"{doel}.json"
+
+
+def _load_revisions(wiki_root: Path, doel: str) -> dict:
+    path = _revisions_path(wiki_root, doel)
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+
+
+def _save_revisions(wiki_root: Path, doel: str, revisions: dict) -> None:
+    path = _revisions_path(wiki_root, doel)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(revisions, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8")
+
+
+def _has_uncommitted_changes(wiki_root: Path, pad: str) -> bool:
+    status = subprocess.run(
+        ["git", "-C", str(wiki_root), "status", "--porcelain", "--", pad],
+        capture_output=True, text=True, check=False,
+    ).stdout
+    return bool(status.strip())
+
+
+def _categorie_voorrang_path(wiki_root: Path) -> Path:
+    return wiki_root / "categorie-voorrang.json"
+
+
+def _load_categorie_voorrang(wiki_root: Path) -> list[str]:
+    path = _categorie_voorrang_path(wiki_root)
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+
+
+def _geef_voorrang(wiki_root: Path, categorie: str) -> None:
+    """Eenmaal gekozen (automatisch bij precies 1 categorie, of expliciet via
+    --categorie) krijgt een categorie voorrang bij een volgende, op zichzelf
+    ambigue pagina. Alleen platte namen (geen '/'-nesting via --categorie),
+    want dat is wat page_categories() teruggeeft om tegen te vergelijken."""
+    if "/" in categorie:
+        return
+    voorrang = _load_categorie_voorrang(wiki_root)
+    if categorie not in voorrang:
+        voorrang.append(categorie)
+        _categorie_voorrang_path(wiki_root).write_text(
+            json.dumps(voorrang, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
+
+def _resolve_categorie_pad(
+    wiki_root: Path, site, wiki_yaml: dict, titel: str, categorie_arg: str | None
+) -> list[str] | None:
+    """0 categorieën -> geen categoriemap; 1 -> automatisch; meer -> beslist
+    voorrang (categorie-voorrang.json) als precies één van de categorieën al
+    voorrang heeft; anders (of bij >=2 voorrangscategorieën) vereist het
+    --categorie (navragen, niet gokken; zie AGENTS.md wikis/gemma). Een
+    nieuw opgeloste categorie krijgt zelf voorrang voor de volgende keer."""
+    if wiki_yaml.get("content", {}).get("layout") != "category":
+        if categorie_arg:
+            raise sync_module.SyncError("--categorie is alleen van toepassing bij content.layout: category in wiki.yaml")
+        return None
+    if categorie_arg:
+        _geef_voorrang(wiki_root, categorie_arg.split("/")[0])
+        return categorie_arg.split("/")
+
+    categorieen = sync_module.page_categories(site, titel)
+    if not categorieen:
+        return None
+    if len(categorieen) == 1:
+        _geef_voorrang(wiki_root, categorieen[0])
+        return [categorieen[0]]
+
+    voorrang = _load_categorie_voorrang(wiki_root)
+    treffers = [c for c in categorieen if c in voorrang]
+    if len(treffers) == 1:
+        return [treffers[0]]
+
+    detail = f" -- {len(treffers)} daarvan hebben al voorrang: {', '.join(treffers)}" if len(treffers) > 1 else ""
+    raise sync_module.SyncError(
+        f"'{titel}' heeft {len(categorieen)} categorieën ({', '.join(categorieen)}); "
+        f"geef er één mee met --categorie (evt. genest: 'Boven/Onder'){detail}"
+    )
+
+
 def cmd_pull(args) -> int:
     wiki_root = _wiki_root(args)
     wiki_yaml = paths.load_wiki_yaml(wiki_root)
     doel = args.doel or "site"
     try:
         site = sync_module.get_site(wiki_yaml, doel)
+    except sync_module.SyncError as exc:
+        print(f"FOUT: {exc}", file=sys.stderr)
+        return 1
+
+    if args.categorieboom:
+        return _pull_categorieboom(wiki_root, wiki_yaml, site, doel, args)
+
+    from . import titles as titles_module
+
+    try:
+        categorie_pad = _resolve_categorie_pad(wiki_root, site, wiki_yaml, args.titel, args.categorie)
         result = sync_module.pull_page(site, args.titel)
     except sync_module.SyncError as exc:
         print(f"FOUT: {exc}", file=sys.stderr)
         return 1
 
-    from . import titles as titles_module
-
-    pad = "content/" + titles_module.title_to_path(result.title, result.namespace, result.contentmodel)
+    pad = "content/" + titles_module.title_to_path(result.title, result.namespace, result.contentmodel, categorie_pad)
     target = wiki_root / pad
-    if target.exists() and not args.force:
-        status = subprocess.run(
-            ["git", "-C", str(wiki_root), "status", "--porcelain", "--", pad],
-            capture_output=True, text=True, check=False,
-        ).stdout
-        if status.strip():
-            print(f"FOUT: {pad} heeft niet-gecommitteerde wijzigingen; gebruik --force om te overschrijven", file=sys.stderr)
-            return 1
+    if target.exists() and not args.force and _has_uncommitted_changes(wiki_root, pad):
+        print(f"FOUT: {pad} heeft niet-gecommitteerde wijzigingen; gebruik --force om te overschrijven", file=sys.stderr)
+        return 1
 
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(result.text, encoding="utf-8", newline="\n")
 
-    revisions_path = wiki_root / "revisies.json" if doel == "site" else wiki_root / ".work" / "sync" / f"{doel}.json"
-    revisions_path.parent.mkdir(parents=True, exist_ok=True)
-    revisions = json.loads(revisions_path.read_text(encoding="utf-8")) if revisions_path.exists() else {}
+    revisions = _load_revisions(wiki_root, doel)
     revisions[pad] = {"titel": result.title, "revid": result.revid}
-    revisions_path.write_text(json.dumps(revisions, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8")
+    _save_revisions(wiki_root, doel, revisions)
 
     print(f"Opgehaald: {pad}")
     return 0
+
+
+def _pull_categorieboom(wiki_root: Path, wiki_yaml: dict, site, doel: str, args) -> int:
+    """Haalt Categorie:<root> en al haar subcategorieën recursief op (bulk-
+    import), inclusief subpagina's (harde link, altijd mee, ongeacht status of
+    eigen categorie). `--skip-if-match <regex>` is generiek: llmwiki kent geen
+    wiki-specifieke velden zoals GEMMA's Redactiestatus, een wiki-Skill geeft
+    dat patroon desgewenst mee. Verplaatsen bij hercategorisatie van een al
+    bekende titel is nog niet gebouwd (bekende beperking)."""
+    import re
+
+    from . import titles as titles_module
+
+    if wiki_yaml.get("content", {}).get("layout") != "category":
+        print("FOUT: --categorieboom vereist content.layout: category in wiki.yaml", file=sys.stderr)
+        return 1
+    toegestane_namespaces = set(wiki_yaml.get("content", {}).get("namespaces", [0]))
+    skip_re = re.compile(args.skip_if_match) if args.skip_if_match else None
+
+    resultaten: dict[str, sync_module.PageResult] = {}
+    mislukt: list[str] = []
+
+    def _haal_op(titel: str) -> sync_module.PageResult | None:
+        if titel not in resultaten:
+            try:
+                resultaten[titel] = sync_module.pull_page(site, titel)
+            except sync_module.SyncError as exc:
+                mislukt.append(f"{titel}: {exc}")
+                return None
+        return resultaten[titel]
+
+    categorie_pad_by_titel: dict[str, list[str]] = {}
+    overgeslagen_status: list[str] = []
+    for entry in sync_module.category_tree(site, args.categorieboom):
+        if entry.namespace not in toegestane_namespaces or entry.titel in categorie_pad_by_titel:
+            continue
+        result = _haal_op(entry.titel)
+        if result is None:
+            continue
+        if skip_re and skip_re.search(result.text):
+            overgeslagen_status.append(entry.titel)
+            continue
+        categorie_pad_by_titel[entry.titel] = entry.categorie_pad
+        for sub_titel in sync_module.subpage_titles(site, entry.titel):
+            if sub_titel not in categorie_pad_by_titel:
+                categorie_pad_by_titel[sub_titel] = entry.categorie_pad
+
+    paden_by_titel = {}
+    for titel, categorie_pad in categorie_pad_by_titel.items():
+        result = _haal_op(titel)
+        if result is None:
+            continue
+        paden_by_titel[titel] = titles_module.title_to_path(
+            titel, result.namespace, result.contentmodel, categorie_pad
+        )
+    paden_by_titel = titles_module.apply_index_convention(paden_by_titel)
+
+    revisions = _load_revisions(wiki_root, doel)
+    geschreven, overgeslagen_lokaal = [], []
+    for titel, pad_rel in sorted(paden_by_titel.items()):
+        pad = "content/" + pad_rel
+        target = wiki_root / pad
+        if target.exists() and not args.force and _has_uncommitted_changes(wiki_root, pad):
+            overgeslagen_lokaal.append(pad)
+            continue
+        result = resultaten[titel]
+        if not args.dry_run:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_text(result.text, encoding="utf-8", newline="\n")
+            revisions[pad] = {"titel": result.title, "revid": result.revid}
+        geschreven.append(pad)
+
+    if not args.dry_run:
+        _save_revisions(wiki_root, doel, revisions)
+
+    label = "Zou ophalen" if args.dry_run else "Opgehaald"
+    for pad in geschreven:
+        print(f"{label}: {pad}")
+    for titel in overgeslagen_status:
+        print(f"Overgeslagen (skip-if-match): {titel}")
+    for pad in overgeslagen_lokaal:
+        print(f"Overgeslagen (niet-gecommitteerde lokale wijzigingen, gebruik --force): {pad}")
+    for msg in mislukt:
+        print(f"MISLUKT: {msg}", file=sys.stderr)
+    print(
+        f"Totaal: {len(geschreven)} {'te halen' if args.dry_run else 'opgehaald'}, "
+        f"{len(overgeslagen_status) + len(overgeslagen_lokaal)} overgeslagen, {len(mislukt)} mislukt"
+    )
+    return 1 if mislukt else 0
 
 
 def cmd_harness_sync(args) -> int:
@@ -399,7 +572,23 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_pull = sub.add_parser("pull", help="Haal een pagina op van een sync-wiki")
     add_wiki_arg(p_pull)
-    p_pull.add_argument("--titel", required=True)
+    p_pull_bron = p_pull.add_mutually_exclusive_group(required=True)
+    p_pull_bron.add_argument("--titel", help="Eén pagina")
+    p_pull_bron.add_argument(
+        "--categorieboom",
+        help="Bulk: deze categorie en al haar subcategorieën/leden/subpagina's (content.layout: category)",
+    )
+    p_pull.add_argument(
+        "--categorie",
+        help="Bij --titel en content.layout: category: forceer/kies de categoriemap (evt. genest 'Boven/Onder'); "
+        "verplicht als de pagina meer dan één categorie heeft",
+    )
+    p_pull.add_argument(
+        "--skip-if-match",
+        help="Alleen bij --categorieboom: sla een categorielid over als zijn wikitext dit regex-patroon bevat "
+        "(bv. een wiki-specifiek archiefstatusveld); subpagina's worden nooit op basis hiervan overgeslagen",
+    )
+    p_pull.add_argument("--dry-run", action="store_true", help="Alleen bij --categorieboom: toon wat er zou gebeuren")
     p_pull.add_argument("--doel", help="Naam uit wiki.yaml test_targets, standaard het hoofddoel")
     p_pull.add_argument("--force", action="store_true")
     p_pull.set_defaults(func=cmd_pull)

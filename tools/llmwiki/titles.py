@@ -57,8 +57,16 @@ def _needs_suffix(segment: str) -> bool:
     return stem.upper() in RESERVED_NAMES or len(segment) > MAX_SEGMENT_LENGTH
 
 
-def title_to_path(title: str, namespace: int, contentmodel: str = "wikitext") -> str:
-    """Zet een MediaWiki-titel om naar een pad relatief aan content/."""
+def title_to_path(
+    title: str, namespace: int, contentmodel: str = "wikitext", categorie_pad: list[str] | None = None
+) -> str:
+    """Zet een MediaWiki-titel om naar een pad relatief aan content/.
+
+    `categorie_pad` (alleen bij `content.layout: category`, zie docs/kluswijzer.md
+    Klus 4) nestelt de categoriehiërarchie ónder de naamruimte-map, bv.
+    ['Landingspagina'] -> 'main/Landingspagina/Wat is GEMMA.wiki'. Zonder
+    categorie_pad ongewijzigd t.o.v. `content.layout: namespace`.
+    """
     ns_folder = NAMESPACE_CANONICAL.get(namespace, f"ns{namespace}")
     if ":" in title:
         _, _, rest = title.partition(":")
@@ -76,7 +84,8 @@ def title_to_path(title: str, namespace: int, contentmodel: str = "wikitext") ->
         last = f"{stem}~{digest}{ext}"
     segments[-1] = last
 
-    return "/".join([ns_folder, *segments])
+    categorie_segments = [_encode_segment(c) for c in (categorie_pad or [])]
+    return "/".join([ns_folder, *categorie_segments, *segments])
 
 
 def apply_index_convention(paths_by_title: dict[str, str]) -> dict[str, str]:

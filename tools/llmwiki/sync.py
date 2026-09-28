@@ -87,6 +87,54 @@ def pull_pages(site, titles: list[str]) -> dict[str, PageResult]:
     return {t: _page_result(t, p) for t, p in pages.items() if p.exists()}
 
 
+def page_categories(site, title: str) -> list[str]:
+    """Categorienamen van een pagina, zonder 'Categorie:'/'Category:'-prefix."""
+    pywikibot = _import_pywikibot()
+    page = pywikibot.Page(site, title)
+    return [c.title(with_ns=False) for c in page.categories()]
+
+
+def subpage_titles(site, title: str) -> list[str]:
+    """Alle subpagina's van `title`, op elke diepte, ongeacht hun eigen status
+    of categorie -- pagina/subpagina is een harde link, altijd meenemen."""
+    pywikibot = _import_pywikibot()
+    page = pywikibot.Page(site, title)
+    bare, ns_id = page.title(with_ns=False), page.namespace().id
+    return [p.title() for p in site.allpages(prefix=bare + "/", namespace=ns_id)]
+
+
+@dataclass
+class CategoryTreeEntry:
+    categorie_pad: list[str]
+    titel: str
+    namespace: int
+
+
+def category_tree(site, root_categorie: str):
+    """Wandelt een categorie en al haar subcategorieën recursief af (cykelveilig
+    via een bezocht-set). Yield één CategoryTreeEntry per artikel-lid, met
+    `categorie_pad` = de categorienamen van root tot en met de directe
+    oudercategorie van dat lid (zonder 'Categorie:'-prefix). Categoriepagina's
+    zelf worden niet als lid opgeleverd, alleen als tak in categorie_pad."""
+    pywikibot = _import_pywikibot()
+    prefix = "Categorie:" if not (":" in root_categorie and root_categorie.split(":", 1)[0].lower() in ("categorie", "category")) else ""
+    root = pywikibot.Category(site, prefix + root_categorie)
+
+    gezien: set[str] = set()
+
+    def _walk(cat, pad: list[str]):
+        naam = cat.title(with_ns=False)
+        if naam in gezien:
+            return
+        gezien.add(naam)
+        for lid in cat.articles(recurse=False):
+            yield CategoryTreeEntry(pad, lid.title(), lid.namespace().id)
+        for sub in cat.subcategories():
+            yield from _walk(sub, pad + [sub.title(with_ns=False)])
+
+    yield from _walk(root, [root.title(with_ns=False)])
+
+
 def push_page(site, title: str, new_text: str, base_revid: int | None, summary: str) -> PageResult:
     """Vlak vóór opslaan herophalen en vergelijken met base_revid (uit
     revisies.json of .work/sync/<doel>.json) -- afwijking = iemand anders
