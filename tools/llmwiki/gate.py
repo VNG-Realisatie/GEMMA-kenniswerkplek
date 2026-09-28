@@ -210,7 +210,7 @@ def _materialize_sync(wiki_root: Path, wiki_yaml: dict, run_id: str, doel: str, 
             revisies[entry["pad"]] = {"titel": entry["titel"], "revid": result.revid}
             _save_revisions(wiki_root, doel, revisies)
             content_hash = hashing.hash_text(new_text)
-            logbook.append_log(wiki_root, "publish", entry["titel"], beoordeeld_door, content_hash)
+            logbook.append_log(wiki_root, "publish", entry["titel"], beoordeeld_door, content_hash, doel=doel)
             gelukt.append(entry["pad"])
     except sync_module.SyncError as exc:
         mislukt = [e["pad"] for e in plan_obj["paginas"] if e["pad"] not in gelukt]

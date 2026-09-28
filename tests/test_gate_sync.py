@@ -133,6 +133,25 @@ def test_plan_and_apply_publishes_new_page(sync_repo, fake_pywikibot):
 
     log_text = (wiki_root / "log.md").read_text()
     assert "Contact" in log_text
+    assert "| site |" in log_text
+
+
+def test_apply_to_staging_logs_the_doel(sync_repo, fake_pywikibot):
+    root, wiki_root = sync_repo
+    wiki_yaml = paths.load_wiki_yaml(wiki_root)
+    run_id = _start_run_through_validate(wiki_root, wiki_yaml)
+
+    content_path = wiki_root / "content" / "main" / "Contact.wiki"
+    content_path.write_text("Nieuwe inhoud.\n", encoding="utf-8")
+
+    gate.plan(
+        wiki_root, wiki_yaml, run_id, doel="staging",
+        paths=["content/main/Contact.wiki"], titel_overrides={"content/main/Contact.wiki": "Contact"},
+    )
+    gate.apply(wiki_root, wiki_yaml, run_id, akkoord_woord="AKKOORD", doel="staging")
+
+    log_text = (wiki_root / "log.md").read_text()
+    assert "| staging |" in log_text
 
 
 def test_apply_detects_conflict_when_live_page_changed_since_plan(sync_repo, fake_pywikibot):

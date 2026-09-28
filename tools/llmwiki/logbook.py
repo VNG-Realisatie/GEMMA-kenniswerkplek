@@ -9,9 +9,14 @@ from pathlib import Path
 from . import frontmatter, hashing, runs
 
 
-def append_log(wiki_root: Path, actie: str, pagina_id: str, beoordeeld_door: str, content_hash: str) -> None:
+def append_log(
+    wiki_root: Path, actie: str, pagina_id: str, beoordeeld_door: str, content_hash: str, doel: str | None = None
+) -> None:
+    """`doel` is het sync-publicatiedoel (bv. 'site' of 'staging'); curation/
+    knowledge-base kennen geen testdoelen en laten dit weg."""
     log_path = wiki_root / "log.md"
-    line = f"## [{date.today().isoformat()}] {actie} | {pagina_id} | {beoordeeld_door} | {hashing.short(content_hash)}\n"
+    doel_kolom = f"{doel} | " if doel else ""
+    line = f"## [{date.today().isoformat()}] {actie} | {pagina_id} | {doel_kolom}{beoordeeld_door} | {hashing.short(content_hash)}\n"
     with log_path.open("a", encoding="utf-8") as fh:
         fh.write(line)
 
