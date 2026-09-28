@@ -1,7 +1,15 @@
 {
+  "content/main/Landingspagina/Wat is GEMMA.wiki": {
+    "revid": 507454,
+    "titel": "Wat is GEMMA"
+  },
   "content/main/wikisync_test.wiki": {
     "revid": 507459,
     "titel": "Wikisync test"
+  },
+  "content/mediawiki/Layout Elements/Sidebar.wiki": {
+    "revid": 507460,
+    "titel": "MediaWiki:Sidebar"
   },
   "content/mediawiki/Sidebar.wiki": {
     "revid": 507460,

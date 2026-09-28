@@ -10,21 +10,41 @@ Context staan: lees dat bestand voordat je iets wijzigt.
   Doelgroep: informatiearchitecten en beleidsmedewerkers bij gemeenten en VNG.
 - Naamruimtes in scope: hoofdnaamruimte (0), `MediaWiki:` (8, o.a. zijbalk) en
   `Sjabloon:`/`Template:` (10) — zie `wiki.yaml` → `content.namespaces`.
-  `Categorie:`/`Category:` (14) is namespace-alias voor `Sjabloon:` t.o.v.
-  `Template:`: dezelfde pagina, twee namen.
-- Alleen actuele pagina's overnemen: controleer de `{{Publicatie|...|
-  Redactiestatus=...}}`-header; alleen `Actueel` bijwerken, `Gearchiveerd`
-  overslaan. (Nog niet geautomatiseerd in `llmwiki pull` — tot die tijd handmatig
-  controleren vóór het ophalen van een pagina.)
+  Namespace-aliassen: `Categorie:` = `Category:` (beide naamruimte 14),
+  `Sjabloon:` = `Template:` (beide naamruimte 10) — steeds dezelfde pagina,
+  twee namen.
+- Alleen actuele pagina's overnemen bij een bulk-import: controleer de
+  `{{Publicatie|...|Redactiestatus=...}}`-header; alleen `Actueel` bijwerken,
+  `Gearchiveerd` overslaan. Dit is GEMMA-specifieke kennis, dus geen ingebouwd
+  gedrag van `llmwiki pull` (dat kent geen Redactiestatus-veld) — geef het mee
+  als generiek content-filter: `--skip-if-match 'Redactiestatus\s*=\s*Gearchiveerd'`.
+  Een los aangehaalde `--titel` haalt altijd op, ongeacht status — dat is een
+  expliciet verzoek, geen landingspagina-crawl.
+- Categorie-lay-out (`content.layout: category` in `wiki.yaml`): nest de
+  categoriemap ónder de naamruimte-map, bv.
+  `content/main/Landingspagina/Wat is GEMMA.wiki`. `llmwiki pull --titel <naam>`
+  plaatst automatisch bij precies één categorie, vraagt om `--categorie` bij
+  meer dan één (nooit gokken — "Wat is GEMMA" heeft er bv. vier, waarvan twee
+  statustracking zijn: `Actueel`, `SmartPublish-Watched`).
+  `categorie-voorrang.json` (git-getrackt, tool-beheerd) onthoudt elke zo
+  gekozen categorie; heeft een volgende, zelf ook ambigue pagina precies één
+  categorie die al voorrang heeft, dan wordt die automatisch gebruikt zonder
+  opnieuw te vragen — pas bij ≥2 voorrangscategorieën in dezelfde pagina wordt
+  het weer een vraag.
+  `llmwiki pull --categorieboom <naam>` haalt een hele (sub)categorieboom in
+  één keer op, inclusief subpagina's (harde link: altijd mee, ongeacht hun
+  eigen status/categorie) — plaatst puur op de crawl-tak, gebruikt
+  `categorie-voorrang.json` niet (geen ambiguïteit daar: de tak bepaalt de map).
+  Nog niet gebouwd: automatisch verplaatsen van een al bekende titel bij
+  hercategorisatie op de site (bekende beperking).
 - Staging (`gemma2-redactie.staging.wikixl.nl`, `wiki.yaml` → `test_targets.staging`)
   is een periodiek ververste testkopie van productie, geen aparte bron: alleen
   gebruiken om de `wiki-edit`-workflow te oefenen vóór publicatie naar het
   hoofddoel; niet zelf inhoudelijk bewerken alsof het de bron van waarheid is.
-- Achtergrond en een oudere, los van deze monorepo werkende implementatie
-  (categoriehiërarchie-mapstructuur, bulk-pull, Redactiestatus-filter) staat in
-  `~/Documents/GitHub/GEMMA-wiki beheren/CLAUDE.md` — nuttig als referentie
-  zolang `content.layout: category` hier nog niet is gebouwd, maar geen
-  onderdeel van deze repository en niet als afhankelijkheid te gebruiken.
+- Achtergrond: een oudere, los van deze monorepo werkende implementatie met
+  dezelfde categoriehiërarchie-mapstructuur en bulk-pull-aanpak staat in
+  `~/Documents/GitHub/GEMMA-wiki beheren/CLAUDE.md` — geen onderdeel van deze
+  repository en niet als afhankelijkheid te gebruiken, puur ter referentie.
 
 ## Standaard Workflow
 

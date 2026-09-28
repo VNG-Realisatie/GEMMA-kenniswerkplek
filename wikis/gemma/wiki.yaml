@@ -15,7 +15,7 @@ test_targets:
     code: staging
 
 content:
-  layout: namespace                  # namespace (default) | category (nog niet gebouwd, zie AGENTS.md)
+  layout: category                   # namespace (default) | category (nest categorie onder naamruimte, zie AGENTS.md)
   namespaces: [0, 8, 10]             # hoofdnaamruimte, MediaWiki (sidebar e.d.), Sjabloon
 
 publish:
