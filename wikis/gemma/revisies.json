@@ -2,5 +2,9 @@
   "content/main/wikisync_test.wiki": {
     "revid": 507459,
     "titel": "Wikisync test"
+  },
+  "content/mediawiki/Sidebar.wiki": {
+    "revid": 507460,
+    "titel": "MediaWiki:Sidebar"
   }
 }
