@@ -51,7 +51,7 @@ Achtergrond per onderdeel: `docs/onderbouwing.md` (sectienummers tussen haakjes)
 
 **Taak.**
 
-1. Maak het sjabloon `wikis/_template/` met `AGENTS.md` (eerste regel verwijst naar `../../AGENTS.md`), `wiki.yaml` naar de test-MediaWiki met `publish.approval: document`, en lege mappen `content/`, `onderwerpen/`, `bronnen/`, `records/`, `.agents/skills/`. Zet `sources.tags` in `wiki.yaml` (scoping, 5.19).
+1. Maak het sjabloon `wikis/_template/` (type `sync`, een kale werkkopie — zie 5.18) met `AGENTS.md` (eerste regel verwijst naar `../../AGENTS.md`), `wiki.yaml` naar de test-MediaWiki met `publish.approval: document`, `site.family`/`site.code` (een geregistreerde pywikibot-family), en lege mappen `content/`, `voorstellen/`, `.agents/skills/`, plus een leeg `revisies.json` (`{}`) en `log.md`. Geen `onderwerpen/`/`bronnen/`/`records/` — dat hoort bij een curatie-wiki (Klus 3), niet bij een sync-wiki.
 2. Bouw `llmwiki harness sync` en `llmwiki harness check` (5.7, 5.16):
    - brug `.claude/skills/` voor elke `.agents/skills/`: eerst symlink, dan junction op Windows, dan kopie met bronvermelding;
    - MCP-configuratie per wiki uit `wiki.yaml`: `.mcp.json`, `opencode.json`, `.codex/config.toml`, `.vscode/mcp.json`, `.cursor/mcp.json`;
@@ -79,18 +79,17 @@ Achtergrond per onderdeel: `docs/onderbouwing.md` (sectienummers tussen haakjes)
 **Taak.**
 
 1. Bouw het gereedschap in `tools/llmwiki/`:
-   - `pull` met titelmapping en `.meta.json` per pagina (5.13);
-   - `run start|status|complete|resume|close|abandon|prune` met State in `.work/runs/<run-id>/` (5.11);
-   - schemas en `validate` voor source, assessment, changeset, validation-report, publish-plan, approval, page-meta, run-state (5.12);
-   - `publish plan|apply` en `export plan|apply` met publicatievoorstel, akkoordcontrole (smaak A: `ja`, naam, actuele plan-hash), revisiecontrole en daarna records (5.13);
-   - records in `records/kandidaten/` en `records/logboek/`, afgeleid uit artefacten (5.11);
+   - `pull` met titelmapping (`titles.py`) en een gecommit `revisies.json` (titel → laatst bekende revisie) per wiki (5.13);
+   - `run start|status|complete|resume|close|abandon|prune` met State in `.work/runs/<run-id>/` (5.11); `phases_for(wiki_yaml)` bepaalt de fasen per wiki-soort (sync: alleen `validate`; curation: de vier fasen; knowledge-base: geen — geen run/gate);
+   - schemas en `validate` voor source, assessment, changeset, validation-report, publish-plan, approval, run-state (5.12);
+   - `publish plan|apply` (sync, via pywikibot) en `promote plan|apply` (curation): publicatievoorstel, akkoordcontrole (smaak A: `ja`, naam, actuele plan-hash), conflictcontrole (5.13); geen aparte records meer — beide schrijven een regel in `log.md`;
    - bronbeheer (5.19): `source add` (origineel en Markdown-conversie met dezelfde naam in `sources/raw/`, hash, weigert bestaand bron-id), `source list` met scoping via tags, `source add --from-export`; schema `source-index`; pre-commit staat in `sources/raw/` alleen toevoegen toe;
    - `run start --onderwerp` legt de bronlijst van de onderwerppagina vast; INGEST en ASSESS krijgen alleen die bronnen;
    - `lint` voor skillnamen, voorvoegsels, frontmatter, `requires-skills` en verboden verwijzingen van gedeelde naar wiki-specifieke onderdelen (5.4, 5.7);
-   - zonder MediaWiki-afhankelijkheid (5.18): Markdown-validatie (frontmatter per paginatype, relatieve links, statusovergangen), `promote plan|apply`, `log.md` en `voortgang.md`, writers voor ArchiMate Open Exchange en CSV; pywikibot alleen via de extra `mediawiki`.
-   Test met een tweede sjabloon `wikis/_template-md` (type B) naast het bestaande `wikis/_template` (type A).
-2. Schrijf de gedeelde vaardigheden in `.agents/skills/`: `wiki-intake` (laag 2, controle van de conversie), `wiki-ingest` (laag 3, domein-lens), `wiki-assess`, `wiki-write`, `wiki-validate`, `wiki-publish` (5.7). Alleen standaardvelden plus `metadata`; `wiki-publish` krijgt `disable-model-invocation: true` en `agents/openai.yaml` met `allow_implicit_invocation: false`.
-3. Schrijf de gedeelde werkstroom `wiki-update` met fasen, rollen, uitbreidingspunten, delegatie en beide gate-smaken (5.8).
+   - zonder MediaWiki-afhankelijkheid (5.18): Markdown-validatie (frontmatter per paginatype, relatieve links, statusovergangen), `promote plan|apply`, `log.md` en `voortgang.md`; writers voor ArchiMate Open Exchange en CSV pas bij een concrete `exports:`-behoefte (Klus 4); pywikibot alleen via de extra `mediawiki`.
+   Test met een tweede sjabloon `wikis/_template-md` (type `curation`) naast het bestaande `wikis/_template` (type `sync`).
+2. Schrijf de gedeelde vaardigheden in `.agents/skills/`: `wiki-intake` (laag 2, controle van de conversie), `wiki-ingest` (laag 3, domein-lens), `wiki-assess`, `wiki-write`, `wiki-validate`, `wiki-publish`, `wiki-kennis-ingest` (knowledge-base) (5.7). Alleen standaardvelden plus `metadata`; `wiki-publish` krijgt `disable-model-invocation: true` en `agents/openai.yaml` met `allow_implicit_invocation: false`.
+3. Schrijf de gedeelde werkstromen `wiki-update` (curation) en `wiki-edit` (sync) met fasen, rollen, uitbreidingspunten, delegatie en beide gate-smaken (5.8).
 4. Schrijf tests voor het gereedschap, met ten minste deze gevallen voor de gate:
    - voorstel op `nee` → weigeren;
    - `ja` zonder naam → weigeren;
@@ -100,10 +99,10 @@ Achtergrond per onderdeel: `docs/onderbouwing.md` (sectienummers tussen haakjes)
 
 **Eindresultaat.**
 
-- [ ] In `wikis/_template` doorloopt een testbron alle fasen tegen de test-MediaWiki, in minstens één AI-omgeving, met smaak A en met smaak B.
+- [ ] In `wikis/_template` doorloopt een testpagina de volledige `wiki-edit`-workflow (pull → bewerken → validate → plan → akkoord → publish) tegen de test-MediaWiki, in minstens één AI-omgeving, met smaak A en met smaak B.
 - [ ] Twee testbronnen (pdf en docx) staan als origineel en Markdown in `sources/raw/` en met intake in `sources/index/`; een tweede wiki hergebruikt de intake zonder die opnieuw te maken; een wijziging in `sources/raw/` wordt door de pre-commit-hook geweigerd.
 - [ ] Een run gestart vanuit een onderwerppagina leest alleen de bronnen van die pagina; een bron buiten de tags van de wiki wordt door `validate` gemeld.
-- [ ] Na publicatie staan twee records in `records/` en is de testpagina bijgewerkt op de test-MediaWiki.
+- [ ] Na publicatie staat een regel in `log.md` en is de testpagina bijgewerkt op de test-MediaWiki.
 - [ ] In `wikis/_template-md` werkt een volledige run zonder MediaWiki-extra geïnstalleerd; een kandidaat die de Agent zelf op `goedgekeurd` zet, wordt door de pre-commit-hook geweigerd; `promote apply` schrijft `log.md` en werkt `voortgang.md` bij.
 - [ ] Een onderbroken run is in een nieuwe sessie te hervatten vanaf de laatste afgeronde fase, zonder eerdere fasen opnieuw uit te voeren.
 - [ ] "Prima" in smaak B leidt niet tot publicatie. In smaak A leidt een voorstel op `nee` niet tot publicatie.
@@ -118,20 +117,26 @@ Achtergrond per onderdeel: `docs/onderbouwing.md` (sectienummers tussen haakjes)
 
 **Taak.**
 
-1. Kopieer `wikis/_template` naar `wikis/gemma`. Vul `AGENTS.md` (domein, taal, stijl, doelgroep, naamgeving, standaardwerkstroom) en `wiki.yaml` (site, namespaces, gekozen smaak, `exports.archimate`, bewaartermijn).
-2. Haal de content op met `llmwiki pull` en commit die. Voeg de GEMMA-bronnen toe met `llmwiki source add`, maak de onderwerppagina's in `onderwerpen/` en kies de tags in `wiki.yaml`.
-3. Voeg GEMMA-specifieke onderdelen toe, alleen voor zover een concreet probleem daarom vraagt:
-   - vaardigheden `gemma-bo` en `gemma-archimate`, met domeinkennis in `references/`;
-   - schema `schemas/bedrijfsobject.schema.json`;
-   - scripts `scripts/check_archimate.py` en `scripts/export_archimate.py`.
-4. Schrijf de werkstroom `gemma-update-wiki`: volgt `wiki-update` en vult de uitbreidingspunten in (5.8).
-5. Draai `llmwiki harness sync` en voer de pariteitstest uit in alle vijf omgevingen (sectie 8). Sluit de verificatiepunten V1 tot en met V9 af en werk `docs/onderbouwing.md` bij met de uitkomsten.
+1. Kopieer `wikis/_template` naar `wikis/gemma` (type `sync`, kale werkkopie). Vul
+   `AGENTS.md` (domein, taal, stijl, doelgroep, naamgeving) en `wiki.yaml` (site,
+   namespaces, gekozen smaak, bewaartermijn).
+2. Haal de content op met `llmwiki pull` en commit die.
+3. Optioneel, alleen voor zover een concreet probleem daarom vraagt: een
+   losstaande curatie-wiki (bv. `wikis/gemma-begrippen`, type `curation` met een
+   ingevuld `exports:`-blok voor ArchiMate) voor gestructureerde
+   begrippenopbouw — géén onderdeel van `wikis/gemma` zelf (5.18: een sync-wiki
+   heeft geen domein-lens). Voeg pas dan GEMMA-specifieke vaardigheden
+   (`gemma-bo`, `gemma-archimate`), een schema en exportscripts toe, in die
+   curatie-wiki.
+4. Schrijf zo nodig een dunne wiki-Workflow bovenop `wiki-edit` (sync) die
+   GEMMA-specifieke controles toevoegt op het uitbreidingspunt VALIDATE (5.8).
+5. Draai `llmwiki harness sync` en voer de pariteitstest uit in alle vijf omgevingen (sectie 8). Sluit de verificatiepunten V1 tot en met V10 af en werk `docs/onderbouwing.md` bij met de uitkomsten.
 
 **Eindresultaat.**
 
-- [ ] `cd wikis/gemma` en een Vraag als *"Verwerk deze nota met gemma-update-wiki"* werkt in alle vijf omgevingen op dezelfde manier: dezelfde fasen, geldige tussenresultaten, stop bij het akkoord.
-- [ ] Eén echte wijziging is gepubliceerd op de GEMMA-site, met records en een commit met de run-id.
-- [ ] Eén architectuurmodel-export is via dezelfde gate uitgevoerd.
-- [ ] Vanuit de hoofdmap zijn GEMMA-vaardigheden niet zichtbaar voor andere wiki's (`llmwiki lint` en een controle per omgeving).
-- [ ] In Obsidian, geopend op de repository-root, werken links van `wikis/gemma/bronnen/` naar `sources/index/` en `sources/raw/`.
-- [ ] De uitkomsten van V1 tot en met V9 staan in `docs/onderbouwing.md`, met eventuele aanpassingen aan de brug, de configuratie of de gate.
+- [ ] `cd wikis/gemma` en een Vraag als *"Werk deze pagina bij met wiki-edit"* werkt in alle vijf omgevingen op dezelfde manier: dezelfde stappen, geldige tussenresultaten, stop bij het akkoord.
+- [ ] Eén echte wijziging is gepubliceerd op de GEMMA-site, met een regel in `log.md` en een commit met de run-id.
+- [ ] Als een curatie-wiki met exportdoel is toegevoegd: één architectuurmodel-export is via dezelfde gate uitgevoerd.
+- [ ] Vanuit de hoofdmap zijn wiki-specifieke vaardigheden niet zichtbaar voor andere wiki's (`llmwiki lint` en een controle per omgeving).
+- [ ] In Obsidian, geopend op de repository-root, werken links van `wikis/gemma-begrippen/bronnen/` (indien aanwezig) naar `sources/index/` en `sources/raw/`.
+- [ ] De uitkomsten van V1 tot en met V10 staan in `docs/onderbouwing.md`, met eventuele aanpassingen aan de brug, de configuratie of de gate.

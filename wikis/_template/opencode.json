@@ -1,0 +1,14 @@
+{
+  "instructions": [
+    "../../AGENTS.md"
+  ],
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "bash": {
+      "*llmwiki pull* --doel *": "ask",
+      "*llmwiki promote apply*": "ask",
+      "*llmwiki publish apply*": "ask",
+      "*pywikibot*": "deny"
+    }
+  }
+}

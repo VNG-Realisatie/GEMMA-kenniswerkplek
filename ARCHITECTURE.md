@@ -8,17 +8,30 @@ Een LLM-wiki is een verzameling kennispagina's die we samen met een AI-assistent
 
 ### Soorten wiki's
 
-| Soort | Wat | Waar staat de waarheid | Laatste stap |
-|---|---|---|---|
-| A: sync | Spiegel van een externe site, bijvoorbeeld GEMMA Online (MediaWiki) | Op de site | Publiceren na akkoord |
-| B: curatie | Markdown-omgeving in Obsidian met onderwerp-, bron- en kandidaatpagina's | In de repository | Kandidaten goedkeuren: `kandidaat` → `review` → `goedgekeurd` |
-| C: hybride | Als B; goedgekeurde kennis gaat naar formele modellen, zoals het GEMMA ArchiMate-model of RSGB/MIM-informatiemodellen in UML/XMI | In de repository | Goedkeuren, daarna exporteren |
+Drie soorten, benoemd naar hun doel:
 
-De soorten vormen samen een keten. Wat de ene wiki goedkeurt, wordt een bron voor de volgende:
+| Soort (`wiki.yaml` `type:`) | Doel | Waar staat de waarheid | Laatste stap |
+|---|---|---|---|
+| `sync` | Een MediaWiki-site beheren, bijvoorbeeld GEMMA Online | Op de site | Publiceren na akkoord (git-diff-review) |
+| `curation` | Gestructureerde kennis opbouwen, optioneel tot een export (ArchiMate, UML/XMI, CSV, MediaWiki) | In de repository | Kandidaten goedkeuren (`kandidaat` → `review` → `goedgekeurd`), en met een ingevuld `exports:`-blok: daarna exporteren per doel |
+| `knowledge-base` | Ongestructureerde kennis opbouwen: notities, adviezen, ontwerpen, architectuurdocumenten — eigen eindresultaten | In de repository | Geen — review via een gewone `git diff`/commit |
+
+De soorten vormen samen een keten. Wat de ene wiki oplevert, wordt een bron voor de volgende:
 
 ```text
-Beleidskader (B) → Begrippen & ArchiMate (C) → Informatiemodellen (C) → GEMMA Online (A)
+Beleidskader (curation) → Begrippen & ArchiMate (curation + exports) → Informatiemodellen (curation + exports) → GEMMA Online (sync)
 ```
+
+### Gereedschap bij een sync-wiki
+
+Een sync-wiki gebruikt twee soorten toegang tot de externe site, elk voor een ander moment:
+
+| Gereedschap | Wanneer | Wat |
+|---|---|---|
+| MCP (`mediawiki`) | Tijdens het bewerken: verkennen, opzoeken, een pagina lezen | Alleen-lezen, interactief vanuit de AI-omgeving, wijst altijd naar het hoofddoel (nooit een testomgeving) |
+| `llmwiki pull` / `llmwiki publish` (pywikibot) | Vóór het bewerken (ophalen naar `content/`) en ná akkoord (schrijven) | Enige weg naar schrijven; nooit via MCP, altijd na de publicatiegate |
+
+Achtergrond en het volledige ontwerp: `docs/onderbouwing.md` 5.10.
 
 ### Bronnen: drie lagen
 
@@ -59,18 +72,21 @@ llm-wikis/                    open deze map in Obsidian
 ├── .agents/skills/           gedeelde vaardigheden en de gedeelde werkstroom
 ├── tools/llmwiki/              gereedschap
 └── wikis/
-    ├── gemma/                soort A: GEMMA Online
+    ├── gemma/                type sync: GEMMA Online, kale werkkopie
     │   ├── AGENTS.md · wiki.yaml
-    │   ├── content/          de MediaWiki-pagina's
-    │   ├── bronnen/<onderwerp>/
-    │   ├── records/          verslagen per afgeronde taak
+    │   ├── content/          de MediaWiki-pagina's, directe werkkopie
+    │   ├── revisies.json     conflictbasis: titel → laatst bekende revisie
+    │   ├── log.md            logboek: wie publiceerde wat, wanneer (alleen aanvullen)
     │   └── voorstellen/      publicatievoorstellen ter beoordeling
-    └── opzet2/               soort B of C
+    ├── gemma-kennis/         type knowledge-base: notities/adviezen/ontwerpen
+    │   ├── AGENTS.md · wiki.yaml
+    │   └── <onderwerp>/<document>.md
+    └── opzet2/               type curation (met of zonder exports:)
         ├── AGENTS.md · wiki.yaml
         ├── onderwerpen/      ingang voor elke taak
         ├── bronnen/<onderwerp>/
         ├── kandidaten/       voorgestelde begrippen met status
-        ├── export/           goedgekeurde exports (alleen soort C)
+        ├── export/           goedgekeurde exports (alleen met exports:-blok)
         ├── log.md            logboek: wie keurde wat goed   (alleen aanvullen)
         ├── voortgang.md      overzicht van open werk        (automatisch)
         └── voorstellen/
@@ -80,26 +96,44 @@ Links tussen pagina's zijn gewone relatieve Markdown-links; ze werken in Obsidia
 
 ## 4. Hoe een update verloopt
 
-Voorbeeld: een nieuwe beleidsnota verwerken in de GEMMA-wiki. De redacteur vraagt: *"Verwerk deze nota voor onderwerp zaakgericht werken met gemma-update-wiki."*
+### Voorbeeld: een pagina bijwerken op GEMMA Online (sync)
+
+De redacteur vraagt: *"Werk de pagina Zaakgericht werken bij met deze wijziging,
+met wiki-edit."*
+
+| Stap | Wat gebeurt er | Wie |
+|---|---|---|
+| PULL | Pagina ophalen naar `content/` (of al lokaal aanwezig) | Gereedschap, via pywikibot |
+| BEWERK | `content/`-bestand direct aanpassen | AI |
+| VALIDATE | Controle op vorm, links | Gereedschap en AI |
+| PLAN | Voorstel met git-diff, gebaseerd op de actuele revisie op de site | Gereedschap |
+| Akkoord | Beoordelen van het publicatievoorstel en akkoord geven | Redacteur |
+| PUBLISH | Publiceren naar de wiki en een regel in `log.md` | Gereedschap, na goedkeuring |
+
+Een tussentijdse wijziging van diezelfde pagina op de site (door iemand anders)
+wordt bij PUBLISH herkend en geweigerd — niet stilzwijgend overschreven.
+
+### Voorbeeld: een beleidsnota verwerken in een curatie-wiki
+
+De redacteur vraagt: *"Verwerk deze nota voor onderwerp zaakgericht werken met
+opzet2-update-wiki."*
 
 | Stap | Wat gebeurt er | Wie |
 |---|---|---|
 | INGEST | Nieuwe bron: origineel en Markdown-versie in `sources/raw/`, intake in `sources/index/`. Bestaat de intake al, dan wordt die hergebruikt. Daarna de domein-lens in `bronnen/<onderwerp>/` | Gereedschap en AI |
-| ASSESS | Welke pagina's en begrippen moeten veranderen, en waarom? | AI, met GEMMA-vaardigheden |
-| WRITE | Voorstellen voor nieuwe of gewijzigde pagina's | AI |
-| VALIDATE | Controle op vorm, links, GEMMA-regels | Gereedschap en AI |
-| Akkoord | Beoordelen van het publicatievoorstel en akkoord geven | Redacteur |
-| PUBLISH | Publiceren naar de wiki en vastleggen in de verslagen | Gereedschap, na goedkeuring |
+| ASSESS | Welke kandidaat-begrippen moeten veranderen, en waarom? | AI |
+| WRITE | Voorstellen voor nieuwe of gewijzigde kandidaten | AI |
+| VALIDATE | Controle op vorm, links, curatieregels | Gereedschap en AI |
+| Akkoord | Beoordelen van het promotievoorstel en akkoord geven | Redacteur |
+| PROMOTE | Kandidaat op `goedgekeurd` zetten en vastleggen in `log.md` | Gereedschap, na goedkeuring |
 
-Na elke stap wordt het tussenresultaat in het kladblok bewaard. Wordt het werk onderbroken, dan pakt de AI het later op vanaf de laatste afgeronde stap. Een afgebroken taak laat niets achter in de wiki.
+Na elke stap wordt het tussenresultaat in het kladblok bewaard. Wordt het werk
+onderbroken, dan pakt de AI het later op vanaf de laatste afgeronde stap. Een
+afgebroken taak laat niets achter in de wiki. Voor beide soorten geldt: de
+publicatie/promotie staat na afloop in `log.md` — dat is het blijvende verslag,
+niet op de externe site.
 
-Na publicatie komen twee verslagen in `records/`; welk document is gelezen, staat al in de bronintake:
-- **kandidaat-begrippen**: wat is voorgesteld en waarom, en wat is overgenomen;
-- **logboek**: wie wanneer wat heeft besloten.
-
-Deze verslagen staan in Git, niet op de MediaWiki-site.
-
-Bij een Markdown-wiki (soort B of C) zijn de bron- en kandidaatpagina's zelf het archief. De laatste stap heet daar **goedkeuren**: kandidaten gaan van `kandidaat` via `review` naar `goedgekeurd`. De AI mag een kandidaat ter review aanbieden, maar alleen de redacteur keurt goed, via dezelfde twee smaken als bij publiceren. Elke goedkeuring komt in `log.md`. Een pagina die op `goedgekeurd` staat zonder regel in `log.md`, wordt bij opslaan in Git geweigerd.
+Bij een Markdown-wiki (curation) zijn de bron- en kandidaatpagina's zelf het archief. De laatste stap heet daar **goedkeuren**: kandidaten gaan van `kandidaat` via `review` naar `goedgekeurd`. De AI mag een kandidaat ter review aanbieden, maar alleen de redacteur keurt goed, via dezelfde twee smaken als bij publiceren. Elke goedkeuring komt in `log.md`. Een pagina die op `goedgekeurd` staat zonder regel in `log.md`, wordt bij opslaan in Git geweigerd.
 
 ## 5. Spelregels
 

@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "mediawiki": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@professional-wiki/mediawiki-mcp-server@latest"
+      ],
+      "env": {
+        "CONFIG": "mediawiki-mcp.config.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run llmwiki workspace-check*)",
+      "Bash(uv run llmwiki run *)",
+      "Bash(uv run llmwiki validate *)",
+      "Bash(uv run llmwiki source *)",
+      "Bash(uv run llmwiki lint*)",
+      "Bash(uv run llmwiki pull*)",
+      "Bash(uv run llmwiki promote plan*)",
+      "Bash(uv run llmwiki publish plan*)"
+    ],
+    "ask": [
+      "Bash(uv run llmwiki pull* --doel *)",
+      "Bash(uv run llmwiki promote apply*)",
+      "Bash(uv run llmwiki publish apply*)"
+    ],
+    "deny": [
+      "Bash(*pywikibot*)",
+      "Edit(voorstellen/**)",
+      "Write(voorstellen/**)",
+      "Edit(revisies.json)",
+      "Write(revisies.json)"
+    ]
+  }
+}

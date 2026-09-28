@@ -18,3 +18,9 @@ repos:
         entry: uv run llmwiki precommit goedgekeurd-guard
         language: system
         pass_filenames: false
+
+      - id: llmwiki-harness-check
+        name: llmwiki harness check
+        entry: uv run llmwiki harness check
+        language: system
+        pass_filenames: false

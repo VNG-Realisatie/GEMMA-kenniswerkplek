@@ -10,7 +10,8 @@ from pathlib import Path
 
 from . import paths, validate
 
-PHASE_ORDER = ["ingest", "assess", "write", "validate"]
+CURATION_PHASE_ORDER = ["ingest", "assess", "write", "validate"]
+SYNC_PHASE_ORDER = ["validate"]
 PHASE_SCHEMA = {
     "ingest": "source",
     "assess": "assessment",
@@ -31,6 +32,23 @@ class RunError(RuntimeError):
 
 def final_phase_for(wiki_yaml: dict) -> str:
     return "publish" if wiki_yaml.get("type") == "sync" else "promote"
+
+
+def phases_for(wiki_yaml: dict) -> list[str]:
+    """De fasen vóór de gate, per wiki-soort. 'knowledge-base' gebruikt de
+    run/gate-machinerie niet: er is niets om te publiceren of te promoveren."""
+    wiki_type = wiki_yaml.get("type")
+    if wiki_type == "sync":
+        return SYNC_PHASE_ORDER
+    if wiki_type == "curation":
+        return CURATION_PHASE_ORDER
+    if wiki_type == "knowledge-base":
+        raise RunError(
+            "Wiki-soort 'knowledge-base' gebruikt geen runs/gate: geen curatiepijplijn, "
+            "geen publicatiedoel. Werk direct in de bestanden en review met 'git diff'; "
+            "gebruik 'llmwiki validate --schema page' voor de bewijsregel-check."
+        )
+    raise RunError(f"Onbekende wiki-soort '{wiki_type}' in wiki.yaml")
 
 
 def _runs_dir(wiki_root: Path) -> Path:
@@ -79,6 +97,8 @@ def save_state(wiki_root: Path, state: dict) -> None:
 
 
 def start(wiki_root: Path, wiki_yaml: dict, workflow: str, onderwerp: str | None = None) -> dict:
+    phases_for(wiki_yaml)  # valideert de wiki-soort vóór er iets op schijf komt
+
     run_id = new_run_id()
     rdir = run_dir(wiki_root, run_id)
     (rdir / "changeset").mkdir(parents=True, exist_ok=True)
@@ -94,7 +114,7 @@ def start(wiki_root: Path, wiki_yaml: dict, workflow: str, onderwerp: str | None
         bronnen = list(frontmatter.read(onderwerp_path).meta.get("bronnen", []) or [])
 
     final_phase = final_phase_for(wiki_yaml)
-    fasen = {name: {"status": "pending", "artefact": None, "hash": None} for name in PHASE_ORDER}
+    fasen = {name: {"status": "pending", "artefact": None, "hash": None} for name in phases_for(wiki_yaml)}
     fasen[final_phase] = {"status": "pending", "artefact": None, "hash": None}
 
     state = {
@@ -113,7 +133,7 @@ def start(wiki_root: Path, wiki_yaml: dict, workflow: str, onderwerp: str | None
 
 
 def _phase_sequence(state: dict, wiki_yaml: dict) -> list[str]:
-    return [*PHASE_ORDER, final_phase_for(wiki_yaml)]
+    return [*phases_for(wiki_yaml), final_phase_for(wiki_yaml)]
 
 
 def next_phase(state: dict, wiki_yaml: dict) -> str | None:

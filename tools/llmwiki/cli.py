@@ -7,7 +7,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from . import __version__, gate, lint, logbook, paths, runs, sources, validate, workspace_check
+from . import __version__, gate, harness, lint, logbook, paths, runs, sources, sync as sync_module, validate, workspace_check
 
 
 def _wiki_root(args) -> Path:
@@ -171,23 +171,95 @@ def cmd_run_prune(args) -> int:
     return 0
 
 
+def _parse_titel_overrides(pairs: list[str] | None) -> dict[str, str]:
+    overrides = {}
+    for pair in pairs or []:
+        pad, _, titel = pair.partition("=")
+        if not titel:
+            raise SystemExit(f"--titel verwacht pad=Titel, kreeg: {pair!r}")
+        overrides[pad] = titel
+    return overrides
+
+
 def _gate_command(args, action: str) -> int:
     wiki_root = _wiki_root(args)
     wiki_yaml = paths.load_wiki_yaml(wiki_root)
     command = args.command  # "promote" or "publish"
+    doel = getattr(args, "doel", None) or "site"
     try:
         if action == "plan":
-            path = gate.plan(wiki_root, wiki_yaml, args.run)
+            path = gate.plan(
+                wiki_root,
+                wiki_yaml,
+                args.run,
+                doel=doel,
+                paths=getattr(args, "pad", None) or None,
+                titel_overrides=_parse_titel_overrides(getattr(args, "titel", None)),
+            )
             print(f"Voorstel klaar: {path}")
         else:
-            path = gate.apply(wiki_root, wiki_yaml, args.run, akkoord_woord=args.akkoord_woord)
+            path = gate.apply(wiki_root, wiki_yaml, args.run, akkoord_woord=args.akkoord_woord, doel=doel)
             print(f"{command} toegepast, voorstel: {path}")
-    except NotImplementedError as exc:
-        print(f"NOG NIET BESCHIKBAAR: {exc}", file=sys.stderr)
-        return 2
-    except (gate.GateError, runs.RunError, validate.ValidationFailed) as exc:
+    except (gate.GateError, runs.RunError, sync_module.SyncError, validate.ValidationFailed) as exc:
         print(f"GEWEIGERD: {exc}", file=sys.stderr)
         return 1
+    return 0
+
+
+def cmd_pull(args) -> int:
+    wiki_root = _wiki_root(args)
+    wiki_yaml = paths.load_wiki_yaml(wiki_root)
+    doel = args.doel or "site"
+    try:
+        site = sync_module.get_site(wiki_yaml, doel)
+        result = sync_module.pull_page(site, args.titel)
+    except sync_module.SyncError as exc:
+        print(f"FOUT: {exc}", file=sys.stderr)
+        return 1
+
+    from . import titles as titles_module
+
+    pad = "content/" + titles_module.title_to_path(result.title, result.namespace, result.contentmodel)
+    target = wiki_root / pad
+    if target.exists() and not args.force:
+        status = subprocess.run(
+            ["git", "-C", str(wiki_root), "status", "--porcelain", "--", pad],
+            capture_output=True, text=True, check=False,
+        ).stdout
+        if status.strip():
+            print(f"FOUT: {pad} heeft niet-gecommitteerde wijzigingen; gebruik --force om te overschrijven", file=sys.stderr)
+            return 1
+
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(result.text, encoding="utf-8", newline="\n")
+
+    revisions_path = wiki_root / "revisies.json" if doel == "site" else wiki_root / ".work" / "sync" / f"{doel}.json"
+    revisions_path.parent.mkdir(parents=True, exist_ok=True)
+    revisions = json.loads(revisions_path.read_text(encoding="utf-8")) if revisions_path.exists() else {}
+    revisions[pad] = {"titel": result.title, "revid": result.revid}
+    revisions_path.write_text(json.dumps(revisions, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8")
+
+    print(f"Opgehaald: {pad}")
+    return 0
+
+
+def cmd_harness_sync(args) -> int:
+    repo_root = _repo_root()
+    verslag = harness.sync(repo_root)
+    print(f"Brug: {len(verslag['bruggen'])} skill(s), gegenereerd: {len(verslag['bestanden'])} bestand(en)")
+    for brug in verslag["bruggen"]:
+        print(f"  {brug['skill']} -> {brug['doel']} ({brug['methode']})")
+    return 0
+
+
+def cmd_harness_check(args) -> int:
+    repo_root = _repo_root()
+    problems = harness.check(repo_root)
+    if problems:
+        for p in problems:
+            print(f"FOUT: {p}", file=sys.stderr)
+        return 1
+    print("llmwiki harness check: geen problemen gevonden")
     return 0
 
 
@@ -322,6 +394,13 @@ def build_parser() -> argparse.ArgumentParser:
     add_wiki_arg(p_run_prune)
     p_run_prune.set_defaults(func=cmd_run_prune)
 
+    p_pull = sub.add_parser("pull", help="Haal een pagina op van een sync-wiki")
+    add_wiki_arg(p_pull)
+    p_pull.add_argument("--titel", required=True)
+    p_pull.add_argument("--doel", help="Naam uit wiki.yaml test_targets, standaard het hoofddoel")
+    p_pull.add_argument("--force", action="store_true")
+    p_pull.set_defaults(func=cmd_pull)
+
     for name in ("promote", "publish"):
         p_gate = sub.add_parser(name, help=f"{name}-gate (plan/apply)")
         gate_sub = p_gate.add_subparsers(dest="gate_command", required=True)
@@ -329,13 +408,24 @@ def build_parser() -> argparse.ArgumentParser:
         p_plan = gate_sub.add_parser("plan")
         add_wiki_arg(p_plan)
         p_plan.add_argument("--run", required=True)
+        p_plan.add_argument("--doel", help="(sync) naam uit wiki.yaml test_targets, standaard het hoofddoel")
+        p_plan.add_argument("--pad", action="append", help="(sync) expliciet content-pad i.p.v. git-detectie; herhaalbaar")
+        p_plan.add_argument("--titel", action="append", metavar="pad=Titel", help="(sync) titel-override voor een nieuw pad; herhaalbaar")
         p_plan.set_defaults(func=lambda args: _gate_command(args, "plan"), command=name)
 
         p_apply = gate_sub.add_parser("apply")
         add_wiki_arg(p_apply)
         p_apply.add_argument("--run", required=True)
         p_apply.add_argument("--akkoord-woord", dest="akkoord_woord")
+        p_apply.add_argument("--doel", help="(sync) naam uit wiki.yaml test_targets, standaard het hoofddoel")
         p_apply.set_defaults(func=lambda args: _gate_command(args, "apply"), command=name)
+
+    p_harness = sub.add_parser("harness", help="Harness-bindingen genereren/controleren")
+    harness_sub = p_harness.add_subparsers(dest="harness_command", required=True)
+    p_harness_sync = harness_sub.add_parser("sync")
+    p_harness_sync.set_defaults(func=cmd_harness_sync)
+    p_harness_check = harness_sub.add_parser("check")
+    p_harness_check.set_defaults(func=cmd_harness_check)
 
     p_workspace_check = sub.add_parser("workspace-check", help="Werkplekcontrole")
     p_workspace_check.add_argument("--json", action="store_true")

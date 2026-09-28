@@ -9,16 +9,32 @@ voor de inrichtingsstappen en [docs/onderbouwing.md](docs/onderbouwing.md) voor 
 
 ## Status van deze inrichting
 
-Uitgevoerd: **Klus 1 (Fundament)** volledig, en van **Klus 3 (Gereedschapskist)** het
-MediaWiki-onafhankelijke pad (wiki-type `curation`, zie `wikis/_template-md/`): de
-`llmwiki`-CLI met schemas, run-State, de publicatiegate (`promote plan|apply`, smaak A
-en B), bronbeheer, lint en de gedeelde skills/workflow.
+Uitgevoerd: **Klus 1 (Fundament)**, **Klus 3 (Gereedschapskist)** volledig — inclusief
+het MediaWiki-deel — en **Klus 2 (Werkplek)** grotendeels. Concreet werkt nu:
 
-Nog niet uitgevoerd (vereist een test-MediaWiki met testaccount respectievelijk
-toegang tot de GEMMA-site): **Klus 2** (`llmwiki harness sync|check`, MCP-configuratie
-en de Claude Code-brug voor de vijf AI-omgevingen, `workspace-check --fix`), het MediaWiki-deel
-van Klus 3 (`pull`, live `publish` via pywikibot, ArchiMate/XMI-export) en **Klus 4**
-(de GEMMA-wiki zelf). Zie `docs/kluswijzer.md` voor de volgorde.
+- Drie wiki-soorten (`sync`, `curation`, `knowledge-base`; zie `ARCHITECTURE.md` §1 en
+  `docs/onderbouwing.md` 5.18) met de bijbehorende `llmwiki`-CLI: run-State, de
+  publicatiegate (`promote plan|apply` voor curatie, `publish plan|apply` voor sync,
+  beide smaak A en B), `pull` en echte MediaWiki-publicatie via pywikibot, bronbeheer,
+  lint, `workspace-check` en `harness sync|check`.
+- `llmwiki harness sync` genereert de Claude Code-brug, `.claude/settings.json`,
+  `.vscode/settings.json`, `opencode.json` en (voor sync-wiki's) de MCP-configuratie
+  voor Claude Code/VS Code/Cursor. `llmwiki harness check` staat in de pre-commit-hook
+  en in `.github/workflows/check.yml`.
+- Testsjablonen: `wikis/_template-md/` (curatie) en `wikis/_template/` (sync, wijst naar
+  GEMMA staging als testomgeving).
+
+**Nog niet zelf geverifieerd** (kon niet vanuit deze sessie: geen live MCP-registratie,
+geen netwerkcredentials):
+
+- MCP-registratie en een live verbinding tegen GEMMA staging/productie.
+- Codex- en Cursor-specifieke discovery (`llmwiki harness sync` genereert daar bewust
+  niets voor — zie verificatiepunten V6t/m V10 in `docs/onderbouwing.md` sectie 8).
+- Windows: de junction-fallback van de skill-brug (geschreven, niet op Windows getest).
+- De volledige `wiki-edit`-workflow (pull → bewerken → plan → akkoord → publish) tegen
+  een echte testpagina op staging.
+
+Zie `docs/kluswijzer.md` Klus 4 voor het vervolg (de GEMMA-wiki zelf inrichten).
 
 ## Installatie voor redacteuren
 
@@ -88,6 +104,8 @@ uv run llmwiki --version
 ### Werkplekcontrole
 
 Bij elke sessie draait de AI-assistent eerst `uv run llmwiki workspace-check` (zie de
-root-`AGENTS.md`). De huidige versie controleert de Python-omgeving,
-CLAUDE.md-uitschakeling, credentialnamen en onafgeronde runs; de harness-brug voor de
-vijf AI-omgevingen volgt in Klus 2.
+root-`AGENTS.md`). Die controleert de Python-omgeving, de harness-bindingen
+(`llmwiki harness check`), CLAUDE.md-uitschakeling, of `pywikibot`/`npx` aanwezig zijn
+waar nodig, of de in `wiki.yaml` genoemde pywikibot-family geregistreerd is, en
+onafgeronde runs. Voor een sync-wiki toont ze ook het eenmalige
+MCP-registratiecommando als dat nog niet is uitgevoerd.
