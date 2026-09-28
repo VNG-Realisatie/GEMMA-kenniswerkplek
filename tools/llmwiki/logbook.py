@@ -1,4 +1,6 @@
-"""log.md (alleen aanvullen) en voortgang.md (gegenereerd) voor type B/C-wiki's."""
+"""log.md (alleen aanvullen) en voortgang.md (gegenereerd). Aantallen per status
+in voortgang.md komen uit `wiki_yaml["page_types"]`, een curation/knowledge-base
+concept; bij een sync-wiki (geen page_types) blijft die sectie leeg."""
 from __future__ import annotations
 
 from datetime import date

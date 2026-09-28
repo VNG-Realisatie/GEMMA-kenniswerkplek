@@ -1,4 +1,4 @@
-# Frontmatter-conventie voor Markdown-pagina's (type B/C)
+# Frontmatter-conventie voor Markdown-pagina's (curation/knowledge-base)
 
 ```yaml
 ---

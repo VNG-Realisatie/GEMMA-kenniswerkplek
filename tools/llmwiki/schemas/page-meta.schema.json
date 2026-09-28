@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://llmwiki/schemas/page-meta.schema.json",
   "title": "page-meta",
-  "description": "Sidecar per MediaWiki-pagina (type A) voor conflictdetectie bij push. Niet gebruikt bij type B/C, waar de pagina zelf het archief is.",
+  "description": "Sidecar per MediaWiki-pagina (sync) voor conflictdetectie bij push. Niet gebruikt bij curation/knowledge-base, waar de pagina zelf het archief is.",
   "type": "object",
   "required": ["titel", "namespace", "sha1"],
   "properties": {

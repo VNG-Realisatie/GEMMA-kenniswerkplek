@@ -62,3 +62,35 @@ def test_unknown_bron_is_rejected(repo):
     )
     errors = validate.validate_page(wiki_root, page_path, wiki_yaml)
     assert any("bestaat niet" in e for e in errors)
+
+
+def test_sync_page_has_no_frontmatter_requirement(tmp_path):
+    wiki_yaml = {"type": "sync"}
+    page_path = tmp_path / "content" / "main" / "Voorbeeld.wiki"
+    _write(page_path, "Gewone wikitext zonder frontmatter.\n[[Categorie:Voorbeeld]]\n")
+    errors = validate.validate_page(tmp_path, page_path, wiki_yaml)
+    assert errors == []
+
+
+def test_sync_page_empty_file_is_rejected(tmp_path):
+    wiki_yaml = {"type": "sync"}
+    page_path = tmp_path / "content" / "main" / "Leeg.wiki"
+    _write(page_path, "\n")
+    errors = validate.validate_page(tmp_path, page_path, wiki_yaml)
+    assert any("leeg bestand" in e for e in errors)
+
+
+def test_sync_page_leading_space_is_reported(tmp_path):
+    wiki_yaml = {"type": "sync"}
+    page_path = tmp_path / "content" / "main" / "Indent.wiki"
+    _write(page_path, "Normale regel.\n indentatie per ongeluk\n")
+    errors = validate.validate_page(tmp_path, page_path, wiki_yaml)
+    assert any("preformatted" in e for e in errors)
+
+
+def test_sync_page_leading_space_in_table_is_allowed(tmp_path):
+    wiki_yaml = {"type": "sync"}
+    page_path = tmp_path / "content" / "main" / "Tabel.wiki"
+    _write(page_path, "{|\n |Cel 1\n|}\n")
+    errors = validate.validate_page(tmp_path, page_path, wiki_yaml)
+    assert errors == []

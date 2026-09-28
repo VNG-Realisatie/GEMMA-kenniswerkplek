@@ -327,7 +327,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_validate = sub.add_parser("validate", help="Valideer een artefact tegen een schema")
     p_validate.add_argument("bestand")
-    p_validate.add_argument("--schema", required=True, help="Schemanaam, of 'page' voor een Markdown-pagina")
+    p_validate.add_argument(
+        "--schema", required=True,
+        help="Schemanaam, of 'page' voor een pagina van deze wiki (wikitext bij sync, Markdown bij curation/knowledge-base)",
+    )
     add_wiki_arg(p_validate)
     p_validate.set_defaults(func=cmd_validate)
 

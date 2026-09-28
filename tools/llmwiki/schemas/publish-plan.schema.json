@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://llmwiki/schemas/publish-plan.schema.json",
   "title": "publish-plan",
-  "description": "Exact plan voor PUBLISH (type A) of PROMOTE (type B/C): per pagina de basis- en nieuwe hash.",
+  "description": "Exact plan voor PUBLISH (sync) of PROMOTE (curation/knowledge-base): per pagina de basis- en nieuwe hash.",
   "type": "object",
   "required": ["run", "modus", "plan_hash", "paginas"],
   "properties": {

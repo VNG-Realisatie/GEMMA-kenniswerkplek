@@ -1,4 +1,5 @@
-"""Schemavalidatie (JSON Schema 2020-12) en Markdown-validatie voor type B/C-wiki's."""
+"""Schemavalidatie (JSON Schema 2020-12), Markdown-paginavalidatie (curation/
+knowledge-base) en wikitext-paginavalidatie (sync)."""
 from __future__ import annotations
 
 import json
@@ -52,13 +53,59 @@ def validate_file(path: Path, schema_name: str) -> None:
     validate_instance(instance, schema_name)
 
 
-# --- Markdown-paginavalidatie (type B/C, geen MediaWiki) ---
+# --- Paginavalidatie: vorm hangt af van de wiki-soort (wiki.yaml `type`) ---
 
 WIKILINK_PATTERN = "[["
 
 
 def validate_page(wiki_root: Path, page_path: Path, wiki_yaml: dict) -> list[str]:
-    """Valideert één Markdown-pagina. Geeft een lijst leesbare foutmeldingen terug (leeg = geldig)."""
+    """Valideert één pagina. Geeft een lijst leesbare foutmeldingen terug (leeg = geldig).
+
+    Een sync-wiki bevat kale MediaWiki-wikitext (geen frontmatter, content/ is een
+    directe werkkopie van de site); curation/knowledge-base gebruiken Markdown met
+    frontmatter. De vorm van de controle volgt daarom `wiki_yaml["type"]`.
+    """
+    if wiki_yaml.get("type") == "sync":
+        return _validate_sync_page(page_path)
+    return _validate_markdown_page(wiki_root, page_path, wiki_yaml)
+
+
+# --- Wikitext-paginavalidatie (sync) ---
+
+PREFORMATTED_SAFE_PREFIXES = ("{|", "|}", "|", "!", "*", "#", ";", ":")
+
+
+def _validate_sync_page(page_path: Path) -> list[str]:
+    """Generieke MediaWiki-wikitext-controles; geen kennis van één specifieke
+    wiki (zie AGENTS.md 'Grenzen') — alleen wat voor elke MediaWiki-site geldt."""
+    errors: list[str] = []
+    text = page_path.read_text(encoding="utf-8")
+    if not text.strip():
+        errors.append(f"{page_path}: leeg bestand")
+        return errors
+
+    template_depth = 0
+    in_pre = False
+    for line_no, line in enumerate(text.splitlines(), start=1):
+        if "<pre" in line:
+            in_pre = True
+        if line.startswith(" ") and not in_pre and template_depth == 0:
+            content = line.lstrip(" ")
+            if not content.startswith(PREFORMATTED_SAFE_PREFIXES):
+                errors.append(
+                    f"{page_path}:{line_no}: regel begint met spatie(s); "
+                    "MediaWiki rendert dit als preformatted-blok"
+                )
+        template_depth = max(0, template_depth + line.count("{{") - line.count("}}"))
+        if "</pre>" in line:
+            in_pre = False
+    return errors
+
+
+# --- Markdown-paginavalidatie (curation/knowledge-base) ---
+
+
+def _validate_markdown_page(wiki_root: Path, page_path: Path, wiki_yaml: dict) -> list[str]:
     errors: list[str] = []
     page = frontmatter.read(page_path)
     meta = page.meta
