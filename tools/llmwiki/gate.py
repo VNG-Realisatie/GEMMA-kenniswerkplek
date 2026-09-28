@@ -177,11 +177,17 @@ def _build_plan_sync(
     return {**body, "plan_hash": plan_hash}
 
 
-def _diff_lines_sync(wiki_root: Path, plan_obj: dict) -> list[str]:
+def _diff_lines_sync(wiki_root: Path, wiki_yaml: dict, doel: str, plan_obj: dict) -> list[str]:
+    site = sync_module.get_site(wiki_yaml, doel)
     lines = []
     for entry in plan_obj["paginas"]:
         new_content = (wiki_root / entry["pad"]).read_text(encoding="utf-8")
-        old_content = ""  # de live tekst is al opgehaald tijdens het plan; hier alleen de lokale kant tonen
+        old_content = ""
+        if entry["actie"] == "wijzigen":
+            try:
+                old_content = sync_module.pull_page(site, entry["titel"]).text
+            except sync_module.SyncError:
+                pass  # live pagina niet op te halen voor het voorstel; toon dan de volledige nieuwe tekst
         diff = "\n".join(
             difflib.unified_diff(
                 old_content.splitlines(), new_content.splitlines(), fromfile="live", tofile="voorstel", lineterm=""
@@ -246,7 +252,7 @@ def plan(
         if not wijzigingen:
             raise GateError("Geen wijzigingen onder content/ gevonden om te publiceren")
         plan_obj = _build_plan_sync(wiki_root, wiki_yaml, run_id, doel, wijzigingen, titel_overrides)
-        diff_lines = _diff_lines_sync(wiki_root, plan_obj)
+        diff_lines = _diff_lines_sync(wiki_root, wiki_yaml, doel, plan_obj)
     else:
         plan_obj = _build_plan_curation(wiki_root, run_id, final_phase)
         diff_lines = _diff_lines_curation(wiki_root, run_id, plan_obj)

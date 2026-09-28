@@ -136,6 +136,27 @@ def test_plan_and_apply_publishes_new_page(sync_repo, fake_pywikibot):
     assert "| site |" in log_text
 
 
+def test_plan_shows_real_diff_against_live_page(sync_repo, fake_pywikibot):
+    root, wiki_root = sync_repo
+    wiki_yaml = paths.load_wiki_yaml(wiki_root)
+    run_id = _start_run_through_validate(wiki_root, wiki_yaml)
+
+    site = FakeSite("en", "gemmaonline")
+    site.pages["Contact"] = {"text": "Oude inhoud.\n", "revid": 5}
+    fake_pywikibot[("en", "gemmaonline")] = site
+
+    content_path = wiki_root / "content" / "main" / "Contact.wiki"
+    content_path.write_text("Nieuwe inhoud.\n", encoding="utf-8")
+
+    voorstel_path = gate.plan(
+        wiki_root, wiki_yaml, run_id,
+        paths=["content/main/Contact.wiki"], titel_overrides={"content/main/Contact.wiki": "Contact"},
+    )
+    voorstel_text = voorstel_path.read_text()
+    assert "-Oude inhoud." in voorstel_text
+    assert "+Nieuwe inhoud." in voorstel_text
+
+
 def test_apply_to_staging_logs_the_doel(sync_repo, fake_pywikibot):
     root, wiki_root = sync_repo
     wiki_yaml = paths.load_wiki_yaml(wiki_root)
