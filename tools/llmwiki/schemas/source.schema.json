@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llmwiki/schemas/source.schema.json",
+  "title": "source",
+  "description": "Uitvoer van de INGEST-fase: welke bronnen deze run gebruikt.",
+  "type": "object",
+  "required": ["run", "bronnen"],
+  "properties": {
+    "run": { "type": "string" },
+    "bronnen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$" },
+          "titel": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "fragmenten": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Relevante paragraafverwijzingen naar laag 1"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

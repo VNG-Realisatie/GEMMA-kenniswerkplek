@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llmwiki/schemas/assessment.schema.json",
+  "title": "assessment",
+  "description": "Uitvoer van de ASSESS-fase: welke pagina's moeten veranderen en waarom.",
+  "type": "object",
+  "required": ["run", "voorstellen"],
+  "properties": {
+    "run": { "type": "string" },
+    "voorstellen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["doel", "soort", "motivering", "bronnen"],
+        "properties": {
+          "doel": { "type": "string", "description": "Paginapad relatief aan de wiki-root" },
+          "soort": { "type": "string", "enum": ["nieuw", "wijzigen", "geen_actie"] },
+          "motivering": { "type": "string" },
+          "bronnen": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

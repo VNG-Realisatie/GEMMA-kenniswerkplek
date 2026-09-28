@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llmwiki/schemas/source-index.schema.json",
+  "title": "source-index",
+  "description": "Frontmatter van sources/index/<bron-id>.md (laag 2: gedeelde intake).",
+  "type": "object",
+  "required": ["id", "titel", "hash", "pad", "tags"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$" },
+    "titel": { "type": "string" },
+    "uitgever": { "type": "string" },
+    "datum": { "type": "string" },
+    "versie": { "type": "string" },
+    "pad": { "type": "string" },
+    "hash": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "samenvatting": { "type": "string" }
+  },
+  "additionalProperties": false
+}

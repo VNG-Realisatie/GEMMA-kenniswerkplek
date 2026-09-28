@@ -1,0 +1,25 @@
+key: _template-md
+type: curation                       # sync | curation | hybrid
+
+sources:
+  tags: []                           # welke thema-tags deze wiki uit sources/ mag zien
+  exclude_tags: []
+
+page_types:
+  onderwerp:
+    dir: onderwerpen
+  bron:
+    dir: bronnen
+    group_by: onderwerp
+  kandidaat:
+    dir: kandidaten
+    curated: true
+
+curation:
+  states: [kandidaat, review, goedgekeurd, afgewezen]
+  gated: [goedgekeurd]
+  approval: chat                     # document (smaak A) | chat (smaak B)
+  min_reviewers: 1
+
+work:
+  retention_days: 30

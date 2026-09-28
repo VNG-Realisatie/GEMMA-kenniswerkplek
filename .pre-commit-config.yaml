@@ -1,0 +1,20 @@
+repos:
+  - repo: local
+    hooks:
+      - id: llmwiki-lint
+        name: llmwiki lint
+        entry: uv run llmwiki lint
+        language: system
+        pass_filenames: false
+
+      - id: llmwiki-sources-immutable
+        name: sources/raw/ is alleen-toevoegen
+        entry: uv run llmwiki precommit sources-immutable
+        language: system
+        pass_filenames: false
+
+      - id: llmwiki-goedgekeurd-guard
+        name: status goedgekeurd vereist een regel in log.md
+        entry: uv run llmwiki precommit goedgekeurd-guard
+        language: system
+        pass_filenames: false

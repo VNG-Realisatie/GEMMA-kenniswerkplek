@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llmwiki/schemas/approval.schema.json",
+  "title": "approval",
+  "description": "Frontmatter van een publicatie- of promotievoorstel in voorstellen/<run-id>.md (smaak A).",
+  "type": "object",
+  "required": ["run", "plan_hash", "akkoord_voor_publicatie", "beoordeeld_door"],
+  "properties": {
+    "run": { "type": "string" },
+    "plan_hash": { "type": "string" },
+    "akkoord_voor_publicatie": { "type": "string", "enum": ["ja", "nee"] },
+    "beoordeeld_door": { "type": "string" }
+  },
+  "additionalProperties": false
+}

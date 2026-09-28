@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llmwiki/schemas/changeset.schema.json",
+  "title": "changeset",
+  "description": "Uitvoer van de WRITE-fase: voorgestelde pagina's, gestaged in het kladblok (nog niet in de werkboom).",
+  "type": "object",
+  "required": ["run", "paginas"],
+  "properties": {
+    "run": { "type": "string" },
+    "paginas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pad", "staged_bestand", "actie", "type"],
+        "properties": {
+          "pad": { "type": "string", "description": "Doelpad relatief aan de wiki-root" },
+          "staged_bestand": { "type": "string", "description": "Pad relatief aan changeset/ in de run-directory" },
+          "actie": { "type": "string", "enum": ["nieuw", "wijzigen"] },
+          "type": { "type": "string", "description": "Paginatype uit wiki.yaml page_types" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

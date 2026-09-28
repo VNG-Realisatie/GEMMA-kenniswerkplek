@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llmwiki/schemas/run-state.schema.json",
+  "title": "run-state",
+  "description": "Actuele toestand van een Run, in .work/runs/<run-id>/state.json.",
+  "type": "object",
+  "required": ["run_id", "wiki_key", "workflow", "fasen", "aangemaakt", "bijgewerkt"],
+  "properties": {
+    "run_id": { "type": "string" },
+    "wiki_key": { "type": "string" },
+    "workflow": { "type": "string" },
+    "onderwerp": { "type": ["string", "null"] },
+    "bronnen": { "type": "array", "items": { "type": "string" } },
+    "fasen": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["status"],
+        "properties": {
+          "status": { "type": "string", "enum": ["pending", "done", "failed"] },
+          "artefact": { "type": ["string", "null"] },
+          "hash": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "aangemaakt": { "type": "string" },
+    "bijgewerkt": { "type": "string" }
+  },
+  "additionalProperties": false
+}

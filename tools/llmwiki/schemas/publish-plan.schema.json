@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llmwiki/schemas/publish-plan.schema.json",
+  "title": "publish-plan",
+  "description": "Exact plan voor PUBLISH (type A) of PROMOTE (type B/C): per pagina de basis- en nieuwe hash.",
+  "type": "object",
+  "required": ["run", "modus", "plan_hash", "paginas"],
+  "properties": {
+    "run": { "type": "string" },
+    "modus": { "type": "string", "enum": ["publish", "promote"] },
+    "plan_hash": { "type": "string" },
+    "paginas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pad", "actie", "nieuwe_hash"],
+        "properties": {
+          "pad": { "type": "string" },
+          "actie": { "type": "string", "enum": ["nieuw", "wijzigen"] },
+          "basis_hash": { "type": ["string", "null"] },
+          "nieuwe_hash": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

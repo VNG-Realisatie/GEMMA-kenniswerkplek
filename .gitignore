@@ -1,0 +1,16 @@
+# Kladblok en gegenereerde brug (nooit in Git, zie ARCHITECTURE.md en docs/onderbouwing.md)
+.work/
+voorstellen/
+.claude/skills/
+wikis/*/.claude/skills/
+.env
+
+# Obsidian: alleen .obsidian/app.json wordt bewaard (5.18)
+.obsidian/*
+!.obsidian/app.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
