@@ -1,0 +1,12 @@
+{
+  "readOnly": true,
+  "wikis": {
+    "gemma": {
+      "sitename": "gemma",
+      "server": "https://redactie.gemmaonline.nl",
+      "articlepath": "/wiki",
+      "scriptpath": "",
+      "readOnly": true
+    }
+  }
+}

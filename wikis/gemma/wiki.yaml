@@ -1,0 +1,28 @@
+key: gemma
+type: sync                           # sync | curation | knowledge-base
+
+site:
+  family: gemmaonline                # naam van een geregistreerde pywikibot-family
+  code: en                           # hoofddoel = bron van waarheid (redactie.gemmaonline.nl)
+  server: redactie.gemmaonline.nl    # domein voor MCP-config (los van family/code, want
+                                      # die vereisen pywikibot om het domein op te zoeken)
+  articlepath: /wiki                 # voor MCP-config en links; niet voor pywikibot zelf
+  scriptpath: ""                     # idem; bevestigd via .claude/rules/redactie-gemmaonline.md RED9
+
+test_targets:
+  staging:
+    family: gemmaonline
+    code: staging
+
+content:
+  layout: namespace                  # namespace (default) | category (nog niet gebouwd, zie AGENTS.md)
+  namespaces: [0, 8, 10]             # hoofdnaamruimte, MediaWiki (sidebar e.d.), Sjabloon
+
+publish:
+  approval: document                 # document (smaak A) | chat (smaak B)
+
+mcp:
+  target: site                       # altijd het hoofddoel, nooit een testdoel
+
+work:
+  retention_days: 30
