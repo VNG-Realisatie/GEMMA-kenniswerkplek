@@ -19,7 +19,8 @@ content:
   namespaces: [0, 8, 10]             # hoofdnaamruimte, MediaWiki (sidebar e.d.), Sjabloon
 
 publish:
-  approval: document                 # document (smaak A) | chat (smaak B)
+  approval: chat                     # document (smaak A) | chat (smaak B) — sync, één redacteur,
+                                      # geen document-akkoord/meerdere reviewers nodig
 
 mcp:
   target: site                       # altijd het hoofddoel, nooit een testdoel
