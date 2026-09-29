@@ -85,9 +85,9 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
                                        bronnen + "\n## Ter discussie\n\nLevenscyclus: nee. Is dit een zelfstandig ding?\n")),
         "bedrijfsarchitectuur/bedrijfsprocessen/8-wonen/vergunningen/aanvraag-behandelen.md":
             ("bedrijfsproces", element("aanvraag-behandelen", "Aanvraag behandelen", "bedrijfsproces", "business-process", proces_ja, "review",
-                                       bronnen + "\n## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie |\n"
-                                       "|---|---|---|---|---|---|\n| toegang (schrijven) | "
-                                       "[Beschikking](../../../bedrijfsobjecten/8-wonen/vergunningen/beschikking.md) | maakt | | bron | |\n")),
+                                       bronnen + "\n## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n"
+                                       "|---|---|---|---|---|---|---|\n| toegang (schrijven) | "
+                                       "[Beschikking](../../../bedrijfsobjecten/8-wonen/vergunningen/beschikking.md) | maakt | | bron | | 2026-utrecht-nota (§2) |\n")),
         "begrippen/vergunningen.md": ("onderwerp", element_tekst(
             {"id": "vergunningen", "type": "onderwerp", "naam": "Vergunningen", "status": "afgerond",
              "bronnen": ["2026-utrecht-nota", "2026-overheid-gemeentewet"], "conclusie": "Twee elementen, één ter discussie."},

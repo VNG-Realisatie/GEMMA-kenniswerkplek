@@ -11,7 +11,7 @@ algemene opzet). De regels staan in [AGENTS.md](AGENTS.md); dit document legt ui
 ```text
 wetten, informatiemodellen, beleid (sources/)  ─┐
 GGM-XMI (sources/, via tools/ggm.py)           ─┼─►  deze wiki  ─►  (later) export naar het GEMMA-model / GEMMA Online
-GEMMA-model .archimate (sources/, tools/gemma.py)┘
+GEMMA-model AMEFF (sources/, tools/gemma.py)    ┘
 ```
 
 Het GGM is zowel bron (kandidaat-begrippen, definities, relaties) als toets. Het GEMMA-model is alleen
@@ -65,6 +65,7 @@ zijn relatieve Markdown-links in de body; Obsidian toont zo de omgekeerde kant a
 ```text
 sources/raw (origineel) → sources/index (intake) → bronanalyses/<onderwerp>/<bron-id>.md
     → begrippen/<onderwerp>.md (begrippentabel met uitkomst per begrip) → elementpagina (bronnen:, ## Bronnen)
+    bronanalyse ## Relaties (werkwoord + vindplaats) → relatierij op de elementpagina (kolom Bron)
 ```
 
 `tools/check_elementen.py` eist dat elke bron van een element een bronanalyse heeft (behalve de modelbronnen
@@ -78,8 +79,8 @@ Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update
 
 | Fase | Skill | Gereedschap | Resultaat |
 |---|---|---|---|
-| INGEST | [gemma-archimate-model-ingest](.agents/skills/gemma-archimate-model-ingest/SKILL.md) | `llmwiki source add` (ook `--url`, pdf, `--brontype`) | bronanalyse, bron in de begrippenlijst |
-| ASSESS | [gemma-archimate-model-assess](.agents/skills/gemma-archimate-model-assess/SKILL.md) + [criteria](.agents/skills/gemma-archimate-model-criteria/SKILL.md) | `tools/bepaal_type.py`, `tools/ggm.py`, `tools/gemma.py` | beoordeling per begrip |
+| INGEST | [gemma-archimate-model-ingest](.agents/skills/gemma-archimate-model-ingest/SKILL.md) | `llmwiki source add` (ook `--url`, pdf, `--brontype`) | bronanalyse (begrippen en relaties), bron in de begrippenlijst |
+| ASSESS | [gemma-archimate-model-assess](.agents/skills/gemma-archimate-model-assess/SKILL.md) + [criteria](.agents/skills/gemma-archimate-model-criteria/SKILL.md) | `tools/bepaal_type.py`, `tools/relaties.py uit-bronnen`, `tools/ggm.py`, `tools/gemma.py` | beoordeling per begrip, relaties uit de bronnen |
 | WRITE | [gemma-archimate-model-write](.agents/skills/gemma-archimate-model-write/SKILL.md) | `tools/ggm.py`, `tools/gemma.py`, `tools/relaties.py`, `tools/terugmelding.py` | gestagede pagina's |
 | VALIDATE | `wiki-validate` | `llmwiki validate --run`, `tools/check_elementen.py` | validatierapport |
 | GATE + PROMOTE | `wiki-publish` | `llmwiki promote plan/apply` | goedgekeurde pagina's, `log.md` |
@@ -115,35 +116,38 @@ code in [tools/bepaal_type.py](tools/bepaal_type.py).
 
 ## 8. Relaties
 
-Een relatie staat één keer, als rij in `## Relaties` op de pagina van het bronelement, met een link naar het doel.
-[tools/relaties.py](tools/relaties.py) leidt kandidaten af uit het GGM:
-- grondslag `ggm-exact`, `ggm-afgeleid` of `bron`;
-- specialisaties zonder pagina en GGM-componenten worden opgetild;
-- ketens via niet-opgenomen entiteiten krijgen het zwakste type;
-- relaties naar enumeraties vervallen.
+Elementen en relaties worden samen gevonden, in dezelfde fasen en uit dezelfde bronnen. Een relatie wordt pas een ArchiMate-relatie als van beide kanten vaststaat wat voor element het is; de relatie volgt dus de beoordeling van de begrippen.
 
-Mapping van GGM-typen: Generalization → specialisatie; Aggregation (composite/shared) → compositie/aggregatie,
-alleen bij een deel-geheel-naam, anders een gerichte associatie met terugmeldkandidaat; Association/Usage → associatie.
-Terugmelden alleen bij exacte matches. De groepering op beleidsdomein (in GEMMA een aggregatie vanuit een Grouping)
-wordt afgeleid uit `taakveld`/`beleidsdomein` en niet als relatie vastgelegd. Elke rij wordt getoetst aan een
-deelverzameling van de ArchiMate-relatietabel. Zie
-[references/relaties.md](.agents/skills/gemma-archimate-model-write/references/relaties.md).
+| Fase | Elementen | Relaties |
+|---|---|---|
+| INGEST | De bronanalyse noemt de kernbegrippen (`## Kernbegrippen`) | De bronanalyse noemt de relaties tussen die begrippen zoals de bron ze formuleert: van, werkwoord, naar, vindplaats (`## Relaties`) |
+| ASSESS | Kenmerken → beslistabel → type per begrip | De relaties uit de bronanalyses gaan mee in de voorstellen (`relaties`). `tools/relaties.py uit-bronnen` lost beide kanten op via de uitkomst van de beslistabel: element → relatie; eigenschap of specialisatie zonder pagina → opgetild naar het genoemde begrip; geen element → relatie vervalt (met reden). Het werkwoord en de typen van beide kanten bepalen de ArchiMate-relatie |
+| WRITE | Elementpagina's, GGM-match | `tools/relaties.py voorstel <id> --bronnen <assessment.json>` voegt de relaties uit de bronnen samen met de kandidaten uit het GGM en geeft de rijen voor `## Relaties` |
+| VALIDATE | Schema's, kenmerken ↔ type | Relatietabel, ArchiMate-toets, GGM-relatie past bij de uiteinden, elke bron-id heeft een bronanalyse |
 
-**Aandachtspunt:** in het GGM-export zijn de richting van deel-geheel en de multipliciteiten niet altijd
-eenduidig. De tool volgt de EA-conventie (het uiteinde met het ruitje is het geheel); de namen ("bevat",
-"leidt tot") bevestigen dat meestal, maar de multipliciteiten lijken vaak omgedraaid. Controleer ze bij gebruik.
+**Opslag.** Een relatie staat één keer, als rij in `## Relaties` op de pagina van het bronelement, met een relatieve link naar het doel; Obsidian toont de andere kant als backlink. Kolommen: `Relatie`, `Naar`, `Naam`, `Kardinaliteit`, `Grondslag`, `GGM-relatie`, `Bron` (bron-id's met vindplaats).
+
+**Grondslag.** `ggm-exact` (één GGM-relatie tussen de gematchte entiteiten), `ggm-afgeleid` (opgetild of via een keten) of `bron` (alleen uit de bronnen; bron-id verplicht). Een relatie uit een bron tussen dezelfde elementen als een GGM-relatie bevestigt die: de bron-id komt erbij en de grondslag blijft `ggm-*`; noemt de bron een ander relatietype, dan staat dat in de toelichting. Bij tegenspraak wint de hoger gerangschikte bron (wet boven GGM); beleid levert de herkenbare naam.
+
+**Uit de bronnen naar ArchiMate** (`van_bron` in [tools/relaties.py](tools/relaties.py)): de typen van beide elementen bepalen de soort relatie (partij → gedrag: toewijzing; gedrag ↔ object: toegang, met lezen of schrijven uit het werkwoord; gebeurtenis ↔ gedrag: triggering; gedrag → dienst: realisatie; dienst → partij of gedrag: bediening), het werkwoord bepaalt richting, deel-geheel ("bestaat uit", "maakt deel uit van") en specialisatie ("is een"). Wat niet in de ArchiMate-tabel past, wordt een gerichte associatie. De uitkomst is een voorstel; het model controleert richting en betekenis.
+
+**Uit het GGM** ([tools/relaties.py](tools/relaties.py) `voorstel`): specialisaties zonder pagina en GGM-componenten worden opgetild; ketens via niet-opgenomen entiteiten krijgen het zwakste type (compositie > aggregatie > associatie) en een samengestelde kardinaliteit; relaties naar enumeraties vervallen. Mapping: Generalization → specialisatie; Aggregation (composite/shared) → compositie/aggregatie, alleen bij een deel-geheel-naam, anders een gerichte associatie met terugmeldkandidaat; Association en Usage → associatie.
+
+**Terugmelden** alleen bij `ggm-exact` (fout type, richting, kardinaliteit, naam, dubbel); nieuwe relaties uit de bronnen en afgeleide relaties niet. De groepering op beleidsdomein (in GEMMA een aggregatie vanuit een Grouping) wordt afgeleid uit `taakveld`/`beleidsdomein` en niet als relatie vastgelegd. Elke rij wordt getoetst aan een deelverzameling van de ArchiMate-relatietabel. Werkwijze in detail: [references/relaties.md](.agents/skills/gemma-archimate-model-write/references/relaties.md).
+
+**Aandachtspunt:** in het GGM-export zijn de richting van deel-geheel en de multipliciteiten niet altijd eenduidig. De tool volgt de EA-conventie (het uiteinde met het ruitje is het geheel); de namen ("bevat", "leidt tot") bevestigen dat meestal, maar de multipliciteiten lijken vaak omgedraaid. Controleer ze bij gebruik.
 
 ## 9. GGM en GEMMA als bron
 
 | | GGM | GEMMA-model |
 |---|---|---|
-| Bronbestand | XMI 2.1 (Enterprise Architect) | Archi-bronbestand `.archimate` |
-| Herkomst | GitHub `Gemeente-Delft/Gemeentelijk-Gegevensmodel`, `wiki.yaml` → `ggm.herkomst` (repository, ref, pad) | aangeleverd bestand |
+| Bronbestand | XMI 2.1 (Enterprise Architect) | ArchiMate Open Exchange (AMEFF); een Archi-bronbestand `.archimate` kan ook |
+| Herkomst | GitHub `Gemeente-Delft/Gemeentelijk-Gegevensmodel`, `wiki.yaml` → `ggm.herkomst` (repository, ref, pad) | GitHub `VNG-Realisatie/GEMMA-Archi-repository`, `export/GEMMA release.xml`, `wiki.yaml` → `gemma.herkomst` |
 | Tool | [tools/ggm.py](tools/ggm.py) | [tools/gemma.py](tools/gemma.py) |
 | Gegenereerd | `ggm/ggm_parsed.json`, `ggm/<taakveld>/<beleidsdomein>.md` | `gemma/gemma_parsed.json`, `gemma/overzicht.md` |
 | Veldblok | `ggm.py velden <guid>` → `ggm_*` | `gemma.py velden <id>` → `gemma_*` |
 | Match | `zoek`, `naamgenoten`, `generalisaties`, `attribuut`, `relaties` | `koppel <ggm-guid>`, `zoek`, `groepering` |
-| Nieuwe versie | `release --id <bron-id> [--ref <branch/tag>]` + `verrijk --run` | `release <bestand> --id <bron-id>` + `verrijk --run` |
+| Nieuwe versie | `release --id <bron-id> [--ref <branch/tag>]` + `verrijk --run` | `release --id <bron-id> [--ref <branch/tag>]` + `verrijk --run` |
 
 Gegenereerde bestanden hebben een hash-kop; `tools/check_elementen.py` meldt een handmatige wijziging ([SRC5]).
 
@@ -167,7 +171,7 @@ Gegenereerde bestanden hebben een hash-kop; `tools/check_elementen.py` meldt een
 | Definities | regels voor de formele definitie |
 | Modelvelden | `ggm_*`/`gemma_*` gelijk aan het model |
 | Links en bronnen | verwijzingen in de frontmatter, herleidbaarheid |
-| Relaties | relatietabel en ArchiMate-toets, GGM-relatie past bij de uiteinden |
+| Relaties | relatietabel en ArchiMate-toets, GGM-relatie past bij de uiteinden, bron-id heeft een bronanalyse |
 | Hiërarchie en tegenhangers | specialisaties met en zonder pagina, wederzijdse tegenhanger |
 | Pagina's en bestanden | technische verwijzingen, begrippenlijst en bronanalyse, gegenereerde bestanden |
 

@@ -221,6 +221,9 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
         if (r.relatie, r.naar) in gezien:
             fout("relatie", f"dubbele relatie {r.relatie} naar {r.naar}")
         gezien.add((r.relatie, r.naar))
+        for bron in r.bronnen:
+            if bron not in w.modelbronnen and bron not in analyses:
+                fout("relatie-bron", f"relatie naar {r.naar}: bron '{bron}' heeft geen bronanalyse")
         doelen = w.op_id.get(r.naar)
         if doelen and r.relatie in rel_tool.RELATIES.values():
             doel_type = doelen[0].meta.get("archimate_type", "")
@@ -299,6 +302,10 @@ def controleer_overig(w: Wiki) -> list[Bevinding]:
         onderwerp, bron_id = p.meta.get("onderwerp"), p.meta.get("id")
         if pad.parent.name != onderwerp:
             b.append(Bevinding("bronanalyse", w.rel(pad), "fout", f"hoort in bronanalyses/{onderwerp}/"))
+        relatietabel = gam_gemeen.sectie(p.body, "Relaties")
+        rijen = gam_gemeen.tabel(relatietabel)
+        if relatietabel is not None and rijen and not {"Van", "Werkwoord", "Naar", "Vindplaats"} <= set(rijen[0]):
+            b.append(Bevinding("bronanalyse", w.rel(pad), "fout", "relatietabel mist kolom Van, Werkwoord, Naar of Vindplaats"))
         if bron_id not in (p.meta.get("bronnen") or []):
             b.append(Bevinding("bronanalyse", w.rel(pad), "fout", "de eigen bron-id ontbreekt in bronnen:"))
         begrippen = onderwerpen.get(onderwerp)

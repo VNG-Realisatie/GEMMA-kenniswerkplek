@@ -60,9 +60,11 @@ bron-id's, en zet ze als `beoordeling` bij het voorstel in `assessment.json`:
  "beoordeling": {"begrip": "Beschikking", "onderwerp": "<onderwerp>", "kenmerken": {"herkenbaar": {"waarde": "ja", "onderbouwing": "…", "bronnen": ["…"]}, "…": {}}}}
 ```
 
+Neem de relaties uit de bronanalyses op in het voorstel van het begrip aan de van-kant, zodat elementen en relaties samen worden beoordeeld: `"relaties": [{"van": "Heffingsambtenaar", "werkwoord": "legt op", "naar": "Aanslag", "bronnen": ["<bron-id>"], "vindplaats": "art. 231"}]`.
+
 Een begrip dat geen element wordt, krijgt een voorstel met als doel de begrippenlijst
 (`begrippen/<onderwerp>.md`, soort `wijzigen`) en toch een beoordeling. Draai daarna
-`uv run python tools/bepaal_type.py evalueer <assessment.json> --schrijf`; de uitkomst is bindend.
+`uv run python tools/bepaal_type.py evalueer <assessment.json> --schrijf`; de uitkomst is bindend. Draai daarna `uv run python tools/relaties.py uit-bronnen <assessment.json>`: dat toont per relatie de ArchiMate-relatie, of een kant is opgetild, en welke relaties vervallen omdat een kant geen element is.
 
 ## 5. GGM-hiaat (alleen bij `data_object: ja` zonder GGM-match)
 
@@ -73,8 +75,7 @@ relevant zijn en in welk GGM-beleidsdomein het past. Een proces, functie of rege
 
 ## 6. Presenteren
 
-Per begrip, niet in één blok: de uitkomst van de beslistabel (type of reden), `data_object`, het
-naamconflict-signaal en één of twee zinnen argument. Leg elk begrip met `voorleggen` of `conflict` voor
+Per begrip, niet in één blok: de uitkomst van de beslistabel (type of reden), `data_object`, het naamconflict-signaal, de relaties uit de bronnen (en welke vervallen) en één of twee zinnen argument. Leg elk begrip met `voorleggen` of `conflict` voor
 en wacht op het antwoord van de redacteur. Pas een kenmerk alleen aan als het aantoonbaar fout was.
 
 Rond af met `uv run llmwiki run complete assess --run <run-id> --data <assessment.json>`.

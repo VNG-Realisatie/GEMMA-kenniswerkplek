@@ -41,8 +41,8 @@ def wiki(archimate_repo):
     _schrijf(wiki, PROCES_PAD, _bo(id="aanvraag-behandelen", type="bedrijfsproces", naam="Aanvraag behandelen",
                                    archimate_type="business-process", kenmerken=proces_kenmerken,
                                    definitie="Het behandelen van een aanvraag tot een besluit."),
-             "## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie |\n|---|---|---|---|---|---|\n"
-             "| toegang (schrijven) | [Beschikking](beschikking.md) | maakt | | bron | |\n".replace(
+             "## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n|---|---|---|---|---|---|---|\n"
+             "| toegang (schrijven) | [Beschikking](beschikking.md) | maakt | | bron | | 2026-utrecht-nota (§2) |\n".replace(
                  "beschikking.md", "../../../bedrijfsobjecten/8-wonen/vergunningen/beschikking.md"))
     return wiki
 
@@ -94,8 +94,8 @@ def test_bron_zonder_bronanalyse_en_element_niet_in_begrippenlijst(wiki):
 
 
 def test_ongeldige_archimate_relatie_en_technische_link(wiki):
-    body = ("## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie |\n|---|---|---|---|---|---|\n"
-            "| compositie | [Aanvraag behandelen](../../../bedrijfsprocessen/8-wonen/vergunningen/aanvraag-behandelen.md) | | | bron | |\n"
+    body = ("## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n|---|---|---|---|---|---|---|\n"
+            "| compositie | [Aanvraag behandelen](../../../bedrijfsprocessen/8-wonen/vergunningen/aanvraag-behandelen.md) | | | bron | | 2026-utrecht-nota |\n"
             "\nZie [regels](../../../../AGENTS.md).\n")
     _schrijf(wiki, BO_PAD, _bo(), body)
     namen = [n for n, _ in _fouten(wiki)]
@@ -123,3 +123,15 @@ def test_rapport_wordt_aangevuld(wiki, tmp_path):
     data = json.loads(rapport.read_text())
     assert data["controles"][0]["naam"] == "page"
     assert any(c["naam"] == "gemma-archimate-model:ter-discussie" and c["ernst"] == "fout" for c in data["controles"])
+
+
+def test_relatiebron_zonder_bronanalyse(wiki):
+    pad = wiki / PROCES_PAD
+    pad.write_text(pad.read_text(encoding="utf-8").replace("2026-utrecht-nota (§2)", "2026-overheid-gemeentewet (art. 1)"), encoding="utf-8")
+    assert any(n == "relatie-bron" for n, _ in _fouten(wiki))
+
+
+def test_relatietabel_in_bronanalyse_heeft_vaste_kolommen(wiki):
+    pad = wiki / "bronanalyses/vergunningen/2026-utrecht-nota.md"
+    pad.write_text(pad.read_text(encoding="utf-8") + "\n## Relaties\n\n| Van | Naar |\n|---|---|\n| A | B |\n", encoding="utf-8")
+    assert any(n == "bronanalyse" and "relatietabel" in m for n, m in _fouten(wiki))

@@ -67,14 +67,20 @@ Wat deze bron betekent voor de architectuur van dit onderwerp (max. 500 woorden;
 | Begrip | Omschrijving in de bron | Vindplaats |
 |---|---|---|
 
+## Relaties
+| Van | Werkwoord | Naar | Vindplaats |
+|---|---|---|---|
+
 ## Relevantie voor de architectuur
-Welke objecten, rollen, processen, diensten of gebeurtenissen; welke relaties en specialisaties.
+Welke objecten, rollen, processen, diensten of gebeurtenissen; welke specialisaties.
 
 ## Citaten
 > Letterlijke tekst die een begrip definieert. (vindplaats: art./§/pagina)
 ```
 
 Links naar elementpagina's voeg je toe zodra die bestaan. Citaten zijn platte tekst, zonder links.
+
+In `## Relaties` staan de verbanden tussen begrippen zoals de bron ze legt, met het werkwoord letterlijk uit de bron ("de heffingsambtenaar legt de aanslag op", "een beschikking bestaat uit onderdelen") en de vindplaats. Gebruik begripsnamen als platte tekst; of een relatie een ArchiMate-relatie wordt, hangt af van de beoordeling van beide begrippen in ASSESS. Neem ook verbanden op met begrippen die mogelijk geen element worden: ASSESS tilt ze op of laat ze vervallen.
 
 ## 5. Begrippenlijst
 
