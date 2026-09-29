@@ -1,0 +1,78 @@
+<!-- gegenereerd door tools/ggm.py; hash: 384aef23013b6339f58284bb6981e54744928f44d0f7b1079a97e39204424e5c -->
+# GGM-structuur (2026-vng-ggm-2-5-1)
+
+Objecttypen: 954; relaties: 1411.
+
+## 0 Bestuur, Politiek en Ondersteuning
+- Griffie: 13 objecttypen
+
+## 1 Veiligheid en Vergunningen
+- 1 Veiligheid en Vergunningen: 30 objecttypen
+
+## 10 Dienstverlening
+- 10 Dienstverlening: 16 objecttypen
+
+## 2 Verkeer, Vervoer en Waterstaat
+- Mobiliteit: 7 objecttypen
+- Parkeren: 13 objecttypen
+
+## 3 Economie
+- 3 Economie: 6 objecttypen
+
+## 4 Onderwijs
+- Leerplicht en Leerlingenvervoer: 15 objecttypen
+- Onderwijs: 12 objecttypen
+
+## 5 Sport, Cultuur en Recreatie
+- Musea: 30 objecttypen
+- Sport: 9 objecttypen
+
+## 6 Sociaal Domein
+- Dak- en thuislozen: 1 objecttypen
+- Gemeentebegrafenissen: 1 objecttypen
+- Generiek Jeugd en Wmo: 27 objecttypen
+- Inburgering: 35 objecttypen
+- Jeugdbescherming en reclassering: 4 objecttypen
+- Sociaal Domein Generiek: 55 objecttypen
+- Sociale Teams: 9 objecttypen
+- Werk: 33 objecttypen
+
+## 7 Volksgezondheid en Milieu
+- Afval: 16 objecttypen
+
+## 8 Volkshuisvesting, Leefomgeving en Stedelijke Vernieuwing
+- Beheer Openbare Ruimte: 82 objecttypen
+- Bouwen en Wonen: 7 objecttypen
+- Omgevingswet: 31 objecttypen
+
+## 9 Interne Organisatie
+- Financien: 24 objecttypen
+- HR: 31 objecttypen
+- ICT: 35 objecttypen
+- Inkoop: 20 objecttypen
+- Organisatie-indeling: 2 objecttypen
+- Subsidies: 9 objecttypen
+- Vastgoed: 27 objecttypen
+
+## 99 Kern
+- 99 Kern: 10 objecttypen
+- BAG: 13 objecttypen
+- RGBZPlus: 37 objecttypen
+- RSGBPlus: 128 objecttypen
+
+## Erfgoed
+- Archeologie: 17 objecttypen
+- Archief: 18 objecttypen
+- Generieke Entiteiten Erfgoed: 3 objecttypen
+- Monumenten: 6 objecttypen
+
+## Inkomen
+- Diensten: 22 objecttypen
+- Model Inkomen: 11 objecttypen
+- Normafwijking: 5 objecttypen
+- Reden aanvraag: 22 objecttypen
+- Terug- en invordering: 29 objecttypen
+
+## Schulden
+- Schuldhulpverlening: 27 objecttypen
+- Vroegsignalering: 6 objecttypen

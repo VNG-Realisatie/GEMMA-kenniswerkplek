@@ -66,13 +66,13 @@ curation:
 
 # Actuele modelbronnen (bron-id's in sources/index), gezet door tools/ggm.py en tools/gemma.py `release`.
 ggm:
-  bron:
+  bron: 2026-vng-ggm-2-5-1
   herkomst:                          # waar tools/ggm.py release het XMI ophaalt (zelfde locatie als de vorige wiki)
     repository: Gemeente-Delft/Gemeentelijk-Gegevensmodel
     ref: Voorbereidingen-Release-v2.5.1
     pad: v2.5.1/Gemeentelijk Gegevensmodel XMI2.1.xml
 gemma:
-  bron:
+  bron: 2026-vng-gemma-2026-07-01
   herkomst:                          # waar tools/gemma.py release het model ophaalt (AMEFF; .archimate kan als lokaal bestand)
     repository: VNG-Realisatie/GEMMA-Archi-repository
     ref: master
