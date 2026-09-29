@@ -368,29 +368,6 @@ def _zet_modelbron(wiki_root: Path, sleutel: str, bron_id: str) -> None:
     pad.write_text(nieuw, encoding="utf-8")
 
 
-def herkomst_urls(herkomst: dict, ref: str | None = None, pad: str | None = None) -> tuple[str, str]:
-    """(download-URL, weergave-URL) van het XMI in de GGM-repository op GitHub (`wiki.yaml` `ggm.herkomst`)."""
-    from urllib.parse import quote
-
-    repository, ref, pad = herkomst["repository"], ref or herkomst["ref"], pad or herkomst["pad"]
-    return (f"https://raw.githubusercontent.com/{repository}/{ref}/{quote(pad)}",
-            f"https://github.com/{repository}/blob/{ref}/{quote(pad)}")
-
-
-def haal_op(wiki_root: Path, bron_id: str, ref: str | None = None, pad: str | None = None) -> tuple[Path, str, str]:
-    """Download het XMI naar het kladblok; geeft (bestand, download-URL, weergave-URL)."""
-    from llmwiki import fetch, paths
-
-    herkomst = (paths.load_wiki_yaml(wiki_root).get("ggm") or {}).get("herkomst")
-    if not herkomst:
-        raise SystemExit("wiki.yaml mist ggm.herkomst (repository, ref, pad); geef anders een lokaal XMI-bestand op")
-    url, weergave = herkomst_urls(herkomst, ref, pad)
-    doel = wiki_root / ".work" / "ggm-release" / f"{bron_id}.xml"
-    doel.parent.mkdir(parents=True, exist_ok=True)
-    doel.write_bytes(fetch.fetch(url, timeout=300).inhoud)
-    return doel, url, weergave
-
-
 def release(xmi: Path | None, bron_id: str, titel: str, wiki_root: Path = WIKI_ROOT,
             ref: str | None = None, pad: str | None = None) -> dict:
     """Neem een GGM-release op. Zonder `xmi` wordt het bestand opgehaald van `ggm.herkomst` in wiki.yaml."""
@@ -400,7 +377,7 @@ def release(xmi: Path | None, bron_id: str, titel: str, wiki_root: Path = WIKI_R
 
     url = weergave = ""
     if xmi is None:
-        xmi, url, weergave = haal_op(wiki_root, bron_id, ref, pad)
+        xmi, url, weergave = gam_gemeen.haal_op(wiki_root, "ggm", bron_id, ref, pad)
     data = parse_xmi(xmi)
     repo_root = paths.find_repo_root(wiki_root)
     werk = wiki_root / ".work" / "ggm-release"

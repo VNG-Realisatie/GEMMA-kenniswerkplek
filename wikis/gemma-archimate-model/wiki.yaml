@@ -73,6 +73,10 @@ ggm:
     pad: v2.5.1/Gemeentelijk Gegevensmodel XMI2.1.xml
 gemma:
   bron:
+  herkomst:                          # waar tools/gemma.py release het model ophaalt (AMEFF; .archimate kan als lokaal bestand)
+    repository: VNG-Realisatie/GEMMA-Archi-repository
+    ref: master
+    pad: export/GEMMA release.xml
 
 work:
   retention_days: 30

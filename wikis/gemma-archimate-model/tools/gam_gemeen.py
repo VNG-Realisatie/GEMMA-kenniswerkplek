@@ -215,3 +215,33 @@ def relatief(van: Path, naar: Path) -> str:
     import os
 
     return Path(os.path.relpath(naar.resolve(), van.resolve().parent)).as_posix()
+
+
+# --- Modelbestanden ophalen van GitHub (wiki.yaml `<sleutel>.herkomst`) ---
+
+
+def herkomst_urls(herkomst: dict, ref: str | None = None, pad: str | None = None) -> tuple[str, str]:
+    """(download-URL, weergave-URL) voor een bestand in een GitHub-repository (repository, ref, pad)."""
+    from urllib.parse import quote
+
+    repository, ref, pad = herkomst["repository"], ref or herkomst["ref"], pad or herkomst["pad"]
+    return (f"https://raw.githubusercontent.com/{repository}/{ref}/{quote(pad)}",
+            f"https://github.com/{repository}/blob/{ref}/{quote(pad)}")
+
+
+def haal_op(wiki_root: Path, sleutel: str, bron_id: str, ref: str | None = None, pad: str | None = None) -> tuple[Path, str, str]:
+    """Download het modelbestand van `wiki.yaml` `<sleutel>.herkomst` naar het kladblok.
+
+    Geeft (bestand, download-URL, weergave-URL). De extensie volgt het pad in de repository.
+    """
+    from llmwiki import fetch
+
+    herkomst = (wiki_yaml(wiki_root).get(sleutel) or {}).get("herkomst")
+    if not herkomst:
+        raise SystemExit(f"wiki.yaml mist {sleutel}.herkomst (repository, ref, pad); geef anders een lokaal bestand op")
+    url, weergave = herkomst_urls(herkomst, ref, pad)
+    extensie = Path(pad or herkomst["pad"]).suffix or ".bin"
+    doel = wiki_root / ".work" / f"{sleutel}-release" / f"{bron_id}{extensie}"
+    doel.parent.mkdir(parents=True, exist_ok=True)
+    doel.write_bytes(fetch.fetch(url, timeout=300).inhoud)
+    return doel, url, weergave

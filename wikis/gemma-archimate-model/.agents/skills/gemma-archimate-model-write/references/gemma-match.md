@@ -1,6 +1,6 @@
 # GEMMA-match
 
-Het GEMMA-model (Archi-bronbestand) is een matchdoel: hoe staat dit element nu in GEMMA? Het is geen
+Het GEMMA-model (AMEFF-export of Archi-bronbestand) is een matchdoel: hoe staat dit element nu in GEMMA? Het is geen
 bron voor begrippen (het bestaande GEMMA-bedrijfsobjectenmodel is grotendeels een kopie van het GGM).
 
 1. Heeft het element een `ggm_guid`: `uv run python tools/gemma.py koppel <ggm_guid>` (zoekt de GGM-GUID in de

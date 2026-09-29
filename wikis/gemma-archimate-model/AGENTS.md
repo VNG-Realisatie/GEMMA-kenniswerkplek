@@ -42,7 +42,7 @@ Schrijfwijze: `[ID] **kern** — regel`. `ALTIJD` = verplicht, `NOOIT` = verbode
 
 ### Bronnen en modellen
 
-- [SRC1] **GGM en GEMMA alleen via de tools** — Het GGM-XMI en het GEMMA-`.archimate` NOOIT direct lezen; ALLEEN via `tools/ggm.py` en `tools/gemma.py`.
+- [SRC1] **GGM en GEMMA alleen via de tools** — Het GGM-XMI en het GEMMA-model (AMEFF of `.archimate`) NOOIT direct lezen; ALLEEN via `tools/ggm.py` en `tools/gemma.py`.
 - [SRC3] **Geen afgeleide modelbronnen** — NOOIT CSV-exports of kopieën elders als GGM- of GEMMA-bron gebruiken.
 - [SRC5] **Gegenereerde modelmappen** — `ggm/` en `gemma/` ALLEEN om te lezen; NOOIT handmatig bewerken (de check herkent wijzigingen).
 - [SRC10] **Bronvoorrang** — Voor begrippen en formele betekenis: wet > informatiemodel > beleid > overig (`wiki.yaml` `bronvoorrang`). Beleid levert de gangbare taal. Voorrang bepaalt NOOIT of iets een element is.
