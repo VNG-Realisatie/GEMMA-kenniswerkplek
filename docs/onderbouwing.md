@@ -1252,6 +1252,16 @@ Regels:
 - **Ophalen via URL.** `llmwiki source add --url <url>` haalt een bron op en zet HTML deterministisch om naar Markdown: tekst blijft letterlijk, alleen opmaakruis (scripts, navigatie, voettekst, knoppenteksten) verdwijnt. Bekende weergave-URL's worden eerst omgezet naar de download-URL (bijv. iBabs, `*.bestuurlijkeinformatie.nl`). Pdf's worden omgezet met pymupdf4llm (extra `pdf`: `uv sync --extra pdf`). De intake legt `url`, `url_pagina` en `opgehaald` vast.
 - **Brontype en bronvoorrang.** De intake kent een optioneel `brontype` (`wet`, `informatiemodel`, `beleid`, `overig`, `model`). Een wiki kan in `wiki.yaml` `bronvoorrang` een leesvolgorde op brontype vastleggen; `run start --onderwerp` zet de bronlijst in die volgorde. Wat de rangorde inhoudelijk betekent (bijv. voor definities), is een wiki-regel.
 
+**Waarom één intakebestand per bron.** Laag 2 is `sources/index/<bron-id>.md`, niet één catalogus.
+- *Herleidbaar via de bestandsnaam.* Het bron-id is in alle drie lagen de bestandsnaam; bestaan en uniciteit zijn een bestandscontrole (`source add` weigert een bestaand id, `validate` zoekt het bestand op).
+- *Contextbescherming.* Een run leest alleen de intakes van de bronnen uit de onderwerppagina; een catalogus met samenvattingen zou steeds helemaal geladen worden.
+- *Een intake is een pagina.* Metadata én tekst (samenvatting, inhoudsopgave), met hetzelfde frontmatter-, schema- en lintgereedschap als elke andere pagina.
+- *Backlinks.* Bronanalyses en elementen linken naar de intake; Obsidian toont per bron welke pagina's haar gebruiken. Dat werkt per bestand, niet per tabelrij.
+- *Git.* Gelijktijdige toevoegingen raken verschillende bestanden (geen merge-conflicten); `git log` per bron toont de historie van de intake.
+- *Niet in laag 1.* `sources/raw/` is onveranderlijk en letterlijk; een samenvatting of correctie achteraf kan daar niet staan.
+
+Afgewezen: één catalogusbestand (geen ruimte voor tekst, conflicten, alles laden), de intake in de frontmatter van `raw/<bron-id>.md` (laag 1 is onveranderlijk) en een intake per wiki (dubbel werk, in strijd met principe 3). Nadeel: geen overzicht in één oogopslag; dat levert `llmwiki source list` of een gegenereerd overzicht, dat nooit zelf de bron van waarheid is.
+
 **Contextbescherming.** Doel: een wiki verzuipt niet in alle bronnen van de repository, en een Sessie laadt alleen wat de taak nodig heeft.
 
 | Maatregel | Werking | Afdwinging |
