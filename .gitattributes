@@ -12,3 +12,7 @@
 *.ico binary
 *.woff binary
 *.woff2 binary
+
+# Originelen in sources/raw zijn letterlijke kopieën (hash in de intake): regeleinden niet omzetten
+sources/raw/*.xml -text
+sources/raw/*.archimate -text
