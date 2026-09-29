@@ -230,7 +230,7 @@ def _has_uncommitted_changes(wiki_root: Path, pad: str) -> bool:
 
 
 def _categorie_voorrang_path(wiki_root: Path) -> Path:
-    return wiki_root / "categorie-voorrang.json"
+    return wiki_root / "content" / ".categorie-voorrang.json"
 
 
 def _load_categorie_voorrang(wiki_root: Path) -> list[str]:
@@ -257,10 +257,10 @@ def _resolve_categorie_pad(
     wiki_root: Path, site, wiki_yaml: dict, titel: str, categorie_arg: str | None
 ) -> list[str] | None:
     """0 categorieën -> geen categoriemap; 1 -> automatisch; meer -> beslist
-    voorrang (categorie-voorrang.json) als precies één van de categorieën al
-    voorrang heeft; anders (of bij >=2 voorrangscategorieën) vereist het
-    --categorie (navragen, niet gokken; zie AGENTS.md wikis/gemma). Een
-    nieuw opgeloste categorie krijgt zelf voorrang voor de volgende keer."""
+    voorrang (content/.categorie-voorrang.json) als precies één van de
+    categorieën al voorrang heeft; anders (of bij >=2 voorrangscategorieën)
+    vereist het --categorie (navragen, niet gokken; zie AGENTS.md wikis/gemma).
+    Een nieuw opgeloste categorie krijgt zelf voorrang voor de volgende keer."""
     if wiki_yaml.get("content", {}).get("layout") != "category":
         if categorie_arg:
             raise sync_module.SyncError("--categorie is alleen van toepassing bij content.layout: category in wiki.yaml")
@@ -332,8 +332,12 @@ def _pull_categorieboom(wiki_root: Path, wiki_yaml: dict, site, doel: str, args)
     import), inclusief subpagina's (harde link, altijd mee, ongeacht status of
     eigen categorie). `--skip-if-match <regex>` is generiek: llmwiki kent geen
     wiki-specifieke velden zoals GEMMA's Redactiestatus, een wiki-Skill geeft
-    dat patroon desgewenst mee. Verplaatsen bij hercategorisatie van een al
-    bekende titel is nog niet gebouwd (bekende beperking)."""
+    dat patroon desgewenst mee. Een titel die al bekend is op een ánder pad
+    (bv. via een eerdere --titel/--categorieboom-pull, zoals een pagina met
+    meerdere categorieën die zowel los als via deze boom wordt gevonden)
+    wordt nooit gedupliceerd naar een tweede plek -- overgeslagen, gemeld als
+    'elders bekend'. Nog niet gebouwd: die bestaande plek automatisch
+    verplaatsen als de categorisering op de site wijzigt (bekende beperking)."""
     import re
 
     from . import titles as titles_module
@@ -383,9 +387,14 @@ def _pull_categorieboom(wiki_root: Path, wiki_yaml: dict, site, doel: str, args)
     paden_by_titel = titles_module.apply_index_convention(paden_by_titel)
 
     revisions = _load_revisions(wiki_root, doel)
-    geschreven, overgeslagen_lokaal = [], []
+    bekend_pad_by_titel = {info.get("titel"): pad for pad, info in revisions.items()}
+    geschreven, overgeslagen_lokaal, overgeslagen_elders = [], [], []
     for titel, pad_rel in sorted(paden_by_titel.items()):
         pad = "content/" + pad_rel
+        bekend_pad = bekend_pad_by_titel.get(titel)
+        if bekend_pad and bekend_pad != pad:
+            overgeslagen_elders.append(f"{titel} (al op {bekend_pad}, niet gedupliceerd naar {pad})")
+            continue
         target = wiki_root / pad
         if target.exists() and not args.force and _has_uncommitted_changes(wiki_root, pad):
             overgeslagen_lokaal.append(pad)
@@ -395,6 +404,7 @@ def _pull_categorieboom(wiki_root: Path, wiki_yaml: dict, site, doel: str, args)
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(result.text, encoding="utf-8", newline="\n")
             revisions[pad] = {"titel": result.title, "revid": result.revid}
+        bekend_pad_by_titel[titel] = pad
         geschreven.append(pad)
 
     if not args.dry_run:
@@ -405,13 +415,15 @@ def _pull_categorieboom(wiki_root: Path, wiki_yaml: dict, site, doel: str, args)
         print(f"{label}: {pad}")
     for titel in overgeslagen_status:
         print(f"Overgeslagen (skip-if-match): {titel}")
+    for melding in overgeslagen_elders:
+        print(f"Overgeslagen (elders bekend): {melding}")
     for pad in overgeslagen_lokaal:
         print(f"Overgeslagen (niet-gecommitteerde lokale wijzigingen, gebruik --force): {pad}")
     for msg in mislukt:
         print(f"MISLUKT: {msg}", file=sys.stderr)
     print(
         f"Totaal: {len(geschreven)} {'te halen' if args.dry_run else 'opgehaald'}, "
-        f"{len(overgeslagen_status) + len(overgeslagen_lokaal)} overgeslagen, {len(mislukt)} mislukt"
+        f"{len(overgeslagen_status) + len(overgeslagen_elders) + len(overgeslagen_lokaal)} overgeslagen, {len(mislukt)} mislukt"
     )
     return 1 if mislukt else 0
 

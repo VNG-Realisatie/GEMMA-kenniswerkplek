@@ -26,15 +26,19 @@ Context staan: lees dat bestand voordat je iets wijzigt.
   plaatst automatisch bij precies één categorie, vraagt om `--categorie` bij
   meer dan één (nooit gokken — "Wat is GEMMA" heeft er bv. vier, waarvan twee
   statustracking zijn: `Actueel`, `SmartPublish-Watched`).
-  `categorie-voorrang.json` (git-getrackt, tool-beheerd) onthoudt elke zo
-  gekozen categorie; heeft een volgende, zelf ook ambigue pagina precies één
-  categorie die al voorrang heeft, dan wordt die automatisch gebruikt zonder
-  opnieuw te vragen — pas bij ≥2 voorrangscategorieën in dezelfde pagina wordt
-  het weer een vraag.
+  `content/.categorie-voorrang.json` (git-getrackt, tool-beheerd, naast de
+  naamruimte-mappen omdat het over de indeling van `content/` zelf gaat)
+  onthoudt elke zo gekozen categorie; heeft een volgende, zelf ook ambigue
+  pagina precies één categorie die al voorrang heeft, dan wordt die
+  automatisch gebruikt zonder opnieuw te vragen — pas bij ≥2
+  voorrangscategorieën in dezelfde pagina wordt het weer een vraag.
   `llmwiki pull --categorieboom <naam>` haalt een hele (sub)categorieboom in
   één keer op, inclusief subpagina's (harde link: altijd mee, ongeacht hun
   eigen status/categorie) — plaatst puur op de crawl-tak, gebruikt
-  `categorie-voorrang.json` niet (geen ambiguïteit daar: de tak bepaalt de map).
+  `content/.categorie-voorrang.json` niet (geen ambiguïteit daar: de tak
+  bepaalt de map), maar dupliceert nooit een titel die al elders bekend is
+  (bv. via een eerdere `--titel`- of `--categorieboom`-pull) — die wordt
+  overgeslagen en gemeld ("elders bekend"), niet verplaatst.
   Nog niet gebouwd: automatisch verplaatsen van een al bekende titel bij
   hercategorisatie op de site (bekende beperking).
 - Staging (`gemma2-redactie.staging.wikixl.nl`, `wiki.yaml` → `test_targets.staging`)

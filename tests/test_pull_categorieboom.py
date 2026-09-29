@@ -156,6 +156,27 @@ def test_categorieboom_skip_if_match_excludes_page_but_not_its_subpages(cli_modu
     assert (root / "content/main/Boven/PaginaB.wiki").read_text() == "Inhoud B"
 
 
+def test_categorieboom_does_not_duplicate_a_title_known_elsewhere(cli_module, wiki_root):
+    root, wiki_yaml = wiki_root
+    (root / "content/main/Landingspagina").mkdir(parents=True)
+    (root / "content/main/Landingspagina/Wat is GEMMA.wiki").write_text("Inhoud", encoding="utf-8")
+    (root / "revisies.json").write_text(
+        json.dumps({"content/main/Landingspagina/Wat is GEMMA.wiki": {"titel": "Wat is GEMMA", "revid": 1}}),
+        encoding="utf-8",
+    )
+
+    site = FakeSite()
+    site.category_articles["Boven"] = ["Wat is GEMMA"]
+    site.pages["Wat is GEMMA"] = {"text": "Inhoud", "revid": 1}
+
+    rc = cli_module._pull_categorieboom(root, wiki_yaml, site, "site", _args())
+    assert rc == 0
+
+    assert not (root / "content/main/Boven/Wat is GEMMA.wiki").exists()
+    revisies = json.loads((root / "revisies.json").read_text())
+    assert list(revisies) == ["content/main/Landingspagina/Wat is GEMMA.wiki"]
+
+
 def test_categorieboom_dry_run_writes_nothing(cli_module, wiki_root):
     root, wiki_yaml = wiki_root
     site = FakeSite()
