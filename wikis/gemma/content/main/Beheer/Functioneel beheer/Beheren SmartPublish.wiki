@@ -1,0 +1,91 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=niet publiceren
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's
+}}
+[[Category:Functioneel beheer]]
+
+SmartPublish is de WikiXL-extensie die pagina's van de redactie-wiki naar de publicatie-wiki (GEMMA online) kopieert. Voor het concept en hoe SmartPublish zich verhoudt tot de andere WikiXL-onderdelen zie [[Architectuur wiki#SmartPublish|Architectuur wiki]]; voor de volledige leveranciersdocumentatie zie de externe [https://opleiding.wikixl.nl/index.php/SmartPublish WikiXL-opleiding SmartPublish] (er is, anders dan bij SmartConnectArchiMate, geen interne spiegelpagina). De leverancier installeert zelf ook twee help-pagina's, [[Help:Hoe publiceer ik een pagina naar de publicatiewiki]] en [[Help:Hoe verwijder ik een pagina op de redactiewiki]]; deze en de andere vendor-pagina's van SmartPublish staan als exacte kopie in [[:Categorie:Kennismodule SmartPublish]].
+
+Deze pagina beschrijft het beheerdersdeel: het dashboard, wat SmartPublish publiceert en wat niet, en hoe je extra categorieën laat meepubliceren. Voor de redacteursgids (hoe markeer je een pagina voor publicatie, statussen, realtime/batch publiceren) zie [[Publiceren pagina]].
+
+==SmartPublish dashboard (voor Wiki-beheerders)==
+Op het [[Speciaal:SmartPublish]] dashboard staan naast de tabs Overzicht en Hulp (zie [[Publiceren pagina]] voor die twee) twee tabs die alleen voor wiki-beheerders bedoeld zijn:
+* '''Instellingen''' - een overzicht van categorieën waar acties aan gekoppeld zijn en om instellingen aan te passen.
+* '''Beheer''' - voor het starten van de batchpublicatie en, indien nodig, het repareren van een categorie.
+
+== Gepubliceerd door SmartPublish ==
+=== Content-pagina's ===
+
+Het [[Speciaal:SmartPublish | SmartPublish dashboard]] laat zien welke pagina's gepubliceerd gaan worden en wanneer deze gepubliceerd gaan worden.
+
+Pagina's gemarkeerd met het [[:sjabloon:Publicatie]] worden door SmartPublish gepubliceerd. Het [[:sjabloon:Publicatie]] bevat de volgende functies:
+* Publiceren
+* Toekennen pagina aan een contentbeheerder
+* Toekennen van een redactiestatus
+Zie de pagina [[Overzichten redactiestatus]] voor de op status ingedeelde pagina's
+
+Van een pagina met een aanroep van het sjabloon wordt gepubliceerd
+* de pagina
+* in de pagina getoonde bestanden
+Niet gepubliceerd wordt
+* aangeroepen sjablonen
+* gebruikte categorieën
+* getoonde ArchiMedes objecten (omdat dit eigenlijk sjablonen zijn) en het onderliggend model apart gepubliceerd wordt
+
+Als het [[:Sjabloon:PublicatieEpilogue]] bestaat, dan wordt deze door [[:sjabloon:Publicatie]] uitgevoerd. Dit custom sjabloon bevat nu de functie:
+* op basis van redactiestatus=Archief wordt de Archiefbanner getoond
+
+=== Pagina's aangewezen door categorieën ===
+Een beheerder kan in het dashboard onder de tab 'Instellingen' configureren welke extra wiki pagina's  gepubliceerd moeten worden.
+
+Hiervoor moeten de extra pagina's onderdeel zijn van een (zelf gemaakte) categorie.
+
+==== ArchiMate-modellen====
+De kleine ArchiMate-modellen worden met SmartPublish gepubliceerd.
+
+Het '''GEMMA model''' wordt '''niet''' met SmartPublish '''gepubliceerd'''. Reden hiervoor is dat dit te lang duurt. Het publiceren van GEMMA leidt vaak tot meer dan 10.000 pagina's. SmartPublish publiceert ongeveer 1000 pagina's per uur.
+* Voeg de categorie van een ArchiMate-model toe (deze aangemaakt door ArchiMedes)
+** open model in ArchiMedes browser, bijvoorbeeld het {{ToonElement
+  |id=7382f25e-04b1-443e-abe5-00fa6e7212c4
+  |modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+}}
+** onderin de pagina vind je de categorie [[:Categorie:ArchiMateModel_OverGEMMA/id-7382f25e-04b1-443e-abe5-00fa6e7212c4]]
+** hoover over de categorienaam en kopieer de link (https://redactie.gemmaonline.nl/wiki/Categorie:ArchiMateModel_OverGEMMA/id-7382f25e-04b1-443e-abe5-00fa6e7212c4)
+** plak de paginanaam van de categorie in SmartPublish. Dat is alles achter 'Categorie:'
+
+====Sjablonen====
+Sjablonen die aangeroepen worden door gepubliceerde pagina's worden al door SmartPublish gepubliceerd. Maar er zijn ook sjablonen die nog expliciet gepubliceerd moeten worden.
+
+Alle op publicatie gebruikte sjablonen zijn opgenomen in een categorie en worden zo met SmartPublish gepubliceerd
+
+* zet een categorie van sjablonen in SmartPublish. Bijvoorbeeld [[:Categorie:GEMMA opmaakTemplates]]
+
+====Categorie-pagina's====
+Ook de categorie-pagina's moeten apart gepubliceerd worden. In de categorie-pagina staat bijvoorbeeld wat de parent van de categorie is en of de categorie HIDDEN is.
+* Alle GEMMA online categorieën met de [[:category:GEMMA categories]]
+
+== Nog handmatig te publiceren ==
+
+SmartPublish kan geen speciale pagina's uit de mediawiki naamruimte publiceren.
+Met de hand (knippen en plakken) of door export en import publiceren
+: <categorytree mode="all" depth="0" showcount="on">Layout Elements</categorytree>
+
+En de CSS file die niet in een categorie kan worden opgenomen (of toch wel?)
+* [[MediaWiki:Common.css]]
+* [[MediaWiki:Common.js]]
+
+Categorieën kunnen wel met SmartPublish gepubliceerd worden. Bijvoorbeeld de [[:category:GEMMA categories]].
+Maar, SmartPublish publiceert categorieën recursief. Oftewel, als een categorie een subcategorie bevat, dan wordt ook de inhoud van de subcategorie gepubliceerd.
+
+Dit gedrag maakt dat de [[:category:GEMMA verborgenArchiMedesCategories]] niet met SmartPublish gepubliceerd kan worden. Dan worden immers ook alle pagina's die horen bij de subcategorieën gepubliceerd. Bijvoorbeeld alle [[:category:ApplicationComponents]] van alle ArchiMate modellen.
+
+Voor nu met export en import de volgende categorieën 'Publiceren'
+: <categorytree mode="categories" depth="1" showcount="on">GEMMA verborgenCategories</categorytree>
+
+== Interne SmartPublish-categorieën ==
+SmartPublish gebruikt zelf de categorieën [[:Categorie:SmartPublish-Watched]], [[:Categorie:SmartPublish-OnHold]] en [[:Categorie:SmartPublish-Ignored]] om de publicatiestatus van een pagina te registreren (gezet door [[:sjabloon:Publicatie]]). Zie [[Beheren ArchiMedes#ArchiMedes categorieën|Beheren ArchiMedes]] voor het conditioneel-hidden mechanisme dat deze categorieën gebruikt.
+
+== Diagnose en logging ==
+* [[TestSmartPublishVariables]] toont of de SmartPublish-configuratievariabelen op deze wiki goed gezet zijn.
+* [[Speciaal:RunQuery/SmartPublishSearch|SmartPublishSearch]] (sjabloon [[:Sjabloon:SmartPublishSearch]]) doorzoekt de publicatielog (de `SP-LastPublish-*`-eigenschappen: datum, actie, resultaat, foutmelding) van een pagina.

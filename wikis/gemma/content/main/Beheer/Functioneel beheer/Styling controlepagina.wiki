@@ -1,0 +1,258 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+Deze pagina volgt dezelfde clusterstructuur als [[Mediawiki:Common.css]] (zie ook [[Beheren styling]]) — elke sectie hieronder komt overeen met het gelijknamige cluster in Common.css, zodat een wijziging daar hier direct te controleren is.
+__TOC__
+= Koppen en kopjes (H1 voor de pagina) =
+Platte tekst boven aan een pagina
+== Kopje (H2) ==
+Platte tekst tussen koppen
+=== Onderkop 1 (H3) ===
+Platte tekst tussen koppen
+==== Onderkop 2 (H4) ====
+Platte tekst tussen koppen
+===== Onderkop 3 (H5) =====
+Platte tekst tussen koppen.
+Geen verschil met onderkop 4
+====== Onderkop 4 (H6) ======
+Platte tekst onder laatste koppen
+Geen verschil met onderkop 3
+
+== Platte tekst opmaak ==
+dit is gewone platte tekst
+
+ Regel met spatie ervoor, onbedoeld als blok opgemaakt. Waarom gebeurt dit?
+
+<blockquote>Blokcitaat via <nowiki>&lt;blockquote&gt;</nowiki></blockquote> — werkt echt niet: geen eigen styling op deze wiki, ziet er identiek uit als platte tekst.
+
+== Lijsten ==
+een genummerde lijst
+# regel 1
+# Start each line
+# with a [[Wikipedia:Number_sign|number sign]] (#).
+## More number signs give deeper
+### and deeper
+### levels.
+# Line breaks <br />don't break levels.
+### But jumping levels creates empty space.
+# Blank lines
+
+een ongenummerde lijst
+* with an [[Wikipedia:asterisk|asterisk]] (*).
+** More asterisks give deeper
+*** and deeper levels.
+* Line breaks <br />don't break levels.
+* Regel in ongenummerde lijst
+Any other start ends the list.
+
+* combine bullet list
+
+== HTML blokken ==
+
+=== <nowiki><code>code regel</code></nowiki> ===
+<code>Regel met een stukje code</code>
+
+<nowiki><pre> Platte tekst met </pre></nowiki>
+<pre>stukje tekst met pre</pre>
+
+Zie ook de sectie Algemene lay-out/thema-overrides hieronder voor <code>.codeblock</code>.
+
+== CirrusSearch (vendor) ==
+Zoekresultaten-styling; hangt aan de live zoekfunctie en is niet zinvol na te bootsen op een statische pagina. Test via de zoekbalk bovenaan de wiki.
+
+== Accordion-component (vendor) ==
+Parserfuncties <code>#accordionItem</code>/<code>#accordionShow</code>.
+{{#accordionItem:
+|title=Titel 1
+|content=Voorbeeldinhoud van het eerste accordion-item.
+|icon=play_arrow
+}}
+{{#accordionItem:
+|title=Titel 2
+|content=Voorbeeldinhoud van het tweede accordion-item.
+|icon=search
+}}{{#accordionShow:}}
+
+== Eigen GEMMA-sjabloonstyling ==
+
+=== Uitlichten ===
+Tekst direct voor aanroep van [[sjabloon:Uitlichten]]
+{{Uitlichten|Life is like riding a bicycle. To keep your balance, you must keep moving.}}
+Tekst direct na aanroep
+
+=== knop ===
+Geen sjabloon meer voor gevonden (zie TODO op [[Beheren styling]]) — class rechtstreeks toegepast:
+<div class="knop">[[Hoofdpagina|Voorbeeldknop]]</div>
+
+=== newstable ===
+Tekst direct voor aanroep van [[sjabloon:Nieuwsbrief]]
+{{Nieuwsbrief
+|jaar = 2026
+|inhoud = * Voorbeeldonderwerp 1
+* Voorbeeldonderwerp 2
+}}
+Tekst direct na aanroep
+
+=== Quotes ===
+Tekst direct voor aanroep van [[sjabloon:Quotes]]
+{{Quotes|'Een kompas dat gemeenten richting geeft in het informatielandschap’}}
+Tekst direct na aanroep
+
+=== tabletooltip ===
+Tekst direct voor aanroep van [[sjabloon:SourceCel]]
+{{SourceCel|https://www.example.org|Voorbeeld brontekst in de tooltip}}
+Tekst direct na aanroep
+
+=== Landingspagina (default hoogte) ===
+
+Tekst voor landingspagina blokken
+
+{{Landingspagina
+|titel1 = Schrijven op de wiki
+|inhoud1 = Helppagina's voor redacteuren en beheerders
+* Voor Architecten
+** [[Schrijven op GEMMA online]]
+** [[Tonen afbeeldingen en bestanden]]
+* Voor beheerder, maar ook architecten
+** [[Toekennen categorie]]
+|titel2 = Modelleren ArchiMate
+|inhoud2 = Helppagina's voor GEMMA architecten
+* Toevoegen en wijzigen elementen en relaties
+** Toelichting verschillende modellen
+|hoogte=
+}}
+
+=== ArchiefBanner ===
+[[Sjabloon:PublicatieEpilogue]] wordt vanuit Publicatie aangeroepen (zie [[Beheren SmartPublish]])
+Als de pagina de status=gearchiveerd heeft, wordt het [[sjabloon:Banner mogelijk verouderd]] getoond
+{{Banner mogelijk verouderd}}
+
+=== StatusBanner / SPButtonIcon ===
+Al aanwezig op deze pagina zelf: de <code>{{Publicatie|...}}</code>-header bovenaan rendert via [[Sjabloon:Publicatie]] met deze classes.
+
+=== Overige eigen sjablonen (styling zit in het sjabloon zelf, niet in Common.css) ===
+Tekst direct voor aanroep van [[sjabloon:Letop]]
+{{Letop|uitleg = Deze categorie is 'hidden' op publicatie}}
+Tekst direct na aanroep
+
+== SmartConnectArchiMate / ArchiMedes (vendor) ==
+Mockup met de kale classes i.p.v. een echte ArchiMedes-aanroep (die hangt aan echte modeldata en het fragiele testsjabloon [[:Sjabloon:DisplayArchiMateElementCustomTest]]).
+<div class="scam-row">
+<div class="scam-inline-block-99 scam-display-inline-block">
+<div class="archimate-displaybox-heading">Eigenschappen (label/spacer-kolom, geteste MarkBacker-fix)</div>
+<div class="archimate-displaybox-body">
+{|
+|-
+| style="width:10em" | Naam
+|
+| Voorbeeldwaarde
+|-
+| style="width:10em" | Type
+|
+| * Opsomming
+* in de waardekolom
+|}
+</div>
+</div>
+</div>
+
+<div class="archimate-displaybox-body">
+{| class="sortable"
+! Element
+! Beschrijving
+|-
+| Voorbeeldelement
+| Een lange voorbeeldtekst om te controleren dat deze wrapt in plaats van de tabel te verbreden bij de sortable ToonTabelVanViewGEMMA-tabellen.
+|}
+</div>
+
+== Algemene lay-out/thema-overrides (vendor GEMMA-skin) ==
+<code>call-to-action</code> en de header/H4-marges zijn homepage-specifiek en hier niet zinvol na te bootsen; zie de homepage zelf.
+
+<nowiki><pre class="codeblock">Platte tekst</pre></nowiki>
+<pre class="codeblock">stukje tekst met codeblock</pre>
+
+[[Bestand:green.png|thumb|Voorbeeld thumbnail-onderschrift (thumbinner/thumbcaption)]]
+
+<code>mw-lingo-term</code> vereist een bestaande, geregistreerde Lingo-term om te demonstreren; test op een pagina met een echt begrip uit de begrippenlijst.
+
+<code>vng-logo</code> is specifiek voor het logo op de homepage, niet hier na te bootsen.
+
+== Generieke tabelstyling ==
+Gewone tabel (globale <code>table</code>-regel: border-collapse, 100% breedte):
+{|
+! Kolom A
+! Kolom B
+|-
+| Waarde 1
+| Waarde 2
+|-
+| Waarde 3
+| Waarde 4
+|}
+
+<code>fixTableHead</code> (scrollbare tabel met vaste header):
+{| class="fixTableHead"
+! Kolom
+|-
+| Rij 1
+|-
+| Rij 2
+|-
+| Rij 3
+|-
+| Rij 4
+|-
+| Rij 5
+|-
+| Rij 6
+|-
+| Rij 7
+|-
+| Rij 8
+|}
+
+<code>flexCellColor</code>:
+{|
+|-
+| class="flexCellColor" | Gele cel
+|}
+
+<code>vertical th</code>:
+{| class="vertical"
+! Verticale kop
+|-
+| Gewone rij
+|}
+
+== Omgevingswetprocessenatlas (projectspecifiek) ==
+Projectspecifieke, SMW-gedreven styling met echte omgevingswetdata; niet zinvol na te bootsen op deze pagina. Test op de omgevingswetprocessenatlas zelf.
+
+== Tabs-component (herkomst onbekend) ==
+<div class="tabs-container">
+<div class="tabs-tb-container">
+<div class="tabs-tb tabs-sel" id="tabA">Tab A</div>
+<div class="tabs-tb" id="tabB">Tab B</div>
+</div>
+<div class="tabs-ct-container">
+<div class="tabs-ct tabA tabs-sel">Inhoud van tab A.</div>
+<div class="tabs-ct tabB">Inhoud van tab B.</div>
+</div>
+</div>
+
+== Losse kleine fixes ==
+<code>.small</code>:
+<span class="small">Kleine tekst</span>
+
+<code>.laatstbewerkt</code>:
+<div class="laatstbewerkt">Rechts uitgelijnde tekst</div>
+
+<code>#ca-talk</code> (verbergt het overlegtabblad) en <code>.thumbcaption</code> (zie de sectie Algemene lay-out/thema-overrides hierboven, thumbnail-onderschrift) zijn hiermee al gedekt.
+
+== Bekende inactieve code (bewust ongewijzigd gelaten) ==
+Het onderstaande voorbeeld is bewust ongestyled: de bijbehorende CSS-regel in Common.css ligt dood door een niet-afgesloten commentaar (zie TODO op [[Beheren styling]]). Ziet het er hier onopgemaakt uit, dan is dat verwacht — geen paginafout.
+
+<div class="btnnieuwsbrief">[[Hoofdpagina|Voorbeeld btnnieuwsbrief]]</div>
+
+De tweede dode regel (<code>td[Kenmerkstijl]</code>) is hier niet gedemonstreerd: onduidelijk of MediaWiki's sanitizer dit niet-standaard HTML-attribuut sowieso al zou strippen, wat een misleidende demo zou geven. Zie de TODO op [[Beheren styling]].

@@ -1,0 +1,309 @@
+{{Publicatie|Wikibeheerder=Beheerder Architectuurtools,}}In deze handleiding wordt uitgelegd hoe de koppeling GGM-GEMMA werkt en wat de benodigde acties zijn om een het GGM model in de GEMMA bij te werken na een GGM release.
+
+==Uitgangspunten en afspraken==
+Samenwerkingsafspraken VNG Realisatie (GEMMA) - Gemeente Delft (GGM)
+
+Dit is een voorlopige lijst van afspraken
+
+* GGM neemt het beheer van de logische datamodellen (conform MIM) op zich
+* GGM en VNG ontwikkelen gezamenlijk een koppelvlak voor de GEMMA bedrijfsobjectmodellen (in Archi).
+** eerst de GGM GEMMA CSV-koppeling (gereed)
+** vervolgens de UML(MIM) - AMEFF (inclusief de views)
+* VNG zet een ontologie op die wordt gerelateerd aan de bedrijfsobjectmodellen
+* VNG wordt beheerder van de concepten, definities in de bedrijfsobjectmodellen ism GGM
+* VNG bepaalt ook de indeling van Bedrijfs- en Dataobjecten van de aangeleverde modellen
+* VNG neemt deel aan de expertgroep GGM
+
+De GGM-GEMMA koppeling is op de volgende uitgangspunten gebaseerd:
+
+* GGM levert de objecten en relaties aan in CSV-formaat conform de onderling afgestemde [https://github.com/VNG-Realisatie/GGM-Archi-repository/blob/develop/CSV%20export/Specificatie%20GGM-GEMMA%20data-uitwisseling.md specificatie GGM-GEMMA data-uitwisseling]
+* De GGM UML-attributen zijn geen onderdeel van de uitwisseling (zie ook specificatie hieronder)
+* VNG levert de GEMMA bedrijfsobjecten terug in CSV-formaat met daarin de vastgelegde definities conform dezelfde afgestemde [https://github.com/VNG-Realisatie/GGM-Archi-repository/blob/develop/CSV%20export/Specificatie%20GGM-GEMMA%20data-uitwisseling.md specificatie GGM-GEMMA data-uitwisseling]
+* VNG biedt het GGM ArchiMate-model aan aan de GGM-community in AMEFF formaat
+* GGM en GEMMA objecten en relaties hebben een uniek en stabiel id
+** Beide modellen bewaren over en weer elkaars id's om eenduidig objecten te kunnen aanwijzen
+** de GEMMA gebruikt het <code>Object ID</code> als uniek id
+** de GGM gebruikt het <code>GGM-guid</code> als uniek id
+
+== Werking koppeling ==
+Het [https://github.com/Gemeente-Delft/Gemeentelijk-Gegevensmodel GGM informatiemodel] wordt door GGM geëxporteerd en beschikbaar gesteld als CSV-bestanden. De CSV-bestanden worden ingelezen in de [https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository GEMMA-GGM Archi-repository]. In dit model ontstaat zo een ArchiMate kopie van het GGM informatiemodel. Vervolgens worden de GEMMA bedrijfsobjectmodellen gemaakt. Dit gebeurt voor een groot deel middels scripting, maar ook wat modelleringsacties.
+
+Tussen GGM en GEMMA worden dus eenvoudig CSV-bestanden uitgewisseld.
+
+Zie [[Bedrijfsobjecten]] voor de huidige versie in het GEMMA ArchiMate-model
+
+Hieronder hoe dit werkt
+{{ToonViewGEMMA
+  |viewid=17c5bc97-b555-45ce-bf08-ff339492dbbd
+  |modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+}}
+
+Het verwerken van een GGM-release bestaat globaal uit de stappen:
+
+* [[Koppeling met GGM#Importeren GGM-model in GEMMA-GGM ArchiMate-model| Importeren GGM-model in GEMMA-GGM ArchiMate-model]]
+** de GGM CSV-bestanden worden in dit model geïmporteerd.
+** met de hand worden de verwijderingen verwerkt
+* [[Koppeling met GGM#Onderhouden bedrijfsobjectmodellen|Onderhouden bedrijfsobjectmodellen]]
+** '''bepaal welke (nieuwe) data-objecten een GEMMA bedrijfsobject worden'''
+** leid het bedrijfsobjectmodel af met een script
+** '''bepaal welke GGM wijzigingen één op één overgenomen kunnen worden''' en waar GEMMA haar eigen naam en definities hanteert
+** genereer views per Beleidsdomein
+* [[Koppeling met GGM#Importeren in GEMMA ArchiMate-model| Importeren in GEMMA ArchiMate-model]]
+** bewaar de bedrijfsobjectmodellen in het GEMMA-GGM model als apart ArchiMate-projectmodel
+** importeer het projectmodel met Archi in het GEMMA ArchiMate-model
+* [[Koppeling met GGM#Publiceren GEMMA-GGM op GitHub| Publiceren GEMMA-GGM op GitHub]]
+** het GEMMA-GGM ArchiMate-model wordt beschikbaar gesteld op GitHub
+*** als HTML report
+*** als AMEFF bestand
+*** en de bedrijfsobjecten in CSV-bestanden.
+* [[Koppeling met GGM#GGM importeren in de GEMMA| GGM importeren in de GEMMA]]
+** importeren van het GEMMA-GGM model in de GEMMA
+** verwijderen niet bijgewerkte bedrijfsobjectenmodellen
+
+De '''vetgedrukte stappen zijn niet technisch van aard''' en niet in een script te vangen. Daar wordt naar aanleiding van wijzigingen in het GGM verder gemodelleerd aan het GEMMA bedrijfsobjectenmodel.
+
+De technische stappen zijn hieronder in instructies uitgeschreven.
+
+=== Benodigde tools ===
+Voor het importeren van de GGM CSV-bestanden worden de volgende tools gebruikt
+
+# Archi met de plugins (zie [[Archi installeren]])
+#* collaboration en
+#* jArchi (beschikbaar via [[ArchiMate tools VNGR]])
+#* meest recente versie van de [https://github.com/VNG-Realisatie/archi-scripts archi-scripts]
+# Toegang tot de GEMMA repositories (Zie [[Werken met Archi]])
+#* met schrijfrechten op de GEMMA [[GitHub Archi-repositories]].
+# LibreOffice Calc
+# Teksteditor, bijvoorbeeld VScode
+
+=== Configuratie ===
+Maak een lokale folder-structuur waarin je gaat werken
+
+# Folder voor de GGM CSV-bestanden
+#* Bijvoorbeeld: <code>..\..\GGM\...</code>
+# Folder voor controlebestanden
+#* Bijvoorbeeld: <code>..\..\GGM\...</code>
+
+Definiëer de locatie van je lokale GEMMA-GGM repository
+
+# Opzoeken root-folder van de lokale git-repository
+#* Ga naar GitHub https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository
+#* Selecteer de URL https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository.git
+#* Open Archi en importeer het model via de Colaboration-plugin. Gebruik daarvoor je PAT-key.
+#* Selecteer het GGM-GEMMA model-object in de Archi model-tree en selecteer de Development branche
+#* Selecteer het model aan de linkerkant en kijk in properties. Archi toont de folder waar het model is opgeslagen, default folder is C:\Users\<user>\Documents\Archi\model-repository\ggm-archimate-repository\.git
+# Haal de scripts op van https://github.com/VNG-Realisatie/archi-scripts
+#* Dit kan via GitHub desktop
+# Configureer locatie in een Tekst editor
+#* open met de teksteditor het script <code>GGM/include_ggm_gemma.js</code>
+#* Definiëer de const GGM_CSV_DIR > Zorg dat deze variabele verwijst naar de map met werkbestanden. Verander de backslashes \ in slashes in Windows. Anders geeft dit fouten.
+
+<s>Optioneel</s>
+
+# <s>definiëer de ggm_export bestanden</s>
+#* <s>open het script <code>GGM/include_config</code></s>
+#* <s>definiëer de <code>const</code> voor GGM export bestanden</s>
+
+=== Importeren GGM-model in GEMMA-GGM ArchiMate-model ===
+==== Importeren GGM CSV-bestanden ====
+Zie de [https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository/blob/develop/exports/Specificatie%20GGM-GEMMA%20data-uitwisseling.md specificatie GGM-GEMMA data-uitwisseling] voor informatie over het downloaden van de laatste release van de GGM in CSV-bestanden.
+
+# Klaarzetten GGM CSV's:
+#* Download de laatste versie van de CSV-bestanden van de GitHub van gemeente Delft: https://github.com/Gemeente-Delft/Gemeentelijk-Gegevensmodel/tree/master/tools/output
+#* Bewaar de CSV's lokaal in een map met de versie in de naam, zoals: <code>..\GGM\...</code>.
+#** <code>ggm_export_objects_<datum>.csv</code>
+#** <code>ggm_export_relations_<datum>.csv</code>
+# Optioneel: Config.js aanpassen wanneer je dit vaker moet doen.
+#* Standaard verschijnt een popup om een bestand te openen. Je kunt een bestandsnaam definiëren in <code>GGM/config.js</code>.
+# Importeren in Archi:
+#* Selecteer eerst het model GEMMA GGM in Archi (Linkerkolom)
+#* Objecten: gebruik het script <code>GEMMA/GGM/1_ggm_import_element.ajs</code>.
+#** Standaard verschijnt een popup om een bestand te openen. Je kunt een bestandsnaam definiëren in <code>GGM/config.js</code>.
+#** Selecteer het '''ggm_export_objects_<datum>''' - bestand
+#** [[Bestand:Archi-instelling.png|miniatuur]] De scripts maken gebruik van CommonJS. > Krijg je de fout "'''**ReferenceError: "require" is not defined**'''", wijzig dan de Archi Scripting configuratie: Schakel dan onder Edit > Preferences > Scripting de optie Enable CommonJS Support aan.
+#** Indien er veel wijzigingen zijn in de Beleidsdomeinen is het verstandig deze apart in te lezen.
+#*** gebruik het script <code>GEMMA/GGM/1a_ggm_import_beleidsdomein.ajs</code> met het '''ggm_export_objects_<datum>''' - bestand.
+#*** ga naar controleren import voor onderdeel beleidsdomeinen. Als de beleidsdomeinen klopppen, door met volgende stap.
+#*** gebruik het script <code>GEMMA/GGM/1b_ggm_import_dataobject.ajs</code> weer met het '''ggm_export_objects_<datum>''' - bestand.
+#* Relaties: gebruik het script <code>GGM/2_ggm_import_relation.ajs</code>.
+#** Selecteer het andere bestand: '''ggm_export_relations_'''<datum>
+#** Werkt op dezelfde manier als het script voor objecten.
+
+==== Controleren import en verwijderingen ====
+Het GEMMA-GGM-model wordt gecontroleerd en gecorrigeerd met Archi.
+
+* Bekijk de [https://github.com/Gemeente-Delft/Gemeentelijk-Gegevensmodel/releases GGM release-notes].
+* Controleer en bijwerken Beleidsdomeinen: '''Hernoemde beleidsdomeinen:'''
+* Open de view 'Beleidsdomeinen en Iv3'.
+* Een naamswijziging maakt een nieuw beleidsdomein. Het originele beleidsdomein krijgt een nieuwe naam [Deleted <naam>] en komt bovenaan te staan. De acties die nodig zijn om dit te goed te maken zijn:
+** Sleep het "nieuwe" beleidsdomein in de view
+** Selecteer het originele beleidsdomein (Met [Deleted] ervoor ). Geef het originele object ook de nieuwe naam.
+** Selecteer het originele object (met property <code>GGM-datum-tijd-export</code> met oude datum).
+** Draai het script <code>mergeElement</code>.
+** Voer het script mergeElement uit. Alle properties, e.d. worden op beide objecten geplaatst.
+** Verwijder het "nieuwe" beleidsdomein uit de view.
+** Selecteer weer het originele beleidsdomein en kijk onder properties of er geen dubbele zijn.
+*** Verwijder de dubbele properties
+*** Verwijder de meest oude Latest Sync Date
+* '''Toegevoegde beleidsdomeinen:'''
+** Nieuw toegevoegd beleidsdomeinen zijn cursief geschreven (cursief omdat deze nog niet voorkomen op een view)
+** Open de view 'Beleidsdomeinen en Iv3'.
+*** Voeg het beleidsdomein toe aan de view. Selecteer de cursief geschreven beleidsdomein en sleep deze naar het view.
+*** Maak een aggregatie-relatie met het juiste Iv3-taakveld. Het juiste Iv3-taakveld kan je achterhalen via [https://www.gemeentelijkgegevensmodel.nl/ https://www.gemeentelijkgegevensmodel.nl] en daar te zoeken op het beleidsdomein. Na deze gevonden te hebben zie je in menu links onder welke beleidsdomein deze valt. Bijvoorbeeld Dak- en thuislozen valt onder Sociaal Domein. Trek de relatie vanuit het Iv3-taakveld naar het beleidsdomein.
+*** Geef de relatie de property <code>excludeFromView=true</code> (zorgt ervoor dat taakvelden niet worden meegenomen in de gegenereerde views; zie script <code>include_view.ajs</code>).
+*** Beoordeel of het een relevant beleidsdomein is voor de GEMMA, oftewel of het een domein is met bedrijfsobjecten. Zo ja, geef zet dan de property <code>GEMMA type=Beleidsdomein</code>. Deze property wordt door de scripts gebruikt om te bepalen of er views worden gegenereerd.
+* '''Verwijderde beleidsdomeinen:'''
+** Mocht een [Deleted] beleidsdomein niet hernoemd zijn, maar echt verwijderd. Dan kan deze verwijderd worden van de view en later uit het model.
+*** Bedrijfsdomeinen selecteren > rechtermuisknop > Delete from model
+*** Views gegenereerd voor verwijderde domeinen moeten ook verwijderd worden. 
+**** makkelijkst is om alle data-object en bedrijfsobject views allemaal te verwijderen en in bulk nieuwe views te genereren.
+**** selecteer de folder Other/Sync/Beleidsdomeinen en run script 4.
+
+* '''View Beleidsdomeinen en Iv3 opnieuw genereren'''
+** Ga in de view staan en start het script Scripts\View\_GUI
+** Selecteer voor dat je start:
+*** Layout selected view
+*** Onder Tab Load and Save laad je ''regels.js'' in
+*** Klik daarna op OK
+*** De gegenereerde view staat nu in de folder Views/_Generated
+** Om de originele id's te bewaren dient de Generated view gekopieerd te worden naar het originele view.
+*** Ga in de gegenereerde view staan en selecteer alles (CTRL +a)
+*** Ga daarna naar de originele view en verwijder alles middels CTRL + a & delete
+*** Plak nu de gegenereerde view in het origineel met CTRL+v
+
+==== Verwerk door GGM verwijderde elementen: ====
+
+*Zoek in Archi in het GEMMA GGM model op [Deleted]
+**Selecteer alle Data-objecten (GGM) en verwijder deze
+**Selecteer daarna alle [Deleted] bedrijfsobjecten en verwijder deze. Dit is voor nu de werkwijze, zodra de bedrijfsobjecten verbonden zijn met andere GEMMA elementen zal dit inhoudelijk beoordeelt moeten worden. 
+
+=== Onderhouden bedrijfsobjectmodellen ===
+==== Markeren beleidsdomeinen en bedrijfsobjecten ====
+Het GGM is de basis voor de GEMMA bedrijfsobjectmodellen. Welke geïmporteerde beleidsdomeinen en data-objecten gebruikt worden voor de GEMMA bedrijfsobjectmodellen wordt gedaan door een property een waarde te geven.
+
+In het GEMMA-GGM model krijgen nieuwe objecten bij de import de volgende properties:
+
+* Beleidsdomeinen krijgen
+** allemaal <code>GGM-type="Beleidsdomein"</code>.
+** toegevoegde objecten <code>GEMMA type="te bepalen"</code>
+* Data-objecten krijgen
+** allemaal <code>GGM-uml-type=<nowiki><UML type></nowiki></code>, waarde wordt ingelezen met import
+** toegevoegde objecten <code>ArchiMate-type="te bepalen"</code>
+
+De toegevoegde properties worden in het GEMMA-GGM model beheerd. Met deze properties wordt bepaald welke GGM objecten gebruikt worden om de bedrijfsobjectmodellen van af te leiden.
+
+Doe dit in overleg met collega's
+
+# '''beoordeel of een (toegevoegde) groep een GEMMA beleidsdomein is'''.
+#* Filter in Archi op <code>GEMMA type="te bepalen"</code>
+#* Voor GEMMA beleidsdomeinen, wijzig de property naar <code>GEMMA type="Beleidsdomein"</code>. Laat beleidsdomeinen die GGM nog niet af heeft op "te bepalen" staan.
+#* Alleen van GEMMA beleidsdomeinen worden bedrijfsobjectmodellen (views) gegenereerd
+# '''beoordeel of een (toegevoegd) data-object een GEMMA bedrijfsobject is'''.
+#* Filter in Archi op <code>ArchiMate-type="te bepalen"</code>
+#* geef de GEMMA bedrijfsobjecten de property <code>ArchiMate-type="Business object"</code>
+#* het helpt om de views van de data-objecten hierbij te gebruiken.
+#** genereer een tijdelijke set van views met het script <code>GGM/4_ggm_gemma_views.ajs</code>.
+#** de views staan in <code>Views/Data-objecten (GGM)</code>
+#** data-objecten die gemarkeerd zijn als bedrijfsobject zijn in de views geel gemaakt. Data-objecten zonder markering zijn grijs.
+
+==== Afleiden bedrijfsobjecten en bijwerken views ====
+
+# Afleiden bedrijfsobjecten
+#* zorg dat het GEMMA-GGM model geselecteerd is.
+#* draai het script <code>GGM/3_ggm_gemma_bedrijfsobject.ajs</code>. Default worden alle data-objecten doorlopen. Voor een proefrun kun je ook een rijtje data-objecten selecteren, dan worden alleen die objecten verwerkt.
+#** bedrijfsobjecten in folder /Business/_Sync GEMMA en project/GGM/Bedrijfsobjecten/
+#** bedrijfsobjectrelaties in folder /Relations/_Sync GEMMA en project/GGM/Bedrijfsobjecten/
+#** aggregaties beleidsdomeinen in folder /Relations/_Sync GEMMA en project/GGM/Beleidsdomeinen/
+#** link tussen data-objecten en bedrijfsobjecten /Relations/Data-object realiseert bedrijfsobject/
+# verwerken inhoudelijke updates GGM, zoals naamswijzigingen en definities
+#* maak een export van de bedrijfsobjecten
+#** selecteer de /Business/_Sync GEMMA en project/GGM/Bedrijfsobjecten/
+#** draai het script <code>ExportImport_CSV/Export_element.ajs</code>
+#** open het gegenereerde CSV-bestand
+#*** '''beoordeel of de GGM naam en definitie overgenomen moet worden'''
+#**** sorteer op de kolom <code>GGM-naam</code> (alle lege, niet gewijzigde namen staan nu onderaan) en vergelijk de kolommen <code>name</code> en <code>GGM-naam</code> en
+#**** sorteer op de kolom <code>GGM-definitie</code> en vergelijk de kolommen <code>documentation</code> en <code>GGM-definitie</code>
+#**** Nog bepalen of het voor filteren en eventueel scripting zinvol is een extra property te introduceren waarmee wordt gemarkeerd dat de GEMMA naam en/of definitie afwijkt van GGM.
+#** draai het script <code>ExportImport_CSV/Import.ajs</code>
+#** bewaar de console output als .log file.
+#* draai nogmaals het script <code>GGM/3_ggm_gemma_bedrijfsobject.ajs</code> voor het bijwerken van de property <code>alternate-name</code>
+#** de data- en bedrijfsobjecten met dubbele namen, krijgen een property <code>alternate name='<name> (<Beleidsdomein>)'</code>
+# bijwerken bedrijfsobjectenmodellen
+#* voor ieder Beleidsdomein wordt er twee views gegenereerd. Eén met data-objecten en één met bedrijfsobjecten. De views met data-objecten bevatten alle GGM elementen en relaties.
+#* draai het script <code>GGM/4_ggm_gemma_views.ajs</code>.
+
+=== Publiceren GEMMA-GGM op GitHub ===
+Het GEMMA-GGM ArchiMate-model wordt op GitHub beschikbaar gesteld. In de readme van de [https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository GEMMA-GGM Archi-repository] staat toegelicht welke onderdelen beschikbaar zijn
+
+==== Maken report en exports ====
+De [https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository GEMMA-GGM Archi-repository] is publiek toegankelijk. Gemeenten en de GGM-community kunnen in de repository het GGM informatiemodel en de GEMMA bedrijfsobjectmodellen als ArchiMate-model vinden.
+
+In deze stap worden deze in de repository klaargezet.
+
+# bijwerken releasedatum in model
+#* selecteer model-object in de model tree
+#* wijzig property Release naar vandaag (release script alleen gebruiken voor GEMMA model)
+# maken [https://vng-realisatie.github.io/GGM-Archi-repository Archi HTML report]
+#* genereer report met Archi > File > Report > HTML
+#** save report in de folder 'docs' in de lokale GGM .git repo die je hierboven hebt opgezocht
+#** Archi waarschuwt dat de map niet leeg is. Overschrijf de inhoud van de map met het nieuwe rapport
+# maak [https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository/tree/develop/exports AMEFF export] (link naar develop-branch)
+#* exporteer het GGM-GEMMA model met Archi > Export > Model To Open Exchange File
+#** save export in de folder 'exports' in de lokale GGM .git repo
+#** overschrijf het bestaande bestand 'GEMMA-GGM AMEFF.xml'
+# maak de [https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository/tree/develop/exports CSV-bestanden] met bedrijfsobjecten en relaties
+#* zie [[Koppeling met GGM#Configuratie| Configuratie]] voor het vastleggen de directory van je lokale repository
+#* draai het script <code>GGM/5_ggm_gemma_export.ajs</code>
+#** kijk in de Archi script-console voor waar de csv-bestanden bewaard zijn
+#** de bedrijfsobjecten en de onderlinge relaties zijn nu geëxporteerd naar een CSV-bestand.
+#** de Beleidsdomeinen en iv3-indeling worden niet als csv-export beschikbaar gemaakt
+
+==== Publiceren met Archi en git ====
+Alle onderdelen worden met behulp van git gepubliceerd op GitHub als onderdeel van de repository
+
+Eigenlijk is het dan ook één stap:
+
+# publiceer de GEMMA-GGM repository met Archi.
+#* onder water worden nu zowel wijzigingen in model en de 'docs' en 'AMEFF' folder gepushed naar github.
+#* vergeet niet de develop-branche te mergen in de master-branche
+#** maak de master-branche actief
+#** merge de develop-branch in de master-branch en
+#** publish de master-branch
+
+== GGM importeren in de GEMMA ==
+Het bijgewerkte GEMMA-GGM ArchiMate-model wordt geïmporteerd in het GEMMA ArchiMate-model. Het GEMMA-GGM model wordt hiervoor behandeld als een projectarchitectuur. De voor de GEMMA relevante bedrijfsobjecten, relaties en views bevinden zich in de folder '_Sync GEMMA en project'. Alle views en daarmee alle op deze views getoonde elementen worden in de GEMMA geïmporteerd.
+
+Zie de pagina [[GEMMA Kernmodel en Projectarchitecturen]] voor instructies hoe een projectmodel in de GEMMA geïmporteerd wordt
+
+Dit zijn de stappen:
+
+# importeren van het GEMMA-GGM model in de GEMMA
+#* in GEMMA-GGM ArchiMate-model
+#** selecteer de folder 'Views/_Sync GEMMA en project/GGM'
+#** draai script <code>Beheren/createProjectModel.ajs</code>
+#** save <code>Projectmodel-GGM.archimate</code>
+#* in GEMMA ArchiMate-model
+#** File > Import > Another Model into the Current Model
+#** importeer het zojuist bewaarde <code>Projectmodel-GGM.archimate</code>
+#** optioneel: bewaar de Archi logging van het importeren
+# verwijder de niet bijgewerkte bedrijfsobjectenmodellen uit de GEMMA
+#* selecteer de folder <code>Business/_Sync GEMMA en project/GGM/Bedrijfsobjecten</code>
+#* draai het script <code>ImportExport_CSV/export_element.ajs</code>
+#* openen het CSV-bestand met LibreOffice Calc
+#** Filter de kolom <code>GGM-datum-tijd-export</code> op datum ouder dan de laatste GGM export
+#** verwijder de bedrijfsobjecten van deze regels met Archi
+#*** zoek op de naam van het bedrijfsobject
+#*** Archi toont het bedrijfsobject Cursief, oftewel het object staat op geen enkele view.
+#*** zoniet, zoek uit waar het object wel gebruikt en wat er mee moet gebeuren ...
+
+De GEMMA bevat nu de nieuwe versie van het GGM
+
+== ToDo - Bedrijfsobjecten als ontologie ==
+'''To do''' De GEMMA bedrijfsobjecten worden beschikbaar gesteld als een begrippenlijst (een ontologie).
+
+{{ToonViewGEMMA|viewid=17c5bc97-b555-45ce-bf08-ff339492dbbd|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}}
+
+* Op GEMMA online worden de begrippen in een aparte collectie gepubliceerd
+* als een bedrijfsobjectnaam in een tekst wordt gebruikt, wordt dit met een 'kringeltje' gemarkeerd. De definitie is als tooltip beschikbaar (getoond bij hooveren)
+
+[[Category:Uitleg platform en tools]]

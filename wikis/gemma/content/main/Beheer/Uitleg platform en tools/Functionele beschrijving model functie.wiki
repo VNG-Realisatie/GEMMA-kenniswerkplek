@@ -1,0 +1,20 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Uitleg platform en tools]]
+Voor een bepaalde gemeente:
+* Naam van de gemeente
+
+Voor alle pakketten die die gemeente heeft:
+* Pakketnaam (of pakketversie?)
+* GUID(s) van bijbehorend referentiecomponent(en) uit GEMMA
+* GUID(s) van door het pakket ondersteunde standaarden uit GEMMA
+* Koppelingen tussen pakketten (data van pakket a naar pakket b)
+		
+* Uitgangspunt: gemeente downloadt het gehele GEMMA-model, modelmatig aangevuld met de pakketten uit de SW catalogus
+* Vraag: op welke views (waar referentiecomponenten op voorkomen) moeten de pakketten visueel worden getoond?
+* Vraag: welke eigenschappen van pakketten uit SW catalogus meenemen in het samengevoegde model?
+
+* Er is een [http://devimg/wiki/redactiegemmaonline/extensions/GEMMAAPI/test/TestFormTestModel.html formulier] gemaakt waarmee de input getest kan worden
+
+* Let op: Model en Modelversienr, moeten ook onderdeel zijn van de opgevraagde gegevens. Dit geldt voor alle objecten in de opgevraagde gegevens.

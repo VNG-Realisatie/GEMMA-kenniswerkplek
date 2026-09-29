@@ -1,0 +1,67 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's, 
+}}
+[[Categorie:Schrijven op de wiki]]<!--
+-->{{#vardefine: modelpage|{{#ask: [[Semantictitle::GEMMA]] [[Categorie:ArchiMateModels]]|link=none}} }}<!--
+-->{{#vardefine: modelid|{{#show:{{#var:modelpage}}|?Object ID|link=none}} }}<!--
+-->{{#vardefine: totaal
+    |{{#ask:  [[Categorie:ArchiMateConcepts]]
+              [[Occurs in model::{{#var:modelpage}}]]
+      |format=count
+    }} 
+   }}<!--
+-->{{#vardefine: start|{{#urlget:offset}} }}<!--
+-->{{#ifeq: {{#var:start}}||{{#vardefine:start|0}} }}<!--
+
+-->Start: {{#var:start}}
+Elementen  van [[{{#var:modelpage}}]] ({{#var:totaal}})<br />
+{{#ifeq:{{#var:start}}|0
+    <!-- |0 - 500 -->
+    |[{{fullurl:{{FULLPAGENAME}}|offset=0}} 0 - 500]
+}}
+{{#ifeq:{{#var:start}}|500
+    <!-- |500 - 1000 -->
+    |[{{fullurl:{{FULLPAGENAME}}|offset=500}} 500 - 1000]
+}}
+{{#ifeq:{{#var:start}}|1000
+    <!-- |1000 - {{#var:totaal}} -->
+    |[{{fullurl:{{FULLPAGENAME}}|offset=1000}} 1000 - {{#var:totaal}}]
+}}
+<table class="sortable wikitable">
+<tr>
+ <th>Paginatitel</th>
+ <th>Elementtype</th>
+ <th>Id</th>
+</tr>
+{{#ask: [[Categorie:ArchiMateElements]][[Occurs in model::{{#var:modelpage}}]]
+|mainlabel=Paginatitel
+|link=none
+|format=template
+|template=ToonElementenMetID
+|?Object ID_nl
+|?Semantictitle
+|?Elementtype
+|sort=Semantictitle
+|searchlabel=
+|userparam={{#var: modelid}}
+|offset={{#var:start}}
+|limit=500}}
+</table>
+
+<!--
+KIJK EERST NAAR DE VIEWS
+-->{{#vardefine: pagename
+      |{{#ask: [[Object ID::{{{id}}}]] 
+                {{#if: {{{modelid|}}}|[[Occurs in model.Object ID::{{{modelid}}}]] }}
+                [[-Occurs in view::+]]|link=none
+       }}
+   }}<!--
+INDIEN GEEN VIEW
+-->{{#if:{{#var:pagename}}
+      ||{{#vardefine: pagename
+          |{{#ask: [[Object ID::{{{id}}}]] 
+                  {{#if: {{{modelid|}}}|[[Occurs in model.Object ID::{{{modelid}}}]] }}
+                  |link=none
+           }}
+        }}
+   }}

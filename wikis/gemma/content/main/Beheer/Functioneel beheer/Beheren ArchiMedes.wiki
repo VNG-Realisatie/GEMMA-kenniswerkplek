@@ -1,0 +1,87 @@
+[[Category:Functioneel beheer]]
+ArchiMedes is synoniem met SmartConnectArchiMate™. Deze pagina beschrijft het ArchiMedes-specifieke beheer bij GEMMA: categorieën en sjablonen. Voor de conceptuele werking (browser, overrule, toon-op-eigen-pagina) zie [[Architectuur wiki#SmartConnectArchiMate|Architectuur wiki]]; voor de volledige leveranciersdocumentatie (bladeren door modellen, importeren/exporteren/verwijderen, dynamische views, queries, configuratie-instellingen) zie [[SmartConnectArchiMateHelp nl]]; voor de sjablonen zelf zie [[:Sjabloon:LibraryArchiMedesCustom]] en [[:Sjabloon:LibraryToonArchiMate]].
+
+==ArchiMedes categorieën==
+Bij het importeren van een ArchiMate-model worden alle objecten door ArchiMedes ingedeeld in meerdere ArchiMate-categorieën.
+
+ArchiMedes maakt slechts een deel van de gebruikte categorieën ook daadwerkelijk (met een categorie pagina). Daar waar ArchiMedes overlapt met het onderliggende SmartCore zijn de category-pagina's vaak wel aangemaakt. De SmartCore category-pagina's bevatten de aanroep <code><nowiki>{{#elementtypecategory:}}</nowiki></code>. Dit zorgt ervoor dat er een knop is waarmee een nieuw element van het elementtype met formulier kan worden aangemaakt. Onbekend wat de aanroep verder doet.
+
+Suggestie/idee:
+* extensie sjabloon {{#elementtypecategory:}} maakt de category hidden afhankelijk van een wiki-brede configuratie.
+
+'''Meerwaarde ArchiMate-categorieën'''<br>
+ArchiMedes categorieën worden gebruikt in queries (bijvoorbeeld [[:Categorie:Elementen]]). Enkele elementtypen bulken van de categorieën. Applicatiefuncties zijn denk ik koploper, kijk bijvoorbeeld eens naar [[Loggingenverwerkingen/id-3c98ecc5-26e9-496e-bca6-daad6b82c6d3]]. Deze categorieën worden in queries gebruikt, al is dat niet voor alle categorieën duidelijk. Ook zou in veel gevallen de property <code>Elementtype</code> in queries gebruikt worden.
+
+Maar, er zijn eigenlijk geen ArchiMedes categorieën die meerwaarde hebben om op een pagina te tonen. Uitzondering is [[:Categorie:ArchiMateModels]], die lekker compact het lijstje van modellen toont:
+: <categorytree mode="all" depth="0" showcount="on" >ArchiMateModels</categorytree>
+
+De ArchiMedes categorieën hebben '''voor GEMMA architecten''' weinig meerwaarde:
+* meeste ArchiMedes categorieën '''modeloverstijgend''' zijn
+* en de enige modelspecifieke categorie veel te groot is
+** categorie [[:Categorie:ArchiMateModel_GEMMA/id-2b2b88ba-8efe-46d3-8b40-47af290bc418]] bevat bijvoorbeeld ook visuele objecten > 20.000 elementen
+** de modelpagina [[GEMMA/id-2b2b88ba-8efe-46d3-8b40-47af290bc418]] de betere ingang is
+
+De ArchiMedes categorieën zijn voor '''gemeenten''' ronduit verwarrend. Het beste is de categorie niet tonen, of je zou zeker niet naar de categorie-pagina moeten kunnen.
+
+'''Verbergen ArchiMedes categorieën'''<br>
+Onderstaande categorie-pagina's zijn met het [[:sjabloon:HiddenCategory]] op <nowiki>__HIDDENCAT__</nowiki> gezet
+: <categorytree mode="all" depth="0" showcount="on" >GEMMA ArchiMedes‎Categories</categorytree>
+
+Hiervoor zijn enkele bestaande categorie-pagina's zijn overschreven, bijvoorbeeld:
+* [[:Categorie:AggregationRelationships]]
+** automatisch aangemaakt door WikiXL SmartCore in 2018?
+** bevatte de aanroep naar <code><nowiki>{{#elementtypecategory:}}</nowiki></code>
+** toont button <code>Maak aggregationRelationship</code>
+
+Enkele ArchiMedes categorie-paginas konden niet verborgen worden. Deze worden beheerd door ArchiMedes. Wens is dat ArchiMedes deze categorieën zelf hidden maakt
+* categorie [[:Categorie:ArchiMateModel_GEMMA/id-2b2b88ba-8efe-46d3-8b40-47af290bc418]] > 20.000 elementen
+** door SmartConnect import log gecreëerd op 19 maart? is niet laatste aanpassing
+** na import van de GEMMA is de '''aanpassing overschreven'''
+
+Brontekst in ArchiMedes categorie-pagina's
+<pre>
+<!-- {{#elementtypecategory:}} -->
+{{HiddenCategory
+  |groep=archimedes
+}}
+</pre>
+
+'''SmartPublish categorie conditioneel'''<br>
+Zie [[:Categorie:SmartPublish-Watched]]
+<pre>
+<!--TS:20230322110000--><noinclude>{{#ifeq: {{#spGetConfigVar: hideSPcategories }}|true|__HIDDENCAT__ Dit is een verborgen categorie voor intern gebruik binnen SmartPublish.|Dit is een categorie voor intern gebruik binnen SmartPublish.}}</noinclude>
+</pre>
+
+== ArchiMedes sjablonen ==
+SmartConnectArchiMate™ biedt sjablonen voor het importeren, exporteren en weergeven van een ArchiMate-model, waaronder [[:Sjabloon:DisplayArchiMateDiagram]] voor het tonen van een view op een andere pagina. Zie [[SmartConnectArchiMateHelp nl]] voor de volledige leveranciersdocumentatie (bladeren door modellen, importeren/exporteren/verwijderen, dynamische views, queries, configuratie-instellingen).
+
+Alle SmartConnectArchiMate™ sjablonen:
+: <categorytree mode="pages" depth="0" showcount="on">SmartConnectArchiMate™</categorytree>
+
+Aanvullend worden er als onderdeel van de SWCAPI extensie sjablonen meegeleverd. Dit zijn enkele Toine-specials die nu door ArchiXL beheerd worden. Te vinden via de categorie:
+: <categorytree mode="pages" depth="0" showcount="on">SWCAPITemplates</categorytree>
+
+'''Custom ArchiMedes sjablonen'''<br>
+Een GEMMA ArchiMate-sjabloon verrijkt de ArchiMedes functionaliteit of vervangt een ArchiMedes-sjabloon. Redenen om dit te doen zijn:
+* Specifieke GEMMA uitbreidingen in het ArchiMate-model
+** Import van specifieke eigenschappen in het GEMMA model
+** Indelen in GEMMA specifieke categorieën
+* Het GEMMA model zo begrijpelijk mogelijk tonen aan gemeenten door
+** technische id's te verbergen
+** technische labels te verbergen (bv. de semantische titel, de lowercase variant van de titel)
+** minder links te tonen, opdat je minder snel verdwaalt
+** etc
+* Ondersteunen van redacteuren bij:
+** het makkelijk maken om een ArchiMate object op een pagina te tonen
+** het uniform opmaken van ArchiMate objecten
+
+Hoe dat mechanisme precies werkt (de postfix 'custom', de scheiding tussen tonen en vastleggen, het stappenplan voor een nieuw sjabloon) staat in [[:Sjabloon:LibraryArchiMedesCustom]] en wordt hier niet herhaald. Tonen en vastleggen zijn bewust gescheiden: vastleggen (eigenschappen zetten, categoriseren) gebeurt in [[:Sjabloon:SmartCoreEpilogue]], tonen in het Display-sjabloon zelf, zie [[:Sjabloon:LibraryArchiMedesCustom#Tonen en vastleggen zijn gescheiden|LibraryArchiMedesCustom]].
+
+De sjablonen zijn zelf documenterend. Open het sjabloon en zie hoe je deze moet aanroepen.
+
+Categorieën met GEMMA ArchiMate-sjablonen:
+: <categorytree mode="all" depth="0" showcount="on" >GEMMA ArchiMedesTemplates</categorytree>
+: <categorytree mode="all" depth="0" showcount="on" >GEMMA ArchiMedesTemplatesObsolete</categorytree>
+
+'''Testen'''<br>
+Sjabloon-subpagina's van [[:Sjabloon:LibraryArchiMedesCustom]] en [[:Sjabloon:LibraryToonArchiMate]] zijn los te previewen: buiten de sjabloon-namespace valt de parameter <code>page</code> terug op een vast testobject, dus de Preview-sectie van elke subpagina toont meteen een werkend resultaat. Zie [[:Sjabloon:LibraryArchiMedesCustom#Testen zonder ArchiMedes]] voor de volledige uitleg — er is geen aparte testpagina meer nodig.

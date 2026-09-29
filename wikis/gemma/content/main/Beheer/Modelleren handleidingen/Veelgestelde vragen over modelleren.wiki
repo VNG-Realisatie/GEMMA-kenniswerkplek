@@ -1,0 +1,30 @@
+[[Category:Modelleren handleidingen]]
+==== Hoe verwijder ik een oude standaardversie uit de GEMMA én de Softwarecatalogus? ====
+Om verouderde standaardversies te ‘verwijderen’ moeten deze niet uit het GEMMA ArchiMate-model worden verwijderd. In plaats van verwijderen wordt een standaardversie '''onzichtbaar''' gemaakt door de eigenschap <code>status</code> te wijzigen in ‘Teruggetrokken’ of ‘Einde ondersteuning’. Standaardversies met deze status worden in de SWC niet meer getoond. Onder water bestaan deze nog wel en zijn op te vragen bij een pakket onder het kopje ‘Door leverancier toegevoegde standaarden’
+
+Reden om verouderde standaarden niet uit het GEMMA ArchiMate-model te verwijderen is dat bij het importeren van het GEMMA model in de Softwarecatalogus de standaardversies alleen worden toegevoegd of geüpdatet, maar niet worden verwijderd. Een in het GEMMA-model verwijderde standaardversie blijft in de SWC dus gewoon aanwezig en zichtbaar. 
+
+==== Wat als een standaardversie toch uit het model verwijderd is? ====
+Is een standaardversie uit de GEMMA verwijderd, maar deze is nog wel als ‘wees’ aanwezig in de SWC? Dan kan deze als laatste redmiddel met de hand uit de SWC database verwijderd worden. Gaat via Drupal Admin interface, onder ‘inhoud’. Let goed op, want met het verwijderen van een standaardversie worden ook alle relaties verwijderd die deze versie heeft met pakketten.
+
+==== Welke overzichten van het GEMMA ArchiMate-model zijn er ====
+Meest gebruikte overzichten
+* Bedrijfsarchitectuur
+** [[Bedrijfsobjecten]]
+* Informatiearchitectuur
+** [[ToonStandaardenlijst]]
+*** vanaf deze pagina kun je doorklikken naar de subsets StUF- en API-standaarden en Informatiemodellen. Subsets tonen ook versieinformatie
+** [[Overzicht alle referentiecomponenten]]
+** [[Overzicht GEMMA architectuurviews]]
+** [[Overzicht buitengemeentelijke voorzieningen]]
+* Standaarden
+** [[GEMMA standaardenlijst]]
+
+==== Welke groeperingen worden gebruikt? ====
+Voor de GEMMA bedrijfsobjecten wordt Iv3 en beleidsdomeinindeling van het GGM gebruikt. De indeling geeft toegang tot de [[Bedrijfsobjecten]]
+
+De onderstaande groeperingen worden in het GEMMA model gebruikt. De groeperingen worden 
+{{ToonViewGEMMA
+|viewid=92d6ad7b-4420-4c56-95eb-7598a3e33021
+|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418 <!--GEMMA model -->
+|label=}}

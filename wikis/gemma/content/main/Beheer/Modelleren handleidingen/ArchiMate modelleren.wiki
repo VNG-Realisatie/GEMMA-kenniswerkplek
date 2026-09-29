@@ -1,0 +1,67 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Category:ArchiMate modelleren]]
+[[Category:Modelleren handleidingen]]
+__NOTOC__
+
+Voor de beschrijving van de GEMMA wordt intensief gebruikgemaakt van architectuurmodellen. Een architectuurmodel is "een representatie van een systeem(onderdeel) met behulp van modelmatig geordende elementen".  
+Modellen maken het mogelijk om een systeem of onderdeel daarvan gestructureerd te beschrijven. Een eenmaal ontwikkeld model kan voor meerdere doelen worden gebruikt, en is op basis van nieuwe inzichten te onderhouden en uit te breiden.  
+
+GEMMA-architectuurmodellen worden opgesteld in [https://www.opengroup.org/archimate-forum/archimate-overview ArchiMate]: een open, onafhankelijke modelleertaal voor architectuur, ondersteund door diverse tools.  
+
+<small>Voor een toelichting op het verschil tussen 'tekenen' en 'modelleren' zie [[Tekenen en modelleren]].</small>
+
+=== Twee GEMMA-modellen ===
+
+Er zijn twee ArchiMate-modellen die gebruikt worden in de GEMMA online content
+
+* '''GEMMA ArchiMate-model''' – Bevat de modellen achter de basisarchitectuur, de thema-architecturen en de standaarden. 
+* '''Over GEMMA ArchiMate-model''', met daarin:  
+** [[GEMMA kennismodel]] - beschrijft de architectuurelementen en hun onderlinge samenhang.
+** [[GEMMA Portfolio | GEMMA portfolio]] - beschrijft de verschillende GEMMA-producten en hun relaties.
+
+=== Ontwikkelproces en samenwerking ===
+De modellen worden ontwikkeld en beheerd door het Kenniscentrum Architectuur van VNG Realisatie, met de open source-tool [https://www.archimatetool.com/ Archi]. Archi gebruikt [https://nl.wikipedia.org/wiki/Git_(software) git] voor versiebeheer. Zie [[Waarom heeft VNG voor de tool Archi gekozen]] voor de overwegingen achter deze keuze.
+
+De centrale git-repository staat op [https://github.com/VNG-Realisatie GitHub]. Gemeenten en leveranciers kunnen met Archi de modellen bekijken en lokaal kopiëren. Zo kunnen meerdere partijen gelijktijdig bijdragen aan de doorontwikkeling en het gebruik van GEMMA-modellen.  
+
+Wie met een ander architectuurtool werkt (zoals BiZZdesign, Mavim, Sparx of ValueBlue) kan het model downloaden in de AMEFF-uitwisselstandaard en importeren in de eigen tool.  
+
+Meer informatie over het gebruik van GEMMA-modellen en het werken met Archi is te vinden via de onderstaande verwijzingen.
+{{Landingspagina
+|titel1 = GEMMA ArchiMate-model
+|inhoud1 = 
+Over het model
+* [[DisplayArchiMateGlossary|ArchiMate begrippenlijst inclusief symbolen]]
+* [[GEMMA kennismodel]]
+* [[GEMMA modellering]]
+* [[Releases GEMMA ArchiMate-model]]
+
+Waar vind ik het model?
+* Bladeren door het {{ToonElement|id=2b2b88ba-8efe-46d3-8b40-47af290bc418|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=GEMMA ArchiMate-model}}
+* De [https://github.com/VNG-Realisatie/GEMMA-Archi-repository GEMMA Archi-repository] op GitHub
+
+Softwarecatalogus en GEMMA
+* [[Softwarecatalogus AMEFF export | Softwarecatalogus modellering pakketten]]
+
+|titel2 = Aan de slag met het GEMMA model
+|inhoud2 = 
+Ik werk met Archi
+* [[Waarom heeft VNG voor de tool Archi gekozen]]
+* [[Archi en git]]
+
+Ik werk met een andere architectuurtool
+* Download [https://github.com/VNG-Realisatie/GEMMA-Archi-repository/blob/master/export/GEMMA%20release.xml?raw=1 GEMMA AMEFF-bestand] (rechts klik → opslaan)
+* [[Importeren van een AMEFF-bestand]]
+
+Softwarecatalogus:
+* [https://www.softwarecatalogus.nl/node/30399 Exporteer je pakketten geplot op de GEMMA]
+<!-- Samenwerken [[Samenwerken op GitHub]] -->
+
+|hoogte = 400px
+}}
+** bekijk het volledige GEMMA ArchiMate-model via {{ToonElement|id=2b2b88ba-8efe-46d3-8b40-47af290bc418|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418}}. Deze pagina is technisch van opzet en bevat alle elementen, relaties en views;  
+** Of ga naar de pagina [[Overzicht GEMMA architectuurviews]]. Open een view om de bijbehorende elementen in een tabel te zien.

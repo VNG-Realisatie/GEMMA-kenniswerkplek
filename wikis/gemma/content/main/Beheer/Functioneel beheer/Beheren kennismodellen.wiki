@@ -1,0 +1,55 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+== De basis ==
+
+Zie de wikixl opleidingspagina [https://opleiding.wikixl.nl/index.php/Kennismodel_en_platform WikiXL kennismodellen] voor meer uitleg.
+
+* Waarvoor is een '''kennismodel''' nodig en nuttig?
+** Voor het vastleggen van gestructureerde data. 
+** Data kan met een formulier worden ingevoerd of geïmporteerd. 
+** Data kan met een query bevraagd worden en getoond in bijvoorbeeld een tabel, een lijst of een sjabloon
+** Op de wiki wordt ook de naam '''kennismodule''' gebruikt. 
+*** Een kennismodule is een kennismodel plus enkele sjablonen die gebruik maken van het kennismodel
+** Zie [https://opleiding.wikixl.nl/index.php/Kennismodel_en_platform Kennismodel en platform] voor meer informatie over Semantic MediaWiki en de WikiXL SmartCore extensie
+* Hoe maak je een kennismodel aan?
+** Ga naar [[:Categorie:Kennismodellen]]
+** Met het eerste formulier maak je pagina aan die de 'root' van het kennismodel wordt (pagina met eigenschappen en een categorie)
+** Maak vervolgens de eigenschappen aan
+** Maak elementtypen die opgebouwd zijn uit de eigenschappen
+** alle onderdelen van een kennismodel krijgen dezelfde categorie
+** kennismodellen kunnen eigenschappen uit andere kennismodellen overerven (bv SKOS)
+* Hoe importeer je data in een kennismodel?
+** met [[Speciaal:CSVImporteren]]
+** de kolomlabels verwijzen naar de eigenschappen van een kennismodel met #element:<naam eigenschap>
+
+== Kennismodellen op deze wiki ==
+: <categorytree mode="all" depth="1" showcount="on">Kennismodellen</categorytree>
+
+=== ArchiMate ===
+Om te kunnen werken met ArchiMate modellen maakt ArchiMedes het ArchiMate kennismodel (zie [[:Categorie:KnowledgeModel_ArchiMate]]). 
+Waar wordt het kennismodel voor gebruikt:
+* SmartConnectArchiMate™ voor het inlezen van een ArchiMate-model. Zie [[Koppeling met ArchiMate tools]]
+* Semantic MediaWiki queries (zie [[Tabellen en queries]])
+
+Alle ArchiMate modellen op deze wiki (of ga naar [[DisplayArchiMateModels]])
+: <categorytree mode="all" depth="5" showcount="on">ArchiMateModels</categorytree>
+
+== Begrippen ==
+Het [[GEMMA Begrippenkader]] gebruikt op de achtergrond het kennismodel begrippen. Begrippen worden vastgelegd met het [[:Categorie:Kennismodel_SKOS]]
+
+Begrippen worden gegroepeerd met collecties. Ik verwacht hieronder alleen collecties te zien??? Wat doen GGM bedrijfsobjecten hier?
+: <categorytree mode="all" depth="0" showcount="on">Collecties</categorytree>
+
+Nog te maken collecties:
+* GGM bedrijfsobjecten
+* T3D begrippen
+* Common Ground begrippen
+* ...
+
+=== Vragen ===
+
+Begrippen zijn nu lid van collecties
+* Waarom worden begrippen op lege wiki nog gecategoriseerd door de categorieën [[:categorie:Begrippen]] en [[:categorie:Begrippenkader]]?
+* Een collectie heeft een eigen opmaaksjabloon waarin de begrippen worden getoond. Deze gebruiken in pagina begrippenkader?

@@ -1,0 +1,53 @@
+[[Categorie:Schrijven op de wiki]]
+{{Letop
+|uitleg = Deze optie bij voorkeur niet gebruiken. Voldoet niet aan de digitale toegankelijkheidseisen van WCAG
+}} 
+== Hoe maak ik een boek ==
+Hoe maak je van meerdere wiki-pagina's een boek.
+
+* Denk na over de structuur van je boek. Elk hoofdstuk is een pagina. Maak deze niet te lang.
+* Ga naar [[Formulier:BoekExport]], en bepaal de naam van het boek of katern'
+* Vervolgens vul in het formulier de gewenste hoofdstukken in met een volgnummer en een hoofdstuktitel. De naam van het hoofdstuk begint bij voorkeur met een prefix van drie hoofdletters om het mogelijk te maken meerdere pagina's te maken met dezelfde hoofdstuktitel, maar met een verschillende paginanaam, bv. PZW Inleiding. Kijk bv bij [[Katern GEMMA Strategisch Gegevensmanagement]] en klik op bewerken. Let op dat bij 'paginanaam' de naam (bijvoorbeeld 'Overzicht GEMMA Architectuurprincipes') van de pagina wordt ingevuld en niet (een deel van) de url (bijvoorbeeld 'Overzicht_GEMMA_Architectuurprincipes').
+* Als er geen hoofdstuktitel gewenst is, bv bij een titelpagina, laat dit veld dan leeg. De inhoudsopgave toont dan de paginanaam.
+* Als de hoofdstuktitels nog niet bestaan, verschijnen er red links na het bewaren van deze definitiepagina. 
+* Klik op een van de red links om het betreffende hoofdstuk aan te maken.
+* Elk hoofdstuk bestaat vooral uit tekst, maar er moeten ook een paar sjablonen worden gebruikt.
+* Begin elk hoofdstuk met deze sjabloon aanroep:
+::''<nowiki>{{RapportInhoud|Pagina={{PAGENAME}}}} __NOTOC__ </nowiki>''
+::De sjabloonaanroep Rapportinhoud, toont een inhoudsopgave van het hele katern, zodat er genavigeerd kan worden van hoofdstuk naar hoofdstuk
+::In deze inhoudsopgave zit ook besloten een verwijzing naar het complete document, de definitiepagina, de exportpagina (naar een boek) en eventueel een verwijzing naar een opgeslagen PDF document
+::Het Magic Word NOTOC geeft aan dat een door mediawiki gegenereerde table of contents (TOC) niet gewenst is
+* Eindig elk hoofdstuk met 
+::''<nowiki>{{RapportFooter}}</nowiki>''
+::Dit zorgt ervoor dat onderin de pagina ook navigatie mogelijk is
+*Indien er noten worden gebruikt (dit kan door de noottekst tussen <nowiki><ref>...</ref></nowiki> te zetten), sluit dan het hoofdstuk af met ''<nowiki>{{References|{{PAGENAME}}}}</nowiki>''
+* Als elk hoofdstuk is aangemaakt, maak dan een pagina aan die heet '''<naam van het katern> compleet'''. Dus naast het [[Katern GEMMA Strategisch Gegevensmanagement]] moet een andere pagina worden aangemaakt [[Katern GEMMA Strategisch Gegevensmanagement]] om een compleet document te kunnen genereren.
+* In dit document staat de volgende inhoud:
+::''<nowiki>
+__TOC__
+</nowiki>''
+::''<nowiki>
+{{Compleet boek|Rapport=Katern GEMMA Strategisch Gegevensmanagement}}
+</nowiki>''
+::''<nowiki>
+==Eindnoten==
+</nowiki>''
+::''<nowiki>
+<references/>
+</nowiki>''
+
+::Waarbij de naam van het rapport de verwijzing is naar de definitiepagina
+* TENSLOTTE: als het katern gepubliceerd moet worden, zorg er dan voor dat elke pagina, dus ook de definitiepagina, op publiceren staat, zie: [[Publiceren pagina]]
+
+== Voorbeelden ==
+Boeken op deze wiki
+: <categorytree mode="all" depth=1 showcount="on">ExportBoeken</categorytree>
+
+* gebruikte sjablonen
+** [[Speciaal:VerwijzingenNaarHier/Sjabloon:Compleet_boek]] of
+** [[Speciaal:VerwijzingenNaarHier/Sjabloon:BoekExport]] (boekdefinitie met hoofdstukken)
+
+Uitzondering is [[GAO - Inleiding|Systemen gemeente]]. De applicatiearchitectuur opgesteld in het DSO-CG project.
+* maakt gebruik van [[Sjabloon:RapportFooter]]
+* Hoofdstukken met deze footer [[Speciaal:VerwijzingenNaarHier/Sjabloon:RapportFooter]]
+* werkt niet op lege wiki

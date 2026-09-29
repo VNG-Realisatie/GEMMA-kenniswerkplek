@@ -1,0 +1,75 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+Projectpagina voor de inrichting van GEMMA online op een lege wiki
+
+lege wiki: [https://gemma2-redactie.wikixl.nl/index.php gemma2-redactie.wikixl.nl]
+
+== Voorbereiding ==
+* alle over te zetten pagina's moeten een categorie hebben
+* alle categorieën moeten op de [[sitemap]] getoond worden. De sitemap is te vinden onder menu Beheer.
+* schonen van sjablonen uitvoeren op redactie
+** met zoek en vervangen sjabloonaanroepen omzetten
+
+Nakijken 
+: <categorytree mode="pages" depth="0" showcount="on">GEMMA Beheer</categorytree>
+
+== Volgorde van exporteren en importeren ==
+
+Wat zijn de stappen om de redactieomgeving van GEMMA online opnieuw in te richten op een lege wiki
+
+Ga naar [[Special:CategoryTree]] om een willekeurige categorie(tree) te bekijken.
+Of gebruik de [[Sitemap]]
+
+'''Overzetten content mbv categorieën'''
+# In de [[:Speciaal:Exporteren]] de categorie zetten en laten zoeken.
+## Pagina's, subcategorieën, bestanden, sjablonen worden allemaal één laag diep geselecteerd
+## Je kunt meerdere categorieën in een keer exporteren. Zet een categorie in de exporteren pagina en de inhoud wordt toegevoegd aan de lijst
+## volg hiërarchie op [[sitemap]] getoonde categorieën naar beneden
+## exporteren met '''vink''' voor geschiedenis en sjablonen toevoegen
+## meerdere keren dezelfde content exporteren/importeren gaat goed.
+### controleert op aanwezig én nieuwere timestamp
+# Importeren op [https://gemma2-redactie.wikixl.nl/index.php/Speciaal:Importeren gemma2-redactie.wikixl.nl/index.php/Speciaal:Importeren] met prefix 'Redactie', verder default
+
+'''Controleren geïmporteerde content'''
+# kijken en zoeken naar 'rode' links
+## ontbrekende content toevoegen aan juiste categorie en categorie opnieuw exporteren en importeren
+# Vergelijk de redactie Sitemap met de lege wiki Sitemap door deze naast elkaar in twee windows te zetten.
+## vergelijk aantallen en inhoud door parallel door de sitemaps heen te lopen
+
+'''Overzetten bestanden'''
+# Bestanden kunnen niet worden overgezet met export en import, maar moeten één voor één worden overgezet met download en upload
+# Op de pagina [[:Categorie:Pagina's met onjuiste bestandskoppelingen]] staan alle pagina's waarop een link staat waar geen bestand voor opgevoerd is. Dit zijn de ronde links op de pagina.
+# Open één van de pagina's van [[:Categorie:Pagina's met onjuiste bestandskoppelingen|Categorie:Pagina's met onjuiste bestandskoppelingen]] Zoek op de geopende pagina een rode link op. 
+# Open daarna dezelfde pagina op de redactie-omgeving en zoek de afbeelding op die op nieuwe omgeving een rode link geeft, door deze nog niet is toegevoegd. Klik daarna op de afbeelding die dan opent in een pagina met de naam Bestand:.....
+#* Kopieer de naam van het bestand na "Bestand:.....". Bijvoorbeeld de naam van de pagina is "''Bestand:Notificatieservices-Hackathon-2021.png''". Kopieer dan alleen "''Notificatieservices-Hackathon-2021.png''"
+#* Klik dan op de afbeelding zodat deze opent en alleen het bestand zichtbaar is in de browser. Klik met de rechtsmuisknop op het bestand en sla deze op onder de zojuist gekopieerde naam. In het voorbeeld is dat "''Notificatieservices-Hackathon-2021.png''"
+#* Navigeer daarna naar de nieuwe omgeving en klik op de rode link. 
+#* Klik op "Bestand kiezen" en zoek het zojuist van de redactie omgeving gedownloade bestand op. Selecteer deze en klik op "Openen"(rechtsonder).
+#* De titel van het bestand staat als het nog goed is onder de "plak"-functie. Voeg deze titel toe aan het veld "Opslaan als;". In het voorbeeld is dat "''Notificatieservices-Hackathon-2021.png''"
+#** In de samenvatting is het van belang dat er een goede omschrijving van het bestand wordt toegevoegd vanwege digitale toegankelijkheid. 
+#** Daarnaast is het nodig om een categorie toe te voegen. Deze categorie kan vaak onder aan de pagina gevonden te worden. Dit is nodig om afbeeldingen sneller te kunnen vinden en het beheer makkelijker te maken.
+# In sommige gevallen is een bestand verwijderd maar staat er nog wel een verwijzing op de pagina. Via [[Speciaal:GevraagdeBestanden]] worden de bestanden getoond die verwijderd zijn, maar waar nog een verwijzing naar staan.
+
+'''ArchiMate modellen worden niet overgezet, maar apart geïmporteerd'''
+# met SmartConnectArchiMate
+## GEMMA modellen
+## Projectmodellen
+
+'''Kennismodellen'''
+# Kennismodellen kunnen met exporteren en importeren worden overgezet
+# maar op redactie staat de behemoth Kennismodel GEMMA 2.
+## deze wordt op de lege wiki opgesplitst in kennismodellen per onderwerp
+
+'''Overzetten overig'''
+# Overzetten gebruikers.
+## ArchiXL gaat de gebruikerstabel overzetten van database naar database - status Open - [https://support.archixl.nl/portal/en/ticket/144271000000885116 issue #190]
+# Voor te exporteren en importeren Overig, zie de [[Sitemap]]
+
+
+'''Controleren voor overgang'''
+
+* Zijn alle bestanden overgezet? https://gemma2-redactie.wikixl.nl/index.php/Speciaal:GevraagdeBestanden
+* Zijn er sjablonen die niet overgezet zijn? https://gemma2-redactie.wikixl.nl/index.php?title=Speciaal:GevraagdeSjablonen&limit=500&offset=0
+*

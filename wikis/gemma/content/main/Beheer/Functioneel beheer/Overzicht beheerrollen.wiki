@@ -1,0 +1,330 @@
+<!--TS:20201210190215-->
+Je voegt een rol toe door in het [[Overzicht beheerrollen]] deze regel toe te voegen aan de bestaande lijst.
+
+<pre>
+{{#subobject:<naam>
+|Rol=<naam rol>
+|Beschrijving=nadere beschrijving
+|Onderwerpen=<onderwerp1, onderwerp2, ...>
+|Thema=<Architectuur, Standaarden, Redactie, Thema>
+}}
+</pre>
+<br /><br />
+<pre>
+Voorbeeld: 
+{{#subobject: externe StUF standaarden
+|Rol=Beheerder externe StUF standaarden
+|Beschrijving=De rol 'Beheerder externe StUF standaarden' houdt slechts in dat de pagina's 
+waarop informatie m.b.t. externe StUF standaarden staat worden beheerd niet dat de betreffende StUF standaarden 
+zelf worden beheerd.
+|Onderwerpen=
+|Thema=
+}}
+</pre>
+[[Category:Functioneel beheer]]
+
+Ga vervolgens naar je eigen [[user:{{CURRENTUSER}}|gebruikerspagina]] om de rol toe te kennen.
+==Overzicht ingevoerde rollen==
+
+<table class="sortable wikitable">
+<tr>
+<th>Thema</th>
+<th>Rol</th>
+<th>Personen</th>
+<th>Beschrijving</th>
+</tr>
+
+
+{{#ask:[[-Has subobject::{{PAGENAME}}]]|?Thema|?Rol|?Beschrijving|format=template
+|template=ToonBeheerrollen 
+|limit=1000
+|sort=Thema, Rol
+|headers=hide
+|mainlabel=-
+|link=none
+|searchlabel=
+|class=sortable wikitable smwtable
+|offset=}}
+
+</table>
+
+
+This space is intentionally left blank. 
+<!-- EXAMPLE-->
+{{#subobject: e-Fomulieren
+|Rol=Beheerder e-Fomulieren
+|Onderwerpen=e-Fomulieren
+|Thema=Standaarden
+}}
+<!-- END EXAMPLE-->
+{{#subobject: GEMMA Bedrijfsobjecten
+|Rol=Beheerder GEMMA Bedrijfsobjecten
+|Onderwerpen=GEMMA Bedrijfsobjecten
+|Thema=Architectuur
+}}
+{{#subobject: Common Ground
+|Rol=Beheerder Common Ground
+|Onderwerpen=Common Ground
+|Thema=Architectuur
+}}
+{{#subobject: StUF Testplatform
+|Rol=Beheerder StUF Testplatform
+|Onderwerpen=StUF Testplatform
+|Thema=Standaarden
+}}
+{{#subobject: Applicatiearchitectuur
+|Rol=Beheerder Applicatiearchitectuur
+|Onderwerpen=Applicatiearchitectuur
+|Thema=Architectuur
+}}
+{{#subobject: Gegevensarchitectuur
+|Rol=Beheerder Gegevensarchitectuur
+|Onderwerpen=Gegevensarchitectuur
+|Thema=Architectuur
+}}
+{{#subobject: Standaarden
+|Rol=Beheerder Standaarden
+|Onderwerpen=Standaarden
+|Thema=Standaarden
+}}
+{{#subobject: Bedrijfsarchitectuur
+|Rol=Beheerder Bedrijfsarchitectuur
+|Onderwerpen=Bedrijfsarchitectuur
+|Thema=Architectuur
+}}
+{{#subobject: Architectuurtools
+|Rol=Beheerder Architectuurtools
+|Onderwerpen=BiZZDesign, ArchiMedes, WikiXL, SPARX Enterprise architect, SmartPublish
+|Thema=Redactie
+}}
+{{#subobject: Domeinarchitectuur ondersteuning
+|Rol=Beheerder Domeinarchitectuur ondersteuning
+|Onderwerpen=Domeinarchitectuur, ondersteuning
+|Thema=Architectuur
+}}
+{{#subobject: Domeinarchitectuur bestuur
+|Rol=Beheerder Domeinarchitectuur bestuur
+|Onderwerpen=Domeinarchitectuur, bestuur
+|Thema=Architectuur
+}}
+{{#subobject: Domeinarchitectuur openbare orde en veiligheid
+|Rol=Beheerder Domeinarchitectuur openbare orde en veiligheid
+|Onderwerpen=Domeinarchitectuur, openbare orde en veiligheid
+|Thema=Architectuur
+}}
+{{#subobject: Domeinarchitectuur publieksdiensten
+|Rol=Beheerder Domeinarchitectuur publieksdiensten
+|Onderwerpen=Domeinarchitectuur, publieksdiensten
+|Thema=Architectuur
+}}
+{{#subobject: Domeinarchitectuur ruimte
+|Rol=Beheerder Domeinarchitectuur ruimte
+|Onderwerpen=Domeinarchitectuur, ruimte
+|Thema=Architectuur
+}}
+{{#subobject: Domeinarchitectuur sociaal
+|Rol=Beheerder Domeinarchitectuur sociaal
+|Onderwerpen=Domeinarchitectuur, sociaal
+|Thema=Architectuur
+}}
+{{#subobject: Omgevingswet
+|Rol=Beheerder Omgevingswet
+|Onderwerpen=Omgevingswet, Ruimtelijk domein, UIVO-I, UIVO-CG
+|Thema=Thema
+}}
+{{#subobject: Informatie- en archiefbeheer
+|Rol=Beheerder Informatie- en archiefbeheer
+|Onderwerpen=Informatiebeheer, Archiefbeheer
+|Thema=Thema
+}}
+{{#subobject: Privacy en Informatiebeveiliging
+|Rol=Beheerder Privacy en Informatiebeveiliging
+|Onderwerpen=Privacy, Informatiebeveiliging
+|Thema=Thema
+}}
+{{#subobject: Zaakgericht werken
+|Rol=Beheerder Zaakgericht werken
+|Onderwerpen=Zaakgericht werken
+|Thema=Standaarden
+}}
+{{#subobject: RSGB-Bevraging
+|Rol=Beheerder Koppelvlak RSGB-Bevragingen
+|Onderwerpen=RSGB, Bevragingen, Koppelvlak
+|Thema=Standaarden
+}}
+{{#subobject: Bewegingen in het Sociaal domein
+|Rol=Beheerder Bewegingen in het Sociaal domein
+|Onderwerpen=Sociaal domein
+|Thema=Thema
+}}
+{{#subobject:Betalen- en Invorderenservices
+|Rol=Beheerder Betalen- en Invorderenservices
+|Onderwerpen=Betalen- en Invorderenservices
+|Thema=Standaarden
+}}
+{{#subobject:BAG koppelvlak
+|Rol=Beheerder BAG koppelvlak
+|Onderwerpen=BAG koppelvlak
+|Thema=Standaarden
+}}
+{{#subobject: Digikoppeling Adapter Intern
+|Rol=Beheerder Digikoppeling Adapter Intern
+|Onderwerpen=Digikoppeling Adapter Intern
+|Thema=Standaarden
+}}
+{{#subobject: Documentcreatie services
+|Rol=Beheerder Documentcreatie services
+|Onderwerpen=Documentcreatie services
+|Thema=Standaarden
+}}
+{{#subobject: Eindredactiepaginas
+|Rol=Beheerder Eindredactiepaginas
+|Onderwerpen=Eindredactiepaginas
+|Thema=Redactie
+}}
+{{#subobject: externe StUF standaarden|Rol=Beheerder externe StUF standaarden|Beschrijving=De rol 'Beheerder externe StUF standaarden' houdt slechts in dat de GEMMA Online pagina's waarop informatie m.b.t. externe StUF standaarden staat worden beheerd niet dat de betreffende StUF standaarden zelf worden beheerd.|Onderwerpen=externe StUF standaarden, StUF|Thema=Standaarden}}
+{{#subobject: GEMMA Beheerpagina's
+|Rol=Beheerder GEMMA Beheerpagina's
+|Onderwerpen=GEMMA Online, Beheer
+|Thema=Redactie
+}}
+{{#subobject: Gegevensmanagement
+|Rol=Beheerder Gegevensmanagement
+|Onderwerpen=Gegevensbeheer, Gegevensmanagement
+|Thema=Thema
+}}
+{{#subobject: Informatiemodellen Basisgegevens
+|Rol=Beheerder Informatiemodellen Basisgegevens
+|Onderwerpen=Informatiemodellen, RSGB, RGBZ, Basisgegevens
+|Thema=Standaarden
+}}
+{{#subobject: Informatiemodellen Zaakgericht werken
+|Rol=Beheerder Informatiemodellen Zaakgericht werken
+|Onderwerpen=Informatiemodellen, Zaakgericht werken, ImZTC
+|Thema=Standaarden
+}}
+{{#subobject: Jeugdzorg-services (CORV)
+|Rol=Beheerder Jeugdzorg-services (CORV)
+|Onderwerpen=Jeugdzorg, CORV
+|Thema=Standaarden
+}}
+{{#subobject: Kadastrale mutatieservices
+|Rol=Beheerder Kadastrale mutatieservices
+|Onderwerpen=Kadastrale mutatieservices, Kadaster
+|Thema=Standaarden
+}}
+{{#subobject: Prefill eFormulieren services
+|Rol=Beheerder Prefill eFormulieren services
+|Onderwerpen=eFormulieren services, eFormulieren
+|Thema=Standaarden
+}}
+{{#subobject: Regie en zaakservice
+|Rol=Beheerder Regie en zaakservices
+|Onderwerpen=Regie en zaakservices
+|Thema=Standaarden
+}}
+{{#subobject: StUF Expertgroep
+|Rol=Beheerder StUF Expertgroep
+|Onderwerpen=StUF Expertgroep, StUF
+|Thema=Standaarden
+}}
+{{#subobject: StUF Horizontale sectormodellen
+|Rol=Beheerder StUF Horizontale sectormodellen
+|Onderwerpen= StUF Horizontale sectormodellen, StUF
+|Thema=Standaarden
+}}
+{{#subobject: StUF onderlaag
+|Rol=Beheerder StUF onderlaag
+|Onderwerpen=StUF onderlaag, StUF 
+|Thema=Standaarden
+}}
+{{#subobject: StUF-koppelvlak iWmo-iJw
+|Rol=Beheerder StUF-koppelvlak iWmo-iJw
+|Onderwerpen=StUF-koppelvlak iWmo-iJw,iWmo, iJw, StUF
+|Thema=Standaarden
+}}
+{{#subobject: Toezicht en handhaving services
+|Rol=Beheerder Toezicht en handhaving services
+|Onderwerpen=Toezicht en handhaving services, Toezicht en handhaving
+|Thema=Standaarden
+}}
+{{#subobject: Wabo-BAG Services
+|Rol=Beheerder Wabo-BAG Services
+|Onderwerpen=Wabo-BAG Services. Wabo, BAG
+|Thema=Standaarden
+}}
+{{#subobject: Werkgroep Documentcreatieservices
+|Rol=Beheerder Werkgroep Documentcreatieservices
+|Onderwerpen=Werkgroep Documentcreatieservices, Documentcreatieservices
+|Thema=Overleggroepen
+}}
+{{#subobject: Werkgroep Zaak- Documentservices
+|Rol=Beheerder Werkgroep Zaak- Documentservices
+|Onderwerpen=Werkgroep Zaak- Documentservices, Zaak- Documentservices
+|Thema=Overleggroepen
+}}
+{{#subobject: Werkgroep GEMMA Softwarecatalogus
+|Rol=Beheerder Werkgroep GEMMA Softwarecatalogus
+|Onderwerpen=GEMMA Softwarecatalogus
+|Thema=Overleggroepen
+}}
+{{#subobject: Werkgroep Monitor Doelgerichte Digitalisering
+|Rol=Beheerder Werkgroep Monitor Doelgerichte Digitalisering
+|Onderwerpen=Monitor Doelgerichte Digitalisering
+|Thema=Overleggroepen
+}}
+{{#subobject: Werkgroep Documentcreatieservices
+|Rol=Beheerder Werkgroep Documentcreatieservices
+|Onderwerpen=Documentcreatieservices
+|Thema=Overleggroepen
+}}
+{{#subobject: Werkgroep Regie en zaakservices
+|Rol=Beheerder Werkgroep Regie en zaakservices
+|Onderwerpen=Regie en zaakservices
+|Thema=Overleggroepen
+}}
+{{#subobject: Werkgroep Digikoppeling Adapter Intern
+|Rol=Beheerder Werkgroep Digikoppeling Adapter Intern
+|Onderwerpen=Digikoppeling Adapter Intern
+|Thema=Overleggroepen
+}}
+{{#subobject: Zaak- Documentservices
+|Rol=Beheerder Zaak- Documentservices
+|Onderwerpen=Zaak- Documentservices, Zaakgericht werken
+|Thema=Standaarden
+}}
+{{#subobject: Zaaktypen
+|Rol=Beheerder Zaaktypen
+|Onderwerpen=Zaakttypen, Zaaktypecatalogus, Zaakgericht werken
+|Thema=Standaarden
+}}
+{{#subobject: Projectarchitectuur GGI
+|Rol=Beheerder Projectarchitectuur GGI
+|Onderwerpen=GGI netwerk, GGI beveiliging, GGI Services
+|Thema=Thema
+}}
+{{#subobject: Open raadsinformatie
+|Rol=Beheerder Open raadsinformatie
+|Onderwerpen=Open raadsinformatie
+|Thema=Standaarden
+}}
+{{#subobject: Omnichannel
+|Rol=Beheerder Omnichannel
+|Onderwerpen=Omnichannel
+|Thema=Thema
+}}
+{{#subobject: Notificeren
+|Rol=Beheerder Notificeren
+|Onderwerpen=Notificeren
+|Thema=Thema
+}}
+{{#subobject: Logging en verwerkingsactiviteiten
+|Rol=Beheerder Logging en verwerkingsactiviteiten
+|Onderwerpen=Logging en verwerkingsactiviteiten
+|Thema=Thema
+}}
+{{#subobject: Beheerder Procesarchitectuur
+|Rol=Beheerder Procesarchitectuur
+|Onderwerpen=Beheerder Procesarchitectuur
+|Thema=Architectuur
+}}

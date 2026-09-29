@@ -1,0 +1,79 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Categorie:Schrijven op de wiki]]
+== Waarom publiceren ==
+De pagina's van GEMMA online worden op een aparte redactie-wiki geschreven. De redactie-wiki is een afgeschermde omgeving, alleen te benaderen met een inlog. De redactie-wiki is de bron waarvandaan de pagina's gepubliceerd worden op publicatie-wiki (GEMMA Online). Alleen pagina's met bepaalde categorieën worden gepubliceerd naar de publicatie-wiki, waardoor deze beschikbaar worden voor alle bezoekers van GEMMA Online.
+
+== Hoe publiceren ==
+Publiceren van een pagina wordt gedaan door bepaalde categorieën toe te voegen aan de pagina. Dit kan handmatig of door gebruik te maken van het formulier voor publiceren. 
+
+=== Via het formulier Publiceren pagina ===
+Pagina's hebben rechtsboven drie extra menu's. Via het menu Handelingen kan het formulier Publiceren pagina geopend worden via het menu item Publicatie administreren. ('''Handelingen - Publicatie administreren)'''
+[[Bestand:Menu handelingen.png|geen|miniatuur|Een weergave van het menu Handelingen]]
+Het formulier ziet er als volgt uit:
+[[Bestand:Formulier Publiceren pagina.png|alt=Weergave van het formulier Publiceren pagina|geen|miniatuur|800x800px|Weergave van het formulier Publiceren pagina]]
+
+
+De publiceeracties worden bepaald door een "Paginastatus" aan te vinken. De volgende combinaties zijn mogelijk en zorgen voor de volgende acties op de publicatiewiki:
+{| class="wikitable"
+|+
+!Pagina heeft categorie(ën)
+!Gevolg op publicatiewiki
+|-
+|Publiceren
+|Pagina wordt gepubliceerd
+|-
+|Publiceren + In bewerking
+|Geen actie. De pagina kan aangepast worden op de redactieomgeving zonder dat de pagina op de publicatiewiki wordt aangepast.
+|-
+|In bewerking
+|Indien de pagina bestaat op de publicatiewiki wordt deze daar verwijderd.
+|-
+|Niet publiceren
+|Indien de pagina bestaat op de publicatiewiki wordt deze daar verwijderd.
+|}
+Na het opslaan van de pagina wordt de actie bij een volgende batchpublicatie uitgevoerd. De pagina kan ook realtime gepubliceerd worden. 
+
+=== Handmatig paginastatus voor publicatie toevoegen/aanpassen ===
+Het handmatig aanpassen van de paginastatus kan worden gedaan wanneer de pagina in brontekst bewerkt wordt. Daar kan de categorie van de paginastatus aangepast worden naar de gewenste status. Bovenaan elke pagina staat het volgende sjabloon:  
+ 
+<pre>{{Publicatie
+|Redactiestatus=
+|Paginastatus=
+|Wikibeheerder=
+}} </pre>
+
+Het gaat dan om categorie die bij de paginastatus is ingevuld. 
+{| class="wikitable"
+|+
+!Pagina heeft categorie(ën)
+!Gevolg op publicatiewiki
+|-
+|Paginastatus=publiceren
+|Pagina wordt gepubliceerd
+|-
+|Paginastatus=publiceren, in bewerking
+|Geen actie. De pagina kan aangepast worden op de redactieomgeving zonder dat de pagina op de publicatiewiki wordt aangepast. 
+|-
+|Paginastatus=in bewerking
+|Indien de pagina bestaat op de publicatiewiki wordt deze daar verwijderd. 
+|-
+|Paginastatus=niet publiceren
+|Indien de pagina bestaat op de publicatiewiki wordt deze daar verwijderd. 
+|}
+
+Het is voldoende om een pagina voor publiceren te markeren. Dan zorgt SmartPublish ervoor dat de actuele versie pagina periodiek gepubliceerd wordt. Je kunt een pagina ook een zetje geven en direct publiceren. 
+
+===Realtime publiceren of publicatie intrekken(direct)===
+De snelste manier om een pagina te publiceren of de publicatie in te trekken is via de realtime publicatie optie. Als de pagina publicatiegereed is, dan kan je via '''Handelingen - Publiceren/Intrekken''', deze pagina per direct publiceren of de publicatie intrekken. Het kan een paar seconden tot 1 minuut duren voordat de pagina daadwerkelijk op de publicatieomgeving staat of de publicatie is ingetrokken. Vernieuw de pagina op de publicatieomgeving om te zien of het daadwerkelijk gelukt is('''Handelingen - Vernieuwen)'''. Om te zien of er nog 'jobs'/publicatie-opdrachten verwerkt moeten worden, kijk dan op de pagina  [[Speciaal:SmartPublish]].
+
+Vergeet niet om de pagina ook op Publiceren te zetten, zoals eerder aangegeven. Dan wordt de pagina ook meegenomen in de automatische publicatie, die 2x per dag plaatsvindt.
+
+===Batch publicatie (2x per dag)===
+Tweemaal per dag worden de pagina's verwerkt waarbij de paginastatus is aangepast of van de pagina's waar een wijziging heeft plaatsgevonden. De tijdstippen dat de batch uitgevoerd zijn rond 14:00 overdag en rond 2:00 's nachts.
+
+==SmartPublish dashboard==
+Op de pagina [[Speciaal:SmartPublish]] staat onder de tab '''Overzicht''' welke pagina's een actie krijgen bij de volgende batchjob (publiceren of verwijderen) — hier zie je dus of jouw pagina daadwerkelijk meegenomen wordt. De tab '''Hulp''' herhaalt welke categoriecombinatie tot welke actie leidt; die combinaties staan hierboven al uitgelegd in de tabellen.
+
+Twee andere tabs op hetzelfde dashboard (Instellingen, Beheer) zijn alleen voor wiki-beheerders. Zie [[Beheren SmartPublish]] voor die beheerderskant en voor de volledige SmartPublish-documentatie.

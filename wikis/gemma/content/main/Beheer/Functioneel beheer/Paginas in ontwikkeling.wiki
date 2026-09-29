@@ -1,0 +1,37 @@
+{{Publicatie
+|Paginastatus=niet publiceren
+|Wikibeheerder=Beheerder Architectuurtools
+}}
+[[category:Functioneel beheer]]
+Hier heb je makkelijk toegang tot alle pagina's die in bewerking zijn of nieuw zijn aangemaakt.
+
+=== Niet gepubliceerde wijzigingen of pagina's ===
+Zie [[publiceren pagina]] voor de handleiding SmartPublish en wat de verschillende statussen betekenen
+
+Wijzigingen op pagina met de status 'in bewerking', worden niet doorgegeven naar publicatie
+: <categorytree mode="pages" showcount="on">SmartPublish-OnHold</categorytree>
+
+Pagina's met de status 'niet publiceren' bestaan niet op de publicatie-omgeving.
+: <categorytree mode="pages" showcount="on" depth="0" >SmartPublish-Ignored</categorytree>
+
+Pagina's met SmartPublish redactie-status:
+: <categorytree mode="pages" showcount="on" depth="0" >In ontwikkeling</categorytree>
+
+Pagina's met een aanroep naar het SmartPublish [[:sjabloon:Publicatie]]
+: <categorytree mode="pages" showcount="on" depth="0">SmartPublish-Watched</categorytree>
+
+=== Nieuwe pagina's en sjablonen ===
+
+Toegevoegd door Mark
+* [[:Sjabloon:ToonDomein]]
+** [[:Sjabloon:ToonDomein/Referentiecomponent]] voor bedrijfsfuncties en applicatieservices
+** [[:Sjabloon:ToonDomein/Bedrijfsfuncties]] testen zonder edit
+*** [[:Sjabloon:ToonDomein/Bedrijfsfuncties/Tabel]]  testen zonder edit
+*** [[:Sjabloon:ToonDomein/Bedrijfsfuncties/Tabel/Rows]] testen zonder edit
+*** [[:Sjabloon:ToonDomein/Bedrijfsfuncties/ViewEnTabel]] testen zonder edit
+** [[:Sjabloon:ToonDomein/Applicatieservices]] testen zonder edit
+*** [[:Sjabloon:ToonDomein/Applicatieservices/Tabel]] testen zonder edit
+*** [[:Sjabloon:ToonDomein/Applicatieservices/ViewEnTabel]] testen zonder edit
+
+Tekstuele templates
+* [[Domeinarchitecturen/uitleg modellen]]

@@ -1,0 +1,41 @@
+[[Category:Functioneel beheer]]Op de Wiki is de [https://www.mediawiki.org/wiki/Extension:Flex_Diagrams extensie:Flex_Diagrams] geinstalleerd waarmee verschillende soorten diagrammen toegevoegd kunnen worden. Diagrammen worden als gewone wiki-pagina's opgeslagen en kunnen vervolgens op andere pagina's worden hergebruikt. 
+De extensie ondersteunt de volgende diagramtypen:
+* BPMN-processen
+* Gantt-planningen
+* Mermaid-diagrammen
+* Draw.io-diagrammen
+* DOT/Graphviz-diagrammen
+
+== Een diagram aanmaken ==
+Het aanmaken van een diagram gebeurt door een pagina aan te maken in de naamruimte van het type diagram. Elk type diagram krijgt namelijk haar eigen naamruimte.
+De naamruimte per diagram type zijn:
+* BPMN:
+* DOT:
+* Drawio:
+* Gantt:
+* Mermaid:
+Wanneer de pagina nog niet bestaat verschijnt de knop '''Diagram maken'''. Daarmee wordt direct de diagrameditor geopend. 
+
+Wil je bijvoorbeeld een BPMN-diagram aanmaken dan doe je dat door BPMN: voor de naam van de pagina te plaatsen. Bijvoorbeeld: BPMN:een_bpmn_model. 
+Een URL ziet er dan als volgt uit: 
+
+==== Een diagram bewerken ====
+Bestaande diagrammen krijgen een extra tabblad: '''Diagram bewerken'''
+
+Hiermee wordt de grafische editor geopend.
+
+Afhankelijk van het diagramtype ziet de editor er anders uit:
+
+* BPMN → BPMN-editor
+* Gantt → Gantt-editor
+* Draw.io → Draw.io-editor
+* Mermaid → Teksteditor met voorbeeld
+* DOT → Teksteditor met voorbeeld
+
+Diagrammen kunnen zowel grafisch als via broncode worden aangepast. 
+
+=== Het maken van een diagram vanuit een bestaand BPMN-bestand ===
+Een BPMN-bestand is in principe een XML-bestand. Door de XML van het BPMN-bestand te kopiëren en te plakken in broncode van de pagina wordt het BPMN-diagram opgebouwd in de MediaWiki
+
+== Een diagram tonen in een andere pagina ==
+Het is mogelijk om een diagram te tonen in een andere pagina waar veel tekst staat. Dit doe je door  <code><nowiki>{{#display_diagram:BPMN:<naam van het model>}}</nowiki></code>  aan de brontekst van de pagina toe te voegen.

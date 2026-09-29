@@ -1,0 +1,102 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's, 
+}}
+__TOC__
+[[Category:Modelleren handleidingen‎]]
+We gebruiken de Archimate versie 3.2. 
+
+== GEMMA Kennismodel  ==
+
+Het [[GEMMA kennismodel]] toont de ArchiMate concepten die in het GEMMA ArchiMate-model worden gebruikt.
+
+Uitbreidingen en wijzigingen worden gedaan volgens dit kennismodel.
+* het GEMMA ArchiMate-model beperkt zich tot de concepten getoond in het GEMMA kennismodel
+* een projectmodel kan meer concepten bevatten en volgt het GEMMA kennismodel uitgebreid.
+
+== GEMMA modellering ==
+In de [[GEMMA modellering]] is het GEMMA kennismodel een slag dieper uitgewerkt. 
+* Het kennismodel laat zien welke ArchiMate concepten in de GEMMA gebruikt worden. 
+* De modelleerafspraken laten zien hoe de GEMMA modellen met deze concepten worden samengesteld
+
+Nog een stap concreter en je kijkt naar de modellen in de GEMMA. Deze GEMMA als voorbeeld voor hoe je modelleert én hoe je een concept volledig vastlegt
+
+== GEMMA model en gebruik in de Softwarecatalogus ==
+
+Een deel van het GEMMA model wordt ingelezen of geïmporteerd in de Softwarecatalogus. De GEMMA is de bron voor de referentiecomponenten, de standaarden en de views waar de SWC op plot.
+
+Om deze onderdelen te kunnen inlezen en verwerken moet de GEMMA modellering strikt gevolgd worden en moeten de componenten een vooraf bepaalde set van eigenschappen hebben. Hieronder worden de concepten die de Softwarecatalogus gebruikt getoond. 
+
+De voorbeelden maken expliciet:
+* modellering achter de GEMMA views en 
+* hoe gemodelleerd wordt welke standaarden voor een referentiecomponent verplicht of aanbevolen is
+* toont de hiërarchie van de bedrijfsfuncties en bedrijfsprocessen
+* toont de eigenschappen en de waarden
+* etc.
+
+=== Interne API-standaard ===
+
+Voorbeeld van alle benodigde relaties voor het toevoegen van een interne API-standaard
+
+{{ToonViewGEMMA
+|viewid=d9ce43d2-725b-4a22-88b8-04dfac4bb506 <!--Template interne API-standaard (ArchiMateView)-->
+|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418 <!--GEMMA model -->
+|label=}}
+
+''' Eigenschappen van {{ToonElement
+  |id=6735b083-274b-4e00-b0cd-45ac7fbb2212
+  |modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418
+  |toonEigenschappen=true
+}} '''
+
+''' Eigenschappen van {{ToonElement
+  |id=46754fe5-4a77-4376-9cec-a5112db2c562
+  |modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418
+  |toonEigenschappen=true
+}} '''
+
+=== Externe API-standaard ===
+Voorbeeld voor het toevoegen van een externe API-standaard
+
+{{ToonViewGEMMA
+|viewid=8b9d072c-3659-443e-924c-67307f97cda5 <!--Template interne API-standaard (ArchiMateView)-->
+|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418 <!--GEMMA model -->
+|label=}}
+
+''' Eigenschappen van {{ToonElement
+  |id=c903efd8-fa52-486d-b775-96063d93c039
+  |modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418
+  |toonEigenschappen=true
+}} '''
+
+''' Eigenschappen van {{ToonElement
+  |id=8a23b9f9-d124-4392-b575-7a297351d954
+  |modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418
+  |toonEigenschappen=true
+}} '''
+
+=== Referentiecomponent ===
+Voorbeeld voor het toevoegen van een referentiecomponent
+
+{{ToonViewGEMMA
+|viewid=63b0e006-bffc-4554-a524-d70ab4dd9471
+|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418 <!--GEMMA model -->
+|label=}}
+
+''' Eigenschappen van {{ToonElement
+  |id=1c2ce840-6683-4f51-844f-04d3c8a6f2cc
+  |modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418
+  |toonEigenschappen=true
+}} '''
+
+Voorbeeld voor het toevoegen van een referentiecomponent en sub-applicatieservices
+
+{{ToonViewGEMMA
+|viewid=9699fa64-5de6-49df-856f-7498b870d6b4
+|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418 <!--GEMMA model -->
+|label=}}
+
+''' Eigenschappen van {{ToonElement
+  |id=ed6eb5b8-b139-4857-bd5f-2018fd8adf22
+  |modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418
+  |toonEigenschappen=true
+}} '''

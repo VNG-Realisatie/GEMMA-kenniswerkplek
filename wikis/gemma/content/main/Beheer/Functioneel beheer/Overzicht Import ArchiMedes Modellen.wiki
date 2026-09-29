@@ -1,0 +1,14 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=niet publiceren
+}}
+[[Categorie:Functioneel beheer]]
+{{#ask: [[Categorie:GEMMAImportOverzichten]] OR [[Categorie:SWCImportOverzichten]] 
+|mainlabel=Rapport
+|?Modelnaam
+|?Datum en tijd
+<!-- |link=none -->
+|headers=plain 
+|sort=Datum en tijd
+|order=desc
+|limit=1000}}

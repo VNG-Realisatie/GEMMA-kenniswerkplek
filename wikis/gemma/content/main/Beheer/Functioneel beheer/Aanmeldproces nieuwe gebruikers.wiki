@@ -1,0 +1,52 @@
+Gebruikers kunnen zich aanmelden via de [[Speciaal:Aanmelden|inlogpagina op GEMMA Online]]. Hiervoor is een proces ingericht omdat er veel accounts werden aangemaakt die ongewenste berichten (spam) publiceerden. De [https://www.mediawiki.org/wiki/Extension:ConfirmAccount Extension:ConfirmAccount] is toegevoegd aan de Wiki om dit proces uit te kunnen voeren. De processtappen die doorlopen worden zijn:
+* Invullen van het formulier [https://www.gemmaonline.nl/wiki/Speciaal:GebruikerAanvragen Speciaal:GebruikerAanvragen].
+* Het opgevoerde e-mailadres ontvangt een e-mail om het e-mailadres te bevestigen. De link om te bevestigen is beperkt geldig. 
+* Na bevestiging ontvangt de mailbox van GEMMA Online een melding dat er een nieuw account is aangemaakt om te beoordelen.(Is dat zo?)
+* Via [https://www.gemmaonline.nl/wiki/Speciaal:GebruikerBevestigen Speciaal:GebruikerBevestigen] worden de accounts beoordeeld.(Toelaten, Afwijzen, Aanhouden of Spam)
+* Wanneer een account wordt toegelaten ontvangt de gebruiker een e-mail met een tijdelijk wachtwoord. 
+** Bij Afwijzen en Aanhouden ontvangen de nieuwe gebruikers ook een e-mail inclusief de toegevoegde opmerking in het bevestigingsformulier.
+* Nadat de gebruiker is ingelogd en een nieuw wachtwoord heeft aangemaakt is het proces afgerond.
+
+Naast dit proces zit er nog een restrictie op het aantal aangevraagde openstaande accounts per IP-adres. Op dit moment is dat gezet op 10 accounts per IP-adres. Dit aantal is aan te passen door ArchiXL. <br>
+
+Dit proces is niet aan te passen, maar een deel van de teksten op pagina's en in e-mails wel.<br>
+{{Letop
+|uitleg = Door ?uselang=qqx achter een URL te plaatsen worden alle namen van systeemberichten getoond. Door "MediaWiki:" voor de naam van een systeembericht te plaatsen vind je de URL van de pagina. Bijvoorbeeld MediaWiki:Loginprompt
+}} 
+
+
+== Teksten aanpassen ==
+=== Inlogpagina ===
+De tekst die boven aan de aanmeldpagina staat is aan te passen via de pagina [https://www.gemmaonline.nl/wiki/MediaWiki:Loginprompt MediaWiki:Loginprompt]
+
+=== Aanmeldformulier ===
+Het aanmeldformulier is te vinden via [https://www.gemmaonline.nl/wiki/Speciaal:GebruikerAanvragen Speciaal:GebruikerAanvragen].
+Er zijn meerdere systeem berichten die aan te passen zijn. Deze zijn te vinden middels de zoekopdracht "MediaWiki:Requestaccount-"
+
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-text MediaWiki:Requestaccount-text] - tekst boven aan het invulformulier (Je kunt dit snel en eenvoudig doen)
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-ext-text MediaWiki:Requestaccount-ext-text] - leeg.
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-acc-text MediaWiki:Requestaccount-acc-text] - leeg.
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-sent MediaWiki:Requestaccount-sent] - bevestiging dat het formulier is verstuurd en ontvangen.
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-leg-other MediaWiki:Requestaccount-leg-other] - leeg.
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-email MediaWiki:Requestaccount-email] - Tekst voor het veld van het e-mail adres.
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-real MediaWiki:Requestaccount-real] - Tekst voor het veld van de naam.
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-notes MediaWiki:Requestaccount-notes] - Tekst boven het opmerkingen veld.
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-footer MediaWiki:Requestaccount-footer] - Informatie helemaal onderaan.
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-leg-user MediaWiki:Requestaccount-leg-user] - Tekst direct boven het formulier.
+
+De melding die getoond worden wanneer het formulier niet goed is ingevuld zijn aan te passen via:
+* [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-inuse MediaWiki:Requestaccount-inuse] - De melding dat de gebruikersnaam al in gebruik is.
+
+=== Bevestigingstekst na vesturen formulier ===
+De tekst die je ziet nadat het aanmeldformulier is verstuurd is aan te passen via [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-sent MediaWiki:Requestaccount-sent].
+
+Het komt voor dat wanneer op de link wordt geklikt in de mail om het e-mail adres te bevestigen er een foutmelding komt. Deze is aan te passen via [https://www.gemmaonline.nl/wiki/MediaWiki:Confirmemail_invalid MediaWiki:Confirmemail_invalid]. De foutmelding komt wanneer iemand twee keer klikt op de link of dat de link verlopen is
+
+=== E-mails ===
+Er worden meerdere e-mails verstuurd tijdens het proces. Hieronder vind je de e-mails die gebruikt worden:
+* Bevestigen van het mailadres: [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-email-body MediaWiki:Requestaccount-email-body]
+* E-mail die GEMMA Online ontvangt na bevestiging van het e-mailadres: [https://www.gemmaonline.nl/wiki/MediaWiki:Requestaccount-email-body-admin MediaWiki:Requestaccount-email-body-admin]
+*E-mail na het toelaten van het account: [https://www.gemmaonline.nl/wiki/MediaWiki:Createaccount-text MediaWiki:Createaccount-text]
+*E-mail na het afwijzen van het account: [https://www.gemmaonline.nl/wiki/MediaWiki:Confirmaccount-email-body4 MediaWiki:Confirmaccount-email-body4]
+*E-mail na het aanhouden van het account:[https://www.gemmaonline.nl/wiki/MediaWiki:Confirmaccount-email-body5 MediaWiki:Confirmaccount-email-body5]
+[[Category:Functioneel beheer]]

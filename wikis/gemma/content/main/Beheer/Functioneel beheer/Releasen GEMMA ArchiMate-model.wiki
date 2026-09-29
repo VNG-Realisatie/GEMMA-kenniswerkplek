@@ -1,0 +1,475 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+__TOC__
+Stappen voor het releasen van een nieuwe versie van het GEMMA ArchiMate-model
+
+== Processtappen voor het releasen van de GEMMA architectuur ==
+
+Onderstaande figuur toont de stappen waarmee een GEMMA ArchiMate-model wordt onderhouden, gepubliceerd en beschikbaar gesteld aan gemeenten.
+
+{{ToonViewGEMMA|viewid=a76a5fd2-d8ed-438f-8fe3-c514c30508a5|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}} <!--Releasen ArchiMate-model (ArchiMateView)-->
+
+De pagina [[Architectuur wiki]] beschrijft welke omgevingen er zijn
+
+Het proces is als volgt:
+
+== 1.  Archi - bijwerken GEMMA ==
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Modelleren ===
+  </div>
+<div class="mw-collapsible-content">
+
+Zie op de [[Beheer handleidingen]]-pagina het blok "Modelleren ArchiMate" voor de richtlijnen hoe we de GEMMA onderhouden
+
+Op de pagina's [[Modelleren volgens kennismodel]] en [[Eigenschappen in GEMMA ArchiMate-model]] is beschreven hoe het ArchiMate-model moet worden gemaakt.
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Controleren ArchiMate-model ===
+  </div>
+<div class="mw-collapsible-content">
+
+Voordat het GEMMA ArchiMate-model gepubliceerd wordt, wordt gecontroleerd of het model compleet is en of alle te publiceren objecten op een view staan
+
+==== Compleetheid en consistentie ====
+*Checklist referentiecomponenten
+:* Een referentiecomponent staat op minimaal één view die gepubliceerd wordt.
+:* GEMMA type is gezet
+:* Indien referentiecomponent moet worden aangeboden aan Softwarecatalogus
+::* GEMMA status is in gebruik
+::* onderdeel van de groep ref.comp in SWC
+*Checklist standaard(versie)
+:*Relatie bestaat: Standaardversie '''specialiseert''' Standaard
+:*staat op view Publiceer standaard(versie)
+:*GEMMA type is gezet
+:*Indien aangeboden aan Softwarecatalogus
+::*GEMMA status is in gebruik
+::*onderdeel van de groep Standaard en standaardversie in SWC
+*Checklist views
+:* View heeft de eigenschap Publiceren
+::* Publiceren = "GEMMA online en redactie" voor publiceren op GEMMA online
+::* Publiceren = "Softwarecatalogus en GEMMA online en redactie" voor publiceren op GEMMA online en SWC
+:* Views voor de Softwarecatalogus 
+::* bevatten referentiecomponenten (anders kan de SWC niet plotten)
+::* de referentiecomponenten zijn groot genoeg om hier meerdere regels met pakketnamen in te plotten.
+
+==== Alle objecten hebben een uniek Object ID ====
+Alle objecten moeten een unieke property <code>Object ID</code> hebben. Het Object ID is wordt gebruikt in de paginanaam op de wiki (en daarmee ook de URL) en wordt gebruikt als unieke sleutel van de referentiecomponenten, standaarden en views in de Softwarecatalogus.
+
+* gebruik hiervoor het script <code>GEMMA/setObjectID.ajs</code> (zie pagina [[Archi scripting]], de scripts vind je in de github repository [https://github.com/VNG-Realisatie/archi-scripts archi-scripts])
+** het script controleert of er dubbele Object ID's zijn
+** Zijn er dubbele Object ID's, verwijder dan de property Object ID van de getoonde objecten. '''!Let op:''' dat je alle Object ID's van toegevoegde objecten verwijderd
+** Draai nogmaals het script om te controleren of de dubbele Object ID's zijn verwijderd. 
+** Het script genereert voor objecten zonder Object ID een GUID en kent deze toe aan de property <code>Object ID</code>.
+
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Exporteren AMEFF-bestand ===
+  </div>
+<div class="mw-collapsible-content">
+
+==== Git branches ====
+
+Indien in de Archi-repository gebruik wordt gemaakt van meerdere branches geldt het volgende:
+* Releases worden samengesteld in de <code>development</code> branch
+* Vanuit de <code>development</code> branch wordt het AMEFF-releasebestand gemaakt, het AMEFF-releasebestand is immers onderdeel van de release
+* Het releasebestand wordt geïmporteerd en gecontroleerd in de redactieomgeving van GEMMA online
+* Als de release goed is dan:
+** merge <code>development</code> met de <code>main/master</code> branch
+** publiceer de <code>master</code> branch
+
+Wordt geen gebruik gemaakt van branches, dan is het simpel. Alles wat hieronder staat wordt vanuit de <code>main/master</code> branch gedaan.
+
+==== Release versie GEMMA ArchiMate-model ====
+
+Het GEMMA ArchiMate-model wordt met het script <code>GEMMA/createReleaseModel.ajs</code> voorbereid voor de release. Belangrijkste taak van dit script is om het GEMMA model te filteren, zodat werkversies en views voor intern gebruik niet gepubliceerd worden. 
+
+* selecteer het ArchiMate-model in de Models-tab
+** sla het model op (geen * voor de naam) en
+** 'collapse' het model om goed te kunnen zien dat het script straks een nieuw gefilterd model maakt
+* draai het script 'GEMMA/createReleaseModel.ajs'. Acties van het script:
+** setObjectID: alle objecten krijgen een unieke property <code>Object ID=<GUID></code>. Zie ook de paragraaf hierboven.
+** set model property <code>release=<today></code>
+** maakt kopie: script vraagt waar de kopie moet worden opgeslagen. Kies voor een tijdelijke locatie, het <code>.archimate</code>-bestand kan later worden weggegooid
+** filter kopie: verwijder views zonder de eigenschap <code>Publiceren=GEMMA Online en redactie</code>, verwijder vervolgens alle ongebruikte elementen en lege folders.
+* het script opent de gefilterde kopie
+** de gefilterde kopie heeft dezelfde modelnaam
+** herkenbaar aan * voor de naam. De filter-actie op de kopie is nog niet opgeslagen
+* sla de gefilterde kopie niet op, opdat deze herkenbaar blijft door de *-prefix
+
+==== Maak AMEFF-releasebestand ====
+
+Selecteer de gefilterde kopie van het ArchiMate-model
+[[Bestand:Archi Export Model.png|thumb|right|600px|Archi export AMEFF instellingen]]
+
+Maak een AMEFF export
+* File > Export > Model to Open Exchange File ..
+** bewaren in de GEMMA releases folder op Teams
+*** Architectuur GEMMA > GEMMA Releases (bestanden) of direct naar [https://vvng.sharepoint.com/:f:/r/sites/UnitArchitectuurenStandaarden/Gedeelde%20documenten/GEMMA%20ontwikkelstraat/GEMMA%20releases?csf=1&web=1&e=fRe7yV teams]
+*** Bestandsnaam format <datum><naam ArchiMate-model><optioneel inhoud release>.xml
+** én voor de GEMMA en GEMMA-GGM bewaar een kopie in je lokale Archi model-repository
+*** waar te vinden
+**** selecteer het ArchiMate-model en kijk in de tab Properties > Main
+**** achter File: vind je de locatie. Op Windows is dit default: <code>C:\Users\<user>\Documents\Archi\model-repository\gemma-archi-repository\.git\temp.archimate</code>
+*** bewaar het AMEFF-bestand in de folder <code><repository>\export</code>
+*** bestandsnaam is <code><modelnaam> release.xml</code> (geen prefix met datum, git beheert de versies)
+*** bij het opslaan zal Archi melden dat het bestand al bestaat en of deze overschreven mag worden. Overschrijf de oude versie.
+
+Het gefilterde Archimate-model kan nu gesloten worden.
+* het is nu bewaard als AMEFF
+* in git bewaren we het volledige model
+** Selecteer het model en kies voor sluiten.
+** Archi vraagt of je het bestand wilt bewaren. Kies ja om fouten te voorkomen. Na release kun het bestand verwijderen.
+** De *modelnaam verdwijnt uit de models-tab, 
+
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Genereren Archi-report (optioneel) ===
+  </div>
+<div class="mw-collapsible-content">
+
+Van enkele modellen wordt het Archi HTML-report gepubliceerd met GitHub pages. Dit geldt voor:
+* [https://github.com/VNG-Realisatie/Softwarecatalogus-Archi-repository Softwarecatalogus-Archi-repository]
+* [https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository GEMMA-GGM Archi-repository]
+
+Het Archi HTML-report moet gegenereerd worden voordat het model naar GitHub gepubliceerd wordt.
+* selecteer het model
+* File > Report > HTML..
+** opslaan in je lokale archi-repository in de folder <code>/docs</code>
+** Bijvoorbeeld in </code>C:\Users\<user>\Documents\Archi\model-repository\softwarecatalogus-archi-repository\docs</code>
+*** De <code>/docs</code> folder is voorgeschreven door GitHub, daarvandaan worden de GitHub pages aangemaakt
+*** In GitHub configureer je dat er GitHub-pages zijn en vanuit welke branch deze gepubliceerd worden.
+*** Voorkeur om te publiceren vanuit <code>main/master</code> branch
+
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Publiceren naar GitHub ===
+  </div>
+<div class="mw-collapsible-content">
+
+==== Publiceren branch 'development' ====
+
+Selecteer het model dat klaar staat voor de release. 
+* Controleer voor de zekerheid 
+** of je de juiste branch hebt
+** of het AMEFF-releasebestand in de lokale git-repository staat
+** optioneel - of er een nieuwe versie van het HTML-report is gemaakt in de lokale git-repository
+* Publiceren
+** Collaboration > Publish changes
+** Schrijf een commit message.
+*** Bijvoorbeeld 'Release: update thema-architectuur data'
+* kijk in Change History tab en zie je eigen message terug.
+
+==== Merge en publish branch 'main/master' ====
+
+Om de wijzigen definitief te releasen op GitHub worden de wijzigen uit <code>development</code> gemerged met de <code>main/master</code> branch
+
+Stappen:
+* Open de tab branches
+* selecteer de branch <code>main/master</code> en maak deze actief (dubbelklik)
+* Selecteer de branch <code>development</code>, rechtsklik en kies 'Merge branch in current branch'
+** kies voor 'local' en merge
+** gaat er iets fout, dan kun is de centrale <code>main/master</code> branch nog gewoon beschikbaar.
+* als de merge goed gaat, dan publiceren
+** Collaboration > Publish changes
+** De commit message uit <code>development</code> wordt overgenomen
+
+en that's it.
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Wens: GitHub actions genereren AMEFF-bestand en HTML-report ===
+  </div>
+<div class="mw-collapsible-content">
+
+Het is mogelijk om met GitHub actions bijvoorbeeld een Archi HTML-report te genereren. Dit is nog een uitzoekertje.
+
+Zie [https://forum.archimatetool.com/index.php?topic=1050.0 Using GitHub Actions to create the HTML report]
+
+Ook jArchi-scripts kunnen met GitHub actions gedraaid worden. Daarmee zou het mogelijk moeten zijn ook het AMEFF-releasebestand na een publish automatisch te vernieuwen.
+</div>
+
+== 2. Wiki - releasen naar GEMMA online ==
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Importeren AMEFF-bestand ===
+  </div>
+<div class="mw-collapsible-content">
+{{Letop
+|uitleg = Het GEMMA Model wordt zowel op redactie als op publicatie handmatig geïmporteerd. De overige modellen worden via SmartPublish van redactie naar publicatie gepubliceerd. Dit vanwege de grootte van het model. 
+Plaats gedurende de import een melding in de pagina [[MediaWiki:Sitenotice]] met daarin de uitleg dat bepaalde archimate platen en tabellen leeg zijn en dat sommige links niet werken. Gebruik het [[Sjabloon:Sitenotice]] om het zichtbaarder te maken op de website.
+}} 
+Ga naar de ArchiMedes pagina van de omgeving waar je gaat importeren. In de tabel hieronder staan de links naar de verschillende omgevingen. ArchiXL heeft een volledige handleiding over [[SmartConnectArchiMateHelp_nl]]
+
+{{TabelReleaseOTAP
+| parameterStap = Importeren wiki
+}}
+
+[[Bestand:SmartConnect ArchiMate - GEMMA wiki.png|thumb|border|right|700px|SmartConnect ArchiMate instellingen]]
+Voer de volgende stappen uit om te importeren:
+*Ga naar [[Speciaal:SmartConnectArchiMate]] op de omgeving waar je wilt importeren
+*Kies "Importeren model" door het vakje ervoor aan te vinken.
+:*Selecteer het AMEFF exportbestand
+:*Voorkeurstaal default laten: 'Geen voorkeur'
+:*Folderstructuur mee-importeren: aanvinken (voor folders in het aangeboden GEMMA AMEFF bestand en de SWC AMEFF export)
+:*geheel vervangen pagina's: aanvinken
+:*Importwijze: Volledig
+:*Verstuur e-mailnotificatie na voltooiing: zet vink aan. 
+
+Er wordt een mail verstuurd als de import klaar is. Hierin staat een link naar de pagina waar een logbestand bekeken kan worden met alle acties die hebben plaatsgevonden. 
+Wacht op deze e-mail. Afhankelijk van hoe groot het model is en het aantal wijzigingen dat heeft plaatsgevonden kan dit even duren. 
+
+'''SmartPublish'''
+
+De nieuwste versie van SmartPublish kan ook een ArchiMate-model vanaf redactie naar de publicatie-wiki publiceren. Dit werkt goed voor kleine modellen, bijvoorbeeld het 'Over GEMMA' model wordt door SmartPublish gepubliceerd.
+
+Voor grote modellen (groter dan 3.500 pagina's) zoals de GEMMA en de Omgevingswet gaat dit niet goed. De reden hiervoor is dat SmartPublish erg veel tijd nodig heeft om een groot model over te zetten. Voor het uitvoeren van 1.000 jobs moet ongeveer een uur gerekend. Een GEMMA import resulteert in meer dan 17.000 jobs.
+
+Ga naar het [[Speciaal:SmartPublish | SmartPublish dashboard]], onder de tab Instellingen is geconfigureerd welke modellen door SmartPublish gepubliceerd moeten worden. Onder [[Beheren SmartPublish]] is dit verder gedocumenteerd.
+
+'''Voortgang import'''
+
+Om de voortgang te bekijken van de import kun je ook kijken of er op de wiki nog jobs draaien. Zijn er geen actieve jobs meer, dan is de import klaar. In onderstaande tabel staan de pagina's waar je dit kan controleren.
+
+{{TabelReleaseOTAP
+| parameterStap = Controleren import
+}}
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Controleren import ===
+  </div>
+<div class="mw-collapsible-content">
+
+Controleer eerst of het model goed en compleet is geïmporteerd, voordat je het model via de GEMMA list service gaat importeren in de Softwarecatalogus, . 
+* Controleer of alle views geïmporteerd zijn (van nieuwe views property publiceren=<omgeving> gezet). 
+* Controleer of nieuwe/bijgewerkte standaarden geïmporteerd zijn.
+* Controleer of de views er goed uit zien en er bijvoorbeeld geen lege vlakken zijn. Mochten de views niet goed zijn, dan kan door de cache te legen op de omgeving via Speciaal:SmartConnectArchiMate dit hersteld worden. Alle SVG's worden opnieuw aangemaakt na het legen van de cache.
+
+Hieronder twee links naar queries die de geïmporteerde views op redactie en publicatie laten zien:
+* [https://redactie.gemmaonline.nl/index.php?title=Speciaal:Vragen&q=%5B%5BElementtype%3A%3AArchiMateView%5D%5D%0A%5B%5BOccurs+in+model.Object+ID%3A%3A2b2b88ba-8efe-46d3-8b40-47af290bc418%5D%5D&p=format%3Dbroadtable%2Flink%3Dall%2Fheaders%3Dshow%2Fmainlabel%3DViews%2Fsearchlabel%3D...-20meer-20resultaten%2Fclass%3Dsortable-20wikitable-20smwtable%2Fprefix%3Dnone&po=%3FPubliceren%0A&sort=&order=asc&eq=yes&offset=0&limit=1000 Overzicht views op redactie]
+** '''{{#ask: [[Elementtype::ArchiMateView]][[Occurs in model.Object ID::2b2b88ba-8efe-46d3-8b40-47af290bc418]][[Publiceren::GEMMA Online en redactie]] |format=count }}''' views met <code>Publiceren=GEMMA Online en redactie</code> en '''{{#ask: [[Elementtype::ArchiMateView]][[Occurs in model.Object ID::2b2b88ba-8efe-46d3-8b40-47af290bc418]][[Publiceren::Softwarecatalogus en GEMMA Online en redactie]] |format=count }}''' views met <code>Publiceren=Softwarecatalogus en GEMMA Online en redactie</code>
+* [https://www.gemmaonline.nl/index.php?title=Speciaal:Vragen&q=%5B%5BElementtype%3A%3AArchiMateView%5D%5D%0A%5B%5BOccurs+in+model.Object+ID%3A%3A2b2b88ba-8efe-46d3-8b40-47af290bc418%5D%5D&p=format%3Dbroadtable%2Flink%3Dall%2Fheaders%3Dshow%2Fmainlabel%3DViews%2Fsearchlabel%3D...-20meer-20resultaten%2Fclass%3Dsortable-20wikitable-20smwtable%2Fprefix%3Dnone&po=%3FPubliceren%0A&sort=&order=asc&eq=yes&offset=0&limit=1000 Overzicht views op publicatie]
+
+'''Import log-files'''
+
+ArchiMedis import job log.
+* Toont gegevens over starten job (starttijd, door wie en welk AMEFF-bestand) en regel per geïmporteerd object
+: <categorytree mode="all" depth="0" showcount="on">SmartConnect imports</categorytree>
+Tabel met release-overzichten voor Softwarecatalogus. 
+* Zou de voor de Softwarecatalogus relevante wijzigingen moeten tonen, maar bevat nu fout en toont alle referentiecomponenten en standaarden
+* [[Overzicht Import ArchiMedes Modellen]]
+
+'''Test GEMMA koppelvlak'''
+
+De softwarecatalogus bevraagt GEMMA online op de list-service. Via de list-service worden de referentiecomponenten, applicatiefuncties (vanaf GEMMA 2), standaarden en beschikbare views ingelezen/geïmporteerd die op GEMMA online gepubliceerd zijn. 
+
+{{TabelReleaseOTAP
+| parameterStap = Controleren model
+}}
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Repareren import  ===
+  </div>
+<div class="mw-collapsible-content">
+
+Soms gebeurt het dat de views niet volledig zijn gegenereerd. Er zijn dan views met gaten of er ontbreken zelfs views. Het model zelf is wel volledig geïmporteerd. Oorzaak: om onbekende reden worden enkele import-jobs afgebroken.
+
+Ga naar Speciaal:SmartConnectArchiMate van de juiste wiki
+* kies voor de optie '''Legen cache'''. 
+* Draai deze optie voor het model met gaten.
+
+De views worden nu opnieuw gegenereerd.
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - AMEFF export bestand ===
+  </div>
+<div class="mw-collapsible-content">
+
+Na de import wordt er een AMEFF exportbestand gegenereerd (dit is een uitbreiding op het standaard SmartConnectArchiMate). Het gegenereerde AMEFF-exportbestand worden gebruikt voor:
+* Beschikbaarstellen GEMMA ArchiMate-repository aan gemeenten (via menu Over GEMMA > [[ArchiMate modelleren]])
+* Softwarecatalogus AMEFF export (door een gemeente in zijn eigen pakketoverzicht met de knop AMEFF export)
+
+Het in de wiki geïmporteerde model is anders dan het met Archi beheerde bestand. Het is gefilterd. Alleen views met property publiceren=GEMMA online zitten in de export en elementen die op deze views voorkomen. 
+
+{{TabelReleaseOTAP
+| parameterStap = Exporteren
+}}
+
+De GEMMA versie van de export op de wiki moet gelijk zijn aan de GEMMA versie in de Softwarecatalogus. Na een import op de wiki moet in principe ook een import in de SWC worden uitgevoerd.
+
+Opnemen van de link naar het exportbestand in een pagina.
+* zet deze link in de pagina <nowiki>[https://{{SERVERNAME}}/images/gemma/tmp/export/Omgevingswet.xml Omgevingswet AMEFF-bestand]</nowiki>
+* wordt getoond als [https://{{SERVERNAME}}/images/gemma/tmp/export/Omgevingswet.xml Omgevingswet AMEFF-bestand]
+
+</div>
+
+== 3. Softwarecatalogus - importeren GEMMA ==
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Configureren omgevingen ===
+  </div>
+<div class="mw-collapsible-content">
+
+'''Juiste architectuurmodel aanwijzen'''
+{{Letop||uitleg = in principe horen de omgevingen van de GEMMA wiki en de Softwarecatalogus in lijn met elkaar verbonden te zijn. Oftewel de softwarecatalogus acceptatie omgeving linkt met GEMMA Online staging en de softwarecatalogus productie met GEMMA Online productie. Voor testen kan hiervan afgeweken worden.}}
+
+Gebruik de links in de tabel om de verwijzingen vanuit de softwarecatalogus naar de GEMMA Online omgevingen te wijzigen:
+{{TabelReleaseOTAP
+| parameterStap = Softwarecatalogus config
+}}
+De te gebruiken GEMMA repository/wiki kan je wijzigen via de onderstaande variabelen
+* Instellingen > Systeem > variabelen > Modules 
+** Importeren > SWC Ameff import settings
+** Plotten op een view > SWC plotting
+** Exporteren > SWC Ameff export
+
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Importeren van GEMMA online ===
+  </div>
+<div class="mw-collapsible-content">
+Sinds de verhuizing van de softwarecatalogus naar de servers van ArchiXL is het importeren van het GEMMA-model veranderd. De synchronisatie vindt via een portal plaats. In het portal staan knoppen met een omschrijving die uitleg geven over welk drush-commando uitgevoerd wordt na het indrukken ervan. 
+
+==== Certificaat installeren en de portals====
+Om dit te kunnen is een certificaat en wachtwoord nodig. Het [https://vvng.sharepoint.com/:f:/r/sites/UnitArchitectuurenStandaarden/Gedeelde%20documenten/Softwarecatalogus/Functioneelbeh.%20Intern%20%26%20Extern?csf=1&web=1&e=VnsSNI certificaat client-ssl-app-gemma] staat in teams. Een wachtwoord is op te vragen via support@archixl.nl.
+
+Het certificaat installeer je in als volgt op de volgende browsers:
+* Firefox: Instellingen -> Privacy en Beveiliging -> "Certificaten Bekijken" -> Importeren
+* Chrome: Instellingen -> Privacy en Beveiliging -> Beveiliging -> "Apparaat certificaten beheren"
+* Edge: Instellingen -> Privacy, zoeken en services -> "Certificaten beheren"
+
+De portals waarop de import kan uitgevoerd zijn:
+* Voor de productie omgeving: [https://gemma-portal.sw-catalogus.nl https://gemma-portal.sw-catalogus.nl]
+* Voor de staging omgeving:   [https://gemma-portal.staging.sw-catalogus.nl https://gemma-portal.staging.sw-catalogus.nl]
+
+Het importeren wordt gedaan volgens de import vanaf de commandline en de commando's die daarbij horen.
+Dit heeft de voorkeur boven het importeren via de browser. Dit omdat de browser geopend moet blijven op de pagina. Het sluiten of openen van een andere website kan al roet in het eten gooien.
+
+==== Importeren met Drupal admin interface ====
+
+* De migratie kan je zelf uitvoeren via de default Drupal interface van de softwarecatalogus:  
+** Inhoud->Migreren->GEMMA Ameff imports (admin/content/migrate/groups/ameff)
+* Selecteer dan alle importers, kies bij Opties onderin bijwerken/update en bij bewerkingen Importeren en klik op uitvoeren.
+* '''!LET OP:''' Doe hier nooit een rollback, want dan gooit hij de referentiecomponenten en standaarden weg, en dus ook alle relaties die eraan hangen!
+
+{{TabelReleaseOTAP
+| parameterStap = Softwarecatalogus import
+}}
+
+==== Importeren met command-line ====
+
+'''Gebruik van command-line met SSH'''
+
+Importeren kan met de Drupal admin interface, maar betrouwbaarder is importeren vanaf de command-line (aanbevolen, betere terugkoppeling van fouten, minder kans op verstoringen)
+
+Inloggen op een shell van de Softwarecatalogus gaat met een ssh-sessie. Gebruik hiervoor op windows bijvoorbeeld putty (of kitty).
+* Voorbereidingen
+** Zorg voor een ssh-client op je laptop ([https://www.putty.org putty] of [http://www.9bis.net/kitty/index.html#!index.md kitty])
+** Je hebt een ssh-key nodig. Deze kun je zelf genereren (google op [https://www.google.com/search?q=ssh+en+key&sourceid=chrome&ie=UTF-8 ssh en key]) via Windows Powershell met het commando ssh-keygen -t rsa -b 2048
+** Vraag ArchiXL om toegang tot alle SWC servers. ArchiXL geeft toegang door je publieke certificaat op alle servers te installeren, gekoppeld aan het '''deploy''' account 
+[[Bestand:Putty.png|miniatuur|alt=]]
+
+* Log in met ssh
+** Voor de testomgeving: ''ssh deploy@swc-test.archixl.nl''
+** Voor de acceptatieomgeving: ''ssh deploy@swc-acc.archixl.nl''
+** Voor de productieomgeving: ''ssh deploy@softwarecatalogus.nl''
+* Krijg je geen verbinding, volg dan onderstaande checklist
+** vanuit VNG netwerk wordt uitgaand ssh verkeer geblokkeerd => gebruik VNG-gasten
+** ssh [-i locatie en filename private key] deploy@[server.url] [-vvv]
+*** -vvv optie; verbose met maximale logging
+*** -i optie; voor aanwijzen private key file. Kijk in de logging of je key gevonden wordt
+</br>
+
+'''Importeren commando's'''
+
+Ben je op de omgeving ingelogd, volg dan de volgende stappen om de GEMMA te importeren in de softwarecatalogus:
+* De migratecommando's dienen uitgevoerd te worden vanuit de directory /var/www/king-gemma/docroot. Voer daarvoor de volgende command uit: <pre class="codeblock">cd /var/www/king-gemma/docroot/</pre>
+* Voer daarna het volgende command uit. Dit kan 5 tot 10 minuten duren en zorgt ervoor dat alle statussen bekend zijn voor Drupal: <pre class="codeblock">drush migrate-status --group=ameff</pre>
+** Heb je na het uitvoeren van bovenstaande een foutmelding, dan kan je met het volgende commend de cache legen:  <pre class="codeblock">drush cc drush</pre>
+* Importeren van het kernmodel. Er zijn meerdere imports die gedaan worden met het volgende command: <pre class="codeblock">drush mi --group=ameff --update</pre>  Soms blijft de import hangen en wordt de prompt niet automatisch geactiveerd. Breek dan af, maar doe dit niet te snel. Bijvoorbeeld pas na 20 minuten.
+** mi staat voor migrate-import, is een shorthand commando. Je kan help opvragen met:
+*** drush help mi
+** drush | grep migrate
+* Importeren van de views uit het kernmodel en de projectmodellen: <pre class="codeblock">drush migrate-import --group=ameff_views</pre>
+Waarna deze import heeft gedraaid ben je klaar met het importeren van de nieuwe GEMMA. 
+
+* Mocht de import niet goed gegaan(bijvoorbeeld door een foutmelding) dan is deze te herstellen met de volgende commands:
+<pre class="codeblock">drush migrate-stop SwcImportGemmaStandaarden
+drush migrate-reset-status SwcImportGemmaStandaarden
+drush mi SwcImportGemmaStandaarden </pre>
+
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Indexeren ===
+  </div>
+<div class="mw-collapsible-content">
+Na een import van het ArchiMate-model met veel wijzigingen kan het voorkomen dat de SWC facets(de verschillende filter opties) niet de juiste waarden tonen. Om dit op te lossen moet de search index geïndexeerd worden.
+
+==== Indexeren met Drupal admin interface ====
+
+Daar zie je 2 indexen: Default node index en Gemma. 
+* De eerste is voor alle objecten (pakketten, standaarden, referentiecomponenten etc.) 
+* de tweede is voor de relaties (gemma_uses_component, gemma_uses_product etc.).
+Klik op de naam van de index. Als je een herindexatie wil forceren omdat er een object verandert is dat niet een herindexatie van een relatie verderop in het datamodel heeft afgetrapt bijvoorbeeld, klik je op "Queue al items for reindexing". Dat betekent dat alles gemarkeerd wordt als te indexeren, maar de zoekindex zelf niet leeg wordt gegooid. Dat is meestal wat je wil. Vervolgens kan je op Index now klikken en een paar uur/nacht wachten :). Als je de browser sluit wordt de indexatie afgebroken... Dit is dus niet de meest handige manier.
+
+{{TabelReleaseOTAP
+| parameterStap = Softwarecatalogus index
+}}
+
+====Indexeren met command-line====
+
+Via de command line:
+ <pre class="codeblock">drush sapi-s</pre>
+
+geeft status van de indexen
+<pre class="codeblock">drush sapi-r [index_name]</pre>
+
+dus bv.
+ <pre class="codeblock">drush sapi-r default_node_index </pre>
+
+triggert markeren ter herindexatie. Als je de naam niet invult worden alle indexen gemarkeerd als te indexeren. Vervolgens zou ik via nohup de indexatie doen zodat je gewoon kan uitloggen en de indexatie doorloopt:
+
+Voor alle indexen:
+ <pre class="codeblock">nohup drush sapi-i > ~/nohup.out  2>&1 & </pre>
+
+Voor de gemma index.
+ <pre class="codeblock">nohup drush sapi-i gemma > ~/nohup.out  2>&1 &</pre>
+
+</div>
+
+<div class="mw-collapsible mw-collapsed">
+  <div class="mw-collapsible-header">
+=== - Controleren import ===
+  </div>
+<div class="mw-collapsible-content">
+
+Om de import af te ronden, ga naar de Softwarecatalogus en gebruik de functies voor het tonen van een view en het exporteren van een GEMMA-landschap. Wat moet er gecontroleerd worden:
+* of alle views goed werken. Test de views. Als er geen resultaat is, is er waarschijnlijk geen view gegenereerd na de import. Ga naar de betreffende pagina van deze view op GEMMA Online en als daar een view wordt getoond, dan is er gelijk een aangemaakt die als achtergrond wordt gebruikt voor de Softwarecatalogus om te gebruiken voor de mapping.
+* of de export goed werkt. Indien niet, dan kan het zijn dat er geen goede export is gemaakt. Ga naar [https://www.gemmaonline.nl/index.php/DisplayArchiMateExports DisplayArchiMateExports]  om te controleren of de juiste versie is gegenereerd.
+* Controleer in Archi welke wijzigingen er zijn gedaan en zoek deze op op GEMMA Online en de softwarecatalogus. Bijvoorbeeld een standaard(versie) die een andere status heeft gekregen. In de softwarecatalogus vind je de standaarden via de menu optie Inhoud(direct op klikken) en daarna te zoeken op de standaard. Controleer bijvoorbeeld de "State" (=status). Komt deze overeen. 
+** Komt het niet overeen, dan kan je via [[https://redactie.gemmaonline.nl/wiki/Testen_SWC_API]] achterhalen welke informatie er in het synchronisatie proces verstuurd is tussen GEMMA Online en de softwarecatalogus. Ga daarvoor naar de Listfuncties (voor SWC-import) > klik op uitvouwen en zoek bijvoorbeeld de standaarden op. Er opent dan een XML-bestand met alle informatie over de standaarden.
+</div>

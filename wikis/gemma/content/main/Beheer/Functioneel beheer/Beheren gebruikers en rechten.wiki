@@ -1,0 +1,23 @@
+Gebruikers kunnen op twee manieren toegang krijgen tot GEMMA Online, zodat zij pagina's kunnen gaan volgen:
+
+* Ze kunnen zichzelf aanmelden via de inlogpagina en zich daar aanmelden als nieuwe gebruiker.
+* Of een beheerder van GEMMA Online maakt een account voor een gebruiker aan. 
+
+Alleen beheerders van GEMMA Online hebben meer rechten nodig, omdat zij ArchiMate-modellen moeten kunnen inlezen of snel wijzigingen kunnen doorvoeren.
+
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+
+{{Landingspagina
+  |titel1  = Gebruikersbeheer
+  |inhoud1 = * [[Gebruikersbeheer|Gebruiker toevoegen als beheerder]]
+* [[Speciaal:Gebruikersrechten|Gebruikersrechten aanpassen]]
+* [[Deactiveren van accounts|Gebruiker deactiveren]]
+* [[Aanmeldproces nieuwe gebruikers]]
+  |titel2  = Speciale pagina's
+  |inhoud2 = * [[Speciaal:GebruikerE-mailen|Gebruikers van deze Wiki een bericht sturen]]
+* [[Speciaal:GroepsrechtenWeergeven|Gebruikersrechten]]
+  |hoogte = hoogte van het blauwe vlak in px. Standaard staat deze op 300px. Hiermee kunnen de vlakken even hoog gemaakt worden.
+}}

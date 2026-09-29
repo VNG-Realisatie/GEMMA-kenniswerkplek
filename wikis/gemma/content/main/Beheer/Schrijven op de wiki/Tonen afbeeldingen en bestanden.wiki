@@ -1,0 +1,52 @@
+{{Publicatie
+|Wikibeheerder=Beheerder, 
+}}
+[[Categorie:Schrijven op de wiki]]
+__TOC__
+
+Je kunt op een Wikipagina een afbeelding tonen of een verwijzing naar een bestand.
+
+Voor het tonen van ArchiMate-diagrammen, zie [[Opnemen ArchiMate-objecten in een pagina]].
+
+== Tonen op een pagina == 
+
+=== Afbeelding ===
+
+Een afbeelding plaatsen in een pagina doe je met de code: <pre> [[Afbeelding:NaamFiguur.png]] </pre> (of .jpg et cetera). Hierbij heb je voor een goede weergave een aantal extra toevoegingen, die je achteraan de code plaatst, met als scheiding een |. Je kunt elk van de volgende opties toevoegen of weglaten als deze niet relevant is: <pre> [[Afbeelding:NaamFiguur.png|thumb|left|350px|Titel afbeelding|alt=”Beschrijving voor blinden of als plaatje niet laadt”|link=Wikipagina]] </pre>
+
+De opties zijn:
+* |thumb| Weergave van een thumbnail, een verkleinde weergave van de afbeelding. Zonder deze toevoeging krijg je de afbeelding op ware grootte te zien, hetgeen vaak te groot is midden in een tekst.
+* |left| of |right| of |center| of |none| de plaatsing van de afbeelding op de horizontale as van de pagina. None levert een plaatje in de linkerkantlijn op, zonder dat de tekst rechts doorloopt.
+* |350px| of |...px|, de grootte van de afbeelding in pixels. Hiermee kun je variëren om de afbeelding beter in de pagina te passen.
+* |Titel afbeelding| Vul hier zelf een titel in, die weergegeven wordt als tekst onder de afbeelding. Zonder deze optie wordt de afbeelding weergegeven zonder bijschrift of tekst.
+* |alt=Beschrijving voor blinden of als plaatje niet laadt| Vul een eigen beschrijving in. Deze tekst is bedoeld om voor mensen die de afbeelding niet kunnen zien weer te geven wat er op staat. Software voor blinden en slechtzienden kan deze tekst weergeven en browsers laten de tekst ook zien wanneer het niet lukt om de afbeelding weer te geven.
+* |link=Wikipagina| Je kunt hier een pagina opgeven, waar de bezoeker heen gaat als hij op de afbeelding klikt. Vul achter het =-teken de volledige titel in van een pagina binnen de wiki, of eventueel een url van een externe pagina. Zonder deze optie komt een bezoeker terecht op de bestandspagina van de afbeelding als hij er op klikt. Je kunt ook <code>|link=none|</code> gebruiken als je geen link wil hebben.
+
+Bijvoorbeeld, voor een grote afbeelding links op de pagina:
+<pre>
+[[Afbeelding:GEMMA_navigatie.png|thumb|left|600px|alt=|Figuur 'GEMMA Navigatie']]</pre>
+Voor een kleine thumbnail rechts:
+<pre>
+[[Afbeelding:GEMMA_navigatie.png|thumb|250px|alt=GEMMA Navigatie|Figuur 'GEMMA_navigatie']]
+</pre>
+
+Uitgebreide uitleg over het gebruik van bestanden is te vinden op [http://nl.wikipedia.org/wiki/Help:Gebruik_van_bestanden wikipedia].
+
+Tekst loopt in principe door naast plaatjes. Wil je dat niet, gebruik dan de optie |none|, zodat er niets naast de afbeelding komt te staan. Wil je wel een tekst naast de afbeelding, maar de volgende alinea er onder laten beginnen, dan zul je een aantal witregels moeten toevoegen.
+
+=== Link naar bestand (pdf) ===
+GEMMA Online streeft ernaar te voldoen aan de [[Schrijven_op_GEMMA_online#Digitale_toegankelijkheid_.28WCAG.29]]. Nieuwe documenten moeten voldoen aan de wettelijke eisen voor digitale toegankelijkheid. PDF documenten voldoen hier niet aan!
+
+Bedenk dus als je een tekst of een spreadsheet wilt delen op GEMMA Online eerst of het ook mogelijk is om de inhoud rechtstreeks in de wiki te ontsluiten. Zie ook [[Omzetten Word naar Wiki-pagina]]'''
+
+Voor pdf-bestanden is een apart [[Sjabloon:Bestand met info|sjabloon]] gemaakt, die voor de bezoeker direct zichtbaar maakt dat het om een pdf-bestand gaat en hoe lang de pdf is. Gebruik de code <pre>{{Bestand met info|Bestandsnaam.pdf|weer te geven titel}}</pre>, waarbij de weer te geven titel meestal de bestandsnaam is zonder de extensie .pdf.
+<pre>{{Bestand met info|Checklist Informatievoorziening Omgevingswet.pdf}}</pre> levert op: {{Bestand met info|Checklist Informatievoorziening Omgevingswet.pdf}}
+<pre>{{Bestand met info|Checklist Informatievoorziening Omgevingswet.pdf|Checklist Informatievoorziening Omgevingswet}} </pre> geeft {{Bestand met info|Checklist Informatievoorziening Omgevingswet.pdf|Checklist Informatievoorziening Omgevingswet}}
+
+Bestanden kunnen worden weergegeven in een pagina met de code <pre> {{Bestand:Bestandsnaam.ext}}.</pre> Gescheiden door een | kan daaraan een titel worden toegevoegd die in de tekst komt te staan in  plaats van de bestandsnaam, zoals <pre> {{Bestand:Bestandsnaam.ext|presentatie}} </pre>,  bijvoorbeeld te gebruiken in de zin: De specialist gaf een presentatie, waarop de aanwezigen een staande ovatie gaven.
+
+===Toevoegen bestanden in het algemeen===
+Als het andere documenten of bestanden betreft, dan kunnen deze worden geüpload via de Speciale pagina: [[Speciaal:Upload|Bestand uploaden]]. Toegestane formaten zijn: png, jpg, gif, svg, pdf en zip.
+
+===Toevoegen van meerdere bestanden tegelijkertijd===
+Soms is het handig om een serie van bestanden te uploaden in een keer ipv elk bestand afzonderlijk. Beheerders hebben deze mogelijkheid via de [[Speciaal:BulkFileImport|Speciale pagina BulkFileImport]]. Deze pagina verwacht een ZIP bestand van maximaal 50Mb waarin de toegestane bestandsformaten kunnen worden geplaatst en geüpload. Op deze manier kunnen de bestanden hergebruikt worden bijvoorbeeld in het Document type, dat een bestandsnaam-eigenschap heeft die bestaande bestandsnamen als eigenschap kunnen opvoeren. Dan hoeft in het betreffende formulier niet steeds een afzonderlijk bestand worden geüpload.

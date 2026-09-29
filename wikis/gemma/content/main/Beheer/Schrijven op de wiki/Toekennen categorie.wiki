@@ -1,0 +1,47 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's, 
+}}
+[[Categorie:Schrijven op de wiki]]
+__TOC__
+Categorieën worden gebruikt voor het classificeren van pagina's, sjablonen, etc. Zie [https://www.mediawiki.org/wiki/Help:Categorys Help:Categorys] voor meer informatie.
+
+Zie de GEMMA online [[Sitemap]] voor een overzicht van alle gebruikte categorieën.
+
+==GEMMA wiki categorieën==
+Hieronder een overzicht van de categorieën die op de GEMMA wiki worden gebruikt:
+*'''ArchiMate'''
+**''SmartConnectArchiMate'' deelt alle geïmporteerde ArchiMate-objecten in in categorieën conform het ArchiMate kennismodel
+**zie bijvoorbeeld het [[GEMMA/id-2b2b88ba-8efe-46d3-8b40-47af290bc418|GEMMA model]]. Klik op één van de elementen en zie onderin de pagina alle categorieën waar dat element in is ingedeeld
+*'''Publicatie'''
+**Voor SmartPublish worden de pagina's ingedeeld in categorieën:
+*** Categorie:Publiceren
+*** Categorie:In Bewerking
+*** Categorie:Niet Publiceren
+**De publicatie categorieën worden aan pagina's toegekend met ''Handelingen > Publicatie administreren''. Onder water wordt een aanroep van het [[Sjabloon:Cocreatie]] op de pagina geplaatst. 
+*'''Archiveren (life cycle)'''
+**De eigenschap <code>Redactiestatus</code> van een pagina wordt met ''Handelingen > Publicatie administreren'' gezet. Deze eigenschap wordt gebruikt om pagina's te kunnen filteren op de waarden In ontwikkeling, Actueel, Gearchiveerd. Onder water wordt ook dit gedaan met het [[Sjabloon:Cocreatie]]
+*'''Eigenaarschap'''
+**Zie [[Schrijven op GEMMA online#Eigenaarschap%20pagina%20registreren|Eigenaarschap_pagina_registreren]]
+**De eigenschap <code>GEMMAOnlinebeheerder</code> van een pagina wordt met ''Handelingen > Publicatie administreren'' gezet. Deze eigenschap wordt gebruikt om in de redactieomgeving linkbovenin de pagina de redacteuren te tonen. Ook om overzichten te tonen.
+** Onder water wordt ook dit gedaan met het [[Sjabloon:Cocreatie]]
+*'''GEMMA opbouw'''
+**De pagina's van de GEMMA architectuur worden geclassificeerd volgens het GEMMA portfoliomodel. Dit model wordt getoond in [[GEMMA opbouw]].
+**De GEMMA opbouw categorieën worden gebruikt om het juiste [[MediaWiki:Breadcrumbs | kruimelpad]] te tonen.
+**Voorbeelden:
+*** [[:Category:Informatie-architectuur]]
+*** [[:Category:Common Ground]]
+*** [[:Category:Omgevingswet]]
+** De categorieën volgen de hiërarchie van de GEMMA opbouw. Leg de plaat van [[GEMMA opbouw]] naast de definitie van het [[MediaWiki:Breadcrumbs | kruimelpad]] om dit te zien. 
+*'''Project Obelix toevoegingen'''
+** Voor project Obelix waren nieuwe pagina's tijdelijk voorzien van de Category:OBLX .
+** Verder zijn n.a.v. Obelix toegevoegd: [[:Category:Landingspagina]],  [[:Category:Doelgroepen]]
+*'''Beheer'''
+** We kennen diverse categorieën van groepen informatie ('objecten'), zoals Documenten en Vergaderingen. Via de volgende links kun je deze beheren en objecten toevoegen, wijzigen en verwijderen.
+***:Category:Documenten|Documenten beheren]]
+***:Category:Vergaderingen|Vergaderingen beheren]] (zie ook Beheren van Overleggroepen en Vergaderingen)
+***:Category:Zaaktypen|Zaaktypen beheren]]
+***:Category:Actueel|Actueel]]
+***:Category:GEMMA Beheer|GEMMA Beheer]]
+
+== Eigenschappen versus categorieën==
+Semantic MediaWiki maakt het mogelijk om eigenschappen aan pagina's toe te kennen. Eigenschappen kunnen gebruikt worden om pagina's mee te selecteren (waarmee eigenschappen ook gebruikt kunnen worden als een soort Category). Belangrijk verschil is dat eigenschappen een waarde kunnen hebben, categorieën niet.

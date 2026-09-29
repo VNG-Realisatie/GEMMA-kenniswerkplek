@@ -1,0 +1,14 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's
+}}
+[[Categorie:Beheer]]
+Op GEMMA Online worden drie verschillende statussen voor pagina's en hun inhoud gebruikt. Hieronder staat uitleg over elk van deze statussen.<br>
+# <strong>In Ontwikkeling</strong> - de inhoud heeft een conceptstatus. Er wordt actief gewerkt om de inhoud compleet en actueel te maken.<br>
+# <strong>Actueel</strong> - deze pagina is zo goed mogelijk bijgewerkt en heeft een actieve beheerder.<br>
+# '''Mogelijk verouderd''' - er is al een tijd geen actief beheer meer uitgevoerd op de pagina en waardoor de inhoud verouderd kan zijn. Evengoed kan een mogelijk verouderde pagina over een specifiek onderwerp de meest recente en relevante inzichten omvatten. Mogelijk verouderde pagina's zijn herkenbaar aan de wit met oranje omlijnde banner bovenaan de pagina.
+{{Banner mogelijk verouderd}}
+<br> Heb je een vraag over een specifieke pagina, stuur dan een bericht naar GEMMAOnline@vng.nl. Voeg de URL van de pagina toe waarover de vraag gaat.
+
+Ben je op zoek naar een pagina over een specifiek onderwerp, maar is deze niet vindbaar. Mogelijk is deze dan gearchiveerd. Via het [[Archief]] is deze pagina mogelijk nog terug te vinden.

@@ -1,0 +1,154 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+__TOC__
+==Wat is een sjabloon/template ==
+Uit [https://www.mediawiki.org/wiki/Help:Templates/nl Help:Sjablonen]
+:''Als u standaardtekst heeft die u in verschillende pagina's wilt opnemen, kunt u daarvoor sjablonen gebruiken''
+
+Uit [https://www.wikidoc.org/index.php/Template_in_MediaWiki WikiDoc, a reference manual on templates in MediaWiki]
+:''In MediaWiki, a template is a page which can be inserted into another page via a process called transclusion. It can be considered a wiki subroutine facility and is comparable to a #include statement or macro that is expanded at page view time. Substitution allows templates to be used as a macro facility.''
+
+'''Sjabloon''' is identiek aan '''template''', beide termen zijn uitwisselbaar. Op GEMMA online maken we gebruik van de term/syntax sjabloon.
+
+Nuttige pagina's:
+* [[Speciaal:Sjablonen|Alle sjablonen]]
+* [[Speciaal:NietGecategoriseerdeSjablonen|Alle niet gecategoriseerde sjablonen]]
+* [[Speciaal:GevraagdeSjablonen|Niet-bestaande sjablonen met koppelingen]]
+* [[Speciaal:OngebruikteSjablonen]]
+
+== Hoe maak je een sjabloon ==
+
+=== Naamgeving ===
+
+Voor sjablonen wordt een vaste naamgevingsconventie gebruikt:
+
+* `Sjabloon:<naam>` voor hoofdtemplates die zelfstandig en herbruikbaar zijn.
+* `Sjabloon:<naam>/<functie>` voor subtemplates die specifiek onderdeel zijn van een hoofdtemplate.
+* `Sjabloon:<generieke functie>` voor generieke subtemplates die door meerdere hoofdtemplates kunnen worden gebruikt.
+
+Het gebruik van `/` maakt zichtbaar dat een subtemplate onderdeel is van een specifiek hoofdtemplate. Voorbeelden zijn `Sjabloon:Sjablonenoverzicht` en `Sjabloon:Sjablonenoverzicht/regel`. Een generiek herbruikbare tabelregel krijgt bijvoorbeeld de naam `Sjabloon:Tabelregel`.
+
+Het aanpassen van een bestaand sjabloon kan leiden tot een wijziging op veel pagina's. Kijk altijd eerst door welke pagina's een sjabloon gebruikt wordt.
+* Wordt een sjabloon door veel pagina's gebruikt, wijzig het sjabloon dan in de [https://gemma-redactie.staging.wikixl.nl/ staging-omgeving]
+* Maak je een nieuw sjabloon of raakt het weinig pagina's, dan is redactie prima
+
+Sjablonen met herbruikbare code en voorbeelden (toon-sjablonen, zie [[Architectuur wiki#SmartConnectArchiMate|Architectuur wiki]]), gebouwd op het vendor-sjabloon [[:Sjabloon:DisplayArchiMateDiagram]] (zie [[SmartConnectArchiMateHelp nl#Gebruiken van ArchiMate-views elders in de wiki|SmartConnectArchiMateHelp nl]]):
+* [[:Sjabloon:ToonViewGEMMA]]
+* [[:Sjabloon:ToonTabelVanViewGEMMA]]
+
+== GEMMA opmaaksjablonen ==
+
+GEMMA opmaaksjablonen bevatten een stukje layout. Vanuit een pagina wordt een sjabloon met parameters aangeroepen. De parameters bevatten de stukken tekst die door het sjabloon in een bepaalde opmaak wordt weergegeven.
+
+Opmaak sjablonen bevatten gén styling (geen CSS). Zie [[Beheren styling]] voor het wijzigen van fonts, kleuren, etc.
+
+Overzicht van de [[:Category:GEMMA opmaakTemplates]] sjablonen
+: <categorytree mode="pages" depth="0" showcount="on">GEMMA opmaakTemplates</categorytree>
+
+: <categorytree mode="pages" depth="0" showcount="on">Beheer</categorytree>
+
+== ArchiMedes sjablonen ==
+Dit zijn sjablonen voor het werken met een geïmporteerd ArchiMate-model. Zie [[Architectuur wiki#SmartConnectArchiMate|Architectuur wiki]] voor het onderscheid tussen de ArchiMedes-browser, de GEMMA-overrule daarop en de toon-sjablonen voor eigen pagina's; zie [[Beheren ArchiMedes]] voor ArchiMedes-categorieën en sjabloonbeheer; zie [[:Sjabloon:LibraryArchiMedesCustom]] voor de sjabloontechnische documentatie zelf.
+: <categorytree mode="all" depth="0" showcount="on" >GEMMA ArchiMedesTemplates</categorytree>
+
+== SmartPublish sjablonen ==
+[[:Sjabloon:Publicatie]] is het vendor-sjabloon dat SmartPublish zelf herkent om een pagina voor publicatie te markeren (vergelijkbaar met hoe [[:Sjabloon:DisplayArchiMateDiagram]] dat is voor ArchiMedes) — staat als exacte kopie in [[:Categorie:Kennismodule SmartPublish]], niet hieronder. GEMMA breidt dit uit met eigen sjablonen, opgenomen in categorie GEMMA publicatieCustomTemplates. Zie [[Beheren SmartPublish]] voor het beheer (dashboard, categorieën, wat wel/niet gepubliceerd wordt).
+: <categorytree mode="pages" depth="0" showcount="on">GEMMA publicatieCustomTemplates</categorytree>
+
+== Testen sjablonen ==
+
+Sjabloon-subpagina's zijn los te previewen — zie [[:Sjabloon:LibraryArchiMedesCustom#Testen zonder ArchiMedes]]. Er is geen aparte testpagina meer nodig.
+
+== Sjabloonbeschrijvingen ==
+
+Elk GEMMA-sjabloon kan een korte, querybare beschrijving krijgen: zet <code><nowiki>[[Sjabloonbeschrijving::Korte beschrijving hier.]]</nowiki></code> direct in het <code><nowiki><noinclude></nowiki></code>-blok van de sjabloonpagina zelf, meteen na de Categorie-regel. Deze constructie zet de eigenschap én toont de tekst in één keer — geen apart <code>#show</code> meer nodig. Gebruik platte tekst zonder wikilinks in de waarde: een <code><nowiki>[[...]]</nowiki></code>-link middenin de annotatie breekt de constructie (rendert letterlijk in plaats van als eigenschap).
+
+{{Letop
+|uitleg = '''Alleen zichtbaar waar de Sjabloon-naamruimte semantisch geïndexeerd is.''' Op het moment van schrijven geldt dat voor de staging-omgeving, nog niet voor productie (redactie.gemmaonline.nl). Zolang dat zo is, toont onderstaande tabel hier op productie leeg; op staging werkt hij wel. Zie de wiki-sync-skill voor hoe je lokale wijzigingen naar staging pusht om dit te testen.
+}}
+
+Twee eigenaardigheden van deze wiki's SMW-installatie om rekening mee te houden bij het schrijven van een eigen <code>#ask</code> op deze eigenschap:
+* Een subject-wildcard-conditie (<code><nowiki>[[Sjabloon:Naam/*]]</nowiki></code>) werkt niet betrouwbaar — gebruik een namespace-conditie (<code><nowiki>[[Sjabloon:+]]</nowiki></code>) als je op naamruimte wilt filteren.
+* <code>format=template</code> geeft printouts alleen positioneel door (<code><nowiki>{{{2}}}</nowiki></code>, <code><nowiki>{{{3}}}</nowiki></code>, ...), niet op eigenschapsnaam — zie [[:Sjabloon:Sjablonenoverzichtsrij]] voor een werkend voorbeeld.
+* De query's <code>link=none</code> onderdrukt bij <code>format=template</code> alle links, ook met een expliciete <code>+link=all</code> op één printout — het sjabloon bouwt links dus zelf op (zie [[:Sjabloon:Sjablonenoverzichtsrij]]).
+
+Onderstaande tabel toont alle sjablonen met een Sjabloonbeschrijving, met subsjablonen visueel ingesprongen onder hun hoofdsjabloon (📁 alleen als dat hoofdsjabloon ook echt subsjablonen heeft); Categorie en Gebruik-link worden automatisch afgeleid (geen handmatig onderhoud). Vóór de zichtbare tabel loopt een verborgen <code>#ask</code>-pass (zie [[:Sjabloon:Sjablonenoverzichtscollector]]) die eerst verzamelt welke hoofdsjablonen subsjablonen hebben — nodig omdat de zichtbare pass van boven naar onder rendert en dus nog niet vooruit kan kijken:
+
+{{#vardefine:parentsMetSubs|;}}<!--
+-->{{#ask: [[Sjabloon:+]]
+ [[Sjabloonbeschrijving::+]]
+ |format=template
+ |template=Sjablonenoverzichtscollector
+ |link=none
+ |limit=200
+}}
+<table class="sortable wikitable" style="table-layout:fixed; width:100%;">
+<tr><th style="width:25%;">Sjabloon</th><th style="width:50%;">Beschrijving</th><th style="width:20%;">Categorie</th><th title="Live link naar Speciaal:WatLinksHiernaartoe (WhatLinksHere) van dit sjabloon">ⓘ</th></tr>
+{{#ask: [[Sjabloon:+]]
+ [[Sjabloonbeschrijving::+]]
+ |?Sjabloonbeschrijving
+ |?Category
+ |format=template
+ |template=Sjablonenoverzichtsrij
+ |link=none
+ |limit=200
+}}
+</table>
+
+== Ongebruikte sjablonen ==
+
+Aangemaakt op 20 augustus 2026. Onderstaand overzicht toont sjablonen die niet meer vanaf enige pagina worden aangeroepen, gegenereerd via de MediaWiki-API ([[Speciaal:OngebruikteSjablonen]]), met uitsluiting van sjablonen in de categorieën Kennismodule WikiXL SmartCore™, SmartConnectArchiMate™, Kennismodel GEMMA 2.0, Kennismodule SmartConceptsManagement, SWCAPITemplates, Kennismodel Begrippen, Kennismodule BoekExport en Persona, en van hoofdpagina's met een elders gebruikte subpagina (bv. Sjabloon:ToonDomein). Let op: dit is een gecachete lijst (periodiek bijgewerkt, niet live) en telt geen aanroepen vanuit Lua/Scribunto-modules mee.
+
+{| class="wikitable sortable"
+! Sjabloon !! Categorieën
+|-
+| [[Sjabloon:Archief voor omgezette LQT-pagina]] ||
+|-
+| [[Sjabloon:FlowNoem]] ||
+|-
+| [[Sjabloon:Formatlist]] ||
+|-
+| [[Sjabloon:GetNrOfDaySinceLastEdit]] || [[:Categorie:Beheer archivering]]
+|-
+| [[Sjabloon:HiddenCategoryTest]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:Ifexist-page]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:LQT-doorverwijzing omgezet naar Flow]] ||
+|-
+| [[Sjabloon:LQT-pagina omgezet naar Flow]] ||
+|-
+| [[Sjabloon:LibraryToonArchiMate/ViewsLijst]] || [[:Categorie:GEMMA ArchiMedesTemplates]]
+|-
+| [[Sjabloon:Omgezet LQT-bericht met andere ondertekenaar]] ||
+|-
+| [[Sjabloon:Omgezet LQT-bericht met onderdrukte auteur]] ||
+|-
+| [[Sjabloon:PaginaVervangen]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:PaginaVervangenDoor]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:PublicatieCustom]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:Sidebar redactie]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:Sitenotice]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:SmartPublishSearch]] ||
+|-
+| [[Sjabloon:StandaardenlijstKolomVersie]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:Toon eigenschapwaarden2]] ||
+|-
+| [[Sjabloon:ToonBuitengemeentelijkeVoorziening]] || [[:Categorie:GEMMA ArchiMedesTemplates]]
+|-
+| [[Sjabloon:ToonGGMModel]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:ToonLaag]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:Verborgen tekst]] || [[:Categorie:GEMMA opmaakTemplates]]
+|-
+| [[Sjabloon:Wikitext-overlegpagina omgezet naar Flow]] ||
+|}

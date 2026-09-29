@@ -1,0 +1,73 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's, 
+}}
+[[Categorie:Schrijven op de wiki]]
+Wat zijn de goede editors voor het schrijven van wiki-pagina's? 
+
+De wiki zelf biedt twee editors voor het schrijven van teksten. 
+* de visuele editor en
+* de brontekst editor
+Deze editors zijn het snelst en het makkelijkst voor kleine aanpassingen.
+
+== Wanneer een andere editor? ==
+=== Bulkaanpassingen op één pagina ===
+Voor bulkaanpassingen is de brontekst editor niet geschikt. Hiervoor kun beter een aparte code- of teksteditor gebruiker. Bekende editors zijn [https://notepad-plus-plus.org/ Notepadd++] of [https://code.visualstudio.com/ VS code].
+Kies de editor die je kent en je goed bevalt. 
+
+Om een bestaande pagina in een code-editor te kunnen bewerken, moet je eerst de platte brontekst in de editor krijgen.
+* Kopiëren brontekst
+** open de pagina met de brontekst editor (Wikicode bewerken)
+** kopieer alle tekst en plak deze in editor
+** edit de tekst. Lokaal opslaan voor de gemoedsrust, maar hoeft niet
+** kopieer en plak vice versa
+** bekijk het resultaat in de wiki
+
+Werken met een aparte editor is omslachtiger, maar de extra moeite wordt beloond bij het doorvoeren van herhalende wijzigingen.
+* geavanceerde zoek- en vervangfunctie. Zie [[Omzetten Word naar Wiki-pagina]] voor voorbeelden.
+* syntax coloring waardoor je beter de opmaak van de tekst ziet
+
+=== Coderen van queries en templates ===
+Een code-editor heeft grote voordelen bij het maken van templates/sjablonen 
+* syntax coloring
+* [https://en.wikipedia.org/wiki/Bracket_matching Bracket matching]
+* formatting van code
+
+=== Bulkaanpassingen op meerdere pagina's ===
+De wiki heeft een zoek en vervang functie die werkt over alle pagina's heen. Ga naar [[Speciaal:TekstVervangen]]
+
+Voor een voorbeeld, zie [[Functioneel_beheer#Verwijderen_pagina]]
+
+== Welke editor ==
+Hieronder enkele ervaringen en tips met editors en het gebruik voor wikiml
+
+===  VScode ===
+VScode native kan iedere tekst bewerken en biedt krachtige functies om snel te editen
+* zoek en vervang
+** multi-line
+** reguliere expressies
+* keyboard shortcuts
+* etc
+
+De VScode extensies maken dat ook specifieke talen ondersteund worden.
+Voor het schrijven van Wikicode zijn er flink wat extensie beschikbaar.
+* [https://marketplace.visualstudio.com/items?itemName=RoweWilsonFrederiskHolme.wikitext  Wikitext] - meest complete ondersteuning voor wikicode
+** open vanuit de wiki direct een pagina in VScode met de [https://github.com/Frederisk/Wikitext-Extension-Gadget Wikitext-Extension-Gadget] (werkt helaas nog niet voor besloten redactie-wiki)
+** Syntax coloring
+** Automatic matching and closing of simple parentheses reduces unnecessary double typing.
+** invouwen en uitvouwen van blokken tekst
+** preview
+** ..
+* [https://marketplace.visualstudio.com/items?itemName=fregante.ghost-text GhostText Official] - Use VScode to write in your browser. Everything you type in the editor will be instantly updated in the browser (and vice versa).
+** Zet de pagina op 'Brontekst bewerken'
+** Klik in de browser op het icoon van GhostText en
+** je kunt zowel in VScode als in de browser de brontekst bewerken
+** opslaan van de wijzigingen doe je in de browser, de edit-buffer in VScode moet je apart afsluiten
+** de actie 'Bewerking ter controle bekijken' voert een refresh van de pagina uit, dit verbreekt de verbinding met de edit sessie VScode. 
+*** wijzig instelling onder 'Voorkeuren > Bewerken' en zet de optie 'Voorvertoning weergeven zonder de pagina opnieuw te laden' aan
+*** nu kun je voorvertonen, zonder de verbinding te verbreken
+* HTML ondersteuning is standaard in VScode
+** zet het file type (tijdelijk) op HTML
+** format de tekst. 
+*** HTML tabellen worden netjes geformatteerd
+*** helpt soms ook om een complex template beter leesbaar te maken
+* ook voor CSS handig

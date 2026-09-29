@@ -1,0 +1,52 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Categorie:Schrijven op de wiki]]
+Zoek op [[DisplayArchiMateModels]] naar de juiste naam van het model. Zet deze naam vervolgens in de bron van deze pagina en volg daar de instructie.
+<!-- Vervang in de onderstaande regel de waarde van het attribuut 'Semantictitle'. Bijv:  [[Semantictitle::GEMMA 2]] of  [[Semantictitle::GEMMA 2 Kennismodel 
+-->{{#vardefine: modelpage|{{#ask: [[Semantictitle::GEMMA]] [[Categorie:ArchiMateModels]]|link=none}} }}<!--
+-->{{#vardefine: modelid|{{#show:{{#var:modelpage}}|?Object ID|link=none}} }}
+* Model: [[{{#var:modelpage}}]] ({{#ask: [[Categorie:ArchiMateViews]] [[Occurs in model::{{#var: modelpage}}]]|format=count}} views)
+* Object ID: {{#var: modelid}}
+* Paginanaam: {{#var:modelpage}}
+
+Kijk voor meer uitleg over de sjablonen op:
+* [[Sjabloon:ToonViewGEMMA]]
+* [[Sjabloon:ToonTabelVanViewGEMMA]]
+* [[Sjabloon:ToonElement]]
+
+<table class="wikitable">
+<tr>
+<th>Nr.</th>
+<th>View</th>
+<th>Paginanaam</th>
+<th>Semantictitle</th>
+<th>Object ID_nl</th>
+</tr>{{#vardefine: nr|1}}
+{{#arraymap:{{#ask: [[Categorie:ArchiMateViews]] [[Occurs in model::{{#var: modelpage}}]]|sort=Semantictitle|format=plainlist|link=none|limit=200}}|,|xqx|{{#vardefine: viewid|{{lc:{{#show: xqx|?Object ID_nl|link=none}}}}}}
+<tr>
+<td>{{#var:nr}}{{#vardefine: nr|{{#expr: {{#var:nr}}+1}}}}</td>
+<td>[[xqx]]</td>
+<td>xqx</td>
+<td>{{#show: xqx|?Semantictitle}}</td>
+<td>{{#var:viewid}}</td>
+</tr>
+<tr>
+<td></td>
+<td colspan="4">'''Aanroep in wikipagina''':
+<ul>
+ <li>
+  <nowiki>{{ToonViewGEMMA|viewid=</nowiki>{{#var:viewid}}{{!}}modelid={{#var:modelid}}<nowiki>}}</nowiki><nowiki><!--</nowiki>{{#show: xqx|?Semantictitle}} ({{#show: xqx|?Elementtype|link=none}})<nowiki>--></nowiki>
+ </li>
+ <li>
+  <nowiki>{{ToonTabelVanViewGEMMA|viewid=</nowiki>{{#var:viewid}}{{!}}modelid={{#var:modelid}}{{!}}filter=<nowiki>}}</nowiki><nowiki><!--</nowiki>{{#show: xqx|?Semantictitle}} ({{#show: xqx|?Elementtype|link=none}})<nowiki>--></nowiki>
+ </li>
+ <li>
+  <nowiki>{{ToonElement|id=</nowiki>{{#var:viewid}}{{!}}modelid={{#var:modelid}}<nowiki>}}</nowiki><nowiki><!--</nowiki>{{#show: xqx|?Semantictitle}} ({{#show: xqx|?Elementtype|link=none}})<nowiki>--></nowiki>
+ </li>
+</ul>
+</td>
+</tr>
+|\n}}
+</table>

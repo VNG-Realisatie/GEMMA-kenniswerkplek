@@ -1,0 +1,383 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Modelleren handleidingen]]
+__TOC__
+== Eigenschappen ArchiMate-model voor import ==
+
+De door ArchiXL onderhouden pagina [[Help:Instructie voor import ArchiMate modellen]] beschrijft welke eigenschappen worden gebruikt voor de sturing van het import proces én een aantal eigenschappen die noodzakelijk zijn voor de Softwarecatalogus.
+
+De GEMMA bevat alle op deze pagina beschreven eigenschappen.
+
+Nakijken
+* [[Modelleren volgens kennismodel]]
+* [[Publicatiefilters en modelleerafspraken]]
+
+== Extra eigenschappen GEMMA architectuurmodel ==
+
+In het GEMMA ArchiMate-model krijgen een aantal objecttypen extra eigenschappen. 
+
+=== Object ID ===
+Voor de GEMMA wordt gebruik gemaakt van de eigenschap 'Object ID'. Het 'Object ID' wordt gebruikt als unieke aanduiding van het model en voor alle objecten in het model. 
+Door het 'Object ID' kan het GEMMA ArchiMate-model worden uitgewisseld tussen verschillende architectuurtools. Iedere tool kan zijn eigen 'technische id's' gebruiken, en toch is ieder GEMMA object uniek te relateren aan het bron-object in de GEMMA. 
+
+Het 'Object ID' wordt ook gebruikt in de URL's op GEMMA online. Voordeel hiervan is dat de naam van een GEMMA object kan worden veranderd zonder dat de URL wijzigt. Nadeel is dat de URL's voor een mens geen betekenis hebben/niet leesbaar zijn.
+
+=== Eigenschappen van een ArchiMate-model ===
+
+{|class="wikitable"
+|-
+|'''Eigenschap'''
+|'''Beschijving'''
+|-
+|Object ID
+|GUID - Uniek id van het architectuurmodel
+|-
+|Versie
+|Versieaanduiding van het model.
+
+De versie wordt nu ook gebruikt in de URL van GEMMA Online. Dit betekent dat het veranderen van het versienummer alle URI wijzigen. Niet wijzigen dus zolang dat niet is opgelost.
+|-
+|Publiceren
+|Eigenschap waarmee wordt bepaald of en waar de view wordt gepubliceerd.
+
+*Niet
+*Redactie
+*GEMMA Online en redactie
+*Softwarecatalogus en GEMMA Online en redactie
+Zie [[Publicatiefilters en modelleerafspraken]] voor uitleg wat deze waarden betekenen
+|-
+|Kernmodel ID
+|Modellen kunnen een verwijzing hebben naar een Kernmodel, via een Kernmodel ID. 
+
+* Als deze gevuld is betreft het een Projectmodel. 
+* Als deze niet gevuld is, betreft het een Kernmodel. 
+Het GEMMA model is een kernmodel. Een projectmodel dat (gedeeltelijk) gebaseerd is op de GEMMA geeft dit aan door in de eigenschap Kernmodel ID de GUID van het GEMMA model op te nemen.
+|-
+|Architectuurtool
+|Bevat de naam van de tool waarmee het model wordt beheerd. Hierdoor kan ArchiMedes de verschillen tussen implementaties van AMEFF onderkennen en opvangen.
+|}
+
+== Eigenschappen van alle elementen ==
+
+Voor ieder model, view, object en relatie zijn er naast de naam de volgende eigenschappen:
+
+{|class="wikitable"
+|-
+|'''Eigenschap'''
+|'''Beschijving'''
+|-
+|Object ID
+|Unieke sleutel van object; verander deze nooit<nowiki>!</nowiki> De GUID wordt in GEMMA online en in de Softwarecatalogus gebruikt als referentie naar objecten.
+|-
+|Documentatie:
+|Hier nemen we een scherpe definitie van het object op. Ondubbelzinnig en correct.
+|-
+|Toelichting:
+|Hier kan een verdere uitleg, beschrijving of voorbeeld geplaatst worden.
+|-
+|Review en vragen
+|Hier kun je vragen en opmerkingen aan collega's kwijt. Nog geen handige manier deze weer terug te vinden.
+|}
+== Modelleren van objecten ==
+
+=== Eigenschappen van objecten ===
+
+Alle GEMMA objecten zijn voorzien van de onderstaande eigenschappen. <nowiki>'</nowiki> 
+
+{|Eigenschappen en beschrijving class="wikitable"
+|-
+|'''Eigenschap'''
+|'''Beschijving'''
+|-
+|GEMMA type
+|Definieren van GEMMA specialisaties van de ArchiMate concepten
+|-
+|GEMMA subtype
+|Wordt gebruikt bij het duiden van groepen. Als het GEMMA type een groep is, dan wordt met het subtype vastgelegd over welke type groep het gaat.
+|-
+|GEMMA label
+|Mogelijkheid om voor een object een tweede label/naam te definieren. Dit label kan in GEMMA online gebruikt worden als alternatief voor het ArchiMate label, bijvoorbeeld een verkorte naam, of een naam met afbreekstreepjes.
+
+Wordt (nog) niet gebruikt
+|-
+|GEMMA sortering
+|Mogelijkheid een object een 'sorterings' naam te geven. Een lijst kan dan gesorteerd worden op basis van dit (verborgen) label.
+
+Wordt gebruikt in de lijst van de GEMMA principes
+|-
+|GEMMA status
+|Aanduiding of een object nog 'in ontwikkeling', 'in gebruik' of 'einde ondersteuning' is.
+
+Wordt gebruikt in de filtering van objecten voor de Softwarecatalogus. Alleen objecten met de GEMMA status 'in gebruik' worden met de GEMMA list service doorgegeven.
+|-
+|Extern Model ID
+|Verwijzing naar een ander model (mogelijk in andere tool) waar het object ook voorkomt
+
+Wordt nu o.a gebruikt voor verwijzing naar VIVO model
+|-
+|Extern Object ID
+|Verwijzing naar het object in het andere model
+|-
+|Contextview
+|Kopieer hier de Object ID (GUID) van de (context)view.
+
+ArchiMedes genereert standaard voor ieder object een contextdiagram. Zeker als een object veel relaties heeft zijn deze gegeneerde views niet overzichtelijk. Je kunt het gegenereerde contextdiagram vervangen door een view in het architectuurmodel.
+
+Maak in het architectuurmodel een (context)view voor één of meerdere objecten.
+
+Werking van de eigenschap Contextview:
+
+*leeg -&gt; ArchiMedes toont gegenereerde contextview
+*Object ID van een view -&gt; ArchiMedes toont de in de export meegeleverde view
+:*view moet in het huidige model staan
+:*view moet gepubliceerd worden.
+|}
+
+=== GEMMA specialisaties van ArchiMate ===
+
+In het kennismodel worden enkele ArchiMate concepten door GEMMA uitgebreid. Een specialisatie is geïmplementeerd met de eigenschap GEMMA type. 
+
+Een voorbeeld. De '''referentiecomponent''' is een specialisatie van de ArchiMate applicatiecomponent. Dit wordt als volgt gemodelleerd:
+* Maak een nieuwe applicatiecomponent
+* Geef de eigenschap GEMMA type de waarde "Referentiecomponent"
+
+'''Lijst van GEMMA specialisaties'''
+
+Het GEMMA type bevat alle in het model gebruikte specialisaties. 
+
+* Groep -> zie hieronder voor het modelleren van een groep
+*Specialisaties
+:*Referentiecomponent -&gt; specialisatie van een ApplicatieComponent
+:*Standaard -&gt; specialisatie Beperking
+:*Standaardversie -&gt; specialisatie Beperking
+:*Buitengemeentelijke voorziening -&gt; specialisatie van een ApplicatieComponent
+:*Buitengemeentelijke dienst -&gt; specialisatie van een BedrijfsService
+:*Buitengemeentelijke service -&gt; specialisatie van een ApplicatieService
+:*BIV classificatie -&gt; specialisatie Beperking
+:*Bedrijfsproces -&gt; specialisatie van een BedrijfsProces
+:*Werkproces -&gt; idem
+:*Processtap -&gt; idem
+:*Handeling -&gt; idem
+*Hiërarchie bedrijfsfuncties. 
+:*De hiërarchie wordt gebruikt door het GEMMA koppelvlak en maakt expliciet welke bedrijfsfunctie en afgeleide relaties worden doorgegeven aan de Softwarecatalogus
+::*Bedrijfsfunctie laag -&gt; hoogste niveau BedrijfsFunctie in de hiërarchie van het GEMMA bedrijfsfunctiemodel
+::*Bedrijfsfunctie domein -&gt; groepering van met elkaar samenhangende BedrijfsFuncties
+::*Bedrijfsfunctie -&gt; tot hier worden bedrijfsfuncties doorgegeven aan de softwarecatalogus
+*Overerving is bedoeld om het beheer van veelvoorkomende relaties te vereenvoudigen en overzichtelijk te houden.
+:*Basiscomponent -&gt; Specialisatie van een ApplicatieComponent. Componenten met een specialisatierelatie met een basiscomponent over de relaties van de basiscomponent. Zie voor nader uitleg [[Publicatiefilters_en_modelleerafspraken#Importovererving]]
+
+=== Semantische groepen ===
+
+In de GEMMA architectuur wordt veel gebruikt gemaakt van groepen. Binnen het Archimate 2.1 bestaat echter geen semantisch object groep. Wel bestaan er grafische groepen, berperking van grafische groepen is dat deze alleen op de view bestaan en er geen groeperingsrelaties gemaakt kunnen worden. De ArchiMate 3 standaard introduceert wel een semantisch object groep.
+
+Om in de GEMMA toch met groepen te kunnen werken, is onderstaande werkwijze bedacht.
+* Groepen die je visualiseert op een plaat moeten we als object vastleggen. Dit zijn meestal tevens de groepen die in de softwarecatalogus gebruikt zullen worden als 'filter', denk aan filteren op 'functionaliteit voor gemeenten', etc.
+** in veel gevallen kan dit een object op hoger aggregatieniveau zijn, bv. groeperende applicatiefuncties, groeperende bedrijfsfuncties,..
+** bij applicatiecomponenten/referentiecomponenetn gebruiken we een "application collaboration"
+** in sommige andere gevallen gebruiken we een grafische "Group" (bv. clusters van bedrijfsprocessen)
+* Groepen die je enkel wilt gebruiken voor beheerdoeleinden en niet gaat visualiseren op een plaat: vastleggen als attribuut
+Bij overgang naar Archimate 3 bespreken; houden we het zo, of gaan we meer terug naar groepen?
+Dus op IA-plaat worden het geaggregeerde applicatiefuncties én bedrijfsservices (externe functionaliteit)
+
+Naast het GEMMA type is er ook de eigenschap GEMMA subtype. Het GEMMA subtype wordt gebruikt om - vooruitlopend op ArchiMate 3 - een semantische groep te kunnen definiëren. Afhankelijke van het te groeperen ArchiMate objecttype wordt een bepaald objectype gespecialiseerd naar een GEMMA groep. Een voorbeeld:
+* De Gradaties (van bouwbaarheid/testbaarheid) groeperen standaarden.
+** De gradatie 'Eindproduct' groepeert de standaarden die zonder aanvullende specificaties bouwbaar en testbaar zijn. Deze groep is als volgt gedefinieerd:
+*** naam = 'Eindproduct'
+*** GEMMA type = 'groep'
+***GEMMA subtype = 'Gradaties'
+Lijst van semantische groepen
+
+*Doelgroep - Facet doelgroep in SWC, de applicatiefunctie-groepen gemeente, inwoners en ondernemers, ketenpartners en generiek
+*Domein - Facet domein, met hierin de GEMMA domeinen
+*Gradaties - Indeling van standaarden in eindproducten, halffabricaten en grondstoffen
+Nog uitzoeken
+
+*Domein en doelgroep - groep van applicatiefunctie-groepen met doorsnede van domein en doelgroep
+== Modelleren van relaties ==
+
+Welke relaties in de GEMMA gebruikt worden is weergegeven in de kennismodellen
+
+*Zie het [[GEMMA kennismodel]] voor de gebruikte relaties en relatietypen
+*Zie de [[Softwarecatalogus AMEFF export]] waarin de voor de softwarecatalogus vereiste relaties expliciet getekend zijn.
+
+=== Eigenschappen van relaties ===
+
+Relaties kunnen naast een label/naam ook eigenschappen hebben.
+
+{|class="wikitable"
+|-
+|'''Eigenschap'''
+|'''Beschijving'''
+|-
+|Verbindingsrol
+|Verbindingsrol wordt vanuit meerdere betekenissen gebruikt:
+
+*Vastleggen wanneer een standaard moet worden gebruikt. Geef dit aan met een realisatierelatie van de referentiecomponent naar de standaard
+:*Aanbevolen;
+:*Verplicht
+*BIV classificatie
+:*laag
+:*midden
+:*hoog
+*Migratie/wijzigings suggesties
+:*was - wordt
+|-
+|Extern Model ID
+|Verwijzing naar een ander model (mogelijk in andere tool) waar dezelfde relatie ook voorkomt
+|-
+|Extern Object ID
+|Verwijzing naar de relatie in het andere model
+|}
+
+=== Overerven van relaties ===
+
+In de onderstaande figuur worden de modelleringsafspraken voor overerving getoond.
+
+*Een applicatiecomponent met het GEMMA type='Basiscomponent' heeft relaties met in dit voorbeeld een standaard en een applicatiefunctie
+:*Onderliggende componenten met een specialisatierelatie overerven de relaties naar de standaard en de applicatiefunctie
+*Overerving via een intermediate wordt ondersteund.
+:*Onderliggende componenten met een specialisatierelatie naar de intermediate, overerven zowel de relaties van de basiscomponent als van de intermediate
+*Overerving van eigenschappen vind niet plaats, eigenschappen van objecten veranderen tijdens de import niet
+
+{{ToonViewGEMMA|viewid=bd2836e0-e1d6-4db4-bc9c-a924199028b7|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA 2 modelleerafspraken inheritance (ArchiMateView)--> 
+
+{{ToonTabelVanViewGEMMA|viewid=bd2836e0-e1d6-4db4-bc9c-a924199028b7|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+| filter = ApplicationComponents
+| toelichting = Ja
+| type = Element }}<!--GEMMA 2 modelleerafspraken inheritance (ArchiMateView)-->
+
+== Tekenen van views ==
+De GEMMA kiest voor een beperkte set van views, die consequent op dezelfde wijze worden getekend. 
+
+De views kennen een standaard 'achtergrond' waarin in vervolgviews meer detail wordt vastgelegd.
+
+We gebruiken altijd de "Totaalview". (dus niet totaalview uitgebreid)
+
+Voor de "GEMMA-platen": bedrijfsfuncties, applicatiefuncties, procesarchitectuurplaat hanteren we de traditionele lay-out.
+
+Kleurengebruik en fonts
+
+*Voorgrond objecten krijgen de default kleuren, achtergrond-objecten krijgen aangepaste kleuren
+*In de bekende GEMMA applicatiefunctieviews hanteren we de kleuren:
+**blauw, groen, oranje, grijs voor de "groepen functies" en daarop gebaseerde lichtere tinten voor de applicatiefuncties binnen deze groepen
+**bedrijfsfuncties krijgen diverse tinten geel, conform de hierarchie
+=== Domeinviews ===
+De domeinarchitecturen verbijzonderen de GEMMA-platen naar de verschillende domeinen toe. Dit zowel voor de bedrijfsfunctieview, als de applicatiefunctieviews.
+* Voor de bedrijfsfunctieview worden bestaande bedrijfsfuncties verder ingevuld met sub-bedrijfsfuncties. Er worden dus geen bedrijfsfuncties op hoofdniveau bij geplaatst. Dan moet het GEMMA-model aangepast worden.
+* Voor de applicatiefunctieviews in de domeinarchitectuur, worden de drie vlakken "Specifieke functies (domein x) voor inwoners en ondernemers", "Specifieke functies (domein x) voor gemeente" en "Specifieke functies (domein x) voor ketenpartners" ingevuld met applicatiefuncties (en referentiecomponenten) specifiek voor dit domein.
+* Bij overlap mag een applicatiefunctie gerust op 2 domeinplaten terug komen. Maar met mate.
+* Op de applicatiefunctieviews uit de domeinarchitecturen tekenen we de vlakken uit de generieke functieview onder de vlakken met specifieke functies
+* De achterliggende vlakken voor de aspectgebieden Informatiebeveiliging en Verbinden tekenen we enkel op de applicatiefunctieviews. In de domeinarchitecturen laten we deze weg wegens te gevoelig voor beheer.
+
+De Domeinarchitecturen werken we telkens uit in 3 views:
+1.	Bedrijfsfunctieplaat met sub-bedrijfsfuncties (verdere detaillering van de hoofd-bedrijfsfunctieplaat)
+2.	Bedrijfsfunctieplaat met referentiecomponenten (Zelfde als (1), maar dan met referentiecomponenten in de sub-bedrijfsfuncties. Deze platen komen ook in de SWC)
+3.	Applicatiefunctiesview met domeinspecifieke applicatiefuncties en bijbehorende referentiecomponenten  (deze platen komen ook in de SWC en verschillen van (2) in dat hier de ondergrond van de Informatiearchitectuur wordt gebruikt ipv de Bedrijfsfunctieplaat)
+
+=== Eigenschappen van views ===
+
+Hieronder de algemene eigenschappen van een view. 
+
+{|Eigenschappen en beschrijving class="wikitable"
+|-
+|'''Eigenschap'''
+|'''Beschijving'''
+|-
+|Object ID
+|Unieke sleutel van een view; verander deze nooit<nowiki>!</nowiki> De GUID wordt in GEMMA online en in de Softwarecatalogus gebruikt als referentie naar objecten.
+|-
+|Publiceren
+|Eigenschap waarmee wordt bepaald of en waar de view wordt gepubliceerd. 
+
+*Niet
+*Redactie
+*GEMMA Online en redactie
+*Softwarecatalogus en GEMMA Online en redactie
+Zie [[Publicatiefilters en modelleerafspraken]] voor uitleg wat deze waarden betekenen
+|-
+|Titel view SWC
+|Deze tekst wordt door de Softwarecatalogus gebruikt bij het plotten van een titel boven een view.
+|-
+|View is gegenereerd
+|Indien een view met het BiZZDesign script/viewpoint "Generate View for Selected Objects" is gegenereerd, is deze op 'ja' gezet.
+|-
+|Extern Model ID
+|Verwijzing naar een ander model (mogelijk in andere tool) waar het object ook voorkomt
+
+Wordt nu o.a gebruikt voor verwijzing naar VIVO model
+|-
+|Extern Object ID
+|Verwijzing naar het object in het andere model
+|}
+
+Aanvullend kan een view met enkele eigenschappen gemetadateerd worden, waarmee deze is in te delen in een [[Overzicht GEMMA architectuurviews]]. Als de eigenschappen niet zijn gezet, verschijnt de view niet in het overzicht.
+
+De volgende eigenschappen moeten worden gezet om in de overzichtstabel te verschijnen:
+
+{|class="wikitable"
+|-
+|'''Eigenschap'''
+|'''Beschrijving'''
+|-
+|Architectuurlaag
+|Geef aan bij welke ArchiMate architectuurlaag de view hoort. Views die uit meerdere lagen bestaan, worden toegekend aan Totaal (meerlaags) ..
+
+*Bedrijfsarchitectuur
+*Applicatiearchitectuur
+|-
+|Domein
+|Op welk gemeentelijk domein of de view betrekking. Als de view geen domein kent, dan kiezen voor 'Niet domeingebonden'
+
+*Openbare Orde en Veiligheid
+*Sociaal domein
+|-
+|Thema
+|Indien de view is gemaakt in kader van een bepaald thema, dan hier aangeven. Anders leeglaten.
+
+*Gegevensmanagement
+*Informatie- en archiefbeheer
+*Zaakgericht werken
+|-
+|Viewtype
+|Hiermee wordt aangegeven wat voor soort view het eigenlijk is
+
+*Basis, behorend tot de kern van GEMMA
+*Illustratie, illustratief gebruik van een GEMMA model in bv Katernen of andere pagina's
+*Positionering, afbakening van het onderwerp door de betreffende objecten te positioneren op een basisview.
+*Patroon, een uit de praktijk afgeleide 'best practice' voor een standaard probleem. Het patroon is een generieke oplosssing hiervoor.
+*Toelichting, weergave van de structuur van een (groot) object van het GEMMA model
+*Contentfilter, views van het type contentfilter bestaan alleen vanwege administratieve redenen. 
+:*bevat objecten die mogen worden uitgefilterd (immers alle objecten die niet op een view staan worden uitgefilterd)
+:*na de import worden views met deze eigenschap verwijderd (en dus nergens gepubliceerd)
+|}
+
+De volgende eigenschappen zijn optioneel
+
+{|class="wikitable"
+|-
+|'''Eigenschap'''
+|'''Beschrijving'''
+|-
+|Scope
+|Heeft de view betrekking op de gemeente of een (gemeentelijke) keten:
+
+*Gemeente
+*Keten
+|-
+|Viewdetail
+|Geef het detailniveau aan van de view, conform de ArchiMate view definitie
+
+*Overzicht (breed, hoog niveau)
+*Samenhang (verschillende aspecten, maar niet zo gedetailleerd)
+*Detailniveau (een klein deel van de architectuur, met relatief veel details)
+|}
+
+
+'''Eigenschappen van viewnodes'''
+
+Iedere occurence van een element (objecten en relaties) op een view heeft ook een unieke ID. Dit is in het GEMMA profiel het Reference ID.
+
+Helaas is het niet mogelijk een Reference ID in een ArchiMate Exchange bestand te exporteren en importeren. Dit zou het bijwerken van architectuurmodellen in meerdere tools/omgevingen veel efficienter kunnen maken.
+
+Hiermee is het voor nu niet zinvol iets te doen met dit Reference ID. Wordt bijgehouden voor 'future reference'.

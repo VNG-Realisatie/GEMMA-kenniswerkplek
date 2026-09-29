@@ -1,0 +1,71 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's, 
+}}
+[[Categorie:Schrijven op de wiki]]
+Hoe kun je views en elementen uit een ArchiMate-model op een pagina '''tonen'''.
+
+Views en objecten uit de architectuurrepository kunnen worden getoond in teksten van GEMMA Online. Elementen kunnen expliciet in de tekst worden opgenomen door met behulp van een sjabloonaanroep een verwijzing te maken naar het modelID en het elementID. De wiki toont dan de verwijzing of het element zelf.
+
+De ArchiXL extensie [[SmartConnectArchiMateHelp_nl | SmartConnectArchiMate]] bevat de functionaliteit voor het tonen van ArchiMate-objecten.
+
+== Opzoeken te tonen object ==
+
+Browsen door de modellen
+* [[DisplayArchiMateModels]] - overzicht van de geïmporteerd modellen
+* [[GEMMA/id-2b2b88ba-8efe-46d3-8b40-47af290bc418 | GEMMA ArchiMate-model]] - bekijk de GEMMA views, elementen en relaties
+* Je raakt makkelijk de weg kwijt in een model. Bovenin de ArchiMedes pagina's staat een kruimelpad waarmee je altijd terug kan
+
+Overzichten GEMMA model (maatwerk)
+* [[Overzicht_GEMMA_architectuurviews]] - de GEMMA views ingedeeld op eigenschap publicatie in een overzichtelijke tabel
+
+==Opnemen van GEMMA objecten in pagina's ==
+
+Het makkelijkst gaat dit met de GEMMA sjablonen.
+
+=== GEMMA sjablonen ===
+
+Een opsomming van de voor GEMMA gemaakte sjablonen. De sjablonen zijn zelf documenterend, bekijk het sjabloon voor de uitleg en voorbeelden:
+Tonen van elementen
+* [[Sjabloon:ToonLinkNaarElement]], toont een link naar een element of view op basis van de naam  &#10004;
+* [[Sjabloon:ToonLinkNaarElementGEMMA]], toont een link naar een element of view op basis van de GUID (Object ID) &#10004;
+* [[Sjabloon:ToonElement]], toont een link/tekst naar een element op basis van de GUID (Object ID), optioneel met eigenschappen, relaties en views &#10004;
+* [[Sjabloon:ToonContextView]], toont contextview van een element &#10004;
+
+Tonen van views
+* [[Sjabloon:ToonViewGEMMA]], laat de view als visualisatie zien op basis van de Semantictitle &#10004;
+* [[Sjabloon:ToonTabelVanViewGEMMA]], toont tabel met alle elementen of relaties in een view (heading tabel niet compleet)
+
+Voor het GEMMA model zijn ingevulde sjabloonaanroepen gemaakt.
+* [[Speciaal:ZoekopdrachtUitvoeren/Zoek_element|Zoek element]], zoek een element en geef de sjabloonaanroep.
+* [[GEMMA views en sjabloonaanroepen]], tabel met alle GEMMA views en ingevulde sjabloonaanroepen
+* [[GEMMA elementen en sjabloonaanroepen]], tabel met alle GEMMA elementen en ingevulde sjabloonaanroepen
+
+== Uitleg en extra informatie ==
+
+=== Paginanaam ArchiMate-objecten ===
+SmartConnectArchiMate maakt bij het importeren van een model voor ieder object een pagina aan (zelfs voor visuele objecten op een view). De paginanaam is een GUID. De GUID wordt afgeleid uit de technische ID's die vanuit de architectuurtool worden ingelezen (een hashfunctie op het model-id en object-id).
+
+=== Paginanaam gemaakt door GEMMA import ===
+De GEMMA import doet dit anders. SmartConnectArchiMate gaat ervanuit dat er één model is geïmporteerd in een wiki. Voor GEMMA online geldt dat er meerdere modellen zijn.
+
+'''Let op''': de paginanaam is normaliter de leesbare naam van de pagina. Deze wordt zowel voor de URL als voor de paginatitel gebruikt. SmartConnectArchiMate maakt onleesbare paginanamen (GUID) en zet de <nowiki>{{DISPLAYTITLE: <object naam>}}</nowiki> met de naam van het object.
+
+De URL van een pagina voor een GEMMA object ziet er volgt uit:
+* Voorbeeld: <nowiki>https://redactie.gemmaonline.nl/index.php/GEMMA/id-1c2ce840-6683-4f51-844f-04d3c8a6f2cc</nowiki>
+* Opbouw: <nowiki>https://<host>/index.php/<modelnaam zonder spatie>/<property versie van model/id-<property Object ID van object></nowiki>
+
+Toelichting
+* modelnaam zonder spatie - de modelnaam van het ArchiMate-model
+* property versie van model - op modelniveau is de property versie gedefinieerd. 
+** De versie wordt met de hand gevuld (en niet gewijzigd omdat dan veel links niet meer zullen werken ..).
+** In Archi selecteer het model en kijk in de properties
+* property Object ID van object - het unieke ID van een object
+** dit is niet het technische id dat door Archi onder water wordt bijgehouden
+** het Object ID wordt 'met de hand' bijgehouden in Archi
+** Object ID's zijn GUID's gegenereerd met het jArchi script setObjectID.ajs
+
+=== Sjablonen ===
+
+SmartConnectArchiMate biedt enkele sjablonen voor het tonen van een ArchiMate-view op een wiki-pagina.
+
+[[:Categorie: ArchiMedesCustomTemplates]]

@@ -1,0 +1,139 @@
+[[category:Beheer]]
+__NOTOC__
+Hier vind je handleidingen, instructies en uitleg over de GEMMA online wiki, gericht op:
+* Architecten - doorontwikkelen ArchiMate-modellen en schrijven op de GEMMA wiki
+* Beheerder GEMMA architectuur - wijzigen structuur GEMMA online en GEMMA ArchiMate-model
+* Functioneel beheerder GEMMA online
+
+Wijzigingen in de GEMMA architectuur worden afgestemd binnen het Kenniscentrum Architectuur
+* correcties worden naar eigen inzicht doorgevoerd
+* kleine wijzigingen worden voorgelegd aan collega's ter review
+* grote wijzigingen worden voorgelegd aan de '''product owner GEMMA'''
+<!--
+
+Schrijven en modelleren blokken
+
+-->
+<br>
+{{Landingspagina
+|titel1 = Schrijven op de wiki
+|inhoud1 = Helppagina's voor redacteuren en beheerders
+
+Voor redacteuren 
+* [[Schrijfwijzer en huisstijl]]
+* [[Schrijven op GEMMA online]]
+* [[Tonen afbeeldingen en bestanden]]
+* [[Tonen van video]]
+* [[Maken en tonen van diagrammen]]
+* [[Opnemen ArchiMate-objecten in een pagina]]
+* [[Reviewen pagina]] & [[Speciaal:SmartComments]] (zie 2e tab)
+* [[Publiceren pagina]]
+
+Voor redacteuren en beheerders
+* [[Editor voor schrijven wiki-pagina]]
+* [[Beheren van begrippen]]
+* [[Omzetten Word naar Wiki-pagina]]
+* [[Toekennen categorie]]
+* [[Beheren katernen/boeken]]
+* [[Tabellen en queries]]
+|titel2 = Modelleren
+|inhoud2 = Helppagina's voor GEMMA architecten
+
+Tools
+* [[Archi en git]]
+* [[Archi en git voor VNGR-architecten]]
+* [[Importeren van een AMEFF-bestand]]
+* Landingspagina [[ArchiMate modelleren]] voor gemeenten
+
+Modelleren
+* [[Modelleren volgens kennismodel]]
+* [[Modelleren bedrijfsobjecten en GGM]]
+* [[Eigenschappen in GEMMA ArchiMate-model]]
+* [[Veelgestelde vragen over modelleren]]
+
+Importeren modellen in GEMMA
+* [[GEMMA Kernmodel en Projectarchitecturen]]
+|hoogte=600px
+}}<!--
+
+
+Uitleg blokken
+
+-->{{Landingspagina
+|titel1 = Uitleg GEMMA architectuur
+|inhoud1 = GEMMA architectuur vanuit meerdere perspectieven
+* [[Samenstelling GEMMA architectuur]]
+* [[Gebruik van de GEMMA architectuur]]
+|titel2 = Uitleg platform en tools
+|inhoud2 = Wiki platform
+* [[Architectuur wiki]]
+* [[Koppeling met ArchiMate tools]]
+* [[Koppeling met Softwarecatalogus]]
+* [[Koppeling met GGM]]
+
+Testen
+* [[Testen wiki koppelingen]]
+
+|hoogte=450px
+}}<!--
+
+
+Beheer en documentatie blokken
+
+-->{{Landingspagina
+|titel1 = Functioneel beheer
+|inhoud1 = Zorgen dat het wiki platform werkt
+* [[Functioneel beheer]]
+* [[Beheren met AI]]
+* [[Beheren ArchiMedes]]
+* [[Incidenten en wijzigingen]]
+* [[Beheren archief]]
+* [[Beheren categorieën]]
+* [[Beheren feedback bezoekers]]
+* [[Beheren kennismodellen]]
+* [[Beheren nieuwsberichten]]
+* [[Beheren sjablonen]]
+* [[Beheren styling]]
+* [[Beheren voorpagina en menu]]
+* [[Beheren zoekmachine]]
+
+
+Herstructureren GEMMA online
+* [[Paginas in ontwikkeling]]
+* [[Schone start wiki]]
+* [[Vragen aan Toine]]
+
+Ondersteunen architecten
+* [[Beheren gebruikers en rechten]]
+* [[Releasen GEMMA ArchiMate-model]]
+
+Ondersteunen gemeenten en leveranciers
+* [[Communicatie]]
+* [[Evaluaties GEMMA]] - Bezoekcijfers en waarderingsonderzoek
+
+Forum
+* [https://forum.vng.nl/do/startpage?id=2332596-737461727470616765 Regie op ICT (VNG forum)]
+|titel2 = Documentatie platform en tools
+|inhoud2 = Archi
+* [https://www.archimatetool.com/downloads/archi/Archi%20User%20Guide.pdf Archi User Guide]
+
+WikiMedia
+* [https://www.mediawiki.org/wiki/Help:Contents Help Mediawiki] ook in het [https://www.mediawiki.org/wiki/Help:Contents/nl Nederlands]
+* [http://semantic-mediawiki.org/wiki/Help:User_manual Help Semantic Mediawiki]
+
+WikiXL documentatie en opleiding
+* [https://gebruikersgroep.wikixl.nl/index.php/Hoofdpagina Gebruikersgroep handleidingen]
+* [https://opleiding.wikixl.nl/index.php/SmartCore Opleiding SmartCore]
+* [https://opleiding.wikixl.nl/index.php/SmartConnectArchiMate Opleiding SmartConnectArchiMate]
+* [https://opleiding.wikixl.nl/index.php/SmartPublish Opleiding SmartPublish]
+* [[SmartConnectArchiMateHelp nl | Help SmartConnectArchiMate]]
+
+WikiXL platform
+* [[Beheren SmartPublish]]
+* [[Speciaal:SmartPublish | SmartPublish dashboard]]
+* [[Speciaal:SmartServerPages | SmartServerPages dashboard (extensies)]]
+
+Softwarecatalogus
+* [https://www.softwarecatalogus.nl/Beheer%20softwarecatalogus Softwarecatalogus en SSL-certificaat]
+|hoogte=850px
+}}

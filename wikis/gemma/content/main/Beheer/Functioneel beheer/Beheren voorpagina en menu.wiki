@@ -1,0 +1,157 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+__TOC__
+== Voorpagina ==
+
+Links naar onderdelen
+* De [[Hoofdpagina]] kan aangepast worden door bovenin deze pagina een zogenaamd set-statement te gebruiken. Hiermee kan de [[Eigenschap:bannerimage]] een waarde krijgen van het bestand dat als upload in deze wiki staat in de Bestandsnaamruimte. Dit kan via [[Speciaal:Upload]]. Als de foto in de wiki staat, kan er naar verwezen worden door Bestand:<naam foto.extensie> in het statement te zetten, waardoor deze getoond wordt. Hieronder staat een voorbeeld van deze aanroep.	
+
+* [[MediaWiki:MainPageShortcuts|Blauwe blokken op voorpagina bewerken (MainPageShortcuts)]]
+* [[MediaWiki:MainPageIntro|Intro tekst op de voorpagina bewerken(default leeg) (MainPageIntro)]]
+* [[MediaWiki:MainNews|Getoonde nieuwsberichten op home (MainNews)]]
+* [[MediaWiki:FooterLinks|Linker deel van de footer(vrije tekst) bewerken (FooterLinks)]]
+* [[MediaWiki:FooterRechts|Links in de footer(rechterkant) bewerken (FooterRechts)]]
+** De gebruikte iconen staan op https://fonts.google.com/icons
+
+De skin verwacht een aantal standaard pagina’s die in de skin worden gebruikt om de pagina ‘goed’ op te maken. 
+
+[[Bestand:Pagina's om home in te richten.png|alt=Onderliggende pagina's om home in te richten|Onderliggende pagina's om home in te richten]]
+
+
+=== Categorie voor exporteren voorpagina en menu ===
+: <categorytree mode="all" showcount="on">Layout Elements‎</categorytree>
+
+== Banner foto op homepage aanpassen ==
+De banner foto op de homepage kan aangepast worden door een nieuwe versie van het Bestand:BannerImage.jpeg up te loaden. 
+In de [[Hoofdpagina|Hoofdpagina]](nieuwe lege omgeving)(Voor de redactie en publicatie) staat de volgende eigenschap met een verwijzing naar de afbeelding.<pre class="mediawiki">{{#set:bannerimage=Bestand:BannerImage.jpeg}}</pre>Mocht er naar een andere foto verwezen moeten worden, dan kan dat in de [[Hoofdpagina]] aangepast worden.
+
+=== [[MediaWiki:MainPageShortcuts]] ===
+
+De skin verwacht een div “shortcuts” met daarin 2 aantal rows. Per row zijn er 3 shortcut divs nodig, met daarin een link naar de pagina en toelichtende tekst.
+
+'''Voorbeeld:'''
+
+<pre class="mediawiki">&lt;div class=&quot;shortcuts&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;shortcut&quot;&gt;
+[[Hoofdtaak]]
+Korte toelichtende tekst. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+&lt;/div&gt;
+&lt;div class=&quot;shortcut&quot;&gt;
+[[Hoofdtaak]]
+Korte toelichtende tekst. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+&lt;/div&gt;
+&lt;div class=&quot;shortcut&quot;&gt;
+[[Hoofdtaak]]
+Korte toelichtende tekst. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;shortcut&quot;&gt;
+[[Hoofdtaak]]
+Korte toelichtende tekst. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+&lt;/div&gt;
+&lt;div class=&quot;shortcut&quot;&gt;
+[[Hoofdtaak]]
+Korte toelichtende tekst. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+&lt;/div&gt;
+&lt;div class=&quot;shortcut&quot;&gt;
+[[Hoofdtaak]]
+Korte toelichtende tekst. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+=== [[MediaWiki:MainPageIntro]] ===
+Intro tekst op de voorpagina. Deze is standaard leeg. Deze kan ingezet worden voor belangrijke berichten.
+
+'''Voorbeeld''':
+
+<pre class="mediawiki">=GEMMA Online=
+GEMMA staat voor de GEMeentelijke Model Architectuur. Dit is de landelijke referentiearchitectuur voor gemeenten. GEMMA helpt gemeenten om (ICT-)ontwikkelingen in samenhang aan te sturen.</pre>
+
+=== [[MediaWiki:MainNews]] ===
+
+Hiermee worden de nieuwsberichten op home getoond. Dit wordt gedaan op basis van de publicatiedatum. Wanneer je net nieuwe nieuwsberichten hebt gepubliceerd is het van belang om deze pagina te vernieuwen. Anders zijn de nieuwsberichten niet direct zichtbaar op de homepage. 
+
+'''Voorbeeld:'''
+
+<pre class="mediawiki"><div id="newsHeader" class="heading d-flex">
+<h2>GEMMA Nieuws</h2>
+</div>
+<div class="news-block">
+<ul>
+{{#arraymap: {{#ask: [[Categorie:Nieuwsberichten]][[Publicatiedatum beeindiging::>{{CURRENTYEAR}}-{{CURRENTMONTH}}-{{CURRENTDAY2}}]]|limit=3|sort=Publicatiedatum|order=desc|link=none|headers=hide|searchlabel=}}|,|xqqx|
+<li>
+<h4>xqqx</h4>
+<p>{{#show:xqqx|?Korte samenvatting}}</p>
+<span class="footer-news-link">[[xqqx|{{#if: {{#show:xqqx|?Link label}} | {{#show:xqqx|?Link label}} | Lees verder}}]]</span>
+</li>||}}
+</ul>
+<div id="more-news">
+[[Alle nieuwsberichten|Meer nieuws]]
+</div>
+</div>
+[[Categorie:Layout Elements]]</pre>
+
+=== [[MediaWiki:FooterLinks]] ===
+
+De pagina “FooterLinks” toont de tekst in het linker gedeelte van de footer. Dit is een vrij invulbaar tekstpagina.
+
+'''Voorbeeld:'''
+
+<pre class="mediawiki">Voor vragen over de GEMMA Referentiearchitectuur, stuur een bericht naar [mailto:gemmaonline@vng.nl gemmaonline@vng.nl] of stel direct een vraag in de groep [https://forum.vng.nl/do/startpage?id=2332596-737461727470616765 Regie op ICT] op het forum van VNG.</br></br>
+Blijf op de hoogte van het laatste nieuws via de [[Op de hoogte blijven|GEMMA nieuwsbrief]] (1x per kwartaal)
+[[Categorie:Navigatie]]</pre>
+
+=== [[MediaWiki:FooterRechts]] ===
+
+In de footer staan rechts een aantal links. Deze worden opgehaald uit de [[MediaWiki:FooterRechts]]
+
+'''Voorbeeld:'''
+
+<pre class="mediawiki"><div class="col">
+<ul>
+<li>
+[[Toegankelijkheid]]
+</li>
+<li>
+[[Sitemap]]
+</li>
+<li>
+[[Contact]]
+</li>
+</div>
+[[Categorie:Navigatie]]</pre>
+
+
+== Menu ==
+=== Beheren menu-opties ===
+Let op: het menu wordt op drie plekken in verschillende formaten bijgehouden. Zorg ervoor dat de menu-opties synchroon zijn op de redactiepagina's:
+* [[MediaWiki:Sidebar]] - menu
+* [[MediaWiki:Breadcrumbs]] - het kruimelpad
+
+Het synchroon houden van de menu-opties tussen deze pagina's wordt met de hand gedaan.
+
+=== Publiceren menu-opties ===
+De pagina's met menu-opties worden niet door SmartPublish gepubliceerd. 'Publiceren' gaat met knippen en plakken.
+
+* Publiceren [[MediaWiki:Sidebar]]
+** Kopieer alle tekst en plak deze in [https://www.gemmaonline.nl/index.php/MediaWiki:Sidebar GEMMA online MediaWiki:Sidebar]
+** Verwijder de beheeropties
+* Publiceren [[MediaWiki:Breadcrumbs]]
+** Kopieeren en plakken naar [https://www.gemmaonline.nl/index.php/MediaWiki:Breadcrumbs GEMMA online MediaWiki:Breadcrumbs]
+
+ToDo; Het publiceren van de Breadcrumbs zou wel met SmartPublish moeten kunnen.
+
+== Speciale eigenschappen ==
+=== Eigenschap:Relevantpages ===
+
+Deze eigenschap wordt gebruikt om een lijst van relevante pagina’s te tonen onderaan de pagina. Waarde kan bijvoorbeeld zijn:
+
+<pre class="mediawiki">
+* [[Foo]]
+* [[Bar]]
+* [[Ect]]</pre>

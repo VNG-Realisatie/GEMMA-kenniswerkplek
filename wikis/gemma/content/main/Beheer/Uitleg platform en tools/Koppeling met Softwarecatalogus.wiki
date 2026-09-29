@@ -1,0 +1,87 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Uitleg platform en tools]]
+De Softwarecatalogus maakt gebruik van de GEMMA wiki voor het importeren van GEMMA 'stam'tabellen en voor het genereren van views en een exportbestand.
+
+Hiervoor is de [[:GEMMA_wiki:SmartServerPages_(SWCAPI)]] geïnstalleerd. De werking van de SWCAPI is door ArchiXL gedocumenteerd op de help-pagina [[SWC_API_Help]]
+
+{{ToonViewGEMMA|viewid=621d43ba-7ce4-4825-a108-5349916481c3|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}} <!--Wiki koppeling met Softwarecatalogus (ArchiMateView)-->
+
+LET OP: Werkt alleen op een open wiki zoals www.gemmaonline.nl
+* [[Functionele beschrijving list functie|list functie]], voor de gegevenstuitwisseling van GEMMA Online naar Softwarecatalogus.
+* [[Functionele beschrijving view functie|view functie]], aan te roepen vanuit de Softwarecatalogus voor het tonen van gemeentelijke pakketten op een bepaalde view.
+* [[Functionele beschrijving model functie|model functie]], aan te roepen vanuit de Softwarecatalogus voor het exporteren van een gemeentespecifiek ArchiMate model
+
+
+== Configureren SWC ==
+
+[[Help:Instructie beheer Softwarecatalogus en koppeling met de architectuurwiki]]
+
+== Importeren Archimate-model voor Softwarecatalogus ==
+De extensie SmartConnectSoftwarecatalogus bevat alle functionaliteit van SmartConnectArchiMate en breidt deze uit met ondersteuning voor specifieke Softwarecatalogus eigenschappen
+
+Publicatieversie van het Archimate-model
+*filteren op basis van views. 
+** Alleen views waarbij de eigenschap publiceren een bepaalde waarde heeft worden geïmporteerd
+**Elementen die niet op een geïmporteerde view staan, worden uitgefilterd
+*gebruik van een in de architectuurtool beheerde eigenschap [[Eigenschappen_in_GEMMA_ArchiMate-model#Object_ID | Object ID]]
+**alle objecten krijgen in de wiki als ID de waarde van de eigenschap 'Object ID'
+**ID's zijn zo onderdeel van het model, niet van de architectuurtool
+*[[Eigenschappen_in_GEMMA_ArchiMate-model#Overerven_van_relaties | Overerven van relaties]]
+**Door een object de eigenschap GEMMA type='Basiscomponent' te geven, kunnen andere objecten de relaties van dit object overerven
+**Overerving helpt het beheer van het GEMMA ArchiMate-model overzichtelijker te maken en dwingt consistentie af (een set van objecten overerft precies dezelfde set van relaties
+
+Voor de Softwarecatalogus
+* afleiden van directe relaties tussen referentiecomponenten en bijvoorbeeld Bedrijfsfuncties. De directe relaties worden in de Softwarecatalogus gebruikt voor het filteren met facets (bijvoorbeeld de facet bedrijfsfuncties)
+* GEMMA export functionaliteit (genereren AMEFF)
+**geschikt voor merge met Softwarecatalogus AMEFF
+**behouden folders
+*API voor Softwarecatalogus
+**list, view en export
+
+==Exporteren ArchiMate model met pakketten==
+
+De Softwarecatalogus kan met de List export API een GEMMA exportbestand aangevuld met alle pakketten en koppelingen van een gemeente opvragen. Als een gemeenten een export opvraagt gebeurt er onder water dit:
+* Softwarecatalogus maakt een JSON request aan met daarin opgenomen de pakketten en koppelingen van de gemeente
+* Het request wordt gestuurd naar de List export API
+* De wiki vult een GEMMA export aan met de ontvangen pakketten en koppelingen en genereerd een gemeentespecifieke AMEFF XML-bericht
+* het AMEFF XML bericht wordt als antwoord naar de SWC gestuurd
+* en als download aan de gemeente aangeboden.
+
+Hieronder de ArchiMate modellering van de pakketten en hoe deze gerelateerd zijn aan het GEMMA ArchiMate-model
+
+{{ToonViewGEMMA
+|viewid=ae79eab2-ce19-4ad3-adf5-bdbbd1ac3881
+|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--Softwarecatalogus modellering pakketten (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA
+|viewid=ae79eab2-ce19-4ad3-adf5-bdbbd1ac3881
+|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}}<!--Softwarecatalogus modellering pakketten (ArchiMateView)-->
+----
+
+{{ToonTabelVanViewGEMMA
+|viewid=ae79eab2-ce19-4ad3-adf5-bdbbd1ac3881
+|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+|type=Relatie
+|attributen=Toelichting
+|filter=FlowRelationship
+|label=Relaties in AMEFF export
+}}<!--Softwarecatalogus modellering pakketten (ArchiMateView)-->
+
+{{ToonTabelVanViewGEMMA
+|viewid=ae79eab2-ce19-4ad3-adf5-bdbbd1ac3881
+|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+|type=Relatie
+|attributen=Toelichting
+|filter=AssignmentRelationship
+|label=Relaties in AMEFF export
+}}<!--Softwarecatalogus modellering pakketten (ArchiMateView)-->
+
+{{ToonTabelVanViewGEMMA
+|viewid=ae79eab2-ce19-4ad3-adf5-bdbbd1ac3881
+|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+|type=Relatie
+|attributen=Toelichting
+|filter=SpecializationRelationship
+|label=Relaties in AMEFF export
+}}<!--Softwarecatalogus modellering pakketten (ArchiMateView)-->

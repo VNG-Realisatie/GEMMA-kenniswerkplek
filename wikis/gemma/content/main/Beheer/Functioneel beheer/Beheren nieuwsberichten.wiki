@@ -1,0 +1,29 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=niet publiceren
+}}
+[[Category:Functioneel beheer]]Het proces van een nieuwsbrief is als volgt:
+* Maak een nieuwsbericht aan.
+** Geef een Publicatiedatum beëindiging op. Zonder dit veld verschijnt het nieuwsbericht niet in de footer van de website.
+* Via[[MediaWiki:MainNews]] worden de nieuwsberichten op de homepage getoond. Hiervoor wordt gebruik gemaakt van een query die op basis van publicatiedatum de pagina vult. Dit zijn maximaal 3 berichten in de footer.
+* Op [[Alle_nieuwsberichten]] worden alle nieuwsberichten getoond. 
+* Wanneer een Publicatiedatum beëindiging is bereikt, dient het nieuwsbericht handmatig verwijderd te worden. Dit gebeurt niet automatisch! Via de tabel onderaan is na te gaan welke nieuwsberichten een verlopen einddatum hebben.
+* Nieuwsberichten op de homepage worden getoond via de pagina: MediaWiki:MainNews
+
+== Nieuwsbericht maken ==
+'''''Boven het formulier staat uitleg over de velden.'''''
+{{#formlink:form=Element|link type=button|link text=Voeg nieuwsbericht toe|query string=Element[elementtype]=Nieuwsbericht}}
+
+== Verlopen nieuwsberichten ==
+{{#ask: [[Categorie:Nieuwsberichten]]
+[[Publicatiedatum beeindiging::<={{CURRENTYEAR}}-{{CURRENTMONTH}}-{{CURRENTDAY}}]]
+|format=table
+|limit=15
+|mainlabel=bericht
+|?Publicatiedatum
+|?Publicatiedatum beeindiging
+|sort=Publicatiedatum beeindiging
+|order=asc}}
+
+== Beheer van het nieuwsberichten formulier ==
+Nieuwsberichten worden via het element [[Nieuwsbericht]] uit het [[Categorie:Kennismodel_GEMMA_2.0|Kennismodel_GEMMA_2.0]] gemaakt. Wijzigingen aan het formulier vinden plaats [[Nieuwsbericht]]

@@ -1,0 +1,191 @@
+[[Categorie:Schrijven op de wiki]]
+Met semantic mediawiki kunnen de pagina's worden doorzocht met een query. Het resultaat van de query kan getoond worden in lijsten, diverse tabellen of anderzins
+
+Relevante links en documentatie:
+* [https://www.semantic-mediawiki.org/wiki/Help:Semantic_search Help:Semantic_search]
+** [https://www.semantic-mediawiki.org/wiki/Help:Inline_queries Help:Inline_queries]
+** [https://www.semantic-mediawiki.org/wiki/Help:Property_chains_and_paths Printouts and property chains]
+** [https://www.semantic-mediawiki.org/wiki/Help:Ask_syntax/Printout_sorting_order Printout sorting order]
+* [https://opleiding.wikixl.nl/index.php/Semantische_data_bevragen Semantische data bevragen (WikiXL opleiding)]
+* querybuilder [[Special:Ask]]
+* Voorbeelden
+** [[Overzicht buitengemeentelijke voorzieningen]]
+** [[GEMMA standaardenlijst]]
+** [[Overzicht alle referentiecomponenten]] - gemaakt als extensie, source code alleen zichtbaar voor ArchiXL
+
+== Querybuilder ==
+Met [[Special:Ask]] kunnen queries gemaakt en getest worden. Makkelijk is dit niet, het vereist dat je weet hoe de data is opgeslagen. De querybuilder helpt daar niet bij.
+
+=== Maken query ===
+* toon alle standaarden
+** Voorwaarde: <nowiki>[[Categorie:Standaarden]] [[Occurs in model.Semantictitle::GEMMA]]</nowiki>
+** geef alle pagina's met de categorie Standaarden met de eigenschap <code>occurs in model=GEMMA</code>
+** open één van de standaarden in edit mode om de eigenschappen te zien
+*** ga naar {{ToonElement
+  |id=04631b15-e2ad-4353-8cb0-367891b99eb3
+  |modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418 
+}}.
+*** Open editor Weergaven > brontekst bewerken
+*** ipv de semantictitle kan de paginanaam gebruikt worden <nowiki>[[Occurs in model::GEMMA/id-2b2b88ba-8efe-46d3-8b40-47af290bc418]]</nowiki>
+* query en opmaak kan als code gekopieerd worden. Open de tab <nowiki>[code]</nowiki> en knip en plak de query in een pagina
+
+'''Printouts and property chains'''
+The property chain feature allows to select pages and values with help of the dot chain syntax.
+
+Chaining of entities is supported:
+* As part of a query condition (e.g. <nowiki>[[Located in.Capital of::Foo]]</nowiki>)
+* Using a query printout1(e.g. <nowiki>|?Located in.Capital of</nowiki>)or
+* Defining a sort parameter2 (e.g. <nowiki>|sort=Located in.Capital of</nowiki>)
+
+One requirement for both the condition and the print request is that chain members are to be page type entities while the last member is nonrestrictive to any type. The reason is that in order for the traversal process to be successful, chain member nodes are required to be referable which is not possible for primitive data values such as numbers, dates, or text.
+
+It should be noted that the chain syntax on a query condition and its application on a result printout are technically two distinct operations that can not be compared with each other. The first relates to the '''filtering''' of results and the latter being a '''traversal process'''.
+
+=== Tonen in tabel of lijst=== 
+
+Gebruik template om regel in tabel op te maken
+* [https://www.semantic-mediawiki.org/wiki/Help:Use_templates_to_create_tabular_output Help:Use_templates_to_create_tabular_output]
+* [https://www.semantic-mediawiki.org/wiki/Category:Query_template Help Category:Query_template]
+* [https://www.semantic-mediawiki.org/wiki/Demo:Examples/Queries/Template_to_display_a_table_of_images Template_to_display_a_table_of_images]
+
+Met de opties kan een weergave formaat gekozen worden.
+* Brede tabel
+* Gegevenstabellen - datatable formaat met mogelijkheden voor filtering
+** datatables-searchpanes: aanvinken voor filters
+** datatables-searchpanes.columns: filter tonen alleen voor de kolommen 1,2 (telling start bij 0)
+* Lijsten, zoals een bullet list (of unordered list UL)
+query en opmaak kan als code gekopieerd worden. Deze code plak je in een pagina om daar de tabel te tonen
+
+== Voorbeelden ==
+
+Code van gemaakt met [[Special:Ask]]. 
+* regels met vierkante haken zijn de query
+* regels met vraagteken zijn de printvoorwaarden
+* overige zijn opties, hier de opties van <code>format=datatables</code>
+<pre>{{#ask: [[Categorie:Standaarden]] 
+[[Occurs in model.Semantictitle::GEMMA]]
+ |?Beheerder
+ |?Compliancy
+ |?Afkorting
+ |format=datatables
+ |limit=20
+ |offset=0
+ |link=all
+ |sort=Display title of
+ |order=asc
+ |headers=show
+ |mainlabel=Standaarden
+ |searchlabel=... meer resultaten
+ |class=sortable wikitable smwtable
+ |sep=,&#32;
+ |prefix=none
+ |datatables-info=1
+ |datatables-lengthchange=1
+ |datatables-ordering=1
+ |datatables-paging=1
+ |datatables-searching=1
+ |datatables-pagingtype=full_numbers
+ |datatables-pagelength=20
+ |datatables-lengthmenu=10, 20, 50, 100, 200
+ |datatables-scroller.displaybuffer=50
+ |datatables-dom=lfrtip
+ |datatables-responsive=1
+ |datatables-searchpanes=1
+ |datatables-searchpanes.initcollapsed=1
+ |datatables-searchpanes.collapse=1
+ |datatables-searchpanes.threshold=0.6
+ |datatables-searchpanes.mincount=1
+}}\n</pre>
+
+=== Standaardenlijst ===
+{{#ask: [[Categorie:Standaarden]] 
+[[Occurs in model.Semantictitle::GEMMA]]
+ |?Beheerder
+ |?Compliancy
+ |?Afkorting
+ |format=datatables
+ |limit=20
+ |offset=0
+ |link=all
+ |sort=Display title of
+ |order=asc
+ |headers=show
+ |mainlabel=Standaarden
+ |searchlabel=... meer resultaten
+ |class=sortable wikitable smwtable
+ |sep=,&#32;
+ |prefix=none
+ |datatables-info=1
+ |datatables-lengthchange=1
+ |datatables-ordering=1
+ |datatables-paging=1
+ |datatables-searching=1
+ |datatables-pagingtype=full_numbers
+ |datatables-pagelength=20
+ |datatables-lengthmenu=10, 20, 50, 100, 200
+ |datatables-scroller.displaybuffer=50
+ |datatables-dom=lfrtip
+ |datatables-responsive=1
+ |datatables-searchpanes=1
+ |datatables-searchpanes.initcollapsed=1
+ |datatables-searchpanes.collapse=1
+ |datatables-searchpanes.threshold=0.6
+ |datatables-searchpanes.mincount=1
+}}
+
+=== Standaardenlijst met versies ===
+{{#ask: [[Categorie:Standaarden]] 
+[[Occurs in model.Semantictitle::GEMMA]]
+ |?=Standaard
+ |?-has target element.has source element.Versieaanduiding=Standaardversie
+ |?-has target element.has source element.Status=Status versie
+ |?GEMMA status
+ |format=datatables
+ |limit=10
+ |offset=0
+ |link=all
+ |sort=Display title of
+ |order=asc
+ |headers=show
+ |mainlabel=-
+ |searchlabel=CSV
+ |class=sortable wikitable smwtable
+ |sep=,&#32;
+ |prefix=none
+ |datatables-info=1
+ |datatables-lengthchange=1
+ |datatables-ordering=1
+ |datatables-paging=1
+ |datatables-searching=1
+ |datatables-pagingtype=full_numbers
+ |datatables-pagelength=20
+ |datatables-lengthmenu=10, 20, 50, 100, 200
+ |datatables-scroller.displaybuffer=50
+ |datatables-dom=lfrtip
+ |datatables-responsive=1
+ |datatables-searchpanes.collapse=1
+ |datatables-searchpanes.threshold=0.6
+ |datatables-searchpanes.mincount=1
+}}
+
+===Overzicht architectuurprincipes (source=archimate)===
+
+In deze tabel wordt gebruik gemaakt van een extra ArchiMedes parameter <code>source=archimate</code>. Onbekend hoe dit werkt en waar de gedocumenteerd is. Het maakt het aflopen en tonen van relaties wel heel veel eenvoudiger.
+
+{{#ask: [[Category:Principles]] [[ID::+]] [[Occurs in model.Object ID::2b2b88ba-8efe-46d3-8b40-47af290bc418]]\n|mainlabel=-
+|?ID
+|?=Architectuurprincipe
+|?Documentation=Stelling
+|?Toelichting=Rationale
+<!--|?Implicatie
+|?Opmerking-->
+|?RealizationRelationship=Kwaliteitsdoel(en)
+|?RealizationRelationship.InfluenceRelationship=Kernwaarde
+<!-- |?Review 31-10-2022 -->
+|sort=ID
+|order=asc
+|source=archimate
+|headers=plain
+|limit=5
+|class=wikitable word-break-all sortable
+}}

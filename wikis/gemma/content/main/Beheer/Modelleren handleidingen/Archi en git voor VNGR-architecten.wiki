@@ -1,0 +1,332 @@
+{{Publicatie
+|Redactiestatus=In ontwikkeling
+|Paginastatus=niet publiceren
+}}
+[[Category:Modelleren handleidingen]]
+__TOC__
+Deze pagina is een aanvulling op [[Archi en git]] specifiek voor architecten die werken binnen VNG Realisatie (VNGR) aan de doorontwikkeling en het onderhoud van het GEMMA ArchiMate-model. Lees eerst [[Archi en git]] voor de basis: Archi installeren, een archi-repository bekijken/gebruiken en schrijftoegang regelen. Op deze pagina staat alleen de aanvullende informatie die specifiek is voor VNGR-architecten: extra tooling, samenwerken met git-branches, en het inrichten en beheren van Archi-repositories op GitHub.
+
+=== Extra tooling voor VNGR ===
+{{#accordionItem:
+|title=Bestanden delen via Microsoft Teams
+|content=Er zijn drie teams waarin bestanden tussen VNGR-architecten gedeeld worden:
+
+* Architectuur GEMMA
+** GEMMA releases. AMEFF-bestanden voor import in de wiki
+* Architectuurtooling
+** jArchi-plugin in de folder Archi (actuele versie), zie het item "jArchi-plugin en GEMMA-scripts" hieronder
+* GEMMA online
+** Documentatiebeheer (voor zover niet op de wiki beschikbaar)
+** Waarderingsonderzoeken
+** etc.
+|icon=folder_shared
+}}<!--
+
+-->{{#accordionItem:
+|title=Oudere Archi-versie voor ArchiMate 2.1-import
+|content=Om '''ArchiMate 2.1'''-bestanden te kunnen importeren, moet je een oude Archi-versie installeren. Deze is niet meer beschikbaar op internet. Het installatiebestand is in onze Teams-omgeving nog beschikbaar.
+
+* Installatiebestand staat op Teams in de folder [https://teams.microsoft.com/_#/files/Tooling?threadId=19%3A3dbb7c5deaba43fa9bd2fb1912844b66%40thread.skype&ctx=channel&context=Archi Archi 3.3.2]
+* Als je geen toegang hebt tot deze folder, stuur een bericht aan mark.backer@vng.nl
+|icon=history
+}}<!--
+
+-->{{#accordionItem:
+|title=jArchi-plugin en GEMMA-scripts
+|content=Met de jArchi-plugin kun je met scripts een architectuurmodel lezen en bewerken. De scripting-plugin is alleen beschikbaar voor Archi-donateurs. VNG Realisatie is Archi-donateur.
+
+GEMMA- en projectarchitecten kunnen de jArchi-plugin downloaden vanuit het Team [https://vvng.sharepoint.com/:f:/r/sites/UnitArchitectuurenStandaarden/Gedeelde%20documenten/Tooling/Archi/Archi%20(actuele%20versie)?csf=1&web=1&e=SnuYfM Architectuurtooling, folder Archi (actuele versie)].
+
+Voor het configureren van scripting in Archi en waar je community-scripts vindt, zie het item "Scripting met jArchi" op [[Archi en git]].
+
+'''Scripts voor de GEMMA'''
+
+In de repository [https://github.com/VNG-Realisatie/archi-scripts archi-scripts] vind je de scripts die worden gebruikt voor het beheren van de GEMMA en projectarchitecturen. 
+
+De scripts maken onder water gebruik van scripts in de '_lib' folder. Om de scripts te kunnen draaien moet je een volledige kopie van de repository lokaal neerzetten. Manieren om dit te doen:
+# open de in Archi geconfigureerde Scripts folder (zie Edit &gt; Preferences &gt; Scripting)
+# download de [https://github.com/VNG-Realisatie/archi-scripts archi-scripts] repository
+## Zip file
+##* groene Code button
+##* kies Download ZIP
+## met git clone
+##* open een command prompt in je lokale Scripts folder
+##* <code>git clone git@github.com:VNG-Realisatie/archi-scripts.git</code> (vereist SSH key)
+
+Welke scripts er zijn en hoe deze werken, wordt gedocumenteerd in de Readme van de repository (work in progress).
+|icon=code
+}}{{#accordionShow:}}
+
+=== Samenwerken met git-branches in de GEMMA ===
+Archi maakt voor versiebeheer en het samenwerken gebruik van de [https://github.com/archimatetool/archi-modelrepository-plugin/wiki coArchi] plugin die gebaseerd is op [https://en.wikipedia.org/wiki/Git git].
+: ''An extension to Archi that provides collaborative features, allowing you to share a model on a repository and work on it with other users.''
+
+{{#accordionItem:
+|title=Branches in de GEMMA: master, develop en feature
+|content=Voor het ontwikkelen en onderhouden van de GEMMA ArchiMate-modellen maken we gebruik van de git-flow [https://nvie.com/posts/a-successful-git-branching-model/ A successful Git branching model]. De GEMMA kent dan de volgende branches:
+* '''master''', bevat de gepubliceerde stabiele releases
+** dit is de hoofdbranch, die iedere repository heeft
+** releases worden vanuit de master-branch uitgevoerd nadat alle relevante wijzigingen uit de develop branch zijn gemerged
+* '''develop''', bevat de meest actuele opgeleverde nieuwe onderdelen.
+** hiervandaan worden feature branches aangemaakt.
+** als een feature is afgerond, wordt deze weer in de develop-branch gemerged
+* '''feature''' branches; voor grote wijzigingen op de GEMMA wordt een feature branche gemaakt
+** de naam van een feature branches refereert aan wat gemaakt wordt. Bijvoorbeeld de feature "Impactanalyse BRK" of "WOO"
+
+Voordelen van deze werkwijze is dat releases gecontroleerd samengesteld kunnen worden door de 'maintainers' van de master branche. Ondertussen kunnen architecten onafhankelijk van de release-cycle werken aan features. Zodra een feature af is wordt deze gemerged met de develop branche om te worden opgenomen in een volgende release.
+
+We maken geen gebruik van release-branches en hotfix-branches. Voor nu lijkt dat relevanter voor softwareontwikkeling dan voor architectuurmodellen.
+|icon=account_tree
+}}<!--
+
+-->{{#accordionItem:
+|title=Wanneer maak je een feature-branche
+|content=Het gebruik van een aparte feature branche is eigenlijk alleen noodzakelijk als je een grote wijziging doorvoert op gepubliceerde delen van de GEMMA.
+
+Redenen voor een feature branche:
+* als iedereen tegelijk wijzigingen doorvoert in de development branche is de kans groot op merge conflicten
+* je kunt je model niet bijwerken naar de laatste actuele versie. Een refresh vereist dat je eerst een commit uitvoert, een commit van een grote wijziging die nog WIP is.
+
+Wat is dan een kleine, dan wel een grote wijziging?
+
+'''Kleine wijziging''' <br>
+Een kleine wijziging is een wijziging die niet leidt tot conflicten met andere wijzigingen.
+* heeft een korte doorlooptijd van maximaal enkele dagen.
+* bestaat uit toevoegingen (een nieuwe standaardversie, een nieuwe view, ...)
+** een nieuwe standaardversie moet ook worden toegevoegd aan de (grote) publicatie-view. Check even met collega's of niet iemand anders deze ook wijzigt.
+* de wijziging kan in de eerstvolgende release mee.
+
+'''Grote wijziging''' <br>
+Een grote wijziging is een fundamentele wijziging in de GEMMA
+* structuurwijziging in GEMMA modellering
+* verwerken projectresultaten in de GEMMA
+* veel wijzigingen die als één geheel mee kunnen in een release
+* doorlooptijd van meerdere weken
+
+Samengevat:
+: ''Een wijziging is groot als je er langer over doet dan een paar dagen en waarvan de tussenstand niet gepubliceerd kan worden.''
+|icon=call_split
+}}<!--
+
+-->{{#accordionItem:
+|title=Een feature-branche aanmaken in Archi
+|content=Zorg dat je in Archi van het model waaraan je werkt de branch '''development''' als '''current''' hebt.
+* haal eerst de laatste versie van het model op uit de GitHub repository.
+** Selecteer (iets van) het model en ga naar menu item: Collaboration > Refresh Model
+* open de tab Branches view
+** als je deze tab niet ziet of kunt vinden, ga naar menu item: Collaboration > Toggle Branches view
+* als de development branche niet '''current''' is
+** dubbelklik op '''development'''
+** mogelijk moet je je wijzigingen in jouw actieve branch eerst nog committen
+** geduld, dit duurt even voor een groot model.
+** je ziet nu vetgedrukt '''development (current)'''
+* rechterklik op branche '''development (current)''' (of +-icoontje) > Add New Branch to Current Branch
+* kies een zinvolle naam voor je wijziging
+|icon=fork_right
+}}<!--
+
+-->{{#accordionItem:
+|title=Git troubleshooting
+|content='''Merge Branch error: File is not directory or folder.xml not exist'''
+
+De fout [https://forum.archimatetool.com/index.php?topic=988.0 File is not directory or folder.xml not exist] is eigenlijk niet op te lossen indien deze optreed bij het mergen van een feature-branch die lang heeft open gestaan. Een deel van de wijzigingen zullen opnieuw moeten worden uitgevoerd.
+
+Fout is ook opgetreden bij het mergen van development met master. Oplossing hier was om master te vervangen door development
+* zie [https://stackoverflow.com/questions/2862590/how-to-replace-master-branch-in-git-entirely-from-another-branch How to replace master branch in Git, entirely, from another branch?]
+
+<pre>
+git checkout master
+git pull
+git checkout develop
+git merge -s ours master
+git checkout master
+git merge develop
+</pre>
+|icon=troubleshoot
+}}{{#accordionShow:}}
+
+=== Archi-repositories inrichten en beheren op GitHub ===
+Beheerdocumentatie voor het inrichten van Archi-repositories op GitHub. Wil je met meerdere mensen in Archi aan één ArchiMate-model samenwerken, dan zul je het model in een gedeelde archi-repository moeten publiceren. Samenwerken vereist ook dat al deze mensen toegang tot de repository hebben en wijzigingen moeten kunnen publiceren.
+
+De VNGR Archi-repositories worden gedeeld op GitHub onder de organisatie [https://github.com/VNG-Realisatie VNG Realisatie]. Afhankelijk van de toegangsbeveiliging kun je de archi-repositories op GitHub bekijken. De [https://github.com/VNG-Realisatie/GEMMA-Archi-repository GEMMA Archi-repository] is voor iedereen toegankelijk.
+
+{{#accordionItem:
+|title=Uitgangspunten en verschil met API-standaarden repositories
+|content=Voor gemeenten is het beheer van Archi-repositories en de API-standaarden repositories zoveel mogelijk gelijk
+* omgang met Issues
+* aanvragen toegang
+* ..
+
+Een Archi-repositorie is echter fundamenteel anders dan een API-standaard repositorie. Voornaamste verschil is dat Archi alle git-acties onder water uitvoert.
+
+'''Samenhang met API-standaarden (ToDo)'''
+
+Maken verwijzingen over en weer
+# Afstemmen met Robert dat de github pages van API-standaarden verwijzen naar de Archi-repositories én naar GEMMA online
+# [https://github.com/VNG-Realisatie/gemma-zaken/blob/master/LICENCE.md gemma-zaken EUPL Licence]
+
+Michiel en Robert hebben op GitHub gedocumenteerd hoe het team API-standaarden met git omgaat.
+Zie [https://vng-realisatie.github.io/API-Kennisbank/ API-Kennisbank]
+
+Maar ook [https://github.com/VNG-Realisatie/API-Kennisbank/blob/master/GitHub%20tutorial/github_tutorial.md github_tutorial]
+
+Aansluiten op [https://github.com/VNG-Realisatie/api-beheer/blob/master/doc/Standaard-inrichting-GitHub-GitLab.md VNGR Standaard-inrichting-GitHub-GitLab.md]
+Eigenlijk is het de standaard inrichting voor een API-standaard
+
+'''Verschillen inrichting API- en Archi-repository'''
+
+Verschil vereist voor Archi-repositories
+* Geen initiele content; Readme maken na initialisatie met Archi
+* Geen initiele structuur; folders worden aangemaakt door Archi
+* GitFlow; in Archi gebruiken we master, develop en feature. Overige niet
+** Nu een mismatch tussen GitHub en Archi branche namen. GitHub start met 'main', Archi met 'master'
+
+Af te stemmen
+* Toegangsrechten op Archi-repositories zijn ingericht met GitHub-teams
+* gebruik github pages vs GEMMA online voor documentatie
+** wat hoort bij de GEMMA en dus op GEMMA online
+** wat wordt beschreven op GitHub (pages)
+*** Issues
+*** Licence
+*** werken met GitHub. Maar veel geldt niet voor Archi ..
+|icon=rule
+}}<!--
+
+-->{{#accordionItem:
+|title=Een nieuwe Archi-repository aanmaken (checklist)
+|content=Zie [https://github.com/archimatetool/archi-modelrepository-plugin/wiki/Understand-the-Basics coArchi Understand-the-Basics]
+
+'''Checklist'''
+
+# Start met lege repository
+## maak een lege repository, zonder readme of licentie file
+# About rechtsbovenin
+## geef korte omschrijving
+## zet link naar VNG project / GEMMA online
+## weghalen vink bij releases, packages en deployments
+### het model wordt beheerd vanuit Archi, niet vanuit GitHub.
+### je kunt met git het model invalid maken. Gebruik Archi publish
+# publiceren model
+## openen met Archi en een eerste keer publiceren
+## pas na eerste publish kun je eventueel een readme en/of licentie file aanmaken
+# tab settings rechtsbovenin
+## General
+### maak de release branch de default branch. Voor de GEMMA is dit de master branch
+#### let op; de readme moet staan in de default branche (in een andere branch is deze niet zichtbaar)
+#### readme wordt bijgehouden op github. Archi kent deze niet
+### Onderin onder 'Danger zone - change repository visibility'. Maak de repository eventueel private.
+# Zie hieronder verder
+## Toegangsbeveiliging
+## Branches
+|icon=checklist
+}}<!--
+
+-->{{#accordionItem:
+|title=Toegangsbeheer inrichten
+|content=De toegang tot de Archi-repositories wordt zoveel mogelijk verleend met behulp van [https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams GitHub-teams].
+
+Algemeen
+* Publieke repositories zijn zonder extra toegangsrechten te lezen.
+* Private repositories zijn alleen te benaderen met minimaal read-rechten
+* Voor schrijven in een repository zijn altijd minimaal write-rechten vereist
+
+'''GitHub teams'''
+
+De GitHub teams die gebruikt worden voor toegang tot de archi-repositories zijn als volgt aangemaakt
+
+* [https://github.com/orgs/VNG-Realisatie/teams/archi archi] - iedereen die toegang nodig heeft tot VNGR Archi-repositories
+** [https://github.com/orgs/VNG-Realisatie/teams/archi-vngr archi-vngr] - alle voor VNG werkzame architecten (projecten, GEMMA, ...)
+*** [https://github.com/orgs/VNG-Realisatie/teams/archi-gemma archi-gemma] - alle architecten die werken aan de GEMMA repositories (veelal KCA)
+**** [https://github.com/orgs/VNG-Realisatie/teams/archi-gemma-admin archi-gemma-admin] voor de beheerders van de GEMMA-repositories
+
+Van onder naar boven zijn de teams sub-team van het bovenliggende team. Een sub-team overerft de rechten van de bovenliggende teams. Oftewel de leden van het [https://github.com/orgs/VNG-Realisatie/teams/archi-gemma archi-gemma] zijn tevens lid van de bovenliggende teams archi-VNG en archi.
+
+Streven is het beheer overzichtelijk te houden, mensen worden lid van één van de archi-teams en daarmee zijn de rechten verdeeld.
+
+'''Repository en toegangsrechten'''
+
+Per repository wordt vastgelegd welke accounts en/of teams toegangsrechten hebben op de repositorie.
+
+Voor GEMMA Archi-repositories geldt de volgende rechten toekenning
+* er worden in principe geen rechten op account toegekend. Maak mensen lid van één van bovenstaande teams.
+* het team [https://github.com/orgs/VNG-Realisatie/teams/archi archi] krijgt read-rechten
+* het team [https://github.com/orgs/VNG-Realisatie/teams/archi-gemma archi-gemma] krijgt write-rechten
+* het team [https://github.com/orgs/VNG-Realisatie/teams/archi-gemma-admin archi-gemma-admin] krijgt admin-rechten
+Zie [https://github.com/VNG-Realisatie/GEMMA-Archi-repository/settings/access toegangsrechten tot de GEMMA Archi-repository] als voorbeeld
+
+Voor Project Archi-repositories geldt de volgende aanpak
+* projectleden worden lid van het team [https://github.com/orgs/VNG-Realisatie/teams/archi-vngr archi-vngr] (en krijgen daarmee leesrechten op GEMMA repositories en alle project-repositories)
+* het team [https://github.com/orgs/VNG-Realisatie/teams/archi archi] of [https://github.com/orgs/VNG-Realisatie/teams/archi-vngr archi-vngr] krijgt read-rechten
+* minimaal 1 van de projectleden krijgt admin-rechten op zijn account
+* als het een groot project is met veel leden, dan is het het waard een '''archi-<project>''' team aan te maken.
+** de admin geeft de overige projectleden write-rechten geven tot de project Archi-repository, of op hun account of via het team
+
+Zie [https://github.com/VNG-Realisatie/WOZ-ArchiMate-repository/settings/access WOZ-ArchiMate-repository toegang] als voorbeeld
+
+'''Bekijken repositories en toegangsrechten'''
+
+Bij een teams kun je zien welke repositories het team toegangsrechten hebben gegeven. Ga bijvoorbeeld naar [https://github.com/orgs/VNG-Realisatie/teams/archi-gemma/repositories archi-gemma/repositories] voor een lijst van de GEMMA repositories
+
+Bij een repository kun je zien welke teams en accounts toegang hebben. Zie [https://github.com/VNG-Realisatie/GEMMA-Archi-repository/settings/access toegangsrechten tot de GEMMA Archi-repository] als voorbeeld
+
+'''Eigenaar repositories en teams'''
+
+Er zijn op GitHub nu [https://github.com/orgs/VNG-Realisatie/teams 42 teams] en [https://github.com/orgs/VNG-Realisatie/repositories 130 repositories] aangemaakt.
+* Wie is eigenaar van de VNG Realisatie organisatie?
+* Wie zijn de eigenaren van de nu aangemaakte teams en repositories?
+* Wat is verouderd, niet meer relevant?
+* ...
+
+In de VNGR organisatie heeft meerdere mensen met owner-rechten. Owners kunnen nieuwe repositories aanmaken en hebben alle toegangsrechten tot bestaande repositories.
+|icon=admin_panel_settings
+}}<!--
+
+-->{{#accordionItem:
+|title=Branches en protected branches configureren
+|content=In Archi kunnen branches worden aangemaakt. Doe dit als er met meerdere mensen in de repository wordt samengewerkt. Branches hebben meerwaarde als je een grote wijziging wilt doorvoeren, zonder je collega's in de weg te zitten.
+
+Als je een laagdrempelige repository wilt delen waarin iedereen gelijke rechten heeft, kun je voor een eenvoudigere git-flow kiezen. Bijvoorbeeld geen gebruik van branches en iedereen wijzigt rechtstreeks in master.
+
+'''Aanmaken 'develop' branche met Archi'''
+
+* Controleer of alle wijzigingen van de branche gepubliceerd
+* maak - indien deze ontbreekt - een nieuwe branch 'develop' aan.
+* publiceer het model vanuit de branche develop
+* in het window Branches heeft de branche 'develop' de status 'available'
+
+'''Voor GEMMA'''
+
+Wijzigingen worden nooit direct doorgevoerd in de master branche.
+
+Kiezen default branche GitHub
+* open de repository
+* Settings tab bovenin
+* Branches - kies de master branch als default.
+** een bezoeker op GitHub zie dan altijd de release-versie van het model.
+** de readme hoeft alleen in de master branche te worden onderhouden
+** let op: Archi zal het architectuurmodel nu default openen in de 'master' branche als je de repository importeert. Om wijzigingen door te voeren moet je in Archi eerst de develop branche kiezen.
+
+'''Optie - protected branches'''
+
+Default zijn alle branches van een repository op GitHub open.
+
+Maak van de master-branch een protected branch.
+Alleen het team archi-gemma-admin mag wijzigingen doorvoeren in de master-branch
+
+Met deze default mogen alleen mensen met Admin-rechten wijzigingen publiceren naar master en branches mergen in de master-branch.
+|icon=shield
+}}<!--
+
+-->{{#accordionItem:
+|title=Issue-templates inrichten
+|content=Aanmaken template voor het melden van fouten en aanvullingen op de GEMMA
+* GEMMA repository > Settings > General > [https://github.com/VNG-Realisatie/GEMMA-Archi-repository/issues/templates/edit templates/edit]
+** feature template voor aanvullingen
+** bug template voor fouten
+
+Zie ook [https://github.com/VNG-Realisatie/gemma-zaken/blob/master/CONTRIBUTING.md gemma-zaken Contributing EN]
+Vanuit gemma-zaken readme [https://vng-realisatie.github.io/gemma-zaken/doorontwikkeling/ Doorontwikkeling]
+
+Deze gebruiken: [https://github.com/VNG-Realisatie/API-Kennisbank/blob/e0d129565f8b7adc3b0b1e9963f3c317b460f681/CONTRIBUTING.md kennisbank Contributing]. Met onderliggend github_tutorial en code of conduct.
+|icon=bug_report
+}}{{#accordionShow:}}

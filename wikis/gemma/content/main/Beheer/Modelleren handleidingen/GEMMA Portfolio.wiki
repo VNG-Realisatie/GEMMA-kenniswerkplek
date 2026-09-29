@@ -1,0 +1,21 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Eindredactiepaginas,
+}}
+[[Categorie:Modelleren handleidingen]]
+In dit model staan de producten die behoren tot GEMMA en hun definitie. Let op dat dit geen producten die in een diagram of view zijn terug te vinden.  Dat geldt vooral voor de onderdelen behoren tot de Enterprise architectuur. Deze bevat weer "submodellen" die op hun beurt weer bestaan uit Principes, Elementen, Relaties (zie hieronder), Patronen en Views. In deze views kunnen dan ook elementen voorkomen uit andere (sub)modellen. Bijvoorbeeld een View met Bedrijfsfuncties met daarop afgebeeld Referentiecomponenten. Welke views er zijn, is weer te zien op [[Overzicht GEMMA architectuurviews|Overzicht GEMMA Views]].
+
+{{ToonViewGEMMA|viewid=938eb14e-a6e8-44eb-a56b-0f75c444dab0|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}}<!-- GEMMA portfolio (ArchiMateView)--> 
+
+{{:Overzicht portfolio producten}}
+
+<!-- 
+{{ToonTabelVanViewGEMMA|viewid=938eb14e-a6e8-44eb-a56b-0f75c444dab0|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}}
+
+<div class="hcolours mw-collapsible mw-collapsed">
+==Lijst van definities==
+<div class="mw-collapsible-content">
+{{ToonTabelVanViewGEMMA|viewid=938eb14e-a6e8-44eb-a56b-0f75c444dab0|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|filter=BusinessObjects}}
+</div>
+</div> -->

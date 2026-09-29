@@ -1,0 +1,44 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Uitleg platform en tools‎]]
+== Ketentest koppeling ==
+
+===Testmodel===
+Voor het testen van de wiki import en de koppeling met de Softwarecatalogus is het ArchiMate-model {{ToonElement|id=d7cafdc5-5918-4257-80a3-777aac2705d0|modelid=d7cafdc5-5918-4257-80a3-777aac2705d0}}<!-- GEMMA nieuw elan import- en publicatietest (published) --> gemaakt.
+
+Het testmodel bevat de een subset van de GEMMA plus enkele andere specifieke testviews. De GEMMA subset is zo samengesteld dat alle import en publicatiefnctionaliteit van de wiki wordt geraakt:
+* Dit testmodel bevat alle eigenschappen die vereist zijn voor de Softwarecatalogus.
+* Het testmodel bevat de afgesproken manier van [[Modelleren volgens kennismodel]] voor filtering en overerving in de import.
+
+Het GEMMA subset in het testmodel wordt op dezelfde manier gemaakt en bijgewerkt als een projectmodel (zie [[GEMMA Kernmodel en Projectarchitecturen]])
+
+Stappen voor het bijwerken van het Testmodel met de GEMMA subset
+# In het GEMMA model
+## Actualiseer de views in de map Views > Projectarchitecturen > GEMMA import en publicatietest (op deze views staat de subset van de GEMMA met alle te testen modelleringen)
+## Selecteer de map en draai het script Beheren > createProjectmodel
+## Bewaar het aangemaakte projectmodel (Projectmodel <naam geselecteerde map)
+# In het testmodel
+## Selecteer het {{ToonElement|id=d7cafdc5-5918-4257-80a3-777aac2705d0|modelid=d7cafdc5-5918-4257-80a3-777aac2705d0}} model
+## File > Import > Another model into selected model: het zojuist bewaarde projectmodel. Alle \"Van GEMMA views\" zijn door Archi bijgewerkt, inclusief alle op deze views getoonde objecten.
+## Commit en publiceer het bijgewerkt testmodel
+# Het met het script aangemaakte projectmodel kan worden verwijderd.
+
+===Testen API===
+
+De door de wiki aangeboden SWC API kan direct vanuit de browser worden aangeroepen. Het output van een API call wordt dan als JSON in de browser getoond. Ga naar de pagina [[Testen SWC API]] voor het op deze wijze controleren of bekijken van de API output
+
+Zie [[SWC API Help]] voor de documentatie
+
+Is dit generiek voor alle SWC gebruikers?
+* pagina bevat nu ook ontwikkel en test servers. In principe hebben wij daar geen toegang
+* Aanroep List view API voor Projectmodellen ontbreekt
+
+Met een php-sjabloon worden URL's van servers opgehaald. 
+* Deze zijn verouderd voor test en staging
+** <code><nowiki>{{#servernaam: staging publicatie}}{{SCRIPTPATH}}</nowiki></code> wijst naar {{#servernaam: staging publicatie}}{{SCRIPTPATH}}
+
+Studiepagina's, zie Mark versies voor aanvullingen, verbeteringen en probeersels
+* [[Testen SWC API]] > [[Testen SWC API Mark]]
+* [[Sjabloon:TabelTestAPIv2]] > [[Sjabloon:TabelTestAPIvMark]]
+* [[Testen SWC API aantallen]] > [[Testen aantallen GEMMA]]

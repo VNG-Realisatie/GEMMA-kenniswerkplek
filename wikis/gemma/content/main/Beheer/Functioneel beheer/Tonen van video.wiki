@@ -1,0 +1,24 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=niet publiceren
+}}
+[[Category:Functioneel beheer]]
+=== Toevoegen van video(youtube)===
+Met behulp van de widget-extensie is het mogelijk om HTML te ontsluiten op wikipagina's. Om youtube-video's te tonen is de pagina [[widget:YouTube]] aangemaakt. Een youtube-video op een pagina tonen gaat als volgt: 
+<pre>{{#widget:YouTube|id=8smGdowB4-8}}</pre>
+{{#widget:YouTube|id=8smGdowB4-8|width=800|height=600|}}
+
+Er zijn verschillende parameters die meegegeven kunnen worden:
+Het startpunt van de video kan bepaald worden door "|start=seconden" toe te voegen. In het voorbeeld start de video op het moment dat de video 300 seconden verder is.
+<pre>{{#widget:YouTube|id=Ukytqe9pwDM|start=300}}</pre>
+In plaats van één video kan ook een playlist aangeroepen worden:
+<pre>{{#widget:YouTube|playlist=PL6FD8256CD24CFF1F}}</pre>
+Is de breedte en hoogte anders dan de standaard waarden width=425 & height=355 dan zijn deze aan te passen. 
+<pre>{{#widget:YouTube|playlist=PL6FD8256CD24CFF1F|height=525|width=630}}</pre>
+
+{{#widget:YouTube|id=yWEOZOgzygw}}
+
+== Video's op GEMMA Online ==
+De video's die worden gepubliceerd via YouTube worden door team Communicatie geupload als een verborgen video. Dan zijn deze niet vindbaar via het internet. De volgende video's zijn er voor de GEMMA:
+* Wat is GEMMA? - https://www.youtube.com/watch?v=yWEOZOgzygw
+* Notificatieservice - https://www.youtube.com/watch?v=AVGwTXzyCjk

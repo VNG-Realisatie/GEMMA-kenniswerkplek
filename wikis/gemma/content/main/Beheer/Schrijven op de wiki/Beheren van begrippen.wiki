@@ -1,0 +1,41 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's, 
+}}
+[[Categorie:Schrijven op de wiki]]
+Als GEMMA-redacteuren zijn we samen verantwoordelijk voor de content op GEMMA Online. Zo ook voor de begrippen en de bijbehorende uitleg. 
+In principe kan elke beheerder met de juiste rechten een wijziging doorvoeren in de begrippen. Voor het wijzigen consulteer een collega of deze de wijziging ook zo ziet. 
+Via het volgen van [[Speciaal:RecenteWijzigingen|de wijzigingen op GEMMA Online]] wordt met regelmaat gecontroleerd of er wijzigingen worden doorgevoerd. Zo ook op de begrippen.
+Mocht een wijziging niet kloppen, dan wordt er contact opgenomen.
+Ontstaat er een impasse, dan zal de product owner een keuze maken.
+
+In het kort komt het op het volgende neer:
+* Alle GEMMA Online beheerders kunnen en mogen begrippen aanpassen​.
+* Wijzigingen worden gevolgd en bij vragen wordt er contact opgenomen.
+* De product owner is eindverantwoordelijk.
+Begrippen vallen binnen GEMMA Online binnen [https://redactie.gemmaonline.nl/index.php/Categorie:Begrippen Categorie:Begrippen]. Het daarbij behorende [https://redactie.gemmaonline.nl/index.php/Sjabloon:Begrip Sjabloon:Begrip] zorgt ervoor dat de juist eigenschappen gezet worden. 
+
+== Aanmaken van een begrip==
+Het aanmaken van een begrip gebeurt door een beheerder. 
+# Vergewis je er van dat het begrip niet in [[GEMMA_Begrippenkader|Begrippenkader]] staat
+# Consulteer een andere collega over het begrip en stem dit af.
+# Via [https://redactie.gemmaonline.nl/index.php/Speciaal:GegevensBewerken/Element?Element%5Belementtype%5D=Begrip aanmaken van een begrip] kom je terecht op een formulier. 
+# Vul de eigenschappen zoals hieronder beschreven.<br>
+
+== Wijzigen van een begrip ==
+Zoek het begrip op in het [[GEMMA_Begrippenkader|Begrippenkader]]:
+# klik op het begrip, je ziet nu het begrip en de eigenschappen van het begrip
+# kies Weergaven > Bewerken
+# Wijzig de eigenschappen zoals hieronder beschreven.<br>
+
+==Eigenschappen van een begrip==
+Hieronder een uitleg van de invoervelden die beschikbaar zijn:
+* ''' Elementtype''' is al ingevuld, namelijk Begrip. Wijzig dit niet.
+* '''Begrip''' is een verplicht veld. Vul hier het begrip in zoals dat onderstreept moet worden. Denk goed na: wordt deze term vrijwel altijd in het meervoud gebruikt, kies ook hier dan voor de meervoudsvorm zodat je de uitleg ook daadwerkelijk te lezen krijgt. Als je de term leeg houdt, wordt de naam van de pagina als term gebruikt. Als je aan de naam van de pagina (Begrip) of (Begrip Context) toe hebt moeten voegen moet je dus altijd een term opgeven zonder die toevoeging, om het goed te laten werken. Je zult zien dat de term, nadat je de pagina hebt opgeslagen, ook automatisch weergegeven wordt als titel van de pagina.
+* '''Bron''' Vul bij bron een interne bron toe wanneer je het begrip hebt overgenomen of het begrip is gepubliceerd. NB: als je een externe bron invult, of een typefout maakt bij het invoeren van een interne bron zal een dode link ontstaan.
+* '''Definitie''' Vul hier de beschrijving in die getoond moet worden in de tooltip als iemand de muiscursor boven het begrip laat zweven. Deze tekst kan opmaak bevatten.
+* '''Synoniem''' Wanneer het begrip een synoniem kent dat bij een deel van de bezoekers wellicht beter bekend is dan dit begrip, vul dat dan hier in.
+* '''Toelichting''' Voeg hier extra informatie of uitleg toe die relevant is, maar NIET weergegeven hoeft te worden in de tooltip. Denk bijvoorbeeld aan links naar verwante begrippen, uitleg in welke context of voor welk doel het begrip is gedefinieerd, of voorbeelden. Ook verwijzingen naar andere definities kunnen nuttig zijn, zolang maar helder is waarom binnen GEMMA gekozen is een eigen definitie te hanteren. De bezoeker kan vanuit de tooltip doorklikken naar de begripspagina of vanuit het [[GEMMA Begrippenkader]] en ziet dan ook de toelichting staan.
+
+== Overlap tussen begrippenmodellen ==
+
+Zie [[Overlap tussen de begrippenmodellen]]

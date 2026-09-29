@@ -1,0 +1,14 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+==Ondersteuning ArchiXL==
+Zijn er vragen of meldingen die je niet opgelost krijgt, dan kan je contact opnemen met ArchiXL. Daar zijn meerdere manieren voor:
+* via de servicedesk oplossing van ArchiXL [https://support.archixl.nl/portal/en/signin Zoho]. Hier is wel een inlog voor nodig, welke aan te vragen is via support@archixl.nl.
+* of stuur een e-mail naar support@archixl.nl. De vraag of melding komt dan terecht in [https://support.archixl.nl/portal/en/signin Zoho]
+* Is het urgent, dan kan er direct contact opgenomen worden met Toine (06-24324960). 
+* Voor overige manieren om contact op te nemen met ArchiXL bezoek dan hun [https://www.archixl.nl/nl/contact/ contactpagina]
+
+De dienstverlening die ArchiXL biedt staat op https://www.archixl.nl/nl/support/dienstverlening/
+
+Sinds november 2023 is de oude servicedesk oplossing [https://app.asana.com Asana] komen te vervallen.

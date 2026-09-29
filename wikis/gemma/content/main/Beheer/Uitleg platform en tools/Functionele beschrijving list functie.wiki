@@ -1,0 +1,133 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Categorie:Uitleg platform en tools]]
+==Toelichting==
+Met de download functie kunnen de gewenste objecten met hun eigenschappen door een externe applicatie worden gedownload in een JSON formaat.
+
+Hieronder staan de onderdelen en de verwachte resultaten van de download functie:
+
+* '''api.php?action=gemmaquery&output=list&listtopic=<keuze uit bovenstaande lijst gescheiden met '|'>&modelid=<GUID model>&version=2&limit=<nr>&offset=<nr>&format=json'''
+
+==Parameters==
+<table class="wikitable">
+<tr>
+ <th>Parameter</th>
+ <th>Verplicht</th>
+ <th>Toegestane waarden</th>
+ <th>Toelichting</th>
+</tr>
+<tr>
+ <td>action</td>
+ <td>ja</td>
+ <td>gemmaquery</td>
+ <td>Dit is de aanroep naar de GEMMA API. Het is een bevraging van GEMMA.</td>
+</tr>
+<tr>
+ <td>output</td>
+ <td>ja</td>
+ <td>list, viewdiagram, archimate</td>
+ <td>Voor de download functionaliteit, gebruik 'list'. De gebruiker vraagt om een lijst van bepaalde waarden</td>
+</tr>
+<tr>
+ <td>listtopic</td>
+ <td>ja</td>
+ <td>
+* modellen
+* referentiecomponenten
+* standaarden
+* standaardversies
+* standaardclassificaties
+* applicatiefuncties
+* bedrijfsfuncties
+* views
+* positions
+* bedrijfsservices
+* as-is-to-be
+</td>
+ <td>Dit zijn de elementtypen die op te vragen zijn. Bedrijfsservices staan voor de Landelijke voorzieningen. Er mogen een of meerdere van deze listopties gebruikt worden, gescheiden door een '|'-teken.</td>
+</tr>
+<tr>
+ <td>version</td>
+  <td>nee</td>
+ <td>1, 2</td>
+ <td>De versie van de GEMMA API versie die toegepast moet worden. Als de parameter niet wordt gegven is wordt de default waarde '1' gebruikt</td>
+</tr>
+<tr>
+ <td>limit</td>
+ <td>nee</td>
+ <td>getal</td>
+ <td>Aantal gewenste resultaten. Bijvoorbeeld limit=10. Deze geeft 10 resultaten terug, startend vanaf 0, if als anders aangegeven in 'offset'. Default is 5000</td>
+</tr>
+<tr>
+ <td>offset</td>
+  <td>nee</td>
+ <td>getal</td>
+ <td>Getal voor de start van de terug te geven resultaten. Bijvoorbeeld offset=100. Dit betekent dat de eerste 99 resultaten worden overgeslagen en wordt gestart met nummer 100. Alleen te gebruiken in combinatie met 'limit'.</td>
+</tr>
+<tr>
+ <td>format</td>
+ <td>nee</td>
+ <td>jason, jasonfm, xml, xmlfm</td>
+ <td>Het formaat waarin de data wordt geleverd.  De 'fm' varianten zijn de opgemaakte varianten en beter leesbaar voor de gebruiker</td>
+</tr>
+</table>
+
+==Filters==
+Een aantal 'topics' worden gefilterd op basis van een relatie. Deze filters zijn van toepassing op:
+* Referentiecomponenten, alleen die componenten die onderdeel (AggregationRelation) zijn van "Referentiecomponenten in SWC" (applicatiesamenwerking/groep)
+* Standaarden, alleen die componenten die onderdeel (AggregationRelation) zijn van "Standaarden in SWC" (standaard/groep)
+* Standaardversie, alleen die componenten die onderdeel (AggregationRelation) zijn van "Standaardversies in SWC" (standaard/groep)
+
+'''Let op''': Dit filter zorgt voorlopig nog wel voor een lagere performance op deze topics! Optimalisatie daarvan vindt in een latere fase van het project plaats. Met name referentiecomponenten hebben een flink aantal relaties met "groepen" die ook weer relaties hebben en daarmee van een bepaald type zijn. 
+
+Relaties Referentiecomponent:
+# realiseert relevante standaard
+# realiseert verplichte standaard
+# realiseert buitengemeentelijk koppelvlak
+# heeft toegewezen applicatiefunctie
+# heeft toegewezen bedrijfsfunctie
+# behoort tot positie in GEMMA Landschap
+
+Elke van deze relaties zijn aparte queries naar relaties van een bepaald type naar een groep van een bepaald type, die soms ook weer tot een groep behoren. Enige optimalisatie van het Kennismodel hieromtrent is wel gewenst.
+
+==Resultaat==
+Het resultaat van deze API aanroep is een lijst (in het gewenste formaat) van het gevraagde list-topic.
+
+===Foutmeldingen===
+Indien er een fout geconstateerd wordt, wordt er een melding teruggegeven in het gewenste formaat:
+<pre>
+{"error":{"code":"60","info":"Er is geen listtopic opgegeven (GEMMAAPI::execute)"}}
+</pre>
+
+De volgende foutmeldingen zijn mogelijk:
+
+====Params====
+* 'Er is geen model opgegeven'
+* 'Er is geen listtopic opgegeven'
+* 'Er is geen output parameter opgegeven'
+		
+====Json & POST====
+* 'Geen POST ontvangen'
+* 'Ongeldige json'
+* 'Geen JSON data ontvangen'	
+
+
+==Voorbeelden==
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=models&format=jsonfm model(len)]
+===GEMMA 2===
+{{#vardefine:modelid2|2b2b88ba-8efe-46d3-8b40-47af290bc418}}
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=referencecomponents&modelid={{#var: modelid2}}&format=jsonfm referentiecomponenten]
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=standards&modelid{{#var: modelid2}}&format=jsonfm standaarden]
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=standardversions&modelid={{#var: modelid2}}&format=jsonfm standaardversies]
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=standardclassifications&modelid={{#var: modelid2}}&format=jsonfm standaardclassificaties]
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=applicationfunctions&modelid={{#var: modelid2}}&version=2&format=jsonfm applicatiefuncties]
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=businessfunctions&modelid={{#var: modelid2}}&version=2&format=jsonfm bedrijfsfuncties] 
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=applicationservices&modelid={{#var: modelid2}}&format=jsonfm applicationservices] 
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=views&modelid={{#var: modelid2}}&format=jsonfm views]
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=as-is-to-be&modelid={{#var: modelid2}}&format=jsonfm as is to be]
+* [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=nationwidecomponents&modelid={{#var: modelid2}}&format=jsonfm landelijke voorzieningen]
+* groepen
+**  [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=targetgroups&modelid={{#var: modelid2}}&format=jsonfm targetgroups]
+**  [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=domaingroups&modelid={{#var: modelid2}}&format=jsonfm domaingroups]
+**  [{{SERVER}}/api.php?action=gemmaquery&output=list&listtopic=businessfunctiongroups&modelid={{#var: modelid2}}&format=jsonfm businessfunctiongroups]

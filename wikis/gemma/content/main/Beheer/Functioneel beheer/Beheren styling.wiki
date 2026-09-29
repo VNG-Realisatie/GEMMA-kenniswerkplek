@@ -1,0 +1,100 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+Styling wordt gedaan met CSS. 
+
+== Wijzigen Styling ==
+De CSS definities kunnen op meerdere niveau's gewijzigd worden. 
+
+'''Persoonlijke voorkeur'''
+
+Aanpassen van de styling in je persoonlijke voorkeuren. De persoonlijk styling is ook heel geschikt om een nieuwe styling te testen. Het instellen van je persoonlijke styling is te vinden via de dropdown '''''<gebruikersnaam> > voorkeuren > uiterlijk'''''.
+
+Overrulen gemmaonline styling (geen invloed op de standaard MediaWiki styles):
+* [[Gebruiker:{{CURRENTLOGGEDUSER}}/gemmaonline.css]]
+* [[Gebruiker:{{CURRENTLOGGEDUSER}}/gemmaonline.js]]
+
+Overrulen alle stylings:
+* [[Gebruiker:{{CURRENTLOGGEDUSER}}/common.css]]: styling in css
+* [[Gebruiker:{{CURRENTLOGGEDUSER}}/common.js]]: toevoegen van javascripts
+
+'''Eén GEMMA-wiki''' 
+
+Wil je iets aanpassen aan de styling voor de hele wiki, doe dat dan eerst op de redactie omgeving. Kopieer daarna de wijziging naar hetzelfde bestand op productie.
+
+De functioneel beheerder mag deze aanpassen. Redacteuren vragen de functioneel beheerder hier aanpassingen in door te voeren
+
+* [[Mediawiki:Common.css]]
+* [[Mediawiki:Common.js]]
+
+== Interactie site-brede en persoonlijke CSS ==
+Site-CSS laadt vóór persoonlijke CSS. Bij gelijke specificiteit wint de laatst geladen regel, dus een regel in persoonlijke CSS wint automatisch van een gelijke site-brede regel.
+
+Bij samenvoegen in hetzelfde bestand kan de volgorde en dus het resultaat veranderen. Controleer bij samenvoegen op onbalans tussen <nowiki>/*</nowiki> en <nowiki>*/</nowiki>, en zet nieuwe regels ná bestaande regels met dezelfde selector.
+
+'''Alle GEMMA-wiki's'''
+
+De styling van GEMMA wordt beheerd door ArchiXL. De code van de styling wordt beheerd in de git-omgeving van de leverancier
+* gemmaonline.css
+* gemmaonline.js
+Deze styling kunnen we laten aanpassen om te voorkomen dat de common.css te groot en complex wordt
+
+== Testen styling ==
+Pagina waarop de styling van diverse elementen te zien is
+* [[Styling controlepagina]]
+
+== Structuur MediaWiki:Common.css ==
+Common.css is opgebouwd uit genummerde secties, elk met een kop-commentaar die aangeeft of het leverancier- of eigen GEMMA-styling betreft.
+# CirrusSearch (vendor) — zoekresultaten
+# Accordion-component (vendor, parserfuncties #accordionItem/#accordionShow)
+# Eigen GEMMA-sjabloonstyling: Uitlichten, knop, newstable, ArchiefBanner, Landingspagina, Quotes, tabletooltip, StatusBanner/SPButtonIcon
+# SmartConnectArchiMate / ArchiMedes (vendor), inclusief de fixes overgenomen uit persoonlijke testCSS van MarkBacker
+# Algemene lay-out/thema-overrides (vendor GEMMA-skin)
+# Generieke tabelstyling
+# Omgevingswetprocessenatlas (projectspecifiek)
+# Tabs-component (herkomst onbekend)
+# Losse kleine fixes
+# Bekende inactieve code — niet actief, zie TODO hieronder
+
+== Structuur MediaWiki:Common.js ==
+Common.js bestaat uit 4 blokken.
+# Sitenotice-sluitknop (eigen, hoort bij Sjabloon:Sitenotice)
+# "Publicatie administreren"-portletlink (eigen, integratie met vendor-extensie SmartPublish)
+# Omgevingswetprocessenatlas diagramlinks (projectspecifiek, hoort bij Common.css-sectie 7)
+# Tabs-script (hoort bij Common.css-sectie 8)
+
+== Naamgevingsconventie CSS-classes ==
+Leverancier-classes zijn kebab-case en liggen vast. Voor eigen GEMMA-classes was nooit een conventie afgesproken; bestaand gebruik is gemengd. Advies: nieuwe classes in PascalCase (bv. <code>Landingspagina</code>), gelijk aan de sjabloonnaam.
+
+== TODO: bevindingen herstructurering CSS (peildatum 2026-08-18) ==
+* Twee dode CSS-blokken door niet-afgesloten commentaar (<code>div.archimate-displaybox-body > table</code>/<code>.btnnieuwsbrief</code>, en <code>td[Kenmerkstijl]</code>) — beoordelen: activeren of verwijderen.
+* Ongeldige <code>!important</code> in <code>.Uitlichten</code>'s margin-declaratie — beoordelen of herstel gewenst is.
+* <code>.knop</code>: geen sjabloon/wikitext-gebruik gevonden in de lokale mirror (archief niet meegezocht) — navragen voor verwijderen.
+* <code>.codeblock</code> staat rechtstreeks in wikitext (o.a. op [[Styling controlepagina]]) — hernoemen vereist eerst een wiki-brede scan plus het bijwerken van die pagina.
+* Common.js: commentaar bij de portletlink dekte de code niet volledig (Bestand-naamruimte ontbrak in de tekst) — commentaar bijgewerkt.
+* <code>siteNotice-close</code> (JS in Common.js, sinds 2026-08-19 ook gestyled in Common.css door Pmakkes) is een eigen class in kebab-case — kandidaat voor PascalCase, wel in twee bestanden tegelijk aan te passen.
+* MarkBacker-CSS is overgenomen in Common.css; [[Gebruiker:MarkBacker/common.css]] is leeggemaakt met een verwijsregel — nog niet gepubliceerd, bij akkoord beide samen doorzetten.
+* Eerdere test op staging (MarkBacker-CSS onderaan in Common.css plakken) werkte niet, apart wél — controleer bij opnieuw doorzetten op onbalans <nowiki>/*</nowiki>/<nowiki>*/</nowiki> en houd rekening met de periodieke staging-verversing.
+
+== Inhoud persoonlijke CSS en JS ==
+
+=== Persoonlijke common style ===
+
+[[Gebruiker:{{CURRENTLOGGEDUSER}}/common.css]]
+
+<div style="border:thin solid grey;">{{:Gebruiker:{{CURRENTLOGGEDUSER}}/common.css}}</div>
+
+[[Gebruiker:{{CURRENTLOGGEDUSER}}/common.js]]
+
+<code>{{:Gebruiker:{{CURRENTLOGGEDUSER}}/common.js}}</code>
+
+=== Persoonlijke gemmaonline style ===
+
+[[Gebruiker:{{CURRENTLOGGEDUSER}}/gemmaonline.css]]
+
+<code>{{:Gebruiker:{{CURRENTLOGGEDUSER}}/gemmaonline.css}}</code>
+
+[[Gebruiker:{{CURRENTLOGGEDUSER}}/gemmaonline.js]]
+
+<code>{{:Gebruiker:{{CURRENTLOGGEDUSER}}/gemmaonline.js}}</code>

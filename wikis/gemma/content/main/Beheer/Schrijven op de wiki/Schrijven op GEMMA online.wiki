@@ -1,0 +1,289 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's, 
+}}
+[[Categorie:Schrijven op de wiki]]
+__TOC__
+GEMMA Online is een MediaWiki platform met een semantische schil erover. Handleidingen over de platformen vind je op:
+*[https://www.mediawiki.org/wiki/Help:Contents Gebruikershandleiding Mediawiki] ook in het [https://www.mediawiki.org/wiki/Help:Contents/nl Nederlands]
+*[http://semantic-mediawiki.org/wiki/Help:User_manual Gebruikershandleiding Semantic Mediawiki]
+
+Om meer grip te houden op de inhoud van GEMMA Online staat hieronder een verwijzing naar een pagina met allerlei handige overzichten en overige links naar bruikbare pagina's of sites.
+* [[Functioneel_beheer]]
+
+==Richtlijnen==
+
+===Houd het overzichtelijk ===
+Volg bij het schrijven de volgende richtlijnen
+* In [[GEMMA opbouw]] is de structuur van GEMMA architectuur weergegeven. Raadpleeg deze voor het schrijven van nieuwe pagina's.
+* De paginanaam is gelijk aan de paginatitel. 
+** Als de titel moet worden gewijzigd, hernoem dan de paginanaam. 
+** De functie displaytitle, alleen als noodgreep gebruiken. Een titel die anders is dan de paginanaam maakt de wiki een doolhof.
+
+===Pagina van metadata voorzien===
+Voorzie iedere pagina van de minimaal benodigde metadata zoals hieronder is weergegeven:
+	
+ <nowiki>{{Publicatie
+   |Redactiestatus= In ontwikkeling of Actueel of Gearchiveerd
+   |Paginastatus= Publiceren of In Bewerking of Niet Publiceren
+   |Wikibeheerder=...
+   }}</nowiki>
+ <nowiki>[[Categorie:...]]</nowiki>
+[[Toekennen categorie]] beschrijft welke categorieën mogelijk zijn voor het classificeren van pagina's, sjablonen, etc.. 
+
+=== Pagina publiceren ===
+Als een pagina nog niet helemaal klaar is moet je voorkomen dat hij automatisch wordt gepubliceerd. Hiervoor moet het attribuut 'Paginastatus' een andere waarde hebben dan 'Publiceren'. Redenen waarom een pagina nog niet klaar is voor publicatie zijn bijvoorbeeld dat een pagina:
+
+* Vooraf moet worden gereviewed door een collega (bijv. omdat de tekst nieuw of sterk gewijzigd is). 
+* Een view moet tonen waarvoor eerst nog vanuit Archi een import in de Wiki-omgeving moet plaatsvinden. 
+* Behoort tot een nieuwe onderdeel binnen de GEMMA waarvoor nog aanpassingen nodig zijn (bijv. een thema-architectuur of project waarvoor nog een aanpassing moet plaatsvinden om het kruimelpad goed te kunnen tonen).
+
+=== Pagina reviewen ===
+Binnen het Kenniscentrum Architectuur geldt de afspraak dat je collega('s) op de hoogte stelt als een review wenselijk of nodig is (bijvoorbeeld via een mail of Teams). Werk je binnen een project dan gelden de daar gemaakte afspraken over maken, reviewen en publiceren van pagina's. 
+
+Reviewen is normaal gesproken wenselijk bij nieuwe of sterk gewijzigde pagina's. Voor kleinere wijzigingen, zoals het corrigeren van fouten of licht actualiseren van een pagina, is reviewen niet nodig. 
+
+Reviewen vind normaal gesproken plaats voordat de pagina wordt gepubliceerd. In gevallen waarin het gaat om kleinere wijzigingen kun je ook direct publiceren en collega's vragen om 'nog even naar de pagina te kijken'. 
+
+===Digitale toegankelijkheid (WCAG)===
+Nieuwe overheids websites dienen sinds 2019 te voldoen aan de WCAG om de digitale toegankelijkheid te verbeteren. GEMMA Online is officieel geen overheids website, maar toch streven we ernaar om hier zo goed mogelijk aan te voldoen. Dit is geen eenvoudige klus.
+Om te voldoen aan de WCAG is het nodig dat de technische kant van het platform voldoet en de inhoudelijke kant.
+De technische kant is voor de leverancier van het platform. 
+De inhoudelijke kant is voor alle redacteuren. Richtlijnen zijn bijvoorbeeld bijvoorbeeld:
+*[https://wcag.nl/artikel/afbeeldingen/ de alt-teksten bij een afbeelding]
+*[https://wcag.nl/artikel/navigatie/ de tekst van een link] (het gebruik van: Klik hier voldoet niet aan de WCAG)
+*[https://wcag.nl/artikel/teksten/ het gebruik van headers](H2,H3,etc.)
+
+Binnen het Kenniscentrum Architectuur geldt de afspraak dat informatie op GEMMA Online zoveel mogelijk als tekst in de wiki wordt gezet. Bedenk dus als je een tekst of een spreadsheet wilt delen op GEMMA Online eerst of het ook mogelijk is om de inhoud rechtstreeks in de wiki te ontsluiten.
+
+Er is online veel informatie te vinden over de WCAG. Om je alvast op weg te helpen hierbij een [https://wcag.nl/kennisbank/ kennisbank met voorbeelden van de richtlijnen.]<br>
+MediaWiki heeft een '''[[wikipedia:Wikipedia:Manual_of_Style/Accessibility|handleiding gemaakt voor toegankelijkheid]]'''. Wanneer je deze volgt zal de inhoud voldoen aan de WCAG.
+
+De NORA heeft daarvoor een goede uitleg geschreven hoe dit moet. Ga daarvoor naar [https://www.noraonline.nl/wiki/Documenten_op_noraonline_en_toegankelijkheid documenten op noraonline en toegankelijkheid]. 
+
+Het gebruik van PDF bestanden voldoet niet aan de webrichtlijnen.
+
+Bestaande Word-documenten kunnen worden omgezet naar een wiki-pagina. Hoe dit eenvoudig kan is beschreven in de instructie [[Omzetten Word naar Wiki-pagina]].
+
+==Nieuwe pagina's aanmaken==
+Nieuwe pagina's worden altijd eerst op de redactie-wiki van GEMMA gemaakt. De redactie-wiki is te herkennen aan de URL: https://redactie.gemmaonline.nl/. 
+
+=== Redactie-wiki===
+De redactie-wiki is een besloten omgeving waarop alleen gebruikers met rechten toegang hebben om teksten te bewerken, teksten te reviewen of pagina's aan te maken. Daarbij is er nog de keuze om de pagina's te publiceren of helemaal niet te publiceren op de productieomgeving. 
+
+Er zijn dus twee omgevingen:  
+*De '''redactie-wiki''' is om pagina's aan te maken en bewerkingen van de content uit te voeren. Deze omgeving is besloten.
+*Op de '''publicatie-wiki''' wordt de content getoond aan alle gebruikers.
+
+===Aanmaken pagina ===
+Een nieuwe pagina maak je aan door de gewenste titel in het '''zoekveld''' in te voeren. Dit heeft het voordeel dat identieke of bijna-identieke pagina's direct als zoekresultaat terugkomen. Bestaat er nog geen pagina met de nieuwe naam en ben je ingelogd, dan zie je bij de resultaten een rode link met daaromheen '' de pagina .. aanmaken.'' Klik op deze link en je gaat automatisch naar een scherm Aanmaken, dat vrijwel identiek is aan het tabblad bewerken.
+
+Je kunt ook een nieuwe pagina aanmaken door in een pagina alvast een link naar een andere pagina op te nemen. Omdat deze pagina nog niet bestaat, zal de link in het rood getoond worden. Klik op de rode link en je komt in het scherm om de pagina aan te maken.
+
+===Eigenaarschap pagina registreren===
+Voor elke pagina geldt dat er iemand verantwoordelijk voor is. In veel gevallen is dat de maker van de pagina. Het registreren van het eigenaarschap gaat als volgt:
+* Open het tabblad ''Publicatie'' van de pagina.
+*Vul bij het veld ''GEMMAOnlinebeheerder:'' de beheerdersrol waartoe je behoort.
+*Weet je je beheerderrol niet, check dan je profiel [[user:{{CURRENTUSER}}|Gebruikerspagina van de huidige gebruiker]] en onderaaan staan een aantal rollen waar je aan gekoppeld bent. Selecteer degene die er het beste bij past. Mocht er een rol niet aanwezig zijn, neem dan contact op met [mailto:GEMMAOnline@vng.nl GEMMAOnline@vng.nl]
+
+==Opmaken van een pagina==
+In de volgende paragrafen worden een aantal veel voorkomende bewerkingen van pagina's uitgelegd.
+Voor een volledig overzicht zie de MediaWiki pagina [[mediawikiwiki:Help:Formatting|Help:Formatting]]
+
+===Kopjes===
+Als je kopjes wilt gebruiken om je tekst in te delen kun je die toevoegen via de knoppen in de editor of met een simpel stukje code. Kopjes kun je op verschillende niveaus aangeven, waarbij een kopje van een lager niveau telkens iets kleiner wordt. De titel van de pagina staat op niveau 1, dus de eerste kop die je toevoegt hoort op niveau 2 te staan.
+
+De code voor een kopje bestaat uit = tekens om de tekst van de kop heen, waarbij het aantal tekens het niveau van de kop bepaalt:<br> ==niveau 2==,<br> ===niveau 3===,<br> enzovoorts.<br> Je kunt een kopje ook aanmaken door de tekst te selecteren en bovenin de editor te klikken op 'Uitgebreid' en vervolgens op het uitklapmenu Kopje. Kies het gewenste niveau en de wiki zet zelf het juiste aantal = tekens voor en na de tekst.
+
+NB: Een kopje werkt alleen helemaal aan het begin van een regel en zin. Als er ook maar een spatie voor het eerste = teken staat, of de zin er voor niet is afgesloten met een harde enter, zal de kop niet werken en zie je de = tekens staan. Voeg in zo'n geval een extra enter toe voor de kop.
+
+===Alinea's===
+Om een nieuwe alinea te beginnen, plaats je een witregel tussen de alinea's.Je voegt <nowiki> <br /> </nowiki> toe aan het einde van de titel of het tekstdeel.
+
+'''Let op: tussen paragraaftitel en de tekst komt geen witregel!'''
+
+===Lijsten maken===
+Er zijn twee soorten lijsten die je kan maken: een genummerde lijst en een ongenummerde lijst.
+Voor een genummerde lijst gebruik je <nowiki>#</nowiki> voor de tekst en voor een ongenummerde lijst <nowiki>*</nowiki><br>
+Bijvoorbeeld:<br>
+{| class="wikitable"
+|+Voorbeelden om lijsten te maken
+|-
+! Bijvoorbeeld!!wordt
+|-
+|
+<nowiki># Genummerde lijst</nowiki><br>
+<nowiki>## Extra nummer
+</nowiki><br>
+<nowiki>## Nog een extra nummer
+</nowiki>
+|| 
+#Genummerde lijst 
+##Extra nummer
+##Nog een extra nummer
+|-
+|
+<nowiki>* Ongenummerde lijst</nowiki><br>
+<nowiki>** Extra lijst
+</nowiki><br>
+<nowiki>** Nog een extra lijst
+</nowiki>
+||
+* Ongenummerde lijst
+**Extra lijst
+**Nog een extra lijst 
+|}
+Het kan ook via de editor. Klik daarvoor op "Uitgebreid" en selecteer een van de opties om een lijst te maken(te herkennen aan de drie horizontale strepen)<br>
+Op de mediawiki website vind je [[mediawikiwiki:Help:Lists/nl|meer tips om lijsten]] te maken.
+
+===Tabel toevoegen===
+Er zijn in essentie 2 mogelijkheden om een tabel te maken.  
+
+*Wiki Visual Editor
+*Coderen in WikiML (met hulp van een tabel generator)
+
+Voor het bewerken van een tabel is de Visual Editor de beste optie
+
+==== Wiki Visual Editor====
+De makkelijkste manier nu is om hiervoor gebruik te maken van de MediaWiki Visual Editor. Je kunt in de editor een tabel editen en je kunt een tabel vanuit Word (en Excel?) in de editor plakken. Meer informatie staat op [[Editor voor schrijven wiki-pagina]].
+
+====Coderen====
+Op de [https://nl.wikipedia.org/wiki/Help:Gebruik_van_tabellen helppagina van wikipedia] staat complete uitleg hoe jezelf een tabel via de code kan maken. Bedenk van te voren goed wat je allemaal en hoe wilt presenteren.
+
+'''Tabel generator'''
+
+Als je een tabel, bijvoorbeeld vanuit excel, wilt toevoegen aan een pagina, dan kan je gebruik maken van een [https://www.tablesgenerator.com/html_tables handige tabel generator]. 
+*maak een tabel in bijvoorbeeld Excel of in Google spreadsheet
+*selecteer en kopieer het gedeelte dat je als tabel in de wiki wilt opnemen
+*ga naar https://www.tablesgenerator.com/html_tables 
+**File > paste table data
+**kies als formaat HTML table (knop bovenin de pagina)
+**vink "Do not generate CSS" aan
+
+De gegenereerde HTML code verschijnt in het vak onderin. Knip en plak deze in je wiki pagina. 
+Je moet nu nog enkele kleine verbeteringen doorvoeren om de tabel mooi te krijgen 
+*eerste regel: verander <nowiki><table></nowiki> naar <nowiki><table class="wikitable"></nowiki>
+* indien je in de cellen bullets hebt gebruikt
+**in de teksteditor notepad++ (of gebruik je eigen favoriet)
+**zoek en vervang "* " door "\r* " (zet search mode op extended)
+
+'''Omzetten van markdown naar wikiml'''
+
+Handige pagina voor het converteren van tabellen in diverse markup talen. Ga naar https://tableconvert.com/markdown-to-mediawiki
+
+====Tabel opmaken met HTML====
+Door de pagina te openen in de Visual Editor krijg je enkele opties voor het opmaken van tabellen. 
+
+* Ga in de tabel staan. Onderin zie je de popup Tabel, kies voor 'eigenschappen/properties'
+*Je kunt nu enkele HTML opmaakopties aan en uitzetten
+
+In de code kun je meer HTML opmaak toevoegen. 
+
+*Zie als geavanceerde voorbeeld [[Verantwoording nieuwe GEMMA principes]]
+
+===Literatuurlijst maken===
+De literatuurlijst heeft een eigen pagina en bevat wanneer mogelijk per item een link naar de bron. Plaats onderaan de pagina waar de literatuur is gebruikt een link naar de literatuurlijst.
+
+===Voetnotes===
+
+Zet in de tekst achter het woord waar je naar de voetnote wilt verwijzen een <nowiki><ref>tekst voetnote</ref></nowiki>. Onderin de pagina zet je <references />
+
+Zie de MediaWiki pagina [[mediawikiwiki:Help:Cite|Help:Cite]]
+
+=== Verwijzingen ===
+
+====Interne link====
+Een 'interne link' binnen GEMMAOnline.nl maak je als volgt aan:
+#Open de pagina waar je heen wilt verwijzen in een ander tab en kopieer de titel die bovenaan de pagina staat (niet de url)
+# Plaats op de plek waar de verwijzing moet komen twee blokhaken naar rechts <nowiki>[[</nowiki>, plak de titel en plaats twee blokhaken naar links <nowiki>]]</nowiki>
+#Bedenk of je de volledige titel van de pagina als verwijzing wilt gebruiken, of liever een andere tekst als link plaatst.
+#Wil je een andere tekst gebruiken als link, voeg dan in de code na de titel, maar voor de afsluitende blokhaken, een opstaand pijpje <nowiki>|</nowiki> en vervolgens de tekst die je weer wilt geven.
+Het format is dus:
+<pre>[[Naam pagina]]</pre>
+of:
+<pre>[[Naam pagina|Alias]]</pre>
+Gebruik een alias als de titel erg lang is, je de link in een zin wilt gebruiken of je het hoofdlettergebruik van de titel wilt wijzigen. 
+
+*Alternatief: Druk op het kettinkje in de werkbalk, tik "paginanaam" (vult automatisch aan) en geef in de tweede regel de alias die je weer wilt geven aan.
+
+====Externe link====
+Een 'externe link', dus een link naar een webadres buiten GEMMAOnline.nl, maak je als volgt aan:  
+#Kopieer de url (het webadres) waar je heen wilt verwijzen
+#Plaats op de plek waar de verwijzing moet komen een enkele blokhaak naar rechts <nowiki>[</nowiki>
+#Plak de volledige url
+# Klik op spatie
+#Geef de verkorte url of een alias en sluit af met een enkele blokhaak naar links <nowiki>]</nowiki>
+
+Je krijgt dan: <pre>[https://digitaleoverheid.nl/ alias]</pre>
+
+De tekst die je bij stap 5 hebt ingevoerd is de tekst die als link wordt weergegeven met een streep er onder. Je kunt dit niet leeg laten - dan krijg je een link zonder tekst en kun je er niet op klikken. Je kunt als alias het woord of woorden zetten dat je wilt tonen als link, of het webadres herhalen zonder de afleidende https: //, of de naam van de organisatie wiens website het is. Als de verwijzing niet naar de hoofdpagina is, gebruik dan bij voorkeur de naam van de organisatie plus een woord dat de inhoud van de pagina goed weergeeft, bijvoorbeeld <pre>[https://www.mediawiki.org/wiki/Help:Links/nl Handleiding voor het maken van links van MediaWiki]</pre>
+[[mediawikiwiki:Help:Links/nl|Handleiding voor het maken van links van MediaWiki]].
+
+== Pagina bewerken==
+Wil je nadat de pagina is opgeslagen nog een bewerking doen, dan is dat mogelijk door de pagina in bewerking te zetten. 
+Dat doe je door bovenin in de lichtblauwe balk te klikken op "Weergaven" en daarna op "Bewerken".
+
+Zie ook [[Editor voor schrijven wiki-pagina]]
+
+==Sjablonen ==
+Op GEMMA Online worden sjablonen gebruikt. Met een sjabloon kan je bijvoorbeeld de structuur van verschillende pagina's op een eenduidige manier maken of teksten op eenzelfde manier opmaken. Bij een wijziging in het sjabloon wordt dat meteen doorgevoerd op alle pagina's die daarvan gebruik maken. 
+===Landingspagina's===
+Voor het maken van een landingspagina wordt gebruik gemaakt van het [[sjabloon:landingspagina]]. 
+De schrijfwijzer voor dit sjabloon is als volgt:
+*elke kolom heeft een eigen titel.
+*in de linker kolom staan links naar pagina's op GEMMA Online
+*de rechter kolom bevat links naar externe bronnen.
+*boven elk rijtje links staat minimaal één tussenkop met een :(dubbele punt) erachter. Probeer linken te groeperen onder één tussenkop.
+
+===Quotes===
+Het sjabloon:Quotes helpt om citaten of uitspraken onder de aandacht te brengen. Een link in de tekst is zichtbaar en aanklikbaar.
+{{Quotes|Imagination is more important then knowledge. Direct naar het [[sjabloon:Quotes]] voor uitleg hoe deze is te gebruiken.}}
+
+===Uitlichten ===
+Met het sjabloon:Uitlichten worden stukken tekst voorzien van een andere achtergrond kleur en komt deze meer onder de aandacht. Een link in de tekst is zichtbaar en aanklikbaar.
+{{Uitlichten|Life is like riding a bicycle. To keep your balance, you must keep moving. Direct naar het [[Sjabloon:Uitlichten]] voor uitleg hoe deze is te gebruiken.}}
+
+===AccordionMenu===
+
+De accordion inhoud kan worden gevuld door twee parser functies te gebruiken, namelijk accordionItem en accordionShow.
+Daarnaast kan via de |icon=<naam> een icoon toegevoegd worden aan de hoofdmenu items. De symbolen zijn van Google en te vinden via: [https://fonts.google.com/icons?icon.platform=web&icon.set=Material+Symbols Iconen Google Material design]
+{{Letop
+|uitleg = <nowiki>Om tabellen te gebruiken in de accordions moet je gebruik maken van "{{!}}" in  plaats van "|"(pipe-teken). De parsers raakt van slag wanneer het "|" gebruikt wordt binnen het accordion, waardoor er geen tabel getoond wordt. </nowiki>
+}}{{Letop
+|uitleg= * <nowiki>Zorg dat "{{#accordionShow:}}" direct na de laatste "}}" staat (geen regel lager). Anders ontstaat er een grote wit-ruimte bovenaan het accordion.</nowiki>}}
+
+'''Voorbeeld:'''
+
+<pre class="mediawiki">{{#accordionItem:
+|title=Titel 1
+|content=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in lacus vulputate, dignissim lacus sit amet, dictum quam. Fusce aliquam, nibh non venenatis cursus, magna magna venenatis est, quis venenatis purus nulla fringilla dui. Nunc accumsan diam ipsum, et pellentesque massa condimentum eget. Aliquam imperdiet eros neque, vel cursus dolor laoreet vel. Cras finibus ex mollis ex fringilla condimentum. Nam tellus tellus, euismod eu mollis vitae, tristique 
+[[Hoofdpagina]]
+[[Test]]
+[[Wat is GEMMA]]
+|icon=play_arrow
+}}
+{{#accordionItem:
+|title=Titel 2
+|content=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in lacus vulputate, dignissim lacus sit amet, dictum quam. Fusce aliquam, nibh non venenatis cursus, magna magna venenatis est, quis venenatis purus nulla fringilla dui. Nunc accumsan diam ipsum, et pellentesque massa condimentum eget. Aliquam imperdiet eros neque, vel cursus dolor laoreet vel. Cras finibus ex mollis ex fringilla condimentum. Nam tellus tellus, euismod eu mollis vitae, tristique
+|icon=search
+}}{{#accordionShow:}}</pre>
+Dat resulteert in het volgende:
+{{#accordionItem:
+|title=Titel 1
+|content=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in lacus vulputate, dignissim lacus sit amet, dictum quam. Fusce aliquam, nibh non venenatis cursus, magna magna venenatis est, quis venenatis purus nulla fringilla dui. Nunc accumsan diam ipsum, et pellentesque massa condimentum eget. Aliquam imperdiet eros neque, vel cursus dolor laoreet vel. Cras finibus ex mollis ex fringilla condimentum. Nam tellus tellus, euismod eu mollis vitae, tristique 
+[[Hoofdpagina]]
+[[Test]]
+[[Test]]
+|icon=play_arrow
+}}
+{{#accordionItem:
+|title=Titel 2
+|content=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in lacus vulputate, dignissim lacus sit amet, dictum quam. Fusce aliquam, nibh non venenatis cursus, magna magna venenatis est, quis venenatis purus nulla fringilla dui. Nunc accumsan diam ipsum, et pellentesque massa condimentum eget. Aliquam imperdiet eros neque, vel cursus dolor laoreet vel. Cras finibus ex mollis ex fringilla condimentum. Nam tellus tellus, euismod eu mollis vitae, tristique
+|icon=search
+}}{{#accordionShow:}}
+
+===Alle sjablonen===
+De volgende sjablonen zijn op deze wiki beschikbaar:
+:<categorytree mode="all" depth="1" showcount="on">GEMMA opmaakTemplates</categorytree>
+
+==Vragen?==
+Heb je een vraag over een pagina of wil je iets toevoegen maar je weet niet hoe, neem dan contact op de beheerders van GEMMA Online via [mailto:Gemmaonline@VNG.nl GEMMAOnline@VNG.nl]

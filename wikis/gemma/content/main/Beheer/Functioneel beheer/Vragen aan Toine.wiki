@@ -1,0 +1,53 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+Openstaande vragen en wensen richting Toine/ArchiXL. Beantwoorde vragen staan onderaan, met een link naar waar het antwoord nu beschreven staat.
+
+== Fouten ==
+* Zoekformulier [[Speciaal:ZoekopdrachtUitvoeren/Zoek_element]] werkt niet: [[Sjabloon:Element query]] haalt modellen op uit [[:Categorie:ArchiMateModels]] en verwacht daarbij alleen de modelnaam, terwijl de categorie "modelnaam (paginanaam)" bevat. Fout gevonden, herstel nog niet gedaan.
+* Boek [[Gemeentelijke Applicatiearchitectuur Omgevingswet]] werkt niet op de lege wiki: onduidelijk wat er mist bij het overzetten van dit katern (Omgevingswet wijkt af van andere GEMMA-katernen); de lege wiki toont een i'tje met foutmelding waar productie niets toont (i'tje laten staan, onderliggende fout oplossen); [[Omnichannel MijnZaken]] toont geen zwevend menu links terwijl [[Interactiepatronen Verwerkingenloggingregister]] dat wel doet (bewust verschil?). Overige boeken: [[:Categorie:ExportBoeken]].
+* Wens: zichtbaar verschil tussen werken op redactie of publicatie, bijvoorbeeld via een favicon in een andere kleur of een aparte CSS-balk.
+* Onbekende sjablonen/pagina's, live overzicht:
+: <categorytree mode="all" showcount="on">Vragen aan Toine</categorytree>
+: <categorytree mode="all" showcount="on">GEMMA ArchiMedes obsolete</categorytree>
+
+== Wensen ArchiMedes ==
+* NL versus EN ArchiMate-categorieën: elk object krijgt zowel een Engelstalige ArchiMate-categorie als een Nederlandse. De NL-categorie wordt ook voor pagina's en het kruimelpad gebruikt, waardoor ArchiMate-objecten twee kruimelpaden hebben. Voorkeur: NL ArchiMate-categorieën leidend maken voor pagina's, zoals nu al bij bedrijfsobjecten. Waar worden NL ArchiMate-categorieën voor bijvoorbeeld bedrijfsfuncties toegekend?
+* Property-labels worden automatisch naar title-case gewijzigd. Waar zet je dit uit?
+* Meertalige ArchiMate-eigenschappen: optie om één vaste taal in te stellen, zodat de taal-postfix niet meer nodig is.
+* Ontwikkelomgeving: ondersteuning voor VS Code als editor (syntax highlighting voor het mediawiki-taaltje).
+* Minder custom epilogues, zoveel mogelijk standaard ArchiMedes-functionaliteit gebruiken.
+
+== Wensen begrippen ==
+Zie [[Overlap tussen de begrippenmodellen]]. Wens: één begrippenlijst die filterbaar is op 'collecties' (Begrippenkader, per thema-architectuur, bedrijfsobjecten als begrippen), waarbij een begrip in meerdere collecties tegelijk kan voorkomen en elke collectie een eigen beheerbron heeft (wiki, ArchiMate-model, later mogelijk extern zoals NORA). Toine's voorstel (SetBegrip/Glossary-mechanisme) is inmiddels de basis van [[Beheren van begrippen]]; nog open staat het expliciet vastleggen van een Glossary-Collection-eigenschap om die collecties mee vorm te geven.
+
+== Wensen WikiXL-documentatie ==
+* SmartCore: wat is SmartCore precies, en waar stopt Semantic MediaWiki en begint SmartCore?
+* De term "kennismodel" heeft twee betekenissen — SmartCore-kennismodellen (bv. voor begrippen) versus het ArchiMate-kennismodel van SmartConnectArchiMate/het GEMMA-kennismodel als profiel daarop — dat is verwarrend.
+* Hoe schrijf je queries op een ArchiMate-model? Hoe matcht [[:Categorie:KnowledgeModel ArchiMate]] op het UML class-diagram van SmartCore? Voorbeelden ontbreken.
+
+== Toine zoekt uit ==
+* Verwijderen van de lege wiki: staat SmartConnectImvertor geïnstalleerd, inclusief RGB-kennismodel?
+* Bestanden overzetten.
+* Users overzetten via SQL database tables — eerst schonen, dan userMerge.
+* Hoe lang blijft het redactie-archief beschikbaar: half jaar live, daarna als container?
+
+== Losse eindjes ==
+* Nakijken paragraaf [[Tonen_afbeeldingen_en_bestanden#Toevoegen_documenten_met_eigenschappen|Toevoegen documenten met eigenschappen]].
+
+== Vragen beantwoord ==
+* Waarom wordt [https://redactie.gemmaonline.nl/index.php/Categorie:Omgevingswet Categorie:Omgevingswet] niet automatisch gepubliceerd, en hoe gaan we om met bestaande redirects? — '''Antwoord Toine:''' moet ingeregeld worden in [[Speciaal:SmartPublish]]; zie [[Beheren SmartPublish]].
+* Worden systeemteksten bij een upgrade overschreven? — '''Antwoord Erwin Oord:''' nee, aangepaste systeemteksten blijven behouden ([https://app.asana.com/0/1111285512527417/1204548685319410/f Asana-issue]).
+* Hoe exporteer je een ArchiMate-model, en wat is het verschil tussen de twee manieren? — '''Antwoord Toine:''' gebruik altijd [[DisplayArchiMateExports]]; deze zet de export op een vaste, herbruikbare locatie. [[Speciaal:SmartConnectArchimate]] geeft een variabele link, handig voor een eenmalige ad-hoc export.
+* Wat is SmartPublish, hoe publiceer je (delen van) de wiki, en wat kun je niet publiceren (mediawiki-naamruimte, categorieën)? — zie [[Beheren SmartPublish]].
+* Wat is SmartConnectArchiMate/ArchiMedes, en hoe pas je import en weergave aan (proloog/epilogue, Display&lt;Type&gt;Custom-sjablonen)? — zie [[Beheren ArchiMedes]] en [[Architectuur wiki#SmartConnectArchiMate|Architectuur wiki]].
+* Voor eindgebruikers overbodige ArchiMate-categorieën verbergen — geïmplementeerd via [[:Sjabloon:HiddenCategory]], zie [[Beheren ArchiMedes#ArchiMedes categorieën|Beheren ArchiMedes]].
+* Documentatie werking custom ArchiMedes-sjablonen (welk sjabloon waarvoor, proloog/epilogue) — zie [[:Sjabloon:LibraryArchiMedesCustom]] en [[Beheren sjablonen#ArchiMedes sjablonen|Beheren sjablonen]].
+* ArchiMedes-browser gericht op eindgebruiker in plaats van beheerder: technische eigenschappen en visuele objecten (alleen de view tonen) zijn default verborgen — geïmplementeerd via [[:Sjabloon:DisplayArchiMateElementCustom]] en [[:Sjabloon:DisplayArchiMateViewCustom]], zie [[Architectuur wiki#SmartConnectArchiMate|Architectuur wiki]].
+* Relaties tonen hun ID als titel in plaats van een semantische titel — opgelost via [[:Sjabloon:DisplayArchiMateRelationshipCustom]] (FormatRelationshipNameCustom in [[:Sjabloon:LibraryToonArchiMate]]).
+* CustomProperties en categorieën die in de displayArchiMate&lt;type&gt;-sjablonen gezet worden (geen displayfunctionaliteit, risico op bulk-refresh bij wijziging) — inmiddels bewust gescheiden: vastleggen gebeurt in [[:Sjabloon:SmartCoreEpilogue]], tonen in het Display-sjabloon zelf. Zie [[Beheren ArchiMedes]].
+* Welke mediawiki-extensies ondersteunt het WikiXL-platform? — zie [[Speciaal:Softwareversie]], via [[Architectuur wiki]].
+* Hamvraag: wat is MediaWiki, wat is WikiXL, wat is Toine special? — '''Antwoord Toine:''' documentatie op de [https://gebruikersgroep.wikixl.nl/index.php/Hoofdpagina Gebruikerswiki] compleet maken, plus inventarisatie maatwerksjablonen; zie [[Architectuur wiki]] en [[Beheren sjablonen]].
+* Waarom staan begrippen in 2 categorieën, [[:Categorie:Begrippen]] en [[:Categorie:Begrippenkader]]? — '''Antwoord Toine:''' geen speciale reden; Begrippenkader is voor GEMMA-begrippen, Begrippen zou algemener kunnen zijn (bv. gemeentelijke begrippen via GGM). Zie [[Beheren van begrippen]].
+* Waar vind je documentatie over het WikiXL-platform? — '''Antwoord Toine:''' [https://gebruikersgroep.wikixl.nl/index.php/Hoofdpagina Gebruikerswiki]; zie ook [[Architectuur wiki]].

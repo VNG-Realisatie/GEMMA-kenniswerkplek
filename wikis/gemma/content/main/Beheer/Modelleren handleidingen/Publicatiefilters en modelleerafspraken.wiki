@@ -1,0 +1,326 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=niet publiceren
+|Wikibeheerder=Beheerder Architectuurtools
+}}
+[[Categorie:Modelleren handleidingen]]
+
+Aan het GEMMA architectuurmodel wordt door meerdere mensen gewerkt en het architectuurmodel kent dan ook delen die in verschillende status van voortgang zijn. De architecten kunnen in het model markeren wat gereed en geschikt is voor publicatie en welke delen alleen op redactie zichtbaar moeten zijn. Alles wat niet expliciet gemarkeerd is, wordt niet gepubliceerd.
+
+Op deze pagina is de werking van het publicatiemechanisme beschreven en hoe je in het model met de publicatie-eigenschappen kunt markeren wat waar gepubliceerd moet. Naar deze pagina wordt verwezen vanuit de [[Eigenschappen in GEMMA ArchiMate-model]].
+
+== Filteren op publicatie-eigenschappen ==
+
+'''Wat wordt geïmporteerd, wat niet'''
+
+Om het GEMMA architectuurmodel te publiceren, wordt het model geïmporteerd in GEMMA Online. Meer specifiek, het wordt geïmporteerd met de tool  [https://www.archixl.nl/archixl/diensten/archimedes-architectuurpublicatieplatform ArchiMedes] van [https://www.archixl.nl/ ArchiXL].
+
+Het importeren van ArchiMedes bestaat uit een standaard import gebaseerd op het {{ToonElement|id=a474cd51-1913-11e6-11ba-005056a85f9c|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418}} . Door de standaard is het mogelijk het GEMMA architectuurmodel te onderhouden in een willekeurige architectuurtool, mits deze het model in deze standaard kan exporteren.
+
+De import bestaat uit de volgende stappen:
+
+#Inlezen van het ArchiMate Exchange bestand met het architectuurmodel
+#Wegfilteren van elementen en relaties die niet op een gepubliceerde view staan. Of en waar een view gepubliceerd wordt, wordt hieronder uitgelegd in de paragraaf [[#Importfiltering|Importovererving]]
+#Aanmaken van relaties voor componenten die een specialisatie zijn van een basiscomponent. Zie verder paragraaf [[#Importovererving|Importovererving]]
+Stap 1 is standaardfunctionaliteit, de stappen 2 en 3 zijn GEMMA specifiek. De functionaliteit voor het verwerken van de GEMMA eigenschappen voor filteren en overerven zijn in opdracht van KING gemaakt.
+
+'''Wat wordt getoond op GEMMA online'''
+
+Na het importeren zijn de niet uitgefilterde views, de objecten en de relaties (uit model en aangemaakt met overerving) beschikbaar in de ArchiMedes repository om te worden gepubliceerd op GEMMA Online.
+
+Er zijn drie manieren van publiceren
+
+*'''Browsen;''' Standaard ArchiMedes pagina's die toegang bieden tot alle modellen, objecten, relaties en views in de repository
+*'''Embedden;''' Views en objecten uit de architectuurrepository worden getoond in teksten van GEMMA Online. Voor het opnemen van een view of een verwijzing naar een view zijn templates beschikbaar (zie [[Speciaal:ZoekopdrachtUitvoeren/Zoek_element|Zoekopdracht: Zoek element]])
+*'''Exporteren;''' Een model in ArchiMedes repository kan geexporteerd worden naar ArchiMate Exchange. Het model wordt in dit formaat beschikbaar gesteld.
+'''Wat wordt aangeboden op GEMMA koppelvlak'''\n\nEen gedeelte van het architectuurmodel wordt ook aangeboden als service, waar applicaties gebruik van kunnen maken. Er zijn op dit moment twee applicaties die gebruik maken van het GEMMA koppelvlak:\n\n*Softwarecatalogus (tool Drupal); De Softwarecatalogus gebruikt het GEMMA model voor leveranciers, gemeenten en samenwerkingen om hun softwarepakketten te inventarisaren en te visualiseren. 
+*Sturingsinformatie voor het maken van de Monitor Doelgerichte Dienstverlening (tool Qlik Sense)
+Op de ArchiMedes architectuurrepository is het GEMMA koppelvlak gemaakt. Het GEMMA koppelvlak is een webservice waarmee applicaties elementen uit het architectuurmodel kunnen raadplegen of een extra informatie kunnen toevoegen aan GEMMA views of export.
+
+Voor de Softwarecatalogus worden in het GEMMA koppelvlak nog extra filteringen uitgevoerd en worden enkele relaties rond referentiecomponenten afgeleid en als rechtstreekse relatie doorgegeven. De kennis over het gebruik van het architectuurmodel is zo zoveel belegd bij GEMMA Online. Eventuele modelwijzigingen kunnen hier opgevangen worden, waarmee het model voor de Softwarecatalogus stabiel en voorspelbaar is. 
+
+== Wat wordt geïmporteerd ==
+
+=== Filtering ===
+
+De importfiltering is gebaseerd op whitelisting. Alleen elementen en view die expliciet voor publicatie gemarkeerd zijn, worden gepubliceerd. Hiervoor wordt in het architectuurmodel de eigenschap 'Publiceren' gebruikt. Op basis van de waarde van deze eigenschap, wordt bepaald wat 'gepubliceerd' wordt in een omgeving.
+
+'''Filtering en omgevingen'''
+
+Het GEMMA architectuurmodel wordt getrapt gepubliceerd in een drietal omgevingen. De publicatiefilters definieren in welke omgeving de objecten en views gepubliceerd worden. Met drie omgevingen zijn er 4 filterinstelling:
+
+{|class="wikitable"
+|-
+|'''Eigenschap 'Publiceren'''
+|'''GEMMA raadpleegbaar op:'''
+|-
+|Niet
+|Alleen in BiZZdesign voor de GEMMA architecten
+|-
+|Redactie
+|Raadpleegbaar voor de GEMMA redacteuren met een redactie inlog.
+|-
+|GEMMA Online en redactie
+|Publiek te raadplegen voor gemeenten en samenwerkingen, leveranciers en andere geïnteresseerden
+|-
+|Softwarecatalogus en GEMMA Online en redactie
+|De view komt beschikbaar in de Softwarecatalogus om er pakketten op te kunnen plotten. De view wordt ook voor de filtering gebruikt, alle objecten op de view zijn publiek raadpleegbaar op GEMMA online (en daarmee ook beschikbaar voor de Softwarecatalogus)
+|}
+De filtering is niet onafhankelijk van elkaar, maar is een optelling. Ieder opvolgend niveau kan nooit meer bevatten dan het voorgaande niveau. De inhoud van de publicatie eigenschap dwingt dit ook af, het is niet mogelijk om een object te publiceren in de Softwarecatalogus als deze niet beschikbaar is op GEMMA Online etc, etc.
+
+'''Niet publiceren'''
+
+Views waarvan de eigenschap ''Publiceren'' geen waarde heeft of expliciet op de waarde 'Niet' is gezet worden niet gepubliceerd. In geen enkele omgeving. 
+
+Het publiceren is dus altijd een bewuste actie. 
+
+*Een nieuw gecreëerd element wordt alleen gepubliceerd als dit element ook wordt geplaatst op een view die gepubliceerd wordt;
+*Een nieuw gecreëerde view wordt alleen gepubliceerd als de eigenschap 'Publiceren' gezet wordt.
+'''Redactie'''
+
+Om een view en elementen op redactie te publiceren gelden de volgende filterregels:
+
+*Eerst wordt gekeken naar de views. Een view wordt op redactie geïmporteerd als de eigenschap ''Publiceren'' staat op '''Redactie''' of hoger
+*Views zonder de eigenschap ''Publiceren'' of met ''Publiceren''='Niet' wordt uitgefilterd
+* Objecten die niet op een view voorkomen worden uitgefilterd
+* Relaties waarvan één of beide endpoint objecten ontbreken worden uitgefilterd
+'''GEMMA Online en redactie'''
+
+Voor GEMMA Online gelden exact dezelfde filterregels als voor Redactie, met als verschil:
+
+*Alleen views met de eigenschap ''Publiceren''='''GEMMA Online en redactie''' of hoger worden geïmporteerd
+
+=== Overerving van relaties ===
+
+Tijdens de importfase worden voor componenten die een overervingsrelatie hebben extra relaties aangemaakt. Zie [[Archimate_conventies_en_modelleerafspraken#Overerven_van_relaties]] hoe overerving gemodelleerd moet worden.
+
+De extra relaties zijn gedefinieerd in het architectuurmodel, maar bestaan daar niet. In de import is functionelheid gemaakt om de gedefinieerde relaties ook werkelijk aan te maken.In de GEMMA repository zijn deze relaties niet meer te onderscheiden van 'gewone' relaties en dus ook te gebruiken voor publicatie.
+
+== Wat wordt getoond ==
+
+Alle geïmporteerde views, de objecten en de relaties zijn nu te raadplegen in de ArchiMedes repository of te gebruiken in de wiki-pagina's op redactie of GEMMA Online.
+
+'''Onderdrukken presentatie''' (TIJDELIJK)
+
+Echter er is een uitzondering gemaakt voor views met een speciale markering, deze worden niet overal getoond. In het model bevinden zich enkele beheerviews die niet zinvol zijn om te tonen via GEMMA Online. Deze views zijn er alleen om te voorkomen dat de objecten uitgefilterd zouden worden (zie [[#Beheerviews_voor_whitelisten_elementen|Beheerviews voor whitelisten elementen]]).
+
+Views waarvan de presentatie onderdrukt moet worden, worden als volgt gemarkeerd:
+
+*van een GEMMA view wordt de eigenschap 'Architectuurlaag' gemarkeerd met de waarde '..' (strakst waarde \"Niet tonen\", 'Beheerview' of 'Whitelistview') 
+*Geen nette oplossing, maar tijdelijk misbruik van een bestaande eigenschap. Vervangen door nieuwe eigenschap Niet Tonen met waarden 'ja/nee' 
+Views met onderdrukt presentatie worden verder \"Niet tonen view\" genoemd
+
+'''Browsen'''
+
+De volledige repository is te vinden op [[DisplayArchiMateModels|Overzicht GEMMA modellen in ArchiMedes.]]
+
+Ook de 'Niet tonen views' worden door ArchiMedes getoond. Wel worden enkele sjablonen aangepast die veel gebruikt worden. Nu in het vizier:
+
+*Sjabloon voor een object; onderin wordt een lijst getoond van alle views waarop het object staat. In deze lijst worden de 'Niet tonen views' niet getoond
+*..\n'''Embedden'''
+
+Views en objecten uit de architectuurrepository worden getoond in teksten van GEMMA Online. Elementen kunnen expliciet in de tekst worden opgenomen door met behulp van een sjabloonaanroep een verwijzing te maken naar het modelID en het elementID. De wiki toont dan de verwijzing of het element zelf. Voor het GEMMA model zijn ingevulde sjabloonaanroepen gemaakt.
+* [[Speciaal:ZoekopdrachtUitvoeren/Zoek_element|Zoek element]]. Zoeken naar de sjabloonaanroep van een element .
+* [[GEMMA views en sjabloonaanroepen]]: In dit overzicht vind je alle GEMMA 2 views en de bijbehorende sjabloonaanroep voor het tonen van de view of een tabel met alle elementen 
+* [[GEMMA elementen en sjabloonaanroepen]].  In dit overzicht vind je de GEMMA 2 elementen en de bijbehorende sjabloonaanroep voor het tonen van een verwijzing op een pagina. 
+
+'''Exporteren'''
+
+Via de pagina [[download GEMMA ArchiMate-repository]] wordt een download in ArchiMate Exchange beschikbaar gesteld. Deze download wordt aangemaakt met ArchiMedes.
+
+De download bevat exact hetzelfde model als wat op GEMMA Online gepubliceerd wordt. Het is dus een subset van het architectuurmodel uit BiZZdesign, aangezien alles elementen die niet op een voor publicatie gemarkeerde view staan zijn uitgefilterd. Tevens is het uitgebreider, aangezien alle overerfde relaties in de download aanwezig zijn. En als laatste, de  'Niet tonen views' worden uitgefilterd uit de download.
+
+== Wat wordt uitgewisseld via koppelvlak ==
+
+Het GEMMA koppelvlak is gemaakt om de GEMMA Softwarecatalogus gebruik te laten maken van het GEMMA architectuurmodel. Via het GEMMA koppelvlak kan de Softwarecatalogus de architectuurrepository bevragen en delen van het model in zijn eigen datase overnemen.
+
+Het GEMMA koppelvlak raadpleegt het gefilterde architectuurmodel zoals hierboven is beschreven en geeft daarvan weer een deel door. Het koppelvlak is gedocumenteerd op de pagina [[Functionele beschrijving list functie]]. '''Let op''': de daar gedocumenteerde filtering wordt vervangen door de paragraaf hieronder.
+
+=== Filtering ===
+
+De GEMMA koppelvlak list-service biedt een gedeelte van het architectuurmodel aan aan o.a. de Softwarecatalogus. Niet alle elementtypen worden via de service aangeboden en voor de wel aangeboden elementen gelden de volgende filterregels:
+
+{|class="wikitable"
+|-
+|'''GEMMA list-service (objecten)'''
+|'''Filterregels'''
+|-
+|Models - Opvragen GUIDs van modellen voor de Softwarecatalogus. Wordt door Softwarecatalogus niet gebruikt
+|Eigenschap Publicatie van de architectuurmodellen is 'Softwarecatalogus'
+|-
+|Views - beschikbaar views om op te plotten
+|Eigenschap Publicatie van de views is 'Softwarecatalogus en GEMMA Online en redactie'
+|-
+|Referentiecomponenten (referencecomponents)
+|Alle referentiecomponenten waarvoor geldt:
+
+*ArchiMate ApplicationComponent
+*GEMMA type = Referentiecomponent
+*GEMMA status='In gebruik'
+Door de eerste twee eigenschappen hebben deze objecten in de import de categorieaanduiding 'Referentiecomponenten'
+
+De GEMMA status bepaalt of het element wordt aangeboden aan de Softwarecatalogus (List API filtert op GEMMA status='in gebruik')
+|-
+|Standaarden (standards)
+|Alle standaarden waarvoor geldt:
+
+*ArchiMate Constraint
+*GEMMA type = 'Standaard'
+*GEMMA status='In gebruik'
+Door de eerste twee eigenschappen hebben deze objecten in de import de categorieaanduiding 'Standaard'.
+ 
+De GEMMA status bepaalt of het element wordt aangeboden aan de Softwarecatalogus (List API filtert op GEMMA status='in gebruik')
+|-
+|Standaardversies (standardversions)
+|Alle standaardversies waarvoor geldt:
+
+*heeft een specialisatie relatie met een standaard die voldoet aan bovenstaande eisen;
+*ArchiMate Constraint
+*GEMMA type = 'Standaardversie'
+Objecten die voldoen aan deze eisen krijgen in ArchiMedes de categorieaanduiding 'Standaardversies'. 
+
+Standaardversie hebben een eigenschap 'status'. Dit is de status van de standaardversie zoals bepaald door de beheerder van de standaard. Alle standaardversies worden geïmporteerd in de Softwarecatalogus
+|-
+|Buitengemeentelijke voorzieningen
+|Alle applicatiecomponenten waarvoor geldt:
+
+*ArchiMate ApplicationComponent
+*GEMMA type='Buitengemeentelijke voorziening'
+*GEMMA status='In gebruik'
+Applictiecomponenten die voldoen aan het GEMMA type krijgen in ArchiMedes de categorieaanduiding 'Buitengemeentelijke voorzieningen'
+
+De GEMMA status bepaalt of het element wordt aangeboden aan de Softwarecatalogus (List API filtert op GEMMA status='in gebruik')
+
+|-
+|Applicatieservices
+|Alle applicatieservices waarvoor geldt:
+
+*ArchiMate ApplicationService
+*Gerealiseerd door een referentiecomponent die voldoet aan de hierboven staande eisen of
+*geaggregeerd door een applicatieservice die is toegekend aan een referentiecomponent
+*In het model kan een derde aggregatieniveau voorkomen. De List API geeft maximaal 2 niveaus door.
+
+Buitengemeentelijek applicatieservices
+*Gerealiseerd door een buitengemeentelijke voorziening die voldoet aan de hierboven staande eisen
+*De GEMMA kent geen subservices van buitengemeentelijke applicatieservices
+*buitengemeentelijke applicatieservices worden niet door de List API aangeboden, maar worden gebruikt om de standaarden van de BV te vinden.
+|-
+|Taxonomie standaard gradaties
+|Alle beperkingen (in ArchiMate3 groepen) waarvoor geldt:
+
+*ArchiMate Constraint
+*GEMMA type = Groep
+*GEMMA subtype = Gradaties
+Let op: door de deze eigenschappen hebben deze objecten in ArchiMedes de categorieaanduiding 'Standaardclassificatie'
+|-
+|Taxonomie bedrijfsfuncties
+|Alle bedrijfsfuncties waarvoor geldt:
+
+*ArchiMate BusinessFunction
+*GEMMA Type = Bedrijfsfunctie OR
+*GEMMA Type = Bedrijfsfunctie domein OR
+*GEMMA Type = Bedrijfsfunctie laag
+|-
+|Taxonomie doelgroepen
+|Alle bedrijfsrollen waarvoor geldt:
+
+*ArchiMate BusinessRole
+*GEMMA type = Groep
+*GEMMA subtype = Doelgroep
+|-
+|Taxonomie domeinen
+|Alle groepen waarvoor geldt:
+
+*ArchiMate grouping
+*GEMMA type = Groep
+*GEMMA subtype = Domein
+|}
+
+=== Afleiden van relaties ===
+
+In het GEMMA koppelvlak worden - met name voor de Softwarecatalogus - enkele afgeleide relaties toegevoegd en meegegeven in de list-service. Deze afgeleide relaties worden niet opgeslagen en zijn ook geen onderdeel van het architectuurmodel. Door deze keuze is:
+
+*Minder beheer en kans op fouten in het architectuurmodel
+*Eenvoudiger architectuurmodel om te gebruiken voor gemeenten en leveranciers (minder relaties is lagere complexiteit
+*Het expliciet maken van de impliciete relaties gedocumenteerd en geïmplementeerd op één plek. 
+Het afleiden van relaties is gebouwd als onderdeel van de list-service. De volgende relaties worden afgeleid:
+
+*Referentiecomponent en applicatie(sub)functies
+:*Alle applicatiefuncties en hun hierarchie wordt in de list-service applicatiefuncties aangeboden;
+:*Een referentiecomponent heeft een toekenningsrelatie met één of meer applicatiefuncties
+::*in het model wordt de relatie met de parent-applicatiefuncties opgenomen
+:*Listservice referentiecomponent geeft per referentiecomponent de relaties met applicatiefuncties:
+::*Applicatiefunctie (parent); bestaat in model, wordt overgenomen;
+::*SubApplicatiefunctie (child); impliciet in hierarchie applicatiefuncties, wordt afgeleid
+::*Hierarchie kent soms een derde niveau voor, deze geef je niet door.
+::*Uitzonderingen/nieuwe inzichten kunnen wij dan opvangen.
+*Referentiecomponent en (Softwarecatalogus) taxonomie (de zogenaamde facets)
+:*Zie de pagina [[Modelleren volgens kennismodel]] voor de afgeleide relaties
+:*Listservice referentiecomponent geeft per referentiecomponent de relaties met de taxonomie:
+::*Domeinen; zie in view de relatie Domeinfilter
+::*Doelgroepen; zie in view de relatie Doelgroepfilter
+::*Bedrijfsfuncties; zie in view de relaties Bedrijfsfunctiefilter (hierarchie)
+*Referentiecomponent en standaardversie
+:*In het architectuurmodel wordt vastgelegd welke standaarden voor een referentiecomponent verplicht danwel aanbevolen zijn
+:*Listservice referentiecomponent geeft per referentiecomponent de relaties met de standaardversie:
+::*Relatie referentiecomponent - standaardversie wordt afgeleid van de relaties referentiecomponent - standaard
+::*zie in de view de relatie 'Afgeleide aanbevolen of verplichte standaardversie'
+De afgeleide relaties zijn op te vragen met de listservice (en ook nergens anders te zien). Op de pagina [[Testen SWC API]] zijn de aanroepen van alle listservices te vinden. Om de afgeleide relaties te zien, klik op een 'Referentiecomponent-service'. Je ziet dan een weergave in JSON.
+
+=== Filteren van relaties ===
+
+{|class="wikitable"
+|-
+|'''GEMMA list-service (objecten)'''
+|'''Filterregels op verbindingsrol'''
+|-
+|Was-wordt-lijst (GEMMA 2 migratie, te verwijderen)
+|Alle relaties waarvoor geldt:
+
+*is een associatie relatie met GEMMA 1 referentiecomponent
+*heeft verbindingsrol 'was - wordt'
+|-
+|Aanbevolen - verplichte standaardversie
+|Alle afgeleide relaties waarvoor geldt:
+
+*Realisatierelatie Referentiecomponent - Standaard met een verbindingsrol 'Aanbevolen' of 'Verplicht
+*Maak relatie tussen Referentiecomponent en alle Standaardversies waarvoor geldt:
+:*Standaardversie is specialisatie van Standaard
+|}
+
+== Beïnvloeding filtering en troubleshooting ==
+
+=== Beheerviews voor whitelisten elementen ===
+
+Objecten die NIET voorkomen op views worden NIET geïmporteerd. Nu zijn er in de GEMMA meerdere objecten, waarvoor geen zinnige view bestaat. Deze objecten moeten echter wel geïmporteerd en gepubliceerd worden. De gekozen oplossing is om voor deze objecten een - eenvoudige - view te maken, louter en alleen om ervoor te zorgen dat deze niet uitgefilterd worden.
+
+In het GEMMA model zijn de volgende 'Beheerviews' gemaakt (Viewtype = Contentfilter)
+{{#vardefine: modelpage|{{#ask: [[Semantictitle::GEMMA]] [[Categorie:ArchiMateModels]]|link=none}} }}
+{{#ask: [[Categorie:ArchiMateViews]][[Occurs in model::{{#var:modelpage}}]][[Viewtype_nl::Contentfilter]]|mainlabel=View|?Viewtype_nl#=Type view|limit=500|headers=plain|sort=Semantictitle}}
+
+Als je dus bijvoorbeeld een standaardversie toevoegd, vergeet dan niet deze ook op een Beheerview te plaatsen. Immers, objecten die niet op een view staan, worden door de import uitgefilterd.
+
+=== Troubleshooten - element niet gepubliceerd ===
+
+Een view is niet gepubliceerd
+
+*is de eigenschap Publiceren gezet?
+Verschijnt de view op juiste plaats in de overzichtstabel?
+
+*controleer de view eigenschappen 'domein' en 'architectuurlaag'
+Een object is niet gepubliceerd
+
+*staat het object op een view?
+:*de standaarden en standaardversies kennen geen zinvolle view, hiervoor zijn speciaal 'publiceer' views gegenereerd om ervoor te zorgen dat deze toch gepubliceerd worden. De standaarden worden vervolgens in tabellen op gemmaonline getoond.
+:*Applicatiefuncties staan op de applicatiefunctiesviews, maar de applicatie(sub)functies niet!
+:*zie [[Publicatiefilters_en_modelleerafspraken#ArchiMedes_import_views|ArchiMedes import views]]
+:*zie de map 'importeren ArchiMedes' voor alle 'publiceer' views
+Een object met een GEMMA specialisatie ontbreekt in lijst ...
+
+*Een standaard is alleen een standaard als het GEMMA_type de waarde 'standaard' heeft
+*idem voor alle andere specialisaties
+Een Referentiecomponent komt niet in de Softwarecatalogus
+
+*is het GEMMA_type gezet op 'Referentiecomponent?
+*is de Referentiecomponent geaggregeerd door de groep 'Referentiecomponenten in SWC'
+*is de GEMMA_status gezet op 'in gebruik'?

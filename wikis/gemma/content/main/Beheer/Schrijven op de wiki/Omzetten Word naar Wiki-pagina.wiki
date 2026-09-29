@@ -1,0 +1,181 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's, 
+}}
+[[Categorie:Schrijven op de wiki]]
+__TOC__
+Er zijn vele manieren om een Word document om te zetten naar een Wiki-pagina. Dit is beschreven op [https://en.wikipedia.org/wiki/Help:WordToWiki Help:WordToWiki].
+
+Deze pagina beschrijft de omzetting in een aantal stappen met twee tools. Beide tools zijn goed en afhankelijk van het soort document en persoonlijke voorkeur kies je er een. 
+
+Voor het omzetten van GEMMA documenten goede ervaring met onderstaande tools. Kies je tool en maak daarbij gebruik van deze verschillen.
+
+{| class="wikitable"
+|+
+!'''Visual editor van de wiki'''
+!'''Pandoc (command line programma)'''
+|-
+| Snelle start, niks installeren
+*+ makkelijk in gebruik. Gewoon knippen en plakken vanuit Word.
+*- voor documenten met veel footnotes en plaatjes toch wel flink wat reparatiewerk voordat de pagina er goed uitziet
+*+/- behoudt nummering van headings
+|Eenmaal geïnstalleerd en werkend, is omzetten met Pandoc aanzienlijk minder werk.
+*- vereist installatie van programma
+*+/- verwijdert nummering van headings. 
+** Vergelijken met originele Word versie is lastig
+**minder reparatiewerk, wiki pagina's gebruiken geen nummering
+*+ footnotes keurig omgezet naar Wiki referenties
+*+ placeholder voor plaatjes, met originele bestandnamen uit Word document
+|}
+
+==Stappen==
+
+
+===Stap 1: Aanmaken pagina===
+
+Voorbereiding op de wiki om te starten met omzetten
+
+{| class="wikitable"
+!Actie
+!Wiki
+|-
+|Opzoeken en aanmaken pagina
+|Zoek op de gewenst naam van de pagina
+*kies bovenin het zoekscherm voor de rode link aanmaken pagina
+*als de pagina bestaat, andere paginanaam kiezen
+|-
+|Metadateren
+|Zet bovenin de pagina<pre>
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Ontwikkeling
+}}
+[[Category:Common Ground]]
+</pre>
+|}
+
+===Stap 2: Omzetten tekst===
+{| class="wikitable"
+|+
+!Actie
+!MediaWiki Visual editor
+!Pandoc
+|-
+|Bronbestand voorbereiden
+|<MS Word>
+Selecteer en kopieer de om te zetten inhoud van een document (Ctrl-c)
+|<File manager of cmd-line>
+Maak een kopie van het Word-document in een werkdirectory. Op de command-line
+* <code>cd <werkdirectory></code>
+|-
+|Omzetten
+|<Visuele editor van de wiki>
+*plakken (Ctrl-v)
+*geduld, MS Word wordt omgezet naar wikitekst
+*Opgemaakte tekst zichtbaar in Visuele editor
+*wiki editer omschakelen van 'visueel bewerken' naar 'wikicode bewerken' (icoon pennetje)
+*kopieer de wikicode (Ctrl-a, Ctrl-c)
+|<cmd-line>
+* <code>pandoc -t mediawiki "Architectuur duurzaam toegankelijk informatiebeheer_v0.31_test.docx" > mydocument.wiki</code>
+|-
+|Wikicode nabewerken 
+| colspan="2" |Met een teksteditor, bijvoorbeeld '''notepad++''' of '''VScode''', .. de wikicode nabewerken. Zie ook [[Editor voor schrijven wiki-pagina]]
+
+Bij het zoeken en vervangen helpt het erg als je hier reguliere expressie gebruikt. Hieronder worden enkele reguliere expressies gebruikt
+|-
+|
+|Open nieuw bestand
+* wikicode van Visual editor plakken (Ctrl-v)
+|Open mydocument.wiki
+|-
+|Algemeen
+| colspan="2" |Zoek & vervang (met reguliere expressie)
+
+* verwijder dubbele regels. Zoek '\n\n\n' en vervang met '\n\n' (in VSCode kan dit ook door meerdere (lege) regels in zoekvenster te plakken)
+|-
+|Lijsten
+| colspan="2" |
+* Eerste bullet in een cel van een tabel moet op een nieuwe regel staat. 
+** Vervang '|*' door '|\n*'
+* numbered lists
+** zoek naar '\n\d\. ' en vervang met '# '
+|-
+|
+|
+* vervang bullets voor '* ' (zoek op '·       ')
+|
+|-
+|HTML span
+|
+|Verwijder HTML <nowiki><span></nowiki>
+
+* Zoek met reguliere expressie <code><nowiki><span id=".*"></span></nowiki></code> en vervang met niets
+|-
+|Referenties
+|Voor (footnote) verwijzingen 
+
+*vervang footnotes voor directe verwijzingen (zoek op ftn)
+
+Footnote naar (nog niet bestaande wiki pagina)
+* als het document waarnaar verwezen wordt ook een wiki-pagina is of moet worden
+**maak een lege pagina aan zoals hierboven staat
+**plak tijdelijk de link naar het document in de lege pagina.
+**verwijs voor nu naar deze pagina.
+* Ook Word opmerkingen worden als een soort footnotes meegenomen. Verwijder deze, of zorg ervoor dat deze niet meegekopieerd zijn
+|
+|}
+
+===Stap 3: Opnemen plaatjes in tekst===
+
+Plaatjes worden door geen van de tools meegekopieerd naar de wiki. Hoe je plaatjes opneemt in een tekst staat beschreven in paragraaf [[Schrijven op GEMMA online#Afbeelding toevoegen|Afbeelding toevoegen]]  
+
+{| class="wikitable"
+!Actie
+!WikiMedia Visual editor
+!Pandoc
+|-
+|Plaatjes klaarzetten
+| colspan="2" |Word-bestanden zijn zip-bestand. Door een Word-bestand als een zip-bestand uit te pakken zijn de plaatjes als bestanden te benaderen
+* maak een copie van het Word-bronbestand (dan kun je het origineel in Word open laten staan)
+*hernoem bestand door er de extensie .zip achter te plakken (myDocument.docx.zip)
+*Rechts klikken op Word-zip bestand en unzippen naar folder met zelfde naam als document
+*In de folder myDocument.docx\word\media vind je de plaatjes in origineel formaat
+|-
+|Bestandsnamen 
+|Word bestand en plaatjes folder naast elkaar openen
+*zoek plaatje op en Word
+*functionele naam - hernoem het mediabestand en maak deze gelijk aan de Caption/bijschrift/iets inhoudelijks. 
+*of genummerd - je kunt ook de nummering van de plaatjes in Word aanhouden, maar dan kun je makkelijk fouten maken (plaatje op verkeerde plek)
+|Houd de bestandsnamen met nummering uit Word aan
+
+*Geef de bestandsnamen van de plaatjes een prefix, bijvoorbeeld de naam van de wiki-pagina waar deze inkomen
+*File manager doublecmd bevat hiervoor een multi-rename tool
+|-
+|Uploaden
+| colspan="2" |Alle plaatjes uploaden
+*Eén voor één met [[Speciaal:Uploaden|Bestand uploaden]]
+* Of in één keer met [[Speciaal:BulkFileImport]]. Met deze speciale pagina kunnen bestanden, die in een ZIP-file zitten, geïmporteerd worden
+|-
+|Bestandsverwijzing
+| colspan="2" |Voorbeeld van een bestandsverwijzing in wikicode
+<pre>[[<bestandverwijzing>|<size>x|thumbnail|<position>|<bijschrift>]]
+
+[[Bestand:Aanleiding - Common Ground vijf-lagen model.jpg|800px|thumbnail|center|Het Common Ground vijf-lagen model]]
+</pre>
+|-
+|
+|Met het Word bestand naast de wikicode geopend
+
+* plak een bestandverwijzing
+* pas deze aan zodat naar het juiste plaatje wordt verwezen
+|De door Pandoc omgezette tekst bevat verwijzingen naar de Word-plaatjes.
+
+* Zoek '[[Bestand:media/image' en vervang door '[[Bestand:myDocument_image'
+* Ook de <size> is vooringevuld, maar deze is in de wiki styling erg klein. 
+|-
+|
+| colspan="2" |Met eerlijk handmatig knip en plakwerk alle plaatjesverwijzingen zonodig voorzien van een 
+
+* bijschrift, 
+* een goede <size> en 
+* <position>
+|}

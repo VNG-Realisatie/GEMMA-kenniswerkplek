@@ -1,0 +1,17 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Uitleg GEMMA architectuur]]
+Waar wordt de GEMMA gebruikt
+
+In projectarchitecturen
+
+Uit Portfolio model
+* Kanalen
+* GIBIT
+* SWC
+
+
+In standaardspecificaties
+Standaardspecificaties bevatten een architectuurhoofdstuk. 
+Een standaardspecificatie gebruikt de GEMMA referentiecomponenten en standaarden.

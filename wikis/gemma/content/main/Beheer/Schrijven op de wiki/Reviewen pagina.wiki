@@ -1,0 +1,34 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's
+}}
+[[category:Schrijven op de wiki‎ ]]
+== Pagina reviewen met comments ==
+Het is mogelijk om gebruikers met toegang tot de redactie-wiki teksten te laten reviewen. Hiervoor gaan ze naar de betreffende pagina en door te klikken op "Weergaven - Opmerkingen" aan te klikken kunnen opmerkingen in de tekst geplaatst worden. Dit doe je door met je muis tekst te selecteren. Er opent een knop waarop geklikt kan worden om een opmerking te plaatsen.[[Afbeelding:Knop opmerking plaatsen.png]]
+
+Klik daarop en er opent een venster waar je je opmerkingen kwijt kunt.
+
+[[Afbeelding:Veld om opmerking te plaatsen.png]]
+
+Als je een opmerking hebt toegevoegd, klik je op "Opslaan". 
+Wanneer je dan weer terug komt op de pagina en deze in de modus "Opmerkingen" via "Weergaven" zet, ontvang je de melding dat er een "Opmerking" is geplaatst.
+
+
+De tekst waarover een opmerking is gemaakt heeft een rand om zich heen en is geel gearceerd.
+
+[[Afbeelding:Tekst met opmerking.png]]
+
+Door op de opmerking te klikken opent zich het venster met de opmerkingen en de acties die je erbij kan uitvoeren.
+
+[[Afbeelding: Opmerkingen overzicht.png]]
+
+Acties die mogelijk zijn:
+
+x - verbergen van de opmerking
+
+Vink - opmerking accepteren
+
+prullenbak - opmerking verwijderen
+
+== Overzicht alle reviewopmerkingen ==
+
+Ga naar de [[Speciaal:SmartComments]] voor een lijst van alle gemaakte opmerkingen.

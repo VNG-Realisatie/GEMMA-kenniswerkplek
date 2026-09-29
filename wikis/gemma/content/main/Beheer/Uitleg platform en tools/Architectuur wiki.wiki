@@ -1,0 +1,122 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Uitleg platform en tools]]
+GEMMA Online is de website waar (het grootste deel van de) GEMMA-producten worden gepubliceerd. GEMMA Online is een zogenoemd semantisch platform. Dat maakt het mogelijk om verbanden aan te brengen tussen de onderdelen van GEMMA, bijvoorbeeld tussen standaarden en de referentiecomponenten waarop deze van toepassing zijn. GEMMA Online is een MediaWiki platform uitgebreid met Semantic MediaWiki en het WikiXL kennisplatform. 
+
+==Architectuur GEMMA wiki==
+De GEMMA wiki wordt aangeboden in de WikiXL cloud service. Het technisch en applicatief beheer wordt verzorgd door ArchiXL.
+
+Ook al wordt het hele platform voor ons beheerd, toch is het nuttig om te weten wat de softwarearchitectuur van de wiki is. De opbouw van het WikiXL platform is gedocumenteerd in de WikiXL opleidingswiki, ga naar https://opleiding.wikixl.nl/index.php/Kennismodel_en_platform.
+
+In de basis is de GEMMA wiki opgebouwd uit drie grote blokken:
+* MediaWiki, de software achter Wikipedia
+* Semantic MediaWiki; een extensie op MediaWiki voor het werken met gestructureerde data
+* WikiXL kennismanagementplatform; extensies om informatiemodellen en ArchiMate-modellen te kunnen importeren, exporteren en tonen.
+
+De GEMMA wiki maakt gebruik van functionaliteit van alle drie de blokken. Om te weten hoe iets werkt, moet je dus weten van welke blok gebruik wordt gemaakt en waar de documentatie van dat blok te vinden is. 
+
+{{ToonViewGEMMA|viewid=e584d3e0-7cf4-4529-93be-d010177319da|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}} <!--Wiki applicatiearchitectuur (ArchiMateView)-->Zie ook de uitleg op de [https://opleiding.wikixl.nl/index.php/Kennismodel_en_platform WikiXL opleidingswiki]
+
+==WikiXL kennismanagementplatform==
+Het WikiXL kennisplatform zijn (Semantic) MediaWiki extensies voor het werken met kennismodellen.
+
+SmartPublish en SmartComment maken het mogelijk om in een besloten wiki samen te werken
+
+===SmartPublish===
+De extensie SmartPublish synchroniseert content van de redactie-wiki naar de publicatie-wiki: een pagina met een aanroep van [[:Sjabloon:Publicatie]] en de juiste paginastatus wordt automatisch (batchpublicatie, 2x per dag) of realtime gepubliceerd.
+
+* Zie [[Beheren SmartPublish]] voor het GEMMA-specifieke beheer (dashboard, categorieën die extra laten publiceren, wat handmatig moet)
+* Zie [[Publiceren pagina]] voor de redacteursgids (een pagina voor publicatie markeren, statussen, realtime/batch publiceren)
+* Zie de externe [https://opleiding.wikixl.nl/index.php/SmartPublish WikiXL-opleiding SmartPublish] voor de volledige leveranciersdocumentatie — anders dan bij SmartConnectArchiMate bestaat hiervan geen interne spiegelpagina
+* De leverancier installeert zelf enkele pagina's (o.a. help-pagina's over publiceren en verwijderen); zie [[:Categorie:Kennismodule SmartPublish]]
+
+===SmartCore===
+De extensie SmartCore maakt het mogelijk om in Semantic MediaWiki kennismodellen te definiëren en gegevens conform het kennismodel vast te leggen en te tonen. 
+
+De GEMMA wiki kent beperkt enkele met SmartCore gemaakte kennismodellen
+* [[GEMMA Begrippenkader]]. Gebaseerd op glossary, is dit een kennismodel?
+* vergaderingen
+* ...
+
+Zie de [[:Categorie:Kennismodellen]] voor een lijst van met SmartCore beheerde kennismodellen op deze wiki.
+
+===SmartConnectArchiMate (ArchiMedes)===
+ArchiMedes is de aanduiding waaronder deze extensie binnen GEMMA meestal ter sprake komt; het is dezelfde extensie als SmartConnectArchiMate. De extensie biedt de functionaliteit voor het importeren, tonen en exporteren van ArchiMate-modellen. Daarnaast biedt de extensie dynamische views (inkleuren op basis van custom properties), SMW-queries op ArchiMate-relaties en configuratie-instellingen.
+
+SmartConnectArchiMate heeft de ArchiMate-taal uitgewerkt in een kennismodel
+* Zie [[SmartConnectArchiMateHelp nl]] voor de volledige documentatie
+* Zie [[:Categorie:KnowledgeModel_ArchiMate]] voor het kennismodel
+
+'''ArchiMedes-browser'''
+
+Bij het navigeren door een geïmporteerd model genereert SmartConnectArchiMate zelf een keten van pagina's: vanaf [[DisplayArchiMateModels]], via overzichten van elementen/relaties/views, tot de detailpagina van een los element, relatie of view. Deze browser werkt standaard en toont alle technische ArchiMate-eigenschappen. Zie [[SmartConnectArchiMateHelp nl#Bekijken van en navigeren door ArchiMate-modellen|SmartConnectArchiMateHelp nl]] voor de volledige uitleg van deze navigatie.
+
+We maken gebruik van het WikiXL platform om ArchiMate modellen en teksten met elkaar in samenhang te kunnen beheren en publiceren, op twee onderscheiden manieren.
+
+'''Overrule van de ArchiMedes-browser'''
+
+Voor de detailpagina van een los object (Element, Relationship, View, ...) herkent ArchiMedes automatisch een sjabloon <code>Sjabloon:DisplayArchiMate&lt;Type&gt;Custom</code> zodra dat bestaat, en gebruikt dat in plaats van het standaardsjabloon — zonder dat daar ergens naar verwezen hoeft te worden. Zo toont [[Sjabloon:DisplayArchiMateElementCustom]] alleen de voor GEMMA relevante eigenschappen, in plaats van de volledige technische lijst. Voor het tonen van de eigenschappen, relaties en views is een herbruikbare sjabloonset gebouwd: het ArchiMedes-specifieke deel (zie [[Sjabloon:LibraryArchiMedesCustom]]) en het generieke, ook buiten ArchiMedes herbruikbare deel — onder andere door [[Sjabloon:ToonElement]] — (zie [[Sjabloon:LibraryToonArchiMate]]). De vendor-sjablonen tonen en vastleggen (eigenschappen/categorieën zetten) in één blok; GEMMA splitst dat bewust — vastleggen gebeurt in [[Sjabloon:SmartCoreEpilogue]], tonen in het Display-sjabloon. Zie [[Sjabloon:LibraryArchiMedesCustom]] voor de volledige uitleg en het stappenplan om zelf een nieuwe Custom te bouwen.
+
+De overzichtspagina's van de browser zelf (zoals [[DisplayArchiMateModels]] of [[DisplayArchiMateElements]]) kennen dit mechanisme niet en kunnen alleen via directe bewerking aangepast worden — met het risico dat een module-upgrade die wijzigingen overschrijft. GEMMA heeft daarom voor navigatie door haar eigen domeinen een aparte sjabloonset gebouwd ([[Sjabloon:ToonDomein]]) in plaats van deze pagina's te overrulen.
+
+'''Tonen van ArchiMate-inhoud op een eigen pagina'''
+
+Los van browser en overrule bestaan sjablonen om ArchiMate-inhoud te tonen op een gewone, zelfgeschreven GEMMA-pagina (bijvoorbeeld een standaard- of referentiecomponentenpagina). Deze worden expliciet in de wikitekst aangeroepen; GEMMA bepaalt zelf naam en inhoud. Bijvoorbeeld: [[Sjabloon:ToonViewGEMMA]] toont een view, [[Sjabloon:ToonElement]] toont de eigenschappen van één element.
+
+'''Opmaak van tekstpagina'''
+*Sjablonen voor tekstopmaak
+**bijvoorbeeld de landingspagina, archiveringsbalk, een quote, etc.
+
+'''URL's en paginanamen'''
+*URL's
+**De naam en de titel van een pagina zijn bij voorkeur hetzelfde
+**De naam van de pagina wordt gebruikt voor de URL
+**ArchiMate objecten zijn in de wiki pagina's met speciale ArchiMate eigenschappen en ArchiMate categorieën.
+***De paginanaam van een ArchiMate Object is een GUID
+
+==Infrastructuur wiki==
+
+De GEMMA wiki wordt beschikbaar gesteld vanuit de WikiXL cloud service. Technisch en applicatief beheer wordt door de leverancier ArchiXL verzorgd. In de infra-plaat hieronder een impressie van de in deze cloud gebruikte systeemsoftware. 
+
+Belangrijk voor ons uit de plaat is:
+* de GEMMA wiki draait in een OTAP-straat. Wij hebben toegang tot de Acceptatie- en Productieservers (staging is synoniem voor acceptatie)
+* op de pagina [[Releasen GEMMA ArchiMate-model]] vind je de voor ons relevant URL's naar de A en P servers
+* iedere server biedt twee wiki's aan:
+** redactie voor het beheren van de content
+** publicatie voor het op Internet beschikbaar stellen van de content
+** de content wordt van de redactie-wiki met [[Beheren SmartPublish | SmartPublish]] gekopieerd naar de publicatie-wiki
+
+{{ToonViewGEMMA|viewid=1bc573f6-597b-4346-aa79-19286bec5aed|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}} <!--Wiki infra (ArchiMateView)-->
+
+Zie de pagina [[Speciaal:Softwareversie]] voor de geïnstalleerde MediaWiki versie en een overzicht van de geïnstalleerde extensies
+
+<div class="mw-collapsible mw-collapsed"><div class="mw-collapsible-header">
+== Omgevingen ==
+</div><div class="mw-collapsible-content">
+=== Archi repository ===
+
+De Archi ArchiMate-repositories worden beheerd in een centrale git-repository. Je vindt de repositories onder de organisatie [https://github.com/VNG-Realisatie VNG Realisatie op GitHub]
+
+In de repository wordt samengewerkt aan de laatste versie. Er is één omgeving waarvandaan de laatst goedgekeurde versie gereleased wordt.
+
+=== Wiki ===
+
+De Wiki kent de omgevingen:
+* '''Ontwikkel''': Dit is de lokale omgeving voor de ArchiXL ontwikkelaar. 
+* '''Test''': Testomgeving voor ArchiXL.
+* '''Staging''': Accepteren van nieuwe versie ArchiXL platform. Kan ook gebruikt worden voor het testen van grote wijzigingen in een ArchiMate model. In principe bevat staging een kopie van de productieomgeving of loopt deze één versie voor op productie.
+** '''Redactie''': Voor accepteren, ontwikkelen en testen sjablonen. Ga naar https://gemma2-redactie.staging.wikixl.nl/
+** '''Publicatie''': Voor het accepteren van ArchiXL releases. Zie https://gemma2.staging.wikixl.nl/
+* '''Productie''': bestaat uit twee omgevingen:
+** GEMMA online voor gemeenten en leverancier. Te herkennen aan de URL https://gemmaonline.nl/
+** Redactieomgeving voor VNG Realisatie. Te herkennen aan de URL https://redactie.gemmaonline.nl/
+
+=== Softwarecatalogus ===
+
+De Softwarecatalogus maakt gebruik van verschillende omgevingen voor ontwikkel-, test-, acceptatie- en productiewerkzaamheden.De verschillende omgevingen hebben de volgende functie:
+* '''Ontwikkel''': Dit is de lokale omgeving voor de ArchiXL ontwikkelaar. 
+* '''Test''': Testomgeving voor integratietesten en deployments door ontwikkelaars en testers van de huidige Drupal leverancier.
+* '''Acceptatie''': Acceptatie en staging zijn synoniemen. Bedoeld voor het testen en accepteren van releases door de VNG realisatie.
+* '''Productie''': Dit is de live omgeving van de Softwarecatalogus.
+</div></div>

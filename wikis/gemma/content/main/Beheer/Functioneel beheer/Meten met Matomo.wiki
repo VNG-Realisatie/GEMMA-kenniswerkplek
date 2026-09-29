@@ -1,0 +1,22 @@
+Om inzicht te hebben in het gebruik van GEMMA Online en de GEMMA softwarecatalogus door bezoekers wordt er gebruik gemaakt van het open source webanalytics pakket [https://matomo.org Matomo]. 
+
+== Toegang tot Matomo ==
+Om toegang tot de [https://statistics.wikixl.nl/index.php Matomo omgeving van Kenniscentrum Architectuur] is een gebruikersnaam en wachtwoord nodig. Deze zijn aan te vragen via support van ArchiXL.
+
+== Hoe werkt Matomo? ==
+In onderstaand figuur staat een weergave van Matomo wanneer je daar ingelogd bent. Onder het figuur staat uitleg over de verschillende opties.
+
+[[Bestand:Matomo dashboard.png|alt=Matomo dashboard|Matomo dashboard]]
+
+* Rapportages - deze zijn onderverdeeld in informatie over bezoekers, zoals gebruik van soort apparaat, en over gedrag(wat doet een bezoeker op de website)
+* Wisselen tussen websites - zowel GEMMA Online als de GEMMA Softwarecatalogus worden gemeten met Matomo. Via dit menu kan je wisselen tussen de statistieken van de verschillende websites.
+* Periode selecteren - statistieken over één dag zijn niet altijd veelzeggende. Via deze optie kan je verschillende periodes selecteren, zoals dag, week, maand, jaar en datumbereik. Probeer de optie van datumbereik te beperken. Matomo zal dit dan real-time moeten uitrekenen en dat kan ervoor zorgen dat het even op zich laat wachten.
+* Segment selecteren - een segment is een deel van de complete verzameling. Een segment is bijvoorbeeld alle bezoekers die met een smartphone de website bezoekt. Segmenten kan je via dit menu maken en selecteren.
+* Tagmanager - opent de tagmanager. Aan de slag gaan met de tagmanager vergt nog wat verdere uitleg, maar dan kan je deze in ieder geval vinden.
+* Dashboard - het dashboard is vrij aan te passen door de verschillende widgets toe te voegen. Hiermee krijg je in één oog opslag inzicht in de verschillende rapportages. 
+
+== Code toevoegen aan de website ==
+Om de bezoekers te meten wordt er een stukje javascript geplaatst op een website. Deze code vind je onder de tagmanager in Matomo. Het voordeel van het gebruiken van de tagmanager is dat wij, zonder support van ArchiXL, extra tags(stukjes javascript) kunnen toevoegen en hierdoor een stuk flexibeler zijn. Denk daarbij aan een pop-up voor een onderzoek of een andere webanalyse tool, zoals HotJar. 
+
+[[Bestand:Matomo tagmanager uitleg.png]]
+[[Category:Functioneel beheer]]

@@ -1,0 +1,85 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Modelleren handleidingen‎]]
+Op de pagina [[GEMMA en het Gemeentelijk Gegevensmodel]] wordt de samenwerking beschreven tussen de VNG en de GGM community voor het beheer van bedrijfsobjecten. Deze samenwerking betekent ook dat we bij het modelleren van bedrijfsobjecten rekening moeten houden met het GGM.
+
+Hier wordt beschreven hoe we op basis van het GGM komen tot de GEMMA bedrijfsobjectmodellen
+
+== Uitgangspunten modellering  ==
+Uitgangspunten voor de modellering van bedrijfsobjecten:
+* waar mogelijk, volgen we het GGM met als redenen:
+** goede aansluiting op gemeentelijke praktijk en begrippen
+** minimale inspanning
+* GEMMA bedrijfsobjecten zijn volledig ontkoppeld van het GGM
+** de GEMMA bedrijfsobjectmodellen worden gepubliceerd vanuit het GEMMA ArchiMate-model
+** en ontwikkeld en onderhouden in de [https://github.com/VNG-Realisatie/GGM-Archi-repository GGM ArchiMate-repository] 
+* de GEMMA bedrijfsobjectmodellen worden gebaseerd op een subset van de GGM objecten en relaties
+** de GEMMA bedrijfsobjecten kunnen onafhankelijk van het GGM worden verwijderd, gewijzigd of uitgebreid.
+* de bedrijfsobjectmodel views worden in Archi met een script gegenereerd 
+** de GGM visualisaties (class-modellen) worden niet overgenomen
+
+Op de pagina [[koppeling met GGM]] wordt beschreven hoe het synchroniseren van GGM  en GEMMA technisch werkt
+
+== Modelleren in GGM ArchiMate-model ==
+
+De bedrijfsobjecten worden verder gemodelleerd in de [https://github.com/VNG-Realisatie/GGM-Archi-repository GGM ArchiMate-repository]. Het GGM ArchiMate-model in deze repository kan gezien worden als een projectmodel. Het deel van het model met de bedrijfsobjecten wordt gesynchroniseerd met de GEMMA, zoals beschreven is op de pagina [[GEMMA Kernmodel en Projectarchitecturen]].
+
+=== Wat zit er in het GGM Archimate-model ===
+
+Het GGM ArchiMate-model bestaat uit een kopie van GGM en daaraan gerelateerd de afgeleidde bedrijfsobjecten. Zowel het inlezen en bijwerken van het GGM, als het afleiden van de bedrijfsobjecten, wordt geheel met scripting gedaan.
+
+'''GGM objecten'''
+* een kopie van de aangeleverde GGM UML objecten en relaties. 
+** GGM objecten met types '''Class''', '''DataType''' en '''Enumeration''' worden ArchiMate type '''data-object'''
+** GGM relaties met types '''Association''' en '''Generalization''' worden respectievelijk een ArchiMate type '''association''' en '''specialization'''
+* de eigenschap iv3-domein van een GGM object wordt ingelezen als indeling van de data-objecten (met ArchiMate type grouping)
+
+De kopie wordt handmatige aangevuld met:
+*de '''data-objecten''' krijgen een eigenschap <code>archimate-type</code>. Hiermee wordt vastgelegd of van het data-object een bedrijfsobject moet worden afgeleid.
+
+'''Afgeleidde bedrijfsobjecten '''
+
+Van de kopie worden de bedrijfsobjecten afgeleid
+* als een data-object gemarkeerd is als <code>archimate-type=Business object</code>, wordt een 'schaduw' bedrijfsobject aangemaakt.
+* relaties van het onderliggende data-object worden overgenomen (behalve de relaties met data-objecten die geen bedrijfsobject zijn)
+* er wordt een realisatie-relatie aangemaakt tussen het data-object en het afgeleidde bedrijfsobject.
+* ook de eigenschappen worden overgenomen. 
+** eigenschappen die onderhouden worden in het GGM krijgen de prefix 'ggm-' 
+** bedrijfsobjecten met duplicate label, krijgen een extra property <code>alternate name</code> met een unieke label 
+
+'''Gegenereerde view'''
+
+*per iv3-domein wordt er een view gegenereerd. Deze views krijgen de naam van het domein met een postfix (GGM)
+
+'''Kennismodel'''
+
+Dit alles leidt dan tot een model dat voldoet aan het onderstaande kennismodel
+{{ToonViewGEMMA|viewid=bc559101-7691-42c2-9399-b896682281de|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}}<!--GGM-GEMMA kennismodel (ArchiMateView)--> 
+
+=== Aanpassen ingelezen model ===
+
+Open in Archi de [https://github.com/VNG-Realisatie/GGM-Archi-repository GGM ArchiMate-repository] op GitHub
+
+Wat kun je aanpassen en wat niet
+* bedrijfsobjecten en relaties kunnen worden aangepast
+** properties die niet starten met 'ggm-' (deze worden bij een volgende import van het ggm weer overschreven)
+** toevoegen bedrijfsobjecten
+*** geen relatie tot het GGM, maar zullen wel aan het GGM teruggeleverd worden
+*** als GGM community deze overneemt, krijgt deze wel een relatie met GGM
+** samenvoegen bedrijfsobjecten tot één nieuw object
+*** relateer het nieuwe object aan alle samengevoegde GGM data-objecten
+* iv3-domeinen worden beheerd door GGM, maar
+** toevoegingen zijn mogelijk. Welke bedrijfsobjecten hierbij horen worden dan handmatig bijgehouden
+** als GGM dit overneemt, dan wordt dit daarna met het script onderhouden
+
+== Terugleveren aan GGM ==
+De GEMMA bedrijfsobjecten worden teruggeleverd aan GGM d.m.v. een csv-export (zie ook [[Koppeling met GGM]]). De GGM community kan deze retour-levering gebruiken voor:
+* het verbeteren van de definities
+
+Daarnaast wordt ook het GGM ArchiMate-model beschikbaar gesteld. De GGM community kan hiermee
+* de wijzigingen qua modellering beoordelen (samenvoegingen, toevoegingen, etc)
+* de gegenereerde views geven een ander beeld en tonen soms mogelijke fouten of lacunes, zoals objecten zonder relaties
+
+==Relatie met Gemeentelijke begrippen==
+* Genereer deze met de pagina: [[Genereer GEMMA ontologie]]

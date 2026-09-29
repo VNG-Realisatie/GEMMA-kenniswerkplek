@@ -1,0 +1,23 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+[[Category:Functioneel beheer]]
+== Plaatsen nieuwsbericht ==
+
+* [[:Categorie:Nieuwsberichten]]
+* Harde link naar redactie [http://redactie.gemmaonline.nl/index.php/Speciaal:GegevensBewerken/Element?ElementtypeID=91 Toevoegen Nieuwsbericht]
+
+== Nieuwsbrief ==
+Elk kwartaal wordt er een nieuwsbrief gemaakt met daarin nieuws over de GEMMA, softwarecatalogus, standaarden en andere architectuur gerelateerde onderwerpen. Het proces is als volgt:
+* bepaal wanneer de nieuwsbrief verstuurd wordt.
+* verzamel nieuwsitems via collega's of andere architecturen
+** maak daar in een word-document een nieuwsbrief van inclusief campagne URL's om te meten. (Matomo)
+* deel de nieuwsbrief met communicatie en vraag of er ruimte is om de nieuwsbrief te versturen op.
+* communicatie maakt in copernica de nieuwsbrief.
+* voordat deze verstuurd wordt ontvang je een test-versie.
+* na akkoord wordt deze verstuurd naar de doelgroep: D_Leveranciersmanagement > B_Softwarecatalogus in Copernica
+
+== Waarderingsonderzoek ==
+Sinds 2017 werd er om de 2 jaar een waarderingsonderzoek uitgevoerd onder alle gebruikers van de GEMMA Online, softwarecatalogus, StUFTestplatform en GIBIT. 
+
+Vanaf 2023 is er een standaard binnen de VNG ontwikkeld voor ledentevredensheidsonderzoeken. Deze gaat voortaan gevolgd worden.

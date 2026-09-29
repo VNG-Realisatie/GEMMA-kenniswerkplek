@@ -1,0 +1,57 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=niet publiceren
+}}
+Op GEMMA Online is de zoekmachine-extensie CirrusSearch geactiveerd die gebruik maakt van Elasticsearch. Het stelt gebruikers in staat om snel en krachtig te zoeken binnen alle wiki-pagina’s. CirrusSearch ondersteunt geavanceerde zoekoperatoren, aangepaste filters, en ranking op basis van relevantie.
+
+== Boosting op basis van sjablonen ==
+Om de relevantie van zoekresultaten te verbeteren, kunnen pagina’s die bepaalde sjablonen bevatten een hogere of lagere score krijgen. Hoe hoger het percentage bij het template, hoe hoger de pagina komt in de zoekresultaten. Deze instellingen staan in [[MediaWiki:Cirrussearch-boost-templates]].
+{{Letop
+|uitleg = de aanroep van een sjabloonnaam moet in het Engels worden opgegeven ('''Template:...''') in [[MediaWiki:Cirrussearch-boost-templates]], ook op Nederlandstalige wiki’s
+}} 
+Vanuit GEMMA Online worden de Landingspagina's als het meest belangrijke gezien. Het template:Publicatie is voor alle zelf gepubliceerde pagina's. 
+
+'''Voorbeeldconfiguratie'''
+<pre>
+Template:Belangrijk|350%
+Template:Nieuwsbericht|300%
+Template:Landingspagina|250%
+Template:Publicatie|200%
+Template:Begrip|150%
+Template:DisplayArchiMateView|10%
+Template:FormatRelationshipName|10%
+Template:CreateDisplayBox|10%
+Template:SmartCoreEpilogue|10%
+Template:SmartCorePrologue|10%
+Template:ToonElement|10%
+Template:ToonTabelVanViewGEMMA|10%
+Template:LibraryToonArchiMate/ElementTabelRij|10%
+Template:LibraryToonArchiMate/RelatiesTabelRij|10%
+</pre>
+
+=== Tips voor zoekoptimalisatie ===
+* Gebruik relevante, unieke paginatitels.
+* Voeg inhoudelijke sjablonen toe aan belangrijke pagina’s (zoals [[Template:Landingspagina]]).
+* Gebruik categorieën strategisch, zodat gebruikers met <code>incategory:</code> kunnen zoeken.
+* Voorkom boost-waarden boven de 500% om vertekening van zoekresultaten te vermijden.
+
+=== Onderhoud en herindexeren ===
+Bij grote wijzigingen (zoals het aanpassen van boost-sjablonen) kan het nodig zijn om de zoekindex opnieuw op te bouwen. Dit gebeurt automatisch. 
+In [[Speciaal:JobQueueViewer]] zie je de voortgang van de indexering.
+
+
+=== Veelgebruikte zoekoperatoren ===
+* <code>"..."</code> – exacte zinsmatch, zoals "Zaakgericht werken"
+* <code>incategory:Categorie</code> – zoek binnen een specifieke categorie, zoals <code>incategory:Thema-architecturen</code>
+* <code>hastemplate:SjabloonNaam</code> – zoek op pagina’s met een bepaald sjabloon
+* <code>-hastemplate:SjabloonNaam</code> – sluit pagina’s met een sjabloon uit
+* <code>*</code> – jokerteken (bijv. <code>zaak*</code>)
+
+=== Documentatie en ondersteuning ===
+Meer informatie over CirrusSearch is te vinden op:
+- https://www.mediawiki.org/wiki/Extension:CirrusSearch
+- https://www.semantic-mediawiki.org/wiki/Help:Search
+
+Voor specifieke configuraties op GEMMA Online, neem contact op met ArchiXL.
+
+[[Categorie:Functioneel beheer]]

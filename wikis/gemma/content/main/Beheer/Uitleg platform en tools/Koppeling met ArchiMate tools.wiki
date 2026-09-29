@@ -1,0 +1,6 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Uitleg platform en tools‎]]
+
+{{ToonViewGEMMA|viewid=1c933cda-b453-4283-b3f0-4913e50e00e1|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}} <!--Wiki infra (ArchiMateView)-->

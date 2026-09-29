@@ -1,0 +1,63 @@
+[[Categorie:Functioneel beheer]]<!--
+-->{{#arraydefine: t3d| {{#ask: [[Categorie:BusinessObjects]] [[Occurs in model::Totaal3D/id-fca200d1-0578-4e06b-1720-6912937eb00]]|?Semanticsearch|limit=1000|mainlabel=-|headers=hide|format=plainlist}} }}<!--
+-->{{#arraydefine: ggm|{{#ask: [[Categorie:BusinessObjects]] [[Occurs in model.Object ID::2b2b88ba-8efe-46d3-8b40-47af290bc418]]|?Semanticsearch|limit=1000|mainlabel=-|headers=hide|format=plainlist}} }}<!--
+-->{{#arraydefine: dso|{{#ask: [[Categorie:BusinessObjects]] [[Occurs in model.Object ID::589f8860-a772-46f4-8c50-03980a8f0295]]|?Semanticsearch|limit=1000|mainlabel=-|headers=hide|format=plainlist}} }}<!--
+-->{{#arraydefine: alles|{{#ask: [[Categorie:BusinessObjects]] |?Semanticsearch|limit=1000|mainlabel=-|headers=hide|format=plainlist}} }}<!--
+-->{{#arraydefine: gemma
+    |{{#ask: [[Category:Begrippenkader]]
+        |?Begrip
+        |format=plainlist
+        |limit=500
+        |offset=0
+        |headers=hide
+        |link=none
+        |mainlabel=-
+        |searchlabel=
+     }} 
+   }}<!--
+-->{{#arraydefine: gemmalc| {{#arraymap: {{#arrayprint: gemma}}|,|xqx|{{lc:xqx}} }} }}
+
+==GEMMA begrippen==
+<noglossary>{{#arrayprint: gemmalc}}</noglossary>
+
+==T3D==
+<noglossary>{{#arrayprint: t3d}}</noglossary>
+
+==GGM==
+<noglossary>{{#arrayprint: ggm}}</noglossary>
+
+==DSO==
+<noglossary>{{#arrayprint: dso}}</noglossary>
+
+==Alles==
+<noglossary>{{#arrayprint: alles}}</noglossary>
+
+==<noglossary>Resultaat overlap GGM/GEMMA begrippen/DSO versus T3D</noglossary>==
+{{#arrayintersect: result | t3d  | alles}}
+<noglossary>{{#arrayprint: result }}</noglossary> 
+
+ ==Overzicht== 
+<!--
+<nowiki>
+<noglossary> 
+<table class="sortable wikitable">
+<th>Aantal voorkomens</th>
+<th>Begrip</th>
+<th>Toelichting</th>
+</tr>
+{{#arraymap: {{#arrayprint: result }}|,
+    |qwq
+    |{{#vardefine: aantal|{{#ask: [[Semanticsearch::qwq]] OR [[Glossary-Term:qwq]] |format=count}} }}
+    {{#ifexpr: {{#var:aantal}} > 1|
+        <tr>
+          <td>{{#ask: [[Semanticsearch::qwq]] OR [[Glossary-Term:qwq]] |format=count}}</td>
+          <td>qwq</td>
+          <td>{{#ask: [[Semanticsearch::qwq]] OR [[Glossary-Term:qwq]] |?Documentation|?Occurs in model|headers=hide|limit=100}}</td>
+        </tr>
+     }}
+    |<nowiki> </nowiki>
+}}
+</table>
+</noglossary>
+</nowiki>
+-->

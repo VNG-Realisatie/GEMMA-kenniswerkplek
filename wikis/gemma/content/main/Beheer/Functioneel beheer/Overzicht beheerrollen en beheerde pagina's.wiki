@@ -1,0 +1,25 @@
+[[Category:Functioneel beheer]]
+<!--TS:20220113190215-->Dit is een overzicht van [[Overzicht beheerrollen|alle beheerrollen]] en de bijbehorende te beheren pagina's. Eventueel zijn er nog onbeheerde pagina's die te volgen zijn op de pagina [[Speciaal:GEMMAOrphans|GEMMA Orphans]].
+
+<div class="GEMMAOrphansHeader">
+* Aantal [[Overzicht beheerrollen|beheerrollen]]: {{#ask:[[-Has subobject::Overzicht beheerrollen]]|format=count}}
+* Aantal beheerde pagina's: {{#ask:[[GEMMAOnlinebeheerder::+]]|format=count}}
+</div>
+
+<table class="sortable wikitable">
+<tr>
+<th>Thema</th>
+<th>Rol</th>
+<th>Personen</th>
+</tr>
+{{#ask:[[-Has subobject::Overzicht beheerrollen]]|?Rol|?Thema|format=template
+|template=ToonBeheerrollenMetPaginas
+|limit=1000
+|sort=Thema, Rol
+|headers=hide
+|mainlabel=-
+|link=none
+|searchlabel=
+|class=sortable wikitable smwtable
+|offset=}}
+</table>

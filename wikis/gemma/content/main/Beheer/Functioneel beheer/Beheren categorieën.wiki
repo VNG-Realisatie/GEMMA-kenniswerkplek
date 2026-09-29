@@ -1,0 +1,52 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=niet publiceren
+}}
+[[Category:Functioneel beheer]]
+Hoe en wat van categorieën op GEMMA online
+
+== Waar gebruiken en tonen we categorieën ==
+Gebruik van categorieën
+* [[Sitemap]] is samengesteld met categorieën
+* [[Beheren SmartPublish]] publiceren van groepen van pagina's en sjablonen
+* [[Schone start wiki]] exporteren en importeren van groepen van pagina's, sjablonen en ook categorieën zelf
+
+Hoe tonen we categorieën aan gemeenten:
+* [[:MediaWiki:Breadcrumbs]] via categorieën wordt de GEMMA opbouw  getoond
+* alle pagina's zouden te vinden moeten zijn via:
+** menu en 
+** landingspagina's
+* als extra worden onderaan de pagina's de GEMMA opbouw categorieën ook getoond. 
+{{Letop
+| uitleg=Zie [[Beheren ArchiMedes]] voor uitleg over de ArchiMedes categorieën
+}}
+== Hiërarchie van categorieën ==
+Door categorieën zelf weer in te delen in categorieën, ontstaat een hiërarchie of boomstructuur. Je doet dit door een Category onderdeel te maken van een andere Category (de parent). 
+
+Met de MediaWiki [https://www.mediawiki.org/wiki/Extension:CategoryTree Extension:CategoryTree] kun je inline de inhoud van een Category weergegeven. Hieronder alle subcategorieën van de [[:Category:Basisarchitectuur]].
+
+'''Voorbeeld'''<br>
+<pre>
+: <categorytree mode="categories" showcount="on">Basisarchitectuur</categorytree>
+</pre>
+: <categorytree mode="categories" showcount="on">Basisarchitectuur</categorytree>
+
+De [[:Category:Informatie-architectuur]] is een child van de parent [[:Category:Basisarchitectuur]]. Dit is gedefinieerd door in de pagina van [[:Category:Informatie-architectuur‎]] de code <code><nowiki>[[Category:Basisarchitectuur]]</nowiki></code> op te nemen (net zoals een tekstpagina een Category krijgt).
+
+De GEMMA online [[Sitemap]] is geheel samengesteld met CategorieTrees.
+
+Ga naar [[Special:CategoryTree]] om een willekeurige categorie(tree) te bekijken.
+
+==Verborgen categorieën ==
+
+Default toont mediawiki onderaan een pagina alle categorieën. Deze worden in een rij achter elkaar weergegeven. Ook onderaan deze pagina worden de categorieën weergegeven.
+
+Niet alle categorieën bieden zinvolle informatie voor gemeenten. De [[:Categorie:GEMMA verborgenCategories]] bevat subcategorieën met het ''magic word'' <code>__HIDDENCAT__</code>. Door dit ''magic word'' worden de categorieën niet meer onderaan de pagina getoond.
+
+Gebruik het [[:sjabloon:HiddenCategory]] om een categorie te verbergen.
+
+'''Zichtbaar maken verborgen categorieën'''<br>
+In je persoonlijke voorkeuren kun je instellen dat je verborgen categorieën wel wilt zien. Doe dit bijvoorbeeld op redactie. 
+
+Persoonlijke voorkeuren vind je via ''[user name] > Voorkeuren > Uiterlijk'' en zet een vink voor ''Verborgen categorieën weergeven''. <br>
+Of direct met [[Speciaal:Voorkeuren]] > Uiterlijk

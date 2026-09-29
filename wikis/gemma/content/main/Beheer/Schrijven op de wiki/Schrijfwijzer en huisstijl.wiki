@@ -1,0 +1,543 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's, 
+}}
+[[Categorie:Schrijven op de wiki]]
+Deze pagina bevat richtlijnen en schrijftips voor het maken en publiceren van architectuurgerelateerde teksten in het algemeen en van GEMMA-teksten in het bijzonder. Het doel ervan is om te zorgen dat teksten en afbeeldingen zo eenduidig en begrijpelijk zijn. 
+==Algemene VNG-richtlijnen==
+Hieronder staan schrijfafspraken afkomstig uit [https://will-e.vng.nl/informatie/website-vng-nl/redactiewijzer-vng-nl-verkort de verkorte schrijfwijzer] voor de website [https://vng.nl vng.nl].  
+
+Daarbij gelden een aantal aanvullingen (vet gedrukt). 
+*Gebruik alleen de afkorting VNG (schrijf de naam niet voluit als Vereniging van Nederlandse Gemeenten)
+*'''Gebruik alleen de schrijfwijze VNG Realisatie (schrijf de naam voluit)'''
+*'''Gebruik alleen de schrijfwijze Kenniscentrum Architectuur (schrijf de naam voluit)'''
+*Gebruik altijd een lidwoord voor VNG, dus: de VNG.
+*'''Gebruik altijd een lidwoord voor GEMMA, dus: de GEMMA.'''
+*De formele aanspreekvorm is ‘u’. We gebruiken geen ‘je’ of ‘jij’.
+*Schrijf aan het begin van je tekst de VNG vindt .... en wissel verder af met wij/we.
+*We/wij: gebruik ‘wij’ als je nadruk op het onderwerp wij wilt leggen (zoals ‘wij zijn verantwoordelijk voor...’) en gebruik ‘we’ als je niet zo veel nadruk op het woord legt (zoals ‘we hebben afgesproken...’)
+*Schrijf oprolbaar. Begin je tekst met de belangrijkste informatie, de kern, de conclusie en pas daarna uitleg en toelichting. Bijv. een adviestekst begint met het advies. 
+*Houd je zinnen kort en eenvoudig.
+
+*Zeg meer met minder woorden. Schrap zoveel mogelijk overbodige woorden.
+*Vermijd dubbele werkwoorden als worden, gaan, zullen, kunnen.
+*Schrijf persoonlijk, actief en concreet. Niet: ‘U krijgt morgen een ledenbrief’ maar: ‘Ik stuur u morgen een ledenbrief.’ Niet: ‘Er wordt nagedacht over een oplossing.’ Maar geef aan wie er nadenkt (m.u.v. als je bewust vaag bent). Verder geldt: hoe concreter je bent, hoe duidelijker je tekst is.
+
+* Vermijd tangconstructies. Niet: U kunt ook gegevens die u al eerder op een ander scherm hebt ingevoerd invullen. Wel: U kunt ook gegevens invullen die u al eerder op een ander scherm hebt ingevoerd.
+
+* Vermijd naamwoordstijl (ing-woorden, bijvoorbeeld ‘de constatering is’ in plaats van ‘wij constateren’).
+*Schrijf in de taal van de bezoeker en vermijd waar mogelijk jargon. '''Bepaal wie de doelgroep is en stem taalgebruik daar op af. Vermijd bijv. jargon in algemene inleidende teksten zoals bij landingspagina's op GEMMA Online.'''
+*Maak het bericht scanbaar: bullets voor opsommingen; tussenkopjes boven alinea’s. Tussenkopjes zijn goed voor zoekmachines én voor bezoekers van je pagina.
+**Begin korte tekstuele opsommingsonderdelen met een kleine letter; gebruik bij zelfstandige titels en links een beginhoofdletter.
+*Zorg voor juist gebruik van de koppen (H2, H3, H4) (toelichting: 1e kop van tekst is H2, subkop daaronder is H3 etc.) Juist gebruik van koppen is ook weer belangrijk voor toegankelijkheid van de site
+* Houd de lengte van je tussenkopjes op 20 – 70 tekens
+*Zorg ervoor dat de tussenkopjes concreet zijn (dus niet ‘Wet’ als kopje maar iets als 'Wat zegt de wet Inburgering hierover’)
+* Gebruik zo min mogelijk afkortingen. Afkortingen als m.b.t. en d.w.z. mogen niet voorkomen.
+*Wees zuinig met uitroeptekens en gebruik geen uitroepteken in de kop.
+*'''Gebruik geen leestekens, cijfers of vreemde tekens in url's.'''
+*Gebruik enkele aanhalingstekens voor een citaat.
+*Schrijf een organisatienaam of wet de eerste keer voluit, daarna volstaat de afkorting. Uitzonderingen hierop zijn de algemeen bekende afkorting zoals: (de ministeries) AZ, BZK, EZK, OCW, SZW en VNW
+*Spreek de lezer direct aan: ‘Wilt u meer weten over vng.nl?’
+*Gebruik cursief alleen voor Engelstalige of anderstalige termen. Gebruik geen onderstreping in je tekst (onderstreping op websites betekent een link).
+*Zet de titel van een publicatie in de lopende tekst tussen ‘enkele aanhalingstekens’.
+*Schrijf alle getallen in cijfers. Vanaf 4 cijfers met punt na het eerste cijfer (1.000).
+*Gebruik het euroteken ipv ‘euro’ (€ 30 miljoen)
+*Gebruik ‘%’ i.p.v. ‘procent’.
+*Het rijk is met kleine letter. Net als alle andere combinaties met ‘rijk’ (‘rijksoverheid’)
+*Gemeente is vrouwelijk. '''Architectuur is vrouwelijk.'''
+* Nieuwsbericht:
+**In de kop max 60 tekens (incl spaties), intro max 310 tekens (incl spaties), tekst 300 (ideaal) tot 400 (max!) woorden. Bij lange tekst een kort bericht met link naar de rest van de tekst in een artikel.
+**Links: niet in de intro; eventuele links onderaan bij kopje ‘Meer informatie’ met bullets en links. Link in tekst bij uitzondering.
+**Opgenomen infographic: gebruik .png bestand met link naar volledige infographic (1000 pixels breed max 5 MB).
+*Links:
+**Alleen in tekst als ze echt wat toevoegen
+**Duidelijke linktekst (geen ‘klik hier’)
+**Verwijzingen binnen GEMMA Online via interne link (dus geen ‘https://gemmaonline…’)
+**Link naar bestand dan bestandstype als extra info (… (pdf, 460kB). Maak gebruik van het sjabloon <code><nowiki>{{Bestand met info|Bestandsnaam.pdf|weer te geven titel}}</nowiki></code> op GEMMA Online.
+**Geen link in intro of begin van de zin.
+**Relevante links onder kopje ‘Meer informatie’.
+*Gebruik van koppeltekens: Als 2 (of meer) woorden een samenstelling vormen zijn ze één geheel. Een basisregel van de Nederlandse spelling is dat je samenstellingen aan elkaar moet schrijven. De algemene regel is dat je in het Nederlands woorden aan elkaar schrijft tenzij er een regel of duidelijke reden is om een koppelteken te gebruiken. Bij [https://onzetaal.nl/taaladvies/advies/klinkerbotsing klinkerbotsing] is een streepje verplicht (aa, ae, ai, aij, au, ee, ei, eij, eu, ie, ii, iij, ij, oe, oi, oij, oo, ou, ui, uij, uu zie: https://onzetaal.nl/taalloket/samenstelling ).  Als het nodig is om misverstanden te voorkomen mag een streepje ook (bijv. ''stro-pop'' in plaats van ''stropop).'' Binnen de GEMMA geldt bijvoorbeeld:
+**Referentiearchitectuur (niet referentie-architectuur)
+**Vijflaagsmodel (niet vijf-laagsmodel)
+**Architectuurprincipe (niet architectuur-principe)
+**Applicatiecomponent (niet applicatie-component).
+
+=== Schrijfwijze veelgebruikte begrippen===
+{| class="wikitable"
+|-
+!Schrijfwijze
+!Toelichting
+|-
+|de GEMMA
+|Altijd “de” er voor zetten.
+|-
+| referentiearchitectuur
+| Geen verbindingsstreepje
+|-
+|de GEMMA referentiearchitectuur
+| Geen verbindingsstreepje
+|-
+|informatie-architectuur
+|Met verbindingsstreepje (bij voorkeur)
+|-
+| GEMMA Online
+|Met spatie en “Online” met een hoofdletter
+|-
+|enterprise architectuur
+| Met spatie (omdat het een Engelse term is)
+|-
+| solution architectuur
+|Met spatie (omdat het een Engelse term is)
+|}
+
+==GEMMA Begrippenkader en voorkeurbegrippen==
+De GEMMA kent een eigen [[GEMMA Begrippenkader|begrippenkader]] dat toelicht wat binnen de context van de GEMMA de betekenis van opgenomen begrippen is. Gebruik opgenomen begrippen altijd in de betekenis zoals die in het begrippenkader staat. Voor beheer van het GEMMA Begrippenkader gelden [[Beheren van begrippen|deze afspraken]]. 
+
+Voor de consistentie en begrijpelijkheid van architectuurproducten  is het belangrijk dat zoveel mogelijk dezelfde begrippen worden gebruikt. Zowel binnen GEMMA-producten als bijvoorbeeld in projecten, presentaties en VNG-publicaties. Dit betekent dat je:
+
+* Waar passend gebruik maakt van begrippen uit het GEMMA Begrippenkader.
+* Bepaalde begrippen niet (meer) gebruikt.
+* Bij aanwezigheid van synoniemen kiest voor het afgesproken begrip: het voorkeurbegrip.
+* Onderstaande tabel beschrijft voor een aantal begrippen of ze juist wel of juist niet (meer) gebruikt moeten worden. 
+
+{| class="wikitable"
+|-
+!'''Term/begrip'''
+!'''Keuze'''
+!'''Motivatie'''
+!'''Impact'''
+|-
+|Informatievoorziening
+|Gebruiken
+|
+*Ter toelichting op wat met ‘informatievoorziening’ wordt bedoeld.
+*Staat in GEMMA-begrippenkader
+*Centrale begrip om aan te geven waar de GEMMA zich met name op richt
+|'informatievoorziening' is een breed begrip waarbij zowel applicaties als data een belangrijke rol spelen. 
+
+Het kan worden gebruikt in:
+
+* 'informatievoorziening bij gemeenten' (beperkt tot wat er bij gemeenten zelf is)
+* 'informatievoorziening voor gemeenten' (omvat ook zaken die buiten gemeenten zelf liggen; bijvoorbeeld basisregistraties en stelselvoorzieningen)
+* 'gemeentelijke informatievoorziening' (algemene aanduiding waar zowel interne als externe voorzieningen vallen). 
+|-
+|Common Ground
+|Gebruiken
+|
+*Focus is informatievoorziening (zeker binnen context van de GEMMA). 
+*De GEMMA beperkt zicht tot informatiekundige aspecten (geen implementatiekeuzes).
+*‘informatievoorziening voor gemeenten’ omvat ook, voor gemeenten, externe voorzieningen.
+|GEMMA-definitie: “De ontwikkeling naar fundamenteel andere informatievoorziening voor gemeenten”. De aanduiding 'Common Ground' wordt buiten de GEMMA in (veel) andere betekenissen gebruikt.
+
+De GEMMA bevat een thema-architectuur 'Common Ground' waarin Common Ground specifieke zaken zijn uitgewerkt. Veel daarvan zijn generiek van karakter en kunnen daarom onderdeel worden van de GEMMA basisarchitectuur of van een meer generieke thema-architectuur zoals 'Privacy en Beveiliging'. 
+
+Een product zoals 'Common Ground realisatieprincipes' (met implementatiekeuzes) is geen onderdeel van de GEMMA (en staat dus ook niet op GEMMA Online).
+|-
+|Common Ground architectuur
+|Niet gebruiken
+|
+*Suggereert een aparte architectuur voor Common Ground naast de GEMMA terwijl de GEMMA (ook) de (referentie)architectuur voor Common Ground is.
+|Nog aan te passen in [https://www.gemmaonline.nl/index.php/GEMMA_Basisprocessen GEMMA_Basisprocessen] (komt verder niet voor).
+|-
+|Common Ground doelarchitectuur
+|Niet gebruiken
+| 
+*Een doelarchitectuur is, vergelijkbaar met een solution architectuur, concreter dan dat de Informatiekundige Visie Common Ground beschrijft. Gemeenten kunnen in lijn met deze visie verschillende doelarchitecturen hebben. Gebruik van de term voor ‘heel Common Ground’ is verwarrend.
+|Bij de start van Common Ground werd gesteld dat er fundamenteel andere architectuur moest komen. Hier wordt ondertussen stapsgewijs, op verschillende manieren en in verschillend tempo, invulling aan gegeven. Het moet dus niet meer beschreven worden in termen van IST en SOLL maar als een geleidelijk veranderend type architectuur. 
+|-
+|Common Ground Vijflaagsmodel
+|Gebruiken
+|
+*Is een GEMMA-model bedoeld als hulpmiddel voor realisatie van de Informatiekundige Visie Common Ground.
+*Naam is ingeburgerd
+|Belangrijk om het te benoemen als een GEMMA-model. 
+Voorheen werd het model ook anders aangeduid. Bijvoorbeeld: “Het GEMMA Gegevenslandschap is opgebouwd uit een vijftal architectuurlagen”.
+
+|-
+|NORA Vijflaagsmodel
+|Gebruiken
+|
+*Is een bruikbaar model om te verduidelijken dat bij veranderingen vaak meerdere architectuurlagen een rol spelen.
+|Sluit aan bij streven om NORA te hergebruiken en vergemakkelijkt overheidsbrede (en Europese) samenwerking. 
+Wordt nog niet gebruikt binnen de GEMMA.
+|-
+|GEMMA Gegevenslandschap
+|Niet gebruiken
+|
+* GEMMA is de modelarchitectuur voor gemeenten
+*Heeft zowel een IST- als SOLL-karakter waarbij gemeenten zich in verschillende ontwikkelstadia kunnen bevinden. Is niet echt een doelarchitectuur (‘SOLL’).
+*De naam ‘Gegevenslandschap’ werkt verwarrend.
+|GEMMA Online is grotendeels aangepast maar bevat nog met name (in tekst omgezette) PDF-bestanden waarin het begrip 'Gegevenslandschap' nog wordt gebruikt. 
+*GEMMA Online op te schonen
+*Verwijzingen vanaf andere lokaties (Github, commonground.nl, vng.nl)
+|-
+|GEMMA Architectuurvisie
+| Gebruiken 
+|
+*Beschrijft hoog over de belangrijkste kenmerken van de GEMMA en de visie op huidige en gewenste architectuur.
+|Nieuw product binnen GEMMA Basisarchitectuur en periodiek bij te stellen.
+|-
+| GEMMA Informatie-architectuur
+|Gebruiken
+|
+*Begrip dat zowel applicatiearchitectuur als data-architectuur omvat. 
+*Applicatie- en data-architectuur worden binnen TOGAF als aparte architecturen benoemd. 
+*Binnen context GEMMA is expliciet onderscheid niet nodig en niet wenselijk (applicaties en data hangen nauw samen). 
+|
+*Binnen de GEMMA bij voorkeur niet spreken over aparte 'applicatiearchitectuur' en 'data-architectuur' (of 'gegevensarchitectuur').
+*Let op: voorkeur nu met verbindingsstreepje (maar zonder is taalkundig ook correct en komt nog veel voor)
+|-
+|GEMMA Technische architectuur
+|Gebruiken
+|
+* Term 'infrastructuur' niet gebruiken
+|
+* Hierbinnen alleen 'Technologieservices' en 'Technologiecomponenten'
+|-
+|Enterprise architectuur
+|Gebruiken
+|
+*Gebruikelijk begrip
+|Gebruiken als aanduiding voor de architectuur van een organisatie. In geval van de GEMMA meestal een gemeente.
+
+Belangrijk om te verduidelijken dat de GEMMA een referentiearchitectuur is die gemeenten kunnen gebruiken bij het ontwikkelen van hun eigen enterprise architectuur.
+|-
+|“GEMMA 2”
+|Niet gebruiken
+|
+*GEMMA ontwikkelt zich continu door dus volgnummers worden niet meer gebruikt.
+|
+* Sinds overgang naar nieuwe omgeving (mei 2024) zijn versienummers weg. 
+|}
+
+==Voorkeurbegrippen bij synoniemen==
+Voor bepaalde begrippen geldt dat er een of meer begrippen zijn met, bijna of helemaal, dezelfde betekenis. Voor de begrijpelijkheid van de GEMMA is het belangrijk er in die gevallen zoveel mogelijk gebruik wordt gemaakt van het begrip dat als voorkeurbegrip is benoemd. ‘Zoveel mogelijk’ omdat er soms uitzonderingsituaties zijn, Bijv. als een ander begrip elders is vastgesteld of binnen een bepaalde context zo is ingeburgerd dat niet gebruiken ervan verwarrend werkt.
+{| class="wikitable"
+|-
+!'''Voorkeurbegrip'''
+!'''Synoniem'''
+!'''Toelichting'''
+!'''Impact/actie'''
+|-
+|Taakspecifieke applicatie
+|Domeinspecifieke applicatie
+|
+* Ook binnen domeinen is sprake van taakspecifieke applicaties
+* Voor de eenduidigheid spreken over taakspecifieke applicaties met uitzondering van situaties waarin het expliciet gaat over een domein.
+|GEMMA-breed aan te passen 
+|-
+|Referentiearchitectuur
+|Modelarchitectuur
+| 
+*Referentiearchitectuur is gebruikelijk binnen de overheid.
+*In gebruik bij de NORA.
+|
+|-
+|Bedrijfsarchitectuur
+|Business architectuur
+|
+* Bedrijfsarchitectuur is gebruikelijk binnen de overheid (en in Nederland)
+|
+|-
+|Technische architectuur
+|Infrastructuur architectuur
+|
+* TOGAF en Archimate gebruiken (ook) 'technologie' (en geen infrastructuur zoals eerder). 
+|
+|-
+|Enterprise architectuur
+|Bedrijfsarchitectuur
+|
+* Internationaal begrip. Ook in Nederland voldoende ingeburgerd.
+|Gebruiken als aanduiding voor de architectuur van een organisatie. In geval van de GEMMA meestal een gemeente.
+Belangrijk om te verduidelijken dat de GEMMA een referentiearchitectuur is die gemeenten kunnen gebruiken bij het ontwikkelen van hun eigen enterprise architectuur.
+|-
+|Solutionarchitectuur
+|Oplossingarchitectuur
+|
+* In gebruik bij de NORA
+* Schrijfwijze: geen spatie of verbindingsstreepje.
+|
+|-
+| IT
+|ICT
+|
+* Die “C” is minder relevant geworden (want ook 'I') en wordt steeds minder vaak gebruikt.
+|
+|-
+|Partnerorganisaties
+|Ketenpartners
+|
+*Voor situaties waarin naast 'ketenpartners' ook andere soorten organisaties betrokken zijn (bijvoorbeeld leveranciers).
+*Binnen de overheid wordt 'ketenpartner' veel vaker gebruikt. Waar het gaat om (semi-)overheidspartijen is 'ketenpartner' dus okee.
+|
+|-
+|Architectuurprincipe
+|Uitgangspunt
+|
+*De GEMMA beschrijft architectuur. De term maakt expliciet dat het om architectuurprincipes gaat bijvoorbeeld niet bedrijfsvoering- of realisatie-principes of algemene uitgangspunten.
+* “Principe” te gebruiken als meer leesbare afkorting als eerder is duidelijk gemaakt dat het gaat om architectuurprincipes.
+*Eventueel in hoog-over beleidsmatige stukken of artikelen spreken over het feit dat de GEMMA “uitgangspunten” formuleert omdat dit bestuurders meer aanspreekt. 
+|
+|-
+|Data
+|Gegevens
+|
+*Internationaal (ook EU)
+*Aansluiten bij trend in NL-overheid (bijvoorbeeld 'data gedreven werken', 'Federatief Datastelsel').
+*Werkwoordvorm bij voorkeur enkelvoud, behalve als expliciet meervoud wordt bedoeld of in situaties waarin meervoud gebruikelijk is. 
+|'''Dit blijkt niet overal goed toe te passen omdat binnen bepaalde contexten 'gegevens' gebruikelijk is. Soms zelfs omdat het in wetteksten gaat over 'gegevens'.''' 
+|-
+|Registratie
+| Register
+|
+*Meer gebruikelijk taalgebruik.
+*Vaak passend vanwege meer 'informeel karakter'
+*In lijn met het begrip ‘basisregistratie’.
+*Kent specialisaties: basisregistratie, bronregistratie, kernregistratie.
+*Waar elders is gekozen voor 'register' daarbij aansluiten.
+|ZoekEnVervang
+
+In de GEMMA apart toe te lichten hoe het begrip ‘bronregistratie’ zich verhoudt tot ‘basisregistratie’ en ‘kernregistratie’ en tot ‘authentieke gegevens’ (niet ‘authentieke registratie’).
+
+'''Is binnen het KCA (oa Asterix) nog discussie over.'''
+|-
+|Brondata
+|Authentiek gegeven
+|
+*Bronregistraties kunnen zowel authentieke als niet-authentieke data bevatten. Bij gebruik ervan is het onderscheid vaak niet relevant en is het handiger om te spreken over 'brondata'. 
+*Brondata omvatten in deze betekenis dus zowel authentieke als niet-authentieke data. 
+*'Authentiek' wordt binnen de overheid vaak niet correct en consistent gebruikt.
+|
+|-
+|Aanbieder
+|Leverancier, Producer
+|
+*Te gebruiken als neutrale rolaanduiding waar het gaat om interactie tussen 2 partijen. 
+*Betreft zowel actoren (organisatie of persoon) als applicatiecomponenten. 
+*Afhankelijk van de context evt. van voorvoegsel voorzien. Bijvoorbeeld ‘dienstaanbieder’ of 'data-aanbieder'. 
+* Wordt gebruikt binnen de NORA, GDI en het Common Ground Vijflaagsmodel.
+*'Dienstverlener' is een specialisatie van het neutrale ‘aanbieder' (“De persoon of organisatie die voorziet in het leveren van een afgebakende prestatie (dienst) aan haar omgeving (de afnemers)”.
+|
+|-
+|Afnemer
+|Gebruiker, Klant, Client, …
+|
+*Zie opmerkingen bij 'Aanbieder'
+|
+|-
+| Intermediair
+|Broker, Bemiddelaar, …
+|
+*Zie opmerkingen bij Aanbieder
+|
+*Te controleren (Katern Verbinden?)
+|-
+|Leverancier
+|Marktpartij, Partij
+|
+*Binnen VNG, inclusief Markt en Overheid, is ‘Leverancier’ gebruikelijk.
+|
+|-
+|Informatievoorziening
+|niet: informatiehuishouding
+|
+*Algemene aanduiding van alles ten dienste van voldoen aan informatiebehoeften: “Het geheel van mensen, middelen en maatregelen, gericht op de informatiebehoefte van de organisatie.” 
+*‘Informatievoorziening’ is te gebruiken als algemene aanduiding van het (belangrijkste) object van aandacht van de GEMMA.
+| 
+*Te controleren want vormt nu een belangrijk begrip binnen definities van zowel GEMMA als Common Ground.
+|-
+|Informatiehuishouding
+|niet: inforrmatievoorziening
+|
+* Specifiek gericht op archivering en duurzame toegankelijkheid: "Het totaal aan regels en voorzieningen gericht op de informatiestromen en –opslag of archivering ter ondersteuning van de primaire processen.”
+|
+|-
+|Informatiemodel
+|Conceptueel informatiemodel
+Logisch informatiemodel
+|
+*Alleen 'conceptueel' en 'logisch' gebruiken waar het relevant is. 
+|
+*MIM onderscheidt nu:
+**Model van begrippen
+**Conceptueel informatiemodel
+**Logisch informatie- of gegevensmodel
+**Fysiek of technisch gegevens- of datamodel
+*MIM indeling is lastig en staat ter discussie
+*Te bezien of en hoe er anders gebruik van wordt gemaakt.
+|-
+| Datamodel
+|Fysiek datamodel
+Fysiek gegevensmodel
+|
+*Gebruik van ‘data’ ipv ‘gegevens’
+*Alleen ‘logisch’ of ‘fysiek’ gebruiken waar het relevant is. 
+|Zie boven
+|-
+|Informatiesysteem
+|Applicatie, Toepassing, Softwaresysteem, Softwarepakket
+|
+*“Een samenhangend geheel van gegevensverzamelingen en de daarbij behorende personen, procedures, processen en programmatuur alsmede de voor het informatiesysteem getroffen voorzieningen voor opslag, verwerking en communicatie.”
+*Omvat meer dan alleen een (software)applicatie.
+*“Een informatiesysteem bestaat uit één of meer applicatiecomponenten”
+|
+* Te bezien i.r.t. applicatie, component, toepassing, …
+|-
+|Applicatie
+|Toepassing, Softwareapplicatie
+|
+*“Computerprogramma dat is ontworpen om een specifieke taak uit te voeren die niet verband houdt met de werking van de computer zelf” – GEMMA Begrippenkader uit Wikipedia EN
+*Gebruikelijk begrip bij gemeenten en leveranciers. 
+|
+|-
+|Applicatiecomponent
+|Softwarecomponent
+|
+*Onderdeel van een applicatie (of informatiesysteem): "Een modulair, zelfstandig inzetbaar en vervangbaar deel van een systeem, dat zijn functionaliteit aanbiedt via goed gedefinieerde interfaces."
+*Af te korten tot 'component' als heel duidelijk is dat het over applicatiecomponenten gaat. Maar vermijd onduidelijk gebruik van het woord 'component'!
+|
+|-
+|Voorziening
+|Bouwblok
+| 
+*“Groepering van services die aan afnemers worden aangeboden, met als doel het bevorderen van uniformiteit en efficiëntie binnen de overheid” - NORA
+*Voorzieningen zullen vaak (ook) geautomatiseerde informatiesystemen omvatten, maar kunnen zich ook beperken tot een bedrijfsproces voor het leveren van een dienst. In Archimate gemodelleerd als 'Product'. Is dus meer dan een informatiesysteem!
+|
+|-
+|Bouwblok
+|Voorziening
+|
+* Met 'bouwblok' duidt je aan dat iets een 'onderdeel' is. Waarbij 'iets' binnen NORA en GDI betekent: een afspraak, standaard of voorziening. 
+* Wordt in de GEMMA weinig gebruikt. Als gebruikt dan alleen in die abstracte betekenis.
+|
+|-
+|Dienst
+|Service
+|
+*Te gebruiken binnen bedrijfsarchitectuur.
+*Sluit aan bij de NORA (die veelal bedrijfsarchitectuur beschrijft).
+*Eventueel te voorzien van voorvoegsel ‘Bedrijfs’.
+*Bekend begrip bij business-vertegenwoordigers.
+|
+|-
+|Service
+|Dienst
+|
+*Te gebruiken binnen informatiearchitectuur. 
+*‘Service’ sluit aan bij internationaal gebruik en is gangbaar als het om IT en applicaties gaat.
+*Eventueel te voorzien van voorvoegsel ‘Applicatie’.
+*Bekend begrip bij IT-betrokkenen.
+|
+|-
+|API
+|Koppelvlak, Interface
+|
+*Betekenis: “Afkorting van 'application programming interface': een manier om twee of meer computerprogramma's met elkaar te laten communiceren. Het is een soort software-interface die een dienst aanbiedt aan andere stukjes software.” 
+*Gebruikelijke term (ook) binnen de overheid. 
+*Binnen de GEMMA wordt vrijwel altijd (impliciet) de API van een applicatieservice bedoeld.
+*‘REST API’  is een specialisatie van API. Waar relevant er 'REST' voor zetten.
+|
+*Gebruik ‘Koppelvlak’ te onderzoeken; irt StUF laten bestaan; verder gebruik vermijden
+*Gebruik van ‘API’ controleren en waar nodig (zie volgende) vervangen door ‘REST API’.
+|-
+|REST API
+|RESTful API
+|
+*Hoewel RESTful vaak correcter is dan REST voor eenduidigheid spreken over ‘REST’.
+*Alleen waar het van belang is om onderscheid te maken het verschil toelichten.
+*Schrijfwijze: geen verbindingsstreepje (wel in 'REST-API Design Rules')
+|
+|-
+|Standaard
+|Specificatie, Koppelvlakspecificatie
+|
+*“Een set van regels die beschrijft hoe mensen materialen, producten, diensten, technologieën, taken, processen en systemen dienen te ontwikkelen en beheren.”
+*Waar relevant toelichten wat voor type standaard het betreft. 
+|
+|-
+|API-standaard
+|API-specificatie
+|
+*Specialisatie van ‘standaard’.
+*“Een, generieke of specifieke, standaard die gebruik van een of meer API’s mogelijk maakt.
+*Eventueel af te korten tot 'standaard' als duidelijk is dat het gaat over een API-standaard (anders voluit schrijven!).
+|
+|-
+|Generieke functie
+|Capability, capaciteit
+|
+*‘Generieke functie’ wordt gebruikt in beleidsnotities, NORA en GDI. Daarom ook op GEMMA Online gebruiken.
+*In Archimate het element ‘Capability’ gebruiken.
+|
+* Binnen de GEMMA ietwat anders dan gebruikelijk gebruikt om capability's in het Common Ground vijflaagsmodel te beschrijven
+* Begrip wordt binnen de NORA nu (juni 2024) opnieuw gedefinieerd. Eventueel over te nemen.. 
+|-
+|Bedrijfsproces
+|Proces
+|
+*‘Proces’ alleen gebruiken als heel duidelijk is dat het gaat over bedrijfsprocessen. 
+|
+|-
+|Leidraad
+|Handreiking
+|
+*Een tekst die richting geeft en helpt maar niet-normatief is.
+*'Handreiking' wordt vaak gebruikt binnen de overheid (bijvoorbeeld bij VNG en Logius) maar is feitelijk niet correct voor wat er bedoeld wordt.
+|
+*Leidraad in IK-Visie CG; verder in zinnen als 'kan fungeren als leidraad voor'
+|-
+|Toelichting
+|Uitleg
+|
+* Een pagina met toelichtende tekst over een onderwerp
+|
+|-
+|Practice
+|Best practice
+Praktijkvoorbeeld
+|
+* 'Best' suggereert dat het goed/best is, maar dat is niet altijd het geval
+* Praktijkvoorbeeld zou kunnen
+|
+|}
+== Digitale huisstijl en GEMMA Online==
+De [https://will-e.vng.nl/nl?cm=531%2C551&mf_id=333 Digitale huisstijl VNG Realisatie] en de [https://will-e.vng.nl/nl?cm=531%2C551&mf_id=334 Huisstijlhandleiding].(voor drukwerk) beschrijven hoe digitale producten van VNG Realisatie er uit moeten zien. 
+
+Voor GEMMA online wordt de styling gemaakt met CSS. In principe verander je de styling niet. Als je iets in de styling wilt veranderen, neem dan contact op met de functioneel beheerder. Zie ook [[Beheren styling]] en [[Styling controlepagina]]. 
+
+Te gebruiken:
+
+* Font: [https://fonts.google.com/specimen/Montserrat Montserrat] (te downloaden via fonts.google.com) Headings:Montserrat 600, Introtekst:Montserrat 500, Leestekst:Montserrat 400
+* Tekstkleur op witte achtergrond: Indigo blauw = #1A237E
+* Tekstkleur op Light Blue gekleurde achtergrond: zwart (of wit bij 2 donkerste varianten). 
+* Iconen set:  [https://fontawesome.com/icons?d=gallery Fontawesome]  Pictogrammen zowel vrijstaand als dia-positief te plaatsen. De kleur is gelinkt aan de huisstijlkleuren blauw, donkerblauw en Orange.
+* Basiskleuren: Light Blue en Indigo gelden voor de hele VNG. Orange is de steunkleur voor VNG Realisatie.[[Bestand:Schrijfwijzer_image4.png|183x328px|koppeling=Special:FilePath/Schrijfwijzer_image4.png]]
+* Tinten: gebruik de Light Blue set (en niet de Indigo set)
+* Contrast: <u>'''in witte of zwarte letter'''</u> op de kleurvlakken voldoen aan de richtlijnen WCAG 2 level AA): [[Bestand:Schrijfwijzer_image5.png|406x424px|koppeling=Special:FilePath/Schrijfwijzer_image5.png]]
+* [[Bestand:Schrijfwijzer_image6.png|179x428px|koppeling=Special:FilePath/Schrijfwijzer_image6.png]] [[Bestand:Schrijfwijzer_image7.png|786x316px|koppeling=Special:FilePath/Schrijfwijzer_image7.png]]
+
+* Visuals algemeen: 
+** Font: Montserrat - Iconen set: Fontawesome 
+** Tekstkleur op witte achtergrond: Indigo blauw = #1A237E
+** Als 1 achtergronden-set nodig dan Light Blue set gebruiken
+** Tekstkleur op gekleurde achtergrond = zwart (of wit bij donkerste varianten, maar bij voorkeur allemaal zwart)
+** Voor lijnen (en evt. opvulling van figuren) donkerste tint gebruiken (Indigo 900 = #1A237E)
+** '''Op Teams staat in Obelix/Producten/GEMMA Online Visuals.pptx een [https://vvng.sharepoint.com/:p:/r/sites/Obelix/Gedeelde%20documenten/General/Producten/GEMMA%20Online%20visuals/GEMMA%20Online%20visuals.pptx?d=w5391b8774df64f57901e9e659ab5d910&csf=1&web=1&e=A9UbPJ Powerpoint-slideset]  met afspraken en gemaakte visuals.'''
+* Infographics: 
+** Per publicatie of middel wordt een kleurset samengesteld uit de basiskleuren van VNG.
+** Zie verder visuals algemeen
+{| class="wikitable"
+|-
+!1 basiskleur en tint
+![[Bestand:Schrijfwijzer_image8.png|128x43px|koppeling=Special:FilePath/Schrijfwijzer_image8.png]]
+|-
+|3 basiskleuren
+|[[Bestand:Schrijfwijzer_image9.png|88x41px|koppeling=Special:FilePath/Schrijfwijzer_image9.png]]
+|-
+|3 basiskleuren + extra kleur
+|[[Bestand:Schrijfwijzer_image10.png|148x38px|koppeling=Special:FilePath/Schrijfwijzer_image10.png]]
+|-
+|(maar ook genoemd: 1 basiskleur met meerdere steunkleuren en tint als het functioneel is)
+|[[Bestand:Schrijfwijzer_image11.png|283x64px|koppeling=Special:FilePath/Schrijfwijzer_image11.png]]
+|}
+<references />

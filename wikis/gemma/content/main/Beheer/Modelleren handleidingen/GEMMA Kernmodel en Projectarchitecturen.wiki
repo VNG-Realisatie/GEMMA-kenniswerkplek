@@ -1,0 +1,163 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools,
+}}
+[[Category:Modelleren handleidingen]]
+Binnen VNGR worden regelmatig projecten uitgevoerd die voortbouwen op GEMMA. In deze projecten worden bestaande onderdelen van GEMMA verder uitgewerkt of worden nieuwe onderdelen ontwikkeld. Deze ontwikkelingen leiden niet automatisch tot aanpassingen in GEMMA, maar worden (soms) wel via documenten en/of GEMMA Online gepubliceerd. Een voorbeeld van een projectarchitectuur is het programma [[Overzicht project Omgevingswet|Omgevingswet]].
+
+Hier wordt beschreven hoe we omgaan met het onderscheid tussen deze modellen en hoe we ervoor zorgen dat de GEMMA en de Projectarchitecturen met elkaar in sync blijven.
+
+==Publiceren van een projectarchitectuur==
+
+Een projectarchitectuur kan - naast de GEMMA - gepubliceerd wordt op GEMMA Online. De views en objecten uit de verschillende architectuurmodellen worden getoond op pagina's die expliciet verwijzingen naar de projectarchitectuur of de GEMMA bevatten.
+
+Voor een lezer van GEMMA Online kan dit echter toch tot verwarring leiden. De gedeelde objecten bestaan nu immers 2 maal op GEMMA Online. Dit gebeurt vooral als je bijvoorbeeld vanuit een view klikt op één van de objecten. GEMMA online toont dan het object in één van de twee modellen en je kunt daarvandaan bladeren door dat model.
+
+Om duidelijk te maken in welk model je aan het bladeren bent, wordt bij projectobjecten bovenaan de pagina een standaard mededeling getoond waarin wordt aangegeven dat dit object een onderdeel is van een projectarchitectuur. Indien van toepassing wordt ook link van het relevante object getoond naar hetzelfde object in het GEMMA kernmodel.
+
+==Projectarchitectuur==
+Een projectarchitectuur is gerelateerd aan de GEMMA referentiearchitectuur. Dit heeft grote voordelen, het project kan optimaal gebruik maken van de in de GEMMA opgebouwde kennis.
+
+Het is niet verstandig om de projectarchitectuur als onderdeel van de GEMMA te ontwikkelen. Redenen hiervoor zijn:
+* een project wil meerdere tijdlijnen en scenario's kunnen uitwerken, terwijl de  GEMMA een beeld geeft van een gemeente nu en in de nabije toekomst
+* een project wil een onderdelen verdiepen of uitwerken tot een specificatie
+** denk aan requirements voor een referentiecomponent
+** uitwerking van een bedrijfsproces in werkprocessen en processtappen
+** etc
+* een project verkent een onderwerp dat nog geen onderdeel is van de GEMMA
+* etc.
+
+
+Als de projectarchitectuur en de GEMMA referentiearchitectuur in van elkaar gescheiden modellen worden onderhouden, zijn er maatregelen nodig om ervoor te zorgen dat de gedeelde objecten in twee plekken modellen gesynchroniseerd blijven.
+
+=== Voordelen en nadelen van een apart projectmodel ===
+Met de tool Archi zijn er praktische redenen waarom het handiger kan zijn om voor de projectarchitectuur in een apart projectmodel te werken.
+
+
+'''Voordelen'''
+* omvang en ervaring projectteam; indien meerdere mensen aan de projectarchitectuur gaan werken is het verstandig dit in een apart model te doen.
+** model van de projectarchitectuur is compacter en eenvoudiger
+** voorkomt dat er per abuis fouten in de GEMMA worden gemaakt
+* projectarchitectuur kan (publiek) gedeeld worden
+** op gemmaonline worden speciale projectpagina's aangemaakt waar de projectarchitectuur wordt gepubliceerd
+** je nodigt gemeenten en/of leveranciers uit mee te kijken/modelleren in de github repository, etc
+
+
+'''Nadelen'''
+* er zijn nu meer modellen.
+** gepubliceerd op GEMMA online kan dit verwarrend zijn. Maak heel duidelijk dat het een projectmodel betreft met dubbelingen met de GEMMA
+** wat te doen na de projectfase. Welke delen van het projectmodel moeten wel of niet beheerd worden.
+* er zijn twee modellen met overlap
+** er zijn maatregelen nodig om ervoor te zorgen dat deze in sync blijven
+
+
+===Synchroon houden GEMMA en projectarchitectuur===
+
+'''Projectfase'''
+
+Tijdens de projectfase zijn het GEMMA kernmodel en de projectarchitectuur aan elkaar gelinkt met de gedeelde GEMMA objecten. Aangezien beide in een aparte repository onderhouden worden, kunnen deze kopiëen van elkaar gaan afwijken.
+
+Om de kopie objecten over en weer synchroon te houden geldt de volgende regel:
+* Een object mag alleen gewijzigd worden in zijn 'master' model. Van ieder object moet dus duidelijk zijn welk model de 'master' is.
+** in projectmodel overgenomen objecten uit de GEMMA => het GEMMA model is de master
+** in de GEMMA overgenomen objecten uit het projectmodel => projectmodel is de master
+
+
+'''Beheerfase'''
+
+Na beëindiging van het project moet worden besloten hoe er verder met de projectarchitectuur wordt omgegaan.
+
+Wat altijd moet worden gedaan is het overnemen van alle gedeelde objecten in de GEMMA. Na de projectfase worden de uit het projectmodel overgenomen objecten definitief onderdeel van de GEMMA en worden ook beheerd in GEMMA.
+
+Vervolgens moet nog bepaald worden wat gedaan wordt met het projectmodel
+* De projectarchitectuur blijft relevant en wordt gepubliceerd.
+** De architectuur wordt voorzien van een waarschuwing dat deze niet meer beheerd wordt en mogelijk niet meer actueel.
+** ook alle met de GEMMA gedeelde objecten worden niet meer bijgewerkt.
+** Het projectmodel is bevroren.
+* De projectarchitectuur is niet meer relevant en wordt verwijderd.
+
+==Synchroniseren architectuurmodellen met Archi==
+Synchroniseren met de Archi import functie is mogelijk door het ene model te mergen in het andere model en vice versa. Deze functie wordt gebruikt voor het synchroniseren van het GEMMA model met één of meerdere projectmodellen.
+
+Vereisten:
+* gebruik Archi 4.8 of hoger (dit vanwege de merge functionaliteit en de omgang met interne id's)
+* de Archi collaboration plugin
+* zie [[ArchiMate_modelleren]] voor instructies Archi
+
+
+'''Voorbereiding'''
+* maak op github een projectrepository aan
+** ga naar https://github.com/VNG-Realisatie/ en maak een nieuwe repository aan
+** volg hiervoor de checklist in [[Archi en git voor VNGR-architecten]]
+** als je op github onder VNG-Realisatie onvoldoende rechten hebt, vraag Mark deze voor je aan te maken
+
+
+'''Aanmaken projectmodel'''
+# bepaal welk onderdelen van de GEMMA met de projectarchitectuur gesynchroniseerd gaan worden
+## maak in de GEMMA in de folder '''Views > Projectarchitecturen''' een projectmap met daarin één of meerdere 'beheerviews'.
+## de beheerviews bevatten de verzameling GEMMA elementen die je nodig hebt voor de uitwerking van je projectarchitectuur
+## wees kritisch in welke GEMMA elementen je selecteert. Een klein bestand werkt prettiger en sneller. Maar wees niet te drastisch, het toevoegen van elementen is bewerkelijk (zie synchroniseren hieronder).
+## de beheerviews zijn '''onderdeel van het GEMMA model én van de projectmodellen''' met als doel het synchroniseren van gedeelde objecten.
+# bewaar de GEMMA als .archimate bestand. Dit wordt het projectmodel
+## zorg dat het GEMMA model actief is in Archi (bron GEMMA is github)
+## File > save as > <projectnaam>.archimate
+## je hebt nu een model met de start voor de projectarchitectuur, een kopie van de GEMMA met exact dezelfde id's (niet zichtbaar, Archi gebruikt deze onder water)
+# schonen projectmodel van de niet relevante GEMMA objecten
+## verwijder alle views, behalve de project beheerviews. Het snelst gaat dit door alle mappen onder views te selecteren en met 'ctrl-klik' je projectmap te deselecteren
+## verwijder alle elementen en relaties die niet op een view voorkomen. Gebruik hiervoor het jArchi script 'beheren/deleteUnusedElements.ajs'
+## verwijder alle (nu) lege folders. Draai hiervoor het jArchi script 'beheren/delete_empty_folders_flat.ajs' meerdere keren achter elkaar. Meerdere keren omdat folders met (lege) subfolders niet verwijderd worden.
+## ruimte voor verbetering => deze scripts samenvoegen in één script
+# configureer het projectmodel
+## Noodzakelijk voor publicatie op gemmaonline en gebruik van het projectmodel in de Softwarecatalogus
+## Bij de modeleigenschappen definieer je dat een model een projectarchitectuur is
+## selectuur in model tree het model en geef het model de volgende 'properties'
+### Type model = "Projectmodel"
+### Kernmodel ID = "2b2b88ba-8efe-46d3-8b40-47af290bc418" (dit is het Object ID van het GEMMA model)
+# publiceer je projectmodel op github
+## Collaboration > Add local model to workspace and Publish
+## gebruik de github URL van de in de voorbereiding aangemaakte projectrepository
+# je kunt nu (samen)werken in het zojuist gemaakte projectmodel
+
+
+'''Synchroniseren GEMMA met de projectmodel'''
+
+Volg onderstaande werkwijze om gecontroleerd en herhaalbaar wijzigingen uit de GEMMA met het projectmodel te synchroniseren.
+
+# maak vanuit de nieuwste GEMMA weer een projectmodel
+## controleer of de project beheerviews in de GEMMA nog compleet zijn. Eventueel bijwerken nav wijzigingen in de GEMMA of nieuwe inzichten
+## voer nogmaals de stappen 2 en 3 uit, die hierboven beschreven zijn.
+## Belangrijk: '''laat in het projectmodel alle GEMMA elementen in hun originele GEMMA folder staan.''' Deze folders zijn onderdeel van beide modellen. Verplaats je een GEMMA element in het projectmodel naar een andere folder, dan verplaats je dat element ook naar die folder in de GEMMA door te importeren (de import synchroniseert ook folders)
+# inlezen van de GEMMA wijzigingen in het projectmodel
+## open en selecteer in Archi het projectmodel
+## File > Import > Another Model into the Current Model
+### Kies het zojuist gemaakte  <projectnaam>.archimate bestand
+### aanvinken 'update existing objects and folder'
+### '''niet''' aanvinken 'update model information and top level folders'
+### aanvinken 'show status dialog after importing'
+## controleer na de import met de log of alle objecten zijn gesynchroniseerd.
+
+
+'''Synchroniseren projectmodel met de GEMMA'''
+
+Feitelijk nogmaals hetzelfde, maar nu om voor de GEMMA relevante uitbreidingen in de projectarchitectuur met de GEMMA te synchroniseren.
+
+# maak in het projectmodel één of meerdere 'GEMMA of SWC beheerviews'
+## bepaal welke objecten uit de projectarchitectuur onderdeel moeten worden van de GEMMA
+## gebruik hiervoor de '''lijst met criteria van hierboven'''
+# volg nu de stappen 2 en 3 van hierboven, maar dan met het projectmodel. Verschillen met de paragraaf hierboven:
+## bewaar het projectmodel
+## verwijder alle views, elementen en relaties die niet op de 'GEMMA of SWC beheerviews' voorkomen.
+## importeren van het projectmodel in de GEMMA
+
+==Voorbeeld Logging en verwerkingen ==
+Een goed voorbeeld van een projectarchitectuur die gesynchroniseerd wordt met de GEMMA is de 'projectarchitectuur Logging en verwerkingen'
+
+Zowel in de GEMMA als in de projectarchitectuur Logging en verwerkingen vind je de beheerviews in de map:
+* Views > _Sync GEMMA en project > Logging en verwerkingen.
+* in de views is met een visuele groep expliciet gemaakt in welke architectuurmodel de elementen beheerd worden
+* de beheerviews hebben de namen "Van GEMMA" en "Naar GEMMA" gekregen.
+** de "Van GEMMA" view bevat de in de GEMMA beheerde elementen
+** de "Naar GEMMA" view bevat de in de projectarchitectuur beheerde elementen én de relaties van de project elementen met de GEMMA. Door deze relaties moeten de GEMMA elementen ook op deze view staan.
+** Synchroniseer dus altijd de eerst het projectmodel met de "Van GEMMA" view, dan zijn de GEMMA elementen up to date om weer met de "Naar GEMMA" view gesynchroniseerd te worden.
+
+Het projectmodel is te openen vanaf github. Ga naar github.com en kopieer daar de URL van de repository.
+Open deze repository in Archi

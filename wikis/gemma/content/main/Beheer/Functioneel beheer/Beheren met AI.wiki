@@ -1,0 +1,89 @@
+{{Publicatie
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+|Redactiestatus=In ontwikkeling
+}}
+[[Category:Functioneel beheer]]
+__TOC__
+Voor het onderhouden van de GEMMA-sjablonen (en een deel van deze Beheer-pagina's) wordt sinds kort een AI-assistent (Claude) ingezet, die werkt via een lokale kopie van de pagina's op de computer van de beheerder in plaats van rechtstreeks op de wiki. Deze pagina legt uit hoe dat werkt: de werkwijze, de gebruikte tools, wanneer welk gereedschap wordt ingezet, en hoe voorkomen wordt dat daarbij content kwijtraakt. Onderaan staat een technische referentie voor wie (mens of AI) met deze opzet verder wil.
+
+== Werkwijze ==
+Het uitgangspunt is "lokaal eerst": elke wijziging wordt eerst als gewoon tekstbestand gemaakt of aangepast op de computer van de beheerder, in een git-repository (een systeem voor versiebeheer) waarvan de mapstructuur de categorieën van de wiki volgt — elke map is een categorie, elk bestand is een pagina. Pas na een expliciete opdracht ("zet dit door", "publiceer dit") gaat een wijziging ook echt naar de wiki.
+
+Die tussenstap levert twee dingen op. Ten eerste een vangnet: git houdt een geschiedenis bij, dus een fout is altijd terug te draaien voordat (of zelfs nadat) die naar de wiki gaat. Ten tweede kan de AI-assistent zo dezelfde bestanden lezen en bewerken als een ontwikkelaar dat zou doen, inclusief het herkennen van wat er precies gewijzigd is.
+
+== Gebruikte tools ==
+
+''' Lokale git-repository '''<br>
+Een lokale kopie van de sjabloon- en beheerpagina's, met dezelfde mapstructuur als de categorieën op de wiki. Dit is de plek waar de AI-assistent leest en schrijft; de wiki zelf wordt alleen via een expliciete publicatiestap bijgewerkt.
+
+''' Push/pull-scripts '''<br>
+Twee scripts vormen samen een eenvoudige "git-client" voor de wiki: een pull-script haalt een pagina of een hele (sub)categorie van de wiki naar een lokaal bestand, een push-script stuurt lokale wijzigingen terug en controleert achteraf of alles goed is aangekomen. Beide bouwen voort op Pywikibot (zie hieronder) en houden zich aan de bestaande conventies, zoals de mapstructuur en de manier waarop pagina's met subpagina's worden opgeslagen.
+
+''' MediaWiki-MCP-server '''<br>
+Een koppeling waarmee de AI-assistent tijdens het gesprek direct één pagina kan opzoeken of aanpassen, zonder een apart script te draaien. Handig voor snel iets opzoeken of een kleine aanpassing; minder geschikt voor een hele categorie tegelijk (zie "Wat wanneer gebruiken" hieronder).
+
+''' Pywikibot '''<br>
+De onderliggende Python-bibliotheek waarmee zowel de MCP-server als de push/pull-scripts inloggen op en communiceren met de wiki. Dit is standaard, breed gebruikt gereedschap binnen de MediaWiki-wereld, geen VNG/GEMMA-specifieke ontwikkeling.
+
+== Toegang ==
+Voor de wiki-toegang wordt geen persoonlijk accountwachtwoord gebruikt, maar een apart "bot password", aan te maken en te beheren via [[Speciaal:BotPasswords]] — een MediaWiki-functie om een los toegangssleuteltje te maken voor geautomatiseerde toegang, zonder het hoofdaccount-wachtwoord te hoeven delen. Dat sleuteltje staat buiten de git-repository, lokaal op de computer van de beheerder, en komt dus nooit in de wiki-inhoud of in de broncode zelf terecht.
+
+Het bot-password is bewust beperkt tot een deel van de rechten van het onderliggende account: aanmaken, lezen, bewerken en verwijderen van pagina's (CRUD), maar bijvoorbeeld niet het aanpassen van de paginageschiedenis of het bekijken van persoonlijke gegevens van gebruikers. Daarnaast geldt de afgesproken werkwijze dat wijzigingen altijd eerst lokaal gemaakt worden en pas na een expliciete opdracht naar de wiki gaan.
+
+== Gebruikte skills ==
+"Skills" zijn instructiebundels die de AI-assistent raadpleegt voordat hij bepaalde taken uitvoert, te vergelijken met een ingebouwde handleiding. Voor dit werk zijn er drie relevant.
+
+''' wiki-sync '''<br>
+Legt uit wanneer en hoe de push/pull-scripts gebruikt moeten worden. Activeert automatisch zodra een verzoek in dit project op wiki-content pushen/pullen lijkt, en kan ook expliciet aangeroepen worden met het commando <code>/wiki-sync</code> in het gesprek.
+
+''' gemma-wiki-mcp '''<br>
+Documenteert eigenaardigheden van de MCP-koppeling specifiek op deze wiki, bijvoorbeeld dat het rechtstreeks ophalen van categorieleden daar niet werkt en welke omweg daarvoor gebruikt wordt. Activeert automatisch, vlak vóórdat de AI-assistent bepaalde MCP-wiki-tools op deze wiki gebruikt (zoals een pagina opvragen of wikitekst parsen) — daar hoeft niets voor aangeroepen te worden.
+
+''' pywikibot '''<br>
+Algemene naslag over de onderliggende Python-bibliotheek, niet specifiek voor dit project. Activeert automatisch bij algemeen Pywikibot-werk; voor dit project vooral achtergrondkennis, geen skill die je zelf apart aanroept.
+
+== In de praktijk ==
+Hieronder staat hoe dit er in de praktijk uitziet: wanneer welk gereedschap wordt ingezet, hoe voorkomen wordt dat daarbij content kwijtraakt, en wat er wel en (nog) niet mee kan.
+
+''' Wat wanneer gebruiken '''<br>
+Vuistregel:
+* Eén pagina, tijdens het gesprek, om snel iets op te zoeken of een kleine aanpassing te doen → MCP.
+* Een hele categorie, meerdere pagina's tegelijk, of "alle wijzigingen doorzetten" → de push/pull-scripts, ook als het er maar een paar zijn.
+* Alles waarbij structuur en conventies bewaakt moeten worden (subpagina's, verouderde pagina's overslaan, controle achteraf) → de scripts, want die logica zit erin ingebouwd.
+* Een pagina hernoemen → via de scripts, want dat behoudt de paginageschiedenis.
+* Bestand-uploads, revisiegeschiedenis bekijken, of een pagina echt verwijderen → dat kan deze tooling (nog) niet; dat blijft handwerk via de wiki zelf of via MCP.
+
+''' Veilig werken zonder content kwijt te raken '''<br>
+* Wijzigingen gaan standaard eerst lokaal, in de git-repository — er is dus altijd een geschiedenis om op terug te vallen, ook als er iets misgaat nadat iets naar de wiki is gestuurd.
+* Voor het echt wegschrijven kan eerst een proefdraai getoond worden ("wat zou er gebeuren"), zonder dat er al iets verandert.
+* Een lokale pagina met een nog niet opgeslagen wijziging wordt bij het ophalen van de wiki nooit zomaar overschreven.
+* Na het wegschrijven naar de wiki wordt de pagina meteen opnieuw opgehaald en vergeleken, om zeker te weten dat de wijziging ook echt goed is aangekomen.
+* Er wordt nooit automatisch iets op de wiki verwijderd; dat vereist altijd een aparte, bewuste actie.
+
+''' Mogelijkheden '''<br>
+* Eén pagina of een hele (sub)categorie in één keer ophalen of wegschrijven.
+* Automatisch de juiste structuur aanhouden, ook voor pagina's met subpagina's.
+* Pagina's hernoemen met behoud van paginageschiedenis.
+* Werkt net zo goed voor pagina's buiten de sjabloon-categorieën, zoals deze Beheer-pagina's.
+
+''' Beperkingen '''<br>
+* Geen bestand- of afbeelding-uploads.
+* Geen revisiegeschiedenis of verschillen tussen versies bekijken; daarvoor de wiki zelf, of de geschiedenis van de lokale bestanden.
+* Geen pagina's echt verwijderen; dat vereist een aparte, bewuste rechtentoekenning per geval.
+* Werkt alleen voor pagina's die ook echt in de lokale git-repository worden bijgehouden.
+
+== Technische referentie ==
+Dit onderdeel is bedoeld voor wie (mens of AI-assistent) verder wil met de scripts zelf.
+
+De twee scripts staan in de map <code>Tools/</code> van de git-repository:
+<pre>
+python Tools/pull_from_wiki.py --title "Sjabloon:Foo"
+python Tools/pull_from_wiki.py --category "Data" --folder "Thema-architecturen/Data"
+python Tools/push_to_wiki.py --git --summary "..."
+python Tools/push_to_wiki.py --move "Sjabloon:Oud=Sjabloon:Nieuw" --summary "..."
+</pre>
+Schrijven gebeurt standaard direct; <code>--dry-run</code> toont alleen wat er zou gebeuren. Bij een echte wijziging is een <code>--summary</code> verplicht.
+
+De titel/pad-afleiding (map = categorie, subpagina's = geneste mappen, een pagina met eigen subpagina's krijgt haar inhoud in een lokaal bestand <code>_index</code>) zit gedeeld in <code>Tools/wiki_paths.py</code>.
+
+De skill '''wiki-sync''' (projectgebonden) en de skill '''gemma-wiki-mcp''' (gedeeld, ook relevant voor andere projecten die deze wiki raadplegen) bevatten de actuele details en bekende eigenaardigheden; deze pagina beschrijft de werkwijze op hoofdlijnen en kan achterlopen bij wijzigingen daarin.

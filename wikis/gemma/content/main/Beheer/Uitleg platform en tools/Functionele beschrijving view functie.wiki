@@ -1,0 +1,289 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Uitleg platform en tools]]
+==Renderen architectuurplaat Softwarecatalogus==
+De softwarecatalogus kan met deze functie een GEMMA architectuurplaat laten renderen met daarop ingevuld de pakketten die een gemeente, samenwerking of leverancier heeft geregistreerd.
+
+Softwarecatalogus vraagt aan GEMMA Online om een plot van een GEMMA view 
+* Servicecall voor het genereren van één specifieke view met daarop geplot de meegestuurde referentiecomponenten en de ervoor gebruikte pakketten
+* Servicecall retourneert een URL naar gegeneerde plaat
+** Kan SVG of PNG, via het Rendering attribuut.
+** Is een clickable image met links die in de servicecall zijn meegegeven
+* Softwarecatalogus toont de plaat aan gemeente
+
+==API call en parameters ==
+===Aanroep===
+API aanroep met versieaanduiding: 
+'''api.php?action=gemma&view=<GUID van de gevraagde VIEW>&format=<format>'''. 
+
+De te mappen gegevens worden als een POST actie in JSON formaat geleverd aan deze URL, kijk naar voorbeeld op het  [http://test.wikixl.nl/wiki/redactiegemmaonline/extensions/GEMMAAPI/test/TestFormTestView.html formulier] 
+
+* alle opmaak die nodig is om een plaat te tonen wordt in de json file meegegeven, in plaats van de situatie dat de API deze intelligentie moet gaan berekenen, daarmee houd je de opmaak ook flexibeler. GEMMA Online kent alles van het GEMMA Model. De SWC bevat alle kennis van Softwarepakketten, en blijft flexibel in de gewenste weergave, zonder aanpassingen in de GEMMA API.
+
+===Foutmeldingen===
+Indien er een fout geconstateerd wordt, wordt er een melding teruggegeven in het gewenste formaat:
+<pre>
+{"error":{"code":"310","info":"Geen POST ontvangen (GEMMAAPI::processViewRequest)"}}
+</pre>
+
+De volgende foutmeldingen zijn mogelijk:
+
+====Softwarepakketten====
+* 'Er zijn geen pakketten ontvangen'
+* 'Er is geen valide pakket informatie ontvangen'
+		
+====Infoboxes====
+* 'Er zijn geen infoboxes ontvangen'
+* 'Er is geen valide infobox informatie ontvangen'
+		
+====Json & POST====
+* 'Geen POST ontvangen'
+* 'Ongeldige json'
+* 'Geen JSON data ontvangen'	
+
+==Gegevensstructuur==
+===Viewgegevens (in de API aanroep, NIET in de json file)===
+<table class="wikitable">
+<tr>
+ <th>Atttribuut</th>
+ <th>Verplicht</th>
+ <th>Voorbeeld</th>
+ <th>Toelichting</th>
+</tr>
+<tr><td>viewid</td><td>Ja</td><td> id-GEMMA_Referentiecomponenten</td><td>De ID van de te renderen architectuurplaat</td></tr>
+<tr><td>imageformat<td>Ja</td><td>svg/png</td><td>Welk formaat moet worden gebruikt. De browser kan een afweging zijn om PNG te kiezen. SVG is de schaalbare optie</td></tr>
+<tr><td>size<td>Nee</td><td>Als PNG gekozen wordt, is het mogelijk om zelf een breedte in pixels aan te geven. Maximaal 10.000 pixels</td></tr>
+<tr><td>json</td><td>Ja</td><td>Zie voorbeeld hieronder</td><td>Lijst met Softwarepakketten in json formaat</td></tr>
+</table>
+
+: Voorbeeld: '''api.php?action=gemmaquery&output=viewdiagram&viewid=id-GEMMA_referentiecomponenten&imageformat=svg&format=json'''
+
+In de json file wordt de volgende structuur gebruikt:
+* '''View''' bestaat uit 
+** '''Infoboxes''' bestaan uit
+*** '''Infoboxlines'''
+** '''Pakketten''' verwijzen naar 
+*** '''Referentiecomponenten'''
+
+Hieronder worden per element de eigenschappen weergegeven, voorkomend in de json-file.
+
+<div class="mw-collapsible mw-collapsed" style="width:800px">
+===Viewgegevens (json)===
+<div class="mw-collapsible-content">
+lijst met gegevens met betrekking tot de view
+<table class="wikitable">
+<tr>
+ <th>Atttribuut</th>
+ <th>Verplicht</th>
+ <th>Voorbeeld</th>
+ <th>Toelichting</th>
+</tr>
+<tr>
+ <td>Title</td>
+ <td>Ja</td>
+ <td>GEMMA_Referentiecomponenten Gemeente Amersfoort</td>
+ <td>De regel de titel van het model. Geplaatst boven in de view, gecentreerd</td>
+<tr>
+<tr>
+ <td>Infoboxes</td>
+ <td>Ja</td>
+ <td></td>
+ <td>Lijst met 1 of meer infoboxes</td>
+<tr>
+<tr>
+ <td>Pakketten</td>
+ <td>Ja</td>
+ <td></td>
+ <td>Lijst met 1 of meer pakketten</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="mw-collapsible mw-collapsed" style="width:800px">
+===Infoboxgegevens===
+<div class="mw-collapsible-content">
+Infobox, voorlopig 2, links en rechts, maar met mogelijkheid om er meer toe te voegen.
+<table class="wikitable">
+<tr>
+ <th>Atttribuut</th>
+ <th>Verplicht</th>
+ <th>Voorbeeld</th>
+ <th>Toelichting</th>
+</tr>
+<tr>
+ <td>Infoboxtitle</td>
+ <td>Ja</td>
+ <td>Legenda</td>
+ <td>Tekst met titel van de infobox</td>
+</tr>
+<tr>
+ <td>Infoboxposition</td>
+ <td>Ja</td>
+ <td>left</td>
+ <td>Positie van de infobox (left/right)</td>
+</tr>
+<tr>
+ <td>Infoboxlines</td>
+ <td>Ja</td>
+ <td></td>
+ <td>Lijst met 1 of meerdere tekstregels met opmaak</td>
+</tr>
+<tr>
+ <td><ul><li>Value</li></ul></td>
+ <td>Ja</td>
+ <td>Softwarepakket</td>
+ <td>De tekstuele inhoud van de regel</td>
+</tr>
+<tr>
+ <td><ul><li>Style</li></ul></td>
+ <td>Ja</td>
+ <td>fontstyle:bold,italic;fontcolor:red</td>
+ <td>De opmaak van de regel</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="mw-collapsible mw-collapsed" style="width:800px">
+===Pakketgegevens===
+<div class="mw-collapsible-content">
+lijst met objecten (softwarepakketten) die gemapt worden op deze view op de referentiecomponenten die daarbinnen aanwezig zijn. Een landschap van een gemeente of samenwerking kent meer eigenschappen dan een portfolio van een leverancier. '''Kun je parameters weglaten in JSON? ''' TOINE: Dat kan, moeten we rekening mee houden in GEMMA API. Wel aangeven welke dat zijn.
+<table class="wikitable">
+<tr>
+ <th>Atttribuut</th>
+ <th>Verplicht</th>
+ <th>Voorbeeld</th>
+ <th>Toelichting</th>
+</tr>
+<tr>
+ <td>Pakketline</td>
+ <td>Ja</td>
+ <td>ArchiMedes 1.0</td>
+ <td>De regel met de pakket informatie</td>
+</tr>
+<tr>
+ <td>Pakketstyle</td>
+ <td>Ja</td>
+ <td>fontstyle:bold,italic;fontcolor:red</td>
+ <td>De styling waarmee dit moet worden meegegeven</td>
+</tr>
+<tr>
+ <td>PakketURL</td>
+ <td>Ja</td>
+ <td>https://www.softwarecatalogus.nl/pakket/archimedes</td>
+ <td>URL voor de clickable image, URL van pakket verwijst naar pakket in Softwarecatalogus</td>
+</tr>
+<tr>
+ <td>Referentiecomponenten</td>
+ <td>Ja</td>
+ <td>Zie voorbeeld hieronder</td>
+ <td>Lijst met Referentiecomponenten waaraan dit softwarepakket gekoppeld is en die als item binnen dit component getoond moet worden</td>
+</tr>
+<tr>
+ <td><ul><li>ReferentiecomponentID</li></ul></td>
+ <td>Ja</td><td>Id-e2f5dff6-a445-11e3-67ab-0050568a6153</td>
+ <td>sleutel waarom in GEMMA Online de juiste gegevens opgezocht kunnen worden</td>
+</tr> 
+<tr>
+ <td><ul><li>ReferentiecomponentURL</li></ul></td>
+ <td>Ja</td>
+ <td>https://www.softwarecatalogus.nl/node/8560/reference_components_facet/Zaaksysteem?tab=pakketten</td>
+ <td>Clickable image, verwijst naar pakketoverzicht beheerder, met de referentiecomponent aangezet als filter</td>
+</tr>
+</table>
+</div>
+</div>
+
+<div class="mw-collapsible mw-collapsed" style="width:800px">
+==Aanroep in JSON-formaat==
+<div class="mw-collapsible-content">
+
+Toelichting op deze structuur in het json-bestand, die bestaat uit een hierarchie van objecten. 
+
+De structuur van de te mappen gegevens in het json bestand is als volgt. 
+
+<pre>
+ [
+ {
+    "Titel": "GEMMA_Referentiecomponenten Gemeente Amersfoort",
+    "Infoboxes" : [
+      {
+        "Infoboxtitle" : "Legenda",
+        "Infoboxposition":"left",
+        "Infoboxlines" : [
+          {
+            "Value" : "Regel1",
+            "Style": "font-style: normal;font-weight: bold; color:black;"
+          },
+          {
+            "Value" : "Regel2",
+            "Style": "font-style: italic;font-weight: normal; color:red;"
+          }
+          ]
+      },
+      {
+        "Infoboxtitle" : "Filters",
+        "Infoboxposition":"right",
+        "Infoboxlines" : [
+          {
+            "Value" : "Regel1",
+            "Style": "font-style: normal;font-weight: bold; color:black;"
+          },
+          {
+            "Value" : "Regel2",
+            "Style": "font-style: italic;font-weight: normal; color:red;"
+          }
+          ]
+      }
+      ],
+    "Pakketten":[
+      {
+      	"Pakketregel":"ArchiMedes 1.0",
+      	"Pakketstijl":"backgroundcolor:grey;font-style: italic;font-weight: normal; color:red;",
+      	"PakketURL":"http://archixl.nl",
+      	"Referentiecomponenten":[
+      	  {
+      		"ReferentiecomponentID":"Id-993",
+      	  	"ReferentiecomponentURL":"https://www.softwarecatalogus.nl/referentiecomponent/samenwerkingssyteem"
+      	  },
+      	  {
+       		"ReferentiecomponentID":"opeiwropwierpoeqwireopiqrw",
+      	  	"ReferentiecomponentURL":"onzin"
+      	  }
+      	]
+      },
+      {
+      	"Pakketregel":"ArchiMedes 2.0",
+      	"Pakketstijl":"backgroundcolor:blue;font-style: italic;font-weight: normal; color:red;",
+      	"PakketURL":"http://archixl.nl",
+      	"Referentiecomponenten":[
+      	  {
+      		"ReferentiecomponentID":"Id-993",
+      	  	"ReferentiecomponentURL":"https://www.softwarecatalogus.nl/referentiecomponent/samenwerkingssyteem"
+      	  },
+      	  {
+       		"ReferentiecomponentID":"Id-268",
+      	  	"ReferentiecomponentURL":"https://www.softwarecatalogus.nl/referentiecomponent/webcontentbeheer-cms"
+      	  }      				
+      	]
+      }
+    ]
+  }
+]
+</pre>
+</div>
+</div>
+
+==Non-functionals==
+* Beveiliging: API service over https aanbieden, beveiligd met hash algoritme
+* Performance: URL naar gerenderde plaat beschikbaar binnen 3 seconden.
+* Beheer: nieuwe versies van de API worden naast de draaiende versie beschikbaar gesteld. Softwarecatalogus kan tegen de nieuwe versie testen en releasen wanneer deze akkoord is bevonden. Oude versies zijn nog <x> maanden beschikbaar om op terug te vallen bij ernstige fouten. TOINE: Valt binnen de standaard OTAP strategie van ArchiXL
+
+==Test== 
+* Er is een formulier gemaakt waarmee de input getest kan worden: http://www.gemmaonline.nl/extensions/GEMMAAPI/test/ViewGenerator.html
+* Testen van de view: http://www.gemmaonline.nl/extensions/GEMMAAPI/test/TestFormTestView2.html
+* Testen van de export: http://www.gemmaonline.nl/extensions/GEMMAAPI/test/TestFormTestModel2.html
+
+__NOEDITSECTION__

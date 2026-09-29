@@ -1,0 +1,65 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+}}
+[[Categorie:Modelleren handleidingen]]
+<!--
+definieer hieronder de lijst met gewenste hoofdprocessen. per item moeten de volgende eigenschappen worden meegegeven:
+  1. naam van groep processen die getoond moet worden
+  2. toelichting van het betreffende procescluster
+  3. het niveau tot waar de hierarchie moet worden afgelopen, indien het geneste processen betreft. heeft ook invloed op de kolombreedte
+-->
+{{#vardefine: lijst|GEMMA#Het GEMMA portfolio bestaat uit de volgende producten#3}}
+<!-- haal hier de lijst met variabelen uit elkaar en genereer de tabellen -->
+{{#arraymap: {{#var: lijst}}|,|regel| {{#vardefine: counter|1}}
+{{#arraymap: regel|#|value| <!-- mooi truukje om variabele variabelen te creeren  -->
+{{#vardefine:variable{{#var:counter}}|value}}<!-- test variable{{#var:counter}}: {{#var:variable{{#var:counter}}}}-->
+{{#vardefine: counter|{{#expr:{{#var:counter}}+1}}}}
+|\n}}
+<table class ="wikitable">
+<caption>{{#var:variable2}}</caption> 
+<tr>
+ <!-- TABEL HEADERS -->
+ <th colspan="{{#var:variable3}}">Product</th> 
+ <th>Beschrijving</th> 
+</tr>
+ <!-- ZOEK DE SUB PRODUCTEN OP -->
+{{#arraymap: 
+  {{#ask: 
+    [[-Has target element.Elementtype:: AggregationRelationship]]
+  	[[-Has target element.Has source element.Semantictitle::{{#var:variable1}}]]
+  	[[Elementtype::BusinessObject||Grouping]]
+  	|format=plainlist|link=none|headers=hide}}|,|xqx|
+<tr>
+ <!-- TOON DEZE -->
+ <td colspan="{{#var:variable3}}">[[xqx]] {{#ifeq: {{#show: xqx|?GEMMA type_nl}}|Bedrijfsproces (cluster)| (cluster)}}</td>
+ <td>{{#show: xqx |?Documentation_nl}}</td>
+</tr>
+ <!-- ZOEK DE SUB PRODUCTEN OP -->
+{{#arraymap: {{#ask: [[-Has target element.Elementtype:: AggregationRelationship]]
+	[[-Has target element.Has source element::xqx]]
+	[[Elementtype::BusinessObject]]
+	|format=plainlist|link=none|headers=hide}}|,|zqz|
+<tr>
+ <td></td>
+ <!-- ALS ER EEN NIVEAU DRIE IS, ZET DAN DE JUISTE COLSPAN -->
+{{#ifeq:{{#var:variable3}}|3|<td colspan="2">|<td>}}[[zqz]] {{#ifeq: {{#show: zqz|?GEMMA type_nl}}|Bedrijfsproces (cluster)| (cluster)}}</td>
+ <td>{{#show: zqz |?Documentation_nl}}</td>
+</tr>
+{{#ifeq:{{#var:variable3}}|3|<!-- ALS ER EEN NIVEAU DRIE IS, DAN TOON DEZE -->
+{{#arraymap: {{#ask: [[Elementtype::BusinessObject]]
+	[[-Has target element.Elementtype::AggregationRelationship]] [[-Has target element.Has source element::zqz]]
+	|format=plainlist|link=none|headers=hide}}|,|sqs|
+<tr>
+ <td></td>
+ <td></td>
+ <td>[[sqs]]</td>
+ <td>{{#show: sqs |?Documentation_nl}}</td>
+</tr>
+|\n}}
+}}<!--EINDE {{#ifeq -->
+|\n}}
+|\n}}
+</table>
+|\n  }}
+<br/><br/>

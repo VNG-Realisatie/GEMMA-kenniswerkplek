@@ -1,0 +1,101 @@
+{{Publicatie
+|Wikibeheerder=Beheerder Architectuurtools, 
+}}
+[[Category:Uitleg GEMMA architectuur]]
+De onderstaande view toont de verschillende type onderdelen waarmee de GEMMA architectuur wordt samengesteld
+*De gemeentelijke architectuur wordt gemodelleerd in ArchiMate.
+*Op GEMMA online worden de ArchiMate views getoond en toegelicht op tekstpagina's.
+*Tekst wordt geschreven op de wiki, de ArchiMate-modellen worden beheerd met de open source architectuurtool Archi en het platform GitHub
+
+{{ToonViewGEMMA|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+|viewid=63136227-4abb-436d-9f92-8b55e8d0a4f9
+|label=Begrippen voor de onderdelen waaruit een architectuur is samengesteld
+}}
+
+
+{{ToonViewGEMMA|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+|viewid=471c9119-b959-4033-95ae-a08771b5851d
+|label=De GEMMA architectuur onderdelen en hoe deze zijn samengesteld
+}}
+
+{{#if:
+  {{#vardefineecho:model
+    |{{#ask:[[Category:ArchiMateModels]]
+            [[Semantictitle::GEMMA Portfolio]]
+        |headers=hide|link=none}}
+  }}
+  |{{#vardefine:viewid
+    |{{#ask:[[Occurs in model::{{#var:model}}]]
+      [[Category:ArchiMateViews]]
+      [[Semantictitle::Begrippen architectuurmodel]]
+    |headers=hide|link=none}}
+    }}
+  <div style="text-align:center;">
+    {{#displayArchiMateDiagram:page={{#var:viewid}}|xnolinks=true}}
+  </div>
+  <div style="text-align:center;"><span class="plainlinks">
+    Toon dit diagram op [{{#displayArchiMateViewURL:view={{#var:viewid}} }} ware grootte].
+  </span></div>
+  {{#show:{{#var:viewid}}|?Documentation|default=''(Er is geen beschrijving beschikbaar.)''}}
+}}
+====Ontwerpkeuzen====
+
+'''Tekst en ArchiMate'''
+
+*De GEMMA architectuur wordt geschreven op het WikiXL kennisplatform. 
+*De gemeentelijke architectuur wordt gemodelleerd in ArchiMate.
+*Het WikiXL kennisplatform maakt het mogelijk om ongestructureerde tekst (wiki pagina's) te combineren met ArchiMate-modellen. 
+**De GEMMA teksten kunnen worden verrijkt met views en elementen uit het GEMMA ArchiMate-model 
+**Dit kan in de vorm van tabellen, platen/views en onderlinge verwijzingen.
+*de ArchiMate-modellen worden beheerd met de open source architectuurtool Archi en het platform GitHub
+
+== Opbouw van een pagina ==
+
+De GEMMA basisarchitectuur bestaat voor een groot deel uit het GEMMA ArchiMate-model. De views en elementen uit dit model worden getoond en toegelicht op de wiki-pagina's.
+
+Een wiki pagina kan bestaan uit:
+* MediaWiki wikiml tekst, bullet-lists, headers, etc 
+* een aanroep van een sjabloon dat een ArchiMate-view toont
+* Semantic MediaWiki queries die een tabel tonen
+
+Zie [[Opnemen ArchiMate-objecten in een pagina]] hoe dit gaat. 
+
+Ook statische platen, bijvoorbeeld gemaakt met PowerPoint, kunnen opgenomen worden in een wikipagina. Zie [[Tonen afbeeldingen en bestanden]]
+
+== Kennismodellen ==
+
+=== Beheren kennismodellen ===
+Zie hier alle [[:Categorie:Kennismodellen]] op deze wiki.
+
+Via deze pagina kunnen de kennismodellen beheerd worden. Zie [[Beheren kennismodellen]]
+
+=== ArchiMate ===
+Op de achtergrond maakt Semantic MediaWiki gebruik van kennismodellen om data betekenis te geven. Op basis van het kennismodel kunnen vervolgens queries worden gemaakt. Zie de wikixl opleidingspagina [https://opleiding.wikixl.nl/index.php/Kennismodel_en_platform WikiXL kennismodellen] voor meer uitleg.
+
+Om te kunnen werken met ArchiMate modellen gebruiken we het ArchiMedes ArchiMate kennismodel (zie [[:Categorie:KnowledgeModel_ArchiMate]]). Waat het kennismodel gebruikt:
+* SmartConnectArchiMate™ voor het inlezen van een ArchiMate-model. Zie [[Koppeling met ArchiMate tools]]
+* Semantic MediaWiki queries
+* tonen van een view
+
+=== Begrippen ===
+
+Het [[GEMMA Begrippenkader]] gebruikt op de achtergrond het kennismodel begrippen.
+
+Het kennismodel begrippen definieert welke eigenschappen een [[begrip]] kan hebben. 
+
+Gebruik van:
+* Ontologie ???
+* Collecties ???
+
+* '''Wensen Begrippen:''' Eén grote begrippenlijst die te filteren is op 'collecties'. 
+** Voorbeelden van collecties:
+*** Begrippenkader; bevat de algemene GEMMA begrippen
+*** Thema-architecturen waaronder; Duurzame toegankelijkheid; Common Ground; Privacy en Informatiebeveiliging, etc
+*** Bedrijfsobjecten als begrippen
+** Een begrip kan voorkomen in meerdere collecties
+** Een collectie kan worden beheerd 
+*** op de GEMMA wiki
+*** in een ArchiMate-model (GGM data- en bedrijfsobjecten, GEMMA kennismodel en GEMMA portfoliomodel)
+*** nog niet, maar later ook mogelijk opgehaald uit een externe bron (bv NORA begrippen)
+
+=== Nieuwsberichten ===
