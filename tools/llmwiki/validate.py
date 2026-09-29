@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from urllib.parse import unquote
 
 import jsonschema
 
@@ -58,16 +59,44 @@ def validate_file(path: Path, schema_name: str) -> None:
 WIKILINK_PATTERN = "[["
 
 
-def validate_page(wiki_root: Path, page_path: Path, wiki_yaml: dict) -> list[str]:
+def validate_page(
+    wiki_root: Path,
+    page_path: Path,
+    wiki_yaml: dict,
+    *,
+    doelpad: Path | None = None,
+    bestaande_paden: set[Path] | None = None,
+) -> list[str]:
     """Valideert één pagina. Geeft een lijst leesbare foutmeldingen terug (leeg = geldig).
 
     Een sync-wiki bevat kale MediaWiki-wikitext (geen frontmatter, content/ is een
     directe werkkopie van de site); curation/knowledge-base gebruiken Markdown met
     frontmatter. De vorm van de controle volgt daarom `wiki_yaml["type"]`.
+
+    `doelpad`: waar de pagina na promotie komt te staan (voor een gestaged bestand in
+    het kladblok); id-controle en relatieve links worden daartegen beoordeeld.
+    `bestaande_paden`: paden die als bestaand gelden hoewel ze nog niet in de werkboom
+    staan (de overige doelpaden uit dezelfde changeset).
     """
     if wiki_yaml.get("type") == "sync":
         return _validate_sync_page(page_path)
-    return _validate_markdown_page(wiki_root, page_path, wiki_yaml)
+    return _validate_markdown_page(
+        wiki_root, page_path, wiki_yaml, doelpad=doelpad, bestaande_paden=bestaande_paden or set()
+    )
+
+
+def changeset_context(wiki_root: Path, run_dir: Path, staged_path: Path) -> tuple[Path | None, set[Path]]:
+    """Geeft (doelpad van dit gestagede bestand, alle doelpaden in de changeset)."""
+    changeset_path = run_dir / "changeset.json"
+    if not changeset_path.exists():
+        return None, set()
+    changeset = json.loads(changeset_path.read_text(encoding="utf-8"))
+    doelpaden = {(wiki_root / p["pad"]).resolve() for p in changeset.get("paginas", [])}
+    staged_resolved = staged_path.resolve()
+    for pagina in changeset.get("paginas", []):
+        if (run_dir / "changeset" / pagina["staged_bestand"]).resolve() == staged_resolved:
+            return (wiki_root / pagina["pad"]).resolve(), doelpaden
+    return None, doelpaden
 
 
 # --- Wikitext-paginavalidatie (sync) ---
@@ -105,12 +134,78 @@ def _validate_sync_page(page_path: Path) -> list[str]:
 # --- Markdown-paginavalidatie (curation/knowledge-base) ---
 
 
-def _validate_markdown_page(wiki_root: Path, page_path: Path, wiki_yaml: dict) -> list[str]:
+def _json_compatible(meta: dict) -> dict:
+    """YAML levert datums als date-objecten; JSON Schema kent alleen strings."""
+    return json.loads(json.dumps(meta, default=str))
+
+
+def _page_type_schema_errors(wiki_root: Path, page_path: Path, meta: dict, schema_rel: str) -> list[str]:
+    """Valideert de frontmatter tegen het schema van het paginatype (`page_types.<t>.schema`).
+
+    Relatieve `$ref`s in dat schema worden opgelost vanuit de map van het schema, zodat een
+    wiki gedeelde definities in een eigen bestand kan zetten (bijv. `element-basis.schema.json`).
+    """
+    from referencing import Registry, Resource
+    from referencing.jsonschema import DRAFT202012
+
+    schema_path = (wiki_root / schema_rel).resolve()
+    if not schema_path.exists():
+        return [f"{page_path}: schema '{schema_rel}' uit wiki.yaml bestaat niet"]
+
+    def retrieve(uri: str) -> Resource:
+        target = Path(uri.removeprefix("file://"))
+        return Resource.from_contents(json.loads(target.read_text(encoding="utf-8")), default_specification=DRAFT202012)
+
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    schema.setdefault("$id", schema_path.as_uri())
+    validator = jsonschema.Draft202012Validator(schema, registry=Registry(retrieve=retrieve))
+    return [
+        f"{page_path}: frontmatter {'.'.join(str(p) for p in e.path) or '(pagina)'}: {e.message}"
+        for e in sorted(validator.iter_errors(_json_compatible(meta)), key=lambda e: list(e.path))
+    ]
+
+
+def _dead_link_errors(page_path: Path, body: str, basis: Path, bestaande_paden: set[Path]) -> list[str]:
+    """Relatieve links die naar een niet-bestaand bestand wijzen (basis = map van het doelpad)."""
+    errors = []
+    for line_no, line in enumerate(body.splitlines(), start=1):
+        for target in _link_targets(line):
+            if target.startswith(("http://", "https://", "mailto:", "#")) or target.startswith("/") or (
+                len(target) > 1 and target[1] == ":"
+            ):
+                continue
+            rel = unquote(target.split("#", 1)[0])
+            if not rel:
+                continue
+            resolved = (basis / rel).resolve()
+            if not resolved.exists() and resolved not in bestaande_paden:
+                errors.append(f"{page_path}:{line_no}: link '{target}' wijst naar een niet-bestaand bestand")
+    return errors
+
+
+def _link_targets(line: str) -> list[str]:
+    targets = []
+    pos = 0
+    while True:
+        start = line.find("](", pos)
+        if start == -1:
+            return targets
+        end = line.find(")", start)
+        if end == -1:
+            return targets
+        targets.append(line[start + 2 : end].strip())
+        pos = end + 1
+
+
+def _validate_markdown_page(
+    wiki_root: Path, page_path: Path, wiki_yaml: dict, *, doelpad: Path | None, bestaande_paden: set[Path]
+) -> list[str]:
     errors: list[str] = []
     page = frontmatter.read(page_path)
     meta = page.meta
+    effectief_pad = doelpad or page_path
 
-    expected_id = page_path.stem
+    expected_id = effectief_pad.stem
     if meta.get("id") != expected_id:
         errors.append(f"{page_path}: id '{meta.get('id')}' komt niet overeen met bestandsnaam '{expected_id}'")
 
@@ -119,6 +214,8 @@ def _validate_markdown_page(wiki_root: Path, page_path: Path, wiki_yaml: dict) -
     type_def = page_types.get(page_type)
     if type_def is None:
         errors.append(f"{page_path}: onbekend paginatype '{page_type}' (niet in wiki.yaml page_types)")
+    elif type_def.get("schema"):
+        errors.extend(_page_type_schema_errors(wiki_root, page_path, meta, type_def["schema"]))
 
     if type_def and type_def.get("curated"):
         curation = wiki_yaml.get("curation", {})
@@ -145,20 +242,11 @@ def _validate_markdown_page(wiki_root: Path, page_path: Path, wiki_yaml: dict) -
         errors.append(f"{page_path}: gebruik geen [[wikilinks]], alleen relatieve Markdown-links")
 
     for line_no, line in enumerate(page.body.splitlines(), start=1):
-        pos = 0
-        while True:
-            start = line.find("](", pos)
-            if start == -1:
-                break
-            end = line.find(")", start)
-            if end == -1:
-                break
-            target = line[start + 2 : end]
-            if target.startswith(("http://", "https://", "#")):
-                pos = end + 1
+        for target in _link_targets(line):
+            if target.startswith(("http://", "https://", "mailto:", "#")):
                 continue
             if target.startswith("/") or (len(target) > 1 and target[1] == ":"):
                 errors.append(f"{page_path}:{line_no}: absoluut pad in link '{target}', gebruik een relatief pad")
-            pos = end + 1
 
+    errors.extend(_dead_link_errors(page_path, page.body, effectief_pad.parent, bestaande_paden))
     return errors

@@ -579,7 +579,7 @@ Volg skill `wiki-update` volledig, met deze uitbreidingen:
 |---|---|
 | ASSESS | Laad `gemma-bo`; classificeer elk voorgesteld begrip als bedrijfsobject of niet, volgens `schemas/bedrijfsobject.schema.json`. |
 | WRITE | Laad `gemma-archimate` voor pagina's in namespace ArchiMate. |
-| VALIDATE | Draai daarnaast `uv run python scripts/check_archimate.py --run <run-id>`. |
+| VALIDATE | Draai daarnaast `uv run python tools/check_archimate.py --run <run-id>`. |
 | Na PROMOTE | Als `exports.archimate` is ingevuld: stel voor een architectuurmodel-export te maken met `llmwiki export plan --target archimate`. Dezelfde gate geldt. |
 ```
 
@@ -838,7 +838,7 @@ commit-bericht. Na `publish apply` bevat `revisies.json` de nieuwe revisie-id's
 | Plaats | Wat | Voorbeelden |
 |---|---|---|
 | `tools/llmwiki/` (repository-breed) | Logica die elke wiki nodig heeft | pull, publish, bestandsnaam-mapping (`titles.py`), run-State, schemavalidatie, publish/promote plan/apply, `log.md`/`voortgang.md`, lint, harness sync/check, workspace-check |
-| `wikis/<key>/scripts/` | Logica die meerdere Skills van één wiki gebruiken | `check_archimate.py` |
+| `wikis/<key>/tools/` | Logica die meerdere Skills van één wiki gebruiken (zelfde naam als de root-map `tools/`: Python die de werkstroom aanroept; de root-map `scripts/` is alleen voor setup) | `check_archimate.py` |
 | `<skill>/scripts/` | Logica die alleen die Skill gebruikt | parser voor een bronformaat |
 | Workflow-Skill | Geen scripts; alleen aanroepvolgorde | — |
 
@@ -876,7 +876,7 @@ Werking:
 6. **Laag 3: MCP alleen-lezen** en een deny-regel op directe pywikibot-aanroepen, zodat de Agent de CLI niet kan omzeilen.
 7. **Vastlegging.** Na publicatie schrijft de CLI een regel in `log.md` (5.11), inclusief naam en smaak van het akkoord.
 
-Architectuurmodel-export gebruikt hetzelfde mechanisme, voor een `curation`-wiki met een ingevuld `exports:`-blok: `llmwiki export plan --target <naam>` en `llmwiki export apply --target <naam> --run <id>`. De generieke CLI regelt voorstel en akkoord; de exporteur zelf is een wiki-script dat in `wiki.yaml` onder `exports` wordt genoemd (bijvoorbeeld `scripts/export_archimate.py`). Zo blijft de generieke laag vrij van ArchiMate-kennis. (Nog niet gebouwd: er is nog geen concrete `exports:`-behoefte geweest, zie 5.18.)
+Architectuurmodel-export gebruikt hetzelfde mechanisme, voor een `curation`-wiki met een ingevuld `exports:`-blok: `llmwiki export plan --target <naam>` en `llmwiki export apply --target <naam> --run <id>`. De generieke CLI regelt voorstel en akkoord; de exporteur zelf is een wiki-script dat in `wiki.yaml` onder `exports` wordt genoemd (bijvoorbeeld `tools/export_archimate.py`). Zo blijft de generieke laag vrij van ArchiMate-kennis. (Nog niet gebouwd: er is nog geen concrete `exports:`-behoefte geweest, zie 5.18.)
 
 Grenzen:
 - [Inferred] Als een gebruiker in het harness automatische goedkeuring aanzet (auto-approve, "yolo", `bypassPermissions` of vergelijkbaar), vervalt laag 2 en rust de gate voor smaak B volledig op Model-gedrag. [Speculative] Per harness verschilt of een 'ask'-regel in zo'n modus nog een vraag oplevert; zie V5 in sectie 8. Het Kompas noemt daarom als spelregel: automatische goedkeuring staat uit in sessies waarin wordt gepubliceerd. `llmwiki workspace-check` controleert voor zover mogelijk of de gegenereerde permissieregels aanwezig zijn.
@@ -961,7 +961,7 @@ Bestanden:
       "Bash(uv run llmwiki publish plan *)",
       "Bash(uv run llmwiki export plan *)",
       "Bash(uv run llmwiki pull *)",
-      "Bash(uv run python scripts/check_*)"
+      "Bash(uv run python tools/check_*)"
     ],
     "ask": [
       "Bash(uv run llmwiki publish apply*)",
@@ -971,7 +971,7 @@ Bestanden:
     ],
     "deny": [
       "Bash(*pywikibot*)",
-      "Bash(uv run python scripts/export_*)",
+      "Bash(uv run python tools/export_*)",
       "Edit(voorstellen/**)",
       "Write(voorstellen/**)"
     ]
@@ -1146,6 +1146,9 @@ Keuzes:
 - **`knowledge-base` gebruikt geen run/gate.** Er is niets om te publiceren; `llmwiki run start` weigert expliciet voor dit type (in plaats van stil iets verkeerds te doen). Review is een gewone `git diff`/commit.
 - **De Obsidian-vault is de repository-root.** Alleen dan werken relatieve links van een wiki naar `sources/` in Obsidian; [Inferred] Obsidian opent geen links naar bestanden buiten de vault. `.obsidian/app.json` in de root zet Markdown-links op relatief pad en sluit `tools/` en `tests/` uit via de uitsluitfilters. [Inferred] Mappen die met een punt beginnen (`.work`, `.agents`, `.claude`) toont Obsidian standaard niet.
 - **Bronnen per onderwerp (curatie).** Een curatie-wiki deelt zijn bronanalyses in naar onderwerp: `bronnen/<onderwerp>/<bron-id>.md`, waarbij `<onderwerp>` gelijk is aan de id van `onderwerpen/<onderwerp>.md`. Een bron die bij meer onderwerpen hoort, staat bij het hoofdonderwerp; andere onderwerppagina's linken ernaar.
+  De mapnamen zijn standaardwaarden: een wiki kiest eigen namen via `page_types.<type>.dir` in `wiki.yaml` (bijv. `begrippen/` en `bronanalyses/` in `gemma-archimate-model`). `llmwiki run start --onderwerp` zoekt de onderwerppagina in de map van paginatype `onderwerp`.
+- **Paginatype-schema.** Staat bij een paginatype in `wiki.yaml` een `schema`, dan valideert `llmwiki validate --schema page` de frontmatter daartegen. Relatieve `$ref`s worden opgelost vanuit de map van het schema, zodat een wiki gedeelde definities in één bestand kan zetten. Gestagede pagina's worden met `--run <run-id>` beoordeeld op hun doelpad uit `changeset.json` (id, relatieve links; de andere pagina's uit dezelfde changeset gelden als bestaand).
+- **Promotie per status.** `promote apply` keurt alleen pagina's goed die de Agent op `review` zette. Een `kandidaat` (nog voor te leggen) wordt ongewijzigd geschreven, zonder logregel; een gestagede `goedgekeurd` weigert het plan.
 
 #### Repositorystructuur
 
@@ -1226,7 +1229,7 @@ curation:
   min_reviewers: 1
 exports:                             # leeg zonder exportdoel
   archimate: { format: archimate-oef, mapping: mappings/archimate.yaml, out: export/model.xml }
-  xmi:       { format: xmi, script: scripts/export_xmi.py, out: export/informatiemodel.xmi }
+  xmi:       { format: xmi, script: tools/export_xmi.py, out: export/informatiemodel.xmi }
   csv:       { format: csv, page_type: kandidaat, out: export/kandidaten.csv }
 ```
 
@@ -1327,6 +1330,9 @@ Regels:
 - **Conversie is deterministisch.** `llmwiki source add <bestand>` kopieert het origineel, zet het om naar Markdown, berekent een hash en weigert als het bron-id al bestaat. `wiki-intake` controleert daarna de conversie steekproefsgewijs (koppen, tabellen) en meldt problemen in plaats van de conversie te herschrijven.
 - **Laag 2 is generiek.** `wiki-intake` bevat geen wiki-kennis (regel 1 uit 5.4). Het schema `source-index.schema.json` in de core legt de frontmatter vast: id, titel, uitgever, datum, versie, pad en hash van laag 1, tags, samenvatting.
 - **Hergebruik.** Bestaat `sources/index/<bron-id>.md` al, dan slaat INGEST laag 1 en 2 over en maakt alleen de domein-lens.
+
+- **Ophalen via URL.** `llmwiki source add --url <url>` haalt een bron op en zet HTML deterministisch om naar Markdown: tekst blijft letterlijk, alleen opmaakruis (scripts, navigatie, voettekst, knoppenteksten) verdwijnt. Bekende weergave-URL's worden eerst omgezet naar de download-URL (bijv. iBabs, `*.bestuurlijkeinformatie.nl`). Pdf's worden omgezet met pymupdf4llm (extra `pdf`: `uv sync --extra pdf`). De intake legt `url`, `url_pagina` en `opgehaald` vast.
+- **Brontype en bronvoorrang.** De intake kent een optioneel `brontype` (`wet`, `informatiemodel`, `beleid`, `overig`, `model`). Een wiki kan in `wiki.yaml` `bronvoorrang` een leesvolgorde op brontype vastleggen; `run start --onderwerp` zet de bronlijst in die volgorde. Wat de rangorde inhoudelijk betekent (bijv. voor definities), is een wiki-regel.
 
 **Contextbescherming.** Doel: een wiki verzuipt niet in alle bronnen van de repository, en een Sessie laadt alleen wat de taak nodig heeft.
 

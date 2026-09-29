@@ -96,6 +96,30 @@ def save_state(wiki_root: Path, state: dict) -> None:
     state_path.write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def order_by_bronvoorrang(wiki_root: Path, wiki_yaml: dict, bronnen: list[str]) -> list[str]:
+    """Zet bron-id's in de leesvolgorde van `wiki.yaml` `bronvoorrang` (op `brontype` uit de intake).
+
+    Zonder `bronvoorrang` blijft de volgorde van de onderwerppagina staan. Bronnen met een
+    brontype buiten de lijst, of zonder intake, komen achteraan; binnen een rang blijft de
+    oorspronkelijke volgorde staan.
+    """
+    voorrang = wiki_yaml.get("bronvoorrang")
+    if not voorrang:
+        return bronnen
+    from . import paths, sources
+
+    repo_root = paths.find_repo_root(wiki_root)
+
+    def rang(bron_id: str) -> int:
+        try:
+            brontype = sources.read_index_entry(repo_root, bron_id).get("brontype")
+        except FileNotFoundError:
+            return len(voorrang)
+        return voorrang.index(brontype) if brontype in voorrang else len(voorrang)
+
+    return sorted(bronnen, key=rang)
+
+
 def start(wiki_root: Path, wiki_yaml: dict, workflow: str, onderwerp: str | None = None) -> dict:
     phases_for(wiki_yaml)  # valideert de wiki-soort vóór er iets op schijf komt
 
@@ -106,12 +130,15 @@ def start(wiki_root: Path, wiki_yaml: dict, workflow: str, onderwerp: str | None
 
     bronnen: list[str] = []
     if onderwerp:
-        onderwerp_path = wiki_root / "onderwerpen" / f"{onderwerp}.md"
+        onderwerp_dir = wiki_yaml.get("page_types", {}).get("onderwerp", {}).get("dir", "onderwerpen")
+        onderwerp_path = wiki_root / onderwerp_dir / f"{onderwerp}.md"
         if not onderwerp_path.exists():
             raise RunError(f"Onderwerppagina niet gevonden: {onderwerp_path}")
         from . import frontmatter
 
-        bronnen = list(frontmatter.read(onderwerp_path).meta.get("bronnen", []) or [])
+        bronnen = order_by_bronvoorrang(
+            wiki_root, wiki_yaml, list(frontmatter.read(onderwerp_path).meta.get("bronnen", []) or [])
+        )
 
     final_phase = final_phase_for(wiki_yaml)
     fasen = {name: {"status": "pending", "artefact": None, "hash": None} for name in phases_for(wiki_yaml)}

@@ -126,7 +126,7 @@ def check_goedgekeurd_guard(repo_root: Path) -> list[str]:
             page_dir = wiki_root / type_def["dir"]
             if not page_dir.exists():
                 continue
-            for page_path in sorted(page_dir.glob("*.md")):
+            for page_path in sorted(page_dir.rglob("*.md")):
                 page = frontmatter.read(page_path)
                 if page.meta.get("status") != "goedgekeurd":
                     continue

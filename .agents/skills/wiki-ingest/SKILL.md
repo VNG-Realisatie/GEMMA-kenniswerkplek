@@ -21,10 +21,18 @@ de drie lagen uit `docs/onderbouwing.md` 5.19, zonder dubbel werk.
 2. Bestaat `sources/index/<bron-id>.md` al? Dan zijn laag 1 en 2 klaar; ga naar
    stap 4.
 3. Anders: `llmwiki source add <bestand> --id <bron-id> --titel "<titel>" --tags
-   <tag1,tag2>`. Dit kopieert het origineel en de Markdown-conversie naar
-   `sources/raw/` en maakt de intake in `sources/index/`. Controleer de conversie
-   steekproefsgewijs (koppen, tabellen); meld problemen, herschrijf de conversie
-   niet zelf.
+   <tag1,tag2> [--brontype <wet|informatiemodel|beleid|overig>]`, of met `--url <url>`
+   in plaats van een bestand (optioneel `--url-pagina` voor de pagina waarop de link
+   stond). Dit kopieert het origineel en de Markdown-conversie naar `sources/raw/` en
+   maakt de intake in `sources/index/`. Controleer de conversie steekproefsgewijs
+   (koppen, tabellen); meld problemen, herschrijf de conversie niet zelf.
+   - Een bron is een letterlijke kopie: haal een webpagina altijd op met `--url`, nooit
+     met een samenvattende web-tool, en vertaal of herschrijf de tekst niet.
+   - Pdf-conversie vereist eenmalig `uv sync --extra pdf`.
+   - Staan er op een pagina links naar documenten die bij de bron horen (één niveau
+     diep), voeg elk toe als eigen bron met `--url <document> --url-pagina <pagina>`.
+   - Of `--brontype` verplicht is en welke volgorde geldt, staat in de wiki-Rules en
+     `wiki.yaml` (`bronvoorrang`).
 4. Schrijf de domein-lens: een korte analyse van wat deze bron betekent voor het
    onderwerp van deze run, met paragraafverwijzingen naar laag 1, in
    `bronnen/<onderwerp>/<bron-id>.md` (of de locatie die `wiki.yaml`

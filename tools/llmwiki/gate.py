@@ -36,7 +36,25 @@ def _write_json(path: Path, data: dict) -> None:
 # --- Curatie: gestaged bestand -> kopie + statusveld ---
 
 
-def _build_plan_curation(wiki_root: Path, run_id: str, final_phase: str) -> dict:
+def _wordt_goedgekeurd(wiki_yaml: dict, pagina: dict, staged_path: Path) -> bool:
+    """Alleen een gecureerde pagina die de AI op `review` zette, wordt bij promotie goedgekeurd.
+
+    Een `kandidaat` (moet nog worden voorgelegd) of `afgewezen` wordt ongewijzigd geschreven.
+    Een gestagede `goedgekeurd` is nooit toegestaan: die status zet alleen `promote apply`.
+    """
+    type_def = wiki_yaml.get("page_types", {}).get(pagina["type"], {})
+    if not type_def.get("curated"):
+        return False
+    status = frontmatter.read(staged_path).meta.get("status")
+    if status == "goedgekeurd":
+        raise GateError(
+            f"{pagina['pad']}: gestaged met status 'goedgekeurd'. Zet de pagina op 'review' "
+            "(of laat haar op 'kandidaat'); alleen 'promote apply' keurt goed."
+        )
+    return status == "review"
+
+
+def _build_plan_curation(wiki_root: Path, wiki_yaml: dict, run_id: str, final_phase: str) -> dict:
     rdir = runs.run_dir(wiki_root, run_id)
     changeset = _load_json(rdir / "changeset.json")
 
@@ -44,6 +62,7 @@ def _build_plan_curation(wiki_root: Path, run_id: str, final_phase: str) -> dict
     for pagina in changeset["paginas"]:
         staged_path = rdir / "changeset" / pagina["staged_bestand"]
         new_content = staged_path.read_text(encoding="utf-8")
+        goedkeuren = _wordt_goedgekeurd(wiki_yaml, pagina, staged_path)
         target_path = wiki_root / pagina["pad"]
         if target_path.exists():
             basis_hash = hashing.hash_file(target_path)
@@ -57,6 +76,7 @@ def _build_plan_curation(wiki_root: Path, run_id: str, final_phase: str) -> dict
                 "actie": actie,
                 "basis_hash": basis_hash,
                 "nieuwe_hash": hashing.hash_text(new_content),
+                "goedkeuren": goedkeuren,
             }
         )
 
@@ -68,7 +88,13 @@ def _build_plan_curation(wiki_root: Path, run_id: str, final_phase: str) -> dict
 def _diff_lines_curation(wiki_root: Path, run_id: str, plan_obj: dict) -> list[str]:
     rdir = runs.run_dir(wiki_root, run_id)
     changeset = _load_json(rdir / "changeset.json")
-    lines = []
+    goed = [e["pad"] for e in plan_obj["paginas"] if e.get("goedkeuren")]
+    overig = [e["pad"] for e in plan_obj["paginas"] if not e.get("goedkeuren")]
+    lines = ["## Samenvatting", "", "Wordt goedgekeurd (status review → goedgekeurd, met logregel):"]
+    lines += [f"- {pad}" for pad in goed] or ["- (geen)"]
+    lines += ["", "Wordt geschreven zonder goedkeuring (kandidaat, afgewezen of niet-gecureerd paginatype):"]
+    lines += [f"- {pad}" for pad in overig] or ["- (geen)"]
+    lines.append("")
     for entry, pagina in zip(plan_obj["paginas"], changeset["paginas"]):
         staged_path = rdir / "changeset" / pagina["staged_bestand"]
         new_content = staged_path.read_text(encoding="utf-8")
@@ -85,17 +111,16 @@ def _diff_lines_curation(wiki_root: Path, run_id: str, plan_obj: dict) -> list[s
 def _materialize_curation(wiki_root: Path, wiki_yaml: dict, run_id: str, beoordeeld_door: str, final_phase: str) -> None:
     rdir = runs.run_dir(wiki_root, run_id)
     changeset = _load_json(rdir / "changeset.json")
-    page_types = wiki_yaml.get("page_types", {})
     for pagina in changeset["paginas"]:
         staged_path = rdir / "changeset" / pagina["staged_bestand"]
+        goedkeuren = _wordt_goedgekeurd(wiki_yaml, pagina, staged_path)
         page = frontmatter.read(staged_path)
-        type_def = page_types.get(pagina["type"], {})
-        if type_def.get("curated"):
+        if goedkeuren:
             page.meta["status"] = "goedgekeurd"
         target_path = wiki_root / pagina["pad"]
         frontmatter.write(target_path, page)
         new_hash = hashing.hash_text(target_path.read_text(encoding="utf-8"))
-        if type_def.get("curated"):
+        if goedkeuren:
             logbook.append_log(wiki_root, final_phase, page.meta.get("id", target_path.stem), beoordeeld_door, new_hash)
     logbook.regenerate(wiki_root, wiki_yaml)
 
@@ -254,7 +279,7 @@ def plan(
         plan_obj = _build_plan_sync(wiki_root, wiki_yaml, run_id, doel, wijzigingen, titel_overrides)
         diff_lines = _diff_lines_sync(wiki_root, wiki_yaml, doel, plan_obj)
     else:
-        plan_obj = _build_plan_curation(wiki_root, run_id, final_phase)
+        plan_obj = _build_plan_curation(wiki_root, wiki_yaml, run_id, final_phase)
         diff_lines = _diff_lines_curation(wiki_root, run_id, plan_obj)
 
     validate.validate_instance(plan_obj, "publish-plan")
@@ -301,7 +326,7 @@ def apply(
         titel_overrides = {e["pad"]: e["titel"] for e in stored_plan["paginas"]}
         live_plan = _build_plan_sync(wiki_root, wiki_yaml, run_id, doel, paths, titel_overrides)
     else:
-        live_plan = _build_plan_curation(wiki_root, run_id, final_phase)
+        live_plan = _build_plan_curation(wiki_root, wiki_yaml, run_id, final_phase)
 
     if live_plan["plan_hash"] != stored_plan["plan_hash"]:
         raise GateError(

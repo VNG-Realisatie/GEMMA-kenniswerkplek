@@ -4,17 +4,72 @@
   "title": "source-index",
   "description": "Frontmatter van sources/index/<bron-id>.md (laag 2: gedeelde intake).",
   "type": "object",
-  "required": ["id", "titel", "hash", "pad", "tags"],
+  "required": [
+    "id",
+    "titel",
+    "hash",
+    "pad",
+    "tags"
+  ],
   "properties": {
-    "id": { "type": "string", "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$" },
-    "titel": { "type": "string" },
-    "uitgever": { "type": "string" },
-    "datum": { "type": "string" },
-    "versie": { "type": "string" },
-    "pad": { "type": "string" },
-    "hash": { "type": "string" },
-    "tags": { "type": "array", "items": { "type": "string" } },
-    "samenvatting": { "type": "string" }
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "titel": {
+      "type": "string"
+    },
+    "uitgever": {
+      "type": "string"
+    },
+    "datum": {
+      "type": "string"
+    },
+    "versie": {
+      "type": "string"
+    },
+    "pad": {
+      "type": "string"
+    },
+    "hash": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "samenvatting": {
+      "type": "string"
+    },
+    "brontype": {
+      "type": "string",
+      "enum": [
+        "wet",
+        "informatiemodel",
+        "beleid",
+        "overig",
+        "model"
+      ],
+      "description": "Soort bron; een wiki kan in wiki.yaml `bronvoorrang` een leesvolgorde op brontype vastleggen"
+    },
+    "beschrijving": {
+      "type": "string",
+      "description": "Korte beschrijving, max. 1 zin"
+    },
+    "url": {
+      "type": "string",
+      "description": "Originele URL van de bron"
+    },
+    "url_pagina": {
+      "type": "string",
+      "description": "URL van de pagina waarop de link naar deze bron stond"
+    },
+    "opgehaald": {
+      "type": "string",
+      "description": "Datum van ophalen (JJJJ-MM-DD)"
+    }
   },
   "additionalProperties": false
 }

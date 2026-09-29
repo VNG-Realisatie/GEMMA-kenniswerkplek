@@ -13,6 +13,9 @@ dependencies = [
 mediawiki = [
     "pywikibot>=9.0",
 ]
+pdf = [
+    "pymupdf4llm>=0.0.17",
+]
 
 [project.scripts]
 llmwiki = "llmwiki.cli:main"

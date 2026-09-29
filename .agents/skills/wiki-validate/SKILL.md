@@ -17,8 +17,11 @@ skill roept ze aan en interpreteert het resultaat.
 ## Stappen
 
 1. Draai voor elke pagina in `changeset.json`: `llmwiki validate
-   <gestaged-bestand> --schema page` (of, voor een wiki-specifiek domeinobject, het
-   schema dat de wiki-Workflow noemt).
+   <gestaged-bestand> --schema page --run <run-id>` (of, voor een wiki-specifiek
+   domeinobject, het schema dat de wiki-Workflow noemt). Met `--run` wordt het gestagede
+   bestand beoordeeld op zijn doelpad: id en relatieve links kloppen dan, en pagina's uit
+   dezelfde changeset gelden als bestaand. Heeft het paginatype een `schema` in
+   `wiki.yaml`, dan wordt de frontmatter daartegen gecontroleerd.
 2. Verzamel de resultaten in `validation-report.json` volgens schema
    `validation-report`: per controle naam, doel, resultaat (`ok`/`fout`) en ernst
    (`info`/`waarschuwing`/`fout`).

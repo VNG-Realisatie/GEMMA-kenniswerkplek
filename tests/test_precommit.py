@@ -37,3 +37,15 @@ def test_goedgekeurd_guard_accepts_page_recorded_in_log(repo):
 
     errors = lint.check_goedgekeurd_guard(root)
     assert errors == []
+
+
+def test_goedgekeurd_guard_checks_nested_directories(repo):
+    root, wiki_root = repo
+    page_path = wiki_root / "kandidaten" / "taakveld" / "beleidsdomein" / "kandidaat-diep.md"
+    page_path.parent.mkdir(parents=True, exist_ok=True)
+    frontmatter.write(
+        page_path,
+        frontmatter.Page(meta={"id": "kandidaat-diep", "type": "kandidaat", "status": "goedgekeurd"}, body="x\n"),
+    )
+    errors = lint.check_goedgekeurd_guard(root)
+    assert any("kandidaat-diep" in e for e in errors)

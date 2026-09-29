@@ -38,7 +38,14 @@ def cmd_validate(args) -> int:
     if args.schema == "page":
         wiki_root = _wiki_root(args)
         wiki_yaml = paths.load_wiki_yaml(wiki_root)
-        errors = validate.validate_page(wiki_root, Path(args.bestand), wiki_yaml)
+        doelpad, bestaande = None, set()
+        if args.run:
+            doelpad, bestaande = validate.changeset_context(
+                wiki_root, runs.run_dir(wiki_root, args.run), Path(args.bestand)
+            )
+        errors = validate.validate_page(
+            wiki_root, Path(args.bestand), wiki_yaml, doelpad=doelpad, bestaande_paden=bestaande
+        )
         if errors:
             for err in errors:
                 print(f"FOUT: {err}", file=sys.stderr)
@@ -58,19 +65,30 @@ def cmd_validate(args) -> int:
 def cmd_source_add(args) -> int:
     repo_root = _repo_root()
     tags = args.tags.split(",") if args.tags else []
+    if bool(args.bestand) == bool(args.url):
+        print("FOUT: geef precies één van <bestand> of --url op", file=sys.stderr)
+        return 1
+    kwargs = dict(
+        titel=args.titel,
+        tags=[t.strip() for t in tags if t.strip()],
+        uitgever=args.uitgever or "",
+        datum=args.datum or "",
+        versie=args.versie or "",
+        brontype=args.brontype or "",
+        beschrijving=args.beschrijving or "",
+        url_pagina=args.url_pagina or "",
+        markdown_override=Path(args.markdown) if args.markdown else None,
+    )
     try:
-        index_path = sources.add(
-            repo_root,
-            args.id,
-            Path(args.bestand),
-            titel=args.titel,
-            tags=[t.strip() for t in tags if t.strip()],
-            uitgever=args.uitgever or "",
-            datum=args.datum or "",
-            versie=args.versie or "",
-            markdown_override=Path(args.markdown) if args.markdown else None,
-        )
+        if args.url:
+            werkmap = repo_root / ".work" / "source-add"
+            index_path = sources.add_from_url(repo_root, args.id, args.url, werkmap, **kwargs)
+        else:
+            index_path = sources.add(repo_root, args.id, Path(args.bestand), **kwargs)
     except (sources.SourceExistsError, sources.ConversionError, ValueError) as exc:
+        print(f"FOUT: {exc}", file=sys.stderr)
+        return 1
+    except Exception as exc:  # FetchError e.d.: in gewone taal melden, geen traceback
         print(f"FOUT: {exc}", file=sys.stderr)
         return 1
     print(f"Bron toegevoegd: {index_path}")
@@ -81,7 +99,7 @@ def cmd_source_list(args) -> int:
     repo_root = _repo_root()
     tags = args.tags.split(",") if args.tags else None
     for entry in sources.list_sources(repo_root, tags):
-        print(f"{entry['id']}\t{entry.get('titel', '')}\t{entry.get('tags', [])}")
+        print(f"{entry['id']}\t{entry.get('brontype', '-')}\t{entry.get('titel', '')}\t{entry.get('tags', [])}")
     return 0
 
 
@@ -516,6 +534,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--schema", required=True,
         help="Schemanaam, of 'page' voor een pagina van deze wiki (wikitext bij sync, Markdown bij curation/knowledge-base)",
     )
+    p_validate.add_argument(
+        "--run",
+        help="Run-id: een gestaged bestand wordt dan beoordeeld op zijn doelpad uit changeset.json "
+        "(id-controle, relatieve links; andere pagina's uit dezelfde changeset gelden als bestaand)",
+    )
     add_wiki_arg(p_validate)
     p_validate.set_defaults(func=cmd_validate)
 
@@ -523,7 +546,11 @@ def build_parser() -> argparse.ArgumentParser:
     source_sub = p_source.add_subparsers(dest="source_command", required=True)
 
     p_source_add = source_sub.add_parser("add")
-    p_source_add.add_argument("bestand")
+    p_source_add.add_argument("bestand", nargs="?", help="Lokaal bestand (pdf, docx, html, md); of gebruik --url")
+    p_source_add.add_argument("--url", help="Haal de bron op via deze URL (letterlijke kopie, geen samenvatting)")
+    p_source_add.add_argument("--url-pagina", dest="url_pagina", help="Pagina waarop de link naar deze bron stond")
+    p_source_add.add_argument("--brontype", choices=list(sources.BRONTYPEN))
+    p_source_add.add_argument("--beschrijving", default="", help="Korte beschrijving, max. 1 zin")
     p_source_add.add_argument("--id", required=True)
     p_source_add.add_argument("--titel", required=True)
     p_source_add.add_argument("--tags", default="")

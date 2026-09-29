@@ -81,16 +81,20 @@ llm-wikis/                    open deze map in Obsidian
     ├── gemma-kennis/         type knowledge-base: notities/adviezen/ontwerpen
     │   ├── AGENTS.md · wiki.yaml
     │   └── <onderwerp>/<document>.md
-    └── opzet2/               type curation (met of zonder exports:)
-        ├── AGENTS.md · wiki.yaml
-        ├── onderwerpen/      ingang voor elke taak
-        ├── bronnen/<onderwerp>/
-        ├── kandidaten/       voorgestelde begrippen met status
-        ├── export/           goedgekeurde exports (alleen met exports:-blok)
-        ├── log.md            logboek: wie keurde wat goed   (alleen aanvullen)
-        ├── voortgang.md      overzicht van open werk        (automatisch)
-        └── voorstellen/
+    ├── opzet2/               type curation (met of zonder exports:)
+    │   ├── AGENTS.md · wiki.yaml
+    │   ├── onderwerpen/      ingang voor elke taak
+    │   ├── bronnen/<onderwerp>/
+    │   ├── kandidaten/       voorgestelde begrippen met status
+    │   ├── export/           goedgekeurde exports (alleen met exports:-blok)
+    │   ├── log.md            logboek: wie keurde wat goed   (alleen aanvullen)
+    │   ├── voortgang.md      overzicht van open werk        (automatisch)
+    │   └── voorstellen/
+    └── gemma-archimate-model/  type curation: GEMMA-architectuurelementen (eigen ARCHITECTURE.md)
 ```
+
+De mapnamen van een curatie-wiki (`onderwerpen/`, `bronnen/`, `kandidaten/`) zijn standaardwaarden; een wiki
+kan eigen namen kiezen in `wiki.yaml` (`page_types.<type>.dir`).
 
 Links tussen pagina's zijn gewone relatieve Markdown-links; ze werken in Obsidian en in VS Code. Mappen die met een punt beginnen (`.agents`, `.work`, `.claude` enzovoort) zijn voor de AI-omgevingen; `.work/` is het kladblok van de AI en staat niet in Git.
 
@@ -169,6 +173,33 @@ Bij de eerste vraag in een nieuwe sessie controleert de AI of de werkplek in ord
 - Plaats geen `CLAUDE.md` in de repository: daarmee negeert Claude Code de huisregels.
 - Bestanden in `sources/raw/` worden nooit gewijzigd. Een nieuwe versie van een document is een nieuwe bron.
 - Een wiki verwijst niet naar pagina's van een andere wiki. Wat de volgende wiki in de keten nodig heeft, wordt na goedkeuring als bron toegevoegd aan `sources/`.
+- Een wiki mag een eigen `ARCHITECTURE.md` hebben voor haar eigen opzet (mappen, paginatypen, vaardigheden, gereedschap). De wiki-`AGENTS.md` blijft kort en verwijst ernaar.
+
+### Soorten vaardigheden en gereedschap
+
+Elke vaardigheid (Skill) is een map met een `SKILL.md`. In de kop staat in `metadata` wat voor vaardigheid het is:
+
+| Veld | Waarden | Betekenis |
+|---|---|---|
+| `kind` | `workflow` | Legt de volgorde van stappen vast: fasen, wie wat doet, waar de mens akkoord geeft. Voert zelf geen stap uit. |
+| | `capability` | Voert één stap uit (bijvoorbeeld een bron verwerken, een pagina schrijven). |
+| `scope` | `core` | Gedeeld door alle wiki's, naam begint met `wiki-`, bevat geen kennis van één wiki. Staat in `.agents/skills/`. |
+| | `wiki` | Hoort bij één wiki, naam begint met de wiki-naam (bijv. `gemma-archimate-model-…`). Staat in `wikis/<wiki>/.agents/skills/`. |
+| `requires-skills`, `requires-tools` | namen | Van welke vaardigheden en welk gereedschap deze vaardigheid afhangt; `llmwiki lint` controleert dit. |
+| `reads`, `writes` | artefacten | Wat de stap leest en oplevert (bijv. `assessment`, `changeset`). |
+
+Een wiki-workflow is dun: hij volgt een gedeelde workflow (`wiki-update`, `wiki-edit`) en voegt per fase op een
+**uitbreidingspunt** eigen vaardigheden of controles toe. Naslag die een vaardigheid nodig heeft, staat in haar map onder `references/`.
+
+Gereedschap (code) staat op drie plekken:
+
+| Plek | Voor |
+|---|---|
+| `tools/llmwiki/` | Wat elke wiki nodig heeft; aanroepen via `uv run llmwiki …` |
+| `wikis/<wiki>/tools/` | Wat meerdere vaardigheden van één wiki gebruiken; aanroepen via `uv run python tools/…` vanuit de wikimap |
+| `<skill>/scripts/` | Wat alleen die ene vaardigheid gebruikt (naam volgens de Agent Skills-standaard) |
+
+De map `scripts/` in de hoofdmap is alleen voor het eenmalig inrichten van de werkplek.
 
 ## 6. Begrippen
 
@@ -178,8 +209,9 @@ Bij de eerste vraag in een nieuwe sessie controleert de AI of de werkplek in ord
 | Sessie | Eén gesprek in een AI-omgeving |
 | Model | Het taalmodel dat de tekst verwerkt en maakt |
 | Rules | Huisregels in `AGENTS.md` |
-| Skill | Uitgeschreven werkwijze voor één taak |
-| Workflow | Volgorde van stappen, zelf ook vastgelegd als Skill |
+| Skill | Uitgeschreven werkwijze voor één taak (`capability`) of voor een volgorde van stappen (`workflow`) |
+| Workflow | Volgorde van stappen, zelf ook vastgelegd als Skill (`metadata.kind: workflow`) |
+| Uitbreidingspunt | Plek in een gedeelde workflow waar een wiki eigen vaardigheden of controles toevoegt |
 | Agent / Rol | De AI die een taak uitvoert / de verantwoordelijkheid die hij daarbij heeft (lezer, beoordelaar, schrijver, controleur) |
 | Tool | Programma of functie buiten het model |
 | MCP | Standaardkoppeling tussen de AI-omgeving en de MediaWiki-site |
