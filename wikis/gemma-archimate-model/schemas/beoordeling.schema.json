@@ -1,0 +1,337 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "beoordeling",
+  "description": "Beoordeling van één begrip: alle kenmerken één keer beantwoord (gegenereerd door tools/bepaal_type.py schema).",
+  "type": "object",
+  "required": [
+    "begrip",
+    "kenmerken"
+  ],
+  "properties": {
+    "begrip": {
+      "type": "string",
+      "minLength": 1
+    },
+    "onderwerp": {
+      "type": "string"
+    },
+    "kenmerken": {
+      "type": "object",
+      "required": [
+        "herkenbaar",
+        "gemeentelijk",
+        "buiten_kernlagen",
+        "slechts_eigenschap",
+        "gedrag",
+        "handelende_partij",
+        "hoedanigheid",
+        "samenwerkingsverband",
+        "toegangspunt",
+        "plaats",
+        "aanbod_als_geheel",
+        "per_keer_doorlopen",
+        "gegroepeerd_gedrag",
+        "toestandsverandering",
+        "aangeboden_gedrag",
+        "gezamenlijk_gedrag",
+        "eigen_identiteit",
+        "onderscheidbare_exemplaren",
+        "levenscyclus",
+        "wordt_bewerkt",
+        "afspraak",
+        "waarneembare_vorm",
+        "geautomatiseerd_verwerkt"
+      ],
+      "properties": {
+        "herkenbaar": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "gemeentelijk": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "buiten_kernlagen": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "slechts_eigenschap": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "gedrag": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "handelende_partij": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "hoedanigheid": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "samenwerkingsverband": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "toegangspunt": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "plaats": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "aanbod_als_geheel": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "per_keer_doorlopen": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "gegroepeerd_gedrag": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "toestandsverandering": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "aangeboden_gedrag": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "gezamenlijk_gedrag": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "eigen_identiteit": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "onderscheidbare_exemplaren": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "levenscyclus": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "wordt_bewerkt": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "afspraak": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "waarneembare_vorm": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "geautomatiseerd_verwerkt": {
+          "$ref": "#/$defs/antwoord"
+        }
+      },
+      "additionalProperties": false
+    },
+    "genoemd_begrip": {
+      "type": "string",
+      "description": "Het begrip waarvan dit een eigenschap of waarneembare vorm is"
+    },
+    "archimate_buiten_model": {
+      "type": "string",
+      "description": "Het ArchiMate-type buiten de kernlagen (Goal, Outcome, Driver, Principle, Requirement, Constraint, Value, Capability, Grouping …)"
+    },
+    "benoemde_partij": {
+      "enum": [
+        "ja",
+        "nee"
+      ],
+      "description": "ja/nee: bij 'handelende partij' én 'hoedanigheid': is het een benoemde persoon, organisatie of eenheid?"
+    },
+    "uitkomst": {
+      "type": "object",
+      "description": "Door bepaal_type.py ingevuld; niet zelf invullen"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "antwoord": {
+      "type": "object",
+      "required": [
+        "waarde",
+        "onderbouwing"
+      ],
+      "properties": {
+        "waarde": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "onderbouwing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bronnen": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "kenmerkwaarden": {
+      "type": "object",
+      "description": "Kenmerken zoals vastgelegd op een elementpagina (alleen ja/nee; onderbouwing in de body)",
+      "required": [
+        "herkenbaar",
+        "gemeentelijk",
+        "buiten_kernlagen",
+        "slechts_eigenschap",
+        "gedrag",
+        "handelende_partij",
+        "hoedanigheid",
+        "samenwerkingsverband",
+        "toegangspunt",
+        "plaats",
+        "aanbod_als_geheel",
+        "per_keer_doorlopen",
+        "gegroepeerd_gedrag",
+        "toestandsverandering",
+        "aangeboden_gedrag",
+        "gezamenlijk_gedrag",
+        "eigen_identiteit",
+        "onderscheidbare_exemplaren",
+        "levenscyclus",
+        "wordt_bewerkt",
+        "afspraak",
+        "waarneembare_vorm",
+        "geautomatiseerd_verwerkt"
+      ],
+      "properties": {
+        "herkenbaar": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gemeentelijk": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "buiten_kernlagen": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "slechts_eigenschap": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "handelende_partij": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "hoedanigheid": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "samenwerkingsverband": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "toegangspunt": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "plaats": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "aanbod_als_geheel": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "per_keer_doorlopen": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gegroepeerd_gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "toestandsverandering": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "aangeboden_gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gezamenlijk_gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "eigen_identiteit": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "onderscheidbare_exemplaren": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "levenscyclus": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "wordt_bewerkt": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "afspraak": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "waarneembare_vorm": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "geautomatiseerd_verwerkt": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

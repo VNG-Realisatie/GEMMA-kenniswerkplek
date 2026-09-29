@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "bedrijfsdienst",
+  "description": "Elementpagina: Business Service.",
+  "allOf": [
+    {
+      "$ref": "element-basis.schema.json#/$defs/element"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "bedrijfsdienst"
+    },
+    "archimate_type": {
+      "enum": [
+        "business-service"
+      ]
+    }
+  },
+  "unevaluatedProperties": false,
+  "required": [
+    "taakveld",
+    "beleidsdomein"
+  ]
+}

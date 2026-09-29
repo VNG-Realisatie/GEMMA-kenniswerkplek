@@ -1,0 +1,78 @@
+key: gemma-archimate-model
+type: curation                       # sync | curation | knowledge-base
+
+sources:
+  tags: []                           # vast te stellen bij de eerste ingest
+  exclude_tags: []
+
+# Leesvolgorde op brontype (sources/index `brontype`); zie ARCHITECTURE.md §7.
+# Brontype `model` (het GEMMA-model) is een matchdoel, geen bron voor begrippen.
+bronvoorrang: [wet, informatiemodel, beleid, overig]
+
+page_types:
+  onderwerp:
+    dir: begrippen                   # begrippenlijst per onderwerp = ingang van een run
+    schema: schemas/onderwerp.schema.json
+  bronanalyse:
+    dir: bronanalyses
+    group_by: onderwerp
+    schema: schemas/bronanalyse.schema.json
+  analyse:
+    dir: analyses
+    schema: schemas/analyse.schema.json
+  bedrijfsobject:                    # archimate_type business-object | contract
+    dir: bedrijfsarchitectuur/bedrijfsobjecten
+    submappen: [taakveld, beleidsdomein]
+    curated: true
+    schema: schemas/bedrijfsobject.schema.json
+  product:
+    dir: bedrijfsarchitectuur/producten
+    submappen: [taakveld, beleidsdomein]
+    curated: true
+    schema: schemas/product.schema.json
+  bedrijfsdienst:
+    dir: bedrijfsarchitectuur/bedrijfsdiensten
+    submappen: [taakveld, beleidsdomein]
+    curated: true
+    schema: schemas/bedrijfsdienst.schema.json
+  bedrijfsproces:
+    dir: bedrijfsarchitectuur/bedrijfsprocessen
+    submappen: [taakveld, beleidsdomein]
+    curated: true
+    schema: schemas/bedrijfsproces.schema.json
+  bedrijfsfunctie:
+    dir: bedrijfsarchitectuur/bedrijfsfuncties
+    submappen: [taakveld, beleidsdomein]
+    curated: true
+    schema: schemas/bedrijfsfunctie.schema.json
+  bedrijfsgebeurtenis:
+    dir: bedrijfsarchitectuur/bedrijfsgebeurtenissen
+    curated: true
+    schema: schemas/bedrijfsgebeurtenis.schema.json
+  actor:
+    dir: bedrijfsarchitectuur/actoren
+    curated: true
+    schema: schemas/actor.schema.json
+  rol:
+    dir: bedrijfsarchitectuur/rollen
+    curated: true
+    schema: schemas/rol.schema.json
+
+curation:
+  states: [kandidaat, review, goedgekeurd, afgewezen]
+  gated: [goedgekeurd]
+  approval: document                 # smaak A: akkoord in het voorstel (landelijke standaard, exportdoel later)
+  min_reviewers: 1
+
+# Actuele modelbronnen (bron-id's in sources/index), gezet door tools/ggm.py en tools/gemma.py `release`.
+ggm:
+  bron:
+  herkomst:                          # waar tools/ggm.py release het XMI ophaalt (zelfde locatie als de vorige wiki)
+    repository: Gemeente-Delft/Gemeentelijk-Gegevensmodel
+    ref: Voorbereidingen-Release-v2.5.1
+    pad: v2.5.1/Gemeentelijk Gegevensmodel XMI2.1.xml
+gemma:
+  bron:
+
+work:
+  retention_days: 30

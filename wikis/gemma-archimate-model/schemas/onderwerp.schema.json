@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "onderwerp",
+  "description": "Begrippenlijst per onderwerp (map begrippen/). De begrippentabel staat in de body, met links naar elementpagina's.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "naam",
+    "status",
+    "bronnen"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "type": {
+      "const": "onderwerp"
+    },
+    "naam": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "niet-gestart",
+        "in-behandeling",
+        "afgerond"
+      ]
+    },
+    "bronnen": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conclusie": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Verplicht bij 'afgerond', ook als er geen elementen uit voortkwamen"
+    },
+    "bijgewerkt": {
+      "type": "string"
+    }
+  },
+  "if": {
+    "properties": {
+      "status": {
+        "const": "afgerond"
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "conclusie"
+    ]
+  },
+  "additionalProperties": false
+}

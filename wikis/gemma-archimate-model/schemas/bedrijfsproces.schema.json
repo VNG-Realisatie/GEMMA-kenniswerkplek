@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "bedrijfsproces",
+  "description": "Elementpagina: Business Process.",
+  "allOf": [
+    {
+      "$ref": "element-basis.schema.json#/$defs/element"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "bedrijfsproces"
+    },
+    "archimate_type": {
+      "enum": [
+        "business-process"
+      ]
+    }
+  },
+  "unevaluatedProperties": false,
+  "required": [
+    "taakveld",
+    "beleidsdomein"
+  ]
+}

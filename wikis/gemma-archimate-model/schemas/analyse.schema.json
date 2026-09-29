@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "analyse",
+  "description": "Doorlopende analysepagina (bijv. analyses/ggm-terugmeldingen.md).",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "titel"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "const": "analyse"
+    },
+    "titel": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bijgewerkt": {
+      "type": "string"
+    },
+    "bronnen": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

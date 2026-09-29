@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "bronanalyse",
+  "description": "Wat één bron betekent voor de architectuur (map bronanalyses/<onderwerp>/<bron-id>.md). id = bron-id.",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "onderwerp",
+    "bronnen",
+    "relevant"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "type": {
+      "const": "bronanalyse"
+    },
+    "onderwerp": {
+      "type": "string"
+    },
+    "bronnen": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "relevant": {
+      "enum": [
+        "ja",
+        "nee"
+      ]
+    },
+    "reden": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bijgewerkt": {
+      "type": "string"
+    }
+  },
+  "if": {
+    "properties": {
+      "relevant": {
+        "const": "nee"
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "reden"
+    ]
+  },
+  "additionalProperties": false
+}
