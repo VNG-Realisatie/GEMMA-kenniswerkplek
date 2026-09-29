@@ -136,6 +136,8 @@ def test_fouten_in_relatietabel(wiki):
     ("business-role", "business-process", "behandelt", ("assignment", False, None)),
     ("business-process", "business-object", "stelt vast", ("access", False, "schrijven")),
     ("business-process", "business-object", "toetst aan", ("access", False, "lezen")),
+    ("business-process", "business-object", "levert op", ("access", False, "schrijven")),
+    ("business-process", "business-object", "vereist", ("access", False, "lezen")),
     ("business-object", "business-process", "wordt behandeld in", ("access", True, "lezen-schrijven")),
     ("business-event", "business-process", "start", ("triggering", False, None)),
     ("business-process", "business-process", "volgt op", ("triggering", True, None)),

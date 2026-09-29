@@ -345,9 +345,9 @@ def voorstel(element_id: str, data: dict, wiki_root: Path = WIKI_ROOT) -> list[K
 SPECIALISATIE_WW = ("is een soort", "is een bijzondere vorm van", "is een vorm van", "is een")
 DEEL_GEHEEL_OMGEKEERD = ("maakt deel uit van", "is onderdeel van", "onderdeel van", "deel van")
 SAMENSTELLING_WW = ("bestaat uit", "is samengesteld uit")
-SCHRIJVEN_WW = ("maakt", "stelt vast", "neemt", "legt vast", "wijzigt", "beëindigt", "verleent", "weigert", "trekt in",
+SCHRIJVEN_WW = ("levert op", "maakt", "stelt vast", "neemt", "legt vast", "wijzigt", "beëindigt", "verleent", "weigert", "trekt in",
                 "registreert", "produceert", "levert op", "genereert", "actualiseert")
-LEZEN_WW = ("gebruikt", "raadpleegt", "toetst", "beoordeelt", "controleert", "leest", "bekijkt")
+LEZEN_WW = ("vereist", "gebruikt", "raadpleegt", "toetst", "beoordeelt", "controleert", "leest", "bekijkt")
 TRIGGER_WW = ("leidt tot", "zet in gang", "start", "is aanleiding voor", "wordt gevolgd door")
 TRIGGER_OMGEKEERD = ("volgt op", "is het gevolg van")
 STROOM_WW = ("levert aan", "geeft door aan", "stuurt naar", "draagt over aan")
