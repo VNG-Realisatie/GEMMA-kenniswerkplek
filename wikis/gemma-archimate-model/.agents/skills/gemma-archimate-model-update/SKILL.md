@@ -10,15 +10,11 @@ metadata:
 
 # Workflow gemma-archimate-model-update
 
-Volg skill `wiki-update` volledig. Deze workflow voegt alleen de uitbreidingen van deze wiki toe;
-hij herhaalt geen stappen. Werkmap: `wikis/gemma-archimate-model`.
+Volg skill `wiki-update` volledig. Deze workflow voegt alleen de uitbreidingen van deze wiki toe; hij herhaalt geen stappen. Werkmap: `wikis/gemma-archimate-model`.
 
 ## Starten
 
-Werk altijd vanuit één onderwerp: `uv run llmwiki run start --workflow gemma-archimate-model-update
---onderwerp <onderwerp-id>`. De onderwerppagina staat in `begrippen/<onderwerp-id>.md`; bestaat die nog
-niet, maak haar dan eerst aan in overleg met de redacteur (zie `gemma-archimate-model-ingest`). De bronnen
-komen in de volgorde van de bronvoorrang (wet → informatiemodel → beleid → overig).
+Werk altijd vanuit één onderwerp: `uv run llmwiki run start --workflow gemma-archimate-model-update --onderwerp <onderwerp-id>`. De onderwerppagina staat in `begrippen/<onderwerp-id>.md`; bestaat die nog niet, maak haar dan eerst aan in overleg met de redacteur (zie `gemma-archimate-model-ingest`). De bronnen komen in de volgorde van de bronvoorrang (wet → informatiemodel → beleid → overig).
 
 ## Uitbreidingen per fase
 
@@ -32,10 +28,8 @@ komen in de volgorde van de bronvoorrang (wet → informatiemodel → beleid →
 
 ## Delegatie
 
-INGEST, ASSESS en VALIDATE mogen in een subagent (alleen run-id en artefactpaden meegeven). WRITE blijft in
-de hoofd-Agent: pagina's, begrippenlijst en terugmeldingen worden in samenhang geschreven.
+INGEST, ASSESS en VALIDATE mogen in een subagent (alleen run-id en artefactpaden meegeven). WRITE blijft in de hoofd-Agent: pagina's, begrippenlijst en terugmeldingen worden in samenhang geschreven.
 
 ## Nieuwe modelrelease
 
-Een nieuwe GGM-release of een nieuwe versie van het GEMMA-model is geen onderwerp-update: gebruik
-`gemma-archimate-model-ggm-release` of `gemma-archimate-model-gemma-release`.
+Een nieuwe GGM-release of een nieuwe versie van het GEMMA-model is geen onderwerp-update: gebruik `gemma-archimate-model-ggm-release` of `gemma-archimate-model-gemma-release`.

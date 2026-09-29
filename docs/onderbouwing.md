@@ -355,10 +355,7 @@ llm-wikis/                                  Git-root
 └── .vscode/settings.json                   (H)
 ```
 
-Codex leest `.agents/skills/` en `AGENTS.md` native, zonder gegenereerd bestand
-(5.14); Cursor idem, met een optionele extra brug pas als verificatie een
-probleem laat zien (5.14). Een `curation`-wiki zonder MediaWiki-exportdoel
-genereert geen van de MCP-bestanden.
+Codex leest `.agents/skills/` en `AGENTS.md` native, zonder gegenereerd bestand (5.14); Cursor idem, met een optionele extra brug pas als verificatie een probleem laat zien (5.14). Een `curation`-wiki zonder MediaWiki-exportdoel genereert geen van de MCP-bestanden.
 
 Toelichting op keuzes:
 
@@ -641,34 +638,13 @@ Dit is de enige plek waar de architectuur een generator voor Agentprofielen voor
 | Harness-config (gegenereerd) | Clientconfiguratie in harness-formaat | `.mcp.json`, `opencode.json`, `.codex/config.toml`, `.vscode/mcp.json`, `.cursor/mcp.json` |
 | Gebruikersomgeving (geheim) | Credentials | `MW_GEMMA_USER`, `MW_GEMMA_PASSWORD` |
 
-**Correctie (deze versie).** Eerdere versies gingen uit van platte env-vars
-(`MW_API_URL`/`MW_USERNAME`) rechtstreeks in het MCP-clientblok. Het gekozen
-pakket, **`@professional-wiki/mediawiki-mcp-server`** (npm; actief onderhouden,
-bevestigd hetzelfde pakket als een al bestaand, werkend MediaWiki-beheerproject
-dat als kennisbron is gebruikt bij deze correctie), werkt zo niet: het leest een
-eigen `config.json` (pad via de env-var `CONFIG`) met een `wikis`-object
-(`server`, `articlepath`, `scriptpath`, `username`/`password` of `token`,
-`readOnly`). De rest van deze sectie is bijgewerkt.
+**Correctie (deze versie).** Eerdere versies gingen uit van platte env-vars (`MW_API_URL`/`MW_USERNAME`) rechtstreeks in het MCP-clientblok. Het gekozen pakket, **`@professional-wiki/mediawiki-mcp-server`** (npm; actief onderhouden, bevestigd hetzelfde pakket als een al bestaand, werkend MediaWiki-beheerproject dat als kennisbron is gebruikt bij deze correctie), werkt zo niet: het leest een eigen `config.json` (pad via de env-var `CONFIG`) met een `wikis`-object (`server`, `articlepath`, `scriptpath`, `username`/`password` of `token`, `readOnly`). De rest van deze sectie is bijgewerkt.
 
 **Keuzes.**
 
-1. **MCP per wiki, niet repository-breed.** Een `sync`-wiki, of een
-   `curation`-wiki met MediaWiki als exportdoel, heeft precies één doel-site;
-   `knowledge-base`-wiki's hebben geen MediaWiki-server (5.18). Een per-wiki
-   serverinstantie met die site als vaste standaard voorkomt dat een Agent in de
-   GEMMA-sessie per ongeluk een andere wiki raadpleegt of wijzigt. De
-   serverconfiguratie staat daarom in de wiki-map.
+1. **MCP per wiki, niet repository-breed.** Een `sync`-wiki, of een `curation`-wiki met MediaWiki als exportdoel, heeft precies één doel-site; `knowledge-base`-wiki's hebben geen MediaWiki-server (5.18). Een per-wiki serverinstantie met die site als vaste standaard voorkomt dat een Agent in de GEMMA-sessie per ongeluk een andere wiki raadpleegt of wijzigt. De serverconfiguratie staat daarom in de wiki-map.
 2. **Vaste servernaam `mediawiki` in elke wiki en elk harness.** Skills verwijzen naar "MCP-server `mediawiki`, tool `<naam zoals de server die publiceert>`". [Verified] Claude Code maakt daar `mcp__mediawiki__<tool>` van; [Inferred] andere harnesses gebruiken een eigen prefix. De door de server gepubliceerde naam is gelijk in elk harness; alleen het prefix verschilt. Een Skill noemt daarom nooit de geprefixte naam.
-3. **MCP wijst altijd naar het hoofddoel, nooit naar een testomgeving.** Een
-   testomgeving (bijvoorbeeld een OTAP-staging) kan achter een extra HTTP
-   Basic Auth-laag zitten die los staat van MediaWiki's eigen login — bij een
-   pakket dat zulke userinfo-in-URL niet ondersteunt (zoals dit pakket,
-   vermoedelijk vanwege de gebruikte HTTP-client) is een testomgeving dan
-   simpelweg niet bereikbaar via MCP. Omdat MCP toch alleen-lezen is, is dit
-   geen verlies: lezen tegen het hoofddoel is voor die rol voldoende. Live
-   schrijven naar een testdoel loopt via pywikibot (`llmwiki pull/publish
-   --doel <naam>`), dat wél een aparte Basic-Auth-laag kan doorgeven
-   (pywikibots `authenticate`-dictionary, buiten deze repository ingesteld).
+3. **MCP wijst altijd naar het hoofddoel, nooit naar een testomgeving.** Een testomgeving (bijvoorbeeld een OTAP-staging) kan achter een extra HTTP Basic Auth-laag zitten die los staat van MediaWiki's eigen login — bij een pakket dat zulke userinfo-in-URL niet ondersteunt (zoals dit pakket, vermoedelijk vanwege de gebruikte HTTP-client) is een testomgeving dan simpelweg niet bereikbaar via MCP. Omdat MCP toch alleen-lezen is, is dit geen verlies: lezen tegen het hoofddoel is voor die rol voldoende. Live schrijven naar een testdoel loopt via pywikibot (`llmwiki pull/publish --doel <naam>`), dat wél een aparte Basic-Auth-laag kan doorgeven (pywikibots `authenticate`-dictionary, buiten deze repository ingesteld).
 4. **Rolverdeling MCP versus pywikibot.** MCP voor interactief lezen, zoeken en verkennen tijdens het bewerken. Pywikibot via `llmwiki pull`/`publish` voor het daadwerkelijk ophalen en publiceren. MCP-schrijfoperaties worden niet gebruikt: publiceren loopt uitsluitend via de gate. `readOnly: true` in de gegenereerde `config.json` zet dit ook aan de kant van de MCP-server af; harness-permissies blokkeren daarnaast de schrijf-Tools waar de client dat toelaat.
 5. **Terugval zonder MCP.** Elke Skill die MCP gebruikt, noemt een terugval via `llmwiki pull --titel <titel>` (leest via pywikibot). [Inferred] Daarmee blijft de Workflow uitvoerbaar in een harness of omgeving waar de MCP-server ontbreekt of niet is goedgekeurd.
 
@@ -689,11 +665,7 @@ eigen `config.json` (pad via de env-var `CONFIG`) met een `wikis`-object
 }
 ```
 
-Geen geheimen in dit bestand: alleen niet-gevoelige serverinformatie uit
-`wiki.yaml`'s `site`-blok. Authenticatie (Bot Password, eventuele Basic Auth voor
-een testdoel) blijft volledig in pywikibots eigen, buiten deze repository
-gehouden configuratie (zie hieronder) — de MCP-server zelf draait `readOnly` en
-heeft dus geen schrijfcredentials nodig.
+Geen geheimen in dit bestand: alleen niet-gevoelige serverinformatie uit `wiki.yaml`'s `site`-blok. Authenticatie (Bot Password, eventuele Basic Auth voor een testdoel) blijft volledig in pywikibots eigen, buiten deze repository gehouden configuratie (zie hieronder) — de MCP-server zelf draait `readOnly` en heeft dus geen schrijfcredentials nodig.
 
 **Harness-clientbestand (voorbeeld: Claude Code, `.mcp.json`).**
 
@@ -709,25 +681,9 @@ heeft dus geen schrijfcredentials nodig.
 }
 ```
 
-Het `CONFIG`-pad is **relatief aan de wiki-map**, zodat het bestand
-machine-onafhankelijk en gecommit kan zijn (in tegenstelling tot een eerder
-overwogen ontwerp met een absoluut, per-gebruiker pad). Of dat relatieve pad in
-elke harness correct oplost — de child-process-cwd bij het starten van een
-stdio-server verschilt mogelijk per harness — is nieuw verificatiepunt **V10**
-(sectie 8), naast het bestaande V6 voor env-var-syntax per harness.
-`llmwiki harness sync` genereert hetzelfde soort blok voor OpenCode
-(`opencode.json`), Codex (`.codex/config.toml`), VS Code (`.vscode/mcp.json`) en
-Cursor (`.cursor/mcp.json`), telkens wijzend op dezelfde `config.json`.
+Het `CONFIG`-pad is **relatief aan de wiki-map**, zodat het bestand machine-onafhankelijk en gecommit kan zijn (in tegenstelling tot een eerder overwogen ontwerp met een absoluut, per-gebruiker pad). Of dat relatieve pad in elke harness correct oplost — de child-process-cwd bij het starten van een stdio-server verschilt mogelijk per harness — is nieuw verificatiepunt **V10** (sectie 8), naast het bestaande V6 voor env-var-syntax per harness. `llmwiki harness sync` genereert hetzelfde soort blok voor OpenCode (`opencode.json`), Codex (`.codex/config.toml`), VS Code (`.vscode/mcp.json`) en Cursor (`.cursor/mcp.json`), telkens wijzend op dezelfde `config.json`.
 
-**Pywikibot: credentials en een eventuele testomgeving-Basic-Auth staan
-volledig buiten deze repository**, in pywikibots eigen globale configuratie
-(`~/.pywikibot/user-config.py`, met een `password_file` voor het Bot Password en
-een `authenticate`-dictionary voor een eventuele HTTP Basic Auth-laag). `wiki.yaml`
-verwijst alleen naar `family`/`code` van een al geregistreerde pywikibot-family
-(zie 5.13); `llmwiki` schrijft of leest die configuratie nooit. Dit is een bewuste
-keuze voor betrouwbaarheid boven "zero-config clone": een dynamische
-Site-constructie zonder geregistreerde family was niet zonder een live spike te
-verifiëren.
+**Pywikibot: credentials en een eventuele testomgeving-Basic-Auth staan volledig buiten deze repository**, in pywikibots eigen globale configuratie (`~/.pywikibot/user-config.py`, met een `password_file` voor het Bot Password en een `authenticate`-dictionary voor een eventuele HTTP Basic Auth-laag). `wiki.yaml` verwijst alleen naar `family`/`code` van een al geregistreerde pywikibot-family (zie 5.13); `llmwiki` schrijft of leest die configuratie nooit. Dit is een bewuste keuze voor betrouwbaarheid boven "zero-config clone": een dynamische Site-constructie zonder geregistreerde family was niet zonder een live spike te verifiëren.
 
 [Verified] Claude Code vraagt goedkeuring voor project-servers uit `.mcp.json`; [Verified] een gekloonde repository kan die goedkeuring niet zelf geven. Dit is een gewenste eigenschap en geen probleem voor de architectuur.
 
@@ -766,18 +722,11 @@ wikis/opzet2/.work/runs/2026-09-26T1412-a3f9/
 └── log.jsonl                   gebeurtenissen per fase (welk harness, welk Model, tijd)
 ```
 
-Een sync-wiki heeft maar één fase vóór de gate (`phases_for` geeft `[validate]`):
-alleen `validation-report.json` en, na `publish plan`, `publish-plan.json` — geen
-`source.json`/`assessment.json`/`changeset.json`/`changeset/`, want er is geen
-INGEST/ASSESS/WRITE. `content/` wordt bij een sync-wiki rechtstreeks in de
-werkboom bewerkt, niet gestaged in het kladblok.
+Een sync-wiki heeft maar één fase vóór de gate (`phases_for` geeft `[validate]`): alleen `validation-report.json` en, na `publish plan`, `publish-plan.json` — geen `source.json`/`assessment.json`/`changeset.json`/`changeset/`, want er is geen INGEST/ASSESS/WRITE. `content/` wordt bij een sync-wiki rechtstreeks in de werkboom bewerkt, niet gestaged in het kladblok.
 
 `state.json` bevat: workflow-naam, huidige fase, status per fase (`pending|done|failed`), paden en hashes van artefacten, basis-revisies van de betrokken pagina's. `llmwiki run complete <fase>` is de enige manier om een fase af te ronden en valideert het artefact eerst.
 
-**Kladblok versus archief.** Twee soorten opslag met een verschillend doel. Er is
-geen apart `records/`-archief meer (eerdere versies hadden dat voor type A; zie de
-correctie in 5.18) — het blijvende verslag is `log.md`, voor elke wiki-soort op
-dezelfde manier geschreven door de CLI:
+**Kladblok versus archief.** Twee soorten opslag met een verschillend doel. Er is geen apart `records/`-archief meer (eerdere versies hadden dat voor type A; zie de correctie in 5.18) — het blijvende verslag is `log.md`, voor elke wiki-soort op dezelfde manier geschreven door de CLI:
 
 | | Kladblok | Archief |
 |---|---|---|
@@ -789,21 +738,9 @@ dezelfde manier geschreven door de CLI:
 | Wie schrijft | Model (artefacten) en CLI (State) | Alleen de CLI (`publish apply`/`promote apply`), nooit het Model |
 | Levensduur | Onafgeronde runs blijven staan tot hervat of afgebroken; afgeronde runs worden na `work.retention_days` (standaard 30) verwijderd | Blijvend, alleen aanvullen |
 
-`llmwiki run close <run-id> --besluit "<tekst>"` schrijft voor een run die bewust
-zonder publicatie wordt afgesloten (bijvoorbeeld: bron beoordeeld, geen wijziging
-nodig) optioneel een regel in `log.md` als er een besluit te noteren is. `llmwiki
-run abandon <run-id>` schrijft niets en verwijdert het kladblok van die run. Een
-onderbroken of geannuleerde run laat dus niets achter in de wiki — ook niet in
-`log.md`.
+`llmwiki run close <run-id> --besluit "<tekst>"` schrijft voor een run die bewust zonder publicatie wordt afgesloten (bijvoorbeeld: bron beoordeeld, geen wijziging nodig) optioneel een regel in `log.md` als er een besluit te noteren is. `llmwiki run abandon <run-id>` schrijft niets en verwijdert het kladblok van die run. Een onderbroken of geannuleerde run laat dus niets achter in de wiki — ook niet in `log.md`.
 
-**Git.** `.work/` en `voorstellen/` staan in `.gitignore`. Bij een sync-wiki
-bewerkt de Agent `content/` rechtstreeks in de werkboom; de mens beoordeelt via
-het publicatievoorstel (met een echte git-diff erin) of met `git diff`. Bij een
-curatie-wiki staat het concept eerst gestaged in het kladblok (`changeset/`) en
-wordt het pas bij een geslaagde `promote apply` in de werkboom gezet. Commit
-gebeurt na publicatie/promotie, met content en `log.md` samen en de run-id in het
-commit-bericht. Na `publish apply` bevat `revisies.json` de nieuwe revisie-id's
-(5.12, 5.13) — geen aparte `.meta.json` meer.
+**Git.** `.work/` en `voorstellen/` staan in `.gitignore`. Bij een sync-wiki bewerkt de Agent `content/` rechtstreeks in de werkboom; de mens beoordeelt via het publicatievoorstel (met een echte git-diff erin) of met `git diff`. Bij een curatie-wiki staat het concept eerst gestaged in het kladblok (`changeset/`) en wordt het pas bij een geslaagde `promote apply` in de werkboom gezet. Commit gebeurt na publicatie/promotie, met content en `log.md` samen en de run-id in het commit-bericht. Na `publish apply` bevat `revisies.json` de nieuwe revisie-id's (5.12, 5.13) — geen aparte `.meta.json` meer.
 
 **Opruimen.** `llmwiki workspace-check` roept `llmwiki run prune` aan; dat verwijdert afgeronde runs ouder dan de bewaartermijn en de bijbehorende voorstellen. Onafgeronde runs worden nooit automatisch verwijderd; `workspace-check` meldt ze wel, zodat de Agent kan voorstellen ze te hervatten.
 
@@ -1103,17 +1040,7 @@ Uitvoer: een korte tekst in gewone taal en, met `--json`, een machineleesbare st
 
 ### 5.18 Soorten wiki's: sync, curatie en knowledge-base
 
-**Correctie (deze versie).** Eerdere versies van dit document kenden drie typen
-A/B/C, waarbij "type A" (sync) óók de domein-lens (`onderwerpen/`,
-`bronnen/<onderwerp>/`) en het `records/`-archief van curatie kreeg, en "hybride"
-een eigen vierde letter-variant was. Onderzoek tijdens de bouw van Klus 2/3, tegen
-een al bestaande, in productie zijnde buursetup (een reëel MediaWiki-beheerproject
-met een aparte kennisbank ernaast, bewust van elkaar gescheiden), liet zien dat dit
-twee aparte problemen samenvoegde die niets met elkaar te maken hebben: (1) een
-site beheren (direct bewerken, git-diff-review, publiceren) en (2) kennis opbouwen
-(met of zonder formele curatiestatus). Vandaar de herziening hieronder. Wiki-soorten
-heten voortaan bij naam (`sync`/`curation`/`knowledge-base`), nooit als letter —
-dat botste leesbaar met "Model A–D" (4) en "smaak A/B" (5.13).
+**Correctie (deze versie).** Eerdere versies van dit document kenden drie typen A/B/C, waarbij "type A" (sync) óók de domein-lens (`onderwerpen/`, `bronnen/<onderwerp>/`) en het `records/`-archief van curatie kreeg, en "hybride" een eigen vierde letter-variant was. Onderzoek tijdens de bouw van Klus 2/3, tegen een al bestaande, in productie zijnde buursetup (een reëel MediaWiki-beheerproject met een aparte kennisbank ernaast, bewust van elkaar gescheiden), liet zien dat dit twee aparte problemen samenvoegde die niets met elkaar te maken hebben: (1) een site beheren (direct bewerken, git-diff-review, publiceren) en (2) kennis opbouwen (met of zonder formele curatiestatus). Vandaar de herziening hieronder. Wiki-soorten heten voortaan bij naam (`sync`/`curation`/`knowledge-base`), nooit als letter — dat botste leesbaar met "Model A–D" (4) en "smaak A/B" (5.13).
 
 Een LLM-wiki heeft niet altijd een MediaWiki-site als bron van waarheid. De architectuur kent drie soorten. Ze delen Rules, Skills, run-State, gate en de centrale bronnen (5.19); ze verschillen in doel, contentformaat en de laatste fase.
 
@@ -1128,9 +1055,7 @@ Een LLM-wiki heeft niet altijd een MediaWiki-site als bron van waarheid. De arch
 | MediaWiki/MCP nodig | Ja | Alleen als MediaWiki een exportdoel is | Nee |
 | Archief | `log.md` (5.11) | De pagina's zelf plus `log.md` | De documenten zelf |
 
-Wat voorheen "hybride" (type C) heette, is geen aparte soort: het is gewoon een
-`curation`-wiki met een ingevuld `exports:`-blok. Zonder dat blok stopt de
-workflow na PROMOTE.
+Wat voorheen "hybride" (type C) heette, is geen aparte soort: het is gewoon een `curation`-wiki met een ingevuld `exports:`-blok. Zonder dat blok stopt de workflow na PROMOTE.
 
 **Keten in het gemeentelijke landschap.** Curatie-wiki's volgen elkaar op; de uitkomst van de ene is bron voor de volgende, en komt uiteindelijk als redactionele wijziging bij een sync-wiki terecht:
 
@@ -1145,8 +1070,7 @@ Keuzes:
 - **Bij curatie en knowledge-base zijn de pagina's het archief.** Geen aparte records voor bronnen en kandidaten — dubbele vastlegging. Het logboek is `log.md`. Een sync-wiki gebruikt óók `log.md` (één regel per publicatie, met titel en revisie) — geen apart `records/`-archief meer; de conflictbasis is `revisies.json`, geen `.meta.json`-sidecar per pagina (5.12, 5.13).
 - **`knowledge-base` gebruikt geen run/gate.** Er is niets om te publiceren; `llmwiki run start` weigert expliciet voor dit type (in plaats van stil iets verkeerds te doen). Review is een gewone `git diff`/commit.
 - **De Obsidian-vault is de repository-root.** Alleen dan werken relatieve links van een wiki naar `sources/` in Obsidian; [Inferred] Obsidian opent geen links naar bestanden buiten de vault. `.obsidian/app.json` in de root zet Markdown-links op relatief pad en sluit `tools/` en `tests/` uit via de uitsluitfilters. [Inferred] Mappen die met een punt beginnen (`.work`, `.agents`, `.claude`) toont Obsidian standaard niet.
-- **Bronnen per onderwerp (curatie).** Een curatie-wiki deelt zijn bronanalyses in naar onderwerp: `bronnen/<onderwerp>/<bron-id>.md`, waarbij `<onderwerp>` gelijk is aan de id van `onderwerpen/<onderwerp>.md`. Een bron die bij meer onderwerpen hoort, staat bij het hoofdonderwerp; andere onderwerppagina's linken ernaar.
-  De mapnamen zijn standaardwaarden: een wiki kiest eigen namen via `page_types.<type>.dir` in `wiki.yaml` (bijv. `begrippen/` en `bronanalyses/` in `gemma-archimate-model`). `llmwiki run start --onderwerp` zoekt de onderwerppagina in de map van paginatype `onderwerp`.
+- **Bronnen per onderwerp (curatie).** Een curatie-wiki deelt zijn bronanalyses in naar onderwerp: `bronnen/<onderwerp>/<bron-id>.md`, waarbij `<onderwerp>` gelijk is aan de id van `onderwerpen/<onderwerp>.md`. Een bron die bij meer onderwerpen hoort, staat bij het hoofdonderwerp; andere onderwerppagina's linken ernaar. De mapnamen zijn standaardwaarden: een wiki kiest eigen namen via `page_types.<type>.dir` in `wiki.yaml` (bijv. `begrippen/` en `bronanalyses/` in `gemma-archimate-model`). `llmwiki run start --onderwerp` zoekt de onderwerppagina in de map van paginatype `onderwerp`.
 - **Paginatype-schema.** Staat bij een paginatype in `wiki.yaml` een `schema`, dan valideert `llmwiki validate --schema page` de frontmatter daartegen. Relatieve `$ref`s worden opgelost vanuit de map van het schema, zodat een wiki gedeelde definities in één bestand kan zetten. Gestagede pagina's worden met `--run <run-id>` beoordeeld op hun doelpad uit `changeset.json` (id, relatieve links; de andere pagina's uit dezelfde changeset gelden als bestaand).
 - **Promotie per status.** `promote apply` keurt alleen pagina's goed die de Agent op `review` zette. Een `kandidaat` (nog voor te leggen) wordt ongewijzigd geschreven, zonder logregel; een gestagede `goedgekeurd` weigert het plan.
 
@@ -1257,9 +1181,7 @@ bijgewerkt: 2026-09-27
 
 #### Workflows
 
-Twee generieke Workflow-Skills: `wiki-edit` voor `sync`, `wiki-update` voor
-`curation`. `knowledge-base` gebruikt losse capability-Skills (`wiki-kennis-ingest`)
-zonder Workflow-gate.
+Twee generieke Workflow-Skills: `wiki-edit` voor `sync`, `wiki-update` voor `curation`. `knowledge-base` gebruikt losse capability-Skills (`wiki-kennis-ingest`) zonder Workflow-gate.
 
 ```text
 sync:         PULL → BEWERK → VALIDATE → GATE → PUBLISH
@@ -1277,18 +1199,14 @@ knowledge-base: (geen run/gate) ingest → classificeren → document bijwerken
 | GATE | Publicatievoorstel met een git-diff (5.13) | Promotievoorstel; met `exports:` ook het exportvoorstel |
 | Laatste fase | `publish apply` (pywikibot, na conflictcontrole tegen de live revisie) | `promote apply`, met `exports:` daarna `export apply` per doel |
 
-De gate is dezelfde als in 5.13, met één extra controle bij sync: `publish
-apply` haalt vlak vóór schrijven de live revisie op en vergelijkt die met de
-basis in `revisies.json` — een tussentijdse externe wijziging wordt geweigerd,
-niet overschreven.
+De gate is dezelfde als in 5.13, met één extra controle bij sync: `publish apply` haalt vlak vóór schrijven de live revisie op en vergelijkt die met de basis in `revisies.json` — een tussentijdse externe wijziging wordt geweigerd, niet overschreven.
 
 Wat anders is bij curatie:
 - [Inferred] De Agent kan `status: goedgekeurd` zelf in een lokaal bestand schrijven. Daarom weigeren `llmwiki validate` en de pre-commit-hook elke pagina met een gated status zonder promotieregel in `log.md` met overeenkomende inhoudshash.
 - Bij `min_reviewers` > 1 bevat `beoordeeld_door` een lijst; `promote apply` controleert het aantal.
 - Wijzigt een goedgekeurde pagina inhoudelijk, dan zet VALIDATE hem terug naar `review`.
 
-Een wiki-Workflow (bijv. `opzet2-update`) blijft dun, zoals in 5.8, en verwijst naar
-`wiki-update` (curatie) of `wiki-edit` (sync).
+Een wiki-Workflow (bijv. `opzet2-update`) blijft dun, zoals in 5.8, en verwijst naar `wiki-update` (curatie) of `wiki-edit` (sync).
 
 #### Tooling
 

@@ -1,10 +1,6 @@
 # Architectuur van de wiki gemma-archimate-model
 
-Deze wiki bouwt het GEMMA-architectuurmodel voor de bedrijfslaag onderbouwd opnieuw op: bedrijfsobjecten,
-contracten, producten, diensten, processen, functies, gebeurtenissen, actoren en rollen. Elk element is
-herleidbaar tot bronnen, gematcht op het GGM en op het huidige GEMMA-model, en pas na akkoord van een redacteur
-vastgesteld. Het is een wiki van het type `curation` (zie de `ARCHITECTURE.md` van de repository voor de
-algemene opzet). De regels staan in [AGENTS.md](AGENTS.md); dit document legt uit hoe alles samenhangt.
+Deze wiki bouwt het GEMMA-architectuurmodel voor de bedrijfslaag onderbouwd opnieuw op: bedrijfsobjecten, contracten, producten, diensten, processen, functies, gebeurtenissen, actoren en rollen. Elk element is herleidbaar tot bronnen, gematcht op het GGM en op het huidige GEMMA-model, en pas na akkoord van een redacteur vastgesteld. Het is een wiki van het type `curation` (zie de `ARCHITECTURE.md` van de repository voor de algemene opzet). De regels staan in [AGENTS.md](AGENTS.md); dit document legt uit hoe alles samenhangt.
 
 ## 1. Plaats in de keten
 
@@ -14,9 +10,7 @@ GGM-XMI (sources/, via tools/ggm.py)           ─┼─►  deze wiki  ─►  
 GEMMA-model AMEFF (sources/, tools/gemma.py)    ┘
 ```
 
-Het GGM is zowel bron (kandidaat-begrippen, definities, relaties) als toets. Het GEMMA-model is alleen
-matchdoel: het laat zien hoe een element nu in GEMMA staat. Terugschrijven naar GEMMA is nog niet gebouwd
-(advies: een deel-`.archimate` met behoud van id's, zie skill `gemma-archimate-model-gemma-release`).
+Het GGM is zowel bron (kandidaat-begrippen, definities, relaties) als toets. Het GEMMA-model is alleen matchdoel: het laat zien hoe een element nu in GEMMA staat. Terugschrijven naar GEMMA is nog niet gebouwd (advies: een deel-`.archimate` met behoud van id's, zie skill `gemma-archimate-model-gemma-release`).
 
 ## 2. Plattegrond
 
@@ -56,9 +50,7 @@ Veldprefixen op een elementpagina ([EL12]):
 | `ggm_` | Letterlijk uit het GGM | alleen `tools/ggm.py` |
 | `gemma_` | Letterlijk uit het GEMMA-model, na een match | alleen `tools/gemma.py` |
 
-In de frontmatter staan geen verwijzingen naar andere pagina's ([EL17]). Alle verwijzingen tussen pagina's
-zijn relatieve Markdown-links in de body; Obsidian toont zo de omgekeerde kant als backlink. De vaste tabellen
-(relaties, specialisaties, begrippen, terugmeldingen) leest de tool uit de body.
+In de frontmatter staan geen verwijzingen naar andere pagina's ([EL17]). Alle verwijzingen tussen pagina's zijn relatieve Markdown-links in de body; Obsidian toont zo de omgekeerde kant als backlink. De vaste tabellen (relaties, specialisaties, begrippen, terugmeldingen) leest de tool uit de body.
 
 ## 4. Herleidbaarheid
 
@@ -68,14 +60,11 @@ sources/raw (origineel) → sources/index (intake) → bronanalyses/<onderwerp>/
     bronanalyse ## Relaties (werkwoord + vindplaats) → relatierij op de elementpagina (kolom Bron)
 ```
 
-`tools/check_elementen.py` eist dat elke bron van een element een bronanalyse heeft (behalve de modelbronnen
-GGM en GEMMA), dat elke bronanalyse in de bronnenlijst van haar onderwerp staat, en dat elk element in een
-begrippenlijst voorkomt.
+`tools/check_elementen.py` eist dat elke bron van een element een bronanalyse heeft (behalve de modelbronnen GGM en GEMMA), dat elke bronanalyse in de bronnenlijst van haar onderwerp staat, en dat elk element in een begrippenlijst voorkomt.
 
 ## 5. Werkstroom
 
-Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update/SKILL.md) volgt de gedeelde
-`wiki-update` en voegt per fase toe:
+Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update/SKILL.md) volgt de gedeelde `wiki-update` en voegt per fase toe:
 
 | Fase | Skill | Gereedschap | Resultaat |
 |---|---|---|---|
@@ -85,34 +74,22 @@ Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update
 | VALIDATE | `wiki-validate` | `llmwiki validate --run`, `tools/check_elementen.py` | validatierapport |
 | GATE + PROMOTE | `wiki-publish` | `llmwiki promote plan/apply` | goedgekeurde pagina's, `log.md` |
 
-Nieuwe modelversies: [gemma-archimate-model-ggm-release](.agents/skills/gemma-archimate-model-ggm-release/SKILL.md)
-en [gemma-archimate-model-gemma-release](.agents/skills/gemma-archimate-model-gemma-release/SKILL.md).
+Nieuwe modelversies: [gemma-archimate-model-ggm-release](.agents/skills/gemma-archimate-model-ggm-release/SKILL.md) en [gemma-archimate-model-gemma-release](.agents/skills/gemma-archimate-model-gemma-release/SKILL.md).
 
 ## 6. Criteria: is een begrip een element, en welk?
 
-Eén plek: skill [gemma-archimate-model-criteria](.agents/skills/gemma-archimate-model-criteria/SKILL.md), met de
-code in [tools/bepaal_type.py](tools/bepaal_type.py).
+Eén plek: skill [gemma-archimate-model-criteria](.agents/skills/gemma-archimate-model-criteria/SKILL.md), met de code in [tools/bepaal_type.py](tools/bepaal_type.py).
 
-- **Kenmerken** zijn neutrale eigenschappen van een begrip (bijv. *onderscheidbare exemplaren*). Het model
-  beantwoordt ze allemaal, één keer, met onderbouwing en bron-id's.
-- **Criteria** zijn de regels van de beslistabel: welke combinatie van kenmerken tot welk type leidt. De tool
-  past ze toe; het type is dus een uitkomst, geen keuze vooraf.
-- De tabellen in de skill en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json) worden
-  uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
-- Collaboration, Interface, Interaction, Location en Representation worden herkend, maar hebben nog geen
-  paginatype: zo'n begrip wordt voorgelegd. De motivatie- en strategielaag valt buiten dit model.
+- **Kenmerken** zijn neutrale eigenschappen van een begrip (bijv. *onderscheidbare exemplaren*). Het model beantwoordt ze allemaal, één keer, met onderbouwing en bron-id's.
+- **Criteria** zijn de regels van de beslistabel: welke combinatie van kenmerken tot welk type leidt. De tool past ze toe; het type is dus een uitkomst, geen keuze vooraf.
+- De tabellen in de skill en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json) worden uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
+- Collaboration, Interface, Interaction, Location en Representation worden herkend, maar hebben nog geen paginatype: zo'n begrip wordt voorgelegd. De motivatie- en strategielaag valt buiten dit model.
 
 ## 7. Bronvoorrang en definities
 
-- Brontype per bron (in de intake): `wet`, `informatiemodel`, `beleid`, `overig`, `model`. De leesvolgorde staat in
-  `wiki.yaml` (`bronvoorrang`); `llmwiki run start --onderwerp` houdt haar aan. `model` (het GEMMA-model) is een
-  matchdoel en valt buiten de volgorde.
-- Wet en informatiemodel bepalen welke begrippen er zijn en wat ze formeel betekenen; beleid levert de gangbare
-  taal. Voorrang bepaalt niet of iets een element is ([SRC10]).
-- `definitie` is de herkenbare definitie (altijd, ≤160 tekens, gaat naar GEMMA). `definitie_formeel` staat er
-  alleen bij een wezenlijk verschil: als onder beide definities niet precies dezelfde exemplaren vallen. Een
-  formele definitie uit het GGM staat al in `ggm_definitie` en wordt niet gekopieerd. Zie
-  [references/definitie.md](.agents/skills/gemma-archimate-model-write/references/definitie.md).
+- Brontype per bron (in de intake): `wet`, `informatiemodel`, `beleid`, `overig`, `model`. De leesvolgorde staat in `wiki.yaml` (`bronvoorrang`); `llmwiki run start --onderwerp` houdt haar aan. `model` (het GEMMA-model) is een matchdoel en valt buiten de volgorde.
+- Wet en informatiemodel bepalen welke begrippen er zijn en wat ze formeel betekenen; beleid levert de gangbare taal. Voorrang bepaalt niet of iets een element is ([SRC10]).
+- `definitie` is de herkenbare definitie (altijd, ≤160 tekens, gaat naar GEMMA). `definitie_formeel` staat er alleen bij een wezenlijk verschil: als onder beide definities niet precies dezelfde exemplaren vallen. Een formele definitie uit het GGM staat al in `ggm_definitie` en wordt niet gekopieerd. Zie [references/definitie.md](.agents/skills/gemma-archimate-model-write/references/definitie.md).
 
 ## 8. Relaties
 
@@ -153,11 +130,8 @@ Gegenereerde bestanden hebben een hash-kop; `tools/check_elementen.py` meldt een
 
 ## 10. Status, gate en autonomie
 
-- De AI zet een element op `review` alleen als de beslistabel geen conflict en geen "voorleggen" geeft. Daarnaast
-  moet een element met `data_object: ja` een GGM-match exact of sterk hebben, en een `governance-object` wordt
-  altijd voorgelegd. Anders krijgt het element status `kandidaat`, met een sectie `## Ter discussie` ([EL18]).
-- `llmwiki promote apply` keurt na akkoord (smaak A: document) alleen `review`-pagina's goed; een `kandidaat` wordt
-  geschreven zoals hij is, zonder logregel.
+- De AI zet een element op `review` alleen als de beslistabel geen conflict en geen "voorleggen" geeft. Daarnaast moet een element met `data_object: ja` een GGM-match exact of sterk hebben, en een `governance-object` wordt altijd voorgelegd. Anders krijgt het element status `kandidaat`, met een sectie `## Ter discussie` ([EL18]).
+- `llmwiki promote apply` keurt na akkoord (smaak A: document) alleen `review`-pagina's goed; een `kandidaat` wordt geschreven zoals hij is, zonder logregel.
 - Een goedgekeurde pagina die opnieuw wordt gestaged (bijv. door een modelrelease), gaat terug naar `review`.
 
 ## 11. Controles
@@ -175,9 +149,7 @@ Gegenereerde bestanden hebben een hash-kop; `tools/check_elementen.py` meldt een
 | Hiërarchie en tegenhangers | specialisaties met en zonder pagina, wederzijdse tegenhanger |
 | Pagina's en bestanden | technische verwijzingen, begrippenlijst en bronanalyse, gegenereerde bestanden |
 
-Een **waarschuwing** geeft het bij registr*-taal, absolute taal, meer dan één zin in de definitie, een ontbrekende
-tegenhanger, niet-wederzijdse homoniemen en een afwijkende GEMMA-groepering. Waarschuwingen beoordeelt het model
-inhoudelijk.
+Een **waarschuwing** geeft het bij registr*-taal, absolute taal, meer dan één zin in de definitie, een ontbrekende tegenhanger, niet-wederzijdse homoniemen en een afwijkende GEMMA-groepering. Waarschuwingen beoordeelt het model inhoudelijk.
 
 ## 12. Regels
 

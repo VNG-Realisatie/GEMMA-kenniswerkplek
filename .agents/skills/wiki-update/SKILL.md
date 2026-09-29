@@ -10,8 +10,7 @@ metadata:
 
 # Workflow wiki-update
 
-Werkmap: de wiki-directory (bevat `wiki.yaml`). Bepaal die eerst met `llmwiki run
-status` of door te zoeken naar `wiki.yaml` vanaf de huidige map.
+Werkmap: de wiki-directory (bevat `wiki.yaml`). Bepaal die eerst met `llmwiki run status` of door te zoeken naar `wiki.yaml` vanaf de huidige map.
 
 ## Run starten of hervatten
 
@@ -19,8 +18,7 @@ status` of door te zoeken naar `wiki.yaml` vanaf de huidige map.
    <onderwerp-id>]`, of `llmwiki run resume <run-id>` als er al een run loopt
    (`llmwiki run status` zonder `--run` toont de laatst gestarte run).
 2. `llmwiki run status` geeft de eerstvolgende fase. Voer alleen die fase uit.
-3. Startte de run met `--onderwerp`: alleen de bronnen uit de `bronnen:`-lijst van die
-   onderwerppagina zijn in scope voor INGEST en ASSESS.
+3. Startte de run met `--onderwerp`: alleen de bronnen uit de `bronnen:`-lijst van die onderwerppagina zijn in scope voor INGEST en ASSESS.
 
 ## Fasen
 
@@ -32,30 +30,22 @@ status` of door te zoeken naar `wiki.yaml` vanaf de huidige map.
 | VALIDATE | validator | wiki-validate | changeset.json | validation-report.json |
 | GATE + PROMOTE/PUBLISH | (mens) + wiki-publish | wiki-publish | validation-report.json | promote-plan.json / publish-plan.json |
 
-Na elke fase: `llmwiki run complete <fase> --run <run-id> --data <artefact>.json`.
-Dit valideert het artefact tegen het schema en weigert bij fouten; de fase telt dan
-niet als afgerond.
+Na elke fase: `llmwiki run complete <fase> --run <run-id> --data <artefact>.json`. Dit valideert het artefact tegen het schema en weigert bij fouten; de fase telt dan niet als afgerond.
 
 ## Uitbreidingspunten
 
-Een wiki-Workflow mag per fase aanvullende Skills en controles opgeven. Voer die uit
-binnen dezelfde fase, ná de generieke Skill hierboven.
+Een wiki-Workflow mag per fase aanvullende Skills en controles opgeven. Voer die uit binnen dezelfde fase, ná de generieke Skill hierboven.
 
 ## Delegatie
 
-Als het harness subagents ondersteunt: voer INGEST, ASSESS en VALIDATE elk uit in een
-aparte subagent met als opdracht "laad skill <naam>, lees <artefact>, schrijf
+Als het harness subagents ondersteunt: voer INGEST, ASSESS en VALIDATE elk uit in een aparte subagent met als opdracht "laad skill <naam>, lees <artefact>, schrijf
 <artefact>". Geef geen gespreksgeschiedenis mee, alleen de run-id en artefactpaden.
 WRITE blijft in de hoofd-Agent: parallelle schrijvende Agents veroorzaken conflicten.
 
 ## Gate
 
-Na VALIDATE: laad skill `wiki-publish` en volg die instructies volledig. Wijzig nooit
-zelf de akkoordvelden in een voorstel, en zet geen automatische goedkeuring aan in een
-sessie waarin wordt gepubliceerd of gepromoveerd.
+Na VALIDATE: laad skill `wiki-publish` en volg die instructies volledig. Wijzig nooit zelf de akkoordvelden in een voorstel, en zet geen automatische goedkeuring aan in een sessie waarin wordt gepubliceerd of gepromoveerd.
 
 ## Afbreken
 
-Wil de gebruiker de run niet afmaken: `llmwiki run close <run-id> --besluit "<reden>"`
-als er bewust geen wijziging komt, of `llmwiki run abandon <run-id>` bij een fout of
-een overbodige run. Beide laten de wiki ongewijzigd; alleen het kladblok verdwijnt.
+Wil de gebruiker de run niet afmaken: `llmwiki run close <run-id> --besluit "<reden>"` als er bewust geen wijziging komt, of `llmwiki run abandon <run-id>` bij een fout of een overbodige run. Beide laten de wiki ongewijzigd; alleen het kladblok verdwijnt.

@@ -93,8 +93,7 @@ llm-wikis/                    open deze map in Obsidian
     └── gemma-archimate-model/  type curation: GEMMA-architectuurelementen (eigen ARCHITECTURE.md)
 ```
 
-De mapnamen van een curatie-wiki (`onderwerpen/`, `bronnen/`, `kandidaten/`) zijn standaardwaarden; een wiki
-kan eigen namen kiezen in `wiki.yaml` (`page_types.<type>.dir`).
+De mapnamen van een curatie-wiki (`onderwerpen/`, `bronnen/`, `kandidaten/`) zijn standaardwaarden; een wiki kan eigen namen kiezen in `wiki.yaml` (`page_types.<type>.dir`).
 
 Links tussen pagina's zijn gewone relatieve Markdown-links; ze werken in Obsidian en in VS Code. Mappen die met een punt beginnen (`.agents`, `.work`, `.claude` enzovoort) zijn voor de AI-omgevingen; `.work/` is het kladblok van de AI en staat niet in Git.
 
@@ -102,8 +101,7 @@ Links tussen pagina's zijn gewone relatieve Markdown-links; ze werken in Obsidia
 
 ### Voorbeeld: een pagina bijwerken op GEMMA Online (sync)
 
-De redacteur vraagt: *"Werk de pagina Zaakgericht werken bij met deze wijziging,
-met wiki-edit."*
+De redacteur vraagt: *"Werk de pagina Zaakgericht werken bij met deze wijziging, met wiki-edit."*
 
 | Stap | Wat gebeurt er | Wie |
 |---|---|---|
@@ -114,13 +112,11 @@ met wiki-edit."*
 | Akkoord | Beoordelen van het publicatievoorstel en akkoord geven | Redacteur |
 | PUBLISH | Publiceren naar de wiki en een regel in `log.md` | Gereedschap, na goedkeuring |
 
-Een tussentijdse wijziging van diezelfde pagina op de site (door iemand anders)
-wordt bij PUBLISH herkend en geweigerd — niet stilzwijgend overschreven.
+Een tussentijdse wijziging van diezelfde pagina op de site (door iemand anders) wordt bij PUBLISH herkend en geweigerd — niet stilzwijgend overschreven.
 
 ### Voorbeeld: een beleidsnota verwerken in een curatie-wiki
 
-De redacteur vraagt: *"Verwerk deze nota voor onderwerp zaakgericht werken met
-opzet2-update-wiki."*
+De redacteur vraagt: *"Verwerk deze nota voor onderwerp zaakgericht werken met opzet2-update-wiki."*
 
 | Stap | Wat gebeurt er | Wie |
 |---|---|---|
@@ -131,11 +127,7 @@ opzet2-update-wiki."*
 | Akkoord | Beoordelen van het promotievoorstel en akkoord geven | Redacteur |
 | PROMOTE | Kandidaat op `goedgekeurd` zetten en vastleggen in `log.md` | Gereedschap, na goedkeuring |
 
-Na elke stap wordt het tussenresultaat in het kladblok bewaard. Wordt het werk
-onderbroken, dan pakt de AI het later op vanaf de laatste afgeronde stap. Een
-afgebroken taak laat niets achter in de wiki. Voor beide soorten geldt: de
-publicatie/promotie staat na afloop in `log.md` — dat is het blijvende verslag,
-niet op de externe site.
+Na elke stap wordt het tussenresultaat in het kladblok bewaard. Wordt het werk onderbroken, dan pakt de AI het later op vanaf de laatste afgeronde stap. Een afgebroken taak laat niets achter in de wiki. Voor beide soorten geldt: de publicatie/promotie staat na afloop in `log.md` — dat is het blijvende verslag, niet op de externe site.
 
 Bij een Markdown-wiki (curation) zijn de bron- en kandidaatpagina's zelf het archief. De laatste stap heet daar **goedkeuren**: kandidaten gaan van `kandidaat` via `review` naar `goedgekeurd`. De AI mag een kandidaat ter review aanbieden, maar alleen de redacteur keurt goed, via dezelfde twee smaken als bij publiceren. Elke goedkeuring komt in `log.md`. Een pagina die op `goedgekeurd` staat zonder regel in `log.md`, wordt bij opslaan in Git geweigerd.
 
@@ -188,8 +180,7 @@ Elke vaardigheid (Skill) is een map met een `SKILL.md`. In de kop staat in `meta
 | `requires-skills`, `requires-tools` | namen | Van welke vaardigheden en welk gereedschap deze vaardigheid afhangt; `llmwiki lint` controleert dit. |
 | `reads`, `writes` | artefacten | Wat de stap leest en oplevert (bijv. `assessment`, `changeset`). |
 
-Een wiki-workflow is dun: hij volgt een gedeelde workflow (`wiki-update`, `wiki-edit`) en voegt per fase op een
-**uitbreidingspunt** eigen vaardigheden of controles toe. Naslag die een vaardigheid nodig heeft, staat in haar map onder `references/`.
+Een wiki-workflow is dun: hij volgt een gedeelde workflow (`wiki-update`, `wiki-edit`) en voegt per fase op een **uitbreidingspunt** eigen vaardigheden of controles toe. Naslag die een vaardigheid nodig heeft, staat in haar map onder `references/`.
 
 Gereedschap (code) staat op drie plekken:
 

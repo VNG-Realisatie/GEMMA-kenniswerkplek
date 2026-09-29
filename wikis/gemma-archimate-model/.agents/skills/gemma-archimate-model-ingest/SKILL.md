@@ -25,24 +25,18 @@ Volg `wiki-ingest`. Voor deze wiki is `--brontype` verplicht:
 
 Het GGM en het GEMMA-model komen niet via deze stap binnen, maar via de release-skills.
 
-Een bron wordt letterlijk bewaard: ophalen met `llmwiki source add --url` (nooit een samenvatting of
-WebFetch-weergave als bron), nooit vertalen of herschrijven. Pdf's vergen eenmalig `uv sync --extra pdf`.
+Een bron wordt letterlijk bewaard: ophalen met `llmwiki source add --url` (nooit een samenvatting of WebFetch-weergave als bron), nooit vertalen of herschrijven. Pdf's vergen eenmalig `uv sync --extra pdf`.
 
 ## 2. Bronselectie (kwaliteit bespreken)
 
-- NOOIT een bron afwijzen omdat die van een andere gemeente dan de eigen komt; bronnen uit meerdere
-  gemeenten leveren elementen op die voor alle gemeenten bruikbaar zijn.
+- NOOIT een bron afwijzen omdat die van een andere gemeente dan de eigen komt; bronnen uit meerdere gemeenten leveren elementen op die voor alle gemeenten bruikbaar zijn.
 - Beoordeel een bron ALLEEN op inhoudelijke relevantie: noemt ze begrippen die elementen van dit model kunnen zijn?
-- NOOIT een bron afwijzen omdat ze niet beschrijft wat gemeenten registreren. Ook strategie- en
-  governancedocumenten noemen concrete objecten, rollen en processen.
-- Een bron zonder bruikbare begrippen krijgt toch een bronanalyse, met `relevant: nee` en een reden;
-  het bestand in `sources/` blijft ongemoeid.
+- NOOIT een bron afwijzen omdat ze niet beschrijft wat gemeenten registreren. Ook strategie- en governancedocumenten noemen concrete objecten, rollen en processen.
+- Een bron zonder bruikbare begrippen krijgt toch een bronanalyse, met `relevant: nee` en een reden; het bestand in `sources/` blijft ongemoeid.
 
 ## 3. Kernpunten bespreken ([PR3])
 
-Lees de bron en bespreek met de redacteur, vóór je schrijft: hoe rijk is de bron, welke begrippen,
-relaties en specialisaties springen eruit, en wat is de rol van de bron in de bronvoorrang (is het de
-formele grondslag, of levert ze de gangbare taal?). Dit is signaleren, nog geen beoordeling.
+Lees de bron en bespreek met de redacteur, vóór je schrijft: hoe rijk is de bron, welke begrippen, relaties en specialisaties springen eruit, en wat is de rol van de bron in de bronvoorrang (is het de formele grondslag, of levert ze de gangbare taal?). Dit is signaleren, nog geen beoordeling.
 
 ## 4. Bronanalyse schrijven
 
@@ -84,7 +78,4 @@ In `## Relaties` staan de verbanden tussen begrippen zoals de bron ze legt, met 
 
 ## 5. Begrippenlijst
 
-Zet de bron-id in `bronnen:` van `begrippen/<onderwerp>.md`. Bestaat die pagina nog niet, maak haar dan
-(schema `schemas/onderwerp.schema.json`) met `status: in-behandeling` en de secties `## Omschrijving`,
-`## Begrippen` (tabel `| Begrip | Uitkomst | Reden | Herkomst | GGM |`) en `## Open vragen`.
-Een onderwerp wordt altijd afgesloten (`status: afgerond` + `conclusie`), ook als er geen elementen uit voortkomen.
+Zet de bron-id in `bronnen:` van `begrippen/<onderwerp>.md`. Bestaat die pagina nog niet, maak haar dan (schema `schemas/onderwerp.schema.json`) met `status: in-behandeling` en de secties `## Omschrijving`, `## Begrippen` (tabel `| Begrip | Uitkomst | Reden | Herkomst | GGM |`) en `## Open vragen`. Een onderwerp wordt altijd afgesloten (`status: afgerond` + `conclusie`), ook als er geen elementen uit voortkomen.

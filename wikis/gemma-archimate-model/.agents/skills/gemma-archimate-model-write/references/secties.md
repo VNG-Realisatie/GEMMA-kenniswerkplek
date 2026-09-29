@@ -1,8 +1,6 @@
 # Opbouw van een elementpagina
 
-Een elementpagina is een beslisdocument: waarom dit een element van dit type is, hoe het zich verhoudt tot het
-GGM en GEMMA, en welke gegevens naar het ArchiMate-model gaan. Frontmatter volgens `schemas/<type>.schema.json`
-(zonder prefix = eigen veld; `ggm_*`/`gemma_*` alleen uit de tools; geen verwijzingen naar andere pagina's).
+Een elementpagina is een beslisdocument: waarom dit een element van dit type is, hoe het zich verhoudt tot het GGM en GEMMA, en welke gegevens naar het ArchiMate-model gaan. Frontmatter volgens `schemas/<type>.schema.json` (zonder prefix = eigen veld; `ggm_*`/`gemma_*` alleen uit de tools; geen verwijzingen naar andere pagina's).
 
 ```markdown
 ---
@@ -46,6 +44,4 @@ Secties, in deze volgorde (alleen wat van toepassing is):
 | `## Ter discussie` | status `kandidaat` | Wat de redacteur moet beslissen, met de redenen uit de beslistabel |
 | `## Terugmelding GGM` | bij terugmelding | Link naar `analyses/ggm-terugmeldingen.md` met het nummer |
 
-Voor actor, rol, gebeurtenis, dienst, proces en functie gelden dezelfde secties; "welke rollen een actor
-vervult" of "wie een proces uitvoert" zijn relaties (toewijzing) in `## Relaties`, geen aparte secties. De
-omgekeerde kant ("vervuld door", "gebruikt door") is de backlink.
+Voor actor, rol, gebeurtenis, dienst, proces en functie gelden dezelfde secties; "welke rollen een actor vervult" of "wie een proces uitvoert" zijn relaties (toewijzing) in `## Relaties`, geen aparte secties. De omgekeerde kant ("vervuld door", "gebruikt door") is de backlink.

@@ -1,29 +1,20 @@
 # gemma-archimate-model-wiki (curation)
 
-Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de
-Context staan: lees dat bestand voordat je iets wijzigt. De opzet van deze wiki (mappen,
-paginatypen, vaardigheden, gereedschap) staat in `ARCHITECTURE.md`.
+Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de Context staan: lees dat bestand voordat je iets wijzigt. De opzet van deze wiki (mappen, paginatypen, vaardigheden, gereedschap) staat in `ARCHITECTURE.md`.
 
 ## Domein
 
-- Het GEMMA-architectuurmodel, bedrijfslaag: bedrijfsobjecten, contracten, producten,
-  diensten, processen, functies, gebeurtenissen, actoren en rollen. Elk element wordt
-  onderbouwd afgeleid uit bronnen en gematcht op het GGM en het GEMMA-model.
-- Doelgroep: het GEMMA-team van VNG. Het resultaat voedt een landelijke standaard;
-  kwaliteit en herleidbaarheid gaan voor snelheid.
+- Het GEMMA-architectuurmodel, bedrijfslaag: bedrijfsobjecten, contracten, producten, diensten, processen, functies, gebeurtenissen, actoren en rollen. Elk element wordt onderbouwd afgeleid uit bronnen en gematcht op het GGM en het GEMMA-model.
+- Doelgroep: het GEMMA-team van VNG. Het resultaat voedt een landelijke standaard; kwaliteit en herleidbaarheid gaan voor snelheid.
 - Taal: Nederlands; gevestigde ArchiMate-termen mogen Engels blijven.
 
 ## Standaard Workflow
 
-Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. Die volgt
-`wiki-update` (INGEST → ASSESS → WRITE → VALIDATE → GATE → PROMOTE) met de uitbreidingen
-van deze wiki. Of een begrip een element is, bepaalt skill `gemma-archimate-model-criteria`
-samen met `tools/bepaal_type.py`, nooit een losse inschatting.
+Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. Die volgt `wiki-update` (INGEST → ASSESS → WRITE → VALIDATE → GATE → PROMOTE) met de uitbreidingen van deze wiki. Of een begrip een element is, bepaalt skill `gemma-archimate-model-criteria` samen met `tools/bepaal_type.py`, nooit een losse inschatting.
 
 ## Regels
 
-Schrijfwijze: `[ID] **kern** — regel`. `ALTIJD` = verplicht, `NOOIT` = verboden,
-`ALS … →` = voorwaardelijk, `UITZONDERING:` = afwijking.
+Schrijfwijze: `[ID] **kern** — regel`. `ALTIJD` = verplicht, `NOOIT` = verboden, `ALS … →` = voorwaardelijk, `UITZONDERING:` = afwijking.
 
 ### Werkwijze
 

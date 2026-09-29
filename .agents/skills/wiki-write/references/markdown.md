@@ -14,9 +14,6 @@ bijgewerkt: 2026-09-27
 Regels:
 
 - `id` moet gelijk zijn aan de bestandsnaam zonder `.md`.
-- Gebruik alleen relatieve Markdown-links (`[tekst](../bronnen/x/y.md)`), nooit
-  `[[wikilinks]]` en nooit een absoluut pad.
-- Elke waarde in `bronnen:` moet bestaan in `sources/index/` en binnen de
-  `sources.tags`-scope van deze wiki vallen; `llmwiki validate` meldt het anders.
-- Verzin geen nieuwe paginatypen. Staat het type nog niet in `wiki.yaml
-  page_types`, overleg dan met de redacteur voordat je verdergaat.
+- Gebruik alleen relatieve Markdown-links (`[tekst](../bronnen/x/y.md)`), nooit `[[wikilinks]]` en nooit een absoluut pad.
+- Elke waarde in `bronnen:` moet bestaan in `sources/index/` en binnen de `sources.tags`-scope van deze wiki vallen; `llmwiki validate` meldt het anders.
+- Verzin geen nieuwe paginatypen. Staat het type nog niet in `wiki.yaml page_types`, overleg dan met de redacteur voordat je verdergaat.

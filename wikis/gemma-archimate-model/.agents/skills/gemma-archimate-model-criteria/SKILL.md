@@ -11,39 +11,28 @@ metadata:
 
 # Criteria: is dit begrip een ArchiMate-element, en welk?
 
-Deze skill is de enige plek waar staat wanneer een begrip een element van dit model wordt.
-Ze beschrijft alleen *wat* het begrip is. Hoe je het daarna vastlegt (GGM-match, naam, definitie,
-relaties) staat in `gemma-archimate-model-write`.
+Deze skill is de enige plek waar staat wanneer een begrip een element van dit model wordt. Ze beschrijft alleen *wat* het begrip is. Hoe je het daarna vastlegt (GGM-match, naam, definitie, relaties) staat in `gemma-archimate-model-write`.
 
 ## Kenmerk en criterium
 
-- Een **kenmerk** is een neutrale eigenschap van het begrip zelf, bijvoorbeeld *onderscheidbare exemplaren*.
-  Je beantwoordt het met ja of nee, met een onderbouwing en de bron-id's waarop die steunt. Een kenmerk
-  oordeelt niet over het type.
-- Een **criterium** is een regel in de beslistabel hieronder: welke combinatie van kenmerken tot welk
-  type leidt. De tool `tools/bepaal_type.py` past de criteria toe; jij beoordeelt ze niet los.
+- Een **kenmerk** is een neutrale eigenschap van het begrip zelf, bijvoorbeeld *onderscheidbare exemplaren*. Je beantwoordt het met ja of nee, met een onderbouwing en de bron-id's waarop die steunt. Een kenmerk oordeelt niet over het type.
+- Een **criterium** is een regel in de beslistabel hieronder: welke combinatie van kenmerken tot welk type leidt. De tool `tools/bepaal_type.py` past de criteria toe; jij beoordeelt ze niet los.
 
-Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eerst een type om daarna te
-toetsen of het klopt. Het type is de uitkomst.
+Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eerst een type om daarna te toetsen of het klopt. Het type is de uitkomst.
 
 ## Werkwijze
 
-1. Beantwoord **alle** kenmerken uit de tabel voor het begrip, ook als ze voor de hand liggend lijken.
-   Gebruik de bronnen in de volgorde van de bronvoorrang (wet → informatiemodel → beleid → overig).
+1. Beantwoord **alle** kenmerken uit de tabel voor het begrip, ook als ze voor de hand liggend lijken. Gebruik de bronnen in de volgorde van de bronvoorrang (wet → informatiemodel → beleid → overig).
 2. Vul waar nodig de extra velden in:
    - `genoemd_begrip` bij *slechts eigenschap* of *waarneembare vorm*;
    - `archimate_buiten_model` bij *buiten kernlagen*;
    - `benoemde_partij` (ja/nee) als zowel *handelende partij* als *hoedanigheid* ja is.
-3. Leg de beoordeling vast volgens `schemas/beoordeling.schema.json` en draai
-   `uv run python tools/bepaal_type.py evalueer <bestand> --schrijf`. De uitkomst is bindend.
-4. Is de uitkomst `conflict` of staat `voorleggen` aan, dan leg je het begrip voor aan de redacteur,
-   met de redenen uit de uitkomst. Pas je antwoorden niet aan om een conflict weg te werken, tenzij
-   een antwoord aantoonbaar fout was.
+3. Leg de beoordeling vast volgens `schemas/beoordeling.schema.json` en draai `uv run python tools/bepaal_type.py evalueer <bestand> --schrijf`. De uitkomst is bindend.
+4. Is de uitkomst `conflict` of staat `voorleggen` aan, dan leg je het begrip voor aan de redacteur, met de redenen uit de uitkomst. Pas je antwoorden niet aan om een conflict weg te werken, tenzij een antwoord aantoonbaar fout was.
 
 ## ArchiMate-typen in dit model
 
-Definities volgens ArchiMate 3.2 (Engels), met de duiding voor gemeenten. "Herkend" betekent: de
-tool herkent het type, maar deze wiki heeft er nog geen paginatype voor; het begrip wordt voorgelegd.
+Definities volgens ArchiMate 3.2 (Engels), met de duiding voor gemeenten. "Herkend" betekent: de tool herkent het type, maar deze wiki heeft er nog geen paginatype voor; het begrip wordt voorgelegd.
 
 | ArchiMate-type | Paginatype | Definitie | Duiding |
 |---|---|---|---|
@@ -63,10 +52,7 @@ tool herkent het type, maar deze wiki heeft er nog geen paginatype voor; het beg
 | Location | herkend | A conceptual or physical place or position where concepts are located or performed. | Fysieke plaats als zodanig; een gebiedsindeling als gegevensconcept is een bedrijfsobject. |
 | Data Object (applicatielaag) | annotatie `data_object` | Data structured for automated processing. | Voorbereiding op `applicatiearchitectuur/`; hier alleen als signaal. |
 
-Buiten dit model vallen de motivatie- en strategielaag (Goal, Outcome, Driver, Principle,
-Requirement, Constraint, Value, Capability) en Grouping (thema). Dat zijn ArchiMate-elementen,
-maar deze wiki modelleert ze niet. Een losse norm uit een wet is een Requirement of Constraint;
-de regeling als geheel is een bedrijfsobject (grondslag governance-object).
+Buiten dit model vallen de motivatie- en strategielaag (Goal, Outcome, Driver, Principle, Requirement, Constraint, Value, Capability) en Grouping (thema). Dat zijn ArchiMate-elementen, maar deze wiki modelleert ze niet. Een losse norm uit een wet is een Requirement of Constraint; de regeling als geheel is een bedrijfsobject (grondslag governance-object).
 
 <!-- BEGIN gegenereerd door: uv run python tools/bepaal_type.py markdown — niet met de hand bewerken -->
 ### Kenmerken
@@ -155,12 +141,8 @@ Van boven naar beneden; de eerste passende regel beslist. Daarna gelden de aanvu
 
 ## Scope
 
-- **Gemeentelijk perspectief.** Alleen wat de gemeente ziet, doet of beslist, of een partij waarmee
-  zij rechtstreeks samenwerkt. Een ketenpartner (UWV, IND, COA, GGD …) krijgt een actorpagina als de
-  gemeente er direct mee samenwerkt, opdracht aan geeft of gegevens mee uitwisselt. De interne
-  processen en rollen van die partner blijven buiten scope.
-- **Een begrip met uitkomst "geen element"** wordt niet weggelaten: het blijft in de begrippenlijst van het
-  onderwerp staan, met de uitkomst en de reden.
+- **Gemeentelijk perspectief.** Alleen wat de gemeente ziet, doet of beslist, of een partij waarmee zij rechtstreeks samenwerkt. Een ketenpartner (UWV, IND, COA, GGD …) krijgt een actorpagina als de gemeente er direct mee samenwerkt, opdracht aan geeft of gegevens mee uitwisselt. De interne processen en rollen van die partner blijven buiten scope.
+- **Een begrip met uitkomst "geen element"** wordt niet weggelaten: het blijft in de begrippenlijst van het onderwerp staan, met de uitkomst en de reden.
 
 ## Anti-patronen
 
@@ -168,11 +150,8 @@ Deze argumenten tellen **nooit** mee, ook niet impliciet of als synoniem:
 - registreren of registreerbaar zijn ("wat de gemeente registreert", "registratieobject");
 - eigendom ("eigendom ligt bij X"), systeembeheer, "regie, niet registratie", "extern systeem".
 
-Het kenmerk *geautomatiseerd verwerkt* is de enige plek waar gegevensvastlegging meetelt, en alleen
-als annotatie (`data_object`): het bepaalt nooit of iets een element is.
+Het kenmerk *geautomatiseerd verwerkt* is de enige plek waar gegevensvastlegging meetelt, en alleen als annotatie (`data_object`): het bepaalt nooit of iets een element is.
 
 ## Begripstype en entiteitstype
 
-De uitkomst van de beslistabel typeert een **begrip uit een bron** ("wat is het?"). Een GGM-entiteit
-heeft daarnaast een eigen classificatie (entiteitstype, bij de dekkingsanalyse van het GGM). Die twee
-zijn niet uitwisselbaar: een GGM-entiteit is geen begrip en wordt pas via een bron beoordeeld.
+De uitkomst van de beslistabel typeert een **begrip uit een bron** ("wat is het?"). Een GGM-entiteit heeft daarnaast een eigen classificatie (entiteitstype, bij de dekkingsanalyse van het GGM). Die twee zijn niet uitwisselbaar: een GGM-entiteit is geen begrip en wordt pas via een bron beoordeeld.

@@ -1,7 +1,6 @@
 # <wiki-naam>-wiki
 
-Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de
-Context staan: lees dat bestand voordat je iets wijzigt.
+Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de Context staan: lees dat bestand voordat je iets wijzigt.
 
 ## Domein
 
@@ -10,6 +9,4 @@ wiki. Dit sjabloon bevat opzettelijk geen domeinkennis.>
 
 ## Standaard Workflow
 
-Gebruik skill `wiki-update` voor het bijwerken van pagina's (INGEST → ASSESS → WRITE →
-VALIDATE → GATE → PROMOTE). Een wiki-specifieke workflow die uitbreidingen toevoegt,
-verwijst naar `wiki-update`; zie `docs/onderbouwing.md` 5.8.
+Gebruik skill `wiki-update` voor het bijwerken van pagina's (INGEST → ASSESS → WRITE → VALIDATE → GATE → PROMOTE). Een wiki-specifieke workflow die uitbreidingen toevoegt, verwijst naar `wiki-update`; zie `docs/onderbouwing.md` 5.8.
