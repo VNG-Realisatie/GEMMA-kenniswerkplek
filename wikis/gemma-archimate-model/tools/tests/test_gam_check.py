@@ -37,7 +37,9 @@ def wiki(archimate_repo):
              {"id": "2026-utrecht-nota", "type": "bronanalyse", "onderwerp": "vergunningen",
               "bronnen": ["2026-utrecht-nota"], "relevant": "ja"})
     _schrijf(wiki, BO_PAD, _bo())
-    proces_kenmerken = {k: "nee" for k in KENMERKEN_BO} | {"herkenbaar": "ja", "gemeentelijk": "ja", "gedrag": "ja", "per_keer_doorlopen": "ja"}
+    proces_kenmerken = {k: "nee" for k in KENMERKEN_BO} | {
+        k: "ja" for k in ("herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "relaties",
+                          "zelfstandig_beleidsbegrip", "gedrag", "per_keer_doorlopen")}
     _schrijf(wiki, PROCES_PAD, _bo(id="aanvraag-behandelen", type="bedrijfsproces", naam="Aanvraag behandelen",
                                    archimate_type="business-process", kenmerken=proces_kenmerken,
                                    definitie="Het behandelen van een aanvraag tot een besluit."),
@@ -60,9 +62,19 @@ def test_verkeerde_map(wiki):
     assert any(n == "plaats" for n, _ in _fouten(wiki))
 
 
-def test_review_zonder_levenscyclus_mag_niet(wiki):
-    _schrijf(wiki, BO_PAD, _bo(kenmerken=KENMERKEN_BO | {"levenscyclus": "nee"}))
+def test_review_bij_governance_object_mag_niet(wiki):
+    _schrijf(wiki, BO_PAD, _bo(grondslag="governance-object"))
     assert any(n == "status" for n, _ in _fouten(wiki))
+
+
+def test_een_criterium_nee_mag_review(wiki):
+    _schrijf(wiki, BO_PAD, _bo(kenmerken=KENMERKEN_BO | {"levenscyclus": "nee"}))
+    assert _fouten(wiki) == []
+
+
+def test_onder_de_drempel_geen_element(wiki):
+    _schrijf(wiki, BO_PAD, _bo(kenmerken=KENMERKEN_BO | {"levenscyclus": "nee", "relaties": "nee"}))
+    assert any(n == "kenmerken-type" for n, _ in _fouten(wiki))
 
 
 def test_kenmerken_passen_niet_bij_type(wiki):
@@ -135,3 +147,11 @@ def test_relatietabel_in_bronanalyse_heeft_vaste_kolommen(wiki):
     pad = wiki / "bronanalyses/vergunningen/2026-utrecht-nota.md"
     pad.write_text(pad.read_text(encoding="utf-8") + "\n## Relaties\n\n| Van | Naar |\n|---|---|\n| A | B |\n", encoding="utf-8")
     assert any(n == "bronanalyse" and "relatietabel" in m for n, m in _fouten(wiki))
+
+
+def test_gangbare_term_als_synoniem_geeft_waarschuwing(wiki):
+    _schrijf(wiki, BO_PAD, _bo(synoniemen=[{"naam": "Besluit", "context": "dagelijks gebruik"}]))
+    assert any(x.naam == "naam-wetsterm" for x in check_elementen.controleer(wiki))
+    _schrijf(wiki, BO_PAD, _bo(synoniemen=[{"naam": "Besluit", "context": "dagelijks gebruik"},
+                                           {"naam": "Beschikking (Awb)", "context": "wet"}]))
+    assert not any(x.naam == "naam-wetsterm" for x in check_elementen.controleer(wiki))

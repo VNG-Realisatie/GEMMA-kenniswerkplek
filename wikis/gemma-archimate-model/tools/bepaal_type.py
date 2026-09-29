@@ -2,8 +2,11 @@
 
 Eén bron van waarheid voor de criteria van deze wiki:
 - KENMERKEN: de neutrale eigenschappen die het model per begrip één keer beantwoordt (ja/nee);
-- REGELS: de beslistabel (= de criteria), van boven naar beneden, de eerste passende regel beslist;
-- NAREGELS: aanvullingen op de uitkomst (voorleggen, tegenhanger, annotatie).
+- REGELS: stap 1–3 van de beslistabel (scope, afhankelijkheid, aard), van boven naar beneden; de eerste passende
+  regel beslist en levert het einde of een voorlopig type op;
+- DREMPELS: stap 4, per voorlopig type de getelde criteria (hoogstens DREMPEL_ONTBREKEND keer nee);
+- SPECIALISATIE: stap 5, het specialisatieniveau (zelfstandig beleidsbegrip of variant van een breder begrip);
+- NAREGELS: aanvullingen op de uitkomst (tegenhanger, annotatie).
 
 Het model vult de kenmerken in (met onderbouwing en bron-id's); deze tool past de regels toe.
 De tabellen in skill `gemma-archimate-model-criteria` en `schemas/beoordeling.schema.json`
@@ -42,22 +45,44 @@ class Kenmerk:
 KENMERKEN: list[Kenmerk] = [
     # Scope
     Kenmerk("herkenbaar", "herkenbaar", "Scope",
-            "Kennen domeinexperts dit als eigen begrip binnen het onderwerp?",
-            "ArchiMate (concept in een domein) + GEMMA",
+            "Kennen domeinexperts dit als eigen begrip?",
+            "ArchiMate (concept in een domein) + GEMMA (BO-criterium herkenbaar voor domeinexperts)",
             "Omgevingsvergunning", "Technisch volgnummer van een dossierregel"),
     Kenmerk("gemeentelijk", "gemeentelijk", "Scope",
-            "Ziet, doet of beslist de gemeente hierover, of werkt zij rechtstreeks samen met deze partij?",
-            "GEMMA",
-            "Parkeervergunning; GGD (directe samenwerking)", "Interne werkvoorraad van het UWV"),
+            "Ziet, doet of beslist de gemeente hierover? Bij een externe partij: werkt de gemeente er structureel mee samen "
+            "(opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht), en is zij meer dan context?",
+            "GEMMA (gemeentelijk perspectief; ketenpartners alleen als context)",
+            "Parkeervergunning; GGD (gemeenschappelijke regeling)", "Interne werkvoorraad van het UWV; behandelend arts"),
     Kenmerk("buiten_kernlagen", "buiten kernlagen", "Scope",
             "Is het een thema, doel, waarde, drijfveer, principe, losse norm of eis, of een vermogen? Noem welk ArchiMate-type",
             "ArchiMate (motivatie-, strategie- en overige lagen)",
             "Armoedebestrijding (doel); leefbaarheid (waarde); 'binnen 8 weken beslissen' (norm)", "Bijstandsuitkering"),
-    # Afhankelijkheid
-    Kenmerk("slechts_eigenschap", "slechts eigenschap", "Afhankelijkheid",
-            "Is het alleen een eigenschap, status, waarde of indeling van één ander begrip? Noem dat begrip",
-            "GEMMA",
-            "Bouwjaar (van Pand); status van een aanvraag", "Pand"),
+    # Zelfstandigheid (alle elementtypen)
+    Kenmerk("betekenis_in_onderwerp", "betekenis in onderwerp", "Zelfstandigheid",
+            "Speelt het in dit onderwerp een eigen rol, en niet alleen als terloopse vermelding of als begrip dat primair "
+            "bij een ander onderwerp hoort?",
+            "GEMMA (BO-criterium betekenis binnen het onderwerp)",
+            "Graf (lijkbezorging)", "Akte van overlijden (hoort bij de burgerlijke stand)"),
+    Kenmerk("slechts_eigenschap", "slechts eigenschap", "Zelfstandigheid",
+            "Is het alleen een eigenschap, status, waarde, classificatie of indeling (ook een doelgroep) van één ander "
+            "begrip? Noem dat begrip",
+            "GEMMA (negatieve toets: eigenschap, status, classificatie)",
+            "Bouwjaar (van Pand); status van een aanvraag; minima (indeling van Inwoner)", "Pand"),
+    Kenmerk("eigen_identiteit", "eigen identiteit", "Zelfstandigheid",
+            "Bestaat het zelfstandig, en niet alleen als onderdeel of deelstap van één ander begrip? Noem dat begrip",
+            "GEMMA (BO-criterium eigen bestaan; actorvraag eigen identiteit)",
+            "Beschikking; uitgifte van een graf", "Ondertekening van een besluit (deelstap)"),
+    Kenmerk("relaties", "relaties", "Zelfstandigheid",
+            "Heeft het in de bronnen aanwijsbare relaties met andere begrippen? Bij een partij: gedrag dat zij uitvoert en "
+            "objecten die zij houdt of beheert. Noem ze in de onderbouwing",
+            "GEMMA (BO-criterium relaties; actor- en rolvragen toewijsbaar aan gedrag, gekoppeld aan taken)",
+            "Kerkgenootschap (houdt een bijzondere begraafplaats)", "Begrip dat alleen in een opsomming voorkomt"),
+    Kenmerk("zelfstandig_beleidsbegrip", "zelfstandig beleidsbegrip", "Zelfstandigheid",
+            "Herkent de gemeente dit als apart soort ding naast zijn generalisatie, met eigen gegevens of een eigen "
+            "behandeling, op het detailniveau van GEMMA? Nee als het een variant is van een breder herkenbaar begrip; "
+            "noem dat begrip",
+            "GEMMA (beslisvraag: zelfstandig ding waar beleid op gemaakt wordt)",
+            "Omgevingsvergunning; parkeervergunning", "Vergunning tot opgraving (variant van een vergunning)"),
     # Aard
     Kenmerk("gedrag", "gedrag", "Aard",
             "Beschrijft het iets wat gedaan wordt of gebeurt, en niet een ding, partij of plaats?",
@@ -65,11 +90,11 @@ KENMERKEN: list[Kenmerk] = [
             "Aanvraag behandelen; verhuizing", "Aanvraag"),
     Kenmerk("handelende_partij", "handelende partij", "Aard",
             "Is het een persoon, organisatie of organisatie-eenheid (ook extern of generiek) die zelf kan handelen?",
-            "ArchiMate Business Actor",
+            "ArchiMate Business Actor (actorvragen zelfstandig gedrag; persoon, organisatie of eenheid)",
             "College van B&W; inwoner; woningcorporatie", "Aanvrager"),
     Kenmerk("hoedanigheid", "hoedanigheid", "Aard",
             "Is het een verantwoordelijkheid waaraan een partij wordt toegewezen, of de hoedanigheid waarin een partij optreedt in een handeling of gebeurtenis?",
-            "ArchiMate Business Role",
+            "ArchiMate Business Role (rolvragen verantwoordelijkheid; actor toewijsbaar)",
             "Aanvrager; belastingplichtige; heffingsambtenaar", "Gemeenteraad"),
     Kenmerk("samenwerkingsverband", "samenwerkingsverband", "Aard",
             "Is het een verband van twee of meer partijen dat samen gedrag uitvoert?",
@@ -87,6 +112,17 @@ KENMERKEN: list[Kenmerk] = [
             "Is het een samenhangend pakket van diensten en/of objecten dat met voorwaarden als geheel aan afnemers wordt aangeboden?",
             "ArchiMate Product",
             "Bewonersparkeervergunning zoals aangeboden in de productencatalogus", "Parkeren"),
+    # Partij
+    Kenmerk("los_van_verantwoordelijkheid", "los van verantwoordelijkheid", "Partij",
+            "Bestaat de partij los van de taak of verantwoordelijkheid die zij hier heeft, zodat zij ook andere rollen kan "
+            "vervullen? Ja: actor; nee: rol. Nee als het geen partij of verantwoordelijkheid is",
+            "ArchiMate Actor/Role (actorvragen meerdere rollen, blijft bestaan als verantwoordelijkheden veranderen; "
+            "rolvraag geen eigen identiteit)",
+            "Kerkgenootschap; burgemeester", "Houder van de begraafplaats"),
+    Kenmerk("meerdere_vervullers", "meerdere vervullers", "Partij",
+            "Kan deze verantwoordelijkheid door verschillende partijen worden vervuld? Nee als het geen verantwoordelijkheid is",
+            "ArchiMate Business Role (rolvraag door meerdere actoren vervulbaar)",
+            "Houder van de begraafplaats (gemeente of kerkgenootschap)", "Burgemeester"),
     # Soort gedrag
     Kenmerk("per_keer_doorlopen", "per keer doorlopen", "Soort gedrag",
             "Is het een reeks activiteiten die per keer wordt doorlopen en een benoembaar resultaat oplevert?",
@@ -109,22 +145,18 @@ KENMERKEN: list[Kenmerk] = [
             "ArchiMate Business Interaction",
             "Keukentafelgesprek; hoorzitting bezwaarcommissie", "Beschikking opstellen"),
     # Passief
-    Kenmerk("eigen_identiteit", "eigen identiteit", "Passief",
-            "Bestaat het zelfstandig, niet alleen als onderdeel van één ander ding?",
-            "GEMMA",
-            "Beschikking", "Ondertekening van een besluit"),
     Kenmerk("onderscheidbare_exemplaren", "onderscheidbare exemplaren", "Passief",
             "Zijn de afzonderlijke exemplaren van elkaar te onderscheiden?",
-            "GEMMA",
+            "GEMMA (BO-criterium kan in meervoud bestaan)",
             "Aanvraag (elke aanvraag apart)", "Gemeentefonds (er is er één)"),
     Kenmerk("levenscyclus", "levenscyclus", "Passief",
             "Ontstaan, veranderen en eindigen de exemplaren?",
-            "GEMMA",
+            "GEMMA (BO-criterium eigen levenscyclus)",
             "Vergunning (verleend, gewijzigd, ingetrokken)", "Kadastrale gemeentecode"),
     Kenmerk("wordt_bewerkt", "wordt bewerkt", "Passief",
-            "Wordt het door gemeentelijk gedrag gebruikt, gemaakt of gewijzigd (behandeld, besloten, geleverd)?",
-            "ArchiMate (access-relatie)",
-            "Aanvraag (ontvangen, beoordeeld)", "Begrip dat in geen enkel gemeentelijk gedrag voorkomt"),
+            "Wordt het concreet door gemeentelijk gedrag gebruikt, gemaakt of gewijzigd (operationeel, en niet alleen beleidsmatig)?",
+            "ArchiMate (access-relatie) + GEMMA (abstractieniveau operationeel)",
+            "Aanvraag (ontvangen, beoordeeld)", "Preventieakkoord (alleen beleidsmatig)"),
     Kenmerk("afspraak", "afspraak", "Passief",
             "Is het een tweezijdige afspraak met rechten en plichten, en geen eenzijdig besluit of regeling?",
             "ArchiMate Contract",
@@ -150,19 +182,30 @@ GEDRAGSSOORTEN = {
     "aangeboden_gedrag": ("bedrijfsdienst", "business-service"),
     "gezamenlijk_gedrag": (None, "business-interaction"),  # herkend, nog geen paginatype
 }
-PASSIEF_VERPLICHT = ["eigen_identiteit", "onderscheidbare_exemplaren", "wordt_bewerkt"]
+
+# Stap 4: per voorlopig paginatype de criteria die worden geteld. `herkenbaar` en `gemeentelijk` (stap 1) en
+# `eigen_identiteit` (stap 2) zijn al harde poorten. Hoogstens DREMPEL_ONTBREKEND criteria mogen nee zijn.
+DREMPEL_ONTBREKEND = 1
+BASIS = ["betekenis_in_onderwerp", "relaties"]
+DREMPELS: list[tuple[str, tuple[str, ...], list[str]]] = [
+    ("Bedrijfsobject, Contract", ("bedrijfsobject",), BASIS + ["onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"]),
+    ("Product", ("product",), BASIS + ["onderscheidbare_exemplaren"]),
+    ("Actor", ("actor",), BASIS),
+    ("Rol", ("rol",), BASIS + ["meerdere_vervullers"]),
+    ("Proces, Functie, Gebeurtenis, Dienst", ("bedrijfsproces", "bedrijfsfunctie", "bedrijfsgebeurtenis", "bedrijfsdienst"), BASIS),
+]
 
 # Extra velden in een beoordeling (geen kenmerken): nodig bij bepaalde uitkomsten.
 EXTRA_VELDEN = {
-    "genoemd_begrip": "Het begrip waarvan dit een eigenschap of waarneembare vorm is",
+    "genoemd_begrip": "Het begrip waarvan dit een eigenschap, onderdeel, variant (specialisatie) of waarneembare vorm is",
     "archimate_buiten_model": "Het ArchiMate-type buiten de kernlagen (Goal, Outcome, Driver, Principle, Requirement, Constraint, Value, Capability, Grouping …)",
-    "benoemde_partij": "ja/nee: bij 'handelende partij' én 'hoedanigheid': is het een benoemde persoon, organisatie of eenheid?",
 }
 
 
 @dataclass
 class Uitkomst:
-    soort: str  # element | herkend | buiten_scope | buiten_model | eigenschap | geen_element | conflict
+    # element | herkend | buiten_scope | buiten_model | eigenschap | onderdeel | specialisatie | geen_element | conflict
+    soort: str
     regel: int
     toelichting: str
     paginatype: str | None = None
@@ -172,6 +215,7 @@ class Uitkomst:
     tegenhanger: str | None = None
     data_object: str = "nee"
     genoemd_begrip: str | None = None
+    typeregel: int | None = None  # regel uit stap 3 die het voorlopige type gaf (bij uitkomsten van stap 4 en 5)
 
 
 def _ja(k: dict, sleutel: str) -> bool:
@@ -216,12 +260,14 @@ def _gedrag_uitkomst(k: dict, extra: dict) -> Uitkomst:
     (soort,) = _gedragssoorten(k)
     paginatype, archimate_type = GEDRAGSSOORTEN[soort]
     if paginatype is None:
-        return _herkend(12, archimate_type, f"Gedrag, {_namen([soort])}")
-    return _element(12, paginatype, archimate_type, f"Gedrag, {_namen([soort])}")
+        return _herkend(13, archimate_type, f"Gedrag, {_namen([soort])}")
+    return _element(13, paginatype, archimate_type, f"Gedrag, {_namen([soort])}")
 
 
-def _passief_ontbrekend(k: dict) -> list[str]:
-    return [s for s in PASSIEF_VERPLICHT if not _ja(k, s)]
+def _partij(k: dict) -> Uitkomst:
+    if _ja(k, "los_van_verantwoordelijkheid"):
+        return _element(5, "actor", "business-actor", "Partij en hoedanigheid, los van de verantwoordelijkheid")
+    return _element(5, "rol", "business-role", "Partij en hoedanigheid, gebonden aan de verantwoordelijkheid")
 
 
 REGELS: list[Regel] = [
@@ -233,70 +279,88 @@ REGELS: list[Regel] = [
           lambda k, e: _ja(k, "buiten_kernlagen"),
           lambda k, e: Uitkomst("buiten_model", 2, "Buiten de kernlagen van dit model",
                                 archimate_type=e.get("archimate_buiten_model"))),
-    Regel("2 Afhankelijk", "*slechts eigenschap*", "eigenschap of specialisatie zonder pagina van het genoemde begrip",
+    Regel("2 Afhankelijk", "*slechts eigenschap*", "eigenschap, status of indeling van het genoemde begrip; geen pagina",
           lambda k, e: _ja(k, "slechts_eigenschap"),
-          lambda k, e: Uitkomst("eigenschap", 3, "Eigenschap of specialisatie zonder eigen pagina",
+          lambda k, e: Uitkomst("eigenschap", 3, "Eigenschap, status of indeling van een ander begrip",
+                                genoemd_begrip=e.get("genoemd_begrip"))),
+    Regel("2 Afhankelijk", "niet *eigen identiteit*",
+          "onderdeel of deelstap van het genoemde begrip; geen pagina, relaties opgetild",
+          lambda k, e: not _ja(k, "eigen_identiteit"),
+          lambda k, e: Uitkomst("onderdeel", 4, "Onderdeel of deelstap van een ander begrip",
                                 genoemd_begrip=e.get("genoemd_begrip"))),
     Regel("3 Aard", "*handelende partij* én *hoedanigheid* (verder geen aard)",
-          "Actor als het een benoemde persoon/organisatie/eenheid is, anders Rol",
+          "*los van verantwoordelijkheid* ja → Actor, nee → Rol",
           lambda k, e: _aard(k) == {"handelende_partij", "hoedanigheid"},
-          lambda k, e: _element(4, "actor", "business-actor", "Benoemde partij")
-          if e.get("benoemde_partij") == "ja" else _element(4, "rol", "business-role", "Hoedanigheid, geen benoemde partij")),
+          lambda k, e: _partij(k)),
     Regel("3 Aard", "meer dan één aard (behalve actor + rol)", "conflict: voorleggen",
           lambda k, e: len(_aard(k)) > 1,
-          lambda k, e: _conflict(5, f"Meer dan één aard: {_namen(sorted(_aard(k)))}")),
-    Regel("3 Aard", "*handelende partij*", "Business Actor",
+          lambda k, e: _conflict(6, f"Meer dan één aard: {_namen(sorted(_aard(k)))}")),
+    Regel("3 Aard", "*handelende partij*", "Actor; conflict als niet *los van verantwoordelijkheid* (mogelijk rol)",
           lambda k, e: _aard(k) == {"handelende_partij"},
-          lambda k, e: _element(6, "actor", "business-actor", "Handelende partij")),
-    Regel("3 Aard", "*hoedanigheid*", "Business Role",
+          lambda k, e: _element(7, "actor", "business-actor", "Handelende partij")
+          if _ja(k, "los_van_verantwoordelijkheid")
+          else _conflict(7, "Handelende partij, maar niet los van de verantwoordelijkheid: mogelijk een rol")),
+    Regel("3 Aard", "*hoedanigheid*", "Rol; conflict als *los van verantwoordelijkheid* (mogelijk actor)",
           lambda k, e: _aard(k) == {"hoedanigheid"},
-          lambda k, e: _element(7, "rol", "business-role", "Hoedanigheid")),
+          lambda k, e: _element(8, "rol", "business-role", "Hoedanigheid")
+          if not _ja(k, "los_van_verantwoordelijkheid")
+          else _conflict(8, "Hoedanigheid, maar los van de verantwoordelijkheid: mogelijk een actor")),
     Regel("3 Aard", "*aanbod als geheel*", "Product",
           lambda k, e: _aard(k) == {"aanbod_als_geheel"},
-          lambda k, e: _element(8, "product", "product", "Aanbod als geheel")),
+          lambda k, e: _element(9, "product", "product", "Aanbod als geheel")),
     Regel("3 Aard", "*samenwerkingsverband*", "Business Collaboration: herkend, voorleggen",
           lambda k, e: _aard(k) == {"samenwerkingsverband"},
-          lambda k, e: _herkend(9, "business-collaboration", "Samenwerkingsverband")),
+          lambda k, e: _herkend(10, "business-collaboration", "Samenwerkingsverband")),
     Regel("3 Aard", "*toegangspunt*", "Business Interface: herkend, voorleggen",
           lambda k, e: _aard(k) == {"toegangspunt"},
-          lambda k, e: _herkend(10, "business-interface", "Toegangspunt")),
+          lambda k, e: _herkend(11, "business-interface", "Toegangspunt")),
     Regel("3 Aard", "*plaats*", "Location: herkend, voorleggen",
           lambda k, e: _aard(k) == {"plaats"},
-          lambda k, e: _herkend(11, "location", "Plaats")),
-    Regel("4 Gedrag", "*gedrag* en precies één van *per keer doorlopen* / *gegroepeerd gedrag* / "
+          lambda k, e: _herkend(12, "location", "Plaats")),
+    Regel("3 Gedrag", "*gedrag* en precies één van *per keer doorlopen* / *gegroepeerd gedrag* / "
           "*toestandsverandering* / *aangeboden gedrag* / *gezamenlijk gedrag*",
           "Business Process / Function / Event / Service / Interaction (Interaction: herkend, voorleggen)",
           lambda k, e: _aard(k) == {"gedrag"} and len(_gedragssoorten(k)) == 1,
           _gedrag_uitkomst),
-    Regel("4 Gedrag", "*gedrag*, maar geen of meer dan één soort gedrag", "conflict: voorleggen",
+    Regel("3 Gedrag", "*gedrag*, maar geen of meer dan één soort gedrag", "conflict: voorleggen",
           lambda k, e: _aard(k) == {"gedrag"},
-          lambda k, e: _conflict(13, f"Soort gedrag niet eenduidig: {_namen(_gedragssoorten(k)) or 'geen'}")),
-    Regel("5 Passief", "geen aard, maar wel een soort gedrag", "conflict: voorleggen (tegenstrijdige antwoorden)",
+          lambda k, e: _conflict(14, f"Soort gedrag niet eenduidig: {_namen(_gedragssoorten(k)) or 'geen'}")),
+    Regel("3 Passief", "geen aard, maar wel een soort gedrag", "conflict: voorleggen (tegenstrijdige antwoorden)",
           lambda k, e: bool(_gedragssoorten(k)),
-          lambda k, e: _conflict(14, f"Geen gedrag, maar wel {_namen(_gedragssoorten(k))}")),
-    Regel("5 Passief", "*waarneembare vorm*", "Representation van het genoemde begrip: herkend, voorleggen",
+          lambda k, e: _conflict(15, f"Geen gedrag, maar wel {_namen(_gedragssoorten(k))}")),
+    Regel("3 Passief", "*waarneembare vorm*", "Representation van het genoemde begrip: herkend, voorleggen",
           lambda k, e: _ja(k, "waarneembare_vorm"),
-          lambda k, e: _herkend(15, "representation", "Waarneembare vorm", genoemd_begrip=e.get("genoemd_begrip"))),
-    Regel("5 Passief", "*eigen identiteit* + *onderscheidbare exemplaren* + *wordt bewerkt* + *afspraak*", "Contract",
-          lambda k, e: not _passief_ontbrekend(k) and _ja(k, "afspraak"),
-          lambda k, e: _element(16, "bedrijfsobject", "contract", "Passief, afspraak")),
-    Regel("5 Passief", "*eigen identiteit* + *onderscheidbare exemplaren* + *wordt bewerkt*",
+          lambda k, e: _herkend(16, "representation", "Waarneembare vorm", genoemd_begrip=e.get("genoemd_begrip"))),
+    Regel("3 Passief", "*afspraak*", "Contract",
+          lambda k, e: _ja(k, "afspraak"),
+          lambda k, e: _element(17, "bedrijfsobject", "contract", "Passief, afspraak")),
+    Regel("3 Passief", "overig passief begrip",
           "Business Object (een wet of verordening als geheel: grondslag governance-object)",
-          lambda k, e: not _passief_ontbrekend(k),
-          lambda k, e: _element(17, "bedrijfsobject", "business-object", "Passief")),
-    Regel("5 Passief", "één van *eigen identiteit*, *onderscheidbare exemplaren*, *wordt bewerkt* ontbreekt",
-          "geen element; noem het ontbrekende kenmerk",
           lambda k, e: True,
-          lambda k, e: Uitkomst("geen_element", 18, "Passief, maar niet zelfstandig genoeg",
-                                redenen=[f"{NAAM[s]}: nee" for s in _passief_ontbrekend(k)])),
+          lambda k, e: _element(18, "bedrijfsobject", "business-object", "Passief")),
 ]
 
-NAREGELS = [
-    ("Na regel 16/17", "geen *levenscyclus*", "voorleggen"),
-    ("6 Tegenhanger", "Actor of Rol met *onderscheidbare exemplaren* + *levenscyclus* + *wordt bewerkt*",
-     "ook een bedrijfsobjectpagina (tegenhanger); bij gedrag nooit: het resultaat is dan een apart begrip"),
-    ("7 Annotatie", "*geautomatiseerd verwerkt*", "`data_object: ja` (voedt het hiaat-signaal richting GGM)"),
+EERSTE_DREMPELREGEL = len(REGELS) + 1
+SPECIALISATIE = [
+    ("niet *zelfstandig beleidsbegrip*, met `genoemd_begrip`",
+     "specialisatie zonder pagina van het genoemde, herkenbare bredere begrip; relaties opgetild"),
+    ("niet *zelfstandig beleidsbegrip*, zonder `genoemd_begrip`", "voorleggen: noem het bredere begrip"),
+    ("anders", "element van het voorlopige type"),
 ]
+EERSTE_SPECIALISATIEREGEL = EERSTE_DREMPELREGEL + len(DREMPELS)
+
+NAREGELS = [
+    ("Tegenhanger", "Actor of Rol met *onderscheidbare exemplaren* + *levenscyclus* + *wordt bewerkt*",
+     "ook een bedrijfsobjectpagina (tegenhanger); bij gedrag nooit: het resultaat is dan een apart begrip"),
+    ("Annotatie", "*geautomatiseerd verwerkt*", "`data_object: ja` (voedt het hiaat-signaal richting GGM)"),
+]
+
+
+def _drempel(paginatype: str) -> tuple[int, list[str]]:
+    for i, (_, typen, criteria) in enumerate(DREMPELS):
+        if paginatype in typen:
+            return EERSTE_DREMPELREGEL + i, criteria
+    raise KeyError(paginatype)
 
 
 class BeoordelingFout(ValueError):
@@ -326,6 +390,35 @@ def waarden(beoordeling: dict) -> dict[str, str]:
     return {s: beoordeling["kenmerken"][s]["waarde"] for s in SLEUTELS}
 
 
+def _stap_1_tot_3(k: dict, extra: dict) -> Uitkomst:
+    for regel in REGELS:
+        if regel.test(k, extra):
+            return regel.uitkomst(k, extra)
+    raise AssertionError("de laatste regel past altijd")
+
+
+def _stap_4_en_5(u: Uitkomst, k: dict, extra: dict) -> Uitkomst:
+    """Drempel en specialisatieniveau voor een voorlopig type met een paginatype."""
+    nr, criteria = _drempel(u.paginatype)
+    ontbrekend = [s for s in criteria if not _ja(k, s)]
+    score = f"{len(criteria) - len(ontbrekend)}/{len(criteria)}"
+    if len(ontbrekend) > DREMPEL_ONTBREKEND:
+        return Uitkomst("geen_element", nr, f"Drempel niet gehaald voor {u.archimate_type} ({score})",
+                        archimate_type=u.archimate_type, voorleggen=True, typeregel=u.regel,
+                        redenen=[f"{NAAM[s]}: nee" for s in ontbrekend])
+    if ontbrekend:
+        score += f", ontbreekt: {_namen(ontbrekend)}"
+    if not _ja(k, "zelfstandig_beleidsbegrip"):
+        if extra.get("genoemd_begrip"):
+            return Uitkomst("specialisatie", EERSTE_SPECIALISATIEREGEL, f"Variant van een breder begrip ({score})",
+                            archimate_type=u.archimate_type, genoemd_begrip=extra["genoemd_begrip"], typeregel=u.regel)
+        return Uitkomst("geen_element", EERSTE_SPECIALISATIEREGEL + 1, f"Niet zelfstandig ({score})",
+                        archimate_type=u.archimate_type, voorleggen=True, typeregel=u.regel,
+                        redenen=["zelfstandig beleidsbegrip: nee, maar het bredere begrip (genoemd_begrip) ontbreekt"])
+    return Uitkomst("element", EERSTE_SPECIALISATIEREGEL + 2, f"{u.toelichting} ({score})",
+                    paginatype=u.paginatype, archimate_type=u.archimate_type, typeregel=u.regel)
+
+
 def evalueer(beoordeling: dict) -> Uitkomst:
     fouten = controleer(beoordeling)
     if fouten:
@@ -333,20 +426,13 @@ def evalueer(beoordeling: dict) -> Uitkomst:
     k = waarden(beoordeling)
     extra = {s: beoordeling.get(s) for s in EXTRA_VELDEN}
 
-    for regel in REGELS:
-        if regel.test(k, extra):
-            uitkomst = regel.uitkomst(k, extra)
-            break
+    uitkomst = _stap_1_tot_3(k, extra)
+    if uitkomst.soort == "element":
+        uitkomst = _stap_4_en_5(uitkomst, k, extra)
 
-    if uitkomst.soort == "eigenschap" and not extra.get("genoemd_begrip"):
+    if uitkomst.soort in ("eigenschap", "onderdeel") and not extra.get("genoemd_begrip"):
         uitkomst.voorleggen = True
         uitkomst.redenen.append("genoemd begrip ontbreekt")
-    if uitkomst.regel == 4 and extra.get("benoemde_partij") not in ("ja", "nee"):
-        uitkomst.voorleggen = True
-        uitkomst.redenen.append("'benoemde_partij' (ja/nee) ontbreekt bij handelende partij + hoedanigheid")
-    if uitkomst.regel in (16, 17) and not _ja(k, "levenscyclus"):
-        uitkomst.voorleggen = True
-        uitkomst.redenen.append("levenscyclus: nee")
     if uitkomst.paginatype in ("actor", "rol") and all(
         _ja(k, s) for s in ("onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt")
     ):
@@ -359,7 +445,7 @@ def evalueer(beoordeling: dict) -> Uitkomst:
 def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None, grondslag: str | None = None) -> str | None:
     """`review` alleen als de AI het zelfstandig mag afhandelen; anders `kandidaat`.
 
-    Geen pagina (buiten scope, eigenschap, geen element, conflict, herkend) → None.
+    Geen pagina (buiten scope, eigenschap, onderdeel, specialisatie, geen element, conflict, herkend) → None.
     """
     u = uitkomst if isinstance(uitkomst, dict) else asdict(uitkomst)
     if u["soort"] != "element":
@@ -388,12 +474,26 @@ def markdown() -> str:
     regels += [
         "### Beslistabel (= de criteria)",
         "",
-        "Van boven naar beneden; de eerste passende regel beslist. Daarna gelden de aanvullingen.",
+        "Stap 1–3 van boven naar beneden: de eerste passende regel beslist en levert het einde of een voorlopig type "
+        "op. Een voorlopig type met een paginatype gaat door naar stap 4 (drempel) en stap 5 (specialisatieniveau). "
+        "Daarna gelden de aanvullingen.",
         "",
         "| Nr | Stap | Als | Dan |",
         "|---|---|---|---|",
     ]
     regels += [f"| {i} | {r.stap} | {r.als} | {r.dan} |" for i, r in enumerate(REGELS, start=1)]
+    regels += [
+        "",
+        f"**Stap 4 — Drempel.** Per voorlopig type de getelde criteria; hoogstens {DREMPEL_ONTBREKEND} nee. "
+        "*herkenbaar*, *gemeentelijk* en *eigen identiteit* zijn al harde poorten in stap 1 en 2. "
+        "Meer nee → geen element, voorleggen met de ontbrekende criteria.",
+        "",
+        "| Nr | Type | Getelde criteria |",
+        "|---|---|---|",
+    ]
+    regels += [f"| {EERSTE_DREMPELREGEL + i} | {naam} | {_namen(criteria)} |" for i, (naam, _, criteria) in enumerate(DREMPELS)]
+    regels += ["", "**Stap 5 — Specialisatieniveau** (alle typen met een paginatype)", "", "| Nr | Als | Dan |", "|---|---|---|"]
+    regels += [f"| {EERSTE_SPECIALISATIEREGEL + i} | {als} | {dan} |" for i, (als, dan) in enumerate(SPECIALISATIE)]
     regels += ["", "**Aanvullingen**", "", "| Stap | Als | Dan |", "|---|---|---|"]
     regels += [f"| {stap} | {als} | {dan} |" for stap, als, dan in NAREGELS]
     return "\n".join(regels) + "\n"
@@ -427,7 +527,6 @@ def schema() -> dict:
             },
             "genoemd_begrip": {"type": "string", "description": EXTRA_VELDEN["genoemd_begrip"]},
             "archimate_buiten_model": {"type": "string", "description": EXTRA_VELDEN["archimate_buiten_model"]},
-            "benoemde_partij": {"enum": ["ja", "nee"], "description": EXTRA_VELDEN["benoemde_partij"]},
             "uitkomst": {"type": "object", "description": "Door bepaal_type.py ingevuld; niet zelf invullen"},
         },
         "additionalProperties": False,
@@ -475,7 +574,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "schema":
         tekst = json.dumps(schema(), indent=2, ensure_ascii=False) + "\n"
         if args.schrijf:
-            SCHEMA_PATH.write_text(tekst, encoding="utf-8")
+            SCHEMA_PATH.write_text(tekst, encoding="utf-8", newline="\n")
             print(f"Geschreven: {SCHEMA_PATH}")
         else:
             sys.stdout.write(tekst)

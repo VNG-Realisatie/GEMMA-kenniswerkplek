@@ -31,7 +31,7 @@ Werkt alleen voor begrippen die in ASSESS een uitkomst `element` kregen. Doet ze
 
 12. **Begrippenlijst.** Werk `begrippen/<onderwerp>.md` bij (ook gestaged): één rij per beoordeeld begrip in `## Begrippen` — `| Begrip | Uitkomst | Reden | Herkomst | GGM |` —, met een link naar de elementpagina als die er is, anders platte tekst. Herkomst = het brontype van de hoogst gerangschikte bron.
 13. **GGM-terugmeldingen**, ná het schrijven van de elementen, per bevinding: `uv run python tools/terugmelding.py add --run <run-id> --type <type> --domein <beleidsdomein> --entiteit <GGM-naam> --bevinding "<tekst>" --element <id>`. Typen: `definitie` (GGM wijkt af van wet of bronnen), `hiaat` (data-object zonder GGM-entiteit, conservatief), `duplicaat`, `homoniem`, `structuur`, `scope`, `relatie` (alleen fouten in exact gematchte relaties; nieuwe relaties worden niet teruggemeld). Verwijs op de elementpagina naar de terugmelding.
-14. Rond af: `uv run llmwiki run complete write --run <run-id> --data .work/runs/<run-id>/changeset-concept.json`.
+14. Rond af: `uv run python -m llmwiki run complete write --run <run-id> --data .work/runs/<run-id>/changeset-concept.json`.
 
 ## Regels bij het schrijven
 

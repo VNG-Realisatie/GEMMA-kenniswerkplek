@@ -14,7 +14,7 @@ import argparse
 import json
 import re
 import sys
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -133,8 +133,6 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
         beoordeling = {"begrip": el.id, "kenmerken": {k: {"waarde": v, "onderbouwing": "-"} for k, v in kenmerken.items()}}
         uitkomst = bepaal_type.evalueer(beoordeling)
         toegestaan = {(uitkomst.paginatype, uitkomst.archimate_type)}
-        if uitkomst.regel == 4:
-            toegestaan = {("actor", "business-actor"), ("rol", "business-role")}
         tegenhanger = el.paginatype == "bedrijfsobject" and _is_tegenhanger(w, el)
         if (el.paginatype, meta.get("archimate_type")) not in toegestaan and not tegenhanger:
             fout("kenmerken-type", f"kenmerken leiden tot {uitkomst.soort} {uitkomst.archimate_type or ''} "
@@ -142,9 +140,7 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
         if uitkomst.data_object != meta.get("data_object", "nee"):
             fout("data-object", f"data_object hoort '{uitkomst.data_object}' te zijn (kenmerk geautomatiseerd verwerkt)")
         if meta.get("status") == "review":
-            voorleggen = uitkomst.voorleggen and uitkomst.regel != 4
-            status = bepaal_type.voorgestelde_status(
-                {**asdict(uitkomst), "voorleggen": voorleggen}, (meta.get("match") or {}).get("ggm"), meta.get("grondslag"))
+            status = bepaal_type.voorgestelde_status(uitkomst, (meta.get("match") or {}).get("ggm"), meta.get("grondslag"))
             if status != "review" and not tegenhanger:
                 fout("status", f"status 'review' niet toegestaan: voorleggen ({'; '.join(uitkomst.redenen) or 'autonomieregel'}) [EL18]")
         if uitkomst.tegenhanger and gam_gemeen.sectie(el.body, "Tegenhanger") is None:
@@ -157,6 +153,10 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
     definitie = str(meta.get("definitie", ""))
     if len(re.findall(r"[.!?](?:\s+[A-Z]|\s*$)", definitie)) > 1:
         waarschuwing("definitie-vorm", "definitie lijkt meer dan één zin [VR3]")
+    contexten = {str((s or {}).get("context", "")).lower() for s in meta.get("synoniemen") or [] if isinstance(s, dict)}
+    if contexten & {"beleid", "dagelijks gebruik"} and "wet" not in contexten:
+        waarschuwing("naam-wetsterm", "gangbare term staat als synoniem en geen wetsterm: is de naam de wetsterm? "
+                     "De naam komt uit de gangbare taal, de wetsterm wordt synoniem [SRC10]")
     if meta.get("definitie_formeel"):
         bron = (meta.get("definitie_formeel_bron") or {}).get("bron")
         try:

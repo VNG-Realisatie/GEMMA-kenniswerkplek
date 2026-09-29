@@ -36,7 +36,7 @@ Schrijfwijze: `[ID] **kern** — regel`. `ALTIJD` = verplicht, `NOOIT` = verbode
 - [SRC1] **GGM en GEMMA alleen via de tools** — Het GGM-XMI en het GEMMA-model (AMEFF of `.archimate`) NOOIT direct lezen; ALLEEN via `tools/ggm.py` en `tools/gemma.py`.
 - [SRC3] **Geen afgeleide modelbronnen** — NOOIT CSV-exports of kopieën elders als GGM- of GEMMA-bron gebruiken.
 - [SRC5] **Gegenereerde modelmappen** — `ggm/` en `gemma/` ALLEEN om te lezen; NOOIT handmatig bewerken (de check herkent wijzigingen).
-- [SRC10] **Bronvoorrang** — Voor begrippen en formele betekenis: wet > informatiemodel > beleid > overig (`wiki.yaml` `bronvoorrang`). Beleid levert de gangbare taal. Voorrang bepaalt NOOIT of iets een element is.
+- [SRC10] **Bronvoorrang** — Voor begrippen en formele betekenis: wet > informatiemodel > beleid > overig (`wiki.yaml` `bronvoorrang`). Voorrang bepaalt NOOIT of iets een element is. UITZONDERING: de naam en de herkenbare `definitie` komen uit de gangbare taal van beleids- en praktijkbronnen; de wetsterm gaat naar `synoniemen` (context "wet"). Precedent: Urn, niet Asbus.
 
 ### Elementen
 
@@ -47,7 +47,8 @@ Schrijfwijze: `[ID] **kern** — regel`. `ALTIJD` = verplicht, `NOOIT` = verbode
 
 ### Scope en formulering
 
-- [WC4] **Gemeentelijk perspectief** — ALTIJD vanuit wat de gemeente ziet, doet en beslist. Een externe partij krijgt ALLEEN een actorpagina bij directe samenwerking; haar interne processen blijven buiten scope ([WC5]).
+- [WC4] **Gemeentelijk perspectief** — ALTIJD vanuit wat de gemeente ziet, doet en beslist. Een externe partij krijgt ALLEEN een actorpagina bij een structurele relatie met de gemeente (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht); haar interne processen blijven buiten scope.
+- [WC5] **Ketenpartners als context** — Een externe partij die alleen als context of afbakening in de bron staat, krijgt NOOIT een eigen pagina; noem haar in de beschrijving of de begrippenlijst ("buiten scope"). Precedent: GGD wél (mede-eigenaar en opdrachtgever via de gemeenschappelijke regeling).
 - [WC7] **Geen technische verwijzingen** — NOOIT vanuit een pagina verwijzen naar `AGENTS.md`, `ARCHITECTURE.md`, `.agents/`, `tools/` of `schemas/`; onderbouwing staat op eigen kracht.
 - [WC8] **Geen absolute taal** — NOOIT "structureel buiten scope", "per definitie" of "het GGM modelleert nooit X" zonder domeinspecifieke reden.
 - [WC9] **Herformuleren** — ALS een bewering "het GGM doet dit niet" geen specifieke reden heeft → "in het GGM niet compleet gedekt".

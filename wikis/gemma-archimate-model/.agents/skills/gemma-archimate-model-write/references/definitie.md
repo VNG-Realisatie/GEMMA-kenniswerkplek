@@ -2,7 +2,11 @@
 
 ## Bronvoorrang
 
-Voor de formele betekenis: wet > informatiemodel (GGM, RSGB, catalogi) > beleid > overig. Voor de gangbare taal: beleidsdocumenten en andere documenten. Gebruik alleen informatie uit de bronnen van het onderwerp; verzin geen uitleg.
+Voor welke begrippen er zijn en wat ze formeel betekenen (`definitie_formeel`): wet > informatiemodel (GGM, RSGB, catalogi) > beleid > overig.
+
+UITZONDERING: de **naam** en de herkenbare **`definitie`** komen uit de gangbare taal: beleids- en praktijkbronnen, en wat domeinexperts zeggen. De wetsterm gaat naar `synoniemen` (context "wet"); zie `naamgeving.md`. Voorbeeld: het element heet *Urn* (VNG, praktijk), met *asbus* als synoniem (Wet op de lijkbezorging).
+
+Gebruik alleen informatie uit de bronnen; verzin geen uitleg. Voor een actor of rol mag dat ook een bron buiten het onderwerp zijn (zie hieronder).
 
 ## `definitie` (herkenbaar, altijd)
 
@@ -29,6 +33,16 @@ Toets: *vallen onder de herkenbare en de formele definitie precies dezelfde exem
 
 Wijkt de GGM-definitie inhoudelijk af van de wet of de bronnen: leg dat vast in `## GGM-bron` (GGM-tekst als blockquote, waarom je afwijkt) en meld terug als `definitie`.
 
+## Actor en rol
+
+- De definitie van een **actor** beschrijft wat de partij *is* (rechtsvorm, soort organisatie, plaats in het bestuur), los van het onderwerp waarin ze is gevonden. Niet: wat ze in dit onderwerp mag of doet.
+- De definitie van een **rol** beschrijft de verantwoordelijkheid, niet wie haar vervult.
+- Wat een partij binnen het onderwerp doet, staat in `## Relaties`: de rol die ze vervult (toewijzing), het gedrag dat ze uitvoert, het object dat ze houdt (associatie).
+- Geeft de bron van het onderwerp alleen onderwerpgebonden taal, gebruik dan een algemene bron (bijv. het Burgerlijk Wetboek voor een kerkgenootschap, de Gemeentewet voor burgemeester en college) en voeg die bron toe aan `bronnen:`.
+- Toets: past de definitie ongewijzigd in elk ander onderwerp waarin deze partij voorkomt? Nee → herschrijven.
+
+Voorbeeld: niet "Kerkelijke organisatie die een bijzondere begraafplaats of crematorium mag houden", maar een definitie van het kerkgenootschap zelf; "houdt een bijzondere begraafplaats" wordt een relatie met Begraafplaats, via de rol Houder van de begraafplaats.
+
 ## Naam
 
-De naam is de herkenbare naam. Een afwijkende wetsterm komt in `synoniemen` met context "wet".
+De naam is de gangbare, herkenbare naam uit de beleids- en praktijkbronnen (zie `naamgeving.md`). Een afwijkende wetsterm komt in `synoniemen` met context "wet".

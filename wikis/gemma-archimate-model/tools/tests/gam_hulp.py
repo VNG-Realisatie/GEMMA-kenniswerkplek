@@ -10,7 +10,8 @@ if str(TOOLS) not in sys.path:
 import bepaal_type  # noqa: E402,F401
 
 KENMERKEN_BO = {s: "nee" for s in bepaal_type.SLEUTELS} | {
-    s: "ja" for s in ("herkenbaar", "gemeentelijk", "eigen_identiteit", "onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt")
+    s: "ja" for s in ("herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "relaties",
+                      "zelfstandig_beleidsbegrip", "onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt")
 }
 
 

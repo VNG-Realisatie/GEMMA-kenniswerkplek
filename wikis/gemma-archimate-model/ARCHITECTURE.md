@@ -82,6 +82,7 @@ Eén plek: skill [gemma-archimate-model-criteria](.agents/skills/gemma-archimate
 
 - **Kenmerken** zijn neutrale eigenschappen van een begrip (bijv. *onderscheidbare exemplaren*). Het model beantwoordt ze allemaal, één keer, met onderbouwing en bron-id's.
 - **Criteria** zijn de regels van de beslistabel: welke combinatie van kenmerken tot welk type leidt. De tool past ze toe; het type is dus een uitkomst, geen keuze vooraf.
+- De beslistabel heeft vijf stappen: scope (*herkenbaar*, *gemeentelijk*: harde poort voor elk type), afhankelijkheid (eigenschap, onderdeel of deelstap), aard (voorlopig type), een **drempel** per type en het **specialisatieniveau**. De drempel neemt de criteria van de vorige bedrijfsobjectenwiki over: voor een bedrijfsobject telt hij *betekenis in onderwerp*, *relaties*, *onderscheidbare exemplaren*, *levenscyclus* en *wordt bewerkt*, met hoogstens één nee (samen met *herkenbaar* en *eigen identiteit* 6 van de 7, het oude "5 van de 6" plus het ArchiMate-kenmerk). Het specialisatieniveau (*zelfstandig beleidsbegrip*) voorkomt dat elk besluit of proces uit een wet een eigen element wordt: een variant van een breder herkenbaar begrip wordt een specialisatie zonder pagina. De actor- en rolvragen van de vorige wiki zijn samengevat in *los van verantwoordelijkheid* (actor of rol) en *meerdere vervullers*.
 - De tabellen in de skill en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json) worden uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
 - Collaboration, Interface, Interaction, Location en Representation worden herkend, maar hebben nog geen paginatype: zo'n begrip wordt voorgelegd. De motivatie- en strategielaag valt buiten dit model.
 
@@ -89,6 +90,8 @@ Eén plek: skill [gemma-archimate-model-criteria](.agents/skills/gemma-archimate
 
 - Brontype per bron (in de intake): `wet`, `informatiemodel`, `beleid`, `overig`, `model`. De leesvolgorde staat in `wiki.yaml` (`bronvoorrang`); `llmwiki run start --onderwerp` houdt haar aan. `model` (het GEMMA-model) is een matchdoel en valt buiten de volgorde.
 - Wet en informatiemodel bepalen welke begrippen er zijn en wat ze formeel betekenen; beleid levert de gangbare taal. Voorrang bepaalt niet of iets een element is ([SRC10]).
+- Uitzondering: de naam en de herkenbare `definitie` komen uit de gangbare taal van beleids- en praktijkbronnen; de wetsterm wordt een synoniem met context "wet" (bijv. *Urn*, met *asbus* als wetsterm). Zie [references/naamgeving.md](.agents/skills/gemma-archimate-model-write/references/naamgeving.md).
+- De definitie van een actor of rol beschrijft de partij of de verantwoordelijkheid zelf, los van het onderwerp; wat de partij in het onderwerp doet, staat in `## Relaties`.
 - `definitie` is de herkenbare definitie (altijd, ≤160 tekens, gaat naar GEMMA). `definitie_formeel` staat er alleen bij een wezenlijk verschil: als onder beide definities niet precies dezelfde exemplaren vallen. Een formele definitie uit het GGM staat al in `ggm_definitie` en wordt niet gekopieerd. Zie [references/definitie.md](.agents/skills/gemma-archimate-model-write/references/definitie.md).
 
 ## 8. Relaties

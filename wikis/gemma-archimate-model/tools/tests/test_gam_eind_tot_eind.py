@@ -10,7 +10,7 @@ import check_elementen
 import terugmelding
 from llmwiki import frontmatter, gate, lint, paths, runs, validate
 
-JA = {"herkenbaar", "gemeentelijk"}
+JA = {"herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "relaties", "zelfstandig_beleidsbegrip"}
 
 
 def _beoordeling(begrip, ja):
@@ -46,7 +46,7 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
     runs.complete(wiki, wiki_yaml, run_id, "ingest", _json(tmp_path / "s.json", {"run": run_id, "bronnen": [{"id": b} for b in state["bronnen"]]}))
 
     # ASSESS: kenmerken → beslistabel
-    bo_ja = JA | {"eigen_identiteit", "onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}
+    bo_ja = JA | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}
     proces_ja = JA | {"gedrag", "per_keer_doorlopen"}
     zonder_levenscyclus = bo_ja - {"levenscyclus"}
     assessment = {"run": run_id, "voorstellen": [
@@ -61,7 +61,7 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
     assert bepaal_type.main(["evalueer", str(pad_assessment), "--schrijf"]) == 0
     uitkomsten = [v["beoordeling"]["uitkomst"] for v in json.loads(pad_assessment.read_text())["voorstellen"]]
     assert [u["paginatype"] for u in uitkomsten] == ["bedrijfsobject", "bedrijfsproces", "bedrijfsobject"]
-    assert uitkomsten[2]["voorleggen"]
+    assert not uitkomsten[2]["voorleggen"] and "levenscyclus" in uitkomsten[2]["toelichting"]  # 6/7: binnen de drempel
     runs.complete(wiki, wiki_yaml, run_id, "assess", pad_assessment)
 
     # WRITE: pagina's stagen
@@ -82,7 +82,7 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
             ("bedrijfsobject", element("beschikking", "Beschikking", "bedrijfsobject", "business-object", bo_ja, "review", bronnen)),
         "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/leges.md":
             ("bedrijfsobject", element("leges", "Leges", "bedrijfsobject", "business-object", zonder_levenscyclus, "kandidaat",
-                                       bronnen + "\n## Ter discussie\n\nLevenscyclus: nee. Is dit een zelfstandig ding?\n")),
+                                       bronnen + "\n## Ter discussie\n\nLevenscyclus: nee (6/7). Is dit een zelfstandig ding?\n")),
         "bedrijfsarchitectuur/bedrijfsprocessen/8-wonen/vergunningen/aanvraag-behandelen.md":
             ("bedrijfsproces", element("aanvraag-behandelen", "Aanvraag behandelen", "bedrijfsproces", "business-process", proces_ja, "review",
                                        bronnen + "\n## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n"

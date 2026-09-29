@@ -434,8 +434,8 @@ def uit_bronnen(assessment: dict, wiki_root: Path = WIKI_ROOT) -> tuple[list[Kan
     """Relaties uit `voorstellen[*].relaties` ({van, werkwoord, naar, bronnen, vindplaats}) naar ArchiMate.
 
     Een begrip wordt opgelost via de uitkomst van de beslistabel (ASSESS) of een bestaand element (naam of id).
-    Is een begrip een eigenschap of specialisatie zonder pagina, dan wordt de relatie opgetild naar het genoemde
-    begrip; is het geen element (buiten scope, geen element, conflict, herkend), dan vervalt de relatie.
+    Is een begrip een eigenschap, onderdeel of specialisatie zonder pagina, dan wordt de relatie opgetild naar het
+    genoemde begrip; is het geen element (buiten scope, geen element, conflict, herkend), dan vervalt de relatie.
     Geeft (kandidaten, vervallen).
     """
     begrippen = _begrippen_uit_assessment(assessment, wiki_root)
@@ -453,7 +453,7 @@ def uit_bronnen(assessment: dict, wiki_root: Path = WIKI_ROOT) -> tuple[list[Kan
             return None, f"'{naam}' krijgt in deze run geen elementpagina (doel {u['doel']})"
         if u["soort"] == "element":
             return (u["id"], u["archimate_type"]), ""
-        if u["soort"] == "eigenschap" and u.get("genoemd_begrip") and diepte < 3:
+        if u["soort"] in ("eigenschap", "onderdeel", "specialisatie") and u.get("genoemd_begrip") and diepte < 3:
             doel, reden = los_op(u["genoemd_begrip"], diepte + 1)
             return doel, reden or f"opgetild van '{naam}' naar '{u['genoemd_begrip']}'"
         return None, f"'{naam}' is geen element ({u['soort']})"

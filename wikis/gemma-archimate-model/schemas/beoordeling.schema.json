@@ -21,7 +21,11 @@
         "herkenbaar",
         "gemeentelijk",
         "buiten_kernlagen",
+        "betekenis_in_onderwerp",
         "slechts_eigenschap",
+        "eigen_identiteit",
+        "relaties",
+        "zelfstandig_beleidsbegrip",
         "gedrag",
         "handelende_partij",
         "hoedanigheid",
@@ -29,12 +33,13 @@
         "toegangspunt",
         "plaats",
         "aanbod_als_geheel",
+        "los_van_verantwoordelijkheid",
+        "meerdere_vervullers",
         "per_keer_doorlopen",
         "gegroepeerd_gedrag",
         "toestandsverandering",
         "aangeboden_gedrag",
         "gezamenlijk_gedrag",
-        "eigen_identiteit",
         "onderscheidbare_exemplaren",
         "levenscyclus",
         "wordt_bewerkt",
@@ -52,7 +57,19 @@
         "buiten_kernlagen": {
           "$ref": "#/$defs/antwoord"
         },
+        "betekenis_in_onderwerp": {
+          "$ref": "#/$defs/antwoord"
+        },
         "slechts_eigenschap": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "eigen_identiteit": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "relaties": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "zelfstandig_beleidsbegrip": {
           "$ref": "#/$defs/antwoord"
         },
         "gedrag": {
@@ -76,6 +93,12 @@
         "aanbod_als_geheel": {
           "$ref": "#/$defs/antwoord"
         },
+        "los_van_verantwoordelijkheid": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "meerdere_vervullers": {
+          "$ref": "#/$defs/antwoord"
+        },
         "per_keer_doorlopen": {
           "$ref": "#/$defs/antwoord"
         },
@@ -89,9 +112,6 @@
           "$ref": "#/$defs/antwoord"
         },
         "gezamenlijk_gedrag": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "eigen_identiteit": {
           "$ref": "#/$defs/antwoord"
         },
         "onderscheidbare_exemplaren": {
@@ -117,18 +137,11 @@
     },
     "genoemd_begrip": {
       "type": "string",
-      "description": "Het begrip waarvan dit een eigenschap of waarneembare vorm is"
+      "description": "Het begrip waarvan dit een eigenschap, onderdeel, variant (specialisatie) of waarneembare vorm is"
     },
     "archimate_buiten_model": {
       "type": "string",
       "description": "Het ArchiMate-type buiten de kernlagen (Goal, Outcome, Driver, Principle, Requirement, Constraint, Value, Capability, Grouping …)"
-    },
-    "benoemde_partij": {
-      "enum": [
-        "ja",
-        "nee"
-      ],
-      "description": "ja/nee: bij 'handelende partij' én 'hoedanigheid': is het een benoemde persoon, organisatie of eenheid?"
     },
     "uitkomst": {
       "type": "object",
@@ -170,7 +183,11 @@
         "herkenbaar",
         "gemeentelijk",
         "buiten_kernlagen",
+        "betekenis_in_onderwerp",
         "slechts_eigenschap",
+        "eigen_identiteit",
+        "relaties",
+        "zelfstandig_beleidsbegrip",
         "gedrag",
         "handelende_partij",
         "hoedanigheid",
@@ -178,12 +195,13 @@
         "toegangspunt",
         "plaats",
         "aanbod_als_geheel",
+        "los_van_verantwoordelijkheid",
+        "meerdere_vervullers",
         "per_keer_doorlopen",
         "gegroepeerd_gedrag",
         "toestandsverandering",
         "aangeboden_gedrag",
         "gezamenlijk_gedrag",
-        "eigen_identiteit",
         "onderscheidbare_exemplaren",
         "levenscyclus",
         "wordt_bewerkt",
@@ -210,7 +228,31 @@
             "nee"
           ]
         },
+        "betekenis_in_onderwerp": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
         "slechts_eigenschap": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "eigen_identiteit": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "relaties": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "zelfstandig_beleidsbegrip": {
           "enum": [
             "ja",
             "nee"
@@ -258,6 +300,18 @@
             "nee"
           ]
         },
+        "los_van_verantwoordelijkheid": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "meerdere_vervullers": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
         "per_keer_doorlopen": {
           "enum": [
             "ja",
@@ -283,12 +337,6 @@
           ]
         },
         "gezamenlijk_gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "eigen_identiteit": {
           "enum": [
             "ja",
             "nee"

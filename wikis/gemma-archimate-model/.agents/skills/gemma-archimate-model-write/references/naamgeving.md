@@ -2,6 +2,17 @@
 
 Elke elementnaam is op zichzelf ondubbelzinnig, ongeacht de grondslag.
 
+## Gangbare term boven wetsterm
+
+De bronvoorrang geldt voor welke begrippen er zijn en wat ze formeel betekenen, niet voor de naam.
+
+- STANDAARD is de naam de term die beleids- en praktijkbronnen gebruiken. Toets: welke term gebruiken de beleids- en praktijkbronnen, en welke zou een medewerker aan de balie gebruiken?
+- De wetsterm gaat naar `synoniemen` met context "wet"; de gangbare term eventueel ook met context "beleid" of "dagelijks gebruik" als er meer gangbare termen zijn.
+- Vallen onder de gangbare en de wettelijke term niet precies dezelfde exemplaren, dan komt er een formele definitie met `## Definitie` (zie `definitie.md`).
+- ALS er geen beleids- of praktijkbron is, of meer gangbare termen naast elkaar → voorleggen ([PR6]); niet terugvallen op de wetsterm zonder dat te melden.
+
+Precedent: *Urn* (VNG-bron, praktijk), niet *Asbus* (Wet op de lijkbezorging); asbus is synoniem met context "wet".
+
 ## Naamconflict
 
 - **Wiki-conflict**: de naam (of het id) wordt al door een ander element gebruikt. Geldt voor elke grondslag.

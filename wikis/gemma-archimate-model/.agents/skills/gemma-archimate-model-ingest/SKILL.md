@@ -25,7 +25,7 @@ Volg `wiki-ingest`. Voor deze wiki is `--brontype` verplicht:
 
 Het GGM en het GEMMA-model komen niet via deze stap binnen, maar via de release-skills.
 
-Een bron wordt letterlijk bewaard: ophalen met `llmwiki source add --url` (nooit een samenvatting of WebFetch-weergave als bron), nooit vertalen of herschrijven. Pdf's vergen eenmalig `uv sync --extra pdf`.
+Een bron wordt letterlijk bewaard: ophalen met `llmwiki source add --url` (nooit een samenvatting of WebFetch-weergave als bron), nooit vertalen of herschrijven.
 
 ## 2. Bronselectie (kwaliteit bespreken)
 
@@ -33,6 +33,7 @@ Een bron wordt letterlijk bewaard: ophalen met `llmwiki source add --url` (nooit
 - Beoordeel een bron ALLEEN op inhoudelijke relevantie: noemt ze begrippen die elementen van dit model kunnen zijn?
 - NOOIT een bron afwijzen omdat ze niet beschrijft wat gemeenten registreren. Ook strategie- en governancedocumenten noemen concrete objecten, rollen en processen.
 - Een bron zonder bruikbare begrippen krijgt toch een bronanalyse, met `relevant: nee` en een reden; het bestand in `sources/` blijft ongemoeid.
+- ALS een onderwerp alleen een wettekst (of informatiemodel) heeft en geen beleids- of praktijkbron → signaleer dat aan de redacteur en stel een aanvullende bron voor (een VNG-handreiking, een model- of gemeentelijke verordening, een gemeentelijke webpagina). Zonder zo'n bron ontbreekt de gangbare taal voor namen en herkenbare definities.
 
 ## 3. Kernpunten bespreken ([PR3])
 
@@ -58,8 +59,8 @@ bijgewerkt: <datum>
 Wat deze bron betekent voor de architectuur van dit onderwerp (max. 500 woorden; herhaal de intake niet).
 
 ## Kernbegrippen
-| Begrip | Omschrijving in de bron | Vindplaats |
-|---|---|---|
+| Begrip | Omschrijving in de bron | Andere termen in deze bron | Vindplaats |
+|---|---|---|---|
 
 ## Relaties
 | Van | Werkwoord | Naar | Vindplaats |
@@ -74,7 +75,11 @@ Welke objecten, rollen, processen, diensten of gebeurtenissen; welke specialisat
 
 Links naar elementpagina's voeg je toe zodra die bestaan. Citaten zijn platte tekst, zonder links.
 
+In *Andere termen in deze bron* staan de andere namen die de bron voor hetzelfde begrip gebruikt, en bij een beleids- of praktijkbron de wetsterm waarnaar de bron verwijst (bijv. "urn" in de bron, wettelijk "asbus"). Zo zijn wetsterm en gangbare term al bij de ingest aan elkaar gekoppeld.
+
 In `## Relaties` staan de verbanden tussen begrippen zoals de bron ze legt, met het werkwoord letterlijk uit de bron ("de heffingsambtenaar legt de aanslag op", "een beschikking bestaat uit onderdelen") en de vindplaats. Gebruik begripsnamen als platte tekst; of een relatie een ArchiMate-relatie wordt, hangt af van de beoordeling van beide begrippen in ASSESS. Neem ook verbanden op met begrippen die mogelijk geen element worden: ASSESS tilt ze op of laat ze vervallen.
+
+ALTIJD per partij (persoon, organisatie, verantwoordelijkheid) een rij voor wat zij volgens de bron houdt, beheert, uitvoert of vervult, ook als dat in een bijzin of begripsomschrijving staat ("een kerkgenootschap kan een bijzondere begraafplaats houden" → `kerkgenootschap | houdt | bijzondere begraafplaats | art. 37`). Het kenmerk *relaties* steunt op deze rijen.
 
 ## 5. Begrippenlijst
 

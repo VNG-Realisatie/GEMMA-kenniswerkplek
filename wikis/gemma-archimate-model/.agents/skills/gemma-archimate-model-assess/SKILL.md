@@ -26,9 +26,18 @@ Eerst de intake (`sources/index/`), dan de bronanalyses van dit onderwerp, en de
 ## 3. Per begrip, vóór de kenmerken
 
 1. **Domein.** Hoort het begrip bij dit onderwerp? Verhuisregel: een begrip verhuist als het primair bij een ander onderwerp hoort (bijv. horecavergunning bij horeca). Bij twijfel: vastleggen waar het is gevonden, met een verwijzing naar het andere onderwerp.
-2. **Naamconflict (signaal).** Bestaat er al een element met deze naam of als synoniem? Komt de naam in meerdere GGM-beleidsdomeinen voor (`tools/ggm.py naamgenoten <naam>`)? Classificeer als *duplicaat* (zelfde concept), *homoniem* (ander concept) of *geen conflict*. Een actor/rol en een bedrijfsobject met dezelfde naam zijn geen conflict (tegenhanger). Dit is een signaal; de beslissing valt bij het schrijven.
+2. **Naam en naamconflict (signaal).**
+   - *Wetsterm en gangbare term.* Noteer per begrip de term van de wet (of het informatiemodel) en de term die beleids- en praktijkbronnen gebruiken (kolom *Andere termen in deze bron* van de bronanalyses). Voorstel: `naam` = de gangbare term, de wetsterm in `synoniemen` (context "wet"). Zie `gemma-archimate-model-write` `references/naamgeving.md`.
+   - *Conflict.* Bestaat er al een element met deze naam of als synoniem? Komt de naam in meerdere GGM-beleidsdomeinen voor (`tools/ggm.py naamgenoten <naam>`)? Classificeer als *duplicaat* (zelfde concept), *homoniem* (ander concept) of *geen conflict*. Een actor/rol en een bedrijfsobject met dezelfde naam zijn geen conflict (tegenhanger). Dit is een signaal; de beslissing valt bij het schrijven.
 3. **Structuur.**
-   - *Specialisaties en generalisaties* uit de bronnen én uit het GGM (`tools/ggm.py generalisaties <guid>`). Vergelijk beide; afwijkingen zijn bevindingen. Beslisregel: praat de gemeente erover als aparte dingen? Specialisaties met eigen processen of relaties worden eigen elementen; uitwisselbare specialisaties worden *specialisatie zonder pagina* bij het bovenliggende element. Beoordeel het abstracte niveau altijd zelf op zijn kenmerken; sluit het nooit categorisch uit.
+   - *Specialisaties: het hoogste herkenbare niveau.* Voor alle typen, ook gedrag:
+     1. **Eerst naar boven kijken.** Zoek de mogelijke generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties <guid>`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek <term>`). Noteer de keten, bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving. Vergelijk met de specialisaties in de bronnen; afwijkingen zijn bevindingen.
+     2. **Kies het hoogste niveau dat domeinexperts herkennen:** een onderwerpbegrip als dat zelf herkenbaar is (zoals Omgevingsvergunning en Parkeervergunning in GEMMA), anders het overkoepelende begrip (Vergunning, Beschikking, Besluit). NOOIT een kunstmatige verzamelnaam bedenken: het gekozen begrip moet zelf *herkenbaar* halen, met een bron.
+     3. **Eigen pagina voor een specialisatie** ALLEEN als alle drie gelden: domeinexperts gebruiken de term zelf (niet alleen de wet); ze heeft eigen gegevens of een eigen levenscyclus die afwijkt van haar zusters, en niet alleen een eigen wetsartikel; GEMMA kent vergelijkbare specialisaties op dat niveau. Anders beantwoord je *zelfstandig beleidsbegrip* met nee en noem je het gekozen niveau als `genoemd_begrip`: het wordt een specialisatie zonder pagina daarvan.
+     4. **Bestaat het gekozen bredere element nog niet**, stel het in dezelfde run voor, met GGM- en GEMMA-match. Plaats (mogelijk een generiek onderwerp) en naam leg je voor ([PR6]).
+     5. **Het abstracte niveau** beoordeel je altijd zelf op zijn kenmerken; sluit het nooit categorisch uit.
+
+     Precedent: bij lijkbezorging (run 2026-09-29) leverden de vergunning tot opgraving, de vergunning bijzonder crematorium, de vergunning bewaarplaats voor asbussen en de vergunning verstrooiingsterrein vier aparte bedrijfsobjecten op, en processen als "afgeven verlof tot begraving of crematie" eigen procespagina's. Dat is te specifiek voor GEMMA: het zijn varianten van een vergunning of beschikking, en van *Behandelen vergunningaanvraag*.
    - *Attribuut of waarde?* (`tools/ggm.py attribuut <term>`). Is het begrip slechts een attribuut, status of waarde van een ander begrip, dan beantwoord je het kenmerk *slechts eigenschap* met ja.
    - *Onderdeel?* Een GGM-relatie `[0..*]` naar een groter geheel wijst op een afhankelijk ding zonder eigen identiteit (kenmerk *eigen identiteit*).
 
@@ -52,6 +61,6 @@ Conservatief: bij twijfel niet rapporteren. Motiveer waar de gegevens worden beh
 
 ## 6. Presenteren
 
-Per begrip, niet in één blok: de uitkomst van de beslistabel (type of reden), `data_object`, het naamconflict-signaal, de relaties uit de bronnen (en welke vervallen) en één of twee zinnen argument. Leg elk begrip met `voorleggen` of `conflict` voor en wacht op het antwoord van de redacteur. Pas een kenmerk alleen aan als het aantoonbaar fout was.
+Per begrip, niet in één blok: de uitkomst van de beslistabel (type of reden) met de score uit stap 4 (bijv. "bedrijfsobject, 4/5, ontbreekt: levenscyclus", zoals vroeger "5/6"), bij een specialisatie het bredere begrip en de keten uit §3, `data_object`, het naamconflict-signaal, de relaties uit de bronnen (en welke vervallen) en één of twee zinnen argument. Leg elk begrip met `voorleggen` of `conflict` voor en wacht op het antwoord van de redacteur. Pas een kenmerk alleen aan als het aantoonbaar fout was.
 
-Rond af met `uv run llmwiki run complete assess --run <run-id> --data <assessment.json>`.
+Rond af met `uv run python -m llmwiki run complete assess --run <run-id> --data <assessment.json>`.
