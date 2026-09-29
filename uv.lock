@@ -242,7 +242,10 @@ dependencies = [
     { name = "pyyaml" },
 ]
 
-[package.optional-dependencies]
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+]
 mediawiki = [
     { name = "pywikibot" },
 ]
@@ -250,22 +253,16 @@ pdf = [
     { name = "pymupdf4llm" },
 ]
 
-[package.dev-dependencies]
-dev = [
-    { name = "pytest" },
-]
-
 [package.metadata]
 requires-dist = [
     { name = "jsonschema", specifier = ">=4.23" },
-    { name = "pymupdf4llm", marker = "extra == 'pdf'", specifier = ">=0.0.17" },
-    { name = "pywikibot", marker = "extra == 'mediawiki'", specifier = ">=9.0" },
     { name = "pyyaml", specifier = ">=6.0" },
 ]
-provides-extras = ["mediawiki", "pdf"]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=8.0" }]
+mediawiki = [{ name = "pywikibot", specifier = ">=9.0" }]
+pdf = [{ name = "pymupdf4llm", specifier = ">=0.0.17" }]
 
 [[package]]
 name = "mwparserfromhell"

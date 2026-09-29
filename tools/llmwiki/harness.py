@@ -113,23 +113,17 @@ def _bridge_pairs(repo_root: Path) -> list[tuple[Path, Path]]:
 
 # --- Permissies (.claude/settings.json) ---
 
+# llmwiki wordt altijd aangeroepen als `uv run python -m llmwiki` (zie tools/llmwiki/__main__.py).
+def _llmwiki_regels(*subcommandos: str) -> list[str]:
+    return [f"Bash(uv run python -m llmwiki {sub})" for sub in subcommandos]
+
+
 _CLAUDE_SETTINGS = {
     "permissions": {
-        "allow": [
-            "Bash(uv run llmwiki workspace-check*)",
-            "Bash(uv run llmwiki run *)",
-            "Bash(uv run llmwiki validate *)",
-            "Bash(uv run llmwiki source *)",
-            "Bash(uv run llmwiki lint*)",
-            "Bash(uv run llmwiki pull*)",
-            "Bash(uv run llmwiki promote plan*)",
-            "Bash(uv run llmwiki publish plan*)",
-        ],
-        "ask": [
-            "Bash(uv run llmwiki pull* --doel *)",
-            "Bash(uv run llmwiki promote apply*)",
-            "Bash(uv run llmwiki publish apply*)",
-        ],
+        "allow": _llmwiki_regels(
+            "workspace-check*", "run *", "validate *", "source *", "lint*", "pull*", "promote plan*", "publish plan*",
+        ),
+        "ask": _llmwiki_regels("pull* --doel *", "promote apply*", "publish apply*"),
         "deny": [
             "Bash(*pywikibot*)",
             "Edit(voorstellen/**)",
@@ -203,7 +197,7 @@ def _mcp_client_blocks(config_rel_path: str) -> dict[str, dict]:
 
 def _write_json(path: Path, data: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
 def _generate_all(repo_root: Path) -> dict[Path, dict]:

@@ -4,24 +4,20 @@
 
 # GEMMA kenniswerkplek: monorepo voor LLM-wiki's
 
-Zie [ARCHITECTURE.md](ARCHITECTURE.md) voor het architectuur-kompas, [docs/kluswijzer.md](docs/kluswijzer.md) voor de inrichtingsstappen en [docs/onderbouwing.md](docs/onderbouwing.md) voor de volledige onderbouwing.
+Zie [ARCHITECTURE.md](ARCHITECTURE.md) voor het architectuur-kompas en [docs/onderbouwing.md](docs/onderbouwing.md) voor de volledige onderbouwing.
 
-## Status van deze inrichting
+## Wat er werkt
 
-Uitgevoerd: **Klus 1 (Fundament)**, **Klus 3 (Gereedschapskist)** volledig — inclusief het MediaWiki-deel — en **Klus 2 (Werkplek)** grotendeels. Concreet werkt nu:
+- Drie wiki-soorten (`sync`, `curation`, `knowledge-base`; zie `ARCHITECTURE.md` §1 en `docs/onderbouwing.md` 5.18) met de bijbehorende `llmwiki`-CLI: run-State, de publicatiegate (`promote plan|apply` voor curatie, `publish plan|apply` voor sync), `pull` en publicatie naar MediaWiki via pywikibot, bronbeheer, lint, `workspace-check` en `harness sync|check`.
+- `llmwiki harness sync` genereert de Claude Code-brug naar de skills, `.claude/settings.json`, `.vscode/settings.json`, `opencode.json` en (voor sync-wiki's) de MCP-configuratie voor Claude Code/VS Code/Cursor. `llmwiki harness check` staat in de pre-commit-hook en in `.github/workflows/check.yml`.
+- Wiki's: `wikis/gemma` (sync met GEMMA Online), `wikis/gemma-archimate-model` (curatie van het GEMMA-architectuurmodel), en de sjablonen `wikis/_template` (sync) en `wikis/_template-md` (curatie).
 
-- Drie wiki-soorten (`sync`, `curation`, `knowledge-base`; zie `ARCHITECTURE.md` §1 en `docs/onderbouwing.md` 5.18) met de bijbehorende `llmwiki`-CLI: run-State, de publicatiegate (`promote plan|apply` voor curatie, `publish plan|apply` voor sync, beide smaak A en B), `pull` en echte MediaWiki-publicatie via pywikibot, bronbeheer, lint, `workspace-check` en `harness sync|check`.
-- `llmwiki harness sync` genereert de Claude Code-brug, `.claude/settings.json`, `.vscode/settings.json`, `opencode.json` en (voor sync-wiki's) de MCP-configuratie voor Claude Code/VS Code/Cursor. `llmwiki harness check` staat in de pre-commit-hook en in `.github/workflows/check.yml`.
-- Testsjablonen: `wikis/_template-md/` (curatie) en `wikis/_template/` (sync, wijst naar GEMMA staging als testomgeving).
+**Nog niet live getest:**
 
-**Nog niet zelf geverifieerd** (kon niet vanuit deze sessie: geen live MCP-registratie, geen netwerkcredentials):
-
-- MCP-registratie en een live verbinding tegen GEMMA staging/productie.
-- Codex- en Cursor-specifieke discovery (`llmwiki harness sync` genereert daar bewust niets voor — zie verificatiepunten V6t/m V10 in `docs/onderbouwing.md` sectie 8).
-- Windows: de junction-fallback van de skill-brug (geschreven, niet op Windows getest).
+- Publiceren naar GEMMA Online (redactie en staging). Inloggen en ophalen met de inloggegevens uit omgevingsvariabelen is getest en werkt (zie *Inloggen op GEMMA Online*).
+- De MCP-verbinding met GEMMA Online.
+- Codex- en Cursor-specifieke discovery (zie verificatiepunten V6 t/m V11 in `docs/onderbouwing.md` sectie 8).
 - De volledige `wiki-edit`-workflow (pull → bewerken → plan → akkoord → publish) tegen een echte testpagina op staging.
-
-Zie `docs/kluswijzer.md` Klus 4 voor het vervolg (de GEMMA-wiki zelf inrichten).
 
 ## Installatie voor redacteuren
 
@@ -34,10 +30,11 @@ Je hebt maar twee dingen nodig: deze map op je computer (gekregen via Git, of ge
 2. Typ en druk op Enter:
    - **Windows (PowerShell)**: `.\scripts\setup.ps1`
    - **macOS/Linux**: `./scripts/setup.sh`
-3. Het script installeert zelf wat nodig is (de tool `uv`, de Python-omgeving) en sluit af met "Klaar." Lees onderweg gerust mee; er wordt niets onomkeerbaars gedaan.
-4. Open deze map daarna in je AI-assistent (bijvoorbeeld Claude Code, zoals je organisatie die heeft ingericht) en stel een inhoudelijke vraag. Zie "Gebruik voor redacteuren" hieronder.
+3. Het script installeert zelf wat nodig is (de tool `uv`, de Python-omgeving), controleert de werkplek, laat zien welke inloggegevens voor GEMMA Online nog ontbreken en hoe je die instelt, en sluit af met "Klaar." Er wordt niets onomkeerbaars gedaan.
+4. Wil je naar GEMMA Online publiceren? Stel dan eenmalig je inloggegevens in (zie *Inloggen op GEMMA Online*). Voor de andere wiki's is dat niet nodig.
+5. Open deze map daarna in je AI-assistent (bijvoorbeeld Claude Code) en stel een inhoudelijke vraag. Zie "Gebruik voor redacteuren" hieronder.
 
-Loopt er iets vast? Het script stopt met een duidelijke melding in gewone taal over wat je zelf nog moet doen (bijvoorbeeld: terminal opnieuw openen). Vraag anders je AI-assistent om `uv run llmwiki workspace-check` te draaien en de uitkomst uit te leggen.
+Loopt er iets vast? Het script stopt met een duidelijke melding in gewone taal over wat je zelf nog moet doen (bijvoorbeeld: terminal opnieuw openen). Vraag anders je AI-assistent om `uv run python -m llmwiki workspace-check` te draaien en de uitkomst uit te leggen.
 
 ## Gebruik voor redacteuren
 
@@ -47,18 +44,73 @@ Loopt er iets vast? Het script stopt met een duidelijke melding in gewone taal o
 4. Na jouw akkoord vraagt je AI-omgeving (Claude Code, Cursor, …) nóg een keer om een klik ter bevestiging voordat het commando echt uitvoert. Dat is een ingebouwde veiligheidsklep; keur die alleen goed als je de wijziging al hebt gelezen.
 5. Twijfel je? Vraag de assistent gewoon: "wat gebeurt hierna?" of "laat me eerst het voorstel zien". Er gaat niets verloren als je een taak halverwege afbreekt.
 
+## Inloggen op GEMMA Online
+
+Alleen nodig voor de sync-wiki `wikis/gemma`, om pagina's op te halen van en te publiceren naar GEMMA Online. Je inloggegevens staan **nooit** in een bestand in deze map: je zet ze als omgevingsvariabelen van je eigen gebruikersaccount. `wikis/gemma/wiki.yaml` noemt alleen de namen.
+
+### 1. Maak botwachtwoorden aan
+
+Gebruik niet je gewone wachtwoord, maar per omgeving een **botwachtwoord**. Dat heeft alleen de rechten die publiceren nodig heeft en kun je los intrekken.
+
+1. Log in op de wiki en ga naar *Speciaal:BotWachtwoorden* (redactie: `https://redactie.gemmaonline.nl/wiki/Speciaal:BotWachtwoorden`; staging: dezelfde pagina op `gemma2-redactie.staging.wikixl.nl`).
+2. Kies een botnaam, bijvoorbeeld `llmwiki`, en vink alleen *Basisrechten* en *Pagina's bewerken* aan (en *Grote bewerkingen* als je veel pagina's tegelijk publiceert).
+3. Je krijgt een gebruikersnaam in de vorm `Jouwnaam@llmwiki` en een wachtwoord. Die twee heb je hieronder nodig.
+
+Voor staging heb je daarnaast de gebruikersnaam en het wachtwoord van de extra toegangslaag (de inlogvraag van je browser vóór de wiki); die krijg je van de beheerder van staging.
+
+### 2. Zet de omgevingsvariabelen
+
+| Variabele | Inhoud |
+|---|---|
+| `GEMMA_REDACTIE_USER` | Botgebruikersnaam op redactie, bijv. `Jouwnaam@llmwiki` |
+| `GEMMA_REDACTIE_BOTPASSWORD` | Botwachtwoord op redactie |
+| `GEMMA_STAGING_USER` | Botgebruikersnaam op staging |
+| `GEMMA_STAGING_BOTPASSWORD` | Botwachtwoord op staging |
+| `GEMMA_STAGING_HTTP_USER` | Gebruikersnaam van de extra toegangslaag van staging |
+| `GEMMA_STAGING_HTTP_PASSWORD` | Wachtwoord van de extra toegangslaag van staging |
+
+**Windows, met het script (aanbevolen, geen beheerdersrechten nodig):** open PowerShell in deze map en typ
+
+```powershell
+.\scripts\inlog-instellen.ps1
+```
+
+Het script vraagt per variabele de waarde en slaat die blijvend op voor je eigen account. Wachtwoorden typ je onzichtbaar in en ze komen niet in de PowerShell-geschiedenis. Laat een vraag leeg om een variabele ongewijzigd te laten, bijvoorbeeld als je alleen staging wilt instellen. Sluit daarna VS Code en elke terminal volledig af en open ze opnieuw: alleen nieuwe vensters zien de variabelen.
+
+**Windows, via het menu** (hetzelfde resultaat):
+
+1. Open *Start*, typ `omgevingsvariabelen` en kies **Omgevingsvariabelen voor uw account bewerken** (niet "Systeemomgevingsvariabelen bewerken"; daarvoor zijn beheerdersrechten nodig).
+2. Klik in het bovenste blok, *Gebruikersvariabelen voor \<jouw naam\>*, op **Nieuw...**.
+3. Vul bij *Naam van variabele* bijvoorbeeld `GEMMA_REDACTIE_USER` in en bij *Waarde van variabele* je botgebruikersnaam. Klik **OK**.
+4. Herhaal dit voor elke variabele uit de tabel en sluit af met **OK**.
+5. Sluit VS Code en elke terminal volledig af en open ze opnieuw.
+
+**macOS/Linux:** zet per variabele een regel `export GEMMA_REDACTIE_USER='Jouwnaam@llmwiki'` in je shellprofiel (`~/.zshrc` of `~/.bashrc`) en open een nieuwe terminal.
+
+### 3. Controleer
+
+Draai `uv run python -m llmwiki workspace-check` (of het setup-script opnieuw). Staan er geen opmerkingen meer over `GEMMA_…`-variabelen, dan zijn ze gezet. Of het inloggen zelf lukt, zie je bij de eerste `pull`, bijvoorbeeld `uv run python -m llmwiki pull --wiki wikis/gemma --titel "Wat is GEMMA" --doel staging`.
+
+Omgevingsvariabelen zijn leesbaar voor elk programma dat onder je eigen account draait; daarom een botwachtwoord met beperkte rechten. Vermoed je dat het gelekt is: trek het in op *Speciaal:BotWachtwoorden* en maak een nieuw aan. De afweging staat in `docs/onderbouwing.md` 5.10a.
+
 ## Installatie: technische achtergrond
 
 Het setup-script hierboven doet het volgende, en je kunt het ook los uitvoeren:
 
-Nodig op elk besturingssysteem: [Git](https://git-scm.com/) en [uv](https://docs.astral.sh/uv/). Node.js is pas nodig zodra Klus 2 de MediaWiki-MCP-server aansluit.
+Nodig op elk besturingssysteem: [Git](https://git-scm.com/) en [uv](https://docs.astral.sh/uv/). Node.js is nodig voor de MediaWiki-MCP-server van sync-wiki's.
 
 ```bash
 git clone <url>
-cd second-brain
+cd GEMMA-kenniswerkplek
 uv sync
-uv run llmwiki --version
+uv run python -m llmwiki --version
 ```
+
+### Python-omgeving
+
+- **Altijd via `python -m`.** De CLI en de tests draaien als `uv run python -m llmwiki …` en `uv run python -m pytest`, niet als `uv run llmwiki`. De programma's die `uv` in `.venv\Scripts` aanmaakt (zoals `llmwiki.exe`) zijn lokaal gemaakt en niet ondertekend; op beheerde Windows-laptops kan beveiligingsbeleid ze blokkeren. `python.exe` is wel ondertekend. De permissies in `.claude/settings.json` en de pre-commit-hooks gaan van deze vorm uit.
+- **Alles in één keer.** `uv sync` installeert alle onderdelen, ook de groepen `mediawiki` (pywikibot) en `pdf` (pdf-conversie); zie `[tool.uv] default-groups` in `pyproject.toml`. Een latere `uv sync` haalt er dus niets van weg.
+- **Geen C-compiler nodig.** pywikibot gebruikt `mwparserfromhell`. Daarvan bestaat niet voor elke Python-versie een kant-en-klaar pakket (bijvoorbeeld nog niet voor Python 3.14 op Windows); zelf bouwen vraagt dan de Microsoft C++ Build Tools. `pyproject.toml` zet daarom `WITH_EXTENSION=0` voor dit pakket (`[tool.uv.extra-build-variables]`): uv bouwt dan de variant in puur Python. Komt er een kant-en-klaar pakket, dan gebruikt uv dat en doet de instelling niets. De Python-versie zelf zetten we bewust niet vast: een door uv gedownloade Python is niet ondertekend en loopt op beheerde laptops tegen hetzelfde beveiligingsbeleid aan.
 
 ### Windows
 
@@ -70,4 +122,4 @@ uv run llmwiki --version
 
 ### Werkplekcontrole
 
-Bij elke sessie draait de AI-assistent eerst `uv run llmwiki workspace-check` (zie de root-`AGENTS.md`). Die controleert de Python-omgeving, de harness-bindingen (`llmwiki harness check`), CLAUDE.md-uitschakeling, of `pywikibot`/`npx` aanwezig zijn waar nodig, of de in `wiki.yaml` genoemde pywikibot-family geregistreerd is, en onafgeronde runs. Voor een sync-wiki toont ze ook het eenmalige MCP-registratiecommando als dat nog niet is uitgevoerd.
+Bij elke sessie draait de AI-assistent eerst `uv run python -m llmwiki workspace-check` (zie de root-`AGENTS.md`). Die controleert de Python-omgeving, de harness-bindingen (`llmwiki harness check`), CLAUDE.md-uitschakeling, of `pywikibot`/`npx` aanwezig zijn waar nodig, of elk family-bestand uit `wiki.yaml` in de wiki-map staat (`wikis/<wiki>/families/<naam>_family.py`: de servers van een sync-wiki, zonder geheimen), en onafgeronde runs. Als opmerking (niet blokkerend) meldt ze welke inlogvariabelen voor GEMMA Online nog ontbreken, en voor een sync-wiki het eenmalige MCP-registratiecommando.

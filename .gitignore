@@ -5,6 +5,11 @@ voorstellen/
 wikis/*/.claude/skills/
 .env
 
+# Werkbestanden van de MediaWiki-koppeling (horen in .work/pywikibot/; vangnet, o.a. de sessiecookie)
+*.lwp
+apicache/
+throttle.ctrl
+
 # Obsidian: alleen .obsidian/app.json wordt bewaard (5.18)
 .obsidian/*
 !.obsidian/app.json

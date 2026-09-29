@@ -252,3 +252,22 @@ def test_resolve_categorie_pad_twee_voorrangscategorieën_moet_alsnog_vragen(cli
     site.page_categories["PaginaC"] = ["Landingspagina", "Over GEMMA"]
     with pytest.raises(sync_module.SyncError):
         cli_module._resolve_categorie_pad(root, site, wiki_yaml, "PaginaC", None)
+
+
+def test_categorieboom_testdoel_schrijft_niet_in_werkkopie(cli_module, wiki_root):
+    """Een testdoel (bv. staging, een oudere kopie) overschrijft content/ nooit: bestanden gaan naar
+    .work/sync/<doel>/, de revisies blijven gesleuteld op het content/-pad zodat publish ze vindt."""
+    root, wiki_yaml = wiki_root
+    (root / "content/main/Boven").mkdir(parents=True)
+    (root / "content/main/Boven/PaginaA.wiki").write_text("Productietekst", encoding="utf-8")
+    site = FakeSite()
+    site.category_articles["Boven"] = ["PaginaA"]
+    site.pages["PaginaA"] = {"text": "Oudere stagingtekst", "revid": 7}
+
+    assert cli_module._pull_categorieboom(root, wiki_yaml, site, "staging", _args()) == 0
+
+    assert (root / "content/main/Boven/PaginaA.wiki").read_text(encoding="utf-8") == "Productietekst"
+    assert (root / ".work/sync/staging/content/main/Boven/PaginaA.wiki").read_text(encoding="utf-8") == "Oudere stagingtekst"
+    revisies = json.loads((root / ".work/sync/staging.json").read_text())
+    assert revisies["content/main/Boven/PaginaA.wiki"] == {"titel": "PaginaA", "revid": 7}
+    assert not (root / "revisies.json").exists()

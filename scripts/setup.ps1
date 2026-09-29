@@ -4,7 +4,7 @@
 $ErrorActionPreference = "Stop"
 Set-Location (Join-Path $PSScriptRoot "..")
 
-Write-Host "== Werkplek inrichten voor second-brain =="
+Write-Host "== Werkplek inrichten voor de GEMMA kenniswerkplek =="
 Write-Host ""
 
 if (-not (Get-Command uv -ErrorAction SilentlyContinue)) {
@@ -31,7 +31,35 @@ uv sync
 
 Write-Host ""
 Write-Host "Werkplek controleren..."
-uv run llmwiki workspace-check
+uv run python -m llmwiki workspace-check
+
+# Inloggegevens voor GEMMA Online: alleen nodig om te publiceren naar de sync-wiki wikis/gemma.
+$inlog = @(
+    @{ Naam = "GEMMA_REDACTIE_USER";         Inhoud = "botgebruikersnaam op redactie, bijv. Jouwnaam@llmwiki" },
+    @{ Naam = "GEMMA_REDACTIE_BOTPASSWORD";  Inhoud = "botwachtwoord op redactie" },
+    @{ Naam = "GEMMA_STAGING_USER";          Inhoud = "botgebruikersnaam op staging" },
+    @{ Naam = "GEMMA_STAGING_BOTPASSWORD";   Inhoud = "botwachtwoord op staging" },
+    @{ Naam = "GEMMA_STAGING_HTTP_USER";     Inhoud = "gebruikersnaam van de extra toegangslaag van staging" },
+    @{ Naam = "GEMMA_STAGING_HTTP_PASSWORD"; Inhoud = "wachtwoord van de extra toegangslaag van staging" }
+)
+Write-Host ""
+Write-Host "Inloggegevens voor GEMMA Online (alleen nodig om naar GEMMA Online te publiceren):"
+$ontbreekt = $false
+foreach ($v in $inlog) {
+    if ([Environment]::GetEnvironmentVariable($v.Naam, "User") -or [Environment]::GetEnvironmentVariable($v.Naam)) {
+        Write-Host ("  [gezet]     " + $v.Naam)
+    } else {
+        Write-Host ("  [ontbreekt] " + $v.Naam + "  (" + $v.Inhoud + ")")
+        $ontbreekt = $true
+    }
+}
+if ($ontbreekt) {
+    Write-Host ""
+    Write-Host "Zet de ontbrekende variabelen (eenmalig, geen beheerdersrechten nodig) met:"
+    Write-Host "  .\scripts\inlog-instellen.ps1"
+    Write-Host "Het script vraagt per variabele de waarde; wachtwoorden typ je onzichtbaar in."
+    Write-Host "Gebruik botwachtwoorden, niet je gewone wachtwoord. Uitleg: README.md, 'Inloggen op GEMMA Online'."
+}
 
 Write-Host ""
 Write-Host "Klaar. Open deze map nu in je AI-assistent (bijvoorbeeld Claude Code) en stel"

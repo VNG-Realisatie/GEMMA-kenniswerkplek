@@ -186,7 +186,7 @@ Gereedschap (code) staat op drie plekken:
 
 | Plek | Voor |
 |---|---|
-| `tools/llmwiki/` | Wat elke wiki nodig heeft; aanroepen via `uv run llmwiki …` |
+| `tools/llmwiki/` | Wat elke wiki nodig heeft; aanroepen via `uv run python -m llmwiki …` |
 | `wikis/<wiki>/tools/` | Wat meerdere vaardigheden van één wiki gebruiken; aanroepen via `uv run python tools/…` vanuit de wikimap |
 | `<skill>/scripts/` | Wat alleen die ene vaardigheid gebruikt (naam volgens de Agent Skills-standaard) |
 

@@ -6,6 +6,7 @@ uitschakeling, pywikibot-/MCP-gereedheid voor sync-wiki's, en onafgeronde runs.
 from __future__ import annotations
 
 import importlib.util
+import os
 import shutil
 from pathlib import Path
 
@@ -39,28 +40,41 @@ def _check_mediawiki_extra(repo_root: Path) -> list[str]:
     if not any(paths.load_wiki_yaml(w).get("type") == "sync" for w in _find_wiki_roots(repo_root)):
         return []
     if importlib.util.find_spec("pywikibot") is None:
-        return ["Pakket 'pywikibot' ontbreekt voor sync-wiki's. Draai 'uv sync --extra mediawiki'."]
+        return ["Pakket 'pywikibot' ontbreekt voor sync-wiki's. Draai 'uv sync'."]
     return []
 
 
-def _check_pywikibot_family(repo_root: Path) -> list[str]:
-    if importlib.util.find_spec("pywikibot") is None:
-        return []  # al gemeld via _check_mediawiki_extra
+def _doelen(wiki_yaml: dict) -> dict[str, dict]:
+    return {"site": wiki_yaml.get("site", {}), **(wiki_yaml.get("test_targets") or {})}
+
+
+def _check_family_bestanden(repo_root: Path) -> list[str]:
+    """Elke family uit wiki.yaml moet als bestand in de wiki-map staan (llmwiki meldt het aan bij pywikibot)."""
     findings = []
     for wiki_root in _find_wiki_roots(repo_root):
         wiki_yaml = paths.load_wiki_yaml(wiki_root)
-        family_name = wiki_yaml.get("site", {}).get("family")
-        if not family_name:
-            continue
-        try:
-            import pywikibot
-
-            pywikibot.family.Family.load(family_name)
-        except Exception:
-            findings.append(
-                f"Pywikibot-family '{family_name}' (wiki '{wiki_root.name}') niet geregistreerd. Zie README."
-            )
+        for naam in sorted({d["family"] for d in _doelen(wiki_yaml).values() if d.get("family")}):
+            if not (wiki_root / "families" / f"{naam}_family.py").exists():
+                findings.append(f"{wiki_root.name}: families/{naam}_family.py ontbreekt (servers van family '{naam}').")
     return findings
+
+
+def _inlog_notes(repo_root: Path) -> list[str]:
+    """Opmerking per doel waarvoor inloggegevens ontbreken; alleen pull/publish naar dat doel heeft ze nodig."""
+    notes = []
+    for wiki_root in _find_wiki_roots(repo_root):
+        wiki_yaml = paths.load_wiki_yaml(wiki_root)
+        if wiki_yaml.get("type") != "sync" or wiki_root.name.startswith("_"):
+            continue
+        for doel, target in _doelen(wiki_yaml).items():
+            namen = [n for blok in ("inlog", "http_toegang") for n in (target.get(blok) or {}).values()]
+            ontbrekend = [n for n in namen if not os.environ.get(n, "").strip()]
+            if ontbrekend:
+                notes.append(
+                    f"{wiki_root.name}, doel '{doel}': omgevingsvariabele(n) {', '.join(ontbrekend)} niet gezet; "
+                    "nodig voor pull/publish naar dit doel. Zie README, 'Inloggen op GEMMA Online'."
+                )
+    return notes
 
 
 def _check_npx(repo_root: Path) -> list[str]:
@@ -115,11 +129,11 @@ def check(repo_root: Path, fix: bool = False) -> dict:
         "harness_bindingen": harness_bindingen,
         "claude_md": claude_md,
         "mediawiki_extra": _check_mediawiki_extra(repo_root),
-        "pywikibot_family": _check_pywikibot_family(repo_root),
+        "family_bestanden": _check_family_bestanden(repo_root),
         "npx": _check_npx(repo_root),
         "onafgeronde_runs": _check_unfinished_runs(repo_root),
         "opgeschoond": [],
-        "opmerkingen": _mcp_registration_notes(repo_root),
+        "opmerkingen": _inlog_notes(repo_root) + _mcp_registration_notes(repo_root),
     }
 
     if fix:
@@ -133,7 +147,7 @@ def check(repo_root: Path, fix: bool = False) -> dict:
 
     herstelbaar = bool(result["python_omgeving"] or result["harness_bindingen"])
     actie_gebruiker = bool(
-        result["claude_md"] or result["mediawiki_extra"] or result["pywikibot_family"] or result["npx"]
+        result["claude_md"] or result["mediawiki_extra"] or result["family_bestanden"] or result["npx"]
     )
     if actie_gebruiker:
         result["status"] = "actie gebruiker"
@@ -151,7 +165,7 @@ def format_text(result: dict) -> str:
         ("harness_bindingen", "Harness-bindingen"),
         ("claude_md", "CLAUDE.md"),
         ("mediawiki_extra", "pywikibot"),
-        ("pywikibot_family", "Pywikibot-family"),
+        ("family_bestanden", "Family-bestand"),
         ("npx", "npx"),
         ("onafgeronde_runs", "Onafgeronde runs"),
         ("opgeschoond", "Opgeschoond"),

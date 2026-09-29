@@ -683,9 +683,52 @@ Geen geheimen in dit bestand: alleen niet-gevoelige serverinformatie uit `wiki.y
 
 Het `CONFIG`-pad is **relatief aan de wiki-map**, zodat het bestand machine-onafhankelijk en gecommit kan zijn (in tegenstelling tot een eerder overwogen ontwerp met een absoluut, per-gebruiker pad). Of dat relatieve pad in elke harness correct oplost — de child-process-cwd bij het starten van een stdio-server verschilt mogelijk per harness — is nieuw verificatiepunt **V10** (sectie 8), naast het bestaande V6 voor env-var-syntax per harness. `llmwiki harness sync` genereert hetzelfde soort blok voor OpenCode (`opencode.json`), Codex (`.codex/config.toml`), VS Code (`.vscode/mcp.json`) en Cursor (`.cursor/mcp.json`), telkens wijzend op dezelfde `config.json`.
 
-**Pywikibot: credentials en een eventuele testomgeving-Basic-Auth staan volledig buiten deze repository**, in pywikibots eigen globale configuratie (`~/.pywikibot/user-config.py`, met een `password_file` voor het Bot Password en een `authenticate`-dictionary voor een eventuele HTTP Basic Auth-laag). `wiki.yaml` verwijst alleen naar `family`/`code` van een al geregistreerde pywikibot-family (zie 5.13); `llmwiki` schrijft of leest die configuratie nooit. Dit is een bewuste keuze voor betrouwbaarheid boven "zero-config clone": een dynamische Site-constructie zonder geregistreerde family was niet zonder een live spike te verifiëren.
+**Pywikibot: inloggegevens komen uit omgevingsvariabelen, de servers uit een family-bestand in de wiki-map.** Zie 5.10a; dat vervangt de eerdere keuze om credentials en family volledig in pywikibots eigen globale configuratie (`~/.pywikibot/user-config.py` met een `password_file`) te laten.
 
 [Verified] Claude Code vraagt goedkeuring voor project-servers uit `.mcp.json`; [Verified] een gekloonde repository kan die goedkeuring niet zelf geven. Dit is een gewenste eigenschap en geen probleem voor de architectuur.
+
+#### 5.10a Inloggegevens voor GEMMA Online (2026-09-29)
+
+**Aanleiding.** De eerdere keuze vroeg van elke redacteur een eigen pywikibot-configuratie buiten de repository: een family-bestand, een `user-config.py`, een `password_file` en een `authenticate`-regel voor de extra toegangslaag van staging. Niemand had dat ingericht, de README beschreef het niet (workspace-check verwees er wel naar), en het wachtwoordbestand staat als platte tekst op schijf, op Windows vaak in een met OneDrive gesynchroniseerde map. Tegelijk zegt de repository-regel: credentials alleen in omgevingsvariabelen, genoemd bij naam in `wiki.yaml`. Het ontwerp volgde die regel niet.
+
+**Wat er nodig is.** Twee omgevingen, elk met een eigen login: redactie (`redactie.gemmaonline.nl`, code `en`) en staging (`gemma2-redactie.staging.wikixl.nl`, code `staging`). Staging heeft daarnaast een HTTP Basic Auth-laag vóór de wiki.
+
+**Afweging opslag.**
+
+| Optie | Voor | Tegen |
+|---|---|---|
+| Omgevingsvariabelen van de gebruiker (gekozen) | Volgt de repository-regel; werkt op Windows, macOS en Linux op dezelfde manier; geen extra pakket; op de desktop al in gebruik; op Windows zonder beheerrechten persistent in te stellen | Leesbaar voor elk programma dat onder je eigen account draait (op Windows onversleuteld in het register onder `HKCU\Environment`, op Linux in je shellprofiel) |
+| pywikibot `password_file` (eerdere keuze) | Standaard pywikibot | Wachtwoord als platte tekst in een bestand; lekt makkelijk via OneDrive, back-ups of een verkeerde `git add`; per machine handwerk |
+| Windows Credentiallijst of macOS-sleutelhanger via `keyring` | Versleuteld opgeslagen | Extra pakket; per besturingssysteem anders (op Linux een Secret Service nodig); moeilijker uit te leggen en te controleren |
+
+Het risico van omgevingsvariabelen beperken we met **BotPasswords** in plaats van het echte wachtwoord: per omgeving een apart botwachtwoord (Speciaal:BotWachtwoorden), met alleen de rechten die publiceren nodig heeft (basisrechten en pagina's bewerken), en per stuk in te trekken zonder je account te raken.
+
+**Uitwerking.**
+
+1. **Namen in `wiki.yaml`, waarden in de omgeving.** Per doel de namen van de variabelen, bijvoorbeeld:
+   ```yaml
+   site:
+     family: gemmaonline
+     code: en
+     inlog: {gebruiker: GEMMA_REDACTIE_USER, wachtwoord: GEMMA_REDACTIE_BOTPASSWORD}
+   test_targets:
+     staging:
+       family: gemmaonline
+       code: staging
+       inlog: {gebruiker: GEMMA_STAGING_USER, wachtwoord: GEMMA_STAGING_BOTPASSWORD}
+       http_toegang: {gebruiker: GEMMA_STAGING_HTTP_USER, wachtwoord: GEMMA_STAGING_HTTP_PASSWORD}
+   ```
+   De namen zijn vrij te kiezen; wie op een andere machine al variabelen heeft, kan die namen hier zetten. De gebruikersnaam van een botwachtwoord heeft de vorm `Hoofdaccount@botnaam`; pywikibot herkent de `@` en logt dan in met `action=login` in plaats van `clientlogin`.
+2. **Family-bestand in de repository** (`wikis/gemma/families/gemmaonline_family.py`, en een kopie in `wikis/_template`): alleen de twee servers en hun paden, geen geheimen. Naam en vorm (`<naam>_family.py`, klasse `Family`) schrijft pywikibot voor; pywikibot kan een family ook zonder bestand uit alleen een serveradres opbouwen (`AutoFamily`), maar het bestand is de gangbare, best gedocumenteerde weg. `llmwiki` meldt elke map `wikis/*/families/` zelf aan bij pywikibot. Daarmee vervalt de oorspronkelijke reden om de family buiten de repository te houden (dynamische Site-constructie niet te verifiëren): de family staat vast in een bestand, alleen niet meer per machine.
+3. **Geen eigen configuratie en geen wachtwoordbestand.** `llmwiki` zet pywikibots werkmap op `.work/pywikibot/` (al genegeerd door git; daar komen alleen de sessiecookie, de cache en de throttle-administratie). Daar staat een leeg `user-config.py`, omdat pywikibot `PYWIKIBOT_DIR` alleen gebruikt als dat bestand er is; anders belanden die werkbestanden in de map waar het commando draait. `.gitignore` sluit ze daarnaast als vangnet uit (`*.lwp`, `apicache/`, `throttle.ctrl`). `llmwiki` leest de variabelen uit `wiki.yaml`, geeft gebruiker en botwachtwoord rechtstreeks aan pywikibots login en zet de Basic Auth voor staging in pywikibots `authenticate`. Heeft iemand al een eigen pywikibot-configuratie (`PYWIKIBOT_DIR` gezet), dan gebruikt `llmwiki` die ongewijzigd.
+4. **workspace-check** meldt per doel welke variabele ontbreekt, als opmerking en niet als blokkade: zonder inlog werken curatiewiki's en de MCP-server gewoon door; alleen `pull`/`publish` naar dat doel faalt, met een melding die de ontbrekende namen noemt. Een ontbrekend family-bestand is wel een blokkade (fout in de repository). Het setup-script toont dezelfde lijst, met de stappen om een variabele te zetten.
+5. **README**, sectie *Inloggegevens GEMMA Online*: botwachtwoorden aanmaken en de variabelen zetten, per besturingssysteem. Op Windows: *Start* → typ "omgevingsvariabelen" → *Omgevingsvariabelen voor uw account bewerken* (geen beheerrechten nodig) → *Gebruikersvariabelen* → *Nieuw...*, of met het script `scripts/inlog-instellen.ps1` (vraagt per variabele de waarde; wachtwoorden onzichtbaar en buiten de PowerShell-geschiedenis); daarna VS Code en de terminal opnieuw starten. Op macOS/Linux: `export` in het shellprofiel.
+
+**Wat verandert ten opzichte van de eerdere keuze.** "`llmwiki` schrijft of leest die configuratie nooit" vervalt: `llmwiki` leest de namen uit `wiki.yaml` en de waarden uit de omgeving, en geeft ze in het geheugen door aan pywikibot (`tools/llmwiki/sync.py`, tests in `tests/test_sync_inlog.py`). Er komt niets geheims in de repository of in een bestand dat `llmwiki` schrijft; alleen pywikibots sessiecookie staat in `.work/pywikibot/`.
+
+**Verificatie.** Verificatiepunt V11 in sectie 8. Op 2026-09-29 getest: `pull` met een botwachtwoord uit de omgevingsvariabelen werkt tegen redactie en staging (inclusief de extra HTTP-toegangslaag en het scriptpad `""` op staging), ook herhaald: een tweede aanroep hergebruikt de sessiecookie, want MediaWiki weigert een nieuwe login binnen een bestaande botwachtwoord-sessie. De `WARNING: readapidenied` vooraf komt van pywikibots controle vóór het inloggen (anoniem lezen is niet toegestaan) en is onschuldig. Publiceren is nog niet getest.
+
+**Pull van een testdoel.** `llmwiki pull --doel <testdoel>` schrijft naar `.work/sync/<doel>/`, niet naar de werkkopie `content/`: staging is een periodiek ververste, oudere kopie en overschreef bij de eerste test de actuele productietekst in `content/`. De revisies blijven per doel gesleuteld op het `content/`-pad (`.work/sync/<doel>.json`), zodat `publish --doel` ze voor de conflictcontrole vindt.
 
 ### 5.11 Context en State
 
@@ -779,7 +822,7 @@ Een sync-wiki heeft maar één fase vóór de gate (`phases_for` geeft `[validat
 | `<skill>/scripts/` | Logica die alleen die Skill gebruikt | parser voor een bronformaat |
 | Workflow-Skill | Geen scripts; alleen aanroepvolgorde | — |
 
-**Aanroep.** Generieke logica altijd via de CLI: `uv run llmwiki <commando>`. Wiki- en Skill-scripts via `uv run python <pad>`, met paden relatief aan de wiki-map (waar de Workflow start) respectievelijk aan de skill-directory. [Verified] De specificatie beveelt paden relatief aan de skill-root aan.
+**Aanroep.** Generieke logica altijd via de CLI: `uv run python -m llmwiki <commando>`. Wiki- en Skill-scripts via `uv run python <pad>`, met paden relatief aan de wiki-map (waar de Workflow start) respectievelijk aan de skill-directory. [Verified] De specificatie beveelt paden relatief aan de skill-root aan.
 
 **Taal en platform.** Uitsluitend Python (geen Bash of PowerShell) voor alles wat de Workflow aanroept, met `pathlib`, UTF-8 expliciet bij lezen en schrijven, en geen afhankelijkheid van een specifieke shell. [Verified] Claude Code draait op Windows zonder Git Bash commando's via PowerShell; [Inferred] een Python-CLI werkt identiek onder Bash, PowerShell en cmd.
 
@@ -827,6 +870,16 @@ Grenzen:
 - `/` in de titel wordt een geneste map; een pagina die zelf ook subpagina's heeft, krijgt haar inhoud in `_index` binnen die map;
 - als twee titels na hoofdletterongevoelige vergelijking gelijk zijn, of de naam gereserveerd of langer dan 120 tekens is: suffix `~<8 tekens hash van exacte titel>`;
 - de exacte titel staat altijd in `revisies.json` (een override-blokje voor een pad met hash-suffix); de bestandsnaam is nooit de bron van waarheid.
+
+#### 5.13a Python-omgeving op beheerde werkplekken (2026-09-29)
+
+**Aanroep altijd via `python -m`.** De CLI draait als `uv run python -m llmwiki …` (`tools/llmwiki/__main__.py`) en de tests als `uv run python -m pytest`. De programma's die `uv` in `.venv/Scripts` aanmaakt (`llmwiki.exe`, `pytest.exe`) zijn lokaal gemaakt en niet ondertekend. Op beheerde Windows-laptops blokkeert Microsoft Defender zulke bestanden (Attack Surface Reduction-regel voor onbekende uitvoerbare bestanden), terwijl de ondertekende `python.exe` wel mag draaien. Eén vaste aanroep voor iedereen is eenvoudiger dan detecteren wie geblokkeerd wordt: skills, permissies (`.claude/settings.json`, gegenereerd door `harness.py`), pre-commit-hooks en CI gebruiken alle deze vorm. Het script `llmwiki` in `pyproject.toml` blijft bestaan, maar de documentatie noemt het niet.
+
+**Alle afhankelijkheden standaard.** `mediawiki` (pywikibot) en `pdf` (pymupdf4llm) zijn dependency-groups met `[tool.uv] default-groups`, geen optionele extra's meer: een gewone `uv sync` installeerde extra's niet en haalde ze zelfs weg als ze eerder waren geïnstalleerd. Prijs: een grotere eerste installatie (pdf trekt `numpy` en `onnxruntime` mee).
+
+**Geen C-compiler nodig.** pywikibot hangt af van `mwparserfromhell`, dat niet voor elke Python-versie een kant-en-klaar pakket heeft (bijvoorbeeld nog niet voor Python 3.14 op Windows); bouwen vraagt dan de Microsoft C++ Build Tools. `[tool.uv.extra-build-variables]` zet `WITH_EXTENSION=0` voor dit pakket, waarmee het zijn variant in puur Python bouwt. Is er wel een kant-en-klaar pakket, dan gebruikt uv dat en doet de instelling niets.
+
+**Afgewezen: de Python-versie vastzetten** (bijvoorbeeld 3.13, waarvoor wel kant-en-klare pakketten bestaan). uv zou dan een eigen Python downloaden; die is niet ondertekend en loopt op beheerde laptops tegen hetzelfde Defender-beleid aan. Bovendien veroudert een vaste versie.
 
 ### 5.14 Een wiki als zelfstandig subproject openen
 
@@ -892,17 +945,17 @@ Bestanden:
 {
   "permissions": {
     "allow": [
-      "Bash(uv run llmwiki workspace-check*)",
-      "Bash(uv run llmwiki run *)",
-      "Bash(uv run llmwiki validate *)",
-      "Bash(uv run llmwiki publish plan *)",
-      "Bash(uv run llmwiki export plan *)",
-      "Bash(uv run llmwiki pull *)",
+      "Bash(uv run python -m llmwiki workspace-check*)",
+      "Bash(uv run python -m llmwiki run *)",
+      "Bash(uv run python -m llmwiki validate *)",
+      "Bash(uv run python -m llmwiki publish plan *)",
+      "Bash(uv run python -m llmwiki export plan *)",
+      "Bash(uv run python -m llmwiki pull *)",
       "Bash(uv run python tools/check_*)"
     ],
     "ask": [
-      "Bash(uv run llmwiki publish apply*)",
-      "Bash(uv run llmwiki export apply*)",
+      "Bash(uv run python -m llmwiki publish apply*)",
+      "Bash(uv run python -m llmwiki export apply*)",
       "Bash(llmwiki publish apply*)",
       "Bash(llmwiki export apply*)"
     ],
@@ -1005,11 +1058,11 @@ De gegenereerde harness-configuratie (MCP, instellingen, permissies) staat wel i
 ```markdown
 ## Werkplek eerst
 Bij de eerste Vraag in een Sessie, vóór inhoudelijk werk:
-1. Draai `uv run llmwiki workspace-check`.
+1. Draai `uv run python -m llmwiki workspace-check`.
    Werkt `uv` niet: leg de gebruiker in gewone taal uit hoe `uv` wordt geïnstalleerd
    (zie README, sectie Installatie) en stop.
 2. Meldt workspace-check `herstelbaar`: vraag de gebruiker of je de werkplek mag inrichten,
-   draai dan `uv run llmwiki workspace-check --fix` en geef de meldingen in gewone taal door.
+   draai dan `uv run python -m llmwiki workspace-check --fix` en geef de meldingen in gewone taal door.
 3. Meldt workspace-check `actie gebruiker`: leg per punt uit wat de gebruiker moet doen
    en begin niet aan inhoudelijk werk tot workspace-check `ok` meldt.
 4. Meldt workspace-check dat Skills pas na herladen beschikbaar zijn: zeg dat tegen de gebruiker.
@@ -1116,7 +1169,7 @@ llm-wikis/                          Git-root = Obsidian-vault
 key: gemma
 type: sync
 site:
-  family: gemmaonline                # naam van een geregistreerde pywikibot-family
+  family: gemmaonline                # pywikibot-family: families/gemmaonline_family.py (5.10a)
   code: en                           # hoofddoel = bron van waarheid
   server: redactie.gemmaonline.nl    # domein voor MCP-config
   articlepath: /wiki
@@ -1217,7 +1270,7 @@ MediaWiki is één van de doelen, geen vaste afhankelijkheid.
 | Kern: run-State, gate, voorstellen, `log.md`, `voortgang.md`, workspace-check, harness sync, lint | `llmwiki` | Geen MediaWiki |
 | Bronbeheer: `source add|list|show`, conversie naar Markdown, onveranderlijkheid van `raw/` | `llmwiki` (5.19) | Converter, keuze in Klus 3 |
 | Markdown-validatie: frontmatter per paginatype, relatieve links, geen `[[wikilinks]]`, `id` = bestandsnaam, bron-id's bestaan in `sources/index/` en vallen binnen de scope, statusovergangen | `llmwiki validate` | Geen MediaWiki |
-| MediaWiki: `pull`, `publish`, titelmapping (`titles.py`), conflictcontrole | extra `mediawiki` (`uv sync --extra mediawiki`) | pywikibot, met een al geregistreerde family (5.10) |
+| MediaWiki: `pull`, `publish`, titelmapping (`titles.py`), conflictcontrole | groep `mediawiki` (standaard geïnstalleerd met `uv sync`) | pywikibot, met een family-bestand in de wiki-map en inloggegevens uit omgevingsvariabelen (5.10a) |
 | ArchiMate Open Exchange-writer | `llmwiki` (generiek) | [Verified] Open standaard van The Open Group; nog te bouwen bij een concreet `exports:`-gebruik |
 | UML/XMI-export (RSGB, MIM) | Wiki-script via `exports.xmi` | [Inferred] XMI-varianten verschillen per modelleertool; daarom eerst per wiki, generiek pas bij een tweede gebruiker |
 | CSV-writer | `llmwiki` (generiek) | Geen; nog te bouwen bij een concreet `exports:`-gebruik |
@@ -1249,7 +1302,7 @@ Regels:
 - **Laag 2 is generiek.** `wiki-intake` bevat geen wiki-kennis (regel 1 uit 5.4). Het schema `source-index.schema.json` in de core legt de frontmatter vast: id, titel, uitgever, datum, versie, pad en hash van laag 1, tags, samenvatting.
 - **Hergebruik.** Bestaat `sources/index/<bron-id>.md` al, dan slaat INGEST laag 1 en 2 over en maakt alleen de domein-lens.
 
-- **Ophalen via URL.** `llmwiki source add --url <url>` haalt een bron op en zet HTML deterministisch om naar Markdown: tekst blijft letterlijk, alleen opmaakruis (scripts, navigatie, voettekst, knoppenteksten) verdwijnt. Bekende weergave-URL's worden eerst omgezet naar de download-URL (bijv. iBabs, `*.bestuurlijkeinformatie.nl`). Pdf's worden omgezet met pymupdf4llm (extra `pdf`: `uv sync --extra pdf`). De intake legt `url`, `url_pagina` en `opgehaald` vast.
+- **Ophalen via URL.** `llmwiki source add --url <url>` haalt een bron op en zet HTML deterministisch om naar Markdown: tekst blijft letterlijk, alleen opmaakruis (scripts, navigatie, voettekst, knoppenteksten) verdwijnt. Bekende weergave-URL's worden eerst omgezet naar de download-URL (bijv. iBabs, `*.bestuurlijkeinformatie.nl`). Pdf's worden omgezet met pymupdf4llm (groep `pdf`, standaard geïnstalleerd met `uv sync`). De intake legt `url`, `url_pagina` en `opgehaald` vast.
 - **Brontype en bronvoorrang.** De intake kent een optioneel `brontype` (`wet`, `informatiemodel`, `beleid`, `overig`, `model`). Een wiki kan in `wiki.yaml` `bronvoorrang` een leesvolgorde op brontype vastleggen; `run start --onderwerp` zet de bronlijst in die volgorde. Wat de rangorde inhoudelijk betekent (bijv. voor definities), is een wiki-regel.
 
 **Waarom één intakebestand per bron.** Laag 2 is `sources/index/<bron-id>.md`, niet één catalogus.
@@ -1345,7 +1398,7 @@ Definitie van pariteit in deze architectuur: dezelfde Vraag in elk harness laadt
 | K23 | Contextbescherming: scoping via tags in `wiki.yaml`, runs starten vanuit een onderwerppagina | K |
 | K24 | Obsidian-vault is de repository-root; overdracht tussen wiki's in de keten via `sources/` | K |
 | K25 | `knowledge-base` is een eigen wiki-soort voor ongestructureerde kennisopbouw (notities, adviezen, ontwerpen, architectuurdocumenten), zonder run/gate; niet hetzelfde als `curation` (gestructureerd, richting een export) en niet een submap van een sync-wiki | K |
-| K26 | Sync-wiki: kale werkkopie zonder domein-lens of `records/`; conflictbasis `revisies.json` (gecommit, pad → titel/revid), geen `.meta.json`-sidecar per pagina; MediaWiki-toegang via MCP (alleen-lezen, altijd hoofddoel) voor verkennen en pywikibot (via `llmwiki pull`/`publish`) voor lezen/schrijven, met een vereist geregistreerde pywikibot-family (geen dynamische Site-constructie) | K |
+| K26 | Sync-wiki: kale werkkopie zonder domein-lens of `records/`; conflictbasis `revisies.json` (gecommit, pad → titel/revid), geen `.meta.json`-sidecar per pagina; MediaWiki-toegang via MCP (alleen-lezen, altijd hoofddoel) voor verkennen en pywikibot (via `llmwiki pull`/`publish`) voor lezen/schrijven, met een family-bestand in de wiki-map en inloggegevens uit omgevingsvariabelen (5.10a) | K |
 
 ---
 
@@ -1365,6 +1418,7 @@ Punten gemarkeerd als [Speculative] die de architectuur raken:
 | V8 | Volgt elk harness de instructie "Werkplek eerst" uit de root-AGENTS.md bij de eerste Vraag? | Nieuwe kloon, eerste Vraag is inhoudelijk | Instructie scherper en hoger in AGENTS.md; in Claude Code eventueel een SessionStart-hook die `workspace-check` draait (H) |
 | V9 | Duur van de eerste inrichting op een schone machine | Tijd meten van klonen tot eerste `workspace-check ok`, per besturingssysteem | Afhankelijkheden beperken of vooraf te installeren programma's in README noemen |
 | V10 | Resolvet het relatieve `CONFIG`-pad naar `mediawiki-mcp.config.json` (5.10) correct in elke harness (child-process-cwd bij een stdio-server verschilt mogelijk per harness)? | MCP-server registreren, `whoami`/lees-tool aanroepen in elke harness vanuit `wikis/gemma` | Generator laat per harness een absoluut, lokaal-berekend pad schrijven (dan niet meer gecommit voor die ene harness-file) |
+| V11 | Werkt inloggen met botwachtwoorden uit omgevingsvariabelen (5.10a) tegen redactie en staging, inclusief de extra HTTP-toegangslaag van staging en het aangenomen scriptpad `""` op staging? | Variabelen zetten, `uv run python -m llmwiki pull --wiki wikis/gemma --titel "Wat is GEMMA" --doel staging`, daarna zonder `--doel`; één testpublicatie alleen op staging | Scriptpad of protocol in `gemmaonline_family.py` aanpassen; bij een login-API die `action=login` weigert: gewoon account via `clientlogin` of OAuth (pywikibots `authenticate` met vier sleutels) |
 
 Pariteitstest per harness (handmatig, per release van een harness of van de core):
 

@@ -3,24 +3,24 @@ repos:
     hooks:
       - id: llmwiki-lint
         name: llmwiki lint
-        entry: uv run llmwiki lint
+        entry: uv run python -m llmwiki lint
         language: system
         pass_filenames: false
 
       - id: llmwiki-sources-immutable
         name: sources/raw/ is alleen-toevoegen
-        entry: uv run llmwiki precommit sources-immutable
+        entry: uv run python -m llmwiki precommit sources-immutable
         language: system
         pass_filenames: false
 
       - id: llmwiki-goedgekeurd-guard
         name: status goedgekeurd vereist een regel in log.md
-        entry: uv run llmwiki precommit goedgekeurd-guard
+        entry: uv run python -m llmwiki precommit goedgekeurd-guard
         language: system
         pass_filenames: false
 
       - id: llmwiki-harness-check
         name: llmwiki harness check
-        entry: uv run llmwiki harness check
+        entry: uv run python -m llmwiki harness check
         language: system
         pass_filenames: false

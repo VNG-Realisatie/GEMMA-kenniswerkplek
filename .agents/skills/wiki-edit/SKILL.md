@@ -31,7 +31,7 @@ Werkmap: de wiki-directory (bevat `wiki.yaml`).
 
 ## Testdoel (staging)
 
-`--doel <naam-uit-wiki.yaml-test_targets>` bij `pull`/`publish plan`/`publish apply` stuurt naar een testomgeving in plaats van het hoofddoel. Nooit routinematig: de harness vraagt hier altijd om een klik ('ask'), en een testomgeving kan afwijken van productie (bijvoorbeeld periodiek ververst).
+`--doel <naam-uit-wiki.yaml-test_targets>` bij `pull`/`publish plan`/`publish apply` stuurt naar een testomgeving in plaats van het hoofddoel. Nooit routinematig: de harness vraagt hier altijd om een klik ('ask'), en een testomgeving kan afwijken van productie (bijvoorbeeld periodiek ververst). Een `pull --doel` naar een testomgeving schrijft naar `.work/sync/<doel>/`, nooit naar de werkkopie `content/`: bewerk altijd in `content/` en publiceer die naar de testomgeving.
 
 ## Conflicten
 

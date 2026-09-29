@@ -6,10 +6,10 @@ Deze regels gelden voor de hele repository. Wiki-specifieke regels staan in `wik
 
 Bij de eerste Vraag in een Sessie, vóór inhoudelijk werk:
 
-1. Draai `uv run llmwiki workspace-check`. Werkt `uv` niet: leg in gewone taal uit dat de gebruiker eenmalig `scripts/setup.sh` (Linux/macOS) of `scripts/setup.ps1` (Windows) kan draaien (zie `README.md`, sectie Installatie), en stop.
-2. Meldt workspace-check `herstelbaar`: vraag de gebruiker of je de werkplek mag inrichten, draai dan `uv run llmwiki workspace-check --fix` en geef de meldingen in gewone taal door.
+1. Draai `uv run python -m llmwiki workspace-check`. Werkt `uv` niet: leg in gewone taal uit dat de gebruiker eenmalig `scripts/setup.sh` (Linux/macOS) of `scripts/setup.ps1` (Windows) kan draaien (zie `README.md`, sectie Installatie), en stop.
+2. Meldt workspace-check `herstelbaar`: vraag de gebruiker of je de werkplek mag inrichten, draai dan `uv run python -m llmwiki workspace-check --fix` en geef de meldingen in gewone taal door.
 3. Meldt workspace-check `actie gebruiker`: leg per punt uit wat de gebruiker moet doen en begin niet aan inhoudelijk werk tot workspace-check `ok` meldt.
-4. De Claude Code-brug en MCP-configuratie (Klus 2) zijn in deze inrichting nog niet gebouwd; `workspace-check` meldt dat als opmerking, niet als fout.
+4. Opmerkingen van `workspace-check` (ontbrekende inloggegevens voor GEMMA Online, MCP-registratie) blokkeren geen inhoudelijk werk. Noem ze alleen als de Vraag pull of publish naar dat doel nodig heeft, en verwijs dan naar `README.md`, sectie *Inloggen op GEMMA Online*.
 
 ## Veiligheid
 

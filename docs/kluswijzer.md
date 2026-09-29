@@ -26,7 +26,7 @@ Achtergrond per onderdeel: `docs/onderbouwing.md` (sectienummers tussen haakjes)
    - `.gitignore` met `.work/`, `voorstellen/`, `.claude/skills/`, `wikis/*/.claude/skills/`, `.env`.
 3. Maak `pyproject.toml` met pakket `llmwiki`, commando `llmwiki` en `uv.lock`. De eerste versie kent alleen `llmwiki --version`.
 4. Schrijf de root-`AGENTS.md` (maximaal circa 100 regels) met deze onderdelen, in deze volgorde (5.6, 5.17):
-   - **Werkplek eerst**: bij de eerste Vraag `uv run llmwiki workspace-check`, en wat te doen bij elke status;
+   - **Werkplek eerst**: bij de eerste Vraag `uv run python -m llmwiki workspace-check`, en wat te doen bij elke status;
    - **Veiligheid**: nooit publiceren of exporteren zonder akkoord; akkoordvelden nooit zelf invullen; nooit credentials in bestanden;
    - **Rangorde**: repository-veiligheidsregels > wiki-Rules > Skill-instructies;
    - **Werkwijze**: werkstromen via Skills, tussenresultaten via `llmwiki run`, geen State alleen in het gesprek;
@@ -38,7 +38,7 @@ Achtergrond per onderdeel: `docs/onderbouwing.md` (sectienummers tussen haakjes)
 **Eindresultaat.**
 
 - [ ] Een verse kloon op Windows en op Linux of macOS geeft dezelfde bestanden, zonder gewijzigde regeleinden (`git status` is schoon).
-- [ ] `uv run llmwiki --version` werkt vanuit de hoofdmap en vanuit `wikis/_template`.
+- [ ] `uv run python -m llmwiki --version` werkt vanuit de hoofdmap en vanuit `wikis/_template`.
 - [ ] De repository bevat geen `CLAUDE.md` en geen symlinks.
 - [ ] Een collega zonder programmeerkennis kan na het lezen van `ARCHITECTURE.md` uitleggen waar content, bronnen en verslagen staan.
 

@@ -35,7 +35,7 @@ def _convert_pdf(original: Path) -> str:
         import pymupdf4llm
     except ImportError as exc:
         raise ConversionError(
-            "Pdf-conversie vereist de extra 'pdf': draai eenmalig 'uv sync --extra pdf', "
+            "Pdf-conversie vereist de groep 'pdf': draai 'uv sync', "
             "of lever zelf een Markdown-versie aan met --markdown <pad>."
         ) from exc
     return pymupdf4llm.to_markdown(str(original))

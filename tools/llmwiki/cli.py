@@ -248,6 +248,13 @@ def _revisions_path(wiki_root: Path, doel: str) -> Path:
     return wiki_root / "revisies.json" if doel == "site" else wiki_root / ".work" / "sync" / f"{doel}.json"
 
 
+def _doelmap(wiki_root: Path, doel: str) -> Path:
+    """Waar een pull de opgehaalde bestanden neerzet. Het hoofddoel vult de werkkopie content/; een testdoel
+    (bv. staging, een oudere kopie) schrijft naar .work/sync/<doel>/ en overschrijft de werkkopie dus nooit.
+    De revisies blijven per doel gesleuteld op het content/-pad, zodat publish naar dat doel ze vindt."""
+    return wiki_root if doel == "site" else wiki_root / ".work" / "sync" / doel
+
+
 def _load_revisions(wiki_root: Path, doel: str) -> dict:
     path = _revisions_path(wiki_root, doel)
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
@@ -256,7 +263,7 @@ def _load_revisions(wiki_root: Path, doel: str) -> dict:
 def _save_revisions(wiki_root: Path, doel: str, revisions: dict) -> None:
     path = _revisions_path(wiki_root, doel)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(revisions, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8")
+    path.write_text(json.dumps(revisions, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8", newline="\n")
 
 
 def _has_uncommitted_changes(wiki_root: Path, pad: str) -> bool:
@@ -349,8 +356,8 @@ def cmd_pull(args) -> int:
         return 1
 
     pad = "content/" + titles_module.title_to_path(result.title, result.namespace, result.contentmodel, categorie_pad)
-    target = wiki_root / pad
-    if target.exists() and not args.force and _has_uncommitted_changes(wiki_root, pad):
+    target = _doelmap(wiki_root, doel) / pad
+    if doel == "site" and target.exists() and not args.force and _has_uncommitted_changes(wiki_root, pad):
         print(f"FOUT: {pad} heeft niet-gecommitteerde wijzigingen; gebruik --force om te overschrijven", file=sys.stderr)
         return 1
 
@@ -361,7 +368,7 @@ def cmd_pull(args) -> int:
     revisions[pad] = {"titel": result.title, "revid": result.revid}
     _save_revisions(wiki_root, doel, revisions)
 
-    print(f"Opgehaald: {pad}")
+    print(f"Opgehaald: {target.relative_to(wiki_root).as_posix()}")
     return 0
 
 
@@ -433,8 +440,8 @@ def _pull_categorieboom(wiki_root: Path, wiki_yaml: dict, site, doel: str, args)
         if bekend_pad and bekend_pad != pad:
             overgeslagen_elders.append(f"{titel} (al op {bekend_pad}, niet gedupliceerd naar {pad})")
             continue
-        target = wiki_root / pad
-        if target.exists() and not args.force and _has_uncommitted_changes(wiki_root, pad):
+        target = _doelmap(wiki_root, doel) / pad
+        if doel == "site" and target.exists() and not args.force and _has_uncommitted_changes(wiki_root, pad):
             overgeslagen_lokaal.append(pad)
             continue
         result = resultaten[titel]
@@ -653,7 +660,8 @@ def build_parser() -> argparse.ArgumentParser:
         "(bv. een wiki-specifiek archiefstatusveld); subpagina's worden nooit op basis hiervan overgeslagen",
     )
     p_pull.add_argument("--dry-run", action="store_true", help="Alleen bij --categorieboom: toon wat er zou gebeuren")
-    p_pull.add_argument("--doel", help="Naam uit wiki.yaml test_targets, standaard het hoofddoel")
+    p_pull.add_argument("--doel", help="Naam uit wiki.yaml test_targets, standaard het hoofddoel; "
+                        "een testdoel schrijft naar .work/sync/<doel>/, niet naar de werkkopie content/")
     p_pull.add_argument("--force", action="store_true")
     p_pull.set_defaults(func=cmd_pull)
 

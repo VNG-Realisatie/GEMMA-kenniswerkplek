@@ -1,11 +1,22 @@
-"""Pywikibot-laag voor sync-wiki's. Zie docs/onderbouwing.md 5.10 voor de reden:
-credentials en Basic-Auth voor een testomgeving blijven volledig in pywikibots
-eigen ~/.pywikibot/user-config.py (password_file, authenticate-dict); dit
-bestand construeert nooit zelf een Site, credentials of authenticate-config.
+"""Pywikibot-laag voor sync-wiki's. Zie docs/onderbouwing.md 5.10a.
+
+- De servers van een wiki staan in een pywikibot-family-bestand in de wiki-map
+  (`wikis/<wiki>/families/<naam>_family.py`, zonder geheimen); llmwiki meldt die
+  bestanden zelf aan bij pywikibot.
+- Inloggegevens komen uit omgevingsvariabelen; `wiki.yaml` noemt per doel alleen
+  hun namen (`inlog`, en `http_toegang` voor een extra Basic-Auth-laag). Ze gaan
+  in het geheugen naar pywikibot; llmwiki schrijft ze nergens weg.
+- Pywikibots werkmap (sessiecookie, throttle) is `.work/pywikibot/`, zonder
+  user-config.py. Wie zelf PYWIKIBOT_DIR heeft gezet, houdt de eigen configuratie.
 """
 from __future__ import annotations
 
+import os
+import sys
 from dataclasses import dataclass
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 class SyncError(RuntimeError):
@@ -17,11 +28,38 @@ class ConflictError(SyncError):
 
 
 def _import_pywikibot():
+    if "pywikibot" not in sys.modules and "PYWIKIBOT_DIR" not in os.environ:
+        werkmap = REPO_ROOT / ".work" / "pywikibot"
+        werkmap.mkdir(parents=True, exist_ok=True)
+        # pywikibot gebruikt PYWIKIBOT_DIR alleen als daar een user-config.py staat; anders valt het terug op de
+        # huidige map en komen sessiecookie, cache en throttle-bestand daar terecht. Het bestand blijft leeg.
+        user_config = werkmap / "user-config.py"
+        if not user_config.exists():
+            user_config.write_text("# Leeg: llmwiki configureert pywikibot zelf (tools/llmwiki/sync.py).\n",
+                                   encoding="utf-8", newline="\n")
+        os.environ["PYWIKIBOT_DIR"] = str(werkmap)
+        os.environ.setdefault("PYWIKIBOT_NO_USER_CONFIG", "2")
     try:
         import pywikibot
     except ImportError as exc:
-        raise SyncError("pywikibot ontbreekt. Draai 'uv sync --extra mediawiki'.") from exc
+        raise SyncError("pywikibot ontbreekt. Draai 'uv sync'.") from exc
+    config = getattr(pywikibot, "config", None)
+    if config is not None:
+        for map_ in sorted((REPO_ROOT / "wikis").glob("*/families")):
+            config.register_families_folder(str(map_))
     return pywikibot
+
+
+def ontbrekende_variabelen(target: dict) -> list[str]:
+    """Namen van de omgevingsvariabelen uit `inlog`/`http_toegang` die niet (of leeg) gezet zijn."""
+    namen = [naam for blok in ("inlog", "http_toegang") for naam in (target.get(blok) or {}).values()]
+    return [naam for naam in namen if not os.environ.get(naam, "").strip()]
+
+
+def _uit_omgeving(blok: dict | None) -> tuple[str, str] | None:
+    if not blok:
+        return None
+    return os.environ[blok["gebruiker"]].strip(), os.environ[blok["wachtwoord"]].strip()
 
 
 @dataclass
@@ -43,18 +81,41 @@ def _target(wiki_yaml: dict, doel: str) -> dict:
 
 
 def get_site(wiki_yaml: dict, doel: str = "site"):
-    """Site voor 'site' (hoofddoel) of een naam uit test_targets. Family/code
-    komen uit wiki.yaml; credentials/Basic-Auth komen volledig uit pywikibots
-    eigen ~/.pywikibot/user-config.py."""
-    pywikibot = _import_pywikibot()
+    """Site voor 'site' (hoofddoel) of een naam uit test_targets, ingelogd.
+
+    Family/code komen uit wiki.yaml. Heeft het doel een `inlog`-blok, dan komen gebruiker en botwachtwoord uit
+    de genoemde omgevingsvariabelen (gebruiker in de vorm `Hoofdaccount@botnaam`); `http_toegang` zet een extra
+    HTTP-Basic-Auth-laag (staging). Zonder `inlog`-blok logt pywikibot in volgens de eigen configuratie."""
     target = _target(wiki_yaml, doel)
+    ontbrekend = ontbrekende_variabelen(target)
+    if ontbrekend:
+        raise SyncError(
+            f"Inloggegevens voor doel '{doel}' ontbreken: omgevingsvariabele(n) {', '.join(ontbrekend)} niet gezet. "
+            "Zie README, 'Inloggen op GEMMA Online'."
+        )
+    pywikibot = _import_pywikibot()
+    inlog = _uit_omgeving(target.get("inlog"))
+    http = _uit_omgeving(target.get("http_toegang"))
+    if http and target.get("server"):
+        pywikibot.config.authenticate[target["server"]] = http
+    hoofdnaam = inlog[0].partition("@")[0] if inlog else None
     try:
-        site = pywikibot.Site(target["code"], target["family"])
+        site = pywikibot.Site(target["code"], target["family"], **({"user": hoofdnaam} if hoofdnaam else {}))
     except Exception as exc:  # o.a. pywikibot.exceptions.UnknownFamilyError
         raise SyncError(
-            f"Pywikibot-family '{target['family']}' (code '{target['code']}') niet "
-            "geregistreerd. Zie README voor een eenmalige installatiestap."
+            f"Site '{target['family']}' (code '{target['code']}') onbekend: "
+            f"ontbreekt wikis/<wiki>/families/{target['family']}_family.py?"
         ) from exc
+    if inlog:
+        # Eerst de sessiecookie van een eerdere login proberen: binnen een botwachtwoord-sessie weigert
+        # MediaWiki een nieuwe login ("Cannot log in when using BotPasswordSessionProvider sessions").
+        site.login(cookie_only=True)
+        if site.logged_in():
+            return site
+        manager = pywikibot.login.ClientLoginManager(site=site, user=hoofdnaam, password=inlog[1])
+        manager.login_name = inlog[0]  # botwachtwoord: 'Hoofdaccount@botnaam'
+        if not manager.login():
+            raise SyncError(f"Inloggen op doel '{doel}' als '{inlog[0]}' mislukt; controleer de inloggegevens.")
     site.login()
     return site
 

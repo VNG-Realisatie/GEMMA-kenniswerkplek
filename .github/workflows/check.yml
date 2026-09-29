@@ -18,10 +18,10 @@ jobs:
         run: uv sync
 
       - name: Tests
-        run: uv run pytest -q
+        run: uv run python -m pytest -q
 
       - name: Lint
-        run: uv run llmwiki lint
+        run: uv run python -m llmwiki lint
 
       - name: Harness check
-        run: uv run llmwiki harness check
+        run: uv run python -m llmwiki harness check

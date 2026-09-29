@@ -2,17 +2,27 @@ key: template
 type: sync                           # sync | curation | knowledge-base
 
 site:
-  family: gemmaonline                # naam van een geregistreerde pywikibot-family
+  family: gemmaonline                # pywikibot-family: families/gemmaonline_family.py (servers, geen geheimen)
   code: en                           # hoofddoel = bron van waarheid
   server: redactie.gemmaonline.nl    # domein voor MCP-config (los van family/code, want
                                       # die vereisen pywikibot om het domein op te zoeken)
   articlepath: /wiki                 # voor MCP-config en links; niet voor pywikibot zelf
   scriptpath: ""                     # idem; bevestigd via .claude/rules/redactie-gemmaonline.md RED9
+  inlog:                             # namen van omgevingsvariabelen, nooit de waarden (README: Inloggen op GEMMA Online)
+    gebruiker: GEMMA_REDACTIE_USER          # botwachtwoord-gebruikersnaam: Hoofdaccount@botnaam
+    wachtwoord: GEMMA_REDACTIE_BOTPASSWORD
 
 test_targets:
   staging:
     family: gemmaonline
     code: staging
+    server: gemma2-redactie.staging.wikixl.nl
+    inlog:
+      gebruiker: GEMMA_STAGING_USER
+      wachtwoord: GEMMA_STAGING_BOTPASSWORD
+    http_toegang:                    # extra HTTP-toegangslaag vóór de staging-wiki
+      gebruiker: GEMMA_STAGING_HTTP_USER
+      wachtwoord: GEMMA_STAGING_HTTP_PASSWORD
 
 content:
   layout: namespace                  # namespace (default) | category (nest categorie onder naamruimte, zie 'llmwiki pull --help')
