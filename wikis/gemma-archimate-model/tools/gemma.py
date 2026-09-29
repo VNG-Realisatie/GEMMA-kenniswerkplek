@@ -206,7 +206,8 @@ def overzicht_md(data: dict, bron_id: str) -> str:
     for e in data["elementen"].values():
         per_type[e["type"]] = per_type.get(e["type"], 0) + 1
     release = data.get("model", {}).get("eigenschappen", {}).get("Release", "")
-    regels = [f"# GEMMA-model ({bron_id})", "", f"Formaat: {data.get('model', {}).get('formaat', '?')}; release: {release or '?'}.",
+    regels = [f"# GEMMA-model ({bron_id})", "",
+              f"Formaat: {data.get('model', {}).get('formaat', '?')}; release: {release or '?'}. "
               f"Elementen: {len(data['elementen'])}; relaties: {len(data['relaties'])}.", ""]
     regels += [f"- {t}: {n}" for t, n in sorted(per_type.items())]
     return "\n".join(regels) + "\n"

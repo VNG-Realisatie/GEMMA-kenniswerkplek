@@ -54,6 +54,7 @@ XMI = """<?xml version="1.0" encoding="UTF-8"?>
     <target xmi:idref="EAID_ONDERDEEL"><type multiplicity="1..*" aggregation="none"/></target>
     <properties ea_type="Aggregation" subtype="Strong"/>
     <labels lb="1" rb="1..*" mt="bevat"/>
+    <documentation value="De &lt;i&gt;onderdelen&lt;/i&gt; van een beschikking | per besluit."/>
    </connector>
    <connector xmi:idref="EAID_GEN1">
     <source xmi:idref="EAID_BESLUIT"/><target xmi:idref="EAID_BESCHIKKING"/>
@@ -84,6 +85,14 @@ def test_parser_domein_relaties_en_deel_geheel(tmp_path):
     gen = data["relations"]["EAID_GEN1"]
     assert gen["uml_type"] == "Generalization" and gen["name"] == "is een"
     assert (gen["source_id"], gen["target_id"]) == ("EAID_BESLUIT", "EAID_BESCHIKKING")
+
+
+def test_domeinpagina_toont_guid_en_definitie_van_relaties(tmp_path):
+    data = ggm.parse_xmi(_xmi(tmp_path))
+    pagina = ggm.domein_pagina(data, "1 Veiligheid", "Vergunningen")
+    rij = next(r for r in pagina.splitlines() if r.startswith("| Beschikking | Aggregation"))
+    assert "| `EAID_AGG1` |" in rij
+    assert rij.endswith("| De onderdelen van een beschikking \\| per besluit. |")
 
 
 def test_velden_zijn_letterlijk_en_zonder_lege_waarden(tmp_path):

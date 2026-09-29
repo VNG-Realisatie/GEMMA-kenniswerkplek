@@ -341,10 +341,13 @@ def domein_pagina(data: dict, taakveld: str, beleidsdomein: str) -> str:
     ids = {e["id"] for e in ents}
     rels = [r for r in data["relations"].values() if r["source_id"] in ids]
     if rels:
-        regels += ["", "## Relaties", "", "| Van | Type | Naam | Naar | Kardinaliteit |", "|---|---|---|---|---|"]
+        regels += ["", "## Relaties", "", "| Van | Type | Naam | Naar | Kardinaliteit | GUID | Definitie |",
+                   "|---|---|---|---|---|---|---|"]
         for r in sorted(rels, key=lambda r: (namen[r["source_id"]], r["uml_type"])):
             soort = r["uml_type"] + (f" ({r['aggregatie']})" if r.get("aggregatie") else "")
-            regels.append(f"| {r['source_name']} | {soort} | {r['name']} | {r['target_name']} | {r['source_card']} → {r['target_card']} |")
+            definitie = schoon_tekst(r.get("documentation", "")).replace("|", "\\|")
+            regels.append(f"| {r['source_name']} | {soort} | {r['name']} | {r['target_name']} | "
+                          f"{r['source_card']} → {r['target_card']} | `{r['id']}` | {definitie} |")
     return "\n".join(regels) + "\n"
 
 
