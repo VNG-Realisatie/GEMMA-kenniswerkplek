@@ -45,7 +45,8 @@ De typen van beide elementen bepalen de soort relatie, het werkwoord de richting
 
 | Van → naar | Relatie | Uit het werkwoord |
 |---|---|---|
-| actor/rol → proces, functie, rol | toewijzing | — |
+| actor/rol → proces, functie | toewijzing | — |
+| actor → rol | toewijzing | alleen bij "vervult", "treedt op als", "fungeert als"; andere werkwoorden tussen partijen ("benoemt", "waarschuwt") → gerichte associatie |
 | proces/functie → object | toegang | schrijven ("stelt vast", "neemt", "legt vast", "wijzigt" …) of lezen ("gebruikt", "toetst", "raadpleegt" …); anders lezen-schrijven |
 | object → proces/functie | toegang, omgedraaid | idem |
 | gebeurtenis ↔ gedrag, gedrag → gedrag | triggering | "leidt tot", "start"; "volgt op" draait de richting om |

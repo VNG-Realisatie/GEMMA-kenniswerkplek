@@ -92,6 +92,9 @@ def toegestaan(relatie: str, bron_type: str, doel_type: str) -> bool:
     if relatie == "specialization":
         return bron_type == doel_type or {bron_type, doel_type} == {"business-object", "contract"}
     cb, cd = categorie(bron_type), categorie(doel_type)
+    if relatie == "assignment" and cb == cd == "actief":
+        # Tussen twee partijen alleen: een actor vervult een rol.
+        return (bron_type, doel_type) == ("business-actor", "business-role")
     return any(r == relatie and b in ("*", cb) and d in ("*", cd) for r, b, d in TOEGESTAAN if b != "zelfde")
 
 
@@ -348,6 +351,7 @@ LEZEN_WW = ("gebruikt", "raadpleegt", "toetst", "beoordeelt", "controleert", "le
 TRIGGER_WW = ("leidt tot", "zet in gang", "start", "is aanleiding voor", "wordt gevolgd door")
 TRIGGER_OMGEKEERD = ("volgt op", "is het gevolg van")
 STROOM_WW = ("levert aan", "geeft door aan", "stuurt naar", "draagt over aan")
+VERVULLEN_WW = ("vervult", "treedt op als", "fungeert als", "is aangewezen als", "neemt de rol")
 
 
 def _bevat(werkwoord: str, lijst) -> bool:
@@ -382,8 +386,12 @@ def van_bron(bron_type: str, doel_type: str, werkwoord: str) -> dict:
         return uit("composition", "samenstelling")
     if (_bevat(w, DEEL_GEHEEL_WERKWOORDEN) and cb != "gedrag") or (bron_type == "product" and cd in ("gedrag", "passief")):
         return uit("aggregation", "deel-geheel")
-    if cb == "actief" and cd in ("actief", "gedrag") and doel_type != "business-interface":
-        return uit("assignment", "partij voert uit of vervult")
+    if cb == cd == "actief":
+        if _bevat(w, VERVULLEN_WW):
+            return uit("assignment", "actor vervult rol")
+        return uit("association", f"'{w}' tussen partijen is geen toewijzing; associatie", gericht=True)
+    if cb == "actief" and cd == "gedrag":
+        return uit("assignment", "partij voert uit")
     if cb == "gedrag" and cd == "passief" and bron_type != "business-event":
         return uit("access", "gedrag gebruikt of maakt een object", toegang=toegang_van(w))
     if cb == "passief" and cd == "gedrag" and doel_type != "business-event":
@@ -404,14 +412,21 @@ def van_bron(bron_type: str, doel_type: str, werkwoord: str) -> dict:
     return uit("association", "geen specifiekere relatie herkend", gericht=True)
 
 
-def _begrippen_uit_assessment(assessment: dict) -> dict[str, dict]:
-    """begrip (kleine letters) → uitkomst + element-id (bestandsnaam van het doel) uit de ASSESS-voorstellen."""
+def _begrippen_uit_assessment(assessment: dict, wiki_root: Path = WIKI_ROOT) -> dict[str, dict]:
+    """begrip (kleine letters) → uitkomst + element-id (bestandsnaam van het doel) uit de ASSESS-voorstellen.
+
+    Een element-id alleen als het doel een elementpagina is; een begrip dat verhuist (uitkomst element, doel de
+    begrippenlijst) krijgt in deze run geen pagina en dus geen id.
+    """
+    mappen = [d["dir"].rstrip("/") + "/" for d in gam_gemeen.element_types(gam_gemeen.wiki_yaml(wiki_root)).values()]
     index = {}
     for v in assessment.get("voorstellen", []):
         b = v.get("beoordeling") or {}
         u = b.get("uitkomst")
         if b.get("begrip") and u:
-            index[b["begrip"].strip().lower()] = {**u, "id": Path(v["doel"]).stem if u["soort"] == "element" else None}
+            elementpagina = u["soort"] == "element" and any(v["doel"].startswith(m) for m in mappen)
+            index[b["begrip"].strip().lower()] = {**u, "id": Path(v["doel"]).stem if elementpagina else None,
+                                                  "doel": v["doel"]}
     return index
 
 
@@ -423,7 +438,7 @@ def uit_bronnen(assessment: dict, wiki_root: Path = WIKI_ROOT) -> tuple[list[Kan
     begrip; is het geen element (buiten scope, geen element, conflict, herkend), dan vervalt de relatie.
     Geeft (kandidaten, vervallen).
     """
-    begrippen = _begrippen_uit_assessment(assessment)
+    begrippen = _begrippen_uit_assessment(assessment, wiki_root)
     bestaand = {}
     for el in gam_gemeen.elementen(wiki_root):
         bestaand[el.id] = bestaand[str(el.meta.get("naam", "")).lower()] = (el.id, el.meta.get("archimate_type", ""))
@@ -434,6 +449,8 @@ def uit_bronnen(assessment: dict, wiki_root: Path = WIKI_ROOT) -> tuple[list[Kan
         if u is None:
             gevonden = bestaand.get(sleutel) or bestaand.get(naam.strip())
             return (gevonden, "") if gevonden else (None, f"'{naam}' is geen beoordeeld begrip of bestaand element")
+        if u["soort"] == "element" and u["id"] is None:
+            return None, f"'{naam}' krijgt in deze run geen elementpagina (doel {u['doel']})"
         if u["soort"] == "element":
             return (u["id"], u["archimate_type"]), ""
         if u["soort"] == "eigenschap" and u.get("genoemd_begrip") and diepte < 3:

@@ -99,6 +99,9 @@ def test_archimate_toets():
     assert not relaties.toegestaan("composition", "business-object", "business-process")
     assert not relaties.toegestaan("specialization", "business-actor", "business-role")
     assert not relaties.toegestaan("assignment", "business-object", "business-process")
+    assert relaties.toegestaan("assignment", "business-actor", "business-role")
+    assert not relaties.toegestaan("assignment", "business-role", "business-role")
+    assert not relaties.toegestaan("assignment", "business-actor", "business-actor")
 
 
 def test_markdown_rijen_en_teruglezen_met_inkomend(wiki):
@@ -142,6 +145,10 @@ def test_fouten_in_relatietabel(wiki):
     ("business-object", "business-object", "maakt deel uit van", ("aggregation", True, None)),
     ("contract", "business-object", "is een", ("specialization", False, None)),
     ("business-object", "business-object", "hoort bij", ("association", False, None)),
+    ("business-actor", "business-role", "vervult", ("assignment", False, None)),
+    ("business-actor", "business-role", "benoemen", ("association", False, None)),
+    ("business-role", "business-role", "waarschuwt", ("association", False, None)),
+    ("business-actor", "business-actor", "stellen ter beschikking aan", ("association", False, None)),
 ])
 def test_van_bron(bron, doel, werkwoord, verwacht):
     a = relaties.van_bron(bron, doel, werkwoord)
@@ -178,6 +185,18 @@ def test_uit_bronnen_lost_op_tilt_op_en_laat_vervallen(wiki):
     assert (opgetild.bron, opgetild.relatie, opgetild.toegang) == ("aanslag-opleggen", "access", "schrijven")
     assert "opgetild" in opgetild.toelichting
     assert [v["naar"] for v in vervallen] == ["Rechtvaardige heffing"]
+
+
+def test_uit_bronnen_verhuizend_begrip_krijgt_geen_element_id(wiki):
+    assessment = {"voorstellen": [
+        _voorstel("Verklaring", "element", "business-object", "bedrijfsarchitectuur/bedrijfsobjecten/tv/bd/verklaring.md", relaties_=[
+            {"van": "Verklaring", "werkwoord": "wordt gevoegd bij", "naar": "Akte", "bronnen": ["2026-overheid-gemeentewet"]},
+        ]),
+        _voorstel("Akte", "element", "business-object", "begrippen/o.md"),
+    ]}
+    kandidaten, vervallen = relaties.uit_bronnen(assessment, wiki)
+    assert kandidaten == []
+    assert "geen elementpagina" in vervallen[0]["reden"] and "begrippen/o.md" in vervallen[0]["reden"]
 
 
 def test_combineer_bevestigt_ggm_relatie_met_bron(wiki):
