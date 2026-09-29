@@ -42,6 +42,10 @@ Bij tegenstrijdigheid: repository-veiligheidsregels > wiki-Rules > Skill-instruc
 - State staat in `.work/runs/<run-id>/` (gitignored). Dat is het kladblok; het wordt
   na afronding automatisch opgeruimd (`llmwiki workspace-check --fix`), nooit door het Model.
 
+## Schrijfwijze
+
+- Nooit een harde regelovergang binnen een zin of alinea in Markdown of wikitext: een alinea, een lijstitem of een tabelrij staat op één regel; de kolombreedte laat je over aan de viewer. Regelovergangen alleen waar ze betekenis hebben: tussen alinea's, lijstitems, tabelrijen, koppen, frontmatter-velden en in codeblokken.
+
 ## Grenzen
 
 - Gedeelde Skills in `.agents/skills/` bevatten geen kennis van één specifieke wiki en
