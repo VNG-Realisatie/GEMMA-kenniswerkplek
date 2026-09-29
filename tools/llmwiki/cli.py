@@ -34,6 +34,26 @@ def cmd_lint(args) -> int:
     return 0
 
 
+def cmd_ontvouw(args) -> int:
+    from . import markdown
+
+    repo_root = _repo_root()
+    paden = [Path(p).resolve() for p in args.paden] if args.paden else markdown.te_ontvouwen(repo_root)
+    gewijzigd = []
+    for pad in paden:
+        oud = pad.read_text(encoding="utf-8")
+        nieuw = markdown.ontvouw(oud)
+        if nieuw != oud:
+            gewijzigd.append(pad)
+            if args.schrijf:
+                pad.write_text(nieuw, encoding="utf-8", newline="\n")
+    for pad in gewijzigd:
+        print(f"{'aangepast' if args.schrijf else 'te ontvouwen'}: {pad.relative_to(repo_root) if pad.is_relative_to(repo_root) else pad}")
+    if not gewijzigd:
+        print("llmwiki ontvouw: geen harde regelovergangen gevonden")
+    return 1 if gewijzigd and not args.schrijf else 0
+
+
 def cmd_validate(args) -> int:
     if args.schema == "page":
         wiki_root = _wiki_root(args)
@@ -527,6 +547,11 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_lint = sub.add_parser("lint", help="Controleer skills en afhankelijkheidsrichting")
     p_lint.set_defaults(func=cmd_lint)
+
+    p_ontvouw = sub.add_parser("ontvouw", help="Verwijder harde regelovergangen binnen alinea's en lijstitems (Markdown)")
+    p_ontvouw.add_argument("paden", nargs="*", help="Bestanden; standaard alle Markdown waarvoor de regel geldt")
+    p_ontvouw.add_argument("--schrijf", action="store_true", help="Pas de bestanden aan (anders alleen melden)")
+    p_ontvouw.set_defaults(func=cmd_ontvouw)
 
     p_validate = sub.add_parser("validate", help="Valideer een artefact tegen een schema")
     p_validate.add_argument("bestand")

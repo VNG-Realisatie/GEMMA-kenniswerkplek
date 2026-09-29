@@ -88,6 +88,14 @@ def run_lint(repo_root: Path) -> list[str]:
             if scope == "core" and dep_scope != "core":
                 errors.append(f"{path}: generieke skill mag niet afhangen van wiki-skill '{dep}'")
 
+    from . import markdown
+
+    for pad in markdown.te_ontvouwen(repo_root):
+        errors.append(
+            f"{pad.relative_to(repo_root)}: harde regelovergang binnen een alinea of lijstitem (AGENTS.md, Schrijfwijze); "
+            "herstel met 'llmwiki ontvouw --schrijf'"
+        )
+
     names = [meta["meta"].get("name") for meta in skills.values()]
     duplicates = {n for n in names if names.count(n) > 1}
     if duplicates:
