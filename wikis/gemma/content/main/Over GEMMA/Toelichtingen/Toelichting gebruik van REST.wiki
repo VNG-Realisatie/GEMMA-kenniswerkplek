@@ -1,0 +1,39 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Category:Werken met APIs]]
+[[Category:Common Ground]]
+[[Category:Toelichtingen]]
+__NOTOC__
+
+REST, of Representational State Transfer, is een architectuurstijl voor het ontwerpen van netwerkapplicaties. REST is bruikbaar om efficiënte, betrouwbare en schaalbare gedistribueerde systemen te ontwikkelen. Het basisidee van REST is dat servers en clients zich houden aan een aantal regels, om op een standaard manier gegevens over 'resources' uit te wisselen. Een resource is een bepaalde entiteit of set van gegevens die toegankelijk en manipuleerbaar is via een unieke aanduiding. Applicaties, services en API's kunnen de REST-regels volledig of gedeeltelijk toepassen. Als het gedeeltelijk gebeurt, wordt ook wel de aanduiding 'RESTful' in plaats van 'REST' gebruikt. Bij API's die volgens de REST-stijl werken ('REST-API's) worden gegevens vaak via een viertal operaties bewerkt: 'Create Read Update Delete' (CRUD). Daarvoor worden dan de HTTP-methoden 'POST GET PUT DELETE' gebruikt. Meer informatie over wat REST precies is, is te vinden in het proefschrift van de bedenker Roy Fielding. Deze is te vinden via [[wikipedia:REST|Wikipedia]]. 
+
+== NL API strategie en Design rules standaard ==
+De Nederlandse overheid streeft naar meer en beter gebruik van API's voor het uitwisselen van gegevens. De [https://docs.geostandaarden.nl/api/API-Strategie/ API Strategie van de Nederlandse overheid] bevat afspraken en standaarden over het ontwerpen, beveiligen, toegankelijk maken en gebruiken van API's. Bijvoorbeeld voor aspecten zoals authenticatie, autorisatie en logging. Het doel is om te zorgen dat API's zoveel mogelijk op een vergelijkbare manier werken en het gebruik van API’s voor afnemers zo makkelijk mogelijk wordt. De API strategie heeft als uitgangspunt dat er gebruik wordt gemaakt van API-technieken die breed in de markt worden ondersteund. Om die reden is er een voorkeur uitgesproken om gebruik te maken van REST (en het HTTP protocol en JSON gegevensformaat). Dit kan echter in de toekomst veranderen. 
+
+De [https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules REST-API Design Rules standaard] bevat richtlijnen en best practices voor het ontwerpen van REST API's. Deze regels helpen bij het maken van voorspelbare en eenvoudig(er) te gebruiken API's. De standaard moet worden toegepast bij het aanbieden van REST API’s voor het ontsluiten van overheidsinformatie en/of functionaliteit. 
+
+== Stand van zaken ==
+In lijn met de Nederlandse API strategie ontwikkelen overheidsorganisaties steeds vaker API's en gebruiken daarbij REST. Bijvoorbeeld om daarmee gebruik te kunnen maken van bepaalde brongegevens om beleidsuitgangspunten zoals 'data bij de bron' en 'scheiden van processen en data' te realiseren. De REST-architectuurstijl past goed bij de binnen de overheid bekende gegevensgerichte benadering. Daarbij staan gegevens centraal en ligt de nadruk op het beheer, de opslag, de toegang en de uitwisseling ervan. REST API's die CRUD-operaties ondersteunen zijn relatief eenvoudig te maken en bruikbaar voor basaal gebruik van (bron)gegevens. Ervaring met het ontwikkelen en gebruiken van REST API's in de afgelopen jaren heeft geleid tot meer inzicht in de voor- en nadelen ervan. Binnen de overheid is REST nog steeds de voorkeurstijl voor het ontwikkelen van API's, maar er is ook onderkend dat binnen bepaalde situaties andere stijlen mogelijk geschikter zijn. 
+
+== Beperkingen van REST ==
+REST is met name bedoeld voor schaalbare, eenvoudig te begrijpen en te implementeren oplossingen om resources over een netwerk toegankelijk te maken. maar net zoals voor andere stijlen, geldt ook voor REST dat er situaties zijn waarvoor het minder geschikt is. Bijvoorbeeld in  situaties waar:
+* Complexe relaties tussen resources moeilijk zijn uit te drukken met CRUD-operaties.
+* Gegevens in samenhang nodig zijn en er door gedistribueerde opslag meerdere verzoeken nodig zijn.
+* Performance een kritische factor vormt.
+* Realtime bidirectionele communicatie tussen applicaties of efficiënt uitwisselen van binaire data nodig is.
+* Het synchrone karakter van REST tot ongewenste afhankelijkheden leidt. 
+
+== Alternatieven voor REST ==
+Naast REST zijn ook andere benaderingen beschikbaar om bijvoorbeeld API's te ontwikkelen. Bekende voorbeelden daarvan zijn:  
+
+* Remote Procedure Call (RPC): computerprogramma's kunnen daarbij elders aanwezige functies uitvoeren alsof lokale functies zijn. Voorbeelden van RPC-implementaties zijn: SOAP (Simple Object Access Protocol), Java RMI (Remote Method Invocation) en gRPC (Google Remote Procedure Call).
+* GraphQL: een query-taal voor API's waarmee via 1 verzoek verschillende soorten gegevens op maat zijn te verkrijgen, zonder noodzaak voor meerdere verzoeken (wat bij REST snel het geval is). 
+* Event-driven: een stijl waarbij aanbieders informatie over plaatsgevonden gebeurtenissen publiceren en afnemers zich op ontvangst daarvan kunnen abonneren; uitwisseling vindt in de regel via asynchroon verwerkte berichten plaats.
+
+== De GEMMA en REST ==
+De GEMMA beschrijft de gemeentelijke referentiearchitectuur. Gebruikers van de GEMMA moeten, passend bij hun situatie, verschillende ontwerp- en realisatiekeuzes kunnen maken. De GEMMA schrijft dus niet voor dat bij de ontwikkeling van API's altijd de REST-stijl moet worden gebruikt.
+
+Gebruik van de REST-stijl past sluit aan bij het huidige overheidsbeleid rondom het ontwikkelen van API's.  Maar net zoals bij andere ontwerp- en realisatiekeuzes geldt ook hier: 'it depends'. Net als bij andere keuzes is het verstandig om vast te stellen of toepassen van REST het meest geschikt is binnen de specifieke context. Is dat het geval, dan is het verplicht om voor nieuwe API's de REST-API Design Rules standaard toe te passen. Blijkt het gebruik van REST minder of niet geschikt, dan kan beter worden gekozen voor gebruik van een andere stijl.

@@ -1,0 +1,48 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren, in bewerking
+|Wikibeheerder=Beheerder
+}}
+[[Categorie:Werken met GEMMA]]
+Op initiatief van gemeente Zwolle is de plaat "Gemeente Nederland” gemaakt. Voor de visualisatie is input geleverd in een serie workshops met afgevaardigden van de gemeenten Zwolle, Hilversum, Deventer, Kampen, Utrecht en de VNG. De visualisatie is gemaakt door ICTU met de [https://www.ictu.nl/diensten/dienstenoverzicht/interactieve-dynamische-enterprise-architectuur-idea/ IdEA-methode].
+
+<div style="float:right;padding-left:30px;padding-bottom:20px;">
+[[Bestand:Kijkwijzer-Gemeente-Nederland-image2.png|600px|Visualisatie IdEA Gemeente Nederland|link=]]
+</div>
+
+<big>'''Een hulpmiddel voor het gesprek met bestuurders'''</big><br>
+Deze visualisatie ondersteunt IV-collega’s binnen Nederlandse gemeenten bij het houden van strategische gesprekken met bestuurders en beslissers. Het helpt bij het doorgronden van de samenhang tussen:
+* Dienstverlening en wettelijke taken van een gemeente
+* De processen die nodig zijn om deze taken uit te voeren
+* De informatie die in die processen wordt gebruikt
+* De applicaties die het werk ondersteunen
+* De benodigde infrastructuur
+Daarnaast maakt de visualisatie het eenvoudiger om gebreken in de informatievoorziening (IV) bespreekbaar te maken en in kaart te brengen welke verbeteringen of ontwikkelingen nodig zijn.
+
+<big>'''Geen blauwdruk, maar een gespreksstarter'''</big><br>
+De visualisatie biedt geen volledig en actueel overzicht van alle ontwikkelingen. Wel biedt het houvast voor gesprekken over actuele vraagstukken en beleidsbeslissingen rondom de gemeentelijke informatievoorziening.
+
+Meer uitleg over de visualisatie en hoe je deze effectief inzet, vind je in de [[Kijkwijzer IdEA Gemeente Nederland]].
+
+<big>'''Download en gebruik de visualisaties'''</big><br>
+De plaat "Gemeente Nederland” is in groot formaat beschikbaar:
+* Printversie nodig? Download de [https://github.com/VNG-Realisatie/Gemeente-Nederland-visualisatie/blob/main/idEA%20Gemeente%20NL%20250304%20poster%20A0%20voor%20print.pdf?raw=true PDF-versie] 
+* Direct bekijken? Open de visualisatie in [[Media:IdEA-Gemeente-NL-250218-voor-web.png|groot formaat]]
+
+De plaat "Visie Nederlandse Raads- en Stateninformatievoorziening is in groot formaat beschikbaar:
+* Printversie nodig? Download de [https://github.com/VNG-Realisatie/Gemeente-Nederland-visualisatie/blob/main/idEA%20RIS%20250917%20poster%20A0%20voor%20printer.pdf PDF-versie]
+* Bespreken met een bestuurder? Download de [https://github.com/VNG-Realisatie/Gemeente-Nederland-visualisatie/blob/main/idEA%20Kijkwijzer%20RIS%20250917.pdf kijkwijzer]
+
+
+
+
+
+
+
+
+<big>'''Ondersteunende video voor uitleg'''</big>
+
+Aan de hand van de visualisatie is een ondersteunende video gemaakt in de stijl van IdEA. De video helpt bij het uitleggen hoe de verschillende ICT-lagen de gemeente ondersteunt in haar bedrijfsvoering. 
+De video wordt niet ondersteund met een uitleg. Deze kan via de kijkwijzer zelf gemaakt worden. <br>
+Op aanvraag kan de video in twee formaten opgevraagd worden: HD of 4K. Door de grootte van de bestanden kunnen deze niet als download beschikbaar gesteld worden.<br>
+{{#widget:YouTube|id=90apwVCAD9g|height=570|width=960}}

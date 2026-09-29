@@ -1,0 +1,29 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder GEMMA
+}}[[Categorie:Doelgroepen]]
+__NOTOC__
+{{DISPLAYTITLE: Functioneel beheerder}} <!-- {{DISPLAYTITLE: {{SUBPAGENAME}}}}-->
+{{Persona/indeling|Ik ben de intermediair tussen business en IT en ik houd mij bezig met het beheren van de informatievoorziening binnen mijn organisatie. Ik ben actief voor één domein. Ik heb inhoudelijke informatie nodig. Informatie die ik direct kan toepassen in mijn werk is het fijnste. 
+|Ik ben alleen bekend met het onderdeel van VNG waar mijn onderwerp wordt behandeld. Ik ben actief betrokken in een klankbordgroep en in het forum van mijn domein. Ik ontvang van de VNG ook nieuwsbrieven, die ik scan voor relevante informatie over mijn onderwerp of voor een collega. En ik ontvang e-mails over updates van het forum, GitHub of GEMMA.
+
+Ik gebruik architectuurproducten voor het raadplegen van businessdomeinkennis, maar ook om te begrijpen hoe de applicaties die mijn organisatie gebruikt, aansluiten op de landelijke voorzieningen.
+Ook vind ik het belangrijk dat ik in staat ben om een organisatievraagstuk te kunnen vertalen naar een gebruiksvriendelijke oplossingsrichting.
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = Ik gebruik de volgende producten
+* [[Bedrijfsarchitectuur]]
+* [[Informatie-architectuur]]
+
+De GEMMA gebruik ik om een beeld te krijgen van hoe onze applicaties aansluiten op ketenprocessen. 
+Zo weet ik hoe mijn applicaties worden toegepast binnen een gemeente.
+* [[Referentiecomponenten en applicatieservices]]
+* [[GEMMA standaardenlijst]]
+* [[Werken onder architectuur]]
+|titel2  = Meer informatie
+|inhoud2 = Welke software is beschikbaar en welke applicaties gebruiken (andere) gemeenten?
+* [https://www.softwarecatalogus.nl/ GEMMA Softwarecatalogus]
+|hoogte = 420px
+}}
+}}

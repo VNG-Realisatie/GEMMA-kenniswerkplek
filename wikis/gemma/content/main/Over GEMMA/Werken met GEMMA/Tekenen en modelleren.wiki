@@ -1,0 +1,75 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder
+}}
+[[Category:Werken met GEMMA]]
+
+Er zijn verschillende manieren om architectuur te beschrijven. Bijvoorbeeld met behulp van teksten en/of verschillende soorten visualisaties. In relatie tot architectuur wordt vaak gesproken over 'modelleren'. Hierna wordt toegelicht wat de verschillen tussen 'tekenen' en 'modelleren' zijn, en wanneer gebruik van een van beide de voorkeur verdient.
+
+Onder 'tekenen' verstaan we: 'het maken van afbeeldingen met behulp van lijnen, vormen en structuren'. Het doel ervan is om visualisaties te maken van een concept. Bijvoorbeeld om met behulp daarvan er beter over te kunnen communiceren of om het ontwerp van een systeem te ondersteunen.
+
+Onder 'modelleren' verstaan we: 'Het maken van een representatie van een systeem(onderdeel) met behulp van modelmatig geordende elementen'. Modelleren is een manier om op een gestructureerde manier een systeem (of onderdeel daarvan) te beschrijven. Bijvoorbeeld om zo meer inzicht te krijgen en betere doorontwikkeling mogelijk te maken. Een eenmaal ontwikkeld model is voor meerdere doelen bruikbaar. Een daarvan is om, vergelijkbaar als bij tekenen het doel is, om visualisaties van iets te maken.
+
+Onderstaande tabel toont een aantal aspecten waarin tekenen en modelleren van elkaar verschillen:
+{| class="wikitable"
+|
+|'''Tekenen'''
+|'''Modelleren'''
+|-
+|Doelen
+|Ontwerp  en visualisatie voor communicatie
+|Ontwerp,  visualisatie, eenduidig beschrijven, analyse en hergebruik
+|-
+|Doelgroep
+|Niet-technische  belanghebbenden
+|Deskundigen  met architectuur-affiniteit
+|-
+|Wat
+|Voor een bepaald doel eenmalig maken van (toegankelijke) visualisaties
+|Voor meerdere doelen in een architectuurmodel vastleggen  van elementen en hun relaties
+|-
+|Vormen
+|Diagrammen,  tekeningen, grafieken en andere visuele hulpmiddelen
+|Een architectuurmodel gemaakt met een architectuurbeschrijvingstaal zoals ArchiMate  
+|-
+|Tools
+|Tekentools, Powerpoint, Infographic-tools
+|Architectuurtool zoals Archi, BizzDesign, etc.
+|}
+Zowel tekenen als modelleren hebben hun waarde bij het beschrijven van architectuuraspecten. Onderstaande tabel toont enkele voordelen van zowel tekenen als modelleren. 
+{| class="wikitable"
+|'''Tekenen'''
+|'''Modelleren'''
+|-
+|Gemakkelijk
+|Eenduidige  vastlegging en betekenis
+|-
+|Veel vrijheid
+|Consistentie  te borgen
+|-
+|Eenvoudig
+|(Ook) complexiteit  te beschrijven
+|-
+|Aantrekkelijke  vormgeving te maken
+|Model is herbruikbaar  en uitbreidbaar
+|-
+|Goed op  doelgroep af te stemmen
+|Door meer  mensen te gebruiken
+|}
+Het antwoord op de vraag wanneer moet worden gekozen voor tekenen of modelleren luidt (net zoals bij veel andere architectuurvraagstukken): 'it depends'. 
+
+De keuze hangt af van factoren zoals: 
+
+* doel ('is alleen visualiseren voldoende?')
+* ambitie ('gaat het om een globaal of gedetailleerd beeld?')
+* doelgroep ('bestuurders zonder affiniteit met architectuur of architecten?')
+* complexiteit ('is de essentie in 1 plaatje te vatten?')
+* gebruiksduur ('is de architectuurbeschrijving vaker nodig en aan verandering onderhevig?')
+* capaciteit ('is er capaciteit om een architectuurmodel te maken en onderhouden?')
+* tooling ('is er de beschikking over een ondersteunende architectuurtool?').
+
+
+Voor ontwikkeling en onderhoud van de GEMMA wordt intensief gebruik gemaakt van architectuurmodellen, gemaakt met de architectuurbeschrijvingtaal Archimate.  De pagina '[[ArchiMate modelleren]]'  licht toe welke architectuurmodellen de GEMMA kent en hoe ze zijn te gebruiken. Om de GEMMA beter toegankelijk te maken voor niet-architecten zullen op GEMMA Online in de toekomst ook meer visualisaties worden gepubliceerd.
+
+De GEMMA thema- en projectarchitecturen gebruiken, naast getekende afbeeldingen, ook architectuurmodellen. De thema-architectuur Common Ground kende aanvankelijk bijvoorbeeld een afbeelding die het daar gebruikte vijflaagsmodel visualiseerde. Om de lagen en functies binnen het model beter te kunnen beschrijven is het [[Common Ground vijflaagsmodel]] nu met behulp van Archimate ontwikkeld.  De visualisatie daarvan, zoals zichtbaar op GEMMA Online, wordt automatisch vanuit het model gegenereerd. Het is de bedoeling om belangrijke visualisaties binnen de GEMMA zoveel mogelijk vanuit het onderliggende GEMMA architectuurmodel te genereren.

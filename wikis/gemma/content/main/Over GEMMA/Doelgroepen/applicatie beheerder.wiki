@@ -1,0 +1,22 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}[[Categorie:Doelgroepen]]{{DISPLAYTITLE: Applicatie beheerder}}
+{{Persona/indeling|Als applicatie beheerder beheer ik diverse applicaties en verhelp problemen. Ik zoek naar de oorzaak van een probleem om deze in de toekomst te voorkomen. Daarnaast voeg ik wensen van gebruikers toe door deze wens voor te leggen aan de leverancier of een ontwikkelaar.|
+Als functioneel beheerder gebruik ik architectuurproducten voor het raadplegen van businessdomeinkennis, maar ook om te begrijpen hoe de applicaties die mijn organisatie gebruikt, aansluiten op de landelijke voorzieningen.
+}}
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = Ik gebruik de volgende producten
+* [[Bedrijfsarchitectuur | Bedrijfsarchitectuur ]]
+* [[Informatie-architectuur|GEMMA Informatie- en applicatie-architectuur]]
+|titel2  = Meer informatie
+|inhoud2 = De GEMMA gebruik ik om een beeld te krijgen van hoe onze applicaties aansluiten op ketenprocessen. 
+Zo weet ik hoe mijn applicaties worden toegepast binnen een gemeente.
+Ook vind ik het belangrijk dat ik in staat ben om een organisatievraagstuk te kunnen vertalen naar een gebruiksvriendelijke oplossingsrichting.
+* [[Werken onder architectuur]]
+* [[GEMMA standaardenlijst]]
+* [https://www.softwarecatalogus.nl/ GEMMA Softwarecatalogus]
+|hoogte = 450px
+}}

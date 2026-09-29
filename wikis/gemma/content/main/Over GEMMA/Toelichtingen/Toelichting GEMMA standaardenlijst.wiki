@@ -1,0 +1,105 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Category:Standaarden paginas]]
+[[Category:Toelichtingen]]
+__TOC__
+Het juist toepassen van standaarden is essentieel om gemeenten in staat te stellen informatie veilig en betrouwbaar uit te wisselen binnen de ketens waarin ze werken. Standaarden zorgen voor de noodzakelijke interoperabiliteit tussen informatiesystemen waardoor gemeenten effectiever en efficiënter hun processen, dienstverlening en gegevenshuishouding kunnen uitvoeren.
+
+Binnen de GEMMA is een set met gemeentelijke standaarden benoemd, de [[GEMMA standaardenlijst]]. 
+
+De GEMMA ondersteunt gemeenten bij het opstellen van een bestek (welke standaarden zijn onderdeel van mijn eisen en wensen) en geeft (nieuwe) leveranciers inzicht in de te realiseren standaarden per referentiecomponent voor o.a. koppelvlakken. Met dit inzicht wordt de adoptie en de implementatie van standaarden bevorderd. 
+
+De GEMMA is voor leveranciers een normenkader waaraan de gemeentelijke toepassingen moeten voldoen. 
+
+=== De GEMMA standaardenlijst ===
+In de GEMMA wordt [[GEMMA standaardenlijst|een lijst bijgehouden met standaarden]] die door gemeenten gebruikt worden of moeten worden gebruikt. 
+
+==== Welke standaarden staan op de lijst====
+De standaardenlijst bevat de standaarden die gebruikt worden bij de realisatie van de gemeentelijke informatievoorziening. Er wordt onderscheid gemaakt tussen standaarden waarvoor op basis van een formele grondslag een gemeente verplicht is de standaard - waar relevant - te gebruiken en standaarden waarvan het gebruik wordt aanbevolen, zonder formele grondslag. 
+
+'''Met formele grondslag'''
+
+Een standaard is verplicht voor een gemeente als één van de onderstaande grondslagen geldt:
+
+*De standaard is een richtlijn voor de realisatie van applicatiefunctionaliteit. 
+* De standaard komt voor in het [https://www.forumstandaardisatie.nl/publicaties/veelgestelde-vragen 'Pas toe of leg uit'-regime] van het Forum Standaardisatie
+** Bijvoorbeeld: de StUF-standaard staat op de pas-toe-of-leg-uit lijst. Hiervan afgeleid geldt de verplichting voor de GEMMA berichtstandaarden en gegevensstandaarden;
+* Er geldt een wettelijke verplichting tot het gebruik van een voorziening, zoals bijvoorbeeld de wet basisregistraties of SUWI. Hieruit volgt het verplicht gebruik van de standaard die het koppelvlak van de voorziening/basisregistratie specificeert. 
+
+'''Zonder formele grondslag'''
+
+Voor standaarden zonder formele grondslag zoals hierboven beschreven, wordt bijgehouden waarom de standaard aanbevolen is. 
+* Standaard wordt gebruikt in een keten waar gemeenten in participeren (landelijke en sectorale voorzieningen)
+* Standaarden wordt gebruikt in een gemeentelijk taakgebied, bijvoorbeeld VISI (bouw), Referentie Informatiemodel Handhaving (RIHa), etc …
+
+'''Weggelaten standaarden'''
+
+De standaardenlijst wordt voornamelijk gebruikt in de GEMMA softwarecatalogus, waar leveranciers registreren welke standaarden zij ondersteunen. Om de lijst van standaarden in de softwarecatalogus overzichtelijk te houden voor gemeenen en leveranciers, is er voor gekozen de lijst te beperken tot de meest relevante standaarden voor de realisatie van applicaties. Om dit zo concreet mogelijk te maken gelden de onderstaande uitsluitingscriteria.
+
+* Standaarden gericht op de techniek cq infrastructuur gebruikt door informatievoorziening worden niet opgenomen. 
+:* Voorbeeld hiervoor is de standaard DNSSEC van de pas-toe-of-leg-uit lijst. Deze standaard moet geïmplementeerd zijn in de onderliggende infrastructuur (het OS en de gebruikte DNS-services), een applicatie maakt hier vervolgens gebruik van;
+* In de standaardenlijst wordt alleen de meest specifieke (ook genoemd scherpe) standaard opgenomen. Onderliggende - generiekere standaarden - worden immers al voorgeschreven door de specifieke standaard.
+:* Een standaard kan gebaseerd zijn op één of meerdere onderliggende standaarden. Indirect wordt dan gebruikt gemaakt van deze onderliggende standaard. Ter illustratie hieronder een voorbeeld met de standaard zaak- en documentservices (van KING) die gebaseerd is op meerdere, telkens generiekere standaarden:
+::* Zaak- en documentservices is gebaseerd op
+:::* de horizontale StUF standaarden StUF ZKN, StUF onderlaag en StUF protocolbindingen
+:::* de StUF onderlaag is weer gebaseerd op de internationale standaard XML
+:::* de StUF protocolbindingen standaardiseren hoe gebruik wordt gemaakt van de onderliggende transportprotocolstandaarden zoals SOAP, HTTP(S).
+::* Alleen de standaard Zaak-documentservices wordt in dit geval opgenomen in de standaardenlijst.
+* Standaarden waarvan de adoptiegraad inmiddels 100% is, worden worden wel opgenomen op de lijst, maar worden niet meer actief getoond aan leverancier en gemeenten. Oftewel standaarden waarvoor geldt dat deze in alle gemeentelijke software is ingebouwd. Een voorbeeld hiervan is de standaard SEPA, inmiddels zijn er geen financiële pakketten meer te verkrijgen die niet voldoen aan SEPA.
+
+==== Wanneer moet een standaard worden gebruik ====
+In de [[Informatie-architectuur]] is gedefinieerd voor welk referentiecomponent een standaard verplicht of aanbevolen is. Door standaarden op deze wijze onderdeel te maken van de GEMMA, is expliciet gemaakt voor welk type toepassingen bepaalde standaarden vereist zijn. Dit biedt vele mogelijkheden bij het verder ondersteunen van gemeenten in het verkrijgen van de benodigde interoperabiliteit tussen pakketten en met ketens.
+
+De modellering hiervan is vastgelegd in het [[GEMMA kennismodel]]. Dit is nog een slag dieper uitgewerkt op de pagina 
+[[GEMMA_modellering#GEMMA_modellering_beperking]].
+
+==== Classificaties van standaarden ====
+De standaarden op de standaardenlijst worden geclassificeerd voor een beter overzicht en om het beheer van de standaarden te ondersteunen.
+
+'''Verplicht of aanbevolen'''
+
+Voor elke referentiecomponent wordt bepaald welke standaardversie verplicht en welke standaardversie aanbevolen is. Een standaard moet aan onderstaande criteria voldoen om verplicht gesteld te kunnen worden:
+* grondslag, in de GEMMA standaardenlijst is gedefinieerd dat de standaard op 
+** de '[https://www.forumstandaardisatie.nl/open-standaarden/verplicht Pas toe leg uit]' lijst staat,
+** een wettelijke grondslag heeft of 
+** is [https://vng.nl/artikelen/overzicht-gemeentelijke-standaarden vastgesteld] door het bestuur van de VNG
+* en compliancy - een leverancier kan middels een testrapport aantonen dat aan de standaard voldaan is
+* of conformiteit - een leverancier stelt een schriftelijke verklaring beschikbaar dat aan de standaard voldaan wordt. 
+** De verklaring wordt bij voorkeur door een derde partij afgegeven
+** Leverancier stelt de verklaring zelf op. De gemeente kan rechten verlenen aan de verklaring
+** Eisen aan verklaring moeten verder uitgewerkt worden.
+
+Standaarden die niet aan deze criteria voldoen worden als 'aanbevolen' aangemerkt.
+
+'''Bouw- en testbaarheid van een standaard (gradaties)'''
+
+Standaarden kunnen als producten worden getypeerd in eindproducten, halffabrikaten, grondstoffen en gegevensstandaarden. Deze typering is een indicatie wat de benodigde inspanning is om op basis van de specificatie van de standaard tot een werkende koppeling te komen. 
+
+Standaarden (of eigenlijk specificaties) kunnen als producten worden getypeerd in [[Gradaties_van_interoperabiliteit|eindproducten, halffabrikaten, grondstoffen en gegevensstandaarden]]. Deze typering is een indicatie wat de benodigde inspanning is om op basis van de specificatie van een standaard tot een werkende koppeling te komen.
+
+Bij eindproduct-standaarden zijn de functionaliteit, de (web)services en rolverdeling tussen systemen gedetailleerd en scherp gedefinieerd. Juiste toepassing is preventief goed testbaar en daardoor is de voorspelbaarheid op goed functioneren hoog.
+
+Voor halffabrikaat-standaarden dient de opdrachtgever aanvullende specificaties toe te voegen. Voor grondstof-standaarden moeten nog meer specificaties en activiteiten worden uitgevoerd om interoperabiliteit te kunnen realiseren. Dit vergt specialistische kennis. 
+
+De classificatie wordt gebruikt als indeling in de Softwarecatalgous en bij het bepalen of standaard verplicht of aanbevolen kan zijn. 
+
+* Grondstof- en eindproductstandaarden zijn hebben specificatie die als basis kan dienen voor een  compliancy-instrument waarmee compliancy kan worden aangetoond.
+* Halffabricaat standaarden vereisen extra specificaties, waardoor compliancy op het halffabrikaat-standaard alleen niet aantoonbaar is.
+* Voor een gegevensstandaarden kan een leverancier verklaren voor welke delen van de standaard zijn toepassing conform is.
+
+=== Waarvoor worden de GEMMA standaardenlijst gebruikt ===
+
+==== Softwarecatalogus ====
+In de [https://www.softwarecatalogus.nl/ softwarecatalogus] registreren leveranciers welke pakketten zij leveren aan gemeenten. Per pakket wordt geregistreerd welke standaarden worden ondersteund en wordt aangegeven of compliancy aan deze standaarden met een testrapport aangetoond kan worden.
+
+De GEMMA definieert welke standaarden per referentiecomponent verplicht en aanbevolen zijn, de softwarecatalogus laat dit aan leveranciers zien en vraagt om voor de verplichte standaarden compliancy aan te tonen door een testrapport beschikbaar te stellen.
+
+Gemeenten die een marktoriëntatie voor een nieuw pakket uitvoeren, kunnen de inkoopondersteuning van de softwarecatalogus gebruiken om een paragraaf met verplichte en aanbevolen standaarden genereren. De paragraaf wordt vervolgens opgenomen in de bestektekst.
+
+==== GIBIT ==== 
+Onderdeel van de  Gemeentelijke Inkoopvoorwaarden bij IT ([https://www.kinggemeenten.nl/secties/ict-opdrachtgeverschap/producten/uniforme-ict-inkoopvoorwaarden GIBIT]) zijn de Gemeentelijke ICT Kwaliteitsnormen, waarmee onder andere afspraken staan over de toepassing van standaarden, het aantonen van compliancy en blijven voldoen aan nieuwe versies van standaarden. 
+
+Het gebruik van de GEMMA als normenkader vereist dat van iedere opgenomen standaard traceerbaar is waarom deze is voorgeschreven. Onderdeel van de norm is ook de tijdlijn met de periode waarin een standaardversie voor pakketten geldig is.

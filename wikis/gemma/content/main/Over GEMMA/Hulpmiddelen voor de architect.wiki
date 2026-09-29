@@ -1,0 +1,24 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+}}[[Categorie:Over GEMMA]] [[Categorie:Werken met GEMMA]] 
+__notoc__
+Architecten kunnen verschillende soorten hulpmiddelen gebruiken. Welk hulpmiddel het meest geschikt is, wordt bepaald door bijvoorbeeld:   
+
+* De doelgroep: bijvoorbeeld architecten, bestuurders of ontwikkelaars.
+* Het doel: bijvoorbeeld ontwerpen, informeren of beslissen.
+* Het niveau van uitwerking: bijvoorbeeld globaal, samenhangend of gedetailleerd.
+
+Beschrijven van architectuur kan op allerlei manieren gebeuren. Vaak gebeurt het via tekst op web-pagina's of in documenten. Het is soms lastig om alles helder in tekst te beschrijven. Dan kan visualisatie, via afbeeldingen, verhelderend werken. Dit kan variëren van eenvoudige plaatjes tot complexe architectuurdiagrammen. [[Tekenen en modelleren]] licht toe wat het verschil is tussen 'tekenen' en 'modelleren' en wanneer je het beste voor de een of de ander kunt kiezen. Hieronder staan een aantal hulpmiddelen voor een architect. Het is aan de architect om daaruit, binnen de context passende, keuzes te maken. 
+
+== idEA-platen ==
+Een vaak voorkomende uitdaging voor architecten is om goed in gesprek te komen met bestuurders en managers. Een hulpmiddel daarbij zijn de zogenaamde 'idEA-platen'.  Deze visualisaties zijn bedoeld als 'praatplaat' de samenhang tussen beleid en informatievoorziening inzichtelijk en bespreekbaar te maken. Het is de bedoeling dat bestuurders, beleidsmakers en IT’ers hetzelfde beeld gaan delen en samen tot goede keuzes komen. De pagina [[Toelichting IdEA-platen]] geeft meer informatie over idEA-platen en noemt een aantal bestaande platen waar gemeenten gebruik van kunnen maken.    
+
+== Architectuurtools ==
+Voor het beschrijven van architectuur zijn kantoorautomatisering-tools zoals MsWord en Powerpoint soms voldoende. Voor meer uitgewerkte beschrijvingen en visualisaties zijn gespecialiseerde producten beschikbaar, zoals [https://www.drawio.com/ draw.io], [https://www.lucidchart.com/ lucidchart] of [https://www.microsoft.com/nl-nl/microsoft-365/visio/flowchart-software Viso]. Om architectuur gestructureerd te beschrijven en (her)gebruiken zijn specifieke architectuurtools beschikbaar. Die tools kunnen verschillende aspecten van elkaar verschillen. Bijvoorbeeld qua functionaliteit, ondersteunde standaarden, prijsstelling en beschikbaarheid als open of closed source software. Gelet op de rol van een architectuurtool en de tijd die het kost om er goed mee te leren werken is het verstandig om weloverwogen een keuze te maken uit beschikbare tools. Een aantal veelgebruikte tools zijn: [https://www.archimatetool.com Archi], [http://www.bizzdesign.nl BiZZdesign Architect], [https://www.valueblue.nl/bluedolphin/ Blue Dolphin], [https://www.dragon1.com/nl Dragon1], [http://www.mavim.nl Mavim] en [http://www.sparxsystems.com Sparx Enterprise Architect]. 
+
+== ArchiMate ==
+Voor het via een tool beschrijven van architectuur is [https://www.opengroup.org/archimate-forum/archimate-overview ArchiMate] internationaal de defacto standaard. Met behulp van Archimate kan architectuur gestructureerd worden beschreven, geanalyseerd en gevisualiseerd. Vastgelegde informatie wordt beter beheersbaar en is duurzaam te onderhouden en herbruiken. Onder andere de GEMMA maakt intensief gebruik van Archimate. Ook steeds meer gemeenten doen dit bij het maken van hun enterprise-architectuur of project-architecturen. [[Toelichting Archimate]] beschrijft meer in detail wat Archimate precies is, hoe het gebruik binnen de GEMMA er uit ziet en hoe gemeenten er gebruik van kunnen maken.  
+
+== GEMMA Softwarecatalogus ==
+De  [https://www.softwarecatalogus.nl/ GEMMA Softwarecatalogus] is een online platform dat gemeenten helpt bij het in kaart brengen en vergelijken van hun applicatielandschap in relatie tot de GEMMA. Gemeenten kunnen hun gebruikte software registreren, deze vergelijken met andere gemeenten en contact leggen met gemeenten met een vergelijkbaar of interessant productportfolio. Daarnaast kunnen ze de catalogus gebruiken voor marktoriëntatie, het opstellen van een Programma van Eisen en het beoordelen van offertes VNG. De catalogus bevat zowel publieke als tussen gemeenten gedeelde informatie en is gekoppeld aan [https://www.gemmaonline.nl/index.php/Overzicht_alle_referentiecomponenten GEMMA referentiecomponenten].  Daarmee kan het applicatielandschap van een gemeente eenvoudig worden geplot op de GEMMA-informatiearchitectuur. Via een [https://www.softwarecatalogus.nl/Handleiding%20koppeling%20architectuurtools ArchiMate-export] kan een gemeente gegevens inlezen in een eigen architectuurtool. De informatie kan bijvoorbeeld dienen als basis voor een gemeentelijke enterprise-architectuur of voor een projectmodel binnen een [[Toelichting Project Start Architectuur|Programma Start Architectuur]].

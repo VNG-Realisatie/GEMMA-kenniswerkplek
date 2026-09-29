@@ -1,0 +1,61 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}
+In de GEMMA nieuwsbrief wordt geschreven over de GEMMA, de softwarecatalogus en verwezen naar interessante stukken van andere referentiearchitecturen.  De nieuwsbrief wordt 1x per kwartaal verstuurd. Wil je niks missen, meld je dan aan voor de [https://formulieren.vngrealisatie.nl/nieuwsbrief-anders GEMMA Nieuwsbrief]. 
+
+== Overzicht van nieuwsbrieven ==
+Hieronder vindt u de nieuwsbrieven die in de afgelopen jaren zijn verstuurd met daarachter één van de onderwerpen uit de nieuwsbrief. Door in het overzicht op een maand te klikken opent u de nieuwsbrief en ziet u welke andere onderwerpen er behandeld zijn.
+{{Nieuwsbrief
+|jaar = 2026
+| inhoud = 
+* [https://tracking.vng.nl/w/3016/821346/b7ed3a7d0afa9902e88cf69584de5743 Mei] - Uitkomsten inventarisatie StUF-koppelvlakken, GEMMA Leergangen succesvol van start, GEMMA Procesarchitectuur pagina's opnieuw ingericht, Nieuwe patches StUF standaarden
+
+* [https://tracking.vng.nl/w/3016/726095/234925989b53309d7550b3239e533f22 Februari] - GEMMA-trainingen beschikbaar – inschrijven nu mogelijk!, Update ZGW: versie 1.6 en een blik vooruit, Word lid van de Community Beginnend Overheidsarchitecten
+}}
+
+{{Nieuwsbrief
+|jaar = 2025
+| inhoud = 
+* [https://tracking.vng.nl/w/3016/690878/af0a82ab228d1ec18026a8a921deadbe December] - GEMMA Leergangen 2026, De GEMMA voor meer digitale autonomie, Video van idEA-plaat Gemeente Nederland en Verborgen schatten op GEMMA Online: Toelichtingen.
+
+* [https://tracking.vng.nl/w/3016/654073/ee4b57601ab0e4feb23a07f75925a00f November] - Vernieuwde GEMMA-architectuurprincipes, Eerste resultaten vernieuwde procesarchitectuur online, GEMMA Online archiefwebsite, Eerste verbeteringen GEMMA Online doorgevoerd na ledentevredenheidsonderzoek
+
+* [https://tracking.vng.nl/w/3016/518108/420b1252455818cf53beb67b5123d7f8 Juli] - Eerste GEMMA Trainingen , Gebruikerstevredenheid GEMMA Online positief, Relatie tussen bedrijfsfuncties en bedrijfsobjecten, Doorontwikkeling van de GEMMA technische architectuur
+
+* [https://tracking.vng.nl/w/3016/479130/b3a53a248a4b767610a70e588a66bc2b Mei] - GEMMA Workshop, GEMMA release met GGM 2.2 en AI Component, Update: Inventarisatie StUF-standaarden
+}}
+
+{{Nieuwsbrief
+|jaar = 2024
+| inhoud = 
+* [https://tracking.vng.nl/w/3016/341805/9d7f4b371dd1c50ebcd8bdac9751a83e December] - Drie succesvolle GEMMA-toolbox workshops, Stand van zaken: doorontwikkeling GEMMA procesarchitectuur, Nieuwe thema-architectuur Eventoriëntatie
+
+* [https://tracking.vng.nl/w/3016/278871/e2f70892d8d55d0bb8f664115534a196 Oktober] - GEMMA Animatievideo, PSA voor gemeenten, Strategie bepalen voor StUF naar API’s en toolkit voor gemeenten
+
+* [https://tracking.vng.nl/w/3016/230417/31139991455a0b2fc27fb5db8a868c41 Juni] - GEMMA Procesarchitectuur wordt vernieuwd, Technisch architectuur in de GEMMA, Specificaties van standaarden verhuizen naar GitHub, Vernieuwing GEMMA Softwarecatalogus van start
+
+* [https://tracking.vng.nl/w/3016/160259/0cc72b51db1e7a2f470b5c1e42ea30d5 Maart] - Hoe werk je met de GEMMA?, Bedrijfsobjecten uit GGM opgenomen in de GEMMA en Samenhang PDC, UPL, zaaktypen en verwerkingsregister uitgelegd
+}}
+{{Nieuwsbrief
+|jaar = 2023
+| inhoud = 
+* [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=c3d194e4241735aa5cfb38c4a1092058&pxd=.webversion.source November] - Vernieuwd Common Ground vijflaagsmodel & Gebruikerstevredenheidsonderzoek levert een 7.3 op!
+* [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=f1223b516c0f2a1c27b25358fec286e8&pxd=.webversion.source Juli] - Vernieuwde domeinarchitectuur Fysieke leefomgeving, Gebruikertevredensheidsonderzoek
+* [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=b24a1c012ed1327fffd010451dd80e76&pxd=.webversion.source Maart] - Vernieuwing van de GEMMA(Online)
+* [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=57a77b8922bf7a5315828a5168b7582e&pxd=.webversion.source Januari] - Verbeteringen GEMMA (Online)
+}}
+{{Nieuwsbrief
+|jaar = 2022
+|inhoud = * [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=b80ea4672039dbd324a020f2911a640c&pxd=.webversion.source# Maart] - Verbeteren samenhang GEMMA en Common Ground
+* [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=b902dbc98a76d6bb0346775c54e453f4&pxd=.webversion.source# Januari] - Aansluiting Informatiekundige visie Common Ground en GEMMA Kennismodel
+}}
+{{Nieuwsbrief
+|jaar = 2021
+|inhoud =* [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=16e8679cceb1c2ec29bf75c86ab8f91f&pxd=.webversion.source# December] - Resultaten gebruikersonderzoek Softwarecatalogus 
+* [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=d71339d5c5cc96e239cf99ec1530cec7&pxd=.webversion.source# Oktober] - Informatiekundige visie Common Ground en Realisatieprincipes online
+* [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=f8c97f3e97369c507a613a83aa13545f&pxd=.webversion.source Juni] - Oplossingen Common Ground toegevoegd aan softwarecatalogus
+* [https://tracking.vng.nl/webversion.php?pxc=1240&account=3016&destination=7f425a2510931e1028aca7832b6f3f24&pxd=.webversion.source April] - Resultaten GEMMA Waarderingsonderzoek 
+}}
+[[Categorie:Over GEMMA]]

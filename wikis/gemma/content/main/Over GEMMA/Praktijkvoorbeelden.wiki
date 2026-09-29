@@ -1,0 +1,40 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+}}[[Categorie:Over GEMMA]] [[Categorie:Werken met GEMMA]] 
+__notoc__
+
+Een van de [[Tips voor de architect | tips voor architecten]] is om via praktijkvoorbeelden kennis uit te wisselen met andere gemeenten. Hoewel iedere gemeente uniek is zijn er ook veel overeenkomsten en kan er veel geleerd worden van elkaars ervaringen. 
+
+Praktijkvoorbeelden zijn een waardevolle aanvulling op de inhoud van de GEMMA zoals die wordt gepubliceerd op GEMMA Online. Ze maken inzichtelijk hoe de GEMMA in de praktijk wordt toegepast. Daarmee helpen ze andere gemeenten om de GEMMA beter te begrijpen en toe te passen. Delen van ervaringen en geleerde lessen voorkomt dat gemeenten het wiel telkens opnieuw moeten uitvinden. Succesvolle toepassingen kunnen dienen als inspiratie voor collega-gemeenten, maar ook teleurstellingen en uitdagingen zijn waardevol om mee te nemen.
+
+Praktijkvoorbeelden vergroten zo de toepasbaarheid en relevantie van de GEMMA en bevorderen kennisdeling, transparantie en gezamenlijke vooruitgang. Heeft er in uw gemeente een ontwikkeling plaatsgevonden waarbij effectief gebruik is gemaakt van de GEMMA stuur dan een bericht naar [mailto:Gemmaonline@vng.nl gemmaonline@vng.nl]..
+
+== Praktijkvoorbeelden ==
+{| class="wikitable"
+|+
+!Voorbeeld
+!Toelichting
+!
+!
+|-
+|[[Praktijkvoorbeeld KISS |Ontwikkeling van front-end component KISS door Dimpact]]
+|Ervaringen met het ontwikkelen van een front-end softwarecomponent voor het KCC volgens de Common Ground architectuurprincipes. 
+|
+|
+|-
+|[[Practice_logging_van_verwerking | Logging van verwerking door gemeente Nijmegen]]
+|Het als open source ontwikkelen van software om conform een standaard loggen van gegevens over plaatsgevonden verwerkingen van persoonsgegevens. 
+|
+|
+|-
+|[https://kennisnetwerkdata.pleio.nl/groups/view/5635563d-3ed7-4337-a81c-25a9798d4512/nieuws/blog/view/aaedefb5-5f58-44d6-94d6-01eac5bd88bd/de-bedrijfsfunctiekaart-visualisatie-van-status-en-ontwikkelingen-binnen-het-sociaal-domein-amersfoort?utm_medium=email&utm_campaign=notification_overview De bedrijfsfunctiekaart door gemeente Amersfoort]
+|Uitwerking van GEMMA's bedrijfsfuncties Sociaal Domein die een herkenbaar beeld van wat er in het sociaal domein gebeurt en met welke kwaliteit dat gebeurt. 
+|
+|
+|-
+|[[Praktijkvoorbeeld Datagedreven sturen bij gemeente Breda | Datagedreven sturen bij gemeente Breda]]
+|Ervaringen met het stapsgewijs ontwikkelen van datagedreven sturen om beslissingen, processen en beleid meer te baseren op data in plaats van op aannames, intuïtie of traditioneel opgedane kennis.
+|
+|
+|}

@@ -1,0 +1,43 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Architectuurtools,
+}}
+[[Category:ArchiMate modelleren]]
+
+Deze view documenteert de ArchiMate export die de Softwarecatalogus genereert. Alle elementen en relaties die het exportbestand bevat worden in deze view getoond. 
+Onder de view vind u tabellen met de [[#Definitie_en_eigenschappen_van_de_objecten|definitie en eigenschappen van de objecten]]  en de [[#Definitie_en_eigenschappen_van_de_relaties|definitie en eigenschappen van de relaties]].
+
+
+{{ToonViewGEMMA|viewid=8f9862c2-15be-4d94-a960-aba134c67f83|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}}<!--Softwarecatalogus AMEFF export (ArchiMateView)--> 
+
+
+==Definitie en eigenschappen van de objecten ==
+
+{{ToonTabelVanViewGEMMA|viewid=8f9862c2-15be-4d94-a960-aba134c67f83|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|toelichting=Ja}}<!--AMEFF export gemeente (ArchiMateView)-->
+
+
+
+==Definitie en eigenschappen van de relaties ==
+{{#ask: [[Occurs in view.Object ID::8f9862c2-15be-4d94-a960-aba134c67f83]] [[Occurs in model.Object ID::7382f25e-04b1-443e-abe5-00fa6e7212c4]] [[Category:ArchiMateViewconnections]] [[Refers to relationship.Documentation::+]]
+ |?Refers to relationship=Relatie
+ |?Refers to relationship.Elementtype#-=Relatietype
+ |?Refers to relationship.Documentation=Documentatie
+<!--
+ |?Refers to relationship.Toelichting=Toelichting
+-->
+ |?Has source viewnode.refers to element=Van
+ |?Has target viewnode.refers to element=Naar
+ |format=broadtable
+ |limit=50000
+ |offset=0
+ |link=all
+ |sort=Has source viewnode.refers to element
+ |order=asc
+ |headers=plain
+ |mainlabel=-
+ |searchlabel=... meer resultaten
+ |class=sortable wikitable smwtable
+}}
+<!--
+{{ToonTabelVanViewGEMMA|viewid=8f9862c2-15be-4d94-a960-aba134c67f83|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|type=Relatie}}--><!--Softwarecatalogus AMEFF export (ArchiMateView)-->

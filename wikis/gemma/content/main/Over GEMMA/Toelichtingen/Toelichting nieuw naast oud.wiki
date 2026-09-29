@@ -1,0 +1,36 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Category:Common Ground]]
+[[Category:Toelichtingen]]
+__NOTOC__
+
+Gemeenten werken stapsgewijs aan het verbeteren van hun informatievoorziening. Bijvoorbeeld wanneer een aanwezige applicatie wordt vervangen door een functioneel vergelijkbare nieuwe applicatie. Er zijn ook situaties waarin fundamentele veranderingen nodig zijn, die nieuwe architectuurkeuzes vereisen. Voorbeelden hiervan zijn:    
+
+* Het in werking treden van de AVG. Gemeenten moesten naar aanleiding hiervan de gemeentelijke informatievoorziening fundamenteel anders gaan inrichten om de privacy en persoonsgegevens van natuurlijke personen in lijn met de AVG te kunnen beschermen.
+* De invoering van de omgevingswet. Gemeenten moesten hiervoor gegevens uit verschillende domeinen, zoals milieu, infrastructuur en bouw, samenbrengen en via één digitaal platform toegankelijk maken.
+* Het programma Common Ground. Realisatie van doelen zoals het [[Toelichting scheiden processen en data|scheiden van processen en data]] en werken met [[Toelichting data bij de bron|data bij de bron]] vereisen nieuwe architectuurkeuzes en fundamentele veranderingen in informatievoorziening.
+
+Fundamentele veranderingen vergen meerdere jaren, waarin sommige processen en voorzieningen al op de beoogde nieuwe manier werken, terwijl andere nog op de oude manier werken. We spreken dan over een 'nieuw naast oud situatie'. Hieronder wordt ingegaan op aspecten waar een gemeente dan mee heeft te maken.     
+
+== Oud is niet altijd fout ==
+Met 'oud' wordt bedoeld dat iets (nog) niet op de gewenste nieuwe manier werkt. Dat betekent niet automatisch dat het altijd fout is en veranderd moet worden. Voor bepaalde processen of voorzieningen kan een andere dan de beoogde nieuwe werkwijze misschien wel geschikter zijn. Of voldoen ze (nog) goed genoeg om de beperkt aanwezige verandercapaciteit voor belangrijker doelen in te zetten.     
+
+Uiteraard zijn er ook situaties waarin vernieuwing wel snel noodzakelijk is. Bijvoorbeeld als er nieuwe wetgeving komt, zoals de AVG en de Omgevingswet, waarbij oude werkwijzen en systemen niet meer aan geldende eisen voldoen. Dan wordt oud wel fout, en is moet tijdige vernieuwing plaatsvinden.    
+
+==GEMMA==
+De GEMMA ontwikkelt zich doorlopend en kent op een bepaald moment dus ook nieuwere en oudere architectuurproducten. Zowel voor de GEMMA bedrijfs-, informatie- als technische architectuur betekent het feit dat een product al wat ouder is niet het geen waarde meer heeft. Ook als er nieuwe producten of opties zijn kunnen oudere producten nog steeds waarde hebben. De aanbeveling om voor gegevensuitwisseling gebruik te maken van gestandaardiseerde API's  betekent bijvoorbeeld niet dat al langer bestaande manieren om gegevens uit te wisselen altijd ongewenst zijn. In bepaalde situaties kunnen die nog steeds waardevol en toepasbaar zijn.    
+
+De GEMMA is de referentiearchitectuur voor alle gemeenten. Gemeenten beslissen zelf hoe zij binnen hun situatie de GEMMA het beste kunnen toepassen. De ene gemeente kan wat behoudender te werken gaan en nieuwe inzichten wat later overnemen, terwijl een andere gemeente vol inzet op toepassing van de laatste inzichten.    
+
+==Common Ground==
+Om de dienstverlening van gemeenten fundamenteel te kunnen verbeteren werkt het programma Common Ground aan ingrijpende vernieuwing van de gemeentelijke informatievoorziening. Tijdens die vernieuwing is er een tiental jaren sprake van 'nieuw naast oud'. Common Ground licht via een realisatieprincipe toe hoe er tijdens in die transitieperiode met nieuw naast oud kan worden omgegaan:  
+
+{{Uitlichten|"We ontwikkelen nieuwe voorzieningen conform de informatiekundige visie Common Ground, maar houden er rekening mee dat bestaande voorzieningen nog 5 tot 10 jaar in gebruik zullen blijven. Bij nieuwe ontwikkelingen, gemeentelijk en landelijk, zijn de Common Ground-principes leidend. We steken energie in het bouwen van iets nieuws naast het oude. Als ‘nieuw’ en ‘oud’ elkaar ontmoeten, moeten oude voorzieningen, eventueel na aanpassing daarvan, gaan aansluiten op het nieuwe. Wat nu als ‘nieuw’ wordt bestempeld blijft uiteraard niet altijd ‘nieuw’. Er zullen continu ontwikkelingen zijn die het nodig maken om te blijven vernieuwen. We formuleren daarom geen eindplaatje en doelarchitectuur, maar zien ontwikkeling als een continu proces (‘permanent beta’)."}}
+
+Als er communicatie nodig is tussen oud en nieuw wordt dus met nieuwe standaarden gewerkt. Nieuwe voorzieningen hoeven hierdoor niet 'backwards compatible' te zijn, wat het vernieuwingstempo verhoogt.      
+
+==Conclusie==
+De GEMMA beschrijft de gemeentelijke referentiearchitectuur. Gebruikers van de GEMMA maken verschillende ontwerp- en realisatiekeuzes en hebben permanent te maken met 'nieuw naast oud'. Collectieve keuzes, zoals verplicht gestelde gemeentelijke standaarden voor nieuwe ontwikkelingen, geven hier deels richting aan. Maar lokaal beleid en omstandigheden (zoals beschikbare capaciteit) blijven een belangrijke rol spelen bij het kiezen hoe vernieuwing het beste kan plaatsvinden.

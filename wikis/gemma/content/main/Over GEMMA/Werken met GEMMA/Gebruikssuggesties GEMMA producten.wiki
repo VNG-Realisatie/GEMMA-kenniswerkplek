@@ -1,0 +1,26 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder
+}}
+[[Category:Werken met GEMMA]]
+De GEMMA kan op verschillende manieren door gemeenten worden gebruikt.  Een gemeente bepaalt zelf welke producten in hun situatie het meeste meerwaarde bieden en hoe zij er het beste gebruik van kunnen maken. Daarbij spelen factoren een rol zoals het wel of niet onder architectuur werken en de hoeveelheid kennis van architectuur die aanwezig is.  
+
+Ter inspiratie staat hieronder een lijst met suggesties voor gebruik voor een aantal GEMMA-producten. De lijst is niet uitputtend en uiteraard zijn er naast de gesuggereerde gebruiksoptie ook andere manieren waarop producten kunnen worden gebruikt. 
+
+{| class="wikitable"
+|-
+! GEMMA product !! Suggestie voor gebruik
+|-
+| GEMMA Archimate-model || Archimate is een beschrijvingstaal voor het maken van goede architectuurbeschrijvingen en op basis daarvan maken van goed onderbouwde keuzes. Het GEMMA Archimatemodel bevat het gestructureerde deel van de GEMMA met daarin architectuurelementen, relaties en views. Een gemeente kan het model importeren en gebruiken in een lokale architectuurtool. Daarbij kunnen onderdelen ongewijzigd worden herbruikt of ze worden gebruikt om nieuwe architectuurproducten zoals eigen 'views' te maken. Dit kan bijvoorbeeld gebeuren bij het maken van een gemeentebrede enterprise-architectuur of voor architectuurbeschrijvingen van programma's en projecten. De pagina [[ArchiMate modelleren]] geeft informatie over het werken met Archimate en gebruik van het GEMMA Archimate-model.
+|-
+| Architectuurprincipes || De GEMMA architectuurprincipes beschrijven de fundamentele uitgangspunten van architectuur en ontwerp voor gemeenten. Gemeenten kunnen die gebruiken als startpunt om te komen tot gedragen gemeentelijke architectuurprincipes. Dit kan leiden tot het 1 op 1 overnemen van de GEMMA-principes, maar het kan leiden tot bijgestelde of nieuwe principes. Door de GEMMA architectuurprincipes als basis te nemen wordt de vergelijkbaarheid en samenwerking tussen gemeenten bevordert.
+|-
+| Bedrijfsfuncties || De GEMMA bedrijfsfuncties beschrijven de verschillende taken, activiteiten en verantwoordelijkheden die gemeenten kennen. Een gemeente kan die gebruiken om de eigen organisatie in kaart te brengen en bijvoorbeeld te onderzoeken of alle functies zijn ingevuld, of iedere functie een verantwoordelijke kent, etcetera. Een bijkomend voordeel van gebruik van de GEMMA bedrijfsfuncties is dat als meerdere gemeenten die gebruiken beschrijvingen beter vergelijkbaar zijn. 
+|-
+| Bedrijfsobjecten || De GEMMA bedrijsobjecten beschrijven de 'dingen' die een rol spelen in de dagelijkse activiteiten en processen van gemeenten. Vergelijkbaar als bij bedrijfsfuncties zijn ze een hulpmiddel om gestandaardiseerd onderdelen van de organisatie in kaart te brengen. Per bedrijfsobject kan vervolgens bijvoorbeeld worden beschreven welk niveau van beveiliging nodig is, welke applicaties informatie over welke bedrijfsobjecten vastleggen, etcetera. Voor het classificeren van objecten op dataniveau is gebruik te maken van het op de bedrijfsobjecten afgestemde Gemeentelijk Gegevensmodel.
+|-
+| Referentiecomponenten || Referentiecomponenten zijn applicatiecomponenten die zijn benoemd als elementair bouwblok binnen de gemeentelijke informatievoorziening die kunnen worden vergeleken met gemeentelijk aanwezige applicaties. Daaruit kan bijvoorbeeld blijken dat er meerdere applicaties in gebruik zijn die dezelfde referentiecomponent realiseren, wat aanleiding kan zijn om te onderzoeken of er met minder applicaties kan worden volstaan. Andersom kan ook blijken dat bepaalde referentiecomponenten ontbreken in het gemeentelijk landschap. Iets dat mogelijk aanleiding is om aanpassingen binnen het gemeentelijk applicatielandschap door te voeren. 
+|-
+| Thema-architecturen|| Thema-architecturen beschrijven architectuur voor een, voor gemeenten relevant, thema. Zij werkt thema-gerelateerde onderwerpen uit en beschrijft aandachtspunten en realisatie-opties. Als gemeente kan een thema-architectuur nieuwe architectuurinzichten opleveren en bijdragen aan interne discussies en het maken van goede ontwerp- en realisatiekeuzes. Qua onderwerp kan het variëren van brede onderwerpen zoals 'beveiliging' tot meer toegespitste onderwerpen zoals het werken met API's. Het kan per gemeente verschillen welke thema-architectuur op een bepaald moment de meeste meerwaarde heeft. 
+|}

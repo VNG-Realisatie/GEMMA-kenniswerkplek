@@ -1,0 +1,24 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}[[Categorie:Doelgroepen]]{{DISPLAYTITLE: Informatiemanager}}
+{{Persona/indeling|Ik zorg dat de interne en externe stroom van bedrijfsinformatie binnen een domein optimaal verloopt en bijdraagt aan het bedrijfsresultaat. Denk bij interne informatie aan financiële cijfers, rapporten en bij externe aan de landelijke voorzieningen.</br>
+
+Ik gebruik het liefste bronnen die mij een efficiënt overzicht van informatie geven. De GEMMA & VNG nieuwsbrief zijn slechts enkele van de informatiebronnen die ik daarvoor gebruik.|Ik heb behoefte aan informatie over trends, ontwikkelingen en pilotprojecten binnen mijn domein. Dit geeft me een actueel beeld van de ontwikkelingen die effect hebben op mijn werk.
+}}
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = 
+ Dit actuele beeld is te vinden bij:
+* [[Thema-architectuur|Wat is een thema en welke thema's zijn er?]]
+* [[Projecten]]
+|titel2  = Meer informatie
+|inhoud2 = 
+Aanvullende informatie is te vinden op GEMMA Online:
+* [[architectuurvisie|Architectuurvisie]]
+* [[Referentiecomponenten en applicatieservices]]
+Als referentiearchitectuur fungeert de GEMMA als kompas bij het verbeteren van gemeentelijke informatievoorziening. De GEMMA kent daarvoor voor langere tijd geldende richtinggevende uitgangspunten: 
+* de [[Architectuurprincipes|GEMMA Architectuurprincipes]].
+|hoogte = 350px
+}}

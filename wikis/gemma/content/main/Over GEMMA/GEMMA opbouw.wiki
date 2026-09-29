@@ -1,0 +1,23 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheerder
+}}
+__NOTOC__
+[[Category:Over GEMMA]]
+
+{{:GEMMA opbouw tekst}}
+
+De onderscheiden producten zijn aan elkaar gerelateerd en bedoeld om samen te gebruiken. Het gebruiksdoel en [[Doelgroepen|de doelgroep]] waartoe een gebruiker behoort bepalen mee welke producten op een bepaald moment het bruikbaarst zijn. Voor meer generieke vragen kunnen basisarchitectuur-producten behulpzaam zijn. Gaat het om een specifiek onderwerp , zoals autorisatie of duurzame toegankelijkheid, dan zal een thema-architectuur bruikbaarder zijn. 
+
+[[Wat is de basisarchitectuur]] beschrijft de verschillende onderdelen van de basisarchitectuur en de architectuurproducten die daarbinnen vallen.  
+
+[[Thema-architectuur|Wat is een thema-architectuur]] licht toe dat thema-architecturen een onderwerp vanuit een bepaald perspectief uitwerken en beschrijft welke thema-architecturen er zijn.
+
+De opbouw van de GEMMA is een voorbeeld van een gelaagd architectuurmodel. [[Toelichting gelaagde architectuur]] geeft een algemene toelichting op het wat en waarom van gelaagde architectuurmodellen.  
+
+Onderstaande afbeelding toont met behulp van de architectuurbeschrijvingstaal Archimate de belangrijkste architectuurproducten in ieder van de drie groepen.
+
+{{ToonViewGEMMA|viewid=938eb14e-a6e8-44eb-a56b-0f75c444dab0|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}}<!--GEMMA portfolio (ArchiMateView)--> 
+
+Voor een gedetailleerd overzicht, zie de [[GEMMA opbouw in detail]].

@@ -1,0 +1,25 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder
+}}
+__NOTOC__[[Categorie:Over GEMMA]]
+Na een aantal succesvolle pilottrainingen start de VNG Academie in 2026 met een leergang waarin je de GEMMA stap voor stap leert kennen en toepassen. 
+
+De leergang bestaat uit een aantal modules waarin je samen met vakgenoten diepgaande kennis opdoet van de GEMMA en werkt aan praktijkgerichte opdrachten.  De op dit moment beoogde modules zijn:
+
+* ''Module 1: Inleiding tot de GEMMA-architectuur''
+* ''Module 2: Inhoudelijke verdieping van de GEMMA''
+* ''Module 3: Sturen met architectuurprincipes''
+* ''Module 4: Werken met bedrijfsfuncties en referentiecomponenten''
+* ''Module 5: Gebruiken van bedrijfsobjecten''
+* ''Module 6: Inleiding op GEMMA en ArchiMate''
+* ''Module 7: Werken met ArchiMate en GEMMA''
+
+Je kiest zelf welke modules aansluiten bij jouw ervaring en interesse. Ben je nog niet bekend met de GEMMA? Dan adviseren we te starten met module 1 en 2. Modules 3, 4 en 5 richten zich vooral op de bedrijfsmatige kant, terwijl modules 6 en 7 een technische verdieping bieden. 
+
+De leergang wordt verzorgd door trainers met diepgaande kennis van de GEMMA en ruime ervaring in het gemeentelijk veld. Het lesmateriaal dat tijdens de trainingen wordt gebruikt, is ontwikkeld en wordt beheerd door het Kenniscentrum Architectuur van de VNG.
+
+Meer informatie over inhoud, data en inschrijving vind je binnenkort bij de [https://vng.nl/trainingen trainingen en opleidingen] van de VNG Academie. 
+
+Wil je op de hoogte blijven van de laatste ontwikkelingen rond de leergang? Schrijf je dan via [[Op de hoogte blijven]] in voor de GEMMA-nieuwsbrief.

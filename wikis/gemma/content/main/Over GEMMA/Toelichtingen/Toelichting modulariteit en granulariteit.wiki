@@ -1,0 +1,45 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Category:Common Ground]]
+[[Category:Toelichtingen]]
+__NOTOC__
+
+De begrippen modulariteit ('opdelen in afzonderlijke, onafhankelijke modules') en granulariteit ('de mate van detaillering van onderdelen binnen een systeem') spelen een belangrijke rol bij zowel architectuur, systeemontwerp als systeemontwikkeling. Architectuur moet helpen bij het maken van keuzes bij het opdelen van systemen in modules en het bepalen van de gewenste omvang daarvan.   
+
+== Modulariteit ==
+Modulariteit verwijst naar de mate waarin een systeem wordt opgedeeld in onafhankelijke, functionele eenheden ('modules'). Modules hebben een specifieke taak binnen het systeem, functioneren autonoom en communiceren onderling volgens afspraken. Mogelijke voordelen van een modulaire aanpak zijn:
+*Vermindering van complexiteit: door een systeem in kleinere, gemakkelijker te begrijpen en onderhouden delen op te splitsen, vermindert de complexiteit en is een systeem eenvoudiger te begrijpen, onderhouden en verbeteren.
+
+*Beheerbaarheid: Elke module kan afzonderlijk worden ontwikkeld, getest en gewijzigd zonder dat dit invloed heeft op de rest van het systeem.
+*Herbruikbaarheid: Modules kunnen opnieuw worden gebruikt, wat leidt tot snellere ontwikkeling en lagere kosten.
+*Schaalbaarheid: Systemen zijn beter schaalbaar omdat modules zijn toe te voegen of wijzigen zonder het hele systeem te hoeven herstructureren.
+*Flexibiliteit: Modulaire systemen zijn flexibeler omdat modules gemakkelijk kunnen worden vervangen met minimale impact op de rest van het systeem.
+Afhankelijk van de context kan een (te) modulaire aanpak ook nadelen met zich meebrengen, zoals:
+*Hogere kosten en beheerproblemen door complexiteit.
+*Prestatieverlies door veelvuldige communicatie tussen modules.
+*Lastige foutopsporing als niet duidelijk is welke module het probleem veroorzaakt.
+
+== Granulariteit ==
+Granulariteit verwijst naar de mate waarin een systeem is opgesplitst. Een grove granulariteit betekent grotere, samengestelde onderdelen. Een fijne granulariteit betekent kleinere, specifieke onderdelen. Bij het bepalen van het juiste niveau van granulariteit moeten afwegingen worden gemaakt op aspecten zoals:
+*Complexiteit: Grove granulariteit, bijvoorbeeld binnen 'monolithische systemen',  kan de flexibiliteit en uitbreidbaarheid van systemen beperken. Fijne granulariteit, bijvoorbeeld bij gebruik van microservices,  kan leiden tot complex systemen met veel onderdelen en onderlinge interactie.
+*Prestaties: Grove granulariteit kan efficiënter zijn qua prestaties omdat er minder communicatie tussen modules nodig is. Fijne granulariteit biedt vaak meer flexibiliteit en maakt het mogelijk om per module meer of minder middelen toe te kennen. 
+*Taakverdeling: Grove granulariteit leidt tot beter overzicht van verantwoordelijkheden omdat er minder modules zijn. Fijnmazige granulariteit maakt herbruikbaarheid van modules met een specifieke verantwoordelijkheid mogelijk.
+
+{{Uitlichten|
+Services binnen een servicegeorienteerde architectuur (SOA) zijn vaak grover en multifunctioneel. Bij een microservices-architectuur hebben ze een fijnmaziger karakter en wordt iedere functie via een aparte service gerealiseerd. De fijnere granulariteit bij microservices biedt meer flexibiliteit, maar vereist extra aandacht voor zaken zoals netwerkcommunicatie, coördinatie en beheer.
+}}
+
+== Terminologie ==
+In de praktijk worden naast de term 'module' ook andere termen met een min of meer vergelijkbare betekenis gebruikt, zoals:
+
+* Component: een kleiner autonoom functionerend technisch onderdeel, dat in combinatie met andere componenten binnen een groter systeem is te gebruiken. Bijvoorbeeld een softwarecomponent met een specifieke functie. 
+* Bouwblok: een samenstel van onderdelen dat een herbruikbaar is en in te zetten als kant-en-klaar onderdeel om snel nieuwe systemen te kunnen bouwen. Bijvoorbeeld een 'betalingenbouwblok' met componenten zoals een betalingsgateway, facturering en transactiebeheer. 
+* Bouwsteen: Een afspraak, standaard, organisatorische of technische voorziening of een combinatie hiervan ten behoeve van de realisatie van de digitale overheid (bron: NORA). Bijvoorbeeld de standaarden op de [https://www.forumstandaardisatie.nl/open-standaarden/verplicht 'Pas toe of leg uit' lijst] en een GDI-voorziening zoals [https://www.logius.nl/domeinen/gegevensuitwisseling/digilevering Digilevering].
+
+== Conclusie ==
+De gewenste mate van modulariteit en granulariteit is sterk afhankelijk van specifieke systeemeisen en de context waarbinnen een systeem gebruikt moet worden. Bij het bepalen ervan moeten architecten, binnen de geldende context, rekening houden met verschillende aspecten.  
+
+Als referentiearchitectuur beschrijft de GEMMA de opdeling in functionele onderdelen. Zij schrijft niet voor welke mate van modulariteit en granulariteit wenselijk is bij het ontwikkelen van softwaresystemen, maar biedt de vrijheid aan leveranciers en gemeenten om daarbij binnen hun context passende keuzes te maken.

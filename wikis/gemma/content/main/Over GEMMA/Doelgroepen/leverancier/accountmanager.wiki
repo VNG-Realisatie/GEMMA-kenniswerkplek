@@ -1,0 +1,27 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}
+{{DISPLAYTITLE: Accountmanager}}[[Categorie:Doelgroepen]]{{Persona/indeling|Als accountmanager zorg ik dat ik op de hoogte ben van alle ontwikkelingen binnen een domein of gemeenten, zodat mijn kennis optimaal  bijdraagt aan het bedrijfsresultaat. Ik onderhoud de relatie met onze klanten en adviseer hun over onze producten voor hun vraagstukken.|De GEMMA gebruik ik om een beeld te krijgen van hoe onze applicaties aansluiten op ketenprocessen. 
+Zo weet ik hoe mijn applicaties worden toegepast binnen een gemeente.
+Ook vind ik het belangrijk dat ik in staat ben om een organisatievraagstuk te kunnen vertalen naar een gebruiksvriendelijke oplossingsrichting.
+
+
+
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = 
+Ik gebruik de volgende producten
+* Overzicht van [https://vng.nl/gemeentelijke-uitvoering projecten, programma's en diensten die voortkomen uit de Gezamenlijke Gemeentelijke Uitvoering (GGU)] 
+* [https://vng.nl/praktijkvoorbeelden Praktijkvoorbeelden van gemeenten] op VNG.nl
+|titel2  = Meer informatie
+|inhoud2 = 
+
+* [[Werken onder architectuur]]
+* [[Architectuurvisie]]
+* [[Thema-architectuur|Wat is een thema en welke thema's zijn er?]]
+* [[Projecten]]}}
+
+|hoogte = 300px
+}}

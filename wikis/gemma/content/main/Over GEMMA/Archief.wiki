@@ -1,0 +1,31 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's
+}}[[Categorie:Over GEMMA]]
+De GEMMA wordt continu doorontwikkeld. Daarom verandert ook de inhoud van GEMMAonline regelmatig. Om de website actueel en overzichtelijk te houden, wordt verouderde informatie verwijderd. Tegelijkertijd is het belangrijk dat eerdere informatie beschikbaar blijft. Daarom wordt sinds november 2023 dagelijks een kopie van GEMMA Online gemaakt. Deze kopieën zijn te raadplegen via een aparte [https://gemmaonline.archiefweb.eu/#archive archiefwebsite]. Zo blijft GEMMA Online actueel en overzichtelijk en blijft eerdere informatie via het opgebouwde archief beschikbaar.  GEMMA Online wordt sinds november 2023 dagelijks gescand en gearchiveerd.  Versies van de website voor die datum zijn (deels) opvraagbaar via de [https://web.archive.org/web/20250000000000*/www.gemmaonline.nl Wayback Machine].   
+
+Direct naar het [https://gemmaonline.archiefweb.eu/#archive Archief]. 
+=== Hoe werkt het archief ===
+Bij het openen van het archief wordt een pagina getoond met aan de linkerkant een grijze verticale balk. 
+
+[[Bestand:Archief_website_van_GEMMA_Online.png|alt=Een voorbeeld van de archief website van GEMMA Online|600x600px]]
+
+Bovenaan de grijze balk staat een kalender. Na het kiezen van een bepaalde datum wordt de GEMMA Online website van die dag getoond. 
+
+Onderaan de grijze balk, in het het roze venster, staat de dag die wordt getoond. Via de optie "Verberg opties" wordt de grijze balk geminimaliseerd.
+
+== Rechtstreekse link naar archief maken (deeplinken) ==
+Wanneer je zoekt in Archiefweb, blijft de url in de browser altijd hetzelfde: https://gemmaonline.archiefweb.eu/#archive. Het is echter wel mogelijk om een rechtstreekse link te maken naar een bepaalde pagina die je hebt opgezocht. Bijvoorbeeld: https://archief55.archiefweb.eu/archives/archiefweb/20231027160105/https://www.gemmaonline.nl/index.php/Wat_is_GEMMA. 
+
+Doe dit door met de muis boven een link te gaan staan en met je rechtermuisknop op de betreffende link te klikken. Kies dan voor ‘Linkadres kopiëren’. Je kunt de link dan bijvoorbeeld in een mail plakken en met iemand anders delen. 
+== Zoeken naar een specifieke pagina ==
+Soms geeft Archiefweb de melding dat een URL geen onderdeel uitmaakt van het archief.  De reden kan zijn dat de url niet voorkomt in de periode waarop je zoekt.  Gebruik dan een oudere of nieuwere versie van de website. Dit gaat als volgt: 
+# Gebruik de originele url van de pagina . Die vind je bijvoorbeeld zoals beschreven onder ‘Rechtstreekse link naar archief maken’:
+https://archief55.archiefweb.eu/archives/archiefweb/20231027133204/<span style="background-color: yellow">https://www.gemmaonline.nl/index.php/Wat_is_GEMMA</span>
+# Het geel gearceerde deel is de originele url. Selecteer en kopieer die tekst. 
+# Ga naar het startscherm van [https://gemmaonline.archiefweb.eu/#archive https://gemmaonline.archiefweb.eu/#archive.]
+# Klik in de grijze kolom links op ‘Geavanceerd zoeken’ onder de zoekbalk.
+# Vul als zoekterm het gekopieerde url van de pagina in.
+# Verfijn de zoekresultaten op ‘Specifiek op url’.
+# Klik op ‘Zoeken'.

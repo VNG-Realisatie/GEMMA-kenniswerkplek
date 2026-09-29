@@ -1,0 +1,26 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}[[Category:Doelgroepen]]{{DISPLAYTITLE: Projectleider van leverancier}}
+{{Persona/indeling|Als projectleider ben ik verantwoordelijk voor het succesvol uitvoeren van IT projecten bij gemeente en in mijn organisatie. Ik zorg voor verbinding tussen de business en de IT. Ik plan, stuur werkzaamheden aan van IT Professionals en ben verantwoordelijk voor het realiseren van het project binnen de gestelde eisen, tijd en kosten.|
+Ik gebruik architectuurproducten voor het raadplegen van businessdomeinkennis, maar ook om te begrijpen hoe de applicaties die mijn organisatie gebruikt, aansluiten op de landelijke voorzieningen.
+}}
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = Ik gebruik de volgende producten
+* [[Bedrijfsarchitectuur ]]
+* [[Informatie-architectuur]]
+* [[Domeinarchitecturen]]
+* [[Overzicht buitengemeentelijke voorzieningen]]
+|titel2  = Meer informatie
+|inhoud2 = 
+De GEMMA gebruik ik om een beeld te krijgen van hoe onze applicaties aansluiten op ketenprocessen. 
+Zo weet ik hoe mijn applicaties worden toegepast binnen een gemeente.
+Ook vind ik het belangrijk dat ik in staat ben om een organisatievraagstuk te kunnen vertalen naar een gebruiksvriendelijke oplossingsrichting.
+* [[Werken onder architectuur]]
+* [[Architectuurvisie]]
+* [[Thema-architectuur|Wat is een thema en welke thema's zijn er?]]
+* [[Projecten]]
+|hoogte = 450px
+}}

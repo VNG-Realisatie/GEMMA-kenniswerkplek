@@ -1,0 +1,34 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's
+}}
+__NOTOC__[[Categorie:Over GEMMA]]
+Er zijn verschillende manieren om op de hoogte te blijven van wat er op GEMMA Online gebeurt. Voor wie regelmatig op GEMMA Online kijkt is het wellicht genoeg om de pagina's met [[alle nieuwsberichten|Nieuwsberichten op GEMMA Online]] of het [https://gemmaonline.nl/index.php/Speciaal:RecenteWijzigingen wijzigingslog] in de gaten te houden. Hieronder staat een volledig overzicht waar nieuws en ontwikkelingen over de GEMMA en van GEMMA Online zijn te volgen:
+
+* [[alle nieuwsberichten|Nieuwsberichten op GEMMA Online]] 
+* [[GEMMA nieuwsbrief|GEMMA Nieuwsbrief (1x per kwartaal)]]
+* [[Speciaal:RecenteWijzigingen|Recente wijzigingen op GEMMA Online]]
+* [[Releases GEMMA ArchiMate-model]]
+* [https://github.com/VNG-Realisatie/GEMMA-Archi-repository/issues Ontwikkelingen van de GEMMA op GitHub]
+* Alle uitgevoerde [https://github.com/VNG-Realisatie/GEMMA-Archi-repository/activity wijzigingen in de GEMMA] op GitHub 
+* Een persoonlijke volglijst (zie onder)
+* Een RSS-reader (zie onder). 
+
+==Pagina's volgen via een persoonlijke volglijst==
+Een volglijst is een overzicht van wijzigingen op pagina's die je zelf uitkiest. Voor het maken van een persoonlijke volglijst is een [https://www.gemmaonline.nl/index.php/Speciaal:GebruikerAanmaken account op GEMMA Online] nodig.  
+==== Toevoegen van een pagina aan je persoonlijke volglijst ====
+Als je bent ingelogd kun je de pagina waar je je bevindt toevoegen aan je persoonlijke volglijst via het dropdown menu 'Handelingen' (rechtsboven aan de pagina). Kies dan de optie "Volgen" (of 'Ontvolgen' als je een pagina niet langer meer wilt volgen). De pagina wordt vanaf dat moment getoond op je [[Speciaal:Volglijst|volglijst]] .  
+[[Bestand:Menu rechtsbovenaan een GEMMA Online pagina.png|miniatuur|alt=|geen]]
+==== Mail ontvangen van wijzigingen op de geselecteerde volgpagina's ====
+Via de pagina [[Speciaal:Voorkeuren|Voorkeuren]] kun je via de tab Meldingen' aangeven dat je een mail ontvangen als er wijzigingen zijn op een pagina van je volglijst. 
+
+:[[Bestand:Voorkeur menu van gebruikers op GEMMA Online.png|miniatuur|alt=|geen|903x903px]]
+
+==== Filters toevoegen aan je persoonlijke volglijst ====
+Nadat je bent ingelogd kan je op je [[Speciaal:Volglijst|persoonlijke volglijst]] allerlei filters maken en toepassen. Een filter toepassen doe je door in het zoekveld met de tekst "Filter wijzigingen (gebruik het menu of zoek op filternaam)" te klikken en daar een filter te selecteren.[[Bestand:Volglijst filters.png|alt=Filter van een volglijst|geen|miniatuur|800x800px]]   
+
+Nadat er filters zijn geselecteerd kan de huidige selectie opgeslagen worden zodat je een volgende keer niet opnieuw een filter geselecteerd hoeft te worden. Het opslaan van een filter doe je door op het "Bookmark-icoon" te klikken achter de geactiveerde filters. Door de filtering op te slaan onder een beschrijvende naam is deze makkelijk terug te vinden. Daarnaast is het ook mogelijk om het opgeslagen filter als standaard op te slaan, waardoor bij het openen van de volglijst het filter direct actief is.   
+[[Bestand:Volglijst filters opslaan.png|geen|miniatuur]]
+==Pagina's volgen via een RSS reader==
+U kunt pagina's op GEMMA Online ook volgen met een RSS reader. Dit doet u door de  [http://www.gemmaonline.nl/index.php?title=Speciaal:RecenteWijzigingen&feed=atom link] van de [http://nl.wikipedia.org/wiki/Atom_(bestandsformaat) Atom feed] te kopiëren van de pagina [[Speciaal:RecenteWijzigingen|recente wijzigingen]]. RSS/Atom feed readers als [http://www.rssowl.org/ RSSOwl] gebruiken deze link om wijzigingen op de wiki te kunnen volgen.

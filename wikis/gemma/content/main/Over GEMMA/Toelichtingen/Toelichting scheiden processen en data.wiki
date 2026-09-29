@@ -1,0 +1,53 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Common Ground
+}}
+[[Category:Common Ground]]
+[[Category:Toelichtingen]]
+__NOTOC__
+
+De GEMMA beschrijft in de [[Thema-architectuur Common Ground|GEMMA thema-architectuur Common Ground]] de architectuur die nodig is om de Common Ground doelen te kunnen realiseren. De thema-architectuur beschrijft onder andere de [[Informatiekundige visie Common Ground]]. Een onderdeel van de visie is om processen en data meer van elkaar te gaan scheiden. Deze toelichting verduidelijkt wat daarmee bedoeld wordt.   
+
+==Data als het nieuwe goud==
+Gemeenten gebruiken veel verschillende taakspecifieke applicaties. Vaak leggen die data zodanig vast dat deze buiten het ondersteunde proces niet of nauwelijks bruikbaar zijn. Dit leidt tot beperkingen en problemen. Bijvoorbeeld omdat er veel onwenselijke duplicatie van data nodig is, er dure koppelingen nodig zijn voor data-uitwisseling en omdat de afhankelijkheid van leveranciers (te) groot is. [[Aanleiding vernieuwing gemeentelijke informatievoorziening]] gaat hier dieper op in.   
+
+Data wordt tegenwoordig gezien als belangrijke grondstof, 'het nieuwe goud', voor verschillende doelen. Om er effectief gebruik van te kunnen maken moeten  bedrijfsprocessen en daar ontstane data geen twee-eenheid meer vormen. Data die binnen processen wordt vastgelegd moet meervoudig bruikbaar worden en kunnen functioneren als bronregistratie ('een meervoudig te gebruiken registratie met betrouwbare data').  
+
+Voor alle duidelijkheid: niet alle data die applicaties vastleggen hoeft voor gebruik buiten die applicatie beschikbaar te komen. Applicaties leggen bijvoorbeeld ook data vast om gebruikersvoorkeuren te onthouden of om gebruikersschermen in de juiste volgorde aan te bieden. Dat soort data heeft geen meerwaarde buiten de applicatie zelf en hoeft dus ook niet extern toegankelijk te worden gemaakt.  
+
+==Architectuur en implementatie ==
+Er zijn verschillende manieren om processen en data van elkaar te scheiden en hergebruik van data beter mogelijk te maken. In plaats van datauitwissel-mechanismen zoals bestandsuitwisseling of directe databasetoegang verwachten we van hedendaagse applicaties dat ze Application Programming Interfaces (API's) bieden:  toegangspunten voor andere applicaties om bij data te kunnen. Bij voorkeur voldoen API's aan vastgestelde API-standaarden waardoor ze eenduidig en gemakkelijk bruikbaar zijn. Onderstaande afbeelding toont hoe 'Taak-specifiek component 1' een API aanbiedt die 'Taak-specifiek component 2' kan gebruiken voor toegang tot door 'Taak-specifiek component 1' vastgelegde data. 
+
+<!-- [[Bestand:Common Ground taakspecifieke applicatie met API.png]] -->
+{{ToonViewGEMMA
+|viewid=5d9a7003-5336-4328-b987-078bea611abb
+|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418
+|maxwidth=900
+|label=Functies in het Common Ground vijflaagsmodel
+}}<!--Scheiden processen en data 2 TSA-componenten (ArchiMateView)--> 
+
+API's aanbieden voor toegang tot data is een eerste stap om data voor gebruik buiten een applicatie beschikbaar te maken. Een volgende stap is om (proces)logica en dataopslag van elkaar te scheiden. Het vastleggen en verstrekken van data verloopt dan via een 'neutrale' registercomponent die gestandaardiseerde API's aanbiedt. Alle applicaties die daartoe geautoriseerd zijn, krijgen via die API's toegang tot vastgelegde data. Naast het ondersteunen van het taakspecifieke proces kan data bijvoorbeeld ook worden gebruikt binnen andere processen, voor data-analyse of voor het via een internetportaal ter inzage aanbieden aan burgers. Onderstaande afbeelding toont hoe de 'Register component' data vastlegt en een API voor gebruik van de data aanbiedt. 'Taak-specifiek component 1' gebruikt de API voor het wijzigen en opvragen van data. 'Taak-specifiek component 2' gebruikt de API alleen voor het opvragen van data. 
+
+<!-- [[Bestand:Common Ground taakspecifieke applicatie met registercomponent.png]] -->
+{{ToonViewGEMMA
+|viewid=853f4fa7-13b4-4585-9a24-934e1595d04e
+|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418
+|maxwidth=900
+|label=Functies in het Common Ground vijflaagsmodel
+}}<!--Scheiden processen en data met register-component (ArchiMateView)--> 
+
+Het [[Common Ground vijflaagsmodel]] beschrijft en visualiseert generieke functies die nodig zijn om de Informatiekundige visie Common Ground te realiseren. Om processen en data te kunnen scheiden moet bepaalde functionaliteit in ieder van de 5 lagen aanwezig zijn. Taakspecifieke applicaties vullen functies in uit de lagen 'Interactie' en 'Procesinrichting' . Ze maken verbinding (laag 'Connectiviteit') met service-API's (laag 'Diensten') en kunnen zo gebruik maken van elders aanwezige brondata (laag 'Databronnen'). Binnen zo'n informatielandschap zijn processen en data van elkaar gescheiden en wordt data op een beheersbare manier via API's met elkaar gedeeld. Onderstaand diagram toont, met behulp van het vijflaagsmodel, hoe taakspecifieke applicaties in de rol van 'dienstafnemer' data-gerelateerde diensten afnemen van een registercomponent in de rol van 'dienstenaanbieder'.
+
+<!-- [[Bestand:Common Ground taakspecifieke applicatie met registercomponent.png]] -->
+{{ToonViewGEMMA
+|viewid=cb862da8-0f77-4a0f-9d9c-916f4374fe6d
+|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418
+|maxwidth=900
+|label=Functies in het Common Ground vijflaagsmodel
+}}<!--Scheiden processen en data met vijflaagsmodel (ArchiMateView)-->
+
+==Conclusie ==
+Het scheiden van processen en data is een belangrijk middel om, in lijn met de Informatiekundige visie Common Ground, de gemeentelijke informatievoorziening fundamenteel te verbeteren. Data kan beter worden gedeeld en voor meerdere doeleinden worden benut. 
+
+Het tempo waarin, en de manier waarop, processen en data van elkaar worden gescheiden kan verschillen. Gemeenten en leveranciers maken immers verschillende afwegingen en implementatiekeuzes. Bijvoorbeeld wat betreft de granulariteit van toegepaste componenten, die kan variëren van het werken met hele kleine, strikt van elkaar gescheiden, componenten en registers tot een werkwijze waarbij meerdere soorten functionaliteit of data worden gecombineerd.

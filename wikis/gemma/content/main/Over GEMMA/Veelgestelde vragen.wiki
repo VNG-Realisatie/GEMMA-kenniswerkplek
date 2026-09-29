@@ -1,0 +1,75 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Categorie:Over GEMMA]]
+We beantwoorden graag al je vragen over de GEMMA. Staat jouw vraag niet tussen onze Veelgestelde vragen of heb je feedback voor ons? Je kunt op verschillende manieren contact met ons opnemen, zoals via de mail [Mailto:GEMMAOnline@vng.nl GEMMAOnline@vng.nl] of via het [https://forum.vng.nl/do/startpage?id=2332596-737461727470616765 Forum van VNG].<!--
+
+Start vragen
+
+-->{{#accordionItem:
+|title=Wat en voor wie is de GEMMA?
+|content=De GEMMA is de referentiearchitectuur voor Nederlandse gemeenten en primair bedoeld voor gebruik door gemeenten en leveranciers van gemeentelijke software. Via de menu-optie 'Over GEMMA' is meer informatie te vinden, zoals:
+* [[Wat is GEMMA]]
+* [[GEMMA_opbouw]]
+* [[Werken_met_GEMMA]]
+|icon=play_arrow}}<!--
+
+-->{{#accordionItem:
+|title=Wat is de status van de GEMMA?
+|content=De GEMMA is een referentiearchitectuur: geen verplichting, maar een sterk aanbevolen kader dat gemeenten ondersteunt en bijdraagt aan standaardisatie, interoperabiliteit en samenwerking. Bepaalde standaarden en voorzieningen binnen de GEMMA moeten verplicht worden gebruikt. [[GEMMA_in_context | GEMMA in context]] beschrijft de relatie met andere architecturen.
+|icon=play_arrow}}<!--
+
+-->{{#accordionItem:
+|title=Wat bedoelt de GEMMA met...?
+|content=De GEMMA heeft een [[begrippenkader]] dat beschrijft wat de betekenis is van een aantal binnen de GEMMA gebruikte termen. Daarnaast zijn er toelichtingen op onderwerpen waarover vaker vragen zijn: {{#ask: [[Category:Toelichtingen]]
+ |format=ul
+ |limit=20
+ |sort=
+ |order=asc
+ |headers=hide
+ |searchlabel=... meer resultaten
+}}<!--
+* [[Toelichting_data_bij_de_bron | Data bij de bron]]
+* [[Toelichting_scheiden_processen_en_data | Het scheiden van processen en data]]
+* [[Toelichting nieuw naast oud|Nieuw naast oud]]
+* [[Toelichting_gebruik_van_REST | Gebruik van REST]]
+* [[Toelichting_gelaagde_architectuur | Gelaagde architectuur]]
+* [[Toelichting_modulariteit_en_granulariteit | Modulariteit en granulariteit]]
+* [[Toelichting_Archimate | Archimate]]
+* [[Toelichting aanschaf en vervanging applicaties | Aanschaf en vervanging applicaties]]
+* [[Toelichting_Open_source_software | Open source software]]-->
+|icon=play_arrow}}<!--
+
+-->{{#accordionItem:
+|title=Hoe werk ik met architectuur?
+|content=Er is geen handleiding die zegt hoe je precies moet werken als architect. Er zijn wel een aantal [[Tips voor de architect | algemene tips]] en een beschrijving van bepaalde [[Hulpmiddelen voor de architect | hulpmiddelen ]] die je in je werk kunt gebruiken. [[Werken onder architectuur]] beschrijft hoe je architectuur binnen een gemeente stapsgewijs kunt ontwikkelen en wat de rol van een architect daarbij is. [[Praktijkvoorbeelden]] toont een aantal voorbeelden van hoe gemeenten de GEMMA hebben toegepast.
+|icon=play_arrow}}<!--
+
+-->{{#accordionItem:
+|title=Hoe lees ik Archimate-diagrammen?
+|content=Diagrammen waarbij de Archimate-taal wordt gebruikt visualiseren op een eenduidige manier architectuurelementen en hun relaties. Zonder kennis van de Archimate-taal is het soms lastig om de precieze betekenis te begrijpen. De pagina [[Toelichting_Archimate | Toelichting Archimate]] geeft algemene informatie over gebruik van Archimate binnen de GEMMA. [[Toelichting overzichtsdiagrammen]] licht toe hoe overzichtsdiagrammen zijn opgebouwd en moeten worden gelezen.
+|icon=play_arrow}}<!--
+
+-->{{#accordionItem:
+|title=Waarom heeft VNG voor de tool Archi gekozen?
+|content=Het GEMMA ArchiMate-model wordt gemaakt en beheerd met Archi. 
+Belangrijke redenen waarom daarvoor gekozen zijn dat Archi open source en laagdrempelig in gebruik is, samenwerking via Git ondersteunt en gebruik maakt van het standaard ArchiMate Exchange File Format (AMEFF). 
+Met plugins zoals coArchi en jArchi kan bovendien gezamenlijk aan het model worden gewerkt en kunnen beheertaken worden geautomatiseerd.
+VNG Realisatie adviseert gemeenten niet over welke architectuurtool zij moeten gebruiken.
+
+Lees de volledige toelichting op: '''[[Waarom heeft VNG voor de tool Archi gekozen|Waarom heeft VNG voor de tool Archi gekozen?]]'''
+|icon=play_arrow}}<!--
+
+-->{{#accordionItem:
+|title=Hoe blijf ik op de hoogte?
+|content=Er veranderen allerlei dingen binnen de GEMMA en de website gemmmaonline.nl. De pagina [[Op de hoogte blijven]] beschrijft verschillende manieren waarop je van bepaalde zaken op de hoogte kunt blijven.
+|icon=play_arrow}}<!--
+
+-->{{#accordionItem:
+|title=Wat als mijn vraag er niet bij staat?
+|content=Als je vraag niet op deze pagina staat kun je proberen om via de zoekbox of het menu antwoord op je vraag te krijgen. Lukt dat niet, of denk je dat het een vraag is die meer mensen hebben, stuur ons dan een bericht via [mailto:Gemmaonline@VNG.nl GEMMAOnline@VNG.nl]. 
+|icon=play_arrow}}<!--
+
+-->{{#accordionShow:}}

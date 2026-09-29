@@ -1,0 +1,35 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+}}
+[[Categorie:Doelgroepen]]<!-- {{DISPLAYTITLE: {{SUBPAGENAME}}}} -->
+{{DISPLAYTITLE: Adviseur informatievoorziening}}
+{{Persona/indeling|Als adviseur informatievoorziening bouw ik bruggen tussen inhoud van het werk en Informatiesystemen op tactisch en strategisch niveau. Ik adviseer collega's over bijvoorbeeld beveiliging en privacy en houd de organisatie op hoogte van trends en ontwikkelingen.
+|De informatie die ik nodig heb is hoog over. Wat is er gaande? Zijn er ontwikkelingen waar we iets mee moeten? Moeten we iets aanpassen vanwege een wetswijziging?
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = De GEMMA gebruik ik om een beeld te krijgen van hoe onze applicaties aansluiten op ketenprocessen. 
+* [[Wat is de basisarchitectuur]]
+* [[Bedrijfsarchitectuur]]
+* [[Informatie-architectuur]]
+* [[Projecten]]
+
+In mijn werk als {{SUBPAGENAME}} maak ik gebruik van de GEMMA
+* [[Werken onder architectuur]]
+* [[Wat is een standaard]]
+* Wat is een [[Thema-architectuur]]?
+
+Ik wil inhoudelijke informatie kunnen vinden, ook om te delen met collega's.
+* [[GEMMA standaardenlijst]]
+* [[Thema-architectuur Werken met API's]]
+|titel2  = Meer informatie
+|inhoud2 = Welke software is beschikbaar en welke applicaties gebruiken (andere) gemeenten?
+* [https://www.softwarecatalogus.nl/ GEMMA Softwarecatalogus]
+* [https://github.com/VNG-Realisatie Github VNG Realisatie]
+Ik moet op de hoogte blijven van algemene trends en ontwikkelingen.
+* [https://forum.vng.nl Forum van VNG]
+* [https://vng.nl/gemeentelijke-uitvoering Gemeentelijke Uitvoering (GGU) projecten]
+* [https://vng.nl/praktijkvoorbeelden Praktijkvoorbeelden van gemeenten] op VNG.nl
+|hoogte = 600px
+}}
+}}

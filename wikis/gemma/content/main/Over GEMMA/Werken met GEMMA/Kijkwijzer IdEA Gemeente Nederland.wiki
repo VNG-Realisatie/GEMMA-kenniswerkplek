@@ -1,0 +1,252 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=Beheerder
+}}
+[[Categorie:Werken met GEMMA]]
+De Kijkwijzer bevat een toelichting op hoofdlijnen op de visualisatie van De Gemeente Nederland.
+
+De visualisaties zijn tot stand gekomen met behulp van de Interactieve en dynamische Enterprise Architectuur (IdEA) werkwijze. Deze werkwijze is binnen het Rijk ontwikkeld en is bedoeld om met name bestuurders overzicht en inzicht te bieden in de relatie tussen taken of diensten die geleverd worden aan de maatschappij, de werkprocessen die daarvoor nodig zijn, de informatievoorziening en ondersteunende ICT-middelen om de processen te kunnen uitvoeren en de diensten te kunnen leveren.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image1.png|center|400px|De IdEA werkwijze|kaderloos|link=]] 
+
+Het is bij deze werkwijze belangrijk dat alle betrokken partijen hun inbreng hebben. Het zorgt voor wederzijds begrip, een gemeenschappelijk en begrijpelijk referentiekader en draagvlak voor de gewenste veranderingen. De visualisatie van De Gemeente Nederland is in een serie workshops tot stand gekomen door het verwerken van de input van afgevaardigden vanuit de gemeenten Zwolle, Hilversum, Deventer, Kampen, Utrecht en de VNG. De namen en contactgegevens van de betrokkenen personen zijn onderaan deze pagina te vinden.
+
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image2.png|center|1000px|Gemeente Nederland visualisatie|link=https://www.gemmaonline.nl/images/gemma/6/63/IdEA-Gemeente-NL-250218-voor-web.png]]
+
+== Doel ==
+
+De visualisatie helpt IV-collega's bij een Nederlandse gemeente om informatievoorziening binnen een gemeente bespreekbaar te maken met zijn/haar bestuurder en beslissers, of met collega's die in een ander vakgebied dan IV of ICT werkzaam zijn. En daarmee de samenhang kunnen laten zien tussen dienstverlening en wettelijke taken van een gemeente, de processen om dit uit te voeren, de informatie nodig in die processen, de applicaties die het werk ondersteunen en de benodigde infrastructuur.
+
+Daarnaast helpt de visualisatie om bespreekbaar te maken welke gebreken er zijn de IV en wat nodig is om dit op te lossen dan wel welke ontwikkelingen er nu al spelen.
+
+Bovendien moet elke IV-collega de plaat kunnen gebruiken om verandertrajecten aan te wijzen en zo de verandering beter te kunnen duiden. De visualisatie dient als praatplaat en is eigenlijk nooit af of volledig. De wereld van een gemeente is continue aan verandering onderhevig en de visualisatie ondersteunt om het gesprek daarover te voeren.
+
+De visualisatie is zo opgezet dat het door iedere gemeente te gebruiken is. Het besef is er uiteraard dat er smaakverschillen zijn tussen gemeenten en dat per gemeente de visualisatie verbijzonderd kan worden indien dat wenselijk is.
+
+== Opbouw ==
+
+De visualisatie kent een opbouw in lagen. Op deze lagen is een groot aantal objecten en symbolen te zien waarbij een verhaal te vertellen valt. De lagen hebben een onderlinge samenhang en kennen een logische opbouw.
+
+De bovenste laag is de wereld van de gemeente waarin de gemeente wettelijke taken uitvoert en diensten levert aan haar burgers en bedrijven. De tweede laag is de gemeentelijke organisatie met domeinen en processen die uitgevoerd worden (al dan niet uitbesteed) om de diensten te leveren en de wettelijke taken uit te voeren. Op de derde laag zijn de ICT voorzieningen te zien waarmee informatie verwerkt wordt en die voor het uitvoeren van de processen nodig zijn. Ten slotte is op de onderste laag te zien welke techniek en infrastructuur nu gebruikt wordt. Samen vormt dit geheel de informatievoorziening of enterprise architectuur van een gemeente.
+
+== Laag 1 Dienstverlening samenleving ==
+
+Op deze laag staat een groot aantal symbolen en objecten die te maken hebben met de samenleving en de rol die de gemeente daarin in inneemt. De gemeente heeft verantwoordelijkheden, levert diensten en voert een aantal wettelijke taken uit, dit is gevisualiseerd op de bovenste laag (overigens is dit niet uitputtend op de visualisatie).
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image3.png|center|800px|Laag 1 Dienstverlening samenleving|link=]]
+
+Als we in het midden starten dan zien we een gemeentehuis staan. De vorm van het gemeentehuis komt op alle onderliggende lagen terug. Omdat in de onderliggende lagen feitelijk ingezoomd wordt op het gemeentehuis en wat daar gebeurt om de diensten aan haar burgers en bedrijven te kunnen leveren.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image4.png|center|601x300px|Het gemeentehuis waarvan de vorm in de andere lagen terugkomt|link=]]
+
+Bij het gemeentehuis staan de symbolen waarmee wordt aangegeven via welk kanaal men met een gemeente digitaal kan communiceren: een chatbot, diverse social media kanalen en de website. Uiteraard is dat ook telefonisch mogelijk en via het fysieke loket.
+
+Voor het Gemeentehuis is een sloot te zien, dat symbool staat voor de gemeentelijke verantwoordelijkheid rondom watermanagement en havens.
+
+Vanuit het gemeentehuis lopen diverse verbindende wegen. Er zijn parken te zien met plantsoenen. Er staat een parkeerbord en een parkeerplaats. De gemeente is immer verantwoordelijk voor het regelen van het parkeren in de openbare ruimte en voor een goede bewegwijzering naar (openbare) parkeerlocaties. Er staan overal smarte lantarenpalen.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image5.png|right|181x213px|Rennende burger met een paspoort in de hand|link=]]Een burger rent naar het gemeentehuis met een paspoort in de hand, bijvoorbeeld om het paspoort te verlengen of aangifte te doen van een geboorte.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image6.png|right|256x255px|Evenement in een park|link=]]Links daarvan is een evenement gaande in een park (vergunning, openbare orde, gezondheid en milieu, verkeersmaatregelen, toezicht en handhaving).
+
+Verderop is een gebouw te zien voor opvang van asielzoekers (Spreidingwet). Dicht bij het gebouw voor opvang is een voetbalveldje, de gemeente biedt daarmee ruimte om te sporten. Naast het sportveld is een buurthuis, buurthuizen zijn een onderdeel van de sociale infrastructuur van een gemeente en een middel voor participatie en ontmoeting.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image7.png|601x368px|Een asielopvangcentrum|link=]]
+
+Rechts van de kerk staat een openbare school. Immers, de gemeente is verantwoordelijk voor de huisvesting en heeft de zorgplicht dat er voldoende openbare scholen zijn.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image8.png|right|151x133px|Hacker op een bankje|link=]]Er zit een persoon op het bankje bij de begraafplaats, dat is een hacker! Daar heeft een gemeente ook mee te maken, dit kunnen zelfs statelijke actoren zijn. Daarom is er rechts in de lucht ook een zwarte zwaan te zien. Een gemeente kan zich nog zo goed voorbereiden op dreigingen, echter er kan altijd iets onverwachts gebeuren. Dan is het van belang om de plannen en maatregelen paraat te hebben om de impact zoveel mogelijk te beperken.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image9.png|right|176x290px|Nederlandse en Europese vlaggen|link=]]De Nederlandse en Europese vlaggen symboliseren de wet- en regelgeving waar een gemeente uitvoering aan moet geven rekening mee te houden heeft. Vanuit Europa in toenemende mate, denk bijvoorbeeld aan de Europese Dienstenrichtlijn (onbelemmerde vestiging van dienstverleners), de NIS2 (netwerk en informatiebeveiliging) of milieu en klimaatregelgeving.
+
+Vooraan de vlaggen bevindt zich horeca, dat symbool staat voor bedrijven en waarbij vergunningen, handhaving en locatiebepaling vanuit de omgevingswet een rol spelen.
+
+Uiterst links staat een 5g zendmast waar een gemeente een belangrijke rol in heeft: vergunningverlening, locatie-bepaling, publieksvoorlichting, bewaken, etc.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image10.png|right|601x330px|Een woonwijk met vuilniswagen, zonnepanelen en een met lint afgezet huis|link=]]Als we terugkeren naar het midden zien we een rij huizen met daarvoor een vuilniswagen en afvalcontainers. Gemeenten zijn verplicht afval gescheiden in te zamelen.
+
+Bij het eerste huis staat een gemeente ambtenaar die thuis bij de inwoners komt om een "keukentafelgesprek" te voeren.
+
+Het tweede huis van links is afgezet met een lint, bijvoorbeeld als gevolg van een veiligheidsincident zoals een brand of gaslek.
+
+Verder zien we zonnepanelen, bijvoorbeeld doordat een gemeente een subsidie verstrekt heeft dat past bij het lokale duurzaamheidsbeleid van de gemeente. Tot slot zijn er ballonnen want er is een kind geboren. Daarvoor moet aangifte gedaan worden bij de gemeente.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image11.png|left|601x294px|Monumentaal pand de Peperbus|link=]] Naast de rijtjeshuizen zien we de Peperbus (als voorbeeld van een monumentaal gebouw) een gemeentelijke begraafplaats. Een gemeente is verantwoordelijk voor beheer en onderhoud en de gemeente regelt de uitgifte van graven en het vastleggen van grafrechten.
+
+Bij de kerk zien we een oudere inwoonster waar een gemeente vanuit de Wmo een belangrijke verantwoordelijkheid voor heeft.
+
+Verder naar achteren zien we een industrieterrein, kantoorgebouwen inclusief een distributiecentrum met daarboven "omgevingsplannen". Hiermee wordt vastgesteld hoe de ruimte binnen de grenzen van de gemeente gebruikt mag worden.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image12.png|center|800px|Omgevingsplannen|link=]]
+
+Rechts van het buurthuis ligt een wijk. We zien verkeerslichten, wegen, groenvoorziening, etc. Allemaal verantwoordelijkheden van een gemeente.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image13.png|right|509x365px|Een stadswijk met verkeerslichten, wegen en groenvoorziening|link=]]
+
+Helemaal links van de plaat is een boerderij met landbouw en veeteelt te zien, waar de gemeente verschillende verantwoordelijkheden in heeft: ruimtelijke ordening, milieu en natuurbeheer of stimuleren van innovatie en duurzaamheid. Opvallend en actueel is dat er een wolf naar het vee staat te kijken.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image14.png|516x200px|Een boerderij en landbouw|link=]]
+
+Aan de voorkant zien we een bouwplaats. De gemeente is er voor bouwvergunningen, veiligheid en toezicht en handhaving.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image15.png|right|515x241px|Een bouwplaats|link=]]
+
+De 3 bijzondere gemeenten Bonaire, Saba en St Eustatius (Caribisch Nederland) zijn onderdeel van deze visualisatie en ook getekend. 
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image16.png|right|339x334px|De 3 bijzondere gemeenten Bonaire, Saba en St Eustatius|link=]]
+
+In de linkerbovenhoek van de visualisatie bevindt zich een onweerswolk, die de uitdagingen symboliseert waarmee gemeenten te maken hebben in de context van klimaatverandering.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image17-Onweerswolk.png|493x299px|Onweerswolk die klimaatverandering symboliseert|link=]]
+
+Tenslotte heeft een gemeente ook een verantwoordelijkheid voor wat er zich in de gemeentelijk grond bevindt, denk aan riolering, kabels voor verkeersinstallaties, vergunningverstrekking voor glasvezel, etc.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image18.png|500x320px|Riolering en ondergrondse kabels|link=]]
+
+== Laag 2 Organisatie en (Keten)processen ==
+
+Er is een gemeentelijke organisatie nodig waarin processen worden uitgevoerd om de dienstverlening en de taken zoals te zien is op de bovenste laag uit te kunnen voeren. Hoe dit in zijn algemeenheid bij een gemeente georganiseerd is, is zichtbaar op de tweede laag: Organisatie en (Keten)processen.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image18-19-Laag2.png|center|800px|Laag 2 Organisatie en (Keten)processen|link=]]
+
+De vorm en kleur van de grondlaag komt overeen met de vorm van het gemeentehuis op de bovenste laag. Licht paars is wat binnen een gemeente wordt uitgevoerd, de groene vlakken rechts is wat is uitbesteed of wat in samenwerkingsverbanden wordt uitgevoerd.
+
+In het midden staan 4 domeinen van waaruit de dienstverlening plaatsvindt: Sociaal, Openbare orde en veiligheid, Fysieke leefomgeving en Publieksdiensten. Op deze 4 vlakken staan symbolen en representatieve voorbeeld en van diensten.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image19.png|center|601x464px|Dienstverlening vanuit 4 domeinen|link=]] 
+
+Bij Publieksdiensten staat de website waarop informatie staat, aanvragen gedaan of afspraken gemaakt kunnen worden, etc. Verder is het fysieke gemeentelijke loket te zien.
+
+Op het vlak Fysieke leefomgeving staan objecten zoals een bouwkraan, een tafel waaraan overlegd en gepland wordt over bijvoorbeeld de aanleg of het onderhoud van fietspaden of wegen. Er is een digitaal scherm te zien met daarop de digitale variant in 3D (digital twin) van de gemeente.
+
+Op het vlak van het Sociaal domein staat een persoon met een hulpvraag, bijvoorbeeld over werk en inkomen, over WMO-dienstverlening of over een rollator die door de gemeente beschikbaar kan worden gesteld. Er staat een robot die kan ondersteunen bij het uitvoeren van repeterende taken.
+
+Bij Openbare orde en veiligheid zijn BOA's te zien, die hier symbool staan voor de taken en diensten die hier onder vallen met als doel het waarborgen van de veiligheid en het handhaven van de openbare orde.
+
+In het midden staat op een verhoging een map met een dossiernummer. In de 4 domeinen wordt zaakgericht gewerkt.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image20-OrganisatieKaders.png|center|436x309px|Verplaatsbare afzetlinten als symbool voor kaders|link=]]
+
+Opvallend zijn ook de verplaatsbare afzetlintjes (zoals gebruikt bij een luchthaven). Dit symboliseert de kaders die gesteld worden, waarbinnen gewerkt wordt en de richting waarin de ontwikkelingen plaatsvinden. Deze kaders komen veelal de vakgebieden die nu geplaatst zijn in het plateau van de Bedrijfsvoering. Denk aan kaders die de wetgeving stelt of bijvoorbeeld inkoop of communicatie afspraken, en ook aan kaders en richting die vanuit Informatievoorziening wordt aangegeven, bijvoorbeeld vanuit architectuur of vanuit informatiebeveiliging.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image21.png|right|500px|Loopbruggen als verbinding met ketenpartners en leveranciers|link=]]Rechts van de domeinen zijn loopbruggen te zien van en naar ketenpartners en naar partijen aan wie taken zijn uitbesteed. Bijvoorbeeld het innen van lokale belastingen (de zak met euro's) en bij samenwerkingsverbanden partijen als de provincie, de veiligheidsregio of een gemeenschappelijke regeling waarin verschillende bestuursorganen samenwerken.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image22-BedrijfsvoeringEnBestuur.png|572x370px|Bedrijfsvoering en bestuur|link=]]
+Links van de vier domeinen staat de ondersteunende bedrijfsvoering. Daarboven de gemeentesecretaris als directeur van de gemeentelijke organisatie en verbindende schakel tussen het bestuur (college van B&amp;W) en de ambtelijke organisatie.
+
+Dan uiterst links is het college van Burgemeester en Wethouders te zien en de Gemeenteraad en griffier.
+
+Om de tweede laag is een blauwe buis te zien. Deze buizen zijn ook op de lagen er onder gevisualiseerd en er zijn aan weerszijden van de lagen verticale blauwe buizen zichtbaar. Deze buizen staan symbool voor de data en informatie die tussen de lagen stromen. Er wordt informatie verwerkt, opgeslagen, opgehaald etc uit systemen en wordt gebruikt in processen om uiteindelijk de gemeentelijke taken goed te kunnen uitvoeren. Deze data (nulletjes en eentjes zoals te lezen op de rechter verticale blauwe buis onderaan) stroomt heen en weer tussen de lagen door deze buizen.
+
+In het uitvoeren van processen wordt informatie verwerkt: er worden nieuwe dossiers gecreëerd of juist verwijderd, mutaties uitgevoerd, er wordt informatie bekeken of gecontroleerd, sensor data van slimme straatverlichting wordt omgezet in informatie, etc. De wolk aan data of informatie in allerlei verschijningsvormen (documenten, bestanden, etc) die naar beneden dwarrelt onder de organisatie en processen-laag staat daar symbool voor.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image23.png|center|200px|De lift komt aan op een plateau met daarop de afkorting ASPEIT|link=]]
+
+Op de tweede, derde en vierde laag is aan de linkerkant de afkorting ASPEIT te zien: Architectuur; Security; Privacy: Ethiek; Informatiebeheer en Technologie. Op deze aspecten wordt beleid en afspraken geformuleerd (al dan niet wettelijk verplicht) en wordt gekeken of de organisatie compliant is aan deze afspraken.
+
+== Laag 3 Informatie en applicatie ==
+
+Informatie wordt verwerkt bij uitvoer van processen met behulp van applicaties. De informatie komt uit of wordt opgeslagen in databases en registers. Dit alles is te zien op de derde laag: Applicatie en Informatie. De laag heeft weer dezelfde vorm als het gemeentehuis.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image24.png|center|1000px|Laag 3 Informatie en applicatie|link=]]
+
+In het midden staat een aantal vlakken. Vooraan staan de werkplek applicaties. Vanuit de werkplek applicaties lopen buizen. Meer naar achteren van en naar het datawarehouse ten behoeve van data analyses.
+
+Naar links naar het digitale en het fysieke archief rekening houdend met de eisen die de Archiefwet stelt (duurzaam toegankelijk, bewaartermijnen, overbrenging, etc).
+
+Aan de rechterkant lopen buizen waardoor data stroomt van en naar Common Ground en daarachter Zaaksystemen. Wat opvalt is dat de zaaksystemen (ten behoeve van een proces zoals bijvoorbeeld een vergunningsaanvraag) er rommelig en onoverzichtelijk bij staan. Zo wordt dit momenteel ervaren: er is geen overzicht, vele koppelingen, nieuwe en oude (legacy) systemen naast elkaar, dubbele functionaliteit, etc.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image25.png|right|300px|Common Ground met herbruikbare bouwblokken|link=]]
+
+Common Ground richt zich op het moderniseren, verbeteren en standaardiseren van gegevensuitwisseling. Vandaar dat op het vlakje Common Ground een lego grondplaat is te zien met standaard herbruikbare bouwblokken. Er liggen afspraken en standaarden aan ten grondslag zodat snel nieuwe functionaliteit gebouwd en gekoppeld kan worden.
+
+Tussen de werkplekapplicaties, de zaaksystemen en Common Ground lopen databuizen van en naar de Basisregistraties (rechts): de BAG, BRP, WOZ, BGT en de BRO worden door de gemeenten beheerd en bijgehouden.
+
+Dan uiterst rechts, niet meer op de grondplaat van de gemeente maar eigen vlakken de applicaties en registers (denk aan BKR, het RDW kentekenregister en Suwinet) van ketenpartijen en partners (zie er recht boven op laag 2).
+
+Links van het fysieke en digitale archief staat een Digitale Twin van een Gemeente, een virtuele representatie van een object of soms van (een deel van) een gemeente. Gemeenten die dat hebben kunnen daar allerlei scenario's mee simuleren voor diverse doeleinden.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image26.png|left|131x104px|Symbool met groen schild en vink voor bewaking en beveiliging|link=]]
+Het groene symbool met een vinkje in een schild gaat over de operationele bewaking en beveiliging van informatie. Het doel daarvan is het waarborgen van de ''beschikbaarheid'' (de continuïteit), ''integriteit'' (de juistheid en volledigheid) en ''vertrouwelijkheid'' (het beschermen tegen ongeautoriseerde toegang) van informatie en de informatievoorziening en het beperken van de gevolgen van eventuele beveiligingsincidenten.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image27.png|left|200px|Lift met afspraken, regels, weten en richtlijnen|link=]]Tenslotte is uiterst links een lift te zien. Deze lift gaat over het opstellen van beleid en afspraken (al dan niet wettelijk verplicht) en toetsen aan compliancy. Op iedere laag zijn er afspraken, regels, wetten, richtlijnen etc. waaraan door een gemeente voldaan moet worden. Vandaar dat de lift tussen de lagen omhoog en omlaag kan. Op laag 3, waar de lift nu staat, moet er vanuit compliancy aandacht zijn voor Security (BIO, NIS2), Ethiek (bijvoorbeeld de AI act en wat ethisch verantwoord is ten aanzien van de inzet van AI), Privacy (AVG) en afspraken voorvloeiend uit de Gemma (de gemeentelijke referentie architectuur). Overheidsinformatie moet vindbaar, beschikbaar, leesbaar, interpreteerbaar, betrouwbaar en toekomstbestendig zijn: DUTO. Er zijn totaal 21 wetten die eisen stellen aan informatie (beheer). Een specifiek voorbeeld van afspraken die gemaakt zijn is de wegaanleg, waarbij er een afhankelijkheid is in de informatiestromen tussen verschillende partijen (aannemers, nutsbedrijven, andere overheden, etc) en de gemeenten en de noodzaak van standaarden daarin.
+
+== Laag 4 Techniek en Infrastructuur  ==
+
+Applicaties (laag 3) maken gebruik van een infrastructuur. Of ook wel, worden gebouwd op een infrastructuur. Dat deel van het IV-landschap van een gemeente is zichtbaar op de onderste laag.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image28.png|center|1000px|Laag 4 Techniek en Infrastructuur|link=]]
+
+In het midden zien we de vorm van een wolk.
+
+We zien een Europese en een Amerikaanse vlag want er wordt gebruik gemaakt van cloudoplossingen (infra, platform of applicaties) die zich op Europees grondgebied bevinden maar ook Amerikaanse. Uiteindelijk staan er in een cloud ook fysieke servers (containers) die op beide cloud grondplaten zichtbaar zijn. De Rijkscloud bevindt zich op het Europese deel, sterker nog, in Nederland. Common Ground maakt gebruik van diverse cloudoplossingen, Europees en Amerikaans. De essentie van het gebruiken van Cloud is dat het schaalbaar en wendbaar is en dat er betaald wordt naar het gebruik van de cloud diensten (dus geen aanschaf, maar Software as a Service, oftewel SaaS), vandaar het pijltje met het euroteken bij cloud. Het uitroepteken bij de Amerikaanse vlag wil aangeven dat extra voorzichtigheid geboden is aangezien de risico's hier anders worden ingeschat dan bij Europese of Nederlandse clouddiensten, denk aan gegevensbescherming en data-soevereiniteit.
+
+Behalve cloud oplossingen maken gemeenten ook gebruik van on premise (op eigen locatie of bekende rekencentra op vaste plekken) infrastructuur, housing en hosting. Dit is links te zien. Er zijn relatief veel mensen aan het werk: configureren, beheer, etc. Ook hier staan weer servers en ook Common Ground maakt gebruik van on premises infrastructuur. Er staat een hoge muur omheen om aan te geven goed beveiligd is en op de achterwand in het blauw staan symbolen voor IAM (identity en access-management) en ESB (enterprise service bus) als extra aandachtspunten voor beheer in traditionele on premise omgevingen.
+
+[[Afbeelding:Kijkwijzer-Gemeente-Nederland-image29.png|center|400px|On premise rekencentrum|link=]]
+
+Tot slot is op alle plekken een paal met surveillance camera's te zien, dat symbool staat voor de stringente beveiliging ervan.
+
+{| class="wikitable"
+|-
+! Naam
+! Gemeente
+! Functie
+! E-mail adres
+|-
+! Eelco Zomer
+| Zwolle
+| Enterprise architect en initiatiefnemer van deze visualisatie
+| [mailto:e.zomer@zwolle.nl e.zomer@zwolle.nl]
+|-
+! Renze Zijlstra
+| Deventer
+| Enterprise architect DOWR
+| [mailto:renze.zijlstra@dowr.nl renze.zijlstra@dowr.nl]
+|-
+! Rick van Denderen
+| Kampen
+| Chief Information Officer
+| [mailto:r.vandenderen@kampen.nl r.vandenderen@kampen.nl]
+|-
+! Jeroen Veen
+| Utrecht
+| Concernarchitect
+| [mailto:jeroen.veen@utrecht.nl jeroen.veen@utrecht.nl]
+|-
+! John Kropman
+| Deventer
+| Chief Information Officer
+| [mailto:jam.kropman@deventer.nl jam.kropman@deventer.nl]
+|-
+! Jaap Huib van der Knaap
+| Hilversum
+| Enterprise architect
+| [mailto:jh.vanderknaap@hilversum.nl jh.vanderknaap@hilversum.nl]
+|-
+! Mark Backer
+| VNG
+| ICT-architect
+| [mailto:mark.backer@vng.nl mark.backer@vng.nl]
+|-
+! Suzie Joku
+| SIEN Consultants
+| Procesarchitect
+| [mailto:suzie.joku@sienconsultants.nl suzie.joku@sienconsultants.nl]
+|-
+! Frank van Dam
+| ICTU
+| Coördinerend specialistisch adviseur
+| [mailto:frank.vandam@ictu.nl frank.vandam@ictu.nl]
+|-
+! Serina van de Kragt
+| ICTU
+| Senior adviseur
+| [mailto:serina.vandekragt@ictu.nl serina.vandekragt@ictu.nl]
+|-
+! Mavi Cristache
+| ICTU
+| Senior adviseur
+| [mailto:mavi.cristache@ictu.nl mavi.cristache@ictu.nl]
+|}

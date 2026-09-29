@@ -1,0 +1,77 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Architectuurtools,
+}}[[Category:ArchiMate modelleren]]__TOC__
+== Motivatielaag ==
+=== Architectuurprincipes ===
+Deze view toont de ArchiMate modellering van de NORA en GEMMA architectuurprincipes.
+
+{{ToonViewGEMMA|viewid=03fec5e4-4d09-45b2-9ab7-6b82c6214e06|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA modellering bedrijfsfunctie (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA|viewid=03fec5e4-4d09-45b2-9ab7-6b82c6214e06|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|attributen=Bron|type=}}<!--GEMMA modellering bedrijfsfunctie (ArchiMateView)-->
+
+== Bedrijfsarchitectuurlaag ==
+
+=== Bedrijfsfuncties ===
+
+Deze view toont de ArchiMate modellering van de architectuurmodellen 'Bedrijfsfuncties' en 'Bedrijfsfuncties en domeinen'
+
+{{ToonViewGEMMA|viewid=4393238d-26be-4f91-be75-ba1f1f32ecb8|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA modellering bedrijfsfunctie (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA|viewid=4393238d-26be-4f91-be75-ba1f1f32ecb8|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|attributen=Bron|type=}}<!--GEMMA modellering bedrijfsfunctie (ArchiMateView)-->
+
+
+=== Bedrijfsobjecten ===
+Deze view toont de ArchiMate modellering van de bedrijfsobjecten. De bedrijfsobjectmodellen zijn afgeleid van het Gemeentelijk Gegevensmodel.
+
+{{ToonViewGEMMA|viewid=516c67ca-e47b-4f63-9b70-f2d4021b6d4c|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA modellering bedrijfsfunctie (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA|viewid=516c67ca-e47b-4f63-9b70-f2d4021b6d4c|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|attributen=Bron|type=}}<!--GEMMA modellering bedrijfsfunctie (ArchiMateView)-->
+
+=== Bedrijfsprocessen ===
+
+Deze view toont de ArchiMate modellering in de GEMMA procesarchitectuur.
+
+{{ToonViewGEMMA|viewid=6dd69073-b6f7-4c52-87cc-75617502b8bf|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA modellering bedrijfsproces (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA|viewid=6dd69073-b6f7-4c52-87cc-75617502b8bf|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|attributen=Bron|type=}}<!--GEMMA modellering bedrijfsproces (ArchiMateView)-->
+
+
+=== Producten en voorzieningen ===
+
+Gewenste aansluiting van de GEMMA op de NORA modellering van producten en voorzieningen
+
+{{ToonViewGEMMA|viewid=b312ff6e-788e-453b-91ec-9d85cf09e035|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA modellering product en service (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA|viewid=b312ff6e-788e-453b-91ec-9d85cf09e035|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|attributen=Bron|type=}}<!--GEMMA modellering product en service (ArchiMateView)-->
+
+== Informatiearchitectuurlaag ==
+
+=== Applicatieservices ===
+
+Deze view toont de ArchiMate modellering achter de GEMMA informatiearchitectuur views
+
+{{ToonViewGEMMA|viewid=c14b0884-fb87-4704-9359-005e573f8e31|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA modellering informatiearchitectuur (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA|viewid=c14b0884-fb87-4704-9359-005e573f8e31|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|attributen=Bron|type=}}<!--GEMMA modellering informatiearchitectuur (ArchiMateView)-->
+
+
+=== Specialisaties applicatiecomponent ===
+
+Deze view toont de specialisaties van de applicatiecomponent in GEMMA. Deze specialisaties maken het mogelijk specifieke gemeentelijke applicatietypen te definiëren en geven aan welke rol een applicatie heeft in een intern of externe koppeling (met een buitengemeentelijke component).
+
+{{ToonViewGEMMA|viewid=83f66ea3-7cf3-4d40-80d5-231f7428e2ff|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA specialisaties applicatiecomponent (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA|viewid=83f66ea3-7cf3-4d40-80d5-231f7428e2ff|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|attributen=Bron|type=}}<!--GEMMA specialisaties applicatiecomponent (ArchiMateView)-->
+
+=== Standaarden ===
+
+Deze view toont de verschillende manieren waarop de standaarden uit de GEMMA-standaardenlijst kunnen worden voorgeschreven voor het realiseren van koppelingen, applicaties en services.
+
+API- en koppelingsstandaarden worden bij voorkeur voorgeschreven via een applicatie-interface. Door standaarden via de applicatie-interface voor te schrijven, wordt expliciet gemaakt of een applicatie de standaard ondersteunt vanuit de rol van aanbieder of afnemer. Dit bevordert duidelijkheid en consistentie in de implementatie van standaarden.
+
+{{ToonViewGEMMA|viewid=0229993b-782e-4b3a-9368-5a563422a1e5|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA modellering beperking (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA|viewid=0229993b-782e-4b3a-9368-5a563422a1e5|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|attributen=Bron|type=}}<!--GEMMA modellering beperking (ArchiMateView)-->
+
+
+== Technische architectuurlaag ==
+
+=== Technologieservices en cloud ===
+Deze view toont de ArchiMate modellering van de views Technologiecomponenten en -services en de Cloud dienstverleningsmodellen
+
+{{ToonViewGEMMA|viewid=d8b8d026-eebe-4a24-9df8-cfc485f93cf0|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|label=}}<!--GEMMA modellering beperking (ArchiMateView)-->
+{{ToonTabelVanViewGEMMA|viewid=d8b8d026-eebe-4a24-9df8-cfc485f93cf0|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4|attributen=Bron|type=}}<!--GEMMA modellering beperking (ArchiMateView)-->

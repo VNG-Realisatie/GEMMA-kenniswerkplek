@@ -1,0 +1,31 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=Beheerder Procesarchitectuur
+}}
+[[Category:Praktijkvoorbeeld]][[category:Procesarchitectuur]]
+Veel gemeenten zijn bezig met het invoeren en of het verbeteren van processen met als doel om de bedrijfsvoering te verbeteren, het zogeheten procesmatig werken. Hierbij wordt gekeken of de effectiviteit en efficiency van het werk c.q. het productieproces kan worden verbeterd. Dit aan de hand van verschillende methodieken. In dergelijke trajecten wordt gestart met het onder de loep nemen van de processen, waarbij overbodige stappen uit het proces worden gehaald en andere processtappen worden verbeterd. De zorg voor proceskwaliteit centraal staat. Deze trajecten zijn niet altijd ingegeven om de waarde voor en de dienstverlening naar de klant te verbeteren. Bedrijfseconomische, lees kostenaspecten voeren vaak de boventoon. Dat neemt niet weg dat er ook duidelijke verbeteringen voor de klant worden bewerkstelligd en dat hierbij invoering van procesmatig werken als extra opbrengst is meegenomen. 
+
+{{Landingspagina
+  |titel1  = Praktijkvoorbeelden & Scenario's
+  |inhoud1 = '''Van gemeenten'''
+
+Door gemeenten gedeelde praktijkvoorbeelden.<br>
+
+* [[Processenlandschap en Processenlijst voor gemeenten door gemeente Hilversum|Processenlandschap en Processenlijst]] door gemeente Hilversum
+* [[Procesarchitectuur Eigenaarschap]] door gemeente Heerlen
+'''Scenario's VNG i.s.m. gemeenten'''<br>
+Uitgewerkte scenario's in de procesarchitectuur voor gemeenten.<br>
+
+* [[Procesarchitectuur Referentieprocessen]]
+* [[Procesarchitectuur Uitwerking bedrijfsproces 'Vaststellen omgevingsplan']]
+* [https://vng.nl/artikelen/werkende-processen Werkende processen] op VNG.nl
+  |titel2  = Meer informatie
+  |inhoud2 = '''Methodieken'''
+
+Meerdere verschillende methodieken worden bij gemeenten gebruikt om processen te beschrijven en te verbeteren.
+
+* [https://vng.nl/artikelen/generieke-klantroutes Generieke klantroutes van VNG] geven inzicht in hoe inwoners en ondernemers zich over het algemeen door gemeentelijke dienstverlening bewegen.
+* [https://www.lean.nl/wat-is-lean/ Lean] helpt je processen slimmer en eenvoudiger te maken door verspillingen weg te nemen en klantwaarde centraal te zetten.
+ |hoogte = 450px
+}}

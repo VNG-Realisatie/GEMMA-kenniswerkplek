@@ -1,0 +1,104 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder
+}}
+[[Category:Werken met GEMMA]]
+[[Category:Toelichtingen]]
+<pre>We gebruiken hier de term 'applicatie' als aanduiding van 'een eenheid van software'. In de praktijk worden ook andere termen gebruikt om min of meer hetzelfde aan te duiden, zoals: (software)pakket, (software)component, (informatie)systeem, programma of toepassing. </pre>
+De GEMMA is  een referentiearchitectuur voor alle Nederlandse gemeenten. Ze vormt een richtinggevend architectuurkader, maar schrijft niet dwingend voor welke ontwerp- en implementatiekeuzes gemeenten moeten maken. Zo kunnen gemeenten verschillende keuzes maken bij het ontwikkelen en kopen van applicaties. Daarbij kunnen allerlei overwegingen een rol spelen. Lokale uitgangspunten zoals ‘herbruiken voor kopen voor ontwikkelen’ of ‘bij voorkeur open source software’ kunnen bijvoorbeeld meebepalen welke applicaties binnen een bepaalde context het meest geschikt zijn.
+
+Een van de factoren die een rol spelen bij het maken van keuzes is om wat voor type applicatie het gaat. Om dit te illustreren maken we onderscheid in 2 soorten, fundamenteel verschillende, soorten applicaties. De tweedeling is afgeleid van het door Gartner ontwikkelde [https://www.gartner.com/en/documents/1890915 pace layering model] dat 3 categorieën onderscheidt:
+#Systems of Innovation: Innovatieve applicaties waarmee is in te spelen op nieuwe eisen of kansen; deze applicaties kennen vaak een relatief korte levensduur.
+#Systems of Differentiation: Sector-specifieke Applicaties die unieke bedrijfsprocessen ondersteunen waarmee organisaties zich van elkaar kunnen onderscheiden.
+#Systems of Record: Stabiele applicaties die basisgegevens bijhouden en gestandaardiseerde bedrijfsprocessen afhandelen;  wetgeving speelt vaak een rol en beveiliging en robuustheid zijn cruciaal; deze applicaties kennen een lange levensduur.
+
+We onderscheiden hier meer innovatieve-applicaties ('systems of innovation') en meer traditionele-applicaties (’systems of record'). Beide soorten applicaties hebben hun waarde en kunnen geschikt zijn binnen een van de GEMMA afgeleide gemeentelijke architectuur. 
+
+Onderstaande tabel toont een aantal kenmerken van beide soorten applicaties .  Uiteraard is het onderscheid tussen beide soorten applicaties in de praktijk niet zo zwart-wit als hier wordt geschetst, maar om duidelijk te maken dat applicaties op tal van aspecten van elkaar kunnen verschillen.   
+{| class="wikitable"
+|+Kenmerken van meer traditionele versus meer innovatieve applicatie
+|
+|
+|'''Traditionele-applicaties'''
+|'''Innovatieve-applicaties'''
+|-
+| rowspan="8" |'''A'''
+|'''Karakter'''
+|Traditioneel, bewezen
+|Innovatief, nieuw
+|-
+|'''Bedrijfsprocessen'''
+|Bekend, Stabiel
+|Nieuw, Dynamisch
+|-
+|'''Prioriteit'''
+|Data, Back-end
+|Interactie, Front-end
+|-
+|'''Ontwerp'''
+|Wetgevingseisen
+|Gebruikerswensen
+|-
+|'''Focus'''
+|Betrouwbaarheid
+|Gebruiksvriendelijkheid
+|-
+|'''Aanpak'''
+|Waterval, Inkoop
+|Agile, Samenwerking
+|-
+|'''Wijzigingen'''
+|Wetgeving, gebruikersgroep
+|Gebruikerswensen
+|-
+|'''Levensduur'''
+|> 5 jaar
+|< 3 jaar
+|-
+| rowspan="2" |'''B'''
+|'''Functionaliteit-clustering'''
+|Verticaal, monoliet
+|Horizontaal, (micro)services
+|-
+|'''Functionaliteit-granulariteit'''
+|Grofmazig, Service-orientatie
+|Fijnmazig, Microservices
+|-
+| rowspan="3" |'''C'''
+|'''Software'''
+|Closed source
+|Open source
+|-
+|'''Technologie'''
+|Bewezen
+|Modern
+|-
+|'''Bepalend'''
+|Leveranciers
+|Gemeenten
+|-
+|'''D'''
+|'''Voorbeelden'''
+|DMS, Financien, Burgerzaken, Monumenten
+|Chatbot, ID-Wallet, Apps
+|}
+
+==== Toelichting ====
+'''A''' - Voor de bedrijfsvoering van gemeenten is het belangrijk dat applicaties op een robuuste manier, conform wetgeving, kritische en gestandaardiseerde bedrijfsprocessen ondersteunen. Daarvoor wordt vaak gebruik gemaakt van traditionele taakgerichte applicaties die, steeds vaker via een SAAS-model, door marktpartijen worden aangeboden. Dit type applicaties wordt langere tijd gebruikt en vervanging vindt vaak plaats via een formeel project. 
+
+Als gemeenten hun dienstverlening aan burgers en bedrijven fundamenteel willen verbeteren, gaan zij vaker op zoek naar Innovatie-applicaties. Meestal gaat het daarbij om front-end applicaties waarbij burgers en bedrijven op een moderne manier met de gemeente kunnen interacteren. Ontwikkeling ervan vindt vaker in samenwerking tussen gemeenten en leverancier plaats met een agile aanpak waarbij gebruikerswensen centraal staan.
+
+'''B''' - Applicaties kunnen meerdere soorten of juist hele specifieke soorten functionaliteit leveren. In het eerste geval kan een applicatie bijvoorbeeld alle benodigde functionaliteit omvatten: van interactie met eindgebruikers tot en met de functionaliteit om data vast te leggen en verstrekken. Stelt zo'n applicatie vastgelegde data niet voor extern gebruik beschikbaar dan is ze te typeren als een 'silo-applicatie'. Dat 1 applicatie/leverancier alle functionaliteit levert ontzorgt een gemeente, maar leidt ook tot meer afhankelijkheid van de leverancier.   
+
+Aan de andere kant van het spectrum bevinden zich applicaties die hele specifieke afgebakende functionaliteit leveren. Ze zijn bedoeld als 'component' om in samenwerking met met andere applicaties alle benodigde functionaliteit te leveren. Deze benadering leidt tot een flexibeler informatievoorziening waarin applicaties gemakkelijker zijn te vervangen en er minder leveranciersafhankelijkheid is. Om te zorgen dat applicaties goed op elkaar zijn afgestemd en samenwerken moet een gemeente vaak meer regie voeren.  
+
+'''C''' - Meer traditionele applicaties zijn specialistisch van aard en worden veelal door leveranciers ontwikkeld en als closed source software aangeboden. Voor gemeenten telt dan vooral belangrijk dat de applicatie voor langere tijd betrouwbaar werkt en betaalbaar is. 
+
+Bij applicaties die bedoeld zijn om te innoveren is vaak sprake van samenwerking tussen  gemeenten, die inhoudelijke kennis inbrengen, en leveranciers die software ontwikkelen. Daarbij wordt meer gebruik gemaakt van moderne technologie en de software wordt meestal als open source beschikbaar gesteld.  
+
+De GEMMA beschrijft de gemeentelijke architectuur op een generieke manier en kent daarbij een aantal fundamentele uitgangspunten. Bijvoorbeeld dat applicaties bij voorkeur via gestandaardiseerde API's data en functionaliteit met elkaar moeten kunnen uitwisselen. De GEMMA schrijft niet voor in welke mate en op welke manier dat precies moet gebeuren. Een handreiking zoals [[Globaal programma van eisen voor pakketsoftware]] licht toe een gemeente verschillende ambitieniveaus kan kennen waarbij de lokale context sterk mee bepaalt wat wenselijk en haalbaar is. Bij meer traditionele applicaties, waar zorgvuldig beheer van data cruciaal is, zullen API's bijvoorbeeld vaker alleen raadplegen van data toestaan, terwijl innovatieve applicaties vaak (ook) het wijzigen van data via API's ondersteunen.  
+
+Gemeenten hebben te maken met meerdere overheidsbrede en gemeentelijke programma's die een duidelijke voorkeur hebben voor gebruik van een bepaald type applicaties.  Om de Informatiekundige visie Common Ground te kunnen realiseren zijn bijvoorbeeld vaker innovatieve applicaties nodig, die gemeenten in staat stellen om meer regie te kunnen voeren op hun applicatie- en gegevenslandschap. Er is daarbij ook een voorkeur voor samen ontwikkelen en het publiceren van software als open source software.   
+
+Het is uiteindelijk aan de gemeenten om keuzes te maken die goed passen bij hun lokale situatie. De verwachting is dat het aantal innovatieve applicaties stapsgewijs zal toenemen, maar dat ook meer traditionele applicaties een blijvende rol zullen spelen binnen het gemeentelijk informatielandschap.

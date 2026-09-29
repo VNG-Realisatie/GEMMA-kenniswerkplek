@@ -1,0 +1,39 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=Beheerder Applicatiearchitectuur
+}}
+[[Category:Toelichtingen]]
+In de GEMMA proberen we de gemeentelijke wereld te modelleren met behulp van de architectuurbeschrijvingstaal ArchiMate. Door architectuurelementen op verschillende manieren te ordenen — bijvoorbeeld per functie en/of architectuurlaag — bieden de modellen inzicht in de samenhang en structuur van gemeentelijke processen, de informatievoorziening of de technische architectuur.
+
+Binnen de GEMMA Basisarchitectuur worden voor de architectuurlagen [[Strategie en motivatie]],  [[Bedrijfsarchitectuur]] en [[Technische architectuur]] overzichtsdiagrammen gebruikt die elementen hiërarchisch in groepen ordenen. Ze tonen de verschillende groepen waarin elementen op basis van een bepaald criterium zijn opgenomen. Voorbeelden hiervan zijn:
+
+*[[Architectuurprincipes]]
+*[[Bedrijfsfuncties]]
+*[[Technologiecomponenten en -services]]
+
+Bij het beschrijven van de architectuurlaag [[Informatie-architectuur]] worden referentiecomponenten en applicatieservices ook in groepen geordend. Maar om de diversiteit aan componenten en services goed te kunnen beschrijven worden daar (ook) meer uitgewerkte diagrammen gebruikt. Hierna volgt een een toelichting op hoe dit soort diagrammen zijn opgebouwd en moeten worden gelezen.
+
+==Toelichting informatiearchitectuur-diagrammen==
+Bij het beschrijven van de [[Informatie-architectuur]] worden referentiecomponenten en applicatieservices (ook) in groepen geordend. Daarbij worden worden bij sommige diagrammen meerdere criteria gebruikt om te bepalen in welke groep een element hoort. Er wordt beoordeeld of een element:
+
+*Bedoeld is voor gebruik binnen een bepaald domein of dat het gemeentebreed bruikbaar is (bijvoorbeeld een ‘Afvalbeheercomponent’ is specifiek bedoeld voor ondersteuning van taken binnen het domein ‘Fysieke leefomgeving’).
+*Specifiek of generiek van aard is (bijvoorbeeld een ‘Documentregistratiecomponent’ is generiek van aard en breed toepasbaar).
+*Gemeentelijke of buitengemeentelijk is (bijvoorbeeld DigiD is buitengemeentelijk).
+
+Referentiecomponenten en applicatieservices worden op een vergelijkbare manier geordend en afgebeeld binnen overzichtsdiagrammen zoals [[Applicatieservices]] en [[Referentiecomponenten en applicatieservices]]. Ze tonen onderscheiden groepen van elementen en gebruiken daarbij onderstaande hoofdindeling:
+[[Bestand:Overzichtsdiagram indeling.png|alt=Indeling overzichtsdiagrammen|geen|miniatuur|800x800px|Standaard indeling overzichtsdiagrammen binnen de Informatiearchitectuur]]Toelichting:
+*‘Informatiebeveiliging’ en ‘Verbinden’ zijn afgebeeld als een omvattend vlak omdat het aspecten betreft waar bij alle elementen aandacht aan moet worden besteed. Voor alle groepen van elementen geldt dat aandacht moet zijn voor het beveiligen van informatie en het samenwerken met andere elementen.
+*De drie donkerblauwe blokken visualiseren groepen met componenten die specifiek bedoeld zijn voor gebruik door respectievelijk: inwoners en ondernemers, gemeente en ketenpartners. Binnen een groep wordt onderscheid gemaakt in componenten die voor domeinspecifiek gebruik zijn bedoeld en componenten die breder toepasbaar zijn.
+*Het oranje blok ‘Gedeeld generiek’ groepeert componenten die breed toepasbaar zijn. Ze zijn neutraal van aard en bruikbaar voor zowel diensten richting inwoners en ondernemers, gemeente en ketenpartners.
+*Het onderste blok ‘Buitengemeentelijk’ omvat voor gemeenten relevante elementen van de VNG, sectorale partners en de landelijke overheid (in detail getoond via een [[GEMMA/id-e0f57689-624e-4079-b7f9-79d14bac22f4|apart diagram]]).
+
+Als voorbeeld toont onderstaande afbeelding voor iedere groep 1 referentiecomponent.
+[[Bestand:Overzichtsdiagram voorbeeld.png|alt=Voorbeeld overzichtsdiagram|geen|miniatuur|800x800px|Diagram met per groep 1 referentiecomponent]]
+
+Opmerkingen:
+
+*Naast de algemene overzichtsdiagrammen [[Applicatieservices]] en [[Referentiecomponenten en applicatieservices]] kent ook iedere GEMMA Domeinarchitectuur zo'n zelfde soort diagram.
+*De view [[Referentiecomponenten en bedrijfsfuncties]] gebruikt een eenvoudiger hiërarchische opzet waarmee zichtbaar wordt welke bedrijfsfuncties door welke referentiecomponenten worden ondersteund. 
+
+[[Categorie:Informatie-architectuur]]

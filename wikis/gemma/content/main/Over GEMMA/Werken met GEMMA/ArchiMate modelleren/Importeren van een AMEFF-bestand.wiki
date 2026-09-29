@@ -1,0 +1,50 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Architectuurtools,
+}}
+[[Category:ArchiMate modelleren]]
+
+Wil je het GEMMA ArchiMate-model gebruiken in een andere architectuurtool dan Archi? Gebruik dan het GEMMA AMEFF-bestand.
+
+Het GEMMA ArchiMate-model is ook beschikbaar als AMEFF-uitwisselbestand (The Open Group ArchiMate Model Exchange File Format) dat je in je eigen tool kunt importeren.
+
+Op deze pagina lees je waar je het GEMMA AMEFF-bestand downloadt, hoe je het importeert in je architectuurtool en hoe je je model actueel houdt na een nieuwe GEMMA-release. Werk je met de tool Archi en wil je het GEMMA-model rechtstreeks openen vanuit de archi-repository, zie dan [[Archi en git]].
+
+{{#accordionItem:
+|title=AMEFF-bestand downloaden en importeren
+|content='''Download het GEMMA AMEFF-bestand'''
+
+Wil je het GEMMA ArchiMate-model gaan gebruiken in je eigen architectuurtool, dan kun je het [https://github.com/VNG-Realisatie/GEMMA-Archi-repository/blob/master/export/GEMMA%20release.xml GEMMA AMEFF-bestand] vanaf GitHub downloaden.
+
+[[Bestand:GitHub download AMEFF.png|800px|Downloaden AMEFF-bestand van GitHub]]
+
+Klik op de download knop en bewaar het bestand lokaal om het in je architectuurtool te importeren.
+
+'''Importeren in je architectuurtool'''
+
+Raadpleeg de (handleiding van) je architectuurtool voor instructies hoe je AMEFF kunt importeren.
+
+Op de site van de Softwarecatalogus vind je een [https://www.softwarecatalogus.nl/Handleiding%20koppeling%20architectuurtools Handleiding koppeling architectuurtools]. Daar is beschreven hoe je een AMEFF-bestand kunt importeren in de open source architectuurtool Archi.
+
+'''Download AMEFF-export uit de Softwarecatalogus'''
+
+Je kunt ook een AMEFF-bestand downloaden waarin naast de GEMMA ArchiMate-repository ook de pakketten en koppelingen van je gemeente uit de [https://www.softwarecatalogus.nl GEMMA Softwarecatalogus] zijn opgenomen. Je vindt de AMEFF-export knop in de Softwarecatalogus op het tabblad pakketten.
+
+Na import van de export in een architectuurtool, kun je onder andere analyses maken van het applicatielandschap in combinatie met alle elementen, relaties en views uit het GEMMA model. Of gebruik de export als start voor een Project Start Architectuur.
+
+De documentatie over het AMEFF-exportbestand vind je op de pagina [[GEMMA kennismodel]]. Je vindt daar ook het kennismodel [[Softwarecatalogus AMEFF export]], waarin is weergegeven hoe de pakketten en koppelingen gerelateerd zijn aan de GEMMA concepten.
+|icon=import_export
+}}<!--
+
+-->{{#accordionItem:
+|title=GEMMA releases en je model actualiseren
+|content=VNG Realisatie stelt de GEMMA-repository beschikbaar "as is". De beschikbaar gestelde download bevat gegevens zoals die op een peildatum aanwezig zijn. Het GEMMA ArchiMate-model wordt regelmatig op onderdelen geactualiseerd en doorontwikkeld. Zie de pagina [[Releases GEMMA ArchiMate-model]]. Na een release wordt ook de ArchiMate-repository bijgewerkt. Je bent zelf verantwoordelijk voor het doorvoeren van deze wijzigingen op je eigen ArchiMate-model met je architectuurtool.
+
+'''Actualiseren van je architectuurmodel'''
+
+Voor de tool Archi is een handleiding beschikbaar hoe je je ArchiMate-model kunt actualiseren (mergen) na een GEMMA release of met de pakketten die je zojuist in de Softwarecatalogus hebt toegevoegd. Ga naar [https://www.softwarecatalogus.nl/Archi_modellen_samenvoegen Archi modellen samenvoegen].
+
+Gebruik je een andere tool, vraag dan je leverancier hoe je een AMEFF bestand kunt inlezen en mergen met een bestaand model.
+|icon=update
+}}{{#accordionShow:}}

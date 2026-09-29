@@ -1,0 +1,18 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}[[Category:Doelgroepen]]{{DISPLAYTITLE:Productmanager van leverancier}}{{Persona/indeling|Als productmanager zorg ik dat ons product zo goed mogelijk aansluit op de behoeften van gemeenten. Hierbij maak ik keuzes op basis interne mogelijkheden, business cases en kansen door wetswijzigingen en behoeften van gemeenten.|Ik heb behoefte aan informatie over trends, ontwikkelingen en pilotprojecten binnen mijn domein. Dit geeft me een actueel beeld van de ontwikkelingen die effect hebben op mijn werk.}}
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 =  Dit actuele beeld is te vinden bij:
+* [[Thema-architectuur|Wat is een thema en welke thema's zijn er?]]
+* [[Projecten]]
+* [https://vng.nl Website van VNG]
+* Overzicht van [https://vng.nl/gemeentelijke-uitvoering projecten, programma's en diensten die voortkomen uit de Gezamenlijke Gemeentelijke Uitvoering (GGU)] 
+* [https://vng.nl/praktijkvoorbeelden Praktijkvoorbeelden van gemeenten] op VNG.nl
+|titel2  = Meer informatie
+|inhoud2 = Als referentiearchitectuur fungeert de GEMMA als kompas bij het verbeteren van de gemeentelijke informatievoorziening. De GEMMA kent daarvoor voor langere tijd geldende richtinggevende uitgangspunten: 
+*de [[Architectuurprincipes|GEMMA Architectuurprincipes]]
+|hoogte = 350px
+}}

@@ -1,0 +1,40 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Gegevensarchitectuur
+}}
+__NOTOC__
+Bij datagedreven sturen worden beslissingen, processen en beleid gebaseerd op data in plaats van op aannames, intuïtie of traditioneel opgedane kennis. Daarmee zijn zowel de gemeentelijke beleidsvorming als de uitvoering te verbeteren. De gemeente Breda zet sterk in op datagedreven sturen om haar dienstverlening te verbeteren en maatschappelijke vraagstukken effectiever aan te pakken. De ambitie is om data centraal te stellen in beleid en uitvoering, met als doel een efficiëntere en effectievere gemeentelijke organisatie. Binnen de gemeente is breed draagvlak aanwezig voor datagedreven sturen. 
+
+==Digital Twin==
+Een Digital Twin is te zien als een digitale kopie van de stad waarbij fysieke objecten visueel zijn weer te geven. Via real-time data kunnen vervolgens simulaties en analyses worden uitgevoerd. De gemeente Breda heeft een samenwerkingsovereenkomst met TNO waarin ze samenwerken aan een voorspellende Digital Twin. Daarbij wordt data uit diverse bronnen geïntegreerd en wordt geëxperimenteerd met het analyseren van complexe stedelijke vraagstukken en het voorspellen van de impact van beleidsmaatregelen. Bijvoorbeeld voor het: 
+
+*Analyseren van verkeersstromen: Het effect van wegafsluitingen of nieuwe infrastructuur op verkeersdoorstroming en luchtkwaliteit is te simuleren.
+*Plannen van evenementen: De impact van grote evenementen op mobiliteit en veiligheid is in kaart te brengen.
+*Optimaliseren van stedelijke ontwikkeling: Scenario's voor nieuwe woonwijken of commerciële gebieden zijn te testen op leefbaarheid en infrastructuurbelasting.
+*Brede welvaart: Opnemen van elementen van Brede Welvaart in de digital twin. TNO en Breda hebben gewerkt aan de oplevering van inzichten in gezondheid en subjectieve veiligheid.
+*Een toelichting op de werking van een Digital Twin vindt u [https://www.youtube.com/watch?v=-FftwbUzgL4 hier].
+
+==Organisatie en proces==
+[[Bestand:Praktijkvoorbeeld-Breda-1.png|600x600px|Proces datagestuurd werken gemeente Breda|rand|rechts]]
+Binnen de afdeling Regie Data & Informatie (RDI) in het team Data Informatie en Onderzoek (DIO) werken data- en GIS-collega’s samen aan het verder ontwikkelen en implementeren van de gemeentelijke datastrategie en architectuur. Zij ontwikkelen digitale oplossingen voor thema's zoals de energietransitie, woningnood en armoedebestrijding. Bijgaande afbeelding visualiseert het proces waarmee ruwe data stapsgewijs wordt omgezet in voor mensen bruikbare visuele informatie.
+
+Het team DIO werkt agile in sprints van 4 weken aan deze thema’s. Het team is onderverdeeld in 3 multidisciplinaire teams (MDT’s) (per domein). Samen met stakeholders uit de lijn (ruimtelijk, sociaal en bedrijfsvoering&control) wordt daarin gewerkt aan de ontwikkeling van informatieproducten. Naast de 3 MDT’s is er een apart team waarin de Chief Data Officer (CDO), adviseur datagedreven sturen en data architect zijn gepositioneerd. Zij zorgen voor de verdere ontwikkeling van de gemeentelijke datastrategie en zijn een adviesorgaan voor de MDT’s en de organisatie.
+
+== Architectuuraspecten ==
+[[Bestand:Praktijkvoorbeeld-Breda-2.png|alt=Ontwikkeling van de architectuurfunctie in gemeente Breda|rand|rechts|600x600px]]
+Vanwege de groeiende behoefte aan flexibiliteit, schaalbaarheid, beveiliging en kostenbeheersing is de afgelopen jaren veel energie gestoken in migratie van on premises voorzieningen voor datagericht sturen naar voorzieningen bij cloud-providers. Daarbij speelt het datawarehouse / (Azure) dataplatform, waarin data uit verschillende bronnen wordt verzameld, een belangrijke rol. Bezien wordt of, wanneer en hoe het Gemeentelijk Gegevensmodel gebruikt gaat worden om de inrichting van het datawarehouse/dataplatform meer vergelijkbaar te maken met andere gemeenten.
+Met de migratie naar de cloud is het volwassenheidsniveau naar een hoger niveau getild. Met een dataplatform (platform as a code), agile werken, DevOps en meer nadruk op datamanagement (metadata vastlegging) is er gewerkt aan Mensen, Processen en Techniek. Het dataplatform wordt geheel in broncode ontwikkeld en beheerd. Elke wijziging in het platform wordt opgenomen in code en gereleased in code binnen verschillende omgevingen (Ontwikkel, Acceptatie en Productie). Doordat team DIO succesvol is in het Agile werken met multidisciplinaire teams wordt in 2025 deze werkwijze ook geïntroduceerd binnen de afdeling RDI.
+
+Bijgaande afbeelding toont hoe, na de aandacht voor meer technische aspecten, de komende jaren extra aandacht wordt geschonken aan verdere professionalisering van de architectuurfunctie. Breda maakt de omslag van een technisch architect en een informatie-architect naar enterprise- en domein-architecten ondersteund door solution-architecten.
+
+== '''Leerpunten en tips''' ==
+
+* Zorg tijdig voor de benodigde expertise.
+* Agile aanpak levert snel kleine successen op en wordt gewaardeerd.
+* Aandacht voor techniek (platform) is nodig, maar óók ‘proces en people’.
+* Migratie richting cloud kost meer tijd dan initieel verwacht.
+* Houd rekening met verschillen in data-volwassenheid binnen domeinen.
+
+[[Category:Data]]
+[[Categorie:Praktijkvoorbeeld]]

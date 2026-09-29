@@ -1,0 +1,190 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's,
+}}__NOTOC__
+[[Category:ArchiMate modelleren]]
+==Inleiding==
+Op deze pagina kunt u alle wijzigingen op het GEMMA ArchiMate-model volgen. Per wijziging wordt aangeven wat er op hoofdlijnen is veranderd. Daarnaast zal er een link gegeven worden van een pagina waarin de details staat opgesomd, zodat u weet op het niveau van een element (Applicatiefunctie, Referentiecomponent, Standaard) wat er is veranderd.
+
+===Abonneren===
+U kunt zich ook op deze pagina [{{fullurl:{{FULLPAGENAME}}|action=watch}} abonneren]. Dan krijgt u elke keer als deze pagina wijzigt een notificatie per email. U moet dan wel een account hebben op dit platform. Dat kan door uzelf [[Speciaal: aanmelden|aan te melden]]. Op [[Op de hoogte blijven]] staan meerdere opties uitgelegd hoe u informatie over de GEMMA ontvangt.
+
+===Overige wijzigingen op GEMMA Online===
+GEMMA Online bestaat uit meer dan alleen pagina's die worden geïmporteerd uit het GEMMA ArchiMate-model. Wilt u op de hoogte blijven van ontwikkelingen binnen de GEMMA en op GEMMA Online dan kan dat. Op de pagina [[Op de hoogte blijven]] staat uitgelegd welke opties er zijn
+
+==Releases==
+
+{| class="wikitable"
+|-
+! Wijziging
+!Toelichting
+|-
+|19-09-2025<br>'''Architectuurprincipes en implicaties'''
+|
+* De [[architectuurprincipes | GEMMA-architectuurprincipes]] met daarbij behorende implicaties zijn gewijzigd. De specifiek voor Common Ground bedoelde informatiearchitectuurprincipes zijn nu daarin verwerkt. De Common Ground informatiearchitectuurprincipes zijn gearchiveerd. 
+*Ieder GEMMA-architectuurprincipe:
+** is voorzien van een GEMMA-specifieke toelichting.
+** kent nieuwe (principe-specifieke) implicaties.
+|-
+|23-05-2025<br>'''Technische architectuur'''
+|
+* De technische architectuur was gepubliceerd in een apart ArchiMate-model. Dit model is nu samengevoegd met het GEMMA ArchiMate-model.   
+** toegevoegd is het [[Cloud dienstverleningsmodel]]. Ook de [[Technologiecomponenten_en_-services | Technologiecomponenten en technologieservices]] zijn nu ingedeeld in de lagen uit dit model.
+** op de pagina [[GEMMA mapping op technologiecomponenten]] is te zien hoe de GEMMA referentiecomponenten zijn gerelateerd aan de technische architectuur.
+|-
+| 17-02-2025<br>'''Domeinarchitecturen'''
+|
+* De [[domeinarchitecturen]] worden nu completer gepubliceerd  
+** onder iedere view wordt een hiërarchische tabel getoond die de structuur van de view volgt
+** views met referentiecomponenten tonen in de tabel nu ook de verplichte en aanbevolen standaarden per referentiecomponent
+|-
+|20-12-2024<br>'''GGM release 2.2 verwerkt'''
+|
+* GGM 2.2: De [[bedrijfsobjecten]] zijn geactualiseerd met [https://github.com/Gemeente-Delft/Gemeentelijk-Gegevensmodel/ GGM2.2]
+*de GEMMA domeinen en de uit GGM overgenomen beleidsdomeinen hebben een definitie gekregen.
+*{{ToonElement|id=d348b488-026d-4d71-8216-dd6d0fb48c63|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}} toegevoegd aan de lijst referentiecomponenten als voorbereiding op de EU AI-verordening
+*Standaarden met "dode" links zijn bijgewerkt.
+|-
+|21-10-2024<br>'''GGM release 2.1 verwerkt'''
+|
+* In onderdeel [[Strategie en motivatie]] zijn de [[architectuurprincipes]] voorzien van implicaties.
+*GGM 2.1: De [[bedrijfsobjecten]] zijn geactualiseerd met [https://github.com/Gemeente-Delft/Gemeentelijk-Gegevensmodel/ GGM2.1]
+*De synchronisatie GGM - GEMMA wordt uitgevoerd in de [https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository GEMMA-GGM Archi-repository]. In deze repository vind je de volledige ArchiMate representatie van het GGM. Je kunt het GEMMA-GGM ArchiMate-model raadplegen of een export downloaden.
+*Verschillende standaarden zijn bijgewerkt.
+|-
+|19-12-2023<br>'''GGM release 2.0 verwerkt'''
+|
+* De [[bedrijfsobjecten]] zijn geactualiseerd met [https://github.com/Gemeente-Delft/Gemeentelijk-Gegevensmodel/releases GGM versie 2.0]
+*Per Iv3-taakveld is nu een bedrijfsobjectmodel (view) gegenereerd.
+*De synchronisatie GGM - GEMMA wordt uitgevoerd in de [https://github.com/VNG-Realisatie/GEMMA-GGM-Archi-repository GEMMA-GGM Archi-repository]. In deze repository vind je de volledige ArchiMate representatie van het GGM. Je kunt het GEMMA-GGM ArchiMate-model raadplegen of een export downloaden.
+|-
+|15-10-2023<br>'''Thema architectuur Common Ground verder uitgewerkt'''
+|
+* Het [[Common Ground vijflaagsmodel|Common Ground vijflaagsmodel van de thema architectuur Common Ground]] is onderdeel geworden van het ArchiMate model inclusief capabilities en visualisatie
+*De standaard [https://www.gemmaonline.nl/index.php/GEMMA/id-819c2fe5-db4e-4b6f-8071-6a63fd400e34 Digitoegankelijk] is toegevoegd aan bijna alle referentiecomponenten
+*[https://www.gemmaonline.nl/index.php/GEMMA/id-0908ce69-e017-44c5-9429-28700fcae9d3 Norm beveiligingsassessment DigiD 2023] is toegevoegd
+|-
+| style="max-width: 20%;" |20-07-2023 <br>  '''Standaarden Fysieke Leefomgeving en bedrijfsobjecten uit het GGM'''
+|
+* Het project Omgevingswet heeft de in de Fysieke Leefomgeving gebruikte standaarden aangevuld en geactualiseerd
+*De Omgevingswet referentiecomponenten zijn in samenwerking met de IBD voorzien van een BIV en BBN classicatie
+*In samenwerking met de gemeente Delft zijn de GEMMA bedrijfsobjecten nu gebaseerd op het Gemeentelijk GegevensModel (GGM). Zie voor meer informatie de [[Thema-architectuur Data]]
+|-
+|13-06-2023 <br> '''Project Dennis en Eva'''
+|
+* Het project Dennis en Eva heeft twee gidsen gerealiseerd, de werkgevers- en werkzoekendeninstrumentengids. Deze gidsen zijn als sectorale voorzieningen toegevoegd.
+*Enkele kleine verbeteringen
+|-
+|03-04-2023 <br>  '''Nieuwe architectuurprincipes'''
+|
+* De [[Architectuurprincipes]] zijn vernieuwd. Deze architectuurprincipes zijn gebaseerd op de NORA-Principes en aangepast, maar ook nieuwe toegevoegd waar nodig.
+* De [[GEMMA standaardenlijst]] is bijgewerkt
+** Geactualiseerd en uitgebreid zijn de iStandaarden ({{ToonElement|id=6c70cd30-3cd5-11e4-67ab-0050568a6153|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--iJw voor gemeenten (Constraint)-->, {{ToonElement|id=6c64e650-3cd5-11e4-67ab-0050568a6153|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--iWmo voor gemeenten (Constraint)-->, {{ToonElement|id=dcd48216-77cd-4323-990b-2a6688e77cf4|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--iPgb voor gemeenten (Constraint)-->, {{ToonElement|id=e41b70ff-4bab-4d72-bc25-f17ebe590a9a|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--iEb voor gemeenten (Constraint)-->)
+** Toegevoegd is de standaard MDTO(Metagegevens voor duurzaam toegankelijke overheidsinformatie)
+** Het Gegevenswoordenboek Stedelijk Water ({{ToonElement|id=2509dc01-14fe-11e5-1099-005056a83192|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--GWSW (Constraint)-->) is geactualiseerd
+|- 
+|24-10-2022 <br>  '''Haal Centraal API's toegevoegd'''
+|
+* De [https://www.gemmaonline.nl/index.php/ProjectmodelReferentiearchitectuurOmnichannel/0.5/id-f721c8a0-c2c4-40f9-8b8e-e27185cbe846 Haal Centraal API's] zijn toegevoegd en beschikbaar in de softwarecatalogus.
+*[https://www.gemmaonline.nl/index.php/GEMMA/id-315037aa-c0a1-490f-927b-42216bd4cc1c Norm beveiligingsassessment DigiD 2022] is toegevoegd
+** Zie onderaan deze pagina het GEMMA wijzigingsverslag Softwarecatalogus voor een lijst van alle wijzigingen
+|- 
+| 29-09-2022 <br>  '''Update GEMMA Kennismodel'''
+| 
+* Betere verbinding maken vanuit GEMMA(Wat) naar de uitvoering via Common ground(Hoe)
+** GEMMA kennismodel opgesplitst in meerdere views
+** Applicatiefuncties omgezet naar Applicatieservices
+** Consequent gebruik van het concept 'groep' dat met ArchiMate 3.0 is geïntroduceerd
+** Gebruik van applicatieinterfaces voor API's
+** Zie onderaan deze pagina het GEMMA wijzigingsverslag Softwarecatalogus voor een lijst van alle wijzigingen
+|- 
+|13-09-2021 <br>  '''Standaarden en componenten bijgewerkt'''
+|
+* Digitoegankelijkstandaard is bijgewerkt.  
+** Nu verplicht voor Ideeëncomponent,
+* Standaard RIHA is bijgewerkt.
+*Cocreatiecomponent; verplicht in plaats van aanbevolen voor Buurtmarktplaatscomponent,
+* Intranetcomponent; verwijderd voor Callcentercomponent.
+*Norm beveiligingsassessment DigiD 2021 toegevoegd 
+** Zie onderaan deze pagina het GEMMA wijzigingsverslag Softwarecatalogus voor een lijst van alle wijzigingen
+|- 
+|20-05-2021 <br>  '''Zaakgerichtwerken API's'''
+|
+* De zaakgerichtwerken API's zijn nu onderdeel van de GEMMA en daardoor beschikbaar in de softwarecatalogus. 
+** Zie onderaan deze pagina het GEMMA wijzigingsverslag Softwarecatalogus voor een lijst van de omgevingswetcomponenten en -standaarden
+** Zie API standaarden zaakgericht werken op VNG.nl(deze pagina is opgegaan in https://vng.nl/projecten/zaakgericht-werken)  voor meer informatie.
+|- 
+| 1-07-2020 <br>  '''Omgevingswet'''
+|
+* De referentiecomponenten en standaarden uit de doelarchitectuur omgevingswet zijn nu ook opgenomen in de GEMMA. Hiermee kunnen gemeenten en leveranciers in de Softwarecatalogus registreren welke pakketten voor de omgevingswet geschikt zijn en gebruikt gaan worden. 
+** Zie onderaan deze pagina het GEMMA wijzigingsverslag Softwarecatalogus voor een lijst van de omgevingswetcomponenten en -standaarden
+** Zie het [[Overzicht project Omgevingswet]] voor meer informatie over de omgevingswetarchitectuur
+|- 
+|10-04-2020 <br>  '''Informatiebeveiligingscomponenten en tool Archi'''
+|
+* In samenwerking met de IBD en het programma GGI Veilig zijn een aantal informatiebeveiligingscomponenten toegevoegd aan de GEMMA. Zie de views:
+** {{ToonElement|id=90483141-8b35-491d-87e8-6ec1590fc89b|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--Referentiecomponenten met ondersteuning voor BIO maatregelen (ArchiMateView)--> en
+** {{ToonElement|id=b6a9171f-9b5a-4f00-a02d-f64dd8af0f68|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--BBN classificatie referentiecomponenten (blues) (ArchiMateView)-->
+*Het GEMMA architectuurmodel wordt vanaf begin 2020 doorontwikkeld en onderhouden met de tool [http://www.archimatetool.com/ Archi]. 
+** Archi volgt de laatste versie van ArchiMate en daarmee wordt de GEMMA nu aangeboden in ArchiMate 3.1 formaat
+** Archi maakt gebruik van [https://nl.wikipedia.org/wiki/Git_(software) git] voor versiebeheer en samenwerkfunctionaliteit. De [https://gitlab.com/vng-realisatie/architectuur GEMMA git-repository] wordt publiek beschikbaar gesteld op gitlab.
+** Wilt u met Achi en GEMMA aan de slag? Zie de handleiding [[ArchiMate_modelleren]]
+*Voor enkele standaarden zijn de versies geactualiseerd. Zie voor de details van de release het GEMMA wijzigingsverslag Softwarecatalogus onderaan deze pagina.
+|- 
+|19-03-2019 <br>  '''Verwijderen GEMMA 1'''
+|
+* In de Softwarecatalogus is de migratie van GEMMA 1 naar GEMMA 2 (eindelijk) afgerond. De pakketten van gemeenten en leveranciers zijn nu gekoppeld aan de GEMMA 2 referentiecomponenten. Met deze mijlpaal kunnen nu ook de GEMMA 1 referentiecomponten uit het GEMMA ArchiMate-model worden verwijderd
+|- 
+|12-07-2018 <br>  '''Upgrade van ArchiMate 2.1 naar ArchiMate 3.0'''
+|
+* De GEMMA Architectuurrepository en de [https://www.softwarecatalogus.nl/Handleiding%20koppeling%20architectuurtools Softwarecatalogus AMEFF export] worden vanaf nu aangeboden in het ArchiMate 3 formaat.
+** Wilt u met uw eigen architectuurtool met de GEMMA aan de slag, gebruik dan een architectuurtool die AMEFF en ArchiMate 3 ondersteunt
+** De structuur van het GEMMA architectuurmodel is niet gewijzigd. Wel wordt vanaf nu in de GEMMA ook gebruikt gemaakt van groeperingsobjecten, welke met ArchiMate 3 zijn geïntroduceerd. Zie het [[GEMMA kennismodel]] voor meer informatie
+** De AMEFF-export bestanden worden als beta aangeboden en zullen de komende tijd nog verbeterd worden. Helaas bevat de AMEFF-export voor leveranciers een storende fout. In dit bestand hebben de pakketversies geen versienummer en ontbreken meerdere relaties.
+*Tevens zijn voor de Softwarecatalogus van enkele standaarden de versies geactualiseerd
+** Zie voor de details van de release het GEMMA wijzigingsverslag Softwarecatalogus onderaan de pagina.
+|- 
+| 23-01-2018 <br>  '''Actualiseren standaardversies'''
+|
+* Voor enkele in de Softwarecatalogus gebruikte standaarden zijn de versies geactualiseerd
+*Zie voor de details van de release het GEMMA wijzigingsverslag Softwarecatalogus onderaan de pagina.
+|- 
+|11-12-2017 <br>  '''Projectarchitectuur omgevingswet'''
+|
+* Onder het [[Overzicht project Omgevingswet]] zijn de resultaten te vinden van het projecten UIVO/CG en UIVO/I. Onderdeel hiervan is de projectarchitectuur Omgevingswet.
+*De Softwarecatalogus toont nu ook de voor de omgevingswet gemaakte views en biedt de mogelijkheid het huidige pakketoverzicht hierop te plotten.
+|- 
+|8-9-2017 <br>  '''Nieuwe procesarchitectuur'''
+|
+* De nieuwe [[GEMMA Procesarchitectuur]] is nu integraal opgenomen in het GEMMA ArchiMate-model
+** Alle bedrijfsprocessen en views zijn opgenomen de GEMMA Architectuurrepository
+** Dit geldt ook voor de AMEFF export uit de  [https://www.softwarecatalogus.nl GEMMA Softwarecatalogus]
+*Zie voor de details van de release de GEMMA wijzigingsverslagen onderaan de pagina.
+|- 
+|12-7-2017 <br>  '''Applicatiefuncties Klant- en Keteninteractie'''
+|
+* De laag generieke functionaliteit op de applicatiefunctie-views is aangevuld met de applicatiefuncties en referentiecomponenten die gebruikt worden door de bedrijfsfunctie {{ToonElement|id=1022e062-af16-4ca9-8ee8-434ebd880977|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--Klant - en keteninteractie (BusinessFunction)-->. Aangepaste views zijn
+** {{ToonElement|id=9865115e-61a6-4952-95b7-c0c759dd6b81|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--GA02 Applicatiefuncties generiek met referentiecomponenten (ArchiMateView)-->  en {{ToonElement|id=e0f57689-624e-4079-b7f9-79d14bac22f4|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--GA03 Applicatiefuncties generiek met referentiecomponenten en buitengemeentelijke voorzieningen (ArchiMateView)-->
+** De applicatiefunctie-views van de domeinen (zie [[Overzicht GEMMA architectuurviews|Overzicht architectuurviews]])
+*De buitengemeentelijke voorzieningen {{ToonElement|id=c6ca6152-b6b9-4527-b438-c261c5509b9d|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--KNOOP- Gegevensknooppunt voor (Basis)registraties (ApplicationComponent)-->  en {{ToonElement|id=df514870-ecfc-4f3a-b8f9-e8999bf837ed|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--Digilevering (ApplicationComponent)-->  zijn toegevoegd
+*Zie voor de details van de release GEMMA wijzigingsverslagen onderaan de pagina.
+|- 
+| 16-5-2017 <br>  '''Domeinen Bestuur en Ondersteuning uitgewerkt'''
+|
+#Het Domein Bestuur en bedrijfsvoering is gesplitst in de domeinen Bestuur en het domein Ondersteuning. Door deze wijziging zijn er 6 nieuwe views in GEMMA bijgekomen:
+#*Bedrijfsfuncties bestuur
+#** {{ToonElement|id=94a8d536-04bb-4db3-b8ff-504724983a53|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--BS01 Bedrijfsfuncties bestuur (ArchiMateView)-->
+#** {{ToonElement|id=f8e6b28c-c959-452f-9d24-c772f008c205|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--BS02 Bedrijfsfuncties bestuur met referentiecomponenten (ArchiMateView)-->
+#*Applicatiefuncties bestuur
+#** {{ToonElement|id=0428f579-a27d-4aff-b861-9958b6e28a8c|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--BS03 Applicatiefuncties bestuur met referentiecomponenten (ArchiMateView)-->
+#*Bedrijfsfuncties ondersteuning
+#** {{ToonElement|id=bae3f862-4ce4-4cb3-ab8c-241e82ac3b85|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--OS01 Bedrijfsfuncties ondersteuning (ArchiMateView)-->
+#** {{ToonElement|id=4b69fd87-0204-4e8a-8084-7b10624d926c|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--OS02 Bedrijfsfuncties ondersteuning met referentiecomponenten (ArchiMateView)-->
+#*Applicatiefuncties ondersteuning 
+#** {{ToonElement|id=b7d2b10c-a87b-4204-8709-97b3fe3ec13a|modelid=2b2b88ba-8efe-46d3-8b40-47af290bc418|toonals=}}<!--OS03 Applicatiefuncties ondersteuning met referentiecomponenten (ArchiMateView)--> 
+#Tevens is in deze release de mappenstructuur meegenomen in de nieuwste import van het model. Dit betekent dat de nieuwe [[Importeren van een AMEFF-bestand|export]] ook de mappenstructuur kent zoals deze in de GEMMA architectuurrepository is ontwikkelt.
+|- 
+|1-2-2017 <br>  '''GEMMAonline verbonden met GEMMA 2 model'''
+|De GEMMA pagina's maken gebruik van het onderliggende GEMMA 2 model. Om het GEMMA 1 model nog te benaderen moet gebruik worden gemaakt van de pagina Van GEMMA 1 naar GEMMA 2
+|}

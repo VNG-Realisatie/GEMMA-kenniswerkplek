@@ -1,0 +1,23 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+}}[[Categorie:Doelgroepen]]<!-- {{DISPLAYTITLE: {{SUBPAGENAME}}}} -->{{DISPLAYTITLE: Programmamanager}}
+{{Persona/indeling
+|Ik ben binnen de gemeente verantwoordelijk voor het aansturen van programmadoelen. Ik breng samenhang aan tussen de verschillende deelprojecten of afdelingen. Het overkoepelende doel voor het programma stel ik vast en zorg ervoor dat collega’s van verschillende afdelingen op de hoogte zijn van de doelstellingen. Ik overzie de uitvoer van de verschillende projecten.
+|Ik gebruik het liefste bronnen die mij een efficiënt overzicht van informatie geven. De GEMMA & VNG nieuwsbrief zijn slechts enkele van de informatiebronnen die ik daarvoor gebruik.
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = Actuele thema's en projecten
+* Wat is een [[Thema-architectuur]]?
+* [[Projecten]]
+Als referentiearchitectuur fungeert de GEMMA als kompas bij het verbeteren van gemeentelijke informatievoorziening. De GEMMA kent daarvoorde richtinggevende uitgangspunten:
+* [[Architectuurprincipes]]
+|titel2  = Meer informatie
+|inhoud2 = Ik moet op de hoogte blijven van algemene trends en ontwikkelingen.
+* [https://vng.nl Website van VNG]
+* [https://forum.vng.nl Forum van VNG]
+* [https://vng.nl/gemeentelijke-uitvoering Gemeentelijke Uitvoering (GGU) projecten]
+* [https://vng.nl/praktijkvoorbeelden Praktijkvoorbeelden van gemeenten] op VNG.nl
+|hoogte = 370px
+}}
+}}

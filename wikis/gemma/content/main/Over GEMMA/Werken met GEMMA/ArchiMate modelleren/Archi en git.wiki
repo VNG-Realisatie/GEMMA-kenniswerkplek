@@ -1,0 +1,313 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Architectuurtools,
+}}
+[[Category:ArchiMate modelleren]]
+De architectuur modelleringstool Archi wordt gebruikt voor het ontwikkelen en onderhouden van het GEMMA ArchiMate-model. Deze open source tool biedt Archimate-ondersteuning en bevat een uitstekende samenwerk functionaliteit. In de onderstaande uitleg wordt gestart met het installeren van Archi, het inrichten van GitHub en uiteindelijk het inlezen van de GEMMA in Archi.
+
+Gebruik je geen Archi maar een andere architectuurtool, dan heb je git niet nodig: zie [[Importeren van een AMEFF-bestand]].
+
+Om te kunnen werken met Archi en een archi-repository volg dan de volgende stappen:
+
+=== Archi installeren en configureren ===
+{{#accordionItem:
+|title=Archi installeren
+|content=
+Download de laatste versie van Archi via https://www.archimatetool.com/download/.
+* Er zijn twee varianten beschikbaar
+** '''Installer''' voor een standaard lokale installatie.
+** '''Portable''' voor gebruik vanaf bijvoorbeeld een USB-stick.
+* De laatste versies van Archi bieden ondersteuning aan ArchiMate 3.1
+* Vanaf versie 4.7 is het samenvoegen van projectmodellen en het GEMMA Archimate-model (interne en geëxporteerde id's gelijk aan elkaar) mogelijk
+
+Installeer Archi met de default instellingen.
+
+'''Archi aanpassen voor GEMMA'''
+
+Voer onderstaande configuratie uit om goed te kunnen werken met de GEMMA architectuurmodellen
+* voor standaard GEMMA kleuren en figuren importeer het voorkeurschema [https://github.com/VNG-Realisatie/GEMMA-ArchiMate-repository/blob/master/GEMMA_color.prefs GEMMA_color.prefs] uit de GEMMA repository
+** Edit &gt; Preferences &gt; Colors and fonts
+*** import schema GEMMA_color.prefs[[Bestand:Archi importeren van kleurenschema GEMMA.png|alt=Importeren van het GEMMA kleurenschema in Archi|geen|miniatuur]]
+** Edit &gt; Preferences &gt; Diagram &gt; tab Default figures
+*** wijzig de default figures voor Application component, Device, Grouping en Node (kies figure in rechter kolom)[[Bestand:Archi wijzigen default figures voor GEMMA.png|alt=Archi wijzigen default figures voor GEMMA|geen|miniatuur]]
+* Optioneel, enkele persoonlijke handige instellingen voor het modelleren
+** Automatic Relation Management
+*** Edit &gt; Preferences &gt; Connection &gt; ARM
+** Uitlijning op grid
+*** Zorg ervoor dat de grid-size en de grootte voor nieuwe figuren veelvouden van elkaar zijn. Voor de GEMMA worden de onderstaande grid-size en figure size gebruikt:
+*** Edit &gt; Preferences &gt; Diagram
+*** Wijzig de default grid-size van 12 naar 10;[[Bestand:Archi wijzigen grid size voor GEMMA.png|alt=Grid size wijzigen in Archi voor GEMMA|geen|miniatuur]]
+*** Edit &gt; Preferences &gt; General tab Appearance
+*** Wijzig de default size for new ArchiMate figures van 120 bij 55 naar 130 bij 60;
+** Regeltje meer ruimte
+*** Edit &gt; Preferences &gt; Appearance
+*** De status bar toont welk object geselecteerd is. De titelbalk van het properties window toont deze informatie ook.
+*** Zet show status bar uit voor een extra regel ruimte.[[Bestand:Archi Show status bar.png|alt=Wijzigen Show status bar in Archi|geen|miniatuur]]
+|icon=download
+}}<!--
+
+-->{{#accordionItem:
+|title=coArchi plugin voor samenwerking en git
+|content=Wil je in Archi met verschillende versies van het architectuurmodel werken of je wilt met meerdere mensen aan één model samenwerken, dan heb je de collaboration plugin nodig en een git-repository.
+
+* Download de laatste versie van de coArchi plugin van https://www.archimatetool.com/plugins/  Wil je meer weten over de plugin dan vind je [https://github.com/archimatetool/archi-modelrepository-plugin/wiki documentatie op GitHub].
+
+* Om de plugin te installeren open je in Archi het menu Help > Manage Plugins[[Bestand:Archi menu Help.png|alt=Archi menu Help|geen|miniatuur]]
+* Klik op Install New en selecteer het gedownloade plugin bestand.
+* Na installatie van de plugin kan het nodig zijn om Archi te sluiten en weer te openen.
+* Wanneer de installatie van de coArchi-plugin succesvol is, dan is het menu Collaboration toegevoegd aan Archi.[[Bestand:Archi menu collaboration.png|alt=Archi menu collaboration|geen|miniatuur]]
+Op de website van Archi staan meer [https://www.archimatetool.com/plugins/#installing installatie instructies] voor plugins.
+|icon=extension
+}}<!--
+
+-->{{#accordionItem:
+|title=jArchi plugin voor scripting (optioneel)
+|content=Met de jArchi-plugin is het mogelijk om met een script een architectuurmodel te lezen en te bewerken. Hiermee kun je Archi uitbreiden met je eigen functies. Zie [https://www.archimatetool.com/plugins/#jArchi jArchi – Scripting for Archi] voor verdere informatie.
+
+De scripting-plugin is alleen beschikbaar voor Archi-donateurs.
+
+'''Configuratie voor scripting'''
+
+Ga naar [https://github.com/archimatetool/archi-scripting-plugin/wiki/jArchi-Quick-Start jArchi Quick Start]
+* Edit &gt; Preferences &gt; Scripting (zie je geen tab Scripting, dan moet je de plug-in jArchi eerst installeren)
+** accepteer de default directory of configureer in Archi je <script directory>
+*** advies, kies een directory met backup (bijvoorbeeld een dropbox directory)
+** voorkeur editor, bijvoorbeeld Atom of Visual Studio Code (tip: zet script language op javascript)
+** zet JavaScript Engine op GraalVM (default)
+
+'''Waar vind je scripts'''
+
+De jArchi-plugin bevat enkele voorbeeldscripts. Maar er zijn nog veel meer scripts te vinden:
+* Ga naar [https://github.com/archimatetool/archi-scripting-plugin/wiki/Community-shared-scripts Community shared scripts]
+* Ook in het [https://forum.archimatetool.com/index.php?board=5.0 jArchi Forum] worden scripts gedeeld
+* De voor GEMMA gebruikte scripts vind je in de [https://github.com/VNG-Realisatie/archi-scripts archi-scripts] repository
+|icon=code
+}}{{#accordionShow:}}
+
+=== Een archi-repository importeren en bekijken ===
+
+{{#accordionItem:
+|title=Je GitHub-account voorbereiden
+|content=Met Archi kun je een gepubliceerd ArchiMate-model importeren en bekijken. Hiervoor heb je een account nodig bij een Git-platform, zoals GitHub, GitLab of Codeberg.
+
+Publieke repositories kun je direct importeren. Wil je wijzigingen opslaan in een repository, dan moet de beheerder je schrijfrechten geven (zie de sectie ''Schrijftoegang regelen'' verderop).
+
+'''GEMMA Archi-repository'''
+* GEMMA wordt gepubliceerd op GitHub. De VNG-Realisatie repositories vind je onder de [https://github.com/VNG-Realisatie VNG-Realisatie organisatie].
+* De GEMMA ArchiMate-repositories zijn publiek en voor iedereen leesbaar.
+* Voor het importeren van de GEMMA Archi-repository heb je een GitHub-account nodig.
+
+Wil je zelf een Archi-repository opzetten, dan kan dit bij iedere Git-provider. Git werkt bij alle providers op dezelfde manier. De verschillen zitten vooral in de website en mogelijkheden voor samenwerking.
+
+* Kies een Git-provider die bij je past.
+* Een repository kan later altijd naar een andere provider worden verplaatst.
+
+'''Inloggen vanuit Archi'''
+De coArchi-plugin vraagt altijd om accountgegevens bij het importeren of openen van een Archi-repository. Dit geldt ook voor publieke repositories.
+
+* Zonder 2FA gebruik je je normale GitHub-wachtwoord.
+* Met 2FA werkt het wachtwoord niet meer voor Archi/coArchi. Gebruik dan een Personal Access Token (PAT) of SSH-sleutel.
+
+Wil je later schrijfrechten krijgen voor een VNG Realisatie Archi-repository, schakel dan vooraf 2FA in op je GitHub-account.
+
+'''Aanmaken van een GitHub Personal Access Token (PAT) '''
+
+PAT zijn een alternatief voor het gebruik van wachtwoorden voor verificatie aan GitHub bij gebruik van de GitHub API of de command line.
+
+* Log in op je GitHub account
+* Klik op je avatar/icoon rechtsboven en selecteer "Settings".
+* Scroll in het menu links helemaal naar beneden naar "<> Developer settings"[[Bestand:GitHub PAT.png|alt=GitHub developer settings|geen|miniatuur]]
+* Selecteer in het linker menu Tokens(classic)
+* Klik daarna op Generate new token(classic) rechtsboven[[Bestand:GitHub Generate new token classic.png|alt=GitHub Generate new token classic|geen|miniatuur]]
+* Geef je PAT-Key een duidelijke naam en selecteer de "repo" onder Select scopes. Vergeet niet de expiratie op de gewenste periode te zetten.
+* Klik daarna op "Generate token"
+* Kopieer je PAT-key en bewaar deze goed (bijvoorbeeld in een wachtwoord-manager). Het token wordt maar één keer aangemaakt. Wanneer je deze kwijt bent, zul je een nieuwe aan moeten maken.
+Voor verdere informatie over Personal Access Token(PAT): https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+
+'''Aanmaken en gebruiken van een SSH-key'''
+
+Een SSH-key is een alternatief voor een PAT en bestaat uit twee delen: een private key die alleen lokaal wordt bewaard, en een public key die je toevoegt aan GitHub. Met een SSH-key hoef je geen token te gebruiken en kan dezelfde sleutel ook door andere git-clients gebruikt worden.
+
+Voor het aanmaken en installeren van een SSH-key, zie [https://docs.github.com/en/authentication/connecting-to-github-with-ssh Connecting to GitHub with SSH]. Gebruik de standaardinstellingen en gebruik één key waar je zorgvuldig mee omgaat. Weet je niet zeker of je private key veilig is opgeslagen, beveilig deze dan met een passphrase.
+
+'''Aanmaken SSH-key op Windows'''
+* Plaats de SSH-key op de standaardlocatie met de standaardnaam:
+<code>c:\Users\&lt;username&gt;\.ssh\id_rsa</code>
+
+'''Aanmaken SSH-key op macOS'''
+* Open een Terminal-scherm.
+* Maak een SSH-keypair aan:
+<code>ssh-keygen -m PEM -t rsa -C "email@example.com"</code>
+* Accepteer de voorgestelde bestandsnaam en geef indien gewenst een passphrase op.
+* Kopieer de public key naar het klembord:
+<code>pbcopy < ~/.ssh/id_rsa.pub</code>
+* Log in op GitHub en voeg de inhoud van het klembord toe bij de SSH-sleutels.
+
+'''Configureren van Archi voor SSH'''
+* Ga naar Edit &gt; Preferences &gt; Collaboration.
+* Zet onder SSH een vink bij ''Scan .ssh folder for identities''.
+* Gebruik je een passphrase, zet dan ook een vink bij ''Requires password'' en vul de passphrase in.
+
+'''Gebruiken van de SSH-key bij het openen van een repository'''
+* Ga in GitHub naar de repository, klik op de knop ''Code'' en kies ''SSH''.
+* Kopieer de SSH-URL en plak deze in Archi.
+* Archi gebruikt automatisch de gevonden SSH-key. Username en password zijn niet nodig.
+|icon=key
+}}<!--
+
+-->{{#accordionItem:
+|title=Een archi-repository importeren
+|content=Om met Archi een bestaand ArchiMate-model te bekijken of te bewerken, importeer je de archi-repository in Archi. Je hebt hiervoor de URL van de git-repository nodig, en de GitHub-gebruikersnaam en het wachtwoord/PAT-key/SSH-key die je in de vorige stap hebt voorbereid.
+
+Het GEMMA ArchiMate-model wordt gepubliceerd in de archi-repository [https://github.com/VNG-Realisatie/GEMMA-Archi-repository GEMMA Archi-repository]. Dit is niet de enige GEMMA-repository: binnen de [https://github.com/VNG-Realisatie VNG-Realisatie]-organisatie op GitHub vind je onder andere ook:
+* [https://github.com/VNG-Realisatie/Over-GEMMA-Archi-repository Over GEMMA] - het kennismodel, portfoliomodel en illustraties voor documentatie en beheer van de GEMMA;
+* een [https://github.com/VNG-Realisatie?q=org%3AVNG-Realisatie+archived%3Afalse+topic%3Aarchimate&type=repositories overzicht van de VNGR archi-repositories].
+
+Al deze repositories zijn publiek leesbaar (EUPL-licentie). Heb je inhoudelijke suggesties, maak dan een issue aan in de betreffende repository; voor overige vragen mail je naar gemmaonline@vng.nl.
+
+Deze werkwijze werkt voor alle ArchiMate-modellen die via git gepubliceerd zijn, dus ook voor modellen van andere organisaties. Voorbeelden:
+* [https://github.com/smileham/archimate-metamodel-patterns ArchiMate Metamodel and Patterns]
+* [https://github.com/canada-ca/architecture Open Government of Canada Architecture Git Repository]
+
+'''Configureren van coArchi voor samenwerking'''
+
+Om te kunnen samenwerken aan architectuurmodellen is het nodig om de instellingen in Archi aan te passen.
+* Ga in het menu naar Edit &gt; Preferences &gt; Collaboration
+** Vul je naam en email in. Onder deze naam laat Git zien dat jij een wijziging hebt doorgevoerd
+** Workspace default laten. Dit is de directory waar Archi voor iedere repository een .git directory aanmaakt (voor lokale wijzigingen) en waar een tijdelijk <repository>.archimate bestand wordt bewaard
+** SSH Authentication; invullen als je kiest voor een SSH-key om in te loggen op GitHub. Kies je voor de PAT-key, dan kan je deze uitvinken.
+* Requires password - Als je je key beveiligd hebt met een wachtwoord,.
+** HTTP authentication; default vink laten staan
+*** je kunt inloggen met username en password of PAT-Key
+*** of met de API-key
+
+'''Het GEMMA-model importeren in Archi'''
+
+Zodra je Archi en coArchi hebt geconfigureerd en je account (en eventueel PAT-key of SSH-key) hebt voorbereid, kun je het Archimate-model in Archi importeren.
+
+Selecteer in het Collaboration-menu [Import Remote Model to Workspace]. Mogelijk moet je je Archi hoofdwachtwoord invoeren om deze functie in Archi te ontgrendelen.
+
+In de velden vul je de volgende gegevens in:
+
+{{{!}} class="wikitable"
+{{!}}-
+{{!}} URL
+{{!}} De volledige URL van de repository:<br />https://github.com/VNG-Realisatie/GEMMA-Archi-repository.git
+{{!}}-
+{{!}} User name
+{{!}} Je gebruikersnaam van GitHub
+{{!}}-
+{{!}} Password
+{{!}} Je GitHub-wachtwoord (zonder 2FA), of je PAT-key (met 2FA)
+{{!}}}
+
+Op https://github.com/archimatetool/archi-modelrepository-plugin/wiki/Troubleshooting-Connection-Issues vind je de meeste voorkomende problemen wanneer je het model niet kan ophalen of bewerken.
+|icon=cloud_download
+}}<!--
+
+-->{{#accordionItem:
+|title=Wijzigen zonder schrijfrechten
+|content=Heb je geen schrijfrechten op een Archi-repository, dan kun je het model als lokaal bestand opslaan en zelfstandig verder bewerken. Je werkt dan in een eigen kopie van het model. Wijzigingen kunnen niet worden teruggeschreven naar de oorspronkelijke repository.
+
+* Kies '''File > Save As...''' om het model op te slaan als lokaal ''.archimate''-bestand.
+* Je kunt dit bestand daarna lokaal openen, wijzigen en opslaan.
+
+Een ArchiMate-model kan in Archi op twee manieren worden beheerd:
+
+* '''Lokaal bestand (''.archimate'')'''
+** Eenvoudig en snel, zonder extra configuratie.
+** Geschikt voor persoonlijke modellen of een eerste opzet.
+** Kan later alsnog worden gepubliceerd naar een eigen Archi-repository.
+
+* '''Archi-repository (Git)'''
+** Ondersteunt versiebeheer.
+** Geschikt voor samenwerking met anderen.
+** Vereist een eenmalige inrichting.
+
+Wil je ook voor een persoonlijk model versiebeheer gebruiken of met anderen samenwerken, publiceer het model dan in een eigen Archi-repository. Zie de sectie ''Werken met een eigen Archi-repository''.
+|icon=content_copy
+}}{{#accordionShow:}}
+
+=== Schrijftoegang regelen ===
+{{#accordionItem:
+|title=Autorisatie aanvragen bij VNG Realisatie
+|content=Een GitHub-account met 2FA en een PAT-key of SSH-key (zie hierboven) is voldoende om een archi-repository te kunnen bekijken of importeren. Om ook te kunnen schrijven in een VNG Realisatie (VNGR) archi-repository moet VNGR je daarnaast autoriseren.
+
+* De GEMMA ArchiMate-repositories zijn publiek leesbaar; voor besloten (private) GitHub-repositories binnen de VNG-Realisatie organisatie dient een beheerder je toegang te geven.
+* Vraag toegang aan voor de gewenste repository via een e-mail naar gemmaonline@vng.nl.
+* Wil je een eigen model met gemeenten delen, dan kun je een verzoek indienen voor een repository onder de VNG Realisatie organisatie.
+|icon=how_to_reg
+}}{{#accordionShow:}}
+
+=== Werken met git-versiebeheer ===
+{{#accordionItem:
+|title=Bekijk de wijzigingen met git
+|content=Door een Archimate-model niet in een bestand te bewaren, maar in git te publiceren, beschik je over versiebeheer. Met git versiebeheer kun je wijzigingen als één bij elkaar horende set bewaren, in een commit. Archi toont in de "Change-history" alle commits, inclusief de commit message, wie de wijziging heeft uitgevoerd en wanneer. Je kunt nu 'tijdreizen' door oude commits te openen, waarna je kunt bekijken hoe het model in een vorige versie in elkaar zat en door wie de wijzigingen zijn doorgevoerd.
+Je kijkt dan in de XML-bestanden in de GEMMA-repository.
+
+De locatie van de lokale git-repository vind je in Archi:
+* Open de tab ''Collaboration workspace''.
+* Selecteer de repository.
+* Ga naar de tab ''Properties'' &gt; Information.
+* Achter ''location'' staat de directory van de lokale git-repository.
+
+Vanaf de command line kun je met git-commando's de wijzigingen ook buiten Archi bekijken. Je kunt ook een grafische git-client gebruiken en de gevonden map daarin openen.
+
+[[Bestand:Archi tijdreizen.png|alt=Archi tijdreizen door de commits in te zien|geen|miniatuur]]
+|icon=published_with_changes
+}}<!--
+
+-->{{#accordionItem:
+|title=Welke branch gebruik je als gemeente
+|content=De GEMMA wordt door VNG Realisatie-architecten doorontwikkeld met behulp van git-branches (master, develop en feature-branches). Als gemeente of leverancier hoef je hier zelf niets mee: je werkt vrijwel altijd met de '''master'''-branch (ook wel main genoemd), want die bevat steeds de laatst gepubliceerde, stabiele release van de GEMMA. Wanneer je de GEMMA Archi-repository importeert, opent Archi automatisch deze branch.
+|icon=account_tree
+}}<!--
+
+-->{{#accordionItem:
+|title=Archi documentatie
+|content=Hoe je met Archi en de plugins werkt is op verschillende plekken gedocumenteerd:
+* Website Archi https://www.archimatetool.com/
+** Download de [https://www.archimatetool.com/downloads/Archi%20User%20Guide.pdf User guide]
+** Volg het [https://forum.archimatetool.com/ Archi Forum] voor gebruikersvragen, tips en de laatste ontwikkelingen
+* [https://github.com/archimatetool/ArchiModels ArchiModels] A Collection of ArchiMate® Models
+* Hoe met Archi plug-ins werken
+** [https://github.com/archimatetool/archi-modelrepository-plugin/wiki coArchi – Model Collaboration for Archi] wiki met documentatie voor versiebeheer en samenwerken
+** [https://github.com/archimatetool/archi-scripting-plugin/wiki Archi Scripting Plug-in] wiki voor schrijven Archi scripts (met javascript en jArchi API)
+* Hoe aan Archi bijdragen
+** [https://github.com/archimatetool/archi/wiki Archi wiki] informatie voor ontwikkelaars en over ontwerpbeslissingen in Archi
+|icon=description
+}}{{#accordionShow:}}
+
+=== Werken met een eigen archi-repository ===
+
+{{#accordionItem:
+|title=Git-repository aanmaken via GitHub
+|content=Zie de sectie ''Werken met git-versiebeheer'' hierboven voor uitleg over versiebeheer, commits en tijdreizen in Archi.
+
+Als je het model niet met anderen hoeft te delen, dan kun je een persoonlijke git-repository aanmaken. Dit kan bij alle git-providers. Hieronder wordt uitgelegd hoe je een git-repository aanmaakt bij GitHub. 
+
+Open GitHub
+* Ga naar het menu met de plus rechtsboven en open deze[[Bestand:GitHub New repository aanmaken.png|alt=GitHub New repository aanmaken|geen|miniatuur]]
+* Selecteer New repository en daar krijg je de mogelijkheid een repository aan te maken.
+** Kies voor "private" (alleen zichtbaar voor jezelf of voor de organisatie) of "public" (zichtbaar voor iedereen).
+** Na het aanmaken kopieer je de repository-URI (HTTPS of SSH), nodig om de repository in Archi te koppelen.
+|icon=add_circle
+}}<!--
+
+-->{{#accordionItem:
+|title=Git-repository vullen met een model via Archi
+|content=Nadat je de repository hebt aangemaakt, kun je deze koppelen aan Archi.
+* Open Archi en zorg ervoor dat je het model hebt geselecteerd dat je wilt publiceren.
+* Dit kan een nieuw model of een bestaand model zijn. Het model mag helemaal leeg zijn.
+* Kies in het menu Collaboration &gt; Add local model to workspace and publish
+* Kies voor de optie om je model aan een remote repository te koppelen. Vul hier de URL van je nieuwe GitHub-repository in.
+* Het model is nu gelinkt aan de Github-repository en kun je je eerste commit maken.
+
+Via het menu Collaboration kun je je eerste commit or publish maken.
+* Met een commit wordt het model in de lokale repository in een lokaal bestand bewaart.
+* Publish publiceert de lokale versie van het model op Github
+
+Zorg voor een duidelijke omschrijvingen bij het committen van het model. Deze kan je terugzien, zodat je een geschiedenis opbouwt en terug kan kijken naar welke wijzigingen zijn doorgevoerd.
+|icon=cloud_upload
+}}{{#accordionShow:}}

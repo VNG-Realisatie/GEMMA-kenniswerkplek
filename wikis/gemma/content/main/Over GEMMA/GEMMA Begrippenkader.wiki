@@ -1,0 +1,50 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder GEMMA Beheerpagina's
+}}
+[[Category:Over GEMMA]]
+[[Categorie:Overzichten]]
+Het GEMMA Begrippenkader is een verzameling van begrippen die belangrijk zijn binnen de context van de GEMMA. Duidelijkheid over de betekenis van termen helpt om verwarring en dubbelzinnigheid te voorkomen en vergemakkelijkt communicatie en begrip. Voor andere domeinen of sectoren bestaan [https://www.noraonline.nl/wiki/Gegevenswoordenboeken andere begrippenkaders]. Mis je een begrip of heb je een vraag neem dan contact op via [mailto:GEMMAOnline@VNG.nl GEMMAOnline@VNG.nl].<br>Begripsdefinities worden bij voorkeur overgenomen uit bestaande veel gebruikte begrippenkaders. Na het begrippenkader volgt een toelichting op de gebruikte bronnen. 
+
+Voor het tonen van begrippen is gebruik gemaakt van de [https://profielstelselcatalogus.pldn.nl/ Nederlandse standaard voor het beschrijven van begrippen]:
+*Voorkeursterm: een label dat in een specifieke taal het geprefereerde lexicale label is.
+*Definitie: een verwoording van de betekenis van een begrip waarmee het begrip kan worden onderscheiden van andere begrippen.
+*Bron: een document of resource op het web waaruit de betekenis van een begrip is afgeleid.
+*Voorbeeld: een notitie die meer duidelijkheid geeft over het gebruik van een begrip.
+* Alternatieve term: een label die gebruikt kan worden als alternatief voor de voorkeursterm van een object, maar niet de voorkeur heeft.
+
+Aantal begrippen: {{#ask: [[Category:Begrippen]]|format=count}}
+{{#ask:[[Category:Begrippen]]
+|mainlabel=Voorkeursterm
+|?Definitie
+|?Bron#
+|?Toelichting#=Voorbeeld
+|?Synoniem#=Alternatieve term
+|format=broadtable
+|Sort=Begrip
+|class=wikitable
+|headers=plain
+|limit=500
+}}
+
+
+De belangrijkste gebruikte bronnen voor de betekenis van begrippen:
+{| class="wikitable"
+|-
+!Bron!!Toelichting
+|-
+|NORA||Het [https://www.noraonline.nl/wiki/NORA_Begrippenkader begrippenkader] van de Nederlandse Overheid Referentie Architectuur
+|-
+|IBD||De [https://www.informatiebeveiligingsdienst.nl/woordenlijst-informatiebeveiliging/ woordenlijst] van de Informatiebeveiligingsdienst voor gemeenten (voor informatiebeveiliging gerelateerde begrippen)
+|-
+|GEMMA||Voor begrippen waar geen bron is die GEMMA-specifiek genoeg is
+|-
+|GEMMA-Kennismodel||Het [https://www.gemmaonline.nl/index.php/Toelichting_op_kennismodel GEMMA-Kennismodel] waarmee binnen GEMMA gebruikte architectuurelementen en hun onderlinge samenhang met behulp van de ArchiMate architectuurbeschrijvingstaal zijn beschreven
+|-
+|TOGAF||Het wereldwijd gebruikte [https://pubs.opengroup.org/architecture/togaf92-doc/arch/ The Open Group Architecture Framework]
+|-
+|NIST||Het [https://www.nist.gov/ National Institute of Standards and Technology dat zich richt op technische standaarden]
+|-
+|Wikipedia||Wikipedia als bron voor breed gebruikte begripsomschrijvingen (zowel .org als .nl)
+|}

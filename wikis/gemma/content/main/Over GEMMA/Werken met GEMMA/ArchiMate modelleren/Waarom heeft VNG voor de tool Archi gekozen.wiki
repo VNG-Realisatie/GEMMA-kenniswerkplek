@@ -1,0 +1,52 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Architectuurtools,
+}}
+[[Category:ArchiMate modelleren]]
+De architectuurtool Archi wordt gebruikt voor het ontwikkelen en onderhouden van het GEMMA ArchiMate-model. Deze pagina beschrijft waarom VNG Realisatie voor Archi heeft gekozen en hoe Archi in de praktijk wordt gebruikt. VNG Realisatie adviseert gemeenten niet over hun keuze voor een architectuurtool, maar licht wel toe waarom zij zelf voor Archi heeft gekozen.
+
+== Aanleiding ==
+Gemeenten stellen VNG Realisatie regelmatig vragen over architectuurtooling en het gebruik van het GEMMA ArchiMate-model. Deze pagina geeft geen advies over welke tool gemeenten moeten kiezen, maar beschrijft de keuze van VNG Realisatie voor Archi en hoe gemeenten en leveranciers het GEMMA ArchiMate-model kunnen gebruiken.
+
+== Sinds wanneer ==
+VNG Realisatie gebruikte tot eind 2019 BiZZdesign Enterprise Studio (ES) voor het ontwikkelen van GEMMA. Eind 2019 werd overgestapt op Archi, in combinatie met de coArchi-plugin. Hiermee werd het mogelijk om via Git samen aan het model te werken.
+
+Na ongeveer een jaar gebruik, in het najaar van 2020, bleek Archi in de praktijk stabiel en geschikt voor het doorontwikkelen en beheren van GEMMA. Ook de ondersteuning door Archi-ontwikkelaar Phil Beauvoir bleek snel en goed.
+
+Met de introductie van de jArchi-plugin werden de beheermogelijkheden van Archi verder uitgebreid. Bewerkelijke beheertaken konden hierdoor met scripts worden geautomatiseerd.
+
+In dezelfde periode kreeg Archi ondersteuning voor het importeren en samenvoegen van modellen. Deze functionaliteit wordt sindsdien gebruikt om projectarchitecturen, bijvoorbeeld voor de Omgevingswet, in GEMMA op te nemen.
+
+== Redenen voor de keuze ==
+Dit zijn de belangrijkste overwegingen die tot de keuze voor Archi hebben geleid:
+* '''Laagdrempelig''': Archi is te downloaden, installeren en direct te gebruiken, ook als portable app, zonder account, VPN-toegang of licentie. Dat is een groot verschil met commerciële tools. Dit regelen was in de praktijk voor (nieuwe, externe) architecten een hoge drempel. Bovendien kenden en gebruikten al veel architecten Archi.
+* '''Je bepaalt zelf wat Archi kost''': Archi is gratis en open source; VNG Realisatie ondersteunt de doorontwikkeling met een periodieke donatie, onder andere voor toegang tot de jArchi-scriptingplugin. Inmiddels doneren ook meerdere gemeenten aan Archi.
+* '''Geen belangenverstrengeling''': doordat Archi geen commerciële tool is, kan VNG Realisatie het gebruik ervan ondersteunen zonder daarmee een specifieke leverancier of commercieel product te promoten richting gemeenten.
+* '''Samenwerken met git''': in combinatie met git (via de coArchi-plugin) maakt Archi het mogelijk om de GEMMA Archi-repository met iedereen te delen en gezamenlijk aan het model te werken. Dit was voor VNG Realisatie het belangrijkste argument voor de overstap.
+* '''Transparante werkwijze''': omdat Archi open source is en het model in git wordt bijgehouden, is de hele ontwikkeling van de GEMMA — wie welke wijziging heeft doorgevoerd en wanneer — voor iedereen te volgen, tot en met het teruglezen van eerdere versies.
+* '''Standaard uitwisselformaat (AMEFF)''': Archi gebruikt het standaard ArchiMate Exchange File Format, hetzelfde formaat waarmee de GEMMA al werd gedistribueerd. Daardoor verliep het overzetten van de bestaande modellen probleemloos, en kan iedereen die een andere ArchiMate-tool gebruikt de GEMMA toch importeren (zie [[Importeren van een AMEFF-bestand]]).
+
+== Praktijkvoorbeeld: hoe VNG Realisatie met Archi werkt ==
+Het GEMMA ArchiMate-model wordt beheerd in een centrale, publiek leesbare repository op GitHub: de [https://github.com/VNG-Realisatie/GEMMA-Archi-repository GEMMA Archi-repository] (EUPL-licentie), onderdeel van de [https://github.com/VNG-Realisatie VNG-Realisatie-organisatie]. Hoe je deze repository zelf importeert en bekijkt in Archi staat op de pagina [[Archi en git]].
+
+=== Werkwijze met git-branches ===
+VNG Realisatie-architecten werken met git-branches. Wijzigingen worden aangebracht in de development-branch; wijzigingen die meer tijd nodig hebben, worden eerst in een aparte feature-branch gemaakt en later weer samengevoegd met development. Development wordt op zijn beurt samengevoegd met de master-branch (ook wel main genoemd), van waaruit releases worden gedaan. Het model dat op GEMMAonline.nl te zien is, komt steeds overeen met het model in de master-branch.
+
+=== Projectarchitecturen ===
+Projecten die met de GEMMA willen werken, starten met een (gedeeltelijke) kopie van het GEMMA-model als projectmodel. Het deel van het projectmodel dat ook voor de GEMMA relevant is, wordt later teruggemerged met de GEMMA.
+
+=== Scripts voor beheer ===
+Archi heeft beperkte mogelijkheden voor analyse en automatische lay-out. Met de jArchi-plugin kan VNG Realisatie deze mogelijkheden uitbreiden met eigen JavaScript-scripts. Zo kunnen bewerkelijke beheertaken worden geautomatiseerd.
+De scripts zijn gepubliceerd onder EUPL-licentie in de [https://github.com/VNG-Realisatie/archi-scripts archi-scripts-repository] en zijn onder te verdelen in:
+
+* eenmalige scripts voor structuurwijzigingen in het model, bijvoorbeeld bij wijzigingen in het GEMMA-kennismodel;
+* scripts voor het genereren en lay-outen van views, bijvoorbeeld voor het kleuren van elementen op basis van eigenschappen zoals Vertrouwelijkheid of BIV-score;
+* scripts voor het exporteren en importeren van CSV-bestanden, waarmee bulkmutaties in Archi kunnen worden uitgevoerd en properties consistent kunnen worden aangemaakt, bijvoorbeeld met vaste waardenlijsten voor GEMMA-specifieke eigenschappen;
+* scripts voor het controleren van object-id's en het voorbereiden van releases, bijvoorbeeld door te controleren op dubbele of ongeldige id's en alleen elementen die op een view voorkomen te publiceren.
+
+== Ondersteuning voor gemeenten ==
+VNG Realisatie helpt gemeenten op de volgende manieren op weg met Archi en het GEMMA ArchiMate-model:
+* VNG Realisatie deelt instructies voor het gebruik van Archi op GEMMAonline.nl, zie [[Archi en git]] en, voor gebruikers van een andere architectuurtool, [[Importeren van een AMEFF-bestand]].
+* VNG Realisatie verzorgt via VNG Connect de training [https://vng.nl/trainingen/leergang-gemma-aan-de-slag-met-de-gemeentelijke-modelarchitectuur Leergang GEMMA: aan de slag met de Gemeentelijke Modelarchitectuur]
+* Voor architecten die zelf gaan modelleren, is er als onderdeel van de leergang de  workshop over de tooling, waarin wordt getoond hoe je op basis van de GEMMA en met dezelfde tools (Archi en git) je eigen gemeentelijke ArchiMate-model kan opbouwen.

@@ -1,0 +1,24 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Category:Toelichtingen]]
+Open source software is software waarvan de broncode openbaar beschikbaar is. Dit betekent dat iedereen de code mag bekijken, gebruiken, wijzigen en verspreiden, vaak onder bepaalde voorwaarden die in een open-sourcelicentie zijn vastgelegd.
+
+De Nederlandse overheid heeft een beleid dat het gebruik van open source software en open standaarden stimuleert. Dit beleid is ingegeven door het streven naar meer transparantie, kostenbesparing, innovatie en onafhankelijkheid van leveranciers. Software die de overheid maakt of laat maken moet zoveel mogelijk open source zijn, behalve als er goede redenen zijn om de software niet beschikbaar te maken (‘Open, tenzij’).
+
+De GEMMA richt als referentiearchitectuur op het beschrijven van breed toepasbare architectuur als hulpmiddel voor gemeenten om hun bedrijfsvoering en informatievoorziening te ontwikkelen. Zij schrijft niet voor via welke aanpak realisatie moet plaatsvinden en of een gemeente van open of closed software gebruik moet maken. Een gemeente kan de GEMMA als basis voor haar architectuur gebruiken en vervolgens zelf bepalen welke software het beste aansluit bij haar lokale behoeften en middelen. Dit laat onverlet dat gezamenlijke gemeentelijke kaders en uitgangspunten met betrekking tot realisatie nuttig kunnen zijn. Programma's zoals [https://vng.nl/rubrieken/onderwerpen/samen-organiseren Samen Organiseren] en [https://commonground.nl/ Common Ground] en coöperatieve verenigingen van gemeenten zoals [https://www.dimpact.nl/ Dimpact] spelen daarin een belangrijke rol.  
+
+De GEMMA spreekt, in lijn met [https://www.forumstandaardisatie.nl/pas-toe-leg-uit-beleid overheidsbreed beleid], wel een duidelijke voorkeur uit voor het gebruik van open boven gesloten standaarden. Open standaarden zijn technische specificaties waarmee software met elkaar kan communiceren en samenwerken, onafhankelijk van de gebruikte technologie of leverancier. Het open karakter zorgt ervoor dat iedereen deze standaarden vrij kan gebruiken, implementeren en doorontwikkelen, wat interoperabiliteit en innovatie bevordert. Open standaarden kunnen worden geïmplementeerd in zowel open source als gesloten software.  
+
+Meer informatie over beleid en gebruik van open source binnen de overheid:
+
+* [https://www.noraonline.nl/wiki/Open_Source_Software_(OSS) Algemene informatie en verwijzingen] (noraonline.nl).
+
+* [https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/open-source/ Beleidsmatige toelichting ] (digitaleoverheid.nl).
+
+* [https://opensourcewerken.nl/ Community-site voor het delen van kennis en ervaring] (opensourcewerken.nl).
+
+* [https://opensourcewerken.nl/page/view/daae6ff4-01ef-45ee-a8b1-201e4ac5f44f/toolbox-2022 Toolbox om met open source aan de slag te gaan] (opensourcewerken.nl).
+[[Categorie: Common Ground]]

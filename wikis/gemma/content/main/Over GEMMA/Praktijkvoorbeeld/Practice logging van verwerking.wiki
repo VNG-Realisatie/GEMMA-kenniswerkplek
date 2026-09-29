@@ -1,0 +1,50 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Common Ground
+}}
+[[Category:Common Ground]]
+[[Categorie:Privacy en Informatiebeveiliging]]
+[[Category:Praktijkvoorbeeld]]
+__notoc__
+Organisaties die persoonsgegevens verwerken zijn volgens de Algemene Verordening Gegevensbescherming (AVG) en de Uitvoeringswet AVG verplicht om aan te kunnen tonen dat een verwerking van persoonsgegevens aan de belangrijkste beginselen van verwerking voldoet. Denk daarbij aan rechtmatigheid, transparantie, doelbinding en juistheid. Hiervoor moeten bij iedere verwerking een aantal metagegevens worden vastgelegd. 
+
+Om de eenduidigheid en toegankelijkheid van vastgelegde gegevens te kunnen borgen  ziet de GEMMA referentiearchitectuur het als noodzakelijk dat vastlegging gestandaardiseerd plaatsvindt. Om dit mogelijk te maken heeft VNG Realisatie de [https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/ GEMMA Verwerkingenlogging API-standaard] ontwikkeld. Daarmee kunnen applicaties metagegevens over plaatsgevonden verwerkingen gestandaardiseerd vastleggen en ontsluiten. 
+
+== Leren van wat we doen ==
+Vooruitlopend op formele vaststelling van de Verwerkingenlogging API-standaard past gemeente Nijmegen de standaard al toe. Redenen om de standaard al te gaan gebruiken waren:
+* Zorgvuldige vastlegging van plaatsgevonden verwerkingen is verplicht, maar gebeurt vaak nog niet.
+* Het maakt het mogelijk om Inwoners inzage te geven in verwerkingen waarbij hun gegevens zijn betrokken.
+* Er is geen bruikbare alternatieve standaard, terwijl standaardisatie noodzakelijk is
+* Opdoen van ervaring helpt bij het gemeentebreed toe gaan passen van de standaard.
+Op dit moment, maart 2024, wordt de standaard gebruikt om gegevens vast te leggen over de verwerking van persoonsgegevens bij het invullen van online webformulieren. Binnenkort worden ook gegevens vastgelegd over verwerking bij vergunningprocessen en komt in het MijnGemeente -portaal een inzage mogelijkheid voor inwoners beschikbaar.
+
+== Architectuur == 
+
+Om duidelijk te maken welke informatiesystemen en registers een rol spelen bij gebruik van de standaard is een globale architectuurbeschrijving gemaakt. De rode markering in onderstaande afbeelding toont hoe:
+
+* procesapplicaties die ambtenaren gebruiken de Verwerkingenlogging-standaard toepassen bij vastlegging van verwerkingsgegevens, en
+* voorzieningen zoals een gemeentelijk portaal gestandaardiseerd burgers inzage kunnen geven in plaatsgevonden verwerkingen.
+
+[[Afbeelding:Verwerkingenlogging werkingsgebied.png|alt=Bij verwerkingenlogging betrokken applicaties en registers|gecentreerd|943x943px]]
+Het [[Project Logging en verwerkingsactiviteiten|project Verwerkingenenlogging]] op GEMMA Online beschrijft een aantal architectuuraspecten meer in detail. Daarbij geldt soms dat gemeenten kunnen kiezen voor een verschillende informatiearchitectuur en een daarop gebaseerde inrichting van de informatievoorziening. Een voorbeeld hiervan is de keuze voor een centrale aanpak, waarbij alle verwerkingsgegevens binnen 1 gemeentelijke registratie worden vastgelegd, of voor een decentrale aanpak, waarbij binnen de gemeente meerdere registers met verwerkingsgegevens aanwezig zijn. 
+
+Gemeente Nijmegen kiest vooralsnog voor een architectuur waarbij procesapplicaties met behulp van de Verwerkingenlogging-standaard verwerkingsgegevens vastleggen binnen 1 gemeentelijk register. Een belangrijke reden daarvoor is dat het dan eenvoudiger is om burgers inzage te geven in verwerkingen die in verschillende applicaties hebben plaatsgevonden en dat de beheerlast is te beperken.  
+
+== Realisatie ==
+Bij het gaan gebruiken van de standaarden en het vastleggen van verwerkingsgegevens golden 2 voorwaarden:
+
+* Het beoogde centrale register moet geschikt zijn om heel veel gegevens voor langere tijd vast te leggen, ze snel te kunnen verstrekken en tegen aanvaardbare kosten zijn te gebruiken. 
+* Burgers moet snel inzage kunnen worden krijgen in vastgelegde verwerkingsgegevens.
+
+Om aan de eerste voorwaarde te kunnen voldoen is voor implementatie van het register en daarbij behorende services gekozen voor gebruik van Amazon Web Services. Het vastleggen van gegevens gebeurt via DynamoDB, een volledig beheerde NoSQL-databaseservice. Daarmee is de voor logginggegevens vereiste opslag van grote hoeveelheden gegevens te realiseren. Voor de services die via een API de Verwerkingenlogging-standaard aanroepen wordt gebruik gemaakt van AWS Lambda voor serverloze verwerking. Bij deze opzet vindt op- en afschaling automatisch plaats tegen acceptabele kosten. Gebruik van serverloze diensten past binnen het streven van gemeente Nijmegen om het beheer van infrastructuur te minimaliseren. 
+
+Om aan de tweede voorwaarde, het bieden van inzage aan burgers, te kunnen voldoen zal de persoonlijke gemeentepagina 'Mijn Nijmegen' worden uitgebreid met een inzage-mogelijkheid. Burgers kunnen dan, na plaatsgevonden authenticatie en autoristatie, opvragen welke verwerkingen van hun persoonlijke gegevens hebben plaatsgevonden. 
+
+== Open source, tenzij ==
+Gemeente Nijmegen heeft een voorkeur voor gebruik van open standaarden en van open source software. Iets dat past bij de wens om samen te werken met anderen en te streven naar transparantie en onafhankelijkheid. Alle code, zowel voor het configureren en beheren van gebruikte infrastructuur als voor het conform de Verwerkingenenlogging-standaard vastleggen van gegevens, is gepubliceerd als open source software. Andere gemeenten en leveranciers kunnen die code gebruiken om een vliegende start te maken om gestandaardiseerd verwerkingsgegevens te gaan vastleggen. Er wordt ook onderzocht of er partijen zijn die de in Nijmegen gerealiseerde oplossing voor alle gemeenten beschikbaar willen stellen. Als dit lukt kunnen alle gemeenten op dezelfde manier, en tegen acceptabele kosten, verwerkingsgegevens vastleggen.
+
+==Meer informatie==
+*[https://github.com/GemeenteNijmegen/verwerkingenlogging Softwarecode van de gemeente Nijmegen implementatie (Github)]
+* [https://github.com/VNG-Realisatie/gemma-verwerkingenlogging/ GEMMA Verwerkingenlogging-standaard (Github)] 
+* [https://www.gemmaonline.nl/index.php/Project_Logging_en_verwerkingsactiviteiten Project Logging en verwerkingsactiviteiten (GEMMA Online)]

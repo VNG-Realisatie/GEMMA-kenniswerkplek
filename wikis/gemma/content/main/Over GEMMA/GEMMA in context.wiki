@@ -1,0 +1,44 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Categorie:Over GEMMA]]
+__NOTOC__
+
+[[Bestand:GEMMA context 1.png|alt=Gelaagdeheid van architecturen en de plaats van de GEMMA|rechts|557x557px]]
+Nevenstaand diagram toont hoe de GEMMA zich verhoudt ten opzichte van andere architecturen. De GEMMA bouwt voort op de NORA en GDI-architectuur en gemeenten gebruiken de GEMMA als basis voor hun enterprise-architectuur.  
+
+==Europese overheid== 
+
+Op Europees niveau gemaakte afspraken, standaarden en voorzieningen worden steeds belangrijker voor Nederlandse overheidsorganisaties. Al bestaande verordeningen met grote gevolgen zijn bijvoorbeeld de [https://vng.nl/artikelen/eidas Electronic Identitification And Trust Services] (eIDAS), de [https://autoriteitpersoonsgegevens.nl/themas/basis-avg/avg-algemeen/de-avg-in-het-kort Algemene verordening gegevensbescherming] (GDPR/AVG) en de [https://vng.nl/projecten/single-digital-gateway Single Digital Gateway] (SDG).    
+
+[https://vng.nl/rubrieken/onderwerpen/digital-decade Digital Decade] is een Europees programma om de digitale transformatie van Europa te versterken en versnellen. Aan de basis hiervan ligt wet- en regelgeving die ook gemeenten raakt. De VNG heeft via een [https://vng.nl/nieuws/13-nieuwe-wetten-publicatie-impactanalyse-digital-decade impactanalyse] in kaart gebracht wat het programma voor de digitaliseringsopgave van gemeenten betekent.    
+
+De [https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira European Interoperability Reference Architecture] (EIRA) is de Europese referentiearchitectuur voor het ontwikkelen van interoperabele digitale diensten. De NORA bevat [https://www.noraonline.nl/wiki/Architectuur_internationaal verwijzingen] naar een aantal Europese architectuur-gerelateerde onderwerpen.   
+
+==Nederlandse overheid==
+De NORA is voor architectuur het gemeenschappelijke vertrekpunt voor ruim 1600 overheidsorganisaties.  Verschillende sectoren binnen de overheid kennen een eigen 'dochter-architectuur'.. Samen met de NORA vormen ze '[https://www.noraonline.nl/wiki/NORA_Familie de NORA familie]'. Dochter-architecturen verwijzen naar de NORA en werken uit wat specifiek is voor de betreffende doelgroep. Ook de GEMMA heeft als uitgangspunt dat als elders al een goede architectuuruitwerking heeft plaatsgevonden, daar naar wordt verwezen. GEMMA-architectuurproducten die (ook) overheidsbreed bruikbaar zijn kunnen worden overgebracht naar de NORA.   
+
+De Generieke Digitale Infrastructuur (GDI) is een verzameling gemeenschappelijke afspraken, standaarden en voorzieningen voor betrouwbare, veilige en efficiënte digitale dienstverlening voor alle overheidsorganisaties. De [https://www.noraonline.nl/wiki/GDI-Architectuur_(GA) GDI-Architectuur (GA)] is de doelarchitectuur van de GDI. Deze kent vier domeinen met een eigen domeinarchitectuur ([https://www.noraonline.nl/wiki/GA_Documentatie#Domein_Interactie Interactie], [https://www.noraonline.nl/wiki/GA_Documentatie#Domein_Infrastructuur Toegang], [https://www.noraonline.nl/wiki/GA_Documentatie#Domein_Gegevensuitwisseling Gegevensuitwisseling] en [https://www.noraonline.nl/wiki/GA_Documentatie#Domein_Infrastructuur Infrastructuur]). Het werkdocument ‘[https://pgdi.nl/page/view/42142b4e-d744-49b0-b32d-4e9db036e1ee/architectuur-digitale-overheid Architectuur Digitale Overheid 2030]’ beschrijft de architectuur van de digitale overheid in 2030 en geeft richting aan ontwikkeling van de GDI en de digitale overheid in het algemeen.    
+
+Binnen overheidsarchitecturen spelen standaarden een belangrijke rol. Er zijn overheidsbrede afspraken over de voor standaarden geldende [https://www.forumstandaardisatie.nl/wat-zijn-de-verplichtingskaders verplichtingskaders]. De [https://www.forumstandaardisatie.nl/open-standaarden lijst open standaarden] toont welke standaarden met welke verplichting moeten worden gebruikt.  [[Wat is een standaard]] beschrijft de betekenis en het gebruik van standaarden binnen de GEMMA.   
+
+==Gemeenten: GEMMA==
+De GEMMA is de referentiearchitectuur voor alle Nederlandse gemeenten. De GEMMA bestaat uit een samenhangende verzameling architectuurproducten. Ze bouwt verder op de NORA en GDI.     
+
+De GEMMA is individueel door een gemeente te gebruiken, maar ook bij programma's en projecten waarbij samenwerking en standaardisatie voorop staat. Daarbij kan het gaan om overheidsbrede programma's en om samenwerkingen waarbij gemeenten en leveranciers in communityverband verbeteringen nastreven (bijvoorbeeld Common Ground waarvoor de GEMMA een eigen [[Thema-architectuur Common Ground|thema-architectuur]] kent).     
+
+Via de menuoptie 'Over GEMMA', met onder andere de inleidende pagina [[Wat is GEMMA]], is meer informatie te vinden over de rol van de GEMMA en het gebruik daarvan.     
+
+== Gemeenten: enterprise-architectuur ==
+Gemeenten lijken in bepaalde opzichten op elkaar, maar kunnen op bepaalde aspecten ook sterk van elkaar verschillen. Bij de ene gemeente past bijvoorbeeld een meer centrale aanpak bij het inrichten van haar informatievoorziening, terwijl bij een andere gemeente juist een meer decentrale aanpak nodig is. Het maken van een gemeentebrede enterprise-architectuur blijft daarom maatwerk.     
+
+De GEMMA gebruiken als vertrekpunt bij het ontwikkelen van zo'n eigen, bij haar specifieke situatie passende, enterprise-architectuur biedt een aantal voordelen. Het vergemakkelijkt het maken van bruikbare gemeentelijke architectuur en gemeentelijke architecturen worden beter vergelijkbaar en bevorderen samenwerking. Gebruik van de GEMMA bevordert het toewerken naar een meer eenduidig gemeentelijk informatielandschap, maar dwingt gemeenten niet om hun eigenheid op te geven.     
+
+[[Werken met GEMMA]] beschrijft hoe gemeenten de GEMMA kunnen gebruiken bij het maken van architectuurproducten, zoals een enterprise-architectuur.    
+
+==Programma's en projecten ==
+Een enterprise-architectuur richt zich op gemeentebrede sturing. Daadwerkelijke veranderingen vinden veelal plaats via programma's en projecten. Door die vroegtijdig op belangrijke architectuuraspecten te toetsen kan worden geborgd dat ze in lijn zijn met de gemeentelijke enterprise-architectuur. 
+
+Een belangrijk hulpmiddel daarbij is een [[Toelichting Project Start Architectuur|Project Start Architectuur]] (PSA). Een PSA beschrijft de voorgenomen architectuurkeuzes voor een project om alle betrokken voldoende inzicht te geven om goede keuzes te kunnen maken. Het voorkomt dat fundamentele meningsverschillen of misverstanden (te) laat aan het licht komen en tot problemen in latere projectfasen leiden.

@@ -1,0 +1,59 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Common Ground
+}}
+[[Category:Data]]
+[[Category:Toelichtingen]]
+[[Category:Common Ground]]
+__NOTOC__
+
+Gemeenten maken bij het uitvoeren van hun taken gebruik van veel verschillende soorten data. Inwinning en beheer van die data gebeurt zowel door gemeenten als door andere soorten organisaties. Binnen de overheid geldt het uitgangspunt dat er voor gegevens waar de overheid gebruik van maakt altijd 1 leidende bron bestaat. Van overheidsorganisaties wordt verwacht dat ze bij de uitvoering van hun taken gebruik maken van gegevens uit leidende bronnen. In bepaalde gevallen, bijvoorbeeld in het geval van de basisregistraties, is het gebruik van daarin vastgelegd authentieke gegevens verplicht. 
+
+De NORA en de GEMMA kennen hiervoor onderstaand architectuurprincipe:
+{| class="wikitable"
+!Architectuurprincipe !! Definitie !! Toelichting
+|-
+|[[GEMMA/id-7e3cc108-78f8-4f91-bfd6-26a7bedc83ee]] ([{{#show: GEMMA/id-7e3cc108-78f8-4f91-bfd6-26a7bedc83ee| ?NORA principe}} Naar NORA] )
+|{{#show: GEMMA/id-7e3cc108-78f8-4f91-bfd6-26a7bedc83ee| ?Documentation}}
+|{{#show: GEMMA/id-7e3cc108-78f8-4f91-bfd6-26a7bedc83ee| ?Toelichting}}
+|}
+
+== Terminologie ==
+Binnen de overheid bestaan verschillende definities van de termen 'bron' en 'bronregistratie'. Hierdoor is niet altijd duidelijk wat er precies wordt bedoeld met uitdrukkingen zoals 'data bij de bron' en 'informeer bij de bron'. Bij de ontwikkeling van het overheidsbrede Federatief Datastelsel (FDS) is afgesproken dat [https://realisatieibds.nl/groups/view/0056c9ef-5c2e-44f9-a998-e735f1e9ccaa/federatief-datastelsel/wiki/view/13fe8294-96f1-4d1c-afc0-82488e80af36/wat-is-een-bron-in-de-context-van-fds het afnemer-perspectief leidend is] bij het benoemen van een gegevensverzameling als 'bron'. De data-afnemer beslist of, en in welke context, hij aangeboden gegevens als 'bron' beschouwt. Deze pragmatische benadering maakt een aantal discussies, waarbij vaak vanuit verschillende perspectieven wordt geredeneerd, overbodig. Bijvoorbeeld of bepaalde gegevens bron- of kopiegegevens zijn en of een registratie met gegevens uit meerdere bronregistraties zelf ook een bronregistratie kan zijn. 
+
+De GEMMA gebruikt de term 'bron' op de hiervoor genoemde manier. Onder 'brongegevens' worden eenvoudigweg gegevens bedoeld die uit een bron afkomstig zijn. Met de term 'bronregistratie' wordt een meervoudig te gebruiken registratie met betrouwbare data bedoeld. Bijvoorbeeld [https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/ basisregistraties] en kernregistraties. Ook daarbij geldt dat afnemer-perspectief belangrijk is. Data die een als (voldoende) betrouwbaar ziet, kan door een ander immers als onvoldoende betrouwbaar worden beschouwd.  
+
+== Data bij de bron ==
+Op dit moment worden brongegevens vaak opgevraagd en vervolgens vastgelegd binnen lokaal aanwezige registraties. Bijvoorbeeld bij taakspecifieke applicaties of in een gemeentebreed beschikbare voorziening zoals een gegevensmagazijn. Wordt een brongegeven eenmalig gebruikt als informatiebron voor het vastleggen van nieuw type gegeven dan gaat het niet om een kopie-gegeven. Worden lokaal opgeslagen gegevens via synchronisatie- en distributiemechanismen synchroon gehouden met brongegevens, dan zijn ze te beschouwen als 'kopie-gegevens'. 
+
+Werken met kopie-gegevens heeft voor- en nadelen. Voordelen kunnen zijn dat ze eenvoudiger, sneller  en in combinatie zijn te gebruiken. Nadelen zijn dat er kwaliteits- en actualiteitsproblemen kunnen ontstaan, dat synchronisatie- en distributievoorzieningen nodig zijn en dat moet worden gezorgd dat aan beveiligings- en privacy-eisen wordt voldaan. Vanwege de nadelen streeft de Nederlandse overheid ernaar om binnen lokale registraties vaker ''verwijzingen'' naar brongegevens op te nemen. Brongegevens  worden dan eenmalig vastgelegd binnen bronregistraties en zijn op te vragen op de momenten dat ze nodig zijn. Deze manier van werken wordt aangeduid met de uitdrukking 'data bij de bron'. 
+
+== Informeer bij de bron ==
+Het principe 'Informeer bij de bron' spoort gemeenten aan om optimaal gebruik te maken van geschikte brongegevens. Wanneer dat over organisatiegrenzen heen gebeurt, krijgt dit principe invulling door [[Toelichting federatief werken|federatief te werken]]: gegevens blijven daarbij onder verantwoordelijkheid van de organisatie die ze beheert en beschikbaar stelt, en worden gedeeld op basis van gemeenschappelijke afspraken en standaarden. FDS heeft [https://realisatieibds.nl/groups/view/0056c9ef-5c2e-44f9-a998-e735f1e9ccaa/federatief-datastelsel/wiki/view/7270cbdc-2d2e-4118-8cc4-3ce0cee43405/wanneer-is-binnen-het-fds-aangeboden-data-bruikbaar-als-bron een aantal eisen] benoemd waaraan moet worden voldaan om aangeboden data als 'bron' te kunnen bestempelen. Binnen de GEMMA zien we de data-afnemer als partij die uiteindelijk bepaalt of aangeboden gegevens (voldoende) geschikt zijn om als bron te fungeren. 
+
+Als besloten is om gegevens als bron te gebruiken dan moeten daarvoor nog ontwerp- en realisatiekeuzes worden gemaakt. Opnemen van verwijzingen in lokale registraties, zoals hiervoor beschreven, is een optie. Maar er kunnen ook redenen zijn om andere keuzes te maken. FDS noemt bijvoorbeeld als redenen 'een technische kopie onder controle van de partij die ook de bron ontsluit om beschikbaarheid en performance te waarborgen' en 'een kopie om betrouwbaar afgeleide dataproducten te kunnen genereren'. 
+
+De GEMMA geeft als referentiearchitectuur richting door het gebruik van geschikte bronnen te stimuleren en een aantal mogelijkheden te beschrijven waarmee dat kan. Werken met verwijzingen, zoals beschreven in de [[thema-architectuur Common Ground]], is er daar een van. Maar bijvoorbeeld ook het werken met events, zoals beschreven in de [[Thema-architectuur Eventorientatie|thema-architectuur Event-orientatie]], kan een geschikte manier zijn om te 'informeren bij de bron'. Uiteindelijk zijn contextuele factoren doorslaggevend bij het maken van geschikte ontwerp- en realisatiekeuzes.
+
+== Uit betrouwbare bron ==
+Overheidsorganisaties moeten bij de uitvoering van hun bedrijfsprocessen voldoen aan wet- en regelgeving en hun handelen gedurende langere tijd kunnen verantwoorden. Gebruik van verwijzingen in plaats van lokaal vastgelegde data betekent een grote verandering in taken en verantwoordelijkheden van betrokken partijen. Het betekent onder andere dat de informatiebehoeften van afnemers ‘bij de bron’ moeten zijn ingevuld. Bijvoorbeeld door gegevens zodanig in registers vast te leggen en onderhouden dat historische gegevens, of informatie over de gebeurtenis die aanleiding gaf voor registratie van gegevens, is te leveren. In veel gevallen zullen er ook notificaties moeten worden verstuurd naar afnemers als er bepaald mutaties hebben plaatsgevonden.     
+
+Het project [https://vng.nl/projecten/uit-betrouwbare-bron Uit betrouwbare bron] onderzoekt wat er allemaal nodig is om als overheid 'capabele registers te ontwikkelen die passen binnen een federatief datastelsel'. Op dit moment beschikken registers nog niet over de noodzakelijk capability’s voor bijhouding van gegevens om te functioneren als real-time en duurzaam te gebruiken gegevensbron. Bij voorgenomen gebruik ervan moet dus goed worden bezien in welke risico's dit met zich meebrengt.    
+
+[[Duurzaam toegankelijk informatiebeheer]], onderdeel van de GEMMA thema-architectuur 'Duurzame toegankelijkheid en transparantie', beschrijft een aantal uitdagingen rondom duurzame toegankelijkheid. Een van de conclusies is dat 'bewaren bij de bron' nog niet in alle gevallen mogelijk is om duurzame toegankelijkheid van informatieobjecten te waarborgen.
+
+== Niet-functionele uitdagingen ==
+Gaan werken met verwijzingen naar elders opgeslagen gegevens leidt tot een gedistribueerd gegevenslandschap. Bij het maken van ontwerp- en realisatiekeuzes moet oog zijn voor de daarbij behorende niet-functionele uitdagingen, zoals:    
+
+* Integratie: het op elkaar afstemmen en integreren van gegevens uit verschillende bronnen kan complex zijn.
+* Consistentie: bij verspreid vastgelegde gegevens is het lastiger ze onderling consistent te houden.
+* Performance: gebruik van gegevens uit meerdere bronnen kan de performance negatief beïnvloeden. 
+* Beveiliging: elders vastgelegde gegevens moeten tijdens transport goed worden beveiligd.
+* Schaalbaarheidslimieten: gegevensintensieve bewerkingen of bewerkingen met grote hoeveelheden gegevens zijn niet altijd uitvoerbaar. 
+* Kosten: gebruik van brongegevens kan extra kosten met zich meebrengen (bijvoorbeeld bij pay-per-use tarifering).
+
+== Conclusie ==
+De GEMMA kent als architectuurprincipe het 'informeren bij de bron' waarbij uiteindelijk de data-afnemer bepaalt welke beschikbare gegevens hij als geschikte bron beschouwt. De GEMMA beschrijft verschillende manieren waarop in lijn met dit principe kan worden gewerkt, maar laat het aan betrokken partijen om hierin binnen hun context passende keuzes te maken.   
+
+Bij het ontwerp en realisatie van in gebruik zijnde registers is vaak onvoldoende rekening gehouden met de wens van data-afnemers om te gaan werken met verwijzingen in plaats van lokaal vastgelegde gegevens. Afhankelijk van de uitkomsten van overheidsbrede programma's zoals [https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/data/data-bij-de-bron/ Data bij de bron] en het [https://realisatieibds.nl/page/view/564cc96c-115e-4e81-b5e6-01c99b1814ec/de-ontwikkeling-van-het-federatief-datastelsel Federatief DataStelsel] (zie [[Toelichting federatief werken]]) zal werken met 'data bij de bron' vaker mogelijk worden.

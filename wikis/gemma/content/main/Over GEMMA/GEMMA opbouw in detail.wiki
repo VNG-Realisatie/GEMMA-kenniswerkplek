@@ -1,0 +1,15 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheerder
+}}
+__NOTOC__
+[[Category:Over GEMMA]]
+Een overzicht van alle GEMMA producten
+
+{{ToonViewGEMMA|viewid=9c870b22-d4b1-48f7-98ea-c5b97f43a752|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4}}<!--GEMMA portfolio subproducten (ArchiMateView)--> 
+
+{{ToonTabelVanViewGEMMA
+|viewid=9c870b22-d4b1-48f7-98ea-c5b97f43a752
+|modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+}}<!--GEMMA portfolio subproducten (ArchiMateView)-->

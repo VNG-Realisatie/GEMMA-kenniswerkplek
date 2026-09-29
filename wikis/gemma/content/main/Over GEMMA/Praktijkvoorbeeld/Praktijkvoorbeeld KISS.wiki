@@ -1,0 +1,24 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Common Ground
+}}
+[[Category:Common Ground]][[Categorie:Praktijkvoorbeeld]]
+Eind 2023 is versie 1 van KISS (Klantinteractie Servicesysteem) opgeleverd. KISS is een moderne werkomgeving voor KCC-medewerkers waarbij de (Gearchiveerde)Common_Ground_informatiearchitectuurprincipes in de praktijk zijn toegepast. KISS is een front-end component die goed past in een Common Ground applicatielandschap en KCC-medewerkers optimaal ondersteunt door informatie uit verschillende bronnen samen te brengen.
+
+== Ontsluiting van data via moderne API-standaarden: een forse opgave ==
+Ondank de voorbereidingen kent het ontwerp- en realisatietraject veel rework en uitzoekwerk rondom architectuur. Immers, front-end componenten, gepositioneerd in de laag ‘Interactie’ van het [[Common Ground vijflaagsmodel]], kunnen alleen goed werken als er gestandaardiseerde API’s zijn om elders aanwezige data te gebruiken (‘scheiden van processen en data’). Zeker als, zoals in het geval van KISS, meerdere gemeenten met verschillende informatielandschappen er mee moeten werken. 
+
+'De gebruiker staat centraal. Verbetering van de (digitale) dienstverlening start (daarom) steeds vaker op de interactielaag, waar we voelbaar het verschil kunnen maken', aldus Moniek Koerhuis, Programmamananger Stedelijke Dienstverlening bij Gemeente Enschede en Projectleider tijdens de bouw fase 1 van KISS. 'Inwoners kunnen gemakkelijker zelf zaken regelen en als dat niet lukt dan kunnen ze terecht bij het KCC, waar medewerkers met zicht op de situatie van de inwoner of ondernemer hulp op maat bieden. Die medewerker heeft daarvoor wel informatie nodig waarvoor API-standaarden nodig zijn, die vaak in ontwikkeling zijn of nog ontbreken'. 
+
+Martin de Bijl, Adviseur bij Dimpact geeft aan dat gemeenten daarnaast de uitdaging hebben om bestaande systemen te ontsluiten, want er zal sprake zijn van een hybride situatie: ‘nieuw naast oud’. 'Die situatie zal per gemeente verschillend zijn. KISS, maar ook vele andere Common Ground front-end applicaties halen uitsluitend gegevens op via de moderne vastgestelde API-standaarden. Dat betekent aanpassing/uitfasering van bestaande systemen. Al met al heeft de introductie van KISS een forse impact op het gemeentelijk informatielandschap'.
+
+== Praktische keuzes en tussenoplossingen met behoud van common ground principes ==
+Astrid Brantjes, Projectmanager Dienstverlening bij de Gemeente Utrecht en Product Owner KISS vertelt dat het voor haar essentieel was om op een onderbouwde manier te kunnen beslissen naar welke standaarden de leverancier (ICATT) kon kijken tijdens ontwikkeling van KISS. 'Door de werkgroep architectuur is daarvoor als ontwerpprincipe vastgesteld dat als een standaard nog niet compleet of vastgesteld was er gebruik werd gemaakt van de Overige Objecten Registratie API. Hiermee bleef KISS trouw aan de Common Ground principes en kon het tempo van doorontwikkeling erin worden gehouden'. 
+
+Naast gebruik van beschikbare vastgestelde standaarden is er vanuit de KISS-samenwerking veel tijd en aandacht besteed aan verdere standaardisatie van API’s voor bijvoorbeeld het gebruik van de klantinteractiestandaard.
+
+== Meer informatie ==
+* [https://commonground.nl/groups/view/07b18e2c-471b-4874-80b5-020dfe4ad52e/team-kiss Team KISS] op commonground.nl
+* [https://klant-interactie-service-systeem.readthedocs.io/en/latest/ KISS systeemdocumentatie], inclusief [https://klant-interactie-service-systeem.readthedocs.io/en/latest/Architectuur/ een actuele architectuurplaat]
+* [https://www.dimpact.nl/podiumd-contact/ PodiumD contact informatie (Dimpact)]

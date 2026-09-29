@@ -259,6 +259,250 @@
     "revid": 507454,
     "titel": "Wat is GEMMA"
   },
+  "content/main/Over GEMMA/Archief.wiki": {
+    "revid": 395693,
+    "titel": "Archief"
+  },
+  "content/main/Over GEMMA/Doelgroepen/_index.wiki": {
+    "revid": 287552,
+    "titel": "Doelgroepen"
+  },
+  "content/main/Over GEMMA/Doelgroepen/adviseur informatievoorziening.wiki": {
+    "revid": 290070,
+    "titel": "Doelgroepen/adviseur informatievoorziening"
+  },
+  "content/main/Over GEMMA/Doelgroepen/applicatie beheerder.wiki": {
+    "revid": 193116,
+    "titel": "Doelgroepen/applicatie beheerder"
+  },
+  "content/main/Over GEMMA/Doelgroepen/architect.wiki": {
+    "revid": 507120,
+    "titel": "Doelgroepen/architect"
+  },
+  "content/main/Over GEMMA/Doelgroepen/bestuurder.wiki": {
+    "revid": 193859,
+    "titel": "Doelgroepen/bestuurder"
+  },
+  "content/main/Over GEMMA/Doelgroepen/functioneel beheerder.wiki": {
+    "revid": 290071,
+    "titel": "Doelgroepen/functioneel beheerder"
+  },
+  "content/main/Over GEMMA/Doelgroepen/informatiemanager.wiki": {
+    "revid": 194233,
+    "titel": "Doelgroepen/informatiemanager"
+  },
+  "content/main/Over GEMMA/Doelgroepen/leidinggevende.wiki": {
+    "revid": 193119,
+    "titel": "Doelgroepen/leidinggevende"
+  },
+  "content/main/Over GEMMA/Doelgroepen/leverancier/accountmanager.wiki": {
+    "revid": 193133,
+    "titel": "Doelgroepen/leverancier/accountmanager"
+  },
+  "content/main/Over GEMMA/Doelgroepen/leverancier/productmanager.wiki": {
+    "revid": 193132,
+    "titel": "Doelgroepen/leverancier/productmanager"
+  },
+  "content/main/Over GEMMA/Doelgroepen/leverancier/projectleider.wiki": {
+    "revid": 316397,
+    "titel": "Doelgroepen/leverancier/projectleider"
+  },
+  "content/main/Over GEMMA/Doelgroepen/ontwikkelaar.wiki": {
+    "revid": 452250,
+    "titel": "Doelgroepen/ontwikkelaar"
+  },
+  "content/main/Over GEMMA/Doelgroepen/programmamanager.wiki": {
+    "revid": 193107,
+    "titel": "Doelgroepen/programmamanager"
+  },
+  "content/main/Over GEMMA/Doelgroepen/projectleider.wiki": {
+    "revid": 316393,
+    "titel": "Doelgroepen/projectleider"
+  },
+  "content/main/Over GEMMA/GEMMA Begrippenkader.wiki": {
+    "revid": 395586,
+    "titel": "GEMMA Begrippenkader"
+  },
+  "content/main/Over GEMMA/GEMMA Leergang.wiki": {
+    "revid": 432126,
+    "titel": "GEMMA Leergang"
+  },
+  "content/main/Over GEMMA/GEMMA in context.wiki": {
+    "revid": 316424,
+    "titel": "GEMMA in context"
+  },
+  "content/main/Over GEMMA/GEMMA kennismodel.wiki": {
+    "revid": 421253,
+    "titel": "GEMMA kennismodel"
+  },
+  "content/main/Over GEMMA/GEMMA nieuwsbrief.wiki": {
+    "revid": 467151,
+    "titel": "GEMMA nieuwsbrief"
+  },
+  "content/main/Over GEMMA/GEMMA opbouw in detail.wiki": {
+    "revid": 289932,
+    "titel": "GEMMA opbouw in detail"
+  },
+  "content/main/Over GEMMA/GEMMA opbouw.wiki": {
+    "revid": 289931,
+    "titel": "GEMMA opbouw"
+  },
+  "content/main/Over GEMMA/Hulpmiddelen voor de architect.wiki": {
+    "revid": 507144,
+    "titel": "Hulpmiddelen voor de architect"
+  },
+  "content/main/Over GEMMA/Op de hoogte blijven.wiki": {
+    "revid": 437634,
+    "titel": "Op de hoogte blijven"
+  },
+  "content/main/Over GEMMA/Praktijkvoorbeeld/Practice logging van verwerking.wiki": {
+    "revid": 413476,
+    "titel": "Practice logging van verwerking"
+  },
+  "content/main/Over GEMMA/Praktijkvoorbeeld/Praktijkvoorbeeld Datagedreven sturen bij gemeente Breda.wiki": {
+    "revid": 336428,
+    "titel": "Praktijkvoorbeeld Datagedreven sturen bij gemeente Breda"
+  },
+  "content/main/Over GEMMA/Praktijkvoorbeeld/Praktijkvoorbeeld KISS.wiki": {
+    "revid": 507178,
+    "titel": "Praktijkvoorbeeld KISS"
+  },
+  "content/main/Over GEMMA/Praktijkvoorbeeld/Procesarchitectuur praktijkvoorbeelden.wiki": {
+    "revid": 443199,
+    "titel": "Procesarchitectuur praktijkvoorbeelden"
+  },
+  "content/main/Over GEMMA/Praktijkvoorbeeld/Processenlandschap en Processenlijst voor gemeenten door gemeente Hilversum.wiki": {
+    "revid": 441410,
+    "titel": "Processenlandschap en Processenlijst voor gemeenten door gemeente Hilversum"
+  },
+  "content/main/Over GEMMA/Praktijkvoorbeelden.wiki": {
+    "revid": 507153,
+    "titel": "Praktijkvoorbeelden"
+  },
+  "content/main/Over GEMMA/Tips voor de architect.wiki": {
+    "revid": 507127,
+    "titel": "Tips voor de architect"
+  },
+  "content/main/Over GEMMA/Toelichting Project Start Architectuur.wiki": {
+    "revid": 432122,
+    "titel": "Toelichting Project Start Architectuur"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting Archimate.wiki": {
+    "revid": 421260,
+    "titel": "Toelichting Archimate"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting GEMMA standaardenlijst.wiki": {
+    "revid": 436573,
+    "titel": "Toelichting GEMMA standaardenlijst"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting Open source software.wiki": {
+    "revid": 421261,
+    "titel": "Toelichting Open source software"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting aanschaf en vervanging applicaties.wiki": {
+    "revid": 507124,
+    "titel": "Toelichting aanschaf en vervanging applicaties"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting data bij de bron.wiki": {
+    "revid": 507134,
+    "titel": "Toelichting data bij de bron"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting federatief werken.wiki": {
+    "revid": 505730,
+    "titel": "Toelichting federatief werken"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting gebruik van REST.wiki": {
+    "revid": 441400,
+    "titel": "Toelichting gebruik van REST"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting gelaagde architectuur.wiki": {
+    "revid": 421258,
+    "titel": "Toelichting gelaagde architectuur"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting idEA-platen.wiki": {
+    "revid": 432123,
+    "titel": "Toelichting idEA-platen"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting modulariteit en granulariteit.wiki": {
+    "revid": 421259,
+    "titel": "Toelichting modulariteit en granulariteit"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting nieuw naast oud.wiki": {
+    "revid": 421256,
+    "titel": "Toelichting nieuw naast oud"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting overzichtsdiagrammen.wiki": {
+    "revid": 421262,
+    "titel": "Toelichting overzichtsdiagrammen"
+  },
+  "content/main/Over GEMMA/Toelichtingen/Toelichting scheiden processen en data.wiki": {
+    "revid": 507151,
+    "titel": "Toelichting scheiden processen en data"
+  },
+  "content/main/Over GEMMA/Veelgestelde vragen.wiki": {
+    "revid": 507407,
+    "titel": "Veelgestelde vragen"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/ArchiMate modelleren/Archi en git.wiki": {
+    "revid": 507121,
+    "titel": "Archi en git"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/ArchiMate modelleren/GEMMA modellering.wiki": {
+    "revid": 376889,
+    "titel": "GEMMA modellering"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/ArchiMate modelleren/Importeren van een AMEFF-bestand.wiki": {
+    "revid": 505708,
+    "titel": "Importeren van een AMEFF-bestand"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/ArchiMate modelleren/Overzicht ArchiMate definities.wiki": {
+    "revid": 146253,
+    "titel": "Overzicht ArchiMate definities"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/ArchiMate modelleren/Releases GEMMA ArchiMate-model.wiki": {
+    "revid": 507177,
+    "titel": "Releases GEMMA ArchiMate-model"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/ArchiMate modelleren/Softwarecatalogus AMEFF export.wiki": {
+    "revid": 193108,
+    "titel": "Softwarecatalogus AMEFF export"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/ArchiMate modelleren/Waarom heeft VNG voor de tool Archi gekozen.wiki": {
+    "revid": 507400,
+    "titel": "Waarom heeft VNG voor de tool Archi gekozen"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/Architectuurkennis en gebruik.wiki": {
+    "revid": 262996,
+    "titel": "Architectuurkennis en gebruik"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/Bespreek je informatievoorziening met de gemeente Nederland plaat.wiki": {
+    "revid": 507113,
+    "titel": "Bespreek je informatievoorziening met de gemeente Nederland plaat"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/Gebruikssuggesties GEMMA producten.wiki": {
+    "revid": 507123,
+    "titel": "Gebruikssuggesties GEMMA producten"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/Kijkwijzer IdEA Gemeente Nederland.wiki": {
+    "revid": 507126,
+    "titel": "Kijkwijzer IdEA Gemeente Nederland"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/Softwarecatalogus en GIBIT.wiki": {
+    "revid": 395589,
+    "titel": "Softwarecatalogus en GIBIT"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/Tekenen en modelleren.wiki": {
+    "revid": 193128,
+    "titel": "Tekenen en modelleren"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/Werken onder architectuur.wiki": {
+    "revid": 507118,
+    "titel": "Werken onder architectuur"
+  },
+  "content/main/Over GEMMA/Werken met GEMMA/_index.wiki": {
+    "revid": 507122,
+    "titel": "Werken met GEMMA"
+  },
   "content/main/wikisync_test.wiki": {
     "revid": 507459,
     "titel": "Wikisync test"

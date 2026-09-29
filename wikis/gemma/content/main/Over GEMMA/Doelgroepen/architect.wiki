@@ -1,0 +1,40 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Categorie:Doelgroepen]]<!-- {{DISPLAYTITLE: {{SUBPAGENAME}}}} -->{{DISPLAYTITLE: Architect}}
+{{Persona/indeling|Als architect vertaal ik de organisatie doelstellingen van de organisatie naar de inrichting van processen en informatievoorziening. Ik adviseer bij belangrijke keuzes die gemaakt moeten worden en beschrijf deze in de vorm van (architectuur)principes, richtlijnen en modellen.
+|De informatie die ik nodig heb is hoog over. Wat is er gaande? Zijn er ontwikkelingen waar we iets mee moeten? Moeten we iets aanpassen vanwege een wetswijziging?
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = De GEMMA gebruik ik om een beeld te krijgen van hoe onze applicaties aansluiten op ketenprocessen. 
+* [[Werken onder architectuur]]
+* [[Architectuurkennis en gebruik]]
+* [[Tips voor de architect]]
+* [[Gebruikssuggesties GEMMA producten|Gebruikssuggesties GEMMA-producten]]
+* [[Wat is de basisarchitectuur]]
+* [[Bedrijfsarchitectuur]]
+* [[Informatie-architectuur]]
+* [[Projecten]]
+
+In mijn werk als {{SUBPAGENAME}} maak ik gebruik van de GEMMA
+* [[Wat is een standaard]]
+* Wat is een [[Thema-architectuur]]?
+* Uit welke producten is de [[GEMMA opbouw|GEMMA opgebouwd]]
+* [[ArchiMate modelleren]] om te werken met het GEMMA ArchiMate-model
+
+Ik wil inhoudelijke informatie kunnen vinden, ook om te delen met collega's.
+* [[GEMMA standaardenlijst]]
+* [[Thema-architectuur Werken met API's]]
+|titel2  = Meer informatie
+|inhoud2 = Welke software is beschikbaar en welke applicaties gebruiken (andere) gemeenten?
+* [https://www.softwarecatalogus.nl/ GEMMA Softwarecatalogus]
+* [https://github.com/VNG-Realisatie Github VNG Realisatie]
+Ik moet op de hoogte blijven van algemene trends en ontwikkelingen.
+* [https://forum.vng.nl Forum van VNG]
+* [https://vng.nl/gemeentelijke-uitvoering Gemeentelijke Uitvoering (GGU) projecten]
+* [https://vng.nl/praktijkvoorbeelden Praktijkvoorbeelden van gemeenten] op VNG.nl
+|hoogte = 600px
+}}
+}}

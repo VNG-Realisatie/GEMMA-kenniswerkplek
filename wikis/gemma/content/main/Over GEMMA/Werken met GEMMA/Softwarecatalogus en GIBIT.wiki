@@ -1,0 +1,23 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Categorie:Werken met GEMMA]]
+De GEMMA is een referentiearchitectuur die via de verschillende oplossingen gemeenten helpt om hun ICT landschap op orde te houden of te krijgen. Oplossingen die de GEMMA gebruiken zijn de Softwarecatalogus en de GIBIT. 
+
+== Softwarecatalogus ==
+
+Het doel van de softwarecatalogus is om gemeenten kennis en informatie uit laten wisselen en de gebruikte software te laten vergelijken met andere gemeenten. Daarnaast geeft de softwarecatalogus inzicht in het huidige en toekomstige softwareaanbod van de aangemelde ICT-leveranciers. 
+Gemeenten gebruiken de GEMMA Softwarecatalogus bij ICT-vervangings- of investeringsvraagstukken. Zij vergelijken hun ingevoerde applicatielandschap en koppelingen met anderen en zoeken contact met vergelijkbare gemeenten.
+  
+* [https://www.softwarecatalogus.nl Naar de Softwarecatalogus]
+* [https://www.softwarecatalogus.nl/Handleiding%20koppeling%20architectuurtools Lees de softwarecatalogus export in een architectuurtool]
+* [https://vng.nl/projecten/gemma-softwarecatalogus GGU project de GEMMA Softwarecatalogus]
+
+== GIBIT ==
+GIBIT staat voor Gemeentelijke Inkoop bij IT Toolbox. Deze uniforme voorwaarden helpen gemeenten bij het professionaliseren van de inkoop van ICT-diensten en –producten. Gemeentelijke diensten digitaliseren steeds verder. Dat maakt professionalisering van inkoop van ICT essentieel. De GIBIT-Toolbox levert hiervoor de basis. Op 14 mei 2021 zijn gemeenten via de ledenbrief Vernieuwde Gemeentelijke inkoopvoorwaarden bij IT Toolbox (GIBIT) geïnformeerd over het belang en de inhoud van de GIBIT.
+
+* [https://vng.nl/artikelen/stappenplan-gebruik-gibit-toolbox Stappenplan gebruik van de GIBIT]
+* [https://overeenkomsten.gibit.nl/auth/login GIBIT Overeenkomstengenerator]
+* [https://vng.nl/projecten/gibit GGU Project GIBIT]

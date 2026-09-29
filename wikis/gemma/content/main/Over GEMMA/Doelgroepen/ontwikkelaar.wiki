@@ -1,0 +1,32 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder GEMMA
+}}
+[[Categorie:Doelgroepen]]
+__NOTOC__
+{{DISPLAYTITLE: Ontwikkelaar}}
+{{Persona/indeling|Als ontwikkelaar ben ik constant op zoek naar manieren om mijn werk efficiënter en effectiever te maken. Het is voor mij van groot belang om snel toegang te hebben tot de informatie die ik nodig heb om mijn projecten succesvol uit te voeren.
+|Gelukkig biedt GEMMA hierbij uitkomst. De GEMMA helpt mij om een beter begrip te krijgen van hoe onze applicaties worden toegepast binnen gemeentelijke processen. Dit stelt mij in staat om op de juiste manier in te spelen op de behoeften van de gemeente en ervoor te zorgen dat onze applicaties goed aansluiten op de ketenprocessen.
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = Ik gebruik de volgende producten
+* [[Informatie-architectuur]]
+* [[Thema-architectuur|Wat is een thema en welke thema's zijn er?]]
+* [[Projecten|Projecten met invloed op de GEMMA]]
+
+De GEMMA helpt mij om relevante standaarden te vinden. Via de referentiecomponenten kan ik snel verplichte en aanbevolen standaarden vinden.
+* [[Referentiecomponenten en applicatieservices]]
+* [[Informatiemodellen]]
+* [[GEMMA standaardenlijst]]
+
+|titel2  = Meer informatie
+|inhoud2 = Hier vind ik de specificaties van de standaarden
+* [https://standaarden.vng.nl Standaarden.vng.nl]
+* [https://iam.stuftestplatform.nl:8445/auth/realms/STP_PROD/protocol/openid-connect/auth?client_id=APP_STP_PUBLIC&redirect_uri=https%3A%2F%2Fstuftestplatform.nl%3A8443%2Fstv%2Fadmin%2Fui%2Fapps&state=67bf5991-1b7f-4491-89af-0bb0dddb5d28&response_mode=fragment&response_type=code&scope=openid&nonce=0d87daf8-4ef0-40f1-9785-f672b3b5c9a0 StUF testplatform]
+
+Welke software is beschikbaar en welke applicaties gebruiken (andere) gemeenten?
+* [https://www.softwarecatalogus.nl/ GEMMA Softwarecatalogus]
+|hoogte = 420px
+}}
+}}

@@ -1,0 +1,32 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Procesarchitectuur
+}}
+[[Category:Procesarchitectuur]][[Category:Praktijkvoorbeeld]]
+Er is in een gemeentelijke organisatie de behoefte om eigenaarschap voor processen en de daarmee samenhangende verantwoordelijkheden vast te stellen.
+
+Welke functionaris heeft de eindverantwoordelijkheid voor een proces en hoe hangen die met elkaar samen. Het Processenlandschap in combinatie met de processenlijst helpt ons daarbij.
+
+==Totstandkoming ==
+Deze documenten zijn een doorontwikkeling op een eerdere versie uit 2021. We hebben in 2026 gekeken naar de UPO lijst voor Diensten en Producten catalogus om te kijken welke producten en diensten we leveren en uit welke processen die voortkomen.
+
+Het is onze wens om daadwerkelijk te linken aan de UPOlijst en zelfs de iNavigator – maar zover zijn we nog niet.
+
+De bijlagen die hier beschikbaar gemaakt worden zijn generiek gemaakt zodat je ze zelf kunt aanpassen voor jouw gemeente. Het kan zijn dat je een proces mist; dan moet je die zelf toevoegen om die toe te voegen aan de lijst en op de plaat.
+
+==Wat kan je ermee? ==
+We willen dit overzicht op meerdere manieren gebruiken:
+# Het geeft een beeld van wie we zijn – het hangt in de gebouwen van de gemeente. Het ook een mooi overzicht van wat we als gemeente allemaal doen.
+# Wij gebruiken het om binnen de gemeente ‘één taal te spreken’. Dat wil zeggen dat we bij de verwijzing naar een proces altijd het procesnummer en de procesnaam noemen. Bijvoorbeeld als er een audit op bepaalde processen gedaan moet worden dan identificeren we die met het nummer dat eraan is toegekend.
+# Ook willen we het op allerlei plekken terug laten komen; bijvoorbeeld in het risicoregister, het verwerkingenregister, bij het auditen van (werk)processen, en bij het vastleggen van procesbeschrijvingen, etc.
+# Proceseigenaarschap biedt de directie de mogelijkheid om te sturen op processen. Zo ver zijn wij nog niet want het is wel fair om bestaande proceseigenaren te ondersteunen bij het nemen van die rol. Vaak weet een teammanager wel dat hij/zij verantwoordelijk is voor het integrale proces maar is het nooit zo expliciet genoemd.
+# In gesprek gaan met de proceseigenaar over financiën, archief-eisen, privacybescherming van de gegevens worden en informatiebeveiliging maatregelen die de gegevens moeten beschermen die binnen een proces behandeld.
+# Vastleggen van risico’s zodat er een overzichtelijk geheel van risico’s bestaat op grond waarvan keuzes gemaakt kunnen worden voor investeringen.
+
+==Downloads==
+De gemeente Hilversum heeft haar processenlandschap en processenlijst aangeboden om te publiceren. 
+* {{Bestand met info|Processenlandschap en processen van een Gemeente.zip|ZIP-bestand met het processenlandschap en de processen van een gemeente}}
+</br>
+Met dank aan:</br>
+Harriët Arnolds - Informatie CISO van gemeente Hilversum.

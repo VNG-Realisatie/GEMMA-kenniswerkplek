@@ -1,0 +1,28 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Category:ArchiMate modelleren]]
+[[Category:Toelichtingen]]
+__NOTOC__
+
+ArchiMate is een internationale modelleertaal om architectuur te beschrijven, analyseren en visualiseren. De taal wordt vaak toegepast om de samenhang tussen bedrijfsprocessen, informatiesystemen en technologieën beter te begrijpen en te kunnen verbeteren. De GEMMA gebruikt Archimate om architectuur gestructureerd en gestandaardiseerd te beschrijven.
+
+Archimate kent verschillende soorten ''elementen'' om bepaalde architectuuraspecten te beschrijven. Elementen zijn in groepen geordend, vergelijkbaar met de indeling van de [[Wat is de basisarchitectuur|GEMMA-Basisarchitectuur]]: Strategie en Motivatie, Bedrijfsarchitectuur, Informatiearchitectuur en Technische Architectuur. De groep Strategie en Motivatie kent bijvoorbeeld het element ‘Principe’, de groep Bedrijfsarchitectuur ‘Bedrijfsproces’, Informatiearchitectuur ‘Applicatiecomponent’ en Technische Architectuur ‘Technologiecomponent’. De samenhang tussen elementen wordt beschreven door middel van, verschillende soorten, ''relaties''.
+
+Gebruik van Archimate heeft als voordelen dat architectuur gestructureerd is te beschrijven en dat vastgelegde informatie voor verschillende doelen is te gebruiken. Het maakt ook visualisatie van architectuur mogelijk via voor specifieke doelen gemaakte ''diagrammen''. Visualisatie via diagrammen helpt om belanghebbenden bepaalde aspecten van de architectuur beter te laten begrijpen en er over te kunnen communiceren. 
+
+De GEMMA gebruikt een subset van alle mogelijke Archimate-elementen en -relaties (zie [[GEMMA kennismodel]]). Bij het daarmee modelleren wordt vastgelegd welke gemeentelijke architectuurelementen worden onderscheiden. Bijvoorbeeld welke 'architectuurprincipes' er zijn, welke 'bedrijfsobjecten' en welke 'applicatieservices'. Alle elementen zijn vastgelegd in een openbaar toegankelijke database ('repository'). Een belangrijk doel van de GEMMA-repository is om op de website GEMMAonline.nl automatisch informatie te kunnen aanmaken. Bijvoorbeeld diagrammen, zoals [[Referentiecomponenten en applicatieservices]], waarin verschillende soorten, voor gemeenten herkenbare, elementen in samenhang worden getoond. Maar ook opsommingen van elementen, zoals voor gemeenten relevante standaarden in de [[GEMMA_standaardenlijst]]. 
+
+Archimate maakt het mogelijk om (een deel van) de GEMMA gestructureerd vast te leggen, te beheren en door te ontwikkelen. Via gegenereerde diagrammen kunnen architectuuronderdelen consistent en eenduidig worden gevisualiseerd. Een nadeel van Archimate-diagrammen is dat ze voor mensen zonder Archimate-kennis soms lastig(er) zijn te begrijpen. Om hieraan zoveel mogelijk tegemoet te komen:
+
+* Gebruikt de GEMMA slechts een beperkte set Archimate-elementen en relaties.
+
+* Kent ieder onderdeel van de GEMMA-Basisarchitectuur een eigen landingspagina waarop de belangrijkste architectuurelementen en hun relaties worden toegelicht.
+
+* Legt de pagina [[ArchiMate modelleren]] uit hoe de GEMMA Archimate gebruikt en hoe er op verschillende manieren gebruik van is te maken.
+
+* Wordt gewerkt aan het begrijpelijker maken van diagrammen. Bijvoorbeeld door  niet essentiële informatie weg te laten en door legenda toe te voegen.
+
+Voor Archimate-diagrammen op GEMMAonline.nl geldt dat klikken op een bepaald element of relatie leidt naar een pagina met detailinformatie. Zo’n pagina toont bijvoorbeeld een ‘context diagram’ dat visualiseert met welke andere elementen er welke relaties zijn, en laat zien op welke diagrammen (‘views’) het element allemaal voorkomt. Dit soort informatie is nuttig zijn voor meer ervaren gebruikers, maar kan door de veelheid ook snel tot verwarring bij bezoekers leiden. Er wordt gewerkt aan een oplossing voor het beter bruikbaar maken van dit type pagina's.

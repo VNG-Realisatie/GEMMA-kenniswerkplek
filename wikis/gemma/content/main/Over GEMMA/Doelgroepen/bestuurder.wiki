@@ -1,0 +1,25 @@
+__NOINDEX__
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+}}[[Categorie:Doelgroepen]]<!-- {{DISPLAYTITLE: {{SUBPAGENAME}}}} -->{{DISPLAYTITLE: Bestuurder}}
+{{Persona/indeling
+|Ik ben een bestuurder die weet wat VNG te bieden heeft. Pas als ik in mijn werk een probleem of uitdaging heb, neem ik contact op met de VNG. De ervaringen van andere gemeenten die VNG deelt, lees ik graag. 
+Ik weet redelijk wat er speelt op de voor mij relevante onderwerpen. De VNG is voor mij een belangrijke informatiebron. 
+|Ik gebruik het liefste bronnen die mij een efficiënt overzicht van informatie geven. De GEMMA & VNG nieuwsbrief zijn slechts enkele van de informatiebronnen die ik daarvoor gebruik.
+
+Ik heb behoefte aan informatie over wetswijzigingen, standaard verordeningen, ontwikkelingen en trends. Daarbij ben ik op zoek naar wat dit betekent voor mijn gemeente, welke kansen dit biedt en de mogelijke dilemma's.
+{{Landingspagina
+|titel1  = Producten
+|inhoud1 = Actuele thema's en projecten
+* Wat is een [[Thema-architectuur]]?
+* [[Projecten]]
+|titel2  = Meer informatie
+|inhoud2 = Ik moet op de hoogte blijven van algemene trends en ontwikkelingen.
+* [https://vng.nl Website van VNG]
+* [https://forum.vng.nl Forum van VNG]
+* [https://vng.nl/gemeentelijke-uitvoering Gemeentelijke Uitvoering (GGU) projecten]
+* [https://vng.nl/praktijkvoorbeelden Praktijkvoorbeelden van gemeenten] op VNG.nl
+|hoogte = 300px
+}}
+}}

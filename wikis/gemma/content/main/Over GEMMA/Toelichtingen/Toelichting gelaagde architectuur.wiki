@@ -1,0 +1,51 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=GEMMA Beheer
+}}
+[[Category:Common Ground]]
+[[Category:Toelichtingen]]
+__NOTOC__
+
+Het werken met lagen is een ontwerpprincipe waarbij een systeem, structuur of organisatie wordt gezien als opgebouwd uit verschillende lagen. Iedere laag heet specifieke taken of verantwoordelijkheden. Het concept is op verschillende gebieden toe te passen, zoals: 
+
+*Bouwkunde: lagen zijn bijvoorbeeld de fundering, dragende muren, installaties, en het dak.
+*Organisaties: bijvoorbeeld management en operationele laag.
+*Netwerken: bijvoorbeeld het OSI-lagenmodel van de fysieke laag tot aan de applicatielaag.
+
+Deze toelichting gaat met name over het gebruik van (horizontale) lagenmodellen binnen enterprise architectuur. Daarbij geldt dat gebruikte modellen in meerdere opzichten van elkaar kunnen verschillen. Het is daarom altijd wenselijk om voor ieder model het doel, de inhoud en de werking toe te lichten. 
+
+==Gelaagde architectuur==
+In [https://www.opengroup.org/togaf TOGAF] (The Open Group Architecture Framework), [[wikipedia:ArchiMate|ArchiMate]] (een modelleertaal voor enterprise-architectuur) en de GEMMA verwijst ‘gelaagde architectuur’ naar het gebruik van lagen om een organisatie of systeem op een gestructureerde en overzichtelijke manier te modelleren. De belangrijkste architectuurlagen die daarbij worden onderscheiden zijn:
+*Strategie en motivatie, met daarin bijvoorbeeld doelen, capabilities, principes op basis waarvan goede beslissingen zijn te nemen.
+*Bedrijfsarchitectuur, met diensten, bedrijfsprocessen, functies en rollen die nodig zijn om organisatiedoelen te bereiken.
+*Informatiearchitectuur, met gegevens, softwareapplicaties en hun interactie, waarmee bedrijfsprocessen goed zijn te ondersteunen.
+*Technologiearchitectuur, met de benodigde hardware, software en netwerkbronnen om applicaties en bedrijfsprocessen te ondersteunen.
+
+{{Uitlichten|
+In een strategisch document is beschreven dat een organisatie als doel heeft om de klanttevredenheid te verhogen (motivatielaag). Om dit te realiseren wil men de klantenservice vetbeteren. Het bedrijfsproces "klantenservice" (bedrijfslaag) wordt ondersteund door een softwareapplicatie die gebruik maakt van klantgegevens (informatielaag). De applicatie en bijbehorende database zijn geïnstalleerd op een server (technologielaag). 
+}}
+
+==Voordelen==
+Het onderverdelen van een complex geheel in lagen, kan verschillende voordelen opleveren:
+*Gescheiden complexiteit: De totale complexiteit van een systeem wordt verdeeld, waardoor elke laag eenvoudiger is te begrijpen en te beheren.
+*Gescheiden verantwoordelijkheden: Elke laag heeft specifieke functies of verantwoordelijkheden. Dit helpt bij het scheiden van taken en zorgt ervoor dat elke laag eigen geschikte processen en regels kan volgen.
+*Modulariteit en flexibiliteit: Elke laag kan worden gewijzigd en (her)gebruikt zonder dat dit grote gevolgen heeft voor andere lagen. Dit verhoogt de flexibiliteit en onderhoudbaarheid van het systeem. Interactie tussen lagen is op een gestructureerde en gecontroleerde manier in te richten (bijvoorbeeld via standaard interfaces).
+*Betere communicatie:  Verschillende lagen geven verschillende stakeholders inzicht en overzicht van onderwerpen die voor hen herkenbaar en relevant zijn.
+
+==Nadelen==
+*Afstemming: bij afhankelijkheden tussen lagen, waarbij veranderingen in een laag gevolgen heeft voor andere lagen, moeten wijzigingen goed worden afgestemd.
+*Traagheid: opsplitsen van functionaliteit in lagen kan, zowel bij aanpassingen als uitvoering, leiden tot vertraging.
+*Overdesign: te veel nadruk op het naleven van een gelaagd model kan leiden tot onnodig complexe systemen.
+
+==Werking==
+Gemeenschappelijk aan gelaagde architecturen is dat iedere laag eigen verantwoordelijkheden en taken kent. Daarvoor zijn binnen ieder laag bepaalde functies aanwezig die los van functies in andere lagen moeten kunnen werken. Om de onafhankelijkheid tussen lagen te vergroten verloopt communicatie tussen lagen bij voorkeur via goed gedefinieerde interfaces, zoals API's.
+
+Afhankelijk van het type lagenmodel kunnen verschillende regels gelden voor de communicatie tussen lagen. Bij sommige modellen mogen functies in een bepaalde laag uitsluitend communiceren met functies in een aanpalende laag. In andere modellen is het ook toegestaan om een laag ‘over te slaan’. Om misverstanden te voorkomen is het dan (ook) wenselijk dat altijd wordt toegelicht welke eisen er voor communicatie tussen lagen gelden. 
+
+==Voorbeelden==
+Voor architectuurbeschrijvingen wordt vaak gebruik gemaakt van lagen zoals die zijn beschreven in TOGAF en ArchiMate. De [[Wat is de basisarchitectuur|GEMMA Basisarchitectuur]] sluit hierbij aan en kent als lagen: [[Strategie en motivatie]], [[Bedrijfsarchitectuur]], [[Informatie-architectuur]] (in Archimate aangeduid als ‘applicatielaag’) en [[Technische architectuur]]. 
+
+Bij softwareontwikkeling wordt vaak onderscheid gemaakt in: Presentatielaag, Businesslogica-laag en Datalaag. Afhankelijk van de context kan er er ook sprake zijn van aanvullende lagen, zoals een Servicelaag, Integratielaag of Infrastructuurlaag.
+
+Binnen de Nederlandse overheid zijn meerdere lagenmodellen in gebruik, zoals het [https://www.noraonline.nl/wiki/Vijflaagsmodel NORA vijflaagsmodel] en het [[Common Ground vijflaagsmodel]].

@@ -1,0 +1,55 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder Architectuurtools,
+}}{{Belangrijk}}
+[[Categorie:Over GEMMA]]
+[[Category:ArchiMate modelleren]]
+__TOC__
+Een kennismodel of metamodel beschrijft de architectuurobjecten en hun onderlinge samenhang. Bijvoorbeeld applicatieservices of applicatiefuncties. Het kennismodel is weergegeven in de concepten zoals gedefinieerd in de  [https://pubs.opengroup.org/architecture/archimate3-doc/ ArchiMate conventie].
+
+Het GEMMA kennismodel toont de ArchiMate concepten die gebruikt worden voor het beschrijven van de informatievoorziening van het gemeentelijk domein. De begrippen uit het kennismodel worden ook gebruikt als basis voor de inrichting van deze wiki. 
+
+== GEMMA modellering == 
+Op de pagina [[GEMMA modellering]] wordt ingezoomd op de modellering van de GEMMA architectuurmodellen.
+
+==Softwarecatalogus ArchiMate exportbestanden (AMEFF) ==
+Gemeenten en leveranciers kunnen met de Softwarecatalogus een exportbestand opvragen van de GEMMA architectuur met daarin opgenomen hun eigen applicatielandschap of portfolio. 
+
+Op de pagina [[Softwarecatalogus AMEFF export]] is gedocumenteerd hoe het ArchiMate exportbestand eruitziet. U vind daar onder andere hoe de door u geregistreerde pakketten, de pakketversies en de koppelingen uit de Softwarecatalogus zijn verbonden met het GEMMA architectuurmodel:
+
+==View van GEMMA kennismodel ==
+View van het GEMMA kennismodel en onder de view een tabel met alle gebruikte concepten en definities
+In deze view van het GEMMA kennismodel zijn alle in de GEMMA uitgewerkte ArchiMate element- en relatietypen weergegeven.
+
+{{ToonViewGEMMA
+  |viewid=4bdf7f48-6db9-40cf-ace2-4ce9ce18aa64
+  |modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+  |label=
+}}<!--GEMMA kennismodel huidig (ArchiMateView)-->
+
+{{ToonTabelVanViewGEMMA
+  |viewid=4bdf7f48-6db9-40cf-ace2-4ce9ce18aa64
+  |modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+  |attributen=Bron
+  |type=
+}}<!--GEMMA kennismodel huidig (ArchiMateView)-->
+
+==View van GEMMA kennismodel uitgebreid ==
+Het 'GEMMA kennismodel uitgebreid' heeft de volgende toevoegingen: 
+* de gewenste uitbreidingen op de GEMMA
+* de elementen en relaties die gebruikt worden in projectarchitecturen. 
+
+Een projectarchitectuur volgt bij voorkeur het GEMMA kennismodel uitgebreid, maar kan indien nodig ook andere concepten uit Archimate gebruiken.
+
+{{ToonViewGEMMA
+  |viewid=b11939ec-2df0-46f0-8b22-2e92464509ce
+  |modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+}}<!--GEMMA kennismodel uitgebreid (ArchiMateView)--> 
+
+{{ToonTabelVanViewGEMMA
+  |viewid=b11939ec-2df0-46f0-8b22-2e92464509ce
+  |modelid=7382f25e-04b1-443e-abe5-00fa6e7212c4
+  |attributen=Bron
+  |type=
+}}<!--GEMMA kennismodel (ArchiMateView)-->

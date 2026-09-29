@@ -1,0 +1,29 @@
+{{Publicatie
+|Paginastatus=publiceren
+|Redactiestatus=Actueel
+|Wikibeheerder=Beheerder
+}}[[Category:Over GEMMA]]
+De GEMMA is een hulpmiddel voor het inrichten van de gemeentelijke informatievoorziening en het aansluiten op gemeenschappelijke voorzieningen. Het biedt een referentiekader voor gemeenten die onder architectuur willen (samen)werken.
+
+De belangrijkste doelgroepen van de GEMMA zijn medewerkers in verschillende rollen bij gemeenten, softwareleveranciers en ketenpartners. Afhankelijk van hun rol, zoals beleidsmaker, architect, of beheerder, hebben zij toegang tot een specifieke landingspagina met gerichte verwijzingen naar voor hen relevante onderdelen van de GEMMA.
+
+{{Landingspagina
+|titel1  = Rollen bij gemeenten
+|inhoud1 = 
+*[[Doelgroepen/ontwikkelaar | Ontwikkelaar]]
+*[[Doelgroepen/functioneel_beheerder | Functioneel beheerder]]
+*[[Doelgroepen/informatiemanager|Informatiemanager]]
+*[[Doelgroepen/projectleider | Projectleider]]
+*[[Doelgroepen/adviseur_informatievoorziening | Adviseur informatievoorziening]]
+*[[Doelgroepen/architect | Architect]]
+*[[Doelgroepen/programmamanager | Programmamanager]]
+*[[Doelgroepen/leidinggevende | Leidinggevende]]
+*[[Doelgroepen/bestuurder|Bestuurder]]
+*[[Doelgroepen/applicatie beheerder|Applicatie beheerder]]
+|titel2  = Rollen bij leveranciers
+|inhoud2 = 
+*[[Doelgroepen/leverancier/productmanager| Productmanager]]
+*[[Doelgroepen/leverancier/projectleider | Projectleider leverancier]]
+*[[Doelgroepen/leverancier/accountmanager| Accountmanager]]
+|hoogte = 350px
+}}

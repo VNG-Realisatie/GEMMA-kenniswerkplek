@@ -1,0 +1,40 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren, in bewerking
+|Wikibeheerder=Beheerder Eindredactiepaginas
+}}
+[[Category:Werken met GEMMA]]
+__NOTOC__
+Gemeenten staan continu voor nieuwe uitdagingen. Wijzigingen in beleid, wetgeving, strategie, afspraken of standaarden hebben invloed op hoe de gemeente haar taken invult en uitvoert. 'Werken onder architectuur', en daarbij gebruik maken van de GEMMA, helpt gemeenten om goed om te kunnen gaan met alle uitdagingen. 
+==Architectuur==
+De GEMMA gebruikt de definitie van de internationale [http://www.iso-architecture.org/ieee-1471/defining-architecture.html ISO/IEC/IEEE 42010 standaard]  om de betekenis van de term 'architectuur te beschrijven: '''de fundamentele concepten of eigenschappen van een systeem in zijn omgeving belichaamd in zijn elementen, relaties en in de principes van zijn ontwerp en evolutie''<nowiki/>'. Beschrijven van architectuur bevordert overzicht en inzicht zodat er gericht(er) is te sturen op ontwikkeling van de organisatie in de gewenste richting ('van IST naar SOLL').  Architectuur beperkt zich tot belangrijke fundamentele keuzes die voor langere termijn richting geven aan veranderingen. Zij beschrijft niet in detail hoe veranderingen moeten worden gerealiseerd. Dit gebeurt tijdens de ontwerp- en realisatiefase van projecten.
+
+Er zijn verschillende soorten architectuur. Architectuur om een organisatie goed te laten functioneren wordt aangeduid met de term 'enterprise-architectuur': een overkoepelende architectuur die processen, informatie en technologie koppelt aan de bedrijfsstrategie. Gemeenten kunnen de GEMMA gebruiken als uitgangspunt voor een eigen gemeentespecifieke enterprise-architectuur. Andere soorten architectuur zijn bijvoorbeeld 'bedrijfsarchitectuur' (met o.a. actoren, bedrijfsfuncties en bedrijfsprocessen), informatiearchitectuur (applicaties en data) en technische architectuur (technologieservices- en componenten). [[Wat is de basisarchitectuur]] licht toe welke soorten architectuur binnen de GEMMA worden onderscheiden.  
+
+== Werken onder architectuur ==
+Werken onder architectuur verwijst naar een aanpak waarbij een organisatie op basis van een beschreven architectuur haar organisatie en informatievoorziening ontwerpt, ontwikkelt en beheert.  Daarbij is aandacht nodig voor verschillende aspecten, zoals: 
+* De architectuurfunctie: rollen, taken en bevoegdheden in relatie tot architectuur moeten beschreven en toegekend zijn. Bijvoorbeeld om duidelijk te hebben wat de rol van een architect is bij projecten.
+* Governance: afspraken, rollen, taken en bevoegdheden rondom architectuur moeten duidelijk zijn. Bijvoorbeeld over de ontwikkeling, vaststelling en toepassing of afwijking van architectuur.
+* Methoden en technieken: er moet duidelijk zijn hoe architectuur wordt beschreven. Bijvoorbeeld met gebruik van standaard methoden of technieken, zoals [https://www.opengroup.org/togaf TOGAF] (een internationaal architectuurraamwerk) en/of [https://www.opengroup.org/archimate-forum/archimate-overview ArchiMate] (een archtitectuurbeschrijvingstaal).
+* De architectuurinhoud: vaak kan niet alles worden beschreven en moet worden beslist wanneer en voor wat architectuurbeschrijvingen nodig zijn. Bijvoorbeeld bij welke soorten projecten een [[Toelichting Project Start Architectuur|Project Start Architectuur]] moet worden gemaakt.
+Hoe een organisatie het beste kan (gaan) werken onder architectuur wordt bepaald door contextuele factoren zoals de bedrijfscultuur, het aanwezig (of afwezig...) zijn van visie en de beschikbare capaciteit voor architectuurwerkzaamheden.
+
+== Waarom werken onder architectuur? ==
+Werken onder architectuur kan om verschillende redenen nuttig zijn voor organisaties. Bijvoorbeeld voor:
+
+* Strategische afstemming:  Architectuur vertaalt de strategie van de organisatie zodat bedrijfsvoering, informatievoorziening en gebruik van technologie in lijn daarmee ontwikkelen.
+* Overzicht, Inzicht en besluitvorming:  Het geeft inzicht in huidige situatie en helderheid over de gewenste situatie en de stappen die nodig zijn om daar te komen en draagt bij aan beter onderbouwde besluitvorming. 
+* Flexibiliteit en herbruikbaarheid: Architectuur stelt organisaties in staat flexibel en efficiënt om te gaan met voorzieningen en die te herbruiken. 
+* Samenwerking:  Het creëert een gemeenschappelijke basis voor binnen- en buitengemeentelijke samenwerking. 
+* Projectenkader: Architectuur geeft een duidelijke visie en richting voor projecten en voorkomt fouten en eiland-oplossingen.
+
+==De rol van de architect==
+Een architect ontwikkelt, beheert en adviseert over architectuur en het gebruik daarvan.  Hij moet anderen helpen om goede beslissingen te kunnen nemen, bijvoorbeeld door problemen vanuit verschillende perspectieven te bezien en verschillende oplossingsrichtingen te beschrijven. Architectuurwerkzaamheden worden in de gemeentelijke praktijk uitgevoerd door medewerkers met verschillende functienamen (al dan niet met daarin het woord 'architect').   
+
+Er zijn verschillende soorten (architectuur)producten te maken. Van een set richtinggevende architectuurprincipes tot een beschrijving van bepaalde bedrijfs- en applicatieprocessen tot een architectuurmodel dat op een gestructureerde manier de fundamentele elementen, relaties en principes van een systeem beschrijft.  Een architect probeert verschillende niveaus en functies binnen de organisatie te verbinden. Van bestuurders en managers tot en met projectleiders en ontwikkelaars die via projecten veranderingen realiseren. Daarbij kan hij gebruik maken van verschillende soorten hulpmiddelen: platen om in gesprek te raken met bestuurders, teken- of modellertools en speciale talen voor beschrijven van architectuur. [[Hulpmiddelen voor de architect]] geeft hierover meer informatie.     
+
+Een architect kan zowel voor, tijdens als na afloop van een project een rol hebben. Voorafgaand aan het uitvoeren van projecten kan hij bijvoorbeeld een [[Toelichting Project Start Architectuur|Project Start Architectuur]] maken of beoordelen. Tijdens een project kan hij deel uitmaken van het projectteam of een adviserende rol hebben. Bij het beëindigen van een project kan hij beoordelen of een project qua architectuur de gewenste resultaten heeft opgeleverd en of daarover vervolgafspraken nodig zijn.    
+
+Omdat een organisatie uit meerdere lagen en domeinen bestaat, die elk specifieke kennis en afstemming vereisen, zijn er verschillende soorten architecten. Zo richt een bedrijfsarchitect zich vooral op bedrijfsvoering en bedrijfsprocessen, richt een informatiearchitect zich meer op de samenhang tussen aanwezige gegevens en softwareapplicaties, focust een technisch architect zich op de inzet van technologie, en houdt een enterprise-architect het totaalbeeld van de organisatie, strategie en processen in de gaten. [[Architectuurkennis en gebruik]] beschrijft per architectuurtype welke GEMMA-producten het meest bruikbaar zijn.
+
+Omdat elke organisatie en elk project uniek zijn is er geen recept voor hoe een architect precies moet werken. Wat in de ene situatie goed werkt, kan in een andere juist niet werken. Er zijn wel een aantal algemene tips te geven voor het uitvoeren van architectuurwerkzaamheden. De pagina [[Tips voor de architect]] geeft een aantal bruikbare tips.

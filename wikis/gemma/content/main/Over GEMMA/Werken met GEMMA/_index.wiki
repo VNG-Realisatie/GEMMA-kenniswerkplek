@@ -1,0 +1,41 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=Beheerder
+}}
+[[Category:Over GEMMA]]
+[[Categorie:Werken met GEMMA]]
+Een referentiearchitectuur is te beschouwen als een sjabloon voor het maken van een bepaald type architectuur. Ze is breed toepasbaar van aard en laat ruimte voor gebruikers om bij hun specifieke context passende keuzes te maken. Met de GEMMA-referentiearchitectuur als basis voor hun eigen architectuur maken gemeenten architectuurkeuzes, en in het verlengde daarvan, ontwerp- en realisatiekeuzes.
+
+Bij het maken van geschikte architectuur spelen veel factoren een rol, zoals: gemeentelijk beleid, landelijke en lokale regelgeving, cultuur, benoemde prioriteiten, aanwezige kennis en beschikbare middelen. Het antwoord op de vraag hoe de GEMMA het beste is te gebruiken luidt daarom: "it depends". Hoewel er geen eenduidige uitspraak is te doen over hoe een gemeente de GEMMA het beste kan gebruiken, zijn er wel een aantal 'handreikingen' te geven.  
+
+Hieronder vindt u een aantal van die handreikingen, met daarin tips voor gebruik van de GEMMA.
+{{Landingspagina
+|titel1  = Handreikingen
+|inhoud1 = 
+Architectuur en GEMMA producten:
+*[[Werken onder architectuur]]
+*[[Architectuurkennis en gebruik]]
+*[[Tips voor de architect]]
+*[[Hulpmiddelen voor de architect]]
+*[[Gebruikssuggesties_GEMMA_producten | Gebruikssuggesties GEMMA-producten]]
+Architectuur en applicaties:
+*[[Toelichting Project Start Architectuur]]
+*[[Toelichting aanschaf en vervanging applicaties]]
+*[[Softwarecatalogus en GIBIT]]
+ArchiMate:
+*[[Tekenen en modelleren | Tekenen en modelleren: overeenkomst en verschillen]]
+*[[Toelichting Archimate | Toelichting op het gebruik van ArchiMate]]
+*[[ArchiMate_modelleren | Modelleren met het GEMMA ArchiMate-model]]
+|titel2  = Meer informatie
+|inhoud2 = 
+Algemeen:
+*[https://www.noraonline.nl/wiki/Types_architecturen_in_NORA-familie Verschillende soorten architectuur (NORA)]
+*[https://en.wikipedia.org/wiki/ArchiMate Archimate (Wikipedia)]
+Praktijkvoorbeelden:
+* [[Praktijkvoorbeeld KISS | Ontwikkeling van front-end component KISS door Dimpact]] 
+* [[Practice_logging_van_verwerking | Logging van verwerking door gemeente Nijmegen]]
+* [https://kennisnetwerkdata.pleio.nl/groups/view/5635563d-3ed7-4337-a81c-25a9798d4512/nieuws/blog/view/aaedefb5-5f58-44d6-94d6-01eac5bd88bd/de-bedrijfsfunctiekaart-visualisatie-van-status-en-ontwikkelingen-binnen-het-sociaal-domein-amersfoort?utm_medium=email&utm_campaign=notification_overview De bedrijfsfunctiekaart door gemeente Amersfoort]
+* [[Praktijkvoorbeeld Datagedreven sturen bij gemeente Breda | Datagedreven sturen bij gemeente Breda]]
+|hoogte = 500px
+}}

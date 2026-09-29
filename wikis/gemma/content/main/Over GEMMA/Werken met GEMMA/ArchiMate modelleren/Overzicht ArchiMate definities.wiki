@@ -1,0 +1,9 @@
+[[Categorie:ArchiMate modelleren]]
+[[Categorie:Overzichten]]
+In de GEMMA maken we gebruik van de ArchiMate definities beheerd door [https://www.opengroup.org/ The Open Group]. Op dit moment wordt  [http://pubs.opengroup.org/architecture/archimate3-doc/ ArchiMate® 3.2 Specification] gebruikt. 
+
+Een subset van de ArchiMate-concepten word gebruikt in de GEMMA. De concepten die gebruikt worden staan in het [[GEMMA kennismodel]]. 
+
+Hieronder de definities van de Archimate-concepten.
+
+{{:DisplayArchiMateGlossary}}

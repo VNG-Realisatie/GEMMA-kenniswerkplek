@@ -1,0 +1,68 @@
+{{Publicatie
+|Redactiestatus=Actueel
+|Paginastatus=publiceren
+|Wikibeheerder=GEMMA Beheer
+}}[[Categorie:Over GEMMA]][[Categorie:Standaarden paginas]][[Categorie:Toelichtingen]]
+__NOTOC__
+Een Project Start Architectuur (PSA) is een document dat de architectuurkaders beschrijft voor een nieuw project. Het geeft beslissers inzicht in belangrijke projectaspecten en geeft projectuitvoerders richting tijdens uitvoering van het project. Het vergroot daarmee de kans dat een project slaagt. Deze toelichting licht toe wat een PSA is, geeft een aantal handvatten hoe gemeenten er praktisch gebruik van kunnen maken en daarbij gebruik kunnen maken van de GEMMA. 
+
+==Nut en noodzaak==
+Via een PSA worden betrokkenen van relevante projectinformatie voorzien zodat zij de juiste keuzes kunnen maken. Beslissers krijgen inzicht in het wat en hoe van een project en kunnen betere besluiten nemen. Uitvoerders gebruiken een goedgekeurd PSA als kader bij het maken van juiste keuzes tijdens de realisatie. Een PSA zorgt voor een goede basis om een project succesvol uit te kunnen voeren. 
+
+Of, en in welke vorm, een PSA nuttig is wordt bepaald door de context. Naarmate de behoefte aan duidelijkheid toeneemt wordt het nuttiger om een PSA te maken. Bij het Rijk is het verplicht om bij grote projecten, met een ICT-component vanaf €20 miljoen en met een publiek afbreukrisico, een PSA op te stellen. Voor gemeenten geldt geen verplichting, maar zal een PSA met name bij grotere projecten meerwaarde hebben.  
+
+==Inhoud ==
+De inhoud van een PSA kan met goede redenen verschillen. Bijvoorbeeld omdat organisaties verschillend zijn georganiseerd en aan verschillende aspecten belang hechten of omdat bij een andere projectaanpak bepaalde aspecten al in andere projectdocumenten worden beschreven. Om een projectvoorstel goed te kunnen beoordelen en richting te geven, zullen zaken zoals doelen, scope en globaal ontwerp altijd aanwezig zijn. Soms zijn ook zaken zoals planning, communicatie en budget onderdeel van een PSA. Binnen de context van de GEMMA beperken we de scope van een PSA tot bedrijfsmatige, informatiekundige en technische projectaspecten.    
+
+==PSA-sjabloon==
+De NORA beschrijft hoe overheidsorganisaties een PSA kunnen maken en gebruiken. Er is ook een [https://www.noraonline.nl/wiki/Webversie_PSA_Format PSA-sjabloon] beschikbaar dat overheidsorganisaties kunnen gebruiken als basis voor een eigen, op hun specifieke behoeften afgestemd, PSA-sjabloon. Door gebruik te maken van hetzelfde sjabloon worden de PSA's eenvormiger en vergelijkbaar.   
+
+De GEMMA bouwt voort op de NORA. Het in de NORA opgenomen PSA-sjabloon is gemeentespecifiek gemaakt en met enkele voor gemeenten bruikbare hoofdstukken uitgebreid. Het NORA PSA-sjabloon is gericht op alle soorten overheidsorganisaties en gaat er bijvoorbeeld van uit dat na een PSA nog een aparte solution-architectuur wordt gemaakt. Bij gemeenten zal een PSA vaak (ook) aspecten van een solution-architectuur bevatten, zodat na vaststelling een opdracht- of realisatiefase kan starten. Onderstaande sjabloonbeschrijving bevat toegevoegde hoofdstukken voor het beschrijven van 'Strategie en motivatie', 'Bedrijfsarchitectuur', 'Informatiearchitectuur' en 'Technische architectuur'. Binnen die hoofdstukken kan gericht gebruik worden gemaakt van informatie uit de gelijknamige GEMMA-onderdelen.  
+
+Onderstaande tabel toont de voorgestelde inhoud voor een gemeentelijk PSA, een korte toelichting en een verwijzing naar bruikbare GEMMA-producten. De NORA geeft meer informatie over de mogelijke [https://www.noraonline.nl/wiki/Webversie_PSA_Format inhoud van hoofdstukken] en een algemene leidraad voor het [https://www.noraonline.nl/wiki/Webversie_PSA_Handleiding maken van  een PSA].  
+{| class="wikitable" style="height: 13px; font-size: 13px;"
+|-
+!Hoofdstuk!!Max Pagina’s!!Globale inhoud
+|-
+|Managementsamenvatting||1||Belangrijkste bevindingen en conclusies
+|-
+|Over de  verandering||2||Aanleiding, doel, stakeholders, relaties met andere projecten.
+Een belangrijk aandachtspunt is om helder te beschrijven wat wel en niet binnen de scope van het project valt. 
+|-
+|Visualisatie||1||Globale visualisatie van IST- en SOLL-situatie
+''De pagina [[Tekenen en modelleren]] beschrijft verschillende soorten visualisaties om architectuur te beschrijven. Voor globale visualisaties is 'tekenen' vaak voldoende. Voor meer uitgewerkte visualisaties, bijvoorbeeld in later genoemde hoofdstukken, kan (een deel van) een model geschikter zijn.''  
+|-
+|NORA-vijflaagsmodel||(4)||Geldende kaders voor iedere laag van het NORA-vijflaagsmodel (Grondslagen, Organisatie,  Informatie, Applicaties, Infrastructuur) en relatie met relevante GEMMA-architectuurprincipes.
+Het NORA-vijflaagsmodel biedt de mogelijkheid om informatie te geven over een aantal verschillende aspecten. Bij kleinere projecten, zoals de vervanging van een taakspecifieke applicatie, is dit niveau van detail niet nodig. Een deel van de betreffende informatie kan ook opgenomen worden in de toegevoegde bijlages.
+|-
+|Standaarden||1||Gebruik van relevante open (verplichte) standaarden en eventueel afwijken daarvan.
+Naast de Open Standaarden van het Forum Standaardisatie gelden voor gemeenten ook een aantal [https://vng.nl/artikelen/overzicht-gemeentelijke-standaarden gemeenteijke standaarden].
+|-
+|Privacy en informatiebeveiliging||1||Maatregelen voor privacy (AVG) en informatiebeveiliging (BIO)
+''Gemeenten kunnen hier (ook) gebruik maken van specifiek voor gemeenten ontwikkelde producten van de [https://www.informatiebeveiligingsdienst.nl/kennisproducten-ibd/ Informatiebeveiligingsdient].''
+|-
+|Beheer||1||Kaders en uitgangspunten voor toekomstig beheer.
+Een aandachtspunt. In de startfase van projecten is er vaak te weinig aandacht voor hoe het toekomstig beheer geregeld wordt. Fte's, vorm van beheer en de financiering zijn onderdelen die hierin verwerkt worden.
+|-
+|Strategie en motivatie
+|1
+|Gebruik, passend bij het project, de GEMMA-producten uit [[Strategie en motivatie|Strategie en Motivatie]] om te beschrijven wat belangrijke uitgangspunten zijn voor het project. De GEMMA kent hiervoor ''kernwaarden'' die leiden tot ''kwaliteitsdoelen'' die wordt ondersteund door een set ''architectuurprincipes'' met ''implicaties''. 
+|-
+|Bedrijfsarchitectuur
+|1
+|Gebruik de GEMMA-producten uit [[Bedrijfsarchitectuur]] om te beschrijven welke ''processen'', ''bedrijfsuncies'' en ''actoren'' een belangrijke rol spelen binnen het project en wat gevolgen en aandachtspunten zijn.
+|-
+|Informatiearchitectuur
+|2
+|Gebruik, passend bij het project, de GEMMA-producten uit [[Informatie-architectuur]] om te beschrijven welke applicaties, services, data en data-uitiwisselingen een belangrijke rol spelen binnen het project en wat gevolgen en aandachtspunten zijn.
+Een mogelijk hulpmiddel voor dit type visualisaties is de optie binnen de Gemeenelijke Softwarecatalogus om de binnen de gemeente aanwezige softwarepakketten te tonen, geplot op de GEMMA referentiecomponenten (zie '[https://www.softwarecatalogus.nl/Beschikbare%20downloads Mijn Pakketten]' in de Softwarecatalogus).
+|-
+|Technische architectuur
+|1
+|Gebruik, passend bij het project, de GEMMA-producten uit [[Technische architectuur]] om te beschrijven welke technologieservices - en componenten een belangrijke rol spelen binnen het project en wat gevolgen en aandachtspunten zijn.
+|-
+|Beslispunten|| ||Punten waarover besluitvorming nodig is.
+''Beslispunten kunnen bijvoorbeeld zijn of een PSA aan vooraf gedefinieerde gemeentelijke eisen voldoet en of de PSA voldoende vertrouwen geeft dat het project gaat slagen en uitgevoerd mag worden ('.go/no-go-beslissing').''
+|-
+|Bijlage - Betrokkenen|| 1||Personen en de rol die zij hebben gehad bij totstandkoming van de PSA.
+|}
