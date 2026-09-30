@@ -49,6 +49,10 @@ bijgewerkt: '2026-09-30'
 
 # Lijk
 
+## Definitie
+
+Het lichaam van een overledene of doodgeborene.
+
 ## Beschrijving
 
 Het lijk is het object van de hele lijkbezorging: het wordt geschouwd, begraven, gecremeerd of ontleed, en soms opgegraven (art. 1, 3, 29). Bij een begraving of crematie stelt de houder de identiteit vast aan de hand van het registratienummer op kist en document (art. 8). Een doodgeborene (na ten minste 24 weken zwangerschap) valt ook onder het begrip lijk; dat is een indeling, geen eigen element (art. 2 lid 1 b).

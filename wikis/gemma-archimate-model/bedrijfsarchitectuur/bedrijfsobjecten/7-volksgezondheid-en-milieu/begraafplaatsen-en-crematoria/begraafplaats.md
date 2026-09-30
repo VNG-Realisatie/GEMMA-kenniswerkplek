@@ -52,6 +52,10 @@ bijgewerkt: '2026-09-30'
 
 # Begraafplaats
 
+## Definitie
+
+Terrein waar lijken worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
+
 ## Beschrijving
 
 Elke gemeente heeft ten minste één gemeentelijke begraafplaats (art. 33). Daarnaast bestaan bijzondere begraafplaatsen van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 24, 37). De gemeente beslist over grond voor en ingebruikname van bijzondere begraafplaatsen en kan begraafplaatsen sluiten (art. 40, 41, 43, 44). Op de begraafplaats liggen graven, urnenmuren en verstrooiingsplaatsen (Groningen art. 1). Een begraafplaats is een fysieke plaats, maar wordt hier als gemeentelijke voorziening beschreven (besluit redacteur 2026-09-30).

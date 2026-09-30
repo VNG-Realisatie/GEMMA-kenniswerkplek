@@ -48,6 +48,10 @@ bijgewerkt: '2026-09-30'
 
 # Ambtenaar van de burgerlijke stand
 
+## Definitie
+
+Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken en het verlof tot begraving of crematie af te geven.
+
 ## Beschrijving
 
 In de lijkbezorging geeft de ambtenaar van de burgerlijke stand het schriftelijk verlof tot begraving of crematie af, kosteloos, op grond van een verklaring van overlijden of een verklaring van geen bezwaar (art. 11, 12). De akte van overlijden hoort bij het onderwerp burgerlijke stand.

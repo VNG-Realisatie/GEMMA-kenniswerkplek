@@ -52,6 +52,10 @@ bijgewerkt: '2026-09-30'
 
 # Kerkgenootschap
 
+## Definitie
+
+Kerkelijke gemeenschap, met inbegrip van haar onderdelen en de rechtspersonen die kerkgenootschappen oprichten.
+
 ## Beschrijving
 
 Een kerkgenootschap kan een bijzondere begraafplaats of een bijzonder crematorium houden (art. 37, 52). Maakt het daarvan geen gebruik, dan stelt de gemeente op verzoek een deel van de gemeentelijke begraafplaats ter beschikking; over de inrichting en het gebruik daarvan overlegt het college met het kerkgenootschap (art. 39; Groningen art. 29). Het kerkgenootschap bestaat los van de lijkbezorging; in dit onderwerp vervult het de rol van houder.

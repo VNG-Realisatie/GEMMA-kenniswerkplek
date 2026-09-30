@@ -52,6 +52,10 @@ bijgewerkt: '2026-09-30'
 
 # Uitvaartondernemer
 
+## Definitie
+
+Onderneming die in opdracht van nabestaanden de uitvaart verzorgt en namens hen aangifte van overlijden doet en vergunningen aanvraagt bij de gemeente.
+
 ## Beschrijving
 
 De uitvaartondernemer doet voor de nabestaanden aangifte van overlijden bij de gemeente waar de persoon is overleden, en krijgt van de gemeente de akte van overlijden en het verlof tot begraven of cremeren; voor het vervroegen of uitstellen van de uitvaart vraagt hij een vergunning aan (Ondernemersplein). De beheerder bepaalt tijd en plaats van een begraving in overleg met de uitvaartondernemer; personeel van uitvaartondernemingen volgt op de begraafplaats de aanwijzingen van de beheerder (Groningen art. 5, 7).

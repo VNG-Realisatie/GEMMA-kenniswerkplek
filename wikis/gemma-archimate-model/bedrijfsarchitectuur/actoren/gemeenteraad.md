@@ -58,6 +58,10 @@ bijgewerkt: '2026-09-30'
 
 # Gemeenteraad
 
+## Definitie
+
+Bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt.
+
 ## Beschrijving
 
 In de lijkbezorging stelt de raad de beheersverordening en de verordening lijkbezorgingsrechten vast, wijst hij grond aan voor bijzondere begraafplaatsen en kan hij een kerkgenootschap meer begraafplaatsen toestaan (art. 35, 38, 40).

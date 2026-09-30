@@ -50,6 +50,10 @@ bijgewerkt: '2026-09-30'
 
 # Lijkschouwing
 
+## Definitie
+
+Onderzoek van een lijk door een arts na het overlijden, om vast te stellen of de dood een natuurlijke oorzaak heeft.
+
 ## Beschrijving
 
 Elk lijk wordt zo spoedig mogelijk geschouwd, door de behandelend arts of door een gemeentelijke lijkschouwer (art. 3). Is de dood natuurlijk, dan volgt een verklaring van overlijden (art. 7); anders waarschuwt de lijkschouwer de officier van justitie en de ambtenaar van de burgerlijke stand (art. 10). Bij een minderjarige kan een nader onderzoek naar de doodsoorzaak volgen (art. 10a).

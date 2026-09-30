@@ -50,6 +50,10 @@ bijgewerkt: '2026-09-30'
 
 # Opgraving
 
+## Definitie
+
+Het opgraven van een lijk uit een graf, met vergunning van de burgemeester.
+
 ## Beschrijving
 
 Een lijk wordt slechts opgegraven met vergunning van de burgemeester en, bij een particulier graf, met toestemming van de rechthebbende (art. 29). De rechthebbende dient de aanvraag in en schakelt een erkend bedrijf in; opgraven gebeurt in de regel pas na tien jaar grafrust (Groningen art. 28).

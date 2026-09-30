@@ -61,6 +61,10 @@ bijgewerkt: '2026-09-30'
 
 # Gemeente
 
+## Definitie
+
+Hoedanigheid van het openbaar lichaam met rechtspersoonlijkheid dat het lokale bestuur vormt, met een raad, een college en een burgemeester.
+
 ## Beschrijving
 
 Gemeente is de hoedanigheid waarin een afzonderlijke gemeente, zoals Amsterdam of Utrecht, optreedt. Die afzonderlijke gemeenten zijn de actoren: rechtspersonen (BW art. 2:1) met een raad, een college en een burgemeester (Gemeentewet art. 6). In de lijkbezorging heeft de gemeente ten minste één gemeentelijke begraafplaats en is zij daarvan houder; zij draagt de kosten van de gemeentebegrafenis, verhaalt die, en onderhoudt graven tegen betaling (art. 22, 33, 39 lid 2; Groningen art. 3, 23). Besluit redacteur 2026-09-30: rol, geen actor.

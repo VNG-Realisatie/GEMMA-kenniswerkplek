@@ -91,6 +91,14 @@ bijgewerkt: '2026-09-30'
 
 # Besluit
 
+## Definitie
+
+Schriftelijke beslissing van een bestuursorgaan met rechtsgevolg, voor een concreet geval of van algemene strekking.
+
+De herkenbare definitie volgt de Awb, in gewone taal: "publiekrechtelijke rechtshandeling" is weergegeven als "met rechtsgevolg", en de definitie noemt uitdrukkelijk dat een besluit ook van algemene strekking kan zijn. Daarin wijkt ze af van de GGM-definitie, die alleen het concrete geval noemt.
+
+> Onder besluit wordt verstaan: een schriftelijke beslissing van een bestuursorgaan, inhoudende een publiekrechtelijke rechtshandeling. (Awb art. 1:3 lid 1)
+
 ## Beschrijving
 
 Het besluit is het bredere begrip boven alle besluiten die raad, college en burgemeester in de lijkbezorging nemen. Een besluit voor een concreet geval is een [Beschikking](beschikking.md), zoals een vergunning of een verlof; een besluit van algemene strekking is bijvoorbeeld de vaststelling van een verordening (Awb art. 1:3). Het element is generiek en domeinoverstijgend (besluit redacteur 2026-09-30).
@@ -127,12 +135,6 @@ Het besluit is het bredere begrip boven alle besluiten die raad, college en burg
 | afspraak | nee | Eenzijdige publiekrechtelijke rechtshandeling (Awb art. 1:3 lid 1). | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
 | waarneembare vorm | nee | Geen document of formulier. |  |
 | geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking. |  |
-
-## Definitie
-
-De herkenbare definitie volgt de Awb, in gewone taal: "publiekrechtelijke rechtshandeling" is weergegeven als "met rechtsgevolg", en de definitie noemt uitdrukkelijk dat een besluit ook van algemene strekking kan zijn. Daarin wijkt ze af van de GGM-definitie, die alleen het concrete geval noemt.
-
-> Onder besluit wordt verstaan: een schriftelijke beslissing van een bestuursorgaan, inhoudende een publiekrechtelijke rechtshandeling. (Awb art. 1:3 lid 1)
 
 ## GGM-bron
 

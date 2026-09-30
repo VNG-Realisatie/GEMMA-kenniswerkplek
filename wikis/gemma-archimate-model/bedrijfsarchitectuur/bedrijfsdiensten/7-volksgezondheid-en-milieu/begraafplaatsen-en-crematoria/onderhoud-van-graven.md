@@ -51,6 +51,10 @@ bijgewerkt: '2026-09-30'
 
 # Onderhoud van graven
 
+## Definitie
+
+Onderhoud van grafmonumenten en grafbeplanting door de gemeente, tegen betaling door de rechthebbende.
+
 ## Beschrijving
 
 Op verzoek van de rechthebbende, of op sommige begraafplaatsen altijd, onderhoudt de gemeente de grafbedekking tegen betaling van een recht uit de heffingsverordening (Groningen art. 23, 24; VNG retributies). Bij niet-betalen wordt de grafbedekking na waarschuwing verwijderd.

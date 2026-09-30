@@ -53,6 +53,10 @@ bijgewerkt: '2026-09-30'
 
 # Uitgifte van een graf
 
+## Definitie
+
+Het verlenen van een grafrecht op een particulier graf aan een rechthebbende.
+
 ## Beschrijving
 
 Het college verleent op schriftelijke aanvraag een recht op een particulier graf, voor 30 jaar of bij een urnengraf voor 5 tot 30 jaar (Groningen art. 16); de wet spreekt van het vestigen van het uitsluitend recht (art. 28). Graven worden in volgorde van ligging uitgegeven (Groningen art. 14). De gemeente heft voor de uitgifte lijkbezorgingsrechten (VNG retributies).

@@ -85,6 +85,10 @@ bijgewerkt: '2026-09-30'
 
 # Heffingsverordening
 
+## Definitie
+
+Door de gemeenteraad vastgestelde verordening over de heffing en invordering van gemeentelijke belastingen of rechten.
+
 ## Beschrijving
 
 Gemeenten leggen de lijkbezorgingsrechten vast in een heffingsverordening, de verordening op de heffing en invordering van rechten voor het gebruik van de gemeentelijke begraafplaatsen (Groningen art. 1 l; VNG retributies). De beheersverordening verwijst ernaar voor de tarieven (Groningen art. 8, 23, 24).

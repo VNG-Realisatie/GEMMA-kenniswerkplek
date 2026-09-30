@@ -52,6 +52,10 @@ bijgewerkt: '2026-09-30'
 
 # GGD
 
+## Definitie
+
+Gezondheidsdienst die de colleges van de gemeenten in een regio via een gemeenschappelijke regeling instellen en in stand houden voor de publieke gezondheid.
+
 ## Beschrijving
 
 De gemeentelijke gezondheidsdienst adviseert de burgemeester over maatregelen bij een lijk dat besmet is met een infectieus of giftig agens (art. 22a). De colleges van burgemeester en wethouders van de gemeenten in een regio stellen de GGD via een gemeenschappelijke regeling in en houden haar in stand (Wpg art. 14 lid 1); de gemeenten zijn zo mede-eigenaar en opdrachtgever. Actor met 1 van 2 criteria (*betekenis in onderwerp* ontbreekt: alleen advies bij een besmet lijk); behouden op grond van het precedent GGD, besluit redacteur 2026-09-30.

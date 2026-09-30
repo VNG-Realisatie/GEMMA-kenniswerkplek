@@ -49,6 +49,10 @@ bijgewerkt: '2026-09-30'
 
 # Crematorium
 
+## Definitie
+
+Inrichting waar lijken worden gecremeerd en de as wordt geborgen.
+
 ## Beschrijving
 
 Crematoria zijn gemeentelijk of bijzonder (art. 51). Een bijzonder crematorium wordt gevestigd door een kerkgenootschap, rechtspersoon of natuurlijk persoon, met een vergunning van burgemeester en wethouders (art. 52, 53). De houder bergt de as, zorgt voor de bestemming ervan en houdt een openbaar register (art. 50, 58, 59).

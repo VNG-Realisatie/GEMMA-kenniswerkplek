@@ -51,6 +51,10 @@ bijgewerkt: '2026-09-30'
 
 # Lijkbezorging
 
+## Definitie
+
+Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk, met de bestemming van de as.
+
 ## Beschrijving
 
 De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie, ontleding, bijzetting en verstrooiing zijn varianten zonder eigen pagina.

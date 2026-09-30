@@ -61,6 +61,14 @@ bijgewerkt: '2026-09-30'
 
 # Urn
 
+## Definitie
+
+Houder waarin de as van een overledene wordt geborgen en wordt bewaard, bijgezet of verstrooid.
+
+> asbus: een bus ter berging van as van een overledene; (Beheersverordening gemeentelijke begraafplaatsen Groningen 2023, art. 1 onder c)
+
+De wet en de beheersverordening spreken van de *asbus*: de gesloten bus met de as. De verordening noemt een *(sier)urn* een voorwerp ter berging van een of meer asbussen (Groningen art. 1 onder x). In het gangbare gebruik omvat *urn* beide; dit element volgt het gangbare gebruik (besluit redacteur 2026-09-30), zodat een sierurn met meer asbussen één urn is terwijl de wet elke asbus apart telt.
+
 ## Beschrijving
 
 Na de crematie wordt de as geborgen in een of meer gesloten asbussen met naam en registratienummer (art. 58). De asbus wordt bijgezet in een graf, urnengraf, urnennis of bewaarplaats, verstrooid, aan de nabestaande meegegeven of naar het buitenland gezonden (art. 59, 62). In de praktijk heet dit een urn: gemeenten geven urnengraven en urnennissen uit en heffen rechten voor de uitgifte en het onderhoud van graven en urnen (VNG retributies; Groningen art. 1 u, v, z). De as zelf is de inhoud van de urn, geen eigen element.
@@ -97,10 +105,6 @@ Na de crematie wordt de as geborgen in een of meer gesloten asbussen met naam en
 | afspraak | nee | Geen tweezijdige afspraak. |  |
 | waarneembare vorm | nee | Geen document of formulier. |  |
 | geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking. |  |
-
-## Definitie
-
-De wet en de beheersverordening spreken van de *asbus*: de gesloten bus met de as. De verordening noemt een *(sier)urn* een voorwerp ter berging van een of meer asbussen (Groningen art. 1 onder x). In het gangbare gebruik omvat *urn* beide; dit element volgt het gangbare gebruik (besluit redacteur 2026-09-30), zodat een sierurn met meer asbussen één urn is terwijl de wet elke asbus apart telt.
 
 ## GEMMA
 

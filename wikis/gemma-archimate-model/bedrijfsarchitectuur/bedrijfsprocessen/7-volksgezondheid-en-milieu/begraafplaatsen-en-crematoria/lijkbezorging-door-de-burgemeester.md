@@ -50,6 +50,10 @@ bijgewerkt: '2026-09-30'
 
 # Lijkbezorging door de burgemeester
 
+## Definitie
+
+Het regelen en betalen van de lijkbezorging door de gemeente als niemand anders daarin voorziet.
+
 ## Beschrijving
 
 Als niemand voorziet in de lijkschouwing en lijkbezorging, draagt de burgemeester daarvoor zorg (art. 21 lid 1). De kosten komen ten laste van de gemeente, die ze kan verhalen op de nalatenschap en onderhoudsplichtige verwanten (art. 22); dat kostenverhaal is een stap in dit proces. Het resultaat is een gemeentebegrafenis.

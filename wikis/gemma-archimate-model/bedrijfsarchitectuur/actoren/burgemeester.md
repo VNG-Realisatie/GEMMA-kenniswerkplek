@@ -49,6 +49,10 @@ bijgewerkt: '2026-09-30'
 
 # Burgemeester
 
+## Definitie
+
+Bestuursorgaan van de gemeente, voorzitter van gemeenteraad en college, benoemd bij koninklijk besluit.
+
 ## Beschrijving
 
 In de lijkbezorging draagt de burgemeester zorg voor de lijkbezorging als niemand daarin voorziet, verleent hij vergunning tot opgraving en verlof tot ontleding, stelt hij een andere termijn en treft hij maatregelen bij een besmet lijk (art. 17, 21, 22a, 29, 68).

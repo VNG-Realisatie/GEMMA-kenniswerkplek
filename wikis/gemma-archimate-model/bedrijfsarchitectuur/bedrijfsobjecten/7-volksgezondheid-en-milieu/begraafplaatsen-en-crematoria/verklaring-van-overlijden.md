@@ -50,6 +50,10 @@ bijgewerkt: '2026-09-30'
 
 # Verklaring van overlijden
 
+## Definitie
+
+Verklaring van de schouwer dat de dood door een natuurlijke oorzaak is ingetreden.
+
 ## Beschrijving
 
 De behandelend arts of de gemeentelijke lijkschouwer geeft de verklaring van overlijden af als hij ervan overtuigd is dat de dood door een natuurlijke oorzaak is ingetreden (art. 7 lid 1). Zonder deze verklaring, of een verklaring van geen bezwaar, verleent de ambtenaar van de burgerlijke stand geen verlof tot begraving of crematie (art. 12).

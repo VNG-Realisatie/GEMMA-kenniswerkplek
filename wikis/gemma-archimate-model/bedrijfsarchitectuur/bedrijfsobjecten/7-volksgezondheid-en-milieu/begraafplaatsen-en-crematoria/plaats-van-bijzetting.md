@@ -50,6 +50,10 @@ bijgewerkt: '2026-09-30'
 
 # Plaats van bijzetting
 
+## Definitie
+
+Plaats waar urnen worden bijgezet, zoals een urnengraf, urnennis, crematorium of bewaarplaats.
+
 ## Beschrijving
 
 Een asbus kan worden bijgezet in een crematorium, in of op een graf, op een begraafplaats of in een bewaarplaats (art. 62). De houder van de plaats van bijzetting houdt een openbaar register van de bijgezette asbussen en ruimt ze (art. 65, 66). Op de gemeentelijke begraafplaats is de gemeente houder van de urnengraven en urnennissen (Groningen art. 1 u, v).

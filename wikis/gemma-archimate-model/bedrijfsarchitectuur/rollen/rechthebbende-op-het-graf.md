@@ -52,6 +52,10 @@ bijgewerkt: '2026-09-30'
 
 # Rechthebbende op het graf
 
+## Definitie
+
+Wie het grafrecht op een particulier graf heeft en bepaalt wie daarin wordt begraven of bijgezet.
+
 ## Beschrijving
 
 De rechthebbende bepaalt wie in het particulier graf wordt begraven (art. 23 lid 2), geeft toestemming voor opgraving (art. 29), vraagt verlenging, overschrijving en een vergunning voor de grafbedekking aan, onderhoudt de grafbedekking en kan afstand doen van het recht (Groningen art. 16, 18, 19, 22, 24). Dat kan een natuurlijk persoon of een rechtspersoon zijn (Groningen art. 1 w).

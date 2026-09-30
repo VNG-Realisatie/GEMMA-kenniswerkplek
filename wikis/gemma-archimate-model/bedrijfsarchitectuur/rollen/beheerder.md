@@ -51,6 +51,10 @@ bijgewerkt: '2026-09-30'
 
 # Beheerder
 
+## Definitie
+
+De ambtenaar die belast is met de dagelijkse leiding van de gemeentelijke begraafplaatsen.
+
 ## Beschrijving
 
 De beheerder bepaalt tijd en plaats van begravingen in overleg met de uitvaartondernemer, ontvangt en toetst de stukken (verlof, machtiging), houdt het register van begraven lijken bij, handhaaft de orde en ziet toe op ruiming (Groningen art. 1 e, 4–7, 9, 27, 30).

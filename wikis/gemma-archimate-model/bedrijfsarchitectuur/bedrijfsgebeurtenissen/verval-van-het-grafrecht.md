@@ -49,6 +49,10 @@ bijgewerkt: '2026-09-30'
 
 # Verval van het grafrecht
 
+## Definitie
+
+Het einde van een grafrecht door verloop van de termijn, afstand, opheffing van de begraafplaats of vervallenverklaring.
+
 ## Beschrijving
 
 Een grafrecht vervalt door het verlopen van de termijn, door afstand of door opheffing van de begraafplaats; het college kan het vervallen verklaren bij niet-betalen, verzuim of als het na overlijden van de rechthebbende niet wordt overgeschreven (Groningen art. 20; art. 28). Daarna kunnen de grafbedekking worden verwijderd en het graf worden geruimd (Groningen art. 20 lid 4, 26).

@@ -47,6 +47,10 @@ bijgewerkt: '2026-09-30'
 
 # Gemeentelijke lijkschouwer
 
+## Definitie
+
+Arts die door het college is benoemd om lijken te schouwen.
+
 ## Beschrijving
 
 Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers (art. 4). De lijkschouwer schouwt het lijk als de behandelend arts dat niet kan, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a).

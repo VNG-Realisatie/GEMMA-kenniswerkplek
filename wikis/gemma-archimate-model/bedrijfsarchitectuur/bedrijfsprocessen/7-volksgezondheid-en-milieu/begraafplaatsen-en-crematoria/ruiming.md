@@ -54,6 +54,10 @@ bijgewerkt: '2026-09-30'
 
 # Ruiming
 
+## Definitie
+
+Het leegmaken van een graf, waarbij de resten worden herbegraven en de as wordt verstrooid.
+
 ## Beschrijving
 
 Een graf wordt geruimd op last van de houder van de begraafplaats, na ten minste tien jaar na de laatste begraving (art. 31). Het college kondigt een ruiming ten minste een jaar vooraf aan; de beheerder ziet toe op een respectvolle omgang met de resten, die worden herbegraven, terwijl de as wordt verstrooid (Groningen art. 27).

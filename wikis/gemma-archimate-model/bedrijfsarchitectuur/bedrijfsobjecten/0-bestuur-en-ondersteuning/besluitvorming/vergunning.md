@@ -56,6 +56,10 @@ bijgewerkt: '2026-09-30'
 
 # Vergunning
 
+## Definitie
+
+Beschikking waarmee een bestuursorgaan toestemming geeft voor een handeling die zonder die toestemming niet mag.
+
 ## Beschrijving
 
 In de lijkbezorging is een reeks handelingen alleen toegestaan met toestemming van de gemeente: begraven of cremeren (verlof van de ambtenaar van de burgerlijke stand, art. 11), opgraven (art. 29), ontleden (art. 68), een bijzonder crematorium vestigen (art. 53), een bijzondere begraafplaats in gebruik nemen (art. 41), een verstrooiingsterrein bestemmen (art. 66b) en een grafbedekking plaatsen (Groningen art. 22). De wet noemt ze vergunning, verlof of toestemming; ze zijn specialisaties zonder eigen pagina.

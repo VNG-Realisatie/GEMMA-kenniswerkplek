@@ -48,6 +48,10 @@ bijgewerkt: '2026-09-30'
 
 # Houder van het crematorium
 
+## Definitie
+
+Verantwoordelijke voor een crematorium, het bergen van de as en de bestemming daarvan.
+
 ## Beschrijving
 
 De houder van het crematorium bergt de as in asbussen, bewaart ze en zorgt voor de bestemming van de as, en houdt een openbaar register van gecremeerde lijken (art. 50, 58, 59). Bij een gemeentelijk crematorium is de gemeente houder, bij een bijzonder crematorium een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52).

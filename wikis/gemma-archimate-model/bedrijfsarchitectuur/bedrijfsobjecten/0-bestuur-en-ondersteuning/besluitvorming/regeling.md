@@ -66,6 +66,10 @@ bijgewerkt: '2026-09-30'
 
 # Regeling
 
+## Definitie
+
+Algemeen verbindend voorschrift van een overheid, zoals een wet, algemene maatregel van bestuur of gemeentelijke verordening.
+
 ## Beschrijving
 
 In de lijkbezorging stelt de gemeenteraad een beheersverordening begraafplaatsen vast, met de regels voor graven, grafrechten, grafbedekkingen en ruiming; de VNG biedt daarvoor een model (VNG Wet op de lijkbezorging; Groningen). De wet laat de raad verordenen over onder meer de tijden van begraven (art. 35, 90).

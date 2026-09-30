@@ -47,6 +47,10 @@ bijgewerkt: '2026-09-30'
 
 # Houder van een plaats van bijzetting
 
+## Definitie
+
+Verantwoordelijke voor een plaats waar urnen worden bijgezet.
+
 ## Beschrijving
 
 De houder van een plaats van bijzetting houdt een openbaar register van de bijgezette asbussen, verwijdert ze op verzoek en ruimt ze (art. 63, 65, 66). Op de gemeentelijke begraafplaats is de gemeente houder van de urnengraven en urnennissen.

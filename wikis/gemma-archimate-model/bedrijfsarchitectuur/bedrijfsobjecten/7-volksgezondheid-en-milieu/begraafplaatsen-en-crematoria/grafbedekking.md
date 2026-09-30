@@ -54,6 +54,10 @@ bijgewerkt: '2026-09-30'
 
 # Grafbedekking
 
+## Definitie
+
+Gedenkteken en/of grafbeplanting op een graf, gedenkplaats of bij de verstrooiingsplaats.
+
 ## Beschrijving
 
 Voor een grafbedekking is een vergunning van het college nodig, die de rechthebbende aanvraagt (Groningen art. 22). De rechthebbende onderhoudt haar, of laat dat tegen betaling door de gemeente doen (art. 23, 24). Na afloop van de termijn van het graf kan het college de grafbedekking verwijderen; ze vervalt dan aan de gemeente (art. 26).

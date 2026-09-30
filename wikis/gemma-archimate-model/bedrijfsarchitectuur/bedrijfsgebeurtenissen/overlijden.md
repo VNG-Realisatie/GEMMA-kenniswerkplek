@@ -47,6 +47,10 @@ bijgewerkt: '2026-09-30'
 
 # Overlijden
 
+## Definitie
+
+Het sterven van een persoon.
+
 ## Beschrijving
 
 Het overlijden start de lijkschouwing (art. 3) en de termijn waarbinnen de lijkbezorging moet plaatsvinden: niet eerder dan 36 uur en uiterlijk op de zesde werkdag (art. 16).

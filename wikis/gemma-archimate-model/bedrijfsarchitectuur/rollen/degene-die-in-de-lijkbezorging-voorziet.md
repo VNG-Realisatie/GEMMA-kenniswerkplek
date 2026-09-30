@@ -51,6 +51,10 @@ bijgewerkt: '2026-09-30'
 
 # Degene die in de lijkbezorging voorziet
 
+## Definitie
+
+Wie de lijkbezorging van een overledene regelt en daarvoor het verlof aanvraagt.
+
 ## Beschrijving
 
 Degene die in de lijkbezorging voorziet vraagt het verlof tot begraving of crematie aan, of is redelijkerwijs in diens plaats getreden (art. 18 lid 1). Op de gemeentelijke begraafplaats doet hij de kennisgeving van begraven of bijzetten (Groningen art. 7 lid 2, 9).

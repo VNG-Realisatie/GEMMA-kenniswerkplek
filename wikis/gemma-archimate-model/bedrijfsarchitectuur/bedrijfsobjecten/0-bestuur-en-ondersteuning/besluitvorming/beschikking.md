@@ -88,6 +88,10 @@ bijgewerkt: '2026-09-30'
 
 # Beschikking
 
+## Definitie
+
+Besluit van een bestuursorgaan in een concreet geval, zoals het verlenen van een vergunning.
+
 ## Beschrijving
 
 In de lijkbezorging nemen burgemeester, college en gemeenteraad een reeks beschikkingen die elk een eigen wetsartikel hebben, maar geen eigen gegevens of levenscyclus. Ze zijn specialisaties zonder eigen pagina; de toestemmingen voor een handeling vallen onder [Vergunning](vergunning.md). Een beschikking is een [Besluit](besluit.md) dat niet van algemene strekking is (Awb art. 1:3 lid 2). Het element is generiek en domeinoverstijgend: het hoort niet bij één beleidsdomein (besluit redacteur 2026-09-30).

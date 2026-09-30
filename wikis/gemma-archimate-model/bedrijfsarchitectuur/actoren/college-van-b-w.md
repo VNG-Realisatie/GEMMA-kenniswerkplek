@@ -61,6 +61,10 @@ bijgewerkt: '2026-09-30'
 
 # College van B&W
 
+## Definitie
+
+Dagelijks bestuur van de gemeente, bestaande uit de burgemeester en de wethouders.
+
 ## Beschrijving
 
 In de lijkbezorging benoemt het college de gemeentelijke lijkschouwers, heeft het het beheer over de gemeentelijke begraafplaatsen, verleent het grafrechten en vergunningen en besluit het tot sluiting van een begraafplaats (art. 4, 43, 53; Groningen art. 3, 16, 22).

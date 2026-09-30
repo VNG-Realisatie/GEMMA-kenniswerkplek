@@ -73,6 +73,10 @@ bijgewerkt: '2026-09-30'
 
 # Gemeentebegrafenis
 
+## Definitie
+
+Lijkbezorging waarvoor de gemeente zorgt en betaalt omdat niemand anders daarin voorziet.
+
 ## Beschrijving
 
 Een gemeentebegrafenis is het geval dat ontstaat als de burgemeester de lijkbezorging op zich neemt (art. 21). De gemeente draagt de kosten en verhaalt die zo mogelijk op de nalatenschap, de onderhoudsplichtige verwanten of de werkgever (art. 22). Het GGM legt per geval onder meer de melder, de kosten en de datum van begrafenis en ruiming vast.

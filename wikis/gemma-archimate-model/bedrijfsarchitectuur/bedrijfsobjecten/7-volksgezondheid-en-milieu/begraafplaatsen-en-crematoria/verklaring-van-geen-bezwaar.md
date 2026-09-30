@@ -50,6 +50,10 @@ bijgewerkt: '2026-09-30'
 
 # Verklaring van geen bezwaar
 
+## Definitie
+
+Verklaring van de officier van justitie dat hij geen bezwaar heeft tegen begraving of crematie.
+
 ## Beschrijving
 
 Bij een niet-natuurlijke dood geeft de officier van justitie een verklaring van geen bezwaar af; die vervangt de verklaring van overlijden als grond voor het verlof tot begraving of crematie (art. 12). De afweging van de officier zelf valt buiten dit model; de verklaring is invoer voor de gemeente.

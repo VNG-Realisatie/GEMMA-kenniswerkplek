@@ -47,6 +47,10 @@ bijgewerkt: '2026-09-30'
 
 # Houder van de begraafplaats
 
+## Definitie
+
+Verantwoordelijke voor het in stand houden en beheren van een begraafplaats.
+
 ## Beschrijving
 
 De houder van de begraafplaats stelt voor een begraving de identiteit van het lijk vast (art. 8), bepaalt wie in een algemeen graf wordt begraven (art. 23), houdt het register van begraven lijken (art. 27), kan een verklaring van verwaarlozing opstellen (art. 28 lid 4) en geeft last tot het ruimen van graven (art. 31). Bij een gemeentelijke begraafplaats is de gemeente houder; bij een bijzondere begraafplaats een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 37).

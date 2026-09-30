@@ -51,6 +51,10 @@ bijgewerkt: '2026-09-30'
 
 # Graf
 
+## Definitie
+
+Plaats op een begraafplaats waarin lijken worden begraven of urnen worden bijgezet.
+
 ## Beschrijving
 
 Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven lijken met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina.

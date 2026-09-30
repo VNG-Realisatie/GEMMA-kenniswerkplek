@@ -78,6 +78,10 @@ bijgewerkt: '2026-09-30'
 
 # Heffing
 
+## Definitie
+
+Een door de overheid opgelegde verplichting tot betaling.
+
 ## Beschrijving
 
 In de lijkbezorging heft de gemeente lijkbezorgingsrechten, ook begraafplaatsrechten genoemd: retributies voor het gebruik van de gemeentelijke begraafplaats of het crematorium, voor de uitgifte en het onderhoud van graven en urnen, en voor gemeentelijke diensten (VNG retributies; Groningen art. 8, 23).
