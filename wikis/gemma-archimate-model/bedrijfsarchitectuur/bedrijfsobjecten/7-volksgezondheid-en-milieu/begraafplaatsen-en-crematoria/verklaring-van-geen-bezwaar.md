@@ -39,6 +39,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: ja
   levenscyclus: ja
   wordt_bewerkt: ja
@@ -84,6 +91,13 @@ Bij een niet-natuurlijke dood geeft de officier van justitie een verklaring van 
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een ding. |  |
+| gebruikt objecten | nee | Geen gedrag: een ding. |  |
+| aanleiding | nee | Geen gedrag: een ding. |  |
+| benoembaar resultaat | nee | Geen gedrag: een ding. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een ding. |  |
+| eigen normering | nee | Geen gedrag: een ding. |  |
+| stabiel over tijd | nee | Geen gedrag: een ding. |  |
 | onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | levenscyclus | ja | Afgegeven door de officier van justitie, gebruikt voor het verlof. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | wordt bewerkt | ja | Gebruikt bij het verlenen van het verlof (art. 12). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |

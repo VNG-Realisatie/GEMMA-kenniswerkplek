@@ -40,6 +40,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: ja
   gezamenlijk_gedrag: nee
+  toegewezen_partij: ja
+  gebruikt_objecten: ja
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: ja
+  eigen_normering: ja
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -85,6 +92,13 @@ Op verzoek van de rechthebbende, of op sommige begraafplaatsen altijd, onderhoud
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | ja | Wordt aan de omgeving aangeboden, los van de uitvoering. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | ja | De gemeente voert het onderhoud uit (Groningen art. 23). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| gebruikt objecten | ja | Grafbedekking en Heffing (Groningen art. 23). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| aanleiding | nee | Doorlopend onderhoud; de bron noemt geen aanleiding per keer. |  |
+| benoembaar resultaat | nee | Doorlopend onderhoud, geen afzonderlijk resultaat per keer. |  |
+| herhaald uitgevoerd | ja | Voor alle graven waarvoor de rechten zijn voldaan. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| eigen normering | ja | Groningen art. 23-24. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| stabiel over tijd | nee | Dienst, geen groepering van gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |

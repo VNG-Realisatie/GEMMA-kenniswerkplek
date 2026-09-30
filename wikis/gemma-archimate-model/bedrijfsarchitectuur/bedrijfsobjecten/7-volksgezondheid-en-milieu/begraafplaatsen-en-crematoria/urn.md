@@ -50,6 +50,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: ja
   levenscyclus: ja
   wordt_bewerkt: ja
@@ -99,6 +106,13 @@ Na de crematie wordt de as geborgen in een of meer gesloten asbussen met naam en
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een ding. |  |
+| gebruikt objecten | nee | Geen gedrag: een ding. |  |
+| aanleiding | nee | Geen gedrag: een ding. |  |
+| benoembaar resultaat | nee | Geen gedrag: een ding. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een ding. |  |
+| eigen normering | nee | Geen gedrag: een ding. |  |
+| stabiel over tijd | nee | Geen gedrag: een ding. |  |
 | onderscheidbare exemplaren | ja | Elke asbus is gesloten en gemerkt met naam en registratienummer (art. 58 lid 2). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | levenscyclus | ja | Gevuld, bewaard, bijgezet of verstrooid, verwijderd, geruimd. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | wordt bewerkt | ja | De gemeente zet bij en ruimt als houder van de plaats van bijzetting (art. 62, 66). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |

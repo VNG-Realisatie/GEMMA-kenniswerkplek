@@ -1,8 +1,8 @@
 ---
-id: lijkschouwing
+id: schouwen-lijk
 type: bedrijfsproces
 status: goedgekeurd
-naam: Lijkschouwing
+naam: Schouwen lijk
 archimate_type: business-process
 onderwerp: lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
@@ -39,6 +39,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: ja
+  gebruikt_objecten: ja
+  aanleiding: ja
+  benoembaar_resultaat: ja
+  herhaald_uitgevoerd: ja
+  eigen_normering: ja
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -46,9 +53,12 @@ kenmerken:
   waarneembare_vorm: nee
   geautomatiseerd_verwerkt: nee
 bijgewerkt: '2026-09-30'
+synoniemen:
+- naam: Lijkschouwing
+  context: beleid
 ---
 
-# Lijkschouwing
+# Schouwen lijk
 
 ## Definitie
 
@@ -84,6 +94,13 @@ Elk lijk wordt zo spoedig mogelijk geschouwd, door de behandelend arts of door e
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | ja | De gemeentelijke lijkschouwer verricht de schouwing (art. 3). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gebruikt objecten | ja | Lijk (leest) en Verklaring van overlijden (schrijft) (art. 3, 7). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| aanleiding | ja | Het overlijden: schouwing zo spoedig mogelijk daarna (art. 3). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| benoembaar resultaat | ja | Verklaring van overlijden, of verslag aan de officier van justitie (art. 7, 10). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| herhaald uitgevoerd | ja | Bij elk overlijden. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| eigen normering | ja | Hoofdstuk II § 1 van de wet (art. 3-10a). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| stabiel over tijd | nee | Proces, geen groepering van gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |

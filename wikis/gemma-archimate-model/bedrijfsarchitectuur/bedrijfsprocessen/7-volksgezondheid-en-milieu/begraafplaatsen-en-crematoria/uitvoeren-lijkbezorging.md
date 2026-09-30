@@ -1,8 +1,8 @@
 ---
-id: lijkbezorging
+id: uitvoeren-lijkbezorging
 type: bedrijfsproces
 status: goedgekeurd
-naam: Lijkbezorging
+naam: Uitvoeren lijkbezorging
 archimate_type: business-process
 onderwerp: lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
@@ -40,6 +40,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: ja
+  gebruikt_objecten: ja
+  aanleiding: ja
+  benoembaar_resultaat: ja
+  herhaald_uitgevoerd: ja
+  eigen_normering: ja
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -47,9 +54,12 @@ kenmerken:
   waarneembare_vorm: nee
   geautomatiseerd_verwerkt: nee
 bijgewerkt: '2026-09-30'
+synoniemen:
+- naam: Lijkbezorging
+  context: beleid
 ---
 
-# Lijkbezorging
+# Uitvoeren lijkbezorging
 
 ## Definitie
 
@@ -85,6 +95,13 @@ De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk v
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | ja | Degene die in de lijkbezorging voorziet (art. 18); de beheerder bepaalt tijd en plaats (Groningen art. 7). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| gebruikt objecten | ja | Lijk, Graf, Begraafplaats, Crematorium, Urn en Vergunning (verlof) (art. 11, 23, 49, 58). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| aanleiding | ja | Het overlijden, met de termijn van art. 16. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| benoembaar resultaat | ja | Een begraven of gecremeerd lijk en de bestemming van de as. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| herhaald uitgevoerd | ja | Bij elk overlijden. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| eigen normering | ja | Art. 11, 16 en 18 en hoofdstukken III en IV van de wet. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| stabiel over tijd | nee | Proces, geen groepering van gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |

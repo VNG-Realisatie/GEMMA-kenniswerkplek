@@ -38,6 +38,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -55,7 +62,13 @@ Bestuursorgaan van de gemeente, voorzitter van gemeenteraad en college, benoemd 
 
 ## Beschrijving
 
-In de lijkbezorging draagt de burgemeester zorg voor de lijkbezorging als niemand daarin voorziet, verleent hij vergunning tot opgraving en verlof tot ontleding, stelt hij een andere termijn en treft hij maatregelen bij een besmet lijk (art. 17, 21, 22a, 29, 68).
+De burgemeester wordt bij koninklijk besluit benoemd voor zes jaar (Gemeentewet art. 61) en is voorzitter van de raad en van het college (art. 9, 34). De burgemeester vertegenwoordigt de gemeente in en buiten rechte (art. 171).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../begrippen/lijkbezorging.md)
+
+De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, verleent vergunning tot opgraving en verlof tot ontleding, stelt een andere termijn en treft maatregelen bij een besmet lijk (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68).
 
 ## Kenmerken
 
@@ -83,6 +96,13 @@ In de lijkbezorging draagt de burgemeester zorg voor de lijkbezorging als nieman
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -99,7 +119,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
 | associatie (gericht) | [Beschikking](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | neemt (andere termijn, maatregel bij besmet lijk) | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17 lid 1) |
-| toewijzing | [Lijkbezorging door de burgemeester](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging-door-de-burgemeester.md) | draagt zorg voor | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21 lid 1) |
+| toewijzing | [Verzorgen gemeentebegrafenis](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | draagt zorg voor | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21 lid 1) |
 | associatie (gericht) | [Vergunning](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | verleent (vergunning tot opgraving, verlof tot ontleding) | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29 lid 1) |
 
 ## Bronnen

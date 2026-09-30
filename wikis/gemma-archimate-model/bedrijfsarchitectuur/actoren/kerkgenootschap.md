@@ -8,6 +8,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-rijk-bw2-rechtspersonen
 definitie: Kerkelijke gemeenschap, met inbegrip van haar onderdelen en de rechtspersonen
   die kerkgenootschappen oprichten.
 toelichting: De definitie volgt art. 37 lid 2 van de Wet op de lijkbezorging, dat
@@ -41,6 +42,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -58,7 +66,13 @@ Kerkelijke gemeenschap, met inbegrip van haar onderdelen en de rechtspersonen di
 
 ## Beschrijving
 
-Een kerkgenootschap kan een bijzondere begraafplaats of een bijzonder crematorium houden (art. 37, 52). Maakt het daarvan geen gebruik, dan stelt de gemeente op verzoek een deel van de gemeentelijke begraafplaats ter beschikking; over de inrichting en het gebruik daarvan overlegt het college met het kerkgenootschap (art. 39; Groningen art. 29). Het kerkgenootschap bestaat los van de lijkbezorging; in dit onderwerp vervult het de rol van houder.
+Kerkgenootschappen, hun zelfstandige onderdelen en de lichamen waarin zij zijn verenigd, hebben rechtspersoonlijkheid en worden geregeerd door hun eigen statuut, voor zover dat niet in strijd is met de wet (BW Boek 2 art. 2).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../begrippen/lijkbezorging.md)
+
+Een kerkgenootschap kan een bijzondere begraafplaats of een bijzonder crematorium houden (Wet op de lijkbezorging art. 37, 52). Maakt het daarvan geen gebruik, dan stelt de gemeente op verzoek een deel van de gemeentelijke begraafplaats ter beschikking; over de inrichting en het gebruik daarvan overlegt het college met het kerkgenootschap (art. 39; Groningen art. 29). In dit onderwerp vervult het de rol van houder.
 
 ## Kenmerken
 
@@ -86,6 +100,13 @@ Een kerkgenootschap kan een bijzondere begraafplaats of een bijzonder crematoriu
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -110,3 +131,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 - [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
+- [Burgerlijk Wetboek Boek 2 Rechtspersonen](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md)

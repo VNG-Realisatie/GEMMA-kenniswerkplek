@@ -38,13 +38,20 @@ kenmerken:
   toegangspunt: nee
   plaats: nee
   aanbod_als_geheel: nee
+  los_van_verantwoordelijkheid: nee
+  meerdere_vervullers: nee
   per_keer_doorlopen: nee
   gegroepeerd_gedrag: nee
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
-  los_van_verantwoordelijkheid: nee
-  meerdere_vervullers: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: ja
   levenscyclus: ja
   wordt_bewerkt: ja
@@ -101,7 +108,17 @@ De herkenbare definitie volgt de Awb, in gewone taal: "publiekrechtelijke rechts
 
 ## Beschrijving
 
-Het besluit is het bredere begrip boven alle besluiten die raad, college en burgemeester in de lijkbezorging nemen. Een besluit voor een concreet geval is een [Beschikking](beschikking.md), zoals een vergunning of een verlof; een besluit van algemene strekking is bijvoorbeeld de vaststelling van een verordening (Awb art. 1:3). Het element is generiek en domeinoverstijgend (besluit redacteur 2026-09-30).
+Een besluit is een schriftelijke beslissing van een bestuursorgaan, inhoudende een publiekrechtelijke rechtshandeling (Awb art. 1:3 lid 1). Een besluit voor een concreet geval is een [Beschikking](beschikking.md), zoals een vergunning of een verlof; een besluit van algemene strekking is bijvoorbeeld de vaststelling van een verordening. Het element is generiek en domeinoverstijgend (besluit redacteur 2026-09-30).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../../../begrippen/lijkbezorging.md)
+
+Raad, college en burgemeester nemen op grond van de Wet op de lijkbezorging een reeks besluiten; vrijwel allemaal zijn het beschikkingen, zoals vergunningen, verloven en de sluiting van een begraafplaats.
+
+### [Participatie](../../../../begrippen/participatie.md)
+
+Bij inspraak brengen belanghebbenden hun zienswijze naar voren over het ontwerp van een besluit (Awb art. 3:15).
 
 ## Kenmerken
 
@@ -127,6 +144,13 @@ Het besluit is het bredere begrip boven alle besluiten die raad, college en burg
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een ding. |  |
+| gebruikt objecten | nee | Geen gedrag: een ding. |  |
+| aanleiding | nee | Geen gedrag: een ding. |  |
+| benoembaar resultaat | nee | Geen gedrag: een ding. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een ding. |  |
+| eigen normering | nee | Geen gedrag: een ding. |  |
+| stabiel over tijd | nee | Geen gedrag: een ding. |  |
 | los van verantwoordelijkheid | nee | Geen partij. |  |
 | meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
 | onderscheidbare exemplaren | ja | Per besluit een exemplaar. | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |

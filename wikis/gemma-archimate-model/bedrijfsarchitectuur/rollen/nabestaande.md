@@ -37,6 +37,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -82,6 +89,13 @@ De nabestaande draagt zorg voor de asbus, geeft opdracht tot bijzetting of verst
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -98,7 +112,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
 | associatie (gericht) | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | draagt zorg voor | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59, 60 lid 2) |
-| associatie (gericht) | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | geeft opdracht tot bijzetting | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 2) |
+| associatie (gericht) | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | geeft opdracht tot bijzetting | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 2) |
 
 ## Bronnen
 

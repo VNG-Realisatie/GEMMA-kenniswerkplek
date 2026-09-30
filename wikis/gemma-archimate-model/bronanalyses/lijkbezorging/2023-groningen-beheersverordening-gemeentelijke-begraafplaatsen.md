@@ -90,6 +90,7 @@ Afbakening: de lijst van Groningse begraafplaatsen (art. 3 lid 1), openingstijde
 | asbus | wordt bijgezet in | particulier graf | art. 1 p, 12 |
 | gemeente | heeft het uitsluitend recht tot begraven in | algemeen graf | art. 13 lid 1 |
 | college | verleent | uitsluitend recht tot begraven | art. 16 lid 1 |
+| college | geeft uit, op aanvraag en in volgorde van ligging | particulier graf | art. 14 lid 1-2, art. 16 lid 1 |
 | uitsluitend recht tot begraven | is verleend op | particulier graf | art. 1 p |
 | rechthebbende | heeft | uitsluitend recht tot begraven | art. 1 w |
 | rechthebbende | vraagt verlenging aan van | uitsluitend recht tot begraven | art. 16 lid 2 |
@@ -105,6 +106,7 @@ Afbakening: de lijst van Groningse begraafplaatsen (art. 3 lid 1), openingstijde
 | college | geeft toestemming voor | incidentele asverstrooiing | art. 21 |
 | college | kondigt aan | ruiming | art. 27 lid 1 |
 | rechthebbende | vraagt bij burgemeester aan | opgraving op verzoek van de rechthebbende | art. 28 lid 1 |
+| beheerder | belast met de werkzaamheden bij | opgraving op verzoek van de rechthebbende | art. 28 lid 6 |
 | heffingsverordening | regelt het recht voor | onderhoud van graven | art. 23, 24 |
 | kerkgenootschap | krijgt ter beschikking | gemeentelijke begraafplaats | art. 29 |
 | college | overlegt met | kerkgenootschap | art. 29 lid 1 |

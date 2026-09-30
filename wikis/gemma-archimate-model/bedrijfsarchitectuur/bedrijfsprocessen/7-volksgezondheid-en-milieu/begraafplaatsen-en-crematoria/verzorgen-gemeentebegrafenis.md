@@ -1,8 +1,8 @@
 ---
-id: lijkbezorging-door-de-burgemeester
+id: verzorgen-gemeentebegrafenis
 type: bedrijfsproces
 status: goedgekeurd
-naam: Lijkbezorging door de burgemeester
+naam: Verzorgen gemeentebegrafenis
 archimate_type: business-process
 onderwerp: lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
@@ -39,6 +39,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: ja
+  gebruikt_objecten: ja
+  aanleiding: ja
+  benoembaar_resultaat: ja
+  herhaald_uitgevoerd: ja
+  eigen_normering: ja
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -46,9 +53,12 @@ kenmerken:
   waarneembare_vorm: nee
   geautomatiseerd_verwerkt: nee
 bijgewerkt: '2026-09-30'
+synoniemen:
+- naam: Lijkbezorging door de burgemeester
+  context: beleid
 ---
 
-# Lijkbezorging door de burgemeester
+# Verzorgen gemeentebegrafenis
 
 ## Definitie
 
@@ -84,6 +94,13 @@ Als niemand voorziet in de lijkschouwing en lijkbezorging, draagt de burgemeeste
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | ja | De burgemeester draagt zorg voor de lijkbezorging (art. 21). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gebruikt objecten | ja | Lijk en Gemeentebegrafenis (art. 21, 22). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| aanleiding | ja | De melding dat niemand in de lijkbezorging voorziet (art. 20). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| benoembaar resultaat | ja | Een gemeentebegrafenis, met kostenverhaal (art. 22). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| herhaald uitgevoerd | ja | Per geval waarin niemand voorziet. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| eigen normering | ja | Art. 20-22 van de wet. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| stabiel over tijd | nee | Proces, geen groepering van gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |

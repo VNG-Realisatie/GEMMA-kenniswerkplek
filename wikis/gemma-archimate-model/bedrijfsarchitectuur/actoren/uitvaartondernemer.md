@@ -41,6 +41,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -86,6 +93,13 @@ De uitvaartondernemer doet voor de nabestaanden aangifte van overlijden bij de g
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -101,7 +115,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | overlegt met de beheerder over tijd en plaats van | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
+| associatie (gericht) | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | overlegt met de beheerder over tijd en plaats van | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
 
 ## Bronnen
 

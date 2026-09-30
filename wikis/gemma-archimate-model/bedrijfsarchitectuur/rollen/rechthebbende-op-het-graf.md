@@ -41,6 +41,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -86,6 +93,13 @@ De rechthebbende bepaalt wie in het particulier graf wordt begraven (art. 23 lid
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -108,7 +122,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 | associatie (gericht) | [Grafrecht](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | heeft | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md); [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1 w) |
 | associatie (gericht) | [Vergunning](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | vraagt aan (vergunning grafbedekking) | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 22 lid 2) |
 | associatie (gericht) | [Grafbedekking](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafbedekking.md) | onderhoudt | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 24) |
-| associatie (gericht) | [Opgraving](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraving.md) | vraagt aan | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md); [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28 lid 1) |
+| associatie (gericht) | [Opgraven lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | vraagt aan | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md); [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28 lid 1) |
 | associatie (gericht) | [Graf](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | bepaalt wie begraven wordt in | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23 lid 2) |
 
 ## Bronnen

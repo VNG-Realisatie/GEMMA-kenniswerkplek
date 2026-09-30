@@ -1,8 +1,8 @@
 ---
-id: uitgifte-van-een-graf
+id: verlenen-grafrecht
 type: bedrijfsproces
 status: goedgekeurd
-naam: Uitgifte van een graf
+naam: Verlenen grafrecht
 archimate_type: business-process
 onderwerp: lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
@@ -12,6 +12,8 @@ bronnen:
 - 2026-vng-retributies
 definitie: Het verlenen van een grafrecht op een particulier graf aan een rechthebbende.
 synoniemen:
+- naam: Uitgifte van een graf
+  context: beleid
 - naam: Vestigen van het uitsluitend recht op een graf
   context: wet
 grondslag: bron
@@ -42,6 +44,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: ja
+  gebruikt_objecten: ja
+  aanleiding: ja
+  benoembaar_resultaat: ja
+  herhaald_uitgevoerd: ja
+  eigen_normering: ja
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -51,7 +60,7 @@ kenmerken:
 bijgewerkt: '2026-09-30'
 ---
 
-# Uitgifte van een graf
+# Verlenen grafrecht
 
 ## Definitie
 
@@ -87,6 +96,13 @@ Het college verleent op schriftelijke aanvraag een recht op een particulier graf
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | ja | Het college geeft graven uit en verleent het recht op aanvraag (Groningen art. 14, 16). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| gebruikt objecten | ja | Grafrecht (schrijft) en Heffing (lijkbezorgingsrechten). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| aanleiding | ja | Een aanvraag, meestal bij een begraving (Groningen art. 14 lid 1, 16 lid 1). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| benoembaar resultaat | ja | Het grafrecht (art. 28). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| herhaald uitgevoerd | ja | Per aanvraag. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| eigen normering | ja | Art. 28 van de wet (schriftelijk, minimaal tien jaar); Groningen art. 14-16. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| stabiel over tijd | nee | Proces, geen groepering van gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |

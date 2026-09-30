@@ -1,8 +1,8 @@
 ---
-id: opgraving
+id: opgraven-lijk
 type: bedrijfsproces
 status: goedgekeurd
-naam: Opgraving
+naam: Opgraven lijk
 archimate_type: business-process
 onderwerp: lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
@@ -39,6 +39,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: ja
+  gebruikt_objecten: ja
+  aanleiding: ja
+  benoembaar_resultaat: ja
+  herhaald_uitgevoerd: ja
+  eigen_normering: ja
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -46,9 +53,12 @@ kenmerken:
   waarneembare_vorm: nee
   geautomatiseerd_verwerkt: nee
 bijgewerkt: '2026-09-30'
+synoniemen:
+- naam: Opgraving
+  context: beleid
 ---
 
-# Opgraving
+# Opgraven lijk
 
 ## Definitie
 
@@ -84,6 +94,13 @@ Een lijk wordt slechts opgegraven met vergunning van de burgemeester en, bij een
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | ja | De beheerder wijst aan wie de werkzaamheden uitvoert (Groningen art. 28 lid 6); de burgemeester verleent de vergunning (art. 29). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gebruikt objecten | ja | Lijk en Vergunning (vergunning tot opgraving) (art. 29). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| aanleiding | ja | Een aanvraag van de rechthebbende bij de burgemeester (Groningen art. 28 lid 1). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| benoembaar resultaat | ja | Opgegraven lijk, met bestemming volgens de voorschriften van de vergunning (art. 29 lid 2). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| herhaald uitgevoerd | ja | Per aanvraag. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| eigen normering | ja | Art. 29-30 van de wet; grafrusttermijn van tien jaar (Groningen art. 28 lid 4). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| stabiel over tijd | nee | Proces, geen groepering van gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |

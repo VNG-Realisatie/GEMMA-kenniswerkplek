@@ -38,6 +38,13 @@ kenmerken:
   toestandsverandering: ja
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: ja
+  gebruikt_objecten: ja
+  aanleiding: ja
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: ja
+  eigen_normering: ja
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -83,6 +90,13 @@ Een grafrecht vervalt door het verlopen van de termijn, door afstand of door oph
 | toestandsverandering | ja | Ogenblikkelijke toestandsverandering die gedrag start. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | ja | Het college verklaart het recht vervallen (Groningen art. 20 lid 2). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| gebruikt objecten | ja | Grafrecht (art. 28). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| aanleiding | ja | Het verstrijken van de termijn of kennelijke verwaarlozing (art. 28). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| benoembaar resultaat | nee | Een toestandsverandering, geen resultaat. |  |
+| herhaald uitgevoerd | ja | Per grafrecht. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| eigen normering | ja | Art. 28 van de wet; Groningen art. 20. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| stabiel over tijd | nee | Gebeurtenis, geen groepering van gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -98,7 +112,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| triggering | [Ruiming](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruiming.md) | leidt tot | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 20 lid 4, 26) |
+| triggering | [Ruimen graf](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | leidt tot | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 20 lid 4, 26) |
 
 ## Bronnen
 

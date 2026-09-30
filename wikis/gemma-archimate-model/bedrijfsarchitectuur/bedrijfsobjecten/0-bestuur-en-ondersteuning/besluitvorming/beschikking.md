@@ -12,6 +12,7 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- 2024-vng-implementatiehandleiding-model-participatieverordening
 definitie: Besluit van een bestuursorgaan in een concreet geval, zoals het verlenen
   van een vergunning.
 grondslag: ggm-entiteit
@@ -42,6 +43,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: ja
   levenscyclus: ja
   wordt_bewerkt: ja
@@ -94,7 +102,17 @@ Besluit van een bestuursorgaan in een concreet geval, zoals het verlenen van een
 
 ## Beschrijving
 
-In de lijkbezorging nemen burgemeester, college en gemeenteraad een reeks beschikkingen die elk een eigen wetsartikel hebben, maar geen eigen gegevens of levenscyclus. Ze zijn specialisaties zonder eigen pagina; de toestemmingen voor een handeling vallen onder [Vergunning](vergunning.md). Een beschikking is een [Besluit](besluit.md) dat niet van algemene strekking is (Awb art. 1:3 lid 2). Het element is generiek en domeinoverstijgend: het hoort niet bij één beleidsdomein (besluit redacteur 2026-09-30).
+Een beschikking is een [Besluit](besluit.md) dat niet van algemene strekking is, met inbegrip van de afwijzing van een aanvraag daarvan (Awb art. 1:3 lid 2). Een toestemming voor een handeling is een [Vergunning](vergunning.md). Het element is generiek en domeinoverstijgend: het hoort niet bij één beleidsdomein (besluit redacteur 2026-09-30).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../../../begrippen/lijkbezorging.md)
+
+Burgemeester, college en gemeenteraad nemen een reeks beschikkingen die elk een eigen wetsartikel hebben, maar geen eigen gegevens of levenscyclus. Ze zijn specialisaties zonder eigen pagina; de toestemmingen voor een handeling vallen onder Vergunning.
+
+### [Participatie](../../../../begrippen/participatie.md)
+
+Het besluit op een verzoek om overheidsparticipatie of om toepassing van het uitdaagrecht is een beschikking (implementatiehandleiding, var. 1 art. 8).
 
 ## Kenmerken
 
@@ -122,6 +140,13 @@ In de lijkbezorging nemen burgemeester, college en gemeenteraad een reeks beschi
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een ding. |  |
+| gebruikt objecten | nee | Geen gedrag: een ding. |  |
+| aanleiding | nee | Geen gedrag: een ding. |  |
+| benoembaar resultaat | nee | Geen gedrag: een ding. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een ding. |  |
+| eigen normering | nee | Geen gedrag: een ding. |  |
+| stabiel over tijd | nee | Geen gedrag: een ding. |  |
 | onderscheidbare exemplaren | ja | Per besluit een exemplaar. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | levenscyclus | ja | Aangevraagd, verleend of geweigerd, eventueel ingetrokken. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | wordt bewerkt | ja | De gemeente neemt het besluit. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
@@ -177,6 +202,7 @@ Met eigen pagina: [Vergunning](vergunning.md). Zonder eigen pagina, uit de lijkb
 - [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
 - [Algemene wet bestuursrecht](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
+- [Implementatiehandleiding VNG Model Participatieverordening 2024](../../../../bronanalyses/participatie/2024-vng-implementatiehandleiding-model-participatieverordening.md)
 
 ## Terugmelding GGM
 

@@ -41,6 +41,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -58,7 +65,13 @@ Gezondheidsdienst die de colleges van de gemeenten in een regio via een gemeensc
 
 ## Beschrijving
 
-De gemeentelijke gezondheidsdienst adviseert de burgemeester over maatregelen bij een lijk dat besmet is met een infectieus of giftig agens (art. 22a). De colleges van burgemeester en wethouders van de gemeenten in een regio stellen de GGD via een gemeenschappelijke regeling in en houden haar in stand (Wpg art. 14 lid 1); de gemeenten zijn zo mede-eigenaar en opdrachtgever. Actor met 1 van 2 criteria (*betekenis in onderwerp* ontbreekt: alleen advies bij een besmet lijk); behouden op grond van het precedent GGD, besluit redacteur 2026-09-30.
+De colleges van burgemeester en wethouders van de gemeenten in een regio stellen de gemeentelijke gezondheidsdienst via een gemeenschappelijke regeling in en houden haar in stand (Wet publieke gezondheid art. 14 lid 1); de gemeenten zijn zo mede-eigenaar en opdrachtgever. De GGD staat onder leiding van een directeur publieke gezondheid (art. 14 lid 3).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../begrippen/lijkbezorging.md)
+
+De GGD adviseert de burgemeester over maatregelen bij een lijk dat besmet is met een infectieus of giftig agens (Wet op de lijkbezorging art. 22a). Actor met 1 van 2 criteria (*betekenis in onderwerp* ontbreekt: alleen advies bij een besmet lijk); behouden op grond van het precedent GGD, besluit redacteur 2026-09-30.
 
 ## Kenmerken
 
@@ -86,6 +99,13 @@ De gemeentelijke gezondheidsdienst adviseert de burgemeester over maatregelen bi
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |

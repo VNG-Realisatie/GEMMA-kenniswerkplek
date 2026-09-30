@@ -1,8 +1,8 @@
 ---
-id: ruiming
+id: ruimen-graf
 type: bedrijfsproces
 status: goedgekeurd
-naam: Ruiming
+naam: Ruimen graf
 archimate_type: business-process
 onderwerp: lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
@@ -13,6 +13,8 @@ bronnen:
 definitie: Het leegmaken van een graf, waarbij de resten worden herbegraven en de
   as wordt verstrooid.
 synoniemen:
+- naam: Ruiming
+  context: beleid
 - naam: Ruimen van graven
   context: wet
 grondslag: bron
@@ -43,6 +45,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: ja
+  gebruikt_objecten: ja
+  aanleiding: ja
+  benoembaar_resultaat: ja
+  herhaald_uitgevoerd: ja
+  eigen_normering: ja
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -52,7 +61,7 @@ kenmerken:
 bijgewerkt: '2026-09-30'
 ---
 
-# Ruiming
+# Ruimen graf
 
 ## Definitie
 
@@ -88,6 +97,13 @@ Een graf wordt geruimd op last van de houder van de begraafplaats, na ten minste
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | ja | De houder van de begraafplaats geeft last, de beheerder ziet toe (art. 31; Groningen art. 27). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| gebruikt objecten | ja | Graf (art. 31). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| aanleiding | ja | Verval van het grafrecht of het verstrijken van de termijn (art. 31 lid 2). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| benoembaar resultaat | ja | Geruimd graf; overblijfselen herbegraven of gecremeerd (art. 31 lid 3). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| herhaald uitgevoerd | ja | Per graf waarvan de termijn is verstreken. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| eigen normering | ja | Art. 31 van de wet: niet binnen tien jaar na de laatste begraving. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| stabiel over tijd | nee | Proces, geen groepering van gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |

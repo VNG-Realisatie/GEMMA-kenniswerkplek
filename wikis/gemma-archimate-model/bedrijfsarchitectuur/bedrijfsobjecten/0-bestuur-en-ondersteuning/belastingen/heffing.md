@@ -41,6 +41,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: ja
   levenscyclus: ja
   wordt_bewerkt: ja
@@ -84,7 +91,13 @@ Een door de overheid opgelegde verplichting tot betaling.
 
 ## Beschrijving
 
-In de lijkbezorging heft de gemeente lijkbezorgingsrechten, ook begraafplaatsrechten genoemd: retributies voor het gebruik van de gemeentelijke begraafplaats of het crematorium, voor de uitgifte en het onderhoud van graven en urnen, en voor gemeentelijke diensten (VNG retributies; Groningen art. 8, 23).
+Een heffing is een door de overheid opgelegde verplichting tot betaling. De gemeente heft alleen de belastingen die de wet toestaat (Gemeentewet art. 219), waaronder rechten voor het gebruik van gemeentebezittingen en het genot van gemeentelijke diensten (art. 229).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../../../begrippen/lijkbezorging.md)
+
+De gemeente heft lijkbezorgingsrechten, ook begraafplaatsrechten genoemd: retributies voor het gebruik van de gemeentelijke begraafplaats of het crematorium, voor de uitgifte en het onderhoud van graven en urnen, en voor gemeentelijke diensten (VNG retributies; Groningen art. 8, 23).
 
 ## Kenmerken
 
@@ -112,6 +125,13 @@ In de lijkbezorging heft de gemeente lijkbezorgingsrechten, ook begraafplaatsrec
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een ding. |  |
+| gebruikt objecten | nee | Geen gedrag: een ding. |  |
+| aanleiding | nee | Geen gedrag: een ding. |  |
+| benoembaar resultaat | nee | Geen gedrag: een ding. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een ding. |  |
+| eigen normering | nee | Geen gedrag: een ding. |  |
+| stabiel over tijd | nee | Geen gedrag: een ding. |  |
 | onderscheidbare exemplaren | ja | Per aanslag of nota. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | levenscyclus | ja | Opgelegd, betaald, eventueel ingevorderd. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | wordt bewerkt | ja | De gemeente legt haar op. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |

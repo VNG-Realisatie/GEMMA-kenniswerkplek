@@ -33,13 +33,20 @@ kenmerken:
   toegangspunt: nee
   plaats: nee
   aanbod_als_geheel: nee
+  los_van_verantwoordelijkheid: nee
+  meerdere_vervullers: ja
   per_keer_doorlopen: nee
   gegroepeerd_gedrag: nee
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
-  los_van_verantwoordelijkheid: nee
-  meerdere_vervullers: ja
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -67,7 +74,13 @@ Hoedanigheid van het openbaar lichaam met rechtspersoonlijkheid dat het lokale b
 
 ## Beschrijving
 
-Gemeente is de hoedanigheid waarin een afzonderlijke gemeente, zoals Amsterdam of Utrecht, optreedt. Die afzonderlijke gemeenten zijn de actoren: rechtspersonen (BW art. 2:1) met een raad, een college en een burgemeester (Gemeentewet art. 6). In de lijkbezorging heeft de gemeente ten minste één gemeentelijke begraafplaats en is zij daarvan houder; zij draagt de kosten van de gemeentebegrafenis, verhaalt die, en onderhoudt graven tegen betaling (art. 22, 33, 39 lid 2; Groningen art. 3, 23). Besluit redacteur 2026-09-30: rol, geen actor.
+Gemeente is de hoedanigheid waarin een afzonderlijke gemeente, zoals Amsterdam of Utrecht, optreedt. Die afzonderlijke gemeenten zijn de actoren: rechtspersonen (BW Boek 2 art. 1) met een raad, een college en een burgemeester (Gemeentewet art. 6). Besluit redacteur 2026-09-30: rol, geen actor.
+
+## Per onderwerp
+
+### [Lijkbezorging](../../begrippen/lijkbezorging.md)
+
+De gemeente heeft ten minste één gemeentelijke begraafplaats en is daarvan houder; zij draagt de kosten van de gemeentebegrafenis, verhaalt die, en onderhoudt graven tegen betaling (Wet op de lijkbezorging art. 22, 33, 39 lid 2; Groningen art. 3, 23).
 
 ## Kenmerken
 
@@ -93,6 +106,13 @@ Gemeente is de hoedanigheid waarin een afzonderlijke gemeente, zoals Amsterdam o
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | los van verantwoordelijkheid | nee | Gemeente is de verantwoordelijkheid zelf; de rechtspersoon die haar vervult bestaat los daarvan (BW art. 2:1). | [2026-rijk-bw2-rechtspersonen](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md) |
 | meerdere vervullers | ja | Elke afzonderlijke gemeente (Amsterdam, Utrecht, enzovoort) vervult deze rol. | [2026-rijk-bw2-rechtspersonen](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md), [2024-rijk-gemeentewet-wettekst](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
@@ -113,7 +133,7 @@ Match **zwak** met GEMMA-rol Gemeente (Business / Bedrijfsrollen): dezelfde naam
 | associatie (gericht) | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | houdt in stand | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md); [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md); [2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) (art. 3 lid 1) |
 | associatie (gericht) | [Graf](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | heeft het uitsluitend recht tot begraven in | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 13 lid 1) |
 | toewijzing | [Onderhoud van graven](../bedrijfsdiensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) | voert uit | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
-| toewijzing | [Lijkbezorging door de burgemeester](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging-door-de-burgemeester.md) | verhaalt | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22) |
+| toewijzing | [Verzorgen gemeentebegrafenis](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | verhaalt | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22) |
 | associatie (gericht) | [Houder van de begraafplaats](houder-van-de-begraafplaats.md) | treedt op als (gemeentelijke begraafplaats) | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md); [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 33, 39 lid 2; Groningen art. 3) |
 | associatie (gericht) | [Houder van een plaats van bijzetting](houder-van-een-plaats-van-bijzetting.md) | treedt op als (urnengraf, urnennis op de gemeentelijke begraafplaats) | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 u, v, 3) |
 

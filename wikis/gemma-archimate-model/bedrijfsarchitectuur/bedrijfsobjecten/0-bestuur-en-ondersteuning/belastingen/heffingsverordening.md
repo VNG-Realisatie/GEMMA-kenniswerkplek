@@ -42,6 +42,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: ja
   levenscyclus: ja
   wordt_bewerkt: ja
@@ -91,6 +98,12 @@ Door de gemeenteraad vastgestelde verordening over de heffing en invordering van
 
 ## Beschrijving
 
+De raad voert een gemeentelijke belasting in, wijzigt of schaft haar af door een belastingverordening vast te stellen (Gemeentewet art. 216). Die vermeldt onder meer de belastingplichtige, het belastbaar feit en het tarief (art. 217).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../../../begrippen/lijkbezorging.md)
+
 Gemeenten leggen de lijkbezorgingsrechten vast in een heffingsverordening, de verordening op de heffing en invordering van rechten voor het gebruik van de gemeentelijke begraafplaatsen (Groningen art. 1 l; VNG retributies). De beheersverordening verwijst ernaar voor de tarieven (Groningen art. 8, 23, 24).
 
 ## Kenmerken
@@ -119,6 +132,13 @@ Gemeenten leggen de lijkbezorgingsrechten vast in een heffingsverordening, de ve
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een ding. |  |
+| gebruikt objecten | nee | Geen gedrag: een ding. |  |
+| aanleiding | nee | Geen gedrag: een ding. |  |
+| benoembaar resultaat | nee | Geen gedrag: een ding. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een ding. |  |
+| eigen normering | nee | Geen gedrag: een ding. |  |
+| stabiel over tijd | nee | Geen gedrag: een ding. |  |
 | onderscheidbare exemplaren | ja | Per gemeente en heffing. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | levenscyclus | ja | Vastgesteld, gewijzigd, ingetrokken. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | wordt bewerkt | ja | De raad stelt haar vast; de gemeente past haar toe bij het heffen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |

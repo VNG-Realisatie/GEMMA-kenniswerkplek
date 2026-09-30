@@ -7,6 +7,7 @@ archimate_type: business-event
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rvo-aangifte-en-akte-van-overlijden
 definitie: Het sterven van een persoon.
 grondslag: bron
 match:
@@ -36,6 +37,13 @@ kenmerken:
   toestandsverandering: ja
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: ja
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -53,7 +61,13 @@ Het sterven van een persoon.
 
 ## Beschrijving
 
-Het overlijden start de lijkschouwing (art. 3) en de termijn waarbinnen de lijkbezorging moet plaatsvinden: niet eerder dan 36 uur en uiterlijk op de zesde werkdag (art. 16).
+Het overlijden van een persoon wordt aangegeven bij de gemeente waar de persoon is overleden; voor de aangifte is een verklaring van overlijden nodig (Ondernemersplein).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../begrippen/lijkbezorging.md)
+
+Het overlijden start de schouwing van het lijk (Wet op de lijkbezorging art. 3) en de termijn waarbinnen de lijkbezorging moet plaatsvinden: niet eerder dan 36 uur en uiterlijk op de zesde werkdag (art. 16).
 
 ## Kenmerken
 
@@ -81,6 +95,13 @@ Het overlijden start de lijkschouwing (art. 3) en de termijn waarbinnen de lijkb
 | toestandsverandering | ja | Ogenblikkelijke toestandsverandering die gedrag start. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Gebeurtenis; niemand voert haar uit. |  |
+| gebruikt objecten | nee | Een gebeurtenis gebruikt geen objecten. |  |
+| aanleiding | nee | Is zelf de aanleiding voor lijkschouwing en lijkbezorging. |  |
+| benoembaar resultaat | nee | Een toestandsverandering, geen resultaat. |  |
+| herhaald uitgevoerd | ja | Bij elk overlijden. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| eigen normering | nee | De normen gelden voor wat erop volgt, niet voor het overlijden zelf. |  |
+| stabiel over tijd | nee | Gebeurtenis, geen groepering van gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -96,9 +117,10 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| triggering | [Lijkschouwing](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkschouwing.md) | leidt tot | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
-| triggering | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | leidt tot | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 16) |
+| triggering | [Schouwen lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md) | leidt tot | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
+| triggering | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | leidt tot | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 16) |
 
 ## Bronnen
 
 - [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
+- [Aangifte en akte van overlijden (Ondernemersplein)](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md)

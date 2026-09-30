@@ -7,8 +7,8 @@ archimate_type: business-role
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-definitie: Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken en
-  het verlof tot begraving of crematie af te geven.
+- 2026-rvo-aangifte-en-akte-van-overlijden
+definitie: Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken.
 grondslag: bron
 match:
   ggm: geen
@@ -37,6 +37,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -50,11 +57,17 @@ bijgewerkt: '2026-09-30'
 
 ## Definitie
 
-Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken en het verlof tot begraving of crematie af te geven.
+Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken.
 
 ## Beschrijving
 
-In de lijkbezorging geeft de ambtenaar van de burgerlijke stand het schriftelijk verlof tot begraving of crematie af, kosteloos, op grond van een verklaring van overlijden of een verklaring van geen bezwaar (art. 11, 12). De akte van overlijden hoort bij het onderwerp burgerlijke stand.
+De ambtenaar van de burgerlijke stand maakt de akten van de burgerlijke stand op, waaronder de akte van overlijden na aangifte bij de gemeente waar iemand is overleden (Wet op de lijkbezorging art. 13, 14; Ondernemersplein).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../begrippen/lijkbezorging.md)
+
+De ambtenaar van de burgerlijke stand geeft kosteloos het schriftelijk verlof tot begraving of crematie af, op grond van een verklaring van overlijden of een verklaring van geen bezwaar (Wet op de lijkbezorging art. 11, 12). De akte van overlijden hoort bij het onderwerp burgerlijke stand.
 
 ## Kenmerken
 
@@ -82,6 +95,13 @@ In de lijkbezorging geeft de ambtenaar van de burgerlijke stand het schriftelijk
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -102,3 +122,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 ## Bronnen
 
 - [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
+- [Aangifte en akte van overlijden (Ondernemersplein)](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md)

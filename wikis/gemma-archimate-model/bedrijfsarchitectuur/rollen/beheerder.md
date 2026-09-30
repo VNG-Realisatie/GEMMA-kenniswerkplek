@@ -40,6 +40,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -85,6 +92,13 @@ De beheerder bepaalt tijd en plaats van begravingen in overleg met de uitvaarton
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -101,9 +115,10 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
 | associatie (gericht) | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | heeft de dagelijkse leiding van | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 e) |
-| toewijzing | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | bepaalt tijd en plaats van | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
+| toewijzing | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | bepaalt tijd en plaats van | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
 | associatie (gericht) | [Vergunning](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | ontvangt (verlof tot begraving of crematie) | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 9 lid 1) |
-| toewijzing | [Ruiming](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruiming.md) | ziet toe op | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 27 lid 2) |
+| toewijzing | [Ruimen graf](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | ziet toe op | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 27 lid 2) |
+| toewijzing | [Opgraven lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | is belast met de werkzaamheden bij | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 28 lid 6) |
 
 ## Bronnen
 

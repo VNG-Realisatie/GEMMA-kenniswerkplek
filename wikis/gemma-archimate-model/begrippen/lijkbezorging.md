@@ -17,7 +17,9 @@ conclusie: '100 begrippen beoordeeld (run 2026-09-29T2158-1752), aangevuld in ru
   2026-09-30T1144-3c57: 42 elementen, waarvan 6 generiek (Besluit, Beschikking, Vergunning,
   Heffing, Heffingsverordening, Regeling); Gemeente is een rol. De overige begrippen
   zijn specialisatie, eigenschap of onderdeel zonder pagina, of vallen buiten scope
-  of buiten het model. Acht GGM-terugmeldingen.'
+  of buiten het model. Acht GGM-terugmeldingen. Migratierun 2026-09-30T2040-11a8:
+  gedragskenmerken toegevoegd, processen hernoemd naar werkwoordsvorm [EL20], nieuwe
+  functie Lijkbezorging, beschrijvingen los van het onderwerp [EL19].'
 bijgewerkt: '2026-09-30'
 ---
 
@@ -95,21 +97,22 @@ Wat de gemeente ziet, doet en beslist rond de lijkbezorging: lijkschouw door de 
 | Akte van overlijden | verhuist naar onderwerp burgerlijke stand | Passief (4/5, ontbreekt: *betekenis in onderwerp*) | wet | — |
 | Termijn van lijkbezorging | buiten dit model (Constraint (norm: niet eerder dan 36 uur en uiterlijk de zesde werkdag, art. 16)) | Buiten de kernlagen van dit model | wet | — |
 | Beschikking ter bezorging van het lijk | buiten scope | gemeentelijk: nee | wet | — |
-| Kennisgeving van begraven of bijzetten | onderdeel of deelstap van [Lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | Onderdeel of deelstap van een ander begrip | wet | — |
-| [Lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
-| Begraving | specialisatie zonder pagina van [Lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
-| Crematie | specialisatie zonder pagina van [Lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
-| Ontleding | specialisatie zonder pagina van [Lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | Variant van een breder begrip (1/2, ontbreekt: *relaties*) | wet | — |
-| Bijzetting | specialisatie zonder pagina van [Lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
-| Verstrooiing | specialisatie zonder pagina van [Lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
-| Incidentele asverstrooiing | specialisatie zonder pagina van [Lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
-| [Lijkschouwing](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkschouwing.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
-| Nader onderzoek | specialisatie zonder pagina van [Lijkschouwing](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkschouwing.md) | Variant van een breder begrip (2/2) | wet | — |
-| [Lijkbezorging door de burgemeester](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging-door-de-burgemeester.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
-| Kostenverhaal lijkbezorging | onderdeel of deelstap van [Lijkbezorging door de burgemeester](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging-door-de-burgemeester.md) | Onderdeel of deelstap van een ander begrip | wet | — |
-| [Uitgifte van een graf](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitgifte-van-een-graf.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
-| [Opgraving](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraving.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
-| [Ruiming](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruiming.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
+| Kennisgeving van begraven of bijzetten | onderdeel of deelstap van [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | Onderdeel of deelstap van een ander begrip | wet | — |
+| [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
+| [Lijkbezorging](../bedrijfsarchitectuur/bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | business-function (review) | Gedrag, *gegroepeerd gedrag* (4/4); overkoepelende functie, besluit redacteur 2026-09-30 | wet | — |
+| Begraving | specialisatie zonder pagina van [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
+| Crematie | specialisatie zonder pagina van [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
+| Ontleding | specialisatie zonder pagina van [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | Variant van een breder begrip (1/2, ontbreekt: *relaties*) | wet | — |
+| Bijzetting | specialisatie zonder pagina van [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
+| Verstrooiing | specialisatie zonder pagina van [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
+| Incidentele asverstrooiing | specialisatie zonder pagina van [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | Variant van een breder begrip (2/2) | wet | — |
+| [Schouwen lijk](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
+| Nader onderzoek | specialisatie zonder pagina van [Schouwen lijk](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md) | Variant van een breder begrip (2/2) | wet | — |
+| [Verzorgen gemeentebegrafenis](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
+| Kostenverhaal lijkbezorging | onderdeel of deelstap van [Verzorgen gemeentebegrafenis](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | Onderdeel of deelstap van een ander begrip | wet | — |
+| [Verlenen grafrecht](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
+| [Opgraven lijk](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
+| [Ruimen graf](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
 | [Onderhoud van graven](../bedrijfsarchitectuur/bedrijfsdiensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) | business-service (review) | Gedrag, *aangeboden gedrag* (2/2) | wet | — |
 | [Overlijden](../bedrijfsarchitectuur/bedrijfsgebeurtenissen/overlijden.md) | business-event (review) | Gedrag, *toestandsverandering* (2/2) | wet | — |
 | Gemeentelijke dienstverlening rond overlijden | buiten dit model (Grouping (verzamelterm in de VNG-bron)) | Buiten de kernlagen van dit model | beleid | — |

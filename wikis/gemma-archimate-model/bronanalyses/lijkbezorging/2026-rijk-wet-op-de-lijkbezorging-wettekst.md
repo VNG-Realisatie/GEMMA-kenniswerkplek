@@ -105,6 +105,12 @@ Opvallende specialisaties: begraafplaats en crematorium (gemeentelijk of bijzond
 | degene die in de lijkbezorging voorziet | vraagt aan | verlof tot begraving of crematie | art. 18 lid 1 |
 | degene die in de lijkbezorging voorziet | voorziet in | lijkbezorging | art. 18 lid 1 |
 | lijkbezorging | geschiedt overeenkomstig | beschikking ter bezorging van het lijk | art. 18 lid 1, 19 |
+| wet op de lijkbezorging (taakgebied lijkbezorging) | omvat | lijkschouwing | hfst. II § 1 (art. 3-10a) |
+| wet op de lijkbezorging (taakgebied lijkbezorging) | omvat | lijkbezorging (begraving, crematie) | art. 1; hfst. III en IV |
+| wet op de lijkbezorging (taakgebied lijkbezorging) | omvat | lijkbezorging door de burgemeester | hfst. II § 5 (art. 20-22) |
+| wet op de lijkbezorging (taakgebied lijkbezorging) | omvat | uitsluitend recht op een graf | art. 28 |
+| wet op de lijkbezorging (taakgebied lijkbezorging) | omvat | opgraving | art. 29 |
+| wet op de lijkbezorging (taakgebied lijkbezorging) | omvat | ruiming | art. 31 |
 | burgemeester | draagt zorg voor | lijkbezorging door de burgemeester | art. 21 lid 1 |
 | lijkbezorging door de burgemeester | betreft | lijk | art. 21 |
 | gemeente | verhaalt | kostenverhaal lijkbezorging | art. 22 |
