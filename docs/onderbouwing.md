@@ -1084,8 +1084,8 @@ Bij de eerste Vraag in een Sessie, vóór inhoudelijk werk:
 | Python-omgeving aanwezig en actueel | `uv sync` | — |
 | Brug aanwezig en actueel | `harness sync` (beheerde kopie met bronhash) | — |
 | Geen CLAUDE.md of CLAUDE.local.md op een wiki-pad | — | Uitleg dat dit bestand de wiki-Rules uitschakelt, met voorstel het te hernoemen |
-| Credentials voor deze wiki (alleen namen, nooit waarden) | — | Welke variabele ontbreekt en hoe je die instelt op dit besturingssysteem |
-| Commando voor de MCP-server beschikbaar (bijv. `npx`) | — | Welk programma ontbreekt |
+| Credentials voor een sync-wiki (alleen namen, nooit waarden) | — | Opmerking, niet blokkerend: welke variabele ontbreekt, dat die alleen nodig is voor werk met die wiki, en hoe je die instelt |
+| Commando voor de MCP-server beschikbaar (bijv. `npx`) | — | Opmerking, niet blokkerend: welk programma ontbreekt; alleen nodig voor werk met een sync-wiki |
 | Gegenereerde permissieregels voor de gate aanwezig | `harness sync` | — |
 | Onafgeronde runs | — | Lijst, zodat de Agent kan voorstellen te hervatten |
 | Afgeronde runs ouder dan bewaartermijn | `run prune` | — |

@@ -72,15 +72,20 @@ def _inlog_notes(repo_root: Path) -> list[str]:
             if ontbrekend:
                 notes.append(
                     f"{wiki_root.name}, doel '{doel}': omgevingsvariabele(n) {', '.join(ontbrekend)} niet gezet; "
-                    "nodig voor pull/publish naar dit doel. Zie README, 'Inloggen op GEMMA Online'."
+                    f"alleen nodig als je met wikis/{wiki_root.name} werkt (pull/publish naar dit doel). "
+                    "Zie README, 'Inloggen op GEMMA Online'."
                 )
     return notes
 
 
-def _check_npx(repo_root: Path) -> list[str]:
-    needs_mcp = any(paths.load_wiki_yaml(w).get("type") == "sync" for w in _find_wiki_roots(repo_root))
-    if needs_mcp and shutil.which("npx") is None:
-        return ["'npx' (Node.js) niet gevonden; nodig voor de MediaWiki-MCP-server."]
+def _npx_notes(repo_root: Path) -> list[str]:
+    """Opmerking als npx ontbreekt: alleen de sync-wiki's gebruiken de MediaWiki-MCP-server, dus het blokkeert niets."""
+    sync_wikis = [w.name for w in _find_wiki_roots(repo_root) if paths.load_wiki_yaml(w).get("type") == "sync" and not w.name.startswith("_")]
+    if sync_wikis and shutil.which("npx") is None:
+        return [
+            f"'npx' (Node.js) niet gevonden; alleen nodig voor de MediaWiki-MCP-server als je met "
+            f"{', '.join(f'wikis/{n}' for n in sync_wikis)} werkt."
+        ]
     return []
 
 
@@ -88,7 +93,7 @@ def _mcp_registration_notes(repo_root: Path) -> list[str]:
     notes = []
     for wiki_root in _find_wiki_roots(repo_root):
         wiki_yaml = paths.load_wiki_yaml(wiki_root)
-        if wiki_yaml.get("type") != "sync":
+        if wiki_yaml.get("type") != "sync" or wiki_root.name.startswith("_"):
             continue
         config_path = wiki_root / "mediawiki-mcp.config.json"
         if not config_path.exists():
@@ -96,7 +101,7 @@ def _mcp_registration_notes(repo_root: Path) -> list[str]:
             continue
         rel = config_path.relative_to(wiki_root)
         notes.append(
-            f"{wiki_root.name}: registreer de MCP-server eenmalig per machine (indien nog niet gedaan): "
+            f"{wiki_root.name}: als je met wikis/{wiki_root.name} werkt, registreer de MCP-server eenmalig per machine (indien nog niet gedaan): "
             f"claude mcp add mediawiki -e CONFIG={rel} -- npx -y {harness.MCP_PACKAGE}"
         )
     return notes
@@ -130,10 +135,9 @@ def check(repo_root: Path, fix: bool = False) -> dict:
         "claude_md": claude_md,
         "mediawiki_extra": _check_mediawiki_extra(repo_root),
         "family_bestanden": _check_family_bestanden(repo_root),
-        "npx": _check_npx(repo_root),
         "onafgeronde_runs": _check_unfinished_runs(repo_root),
         "opgeschoond": [],
-        "opmerkingen": _inlog_notes(repo_root) + _mcp_registration_notes(repo_root),
+        "opmerkingen": _inlog_notes(repo_root) + _npx_notes(repo_root) + _mcp_registration_notes(repo_root),
     }
 
     if fix:
@@ -147,7 +151,7 @@ def check(repo_root: Path, fix: bool = False) -> dict:
 
     herstelbaar = bool(result["python_omgeving"] or result["harness_bindingen"])
     actie_gebruiker = bool(
-        result["claude_md"] or result["mediawiki_extra"] or result["family_bestanden"] or result["npx"]
+        result["claude_md"] or result["mediawiki_extra"] or result["family_bestanden"]
     )
     if actie_gebruiker:
         result["status"] = "actie gebruiker"
@@ -166,7 +170,6 @@ def format_text(result: dict) -> str:
         ("claude_md", "CLAUDE.md"),
         ("mediawiki_extra", "pywikibot"),
         ("family_bestanden", "Family-bestand"),
-        ("npx", "npx"),
         ("onafgeronde_runs", "Onafgeronde runs"),
         ("opgeschoond", "Opgeschoond"),
     ):

@@ -30,8 +30,8 @@ Je hebt maar twee dingen nodig: deze map op je computer (gekregen via Git, of ge
 2. Typ en druk op Enter:
    - **Windows (PowerShell)**: `.\scripts\setup.ps1`
    - **macOS/Linux**: `./scripts/setup.sh`
-3. Het script installeert zelf wat nodig is (de tool `uv`, de Python-omgeving), controleert de werkplek, laat zien welke inloggegevens voor GEMMA Online nog ontbreken en hoe je die instelt, en sluit af met "Klaar." Er wordt niets onomkeerbaars gedaan.
-4. Wil je naar GEMMA Online publiceren? Stel dan eenmalig je inloggegevens in (zie *Inloggen op GEMMA Online*). Voor de andere wiki's is dat niet nodig.
+3. Het script installeert zelf wat nodig is (de tool `uv`, de Python-omgeving), controleert de werkplek en sluit af met "Klaar." Er wordt niets onomkeerbaars gedaan.
+4. Het script vraagt of je met de wiki GEMMA Online (`wikis/gemma`) gaat werken. Alleen dan heb je inloggegevens nodig; het script laat zien welke nog ontbreken en biedt op Windows aan ze meteen in te stellen (zie *Inloggen op GEMMA Online*). Werk je alleen met `gemma-archimate-model` of een andere wiki, antwoord dan *nee*: je kunt zonder. Later alsnog instellen kan met `.\scripts\setup.ps1 -GemmaOnline` of `./scripts/setup.sh --gemma-online`.
 5. Open deze map daarna in je AI-assistent (bijvoorbeeld Claude Code) en stel een inhoudelijke vraag. Zie "Gebruik voor redacteuren" hieronder.
 
 Loopt er iets vast? Het script stopt met een duidelijke melding in gewone taal over wat je zelf nog moet doen (bijvoorbeeld: terminal opnieuw openen). Vraag anders je AI-assistent om `uv run python -m llmwiki workspace-check` te draaien en de uitkomst uit te leggen.
@@ -46,7 +46,7 @@ Loopt er iets vast? Het script stopt met een duidelijke melding in gewone taal o
 
 ## Inloggen op GEMMA Online
 
-Alleen nodig voor de sync-wiki `wikis/gemma`, om pagina's op te halen van en te publiceren naar GEMMA Online. Je inloggegevens staan **nooit** in een bestand in deze map: je zet ze als omgevingsvariabelen van je eigen gebruikersaccount. `wikis/gemma/wiki.yaml` noemt alleen de namen.
+Alleen nodig voor de sync-wiki `wikis/gemma`, om pagina's op te halen van en te publiceren naar GEMMA Online. Voor `gemma-archimate-model` en de andere wiki's kun je zonder; dan heb je ook Node.js (`npx`, voor de MCP-server van GEMMA Online) niet nodig. Je inloggegevens staan **nooit** in een bestand in deze map: je zet ze als omgevingsvariabelen van je eigen gebruikersaccount. `wikis/gemma/wiki.yaml` noemt alleen de namen.
 
 ### 1. Maak botwachtwoorden aan
 
@@ -122,4 +122,4 @@ uv run python -m llmwiki --version
 
 ### Werkplekcontrole
 
-Bij elke sessie draait de AI-assistent eerst `uv run python -m llmwiki workspace-check` (zie de root-`AGENTS.md`). Die controleert de Python-omgeving, de harness-bindingen (`llmwiki harness check`), CLAUDE.md-uitschakeling, of `pywikibot`/`npx` aanwezig zijn waar nodig, of elk family-bestand uit `wiki.yaml` in de wiki-map staat (`wikis/<wiki>/families/<naam>_family.py`: de servers van een sync-wiki, zonder geheimen), en onafgeronde runs. Als opmerking (niet blokkerend) meldt ze welke inlogvariabelen voor GEMMA Online nog ontbreken, en voor een sync-wiki het eenmalige MCP-registratiecommando.
+Bij elke sessie draait de AI-assistent eerst `uv run python -m llmwiki workspace-check` (zie de root-`AGENTS.md`). Die controleert de Python-omgeving, de harness-bindingen (`llmwiki harness check`), CLAUDE.md-uitschakeling, of `pywikibot` aanwezig is waar nodig, of elk family-bestand uit `wiki.yaml` in de wiki-map staat (`wikis/<wiki>/families/<naam>_family.py`: de servers van een sync-wiki, zonder geheimen), en onafgeronde runs. Als opmerking (niet blokkerend, alleen van belang als je met `wikis/gemma` werkt) meldt ze welke inlogvariabelen voor GEMMA Online nog ontbreken, of `npx` ontbreekt, en het eenmalige MCP-registratiecommando.
