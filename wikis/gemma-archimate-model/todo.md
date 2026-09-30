@@ -2,9 +2,13 @@
 
 Open punten voor deze wiki. Een punt verdwijnt als het is afgehandeld; de afhandeling staat in de commit.
 
-## Nieuwe gedragskenmerken op bestaande pagina's
+## Migratierun lijkbezorging (gedragskenmerken en [EL19])
 
-- **Migratie.** Sinds 2026-09-30 kent de beslistabel zeven gedragskenmerken (toegewezen partij, gebruikt objecten, aanleiding, benoembaar resultaat, herhaald uitgevoerd, eigen normering, stabiel over tijd); de drempel voor proces en functie rust erop. De 42 elementpagina's van lijkbezorging missen ze nog (`check_elementen.py`: `kenmerken-onvolledig`). Voeg ze toe via een run: bij passieve begrippen en partijen nee, bij de zes processen, de dienst en de twee gebeurtenissen een beoordeling met onderbouwing. Opgraving en Uitgifte van een graf hebben geen toegewezen partij in de wiki (6/7); leg dat voor.
+Eén run over de goedgekeurde pagina's van lijkbezorging, zodat alles in één keer door de gate gaat.
+
+- **Beschrijving los van het onderwerp [EL19].** Algemene beschrijving uit een algemene bron, onderwerptekst naar `## Per onderwerp`: Burgemeester, Kerkgenootschap, GGD, Gemeente, Ambtenaar van de burgerlijke stand (ook de definitie), Besluit, Beschikking, Vergunning, Regeling, Heffing, Heffingsverordening, Overlijden. `check_elementen.py` vindt de meeste (`beschrijving-onderwerp`); GGD, Heffingsverordening en Overlijden niet, die zijn anders geformuleerd. Gemeenteraad, College van B&W en Inwoner zijn al herschreven in run 2026-09-30T1915-69e2.
+
+- **Gedragskenmerken.** Sinds 2026-09-30 kent de beslistabel zeven gedragskenmerken (toegewezen partij, gebruikt objecten, aanleiding, benoembaar resultaat, herhaald uitgevoerd, eigen normering, stabiel over tijd); de drempel voor proces en functie rust erop. De 42 elementpagina's van lijkbezorging missen ze nog (`check_elementen.py`: `kenmerken-onvolledig`). Voeg ze toe via een run: bij passieve begrippen en partijen nee, bij de zes processen, de dienst en de twee gebeurtenissen een beoordeling met onderbouwing. Opgraving en Uitgifte van een graf hebben geen toegewezen partij in de wiki (6/7); leg dat voor.
 
 ## Herziening van de regels
 

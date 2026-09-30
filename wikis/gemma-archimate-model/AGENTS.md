@@ -45,6 +45,7 @@ Schrijfwijze: `[ID] **kern** — regel`. `ALTIJD` = verplicht, `NOOIT` = verbode
 - [EL12] **Veldprefixen** — Zonder prefix = eigen veld van de wiki; `ggm_` = letterlijk uit het GGM; `gemma_` = letterlijk uit het GEMMA-model na een match. `ggm_`- en `gemma_`-velden ALLEEN laten vullen door `tools/ggm.py` en `tools/gemma.py`; NOOIT zelf invullen of aanpassen.
 - [EL17] **Verwijzingen als link** — NOOIT verwijzingen naar andere elementen in de frontmatter; ALTIJD als relatieve link in de body (relaties, specialisaties, tegenhanger, homoniemen), zodat backlinks zichtbaar zijn.
 - [EL18] **Status** — De AI zet een element ALLEEN op `review` bij een uitkomst van de beslistabel zonder conflict of "voorleggen" (en bij `data_object: ja` een GGM-match exact of sterk); anders `kandidaat`. NOOIT `goedgekeurd`.
+- [EL19] **Beschrijving los van het onderwerp** — ALTIJD beschrijven `definitie` en `## Beschrijving` het element zelf, los van het onderwerp waarin het is gevonden; toets: past de tekst ongewijzigd in elk ander onderwerp? Bij een partij of generiek begrip komt de tekst uit een algemene bron (Gemeentewet, Awb, BW). ALS het element in een onderwerp een eigen rol speelt → twee of drie zinnen onder `## Per onderwerp`, `### <onderwerp>`, met een link naar de begrippenlijst; de formele verbanden staan in `## Relaties`. Gecontroleerd door `tools/check_elementen.py` (waarschuwing).
 
 ### Scope en formulering
 

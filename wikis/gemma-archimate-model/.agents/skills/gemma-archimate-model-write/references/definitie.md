@@ -41,6 +41,7 @@ Wijkt de GGM-definitie inhoudelijk af van de wet of de bronnen: leg dat vast in 
 - Wat een partij binnen het onderwerp doet, staat in `## Relaties`: de rol die ze vervult (toewijzing), het gedrag dat ze uitvoert, het object dat ze houdt (associatie).
 - Geeft de bron van het onderwerp alleen onderwerpgebonden taal, gebruik dan een algemene bron (bijv. het Burgerlijk Wetboek voor een kerkgenootschap, de Gemeentewet voor burgemeester en college) en voeg die bron toe aan `bronnen:`.
 - Toets: past de definitie ongewijzigd in elk ander onderwerp waarin deze partij voorkomt? Nee → herschrijven.
+- Hetzelfde geldt voor `## Beschrijving`, bij elk element dat in meer onderwerpen kan voorkomen (partijen, besluiten, regelingen, heffingen, gebeurtenissen als overlijden): wat het in één onderwerp doet, staat onder `## Per onderwerp` ([EL19]).
 
 Voorbeeld: niet "Kerkelijke organisatie die een bijzondere begraafplaats of crematorium mag houden", maar een definitie van het kerkgenootschap zelf; "houdt een bijzondere begraafplaats" wordt een relatie met Begraafplaats, via de rol Houder van de begraafplaats.
 

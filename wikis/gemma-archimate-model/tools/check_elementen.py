@@ -292,6 +292,12 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
 
     # Formulering (WC7, WC8–WC11, EL1)
     b += _formulering(doel, el.body + "\n" + definitie)
+    # Beschrijving los van het onderwerp (EL19)
+    beschrijving = gam_gemeen.sectie(el.body, "Beschrijving") or ""
+    eigen_naam = re.compile(re.escape(str(meta.get("naam", ""))), re.IGNORECASE)
+    for m in _onderwerp_re(w).finditer(eigen_naam.sub("", beschrijving + "\n" + definitie)):
+        waarschuwing("beschrijving-onderwerp", f"'{m.group(0)}': beschrijving en definitie gaan over het element zelf; "
+                     "onderwerpgebonden tekst hoort onder '## Per onderwerp' [EL19]")
     return b
 
 
@@ -323,6 +329,13 @@ def _bronlinks(w: Wiki, van: Path, cel: str) -> list[str]:
             elif gam_gemeen.doel_van_link(van, m.group("doel")) not in w.bron_doelen(m.group("tekst")):
                 meldingen.append(f"link '{m.group('tekst')}' wijst niet naar de bronanalyse van die bron")
     return meldingen
+
+
+def _onderwerp_re(w: Wiki) -> re.Pattern:
+    """'In de lijkbezorging', 'in dit onderwerp' …: tekst die een element aan één onderwerp bindt."""
+    namen = sorted({str(p.meta.get("naam", "")).lower() for _, p in w.van_type("onderwerp")} - {""}, key=len, reverse=True)
+    alternatieven = "|".join(re.escape(n) for n in namen) or "(?!)"
+    return re.compile(rf"\b[Ii]n (?:de |het )?(?:{alternatieven})\b|\b[Ii]n dit onderwerp\b")
 
 
 def _formulering(doel: str, tekst: str) -> list[Bevinding]:

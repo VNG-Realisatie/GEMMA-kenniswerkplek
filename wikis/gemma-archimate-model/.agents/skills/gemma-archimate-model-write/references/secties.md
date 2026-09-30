@@ -40,7 +40,8 @@ Secties, in deze volgorde (alleen wat van toepassing is):
 |---|---|---|
 | `# <naam>` | altijd | |
 | `## Definitie` | altijd, als eerste sectie | De herkenbare `definitie` uit de frontmatter, letterlijk. Bij een formele definitie daaronder `definitie_formeel` als blockquote met vindplaats, en in één of twee zinnen het verschil (zie `definitie.md`) |
-| `## Beschrijving` | altijd | Het element zoals de gemeente erover praat |
+| `## Beschrijving` | altijd | Het element zelf, zoals de gemeente erover praat, los van het onderwerp waarin het is gevonden ([EL19]): de tekst past ongewijzigd in elk ander onderwerp. Bij een partij of generiek begrip uit een algemene bron (Gemeentewet, Awb, BW) |
+| `## Per onderwerp` | als het element in een onderwerp een eigen rol speelt | Per onderwerp `### <naam onderwerp>` met een link naar `begrippen/<onderwerp>.md` en twee of drie zinnen met vindplaatsen: wat het element in dat onderwerp doet of betekent. De formele verbanden staan in `## Relaties`. Een nieuw onderwerp voegt een kopje toe en laat de andere ongemoeid |
 | `## Kenmerken` | altijd | Tabel `\| Kenmerk \| Waarde \| Onderbouwing \| Bron \|` voor alle kenmerken (onderbouwing uit ASSESS); in kolom Bron elk bron-id als link naar de bronanalyse ([IH2]) |
 | `## GGM-bron` | grondslag `ggm-entiteit` | GGM-definitie als blockquote, matchsterkte, afwijkingen |
 | `## Afleiding` / `## Procesbron` / `## Juridische bron` | per grondslag | Zie `grondslag.md` |

@@ -210,3 +210,13 @@ def test_bronnen_als_link_laat_links_en_datums_staan(wiki):
     assert gam_gemeen.bronnen_als_link(van, tekst, wiki) == (
         "Zie [2026-utrecht-nota](../../../../bronanalyses/vergunningen/2026-utrecht-nota.md) (§2), "
         "[2026-utrecht-nota](x.md) en besluit van 2026-09-30.")
+
+
+def test_onderwerpgebonden_beschrijving_is_waarschuwing(wiki):
+    _schrijf(wiki, BO_PAD, _bo(), "## Beschrijving\n\nIn dit onderwerp wordt de beschikking door het college genomen.\n")
+    bevindingen = check_elementen.controleer(wiki)
+    assert any(x.naam == "beschrijving-onderwerp" and x.ernst == "waarschuwing" for x in bevindingen)
+    # Onder '## Per onderwerp' mag het wel
+    _schrijf(wiki, BO_PAD, _bo(), "## Beschrijving\n\nBesluit over een individueel geval.\n\n"
+             "## Per onderwerp\n\n### Vergunningen\n\nIn dit onderwerp neemt het college de beschikking.\n")
+    assert not any(x.naam == "beschrijving-onderwerp" for x in check_elementen.controleer(wiki))
