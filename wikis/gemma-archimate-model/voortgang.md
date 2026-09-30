@@ -3,18 +3,18 @@
 Gegenereerd: 2026-09-30
 
 ## Open runs
-- 2026-09-29T2158-1752
+- 2026-09-30T1144-3c57
 
 ## Aantallen per status
-- actor: goedgekeurd=1, kandidaat=6
+- actor: goedgekeurd=6
 - analyse: -=1
 - bedrijfsdienst: goedgekeurd=1
 - bedrijfsgebeurtenis: goedgekeurd=2
-- bedrijfsobject: goedgekeurd=9, kandidaat=7
+- bedrijfsobject: goedgekeurd=14, kandidaat=3
 - bedrijfsproces: goedgekeurd=6
-- bronanalyse: -=4
+- bronanalyse: -=9
 - onderwerp: afgerond=1
-- rol: goedgekeurd=9
+- rol: goedgekeurd=10
 
 ## Wacht op review
 - (geen)

@@ -1,14 +1,15 @@
 ---
 id: uitvaartondernemer
 type: actor
-status: kandidaat
+status: goedgekeurd
 naam: Uitvaartondernemer
 archimate_type: business-actor
 onderwerp: lijkbezorging
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-definitie: Persoon of onderneming die beroepsmatig uitvaarten verzorgt in opdracht
-  van nabestaanden.
+- 2026-rvo-aangifte-en-akte-van-overlijden
+definitie: Onderneming die in opdracht van nabestaanden de uitvaart verzorgt en namens
+  hen aangifte van overlijden doet en vergunningen aanvraagt bij de gemeente.
 synoniemen:
 - naam: Uitvaartonderneming
   context: beleid
@@ -53,7 +54,7 @@ bijgewerkt: '2026-09-30'
 
 ## Beschrijving
 
-De beheerder bepaalt tijd en plaats van een begraving in overleg met de uitvaartondernemer; personeel van uitvaartondernemingen volgt op de begraafplaats de aanwijzingen van de beheerder (Groningen art. 5, 7).
+De uitvaartondernemer doet voor de nabestaanden aangifte van overlijden bij de gemeente waar de persoon is overleden, en krijgt van de gemeente de akte van overlijden en het verlof tot begraven of cremeren; voor het vervroegen of uitstellen van de uitvaart vraagt hij een vergunning aan (Ondernemersplein). De beheerder bepaalt tijd en plaats van een begraving in overleg met de uitvaartondernemer; personeel van uitvaartondernemingen volgt op de begraafplaats de aanwijzingen van de beheerder (Groningen art. 5, 7).
 
 ## Kenmerken
 
@@ -101,8 +102,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 ## Bronnen
 
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
-
-## Ter discussie
-
-- De definitie is niet letterlijk uit een bron. 🔍 Verificatie nodig.
-- Gemeentelijk op grond van het overleg bij elke begraving (Groningen art. 7); besluit redacteur 2026-09-30.
+- [Aangifte en akte van overlijden (Ondernemersplein)](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md)

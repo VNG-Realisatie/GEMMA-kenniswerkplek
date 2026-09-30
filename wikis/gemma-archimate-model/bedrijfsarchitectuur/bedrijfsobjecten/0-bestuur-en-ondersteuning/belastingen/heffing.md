@@ -1,7 +1,7 @@
 ---
 id: heffing
 type: bedrijfsobject
-status: kandidaat
+status: goedgekeurd
 naam: Heffing
 archimate_type: business-object
 onderwerp: lijkbezorging
@@ -11,6 +11,7 @@ bronnen:
 - 2026-vng-ggm-2-5-1
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-retributies
+- 2024-rijk-gemeentewet-wettekst
 definitie: Een door de overheid opgelegde verplichting tot betaling.
 grondslag: ggm-entiteit
 match:
@@ -143,7 +144,4 @@ Match **exact** met GEMMA-element Heffing (business-object). Geen wijziging ten 
 - Gemeentelijk Gegevensmodel 2.5.1 (2026-vng-ggm-2-5-1)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
 - [Retributies (VNG), paragraaf Lijkbezorgingsrechten](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md)
-
-## Ter discussie
-
-- Nieuw generiek element, voorgesteld als breder begrip voor de lijkbezorgingsrechten (besluit redacteur 2026-09-30: generieke map 0 Bestuur en Ondersteuning / Belastingen). Een later onderwerp belastingen werkt het verder uit.
+- [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)

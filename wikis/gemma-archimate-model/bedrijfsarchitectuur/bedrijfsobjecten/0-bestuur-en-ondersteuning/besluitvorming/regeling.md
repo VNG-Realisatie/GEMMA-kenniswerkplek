@@ -11,6 +11,7 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-wet-op-de-lijkbezorging
+- 2024-rijk-gemeentewet-wettekst
 definitie: Algemeen verbindend voorschrift van een overheid, zoals een wet, algemene
   maatregel van bestuur of gemeentelijke verordening.
 grondslag: governance-object
@@ -131,8 +132,9 @@ Match **sterk** met GEMMA-element Regeling (business-object). Nieuw in dit model
 - [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
 - [Wet op de lijkbezorging (VNG)](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md)
+- [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)
 
 ## Ter discussie
 
-- Governance-object: altijd voorgelegd.
-- Nieuw generiek element (besluit redacteur 2026-09-30); beide verordeningen (beheersverordening en heffingsverordening) zijn er specialisaties van.
+- Governance-object: wordt altijd voorgelegd en blijft daardoor kandidaat. Het generieke element is door de redacteur bevestigd (2026-09-30); de gemeentelijke verordening als specialisatie steunt op de Gemeentewet (art. 147).
+- Goedkeuren kan pas als de werkwijze een besluit van de redacteur toestaat om een governance-object op review te zetten.

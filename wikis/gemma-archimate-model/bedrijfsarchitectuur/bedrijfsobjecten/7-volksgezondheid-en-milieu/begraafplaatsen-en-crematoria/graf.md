@@ -115,7 +115,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 ## Ter discussie
 
-- Data-object zonder GGM-entiteit: het GGM kent geen graf, terwijl Gemeentebegrafenis ernaar verwijst (attribuut datumRuimingGraf). Voorgesteld als GGM-hiaat (terugmelding 3).
+- Data-object zonder GGM-entiteit (terugmelding 3). De redacteur heeft opname akkoord bevonden (2026-09-30).
+- Goedkeuren kan pas als de werkwijze een besluit van de redacteur toestaat om een data-object zonder GGM-match op review te zetten.
 
 ## Terugmelding GGM
 

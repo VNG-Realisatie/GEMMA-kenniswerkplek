@@ -1,19 +1,21 @@
 ---
 id: gemeente
-type: actor
-status: kandidaat
+type: rol
+status: goedgekeurd
 naam: Gemeente
-archimate_type: business-actor
+archimate_type: business-role
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-definitie: Openbaar lichaam dat het lokale bestuur vormt voor een deel van het grondgebied
-  van Nederland.
+- 2024-rijk-gemeentewet-wettekst
+- 2026-rijk-bw2-rechtspersonen
+definitie: Hoedanigheid van het openbaar lichaam met rechtspersoonlijkheid dat het
+  lokale bestuur vormt, met een raad, een college en een burgemeester.
 grondslag: bron
 match:
   ggm: geen
-  gemma: geen
+  gemma: zwak
 data_object: nee
 kenmerken:
   herkenbaar: ja
@@ -25,25 +27,35 @@ kenmerken:
   relaties: ja
   zelfstandig_beleidsbegrip: ja
   gedrag: nee
-  handelende_partij: ja
-  hoedanigheid: nee
+  handelende_partij: nee
+  hoedanigheid: ja
   samenwerkingsverband: nee
   toegangspunt: nee
   plaats: nee
   aanbod_als_geheel: nee
-  los_van_verantwoordelijkheid: ja
-  meerdere_vervullers: nee
   per_keer_doorlopen: nee
   gegroepeerd_gedrag: nee
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  los_van_verantwoordelijkheid: nee
+  meerdere_vervullers: ja
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
   afspraak: nee
   waarneembare_vorm: nee
   geautomatiseerd_verwerkt: nee
+gemma_id: id-17a7441705094ba9b385c25497844778
+gemma_naam: Gemeente
+gemma_type: business-role
+gemma_definitie: Groepering van applicatieservices ten behoeve van de (medewerkers)
+  van de gemeente
+gemma_map: Business / Bedrijfsrollen
+gemma_eigenschappen:
+  GEMMA subtype: Doelgroep
+  GEMMA type: Groep
+  Object ID: ff2d196f-11e0-4328-b78a-0714eb1c4e92
 bijgewerkt: '2026-09-30'
 ---
 
@@ -51,7 +63,7 @@ bijgewerkt: '2026-09-30'
 
 ## Beschrijving
 
-In de lijkbezorging heeft de gemeente ten minste één gemeentelijke begraafplaats en is zij daarvan houder; zij draagt de kosten van de gemeentebegrafenis, verhaalt die, en onderhoudt graven tegen betaling (art. 22, 33, 39 lid 2; Groningen art. 3, 23).
+Gemeente is de hoedanigheid waarin een afzonderlijke gemeente, zoals Amsterdam of Utrecht, optreedt. Die afzonderlijke gemeenten zijn de actoren: rechtspersonen (BW art. 2:1) met een raad, een college en een burgemeester (Gemeentewet art. 6). In de lijkbezorging heeft de gemeente ten minste één gemeentelijke begraafplaats en is zij daarvan houder; zij draagt de kosten van de gemeentebegrafenis, verhaalt die, en onderhoudt graven tegen betaling (art. 22, 33, 39 lid 2; Groningen art. 3, 23). Besluit redacteur 2026-09-30: rol, geen actor.
 
 ## Kenmerken
 
@@ -65,20 +77,20 @@ In de lijkbezorging heeft de gemeente ten minste één gemeentelijke begraafplaa
 | eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
 | relaties | ja | Gemeente heeft en houdt gemeentelijke begraafplaats (art. 33; Groningen art. 3); verhaalt kosten (art. 22); voert onderhoud van graven uit (Groningen art. 23). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
 | zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gedrag | nee | Gemeente is een partij. |  |
-| handelende partij | ja | Gemeente is een partij. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| hoedanigheid | nee | Gemeente is een partij. |  |
-| samenwerkingsverband | nee | Gemeente is een partij. |  |
-| toegangspunt | nee | Gemeente is een partij. |  |
-| plaats | nee | Gemeente is een partij. |  |
-| aanbod als geheel | nee | Gemeente is een partij. |  |
-| los van verantwoordelijkheid | ja | Bestaat los van de lijkbezorging en vervult ook andere rollen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
+| gedrag | nee | Gemeente is een hoedanigheid. |  |
+| handelende partij | nee | De handelende partij is de afzonderlijke gemeente als rechtspersoon (Amsterdam, Utrecht); Gemeente zelf is de hoedanigheid (besluit redacteur 2026-09-30). |  |
+| hoedanigheid | ja | De hoedanigheid waarin een rechtspersoon als gemeente optreedt: houder van de gemeentelijke begraafplaats, drager van de kosten van de gemeentebegrafenis (Wlb art. 22, 33). | 2026-rijk-bw2-rechtspersonen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| samenwerkingsverband | nee | Gemeente is een hoedanigheid. |  |
+| toegangspunt | nee | Gemeente is een hoedanigheid. |  |
+| plaats | nee | Gemeente is een hoedanigheid. |  |
+| aanbod als geheel | nee | Gemeente is een hoedanigheid. |  |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| los van verantwoordelijkheid | nee | Gemeente is de verantwoordelijkheid zelf; de rechtspersoon die haar vervult bestaat los daarvan (BW art. 2:1). | 2026-rijk-bw2-rechtspersonen |
+| meerdere vervullers | ja | Elke afzonderlijke gemeente (Amsterdam, Utrecht, enzovoort) vervult deze rol. | 2026-rijk-bw2-rechtspersonen, 2024-rijk-gemeentewet-wettekst |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -88,7 +100,7 @@ In de lijkbezorging heeft de gemeente ten minste één gemeentelijke begraafplaa
 
 ## GEMMA
 
-Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
+Match **zwak** met GEMMA-rol Gemeente (Business / Bedrijfsrollen): dezelfde naam en hetzelfde type, maar in GEMMA een doelgroep, een groepering van applicatieservices voor de medewerkers van de gemeente. Nieuw in dit model: een definitie van de rol zelf. Het GGM en GEMMA kennen daarnaast het bedrijfsobject Gemeente als gedeelte van het grondgebied (art. 123 Grondwet); dat is een ander begrip.
 
 ## Relaties
 
@@ -98,15 +110,12 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 | associatie (gericht) | [Graf](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | heeft het uitsluitend recht tot begraven in | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 13 lid 1) |
 | toewijzing | [Onderhoud van graven](../bedrijfsdiensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) | voert uit | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 23) |
 | toewijzing | [Lijkbezorging door de burgemeester](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging-door-de-burgemeester.md) | verhaalt | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 22) |
-| toewijzing | [Houder van de begraafplaats](../rollen/houder-van-de-begraafplaats.md) | vervult (gemeentelijke begraafplaats) | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 33, 39 lid 2; Groningen art. 3) |
-| toewijzing | [Houder van een plaats van bijzetting](../rollen/houder-van-een-plaats-van-bijzetting.md) | vervult (urnengraf, urnennis op de gemeentelijke begraafplaats) | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 1 u, v, 3) |
+| associatie (gericht) | [Houder van de begraafplaats](houder-van-de-begraafplaats.md) | treedt op als (gemeentelijke begraafplaats) | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 33, 39 lid 2; Groningen art. 3) |
+| associatie (gericht) | [Houder van een plaats van bijzetting](houder-van-een-plaats-van-bijzetting.md) | treedt op als (urnengraf, urnennis op de gemeentelijke begraafplaats) | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 1 u, v, 3) |
 
 ## Bronnen
 
 - [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
-
-## Ter discussie
-
-- De definitie beschrijft wat de partij is, los van de lijkbezorging. De bronnen van dit onderwerp geven alleen onderwerpgebonden taal; de definitie steunt op de Gemeentewet, die nog geen bron in deze wiki is. 🔍 Verificatie nodig: Gemeentewet als bron opnemen of de definitie bevestigen.
-- Generiek actorelement: hoort mogelijk bij een generiek onderwerp; in deze run gevonden bij lijkbezorging. GEMMA kent Gemeente als rol (Business / Bedrijfsrollen), niet als actor.
+- [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)
+- [Burgerlijk Wetboek Boek 2 Rechtspersonen](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md)

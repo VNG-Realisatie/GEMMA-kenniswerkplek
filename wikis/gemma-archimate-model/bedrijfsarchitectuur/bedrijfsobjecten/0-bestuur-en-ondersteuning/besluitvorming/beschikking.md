@@ -1,7 +1,7 @@
 ---
 id: beschikking
 type: bedrijfsobject
-status: kandidaat
+status: goedgekeurd
 naam: Beschikking
 archimate_type: business-object
 onderwerp: lijkbezorging
@@ -11,6 +11,7 @@ bronnen:
 - 2026-vng-ggm-2-5-1
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
 definitie: Besluit van een bestuursorgaan in een concreet geval, zoals het verlenen
   van een vergunning.
 grondslag: ggm-entiteit
@@ -89,7 +90,7 @@ bijgewerkt: '2026-09-30'
 
 ## Beschrijving
 
-In de lijkbezorging nemen burgemeester, college en gemeenteraad een reeks beschikkingen die elk een eigen wetsartikel hebben, maar geen eigen gegevens of levenscyclus. Ze zijn specialisaties zonder eigen pagina; de toestemmingen voor een handeling vallen onder [Vergunning](vergunning.md).
+In de lijkbezorging nemen burgemeester, college en gemeenteraad een reeks beschikkingen die elk een eigen wetsartikel hebben, maar geen eigen gegevens of levenscyclus. Ze zijn specialisaties zonder eigen pagina; de toestemmingen voor een handeling vallen onder [Vergunning](vergunning.md). Een beschikking is een [Besluit](besluit.md) dat niet van algemene strekking is (Awb art. 1:3 lid 2). Het element is generiek en domeinoverstijgend: het hoort niet bij één beleidsdomein (besluit redacteur 2026-09-30).
 
 ## Kenmerken
 
@@ -128,18 +129,24 @@ In de lijkbezorging nemen burgemeester, college en gemeenteraad een reeks beschi
 
 > In het bestuursrecht: Een beslissing van een overheidsorgaan in een concreet geval, bijvoorbeeld het verlenen van een bouwvergunning. In het civiele recht: een rechterlijke uitspraak in een procedure die begint met een verzoekschrift.
 
-Entiteit Beschikking, beleidsdomein Generiek Jeugd en Wmo (6 Sociaal Domein). Match **sterk**: hetzelfde begrip voor het bestuursrecht; de GGM-definitie omvat ook de civielrechtelijke beschikking, die buiten dit model valt.
+Entiteit Beschikking, beleidsdomein Generiek Jeugd en Wmo (6 Sociaal Domein). Match **sterk**: hetzelfde begrip voor het bestuursrecht; de GGM-definitie omvat ook de civielrechtelijke beschikking, die buiten dit model valt. Het GGM kent Beschikking alleen in twee domeinspecifieke beleidsdomeinen, niet domeinoverstijgend naast Besluit in RGBZPlus (99 Kern); zie de terugmelding.
 
 ## GGM-duplicaten
 
 | Beleidsdomein | GUID | Status |
 |---|---|---|
-| Generiek Jeugd en Wmo | EAID_71D7E96D_641A_4b6a_A325_DED07C3B5836 | primair: de GUID waaraan GEMMA-bedrijfsobject Beschikking is gekoppeld |
-| Diensten | EAID_16ABCFF8_4817_6A73_59BA_281C3303F8D2 | duplicaat: zelfde begrip ('een voor beroep vatbaar overheidsbesluit'), andere GUID |
+| Generiek Jeugd en Wmo | EAID_71D7E96D_641A_4b6a_A325_DED07C3B5836 | koppeling: de GUID waaraan GEMMA-bedrijfsobject Beschikking is gekoppeld; domeinspecifiek |
+| Diensten | EAID_16ABCFF8_4817_6A73_59BA_281C3303F8D2 | duplicaat: zelfde begrip ('een voor beroep vatbaar overheidsbesluit'), andere GUID; domeinspecifiek |
+
+Geen van beide GUID's is primair in de zin van het element: Beschikking is domeinoverstijgend (besluit redacteur 2026-09-30). De GUID van Generiek Jeugd en Wmo blijft de koppeling zolang het GGM geen domeinoverstijgende entiteit kent.
 
 ## GEMMA
 
 Match **sterk** met GEMMA-element Beschikking (business-object). Nieuw in dit model: een herkenbare definitie.
+
+## Generalisatie
+
+Besluit → Beschikking → Vergunning. [Besluit](besluit.md) omvat ook besluiten van algemene strekking; Beschikking is het besluit voor een concreet geval; [Vergunning](vergunning.md) is de beschikking die toestemming geeft voor een handeling.
 
 ## Specialisaties
 
@@ -157,6 +164,7 @@ Met eigen pagina: [Vergunning](vergunning.md). Zonder eigen pagina, uit de lijkb
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
+| specialisatie | [Besluit](besluit.md) | is een | | bron | | 2026-rijk-algemene-wet-bestuursrecht-wettekst (art. 1:3 lid 2) |
 | associatie (gericht) | [Grafrecht](../../7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | doet vervallen (verklaring van verwaarlozing) | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 28 lid 6) |
 
 ## Bronnen
@@ -164,13 +172,8 @@ Met eigen pagina: [Vergunning](vergunning.md). Zonder eigen pagina, uit de lijkb
 - Gemeentelijk Gegevensmodel 2.5.1 (2026-vng-ggm-2-5-1)
 - [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
-
-## Ter discussie
-
-- Nieuw generiek element, voorgesteld als breder begrip voor de lijkbezorgingsbesluiten (besluit redacteur 2026-09-30: generieke map 0 Bestuur en Ondersteuning / Besluitvorming).
-- Keuze van de primaire GGM-GUID bij het duplicaat (Generiek Jeugd en Wmo, zoals GEMMA; of Diensten).
-- Het GGM kent ook Besluit (RGBZPlus, Diensten) als bredere generalisatie; die is in deze run niet voorgesteld.
+- [Algemene wet bestuursrecht](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
 
 ## Terugmelding GGM
 
-Zie [GGM-terugmeldingen](../../../../analyses/ggm-terugmeldingen.md), nummer 5.
+Zie [GGM-terugmeldingen](../../../../analyses/ggm-terugmeldingen.md), nummers 5 en 8.

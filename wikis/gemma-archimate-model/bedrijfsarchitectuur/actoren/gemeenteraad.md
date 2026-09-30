@@ -1,16 +1,18 @@
 ---
 id: gemeenteraad
 type: actor
-status: kandidaat
+status: goedgekeurd
 naam: Gemeenteraad
 archimate_type: business-actor
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-definitie: Het hoogste bestuursorgaan van de gemeente, gekozen door de inwoners.
+- 2024-rijk-gemeentewet-wettekst
+definitie: Bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt
+  en de gemeentelijke verordeningen vaststelt.
 synoniemen:
 - naam: Raad
-  context: beleid
+  context: wet
 grondslag: bron
 match:
   ggm: geen
@@ -107,7 +109,4 @@ Match **exact** met GEMMA-element Gemeenteraad (business-actor). Geen wijziging 
 ## Bronnen
 
 - [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
-
-## Ter discussie
-
-- De definitie beschrijft wat de partij is, los van de lijkbezorging. De bronnen van dit onderwerp geven alleen onderwerpgebonden taal; de definitie steunt op de Gemeentewet, die nog geen bron in deze wiki is. 🔍 Verificatie nodig: Gemeentewet als bron opnemen of de definitie bevestigen.
+- [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)

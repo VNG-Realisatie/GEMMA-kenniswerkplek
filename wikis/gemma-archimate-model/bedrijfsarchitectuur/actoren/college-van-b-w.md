@@ -1,13 +1,14 @@
 ---
 id: college-van-b-w
 type: actor
-status: kandidaat
+status: goedgekeurd
 naam: College van B&W
 archimate_type: business-actor
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2024-rijk-gemeentewet-wettekst
 definitie: Dagelijks bestuur van de gemeente, bestaande uit de burgemeester en de
   wethouders.
 synoniemen:
@@ -119,7 +120,4 @@ Match **exact** met GEMMA-element College (business-actor). Geen wijziging ten o
 
 - [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
-
-## Ter discussie
-
-- De definitie beschrijft wat de partij is, los van de lijkbezorging. De bronnen van dit onderwerp geven alleen onderwerpgebonden taal; de definitie steunt op de Gemeentewet, die nog geen bron in deze wiki is. 🔍 Verificatie nodig: Gemeentewet als bron opnemen of de definitie bevestigen.
+- [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)

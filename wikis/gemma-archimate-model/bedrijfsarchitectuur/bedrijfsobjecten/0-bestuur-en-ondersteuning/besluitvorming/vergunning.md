@@ -1,7 +1,7 @@
 ---
 id: vergunning
 type: bedrijfsobject
-status: kandidaat
+status: goedgekeurd
 naam: Vergunning
 archimate_type: business-object
 onderwerp: lijkbezorging
@@ -126,8 +126,3 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 - [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
-
-## Ter discussie
-
-- Nieuw generiek tussenniveau tussen Beschikking en de lijkbezorgingsvergunningen (besluit redacteur 2026-09-30). GGM en GEMMA kennen geen generieke Vergunning, wel onderwerpvergunningen (Omgevingsvergunning, Parkeervergunning); die kunnen later als specialisatie aan dit element worden gekoppeld.
-- Verlof tot begraving of crematie is als specialisatie zonder pagina opgenomen (besluit redacteur 2026-09-30); het is de meest voorkomende toestemming in de lijkbezorging.

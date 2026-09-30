@@ -1,14 +1,15 @@
 ---
 id: burgemeester
 type: actor
-status: kandidaat
+status: goedgekeurd
 naam: Burgemeester
 archimate_type: business-actor
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2024-rijk-gemeentewet-wettekst
 definitie: Bestuursorgaan van de gemeente, voorzitter van gemeenteraad en college,
-  benoemd door de Kroon.
+  benoemd bij koninklijk besluit.
 grondslag: bron
 match:
   ggm: geen
@@ -100,7 +101,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 ## Bronnen
 
 - [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
-
-## Ter discussie
-
-- De definitie beschrijft wat de partij is, los van de lijkbezorging. De bronnen van dit onderwerp geven alleen onderwerpgebonden taal; de definitie steunt op de Gemeentewet, die nog geen bron in deze wiki is. 🔍 Verificatie nodig: Gemeentewet als bron opnemen of de definitie bevestigen.
+- [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)

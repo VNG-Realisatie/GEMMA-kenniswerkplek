@@ -8,11 +8,16 @@ bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-wet-op-de-lijkbezorging
 - 2026-vng-retributies
-conclusie: '100 begrippen beoordeeld (run 2026-09-29T2158-1752, herbeoordeling na
-  de nieuwe criteria): 41 elementen, waarvan 5 generiek (Beschikking, Vergunning,
-  Heffing, Heffingsverordening, Regeling); de overige begrippen zijn specialisatie,
-  eigenschap of onderdeel zonder pagina, of vallen buiten scope of buiten het model.
-  Vijf GGM-terugmeldingen.'
+- 2024-rijk-gemeentewet-wettekst
+- 2026-rijk-wet-publieke-gezondheid-wettekst
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- 2026-rijk-bw2-rechtspersonen
+- 2026-rvo-aangifte-en-akte-van-overlijden
+conclusie: '100 begrippen beoordeeld (run 2026-09-29T2158-1752), aangevuld in run
+  2026-09-30T1144-3c57: 42 elementen, waarvan 6 generiek (Besluit, Beschikking, Vergunning,
+  Heffing, Heffingsverordening, Regeling); Gemeente is een rol. De overige begrippen
+  zijn specialisatie, eigenschap of onderdeel zonder pagina, of vallen buiten scope
+  of buiten het model. Acht GGM-terugmeldingen.'
 bijgewerkt: '2026-09-30'
 ---
 
@@ -45,10 +50,11 @@ Wat de gemeente ziet, doet en beslist rond de lijkbezorging: lijkschouw door de 
 | Maatregel bij besmet lijk | specialisatie zonder pagina van [Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | Variant van een breder begrip (5/5) | wet | — |
 | Vergunning verstrooiingsterrein | specialisatie zonder pagina van [Vergunning](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | Variant van een breder begrip (5/5) | wet | — |
 | Vergunning grafbedekking | specialisatie zonder pagina van [Vergunning](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | Variant van een breder begrip (5/5) | wet | — |
-| [Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | business-object (kandidaat) | Passief (5/5) | wet | Beschikking |
-| [Vergunning](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | business-object (kandidaat) | Passief (5/5) | wet | — |
-| [Heffing](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) | business-object (kandidaat) | Passief (5/5) | wet | Heffing |
-| [Heffingsverordening](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) | business-object (kandidaat) | Passief (5/5) | wet | Heffingsverordening |
+| [Besluit](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md) | business-object (review) | Passief (5/5); breder begrip boven Beschikking (besluit redacteur 2026-09-30) | wet | Besluit |
+| [Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | business-object (review) | Passief (5/5) | wet | Beschikking |
+| [Vergunning](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | business-object (review) | Passief (5/5) | wet | — |
+| [Heffing](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) | business-object (review) | Passief (5/5) | wet | Heffing |
+| [Heffingsverordening](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) | business-object (review) | Passief (5/5) | wet | Heffingsverordening |
 | [Regeling](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) | business-object (kandidaat) | Passief (5/5) | wet | — |
 | [Gemeentebegrafenis](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md) | business-object (review) | Passief (5/5) | wet | Gemeentebegrafenis |
 | [Begraafplaats](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | business-object (review) | Passief (5/5) | wet | — |
@@ -75,7 +81,7 @@ Wat de gemeente ziet, doet en beslist rond de lijkbezorging: lijkschouw door de 
 | Vrije-veldgraf | specialisatie zonder pagina van [Graf](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | Variant van een breder begrip (4/5, ontbreekt: *relaties*) | wet | — |
 | Grafkelder | onderdeel of deelstap van [Graf](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | Onderdeel of deelstap van een ander begrip | wet | — |
 | Grafruimte | onderdeel of deelstap van [Graf](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | Onderdeel of deelstap van een ander begrip | wet | — |
-| [Grafrecht](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | business-object (kandidaat) | Passief (5/5) | wet | — |
+| [Grafrecht](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | contract (kandidaat) | Passief, afspraak (5/5) | wet | — |
 | Overschrijving van het grafrecht | onderdeel of deelstap van [Grafrecht](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | Onderdeel of deelstap van een ander begrip | wet | — |
 | Afstand van het grafrecht | onderdeel of deelstap van [Grafrecht](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | Onderdeel of deelstap van een ander begrip | wet | — |
 | [Verval van het grafrecht](../bedrijfsarchitectuur/bedrijfsgebeurtenissen/verval-van-het-grafrecht.md) | business-event (review) | Gedrag, *toestandsverandering* (2/2) | wet | — |
@@ -108,15 +114,15 @@ Wat de gemeente ziet, doet en beslist rond de lijkbezorging: lijkschouw door de 
 | [Overlijden](../bedrijfsarchitectuur/bedrijfsgebeurtenissen/overlijden.md) | business-event (review) | Gedrag, *toestandsverandering* (2/2) | wet | — |
 | Gemeentelijke dienstverlening rond overlijden | buiten dit model (Grouping (verzamelterm in de VNG-bron)) | Buiten de kernlagen van dit model | beleid | — |
 | Nieuwe vormen van lijkbezorging | buiten scope | herkenbaar: nee | beleid | — |
-| [Burgemeester](../bedrijfsarchitectuur/actoren/burgemeester.md) | business-actor (kandidaat) | Handelende partij (2/2) | wet | — |
-| [College van B&W](../bedrijfsarchitectuur/actoren/college-van-b-w.md) | business-actor (kandidaat) | Handelende partij (2/2) | wet | — |
-| [Gemeenteraad](../bedrijfsarchitectuur/actoren/gemeenteraad.md) | business-actor (kandidaat) | Handelende partij (2/2) | wet | — |
-| [Gemeente](../bedrijfsarchitectuur/actoren/gemeente.md) | business-actor (kandidaat) | Handelende partij (2/2) | wet | — |
+| [Burgemeester](../bedrijfsarchitectuur/actoren/burgemeester.md) | business-actor (review) | Handelende partij (2/2) | wet | — |
+| [College van B&W](../bedrijfsarchitectuur/actoren/college-van-b-w.md) | business-actor (review) | Handelende partij (2/2) | wet | — |
+| [Gemeenteraad](../bedrijfsarchitectuur/actoren/gemeenteraad.md) | business-actor (review) | Handelende partij (2/2) | wet | — |
+| [Gemeente](../bedrijfsarchitectuur/rollen/gemeente.md) | business-role (review) | Hoedanigheid (3/3); de afzonderlijke gemeenten zijn de actoren (besluit redacteur 2026-09-30) | wet | — |
 | [Kerkgenootschap](../bedrijfsarchitectuur/actoren/kerkgenootschap.md) | business-actor (review) | Handelende partij (2/2) | wet | — |
-| [GGD](../bedrijfsarchitectuur/actoren/ggd.md) | business-actor (kandidaat) | Handelende partij (1/2, ontbreekt: *betekenis in onderwerp*) | wet | — |
+| [GGD](../bedrijfsarchitectuur/actoren/ggd.md) | business-actor (review) | Handelende partij (1/2, ontbreekt: *betekenis in onderwerp*) | wet | — |
 | Officier van justitie | buiten scope | gemeentelijk: nee | wet | — |
 | Gedeputeerde staten | buiten scope | gemeentelijk: nee | wet | — |
-| [Uitvaartondernemer](../bedrijfsarchitectuur/actoren/uitvaartondernemer.md) | business-actor (kandidaat) | Handelende partij (2/2) | wet | — |
+| [Uitvaartondernemer](../bedrijfsarchitectuur/actoren/uitvaartondernemer.md) | business-actor (review) | Handelende partij (2/2) | wet | — |
 | [Houder van de begraafplaats](../bedrijfsarchitectuur/rollen/houder-van-de-begraafplaats.md) | business-role (review) | Partij en hoedanigheid, gebonden aan de verantwoordelijkheid (3/3) | wet | — |
 | [Houder van het crematorium](../bedrijfsarchitectuur/rollen/houder-van-het-crematorium.md) | business-role (review) | Partij en hoedanigheid, gebonden aan de verantwoordelijkheid (3/3) | wet | — |
 | [Houder van een plaats van bijzetting](../bedrijfsarchitectuur/rollen/houder-van-een-plaats-van-bijzetting.md) | business-role (review) | Partij en hoedanigheid, gebonden aan de verantwoordelijkheid (3/3) | wet | — |
@@ -129,5 +135,5 @@ Wat de gemeente ziet, doet en beslist rond de lijkbezorging: lijkschouw door de 
 
 ## Open vragen
 
-- Gemeentewet en Wet publieke gezondheid als bron opnemen voor de definities van burgemeester, college, gemeenteraad, gemeente en GGD.
-- Generieke elementen (Beschikking, Vergunning, Heffing, Heffingsverordening, Regeling) later onderbrengen in een generiek onderwerp.
+- Generieke elementen (Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening, Regeling) later onderbrengen in een generiek onderwerp.
+- Regeling (governance-object) en Graf en Grafrecht (data-object zonder GGM-entiteit) blijven kandidaat: de werkwijze laat nog geen besluit van de redacteur toe om ze op review te zetten.

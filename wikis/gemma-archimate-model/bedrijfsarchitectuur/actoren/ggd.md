@@ -1,14 +1,15 @@
 ---
 id: ggd
 type: actor
-status: kandidaat
+status: goedgekeurd
 naam: GGD
 archimate_type: business-actor
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-definitie: Gezondheidsdienst die gemeenten samen in stand houden voor de publieke
-  gezondheid.
+- 2026-rijk-wet-publieke-gezondheid-wettekst
+definitie: Gezondheidsdienst die de colleges van de gemeenten in een regio via een
+  gemeenschappelijke regeling instellen en in stand houden voor de publieke gezondheid.
 synoniemen:
 - naam: Gemeentelijke gezondheidsdienst
   context: wet
@@ -53,7 +54,7 @@ bijgewerkt: '2026-09-30'
 
 ## Beschrijving
 
-De gemeentelijke gezondheidsdienst adviseert de burgemeester over maatregelen bij een lijk dat besmet is met een infectieus of giftig agens (art. 22a). Gemeenten zijn mede-eigenaar en opdrachtgever van de GGD via een gemeenschappelijke regeling.
+De gemeentelijke gezondheidsdienst adviseert de burgemeester over maatregelen bij een lijk dat besmet is met een infectieus of giftig agens (art. 22a). De colleges van burgemeester en wethouders van de gemeenten in een regio stellen de GGD via een gemeenschappelijke regeling in en houden haar in stand (Wpg art. 14 lid 1); de gemeenten zijn zo mede-eigenaar en opdrachtgever. Actor met 1 van 2 criteria (*betekenis in onderwerp* ontbreekt: alleen advies bij een besmet lijk); behouden op grond van het precedent GGD, besluit redacteur 2026-09-30.
 
 ## Kenmerken
 
@@ -101,8 +102,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 ## Bronnen
 
 - [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
-
-## Ter discussie
-
-- De definitie steunt op de Wet publieke gezondheid (art. 14), die nog geen bron in deze wiki is. 🔍 Verificatie nodig.
-- Actor met 1 van 2 criteria: *betekenis in onderwerp* ontbreekt (alleen advies bij een besmet lijk). Behouden op grond van het precedent GGD (besluit redacteur 2026-09-30).
+- [Wet publieke gezondheid](../../bronanalyses/lijkbezorging/2026-rijk-wet-publieke-gezondheid-wettekst.md)

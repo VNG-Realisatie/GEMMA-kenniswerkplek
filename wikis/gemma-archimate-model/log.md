@@ -82,3 +82,14 @@ verwijderen; de pre-commit-hook weigert dat.
 ## [2026-09-30] promote | gemeentelijke-lijkschouwer | Mark Backer | fa3fa6bf
 ## [2026-09-30] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 6b24a8fd
 ## [2026-09-30] promote | beheerder | Mark Backer | f49fed24
+## [2026-09-30] promote | burgemeester | Mark Backer | 8c5a6a76
+## [2026-09-30] promote | college-van-b-w | Mark Backer | db41ef39
+## [2026-09-30] promote | gemeenteraad | Mark Backer | f0052570
+## [2026-09-30] promote | ggd | Mark Backer | 97449ff8
+## [2026-09-30] promote | uitvaartondernemer | Mark Backer | 8a39f96c
+## [2026-09-30] promote | gemeente | Mark Backer | f9c11886
+## [2026-09-30] promote | beschikking | Mark Backer | 4706980b
+## [2026-09-30] promote | besluit | Mark Backer | 4abf3ff3
+## [2026-09-30] promote | vergunning | Mark Backer | fc7f2548
+## [2026-09-30] promote | heffing | Mark Backer | d971d06e
+## [2026-09-30] promote | heffingsverordening | Mark Backer | 9f1639ca

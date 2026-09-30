@@ -1,7 +1,7 @@
 ---
 id: heffingsverordening
 type: bedrijfsobject
-status: kandidaat
+status: goedgekeurd
 naam: Heffingsverordening
 archimate_type: business-object
 onderwerp: lijkbezorging
@@ -11,6 +11,7 @@ bronnen:
 - 2026-vng-ggm-2-5-1
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-retributies
+- 2024-rijk-gemeentewet-wettekst
 definitie: Door de gemeenteraad vastgestelde verordening over de heffing en invordering
   van gemeentelijke belastingen of rechten.
 grondslag: ggm-entiteit
@@ -143,7 +144,4 @@ Match **sterk** met GEMMA-element Heffingsverordening (business-object). Nieuw i
 - Gemeentelijk Gegevensmodel 2.5.1 (2026-vng-ggm-2-5-1)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
 - [Retributies (VNG), paragraaf Lijkbezorgingsrechten](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md)
-
-## Ter discussie
-
-- Nieuw generiek element (besluit redacteur 2026-09-30). Het GGM plaatst de entiteit in 1 Veiligheid en Vergunningen (leges); dit element staat generiek onder Belastingen.
+- [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)

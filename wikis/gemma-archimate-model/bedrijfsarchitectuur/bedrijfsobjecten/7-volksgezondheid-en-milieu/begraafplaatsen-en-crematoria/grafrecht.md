@@ -3,7 +3,7 @@ id: grafrecht
 type: bedrijfsobject
 status: kandidaat
 naam: Grafrecht
-archimate_type: business-object
+archimate_type: contract
 onderwerp: lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
@@ -48,7 +48,7 @@ kenmerken:
   onderscheidbare_exemplaren: ja
   levenscyclus: ja
   wordt_bewerkt: ja
-  afspraak: nee
+  afspraak: ja
   waarneembare_vorm: nee
   geautomatiseerd_verwerkt: ja
 bijgewerkt: '2026-09-30'
@@ -58,7 +58,7 @@ bijgewerkt: '2026-09-30'
 
 ## Beschrijving
 
-Het grafrecht wordt schriftelijk gevestigd, voor onbepaalde tijd of voor ten minste tien jaar, en op verzoek verlengd (art. 28). De gemeente verleent het op aanvraag, voor 30 jaar bij een particulier graf of 5 tot 30 jaar bij een urnengraf (Groningen art. 16). Het recht kan worden overgeschreven op een partner of verwant (Groningen art. 18), de rechthebbende kan er afstand van doen (art. 19), en het vervalt door verloop van de termijn of wordt vervallen verklaard, bijvoorbeeld bij verwaarlozing of niet-betalen (art. 28 lid 4–6; Groningen art. 20). Overschrijving en afstand zijn stappen in de levenscyclus van het grafrecht, geen eigen elementen.
+Het grafrecht wordt schriftelijk gevestigd, voor onbepaalde tijd of voor ten minste tien jaar, en op verzoek verlengd (art. 28). De gemeente verleent het op aanvraag, voor 30 jaar bij een particulier graf of 5 tot 30 jaar bij een urnengraf (Groningen art. 16). Het recht kan worden overgeschreven op een partner of verwant (Groningen art. 18), de rechthebbende kan er afstand van doen (art. 19), en het vervalt door verloop van de termijn of wordt vervallen verklaard, bijvoorbeeld bij verwaarlozing of niet-betalen (art. 28 lid 4–6; Groningen art. 20). Overschrijving en afstand zijn stappen in de levenscyclus van het grafrecht, geen eigen elementen. Het grafrecht is een contract (besluit redacteur 2026-09-30): het legt de rechten en plichten van houder en rechthebbende vast, ook als de gemeente het in de vorm van een besluit op aanvraag verleent.
 
 ## Kenmerken
 
@@ -89,7 +89,7 @@ Het grafrecht wordt schriftelijk gevestigd, voor onbepaalde tijd of voor ten min
 | onderscheidbare exemplaren | ja | Per particulier graf een recht, met een rechthebbende. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
 | levenscyclus | ja | Verleend, verlengd, overgeschreven, vervallen (art. 28; Groningen art. 16–20). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
 | wordt bewerkt | ja | Het college verleent, verlengt, schrijft over en verklaart vervallen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| afspraak | nee | Eenzijdig door het college verleend op aanvraag (Groningen art. 16; wet art. 28 'gevestigd'), geen tweezijdige overeenkomst; een gemeente kan het ook privaatrechtelijk vormgeven (art. 28 'welke vorm aan dit recht ook wordt gegeven'). |  |
+| afspraak | ja | Besluit redacteur 2026-09-30: een tweezijdige afspraak tussen houder en rechthebbende, met rechten (uitsluitend recht op het graf, art. 28) en plichten (onderhoud, retributie; Groningen art. 16, 18-20, 23). De wet laat de vorm vrij (art. 28 lid 1: 'welke vorm aan dit recht ook wordt gegeven'). | 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
 | waarneembare vorm | nee | Geen document of formulier. |  |
 | geautomatiseerd verwerkt | ja | Gegevens per grafrecht: rechthebbende, graf, ingangsdatum, termijn. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
 
@@ -110,8 +110,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 ## Ter discussie
 
-- Data-object zonder GGM-entiteit. Voorgesteld als GGM-hiaat (terugmelding 4).
-- Contract of bedrijfsobject: de wet laat de vorm vrij ('welke vorm aan dit recht ook wordt gegeven', art. 28 lid 1). De beheersverordening laat het college het recht verlenen op aanvraag (Groningen art. 16); daarom *afspraak*: nee. Een gemeente die het privaatrechtelijk vormgeeft (overeenkomst) maakt er een contract van.
+- Data-object zonder GGM-entiteit (terugmelding 4). De redacteur heeft opname akkoord bevonden (2026-09-30).
+- Goedkeuren kan pas als de werkwijze een besluit van de redacteur toestaat om een data-object zonder GGM-match op review te zetten.
 
 ## Terugmelding GGM
 
