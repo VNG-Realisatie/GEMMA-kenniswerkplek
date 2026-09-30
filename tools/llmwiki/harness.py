@@ -10,9 +10,9 @@ live geverifieerd is.
 from __future__ import annotations
 
 import json
+import os
 import shutil
-import subprocess
-import sys
+import stat
 from pathlib import Path
 
 from . import hashing, paths
@@ -47,33 +47,33 @@ def _hash_dir(source_dir: Path) -> str:
     return hashing.hash_text("\n".join(parts))
 
 
+def _is_junction(path: Path) -> bool:
+    isjunction = getattr(os.path, "isjunction", None)
+    if isjunction is not None:
+        return isjunction(path)
+    if os.name != "nt":
+        return False
+    try:
+        return os.lstat(path).st_reparse_tag == stat.IO_REPARSE_TAG_MOUNT_POINT
+    except (AttributeError, OSError):
+        return False
+
+
 def _remove_existing(target_dir: Path) -> None:
     if target_dir.is_symlink() or target_dir.is_file():
         target_dir.unlink()
+    elif _is_junction(target_dir):
+        # Oude Windows-bruggen waren junctions. Verwijder alleen de ingang;
+        # rmtree weigert junctions en de canonieke doelmap mag niet worden geraakt.
+        target_dir.rmdir()
     elif target_dir.exists():
         shutil.rmtree(target_dir)
 
 
 def bridge_skill(source_dir: Path, target_dir: Path) -> str:
-    """Symlink -> Windows-junction -> kopie + .bridge-source.json. Geeft de
-    gebruikte methode terug ('symlink', 'junction' of 'copy')."""
+    """Kopieer een canonieke skill naar een harness-brug met bronmetadata."""
     _remove_existing(target_dir)
     target_dir.parent.mkdir(parents=True, exist_ok=True)
-
-    try:
-        target_dir.symlink_to(source_dir, target_is_directory=True)
-        return "symlink"
-    except OSError:
-        pass
-
-    if sys.platform == "win32":
-        result = subprocess.run(
-            ["cmd", "/c", "mklink", "/J", str(target_dir), str(source_dir)],
-            capture_output=True, text=True, check=False,
-        )
-        if result.returncode == 0:
-            return "junction"
-
     shutil.copytree(source_dir, target_dir)
     (target_dir / ".bridge-source.json").write_text(
         json.dumps({"source": str(source_dir), "hash": _hash_dir(source_dir)}, indent=2),
@@ -83,19 +83,14 @@ def bridge_skill(source_dir: Path, target_dir: Path) -> str:
 
 
 def _check_bridge(source_dir: Path, target_dir: Path) -> str | None:
-    if target_dir.is_symlink():
-        try:
-            if target_dir.resolve() != source_dir.resolve():
-                return f"Brug wijst naar het verkeerde doel: {target_dir}"
-        except OSError:
-            return f"Brug is een kapotte symlink: {target_dir}"
-        return None
     if not target_dir.exists():
         return f"Brug ontbreekt: {target_dir}"
     marker = target_dir / ".bridge-source.json"
     if not marker.exists():
-        return f"Brug is geen symlink en heeft geen .bridge-source.json: {target_dir}"
+        return f"Brug is geen beheerde kopie en heeft geen .bridge-source.json: {target_dir}"
     info = json.loads(marker.read_text(encoding="utf-8"))
+    if info.get("source") != str(source_dir):
+        return f"Brug verwijst naar de verkeerde canonieke bron: {target_dir}"
     if info.get("hash") != _hash_dir(source_dir):
         return f"Verouderde kopie: {target_dir} (bron gewijzigd sinds kopiëren)"
     return None

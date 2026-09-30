@@ -45,12 +45,23 @@ def test_sync_then_check_is_clean(harness_repo):
     assert harness.check(root) == []
 
 
-def test_sync_creates_real_symlink_bridge(harness_repo):
+def test_sync_creates_managed_copy_bridge(harness_repo):
     root, wiki_root = harness_repo
     harness.sync(root)
     bridge = root / ".claude" / "skills" / "wiki-update"
-    assert bridge.is_symlink()
-    assert bridge.resolve() == (root / ".agents" / "skills" / "wiki-update").resolve()
+    assert not bridge.is_symlink()
+    assert (bridge / "SKILL.md").exists()
+    marker = json.loads((bridge / ".bridge-source.json").read_text(encoding="utf-8"))
+    assert marker["source"] == str(root / ".agents" / "skills" / "wiki-update")
+    assert marker["hash"]
+
+
+def test_remove_existing_uses_rmdir_for_legacy_junction_shape(tmp_path, monkeypatch):
+    bridge = tmp_path / "oude-brug"
+    bridge.mkdir()
+    monkeypatch.setattr(harness, "_is_junction", lambda path: Path(path) == bridge)
+    harness._remove_existing(bridge)
+    assert not bridge.exists()
 
 
 def test_mcp_config_generated_for_sync_wiki(harness_repo):
@@ -80,40 +91,25 @@ def test_check_detects_claude_md(harness_repo):
     assert any("CLAUDE.md" in p for p in problems)
 
 
-def test_bridge_falls_back_to_copy_when_symlink_unavailable(harness_repo, monkeypatch):
+def test_check_accepts_valid_copy_bridge(harness_repo):
     root, wiki_root = harness_repo
-
-    def _broken_symlink(self, target, target_is_directory=False):
-        raise OSError("symlinks disabled")
-
-    monkeypatch.setattr(Path, "symlink_to", _broken_symlink)
-    harness.sync(root)
-
-    bridge = root / ".claude" / "skills" / "wiki-update"
-    assert not bridge.is_symlink()
-    assert bridge.is_dir()
-    assert (bridge / ".bridge-source.json").exists()
-    assert (bridge / "SKILL.md").exists()
-
-
-def test_check_accepts_valid_copy_bridge(harness_repo, monkeypatch):
-    root, wiki_root = harness_repo
-
-    def _broken_symlink(self, target, target_is_directory=False):
-        raise OSError("symlinks disabled")
-
-    monkeypatch.setattr(Path, "symlink_to", _broken_symlink)
     harness.sync(root)
     assert harness.check(root) == []
 
 
-def test_check_detects_stale_copy_bridge(harness_repo, monkeypatch):
+def test_check_detects_copy_from_wrong_canonical_source(harness_repo):
     root, wiki_root = harness_repo
+    harness.sync(root)
+    marker_path = root / ".claude" / "skills" / "wiki-update" / ".bridge-source.json"
+    marker = json.loads(marker_path.read_text(encoding="utf-8"))
+    marker["source"] = str(root / ".agents" / "skills" / "andere-bron")
+    marker_path.write_text(json.dumps(marker), encoding="utf-8")
+    problems = harness.check(root)
+    assert any("verkeerde canonieke bron" in p for p in problems)
 
-    def _broken_symlink(self, target, target_is_directory=False):
-        raise OSError("symlinks disabled")
 
-    monkeypatch.setattr(Path, "symlink_to", _broken_symlink)
+def test_check_detects_stale_copy_bridge(harness_repo):
+    root, wiki_root = harness_repo
     harness.sync(root)
 
     # Bron wijzigt na het kopiëren.

@@ -45,7 +45,7 @@ Dit document gebruikt uitsluitend de volgende termen in de opgegeven betekenis: 
 |---|---|---|
 | Werkmap | Generiek werk vanuit de repository-root, specifiek werk vanuit een wiki-map; wiki-map komt vaker voor | Beide werkmappen moeten volwaardig werken; de wiki-map is het primaire ontwerppunt |
 | Harness-pariteit | Volledige pariteit | Elke Workflow moet in Claude Code, OpenCode, VS Code/Copilot, Cursor en Codex op dezelfde manier starten en dezelfde Resultaten opleveren. Waar een harness een voorziening mist, is een minimale brug nodig |
-| Symlinks | Onbekend of beschikbaar | Geen symlinks in Git. Lokale koppelingen alleen via script met terugval op kopiëren |
+| Skill-brug | Kopieën vanuit één canonieke bron | Geen symlinks of junctions. Lokale kopieën worden alleen via het script gegenereerd en op bronhash gecontroleerd |
 | PUBLISH | Altijd menselijke gate, zonder terminalcodes; per wiki kiesbaar tussen vrijgave via document (smaak A) of via bevestigingswoord in de chat (smaak B); geldt ook voor architectuurmodel-export | Akkoord van de redacteur plus een goedkeuringsklik in het harness (5.13) |
 | Tussenresultaten | Kladblok persistent op schijf, niet in Git, na afronding automatisch opgeruimd | Run-directory per wiki, gitignored, met bewaartermijn (5.11) |
 | Blijvende vastlegging | Bronverslag en logboek in Git, niet op MediaWiki | Bronverslag in centrale bronindex (5.19); logboek in `log.md` (alle soorten); bij curatie zijn de pagina's zelf ook archief |
@@ -91,7 +91,7 @@ Skills:
 
 | Harness | Project-locaties | Bovenliggende directories | Naamconflicten |
 |---|---|---|---|
-| Claude Code | [Verified] `.claude/skills/` | [Verified] Werkmap en alle ouders tot repository-root; geneste `.claude/skills/` onder de werkmap laden bij eerste bestandstoegang | [Verified] Root en genest blijven beide beschikbaar; geneste variant krijgt gekwalificeerde naam zoals `/apps/web:deploy`. [Verified] Leest niets onder `.agents/`. [Verified] Een skill-map mag een symlink zijn; hetzelfde doel wordt één keer geladen |
+| Claude Code | [Verified] `.claude/skills/` | [Verified] Werkmap en alle ouders tot repository-root; geneste `.claude/skills/` onder de werkmap laden bij eerste bestandstoegang | [Verified] Root en genest blijven beide beschikbaar; geneste variant krijgt gekwalificeerde naam zoals `/apps/web:deploy`. [Verified] Leest niets onder `.agents/`. De brug kopieert daarom canonieke skills naar deze locatie |
 | Codex | [Verified] `.agents/skills/` | [Verified] Werkmap tot repository-root | [Verified] Niet samengevoegd; beide verschijnen in selectors |
 | OpenCode | [Verified] `.opencode/skills/`, `.claude/skills/`, `.agents/skills/` | [Verified] Omhoog tot de Git-worktree | [Verified] Namen moeten uniek zijn over alle locaties |
 | VS Code/Copilot | [Verified] `.github/skills/`, `.claude/skills/`, `.agents/skills/`, plus `chat.agentSkillsLocations` | [Verified] Via `chat.useCustomizationsInParentRepositories` | [Speculative] Niet gedocumenteerd |
@@ -456,15 +456,9 @@ Rangorde bij tegenstrijdigheid, vastgelegd in de root-AGENTS.md: repository-veil
 
 [Verified] Codex, OpenCode, VS Code en Cursor lezen deze locatie. [Verified] Claude Code niet.
 
-**Brug voor Claude Code.** `llmwiki harness sync` maakt voor elke skill in een canonieke `.agents/skills/` een ingang in de naastgelegen `.claude/skills/`, in deze volgorde van voorkeur:
+**Brug voor Claude Code.** `llmwiki harness sync` maakt voor elke skill in een canonieke `.agents/skills/` een beheerde kopie in de naastgelegen `.claude/skills/`. Elke kopie bevat een `.bridge-source.json` met de canonieke bron en bronhash. `llmwiki harness check` meldt ontbrekende, onbeheerde en verouderde kopieën. De brugmappen staan in `.gitignore` en worden uitsluitend vanuit de canonieke bron opnieuw opgebouwd.
 
-1. Symlink naar de skill-directory (Linux, macOS, Windows met Developer Mode).
-2. Directory junction op Windows zonder Developer Mode. [Inferred] Junctions vereisen geen extra rechten; [Speculative] of Claude Code een junction als symlink behandelt, moet worden geverifieerd.
-3. Kopie, met een `.bridge-source`-bestand dat de bron en een hash vastlegt. `llmwiki harness check` meldt verouderde kopieën.
-
-De brugmappen staan in `.gitignore`. Er staan dus nooit symlinks in Git, wat [Verified] het Windows-probleem met `core.symlinks` vermijdt.
-
-Waarom niet andersom (canoniek in `.claude/skills/`, brug voor Codex): beide richtingen vereisen één brug. `.agents/skills/` is leverancier-neutraal, wordt door agentskills.io aanbevolen en door vier van de vijf harnesses gelezen. [Verified] Claude Code documenteert expliciet ondersteuning voor symlinked skill-mappen en laadt één doel maar één keer.
+Waarom niet andersom (canoniek in `.claude/skills/`, brug voor Codex): beide richtingen vereisen één brug. `.agents/skills/` is leverancier-neutraal, wordt door agentskills.io aanbevolen en door vier van de vijf harnesses gelezen. Kopiëren vanuit die ene bron voorkomt platformafhankelijke symlink- en junctionsemantiek.
 
 Waarom geen Claude Code-plugin als brug: [Verified] een skills-directory-plugin laadt alleen vanuit de primaire werkmap en niet vanuit bovenliggende mappen; skills krijgen dan een plugin-prefix (`/plugin:skill`), zodat de naam in Claude Code afwijkt van de naam in de andere harnesses. Dat breekt pariteit.
 
@@ -1073,7 +1067,7 @@ Bij de eerste Vraag in een Sessie, vóór inhoudelijk werk:
 | Controle | `--fix` doet | Anders: melding aan gebruiker |
 |---|---|---|
 | Python-omgeving aanwezig en actueel | `uv sync` | — |
-| Brug aanwezig en actueel | `harness sync` (symlink, junction of kopie) | — |
+| Brug aanwezig en actueel | `harness sync` (beheerde kopie met bronhash) | — |
 | Geen CLAUDE.md of CLAUDE.local.md op een wiki-pad | — | Uitleg dat dit bestand de wiki-Rules uitschakelt, met voorstel het te hernoemen |
 | Credentials voor deze wiki (alleen namen, nooit waarden) | — | Welke variabele ontbreekt en hoe je die instelt op dit besturingssysteem |
 | Commando voor de MCP-server beschikbaar (bijv. `npx`) | — | Welk programma ontbreekt |
@@ -1083,7 +1077,7 @@ Bij de eerste Vraag in een Sessie, vóór inhoudelijk werk:
 
 Uitvoer: een korte tekst in gewone taal en, met `--json`, een machineleesbare status (`ok`, `herstelbaar`, `actie gebruiker`) voor de Agent. `workspace-check` zonder `--fix` wijzigt niets en is in de permissies vooraf toegestaan, zodat de eerste controle geen goedkeuringsvraag oplevert.
 
-**Windows zonder rechten.** De brug valt terug op een junction of kopie (5.7), dus ontbrekende symlink-rechten blokkeren nooit. `workspace-check` meldt Developer Mode alleen als optionele verbetering (kopieën moeten na wijziging van Skills opnieuw worden bijgewerkt), met één link die de juiste instellingenpagina opent: `ms-settings:developers`. [Inferred] Deze URI opent op Windows 10 en 11 de pagina met ontwikkelaarsinstellingen.
+**Platformonafhankelijke brug.** De brug gebruikt op ieder besturingssysteem beheerde kopieën (5.7), zodat symlinkrechten en Windows Developer Mode geen rol spelen. Na wijziging van een canonieke skill meldt `workspace-check` de verouderde kopie en kan `--fix` haar opnieuw opbouwen.
 
 **Herladen na eerste inrichting.** [Verified] Claude Code ziet een skills-map die bij de start van de Sessie nog niet bestond pas na `/reload-skills`; [Verified] Codex adviseert een herstart als een nieuwe Skill niet verschijnt. `workspace-check` meldt daarom na het aanmaken van de brug per harness wat de gebruiker moet doen. De Agent zegt dat de Skills beschikbaar zijn, niet dat ze geladen zijn: of een Skill in de Context wordt geladen, beslist het harness.
 
@@ -1334,7 +1328,7 @@ Afgewezen: één catalogusbestand (geen ruimte voor tekst, conflicten, alles lad
 
 | Risico | Maatregel |
 |---|---|
-| Symlinks in Git | Geen; brug lokaal via symlink, junction of kopie |
+| Symlinks in Git | Geen; de lokale brug bestaat uit beheerde kopieën |
 | Regeleinden | `.gitattributes`: `* text=auto eol=lf`; binaire bronnen expliciet `binary` |
 | Hoofdletterongevoelige bestandssystemen, verboden tekens, gereserveerde namen | Titelmapping met hash-suffix (5.13) |
 | Padlengte Windows | Korte mapnamen; `git config core.longpaths true` in README |
@@ -1344,7 +1338,7 @@ Afgewezen: één catalogusbestand (geen ruimte voor tekst, conflicten, alles lad
 | Credentials | Omgevingsvariabelen; geen paden naar gebruikersmappen in Git |
 | Grote bronbestanden | Git LFS voor binaire bronnen boven een drempel |
 
-[Inferred] Met deze maatregelen ziet de repository er na `git clone`, `uv sync` en `llmwiki harness sync` op elk OS hetzelfde uit; alleen de gitignored brug verschilt in techniek (symlink, junction of kopie), niet in inhoud.
+[Inferred] Met deze maatregelen ziet de repository er na `git clone`, `uv sync` en `llmwiki harness sync` op elk OS hetzelfde uit; de gitignored brug gebruikt overal dezelfde kopietechniek en inhoud.
 
 ### 6.2 Harness-portability
 
@@ -1410,7 +1404,6 @@ Punten gemarkeerd als [Speculative] die de architectuur raken:
 |---|---|---|---|
 | V1 | Laadt OpenCode bij starten in `wikis/gemma` ook de root-AGENTS.md? | Vraag in een nieuwe Sessie: "welke instructiebestanden zijn geladen?" | Geen: `instructions` in `opencode.json` dekt dit al |
 | V2 | Vindt Cursor bij openen van alleen `wikis/gemma` root-skills en root-AGENTS.md? | Open map, controleer Customize > Skills | Activeer `--cursor-wiki-root`-brug |
-| V3 | Behandelt Claude Code een Windows-junction als symlinked skill-map? | `llmwiki harness sync` op Windows zonder Developer Mode, daarna `/skills` | Val terug op kopie |
 | V4 | Hoe gaan VS Code en Cursor om met identieke skills in `.agents/skills/` en `.claude/skills/`? | Beide aanwezig, controleer skill-lijst | Brug alleen op Claude Code-machines of VS Code `chat.agentSkillsLocations` beperken |
 | V5 | Vraagt elk harness bij een 'ask'-regel op `publish apply` altijd om goedkeuring, ook in modi met automatische goedkeuring? | Laat de Agent `publish apply` aanroepen in een testwiki, eerst in de standaardmodus, daarna in de auto-approve-modus van dat harness | Spelregel "automatische goedkeuring uit bij publiceren" is dan de enige bescherming voor smaak B; overweeg voor dat harness alleen smaak A, en voor Claude Code de MCP-variant met `anthropic/requiresUserInteraction` |
 | V6 | Exacte veldnamen MCP-config OpenCode, VS Code, Cursor | Generator-uitvoer laden, server moet verbinden | Generator aanpassen |
