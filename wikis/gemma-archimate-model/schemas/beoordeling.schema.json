@@ -40,6 +40,13 @@
         "toestandsverandering",
         "aangeboden_gedrag",
         "gezamenlijk_gedrag",
+        "toegewezen_partij",
+        "gebruikt_objecten",
+        "aanleiding",
+        "benoembaar_resultaat",
+        "herhaald_uitgevoerd",
+        "eigen_normering",
+        "stabiel_over_tijd",
         "onderscheidbare_exemplaren",
         "levenscyclus",
         "wordt_bewerkt",
@@ -112,6 +119,27 @@
           "$ref": "#/$defs/antwoord"
         },
         "gezamenlijk_gedrag": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "toegewezen_partij": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "gebruikt_objecten": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "aanleiding": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "benoembaar_resultaat": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "herhaald_uitgevoerd": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "eigen_normering": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "stabiel_over_tijd": {
           "$ref": "#/$defs/antwoord"
         },
         "onderscheidbare_exemplaren": {
@@ -202,6 +230,13 @@
         "toestandsverandering",
         "aangeboden_gedrag",
         "gezamenlijk_gedrag",
+        "toegewezen_partij",
+        "gebruikt_objecten",
+        "aanleiding",
+        "benoembaar_resultaat",
+        "herhaald_uitgevoerd",
+        "eigen_normering",
+        "stabiel_over_tijd",
         "onderscheidbare_exemplaren",
         "levenscyclus",
         "wordt_bewerkt",
@@ -337,6 +372,48 @@
           ]
         },
         "gezamenlijk_gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "toegewezen_partij": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gebruikt_objecten": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "aanleiding": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "benoembaar_resultaat": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "herhaald_uitgevoerd": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "eigen_normering": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "stabiel_over_tijd": {
           "enum": [
             "ja",
             "nee"

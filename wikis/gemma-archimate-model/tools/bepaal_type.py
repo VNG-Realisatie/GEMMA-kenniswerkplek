@@ -144,6 +144,40 @@ KENMERKEN: list[Kenmerk] = [
             "Is het gedrag dat alleen door twee of meer partijen samen wordt uitgevoerd?",
             "ArchiMate Business Interaction",
             "Keukentafelgesprek; hoorzitting bezwaarcommissie", "Beschikking opstellen"),
+    # Gedrag (drempel voor proces en functie; nee als het geen gedrag is)
+    Kenmerk("toegewezen_partij", "toegewezen partij", "Gedrag",
+            "Is er een actor of rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? Noem die. "
+            "Nee als het geen gedrag is",
+            "ArchiMate (assignment van actor of rol aan gedrag)",
+            "Ruiming (houder van de begraafplaats)", "Draagvlak creëren (niemand aanwijsbaar)"),
+    Kenmerk("gebruikt_objecten", "gebruikt objecten", "Gedrag",
+            "Leest, maakt of wijzigt het gedrag aanwijsbare bedrijfsobjecten? Noem ze. Nee als het geen gedrag is",
+            "ArchiMate (access van gedrag naar passief element)",
+            "Inspraak (ontwerpbesluit, zienswijze)", "Burgerberaad (geen vast object)"),
+    Kenmerk("aanleiding", "aanleiding", "Gedrag",
+            "Start het door een aanwijsbare gebeurtenis, verzoek of termijn? Noem die. Nee als het geen gedrag is",
+            "ArchiMate (triggering) + GEMMA (procesarchitectuur: een proces start bij een gebeurtenis)",
+            "Overheidsparticipatie (verzoek ingediend)", "Kennisdeling"),
+    Kenmerk("benoembaar_resultaat", "benoembaar resultaat", "Gedrag",
+            "Levert het een concreet, benoembaar resultaat op (besluit, product, verslag, afspraak)? Nee als het geen "
+            "gedrag is",
+            "ArchiMate Business Process (achieves a specific result) + GEMMA (proces levert product of besluit)",
+            "Opgraving (opgegraven lijk)", "Informeren"),
+    Kenmerk("herhaald_uitgevoerd", "herhaald uitgevoerd", "Gedrag",
+            "Wordt het regelmatig en voor verschillende gevallen doorlopen, en is het geen eenmalig project? Nee als "
+            "het geen gedrag is",
+            "GEMMA (proces als herhaalbare werkwijze; tegenhanger van onderscheidbare exemplaren)",
+            "Inspraak (per ontwerpbesluit)", "Invoeren van de participatieverordening (eenmalig)"),
+    Kenmerk("eigen_normering", "eigen normering", "Gedrag",
+            "Gelden er eigen regels, termijnen of bevoegdheden voor, uit wet, verordening of beleidsregel? Noem ze. "
+            "Nee als het geen gedrag is",
+            "GEMMA (proces met eigen spelregels; tegenhanger van levenscyclus)",
+            "Inspraak (afdeling 3.4 Awb)", "Burgerberaad (vormvrij)"),
+    Kenmerk("stabiel_over_tijd", "stabiel over tijd", "Gedrag",
+            "Blijft deze groepering van gedrag bestaan als de organisatie-inrichting of werkwijze verandert? Nee als "
+            "het geen gedrag is",
+            "ArchiMate Business Function (stabiel, los van de organisatie) + GEMMA (bedrijfsfunctiemodel)",
+            "Participatie; belastingheffing", "Projectteam Omgevingswet"),
     # Passief
     Kenmerk("onderscheidbare_exemplaren", "onderscheidbare exemplaren", "Passief",
             "Zijn de afzonderlijke exemplaren van elkaar te onderscheiden?",
@@ -192,7 +226,12 @@ DREMPELS: list[tuple[str, tuple[str, ...], list[str]]] = [
     ("Product", ("product",), BASIS + ["onderscheidbare_exemplaren"]),
     ("Actor", ("actor",), BASIS),
     ("Rol", ("rol",), BASIS + ["meerdere_vervullers"]),
-    ("Proces, Functie, Gebeurtenis, Dienst", ("bedrijfsproces", "bedrijfsfunctie", "bedrijfsgebeurtenis", "bedrijfsdienst"), BASIS),
+    # Bij proces en functie vervangen toegewezen partij en gebruikt objecten het brede kenmerk relaties.
+    ("Proces", ("bedrijfsproces",), ["betekenis_in_onderwerp", "toegewezen_partij", "gebruikt_objecten", "aanleiding",
+                                      "benoembaar_resultaat", "herhaald_uitgevoerd", "eigen_normering"]),
+    ("Functie", ("bedrijfsfunctie",), ["betekenis_in_onderwerp", "toegewezen_partij", "gebruikt_objecten",
+                                        "stabiel_over_tijd"]),
+    ("Gebeurtenis, Dienst", ("bedrijfsgebeurtenis", "bedrijfsdienst"), BASIS),
 ]
 
 # Extra velden in een beoordeling (geen kenmerken): nodig bij bepaalde uitkomsten.

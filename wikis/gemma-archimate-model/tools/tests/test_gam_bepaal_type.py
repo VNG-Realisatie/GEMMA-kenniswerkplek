@@ -28,7 +28,10 @@ ZELFSTANDIG = SCOPE | {"eigen_identiteit", "betekenis_in_onderwerp", "relaties",
 PASSIEF_BO = ZELFSTANDIG | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}
 ACTOR = ZELFSTANDIG | {"handelende_partij", "los_van_verantwoordelijkheid"}
 ROL = ZELFSTANDIG | {"hoedanigheid", "meerdere_vervullers"}
-PROCES = ZELFSTANDIG | {"gedrag", "per_keer_doorlopen"}
+PROCES_DREMPEL = {"toegewezen_partij", "gebruikt_objecten", "aanleiding", "benoembaar_resultaat", "herhaald_uitgevoerd",
+                  "eigen_normering"}
+PROCES = ZELFSTANDIG | {"gedrag", "per_keer_doorlopen"} | PROCES_DREMPEL
+FUNCTIE = ZELFSTANDIG | {"gedrag", "gegroepeerd_gedrag", "toegewezen_partij", "gebruikt_objecten", "stabiel_over_tijd"}
 
 
 def test_regelnummers_stap_1_tot_3_volgen_de_tabel():
@@ -81,7 +84,26 @@ def test_drempel_per_type():
     assert bt.evalueer(beoordeling(ACTOR - {"relaties", "betekenis_in_onderwerp"})).soort == "geen_element"
     assert bt.evalueer(beoordeling(ACTOR - {"relaties"})).paginatype == "actor"
     assert bt.evalueer(beoordeling(ROL - {"meerdere_vervullers", "relaties"})).soort == "geen_element"
-    assert bt.evalueer(beoordeling(PROCES - {"relaties", "betekenis_in_onderwerp"})).soort == "geen_element"
+    assert bt.evalueer(beoordeling(PROCES - {"aanleiding", "betekenis_in_onderwerp"})).soort == "geen_element"
+
+
+def test_drempel_proces_en_functie_rust_op_de_gedragskenmerken():
+    # Proces: zeven criteria, hoogstens één nee; relaties telt niet mee (vervangen door partij en objecten)
+    u = bt.evalueer(beoordeling(PROCES - {"relaties"}))
+    assert u.paginatype == "bedrijfsproces" and "7/7" in u.toelichting
+    u = bt.evalueer(beoordeling(PROCES - {"herhaald_uitgevoerd"}))
+    assert u.paginatype == "bedrijfsproces" and "6/7" in u.toelichting
+    u = bt.evalueer(beoordeling(PROCES - {"herhaald_uitgevoerd", "eigen_normering"}))
+    assert (u.soort, u.voorleggen) == ("geen_element", True)
+    assert set(u.redenen) == {"herhaald uitgevoerd: nee", "eigen normering: nee"}
+    # Alleen de oude twee (betekenis, relaties) volstaan niet meer
+    assert bt.evalueer(beoordeling(ZELFSTANDIG | {"gedrag", "per_keer_doorlopen"})).soort == "geen_element"
+    # Functie: vier criteria
+    assert bt.evalueer(beoordeling(FUNCTIE)).paginatype == "bedrijfsfunctie"
+    assert bt.evalueer(beoordeling(FUNCTIE - {"stabiel_over_tijd"})).paginatype == "bedrijfsfunctie"
+    assert bt.evalueer(beoordeling(FUNCTIE - {"stabiel_over_tijd", "gebruikt_objecten"})).soort == "geen_element"
+    # Gebeurtenis en dienst: ongewijzigd (betekenis, relaties)
+    assert bt.evalueer(beoordeling(ZELFSTANDIG | {"gedrag", "toestandsverandering"})).paginatype == "bedrijfsgebeurtenis"
 
 
 def test_eigen_identiteit_is_harde_poort_voor_alle_typen():
@@ -142,7 +164,7 @@ def test_tegenhanger_zonder_registratietaal():
 
 
 def test_geen_tegenhanger_bij_gedrag():
-    u = bt.evalueer(beoordeling(PASSIEF_BO | {"gedrag", "per_keer_doorlopen"}))
+    u = bt.evalueer(beoordeling(PASSIEF_BO | {"gedrag", "per_keer_doorlopen"} | PROCES_DREMPEL))
     assert u.paginatype == "bedrijfsproces" and u.tegenhanger is None
 
 
@@ -152,7 +174,7 @@ def test_ketenpartner_zonder_structurele_samenwerking_buiten_scope():
 
 
 def test_autonomie_proces_zonder_ggm_kan_review():
-    u = bt.evalueer(beoordeling(ZELFSTANDIG | {"gedrag", "gegroepeerd_gedrag"}))
+    u = bt.evalueer(beoordeling(FUNCTIE))
     assert u.paginatype == "bedrijfsfunctie"
     assert bt.voorgestelde_status(u) == "review"
     data_object = bt.evalueer(beoordeling(PASSIEF_BO | {"geautomatiseerd_verwerkt"}))

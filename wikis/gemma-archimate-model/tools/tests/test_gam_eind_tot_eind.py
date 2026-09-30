@@ -48,7 +48,8 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
 
     # ASSESS: kenmerken → beslistabel
     bo_ja = JA | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}
-    proces_ja = JA | {"gedrag", "per_keer_doorlopen"}
+    proces_ja = JA | {"gedrag", "per_keer_doorlopen", "toegewezen_partij", "gebruikt_objecten", "aanleiding",
+                      "benoembaar_resultaat", "herhaald_uitgevoerd", "eigen_normering"}
     zonder_levenscyclus = bo_ja - {"levenscyclus"}
     assessment = {"run": run_id, "voorstellen": [
         {"doel": "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md", "soort": "nieuw",

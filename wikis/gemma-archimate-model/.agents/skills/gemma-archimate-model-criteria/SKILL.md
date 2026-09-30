@@ -26,6 +26,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
 2. Let bij de kenmerken die de oude criteria dragen op het volgende:
    - *relaties*: noem in de onderbouwing de concrete relaties uit de `## Relaties` van de bronanalyses (werkwoord en ander begrip). Staat er geen, dan is het antwoord nee, ook als je een relatie vermoedt; vul dan eerst de bronanalyse aan.
    - *zelfstandig beleidsbegrip*: kijk eerst naar boven. Zoek de generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek`) en noteer de keten (bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Nee als het begrip een variant is van een breder begrip dat domeinexperts herkennen; zie `gemma-archimate-model-assess` §3.
+   - *Gedrag* (toegewezen partij, gebruikt objecten, aanleiding, benoembaar resultaat, herhaald uitgevoerd, eigen normering, stabiel over tijd): beantwoord ze bij elk gedragsbegrip met de concrete partij, objecten, aanleiding of regels uit de bronnen; bij een begrip dat geen gedrag is zijn ze nee. Bij proces en functie vervangen *toegewezen partij* en *gebruikt objecten* in de drempel het brede kenmerk *relaties*: een losse associatie volstaat daar niet. Een werkvorm zonder eigen objecten, aanleiding of regels (burgerberaad) haalt de drempel voor een proces dan niet.
    - *los van verantwoordelijkheid*: de vraag van de oude actor- en roltoets "blijft het bestaan als zijn verantwoordelijkheden veranderen, en kan het ook andere rollen vervullen?". Ja maakt een partij tot actor, nee tot rol.
    - De oude rolvraag "kan één actor meerdere van deze rollen vervullen?" is vervallen: ze onderscheidt niet (vrijwel altijd ja).
    - Een doelgroep (minima, jongeren) is geen actor of rol maar een indeling van een actor: *slechts eigenschap* ja, met de actor als `genoemd_begrip`.
@@ -109,6 +110,18 @@ Buiten dit model vallen de motivatie- en strategielaag (Goal, Outcome, Driver, P
 | aangeboden gedrag | Is het expliciet beschreven gedrag dat aan de omgeving wordt aangeboden, vanuit de waarde voor de afnemer en los van hoe het wordt uitgevoerd? | ArchiMate Business Service | Melding openbare ruimte doen | Melding afhandelen |
 | gezamenlijk gedrag | Is het gedrag dat alleen door twee of meer partijen samen wordt uitgevoerd? | ArchiMate Business Interaction | Keukentafelgesprek; hoorzitting bezwaarcommissie | Beschikking opstellen |
 
+**Gedrag**
+
+| Kenmerk | Vraag | Herkomst | Voorbeeld | Tegenvoorbeeld |
+|---|---|---|---|---|
+| toegewezen partij | Is er een actor of rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? Noem die. Nee als het geen gedrag is | ArchiMate (assignment van actor of rol aan gedrag) | Ruiming (houder van de begraafplaats) | Draagvlak creëren (niemand aanwijsbaar) |
+| gebruikt objecten | Leest, maakt of wijzigt het gedrag aanwijsbare bedrijfsobjecten? Noem ze. Nee als het geen gedrag is | ArchiMate (access van gedrag naar passief element) | Inspraak (ontwerpbesluit, zienswijze) | Burgerberaad (geen vast object) |
+| aanleiding | Start het door een aanwijsbare gebeurtenis, verzoek of termijn? Noem die. Nee als het geen gedrag is | ArchiMate (triggering) + GEMMA (procesarchitectuur: een proces start bij een gebeurtenis) | Overheidsparticipatie (verzoek ingediend) | Kennisdeling |
+| benoembaar resultaat | Levert het een concreet, benoembaar resultaat op (besluit, product, verslag, afspraak)? Nee als het geen gedrag is | ArchiMate Business Process (achieves a specific result) + GEMMA (proces levert product of besluit) | Opgraving (opgegraven lijk) | Informeren |
+| herhaald uitgevoerd | Wordt het regelmatig en voor verschillende gevallen doorlopen, en is het geen eenmalig project? Nee als het geen gedrag is | GEMMA (proces als herhaalbare werkwijze; tegenhanger van onderscheidbare exemplaren) | Inspraak (per ontwerpbesluit) | Invoeren van de participatieverordening (eenmalig) |
+| eigen normering | Gelden er eigen regels, termijnen of bevoegdheden voor, uit wet, verordening of beleidsregel? Noem ze. Nee als het geen gedrag is | GEMMA (proces met eigen spelregels; tegenhanger van levenscyclus) | Inspraak (afdeling 3.4 Awb) | Burgerberaad (vormvrij) |
+| stabiel over tijd | Blijft deze groepering van gedrag bestaan als de organisatie-inrichting of werkwijze verandert? Nee als het geen gedrag is | ArchiMate Business Function (stabiel, los van de organisatie) + GEMMA (bedrijfsfunctiemodel) | Participatie; belastingheffing | Projectteam Omgevingswet |
+
 **Passief**
 
 | Kenmerk | Vraag | Herkomst | Voorbeeld | Tegenvoorbeeld |
@@ -153,15 +166,17 @@ Stap 1–3 van boven naar beneden: de eerste passende regel beslist en levert he
 | 20 | Product | *betekenis in onderwerp*, *relaties*, *onderscheidbare exemplaren* |
 | 21 | Actor | *betekenis in onderwerp*, *relaties* |
 | 22 | Rol | *betekenis in onderwerp*, *relaties*, *meerdere vervullers* |
-| 23 | Proces, Functie, Gebeurtenis, Dienst | *betekenis in onderwerp*, *relaties* |
+| 23 | Proces | *betekenis in onderwerp*, *toegewezen partij*, *gebruikt objecten*, *aanleiding*, *benoembaar resultaat*, *herhaald uitgevoerd*, *eigen normering* |
+| 24 | Functie | *betekenis in onderwerp*, *toegewezen partij*, *gebruikt objecten*, *stabiel over tijd* |
+| 25 | Gebeurtenis, Dienst | *betekenis in onderwerp*, *relaties* |
 
 **Stap 5 — Specialisatieniveau** (alle typen met een paginatype)
 
 | Nr | Als | Dan |
 |---|---|---|
-| 24 | niet *zelfstandig beleidsbegrip*, met `genoemd_begrip` | specialisatie zonder pagina van het genoemde, herkenbare bredere begrip; relaties opgetild |
-| 25 | niet *zelfstandig beleidsbegrip*, zonder `genoemd_begrip` | voorleggen: noem het bredere begrip |
-| 26 | anders | element van het voorlopige type |
+| 26 | niet *zelfstandig beleidsbegrip*, met `genoemd_begrip` | specialisatie zonder pagina van het genoemde, herkenbare bredere begrip; relaties opgetild |
+| 27 | niet *zelfstandig beleidsbegrip*, zonder `genoemd_begrip` | voorleggen: noem het bredere begrip |
+| 28 | anders | element van het voorlopige type |
 
 **Aanvullingen**
 

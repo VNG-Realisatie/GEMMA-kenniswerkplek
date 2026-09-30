@@ -2,6 +2,10 @@
 
 Open punten voor deze wiki. Een punt verdwijnt als het is afgehandeld; de afhandeling staat in de commit.
 
+## Nieuwe gedragskenmerken op bestaande pagina's
+
+- **Migratie.** Sinds 2026-09-30 kent de beslistabel zeven gedragskenmerken (toegewezen partij, gebruikt objecten, aanleiding, benoembaar resultaat, herhaald uitgevoerd, eigen normering, stabiel over tijd); de drempel voor proces en functie rust erop. De 42 elementpagina's van lijkbezorging missen ze nog (`check_elementen.py`: `kenmerken-onvolledig`). Voeg ze toe via een run: bij passieve begrippen en partijen nee, bij de zes processen, de dienst en de twee gebeurtenissen een beoordeling met onderbouwing. Opgraving en Uitgifte van een graf hebben geen toegewezen partij in de wiki (6/7); leg dat voor.
+
 ## Herziening van de regels
 
 De redacteur wil de regels van deze wiki herzien omdat ze te strak zijn (besloten 2026-09-30).

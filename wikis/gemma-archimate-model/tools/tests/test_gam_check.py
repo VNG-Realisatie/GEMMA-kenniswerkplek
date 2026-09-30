@@ -48,7 +48,9 @@ def wiki(archimate_repo):
     _schrijf(wiki, BO_PAD, _bo())
     proces_kenmerken = {k: "nee" for k in KENMERKEN_BO} | {
         k: "ja" for k in ("herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "relaties",
-                          "zelfstandig_beleidsbegrip", "gedrag", "per_keer_doorlopen")}
+                          "zelfstandig_beleidsbegrip", "gedrag", "per_keer_doorlopen", "toegewezen_partij",
+                          "gebruikt_objecten", "aanleiding", "benoembaar_resultaat", "herhaald_uitgevoerd",
+                          "eigen_normering")}
     _schrijf(wiki, PROCES_PAD, _bo(id="aanvraag-behandelen", type="bedrijfsproces", naam="Aanvraag behandelen",
                                    archimate_type="business-process", kenmerken=proces_kenmerken,
                                    definitie="Het behandelen van een aanvraag tot een besluit."),

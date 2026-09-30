@@ -91,14 +91,25 @@ class Wiki:
         self.op_pad = {el.pad: el.id for el in self.elementen}
         self.repo_root = paths.find_repo_root(wiki_root)
         self.modelbronnen = {self.yaml.get("ggm", {}).get("bron"), self.yaml.get("gemma", {}).get("bron")} - {None}
-        self.analyse_pad = {p.meta.get("id"): pad for pad, p in self.van_type("bronanalyse")}
+        # Een bron kan in meer onderwerpen een bronanalyse hebben (bijv. de Awb bij lijkbezorging en participatie).
+        self.analyse_paden: dict[str, set[Path]] = {}
+        for pad, p in self.van_type("bronanalyse"):
+            self.analyse_paden.setdefault(p.meta.get("id"), set()).add(pad)
 
     def bron_doel(self, bron_id: str) -> Path | None:
         """Waar een verwijzing naar een bron heen linkt: de bronanalyse, of bij een modelbron de tekst in sources/raw/."""
         if bron_id in self.modelbronnen:
             pad = (self.repo_root / "sources" / "raw" / f"{bron_id}.md").resolve()
             return pad if pad.exists() else None
-        return self.analyse_pad.get(bron_id)
+        paden = self.analyse_paden.get(bron_id)
+        return min(paden) if paden else None
+
+    def bron_doelen(self, bron_id: str) -> set[Path]:
+        """Alle toegestane doelen van een link naar deze bron: elke bronanalyse van de bron (of de modeltekst)."""
+        if bron_id in self.modelbronnen:
+            doel = self.bron_doel(bron_id)
+            return {doel} if doel else set()
+        return self.analyse_paden.get(bron_id, set())
 
     def van_type(self, paginatype: str) -> list[tuple[Path, frontmatter.Page]]:
         return [(pad, p) for pad, p in self.paginas.items() if p.meta.get("type") == paginatype]
@@ -137,6 +148,9 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
 
     # Kenmerken ↔ type en status (EL1, EL18)
     kenmerken = meta.get("kenmerken") or {}
+    ontbrekend = [bepaal_type.NAAM[s] for s in bepaal_type.SLEUTELS if s not in kenmerken]
+    if kenmerken and ontbrekend:
+        fout("kenmerken-onvolledig", f"kenmerken niet beantwoord: {', '.join(ontbrekend)} [EL1]")
     if set(kenmerken) == set(bepaal_type.SLEUTELS):
         beoordeling = {"begrip": el.id, "kenmerken": {k: {"waarde": v, "onderbouwing": "-"} for k, v in kenmerken.items()}}
         uitkomst = bepaal_type.evalueer(beoordeling)
@@ -233,8 +247,8 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
                 fout("bron-link", f"'## {kop}': {melding}")
     in_bronnen = _gelinkte_paden(w, el.pad, gam_gemeen.sectie(el.body, "Bronnen") or "")
     for bron in meta.get("bronnen", []) or []:
-        linkdoel = w.bron_doel(bron)
-        if linkdoel and linkdoel not in in_bronnen:
+        doelen = w.bron_doelen(bron)
+        if doelen and not doelen & in_bronnen:
             fout("bron-link", f"'## Bronnen' linkt niet naar {'de tekst' if bron in w.modelbronnen else 'de bronanalyse'} van '{bron}'")
 
     # Relaties
@@ -306,7 +320,7 @@ def _bronlinks(w: Wiki, van: Path, cel: str) -> list[str]:
             doel = w.bron_doel(m.group("tekst"))
             if doel is None:
                 meldingen.append(f"bron '{m.group('tekst')}' heeft geen bronanalyse")
-            elif gam_gemeen.doel_van_link(van, m.group("doel")) != doel:
+            elif gam_gemeen.doel_van_link(van, m.group("doel")) not in w.bron_doelen(m.group("tekst")):
                 meldingen.append(f"link '{m.group('tekst')}' wijst niet naar de bronanalyse van die bron")
     return meldingen
 
