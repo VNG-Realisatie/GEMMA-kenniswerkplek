@@ -63,14 +63,14 @@ Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groni
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Kernbegrip van wet en verordening. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Kernbegrip van wet en verordening. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Graf bestaat uit Grafruimte (art. 1 h); Algemeen graf is een Graf (art. 1 a); Particulier graf is een Graf (art. 1 p); Begraving geschiedt in Graf (art. 23 lid 2); Algemeen graf is een Graf (art. 23 lid 2); Particulier graf is een Graf (art. 23 lid 2) | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Eigen behandeling (uitgifte, begraving, ruiming); de grafsoorten zijn zijn specialisaties. GEMMA kent geen graf; geen breder herkenbaar begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Graf bestaat uit Grafruimte (art. 1 h); Algemeen graf is een Graf (art. 1 a); Particulier graf is een Graf (art. 1 p); Begraving geschiedt in Graf (art. 23 lid 2); Algemeen graf is een Graf (art. 23 lid 2); Particulier graf is een Graf (art. 23 lid 2) | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Eigen behandeling (uitgifte, begraving, ruiming); de grafsoorten zijn zijn specialisaties. GEMMA kent geen graf; geen breder herkenbaar begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Graf is een passief ding. |  |
 | handelende partij | nee | Graf is een passief ding. |  |
 | hoedanigheid | nee | Graf is een passief ding. |  |
@@ -85,12 +85,12 @@ Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groni
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| levenscyclus | ja | Uitgegeven, in gebruik, geruimd. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| wordt bewerkt | ja | De gemeente geeft graven uit, opent en sluit ze en ruimt ze (art. 23, 31; Groningen art. 7, 27). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| levenscyclus | ja | Uitgegeven, in gebruik, geruimd. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| wordt bewerkt | ja | De gemeente geeft graven uit, opent en sluit ze en ruimt ze (art. 23, 31; Groningen art. 7, 27). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | afspraak | nee | Geen tweezijdige afspraak. |  |
 | waarneembare vorm | nee | Geen document of formulier. |  |
-| geautomatiseerd verwerkt | ja | Gravenadministratie: register van begraven lijken met de plaats (art. 27). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| geautomatiseerd verwerkt | ja | Gravenadministratie: register van begraven lijken met de plaats (art. 27). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ## GEMMA
 

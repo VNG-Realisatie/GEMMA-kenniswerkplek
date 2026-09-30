@@ -2,12 +2,15 @@
 id: 2026-rijk-bw2-rechtspersonen
 type: bronanalyse
 onderwerp: lijkbezorging
-bronnen: [2026-rijk-bw2-rechtspersonen]
+bronnen:
+- 2026-rijk-bw2-rechtspersonen
 relevant: ja
 bijgewerkt: 2026-09-30
 ---
 
 # Burgerlijk Wetboek Boek 2 Rechtspersonen
+
+Bron: [tekst](../../../../sources/raw/2026-rijk-bw2-rechtspersonen.md) · [origineel (html)](../../../../sources/raw/2026-rijk-bw2-rechtspersonen.html) · [online](https://wetten.overheid.nl/BWBR0003045/)
 
 ## Samenvatting
 

@@ -62,15 +62,15 @@ Een lijk wordt slechts opgegraven met vergunning van de burgemeester en, bij een
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Rechthebbende op het graf vraagt bij burgemeester aan Opgraving (art. 28 lid 1); Rechthebbende op het graf geeft toestemming voor Opgraving (art. 29 lid 1); Vergunning tot opgraving betreft Opgraving (art. 29 lid 1) | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Eigen handeling met vergunning (art. 29; Groningen art. 28); geen variant van ruiming. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gedrag | ja | Opgraving is gedrag. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Rechthebbende op het graf vraagt bij burgemeester aan Opgraving (art. 28 lid 1); Rechthebbende op het graf geeft toestemming voor Opgraving (art. 29 lid 1); Vergunning tot opgraving betreft Opgraving (art. 29 lid 1) | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Eigen handeling met vergunning (art. 29; Groningen art. 28); geen variant van ruiming. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gedrag | ja | Opgraving is gedrag. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | handelende partij | nee | Opgraving is gedrag. |  |
 | hoedanigheid | nee | Opgraving is gedrag. |  |
 | samenwerkingsverband | nee | Opgraving is gedrag. |  |
@@ -79,7 +79,7 @@ Een lijk wordt slechts opgegraven met vergunning van de burgemeester en, bij een
 | aanbod als geheel | nee | Opgraving is gedrag. |  |
 | los van verantwoordelijkheid | nee | Geen partij. |  |
 | meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
-| per keer doorlopen | ja | Wordt per geval doorlopen en levert een resultaat op. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| per keer doorlopen | ja | Wordt per geval doorlopen en levert een resultaat op. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -99,8 +99,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| toegang (lezen) | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | vereist (vergunning tot opgraving) | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 29 lid 1) |
-| toegang (lezen-schrijven) | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | graaft op | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 29) |
+| toegang (lezen) | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | vereist (vergunning tot opgraving) | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29 lid 1) |
+| toegang (lezen-schrijven) | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | graaft op | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
 
 ## Bronnen
 

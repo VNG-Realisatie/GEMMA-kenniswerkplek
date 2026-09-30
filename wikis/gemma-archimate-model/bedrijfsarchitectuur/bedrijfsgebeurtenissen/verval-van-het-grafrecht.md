@@ -61,15 +61,15 @@ Een grafrecht vervalt door het verlopen van de termijn, door afstand of door oph
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | College van B&W verklaart Verval van het grafrecht (art. 20 lid 2) | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Eigen gebeurtenis die ruiming en verwijdering van de grafbedekking start (Groningen art. 20, 26). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gedrag | ja | Verval van het grafrecht is gedrag. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | College van B&W verklaart Verval van het grafrecht (art. 20 lid 2) | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Eigen gebeurtenis die ruiming en verwijdering van de grafbedekking start (Groningen art. 20, 26). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gedrag | ja | Verval van het grafrecht is gedrag. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | handelende partij | nee | Verval van het grafrecht is gedrag. |  |
 | hoedanigheid | nee | Verval van het grafrecht is gedrag. |  |
 | samenwerkingsverband | nee | Verval van het grafrecht is gedrag. |  |
@@ -80,7 +80,7 @@ Een grafrecht vervalt door het verlopen van de termijn, door afstand of door oph
 | meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| toestandsverandering | ja | Ogenblikkelijke toestandsverandering die gedrag start. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| toestandsverandering | ja | Ogenblikkelijke toestandsverandering die gedrag start. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
@@ -98,7 +98,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| triggering | [Ruiming](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruiming.md) | leidt tot | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 20 lid 4, 26) |
+| triggering | [Ruiming](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruiming.md) | leidt tot | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 20 lid 4, 26) |
 
 ## Bronnen
 

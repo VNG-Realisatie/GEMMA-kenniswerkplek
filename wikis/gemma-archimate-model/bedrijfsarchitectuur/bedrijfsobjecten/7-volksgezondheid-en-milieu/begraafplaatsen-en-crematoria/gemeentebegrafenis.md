@@ -85,14 +85,14 @@ Een gemeentebegrafenis is het geval dat ontstaat als de burgemeester de lijkbezo
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbare term; GGM-entiteit Gemeentebegrafenis (Gemeentebegrafenissen); GEMMA-bedrijfsobject Gemeentebegrafenis. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De burgemeester draagt zorg voor de lijkbezorging als niemand erin voorziet (art. 21). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbare term; GGM-entiteit Gemeentebegrafenis (Gemeentebegrafenissen); GEMMA-bedrijfsobject Gemeentebegrafenis. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De burgemeester draagt zorg voor de lijkbezorging als niemand erin voorziet (art. 21). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Burgemeester draagt zorg voor lijkbezorging door de burgemeester (art. 21 lid 1); gemeente verhaalt kosten (art. 22); GGM-attributen melder, begrafeniskosten, datumRuimingGraf. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | GGM en GEMMA kennen Gemeentebegrafenis als eigen object met eigen gegevens (kosten, melder). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Burgemeester draagt zorg voor lijkbezorging door de burgemeester (art. 21 lid 1); gemeente verhaalt kosten (art. 22); GGM-attributen melder, begrafeniskosten, datumRuimingGraf. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | GGM en GEMMA kennen Gemeentebegrafenis als eigen object met eigen gegevens (kosten, melder). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Gemeentebegrafenis is een passief ding. |  |
 | handelende partij | nee | Gemeentebegrafenis is een passief ding. |  |
 | hoedanigheid | nee | Gemeentebegrafenis is een passief ding. |  |
@@ -107,12 +107,12 @@ Een gemeentebegrafenis is het geval dat ontstaat als de burgemeester de lijkbezo
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| onderscheidbare exemplaren | ja | Per overledene. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| levenscyclus | ja | Gemeld, uitgevoerd, kosten verhaald, afgesloten. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| wordt bewerkt | ja | De gemeente regelt en betaalt de lijkbezorging en verhaalt de kosten. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| onderscheidbare exemplaren | ja | Per overledene. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| levenscyclus | ja | Gemeld, uitgevoerd, kosten verhaald, afgesloten. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| wordt bewerkt | ja | De gemeente regelt en betaalt de lijkbezorging en verhaalt de kosten. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | afspraak | nee | Geen tweezijdige afspraak. |  |
 | waarneembare vorm | nee | Geen document of formulier. |  |
-| geautomatiseerd verwerkt | ja | GGM-entiteit met attributen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| geautomatiseerd verwerkt | ja | GGM-entiteit met attributen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ## GGM-bron
 
@@ -128,7 +128,7 @@ Sterke match met GEMMA-bedrijfsobject Gemeentebegrafenis (overgenomen uit het GG
 
 ## Bronnen
 
-- Gemeentelijk Gegevensmodel 2.5.1 (2026-vng-ggm-2-5-1)
+- [Gemeentelijk Gegevensmodel 2.5.1](../../../../../../sources/raw/2026-vng-ggm-2-5-1.md)
 - [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 
 ## Terugmelding GGM

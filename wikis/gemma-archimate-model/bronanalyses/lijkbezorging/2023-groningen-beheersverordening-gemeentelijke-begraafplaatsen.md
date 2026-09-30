@@ -2,12 +2,15 @@
 id: 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 type: bronanalyse
 onderwerp: lijkbezorging
-bronnen: [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen]
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 relevant: ja
 bijgewerkt: 2026-09-30
 ---
 
 # Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023
+
+Bron: [tekst](../../../../sources/raw/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) · [origineel (html)](../../../../sources/raw/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.html)
 
 ## Samenvatting
 

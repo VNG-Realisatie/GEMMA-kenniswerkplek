@@ -64,22 +64,22 @@ De gemeentelijke gezondheidsdienst adviseert de burgemeester over maatregelen bi
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | Gemeenschappelijke regeling van gemeenten (precedent: mede-eigenaar en opdrachtgever). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | Gemeenschappelijke regeling van gemeenten (precedent: mede-eigenaar en opdrachtgever). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
 | betekenis in onderwerp | nee | Alleen advies bij een besmet lijk (art. 22a). |  |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | GGD adviseert over maatregel bij besmet lijk (art. 22a). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | GGD adviseert over maatregel bij besmet lijk (art. 22a). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | GGD is een partij. |  |
-| handelende partij | ja | GGD is een partij. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| handelende partij | ja | GGD is een partij. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | hoedanigheid | nee | GGD is een partij. |  |
 | samenwerkingsverband | nee | GGD is een partij. |  |
 | toegangspunt | nee | GGD is een partij. |  |
 | plaats | nee | GGD is een partij. |  |
 | aanbod als geheel | nee | GGD is een partij. |  |
-| los van verantwoordelijkheid | ja | Bestaat los van de lijkbezorging en vervult ook andere rollen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| los van verantwoordelijkheid | ja | Bestaat los van de lijkbezorging en vervult ook andere rollen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -101,7 +101,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Beschikking](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | adviseert over | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 22a) |
+| associatie (gericht) | [Beschikking](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | adviseert over | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22a) |
 
 ## Bronnen
 

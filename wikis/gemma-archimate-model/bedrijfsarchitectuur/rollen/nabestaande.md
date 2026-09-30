@@ -60,23 +60,23 @@ De nabestaande draagt zorg voor de asbus, geeft opdracht tot bijzetting of verst
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Nabestaande vraagt aan bij ruiming Ruiming (art. 27 lid 4); Nabestaande draagt zorg voor Urn (art. 59, 60 lid 2); Nabestaande geeft opdracht tot Bijzetting (art. 62 lid 2) | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Nabestaande vraagt aan bij ruiming Ruiming (art. 27 lid 4); Nabestaande draagt zorg voor Urn (art. 59, 60 lid 2); Nabestaande geeft opdracht tot Bijzetting (art. 62 lid 2) | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Nabestaande is een verantwoordelijkheid. |  |
-| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| hoedanigheid | ja | Nabestaande is een verantwoordelijkheid. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| hoedanigheid | ja | Nabestaande is een verantwoordelijkheid. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | samenwerkingsverband | nee | Nabestaande is een verantwoordelijkheid. |  |
 | toegangspunt | nee | Nabestaande is een verantwoordelijkheid. |  |
 | plaats | nee | Nabestaande is een verantwoordelijkheid. |  |
 | aanbod als geheel | nee | Nabestaande is een verantwoordelijkheid. |  |
 | los van verantwoordelijkheid | nee | Hoedanigheid ten opzichte van de overledene. |  |
-| meerdere vervullers | ja | Elke verwant of naaste kan nabestaande zijn. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| meerdere vervullers | ja | Elke verwant of naaste kan nabestaande zijn. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -97,8 +97,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | draagt zorg voor | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 59, 60 lid 2) |
-| associatie (gericht) | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | geeft opdracht tot bijzetting | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 62 lid 2) |
+| associatie (gericht) | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | draagt zorg voor | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59, 60 lid 2) |
+| associatie (gericht) | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | geeft opdracht tot bijzetting | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 2) |
 
 ## Bronnen
 

@@ -63,15 +63,15 @@ Op verzoek van de rechthebbende, of op sommige begraafplaatsen altijd, onderhoud
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
-| relaties | ja | Gemeente voert uit Onderhoud van graven (art. 23); Verordening lijkbezorgingsrechten regelt het recht voor Onderhoud van graven (art. 23, 24); Lijkbezorgingsrechten voor Onderhoud van graven (§ Lijkbezorgingsrechten) | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
-| zelfstandig beleidsbegrip | ja | Door de gemeente aangeboden tegen betaling van een recht (Groningen art. 23, 24; VNG retributies). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
-| gedrag | ja | Onderhoud van graven is gedrag. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| relaties | ja | Gemeente voert uit Onderhoud van graven (art. 23); Verordening lijkbezorgingsrechten regelt het recht voor Onderhoud van graven (art. 23, 24); Lijkbezorgingsrechten voor Onderhoud van graven (§ Lijkbezorgingsrechten) | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| zelfstandig beleidsbegrip | ja | Door de gemeente aangeboden tegen betaling van een recht (Groningen art. 23, 24; VNG retributies). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| gedrag | ja | Onderhoud van graven is gedrag. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | handelende partij | nee | Onderhoud van graven is gedrag. |  |
 | hoedanigheid | nee | Onderhoud van graven is gedrag. |  |
 | samenwerkingsverband | nee | Onderhoud van graven is gedrag. |  |
@@ -83,7 +83,7 @@ Op verzoek van de rechthebbende, of op sommige begraafplaatsen altijd, onderhoud
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
-| aangeboden gedrag | ja | Wordt aan de omgeving aangeboden, los van de uitvoering. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
+| aangeboden gedrag | ja | Wordt aan de omgeving aangeboden, los van de uitvoering. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
@@ -100,8 +100,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| toegang (schrijven) | [Heffing](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) | leidt tot (lijkbezorgingsrechten) | | bron | | 2026-vng-retributies (§ Lijkbezorgingsrechten) |
-| toegang (lezen-schrijven) | [Grafbedekking](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafbedekking.md) | onderhoudt | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 23) |
+| toegang (schrijven) | [Heffing](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) | leidt tot (lijkbezorgingsrechten) | | bron | | [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
+| toegang (lezen-schrijven) | [Grafbedekking](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafbedekking.md) | onderhoudt | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
 
 ## Bronnen
 

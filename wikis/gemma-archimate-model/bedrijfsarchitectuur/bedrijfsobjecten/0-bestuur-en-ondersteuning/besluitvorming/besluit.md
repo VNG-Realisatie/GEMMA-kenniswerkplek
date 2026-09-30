@@ -107,14 +107,14 @@ Het besluit is het bredere begrip boven alle besluiten die raad, college en burg
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Awb-kernbegrip; GEMMA-bedrijfsobject Besluit; GGM Besluit (RGBZPlus, Diensten). | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
-| gemeentelijk | ja | Raad, college en burgemeester nemen als bestuursorgaan besluiten (Awb art. 1:1, 1:3). | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
+| herkenbaar | ja | Awb-kernbegrip; GEMMA-bedrijfsobject Besluit; GGM Besluit (RGBZPlus, Diensten). | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| gemeentelijk | ja | Raad, college en burgemeester nemen als bestuursorgaan besluiten (Awb art. 1:1, 1:3). | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Hoogste niveau van de keten Besluit → Beschikking → Vergunning voor de lijkbezorgingsbesluiten. | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
+| betekenis in onderwerp | ja | Hoogste niveau van de keten Besluit → Beschikking → Vergunning voor de lijkbezorgingsbesluiten. | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig. | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
-| relaties | ja | Bestuursorgaan neemt besluit; Beschikking is een Besluit (Awb art. 1:3). | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
-| zelfstandig beleidsbegrip | ja | Hoogste herkenbare niveau; GEMMA kent Besluit naast Beschikking. | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig. | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| relaties | ja | Bestuursorgaan neemt besluit; Beschikking is een Besluit (Awb art. 1:3). | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Hoogste herkenbare niveau; GEMMA kent Besluit naast Beschikking. | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | gedrag | nee | Besluit is een passief ding. |  |
 | handelende partij | nee | Besluit is een passief ding. |  |
 | hoedanigheid | nee | Besluit is een passief ding. |  |
@@ -129,10 +129,10 @@ Het besluit is het bredere begrip boven alle besluiten die raad, college en burg
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | los van verantwoordelijkheid | nee | Geen partij. |  |
 | meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
-| onderscheidbare exemplaren | ja | Per besluit een exemplaar. | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
-| levenscyclus | ja | Genomen, bekendgemaakt, eventueel gewijzigd of ingetrokken. | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
-| wordt bewerkt | ja | Het bestuursorgaan neemt het besluit. | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
-| afspraak | nee | Eenzijdige publiekrechtelijke rechtshandeling (Awb art. 1:3 lid 1). | 2026-rijk-algemene-wet-bestuursrecht-wettekst |
+| onderscheidbare exemplaren | ja | Per besluit een exemplaar. | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| levenscyclus | ja | Genomen, bekendgemaakt, eventueel gewijzigd of ingetrokken. | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| wordt bewerkt | ja | Het bestuursorgaan neemt het besluit. | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| afspraak | nee | Eenzijdige publiekrechtelijke rechtshandeling (Awb art. 1:3 lid 1). | [2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | waarneembare vorm | nee | Geen document of formulier. |  |
 | geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking. |  |
 
@@ -161,7 +161,7 @@ Match **sterk** met GEMMA-element Besluit (business-object), gekoppeld aan dezel
 
 ## Bronnen
 
-- Gemeentelijk Gegevensmodel 2.5.1 (2026-vng-ggm-2-5-1)
+- [Gemeentelijk Gegevensmodel 2.5.1](../../../../../../sources/raw/2026-vng-ggm-2-5-1.md)
 - [Algemene wet bestuursrecht](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
 
 ## Terugmelding GGM

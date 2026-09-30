@@ -2,12 +2,15 @@
 id: 2026-rijk-wet-op-de-lijkbezorging-wettekst
 type: bronanalyse
 onderwerp: lijkbezorging
-bronnen: [2026-rijk-wet-op-de-lijkbezorging-wettekst]
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
 relevant: ja
 bijgewerkt: 2026-09-30
 ---
 
 # Wet op de lijkbezorging
+
+Bron: [tekst](../../../../sources/raw/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) · [online](https://wetten.overheid.nl/BWBR0005009/2025-07-01)
 
 ## Samenvatting
 

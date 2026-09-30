@@ -59,23 +59,23 @@ De houder van een plaats van bijzetting houdt een openbaar register van de bijge
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente is houder van de plaatsen van bijzetting op de gemeentelijke begraafplaats. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente is houder van de plaatsen van bijzetting op de gemeentelijke begraafplaats. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Houder van een plaats van bijzetting houdt Plaats van bijzetting (art. 63, 65); Houder van een plaats van bijzetting houdt register van Urn (art. 65); Houder van een plaats van bijzetting ruimt Urn (art. 66) | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Houder van een plaats van bijzetting houdt Plaats van bijzetting (art. 63, 65); Houder van een plaats van bijzetting houdt register van Urn (art. 65); Houder van een plaats van bijzetting ruimt Urn (art. 66) | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Houder van een plaats van bijzetting is een verantwoordelijkheid. |  |
-| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| hoedanigheid | ja | Houder van een plaats van bijzetting is een verantwoordelijkheid. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| hoedanigheid | ja | Houder van een plaats van bijzetting is een verantwoordelijkheid. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | samenwerkingsverband | nee | Houder van een plaats van bijzetting is een verantwoordelijkheid. |  |
 | toegangspunt | nee | Houder van een plaats van bijzetting is een verantwoordelijkheid. |  |
 | plaats | nee | Houder van een plaats van bijzetting is een verantwoordelijkheid. |  |
 | aanbod als geheel | nee | Houder van een plaats van bijzetting is een verantwoordelijkheid. |  |
 | los van verantwoordelijkheid | nee | Bestaat alleen door de verantwoordelijkheid voor een plaats van bijzetting. |  |
-| meerdere vervullers | ja | De gemeente (urnengraf en urnennis op de gemeentelijke begraafplaats), de houder van een crematorium of een bewaarplaats (art. 62, 64). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| meerdere vervullers | ja | De gemeente (urnengraf en urnennis op de gemeentelijke begraafplaats), de houder van een crematorium of een bewaarplaats (art. 62, 64). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -96,8 +96,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Plaats van bijzetting](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/plaats-van-bijzetting.md) | houdt | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 63, 65) |
-| associatie (gericht) | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | ruimt en houdt register van | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 65) |
+| associatie (gericht) | [Plaats van bijzetting](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/plaats-van-bijzetting.md) | houdt | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 63, 65) |
+| associatie (gericht) | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | ruimt en houdt register van | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 65) |
 
 ## Bronnen
 

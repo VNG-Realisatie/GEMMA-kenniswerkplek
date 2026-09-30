@@ -62,14 +62,14 @@ De behandelend arts of de gemeentelijke lijkschouwer geeft de verklaring van ove
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeentelijke lijkschouwer geeft haar af (art. 7) en de ambtenaar van de burgerlijke stand verleent op grond daarvan het verlof (art. 12). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeentelijke lijkschouwer geeft haar af (art. 7) en de ambtenaar van de burgerlijke stand verleent op grond daarvan het verlof (art. 12). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Gemeentelijke lijkschouwer geeft af Verklaring van overlijden (art. 7 lid 1); Verlof tot begraving of crematie vereist Verklaring van overlijden (art. 12); Verklaring van overlijden wordt gevoegd bij Akte van overlijden (art. 13 lid 1) | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Eigen soort verklaring, voorwaarde voor elk verlof; geen variant van een breder herkenbaar begrip in GEMMA of GGM. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Gemeentelijke lijkschouwer geeft af Verklaring van overlijden (art. 7 lid 1); Verlof tot begraving of crematie vereist Verklaring van overlijden (art. 12); Verklaring van overlijden wordt gevoegd bij Akte van overlijden (art. 13 lid 1) | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Eigen soort verklaring, voorwaarde voor elk verlof; geen variant van een breder herkenbaar begrip in GEMMA of GGM. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Verklaring van overlijden is een passief ding. |  |
 | handelende partij | nee | Verklaring van overlijden is een passief ding. |  |
 | hoedanigheid | nee | Verklaring van overlijden is een passief ding. |  |
@@ -84,9 +84,9 @@ De behandelend arts of de gemeentelijke lijkschouwer geeft de verklaring van ove
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| levenscyclus | ja | Afgegeven, gevoegd bij de akte van overlijden. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| wordt bewerkt | ja | Gebruikt bij het verlenen van het verlof (art. 12). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| levenscyclus | ja | Afgegeven, gevoegd bij de akte van overlijden. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| wordt bewerkt | ja | Gebruikt bij het verlenen van het verlof (art. 12). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | afspraak | nee | Geen tweezijdige afspraak. |  |
 | waarneembare vorm | nee | Geen document of formulier. |  |
 | geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking. |  |

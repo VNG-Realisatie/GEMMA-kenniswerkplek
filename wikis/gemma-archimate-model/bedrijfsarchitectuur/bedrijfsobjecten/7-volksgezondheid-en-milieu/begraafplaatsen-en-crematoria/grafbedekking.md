@@ -66,14 +66,14 @@ Voor een grafbedekking is een vergunning van het college nodig, die de rechthebb
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar: grafbedekking, gedenkteken, grafmonument (Groningen art. 1 i). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| herkenbaar | ja | Gangbaar: grafbedekking, gedenkteken, grafmonument (Groningen art. 1 i). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| relaties | ja | Vergunning grafbedekking betreft Grafbedekking (art. 22); Rechthebbende op het graf onderhoudt Grafbedekking (art. 24) | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| zelfstandig beleidsbegrip | ja | Eigen vergunning, onderhoud, verwijdering en verval aan de gemeente (Groningen art. 22–26). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| relaties | ja | Vergunning grafbedekking betreft Grafbedekking (art. 22); Rechthebbende op het graf onderhoudt Grafbedekking (art. 24) | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| zelfstandig beleidsbegrip | ja | Eigen vergunning, onderhoud, verwijdering en verval aan de gemeente (Groningen art. 22–26). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | gedrag | nee | Grafbedekking is een passief ding. |  |
 | handelende partij | nee | Grafbedekking is een passief ding. |  |
 | hoedanigheid | nee | Grafbedekking is een passief ding. |  |
@@ -88,9 +88,9 @@ Voor een grafbedekking is een vergunning van het college nodig, die de rechthebb
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| levenscyclus | ja | Vergund, geplaatst, onderhouden, verwijderd of vervallen aan de gemeente. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| wordt bewerkt | ja | De gemeente vergunt, onderhoudt en verwijdert (Groningen art. 22–26). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| levenscyclus | ja | Vergund, geplaatst, onderhouden, verwijderd of vervallen aan de gemeente. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| wordt bewerkt | ja | De gemeente vergunt, onderhoudt en verwijdert (Groningen art. 22–26). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | afspraak | nee | Geen tweezijdige afspraak. |  |
 | waarneembare vorm | nee | Geen document of formulier. |  |
 | geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking. |  |

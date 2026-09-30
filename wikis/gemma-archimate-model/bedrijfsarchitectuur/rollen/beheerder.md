@@ -63,23 +63,23 @@ De beheerder bepaalt tijd en plaats van begravingen in overleg met de uitvaarton
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar: beheerder van de begraafplaats (Groningen art. 1 e). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| herkenbaar | ja | Gangbaar: beheerder van de begraafplaats (Groningen art. 1 e). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| relaties | ja | Beheerder heeft de dagelijkse leiding van Gemeentelijke begraafplaats (art. 1 e); Beheerder bepaalt tijd en plaats van Begraving (art. 7 lid 1); Beheerder ontvangt Verlof tot begraving of crematie (art. 9 lid 1); Beheerder houdt bij Register van begraven lijken (art. 30 lid 2); Beheerder ziet toe op Ruiming (art. 27 lid 2) | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| relaties | ja | Beheerder heeft de dagelijkse leiding van Gemeentelijke begraafplaats (art. 1 e); Beheerder bepaalt tijd en plaats van Begraving (art. 7 lid 1); Beheerder ontvangt Verlof tot begraving of crematie (art. 9 lid 1); Beheerder houdt bij Register van begraven lijken (art. 30 lid 2); Beheerder ziet toe op Ruiming (art. 27 lid 2) | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | gedrag | nee | Beheerder is een verantwoordelijkheid. |  |
-| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| hoedanigheid | ja | Beheerder is een verantwoordelijkheid. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| hoedanigheid | ja | Beheerder is een verantwoordelijkheid. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | samenwerkingsverband | nee | Beheerder is een verantwoordelijkheid. |  |
 | toegangspunt | nee | Beheerder is een verantwoordelijkheid. |  |
 | plaats | nee | Beheerder is een verantwoordelijkheid. |  |
 | aanbod als geheel | nee | Beheerder is een verantwoordelijkheid. |  |
 | los van verantwoordelijkheid | nee | Hoedanigheid: de ambtenaar belast met de dagelijkse leiding, of zijn vervanger. |  |
-| meerdere vervullers | ja | De aangewezen ambtenaar of degene die hem vervangt. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| meerdere vervullers | ja | De aangewezen ambtenaar of degene die hem vervangt. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -100,10 +100,10 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | heeft de dagelijkse leiding van | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 1 e) |
-| toewijzing | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | bepaalt tijd en plaats van | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 7 lid 1) |
-| associatie (gericht) | [Vergunning](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | ontvangt (verlof tot begraving of crematie) | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 9 lid 1) |
-| toewijzing | [Ruiming](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruiming.md) | ziet toe op | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 27 lid 2) |
+| associatie (gericht) | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | heeft de dagelijkse leiding van | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 e) |
+| toewijzing | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | bepaalt tijd en plaats van | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
+| associatie (gericht) | [Vergunning](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | ontvangt (verlof tot begraving of crematie) | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 9 lid 1) |
+| toewijzing | [Ruiming](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruiming.md) | ziet toe op | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 27 lid 2) |
 
 ## Bronnen
 

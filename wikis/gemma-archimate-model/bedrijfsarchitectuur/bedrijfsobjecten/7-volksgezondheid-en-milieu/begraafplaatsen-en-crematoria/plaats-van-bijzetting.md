@@ -62,14 +62,14 @@ Een asbus kan worden bijgezet in een crematorium, in of op een graf, op een begr
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente is houder van de plaats van bijzetting op de gemeentelijke begraafplaats (urnengraf, urnennis). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente is houder van de plaats van bijzetting op de gemeentelijke begraafplaats (urnengraf, urnennis). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Urn wordt bijgezet in Plaats van bijzetting (art. 62 lid 1); Houder van een plaats van bijzetting houdt Plaats van bijzetting (art. 63, 65) | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Eigen begrip naast Begraafplaats: ook in een crematorium of een bewaarplaats (art. 62), met een eigen register (art. 65). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Urn wordt bijgezet in Plaats van bijzetting (art. 62 lid 1); Houder van een plaats van bijzetting houdt Plaats van bijzetting (art. 63, 65) | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Eigen begrip naast Begraafplaats: ook in een crematorium of een bewaarplaats (art. 62), met een eigen register (art. 65). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Plaats van bijzetting is een passief ding. |  |
 | handelende partij | nee | Plaats van bijzetting is een passief ding. |  |
 | hoedanigheid | nee | Plaats van bijzetting is een passief ding. |  |
@@ -84,9 +84,9 @@ Een asbus kan worden bijgezet in een crematorium, in of op een graf, op een begr
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| levenscyclus | ja | In gebruik genomen, opgeheven (register naar het gemeentearchief, art. 65 lid 3). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| wordt bewerkt | ja | De gemeente zet urnen bij, registreert en ruimt ze als houder (art. 62, 65, 66). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| levenscyclus | ja | In gebruik genomen, opgeheven (register naar het gemeentearchief, art. 65 lid 3). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| wordt bewerkt | ja | De gemeente zet urnen bij, registreert en ruimt ze als houder (art. 62, 65, 66). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | afspraak | nee | Geen tweezijdige afspraak. |  |
 | waarneembare vorm | nee | Geen document of formulier. |  |
 | geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking. |  |

@@ -61,14 +61,14 @@ Het lijk is het object van de hele lijkbezorging: het wordt geschouwd, begraven,
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Lijkbezorging door de burgemeester betreft Lijk (art. 21); Lijk is het lichaam van een Doodgeborene (art. 2 lid 1 a); Houder van de begraafplaats stelt de identiteit vast van Lijk (art. 8 lid 2); Register van begraven lijken registreert Lijk (art. 27) | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Kernbegrip van de wet (art. 2); GGM en GEMMA kennen geen generalisatie. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Lijkbezorging door de burgemeester betreft Lijk (art. 21); Lijk is het lichaam van een Doodgeborene (art. 2 lid 1 a); Houder van de begraafplaats stelt de identiteit vast van Lijk (art. 8 lid 2); Register van begraven lijken registreert Lijk (art. 27) | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Kernbegrip van de wet (art. 2); GGM en GEMMA kennen geen generalisatie. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Lijk is een passief ding. |  |
 | handelende partij | nee | Lijk is een passief ding. |  |
 | hoedanigheid | nee | Lijk is een passief ding. |  |
@@ -83,9 +83,9 @@ Het lijk is het object van de hele lijkbezorging: het wordt geschouwd, begraven,
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| levenscyclus | ja | Na overlijden geschouwd, begraven, gecremeerd of ontleed; eventueel opgegraven. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| wordt bewerkt | ja | De houder van de begraafplaats stelt de identiteit vast (art. 8); de burgemeester draagt zorg bij gemeentebegrafenis (art. 21). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| onderscheidbare exemplaren | ja | Afzonderlijke exemplaren zijn te onderscheiden. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| levenscyclus | ja | Na overlijden geschouwd, begraven, gecremeerd of ontleed; eventueel opgegraven. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| wordt bewerkt | ja | De houder van de begraafplaats stelt de identiteit vast (art. 8); de burgemeester draagt zorg bij gemeentebegrafenis (art. 21). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | afspraak | nee | Geen tweezijdige afspraak. |  |
 | waarneembare vorm | nee | Geen document of formulier. |  |
 | geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking. |  |

@@ -62,15 +62,15 @@ Als niemand voorziet in de lijkschouwing en lijkbezorging, draagt de burgemeeste
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Burgemeester draagt zorg voor Lijkbezorging door de burgemeester (art. 21 lid 1); Lijkbezorging door de burgemeester betreft Lijk (art. 21) | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Eigen gemeentelijke taak (vangnet, art. 21) met eigen behandeling en kostenverhaal; het resultaat is een Gemeentebegrafenis. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gedrag | ja | Lijkbezorging door de burgemeester is gedrag. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Burgemeester draagt zorg voor Lijkbezorging door de burgemeester (art. 21 lid 1); Lijkbezorging door de burgemeester betreft Lijk (art. 21) | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Eigen gemeentelijke taak (vangnet, art. 21) met eigen behandeling en kostenverhaal; het resultaat is een Gemeentebegrafenis. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gedrag | ja | Lijkbezorging door de burgemeester is gedrag. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | handelende partij | nee | Lijkbezorging door de burgemeester is gedrag. |  |
 | hoedanigheid | nee | Lijkbezorging door de burgemeester is gedrag. |  |
 | samenwerkingsverband | nee | Lijkbezorging door de burgemeester is gedrag. |  |
@@ -79,7 +79,7 @@ Als niemand voorziet in de lijkschouwing en lijkbezorging, draagt de burgemeeste
 | aanbod als geheel | nee | Lijkbezorging door de burgemeester is gedrag. |  |
 | los van verantwoordelijkheid | nee | Geen partij. |  |
 | meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
-| per keer doorlopen | ja | Wordt per geval doorlopen en levert een resultaat op. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| per keer doorlopen | ja | Wordt per geval doorlopen en levert een resultaat op. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -99,8 +99,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| toegang (lezen-schrijven) | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | betreft | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 21) |
-| toegang (schrijven) | [Gemeentebegrafenis](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md) | leidt tot | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 21, 22) |
+| toegang (lezen-schrijven) | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | betreft | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
+| toegang (schrijven) | [Gemeentebegrafenis](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md) | leidt tot | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
 
 ## Bronnen
 

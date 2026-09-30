@@ -2,12 +2,15 @@
 id: 2026-vng-wet-op-de-lijkbezorging
 type: bronanalyse
 onderwerp: lijkbezorging
-bronnen: [2026-vng-wet-op-de-lijkbezorging]
+bronnen:
+- 2026-vng-wet-op-de-lijkbezorging
 relevant: ja
 bijgewerkt: 2026-09-30
 ---
 
 # Wet op de lijkbezorging (VNG)
+
+Bron: [tekst](../../../../sources/raw/2026-vng-wet-op-de-lijkbezorging.md) · [online](https://vng.nl/rubrieken/onderwerpen/wet-op-de-lijkbezorging)
 
 ## Samenvatting
 

@@ -78,14 +78,14 @@ In de lijkbezorging stelt de gemeenteraad een beheersverordening begraafplaatsen
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | GEMMA-object Regeling; wet art. 35, 90 (gemeentelijke verordening). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
-| gemeentelijk | ja | De raad stelt gemeentelijke verordeningen vast. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
+| herkenbaar | ja | GEMMA-object Regeling; wet art. 35, 90 (gemeentelijke verordening). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| gemeentelijk | ja | De raad stelt gemeentelijke verordeningen vast. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen (besluit redacteur 2026-09-30). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
+| betekenis in onderwerp | ja | Het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen (besluit redacteur 2026-09-30). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
-| relaties | ja | Beheersverordening begraafplaatsen regelt gemeentelijke begraafplaats (VNG): opgetild. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
-| zelfstandig beleidsbegrip | ja | GEMMA-niveau. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| relaties | ja | Beheersverordening begraafplaatsen regelt gemeentelijke begraafplaats (VNG): opgetild. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| zelfstandig beleidsbegrip | ja | GEMMA-niveau. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
 | gedrag | nee | Regeling is een passief ding. |  |
 | handelende partij | nee | Regeling is een passief ding. |  |
 | hoedanigheid | nee | Regeling is een passief ding. |  |
@@ -100,9 +100,9 @@ In de lijkbezorging stelt de gemeenteraad een beheersverordening begraafplaatsen
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| onderscheidbare exemplaren | ja | Per regeling. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
-| levenscyclus | ja | Vastgesteld, gewijzigd, ingetrokken. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
-| wordt bewerkt | ja | De raad stelt haar vast. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
+| onderscheidbare exemplaren | ja | Per regeling. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| levenscyclus | ja | Vastgesteld, gewijzigd, ingetrokken. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| wordt bewerkt | ja | De raad stelt haar vast. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
 | afspraak | nee | Geen tweezijdige afspraak. |  |
 | waarneembare vorm | nee | Geen document of formulier. |  |
 | geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking. |  |
@@ -129,7 +129,7 @@ Match **sterk** met GEMMA-element Regeling (business-object). Nieuw in dit model
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Begraafplaats](../../7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | regelt (beheersverordening begraafplaatsen) | | bron | | 2026-vng-wet-op-de-lijkbezorging (inleiding) |
+| associatie (gericht) | [Begraafplaats](../../7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | regelt (beheersverordening begraafplaatsen) | | bron | | [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) (inleiding) |
 
 ## Bronnen
 

@@ -60,23 +60,23 @@ De houder van het crematorium bergt de as in asbussen, bewaart ze en zorgt voor 
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente is houder van een gemeentelijk crematorium (art. 51). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente is houder van een gemeentelijk crematorium (art. 51). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Houder van het crematorium houdt Crematorium (art. 50); Houder van het crematorium houdt Register van gecremeerde lijken (art. 50); Houder van het crematorium bergt as in Urn (art. 58); Houder van het crematorium draagt zorg voor Bestemming van de as (art. 59 lid 2) | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Houder van het crematorium houdt Crematorium (art. 50); Houder van het crematorium houdt Register van gecremeerde lijken (art. 50); Houder van het crematorium bergt as in Urn (art. 58); Houder van het crematorium draagt zorg voor Bestemming van de as (art. 59 lid 2) | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Houder van het crematorium is een verantwoordelijkheid. |  |
-| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| hoedanigheid | ja | Houder van het crematorium is een verantwoordelijkheid. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| hoedanigheid | ja | Houder van het crematorium is een verantwoordelijkheid. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | samenwerkingsverband | nee | Houder van het crematorium is een verantwoordelijkheid. |  |
 | toegangspunt | nee | Houder van het crematorium is een verantwoordelijkheid. |  |
 | plaats | nee | Houder van het crematorium is een verantwoordelijkheid. |  |
 | aanbod als geheel | nee | Houder van het crematorium is een verantwoordelijkheid. |  |
 | los van verantwoordelijkheid | nee | Bestaat alleen door de verantwoordelijkheid voor een crematorium. |  |
-| meerdere vervullers | ja | Gemeente of kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| meerdere vervullers | ja | Gemeente of kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -97,8 +97,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Crematorium](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md) | houdt | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 50) |
-| associatie (gericht) | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | bergt as in | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 58) |
+| associatie (gericht) | [Crematorium](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md) | houdt | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 50) |
+| associatie (gericht) | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | bergt as in | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 58) |
 
 ## Bronnen
 

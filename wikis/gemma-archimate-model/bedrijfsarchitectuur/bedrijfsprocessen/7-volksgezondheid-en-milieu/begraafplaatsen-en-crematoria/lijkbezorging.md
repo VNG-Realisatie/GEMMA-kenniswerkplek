@@ -63,15 +63,15 @@ De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk v
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
-| relaties | ja | Degene die in de lijkbezorging voorziet voorziet in Lijkbezorging (art. 18 lid 1); Lijkbezorging geschiedt overeenkomstig Beschikking ter bezorging van het lijk (art. 18 lid 1, 19) | 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
-| zelfstandig beleidsbegrip | ja | Kernbegrip van de wet (art. 1); begraving, crematie, ontleding, bijzetting en verstrooiing zijn zijn specialisaties. GEMMA kent alleen de functie Exploiteren van begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
-| gedrag | ja | Lijkbezorging is gedrag. | 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| relaties | ja | Degene die in de lijkbezorging voorziet voorziet in Lijkbezorging (art. 18 lid 1); Lijkbezorging geschiedt overeenkomstig Beschikking ter bezorging van het lijk (art. 18 lid 1, 19) | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| zelfstandig beleidsbegrip | ja | Kernbegrip van de wet (art. 1); begraving, crematie, ontleding, bijzetting en verstrooiing zijn zijn specialisaties. GEMMA kent alleen de functie Exploiteren van begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| gedrag | ja | Lijkbezorging is gedrag. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
 | handelende partij | nee | Lijkbezorging is gedrag. |  |
 | hoedanigheid | nee | Lijkbezorging is gedrag. |  |
 | samenwerkingsverband | nee | Lijkbezorging is gedrag. |  |
@@ -80,7 +80,7 @@ De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk v
 | aanbod als geheel | nee | Lijkbezorging is gedrag. |  |
 | los van verantwoordelijkheid | nee | Geen partij. |  |
 | meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
-| per keer doorlopen | ja | Wordt per geval doorlopen en levert een resultaat op. | 2026-rijk-wet-op-de-lijkbezorging-wettekst, 2026-vng-wet-op-de-lijkbezorging |
+| per keer doorlopen | ja | Wordt per geval doorlopen en levert een resultaat op. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-vng-wet-op-de-lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -111,12 +111,12 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| toegang (lezen-schrijven) | [Begraafplaats](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | geschiedt op | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 23 lid 1) |
-| toegang (lezen-schrijven) | [Graf](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | geschiedt in | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 23 lid 2) |
-| toegang (lezen-schrijven) | [Crematorium](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md) | geschiedt in | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 49) |
-| toegang (lezen-schrijven) | [Urn](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | zet bij of verstrooit de as uit | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 59 lid 2 a) |
-| toegang (lezen-schrijven) | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | bezorgt | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 1) |
-| toegang (lezen) | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | vereist (verlof tot begraving of crematie) | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 11) |
+| toegang (lezen-schrijven) | [Begraafplaats](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | geschiedt op | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23 lid 1) |
+| toegang (lezen-schrijven) | [Graf](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | geschiedt in | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23 lid 2) |
+| toegang (lezen-schrijven) | [Crematorium](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md) | geschiedt in | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 49) |
+| toegang (lezen-schrijven) | [Urn](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | zet bij of verstrooit de as uit | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59 lid 2 a) |
+| toegang (lezen-schrijven) | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | bezorgt | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1) |
+| toegang (lezen) | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | vereist (verlof tot begraving of crematie) | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
 
 ## Bronnen
 

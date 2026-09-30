@@ -59,23 +59,23 @@ Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers (art
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | College van B&W benoemen Gemeentelijke lijkschouwer (art. 4); Gemeentelijke lijkschouwer verricht Lijkschouwing (art. 3); Gemeentelijke lijkschouwer geeft af Verklaring van overlijden (art. 7 lid 1); Gemeentelijke lijkschouwer waarschuwt Ambtenaar van de burgerlijke stand (art. 10 lid 1); Gemeentelijke lijkschouwer leidt Nader onderzoek (art. 10a lid 3) | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | College van B&W benoemen Gemeentelijke lijkschouwer (art. 4); Gemeentelijke lijkschouwer verricht Lijkschouwing (art. 3); Gemeentelijke lijkschouwer geeft af Verklaring van overlijden (art. 7 lid 1); Gemeentelijke lijkschouwer waarschuwt Ambtenaar van de burgerlijke stand (art. 10 lid 1); Gemeentelijke lijkschouwer leidt Nader onderzoek (art. 10a lid 3) | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Gemeentelijke lijkschouwer is een verantwoordelijkheid. |  |
-| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| hoedanigheid | ja | Gemeentelijke lijkschouwer is een verantwoordelijkheid. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| handelende partij | ja | Wordt vervuld door een handelende partij (persoon of organisatie). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| hoedanigheid | ja | Gemeentelijke lijkschouwer is een verantwoordelijkheid. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | samenwerkingsverband | nee | Gemeentelijke lijkschouwer is een verantwoordelijkheid. |  |
 | toegangspunt | nee | Gemeentelijke lijkschouwer is een verantwoordelijkheid. |  |
 | plaats | nee | Gemeentelijke lijkschouwer is een verantwoordelijkheid. |  |
 | aanbod als geheel | nee | Gemeentelijke lijkschouwer is een verantwoordelijkheid. |  |
 | los van verantwoordelijkheid | nee | Hoedanigheid waarin een arts door B&W is benoemd (art. 4). |  |
-| meerdere vervullers | ja | Een forensisch arts in dienst van de gemeente, de GGD of extern. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| meerdere vervullers | ja | Een forensisch arts in dienst van de gemeente, de GGD of extern. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -96,9 +96,9 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| toewijzing | [Lijkschouwing](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkschouwing.md) | verricht | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 3) |
-| associatie (gericht) | [Verklaring van overlijden](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verklaring-van-overlijden.md) | geeft af | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 7 lid 1) |
-| associatie (gericht) | [Ambtenaar van de burgerlijke stand](ambtenaar-van-de-burgerlijke-stand.md) | waarschuwt | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 10 lid 1) |
+| toewijzing | [Lijkschouwing](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkschouwing.md) | verricht | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
+| associatie (gericht) | [Verklaring van overlijden](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verklaring-van-overlijden.md) | geeft af | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 7 lid 1) |
+| associatie (gericht) | [Ambtenaar van de burgerlijke stand](ambtenaar-van-de-burgerlijke-stand.md) | waarschuwt | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10 lid 1) |
 
 ## Bronnen
 

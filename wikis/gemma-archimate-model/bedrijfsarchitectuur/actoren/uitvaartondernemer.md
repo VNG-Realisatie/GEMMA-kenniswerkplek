@@ -64,22 +64,22 @@ De uitvaartondernemer doet voor de nabestaanden aangifte van overlijden bij de g
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| gemeentelijk | ja | Structureel: bij elke begraving bepaalt de beheerder in overleg met de uitvaartondernemer tijd en plaats (Groningen art. 7 lid 1). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| gemeentelijk | ja | Structureel: bij elke begraving bepaalt de beheerder in overleg met de uitvaartondernemer tijd en plaats (Groningen art. 7 lid 1). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| relaties | ja | Uitvaartondernemer overlegt met beheerder over Begraving (art. 7 lid 1) | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
-| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| relaties | ja | Uitvaartondernemer overlegt met beheerder over Begraving (art. 7 lid 1) | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | gedrag | nee | Uitvaartondernemer is een partij. |  |
-| handelende partij | ja | Uitvaartondernemer is een partij. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| handelende partij | ja | Uitvaartondernemer is een partij. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | hoedanigheid | nee | Uitvaartondernemer is een partij. |  |
 | samenwerkingsverband | nee | Uitvaartondernemer is een partij. |  |
 | toegangspunt | nee | Uitvaartondernemer is een partij. |  |
 | plaats | nee | Uitvaartondernemer is een partij. |  |
 | aanbod als geheel | nee | Uitvaartondernemer is een partij. |  |
-| los van verantwoordelijkheid | ja | Bestaat los van de lijkbezorging en vervult ook andere rollen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen |
+| los van verantwoordelijkheid | ja | Bestaat los van de lijkbezorging en vervult ook andere rollen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -101,7 +101,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip.
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | overlegt met de beheerder over tijd en plaats van | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 7 lid 1) |
+| associatie (gericht) | [Lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | overlegt met de beheerder over tijd en plaats van | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
 
 ## Bronnen
 

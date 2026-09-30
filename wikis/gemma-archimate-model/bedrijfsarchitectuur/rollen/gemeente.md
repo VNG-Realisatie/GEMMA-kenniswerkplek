@@ -73,17 +73,17 @@ Gemeente is de hoedanigheid waarin een afzonderlijke gemeente, zoals Amsterdam o
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Gemeente heeft en houdt gemeentelijke begraafplaats (art. 33; Groningen art. 3); verhaalt kosten (art. 22); voert onderhoud van graven uit (Groningen art. 23). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Gemeente heeft en houdt gemeentelijke begraafplaats (art. 33; Groningen art. 3); verhaalt kosten (art. 22); voert onderhoud van graven uit (Groningen art. 23). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Gemeente is een hoedanigheid. |  |
 | handelende partij | nee | De handelende partij is de afzonderlijke gemeente als rechtspersoon (Amsterdam, Utrecht); Gemeente zelf is de hoedanigheid (besluit redacteur 2026-09-30). |  |
-| hoedanigheid | ja | De hoedanigheid waarin een rechtspersoon als gemeente optreedt: houder van de gemeentelijke begraafplaats, drager van de kosten van de gemeentebegrafenis (Wlb art. 22, 33). | 2026-rijk-bw2-rechtspersonen, 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| hoedanigheid | ja | De hoedanigheid waarin een rechtspersoon als gemeente optreedt: houder van de gemeentelijke begraafplaats, drager van de kosten van de gemeentebegrafenis (Wlb art. 22, 33). | [2026-rijk-bw2-rechtspersonen](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | samenwerkingsverband | nee | Gemeente is een hoedanigheid. |  |
 | toegangspunt | nee | Gemeente is een hoedanigheid. |  |
 | plaats | nee | Gemeente is een hoedanigheid. |  |
@@ -93,8 +93,8 @@ Gemeente is de hoedanigheid waarin een afzonderlijke gemeente, zoals Amsterdam o
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| los van verantwoordelijkheid | nee | Gemeente is de verantwoordelijkheid zelf; de rechtspersoon die haar vervult bestaat los daarvan (BW art. 2:1). | 2026-rijk-bw2-rechtspersonen |
-| meerdere vervullers | ja | Elke afzonderlijke gemeente (Amsterdam, Utrecht, enzovoort) vervult deze rol. | 2026-rijk-bw2-rechtspersonen, 2024-rijk-gemeentewet-wettekst |
+| los van verantwoordelijkheid | nee | Gemeente is de verantwoordelijkheid zelf; de rechtspersoon die haar vervult bestaat los daarvan (BW art. 2:1). | [2026-rijk-bw2-rechtspersonen](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md) |
+| meerdere vervullers | ja | Elke afzonderlijke gemeente (Amsterdam, Utrecht, enzovoort) vervult deze rol. | [2026-rijk-bw2-rechtspersonen](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md), [2024-rijk-gemeentewet-wettekst](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -110,12 +110,12 @@ Match **zwak** met GEMMA-rol Gemeente (Business / Bedrijfsrollen): dezelfde naam
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | houdt in stand | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2026-rijk-wet-op-de-lijkbezorging-wettekst; 2026-vng-wet-op-de-lijkbezorging (art. 3 lid 1) |
-| associatie (gericht) | [Graf](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | heeft het uitsluitend recht tot begraven in | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 13 lid 1) |
-| toewijzing | [Onderhoud van graven](../bedrijfsdiensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) | voert uit | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 23) |
-| toewijzing | [Lijkbezorging door de burgemeester](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging-door-de-burgemeester.md) | verhaalt | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 22) |
-| associatie (gericht) | [Houder van de begraafplaats](houder-van-de-begraafplaats.md) | treedt op als (gemeentelijke begraafplaats) | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 33, 39 lid 2; Groningen art. 3) |
-| associatie (gericht) | [Houder van een plaats van bijzetting](houder-van-een-plaats-van-bijzetting.md) | treedt op als (urnengraf, urnennis op de gemeentelijke begraafplaats) | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 1 u, v, 3) |
+| associatie (gericht) | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | houdt in stand | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md); [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md); [2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) (art. 3 lid 1) |
+| associatie (gericht) | [Graf](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | heeft het uitsluitend recht tot begraven in | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 13 lid 1) |
+| toewijzing | [Onderhoud van graven](../bedrijfsdiensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) | voert uit | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
+| toewijzing | [Lijkbezorging door de burgemeester](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging-door-de-burgemeester.md) | verhaalt | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22) |
+| associatie (gericht) | [Houder van de begraafplaats](houder-van-de-begraafplaats.md) | treedt op als (gemeentelijke begraafplaats) | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md); [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 33, 39 lid 2; Groningen art. 3) |
+| associatie (gericht) | [Houder van een plaats van bijzetting](houder-van-een-plaats-van-bijzetting.md) | treedt op als (urnengraf, urnennis op de gemeentelijke begraafplaats) | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 u, v, 3) |
 
 ## Bronnen
 

@@ -70,22 +70,22 @@ In de lijkbezorging stelt de raad de beheersverordening en de verordening lijkbe
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| herkenbaar | ja | Gangbaar begrip bij lijkbezorging en begraafplaatsen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| gemeentelijk | ja | De gemeente ziet, doet of beslist hierover (zie relaties). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| betekenis in onderwerp | ja | Speelt een eigen rol in de lijkbezorging. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| relaties | ja | Gemeenteraad staat toe aan kerkgenootschap Bijzondere begraafplaats (art. 38); Gemeenteraad wijst aan Aanwijzing van grond voor bijzondere begraafplaats (art. 40 lid 1) | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
-| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| relaties | ja | Gemeenteraad staat toe aan kerkgenootschap Bijzondere begraafplaats (art. 38); Gemeenteraad wijst aan Aanwijzing van grond voor bijzondere begraafplaats (art. 40 lid 1) | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| zelfstandig beleidsbegrip | ja | Geen variant van een breder herkenbaar begrip; eigen behandeling in de bronnen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | gedrag | nee | Gemeenteraad is een partij. |  |
-| handelende partij | ja | Gemeenteraad is een partij. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| handelende partij | ja | Gemeenteraad is een partij. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | hoedanigheid | nee | Gemeenteraad is een partij. |  |
 | samenwerkingsverband | nee | Gemeenteraad is een partij. |  |
 | toegangspunt | nee | Gemeenteraad is een partij. |  |
 | plaats | nee | Gemeenteraad is een partij. |  |
 | aanbod als geheel | nee | Gemeenteraad is een partij. |  |
-| los van verantwoordelijkheid | ja | Bestaat los van de lijkbezorging en vervult ook andere rollen. | 2026-rijk-wet-op-de-lijkbezorging-wettekst |
+| los van verantwoordelijkheid | ja | Bestaat los van de lijkbezorging en vervult ook andere rollen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | meerdere vervullers | nee | Geen verantwoordelijkheid. |  |
 | per keer doorlopen | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gegroepeerd gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
@@ -107,8 +107,8 @@ Match **exact** met GEMMA-element Gemeenteraad (business-actor). Geen wijziging 
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | staat kerkgenootschap meer of grotere bijzondere begraafplaatsen toe | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 38) |
-| associatie (gericht) | [Beschikking](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | wijst grond aan voor bijzondere begraafplaats | | bron | | 2026-rijk-wet-op-de-lijkbezorging-wettekst (art. 40 lid 1) |
+| associatie (gericht) | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | staat kerkgenootschap meer of grotere bijzondere begraafplaatsen toe | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 38) |
+| associatie (gericht) | [Beschikking](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | wijst grond aan voor bijzondere begraafplaats | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 40 lid 1) |
 
 ## Bronnen
 

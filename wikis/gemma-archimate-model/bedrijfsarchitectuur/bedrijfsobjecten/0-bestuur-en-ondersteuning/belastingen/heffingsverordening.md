@@ -97,14 +97,14 @@ Gemeenten leggen de lijkbezorgingsrechten vast in een heffingsverordening, de ve
 
 | Kenmerk | Waarde | Onderbouwing | Bron |
 |---|---|---|---|
-| herkenbaar | ja | GEMMA- en GGM-object Heffingsverordening (1 Veiligheid en Vergunningen); Groningen art. 1 l. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
-| gemeentelijk | ja | De raad stelt haar vast. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
+| herkenbaar | ja | GEMMA- en GGM-object Heffingsverordening (1 Veiligheid en Vergunningen); Groningen art. 1 l. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| gemeentelijk | ja | De raad stelt haar vast. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | buiten kernlagen | nee | Geen doel, norm, waarde, thema of vermogen. |  |
-| betekenis in onderwerp | ja | Het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten (besluit redacteur 2026-09-30). | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
+| betekenis in onderwerp | ja | Het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten (besluit redacteur 2026-09-30). | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
-| relaties | ja | Verordening lijkbezorgingsrechten regelt lijkbezorgingsrechten (VNG retributies); de heffingsverordening regelt het recht voor onderhoud van graven (Groningen art. 23, 24): opgetild. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
-| zelfstandig beleidsbegrip | ja | GEMMA- en GGM-niveau. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
+| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| relaties | ja | Verordening lijkbezorgingsrechten regelt lijkbezorgingsrechten (VNG retributies); de heffingsverordening regelt het recht voor onderhoud van graven (Groningen art. 23, 24): opgetild. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| zelfstandig beleidsbegrip | ja | GEMMA- en GGM-niveau. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | gedrag | nee | Heffingsverordening is een passief ding. |  |
 | handelende partij | nee | Heffingsverordening is een passief ding. |  |
 | hoedanigheid | nee | Heffingsverordening is een passief ding. |  |
@@ -119,12 +119,12 @@ Gemeenten leggen de lijkbezorgingsrechten vast in een heffingsverordening, de ve
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
-| onderscheidbare exemplaren | ja | Per gemeente en heffing. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
-| levenscyclus | ja | Vastgesteld, gewijzigd, ingetrokken. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
-| wordt bewerkt | ja | De raad stelt haar vast; de gemeente past haar toe bij het heffen. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
+| onderscheidbare exemplaren | ja | Per gemeente en heffing. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| levenscyclus | ja | Vastgesteld, gewijzigd, ingetrokken. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| wordt bewerkt | ja | De raad stelt haar vast; de gemeente past haar toe bij het heffen. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 | afspraak | nee | Geen tweezijdige afspraak. |  |
 | waarneembare vorm | nee | Geen document of formulier. |  |
-| geautomatiseerd verwerkt | ja | GGM-entiteit Heffingsverordening. | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, 2026-vng-retributies |
+| geautomatiseerd verwerkt | ja | GGM-entiteit Heffingsverordening. | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
 
 ## GEMMA
 
@@ -140,12 +140,12 @@ Match **sterk** met GEMMA-element Heffingsverordening (business-object). Nieuw i
 
 | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
 |---|---|---|---|---|---|---|
-| associatie (gericht) | [Heffing](heffing.md) | regelt (verordening lijkbezorgingsrechten) | | bron | | 2026-vng-retributies (§ Lijkbezorgingsrechten) |
-| specialisatie | [Regeling](../besluitvorming/regeling.md) | is een | | bron | | 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen (art. 1 l) |
+| associatie (gericht) | [Heffing](heffing.md) | regelt (verordening lijkbezorgingsrechten) | | bron | | [2026-vng-retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
+| specialisatie | [Regeling](../besluitvorming/regeling.md) | is een | | bron | | [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 l) |
 
 ## Bronnen
 
-- Gemeentelijk Gegevensmodel 2.5.1 (2026-vng-ggm-2-5-1)
+- [Gemeentelijk Gegevensmodel 2.5.1](../../../../../../sources/raw/2026-vng-ggm-2-5-1.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
 - [Retributies (VNG), paragraaf Lijkbezorgingsrechten](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md)
 - [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)
