@@ -45,6 +45,14 @@ def test_sync_then_check_is_clean(harness_repo):
     assert harness.check(root) == []
 
 
+def test_check_without_bridges_ignores_missing_bridges(harness_repo):
+    root, wiki_root = harness_repo
+    harness.sync(root)
+    harness._remove_existing(root / ".claude" / "skills" / "wiki-update")
+    assert any("Brug ontbreekt" in p for p in harness.check(root))
+    assert harness.check(root, bruggen=False) == []
+
+
 def test_sync_creates_managed_copy_bridge(harness_repo):
     root, wiki_root = harness_repo
     harness.sync(root)

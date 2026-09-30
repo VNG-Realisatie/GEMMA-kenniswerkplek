@@ -232,13 +232,16 @@ def sync(repo_root: Path) -> dict:
     return verslag
 
 
-def check(repo_root: Path) -> list[str]:
+def check(repo_root: Path, bruggen: bool = True) -> list[str]:
     """Volledig deterministisch: regenereert alles in het geheugen en
     vergelijkt byte-voor-byte; controleert brug-integriteit; meldt elke
-    CLAUDE.md/CLAUDE.local.md op root- of wiki-pad."""
+    CLAUDE.md/CLAUDE.local.md op root- of wiki-pad.
+
+    Met bruggen=False blijft de brugcontrole achterwege. De bruggen staan in
+    .gitignore en bestaan dus niet in een verse checkout, zoals in CI."""
     problems: list[str] = []
 
-    for source_dir, target_dir in _bridge_pairs(repo_root):
+    for source_dir, target_dir in _bridge_pairs(repo_root) if bruggen else []:
         issue = _check_bridge(source_dir, target_dir)
         if issue:
             problems.append(issue)

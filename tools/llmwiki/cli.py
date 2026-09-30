@@ -484,7 +484,7 @@ def cmd_harness_sync(args) -> int:
 
 def cmd_harness_check(args) -> int:
     repo_root = _repo_root()
-    problems = harness.check(repo_root)
+    problems = harness.check(repo_root, bruggen=not args.zonder_bruggen)
     if problems:
         for p in problems:
             print(f"FOUT: {p}", file=sys.stderr)
@@ -689,6 +689,10 @@ def build_parser() -> argparse.ArgumentParser:
     p_harness_sync = harness_sub.add_parser("sync")
     p_harness_sync.set_defaults(func=cmd_harness_sync)
     p_harness_check = harness_sub.add_parser("check")
+    p_harness_check.add_argument(
+        "--zonder-bruggen", action="store_true",
+        help="Sla de controle van de skillbruggen in .claude/skills/ over (gitignored; voor CI)",
+    )
     p_harness_check.set_defaults(func=cmd_harness_check)
 
     p_workspace_check = sub.add_parser("workspace-check", help="Werkplekcontrole")
