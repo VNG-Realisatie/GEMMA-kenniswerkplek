@@ -71,6 +71,9 @@ def effectieve_paginas(wiki_root: Path, run_id: str | None) -> tuple[dict[Path, 
             doel = (wiki_root / p["pad"]).resolve()
             paginas[doel] = frontmatter.read(rdir / "changeset" / p["staged_bestand"])
             in_run.add(doel)
+            # Een hernoemde pagina vervangt de oude; die wordt na promote verwijderd en telt in de run niet mee
+            if p.get("vervangt"):
+                paginas.pop((wiki_root / p["vervangt"]).resolve(), None)
     return paginas, in_run
 
 
