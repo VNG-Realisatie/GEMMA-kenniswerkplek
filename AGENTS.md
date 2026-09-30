@@ -28,6 +28,7 @@ Bij tegenstrijdigheid: repository-veiligheidsregels > wiki-Rules > Skill-instruc
 - Tussenresultaten gaan via `llmwiki run start|status|complete|resume|close|abandon`, nooit alleen in het gesprek. Een fase is pas afgerond na `llmwiki run complete
   <fase>`, dat het artefact tegen een schema valideert.
 - State staat in `.work/runs/<run-id>/` (gitignored). Dat is het kladblok; het wordt na afronding automatisch opgeruimd (`llmwiki workspace-check --fix`), nooit door het Model.
+- Todo's, afspraken en nieuwe regels komen in de repository, op de meest specifieke plek waar ze gelden: voor één wiki in `wikis/<key>/todo.md` of `wikis/<key>/AGENTS.md`, voor één Skill in die Skill, voor de hele repository in `todo.md` of deze `AGENTS.md`. Het persoonlijke geheugen van een harness (in de home-directory) alleen voor persoonlijke voorkeuren van de gebruiker: het is niet zichtbaar op andere werkplekken en niet voor andere gebruikers.
 
 ## Schrijfwijze
 
