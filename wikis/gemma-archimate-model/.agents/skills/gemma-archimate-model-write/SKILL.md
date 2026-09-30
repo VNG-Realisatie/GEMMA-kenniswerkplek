@@ -22,7 +22,7 @@ Werkt alleen voor begrippen die in ASSESS een uitkomst `element` kregen. Doet ze
 5. **GEMMA-match** — `references/gemma-match.md`. De `gemma_*`-velden letterlijk uit `tools/gemma.py velden <id>`.
 6. **Definities** — `references/definitie.md` (herkenbaar, en alleen bij wezenlijk verschil ook formeel).
 7. **Hiërarchie** — `references/hierarchie.md` (generalisatie, specialisaties, GGM-componenten).
-8. **Relaties** — `references/relaties.md`; kandidaten uit het GGM en uit de bronnen samen: `uv run python tools/relaties.py voorstel <id> --bronnen <assessment.json> --markdown`. Een relatie staat alleen op de pagina van het bronelement; kolom `Bron` met bron-id en vindplaats.
+8. **Relaties** — `references/relaties.md`; kandidaten uit het GGM en uit de bronnen samen: `uv run python tools/relaties.py voorstel <id> --bronnen <assessment.json> --markdown`. Een relatie staat alleen op de pagina van het bronelement; kolom `Bron` met bron-id als link naar de bronanalyse en vindplaats ([IH2]).
 9. **Tegenhanger** — `references/tegenhangers.md`, als de uitkomst een tegenhanger noemt.
 10. **Pagina** — opbouw volgens `references/secties.md`; frontmatter volgens het schema van het paginatype (`schemas/<type>.schema.json`). In de frontmatter staan geen verwijzingen naar andere pagina's; die staan als relatieve links in de body.
 11. **Status.** `uv run python tools/bepaal_type.py status --uitkomst <uitkomst.json> --ggm-match <sterkte> --grondslag <grondslag>` geeft `review` of `kandidaat`. Bij `kandidaat`: sectie `## Ter discussie` met wat de redacteur moet beslissen. Zet nooit `goedgekeurd`.

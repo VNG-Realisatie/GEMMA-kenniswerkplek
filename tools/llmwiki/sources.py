@@ -135,10 +135,12 @@ def add(
                 if value
             },
         },
-        body=samenvatting or f"# {titel}\n\nNog geen samenvatting.\n",
+        body=samenvatting or f"# {titel}\n\nIndex nog niet gevuld: volg skill wiki-intake.\n",
     )
     index_path = index_dir / f"{bron_id}.md"
     frontmatter.write(index_path, index_page)
+    if dest_md.exists():
+        schrijf_inhoud(repo_root, bron_id)
     return index_path
 
 
@@ -190,3 +192,121 @@ def add_from_url(repo_root: Path, bron_id: str, url: str, workdir: Path, **kwarg
         markdown_override=markdown_override,
         **kwargs,
     )
+
+
+# --- Laag 1 vanuit een pagina: herleidbaarheid en inhoudsopgave ---
+
+
+def raw_paden(repo_root: Path, bron_id: str) -> tuple[Path | None, Path | None]:
+    """(Markdown-versie, origineel) van een bron in sources/raw/; None als het bestand ontbreekt.
+
+    Is het origineel zelf Markdown, dan is het origineel None (het is de Markdown-versie).
+    """
+    meta = read_index_entry(repo_root, bron_id)
+    md = _raw_dir(repo_root) / f"{bron_id}.md"
+    origineel = repo_root / meta["pad"] if meta.get("pad") else None
+    return (md if md.exists() else None,
+            origineel if origineel and origineel != md and origineel.exists() else None)
+
+
+def bronregel(repo_root: Path, bron_id: str, van: Path) -> str:
+    """Linkregel van een pagina (domein-lens) naar laag 1: de tekst, het origineel en de online bron.
+
+    `van` is het pad van de pagina waarin de regel komt; de links zijn relatief daaraan.
+    """
+    import os
+
+    meta = read_index_entry(repo_root, bron_id)
+    md, origineel = raw_paden(repo_root, bron_id)
+    if md is None and origineel is None:
+        raise FileNotFoundError(f"bron '{bron_id}' heeft geen bestand in sources/raw/")
+
+    def rel(doel: Path) -> str:
+        return Path(os.path.relpath(doel.resolve(), Path(van).resolve().parent)).as_posix()
+
+    delen = []
+    if md:
+        delen.append(f"[tekst]({rel(md)})")
+    if origineel:
+        delen.append(f"[origineel ({origineel.suffix.lstrip('.')})]({rel(origineel)})")
+    if meta.get("url"):
+        delen.append(f"[online]({meta['url']})")
+    return "Bron: " + " · ".join(delen)
+
+
+_KOP_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
+
+
+def inhoud(repo_root: Path, bron_id: str, max_niveau: int = 3) -> tuple[int, list[dict]]:
+    """Inhoudsopgave van de Markdown-versie in laag 1: (totaal aantal woorden, koppen).
+
+    Elke kop t/m `max_niveau` met regelnummer (1-based) en het aantal woorden tot de volgende
+    kop van gelijk of hoger niveau; niveau 1 is de hoogste kop in de tekst. Codeblokken worden overgeslagen. Deterministisch: dit is
+    het deel van de index dat het gereedschap maakt, niet het Model.
+    """
+    md, _ = raw_paden(repo_root, bron_id)
+    if md is None:
+        raise FileNotFoundError(f"bron '{bron_id}' heeft geen Markdown-versie in sources/raw/")
+    regels = md.read_text(encoding="utf-8").splitlines()
+    koppen, in_code = [], False
+    for nr, regel in enumerate(regels, start=1):
+        if regel.lstrip().startswith(("```", "~~~")):
+            in_code = not in_code
+            continue
+        m = None if in_code else _KOP_RE.match(regel)
+        if m:
+            koppen.append({"niveau": len(m.group(1)), "kop": m.group(2).replace("|", r"\|"), "regel": nr})
+    # Niveau telt vanaf de hoogste kop in de tekst: conversies beginnen niet altijd bij '#'.
+    hoogste = min((k["niveau"] for k in koppen), default=1)
+    for k in koppen:
+        k["niveau"] -= hoogste - 1
+    koppen = [k for k in koppen if k["niveau"] <= max_niveau]
+    woorden_per_regel = [len(r.split()) for r in regels]
+    for i, k in enumerate(koppen):
+        einde = next((v["regel"] for v in koppen[i + 1:] if v["niveau"] <= k["niveau"]), len(regels) + 1)
+        k["woorden"] = sum(woorden_per_regel[k["regel"]:einde - 1])
+    return sum(woorden_per_regel), koppen
+
+
+def inhoud_markdown(repo_root: Path, bron_id: str, max_niveau: int = 3) -> str:
+    """De inhoudsopgave als sectie `## Inhoud` voor sources/index/<bron-id>.md."""
+    totaal, koppen = inhoud(repo_root, bron_id, max_niveau)
+    kop = f"## Inhoud\n\nTekst: `sources/raw/{bron_id}.md`, {totaal} woorden. Regel = regelnummer in die tekst.\n\n"
+    if not koppen:
+        return kop + "De tekst heeft geen koppen.\n"
+    rijen = ["| Kop | Regel | Woorden |", "|---|---|---|"]
+    rijen += [f"| {'→ ' * (k['niveau'] - 1)}{k['kop']} | {k['regel']} | {k['woorden']} |" for k in koppen]
+    return kop + "\n".join(rijen) + "\n"
+
+
+def _vervang_sectie(body: str, kop: str, nieuw: str) -> str:
+    """Vervang `## <kop>` tot de volgende `## `-kop door `nieuw`; ontbreekt de sectie, dan achteraan."""
+    m = re.search(rf"(?m)^## {re.escape(kop)}\s*$", body)
+    if not m:
+        return body.rstrip("\n") + "\n\n" + nieuw
+    rest = body[m.end():]
+    volgende = re.search(r"(?m)^## ", rest)
+    return body[: m.start()] + nieuw + ("\n" + rest[volgende.start():] if volgende else "")
+
+
+def schrijf_inhoud(repo_root: Path, bron_id: str, max_niveau: int = 3) -> Path:
+    """Zet of vervang de sectie `## Inhoud` in sources/index/<bron-id>.md."""
+    pad = _index_dir(repo_root) / f"{bron_id}.md"
+    page = frontmatter.read(pad)
+    page.body = _vervang_sectie(page.body, "Inhoud", inhoud_markdown(repo_root, bron_id, max_niveau))
+    frontmatter.write(pad, page)
+    return pad
+
+
+def schrijf_bronregel(repo_root: Path, bron_id: str, pagina: Path) -> None:
+    """Zet of vervang de regel `Bron: …` direct onder de `# `-titel van een pagina (domein-lens)."""
+    page = frontmatter.read(pagina)
+    regel = bronregel(repo_root, bron_id, pagina)
+    body = re.sub(r"(?m)^Bron: .*\n\n?", "", page.body, count=1)
+    titel = re.search(r"(?m)^# .+\n", body)
+    if titel is None:
+        raise ValueError(f"{pagina}: geen '# '-titel om de bronregel onder te zetten")
+    page.body = body[: titel.end()] + "\n" + regel + "\n" + body[titel.end():]
+    frontmatter.write(pagina, page)
+
+

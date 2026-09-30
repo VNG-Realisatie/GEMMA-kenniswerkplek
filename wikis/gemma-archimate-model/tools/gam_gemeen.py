@@ -217,6 +217,43 @@ def relatief(van: Path, naar: Path) -> str:
     return Path(os.path.relpath(naar.resolve(), van.resolve().parent)).as_posix()
 
 
+# --- Bronverwijzingen: pagina → bronanalyse (domein-lens) → sources/raw/ ---
+
+BRON_ID_RE = re.compile(r"\b[0-9]{4}-[a-z0-9]+(?:-[a-z0-9]+)*\b")
+
+
+def modelbronnen(wiki_root: Path = WIKI_ROOT) -> set[str]:
+    y = wiki_yaml(wiki_root)
+    return {y.get("ggm", {}).get("bron"), y.get("gemma", {}).get("bron")} - {None}
+
+
+def bron_doel(wiki_root: Path, bron_id: str) -> Path | None:
+    """Waar een verwijzing naar deze bron heen linkt: de bronanalyse. Een modelbron (GGM, GEMMA) heeft geen
+    bronanalyse (tools/ggm.py en tools/gemma.py zijn haar lens) en linkt naar haar tekst in sources/raw/."""
+    if bron_id in modelbronnen(wiki_root):
+        pad = paths.find_repo_root(wiki_root) / "sources" / "raw" / f"{bron_id}.md"
+        return pad.resolve() if pad.exists() else None
+    map_ = wiki_root / wiki_yaml(wiki_root).get("page_types", {}).get("bronanalyse", {}).get("dir", "bronanalyses")
+    treffers = sorted(map_.glob(f"*/{bron_id}.md"))
+    return treffers[0].resolve() if treffers else None
+
+
+def bronnen_als_link(van: Path, tekst: str, wiki_root: Path = WIKI_ROOT) -> str:
+    """Zet bron-id's die als platte tekst in `tekst` staan om naar links; bestaande links blijven staan.
+
+    Een id zonder bronanalyse (of een datum die op een id lijkt) blijft platte tekst: de controle meldt het.
+    """
+    def vervang(m: re.Match) -> str:
+        doel = bron_doel(wiki_root, m.group(0))
+        return f"[{m.group(0)}]({relatief(van, doel)})" if doel else m.group(0)
+
+    delen, vorige = [], 0
+    for m in LINK_RE.finditer(tekst):
+        delen += [BRON_ID_RE.sub(vervang, tekst[vorige:m.start()]), m.group(0)]
+        vorige = m.end()
+    return "".join(delen) + BRON_ID_RE.sub(vervang, tekst[vorige:])
+
+
 # --- Modelbestanden ophalen van GitHub (wiki.yaml `<sleutel>.herkomst`) ---
 
 

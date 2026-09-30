@@ -38,7 +38,8 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
         pad = wiki / f"bronanalyses/vergunningen/{bron}.md"
         pad.parent.mkdir(parents=True, exist_ok=True)
         pad.write_text(element_tekst({"id": bron, "type": "bronanalyse", "onderwerp": "vergunningen",
-                                      "bronnen": [bron], "relevant": "ja"}), encoding="utf-8")
+                                      "bronnen": [bron], "relevant": "ja"},
+                                     f"# {bron}\n\nBron: [tekst](../../../../sources/raw/{bron}.md)\n"), encoding="utf-8")
 
     state = runs.start(wiki, wiki_yaml, "gemma-archimate-model-update", onderwerp="vergunningen")
     run_id, rdir = state["run_id"], runs.run_dir(wiki, state["run_id"])
@@ -87,7 +88,7 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
             ("bedrijfsproces", element("aanvraag-behandelen", "Aanvraag behandelen", "bedrijfsproces", "business-process", proces_ja, "review",
                                        bronnen + "\n## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n"
                                        "|---|---|---|---|---|---|---|\n| toegang (schrijven) | "
-                                       "[Beschikking](../../../bedrijfsobjecten/8-wonen/vergunningen/beschikking.md) | maakt | | bron | | 2026-utrecht-nota (§2) |\n")),
+                                       "[Beschikking](../../../bedrijfsobjecten/8-wonen/vergunningen/beschikking.md) | maakt | | bron | | [2026-utrecht-nota](../../../../bronanalyses/vergunningen/2026-utrecht-nota.md) (§2) |\n")),
         "begrippen/vergunningen.md": ("onderwerp", element_tekst(
             {"id": "vergunningen", "type": "onderwerp", "naam": "Vergunningen", "status": "afgerond",
              "bronnen": ["2026-utrecht-nota", "2026-overheid-gemeentewet"], "conclusie": "Twee elementen, één ter discussie."},

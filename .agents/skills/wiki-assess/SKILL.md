@@ -15,7 +15,7 @@ Doel: de ASSESS-fase. Bepaalt welke pagina's veranderen, zonder al te schrijven.
 
 ## Stappen
 
-1. Lees eerst laag 2 (`sources/index/`, kort), dan laag 3 (de domein-lens van deze run). Laag 1 alleen voor specifieke passages.
+1. Lees eerst laag 2 (`sources/index/`: de technische index met samenvatting, begrippen en inhoudsopgave met regelnummers), dan laag 3 (de domein-lens van deze run). Uit laag 1 lees je alleen de passages die index of domein-lens aanwijzen, op regelnummer.
 2. Voor elke bron: welke bestaande pagina's raakt dit, en zijn er nieuwe pagina's nodig? Zie `references/criteria.md` voor de afweging nieuw/wijzigen/geen actie.
 3. Schrijf per voorstel: doelpad, soort (`nieuw`/`wijzigen`/`geen_actie`), motivering in gewone taal, en de bron-id's waarop het voorstel steunt.
 4. Rond de fase af: `llmwiki run complete assess --run <run-id> --data

@@ -40,12 +40,15 @@ Alle bronnen staan één keer centraal in de repository en worden door alle wiki
 | Laag | Plaats | Wat | Voor wie |
 |---|---|---|---|
 | 1. Origineel | `sources/raw/` | Het document (pdf, docx) en een Markdown-versie met dezelfde naam. Wordt nooit gewijzigd | Alle wiki's |
-| 2. Intake | `sources/index/<bron>.md` | Gegevens, samenvatting en thema's, één keer gemaakt | Alle wiki's |
-| 3. Domein-lens | `wikis/<wiki>/bronnen/<onderwerp>/<bron>.md` | Wat deze bron betekent voor dit domein, met uittreksels | Eén wiki |
+| 2. Technische index | `sources/index/<bron>.md` | Gegevens, korte samenvatting, trefwoorden, begrippen en een inhoudsopgave met regelnummers. Alleen voor de AI, om context te sparen (skill `wiki-intake`) | Alle wiki's |
+| 3. Domein-lens | `wikis/<wiki>/<map>/<onderwerp>/<bron>.md` (de map staat in `wiki.yaml`, bijv. `bronnen/` of `bronanalyses/`) | Wat deze bron betekent voor dit domein, met uittreksels, en onder de titel links naar laag 1 | Eén wiki |
+
+**Herleidbaarheid loopt via links, van pagina naar brontekst:** pagina → domein-lens → laag 1. Elke verwijzing naar een bron op een pagina is een link naar de domein-lens van die bron, ook in tabellen; de domein-lens linkt naar de tekst, het origineel en de online bron. De technische index zit niet in deze keten: een pagina linkt nooit naar laag 2.
 
 Zo voorkomen we dat een wiki verzuipt in alle bronnen:
 - **Filter per wiki.** In `wiki.yaml` staat welke thema's (tags) een wiki gebruikt. Andere bronnen ziet de AI voor die wiki niet.
 - **Werk vanuit een onderwerp.** Elke taak begint bij een onderwerppagina (`onderwerpen/<thema>.md`). Die pagina noemt de bronnen die ertoe doen; alleen die leest de AI.
+- **Eerst de index, dan de passage.** De AI leest eerst de technische index en daarna alleen de passages uit laag 1 die ertoe doen, op regelnummer.
 
 ## 2. Principes
 

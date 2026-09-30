@@ -17,6 +17,11 @@ Bij de eerste Vraag in een Sessie, vóór inhoudelijk werk:
 - Vul akkoordvelden (`akkoord_voor_publicatie`, `beoordeeld_door`) nooit zelf in een publicatie- of promotievoorstel in, en wijzig daar nooit de kolommen Besluit en Opmerking: die zijn van de redacteur.
 - Nooit credentials in bestanden. Alleen omgevingsvariabelen, genoemd bij naam in `wiki.yaml`.
 
+## Herleidbaarheid
+
+- Elke verwijzing naar een bron op een pagina is een relatieve link naar de domein-lens van die bron (laag 3), ook in tabellen; een bron-id als platte tekst is geen verwijzing. De domein-lens heeft onder de titel de links naar laag 1 (`llmwiki source bronregel --schrijf`). Keten: pagina → domein-lens → `sources/raw/`.
+- `sources/index/` is een technische index om context te sparen (skill `wiki-intake`), geen schakel in die keten: pagina's linken er nooit naar.
+
 ## Rangorde
 
 Bij tegenstrijdigheid: repository-veiligheidsregels > wiki-Rules > Skill-instructies

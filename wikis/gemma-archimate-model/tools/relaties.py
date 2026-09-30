@@ -5,12 +5,12 @@ relatieve link naar het doelelement (Obsidian toont de omgekeerde kant als backl
 
     | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
     |---|---|---|---|---|---|---|
-    | compositie | [Onderdeel beschikking](onderdeel-beschikking.md) | bevat | 1 → 1..* | ggm-exact | EAID_… | 2026-overheid-awb (art. 1:3) |
+    | compositie | [Onderdeel beschikking](onderdeel-beschikking.md) | bevat | 1 → 1..* | ggm-exact | EAID_… | [2026-overheid-awb](../../../../bronanalyses/…/2026-overheid-awb.md) (art. 1:3) |
 
 Relatie: associatie, associatie (gericht), aggregatie, compositie, specialisatie, toewijzing,
 toegang (lezen|schrijven|lezen-schrijven), triggering, stroom, realisatie, bediening.
 Grondslag: ggm-exact | ggm-afgeleid | bron. GGM-relatie: één of meer GUID's (komma-gescheiden), leeg bij `bron`.
-Bron: bron-id's met vindplaats; verplicht bij `bron`, bij `ggm-*` de bronnen die de relatie bevestigen.
+Bron: bron-id's als link naar de bronanalyse, met vindplaats; verplicht bij `bron`, bij `ggm-*` de bronnen die de relatie bevestigen.
 
 Relaties worden samen met de elementen gevonden: de bronanalyse noemt relaties tussen begrippen (werkwoord +
 vindplaats), ASSESS neemt ze op bij de voorstellen, en `uit-bronnen` zet ze om naar ArchiMate op basis van de
@@ -54,7 +54,7 @@ RELATIES = {
 TOEGANG = ("lezen", "schrijven", "lezen-schrijven")
 GRONDSLAGEN = ("ggm-exact", "ggm-afgeleid", "bron")
 KOLOMMEN = ["Relatie", "Naar", "Naam", "Kardinaliteit", "Grondslag", "GGM-relatie", "Bron"]
-BRON_ID_RE = re.compile(r"\b[0-9]{4}-[a-z0-9]+(?:-[a-z0-9]+)*\b")
+BRON_ID_RE = gam_gemeen.BRON_ID_RE
 
 ACTIEF = {"business-actor", "business-role", "business-collaboration", "business-interface"}
 GEDRAG = {"business-process", "business-function", "business-event", "business-service", "business-interaction"}
@@ -144,7 +144,7 @@ def lees_tabel(pad: Path, body: str, index_op_pad: dict[Path, str]) -> list[Rela
         ggm = [g.strip() for g in rij.get("GGM-relatie", "").split(",") if g.strip()]
         if grondslag.startswith("ggm") and not ggm:
             fouten.append("grondslag ggm-* zonder GGM-relatie")
-        bronnen = BRON_ID_RE.findall(rij.get("Bron", ""))
+        bronnen = list(dict.fromkeys(BRON_ID_RE.findall(rij.get("Bron", ""))))  # een id staat in linktekst én linkdoel
         if grondslag == "bron" and not bronnen:
             fouten.append("grondslag bron zonder bron-id in kolom 'Bron'")
         result.append(Relatie(RELATIES.get(soort, soort), naar, rij.get("Naam", ""), rij.get("Kardinaliteit", ""),
@@ -513,7 +513,7 @@ def markdown_rijen(element_id: str, kandidaten: list[Kandidaat], wiki_root: Path
         label = terug[k.relatie] + (" (gericht)" if k.gericht and k.relatie == "association" else "")
         if k.relatie == "access":
             label += f" ({k.toegang or 'lezen-schrijven'})"
-        bron = ", ".join(k.bronnen) + (f" ({k.vindplaats})" if k.vindplaats else "")
+        bron = ", ".join(gam_gemeen.bronnen_als_link(van, b, wiki_root) for b in k.bronnen) + (f" ({k.vindplaats})" if k.vindplaats else "")
         regels.append(f"| {label} | {naar} | {k.naam} | {k.kardinaliteit} | {k.grondslag} | {', '.join(k.ggm_relaties)} | {bron} |")
     return "\n".join(regels) + "\n"
 

@@ -55,8 +55,10 @@ bijgewerkt: <datum>
 
 # <titel van de bron>
 
+Bron: [tekst](../../../../sources/raw/<bron-id>.md) · [origineel (pdf)](…) · [online](<url>)
+
 ## Samenvatting
-Wat deze bron betekent voor de architectuur van dit onderwerp (max. 500 woorden; herhaal de intake niet).
+Wat deze bron betekent voor de architectuur van dit onderwerp (max. 500 woorden; herhaal de technische index niet).
 
 ## Kernbegrippen
 | Begrip | Omschrijving in de bron | Andere termen in deze bron | Vindplaats |
@@ -73,7 +75,7 @@ Welke objecten, rollen, processen, diensten of gebeurtenissen; welke specialisat
 > Letterlijke tekst die een begrip definieert. (vindplaats: art./§/pagina)
 ```
 
-Links naar elementpagina's voeg je toe zodra die bestaan. Citaten zijn platte tekst, zonder links.
+De regel `Bron:` zet het gereedschap: `uv run python -m llmwiki source bronregel <bron-id> --van bronanalyses/<onderwerp>/<bron-id>.md --schrijf`, nadat de pagina met titel bestaat. Het is de schakel van de pagina's naar de brontekst ([IH2]); zonder die regel meldt `tools/check_elementen.py` een fout. Links naar elementpagina's voeg je toe zodra die bestaan. Citaten zijn platte tekst, zonder links.
 
 In *Andere termen in deze bron* staan de andere namen die de bron voor hetzelfde begrip gebruikt, en bij een beleids- of praktijkbron de wetsterm waarnaar de bron verwijst (bijv. "urn" in de bron, wettelijk "asbus"). Zo zijn wetsterm en gangbare term al bij de ingest aan elkaar gekoppeld.
 

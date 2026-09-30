@@ -39,7 +39,7 @@ Relaties uit de bronnen worden samen met de elementen gevonden:
 
 1. **INGEST** — de bronanalyse noemt in `## Relaties` de relaties tussen begrippen zoals de bron ze formuleert: `| Van | Werkwoord | Naar | Vindplaats |`, met begripsnamen als platte tekst en het werkwoord letterlijk uit de bron.
 2. **ASSESS** — de relaties gaan mee in het voorstel van het begrip aan de van-kant: `"relaties": [{"van": "…", "werkwoord": "…", "naar": "…", "bronnen": ["<bron-id>"], "vindplaats": "…"}]`. Na `bepaal_type.py evalueer --schrijf` toont `uv run python tools/relaties.py uit-bronnen <assessment.json>` welke relaties overblijven, welke zijn opgetild (een kant is een eigenschap of specialisatie zonder pagina) en welke vervallen (een kant is geen element), met reden. Leg vervallen relaties die wel belangrijk lijken voor aan de redacteur.
-3. **WRITE** — `uv run python tools/relaties.py voorstel <id> --bronnen <assessment.json> --markdown` voegt ze samen met de GGM-kandidaten. Een bronrelatie tussen dezelfde elementen als een GGM-relatie bevestigt die (bron-id in kolom `Bron`, grondslag blijft `ggm-*`); anders wordt het een rij met grondslag `bron`, met de bron-id's en vindplaats in kolom `Bron`.
+3. **WRITE** — `uv run python tools/relaties.py voorstel <id> --bronnen <assessment.json> --markdown` voegt ze samen met de GGM-kandidaten. Een bronrelatie tussen dezelfde elementen als een GGM-relatie bevestigt die (bron-id in kolom `Bron`, grondslag blijft `ggm-*`); anders wordt het een rij met grondslag `bron`, met de bron-id's en vindplaats in kolom `Bron`. Bron-id's staan als link naar de bronanalyse ([IH2]); de tool zet die links.
 
 De typen van beide elementen bepalen de soort relatie, het werkwoord de richting en de variant:
 

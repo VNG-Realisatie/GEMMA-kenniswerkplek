@@ -41,7 +41,7 @@ Secties, in deze volgorde (alleen wat van toepassing is):
 | `# <naam>` | altijd | |
 | `## Definitie` | altijd, als eerste sectie | De herkenbare `definitie` uit de frontmatter, letterlijk. Bij een formele definitie daaronder `definitie_formeel` als blockquote met vindplaats, en in één of twee zinnen het verschil (zie `definitie.md`) |
 | `## Beschrijving` | altijd | Het element zoals de gemeente erover praat |
-| `## Kenmerken` | altijd | Tabel `\| Kenmerk \| Waarde \| Onderbouwing \| Bron \|` voor alle kenmerken (onderbouwing uit ASSESS) |
+| `## Kenmerken` | altijd | Tabel `\| Kenmerk \| Waarde \| Onderbouwing \| Bron \|` voor alle kenmerken (onderbouwing uit ASSESS); in kolom Bron elk bron-id als link naar de bronanalyse ([IH2]) |
 | `## GGM-bron` | grondslag `ggm-entiteit` | GGM-definitie als blockquote, matchsterkte, afwijkingen |
 | `## Afleiding` / `## Procesbron` / `## Juridische bron` | per grondslag | Zie `grondslag.md` |
 | `## GEMMA` | altijd | Matchsterkte en wat verandert ten opzichte van GEMMA, of "nieuw voor GEMMA" |
@@ -50,8 +50,10 @@ Secties, in deze volgorde (alleen wat van toepassing is):
 | `## GGM-duplicaten` / `## Homoniemen` | bij naamgenoten in het GGM | Zie `ggm-match.md` |
 | `## Tegenhanger` | bij tegenhanger | Zie `tegenhangers.md` |
 | `## Relaties` | als er relaties zijn | Zie `relaties.md`; alleen uitgaande relaties |
-| `## Bronnen` | altijd | Links naar de bronanalyses: `[titel](../../../../bronanalyses/<onderwerp>/<bron-id>.md)` |
+| `## Bronnen` | altijd | Per bron in `bronnen:` een link naar de bronanalyse: `[titel](../../../../bronanalyses/<onderwerp>/<bron-id>.md)`; een modelbron (GGM, GEMMA) linkt naar `sources/raw/<bron-id>.md` ([IH2]) |
 | `## Ter discussie` | status `kandidaat` | Wat de redacteur moet beslissen, met de redenen uit de beslistabel |
 | `## Terugmelding GGM` | bij terugmelding | Link naar `analyses/ggm-terugmeldingen.md` met het nummer |
+
+Bron-id's als platte tekst zet `gam_gemeen.bronnen_als_link(<pad van de pagina>, <tekst>)` om naar links; `tools/relaties.py voorstel --markdown` levert de kolom Bron al met links.
 
 Voor actor, rol, gebeurtenis, dienst, proces en functie gelden dezelfde secties; "welke rollen een actor vervult" of "wie een proces uitvoert" zijn relaties (toewijzing) in `## Relaties`, geen aparte secties. De omgekeerde kant ("vervuld door", "gebruikt door") is de backlink.

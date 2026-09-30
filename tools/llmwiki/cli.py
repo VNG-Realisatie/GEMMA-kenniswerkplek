@@ -134,6 +134,33 @@ def cmd_source_show(args) -> int:
     return 0
 
 
+def cmd_source_inhoud(args) -> int:
+    try:
+        if args.schrijf:
+            print(f"Inhoud bijgewerkt: {sources.schrijf_inhoud(_repo_root(), args.id, args.niveau)}")
+        else:
+            sys.stdout.reconfigure(encoding="utf-8")
+            print(sources.inhoud_markdown(_repo_root(), args.id, args.niveau), end="")
+    except FileNotFoundError as exc:
+        print(f"FOUT: {exc}", file=sys.stderr)
+        return 1
+    return 0
+
+
+def cmd_source_bronregel(args) -> int:
+    try:
+        if args.schrijf:
+            sources.schrijf_bronregel(_repo_root(), args.id, Path(args.van))
+            print(f"Bronregel gezet: {args.van}")
+        else:
+            sys.stdout.reconfigure(encoding="utf-8")
+            print(sources.bronregel(_repo_root(), args.id, Path(args.van)))
+    except (FileNotFoundError, ValueError) as exc:
+        print(f"FOUT: {exc}", file=sys.stderr)
+        return 1
+    return 0
+
+
 def cmd_run_start(args) -> int:
     wiki_root = _wiki_root(args)
     wiki_yaml = paths.load_wiki_yaml(wiki_root)
@@ -599,6 +626,18 @@ def build_parser() -> argparse.ArgumentParser:
     p_source_show = source_sub.add_parser("show")
     p_source_show.add_argument("id")
     p_source_show.set_defaults(func=cmd_source_show)
+
+    p_source_inhoud = source_sub.add_parser("inhoud", help="Inhoudsopgave van laag 1 (koppen, regelnummers, woorden) voor de index")
+    p_source_inhoud.add_argument("id")
+    p_source_inhoud.add_argument("--niveau", type=int, default=3, help="Diepste kopniveau (standaard 3)")
+    p_source_inhoud.add_argument("--schrijf", action="store_true", help="Zet de sectie '## Inhoud' in sources/index/<id>.md")
+    p_source_inhoud.set_defaults(func=cmd_source_inhoud)
+
+    p_source_bronregel = source_sub.add_parser("bronregel", help="Linkregel naar laag 1 voor een domein-lens")
+    p_source_bronregel.add_argument("id")
+    p_source_bronregel.add_argument("--van", required=True, help="Pad van de pagina waarin de regel komt")
+    p_source_bronregel.add_argument("--schrijf", action="store_true", help="Zet de regel onder de titel van de pagina --van")
+    p_source_bronregel.set_defaults(func=cmd_source_bronregel)
 
     p_run = sub.add_parser("run", help="Run-State beheren")
     run_sub = p_run.add_subparsers(dest="run_command", required=True)

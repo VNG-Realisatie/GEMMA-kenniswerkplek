@@ -91,6 +91,14 @@ class Wiki:
         self.op_pad = {el.pad: el.id for el in self.elementen}
         self.repo_root = paths.find_repo_root(wiki_root)
         self.modelbronnen = {self.yaml.get("ggm", {}).get("bron"), self.yaml.get("gemma", {}).get("bron")} - {None}
+        self.analyse_pad = {p.meta.get("id"): pad for pad, p in self.van_type("bronanalyse")}
+
+    def bron_doel(self, bron_id: str) -> Path | None:
+        """Waar een verwijzing naar een bron heen linkt: de bronanalyse, of bij een modelbron de tekst in sources/raw/."""
+        if bron_id in self.modelbronnen:
+            pad = (self.repo_root / "sources" / "raw" / f"{bron_id}.md").resolve()
+            return pad if pad.exists() else None
+        return self.analyse_pad.get(bron_id)
 
     def van_type(self, paginatype: str) -> list[tuple[Path, frontmatter.Page]]:
         return [(pad, p) for pad, p in self.paginas.items() if p.meta.get("type") == paginatype]
@@ -218,6 +226,17 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
     if not any(el.pad in _gelinkte_paden(w, pad, p.body) for pad, p in w.van_type("onderwerp")):
         fout("herleidbaarheid", "element staat in geen enkele begrippenlijst (begrippen/<onderwerp>.md)")
 
+    # Elke bronverwijzing is een link: pagina → bronanalyse → sources/raw/ (repository-regel Herleidbaarheid)
+    for kop in ("Kenmerken", "Relaties"):
+        for rij in gam_gemeen.tabel(gam_gemeen.sectie(el.body, kop)):
+            for melding in _bronlinks(w, el.pad, rij.get("Bron", "")):
+                fout("bron-link", f"'## {kop}': {melding}")
+    in_bronnen = _gelinkte_paden(w, el.pad, gam_gemeen.sectie(el.body, "Bronnen") or "")
+    for bron in meta.get("bronnen", []) or []:
+        linkdoel = w.bron_doel(bron)
+        if linkdoel and linkdoel not in in_bronnen:
+            fout("bron-link", f"'## Bronnen' linkt niet naar {'de tekst' if bron in w.modelbronnen else 'de bronanalyse'} van '{bron}'")
+
     # Relaties
     gezien = set()
     for r in alle_relaties.get(el.id, []):
@@ -276,6 +295,22 @@ def _gelinkte_paden(w: Wiki, van: Path, tekst: str) -> set[Path]:
             if not m.group("doel").startswith(("http://", "https://", "#", "mailto:"))}
 
 
+def _bronlinks(w: Wiki, van: Path, cel: str) -> list[str]:
+    """Meldingen voor een Bron-cel: elk bron-id staat als link naar de bronanalyse (bij een modelbron: de tekst)."""
+    meldingen = []
+    for bron in dict.fromkeys(gam_gemeen.BRON_ID_RE.findall(gam_gemeen.LINK_RE.sub("", cel or ""))):
+        meldingen.append(f"bron '{bron}' staat er als tekst; maak er een link naar de bronanalyse van"
+                         if w.bron_doel(bron) else f"bron '{bron}' heeft geen bronanalyse")
+    for m in gam_gemeen.LINK_RE.finditer(cel or ""):
+        if gam_gemeen.BRON_ID_RE.fullmatch(m.group("tekst")):
+            doel = w.bron_doel(m.group("tekst"))
+            if doel is None:
+                meldingen.append(f"bron '{m.group('tekst')}' heeft geen bronanalyse")
+            elif gam_gemeen.doel_van_link(van, m.group("doel")) != doel:
+                meldingen.append(f"link '{m.group('tekst')}' wijst niet naar de bronanalyse van die bron")
+    return meldingen
+
+
 def _formulering(doel: str, tekst: str) -> list[Bevinding]:
     b = []
     for m in gam_gemeen.LINK_RE.finditer(tekst):
@@ -313,6 +348,11 @@ def controleer_overig(w: Wiki) -> list[Bevinding]:
             b.append(Bevinding("bronanalyse", w.rel(pad), "fout", "relatietabel mist kolom Van, Werkwoord, Naar of Vindplaats"))
         if bron_id not in (p.meta.get("bronnen") or []):
             b.append(Bevinding("bronanalyse", w.rel(pad), "fout", "de eigen bron-id ontbreekt in bronnen:"))
+        tekst = (w.repo_root / "sources" / "raw" / f"{bron_id}.md").resolve()
+        regel = re.search(r"(?m)^Bron: .*$", p.body)
+        if regel is None or tekst not in _gelinkte_paden(w, pad, regel.group(0)):
+            b.append(Bevinding("bronregel", w.rel(pad), "fout", f"onder de titel ontbreekt 'Bron:' met een link naar "
+                               f"sources/raw/{bron_id}.md (llmwiki source bronregel {bron_id} --van <pad> --schrijf)"))
         begrippen = onderwerpen.get(onderwerp)
         if begrippen is None or bron_id not in (begrippen[1].meta.get("bronnen") or []):
             b.append(Bevinding("bronanalyse", w.rel(pad), "fout", f"bron staat niet in de bronnenlijst van begrippen/{onderwerp}.md"))

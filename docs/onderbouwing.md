@@ -1302,14 +1302,15 @@ Gevolgen:
 | Laag | Plaats | Inhoud | Wie schrijft | Gedeeld |
 |---|---|---|---|---|
 | 1. Ruwe originelen | `sources/raw/<bron-id>.<ext>` en `sources/raw/<bron-id>.md` | Origineel (pdf, docx) en de Markdown-conversie met dezelfde naam | `llmwiki source add` (script) | Ja |
-| 2. Gedeelde intake | `sources/index/<bron-id>.md` | Metadata, managementsamenvatting, inhoudsopgave, thematags | Generieke Skill `wiki-intake`, één keer per bron | Ja |
-| 3. Domein-lens | `wikis/<key>/bronnen/<onderwerp>/<bron-id>.md` | Wiki-specifieke analyse en uittreksels met paragraafverwijzing naar laag 1 | Wiki-Skill tijdens INGEST | Nee |
+| 2. Technische index | `sources/index/<bron-id>.md` | Gegevens, samenvatting, trefwoorden, begrippen en inhoudsopgave met regelnummers; om context te sparen, geen schakel in de herleidbaarheid | `llmwiki source add` (gegevens, inhoudsopgave) en generieke Skill `wiki-intake` (tekst), één keer per bron | Ja |
+| 3. Domein-lens | `wikis/<key>/<map uit wiki.yaml>/<onderwerp>/<bron-id>.md` (bijv. `bronnen/` of `bronanalyses/`) | Wiki-specifieke analyse en uittreksels met vindplaats, en onder de titel links naar laag 1 | Wiki-Skill tijdens INGEST | Nee |
 
 Regels:
-- **Bron-id** `<jaar>-<uitgever>-<korte-titel>`, kleine letters en koppeltekens; gelijk in alle drie lagen. Dat maakt de keten bron → lens → kandidaat herleidbaar via bestandsnaam en frontmatter.
+- **Bron-id** `<jaar>-<uitgever>-<korte-titel>`, kleine letters en koppeltekens; gelijk in alle drie lagen.
+- **Herleidbaarheid loopt via links, van pagina naar brontekst.** Elke verwijzing naar een bron op een pagina is een relatieve link naar de domein-lens van die bron; de domein-lens heeft direct onder de titel een regel met links naar laag 1 (tekst, origineel, online), gemaakt met `llmwiki source bronregel --schrijf`. De keten is dus pagina → domein-lens → laag 1. Laag 2 zit niet in die keten: een bron-id in de frontmatter is voor het gereedschap, een link is voor de lezer.
 - **Laag 1 is onveranderlijk.** Alles staat gewoon in Git, dus ook de pdf's. De pre-commit-hook staat in `sources/raw/` alleen toevoegen toe. Een nieuwe versie van een document krijgt een nieuw bron-id. [Inferred] De repository groeit met elke pdf; bij grote aantallen is Git LFS later zonder structuurwijziging in te voeren.
-- **Conversie is deterministisch.** `llmwiki source add <bestand>` kopieert het origineel, zet het om naar Markdown, berekent een hash en weigert als het bron-id al bestaat. `wiki-intake` controleert daarna de conversie steekproefsgewijs (koppen, tabellen) en meldt problemen in plaats van de conversie te herschrijven.
-- **Laag 2 is generiek.** `wiki-intake` bevat geen wiki-kennis (regel 1 uit 5.4). Het schema `source-index.schema.json` in de core legt de frontmatter vast: id, titel, uitgever, datum, versie, pad en hash van laag 1, tags, samenvatting.
+- **Conversie is deterministisch.** `llmwiki source add <bestand>` kopieert het origineel, zet het om naar Markdown, berekent een hash en weigert als het bron-id al bestaat. Het zet ook de inhoudsopgave in de index. `wiki-intake` controleert daarna de conversie steekproefsgewijs (koppen, tabellen) en meldt problemen in plaats van de conversie te herschrijven.
+- **Laag 2 is generiek.** `wiki-intake` bevat geen wiki-kennis (regel 1 uit 5.4). Het schema `source-index.schema.json` in de core legt de frontmatter vast: id, titel, uitgever, datum, versie, pad en hash van laag 1, tags. Wat in de tekst van de index staat en waarom: zie *Laag 2 als technische index* hieronder.
 - **Hergebruik.** Bestaat `sources/index/<bron-id>.md` al, dan slaat INGEST laag 1 en 2 over en maakt alleen de domein-lens.
 
 - **Ophalen via URL.** `llmwiki source add --url <url>` haalt een bron op en zet HTML deterministisch om naar Markdown: tekst blijft letterlijk, alleen opmaakruis (scripts, navigatie, voettekst, knoppenteksten) verdwijnt. Bekende weergave-URL's worden eerst omgezet naar de download-URL (bijv. iBabs, `*.bestuurlijkeinformatie.nl`). Pdf's worden omgezet met pymupdf4llm (groep `pdf`, standaard geïnstalleerd met `uv sync`). De intake legt `url`, `url_pagina` en `opgehaald` vast.
@@ -1319,11 +1320,35 @@ Regels:
 - *Herleidbaar via de bestandsnaam.* Het bron-id is in alle drie lagen de bestandsnaam; bestaan en uniciteit zijn een bestandscontrole (`source add` weigert een bestaand id, `validate` zoekt het bestand op).
 - *Contextbescherming.* Een run leest alleen de intakes van de bronnen uit de onderwerppagina; een catalogus met samenvattingen zou steeds helemaal geladen worden.
 - *Een intake is een pagina.* Metadata én tekst (samenvatting, inhoudsopgave), met hetzelfde frontmatter-, schema- en lintgereedschap als elke andere pagina.
-- *Backlinks.* Bronanalyses en elementen linken naar de intake; Obsidian toont per bron welke pagina's haar gebruiken. Dat werkt per bestand, niet per tabelrij.
+- *Backlinks.* Pagina's linken naar de domein-lens, en de domein-lens naar laag 1; Obsidian toont per domein-lens welke pagina's haar gebruiken. De index heeft geen backlinks nodig.
 - *Git.* Gelijktijdige toevoegingen raken verschillende bestanden (geen merge-conflicten); `git log` per bron toont de historie van de intake.
 - *Niet in laag 1.* `sources/raw/` is onveranderlijk en letterlijk; een samenvatting of correctie achteraf kan daar niet staan.
 
 Afgewezen: één catalogusbestand (geen ruimte voor tekst, conflicten, alles laden), de intake in de frontmatter van `raw/<bron-id>.md` (laag 1 is onveranderlijk) en een intake per wiki (dubbel werk, in strijd met principe 3). Nadeel: geen overzicht in één oogopslag; dat levert `llmwiki source list` of een gegenereerd overzicht, dat nooit zelf de bron van waarheid is.
+
+**Laag 2 als technische index (analyse, 2026-09-30).** Laag 2 is een hulpmiddel voor de Agent om context te sparen, geen document voor de lezer en geen schakel in de herleidbaarheid (die loopt van pagina via domein-lens naar laag 1, zie hierboven). Tot deze datum bevatte geen enkele index tekst: `source add` schreef "Nog geen samenvatting." en de bedoelde Skill `wiki-intake` bestond niet.
+
+*Omvang van laag 1.* 271 bronnen, samen 2,6 miljoen woorden. De mediaan is 1.700 woorden, 10% is langer dan 20.000 woorden, de grootste 266.000. De Wet op de lijkbezorging telt 8.400 woorden. Eén lange bron helemaal lezen kost meer context dan de rest van een run; kiezen wát je leest is dus de winst.
+
+*Vragen die de index moet beantwoorden zonder laag 1 te openen:*
+
+| Vraag van de Agent | Sectie in de index | Wie maakt het |
+|---|---|---|
+| Hoort deze bron bij mijn vraag of onderwerp? | Frontmatter (brontype, tags, `beschrijving`), `## Samenvatting` (reikwijdte, ook wat níet in de bron staat) | Gereedschap en Model |
+| Onder welk woord vind ik haar? | `## Trefwoorden`, met synoniemen en spreektaal die niet in de titel staan | Model |
+| Waar in de tekst staat begrip X? | `## Begrippen`, per begrip het regelnummer in laag 1 | Model, regelnummers opgezocht |
+| Welk deel moet ik lezen, en wat kost dat? | `## Inhoud`, per kop het regelnummer en het aantal woorden tot de volgende kop | Gereedschap (`llmwiki source inhoud`) |
+| Welke andere bronnen hangen ermee samen? | `## Verwijst naar` | Model |
+| Is dit de actuele versie? | Frontmatter (`datum`, `versie`, `opgehaald`), status in de samenvatting | Gereedschap en Model |
+
+*Keuzes.*
+- **Regelnummers, geen paginanummers of paragraaftitels.** Een Agent leest een bestand op regelnummer (offset); laag 1 is onveranderlijk, dus een regelnummer blijft geldig. Paragraaftitels zijn niet altijd uniek en pdf-conversies hebben geen paginanummers.
+- **Woorden als maat voor de kosten.** Het aantal woorden per sectie laat vóór het lezen zien of een hoofdstuk in zijn geheel past.
+- **Het gereedschap maakt wat vastligt, het Model wat begrip vraagt.** Inhoudsopgave, omvang en gegevens zijn deterministisch en staan er direct na `source add`; samenvatting, trefwoorden en begrippen vragen lezen en komen van `wiki-intake`.
+- **Klein houden.** Tekstsecties samen hooguit 400 woorden en de inhoudsopgave hooguit ongeveer 60 rijen: dan leest een Agent de index van tien bronnen voor minder dan de tekst van één middelgrote bron. Bij een bron onder 2.000 woorden volstaan samenvatting en trefwoorden; de tekst zelf lezen is dan goedkoop.
+- **Zoeken met gewone middelen.** Trefwoorden en begrippen staan als platte tekst, zodat zoeken over `sources/index/` (grep, de zoekfunctie van de harness of Obsidian) direct de juiste bron en het regelnummer geeft. Een eigen zoekopdracht in `llmwiki` volgt pas als dat aantoonbaar tekortschiet (principe 7).
+
+*Niet in de index:* interpretatie voor één wiki (dat is de domein-lens), citaten waarop een pagina steunt (pagina's citeren laag 1 via de domein-lens), en links vanuit pagina's (een pagina linkt nooit naar de index).
 
 **Contextbescherming.** Doel: een wiki verzuipt niet in alle bronnen van de repository, en een Sessie laadt alleen wat de taak nodig heeft.
 
@@ -1331,8 +1356,8 @@ Afgewezen: één catalogusbestand (geen ruimte voor tekst, conflicten, alles lad
 |---|---|---|
 | Scoping via tags | `sources.tags` en `sources.exclude_tags` in `wiki.yaml` bepalen welke bronnen een wiki ziet | `llmwiki source list` toont alleen bronnen in scope; `validate` meldt verwijzingen naar bronnen buiten scope |
 | Taakgericht werken | Elke run start vanuit een onderwerppagina: `/opzet2-update onderwerpen/zaakgericht-werken.md`. De `bronnen:`-lijst in die pagina bepaalt welke bronnen worden gelezen | `llmwiki run start --onderwerp` legt de bronlijst vast in de State; INGEST en ASSESS krijgen alleen die bron-id's |
-| Leesvolgorde | Eerst laag 2 (kort), dan laag 3; laag 1 alleen voor specifieke passages | Instructie in `wiki-update` en de wiki-Rules |
-| Kleine intake | Managementsamenvatting in laag 2 met een vaste maximale omvang | Schema en lint |
+| Leesvolgorde | Eerst laag 2 (kort), dan laag 3; uit laag 1 alleen de passages die index of domein-lens aanwijzen, op regelnummer | Instructie in `wiki-assess` en de wiki-Rules |
+| Kleine index | Tekstsecties in laag 2 samen hooguit 400 woorden, inhoudsopgave hooguit ongeveer 60 rijen | Instructie in `wiki-intake` |
 
 [Inferred] De Obsidian-vault op root-niveau toont alle bronnen aan de mens; de scoping geldt voor de Agent en de CLI, niet voor wat een redacteur kan openen.
 

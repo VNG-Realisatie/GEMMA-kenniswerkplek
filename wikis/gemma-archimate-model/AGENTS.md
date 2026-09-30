@@ -27,6 +27,7 @@ Schrijfwijze: `[ID] **kern** — regel`. `ALTIJD` = verplicht, `NOOIT` = verbode
 
 - [IH1] **Elke claim heeft een bron** — ALTIJD een bron-id in `bronnen:`; citaten als blockquote met bronvermelding.
 - [IH3] **Tegenspraak** — ALS bronnen elkaar tegenspreken → beide vastleggen en markeren met `⚠️ Tegenspraak`.
+- [IH2] **Bronverwijzing is een link** — ALTIJD elke bron-id in de body als relatieve link naar de bronanalyse (`[<bron-id>](…/bronanalyses/<onderwerp>/<bron-id>.md)`): in `## Bronnen`, in de kolom Bron van `## Kenmerken` en `## Relaties`, en overal waar een bron wordt genoemd. De bronanalyse linkt onder de titel naar de brontekst in `sources/raw/`. UITZONDERING: een modelbron (GGM, GEMMA) heeft geen bronanalyse en linkt direct naar `sources/raw/<bron-id>.md`. NOOIT linken naar `sources/index/` (technische index, geen schakel in de herleidbaarheid). Gecontroleerd door `tools/check_elementen.py`.
 - [IH4] **Zonder bron** — ALS een claim geen bron heeft → markeren met `🔍 Verificatie nodig` en als open vraag opnemen.
 - [IH6] **Onzekerheid** — ALS een keuze niet eenduidig is (match, mapping, naam, type) → status `kandidaat` en een sectie `## Ter discussie`; elke aanname vastleggen.
 - [VR2] **Begrijpelijk Nederlands** — ALTIJD herkenbaar voor domeinexperts; geen jargon tenzij nodig.

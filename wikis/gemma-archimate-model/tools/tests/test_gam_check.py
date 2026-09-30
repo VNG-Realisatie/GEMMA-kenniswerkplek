@@ -1,8 +1,11 @@
 """tools/check_elementen.py: een correcte wiki geeft geen fouten; elke ingebrachte fout wordt gevonden."""
+import re
+
 import pytest
 from gam_hulp import KENMERKEN_BO, element_tekst
 
 import check_elementen
+import gam_gemeen
 
 BO_PAD = "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md"
 PROCES_PAD = "bedrijfsarchitectuur/bedrijfsprocessen/8-wonen/vergunningen/aanvraag-behandelen.md"
@@ -18,9 +21,14 @@ def _bo(**over):
     return {k: v for k, v in meta.items() if v is not None}
 
 
-def _schrijf(wiki, pad, meta, body="# x\n", definitie_bovenaan=True):
+def _schrijf(wiki, pad, meta, body="# x\n", definitie_bovenaan=True, bronlinks=True):
+    """Schrijf een pagina; een elementpagina krijgt `## Bronnen` en bron-id's als link, zoals de regel voorschrijft."""
     doel = wiki / pad
     doel.parent.mkdir(parents=True, exist_ok=True)
+    if bronlinks and meta.get("archimate_type"):
+        if "## Bronnen" not in body:
+            body = body.rstrip("\n") + "\n\n## Bronnen\n\n" + "".join(f"- {b}\n" for b in meta.get("bronnen", []))
+        body = gam_gemeen.bronnen_als_link(doel, body, wiki)
     doel.write_text(element_tekst(meta, body, definitie_bovenaan), encoding="utf-8")
 
 
@@ -35,7 +43,8 @@ def wiki(archimate_repo):
              f"| [Aanvraag behandelen](../{PROCES_PAD}) | bedrijfsproces | gedrag |\n")
     _schrijf(wiki, "bronanalyses/vergunningen/2026-utrecht-nota.md",
              {"id": "2026-utrecht-nota", "type": "bronanalyse", "onderwerp": "vergunningen",
-              "bronnen": ["2026-utrecht-nota"], "relevant": "ja"})
+              "bronnen": ["2026-utrecht-nota"], "relevant": "ja"},
+             "# Nota\n\nBron: [tekst](../../../../sources/raw/2026-utrecht-nota.md)\n")
     _schrijf(wiki, BO_PAD, _bo())
     proces_kenmerken = {k: "nee" for k in KENMERKEN_BO} | {
         k: "ja" for k in ("herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "relaties",
@@ -150,8 +159,11 @@ def test_rapport_wordt_aangevuld(wiki, tmp_path):
 
 def test_relatiebron_zonder_bronanalyse(wiki):
     pad = wiki / PROCES_PAD
-    pad.write_text(pad.read_text(encoding="utf-8").replace("2026-utrecht-nota (§2)", "2026-overheid-gemeentewet (art. 1)"), encoding="utf-8")
-    assert any(n == "relatie-bron" for n, _ in _fouten(wiki))
+    tekst = re.sub(r"\[2026-utrecht-nota\]\([^)]*\) \(§2\)", "2026-overheid-gemeentewet (art. 1)", pad.read_text(encoding="utf-8"))
+    pad.write_text(tekst, encoding="utf-8")
+    fouten = _fouten(wiki)
+    assert any(n == "relatie-bron" for n, _ in fouten)
+    assert ("bron-link", "'## Relaties': bron '2026-overheid-gemeentewet' heeft geen bronanalyse") in fouten
 
 
 def test_relatietabel_in_bronanalyse_heeft_vaste_kolommen(wiki):
@@ -166,3 +178,33 @@ def test_gangbare_term_als_synoniem_geeft_waarschuwing(wiki):
     _schrijf(wiki, BO_PAD, _bo(synoniemen=[{"naam": "Besluit", "context": "dagelijks gebruik"},
                                            {"naam": "Beschikking (Awb)", "context": "wet"}]))
     assert not any(x.naam == "naam-wetsterm" for x in check_elementen.controleer(wiki))
+
+
+def test_bron_als_tekst_in_tabel_is_fout(wiki):
+    body = ("## Kenmerken\n\n| Kenmerk | Waarde | Onderbouwing | Bron |\n|---|---|---|---|\n"
+            "| herkenbaar | ja | Gangbaar. | 2026-utrecht-nota |\n")
+    _schrijf(wiki, BO_PAD, _bo(), body, bronlinks=False)
+    fouten = _fouten(wiki)
+    assert ("bron-link", "'## Kenmerken': bron '2026-utrecht-nota' staat er als tekst; maak er een link naar de bronanalyse van") in fouten
+    assert ("bron-link", "'## Bronnen' linkt niet naar de bronanalyse van '2026-utrecht-nota'") in fouten
+
+
+def test_bronlink_naar_verkeerd_doel_is_fout(wiki):
+    body = ("## Kenmerken\n\n| Kenmerk | Waarde | Onderbouwing | Bron |\n|---|---|---|---|\n"
+            "| herkenbaar | ja | Gangbaar. | [2026-utrecht-nota](../../../../../../sources/index/2026-utrecht-nota.md) |\n")
+    _schrijf(wiki, BO_PAD, _bo(), body)
+    assert any(n == "bron-link" and "wijst niet naar de bronanalyse" in m for n, m in _fouten(wiki))
+
+
+def test_bronanalyse_zonder_bronregel(wiki):
+    pad = wiki / "bronanalyses/vergunningen/2026-utrecht-nota.md"
+    pad.write_text(pad.read_text(encoding="utf-8").replace("Bron: [tekst]", "Zie [tekst]"), encoding="utf-8")
+    assert any(n == "bronregel" for n, _ in _fouten(wiki))
+
+
+def test_bronnen_als_link_laat_links_en_datums_staan(wiki):
+    van = wiki / BO_PAD
+    tekst = "Zie 2026-utrecht-nota (§2), [2026-utrecht-nota](x.md) en besluit van 2026-09-30."
+    assert gam_gemeen.bronnen_als_link(van, tekst, wiki) == (
+        "Zie [2026-utrecht-nota](../../../../bronanalyses/vergunningen/2026-utrecht-nota.md) (§2), "
+        "[2026-utrecht-nota](x.md) en besluit van 2026-09-30.")
