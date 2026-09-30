@@ -22,6 +22,16 @@ ggm_entiteit: Beschikking
 ggm_guid: EAID_…
 bijgewerkt: 2026-09-29
 ---
+
+# Beschikking
+
+## Definitie
+
+Schriftelijk besluit van de gemeente over een individueel geval.
+
+## Beschrijving
+
+…
 ```
 
 Secties, in deze volgorde (alleen wat van toepassing is):
@@ -29,9 +39,9 @@ Secties, in deze volgorde (alleen wat van toepassing is):
 | Sectie | Wanneer | Inhoud |
 |---|---|---|
 | `# <naam>` | altijd | |
+| `## Definitie` | altijd, als eerste sectie | De herkenbare `definitie` uit de frontmatter, letterlijk. Bij een formele definitie daaronder `definitie_formeel` als blockquote met vindplaats, en in één of twee zinnen het verschil (zie `definitie.md`) |
 | `## Beschrijving` | altijd | Het element zoals de gemeente erover praat |
 | `## Kenmerken` | altijd | Tabel `\| Kenmerk \| Waarde \| Onderbouwing \| Bron \|` voor alle kenmerken (onderbouwing uit ASSESS) |
-| `## Definitie` | bij formele definitie | Het verschil tussen herkenbaar en formeel |
 | `## GGM-bron` | grondslag `ggm-entiteit` | GGM-definitie als blockquote, matchsterkte, afwijkingen |
 | `## Afleiding` / `## Procesbron` / `## Juridische bron` | per grondslag | Zie `grondslag.md` |
 | `## GEMMA` | altijd | Matchsterkte en wat verandert ten opzichte van GEMMA, of "nieuw voor GEMMA" |

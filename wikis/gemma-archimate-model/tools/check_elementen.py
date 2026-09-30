@@ -157,8 +157,13 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
     if contexten & {"beleid", "dagelijks gebruik"} and "wet" not in contexten:
         waarschuwing("naam-wetsterm", "gangbare term staat als synoniem en geen wetsterm: is de naam de wetsterm? "
                      "De naam komt uit de gangbare taal, de wetsterm wordt synoniem [SRC10]")
+    eerste = re.search(r"^## (.+?)\s*$", el.body, re.M)
+    if not eerste or eerste.group(1) != "Definitie":
+        waarschuwing("definitie-bovenaan", "eerste sectie is niet '## Definitie' (herkenbare definitie, dan Beschrijving)")
+    elif " ".join(definitie.split()) not in " ".join((gam_gemeen.sectie(el.body, "Definitie") or "").split()):
+        waarschuwing("definitie-bovenaan", "'## Definitie' bevat de definitie uit de frontmatter niet letterlijk")
     if meta.get("definitie_formeel"):
-        bron = (meta.get("definitie_formeel_bron") or {}).get("bron")
+        bron =(meta.get("definitie_formeel_bron") or {}).get("bron")
         try:
             brontype = sources.read_index_entry(w.repo_root, bron).get("brontype")
         except (FileNotFoundError, TypeError):
@@ -171,7 +176,7 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
         if " ".join(str(meta["definitie_formeel"]).split()) == " ".join(definitie.split()):
             fout("definitie-formeel", "formele definitie is gelijk aan de herkenbare; laat de formele weg")
         if gam_gemeen.sectie(el.body, "Definitie") is None:
-            fout("definitie-formeel", "formele definitie zonder sectie '## Definitie' die het verschil uitlegt")
+            fout("definitie-formeel", "formele definitie zonder sectie '## Definitie' met de formele definitie en het verschil")
 
     # Modelvelden (EL12)
     if meta.get("ggm_guid"):

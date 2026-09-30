@@ -14,6 +14,7 @@ Gebruik alleen informatie uit de bronnen; verzin geen uitleg. Voor een actor of 
 - Beschrijft wat het ding *is*, niet waar het wordt vastgelegd (geen registr*-taal).
 - Zelfstandige tekst: nooit "gelijk aan GGM" of een verwijzing.
 - Deze definitie gaat naar GEMMA.
+- Ze staat letterlijk ook bovenaan de pagina, als eerste sectie `## Definitie`, vóór `## Beschrijving` (zie `secties.md`).
 
 Werkwijze:
 1. Is de GGM- of wetsdefinitie al herkenbaar en klopt ze met de bronnen? Neem haar over als herkenbare definitie; alleen opschonen (tikfouten, opmaak). Opsommingen, voorbeelden en uitweidingen gaan naar `toelichting`.
@@ -24,7 +25,7 @@ Werkwijze:
 
 Toets: *vallen onder de herkenbare en de formele definitie precies dezelfde exemplaren?*
 - Ja → geen formele definitie (het verschil zit alleen in de formulering).
-- Nee, of de formele definitie bevat voorwaarden die voor de behandeling ertoe doen (termijn, uitzondering, afbakening) → wel: `definitie_formeel` letterlijk uit de hoogst gerangschikte bron, met `definitie_formeel_bron: {bron: <bron-id>, plaats: "art. …"}`, en een sectie `## Definitie` die in één of twee zinnen het verschil uitlegt.
+- Nee, of de formele definitie bevat voorwaarden die voor de behandeling ertoe doen (termijn, uitzondering, afbakening) → wel: `definitie_formeel` letterlijk uit de hoogst gerangschikte bron, met `definitie_formeel_bron: {bron: <bron-id>, plaats: "art. …"}`. In `## Definitie` (bovenaan de pagina, onder de herkenbare definitie) komt de formele definitie als blockquote met vindplaats, en in één of twee zinnen het verschil.
 - Twijfel → wel.
 - Komt de formele definitie uit het GGM, dan staat ze al in `ggm_definitie`: niet kopiëren.
 - Spreekt de herkenbare definitie de formele tegen: `⚠️ Tegenspraak` en voorleggen.
