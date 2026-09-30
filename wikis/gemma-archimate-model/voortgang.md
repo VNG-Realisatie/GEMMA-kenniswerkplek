@@ -1,20 +1,20 @@
 # Voortgang
 
-Gegenereerd: 2026-09-29
+Gegenereerd: 2026-09-30
 
 ## Open runs
-- 2026-09-29T1123-c482
+- 2026-09-29T2158-1752
 
 ## Aantallen per status
-- actor: goedgekeurd=6
+- actor: goedgekeurd=1, kandidaat=6
 - analyse: -=1
-- bedrijfsfunctie: goedgekeurd=1
-- bedrijfsgebeurtenis: goedgekeurd=3
-- bedrijfsobject: goedgekeurd=21, kandidaat=4
-- bedrijfsproces: goedgekeurd=14
-- bronanalyse: -=3
-- onderwerp: in-behandeling=1
-- rol: goedgekeurd=7
+- bedrijfsdienst: goedgekeurd=1
+- bedrijfsgebeurtenis: goedgekeurd=2
+- bedrijfsobject: goedgekeurd=9, kandidaat=7
+- bedrijfsproces: goedgekeurd=6
+- bronanalyse: -=4
+- onderwerp: afgerond=1
+- rol: goedgekeurd=9
 
 ## Wacht op review
 - (geen)
