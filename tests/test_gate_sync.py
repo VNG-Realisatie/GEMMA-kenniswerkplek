@@ -152,9 +152,10 @@ def test_plan_shows_real_diff_against_live_page(sync_repo, fake_pywikibot):
         wiki_root, wiki_yaml, run_id,
         paths=["content/main/Contact.wiki"], titel_overrides={"content/main/Contact.wiki": "Contact"},
     )
-    voorstel_text = voorstel_path.read_text()
-    assert "-Oude inhoud." in voorstel_text
-    assert "+Nieuwe inhoud." in voorstel_text
+    assert "| publiceren |" in voorstel_path.read_text(encoding="utf-8")
+    details_text = voorstel_path.with_name(f"{run_id}-details.md").read_text(encoding="utf-8")
+    assert "-Oude inhoud." in details_text
+    assert "+Nieuwe inhoud." in details_text
 
 
 def test_apply_to_staging_logs_the_doel(sync_repo, fake_pywikibot):

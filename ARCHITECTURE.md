@@ -146,7 +146,7 @@ Bij een Markdown-wiki (curation) zijn de bron- en kandidaatpagina's zelf het arc
 
 Per wiki staat in `wiki.yaml` welke smaak geldt.
 
-- **Smaak A, vrijgave via document.** Geschikt voor grotere of periodieke wijzigingen en voor exports naar het architectuurmodel. De AI zet een publicatievoorstel klaar in `voorstellen/`. De redacteur leest het in de eigen editor, zet `akkoord_voor_publicatie` op `ja`, vult een naam in en vraagt de AI de publicatie uit te voeren. Is het voorstel daarna nog veranderd, dan geldt het akkoord niet meer.
+- **Smaak A, vrijgave via document.** Geschikt voor grotere of periodieke wijzigingen en voor exports naar het architectuurmodel. De AI zet een publicatievoorstel klaar in `voorstellen/`: een plan met per pagina een samenvatting en een besluit (goedkeuren of schrijven, overslaan, aanpassen), de open vragen, en de volledige diffs in een apart detailbestand. De redacteur beoordeelt en wijzigt het plan in de eigen editor. Staat er `aanpassen`, dan verwerkt de AI de opmerkingen en maakt een nieuw plan. Is alles naar wens, dan zet de redacteur `akkoord_voor_publicatie` op `ja`, vult een naam in en vraagt de AI het plan uit te voeren. Is de inhoud daarna nog veranderd, dan geldt het akkoord niet meer.
 - **Smaak B, bevestigingswoord in de chat.** Geschikt voor dagelijks redactiewerk. De AI toont een samenvatting en vraagt om het woord **AKKOORD**. "Prima" of "ziet er goed uit" is geen akkoord.
 
 In beide smaken vraagt de AI-omgeving daarna nog om één klik op "toestaan". Die klik kan de AI niet zelf geven; dat is de echte beveiliging.

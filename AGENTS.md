@@ -14,7 +14,7 @@ Bij de eerste Vraag in een Sessie, vóór inhoudelijk werk:
 ## Veiligheid
 
 - Nooit publiceren of exporteren zonder akkoord van de redacteur. `llmwiki publish apply` en `llmwiki promote apply` controleren dit akkoord; omzeil ze niet.
-- Vul akkoordvelden (`akkoord_voor_publicatie`, `beoordeeld_door`) nooit zelf in een publicatie- of promotievoorstel in.
+- Vul akkoordvelden (`akkoord_voor_publicatie`, `beoordeeld_door`) nooit zelf in een publicatie- of promotievoorstel in, en wijzig daar nooit de kolommen Besluit en Opmerking: die zijn van de redacteur.
 - Nooit credentials in bestanden. Alleen omgevingsvariabelen, genoemd bij naam in `wiki.yaml`.
 
 ## Rangorde

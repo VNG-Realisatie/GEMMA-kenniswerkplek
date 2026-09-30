@@ -838,12 +838,13 @@ Werking:
    beoordeeld_door: ""
    ---
    ```
-   daaronder een samenvatting in gewone taal (welke pagina's, wat verandert, waarom, uit welke bron) en per pagina de wijziging als leesbare diff.
+   daaronder het plan: per pagina één tabelrij (element als link naar de voorgestelde tekst, met actie en type eronder, status, samenvatting in één regel, besluit, opmerking), gegroepeerd naar wat er gebeurt, en de open vragen uit de pagina's. De volledige diffs staan in `voorstellen/<run-id>-details.md`. Zie 5.13b.
 3. **Akkoord (smaak volgens `publish.approval` in `wiki.yaml`).**
    - Smaak A, `document`: de redacteur zet in het voorstel `akkoord_voor_publicatie: ja` en vult een naam in, en vraagt de Agent daarna de publicatie uit te voeren.
    - Smaak B, `chat`: de Agent toont de samenvatting in de chat en vraagt om het letterlijke woord AKKOORD. Andere instemming leidt tot een herhaalde vraag, niet tot uitvoering.
 4. **Uitvoeren.** De Agent roept `llmwiki publish apply --run <id>` aan. De CLI controleert:
    - smaak A: `akkoord_voor_publicatie: ja`, `beoordeeld_door` niet leeg, en `plan_hash` in het voorstel gelijk aan de actuele plan-hash (een akkoord op een verouderd voorstel geldt niet);
+   - beide: de besluiten in het plan (5.13b);
    - smaak B: niets aanvullends; zie laag 2;
    - beide: opnieuw de basis-revisies.
 5. **Laag 2: harness-goedkeuring.** De gegenereerde harness-configuratie zet `llmwiki publish apply` en `llmwiki export apply` op 'ask' (5.15, 5.16). Het harness toont de mens het exacte commando en wacht op een klik. Dit is de enige laag die de Agent niet zelf kan vervullen.
@@ -874,6 +875,20 @@ Grenzen:
 **Geen C-compiler nodig.** pywikibot hangt af van `mwparserfromhell`, dat niet voor elke Python-versie een kant-en-klaar pakket heeft (bijvoorbeeld nog niet voor Python 3.14 op Windows); bouwen vraagt dan de Microsoft C++ Build Tools. `[tool.uv.extra-build-variables]` zet `WITH_EXTENSION=0` voor dit pakket, waarmee het zijn variant in puur Python bouwt. Is er wel een kant-en-klaar pakket, dan gebruikt uv dat en doet de instelling niets.
 
 **Afgewezen: de Python-versie vastzetten** (bijvoorbeeld 3.13, waarvoor wel kant-en-klare pakketten bestaan). uv zou dan een eigen Python downloaden; die is niet ondertekend en loopt op beheerde laptops tegen hetzelfde Defender-beleid aan. Bovendien veroudert een vaste versie.
+
+#### 5.13b Het voorstel als plan met een besluit per pagina (2026-09-30)
+
+**Aanleiding.** Het voorstel was één lange diff (bij de herbeoordeling van lijkbezorging 43 pagina's, 285 kB). De redacteur kon het niet lezen en kon alleen het geheel goed- of afkeuren.
+
+**Keuze.** Het voorstel is een plan: per pagina één tabelrij met een samenvatting in één regel (de definitie, of welke secties wijzigen) en de kolommen Besluit en Opmerking, gegroepeerd naar wat er gebeurt, met daaronder de open vragen uit de pagina's (*Ter discussie*). De volledige diffs staan in een apart detailbestand. De redacteur wijzigt besluiten en opmerkingen in de eigen editor:
+
+- `goedkeuren` (alleen bij status `review`) of `schrijven` / `publiceren`: standaard;
+- `overslaan`: niet schrijven; `apply` weigert als een pagina die wel wordt geschreven ernaar linkt;
+- `aanpassen`: terug naar de Agent met de opmerking; `apply` weigert tot er een nieuw plan is. Het nieuwe plan neemt de besluiten over voor pagina's waarvan de inhoud niet veranderde.
+
+**Waarom zo.** Een gewoon Markdown-bestand plus de CLI werkt in elk harness en elke editor; de planmodus van één harness (bijvoorbeeld Claude Code) zou alleen daar werken en laat zich niet aan de plan-hash binden. De plan-hash dekt alleen de inhoud, niet de besluiten: de redacteur mag het plan bewerken zonder het te breken, en `apply` voert uit wat er op het moment van het akkoord staat. De akkoordvelden, de goedkeuringsklik (laag 2) en de deny-regel op `voorstellen/` blijven ongewijzigd; de Agent schrijft ook de besluitkolommen nooit.
+
+**Afgewezen.** Een apart besluitbestand naast het voorstel (twee bestanden om bij te werken) en besluiten in de frontmatter (onleesbaar bij tientallen pagina's).
 
 ### 5.14 Een wiki als zelfstandig subproject openen
 
