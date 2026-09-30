@@ -17,4 +17,18 @@ opgehaald: '2026-06-18'
 
 # VNG Raadgevers
 
-Nog geen samenvatting.
+## Samenvatting
+
+Korte overzichtspagina van de VNG, opgehaald in juni 2026, over de VNG Raadgevers: informatieve gidsen voor gemeenteraadsleden. De pagina somt de thema's op (raadslidmaatschap, gemeentefinanciën, lokale democratie, informatiesamenleving, fysieke leefomgeving, sociaal domein, veiligheid, internationaal) en noemt de raadgevers van VNG-bedrijven. De inhoud van de raadgevers zelf staat niet op deze pagina.
+
+## Trefwoorden
+
+VNG Raadgevers, raadgever, raadslid, raadslidmaatschap, gemeenteraad, integriteit, gemeentefinanciën, lokale democratie, kennis voor raadsleden, handleiding
+
+## Inhoud
+
+Tekst: `sources/raw/2026-vng-raadgevers.md`, 158 woorden. Regel = regelnummer in die tekst.
+
+| Kop | Regel | Woorden |
+|---|---|---|
+| VNG Raadgevers | 12 | 126 |

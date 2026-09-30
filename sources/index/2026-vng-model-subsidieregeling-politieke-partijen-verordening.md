@@ -18,4 +18,48 @@ opgehaald: '2026-06-23'
 
 # Model Subsidieregeling decentrale politieke partijen
 
-Nog geen samenvatting.
+## Samenvatting
+
+VNG-model (juni 2026) voor een collegebesluit tot vaststelling van een Subsidieregeling decentrale politieke partijen, met modeltoelichting. De regeling loopt vooruit op het wetsvoorstel Wet op de politieke partijen: het rijk heeft geld aan het gemeentefonds toegevoegd, en de regeling vervalt als die wet in werking treedt. Het college verstrekt subsidie per zetel aan decentrale politieke partijen voor activiteiten zoals scholing, informatievoorziening, ledenwerving en verkiezingscampagnes, op basis van de lokale Algemene subsidieverordening. De regeling bevat aanvraag- en beslistermijnen en transparantieverplichtingen (statuten, giften, financieel verslag). Ze staat los van de fractieondersteuning. Opties zijn in de tekst aangeduid met blokhaken. De tekst heeft geen koppen; de artikelen beginnen op de regels hieronder.
+
+## Trefwoorden
+
+subsidieregeling, subsidie, politieke partij, decentrale politieke partij, lokale partij, afdeling landelijke partij, zetel, gemeenteraad, subsidiabele activiteiten, verkiezingscampagne, ledenwerving, scholing, transparantie, gift, donateur, financieel verslag, activiteitenverslag, Algemene subsidieverordening, Asv, Wet op de politieke partijen, fractieondersteuning
+
+## Begrippen
+
+| Begrip | Regel | Soort |
+|---|---|---|
+| Asv (Algemene subsidieverordening) | 49 | definitie |
+| Decentrale politieke partij | 51 | definitie |
+| Gift | 54 | definitie |
+| Zetel | 55 | definitie |
+| Toepassingsbereik | 59 | regeling |
+| Doel van de subsidie | 63 | regeling |
+| Doelgroep | 67 | regeling |
+| Subsidiabele activiteiten | 71 | regeling |
+| Subsidietermijn | 85 | regeling |
+| Subsidiebedrag per zetel | 89 | regeling |
+| Subsidieaanvraag | 96 | regeling |
+| Aanvraagtermijn | 107 | regeling |
+| Beslistermijn en subsidievaststelling | 111 | regeling |
+| Transparantieplicht en administratie | 116 | regeling |
+| Afwijkende termijnen eerste jaar | 139 | regeling |
+| Toelichting: aanleiding | 166 | regeling |
+| Verhouding tot andere regelgeving | 180 | regeling |
+| Fractieondersteuning | 184 | verwijzing |
+
+## Verwijst naar
+
+- Kieswet, art. G 1-G 3 en H 3 (regel 52-53, 90).
+- Burgerlijk Wetboek Boek 2 art. 309 (fusie, regel 91; `2026-rijk-bw2-rechtspersonen`) en Boek 7 art. 186 (gift, regel 202).
+- Wet financiering politieke partijen (regel 119).
+- Wetsvoorstel Wet op de politieke partijen, Kamerstukken II 2024/25, 36 742 (regel 166, 210).
+- Gemeentewet art. 149, 122 en 33 (regel 180-184); `2024-rijk-gemeentewet-wettekst`.
+- Implementatiehandleiding bij dit model (regel 33); `2026-vng-implementatiehandleiding-subsidieregeling-politieke-partijen`.
+
+## Inhoud
+
+Tekst: `sources/raw/2026-vng-model-subsidieregeling-politieke-partijen-verordening.md`, 5865 woorden. Regel = regelnummer in die tekst.
+
+De tekst heeft geen koppen.

@@ -17,4 +17,18 @@ opgehaald: '2026-06-18'
 
 # Verkiezingen en referenda
 
-Nog geen samenvatting.
+## Samenvatting
+
+Korte onderwerppagina van de VNG, opgehaald in juni 2026, over de verantwoordelijkheid van gemeenten voor de organisatie van alle verkiezingen (Tweede Kamer, Provinciale Staten, waterschappen, Europees Parlement, gemeenteraad) en referenda, met de organisatorische en financiële gevolgen. Ze noemt de Verkiezingsagenda 2030 van VNG, BZK, Kiesraad en NVVB (digitalisering, efficiency), een handreiking voor toegankelijke stembureaus en de datum van de gemeenteraadsverkiezingen van 18 maart 2026.
+
+## Trefwoorden
+
+verkiezingen, referendum, stembureau, stemlokaal, kiezer, stempas, Kiesraad, Kieswet, NVVB, Verkiezingsagenda 2030, toegankelijkheid, Tweede Kamerverkiezing, Provinciale Statenverkiezing, waterschapsverkiezing, Europese verkiezing, gemeenteraadsverkiezing
+
+## Inhoud
+
+Tekst: `sources/raw/2026-vng-verkiezingen-en-referenda.md`, 130 woorden. Regel = regelnummer in die tekst.
+
+| Kop | Regel | Woorden |
+|---|---|---|
+| Verkiezingen en referenda | 12 | 97 |
