@@ -304,7 +304,7 @@ def _resolve_categorie_pad(
     """0 categorieën -> geen categoriemap; 1 -> automatisch; meer -> beslist
     voorrang (content/.categorie-voorrang.json) als precies één van de
     categorieën al voorrang heeft; anders (of bij >=2 voorrangscategorieën)
-    vereist het --categorie (navragen, niet gokken; zie AGENTS.md wikis/gemma).
+    vereist het --categorie (navragen, niet gokken; zie AGENTS.md wikis/gemma-online).
     Een nieuw opgeloste categorie krijgt zelf voorrang voor de volgende keer."""
     if wiki_yaml.get("content", {}).get("layout") != "category":
         if categorie_arg:

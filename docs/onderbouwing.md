@@ -359,9 +359,9 @@ Codex leest `.agents/skills/` en `AGENTS.md` native, zonder gegenereerd bestand 
 
 Toelichting op keuzes:
 
-- `wikis/<key>/` in plaats van `wiki-<key>/` op root-niveau: alle wiki's zijn met één glob (`wikis/*/`) te vinden door scripts, lint en OpenCode-`instructions`; de root blijft overzichtelijk. De werkmap wordt `cd wikis/gemma`.
-- Generieke Skills staan in de root-`.agents/skills/`, niet in `core/.agents/skills/`: [Verified] Codex, OpenCode en Cursor vinden skills alleen in `.agents/skills/` van de werkmap of een bovenliggende map; een map `core/` ligt niet op het pad van `wikis/gemma` naar de root.
-- Het Python-pakket staat in `tools/llmwiki/`: installeerbaar met `uv sync`, CLI `llmwiki` werkt vanuit elke map. De map heet `tools/` omdat de inhoud Tools zijn in de zin van de terminologie; de gebruikelijke Python-naam `src/` zegt een niet-programmeur niets. Het pakket zelf blijft `llmwiki` en staat in een eigen submap: [Inferred] een pakket met de naam `tools` botst met andere pakketten die zo heten en maakt de latere extractie als zelfstandig pakket lastiger. [Inferred] `pyproject.toml` kan de pakketmap expliciet aanwijzen (bij hatchling `[tool.hatch.build.targets.wheel] packages = ["tools/llmwiki"]`); de bescherming van de src-layout (tests draaien tegen het geïnstalleerde pakket, niet tegen losse bestanden in de werkmap) blijft daarmee behouden. [Inferred] `uv run` vindt vanuit `wikis/gemma` de `pyproject.toml` in de root door omhoog te zoeken.
+- `wikis/<key>/` in plaats van `wiki-<key>/` op root-niveau: alle wiki's zijn met één glob (`wikis/*/`) te vinden door scripts, lint en OpenCode-`instructions`; de root blijft overzichtelijk. De werkmap wordt `cd wikis/gemma-online`.
+- Generieke Skills staan in de root-`.agents/skills/`, niet in `core/.agents/skills/`: [Verified] Codex, OpenCode en Cursor vinden skills alleen in `.agents/skills/` van de werkmap of een bovenliggende map; een map `core/` ligt niet op het pad van `wikis/gemma-online` naar de root.
+- Het Python-pakket staat in `tools/llmwiki/`: installeerbaar met `uv sync`, CLI `llmwiki` werkt vanuit elke map. De map heet `tools/` omdat de inhoud Tools zijn in de zin van de terminologie; de gebruikelijke Python-naam `src/` zegt een niet-programmeur niets. Het pakket zelf blijft `llmwiki` en staat in een eigen submap: [Inferred] een pakket met de naam `tools` botst met andere pakketten die zo heten en maakt de latere extractie als zelfstandig pakket lastiger. [Inferred] `pyproject.toml` kan de pakketmap expliciet aanwijzen (bij hatchling `[tool.hatch.build.targets.wheel] packages = ["tools/llmwiki"]`); de bescherming van de src-layout (tests draaien tegen het geïnstalleerde pakket, niet tegen losse bestanden in de werkmap) blijft daarmee behouden. [Inferred] `uv run` vindt vanuit `wikis/gemma-online` de `pyproject.toml` in de root door omhoog te zoeken.
 - Schemas zitten in het pakket: Skills verwijzen naar `llmwiki schema show <naam>` of `llmwiki validate`, niet naar een relatief pad buiten de skill-directory. [Verified] De specificatie beveelt verwijzingen relatief aan de skill-root aan; een pad naar `../../tools/...` zou de skill aan deze repository binden.
 - Er is geen aparte map voor "knowledge" bij een sync-wiki. Kennis die het product is, staat in `content/`. Ongestructureerde kennisopbouw die een sync-wiki informeert, hoort in een eigen `knowledge-base`-wiki (5.18), niet in een submap van de sync-wiki.
 - Er is geen map `agents/` met Agentprofielen. Zie 5.9.
@@ -470,7 +470,7 @@ Neveneffect: OpenCode, VS Code en Cursor lezen ook `.claude/skills/` en zien elk
 
 | Werkmap | Claude Code | Codex | OpenCode | VS Code | Cursor |
 |---|---|---|---|---|---|
-| `wikis/gemma` | [Verified] root- en wiki-brug via ouderdirectories | [Verified] root- en wiki-`.agents/skills` | [Verified] beide, omhoog tot Git-root | [Verified] beide met `chat.useCustomizationsInParentRepositories: true` in de gegenereerde `wikis/gemma/.vscode/settings.json` | [Speculative] alleen wiki-skills; zie 5.14 |
+| `wikis/gemma-online` | [Verified] root- en wiki-brug via ouderdirectories | [Verified] root- en wiki-`.agents/skills` | [Verified] beide, omhoog tot Git-root | [Verified] beide met `chat.useCustomizationsInParentRepositories: true` in de gegenereerde `wikis/gemma-online/.vscode/settings.json` | [Speculative] alleen wiki-skills; zie 5.14 |
 | repository-root | [Verified] generieke skills direct; wiki-skills pas na lezen van een bestand in die wiki, met gekwalificeerde naam bij botsing | [Verified] alleen generieke | [Verified] alleen generieke | [Speculative] alleen generieke | [Verified] generieke overal; wiki-skills beperkt tot bestanden in die wiki |
 
 [Inferred] Vanuit de root lekken wiki-Skills dus niet naar andere wiki's: de meeste harnesses laden ze niet, en Cursor en Claude Code beperken ze tot de betreffende directory.
@@ -648,8 +648,8 @@ Dit is de enige plek waar de architectuur een generator voor Agentprofielen voor
 {
   "readOnly": true,
   "wikis": {
-    "gemma": {
-      "sitename": "gemma",
+    "gemma-online": {
+      "sitename": "gemma-online",
       "server": "https://redactie.gemmaonline.nl",
       "articlepath": "/wiki",
       "scriptpath": "",
@@ -713,7 +713,7 @@ Het risico van omgevingsvariabelen beperken we met **BotPasswords** in plaats va
        http_toegang: {gebruiker: GEMMA_STAGING_HTTP_USER, wachtwoord: GEMMA_STAGING_HTTP_PASSWORD}
    ```
    De namen zijn vrij te kiezen; wie op een andere machine al variabelen heeft, kan die namen hier zetten. De gebruikersnaam van een botwachtwoord heeft de vorm `Hoofdaccount@botnaam`; pywikibot herkent de `@` en logt dan in met `action=login` in plaats van `clientlogin`.
-2. **Family-bestand in de repository** (`wikis/gemma/families/gemmaonline_family.py`, en een kopie in `wikis/_template`): alleen de twee servers en hun paden, geen geheimen. Naam en vorm (`<naam>_family.py`, klasse `Family`) schrijft pywikibot voor; pywikibot kan een family ook zonder bestand uit alleen een serveradres opbouwen (`AutoFamily`), maar het bestand is de gangbare, best gedocumenteerde weg. `llmwiki` meldt elke map `wikis/*/families/` zelf aan bij pywikibot. Daarmee vervalt de oorspronkelijke reden om de family buiten de repository te houden (dynamische Site-constructie niet te verifiëren): de family staat vast in een bestand, alleen niet meer per machine.
+2. **Family-bestand in de repository** (`wikis/gemma-online/families/gemmaonline_family.py`, en een kopie in `wikis/_template`): alleen de twee servers en hun paden, geen geheimen. Naam en vorm (`<naam>_family.py`, klasse `Family`) schrijft pywikibot voor; pywikibot kan een family ook zonder bestand uit alleen een serveradres opbouwen (`AutoFamily`), maar het bestand is de gangbare, best gedocumenteerde weg. `llmwiki` meldt elke map `wikis/*/families/` zelf aan bij pywikibot. Daarmee vervalt de oorspronkelijke reden om de family buiten de repository te houden (dynamische Site-constructie niet te verifiëren): de family staat vast in een bestand, alleen niet meer per machine.
 3. **Geen eigen configuratie en geen wachtwoordbestand.** `llmwiki` zet pywikibots werkmap op `.work/pywikibot/` (al genegeerd door git; daar komen alleen de sessiecookie, de cache en de throttle-administratie). Daar staat een leeg `user-config.py`, omdat pywikibot `PYWIKIBOT_DIR` alleen gebruikt als dat bestand er is; anders belanden die werkbestanden in de map waar het commando draait. `.gitignore` sluit ze daarnaast als vangnet uit (`*.lwp`, `apicache/`, `throttle.ctrl`). `llmwiki` leest de variabelen uit `wiki.yaml`, geeft gebruiker en botwachtwoord rechtstreeks aan pywikibots login en zet de Basic Auth voor staging in pywikibots `authenticate`. Heeft iemand al een eigen pywikibot-configuratie (`PYWIKIBOT_DIR` gezet), dan gebruikt `llmwiki` die ongewijzigd.
 4. **workspace-check** meldt per doel welke variabele ontbreekt, als opmerking en niet als blokkade: zonder inlog werken curatiewiki's en de MCP-server gewoon door; alleen `pull`/`publish` naar dat doel faalt, met een melding die de ontbrekende namen noemt. Een ontbrekend family-bestand is wel een blokkade (fout in de repository). Het setup-script toont dezelfde lijst, met de stappen om een variabele te zetten.
 5. **README**, sectie *Inloggegevens GEMMA Online*: botwachtwoorden aanmaken en de variabelen zetten, per besturingssysteem. Op Windows: *Start* → typ "omgevingsvariabelen" → *Omgevingsvariabelen voor uw account bewerken* (geen beheerrechten nodig) → *Gebruikersvariabelen* → *Nieuw...*, of met het script `scripts/inlog-instellen.ps1` (vraagt per variabele de waarde; wachtwoorden onzichtbaar en buiten de PowerShell-geschiedenis); daarna VS Code en de terminal opnieuw starten. Op macOS/Linux: `export` in het shellprofiel.
@@ -894,7 +894,7 @@ Grenzen:
 
 **Gevolgen van de keuze van werkmap.**
 
-| Aspect | Werkmap = repository-root | Werkmap = `wikis/gemma` |
+| Aspect | Werkmap = repository-root | Werkmap = `wikis/gemma-online` |
 |---|---|---|
 | Git | Normaal | [Verified] Normaal; alle harnesses vinden de Git-root door omhoog te zoeken |
 | AGENTS.md | Alleen root direct; wiki-Rules pas bij werken in de wiki (Claude Code, Cursor) of niet (Codex) | Root en wiki samengevoegd (Claude Code, Codex); expliciete verwijzing als vangnet |
@@ -904,17 +904,17 @@ Grenzen:
 | MCP | Alleen repository-brede servers | [Verified] Claude Code leest `.mcp.json` uit de projectroot; [Inferred] dat is de werkmap, dus de wiki-server is beschikbaar |
 | Geschikt voor | Onderhoud aan core, werk over meerdere wiki's | Inhoudelijk werk aan één wiki |
 
-**Per harness bij openen van `wikis/gemma`.**
+**Per harness bij openen van `wikis/gemma-online`.**
 
 | Harness | Rules | Skills | MCP | Extra nodig |
 |---|---|---|---|---|
-| Claude Code | [Verified] root + wiki | [Verified] via brug in beide niveaus | [Inferred] `wikis/gemma/.mcp.json` | Brug via `llmwiki harness sync`; v2.1.277+ of CLAUDE.md-terugval |
-| Codex | [Verified] root + wiki | [Verified] root + wiki | [Inferred] `wikis/gemma/.codex/config.toml`, alleen in vertrouwd project | Project vertrouwen |
-| OpenCode | [Speculative] dichtstbijzijnde; `instructions` voegt root toe | [Verified] root + wiki | [Inferred] `wikis/gemma/opencode.json` | `OPENCODE_DISABLE_CLAUDE_CODE_SKILLS=1` bij aanwezigheid brug |
-| VS Code | [Verified] root + wiki met instelling | [Verified] root + wiki met instelling | [Inferred] `wikis/gemma/.vscode/mcp.json` | Gegenereerde `.vscode/settings.json` met `chat.useCustomizationsInParentRepositories: true`, `chat.useAgentsMdFile: true` |
-| Cursor | [Speculative] alleen wiki; verwijzing in wiki-AGENTS.md als vangnet | [Speculative] alleen wiki | [Inferred] `wikis/gemma/.cursor/mcp.json` | Zie hieronder |
+| Claude Code | [Verified] root + wiki | [Verified] via brug in beide niveaus | [Inferred] `wikis/gemma-online/.mcp.json` | Brug via `llmwiki harness sync`; v2.1.277+ of CLAUDE.md-terugval |
+| Codex | [Verified] root + wiki | [Verified] root + wiki | [Inferred] `wikis/gemma-online/.codex/config.toml`, alleen in vertrouwd project | Project vertrouwen |
+| OpenCode | [Speculative] dichtstbijzijnde; `instructions` voegt root toe | [Verified] root + wiki | [Inferred] `wikis/gemma-online/opencode.json` | `OPENCODE_DISABLE_CLAUDE_CODE_SKILLS=1` bij aanwezigheid brug |
+| VS Code | [Verified] root + wiki met instelling | [Verified] root + wiki met instelling | [Inferred] `wikis/gemma-online/.vscode/mcp.json` | Gegenereerde `.vscode/settings.json` met `chat.useCustomizationsInParentRepositories: true`, `chat.useAgentsMdFile: true` |
+| Cursor | [Speculative] alleen wiki; verwijzing in wiki-AGENTS.md als vangnet | [Speculative] alleen wiki | [Inferred] `wikis/gemma-online/.cursor/mcp.json` | Zie hieronder |
 
-**Cursor.** [Verified] Cursor vindt geneste `.agents/skills/` en geneste AGENTS.md wanneer de repository-root is geopend, en beperkt ze tot de betreffende directory. Aanbeveling voor Cursor: open de repository-root en werk in bestanden onder `wikis/gemma/`. Als Cursor alleen de wiki-map moet openen en verificatie (sectie 8) bevestigt dat bovenliggende skills dan ontbreken, genereert `llmwiki harness sync --cursor-wiki-root` een brug `wikis/<key>/.cursor/skills/` met ingangen naar de generieke skills. [Verified] `.cursor/skills/` is een Cursor-eigen locatie en wordt door de andere harnesses niet gelezen, dus deze brug veroorzaakt geen duplicaten elders. Dit is de enige plek waar volledige pariteit een tweede brug kan vereisen.
+**Cursor.** [Verified] Cursor vindt geneste `.agents/skills/` en geneste AGENTS.md wanneer de repository-root is geopend, en beperkt ze tot de betreffende directory. Aanbeveling voor Cursor: open de repository-root en werk in bestanden onder `wikis/gemma-online/`. Als Cursor alleen de wiki-map moet openen en verificatie (sectie 8) bevestigt dat bovenliggende skills dan ontbreken, genereert `llmwiki harness sync --cursor-wiki-root` een brug `wikis/<key>/.cursor/skills/` met ingangen naar de generieke skills. [Verified] `.cursor/skills/` is een Cursor-eigen locatie en wordt door de andere harnesses niet gelezen, dus deze brug veroorzaakt geen duplicaten elders. Dit is de enige plek waar volledige pariteit een tweede brug kan vereisen.
 
 ### 5.15 Minimale harness-configuratie voor Claude Code
 
@@ -929,7 +929,7 @@ Bestanden:
 | `wikis/<key>/.claude/settings.json` | Permissies voor sessies in de wiki-map | Ja |
 | Geen `CLAUDE.md` | — | — |
 
-`wikis/gemma/.mcp.json`:
+`wikis/gemma-online/.mcp.json`:
 
 ```json
 {
@@ -948,7 +948,7 @@ Bestanden:
 }
 ```
 
-`wikis/gemma/.claude/settings.json` (en dezelfde `ask`- en `deny`-regels in de root):
+`wikis/gemma-online/.claude/settings.json` (en dezelfde `ask`- en `deny`-regels in de root):
 
 ```json
 {
@@ -988,7 +988,7 @@ Optioneel, later: `.claude/agents/<rol>.md` voor Agentprofielen (5.9).
 
 Portable delen (Rules, Skills, Workflows, schemas, CLI, run-State, gate) zijn identiek. Per harness verschilt alleen:
 
-**OpenCode.** `wikis/gemma/opencode.json` (gegenereerd):
+**OpenCode.** `wikis/gemma-online/opencode.json` (gegenereerd):
 
 ```json
 {
@@ -1018,7 +1018,7 @@ Portable delen (Rules, Skills, Workflows, schemas, CLI, run-State, gate) zijn id
 
 [Verified] `instructions` bestaat in `opencode.json`; [Verified] OpenCode kent de permissiewaarden `allow`, `deny` en `ask` met wildcards (gedocumenteerd voor `permission.skill`). [Inferred] Dezelfde vorm voor `permission.bash` en de vorm van het `mcp`-blok; verificatie in sectie 8. Gebruikersomgeving: `OPENCODE_DISABLE_CLAUDE_CODE_SKILLS=1` zolang de Claude Code-brug aanwezig is.
 
-**Codex.** `wikis/gemma/.codex/config.toml` (gegenereerd):
+**Codex.** `wikis/gemma-online/.codex/config.toml` (gegenereerd):
 
 ```toml
 [mcp_servers.mediawiki]
@@ -1030,7 +1030,7 @@ env = { MW_API_URL = "https://www.gemmaonline.nl/w/api.php" }
 
 In `wiki-publish/agents/openai.yaml`: `policy.allow_implicit_invocation: false`. [Verified] Codex leest skills uit `.agents/skills/` en AGENTS.md zonder verdere configuratie. [Inferred] Veldnamen `env_vars` en `env`; verificatie in sectie 8. Laag 2 van de gate rust in Codex op de goedkeuringsmodus: [Inferred] in een modus die commando's buiten de sandbox of met netwerktoegang laat goedkeuren, vraagt `publish apply` (dat netwerk nodig heeft) om goedkeuring. Verificatie in sectie 8.
 
-**VS Code/Copilot.** `wikis/gemma/.vscode/settings.json`:
+**VS Code/Copilot.** `wikis/gemma-online/.vscode/settings.json`:
 
 ```json
 {
@@ -1039,9 +1039,9 @@ In `wiki-publish/agents/openai.yaml`: `policy.allow_implicit_invocation: false`.
 }
 ```
 
-en `wikis/gemma/.vscode/mcp.json` met een `servers`-blok voor `mediawiki`. [Verified] VS Code leest `.agents/skills/` en ondersteunt `disable-model-invocation`. [Inferred] Laag 2 van de gate: VS Code vraagt goedkeuring voor terminalcommando's tenzij ze op een auto-approve-lijst staan; de generator zet `publish apply` en `export apply` nooit op die lijst.
+en `wikis/gemma-online/.vscode/mcp.json` met een `servers`-blok voor `mediawiki`. [Verified] VS Code leest `.agents/skills/` en ondersteunt `disable-model-invocation`. [Inferred] Laag 2 van de gate: VS Code vraagt goedkeuring voor terminalcommando's tenzij ze op een auto-approve-lijst staan; de generator zet `publish apply` en `export apply` nooit op die lijst.
 
-**Cursor.** `wikis/gemma/.cursor/mcp.json` met `mcpServers.mediawiki`; verder 5.14. [Verified] Cursor leest `.agents/skills/` en AGENTS.md en ondersteunt `disable-model-invocation`. [Inferred] Laag 2 van de gate: Cursor vraagt goedkeuring voor terminalcommando's buiten de toegestane lijst; dezelfde regel als bij VS Code.
+**Cursor.** `wikis/gemma-online/.cursor/mcp.json` met `mcpServers.mediawiki`; verder 5.14. [Verified] Cursor leest `.agents/skills/` en AGENTS.md en ondersteunt `disable-model-invocation`. [Inferred] Laag 2 van de gate: Cursor vraagt goedkeuring voor terminalcommando's buiten de toegestane lijst; dezelfde regel als bij VS Code.
 
 **Generator.** `llmwiki harness sync` schrijft al deze bestanden uit `wiki.yaml` en de skill-directories; `llmwiki harness check` faalt als een gegenereerd bestand afwijkt van wat de generator zou schrijven, als er een CLAUDE.md op een wiki-pad staat, of als een brug verouderd is. `check` draait in een pre-commit-hook en in CI. Gegenereerde bestanden beginnen, waar het formaat commentaar toestaat, met de regel dat ze gegenereerd zijn en uit welke bron.
 
@@ -1175,7 +1175,7 @@ llm-wikis/                          Git-root = Obsidian-vault
 `wiki.yaml` voor `sync` (kern; zie 5.10 voor de MCP-onderdelen):
 
 ```yaml
-key: gemma
+key: gemma-online
 type: sync
 site:
   family: gemmaonline                # pywikibot-family: families/gemmaonline_family.py (5.10a)
@@ -1417,16 +1417,16 @@ Punten gemarkeerd als [Speculative] die de architectuur raken:
 
 | Nr | Vraag | Test | Gevolg bij negatief resultaat |
 |---|---|---|---|
-| V1 | Laadt OpenCode bij starten in `wikis/gemma` ook de root-AGENTS.md? | Vraag in een nieuwe Sessie: "welke instructiebestanden zijn geladen?" | Geen: `instructions` in `opencode.json` dekt dit al |
-| V2 | Vindt Cursor bij openen van alleen `wikis/gemma` root-skills en root-AGENTS.md? | Open map, controleer Customize > Skills | Activeer `--cursor-wiki-root`-brug |
+| V1 | Laadt OpenCode bij starten in `wikis/gemma-online` ook de root-AGENTS.md? | Vraag in een nieuwe Sessie: "welke instructiebestanden zijn geladen?" | Geen: `instructions` in `opencode.json` dekt dit al |
+| V2 | Vindt Cursor bij openen van alleen `wikis/gemma-online` root-skills en root-AGENTS.md? | Open map, controleer Customize > Skills | Activeer `--cursor-wiki-root`-brug |
 | V4 | Hoe gaan VS Code en Cursor om met identieke skills in `.agents/skills/` en `.claude/skills/`? | Beide aanwezig, controleer skill-lijst | Brug alleen op Claude Code-machines of VS Code `chat.agentSkillsLocations` beperken |
 | V5 | Vraagt elk harness bij een 'ask'-regel op `publish apply` altijd om goedkeuring, ook in modi met automatische goedkeuring? | Laat de Agent `publish apply` aanroepen in een testwiki, eerst in de standaardmodus, daarna in de auto-approve-modus van dat harness | Spelregel "automatische goedkeuring uit bij publiceren" is dan de enige bescherming voor smaak B; overweeg voor dat harness alleen smaak A, en voor Claude Code de MCP-variant met `anthropic/requiresUserInteraction` |
 | V6 | Exacte veldnamen MCP-config OpenCode, VS Code, Cursor | Generator-uitvoer laden, server moet verbinden | Generator aanpassen |
-| V7 | Leest Codex `.agents/skills/` en `AGENTS.md` native in `wikis/gemma` zonder gegenereerd bestand, zoals 5.14 aanneemt? | Start Codex in `wikis/gemma`, vraag welke Rules/Skills geladen zijn | Alsnog een gegenereerd Codex-bestand toevoegen aan `harness.py` |
+| V7 | Leest Codex `.agents/skills/` en `AGENTS.md` native in `wikis/gemma-online` zonder gegenereerd bestand, zoals 5.14 aanneemt? | Start Codex in `wikis/gemma-online`, vraag welke Rules/Skills geladen zijn | Alsnog een gegenereerd Codex-bestand toevoegen aan `harness.py` |
 | V8 | Volgt elk harness de instructie "Werkplek eerst" uit de root-AGENTS.md bij de eerste Vraag? | Nieuwe kloon, eerste Vraag is inhoudelijk | Instructie scherper en hoger in AGENTS.md; in Claude Code eventueel een SessionStart-hook die `workspace-check` draait (H) |
 | V9 | Duur van de eerste inrichting op een schone machine | Tijd meten van klonen tot eerste `workspace-check ok`, per besturingssysteem | Afhankelijkheden beperken of vooraf te installeren programma's in README noemen |
-| V10 | Resolvet het relatieve `CONFIG`-pad naar `mediawiki-mcp.config.json` (5.10) correct in elke harness (child-process-cwd bij een stdio-server verschilt mogelijk per harness)? | MCP-server registreren, `whoami`/lees-tool aanroepen in elke harness vanuit `wikis/gemma` | Generator laat per harness een absoluut, lokaal-berekend pad schrijven (dan niet meer gecommit voor die ene harness-file) |
-| V11 | Werkt inloggen met botwachtwoorden uit omgevingsvariabelen (5.10a) tegen redactie en staging, inclusief de extra HTTP-toegangslaag van staging en het aangenomen scriptpad `""` op staging? | Variabelen zetten, `uv run python -m llmwiki pull --wiki wikis/gemma --titel "Wat is GEMMA" --doel staging`, daarna zonder `--doel`; één testpublicatie alleen op staging | Scriptpad of protocol in `gemmaonline_family.py` aanpassen; bij een login-API die `action=login` weigert: gewoon account via `clientlogin` of OAuth (pywikibots `authenticate` met vier sleutels) |
+| V10 | Resolvet het relatieve `CONFIG`-pad naar `mediawiki-mcp.config.json` (5.10) correct in elke harness (child-process-cwd bij een stdio-server verschilt mogelijk per harness)? | MCP-server registreren, `whoami`/lees-tool aanroepen in elke harness vanuit `wikis/gemma-online` | Generator laat per harness een absoluut, lokaal-berekend pad schrijven (dan niet meer gecommit voor die ene harness-file) |
+| V11 | Werkt inloggen met botwachtwoorden uit omgevingsvariabelen (5.10a) tegen redactie en staging, inclusief de extra HTTP-toegangslaag van staging en het aangenomen scriptpad `""` op staging? | Variabelen zetten, `uv run python -m llmwiki pull --wiki wikis/gemma-online --titel "Wat is GEMMA" --doel staging`, daarna zonder `--doel`; één testpublicatie alleen op staging | Scriptpad of protocol in `gemmaonline_family.py` aanpassen; bij een login-API die `action=login` weigert: gewoon account via `clientlogin` of OAuth (pywikibots `authenticate` met vier sleutels) |
 
 Pariteitstest per harness (handmatig, per release van een harness of van de core):
 

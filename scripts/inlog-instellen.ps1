@@ -50,5 +50,5 @@ if ($gewijzigd -gt 0) {
 } else {
     Write-Host "Niets gewijzigd."
 }
-Write-Host "Controleren kan met: uv run python -m llmwiki pull --wiki wikis/gemma --titel ""Wat is GEMMA"" --doel staging"
+Write-Host "Controleren kan met: uv run python -m llmwiki pull --wiki wikis/gemma-online --titel ""Wat is GEMMA"" --doel staging"
 Write-Host "(in een nieuw venster, vanuit de map GEMMA-kenniswerkplek)"

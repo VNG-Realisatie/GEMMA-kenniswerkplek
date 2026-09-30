@@ -1,4 +1,4 @@
-# gemma-wiki (sync)
+# gemma-online-wiki (sync)
 
 Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de Context staan: lees dat bestand voordat je iets wijzigt.
 

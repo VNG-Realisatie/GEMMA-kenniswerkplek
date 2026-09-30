@@ -1,7 +1,7 @@
 # Richt de werkplek in op Windows: installeert 'uv' indien nodig, installeert de
 # Python-omgeving en controleert het resultaat. Voor niet-technische redacteuren:
 # open PowerShell in deze map en typ: .\scripts\setup.ps1
-# Het script vraagt of je met de wiki GEMMA Online (wikis/gemma) gaat werken; alleen dan zijn
+# Het script vraagt of je met de wiki GEMMA Online (wikis/gemma-online) gaat werken; alleen dan zijn
 # inloggegevens nodig. Sla die vraag over met -GemmaOnline (wel) of -ZonderGemmaOnline (niet).
 param(
     [switch]$GemmaOnline,
@@ -39,7 +39,7 @@ Write-Host ""
 Write-Host "Werkplek controleren..."
 uv run python -m llmwiki workspace-check
 
-# Inloggegevens voor GEMMA Online: alleen nodig als je met de sync-wiki wikis/gemma werkt.
+# Inloggegevens voor GEMMA Online: alleen nodig als je met de sync-wiki wikis/gemma-online werkt.
 # Voor de andere wiki's (zoals gemma-archimate-model) kun je zonder.
 Write-Host ""
 if ($GemmaOnline) {
@@ -47,7 +47,7 @@ if ($GemmaOnline) {
 } elseif ($ZonderGemmaOnline -or -not [Environment]::UserInteractive) {
     $metGemma = $false
 } else {
-    $antwoord = Read-Host "Ga je werken met de wiki GEMMA Online (wikis/gemma)? Dan heb je inloggegevens nodig. [j/N]"
+    $antwoord = Read-Host "Ga je werken met de wiki GEMMA Online (wikis/gemma-online)? Dan heb je inloggegevens nodig. [j/N]"
     $metGemma = $antwoord -match '^\s*j'
 }
 

@@ -1,4 +1,4 @@
-key: gemma
+key: gemma-online
 type: sync                           # sync | curation | knowledge-base
 
 site:

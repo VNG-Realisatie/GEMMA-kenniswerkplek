@@ -6,11 +6,11 @@ from llmwiki import workspace_check
 
 def _repo_met_sync_wiki(tmp_path):
     root = tmp_path / "repo"
-    wiki_root = root / "wikis" / "gemma"
+    wiki_root = root / "wikis" / "gemma-online"
     wiki_root.mkdir(parents=True)
     (root / "pyproject.toml").write_text("[project]\nname='fixture'\n", encoding="utf-8")
     wiki_yaml = {
-        "key": "gemma",
+        "key": "gemma-online",
         "type": "sync",
         "site": {"family": "gemmaonline", "code": "redactie", "server": "https://redactie.gemmaonline.nl", "inlog": {"gebruiker": "TEST_GEMMA_USER"}},
     }
@@ -22,20 +22,20 @@ def test_npx_ontbreekt_is_een_opmerking(tmp_path, monkeypatch):
     root = _repo_met_sync_wiki(tmp_path)
     monkeypatch.setattr(workspace_check.shutil, "which", lambda naam: None)
     notes = workspace_check._npx_notes(root)
-    assert len(notes) == 1 and "alleen nodig" in notes[0] and "wikis/gemma" in notes[0]
+    assert len(notes) == 1 and "alleen nodig" in notes[0] and "wikis/gemma-online" in notes[0]
 
 
 def test_ontbrekende_inlog_is_een_opmerking_voor_die_wiki(tmp_path, monkeypatch):
     root = _repo_met_sync_wiki(tmp_path)
     monkeypatch.delenv("TEST_GEMMA_USER", raising=False)
     notes = workspace_check._inlog_notes(root)
-    assert notes and all("alleen nodig als je met wikis/gemma werkt" in n for n in notes)
+    assert notes and all("alleen nodig als je met wikis/gemma-online werkt" in n for n in notes)
 
 
 def test_zonder_npx_en_inlog_blokkeert_de_werkplek_niet(tmp_path, monkeypatch):
     root = _repo_met_sync_wiki(tmp_path)
-    (root / "wikis" / "gemma" / "families").mkdir()
-    (root / "wikis" / "gemma" / "families" / "gemmaonline_family.py").write_text("", encoding="utf-8")
+    (root / "wikis" / "gemma-online" / "families").mkdir()
+    (root / "wikis" / "gemma-online" / "families" / "gemmaonline_family.py").write_text("", encoding="utf-8")
     monkeypatch.setattr(workspace_check.shutil, "which", lambda naam: None)
     monkeypatch.delenv("TEST_GEMMA_USER", raising=False)
     result = workspace_check.check(root)

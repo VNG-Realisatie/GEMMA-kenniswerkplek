@@ -115,15 +115,15 @@ Achtergrond per onderdeel: `docs/onderbouwing.md` (sectienummers tussen haakjes)
 
 **Taak.**
 
-1. Kopieer `wikis/_template` naar `wikis/gemma` (type `sync`, kale werkkopie). Vul `AGENTS.md` (domein, taal, stijl, doelgroep, naamgeving) en `wiki.yaml` (site, namespaces, gekozen smaak, bewaartermijn).
+1. Kopieer `wikis/_template` naar `wikis/gemma-online` (type `sync`, kale werkkopie). Vul `AGENTS.md` (domein, taal, stijl, doelgroep, naamgeving) en `wiki.yaml` (site, namespaces, gekozen smaak, bewaartermijn).
 2. Haal de content op met `llmwiki pull` en commit die.
-3. Optioneel, alleen voor zover een concreet probleem daarom vraagt: een losstaande curatie-wiki (bv. `wikis/gemma-begrippen`, type `curation` met een ingevuld `exports:`-blok voor ArchiMate) voor gestructureerde begrippenopbouw — géén onderdeel van `wikis/gemma` zelf (5.18: een sync-wiki heeft geen domein-lens). Voeg pas dan GEMMA-specifieke vaardigheden (`gemma-bo`, `gemma-archimate`), een schema en exportscripts toe, in die curatie-wiki.
+3. Optioneel, alleen voor zover een concreet probleem daarom vraagt: een losstaande curatie-wiki (bv. `wikis/gemma-begrippen`, type `curation` met een ingevuld `exports:`-blok voor ArchiMate) voor gestructureerde begrippenopbouw — géén onderdeel van `wikis/gemma-online` zelf (5.18: een sync-wiki heeft geen domein-lens). Voeg pas dan GEMMA-specifieke vaardigheden (`gemma-bo`, `gemma-archimate`), een schema en exportscripts toe, in die curatie-wiki.
 4. Schrijf zo nodig een dunne wiki-Workflow bovenop `wiki-edit` (sync) die GEMMA-specifieke controles toevoegt op het uitbreidingspunt VALIDATE (5.8).
 5. Draai `llmwiki harness sync` en voer de pariteitstest uit in alle vijf omgevingen (sectie 8). Sluit de verificatiepunten V1 tot en met V10 af en werk `docs/onderbouwing.md` bij met de uitkomsten.
 
 **Eindresultaat.**
 
-- [ ] `cd wikis/gemma` en een Vraag als *"Werk deze pagina bij met wiki-edit"* werkt in alle vijf omgevingen op dezelfde manier: dezelfde stappen, geldige tussenresultaten, stop bij het akkoord.
+- [ ] `cd wikis/gemma-online` en een Vraag als *"Werk deze pagina bij met wiki-edit"* werkt in alle vijf omgevingen op dezelfde manier: dezelfde stappen, geldige tussenresultaten, stop bij het akkoord.
 - [ ] Eén echte wijziging is gepubliceerd op de GEMMA-site, met een regel in `log.md` en een commit met de run-id.
 - [ ] Als een curatie-wiki met exportdoel is toegevoegd: één architectuurmodel-export is via dezelfde gate uitgevoerd.
 - [ ] Vanuit de hoofdmap zijn wiki-specifieke vaardigheden niet zichtbaar voor andere wiki's (`llmwiki lint` en een controle per omgeving).

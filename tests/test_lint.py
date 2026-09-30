@@ -12,7 +12,7 @@ def test_generic_skill_referencing_wiki_path_is_rejected(tmp_path):
     skill_dir = repo_root / ".agents" / "skills" / "wiki-bad"
     skill_dir.mkdir(parents=True)
     (skill_dir / "SKILL.md").write_text(
-        "---\nname: wiki-bad\ndescription: test\n---\n\nZie wikis/gemma/content voor meer.\n",
+        "---\nname: wiki-bad\ndescription: test\n---\n\nZie wikis/gemma-online/content voor meer.\n",
         encoding="utf-8",
     )
     errors = lint.run_lint(repo_root)

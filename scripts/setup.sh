@@ -2,7 +2,7 @@
 # Richt de werkplek in op Linux en macOS: installeert 'uv' indien nodig, installeert
 # de Python-omgeving en controleert het resultaat. Voor niet-technische redacteuren:
 # open een terminal in deze map en typ: ./scripts/setup.sh
-# Het script vraagt of je met de wiki GEMMA Online (wikis/gemma) gaat werken; alleen dan zijn
+# Het script vraagt of je met de wiki GEMMA Online (wikis/gemma-online) gaat werken; alleen dan zijn
 # inloggegevens nodig. Sla die vraag over met --gemma-online (wel) of --zonder-gemma-online (niet).
 set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
@@ -40,12 +40,12 @@ echo
 echo "Werkplek controleren..."
 uv run python -m llmwiki workspace-check
 
-# Inloggegevens voor GEMMA Online: alleen nodig als je met de sync-wiki wikis/gemma werkt.
+# Inloggegevens voor GEMMA Online: alleen nodig als je met de sync-wiki wikis/gemma-online werkt.
 # Voor de andere wiki's (zoals gemma-archimate-model) kun je zonder.
 echo
 if [ -z "$met_gemma" ]; then
     if [ -t 0 ]; then
-        read -r -p "Ga je werken met de wiki GEMMA Online (wikis/gemma)? Dan heb je inloggegevens nodig. [j/N] " antwoord
+        read -r -p "Ga je werken met de wiki GEMMA Online (wikis/gemma-online)? Dan heb je inloggegevens nodig. [j/N] " antwoord
         case "$antwoord" in [jJ]*) met_gemma=ja ;; *) met_gemma=nee ;; esac
     else
         met_gemma=nee
