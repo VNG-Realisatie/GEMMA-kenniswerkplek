@@ -18,10 +18,10 @@ def _bo(**over):
     return {k: v for k, v in meta.items() if v is not None}
 
 
-def _schrijf(wiki, pad, meta, body="# x\n"):
+def _schrijf(wiki, pad, meta, body="# x\n", definitie_bovenaan=True):
     doel = wiki / pad
     doel.parent.mkdir(parents=True, exist_ok=True)
-    doel.write_text(element_tekst(meta, body), encoding="utf-8")
+    doel.write_text(element_tekst(meta, body, definitie_bovenaan), encoding="utf-8")
 
 
 @pytest.fixture
@@ -93,6 +93,17 @@ def test_formele_definitie_uit_beleid_en_zonder_uitleg(wiki):
     meldingen = [m for n, m in _fouten(wiki) if n == "definitie-formeel"]
     assert any("brontype 'beleid'" in m for m in meldingen)
     assert any("## Definitie" in m for m in meldingen)
+
+
+def test_definitie_niet_bovenaan(wiki):
+    _schrijf(wiki, BO_PAD, _bo(), "# x\n\n## Beschrijving\n\nTekst.\n\n## Definitie\n\nSchriftelijk besluit over een individueel geval.\n",
+             definitie_bovenaan=False)
+    assert any(n == "definitie-bovenaan" and "eerste sectie" in m for n, m in _fouten(wiki))
+
+
+def test_definitie_bovenaan_wijkt_af_van_frontmatter(wiki):
+    _schrijf(wiki, BO_PAD, _bo(), "# x\n\n## Definitie\n\nIets anders.\n", definitie_bovenaan=False)
+    assert any(n == "definitie-bovenaan" and "niet letterlijk" in m for n, m in _fouten(wiki))
 
 
 def test_bron_zonder_bronanalyse_en_element_niet_in_begrippenlijst(wiki):

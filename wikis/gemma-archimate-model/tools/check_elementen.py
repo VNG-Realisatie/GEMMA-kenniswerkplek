@@ -159,9 +159,9 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
                      "De naam komt uit de gangbare taal, de wetsterm wordt synoniem [SRC10]")
     eerste = re.search(r"^## (.+?)\s*$", el.body, re.M)
     if not eerste or eerste.group(1) != "Definitie":
-        waarschuwing("definitie-bovenaan", "eerste sectie is niet '## Definitie' (herkenbare definitie, dan Beschrijving)")
+        fout("definitie-bovenaan", "eerste sectie is niet '## Definitie' (herkenbare definitie, dan Beschrijving)")
     elif " ".join(definitie.split()) not in " ".join((gam_gemeen.sectie(el.body, "Definitie") or "").split()):
-        waarschuwing("definitie-bovenaan", "'## Definitie' bevat de definitie uit de frontmatter niet letterlijk")
+        fout("definitie-bovenaan", "'## Definitie' bevat de definitie uit de frontmatter niet letterlijk")
     if meta.get("definitie_formeel"):
         bron =(meta.get("definitie_formeel_bron") or {}).get("bron")
         try:
@@ -175,8 +175,8 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
             fout("definitie-formeel", "formele definitie uit het GGM: die staat al in ggm_definitie")
         if " ".join(str(meta["definitie_formeel"]).split()) == " ".join(definitie.split()):
             fout("definitie-formeel", "formele definitie is gelijk aan de herkenbare; laat de formele weg")
-        if gam_gemeen.sectie(el.body, "Definitie") is None:
-            fout("definitie-formeel", "formele definitie zonder sectie '## Definitie' met de formele definitie en het verschil")
+        if " ".join(str(meta["definitie_formeel"]).split()).lower() not in " ".join((gam_gemeen.sectie(el.body, "Definitie") or "").split()).lower():
+            fout("definitie-formeel", "formele definitie staat niet in '## Definitie' (als citaat, met het verschil)")
 
     # Modelvelden (EL12)
     if meta.get("ggm_guid"):
