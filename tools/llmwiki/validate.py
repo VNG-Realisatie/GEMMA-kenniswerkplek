@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import unquote, urlparse
+from urllib.request import url2pathname
 
 import jsonschema
 
@@ -153,7 +154,7 @@ def _page_type_schema_errors(wiki_root: Path, page_path: Path, meta: dict, schem
         return [f"{page_path}: schema '{schema_rel}' uit wiki.yaml bestaat niet"]
 
     def retrieve(uri: str) -> Resource:
-        target = Path(uri.removeprefix("file://"))
+        target = Path(url2pathname(urlparse(uri).path))  # ook op Windows: file:///C:/… → C:\…
         return Resource.from_contents(json.loads(target.read_text(encoding="utf-8")), default_specification=DRAFT202012)
 
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
