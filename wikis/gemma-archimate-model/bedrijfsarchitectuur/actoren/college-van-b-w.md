@@ -9,6 +9,7 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2024-rijk-gemeentewet-wettekst
+- 2024-vng-implementatiehandleiding-model-participatieverordening
 definitie: Dagelijks bestuur van de gemeente, bestaande uit de burgemeester en de
   wethouders.
 synoniemen:
@@ -44,6 +45,13 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij: nee
+  gebruikt_objecten: nee
+  aanleiding: nee
+  benoembaar_resultaat: nee
+  herhaald_uitgevoerd: nee
+  eigen_normering: nee
+  stabiel_over_tijd: nee
   onderscheidbare_exemplaren: nee
   levenscyclus: nee
   wordt_bewerkt: nee
@@ -67,7 +75,17 @@ Dagelijks bestuur van de gemeente, bestaande uit de burgemeester en de wethouder
 
 ## Beschrijving
 
-In de lijkbezorging benoemt het college de gemeentelijke lijkschouwers, heeft het het beheer over de gemeentelijke begraafplaatsen, verleent het grafrechten en vergunningen en besluit het tot sluiting van een begraafplaats (art. 4, 43, 53; Groningen art. 3, 16, 22).
+Het college bestaat uit de burgemeester, die voorzitter is, en de wethouders (Gemeentewet art. 34). Het voert het dagelijks bestuur van de gemeente, voor zover de wet dat niet aan de raad of de burgemeester opdraagt (art. 160).
+
+## Per onderwerp
+
+### [Lijkbezorging](../../begrippen/lijkbezorging.md)
+
+Het college benoemt de gemeentelijke lijkschouwers, heeft het beheer over de gemeentelijke begraafplaatsen, verleent grafrechten en vergunningen en besluit tot sluiting van een begraafplaats (Wet op de lijkbezorging art. 4, 43, 53; Groningen art. 3, 16, 22).
+
+### [Participatie](../../begrippen/participatie.md)
+
+Het college is het loket voor alle verzoeken om overheidsparticipatie en toepassing van het uitdaagrecht en bepaalt welk bestuursorgaan bevoegd is. Het stelt het plan voor inwonersparticipatie op en, bij besluiten van de raad, het eindverslag (implementatiehandleiding, var. 1 art. 3, 5, 6).
 
 ## Kenmerken
 
@@ -95,6 +113,13 @@ In de lijkbezorging benoemt het college de gemeentelijke lijkschouwers, heeft he
 | toestandsverandering | nee | Geen gedrag of niet deze soort gedrag. |  |
 | aangeboden gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
 | gezamenlijk gedrag | nee | Geen gedrag of niet deze soort gedrag. |  |
+| toegewezen partij | nee | Geen gedrag: een partij. |  |
+| gebruikt objecten | nee | Geen gedrag: een partij. |  |
+| aanleiding | nee | Geen gedrag: een partij. |  |
+| benoembaar resultaat | nee | Geen gedrag: een partij. |  |
+| herhaald uitgevoerd | nee | Geen gedrag: een partij. |  |
+| eigen normering | nee | Geen gedrag: een partij. |  |
+| stabiel over tijd | nee | Geen gedrag: een partij. |  |
 | onderscheidbare exemplaren | nee | Geen passief ding. |  |
 | levenscyclus | nee | Geen passief ding. |  |
 | wordt bewerkt | nee | Geen passief ding. |  |
@@ -119,9 +144,15 @@ Match **exact** met GEMMA-element College (business-actor). Geen wijziging ten o
 | associatie (gericht) | [Gemeentelijke lijkschouwer](../rollen/gemeentelijke-lijkschouwer.md) | benoemen | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 4) |
 | associatie (gericht) | [Beschikking](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | besluit tot (sluiting van een begraafplaats) | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 43 lid 2, 44) |
 | associatie (gericht) | [Plaats van bijzetting](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/plaats-van-bijzetting.md) | vergunt (bewaarplaats) | | bron | | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 64) |
+| toewijzing | [Uitvoeren inwonersparticipatie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md) | stelt het plan op voor | | bron | | [2024-vng-implementatiehandleiding-model-participatieverordening](../../bronanalyses/participatie/2024-vng-implementatiehandleiding-model-participatieverordening.md) (var. 1 art. 3 lid 3 (regel 141)) |
+| toewijzing | [Behandelen verzoek om overheidsparticipatie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-om-overheidsparticipatie.md) | vormt het loket voor | | bron | | [2024-vng-implementatiehandleiding-model-participatieverordening](../../bronanalyses/participatie/2024-vng-implementatiehandleiding-model-participatieverordening.md) (var. 2 art. 11 (regel 317)) |
+| associatie (gericht) | [Plan voor inwonersparticipatie](../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/plan-voor-inwonersparticipatie.md) | stelt op | | bron | | [2024-vng-implementatiehandleiding-model-participatieverordening](../../bronanalyses/participatie/2024-vng-implementatiehandleiding-model-participatieverordening.md) (var. 1 art. 3 lid 3 (regel 141)) |
+| associatie (gericht) | [Eindverslag inwonersparticipatie](../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/eindverslag-inwonersparticipatie.md) | stelt op (bij raadsbesluiten) | | bron | | [2024-vng-implementatiehandleiding-model-participatieverordening](../../bronanalyses/participatie/2024-vng-implementatiehandleiding-model-participatieverordening.md) (var. 1 art. 5 lid 3 (regel 149)) |
+| associatie (gericht) | [Verzoek om overheidsparticipatie](../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/verzoek-om-overheidsparticipatie.md) | beoordeelt en stuurt door | | bron | | [2024-vng-implementatiehandleiding-model-participatieverordening](../../bronanalyses/participatie/2024-vng-implementatiehandleiding-model-participatieverordening.md) (var. 1 art. 6 en 8 (regel 159, 175)); [2024-vng-implementatiehandleiding-model-participatieverordening](../../bronanalyses/participatie/2024-vng-implementatiehandleiding-model-participatieverordening.md) (var. 2 art. 11 (regel 319)) |
 
 ## Bronnen
 
 - [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
 - [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)
+- [Implementatiehandleiding VNG Model Participatieverordening 2024](../../bronanalyses/participatie/2024-vng-implementatiehandleiding-model-participatieverordening.md)
