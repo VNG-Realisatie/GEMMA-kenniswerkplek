@@ -176,6 +176,16 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
     if len(re.findall(r"[.!?](?:\s+[A-Z]|\s*$)", definitie)) > 1:
         waarschuwing("definitie-vorm", "definitie lijkt meer dan één zin [VR3]")
     contexten = {str((s or {}).get("context", "")).lower() for s in meta.get("synoniemen") or [] if isinstance(s, dict)}
+    # Vorm van de naam per type (EL20): proces = infinitief + object, functie = zelfstandig naamwoord
+    eerste_woord = str(meta.get("naam", "")).split(" ")[0].lower()
+    if el.paginatype == "bedrijfsproces" and not eerste_woord.endswith("en"):
+        waarschuwing("naam-vorm", f"procesnaam '{meta.get('naam')}' begint niet met een werkwoord (infinitief + object, "
+                     "bijv. 'Behandelen aanvraag'); het zelfstandig naamwoord wordt synoniem [EL20]")
+    if el.paginatype == "bedrijfsfunctie" and eerste_woord.endswith("en"):
+        waarschuwing("naam-vorm", f"functienaam '{meta.get('naam')}' lijkt een proces (infinitief); een functie heet naar "
+                     "het gebied van gedrag, bijv. 'Vergunningverlening' [EL20]")
+    if el.paginatype in ("bedrijfsproces", "bedrijfsdienst"):
+        contexten = set()  # de naamvorm is voorgeschreven; het zelfstandig naamwoord staat terecht als synoniem
     if contexten & {"beleid", "dagelijks gebruik"} and "wet" not in contexten:
         waarschuwing("naam-wetsterm", "gangbare term staat als synoniem en geen wetsterm: is de naam de wetsterm? "
                      "De naam komt uit de gangbare taal, de wetsterm wordt synoniem [SRC10]")

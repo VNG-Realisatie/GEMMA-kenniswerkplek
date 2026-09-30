@@ -220,3 +220,13 @@ def test_onderwerpgebonden_beschrijving_is_waarschuwing(wiki):
     _schrijf(wiki, BO_PAD, _bo(), "## Beschrijving\n\nBesluit over een individueel geval.\n\n"
              "## Per onderwerp\n\n### Vergunningen\n\nIn dit onderwerp neemt het college de beschikking.\n")
     assert not any(x.naam == "beschrijving-onderwerp" for x in check_elementen.controleer(wiki))
+
+
+def test_procesnaam_zonder_werkwoord_is_waarschuwing(wiki):
+    def naamvorm():
+        return [x for x in check_elementen.controleer(wiki) if x.naam == "naam-vorm"]
+    # De fixture heet 'Aanvraag behandelen': object eerst, geen GEMMA-volgorde
+    assert naamvorm() and naamvorm()[0].ernst == "waarschuwing"
+    pad = wiki / PROCES_PAD
+    pad.write_text(pad.read_text(encoding="utf-8").replace("Aanvraag behandelen", "Behandelen aanvraag"), encoding="utf-8")
+    assert naamvorm() == []
