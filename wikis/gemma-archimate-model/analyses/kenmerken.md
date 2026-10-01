@@ -18,6 +18,7 @@ Deze analyse loopt voor elk elementtype de kenmerken na, na de besluiten van 30 
 | 2026-10-01 | De drempel van het product bevat geen *onderscheidbare exemplaren* maar *benoembaar resultaat* (de waarde voor de afnemer): kern *omvat diensten en afspraken*, overig *afnemer* en *benoembaar resultaat*. Een verleend exemplaar is een bedrijfsobject, geen product. |
 | 2026-10-01 | Een concreet benoemde regeling als geheel die rijks- of EU-regelgeving of een VNG-modelverordening is, wordt beleidskader; de soort regeling is het bedrijfsobject Regeling; een gemeentelijke verordening blijft bron en wordt geen element; een los artikel valt buiten dit model. |
 | 2026-10-01 | Het kenmerk "zelfstandig beleidsbegrip" heet voortaan *zelfstandige specialisatie*, met de vraag: is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt (eigen gegevens, regels of werkwijze)? |
+| 2026-10-01 | Documentatie: de kenmerken als vragenlijst in volgorde van beoordelen en als naslagtabel per groep; de beslistabel als matrix kenmerk × type en als kaart per elementtype ("wanneer is iets een …?"). Beide worden gegenereerd uit dezelfde bron als de beslistabel; de stappentabel blijft in de criteria. |
 
 ## Hoe een vraag is opgebouwd
 

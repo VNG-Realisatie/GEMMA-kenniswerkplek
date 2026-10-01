@@ -1,70 +1,18 @@
 ---
-name: gemma-archimate-model-criteria
-description: De criteria van deze wiki voor de vraag of een begrip een ArchiMate-element is en van welk type (bedrijfsobject, afspraak, product, dienst, proces, functie, gebeurtenis, actor, rol, bedrijfssamenwerking, kanaal, beleidskader). Laad deze skill bij elke beoordeling van een begrip, vóór er een elementpagina wordt voorgesteld.
-metadata:
-  kind: capability
-  scope: wiki
-  requires-tools: "python:tools/bepaal_type.py"
-  reads: "bronanalyse"
-  writes: "beoordeling"
+id: beslistabel
+type: analyse
+titel: Kenmerken en beslistabel
+bijgewerkt: '2026-10-01'
+bronnen: [2026-vng-over-gemma]
 ---
 
-# Criteria: is dit begrip een ArchiMate-element, en welk?
+# Kenmerken en beslistabel
 
-Deze skill is de enige plek waar staat wanneer een begrip een element van dit model wordt. Ze beschrijft alleen *wat* het begrip is. Hoe je het daarna vastlegt (GGM-match, naam, definitie, relaties) staat in `gemma-archimate-model-write`.
+Deze pagina documenteert hoe deze wiki bepaalt of een begrip een element van het GEMMA-architectuurmodel is, en van welk type. Elk begrip uit een bron krijgt één keer dezelfde vragen: de kenmerken. De beslistabel past daar vaste regels op toe; de uitkomst is het type, of de reden waarom het begrip geen eigen pagina krijgt. Er wordt nooit eerst een type gekozen om daarna te toetsen of het klopt.
 
-## Kenmerk en criterium
+De namen en definities van de typen volgen het GEMMA-kennismodel ([GEMMA-kennismodel](gemma-kennismodel.md)). De keuzes achter de kenmerken staan in [kenmerken per elementtype](kenmerken.md), [toegang tot een bedrijfsobject](gegevensrollen.md) en [synoniemen en homoniemen](synoniemen-en-homoniemen.md). Criteria van 1 oktober 2026.
 
-- Een **kenmerk** is een neutrale eigenschap van het begrip zelf, bijvoorbeeld *onderscheidbare exemplaren*. Je beantwoordt het met ja of nee, met een onderbouwing en de bron-id's waarop die steunt. Een kenmerk oordeelt niet over het type.
-- Een **criterium** is een regel in de beslistabel hieronder (stap 0 tot 6): welke combinatie van kenmerken tot welk type leidt. De tool `tools/bepaal_type.py` past de criteria toe; jij beoordeelt ze niet los.
-
-Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eerst een type om daarna te toetsen of het klopt. Het type is de uitkomst.
-
-## Werkwijze
-
-1. **Stap 0: welk begrip?** Bepaal vóór de kenmerken of het woord een synoniem is van een bestaand element (of van een begrip in deze run), en of dezelfde naam al voor een ander begrip bestaat: in de wiki, het GGM (`tools/ggm.py naamgenoten <naam>`), het GEMMA-model (`tools/gemma.py zoek <naam>`) of een bron. Vul `synoniem_van` of `homoniem_van` in. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
-2. Beantwoord **alle** kenmerken uit de vragenlijst hieronder, ook als ze niet bij het vermoedelijke type horen (dan nee). Gebruik de bronnen in de volgorde van de bronvoorrang (wet → informatiemodel → beleid → overig). Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; staat die niet in de bronanalyse, vul dan eerst de bronanalyse aan.
-3. Let op:
-   - *zelfstandige specialisatie*: kijk eerst naar boven. Zoek de generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek`) en noteer de keten (bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Het kenmerk gaat over de "is een"-relatie, niet over herkomst uit wet of beleid; zie `gemma-archimate-model-assess` §3.
-   - *los van verantwoordelijkheid* en *eigen rechtspersoon* beslissen tussen actor, rol en bedrijfssamenwerking. Een actor hangt alleen via een rol aan gedrag en objecten (*vervult een rol*).
-   - *gebruikt objecten* en *wordt bewerkt*: noem de handeling uit de vaste reeks (registreren, bijwerken, beëindigen, raadplegen, verstrekken, bewaren, overbrengen, vernietigen).
-   - *bijdrage aan groter proces*: ja maakt een bedrijfsproces tot deelproces (procesniveau), met het grotere proces in de onderbouwing.
-   - Een doelgroep (minima, jongeren) is geen actor of rol maar een indeling van een actor: *slechts eigenschap* ja, met de actor als `genoemd_begrip`.
-   - Een regeling: een concreet benoemde landelijke regeling wordt beleidskader; de soort ("verordening") is het bedrijfsobject Regeling; een gemeentelijke verordening blijft bron; een los artikel is *buiten dit model*.
-4. Vul waar nodig de extra velden in:
-   - `genoemd_begrip` bij *slechts eigenschap*, *eigen identiteit* nee (het geheel), *zelfstandige specialisatie* nee (het bredere begrip) of *waarneembare vorm* (het object);
-   - `archimate_buiten_model` bij *buiten dit model*.
-5. Leg de beoordeling vast volgens `schemas/beoordeling.schema.json` en draai `uv run python tools/bepaal_type.py evalueer <bestand> --schrijf`. De uitkomst is bindend.
-6. Is de uitkomst `conflict` of staat `voorleggen` aan, dan leg je het begrip voor aan de redacteur, met de redenen uit de uitkomst. Pas je antwoorden niet aan om een conflict weg te werken, tenzij een antwoord aantoonbaar fout was.
-
-## ArchiMate-typen in dit model
-
-Namen en definities volgen het GEMMA-kennismodel (bron `2026-vng-over-gemma`, besluit redacteur 2026-10-01; de vergelijking staat in `analyses/gemma-kennismodel.md`). Waar GEMMA een type niet kent, geldt de definitie van ArchiMate 3.2 (Engels). De herkomst staat achter elke definitie. "Herkend" betekent: de tool herkent het type, maar deze wiki heeft er geen paginatype voor; het begrip wordt voorgelegd. "Geen pagina" betekent: vaste uitkomst, vermeld bij een ander element.
-
-| ArchiMate-type | Paginatype | GEMMA-naam | Definitie | Duiding |
-|---|---|---|---|---|
-| Business Object | `bedrijfsobject` | Bedrijfsobject | Een concept dat binnen een bepaald domein wordt gebruikt en betekenis heeft. (GEMMA) | Een ding waar de gemeente mee werkt: het wordt geregistreerd, bijgewerkt of geraadpleegd door gemeentelijk gedrag. De soort regeling (Regeling) is ook een bedrijfsobject. |
-| Contract | `bedrijfsobject` (`archimate_type: contract`) | Afspraak | Overeenkomst tussen meerdere partijen betreffende een bepaald onderwerp. (GEMMA) | Een afspraak tussen partijen (overeenkomst, convenant). Een besluit of verordening is géén afspraak. |
-| Product | `product` | Product | Een Product is een gebundeld aanbod van diensten met bijbehorende afspraken, geleverd door een organisatie aan een afnemer en met waarde voor die afnemer. (GEMMA) | Wat de gemeente als geheel aanbiedt (bijv. uit de productencatalogus): diensten met afspraken, geen losse objecten. |
-| Business Service | `dienst` | Dienst | Een afgebakende prestatie van een persoon of organisatie (de dienstverlener), die voorziet in een behoefte van haar omgeving (de dienstafnemer(s)). (NORA) | Wat een afnemer van de gemeente kan krijgen, los van hoe het wordt uitgevoerd; gerealiseerd door een proces of functie. |
-| Business Process | `bedrijfsproces` | Bedrijfsproces | Reeks opeenvolgend uit te voeren activiteiten die bijdraagt aan een specifiek resultaat, zoals de levering van een Product of Dienst. (GEMMA) | Wordt per keer doorlopen en levert een resultaat op. Een rol mag aan een bedrijfsproces worden toegewezen. Procesniveau bedrijfsproces of deelproces. |
-| Business Function | `bedrijfsfunctie` | Bedrijfsfunctie | Activiteiten die zijn gegroepeerd omdat daarvoor vergelijkbare bedrijfsmiddelen, kennis of competenties nodig zijn. (GEMMA) | Doorlopende groepering van gedrag; bedient processen. Niet "wat de gemeente kan": dat is een vermogen (Capability). |
-| Business Event | `gebeurtenis` | Gebeurtenis | Iets dat binnen of buiten een organisatie is gebeurd en binnen die organisatie of daarbuiten gevolgen heeft. (GEMMA) | Ogenblikkelijk voorval dat gedrag start of afsluit (verhuizing, aanvraag ontvangen). |
-| Business Actor | `actor` | Actor | Een organisatie, afdeling daarbinnen of persoon die activiteiten kan uitvoeren. (GEMMA) | Persoon, organisatie of eenheid, ook extern of generiek (inwoner), en een samenwerkingsverband met eigen rechtspersoon (GGD). Hangt alleen via een rol aan gedrag en objecten. |
-| Business Role | `rol` | Rol | Een rol is de verantwoordelijkheid voor specifiek gedrag waar een actor aan toegewezen kan worden. (ArchiMate) | Verantwoordelijkheid of hoedanigheid (aanvrager, belastingplichtige, heffingsambtenaar). |
-| Business Collaboration | `bedrijfssamenwerking` | Bedrijfssamenwerking | Een bedrijfssamenwerking is een (tijdelijke) samenstelling van twee of meer bedrijfsrollen resulterend in een specifiek collectief gedrag in een bepaalde context. (ArchiMate) | Samenwerkingsverband zonder eigen rechtspersoon (Zorg- en Veiligheidshuis). |
-| Business Interface | `kanaal` | Kanaal | Communicatiekanaal dat bij de dienstverlening wordt gebruikt. Elk kanaal kent verschillende vormen waarin informatie kan worden gedeeld. (NORA) | Loket, website, telefoon. Eén centrale set; een onderwerp koppelt alleen een dienst aan een bestaand kanaal. |
-| Driver | `beleidskader` (map `motivatie/`) | Beleidskader | Beleidskader is gebaseerd op bestaand overheidsbeleid (Nationaal en Europees) en op de instrumenten die in het kader van dat beleid zijn ontwikkeld, zoals wetten, regelgeving, Kamerstukken en bestuursakkoorden (NORA) | Een concreet benoemde rijks- of EU-regeling of VNG-modelverordening die de gemeente een taak, bevoegdheid of plicht geeft. |
-| Business Interaction | herkend | — | A unit of collective business behavior performed by two or more business actors, roles or collaborations. (ArchiMate) | Gezamenlijk gedrag (keukentafelgesprek, zitting). |
-| Representation | geen pagina | — | A perceptible form of the information carried by a business object. (ArchiMate) | Document, formulier, register, bericht: vermelden bij het object. |
-| Location | geen pagina | — | A conceptual or physical place or position where concepts are located or performed. (ArchiMate) | Fysieke plaats als zodanig; een gebiedsindeling als gegevensconcept is een bedrijfsobject. |
-| Data Object (applicatielaag) | annotatie `data_object` | Data-object | Samenhangende set gegevens die geautomatiseerd kan worden verwerkt. (GEMMA) | Voorbereiding op `applicatiearchitectuur/`; hier alleen als signaal. In GEMMA realiseert een data-object een bedrijfsobject. |
-
-Buiten dit model vallen de overige motivatie- en strategie-elementen (Goal, Outcome, Principle, Requirement, Constraint, Value, Capability) en Grouping (thema). Een losse norm uit één artikel is een Requirement of Constraint en valt buiten het model; de regeling als geheel is een beleidskader (landelijk) of blijft bron (gemeentelijk).
-
-## Kenmerken en beslistabel
-
-Gegenereerd uit de beslistabel (`uv run python tools/bepaal_type.py markdown --schrijf`); dezelfde tekst, zonder de stappentabel, staat in `analyses/beslistabel.md`.
+Alles hieronder is gegenereerd uit dezelfde bron als de beslistabel zelf; wijzigingen gaan via de beslistabel, niet via deze pagina.
 
 <!-- BEGIN gegenereerd uit de beslistabel; niet met de hand bewerken -->
 ### Stap 0: welk begrip?
@@ -405,59 +353,4 @@ Typen: Obj = Bedrijfsobject · Afspr = Afspraak · Prod = Product · Dienst = Di
 | is grondslag voor |  |  |  |  |  |  |  |  |  |  |  | K |  |  |  |
 | **Specialisatie** | | | | | | | | | | | | | | | |
 | zelfstandige specialisatie | S | S | S | S | S | S | S | S | S | S | S | S |  |  |  |
-
-### Stappentabel
-
-Stap 0–4 van boven naar beneden: de eerste passende regel beslist en levert het einde of een voorlopig type op. Een voorlopig type met een pagina gaat door naar stap 5 (drempel) en stap 6 (zelfstandige specialisatie). Daarna gelden de aanvullingen.
-
-| Nr | Stap | Als | Dan |
-|---|---|---|---|
-| 1 | 0 Welk begrip | `synoniem_van` ingevuld | synoniem: geen pagina; het woord naar `synoniemen` van het element, met context |
-| 2 | 1 Scope | niet *herkenbaar* of niet *gemeentelijk* | buiten scope, met reden |
-| 3 | 1 Scope | *buiten dit model* | buiten dit model, met het ArchiMate-type |
-| 4 | 2 Afhankelijk | *slechts eigenschap* | eigenschap van het genoemde begrip; geen pagina |
-| 5 | 2 Afhankelijk | niet *eigen identiteit* | onderdeel van het genoemde begrip; geen pagina, relaties naar het geheel |
-| 6 | 2 Afhankelijk | niet *betekenis in onderwerp* | verwijzing in de begrippenlijst; beoordelen in het onderwerp waar het hoort |
-| 7 | 3 Consistentie | een kenmerk is ja dat niet bij de aard past (zie *alleen bij* per groep) | conflict: voorleggen |
-| 8 | 4 Type | *handelende partij* en *hoedanigheid* | *los van verantwoordelijkheid*: ja Actor, nee Rol |
-| 9 | 4 Type | *samenwerkingsverband* (eventueel met *handelende partij*) | *eigen rechtspersoon*: ja Actor, nee Bedrijfssamenwerking |
-| 10 | 4 Type | andere combinatie van meer dan één aard | conflict: voorleggen |
-| 11 | 4 Type | *handelende partij* | Actor; conflict als niet *los van verantwoordelijkheid* |
-| 12 | 4 Type | *hoedanigheid* | Rol; conflict als *los van verantwoordelijkheid* |
-| 13 | 4 Type | *aanbod als geheel* | Product |
-| 14 | 4 Type | *toegangspunt* | Kanaal: koppelen aan de centrale set; voorleggen |
-| 15 | 4 Type | *plaats* | Locatie: geen pagina |
-| 16 | 4 Type | *regeling als geheel* | *landelijk*: ja Beleidskader, nee bron (geen element) |
-| 17 | 4 Type | *gedrag* en precies één soort gedrag | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis of Dienst; *gezamenlijk gedrag*: Interaction, voorleggen |
-| 18 | 4 Type | *gedrag*, maar geen of meer dan één soort gedrag | conflict: voorleggen |
-| 19 | 4 Type | geen aard, *waarneembare vorm* | Representatie: geen pagina; vermelden bij het genoemde object |
-| 20 | 4 Type | geen aard, *afspraak* | Afspraak (Contract) |
-| 21 | 4 Type | geen aard, overig | Bedrijfsobject |
-| 22 | 5 Drempel | kernrelatie van het type nee | geen element: voorleggen met de ontbrekende relatie |
-| 23 | 5 Drempel | meer dan 1 van de overige drempelcriteria nee | geen element: voorleggen met de ontbrekende criteria |
-| 24 | 6 Specialisatie | niet *zelfstandige specialisatie*, met `genoemd_begrip` | specialisatie zonder pagina; relaties naar het genoemde, bredere begrip |
-| 25 | 6 Specialisatie | niet *zelfstandige specialisatie*, zonder `genoemd_begrip` | voorleggen: noem het bredere begrip |
-| 26 | 6 Specialisatie | anders | element van het voorlopige type |
-| — | Aanvulling | `homoniem_van` ingevuld | voorleggen: naamkeuze; `## Homoniemen` bij beide; bij een GGM-homoniem een terugmelding |
-| — | Aanvulling | Actor of Rol met *onderscheidbare exemplaren*, *levenscyclus* en *wordt bewerkt* | ook een bedrijfsobjectpagina (tegenhanger) |
-| — | Aanvulling | Bedrijfsproces met *bijdrage aan groter proces* | procesniveau deelproces, onder het genoemde bedrijfsproces |
-| — | Aanvulling | *geautomatiseerd verwerkt* | annotatie `data_object: ja` |
-| — | Signaal (controle) | Dienst zonder realiserend proces of functie met pagina; Gebeurtenis zonder gestart gedrag met pagina | waarschuwing: proces als kandidaat voorleggen |
 <!-- EINDE gegenereerd -->
-
-## Scope
-
-- **Gemeentelijk perspectief.** Alleen wat de gemeente ziet, doet of beslist, of een partij waarmee zij structureel samenwerkt. Een ketenpartner (UWV, IND, COA, GGD …) krijgt ALLEEN een actorpagina bij een structurele relatie met de gemeente: opdrachtgever, mede-eigenaar (gemeenschappelijke regeling), prestatieafspraken of een wettelijke overlegplicht. Een partij die alleen als context of afbakening in de bron staat (behandelend arts, gedeputeerde staten), krijgt *gemeentelijk*: nee. De interne processen en rollen van een ketenpartner blijven altijd buiten scope. Precedent: GGD (gemeente is mede-eigenaar en opdrachtgever).
-- **Een begrip met uitkomst "geen element"** wordt niet weggelaten: het blijft in de begrippenlijst van het onderwerp staan, met de uitkomst en de reden.
-
-## Anti-patronen
-
-Deze argumenten tellen **nooit** mee, ook niet impliciet of als synoniem:
-- registreren of registreerbaar zijn ("wat de gemeente registreert", "registratieobject");
-- eigendom ("eigendom ligt bij X"), systeembeheer, "regie, niet registratie", "extern systeem".
-
-Het kenmerk *geautomatiseerd verwerkt* is de enige plek waar gegevensvastlegging meetelt, en alleen als annotatie (`data_object`): het bepaalt nooit of iets een element is.
-
-## Begripstype en entiteitstype
-
-De uitkomst van de beslistabel typeert een **begrip uit een bron** ("wat is het?"). Een GGM-entiteit heeft daarnaast een eigen classificatie (entiteitstype, bij de dekkingsanalyse van het GGM). Die twee zijn niet uitwisselbaar: een GGM-entiteit is geen begrip en wordt pas via een bron beoordeeld.

@@ -20,12 +20,10 @@
       "required": [
         "herkenbaar",
         "gemeentelijk",
-        "buiten_kernlagen",
-        "betekenis_in_onderwerp",
+        "buiten_dit_model",
         "slechts_eigenschap",
         "eigen_identiteit",
-        "relaties",
-        "zelfstandig_beleidsbegrip",
+        "betekenis_in_onderwerp",
         "gedrag",
         "handelende_partij",
         "hoedanigheid",
@@ -33,8 +31,12 @@
         "toegangspunt",
         "plaats",
         "aanbod_als_geheel",
+        "regeling_als_geheel",
         "los_van_verantwoordelijkheid",
-        "meerdere_vervullers",
+        "eigen_rechtspersoon",
+        "vervult_een_rol",
+        "voert_gedrag_uit",
+        "ontsluit_een_dienst",
         "per_keer_doorlopen",
         "gegroepeerd_gedrag",
         "toestandsverandering",
@@ -44,15 +46,24 @@
         "gebruikt_objecten",
         "aanleiding",
         "benoembaar_resultaat",
-        "herhaald_uitgevoerd",
+        "komt_herhaald_voor",
         "eigen_normering",
         "stabiel_over_tijd",
+        "afnemer",
+        "gerealiseerd_door",
+        "leidt_tot_gedrag",
+        "bijdrage_aan_groter_proces",
         "onderscheidbare_exemplaren",
         "levenscyclus",
         "wordt_bewerkt",
         "afspraak",
         "waarneembare_vorm",
-        "geautomatiseerd_verwerkt"
+        "omvat_diensten_en_afspraken",
+        "geautomatiseerd_verwerkt",
+        "landelijk",
+        "in_werking",
+        "is_grondslag_voor",
+        "zelfstandige_specialisatie"
       ],
       "properties": {
         "herkenbaar": {
@@ -61,10 +72,7 @@
         "gemeentelijk": {
           "$ref": "#/$defs/antwoord"
         },
-        "buiten_kernlagen": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "betekenis_in_onderwerp": {
+        "buiten_dit_model": {
           "$ref": "#/$defs/antwoord"
         },
         "slechts_eigenschap": {
@@ -73,10 +81,7 @@
         "eigen_identiteit": {
           "$ref": "#/$defs/antwoord"
         },
-        "relaties": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "zelfstandig_beleidsbegrip": {
+        "betekenis_in_onderwerp": {
           "$ref": "#/$defs/antwoord"
         },
         "gedrag": {
@@ -100,10 +105,22 @@
         "aanbod_als_geheel": {
           "$ref": "#/$defs/antwoord"
         },
+        "regeling_als_geheel": {
+          "$ref": "#/$defs/antwoord"
+        },
         "los_van_verantwoordelijkheid": {
           "$ref": "#/$defs/antwoord"
         },
-        "meerdere_vervullers": {
+        "eigen_rechtspersoon": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "vervult_een_rol": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "voert_gedrag_uit": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "ontsluit_een_dienst": {
           "$ref": "#/$defs/antwoord"
         },
         "per_keer_doorlopen": {
@@ -133,13 +150,25 @@
         "benoembaar_resultaat": {
           "$ref": "#/$defs/antwoord"
         },
-        "herhaald_uitgevoerd": {
+        "komt_herhaald_voor": {
           "$ref": "#/$defs/antwoord"
         },
         "eigen_normering": {
           "$ref": "#/$defs/antwoord"
         },
         "stabiel_over_tijd": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "afnemer": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "gerealiseerd_door": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "leidt_tot_gedrag": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "bijdrage_aan_groter_proces": {
           "$ref": "#/$defs/antwoord"
         },
         "onderscheidbare_exemplaren": {
@@ -157,19 +186,42 @@
         "waarneembare_vorm": {
           "$ref": "#/$defs/antwoord"
         },
+        "omvat_diensten_en_afspraken": {
+          "$ref": "#/$defs/antwoord"
+        },
         "geautomatiseerd_verwerkt": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "landelijk": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "in_werking": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "is_grondslag_voor": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "zelfstandige_specialisatie": {
           "$ref": "#/$defs/antwoord"
         }
       },
       "additionalProperties": false
     },
+    "synoniem_van": {
+      "type": "string",
+      "description": "Stap 0: het element (of het begrip in deze run) waarvan dit woord een synoniem is"
+    },
+    "homoniem_van": {
+      "type": "string",
+      "description": "Stap 0: het andere begrip met dezelfde naam, en waar het voorkomt (wiki, GGM, GEMMA-model, bron)"
+    },
     "genoemd_begrip": {
       "type": "string",
-      "description": "Het begrip waarvan dit een eigenschap, onderdeel, variant (specialisatie) of waarneembare vorm is"
+      "description": "Het begrip waarvan dit een eigenschap, onderdeel, bredere specialisatie of waarneembare vorm is"
     },
     "archimate_buiten_model": {
       "type": "string",
-      "description": "Het ArchiMate-type buiten de kernlagen (Goal, Outcome, Driver, Principle, Requirement, Constraint, Value, Capability, Grouping …)"
+      "description": "Het ArchiMate-type buiten dit model (Goal, Outcome, Principle, Requirement, Constraint, Value, Capability, Grouping …)"
     },
     "uitkomst": {
       "type": "object",
@@ -205,8 +257,348 @@
       "additionalProperties": false
     },
     "kenmerkwaarden": {
+      "description": "Kenmerken zoals vastgelegd op een elementpagina (alleen ja/nee; onderbouwing in de body). Criteria van 2026-10-01, of tot de herbeoordeling die van 2026-09-30.",
+      "anyOf": [
+        {
+          "$ref": "#/$defs/kenmerkwaarden_actueel"
+        },
+        {
+          "$ref": "#/$defs/kenmerkwaarden_2026_09_30"
+        }
+      ]
+    },
+    "kenmerkwaarden_actueel": {
       "type": "object",
-      "description": "Kenmerken zoals vastgelegd op een elementpagina (alleen ja/nee; onderbouwing in de body)",
+      "required": [
+        "herkenbaar",
+        "gemeentelijk",
+        "buiten_dit_model",
+        "slechts_eigenschap",
+        "eigen_identiteit",
+        "betekenis_in_onderwerp",
+        "gedrag",
+        "handelende_partij",
+        "hoedanigheid",
+        "samenwerkingsverband",
+        "toegangspunt",
+        "plaats",
+        "aanbod_als_geheel",
+        "regeling_als_geheel",
+        "los_van_verantwoordelijkheid",
+        "eigen_rechtspersoon",
+        "vervult_een_rol",
+        "voert_gedrag_uit",
+        "ontsluit_een_dienst",
+        "per_keer_doorlopen",
+        "gegroepeerd_gedrag",
+        "toestandsverandering",
+        "aangeboden_gedrag",
+        "gezamenlijk_gedrag",
+        "toegewezen_partij",
+        "gebruikt_objecten",
+        "aanleiding",
+        "benoembaar_resultaat",
+        "komt_herhaald_voor",
+        "eigen_normering",
+        "stabiel_over_tijd",
+        "afnemer",
+        "gerealiseerd_door",
+        "leidt_tot_gedrag",
+        "bijdrage_aan_groter_proces",
+        "onderscheidbare_exemplaren",
+        "levenscyclus",
+        "wordt_bewerkt",
+        "afspraak",
+        "waarneembare_vorm",
+        "omvat_diensten_en_afspraken",
+        "geautomatiseerd_verwerkt",
+        "landelijk",
+        "in_werking",
+        "is_grondslag_voor",
+        "zelfstandige_specialisatie"
+      ],
+      "properties": {
+        "herkenbaar": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gemeentelijk": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "buiten_dit_model": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "slechts_eigenschap": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "eigen_identiteit": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "betekenis_in_onderwerp": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "handelende_partij": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "hoedanigheid": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "samenwerkingsverband": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "toegangspunt": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "plaats": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "aanbod_als_geheel": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "regeling_als_geheel": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "los_van_verantwoordelijkheid": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "eigen_rechtspersoon": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "vervult_een_rol": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "voert_gedrag_uit": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "ontsluit_een_dienst": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "per_keer_doorlopen": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gegroepeerd_gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "toestandsverandering": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "aangeboden_gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gezamenlijk_gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "toegewezen_partij": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gebruikt_objecten": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "aanleiding": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "benoembaar_resultaat": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "komt_herhaald_voor": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "eigen_normering": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "stabiel_over_tijd": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "afnemer": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "gerealiseerd_door": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "leidt_tot_gedrag": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "bijdrage_aan_groter_proces": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "onderscheidbare_exemplaren": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "levenscyclus": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "wordt_bewerkt": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "afspraak": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "waarneembare_vorm": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "omvat_diensten_en_afspraken": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "geautomatiseerd_verwerkt": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "landelijk": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "in_werking": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "is_grondslag_voor": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        },
+        "zelfstandige_specialisatie": {
+          "enum": [
+            "ja",
+            "nee"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "kenmerkwaarden_2026_09_30": {
+      "type": "object",
       "required": [
         "herkenbaar",
         "gemeentelijk",

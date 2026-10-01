@@ -47,15 +47,15 @@ def wiki(archimate_repo):
              "# Nota\n\nBron: [tekst](../../../../sources/raw/2026-utrecht-nota.md)\n")
     _schrijf(wiki, BO_PAD, _bo())
     proces_kenmerken = {k: "nee" for k in KENMERKEN_BO} | {
-        k: "ja" for k in ("herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "relaties",
-                          "zelfstandig_beleidsbegrip", "gedrag", "per_keer_doorlopen", "toegewezen_partij",
-                          "gebruikt_objecten", "aanleiding", "benoembaar_resultaat", "herhaald_uitgevoerd",
+        k: "ja" for k in ("herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp",
+                          "zelfstandige_specialisatie", "gedrag", "per_keer_doorlopen", "toegewezen_partij",
+                          "gebruikt_objecten", "aanleiding", "benoembaar_resultaat", "komt_herhaald_voor",
                           "eigen_normering")}
     _schrijf(wiki, PROCES_PAD, _bo(id="aanvraag-behandelen", type="bedrijfsproces", naam="Aanvraag behandelen",
                                    archimate_type="business-process", kenmerken=proces_kenmerken,
                                    definitie="Het behandelen van een aanvraag tot een besluit."),
              "## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n|---|---|---|---|---|---|---|\n"
-             "| toegang (schrijven) | [Beschikking](beschikking.md) | maakt | | bron | | 2026-utrecht-nota (§2) |\n".replace(
+             "| toegang (registreren) | [Beschikking](beschikking.md) | maakt | | bron | | 2026-utrecht-nota (§2) |\n".replace(
                  "beschikking.md", "../../../bedrijfsobjecten/8-wonen/vergunningen/beschikking.md"))
     return wiki
 
@@ -84,7 +84,7 @@ def test_een_criterium_nee_mag_review(wiki):
 
 
 def test_onder_de_drempel_geen_element(wiki):
-    _schrijf(wiki, BO_PAD, _bo(kenmerken=KENMERKEN_BO | {"levenscyclus": "nee", "relaties": "nee"}))
+    _schrijf(wiki, BO_PAD, _bo(kenmerken=KENMERKEN_BO | {"levenscyclus": "nee", "onderscheidbare_exemplaren": "nee"}))
     assert any(n == "kenmerken-type" for n, _ in _fouten(wiki))
 
 

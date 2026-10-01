@@ -134,11 +134,20 @@ def test_fouten_in_relatietabel(wiki):
 
 @pytest.mark.parametrize("bron,doel,werkwoord,verwacht", [
     ("business-role", "business-process", "behandelt", ("assignment", False, None)),
-    ("business-process", "business-object", "stelt vast", ("access", False, "schrijven")),
-    ("business-process", "business-object", "toetst aan", ("access", False, "lezen")),
-    ("business-process", "business-object", "levert op", ("access", False, "schrijven")),
-    ("business-process", "business-object", "vereist", ("access", False, "lezen")),
-    ("business-object", "business-process", "wordt behandeld in", ("access", True, "lezen-schrijven")),
+    ("business-process", "business-object", "stelt vast", ("access", False, "registreren")),
+    ("business-process", "business-object", "toetst aan", ("access", False, "raadplegen")),
+    ("business-process", "business-object", "levert op", ("access", False, "registreren")),
+    ("business-process", "business-object", "trekt in", ("access", False, "beëindigen")),
+    ("business-process", "business-object", "vernietigt", ("access", False, "vernietigen")),
+    ("business-role", "business-object", "houdt", ("access", False, "houder")),
+    ("business-role", "business-object", "houdt bij", ("access", False, "bronhouder")),
+    ("business-role", "contract", "heeft", ("access", False, "partij")),
+    ("business-role", "business-object", "vraagt aan", ("association", False, None)),
+    ("business-actor", "business-process", "draagt zorg voor", ("association", False, None)),
+    ("business-function", "business-process", "ondersteunt", ("serving", False, None)),
+    ("business-interface", "business-service", "ontsluit", ("assignment", False, None)),
+    ("business-process", "business-object", "vereist", ("access", False, "raadplegen")),
+    ("business-object", "business-process", "wordt behandeld in", ("access", True, "bijwerken")),
     ("business-event", "business-process", "start", ("triggering", False, None)),
     ("business-process", "business-process", "volgt op", ("triggering", True, None)),
     ("business-process", "business-service", "levert", ("realization", False, None)),
@@ -184,7 +193,7 @@ def test_uit_bronnen_lost_op_tilt_op_en_laat_vervallen(wiki):
     assert (rol.relatie, rol.doel, rol.grondslag, rol.bronnen, rol.vindplaats) == (
         "assignment", "aanslag-opleggen", "bron", ["2026-overheid-gemeentewet"], "art. 231")
     opgetild = [k for k in kandidaten if k.doel == "beschikking"][0]  # Aanslagbedrag → bestaand element Beschikking
-    assert (opgetild.bron, opgetild.relatie, opgetild.toegang) == ("aanslag-opleggen", "access", "schrijven")
+    assert (opgetild.bron, opgetild.relatie, opgetild.toegang) == ("aanslag-opleggen", "access", "registreren")
     assert "opgetild" in opgetild.toelichting
     assert [v["naar"] for v in vervallen] == ["Rechtvaardige heffing"]
 
@@ -219,3 +228,33 @@ def test_bronrelatie_zonder_bron_id_is_fout(wiki):
         "| associatie | [Besluit](besluit.md) | | | bron | | |\n"), encoding="utf-8")
     (r,) = relaties.alle_relaties(wiki)["zaak"]
     assert any("zonder bron-id" in f for f in r.fouten)
+
+
+def test_gemma_modelleerafspraken_en_overgang():
+    # Actor alleen via een rol; de oude regels blijven als overgang herkenbaar
+    assert not relaties.toegestaan("assignment", "business-actor", "business-process")
+    assert relaties.toegestaan("assignment", "business-actor", "business-process", oud=True)
+    assert relaties.toegestaan("assignment", "business-role", "business-process")
+    # Functie bedient proces, geen aggregatie
+    assert not relaties.toegestaan("aggregation", "business-function", "business-process")
+    assert relaties.toegestaan("serving", "business-function", "business-process")
+    # Kanaal: toegewezen aan dienst, bedient rol
+    assert relaties.toegestaan("assignment", "business-interface", "business-service")
+    assert relaties.toegestaan("serving", "business-interface", "business-role")
+    assert not relaties.toegestaan("assignment", "business-interface", "business-process")
+    # Dienst: geen rol toegewezen, geen toegang tot een object
+    assert not relaties.toegestaan("assignment", "business-role", "business-service")
+    assert not relaties.toegestaan("access", "business-service", "business-object")
+
+
+def test_toegang_met_handeling_of_verantwoordelijkheid(wiki):
+    pad = wiki / "bedrijfsarchitectuur/bedrijfsobjecten/tv/bd/zaak.md"
+    pad.write_text(pad.read_text(encoding="utf-8") + (
+        "\n## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n|---|---|---|---|---|---|---|\n"
+        "| toegang (beëindigen) | [Besluit](besluit.md) | trekt in | | bron | | 2026-overheid-gemeentewet |\n"
+        "| toegang (lezen) | [Aanvraag](aanvraag.md) | | | bron | | 2026-overheid-gemeentewet |\n"
+        "| toegang (onzin) | [Beschikking](beschikking.md) | | | bron | | 2026-overheid-gemeentewet |\n"), encoding="utf-8")
+    (handeling, oud, onzin) = relaties.alle_relaties(wiki)["zaak"]
+    assert (handeling.toegang, relaties.toegangstype(handeling.toegang), handeling.fouten) == ("beëindigen", "schrijven", [])
+    assert (oud.toegang, oud.fouten) == ("lezen", [])
+    assert any("handeling of verantwoordelijkheid" in f for f in onzin.fouten)

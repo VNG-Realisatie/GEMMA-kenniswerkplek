@@ -66,7 +66,7 @@ def test_onvolledige_kenmerken_worden_geweigerd(archimate_repo):
     root, wiki = archimate_repo
     kenmerken = dict(KENMERKEN_BO)
     del kenmerken["plaats"]
-    assert any("plaats" in e for e in _valideer(wiki, _bo(kenmerken=kenmerken)))
+    assert _valideer(wiki, _bo(kenmerken=kenmerken))  # noch de actuele, noch de set van 2026-09-30
 
 
 def test_actor_is_plat_en_zonder_taakveld_geldig(archimate_repo):

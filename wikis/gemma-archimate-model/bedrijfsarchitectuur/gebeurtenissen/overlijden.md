@@ -1,6 +1,6 @@
 ---
 id: overlijden
-type: bedrijfsgebeurtenis
+type: gebeurtenis
 status: goedgekeurd
 naam: Overlijden
 archimate_type: business-event

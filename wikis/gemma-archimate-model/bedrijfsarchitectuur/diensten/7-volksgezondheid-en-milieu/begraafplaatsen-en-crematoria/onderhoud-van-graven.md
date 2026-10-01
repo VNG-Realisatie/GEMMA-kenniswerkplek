@@ -1,6 +1,6 @@
 ---
 id: onderhoud-van-graven
-type: bedrijfsdienst
+type: dienst
 status: goedgekeurd
 naam: Onderhoud van graven
 archimate_type: business-service

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "kanaal",
+  "description": "Elementpagina: Business Interface (GEMMA: Kanaal).",
+  "allOf": [
+    {
+      "$ref": "element-basis.schema.json#/$defs/element"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "kanaal"
+    },
+    "archimate_type": {
+      "enum": [
+        "business-interface"
+      ]
+    }
+  },
+  "unevaluatedProperties": false
+}

@@ -151,14 +151,20 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
 
     # Kenmerken ↔ type en status (EL1, EL18)
     kenmerken = meta.get("kenmerken") or {}
+    oude_criteria = bool(kenmerken) and set(kenmerken) == set(bepaal_type.SLEUTELS_2026_09_30)
     ontbrekend = [bepaal_type.NAAM[s] for s in bepaal_type.SLEUTELS if s not in kenmerken]
-    if kenmerken and ontbrekend:
+    if oude_criteria:
+        waarschuwing("herbeoordeling", f"kenmerken volgens de criteria van 2026-09-30: herbeoordeling nodig volgens de "
+                     f"criteria van {bepaal_type.CRITERIA_VERSIE}")
+    elif kenmerken and ontbrekend:
         fout("kenmerken-onvolledig", f"kenmerken niet beantwoord: {', '.join(ontbrekend)} [EL1]")
     if set(kenmerken) == set(bepaal_type.SLEUTELS):
         beoordeling = {"begrip": el.id, "kenmerken": {k: {"waarde": v, "onderbouwing": "-"} for k, v in kenmerken.items()}}
         uitkomst = bepaal_type.evalueer(beoordeling)
         toegestaan = {(uitkomst.paginatype, uitkomst.archimate_type)}
         tegenhanger = el.paginatype == "bedrijfsobject" and _is_tegenhanger(w, el)
+        if uitkomst.paginatype == "bedrijfsproces" and meta.get("procesniveau", "bedrijfsproces") != uitkomst.procesniveau:
+            fout("procesniveau", f"procesniveau hoort '{uitkomst.procesniveau}' te zijn (kenmerk bijdrage aan groter proces)")
         if (el.paginatype, meta.get("archimate_type")) not in toegestaan and not tegenhanger:
             fout("kenmerken-type", f"kenmerken leiden tot {uitkomst.soort} {uitkomst.archimate_type or ''} "
                  f"(regel {uitkomst.regel}), niet tot {el.paginatype}/{meta.get('archimate_type')}")
@@ -187,11 +193,18 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
     if el.paginatype == "bedrijfsfunctie" and eerste_woord.endswith("en"):
         waarschuwing("naam-vorm", f"functienaam '{meta.get('naam')}' lijkt een proces (infinitief); een functie heet naar "
                      "het gebied van gedrag, bijv. 'Vergunningverlening' [EL20]")
-    if el.paginatype in ("bedrijfsproces", "bedrijfsdienst"):
+    if el.paginatype in ("bedrijfsproces", "dienst"):
         contexten = set()  # de naamvorm is voorgeschreven; het zelfstandig naamwoord staat terecht als synoniem
     if contexten & {"beleid", "dagelijks gebruik"} and "wet" not in contexten:
         waarschuwing("naam-wetsterm", "gangbare term staat als synoniem en geen wetsterm: is de naam de wetsterm? "
                      "De naam komt uit de gangbare taal, de wetsterm wordt synoniem [SRC10]")
+    synoniemen = {str((s or {}).get("naam", "")).strip().lower(): str((s or {}).get("context", "")).lower()
+                  for s in meta.get("synoniemen") or [] if isinstance(s, dict)}
+    for veld, context in (("ggm_entiteit", "ggm"), ("gemma_naam", "gemma")):
+        modelnaam = str(meta.get(veld) or "").strip()
+        if modelnaam and modelnaam.lower() != str(meta.get("naam", "")).lower() and synoniemen.get(modelnaam.lower()) != context:
+            waarschuwing("synoniem-model", f"{veld} '{modelnaam}' wijkt af van de naam: neem het op in synoniemen met "
+                         f"context '{context.upper()}'")
     eerste = re.search(r"^## (.+?)\s*$", el.body, re.M)
     if not eerste or eerste.group(1) != "Definitie":
         fout("definitie-bovenaan", "eerste sectie is niet '## Definitie' (herkenbare definitie, dan Beschrijving)")
@@ -278,8 +291,30 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
         doelen = w.op_id.get(r.naar)
         if doelen and r.relatie in rel_tool.RELATIES.values():
             doel_type = doelen[0].meta.get("archimate_type", "")
-            if not rel_tool.toegestaan(r.relatie, meta.get("archimate_type", ""), doel_type):
-                fout("relatie-archimate", f"{r.relatie} van {meta.get('archimate_type')} naar {doel_type} is geen geldige ArchiMate-relatie")
+            bron_type = meta.get("archimate_type", "")
+            if not rel_tool.toegestaan(r.relatie, bron_type, doel_type):
+                if rel_tool.toegestaan(r.relatie, bron_type, doel_type, oud=True):
+                    waarschuwing("relatie-herbeoordeling", f"{r.relatie} van {bron_type} naar {doel_type} volgt niet de "
+                                 "modelleerafspraken van 2026-10-01 (actor via rol, functie bedient proces, dienst via "
+                                 "het realiserende proces): herbeoordeling nodig")
+                else:
+                    fout("relatie-archimate", f"{r.relatie} van {bron_type} naar {doel_type} is geen geldige ArchiMate-relatie")
+            if r.relatie == "association" and bron_type == "business-actor" and rel_tool.categorie(doel_type) in ("gedrag", "passief"):
+                waarschuwing("relatie-herbeoordeling", f"associatie van actor naar {doel_type}: een actor hangt via een rol "
+                             "aan gedrag en objecten (besluit 2026-10-01)")
+            if r.relatie == "association" and bron_type in ("business-role", "business-collaboration")                     and rel_tool.categorie(doel_type) == "passief":
+                waarschuwing("relatie-herbeoordeling", f"associatie van {bron_type} naar {doel_type}: wordt toegang met "
+                             "een verantwoordelijkheid, of een handeling via het proces (besluit 2026-10-01)")
+            if r.relatie == "access":
+                if r.toegang in rel_tool.TOEGANG_OUD:
+                    waarschuwing("toegang-herbeoordeling", f"toegang ({r.toegang}) naar {r.naar}: geef een handeling of "
+                                 "verantwoordelijkheid op (besluit 2026-10-01)")
+                elif r.toegang in rel_tool.HANDELINGEN and rel_tool.categorie(bron_type) != "gedrag":
+                    fout("toegang", f"handeling '{r.toegang}' hoort bij gedrag, niet bij {bron_type}")
+                elif r.toegang in rel_tool.VERANTWOORDELIJKHEDEN and rel_tool.categorie(bron_type) != "actief":
+                    fout("toegang", f"verantwoordelijkheid '{r.toegang}' hoort bij een rol of bedrijfssamenwerking, niet bij {bron_type}")
+                elif r.toegang == "partij" and doel_type != "contract":
+                    fout("toegang", "verantwoordelijkheid 'partij' alleen naar een afspraak")
             if r.grondslag == "ggm-exact" and ggm_data is not None:
                 eindpunten = {meta.get("ggm_guid"), doelen[0].meta.get("ggm_guid")}
                 for rid in r.ggm_relaties:
@@ -302,6 +337,18 @@ def controleer_element(w: Wiki, el: gam_gemeen.Element, ggm_data, gemma_data, al
             ander = w.op_pad.get(pad)
             if ander and el.pad not in _gelinkte_paden(w, pad, gam_gemeen.sectie(w.paginas[pad].body, kop) or ""):
                 (fout if kop == "Tegenhanger" else waarschuwing)(kop.lower(), f"{ander} verwijst in '## {kop}' niet terug")
+
+    homoniemen = gam_gemeen.sectie(el.body, "Homoniemen")
+    if homoniemen is not None:
+        kolommen = set(next(iter(gam_gemeen.tabel(homoniemen)), {}).keys())
+        if not {"Begrip", "Betekenis", "Waar", "Naamkeuze"} <= kolommen:
+            waarschuwing("homoniemen-tabel", "'## Homoniemen' hoort een tabel met de kolommen Begrip, Betekenis, Waar en "
+                         "Naamkeuze te zijn (besluit 2026-10-01)")
+    if el.paginatype == "dienst" and not any(r.relatie == "realization" and r.naar == el.id
+                                             for rels in alle_relaties.values() for r in rels):
+        waarschuwing("dienst-realisatie", "geen proces of functie met pagina realiseert deze dienst: proces als kandidaat voorleggen")
+    if el.paginatype == "gebeurtenis" and not any(r.relatie == "triggering" for r in alle_relaties.get(el.id, [])):
+        waarschuwing("gebeurtenis-gevolg", "deze gebeurtenis start geen gedrag met pagina: proces als kandidaat voorleggen")
 
     # Formulering (WC7, WC8–WC11, EL1)
     b += _formulering(doel, el.body + "\n" + definitie)
@@ -414,6 +461,23 @@ def controleer_gegenereerd(wiki_root: Path) -> list[Bevinding]:
     return b
 
 
+def controleer_synoniemen(w: "Wiki") -> list[Bevinding]:
+    """Hetzelfde synoniem bij twee elementen: een homoniem of een fout (besluit 2026-10-01)."""
+    bij: dict[str, list] = {}
+    for el in w.elementen:
+        for s in el.meta.get("synoniemen") or []:
+            if isinstance(s, dict) and s.get("naam"):
+                bij.setdefault(str(s["naam"]).strip().lower(), []).append(el)
+    b = []
+    for naam, elementen in bij.items():
+        ids = sorted({e.id for e in elementen})
+        if len(ids) > 1:
+            for e in elementen:
+                b.append(Bevinding("synoniem-dubbel", w.rel(e.pad), "waarschuwing",
+                                   f"synoniem '{naam}' staat bij meer elementen ({', '.join(ids)}): homoniem of fout"))
+    return b
+
+
 def controleer(wiki_root: Path = WIKI_ROOT, run_id: str | None = None) -> list[Bevinding]:
     import gemma
     import ggm
@@ -429,6 +493,7 @@ def controleer(wiki_root: Path = WIKI_ROOT, run_id: str | None = None) -> list[B
         if run_id is None or el.pad in w.in_run:
             bevindingen += controleer_element(w, el, ggm_data, gemma_data, alle_relaties)
     bevindingen += [x for x in controleer_overig(w) if run_id is None or (w.root / x.doel).resolve() in w.in_run]
+    bevindingen += [x for x in controleer_synoniemen(w) if run_id is None or (w.root / x.doel).resolve() in w.in_run]
     bevindingen += controleer_gegenereerd(wiki_root)
     return bevindingen
 

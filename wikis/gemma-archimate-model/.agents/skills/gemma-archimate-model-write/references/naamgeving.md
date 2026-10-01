@@ -16,7 +16,13 @@ Precedent: *Urn* (VNG-bron, praktijk), niet *Asbus* (Wet op de lijkbezorging); a
 ## Naamconflict
 
 - **Wiki-conflict**: de naam (of het id) wordt al door een ander element gebruikt. Geldt voor elke grondslag.
-- **GGM-homoniem**: dezelfde GGM-entiteitnaam betekent in een ander beleidsdomein iets anders (`tools/ggm.py naamgenoten <naam>`). Alleen bij grondslag `ggm-entiteit`; meld ook terug als `homoniem`.
+- **Homoniem**: dezelfde naam betekent elders iets anders, in de wiki, het GGM (`tools/ggm.py naamgenoten <naam>`), het GEMMA-model (`tools/gemma.py zoek <naam>`) of een bron; geldt voor elk elementtype (besluit 2026-10-01). Een GGM-homoniem meld je ook terug als `homoniem`. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
+
+Een homoniem staat bij beide elementen in `## Homoniemen`, als tabel:
+
+| Begrip | Betekenis | Waar | Naamkeuze |
+|---|---|---|---|
+| [Regeling](…) of naam zonder pagina | Afspraak met een cliënt over terugbetaling | GGM-entiteit Regeling (EAID_…), beleidsdomein Inkomen | Deze pagina heet Regeling: de soort wet of verordening; het GGM-begrip krijgt geen pagina |
 
 Bij een conflict: stel 2–3 namen voor en leg de keuze voor aan de redacteur:
 - domeinprefix ("Onderwijsinschrijving"), samengesteld woord, of functionele naam ("Aanbestedingsinschrijving"). Geen haakjes in namen of bestandsnamen (niet "Inschrijving (Onderwijs)"). Leg de keuze vast in `## Naamkeuze` (overwogen namen met reden). Bij een GGM-homoniem blijft `ggm_entiteit` de GGM-naam; de GGM-naam mag als synoniem.

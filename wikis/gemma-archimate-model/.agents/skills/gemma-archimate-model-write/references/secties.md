@@ -48,7 +48,8 @@ Secties, in deze volgorde (alleen wat van toepassing is):
 | `## GEMMA` | altijd | Matchsterkte en wat verandert ten opzichte van GEMMA, of "nieuw voor GEMMA" |
 | `## Naamkeuze` | bij naamconflict | Overwogen namen met reden |
 | `## Generalisatie` / `## Specialisaties` / `## GGM-componenten` | bij hiërarchie | Zie `hierarchie.md` |
-| `## GGM-duplicaten` / `## Homoniemen` | bij naamgenoten in het GGM | Zie `ggm-match.md` |
+| `## GGM-duplicaten` | bij duplicaten in het GGM | Zie `ggm-match.md` |
+| `## Homoniemen` | bij een homoniem (elke bron, elk type) | Tabel Begrip, Betekenis, Waar, Naamkeuze; zie `naamgeving.md` |
 | `## Tegenhanger` | bij tegenhanger | Zie `tegenhangers.md` |
 | `## Relaties` | als er relaties zijn | Zie `relaties.md`; alleen uitgaande relaties |
 | `## Bronnen` | altijd | Per bron in `bronnen:` een link naar de bronanalyse: `[titel](../../../../bronanalyses/<onderwerp>/<bron-id>.md)`; een modelbron (GGM, GEMMA) linkt naar `sources/raw/<bron-id>.md` ([IH2]) |

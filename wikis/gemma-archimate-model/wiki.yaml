@@ -30,11 +30,11 @@ page_types:
     submappen: [taakveld, beleidsdomein]
     curated: true
     schema: schemas/product.schema.json
-  bedrijfsdienst:
-    dir: bedrijfsarchitectuur/bedrijfsdiensten
+  dienst:                            # GEMMA-naam Dienst (Business Service)
+    dir: bedrijfsarchitectuur/diensten
     submappen: [taakveld, beleidsdomein]
     curated: true
-    schema: schemas/bedrijfsdienst.schema.json
+    schema: schemas/dienst.schema.json
   bedrijfsproces:
     dir: bedrijfsarchitectuur/bedrijfsprocessen
     submappen: [taakveld, beleidsdomein]
@@ -45,10 +45,10 @@ page_types:
     submappen: [taakveld, beleidsdomein]
     curated: true
     schema: schemas/bedrijfsfunctie.schema.json
-  bedrijfsgebeurtenis:
-    dir: bedrijfsarchitectuur/bedrijfsgebeurtenissen
+  gebeurtenis:                       # GEMMA-naam Gebeurtenis (Business Event)
+    dir: bedrijfsarchitectuur/gebeurtenissen
     curated: true
-    schema: schemas/bedrijfsgebeurtenis.schema.json
+    schema: schemas/gebeurtenis.schema.json
   actor:
     dir: bedrijfsarchitectuur/actoren
     curated: true
@@ -57,6 +57,18 @@ page_types:
     dir: bedrijfsarchitectuur/rollen
     curated: true
     schema: schemas/rol.schema.json
+  bedrijfssamenwerking:              # Business Collaboration, zonder eigen rechtspersoon
+    dir: bedrijfsarchitectuur/bedrijfssamenwerkingen
+    curated: true
+    schema: schemas/bedrijfssamenwerking.schema.json
+  kanaal:                            # Business Interface; één centrale set
+    dir: bedrijfsarchitectuur/kanalen
+    curated: true
+    schema: schemas/kanaal.schema.json
+  beleidskader:                      # Driver (motivatielaag); rijks- of EU-regelgeving of VNG-modelverordening
+    dir: motivatie/beleidskaders
+    curated: true
+    schema: schemas/beleidskader.schema.json
 
 curation:
   states: [kandidaat, review, goedgekeurd, afgewezen]

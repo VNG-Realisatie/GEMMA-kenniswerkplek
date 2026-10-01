@@ -9,10 +9,10 @@ Een relatie staat één keer, als rij in `## Relaties` op de pagina van het **br
 |---|---|---|---|---|---|---|
 | compositie | [Onderdeel beschikking](onderdeel-beschikking.md) | bevat | 1 → 1..* | ggm-exact | EAID_… | 2026-overheid-awb (art. 1:3) |
 | associatie (gericht) | [Zaak](../../../zaken/zaak.md) | hoort bij / leidt tot | 0..* → 1..* | ggm-afgeleid | EAID_…, EAID_… | |
-| toegang (schrijven) | [Beschikking](…) | stelt vast | | bron | | 2026-utrecht-nota (§3.2) |
+| toegang (registreren) | [Beschikking](…) | stelt vast | | bron | | 2026-utrecht-nota (§3.2) |
 ```
 
-Relatie: `associatie`, `associatie (gericht)`, `aggregatie`, `compositie`, `specialisatie`, `toewijzing`, `toegang (lezen|schrijven|lezen-schrijven)`, `triggering`, `stroom`, `realisatie`, `bediening`.
+Relatie: `associatie`, `associatie (gericht)`, `aggregatie`, `compositie`, `specialisatie`, `toewijzing`, `toegang (<handeling>)` vanuit gedrag of `toegang (<verantwoordelijkheid>)` vanuit een rol of bedrijfssamenwerking, `triggering`, `stroom`, `realisatie`, `bediening`.
 
 ## Uit het GGM (grondslag `ggm-exact` of `ggm-afgeleid`)
 
@@ -45,13 +45,18 @@ De typen van beide elementen bepalen de soort relatie, het werkwoord de richting
 
 | Van → naar | Relatie | Uit het werkwoord |
 |---|---|---|
-| actor/rol → proces, functie | toewijzing | — |
+| rol, bedrijfssamenwerking → proces, functie | toewijzing | — |
 | actor → rol | toewijzing | alleen bij "vervult", "treedt op als", "fungeert als"; andere werkwoorden tussen partijen ("benoemt", "waarschuwt") → gerichte associatie |
-| proces/functie → object | toegang | schrijven ("stelt vast", "neemt", "legt vast", "wijzigt" …) of lezen ("gebruikt", "toetst", "raadpleegt" …); anders lezen-schrijven |
-| object → proces/functie | toegang, omgedraaid | idem |
+| actor → gedrag of object | — | een actor hangt alleen via een rol aan gedrag en objecten (besluit 2026-10-01): leg de rol vast |
+| rol → object | toegang (verantwoordelijkheid) | houder ("houdt"), bronhouder ("houdt bij"), beheerder ("beheert", "onderhoudt"), verstrekker, afnemer ("ontvangt", "gebruikt"), toezichthouder, betrokkene, partij (alleen naar een afspraak); een handeling ("vraagt aan", "geeft af") wordt een toewijzing van de rol aan het proces |
+| proces/functie → object | toegang (handeling) | registreren ("stelt vast", "legt vast", "verleent", "ontvangt" …), bijwerken ("wijzigt", "onderhoudt", "ruimt" …), beëindigen ("trekt in", "heft op" …), raadplegen ("gebruikt", "vereist", "toetst" …), verstrekken, bewaren, overbrengen, vernietigen |
+| object → proces/functie | toegang (handeling), omgedraaid | idem |
+| functie → proces | bediening | de functie bedient het proces; geen aggregatie |
+| kanaal → dienst; kanaal → rol | toewijzing; bediening | — |
 | gebeurtenis ↔ gedrag, gedrag → gedrag | triggering | "leidt tot", "start"; "volgt op" draait de richting om |
 | proces/functie → dienst | realisatie | — |
-| dienst → actor/rol of gedrag | bediening | — |
+| dienst → rol of gedrag | bediening | — (een dienst krijgt geen rol toegewezen en heeft geen toegang tot een object) |
+| beleidskader → proces, dienst, product | associatie (gericht), naam "is grondslag voor" | — |
 | gedrag → gedrag | stroom | "levert aan", "geeft door aan" |
 | elk → gelijk type | specialisatie | "is een" |
 | object → object, product → dienst/object | compositie of aggregatie | "bestaat uit" → compositie; "bevat", "omvat" → aggregatie; "maakt deel uit van" draait de richting om |

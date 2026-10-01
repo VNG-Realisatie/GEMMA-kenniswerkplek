@@ -21,10 +21,12 @@ wikis/gemma-archimate-model/
 ├── bronanalyses/<onderwerp>/<bron-id>.md    wat een bron betekent voor de architectuur
 ├── bedrijfsarchitectuur/
 │   ├── bedrijfsobjecten/<taakveld>/<beleidsdomein>/   business-object en contract
-│   ├── producten/ · bedrijfsdiensten/ · bedrijfsprocessen/ · bedrijfsfuncties/   (<taakveld>/<beleidsdomein>/)
-│   └── bedrijfsgebeurtenissen/ · actoren/ · rollen/   plat
+│   ├── producten/ · diensten/ · bedrijfsprocessen/ · bedrijfsfuncties/   (<taakveld>/<beleidsdomein>/)
+│   └── gebeurtenissen/ · actoren/ · rollen/ · bedrijfssamenwerkingen/ · kanalen/   plat
+├── motivatie/beleidskaders/                beleidskaders (Driver): rijks- of EU-regelgeving en VNG-modelverordeningen
 ├── (later) applicatiearchitectuur/          o.a. data-objecten
 ├── analyses/ggm-terugmeldingen.md           doorlopende lijst met terugmeldingen aan het GGM
+├── analyses/beslistabel.md                  kenmerken en beslistabel, gegenereerd uit tools/bepaal_type.py
 ├── ggm/ · gemma/                            gegenereerd door de tools; nooit met de hand bewerken
 ├── schemas/                                 één JSON-schema per paginatype
 ├── tools/                                   Python-gereedschap van deze wiki (met tests in tools/tests/)
@@ -40,7 +42,8 @@ Mapnamen van taakveld en beleidsdomein: kleine letters met koppeltekens (`8 Volk
 | `onderwerp` | `begrippen/` | [schemas/onderwerp.schema.json](schemas/onderwerp.schema.json) | nee |
 | `bronanalyse` | `bronanalyses/<onderwerp>/` | [schemas/bronanalyse.schema.json](schemas/bronanalyse.schema.json) | nee |
 | `analyse` | `analyses/` | [schemas/analyse.schema.json](schemas/analyse.schema.json) | nee |
-| `bedrijfsobject`, `product`, `bedrijfsdienst`, `bedrijfsproces`, `bedrijfsfunctie`, `bedrijfsgebeurtenis`, `actor`, `rol` | `bedrijfsarchitectuur/…` | `schemas/<type>.schema.json`, gedeelde velden in [schemas/element-basis.schema.json](schemas/element-basis.schema.json) | ja |
+| `bedrijfsobject`, `product`, `dienst`, `bedrijfsproces`, `bedrijfsfunctie`, `gebeurtenis`, `actor`, `rol`, `bedrijfssamenwerking`, `kanaal` | `bedrijfsarchitectuur/…` | `schemas/<type>.schema.json`, gedeelde velden in [schemas/element-basis.schema.json](schemas/element-basis.schema.json) | ja |
+| `beleidskader` | `motivatie/beleidskaders/` | [schemas/beleidskader.schema.json](schemas/beleidskader.schema.json), gedeelde velden in element-basis | ja |
 
 Veldprefixen op een elementpagina ([EL12]):
 
@@ -82,9 +85,10 @@ Eén plek: skill [gemma-archimate-model-criteria](.agents/skills/gemma-archimate
 
 - **Kenmerken** zijn neutrale eigenschappen van een begrip (bijv. *onderscheidbare exemplaren*). Het model beantwoordt ze allemaal, één keer, met onderbouwing en bron-id's.
 - **Criteria** zijn de regels van de beslistabel: welke combinatie van kenmerken tot welk type leidt. De tool past ze toe; het type is dus een uitkomst, geen keuze vooraf.
-- De beslistabel heeft vijf stappen: scope (*herkenbaar*, *gemeentelijk*: harde poort voor elk type), afhankelijkheid (eigenschap, onderdeel of deelstap), aard (voorlopig type), een **drempel** per type en het **specialisatieniveau**. De drempel neemt de criteria van de vorige bedrijfsobjectenwiki over: voor een bedrijfsobject telt hij *betekenis in onderwerp*, *relaties*, *onderscheidbare exemplaren*, *levenscyclus* en *wordt bewerkt*, met hoogstens één nee (samen met *herkenbaar* en *eigen identiteit* 6 van de 7, het oude "5 van de 6" plus het ArchiMate-kenmerk). Voor een proces telt hij *betekenis in onderwerp* en zes gedragskenmerken (*toegewezen partij*, *gebruikt objecten*, *aanleiding*, *benoembaar resultaat*, *herhaald uitgevoerd*, *eigen normering*), voor een functie *betekenis in onderwerp*, *toegewezen partij*, *gebruikt objecten* en *stabiel over tijd*; daar vervangen partij en objecten het brede kenmerk *relaties*. Gebeurtenis en dienst houden *betekenis in onderwerp* en *relaties*. Het specialisatieniveau (*zelfstandig beleidsbegrip*) voorkomt dat elk besluit of proces uit een wet een eigen element wordt: een variant van een breder herkenbaar begrip wordt een specialisatie zonder pagina. De actor- en rolvragen van de vorige wiki zijn samengevat in *los van verantwoordelijkheid* (actor of rol) en *meerdere vervullers*.
-- De tabellen in de skill en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json) worden uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
-- Collaboration, Interface, Interaction, Location en Representation worden herkend, maar hebben nog geen paginatype: zo'n begrip wordt voorgelegd. De motivatie- en strategielaag valt buiten dit model.
+- De beslistabel heeft zeven stappen: welk begrip (synoniem of homoniem), scope (*herkenbaar*, *gemeentelijk*, *buiten dit model*), afhankelijkheid (eigenschap, onderdeel, ander onderwerp), consistentie (kenmerken passen bij de aard), type (de aard bepaalt het voorlopige type), een **drempel** per type (een kernrelatie die ja moet zijn, en van de overige drempelcriteria hoogstens één nee) en de **zelfstandige specialisatie**. Criteria van 2026-10-01; de onderbouwing staat in `analyses/kenmerken.md`, `analyses/gemma-kennismodel.md`, `analyses/gegevensrollen.md` en `analyses/synoniemen-en-homoniemen.md`.
+- De documentatie (vragenlijst, naslag, per type, matrix en in de skill ook de stappentabel) in de skill en in [analyses/beslistabel.md](analyses/beslistabel.md), en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json), worden uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
+- Elementpagina's met de kenmerken van 2026-09-30 blijven geldig tot de herbeoordeling; de controle meldt ze als "herbeoordeling nodig".
+- Interaction wordt herkend, maar heeft geen paginatype: zo'n begrip wordt voorgelegd. Representation en Location zijn een vaste uitkomst zonder pagina. Van de motivatielaag zit alleen het beleidskader in dit model; de rest van de motivatie- en strategielaag valt erbuiten.
 
 ## 7. Bronvoorrang en definities
 

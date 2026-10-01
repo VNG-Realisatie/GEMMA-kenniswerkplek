@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "bedrijfsgebeurtenis",
-  "description": "Elementpagina: Business Event.",
+  "title": "gebeurtenis",
+  "description": "Elementpagina: Business Event (GEMMA: Gebeurtenis).",
   "allOf": [
     {
       "$ref": "element-basis.schema.json#/$defs/element"
@@ -9,7 +9,7 @@
   ],
   "properties": {
     "type": {
-      "const": "bedrijfsgebeurtenis"
+      "const": "gebeurtenis"
     },
     "archimate_type": {
       "enum": [

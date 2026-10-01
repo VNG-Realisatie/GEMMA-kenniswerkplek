@@ -193,7 +193,7 @@ Waarom deze vorm:
 
 Samen: negen keer registreren, zes keer bijwerken, zeven keer raadplegen; vier relaties krijgen een ander toegangstype. Twee relaties vertrekken uit een dienst; in GEMMA heeft een dienst geen toegang tot een object (de dienst wordt gerealiseerd door een proces), dus die gaan bij de herbeoordeling naar het realiserende proces.
 
-**Wat de indeling laat zien.** Geen enkel proces beëindigt een object, terwijl Grafrecht, Graf en Vergunning een levenscyclus hebben. Het vervallen van het grafrecht is nu alleen een [gebeurtenis](../bedrijfsarchitectuur/bedrijfsgebeurtenissen/verval-van-het-grafrecht.md); het gedrag dat het grafrecht vervallen verklaart en beëindigt, ontbreekt. De handelingen maken zulke gaten in de levenscyclus zichtbaar, en een functie-objectmatrix maakt ze per functie zichtbaar.
+**Wat de indeling laat zien.** Geen enkel proces beëindigt een object, terwijl Grafrecht, Graf en Vergunning een levenscyclus hebben. Het vervallen van het grafrecht is nu alleen een [gebeurtenis](../bedrijfsarchitectuur/gebeurtenissen/verval-van-het-grafrecht.md); het gedrag dat het grafrecht vervallen verklaart en beëindigt, ontbreekt. De handelingen maken zulke gaten in de levenscyclus zichtbaar, en een functie-objectmatrix maakt ze per functie zichtbaar.
 
 ## Open vragen
 

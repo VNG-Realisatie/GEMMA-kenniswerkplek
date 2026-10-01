@@ -15,6 +15,13 @@
       "enum": [
         "business-process"
       ]
+    },
+    "procesniveau": {
+      "enum": [
+        "bedrijfsproces",
+        "deelproces"
+      ],
+      "description": "GEMMA-procesarchitectuur: een deelproces levert een bijdrage aan een groter bedrijfsproces"
     }
   },
   "unevaluatedProperties": false,

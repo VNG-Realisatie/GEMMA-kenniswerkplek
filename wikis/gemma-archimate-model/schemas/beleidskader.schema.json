@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "bedrijfsdienst",
-  "description": "Elementpagina: Business Service.",
+  "title": "beleidskader",
+  "description": "Elementpagina: Driver (GEMMA: Beleidskader).",
   "allOf": [
     {
       "$ref": "element-basis.schema.json#/$defs/element"
@@ -9,17 +9,13 @@
   ],
   "properties": {
     "type": {
-      "const": "bedrijfsdienst"
+      "const": "beleidskader"
     },
     "archimate_type": {
       "enum": [
-        "business-service"
+        "driver"
       ]
     }
   },
-  "unevaluatedProperties": false,
-  "required": [
-    "taakveld",
-    "beleidsdomein"
-  ]
+  "unevaluatedProperties": false
 }

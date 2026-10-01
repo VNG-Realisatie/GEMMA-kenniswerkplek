@@ -20,7 +20,7 @@ Bij `data_object: ja` en een match zwakker dan `sterk` wordt het element voorgel
 
 - Bij voorkeur één-op-één. Aggregatie mag als het GGM te fijnmazig is; noem de samengevoegde entiteiten.
 - **Duplicaat** (zelfde begrip in meerdere beleidsdomeinen, andere GUID): één element; de thematisch passende GUID wordt `ggm_guid`, de andere gaan in `ggm_duplicaat_entiteiten` (entiteit, guid, beleidsdomein, taakveld, afwijkende_attributen) en in `## GGM-duplicaten` (tabel `| Beleidsdomein | GUID | Status |` met primair/duplicaat en de reden). Leg de keuze van de primaire GUID voor. Terugmelden als `duplicaat`.
-- **Homoniem** (zelfde naam, ander begrip): niet in `ggm_duplicaat_entiteiten`; wel in `## Homoniemen` met een link naar het andere element (als dat bestaat). Naam kiezen volgens `naamgeving.md`. Terugmelden als `homoniem`.
+- **Homoniem** (zelfde naam, ander begrip): niet in `ggm_duplicaat_entiteiten`; wel in `## Homoniemen` (tabel met Begrip, Betekenis, Waar, Naamkeuze; zie `naamgeving.md`) met een link naar het andere element (als dat bestaat). Naam kiezen volgens `naamgeving.md`. Terugmelden als `homoniem`.
 
 ## Velden
 

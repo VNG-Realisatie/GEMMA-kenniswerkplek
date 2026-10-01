@@ -1,4 +1,4 @@
-"""Beslistabel: regelnummers, drempel, specialisatieniveau, actor/rol en de randgevallen."""
+"""Beslistabel (criteria van 2026-10-01): regelnummers, consistentie, drempel met kernrelatie, specialisatie en aanvullingen."""
 import json
 import sys
 from pathlib import Path
@@ -23,175 +23,167 @@ def beoordeling(ja: set[str], **extra) -> dict:
 
 
 SCOPE = {"herkenbaar", "gemeentelijk"}
-# De generieke criteria (stap 2, 4 en 5), bij alle typen ja
-ZELFSTANDIG = SCOPE | {"eigen_identiteit", "betekenis_in_onderwerp", "relaties", "zelfstandig_beleidsbegrip"}
-PASSIEF_BO = ZELFSTANDIG | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}
-ACTOR = ZELFSTANDIG | {"handelende_partij", "los_van_verantwoordelijkheid"}
-ROL = ZELFSTANDIG | {"hoedanigheid", "meerdere_vervullers"}
-PROCES_DREMPEL = {"toegewezen_partij", "gebruikt_objecten", "aanleiding", "benoembaar_resultaat", "herhaald_uitgevoerd",
-                  "eigen_normering"}
-PROCES = ZELFSTANDIG | {"gedrag", "per_keer_doorlopen"} | PROCES_DREMPEL
-FUNCTIE = ZELFSTANDIG | {"gedrag", "gegroepeerd_gedrag", "toegewezen_partij", "gebruikt_objecten", "stabiel_over_tijd"}
+BASIS = SCOPE | {"eigen_identiteit", "betekenis_in_onderwerp", "zelfstandige_specialisatie"}
+BO = BASIS | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}
+ACTOR = BASIS | {"handelende_partij", "los_van_verantwoordelijkheid", "vervult_een_rol"}
+ROL = BASIS | {"hoedanigheid", "voert_gedrag_uit"}
+PROCES = BASIS | {"gedrag", "per_keer_doorlopen", "toegewezen_partij", "gebruikt_objecten", "aanleiding",
+                  "benoembaar_resultaat", "komt_herhaald_voor", "eigen_normering"}
+FUNCTIE = BASIS | {"gedrag", "gegroepeerd_gedrag", "toegewezen_partij", "gebruikt_objecten", "stabiel_over_tijd"}
+DIENST = BASIS | {"gedrag", "aangeboden_gedrag", "gerealiseerd_door", "afnemer", "benoembaar_resultaat"}
+GEBEURTENIS = BASIS | {"gedrag", "toestandsverandering", "leidt_tot_gedrag", "komt_herhaald_voor"}
+PRODUCT = BASIS | {"aanbod_als_geheel", "omvat_diensten_en_afspraken", "afnemer", "benoembaar_resultaat"}
+SAMENWERKING = BASIS | {"samenwerkingsverband", "voert_gedrag_uit"}
+KANAAL = BASIS | {"toegangspunt", "ontsluit_een_dienst"}
+BELEIDSKADER = BASIS | {"regeling_als_geheel", "landelijk", "in_werking", "is_grondslag_voor"}
 
 
-def test_regelnummers_stap_1_tot_3_volgen_de_tabel():
-    """Het regelnummer (of bij een uitkomst uit stap 4/5: de typeregel) is gelijk aan de positie in REGELS."""
-    gevallen = {
-        1: beoordeling(set()),
-        2: beoordeling(SCOPE | {"buiten_kernlagen"}),
-        3: beoordeling(SCOPE | {"slechts_eigenschap"}, genoemd_begrip="Pand"),
-        4: beoordeling(SCOPE, genoemd_begrip="Besluit"),
-        5: beoordeling(ACTOR | {"hoedanigheid"}),
-        6: beoordeling(ZELFSTANDIG | {"gedrag", "aanbod_als_geheel"}),
-        7: beoordeling(ACTOR),
-        8: beoordeling(ROL),
-        9: beoordeling(ZELFSTANDIG | {"aanbod_als_geheel", "onderscheidbare_exemplaren"}),
-        10: beoordeling(ZELFSTANDIG | {"samenwerkingsverband"}),
-        11: beoordeling(ZELFSTANDIG | {"toegangspunt"}),
-        12: beoordeling(ZELFSTANDIG | {"plaats"}),
-        13: beoordeling(PROCES),
-        14: beoordeling(ZELFSTANDIG | {"gedrag"}),
-        15: beoordeling(ZELFSTANDIG | {"per_keer_doorlopen"}),
-        16: beoordeling(ZELFSTANDIG | {"waarneembare_vorm"}, genoemd_begrip="Aanslag"),
-        17: beoordeling(PASSIEF_BO | {"afspraak"}),
-        18: beoordeling(PASSIEF_BO),
-    }
+def test_elke_regel_van_stap_0_tot_4_heeft_een_geval():
+    gevallen = [
+        beoordeling(BO, synoniem_van="Urn"),
+        beoordeling(set()),
+        beoordeling(SCOPE | {"buiten_dit_model"}),
+        beoordeling(SCOPE | {"slechts_eigenschap"}, genoemd_begrip="Pand"),
+        beoordeling(SCOPE, genoemd_begrip="Besluit"),
+        beoordeling(SCOPE | {"eigen_identiteit"}),
+        beoordeling(BO | {"per_keer_doorlopen"}),
+        beoordeling(ROL | {"handelende_partij"}),
+        beoordeling(SAMENWERKING),
+        beoordeling(BASIS | {"gedrag", "aanbod_als_geheel"}),
+        beoordeling(ACTOR),
+        beoordeling(ROL),
+        beoordeling(PRODUCT),
+        beoordeling(KANAAL),
+        beoordeling(BASIS | {"plaats"}),
+        beoordeling(BELEIDSKADER),
+        beoordeling(PROCES),
+        beoordeling(BASIS | {"gedrag"}),
+        beoordeling(BASIS | {"waarneembare_vorm"}, genoemd_begrip="Aanslag"),
+        beoordeling(BO | {"afspraak"}),
+        beoordeling(BO),
+    ]
     assert len(gevallen) == len(bt.REGELS)
-    for nr, b in gevallen.items():
+    for nr, b in enumerate(gevallen, start=1):
         u = bt.evalueer(b)
-        assert (u.typeregel or u.regel) == nr, nr
+        assert (u.typeregel or u.regel) == nr, (nr, u)
 
 
-def test_element_komt_uit_stap_5():
-    u = bt.evalueer(beoordeling(PASSIEF_BO))
-    assert (u.soort, u.regel, u.typeregel) == ("element", bt.EERSTE_SPECIALISATIEREGEL + 2, 18)
-    assert u.paginatype == "bedrijfsobject" and not u.voorleggen
+def test_stap_0_synoniem_en_homoniem():
+    u = bt.evalueer(beoordeling(BO, synoniem_van="Urn"))
+    assert (u.soort, u.genoemd_begrip, u.paginatype) == ("synoniem", "Urn", None)
+    u = bt.evalueer(beoordeling(BO, homoniem_van="Regeling (GGM Inkomen)"))
+    assert u.soort == "element" and u.voorleggen and any("naamkeuze" in r for r in u.redenen)
+    assert bt.voorgestelde_status(u) == "kandidaat"
 
 
-def test_drempel_bedrijfsobject_zes_van_zeven():
-    # Eén criterium nee (zoals het oude 5 van de 6): element, zelfstandig af te handelen
-    u = bt.evalueer(beoordeling(PASSIEF_BO - {"levenscyclus"}))
+def test_niet_in_dit_onderwerp_is_verwijzing():
+    u = bt.evalueer(beoordeling(BO - {"betekenis_in_onderwerp"}))
+    assert u.soort == "verwijzing" and u.paginatype is None
+
+
+def test_consistentie_kenmerken_passen_bij_de_aard():
+    # Gedragskenmerk bij een ding
+    assert bt.evalueer(beoordeling(BO | {"aanleiding"})).soort == "conflict"
+    # Afspraak naast gedrag
+    assert bt.evalueer(beoordeling(PROCES | {"afspraak"})).soort == "conflict"
+    # Partijkenmerk zonder partij
+    assert bt.evalueer(beoordeling(BO | {"voert_gedrag_uit"})).soort == "conflict"
+    # Beleidskaderkenmerk zonder regeling
+    assert bt.evalueer(beoordeling(BO | {"landelijk"})).soort == "conflict"
+    # Afnemer en resultaat mogen bij een product, exemplaren en bewerkt bij een partij (tegenhanger)
+    assert bt.evalueer(beoordeling(PRODUCT)).paginatype == "product"
+    assert bt.evalueer(beoordeling(ACTOR | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"})).paginatype == "actor"
+
+
+def test_drempel_kernrelatie_moet_ja():
+    for ja, kern in [(BO, "wordt_bewerkt"), (PROCES, "toegewezen_partij"), (FUNCTIE, "toegewezen_partij"),
+                     (DIENST, "gerealiseerd_door"), (GEBEURTENIS, "leidt_tot_gedrag"), (ACTOR, "vervult_een_rol"),
+                     (ROL, "voert_gedrag_uit"), (PRODUCT, "omvat_diensten_en_afspraken"),
+                     (SAMENWERKING, "voert_gedrag_uit"), (KANAAL, "ontsluit_een_dienst"), (BELEIDSKADER, "is_grondslag_voor")]:
+        u = bt.evalueer(beoordeling(ja - {kern}))
+        assert (u.soort, u.regel, u.voorleggen) == ("geen_element", bt.EERSTE_DREMPELREGEL, True), kern
+        assert f"{bt.NAAM[kern]}: nee" in u.redenen
+
+
+def test_drempel_hoogstens_een_overig_nee():
+    u = bt.evalueer(beoordeling(BO - {"levenscyclus"}))
     assert u.soort == "element" and not u.voorleggen and "levenscyclus" in u.toelichting
     assert bt.voorgestelde_status(u) == "review"
-    # Twee nee: geen element, voorleggen met de ontbrekende criteria
-    u = bt.evalueer(beoordeling(PASSIEF_BO - {"levenscyclus", "relaties"}))
-    assert (u.soort, u.regel, u.voorleggen) == ("geen_element", bt.EERSTE_DREMPELREGEL, True)
-    assert set(u.redenen) == {"levenscyclus: nee", "relaties: nee"}
-    assert bt.voorgestelde_status(u) is None
-
-
-def test_drempel_per_type():
-    assert bt.evalueer(beoordeling(ACTOR - {"relaties", "betekenis_in_onderwerp"})).soort == "geen_element"
-    assert bt.evalueer(beoordeling(ACTOR - {"relaties"})).paginatype == "actor"
-    assert bt.evalueer(beoordeling(ROL - {"meerdere_vervullers", "relaties"})).soort == "geen_element"
-    assert bt.evalueer(beoordeling(PROCES - {"aanleiding", "betekenis_in_onderwerp"})).soort == "geen_element"
-
-
-def test_drempel_proces_en_functie_rust_op_de_gedragskenmerken():
-    # Proces: zeven criteria, hoogstens één nee; relaties telt niet mee (vervangen door partij en objecten)
-    u = bt.evalueer(beoordeling(PROCES - {"relaties"}))
-    assert u.paginatype == "bedrijfsproces" and "7/7" in u.toelichting
-    u = bt.evalueer(beoordeling(PROCES - {"herhaald_uitgevoerd"}))
-    assert u.paginatype == "bedrijfsproces" and "6/7" in u.toelichting
-    u = bt.evalueer(beoordeling(PROCES - {"herhaald_uitgevoerd", "eigen_normering"}))
-    assert (u.soort, u.voorleggen) == ("geen_element", True)
-    assert set(u.redenen) == {"herhaald uitgevoerd: nee", "eigen normering: nee"}
-    # Alleen de oude twee (betekenis, relaties) volstaan niet meer
-    assert bt.evalueer(beoordeling(ZELFSTANDIG | {"gedrag", "per_keer_doorlopen"})).soort == "geen_element"
-    # Functie: vier criteria
-    assert bt.evalueer(beoordeling(FUNCTIE)).paginatype == "bedrijfsfunctie"
-    assert bt.evalueer(beoordeling(FUNCTIE - {"stabiel_over_tijd"})).paginatype == "bedrijfsfunctie"
-    assert bt.evalueer(beoordeling(FUNCTIE - {"stabiel_over_tijd", "gebruikt_objecten"})).soort == "geen_element"
-    # Gebeurtenis en dienst: ongewijzigd (betekenis, relaties)
-    assert bt.evalueer(beoordeling(ZELFSTANDIG | {"gedrag", "toestandsverandering"})).paginatype == "bedrijfsgebeurtenis"
-
-
-def test_eigen_identiteit_is_harde_poort_voor_alle_typen():
-    for ja in (PASSIEF_BO, ACTOR, PROCES):
-        u = bt.evalueer(beoordeling(ja - {"eigen_identiteit"}, genoemd_begrip="Lijkbezorging"))
-        assert (u.soort, u.regel, u.genoemd_begrip) == ("onderdeel", 4, "Lijkbezorging")
-    assert bt.evalueer(beoordeling(PASSIEF_BO - {"eigen_identiteit"})).voorleggen
+    u = bt.evalueer(beoordeling(BO - {"levenscyclus", "onderscheidbare_exemplaren"}))
+    assert (u.soort, u.regel) == ("geen_element", bt.EERSTE_DREMPELREGEL + 1)
+    assert bt.evalueer(beoordeling(PROCES - {"komt_herhaald_voor"})).paginatype == "bedrijfsproces"
+    assert bt.evalueer(beoordeling(PROCES - {"komt_herhaald_voor", "eigen_normering"})).soort == "geen_element"
+    # Dienst zonder toegewezen partij (besluit 2026-10-01); product zonder exemplaren
+    assert bt.evalueer(beoordeling(DIENST)).paginatype == "dienst"
+    assert "toegewezen_partij" not in bt.TYPE[("dienst", "business-service")].drempel
+    assert "onderscheidbare_exemplaren" not in bt.TYPE[("product", "product")].drempel
 
 
 def test_specialisatieniveau():
-    # Vergunning tot opgraving: variant van een breder begrip → specialisatie zonder pagina
-    u = bt.evalueer(beoordeling(PASSIEF_BO - {"zelfstandig_beleidsbegrip"}, genoemd_begrip="Vergunning"))
-    assert (u.soort, u.regel, u.genoemd_begrip, u.paginatype) == (
-        "specialisatie", bt.EERSTE_SPECIALISATIEREGEL, "Vergunning", None)
-    assert bt.voorgestelde_status(u) is None
-    # Zonder genoemd begrip: voorleggen
-    u = bt.evalueer(beoordeling(PASSIEF_BO - {"zelfstandig_beleidsbegrip"}))
-    assert (u.soort, u.regel, u.voorleggen) == ("geen_element", bt.EERSTE_SPECIALISATIEREGEL + 1, True)
-    # Geldt ook voor gedrag
-    u = bt.evalueer(beoordeling(PROCES - {"zelfstandig_beleidsbegrip"}, genoemd_begrip="Behandelen vergunningaanvraag"))
-    assert u.soort == "specialisatie"
+    u = bt.evalueer(beoordeling(BO - {"zelfstandige_specialisatie"}, genoemd_begrip="Vergunning"))
+    assert (u.soort, u.regel, u.genoemd_begrip, u.paginatype) == ("specialisatie", bt.EERSTE_SPECIALISATIEREGEL, "Vergunning", None)
+    u = bt.evalueer(beoordeling(BO - {"zelfstandige_specialisatie"}))
+    assert (u.soort, u.voorleggen) == ("geen_element", True)
+    assert bt.evalueer(beoordeling(ROL - {"zelfstandige_specialisatie"}, genoemd_begrip="Aanvrager")).soort == "specialisatie"
 
 
-def test_actor_of_rol_via_los_van_verantwoordelijkheid():
-    # Kerkgenootschap: partij, los van de verantwoordelijkheid → actor
-    assert bt.evalueer(beoordeling(ACTOR)).paginatype == "actor"
-    # Houder van de begraafplaats: partij én hoedanigheid, gebonden aan de verantwoordelijkheid → rol
+def test_actor_rol_en_samenwerking():
     houder = bt.evalueer(beoordeling(ROL | {"handelende_partij"}))
-    assert houder.paginatype == "rol" and houder.typeregel == 5
+    assert houder.paginatype == "rol"
     burgemeester = bt.evalueer(beoordeling(ACTOR | {"hoedanigheid"}))
-    assert burgemeester.paginatype == "actor" and burgemeester.typeregel == 5
+    assert burgemeester.paginatype == "actor"
+    assert bt.evalueer(beoordeling(ACTOR - {"los_van_verantwoordelijkheid"})).soort == "conflict"
+    assert bt.evalueer(beoordeling(ROL | {"los_van_verantwoordelijkheid"})).soort == "conflict"
+    # GGD: organisatie en samenwerkingsverband met eigen rechtspersoon → actor
+    ggd = bt.evalueer(beoordeling(BASIS | {"handelende_partij", "samenwerkingsverband", "eigen_rechtspersoon",
+                                           "vervult_een_rol"}))
+    assert ggd.paginatype == "actor"
+    # Zorg- en Veiligheidshuis: zonder eigen rechtspersoon → bedrijfssamenwerking
+    assert bt.evalueer(beoordeling(SAMENWERKING)).paginatype == "bedrijfssamenwerking"
 
 
-def test_tegenstrijdige_partijantwoorden_worden_voorgelegd():
-    u = bt.evalueer(beoordeling(ACTOR - {"los_van_verantwoordelijkheid"}))
-    assert (u.soort, u.regel) == ("conflict", 7)
-    u = bt.evalueer(beoordeling(ROL | {"los_van_verantwoordelijkheid"}))
-    assert (u.soort, u.regel) == ("conflict", 8)
+def test_kanaal_wordt_altijd_voorgelegd():
+    u = bt.evalueer(beoordeling(KANAAL))
+    assert u.paginatype == "kanaal" and u.voorleggen and bt.voorgestelde_status(u) == "kandidaat"
 
 
-def test_doelgroep_is_eigenschap_geen_eigen_type():
-    # "Minima": indeling van inwoners → eigenschap van Inwoner
-    u = bt.evalueer(beoordeling(SCOPE | {"slechts_eigenschap"}, genoemd_begrip="Inwoner"))
-    assert u.soort == "eigenschap" and u.genoemd_begrip == "Inwoner"
+def test_regeling_landelijk_of_bron():
+    assert bt.evalueer(beoordeling(BELEIDSKADER)).paginatype == "beleidskader"
+    assert bt.evalueer(beoordeling(BELEIDSKADER - {"in_werking"})).paginatype == "beleidskader"
+    assert bt.evalueer(beoordeling(BELEIDSKADER - {"landelijk"})).soort == "bron"
+    # De soort regeling is een bedrijfsobject
+    assert bt.evalueer(beoordeling(BO)).archimate_type == "business-object"
 
 
-def test_verordening_is_bedrijfsobject_geen_contract():
-    u = bt.evalueer(beoordeling(PASSIEF_BO))
-    assert (u.paginatype, u.archimate_type) == ("bedrijfsobject", "business-object")
-    assert bt.voorgestelde_status(u, grondslag="governance-object") == "kandidaat"
-    assert bt.evalueer(beoordeling(PASSIEF_BO | {"afspraak"})).archimate_type == "contract"
+def test_geen_pagina_en_herkend():
+    vorm = bt.evalueer(beoordeling(BASIS | {"waarneembare_vorm"}, genoemd_begrip="Graf"))
+    assert (vorm.soort, vorm.archimate_type, vorm.paginatype, vorm.voorleggen) == ("geen_pagina", "representation", None, False)
+    assert bt.evalueer(beoordeling(BASIS | {"waarneembare_vorm"})).voorleggen  # zonder genoemd object
+    plaats = bt.evalueer(beoordeling(BASIS | {"plaats"}))
+    assert (plaats.soort, plaats.archimate_type, plaats.voorleggen) == ("geen_pagina", "location", False)
+    interactie = bt.evalueer(beoordeling(BASIS | {"gedrag", "gezamenlijk_gedrag"}))
+    assert (interactie.soort, interactie.archimate_type, interactie.voorleggen) == ("herkend", "business-interaction", True)
+    for u in (vorm, plaats, interactie):
+        assert bt.voorgestelde_status(u) is None
 
 
-def test_tegenhanger_zonder_registratietaal():
+def test_aanvullingen():
     u = bt.evalueer(beoordeling(ACTOR | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}))
-    assert u.paginatype == "actor" and u.tegenhanger == "bedrijfsobject"
+    assert u.tegenhanger == "bedrijfsobject"
     assert bt.evalueer(beoordeling(ACTOR)).tegenhanger is None
-
-
-def test_geen_tegenhanger_bij_gedrag():
-    u = bt.evalueer(beoordeling(PASSIEF_BO | {"gedrag", "per_keer_doorlopen"} | PROCES_DREMPEL))
-    assert u.paginatype == "bedrijfsproces" and u.tegenhanger is None
-
-
-def test_ketenpartner_zonder_structurele_samenwerking_buiten_scope():
-    assert bt.evalueer(beoordeling(ACTOR)).paginatype == "actor"
-    assert bt.evalueer(beoordeling(ACTOR - {"gemeentelijk"})).soort == "buiten_scope"
-
-
-def test_autonomie_proces_zonder_ggm_kan_review():
-    u = bt.evalueer(beoordeling(FUNCTIE))
-    assert u.paginatype == "bedrijfsfunctie"
-    assert bt.voorgestelde_status(u) == "review"
-    data_object = bt.evalueer(beoordeling(PASSIEF_BO | {"geautomatiseerd_verwerkt"}))
+    assert bt.evalueer(beoordeling(PROCES)).procesniveau == "bedrijfsproces"
+    assert bt.evalueer(beoordeling(PROCES | {"bijdrage_aan_groter_proces"})).procesniveau == "deelproces"
+    data_object = bt.evalueer(beoordeling(BO | {"geautomatiseerd_verwerkt"}))
     assert data_object.data_object == "ja"
     assert bt.voorgestelde_status(data_object, ggm_match="partieel") == "kandidaat"
     assert bt.voorgestelde_status(data_object, ggm_match="sterk") == "review"
+    assert bt.voorgestelde_status(bt.evalueer(beoordeling(BO)), grondslag="governance-object") == "kandidaat"
 
 
-def test_herkende_typen_krijgen_geen_pagina():
-    for ja, archimate in [
-        ({"samenwerkingsverband"}, "business-collaboration"),
-        ({"gedrag", "gezamenlijk_gedrag"}, "business-interaction"),
-        ({"waarneembare_vorm"}, "representation"),
-    ]:
-        u = bt.evalueer(beoordeling(ZELFSTANDIG | ja, genoemd_begrip="X"))
-        assert u.soort == "herkend" and u.archimate_type == archimate and u.paginatype is None
-        assert bt.voorgestelde_status(u) is None
+def test_buiten_scope_en_eigenschap():
+    assert bt.evalueer(beoordeling(ACTOR - {"gemeentelijk"})).soort == "buiten_scope"
+    u = bt.evalueer(beoordeling(SCOPE | {"slechts_eigenschap"}, genoemd_begrip="Inwoner"))
+    assert (u.soort, u.genoemd_begrip) == ("eigenschap", "Inwoner")
 
 
 def test_onvolledige_beoordeling_wordt_geweigerd():
@@ -204,12 +196,23 @@ def test_onvolledige_beoordeling_wordt_geweigerd():
     assert any("onderbouwing" in f for f in exc.value.fouten)
 
 
+def test_elk_kenmerk_telt_ergens():
+    gebruikt = set()
+    for t in bt.TYPEN:
+        gebruikt |= set(t.bep) | set(t.drempel) | set(t.aanvulling) | ({t.kern} if t.kern else set())
+    gebruikt |= {k.sleutel for k in bt.KENMERKEN if k.groep in ("Poort", "Specialisatie")}
+    assert set(bt.SLEUTELS) - gebruikt == set()
+
+
 def test_gegenereerd_schema_is_actueel_en_geldig():
     opgeslagen = json.loads((WIKI / "schemas" / "beoordeling.schema.json").read_text(encoding="utf-8"))
     assert opgeslagen == bt.schema(), "draai: uv run python tools/bepaal_type.py schema --schrijf"
-    jsonschema.Draft202012Validator(opgeslagen).validate(beoordeling(PASSIEF_BO))
+    jsonschema.Draft202012Validator(opgeslagen).validate(beoordeling(BO))
 
 
-def test_skilltabel_is_gegenereerd():
-    skill = (WIKI / ".agents" / "skills" / "gemma-archimate-model-criteria" / "SKILL.md").read_text(encoding="utf-8")
-    assert bt.markdown() in skill, "tabellen in de criteria-skill wijken af: draai tools/bepaal_type.py markdown"
+def test_documentatie_is_gegenereerd():
+    skill = bt.SKILL_PATH.read_text(encoding="utf-8")
+    wiki = bt.DOC_PATH.read_text(encoding="utf-8")
+    assert bt.markdown("skill") in skill, "draai: uv run python tools/bepaal_type.py markdown --schrijf"
+    assert bt.markdown("wiki") in wiki, "draai: uv run python tools/bepaal_type.py markdown --schrijf"
+    assert "### Stappentabel" not in wiki

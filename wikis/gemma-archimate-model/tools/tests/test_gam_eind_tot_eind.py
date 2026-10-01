@@ -10,7 +10,7 @@ import check_elementen
 import terugmelding
 from llmwiki import frontmatter, gate, lint, paths, runs, validate
 
-JA = {"herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "relaties", "zelfstandig_beleidsbegrip"}
+JA = {"herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "zelfstandige_specialisatie"}
 
 
 def _beoordeling(begrip, ja):
@@ -49,7 +49,7 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
     # ASSESS: kenmerken → beslistabel
     bo_ja = JA | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}
     proces_ja = JA | {"gedrag", "per_keer_doorlopen", "toegewezen_partij", "gebruikt_objecten", "aanleiding",
-                      "benoembaar_resultaat", "herhaald_uitgevoerd", "eigen_normering"}
+                      "benoembaar_resultaat", "komt_herhaald_voor", "eigen_normering"}
     zonder_levenscyclus = bo_ja - {"levenscyclus"}
     assessment = {"run": run_id, "voorstellen": [
         {"doel": "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md", "soort": "nieuw",
@@ -63,7 +63,7 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
     assert bepaal_type.main(["evalueer", str(pad_assessment), "--schrijf"]) == 0
     uitkomsten = [v["beoordeling"]["uitkomst"] for v in json.loads(pad_assessment.read_text())["voorstellen"]]
     assert [u["paginatype"] for u in uitkomsten] == ["bedrijfsobject", "bedrijfsproces", "bedrijfsobject"]
-    assert not uitkomsten[2]["voorleggen"] and "levenscyclus" in uitkomsten[2]["toelichting"]  # 6/7: binnen de drempel
+    assert not uitkomsten[2]["voorleggen"] and "levenscyclus" in uitkomsten[2]["toelichting"]  # kern ja, 1/2: binnen de drempel
     runs.complete(wiki, wiki_yaml, run_id, "assess", pad_assessment)
 
     # WRITE: pagina's stagen
@@ -88,7 +88,7 @@ def test_onderwerp_door_de_hele_keten(archimate_repo, tmp_path):
         "bedrijfsarchitectuur/bedrijfsprocessen/8-wonen/vergunningen/aanvraag-behandelen.md":
             ("bedrijfsproces", element("aanvraag-behandelen", "Aanvraag behandelen", "bedrijfsproces", "business-process", proces_ja, "review",
                                        bronnen + "\n## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n"
-                                       "|---|---|---|---|---|---|---|\n| toegang (schrijven) | "
+                                       "|---|---|---|---|---|---|---|\n| toegang (registreren) | "
                                        "[Beschikking](../../../bedrijfsobjecten/8-wonen/vergunningen/beschikking.md) | maakt | | bron | | [2026-utrecht-nota](../../../../bronanalyses/vergunningen/2026-utrecht-nota.md) (§2) |\n")),
         "begrippen/vergunningen.md": ("onderwerp", element_tekst(
             {"id": "vergunningen", "type": "onderwerp", "naam": "Vergunningen", "status": "afgerond",

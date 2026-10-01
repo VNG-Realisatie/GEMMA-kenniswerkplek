@@ -86,7 +86,7 @@ Wat de gemeente ziet, doet en beslist rond de lijkbezorging: lijkschouw door de 
 | [Grafrecht](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | contract (kandidaat) | Passief, afspraak (5/5) | wet | — |
 | Overschrijving van het grafrecht | onderdeel of deelstap van [Grafrecht](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | Onderdeel of deelstap van een ander begrip | wet | — |
 | Afstand van het grafrecht | onderdeel of deelstap van [Grafrecht](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | Onderdeel of deelstap van een ander begrip | wet | — |
-| [Verval van het grafrecht](../bedrijfsarchitectuur/bedrijfsgebeurtenissen/verval-van-het-grafrecht.md) | business-event (review) | Gedrag, *toestandsverandering* (2/2) | wet | — |
+| [Verval van het grafrecht](../bedrijfsarchitectuur/gebeurtenissen/verval-van-het-grafrecht.md) | business-event (review) | Gedrag, *toestandsverandering* (2/2) | wet | — |
 | Register van begraven lijken | herkend als representation, geen pagina | Vorm van de gegevens van graven; toegelicht bij Graf (besluit redacteur 2026-09-30) | wet | — |
 | Schadeloosstelling bij sluiting | geen element | betekenis in onderwerp: nee; levenscyclus: nee | wet | — |
 | [Grafbedekking](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafbedekking.md) | business-object (review) | Passief (5/5) | wet | — |
@@ -113,8 +113,8 @@ Wat de gemeente ziet, doet en beslist rond de lijkbezorging: lijkschouw door de 
 | [Verlenen grafrecht](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
 | [Opgraven lijk](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
 | [Ruimen graf](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | business-process (review) | Gedrag, *per keer doorlopen* (2/2) | wet | — |
-| [Onderhoud van graven](../bedrijfsarchitectuur/bedrijfsdiensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) | business-service (review) | Gedrag, *aangeboden gedrag* (2/2) | wet | — |
-| [Overlijden](../bedrijfsarchitectuur/bedrijfsgebeurtenissen/overlijden.md) | business-event (review) | Gedrag, *toestandsverandering* (2/2) | wet | — |
+| [Onderhoud van graven](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) | business-service (review) | Gedrag, *aangeboden gedrag* (2/2) | wet | — |
+| [Overlijden](../bedrijfsarchitectuur/gebeurtenissen/overlijden.md) | business-event (review) | Gedrag, *toestandsverandering* (2/2) | wet | — |
 | Gemeentelijke dienstverlening rond overlijden | buiten dit model (Grouping (verzamelterm in de VNG-bron)) | Buiten de kernlagen van dit model | beleid | — |
 | Nieuwe vormen van lijkbezorging | buiten scope | herkenbaar: nee | beleid | — |
 | [Burgemeester](../bedrijfsarchitectuur/actoren/burgemeester.md) | business-actor (review) | Handelende partij (2/2) | wet | — |

@@ -8,7 +8,12 @@ relatieve link naar het doelelement (Obsidian toont de omgekeerde kant als backl
     | compositie | [Onderdeel beschikking](onderdeel-beschikking.md) | bevat | 1 → 1..* | ggm-exact | EAID_… | [2026-overheid-awb](../../../../bronanalyses/…/2026-overheid-awb.md) (art. 1:3) |
 
 Relatie: associatie, associatie (gericht), aggregatie, compositie, specialisatie, toewijzing,
-toegang (lezen|schrijven|lezen-schrijven), triggering, stroom, realisatie, bediening.
+toegang (<handeling> of <verantwoordelijkheid>), triggering, stroom, realisatie, bediening.
+Toegang van gedrag tot een object heeft een handeling (registreren, bijwerken, beëindigen, raadplegen, verstrekken,
+bewaren, overbrengen, vernietigen); toegang van een rol of bedrijfssamenwerking een verantwoordelijkheid (houder,
+bronhouder, beheerder, verstrekker, afnemer, toezichthouder, betrokkene, partij). Het ArchiMate-toegangstype volgt
+eruit (besluiten redacteur 2026-10-01). De oude notatie (lezen|schrijven|lezen-schrijven) blijft tot de
+herbeoordeling geldig.
 Grondslag: ggm-exact | ggm-afgeleid | bron. GGM-relatie: één of meer GUID's (komma-gescheiden), leeg bij `bron`.
 Bron: bron-id's als link naar de bronanalyse, met vindplaats; verplicht bij `bron`, bij `ggm-*` de bronnen die de relatie bevestigen.
 
@@ -51,12 +56,29 @@ RELATIES = {
     "realisatie": "realization",
     "bediening": "serving",
 }
-TOEGANG = ("lezen", "schrijven", "lezen-schrijven")
+# Handeling van gedrag op een object → ArchiMate-toegangstype
+HANDELINGEN = {"registreren": "schrijven", "bijwerken": "lezen-schrijven", "beëindigen": "schrijven",
+               "raadplegen": "lezen", "verstrekken": "lezen", "bewaren": "lezen-schrijven", "overbrengen": "lezen",
+               "vernietigen": "schrijven"}
+# Verantwoordelijkheid van een rol (of bedrijfssamenwerking) voor een object → ArchiMate-toegangstype
+VERANTWOORDELIJKHEDEN = {"houder": "lezen-schrijven", "bronhouder": "schrijven", "beheerder": "lezen-schrijven",
+                         "verstrekker": "lezen", "afnemer": "lezen", "toezichthouder": "lezen", "betrokkene": "lezen",
+                         "partij": "lezen-schrijven"}
+TOEGANG_OUD = ("lezen", "schrijven", "lezen-schrijven")  # criteria van 2026-09-30; tot de herbeoordeling
+TOEGANG = tuple(HANDELINGEN) + tuple(VERANTWOORDELIJKHEDEN) + TOEGANG_OUD
+
+
+def toegangstype(naam: str | None) -> str | None:
+    """ArchiMate-toegangstype (lezen, schrijven, lezen-schrijven) bij een handeling of verantwoordelijkheid."""
+    if naam in TOEGANG_OUD:
+        return naam
+    return HANDELINGEN.get(naam) or VERANTWOORDELIJKHEDEN.get(naam)
 GRONDSLAGEN = ("ggm-exact", "ggm-afgeleid", "bron")
 KOLOMMEN = ["Relatie", "Naar", "Naam", "Kardinaliteit", "Grondslag", "GGM-relatie", "Bron"]
 BRON_ID_RE = gam_gemeen.BRON_ID_RE
 
 ACTIEF = {"business-actor", "business-role", "business-collaboration", "business-interface"}
+MOTIVATIE = {"driver"}
 GEDRAG = {"business-process", "business-function", "business-event", "business-service", "business-interaction"}
 PASSIEF = {"business-object", "contract", "representation"}
 SAMENGESTELD = {"product"}
@@ -82,19 +104,39 @@ DEEL_GEHEEL_WERKWOORDEN = ("bevat", "bestaat uit", "omvat", "onderdeel van", "de
 
 
 def categorie(archimate_type: str) -> str:
-    for naam, typen in (("actief", ACTIEF), ("gedrag", GEDRAG), ("passief", PASSIEF), ("samengesteld", SAMENGESTELD)):
+    for naam, typen in (("actief", ACTIEF), ("gedrag", GEDRAG), ("passief", PASSIEF), ("samengesteld", SAMENGESTELD),
+                        ("motivatie", MOTIVATIE)):
         if archimate_type in typen:
             return naam
     return "onbekend"
 
 
-def toegestaan(relatie: str, bron_type: str, doel_type: str) -> bool:
+def toegestaan(relatie: str, bron_type: str, doel_type: str, oud: bool = False) -> bool:
+    """ArchiMate-toets, aangescherpt met de GEMMA-modelleerafspraken (besluiten redacteur 2026-10-01).
+
+    Een actor hangt alleen via een rol aan gedrag en objecten; een kanaal is toegewezen aan een dienst en bedient een
+    rol; een functie bedient een proces (geen aggregatie); een dienst heeft geen toegang tot een object en krijgt geen
+    rol toegewezen. Met `oud=True` gelden de regels van 2026-09-30, zodat de controle bestaande pagina's tot de
+    herbeoordeling als waarschuwing kan melden in plaats van als fout.
+    """
     if relatie == "specialization":
         return bron_type == doel_type or {bron_type, doel_type} == {"business-object", "contract"}
     cb, cd = categorie(bron_type), categorie(doel_type)
     if relatie == "assignment" and cb == cd == "actief":
         # Tussen twee partijen alleen: een actor vervult een rol.
         return (bron_type, doel_type) == ("business-actor", "business-role")
+    if not oud:
+        if bron_type == "business-actor" and relatie in ("assignment", "access"):
+            return False
+        if bron_type == "business-interface":
+            return relatie == "association" or (relatie, doel_type) in {
+                ("assignment", "business-service"), ("serving", "business-role")}
+        if relatie == "assignment" and cb == "actief" and doel_type == "business-service":
+            return False
+        if relatie in ("aggregation", "composition") and (bron_type, doel_type) == ("business-function", "business-process"):
+            return False
+        if relatie == "access" and bron_type == "business-service":
+            return False
     return any(r == relatie and b in ("*", cb) and d in ("*", cd) for r, b, d in TOEGESTAAN if b != "zelfde")
 
 
@@ -120,7 +162,7 @@ def lees_tabel(pad: Path, body: str, index_op_pad: dict[Path, str]) -> list[Rela
     for rij in gam_gemeen.tabel(gam_gemeen.sectie(body, "Relaties")):
         fouten = []
         label = rij.get("Relatie", "").strip().lower()
-        m = re.fullmatch(r"(?P<soort>[a-z]+)(?:\s*\((?P<extra>[a-z-]+)\))?", label)
+        m = re.fullmatch(r"(?P<soort>[a-z]+)(?:\s*\((?P<extra>[^)]+)\))?", label)
         soort = m.group("soort") if m else label
         extra = m.group("extra") if m else None
         if soort not in RELATIES:
@@ -128,7 +170,7 @@ def lees_tabel(pad: Path, body: str, index_op_pad: dict[Path, str]) -> list[Rela
         gericht = soort == "associatie" and extra == "gericht"
         toegang = extra if soort == "toegang" else None
         if soort == "toegang" and toegang not in TOEGANG:
-            fouten.append(f"toegang zonder geldige soort ({'/'.join(TOEGANG)})")
+            fouten.append(f"toegang zonder geldige handeling of verantwoordelijkheid ({', '.join(TOEGANG[:-3])})")
         gelinkt = gam_gemeen.link(rij.get("Naar", ""))
         if gelinkt is None:
             fouten.append("kolom 'Naar' bevat geen link")
@@ -345,17 +387,53 @@ def voorstel(element_id: str, data: dict, wiki_root: Path = WIKI_ROOT) -> list[K
 SPECIALISATIE_WW = ("is een soort", "is een bijzondere vorm van", "is een vorm van", "is een")
 DEEL_GEHEEL_OMGEKEERD = ("maakt deel uit van", "is onderdeel van", "onderdeel van", "deel van")
 SAMENSTELLING_WW = ("bestaat uit", "is samengesteld uit")
-SCHRIJVEN_WW = ("levert op", "maakt", "stelt vast", "neemt", "legt vast", "wijzigt", "beëindigt", "verleent", "weigert", "trekt in",
-                "registreert", "produceert", "levert op", "genereert", "actualiseert")
-LEZEN_WW = ("vereist", "gebruikt", "raadpleegt", "toetst", "beoordeelt", "controleert", "leest", "bekijkt")
 TRIGGER_WW = ("leidt tot", "zet in gang", "start", "is aanleiding voor", "wordt gevolgd door")
 TRIGGER_OMGEKEERD = ("volgt op", "is het gevolg van")
 STROOM_WW = ("levert aan", "geeft door aan", "stuurt naar", "draagt over aan")
 VERVULLEN_WW = ("vervult", "treedt op als", "fungeert als", "is aangewezen als", "neemt de rol")
+# Werkwoord → handeling (gedrag op een object); de eerste passende handeling in deze volgorde wint.
+HANDELING_WW = {
+    "vernietigen": ("vernietigt",),
+    "overbrengen": ("brengt over",),
+    "bewaren": ("bewaart", "archiveert"),
+    "beëindigen": ("beëindigt", "trekt in", "heft op", "verklaart vervallen", "doet vervallen"),
+    "verstrekken": ("verstrekt", "levert aan", "zendt", "stuurt", "maakt bekend", "publiceert"),
+    "bijwerken": ("wijzigt", "actualiseert", "verlengt", "werkt bij", "onderhoudt", "ruimt", "graaft op", "bezorgt",
+                  "zet bij", "verstrooit", "schrijft over", "geschiedt in"),
+    "registreren": ("levert op", "maakt", "stelt vast", "stelt op", "neemt", "legt vast", "verleent", "weigert",
+                    "registreert", "produceert", "genereert", "ontvangt", "leidt tot", "vestigt"),
+    "raadplegen": ("vereist", "gebruikt", "raadpleegt", "toetst", "beoordeelt", "controleert", "leest", "bekijkt",
+                   "betreft", "begint met", "schouwt", "geschiedt op"),
+}
+# Werkwoord → verantwoordelijkheid (rol op een object); volgorde: specifiek vóór algemeen.
+VERANTWOORDELIJKHEID_WW = {
+    "bronhouder": ("houdt bij",),
+    "toezichthouder": ("houdt toezicht", "ziet toe"),
+    "houder": ("houdt in stand", "houdt", "heeft het uitsluitend recht"),
+    "beheerder": ("beheert", "heeft de dagelijkse leiding", "draagt zorg voor", "onderhoudt"),
+    "afnemer": ("ontvangt", "gebruikt", "raadpleegt"),
+    "partij": ("heeft", "sluit", "legt met"),
+}
 
 
 def _bevat(werkwoord: str, lijst) -> bool:
     return any(w in werkwoord for w in lijst)
+
+
+def handeling_van(werkwoord: str) -> str:
+    for handeling, lijst in HANDELING_WW.items():
+        if _bevat(werkwoord, lijst):
+            return handeling
+    return "bijwerken"
+
+
+def verantwoordelijkheid_van(werkwoord: str, doel_type: str) -> str | None:
+    for naam, lijst in VERANTWOORDELIJKHEID_WW.items():
+        if naam == "partij" and doel_type != "contract":
+            continue
+        if _bevat(werkwoord, lijst):
+            return naam
+    return None
 
 
 def van_bron(bron_type: str, doel_type: str, werkwoord: str) -> dict:
@@ -376,7 +454,7 @@ def van_bron(bron_type: str, doel_type: str, werkwoord: str) -> dict:
         return {"relatie": relatie, "gericht": gericht, "toegang": toegang, "omgedraaid": omgedraaid, "reden": reden}
 
     def toegang_van(ww):
-        return "schrijven" if _bevat(ww, SCHRIJVEN_WW) else "lezen" if _bevat(ww, LEZEN_WW) else "lezen-schrijven"
+        return handeling_van(ww)
 
     if _bevat(w, SPECIALISATIE_WW) and toegestaan("specialization", bron_type, doel_type):
         return uit("specialization", "'is een' tussen gelijke typen")
@@ -389,18 +467,32 @@ def van_bron(bron_type: str, doel_type: str, werkwoord: str) -> dict:
     if cb == cd == "actief":
         if _bevat(w, VERVULLEN_WW):
             return uit("assignment", "actor vervult rol")
+        if bron_type == "business-interface" and doel_type == "business-role":
+            return uit("serving", "kanaal bedient rol")
         return uit("association", f"'{w}' tussen partijen is geen toewijzing; associatie", gericht=True)
-    if cb == "actief" and cd == "gedrag":
+    if bron_type == "business-actor" and cd in ("gedrag", "passief"):
+        return uit("association", "een actor hangt via een rol aan gedrag en objecten; associatie, rol voorleggen",
+                   gericht=True)
+    if bron_type == "business-interface" and doel_type == "business-service":
+        return uit("assignment", "kanaal ontsluit dienst")
+    if cb == "actief" and cd == "gedrag" and doel_type != "business-service":
         return uit("assignment", "partij voert uit")
-    if cb == "gedrag" and cd == "passief" and bron_type != "business-event":
+    if cb == "actief" and cd == "passief":
+        naam = verantwoordelijkheid_van(w, doel_type)
+        if naam:
+            return uit("access", f"verantwoordelijkheid {naam}", toegang=naam)
+        return uit("association", f"'{w}' is een handeling van de rol: koppel via het proces (toewijzing)", gericht=True)
+    if cb == "gedrag" and cd == "passief" and bron_type not in ("business-event", "business-service"):
         return uit("access", "gedrag gebruikt of maakt een object", toegang=toegang_van(w))
-    if cb == "passief" and cd == "gedrag" and doel_type != "business-event":
+    if cb == "passief" and cd == "gedrag" and doel_type not in ("business-event", "business-service"):
         return uit("access", "object wordt door gedrag gebruikt of gemaakt", omgedraaid=True, toegang=toegang_van(w))
     if _bevat(w, TRIGGER_OMGEKEERD) and cb == cd == "gedrag":
         return uit("triggering", "A volgt op B", omgedraaid=True)
     if cb == cd == "gedrag":
         if bron_type == "business-event" or doel_type == "business-event" or _bevat(w, TRIGGER_WW):
             return uit("triggering", "gebeurtenis of opeenvolging")
+        if (bron_type, doel_type) == ("business-function", "business-process"):
+            return uit("serving", "functie bedient proces")
         if doel_type == "business-service" and bron_type != "business-service":
             return uit("realization", "gedrag realiseert een dienst")
         if bron_type == "business-service":
@@ -512,7 +604,7 @@ def markdown_rijen(element_id: str, kandidaten: list[Kandidaat], wiki_root: Path
         naar = f"[{doel.meta.get('naam', k.doel)}]({gam_gemeen.relatief(van, doel.pad)})" if doel else k.doel
         label = terug[k.relatie] + (" (gericht)" if k.gericht and k.relatie == "association" else "")
         if k.relatie == "access":
-            label += f" ({k.toegang or 'lezen-schrijven'})"
+            label += f" ({k.toegang or 'bijwerken'})"
         bron = ", ".join(gam_gemeen.bronnen_als_link(van, b, wiki_root) for b in k.bronnen) + (f" ({k.vindplaats})" if k.vindplaats else "")
         regels.append(f"| {label} | {naar} | {k.naam} | {k.kardinaliteit} | {k.grondslag} | {', '.join(k.ggm_relaties)} | {bron} |")
     return "\n".join(regels) + "\n"

@@ -1,6 +1,6 @@
 ---
 id: verval-van-het-grafrecht
-type: bedrijfsgebeurtenis
+type: gebeurtenis
 status: goedgekeurd
 naam: Verval van het grafrecht
 archimate_type: business-event
