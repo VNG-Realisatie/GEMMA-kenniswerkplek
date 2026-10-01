@@ -120,7 +120,7 @@ def add(
             "uitgever": uitgever,
             "datum": datum,
             "versie": versie,
-            "pad": str(dest_original.relative_to(repo_root)),
+            "pad": dest_original.relative_to(repo_root).as_posix(),
             "hash": bron_hash,
             "tags": tags,
             **{

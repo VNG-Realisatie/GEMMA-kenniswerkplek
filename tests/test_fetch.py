@@ -99,3 +99,10 @@ def test_add_from_url_uses_fetched_content(tmp_path, repo, monkeypatch):
     assert entry["url"] == "https://example.org/p"
     assert entry["opgehaald"]
     assert (root / "sources" / "raw" / "2026-web-parkeren.html").exists()
+
+
+def test_raw_text_download_keeps_extension_from_url():
+    xml = fetch.Opgehaald(b"<model/>", "text/plain", "https://raw.githubusercontent.com/org/repo/main/export/Over%20GEMMA.xml")
+    assert fetch.extension_for(xml) == ".xml"
+    tekst = fetch.Opgehaald(b"tekst", "text/plain", "https://example.org/bestand")
+    assert fetch.extension_for(tekst) == ".txt"

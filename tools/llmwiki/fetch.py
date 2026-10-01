@@ -10,6 +10,7 @@ import re
 import urllib.request
 from dataclasses import dataclass
 from html.parser import HTMLParser
+from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
 USER_AGENT = "llmwiki-source-add/0.1 (+https://github.com/)"
@@ -41,6 +42,10 @@ class Opgehaald:
     inhoud: bytes
     content_type: str
     url: str
+
+
+# Extensies van tekstbestanden die als text/plain worden geserveerd, maar hun eigen extensie houden.
+TEKST_EXTENSIES = (".xml", ".json", ".csv", ".md", ".txt", ".yaml", ".yml")
 
 
 def resolve_url(url: str) -> str:
@@ -87,7 +92,9 @@ def extension_for(opgehaald: Opgehaald) -> str:
     if opgehaald.content_type in ("text/markdown", "text/x-markdown"):
         return ".md"
     if opgehaald.content_type == "text/plain":
-        return ".txt"
+        # Een ruwe download (bijv. raw.githubusercontent.com) is altijd text/plain; neem dan de extensie uit de URL.
+        url_ext = Path(urlparse(opgehaald.url).path).suffix.lower()
+        return url_ext if url_ext in TEKST_EXTENSIES else ".txt"
     return ".html"
 
 
