@@ -1,7 +1,7 @@
 ---
 id: gegevensrollen
 type: analyse
-titel: Toegang tot een bedrijfsobject: verantwoordelijkheden en handelingen
+titel: 'Toegang tot een bedrijfsobject: verantwoordelijkheden en handelingen'
 bijgewerkt: '2026-10-01'
 bronnen: [2026-bzk-rollen-stelsel-basisregistraties, 2026-rijk-wet-bag-bwbr0023466, 2026-rijk-wet-bgt-bwbr0034026, 2026-rijk-wet-brp-bwbr0033715, 2026-rijk-wet-woz-bwbr0007119, 2026-rijk-handelsregisterwet-2007-bwbr0021777, 2015-rijk-wmo, 2026-rijk-wet-suwi-bwbr0013060, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995, 2026-vng-over-gemma, 2026-vng-gemma-2026-07-01]
 ---
