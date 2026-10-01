@@ -22,17 +22,19 @@ Er is geen run en geen kladblok: alles staat in de werkboom en is te zien in Git
 
 ## Stappen
 
-| # | Stap | Wie | Hoe |
-|---|---|---|---|
-| 1 | Onderwerp | AI met redacteur | Werk altijd vanuit één onderwerp; de wiki-workflow zegt waar het staat |
-| 2 | Bronnen en bronanalyse | AI | `wiki-ingest` (laag 1 en 2, en de domein-lens); kernpunten bespreken met de redacteur |
-| 3 | Beoordelen | AI | De beoordelen-skill van de wiki: per begrip een beoordeling. Lees eerst de besluiten die de redacteur al nam |
-| 4 | Afleiden en renderen | script | Het afleid-script van de wiki (`curation.afleiden`). Een fout los je op in de beoordeling; een waarschuwing beoordeel je inhoudelijk |
-| 5 | Voorleggen | AI → redacteur | Wat het afleid-script als open markeert, één vraag tegelijk in de chat: context, argumenten voor en tegen, advies. Het antwoord komt als besluit in de beoordeling; daarna stap 4 |
-| 6 | Bekijken | redacteur | `llmwiki promote plan [--onderwerp <id>]`; toon de samenvatting in de chat. De redacteur leest de pagina's en de wijzigingen in Source Control |
-| 7 | Akkoord | redacteur | De redacteur typt letterlijk AKKOORD. "Prima" of "ziet er goed uit" is geen akkoord; vraag dan opnieuw |
-| 8 | Vastleggen | script | `llmwiki promote apply --akkoord-woord AKKOORD`. Het harness vraagt de redacteur om een klik; omzeil die niet |
-| 9 | Commit | redacteur of AI | Beoordelingen, pagina's en `log.md` samen |
+| # | Stap | Wie | Denkniveau | Hoe |
+|---|---|---|---|---|
+| 1 | Onderwerp | AI met redacteur | middel | Werk altijd vanuit één onderwerp; de wiki-workflow zegt waar het staat |
+| 2 | Bronnen en bronanalyse | AI | middel | `wiki-ingest` (laag 1 en 2, en de domein-lens); kernpunten bespreken met de redacteur |
+| 3 | Beoordelen | AI | hoog | De beoordelen-skill van de wiki: per begrip een beoordeling. Lees eerst de besluiten die de redacteur al nam |
+| 4 | Afleiden en renderen | script | hoog | Het afleid-script van de wiki (`curation.afleiden`). Een fout los je op in de beoordeling; een waarschuwing beoordeel je inhoudelijk |
+| 5 | Voorleggen | AI → redacteur | hoog | Wat het afleid-script als open markeert, één vraag tegelijk in de chat: context, argumenten voor en tegen, advies. Het antwoord komt als besluit in de beoordeling; daarna stap 4 |
+| 6 | Bekijken | redacteur | laag | `llmwiki promote plan [--onderwerp <id>]`; toon de samenvatting in de chat. De redacteur leest de pagina's en de wijzigingen in Source Control |
+| 7 | Akkoord | redacteur | laag | De redacteur typt letterlijk AKKOORD. "Prima" of "ziet er goed uit" is geen akkoord; vraag dan opnieuw |
+| 8 | Vastleggen | script | laag | `llmwiki promote apply --akkoord-woord AKKOORD`. Het harness vraagt de redacteur om een klik; omzeil die niet |
+| 9 | Commit | redacteur of AI | laag | Beoordelingen, pagina's en `log.md` samen |
+
+Het denkniveau en wat het Model bij een overgang doet, staan in `AGENTS.md` (Werkwijze). Stap 3 tot en met 5 zijn één lus en houden hetzelfde niveau; zo wisselt het niveau twee keer per update: na de bronanalyse omhoog, na het voorleggen omlaag.
 
 `llmwiki promote apply` weigert als er na de samenvatting iets is gewijzigd; maak dan een nieuw plan. Het zet de status `goedgekeurd` en schrijft per element een regel in `log.md` met de hash van de inhoud van de beoordeling. Een inhoudelijke wijziging maakt een goedgekeurd element via het afleid-script weer `review`; een andere opmaak of een bijgewerkt model niet.
 
