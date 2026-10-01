@@ -22,7 +22,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
 
 ## Werkwijze
 
-1. **Stap 0: welk begrip?** Bepaal vóór de kenmerken of het woord een synoniem is van een bestaand element (of van een begrip in deze run), en of dezelfde naam al voor een ander begrip bestaat: in de wiki, het GGM (`tools/ggm.py naamgenoten <naam>`), het GEMMA-model (`tools/gemma.py zoek <naam>`) of een bron. Vul `synoniem_van` of `homoniem_van` in. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
+1. **Stap 0: welk begrip?** Bepaal vóór de kenmerken of het woord een synoniem is van een bestaand element (of van een begrip dat nu wordt beoordeeld), en of dezelfde naam al voor een ander begrip bestaat: in de wiki, het GGM of het GEMMA-model (`tools/ggm.py kandidaten <naam>`, `tools/gemma.py kandidaten <naam>`) of een bron. Vul `synoniem_van` of `homoniem_van` in. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
 2. Beantwoord **alle** kenmerken uit de vragenlijst hieronder, ook als ze niet bij het vermoedelijke type horen (dan nee). Gebruik de bronnen in de volgorde van de bronvoorrang (wet → informatiemodel → beleid → overig). Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; staat die niet in de bronanalyse, vul dan eerst de bronanalyse aan.
 3. Let op:
    - *zelfstandige specialisatie*: kijk eerst naar boven. Zoek de generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek`) en noteer de keten (bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Het kenmerk gaat over de "is een"-relatie, niet over herkomst uit wet of beleid; zie `gemma-archimate-model-assess` §3.
@@ -34,7 +34,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
 4. Vul waar nodig de extra velden in:
    - `genoemd_begrip` bij *slechts eigenschap*, *eigen identiteit* nee (het geheel), *zelfstandige specialisatie* nee (het bredere begrip) of *waarneembare vorm* (het object);
    - `archimate_buiten_model` bij *buiten dit model*.
-5. Leg de beoordeling vast volgens `schemas/beoordeling.schema.json` en draai `uv run python tools/bepaal_type.py evalueer <bestand> --schrijf`. De uitkomst is bindend.
+5. Leg de beoordeling vast in `beoordelingen/begrippen/<id>.yaml` (schema `schemas/beoordeling.schema.json`, zie skill `gemma-archimate-model-beoordelen`) en draai `uv run python tools/afleiden.py`. De uitkomst is bindend.
 6. Is de uitkomst `conflict` of staat `voorleggen` aan, dan leg je het begrip voor aan de redacteur, met de redenen uit de uitkomst. Pas je antwoorden niet aan om een conflict weg te werken, tenzij een antwoord aantoonbaar fout was.
 
 ## ArchiMate-typen in dit model

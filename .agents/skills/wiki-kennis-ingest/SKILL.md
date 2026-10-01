@@ -33,4 +33,4 @@ Een document kan later input worden voor een sync- of curatie-wiki: `llmwiki sou
 
 ## Grenzen
 
-Publiceert nooit rechtstreeks naar een externe site. Een wijziging die daarvan afhangt, is een gewone bewerking in de betreffende sync-wiki, via skill `wiki-edit` — niet vanuit deze skill.
+Publiceert nooit rechtstreeks naar een externe site. Een wijziging die daarvan afhangt, is een gewone bewerking in de betreffende sync-wiki, via skill `wiki-sync-edit` — niet vanuit deze skill.

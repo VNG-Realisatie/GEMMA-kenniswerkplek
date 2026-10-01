@@ -17,7 +17,7 @@ Zie [ARCHITECTURE.md](ARCHITECTURE.md) voor het architectuur-kompas en [docs/ond
 - Publiceren naar GEMMA Online (redactie en staging). Inloggen en ophalen met de inloggegevens uit omgevingsvariabelen is getest en werkt (zie *Inloggen op GEMMA Online*).
 - De MCP-verbinding met GEMMA Online.
 - Codex- en Cursor-specifieke discovery (zie verificatiepunten V6 t/m V11 in `docs/onderbouwing.md` sectie 8).
-- De volledige `wiki-edit`-workflow (pull → bewerken → plan → akkoord → publish) tegen een echte testpagina op staging.
+- De volledige `wiki-sync-edit`-workflow (pull → bewerken → plan → akkoord → publish) tegen een echte testpagina op staging.
 
 ## Installatie voor redacteuren
 

@@ -13,7 +13,7 @@ Drie soorten, benoemd naar hun doel:
 | Soort (`wiki.yaml` `type:`) | Doel | Waar staat de waarheid | Laatste stap |
 |---|---|---|---|
 | `sync` | Een MediaWiki-site beheren, bijvoorbeeld GEMMA Online | Op de site | Publiceren na akkoord (git-diff-review) |
-| `curation` | Gestructureerde kennis opbouwen, optioneel tot een export (ArchiMate, UML/XMI, CSV, MediaWiki) | In de repository | Kandidaten goedkeuren (`kandidaat` → `review` → `goedgekeurd`), en met een ingevuld `exports:`-blok: daarna exporteren per doel |
+| `curation` | Gestructureerde kennis opbouwen, optioneel tot een export (ArchiMate, UML/XMI, CSV, MediaWiki) | In de repository: het oordeel van de AI in beoordelingen, pagina's gegenereerd door scripts | Goedkeuren met AKKOORD in de chat (`kandidaat` → `review` → `goedgekeurd`), en met een ingevuld `exports:`-blok: daarna exporteren per doel |
 | `knowledge-base` | Ongestructureerde kennis opbouwen: notities, adviezen, ontwerpen, architectuurdocumenten — eigen eindresultaten | In de repository | Geen — review via een gewone `git diff`/commit |
 
 De soorten vormen samen een keten. Wat de ene wiki oplevert, wordt een bron voor de volgende:
@@ -93,7 +93,7 @@ llm-wikis/                    open deze map in Obsidian
     │   ├── log.md            logboek: wie keurde wat goed   (alleen aanvullen)
     │   ├── voortgang.md      overzicht van open werk        (automatisch)
     │   └── voorstellen/
-    └── gemma-archimate-model/  type curation: GEMMA-architectuurelementen (eigen ARCHITECTURE.md)
+    └── gemma-archimate-model/  type curation met beoordelingen en gegenereerde pagina's (eigen ARCHITECTURE.md)
 ```
 
 De mapnamen van een curatie-wiki (`onderwerpen/`, `bronnen/`, `kandidaten/`) zijn standaardwaarden; een wiki kan eigen namen kiezen in `wiki.yaml` (`page_types.<type>.dir`).
@@ -104,7 +104,7 @@ Links tussen pagina's zijn gewone relatieve Markdown-links; ze werken in Obsidia
 
 ### Voorbeeld: een pagina bijwerken op GEMMA Online (sync)
 
-De redacteur vraagt: *"Werk de pagina Zaakgericht werken bij met deze wijziging, met wiki-edit."*
+De redacteur vraagt: *"Werk de pagina Zaakgericht werken bij met deze wijziging, met wiki-sync-edit."*
 
 | Stap | Wat gebeurt er | Wie |
 |---|---|---|
@@ -117,22 +117,21 @@ De redacteur vraagt: *"Werk de pagina Zaakgericht werken bij met deze wijziging,
 
 Een tussentijdse wijziging van diezelfde pagina op de site (door iemand anders) wordt bij PUBLISH herkend en geweigerd — niet stilzwijgend overschreven.
 
-### Voorbeeld: een beleidsnota verwerken in een curatie-wiki
+### Voorbeeld: een onderwerp bijwerken in een curatie-wiki
 
-De redacteur vraagt: *"Verwerk deze nota voor onderwerp zaakgericht werken met opzet2-update-wiki."*
+De redacteur vraagt: *"Verwerk deze nota voor onderwerp lijkbezorging."* De wiki-workflow volgt `wiki-curatie-update`. Uitgangspunt: **zacht oordeel, harde vorm**. De AI geeft het oordeel per begrip; scripts van de wiki leiden af wat vast kan en maken alle pagina's; de redacteur beoordeelt de pagina's.
 
 | Stap | Wat gebeurt er | Wie |
 |---|---|---|
-| INGEST | Nieuwe bron: origineel en Markdown-versie in `sources/raw/`, intake in `sources/index/`. Bestaat de intake al, dan wordt die hergebruikt. Daarna de domein-lens in `bronnen/<onderwerp>/` | Gereedschap en AI |
-| ASSESS | Welke kandidaat-begrippen moeten veranderen, en waarom? | AI |
-| WRITE | Voorstellen voor nieuwe of gewijzigde kandidaten | AI |
-| VALIDATE | Controle op vorm, links, curatieregels | Gereedschap en AI |
-| Akkoord | Beoordelen van het promotievoorstel en akkoord geven | Redacteur |
-| PROMOTE | Kandidaat op `goedgekeurd` zetten en vastleggen in `log.md` | Gereedschap, na goedkeuring |
+| Bronnen | Origineel en Markdown-versie in `sources/raw/`, intake in `sources/index/`, domein-lens (bronanalyse) in de wiki | Gereedschap en AI |
+| Beoordelen | Per begrip een beoordeling (YAML): kenmerken met bron, naam, definitie, beschrijving, match op betekenis, relaties | AI |
+| Afleiden en renderen | Type en status uit de beslistabel, letterlijke modelgegevens, harde controles; daarna alle pagina's en een overzicht van wat wacht op akkoord | Scripts van de wiki |
+| Voorleggen | Wat de scripts als open markeren, één vraag tegelijk in de chat; het antwoord wordt een besluit in de beoordeling | AI en redacteur |
+| Bekijken | `llmwiki promote plan`: samenvatting in de chat; de redacteur leest de pagina's en de wijzigingen in Source Control | Redacteur |
+| Akkoord | Het woord AKKOORD in de chat, daarna één klik op "toestaan" | Redacteur |
+| Vastleggen | `llmwiki promote apply`: status `goedgekeurd`, een regel per element in `log.md`, pagina's opnieuw gerenderd | Gereedschap, na goedkeuring |
 
-Na elke stap wordt het tussenresultaat in het kladblok bewaard. Wordt het werk onderbroken, dan pakt de AI het later op vanaf de laatste afgeronde stap. Een afgebroken taak laat niets achter in de wiki. Voor beide soorten geldt: de publicatie/promotie staat na afloop in `log.md` — dat is het blijvende verslag, niet op de externe site.
-
-Bij een Markdown-wiki (curation) zijn de bron- en kandidaatpagina's zelf het archief. De laatste stap heet daar **goedkeuren**: kandidaten gaan van `kandidaat` via `review` naar `goedgekeurd`. De AI mag een kandidaat ter review aanbieden, maar alleen de redacteur keurt goed, via dezelfde twee smaken als bij publiceren. Elke goedkeuring komt in `log.md`. Een pagina die op `goedgekeurd` staat zonder regel in `log.md`, wordt bij opslaan in Git geweigerd.
+Er is geen run en geen kladblok: alles staat in de werkboom en is te zien in Git. Het akkoord hoort bij de inhoud van de beoordeling; een andere opmaak of een bijgewerkt model vraagt geen nieuw akkoord, een inhoudelijke wijziging wel. Een pagina met `goedgekeurd` zonder overeenkomende regel in `log.md`, of een pagina die afwijkt van wat de scripts maken, wordt bij opslaan in Git geweigerd. De publicatie of goedkeuring staat na afloop in `log.md` — dat is het blijvende verslag.
 
 ## 5. Spelregels
 
@@ -145,16 +144,16 @@ Bij een Markdown-wiki (curation) zijn de bron- en kandidaatpagina's zelf het arc
 | Gereedschap | Haalt pagina's op, controleert, publiceert, legt vast | Inhoudelijk oordelen |
 | AI-omgeving | Vraagt de redacteur om een klik voordat er gepubliceerd wordt | — |
 
-### Akkoord geven: twee smaken
+### Akkoord geven
 
-Per wiki staat in `wiki.yaml` welke smaak geldt.
+Per wiki staat in `wiki.yaml` welke vorm geldt.
 
-- **Smaak A, vrijgave via document.** Geschikt voor grotere of periodieke wijzigingen en voor exports naar het architectuurmodel. De AI zet een publicatievoorstel klaar in `voorstellen/`: een plan met per pagina een samenvatting en een besluit (goedkeuren of schrijven, overslaan, aanpassen), de open vragen, en de volledige diffs in een apart detailbestand. De redacteur beoordeelt en wijzigt het plan in de eigen editor. Staat er `aanpassen`, dan verwerkt de AI de opmerkingen en maakt een nieuw plan. Is alles naar wens, dan zet de redacteur `akkoord_voor_publicatie` op `ja`, vult een naam in en vraagt de AI het plan uit te voeren. Is de inhoud daarna nog veranderd, dan geldt het akkoord niet meer.
-- **Smaak B, bevestigingswoord in de chat.** Geschikt voor dagelijks redactiewerk. De AI toont een samenvatting en vraagt om het woord **AKKOORD**. "Prima" of "ziet er goed uit" is geen akkoord.
+- **In de chat** (`approval: chat`). De AI toont een samenvatting en vraagt om het woord **AKKOORD**. "Prima" of "ziet er goed uit" is geen akkoord. Een curatie-wiki met beoordelingen gebruikt altijd deze vorm: de redacteur beoordeelt de gerenderde pagina's en de wijzigingen in Git, niet een voorstelbestand. Ook geschikt voor dagelijks redactiewerk in een sync-wiki.
+- **Via een document** (`approval: document`), alleen bij publiceren naar een externe site. De AI zet een publicatievoorstel klaar in `voorstellen/`: per pagina een samenvatting en een besluit (publiceren, overslaan, aanpassen), en de volledige diffs in een apart detailbestand. De redacteur zet `akkoord_voor_publicatie` op `ja`, vult een naam in en vraagt de AI het plan uit te voeren.
 
-In beide smaken vraagt de AI-omgeving daarna nog om één klik op "toestaan". Die klik kan de AI niet zelf geven; dat is de echte beveiliging.
+In beide vormen vraagt de AI-omgeving daarna nog om één klik op "toestaan". Die klik kan de AI niet zelf geven; dat is de echte beveiliging.
 
-**Daarom: zet automatische goedkeuring in de AI-omgeving uit wanneer je publiceert.** Met automatische goedkeuring vervalt die klik.
+**Daarom: zet automatische goedkeuring in de AI-omgeving uit wanneer je publiceert of goedkeurt.** Met automatische goedkeuring vervalt die klik.
 
 ### Werkplek eerst
 
@@ -183,7 +182,7 @@ Elke vaardigheid (Skill) is een map met een `SKILL.md`. In de kop staat in `meta
 | `requires-skills`, `requires-tools` | namen | Van welke vaardigheden en welk gereedschap deze vaardigheid afhangt; `llmwiki lint` controleert dit. |
 | `reads`, `writes` | artefacten | Wat de stap leest en oplevert (bijv. `assessment`, `changeset`). |
 
-Een wiki-workflow is dun: hij volgt een gedeelde workflow (`wiki-update`, `wiki-edit`) en voegt per fase op een **uitbreidingspunt** eigen vaardigheden of controles toe. Naslag die een vaardigheid nodig heeft, staat in haar map onder `references/`.
+Een wiki-workflow is dun: hij volgt een gedeelde workflow (`wiki-curatie-update`, `wiki-sync-edit`) en voegt per stap op een **uitbreidingspunt** eigen vaardigheden, scripts of controles toe. Naslag die een vaardigheid nodig heeft, staat in haar map onder `references/`.
 
 Gereedschap (code) staat op drie plekken:
 
@@ -210,7 +209,7 @@ De map `scripts/` in de hoofdmap is alleen voor het eenmalig inrichten van de we
 | Tool | Programma of functie buiten het model |
 | MCP | Standaardkoppeling tussen de AI-omgeving en de MediaWiki-site |
 | Context | Wat de AI op dit moment "ziet" |
-| State | Waar een taak staat; bewaard in het kladblok |
+| State | Waar een taak staat: bij een curatie-wiki in de werkboom (beoordelingen), bij een sync-wiki in het kladblok |
 | Resultaat | Bijgewerkte pagina's, verslagen en na akkoord de publicatie |
 
 ## 7. Verder lezen

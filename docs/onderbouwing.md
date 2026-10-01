@@ -891,6 +891,25 @@ Grenzen:
 
 **Afgewezen.** Een apart besluitbestand naast het voorstel (twee bestanden om bij te werken) en besluiten in de frontmatter (onleesbaar bij tientallen pagina's).
 
+Voor curatie-wiki's is dit voorstel vervangen door 5.13c; voor sync-wiki's met `approval: document` geldt het nog.
+
+#### 5.13c Zacht oordeel, harde vorm (2026-10-01)
+
+**Aanleiding.** Ook met het plan uit 5.13b bleef beoordelen zwaar. De concepten stonden in het kladblok (`.work/`, niet in Git), dus de redacteur kon de wijzigingen niet in de eigen editor of in Source Control zien. Akkoord kostte zeven handelingen op drie plekken: het voorstel lezen, de besluitkolom invullen, de links naar `.work/` en het detailbestand openen, de akkoordvelden zetten, de AI vragen, klikken en committen. De elementpagina's waren grotendeels data die de AI met de hand opmaakte, deels dubbel (kenmerken in de frontmatter én als tabel), met veel vormregels en controles. En omdat het akkoord bij de paginahash hoorde, maakte elke vormwijziging goedgekeurde pagina's weer `review`.
+
+**Keuze.** De AI levert alleen het oordeel per begrip, in een beoordeling (YAML) in de werkboom. Scripts van de wiki leiden daaruit af wat vast kan (type uit de beslistabel, status, letterlijke modelgegevens, paginapad; harde controles en zachte signalen) en maken alle leesbare pagina's en overzichten, deterministisch. De redacteur beoordeelt die pagina's (preview en Source Control) en een overzicht van wat wacht op akkoord, en geeft akkoord met het woord AKKOORD in de chat; `llmwiki promote apply` zet daarna de status en schrijft `log.md`, na de klik in het harness. Het akkoord hoort bij de inhoudshash van de beoordeling, niet van de pagina.
+
+- Geen run en geen kladblok voor curatie: de werkboom is de toestand, zichtbaar in Git. Hervatten is `git status`; afbreken is de wijzigingen terugdraaien.
+- Wat het render-script garandeert (links naar de domein-lens, relaties in beide richtingen, geen verwijzingen in de frontmatter, de vorm), is geen regel meer voor de AI. De regels van een wiki gaan over het oordeel en hebben een naam in plaats van een code.
+- Voorleggen gaat in de chat, één vraag tegelijk, met context, argumenten en advies; het antwoord wordt een besluit in de beoordeling dat de redenen noemt die het dekt. Zo heeft een besluit van de redacteur een vaste route naar `review`.
+- De pre-commit-controles: `render-check` (elke pagina gelijk aan de render van de beoordelingen) en `goedgekeurd-guard` (elke `goedgekeurd` met een regel in `log.md` met de inhoudshash).
+
+**Gevolg voor 5.11.** Artefacten per fase en overdracht naar subagents via artefacten gelden alleen nog voor sync-wiki's. Een subagent krijgt bij curatie paden in de werkboom mee. Een afgebroken taak laat bij curatie wel iets achter in de werkboom; terugdraaien in Git ruimt het op.
+
+**Waarom zo.** De redacteur ziet wat er verandert op de plek waar hij ook ander werk bekijkt, en hoeft het alleen te lezen, niet te bewerken. Wat een programma kan (principe 6), doet een programma: de AI schrijft geen opmaak, links of statussen meer, en kan daar dus ook geen fouten in maken. Een andere opmaak vraagt geen nieuw akkoord, omdat het akkoord over de inhoud gaat. Het werkt in elk harness: YAML, Markdown, Git en de CLI.
+
+**Afgewezen.** Concepten in de werkboom laten schrijven door de AI met het oude voorstel erbij (de diffs bleven ruis van handmatige opmaak); pagina's pas na het akkoord renderen (de redacteur zou YAML moeten lezen in plaats van pagina's); oude pagina's omzetten naar beoordelingen (de criteria waren zo veranderd dat bijna alles opnieuw moest; de oude pagina's staan onder tag `voor-herbeoordeling`).
+
 ### 5.14 Een wiki als zelfstandig subproject openen
 
 **Gevolgen van de keuze van werkmap.**

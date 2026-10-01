@@ -85,11 +85,11 @@ Een verantwoordelijkheid zegt wat de rol ten opzichte van het object ís. Wat de
 
 Toelichting bij de keuzes:
 
-- **Houder in plaats van eigenaar.** De wetten spreken van *houden*, niet van eigendom. Eigendom van gegevens is juridisch geen gangbaar begrip, en "eigendom" is in deze wiki uitdrukkelijk geen argument [EL1]. De GEMMA-betekenis "is eigenaar van" valt onder houder.
+- **Houder in plaats van eigenaar.** De wetten spreken van *houden*, niet van eigendom. Eigendom van gegevens is juridisch geen gangbaar begrip, en "eigendom" is in deze wiki uitdrukkelijk geen argument (regel Beslistabel beslist). De GEMMA-betekenis "is eigenaar van" valt onder houder.
 - **Beheerder en verstrekker apart.** In de Wet BAG en de Wet WOZ houdt en beheert de Dienst de landelijke voorziening, en verstrekt de gemeente ook zelf aan eenieder (Wet BAG art. 32). Beheer (de voorziening werkt) en verstrekking (anderen krijgen de gegevens) zijn dus verschillende verantwoordelijkheden. De verantwoordelijkheid *beheerder* is iets anders dan de rol [Beheerder](../bedrijfsarchitectuur/rollen/beheerder.md) van een begraafplaats; die rol kan wel de verantwoordelijkheid beheerder hebben.
 - **Afnemer in plaats van raadpleger.** Afnemer is de wettelijke term, en draagt de plicht tot gebruik en terugmelding mee. Raadplegen is een handeling.
 - **Partij alleen bij een afspraak.** Een rol bij een contract heeft rechten en plichten, geen gegevensverantwoordelijkheid. Zonder deze naam blijft die relatie een associatie.
-- **Opdrachtgever hoort niet in deze reeks.** De opdrachtgever stuurt de verstrekker aan en heeft geen eigen toegang tot de gegevens; het is een relatie tussen partijen, en meestal een ministerie buiten het gemeentelijk perspectief [WC4].
+- **Opdrachtgever hoort niet in deze reeks.** De opdrachtgever stuurt de verstrekker aan en heeft geen eigen toegang tot de gegevens; het is een relatie tussen partijen, en meestal een ministerie buiten het gemeentelijk perspectief (regel Gemeentelijk perspectief).
 - **Verwerkingsverantwoordelijke is een aanduiding, geen aparte verantwoordelijkheid.** De wet wijst de verwerkingsverantwoordelijke aan voor de verwerking van persoonsgegevens; dat is meestal de houder (Wet BAG art. 4, Handelsregisterwet art. 3, Wmo art. 5.1.1 lid 7, regel 1844). Vermeld het in de kolom Naam als toevoeging, bijvoorbeeld "houder (verwerkingsverantwoordelijke)". De AVG definieert de verwerkingsverantwoordelijke als degene die "alleen of samen met anderen, het doel van en de middelen voor de verwerking van persoonsgegevens vaststelt", en laat het recht van een lidstaat toe te bepalen "wie de verwerkingsverantwoordelijke is" (AVG art. 4, regel 159). Wie namens die partij verwerkt, is verwerker (regel 165); dat is een toevoeging van dezelfde soort.
 - **Eén toegang per rol.** Vervult één actor meerdere rollen (de gemeente is houder, bronhouder én verstrekker van de BAG), dan krijgt elke rol haar eigen toegangsrelatie. Een rol krijgt alleen een pagina als de beslistabel dat zegt; de verantwoordelijkheid zelf is geen element.
 
@@ -98,18 +98,18 @@ Toelichting bij de keuzes:
 | Soort gegevensbron | Voorbeeld | Bruikbare namen | Beoordeling |
 |---|---|---|---|
 | Basisregistratie waarvan de gemeente houder of bronhouder is | BAG, BGT, BRP, WOZ | alle | Volledig van toepassing en wettelijk vastgelegd. Verplicht gebruik en terugmelding zijn handelingen van de afnemer. |
-| Basisregistratie waarvan de gemeente afnemer is | Handelsregister, BRK, BRV, BRI | afnemer; terugmelding als handeling | Van toepassing. Houder, bronhouder en verstrekker zijn ketenpartners (Kamer van Koophandel, Kadaster, RDW, Belastingdienst; rollenpagina regel 53-117); die krijgen alleen een actorpagina bij een structurele relatie [WC4]. |
+| Basisregistratie waarvan de gemeente afnemer is | Handelsregister, BRK, BRV, BRI | afnemer; terugmelding als handeling | Van toepassing. Houder, bronhouder en verstrekker zijn ketenpartners (Kamer van Koophandel, Kadaster, RDW, Belastingdienst; rollenpagina regel 53-117); die krijgen alleen een actorpagina bij een structurele relatie (regel Gemeentelijk perspectief). |
 | Wettelijk register buiten het stelsel, gehouden door de gemeente of een partner | register van begraven lijken (Wet op de lijkbezorging art. 27, regel 371) | houder, betrokkene, afnemer | Van toepassing. Houder, bronhouder en verstrekker vallen meestal samen: de wet noemt alleen een houder en maakt het register openbaar (regel 374). Er is geen plicht tot gebruik of terugmelding. |
 | Gegevensverwerking in het sociaal domein | Wmo-dossier; Suwinet | houder (verwerkingsverantwoordelijke), afnemer, betrokkene | Van toepassing. De wet wijst de verwerkingsverantwoordelijke aan: het college voor de Wmo (art. 5.1.1 lid 7, regel 1844), het UWV voor de polisadministratie die de gemeente via Suwinet afneemt (Wet SUWI art. 33, regel 862). |
 | Interne gemeentelijke administratie zonder eigen wet | zaakregistratie, subsidieadministratie, klantcontacten | houder, bronhouder, afnemer; beheerder bij een gedeelde voorziening | Van toepassing als ordeningsprincipe. De rollen worden toegekend binnen de gemeente (welke rol houdt bij, welke gebruikt), zonder wettelijke plicht tot gebruik of terugmelding. Grondslag van de relatie is dan de bron die de werkwijze beschrijft, niet een wet. |
-| Externe administratie van een aanbieder of partner | administratie van een Wmo-aanbieder; uitvaartondernemer | afnemer (gemeente), partij (bij een contract) | Beperkt. De administratie van de partner valt buiten het gemeentelijk perspectief [WC4]; alleen wat de gemeente ontvangt (verantwoording, opdracht) wordt een object met een gemeentelijke rol als afnemer. De Wmo maakt de aanbieder verwerkingsverantwoordelijke voor zijn eigen verwerking (art. 5.1.2, regel 1880). |
+| Externe administratie van een aanbieder of partner | administratie van een Wmo-aanbieder; uitvaartondernemer | afnemer (gemeente), partij (bij een contract) | Beperkt. De administratie van de partner valt buiten het gemeentelijk perspectief (regel Gemeentelijk perspectief); alleen wat de gemeente ontvangt (verantwoording, opdracht) wordt een object met een gemeentelijke rol als afnemer. De Wmo maakt de aanbieder verwerkingsverantwoordelijke voor zijn eigen verwerking (art. 5.1.2, regel 1880). |
 | Archief | archiefbescheiden van de gemeente | houder (zorgdrager), beheerder | Van toepassing. De zorgdrager is "degene die bij of krachtens de wet belast is met de zorg voor de archiefbescheiden" (Archiefwet art. 1, regel 56); voor gemeentelijke organen zijn dat burgemeester en wethouders (art. 30, regel 972). De gemeentelijke archiefbewaarplaats "wordt beheerd door een gemeentearchivaris" (art. 32, regel 1031): de verantwoordelijkheid beheerder. Zorgdrager wordt, net als verwerkingsverantwoordelijke, een toevoeging bij houder. |
 
 **Conclusie.** Vijf namen zijn breed bruikbaar voor elke gegevensbron: houder, bronhouder, beheerder, verstrekker en afnemer. Toezichthouder en betrokkene zijn situatief: toezicht is buiten de basisregistraties zelden apart geregeld, en betrokkene speelt alleen bij gegevens over personen. Partij is nodig voor afspraken. Bij kleine en interne bronnen vallen houder, bronhouder en verstrekker vaak samen bij één rol; modelleer dan alleen de rollen die in de bron te onderscheiden zijn.
 
 ## Gevolgen voor de bestaande relaties
 
-Een voorlopige indeling van de 21 relaties van een rol naar een object, volgens het besluit van 1 oktober. Elke wijziging wordt bij de herbeoordeling apart voorgelegd [EL9].
+Een voorlopige indeling van de 21 relaties van een rol naar een object, volgens het besluit van 1 oktober. Elke wijziging wordt bij de herbeoordeling apart voorgelegd (regel Per geval).
 
 | Rol | Werkwoord nu | Object | Voorstel |
 |---|---|---|---|
@@ -164,7 +164,7 @@ Waarom deze vorm:
 - **De twee reeksen controleren elkaar.** Een rol die bronhouder is van een object, hoort toegewezen te zijn aan gedrag dat dat object registreert of bijwerkt; een afnemer aan gedrag dat het raadpleegt; een verstrekker aan gedrag dat het verstrekt. Een object met *levenscyclus* ja hoort gedrag te hebben dat het registreert én beëindigt.
 - **Archiveren.** Bewaren, overbrengen en vernietigen zijn eigen handelingen (besluit 2026-10-01). Ze horen bij de zorgdrager, als toevoeging bij houder, en na overbrenging bij de beheerder van de archiefbewaarplaats.
 
-**Voorlopige indeling van de bestaande relaties.** Elke wijziging wordt bij de herbeoordeling apart voorgelegd [EL9].
+**Voorlopige indeling van de bestaande relaties.** Elke wijziging wordt bij de herbeoordeling apart voorgelegd (regel Per geval).
 
 | Gedrag | Werkwoord nu | Object | Toegang nu | Handeling |
 |---|---|---|---|---|

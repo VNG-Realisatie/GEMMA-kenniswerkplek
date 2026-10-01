@@ -1,6 +1,6 @@
 ---
 name: wiki-publish
-description: Zet het gevalideerde changeset om in een publicatie- of promotievoorstel en begeleid de menselijke gate. Alleen op expliciete opdracht van de gebruiker aanroepen, nooit impliciet.
+description: Zet de gevalideerde wijzigingen van een sync-wiki om in een publicatievoorstel en begeleid de menselijke gate. Alleen op expliciete opdracht van de gebruiker aanroepen, nooit impliciet.
 disable-model-invocation: true
 metadata:
   kind: capability
@@ -12,7 +12,7 @@ metadata:
 
 # Skill wiki-publish
 
-Doel: de GATE- en PUBLISH/PROMOTE-fase. Deze skill publiceert of promoveert nooit zelfstandig; dat gebeurt alleen na een expliciete menselijke handeling.
+Doel: de GATE- en PUBLISH-fase van `wiki-sync-edit`. Deze skill publiceert nooit zelfstandig; dat gebeurt alleen na een expliciete menselijke handeling. Een curatie-wiki met beoordelingen gebruikt deze skill niet: daar regelt `wiki-curatie-update` het akkoord (stap 6 tot 8).
 
 ## Stappen
 

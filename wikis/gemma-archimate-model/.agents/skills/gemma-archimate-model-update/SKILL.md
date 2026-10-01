@@ -1,34 +1,40 @@
 ---
 name: gemma-archimate-model-update
-description: Werk het GEMMA-architectuurmodel (bedrijfslaag) bij op basis van bronnen voor één onderwerp — bronanalyse, beoordeling van begrippen, elementpagina's, relaties en GGM-terugmeldingen — via de gedeelde werkstroom wiki-update met menselijke promotie. Gebruik voor elke inhoudelijke wijziging in deze wiki.
+description: Werk het GEMMA-architectuurmodel (bedrijfslaag) bij op basis van bronnen voor één onderwerp — bronanalyse, beoordeling per begrip, relaties en GGM-terugmeldingen; scripts maken de pagina's, de redacteur geeft akkoord in de chat. Gebruik voor elke inhoudelijke wijziging in deze wiki.
 metadata:
   kind: workflow
   scope: wiki
-  requires-skills: "wiki-update gemma-archimate-model-ingest gemma-archimate-model-assess gemma-archimate-model-criteria gemma-archimate-model-write"
-  requires-tools: "llmwiki python:tools/check_elementen.py"
+  requires-skills: "wiki-curatie-update gemma-archimate-model-ingest gemma-archimate-model-beoordelen gemma-archimate-model-criteria"
+  requires-tools: "llmwiki python:tools/afleiden.py python:tools/render.py python:tools/relaties.py python:tools/ggm.py python:tools/gemma.py"
 ---
 
 # Workflow gemma-archimate-model-update
 
-Volg skill `wiki-update` volledig. Deze workflow voegt alleen de uitbreidingen van deze wiki toe; hij herhaalt geen stappen. Werkmap: `wikis/gemma-archimate-model`.
+Volg skill `wiki-curatie-update`. Deze workflow vult de stappen in voor deze wiki. Werkmap: `wikis/gemma-archimate-model`. Er is geen run: alles staat in de werkboom en is te zien in Git. Hervatten = `git status` en `ter-beoordeling.md` lezen.
 
-## Starten
+## Stappen
 
-Werk altijd vanuit één onderwerp: `uv run python -m llmwiki run start --workflow gemma-archimate-model-update --onderwerp <onderwerp-id>`. De onderwerppagina staat in `begrippen/<onderwerp-id>.md`; bestaat die nog niet, maak haar dan eerst aan in overleg met de redacteur (zie `gemma-archimate-model-ingest`). De bronnen komen in de volgorde van de bronvoorrang (wet → informatiemodel → beleid → overig).
+| # | Stap | Wie | Hoe | Resultaat |
+|---|---|---|---|---|
+| 1 | Onderwerp | AI met redacteur | Bestaat `beoordelingen/onderwerpen/<onderwerp>.yaml` niet, maak het dan in overleg (naam, omschrijving als alinea's, bronnen, status `in-behandeling`) | onderwerp |
+| 2 | Bronnen en bronanalyse | AI | Skill `gemma-archimate-model-ingest`; daarna de kernpunten bespreken met de redacteur | `sources/`, `bronanalyses/<onderwerp>/` |
+| 3 | Beoordelen | AI | Skill `gemma-archimate-model-beoordelen`: per begrip een beoordeling met kenmerken, tekst, match, relaties en terugmeldingen; lees eerst `analyses/besluiten-redacteur.md` | `beoordelingen/begrippen/<id>.yaml`, `beoordelingen/terugmeldingen.yaml` |
+| 4 | Afleiden en renderen | script | `uv run python tools/afleiden.py`. Een fout lost de AI op in de beoordeling en draait opnieuw. Een waarschuwing beoordeelt de AI inhoudelijk: oplossen of toelichten | status, pagina's, `ter-beoordeling.md` |
+| 5 | Voorleggen | AI → redacteur | Elk begrip met open redenen (`afgeleid.open`, ook in `ter-beoordeling.md`) en elke open vraag één voor één in de chat: context, argumenten voor en tegen, advies. Het antwoord komt in `besluiten:` (datum, besluit, `gevolg`, en bij `opnemen` de redenen die het besluit dekt); daarna stap 4 | `kandidaat` → `review` of `afgewezen` |
+| 6 | Bekijken | redacteur | `uv run python -m llmwiki promote plan [--onderwerp <id>]` en de samenvatting in de chat tonen. De redacteur leest `ter-beoordeling.md`, de pagina's en de wijzigingen in Source Control. Wil de redacteur iets anders: aanpassen in de beoordeling, terug naar stap 4 | — |
+| 7 | Akkoord | redacteur | De redacteur typt AKKOORD. "Prima" of "ziet er goed uit" is geen akkoord; vraag dan opnieuw | — |
+| 8 | Vastleggen | script | `uv run python -m llmwiki promote apply --akkoord-woord AKKOORD`; het harness vraagt de redacteur om een klik | `goedgekeurd`, `log.md`, pagina's |
+| 9 | Commit | redacteur of AI | Beoordelingen, pagina's en `log.md` samen; de pre-commit-controle eist dat de pagina's gelijk zijn aan de render | Git |
 
-## Uitbreidingen per fase
+## Grenzen
 
-| Fase | Na de generieke skill | Uitvoer |
-|---|---|---|
-| INGEST | Laad `gemma-archimate-model-ingest`: brontype, bronselectie, bronanalyse, kernpunten bespreken | `bronanalyses/<onderwerp>/<bron-id>.md` |
-| ASSESS | Laad `gemma-archimate-model-assess` (die laadt `gemma-archimate-model-criteria`). Elk voorstel krijgt een `beoordeling` en de `relaties` uit de bronanalyses; draai `uv run python tools/bepaal_type.py evalueer <assessment.json> --schrijf` en `uv run python tools/relaties.py uit-bronnen <assessment.json>` vóór `run complete assess`. Leg begrippen met `voorleggen` of `conflict` per begrip voor en wacht op antwoord vóór WRITE | `assessment.json` met uitkomsten |
-| WRITE | Laad `gemma-archimate-model-write`. Tools die pagina's stagen (`tools/terugmelding.py`, `tools/ggm.py verrijk --run`) vullen `.work/runs/<run-id>/changeset-concept.json`; zet je eigen pagina's in hetzelfde bestand en rond af met `uv run python -m llmwiki run complete write --run <run-id> --data .work/runs/<run-id>/changeset-concept.json` | gestagede pagina's |
-| VALIDATE | Na `wiki-validate` (met `--run <run-id>` per pagina): `uv run python tools/check_elementen.py --run <run-id> --rapport .work/runs/<run-id>/validation-report.json`. Een `fout` → terug naar WRITE. Een `waarschuwing` beoordeel je inhoudelijk (bijv. registr*-taal, absolute taal) en los je op of licht je toe | `validation-report.json` |
-| GATE + PROMOTE | `wiki-publish` ongewijzigd. Het voorstel toont welke pagina's worden goedgekeurd (status `review`) en welke als `kandidaat` blijven staan | `log.md`, `voortgang.md` |
+- Pagina's (`bedrijfsarchitectuur/`, `motivatie/`, `begrippen/`, `analyses/ggm-terugmeldingen.md`, `ter-beoordeling.md`, `voortgang.md`) nooit met de hand bewerken: wijzig de beoordeling en draai `tools/afleiden.py`.
+- `status:` en `afgeleid:` in een beoordeling nooit zelf invullen; de scripts zetten ze.
+- Nooit zelf AKKOORD typen of `promote apply` draaien zonder dat de redacteur letterlijk AKKOORD typte.
 
 ## Delegatie
 
-INGEST, ASSESS en VALIDATE mogen in een subagent (alleen run-id en artefactpaden meegeven). WRITE blijft in de hoofd-Agent: pagina's, begrippenlijst en terugmeldingen worden in samenhang geschreven.
+Bronanalyses mogen in een subagent (geef de bron-id's en het onderwerp mee). Het beoordelen blijft in de hoofd-Agent: begrippen, relaties en terugmeldingen worden in samenhang gewogen.
 
 ## Nieuwe modelrelease
 

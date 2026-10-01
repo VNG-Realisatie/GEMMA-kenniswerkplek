@@ -1,59 +1,46 @@
 # gemma-archimate-model-wiki (curation)
 
-Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de Context staan: lees dat bestand voordat je iets wijzigt. De opzet van deze wiki (mappen, paginatypen, vaardigheden, gereedschap) staat in `ARCHITECTURE.md`.
+Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de Context staan: lees dat bestand voordat je iets wijzigt. De opzet van deze wiki (mappen, beoordelingen, scripts, render) staat in `ARCHITECTURE.md`.
 
 ## Domein
 
-- Het GEMMA-architectuurmodel, bedrijfslaag: bedrijfsobjecten, contracten, producten, diensten, processen, functies, gebeurtenissen, actoren en rollen. Elk element wordt onderbouwd afgeleid uit bronnen en gematcht op het GGM en het GEMMA-model.
+- Het GEMMA-architectuurmodel, bedrijfslaag: bedrijfsobjecten, contracten, producten, diensten, processen, functies, gebeurtenissen, actoren, rollen, samenwerkingen en kanalen, plus beleidskaders (motivatielaag). Elk element wordt onderbouwd afgeleid uit bronnen en gematcht op het GGM en het GEMMA-model.
 - Doelgroep: het GEMMA-team van VNG. Het resultaat voedt een landelijke standaard; kwaliteit en herleidbaarheid gaan voor snelheid.
 - Taal: Nederlands; gevestigde ArchiMate-termen mogen Engels blijven.
 
 ## Standaard Workflow
 
-Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. Die volgt `wiki-update` (INGEST → ASSESS → WRITE → VALIDATE → GATE → PROMOTE) met de uitbreidingen van deze wiki. Of een begrip een element is, bepaalt skill `gemma-archimate-model-criteria` samen met `tools/bepaal_type.py`, nooit een losse inschatting.
+Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`beoordelingen/begrippen/<id>.yaml`); scripts leiden type en status af en maken alle pagina's (`tools/afleiden.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Eerdere besluiten van de redacteur staan in `analyses/besluiten-redacteur.md`.
 
 ## Regels
 
-Schrijfwijze: `[ID] **kern** — regel`. `ALTIJD` = verplicht, `NOOIT` = verboden, `ALS … →` = voorwaardelijk, `UITZONDERING:` = afwijking.
+Verwijs naar een regel met haar naam, bijvoorbeeld "regel Navragen". Achter een regel staat of een script haar controleert: *(schema)* en *(script)* houden een fout tegen, *(signaal)* geeft een waarschuwing die de AI inhoudelijk beoordeelt. Zonder markering is het een regel voor het oordeel van de AI.
+
+Wat het render-script garandeert, is geen regel: bronverwijzingen als link naar de bronanalyse, relaties in beide richtingen, geen verwijzingen in de frontmatter, geen links naar tools of regels, de vorm van de pagina. De status zetten de scripts en het akkoord; de AI zet nooit een status.
 
 ### Werkwijze
 
-- [PR6] **Navragen** — ALS onduidelijk is hoe een begrip of bron behandeld moet worden → vraag het de redacteur; NOOIT gokken.
-- [PR7] **Bestaande pagina's** — ALS een pagina al bestaat → werk haar bij; neem niet aan wat erin hoort, vraag eerst.
-- [EL9] **Geen bulkbesluiten** — NOOIT een besluit (hernoemen, samenvoegen, afwijzen) in bulk doorvoeren op grond van één eerder akkoord; leg elk geval apart voor.
-- [W1] **Tekst verplaatsen** — ALS de opdracht "verplaats" of "splits" is → exacte bestaande tekst knippen en plakken; NOOIT herformuleren of inkorten, tenzij de redacteur dat vraagt.
+- **Navragen** — Bij twijfel over een begrip, bron, naam of match: vraag het de redacteur, één vraag tegelijk, met context, argumenten en advies. Nooit gokken. Wat al in `analyses/besluiten-redacteur.md` staat, vraag je niet opnieuw.
+- **Bestaand bijwerken** — Bestaat een beoordeling al, werk haar dan bij. Neem niet aan wat erin hoort.
+- **Per geval** — Een besluit (hernoemen, samenvoegen, afwijzen, herformuleren) nooit in bulk doorvoeren op grond van één eerder akkoord; leg elk geval apart voor.
+- **Letterlijk verplaatsen** — Bij verplaatsen of splitsen de bestaande tekst ongewijzigd overnemen, tenzij de redacteur iets anders vraagt.
 
-### Inhoud en herleidbaarheid
+### Oordeel
 
-- [IH1] **Elke claim heeft een bron** — ALTIJD een bron-id in `bronnen:`; citaten als blockquote met bronvermelding.
-- [IH3] **Tegenspraak** — ALS bronnen elkaar tegenspreken → beide vastleggen en markeren met `⚠️ Tegenspraak`.
-- [IH2] **Bronverwijzing is een link** — ALTIJD elke bron-id in de body als relatieve link naar de bronanalyse (`[<bron-id>](…/bronanalyses/<onderwerp>/<bron-id>.md)`): in `## Bronnen`, in de kolom Bron van `## Kenmerken` en `## Relaties`, en overal waar een bron wordt genoemd. De bronanalyse linkt onder de titel naar de brontekst in `sources/raw/`. UITZONDERING: een modelbron (GGM, GEMMA) heeft geen bronanalyse en linkt direct naar `sources/raw/<bron-id>.md`. NOOIT linken naar `sources/index/` (technische index, geen schakel in de herleidbaarheid). Gecontroleerd door `tools/check_elementen.py`.
-- [IH4] **Zonder bron** — ALS een claim geen bron heeft → markeren met `🔍 Verificatie nodig` en als open vraag opnemen.
-- [IH6] **Onzekerheid** — ALS een keuze niet eenduidig is (match, mapping, naam, type) → status `kandidaat` en een sectie `## Ter discussie`; elke aanname vastleggen.
-- [VR2] **Begrijpelijk Nederlands** — ALTIJD herkenbaar voor domeinexperts; geen jargon tenzij nodig.
+- **Beslistabel beslist** — Of een begrip een element is en van welk type, volgt alleen uit de kenmerken en de beslistabel (skill `gemma-archimate-model-criteria`). Registratie, eigendom, systeembeheer, regie of een extern systeem zijn geen argument. *(script; signaal bij registr*-taal)*
+- **Match op betekenis** — Match met GGM en GEMMA op betekenis, niet op naam: herken homoniemen en synoniemen en volg relaties en generalisaties. Lees de modellen alleen via `tools/ggm.py` en `tools/gemma.py`, nooit direct en nooit via kopieën of CSV-exports. *(script: de gekozen match moet bestaan; signaal bij een afwijkende modelnaam)*
+- **Gemeentelijk perspectief** — Beschrijf wat de gemeente ziet, doet en beslist. Een externe partij wordt alleen een element bij een structurele relatie met de gemeente (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht); een partij die alleen als context in de bron staat, noem je in de beschrijving. Precedent: GGD wel.
 
-### Bronnen en modellen
+### Bronnen
 
-- [SRC1] **GGM en GEMMA alleen via de tools** — Het GGM-XMI en het GEMMA-model (AMEFF of `.archimate`) NOOIT direct lezen; ALLEEN via `tools/ggm.py` en `tools/gemma.py`.
-- [SRC3] **Geen afgeleide modelbronnen** — NOOIT CSV-exports of kopieën elders als GGM- of GEMMA-bron gebruiken.
-- [SRC5] **Gegenereerde modelmappen** — `ggm/` en `gemma/` ALLEEN om te lezen; NOOIT handmatig bewerken (de check herkent wijzigingen).
-- [SRC10] **Bronvoorrang** — Voor begrippen en formele betekenis: wet > informatiemodel > beleid > overig (`wiki.yaml` `bronvoorrang`). Voorrang bepaalt NOOIT of iets een element is. UITZONDERING: de naam en de herkenbare `definitie` komen uit de gangbare taal van beleids- en praktijkbronnen; de wetsterm gaat naar `synoniemen` (context "wet"). Precedent: Urn, niet Asbus.
+- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron; citaten letterlijk, met vindplaats. *(schema en script: elke bron bestaat en heeft een bronanalyse)*
+- **Zonder bron** — Een claim zonder bron wordt een open vraag ("verificatie nodig").
+- **Tegenspraak** — Spreken bronnen elkaar tegen, leg dan beide vast en markeer de tegenspraak.
+- **Bronvoorrang** — Voor welke begrippen er zijn en wat ze formeel betekenen: wet, dan informatiemodel, dan beleid, dan overig (`wiki.yaml` `bronvoorrang`). Voorrang bepaalt nooit of iets een element is. De naam en de herkenbare definitie komen uit de gangbare taal van beleids- en praktijkbronnen; de wetsterm wordt een synoniem met context "wet". Precedent: Urn, niet Asbus. *(signaal)*
 
-### Elementen
+### Tekst
 
-- [EL1] **Alleen de beslistabel** — Of een begrip een element is en van welk type, volgt ALLEEN uit de kenmerken en de beslistabel (skill `gemma-archimate-model-criteria`). NOOIT registr*, eigendom, systeembeheer, regie of extern systeem als argument.
-- [EL12] **Veldprefixen** — Zonder prefix = eigen veld van de wiki; `ggm_` = letterlijk uit het GGM; `gemma_` = letterlijk uit het GEMMA-model na een match. `ggm_`- en `gemma_`-velden ALLEEN laten vullen door `tools/ggm.py` en `tools/gemma.py`; NOOIT zelf invullen of aanpassen.
-- [EL17] **Verwijzingen als link** — NOOIT verwijzingen naar andere elementen in de frontmatter; ALTIJD als relatieve link in de body (relaties, specialisaties, tegenhanger, homoniemen), zodat backlinks zichtbaar zijn.
-- [EL18] **Status** — De AI zet een element ALLEEN op `review` bij een uitkomst van de beslistabel zonder conflict of "voorleggen" (en bij `data_object: ja` een GGM-match exact of sterk); anders `kandidaat`. NOOIT `goedgekeurd`.
-- [EL19] **Beschrijving los van het onderwerp** — ALTIJD beschrijven `definitie` en `## Beschrijving` het element zelf, los van het onderwerp waarin het is gevonden; toets: past de tekst ongewijzigd in elk ander onderwerp? Bij een partij of generiek begrip komt de tekst uit een algemene bron (Gemeentewet, Awb, BW). ALS het element in een onderwerp een eigen rol speelt → twee of drie zinnen onder `## Per onderwerp`, `### <onderwerp>`, met een link naar de begrippenlijst; de formele verbanden staan in `## Relaties`. Gecontroleerd door `tools/check_elementen.py` (waarschuwing).
-- [EL20] **Naamvorm per type** — Proces: infinitief + object in GEMMA-volgorde ("Behandelen aanvraag", "Uitvoeren inspraakprocedure"), met de gangbare term als object; het zelfstandig naamwoord ("inspraak", "opgraving") wordt synoniem met context "beleid". Functie: zelfstandig naamwoord voor het gebied van gedrag ("Participatie", "Vergunningverlening", "Handhaving"). Gebeurtenis: voltooide toestandsverandering ("Overlijden", "Aanvraag ontvangen"). Dienst: vanuit de afnemer ("Melding openbare ruimte doen"). Gecontroleerd door `tools/check_elementen.py` (waarschuwing).
-
-### Scope en formulering
-
-- [WC4] **Gemeentelijk perspectief** — ALTIJD vanuit wat de gemeente ziet, doet en beslist. Een externe partij krijgt ALLEEN een actorpagina bij een structurele relatie met de gemeente (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht); haar interne processen blijven buiten scope.
-- [WC5] **Ketenpartners als context** — Een externe partij die alleen als context of afbakening in de bron staat, krijgt NOOIT een eigen pagina; noem haar in de beschrijving of de begrippenlijst ("buiten scope"). Precedent: GGD wél (mede-eigenaar en opdrachtgever via de gemeenschappelijke regeling).
-- [WC7] **Geen technische verwijzingen** — NOOIT vanuit een pagina verwijzen naar `AGENTS.md`, `ARCHITECTURE.md`, `.agents/`, `tools/` of `schemas/`; onderbouwing staat op eigen kracht.
-- [WC8] **Geen absolute taal** — NOOIT "structureel buiten scope", "per definitie" of "het GGM modelleert nooit X" zonder domeinspecifieke reden.
-- [WC9] **Herformuleren** — ALS een bewering "het GGM doet dit niet" geen specifieke reden heeft → "in het GGM niet compleet gedekt".
-- [WC10] **Concrete reden blijft** — ALS een bewering een concrete reden geeft (ontbrekend beleidsdomein, wetsartikel, attribuutvergelijking) → NIET aanpassen.
-- [WC11] **Per geval** — NOOIT dit soort formuleringen in bulk vervangen; per geval beoordelen.
+- **Begrijpelijk** — Herkenbaar voor domeinexperts; geen jargon tenzij nodig. De definitie is één zin. *(signaal)*
+- **Los van het onderwerp** — Definitie en beschrijving gelden in elk onderwerp; toets: past de tekst ongewijzigd in elk ander onderwerp? Wat een element in één onderwerp doet, staat onder `per_onderwerp`. *(signaal)*
+- **Naamvorm** — Een proces is een infinitief met object in GEMMA-volgorde ("Behandelen aanvraag"), een functie een zelfstandig naamwoord voor het gebied van gedrag ("Vergunningverlening"), een gebeurtenis een voltooide verandering ("Overlijden"), een dienst geformuleerd vanuit de afnemer ("Melding openbare ruimte doen"). Het zelfstandig naamwoord uit de bron wordt een synoniem met context "beleid". *(signaal)*
+- **Geen absolute taal** — Geen "structureel buiten scope", "per definitie" of "het GGM modelleert nooit X" zonder concrete, domeinspecifieke reden; schrijf dan "in het GGM niet compleet gedekt". Een bewering met een concrete reden (ontbrekend beleidsdomein, wetsartikel, attribuutvergelijking) blijft staan. Beoordeel elk geval apart. *(signaal)*

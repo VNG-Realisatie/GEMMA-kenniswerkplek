@@ -45,9 +45,9 @@ Het meeste is al overgenomen:
 
 Wat anders is of ontbreekt:
 
-- **Geen gestructureerde homoniemen.** Verwijzingen naar elementen staan nooit in de frontmatter [EL17], dus `## Homoniemen` is vrije tekst (zoals bij Regeling). Herkomst (GGM-entiteit, GUID, beleidsdomein, of de bron) staat er niet vast in.
+- **Geen gestructureerde homoniemen.** Verwijzingen naar elementen staan nooit in de frontmatter (render: verwijzingen als link in de body), dus `## Homoniemen` is vrije tekst (zoals bij Regeling). Herkomst (GGM-entiteit, GUID, beleidsdomein, of de bron) staat er niet vast in.
 - **Homoniem is nog GGM-gebonden.** De naamgevingsregel noemt alleen de GGM-homoniem. Deze wiki werkt vanuit bronnen en voor alle elementtypen, en daar komen homoniemen voor die niets met het GGM te maken hebben: beheerder van een begraafplaats en beheerder van een landelijke voorziening ([toegang tot een bedrijfsobject](gegevensrollen.md)); rechthebbende op het graf en rechthebbende in het GGM en GEMMA.
-- **Synoniem leidt niet tot een uitkomst.** Een begrip dat een synoniem blijkt van een bestaand element, heeft geen eigen uitkomst in de beslistabel; het wordt buiten de tabel om afgehandeld, terwijl de regel is dat alleen de beslistabel beslist of iets een element is [EL1].
+- **Synoniem leidt niet tot een uitkomst.** Een begrip dat een synoniem blijkt van een bestaand element, heeft geen eigen uitkomst in de beslistabel; het wordt buiten de tabel om afgehandeld, terwijl de regel is dat alleen de beslistabel beslist of iets een element is (regel Beslistabel beslist).
 - **Geen controle op afwijkende modelnamen.** Wijkt de GGM- of GEMMA-naam af van de naam van het element, dan hoort die als synoniem met context "GGM" of "GEMMA" te staan; dat wordt niet gecontroleerd.
 
 ## Hoe het past in de kenmerkenaanpak
@@ -72,7 +72,7 @@ Een duplicaat is geen verhouding tussen begrippen maar tussen vastleggingen in e
 2. **Stap 0 in de beslistabel.** Twee extra velden in de beoordeling, net als `genoemd_begrip`: `synoniem_van` en `homoniem_van`. Regel 0: `synoniem_van` gevuld → uitkomst *synoniem* (geen pagina, naam naar `synoniemen`); `homoniem_van` gevuld → door naar de kenmerken, met *voorleggen* voor de naamkeuze. Zo beslist de beslistabel ook hier, en staat de uitkomst in de begrippenlijst.
 3. **`## Homoniemen` als tabel.** Kolommen: Begrip (link als er een pagina is), Betekenis, Waar (GGM-entiteit met GUID en beleidsdomein, GEMMA-element, of bron-id als link), Naamkeuze. Dat brengt de structuur van de vorige wiki terug zonder verwijzingen in de frontmatter.
 4. **Controle uitbreiden.** Waarschuwen als de GGM- of GEMMA-naam afwijkt van de naam en niet als synoniem met context "GGM" of "GEMMA" staat; waarschuwen als een woord in `synoniemen` van twee elementen staat (dan is het een homoniem of een fout).
-5. **Retroactief bij de herbeoordeling.** De naamconflicten van de bestaande 57 elementen worden in dezelfde run per onderwerp gecontroleerd, per geval voorgelegd [EL9], zoals de audit-modus van de vorige wiki deed.
+5. **Retroactief bij de herbeoordeling.** De naamconflicten van de bestaande 57 elementen worden in dezelfde run per onderwerp gecontroleerd, per geval voorgelegd (regel Per geval), zoals de audit-modus van de vorige wiki deed.
 
 ## Open vragen
 

@@ -30,9 +30,9 @@ Bij tegenstrijdigheid: repository-veiligheidsregels > wiki-Rules > Skill-instruc
 ## Werkwijze
 
 - Workflows zijn Skills (`.agents/skills/`), niet losse instructies in het gesprek.
-- Tussenresultaten gaan via `llmwiki run start|status|complete|resume|close|abandon`, nooit alleen in het gesprek. Een fase is pas afgerond na `llmwiki run complete
-  <fase>`, dat het artefact tegen een schema valideert.
-- State staat in `.work/runs/<run-id>/` (gitignored). Dat is het kladblok; het wordt na afronding automatisch opgeruimd (`llmwiki workspace-check --fix`), nooit door het Model.
+- Tussenresultaten staan nooit alleen in het gesprek. Bij een curatie-wiki met beoordelingen (`curation.beoordelingen`) staan ze in de werkboom en zijn ze te zien in Git: het oordeel van de AI in de beoordelingen, de pagina's gegenereerd door de scripts van de wiki (skill `wiki-curatie-update`). Bij een sync-wiki gaan ze via `llmwiki run start|status|complete|resume|close|abandon`; een fase is pas afgerond na `llmwiki run complete <fase>`, dat het artefact tegen een schema valideert.
+- Run-state staat in `.work/runs/<run-id>/` (gitignored). Dat is het kladblok; het wordt na afronding automatisch opgeruimd (`llmwiki workspace-check --fix`), nooit door het Model.
+- Een gegenereerde pagina wordt nooit met de hand bewerkt; een status zet de AI nooit zelf, en het woord AKKOORD typt alleen de redacteur.
 - Todo's, afspraken en nieuwe regels komen in de repository, op de meest specifieke plek waar ze gelden: voor één wiki in `wikis/<key>/todo.md` of `wikis/<key>/AGENTS.md`, voor één Skill in die Skill, voor de hele repository in `todo.md` of deze `AGENTS.md`. Het persoonlijke geheugen van een harness (in de home-directory) alleen voor persoonlijke voorkeuren van de gebruiker: het is niet zichtbaar op andere werkplekken en niet voor andere gebruikers.
 
 ## Schrijfwijze

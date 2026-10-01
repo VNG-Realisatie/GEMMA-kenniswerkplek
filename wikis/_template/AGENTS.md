@@ -9,4 +9,4 @@ wiki. Dit sjabloon bevat opzettelijk geen domeinkennis.>
 
 ## Standaard Workflow
 
-Gebruik skill `wiki-edit` voor het bijwerken van pagina's (PULL → BEWERK → VALIDATE → PLAN → AKKOORD → PUBLISH). Dit is een sync-wiki: `content/` is een directe werkkopie van de externe site, geen curatiepijplijn.
+Gebruik skill `wiki-sync-edit` voor het bijwerken van pagina's (PULL → BEWERK → VALIDATE → PLAN → AKKOORD → PUBLISH). Dit is een sync-wiki: `content/` is een directe werkkopie van de externe site, geen curatiepijplijn.
