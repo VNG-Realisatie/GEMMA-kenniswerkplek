@@ -1,6 +1,6 @@
 ---
 name: gemma-archimate-model-criteria
-description: De criteria van deze wiki voor de vraag of een begrip een ArchiMate-element is en van welk type (bedrijfsobject, contract, product, dienst, proces, functie, gebeurtenis, actor, rol). Laad deze skill bij elke beoordeling van een begrip, vóór er een elementpagina wordt voorgesteld.
+description: De criteria van deze wiki voor de vraag of een begrip een ArchiMate-element is en van welk type (bedrijfsobject, afspraak (contract), product, dienst, proces, functie, gebeurtenis, actor, rol). Laad deze skill bij elke beoordeling van een begrip, vóór er een elementpagina wordt voorgesteld.
 metadata:
   kind: capability
   scope: wiki
@@ -38,25 +38,25 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
 
 ## ArchiMate-typen in dit model
 
-Definities volgens ArchiMate 3.2 (Engels), met de duiding voor gemeenten. "Herkend" betekent: de tool herkent het type, maar deze wiki heeft er nog geen paginatype voor; het begrip wordt voorgelegd.
+Namen en definities volgen het GEMMA-kennismodel (bron `2026-vng-over-gemma`, besluit redacteur 2026-10-01; de vergelijking staat in `analyses/gemma-kennismodel.md`). Waar GEMMA een type niet kent, geldt de definitie van ArchiMate 3.2 (Engels). De herkomst staat achter elke definitie. "Herkend" betekent: de tool herkent het type, maar deze wiki heeft er nog geen paginatype voor; het begrip wordt voorgelegd.
 
-| ArchiMate-type | Paginatype | Definitie | Duiding |
-|---|---|---|---|
-| Business Object | `bedrijfsobject` | A concept used within a particular business domain. | Een ding waar de gemeente mee werkt: het wordt gebruikt, gemaakt of gewijzigd door gemeentelijk gedrag. |
-| Contract | `bedrijfsobject` (`archimate_type: contract`) | A formal or informal specification of an agreement between a provider and a consumer that specifies the rights and obligations associated with a product. | Een tweezijdige afspraak (overeenkomst, convenant). Een besluit of verordening is géén contract. |
-| Product | `product` | A coherent collection of services and/or passive structure elements, accompanied by a contract/set of agreements, which is offered as a whole to customers. | Wat de gemeente als geheel aanbiedt, met voorwaarden (bijv. uit de productencatalogus). |
-| Business Service | `bedrijfsdienst` | Explicitly defined behavior that a business role, actor or collaboration exposes to its environment. | Wat een afnemer van de gemeente kan krijgen, los van hoe het wordt uitgevoerd. |
-| Business Process | `bedrijfsproces` | A sequence of business behaviors that achieves a specific result. | Wordt per keer doorlopen en levert een resultaat op (besluit, product). |
-| Business Function | `bedrijfsfunctie` | A collection of business behavior based on a chosen set of criteria (typically required business resources and/or competencies). | Doorlopende groepering van gedrag. Niet "wat de gemeente kan": dat is een vermogen (Capability). |
-| Business Event | `bedrijfsgebeurtenis` | A business behavior element that denotes an organizational state change. | Ogenblikkelijk voorval dat gedrag start of afsluit (verhuizing, aanvraag ontvangen). |
-| Business Actor | `actor` | A business entity that is capable of performing behavior. | Persoon, organisatie of eenheid, ook extern of generiek (inwoner). |
-| Business Role | `rol` | The responsibility for performing specific behavior, to which an actor can be assigned, or the part an actor plays in a particular action or event. | Verantwoordelijkheid of hoedanigheid (aanvrager, belastingplichtige, heffingsambtenaar). |
-| Business Collaboration | herkend | An aggregate of two or more business internal active structure elements that work together to perform collective behavior. | Samenwerkingsverband. |
-| Business Interaction | herkend | A unit of collective business behavior performed by two or more business actors, roles or collaborations. | Gezamenlijk gedrag (keukentafelgesprek, zitting). |
-| Business Interface | herkend | A point of access where a business service is made available to the environment. | Loket, website, kanaal. |
-| Representation | herkend | A perceptible form of the information carried by a business object. | Document, formulier, bericht (aanslagbiljet). |
-| Location | herkend | A conceptual or physical place or position where concepts are located or performed. | Fysieke plaats als zodanig; een gebiedsindeling als gegevensconcept is een bedrijfsobject. |
-| Data Object (applicatielaag) | annotatie `data_object` | Data structured for automated processing. | Voorbereiding op `applicatiearchitectuur/`; hier alleen als signaal. |
+| ArchiMate-type | Paginatype | GEMMA-naam | Definitie | Duiding |
+|---|---|---|---|---|
+| Business Object | `bedrijfsobject` | Bedrijfsobject | Een concept dat binnen een bepaald domein wordt gebruikt en betekenis heeft. (GEMMA) | Een ding waar de gemeente mee werkt: het wordt gebruikt, gemaakt of gewijzigd door gemeentelijk gedrag. |
+| Contract | `bedrijfsobject` (`archimate_type: contract`) | Afspraak | Overeenkomst tussen meerdere partijen betreffende een bepaald onderwerp. (GEMMA) | Een tweezijdige afspraak (overeenkomst, convenant). Een besluit of verordening is géén afspraak. |
+| Product | `product` | Product | Een Product is een gebundeld aanbod van diensten met bijbehorende afspraken, geleverd door een organisatie aan een afnemer en met waarde voor die afnemer. (GEMMA) | Wat de gemeente als geheel aanbiedt (bijv. uit de productencatalogus): diensten met afspraken, geen losse objecten. |
+| Business Service | `bedrijfsdienst` | Dienst | Een afgebakende prestatie van een persoon of organisatie (de dienstverlener), die voorziet in een behoefte van haar omgeving (de dienstafnemer(s)). (NORA) | Wat een afnemer van de gemeente kan krijgen, los van hoe het wordt uitgevoerd. |
+| Business Process | `bedrijfsproces` | Bedrijfsproces | Reeks opeenvolgend uit te voeren activiteiten die bijdraagt aan een specifiek resultaat, zoals de levering van een Product of Dienst. (GEMMA) | Wordt per keer doorlopen en levert een resultaat op (besluit, product). Een rol mag aan een bedrijfsproces worden toegewezen (besluit redacteur 2026-10-01). |
+| Business Function | `bedrijfsfunctie` | Bedrijfsfunctie | Activiteiten die zijn gegroepeerd omdat daarvoor vergelijkbare bedrijfsmiddelen, kennis of competenties nodig zijn. (GEMMA) | Doorlopende groepering van gedrag. Niet "wat de gemeente kan": dat is een vermogen (Capability). |
+| Business Event | `bedrijfsgebeurtenis` | Gebeurtenis | Iets dat binnen of buiten een organisatie is gebeurd en binnen die organisatie of daarbuiten gevolgen heeft. (GEMMA) | Ogenblikkelijk voorval dat gedrag start of afsluit (verhuizing, aanvraag ontvangen). |
+| Business Actor | `actor` | Actor | Een organisatie, afdeling daarbinnen of persoon die activiteiten kan uitvoeren. (GEMMA) | Persoon, organisatie of eenheid, ook extern of generiek (inwoner). |
+| Business Role | `rol` | Rol | Een rol is de verantwoordelijkheid voor specifiek gedrag waar een actor aan toegewezen kan worden. (ArchiMate) | Verantwoordelijkheid of hoedanigheid (aanvrager, belastingplichtige, heffingsambtenaar). |
+| Business Collaboration | herkend | Bedrijfssamenwerking | Een bedrijfssamenwerking is een (tijdelijke) samenstelling van twee of meer bedrijfsrollen resulterend in een specifiek collectief gedrag in een bepaalde context. (ArchiMate) | Samenwerkingsverband zonder eigen rechtspersoon; met eigen rechtspersoon is het een actor (GGD). |
+| Business Interaction | herkend | — | A unit of collective business behavior performed by two or more business actors, roles or collaborations. (ArchiMate) | Gezamenlijk gedrag (keukentafelgesprek, zitting). |
+| Business Interface | herkend | Kanaal | Communicatiekanaal dat bij de dienstverlening wordt gebruikt. Elk kanaal kent verschillende vormen waarin informatie kan worden gedeeld. (NORA) | Loket, website, telefoon. |
+| Representation | herkend | — | A perceptible form of the information carried by a business object. (ArchiMate) | Document, formulier, bericht (aanslagbiljet). |
+| Location | herkend | — | A conceptual or physical place or position where concepts are located or performed. (ArchiMate) | Fysieke plaats als zodanig; een gebiedsindeling als gegevensconcept is een bedrijfsobject. |
+| Data Object (applicatielaag) | annotatie `data_object` | Data-object | Samenhangende set gegevens die geautomatiseerd kan worden verwerkt. (GEMMA) | Voorbereiding op `applicatiearchitectuur/`; hier alleen als signaal. In GEMMA realiseert een data-object een bedrijfsobject. |
 
 Buiten dit model vallen de motivatie- en strategielaag (Goal, Outcome, Driver, Principle, Requirement, Constraint, Value, Capability) en Grouping (thema). Dat zijn ArchiMate-elementen, maar deze wiki modelleert ze niet. Een losse norm uit een wet is een Requirement of Constraint; de regeling als geheel is een bedrijfsobject (grondslag governance-object).
 
