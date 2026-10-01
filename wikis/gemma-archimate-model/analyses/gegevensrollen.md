@@ -20,6 +20,7 @@ Een algemene "Wet basisregistraties" bestaat niet. Het stelsel van basisregistra
 | 2026-10-01 | De verantwoordelijkheid van een rol voor een object komt uit een vaste reeks van acht: houder, bronhouder, beheerder, verstrekker, afnemer, toezichthouder, betrokkene, partij (alleen bij een afspraak). Notatie: `toegang (<verantwoordelijkheid>)`. |
 | 2026-10-01 | Verwerkingsverantwoordelijke (AVG) wordt een toevoeging in de kolom Naam, bijvoorbeeld "houder (verwerkingsverantwoordelijke)", met het wetsartikel in de kolom Bron. |
 | 2026-10-01 | De volledige AVG (geconsolideerd) en de geldende Archiefwet worden als bron opgenomen, als grondslag voor verwerkingsverantwoordelijke, betrokkene en zorgdrager. |
+| 2026-10-01 | Archiveren krijgt drie eigen handelingen volgens de Archiefwet: bewaren, overbrengen en vernietigen. De reeks handelingen wordt acht; beëindigen gaat alleen over het ophouden te gelden (intrekken, vervallen, opheffen). |
 
 ## Bronnen
 
@@ -142,15 +143,18 @@ De acht namen hierboven zeggen welke verantwoordelijkheid een rol, en via de rol
 
 **Wat er nu is.** Het GEMMA-kennismodel laat een bedrijfsfunctie en een bedrijfsproces een bedrijfsobject "benaderen" ([Over GEMMA](gemma-kennismodel.md), regel 919 en 606), zonder verdere indeling. Het GEMMA-model zelf heeft maar acht toegangsrelaties naar een bedrijfsobject, alle in de procesarchitectuur; de enige namen zijn "registreren" (Uitvoeren intake → zaak) en "bijwerken" (vier deelprocessen → zaak) ([GEMMA-model](../../../sources/raw/2026-vng-gemma-2026-07-01.md)). GEMMA noemt wel een "GEMMA bedrijfsfunctie en -objecten model" (Over GEMMA, regel 313), maar legt de samenhang daar via groepering per domein, niet via toegang. In deze wiki heeft geen enkele functie een toegangsrelatie; processen en de dienst hebben er 22, met een werkwoord uit de bron ("graaft op", "ruimt", "legt vast in") en het ArchiMate-toegangstype.
 
-**Advies: vijf handelingen langs de levenscyclus van het object.** Het kenmerk *levenscyclus* vraagt of exemplaren ontstaan, veranderen en eindigen. Die drie momenten, plus gebruiken en doorgeven, geven een kleine vaste reeks die voor elk object werkt. Het toegangstype van ArchiMate volgt dan uit de handeling.
+**Besloten: acht handelingen langs de levenscyclus van het object.** Het kenmerk *levenscyclus* vraagt of exemplaren ontstaan, veranderen en eindigen. Die drie momenten, plus gebruiken en doorgeven, geven vijf handelingen die voor elk object werken; de Archiefwet voegt er drie toe voor de archieffase. Het toegangstype van ArchiMate volgt dan uit de handeling.
 
 | Handeling | Betekenis | Toegangstype | Herkomst | Hoort bij de verantwoordelijkheid |
 |---|---|---|---|---|
 | registreren | het object ontstaat of wordt voor het eerst vastgelegd | schrijven | GEMMA-model (Uitvoeren intake); Wet BRP: inschrijving, "de opneming van een persoonslijst in de basisregistratie" (art. 1.1, regel 55) | bronhouder |
 | bijwerken | het object verandert | lezen-schrijven | GEMMA-model (vier deelprocessen); *bijhouden* in Wet BAG art. 10, Wet BGT art. 11, Wet BRP art. 1.4 | bronhouder, beheerder |
-| beëindigen | het object houdt op te bestaan of te gelden (intrekken, vervallen, opheffen, vernietigen) | schrijven | kenmerk *levenscyclus*; Wet BRP: "opheffing van het adres" (regel 1292) | bronhouder, houder |
+| beëindigen | het object houdt op te gelden (intrekken, vervallen, opheffen) | schrijven | kenmerk *levenscyclus*; Wet BRP: "opheffing van het adres" (regel 1292) | bronhouder, houder |
 | raadplegen | het gedrag gebruikt het object om zijn taak uit te voeren | lezen | Over GEMMA: "is raadpleger van" (regel 916); verplicht gebruik, Wet BAG art. 35 | afnemer |
 | verstrekken | het gedrag geeft het object of de gegevens aan een ander | lezen | Wet BAG art. 32; Wet BRP art. 1.5 | verstrekker |
+| bewaren | het object wordt in goede, geordende en toegankelijke staat gebracht en gehouden | lezen-schrijven | Archiefwet art. 3: "in goede, geordende en toegankelijke staat te brengen en te bewaren" (regel 160) | houder (zorgdrager) |
+| overbrengen | het object gaat naar een archiefbewaarplaats, waar het beheer overgaat | lezen | Archiefwet art. 12 (regel 354) | houder (zorgdrager); daarna beheerder van de archiefbewaarplaats |
+| vernietigen | het object wordt vernietigd omdat het daarvoor in aanmerking komt | schrijven | Archiefwet art. 3 en 5 (regel 162, 209) | houder (zorgdrager) |
 
 Waarom deze vorm:
 
@@ -158,7 +162,7 @@ Waarom deze vorm:
 - **De handeling vervangt het toegangstype in de kolom Relatie.** "toegang (bijwerken)" in plaats van "toegang (lezen-schrijven)": het toegangstype volgt er eenduidig uit, er komt geen kolom bij, en de controle kan de afleiding doen. Voor een rol werkt het net zo: "toegang (bronhouder)".
 - **GEMMA-namen waar ze bestaan.** Registreren en bijwerken zijn de namen die GEMMA al gebruikt. Raadplegen sluit aan op "raadpleger" in het kennismodel.
 - **De twee reeksen controleren elkaar.** Een rol die bronhouder is van een object, hoort toegewezen te zijn aan gedrag dat dat object registreert of bijwerkt; een afnemer aan gedrag dat het raadpleegt; een verstrekker aan gedrag dat het verstrekt. Een object met *levenscyclus* ja hoort gedrag te hebben dat het registreert én beëindigt.
-- **Archiveren.** De Archiefwet verplicht overheidsorganen archiefbescheiden "in goede, geordende en toegankelijke staat te brengen en te bewaren, alsmede zorg te dragen voor de vernietiging" (art. 3, regel 160), en blijvend te bewaren bescheiden over te brengen naar een archiefbewaarplaats (art. 12, regel 354). Of dat een eigen handeling wordt, is de laatste open vraag.
+- **Archiveren.** Bewaren, overbrengen en vernietigen zijn eigen handelingen (besluit 2026-10-01). Ze horen bij de zorgdrager, als toevoeging bij houder, en na overbrenging bij de beheerder van de archiefbewaarplaats.
 
 **Voorlopige indeling van de bestaande relaties.** Elke wijziging wordt bij de herbeoordeling apart voorgelegd [EL9].
 
@@ -193,3 +197,4 @@ Samen: negen keer registreren, zes keer bijwerken, zeven keer raadplegen; vier r
 
 ## Open vragen
 
+Geen; de vragen van 1 oktober 2026 zijn beantwoord (zie de besluiten bovenaan).
