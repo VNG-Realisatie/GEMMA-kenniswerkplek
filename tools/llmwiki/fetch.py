@@ -74,7 +74,14 @@ def resolve_url(url: str) -> str:
 
 def fetch(url: str, timeout: int = 60) -> Opgehaald:
     resolved = resolve_url(url)
-    request = urllib.request.Request(resolved, headers={"User-Agent": USER_AGENT})
+    # Accept en Accept-Language: servers die op inhoudstype of taal onderhandelen (bijv. het Publicatiebureau van de EU)
+    # leveren anders metadata of een andere taal in plaats van de tekst.
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8",
+        "Accept-Language": "nl,en;q=0.5",
+    }
+    request = urllib.request.Request(resolved, headers=headers)
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:  # noqa: S310 (bewust: bron ophalen)
             return Opgehaald(
