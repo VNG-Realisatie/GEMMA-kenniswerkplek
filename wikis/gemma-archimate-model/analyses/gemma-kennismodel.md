@@ -277,6 +277,4 @@ Deze gevolgen leidden tot de besluiten van 1 oktober 2026 bovenaan de pagina.
 
 ## Open vragen
 
-De vragen van 1 oktober 2026 zijn beantwoord; zie de besluiten bovenaan. Nog vast te stellen:
-
-- De lijst van getypeerde namen voor de toegang van een rol tot een object (raadpleger, beheerder, eigenaar, verantwoordelijke en eventueel meer), op basis van de Wet basisregistraties. Daarvoor is die wet nog als bron nodig.
+Geen. De vragen van 1 oktober 2026 zijn beantwoord; zie de besluiten bovenaan. De namen voor de toegang tot een object (verantwoordelijkheden van een rol en handelingen van een functie of proces) zijn uitgewerkt en besloten in [Toegang tot een bedrijfsobject](gegevensrollen.md).
