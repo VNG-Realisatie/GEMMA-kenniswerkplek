@@ -1,6 +1,7 @@
 """tools/afleiden.py en tools/render.py: van beoordeling naar status en pagina's."""
 import pytest
-from test_gam_bepaal_type import BO, PROCES
+from test_gam_bepaal_type import (ACTOR, BELEIDSKADER, BO, DIENST, FUNCTIE, GEBEURTENIS, KANAAL, PROCES, PRODUCT, ROL,
+                                  SAMENWERKING)
 
 import afleiden
 import bepaal_type as bt
@@ -84,6 +85,53 @@ def test_beoordelingen_worden_paginas_met_relaties_in_beide_richtingen(wiki):
     lijst = (wiki / "begrippen/test.md").read_text(encoding="utf-8")
     assert "[Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md)" in lijst
     assert "Behandelen aanvraag" in (wiki / "ter-beoordeling.md").read_text(encoding="utf-8")
+
+
+def _rel(soort: str, naar: str) -> dict:
+    return {"soort": soort, "naar": naar, "grondslag": "bron", "bronnen": [WET], "vindplaats": "art. 3"}
+
+
+def test_elk_paginatype_wordt_afgeleid_en_gerenderd(wiki):
+    """Elk paginatype uit de criteria van 2026-10-01, met de relaties zoals de criteria ze voorschrijven."""
+    geen_ggm = {"ggm": {"sterkte": "geen", "onderbouwing": "Niet in het GGM."}}
+    gevallen = {
+        "graf": ("bedrijfsobject", "business-object", _element("Graf", BO, **geen_ggm)),
+        "grafrecht": ("bedrijfsobject", "contract", _element("Grafrecht", BO | {"afspraak"}, **geen_ggm)),
+        "ruimen-graf": ("bedrijfsproces", "business-process", _element("Ruimen graf", PROCES, relaties=[
+            _rel("toegang (beëindigen)", "graf"), _rel("realisatie", "onderhoud-van-graven")])),
+        "begraafplaatsbeheer": ("bedrijfsfunctie", "business-function", _element("Begraafplaatsbeheer", FUNCTIE,
+                                relaties=[_rel("bediening", "ruimen-graf")])),
+        "overlijden": ("gebeurtenis", "business-event", _element("Overlijden", GEBEURTENIS,
+                       relaties=[_rel("triggering", "ruimen-graf")])),
+        "onderhoud-van-graven": ("dienst", "business-service", _element("Onderhoud van graven", DIENST)),
+        "grafproduct": ("product", "product", _element("Grafproduct", PRODUCT, relaties=[
+            _rel("aggregatie", "onderhoud-van-graven"), _rel("aggregatie", "grafrecht")], **geen_ggm)),
+        "houder-van-de-begraafplaats": ("rol", "business-role", _element("Houder van de begraafplaats", ROL, relaties=[
+            _rel("toewijzing", "ruimen-graf"), _rel("toegang (houder)", "graf")])),
+        "kerkgenootschap": ("actor", "business-actor", _element("Kerkgenootschap", ACTOR,
+                            relaties=[_rel("toewijzing", "houder-van-de-begraafplaats")])),
+        "zorg-en-veiligheidshuis": ("bedrijfssamenwerking", "business-collaboration", _element(
+            "Zorg- en Veiligheidshuis", SAMENWERKING, relaties=[_rel("toewijzing", "ruimen-graf")])),
+        "publieksbalie": ("kanaal", "business-interface", _element("Publieksbalie", KANAAL,
+                          relaties=[_rel("toewijzing", "onderhoud-van-graven")])),
+        "wet-op-de-lijkbezorging": ("beleidskader", "driver", _element("Wet op de lijkbezorging", BELEIDSKADER,
+                                    relaties=[_rel("associatie (gericht)", "ruimen-graf")])),
+    }
+    for bid, (_, _, data) in gevallen.items():
+        _schrijf(wiki, bid, data)
+    _afleiden(wiki)
+
+    for bid, (paginatype, archimate_type, _) in gevallen.items():
+        d = _lees(wiki, bid)
+        uitkomst = d["afgeleid"]["uitkomst"]
+        assert (uitkomst["soort"], uitkomst["paginatype"], uitkomst["archimate_type"]) == \
+            ("element", paginatype, archimate_type), bid
+        # Een kanaal wordt altijd voorgelegd (centrale set); de rest is na afleiden klaar voor review.
+        assert d["status"] == ("kandidaat" if paginatype == "kanaal" else "review"), (bid, d["afgeleid"].get("open"))
+        assert d["afgeleid"]["pad"].startswith(afleiden.paths.load_wiki_yaml(wiki)["page_types"][paginatype]["dir"])
+        assert (wiki / d["afgeleid"]["pad"]).exists(), bid
+    lijst = (wiki / "begrippen/test.md").read_text(encoding="utf-8")
+    assert all(data["begrip"] in lijst for _, _, data in gevallen.values())
 
 
 def test_afleiden_en_render_zijn_idempotent_en_check_vangt_handwerk(wiki):
