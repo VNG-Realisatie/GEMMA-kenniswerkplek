@@ -3,7 +3,7 @@ id: gegevensrollen
 type: analyse
 titel: 'Toegang tot een bedrijfsobject: verantwoordelijkheden en handelingen'
 bijgewerkt: '2026-10-01'
-bronnen: [2026-bzk-rollen-stelsel-basisregistraties, 2026-rijk-wet-bag-bwbr0023466, 2026-rijk-wet-bgt-bwbr0034026, 2026-rijk-wet-brp-bwbr0033715, 2026-rijk-wet-woz-bwbr0007119, 2026-rijk-handelsregisterwet-2007-bwbr0021777, 2015-rijk-wmo, 2026-rijk-wet-suwi-bwbr0013060, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995, 2026-vng-over-gemma, 2026-vng-gemma-2026-07-01]
+bronnen: [2026-bzk-rollen-stelsel-basisregistraties, 2026-rijk-wet-bag-bwbr0023466, 2026-rijk-wet-bgt-bwbr0034026, 2026-rijk-wet-brp-bwbr0033715, 2026-rijk-wet-woz-bwbr0007119, 2026-rijk-handelsregisterwet-2007-bwbr0021777, 2015-rijk-wmo, 2026-rijk-wet-suwi-bwbr0013060, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995, 2026-vng-over-gemma, 2026-vng-gemma-2026-07-01, 2016-eu-avg-geconsolideerd, 2026-rijk-archiefwet-1995-bwbr0007376]
 ---
 
 # Toegang tot een bedrijfsobject: verantwoordelijkheden en handelingen
@@ -11,6 +11,15 @@ bronnen: [2026-bzk-rollen-stelsel-basisregistraties, 2026-rijk-wet-bag-bwbr00234
 De redacteur besloot op 1 oktober 2026 dat een relatie van een rol naar een bedrijfsobject wordt gesplitst: wat de rol met het object ís, wordt een toegangsrelatie met een getypeerde naam; een handeling wordt een toewijzing van de rol aan een proces ([besluiten](gemma-kennismodel.md#besluiten-van-de-redacteur)). De indeling van die namen moest komen uit de wetgeving over basisregistraties. Deze analyse bepaalt twee reeksen namen: de verantwoordelijkheid van een rol voor een object, en de handeling van een functie of proces op een object. Ze beoordeelt ook of de verantwoordelijkheden passen bij andere gegevensbronnen van de gemeente, intern en extern. Ze is de bronanalyse van de bronnen hieronder; regelnummers verwijzen naar hun tekst.
 
 Een algemene "Wet basisregistraties" bestaat niet. Het stelsel van basisregistraties heeft vaste rollen, die per basisregistratie in een eigen wet zijn uitgewerkt. Deze analyse gebruikt de rollenbeschrijving van het stelsel en de wetten van de basisregistraties waarin de gemeente bronhouder of afnemer is.
+
+## Besluiten van de redacteur
+
+| Datum | Besluit |
+|---|---|
+| 2026-10-01 | De toegang van een functie of proces tot een object krijgt een handeling uit een vaste reeks: registreren, bijwerken, beëindigen, raadplegen, verstrekken. In de kolom Relatie staat `toegang (<handeling>)`; het ArchiMate-toegangstype volgt eruit; het werkwoord uit de bron blijft de naam. |
+| 2026-10-01 | De verantwoordelijkheid van een rol voor een object komt uit een vaste reeks van acht: houder, bronhouder, beheerder, verstrekker, afnemer, toezichthouder, betrokkene, partij (alleen bij een afspraak). Notatie: `toegang (<verantwoordelijkheid>)`. |
+| 2026-10-01 | Verwerkingsverantwoordelijke (AVG) wordt een toevoeging in de kolom Naam, bijvoorbeeld "houder (verwerkingsverantwoordelijke)", met het wetsartikel in de kolom Bron. |
+| 2026-10-01 | De volledige AVG (geconsolideerd) en de geldende Archiefwet worden als bron opgenomen, als grondslag voor verwerkingsverantwoordelijke, betrokkene en zorgdrager. |
 
 ## Bronnen
 
@@ -25,6 +34,8 @@ Een algemene "Wet basisregistraties" bestaat niet. Het stelsel van basisregistra
 - **1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995** (Memorie van toelichting Archiefwet 1995): [tekst](../../../sources/raw/1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995.md)
 - **2026-rijk-wet-op-de-lijkbezorging-wettekst**: [bronanalyse](../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - **2026-vng-over-gemma**: [bronanalyse](gemma-kennismodel.md)
+- **2016-eu-avg-geconsolideerd** (Algemene verordening gegevensbescherming, geconsolideerde tekst): [tekst](../../../sources/raw/2016-eu-avg-geconsolideerd.md) · [origineel (html)](../../../sources/raw/2016-eu-avg-geconsolideerd.html) · [online](http://publications.europa.eu/resource/celex/02016R0679-20160504)
+- **2026-rijk-archiefwet-1995-bwbr0007376** (Archiefwet 1995): [tekst](../../../sources/raw/2026-rijk-archiefwet-1995-bwbr0007376.md) · [origineel (html)](../../../sources/raw/2026-rijk-archiefwet-1995-bwbr0007376.html) · [online](https://wetten.overheid.nl/BWBR0007376/2024-06-19)
 - **2026-vng-gemma-2026-07-01** (GEMMA-architectuurmodel, modelbron): [tekst](../../../sources/raw/2026-vng-gemma-2026-07-01.md)
 
 ## Stelselrollen
@@ -68,7 +79,7 @@ Een verantwoordelijkheid zegt wat de rol ten opzichte van het object ís. Wat de
 | verstrekker | stelt de gegevens beschikbaar aan anderen | lezen | — (in GEMMA onder beheerder) | rollenpagina regel 41; Wet BRP art. 1.5 |
 | afnemer | gebruikt de gegevens voor de eigen taak, met plicht tot gebruik en terugmelding waar de wet dat bepaalt | lezen | is raadpleger van | rollenpagina regel 45; Wet WOZ art. 2 |
 | toezichthouder | ziet toe of het object of de registratie aan eisen en wetgeving voldoet | lezen | — | rollenpagina regel 33; Wet WOZ art. 4 |
-| betrokkene | de gegevens gaan over deze partij | lezen | — | Wet BRP art. 1.1 (ingeschrevene) |
+| betrokkene | de gegevens gaan over deze partij | lezen | — | AVG art. 4: de geïdentificeerde of identificeerbare natuurlijke persoon over wie persoonsgegevens gaan, "de betrokkene" (regel 135); Wet BRP art. 1.1 (ingeschrevene) |
 | partij | is partij bij een afspraak (contract), met rechten en plichten | lezen-schrijven | — | GEMMA-definitie van Afspraak: "Overeenkomst tussen meerdere partijen" (Over GEMMA regel 246) |
 
 Toelichting bij de keuzes:
@@ -78,7 +89,7 @@ Toelichting bij de keuzes:
 - **Afnemer in plaats van raadpleger.** Afnemer is de wettelijke term, en draagt de plicht tot gebruik en terugmelding mee. Raadplegen is een handeling.
 - **Partij alleen bij een afspraak.** Een rol bij een contract heeft rechten en plichten, geen gegevensverantwoordelijkheid. Zonder deze naam blijft die relatie een associatie.
 - **Opdrachtgever hoort niet in deze reeks.** De opdrachtgever stuurt de verstrekker aan en heeft geen eigen toegang tot de gegevens; het is een relatie tussen partijen, en meestal een ministerie buiten het gemeentelijk perspectief [WC4].
-- **Verwerkingsverantwoordelijke is een aanduiding, geen aparte verantwoordelijkheid.** De wet wijst de verwerkingsverantwoordelijke aan voor de verwerking van persoonsgegevens; dat is meestal de houder (Wet BAG art. 4, Handelsregisterwet art. 3, Wmo art. 5.1.1 lid 7, regel 1844). Vermeld het in de kolom Naam als toevoeging, bijvoorbeeld "houder (verwerkingsverantwoordelijke)". De definitie staat in artikel 4 van de AVG, dat nog niet als bron is opgenomen 🔍 Verificatie nodig.
+- **Verwerkingsverantwoordelijke is een aanduiding, geen aparte verantwoordelijkheid.** De wet wijst de verwerkingsverantwoordelijke aan voor de verwerking van persoonsgegevens; dat is meestal de houder (Wet BAG art. 4, Handelsregisterwet art. 3, Wmo art. 5.1.1 lid 7, regel 1844). Vermeld het in de kolom Naam als toevoeging, bijvoorbeeld "houder (verwerkingsverantwoordelijke)". De AVG definieert de verwerkingsverantwoordelijke als degene die "alleen of samen met anderen, het doel van en de middelen voor de verwerking van persoonsgegevens vaststelt", en laat het recht van een lidstaat toe te bepalen "wie de verwerkingsverantwoordelijke is" (AVG art. 4, regel 159). Wie namens die partij verwerkt, is verwerker (regel 165); dat is een toevoeging van dezelfde soort.
 - **Eén toegang per rol.** Vervult één actor meerdere rollen (de gemeente is houder, bronhouder én verstrekker van de BAG), dan krijgt elke rol haar eigen toegangsrelatie. Een rol krijgt alleen een pagina als de beslistabel dat zegt; de verantwoordelijkheid zelf is geen element.
 
 ## Toepasbaarheid op andere gegevensbronnen
@@ -91,7 +102,7 @@ Toelichting bij de keuzes:
 | Gegevensverwerking in het sociaal domein | Wmo-dossier; Suwinet | houder (verwerkingsverantwoordelijke), afnemer, betrokkene | Van toepassing. De wet wijst de verwerkingsverantwoordelijke aan: het college voor de Wmo (art. 5.1.1 lid 7, regel 1844), het UWV voor de polisadministratie die de gemeente via Suwinet afneemt (Wet SUWI art. 33, regel 862). |
 | Interne gemeentelijke administratie zonder eigen wet | zaakregistratie, subsidieadministratie, klantcontacten | houder, bronhouder, afnemer; beheerder bij een gedeelde voorziening | Van toepassing als ordeningsprincipe. De rollen worden toegekend binnen de gemeente (welke rol houdt bij, welke gebruikt), zonder wettelijke plicht tot gebruik of terugmelding. Grondslag van de relatie is dan de bron die de werkwijze beschrijft, niet een wet. |
 | Externe administratie van een aanbieder of partner | administratie van een Wmo-aanbieder; uitvaartondernemer | afnemer (gemeente), partij (bij een contract) | Beperkt. De administratie van de partner valt buiten het gemeentelijk perspectief [WC4]; alleen wat de gemeente ontvangt (verantwoording, opdracht) wordt een object met een gemeentelijke rol als afnemer. De Wmo maakt de aanbieder verwerkingsverantwoordelijke voor zijn eigen verwerking (art. 5.1.2, regel 1880). |
-| Archief | archiefbescheiden van de gemeente | houder (met zorgdrager als aanduiding) | Van toepassing met een kanttekening. De Archiefwet spreekt van de zorgdrager, die archiefbescheiden "in goede, geordende en toegankelijke staat" brengt en bewaart (memorie van toelichting, regel 74). Dat is de houder in de archieffase; de wettekst zelf is nog geen bron 🔍 Verificatie nodig. |
+| Archief | archiefbescheiden van de gemeente | houder (zorgdrager), beheerder | Van toepassing. De zorgdrager is "degene die bij of krachtens de wet belast is met de zorg voor de archiefbescheiden" (Archiefwet art. 1, regel 56); voor gemeentelijke organen zijn dat burgemeester en wethouders (art. 30, regel 972). De gemeentelijke archiefbewaarplaats "wordt beheerd door een gemeentearchivaris" (art. 32, regel 1031): de verantwoordelijkheid beheerder. Zorgdrager wordt, net als verwerkingsverantwoordelijke, een toevoeging bij houder. |
 
 **Conclusie.** Vijf namen zijn breed bruikbaar voor elke gegevensbron: houder, bronhouder, beheerder, verstrekker en afnemer. Toezichthouder en betrokkene zijn situatief: toezicht is buiten de basisregistraties zelden apart geregeld, en betrokkene speelt alleen bij gegevens over personen. Partij is nodig voor afspraken. Bij kleine en interne bronnen vallen houder, bronhouder en verstrekker vaak samen bij één rol; modelleer dan alleen de rollen die in de bron te onderscheiden zijn.
 
@@ -147,7 +158,7 @@ Waarom deze vorm:
 - **De handeling vervangt het toegangstype in de kolom Relatie.** "toegang (bijwerken)" in plaats van "toegang (lezen-schrijven)": het toegangstype volgt er eenduidig uit, er komt geen kolom bij, en de controle kan de afleiding doen. Voor een rol werkt het net zo: "toegang (bronhouder)".
 - **GEMMA-namen waar ze bestaan.** Registreren en bijwerken zijn de namen die GEMMA al gebruikt. Raadplegen sluit aan op "raadpleger" in het kennismodel.
 - **De twee reeksen controleren elkaar.** Een rol die bronhouder is van een object, hoort toegewezen te zijn aan gedrag dat dat object registreert of bijwerkt; een afnemer aan gedrag dat het raadpleegt; een verstrekker aan gedrag dat het verstrekt. Een object met *levenscyclus* ja hoort gedrag te hebben dat het registreert én beëindigt.
-- **Archiveren is nog open.** Bewaren, overbrengen en vernietigen van archiefbescheiden zijn handelingen uit de Archiefwet, die nog geen bron is. Vernietigen valt voorlopig onder beëindigen.
+- **Archiveren.** De Archiefwet verplicht overheidsorganen archiefbescheiden "in goede, geordende en toegankelijke staat te brengen en te bewaren, alsmede zorg te dragen voor de vernietiging" (art. 3, regel 160), en blijvend te bewaren bescheiden over te brengen naar een archiefbewaarplaats (art. 12, regel 354). Of dat een eigen handeling wordt, is de laatste open vraag.
 
 **Voorlopige indeling van de bestaande relaties.** Elke wijziging wordt bij de herbeoordeling apart voorgelegd [EL9].
 
@@ -182,7 +193,3 @@ Samen: negen keer registreren, zes keer bijwerken, zeven keer raadplegen; vier r
 
 ## Open vragen
 
-- Neemt de redacteur de vijf handelingen over (registreren, bijwerken, beëindigen, raadplegen, verstrekken), met de handeling of verantwoordelijkheid tussen haakjes achter toegang in de kolom Relatie?
-- Neemt de redacteur de acht verantwoordelijkheden over, of alleen de vijf breed bruikbare (houder, bronhouder, beheerder, verstrekker, afnemer)?
-- Wordt "verwerkingsverantwoordelijke" vermeld als toevoeging bij de naam, of als eigen veld bij de relatie?
-- Worden artikel 4 van de AVG en de Archiefwet 2021 als bron opgenomen, zodat de begrippen verwerkingsverantwoordelijke, betrokkene en zorgdrager een wettelijke grondslag krijgen?
