@@ -24,6 +24,13 @@ Deze analyse vergelijkt de elementtypen van deze wiki, hun kenmerken en de besli
 | 2026-09-30 | Product blijft paginatype. Business Interaction blijft herkend en wordt per geval voorgelegd. Representatie en locatie worden een vaste uitkomst zonder pagina. |
 | 2026-10-01 | Over GEMMA is bron. Deze wiki volgt de namen en definities van het GEMMA-kennismodel waar die passen. |
 | 2026-10-01 | Een rol mag ook aan een bedrijfsproces worden toegewezen, niet alleen aan een bedrijfsfunctie. GEMMA doet dat zelf op het niveau van het deelproces (regel 599); de procesarchitectuur van GEMMA is abstract uitgewerkt, en er is geen andere reden om de relatie weg te laten. |
+| 2026-10-01 | Een actor wordt alleen via een rol aan gedrag en objecten gekoppeld, zoals in GEMMA (regel 914). De kernrelatie van een actor wordt *vervult een rol*. |
+| 2026-10-01 | Een relatie van rol naar object wordt gesplitst: wat de rol met het object ís, wordt toegang met een getypeerde naam (raadpleger, beheerder, eigenaar, verantwoordelijke; de lijst volgt de indeling uit de Wet basisregistraties en wordt nog vastgesteld). Een handeling, zoals aanvragen of afgeven, wordt een toewijzing van de rol aan een proces dat het object gebruikt of maakt. |
+| 2026-10-01 | Een bedrijfsfunctie bedient een bedrijfsproces, zoals in GEMMA (regel 920); de aggregatie van functie naar proces vervalt. Een proces mag meerdere functies gebruiken. |
+| 2026-10-01 | Een bedrijfsproces krijgt het veld *procesniveau* (bedrijfsproces of deelproces). Een deelproces krijgt een pagina als het de procesdrempel haalt, en hangt met een aggregatie onder een bedrijfsproces ("is opgebouwd uit", regel 396). Processtap en handeling worden nooit een pagina. |
+| 2026-10-01 | Een concrete wet of verordening wordt een beleidskader (Driver, regel 448) in een nieuwe map `motivatie/` naast `bedrijfsarchitectuur/`, met "geeft grondslag aan" naar GEMMA-kwaliteitsdoelen waar dat aanwijsbaar is (regel 458). Alleen beleidskaders; andere motivatietypen blijven buiten dit model. Het generieke bedrijfsobject Regeling blijft voor het vaststellen, wijzigen en bekendmaken, met een associatie naar het beleidskader. |
+| 2026-10-01 | De paginatypen bedrijfsdienst en bedrijfsgebeurtenis en hun mappen worden hernoemd naar dienst en gebeurtenis; de nieuwe typen heten bedrijfssamenwerking en kanaal. Engelse ArchiMate-sleutels blijven. Dit gaat mee met de herziening van de beslistabel. |
+| 2026-10-01 | Na de herziening worden alle bestaande elementen opnieuw beoordeeld, met een run per onderwerp. Elke wijziging van type, relatie of status wordt apart voorgelegd; een element waarvan alleen een kenmerk is aangevuld, houdt zijn status. |
 
 ## Het GEMMA-kennismodel
 
@@ -45,7 +52,7 @@ Het kennismodel is volgens GEMMA "de invulling van de ArchiMate conventie voor d
 | annotatie `data_object` | Data-object | Data Object | Samenhangende set gegevens die geautomatiseerd kan worden verwerkt. | GEMMA | 897 | Gelijk. In GEMMA realiseert een data-object een bedrijfsobject (regel 971). |
 | herkend: Business Interaction | — | Business Interaction | — | — | — | Niet in het kennismodel; consistent met voorleggen. |
 | geen pagina: Representation, Location | — | Representation, Location | — | — | — | Niet in het kennismodel. |
-| bedrijfsobject (governance-object: wet of verordening als geheel) | Beleidskader | Driver | Beleidskader is gebaseerd op bestaand overheidsbeleid (Nationaal en Europees) en op de instrumenten die in het kader van dat beleid zijn ontwikkeld, zoals wetten, regelgeving, Kamerstukken en bestuursakkoorden | NORA | 448 | GEMMA plaatst wetgeving in de motivatielaag. Zie open vragen. |
+| bedrijfsobject (governance-object: wet of verordening als geheel); wordt beleidskader | Beleidskader | Driver | Beleidskader is gebaseerd op bestaand overheidsbeleid (Nationaal en Europees) en op de instrumenten die in het kader van dat beleid zijn ontwikkeld, zoals wetten, regelgeving, Kamerstukken en bestuursakkoorden | NORA | 448 | Besloten 2026-10-01: een concrete wet of verordening wordt een beleidskader in `motivatie/`; het object Regeling blijft. |
 | buiten dit model: losse norm (Requirement of Constraint) | Standaard; Implicatie | Constraint; Requirement | Constraint is in GEMMA alleen een standaard; Requirement is een implicatie van een principe of een eis aan een informatiesysteem. | Wikipedia; GEMMA | 18, 450 | GEMMA heeft geen type voor een wettelijke norm. |
 | buiten dit model: vermogen, groepering, doel | Capability; Domein, Beleidsdomein; Kwaliteitsdoel | Capability; Grouping; Goal | — | — | 565, 183, 54, 447 | GEMMA gebruikt ze, deze wiki modelleert ze niet. De mappen per beleidsdomein volgen dezelfde Iv3-indeling als GEMMA (regel 193). |
 
@@ -255,6 +262,8 @@ Het kennismodel legt per typepaar vast welke relatie GEMMA gebruikt. Deze wiki s
 
 ## Inhoudelijke gevolgen
 
+Deze gevolgen leidden tot de besluiten van 1 oktober 2026 bovenaan de pagina.
+
 - **Rol aan proces.** Het besluit van 1 oktober bevestigt wat de wiki al doet: zeven toewijzingen van een rol aan een proces blijven staan. *Toegewezen partij* blijft de kernrelatie van een proces.
 - **Actor via de rol.** In GEMMA wordt een actor alleen aan een rol toegewezen (regel 914). In deze wiki staan zes actoren direct aan een proces en één aan een gebeurtenis, en zeventien actoren met een associatie naar een object. Volgt de wiki GEMMA, dan komt er steeds een rol tussen. Dan wordt de kernrelatie van een actor *vervult een rol*.
 - **Rol en object.** GEMMA gebruikt "heeft toegang tot", met als betekenissen verantwoordelijk voor, eigenaar van, beheerder van en raadpleger van (regel 916). De twintig associaties van rol naar object passen daar grotendeels in.
@@ -262,15 +271,12 @@ Het kennismodel legt per typepaar vast welke relatie GEMMA gebruikt. Deze wiki s
 - **Procesniveau.** GEMMA onderscheidt procescluster, ketenproces, bedrijfsproces, deelproces, processtap en handeling (regel 409-421, 564). Een deelproces wordt binnen één organisatorische eenheid uitgevoerd en levert een bijdrage aan een dienst (regel 388); een processtap ligt binnen één bedrijfsfunctie (regel 387). De beslistabel vraagt nu niet op welk niveau een proces ligt. Schouwen lijk, Opgraven lijk en Ruimen graf kunnen daardoor deelprocessen zijn in GEMMA-termen.
 - **Product.** Een product bundelt in GEMMA diensten en afspraken (regel 257) en bedient de klant (regel 596). Het nieuwe kenmerk heet daarom *omvat diensten en afspraken*, niet meer *omvat aanbod* met objecten.
 - **Afspraak.** Contract heet in GEMMA Afspraak. De twee elementen van dit type, Uitvoeringsovereenkomst en Grafrecht, blijven inhoudelijk gelijk.
-- **Wetgeving.** GEMMA plaatst wetten en regelgeving als beleidskader in de motivatielaag (regel 448), en een product heeft een associatie met een beleidskader (regel 595). Deze wiki maakt van een wet of verordening als geheel een bedrijfsobject. Dat is een bewuste keuze die afwijkt.
+- **Wetgeving.** Het GEMMA-kennismodel noemt wetten en regelgeving als beleidskader in de motivatielaag (regel 448). Het GEMMA-architectuurmodel heeft daarnaast een bedrijfsobject Regeling, overgenomen uit het GGM, waaraan het element Regeling van deze wiki gekoppeld is. GEMMA gebruikt dus beide: het beleidskader als motivatie, de regeling als object dat de gemeente vaststelt, wijzigt en bekendmaakt. De motivatielaag van het GEMMA-model bevat nog geen beleidskaders, alleen kernwaarden.
 - **Namen.** De paginatypen bedrijfsdienst, bedrijfsgebeurtenis en contract heten in GEMMA Dienst, Gebeurtenis en Afspraak. In de criteria van deze wiki staan nu de GEMMA-namen en -definities. De technische namen van paginatypen en mappen zijn nog niet aangepast.
 
 ## Open vragen
 
-- Moet een actor voortaan via een rol aan gedrag en objecten worden gekoppeld, zoals in GEMMA? Dan worden 24 bestaande relaties anders gemodelleerd.
-- Worden de associaties van rol naar object omgezet naar toegang, met de GEMMA-betekenissen als relatienaam?
-- Wordt de aggregatie van functie naar proces een bediening, of krijgt de wiki een procescluster?
-- Komt er een kenmerk of regel voor het procesniveau, zodat een deelproces of processtap geen eigen bedrijfsproces wordt?
-- Blijft een wet of verordening als geheel een bedrijfsobject, of volgt de wiki het beleidskader van GEMMA?
-- Worden de technische namen van paginatypen en mappen gelijkgetrokken met GEMMA (dienst, gebeurtenis, afspraak)?
-- Worden bestaande elementen opnieuw door de beslistabel gehaald na de wijziging, of alleen nieuwe begrippen?
+De vragen van 1 oktober 2026 zijn beantwoord; zie de besluiten bovenaan. Nog vast te stellen:
+
+- De lijst van getypeerde namen voor de toegang van een rol tot een object (raadpleger, beheerder, eigenaar, verantwoordelijke en eventueel meer), op basis van de Wet basisregistraties. Daarvoor is die wet nog als bron nodig.
+- De kenmerken en de drempel voor een beleidskader, en welke relaties het heeft met processen, diensten en producten (GEMMA: een product heeft een associatie met een beleidskader, regel 595).
