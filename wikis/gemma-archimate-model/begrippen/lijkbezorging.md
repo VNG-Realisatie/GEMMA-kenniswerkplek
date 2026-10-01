@@ -6,6 +6,7 @@ status: in-behandeling
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2010-vng-model-beheersverordening-begraafplaatsen
 - 2026-vng-wet-op-de-lijkbezorging
 - 2026-vng-retributies
 - 2024-rijk-gemeentewet-wettekst
@@ -27,6 +28,7 @@ Wat de gemeente ziet, doet en beslist rond de lijkbezorging: lijkschouw door de 
 
 - [Wet op de lijkbezorging](../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)
+- [Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting](../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md)
 - [Wet op de lijkbezorging](../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md)
 - [Retributies](../bronanalyses/lijkbezorging/2026-vng-retributies.md)
 - [Gemeentewet (BWBR0005416) - geldend per 2024-01-31](../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md)

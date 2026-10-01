@@ -11,3 +11,7 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **Kanalen** als één centrale set.
 - **GGM-terugmeldingen 1–9** bij de herbeoordeling koppelen aan de nieuwe beoordelingen; een melding die niet meer van toepassing is, voorleggen.
 - **Links in de analyses** (`analyses/gegevensrollen.md`, `analyses/gemma-kennismodel.md`) naar de oude elementpagina's bijwerken zodra de elementen opnieuw bestaan.
+
+## Algemeen onderwerp besluitvorming en heffingen
+
+- **VNG Modelverordening lijkbezorgingsrechten** (ledenbrief 2011, met kostenonderbouwing) als bron en mogelijk beleidskader opnemen bij het algemene onderwerp voor Heffing en Heffingsverordening (besluit redacteur 2026-10-01). De link op de VNG-pagina `https://vng.nl/artikelen/modelverordeningen-wet-op-de-lijkbezorging` geeft een 404; zoek een openbare kopie.

@@ -5,7 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 relevant: ja
-bijgewerkt: 2026-09-30
+bijgewerkt: 2026-10-01
 ---
 
 # Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023
@@ -14,17 +14,21 @@ Bron: [tekst](../../../../sources/raw/2023-groningen-beheersverordening-gemeente
 
 ## Samenvatting
 
-Een gemeentelijke beheersverordening begraafplaatsen, met de begripsbepalingen uit het VNG-model. Ze is formeel lokale regelgeving, maar haar rol in dit onderwerp is de gangbare taal van de gemeentelijke begraafplaats: welke namen gemeenten gebruiken voor graven, rechten, urnen en de mensen die ermee werken. Ze werkt uit wat de Wet op de lijkbezorging aan de houder van de begraafplaats overlaat.
+Een gemeentelijke beheersverordening begraafplaatsen, gebaseerd op het VNG-model (zie de bronanalyse van de Model-beheersverordening begraafplaatsen 2010). Ze is formeel lokale regelgeving van één gemeente, vastgesteld "gelet op artikel 35 van de Wet op de lijkbezorging en artikel 149 van de Gemeentewet"; als regeling van één gemeente blijft ze bron en is ze geen beleidskader. Haar rol in dit onderwerp is de gangbare taal van de gemeentelijke begraafplaats: welke namen gemeenten gebruiken voor graven, rechten, urnen en de mensen die ermee werken, en welke diensten de gemeente op de begraafplaats aanbiedt. Ze werkt uit wat de Wet op de lijkbezorging aan de houder van de begraafplaats overlaat.
 
-**Graven en rechten.** De verordening onderscheidt veel grafsoorten (art. 1, 11): algemeen graf, algemeen kindergraf, particulier graf voor bepaalde en onbepaalde tijd, particulier kindergraf, particulier urnengraf, particuliere urnennis, partnergraf, foetusgraf, vrije-veldgraf en grafkelder. Het wettelijke uitsluitend recht heet hier ook *recht op een particulier graf* of *grafrecht*. Het college verleent het (art. 16), verlengt het, schrijft het over (art. 18), ontvangt afstand (art. 19) en verklaart het vervallen (art. 20). De rechthebbende vraagt aan, verlengt, laat overschrijven, doet afstand en onderhoudt de grafbedekking.
+**Graven en rechten.** De verordening onderscheidt veel grafsoorten (art. 1, 11): algemeen graf, algemeen kindergraf, particulier graf voor bepaalde en onbepaalde tijd, particulier kindergraf, particulier urnengraf, particuliere urnennis, partnergraf, foetusgraf, vrije-veldgraf en grafkelder. Het wettelijke uitsluitend recht heet hier ook *recht op een particulier graf* of *grafrecht*. Het college verleent het op schriftelijke aanvraag (art. 16), verlengt het op aanvraag, schrijft het over (art. 18), ontvangt afstand (art. 19) en verklaart het vervallen (art. 20). De rechthebbende vraagt aan, verlengt, laat overschrijven, doet afstand en onderhoudt de grafbedekking.
 
 **Asbus en urn.** De verordening volgt de wet: *asbus* is de bus met de as, een *(sier)urn* is een voorwerp ter berging van een of meer asbussen (art. 1 c, x). In de namen van graven en voorzieningen is "urn" de gangbare term: urnengraf, urnennis, urnenmuur.
 
-**Beheer.** Het college heeft het beheer over de gemeentelijke begraafplaatsen (art. 3 lid 2). De *beheerder*, een ambtenaar, heeft de dagelijkse leiding: hij bepaalt tijd en plaats van de begraving, ontvangt de stukken, houdt het register bij en ziet toe op ruiming en orde (art. 1 e, 7, 9, 27, 30). Op delen van de begraafplaats berust het beheer bij een kerkgenootschap of het bestuur van een gezindte (art. 3 lid 3, art. 29).
+**Beheer.** Het college heeft het beheer over de gemeentelijke begraafplaatsen (art. 3 lid 2). De *beheerder*, een ambtenaar, heeft de dagelijkse leiding: hij bepaalt tijd en plaats van de begraving, ontvangt de stukken en aanvragen, houdt het register bij en ziet toe op ruiming en orde (art. 1 e, 5–9, 27, 30). Op het Joodse deel berust het beheer bij de besturen van die gezindte; voor een deel dat een kerkgenootschap ter beschikking heeft, stelt het college na overleg met het bestuur afwijkende regels (art. 3 lid 3, art. 29).
 
-**Handelingen en besluiten.** Kennisgeving van begraven, bijzetten of verstrooien (art. 7), vergunning grafbedekking (art. 22), vergunning grafkelder (art. 17), toestemming incidentele asverstrooiing (art. 21), ruiming van algemene graven met aankondiging (art. 27), opgraven, ruimen of schudden op verzoek van de rechthebbende (art. 28), onderhoud door de gemeente tegen betaling van een recht uit de heffingsverordening (art. 23, 24).
+**Diensten.** De verordening beschrijft wat de gemeente aan nabestaanden en rechthebbenden aanbiedt, meestal tegen een recht uit de heffingsverordening: uitgifte en verlenging van een particulier graf of urnengraf op aanvraag (art. 16), begraven en asbezorging op aangegeven tijden na kennisgeving (art. 7, 10), gebruik van aula, familiekamer, ontvangstruimte en multimedia-installatie op aanvraag bij de beheerder (art. 8), incidentele asverstrooiing met toestemming (art. 21), onderhoud van graven door de gemeente op schriftelijk verzoek tegen betaling (art. 23, 24 lid 3), en opgraven, ruimen of schudden op aanvraag van de rechthebbende (art. 28).
 
-Afbakening: de lijst van Groningse begraafplaatsen (art. 3 lid 1), openingstijden, ordemaatregelen en de aula en multimedia-installatie van Selwerderhof (art. 4–6, 8, 10) zijn lokaal en leveren geen begrippen voor het model.
+**Kanalen en mededelingen.** Aanvragen en kennisgevingen gaan schriftelijk naar de door het college aangewezen ambtenaar of de beheerder (art. 7, 8, 16, 28). Mededelingen aan rechthebbenden en belanghebbenden gaan per brief, en als het adres onbekend is met een bordje of sticker bij het graf en op het mededelingenbord bij de ingang (art. 24 lid 4, 26 lid 2, 27 lid 1). De verordening noemt geen digitaal kanaal.
+
+**Gebeurtenissen.** Het grafrecht vervalt door het verlopen van de termijn, door afstand of door opheffing van de begraafplaats, of wordt vervallen verklaard na wanbetaling, verzuim of het niet overschrijven binnen een jaar na het overlijden van de rechthebbende (art. 18 lid 4, 20).
+
+Afbakening: de lijst van Groningse begraafplaatsen (art. 3 lid 1), openingstijden en ordemaatregelen (art. 4–5) zijn lokaal en leveren geen begrippen voor het model; de aula en de multimedia-installatie (art. 8) staan alleen als mogelijke dienst genoemd.
 
 ## Kernbegrippen
 
@@ -65,6 +69,16 @@ Afbakening: de lijst van Groningse begraafplaatsen (art. 3 lid 1), openingstijde
 | register van de begraven lijken | register waarvoor het college voorschriften vaststelt en dat de beheerder bijhoudt | register | art. 30 |
 | heffingsverordening | verordening op de heffing en invordering van rechten voor het gebruik van de gemeentelijke begraafplaatsen | — | art. 1 l |
 | kerkgenootschap | krijgt een deel van de begraafplaats ter beschikking; het college stelt na overleg met het bestuur afwijkende regels | bestuur van het kerkgenootschap, gezindte | art. 3 lid 3, 29 |
+| begraven van een lijk | het begraven van een lijk in een graf of het plaatsen van een asbus in of op een particulier graf | begraving | art. 1 n |
+| gebruik aula en multimedia-installatie | gebruik van aula-entree, aula, familiekamer, ontvangstruimte en multimedia-installatie, aan te vragen bij de beheerder; na het eerste uur tegen tarief uit de heffingsverordening | — | art. 8 |
+| plechtigheid | herdenkingsbijeenkomst of onthulling op de begraafplaats, zes werkdagen vooraf te melden aan de beheerder | — | art. 6 |
+| machtiging | door de rechthebbende of degene die in de uitvaart voorziet ondertekende machtiging voor begraving in een particulier graf | — | art. 9 lid 2 |
+| registratieformulier | formulier bij het lijk (art. 8 lid 1 Wlb), over te leggen aan de beheerder | — | art. 9 lid 1 |
+| belanghebbende | ontvangt bericht van het voornemen tot ruiming van een algemeen graf | — | art. 27 lid 1 |
+| mededelingenbord | bord bij de ingang van de begraafplaats waarop het voornemen tot ruiming wordt bekendgemaakt | bordje bij het graf, sticker op het graf | art. 24 lid 4, 26 lid 2, 27 lid 1 |
+| college | college van burgemeester en wethouders; heeft het beheer, verleent rechten en vergunningen | college van burgemeester en wethouders | art. 1 g, 3 lid 2 |
+| burgemeester | ontvangt de aanvraag voor opgraven, ruimen of schudden; geeft toestemming voor begraven binnen 36 uur | — | art. 1 f, 7 lid 2, 28 |
+| Joodse begraafplaats | deel van de Noorderbegraafplaats en Selwerderhof; beheer bij de besturen van die gezindte | gezindte | art. 3 lid 3 |
 | uitvaartondernemer | bepaalt met de beheerder tijd en plaats van de begraving | uitvaartonderneming | art. 5, 7 |
 | nabestaande | kan werkzaamheden bij de begraving zelf verrichten en kan bij ruiming de resten laten herbegraven | — | art. 7 lid 4, 27 lid 4 |
 
@@ -111,16 +125,38 @@ Afbakening: de lijst van Groningse begraafplaatsen (art. 3 lid 1), openingstijde
 | kerkgenootschap | krijgt ter beschikking | gemeentelijke begraafplaats | art. 29 |
 | college | overlegt met | kerkgenootschap | art. 29 lid 1 |
 | kerkgenootschap | beheert | deel van de gemeentelijke begraafplaats | art. 3 lid 3 |
+| raad | stelt vast, gelet op Wlb art. 35 en Gemeentewet art. 149 | beheersverordening gemeentelijke begraafplaatsen | intitulé |
+| college | stelt nadere regels vast over | beheersverordening gemeentelijke begraafplaatsen | art. 2 lid 2 |
+| gezindte | beheert | Joodse begraafplaats | art. 3 lid 3 |
+| beheerder | ontvangt melding van | plechtigheid | art. 6 lid 1 |
+| beheerder | ontvangt aanvraag voor | gebruik aula en multimedia-installatie | art. 8 lid 1 |
+| heffingsverordening | regelt het tarief voor | gebruik aula en multimedia-installatie | art. 8 lid 2, 3 |
+| rechthebbende | ondertekent | machtiging | art. 9 lid 2 |
+| beheerder | onderzoekt | machtiging | art. 9 lid 3 |
+| college | geeft goedkeuring aan tijdstip van | begraven van een lijk | art. 10 lid 2 |
+| rechthebbende | vraagt schriftelijk aan | onderhoud van graven | art. 23 lid 1, 24 lid 3 |
+| rechthebbende | betaalt recht voor | onderhoud van graven | art. 23 lid 2 |
+| college | verplicht per aanschrijving tot onderhoud | rechthebbende | art. 24 lid 4 |
+| college | maakt voornemen tot ruiming bekend aan | belanghebbende | art. 27 lid 1 |
+| college | maakt bekend via | mededelingenbord | art. 27 lid 1 |
+| overlijden van de rechthebbende | start termijn voor | overschrijving van het grafrecht | art. 18 lid 2 |
+| college | doet vervallen | uitsluitend recht tot begraven | art. 18 lid 4, 20 lid 2 |
 | uitvaartondernemer | overlegt met beheerder over | begraving | art. 7 lid 1 |
 | degene die in de uitvaart voorziet | doet | kennisgeving van begraven of bijzetten | art. 7 lid 2 |
 | nabestaande | vraagt aan bij ruiming | herbegraving van resten | art. 27 lid 4 |
 
 ## Relevantie voor de architectuur
 
-- **Namen (gangbare taal):** urn (wettelijk asbus; de redacteur kiest de naam Urn, met het onderscheid asbus/sierurn in de definitie), grafrecht naast het wettelijke uitsluitend recht, rechthebbende, beheerder, grafbedekking.
-- **Bedrijfsobjecten (kandidaten):** graf met een reeks specialisaties (algemeen, particulier, kinder-, foetus-, urnengraf, urnennis, partnergraf, vrije-veldgraf, grafkelder), grafrecht, grafbedekking, register van de begraven lijken. De grafsoorten zijn in ASSESS een toets van het specialisatieniveau: welke hebben eigen gegevens of een eigen levenscyclus (algemeen tegenover particulier), welke zijn alleen een indeling?
+- **Namen (gangbare taal):** urn (wettelijk asbus; de redacteur kiest de naam Urn, met het onderscheid asbus/sierurn in de definitie), grafrecht naast het wettelijke uitsluitend recht, rechthebbende, beheerder, grafbedekking, college (wettelijk burgemeester en wethouders).
+- **Beleidskader:** geen; de verordening is regelgeving van één gemeente en blijft bron. Ze bevestigt Wlb art. 35 en Gemeentewet art. 149 als grondslag (intitulé).
+- **Bedrijfsobjecten (kandidaten):** graf met een reeks specialisaties (algemeen, particulier, kinder-, foetus-, urnengraf, urnennis, partnergraf, vrije-veldgraf, grafkelder), grafrecht, grafbedekking, register van de begraven lijken. De grafsoorten zijn een toets van het specialisatieniveau: welke hebben eigen gegevens of een eigen levenscyclus (algemeen tegenover particulier), welke zijn alleen een indeling?
 - **Processen (kandidaten):** uitgeven, verlengen, overschrijven en vervallen verklaren van grafrechten, begraven en bijzetten na kennisgeving, ruimen, onderhoud van graven, verlenen van vergunning grafbedekking.
-- **Actoren en rollen (kandidaten):** rechthebbende (rol), beheerder (rol binnen de gemeente), college, kerkgenootschap, uitvaartondernemer, nabestaande.
+- **Diensten (kandidaten):** onderhoud van graven door de gemeente (op verzoek, tegen betaling), uitgifte en verlenging van een graf op aanvraag, gebruik van aula en multimedia-installatie, incidentele asverstrooiing, opgraven of ruimen op aanvraag van de rechthebbende. Telkens is er een afnemer (rechthebbende, nabestaande) en een tarief.
+- **Product:** de verordening bundelt diensten en afspraken niet als één aanbod; geen productcatalogus.
+- **Kanalen:** schriftelijke aanvraag en kennisgeving bij de beheerder of aangewezen ambtenaar, brief, bordje of sticker bij het graf en het mededelingenbord bij de ingang. Dit zijn vormen van mededelen en aanvragen; geen digitaal kanaal. Kanalen vormen één centrale set.
+- **Samenwerking:** geen; het kerkgenootschap en de gezindte beheren een deel van de begraafplaats via overleg met het college, zonder samenwerkingsverband.
+- **Actoren en rollen (kandidaten):** rechthebbende (rol), beheerder (rol binnen de gemeente), college, burgemeester, kerkgenootschap en gezindte, uitvaartondernemer, nabestaande, belanghebbende bij een algemeen graf.
+- **Gebeurtenissen (kandidaten):** verval van het grafrecht (art. 20), overlijden van de rechthebbende (start termijn overschrijving, art. 18).
 - **Besluiten:** vergunning grafbedekking, vergunning grafkelder, toestemming asverstrooiing: net als de wettelijke vergunningen kandidaat-specialisaties van een breder besluitbegrip.
 
 ## Citaten
@@ -138,3 +174,9 @@ Afbakening: de lijst van Groningse begraafplaatsen (art. 3 lid 1), openingstijde
 > Het college heeft het beheer over de gemeentelijke begraafplaatsen. (art. 3 lid 2)
 
 > Voor het hebben van een grafbedekking is een schriftelijke vergunning nodig van het college. (art. 22 lid 1)
+
+> gelet op artikel 35 van de Wet op de lijkbezorging en artikel 149 van de Gemeentewet; (intitulé)
+
+> Op Selwerderhof geschiedt het onderhoud aan graven uitsluitend door de gemeente. Op de overige begraafplaatsen voert de gemeente onderhoud aan graven voor tenminste vijf jaren uit indien de rechthebbende daartoe schriftelijk verzoekt. (art. 23 lid 1)
+
+> Het voornemen van het college om een algemeen graf te ruimen wordt ten minste een jaar voorafgaande aan het tijdstip waarop het graf geruimd zal worden per brief aan belanghebbende bekend gemaakt. (art. 27 lid 1)
