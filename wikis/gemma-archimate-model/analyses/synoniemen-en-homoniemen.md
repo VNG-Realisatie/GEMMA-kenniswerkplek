@@ -9,6 +9,14 @@ bijgewerkt: '2026-10-01'
 
 Deze analyse vergelijkt hoe de vorige bedrijfsobjectenwiki (repository GEMMA-GGM-bedrijfsobjectenwiki, map Bedrijfsarchitectuur) met synoniemen en homoniemen omging, met wat deze wiki nu doet, en adviseert hoe het past in de aanpak met kenmerken en beslistabel ([kenmerken per elementtype](kenmerken.md)).
 
+## Besluiten van de redacteur
+
+| Datum | Besluit |
+|---|---|
+| 2026-10-01 | Een homoniem is: zelfde naam, ander begrip, in elke bron (wiki, GGM, GEMMA-model, wet, beleid) en voor elk elementtype. Naamkeuze en wederzijdse verwijzing altijd; een terugmelding alleen bij een GGM-homoniem. Een actor of rol en een bedrijfsobject met dezelfde naam blijven een tegenhanger. |
+| 2026-10-01 | Synoniem en homoniem komen als stap 0 *Welk begrip?* in de beslistabel, met de velden `synoniem_van` en `homoniem_van` in de beoordeling. Synoniem: uitkomst *synoniem*, geen pagina, het woord naar `synoniemen` van het element, in de begrippenlijst als "synoniem van". Homoniem: door naar de kenmerken, naamkeuze voorleggen. |
+| 2026-10-01 | `## Homoniemen` wordt een tabel met de kolommen Begrip (link als er een pagina is), Betekenis, Waar (GGM-entiteit met GUID en beleidsdomein, GEMMA-element of bron als link) en Naamkeuze. De controle toetst per rij de wederzijdse link en, bij een GGM-homoniem, de terugmelding. |
+
 ## Begrippen
 
 | Verhouding | Betekenis | Voorbeeld |
@@ -58,7 +66,7 @@ Samen met drie bestaande kenmerken ontstaat zo één overzicht van de verhouding
 
 Een duplicaat is geen verhouding tussen begrippen maar tussen vastleggingen in een bron; het blijft bij de GGM-match (`ggm_duplicaat_entiteiten`, terugmelding).
 
-## Advies
+## Advies (besloten 2026-10-01, punt 4 en 5 volgen bij de herziening)
 
 1. **Homoniem breed definiëren.** Zelfde naam, ander begrip, ongeacht de bron en voor alle elementtypen. Een GGM-homoniem krijgt daarnaast een terugmelding. Een actor of rol en een bedrijfsobject met dezelfde naam blijven een tegenhanger, geen homoniem.
 2. **Stap 0 in de beslistabel.** Twee extra velden in de beoordeling, net als `genoemd_begrip`: `synoniem_van` en `homoniem_van`. Regel 0: `synoniem_van` gevuld → uitkomst *synoniem* (geen pagina, naam naar `synoniemen`); `homoniem_van` gevuld → door naar de kenmerken, met *voorleggen* voor de naamkeuze. Zo beslist de beslistabel ook hier, en staat de uitkomst in de begrippenlijst.
@@ -68,6 +76,4 @@ Een duplicaat is geen verhouding tussen begrippen maar tussen vastleggingen in e
 
 ## Open vragen
 
-- Wordt een homoniem breed gedefinieerd (elke bron, elk type), of blijft het bij GGM-naamgenoten?
-- Komen synoniem en homoniem als stap 0 in de beslistabel, met de velden `synoniem_van` en `homoniem_van`?
-- Wordt `## Homoniemen` een tabel met vaste kolommen?
+Geen; de vragen van 1 oktober 2026 zijn beantwoord (zie de besluiten bovenaan).
