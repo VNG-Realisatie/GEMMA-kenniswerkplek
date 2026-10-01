@@ -1,54 +1,26 @@
 """Gedeelde hulpfuncties voor de tools van gemma-archimate-model.
 
-- elementpagina's vinden en lezen (paginatypen met `curated: true` uit wiki.yaml);
-- gegenereerde bestanden schrijven met een hash-kop, en controleren dat niemand ze met de hand wijzigde;
-- een gewijzigde pagina stagen in het kladblok van een run (changeset), zodat ook tool-wijzigingen
-  via de promotiegate lopen.
+- gegenereerde modelbestanden (ggm/, gemma/) schrijven met een hash-kop, en controleren dat niemand ze met de hand
+  wijzigde;
+- secties, tabellen en links in Markdown lezen (bronanalyses);
+- bronverwijzingen: pagina → bronanalyse (domein-lens) → sources/raw/;
+- modelbestanden ophalen van GitHub.
 """
 from __future__ import annotations
 
 import json
 import re
-from dataclasses import dataclass
 from pathlib import Path
 
-from llmwiki import frontmatter, hashing, paths, runs
+from llmwiki import hashing, paths
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 GEGENEREERD_PREFIX = "<!-- gegenereerd door "
 GEGENEREERD_RE = re.compile(r"^<!-- gegenereerd door (?P<tool>\S+); hash: (?P<hash>[0-9a-f]{64}) -->\n")
 
 
-@dataclass
-class Element:
-    pad: Path
-    paginatype: str
-    meta: dict
-    body: str
-
-    @property
-    def id(self) -> str:
-        return self.meta.get("id", self.pad.stem)
-
-
 def wiki_yaml(wiki_root: Path = WIKI_ROOT) -> dict:
     return paths.load_wiki_yaml(wiki_root)
-
-
-def element_types(wiki_yaml_data: dict) -> dict[str, dict]:
-    return {naam: d for naam, d in wiki_yaml_data.get("page_types", {}).items() if d.get("curated")}
-
-
-def elementen(wiki_root: Path = WIKI_ROOT) -> list[Element]:
-    result = []
-    for paginatype, definitie in element_types(wiki_yaml(wiki_root)).items():
-        map_ = wiki_root / definitie["dir"]
-        if not map_.exists():
-            continue
-        for pad in sorted(map_.rglob("*.md")):
-            page = frontmatter.read(pad)
-            result.append(Element(pad, paginatype, page.meta, page.body))
-    return result
 
 
 # --- Gegenereerde bestanden ---
@@ -92,75 +64,6 @@ def controleer_json_gegenereerd(pad: Path) -> str | None:
     return None
 
 
-# --- Stagen in een run ---
-
-
-def stage(wiki_root: Path, run_id: str, doel: Path, page: frontmatter.Page, paginatype: str) -> Path:
-    """Zet een (gewijzigde) pagina in de changeset van een run en werkt changeset.json bij.
-
-    Een pagina die op `goedgekeurd` stond, gaat terug naar `review`: alleen `promote apply` keurt goed.
-    """
-    rdir = runs.run_dir(wiki_root, run_id)
-    if not rdir.exists():
-        raise FileNotFoundError(f"Run {run_id} bestaat niet")
-    if page.meta.get("status") == "goedgekeurd":
-        page.meta["status"] = "review"
-    rel = doel.resolve().relative_to(wiki_root.resolve()).as_posix()
-    staged_naam = rel.replace("/", "__")
-    frontmatter.write(rdir / "changeset" / staged_naam, page)
-
-    cs_pad = rdir / "changeset-concept.json"
-    changeset = json.loads(cs_pad.read_text(encoding="utf-8")) if cs_pad.exists() else {"run": run_id, "paginas": []}
-    changeset["paginas"] = [p for p in changeset["paginas"] if p["pad"] != rel]
-    changeset["paginas"].append(
-        {"pad": rel, "staged_bestand": staged_naam, "actie": "wijzigen" if doel.exists() else "nieuw", "type": paginatype}
-    )
-    cs_pad.write_text(json.dumps(changeset, indent=2, ensure_ascii=False), encoding="utf-8")
-    return rdir / "changeset" / staged_naam
-
-
-# --- Modelvelden (ggm_*/gemma_*) vergelijken en stagen ---
-
-
-def modelverschillen(wiki_root: Path, sleutelveld: str, veldnamen: tuple[str, ...], zoek, velden_van) -> list[dict]:
-    """Elementen waarvan de modelvelden afwijken van het huidige model.
-
-    `zoek(sleutel)` geeft het modelobject of None; `velden_van(obj)` geeft de verwachte velden.
-    """
-    result = []
-    for el in elementen(wiki_root):
-        sleutel = el.meta.get(sleutelveld)
-        if not sleutel:
-            continue
-        obj = zoek(sleutel)
-        if obj is None:
-            result.append({"element": el.id, "pad": str(el.pad), "melding": f"{sleutelveld} {sleutel} bestaat niet meer in het model"})
-            continue
-        verwacht = velden_van(obj)
-        huidig = {k: el.meta[k] for k in veldnamen if k in el.meta}
-        if huidig != verwacht:
-            result.append({"element": el.id, "pad": str(el.pad),
-                           "velden": sorted(k for k in set(huidig) | set(verwacht) if huidig.get(k) != verwacht.get(k)),
-                           "verwacht": verwacht})
-    return result
-
-
-def modelverrijk(wiki_root: Path, lijst: list[dict], veldnamen: tuple[str, ...], run_id: str | None) -> list[dict]:
-    """Met een run-id: zet de verwachte modelvelden in een gestagede kopie van elke afwijkende pagina."""
-    if not run_id:
-        return lijst
-    for v in lijst:
-        if "verwacht" not in v:
-            continue
-        pad = Path(v["pad"])
-        page = frontmatter.read(pad)
-        for k in veldnamen:
-            page.meta.pop(k, None)
-        page.meta.update(v["verwacht"])
-        v["gestaged"] = str(stage(wiki_root, run_id, pad, page, page.meta.get("type")))
-    return lijst
-
-
 # --- Body: secties, tabellen en links ---
 
 LINK_RE = re.compile(r"\[(?P<tekst>[^\]]*)\]\((?P<doel>[^)\s]+)\)")
@@ -199,10 +102,6 @@ def tabel(tekst: str | None) -> list[dict[str, str]]:
 def link(cel: str) -> tuple[str, str] | None:
     m = LINK_RE.search(cel or "")
     return (m.group("tekst"), m.group("doel")) if m else None
-
-
-def element_index(wiki_root: Path = WIKI_ROOT) -> dict[str, Element]:
-    return {el.id: el for el in elementen(wiki_root)}
 
 
 def doel_van_link(van: Path, doel: str) -> Path:

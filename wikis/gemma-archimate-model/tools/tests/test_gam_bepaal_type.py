@@ -177,7 +177,10 @@ def test_aanvullingen():
     assert data_object.data_object == "ja"
     assert bt.voorgestelde_status(data_object, ggm_match="partieel") == "kandidaat"
     assert bt.voorgestelde_status(data_object, ggm_match="sterk") == "review"
-    assert bt.voorgestelde_status(bt.evalueer(beoordeling(BO)), grondslag="governance-object") == "kandidaat"
+    assert bt.voorgestelde_status(bt.evalueer(beoordeling(BO)), grondslag="regelgeving") == "kandidaat"
+    besluit = {"datum": "2026-10-01", "besluit": "Opnemen.", "gevolg": "opnemen", "redenen": [bt.REDEN_GEEN_GGM]}
+    assert bt.voorgestelde_status(data_object, ggm_match="geen", besluiten=[besluit]) == "review"
+    assert bt.voorgestelde_status(data_object, besluiten=[besluit, {**besluit, "gevolg": "afwijzen"}]) == "afgewezen"
 
 
 def test_buiten_scope_en_eigenschap():
@@ -207,7 +210,7 @@ def test_elk_kenmerk_telt_ergens():
 def test_gegenereerd_schema_is_actueel_en_geldig():
     opgeslagen = json.loads((WIKI / "schemas" / "beoordeling.schema.json").read_text(encoding="utf-8"))
     assert opgeslagen == bt.schema(), "draai: uv run python tools/bepaal_type.py schema --schrijf"
-    jsonschema.Draft202012Validator(opgeslagen).validate(beoordeling(BO))
+    jsonschema.Draft202012Validator(opgeslagen).validate({**beoordeling(BO), "onderwerpen": ["test"]})
 
 
 def test_documentatie_is_gegenereerd():

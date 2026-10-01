@@ -117,7 +117,12 @@ _CLAUDE_SETTINGS = {
     "permissions": {
         "allow": _llmwiki_regels(
             "workspace-check*", "run *", "validate *", "source *", "lint*", "pull*", "promote plan*", "publish plan*",
-        ),
+            "voortgang*",
+        ) + [
+            # Curatie-wiki met beoordelingen (curation.afleiden/render): afleiden en renderen schrijven alleen in de werkboom
+            "Bash(uv run python tools/afleiden.py*)",
+            "Bash(uv run python tools/render.py*)",
+        ],
         "ask": _llmwiki_regels("pull* --doel *", "promote apply*", "publish apply*"),
         "deny": [
             "Bash(*pywikibot*)",

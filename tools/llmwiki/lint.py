@@ -117,8 +117,9 @@ def check_sources_immutable(repo_root: Path, changed_paths: list[str]) -> list[s
 
 
 def check_goedgekeurd_guard(repo_root: Path) -> list[str]:
-    """Elke pagina met status 'goedgekeurd' moet een overeenkomende regel in log.md hebben."""
-    from . import hashing, paths
+    """Elke pagina (of, bij een wiki met beoordelingen, elke beoordeling) met status 'goedgekeurd' moet een
+    overeenkomende regel in log.md hebben, met de hash van de inhoud."""
+    from . import akkoord, beoordeling, hashing, paths
 
     errors = []
     for wiki_root in (repo_root / "wikis").glob("*"):
@@ -128,6 +129,12 @@ def check_goedgekeurd_guard(repo_root: Path) -> list[str]:
         wiki_yaml = paths.load_wiki_yaml(wiki_root)
         log_path = wiki_root / "log.md"
         log_text = log_path.read_text(encoding="utf-8") if log_path.exists() else ""
+        if akkoord.van_toepassing(wiki_yaml):
+            for bid, (pad, data) in beoordeling.alle(wiki_root, wiki_yaml).items():
+                if data.get("status") == "goedgekeurd" and not beoordeling.goedgekeurd_in_log(log_text, bid, data):
+                    errors.append(f"{pad}: status 'goedgekeurd' zonder overeenkomende regel in {log_path} "
+                                  "(alleen 'llmwiki promote apply' keurt goed)")
+            continue
         for type_name, type_def in wiki_yaml.get("page_types", {}).items():
             if not type_def.get("curated"):
                 continue

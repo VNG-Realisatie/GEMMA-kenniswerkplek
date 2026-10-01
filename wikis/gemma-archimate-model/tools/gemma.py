@@ -3,7 +3,7 @@
 Twee formaten, automatisch herkend: de ArchiMate Open Exchange-export (AMEFF, standaard, opgehaald van
 `wiki.yaml` `gemma.herkomst`) en het Archi-bronbestand (`.archimate`, als lokaal bestand). Het GEMMA-model is
 een matchdoel (brontype `model`), geen bron voor begrippen. Het model leest het NOOIT direct; alleen via deze
-tool. `gemma_*`-velden op elementpagina's komen letterlijk uit `velden`.
+tool. De match kiest de AI; tools/afleiden.py haalt daarna bij elke run de letterlijke velden op met `velden`.
 
 Gebruik (vanuit de wikimap):
     uv run python tools/gemma.py release --id <bron-id> [--ref <branch|tag>]   # AMEFF ophalen van gemma.herkomst
@@ -14,7 +14,7 @@ Gebruik (vanuit de wikimap):
     uv run python tools/gemma.py velden <id>                # gemma_*-blok (YAML) voor een elementpagina
     uv run python tools/gemma.py groepering <id>            # groeperingen (beleidsdomein) die dit element aggregeren
     uv run python tools/gemma.py relaties <id>
-    uv run python tools/gemma.py verrijk [--run <run-id>]
+    uv run python tools/gemma.py kandidaten <naam> [--ggm-guid EAID_…] [--synoniemen a,b]
 """
 from __future__ import annotations
 
@@ -243,12 +243,21 @@ def release(bestand: Path | None, bron_id: str, titel: str, wiki_root: Path = WI
             "elementen": len(data["elementen"]), "relaties": len(data["relaties"])}
 
 
-def verschillen(data: dict, wiki_root: Path = WIKI_ROOT) -> list[dict]:
-    return gam_gemeen.modelverschillen(wiki_root, "gemma_id", GEMMA_VELDEN, data["elementen"].get, velden)
+def kandidaten(data: dict, naam: str, ggm_guid: str | None = None, synoniemen: list[str] = ()) -> dict:
+    """Alles voor de match op betekenis: de koppeling via de GGM-guid, elementen met dezelfde naam en zoektreffers,
+    elk met type, definitie en groepering (beleidsdomein)."""
+    def kort(e: dict) -> dict:
+        return {"id": e["id"], "naam": e["naam"], "type": e["type"], "definitie": e["documentatie"],
+                "groepering": groepering(data, e["id"])}
 
+    termen = [naam, *synoniemen]
+    def woordbegin(e: dict, t: str) -> bool:
+        return any(re.search(rf"{re.escape(t)}", x, re.IGNORECASE) for x in [e["naam"], e["documentatie"]])
 
-def verrijk(data: dict, run_id: str | None, wiki_root: Path = WIKI_ROOT) -> list[dict]:
-    return gam_gemeen.modelverrijk(wiki_root, verschillen(data, wiki_root), GEMMA_VELDEN, run_id)
+    treffers = {e["id"]: e for t in termen for e in zoek(data, t) if woordbegin(e, t)}
+    return {"via_ggm_guid": [kort(e) for e in koppel(data, ggm_guid)] if ggm_guid else [],
+            "naamgenoten": [kort(e) for t in termen for e in zoek_element(data, t)],
+            "treffers": [kort(e) for e in treffers.values()][:25]}
 
 
 # --- CLI ---
@@ -265,7 +274,10 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--pad", help="Ander pad in de repository dan gemma.herkomst.pad")
     for naam in ("zoek", "element", "koppel", "velden", "groepering", "relaties"):
         sub.add_parser(naam).add_argument("sleutel")
-    sub.add_parser("verrijk").add_argument("--run")
+    k = sub.add_parser("kandidaten")
+    k.add_argument("naam")
+    k.add_argument("--ggm-guid")
+    k.add_argument("--synoniemen", default="", help="Komma-gescheiden andere namen")
     a = p.parse_args(argv)
 
     if a.cmd == "release":
@@ -280,8 +292,8 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         sys.stdout.write(yaml.safe_dump(velden(gevonden[0]), sort_keys=False, allow_unicode=True))
         return 0
-    if a.cmd == "verrijk":
-        resultaat = verrijk(data, a.run)
+    if a.cmd == "kandidaten":
+        resultaat = kandidaten(data, a.naam, a.ggm_guid, [s.strip() for s in a.synoniemen.split(",") if s.strip()])
     else:
         fn = {"zoek": zoek, "element": zoek_element, "koppel": koppel, "groepering": groepering, "relaties": relaties}[a.cmd]
         resultaat = fn(data, a.sleutel)

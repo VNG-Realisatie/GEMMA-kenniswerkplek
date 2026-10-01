@@ -1,8 +1,9 @@
-"""tools/relaties.py: GGM-mapping, optillen, ketenen, ArchiMate-toets en de relatietabel."""
+"""tools/relaties.py: GGM-mapping, optillen, ketenen, ArchiMate-toets en relaties uit de bronanalyses."""
 import pytest
-from gam_hulp import KENMERKEN_BO, element_tekst
+import yaml
 
 import relaties
+from llmwiki import beoordeling
 
 
 def _ent(guid, naam, uml="Class"):
@@ -31,26 +32,24 @@ DATA = {
 }
 
 
-def _element(wiki, id_, naam, guid, body="# x\n", map_="bedrijfsarchitectuur/bedrijfsobjecten/tv/bd"):
-    pad = wiki / map_ / f"{id_}.md"
-    pad.parent.mkdir(parents=True, exist_ok=True)
-    pad.write_text(element_tekst({
-        "id": id_, "type": "bedrijfsobject", "status": "review", "naam": naam, "archimate_type": "business-object",
-        "onderwerp": "o", "bronnen": ["2026-vng-ggm"], "definitie": naam, "grondslag": "ggm-entiteit",
-        "kenmerken": KENMERKEN_BO, "ggm_entiteit": naam, "ggm_guid": guid,
-    }, body), encoding="utf-8")
-    return pad
+def _begrip(wiki, id_, naam, archimate="business-object", guid=None, soort="element", **extra):
+    """Een afgeleide beoordeling: alleen wat relaties.py leest (naam, match, uitkomst)."""
+    genoemd = extra.pop("genoemd", None)
+    data = {"begrip": naam, **({"ggm": {"guid": guid, "sterkte": "exact", "onderbouwing": "x"}} if guid else {}),
+            "status": "review" if soort == "element" else None, **extra,
+            "afgeleid": {"uitkomst": {"soort": soort, "archimate_type": archimate, "genoemd_begrip": genoemd}}}
+    beoordeling.schrijf(wiki / f"beoordelingen/begrippen/{id_}.yaml", {k: v for k, v in data.items() if v is not None})
 
 
 @pytest.fixture
 def wiki(archimate_repo):
     root, wiki = archimate_repo
-    specialisaties = "## Specialisaties\n\n| Specialisatie | Omschrijving | GGM-entiteit | GGM-guid |\n|---|---|---|---|\n| Soort | x | Soort beschikking | G_SUBTYPE |\n"
-    _element(wiki, "beschikking", "Beschikking", "G_BESCH", specialisaties)
-    _element(wiki, "onderdeel-beschikking", "Onderdeel beschikking", "G_ONDER")
-    _element(wiki, "besluit", "Besluit", "G_BESLUIT")
-    _element(wiki, "aanvraag", "Aanvraag", "G_AANVR")
-    _element(wiki, "zaak", "Zaak", "G_ZAAK")
+    _begrip(wiki, "beschikking", "Beschikking", guid="G_BESCH",
+            specialisaties=[{"naam": "Soort", "omschrijving": "x", "ggm_guid": "G_SUBTYPE"}])
+    _begrip(wiki, "onderdeel-beschikking", "Onderdeel beschikking", guid="G_ONDER")
+    _begrip(wiki, "besluit", "Besluit", guid="G_BESLUIT")
+    _begrip(wiki, "aanvraag", "Aanvraag", guid="G_AANVR")
+    _begrip(wiki, "zaak", "Zaak", guid="G_ZAAK")
     return wiki
 
 
@@ -104,29 +103,14 @@ def test_archimate_toets():
     assert not relaties.toegestaan("assignment", "business-actor", "business-actor")
 
 
-def test_markdown_rijen_en_teruglezen_met_inkomend(wiki):
+def test_voorstel_als_yaml_voor_de_beoordeling(wiki):
     k = relaties.voorstel("beschikking", DATA, wiki)
-    rijen = relaties.markdown_rijen("beschikking", k, wiki)
-    assert "[Onderdeel beschikking](onderdeel-beschikking.md)" in rijen
-    pad = wiki / "bedrijfsarchitectuur/bedrijfsobjecten/tv/bd/beschikking.md"
-    pad.write_text(pad.read_text(encoding="utf-8") + "\n## Relaties\n\n" + rijen, encoding="utf-8")
-    alle = relaties.alle_relaties(wiki)
-    assert {r.naar for r in alle["beschikking"]} >= {"onderdeel-beschikking", "zaak", "aanvraag"}
-    assert all(not r.fouten for r in alle["beschikking"])
-    assert [i["van"] for i in relaties.inkomend("onderdeel-beschikking", wiki)] == ["beschikking"]
-
-
-def test_fouten_in_relatietabel(wiki):
-    pad = wiki / "bedrijfsarchitectuur/bedrijfsobjecten/tv/bd/zaak.md"
-    pad.write_text(pad.read_text(encoding="utf-8") + (
-        "\n## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie |\n|---|---|---|---|---|---|\n"
-        "| verbinding | [X](bestaat-niet.md) |  |  | ggm-exact |  |\n| toegang | [Besluit](besluit.md) | | | bron | |\n"
-    ), encoding="utf-8")
-    (eerste, tweede) = relaties.alle_relaties(wiki)["zaak"]
-    assert any("onbekende relatie" in f for f in eerste.fouten)
-    assert any("wijst niet naar een elementpagina" in f for f in eerste.fouten)
-    assert any("zonder GGM-relatie" in f for f in eerste.fouten)
-    assert any("toegang zonder" in f for f in tweede.fouten)
+    tekst = relaties.yaml_voorstel("beschikking", k)
+    uitgaand = yaml.safe_load(tekst)["relaties"]
+    bevat = next(r for r in uitgaand if r["naar"] == "onderdeel-beschikking")
+    assert bevat == {"soort": "compositie", "naar": "onderdeel-beschikking", "naam": "bevat", "kardinaliteit": "1 → 0..*",
+                     "grondslag": "ggm-exact", "ggm_relatie": ["R_BEVAT"]}
+    assert "# Inkomend" in tekst and "besluit -> specialisatie" in tekst
 
 
 # --- Relaties uit de bronnen ---
@@ -171,43 +155,37 @@ def test_van_bron_valt_terug_op_associatie_bij_ongeldige_combinatie():
     assert a["relatie"] == "association" and a["gericht"]
 
 
-def _voorstel(begrip, soort, archimate, doel, genoemd=None, relaties_=()):
-    uitkomst = {"soort": soort, "archimate_type": archimate, "genoemd_begrip": genoemd}
-    return {"doel": doel, "beoordeling": {"begrip": begrip, "uitkomst": uitkomst}, "relaties": list(relaties_)}
-
-
 def test_uit_bronnen_lost_op_tilt_op_en_laat_vervallen(wiki):
-    assessment = {"voorstellen": [
-        _voorstel("Heffingsambtenaar", "element", "business-role", "bedrijfsarchitectuur/rollen/heffingsambtenaar.md", relaties_=[
-            {"van": "Heffingsambtenaar", "werkwoord": "legt op", "naar": "Aanslag opleggen", "bronnen": ["2026-overheid-gemeentewet"], "vindplaats": "art. 231"},
-        ]),
-        _voorstel("Aanslag opleggen", "element", "business-process", "bedrijfsarchitectuur/bedrijfsprocessen/tv/bd/aanslag-opleggen.md", relaties_=[
-            {"van": "Aanslag opleggen", "werkwoord": "stelt vast", "naar": "Aanslagbedrag", "bronnen": ["2026-utrecht-nota"]},
-            {"van": "Aanslag opleggen", "werkwoord": "draagt bij aan", "naar": "Rechtvaardige heffing", "bronnen": ["2026-utrecht-nota"]},
-        ]),
-        _voorstel("Aanslagbedrag", "eigenschap", None, "begrippen/o.md", genoemd="Beschikking"),
-        _voorstel("Rechtvaardige heffing", "buiten_model", None, "begrippen/o.md"),
-    ]}
-    kandidaten, vervallen = relaties.uit_bronnen(assessment, wiki)
+    _begrip(wiki, "heffingsambtenaar", "Heffingsambtenaar", "business-role")
+    _begrip(wiki, "aanslag-opleggen", "Aanslag opleggen", "business-process")
+    _begrip(wiki, "aanslagbedrag", "Aanslagbedrag", None, soort="eigenschap", genoemd="Beschikking")
+    _begrip(wiki, "rechtvaardige-heffing", "Rechtvaardige heffing", None, soort="buiten_model")
+    _begrip(wiki, "verklaring", "Verklaring", status="afgewezen")
+    rijen = [
+        {"van": "Heffingsambtenaar", "werkwoord": "legt op", "naar": "Aanslag opleggen", "bronnen": ["2026-overheid-gemeentewet"], "vindplaats": "art. 231"},
+        {"van": "Aanslag opleggen", "werkwoord": "stelt vast", "naar": "Aanslagbedrag", "bronnen": ["2026-utrecht-nota"]},
+        {"van": "Aanslag opleggen", "werkwoord": "draagt bij aan", "naar": "Rechtvaardige heffing", "bronnen": ["2026-utrecht-nota"]},
+        {"van": "Aanslag opleggen", "werkwoord": "stelt vast", "naar": "Verklaring", "bronnen": ["2026-utrecht-nota"]},
+    ]
+    kandidaten, vervallen = relaties.uit_bronnen(rijen, relaties.begrippen(wiki))
     rol = [k for k in kandidaten if k.bron == "heffingsambtenaar"][0]
     assert (rol.relatie, rol.doel, rol.grondslag, rol.bronnen, rol.vindplaats) == (
         "assignment", "aanslag-opleggen", "bron", ["2026-overheid-gemeentewet"], "art. 231")
-    opgetild = [k for k in kandidaten if k.doel == "beschikking"][0]  # Aanslagbedrag → bestaand element Beschikking
+    opgetild = [k for k in kandidaten if k.doel == "beschikking"][0]  # Aanslagbedrag → Beschikking
     assert (opgetild.bron, opgetild.relatie, opgetild.toegang) == ("aanslag-opleggen", "access", "registreren")
     assert "opgetild" in opgetild.toelichting
-    assert [v["naar"] for v in vervallen] == ["Rechtvaardige heffing"]
+    assert [v["naar"] for v in vervallen] == ["Rechtvaardige heffing", "Verklaring"]
+    assert "afgewezen" in vervallen[1]["reden"]
 
 
-def test_uit_bronnen_verhuizend_begrip_krijgt_geen_element_id(wiki):
-    assessment = {"voorstellen": [
-        _voorstel("Verklaring", "element", "business-object", "bedrijfsarchitectuur/bedrijfsobjecten/tv/bd/verklaring.md", relaties_=[
-            {"van": "Verklaring", "werkwoord": "wordt gevoegd bij", "naar": "Akte", "bronnen": ["2026-overheid-gemeentewet"]},
-        ]),
-        _voorstel("Akte", "element", "business-object", "begrippen/o.md"),
-    ]}
-    kandidaten, vervallen = relaties.uit_bronnen(assessment, wiki)
-    assert kandidaten == []
-    assert "geen elementpagina" in vervallen[0]["reden"] and "begrippen/o.md" in vervallen[0]["reden"]
+def test_bronrelaties_uit_de_relatietabel_van_een_bronanalyse(wiki):
+    pad = wiki / "bronanalyses/o/2026-overheid-gemeentewet.md"
+    pad.parent.mkdir(parents=True)
+    pad.write_text("# x\n\n## Relaties\n\n| Van | Werkwoord | Naar | Vindplaats |\n|---|---|---|---|\n"
+                   "| Besluit | is een | Beschikking | art. 1 |\n", encoding="utf-8")
+    (rij,) = relaties.bronrelaties(wiki)
+    assert rij == {"van": "Besluit", "werkwoord": "is een", "naar": "Beschikking",
+                   "bronnen": ["2026-overheid-gemeentewet"], "vindplaats": "art. 1"}
 
 
 def test_combineer_bevestigt_ggm_relatie_met_bron(wiki):
@@ -221,19 +199,9 @@ def test_combineer_bevestigt_ggm_relatie_met_bron(wiki):
     assert len(samen) == len(ggm_k)
 
 
-def test_bronrelatie_zonder_bron_id_is_fout(wiki):
-    pad = wiki / "bedrijfsarchitectuur/bedrijfsobjecten/tv/bd/zaak.md"
-    pad.write_text(pad.read_text(encoding="utf-8") + (
-        "\n## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n|---|---|---|---|---|---|---|\n"
-        "| associatie | [Besluit](besluit.md) | | | bron | | |\n"), encoding="utf-8")
-    (r,) = relaties.alle_relaties(wiki)["zaak"]
-    assert any("zonder bron-id" in f for f in r.fouten)
-
-
-def test_gemma_modelleerafspraken_en_overgang():
-    # Actor alleen via een rol; de oude regels blijven als overgang herkenbaar
+def test_gemma_modelleerafspraken():
+    # Actor alleen via een rol
     assert not relaties.toegestaan("assignment", "business-actor", "business-process")
-    assert relaties.toegestaan("assignment", "business-actor", "business-process", oud=True)
     assert relaties.toegestaan("assignment", "business-role", "business-process")
     # Functie bedient proces, geen aggregatie
     assert not relaties.toegestaan("aggregation", "business-function", "business-process")
@@ -247,14 +215,7 @@ def test_gemma_modelleerafspraken_en_overgang():
     assert not relaties.toegestaan("access", "business-service", "business-object")
 
 
-def test_toegang_met_handeling_of_verantwoordelijkheid(wiki):
-    pad = wiki / "bedrijfsarchitectuur/bedrijfsobjecten/tv/bd/zaak.md"
-    pad.write_text(pad.read_text(encoding="utf-8") + (
-        "\n## Relaties\n\n| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |\n|---|---|---|---|---|---|---|\n"
-        "| toegang (beëindigen) | [Besluit](besluit.md) | trekt in | | bron | | 2026-overheid-gemeentewet |\n"
-        "| toegang (lezen) | [Aanvraag](aanvraag.md) | | | bron | | 2026-overheid-gemeentewet |\n"
-        "| toegang (onzin) | [Beschikking](beschikking.md) | | | bron | | 2026-overheid-gemeentewet |\n"), encoding="utf-8")
-    (handeling, oud, onzin) = relaties.alle_relaties(wiki)["zaak"]
-    assert (handeling.toegang, relaties.toegangstype(handeling.toegang), handeling.fouten) == ("beëindigen", "schrijven", [])
-    assert (oud.toegang, oud.fouten) == ("lezen", [])
-    assert any("handeling of verantwoordelijkheid" in f for f in onzin.fouten)
+def test_toegangstype_volgt_uit_handeling_of_verantwoordelijkheid():
+    assert relaties.toegangstype("beëindigen") == "schrijven"
+    assert relaties.toegangstype("houder") == "lezen-schrijven"
+    assert relaties.toegangstype("lezen") is None

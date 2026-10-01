@@ -6,7 +6,9 @@ titel: GGM-terugmeldingen
 
 # GGM-terugmeldingen
 
-Bevindingen uit de beoordeling van elementen die aan het GGM-beheer worden teruggekoppeld. Rijen worden alleen toegevoegd; de status wordt bijgewerkt.
+<!-- Gegenereerd door tools/render.py uit beoordelingen/terugmeldingen.yaml. Wijzig de beoordeling, niet deze pagina. -->
+
+Bevindingen uit de beoordeling van elementen die aan het GGM-beheer worden teruggekoppeld.
 
 ## Terugmeldingen
 

@@ -5,14 +5,13 @@ sources:
   tags: []                           # vast te stellen bij de eerste ingest
   exclude_tags: []
 
-# Leesvolgorde op brontype (sources/index `brontype`); zie ARCHITECTURE.md §7.
+# Leesvolgorde op brontype (sources/index `brontype`); zie ARCHITECTURE.md §8.
 # Brontype `model` (het GEMMA-model) is een matchdoel, geen bron voor begrippen.
 bronvoorrang: [wet, informatiemodel, beleid, overig]
 
-page_types:
+page_types:                          # pagina's van curated typen en onderwerpen maakt tools/render.py; zonder schema
   onderwerp:
-    dir: begrippen                   # begrippenlijst per onderwerp = ingang van een run
-    schema: schemas/onderwerp.schema.json
+    dir: begrippen                   # begrippenlijst per onderwerp (gegenereerd uit beoordelingen/onderwerpen)
   bronanalyse:
     dir: bronanalyses
     group_by: onderwerp
@@ -24,56 +23,48 @@ page_types:
     dir: bedrijfsarchitectuur/bedrijfsobjecten
     submappen: [taakveld, beleidsdomein]
     curated: true
-    schema: schemas/bedrijfsobject.schema.json
   product:
     dir: bedrijfsarchitectuur/producten
     submappen: [taakveld, beleidsdomein]
     curated: true
-    schema: schemas/product.schema.json
   dienst:                            # GEMMA-naam Dienst (Business Service)
     dir: bedrijfsarchitectuur/diensten
     submappen: [taakveld, beleidsdomein]
     curated: true
-    schema: schemas/dienst.schema.json
   bedrijfsproces:
     dir: bedrijfsarchitectuur/bedrijfsprocessen
     submappen: [taakveld, beleidsdomein]
     curated: true
-    schema: schemas/bedrijfsproces.schema.json
   bedrijfsfunctie:
     dir: bedrijfsarchitectuur/bedrijfsfuncties
     submappen: [taakveld, beleidsdomein]
     curated: true
-    schema: schemas/bedrijfsfunctie.schema.json
   gebeurtenis:                       # GEMMA-naam Gebeurtenis (Business Event)
     dir: bedrijfsarchitectuur/gebeurtenissen
     curated: true
-    schema: schemas/gebeurtenis.schema.json
   actor:
     dir: bedrijfsarchitectuur/actoren
     curated: true
-    schema: schemas/actor.schema.json
   rol:
     dir: bedrijfsarchitectuur/rollen
     curated: true
-    schema: schemas/rol.schema.json
   bedrijfssamenwerking:              # Business Collaboration, zonder eigen rechtspersoon
     dir: bedrijfsarchitectuur/bedrijfssamenwerkingen
     curated: true
-    schema: schemas/bedrijfssamenwerking.schema.json
   kanaal:                            # Business Interface; één centrale set
     dir: bedrijfsarchitectuur/kanalen
     curated: true
-    schema: schemas/kanaal.schema.json
   beleidskader:                      # Driver (motivatielaag); rijks- of EU-regelgeving of VNG-modelverordening
     dir: motivatie/beleidskaders
     curated: true
-    schema: schemas/beleidskader.schema.json
 
 curation:
+  beoordelingen: beoordelingen/begrippen   # het oordeel van de AI per begrip (YAML); zie ARCHITECTURE.md
+  afleiden: tools/afleiden.py              # type, status en modelvelden; daarna de render
+  render: tools/render.py                  # alle pagina's uit de beoordelingen
   states: [kandidaat, review, goedgekeurd, afgewezen]
   gated: [goedgekeurd]
-  approval: document                 # smaak A: akkoord in het voorstel (landelijke standaard, exportdoel later)
+  approval: chat                     # AKKOORD in de chat na het bekijken van de pagina's (llmwiki promote plan/apply)
   min_reviewers: 1
 
 # Actuele modelbronnen (bron-id's in sources/index), gezet door tools/ggm.py en tools/gemma.py `release`.

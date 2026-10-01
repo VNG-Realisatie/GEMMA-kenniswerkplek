@@ -296,18 +296,6 @@ AARD = ["gedrag", "handelende_partij", "hoedanigheid", "samenwerkingsverband", "
         "aanbod_als_geheel", "regeling_als_geheel"]
 SOORT_GEDRAG = [k.sleutel for k in KENMERKEN if k.groep == "Soort gedrag"]
 
-# De kenmerken zoals ze golden tot 2026-10-01 (criteria van 2026-09-30); pagina's met deze set worden herbeoordeeld.
-SLEUTELS_2026_09_30 = [
-    "herkenbaar", "gemeentelijk", "buiten_kernlagen", "betekenis_in_onderwerp", "slechts_eigenschap",
-    "eigen_identiteit", "relaties", "zelfstandig_beleidsbegrip", "gedrag", "handelende_partij", "hoedanigheid",
-    "samenwerkingsverband", "toegangspunt", "plaats", "aanbod_als_geheel", "los_van_verantwoordelijkheid",
-    "meerdere_vervullers", "per_keer_doorlopen", "gegroepeerd_gedrag", "toestandsverandering", "aangeboden_gedrag",
-    "gezamenlijk_gedrag", "toegewezen_partij", "gebruikt_objecten", "aanleiding", "benoembaar_resultaat",
-    "herhaald_uitgevoerd", "eigen_normering", "stabiel_over_tijd", "onderscheidbare_exemplaren", "levenscyclus",
-    "wordt_bewerkt", "afspraak", "waarneembare_vorm", "geautomatiseerd_verwerkt",
-]
-
-
 @dataclass(frozen=True)
 class Typedef:
     paginatype: str | None
@@ -675,8 +663,33 @@ def evalueer(beoordeling: dict) -> Uitkomst:
     return uitkomst
 
 
-def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None, grondslag: str | None = None) -> str | None:
-    """`review` alleen als de AI het zelfstandig mag afhandelen; anders `kandidaat`.
+GRONDSLAGEN = ("ggm-entiteit", "ggm-afgeleid", "procesobject", "regelgeving", "bron")
+REDEN_REGELGEVING = "grondslag regelgeving: altijd voorleggen"
+REDEN_GEEN_GGM = "gegevensobject zonder sterke GGM-match"
+
+
+def voor_te_leggen(uitkomst: Uitkomst | dict, ggm_match: str | None = None, grondslag: str | None = None) -> list[str]:
+    """De redenen waarom de redacteur over dit begrip moet beslissen (leeg: de AI mag het zelf afhandelen)."""
+    u = uitkomst if isinstance(uitkomst, dict) else asdict(uitkomst)
+    redenen = list(u["redenen"]) or (["voorleggen"] if u["voorleggen"] else [])
+    if u["soort"] == "element":
+        if grondslag == "regelgeving":
+            redenen.append(REDEN_REGELGEVING)
+        if u["data_object"] == "ja" and ggm_match not in ("exact", "sterk"):
+            redenen.append(REDEN_GEEN_GGM)
+    return redenen
+
+
+def open_redenen(redenen: list[str], besluiten: list[dict] | None) -> list[str]:
+    """Redenen die geen besluit van de redacteur dekt. Een besluit dekt de redenen die het noemt."""
+    gedekt = {r for b in besluiten or [] for r in b.get("redenen", [])}
+    return [r for r in redenen if r not in gedekt]
+
+
+def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None, grondslag: str | None = None,
+                        besluiten: list[dict] | None = None) -> str | None:
+    """`review` als niets meer voorgelegd hoeft te worden; `kandidaat` als er een reden open staat; `afgewezen` als
+    het laatste besluit van de redacteur `afwijzen` is.
 
     Geen pagina (synoniem, bron, buiten scope, eigenschap, onderdeel, verwijzing, specialisatie, geen element,
     conflict, herkend, geen pagina) → None.
@@ -684,11 +697,9 @@ def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None,
     u = uitkomst if isinstance(uitkomst, dict) else asdict(uitkomst)
     if u["soort"] != "element":
         return None
-    if u["voorleggen"]:
-        return "kandidaat"
-    if grondslag == "governance-object":
-        return "kandidaat"
-    if u["data_object"] == "ja" and ggm_match not in ("exact", "sterk"):
+    if besluiten and besluiten[-1].get("gevolg") == "afwijzen":
+        return "afgewezen"
+    if open_redenen(voor_te_leggen(u, ggm_match, grondslag), besluiten):
         return "kandidaat"
     return "review"
 
@@ -842,15 +853,26 @@ def schema() -> dict:
         },
         "additionalProperties": False,
     }
+    tekst = {"type": "string", "minLength": 1}
+    alineas = {"type": "array", "items": tekst, "description": "Alinea's; elke alinea op één regel"}
+    id_ = {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"}
+    bron_ids = {"type": "array", "items": {"type": "string", "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$"}}
+    sterkte = {"enum": ["exact", "sterk", "partieel", "zwak", "geen"]}
+
+    def obj(required: list[str], **props) -> dict:
+        return {"type": "object", "required": required, "properties": props, "additionalProperties": False}
+
     return {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "title": "beoordeling",
-        "description": "Beoordeling van één begrip: alle kenmerken één keer beantwoord (gegenereerd door tools/bepaal_type.py schema).",
+        "description": "Beoordeling van één begrip (beoordelingen/begrippen/<id>.yaml): het oordeel van de AI. "
+                       "`status` en `afgeleid` vullen de scripts (tools/afleiden.py, llmwiki promote); nooit zelf "
+                       "invullen. Gegenereerd door tools/bepaal_type.py schema.",
         "type": "object",
-        "required": ["begrip", "kenmerken"],
+        "required": ["begrip", "onderwerpen", "kenmerken"],
         "properties": {
-            "begrip": {"type": "string", "minLength": 1},
-            "onderwerp": {"type": "string"},
+            "begrip": {**tekst, "description": "De naam: de gangbare term uit beleid en praktijk"},
+            "onderwerpen": {"type": "array", "minItems": 1, "items": id_},
             "kenmerken": {
                 "type": "object",
                 "required": SLEUTELS,
@@ -858,28 +880,61 @@ def schema() -> dict:
                 "additionalProperties": False,
             },
             **{s: {"type": "string", "description": d} for s, d in EXTRA_VELDEN.items()},
-            "uitkomst": {"type": "object", "description": "Door bepaal_type.py ingevuld; niet zelf invullen"},
+            "toelichting": {**tekst, "description": "Waarom deze uitkomst, voor de begrippenlijst (vooral bij een "
+                                                    "begrip zonder pagina)"},
+            "definitie": {**tekst, "maxLength": 160, "not": {"pattern": "(?i)gelijk aan (het |de )?(ggm|gemma)"},
+                          "description": "Herkenbare definitie: één zin, hoogstens 160 tekens; gaat naar GEMMA"},
+            "definitie_formeel": {**tekst, "description": "Letterlijk uit de hoogst gerangschikte bron, alleen bij "
+                                                          "een wezenlijk verschil"},
+            "definitie_formeel_bron": obj(["bron", "plaats"], bron=tekst, plaats=tekst),
+            "beschrijving": alineas,
+            "per_onderwerp": {"type": "object", "propertyNames": {"pattern": id_["pattern"]},
+                              "additionalProperties": alineas},
+            "synoniemen": {"type": "array", "items": obj(["naam", "context"], naam=tekst, context=tekst)},
+            "taakveld": tekst,
+            "beleidsdomein": tekst,
+            "grondslag": {"enum": list(GRONDSLAGEN)},
+            "grondslag_toelichting": {**alineas, "description": "Bij regelgeving de juridische bron, bij "
+                                                                "procesobject het proces, bij ggm-afgeleid de afleiding"},
+            "ggm": obj(["sterkte", "onderbouwing"], guid={"type": "string", "pattern": "^EAID_"}, sterkte=sterkte,
+                       onderbouwing=tekst,
+                       duplicaten={"type": "array", "items": obj(["guid", "toelichting"],
+                                                                 guid={"type": "string", "pattern": "^EAID_"},
+                                                                 toelichting=tekst)}),
+            "gemma": obj(["sterkte", "onderbouwing"], id=tekst, sterkte=sterkte, onderbouwing=tekst),
+            "naamkeuze": alineas,
+            "homoniemen": {"type": "array", "items": obj(["begrip", "betekenis", "waar", "naamkeuze"], begrip=tekst,
+                                                         betekenis=tekst, waar=tekst, naamkeuze=tekst, element=id_)},
+            "generalisatie": alineas,
+            "specialisaties": {"type": "array", "items": obj(["naam", "omschrijving"], naam=tekst, omschrijving=tekst,
+                                                             element=id_, ggm_guid=tekst, ggm_attribuut=tekst)},
+            "ggm_componenten": {"type": "array", "items": obj(["naam", "guid", "toelichting"], naam=tekst,
+                                                              guid={"type": "string", "pattern": "^EAID_"},
+                                                              toelichting=tekst)},
+            "tegenhanger": obj(["element", "toelichting"], element=id_, toelichting=tekst),
+            "relaties": {"type": "array", "items": obj(
+                ["soort", "naar", "grondslag"],
+                soort={"type": "string", "pattern": r"^(associatie|associatie \(gericht\)|aggregatie|compositie|"
+                                                    r"specialisatie|toewijzing|toegang \([a-zë-]+\)|triggering|"
+                                                    r"stroom|realisatie|bediening)$"},
+                naar=id_, naam=tekst, kardinaliteit=tekst, grondslag={"enum": ["ggm-exact", "ggm-afgeleid", "bron"]},
+                ggm_relatie={"type": "array", "items": {"type": "string", "pattern": "^EAID_"}},
+                bronnen=bron_ids, vindplaats=tekst)},
+            "bronnen": {**bron_ids, "description": "Bronnen naast die in kenmerken en relaties, bijv. de algemene "
+                                                   "bron van de beschrijving"},
+            "vragen": {"type": "array", "items": tekst, "description": "Open vragen aan de redacteur"},
+            "besluiten": {"type": "array", "items": obj(
+                ["datum", "besluit", "gevolg"], datum={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+                besluit=tekst, gevolg={"enum": ["opnemen", "afwijzen", "verwerkt"]},
+                redenen={"type": "array", "items": tekst,
+                         "description": "De voorgelegde redenen (uit afgeleid.voor_te_leggen) die dit besluit dekt"})},
+            "status": {"enum": ["kandidaat", "review", "goedgekeurd", "afgewezen"],
+                       "description": "Door tools/afleiden.py en llmwiki promote; niet zelf invullen"},
+            "afgeleid": {"type": "object", "description": "Door tools/afleiden.py; niet zelf invullen"},
         },
         "additionalProperties": False,
         "$defs": {
             "antwoord": antwoord,
-            "kenmerkwaarden": {
-                "description": f"Kenmerken zoals vastgelegd op een elementpagina (alleen ja/nee; onderbouwing in de body). "
-                               f"Criteria van {CRITERIA_VERSIE}, of tot de herbeoordeling die van 2026-09-30.",
-                "anyOf": [{"$ref": "#/$defs/kenmerkwaarden_actueel"}, {"$ref": "#/$defs/kenmerkwaarden_2026_09_30"}],
-            },
-            "kenmerkwaarden_actueel": {
-                "type": "object",
-                "required": SLEUTELS,
-                "properties": {s: {"enum": ["ja", "nee"]} for s in SLEUTELS},
-                "additionalProperties": False,
-            },
-            "kenmerkwaarden_2026_09_30": {
-                "type": "object",
-                "required": SLEUTELS_2026_09_30,
-                "properties": {s: {"enum": ["ja", "nee"]} for s in SLEUTELS_2026_09_30},
-                "additionalProperties": False,
-            },
         },
     }
 
@@ -914,7 +969,7 @@ def main(argv: list[str] | None = None) -> int:
     p_status = sub.add_parser("status", help="Voorgestelde status voor een uitkomst")
     p_status.add_argument("--uitkomst", required=True)
     p_status.add_argument("--ggm-match")
-    p_status.add_argument("--grondslag")
+    p_status.add_argument("--grondslag", choices=GRONDSLAGEN)
     p_md = sub.add_parser("markdown", help="Documentatie voor de criteria-skill en de wikipagina")
     p_md.add_argument("--schrijf", action="store_true", help="Werk de gegenereerde blokken in skill en wikipagina bij")
     p_md.add_argument("--doel", choices=["skill", "wiki"], default="skill")

@@ -1,7 +1,7 @@
 """Het GGM (Gemeentelijk Gegevensmodel) als bron: parsen, bevragen en `ggm_*`-velden leveren.
 
 Het XMI is de bron van waarheid en wordt NOOIT direct gelezen door het model; alleen via deze tool.
-`ggm_*`-velden op elementpagina's komen letterlijk uit `velden` en worden door niemand anders gevuld.
+De match kiest de AI (op betekenis); tools/afleiden.py haalt daarna bij elke run de letterlijke velden op met `velden`. Een nieuwe release is dus na `afleiden` vanzelf verwerkt.
 
 Gebruik (vanuit de wikimap):
     uv run python tools/ggm.py release --id <bron-id> [--ref <branch|tag>]    # ophalen van ggm.herkomst (GitHub)
@@ -13,7 +13,7 @@ Gebruik (vanuit de wikimap):
     uv run python tools/ggm.py generalisaties <guid>
     uv run python tools/ggm.py attribuut <term>              # komt de term voor als attribuut of waarde?
     uv run python tools/ggm.py relaties <guid>
-    uv run python tools/ggm.py verrijk [--run <run-id>]      # verschillen ggm_* ↔ model; met --run: stagen
+    uv run python tools/ggm.py kandidaten <naam> [--synoniemen a,b]  # alles voor de match op betekenis, in één overzicht
 """
 from __future__ import annotations
 
@@ -397,13 +397,26 @@ def release(xmi: Path | None, bron_id: str, titel: str, wiki_root: Path = WIKI_R
     return {"entiteiten": len(data["entities"]), "relaties": len(data["relations"]), "paginas": n}
 
 
-def verschillen(data: dict, wiki_root: Path = WIKI_ROOT) -> list[dict]:
-    """Elementen waarvan de ggm_*-velden afwijken van het huidige GGM."""
-    return gam_gemeen.modelverschillen(wiki_root, "ggm_guid", GGM_VELDEN, data["entities"].get, velden)
+def kandidaten(data: dict, naam: str, synoniemen: list[str] = ()) -> dict:
+    """Alles wat de AI nodig heeft om op betekenis te matchen: entiteiten met dezelfde naam (mogelijke homoniemen),
+    zoektreffers op naam, synoniem en definitie, en termen die als attribuut of waarde voorkomen. Per entiteit de
+    definitie, het beleidsdomein en de generalisaties, zodat de keuze zonder losse vervolgvragen kan."""
+    def kort(e: dict) -> dict:
+        g = generalisaties(data, e["id"])
+        return {"guid": e["id"], "entiteit": e["name"], "beleidsdomein": e.get("beleidsdomein", ""),
+                "definitie": schoon_tekst(e.get("documentation", "")),
+                "synoniemen": schoon_tekst(e.get("tags", {}).get("Synoniemen", "")),
+                "generalisaties": [data["entities"][x]["name"] for x in g["generalisaties"] if x in data["entities"]],
+                "specialisaties": [data["entities"][x]["name"] for x in g["specialisaties"] if x in data["entities"]]}
 
+    termen = [naam, *synoniemen]
+    def woordbegin(e: dict, t: str) -> bool:
+        return any(re.search(rf"{re.escape(t)}", x, re.IGNORECASE) for x in [e["name"], e.get("tags", {}).get("Synoniemen", ""), schoon_tekst(e.get("documentation", ""))])
 
-def verrijk(data: dict, run_id: str | None, wiki_root: Path = WIKI_ROOT) -> list[dict]:
-    return gam_gemeen.modelverrijk(wiki_root, verschillen(data, wiki_root), GGM_VELDEN, run_id)
+    treffers = {e["id"]: e for t in termen for e in zoek(data, t) if woordbegin(e, t)}
+    return {"naamgenoten": [kort(e) for t in termen for e in naamgenoten(data, t)],
+            "treffers": [kort(e) for e in treffers.values()][:25],
+            "als_attribuut_of_waarde": [a for t in termen for a in attribuut(data, t)]}
 
 
 # --- CLI ---
@@ -424,8 +437,9 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--pad", help="Ander pad in de repository dan ggm.herkomst.pad")
     for naam in ("zoek", "entiteit", "velden", "naamgenoten", "generalisaties", "attribuut", "relaties"):
         sub.add_parser(naam).add_argument("sleutel")
-    v = sub.add_parser("verrijk")
-    v.add_argument("--run")
+    k = sub.add_parser("kandidaten")
+    k.add_argument("naam")
+    k.add_argument("--synoniemen", default="", help="Komma-gescheiden andere namen")
     a = p.parse_args(argv)
 
     if a.cmd == "release":
@@ -439,8 +453,8 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         sys.stdout.write(yaml.safe_dump(velden(gevonden[0]), sort_keys=False, allow_unicode=True))
         return 0
-    if a.cmd == "verrijk":
-        _print(verrijk(data, a.run))
+    if a.cmd == "kandidaten":
+        _print(kandidaten(data, a.naam, [s.strip() for s in a.synoniemen.split(",") if s.strip()]))
         return 0
     fn = {"zoek": zoek, "entiteit": zoek_entiteit, "naamgenoten": naamgenoten, "generalisaties": generalisaties,
           "attribuut": attribuut, "relaties": relaties}[a.cmd]

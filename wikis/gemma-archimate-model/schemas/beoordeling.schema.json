@@ -1,19 +1,26 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "beoordeling",
-  "description": "Beoordeling van één begrip: alle kenmerken één keer beantwoord (gegenereerd door tools/bepaal_type.py schema).",
+  "description": "Beoordeling van één begrip (beoordelingen/begrippen/<id>.yaml): het oordeel van de AI. `status` en `afgeleid` vullen de scripts (tools/afleiden.py, llmwiki promote); nooit zelf invullen. Gegenereerd door tools/bepaal_type.py schema.",
   "type": "object",
   "required": [
     "begrip",
+    "onderwerpen",
     "kenmerken"
   ],
   "properties": {
     "begrip": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "description": "De naam: de gangbare term uit beleid en praktijk"
     },
-    "onderwerp": {
-      "type": "string"
+    "onderwerpen": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      }
     },
     "kenmerken": {
       "type": "object",
@@ -223,9 +230,434 @@
       "type": "string",
       "description": "Het ArchiMate-type buiten dit model (Goal, Outcome, Principle, Requirement, Constraint, Value, Capability, Grouping …)"
     },
-    "uitkomst": {
+    "toelichting": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Waarom deze uitkomst, voor de begrippenlijst (vooral bij een begrip zonder pagina)"
+    },
+    "definitie": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "not": {
+        "pattern": "(?i)gelijk aan (het |de )?(ggm|gemma)"
+      },
+      "description": "Herkenbare definitie: één zin, hoogstens 160 tekens; gaat naar GEMMA"
+    },
+    "definitie_formeel": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Letterlijk uit de hoogst gerangschikte bron, alleen bij een wezenlijk verschil"
+    },
+    "definitie_formeel_bron": {
       "type": "object",
-      "description": "Door bepaal_type.py ingevuld; niet zelf invullen"
+      "required": [
+        "bron",
+        "plaats"
+      ],
+      "properties": {
+        "bron": {
+          "type": "string",
+          "minLength": 1
+        },
+        "plaats": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "beschrijving": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Alinea's; elke alinea op één regel"
+    },
+    "per_onderwerp": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": "Alinea's; elke alinea op één regel"
+      }
+    },
+    "synoniemen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "naam",
+          "context"
+        ],
+        "properties": {
+          "naam": {
+            "type": "string",
+            "minLength": 1
+          },
+          "context": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "taakveld": {
+      "type": "string",
+      "minLength": 1
+    },
+    "beleidsdomein": {
+      "type": "string",
+      "minLength": 1
+    },
+    "grondslag": {
+      "enum": [
+        "ggm-entiteit",
+        "ggm-afgeleid",
+        "procesobject",
+        "regelgeving",
+        "bron"
+      ]
+    },
+    "grondslag_toelichting": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Bij regelgeving de juridische bron, bij procesobject het proces, bij ggm-afgeleid de afleiding"
+    },
+    "ggm": {
+      "type": "object",
+      "required": [
+        "sterkte",
+        "onderbouwing"
+      ],
+      "properties": {
+        "guid": {
+          "type": "string",
+          "pattern": "^EAID_"
+        },
+        "sterkte": {
+          "enum": [
+            "exact",
+            "sterk",
+            "partieel",
+            "zwak",
+            "geen"
+          ]
+        },
+        "onderbouwing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "duplicaten": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "guid",
+              "toelichting"
+            ],
+            "properties": {
+              "guid": {
+                "type": "string",
+                "pattern": "^EAID_"
+              },
+              "toelichting": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "gemma": {
+      "type": "object",
+      "required": [
+        "sterkte",
+        "onderbouwing"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sterkte": {
+          "enum": [
+            "exact",
+            "sterk",
+            "partieel",
+            "zwak",
+            "geen"
+          ]
+        },
+        "onderbouwing": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "naamkeuze": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Alinea's; elke alinea op één regel"
+    },
+    "homoniemen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "begrip",
+          "betekenis",
+          "waar",
+          "naamkeuze"
+        ],
+        "properties": {
+          "begrip": {
+            "type": "string",
+            "minLength": 1
+          },
+          "betekenis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "waar": {
+            "type": "string",
+            "minLength": 1
+          },
+          "naamkeuze": {
+            "type": "string",
+            "minLength": 1
+          },
+          "element": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "generalisatie": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Alinea's; elke alinea op één regel"
+    },
+    "specialisaties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "naam",
+          "omschrijving"
+        ],
+        "properties": {
+          "naam": {
+            "type": "string",
+            "minLength": 1
+          },
+          "omschrijving": {
+            "type": "string",
+            "minLength": 1
+          },
+          "element": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "ggm_guid": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ggm_attribuut": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "ggm_componenten": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "naam",
+          "guid",
+          "toelichting"
+        ],
+        "properties": {
+          "naam": {
+            "type": "string",
+            "minLength": 1
+          },
+          "guid": {
+            "type": "string",
+            "pattern": "^EAID_"
+          },
+          "toelichting": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "tegenhanger": {
+      "type": "object",
+      "required": [
+        "element",
+        "toelichting"
+      ],
+      "properties": {
+        "element": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "toelichting": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "relaties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "soort",
+          "naar",
+          "grondslag"
+        ],
+        "properties": {
+          "soort": {
+            "type": "string",
+            "pattern": "^(associatie|associatie \\(gericht\\)|aggregatie|compositie|specialisatie|toewijzing|toegang \\([a-zë-]+\\)|triggering|stroom|realisatie|bediening)$"
+          },
+          "naar": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "naam": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kardinaliteit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "grondslag": {
+            "enum": [
+              "ggm-exact",
+              "ggm-afgeleid",
+              "bron"
+            ]
+          },
+          "ggm_relatie": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^EAID_"
+            }
+          },
+          "bronnen": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "vindplaats": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "bronnen": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "description": "Bronnen naast die in kenmerken en relaties, bijv. de algemene bron van de beschrijving"
+    },
+    "vragen": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Open vragen aan de redacteur"
+    },
+    "besluiten": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "datum",
+          "besluit",
+          "gevolg"
+        ],
+        "properties": {
+          "datum": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+          },
+          "besluit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "gevolg": {
+            "enum": [
+              "opnemen",
+              "afwijzen",
+              "verwerkt"
+            ]
+          },
+          "redenen": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "De voorgelegde redenen (uit afgeleid.voor_te_leggen) die dit besluit dekt"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "status": {
+      "enum": [
+        "kandidaat",
+        "review",
+        "goedgekeurd",
+        "afgewezen"
+      ],
+      "description": "Door tools/afleiden.py en llmwiki promote; niet zelf invullen"
+    },
+    "afgeleid": {
+      "type": "object",
+      "description": "Door tools/afleiden.py; niet zelf invullen"
     }
   },
   "additionalProperties": false,
@@ -252,600 +684,6 @@
           "items": {
             "type": "string"
           }
-        }
-      },
-      "additionalProperties": false
-    },
-    "kenmerkwaarden": {
-      "description": "Kenmerken zoals vastgelegd op een elementpagina (alleen ja/nee; onderbouwing in de body). Criteria van 2026-10-01, of tot de herbeoordeling die van 2026-09-30.",
-      "anyOf": [
-        {
-          "$ref": "#/$defs/kenmerkwaarden_actueel"
-        },
-        {
-          "$ref": "#/$defs/kenmerkwaarden_2026_09_30"
-        }
-      ]
-    },
-    "kenmerkwaarden_actueel": {
-      "type": "object",
-      "required": [
-        "herkenbaar",
-        "gemeentelijk",
-        "buiten_dit_model",
-        "slechts_eigenschap",
-        "eigen_identiteit",
-        "betekenis_in_onderwerp",
-        "gedrag",
-        "handelende_partij",
-        "hoedanigheid",
-        "samenwerkingsverband",
-        "toegangspunt",
-        "plaats",
-        "aanbod_als_geheel",
-        "regeling_als_geheel",
-        "los_van_verantwoordelijkheid",
-        "eigen_rechtspersoon",
-        "vervult_een_rol",
-        "voert_gedrag_uit",
-        "ontsluit_een_dienst",
-        "per_keer_doorlopen",
-        "gegroepeerd_gedrag",
-        "toestandsverandering",
-        "aangeboden_gedrag",
-        "gezamenlijk_gedrag",
-        "toegewezen_partij",
-        "gebruikt_objecten",
-        "aanleiding",
-        "benoembaar_resultaat",
-        "komt_herhaald_voor",
-        "eigen_normering",
-        "stabiel_over_tijd",
-        "afnemer",
-        "gerealiseerd_door",
-        "leidt_tot_gedrag",
-        "bijdrage_aan_groter_proces",
-        "onderscheidbare_exemplaren",
-        "levenscyclus",
-        "wordt_bewerkt",
-        "afspraak",
-        "waarneembare_vorm",
-        "omvat_diensten_en_afspraken",
-        "geautomatiseerd_verwerkt",
-        "landelijk",
-        "in_werking",
-        "is_grondslag_voor",
-        "zelfstandige_specialisatie"
-      ],
-      "properties": {
-        "herkenbaar": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gemeentelijk": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "buiten_dit_model": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "slechts_eigenschap": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "eigen_identiteit": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "betekenis_in_onderwerp": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "handelende_partij": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "hoedanigheid": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "samenwerkingsverband": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "toegangspunt": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "plaats": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "aanbod_als_geheel": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "regeling_als_geheel": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "los_van_verantwoordelijkheid": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "eigen_rechtspersoon": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "vervult_een_rol": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "voert_gedrag_uit": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "ontsluit_een_dienst": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "per_keer_doorlopen": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gegroepeerd_gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "toestandsverandering": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "aangeboden_gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gezamenlijk_gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "toegewezen_partij": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gebruikt_objecten": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "aanleiding": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "benoembaar_resultaat": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "komt_herhaald_voor": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "eigen_normering": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "stabiel_over_tijd": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "afnemer": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gerealiseerd_door": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "leidt_tot_gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "bijdrage_aan_groter_proces": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "onderscheidbare_exemplaren": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "levenscyclus": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "wordt_bewerkt": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "afspraak": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "waarneembare_vorm": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "omvat_diensten_en_afspraken": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "geautomatiseerd_verwerkt": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "landelijk": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "in_werking": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "is_grondslag_voor": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "zelfstandige_specialisatie": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        }
-      },
-      "additionalProperties": false
-    },
-    "kenmerkwaarden_2026_09_30": {
-      "type": "object",
-      "required": [
-        "herkenbaar",
-        "gemeentelijk",
-        "buiten_kernlagen",
-        "betekenis_in_onderwerp",
-        "slechts_eigenschap",
-        "eigen_identiteit",
-        "relaties",
-        "zelfstandig_beleidsbegrip",
-        "gedrag",
-        "handelende_partij",
-        "hoedanigheid",
-        "samenwerkingsverband",
-        "toegangspunt",
-        "plaats",
-        "aanbod_als_geheel",
-        "los_van_verantwoordelijkheid",
-        "meerdere_vervullers",
-        "per_keer_doorlopen",
-        "gegroepeerd_gedrag",
-        "toestandsverandering",
-        "aangeboden_gedrag",
-        "gezamenlijk_gedrag",
-        "toegewezen_partij",
-        "gebruikt_objecten",
-        "aanleiding",
-        "benoembaar_resultaat",
-        "herhaald_uitgevoerd",
-        "eigen_normering",
-        "stabiel_over_tijd",
-        "onderscheidbare_exemplaren",
-        "levenscyclus",
-        "wordt_bewerkt",
-        "afspraak",
-        "waarneembare_vorm",
-        "geautomatiseerd_verwerkt"
-      ],
-      "properties": {
-        "herkenbaar": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gemeentelijk": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "buiten_kernlagen": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "betekenis_in_onderwerp": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "slechts_eigenschap": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "eigen_identiteit": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "relaties": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "zelfstandig_beleidsbegrip": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "handelende_partij": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "hoedanigheid": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "samenwerkingsverband": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "toegangspunt": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "plaats": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "aanbod_als_geheel": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "los_van_verantwoordelijkheid": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "meerdere_vervullers": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "per_keer_doorlopen": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gegroepeerd_gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "toestandsverandering": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "aangeboden_gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gezamenlijk_gedrag": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "toegewezen_partij": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "gebruikt_objecten": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "aanleiding": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "benoembaar_resultaat": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "herhaald_uitgevoerd": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "eigen_normering": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "stabiel_over_tijd": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "onderscheidbare_exemplaren": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "levenscyclus": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "wordt_bewerkt": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "afspraak": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "waarneembare_vorm": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
-        },
-        "geautomatiseerd_verwerkt": {
-          "enum": [
-            "ja",
-            "nee"
-          ]
         }
       },
       "additionalProperties": false

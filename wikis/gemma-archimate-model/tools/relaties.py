@@ -1,32 +1,26 @@
-"""Relaties tussen elementen: afleiden uit het GGM, toetsen aan ArchiMate, lezen uit de pagina's.
+"""Relaties tussen elementen: kandidaten uit het GGM en uit de bronanalyses, en de toets aan ArchiMate.
 
-Een relatie staat één keer, als rij in `## Relaties` op de pagina van het bronelement, met een
-relatieve link naar het doelelement (Obsidian toont de omgekeerde kant als backlink):
+Een relatie staat in de beoordeling van het bronelement (`relaties:` in beoordelingen/begrippen/<id>.yaml); het
+render-script zet haar op de pagina, met de inkomende kant op de pagina van het doel. Deze tool doet voorstellen; de AI
+kiest, geeft een herkenbare naam en schrijft ze in de beoordeling. tools/afleiden.py toetst elke relatie.
 
-    | Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
-    |---|---|---|---|---|---|---|
-    | compositie | [Onderdeel beschikking](onderdeel-beschikking.md) | bevat | 1 → 1..* | ggm-exact | EAID_… | [2026-overheid-awb](../../../../bronanalyses/…/2026-overheid-awb.md) (art. 1:3) |
-
-Relatie: associatie, associatie (gericht), aggregatie, compositie, specialisatie, toewijzing,
+Relatie (`soort`): associatie, associatie (gericht), aggregatie, compositie, specialisatie, toewijzing,
 toegang (<handeling> of <verantwoordelijkheid>), triggering, stroom, realisatie, bediening.
 Toegang van gedrag tot een object heeft een handeling (registreren, bijwerken, beëindigen, raadplegen, verstrekken,
 bewaren, overbrengen, vernietigen); toegang van een rol of bedrijfssamenwerking een verantwoordelijkheid (houder,
 bronhouder, beheerder, verstrekker, afnemer, toezichthouder, betrokkene, partij). Het ArchiMate-toegangstype volgt
-eruit (besluiten redacteur 2026-10-01). De oude notatie (lezen|schrijven|lezen-schrijven) blijft tot de
-herbeoordeling geldig.
-Grondslag: ggm-exact | ggm-afgeleid | bron. GGM-relatie: één of meer GUID's (komma-gescheiden), leeg bij `bron`.
-Bron: bron-id's als link naar de bronanalyse, met vindplaats; verplicht bij `bron`, bij `ggm-*` de bronnen die de relatie bevestigen.
+eruit (besluiten redacteur 2026-10-01).
+Grondslag: ggm-exact | ggm-afgeleid | bron. `ggm_relatie`: de GUID's, leeg bij `bron`. `bronnen`: verplicht bij
+`bron`, bij `ggm-*` de bronnen die de relatie bevestigen.
 
-Relaties worden samen met de elementen gevonden: de bronanalyse noemt relaties tussen begrippen (werkwoord +
-vindplaats), ASSESS neemt ze op bij de voorstellen, en `uit-bronnen` zet ze om naar ArchiMate op basis van de
-uitkomst van beide begrippen (optillen of laten vervallen, zoals bij het GGM). `voorstel --bronnen` voegt ze
-samen met de kandidaten uit het GGM.
+Relaties uit de bronnen komen uit de tabel `## Relaties` van de bronanalyses (Van | Werkwoord | Naar | Vindplaats):
+de begrippen worden opgelost via de beoordelingen (naam of synoniem), een eigenschap, onderdeel of specialisatie
+zonder pagina wordt opgetild naar het genoemde begrip, en de typen van beide kanten plus het werkwoord bepalen de
+soort relatie.
 
-Gebruik (vanuit de wikimap):
-    uv run python tools/relaties.py uit-bronnen <assessment.json>        # relaties uit de bronnen, naar ArchiMate
-    uv run python tools/relaties.py voorstel <element-id> [--bronnen <assessment.json>] [--markdown]
-    uv run python tools/relaties.py inkomend <element-id>                # relaties die naar dit element wijzen
-    uv run python tools/relaties.py lees <pagina.md>                     # de relatietabel als JSON
+Gebruik (vanuit de wikimap, na tools/afleiden.py):
+    uv run python tools/relaties.py voorstel <element-id>      # kandidaten als YAML voor `relaties:`
+    uv run python tools/relaties.py uit-bronnen [<onderwerp>]  # alle relaties uit de bronanalyses, met wat vervalt
 """
 from __future__ import annotations
 
@@ -40,6 +34,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import gam_gemeen  # noqa: E402
+from llmwiki import beoordeling, paths  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
 
@@ -64,14 +59,11 @@ HANDELINGEN = {"registreren": "schrijven", "bijwerken": "lezen-schrijven", "beë
 VERANTWOORDELIJKHEDEN = {"houder": "lezen-schrijven", "bronhouder": "schrijven", "beheerder": "lezen-schrijven",
                          "verstrekker": "lezen", "afnemer": "lezen", "toezichthouder": "lezen", "betrokkene": "lezen",
                          "partij": "lezen-schrijven"}
-TOEGANG_OUD = ("lezen", "schrijven", "lezen-schrijven")  # criteria van 2026-09-30; tot de herbeoordeling
-TOEGANG = tuple(HANDELINGEN) + tuple(VERANTWOORDELIJKHEDEN) + TOEGANG_OUD
+TOEGANG = tuple(HANDELINGEN) + tuple(VERANTWOORDELIJKHEDEN)
 
 
 def toegangstype(naam: str | None) -> str | None:
     """ArchiMate-toegangstype (lezen, schrijven, lezen-schrijven) bij een handeling of verantwoordelijkheid."""
-    if naam in TOEGANG_OUD:
-        return naam
     return HANDELINGEN.get(naam) or VERANTWOORDELIJKHEDEN.get(naam)
 GRONDSLAGEN = ("ggm-exact", "ggm-afgeleid", "bron")
 KOLOMMEN = ["Relatie", "Naar", "Naam", "Kardinaliteit", "Grondslag", "GGM-relatie", "Bron"]
@@ -111,13 +103,12 @@ def categorie(archimate_type: str) -> str:
     return "onbekend"
 
 
-def toegestaan(relatie: str, bron_type: str, doel_type: str, oud: bool = False) -> bool:
+def toegestaan(relatie: str, bron_type: str, doel_type: str) -> bool:
     """ArchiMate-toets, aangescherpt met de GEMMA-modelleerafspraken (besluiten redacteur 2026-10-01).
 
     Een actor hangt alleen via een rol aan gedrag en objecten; een kanaal is toegewezen aan een dienst en bedient een
     rol; een functie bedient een proces (geen aggregatie); een dienst heeft geen toegang tot een object en krijgt geen
-    rol toegewezen. Met `oud=True` gelden de regels van 2026-09-30, zodat de controle bestaande pagina's tot de
-    herbeoordeling als waarschuwing kan melden in plaats van als fout.
+    rol toegewezen.
     """
     if relatie == "specialization":
         return bron_type == doel_type or {bron_type, doel_type} == {"business-object", "contract"}
@@ -125,87 +116,37 @@ def toegestaan(relatie: str, bron_type: str, doel_type: str, oud: bool = False) 
     if relatie == "assignment" and cb == cd == "actief":
         # Tussen twee partijen alleen: een actor vervult een rol.
         return (bron_type, doel_type) == ("business-actor", "business-role")
-    if not oud:
-        if bron_type == "business-actor" and relatie in ("assignment", "access"):
-            return False
-        if bron_type == "business-interface":
-            return relatie == "association" or (relatie, doel_type) in {
-                ("assignment", "business-service"), ("serving", "business-role")}
-        if relatie == "assignment" and cb == "actief" and doel_type == "business-service":
-            return False
-        if relatie in ("aggregation", "composition") and (bron_type, doel_type) == ("business-function", "business-process"):
-            return False
-        if relatie == "access" and bron_type == "business-service":
-            return False
+    if bron_type == "business-actor" and relatie in ("assignment", "access"):
+        return False
+    if bron_type == "business-interface":
+        return relatie == "association" or (relatie, doel_type) in {
+            ("assignment", "business-service"), ("serving", "business-role")}
+    if relatie == "assignment" and cb == "actief" and doel_type == "business-service":
+        return False
+    if relatie in ("aggregation", "composition") and (bron_type, doel_type) == ("business-function", "business-process"):
+        return False
+    if relatie == "access" and bron_type == "business-service":
+        return False
     return any(r == relatie and b in ("*", cb) and d in ("*", cd) for r, b, d in TOEGESTAAN if b != "zelfde")
 
 
-# --- Relatietabel op een pagina ---
+# --- De elementen: uit de beoordelingen ---
 
 
-@dataclass
-class Relatie:
-    relatie: str  # ArchiMate-relatie
-    naar: str  # doel-id (of het linkdoel als dat niet te herleiden is)
-    naam: str = ""
-    kardinaliteit: str = ""
-    grondslag: str = ""
-    ggm_relaties: list[str] = field(default_factory=list)
-    gericht: bool = False
-    toegang: str | None = None
-    bronnen: list[str] = field(default_factory=list)
-    fouten: list[str] = field(default_factory=list)
+def begrippen(wiki_root: Path = WIKI_ROOT) -> dict[str, dict]:
+    """id → beoordeling, voor elke beoordeling die al is afgeleid (tools/afleiden.py)."""
+    alle = beoordeling.alle(wiki_root, paths.load_wiki_yaml(wiki_root))
+    return {bid: data for bid, (_, data) in alle.items() if (data.get("afgeleid") or {}).get("uitkomst")}
 
 
-def lees_tabel(pad: Path, body: str, index_op_pad: dict[Path, str]) -> list[Relatie]:
-    result = []
-    for rij in gam_gemeen.tabel(gam_gemeen.sectie(body, "Relaties")):
-        fouten = []
-        label = rij.get("Relatie", "").strip().lower()
-        m = re.fullmatch(r"(?P<soort>[a-z]+)(?:\s*\((?P<extra>[^)]+)\))?", label)
-        soort = m.group("soort") if m else label
-        extra = m.group("extra") if m else None
-        if soort not in RELATIES:
-            fouten.append(f"onbekende relatie '{label}'")
-        gericht = soort == "associatie" and extra == "gericht"
-        toegang = extra if soort == "toegang" else None
-        if soort == "toegang" and toegang not in TOEGANG:
-            fouten.append(f"toegang zonder geldige handeling of verantwoordelijkheid ({', '.join(TOEGANG[:-3])})")
-        gelinkt = gam_gemeen.link(rij.get("Naar", ""))
-        if gelinkt is None:
-            fouten.append("kolom 'Naar' bevat geen link")
-            naar = rij.get("Naar", "")
-        else:
-            doelpad = gam_gemeen.doel_van_link(pad, gelinkt[1])
-            naar = index_op_pad.get(doelpad, gelinkt[1])
-            if doelpad not in index_op_pad:
-                fouten.append(f"link '{gelinkt[1]}' wijst niet naar een elementpagina")
-        grondslag = rij.get("Grondslag", "").strip()
-        if grondslag not in GRONDSLAGEN:
-            fouten.append(f"grondslag '{grondslag}' onbekend ({', '.join(GRONDSLAGEN)})")
-        ggm = [g.strip() for g in rij.get("GGM-relatie", "").split(",") if g.strip()]
-        if grondslag.startswith("ggm") and not ggm:
-            fouten.append("grondslag ggm-* zonder GGM-relatie")
-        bronnen = list(dict.fromkeys(BRON_ID_RE.findall(rij.get("Bron", ""))))  # een id staat in linktekst én linkdoel
-        if grondslag == "bron" and not bronnen:
-            fouten.append("grondslag bron zonder bron-id in kolom 'Bron'")
-        result.append(Relatie(RELATIES.get(soort, soort), naar, rij.get("Naam", ""), rij.get("Kardinaliteit", ""),
-                              grondslag, ggm, gericht, toegang, bronnen, fouten))
-    return result
+def _uitkomst(data: dict) -> dict:
+    return data["afgeleid"]["uitkomst"]
 
 
-def index_op_pad(elementen: list) -> dict[Path, str]:
-    return {el.pad.resolve(): el.id for el in elementen}
-
-
-def alle_relaties(wiki_root: Path = WIKI_ROOT) -> dict[str, list[Relatie]]:
-    elementen = gam_gemeen.elementen(wiki_root)
-    op_pad = index_op_pad(elementen)
-    return {el.id: lees_tabel(el.pad, el.body, op_pad) for el in elementen}
-
-
-def inkomend(element_id: str, wiki_root: Path = WIKI_ROOT) -> list[dict]:
-    return [{"van": bron, **asdict(r)} for bron, rels in alle_relaties(wiki_root).items() for r in rels if r.naar == element_id]
+def elementen(begrippen_: dict[str, dict]) -> dict[str, dict]:
+    """De begrippen die een elementpagina krijgen."""
+    return {bid: d for bid, d in begrippen_.items()
+            if _uitkomst(d)["soort"] == "element" and d.get("status") != "afgewezen"}
 
 
 # --- Afleiden uit het GGM ---
@@ -273,23 +214,23 @@ def archimate_van_ggm(rel: dict) -> dict:
             "gericht": bool((rel.get("name") or "").strip()), "terugmelding": None}
 
 
-def ggm_toewijzing(elementen: list) -> dict[str, tuple[str, str]]:
+def ggm_toewijzing(elementen_: dict[str, dict]) -> dict[str, tuple[str, str]]:
     """GGM-GUID → (element-id, hoe): 'eigen', 'duplicaat', 'specialisatie' of 'component'.
 
-    Specialisaties zonder pagina en GGM-componenten worden opgetild naar het element dat ze draagt
-    (`## Specialisaties`- en `## GGM-componenten`-tabellen met kolom 'GGM-guid').
+    Specialisaties zonder pagina en GGM-componenten worden opgetild naar het element dat ze draagt.
     """
     toewijzing = {}
-    for el in elementen:
-        if el.meta.get("ggm_guid"):
-            toewijzing[el.meta["ggm_guid"]] = (el.id, "eigen")
-        for dup in el.meta.get("ggm_duplicaat_entiteiten", []) or []:
-            toewijzing.setdefault(dup.get("guid"), (el.id, "duplicaat"))
-        for kop, hoe in (("Specialisaties", "specialisatie"), ("GGM-componenten", "component")):
-            for rij in gam_gemeen.tabel(gam_gemeen.sectie(el.body, kop)):
-                guid = rij.get("GGM-guid", "").strip("` ")
-                if guid and gam_gemeen.link(rij.get(next(iter(rij)), "")) is None:
-                    toewijzing.setdefault(guid, (el.id, hoe))
+    for bid, d in elementen_.items():
+        ggm = d.get("ggm") or {}
+        if ggm.get("guid"):
+            toewijzing[ggm["guid"]] = (bid, "eigen")
+        for dup in ggm.get("duplicaten", []):
+            toewijzing.setdefault(dup["guid"], (bid, "duplicaat"))
+        for s in d.get("specialisaties", []):
+            if s.get("ggm_guid") and not s.get("element"):
+                toewijzing.setdefault(s["ggm_guid"], (bid, "specialisatie"))
+        for c in d.get("ggm_componenten", []):
+            toewijzing.setdefault(c["guid"], (bid, "component"))
     return toewijzing
 
 
@@ -316,8 +257,7 @@ def _kaart(rel: dict, eind: str) -> str:
 
 def voorstel(element_id: str, data: dict, wiki_root: Path = WIKI_ROOT) -> list[Kandidaat]:
     """Kandidaat-relaties uit het GGM voor één element (uitgaand én inkomend), na optillen en ketenen."""
-    elementen = gam_gemeen.elementen(wiki_root)
-    toewijzing = ggm_toewijzing(elementen)
+    toewijzing = ggm_toewijzing(elementen(begrippen(wiki_root)))
     eigen_guids = {g for g, (e, _) in toewijzing.items() if e == element_id}
     entiteiten, relaties_ggm = data["entities"], list(data["relations"].values())
 
@@ -504,74 +444,65 @@ def van_bron(bron_type: str, doel_type: str, werkwoord: str) -> dict:
     return uit("association", "geen specifiekere relatie herkend", gericht=True)
 
 
-def _begrippen_uit_assessment(assessment: dict, wiki_root: Path = WIKI_ROOT) -> dict[str, dict]:
-    """begrip (kleine letters) → uitkomst + element-id (bestandsnaam van het doel) uit de ASSESS-voorstellen.
+def bronrelaties(wiki_root: Path = WIKI_ROOT, onderwerp: str | None = None) -> list[dict]:
+    """De rijen van `## Relaties` in de bronanalyses: {van, werkwoord, naar, bronnen, vindplaats}."""
+    map_ = wiki_root / paths.load_wiki_yaml(wiki_root)["page_types"].get("bronanalyse", {}).get("dir", "bronanalyses")
+    rijen = []
+    for pad in sorted(map_.glob(f"{onderwerp or '*'}/*.md")):
+        for rij in gam_gemeen.tabel(gam_gemeen.sectie(pad.read_text(encoding="utf-8"), "Relaties")):
+            if rij.get("Van") and rij.get("Naar"):
+                rijen.append({"van": rij["Van"], "werkwoord": rij.get("Werkwoord", ""), "naar": rij["Naar"],
+                              "bronnen": [pad.stem], "vindplaats": rij.get("Vindplaats", "")})
+    return rijen
 
-    Een element-id alleen als het doel een elementpagina is; een begrip dat verhuist (uitkomst element, doel de
-    begrippenlijst) krijgt in deze run geen pagina en dus geen id.
+
+def uit_bronnen(rijen: list[dict], begrippen_: dict[str, dict]) -> tuple[list[Kandidaat], list[dict]]:
+    """Relaties uit de bronnen ({van, werkwoord, naar, bronnen, vindplaats}) naar ArchiMate.
+
+    Een begrip wordt opgelost via de beoordelingen (naam, synoniem of id). Is het een eigenschap, onderdeel of
+    specialisatie zonder pagina, dan wordt de relatie opgetild naar het genoemde begrip; is het geen element (buiten
+    scope, geen element, conflict, herkend, afgewezen), dan vervalt de relatie. Geeft (kandidaten, vervallen).
     """
-    mappen = [d["dir"].rstrip("/") + "/" for d in gam_gemeen.element_types(gam_gemeen.wiki_yaml(wiki_root)).values()]
-    index = {}
-    for v in assessment.get("voorstellen", []):
-        b = v.get("beoordeling") or {}
-        u = b.get("uitkomst")
-        if b.get("begrip") and u:
-            elementpagina = u["soort"] == "element" and any(v["doel"].startswith(m) for m in mappen)
-            index[b["begrip"].strip().lower()] = {**u, "id": Path(v["doel"]).stem if elementpagina else None,
-                                                  "doel": v["doel"]}
-    return index
-
-
-def uit_bronnen(assessment: dict, wiki_root: Path = WIKI_ROOT) -> tuple[list[Kandidaat], list[dict]]:
-    """Relaties uit `voorstellen[*].relaties` ({van, werkwoord, naar, bronnen, vindplaats}) naar ArchiMate.
-
-    Een begrip wordt opgelost via de uitkomst van de beslistabel (ASSESS) of een bestaand element (naam of id).
-    Is een begrip een eigenschap, onderdeel of specialisatie zonder pagina, dan wordt de relatie opgetild naar het
-    genoemde begrip; is het geen element (buiten scope, geen element, conflict, herkend), dan vervalt de relatie.
-    Geeft (kandidaten, vervallen).
-    """
-    begrippen = _begrippen_uit_assessment(assessment, wiki_root)
-    bestaand = {}
-    for el in gam_gemeen.elementen(wiki_root):
-        bestaand[el.id] = bestaand[str(el.meta.get("naam", "")).lower()] = (el.id, el.meta.get("archimate_type", ""))
+    index: dict[str, str] = {}
+    for bid, d in begrippen_.items():
+        for naam in [d.get("begrip", ""), *[s["naam"] for s in d.get("synoniemen", [])]]:
+            index.setdefault(naam.strip().lower(), bid)
+        index.setdefault(bid, bid)
 
     def los_op(naam: str, diepte: int = 0) -> tuple[tuple[str, str] | None, str]:
-        sleutel = naam.strip().lower()
-        u = begrippen.get(sleutel)
-        if u is None:
-            gevonden = bestaand.get(sleutel) or bestaand.get(naam.strip())
-            return (gevonden, "") if gevonden else (None, f"'{naam}' is geen beoordeeld begrip of bestaand element")
-        if u["soort"] == "element" and u["id"] is None:
-            return None, f"'{naam}' krijgt in deze run geen elementpagina (doel {u['doel']})"
-        if u["soort"] == "element":
-            return (u["id"], u["archimate_type"]), ""
+        bid = index.get(naam.strip().lower())
+        if bid is None:
+            return None, f"'{naam}' is geen beoordeeld begrip"
+        d = begrippen_[bid]
+        u = _uitkomst(d)
+        if u["soort"] == "element" and d.get("status") != "afgewezen":
+            return (bid, u["archimate_type"]), ""
         if u["soort"] in ("eigenschap", "onderdeel", "specialisatie") and u.get("genoemd_begrip") and diepte < 3:
             doel, reden = los_op(u["genoemd_begrip"], diepte + 1)
             return doel, reden or f"opgetild van '{naam}' naar '{u['genoemd_begrip']}'"
-        return None, f"'{naam}' is geen element ({u['soort']})"
+        return None, f"'{naam}' is geen element ({'afgewezen' if d.get('status') == 'afgewezen' else u['soort']})"
 
     kandidaten: dict[tuple, Kandidaat] = {}
     vervallen = []
-    for v in assessment.get("voorstellen", []):
-        for r in v.get("relaties", []) or []:
-            (van, reden_van), (naar, reden_naar) = los_op(r["van"]), los_op(r["naar"])
-            if van is None or naar is None:
-                vervallen.append({**r, "reden": "; ".join(x for x in (reden_van, reden_naar) if x and "opgetild" not in x)})
-                continue
-            a = van_bron(van[1], naar[1], r.get("werkwoord", ""))
-            bron, doel = (naar[0], van[0]) if a["omgedraaid"] else (van[0], naar[0])
-            if bron == doel:
-                vervallen.append({**r, "reden": "lus na optillen"})
-                continue
-            sleutel = (a["relatie"], bron, doel)
-            toelichting = "; ".join(x for x in (reden_van, reden_naar, a["reden"]) if x)
-            if sleutel in kandidaten:
-                k = kandidaten[sleutel]
-                k.bronnen += [b for b in r.get("bronnen", []) if b not in k.bronnen]
-                continue
-            kandidaten[sleutel] = Kandidaat(a["relatie"], bron, doel, r.get("werkwoord", ""), "", "bron", [],
-                                            a["gericht"], None, toelichting, a["toegang"], list(r.get("bronnen", [])),
-                                            r.get("vindplaats", ""))
+    for r in rijen:
+        (van, reden_van), (naar, reden_naar) = los_op(r["van"]), los_op(r["naar"])
+        if van is None or naar is None:
+            vervallen.append({**r, "reden": "; ".join(x for x in (reden_van, reden_naar) if x and "opgetild" not in x)})
+            continue
+        a = van_bron(van[1], naar[1], r.get("werkwoord", ""))
+        bron, doel = (naar[0], van[0]) if a["omgedraaid"] else (van[0], naar[0])
+        if bron == doel:
+            vervallen.append({**r, "reden": "lus na optillen"})
+            continue
+        sleutel = (a["relatie"], bron, doel)
+        toelichting = "; ".join(x for x in (reden_van, reden_naar, a["reden"]) if x)
+        if sleutel in kandidaten:
+            k = kandidaten[sleutel]
+            k.bronnen += [b for b in r.get("bronnen", []) if b not in k.bronnen]
+            continue
+        kandidaten[sleutel] = Kandidaat(a["relatie"], bron, doel, r.get("werkwoord", ""), "", "bron", [],
+                                        a["gericht"], None, toelichting, a["toegang"], list(r.get("bronnen", [])),
+                                        r.get("vindplaats", ""))
     return list(kandidaten.values()), vervallen
 
 
@@ -592,60 +523,60 @@ def combineer(ggm_kandidaten: list[Kandidaat], bron_kandidaten: list[Kandidaat])
     return result
 
 
-def markdown_rijen(element_id: str, kandidaten: list[Kandidaat], wiki_root: Path = WIKI_ROOT) -> str:
-    index = gam_gemeen.element_index(wiki_root)
-    terug = {v: k for k, v in RELATIES.items()}
-    van = index[element_id].pad
-    regels = ["| " + " | ".join(KOLOMMEN) + " |", "|" + "---|" * len(KOLOMMEN)]
+def als_relatie(k: Kandidaat) -> dict:
+    """Een kandidaat in het formaat van `relaties:` in een beoordeling."""
+    terug = {v: n for n, v in RELATIES.items()}
+    soort = terug[k.relatie]
+    if k.relatie == "association" and k.gericht:
+        soort += " (gericht)"
+    if k.relatie == "access":
+        soort += f" ({k.toegang or 'bijwerken'})"
+    r = {"soort": soort, "naar": k.doel, "naam": k.naam, "kardinaliteit": k.kardinaliteit, "grondslag": k.grondslag,
+         "ggm_relatie": k.ggm_relaties, "bronnen": k.bronnen, "vindplaats": k.vindplaats}
+    return {s: w for s, w in r.items() if w not in ("", [], None)}
+
+
+def yaml_voorstel(element_id: str, kandidaten: list[Kandidaat]) -> str:
+    """Uitgaande kandidaten als YAML voor `relaties:`; inkomende als commentaar (die horen bij het andere element)."""
+    regels = ["relaties:"]
     for k in kandidaten:
         if k.bron != element_id:
             continue
-        doel = index.get(k.doel)
-        naar = f"[{doel.meta.get('naam', k.doel)}]({gam_gemeen.relatief(van, doel.pad)})" if doel else k.doel
-        label = terug[k.relatie] + (" (gericht)" if k.gericht and k.relatie == "association" else "")
-        if k.relatie == "access":
-            label += f" ({k.toegang or 'bijwerken'})"
-        bron = ", ".join(gam_gemeen.bronnen_als_link(van, b, wiki_root) for b in k.bronnen) + (f" ({k.vindplaats})" if k.vindplaats else "")
-        regels.append(f"| {label} | {naar} | {k.naam} | {k.kardinaliteit} | {k.grondslag} | {', '.join(k.ggm_relaties)} | {bron} |")
+        uitleg = [x for x in (k.toelichting, k.terugmelding and f"terugmelden: {k.terugmelding}") if x]
+        if uitleg:
+            regels.append(f"# {'; '.join(uitleg)}")
+        regels += ["  " + r for r in beoordeling.dump([als_relatie(k)]).rstrip("\n").split("\n")]
+    inkomend = [k for k in kandidaten if k.doel == element_id]
+    if inkomend:
+        regels.append("# Inkomend (hoort in de beoordeling van het andere element):")
+        regels += [f"#   {k.bron} -> {als_relatie(k)['soort']} ({k.naam or 'zonder naam'})" for k in inkomend]
     return "\n".join(regels) + "\n"
 
 
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description="Relaties tussen elementen (zie docstring).")
+    p.add_argument("--wiki", type=Path, default=WIKI_ROOT, help=argparse.SUPPRESS)
     sub = p.add_subparsers(dest="cmd", required=True)
-    v = sub.add_parser("voorstel")
-    v.add_argument("element")
-    v.add_argument("--bronnen", help="assessment.json: voeg de relaties uit de bronnen toe")
-    v.add_argument("--markdown", action="store_true", help="Alleen uitgaande relaties, als tabelrijen voor ## Relaties")
-    sub.add_parser("uit-bronnen").add_argument("assessment")
-    sub.add_parser("inkomend").add_argument("element")
-    sub.add_parser("lees").add_argument("pagina")
+    sub.add_parser("voorstel").add_argument("element")
+    sub.add_parser("uit-bronnen").add_argument("onderwerp", nargs="?")
     a = p.parse_args(argv)
+    alle = begrippen(a.wiki)
 
     if a.cmd == "uit-bronnen":
-        kandidaten, vervallen = uit_bronnen(json.loads(Path(a.assessment).read_text(encoding="utf-8")))
-        print(json.dumps({"kandidaten": [asdict(k) for k in kandidaten], "vervallen": vervallen}, indent=2, ensure_ascii=False))
+        kandidaten, vervallen = uit_bronnen(bronrelaties(a.wiki, a.onderwerp), alle)
+        print(json.dumps({"kandidaten": [{"van": k.bron, **als_relatie(k), "toelichting": k.toelichting} for k in kandidaten],
+                          "vervallen": vervallen}, indent=2, ensure_ascii=False))
         return 0
-    if a.cmd == "voorstel":
-        import ggm
+    if a.element not in elementen(alle):
+        print(f"'{a.element}' is (nog) geen afgeleid element; draai eerst tools/afleiden.py")
+        return 1
+    import ggm
 
-        kandidaten = voorstel(a.element, ggm.laad()) if ggm.PARSED.exists() else []
-        if a.bronnen:
-            uit, _ = uit_bronnen(json.loads(Path(a.bronnen).read_text(encoding="utf-8")))
-            kandidaten = combineer(kandidaten, [k for k in uit if a.element in (k.bron, k.doel)])
-        if a.markdown:
-            sys.stdout.write(markdown_rijen(a.element, kandidaten))
-        else:
-            print(json.dumps([asdict(k) for k in kandidaten], indent=2, ensure_ascii=False))
-        return 0
-    if a.cmd == "inkomend":
-        print(json.dumps(inkomend(a.element), indent=2, ensure_ascii=False))
-        return 0
-    from llmwiki import frontmatter
-
-    pad = Path(a.pagina).resolve()
-    rels = lees_tabel(pad, frontmatter.read(pad).body, index_op_pad(gam_gemeen.elementen()))
-    print(json.dumps([asdict(r) for r in rels], indent=2, ensure_ascii=False))
+    ggm_pad = a.wiki / "ggm" / "ggm_parsed.json"
+    kandidaten = voorstel(a.element, ggm.laad(ggm_pad), a.wiki) if ggm_pad.exists() else []
+    uit, _ = uit_bronnen(bronrelaties(a.wiki), alle)
+    kandidaten = combineer(kandidaten, [k for k in uit if a.element in (k.bron, k.doel)])
+    sys.stdout.write(yaml_voorstel(a.element, kandidaten))
     return 0
 
 

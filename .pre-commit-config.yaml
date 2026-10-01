@@ -19,6 +19,12 @@ repos:
         language: system
         pass_filenames: false
 
+      - id: llmwiki-render-check
+        name: gegenereerde pagina's gelijk aan de beoordelingen
+        entry: uv run python -m llmwiki precommit render-check
+        language: system
+        pass_filenames: false
+
       - id: llmwiki-harness-check
         name: llmwiki harness check
         entry: uv run python -m llmwiki harness check

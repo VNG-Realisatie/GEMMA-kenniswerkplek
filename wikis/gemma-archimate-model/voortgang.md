@@ -1,21 +1,24 @@
+---
+id: voortgang
+type: analyse
+titel: Voortgang
+---
+
 # Voortgang
 
-Gegenereerd: 2026-10-01
+<!-- Gegenereerd door tools/render.py uit de beoordelingen. Wijzig de beoordeling, niet deze pagina. -->
 
-## Open runs
-- (geen)
+## Onderwerpen
 
-## Aantallen per status
-- actor: goedgekeurd=9
-- analyse: -=6
-- bedrijfsfunctie: goedgekeurd=2
-- bedrijfsobject: goedgekeurd=19, kandidaat=3
-- bedrijfsproces: goedgekeurd=9
-- bronanalyse: -=13
-- dienst: goedgekeurd=1
-- gebeurtenis: goedgekeurd=2
-- onderwerp: afgerond=2
-- rol: goedgekeurd=12
+| Onderwerp | Status | Begrippen | Elementen |
+|---|---|---|---|
+| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 0 | 0 |
+| [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
 
-## Wacht op review
-- (geen)
+## Elementen per type en status
+
+Nog geen elementen.
+
+## GGM-terugmeldingen
+
+[9 terugmeldingen](analyses/ggm-terugmeldingen.md): open 9.

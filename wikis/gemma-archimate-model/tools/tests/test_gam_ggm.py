@@ -127,28 +127,13 @@ def test_release_schrijft_bron_json_paginas_en_wiki_yaml(tmp_path, archimate_rep
     assert "met de hand gewijzigd" in gam_gemeen.controleer_gegenereerd(pagina)
 
 
-def test_verrijk_stagt_afwijkende_ggm_velden(tmp_path, archimate_repo):
-    from llmwiki import frontmatter, paths, runs
-
-    root, wiki = archimate_repo
+def test_kandidaten_voor_de_match_op_betekenis(tmp_path):
     data = ggm.parse_xmi(_xmi(tmp_path))
-    pad = wiki / "bedrijfsarchitectuur" / "bedrijfsobjecten" / "1-veiligheid" / "vergunningen" / "beschikking.md"
-    pad.parent.mkdir(parents=True)
-    pad.write_text(element_tekst({
-        "id": "beschikking", "type": "bedrijfsobject", "status": "goedgekeurd", "naam": "Beschikking",
-        "archimate_type": "business-object", "onderwerp": "vergunningen", "bronnen": ["2026-vng-ggm"],
-        "definitie": "Besluit over een individueel geval.", "grondslag": "ggm-entiteit", "kenmerken": KENMERKEN_BO,
-        "ggm_entiteit": "Beschikking", "ggm_guid": "EAID_BESCHIKKING", "ggm_definitie": "verouderd",
-    }), encoding="utf-8")
-    assert ggm.verschillen(data, wiki)[0]["velden"]
-
-    run_id = runs.start(wiki, paths.load_wiki_yaml(wiki), "gemma-archimate-model-update")["run_id"]
-    lijst = ggm.verrijk(data, run_id, wiki)
-    gestaged = frontmatter.read(__import__("pathlib").Path(lijst[0]["gestaged"]))
-    assert gestaged.meta["ggm_definitie"] == "Een besluit over een individueel geval."
-    assert gestaged.meta["status"] == "review"  # goedgekeurd gaat terug naar review
-    concept = json.loads((runs.run_dir(wiki, run_id) / "changeset-concept.json").read_text(encoding="utf-8"))
-    assert concept["paginas"][0]["actie"] == "wijzigen"
+    k = ggm.kandidaten(data, "Beschikking")
+    assert [n["guid"] for n in k["naamgenoten"]] == ["EAID_BESCHIKKING", "EAID_BESCHIKKING2"]  # duplicaat of homoniem
+    assert k["naamgenoten"][0]["definitie"] == "Een besluit over een individueel geval."
+    assert k["naamgenoten"][0]["specialisaties"] == ["Besluit"]
+    assert ggm.kandidaten(data, "schikking")["treffers"] == []  # alleen treffers aan het begin van een woord
 
 
 def test_release_zonder_bestand_haalt_op_van_herkomst(tmp_path, archimate_repo, monkeypatch):

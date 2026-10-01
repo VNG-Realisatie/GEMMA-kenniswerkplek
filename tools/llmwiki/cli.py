@@ -7,7 +7,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from . import __version__, gate, harness, lint, logbook, paths, runs, sources, sync as sync_module, validate, workspace_check
+from . import akkoord, __version__, gate, harness, lint, logbook, paths, runs, sources, sync as sync_module, validate, workspace_check
 
 
 def _wiki_root(args) -> Path:
@@ -246,10 +246,36 @@ def _parse_titel_overrides(pairs: list[str] | None) -> dict[str, str]:
     return overrides
 
 
+def _akkoord_command(wiki_root: Path, wiki_yaml: dict, args, action: str) -> int:
+    """promote voor een curatie-wiki met beoordelingen: geen run, akkoord in de chat (zie akkoord.py)."""
+    try:
+        if action == "plan":
+            s = akkoord.plan(wiki_root, wiki_yaml, getattr(args, "onderwerp", None))
+            print(f"Klaar voor akkoord: {len(s['te_keuren'])} element(en) op review.")
+            for e in s["te_keuren"]:
+                print(f"- {e['naam']} ({e['type']}){', eerder goedgekeurd en gewijzigd' if e['eerder_goedgekeurd'] else ', nieuw'}")
+            if s["voor_te_leggen"]:
+                print(f"Nog voor te leggen (blijft buiten dit akkoord): {', '.join(s['voor_te_leggen'])}.")
+            print("Overzicht: ter-beoordeling.md. Bekijk de pagina's en de wijzigingen in Source Control; "
+                  "het akkoord is het woord AKKOORD in de chat.")
+        else:
+            ids = akkoord.apply(wiki_root, wiki_yaml, args.akkoord_woord)
+            print(f"Goedgekeurd: {', '.join(ids)}. Vastgelegd in log.md; pagina's opnieuw gerenderd.")
+    except akkoord.AkkoordFout as exc:
+        print(f"GEWEIGERD: {exc}", file=sys.stderr)
+        return 1
+    return 0
+
+
 def _gate_command(args, action: str) -> int:
     wiki_root = _wiki_root(args)
     wiki_yaml = paths.load_wiki_yaml(wiki_root)
     command = args.command  # "promote" or "publish"
+    if command == "promote" and akkoord.van_toepassing(wiki_yaml):
+        return _akkoord_command(wiki_root, wiki_yaml, args, action)
+    if not getattr(args, "run", None):
+        print("GEWEIGERD: --run <run-id> is verplicht", file=sys.stderr)
+        return 1
     doel = getattr(args, "doel", None) or "site"
     try:
         if action == "plan":
@@ -533,6 +559,9 @@ def cmd_workspace_check(args) -> int:
 def cmd_voortgang(args) -> int:
     wiki_root = _wiki_root(args)
     wiki_yaml = paths.load_wiki_yaml(wiki_root)
+    if akkoord.van_toepassing(wiki_yaml):
+        print(akkoord.draai_script(wiki_root, wiki_yaml, "render").strip())
+        return 0
     path = logbook.regenerate(wiki_root, wiki_yaml)
     print(f"Bijgewerkt: {path}")
     return 0
@@ -569,6 +598,18 @@ def cmd_precommit_goedgekeurd(args) -> int:
     for err in errors:
         print(f"FOUT: {err}", file=sys.stderr)
     return 1 if errors else 0
+
+
+def cmd_precommit_render(args) -> int:
+    """Elke gegenereerde pagina is gelijk aan wat het render-script van de wiki uit de beoordelingen maakt."""
+    fouten = 0
+    for wiki_root, wiki_yaml in akkoord.wiki_roots(_repo_root()):
+        try:
+            akkoord.draai_script(wiki_root, wiki_yaml, "render", "--check")
+        except akkoord.AkkoordFout as exc:
+            print(f"FOUT: {exc}", file=sys.stderr)
+            fouten += 1
+    return 1 if fouten else 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -710,7 +751,8 @@ def build_parser() -> argparse.ArgumentParser:
 
         p_plan = gate_sub.add_parser("plan")
         add_wiki_arg(p_plan)
-        p_plan.add_argument("--run", required=True)
+        p_plan.add_argument("--run", help="Run-id; niet bij een curatie-wiki met beoordelingen")
+        p_plan.add_argument("--onderwerp", help="(curatie met beoordelingen) alleen de beoordelingen van dit onderwerp")
         p_plan.add_argument("--doel", help="(sync) naam uit wiki.yaml test_targets, standaard het hoofddoel")
         p_plan.add_argument("--pad", action="append", help="(sync) expliciet content-pad i.p.v. git-detectie; herhaalbaar")
         p_plan.add_argument("--titel", action="append", metavar="pad=Titel", help="(sync) titel-override voor een nieuw pad; herhaalbaar")
@@ -718,7 +760,7 @@ def build_parser() -> argparse.ArgumentParser:
 
         p_apply = gate_sub.add_parser("apply")
         add_wiki_arg(p_apply)
-        p_apply.add_argument("--run", required=True)
+        p_apply.add_argument("--run", help="Run-id; niet bij een curatie-wiki met beoordelingen")
         p_apply.add_argument("--akkoord-woord", dest="akkoord_woord")
         p_apply.add_argument("--doel", help="(sync) naam uit wiki.yaml test_targets, standaard het hoofddoel")
         p_apply.set_defaults(func=lambda args: _gate_command(args, "apply"), command=name)
@@ -749,6 +791,8 @@ def build_parser() -> argparse.ArgumentParser:
     p_pc_sources.set_defaults(func=cmd_precommit_sources)
     p_pc_goedgekeurd = precommit_sub.add_parser("goedgekeurd-guard")
     p_pc_goedgekeurd.set_defaults(func=cmd_precommit_goedgekeurd)
+    p_pc_render = precommit_sub.add_parser("render-check", help="Gegenereerde pagina's gelijk aan de beoordelingen")
+    p_pc_render.set_defaults(func=cmd_precommit_render)
 
     return parser
 

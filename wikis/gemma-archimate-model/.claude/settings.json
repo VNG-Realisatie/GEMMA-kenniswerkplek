@@ -8,7 +8,10 @@
       "Bash(uv run python -m llmwiki lint*)",
       "Bash(uv run python -m llmwiki pull*)",
       "Bash(uv run python -m llmwiki promote plan*)",
-      "Bash(uv run python -m llmwiki publish plan*)"
+      "Bash(uv run python -m llmwiki publish plan*)",
+      "Bash(uv run python -m llmwiki voortgang*)",
+      "Bash(uv run python tools/afleiden.py*)",
+      "Bash(uv run python tools/render.py*)"
     ],
     "ask": [
       "Bash(uv run python -m llmwiki pull* --doel *)",
