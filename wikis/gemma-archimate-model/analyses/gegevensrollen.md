@@ -1,14 +1,14 @@
 ---
 id: gegevensrollen
 type: analyse
-titel: Gegevensrollen en de toegang van een rol tot een object
+titel: Toegang tot een bedrijfsobject: verantwoordelijkheden en handelingen
 bijgewerkt: '2026-10-01'
-bronnen: [2026-bzk-rollen-stelsel-basisregistraties, 2026-rijk-wet-bag-bwbr0023466, 2026-rijk-wet-bgt-bwbr0034026, 2026-rijk-wet-brp-bwbr0033715, 2026-rijk-wet-woz-bwbr0007119, 2026-rijk-handelsregisterwet-2007-bwbr0021777, 2015-rijk-wmo, 2026-rijk-wet-suwi-bwbr0013060, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995, 2026-vng-over-gemma]
+bronnen: [2026-bzk-rollen-stelsel-basisregistraties, 2026-rijk-wet-bag-bwbr0023466, 2026-rijk-wet-bgt-bwbr0034026, 2026-rijk-wet-brp-bwbr0033715, 2026-rijk-wet-woz-bwbr0007119, 2026-rijk-handelsregisterwet-2007-bwbr0021777, 2015-rijk-wmo, 2026-rijk-wet-suwi-bwbr0013060, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995, 2026-vng-over-gemma, 2026-vng-gemma-2026-07-01]
 ---
 
-# Gegevensrollen en de toegang van een rol tot een object
+# Toegang tot een bedrijfsobject: verantwoordelijkheden en handelingen
 
-De redacteur besloot op 1 oktober 2026 dat een relatie van een rol naar een bedrijfsobject wordt gesplitst: wat de rol met het object ís, wordt een toegangsrelatie met een getypeerde naam; een handeling wordt een toewijzing van de rol aan een proces ([besluiten](gemma-kennismodel.md#besluiten-van-de-redacteur)). De indeling van die namen moest komen uit de wetgeving over basisregistraties. Deze analyse bepaalt de namen en verantwoordelijkheden, en beoordeelt of ze ook passen bij andere gegevensbronnen van de gemeente, intern en extern. Ze is de bronanalyse van de bronnen hieronder; regelnummers verwijzen naar hun tekst.
+De redacteur besloot op 1 oktober 2026 dat een relatie van een rol naar een bedrijfsobject wordt gesplitst: wat de rol met het object ís, wordt een toegangsrelatie met een getypeerde naam; een handeling wordt een toewijzing van de rol aan een proces ([besluiten](gemma-kennismodel.md#besluiten-van-de-redacteur)). De indeling van die namen moest komen uit de wetgeving over basisregistraties. Deze analyse bepaalt twee reeksen namen: de verantwoordelijkheid van een rol voor een object, en de handeling van een functie of proces op een object. Ze beoordeelt ook of de verantwoordelijkheden passen bij andere gegevensbronnen van de gemeente, intern en extern. Ze is de bronanalyse van de bronnen hieronder; regelnummers verwijzen naar hun tekst.
 
 Een algemene "Wet basisregistraties" bestaat niet. Het stelsel van basisregistraties heeft vaste rollen, die per basisregistratie in een eigen wet zijn uitgewerkt. Deze analyse gebruikt de rollenbeschrijving van het stelsel en de wetten van de basisregistraties waarin de gemeente bronhouder of afnemer is.
 
@@ -25,6 +25,7 @@ Een algemene "Wet basisregistraties" bestaat niet. Het stelsel van basisregistra
 - **1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995** (Memorie van toelichting Archiefwet 1995): [tekst](../../../sources/raw/1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995.md)
 - **2026-rijk-wet-op-de-lijkbezorging-wettekst**: [bronanalyse](../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - **2026-vng-over-gemma**: [bronanalyse](gemma-kennismodel.md)
+- **2026-vng-gemma-2026-07-01** (GEMMA-architectuurmodel, modelbron): [tekst](../../../sources/raw/2026-vng-gemma-2026-07-01.md)
 
 ## Stelselrollen
 
@@ -55,11 +56,11 @@ De wetten gebruiken niet overal dezelfde woorden. Het werkwoord *houden* wijst d
 | Verwerkingsverantwoordelijke (AVG) | burgemeester en wethouders en het bestuur van de Dienst, ieder voor zijn deel (art. 4, regel 137) | — | — | — | de Kamer (art. 3, regel 144) |
 | Degene over wie de gegevens gaan | — | — | de ingeschrevene: "degene ten aanzien van wie een persoonslijst in de basisregistratie is opgenomen" (art. 1.1, regel 29) | — | — |
 
-## Toegangsnamen
+## Verantwoordelijkheden van een rol
 
-Een toegangsnaam zegt wat de rol ten opzichte van het object ís. Wat de rol dóét (bijhouden, leveren, verstrekken, terugmelden, toezicht houden) is een handeling en wordt een toewijzing aan een proces. Het GEMMA-kennismodel noemt vier betekenissen van toegang: "Is verantwoordelijk voor", "is eigenaar van", "is beheerder van", "is raadpleger van" ([Over GEMMA](gemma-kennismodel.md), regel 916).
+Een verantwoordelijkheid zegt wat de rol ten opzichte van het object ís. Wat de rol dóét (bijhouden, leveren, verstrekken, terugmelden, toezicht houden) is een handeling en wordt een toewijzing aan een proces. Het GEMMA-kennismodel noemt vier betekenissen van toegang: "Is verantwoordelijk voor", "is eigenaar van", "is beheerder van", "is raadpleger van" ([Over GEMMA](gemma-kennismodel.md), regel 916).
 
-| Toegangsnaam | Betekenis | ArchiMate-toegang | GEMMA (regel 916) | Herkomst |
+| Verantwoordelijkheid | Betekenis | ArchiMate-toegang | GEMMA (regel 916) | Herkomst |
 |---|---|---|---|---|
 | houder | heeft het object of de registratie en is er eindverantwoordelijk voor | lezen-schrijven | is eigenaar van | Wet BAG art. 2; Wet BGT art. 2; Wet WOZ art. 37aa; Wet op de lijkbezorging art. 27 ("De houder van een begraafplaats houdt een register", regel 371) |
 | bronhouder | wint de gegevens in, houdt ze bij en borgt hun kwaliteit | schrijven | is verantwoordelijk voor | rollenpagina regel 37; Wet BGT art. 1; Wet BRP art. 1.4 |
@@ -73,12 +74,12 @@ Een toegangsnaam zegt wat de rol ten opzichte van het object ís. Wat de rol dó
 Toelichting bij de keuzes:
 
 - **Houder in plaats van eigenaar.** De wetten spreken van *houden*, niet van eigendom. Eigendom van gegevens is juridisch geen gangbaar begrip, en "eigendom" is in deze wiki uitdrukkelijk geen argument [EL1]. De GEMMA-betekenis "is eigenaar van" valt onder houder.
-- **Beheerder en verstrekker apart.** In de Wet BAG en de Wet WOZ houdt en beheert de Dienst de landelijke voorziening, en verstrekt de gemeente ook zelf aan eenieder (Wet BAG art. 32). Beheer (de voorziening werkt) en verstrekking (anderen krijgen de gegevens) zijn dus verschillende verantwoordelijkheden. De toegangsnaam *beheerder* is iets anders dan de rol [Beheerder](../bedrijfsarchitectuur/rollen/beheerder.md) van een begraafplaats; die rol kan wel de toegangsnaam beheerder hebben.
+- **Beheerder en verstrekker apart.** In de Wet BAG en de Wet WOZ houdt en beheert de Dienst de landelijke voorziening, en verstrekt de gemeente ook zelf aan eenieder (Wet BAG art. 32). Beheer (de voorziening werkt) en verstrekking (anderen krijgen de gegevens) zijn dus verschillende verantwoordelijkheden. De verantwoordelijkheid *beheerder* is iets anders dan de rol [Beheerder](../bedrijfsarchitectuur/rollen/beheerder.md) van een begraafplaats; die rol kan wel de verantwoordelijkheid beheerder hebben.
 - **Afnemer in plaats van raadpleger.** Afnemer is de wettelijke term, en draagt de plicht tot gebruik en terugmelding mee. Raadplegen is een handeling.
 - **Partij alleen bij een afspraak.** Een rol bij een contract heeft rechten en plichten, geen gegevensverantwoordelijkheid. Zonder deze naam blijft die relatie een associatie.
-- **Opdrachtgever is geen toegangsnaam.** De opdrachtgever stuurt de verstrekker aan en heeft geen eigen toegang tot de gegevens; het is een relatie tussen partijen, en meestal een ministerie buiten het gemeentelijk perspectief [WC4].
-- **Verwerkingsverantwoordelijke is een aanduiding, geen toegangsnaam.** De wet wijst de verwerkingsverantwoordelijke aan voor de verwerking van persoonsgegevens; dat is meestal de houder (Wet BAG art. 4, Handelsregisterwet art. 3, Wmo art. 5.1.1 lid 7, regel 1844). Vermeld het in de kolom Naam als toevoeging, bijvoorbeeld "houder (verwerkingsverantwoordelijke)". De definitie staat in artikel 4 van de AVG, dat nog niet als bron is opgenomen 🔍 Verificatie nodig.
-- **Eén toegang per rol.** Vervult één actor meerdere rollen (de gemeente is houder, bronhouder én verstrekker van de BAG), dan krijgt elke rol haar eigen toegangsrelatie. Een rol krijgt alleen een pagina als de beslistabel dat zegt; de toegangsnaam zelf is geen element.
+- **Opdrachtgever hoort niet in deze reeks.** De opdrachtgever stuurt de verstrekker aan en heeft geen eigen toegang tot de gegevens; het is een relatie tussen partijen, en meestal een ministerie buiten het gemeentelijk perspectief [WC4].
+- **Verwerkingsverantwoordelijke is een aanduiding, geen aparte verantwoordelijkheid.** De wet wijst de verwerkingsverantwoordelijke aan voor de verwerking van persoonsgegevens; dat is meestal de houder (Wet BAG art. 4, Handelsregisterwet art. 3, Wmo art. 5.1.1 lid 7, regel 1844). Vermeld het in de kolom Naam als toevoeging, bijvoorbeeld "houder (verwerkingsverantwoordelijke)". De definitie staat in artikel 4 van de AVG, dat nog niet als bron is opgenomen 🔍 Verificatie nodig.
+- **Eén toegang per rol.** Vervult één actor meerdere rollen (de gemeente is houder, bronhouder én verstrekker van de BAG), dan krijgt elke rol haar eigen toegangsrelatie. Een rol krijgt alleen een pagina als de beslistabel dat zegt; de verantwoordelijkheid zelf is geen element.
 
 ## Toepasbaarheid op andere gegevensbronnen
 
@@ -124,8 +125,64 @@ Een voorlopige indeling van de 21 relaties van een rol naar een object, volgens 
 
 Samen: elf toegangsrelaties (vijf houder, drie beheerder, één afnemer, twee partij) en tien handelingen. Voor drie handelingen bestaat het proces nog niet; die worden bij de herbeoordeling kandidaat.
 
+## Toegang van gedrag tot een object
+
+De acht namen hierboven zeggen welke verantwoordelijkheid een rol, en via de rol een actor, voor een object heeft. Een functie of proces heeft geen verantwoordelijkheid maar doet iets met het object. Daarvoor is een tweede, aparte reeks namen nodig: de handeling.
+
+**Wat er nu is.** Het GEMMA-kennismodel laat een bedrijfsfunctie en een bedrijfsproces een bedrijfsobject "benaderen" ([Over GEMMA](gemma-kennismodel.md), regel 919 en 606), zonder verdere indeling. Het GEMMA-model zelf heeft maar acht toegangsrelaties naar een bedrijfsobject, alle in de procesarchitectuur; de enige namen zijn "registreren" (Uitvoeren intake → zaak) en "bijwerken" (vier deelprocessen → zaak) ([GEMMA-model](../../../sources/raw/2026-vng-gemma-2026-07-01.md)). GEMMA noemt wel een "GEMMA bedrijfsfunctie en -objecten model" (Over GEMMA, regel 313), maar legt de samenhang daar via groepering per domein, niet via toegang. In deze wiki heeft geen enkele functie een toegangsrelatie; processen en de dienst hebben er 22, met een werkwoord uit de bron ("graaft op", "ruimt", "legt vast in") en het ArchiMate-toegangstype.
+
+**Advies: vijf handelingen langs de levenscyclus van het object.** Het kenmerk *levenscyclus* vraagt of exemplaren ontstaan, veranderen en eindigen. Die drie momenten, plus gebruiken en doorgeven, geven een kleine vaste reeks die voor elk object werkt. Het toegangstype van ArchiMate volgt dan uit de handeling.
+
+| Handeling | Betekenis | Toegangstype | Herkomst | Hoort bij de verantwoordelijkheid |
+|---|---|---|---|---|
+| registreren | het object ontstaat of wordt voor het eerst vastgelegd | schrijven | GEMMA-model (Uitvoeren intake); Wet BRP: inschrijving, "de opneming van een persoonslijst in de basisregistratie" (art. 1.1, regel 55) | bronhouder |
+| bijwerken | het object verandert | lezen-schrijven | GEMMA-model (vier deelprocessen); *bijhouden* in Wet BAG art. 10, Wet BGT art. 11, Wet BRP art. 1.4 | bronhouder, beheerder |
+| beëindigen | het object houdt op te bestaan of te gelden (intrekken, vervallen, opheffen, vernietigen) | schrijven | kenmerk *levenscyclus*; Wet BRP: "opheffing van het adres" (regel 1292) | bronhouder, houder |
+| raadplegen | het gedrag gebruikt het object om zijn taak uit te voeren | lezen | Over GEMMA: "is raadpleger van" (regel 916); verplicht gebruik, Wet BAG art. 35 | afnemer |
+| verstrekken | het gedrag geeft het object of de gegevens aan een ander | lezen | Wet BAG art. 32; Wet BRP art. 1.5 | verstrekker |
+
+Waarom deze vorm:
+
+- **Eén reeks voor functie en proces.** Bij een functie is de handeling het enige wat telt: een functie is een stabiele groepering, en het werkwoord uit één bron is te specifiek. Het resultaat is een functie-objectmatrix, met per functie en object de handelingen; dat is wat GEMMA "bedrijfsfunctie en -objecten model" noemt. Bij een proces blijft het werkwoord uit de bron in de kolom Naam staan, omdat het herleidbaar is en de gangbare taal volgt; de handeling deelt het in.
+- **De handeling vervangt het toegangstype in de kolom Relatie.** "toegang (bijwerken)" in plaats van "toegang (lezen-schrijven)": het toegangstype volgt er eenduidig uit, er komt geen kolom bij, en de controle kan de afleiding doen. Voor een rol werkt het net zo: "toegang (bronhouder)".
+- **GEMMA-namen waar ze bestaan.** Registreren en bijwerken zijn de namen die GEMMA al gebruikt. Raadplegen sluit aan op "raadpleger" in het kennismodel.
+- **De twee reeksen controleren elkaar.** Een rol die bronhouder is van een object, hoort toegewezen te zijn aan gedrag dat dat object registreert of bijwerkt; een afnemer aan gedrag dat het raadpleegt; een verstrekker aan gedrag dat het verstrekt. Een object met *levenscyclus* ja hoort gedrag te hebben dat het registreert én beëindigt.
+- **Archiveren is nog open.** Bewaren, overbrengen en vernietigen van archiefbescheiden zijn handelingen uit de Archiefwet, die nog geen bron is. Vernietigen valt voorlopig onder beëindigen.
+
+**Voorlopige indeling van de bestaande relaties.** Elke wijziging wordt bij de herbeoordeling apart voorgelegd [EL9].
+
+| Gedrag | Werkwoord nu | Object | Toegang nu | Handeling |
+|---|---|---|---|---|
+| Behandelen verzoek om overheidsparticipatie | begint met | Verzoek om overheidsparticipatie | lezen | raadplegen |
+| Behandelen verzoek om overheidsparticipatie | legt vast | Uitvoeringsovereenkomst | schrijven | registreren |
+| Uitvoeren inspraakprocedure | ontvangt | Zienswijze | lezen | registreren (toegang wordt schrijven: een ontvangen zienswijze wordt vastgelegd) |
+| Uitvoeren inwonersparticipatie | legt vooraf vast in | Plan voor inwonersparticipatie | schrijven | registreren |
+| Uitvoeren inwonersparticipatie | legt vast in | Eindverslag inwonersparticipatie | schrijven | registreren |
+| Schouwen lijk | leidt tot | Verklaring van overlijden | schrijven | registreren |
+| Schouwen lijk | schouwt | Lijk | lezen | raadplegen |
+| Opgraven lijk | vereist (vergunning tot opgraving) | Vergunning | lezen | raadplegen |
+| Opgraven lijk | graaft op | Lijk | lezen-schrijven | bijwerken |
+| Ruimen graf | ruimt | Graf | lezen-schrijven | bijwerken |
+| Uitvoeren lijkbezorging | vereist (verlof tot begraving of crematie) | Vergunning | lezen | raadplegen |
+| Uitvoeren lijkbezorging | bezorgt | Lijk | lezen-schrijven | bijwerken |
+| Uitvoeren lijkbezorging | geschiedt in | Graf | lezen-schrijven | bijwerken |
+| Uitvoeren lijkbezorging | zet bij of verstrooit de as uit | Urn | lezen-schrijven | bijwerken |
+| Uitvoeren lijkbezorging | geschiedt op | Begraafplaats | lezen-schrijven | raadplegen (toegang wordt lezen: de begraafplaats verandert niet) |
+| Uitvoeren lijkbezorging | geschiedt in | Crematorium | lezen-schrijven | raadplegen (toegang wordt lezen) |
+| Verlenen grafrecht | verleent | Grafrecht | schrijven | registreren |
+| Verlenen grafrecht | leidt tot (lijkbezorgingsrechten) | Heffing | schrijven | registreren |
+| Verzorgen gemeentebegrafenis | leidt tot | Gemeentebegrafenis | schrijven | registreren |
+| Verzorgen gemeentebegrafenis | betreft | Lijk | lezen-schrijven | raadplegen (toegang wordt lezen) |
+| Onderhoud van graven (dienst) | onderhoudt | Grafbedekking | lezen-schrijven | bijwerken |
+| Onderhoud van graven (dienst) | leidt tot (lijkbezorgingsrechten) | Heffing | schrijven | registreren |
+
+Samen: negen keer registreren, zes keer bijwerken, zeven keer raadplegen; vier relaties krijgen een ander toegangstype. Twee relaties vertrekken uit een dienst; in GEMMA heeft een dienst geen toegang tot een object (de dienst wordt gerealiseerd door een proces), dus die gaan bij de herbeoordeling naar het realiserende proces.
+
+**Wat de indeling laat zien.** Geen enkel proces beëindigt een object, terwijl Grafrecht, Graf en Vergunning een levenscyclus hebben. Het vervallen van het grafrecht is nu alleen een [gebeurtenis](../bedrijfsarchitectuur/bedrijfsgebeurtenissen/verval-van-het-grafrecht.md); het gedrag dat het grafrecht vervallen verklaart en beëindigt, ontbreekt. De handelingen maken zulke gaten in de levenscyclus zichtbaar, en een functie-objectmatrix maakt ze per functie zichtbaar.
+
 ## Open vragen
 
-- Neemt de redacteur de acht toegangsnamen over, of alleen de vijf breed bruikbare (houder, bronhouder, beheerder, verstrekker, afnemer)?
+- Neemt de redacteur de vijf handelingen over (registreren, bijwerken, beëindigen, raadplegen, verstrekken), met de handeling of verantwoordelijkheid tussen haakjes achter toegang in de kolom Relatie?
+- Neemt de redacteur de acht verantwoordelijkheden over, of alleen de vijf breed bruikbare (houder, bronhouder, beheerder, verstrekker, afnemer)?
 - Wordt "verwerkingsverantwoordelijke" vermeld als toevoeging bij de naam, of als eigen veld bij de relatie?
 - Worden artikel 4 van de AVG en de Archiefwet 2021 als bron opgenomen, zodat de begrippen verwerkingsverantwoordelijke, betrokkene en zorgdrager een wettelijke grondslag krijgen?
