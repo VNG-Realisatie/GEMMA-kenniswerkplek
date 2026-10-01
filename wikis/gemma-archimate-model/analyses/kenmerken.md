@@ -10,6 +10,15 @@ bronnen: [2026-vng-over-gemma]
 
 Deze analyse loopt voor elk elementtype de kenmerken na, na de besluiten van 30 september en 1 oktober 2026 ([GEMMA-kennismodel](gemma-kennismodel.md), [toegang tot een bedrijfsobject](gegevensrollen.md)). Ze toetst of de set compleet en kloppend is, en formuleert per kenmerk de vraag die bepaalt of het kenmerk op een begrip van toepassing is. De set is nog niet doorgevoerd in de beslistabel; dat gebeurt bij de herziening uit de todo van deze wiki.
 
+## Besluiten van de redacteur
+
+| Datum | Besluit |
+|---|---|
+| 2026-10-01 | De drempel van de dienst bevat geen *toegewezen partij*: kern *gerealiseerd door*, overig *afnemer* en *benoembaar resultaat*. De verantwoordelijke rol hangt aan het realiserende proces of de functie, zoals in GEMMA. |
+| 2026-10-01 | De drempel van het product bevat geen *onderscheidbare exemplaren* maar *benoembaar resultaat* (de waarde voor de afnemer): kern *omvat diensten en afspraken*, overig *afnemer* en *benoembaar resultaat*. Een verleend exemplaar is een bedrijfsobject, geen product. |
+| 2026-10-01 | Een concreet benoemde regeling als geheel die rijks- of EU-regelgeving of een VNG-modelverordening is, wordt beleidskader; de soort regeling is het bedrijfsobject Regeling; een gemeentelijke verordening blijft bron en wordt geen element; een los artikel valt buiten dit model. |
+| 2026-10-01 | Het kenmerk "zelfstandig beleidsbegrip" heet voortaan *zelfstandige specialisatie*, met de vraag: is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt (eigen gegevens, regels of werkwijze)? |
+
 ## Hoe een vraag is opgebouwd
 
 Elke vraag is met ja of nee te beantwoorden en gaat over het begrip zelf, niet over het vermoedelijke type. Waar de vraag "Noem …" zegt, hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; zonder zo'n verwijzing is het antwoord nee. Een kenmerk dat niet bij de aard van het begrip past (een gedragskenmerk bij een ding), is nee.
@@ -34,7 +43,7 @@ Elke vraag is met ja of nee te beantwoorden en gaat over het begrip zelf, niet o
 | Representatie | *waarneembare vorm* | — | — | geen pagina; vermelden bij het object |
 | Locatie | *plaats* | — | — | geen pagina |
 
-Bij elk type met een paginatype gelden eerst de poorten en daarna het specialisatieniveau (*eigen soort*). Bij een type met hoogstens één overig drempelcriterium is de kernrelatie in feite de enige eis.
+Bij elk type met een paginatype gelden eerst de poorten en daarna het specialisatieniveau (*zelfstandige specialisatie*). Bij een type met hoogstens één overig drempelcriterium is de kernrelatie in feite de enige eis.
 
 ## Kenmerken en hun vraag
 
@@ -49,11 +58,11 @@ Bij elk type met een paginatype gelden eerst de poorten en daarna het specialisa
 | eigen identiteit | Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? Noem bij nee dat begrip. | Beschikking; uitgifte van een graf | ondertekening van een besluit (deelstap) |
 | betekenis in onderwerp | Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? Noem bij nee dat onderwerp. | Graf in lijkbezorging | akte van overlijden in lijkbezorging (hoort bij de burgerlijke stand) |
 
-**Specialisatieniveau (alle typen met een paginatype).**
+**Specialisatieniveau (alle typen met een paginatype).** Dit kenmerk gaat over de "is een"-relatie tussen twee verschillende begrippen van hetzelfde type, nadat het type vaststaat. Het zegt niets over herkomst uit wet of beleid. Synoniemen (ander woord, zelfde betekenis) en homoniemen (zelfde woord, andere betekenis) zijn naamconflicten die vóór de beslistabel worden afgehandeld.
 
 | Kenmerk | Vraag | Ja | Nee |
 |---|---|---|---|
-| eigen soort (was: zelfstandig beleidsbegrip) | Behandelt de gemeente dit als een apart soort naast zijn bredere begrip, met eigen gegevens, regels of behandeling, op het detailniveau van GEMMA? Noem bij nee het bredere begrip. | Omgevingsvergunning naast Vergunning | vergunning tot opgraving (variant van Vergunning) |
+| zelfstandige specialisatie (was: zelfstandig beleidsbegrip) | Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. | Omgevingsvergunning naast Vergunning (eigen wet en procedure); Houder van het crematorium naast Houder van de begraafplaats (eigen plichten); Behandelen omgevingsvergunningaanvraag uitgebreid (eigen termijnen) | vergunning tot opgraving (variant van Vergunning); aanvrager van een vergunning tot opgraving (variant van Aanvrager) |
 
 **Aard (precies één ja; alleen *handelende partij* met *hoedanigheid* of met *samenwerkingsverband* mag samen).** Bij *handelende partij* en *samenwerkingsverband* samen beslist *eigen rechtspersoon*: ja is actor, nee is bedrijfssamenwerking.
 
@@ -120,7 +129,7 @@ Bij elk type met een paginatype gelden eerst de poorten en daarna het specialisa
 
 | Kenmerk | Vraag | Ja | Nee | Telt bij |
 |---|---|---|---|---|
-| landelijk | Is het een landelijke wet of AMvB, of een VNG-modelverordening, en geen regeling van één gemeente? | Wet op de lijkbezorging; modelverordening | beheersverordening van één gemeente (blijft bron) | type beleidskader |
+| landelijk | Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? | Wet op de lijkbezorging; AVG; modelverordening | beheersverordening van één gemeente (blijft bron) | type beleidskader |
 | in werking | Is de regeling geldend recht, of als modelverordening actueel? | Archiefwet 1995 | ingetrokken wet | beleidskader |
 | is grondslag voor | Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? Noem het artikel en het gedrag. | Wet op de lijkbezorging art. 28 → Verlenen grafrecht | BW boek 2, gebruikt voor één definitie | kern beleidskader |
 
@@ -139,12 +148,12 @@ Samen 46 kenmerken: 6 poorten, 1 voor het specialisatieniveau, 8 voor de aard, 5
 - *toestandsverandering* volgt de GEMMA-definitie van gebeurtenis ("gevolgen heeft", regel 874) en houdt het ogenblikkelijke karakter.
 - *afspraak* volgt de GEMMA-definitie: "meerdere partijen" in plaats van "tweezijdig" (regel 246).
 
-**Correcties ter beslissing:**
+**Correcties (besloten 2026-10-01):**
 
 - **Dienst zonder toegewezen partij.** In het GEMMA-kennismodel wordt geen rol aan een dienst toegewezen; de dienst wordt gerealiseerd door een proces of functie, en daaraan hangt de rol (regel 925, 918). *toegewezen partij* in de drempel van de dienst is dan dubbel met *gerealiseerd door*. Voorstel: weglaten, en *benoembaar resultaat* (wat de afnemer krijgt) houden.
 - **Product zonder onderscheidbare exemplaren.** Een product is een aanbod, geen exemplaar: de verleende parkeervergunningen zijn exemplaren van het bedrijfsobject Vergunning, niet van het product. Voorstel: *onderscheidbare exemplaren* weglaten bij product, en *benoembaar resultaat* opnemen, omdat GEMMA een product definieert als aanbod "met waarde voor die afnemer" (regel 76).
 - **Beleidskader of bedrijfsobject Regeling.** *regeling als geheel* zegt: een concreet benoemde regeling wordt beleidskader, de soort blijft het object Regeling. Een gemeentelijke verordening (niet landelijk) is dan nee bij *landelijk* en wordt geen element; zij blijft bron, en het begrip "verordening" valt onder Regeling.
-- **Naam van het specialisatiekenmerk.** "zelfstandig beleidsbegrip" verwart met beleidskader. Voorstel: *eigen soort*.
+- **Naam van het specialisatiekenmerk.** "Zelfstandig beleidsbegrip" wekte de indruk dat het over herkomst uit beleid of wet gaat, of dat het een type bepaalt. Het gaat over de "is een"-relatie: besloten is de naam *zelfstandige specialisatie*.
 
 **Gecontroleerd en in orde:**
 
@@ -155,7 +164,4 @@ Samen 46 kenmerken: 6 poorten, 1 voor het specialisatieniveau, 8 voor de aard, 5
 
 ## Open vragen
 
-- Wordt *toegewezen partij* uit de drempel van de dienst gehaald?
-- Wordt *onderscheidbare exemplaren* bij product vervangen door *benoembaar resultaat*?
-- Klopt de scheiding tussen beleidskader (concreet benoemd, landelijk), bedrijfsobject Regeling (de soort) en een gemeentelijke verordening (bron, geen element)?
-- Wordt "zelfstandig beleidsbegrip" hernoemd naar *eigen soort*?
+Geen; de vragen van 1 oktober 2026 zijn beantwoord (zie de besluiten bovenaan).
