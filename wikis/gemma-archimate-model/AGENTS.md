@@ -33,7 +33,7 @@ Wat het render-script garandeert, is geen regel: bronverwijzingen als link naar 
 
 ### Bronnen
 
-- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron; citaten letterlijk, met vindplaats. *(schema en script: elke bron bestaat en heeft een bronanalyse)*
+- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron; citaten letterlijk, met vindplaats. *(script: elk kenmerk `ja` en elk element heeft een bron; elke bron bestaat en heeft een bronanalyse)*
 - **Zonder bron** — Een claim zonder bron wordt een open vraag ("verificatie nodig").
 - **Tegenspraak** — Spreken bronnen elkaar tegen, leg dan beide vast en markeer de tegenspraak.
 - **Bronvoorrang** — Voor welke begrippen er zijn en wat ze formeel betekenen: wet, dan informatiemodel, dan beleid, dan overig (`wiki.yaml` `bronvoorrang`). Voorrang bepaalt nooit of iets een element is. De naam en de herkenbare definitie komen uit de gangbare taal van beleids- en praktijkbronnen; de wetsterm wordt een synoniem met context "wet". Precedent: Urn, niet Asbus. *(signaal)*

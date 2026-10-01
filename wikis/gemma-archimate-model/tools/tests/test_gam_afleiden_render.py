@@ -155,6 +155,7 @@ def test_goedgekeurd_zonder_logregel_wordt_review(wiki):
     (lambda d: d.pop("definitie"), "zonder 'definitie'"),
     (lambda d: d.update(onderwerpen=["ander"]), "onderwerp 'ander'"),
     (lambda d: d.update(onverwacht="x"), "onverwacht"),
+    (lambda d: d["kenmerken"]["gedrag"].pop("bronnen"), "kenmerk 'ja' zonder bron: gedrag"),
 ])
 def test_harde_fouten_schrijven_niets(wiki, wijziging, melding):
     _schrijf(wiki, "beschikking", _bo())
@@ -193,3 +194,13 @@ def test_bronanalyse_zonder_bronregel_is_een_fout(wiki):
     pad.write_text(pad.read_text(encoding="utf-8").replace("Bron: ", "Zie: "), encoding="utf-8")
     _schrijf(wiki, "beschikking", _bo())
     assert any("'Bron:'" in f for f in afleiden.afleiden(wiki).fouten)
+
+
+def test_element_zonder_enige_bron_is_een_fout(wiki):
+    bo = _bo()
+    for antwoord in bo["kenmerken"].values():
+        antwoord.pop("bronnen", None)
+    _schrijf(wiki, "beschikking", bo)
+    fouten = afleiden.afleiden(wiki).fouten
+    assert any("element zonder bron" in f for f in fouten)
+    assert any("kenmerk 'ja' zonder bron" in f for f in fouten)

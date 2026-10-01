@@ -275,6 +275,9 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             continue
         bronnen = bronnen_van(data)
         _controleer_bronnen(ctx, bid, bronnen, res)
+        zonder_bron = [bepaal_type.NAAM[s] for s, a in data["kenmerken"].items() if a["waarde"] == "ja" and not a.get("bronnen")]
+        if zonder_bron:
+            res.fouten.append(f"{bid}: kenmerk 'ja' zonder bron: {', '.join(zonder_bron)} (regel Elke claim een bron)")
         for onderwerp in data["onderwerpen"]:
             if onderwerp not in onderwerpen:
                 res.fouten.append(f"{bid}: onderwerp '{onderwerp}' heeft geen {ONDERWERPEN.as_posix()}/{onderwerp}.yaml")
@@ -285,6 +288,8 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
                     "bronnen": bronnen, "herkomst": herkomst(ctx, bronnen)}
         status = None
         if uitkomst["soort"] == "element":
+            if not bronnen:
+                res.fouten.append(f"{bid}: element zonder bron (regel Elke claim een bron)")
             _controleer_element(ctx, bid, data, uitkomst, res)
             _controleer_verwijzingen(bid, data, uitkomsten, res)
             afgeleid.update(_modelvelden(ctx, bid, data, res))
