@@ -1,0 +1,226 @@
+begrip: Beheerder
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Begrip uit de beheersverordening en het VNG-model (art. 1 e, 1 n).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Gemeentelijke ambtenaar.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  hoedanigheid:
+    waarde: ja
+    onderbouwing: De verantwoordelijkheid voor de dagelijkse leiding van de gemeentelijke begraafplaatsen.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  voert_gedrag_uit:
+    waarde: ja
+    onderbouwing: Toegewezen aan Uitvoeren lijkbezorging (bepaalt tijd en plaats), Ruimen graf (ziet toe) en Opgraven lijk (is belast met de werkzaamheden) (Groningen art. 7, 27, 28).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+definitie: Ambtenaar die belast is met de dagelijkse leiding van de gemeentelijke begraafplaatsen.
+beschrijving:
+- De beheerder bepaalt tijd en plaats van begravingen in overleg met de uitvaartondernemer, ontvangt en toetst de stukken (verlof, machtiging) en aanvragen, houdt het register van begraven lijken bij, handhaaft de orde en ziet toe op ruiming (Groningen art. 1 e, 4–9, 27, 30). Het VNG-model beveelt aan de beheerder aan te wijzen als aanspreekpunt voor burgers en aanvragen, met mandaat om te beslissen (toelichting 2).
+synoniemen:
+- naam: Beheerder van de begraafplaats
+  context: beleid
+grondslag: bron
+gemma:
+  id: id-a96ec982-643b-4c36-aa13-f36a51b85694
+  sterkte: zwak
+  onderbouwing: GEMMA-rol Beheerder heeft geen definitie en staat niet bij begraafplaatsen; verwant door de naam, niet aantoonbaar hetzelfde begrip.
+relaties:
+- soort: toewijzing
+  naar: uitvoeren-lijkbezorging
+  naam: bepaalt tijd en plaats van
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 7 lid 1
+- soort: toewijzing
+  naar: ruimen-graf
+  naam: ziet toe op
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 27 lid 2
+- soort: toewijzing
+  naar: opgraven-lijk
+  naam: is belast met de werkzaamheden bij
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 28 lid 6
+- soort: toegang (beheerder)
+  naar: begraafplaats
+  naam: heeft de dagelijkse leiding van
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 1 e
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    data_object: nee
+    typeregel: 12
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: wet
+  gemma:
+    gemma_id: id-a96ec982-643b-4c36-aa13-f36a51b85694
+    gemma_naam: Beheerder
+    gemma_type: business-role
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: a96ec982-643b-4c36-aa13-f36a51b85694
+  pad: bedrijfsarchitectuur/rollen/beheerder.md

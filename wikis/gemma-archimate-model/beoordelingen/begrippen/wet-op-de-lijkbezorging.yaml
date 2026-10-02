@@ -1,0 +1,254 @@
+begrip: Wet op de lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare naam van de wet (citeertitel art. 95); de VNG noemt haar bij naam.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: 'Geeft de gemeente taken, bevoegdheden en plichten: lijkschouwers benoemen, verlof afgeven, gemeentelijke begraafplaats houden, opgraving en ontleding toestaan.'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij de lijkbezorging.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  regeling_als_geheel:
+    waarde: ja
+    onderbouwing: Een concreet benoemde wet als geheel (BWBR0005009).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: ja
+    onderbouwing: Rijkswet.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  in_werking:
+    waarde: ja
+    onderbouwing: Geldend recht, versie 2025-07-01.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  is_grondslag_voor:
+    waarde: ja
+    onderbouwing: 'Art. 4 (benoemen lijkschouwer), 11–12 (verlof tot begraving of crematie), 21–22 (gemeentebegrafenis), 22a (besmet lijk), 28 (grafrecht), 29 (opgraving), 31 (ruiming), 33 (gemeentelijke begraafplaats), 68 (ontleding): gedrag in de processen hieronder.'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder beleidskader in deze wiki; de wet staat op zichzelf.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+definitie: Wet die regelt hoe een lijk wordt geschouwd, begraven, gecremeerd of anders bezorgd, en welke taken de gemeente daarbij heeft.
+beschrijving:
+- De Wet op de lijkbezorging (BWBR0005009) bepaalt wat een lijk is, hoe lijkschouwing, begraving, crematie en ontleding verlopen, en welke besluiten burgemeester, college en raad daarbij nemen (art. 1–4, 11, 21, 29, 68). Ze verplicht elke gemeente tot ten minste één gemeentelijke begraafplaats (art. 33) en regelt het uitsluitend recht op een graf, de ruiming en de sluiting van begraafplaatsen (art. 28, 31, 43).
+grondslag: regelgeving
+grondslag_toelichting:
+- De wet zelf (2026-rijk-wet-op-de-lijkbezorging-wettekst).
+besluiten:
+- datum: '2026-10-01'
+  besluit: Opnemen als beleidskader.
+  gevolg: opnemen
+  redenen:
+  - 'grondslag regelgeving: altijd voorleggen'
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: associatie (gericht)
+  naar: schouwen-lijk
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 3, 4, 7
+- soort: associatie (gericht)
+  naar: uitvoeren-lijkbezorging
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1, 23, 49
+- soort: associatie (gericht)
+  naar: verzorgen-gemeentebegrafenis
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 21, 22
+- soort: associatie (gericht)
+  naar: treffen-maatregel-bij-besmet-lijk
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 22a
+- soort: associatie (gericht)
+  naar: verlenen-grafrecht
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 28 lid 1
+- soort: associatie (gericht)
+  naar: vervallen-verklaren-grafrecht
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 28 lid 4–7
+- soort: associatie (gericht)
+  naar: opgraven-lijk
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 29
+- soort: associatie (gericht)
+  naar: ruimen-graf
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 31
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    data_object: nee
+    typeregel: 16
+  voor_te_leggen:
+  - 'grondslag regelgeving: altijd voorleggen'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-wet-op-de-lijkbezorging
+  herkomst: wet
+  pad: motivatie/beleidskaders/wet-op-de-lijkbezorging.md

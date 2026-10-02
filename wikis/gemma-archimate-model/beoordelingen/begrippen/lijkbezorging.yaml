@@ -1,0 +1,279 @@
+begrip: Lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Naam van de wet en van het taakgebied (VNG).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Gemeentelijke taken rond schouwen, begraven, cremeren en graven.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Het overkoepelende gedrag van dit onderwerp.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+  gedrag:
+    waarde: ja
+    onderbouwing: Een groep van activiteiten.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: ja
+    onderbouwing: Groepeert de doorlopende gemeentelijke taken uit de wet op grond van vergelijkbare kennis en middelen (begraafplaatsen, lijkschouw, vergunningen); geen eigen volgorde of doorlooptijd (besluit redacteur 2026-09-30).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: De rol Gemeente voert de taken uit (art. 4, 21, 33).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: 'Raadpleegt en werkt bij: graf, grafrecht, begraafplaats, lijk, urn (art. 23, 27, 28).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: ja
+    onderbouwing: De taken volgen uit de wet en blijven bestaan bij een andere organisatie.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+definitie: 'Het geheel van gemeentelijke taken rond het bezorgen van een overledene: schouwen, begraven of cremeren, graven uitgeven, opgraven en ruimen.'
+beschrijving:
+- Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze (Wet op de lijkbezorging art. 1). De gemeente schouwt lijken via de gemeentelijke lijkschouwer, geeft het verlof tot begraving of crematie af, heeft ten minste één gemeentelijke begraafplaats, geeft graven uit, staat opgraving en ruiming toe en draagt zorg voor de lijkbezorging als niemand daarin voorziet (art. 4, 11, 21, 28, 29, 31, 33). De functie bedient de processen daarvoor.
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+besluiten:
+- datum: '2026-09-30'
+  besluit: Overkoepelende bedrijfsfunctie voor de gemeentelijke taken rond de lijkbezorging.
+  gevolg: verwerkt
+gemma:
+  id: id-30deba14-c60a-49b2-b6d2-740a6d2539f5
+  sterkte: partieel
+  onderbouwing: De GEMMA-bedrijfsfunctie Exploiteren van begraafplaatsen dekt het beheer van begraafplaatsen, niet de lijkschouwing, het verlof en de zorg van de burgemeester. Dit element is breder.
+synoniemen:
+- naam: Exploiteren van begraafplaatsen
+  context: GEMMA
+relaties:
+- soort: bediening
+  naar: schouwen-lijk
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1–33
+- soort: bediening
+  naar: uitvoeren-lijkbezorging
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1–33
+- soort: bediening
+  naar: verzorgen-gemeentebegrafenis
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1–33
+- soort: bediening
+  naar: treffen-maatregel-bij-besmet-lijk
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1–33
+- soort: bediening
+  naar: verlenen-grafrecht
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1–33
+- soort: bediening
+  naar: vervallen-verklaren-grafrecht
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1–33
+- soort: bediening
+  naar: onderhouden-graf
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1–33
+- soort: bediening
+  naar: ruimen-graf
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1–33
+- soort: bediening
+  naar: opgraven-lijk
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1–33
+- soort: realisatie
+  naar: uitvaart-vervroegen-of-uitstellen
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 17
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 2/2)
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    data_object: nee
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-wet-op-de-lijkbezorging
+  herkomst: wet
+  gemma:
+    gemma_id: id-30deba14-c60a-49b2-b6d2-740a6d2539f5
+    gemma_naam: Exploiteren van begraafplaatsen
+    gemma_type: business-function
+    gemma_definitie: Het exploiteren van begraafplaatsen, inclusief ondersteunende diensten die bij het uitvoeren van een begrafenis verzorgd worden.
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: 30deba14-c60a-49b2-b6d2-740a6d2539f5
+      Toelichting: 'Bijv. het uitgeven van grafrechten en verlenen van vergunningen voor plaatsen van grafstenen. BIj het verzorgen van diensten bij begrafenissen valt te denken aan: het graven van een graf, voorlopen, diverse diensten in de Aula e.d.'
+  pad: bedrijfsarchitectuur/bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md

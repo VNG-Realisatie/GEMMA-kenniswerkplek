@@ -1,0 +1,208 @@
+begrip: Uitvaart vervroegen of uitstellen
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Gangbaar (RVO: ''uitvaart vervroegen'', ''uitvaart uitstellen'').'
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester stelt een andere termijn (art. 17).
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat de gemeente aanbiedt.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: ja
+    onderbouwing: 'Prestatie die de gemeente aanbiedt: toestemming om eerder of later te begraven of cremeren (RVO).'
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een vergunning voor een andere termijn (art. 17; RVO).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: ja
+    onderbouwing: Nabestaande, via de uitvaartondernemer (RVO).
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  gerealiseerd_door:
+    waarde: ja
+    onderbouwing: 'De functie Lijkbezorging: de burgemeester stelt de andere termijn als beschikking (besluit redacteur 2026-10-01).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen bredere dienst in deze wiki.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+definitie: Toestemming van de gemeente om een overledene eerder dan 36 uur of later dan zes werkdagen na het overlijden te begraven of te cremeren.
+beschrijving:
+- Begraven of cremeren mag niet eerder dan 36 uur en uiterlijk op de zesde werkdag na het overlijden (art. 16). Na een arts te hebben gehoord kan de burgemeester een andere termijn stellen; eerder dan 36 uur alleen in overeenstemming met de officier van justitie (art. 17). De uitvaartondernemer vraagt de vergunning namens de nabestaanden aan bij de gemeente waar de persoon is overleden, bijvoorbeeld om religieuze redenen of omdat familie uit het buitenland moet komen (Ondernemersplein).
+synoniemen:
+- naam: Andere termijn
+  context: wet
+besluiten:
+- datum: '2026-10-01'
+  besluit: Dienst, gerealiseerd door de functie Lijkbezorging; geen eigen proces voor het stellen van een andere termijn.
+  gevolg: verwerkt
+relaties:
+- soort: bediening
+  naar: degene-die-in-de-lijkbezorging-voorziet
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  vindplaats: § Uitvaart vervroegen, § Uitvaart uitstellen
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    data_object: nee
+    typeregel: 17
+  bronnen:
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvaart-vervroegen-of-uitstellen.md

@@ -1,0 +1,269 @@
+begrip: Rechthebbende op het graf
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wetsterm (art. 23, 28, 29); gangbaar ook 'rechthebbende' (Groningen art. 1 w, VNG-model art. 1 o).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Vraagt bij de gemeente grafrecht, verlenging, overschrijving, vergunning en onderhoud aan.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  hoedanigheid:
+    waarde: ja
+    onderbouwing: De hoedanigheid van wie het uitsluitend recht op een particulier graf heeft.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  voert_gedrag_uit:
+    waarde: ja
+    onderbouwing: Toegewezen aan Verlenen grafrecht (vraagt aan, Groningen art. 16), Opgraven lijk (vraagt aan, art. 28) en Onderhouden graf (verzoekt, art. 23).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+definitie: Wie het grafrecht op een particulier graf heeft en bepaalt wie daarin wordt begraven of bijgezet.
+beschrijving:
+- De rechthebbende bepaalt wie in het particulier graf wordt begraven (art. 23 lid 2), geeft toestemming voor opgraving en ruiming (art. 29, 31), vraagt verlenging, overschrijving en een vergunning voor de grafbedekking aan, onderhoudt de grafbedekking en kan afstand doen van het recht (Groningen art. 16, 18, 19, 22, 24). Dat kan een natuurlijk persoon of een rechtspersoon zijn (Groningen art. 1 w).
+synoniemen:
+- naam: Rechthebbende
+  context: beleid
+homoniem_van: Rechthebbende (GGM, Archief)
+homoniemen:
+- begrip: Rechthebbende
+  betekenis: Iemand die rechten heeft op een goed
+  waar: GGM-entiteit Rechthebbende (EAID_9AE5BCE3_AD6D_4241_9651_823400E3745F), beleidsdomein Archief
+  naamkeuze: Deze pagina heet Rechthebbende op het graf; het GGM-begrip krijgt hier geen pagina.
+naamkeuze:
+- 'Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, art. 23, 28), Rechthebbende grafrecht. Gekozen is Rechthebbende op het graf (besluit redacteur 2026-09-30), omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief: iemand die rechten heeft op een goed).'
+besluiten:
+- datum: '2026-09-30'
+  besluit: Naam Rechthebbende op het graf, niet Rechthebbende of Rechthebbende grafrecht, omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief).
+  gevolg: opnemen
+  redenen:
+  - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: toewijzing
+  naar: verlenen-grafrecht
+  naam: vraagt aan
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: Groningen art. 16; VNG-model art. 15
+- soort: toewijzing
+  naar: opgraven-lijk
+  naam: vraagt aan
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 28 lid 1
+- soort: toewijzing
+  naar: onderhouden-graf
+  naam: verzoekt om
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 23 lid 1
+- soort: toegang (partij)
+  naar: grafrecht
+  naam: heeft
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: Wlb art. 28; Groningen art. 1 w
+- soort: toegang (beheerder)
+  naar: grafbedekking
+  naam: onderhoudt
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: Groningen art. 24; VNG-model art. 21
+- soort: toewijzing
+  naar: ruimen-graf
+  naam: geeft toestemming voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 31 lid 2
+- soort: toewijzing
+  naar: uitvoeren-lijkbezorging
+  naam: machtigt tot begraving in het particulier graf
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: Groningen art. 9 lid 2; VNG-model art. 9 lid 2
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: true
+    redenen:
+    - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
+    data_object: nee
+    typeregel: 12
+  voor_te_leggen:
+  - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: wet
+  pad: bedrijfsarchitectuur/rollen/rechthebbende-op-het-graf.md

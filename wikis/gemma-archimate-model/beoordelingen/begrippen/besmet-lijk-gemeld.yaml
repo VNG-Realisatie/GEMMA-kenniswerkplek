@@ -1,0 +1,209 @@
+begrip: Besmet lijk gemeld
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wettelijke melding (Wpg art. 21 lid 2).
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De GGD geeft de melding door aan de burgemeester (Wpg art. 27 lid 3).
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gebeurt.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: ja
+    onderbouwing: Gebeurt op één moment en heeft gevolgen.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk besmet lijk.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: ja
+    onderbouwing: Start Treffen maatregel bij besmet lijk (Wlb art. 22a).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen bredere gebeurtenis in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+definitie: De burgemeester heeft van de GGD de melding ontvangen dat een lijk besmet is met gevaar voor de volksgezondheid.
+beschrijving:
+- De arts die vaststelt dat een lijk besmet is met een infectieus of giftig agens of stof met ernstig gevaar voor de volksgezondheid, meldt dat onverwijld aan de GGD (Wet publieke gezondheid art. 21 lid 2); de GGD geeft de ontvangst onverwijld door aan de burgemeester van de gemeente waarin het lijk zich bevindt (art. 27 lid 3).
+synoniemen:
+- naam: Melding besmet lijk
+  context: wet
+relaties:
+- soort: triggering
+  naar: treffen-maatregel-bij-besmet-lijk
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  vindplaats: Wlb art. 22a; Wpg art. 27 lid 3
+- soort: associatie (gericht)
+  naar: lijk
+  naam: betreft
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  vindplaats: art. 21 lid 2
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    data_object: nee
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/gebeurtenissen/besmet-lijk-gemeld.md

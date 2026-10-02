@@ -1,0 +1,234 @@
+begrip: Graf
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Kernbegrip van wet, verordening en model.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente geeft graven uit, opent en sluit ze en ruimt ze (art. 23, 31; Groningen art. 7, 27).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elk graf heeft een eigen aanduiding met letters en nummers (Groningen art. 14 lid 3).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Uitgegeven, in gebruik, geruimd (Groningen art. 14, 27).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: De gemeente geeft graven uit, opent en sluit ze en ruimt ze; de houder houdt het register met de plaats bij (art. 23, 27, 31; Groningen art. 7, 27).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: ja
+    onderbouwing: 'Gravenadministratie: het register van begraven lijken met de plaats (art. 27) wordt als gegevensstructuur bijgehouden; GGM Gemeentebegrafenis verwijst ernaar (attribuut datumRuimingGraf).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Eigen behandeling (uitgifte, begraving, ruiming); de grafsoorten zijn zijn specialisaties. Geen breder herkenbaar begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+definitie: Plaats op een begraafplaats waarin lijken worden begraven of urnen worden bijgezet.
+beschrijving:
+- Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k); het is een zandgraf of keldergraf (VNG-model art. 1 b). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven lijken met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina. Graven van historische betekenis staan op een lijst; over het ruimen daarvan beslist de raad (VNG-model art. 26).
+grondslag: bron
+ggm:
+  sterkte: geen
+  onderbouwing: Het GGM kent geen entiteit Graf, terwijl Gemeentebegrafenis er wel naar verwijst (attribuut datumRuimingGraf); GGM-terugmelding 3 (hiaat).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+specialisaties:
+- naam: Algemeen graf
+  omschrijving: Graf bij de gemeente in beheer, waarin de houder bepaalt wie er begraven wordt (art. 23 lid 2; Groningen art. 1 a, 13). Geen eigen pagina.
+- naam: Particulier graf
+  omschrijving: Graf waarop een uitsluitend recht is gevestigd; de rechthebbende bepaalt wie er begraven wordt (art. 23 lid 2; Groningen art. 1 p). Geen eigen pagina.
+- naam: Algemeen kindergraf
+  omschrijving: Algemeen graf voor levenloos geborenen en kinderen beneden 12 jaar (Groningen art. 1 b). Geen eigen pagina.
+- naam: Particulier graf voor bepaalde tijd
+  omschrijving: Particulier graf voor een bepaald aantal jaren, te verlengen (Groningen art. 1 s, 16). Geen eigen pagina.
+- naam: Particulier graf voor onbepaalde tijd
+  omschrijving: Particulier graf tot de begraafplaats gesloten wordt verklaard (Groningen art. 1 t). Geen eigen pagina.
+- naam: Particulier kindergraf
+  omschrijving: Particulier graf voor bepaalde tijd voor levenloos geborenen en kinderen beneden 12 jaar (Groningen art. 1 q). Geen eigen pagina.
+- naam: Particulier foetusgraf
+  omschrijving: Graf waarin een foetus jonger dan 24 weken kan worden bijgezet (Groningen art. 1 o). Geen eigen pagina.
+- naam: Particulier urnengraf
+  omschrijving: Graf met het uitsluitend recht tot bijzetten van asbussen of sierurnen, 5 tot 30 jaar (Groningen art. 1 u, 16; VNG-model art. 1 h). Geen eigen pagina.
+- naam: Algemeen urnengraf
+  omschrijving: Graf bij de gemeente in beheer voor het bijzetten van asbussen (VNG-model art. 1 i). Geen eigen pagina.
+- naam: Particuliere urnennis
+  omschrijving: Nis in een urnenmuur met het uitsluitend recht tot bijzetten van asbussen (Groningen art. 1 v; VNG-model art. 1 j). Geen eigen pagina.
+- naam: Particuliere gedenkplaats
+  omschrijving: Plaats met het uitsluitend recht om overledenen te gedenken, bijvoorbeeld vermisten (VNG-model art. 1 k, toelichting art. 11). Geen eigen pagina.
+- naam: Partnergraf
+  omschrijving: Twee graven naast elkaar voor twee met namen aangeduide overledenen (Groningen art. 1 dd, 14). Geen eigen pagina.
+- naam: Vrije-veldgraf
+  omschrijving: Particulier graf op het vrije begraafveld, met vrije keus van locatie en monument (Groningen art. 1 r, cc). Geen eigen pagina.
+besluiten:
+- datum: '2026-09-30'
+  besluit: Opname akkoord als gegevensobject zonder GGM-entiteit (GGM-terugmelding 3).
+  gevolg: opnemen
+  redenen:
+  - gegevensobject zonder sterke GGM-match
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    data_object: ja
+    typeregel: 21
+  voor_te_leggen:
+  - gegevensobject zonder sterke GGM-match
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md

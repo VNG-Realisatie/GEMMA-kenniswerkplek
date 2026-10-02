@@ -1,0 +1,209 @@
+begrip: Gemeenteraad
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar; wettelijk 'raad' (Gemeentewet art. 6, 7; titel hoofdstuk II).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Bestuursorgaan van de gemeente.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: ja
+    onderbouwing: Bestuursorgaan dat de bevolking vertegenwoordigt en verordeningen vaststelt.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: ja
+    onderbouwing: Bestaat los van elke afzonderlijke bevoegdheid.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  vervult_een_rol:
+    waarde: ja
+    onderbouwing: 'Vervult de rol Beslisser: stelt de verordeningen vast, wijst grond aan voor een bijzondere begraafplaats en staat een kerkgenootschap meer begraafplaatsen toe (Gemeentewet art. 147, 149; Wlb art. 38, 40).'
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+definitie: Bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt.
+beschrijving:
+- De raad vertegenwoordigt de gehele bevolking van de gemeente (Gemeentewet art. 7). Hij stelt de gemeentelijke verordeningen vast, voor zover die bevoegdheid niet bij het college of de burgemeester ligt (art. 147, 149), en benoemt de wethouders (art. 35). De burgemeester is voorzitter van de raad (art. 9).
+per_onderwerp:
+  lijkbezorging:
+  - De raad stelt de beheersverordening begraafplaatsen en de verordening lijkbezorgingsrechten vast, wijst grond aan voor bijzondere begraafplaatsen en kan een kerkgenootschap meer begraafplaatsen toestaan (Wet op de lijkbezorging art. 35, 38, 40).
+synoniemen:
+- naam: Raad
+  context: wet
+grondslag: bron
+gemma:
+  id: id-b69cb101-8708-47de-9ac1-e138f205a49f
+  sterkte: exact
+  onderbouwing: Zelfde begrip.
+relaties:
+- soort: toewijzing
+  naar: beslisser
+  naam: vervult
+  grondslag: bron
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: Gemeentewet art. 147; Wlb art. 38, 40
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    data_object: nee
+    typeregel: 11
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  gemma:
+    gemma_id: id-b69cb101-8708-47de-9ac1-e138f205a49f
+    gemma_naam: Gemeenteraad
+    gemma_type: business-actor
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: b69cb101-8708-47de-9ac1-e138f205a49f
+  pad: bedrijfsarchitectuur/actoren/gemeenteraad.md

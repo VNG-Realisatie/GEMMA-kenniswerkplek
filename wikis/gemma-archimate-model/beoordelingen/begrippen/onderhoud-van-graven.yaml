@@ -1,0 +1,201 @@
+begrip: Onderhoud van graven
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar in verordening en VNG ('onderhoud van graven en urnen').
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente biedt het aan tegen betaling (Groningen art. 23; VNG retributies).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat de gemeente aanbiedt.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: ja
+    onderbouwing: Prestatie die de gemeente aan de rechthebbende aanbiedt, los van hoe zij het onderhoud uitvoert.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een onderhouden graf (Groningen art. 23 lid 3).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: ja
+    onderbouwing: Rechthebbende op het graf (Groningen art. 23, 24 lid 3).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gerealiseerd_door:
+    waarde: ja
+    onderbouwing: Het proces Onderhouden graf.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen bredere dienst in deze wiki.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+definitie: Onderhoud van grafmonumenten en grafbeplanting door de gemeente, tegen betaling door de rechthebbende.
+beschrijving:
+- Op verzoek van de rechthebbende, of op sommige begraafplaatsen altijd, onderhoudt de gemeente de grafbedekking tegen betaling van een recht uit de heffingsverordening (Groningen art. 23, 24; VNG retributies). Een retributie is een tegenprestatie voor zo'n dienst (VNG retributies).
+relaties:
+- soort: bediening
+  naar: rechthebbende-op-het-graf
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 23, 24 lid 3
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    data_object: nee
+    typeregel: 17
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-vng-retributies
+  herkomst: wet
+  pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md

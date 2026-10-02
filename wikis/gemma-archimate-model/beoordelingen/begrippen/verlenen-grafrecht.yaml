@@ -1,0 +1,248 @@
+begrip: Verlenen grafrecht
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar als uitgifte van een graf; wettelijk vestigen van het uitsluitend recht (art. 28).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het college verleent het recht (Groningen art. 16; VNG-model art. 15).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (college) en Rechthebbende op het graf (vraagt aan) (Groningen art. 16).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Legt het grafrecht vast, raadpleegt het graf en legt de heffing vast (art. 28; Groningen art. 14, 16; VNG retributies).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
+  aanleiding:
+    waarde: ja
+    onderbouwing: Schriftelijke aanvraag (Groningen art. 16 lid 1; VNG-model art. 15 lid 1).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Grafrecht op een particulier graf, voor bepaalde of onbepaalde tijd (art. 28).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elke uitgifte van een particulier graf, urnengraf of urnennis.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Art. 28 (schriftelijk, ten minste tien jaar, verlenging); Groningen art. 14, 16 (volgorde, termijnen).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Levert zelf het eindresultaat; geen deelproces van een groter proces.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+definitie: Het verlenen van een grafrecht op een particulier graf aan een rechthebbende.
+beschrijving:
+- Het college verleent op schriftelijke aanvraag een recht op een particulier graf, voor 30 jaar of bij een urnengraf voor 5 tot 30 jaar (Groningen art. 16; VNG-model art. 15); de wet spreekt van het vestigen van het uitsluitend recht, voor onbepaalde tijd of ten minste tien jaar (art. 28). Beslisser is het college; het VNG-model beveelt mandaat aan de beheerder aan. Graven worden in volgorde van ligging uitgegeven (Groningen art. 14). Verlenging volgt op verzoek van de rechthebbende (art. 28 lid 1). De gemeente heft voor de uitgifte lijkbezorgingsrechten (VNG retributies).
+synoniemen:
+- naam: Uitgifte van een graf
+  context: beleid
+- naam: Vestigen van het uitsluitend recht op een graf
+  context: wet
+relaties:
+- soort: toegang (registreren)
+  naar: grafrecht
+  naam: verleent
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: Wlb art. 28; Groningen art. 16
+- soort: toegang (raadplegen)
+  naar: graf
+  naam: geeft uit
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 14
+- soort: toegang (registreren)
+  naar: heffing
+  naam: leidt tot (lijkbezorgingsrechten)
+  grondslag: bron
+  bronnen:
+  - 2026-vng-retributies
+  vindplaats: § Lijkbezorgingsrechten
+- soort: realisatie
+  naar: graf-aanvragen
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: Groningen art. 16; VNG-model art. 15
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja, 5/5)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-vng-retributies
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md

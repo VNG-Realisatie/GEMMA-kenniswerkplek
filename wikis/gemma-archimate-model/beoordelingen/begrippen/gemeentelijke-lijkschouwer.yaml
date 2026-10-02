@@ -1,0 +1,193 @@
+begrip: Gemeentelijke lijkschouwer
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wetsterm (art. 3–10a).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Door burgemeester en wethouders benoemd (art. 4).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  hoedanigheid:
+    waarde: ja
+    onderbouwing: De verantwoordelijkheid om namens de gemeente lijken te schouwen; alleen een forensisch arts kan haar vervullen (art. 5).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  voert_gedrag_uit:
+    waarde: ja
+    onderbouwing: Toegewezen aan Schouwen lijk (art. 3).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+definitie: Arts die door het college is benoemd om lijken te schouwen.
+beschrijving:
+- Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uitsluitend forensisch artsen (art. 4, 5). De lijkschouwer schouwt het lijk als de behandelend arts dat niet doet, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a). Hij kan de elektronische weg openstellen voor mededelingen van de behandelend arts (art. 7 lid 3).
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: toewijzing
+  naar: schouwen-lijk
+  naam: verricht
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 3
+- soort: associatie (gericht)
+  naar: ambtenaar-van-de-burgerlijke-stand
+  naam: waarschuwt bij een niet-natuurlijke dood
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 10 lid 1
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    data_object: nee
+    typeregel: 12
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/rollen/gemeentelijke-lijkschouwer.md

@@ -1,0 +1,254 @@
+begrip: Regeling
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar als verzamelnaam (GEMMA); de soort wet of verordening.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De raad stelt verordeningen vast (Gemeentewet art. 147, 149).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-vng-wet-op-de-lijkbezorging
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elke regeling apart.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Vastgesteld, gewijzigd, ingetrokken (Groningen art. 31).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: De raad stelt de beheersverordening vast; beheerder en college passen haar toe en stellen nadere regels (Gemeentewet art. 149; Groningen intitulé, art. 2 lid 2).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie (besluit redacteur 2026-09-30).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: Algemeen verbindend voorschrift van een overheid, zoals een wet, algemene maatregel van bestuur of gemeentelijke verordening.
+beschrijving:
+- Een regeling bevat algemeen verbindende voorschriften van een overheid, zoals een wet, een algemene maatregel van bestuur of een gemeentelijke verordening. De gemeenteraad stelt de gemeentelijke verordeningen vast, voor zover die bevoegdheid niet bij het college of de burgemeester ligt (Gemeentewet art. 147, 149). Een concreet benoemde landelijke wet of VNG-modelverordening is daarnaast een beleidskader.
+per_onderwerp:
+  lijkbezorging:
+  - De gemeenteraad stelt een beheersverordening begraafplaatsen vast, met de regels voor graven, grafrechten, grafbedekkingen en ruiming; de VNG biedt daarvoor een model (VNG Wet op de lijkbezorging; Groningen). De wet laat de raad verordenen over onder meer de tijden van begraven (art. 35, 90).
+grondslag: regelgeving
+grondslag_toelichting:
+- 'De soort regeling: algemeen verbindende voorschriften (Gemeentewet art. 147, 149); voor dit onderwerp de beheersverordening begraafplaatsen (Groningen, VNG-model).'
+homoniem_van: Regeling (GGM, Inkomen)
+homoniemen:
+- begrip: Regeling
+  betekenis: Afspraak of regeling met een cliënt (terugbetaling, voorziening)
+  waar: GGM-entiteiten Regeling in Terug- en invordering, Diensten en Model Inkomen
+  naamkeuze: 'Deze pagina heet Regeling: de soort wet of verordening; het GGM-begrip krijgt hier geen pagina.'
+ggm:
+  sterkte: geen
+  onderbouwing: De drie GGM-entiteiten Regeling (Inkomen) zijn een ander begrip (homoniem); geen GGM-grondslag.
+gemma:
+  id: id-e5771904f7a442de8f07744a66d37ef0
+  sterkte: sterk
+  onderbouwing: 'Zelfde begrip (verzamelnaam voor AMvB''s, ministeriële regelingen, lokale verordeningen); nieuw: een herkenbare definitie.'
+specialisaties:
+- naam: Beheersverordening begraafplaatsen
+  omschrijving: Verordening waarin de gemeente de regels voor de begraafplaats vastlegt; de VNG biedt een model (VNG; Groningen). Geen eigen pagina.
+- naam: Heffingsverordening
+  omschrijving: Verordening over de heffing van belastingen en rechten.
+  element: heffingsverordening
+naamkeuze:
+- 'Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschrift (Awb). Gekozen is Regeling, in lijn met het GEMMA-element; het GGM-begrip Regeling (Inkomen) is een ander begrip en krijgt hier geen pagina (besluit redacteur 2026-10-01).'
+besluiten:
+- datum: '2026-09-30'
+  besluit: Element op het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; opname akkoord.
+  gevolg: opnemen
+  redenen:
+  - 'grondslag regelgeving: altijd voorleggen'
+- datum: '2026-10-01'
+  besluit: Naam Regeling houden, in lijn met GEMMA; het GGM-homoniem staat bij Homoniemen.
+  gevolg: opnemen
+  redenen:
+  - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+relaties:
+- soort: associatie (gericht)
+  naar: begraafplaats
+  naam: regelt (beheersverordening begraafplaatsen)
+  grondslag: bron
+  bronnen:
+  - 2026-vng-wet-op-de-lijkbezorging
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: VNG inleiding; Groningen
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+    data_object: nee
+    typeregel: 21
+  voor_te_leggen:
+  - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+  - 'grondslag regelgeving: altijd voorleggen'
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  - 2026-vng-wet-op-de-lijkbezorging
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: wet
+  gemma:
+    gemma_id: id-e5771904f7a442de8f07744a66d37ef0
+    gemma_naam: Regeling
+    gemma_type: business-object
+    gemma_definitie: Verzamelnaam voor AMvB’s, Ministeriële regelingen, lokale verordeningen, etc. De regeling is de meest concrete uitleg van de wet.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-4613c364-53f2-445d-a392-3b6661533a71
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{C25455F3-FEB0-4c6d-9AA4-3B027718BEE3}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: 4613c364-53f2-445d-a392-3b6661533a71
+  pad: bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md

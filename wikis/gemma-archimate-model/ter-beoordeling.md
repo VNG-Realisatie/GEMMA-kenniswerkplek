@@ -16,4 +16,26 @@ Niets.
 
 ## Voor te leggen
 
-Niets.
+**Behandelende arts** (buiten scope)
+
+- gemeentelijk: nee
+
+**Beschikking ter bezorging van het lijk** (buiten scope)
+
+- gemeentelijk: nee
+
+**Gedeputeerde staten** (buiten scope)
+
+- gemeentelijk: nee
+
+**Nieuwe vormen van lijkbezorging** (buiten scope)
+
+- herkenbaar: nee
+
+**Officier van justitie** (buiten scope)
+
+- gemeentelijk: nee
+
+**Stichting Grafzorg Nederland** (buiten scope)
+
+- gemeentelijk: nee

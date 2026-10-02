@@ -1,0 +1,242 @@
+begrip: Beslisser
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Rol uit de procesbouwstenen van GEMMA; de bronnen noemen per besluit het bevoegde bestuursorgaan.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2024-rijk-gemeentewet-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeentelijke bestuursorganen beslissen in de processen van dit onderwerp.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2024-rijk-gemeentewet-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2024-rijk-gemeentewet-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2024-rijk-gemeentewet-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  hoedanigheid:
+    waarde: ja
+    onderbouwing: De verantwoordelijkheid om in een proces het besluit te nemen; burgemeester, college of raad treedt erin op, afhankelijk van de bevoegdheid.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2024-rijk-gemeentewet-wettekst
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  voert_gedrag_uit:
+    waarde: ja
+    onderbouwing: Toegewezen aan Verlenen grafrecht en Vervallen verklaren grafrecht (college), Opgraven lijk, Verzorgen gemeentebegrafenis en Treffen maatregel bij besmet lijk (burgemeester) (Wlb art. 21, 22a, 29; Groningen art. 16, 20).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2024-rijk-gemeentewet-wettekst
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2024-rijk-gemeentewet-wettekst
+definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
+beschrijving:
+- 'Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit redacteur 2026-10-01).'
+besluiten:
+- datum: '2026-10-01'
+  besluit: Burgemeester, college en raad hangen via de rol Beslisser (GEMMA) aan gedrag; het bevoegde orgaan per proces staat in de beschrijving van het proces.
+  gevolg: verwerkt
+grondslag: bron
+gemma:
+  id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
+  sterkte: sterk
+  onderbouwing: 'GEMMA-rol Beslisser uit de procesbouwstenen; zelfde begrip, in GEMMA zonder definitie. Nieuw: een definitie.'
+relaties:
+- soort: toewijzing
+  naar: verlenen-grafrecht
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 16 lid 1
+- soort: toewijzing
+  naar: vervallen-verklaren-grafrecht
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 18 lid 4, 20 lid 2
+- soort: toewijzing
+  naar: opgraven-lijk
+  naam: verleent vergunning voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 29 lid 1
+- soort: toewijzing
+  naar: verzorgen-gemeentebegrafenis
+  naam: draagt zorg voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 21 lid 1
+- soort: toewijzing
+  naar: treffen-maatregel-bij-besmet-lijk
+  naam: treft
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 22a
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    data_object: nee
+    typeregel: 12
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2024-rijk-gemeentewet-wettekst
+  herkomst: wet
+  gemma:
+    gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
+    gemma_naam: Beslisser
+    gemma_type: business-role
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: 8ee6ba79-47ed-47d5-8fc4-a707fbea233e
+  pad: bedrijfsarchitectuur/rollen/beslisser.md

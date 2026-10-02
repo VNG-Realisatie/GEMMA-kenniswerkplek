@@ -1,0 +1,203 @@
+begrip: Uitvaartondernemer
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar beroep; de RVO-pagina richt zich tot de uitvaartondernemer.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: 'Structurele relatie: doet namens nabestaanden aangifte en vraagt verlof en vergunningen aan bij de gemeente, en bepaalt met de beheerder tijd en plaats van de begraving (RVO; Groningen art. 7).'
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: ja
+    onderbouwing: Onderneming die de uitvaart verzorgt.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: ja
+    onderbouwing: Bestaat los van de afzonderlijke uitvaart; handelt voor steeds andere nabestaanden.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  vervult_een_rol:
+    waarde: ja
+    onderbouwing: 'Vervult de rol Degene die in de lijkbezorging voorziet, namens de nabestaanden: vraagt het verlof tot begraven of cremeren en de vergunning voor een andere termijn aan (RVO).'
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+definitie: Onderneming die in opdracht van nabestaanden de uitvaart verzorgt.
+beschrijving:
+- De uitvaartondernemer doet voor de nabestaanden aangifte van overlijden bij de gemeente waar de persoon is overleden, en krijgt van de gemeente de akte van overlijden en het verlof tot begraven of cremeren; voor het vervroegen of uitstellen van de uitvaart vraagt hij een vergunning aan (Ondernemersplein). De beheerder bepaalt tijd en plaats van een begraving in overleg met de uitvaartondernemer; personeel van uitvaartondernemingen volgt op de begraafplaats de aanwijzingen van de beheerder (Groningen art. 5, 7; VNG-model art. 4).
+synoniemen:
+- naam: Uitvaartonderneming
+  context: beleid
+bronnen:
+- 2010-vng-model-beheersverordening-begraafplaatsen
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: toewijzing
+  naar: degene-die-in-de-lijkbezorging-voorziet
+  naam: vervult namens de nabestaanden
+  grondslag: bron
+  bronnen:
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  vindplaats: inleiding, § Aangifte doen van overlijden
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    data_object: nee
+    typeregel: 11
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: wet
+  pad: bedrijfsarchitectuur/actoren/uitvaartondernemer.md

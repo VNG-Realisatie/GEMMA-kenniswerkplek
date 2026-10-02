@@ -64,3 +64,17 @@ terugmeldingen:
   bevinding: 'Belanghebbende (definitie gelijk aan art. 1:2 Awb) is een algemeen begrip uit het bestuursrecht, maar staat in het GGM alleen in het beleidsdomein Musea. Voorstel: onderbrengen in een algemeen beleidsdomein (bijvoorbeeld Kern of Besluitvorming), zodat alle beleidsdomeinen ernaar kunnen verwijzen.'
   element: belanghebbende
   status: open
+- domein: Model Inkomen
+  entiteit: Regeling
+  type: homoniem
+  bevinding: 'Het GGM gebruikt de naam Regeling voor een afspraak of regeling met een cliënt (Terug- en invordering, Diensten, Model Inkomen), terwijl GEMMA en het spraakgebruik Regeling gebruiken voor de soort wet of verordening (algemeen verbindend voorschrift; Gemeentewet art. 147, 149). Voorstel: de GGM-entiteiten een specifiekere naam geven, bijvoorbeeld Cliëntregeling of Betalingsregeling, en in alle drie de domeinen dezelfde naam gebruiken.'
+  element: regeling
+  nummer: 10
+  status: open
+- domein: Archief
+  entiteit: Rechthebbende
+  type: homoniem
+  bevinding: 'Het GGM gebruikt Rechthebbende in Archief voor iemand die rechten heeft op een goed. De Wet op de lijkbezorging en de beheersverordeningen gebruiken rechthebbende voor wie het uitsluitend recht op een particulier graf heeft (art. 23, 28). Deze wiki noemt dat element Rechthebbende op het graf. Voorstel: de GGM-definitie in Archief verbijzonderen (rechthebbende op archiefbescheiden), zodat de algemene naam niet aan één domein vastzit.'
+  element: rechthebbende-op-het-graf
+  nummer: 11
+  status: open

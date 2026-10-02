@@ -1,0 +1,210 @@
+begrip: Burgemeester
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Bestuursorgaan van elke gemeente (Gemeentewet art. 6).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Orgaan van de gemeente zelf; neemt besluiten in de lijkbezorging (Wlb art. 17, 21, 29, 68).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: ja
+    onderbouwing: Persoon en bestuursorgaan dat activiteiten uitvoert.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: ja
+    onderbouwing: Bestaat los van elke afzonderlijke bevoegdheid; vervult ook andere rollen (voorzitter van raad en college, art. 9, 34).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  vervult_een_rol:
+    waarde: ja
+    onderbouwing: 'Vervult de rol Beslisser: verleent vergunning tot opgraving en verlof tot ontleding, draagt zorg voor de lijkbezorging als niemand dat doet, treft maatregelen bij een besmet lijk (Wlb art. 21, 22a, 29, 68).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+definitie: Bestuursorgaan van de gemeente, voorzitter van gemeenteraad en college, benoemd bij koninklijk besluit.
+beschrijving:
+- De burgemeester wordt bij koninklijk besluit benoemd voor zes jaar (Gemeentewet art. 61) en is voorzitter van de raad en van het college (art. 9, 34). De burgemeester vertegenwoordigt de gemeente in en buiten rechte (art. 171).
+per_onderwerp:
+  lijkbezorging:
+  - De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, verleent vergunning tot opgraving en verlof tot ontleding, stelt een andere termijn en treft maatregelen bij een besmet lijk (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68).
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: 'Het GEMMA-model kent geen actor Burgemeester (tools/gemma.py kandidaten: geen naamgenoot); nieuw voor GEMMA.'
+relaties:
+- soort: toewijzing
+  naar: beslisser
+  naam: vervult
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 17, 21, 22a, 29, 68
+- soort: associatie (gericht)
+  naar: gemeenteraad
+  naam: is voorzitter van
+  grondslag: bron
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  vindplaats: art. 9
+- soort: associatie (gericht)
+  naar: college-van-b-w
+  naam: is voorzitter van
+  grondslag: bron
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  vindplaats: art. 34 lid 2
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    data_object: nee
+    typeregel: 11
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/actoren/burgemeester.md

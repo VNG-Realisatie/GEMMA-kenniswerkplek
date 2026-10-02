@@ -1,0 +1,208 @@
+begrip: Kerkgenootschap
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Begrip uit BW Boek 2 en de Wet op de lijkbezorging.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Houdt bijzondere begraafplaatsen en krijgt delen van de gemeentelijke begraafplaats ter beschikking; overlegt met het college (Wlb art. 37–39; Groningen art. 29).
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: ja
+    onderbouwing: Organisatie die activiteiten uitvoert.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: ja
+    onderbouwing: Bestaat los van het houderschap van een begraafplaats.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  eigen_rechtspersoon:
+    waarde: ja
+    onderbouwing: Kerkgenootschappen, hun zelfstandige onderdelen en lichamen waarin zij zijn verenigd, bezitten rechtspersoonlijkheid (art. 2:2).
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  vervult_een_rol:
+    waarde: ja
+    onderbouwing: Vervult de rol Houder van de begraafplaats (bijzondere begraafplaats, art. 37) en Houder van het crematorium (bijzonder crematorium, art. 52).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+definitie: Kerkelijke gemeenschap, met inbegrip van haar zelfstandige onderdelen en de lichamen waarin kerkgenootschappen zijn verenigd.
+beschrijving:
+- Kerkgenootschappen, hun zelfstandige onderdelen en de lichamen waarin zij zijn verenigd, hebben rechtspersoonlijkheid en worden geregeerd door hun eigen statuut, voor zover dat niet in strijd is met de wet (BW Boek 2 art. 2).
+per_onderwerp:
+  lijkbezorging:
+  - Een kerkgenootschap kan een bijzondere begraafplaats of een bijzonder crematorium houden (Wet op de lijkbezorging art. 37, 52). Maakt het daarvan geen gebruik, dan stelt de gemeente op verzoek een deel van de gemeentelijke begraafplaats ter beschikking; over de inrichting en het gebruik daarvan overlegt het college met het kerkgenootschap (art. 39; Groningen art. 29). Een gezindte die een deel van een gemeentelijke begraafplaats beheert, valt eronder (Groningen art. 3 lid 3).
+synoniemen:
+- naam: Gezindte
+  context: beleid
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: toewijzing
+  naar: houder-van-de-begraafplaats
+  naam: vervult
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 37
+- soort: toewijzing
+  naar: houder-van-het-crematorium
+  naam: vervult
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 52
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    data_object: nee
+    typeregel: 11
+  bronnen:
+  - 2026-rijk-bw2-rechtspersonen
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/actoren/kerkgenootschap.md

@@ -1,0 +1,216 @@
+begrip: GGD
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare afkorting van de gemeentelijke gezondheidsdienst (Wpg art. 14).
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: 'Structurele relatie: de colleges stellen de GGD via een gemeenschappelijke regeling in en houden haar in stand (Wpg art. 14); mede-eigenaar en opdrachtgever.'
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Wordt in geen ander onderwerp beoordeeld; adviseert in de lijkbezorging bij een besmet lijk (Wlb art. 22a).
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: ja
+    onderbouwing: Organisatie die activiteiten uitvoert, onder leiding van een directeur publieke gezondheid (art. 14 lid 3).
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  samenwerkingsverband:
+    waarde: ja
+    onderbouwing: Ingesteld door de colleges van de gemeenten in een regio samen (art. 14 lid 1).
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: ja
+    onderbouwing: Bestaat los van de adviestaak bij een besmet lijk.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  eigen_rechtspersoon:
+    waarde: ja
+    onderbouwing: Openbaar lichaam, ingesteld bij gemeenschappelijke regeling (art. 14 lid 2).
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  vervult_een_rol:
+    waarde: ja
+    onderbouwing: 'Vervult de rol Adviseur: adviseert de burgemeester over maatregelen bij een besmet lijk (Wlb art. 22a) en het college bij besluiten met belangrijke gevolgen voor de publieke gezondheid (Wpg art. 16).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+definitie: Gezondheidsdienst die de colleges van de gemeenten in een regio via een gemeenschappelijke regeling instellen en in stand houden voor de publieke gezondheid.
+beschrijving:
+- De colleges van burgemeester en wethouders van de gemeenten in een regio stellen de gemeentelijke gezondheidsdienst via een gemeenschappelijke regeling in en houden haar in stand (Wet publieke gezondheid art. 14 lid 1); de regeling stelt een openbaar lichaam in, zodat de GGD eigen rechtspersoonlijkheid heeft (art. 14 lid 2). De gemeenten zijn zo mede-eigenaar en opdrachtgever. De GGD staat onder leiding van een directeur publieke gezondheid (art. 14 lid 3).
+per_onderwerp:
+  lijkbezorging:
+  - Een arts meldt een besmet lijk aan de GGD, die de melding doorgeeft aan de burgemeester (Wet publieke gezondheid art. 21 lid 2, 27 lid 3). De GGD adviseert de burgemeester over maatregelen om het gevaar af te wenden (Wet op de lijkbezorging art. 22a).
+synoniemen:
+- naam: Gemeentelijke gezondheidsdienst
+  context: wet
+besluiten:
+- datum: '2026-09-30'
+  besluit: 'Actor, op grond van het precedent GGD: mede-eigenaar en opdrachtgever via de gemeenschappelijke regeling.'
+  gevolg: verwerkt
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: toewijzing
+  naar: adviseur
+  naam: vervult
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  vindplaats: Wlb art. 22a; Wpg art. 16
+- soort: associatie (gericht)
+  naar: burgemeester
+  naam: geeft de melding van een besmet lijk door aan
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  vindplaats: art. 27 lid 3
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Samenwerkingsverband met eigen rechtspersoon (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    data_object: nee
+    typeregel: 9
+  bronnen:
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/actoren/ggd.md

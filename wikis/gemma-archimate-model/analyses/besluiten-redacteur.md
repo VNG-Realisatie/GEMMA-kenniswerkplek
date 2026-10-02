@@ -31,6 +31,8 @@ Besluiten over de werkwijze en de criteria staan bij de analyse waar ze bij hore
 | 2026-09-30 | Grafrecht | lijkbezorging | Contract: kenmerk *afspraak* is ja, een tweezijdige afspraak tussen houder en rechthebbende met rechten en plichten, ook als de gemeente het als besluit op aanvraag verleent. Opname akkoord als gegevensobject zonder GGM-entiteit (GGM-terugmelding 4). |
 | 2026-09-30 | Register van begraven lijken | lijkbezorging | Geen pagina: de vorm (representation) van de gegevens van graven, toegelicht bij Graf. |
 | 2026-09-30 | Lijkbezorging (functie) | lijkbezorging | Overkoepelende bedrijfsfunctie voor de gemeentelijke taken rond de lijkbezorging. |
+| 2026-10-01 | Burgemeester, College van B&W, Gemeenteraad, Beslisser | lijkbezorging | De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces. |
+| 2026-10-01 | Model-beheersverordening begraafplaatsen | lijkbezorging | Opnemen als bron (openbare versie 2010, kopie Eerste Kamer); kandidaat-beleidskader. De Modelverordening lijkbezorgingsrechten volgt bij het algemene onderwerp heffingen. |
 | 2026-09-30 | Uitdaagrecht | participatie | Geen eigen pagina: dezelfde procedure van verzoek, beoordeling, afspraken en evaluatie als overheidsparticipatie. |
 | 2026-09-30 | Uniforme openbare voorbereidingsprocedure | participatie | Verhuist naar een algemeen onderwerp besluitvorming. |
 | 2026-09-30 | Bestuursorgaan | participatie | Verhuist naar een algemeen onderwerp besluitvorming. |

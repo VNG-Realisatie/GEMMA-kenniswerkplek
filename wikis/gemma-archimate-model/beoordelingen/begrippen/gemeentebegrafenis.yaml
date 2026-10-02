@@ -1,0 +1,221 @@
+begrip: Gemeentebegrafenis
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: GGM-entiteit en gangbare term.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente zorgt en betaalt (art. 21, 22).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Per overledene.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Gemeld, uitgevoerd, kosten verhaald (art. 20–22).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: Vastgelegd en afgehandeld in Verzorgen gemeentebegrafenis, met kostenverhaal (art. 21, 22).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: ja
+    onderbouwing: GGM-entiteit met attributen (melder, kosten, datum begrafenis en ruiming).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+definitie: Lijkbezorging waarvoor de gemeente zorgt en betaalt omdat niemand anders daarin voorziet.
+beschrijving:
+- Een gemeentebegrafenis is het geval dat ontstaat als de burgemeester de lijkbezorging op zich neemt (art. 21). De gemeente draagt de kosten en verhaalt die zo mogelijk op de nalatenschap, de onderhoudsplichtige verwanten of de werkgever (art. 22). Het GGM legt per geval onder meer de melder, de kosten en de datum van begrafenis en ruiming vast.
+grondslag: ggm-entiteit
+ggm:
+  guid: EAID_F2DBE01F_7535_4f26_9DF2_081EF8632F36
+  sterkte: sterk
+  onderbouwing: 'Zelfde begrip; de GGM-definitie (''teraardebestelling onder verantwoordelijkheid van de gemeente'') is te smal, want de burgemeester kan ook voor crematie zorgen (art. 21); terugmeldingen 1 (definitie) en 2 (scope: beleidsdomein).'
+gemma:
+  id: id-68085684cee7413c91bc027a0aaade82
+  sterkte: sterk
+  onderbouwing: 'Overgenomen uit het GGM. Nieuw: een definitie die ook crematie omvat, en plaatsing in beleidsdomein Begraafplaatsen en crematoria.'
+relaties:
+- soort: associatie (gericht)
+  naar: lijk
+  naam: betreft
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 21
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    data_object: ja
+    typeregel: 21
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  ggm:
+    ggm_entiteit: Gemeentebegrafenis
+    ggm_guid: EAID_F2DBE01F_7535_4f26_9DF2_081EF8632F36
+    ggm_uml_type: Class
+    ggm_beleidsdomein: Gemeentebegrafenissen
+    ggm_taakveld: 6 Sociaal Domein
+    ggm_diagram:
+    - Gemeente Begrafenissen
+    ggm_diagram_ids:
+    - EAID_949AE9E2_95EB_4063_B7C5_E81971D410B3
+    ggm_definitie: Teraardebestelling onder verantwoordelijjkheid van de gemeente.
+  gemma:
+    gemma_id: id-68085684cee7413c91bc027a0aaade82
+    gemma_naam: Gemeentebegrafenis
+    gemma_type: business-object
+    gemma_definitie: Teraardebestelling onder verantwoordelijjkheid van de gemeente.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-a0f96391-4935-4c7a-be2b-2fa1b00da57f
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{F2DBE01F-7535-4f26-9DF2-081EF8632F36}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: a0f96391-4935-4c7a-be2b-2fa1b00da57f
+  pad: bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md

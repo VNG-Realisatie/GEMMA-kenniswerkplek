@@ -1,0 +1,216 @@
+begrip: Treffen maatregel bij besmet lijk
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wettelijke bevoegdheid van de burgemeester (art. 22a).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester treft de maatregel (art. 22a).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (burgemeester) en Adviseur (GGD) (art. 22a).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Legt de maatregel vast als beschikking en raadpleegt het lijk (art. 22a).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Melding van een besmet lijk door de GGD (Wpg art. 21 lid 2, 27 lid 3).
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Maatregel om het gevaar voor de volksgezondheid af te wenden (art. 22a).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk besmet lijk met ernstig gevaar voor de volksgezondheid.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Art. 22a: na advies van de GGD; toezicht door de Inspectie gezondheidszorg en jeugd.'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Levert zelf het eindresultaat; geen deelproces van een groter proces.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+definitie: Het nemen van maatregelen om gevaar voor de volksgezondheid door een besmet lijk af te wenden.
+beschrijving:
+- Is een lijk besmet met een infectieus of giftig agens of stof, of bestaat daarvan een gegrond vermoeden, waardoor een ernstig gevaar voor de volksgezondheid kan ontstaan, dan kan de burgemeester maatregelen treffen om dit gevaar af te wenden, na advies van de GGD (Wet op de lijkbezorging art. 22a). Beslisser is de burgemeester. De melding komt van een arts via de GGD (Wet publieke gezondheid art. 21 lid 2, 27 lid 3). De maatregel zelf is een beschikking.
+relaties:
+- soort: toegang (registreren)
+  naar: beschikking
+  naam: treft (maatregel bij besmet lijk)
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 22a
+- soort: toegang (raadplegen)
+  naar: lijk
+  naam: betreft
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 22a
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja, 5/5)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md

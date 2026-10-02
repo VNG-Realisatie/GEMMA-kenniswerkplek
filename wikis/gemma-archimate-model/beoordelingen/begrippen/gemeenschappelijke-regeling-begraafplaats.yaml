@@ -1,0 +1,183 @@
+begrip: Gemeenschappelijke regeling begraafplaats
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare term in de bron.
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Gemeenten regelen samen hun begraafplaats (Wlb art. 33).
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een samenwerkingsverband.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een samenwerkingsverband.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een samenwerkingsverband.'
+  samenwerkingsverband:
+    waarde: ja
+    onderbouwing: Gemeenten die samen een begraafplaats hebben of die op het grondgebied van een andere gemeente laten liggen (Wlb art. 33, 36; VNG-model toelichting 1.2).
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een samenwerkingsverband.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een samenwerkingsverband.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een samenwerkingsverband.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een samenwerkingsverband.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: Een eenvoudige gemeenschappelijke regeling zonder openbaar lichaam (VNG-model toelichting 1.2).
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: De bronnen noemen alleen de mogelijkheid, geen concreet verband met toegewezen gedrag.
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element.
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+toelichting: 'Geen element: de bronnen beschrijven alleen de mogelijkheid van een gemeenschappelijke regeling, geen bestaand verband met gedrag.'
+onderwerpen:
+- lijkbezorging
+besluiten:
+- datum: '2026-10-01'
+  besluit: 'Geen element: de bronnen beschrijven alleen de mogelijkheid; genoemd bij Begraafplaats.'
+  gevolg: afwijzen
+  redenen:
+  - 'voert gedrag uit: nee'
+afgeleid:
+  uitkomst:
+    soort: geen_element
+    regel: 22
+    toelichting: Kernrelatie ontbreekt voor Bedrijfssamenwerking
+    archimate_type: business-collaboration
+    voorleggen: true
+    redenen:
+    - 'voert gedrag uit: nee'
+    data_object: nee
+    typeregel: 9
+  voor_te_leggen:
+  - 'voert gedrag uit: nee'
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet

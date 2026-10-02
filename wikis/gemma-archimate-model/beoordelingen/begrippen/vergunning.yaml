@@ -1,0 +1,247 @@
+begrip: Vergunning
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar; wettelijk ook verlof of toestemming (art. 11, 29, 41, 68).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente verleent ze (art. 11, 29, 53, 64, 66b, 68; Groningen art. 22).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elke vergunning apart.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Aangevraagd, verleend, met voorschriften, ingetrokken (art. 29; Groningen art. 22 lid 5).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: Afgegeven door de ambtenaar van de burgerlijke stand en de burgemeester, geraadpleegd in Uitvoeren lijkbezorging en Opgraven lijk (art. 11, 29).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Specialisatie van Beschikking met eigen werkwijze (aanvraag, voorschriften, intrekking); het gekozen niveau voor alle vergunningen en verloven in de lijkbezorging (besluit redacteur 2026-09-30).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: Beschikking waarmee een bestuursorgaan toestemming geeft voor een handeling die zonder die toestemming niet mag.
+beschrijving:
+- Een vergunning is een beschikking (Awb art. 1:3 lid 2) waarmee een bestuursorgaan toestemming geeft voor een handeling die zonder die toestemming niet mag. Wetten noemen zo'n toestemming ook verlof, ontheffing of toestemming.
+per_onderwerp:
+  lijkbezorging:
+  - Begraven of cremeren (verlof van de ambtenaar van de burgerlijke stand, art. 11), opgraven (art. 29), ontleden (art. 68), een bijzonder crematorium vestigen (art. 53), een bijzondere begraafplaats in gebruik nemen (art. 41), een bewaarplaats in gebruik nemen (art. 64), een verstrooiingsterrein bestemmen (art. 66b), een grafbedekking plaatsen en een grafkelder aanbrengen (Groningen art. 17, 22) mogen alleen met toestemming van de gemeente. Ze zijn specialisaties zonder eigen pagina.
+synoniemen:
+- naam: Verlof
+  context: wet
+- naam: Toestemming
+  context: wet
+grondslag: procesobject
+grondslag_toelichting:
+- 'Ontstaat in de gemeentelijke beslisprocessen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), Opgraven lijk (art. 29) en de vergunningen van art. 53, 64, 66b en 68.'
+ggm:
+  sterkte: geen
+  onderbouwing: 'Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers).'
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+specialisaties:
+- naam: Verlof tot begraving of crematie
+  omschrijving: Schriftelijk verlof van de ambtenaar van de burgerlijke stand, kosteloos (art. 11, 12). Geen eigen pagina.
+- naam: Vergunning tot opgraving
+  omschrijving: Vergunning van de burgemeester, met voorschriften (art. 29). Geen eigen pagina.
+- naam: Verlof tot ontleding
+  omschrijving: Schriftelijk verlof van de burgemeester, binnen drie dagen, kosteloos (art. 68). Geen eigen pagina.
+- naam: Vergunning bijzonder crematorium
+  omschrijving: Vergunning van B&W voor vestigen, uitbreiden of wijzigen (art. 53). Geen eigen pagina.
+- naam: Toestemming ingebruikneming bijzondere begraafplaats
+  omschrijving: Toestemming van B&W (art. 41). Geen eigen pagina.
+- naam: Vergunning bewaarplaats
+  omschrijving: Vergunning van B&W voor een bewaarplaats van asbussen (art. 64). Geen eigen pagina.
+- naam: Vergunning verstrooiingsterrein
+  omschrijving: Vergunning van B&W voor een terrein om permanent as op te verstrooien (art. 66b). Geen eigen pagina.
+- naam: Vergunning grafbedekking
+  omschrijving: Vergunning van het college, aangevraagd door de rechthebbende (Groningen art. 22; VNG-model art. 19). Geen eigen pagina.
+- naam: Vergunning grafkelder
+  omschrijving: Vergunning van het college aan de rechthebbende voor het aanbrengen van een grafkelder (Groningen art. 17; VNG-model art. 16). Geen eigen pagina.
+besluiten:
+- datum: '2026-09-30'
+  besluit: Het gekozen niveau voor de vergunningen en verloven in de lijkbezorging (geen element per soort vergunning of verlof).
+  gevolg: verwerkt
+relaties:
+- soort: specialisatie
+  naar: beschikking
+  naam: is een
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: Awb art. 1:3 lid 2; Wlb art. 29, 53
+- soort: associatie (gericht)
+  naar: grafbedekking
+  naam: betreft (vergunning grafbedekking)
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 22
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    data_object: nee
+    typeregel: 21
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md

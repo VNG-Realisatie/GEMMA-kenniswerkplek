@@ -1,0 +1,252 @@
+begrip: Gemeente
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar; de wet spreekt van 'de gemeente' (Wlb art. 22, 33).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-bw2-rechtspersonen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente zelf.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-bw2-rechtspersonen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-bw2-rechtspersonen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-bw2-rechtspersonen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  hoedanigheid:
+    waarde: ja
+    onderbouwing: De hoedanigheid waarin een afzonderlijke gemeente, als rechtspersoon (BW Boek 2 art. 1), optreedt.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-bw2-rechtspersonen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: Gemeente is de hoedanigheid; de afzonderlijke gemeenten (Amsterdam, Utrecht) zijn de partijen die haar vervullen (besluit redacteur 2026-09-30).
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  voert_gedrag_uit:
+    waarde: ja
+    onderbouwing: Toegewezen aan de functie Lijkbezorging en aan Verzorgen gemeentebegrafenis (kosten en verhaal, art. 22) en Onderhouden graf (Groningen art. 23).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-bw2-rechtspersonen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: Niet van toepassing.
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-bw2-rechtspersonen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+definitie: Hoedanigheid van het openbaar lichaam met rechtspersoonlijkheid dat het lokale bestuur vormt, met een raad, een college en een burgemeester.
+beschrijving:
+- 'Gemeente is de hoedanigheid waarin een afzonderlijke gemeente, zoals Amsterdam of Utrecht, optreedt. Die afzonderlijke gemeenten zijn de actoren: rechtspersonen (BW Boek 2 art. 1) met een raad, een college en een burgemeester (Gemeentewet art. 6). Het GGM en GEMMA kennen daarnaast het bedrijfsobject Gemeente als gedeelte van het grondgebied; dat is een ander begrip.'
+per_onderwerp:
+  lijkbezorging:
+  - De gemeente heeft ten minste één gemeentelijke begraafplaats en is daarvan houder; zij draagt de kosten van de gemeentebegrafenis, verhaalt die, en onderhoudt graven tegen betaling (Wet op de lijkbezorging art. 22, 33, 39 lid 2; Groningen art. 3, 23).
+bronnen:
+- 2024-rijk-gemeentewet-wettekst
+besluiten:
+- datum: '2026-09-30'
+  besluit: 'Rol, geen actor: Gemeente is de hoedanigheid; de afzonderlijke gemeenten zijn de actoren.'
+  gevolg: verwerkt
+grondslag: bron
+gemma:
+  id: id-17a7441705094ba9b385c25497844778
+  sterkte: zwak
+  onderbouwing: 'GEMMA-rol Gemeente is een doelgroep, een groepering van applicatieservices voor de medewerkers van de gemeente. Zelfde naam en type, ander gebruik; nieuw: een definitie van de rol zelf.'
+relaties:
+- soort: toewijzing
+  naar: lijkbezorging
+  naam: voert uit
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 4, 21, 33
+- soort: toewijzing
+  naar: verzorgen-gemeentebegrafenis
+  naam: draagt de kosten van
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 22
+- soort: toewijzing
+  naar: onderhouden-graf
+  naam: voert uit
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 23
+- soort: toegang (houder)
+  naar: begraafplaats
+  naam: heeft
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: Wlb art. 33; Groningen art. 3
+- soort: toegang (houder)
+  naar: graf
+  naam: heeft het uitsluitend recht tot begraven in (algemeen graf)
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 13 lid 1
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    data_object: nee
+    typeregel: 12
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-bw2-rechtspersonen
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: wet
+  gemma:
+    gemma_id: id-17a7441705094ba9b385c25497844778
+    gemma_naam: Gemeente
+    gemma_type: business-role
+    gemma_definitie: Groepering van applicatieservices ten behoeve van de (medewerkers) van de gemeente
+    gemma_map: Business / Bedrijfsrollen
+    gemma_eigenschappen:
+      GEMMA subtype: Doelgroep
+      GEMMA type: Groep
+      Object ID: ff2d196f-11e0-4328-b78a-0714eb1c4e92
+  pad: bedrijfsarchitectuur/rollen/gemeente.md

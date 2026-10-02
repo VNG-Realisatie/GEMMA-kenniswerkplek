@@ -1,0 +1,181 @@
+begrip: Burgerlijk Wetboek Boek 2
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Concreet benoemde wet.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Geeft gemeenten taken of rechten.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+  regeling_als_geheel:
+    waarde: ja
+    onderbouwing: Een concreet benoemde wet als geheel.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: ja
+    onderbouwing: Rijkswet.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  in_werking:
+    waarde: ja
+    onderbouwing: Geldend recht.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: Levert alleen definities (rechtspersoonlijkheid van gemeenten en kerkgenootschappen, art. 2:1, 2:2); geeft de gemeente geen taak die zij in een proces of dienst van dit onderwerp uitvoert.
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder beleidskader in deze wiki.
+    bronnen:
+    - 2026-rijk-bw2-rechtspersonen
+toelichting: 'Geen beleidskader: Boek 2 levert alleen de definities van rechtspersoonlijkheid (art. 2:1, 2:2) en geeft de gemeente geen taak in de lijkbezorging.'
+onderwerpen:
+- lijkbezorging
+besluiten:
+- datum: '2026-10-01'
+  besluit: 'Geen beleidskader: levert alleen definities.'
+  gevolg: afwijzen
+  redenen:
+  - 'is grondslag voor: nee'
+afgeleid:
+  uitkomst:
+    soort: geen_element
+    regel: 22
+    toelichting: Kernrelatie ontbreekt voor Beleidskader
+    archimate_type: driver
+    voorleggen: true
+    redenen:
+    - 'is grondslag voor: nee'
+    data_object: nee
+    typeregel: 16
+  voor_te_leggen:
+  - 'is grondslag voor: nee'
+  bronnen:
+  - 2026-rijk-bw2-rechtspersonen
+  herkomst: wet

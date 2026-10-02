@@ -1,0 +1,259 @@
+begrip: Uitvoeren lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Kern van de wet (art. 1).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Op de gemeentelijke begraafplaats en in een gemeentelijk crematorium voert de gemeente de begraving, bijzetting of crematie uit (Groningen art. 7, 10).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Houder van de begraafplaats of van het crematorium, beheerder (art. 8, 58; Groningen art. 7).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Raadpleegt het verlof, werkt graf, lijk en urn bij (art. 11, 23, 59).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Overlijden en kennisgeving door degene die wil doen begraven (art. 16; Groningen art. 7 lid 2).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Begraven of gecremeerd lijk, bijgezette of verstrooide as (art. 1, 59).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elke uitvaart.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Art. 16 (termijn), 23 (graf), 49 (crematorium), 59 (bestemming as); Groningen art. 7–10 (tijden, stukken).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Levert zelf het eindresultaat; geen deelproces van een groter proces.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki; begraving, crematie, bijzetting en verstrooiing zijn zijn varianten.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk, met de bestemming van de as.
+beschrijving:
+- De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie, ontleding, bijzetting en verstrooiing zijn varianten zonder eigen pagina.
+specialisaties:
+- naam: Begraving
+  omschrijving: Begraven van een lijk op een begraafplaats, in een algemeen of particulier graf (art. 23). Geen eigen pagina.
+- naam: Crematie
+  omschrijving: Cremeren van een lijk in een crematorium (art. 49). Geen eigen pagina.
+- naam: Ontleding
+  omschrijving: Ontleden van een lijk in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68). Geen eigen pagina.
+- naam: Bijzetting
+  omschrijving: Bijzetten van een asbus in een crematorium, graf, urnennis of bewaarplaats (art. 62). Geen eigen pagina.
+- naam: Verstrooiing
+  omschrijving: Verstrooien van as op een daartoe bestemd terrein of in open zee (art. 66a). Geen eigen pagina.
+- naam: Incidentele asverstrooiing
+  omschrijving: Verstrooien van as op een aangewezen plek op of buiten de begraafplaats, met toestemming van het college (Groningen art. 1 m, 21). Geen eigen pagina.
+relaties:
+- soort: toegang (raadplegen)
+  naar: vergunning
+  naam: vereist (verlof tot begraving of crematie)
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 11
+- soort: toegang (bijwerken)
+  naar: lijk
+  naam: bezorgt
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1
+- soort: toegang (bijwerken)
+  naar: graf
+  naam: begraaft in
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 23 lid 2
+- soort: toegang (bijwerken)
+  naar: urn
+  naam: zet bij of verstrooit de as uit
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 59 lid 2
+- soort: toegang (raadplegen)
+  naar: begraafplaats
+  naam: geschiedt op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 23 lid 1
+- soort: toegang (raadplegen)
+  naar: crematorium
+  naam: geschiedt in
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 49
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja, 5/5)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md

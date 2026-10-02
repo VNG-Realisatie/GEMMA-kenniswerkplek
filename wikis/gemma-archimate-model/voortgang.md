@@ -12,13 +12,22 @@ titel: Voortgang
 
 | Onderwerp | Status | Begrippen | Elementen |
 |---|---|---|---|
-| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 0 | 0 |
+| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 139 | 54 |
 | [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
 
 ## Elementen per type en status
 
-Nog geen elementen.
+| Type | kandidaat | review | goedgekeurd | afgewezen |
+|---|---|---|---|---|
+| actor | 0 | 0 | 6 | 0 |
+| bedrijfsfunctie | 0 | 0 | 1 | 0 |
+| bedrijfsobject | 0 | 0 | 17 | 0 |
+| bedrijfsproces | 0 | 0 | 9 | 1 |
+| beleidskader | 0 | 0 | 2 | 0 |
+| dienst | 0 | 0 | 3 | 0 |
+| gebeurtenis | 0 | 0 | 3 | 0 |
+| rol | 0 | 0 | 12 | 0 |
 
 ## GGM-terugmeldingen
 
-[9 terugmeldingen](analyses/ggm-terugmeldingen.md): open 9.
+[11 terugmeldingen](analyses/ggm-terugmeldingen.md): open 11.

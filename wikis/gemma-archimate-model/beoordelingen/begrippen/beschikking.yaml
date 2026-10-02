@@ -1,0 +1,257 @@
+begrip: Beschikking
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Kernbegrip van de Awb (art. 1:3 lid 2).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Gemeentelijke bestuursorganen nemen beschikkingen.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elke beschikking apart.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Aangevraagd, genomen, bekendgemaakt, in bezwaar, ingetrokken (Awb).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: Vastgelegd in Treffen maatregel bij besmet lijk en Vervallen verklaren grafrecht (Wlb art. 22a, 28 lid 4).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Specialisatie van Besluit met eigen regels (bezwaar en beroep, aanvraag); eigen GEMMA-element.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: Besluit van een bestuursorgaan in een concreet geval, zoals het verlenen van een vergunning.
+beschrijving:
+- 'Een beschikking is een besluit dat niet van algemene strekking is, met inbegrip van de afwijzing van een aanvraag daarvan (Awb art. 1:3 lid 2). Een toestemming voor een handeling is een vergunning. Het element is generiek en domeinoverstijgend: het hoort niet bij één beleidsdomein (besluit redacteur 2026-09-30).'
+per_onderwerp:
+  lijkbezorging:
+  - Burgemeester, college en gemeenteraad nemen een reeks beschikkingen die elk een eigen wetsartikel hebben, maar geen eigen gegevens of levenscyclus. Ze zijn specialisaties zonder eigen pagina; de toestemmingen voor een handeling vallen onder Vergunning.
+grondslag: ggm-entiteit
+ggm:
+  guid: EAID_71D7E96D_641A_4b6a_A325_DED07C3B5836
+  sterkte: sterk
+  onderbouwing: Zelfde bestuursrechtelijke begrip; de GGM-definitie omvat ook de civielrechtelijke beschikking. Geen van de twee GUID's is primair; de GUID van Generiek Jeugd en Wmo blijft de koppeling (besluit redacteur 2026-09-30). Terugmeldingen 5 en 8.
+  duplicaten:
+  - guid: EAID_16ABCFF8_4817_6A73_59BA_281C3303F8D2
+    toelichting: Beschikking in Diensten ('een voor beroep vatbaar overheidsbesluit'); terugmelding 5.
+gemma:
+  id: id-3d9b45d27b6840b39b99e8ede85db6f4
+  sterkte: sterk
+  onderbouwing: 'Gekoppeld aan dezelfde GGM-entiteit. Nieuw: een herkenbare definitie volgens de Awb.'
+specialisaties:
+- naam: Vergunning
+  omschrijving: Beschikking die toestemming geeft voor een handeling.
+  element: vergunning
+- naam: Aanwijzing van grond voor bijzondere begraafplaats
+  omschrijving: Door de gemeenteraad (art. 40 lid 1). Geen eigen pagina.
+- naam: Sluiting van een begraafplaats
+  omschrijving: Besluit van B&W tot sluiting of geslotenverklaring (art. 43, 44). Geen eigen pagina.
+- naam: Andere termijn
+  omschrijving: Door de burgemeester gestelde afwijkende termijn voor begraving of crematie (art. 17); gangbaar vervroegen of uitstellen van de uitvaart (Ondernemersplein). Geen eigen pagina.
+- naam: Verklaring van verwaarlozing
+  omschrijving: Schriftelijke verklaring van de houder dat het onderhoud van een particulier graf kennelijk verwaarloosd is (art. 28 lid 4). Geen eigen pagina.
+- naam: Maatregel bij besmet lijk
+  omschrijving: Maatregel van de burgemeester na advies van de GGD (art. 22a). Geen eigen pagina.
+besluiten:
+- datum: '2026-09-30'
+  besluit: Generiek en domeinoverstijgend; de GUID van Generiek Jeugd en Wmo blijft de koppeling zolang het GGM geen domeinoverstijgende entiteit kent.
+  gevolg: verwerkt
+relaties:
+- soort: specialisatie
+  naar: besluit
+  naam: is een
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 1:3 lid 2
+onderwerpen:
+- lijkbezorging
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    data_object: nee
+    typeregel: 21
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  ggm:
+    ggm_entiteit: Beschikking
+    ggm_guid: EAID_71D7E96D_641A_4b6a_A325_DED07C3B5836
+    ggm_uml_type: Class
+    ggm_beleidsdomein: Generiek Jeugd en Wmo
+    ggm_taakveld: 6 Sociaal Domein
+    ggm_diagram:
+    - 'Sociaal Domein Beschikking en Voorziening: Domain Objects'
+    - Beperkingen
+    - AanvraagOfMelding
+    ggm_diagram_ids:
+    - EAID_5AE29494_3572_4924_B2B8_3206E55D71BB
+    - EAID_9B278A50_862A_4085_B362_C41392101916
+    - EAID_5F3782EB_C416_461c_A9FA_40991A7F0165
+    ggm_definitie: 'In het bestuursrecht: Een beslissing van een overheidsorgaan in een concreet geval, bijvoorbeeld het verlenen van een bouwvergunning. In het civiele recht: een rechterlijke uitspraak in een procedure die begint met een verzoekschrift.'
+  ggm_duplicaten:
+  - entiteit: Beschikking
+    guid: EAID_16ABCFF8_4817_6A73_59BA_281C3303F8D2
+    beleidsdomein: Diensten
+    taakveld: Inkomen
+  gemma:
+    gemma_id: id-3d9b45d27b6840b39b99e8ede85db6f4
+    gemma_naam: Beschikking
+    gemma_type: business-object
+    gemma_definitie: 'In het bestuursrecht: Een beslissing van een overheidsorgaan in een concreet geval, bijvoorbeeld het verlenen van een bouwvergunning. In het civiele recht: een rechterlijke uitspraak in een procedure die begint met een verzoekschrift.'
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-c481e8b8-f7d7-4979-b767-ebf2a9b04712
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{71D7E96D-641A-4b6a-A325-DED07C3B5836}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: c481e8b8-f7d7-4979-b767-ebf2a9b04712
+  pad: bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md
