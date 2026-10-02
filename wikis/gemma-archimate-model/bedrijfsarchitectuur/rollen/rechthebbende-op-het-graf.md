@@ -47,9 +47,9 @@ Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, a
 
 ### Homoniemen
 
-| Begrip | Betekenis | Waar | Naamkeuze |
-|---|---|---|---|
-| Rechthebbende | Iemand die rechten heeft op een goed | GGM-entiteit Rechthebbende (EAID_9AE5BCE3_AD6D_4241_9651_823400E3745F), beleidsdomein Archief | Deze pagina heet Rechthebbende op het graf; het GGM-begrip krijgt hier geen pagina. |
+| Begrip | Betekenis | Naamkeuze |
+|---|---|---|
+| Rechthebbende (GGM-entiteit Rechthebbende (EAID_9AE5BCE3_AD6D_4241_9651_823400E3745F), beleidsdomein Archief) | Iemand die rechten heeft op een goed | Deze pagina heet Rechthebbende op het graf; het GGM-begrip krijgt hier geen pagina. |
 
 ## Plaats in het model
 

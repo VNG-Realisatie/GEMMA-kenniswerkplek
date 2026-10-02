@@ -220,8 +220,8 @@ def element_pagina(w: Wiki, bid: str) -> str:
         per_onderwerp += _sub(f"[{onaam}]({w.rel(van, f'{w.onderwerp_dir}/{oid}.md')})", w.alineas(van, alineas), 4)
     synoniemen = _tabel(["Synoniem", "Context"], [[s["naam"], s["context"]] for s in d.get("synoniemen", [])]) \
         if d.get("synoniemen") else []
-    homoniemen = _tabel(["Begrip", "Betekenis", "Waar", "Naamkeuze"], [
-        [w.link(van, h["element"], h["begrip"]) if h.get("element") else h["begrip"], h["betekenis"], h["waar"],
+    homoniemen = _tabel(["Begrip", "Betekenis", "Naamkeuze"], [
+        [f"{w.link(van, h['element'], h['begrip']) if h.get('element') else h['begrip']} ({h['waar']})", h["betekenis"],
          h["naamkeuze"]] for h in d.get("homoniemen", [])]) if d.get("homoniemen") else []
     r += _groep("Betekenis", [
         _sub("Definitie", definitie), _sub("Beschrijving", w.alineas(van, d.get("beschrijving"))),
@@ -281,8 +281,8 @@ def element_pagina(w: Wiki, bid: str) -> str:
         else:
             ggm_regels = [f"Geen GGM-entiteit. {w.tekst(van, g['onderbouwing'])}", ""]
         if a.get("ggm_duplicaten"):
-            ggm_regels += ["Duplicaten in het GGM:", "", *_tabel(["Entiteit", "Beleidsdomein", "GUID", "Toelichting"], [
-                [x.get("entiteit"), x.get("beleidsdomein"), x["guid"],
+            ggm_regels += ["Duplicaten in het GGM:", "", *_tabel(["Entiteit", "Toelichting"], [
+                [f"{x.get('entiteit')} ({x.get('beleidsdomein')})",
                  next((y["toelichting"] for y in g.get("duplicaten", []) if y["guid"] == x["guid"]), "")]
                 for x in a["ggm_duplicaten"]])]
     meldingen = [m for m in w.terugmeldingen if m.get("element") == bid]

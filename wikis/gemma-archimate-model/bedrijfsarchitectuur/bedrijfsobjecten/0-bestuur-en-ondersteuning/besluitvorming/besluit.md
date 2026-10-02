@@ -119,9 +119,9 @@ Match **sterk** met GGM-entiteit *Besluit* (beleidsdomein RGBZPlus, taakveld 99 
 
 Duplicaten in het GGM:
 
-| Entiteit | Beleidsdomein | GUID | Toelichting |
-|---|---|---|---|
-| Besluit | Diensten | EAID_0CA08ED2_6990_8292_BBC7_281C33037374 | Besluit in Diensten (Inkomen), zelfde definitie; terugmelding 7. |
+| Entiteit | Toelichting |
+|---|---|
+| Besluit (Diensten) | Besluit in Diensten (Inkomen), zelfde definitie; terugmelding 7. |
 
 GGM-terugmeldingen:
 

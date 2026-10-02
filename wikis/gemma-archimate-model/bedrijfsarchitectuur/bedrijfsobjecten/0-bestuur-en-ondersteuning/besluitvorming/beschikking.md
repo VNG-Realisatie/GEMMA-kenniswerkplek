@@ -130,9 +130,9 @@ Match **sterk** met GGM-entiteit *Beschikking* (beleidsdomein Generiek Jeugd en 
 
 Duplicaten in het GGM:
 
-| Entiteit | Beleidsdomein | GUID | Toelichting |
-|---|---|---|---|
-| Beschikking | Diensten | EAID_16ABCFF8_4817_6A73_59BA_281C3303F8D2 | Beschikking in Diensten ('een voor beroep vatbaar overheidsbesluit'); terugmelding 5. |
+| Entiteit | Toelichting |
+|---|---|
+| Beschikking (Diensten) | Beschikking in Diensten ('een voor beroep vatbaar overheidsbesluit'); terugmelding 5. |
 
 GGM-terugmeldingen:
 

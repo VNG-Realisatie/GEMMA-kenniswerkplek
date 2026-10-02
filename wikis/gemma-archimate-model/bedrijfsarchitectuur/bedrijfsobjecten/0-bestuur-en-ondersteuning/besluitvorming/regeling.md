@@ -60,9 +60,9 @@ Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschr
 
 ### Homoniemen
 
-| Begrip | Betekenis | Waar | Naamkeuze |
-|---|---|---|---|
-| Regeling | Afspraak of regeling met een cliënt (terugbetaling, voorziening) | GGM-entiteiten Regeling in Terug- en invordering, Diensten en Model Inkomen | Deze pagina heet Regeling: de soort wet of verordening; het GGM-begrip krijgt hier geen pagina. |
+| Begrip | Betekenis | Naamkeuze |
+|---|---|---|
+| Regeling (GGM-entiteiten Regeling in Terug- en invordering, Diensten en Model Inkomen) | Afspraak of regeling met een cliënt (terugbetaling, voorziening) | Deze pagina heet Regeling: de soort wet of verordening; het GGM-begrip krijgt hier geen pagina. |
 
 ## Plaats in het model
 
