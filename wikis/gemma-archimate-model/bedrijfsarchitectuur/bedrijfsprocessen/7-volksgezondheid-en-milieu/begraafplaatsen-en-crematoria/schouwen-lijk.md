@@ -26,103 +26,78 @@ bronnen:
 
 **Status: goedgekeurd** door de redacteur.
 
-## Definitie
+## Betekenis
+
+### Definitie
 
 Onderzoek van een lijk door een arts na het overlijden, om vast te stellen of de dood een natuurlijke oorzaak heeft.
 
-## Beschrijving
+### Beschrijving
 
 Elk lijk wordt zo spoedig mogelijk geschouwd, door de behandelend arts of door een gemeentelijke lijkschouwer (art. 3). Is de dood natuurlijk, dan volgt een verklaring van overlijden (art. 7); anders waarschuwt de lijkschouwer de officier van justitie en de ambtenaar van de burgerlijke stand (art. 10). Bij een minderjarige kan een nader onderzoek naar de doodsoorzaak volgen (art. 10a). De schouwing door de behandelend arts valt buiten het gemeentelijk perspectief.
 
-## Synoniemen
+### Synoniemen
 
 | Synoniem | Context |
 |---|---|
 | Lijkschouwing | wet |
 
-## Kenmerken
+## Plaats in het model
 
-Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja, 5/5).
+### Typering
 
-| Kenmerk | Waarde | Onderbouwing | Bron |
+Bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja, 5/5).
+
+### Kenmerken
+
+Alleen de kenmerken met ja; de overige 33 zijn nee.
+
+| Kenmerk | Onderbouwing |
+|---|---|
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wettelijke taak; lijkschouwing is gangbaar. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeentelijke lijkschouwer schouwt namens de gemeente (art. 4). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **per keer doorlopen**: Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? | Ja, wordt per geval van begin tot eind doorlopen. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, gemeentelijke lijkschouwer (art. 3). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, raadpleegt het lijk en legt de verklaring van overlijden vast (art. 3, 7). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, het overlijden (art. 3: zo spoedig mogelijk na het overlijden). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, verklaring van overlijden, of een verslag aan de officier van justitie (art. 7, 10). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk overlijden waarbij de lijkschouwer schouwt. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 3–10a: wie schouwt, wanneer, en wat bij een niet-natuurlijke dood. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+
+### Specialisaties
+
+- **Nader onderzoek**: Onderzoek naar de doodsoorzaak van een minderjarige, geleid door de gemeentelijke lijkschouwer (art. 10a). Geen eigen pagina.
+
+### Relaties
+
+#### Uitgaand
+
+| Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Wettelijke taak; lijkschouwing is gangbaar. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gemeentelijk | ja | De gemeentelijke lijkschouwer schouwt namens de gemeente (art. 4). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| buiten dit model | nee | Geen doel, waarde, principe, losse norm, vermogen of thema. |  |
-| slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| betekenis in onderwerp | ja | Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gedrag | ja | Iets wat gedaan wordt. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| handelende partij | nee | Niet van toepassing: het begrip is gedrag. |  |
-| hoedanigheid | nee | Niet van toepassing: het begrip is gedrag. |  |
-| samenwerkingsverband | nee | Niet van toepassing: het begrip is gedrag. |  |
-| toegangspunt | nee | Niet van toepassing: het begrip is gedrag. |  |
-| plaats | nee | Niet van toepassing: het begrip is gedrag. |  |
-| aanbod als geheel | nee | Niet van toepassing: het begrip is gedrag. |  |
-| regeling als geheel | nee | Niet van toepassing: het begrip is gedrag. |  |
-| los van verantwoordelijkheid | nee | Niet van toepassing: geen partij. |  |
-| eigen rechtspersoon | nee | Niet van toepassing: geen partij. |  |
-| vervult een rol | nee | Niet van toepassing: geen partij. |  |
-| voert gedrag uit | nee | Niet van toepassing: geen partij. |  |
-| ontsluit een dienst | nee | Niet van toepassing: geen partij. |  |
-| per keer doorlopen | ja | Wordt per geval van begin tot eind doorlopen. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gegroepeerd gedrag | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| toestandsverandering | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| aangeboden gedrag | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| gezamenlijk gedrag | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| toegewezen partij | ja | Gemeentelijke lijkschouwer (art. 3). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gebruikt objecten | ja | Raadpleegt het lijk en legt de verklaring van overlijden vast (art. 3, 7). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| aanleiding | ja | Het overlijden (art. 3: zo spoedig mogelijk na het overlijden). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| benoembaar resultaat | ja | Verklaring van overlijden, of een verslag aan de officier van justitie (art. 7, 10). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| komt herhaald voor | ja | Bij elk overlijden waarbij de lijkschouwer schouwt. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| eigen normering | ja | Art. 3–10a: wie schouwt, wanneer, en wat bij een niet-natuurlijke dood. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| stabiel over tijd | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| afnemer | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| gerealiseerd door | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| leidt tot gedrag | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| bijdrage aan groter proces | nee | Levert zelf het eindresultaat; geen deelproces van een groter proces. |  |
-| onderscheidbare exemplaren | nee | Wordt niet als ding behandeld. |  |
-| levenscyclus | nee | Wordt niet als ding behandeld. |  |
-| wordt bewerkt | nee | Wordt niet als ding behandeld. |  |
-| afspraak | nee | Geen overeenkomst tussen partijen. |  |
-| waarneembare vorm | nee | Geen document, formulier, register of bericht van een ander begrip. |  |
-| omvat diensten en afspraken | nee | Geen gebundeld aanbod. |  |
-| geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur. |  |
-| landelijk | nee | Niet van toepassing: geen regeling als geheel. |  |
-| in werking | nee | Niet van toepassing: geen regeling als geheel. |  |
-| is grondslag voor | nee | Niet van toepassing: geen regeling als geheel. |  |
-| zelfstandige specialisatie | ja | Geen breder proces in deze wiki. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| Schouwen lijk | schouwt *toegang (raadplegen)* | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
+| Schouwen lijk | geeft af *toegang (registreren)* | [Verklaring van overlijden](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verklaring-van-overlijden.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 7 lid 1) |
 
-## GEMMA
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Gemeentelijke lijkschouwer](../../../rollen/gemeentelijke-lijkschouwer.md) | verricht *toewijzing* | Schouwen lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
+| [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | bedient *bediening* | Schouwen lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1–33) |
+| [Overlijden](../../../gebeurtenissen/overlijden.md) | leidt tot *triggering* | Schouwen lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
+| [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Schouwen lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 4, 7) |
+
+## Herkomst
+
+### Bronnen
+
+| Korte titel | Bron |
+|---|---|
+| [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+
+### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-## Grondslag
-
-**Bronnen.**
-
-## Specialisaties
-
-| Specialisatie | Omschrijving | GGM-guid | GGM-attribuut |
-|---|---|---|---|
-| Nader onderzoek | Onderzoek naar de doodsoorzaak van een minderjarige, geleid door de gemeentelijke lijkschouwer (art. 10a). Geen eigen pagina. |  |  |
-
-## Relaties
-
-| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
-|---|---|---|---|---|---|---|
-| toegang (raadplegen) | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | schouwt |  | bron |  | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
-| toegang (registreren) | [Verklaring van overlijden](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verklaring-van-overlijden.md) | geeft af |  | bron |  | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 7 lid 1) |
-
-## Inkomende relaties
-
-| Van | Relatie | Naam | Bron |
-|---|---|---|---|
-| [Gemeentelijke lijkschouwer](../../../rollen/gemeentelijke-lijkschouwer.md) | toewijzing | verricht | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
-| [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | bediening | bedient | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1–33) |
-| [Overlijden](../../../gebeurtenissen/overlijden.md) | triggering | leidt tot | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
-| [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | associatie (gericht) | is grondslag voor | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 4, 7) |
-
-## Bronnen
-
-- [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)

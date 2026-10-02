@@ -26,98 +26,72 @@ bronnen:
 
 **Status: goedgekeurd** door de redacteur.
 
-## Definitie
+## Betekenis
+
+### Definitie
 
 Toestemming van de gemeente om een overledene eerder dan 36 uur of later dan zes werkdagen na het overlijden te begraven of te cremeren.
 
-## Beschrijving
+### Beschrijving
 
 Begraven of cremeren mag niet eerder dan 36 uur en uiterlijk op de zesde werkdag na het overlijden (art. 16). Na een arts te hebben gehoord kan de burgemeester een andere termijn stellen; eerder dan 36 uur alleen in overeenstemming met de officier van justitie (art. 17). De uitvaartondernemer vraagt de vergunning namens de nabestaanden aan bij de gemeente waar de persoon is overleden, bijvoorbeeld om religieuze redenen of omdat familie uit het buitenland moet komen (Ondernemersplein).
 
-## Synoniemen
+### Synoniemen
 
 | Synoniem | Context |
 |---|---|
 | Andere termijn | wet |
 
-## Kenmerken
+## Plaats in het model
 
-Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
+### Typering
 
-| Kenmerk | Waarde | Onderbouwing | Bron |
+Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
+
+### Kenmerken
+
+Alleen de kenmerken met ja; de overige 36 zijn nee.
+
+| Kenmerk | Onderbouwing |
+|---|---|
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar (RVO: 'uitvaart vervroegen', 'uitvaart uitstellen'). [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester stelt een andere termijn (art. 17). [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat de gemeente aanbiedt. [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, prestatie die de gemeente aanbiedt: toestemming om eerder of later te begraven of cremeren (RVO). [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een vergunning voor een andere termijn (art. 17; RVO). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+| **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, nabestaande, via de uitvaartondernemer (RVO). [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, de functie Lijkbezorging: de burgemeester stelt de andere termijn als beschikking (besluit redacteur 2026-10-01). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere dienst in deze wiki. [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+
+### Relaties
+
+#### Uitgaand
+
+| Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar (RVO: 'uitvaart vervroegen', 'uitvaart uitstellen'). | [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gemeentelijk | ja | De burgemeester stelt een andere termijn (art. 17). | [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| buiten dit model | nee | Geen doel, waarde, principe, losse norm, vermogen of thema. |  |
-| slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| betekenis in onderwerp | ja | Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. | [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gedrag | ja | Iets wat de gemeente aanbiedt. | [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| handelende partij | nee | Niet van toepassing: het begrip is gedrag. |  |
-| hoedanigheid | nee | Niet van toepassing: het begrip is gedrag. |  |
-| samenwerkingsverband | nee | Niet van toepassing: het begrip is gedrag. |  |
-| toegangspunt | nee | Niet van toepassing: het begrip is gedrag. |  |
-| plaats | nee | Niet van toepassing: het begrip is gedrag. |  |
-| aanbod als geheel | nee | Niet van toepassing: het begrip is gedrag. |  |
-| regeling als geheel | nee | Niet van toepassing: het begrip is gedrag. |  |
-| los van verantwoordelijkheid | nee | Niet van toepassing: geen partij. |  |
-| eigen rechtspersoon | nee | Niet van toepassing: geen partij. |  |
-| vervult een rol | nee | Niet van toepassing: geen partij. |  |
-| voert gedrag uit | nee | Niet van toepassing: geen partij. |  |
-| ontsluit een dienst | nee | Niet van toepassing: geen partij. |  |
-| per keer doorlopen | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| gegroepeerd gedrag | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| toestandsverandering | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| aangeboden gedrag | ja | Prestatie die de gemeente aanbiedt: toestemming om eerder of later te begraven of cremeren (RVO). | [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
-| gezamenlijk gedrag | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| toegewezen partij | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| gebruikt objecten | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| aanleiding | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| benoembaar resultaat | ja | Een vergunning voor een andere termijn (art. 17; RVO). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
-| komt herhaald voor | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| eigen normering | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| stabiel over tijd | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| afnemer | ja | Nabestaande, via de uitvaartondernemer (RVO). | [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
-| gerealiseerd door | ja | De functie Lijkbezorging: de burgemeester stelt de andere termijn als beschikking (besluit redacteur 2026-10-01). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| leidt tot gedrag | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| bijdrage aan groter proces | nee | Niet bij dit gedrag aanwijsbaar. |  |
-| onderscheidbare exemplaren | nee | Wordt niet als ding behandeld. |  |
-| levenscyclus | nee | Wordt niet als ding behandeld. |  |
-| wordt bewerkt | nee | Wordt niet als ding behandeld. |  |
-| afspraak | nee | Geen overeenkomst tussen partijen. |  |
-| waarneembare vorm | nee | Geen document, formulier, register of bericht van een ander begrip. |  |
-| omvat diensten en afspraken | nee | Geen gebundeld aanbod. |  |
-| geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur. |  |
-| landelijk | nee | Niet van toepassing: geen regeling als geheel. |  |
-| in werking | nee | Niet van toepassing: geen regeling als geheel. |  |
-| is grondslag voor | nee | Niet van toepassing: geen regeling als geheel. |  |
-| zelfstandige specialisatie | ja | Geen bredere dienst in deze wiki. | [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+| Uitvaart vervroegen of uitstellen | bedient *bediening* | [Degene die in de lijkbezorging voorziet](../../../rollen/degene-die-in-de-lijkbezorging-voorziet.md) | [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (§ Uitvaart vervroegen, § Uitvaart uitstellen) |
 
-## GEMMA
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | realiseert *realisatie* | Uitvaart vervroegen of uitstellen | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17) |
+
+## Herkomst
+
+### Bronnen
+
+| Korte titel | Bron |
+|---|---|
+| [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
+| [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+
+### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 
-## Grondslag
-
-**Bronnen.**
-
-## Relaties
-
-| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
-|---|---|---|---|---|---|---|
-| bediening | [Degene die in de lijkbezorging voorziet](../../../rollen/degene-die-in-de-lijkbezorging-voorziet.md) | bedient |  | bron |  | [2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (§ Uitvaart vervroegen, § Uitvaart uitstellen) |
-
-## Inkomende relaties
-
-| Van | Relatie | Naam | Bron |
-|---|---|---|---|
-| [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | realisatie | realiseert | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17) |
-
-## Besluiten redacteur
+### Besluiten redacteur
 
 - 2026-10-01: Dienst, gerealiseerd door de functie Lijkbezorging; geen eigen proces voor het stellen van een andere termijn.
-
-## Bronnen
-
-- [Aangifte en akte van overlijden (Ondernemersplein)](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md)
-- [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)

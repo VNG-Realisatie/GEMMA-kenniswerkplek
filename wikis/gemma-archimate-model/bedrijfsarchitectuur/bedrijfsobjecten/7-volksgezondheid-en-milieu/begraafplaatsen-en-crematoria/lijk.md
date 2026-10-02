@@ -24,91 +24,63 @@ bronnen:
 
 **Status: goedgekeurd** door de redacteur.
 
-## Definitie
+## Betekenis
+
+### Definitie
 
 Het lichaam van een overledene of doodgeborene.
 
-## Beschrijving
+### Beschrijving
 
 Het lijk wordt geschouwd, begraven, gecremeerd of ontleed, en soms opgegraven (art. 1, 3, 29). Bij een begraving of crematie stelt de houder de identiteit vast aan de hand van het nummer op kist en document (art. 8). Een doodgeborene (na ten minste 24 weken zwangerschap) valt ook onder het begrip lijk; dat is een indeling, geen eigen element (art. 2 lid 1 b).
 
-## Kenmerken
+## Plaats in het model
 
-Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+### Typering
 
-| Kenmerk | Waarde | Onderbouwing | Bron |
+Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+
+### Kenmerken
+
+Alleen de kenmerken met ja; de overige 38 zijn nee.
+
+| Kenmerk | Onderbouwing |
+|---|---|
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wettelijk begrip (art. 2). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente schouwt, begraaft, cremeert en graaft op (art. 3, 8, 21, 29). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elk lijk apart, met een nummer op kist en document (art. 8). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, geschouwd, begraven of gecremeerd, eventueel opgegraven (art. 3, 23, 29). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, de houder stelt de identiteit vast en houdt het register van begraven lijken bij; processen schouwen, bezorgen en graven het op (art. 8, 27, 29). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki; doodgeborene is een indeling. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+
+### Relaties
+
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Wettelijk begrip (art. 2). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gemeentelijk | ja | De gemeente schouwt, begraaft, cremeert en graaft op (art. 3, 8, 21, 29). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| buiten dit model | nee | Geen doel, waarde, principe, losse norm, vermogen of thema. |  |
-| slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| betekenis in onderwerp | ja | Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gedrag | nee | Niet van toepassing: het begrip is een ding. |  |
-| handelende partij | nee | Niet van toepassing: het begrip is een ding. |  |
-| hoedanigheid | nee | Niet van toepassing: het begrip is een ding. |  |
-| samenwerkingsverband | nee | Niet van toepassing: het begrip is een ding. |  |
-| toegangspunt | nee | Niet van toepassing: het begrip is een ding. |  |
-| plaats | nee | Niet van toepassing: het begrip is een ding. |  |
-| aanbod als geheel | nee | Niet van toepassing: het begrip is een ding. |  |
-| regeling als geheel | nee | Niet van toepassing: het begrip is een ding. |  |
-| los van verantwoordelijkheid | nee | Niet van toepassing: geen partij. |  |
-| eigen rechtspersoon | nee | Niet van toepassing: geen partij. |  |
-| vervult een rol | nee | Niet van toepassing: geen partij. |  |
-| voert gedrag uit | nee | Niet van toepassing: geen partij. |  |
-| ontsluit een dienst | nee | Niet van toepassing: geen partij. |  |
-| per keer doorlopen | nee | Niet van toepassing: geen gedrag. |  |
-| gegroepeerd gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| toestandsverandering | nee | Niet van toepassing: geen gedrag. |  |
-| aangeboden gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| gezamenlijk gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| toegewezen partij | nee | Niet van toepassing: geen gedrag. |  |
-| gebruikt objecten | nee | Niet van toepassing: geen gedrag. |  |
-| aanleiding | nee | Niet van toepassing: geen gedrag. |  |
-| benoembaar resultaat | nee | Niet van toepassing: geen gedrag. |  |
-| komt herhaald voor | nee | Niet van toepassing: geen gedrag. |  |
-| eigen normering | nee | Niet van toepassing: geen gedrag. |  |
-| stabiel over tijd | nee | Niet van toepassing: geen gedrag. |  |
-| afnemer | nee | Niet van toepassing: geen gedrag. |  |
-| gerealiseerd door | nee | Niet van toepassing: geen gedrag. |  |
-| leidt tot gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| bijdrage aan groter proces | nee | Niet van toepassing: geen gedrag. |  |
-| onderscheidbare exemplaren | ja | Elk lijk apart, met een nummer op kist en document (art. 8). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| levenscyclus | ja | Geschouwd, begraven of gecremeerd, eventueel opgegraven (art. 3, 23, 29). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| wordt bewerkt | ja | De houder stelt de identiteit vast en houdt het register van begraven lijken bij; processen schouwen, bezorgen en graven het op (art. 8, 27, 29). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| afspraak | nee | Geen overeenkomst tussen partijen. |  |
-| waarneembare vorm | nee | Geen document, formulier, register of bericht van een ander begrip. |  |
-| omvat diensten en afspraken | nee | Geen gebundeld aanbod. |  |
-| geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur. |  |
-| landelijk | nee | Niet van toepassing: geen regeling als geheel. |  |
-| in werking | nee | Niet van toepassing: geen regeling als geheel. |  |
-| is grondslag voor | nee | Niet van toepassing: geen regeling als geheel. |  |
-| zelfstandige specialisatie | ja | Geen breder begrip in deze wiki; doodgeborene is een indeling. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| [Besmet lijk gemeld](../../../gebeurtenissen/besmet-lijk-gemeld.md) | betreft *associatie (gericht)* | Lijk | [Wet publieke gezondheid](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-publieke-gezondheid-wettekst.md) (art. 21 lid 2) |
+| [Gemeentebegrafenis](gemeentebegrafenis.md) | betreft *associatie (gericht)* | Lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
+| [Opgraven lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | graaft op *toegang (bijwerken)* | Lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
+| [Schouwen lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md) | schouwt *toegang (raadplegen)* | Lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
+| [Treffen maatregel bij besmet lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md) | betreft *toegang (raadplegen)* | Lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22a) |
+| [Uitvoeren lijkbezorging](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | bezorgt *toegang (bijwerken)* | Lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1) |
+| [Verzorgen gemeentebegrafenis](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | betreft *toegang (raadplegen)* | Lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
 
-## GGM
+## Herkomst
+
+### Bronnen
+
+| Korte titel | Bron |
+|---|---|
+| [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+
+### Afstemming met GGM
 
 Geen GGM-entiteit. Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers).
 
-## GEMMA
+### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-## Grondslag
-
-**Bronnen.**
-
-## Inkomende relaties
-
-| Van | Relatie | Naam | Bron |
-|---|---|---|---|
-| [Besmet lijk gemeld](../../../gebeurtenissen/besmet-lijk-gemeld.md) | associatie (gericht) | betreft | [2026-rijk-wet-publieke-gezondheid-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-publieke-gezondheid-wettekst.md) (art. 21 lid 2) |
-| [Gemeentebegrafenis](gemeentebegrafenis.md) | associatie (gericht) | betreft | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
-| [Opgraven lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | toegang (bijwerken) | graaft op | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
-| [Schouwen lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md) | toegang (raadplegen) | schouwt | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
-| [Treffen maatregel bij besmet lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md) | toegang (raadplegen) | betreft | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22a) |
-| [Uitvoeren lijkbezorging](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | toegang (bijwerken) | bezorgt | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1) |
-| [Verzorgen gemeentebegrafenis](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | toegang (raadplegen) | betreft | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
-
-## Bronnen
-
-- [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)

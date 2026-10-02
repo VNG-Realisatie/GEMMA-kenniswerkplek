@@ -25,89 +25,61 @@ bronnen:
 
 **Status: goedgekeurd** door de redacteur.
 
-## Definitie
+## Betekenis
+
+### Definitie
 
 Onderneming die in opdracht van nabestaanden de uitvaart verzorgt.
 
-## Beschrijving
+### Beschrijving
 
 De uitvaartondernemer doet voor de nabestaanden aangifte van overlijden bij de gemeente waar de persoon is overleden, en krijgt van de gemeente de akte van overlijden en het verlof tot begraven of cremeren; voor het vervroegen of uitstellen van de uitvaart vraagt hij een vergunning aan (Ondernemersplein). De beheerder bepaalt tijd en plaats van een begraving in overleg met de uitvaartondernemer; personeel van uitvaartondernemingen volgt op de begraafplaats de aanwijzingen van de beheerder (Groningen art. 5, 7; VNG-model art. 4).
 
-## Synoniemen
+### Synoniemen
 
 | Synoniem | Context |
 |---|---|
 | Uitvaartonderneming | beleid |
 
-## Kenmerken
+## Plaats in het model
 
-Uitkomst van de beslistabel: Handelende partij (kern ja).
+### Typering
 
-| Kenmerk | Waarde | Onderbouwing | Bron |
+Actor. Uitkomst van de beslistabel: Handelende partij (kern ja).
+
+### Kenmerken
+
+Alleen de kenmerken met ja; de overige 38 zijn nee.
+
+| Kenmerk | Onderbouwing |
+|---|---|
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar beroep; de RVO-pagina richt zich tot de uitvaartondernemer. [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, structurele relatie: doet namens nabestaanden aangifte en vraagt verlof en vergunningen aan bij de gemeente, en bepaalt met de beheerder tijd en plaats van de begraving (RVO; Groningen art. 7). [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
+| **handelende partij**: Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren? | Ja, onderneming die de uitvaart verzorgt. [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+| **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, bestaat los van de afzonderlijke uitvaart; handelt voor steeds andere nabestaanden. [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, vervult de rol Degene die in de lijkbezorging voorziet, namens de nabestaanden: vraagt het verlof tot begraven of cremeren en de vergunning voor een andere termijn aan (RVO). [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki. [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+
+### Relaties
+
+#### Uitgaand
+
+| Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| herkenbaar | ja | Gangbaar beroep; de RVO-pagina richt zich tot de uitvaartondernemer. | [2026-rvo-aangifte-en-akte-van-overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
-| gemeentelijk | ja | Structurele relatie: doet namens nabestaanden aangifte en vraagt verlof en vergunningen aan bij de gemeente, en bepaalt met de beheerder tijd en plaats van de begraving (RVO; Groningen art. 7). | [2026-rvo-aangifte-en-akte-van-overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
-| buiten dit model | nee | Geen doel, waarde, principe, losse norm, vermogen of thema. |  |
-| slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rvo-aangifte-en-akte-van-overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
-| betekenis in onderwerp | ja | Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. | [2026-rvo-aangifte-en-akte-van-overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
-| gedrag | nee | Niet van toepassing: het begrip is een partij of verantwoordelijkheid. |  |
-| handelende partij | ja | Onderneming die de uitvaart verzorgt. | [2026-rvo-aangifte-en-akte-van-overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
-| hoedanigheid | nee | Niet van toepassing: het begrip is een partij of verantwoordelijkheid. |  |
-| samenwerkingsverband | nee | Niet van toepassing: het begrip is een partij of verantwoordelijkheid. |  |
-| toegangspunt | nee | Niet van toepassing: het begrip is een partij of verantwoordelijkheid. |  |
-| plaats | nee | Niet van toepassing: het begrip is een partij of verantwoordelijkheid. |  |
-| aanbod als geheel | nee | Niet van toepassing: het begrip is een partij of verantwoordelijkheid. |  |
-| regeling als geheel | nee | Niet van toepassing: het begrip is een partij of verantwoordelijkheid. |  |
-| los van verantwoordelijkheid | ja | Bestaat los van de afzonderlijke uitvaart; handelt voor steeds andere nabestaanden. | [2026-rvo-aangifte-en-akte-van-overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
-| eigen rechtspersoon | nee | Niet van toepassing. |  |
-| vervult een rol | ja | Vervult de rol Degene die in de lijkbezorging voorziet, namens de nabestaanden: vraagt het verlof tot begraven of cremeren en de vergunning voor een andere termijn aan (RVO). | [2026-rvo-aangifte-en-akte-van-overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
-| voert gedrag uit | nee | Niet van toepassing. |  |
-| ontsluit een dienst | nee | Niet van toepassing. |  |
-| per keer doorlopen | nee | Niet van toepassing: geen gedrag. |  |
-| gegroepeerd gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| toestandsverandering | nee | Niet van toepassing: geen gedrag. |  |
-| aangeboden gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| gezamenlijk gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| toegewezen partij | nee | Niet van toepassing: geen gedrag. |  |
-| gebruikt objecten | nee | Niet van toepassing: geen gedrag. |  |
-| aanleiding | nee | Niet van toepassing: geen gedrag. |  |
-| benoembaar resultaat | nee | Niet van toepassing: geen gedrag. |  |
-| komt herhaald voor | nee | Niet van toepassing: geen gedrag. |  |
-| eigen normering | nee | Niet van toepassing: geen gedrag. |  |
-| stabiel over tijd | nee | Niet van toepassing: geen gedrag. |  |
-| afnemer | nee | Niet van toepassing: geen gedrag. |  |
-| gerealiseerd door | nee | Niet van toepassing: geen gedrag. |  |
-| leidt tot gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| bijdrage aan groter proces | nee | Niet van toepassing: geen gedrag. |  |
-| onderscheidbare exemplaren | nee | Wordt niet als ding behandeld. |  |
-| levenscyclus | nee | Wordt niet als ding behandeld. |  |
-| wordt bewerkt | nee | Wordt niet als ding behandeld. |  |
-| afspraak | nee | Geen overeenkomst tussen partijen. |  |
-| waarneembare vorm | nee | Geen document, formulier, register of bericht van een ander begrip. |  |
-| omvat diensten en afspraken | nee | Geen gebundeld aanbod. |  |
-| geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur. |  |
-| landelijk | nee | Niet van toepassing: geen regeling als geheel. |  |
-| in werking | nee | Niet van toepassing: geen regeling als geheel. |  |
-| is grondslag voor | nee | Niet van toepassing: geen regeling als geheel. |  |
-| zelfstandige specialisatie | ja | Geen breder element in deze wiki. | [2026-rvo-aangifte-en-akte-van-overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
+| Uitvaartondernemer | vervult namens de nabestaanden *toewijzing* | [Degene die in de lijkbezorging voorziet](../rollen/degene-die-in-de-lijkbezorging-voorziet.md) | [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (inleiding, § Aangifte doen van overlijden) |
 
-## GEMMA
+## Herkomst
+
+### Bronnen
+
+| Korte titel | Bron |
+|---|---|
+| [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) | Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting |
+| [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
+| [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) | Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023 |
+
+### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-## Grondslag
-
-**Bronnen.**
-
-## Relaties
-
-| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
-|---|---|---|---|---|---|---|
-| toewijzing | [Degene die in de lijkbezorging voorziet](../rollen/degene-die-in-de-lijkbezorging-voorziet.md) | vervult namens de nabestaanden |  | bron |  | [2026-rvo-aangifte-en-akte-van-overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (inleiding, § Aangifte doen van overlijden) |
-
-## Bronnen
-
-- [Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md)
-- [Aangifte en akte van overlijden (Ondernemersplein)](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md)
-- [Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md)

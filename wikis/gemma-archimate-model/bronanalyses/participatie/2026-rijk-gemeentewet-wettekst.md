@@ -5,6 +5,7 @@ onderwerp: participatie
 bronnen:
 - 2026-rijk-gemeentewet-wettekst
 relevant: ja
+korte_titel: Gemeentewet
 bijgewerkt: 2026-09-30
 ---
 

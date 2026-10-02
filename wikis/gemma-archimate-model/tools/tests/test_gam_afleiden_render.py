@@ -78,7 +78,7 @@ def test_beoordelingen_worden_paginas_met_relaties_in_beide_richtingen(wiki):
     assert bo["afgeleid"]["herkomst"] == "wet"
 
     pagina = (wiki / bo["afgeleid"]["pad"]).read_text(encoding="utf-8")
-    assert "## Inkomende relaties" in pagina
+    assert "#### Inkomend" in pagina
     assert "[Behandelen aanvraag](../../../bedrijfsprocessen/8-wonen/vergunningen/behandelen-aanvraag.md)" in pagina
     assert f"[{WET}](../../../../bronanalyses/test/{WET}.md)" in pagina
     assert "**Status: review.**" in pagina

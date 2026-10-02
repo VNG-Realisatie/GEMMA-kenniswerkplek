@@ -5,6 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-bw2-rechtspersonen
 relevant: ja
+korte_titel: BW Boek 2
 bijgewerkt: 2026-10-01
 ---
 

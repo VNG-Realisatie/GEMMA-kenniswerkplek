@@ -5,6 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 relevant: ja
+korte_titel: Wet op de lijkbezorging
 bijgewerkt: 2026-10-01
 ---
 

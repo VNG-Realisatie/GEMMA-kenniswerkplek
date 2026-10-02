@@ -46,100 +46,73 @@ gemma_eigenschappen:
 
 **Status: goedgekeurd** door de redacteur.
 
-## Definitie
+## Betekenis
+
+### Definitie
 
 Lijkbezorging waarvoor de gemeente zorgt en betaalt omdat niemand anders daarin voorziet.
 
-## Beschrijving
+### Beschrijving
 
 Een gemeentebegrafenis is het geval dat ontstaat als de burgemeester de lijkbezorging op zich neemt (art. 21). De gemeente draagt de kosten en verhaalt die zo mogelijk op de nalatenschap, de onderhoudsplichtige verwanten of de werkgever (art. 22). Het GGM legt per geval onder meer de melder, de kosten en de datum van begrafenis en ruiming vast.
 
-## Kenmerken
+## Plaats in het model
 
-Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+### Typering
 
-| Kenmerk | Waarde | Onderbouwing | Bron |
+Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+
+### Kenmerken
+
+Alleen de kenmerken met ja; de overige 37 zijn nee.
+
+| Kenmerk | Onderbouwing |
+|---|---|
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GGM-entiteit en gangbare term. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente zorgt en betaalt (art. 21, 22). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, per overledene. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, gemeld, uitgevoerd, kosten verhaald (art. 20–22). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, vastgelegd en afgehandeld in Verzorgen gemeentebegrafenis, met kostenverhaal (art. 21, 22). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, GGM-entiteit met attributen (melder, kosten, datum begrafenis en ruiming). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+
+### Relaties
+
+#### Uitgaand
+
+| Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| herkenbaar | ja | GGM-entiteit en gangbare term. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gemeentelijk | ja | De gemeente zorgt en betaalt (art. 21, 22). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| buiten dit model | nee | Geen doel, waarde, principe, losse norm, vermogen of thema. |  |
-| slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| betekenis in onderwerp | ja | Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| gedrag | nee | Niet van toepassing: het begrip is een ding. |  |
-| handelende partij | nee | Niet van toepassing: het begrip is een ding. |  |
-| hoedanigheid | nee | Niet van toepassing: het begrip is een ding. |  |
-| samenwerkingsverband | nee | Niet van toepassing: het begrip is een ding. |  |
-| toegangspunt | nee | Niet van toepassing: het begrip is een ding. |  |
-| plaats | nee | Niet van toepassing: het begrip is een ding. |  |
-| aanbod als geheel | nee | Niet van toepassing: het begrip is een ding. |  |
-| regeling als geheel | nee | Niet van toepassing: het begrip is een ding. |  |
-| los van verantwoordelijkheid | nee | Niet van toepassing: geen partij. |  |
-| eigen rechtspersoon | nee | Niet van toepassing: geen partij. |  |
-| vervult een rol | nee | Niet van toepassing: geen partij. |  |
-| voert gedrag uit | nee | Niet van toepassing: geen partij. |  |
-| ontsluit een dienst | nee | Niet van toepassing: geen partij. |  |
-| per keer doorlopen | nee | Niet van toepassing: geen gedrag. |  |
-| gegroepeerd gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| toestandsverandering | nee | Niet van toepassing: geen gedrag. |  |
-| aangeboden gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| gezamenlijk gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| toegewezen partij | nee | Niet van toepassing: geen gedrag. |  |
-| gebruikt objecten | nee | Niet van toepassing: geen gedrag. |  |
-| aanleiding | nee | Niet van toepassing: geen gedrag. |  |
-| benoembaar resultaat | nee | Niet van toepassing: geen gedrag. |  |
-| komt herhaald voor | nee | Niet van toepassing: geen gedrag. |  |
-| eigen normering | nee | Niet van toepassing: geen gedrag. |  |
-| stabiel over tijd | nee | Niet van toepassing: geen gedrag. |  |
-| afnemer | nee | Niet van toepassing: geen gedrag. |  |
-| gerealiseerd door | nee | Niet van toepassing: geen gedrag. |  |
-| leidt tot gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| bijdrage aan groter proces | nee | Niet van toepassing: geen gedrag. |  |
-| onderscheidbare exemplaren | ja | Per overledene. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| levenscyclus | ja | Gemeld, uitgevoerd, kosten verhaald (art. 20–22). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| wordt bewerkt | ja | Vastgelegd en afgehandeld in Verzorgen gemeentebegrafenis, met kostenverhaal (art. 21, 22). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| afspraak | nee | Geen overeenkomst tussen partijen. |  |
-| waarneembare vorm | nee | Geen document, formulier, register of bericht van een ander begrip. |  |
-| omvat diensten en afspraken | nee | Geen gebundeld aanbod. |  |
-| geautomatiseerd verwerkt | ja | GGM-entiteit met attributen (melder, kosten, datum begrafenis en ruiming). | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| landelijk | nee | Niet van toepassing: geen regeling als geheel. |  |
-| in werking | nee | Niet van toepassing: geen regeling als geheel. |  |
-| is grondslag voor | nee | Niet van toepassing: geen regeling als geheel. |  |
-| zelfstandige specialisatie | ja | Geen breder begrip in deze wiki. | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| Gemeentebegrafenis | betreft *associatie (gericht)* | [Lijk](lijk.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
 
-## GGM
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Verzorgen gemeentebegrafenis](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | leidt tot *toegang (registreren)* | Gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
+
+## Herkomst
+
+### Bronnen
+
+| Korte titel | Bron |
+|---|---|
+| [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+
+### Afstemming met GGM
 
 Match **sterk** met GGM-entiteit *Gemeentebegrafenis* (beleidsdomein Gemeentebegrafenissen, taakveld 6 Sociaal Domein). Zelfde begrip; de GGM-definitie ('teraardebestelling onder verantwoordelijkheid van de gemeente') is te smal, want de burgemeester kan ook voor crematie zorgen (art. 21); terugmeldingen 1 (definitie) en 2 (scope: beleidsdomein).
 
 > Teraardebestelling onder verantwoordelijjkheid van de gemeente.
 
-## GEMMA
-
-Match **sterk** met GEMMA-element *Gemeentebegrafenis* (business-object). Overgenomen uit het GGM. Nieuw: een definitie die ook crematie omvat, en plaatsing in beleidsdomein Begraafplaatsen en crematoria.
-
-> Teraardebestelling onder verantwoordelijjkheid van de gemeente.
-
-## Grondslag
-
-**GGM-entiteit.**
-
-## Relaties
-
-| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
-|---|---|---|---|---|---|---|
-| associatie (gericht) | [Lijk](lijk.md) | betreft |  | bron |  | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
-
-## Inkomende relaties
-
-| Van | Relatie | Naam | Bron |
-|---|---|---|---|
-| [Verzorgen gemeentebegrafenis](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | toegang (registreren) | leidt tot | [2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
-
-## GGM-terugmeldingen
+GGM-terugmeldingen:
 
 - [Nummer 1](../../../../analyses/ggm-terugmeldingen.md) (definitie, open): Definitie 'Teraardebestelling onder verantwoordelijjkheid van de gemeente' is te smal: de burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, en dat kan ook crematie zijn; alleen een lijk waarvan de identiteit niet kan worden vastgesteld, wordt begraven (Wet op de lijkbezorging art. 21 lid 1 en 6). Voorstel: 'Lijkbezorging waarvoor de gemeente zorgt en betaalt omdat niemand anders daarin voorziet.' Ook tikfout 'verantwoordelijjkheid'.
 - [Nummer 2](../../../../analyses/ggm-terugmeldingen.md) (scope, open): Gemeentebegrafenis staat onder 6 Sociaal Domein. De lijkbezorging (graf, grafrecht, begraafplaats, gemeentebegrafenis) hoort bij Iv3-taakveld 7.5 Begraafplaatsen en crematoria (7 Volksgezondheid en Milieu); deze wiki plaatst het element daar. Overweeg een beleidsdomein Begraafplaatsen en crematoria, waarin ook de hiaten graf en grafrecht passen.
 
-## Bronnen
+### Afstemming met GEMMA
 
-- [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
+Match **sterk** met GEMMA-element *Gemeentebegrafenis* (business-object). Overgenomen uit het GGM. Nieuw: een definitie die ook crematie omvat, en plaatsing in beleidsdomein Begraafplaatsen en crematoria.
+
+> Teraardebestelling onder verantwoordelijjkheid van de gemeente.

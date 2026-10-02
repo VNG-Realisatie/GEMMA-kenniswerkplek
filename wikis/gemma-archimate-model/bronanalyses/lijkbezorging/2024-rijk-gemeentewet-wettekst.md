@@ -5,6 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
 relevant: ja
+korte_titel: Gemeentewet
 bijgewerkt: 2026-10-01
 ---
 

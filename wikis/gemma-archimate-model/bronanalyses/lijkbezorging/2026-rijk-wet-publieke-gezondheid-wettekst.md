@@ -5,6 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-publieke-gezondheid-wettekst
 relevant: ja
+korte_titel: Wet publieke gezondheid
 bijgewerkt: 2026-10-01
 ---
 

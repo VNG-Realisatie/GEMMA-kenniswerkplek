@@ -5,6 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2010-vng-model-beheersverordening-begraafplaatsen
 relevant: ja
+korte_titel: VNG Model-beheersverordening begraafplaatsen
 bijgewerkt: 2026-10-01
 ---
 

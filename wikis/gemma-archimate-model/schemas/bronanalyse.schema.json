@@ -38,6 +38,11 @@
       "type": "string",
       "minLength": 1
     },
+    "korte_titel": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Korte naam van de bron als linktekst op elementpagina's."
+    },
     "bijgewerkt": {
       "type": "string"
     }

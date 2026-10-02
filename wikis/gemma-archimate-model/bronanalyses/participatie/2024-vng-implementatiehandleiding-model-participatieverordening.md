@@ -5,6 +5,7 @@ onderwerp: participatie
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 relevant: ja
+korte_titel: VNG Implementatiehandleiding participatieverordening
 bijgewerkt: 2026-09-30
 ---
 

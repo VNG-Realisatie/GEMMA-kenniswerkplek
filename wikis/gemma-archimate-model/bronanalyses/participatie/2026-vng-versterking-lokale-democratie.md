@@ -5,6 +5,7 @@ onderwerp: participatie
 bronnen:
 - 2026-vng-versterking-lokale-democratie
 relevant: nee
+korte_titel: VNG Versterking lokale democratie
 reden: Standpuntpagina van de VNG zonder eigen begrippen; wat ze over het betrekken
   van inwoners zegt, staat uitgewerkt in de implementatiehandleiding.
 bijgewerkt: 2026-09-30

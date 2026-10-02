@@ -5,6 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
 relevant: ja
+korte_titel: Ondernemersplein Aangifte overlijden
 bijgewerkt: 2026-10-01
 ---
 

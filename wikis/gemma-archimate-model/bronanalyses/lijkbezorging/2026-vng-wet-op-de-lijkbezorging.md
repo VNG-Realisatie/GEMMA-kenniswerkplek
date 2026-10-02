@@ -5,6 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2026-vng-wet-op-de-lijkbezorging
 relevant: ja
+korte_titel: VNG Wet op de lijkbezorging
 bijgewerkt: 2026-10-01
 ---
 

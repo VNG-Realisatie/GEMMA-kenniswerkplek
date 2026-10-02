@@ -5,6 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2026-vng-retributies
 relevant: ja
+korte_titel: VNG Retributies
 bijgewerkt: 2026-10-01
 ---
 

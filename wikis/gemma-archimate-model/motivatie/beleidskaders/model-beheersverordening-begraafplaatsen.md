@@ -24,102 +24,74 @@ bronnen:
 
 **Status: goedgekeurd** door de redacteur.
 
-## Definitie
+## Betekenis
+
+### Definitie
 
 Model van de VNG voor de verordening waarin een gemeente het beheer en het gebruik van haar begraafplaatsen regelt.
 
-## Beschrijving
+### Beschrijving
 
 De raad stelt de beheersverordening vast op grond van art. 35 Wet op de lijkbezorging en art. 149 Gemeentewet; het model geeft de begripsbepalingen (particulier en algemeen graf, urnengraf, urnennis, gedenkplaats, rechthebbende, gebruiker, beheerder) en de regels voor uitgifte, termijnen, overschrijving, afstand, grafbedekking, onderhoud en ruiming (aanhef, art. 1–24).
 
 De openbare versie is die van 2010, met toelichting; nieuwere versies staan in de Kennisbank decentrale regelgeving van SDU. De toelichting citeert art. 28 lid 7 Wet op de lijkbezorging nog met een termijn van twintig jaar; de huidige wet zegt tien jaar (tegenspraak).
 
-## Synoniemen
+### Synoniemen
 
 | Synoniem | Context |
 |---|---|
 | VNG Model beheersverordening begraafplaatsen | beleid |
 
-## Kenmerken
+## Plaats in het model
 
-Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern ja, 0/1, ontbreekt: *in werking*).
+### Typering
 
-| Kenmerk | Waarde | Onderbouwing | Bron |
+Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern ja, 0/1, ontbreekt: *in werking*).
+
+### Kenmerken
+
+Alleen de kenmerken met ja; de overige 38 zijn nee.
+
+| Kenmerk | Onderbouwing |
+|---|---|
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de VNG noemt het model bij naam; gemeenten nemen het over (Groningen). [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, model voor de verordening waarmee de gemeente haar begraafplaatsen beheert. [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? | Ja, hoort primair bij de lijkbezorging. [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| **regeling als geheel**: Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde VNG-modelverordening als geheel. [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| **landelijk**: Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? | Ja, VNG-modelverordening, geen regeling van één gemeente. [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? | Ja, art. 15 (uitgifte en verlenging), 17 (overschrijving en vervallen), 20 (onderhoud door de gemeente), 24 (ruiming): gedrag in de processen hieronder. [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki. [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
+
+### Relaties
+
+#### Uitgaand
+
+| Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| herkenbaar | ja | De VNG noemt het model bij naam; gemeenten nemen het over (Groningen). | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
-| gemeentelijk | ja | Model voor de verordening waarmee de gemeente haar begraafplaatsen beheert. | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
-| buiten dit model | nee | Geen doel, waarde, principe, losse norm, vermogen of thema. |  |
-| slechts eigenschap | nee | Geen eigenschap, status of indeling van één ander begrip. |  |
-| eigen identiteit | ja | Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
-| betekenis in onderwerp | ja | Hoort primair bij de lijkbezorging. | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
-| gedrag | nee | Niet van toepassing: het begrip is een regeling als geheel. |  |
-| handelende partij | nee | Niet van toepassing: het begrip is een regeling als geheel. |  |
-| hoedanigheid | nee | Niet van toepassing: het begrip is een regeling als geheel. |  |
-| samenwerkingsverband | nee | Niet van toepassing: het begrip is een regeling als geheel. |  |
-| toegangspunt | nee | Niet van toepassing: het begrip is een regeling als geheel. |  |
-| plaats | nee | Niet van toepassing: het begrip is een regeling als geheel. |  |
-| aanbod als geheel | nee | Niet van toepassing: het begrip is een regeling als geheel. |  |
-| regeling als geheel | ja | Een concreet benoemde VNG-modelverordening als geheel. | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
-| los van verantwoordelijkheid | nee | Niet van toepassing: geen partij. |  |
-| eigen rechtspersoon | nee | Niet van toepassing: geen partij. |  |
-| vervult een rol | nee | Niet van toepassing: geen partij. |  |
-| voert gedrag uit | nee | Niet van toepassing: geen partij. |  |
-| ontsluit een dienst | nee | Niet van toepassing: geen partij. |  |
-| per keer doorlopen | nee | Niet van toepassing: geen gedrag. |  |
-| gegroepeerd gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| toestandsverandering | nee | Niet van toepassing: geen gedrag. |  |
-| aangeboden gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| gezamenlijk gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| toegewezen partij | nee | Niet van toepassing: geen gedrag. |  |
-| gebruikt objecten | nee | Niet van toepassing: geen gedrag. |  |
-| aanleiding | nee | Niet van toepassing: geen gedrag. |  |
-| benoembaar resultaat | nee | Niet van toepassing: geen gedrag. |  |
-| komt herhaald voor | nee | Niet van toepassing: geen gedrag. |  |
-| eigen normering | nee | Niet van toepassing: geen gedrag. |  |
-| stabiel over tijd | nee | Niet van toepassing: geen gedrag. |  |
-| afnemer | nee | Niet van toepassing: geen gedrag. |  |
-| gerealiseerd door | nee | Niet van toepassing: geen gedrag. |  |
-| leidt tot gedrag | nee | Niet van toepassing: geen gedrag. |  |
-| bijdrage aan groter proces | nee | Niet van toepassing: geen gedrag. |  |
-| onderscheidbare exemplaren | nee | Wordt niet als ding behandeld. |  |
-| levenscyclus | nee | Wordt niet als ding behandeld. |  |
-| wordt bewerkt | nee | Wordt niet als ding behandeld. |  |
-| afspraak | nee | Geen overeenkomst tussen partijen. |  |
-| waarneembare vorm | nee | Geen document, formulier, register of bericht van een ander begrip. |  |
-| omvat diensten en afspraken | nee | Geen gebundeld aanbod. |  |
-| geautomatiseerd verwerkt | nee | De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur. |  |
-| landelijk | ja | VNG-modelverordening, geen regeling van één gemeente. | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) |
-| in werking | nee | De openbare versie is van 2010; nieuwere versies staan in de betaalde Kennisbank decentrale regelgeving. De toelichting citeert Wlb art. 28 lid 7 nog met twintig jaar, waar de huidige wet tien jaar zegt. Of het model in deze vorm actueel is, is niet vast te stellen. |  |
-| is grondslag voor | ja | Art. 15 (uitgifte en verlenging), 17 (overschrijving en vervallen), 20 (onderhoud door de gemeente), 24 (ruiming): gedrag in de processen hieronder. | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
-| zelfstandige specialisatie | ja | Geen breder beleidskader in deze wiki. | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
+| Model-beheersverordening begraafplaatsen | is grondslag voor *associatie (gericht)* | [Verlenen grafrecht](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 15, 17) |
+| Model-beheersverordening begraafplaatsen | is grondslag voor *associatie (gericht)* | [Graf aanvragen](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf-aanvragen.md) | [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 15) |
+| Model-beheersverordening begraafplaatsen | is grondslag voor *associatie (gericht)* | [Vervallen verklaren grafrecht](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 17 lid 3) |
+| Model-beheersverordening begraafplaatsen | is grondslag voor *associatie (gericht)* | [Onderhouden graf](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 20) |
+| Model-beheersverordening begraafplaatsen | is grondslag voor *associatie (gericht)* | [Ruimen graf](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 24) |
+| Model-beheersverordening begraafplaatsen | werkt uit *associatie (gericht)* | [Wet op de lijkbezorging](wet-op-de-lijkbezorging.md) | [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (aanhef; toelichting 1.1, 3.1) |
+| Model-beheersverordening begraafplaatsen | is model voor (beheersverordening begraafplaatsen) *associatie (gericht)* | [Regeling](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) | [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) (aanhef; VNG inleiding) |
 
-## GEMMA
+## Herkomst
 
-Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-## Grondslag
-
-**Regelgeving.**
+### Bronnen
 
 De modelverordening zelf ([2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md)), genoemd door de VNG ([2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md)).
 
-## Relaties
+| Korte titel | Bron |
+|---|---|
+| [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) | Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting |
+| [VNG Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) | Wet op de lijkbezorging |
 
-| Relatie | Naar | Naam | Kardinaliteit | Grondslag | GGM-relatie | Bron |
-|---|---|---|---|---|---|---|
-| associatie (gericht) | [Verlenen grafrecht](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | is grondslag voor |  | bron |  | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 15, 17) |
-| associatie (gericht) | [Graf aanvragen](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf-aanvragen.md) | is grondslag voor |  | bron |  | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 15) |
-| associatie (gericht) | [Vervallen verklaren grafrecht](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | is grondslag voor |  | bron |  | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 17 lid 3) |
-| associatie (gericht) | [Onderhouden graf](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | is grondslag voor |  | bron |  | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 20) |
-| associatie (gericht) | [Ruimen graf](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | is grondslag voor |  | bron |  | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 24) |
-| associatie (gericht) | [Wet op de lijkbezorging](wet-op-de-lijkbezorging.md) | werkt uit |  | bron |  | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (aanhef; toelichting 1.1, 3.1) |
-| associatie (gericht) | [Regeling](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) | is model voor (beheersverordening begraafplaatsen) |  | bron |  | [2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md), [2026-vng-wet-op-de-lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md) (aanhef; VNG inleiding) |
+### Afstemming met GEMMA
 
-## Besluiten redacteur
+Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+### Besluiten redacteur
 
 - 2026-10-01: Opnemen als beleidskader, met de versie 2010 en de tegenspraak over de termijn in de beschrijving; een actuele versie later opnemen als die openbaar wordt.
-
-## Bronnen
-
-- [Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md)
-- [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-vng-wet-op-de-lijkbezorging.md)

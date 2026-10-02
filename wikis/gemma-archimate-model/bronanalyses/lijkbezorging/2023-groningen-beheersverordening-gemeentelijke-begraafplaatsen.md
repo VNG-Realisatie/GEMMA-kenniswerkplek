@@ -5,6 +5,7 @@ onderwerp: lijkbezorging
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 relevant: ja
+korte_titel: Beheersverordening begraafplaatsen Groningen
 bijgewerkt: 2026-10-01
 ---
 

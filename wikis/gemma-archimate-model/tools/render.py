@@ -15,9 +15,11 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 
 Opbouw van een elementpagina (vaste volgorde; een sectie zonder inhoud vervalt): frontmatter (gegevens en de
-letterlijke `ggm_*`/`gemma_*`-velden), titel en status, Definitie, Beschrijving, Per onderwerp, Synoniemen, Kenmerken,
-GGM, GEMMA, Grondslag, Naamkeuze, Homoniemen, Generalisatie, Specialisaties, GGM-componenten, Tegenhanger, Relaties,
-Inkomende relaties, GGM-terugmeldingen, Ter discussie, Besluiten redacteur, Bronnen.
+letterlijke `ggm_*`/`gemma_*`-velden), titel en status, Ter discussie; Betekenis (Definitie, Beschrijving, Per
+onderwerp, Synoniemen, Naamkeuze, Homoniemen); Plaats in het model (Typering, Kenmerken alleen met ja, Generalisatie,
+Specialisaties, GGM-componenten, Tegenhanger, Relaties uitgaand en inkomend); Herkomst (Bronnen met korte titel,
+Afstemming met GGM met de GGM-terugmeldingen, Afstemming met GEMMA, Besluiten redacteur). Een bron heet in links naar
+haar `korte_titel` uit de bronanalyse.
 
 Wat de render garandeert: elke bronverwijzing is een link naar de bronanalyse (de domein-lens; een modelbron linkt
 naar sources/raw), relaties staan in beide richtingen, er staan geen verwijzingen in de frontmatter en geen links naar
@@ -31,6 +33,7 @@ Gebruik (vanuit de wikimap):
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -54,13 +57,13 @@ STATUSREGEL = {
     "review": "**Status: review.** Wacht op het akkoord van de redacteur.",
     "goedgekeurd": "**Status: goedgekeurd** door de redacteur.",
 }
-GRONDSLAG = {"ggm-entiteit": "GGM-entiteit", "ggm-afgeleid": "Afgeleid uit het GGM", "procesobject": "Procesobject",
-             "regelgeving": "Regelgeving", "bron": "Bronnen"}
 UITKOMST = {"synoniem": "synoniem", "bron": "bron, geen begrip", "buiten_scope": "buiten scope",
             "buiten_model": "buiten het model", "eigenschap": "eigenschap", "onderdeel": "onderdeel",
             "verwijzing": "verwijzing", "specialisatie": "specialisatie zonder pagina", "geen_element": "geen element",
             "conflict": "tegenstrijdige kenmerken", "herkend": "herkend, geen paginatype", "geen_pagina": "geen pagina"}
 ARCHIMATE_NAAM = {t.archimate_type: t.naam for t in bepaal_type.TYPEN}
+# De vraag per kenmerk, zonder de aanwijzingen ("Noem ..."): de pagina toont alleen de kenmerken met ja.
+VRAAG = {k.sleutel: re.sub(r"\s*Noem [^?.]*[.?]", "", k.vraag).strip() for k in bepaal_type.KENMERKEN}
 
 
 def _gegenereerd(bron: str) -> str:
@@ -126,12 +129,21 @@ class Wiki:
             self._titels[bron_id] = frontmatter.read(pad).meta.get("titel", bron_id) if pad.exists() else bron_id
         return self._titels[bron_id]
 
+    def korte_titel(self, bron_id: str) -> str:
+        """Linktekst van een bron: `korte_titel` uit de bronanalyse; een modelbron heet GGM of GEMMA."""
+        for model in ("ggm", "gemma"):
+            if self.yaml.get(model, {}).get("bron") == bron_id:
+                return model.upper()
+        doel = gam_gemeen.bron_doel(self.root, bron_id)
+        binnen = doel is not None and doel.is_relative_to(self.root.resolve())
+        return (frontmatter.read(doel).meta.get("korte_titel") if binnen else None) or self.titel(bron_id)
+
     def bron(self, van: str, bron_id: str, tekst: str | None = None) -> str:
         doel = gam_gemeen.bron_doel(self.root, bron_id)
         return f"[{tekst or bron_id}]({gam_gemeen.relatief(self.root / van, doel)})" if doel else bron_id
 
     def bronnen(self, van: str, ids: list[str], vindplaats: str | None = None) -> str:
-        cel = ", ".join(self.bron(van, b) for b in ids)
+        cel = ", ".join(self.bron(van, b, self.korte_titel(b)) for b in ids)
         return f"{cel} ({vindplaats})" if vindplaats and cel else (vindplaats or cel)
 
     def tekst(self, van: str, tekst: str) -> str:
@@ -155,6 +167,24 @@ class Wiki:
 # --- Elementpagina ---
 
 
+def _ja(onderbouwing: str) -> str:
+    """'Ja, ' voor de onderbouwing; een eerste woord als 'De' wordt 'de', een afkorting als 'GGM' blijft staan."""
+    o = " ".join(str(onderbouwing).split())
+    if len(o) > 1 and o[0].isupper() and not o[1].isupper():
+        o = o[0].lower() + o[1:]
+    return f"Ja, {o}"
+
+
+def _sub(kop: str, regels: list[str], niveau: int = 3) -> list[str]:
+    return [f"{'#' * niveau} {kop}", "", *regels, ""] if regels else []
+
+
+def _groep(kop: str, delen: list[list[str]]) -> list[str]:
+    """Een hoofdsectie (##) met subsecties (###); zonder inhoud vervalt de hoofdsectie."""
+    regels = [x for deel in delen for x in deel]
+    return [f"## {kop}", "", *regels] if regels else []
+
+
 def element_pagina(w: Wiki, bid: str) -> str:
     d = w.begrippen[bid]
     a = d["afgeleid"]
@@ -176,87 +206,101 @@ def element_pagina(w: Wiki, bid: str) -> str:
     meta = {k: v for k, v in meta.items() if v not in ([], {}, None, "")}
 
     r = [f"# {d['begrip']}", "", _gegenereerd(f"beoordelingen/begrippen/{bid}.yaml"), "", STATUSREGEL[status], ""]
+    discussie = [f"- {w.tekst(van, x)}" for x in a.get("open", []) + d.get("vragen", [])]
+    r += _sectie("Ter discussie", discussie + ([""] if discussie else []))
 
+    # Betekenis: wat het begrip is.
     definitie = [w.tekst(van, d["definitie"]), ""]
     if d.get("definitie_formeel"):
         fb = d["definitie_formeel_bron"]
         definitie += [f"> {_cel(d['definitie_formeel'])}", ">", f"> — {w.bron(van, fb['bron'], w.titel(fb['bron']))}, {fb['plaats']}", ""]
-    r += _sectie("Definitie", definitie)
-    r += _sectie("Beschrijving", w.alineas(van, d.get("beschrijving")))
     per_onderwerp = []
     for oid, alineas in d.get("per_onderwerp", {}).items():
         onaam = w.onderwerpen.get(oid, {}).get("naam", oid)
-        per_onderwerp += [f"### [{onaam}]({w.rel(van, f'{w.onderwerp_dir}/{oid}.md')})", "", *w.alineas(van, alineas)]
-    r += _sectie("Per onderwerp", per_onderwerp)
-    if d.get("synoniemen"):
-        r += _sectie("Synoniemen", _tabel(["Synoniem", "Context"], [[s["naam"], s["context"]] for s in d["synoniemen"]]))
+        per_onderwerp += _sub(f"[{onaam}]({w.rel(van, f'{w.onderwerp_dir}/{oid}.md')})", w.alineas(van, alineas), 4)
+    synoniemen = _tabel(["Synoniem", "Context"], [[s["naam"], s["context"]] for s in d.get("synoniemen", [])]) \
+        if d.get("synoniemen") else []
+    homoniemen = _tabel(["Begrip", "Betekenis", "Waar", "Naamkeuze"], [
+        [w.link(van, h["element"], h["begrip"]) if h.get("element") else h["begrip"], h["betekenis"], h["waar"],
+         h["naamkeuze"]] for h in d.get("homoniemen", [])]) if d.get("homoniemen") else []
+    r += _groep("Betekenis", [
+        _sub("Definitie", definitie), _sub("Beschrijving", w.alineas(van, d.get("beschrijving"))),
+        _sub("Per onderwerp", per_onderwerp), _sub("Synoniemen", synoniemen),
+        _sub("Naamkeuze", w.alineas(van, d.get("naamkeuze"))), _sub("Homoniemen", homoniemen)])
 
-    kenmerken = [[bepaal_type.NAAM[s], d["kenmerken"][s]["waarde"], w.tekst(van, d["kenmerken"][s]["onderbouwing"]),
-                  w.bronnen(van, d["kenmerken"][s].get("bronnen", []))] for s in bepaal_type.SLEUTELS]
-    r += _sectie("Kenmerken", [f"Uitkomst van de beslistabel: {u['toelichting']}.", "",
-                               *_tabel(["Kenmerk", "Waarde", "Onderbouwing", "Bron"], kenmerken)])
+    # Plaats in het model: typering, kenmerken en samenhang met andere elementen.
+    ja = [s for s in bepaal_type.SLEUTELS if d["kenmerken"][s]["waarde"] == "ja"]
+    kenmerken = [[f"**{bepaal_type.NAAM[s]}**: {VRAAG[s]}",
+                  " ".join(x for x in (w.tekst(van, _ja(d["kenmerken"][s]["onderbouwing"])),
+                                       w.bronnen(van, d["kenmerken"][s].get("bronnen", []))) if x)] for s in ja]
+    nee = len(bepaal_type.SLEUTELS) - len(ja)
+    typering = [f"{ARCHIMATE_NAAM.get(u['archimate_type'], u['archimate_type'])}. "
+                f"Uitkomst van de beslistabel: {u['toelichting']}.", ""]
+    specialisaties = [*[f"- **{w.link(van, s['element'], s['naam']) if s.get('element') else s['naam']}**: "
+                        f"{w.tekst(van, s['omschrijving'])}"
+                        + "".join(f" ({k} {s[k]})" for k in ("ggm_guid", "ggm_attribuut") if s.get(k))
+                        for s in d.get("specialisaties", [])], ""] if d.get("specialisaties") else []
+    componenten = _tabel(["Component", "GGM-guid", "Toelichting"], [
+        [c["naam"], c["guid"], c["toelichting"]] for c in d.get("ggm_componenten", [])]) if d.get("ggm_componenten") else []
+    tegenhanger = ([f"{w.link(van, d['tegenhanger']['element'])}: {w.tekst(van, d['tegenhanger']['toelichting'])}", ""]
+                   if d.get("tegenhanger") else [])
 
+    def relatie(x: dict) -> str:
+        soort = ", ".join(v for v in (x["soort"], x.get("kardinaliteit", "")) if v)
+        return f"{x['naam']} *{soort}*" if x.get("naam") else soort
+
+    def bron_cel(x: dict) -> str:
+        cel = w.bronnen(van, x.get("bronnen", []), x.get("vindplaats"))
+        ggm_relatie = ", ".join(x.get("ggm_relatie", []))
+        return f"{cel}; GGM ({ggm_relatie})" if cel and ggm_relatie else (cel or (f"GGM ({ggm_relatie})" if ggm_relatie else ""))
+
+    kolommen = ["Van", "Relatie", "Naar", "Bron"]
+    uitgaand = _tabel(kolommen, [[d["begrip"], relatie(x), w.link(van, x["naar"]), bron_cel(x)]
+                                 for x in d.get("relaties", [])]) if d.get("relaties") else []
+    inkomend = [[w.link(van, v), relatie(x), d["begrip"], bron_cel(x)] for v, x in w.inkomend(bid)]
+    relaties = _sub("Uitgaand", uitgaand, 4) + _sub("Inkomend", _tabel(kolommen, inkomend) if inkomend else [], 4)
+    r += _groep("Plaats in het model", [
+        _sub("Typering", typering),
+        _sub("Kenmerken", [f"Alleen de kenmerken met ja; de overige {nee} zijn nee.", "",
+                           *_tabel(["Kenmerk", "Onderbouwing"], kenmerken)]),
+        _sub("Generalisatie", w.alineas(van, d.get("generalisatie"))), _sub("Specialisaties", specialisaties),
+        _sub("GGM-componenten", componenten), _sub("Tegenhanger", tegenhanger), _sub("Relaties", relaties)])
+
+    # Herkomst: waar het begrip is gevonden en hoe het aansluit op GGM en GEMMA.
+    bronnen = [*w.alineas(van, d.get("grondslag_toelichting")),
+               *_tabel(["Korte titel", "Bron"], [[w.bron(van, b, w.korte_titel(b)), w.titel(b)] for b in a.get("bronnen", [])])] \
+        if a.get("bronnen") else []
+    ggm_regels = []
     if d.get("ggm"):
         g = d["ggm"]
         if ggm:
-            regels = [f"Match **{g['sterkte']}** met GGM-entiteit *{ggm['ggm_entiteit']}* (beleidsdomein "
-                      f"{ggm.get('ggm_beleidsdomein', '—')}, taakveld {ggm.get('ggm_taakveld', '—')}). {w.tekst(van, g['onderbouwing'])}", ""]
+            ggm_regels = [f"Match **{g['sterkte']}** met GGM-entiteit *{ggm['ggm_entiteit']}* (beleidsdomein "
+                          f"{ggm.get('ggm_beleidsdomein', '—')}, taakveld {ggm.get('ggm_taakveld', '—')}). {w.tekst(van, g['onderbouwing'])}", ""]
             if ggm.get("ggm_definitie"):
-                regels += [f"> {_cel(ggm['ggm_definitie'])}", ""]
+                ggm_regels += [f"> {_cel(ggm['ggm_definitie'])}", ""]
         else:
-            regels = [f"Geen GGM-entiteit. {w.tekst(van, g['onderbouwing'])}", ""]
+            ggm_regels = [f"Geen GGM-entiteit. {w.tekst(van, g['onderbouwing'])}", ""]
         if a.get("ggm_duplicaten"):
-            regels += ["Duplicaten in het GGM:", "", *_tabel(["Entiteit", "Beleidsdomein", "GUID", "Toelichting"], [
+            ggm_regels += ["Duplicaten in het GGM:", "", *_tabel(["Entiteit", "Beleidsdomein", "GUID", "Toelichting"], [
                 [x.get("entiteit"), x.get("beleidsdomein"), x["guid"],
                  next((y["toelichting"] for y in g.get("duplicaten", []) if y["guid"] == x["guid"]), "")]
                 for x in a["ggm_duplicaten"]])]
-        r += _sectie("GGM", regels)
-    g = d["gemma"]
-    if gemma:
-        regels = [f"Match **{g['sterkte']}** met GEMMA-element *{gemma['gemma_naam']}* ({gemma.get('gemma_type', '')}). "
-                  f"{w.tekst(van, g['onderbouwing'])}", ""]
-        if gemma.get("gemma_definitie"):
-            regels += [f"> {_cel(gemma['gemma_definitie'])}", ""]
-    else:
-        regels = [f"Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. {w.tekst(van, g['onderbouwing'])}", ""]
-    r += _sectie("GEMMA", regels)
-    r += _sectie("Grondslag", [f"**{GRONDSLAG[d['grondslag']]}.**", "", *w.alineas(van, d.get("grondslag_toelichting"))])
-    r += _sectie("Naamkeuze", w.alineas(van, d.get("naamkeuze")))
-    if d.get("homoniemen"):
-        r += _sectie("Homoniemen", _tabel(["Begrip", "Betekenis", "Waar", "Naamkeuze"], [
-            [w.link(van, h["element"], h["begrip"]) if h.get("element") else h["begrip"], h["betekenis"], h["waar"],
-             h["naamkeuze"]] for h in d["homoniemen"]]))
-    r += _sectie("Generalisatie", w.alineas(van, d.get("generalisatie")))
-    if d.get("specialisaties"):
-        r += _sectie("Specialisaties", _tabel(["Specialisatie", "Omschrijving", "GGM-guid", "GGM-attribuut"], [
-            [w.link(van, s["element"], s["naam"]) if s.get("element") else s["naam"], w.tekst(van, s["omschrijving"]),
-             s.get("ggm_guid", ""), s.get("ggm_attribuut", "")] for s in d["specialisaties"]]))
-    if d.get("ggm_componenten"):
-        r += _sectie("GGM-componenten", _tabel(["Component", "GGM-guid", "Toelichting"], [
-            [c["naam"], c["guid"], c["toelichting"]] for c in d["ggm_componenten"]]))
-    if d.get("tegenhanger"):
-        t = d["tegenhanger"]
-        r += _sectie("Tegenhanger", [f"{w.link(van, t['element'])}: {w.tekst(van, t['toelichting'])}", ""])
-    if d.get("relaties"):
-        r += _sectie("Relaties", _tabel(["Relatie", "Naar", "Naam", "Kardinaliteit", "Grondslag", "GGM-relatie", "Bron"], [
-            [x["soort"], w.link(van, x["naar"]), x.get("naam", ""), x.get("kardinaliteit", ""), x["grondslag"],
-             ", ".join(x.get("ggm_relatie", [])), w.bronnen(van, x.get("bronnen", []), x.get("vindplaats"))]
-            for x in d["relaties"]]))
-    inkomend = w.inkomend(bid)
-    if inkomend:
-        r += _sectie("Inkomende relaties", _tabel(["Van", "Relatie", "Naam", "Bron"], [
-            [w.link(van, v), x["soort"], x.get("naam", ""), w.bronnen(van, x.get("bronnen", []), x.get("vindplaats"))]
-            for v, x in inkomend]))
     meldingen = [m for m in w.terugmeldingen if m.get("element") == bid]
     if meldingen:
         lijst = w.rel(van, TERUGMELDLIJST)
-        r += _sectie("GGM-terugmeldingen", [f"- [Nummer {m['nummer']}]({lijst}) ({m['type']}, {m.get('status', 'open')}): "
-                                            f"{w.tekst(van, m['bevinding'])}" for m in meldingen] + [""])
-    discussie = [f"- {w.tekst(van, x)}" for x in a.get("open", []) + d.get("vragen", [])]
-    r += _sectie("Ter discussie", discussie + ([""] if discussie else []))
+        ggm_regels += ["GGM-terugmeldingen:", "", *[f"- [Nummer {m['nummer']}]({lijst}) ({m['type']}, {m.get('status', 'open')}): "
+                                                   f"{w.tekst(van, m['bevinding'])}" for m in meldingen], ""]
+    g = d["gemma"]
+    if gemma:
+        gemma_regels = [f"Match **{g['sterkte']}** met GEMMA-element *{gemma['gemma_naam']}* ({gemma.get('gemma_type', '')}). "
+                        f"{w.tekst(van, g['onderbouwing'])}", ""]
+        if gemma.get("gemma_definitie"):
+            gemma_regels += [f"> {_cel(gemma['gemma_definitie'])}", ""]
+    else:
+        gemma_regels = [f"Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. {w.tekst(van, g['onderbouwing'])}", ""]
     besluiten = [f"- {b['datum']}: {w.tekst(van, b['besluit'])}" for b in d.get("besluiten", [])]
-    r += _sectie("Besluiten redacteur", besluiten + ([""] if besluiten else []))
-    r += _sectie("Bronnen", [f"- {w.bron(van, b, w.titel(b))}" for b in a.get("bronnen", [])] + [""])
+    r += _groep("Herkomst", [_sub("Bronnen", bronnen), _sub("Afstemming met GGM", ggm_regels),
+                             _sub("Afstemming met GEMMA", gemma_regels), _sub("Besluiten redacteur", besluiten)])
     return _pagina(meta, r)
 
 

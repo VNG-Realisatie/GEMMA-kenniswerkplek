@@ -5,6 +5,7 @@ onderwerp: participatie
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 relevant: ja
+korte_titel: Awb
 bijgewerkt: 2026-09-30
 ---
 
