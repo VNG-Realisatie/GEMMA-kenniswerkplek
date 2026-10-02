@@ -26,113 +26,13 @@ Elke vraag is met ja of nee te beantwoorden en gaat over het begrip zelf, niet o
 
 ## Opbouw per type
 
-| Type | Bepaald door | Kernrelatie (moet ja) | Overige drempel (hoogstens één nee) | Uitkomst daarnaast |
-|---|---|---|---|---|
-| Bedrijfsobject | geen aard; *afspraak* en *waarneembare vorm* nee | *wordt bewerkt* | *onderscheidbare exemplaren*, *levenscyclus* | annotatie data-object |
-| Afspraak (Contract) | *afspraak* | *wordt bewerkt* | *onderscheidbare exemplaren*, *levenscyclus* | — |
-| Product | *aanbod als geheel* | *omvat diensten en afspraken* | *afnemer*, *benoembaar resultaat* | — |
-| Dienst | *gedrag* en *aangeboden gedrag* | *gerealiseerd door* | *afnemer*, *benoembaar resultaat* | — |
-| Bedrijfsproces | *gedrag* en *per keer doorlopen* | *toegewezen partij* | *gebruikt objecten*, *aanleiding*, *benoembaar resultaat*, *komt herhaald voor*, *eigen normering* | *bijdrage aan groter proces* ja: procesniveau deelproces |
-| Bedrijfsfunctie | *gedrag* en *gegroepeerd gedrag* | *toegewezen partij* | *gebruikt objecten*, *stabiel over tijd* | — |
-| Gebeurtenis | *gedrag* en *toestandsverandering* | *leidt tot gedrag* | *komt herhaald voor* | — |
-| Actor | *handelende partij* met *los van verantwoordelijkheid*; of *samenwerkingsverband* (eventueel met *handelende partij*) met *eigen rechtspersoon* | *vervult een rol* | — | tegenhanger (bedrijfsobject) bij exemplaren, levenscyclus en bewerkt |
-| Rol | *hoedanigheid* zonder *los van verantwoordelijkheid* | *voert gedrag uit* | — | idem |
-| Bedrijfssamenwerking | *samenwerkingsverband* zonder *eigen rechtspersoon* | *voert gedrag uit* | — | — |
-| Kanaal | *toegangspunt* | *ontsluit een dienst* | — | koppelen aan de centrale set |
-| Beleidskader | *regeling als geheel* en *landelijk* | *is grondslag voor* | *in werking* | map motivatie |
-| Business Interaction | *gedrag* en *gezamenlijk gedrag* | — | — | herkend, voorleggen |
-| Representatie | *waarneembare vorm* | — | — | geen pagina; vermelden bij het object |
-| Locatie | *plaats* | — | — | geen pagina |
-
-Bij elk type met een paginatype gelden eerst de poorten en daarna het specialisatieniveau (*zelfstandige specialisatie*). Bij een type met hoogstens één overig drempelcriterium is de kernrelatie in feite de enige eis.
+Per elementtype welk kenmerk het type bepaalt, welke kernrelatie ja moet zijn, welke drempel geldt en wat er daarnaast uitkomt: zie [Kenmerken en beslistabel](beslistabel.md), *Beslistabel per elementtype* en *Beslistabel vanuit de kenmerken*.
 
 ## Kenmerken en hun vraag
 
-**Poort (alle typen).** Nee bij een van deze vragen (ja bij *buiten dit model* en *slechts eigenschap*) betekent: geen element van dit type.
-
-| Kenmerk | Vraag | Ja | Nee |
-|---|---|---|---|
-| herkenbaar | Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | het komt in wet, beleid of praktijk voor als zelfstandig begrip (Omgevingsvergunning) | technisch hulpgegeven of constructie van de modelleur (volgnummer van een dossierregel) |
-| gemeentelijk | Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | de gemeente voert uit, beslist, stelt vast, of is structureel partner (GGD) | alleen context, of de interne zaak van een ketenpartner (behandelend arts) |
-| buiten dit model | Is het een doel, waarde, drijfveer, principe, losse norm of eis, vermogen of thema, en geen beleidskader? Noem het ArchiMate-type. | armoedebestrijding (doel), "binnen acht weken beslissen" (norm uit één artikel) | bijstandsuitkering; Wet op de lijkbezorging (beleidskader) |
-| slechts eigenschap | Is het alleen een eigenschap, status, waarde, classificatie of indeling van één ander begrip, ook een doelgroep? Noem dat begrip. | bouwjaar (van Pand), minima (indeling van Inwoner) | Pand |
-| eigen identiteit | Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? Noem bij nee dat begrip. | Beschikking; uitgifte van een graf | ondertekening van een besluit (deelstap) |
-| betekenis in onderwerp | Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? Noem bij nee dat onderwerp. | Graf in lijkbezorging | akte van overlijden in lijkbezorging (hoort bij de burgerlijke stand) |
+De vraag, voorbeelden bij ja en nee en de herkomst van elk kenmerk staan op één plek: [Kenmerken en beslistabel](beslistabel.md), als vragenlijst in volgorde van beoordelen en als naslag per groep; welke typen een kenmerk gebruiken staat daar in de beslistabel vanuit de kenmerken. Ze worden gegenereerd uit de beslistabel zelf, zodat de vragen hier en daar niet uiteen kunnen lopen.
 
 **Specialisatieniveau (alle typen met een paginatype).** Dit kenmerk gaat over de "is een"-relatie tussen twee verschillende begrippen van hetzelfde type, nadat het type vaststaat. Het zegt niets over herkomst uit wet of beleid. Synoniemen (ander woord, zelfde betekenis) en homoniemen (zelfde woord, andere betekenis) zijn naamconflicten die vóór de beslistabel worden afgehandeld.
-
-| Kenmerk | Vraag | Ja | Nee |
-|---|---|---|---|
-| zelfstandige specialisatie (was: zelfstandig beleidsbegrip) | Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. | Omgevingsvergunning naast Vergunning (eigen wet en procedure); Houder van het crematorium naast Houder van de begraafplaats (eigen plichten); Behandelen omgevingsvergunningaanvraag uitgebreid (eigen termijnen) | vergunning tot opgraving (variant van Vergunning); aanvrager van een vergunning tot opgraving (variant van Aanvrager) |
-
-**Aard (precies één ja; alleen *handelende partij* met *hoedanigheid* of met *samenwerkingsverband* mag samen).** Bij *handelende partij* en *samenwerkingsverband* samen beslist *eigen rechtspersoon*: ja is actor, nee is bedrijfssamenwerking.
-
-| Kenmerk | Vraag | Ja | Nee |
-|---|---|---|---|
-| gedrag | Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | aanvraag behandelen; verhuizing | aanvraag |
-| handelende partij | Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren? | college van B&W; inwoner | aanvrager |
-| hoedanigheid | Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | aanvrager; houder van de begraafplaats | gemeenteraad |
-| samenwerkingsverband | Is het een (ook tijdelijke) samenstelling van twee of meer partijen of rollen die samen gedrag uitvoeren? | Zorg- en Veiligheidshuis; GGD (samenwerking van gemeenten) | GGD-arts |
-| toegangspunt | Is het een communicatiekanaal waarlangs een dienst beschikbaar komt? | publieksbalie; gemeentelijke website | klantcontact |
-| plaats | Is het een fysieke plaats als zodanig, en geen gebiedsindeling als gegeven? | stadskantoor als vestigingsplaats | wijk (indeling) |
-| aanbod als geheel | Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer wordt geleverd? | bewonersparkeervergunning zoals de productencatalogus haar aanbiedt | parkeren |
-| regeling als geheel | Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? | Wet op de lijkbezorging; modelverordening participatie | "verordening" als soort (bedrijfsobject Regeling); artikel 16 (losse norm) |
-
-**Partij.**
-
-| Kenmerk | Vraag | Ja | Nee | Telt bij |
-|---|---|---|---|---|
-| los van verantwoordelijkheid | Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | kerkgenootschap; burgemeester | houder van de begraafplaats | actor (ja), rol (nee) |
-| eigen rechtspersoon | Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | GGD (openbaar lichaam) | Zorg- en Veiligheidshuis | samenwerkingsverband: ja → actor, nee → bedrijfssamenwerking |
-| vervult een rol | Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? Noem de rol. | kerkgenootschap vervult Houder van de begraafplaats | partij die alleen genoemd wordt | kern actor |
-| voert gedrag uit | Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? Noem het. | Houder van de begraafplaats → Ruimen graf | rol zonder aanwijsbaar gedrag | kern rol, bedrijfssamenwerking |
-| ontsluit een dienst | Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst. | website → Melding openbare ruimte doen | kanaal zonder aanwijsbare dienst | kern kanaal |
-
-**Soort gedrag (bij *gedrag* precies één ja).**
-
-| Kenmerk | Vraag | Ja | Nee |
-|---|---|---|---|
-| per keer doorlopen | Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? | aanvraag omgevingsvergunning behandelen | vergunningverlening |
-| gegroepeerd gedrag | Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet "wat de gemeente kan"? | vergunningverlening; belastingheffing | aanslag opleggen |
-| toestandsverandering | Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | verhuizing; aanvraag ontvangen; beslistermijn verstreken | verhuizing doorgeven |
-| aangeboden gedrag | Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | melding openbare ruimte doen | melding afhandelen |
-| gezamenlijk gedrag | Kan het alleen door twee of meer partijen samen worden uitgevoerd? | keukentafelgesprek; hoorzitting | beschikking opstellen |
-
-**Gedrag (drempel; nee als het geen gedrag is).**
-
-| Kenmerk | Vraag | Ja | Nee | Telt bij |
-|---|---|---|---|---|
-| toegewezen partij | Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? Noem de rol. | Ruimen graf (Houder van de begraafplaats) | draagvlak creëren | kern proces, functie |
-| gebruikt objecten | Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? Noem object en handeling. | Inspraak (registreert zienswijze) | burgerberaad | proces, functie |
-| aanleiding | Start het door een aanwijsbare gebeurtenis, verzoek of termijn? Noem die. | overheidsparticipatie (verzoek ingediend) | kennisdeling | proces |
-| benoembaar resultaat | Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? Noem het. | opgraving (opgegraven lijk) | informeren | proces, dienst, product |
-| komt herhaald voor | Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | inspraak (per ontwerpbesluit); overlijden | invoeren van de participatieverordening | proces, gebeurtenis |
-| eigen normering | Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? Noem het artikel. | inspraak (afdeling 3.4 Awb) | burgerberaad (vormvrij) | proces |
-| stabiel over tijd | Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | participatie; belastingheffing | projectteam Omgevingswet | functie |
-| afnemer | Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? Noem die. | melding openbare ruimte doen (inwoner) | interne registratiestap | dienst, product |
-| gerealiseerd door | Is er een proces of functie aanwijsbaar dat de dienst uitvoert? Noem het. | Onderhoud van graven (gerealiseerd door het proces dat graven onderhoudt) | dienst zonder aanwijsbare uitvoering | kern dienst |
-| leidt tot gedrag | Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? Noem het. | Overlijden → Uitvoeren lijkbezorging | voorval zonder gemeentelijk gevolg | kern gebeurtenis |
-| bijdrage aan groter proces | Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? Noem dat proces. | toetsen indieningsvereisten (in behandelen aanvraag) | behandelen aanvraag (levert het besluit zelf) | proces: ja → procesniveau deelproces |
-
-**Passief.**
-
-| Kenmerk | Vraag | Ja | Nee | Telt bij |
-|---|---|---|---|---|
-| onderscheidbare exemplaren | Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | aanvraag (elke aanvraag apart) | gemeentefonds (er is er één) | bedrijfsobject, afspraak |
-| levenscyclus | Ontstaan, veranderen en eindigen de exemplaren? | vergunning (verleend, gewijzigd, ingetrokken) | kadastrale gemeentecode | bedrijfsobject, afspraak |
-| wordt bewerkt | Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? Noem het gedrag. | aanvraag (geregistreerd, beoordeeld) | preventieakkoord (alleen beleidsmatig) | kern bedrijfsobject, afspraak |
-| afspraak | Is het een overeenkomst tussen twee of meer partijen met rechten en plichten, en geen eenzijdig besluit of regeling? | subsidieovereenkomst; uitvoeringsovereenkomst | subsidiebeschikking; verordening | type afspraak |
-| waarneembare vorm | Is het de vorm (document, formulier, register, bericht) waarin informatie van een ander begrip wordt vastgelegd of overgebracht? Noem dat begrip. | aanslagbiljet (van Aanslag); register van begraven lijken | aanslag | geen pagina |
-| omvat diensten en afspraken | Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. | parkeervergunning (dienst parkeren, voorwaarden) | losse dienst | kern product |
-| geautomatiseerd verwerkt | Wordt het als gegevensstructuur geautomatiseerd verwerkt? | zaak in het zaaksysteem | keukentafelgesprek | annotatie data-object |
-
-**Beleidskader.**
-
-| Kenmerk | Vraag | Ja | Nee | Telt bij |
-|---|---|---|---|---|
-| landelijk | Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? | Wet op de lijkbezorging; AVG; modelverordening | beheersverordening van één gemeente (blijft bron) | type beleidskader |
-| in werking | Is de regeling geldend recht, of als modelverordening actueel? | Archiefwet 1995 | ingetrokken wet | beleidskader |
-| is grondslag voor | Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? Noem het artikel en het gedrag. | Wet op de lijkbezorging art. 28 → Verlenen grafrecht | BW boek 2, gebruikt voor één definitie | kern beleidskader |
 
 Samen 46 kenmerken: 6 poorten, 1 voor het specialisatieniveau, 8 voor de aard, 5 voor de partij, 5 voor de soort gedrag, 11 voor gedrag, 7 passief en 3 voor het beleidskader.
 

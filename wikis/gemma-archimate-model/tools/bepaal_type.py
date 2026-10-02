@@ -763,9 +763,8 @@ def doc_vragenlijst() -> list[str]:
 def doc_naslag() -> list[str]:
     regels = ["### Kenmerken: naslag per groep", ""]
     for groep in GROEPEN:
-        regels += [f"**{groep}.** {GROEP_ALS[groep]}", "", "| Kenmerk | Vraag | Ja, bijvoorbeeld | Nee, bijvoorbeeld | Herkomst |",
-                   "|---|---|---|---|---|"]
-        regels += [f"| {km.naam} | {_cel(km.vraag)} | {_cel(km.ja)} | {_cel(km.nee)} | {_cel(km.herkomst)} |"
+        regels += [f"**{groep}.** {GROEP_ALS[groep]}", "", "| Kenmerk | Voorbeelden en herkomst |", "|---|---|"]
+        regels += [f"| **{km.naam}**: {_cel(km.vraag)} | Ja: {_cel(km.ja)}. Nee: {_cel(km.nee)}. Herkomst: {_cel(km.herkomst)}. |"
                    for km in KENMERKEN if km.groep == groep]
         regels.append("")
     return regels
