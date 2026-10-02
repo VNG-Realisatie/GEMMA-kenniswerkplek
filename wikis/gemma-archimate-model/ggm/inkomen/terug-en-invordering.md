@@ -1,83 +1,319 @@
-<!-- gegenereerd door tools/ggm.py; hash: 0583610e0477bec1d179d82b7310ebf4f102c5596948fa3b659957bd55a56199 -->
+<!-- gegenereerd door tools/ggm.py; hash: fa6441f5aa93fedac7a17bc094ba03cb569356f184d63e966cc0ab0df476edef -->
 # Terug- en invordering
 
 Taakveld: Inkomen. Alleen objecttypen; letterlijke definities uit het GGM.
 
-| Objecttype | GUID | Definitie | Attributen |
-|---|---|---|---|
-| Aflossing | `EAID_196161F4_8372_6334_AF08_263C236F7A38` | Een aflossing is de betaling van een afgesproken of opgelegd bedrag op een vordering. Een aflos-sing gebeurt in het kader van een aflossingsafspraak gemaakt bij een vordering of wordt eenzijdig opgelegd. De aflossing wordt geadministreerd als een vorderingscomponent onder die vordering. Afgesproken is minnelijk maar kan ook opgelegd worden, bijv 5% verrekening of beslag op loon. | Aflossingskenmerk, Bedrag, Boekingsdatum, Ontvangstdatum |
-| Aflossingsafspraak | `EAID_0F06241B_EBEF_4053_33E4_263C236F76FC` | Een aflossingsafspraak is een onderdeel van het aflossingsplan. Het is een afspraak over hoe en wanneer het opgelegde bedrag wordt afgelost. Het opgelegde bedrag is het bedrag is de hele vordering of het bdrag na verrekening of beslag.Elke afspraak in het aflossingsplan bepaalt welk bedrag afgelost wordt op welke vordering vanaf een zekere startdatum per tijdseenheid (doorgaans een maand). | Bedrag, Einddatum, Indicatie inclusief vakantiegeld, Periodiek, Startdatum |
-| Aflossingsplan | `EAID_234EB82E_9EC6_5904_2634_263C0A957ADF` | Een aflossingsplan bevat alle afspraken tussen de gemeente en de debiteur over op welke vordering hij/zij per wanneer welk bedrag aflost.Verder geldt dat er bijzondere afspraken kunnen worden vastgelegd, bijvoorbeeld Dwangbevel. In zulke gevallen wordt de gehele schuld in één keer weer opeisbaar gesteld. | Aflossingskenmerk, Einddatum, Startdatum |
-| Afschrijving | `EAID_c0026057_03ab_4e5b_a021_aa9175c4078c` | De vordering blijkt oninbaar. Er is (nog) geen aflossingsmogelijkheid. Er wordt ook niet geacht dat er perspectief is tot invordering. Er wordt afscheid genomen van de vordering.Afscheid nemen van de vordering gebeurt via het afschrijven van de vordering. De reden daarvan wordt opgegeven. | Aanmaakdatum, Reden afschrijving |
-| Betaalcomponent | `EAID_1D10018E_888E_945B_4A20_293102BE4D4C` | Een rechtmaand kan door de tijd heen door correcties meerdere betaalcomponenten krijgen. Met de betaalcomponent leg je vast welk bedrag op welke boekingsdatum is betaald in het kader van de rechtmaand.Deze administratie is noodzakelijk omdat moet kunnen worden bepaald welk deel in de terugvordering bruto en welke netto moet worden teruggevorderd. | Bedrag, Boekingsdatum |
-| Boetevordering | `EAID_173D0C11_3C5E_8344_BE5E_293122950DAC` | Een vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente. Vorderingen die zijn ingesteld omdat er een boete vanwege een overtreding van de inlichtingenplicht is opgelegd. De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.Deze type vordering zijn als verbijzonderingen opgenomen, opdat deze relaties expliciet kunnen worden gelegd. |  |
-| Conservatoir beslag | `EAID_1CE90960_888E_945B_4A20_28F9C71E4D4C` | In het Nederlands recht is een conservatoir beslag een beslaglegging op (een deel van) het vermogen van een schuldenaar ter verzekering van de betaling van een onbetaald gebleven vordering nog voordat de rechter uitspraak heeft gedaan over de juistheid van die vordering. De toestemming tot het leggen van dit beslag moet door een advocaat namens de schuldeiser aan de beslagrechter, ook wel "voorzieningenrechter", worden gevraagd. Door het leggen van het beslag ontstaat meer zekerheid dat het beslagen vermogen ter beschikking staat. De voorzieningenrechter is in Nederland over het algemeen snel geneigd toestemming voor het beslag te verlenen en dat zelfs zonder dat de schuldenaar van het verzoek op de hoogte is of daarover wordt gehoord. | Aanvraagdatum, Toestemmingsdatum |
-| Correctie | `EAID_1B73F18A_888E_945B_4A20_26E8FA774D4C` | Na nader inzicht corrigeren van het te vorderen bedrag met een zeker bedrag. Correcties worden geadministreerd onder de vordering. | Bedrag, Boekingsdatum, Reden |
-| Debiteur | `EAID_107E216A_17F2_DFCA_EAFE_263C7FFC912E` | Binnen het domein van terug- en invorderen is een debiteur een persoon waarop de gemeente een of meerdere vorderingen heeft. | Eigen kenmerk, Opvoerdatum, Soort debiteur |
-| Incassokostenvordering | `EAID_a19a36c3_66e1_44c2_b674_6f3a3d98c5ea` | AlgemeenEen vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente.De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.IncassokostenvorderingBij het invorderproces kunnen incassokosten ontstaan bij een bepaalde vordering. Bij incassokosten boven een drempel (instelbare referentiewaarde) kan een incassokostenvordering worden opgevoerd. De incassokostenvordering wordt gerelateerd aan de hoofdvordering. De incassokostenvordering is een zogenaamde accessoire vordering, die zijn titel ontleend aan de hoofdvordering.Dit type vordering is als verbijzondering opgenomen, opdat deze relatie expliciet kan worden gelegd. |  |
-| Interventie | `EAID_1BCE2533_656D_D59B_6ECD_28FC06D8D601` | De daadwerkelijke interventie, die wordt ondernomen naar aanleiding van een interventieverzoek. | Beslisdatum, Ingangsdatum, Interventietype |
-| Interventieverzoek | `EAID_0897E8F8_77FF_DE35_D40E_28FC069F6910` | In het geval van monitoring op aflossingsafspraken bij een vordering kan bij ongeregeldheden, zoals het achterwege blijven van aflossingen, een signaal worden gegeven om te interveneren. Dit gebeurt door een interventieverzoek. Interventies geschieden volgens een interventieladder. Altijd kan een medewerker daar gemotiveerd van afwijken, bijvoorbeeld na klantcontact. Dit betekent niet dat het interventieverzoek niet minder dwingend is. | Verzoekdatum |
-| Invorderingsbasis | `EAID_0A9D7FDF_4271_2DBE_58D2_28F9CE6C00A4` | Een invordering is het innen van een schuld of een te veel uitbetaalde uitkeringssom, soms als gevolg van uitkeringsfraude. In de terugvorderingszaak wordt de vordering vastgesteld en beslist. In de invorderingszaak wordt die schuld vervolgens van de debiteur geïnd. Na betaling vervalt de vordering. Bij niet-betaling kan de vordering ook tenietgaan in de volgende situaties:bij verjaring (de verjaringstermijn werd niet op tijd gestuit)bij kwijtscheldingbij verrekeningbij overlijdenIndien geen verhaalsmogelijkheden aanwezig zijn en binnen afzienbare tijd niet te verwachten zijn, wordt de vordering oninbaar geleden. Dit betekent echter niet dat de vordering teniet gaat. Als nadat de vordering oninbaar is geleden verhaalsmogelijkheden bekend worden, kan daarop gewoon verhaal worden gehaald.Indien geen verhaalsmogelijkheden aanwezig en binnen afzienbare tijd niet te verwachten zijn, wordt de vordering oninbaar geleden. Dit betekent echter niet dat de vordering teniet gaat. Als nadat de vordering oninbaar is geleden verhaalsmogelijkheden bekend worden, kan daarop gewoon verhaal worden gehaald.Teruggaven blijven verrekend worden met oninbaar geleden vorderingen, zolang deze nog niet verjaard zijn.Basis voor het invorderen vormen drie grootheden:de invorderingsmogelijkheidde beslagvrije voetde aflossingscapacteit.In de tijd kunnen deze basisvariabelen wijzigen. Per wijziging worden deze basisvariabelen geadministreerd.De invorderingsbasis vormt dus de basis voor invorderen en derhalve voor het maken van de aflossingsafspraken in het aflossingsplan.Omdat de drie hiervoor genoemde grootheden debiteurafhankelijk zijn, is de invorderingsbasis direct gekoppeld aan de debiteur.Let op!Van de invorderingsbasis wordt alleen de actuele situatie geadministreerd. Historie kan worden vastgehouden in de zaak. | Aflossingscapaciteit, Beslagvrije voet, Invorderingsmogelijkheid, Type invorderingsmogelijkheid, Vaststeldatum aflossingscapaciteit, Vaststeldatum beslagvrije voet, Vaststeldatum invorderingsmogelijkheid |
-| Krediethypotheek | `EAID_d3335b08_9b4b_4e55_b507_0e1d481f1409` | AlgemeenAls de bijstandsuitkering aan u geleend wordt, kan de gemeente u verplichten een hypotheek op de woning te vestigen. Dit wordt een krediethypotheek genoemd. Gemeenten doen dit om zekerheid te hebben dat de lening in de toekomst wordt afgelost. Bent u eigenaar van een woonwagen of een niet-geregistreerd woonschip? Dan kan de gemeente u verplichten een pandrecht te vestigen. Als de hypotheek of het pandrecht is gevestigd, kunt u gewoon in uw woning blijven wonen.De gemeente kan zelf bepalen of en wanneer zij overgaat tot het vestigen van pandrecht of hypotheek op uw huis, woonschip of woonwagen.Gevolgen krediethypotheekDoor het vestigen van een krediethypotheek gebruikt u de overwaarde van uw woning als onderpand voor uw leenbijstand. Onderpand wil zeggen dat de gemeente uw woning mag verkopen als u uw betalingsverplichtingen niet nakomt. Als u uw rente- en aflossingsverplichtingen niet nakomt, dan kan de gemeente uw woning verkopen en van de opbrengst uw rente– en aflossingsverplichtingen betalen. Als u zelf besluit om uw woning te verkopen, dan moet u (een deel van) de opbrengst gebruiken om uw leenbijstand af te lossen.Kosten krediethypotheekVoor de kosten die u eventueel maakt in verband met de taxatie van de woning en het vestigen van een krediethypotheek kunt u bijzondere bijstand ontvangen. U moet dan wel aan de voorwaarden voor het recht op bijzondere bijstand voldoen.Aflossing leningHieronder worden de situaties beschreven wanneer de lening moet worden afgelost.U stroomt uit de bijstand omdat u werk heeft gevonden. Als u uit de bijstand stroomt omdat u werk heeft gevonden moet u in principe de lening gaan aflossen. Wanneer dat het geval is, is afhankelijk van het gemeentelijke beleid.U moet opnieuw bijstand aanvragen. Is uw bijstand in de vorm van een geldlening geëindigd, maar doet u binnen een bepaalde periode opnieuw een beroep op bijstand? Dan kunt u mogelijk opnieuw bijstand in de vorm van een geldlening ontvangen. Informeer bij de gemeente.U verkoopt de woning. Verkoopt u de woning? Dan moet de lening meestal worden terugbetaald, mits de verkoop voldoende heeft opgebracht.U overlijdt. Als u overlijdt valt de woning in uw nalatenschap. Uw erfgenamen zullen de geldlening dan moeten terugbetalen uit de nalatenschap. De gemeente zal hierover met de erven corresponderen.OverzichtKrediethypotheek leidt dus niet meteen tot een vordering. Toch wordt een krediethypotheek gemeld aan Terug- en Invorderen. Met deze informatie kan beter maatwerk worden geleverd bij het bepalen van de aflossingsafspraken. Hetzelfde geldt voor de leenbijstand. | Bedrag, Vestigingsdatum |
-| Krediethypotheekvordering | `EAID_0238113B_1577_D45C_C5E9_293122B2568D` | AlgemeenEen vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente.De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Relaties tussen vorderingenVorderingen kunnen ook onderling in relatie staan, bijvoorbeeld:Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vorderingIncassokostenvordering voor als er in het kader van een vordering incassokosten zijn gemaakt, die verhaald worden.Rentevordering als bij leningen of kredieten rente in rekening wordt gebracht.Al deze vorderingen zijn zelfstandige vorderingen gerelateerd aan de originele vordering. Zij verkrijgen automatisch dezelfde titel als de originele vordering.InterventieladderBij een terugvordering vanwege het aflossen op een krediethypotheek moet in de interventieladder na een aanmaning een grosse gehaald worden bij de rechter. Vervolgens kan pas doorgeescaleerd worden naar dwangbevel. |  |
-| Kwijtschelding | `EAID_1127D07A_473D_2912_29AE_2ABDF0E8A586` | Het kwijtschelden van het restant van de vordering.RedenenDit kan om diverse redenen gebeuren, waaronder redenen uit het beleid.Als een debiteur zijn 36 maanden lang houdt aan de betaalafspraken, dan komt de debiteur in aanmerking voor kwijtschelding. Enkele noties hierbij:Het gaat hier om het houden van de afspraken.Hieronder vallen ook afspraken om tijdelijk niet af te lossen.In principe zal een enkele maand opschorten vanwege een maand niet betalen niet de betaaldiscipline verbreken, omdat de gemeente niet heeft ingegrepen via een interventie.Als de debiteur ineens de helft of meer aflost op de vordering.BedragHet bedrag in de kwijtschelding heeft die hoogte dat de totale restant van de vordering op nul komt. | Bedrag, Boekingsdatum, Reden |
-| Leenbijstand | `EAID_18090A2C_CED1_0A51_0DFD_294370D99076` | AlgemeenLeenbijstand is een lening aan de burger, die in termijnen moet worden terugbetaald.TerugbetalingAflossingen op leningen bedragen standaard 5% van de toepasselijke maandnorm inclusief vakantietoeslag (VT);De lening wordt in maximaal 36 termijnen terugbetaald. Het restant wordt afgeschreven. De gemeente vordert terug als iemand zich niet aan de verplichtingen van de leenovereenkomst houdt.Leenbijstand worden gemeld aan Terug- en Invorderen voor een 360-graden view op de debiteur. Dan kan hiermee rekening worden gehouden bij het maken van aflossingsafspraken.Leenbijstand wordt verrekend met de uitkering en zal in dergelijke gevallen niet leiden tot terugvorderenPas als de persoon uit de bijstand gaat, zal het voorliggende proces een terugvorderingsverzoek doen bij Terug- en Invorderen.De totaal gegeven leenbijstand wordt teruggevorderd. Hier is een CBS-categorie voor.Mogelijke gevallen (illustratief)Leenbijstand (in de vorm van Bijzondere Bijstand) is onder andere mogelijk in de volgende situaties:U moet een waarborgsom betalen bij het huren van een huis;U wacht op geld waarvan u kunt leven. Het is bijvoorbeeld mogelijk dat u lange tijd moet wachten op de uitbetaling van een erfenis;U moet door eigen toedoen bijstand aanvragen of eerder aanvragen dan nodig was;U hebt een koophuis, u hebt (redelijk) veel eigen vermogen in het huis zitten en geen of weinig inkomsten;U bent zelfstandige of u bent net gestart met uw eigen bedrijf of beroep.NB: U moet een lening altijd weer terugbetalen. | Aflossingskenmerk, Bedrag, Boekingsdatum, Ontvangstdatum |
-| Leenbijstandvordering | `EAID_ed7f7a0f_bef9_4532_94ad_f36418629141` | AlgemeenLeenbijstand is een lening aan de burger, die in termijnen moet worden terugbetaald. Zie: Leenbijstand.TerugbetalingAflossingen op leningen bedragen standaard 5% van de toepasselijke maandnorm inclusief vakantietoeslag (VT);De lening wordt in maximaal 36 termijnen terugbetaald. Het restant wordt afgeschreven. De gemeente vordert terug als iemand zich niet aan de verplichtingen van de leenovereenkomst houdt.Leenbijstand wordt verrekend met de uitkering en zal in dergelijke gevallen niet leiden tot terugvorderenPas als de persoon uit de bijstand gaat, zal het voorliggende proces een terugvorderingsverzoek doen bij Terug- en Invorderen.De totaal gegeven leenbijstand wordt teruggevorderd. Hier is een CBS-categorie voor. |  |
-| Loonbeslagafspraak | `EAID_1a6b9a31_c4c7_4b46_92ef_0dd7e31613ed` | Een loonbeslagafspraak is een aflossingsafspraak.Tevens is het een afspraak tussen twee partijen (organisaties) om voor het aflossen van vorderingen. Hierbij zal de ene partij - de werkgever van de debiteur - een afgesproken bedrag in houden op het loon van de debiteur en het ingehouden bedrag overmaken naar crediteur.Aangezien Loonbeslag een Inkomstencomponent is (zie het inkomstenmodel) ligt er een impliciete relatie tussen de Loonbeslagafspraak en het Loonbeslag. |  |
-| Rechtmaand | `EAID_0DF4970C_7D69_27D9_7976_263C0A6C41DC` | Een vordering in het kader van de bijvoorbeeld de bijstand kan over meerdere kalendermaanden betreffen. In die maanden had de debiteur recht op die bijstand. Zo'n maand onder die vordering noemt men een rechtmaand.Rechtmaanden worden geadministreerd onder een vorderingscomponent bij de vordering. Als de vordering meerdere rechtmaanden bevat die of niet opvolgend zijn of een jaargrens passeren, dan worden die rechtmaanden opgesplitst in reeksen van opvolgende rechtmaanden binnen een jaar. Elke opsplitsing vormt dan een vorderingscomponent. | Boekjaar, Jaar, Maand |
-| Rentevordering | `EAID_170B4422_37F6_8893_2627_293122D74F28` | AlgemeenEen vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente.De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.RentevorderingBepaalde vorderingen zijn rentedragend. De rente wordt niet als aparte component opgevoerd bij de hoofdvordering, maar als een aparte vordering. De rentevordering wordt gerelateerd aan de hoofdvordering. De rentevordering is een zogenaamde accessoire vordering, die zijn titel ontleend aan de hoofdvordering.Dit type vordering is als verbijzondering opgenomen, opdat deze relatie expliciet kan worden gelegd. |  |
-| Restitutie | `EAID_167B47ED_CED1_0A51_0DFD_2698932A9076` | Restitutie is terugbetaling van te veel ontvangen aflossing. Restituties worden geadministreerd onder de vordering. | Bedrag, Betaaldatum, Boekingsdatum |
-| Terugvorderingsverzoek | `EAID_101157F7_7852_102E_7547_2698B55B6FF8` | Het vorderingsverzoek is de handshake tussen een voorliggend proces en de bedrijfsfunctie Terug- en Invorderen. In het kader van een bepaalde regeling is geconstateerd dat een zeker bedrag terug moet worden gevorderd. Dit wordt her gemakshalve het voorliggende proces genoemd. Het voorliggende proces moet de juiste, noodzakelijke en voldoende gegevens toeleveren aan Terug- en invorderen opdat het verzoek tot terugvorderen in behandeling kan worden genomen.Het vorderingsverzoek start een terugvorderingszaak. Op basis van de voortgang van die zaak kan het verzoekende voorliggende proces op de hoogte worden gehouden van de voortgang via zaakstatusinformatie. | Aanmaakdatum, Behandelstatus verzoek, Categorie, Fiscaal, Periode einddatum, Periode startdatum, Priotype, Regeling, Subcategorie |
-| Uitstel aflossing | `EAID_74e47f85_a936_43c0_8ef2_1605bdb5efed` | Er kunnen redenen zijn om het aflossingsplan te pauseren. Zie de opties bij het attribuut Reden uitstel.Het volgende geldt:Uitstel van aflossing grijpt aan op alle afspraken in het aflossingsplan.Uitstel leidt tot termijnbewaking om de medewerker er op te attenderen of het uitstel nog aan de orde zou moeten zijn.De termijn in de termijnbewaking kan verschillen per reden van uitstel. | Aanmaakdatum, Periode einddatum, Periode startdatum, Reden uitstel |
-| Vermindering terugvordering | `EAID_1A6E0A2E_9431_0F7A_1EAA_263C1D239DF6` | Vermindering terugvordering is het resultaat van een beslissing de terugvordering te verminderen met een zeker bedrag met zekere motivatie. De vermindering terugvordering wordt geadministreerd onder de vordering. | Bedrag, Boekingsdatum, Motivatie vermindering, Vaststeldatum, Verminderingtype |
-| Verrekening | `EAID_1EA8771B_DB7F_17D8_8AB8_26A1BD8F6A56` | Bij het vaststellen van de vordering wordt gekeken of de debiteur een uitkering geniet. Er zijn twee soorten situaties van verrekening. inkomstenverrekening waar de inkomsten 6 maanden wordt verrekend met de bijstandsuitkeringverrekening alias inhouding op een uitkering (een soort van loonbeslag) / verrekening in de zin van art. 60 lid 3 en 4 PW.Hier wordt de laatste bedoeld.Verrekening op grond van artikel 60 lid 3 en 4 Participatiewet door de gemeente gaat vóór beslag door een derde (artikel 60 lid 7 Participatiewet). Voor de praktijk betekent dit dat:Een lopend beslag wordt opgeschort zodra de gemeente (op grond van hun invorderingsbevoegdheid) een bedrag gaat verrekenen met de bijstandsuitkering. De beslaglegger wordt van de opschorting op de hoogte gesteld.De verrekening ongewijzigd wordt voortgezet indien nadien beslag door een derde wordt gelegd. De beslaglegger wordt medegedeeld dat het beslag niet uitvoerbaar is in verband met verrekening.Voorwaarde voor verrekening op grond van artikel 60 lid 3 en 4 Participatiewet is dat er een terugvorderingsbesluit of boetebesluit is genomen. Bij verstrekking van bijstand in de vorm van een geldlening kunnen echter de vastgestelde aflossingsbedragen direct worden verrekend op grond van artikel 48 lid 4 Participatiewet. Een terugvorderingsbesluit ingevolge artikel 58 lid 2 onderdeel b Participatiewet is dan dus niet noodzakelijk.Pseudo-verrekening gaat niet voor beslag.Pseudo-verrekening zoals bedoeld in artikel 60a Participatiewet gaat niet voor beslag door een derde onder een andere gemeente (of onder het Uitvoeringsinstituut werknemersverzekeringen of de Sociale verzekeringsbank).Een verrekening is verder te behandelen als een vordering, maar juridisch een ander ding. |  |
-| Verwijtbare vordering | `EAID_11F2FF40_D317_92C3_C4DB_2931225D4B40` | Een vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente. Het zijn vorderingen die zijn ingesteld vanwege het niet nakomen van de inlichtingen-plicht waardoor de uitkerende instantie ten onrechte heeft uitbetaald . De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.Deze type vordering zijn als verbijzonderingen opgenomen, opdat deze relaties expliciet kunnen worden gelegd. |  |
-| Vordering | `EAID_14116EEA_C461_0DB2_97AB_263C0A4777FC` | Een vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag (terug) moet betalen aan de gemeente in het kader van de bijstand of een bijstandsgerelateerde uitkering.De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.Deze type vordering zijn als verbijzonderingen opgenomen, opdat deze relaties expliciet kunnen worden vastgelegd. | Categorie, Fiscaal, Periode einddatum, Periode startdatum, Priotype, Regeling, Stuitingsvoortgangsindicator, Subcategorie, Titel, Vaststeldatum terugvordering, Verjaringsdatum, Verwerkingsstatus |
-| Vorderingscomponent | `EAID_1A979E6B_841E_392B_952F_29311D13BF9F` | Vorderingen, die bestaan uit verschillende rechtmaanden, worden gesplitst in vorderingscomponenten alsde rechtmaanden niet aansluitend zijn ofals er tussen opvolgende rechtmaanden een jaarovergang zit.De een opeenvolgende reeks van rechtmaanden binnen een jaar wordt gekoppeld aan de vorderingscomponent. Dit gebeurt tijdens het vaststellen van de terugvordering. | Periode einddatum, Periode startdatum, Priotype |
+## Aflossing
 
-## Relaties
+Een aflossing is de betaling van een afgesproken of opgelegd bedrag op een vordering. Een aflos-sing gebeurt in het kader van een aflossingsafspraak gemaakt bij een vordering of wordt eenzijdig opgelegd. De aflossing wordt geadministreerd als een vorderingscomponent onder die vordering. Afgesproken is minnelijk maar kan ook opgelegd worden, bijv 5% verrekening of beslag op loon.
 
-| Van | Type | Naam | Naar | Kardinaliteit | GUID | Definitie |
-|---|---|---|---|---|---|---|
-| Aflossing | Aggregation (shared) | Aflossing is gedaan vanuit Bankrekening | Bankrekening | 1..1 → 0..* | `EAID_40359756_fbbf_4ee1_ac08_405f1cd42474` |  |
-| Aflossingsafspraak | Aggregation (composite) | Aflossingsafspraak bevat Aflossing | Aflossing | 0..* → 1..1 | `EAID_07ABABBC_951B_E467_C8E1_263C2773145F` |  |
-| Aflossingsafspraak | Aggregation (shared) | Aflossingsafspraak betreft Vordering | Vordering | 1..1 → 0..* | `EAID_0899EA37_BE4E_4523_61AF_263C258628E7` |  |
-| Aflossingsplan | Aggregation (composite) | Aflossingsplan ondergaat Uitstel aflossing | Uitstel aflossing | 0..1 → 1..1 | `EAID_08abe303_05b7_4578_8d5a_1c8986892779` |  |
-| Aflossingsplan | Aggregation (composite) | bevat | Aflossingsafspraak | 1..* → 1..1 | `EAID_19DD45DC_5AA9_FABD_50DC_263C24621B6C` |  |
-| Aflossingsplan | Aggregation (shared) | is gebaseerd op | Invorderingsbasis | 1..1 → 1..1 | `EAID_1AADF3B2_BCF5_C7B1_6E79_28FC0756152E` |  |
-| Boetevordering | Aggregation (shared) | is gerelateerd aan | Verwijtbare vordering | 0..1 → 0..1 | `EAID_098BFB74_D98B_118C_2214_2927B827F6D7` |  |
-| Boetevordering | Generalization | Vordering generaliseert Boetevordering | Vordering |  →  | `EAID_084388F4_951B_E467_C8E1_293123A3145F` |  |
-| Debiteur | Aggregation (composite) | Debiteur heeft Invorderingsbasis | Invorderingsbasis | 1..1 → 1..1 | `EAID_0431D11E_3AE2_C52B_104C_2928F05660F4` |  |
-| Debiteur | Aggregation (shared) | Debiteur heeft Vordering | Vordering | 1..* → 1..2 | `EAID_1408C1CF_F630_64E6_4C2F_263C138FAC11` |  |
-| Debiteur | Aggregation (composite) | heeft | Aflossingsplan | 0..1 → 1..1 | `EAID_1624B655_157F_D9F5_640E_263C266D2F4E` |  |
-| Debiteur | Aggregation (shared) | Debiteur heeft afgesloten Krediethypotheek | Krediethypotheek | 0..1 → 1..2 | `EAID_a3c710bd_ff8f_4eea_ae04_db958ff5acc8` |  |
-| Debiteur | Aggregation (shared) | Debiteur heeft aangegaan Leenbijstand | Leenbijstand | 0..* → 1..2 | `EAID_d1b8d3de_129e_4d43_af57_090f8c65db18` |  |
-| Debiteur | Association | verwijst | Client | 0..1 → 1 | `EAID_8E8DA387_26C8_4a71_BC2C_6DC5FA6F6C8B` |  |
-| Incassokostenvordering | Aggregation (shared) | Incassokostenvordering is gerelateerd aan Vorderin | Vordering | 1..1 → 0..* | `EAID_4555038b_c4fc_4ce6_9316_cb1fbf710a9a` |  |
-| Incassokostenvordering | Generalization | Vordering generaliseert Incassokostenvordering | Vordering |  →  | `EAID_78275ad6_46b9_44fe_98e0_bc985dde9281` |  |
-| Interventieverzoek | Aggregation (shared) | initieert | Interventie | 0..1 → 1..* | `EAID_1E3D3616_9089_2A1D_4FBF_28FC089977C5` |  |
-| Interventieverzoek | Aggregation (shared) | heeft betrekking op | Aflossingsafspraak | 1..* → 0..* | `EAID_269DD70D_7782_B958_65A1_28FC08223B63` |  |
-| Krediethypotheek | Aggregation (shared) | is origine van | Krediethypotheekvordering | 0..* → 1..1 | `EAID_0593c719_a0cd_43c5_9606_d3f450c7484f` |  |
-| Krediethypotheek | Generalization | Hypotheek generaliseert Krediethypotheek | Hypotheek |  →  | `EAID_8bcac76c_df21_42c0_a6bc_f0cd6a3d8a6e` |  |
-| Krediethypotheekvordering | Generalization | Vordering generaliseert Krediethypotheekvordering | Vordering |  →  | `EAID_2005BCF8_41C0_17A4_33A4_293123B2B6A0` |  |
-| Leenbijstand | Aggregation (shared) | is origine van | Leenbijstandvordering | 0..* → 1..1 | `EAID_271e5b6d_0bc7_47e2_bd0b_3045ad2beeb3` |  |
-| Leenbijstandvordering | Generalization | Vordering generaliseert Leenbijstandvordering | Vordering |  →  | `EAID_083900AB_ADCD_7446_5B65_2AD7FBBA2665` |  |
-| Loonbeslagafspraak | Generalization | Aflossingsafspraak generaliseert Loonbeslagafspraa | Aflossingsafspraak |  →  | `EAID_35c31cf6_7e38_4b63_9d28_fca9d6a232d1` |  |
-| Rechtmaand | Aggregation (composite) | Rechtmaand bevat Betaalcomponent | Betaalcomponent | 1..* → 1..1 | `EAID_122CA19B_7DF4_C4FE_D5BB_2931038D61F0` |  |
-| Rentevordering | Aggregation (shared) | Rentevordering is gerelateerd aan Vordering | Vordering | 1..1 → 0..* | `EAID_20276CF6_CD34_6B90_7508_29312433DAFE` |  |
-| Rentevordering | Generalization | Vordering generaliseert Rentevordering | Vordering |  →  | `EAID_14B94C41_1654_4425_9F6F_293123C0CF5C` |  |
-| Terugvorderingsverzoek | Aggregation (composite) | Terugvorderingsverzoek bevat Rechtmaand | Rechtmaand | 0..* → 1..1 | `EAID_0B702CAD_661C_8F1C_4F9A_275D15CD4BAB` |  |
-| Terugvorderingsverzoek | Aggregation (shared) | Terugvorderingsverzoek betreft Dienst | Dienst | 1..1 → 0..* | `EAID_15326145_EC46_89CA_680B_26B42589D8E5` |  |
-| Terugvorderingsverzoek | Aggregation (shared) | leidt tot | Vordering | 0..1 → 1..1 | `EAID_82cb1000_a7d4_42b4_92a5_4b61d1936a60` |  |
-| Terugvorderingsverzoek | Association | betreft | Client | 0..* → 1..2 | `EAID_E757EB41_44FC_498e_B608_E3E2572C514C` |  |
-| Verrekening | Generalization | Vordering generaliseert Verrekening | Vordering |  →  | `EAID_04495F03_1A5F_CC83_48D3_2AD7FB650BAF` |  |
-| Verwijtbare vordering | Generalization | Vordering generaliseert Verwijtbare vordering | Vordering |  →  | `EAID_25733C9B_2D78_96ED_AE7B_26A1BDD31C0C` |  |
-| Vordering | Aggregation (composite) | Vordering bevat Correctie | Correctie | 0..* → 1..1 | `EAID_08BEDD6F_95A3_5D0B_E03F_272BFB507A5F` |  |
-| Vordering | Aggregation (composite) | Vordering bevat Vermindering terugvordering | Vermindering terugvordering | 0..* → 1..1 | `EAID_0D5798B1_0B80_7B80_34BD_272BFB50DD52` |  |
-| Vordering | Aggregation (composite) | Vordering bevat Vorderingscomponent | Vorderingscomponent | 0..* → 0..1 | `EAID_10DEA4C6_7DF4_C4FE_D5BB_263C0B2261F0` |  |
-| Vordering | Aggregation (composite) | Vordering bevat Restitutie | Restitutie | 0..* → 1..1 | `EAID_13D308E9_63F5_1B7C_C8B3_272BFB4F75AB` |  |
-| Vordering | Aggregation (composite) | Vordering bevat Kwijtschelding | Kwijtschelding | 0..1 → 1..1 | `EAID_190B4CC9_EE7A_8466_548E_2ABDF1B1DE52` |  |
-| Vordering | Aggregation (composite) | Vordering bevat Aflossing | Aflossing | 0..* → 1..1 | `EAID_1BA337AF_888E_945B_4A20_272BFB4E4D4C` |  |
-| Vordering | Aggregation (shared) | Vordering is gerelateerd aan Conservatoir beslag | Conservatoir beslag | 0..1 → 1..1 | `EAID_28605E72_CD76_B233_6AE7_28F9CB25BC07` |  |
-| Vordering | Aggregation (composite) | Vordering bevat Afschrijving | Afschrijving | 0..1 → 1..1 | `EAID_2a236d1c_c8f7_4382_ba7f_0121655f8009` |  |
-| Vorderingscomponent | Aggregation (composite) | Vorderingscomponent bevat Rechtmaand | Rechtmaand | 0..* → 1..1 | `EAID_0FB8F97A_473D_2912_29AE_272BFB4FA586` |  |
+Attributen: Aflossingskenmerk, Bedrag, Boekingsdatum, Ontvangstdatum.
+
+GUID: `EAID_196161F4_8372_6334_AF08_263C236F7A38`
+
+Relaties:
+
+- Aflossing is gedaan vanuit Bankrekening → Bankrekening (*Aggregation (shared)*, 1..1 → 0..*, `EAID_40359756_fbbf_4ee1_ac08_405f1cd42474`)
+
+## Aflossingsafspraak
+
+Een aflossingsafspraak is een onderdeel van het aflossingsplan. Het is een afspraak over hoe en wanneer het opgelegde bedrag wordt afgelost. Het opgelegde bedrag is het bedrag is de hele vordering of het bdrag na verrekening of beslag.Elke afspraak in het aflossingsplan bepaalt welk bedrag afgelost wordt op welke vordering vanaf een zekere startdatum per tijdseenheid (doorgaans een maand).
+
+Attributen: Bedrag, Einddatum, Indicatie inclusief vakantiegeld, Periodiek, Startdatum.
+
+GUID: `EAID_0F06241B_EBEF_4053_33E4_263C236F76FC`
+
+Relaties:
+
+- Aflossingsafspraak bevat Aflossing → Aflossing (*Aggregation (composite)*, 0..* → 1..1, `EAID_07ABABBC_951B_E467_C8E1_263C2773145F`)
+- Aflossingsafspraak betreft Vordering → Vordering (*Aggregation (shared)*, 1..1 → 0..*, `EAID_0899EA37_BE4E_4523_61AF_263C258628E7`)
+
+## Aflossingsplan
+
+Een aflossingsplan bevat alle afspraken tussen de gemeente en de debiteur over op welke vordering hij/zij per wanneer welk bedrag aflost.Verder geldt dat er bijzondere afspraken kunnen worden vastgelegd, bijvoorbeeld Dwangbevel. In zulke gevallen wordt de gehele schuld in één keer weer opeisbaar gesteld.
+
+Attributen: Aflossingskenmerk, Einddatum, Startdatum.
+
+GUID: `EAID_234EB82E_9EC6_5904_2634_263C0A957ADF`
+
+Relaties:
+
+- bevat → Aflossingsafspraak (*Aggregation (composite)*, 1..* → 1..1, `EAID_19DD45DC_5AA9_FABD_50DC_263C24621B6C`)
+- is gebaseerd op → Invorderingsbasis (*Aggregation (shared)*, 1..1 → 1..1, `EAID_1AADF3B2_BCF5_C7B1_6E79_28FC0756152E`)
+- Aflossingsplan ondergaat Uitstel aflossing → Uitstel aflossing (*Aggregation (composite)*, 0..1 → 1..1, `EAID_08abe303_05b7_4578_8d5a_1c8986892779`)
+
+## Afschrijving
+
+De vordering blijkt oninbaar. Er is (nog) geen aflossingsmogelijkheid. Er wordt ook niet geacht dat er perspectief is tot invordering. Er wordt afscheid genomen van de vordering.Afscheid nemen van de vordering gebeurt via het afschrijven van de vordering. De reden daarvan wordt opgegeven.
+
+Attributen: Aanmaakdatum, Reden afschrijving.
+
+GUID: `EAID_c0026057_03ab_4e5b_a021_aa9175c4078c`
+
+## Betaalcomponent
+
+Een rechtmaand kan door de tijd heen door correcties meerdere betaalcomponenten krijgen. Met de betaalcomponent leg je vast welk bedrag op welke boekingsdatum is betaald in het kader van de rechtmaand.Deze administratie is noodzakelijk omdat moet kunnen worden bepaald welk deel in de terugvordering bruto en welke netto moet worden teruggevorderd.
+
+Attributen: Bedrag, Boekingsdatum.
+
+GUID: `EAID_1D10018E_888E_945B_4A20_293102BE4D4C`
+
+## Boetevordering
+
+Een vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente. Vorderingen die zijn ingesteld omdat er een boete vanwege een overtreding van de inlichtingenplicht is opgelegd. De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.Deze type vordering zijn als verbijzonderingen opgenomen, opdat deze relaties expliciet kunnen worden gelegd.
+
+GUID: `EAID_173D0C11_3C5E_8344_BE5E_293122950DAC`
+
+Relaties:
+
+- is gerelateerd aan → Verwijtbare vordering (*Aggregation (shared)*, 0..1 → 0..1, `EAID_098BFB74_D98B_118C_2214_2927B827F6D7`)
+- Vordering generaliseert Boetevordering → Vordering (*Generalization*,  → , `EAID_084388F4_951B_E467_C8E1_293123A3145F`)
+
+## Conservatoir beslag
+
+In het Nederlands recht is een conservatoir beslag een beslaglegging op (een deel van) het vermogen van een schuldenaar ter verzekering van de betaling van een onbetaald gebleven vordering nog voordat de rechter uitspraak heeft gedaan over de juistheid van die vordering. De toestemming tot het leggen van dit beslag moet door een advocaat namens de schuldeiser aan de beslagrechter, ook wel "voorzieningenrechter", worden gevraagd. Door het leggen van het beslag ontstaat meer zekerheid dat het beslagen vermogen ter beschikking staat. De voorzieningenrechter is in Nederland over het algemeen snel geneigd toestemming voor het beslag te verlenen en dat zelfs zonder dat de schuldenaar van het verzoek op de hoogte is of daarover wordt gehoord.
+
+Attributen: Aanvraagdatum, Toestemmingsdatum.
+
+GUID: `EAID_1CE90960_888E_945B_4A20_28F9C71E4D4C`
+
+## Correctie
+
+Na nader inzicht corrigeren van het te vorderen bedrag met een zeker bedrag. Correcties worden geadministreerd onder de vordering.
+
+Attributen: Bedrag, Boekingsdatum, Reden.
+
+GUID: `EAID_1B73F18A_888E_945B_4A20_26E8FA774D4C`
+
+## Debiteur
+
+Binnen het domein van terug- en invorderen is een debiteur een persoon waarop de gemeente een of meerdere vorderingen heeft.
+
+Attributen: Eigen kenmerk, Opvoerdatum, Soort debiteur.
+
+GUID: `EAID_107E216A_17F2_DFCA_EAFE_263C7FFC912E`
+
+Relaties:
+
+- heeft → Aflossingsplan (*Aggregation (composite)*, 0..1 → 1..1, `EAID_1624B655_157F_D9F5_640E_263C266D2F4E`)
+- Debiteur heeft Invorderingsbasis → Invorderingsbasis (*Aggregation (composite)*, 1..1 → 1..1, `EAID_0431D11E_3AE2_C52B_104C_2928F05660F4`)
+- Debiteur heeft afgesloten Krediethypotheek → Krediethypotheek (*Aggregation (shared)*, 0..1 → 1..2, `EAID_a3c710bd_ff8f_4eea_ae04_db958ff5acc8`)
+- Debiteur heeft aangegaan Leenbijstand → Leenbijstand (*Aggregation (shared)*, 0..* → 1..2, `EAID_d1b8d3de_129e_4d43_af57_090f8c65db18`)
+- Debiteur heeft Vordering → Vordering (*Aggregation (shared)*, 1..* → 1..2, `EAID_1408C1CF_F630_64E6_4C2F_263C138FAC11`)
+- verwijst → Client (*Association*, 0..1 → 1, `EAID_8E8DA387_26C8_4a71_BC2C_6DC5FA6F6C8B`)
+
+## Incassokostenvordering
+
+AlgemeenEen vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente.De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.IncassokostenvorderingBij het invorderproces kunnen incassokosten ontstaan bij een bepaalde vordering. Bij incassokosten boven een drempel (instelbare referentiewaarde) kan een incassokostenvordering worden opgevoerd. De incassokostenvordering wordt gerelateerd aan de hoofdvordering. De incassokostenvordering is een zogenaamde accessoire vordering, die zijn titel ontleend aan de hoofdvordering.Dit type vordering is als verbijzondering opgenomen, opdat deze relatie expliciet kan worden gelegd.
+
+GUID: `EAID_a19a36c3_66e1_44c2_b674_6f3a3d98c5ea`
+
+Relaties:
+
+- Incassokostenvordering is gerelateerd aan Vorderin → Vordering (*Aggregation (shared)*, 1..1 → 0..*, `EAID_4555038b_c4fc_4ce6_9316_cb1fbf710a9a`)
+- Vordering generaliseert Incassokostenvordering → Vordering (*Generalization*,  → , `EAID_78275ad6_46b9_44fe_98e0_bc985dde9281`)
+
+## Interventie
+
+De daadwerkelijke interventie, die wordt ondernomen naar aanleiding van een interventieverzoek.
+
+Attributen: Beslisdatum, Ingangsdatum, Interventietype.
+
+GUID: `EAID_1BCE2533_656D_D59B_6ECD_28FC06D8D601`
+
+## Interventieverzoek
+
+In het geval van monitoring op aflossingsafspraken bij een vordering kan bij ongeregeldheden, zoals het achterwege blijven van aflossingen, een signaal worden gegeven om te interveneren. Dit gebeurt door een interventieverzoek. Interventies geschieden volgens een interventieladder. Altijd kan een medewerker daar gemotiveerd van afwijken, bijvoorbeeld na klantcontact. Dit betekent niet dat het interventieverzoek niet minder dwingend is.
+
+Attributen: Verzoekdatum.
+
+GUID: `EAID_0897E8F8_77FF_DE35_D40E_28FC069F6910`
+
+Relaties:
+
+- heeft betrekking op → Aflossingsafspraak (*Aggregation (shared)*, 1..* → 0..*, `EAID_269DD70D_7782_B958_65A1_28FC08223B63`)
+- initieert → Interventie (*Aggregation (shared)*, 0..1 → 1..*, `EAID_1E3D3616_9089_2A1D_4FBF_28FC089977C5`)
+
+## Invorderingsbasis
+
+Een invordering is het innen van een schuld of een te veel uitbetaalde uitkeringssom, soms als gevolg van uitkeringsfraude. In de terugvorderingszaak wordt de vordering vastgesteld en beslist. In de invorderingszaak wordt die schuld vervolgens van de debiteur geïnd. Na betaling vervalt de vordering. Bij niet-betaling kan de vordering ook tenietgaan in de volgende situaties:bij verjaring (de verjaringstermijn werd niet op tijd gestuit)bij kwijtscheldingbij verrekeningbij overlijdenIndien geen verhaalsmogelijkheden aanwezig zijn en binnen afzienbare tijd niet te verwachten zijn, wordt de vordering oninbaar geleden. Dit betekent echter niet dat de vordering teniet gaat. Als nadat de vordering oninbaar is geleden verhaalsmogelijkheden bekend worden, kan daarop gewoon verhaal worden gehaald.Indien geen verhaalsmogelijkheden aanwezig en binnen afzienbare tijd niet te verwachten zijn, wordt de vordering oninbaar geleden. Dit betekent echter niet dat de vordering teniet gaat. Als nadat de vordering oninbaar is geleden verhaalsmogelijkheden bekend worden, kan daarop gewoon verhaal worden gehaald.Teruggaven blijven verrekend worden met oninbaar geleden vorderingen, zolang deze nog niet verjaard zijn.Basis voor het invorderen vormen drie grootheden:de invorderingsmogelijkheidde beslagvrije voetde aflossingscapacteit.In de tijd kunnen deze basisvariabelen wijzigen. Per wijziging worden deze basisvariabelen geadministreerd.De invorderingsbasis vormt dus de basis voor invorderen en derhalve voor het maken van de aflossingsafspraken in het aflossingsplan.Omdat de drie hiervoor genoemde grootheden debiteurafhankelijk zijn, is de invorderingsbasis direct gekoppeld aan de debiteur.Let op!Van de invorderingsbasis wordt alleen de actuele situatie geadministreerd. Historie kan worden vastgehouden in de zaak.
+
+Attributen: Aflossingscapaciteit, Beslagvrije voet, Invorderingsmogelijkheid, Type invorderingsmogelijkheid, Vaststeldatum aflossingscapaciteit, Vaststeldatum beslagvrije voet, Vaststeldatum invorderingsmogelijkheid.
+
+GUID: `EAID_0A9D7FDF_4271_2DBE_58D2_28F9CE6C00A4`
+
+## Krediethypotheek
+
+AlgemeenAls de bijstandsuitkering aan u geleend wordt, kan de gemeente u verplichten een hypotheek op de woning te vestigen. Dit wordt een krediethypotheek genoemd. Gemeenten doen dit om zekerheid te hebben dat de lening in de toekomst wordt afgelost. Bent u eigenaar van een woonwagen of een niet-geregistreerd woonschip? Dan kan de gemeente u verplichten een pandrecht te vestigen. Als de hypotheek of het pandrecht is gevestigd, kunt u gewoon in uw woning blijven wonen.De gemeente kan zelf bepalen of en wanneer zij overgaat tot het vestigen van pandrecht of hypotheek op uw huis, woonschip of woonwagen.Gevolgen krediethypotheekDoor het vestigen van een krediethypotheek gebruikt u de overwaarde van uw woning als onderpand voor uw leenbijstand. Onderpand wil zeggen dat de gemeente uw woning mag verkopen als u uw betalingsverplichtingen niet nakomt. Als u uw rente- en aflossingsverplichtingen niet nakomt, dan kan de gemeente uw woning verkopen en van de opbrengst uw rente– en aflossingsverplichtingen betalen. Als u zelf besluit om uw woning te verkopen, dan moet u (een deel van) de opbrengst gebruiken om uw leenbijstand af te lossen.Kosten krediethypotheekVoor de kosten die u eventueel maakt in verband met de taxatie van de woning en het vestigen van een krediethypotheek kunt u bijzondere bijstand ontvangen. U moet dan wel aan de voorwaarden voor het recht op bijzondere bijstand voldoen.Aflossing leningHieronder worden de situaties beschreven wanneer de lening moet worden afgelost.U stroomt uit de bijstand omdat u werk heeft gevonden. Als u uit de bijstand stroomt omdat u werk heeft gevonden moet u in principe de lening gaan aflossen. Wanneer dat het geval is, is afhankelijk van het gemeentelijke beleid.U moet opnieuw bijstand aanvragen. Is uw bijstand in de vorm van een geldlening geëindigd, maar doet u binnen een bepaalde periode opnieuw een beroep op bijstand? Dan kunt u mogelijk opnieuw bijstand in de vorm van een geldlening ontvangen. Informeer bij de gemeente.U verkoopt de woning. Verkoopt u de woning? Dan moet de lening meestal worden terugbetaald, mits de verkoop voldoende heeft opgebracht.U overlijdt. Als u overlijdt valt de woning in uw nalatenschap. Uw erfgenamen zullen de geldlening dan moeten terugbetalen uit de nalatenschap. De gemeente zal hierover met de erven corresponderen.OverzichtKrediethypotheek leidt dus niet meteen tot een vordering. Toch wordt een krediethypotheek gemeld aan Terug- en Invorderen. Met deze informatie kan beter maatwerk worden geleverd bij het bepalen van de aflossingsafspraken. Hetzelfde geldt voor de leenbijstand.
+
+Attributen: Bedrag, Vestigingsdatum.
+
+GUID: `EAID_d3335b08_9b4b_4e55_b507_0e1d481f1409`
+
+Relaties:
+
+- is origine van → Krediethypotheekvordering (*Aggregation (shared)*, 0..* → 1..1, `EAID_0593c719_a0cd_43c5_9606_d3f450c7484f`)
+- Hypotheek generaliseert Krediethypotheek → Hypotheek (*Generalization*,  → , `EAID_8bcac76c_df21_42c0_a6bc_f0cd6a3d8a6e`)
+
+## Krediethypotheekvordering
+
+AlgemeenEen vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente.De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Relaties tussen vorderingenVorderingen kunnen ook onderling in relatie staan, bijvoorbeeld:Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vorderingIncassokostenvordering voor als er in het kader van een vordering incassokosten zijn gemaakt, die verhaald worden.Rentevordering als bij leningen of kredieten rente in rekening wordt gebracht.Al deze vorderingen zijn zelfstandige vorderingen gerelateerd aan de originele vordering. Zij verkrijgen automatisch dezelfde titel als de originele vordering.InterventieladderBij een terugvordering vanwege het aflossen op een krediethypotheek moet in de interventieladder na een aanmaning een grosse gehaald worden bij de rechter. Vervolgens kan pas doorgeescaleerd worden naar dwangbevel.
+
+GUID: `EAID_0238113B_1577_D45C_C5E9_293122B2568D`
+
+Relaties:
+
+- Vordering generaliseert Krediethypotheekvordering → Vordering (*Generalization*,  → , `EAID_2005BCF8_41C0_17A4_33A4_293123B2B6A0`)
+
+## Kwijtschelding
+
+Het kwijtschelden van het restant van de vordering.RedenenDit kan om diverse redenen gebeuren, waaronder redenen uit het beleid.Als een debiteur zijn 36 maanden lang houdt aan de betaalafspraken, dan komt de debiteur in aanmerking voor kwijtschelding. Enkele noties hierbij:Het gaat hier om het houden van de afspraken.Hieronder vallen ook afspraken om tijdelijk niet af te lossen.In principe zal een enkele maand opschorten vanwege een maand niet betalen niet de betaaldiscipline verbreken, omdat de gemeente niet heeft ingegrepen via een interventie.Als de debiteur ineens de helft of meer aflost op de vordering.BedragHet bedrag in de kwijtschelding heeft die hoogte dat de totale restant van de vordering op nul komt.
+
+Attributen: Bedrag, Boekingsdatum, Reden.
+
+GUID: `EAID_1127D07A_473D_2912_29AE_2ABDF0E8A586`
+
+## Leenbijstand
+
+AlgemeenLeenbijstand is een lening aan de burger, die in termijnen moet worden terugbetaald.TerugbetalingAflossingen op leningen bedragen standaard 5% van de toepasselijke maandnorm inclusief vakantietoeslag (VT);De lening wordt in maximaal 36 termijnen terugbetaald. Het restant wordt afgeschreven. De gemeente vordert terug als iemand zich niet aan de verplichtingen van de leenovereenkomst houdt.Leenbijstand worden gemeld aan Terug- en Invorderen voor een 360-graden view op de debiteur. Dan kan hiermee rekening worden gehouden bij het maken van aflossingsafspraken.Leenbijstand wordt verrekend met de uitkering en zal in dergelijke gevallen niet leiden tot terugvorderenPas als de persoon uit de bijstand gaat, zal het voorliggende proces een terugvorderingsverzoek doen bij Terug- en Invorderen.De totaal gegeven leenbijstand wordt teruggevorderd. Hier is een CBS-categorie voor.Mogelijke gevallen (illustratief)Leenbijstand (in de vorm van Bijzondere Bijstand) is onder andere mogelijk in de volgende situaties:U moet een waarborgsom betalen bij het huren van een huis;U wacht op geld waarvan u kunt leven. Het is bijvoorbeeld mogelijk dat u lange tijd moet wachten op de uitbetaling van een erfenis;U moet door eigen toedoen bijstand aanvragen of eerder aanvragen dan nodig was;U hebt een koophuis, u hebt (redelijk) veel eigen vermogen in het huis zitten en geen of weinig inkomsten;U bent zelfstandige of u bent net gestart met uw eigen bedrijf of beroep.NB: U moet een lening altijd weer terugbetalen.
+
+Attributen: Aflossingskenmerk, Bedrag, Boekingsdatum, Ontvangstdatum.
+
+GUID: `EAID_18090A2C_CED1_0A51_0DFD_294370D99076`
+
+Relaties:
+
+- is origine van → Leenbijstandvordering (*Aggregation (shared)*, 0..* → 1..1, `EAID_271e5b6d_0bc7_47e2_bd0b_3045ad2beeb3`)
+
+## Leenbijstandvordering
+
+AlgemeenLeenbijstand is een lening aan de burger, die in termijnen moet worden terugbetaald. Zie: Leenbijstand.TerugbetalingAflossingen op leningen bedragen standaard 5% van de toepasselijke maandnorm inclusief vakantietoeslag (VT);De lening wordt in maximaal 36 termijnen terugbetaald. Het restant wordt afgeschreven. De gemeente vordert terug als iemand zich niet aan de verplichtingen van de leenovereenkomst houdt.Leenbijstand wordt verrekend met de uitkering en zal in dergelijke gevallen niet leiden tot terugvorderenPas als de persoon uit de bijstand gaat, zal het voorliggende proces een terugvorderingsverzoek doen bij Terug- en Invorderen.De totaal gegeven leenbijstand wordt teruggevorderd. Hier is een CBS-categorie voor.
+
+GUID: `EAID_ed7f7a0f_bef9_4532_94ad_f36418629141`
+
+Relaties:
+
+- Vordering generaliseert Leenbijstandvordering → Vordering (*Generalization*,  → , `EAID_083900AB_ADCD_7446_5B65_2AD7FBBA2665`)
+
+## Loonbeslagafspraak
+
+Een loonbeslagafspraak is een aflossingsafspraak.Tevens is het een afspraak tussen twee partijen (organisaties) om voor het aflossen van vorderingen. Hierbij zal de ene partij - de werkgever van de debiteur - een afgesproken bedrag in houden op het loon van de debiteur en het ingehouden bedrag overmaken naar crediteur.Aangezien Loonbeslag een Inkomstencomponent is (zie het inkomstenmodel) ligt er een impliciete relatie tussen de Loonbeslagafspraak en het Loonbeslag.
+
+GUID: `EAID_1a6b9a31_c4c7_4b46_92ef_0dd7e31613ed`
+
+Relaties:
+
+- Aflossingsafspraak generaliseert Loonbeslagafspraa → Aflossingsafspraak (*Generalization*,  → , `EAID_35c31cf6_7e38_4b63_9d28_fca9d6a232d1`)
+
+## Rechtmaand
+
+Een vordering in het kader van de bijvoorbeeld de bijstand kan over meerdere kalendermaanden betreffen. In die maanden had de debiteur recht op die bijstand. Zo'n maand onder die vordering noemt men een rechtmaand.Rechtmaanden worden geadministreerd onder een vorderingscomponent bij de vordering. Als de vordering meerdere rechtmaanden bevat die of niet opvolgend zijn of een jaargrens passeren, dan worden die rechtmaanden opgesplitst in reeksen van opvolgende rechtmaanden binnen een jaar. Elke opsplitsing vormt dan een vorderingscomponent.
+
+Attributen: Boekjaar, Jaar, Maand.
+
+GUID: `EAID_0DF4970C_7D69_27D9_7976_263C0A6C41DC`
+
+Relaties:
+
+- Rechtmaand bevat Betaalcomponent → Betaalcomponent (*Aggregation (composite)*, 1..* → 1..1, `EAID_122CA19B_7DF4_C4FE_D5BB_2931038D61F0`)
+
+## Rentevordering
+
+AlgemeenEen vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente.De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.RentevorderingBepaalde vorderingen zijn rentedragend. De rente wordt niet als aparte component opgevoerd bij de hoofdvordering, maar als een aparte vordering. De rentevordering wordt gerelateerd aan de hoofdvordering. De rentevordering is een zogenaamde accessoire vordering, die zijn titel ontleend aan de hoofdvordering.Dit type vordering is als verbijzondering opgenomen, opdat deze relatie expliciet kan worden gelegd.
+
+GUID: `EAID_170B4422_37F6_8893_2627_293122D74F28`
+
+Relaties:
+
+- Rentevordering is gerelateerd aan Vordering → Vordering (*Aggregation (shared)*, 1..1 → 0..*, `EAID_20276CF6_CD34_6B90_7508_29312433DAFE`)
+- Vordering generaliseert Rentevordering → Vordering (*Generalization*,  → , `EAID_14B94C41_1654_4425_9F6F_293123C0CF5C`)
+
+## Restitutie
+
+Restitutie is terugbetaling van te veel ontvangen aflossing. Restituties worden geadministreerd onder de vordering.
+
+Attributen: Bedrag, Betaaldatum, Boekingsdatum.
+
+GUID: `EAID_167B47ED_CED1_0A51_0DFD_2698932A9076`
+
+## Terugvorderingsverzoek
+
+Het vorderingsverzoek is de handshake tussen een voorliggend proces en de bedrijfsfunctie Terug- en Invorderen. In het kader van een bepaalde regeling is geconstateerd dat een zeker bedrag terug moet worden gevorderd. Dit wordt her gemakshalve het voorliggende proces genoemd. Het voorliggende proces moet de juiste, noodzakelijke en voldoende gegevens toeleveren aan Terug- en invorderen opdat het verzoek tot terugvorderen in behandeling kan worden genomen.Het vorderingsverzoek start een terugvorderingszaak. Op basis van de voortgang van die zaak kan het verzoekende voorliggende proces op de hoogte worden gehouden van de voortgang via zaakstatusinformatie.
+
+Attributen: Aanmaakdatum, Behandelstatus verzoek, Categorie, Fiscaal, Periode einddatum, Periode startdatum, Priotype, Regeling, Subcategorie.
+
+GUID: `EAID_101157F7_7852_102E_7547_2698B55B6FF8`
+
+Relaties:
+
+- Terugvorderingsverzoek betreft Dienst → Dienst (*Aggregation (shared)*, 1..1 → 0..*, `EAID_15326145_EC46_89CA_680B_26B42589D8E5`)
+- Terugvorderingsverzoek bevat Rechtmaand → Rechtmaand (*Aggregation (composite)*, 0..* → 1..1, `EAID_0B702CAD_661C_8F1C_4F9A_275D15CD4BAB`)
+- leidt tot → Vordering (*Aggregation (shared)*, 0..1 → 1..1, `EAID_82cb1000_a7d4_42b4_92a5_4b61d1936a60`)
+- betreft → Client (*Association*, 0..* → 1..2, `EAID_E757EB41_44FC_498e_B608_E3E2572C514C`)
+
+## Uitstel aflossing
+
+Er kunnen redenen zijn om het aflossingsplan te pauseren. Zie de opties bij het attribuut Reden uitstel.Het volgende geldt:Uitstel van aflossing grijpt aan op alle afspraken in het aflossingsplan.Uitstel leidt tot termijnbewaking om de medewerker er op te attenderen of het uitstel nog aan de orde zou moeten zijn.De termijn in de termijnbewaking kan verschillen per reden van uitstel.
+
+Attributen: Aanmaakdatum, Periode einddatum, Periode startdatum, Reden uitstel.
+
+GUID: `EAID_74e47f85_a936_43c0_8ef2_1605bdb5efed`
+
+## Vermindering terugvordering
+
+Vermindering terugvordering is het resultaat van een beslissing de terugvordering te verminderen met een zeker bedrag met zekere motivatie. De vermindering terugvordering wordt geadministreerd onder de vordering.
+
+Attributen: Bedrag, Boekingsdatum, Motivatie vermindering, Vaststeldatum, Verminderingtype.
+
+GUID: `EAID_1A6E0A2E_9431_0F7A_1EAA_263C1D239DF6`
+
+## Verrekening
+
+Bij het vaststellen van de vordering wordt gekeken of de debiteur een uitkering geniet. Er zijn twee soorten situaties van verrekening. inkomstenverrekening waar de inkomsten 6 maanden wordt verrekend met de bijstandsuitkeringverrekening alias inhouding op een uitkering (een soort van loonbeslag) / verrekening in de zin van art. 60 lid 3 en 4 PW.Hier wordt de laatste bedoeld.Verrekening op grond van artikel 60 lid 3 en 4 Participatiewet door de gemeente gaat vóór beslag door een derde (artikel 60 lid 7 Participatiewet). Voor de praktijk betekent dit dat:Een lopend beslag wordt opgeschort zodra de gemeente (op grond van hun invorderingsbevoegdheid) een bedrag gaat verrekenen met de bijstandsuitkering. De beslaglegger wordt van de opschorting op de hoogte gesteld.De verrekening ongewijzigd wordt voortgezet indien nadien beslag door een derde wordt gelegd. De beslaglegger wordt medegedeeld dat het beslag niet uitvoerbaar is in verband met verrekening.Voorwaarde voor verrekening op grond van artikel 60 lid 3 en 4 Participatiewet is dat er een terugvorderingsbesluit of boetebesluit is genomen. Bij verstrekking van bijstand in de vorm van een geldlening kunnen echter de vastgestelde aflossingsbedragen direct worden verrekend op grond van artikel 48 lid 4 Participatiewet. Een terugvorderingsbesluit ingevolge artikel 58 lid 2 onderdeel b Participatiewet is dan dus niet noodzakelijk.Pseudo-verrekening gaat niet voor beslag.Pseudo-verrekening zoals bedoeld in artikel 60a Participatiewet gaat niet voor beslag door een derde onder een andere gemeente (of onder het Uitvoeringsinstituut werknemersverzekeringen of de Sociale verzekeringsbank).Een verrekening is verder te behandelen als een vordering, maar juridisch een ander ding.
+
+GUID: `EAID_1EA8771B_DB7F_17D8_8AB8_26A1BD8F6A56`
+
+Relaties:
+
+- Vordering generaliseert Verrekening → Vordering (*Generalization*,  → , `EAID_04495F03_1A5F_CC83_48D3_2AD7FB650BAF`)
+
+## Verwijtbare vordering
+
+Een vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag terug moet betalen aan de gemeente. Het zijn vorderingen die zijn ingesteld vanwege het niet nakomen van de inlichtingen-plicht waardoor de uitkerende instantie ten onrechte heeft uitbetaald . De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.Deze type vordering zijn als verbijzonderingen opgenomen, opdat deze relaties expliciet kunnen worden gelegd.
+
+GUID: `EAID_11F2FF40_D317_92C3_C4DB_2931225D4B40`
+
+Relaties:
+
+- Vordering generaliseert Verwijtbare vordering → Vordering (*Generalization*,  → , `EAID_25733C9B_2D78_96ED_AE7B_26A1BDD31C0C`)
+
+## Vordering
+
+Een vordering is een eis op een persoon, zeg debiteur, die een zeker bedrag (terug) moet betalen aan de gemeente in het kader van de bijstand of een bijstandsgerelateerde uitkering.De oorzaak van een vordering is velerlei, Zie daarvoor de categorie-indeling.Vorderingen kunnen uit meerdere componenten bestaan.Vorderingen kunnen ook onderling in relatie staan, bijvoorbeeld: Een opgelegde boete wegens het schenden van de inlichtingenplicht heeft een relatie met een verwijtbare vordering.Deze type vordering zijn als verbijzonderingen opgenomen, opdat deze relaties expliciet kunnen worden vastgelegd.
+
+Attributen: Categorie, Fiscaal, Periode einddatum, Periode startdatum, Priotype, Regeling, Stuitingsvoortgangsindicator, Subcategorie, Titel, Vaststeldatum terugvordering, Verjaringsdatum, Verwerkingsstatus.
+
+GUID: `EAID_14116EEA_C461_0DB2_97AB_263C0A4777FC`
+
+Relaties:
+
+- Vordering bevat Aflossing → Aflossing (*Aggregation (composite)*, 0..* → 1..1, `EAID_1BA337AF_888E_945B_4A20_272BFB4E4D4C`)
+- Vordering bevat Afschrijving → Afschrijving (*Aggregation (composite)*, 0..1 → 1..1, `EAID_2a236d1c_c8f7_4382_ba7f_0121655f8009`)
+- Vordering is gerelateerd aan Conservatoir beslag → Conservatoir beslag (*Aggregation (shared)*, 0..1 → 1..1, `EAID_28605E72_CD76_B233_6AE7_28F9CB25BC07`)
+- Vordering bevat Correctie → Correctie (*Aggregation (composite)*, 0..* → 1..1, `EAID_08BEDD6F_95A3_5D0B_E03F_272BFB507A5F`)
+- Vordering bevat Kwijtschelding → Kwijtschelding (*Aggregation (composite)*, 0..1 → 1..1, `EAID_190B4CC9_EE7A_8466_548E_2ABDF1B1DE52`)
+- Vordering bevat Restitutie → Restitutie (*Aggregation (composite)*, 0..* → 1..1, `EAID_13D308E9_63F5_1B7C_C8B3_272BFB4F75AB`)
+- Vordering bevat Vermindering terugvordering → Vermindering terugvordering (*Aggregation (composite)*, 0..* → 1..1, `EAID_0D5798B1_0B80_7B80_34BD_272BFB50DD52`)
+- Vordering bevat Vorderingscomponent → Vorderingscomponent (*Aggregation (composite)*, 0..* → 0..1, `EAID_10DEA4C6_7DF4_C4FE_D5BB_263C0B2261F0`)
+
+## Vorderingscomponent
+
+Vorderingen, die bestaan uit verschillende rechtmaanden, worden gesplitst in vorderingscomponenten alsde rechtmaanden niet aansluitend zijn ofals er tussen opvolgende rechtmaanden een jaarovergang zit.De een opeenvolgende reeks van rechtmaanden binnen een jaar wordt gekoppeld aan de vorderingscomponent. Dit gebeurt tijdens het vaststellen van de terugvordering.
+
+Attributen: Periode einddatum, Periode startdatum, Priotype.
+
+GUID: `EAID_1A979E6B_841E_392B_952F_29311D13BF9F`
+
+Relaties:
+
+- Vorderingscomponent bevat Rechtmaand → Rechtmaand (*Aggregation (composite)*, 0..* → 1..1, `EAID_0FB8F97A_473D_2912_29AE_272BFB4FA586`)

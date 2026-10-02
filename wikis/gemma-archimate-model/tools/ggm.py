@@ -6,6 +6,7 @@ De match kiest de AI (op betekenis); tools/afleiden.py haalt daarna bij elke run
 Gebruik (vanuit de wikimap):
     uv run python tools/ggm.py release --id <bron-id> [--ref <branch|tag>]    # ophalen van ggm.herkomst (GitHub)
     uv run python tools/ggm.py release <xmi> --id <bron-id>                   # of een lokaal XMI-bestand
+    uv run python tools/ggm.py paginas                       # leesbare pagina's opnieuw maken uit ggm/ggm_parsed.json
     uv run python tools/ggm.py zoek <term>
     uv run python tools/ggm.py entiteit <guid|naam>
     uv run python tools/ggm.py velden <guid>                 # ggm_*-blok (YAML) voor een elementpagina
@@ -329,26 +330,29 @@ def structuur_md(data: dict, bron_id: str) -> str:
 
 
 def domein_pagina(data: dict, taakveld: str, beleidsdomein: str) -> str:
+    """Per objecttype een paragraaf: definitie, attributen, GUID en de relaties die bij dit objecttype beginnen."""
     ents = sorted((e for e in data["entities"].values()
                    if e.get("taakveld") == taakveld and e.get("beleidsdomein") == beleidsdomein
                    and e.get("stereotype") == "Objecttype"), key=lambda e: e["name"].lower())
-    namen = {e["id"]: e["name"] for e in data["entities"].values()}
-    regels = [f"# {beleidsdomein}", "", f"Taakveld: {taakveld}. Alleen objecttypen; letterlijke definities uit het GGM.", "",
-              "| Objecttype | GUID | Definitie | Attributen |", "|---|---|---|---|"]
+    regels = [f"# {beleidsdomein}", "", f"Taakveld: {taakveld}. Alleen objecttypen; letterlijke definities uit het GGM.", ""]
     for e in ents:
-        definitie = schoon_tekst(e.get("documentation", "")).replace("|", "\\|")
-        regels.append(f"| {e['name']} | `{e['id']}` | {definitie} | {', '.join(e['attributes'])} |")
-    ids = {e["id"] for e in ents}
-    rels = [r for r in data["relations"].values() if r["source_id"] in ids]
-    if rels:
-        regels += ["", "## Relaties", "", "| Van | Type | Naam | Naar | Kardinaliteit | GUID | Definitie |",
-                   "|---|---|---|---|---|---|---|"]
-        for r in sorted(rels, key=lambda r: (namen[r["source_id"]], r["uml_type"])):
-            soort = r["uml_type"] + (f" ({r['aggregatie']})" if r.get("aggregatie") else "")
-            definitie = schoon_tekst(r.get("documentation", "")).replace("|", "\\|")
-            regels.append(f"| {r['source_name']} | {soort} | {r['name']} | {r['target_name']} | "
-                          f"{r['source_card']} → {r['target_card']} | `{r['id']}` | {definitie} |")
-    return "\n".join(regels) + "\n"
+        regels += [f"## {e['name']}", ""]
+        definitie = schoon_tekst(e.get("documentation", ""))
+        regels += [definitie, ""] if definitie else []
+        regels += [f"Attributen: {', '.join(e['attributes'])}.", ""] if e["attributes"] else []
+        regels += [f"GUID: `{e['id']}`", ""]
+        rels = sorted((r for r in data["relations"].values() if r["source_id"] == e["id"]),
+                      key=lambda r: (r["uml_type"], r["target_name"].lower()))
+        if rels:
+            regels += ["Relaties:", ""]
+            for r in rels:
+                soort = r["uml_type"] + (f" ({r['aggregatie']})" if r.get("aggregatie") else "")
+                naam = f"{r['name']} " if r.get("name") else ""
+                definitie = schoon_tekst(r.get("documentation", ""))
+                regels.append(f"- {naam}→ {r['target_name']} (*{soort}*, {r['source_card']} → {r['target_card']}, "
+                              f"`{r['id']}`)" + (f": {definitie}" if definitie else ""))
+            regels.append("")
+    return "\n".join(regels).rstrip("\n") + "\n"
 
 
 def genereer_paginas(data: dict, bron_id: str, ggm_dir: Path = GGM_DIR) -> int:
@@ -435,6 +439,7 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--titel", default="Gemeentelijk Gegevensmodel (XMI)")
     r.add_argument("--ref", help="Andere branch of tag dan ggm.herkomst.ref")
     r.add_argument("--pad", help="Ander pad in de repository dan ggm.herkomst.pad")
+    sub.add_parser("paginas")
     for naam in ("zoek", "entiteit", "velden", "naamgenoten", "generalisaties", "attribuut", "relaties"):
         sub.add_parser(naam).add_argument("sleutel")
     k = sub.add_parser("kandidaten")
@@ -446,6 +451,10 @@ def main(argv: list[str] | None = None) -> int:
         _print(release(Path(a.xmi) if a.xmi else None, a.id, a.titel, ref=a.ref, pad=a.pad))
         return 0
     data = laad()
+    if a.cmd == "paginas":
+        bron_id = gam_gemeen.wiki_yaml(WIKI_ROOT)["ggm"]["bron"]
+        print(f"{genereer_paginas(data, bron_id, WIKI_ROOT / 'ggm')} pagina's geschreven")
+        return 0
     if a.cmd == "velden":
         gevonden = zoek_entiteit(data, a.sleutel)
         if len(gevonden) != 1:

@@ -90,9 +90,10 @@ def test_parser_domein_relaties_en_deel_geheel(tmp_path):
 def test_domeinpagina_toont_guid_en_definitie_van_relaties(tmp_path):
     data = ggm.parse_xmi(_xmi(tmp_path))
     pagina = ggm.domein_pagina(data, "1 Veiligheid", "Vergunningen")
-    rij = next(r for r in pagina.splitlines() if r.startswith("| Beschikking | Aggregation"))
-    assert "| `EAID_AGG1` |" in rij
-    assert rij.endswith("| De onderdelen van een beschikking \\| per besluit. |")
+    assert "## Beschikking" in pagina
+    rij = next(r for r in pagina.splitlines() if r.startswith("- ") and "`EAID_AGG1`" in r)
+    assert "*Aggregation" in rij
+    assert rij.endswith(": De onderdelen van een beschikking | per besluit.")
 
 
 def test_velden_zijn_letterlijk_en_zonder_lege_waarden(tmp_path):
