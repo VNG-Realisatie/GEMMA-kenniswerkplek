@@ -307,13 +307,13 @@ def element_pagina(w: Wiki, bid: str) -> str:
 # --- Begrippenlijst per onderwerp ---
 
 
-def _uitkomst_cel(w: Wiki, van: str, bid: str, d: dict) -> str:
+def _begrip_cel(w: Wiki, van: str, bid: str, d: dict) -> str:
     u = d["afgeleid"]["uitkomst"]
     if u["soort"] == "element":
         if d.get("status") == "afgewezen":
-            return f"{ARCHIMATE_NAAM.get(u['archimate_type'], u['archimate_type'])}, afgewezen door de redacteur"
-        return f"{w.link(van, bid)} — {ARCHIMATE_NAAM.get(u['archimate_type'], u['archimate_type'])} ({d['status']})"
-    tekst = UITKOMST.get(u["soort"], u["soort"])
+            return f"{d['begrip']} *{ARCHIMATE_NAAM.get(u['archimate_type'], u['archimate_type'])}, afgewezen door de redacteur*"
+        return f"{w.link(van, bid)} *{ARCHIMATE_NAAM.get(u['archimate_type'], u['archimate_type'])}, {d['status']}*"
+    tekst = f"{d['begrip']} *{UITKOMST.get(u['soort'], u['soort'])}*"
     verwijzing = d.get("synoniem_van") or u.get("genoemd_begrip")
     if verwijzing:
         doel = next((b for b, x in w.begrippen.items() if x.get("begrip", "").lower() == verwijzing.lower() or b == verwijzing), None)
@@ -339,9 +339,11 @@ def begrippenlijst(w: Wiki, oid: str) -> str:
         reden = d.get("toelichting") or a["uitkomst"]["toelichting"]
         if a.get("open"):
             reden += " Voorleggen: " + "; ".join(a["open"]) + "."
-        rijen.append([d["begrip"], _uitkomst_cel(w, van, bid, d), w.tekst(van, reden), a.get("herkomst", ""),
-                      (a.get("ggm") or {}).get("ggm_entiteit", "—")])
-    r += _sectie("Begrippen", _tabel(["Begrip", "Uitkomst", "Reden", "Herkomst", "GGM"], rijen) if rijen else ["Nog geen begrippen beoordeeld.", ""])
+        ggm = (a.get("ggm") or {}).get("ggm_entiteit")
+        herkomst = "; ".join(x for x in (a.get("herkomst", ""), f"GGM: {ggm}" if ggm else "") if x)
+        rijen.append([_begrip_cel(w, van, bid, d), w.tekst(van, reden), herkomst or "—"])
+    r += _sectie("Begrippen", ["Een begrip met een link is een element; cursief staat de uitkomst.", "",
+                               *_tabel(["Begrip", "Reden", "Herkomst"], rijen)] if rijen else ["Nog geen begrippen beoordeeld.", ""])
     r += _sectie("Open vragen", [f"- {w.tekst(van, v)}" for v in o.get("open_vragen", [])] + [""] if o.get("open_vragen") else [])
     return _pagina(meta, r)
 
