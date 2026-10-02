@@ -349,23 +349,42 @@ def begrippenlijst(w: Wiki, oid: str) -> str:
 # --- Overzichten ---
 
 
+TERUGMELDTYPEN = {
+    "hiaat": "Concept ontbreekt in het GGM",
+    "definitie": "Entiteit bestaat, maar de definitie is onjuist, onvolledig of geen begripsdefinitie",
+    "structuur": "Onhandige modellering (overerving, ontbrekende relatie, granulariteit)",
+    "scope": "Entiteit hoort niet in dit beleidsdomein of ontbreekt in een ander",
+    "duplicaat": "Zelfde concept met meerdere GUID's in verschillende beleidsdomeinen → samenvoegen",
+    "homoniem": "Zelfde naam voor een ander concept in een ander beleidsdomein → hernoemen",
+    "relatie": "Fout in een exact gematchte relatie (type, richting, kardinaliteit, naam, dubbel)",
+}
+
+
+def _terugmeld_element(w: Wiki, van: str, m: dict) -> str:
+    """Het element (link; platte tekst zonder pagina) met tussen haakjes waar het in het GGM staat."""
+    entiteit = m.get("entiteit")
+    naam = w.naam(m["element"]) if m.get("element") else entiteit or "—"
+    element = w.link(van, m["element"]) if m.get("element") else naam
+    if not entiteit:
+        ggm = f"ontbreekt, past in {m['domein']}"
+    elif entiteit == naam:
+        ggm = m["domein"]
+    else:
+        ggm = f"{entiteit}, {m['domein']}"
+    return f"{element} (GGM: {ggm})"
+
+
 def terugmeldlijst(w: Wiki) -> str:
     van = TERUGMELDLIJST.as_posix()
     meta = {"id": "ggm-terugmeldingen", "type": "analyse", "titel": "GGM-terugmeldingen"}
     r = ["# GGM-terugmeldingen", "", _gegenereerd("beoordelingen/terugmeldingen.yaml"), "",
          "Bevindingen uit de beoordeling van elementen die aan het GGM-beheer worden teruggekoppeld.", ""]
-    r += _sectie("Terugmeldingen", _tabel(["#", "Domein", "Entiteit", "Type", "Bevinding", "Element", "Status"], [
-        [m["nummer"], m["domein"], m.get("entiteit") or "—", m["type"], w.tekst(van, m["bevinding"]),
-         w.link(van, m["element"]) if m.get("element") else "—", m.get("status", "open")]
-        for m in sorted(w.terugmeldingen, key=lambda m: m["nummer"])]))
-    r += _sectie("Typen", _tabel(["Type", "Betekenis"], [
-        ["hiaat", "Concept ontbreekt in het GGM"],
-        ["definitie", "Entiteit bestaat, maar de definitie is onjuist, onvolledig of geen begripsdefinitie"],
-        ["structuur", "Onhandige modellering (overerving, ontbrekende relatie, granulariteit)"],
-        ["scope", "Entiteit hoort niet in dit beleidsdomein of ontbreekt in een ander"],
-        ["duplicaat", "Zelfde concept met meerdere GUID's in verschillende beleidsdomeinen → samenvoegen"],
-        ["homoniem", "Zelfde naam voor een ander concept in een ander beleidsdomein → hernoemen"],
-        ["relatie", "Fout in een exact gematchte relatie (type, richting, kardinaliteit, naam, dubbel)"]]))
+    per_type = []
+    for soort, betekenis in TERUGMELDTYPEN.items():
+        rijen = [[f"{m['nummer']} {m.get('status', 'open')}", _terugmeld_element(w, van, m), w.tekst(van, m["bevinding"])]
+                 for m in sorted(w.terugmeldingen, key=lambda m: m["nummer"]) if m["type"] == soort]
+        per_type += _sub(soort.capitalize(), [f"{betekenis}.", "", *_tabel(["#", "Element", "Bevinding"], rijen)]) if rijen else []
+    r += _sectie("Terugmeldingen", per_type)
     r += _sectie("Status", ["open → gemeld → opgelost of afgewezen (met reden).", ""])
     return _pagina(meta, r)
 
