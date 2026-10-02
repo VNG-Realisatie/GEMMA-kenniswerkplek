@@ -75,7 +75,7 @@ ggm:
     ref: Voorbereidingen-Release-v2.5.1
     pad: v2.5.1/Gemeentelijk Gegevensmodel XMI2.1.xml
 gemma:
-  bron: 2026-vng-gemma-2026-07-01
+  bron: 2026-vng-gemma-2026-10-02
   herkomst:                          # waar tools/gemma.py release het model ophaalt (AMEFF; .archimate kan als lokaal bestand)
     repository: VNG-Realisatie/GEMMA-Archi-repository
     ref: master

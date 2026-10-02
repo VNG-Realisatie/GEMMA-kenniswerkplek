@@ -317,7 +317,10 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     res.waarschuwingen += signalen.over_begrippen({b: d for b, (_, d) in alle.items()}, uitkomsten)
     res.fouten += signalen.bronanalyses(wiki_root, onderwerpen) + signalen.modelmappen(wiki_root)
     register = _terugmeldingen(ctx, uitkomsten, res)
-    if res.fouten or not schrijven:
+    if res.fouten:
+        return res
+    if not schrijven:
+        res.gewijzigd = sorted(nieuw)  # wat een run met schrijven zou bijwerken: niet leeg = afgeleid is verouderd
         return res
     for bid, data in nieuw.items():
         beoordeling.schrijf(alle[bid][0], data)

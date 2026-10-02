@@ -4,6 +4,7 @@ Het GEMMA-model (AMEFF-export of Archi-bronbestand) is een matchdoel: hoe staat 
 
 1. `uv run python tools/gemma.py kandidaten <naam> [--ggm-guid <guid>]` geeft de elementen die de GGM-guid als eigenschap dragen, de elementen met dezelfde naam en de treffers, elk met type, definitie en groepering (beleidsdomein).
 2. Kies op betekenis en leg vast in `gemma`: `id` (bij een match), `sterkte` (zelfde schaal als bij het GGM) en `onderbouwing`: wat dit element verandert ten opzichte van GEMMA (nieuwe definitie, ander type, splitsing of samenvoeging). Geen GEMMA-element: `sterkte: geen` en in de onderbouwing waarom het nieuw is.
-3. De letterlijke `gemma_*`-velden haalt `tools/afleiden.py` op. Wijkt de GEMMA-naam af van de naam: neem haar op in `synoniemen` met context "GEMMA".
+3. Een match met `id` is een koppeling: de export naar Archi geeft het element dat GEMMA-id en overschrijft daarmee naam en definitie van het GEMMA-element. Een `zwak` of `partieel` match leg je daarom altijd voor (regel Zwakke match voorleggen); is het niet hetzelfde begrip, dan `sterkte: geen` en het GEMMA-element in de onderbouwing.
+4. De letterlijke `gemma_*`-velden haalt `tools/afleiden.py` op. Wijkt de GEMMA-naam af van de naam: neem haar op in `synoniemen` met context "GEMMA".
 
 De groepering op beleidsdomein is in GEMMA een aggregatie vanuit een Grouping; die leg je niet vast als relatie.

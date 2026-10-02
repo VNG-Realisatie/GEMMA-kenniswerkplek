@@ -12,6 +12,12 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **GGM-terugmeldingen 1–9** bij de herbeoordeling koppelen aan de nieuwe beoordelingen; een melding die niet meer van toepassing is, voorleggen.
 - **Links in de analyses** (`analyses/gegevensrollen.md`, `analyses/gemma-kennismodel.md`) naar de oude elementpagina's bijwerken zodra de elementen opnieuw bestaan.
 
+## Export naar Archi
+
+- **Verzoek aan het GEMMA-team**: zet bij elke release naast `export/GEMMA release.xml` (AMEFF) ook `export/GEMMA release.archimate` in de GEMMA-Archi-repository (opslagformaat van Archi, met map-id's en profielen). Daarna `wiki.yaml` → `gemma.herkomst.pad` daarop zetten; na de overgang naar coArchi 2 op `model.archimate`. Tot dan neemt de redacteur een lokaal opgeslagen `.archimate` op (skill `gemma-archimate-model-gemma-release`).
+- **Eerste proefimport** op een kopie van het GEMMA-model: controleren dat gekoppelde elementen in hun GEMMA-map blijven, geen dubbele mappen ontstaan, `Object ID` blijft staan; de naam van de importoptie vastleggen in de skill `gemma-archimate-model-archimate-export`; het jArchi-script proberen met een tweede export.
+- **Zwakke en partiële matches** van vóór 2026-10-02 (Beheerder, Gemeente, Lijkbezorging) opnieuw voorleggen: de export overschrijft het GEMMA-element (regel Zwakke match voorleggen).
+
 ## Algemeen onderwerp besluitvorming en heffingen
 
 - **VNG Modelverordening lijkbezorgingsrechten** (ledenbrief 2011, met kostenonderbouwing) als bron en mogelijk beleidskader opnemen bij het algemene onderwerp voor Heffing en Heffingsverordening (besluit redacteur 2026-10-01). De link op de VNG-pagina `https://vng.nl/artikelen/modelverordeningen-wet-op-de-lijkbezorging` geeft een 404; zoek een openbare kopie.

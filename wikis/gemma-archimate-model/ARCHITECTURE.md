@@ -6,11 +6,11 @@ Deze wiki bouwt het GEMMA-architectuurmodel voor de bedrijfslaag onderbouwd opni
 
 ```text
 wetten, informatiemodellen, beleid (sources/)  ─┐
-GGM-XMI (sources/, via tools/ggm.py)           ─┼─►  deze wiki  ─►  (later) export naar het GEMMA-model / GEMMA Online
-GEMMA-model AMEFF (sources/, tools/gemma.py)    ┘
+GGM-XMI (sources/, via tools/ggm.py)           ─┼─►  deze wiki  ─►  export naar Archi (.archimate) ─► GEMMA-model
+GEMMA-model (sources/, via tools/gemma.py)     ─┘
 ```
 
-Het GGM is zowel bron (kandidaat-begrippen, definities, relaties) als toets. Het GEMMA-model is alleen matchdoel: het laat zien hoe een element nu in GEMMA staat. Terugschrijven naar GEMMA is nog niet gebouwd (advies: een deel-`.archimate` met behoud van id's, zie skill `gemma-archimate-model-gemma-release`).
+Het GGM is zowel bron (kandidaat-begrippen, definities, relaties) als toets. Het GEMMA-model is alleen matchdoel: het laat zien hoe een element nu in GEMMA staat. Terugschrijven gaat via een `.archimate` met de id's van GEMMA (§12).
 
 ## 2. Zacht oordeel, harde vorm
 
@@ -38,6 +38,7 @@ wikis/gemma-archimate-model/
 ├── bedrijfsarchitectuur/ · motivatie/ · begrippen/   gegenereerd door tools/render.py
 ├── ter-beoordeling.md · voortgang.md                gegenereerd door tools/render.py
 ├── ggm/ · gemma/                     gegenereerd door tools/ggm.py en tools/gemma.py
+├── export/                           gegenereerd door tools/archimate_export.py: het Archi-bestand en het rapport
 ├── schemas/                          beoordeling (gegenereerd uit tools/bepaal_type.py), bronanalyse, analyse
 ├── tools/                            Python-gereedschap van deze wiki (met tests in tools/tests/)
 └── .agents/skills/                   vaardigheden van deze wiki
@@ -142,8 +143,8 @@ Elementen en relaties worden samen gevonden. Een relatie wordt pas een ArchiMate
 
 | | GGM | GEMMA-model |
 |---|---|---|
-| Bronbestand | XMI 2.1 (Enterprise Architect) | ArchiMate Open Exchange (AMEFF); een Archi-bronbestand `.archimate` kan ook |
-| Herkomst | GitHub `Gemeente-Delft/Gemeentelijk-Gegevensmodel`, `wiki.yaml` → `ggm.herkomst` | GitHub `VNG-Realisatie/GEMMA-Archi-repository`, `export/GEMMA release.xml`, `wiki.yaml` → `gemma.herkomst` |
+| Bronbestand | XMI 2.1 (Enterprise Architect) | Archi-bestand `.archimate` (voorkeur: met map-id's en profielen, nodig voor de export); AMEFF kan ook, zonder export |
+| Herkomst | GitHub `Gemeente-Delft/Gemeentelijk-Gegevensmodel`, `wiki.yaml` → `ggm.herkomst` | GitHub `VNG-Realisatie/GEMMA-Archi-repository`, `wiki.yaml` → `gemma.herkomst` (nu de AMEFF; een `.archimate` daar is gevraagd, zie `todo.md`), of een lokaal opgeslagen `.archimate` |
 | Tool | [tools/ggm.py](tools/ggm.py) | [tools/gemma.py](tools/gemma.py) |
 | Gegenereerd | `ggm/ggm_parsed.json`, `ggm/<taakveld>/<beleidsdomein>.md` | `gemma/gemma_parsed.json`, `gemma/overzicht.md` |
 | Zoeken (AI) | `kandidaten`, `entiteit`, `naamgenoten`, `generalisaties`, `attribuut`, `relaties` | `kandidaten`, `element`, `koppel`, `zoek`, `groepering` |
@@ -158,9 +159,18 @@ De match kiest de AI op betekenis; het afleid-script haalt bij elke run de lette
 
 [tools/signalen.py](tools/signalen.py) waarschuwt, met de naam van de regel: absolute taal, registr*-taal, een definitie van meer dan één zin, de naamvorm van processen en functies, de wetsterm als naam, een afwijkende GGM- of GEMMA-naam zonder synoniem, onderwerpgebonden tekst in definitie of beschrijving, een dienst zonder realiserend gedrag, een gebeurtenis die niets start, en een synoniem bij meer elementen. Waarschuwingen beoordeelt de AI inhoudelijk.
 
-## 12. Nog niet gebouwd
+## 12. Export naar Archi
 
-- Dekkingsanalyse van het GGM (entiteitendekking) en de export naar CSV of `.archimate`.
+[tools/archimate_export.py](tools/archimate_export.py) schrijft de goedgekeurde elementen en relaties als `export/gemma-archimate-model.archimate`, om in Archi te bekijken en in het GEMMA-model te importeren (*Import › Model into selected model*: Archi voegt samen op id). Werkwijze: skill [gemma-archimate-model-archimate-export](.agents/skills/gemma-archimate-model-archimate-export/SKILL.md).
+
+- **Id's:** een element met een GEMMA-match krijgt het GEMMA-id en staat in dezelfde mappen (met dezelfde map-id's) als in GEMMA; een nieuw element krijgt een vast id (uuid5 van het begrip-id) onder `wiki-gemma-model`. Een relatie krijgt het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id. Daarvoor is het GEMMA-model als `.archimate` nodig; de AMEFF heeft geen map-id's.
+- **Inhoud:** naam en definitie uit de wiki (ook over een GEMMA-element heen, met de oude als eigenschap); de GEMMA-eigenschappen en het profiel letterlijk; eigen eigenschappen `wiki-gemma-model …`. De export vertrouwt de match: een zwakke of partiële match gaat alleen met akkoord van de redacteur (regel Zwakke match voorleggen).
+- **Volledige sync:** elk element en elke relatie heeft `wiki-gemma-model exportdatum`. Na de import verwijdert een jArchi-script wat de wiki zelf maakte en een oudere datum heeft; bij een GEMMA-object haalt het alleen de wiki-eigenschappen weg.
+- **Gate:** alleen `goedgekeurd`, met een promotieregel in `log.md`; `--concept` (alle statussen, in `.work/`) is alleen om te bekijken. De export weigert bij fouten of een verouderde afleiding of render.
+
+## 13. Nog niet gebouwd
+
+- Dekkingsanalyse van het GGM (entiteitendekking) en de export naar CSV.
 - Inhoudelijke audits (definities, duplicaten, werkvoorraad).
 - Het hernoemen van een element met automatisch bijwerken van de id's in andere beoordelingen.
 - Paginatypen voor Interaction, Location en Representation, en `applicatiearchitectuur/`.

@@ -38,4 +38,4 @@ Bronanalyses mogen in een subagent, op denkniveau middel (geef de bron-id's en h
 
 ## Nieuwe modelrelease
 
-Een nieuwe GGM-release of een nieuwe versie van het GEMMA-model is geen onderwerp-update: gebruik `gemma-archimate-model-ggm-release` of `gemma-archimate-model-gemma-release`.
+Een nieuwe GGM-release of een nieuwe versie van het GEMMA-model is geen onderwerp-update: gebruik `gemma-archimate-model-ggm-release` of `gemma-archimate-model-gemma-release`. Het model in Archi bekijken of naar GEMMA brengen: `gemma-archimate-model-archimate-export`.

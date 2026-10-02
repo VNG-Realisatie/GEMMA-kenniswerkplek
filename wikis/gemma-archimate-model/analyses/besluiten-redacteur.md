@@ -37,6 +37,8 @@ Besluiten over de werkwijze en de criteria staan bij de analyse waar ze bij hore
 | 2026-09-30 | Uniforme openbare voorbereidingsprocedure | participatie | Verhuist naar een algemeen onderwerp besluitvorming. |
 | 2026-09-30 | Bestuursorgaan | participatie | Verhuist naar een algemeen onderwerp besluitvorming. |
 | 2026-09-30 | Participatiebeleid | participatie | Variant van Beleidsnota; oppakken in een algemeen onderwerp. Tot dan vervallen de relaties van Gemeenteraad en Plan voor inwonersparticipatie naar het participatiebeleid. |
+| 2026-10-02 | Export naar Archi | (alle) | Export in het opslagformaat van Archi (`.archimate`), niet AMEFF; GEMMA wordt native (`.archimate`) ingelezen. Een element met een GEMMA-match krijgt het GEMMA-id; naam en definitie uit de wiki overschrijven die van GEMMA, de oude gaan mee als eigenschap. Eigen eigenschappen en de eigen map heten `wiki-gemma-model`. Volledige sync via `wiki-gemma-model exportdatum` en een jArchi-script: alleen door de wiki gemaakte objecten worden verwijderd, bij een niet meer gekoppeld GEMMA-object alleen de wiki-eigenschappen. Alleen goedgekeurd; `--concept` alleen om te bekijken. Geen views. |
+| 2026-10-02 | GEMMA-match | (alle) | Elke match met id wordt in de export een koppeling, ook `zwak` en `partieel`. Zo'n match wordt daarom alleen gemaakt met akkoord van de redacteur; matchen is de verantwoordelijkheid van wiki en redacteur, de export en Archi vertrouwen haar. |
 
 ## Open punten uit eerdere besluiten
 

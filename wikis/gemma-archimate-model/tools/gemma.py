@@ -1,7 +1,8 @@
 """Het GEMMA-model als bron: parsen, matchen en `gemma_*`-velden leveren.
 
-Twee formaten, automatisch herkend: de ArchiMate Open Exchange-export (AMEFF, standaard, opgehaald van
-`wiki.yaml` `gemma.herkomst`) en het Archi-bronbestand (`.archimate`, als lokaal bestand). Het GEMMA-model is
+Twee formaten, automatisch herkend: het Archi-bronbestand (`.archimate`, voorkeur: met map-id's en profielen, nodig
+voor tools/archimate_export.py) en de ArchiMate Open Exchange-export (AMEFF, zonder map-id's). Zonder bestand haalt
+`release` het bestand op van `wiki.yaml` `gemma.herkomst`. Het GEMMA-model is
 een matchdoel (brontype `model`), geen bron voor begrippen. Het model leest het NOOIT direct; alleen via deze
 tool. De match kiest de AI; tools/afleiden.py haalt daarna bij elke run de letterlijke velden op met `velden`.
 
@@ -106,15 +107,26 @@ def parse_ameff(pad: Path) -> dict:
             "model": {"naam": tekst(root, "name"), "eigenschappen": eigenschappen(root), "formaat": "ameff"}}
 
 
-def parse_archimate(pad: Path) -> dict:
-    root = ET.parse(pad).getroot()
-    elementen, relaties = {}, {}
+def _archi_eigenschappen(el) -> dict:
+    return {p.get("key", ""): p.get("value", "") for p in el.findall("property") if p.get("key")}
 
-    def loop(folder, mappad: list[str]):
+
+def parse_archimate(pad: Path) -> dict:
+    """Archi-bronbestand (ook het opslagformaat van coArchi 2). Levert naast elementen en relaties ook de mappen
+    (met id) en de profielen (specialisaties), die de AMEFF mist; tools/archimate_export.py heeft ze nodig."""
+    root = ET.parse(pad).getroot()
+    elementen, relaties, mappen = {}, {}, {}
+
+    def loop(folder, mappad: list[str], map_id: str):
         for kind in folder:
             tag = kind.tag.split("}")[-1]
             if tag == "folder":
-                loop(kind, mappad + [kind.get("name", "")])
+                doc = kind.find("documentation")
+                mappen[kind.get("id", "")] = {"id": kind.get("id", ""), "naam": kind.get("name", ""),
+                                              "type": kind.get("type", ""), "ouder": map_id,
+                                              "documentatie": (doc.text or "") if doc is not None else "",
+                                              "eigenschappen": _archi_eigenschappen(kind)}
+                loop(kind, mappad + [kind.get("name", "")], kind.get("id", ""))
             elif tag == "element":
                 soort = archimate_type(kind.get(XSI_TYPE, ""))
                 doc = kind.find("documentation")
@@ -123,18 +135,28 @@ def parse_archimate(pad: Path) -> dict:
                     "naam": kind.get("name", ""),
                     "type": soort,
                     "documentatie": (doc.text or "").strip() if doc is not None else "",
-                    "eigenschappen": {p.get("key", ""): p.get("value", "") for p in kind.findall("property") if p.get("key")},
+                    "eigenschappen": _archi_eigenschappen(kind),
                     "map": " / ".join(m for m in mappad if m),
+                    "map_id": map_id,
                 }
+                if kind.get("profiles"):
+                    obj["profiel"] = kind.get("profiles")
                 if soort.endswith("-relationship"):
                     obj.update(bron=kind.get("source", ""), doel=kind.get("target", ""))
+                    if soort == "access-relationship":
+                        obj["toegang"] = int(kind.get("accessType", "0"))
+                    if kind.get("directed") == "true":
+                        obj["gericht"] = True
                     relaties[obj["id"]] = obj
                 elif soort != "diagram-model" and not soort.endswith("-model"):
                     elementen[obj["id"]] = obj
 
-    loop(root, [])
-    return {"elementen": elementen, "relaties": relaties,
-            "model": {"naam": root.get("name", ""), "eigenschappen": {}, "formaat": "archimate"}}
+    loop(root, [], "")
+    profielen = {p.get("id", ""): {"id": p.get("id", ""), "naam": p.get("name", ""), "concept": p.get("conceptType", "")}
+                 for p in root.findall("profile")}
+    return {"elementen": elementen, "relaties": relaties, "mappen": mappen,
+            "model": {"naam": root.get("name", ""), "id": root.get("id", ""), "eigenschappen": _archi_eigenschappen(root),
+                      "profielen": profielen, "formaat": "archimate"}}
 
 
 # --- Laden en bevragen ---
