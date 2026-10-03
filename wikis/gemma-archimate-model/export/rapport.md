@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: c05205b2d2e0ffec211cc9612b154194001b541ffd9281b5a46e178f547b816e -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 70a847f1a47b767f38565c0947342477795782c3261223b4bbfa00da076f904a -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-02T11:42:07. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 13 gekoppeld aan GEMMA, 40 nieuw. Relaties: 0 gekoppeld, 124 nieuw, 0 overgeslagen.
+Exportdatum: 2026-10-03T08:38:19. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 13 gekoppeld aan GEMMA, 39 nieuw. Relaties: 0 gekoppeld, 124 nieuw, 0 overgeslagen.
 
 ## Wijzigt een GEMMA-element
 
@@ -56,7 +56,6 @@ Exportdatum: 2026-10-02T11:42:07. GEMMA-bron: 2026-vng-gemma-2026-10-02. Element
 - Uitvoeren lijkbezorging
 - Urn
 - Vergunning
-- Verklaring van geen bezwaar
 - Verklaring van overlijden
 - Verlenen grafrecht
 - Verval van het grafrecht

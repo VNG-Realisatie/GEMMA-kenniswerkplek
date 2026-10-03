@@ -280,3 +280,4 @@ verwijderen; de pre-commit-hook weigert dat.
 ## [2026-10-02] promote | vervallen-verklaren-grafrecht | Mark Backer | 7a0f7288
 ## [2026-10-02] promote | verzorgen-gemeentebegrafenis | Mark Backer | 8d48c922
 ## [2026-10-02] promote | wet-op-de-lijkbezorging | Mark Backer | bd0c6a65
+## [2026-10-03] promote | gemeentelijke-lijkschouwer | Mark Backer | cfce5e2d

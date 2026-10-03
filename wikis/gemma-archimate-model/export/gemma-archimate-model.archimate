@@ -15,7 +15,7 @@
             <property key="Object ID" value="c481e8b8-f7d7-4979-b767-ebf2a9b04712" />
             <property key="wiki-gemma-model id" value="beschikking" />
             <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-            <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+            <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
             <property key="wiki-gemma-model soort export" value="definitief" />
             <property key="wiki-gemma-model status" value="goedgekeurd" />
             <property key="wiki-gemma-model GEMMA-match" value="sterk" />
@@ -34,7 +34,7 @@
             <property key="Object ID" value="a0f96391-4935-4c7a-be2b-2fa1b00da57f" />
             <property key="wiki-gemma-model id" value="gemeentebegrafenis" />
             <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-            <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+            <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
             <property key="wiki-gemma-model soort export" value="definitief" />
             <property key="wiki-gemma-model status" value="goedgekeurd" />
             <property key="wiki-gemma-model GEMMA-match" value="sterk" />
@@ -53,7 +53,7 @@
             <property key="Object ID" value="ff9366e3-dd65-48ce-9051-9d6b01b2c6db" />
             <property key="wiki-gemma-model id" value="heffing" />
             <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-            <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+            <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
             <property key="wiki-gemma-model soort export" value="definitief" />
             <property key="wiki-gemma-model status" value="goedgekeurd" />
             <property key="wiki-gemma-model GEMMA-match" value="exact" />
@@ -72,7 +72,7 @@
             <property key="Object ID" value="10d36920-683f-4cb4-84bf-b00ac045674f" />
             <property key="wiki-gemma-model id" value="besluit" />
             <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-            <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+            <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
             <property key="wiki-gemma-model soort export" value="definitief" />
             <property key="wiki-gemma-model status" value="goedgekeurd" />
             <property key="wiki-gemma-model GEMMA-match" value="sterk" />
@@ -91,7 +91,7 @@
             <property key="Object ID" value="f94b299a-c9eb-4bdb-82e7-5752360494cd" />
             <property key="wiki-gemma-model id" value="heffingsverordening" />
             <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-            <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+            <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
             <property key="wiki-gemma-model soort export" value="definitief" />
             <property key="wiki-gemma-model status" value="goedgekeurd" />
             <property key="wiki-gemma-model GEMMA-match" value="sterk" />
@@ -111,7 +111,7 @@
             <property key="Object ID" value="4613c364-53f2-445d-a392-3b6661533a71" />
             <property key="wiki-gemma-model id" value="regeling" />
             <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-            <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+            <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
             <property key="wiki-gemma-model soort export" value="definitief" />
             <property key="wiki-gemma-model status" value="goedgekeurd" />
             <property key="wiki-gemma-model GEMMA-match" value="sterk" />
@@ -131,7 +131,7 @@
           <property key="Toelichting" value="Bijv. het uitgeven van grafrechten en verlenen van vergunningen voor plaatsen van grafstenen. BIj het verzorgen van diensten bij begrafenissen valt te denken aan: het graven van een graf, voorlopen, diverse diensten in de Aula e.d." />
           <property key="wiki-gemma-model id" value="lijkbezorging" />
           <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model GEMMA-match" value="partieel" />
@@ -152,7 +152,7 @@
         <property key="Object ID" value="ff2d196f-11e0-4328-b78a-0714eb1c4e92" />
         <property key="wiki-gemma-model id" value="gemeente" />
         <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model status" value="goedgekeurd" />
         <property key="wiki-gemma-model GEMMA-match" value="zwak" />
@@ -169,7 +169,7 @@
           <property key="Object ID" value="8ee6ba79-47ed-47d5-8fc4-a707fbea233e" />
           <property key="wiki-gemma-model id" value="beslisser" />
           <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model GEMMA-match" value="sterk" />
@@ -182,7 +182,7 @@
           <property key="Object ID" value="a96ec982-643b-4c36-aa13-f36a51b85694" />
           <property key="wiki-gemma-model id" value="beheerder" />
           <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model GEMMA-match" value="zwak" />
@@ -196,7 +196,7 @@
           <property key="Object ID" value="af1a85d2-b6d6-44da-b562-ef2ccd69108e" />
           <property key="wiki-gemma-model id" value="college-van-b-w" />
           <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model GEMMA-match" value="exact" />
@@ -211,7 +211,7 @@
           <property key="Object ID" value="b69cb101-8708-47de-9ac1-e138f205a49f" />
           <property key="wiki-gemma-model id" value="gemeenteraad" />
           <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model GEMMA-match" value="exact" />
@@ -225,7 +225,7 @@
           <property key="Object ID" value="f3219a6a-532f-482d-897c-dafe0dc70bb0" />
           <property key="wiki-gemma-model id" value="adviseur" />
           <property key="wiki-gemma-model herkomst" value="gekoppeld" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model GEMMA-match" value="sterk" />
@@ -241,7 +241,7 @@
           <documentation>Kerkelijke gemeenschap, met inbegrip van haar zelfstandige onderdelen en de lichamen waarin kerkgenootschappen zijn verenigd.</documentation>
           <property key="wiki-gemma-model id" value="kerkgenootschap" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-bw2-rechtspersonen; 2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -253,7 +253,7 @@
           <documentation>Gezondheidsdienst die de colleges van de gemeenten in een regio via een gemeenschappelijke regeling instellen en in stand houden voor de publieke gezondheid.</documentation>
           <property key="wiki-gemma-model id" value="ggd" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-publieke-gezondheid-wettekst; 2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -265,7 +265,7 @@
           <documentation>Onderneming die in opdracht van nabestaanden de uitvaart verzorgt.</documentation>
           <property key="wiki-gemma-model id" value="uitvaartondernemer" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen; 2026-rvo-aangifte-en-akte-van-overlijden; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -277,7 +277,7 @@
           <documentation>Bestuursorgaan van de gemeente, voorzitter van gemeenteraad en college, benoemd bij koninklijk besluit.</documentation>
           <property key="wiki-gemma-model id" value="burgemeester" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2024-rijk-gemeentewet-wettekst; 2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -292,7 +292,7 @@
               <documentation>Beschikking waarmee een bestuursorgaan toestemming geeft voor een handeling die zonder die toestemming niet mag.</documentation>
               <property key="wiki-gemma-model id" value="vergunning" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2026-rvo-aangifte-en-akte-van-overlijden; 2026-rijk-algemene-wet-bestuursrecht-wettekst" />
@@ -308,7 +308,7 @@
               <documentation>Plaats op een begraafplaats waarin lijken worden begraven of urnen worden bijgezet.</documentation>
               <property key="wiki-gemma-model id" value="graf" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -319,7 +319,7 @@
               <documentation>Plaats waar urnen worden bijgezet, zoals een urnengraf, urnennis, crematorium of bewaarplaats.</documentation>
               <property key="wiki-gemma-model id" value="plaats-van-bijzetting" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -330,7 +330,7 @@
               <documentation>Houder waarin de as van een overledene wordt geborgen en wordt bewaard, bijgezet of verstrooid.</documentation>
               <property key="wiki-gemma-model id" value="urn" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2026-vng-retributies" />
@@ -342,7 +342,7 @@
               <documentation>Terrein waar lijken worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.</documentation>
               <property key="wiki-gemma-model id" value="begraafplaats" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2026-vng-wet-op-de-lijkbezorging" />
@@ -353,7 +353,7 @@
               <documentation>Gedenkteken en grafbeplanting op een graf, gedenkplaats of verstrooiingsplaats.</documentation>
               <property key="wiki-gemma-model id" value="grafbedekking" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -361,22 +361,11 @@
               <property key="wiki-gemma-model synoniemen" value="Gedenkteken (beleid); Grafmonument (beleid)" />
               <property key="wiki-gemma-model pagina" value="bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafbedekking.md" />
             </element>
-            <element xsi:type="archimate:BusinessObject" name="Verklaring van geen bezwaar" id="id-69d5b132841e5e549bb23c15253e34c8">
-              <documentation>Verklaring van de officier van justitie dat hij geen bezwaar heeft tegen begraving of crematie.</documentation>
-              <property key="wiki-gemma-model id" value="verklaring-van-geen-bezwaar" />
-              <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
-              <property key="wiki-gemma-model soort export" value="definitief" />
-              <property key="wiki-gemma-model status" value="goedgekeurd" />
-              <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2026-rvo-aangifte-en-akte-van-overlijden" />
-              <property key="wiki-gemma-model beschrijving" value="Bij een niet-natuurlijke dood geeft de officier van justitie een verklaring van geen bezwaar af; die vervangt de verklaring van overlijden als grond voor het verlof tot begraving of crematie (art. 12). Ook voor het vervroegen van een uitvaart is zo'n verklaring nodig (Ondernemersplein). De afweging van de officier zelf valt buiten dit model; de verklaring is invoer voor de gemeente." />
-              <property key="wiki-gemma-model pagina" value="bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verklaring-van-geen-bezwaar.md" />
-            </element>
             <element xsi:type="archimate:BusinessObject" name="Verklaring van overlijden" id="id-97c49003100c5918b7e5b6119a27ccdf">
               <documentation>Verklaring van de schouwer dat de dood door een natuurlijke oorzaak is ingetreden.</documentation>
               <property key="wiki-gemma-model id" value="verklaring-van-overlijden" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2026-rvo-aangifte-en-akte-van-overlijden" />
@@ -388,7 +377,7 @@
               <documentation>Het lichaam van een overledene of doodgeborene.</documentation>
               <property key="wiki-gemma-model id" value="lijk" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -399,7 +388,7 @@
               <documentation>Inrichting waar lijken worden gecremeerd en de as wordt geborgen.</documentation>
               <property key="wiki-gemma-model id" value="crematorium" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -410,7 +399,7 @@
               <documentation>Uitsluitend recht om in een particulier graf lijken te laten begraven of urnen te laten bijzetten, voor bepaalde of onbepaalde tijd.</documentation>
               <property key="wiki-gemma-model id" value="grafrecht" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen; 2026-vng-retributies" />
@@ -428,7 +417,7 @@
               <documentation>Het leegmaken van een graf, waarbij de resten worden herbegraven en de as wordt verstrooid.</documentation>
               <property key="wiki-gemma-model id" value="ruimen-graf" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen; 2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -440,7 +429,7 @@
               <documentation>Het onderhouden van grafbedekking en beplanting op een graf door de gemeente.</documentation>
               <property key="wiki-gemma-model id" value="onderhouden-graf" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen; 2026-vng-retributies" />
@@ -451,7 +440,7 @@
               <documentation>Het verlenen van een grafrecht op een particulier graf aan een rechthebbende.</documentation>
               <property key="wiki-gemma-model id" value="verlenen-grafrecht" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen; 2026-vng-retributies" />
@@ -463,7 +452,7 @@
               <documentation>Het beëindigen van een grafrecht door de gemeente, bijvoorbeeld bij verwaarlozing van het graf of het uitblijven van betaling.</documentation>
               <property key="wiki-gemma-model id" value="vervallen-verklaren-grafrecht" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -474,7 +463,7 @@
               <documentation>Het nemen van maatregelen om gevaar voor de volksgezondheid door een besmet lijk af te wenden.</documentation>
               <property key="wiki-gemma-model id" value="treffen-maatregel-bij-besmet-lijk" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2026-rijk-wet-publieke-gezondheid-wettekst" />
@@ -485,7 +474,7 @@
               <documentation>Onderzoek van een lijk door een arts na het overlijden, om vast te stellen of de dood een natuurlijke oorzaak heeft.</documentation>
               <property key="wiki-gemma-model id" value="schouwen-lijk" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -497,7 +486,7 @@
               <documentation>Het opgraven van een lijk uit een graf, met vergunning van de burgemeester.</documentation>
               <property key="wiki-gemma-model id" value="opgraven-lijk" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -509,7 +498,7 @@
               <documentation>Het regelen en betalen van de lijkbezorging door de gemeente als niemand anders daarin voorziet.</documentation>
               <property key="wiki-gemma-model id" value="verzorgen-gemeentebegrafenis" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -521,7 +510,7 @@
               <documentation>Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk, met de bestemming van de as.</documentation>
               <property key="wiki-gemma-model id" value="uitvoeren-lijkbezorging" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -538,7 +527,7 @@
               <documentation>Onderhoud van grafmonumenten en grafbeplanting door de gemeente, tegen betaling door de rechthebbende.</documentation>
               <property key="wiki-gemma-model id" value="onderhoud-van-graven" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2026-vng-retributies" />
@@ -549,7 +538,7 @@
               <documentation>Een particulier graf, urnengraf of urnennis laten uitgeven, met het grafrecht daarop.</documentation>
               <property key="wiki-gemma-model id" value="graf-aanvragen" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen; 2026-vng-retributies" />
@@ -561,7 +550,7 @@
               <documentation>Toestemming van de gemeente om een overledene eerder dan 36 uur of later dan zes werkdagen na het overlijden te begraven of te cremeren.</documentation>
               <property key="wiki-gemma-model id" value="uitvaart-vervroegen-of-uitstellen" />
               <property key="wiki-gemma-model herkomst" value="nieuw" />
-              <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+              <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
               <property key="wiki-gemma-model soort export" value="definitief" />
               <property key="wiki-gemma-model status" value="goedgekeurd" />
               <property key="wiki-gemma-model bronnen" value="2026-rvo-aangifte-en-akte-van-overlijden; 2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -577,7 +566,7 @@
           <documentation>De burgemeester heeft van de GGD de melding ontvangen dat een lijk besmet is met gevaar voor de volksgezondheid.</documentation>
           <property key="wiki-gemma-model id" value="besmet-lijk-gemeld" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-publieke-gezondheid-wettekst; 2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -589,7 +578,7 @@
           <documentation>Het einde van een grafrecht door verloop van de termijn, afstand, opheffing van de begraafplaats of vervallenverklaring.</documentation>
           <property key="wiki-gemma-model id" value="verval-van-het-grafrecht" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -600,7 +589,7 @@
           <documentation>Het sterven van een persoon.</documentation>
           <property key="wiki-gemma-model id" value="overlijden" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2026-rvo-aangifte-en-akte-van-overlijden" />
@@ -613,7 +602,7 @@
           <documentation>Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken.</documentation>
           <property key="wiki-gemma-model id" value="ambtenaar-van-de-burgerlijke-stand" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2026-rvo-aangifte-en-akte-van-overlijden" />
@@ -624,7 +613,7 @@
           <documentation>Verantwoordelijkheid voor het in stand houden en beheren van een begraafplaats.</documentation>
           <property key="wiki-gemma-model id" value="houder-van-de-begraafplaats" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -635,18 +624,18 @@
           <documentation>Arts die door het college is benoemd om lijken te schouwen.</documentation>
           <property key="wiki-gemma-model id" value="gemeentelijke-lijkschouwer" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
-          <property key="wiki-gemma-model beschrijving" value="Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uitsluitend forensisch artsen (art. 4, 5). De lijkschouwer schouwt het lijk als de behandelend arts dat niet doet, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a). Hij kan de elektronische weg openstellen voor mededelingen van de behandelend arts (art. 7 lid 3)." />
+          <property key="wiki-gemma-model beschrijving" value="Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uitsluitend forensisch artsen (art. 4, 5). Normaal schouwt de behandelend arts het lijk; de gemeentelijke lijkschouwer is de uitzondering en schouwt alleen als de behandelend arts dat niet doet, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a). Hij kan de elektronische weg openstellen voor mededelingen van de behandelend arts (art. 7 lid 3)." />
           <property key="wiki-gemma-model pagina" value="bedrijfsarchitectuur/rollen/gemeentelijke-lijkschouwer.md" />
         </element>
         <element xsi:type="archimate:BusinessRole" name="Rechthebbende op het graf" id="id-cb6de84aee08550d85ac3727aad8bec2">
           <documentation>Wie het grafrecht op een particulier graf heeft en bepaalt wie daarin wordt begraven of bijgezet.</documentation>
           <property key="wiki-gemma-model id" value="rechthebbende-op-het-graf" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -658,7 +647,7 @@
           <documentation>Wie de lijkbezorging van een overledene regelt en daarvoor het verlof aanvraagt.</documentation>
           <property key="wiki-gemma-model id" value="degene-die-in-de-lijkbezorging-voorziet" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -670,7 +659,7 @@
           <documentation>Verantwoordelijkheid voor een plaats waar urnen worden bijgezet.</documentation>
           <property key="wiki-gemma-model id" value="houder-van-een-plaats-van-bijzetting" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -681,7 +670,7 @@
           <documentation>Verantwoordelijkheid voor een crematorium, het bergen van de as en de bestemming daarvan.</documentation>
           <property key="wiki-gemma-model id" value="houder-van-het-crematorium" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -692,7 +681,7 @@
           <documentation>Naaste van een overledene die zorg draagt voor de uitvaart of de urn.</documentation>
           <property key="wiki-gemma-model id" value="nabestaande" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -711,7 +700,7 @@
           <documentation>Wet die regelt hoe een lijk wordt geschouwd, begraven, gecremeerd of anders bezorgd, en welke taken de gemeente daarbij heeft.</documentation>
           <property key="wiki-gemma-model id" value="wet-op-de-lijkbezorging" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2026-vng-wet-op-de-lijkbezorging" />
@@ -722,7 +711,7 @@
           <documentation>Model van de VNG voor de verordening waarin een gemeente het beheer en het gebruik van haar begraafplaatsen regelt.</documentation>
           <property key="wiki-gemma-model id" value="model-beheersverordening-begraafplaatsen" />
           <property key="wiki-gemma-model herkomst" value="nieuw" />
-          <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+          <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
           <property key="wiki-gemma-model soort export" value="definitief" />
           <property key="wiki-gemma-model status" value="goedgekeurd" />
           <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen; 2026-vng-wet-op-de-lijkbezorging" />
@@ -740,7 +729,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="betreft (vergunning grafbedekking)" id="id-00c0b2985e075c269fa52f191c6c75ba" source="id-268057e5fe5b546fbc837693094bd785" target="id-60c80a79d05150f38339b75b4e76f46b" directed="true">
         <property key="wiki-gemma-model id" value="vergunning#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -749,7 +738,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="vervult" id="id-01f487f304af5b64b3708cca29465cf8" source="id-af1a85d2-b6d6-44da-b562-ef2ccd69108e" target="id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e">
         <property key="wiki-gemma-model id" value="college-van-b-w#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -758,7 +747,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="staat op" id="id-076eaa5fc1435c0b9bd3e84dec4a5dad" source="id-60c80a79d05150f38339b75b4e76f46b" target="id-0c4079e5f4ac5b43b4ff3c59b6ce6ae8" directed="true">
         <property key="wiki-gemma-model id" value="grafbedekking#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -767,7 +756,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-0e17aa470cc1599486eb9838e64758b0" source="id-58cba76204ce551b9650abf0d9fbf686" target="id-8aeb21e52a7a5af99faf3d55995af0bb" directed="true">
         <property key="wiki-gemma-model id" value="wet-op-de-lijkbezorging#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -776,7 +765,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="voor het gebruik van (lijkbezorgingsrechten)" id="id-0ecb52b7891c525e86a12b5509bb9434" source="id-68bccce27b314b94a022ddd81d517d82" target="id-b1adea73dd0d54d490565e755aefcc6a" directed="true">
         <property key="wiki-gemma-model id" value="heffing#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-vng-retributies" />
@@ -785,7 +774,7 @@
       <element xsi:type="archimate:RealizationRelationship" name="realiseert" id="id-102c537b3beb5b2eb322f3ff9b7e5e38" source="id-6344b6861697540e8216a9c9707038a8" target="id-1d72274738755c51ba065825f7a8f293">
         <property key="wiki-gemma-model id" value="onderhouden-graf#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -794,7 +783,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-110cd4cb1da6562ebf99522fe86cedb2" source="id-dd3cb81e680059828143496df77fbbd1" target="id-cb6de84aee08550d85ac3727aad8bec2">
         <property key="wiki-gemma-model id" value="graf-aanvragen#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -803,7 +792,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="verleent vergunning voor" id="id-11f47bcf89cd5f0eb0e941c64a17acdb" source="id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e" target="id-abcb82c5d790520f856afdda24be34b1">
         <property key="wiki-gemma-model id" value="beslisser#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -812,7 +801,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-144374d2fa425abaa8f50cb32bd342e5" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-abcb82c5d790520f856afdda24be34b1">
         <property key="wiki-gemma-model id" value="lijkbezorging#9" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -821,7 +810,7 @@
       <element xsi:type="archimate:AccessRelationship" name="betreft" id="id-15e90527312c532986931746e1860eaa" source="id-d254a261cbf8513f9768449e654e0032" target="id-a2c7cb8f384257778067e70f75d4f2c8" accessType="1">
         <property key="wiki-gemma-model id" value="verzorgen-gemeentebegrafenis#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -830,7 +819,7 @@
       <element xsi:type="archimate:AccessRelationship" name="onderhoudt" id="id-1793d37eb29d5181bd7cc29aec5e37df" source="id-cb6de84aee08550d85ac3727aad8bec2" target="id-60c80a79d05150f38339b75b4e76f46b" accessType="3">
         <property key="wiki-gemma-model id" value="rechthebbende-op-het-graf#5" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -839,7 +828,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="geeft de melding van een besmet lijk door aan" id="id-188aad5604e55932955a98dbc1e16ac3" source="id-15f549fec72f5677a16d1f4867dba8ed" target="id-ab1fb457a4585841b98353e315234233" directed="true">
         <property key="wiki-gemma-model id" value="ggd#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-publieke-gezondheid-wettekst" />
@@ -848,7 +837,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="wordt bijgezet in" id="id-19cf76b499725a3387d7c8a199f8c5c4" source="id-335b3517a93f5205a1825c67c87cb60e" target="id-0c4079e5f4ac5b43b4ff3c59b6ce6ae8" directed="true">
         <property key="wiki-gemma-model id" value="urn#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -857,7 +846,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="vervult" id="id-1dd99fa9285558db9d534acb8fdf01ba" source="id-15f549fec72f5677a16d1f4867dba8ed" target="id-f3219a6a-532f-482d-897c-dafe0dc70bb0">
         <property key="wiki-gemma-model id" value="ggd#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2026-rijk-wet-publieke-gezondheid-wettekst" />
@@ -866,7 +855,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-202b40a022a054eeac3eaac0eab628c4" source="id-698780f0d7a7536b9a3bd66c7edae03d" target="id-2de444e3552c5f908f12c6a6868cadfa" directed="true">
         <property key="wiki-gemma-model id" value="model-beheersverordening-begraafplaatsen#5" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -875,7 +864,7 @@
       <element xsi:type="archimate:TriggeringRelationship" name="leidt tot" id="id-2103738e84e6564594ac14b3c249b8bc" source="id-75a1ffb3a38f5ed482179917b41d5c97" target="id-e9b245662c175440ad0b5585bbbe18df">
         <property key="wiki-gemma-model id" value="vervallen-verklaren-grafrecht#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -884,7 +873,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-277c6b50eee15ac5bbeb95fb07136227" source="id-1d72274738755c51ba065825f7a8f293" target="id-cb6de84aee08550d85ac3727aad8bec2">
         <property key="wiki-gemma-model id" value="onderhoud-van-graven#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -893,7 +882,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-2942c14c79cc5222bc3ffff130042538" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-d254a261cbf8513f9768449e654e0032">
         <property key="wiki-gemma-model id" value="lijkbezorging#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -902,7 +891,7 @@
       <element xsi:type="archimate:AccessRelationship" name="begraaft in" id="id-29d1e4b0b69550b9974c870b5fd64f8e" source="id-f3fef18c03185926a98c84015a0dae05" target="id-0c4079e5f4ac5b43b4ff3c59b6ce6ae8" accessType="3">
         <property key="wiki-gemma-model id" value="uitvoeren-lijkbezorging#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -911,7 +900,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-2c41de3d2309533cbc751863a1ef26e2" source="id-58cba76204ce551b9650abf0d9fbf686" target="id-80882f2992c259ec970fe9e268f3f946" directed="true">
         <property key="wiki-gemma-model id" value="wet-op-de-lijkbezorging#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -920,7 +909,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="ruimt asbussen bij" id="id-2d44a1f2942d5a74b47b18154d83115c" source="id-f97e7a1412ff52749ee3016217299bdb" target="id-2de444e3552c5f908f12c6a6868cadfa">
         <property key="wiki-gemma-model id" value="houder-van-een-plaats-van-bijzetting#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -929,7 +918,7 @@
       <element xsi:type="archimate:AccessRelationship" name="houdt het register van begraven lijken bij" id="id-34ce27e017c455d09dc34d7ba372972a" source="id-77e415928f565e74b91359fde6ad9da7" target="id-0c4079e5f4ac5b43b4ff3c59b6ce6ae8" accessType="0">
         <property key="wiki-gemma-model id" value="houder-van-de-begraafplaats#5" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -938,7 +927,7 @@
       <element xsi:type="archimate:AccessRelationship" name="bezorgt" id="id-3e46792929605ad18861ecd5958910e1" source="id-f3fef18c03185926a98c84015a0dae05" target="id-a2c7cb8f384257778067e70f75d4f2c8" accessType="3">
         <property key="wiki-gemma-model id" value="uitvoeren-lijkbezorging#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -947,7 +936,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is model voor (beheersverordening begraafplaatsen)" id="id-3ea63a61f3725aaf859aaf86dba759e7" source="id-698780f0d7a7536b9a3bd66c7edae03d" target="id-e5771904f7a442de8f07744a66d37ef0" directed="true">
         <property key="wiki-gemma-model id" value="model-beheersverordening-begraafplaatsen#7" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen; 2026-vng-wet-op-de-lijkbezorging" />
@@ -956,7 +945,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="draagt de kosten van" id="id-45503ea2f44b5e1a8f8c620930edf2cf" source="id-17a7441705094ba9b385c25497844778" target="id-d254a261cbf8513f9768449e654e0032">
         <property key="wiki-gemma-model id" value="gemeente#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -965,7 +954,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-45d780b24e375301938ab485079f86fb" source="id-58cba76204ce551b9650abf0d9fbf686" target="id-d254a261cbf8513f9768449e654e0032" directed="true">
         <property key="wiki-gemma-model id" value="wet-op-de-lijkbezorging#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -974,7 +963,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-47d34e1c1006549fb8df0cbc0a109259" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-f3fef18c03185926a98c84015a0dae05">
         <property key="wiki-gemma-model id" value="lijkbezorging#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -983,7 +972,7 @@
       <element xsi:type="archimate:AccessRelationship" name="geeft af" id="id-48fc4e8282f45472919b93b4ada49a9f" source="id-8aeb21e52a7a5af99faf3d55995af0bb" target="id-97c49003100c5918b7e5b6119a27ccdf" accessType="0">
         <property key="wiki-gemma-model id" value="schouwen-lijk#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -992,7 +981,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is voorzitter van" id="id-4ba12851813d50998601beef88962f2c" source="id-ab1fb457a4585841b98353e315234233" target="id-af1a85d2-b6d6-44da-b562-ef2ccd69108e" directed="true">
         <property key="wiki-gemma-model id" value="burgemeester#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2024-rijk-gemeentewet-wettekst" />
@@ -1001,7 +990,7 @@
       <element xsi:type="archimate:AccessRelationship" name="geeft uit" id="id-4e8660efc2a350258b5a89c947182a69" source="id-72c234ccca9b5464811e0474bcd782ce" target="id-0c4079e5f4ac5b43b4ff3c59b6ce6ae8" accessType="1">
         <property key="wiki-gemma-model id" value="verlenen-grafrecht#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1010,7 +999,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="is belast met de werkzaamheden bij" id="id-4f8c4f5eb65051cc9007854188aaacbb" source="id-a96ec982-643b-4c36-aa13-f36a51b85694" target="id-abcb82c5d790520f856afdda24be34b1">
         <property key="wiki-gemma-model id" value="beheerder#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1019,7 +1008,7 @@
       <element xsi:type="archimate:AccessRelationship" name="leidt tot (recht voor onderhoud)" id="id-504e27474af85c13bbafa16c1af592b1" source="id-6344b6861697540e8216a9c9707038a8" target="id-68bccce27b314b94a022ddd81d517d82" accessType="0">
         <property key="wiki-gemma-model id" value="onderhouden-graf#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2026-vng-retributies" />
@@ -1028,7 +1017,7 @@
       <element xsi:type="archimate:AccessRelationship" name="graaft op" id="id-52c0a089054a52c38ab44d8bf1013c02" source="id-abcb82c5d790520f856afdda24be34b1" target="id-a2c7cb8f384257778067e70f75d4f2c8" accessType="3">
         <property key="wiki-gemma-model id" value="opgraven-lijk#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1037,7 +1026,7 @@
       <element xsi:type="archimate:AccessRelationship" name="doet vervallen" id="id-52e0d7b5e41f5912809feaaff350b889" source="id-75a1ffb3a38f5ed482179917b41d5c97" target="id-f1059419577a5403a5d95aa332436032" accessType="0">
         <property key="wiki-gemma-model id" value="vervallen-verklaren-grafrecht#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1046,7 +1035,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="vraagt aan" id="id-52e41fc5656c511a88bf9907b0df9cbf" source="id-cb6de84aee08550d85ac3727aad8bec2" target="id-72c234ccca9b5464811e0474bcd782ce">
         <property key="wiki-gemma-model id" value="rechthebbende-op-het-graf#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -1055,7 +1044,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="stelt verklaring van verwaarlozing op bij" id="id-533c31dd282856a1997d7820293184e9" source="id-77e415928f565e74b91359fde6ad9da7" target="id-75a1ffb3a38f5ed482179917b41d5c97">
         <property key="wiki-gemma-model id" value="houder-van-de-begraafplaats#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1064,7 +1053,7 @@
       <element xsi:type="archimate:AccessRelationship" name="houdt register van" id="id-53c14064a5765b5d8196cbb40550e64b" source="id-f97e7a1412ff52749ee3016217299bdb" target="id-335b3517a93f5205a1825c67c87cb60e" accessType="0">
         <property key="wiki-gemma-model id" value="houder-van-een-plaats-van-bijzetting#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1073,7 +1062,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-55abe9bf14fc51b1a7e6aa278895325a" source="id-fd16f7c92e325b1181001c7f52db758e" target="id-e816170ab8e354c192c34c534cfa3355">
         <property key="wiki-gemma-model id" value="uitvaart-vervroegen-of-uitstellen#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rvo-aangifte-en-akte-van-overlijden" />
@@ -1082,7 +1071,7 @@
       <element xsi:type="archimate:AccessRelationship" name="houdt" id="id-5746b515961b51488935edbec7703f43" source="id-77e415928f565e74b91359fde6ad9da7" target="id-4ecb72536f3755cea1b5d6611a1aa65e" accessType="3">
         <property key="wiki-gemma-model id" value="houder-van-de-begraafplaats#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1091,7 +1080,7 @@
       <element xsi:type="archimate:AccessRelationship" name="schouwt" id="id-58ee8e2eda5a5b8b8892d2dc3cd481b4" source="id-8aeb21e52a7a5af99faf3d55995af0bb" target="id-a2c7cb8f384257778067e70f75d4f2c8" accessType="1">
         <property key="wiki-gemma-model id" value="schouwen-lijk#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1100,7 +1089,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="verzoekt om" id="id-5940ac63a770544aa805128f2fb4d7af" source="id-cb6de84aee08550d85ac3727aad8bec2" target="id-6344b6861697540e8216a9c9707038a8">
         <property key="wiki-gemma-model id" value="rechthebbende-op-het-graf#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1109,7 +1098,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-5bb146ceb8495b118d26a04e38d041d2" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-2de444e3552c5f908f12c6a6868cadfa">
         <property key="wiki-gemma-model id" value="lijkbezorging#8" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1118,7 +1107,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="werkt uit" id="id-5de511da51c65bd7ab8a101d98f6fa9b" source="id-698780f0d7a7536b9a3bd66c7edae03d" target="id-58cba76204ce551b9650abf0d9fbf686" directed="true">
         <property key="wiki-gemma-model id" value="model-beheersverordening-begraafplaatsen#6" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -1127,7 +1116,7 @@
       <element xsi:type="archimate:AccessRelationship" name="geschiedt in" id="id-6559281ef5b255428572032d080e8626" source="id-f3fef18c03185926a98c84015a0dae05" target="id-b1adea73dd0d54d490565e755aefcc6a" accessType="1">
         <property key="wiki-gemma-model id" value="uitvoeren-lijkbezorging#6" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1136,7 +1125,7 @@
       <element xsi:type="archimate:SpecializationRelationship" name="is een" id="id-65e42e6da4585c7d8804645854fb1836" source="id-268057e5fe5b546fbc837693094bd785" target="id-3d9b45d27b6840b39b99e8ede85db6f4">
         <property key="wiki-gemma-model id" value="vergunning#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-algemene-wet-bestuursrecht-wettekst; 2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1145,7 +1134,7 @@
       <element xsi:type="archimate:AccessRelationship" name="onderhoudt" id="id-6649638616715bb5b5ae3eddd3ccac12" source="id-6344b6861697540e8216a9c9707038a8" target="id-60c80a79d05150f38339b75b4e76f46b" accessType="3">
         <property key="wiki-gemma-model id" value="onderhouden-graf#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1154,7 +1143,7 @@
       <element xsi:type="archimate:AccessRelationship" name="stelt op (verklaring van verwaarlozing)" id="id-675ebb3b78245bf098001a0720ce220d" source="id-75a1ffb3a38f5ed482179917b41d5c97" target="id-3d9b45d27b6840b39b99e8ede85db6f4" accessType="0">
         <property key="wiki-gemma-model id" value="vervallen-verklaren-grafrecht#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1163,7 +1152,7 @@
       <element xsi:type="archimate:TriggeringRelationship" name="leidt tot" id="id-686a27c24d645edb8df039673e01f38b" source="id-2fea955930dd520eba7426ee1cf72121" target="id-80882f2992c259ec970fe9e268f3f946">
         <property key="wiki-gemma-model id" value="besmet-lijk-gemeld#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2026-rijk-wet-publieke-gezondheid-wettekst" />
@@ -1172,7 +1161,7 @@
       <element xsi:type="archimate:AggregationRelationship" name="bevat" id="id-694a218238c055c9b2d33b049f686f9c" source="id-4ecb72536f3755cea1b5d6611a1aa65e" target="id-0c4079e5f4ac5b43b4ff3c59b6ce6ae8">
         <property key="wiki-gemma-model id" value="begraafplaats#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1181,7 +1170,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="vervult" id="id-69accd1f3c6159fb9c9d36ef38eb5983" source="id-ab1fb457a4585841b98353e315234233" target="id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e">
         <property key="wiki-gemma-model id" value="burgemeester#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1190,7 +1179,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-6cbf9d21de415934b3caaa6460ada59c" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-75a1ffb3a38f5ed482179917b41d5c97">
         <property key="wiki-gemma-model id" value="lijkbezorging#6" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1199,7 +1188,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="voorziet in en vraagt het verlof aan voor" id="id-70d5fa20da645ed382bf5b3da9a10788" source="id-e816170ab8e354c192c34c534cfa3355" target="id-f3fef18c03185926a98c84015a0dae05">
         <property key="wiki-gemma-model id" value="degene-die-in-de-lijkbezorging-voorziet#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1208,7 +1197,7 @@
       <element xsi:type="archimate:AccessRelationship" name="bergt as in en bewaart" id="id-72828705589d5bf7b607b99325139b9b" source="id-fafdec9a745a5861ae1b04f2947fa87b" target="id-335b3517a93f5205a1825c67c87cb60e" accessType="3">
         <property key="wiki-gemma-model id" value="houder-van-het-crematorium#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1217,7 +1206,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="treft" id="id-75d826f5e46b559fbb96dd89cceda532" source="id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e" target="id-80882f2992c259ec970fe9e268f3f946">
         <property key="wiki-gemma-model id" value="beslisser#5" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1226,7 +1215,7 @@
       <element xsi:type="archimate:AccessRelationship" name="ruimt door verstrooiing" id="id-76a9a349e5cd5f1fa787d7367f55ddf5" source="id-2de444e3552c5f908f12c6a6868cadfa" target="id-335b3517a93f5205a1825c67c87cb60e" accessType="3">
         <property key="wiki-gemma-model id" value="ruimen-graf#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1235,7 +1224,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="beslist over" id="id-775f4371fdd25ce4a3df40f3ec9884c1" source="id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e" target="id-75a1ffb3a38f5ed482179917b41d5c97">
         <property key="wiki-gemma-model id" value="beslisser#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1244,7 +1233,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="geeft het verlof tot begraving of crematie af" id="id-776ccf50552852afa0feeddf0c1b3ec3" source="id-3b44289d234957ecad7e1c725acf246a" target="id-30deba14-c60a-49b2-b6d2-740a6d2539f5">
         <property key="wiki-gemma-model id" value="ambtenaar-van-de-burgerlijke-stand#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1253,7 +1242,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="regelt (beheersverordening begraafplaatsen)" id="id-7a1498b7e1b051379756d6eed4348916" source="id-e5771904f7a442de8f07744a66d37ef0" target="id-4ecb72536f3755cea1b5d6611a1aa65e" directed="true">
         <property key="wiki-gemma-model id" value="regeling#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-vng-wet-op-de-lijkbezorging; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1262,7 +1251,7 @@
       <element xsi:type="archimate:SpecializationRelationship" name="is een" id="id-7a9c00e1d25e52e9a53ab3a4452776c1" source="id-3d9b45d27b6840b39b99e8ede85db6f4" target="id-865c7c57c41b41b6847a258458c8421d">
         <property key="wiki-gemma-model id" value="beschikking#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-algemene-wet-bestuursrecht-wettekst" />
@@ -1271,7 +1260,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="voor het gebruik van (lijkbezorgingsrechten)" id="id-7c7374ec870358b5816c72b5488e647f" source="id-68bccce27b314b94a022ddd81d517d82" target="id-4ecb72536f3755cea1b5d6611a1aa65e" directed="true">
         <property key="wiki-gemma-model id" value="heffing#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-vng-retributies" />
@@ -1280,7 +1269,7 @@
       <element xsi:type="archimate:TriggeringRelationship" name="leidt tot" id="id-7e0e25ba0a2b56f2935eb3d6eccf7b6b" source="id-edb09f226d2b51f7a95e3dc16d5cb699" target="id-f3fef18c03185926a98c84015a0dae05">
         <property key="wiki-gemma-model id" value="overlijden#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1289,7 +1278,7 @@
       <element xsi:type="archimate:RealizationRelationship" name="realiseert" id="id-800c6d1ea4325b28a722a2f8093019ce" source="id-72c234ccca9b5464811e0474bcd782ce" target="id-dd3cb81e680059828143496df77fbbd1">
         <property key="wiki-gemma-model id" value="verlenen-grafrecht#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -1298,7 +1287,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="betreft" id="id-82728ad1734d51e2a05a1ed168158e37" source="id-2fea955930dd520eba7426ee1cf72121" target="id-a2c7cb8f384257778067e70f75d4f2c8" directed="true">
         <property key="wiki-gemma-model id" value="besmet-lijk-gemeld#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-publieke-gezondheid-wettekst" />
@@ -1307,7 +1296,7 @@
       <element xsi:type="archimate:AccessRelationship" name="leidt tot (lijkbezorgingsrechten)" id="id-8368bf00c21651fcab245bbf7333bd95" source="id-72c234ccca9b5464811e0474bcd782ce" target="id-68bccce27b314b94a022ddd81d517d82" accessType="0">
         <property key="wiki-gemma-model id" value="verlenen-grafrecht#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-vng-retributies" />
@@ -1316,7 +1305,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="benoemt" id="id-8d8b2fa727da5d3c858a1d62146450ff" source="id-af1a85d2-b6d6-44da-b562-ef2ccd69108e" target="id-7a33463e2bb35989ab38d88aa0e2a173" directed="true">
         <property key="wiki-gemma-model id" value="college-van-b-w#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1325,7 +1314,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-9220bcd53447550ebb0e8f4b8fd2c5ad" source="id-58cba76204ce551b9650abf0d9fbf686" target="id-f3fef18c03185926a98c84015a0dae05" directed="true">
         <property key="wiki-gemma-model id" value="wet-op-de-lijkbezorging#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1334,7 +1323,7 @@
       <element xsi:type="archimate:AccessRelationship" name="heeft" id="id-938705d7ff7f56dfa945666372e11718" source="id-cb6de84aee08550d85ac3727aad8bec2" target="id-f1059419577a5403a5d95aa332436032" accessType="3">
         <property key="wiki-gemma-model id" value="rechthebbende-op-het-graf#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1343,7 +1332,7 @@
       <element xsi:type="archimate:AccessRelationship" name="houdt" id="id-95d6cdb16d815d6cbb40de9c055430c0" source="id-f97e7a1412ff52749ee3016217299bdb" target="id-2e78fe31ecfe53479a36e3e0a37b06bf" accessType="3">
         <property key="wiki-gemma-model id" value="houder-van-een-plaats-van-bijzetting#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1352,7 +1341,7 @@
       <element xsi:type="archimate:AccessRelationship" name="geschiedt op" id="id-969c7eaf745658adb0500e3a9b7a9392" source="id-f3fef18c03185926a98c84015a0dae05" target="id-4ecb72536f3755cea1b5d6611a1aa65e" accessType="1">
         <property key="wiki-gemma-model id" value="uitvoeren-lijkbezorging#5" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1361,7 +1350,7 @@
       <element xsi:type="archimate:TriggeringRelationship" name="leidt tot" id="id-97bcf57cad9b5b869488ec4b078088ad" source="id-e9b245662c175440ad0b5585bbbe18df" target="id-2de444e3552c5f908f12c6a6868cadfa">
         <property key="wiki-gemma-model id" value="verval-van-het-grafrecht#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1370,7 +1359,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="vervult" id="id-991b150202bf5cffb379789b0fb65945" source="id-1258be4e5c78553ebdec35fc7b592d1f" target="id-77e415928f565e74b91359fde6ad9da7">
         <property key="wiki-gemma-model id" value="kerkgenootschap#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1379,7 +1368,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-9b5094c94a7a566d9edaf7b48be64fb9" source="id-58cba76204ce551b9650abf0d9fbf686" target="id-2de444e3552c5f908f12c6a6868cadfa" directed="true">
         <property key="wiki-gemma-model id" value="wet-op-de-lijkbezorging#8" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1388,7 +1377,7 @@
       <element xsi:type="archimate:AccessRelationship" name="zet bij of verstrooit de as uit" id="id-9c657df37b595d189407248ea21d8244" source="id-f3fef18c03185926a98c84015a0dae05" target="id-335b3517a93f5205a1825c67c87cb60e" accessType="3">
         <property key="wiki-gemma-model id" value="uitvoeren-lijkbezorging#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1397,7 +1386,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="stelt de identiteit vast bij" id="id-9e3e000ff67251909ea4d224b0f09443" source="id-77e415928f565e74b91359fde6ad9da7" target="id-f3fef18c03185926a98c84015a0dae05">
         <property key="wiki-gemma-model id" value="houder-van-de-begraafplaats#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1406,7 +1395,7 @@
       <element xsi:type="archimate:AccessRelationship" name="treft (maatregel bij besmet lijk)" id="id-9f0aafd928c356e39d84fc5b9963e149" source="id-80882f2992c259ec970fe9e268f3f946" target="id-3d9b45d27b6840b39b99e8ede85db6f4" accessType="0">
         <property key="wiki-gemma-model id" value="treffen-maatregel-bij-besmet-lijk#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1415,7 +1404,7 @@
       <element xsi:type="archimate:AccessRelationship" name="draagt zorg voor" id="id-9f585088e18e54338492ca18dfc6031f" source="id-fef4ddc0626658c98d617a3cf964afab" target="id-335b3517a93f5205a1825c67c87cb60e" accessType="3">
         <property key="wiki-gemma-model id" value="nabestaande#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1424,7 +1413,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="regelt" id="id-a02db623553457c3b9e50dc4e634bf6f" source="id-b5f50c54f1cf45b8b7b61a5929035919" target="id-68bccce27b314b94a022ddd81d517d82" directed="true">
         <property key="wiki-gemma-model id" value="heffingsverordening#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2024-rijk-gemeentewet-wettekst; 2026-vng-retributies" />
@@ -1433,7 +1422,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-a0a145d90cd05faf864dbeeb49cf8b0c" source="id-698780f0d7a7536b9a3bd66c7edae03d" target="id-dd3cb81e680059828143496df77fbbd1" directed="true">
         <property key="wiki-gemma-model id" value="model-beheersverordening-begraafplaatsen#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -1442,7 +1431,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="verricht" id="id-a0dffe25adda5d3a8587497059aece20" source="id-7a33463e2bb35989ab38d88aa0e2a173" target="id-8aeb21e52a7a5af99faf3d55995af0bb">
         <property key="wiki-gemma-model id" value="gemeentelijke-lijkschouwer#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1451,7 +1440,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="wordt bijgezet in" id="id-a14f2947ed635b259e0c917c2f7592e2" source="id-335b3517a93f5205a1825c67c87cb60e" target="id-2e78fe31ecfe53479a36e3e0a37b06bf" directed="true">
         <property key="wiki-gemma-model id" value="urn#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1460,7 +1449,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-a1c81199c89e56c8ab3c856141c7d503" source="id-58cba76204ce551b9650abf0d9fbf686" target="id-75a1ffb3a38f5ed482179917b41d5c97" directed="true">
         <property key="wiki-gemma-model id" value="wet-op-de-lijkbezorging#6" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1469,7 +1458,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="beslist over" id="id-a2513e0f598b5dbfb476b10dafa2caa5" source="id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e" target="id-72c234ccca9b5464811e0474bcd782ce">
         <property key="wiki-gemma-model id" value="beslisser#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1478,7 +1467,7 @@
       <element xsi:type="archimate:TriggeringRelationship" name="leidt tot" id="id-a4ef2a8e53455e5c930535f3dea44bf9" source="id-edb09f226d2b51f7a95e3dc16d5cb699" target="id-8aeb21e52a7a5af99faf3d55995af0bb">
         <property key="wiki-gemma-model id" value="overlijden#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1487,7 +1476,7 @@
       <element xsi:type="archimate:AccessRelationship" name="betreft" id="id-a65818101a685653856797c7c9b424f7" source="id-80882f2992c259ec970fe9e268f3f946" target="id-a2c7cb8f384257778067e70f75d4f2c8" accessType="1">
         <property key="wiki-gemma-model id" value="treffen-maatregel-bij-besmet-lijk#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1496,7 +1485,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="bergt de as en zorgt voor de bestemming bij" id="id-a8db88ab83385d89951935b888e3bebc" source="id-fafdec9a745a5861ae1b04f2947fa87b" target="id-f3fef18c03185926a98c84015a0dae05">
         <property key="wiki-gemma-model id" value="houder-van-het-crematorium#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1505,7 +1494,7 @@
       <element xsi:type="archimate:SpecializationRelationship" name="is een" id="id-aaad5aeed32853b5a8c0999bbe300d91" source="id-b5f50c54f1cf45b8b7b61a5929035919" target="id-e5771904f7a442de8f07744a66d37ef0">
         <property key="wiki-gemma-model id" value="heffingsverordening#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2024-rijk-gemeentewet-wettekst" />
@@ -1514,7 +1503,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="draagt zorg voor" id="id-b6a2567afd80560ab1fb5819f696d5cf" source="id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e" target="id-d254a261cbf8513f9768449e654e0032">
         <property key="wiki-gemma-model id" value="beslisser#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1523,7 +1512,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="geeft opdracht tot bijzetting bij" id="id-b867026863ef5bc8a377dd62ad5fe4c0" source="id-fef4ddc0626658c98d617a3cf964afab" target="id-f3fef18c03185926a98c84015a0dae05">
         <property key="wiki-gemma-model id" value="nabestaande#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1532,7 +1521,7 @@
       <element xsi:type="archimate:AccessRelationship" name="houdt" id="id-b8744af01f9d5dd1819de1755636a9a9" source="id-fafdec9a745a5861ae1b04f2947fa87b" target="id-b1adea73dd0d54d490565e755aefcc6a" accessType="3">
         <property key="wiki-gemma-model id" value="houder-van-het-crematorium#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1541,7 +1530,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="adviseert over" id="id-bc0b8b31cef558cf8e55684dacfd8fda" source="id-f3219a6a-532f-482d-897c-dafe0dc70bb0" target="id-80882f2992c259ec970fe9e268f3f946">
         <property key="wiki-gemma-model id" value="adviseur#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1550,7 +1539,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="voert uit" id="id-bd2269d6ad055831b12e72559ce092f6" source="id-17a7441705094ba9b385c25497844778" target="id-30deba14-c60a-49b2-b6d2-740a6d2539f5">
         <property key="wiki-gemma-model id" value="gemeente#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1559,7 +1548,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-bfb3edea95095d268ba79c3d29701b94" source="id-698780f0d7a7536b9a3bd66c7edae03d" target="id-72c234ccca9b5464811e0474bcd782ce" directed="true">
         <property key="wiki-gemma-model id" value="model-beheersverordening-begraafplaatsen#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -1568,7 +1557,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-c0b0924047a950ce9dcd3b9fa29f611c" source="id-58cba76204ce551b9650abf0d9fbf686" target="id-72c234ccca9b5464811e0474bcd782ce" directed="true">
         <property key="wiki-gemma-model id" value="wet-op-de-lijkbezorging#5" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1577,7 +1566,7 @@
       <element xsi:type="archimate:AccessRelationship" name="ruimt" id="id-c1ad83329fec5f8693b9dc155416a104" source="id-2de444e3552c5f908f12c6a6868cadfa" target="id-0c4079e5f4ac5b43b4ff3c59b6ce6ae8" accessType="3">
         <property key="wiki-gemma-model id" value="ruimen-graf#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1586,7 +1575,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="geeft toestemming voor" id="id-c235c7ec09a35155bf6c4120ea2823aa" source="id-cb6de84aee08550d85ac3727aad8bec2" target="id-2de444e3552c5f908f12c6a6868cadfa">
         <property key="wiki-gemma-model id" value="rechthebbende-op-het-graf#6" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1595,7 +1584,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-c8447264f43f54f6898b1f38fd56a788" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-8aeb21e52a7a5af99faf3d55995af0bb">
         <property key="wiki-gemma-model id" value="lijkbezorging#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1604,7 +1593,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="rust op" id="id-cc649795cad05baeb393f8043bffd472" source="id-f1059419577a5403a5d95aa332436032" target="id-0c4079e5f4ac5b43b4ff3c59b6ce6ae8" directed="true">
         <property key="wiki-gemma-model id" value="grafrecht#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1613,7 +1602,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-ce282f79493e59e0b03e2275e983293c" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-72c234ccca9b5464811e0474bcd782ce">
         <property key="wiki-gemma-model id" value="lijkbezorging#5" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1622,7 +1611,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="machtigt tot begraving in het particulier graf" id="id-cf6aa72948c75df78355059e299f22ed" source="id-cb6de84aee08550d85ac3727aad8bec2" target="id-f3fef18c03185926a98c84015a0dae05">
         <property key="wiki-gemma-model id" value="rechthebbende-op-het-graf#7" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen; 2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -1631,7 +1620,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="regelt het recht voor" id="id-d4a354062e8158d285a3caf624636ba8" source="id-b5f50c54f1cf45b8b7b61a5929035919" target="id-1d72274738755c51ba065825f7a8f293" directed="true">
         <property key="wiki-gemma-model id" value="heffingsverordening#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1640,7 +1629,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-d9024311289d59f7b3bf8bb715b968a0" source="id-698780f0d7a7536b9a3bd66c7edae03d" target="id-6344b6861697540e8216a9c9707038a8" directed="true">
         <property key="wiki-gemma-model id" value="model-beheersverordening-begraafplaatsen#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -1649,7 +1638,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="ziet toe op" id="id-d98c73ef4f5d5ed8b1ff512eabbfd669" source="id-a96ec982-643b-4c36-aa13-f36a51b85694" target="id-2de444e3552c5f908f12c6a6868cadfa">
         <property key="wiki-gemma-model id" value="beheerder#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1658,7 +1647,7 @@
       <element xsi:type="archimate:RealizationRelationship" name="realiseert" id="id-dc6172b3b8d151aabc86d8847c3287bf" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-fd16f7c92e325b1181001c7f52db758e">
         <property key="wiki-gemma-model id" value="lijkbezorging#10" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1667,7 +1656,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-dd390442282256829a248a14984fb5ca" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-80882f2992c259ec970fe9e268f3f946">
         <property key="wiki-gemma-model id" value="lijkbezorging#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1676,7 +1665,7 @@
       <element xsi:type="archimate:ServingRelationship" name="bedient" id="id-e1287b21347e5fd4a0ea5cf1cf773ec9" source="id-30deba14-c60a-49b2-b6d2-740a6d2539f5" target="id-6344b6861697540e8216a9c9707038a8">
         <property key="wiki-gemma-model id" value="lijkbezorging#7" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1685,7 +1674,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is voorzitter van" id="id-e9032463abd85fb1909bf537b1de8cd9" source="id-ab1fb457a4585841b98353e315234233" target="id-b69cb101-8708-47de-9ac1-e138f205a49f" directed="true">
         <property key="wiki-gemma-model id" value="burgemeester#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2024-rijk-gemeentewet-wettekst" />
@@ -1694,7 +1683,7 @@
       <element xsi:type="archimate:AccessRelationship" name="heeft de dagelijkse leiding van" id="id-e9cb02b462565eb684c4ec04ca32676f" source="id-a96ec982-643b-4c36-aa13-f36a51b85694" target="id-4ecb72536f3755cea1b5d6611a1aa65e" accessType="3">
         <property key="wiki-gemma-model id" value="beheerder#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1703,7 +1692,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="vervult namens de nabestaanden" id="id-ed0245c5e9025abf80a714fb2fb5a083" source="id-1637928fd4755f61899e995a10b0b2a2" target="id-e816170ab8e354c192c34c534cfa3355">
         <property key="wiki-gemma-model id" value="uitvaartondernemer#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rvo-aangifte-en-akte-van-overlijden" />
@@ -1712,7 +1701,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="waarschuwt bij een niet-natuurlijke dood" id="id-eea40eb8af75504fb3bf0fef9d609a94" source="id-7a33463e2bb35989ab38d88aa0e2a173" target="id-3b44289d234957ecad7e1c725acf246a" directed="true">
         <property key="wiki-gemma-model id" value="gemeentelijke-lijkschouwer#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1721,7 +1710,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-f01a5849cdfa508aa3b8d663a1ea1812" source="id-698780f0d7a7536b9a3bd66c7edae03d" target="id-75a1ffb3a38f5ed482179917b41d5c97" directed="true">
         <property key="wiki-gemma-model id" value="model-beheersverordening-begraafplaatsen#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2010-vng-model-beheersverordening-begraafplaatsen" />
@@ -1730,7 +1719,7 @@
       <element xsi:type="archimate:AccessRelationship" name="heeft het uitsluitend recht tot begraven in (algemeen graf)" id="id-f1b0258ba02a55b4a5ca0a566a997674" source="id-17a7441705094ba9b385c25497844778" target="id-0c4079e5f4ac5b43b4ff3c59b6ce6ae8" accessType="3">
         <property key="wiki-gemma-model id" value="gemeente#5" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1739,7 +1728,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="vraagt aan" id="id-f2c5ee6827665212a5355f0d8835c7b3" source="id-cb6de84aee08550d85ac3727aad8bec2" target="id-abcb82c5d790520f856afdda24be34b1">
         <property key="wiki-gemma-model id" value="rechthebbende-op-het-graf#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1748,7 +1737,7 @@
       <element xsi:type="archimate:AccessRelationship" name="heeft" id="id-f51bc11652255701807fc998e25cd9a7" source="id-17a7441705094ba9b385c25497844778" target="id-4ecb72536f3755cea1b5d6611a1aa65e" accessType="3">
         <property key="wiki-gemma-model id" value="gemeente#4" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1757,7 +1746,7 @@
       <element xsi:type="archimate:AccessRelationship" name="vereist (vergunning tot opgraving)" id="id-f53ca12cffb75b90809418c74d12898e" source="id-abcb82c5d790520f856afdda24be34b1" target="id-268057e5fe5b546fbc837693094bd785" accessType="1">
         <property key="wiki-gemma-model id" value="opgraven-lijk#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1766,7 +1755,7 @@
       <element xsi:type="archimate:AccessRelationship" name="leidt tot" id="id-f5c9877a76cd5321a6ba35a0b3cbd5f8" source="id-d254a261cbf8513f9768449e654e0032" target="id-68085684cee7413c91bc027a0aaade82" accessType="0">
         <property key="wiki-gemma-model id" value="verzorgen-gemeentebegrafenis#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1775,7 +1764,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="is grondslag voor" id="id-f65268a16c4f5a0a83157229575d5bb1" source="id-58cba76204ce551b9650abf0d9fbf686" target="id-abcb82c5d790520f856afdda24be34b1" directed="true">
         <property key="wiki-gemma-model id" value="wet-op-de-lijkbezorging#7" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1784,7 +1773,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="vervult" id="id-f8577dd8286b55938ca74b592f028da5" source="id-b69cb101-8708-47de-9ac1-e138f205a49f" target="id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e">
         <property key="wiki-gemma-model id" value="gemeenteraad#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2024-rijk-gemeentewet-wettekst; 2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1793,7 +1782,7 @@
       <element xsi:type="archimate:AccessRelationship" name="verleent" id="id-f8c6a80d83ac5559b0bd309932be5db6" source="id-72c234ccca9b5464811e0474bcd782ce" target="id-f1059419577a5403a5d95aa332436032" accessType="0">
         <property key="wiki-gemma-model id" value="verlenen-grafrecht#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1802,7 +1791,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="geeft last tot" id="id-f8d7c7390ac059e18569f4f1eb903559" source="id-77e415928f565e74b91359fde6ad9da7" target="id-2de444e3552c5f908f12c6a6868cadfa">
         <property key="wiki-gemma-model id" value="houder-van-de-begraafplaats#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1811,7 +1800,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="bepaalt tijd en plaats van" id="id-f8df23b2c84653f2beba63b2c92884d4" source="id-a96ec982-643b-4c36-aa13-f36a51b85694" target="id-f3fef18c03185926a98c84015a0dae05">
         <property key="wiki-gemma-model id" value="beheerder#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1820,7 +1809,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="vervult" id="id-f909c5d964f35638a05a66cfab6c92ba" source="id-1258be4e5c78553ebdec35fc7b592d1f" target="id-fafdec9a745a5861ae1b04f2947fa87b">
         <property key="wiki-gemma-model id" value="kerkgenootschap#2" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1829,7 +1818,7 @@
       <element xsi:type="archimate:AssignmentRelationship" name="voert uit" id="id-fabce02c2432594c922aa60f7c229db8" source="id-17a7441705094ba9b385c25497844778" target="id-6344b6861697540e8216a9c9707038a8">
         <property key="wiki-gemma-model id" value="gemeente#3" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen" />
@@ -1838,7 +1827,7 @@
       <element xsi:type="archimate:AccessRelationship" name="vereist (verlof tot begraving of crematie)" id="id-fb05579dd53f5f089750d42e8e4e4728" source="id-f3fef18c03185926a98c84015a0dae05" target="id-268057e5fe5b546fbc837693094bd785" accessType="1">
         <property key="wiki-gemma-model id" value="uitvoeren-lijkbezorging#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1847,7 +1836,7 @@
       <element xsi:type="archimate:AssociationRelationship" name="betreft" id="id-ff9ff23cc0115cd69422f3bf4d941ead" source="id-68085684cee7413c91bc027a0aaade82" target="id-a2c7cb8f384257778067e70f75d4f2c8" directed="true">
         <property key="wiki-gemma-model id" value="gemeentebegrafenis#1" />
         <property key="wiki-gemma-model herkomst" value="nieuw" />
-        <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+        <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
         <property key="wiki-gemma-model soort export" value="definitief" />
         <property key="wiki-gemma-model grondslag" value="bron" />
         <property key="wiki-gemma-model bronnen" value="2026-rijk-wet-op-de-lijkbezorging-wettekst" />
@@ -1857,7 +1846,7 @@
   </folder>
   <folder name="Views" id="307fd170-5f47-41a3-b277-d43a0b33190c" type="diagrams" />
   <purpose>Export van de wiki gemma-archimate-model (GEMMA-kenniswerkplek) voor import in het GEMMA-model; zie de skill gemma-archimate-model-archimate-export.</purpose>
-  <property key="wiki-gemma-model exportdatum" value="2026-10-02T11:42:07" />
+  <property key="wiki-gemma-model exportdatum" value="2026-10-03T08:38:19" />
   <property key="wiki-gemma-model soort export" value="definitief" />
   <property key="wiki-gemma-model GEMMA-bron" value="2026-vng-gemma-2026-10-02" />
 </archimate:model>

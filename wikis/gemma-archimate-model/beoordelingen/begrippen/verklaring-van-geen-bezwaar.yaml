@@ -170,9 +170,13 @@ ggm:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+besluiten:
+- datum: '2026-10-03'
+  besluit: 'Afwijzen: geen kernrelatie. De enige relatie stond bij het afgewezen proces Verlenen verlof tot begraving of crematie; de verklaring is invoer voor dat verlof en komt terug in de beschrijving van Vergunning en Verklaring van overlijden.'
+  gevolg: afwijzen
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: afgewezen
 afgeleid:
   uitkomst:
     soort: element
@@ -187,4 +191,3 @@ afgeleid:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verklaring-van-geen-bezwaar.md
