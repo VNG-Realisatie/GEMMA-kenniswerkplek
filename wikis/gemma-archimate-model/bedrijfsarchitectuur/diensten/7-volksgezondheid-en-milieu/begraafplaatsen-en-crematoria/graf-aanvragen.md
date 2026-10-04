@@ -53,6 +53,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Functie-indeling naar domein, onderdeel van**: [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md).
 - **Afnemer**: extern.
 - **Domein**: Fysieke leefomgeving.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
@@ -86,6 +87,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | omvat *aggregatie* | Graf aanvragen | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (toelichting § 2 (dienstverlening op begraafplaatsen, voorzieningenpakket)) |
 | [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/model-beheersverordening-begraafplaatsen.md) | is grondslag voor *associatie (gericht)* | Graf aanvragen | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 15) |
 | [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | realiseert *realisatie* | Graf aanvragen | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (Groningen art. 16; VNG-model art. 15) |
 

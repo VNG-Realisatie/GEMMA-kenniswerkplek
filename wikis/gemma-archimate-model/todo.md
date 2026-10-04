@@ -12,7 +12,6 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 ## Indelingen (analyse 2026-10-04, `analyses/indelingen.md`)
 
 - **Indelingen in de export (geen wezen)**: de export van 2026-10-04 volgt de afgesproken indelingen niet volledig (besluit 2026-10-04 in `analyses/indelingen.md`: alles wordt ingedeeld). Te doen:
-  - *Producten en diensten* onder hun functie (domein → functie → dienst): Graf aanvragen, Onderhoud van graven, Uitvaart vervroegen of uitstellen; per geval voorleggen.
   - *Zonder plaats*: gebeurtenissen Besmet lijk gemeld, Overlijden, Verval van het grafrecht; proces Verzorgen lijkbezorging; beleidskaders Wet op de lijkbezorging en Model-beheersverordening begraafplaatsen; de nieuwe groeperingen Belastingen en Besluitvorming hangen niet onder hun taakveld.
   - Een controle in `archimate_export.py --check` die weigert bij een element zonder plaats in een indeling.
 - **Lijkbezorging in Archi**: na de punten hierboven opnieuw exporteren, importeren in een GEMMA-kopie (*File › Import › Model into selected model…*, bestaande objecten bijwerken), jArchi-script draaien, controleren dat gekoppelde elementen in hun GEMMA-map blijven, geen dubbele mappen ontstaan, `Object ID` blijft staan. Het exportbestand in Archi nooit opslaan (Archi overschrijft het en maakt een `.bak`). Daarna `voortgang.md` bijwerken (was: 48 elementen).

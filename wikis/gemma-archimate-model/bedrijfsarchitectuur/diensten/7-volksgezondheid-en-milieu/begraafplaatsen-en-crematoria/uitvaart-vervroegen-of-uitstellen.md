@@ -52,6 +52,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Functie-indeling naar domein, onderdeel van**: [Vergunningenbeheer Publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/vergunningenbeheer-publieksdiensten.md).
 - **Afnemer**: extern.
 - **Domein**: Publieksdiensten.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
@@ -86,6 +87,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Stellen andere termijn](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) | realiseert *realisatie* | Uitvaart vervroegen of uitstellen | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (art. 17; § Uitvaart vervroegen, § Uitvaart uitstellen) |
+| [Vergunningenbeheer Publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/vergunningenbeheer-publieksdiensten.md) | omvat *aggregatie* | Uitvaart vervroegen of uitstellen | [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (§ Uitvaart vervroegen, § Uitvaart uitstellen) |
 
 ## Herkomst
 

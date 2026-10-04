@@ -355,3 +355,6 @@ verwijderen; de pre-commit-hook weigert dat.
 ## [2026-10-04] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 7b748487
 ## [2026-10-04] promote | uitvoering-fysieke-leefomgeving | Mark Backer | 9fe259a7
 ## [2026-10-04] promote | uitvoering-publieksdiensten | Mark Backer | 75e6b6c7
+## [2026-10-04] promote | exploiteren-van-begraafplaatsen | Mark Backer | dfdd5f7d
+## [2026-10-04] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | f731fa90
+## [2026-10-04] promote | vergunningenbeheer-publieksdiensten | Mark Backer | 0bdbdb78

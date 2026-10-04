@@ -12,7 +12,7 @@ titel: Voortgang
 
 | Onderwerp | Status | Begrippen | Elementen |
 |---|---|---|---|
-| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 159 | 72 |
+| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 160 | 73 |
 | [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
 
 ## Elementen per type en status
@@ -20,7 +20,7 @@ titel: Voortgang
 | Type | kandidaat | review | goedgekeurd | afgewezen |
 |---|---|---|---|---|
 | actor | 0 | 0 | 8 | 0 |
-| bedrijfsfunctie | 0 | 0 | 6 | 0 |
+| bedrijfsfunctie | 0 | 0 | 7 | 0 |
 | bedrijfsobject | 0 | 0 | 14 | 0 |
 | bedrijfsproces | 0 | 0 | 23 | 0 |
 | beleidskader | 0 | 0 | 2 | 0 |

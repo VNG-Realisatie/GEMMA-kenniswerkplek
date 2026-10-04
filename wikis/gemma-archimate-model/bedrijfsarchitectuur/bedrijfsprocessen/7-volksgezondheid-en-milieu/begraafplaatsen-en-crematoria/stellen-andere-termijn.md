@@ -55,6 +55,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 - **Procesniveau**: deelproces.
 - **Procesindeling naar taak, onderdeel van**: [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md), [Bezorgen lijken](bezorgen-lijken.md).
 - **Kernobject**: [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md).
+- **Functie-indeling naar domein, bediend door**: [Vergunningenbeheer Publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/vergunningenbeheer-publieksdiensten.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
@@ -99,6 +100,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [Beslisser](../../../rollen/beslisser.md) | stelt *toewijzing* | Stellen andere termijn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17 lid 1) |
 | [Bezorgen lijken](bezorgen-lijken.md) | omvat *aggregatie* | Stellen andere termijn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17) |
 | [Ketenpartner](../../../rollen/ketenpartner.md) | stemt in met vervroegen bij *toewijzing* | Stellen andere termijn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17 lid 1) |
+| [Vergunningenbeheer Publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/vergunningenbeheer-publieksdiensten.md) | bedient *bediening* | Stellen andere termijn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Stellen andere termijn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17) |
 
 ## Herkomst

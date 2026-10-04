@@ -57,7 +57,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 ### Plaats in de indelingen
 
 - **Functie-indeling naar domein, onderdeel van**: [Uitvoering Publieksdiensten](uitvoering-publieksdiensten.md).
-- **Functie-indeling naar domein, omvat**: [Burgerlijke stand diensten](burgerlijke-stand-diensten.md).
+- **Functie-indeling naar domein, omvat**: [Burgerlijke stand diensten](burgerlijke-stand-diensten.md), [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md).
 - **Domein**: Publieksdiensten.
 
 ### Kenmerken
@@ -75,7 +75,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, voor de burgerlijke stand de ambtenaar van de burgerlijke stand (art. 11). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, raadpleegt de verklaring van overlijden en legt het verlof vast (art. 11–13). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, volgt uit wettelijke taken zoals die van de ambtenaar van de burgerlijke stand, los van de organisatie (art. 11). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, via Burgerlijke stand diensten bedient ze Verlenen verlof tot begraving of crematie; wat een functie eronder bedient, bedient zij ook. [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, via Burgerlijke stand diensten bedient ze Verlenen verlof tot begraving of crematie, via Vergunningenbeheer Publieksdiensten Stellen andere termijn; wat een functie eronder bedient, bedient zij ook. [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, soort werk onder Uitvoering Publieksdiensten in de GEMMA-functie-indeling (GEMMA-relatie id-ec3df199-3782-479d-874e-73b99b31262b). [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type: de bovenliggende functie aggregeert haar, ze specialiseert niets. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, komt met dezelfde betekenis voor in elk onderwerp van de publieksdienstverlening. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
@@ -87,6 +87,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Burgerlijke stand diensten](burgerlijke-stand-diensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-efd77657-f6f9-457c-a9e8-93d6d11647df) |
+| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc) |
 
 #### Inkomend
 
