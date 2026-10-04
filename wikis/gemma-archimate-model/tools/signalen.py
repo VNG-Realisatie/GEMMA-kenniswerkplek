@@ -120,6 +120,49 @@ def indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[t
     return w
 
 
+DOMEINFUNCTIE = "Bedrijfsfunctie domein"  # GEMMA type van een functie op domeinniveau (Uitvoering fysieke leefomgeving)
+
+
+def is_domeinfunctie(data: dict, gemma_data: dict) -> bool:
+    """Een functie op domeinniveau: haar GEMMA-match heeft GEMMA type *Bedrijfsfunctie domein*; ze hangt via `domein` aan
+    de domeingroepering. Elke andere functie hangt onder een bovenliggende functie."""
+    g = gemma_data.get("elementen", {}).get((data.get("gemma") or {}).get("id") or "")
+    return g is not None and g["eigenschappen"].get("GEMMA type") == DOMEINFUNCTIE
+
+
+def functie_indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[tuple[str, dict]],
+                     gemma_data: dict) -> list[str]:
+    """Signalen bij de Functie-indeling naar domein: elke functie onder domeinniveau wordt geaggregeerd door één
+    bovenliggende functie (een element), in hetzelfde domein en volgens de GEMMA-functieketen (besluit 2026-10-04)."""
+    w = []
+    functies = {b for b, u in elementen.items() if u["paginatype"] == "bedrijfsfunctie"}
+    gemma_id = {b: (alle[b].get("gemma") or {}).get("id") for b in functies}
+    gemma_agg = {(r["bron"], r["doel"]) for r in gemma_data.get("relaties", {}).values()
+                 if r["type"] == "aggregation-relationship"}
+    for bid in sorted(functies):
+        boven = sorted(van for van, r in relaties if r["soort"] == "aggregatie" and r["naar"] == bid and van in functies)
+        if is_domeinfunctie(alle[bid], gemma_data):
+            if boven:
+                w.append(f"{bid}: functie op domeinniveau met een bovenliggende functie ({', '.join(boven)}): ze hangt "
+                         "aan de domeingroepering (Functie-indeling naar domein)")
+            continue
+        if not boven:
+            w.append(f"{bid}: hangt onder geen bovenliggende functie: aggregatie vanaf een functie ontbreekt "
+                     "(Functie-indeling naar domein)")
+        if len(boven) > 1:
+            w.append(f"{bid}: meer bovenliggende functies ({', '.join(boven)}): kies die in de keten van het eigen domein")
+        for ouder in boven:
+            if alle[ouder].get("domein") != alle[bid].get("domein"):
+                w.append(f"{bid}: domein '{alle[bid].get('domein')}' wijkt af van dat van de bovenliggende functie "
+                         f"{ouder} ('{alle[ouder].get('domein')}')")
+            if not gemma_id[ouder]:
+                w.append(f"{bid}: de bovenliggende functie {ouder} heeft geen GEMMA-match; een functie wordt geaggregeerd "
+                         "door een bestaande GEMMA-functie")
+            elif gemma_id[bid] and (gemma_id[ouder], gemma_id[bid]) not in gemma_agg:
+                w.append(f"{bid}: in GEMMA aggregeert {ouder} deze functie niet: de wiki volgt de GEMMA-functieketen")
+    return w
+
+
 def boven_van(bid: str, relaties: list[tuple[str, dict]], niveau: dict[str, str | None], welk: str) -> list[str]:
     return [r["naar"] for van, r in relaties if van == bid and r["soort"] == "aggregatie" and niveau.get(r["naar"]) == welk]
 

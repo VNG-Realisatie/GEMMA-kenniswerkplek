@@ -340,6 +340,13 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         paden[pad] = bid
 
     res.waarschuwingen += signalen.over_begrippen({b: d for b, (_, d) in alle.items()}, uitkomsten)
+    elementen = {b: u for b, u in uitkomsten.items() if u and u["soort"] == "element"}
+    functies = [b for b, u in elementen.items() if u["paginatype"] == "bedrijfsfunctie"]
+    if functies:
+        gekoppeld = any((alle[b][1].get("gemma") or {}).get("id") for b in functies)
+        res.waarschuwingen += signalen.functie_indeling(
+            {b: d for b, (_, d) in alle.items()}, elementen,
+            [(van, r) for van in elementen for r in alle[van][1].get("relaties", [])], ctx.gemma() if gekoppeld else {})
     res.fouten += signalen.bronanalyses(wiki_root, onderwerpen) + signalen.modelmappen(wiki_root)
     register = _terugmeldingen(ctx, uitkomsten, res)
     if res.fouten:

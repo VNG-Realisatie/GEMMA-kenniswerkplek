@@ -261,8 +261,8 @@ KENMERKEN: list[Kenmerk] = [
             "Exploiteren van begraafplaatsen bedient Ruimen graf", "functie zonder aanwijsbaar proces",
             "GEMMA (functie bedient proces, regel 597 en 604)", GEDRAG_BIJ),
     Kenmerk("in_functie_indeling", "in functie-indeling", "Gedrag",
-            "Past de functie als onderwerp onder een soort werk in de Functie-indeling naar domein? Noem de "
-            "bovenliggende functie.",
+            "Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of "
+            "op domeinniveau onder het domein? Noem de bovenliggende functie of het domein.",
             "Exploiteren van begraafplaatsen (onder Exploitatie fysieke leefomgeving)", "Lijkbezorging als functie",
             "GEMMA (Functie-indeling naar domein)", GEDRAG_BIJ),
     Kenmerk("leidt_tot_gebeurtenis", "leidt tot gebeurtenis", "Gedrag",
@@ -734,6 +734,10 @@ NAREGELS = [
     ("Aanvulling", "*geautomatiseerd verwerkt*", "annotatie `data_object: ja`"),
     ("Signaal (controle)", "Dienst zonder realiserend proces of functie met pagina; Gebeurtenis zonder gestart gedrag met pagina",
      "waarschuwing: proces als kandidaat voorleggen"),
+    ("Signaal (controle)", "Functie onder domeinniveau zonder bovenliggende functie, met meer bovenliggende functies, met "
+     "een ander domein of buiten de GEMMA-functieketen",
+     "waarschuwing: de bovenliggende functie wordt een element met een aggregatie naar de functie; alleen een functie "
+     "met GEMMA type *Bedrijfsfunctie domein* hangt via `domein` aan de domeingroepering"),
 ]
 
 

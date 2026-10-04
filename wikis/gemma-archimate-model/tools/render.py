@@ -256,6 +256,13 @@ def indelingen(w: Wiki, van: str, bid: str, d: dict) -> list[str]:
     bediend = w.inkomend_van(bid, "bediening")
     if bediend and u.get("paginatype") == "bedrijfsproces":
         regels.append(f"- **Functie-indeling naar domein, bediend door**: {_links(w, van, [b for b in bediend if w.paginatype(b) == 'bedrijfsfunctie'])}.")
+    if u.get("paginatype") == "bedrijfsfunctie":
+        boven = [v for v in w.inkomend_van(bid, "aggregatie") if w.paginatype(v) == "bedrijfsfunctie"]
+        onder = [n for n in w.uitgaand(bid, "aggregatie") if w.paginatype(n) == "bedrijfsfunctie"]
+        if boven:
+            regels.append(f"- **Functie-indeling naar domein, onderdeel van**: {_links(w, van, boven)}.")
+        if onder:
+            regels.append(f"- **Functie-indeling naar domein, omvat**: {_links(w, van, onder)}.")
     if u.get("paginatype") == "bedrijfsfunctie" and w.uitgaand(bid, "bediening"):
         regels.append(f"- **Bedient**: {_links(w, van, w.uitgaand(bid, 'bediening'))}.")
     start = [v for v in w.inkomend_van(bid, "triggering") if w.paginatype(v) == "gebeurtenis"]
@@ -550,8 +557,10 @@ def overzicht(w: Wiki, oid: str) -> str:
                               *([f"**Generiek** (verhuizen later naar een algemeen onderwerp): {_links(w, van, generiek)}.", ""] if generiek else []),
                               *([f"**Nog zonder niveau**: {_links(w, van, overig)}.", ""] if overig else [])])
 
-    functies = [[w.link(van, f), _links(w, van, w.uitgaand(f, "bediening")) or "—"] for f in van_type("bedrijfsfunctie")]
-    r += _sectie("Functies", _tabel(["Functie", "Bedient"], functies) if functies else [])
+    functies = [[w.link(van, f), _links(w, van, [v for v in w.inkomend_van(f, "aggregatie")
+                                                 if w.paginatype(v) == "bedrijfsfunctie"]) or w.begrippen[f].get("domein") or "—",
+                 _links(w, van, w.uitgaand(f, "bediening")) or "—"] for f in van_type("bedrijfsfunctie")]
+    r += _sectie("Functies", _tabel(["Functie", "Onderdeel van", "Bedient"], functies) if functies else [])
 
     doelgroepen = []
     for doelgroep in bepaal_type.DOELGROEPEN:

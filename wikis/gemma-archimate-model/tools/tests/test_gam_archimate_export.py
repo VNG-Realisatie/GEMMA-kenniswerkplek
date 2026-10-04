@@ -198,6 +198,11 @@ GEMMA_INDELING = """<?xml version="1.0" encoding="UTF-8"?>
     <folder name="Bedrijfsobjecten" id="f-bo">
       <element xsi:type="archimate:BusinessObject" name="Beschikking" id="id-beschikking"/>
     </folder>
+    <folder name="Bedrijfsfuncties" id="f-bf">
+      <element xsi:type="archimate:BusinessFunction" name="Uitvoering fysieke leefomgeving" id="id-uitvoering-fl">
+        <property key="GEMMA type" value="Bedrijfsfunctie domein"/>
+      </element>
+    </folder>
   </folder>
   <folder name="Other" id="f-other" type="other">
     <folder name="Domein en doelgroep" id="f-dd">
@@ -216,6 +221,7 @@ GEMMA_INDELING = """<?xml version="1.0" encoding="UTF-8"?>
   </folder>
   <folder name="Relations" id="f-rel" type="relations">
     <element xsi:type="archimate:AggregationRelationship" id="r-agg-bd" source="id-bd-besluitvorming" target="id-beschikking"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r-agg-fl" source="id-domein-fl" target="id-uitvoering-fl"/>
   </folder>
 </archimate:model>
 """
@@ -242,11 +248,14 @@ def _indeling_begrippen():
     lijk = element("Lijk", "business-object", "bedrijfsobject", taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen")
     lijk["afgeleid"]["uitkomst"]["objectniveau"] = "kernobject"
     functie = element("Exploiteren van begraafplaatsen", "business-function", "bedrijfsfunctie", domein="Fysieke leefomgeving")
+    domeinfunctie = element("Uitvoering fysieke leefomgeving", "business-function", "bedrijfsfunctie",
+                            gemma_id="id-uitvoering-fl", domein="Fysieke leefomgeving",
+                            relaties=[{"soort": "aggregatie", "naar": "exploiteren", "grondslag": "bron", "bronnen": ["2026-bron"]}])
     nabestaande = element("Nabestaande", "business-role", "rol", doelgroep="inwoners en ondernemers")
     zonder = element("Gemeente", "business-actor", "actor", doelgroep="onbekende groep")
     specialisatie = {"begrip": "Vergunning tot opgraving", "status": "review"}
     return {"beschikking": beschikking, "verzorgen-lijkbezorging": taak, "opgraven-lijk": deel, "lijk": lijk,
-            "exploiteren": functie, "nabestaande": nabestaande, "gemeente": zonder,
+            "exploiteren": functie, "uitvoering-fl": domeinfunctie, "nabestaande": nabestaande, "gemeente": zonder,
             "vergunning-tot-opgraving": specialisatie}
 
 
@@ -330,7 +339,11 @@ def test_beleidsdomein_uit_gemma_wordt_hergebruikt_en_een_onbekende_wordt_nieuw(
 
 def test_domein_en_doelgroep_aggregeren_vanuit_de_gemma_groepering(tmp_path):
     uit, root = _export_indeling(tmp_path)
-    assert _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "exploiteren"))
+    # een functie hangt alleen op domeinniveau aan de domeingroepering, daaronder aan haar bovenliggende functie
+    assert _el(root, "r-agg-fl").get("source") == "id-domein-fl"
+    assert not _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "exploiteren"))
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", "id-uitvoering-fl", ae.vast_id("element", "exploiteren"))
+    assert _props(agg)["wiki-gemma-model indeling"] == "Functie-indeling naar domein"
     # de doelgroep is de GEMMA-rol met GEMMA type Groep, niet een gewone rol met dezelfde naam
     assert _relaties_van(root, "archimate:AggregationRelationship", "id-doelgroep-inwoners", ae.vast_id("element", "nabestaande"))
     assert not _relaties_van(root, "archimate:AggregationRelationship", "id-aaa-rol-zonder-groep")
@@ -353,3 +366,11 @@ def test_rapport_noemt_specialisaties_en_nieuwe_groeperingen(tmp_path):
     assert "## Specialisaties naar een GEMMA-element" in rapport
     assert "- Opgraven lijk → Behandelen aanvraag vergunning of ontheffing" in rapport
     assert "## Nieuwe groeperingen" in rapport and "- Begraafplaatsen (taakveld Volksgezondheid)" in rapport
+
+
+def test_functie_zonder_bovenliggende_functie_heeft_geen_plaats(tmp_path):
+    begrippen = _indeling_begrippen()
+    begrippen["uitvoering-fl"]["relaties"] = []
+    uit, root = _export_indeling(tmp_path, begrippen)
+    assert not _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "exploiteren"))
+    assert any("Exploiteren van begraafplaatsen: geen plaats in de Functie-indeling naar domein" in o for o in uit.overgeslagen)

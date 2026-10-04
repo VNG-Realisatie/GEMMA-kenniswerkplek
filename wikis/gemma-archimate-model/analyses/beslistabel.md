@@ -85,7 +85,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 41. Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. (*eigen besluit*)
 42. Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). (*levert aanbod*)
 43. Ondersteunt de functie aanwijsbaar een proces? Noem het. (*bedient gedrag*)
-44. Past de functie als onderwerp onder een soort werk in de Functie-indeling naar domein? Noem de bovenliggende functie. (*in functie-indeling*)
+44. Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. (*in functie-indeling*)
 45. Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. (*leidt tot gebeurtenis*)
 
 **Passief.** Bij een ding (geen aard); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en *geautomatiseerd verwerkt* bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; *omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.
@@ -181,7 +181,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. | Ja: Verlenen grafrecht (college, Wlb art. 28). Nee: Onderhouden graf (feitelijk handelen). Herkomst: GEMMA (procesbouwstenen: besluiten). |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). | Ja: Onderhouden graf (grafonderhoud). Nee: interne registratiestap. Herkomst: GEMMA (Product en dienst procesarchitectuur, UPL). |
 | **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? Noem het. | Ja: Exploiteren van begraafplaatsen bedient Ruimen graf. Nee: functie zonder aanwijsbaar proces. Herkomst: GEMMA (functie bedient proces, regel 597 en 604). |
-| **in functie-indeling**: Past de functie als onderwerp onder een soort werk in de Functie-indeling naar domein? Noem de bovenliggende functie. | Ja: Exploiteren van begraafplaatsen (onder Exploitatie fysieke leefomgeving). Nee: Lijkbezorging als functie. Herkomst: GEMMA (Functie-indeling naar domein). |
+| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. | Ja: Exploiteren van begraafplaatsen (onder Exploitatie fysieke leefomgeving). Nee: Lijkbezorging als functie. Herkomst: GEMMA (Functie-indeling naar domein). |
 | **leidt tot gebeurtenis**: Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. | Ja: Vervallen verklaren grafrecht → Verval van het grafrecht. Nee: een tussenstap zonder eigen uitkomst. Herkomst: GEMMA (proces triggert gebeurtenis, regel 924). |
 
 **Passief.** Bij een ding (geen aard); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en *geautomatiseerd verwerkt* bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; *omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.

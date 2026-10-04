@@ -142,7 +142,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 41. Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. (*eigen besluit*)
 42. Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). (*levert aanbod*)
 43. Ondersteunt de functie aanwijsbaar een proces? Noem het. (*bedient gedrag*)
-44. Past de functie als onderwerp onder een soort werk in de Functie-indeling naar domein? Noem de bovenliggende functie. (*in functie-indeling*)
+44. Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. (*in functie-indeling*)
 45. Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. (*leidt tot gebeurtenis*)
 
 **Passief.** Bij een ding (geen aard); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en *geautomatiseerd verwerkt* bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; *omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.
@@ -417,6 +417,7 @@ Stap 0–4 van boven naar beneden: de eerste passende regel beslist en levert he
 | — | Aanvulling | Actor of Rol met *onderscheidbare exemplaren*, *levenscyclus* en *wordt bewerkt* | ook een bedrijfsobjectpagina (tegenhanger) |
 | — | Aanvulling | *geautomatiseerd verwerkt* | annotatie `data_object: ja` |
 | — | Signaal (controle) | Dienst zonder realiserend proces of functie met pagina; Gebeurtenis zonder gestart gedrag met pagina | waarschuwing: proces als kandidaat voorleggen |
+| — | Signaal (controle) | Functie onder domeinniveau zonder bovenliggende functie, met meer bovenliggende functies, met een ander domein of buiten de GEMMA-functieketen | waarschuwing: de bovenliggende functie wordt een element met een aggregatie naar de functie; alleen een functie met GEMMA type *Bedrijfsfunctie domein* hangt via `domein` aan de domeingroepering |
 <!-- EINDE gegenereerd -->
 
 ## Scope

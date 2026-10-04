@@ -86,10 +86,10 @@ Processen over meer organisaties.
 
 ## Functies
 
-| Functie | Bedient |
-|---|---|
-| [Burgerlijke stand diensten](../bedrijfsarchitectuur/bedrijfsfuncties/0-bestuur-en-ondersteuning/burgerzaken/burgerlijke-stand-diensten.md) | [Verlenen verlof tot begraving of crematie](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-begraving-of-crematie.md) |
-| [Exploiteren van begraafplaatsen](../bedrijfsarchitectuur/bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/exploiteren-van-begraafplaatsen.md) | [Beheren begraafplaatsen](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-begraafplaatsen.md), [Beheren grafrechten](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-grafrechten.md), [Beheren graven](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-graven.md), [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) |
+| Functie | Onderdeel van | Bedient |
+|---|---|---|
+| [Burgerlijke stand diensten](../bedrijfsarchitectuur/bedrijfsfuncties/0-bestuur-en-ondersteuning/burgerzaken/burgerlijke-stand-diensten.md) | Publieksdiensten | [Verlenen verlof tot begraving of crematie](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-begraving-of-crematie.md) |
+| [Exploiteren van begraafplaatsen](../bedrijfsarchitectuur/bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/exploiteren-van-begraafplaatsen.md) | Fysieke leefomgeving | [Beheren begraafplaatsen](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-begraafplaatsen.md), [Beheren grafrechten](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-grafrechten.md), [Beheren graven](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-graven.md), [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) |
 
 ## Doelgroepen
 

@@ -209,6 +209,7 @@ Bij gebeurtenis, rol en dienst geeft *generiek* een specialisatie van een GEMMA-
 #### Controles
 
 - Elk element staat in zijn verplichte indeling. Meer ouders geeft een signaal, behalve de twee ouders van een deelproces.
+- Een functie onder domeinniveau wordt geaggregeerd door één bovenliggende GEMMA-functie in hetzelfde domein, volgens de GEMMA-functieketen; een functie op domeinniveau hangt via `domein` aan de domeingroepering.
 - Specialisatie en bediening naar GEMMA lopen alleen via een exacte match.
 - *leidt tot gebeurtenis* vraagt een triggering.
 - `via` wijst naar een specialisatie van het doel.
@@ -309,4 +310,5 @@ Besluiten over de werkwijze en de criteria. Besluiten over afzonderlijke begripp
 | 2026-10-04 | Producten en diensten vallen in de Beleidsdomeinindeling en de Functie-indeling naar domein; interne producten fijner onder bedrijfsfuncties. |
 | 2026-10-04 | Een beleidskader hangt bij voorkeur aan een product (regel 595); aan een proces of dienst alleen zolang er geen product is. |
 | 2026-10-04 | Alles wordt ingedeeld, geen wezen: elk element staat in minstens één indeling, ook in de export naar Archi. Een functie zonder GEMMA-match breidt de GEMMA-functieketen uit: ze wordt geaggregeerd door een bestaande GEMMA-functie. |
+| 2026-10-04 | De Functie-indeling naar domein is een relatie, geen eigenschap: de bovenliggende functie wordt een element, onderbouwd uit de bronnen, en aggregeert de functie eronder, zoals in GEMMA (*Exploitatie fysieke leefomgeving* aggregeert *Exploiteren van begraafplaatsen*). De keten wordt element tot en met de functie op domeinniveau (GEMMA type *Bedrijfsfunctie domein*); alleen die hangt via `domein` aan de domeingroepering. Bij meer GEMMA-ouders de ouder in de keten van het eigen domein. Een nieuwe aggregatie in Archi alleen voorleggen bij twijfel. |
 | 2026-10-04 | De wiki genereert views per indeling en elementtype. De export blijft zonder views (besluit 2026-10-02); Archi-views staan op de todo. |

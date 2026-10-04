@@ -385,6 +385,44 @@ def test_signalen_voor_de_indeling():
     assert "beheren: hangt onder geen taak" not in tekst and "keten: hangt onder geen taak" not in tekst
 
 
+def test_signalen_voor_de_functie_indeling():
+    import signalen
+
+    gemma_data = {
+        "elementen": {
+            "g-domein": {"eigenschappen": {"GEMMA type": "Bedrijfsfunctie domein"}},
+            "g-soort": {"eigenschappen": {"GEMMA type": "Bedrijfsfunctie"}},
+            "g-onderwerp": {"eigenschappen": {}},
+            "g-elders": {"eigenschappen": {}},
+        },
+        "relaties": {
+            "r1": {"type": "aggregation-relationship", "bron": "g-domein", "doel": "g-soort"},
+            "r2": {"type": "aggregation-relationship", "bron": "g-soort", "doel": "g-onderwerp"},
+        },
+    }
+    elementen = {b: {"paginatype": "bedrijfsfunctie", "soort": "element"}
+                 for b in ("domein", "soort", "onderwerp", "nieuw", "wees", "elders", "eigen")}
+    agg = lambda naar: {"soort": "aggregatie", "naar": naar}  # noqa: E731
+    fl = "Fysieke leefomgeving"
+    alle = {
+        "domein": {"gemma": {"id": "g-domein"}, "domein": fl, "relaties": [agg("soort")]},
+        "soort": {"gemma": {"id": "g-soort"}, "domein": fl, "relaties": [agg("onderwerp"), agg("nieuw"), agg("elders")]},
+        "onderwerp": {"gemma": {"id": "g-onderwerp"}, "domein": fl},
+        "nieuw": {"gemma": {"sterkte": "geen"}, "domein": fl, "relaties": [agg("eigen")]},
+        "wees": {"gemma": {"sterkte": "geen"}, "domein": fl},
+        "elders": {"gemma": {"id": "g-elders"}, "domein": "Publieksdiensten"},
+        "eigen": {"gemma": {"sterkte": "geen"}, "domein": fl},
+    }
+    relaties = [(van, r) for van in elementen for r in alle[van].get("relaties", [])]
+    tekst = "\n".join(signalen.functie_indeling(alle, elementen, relaties, gemma_data))
+    assert "wees: hangt onder geen bovenliggende functie" in tekst
+    assert "elders: domein 'Publieksdiensten' wijkt af" in tekst
+    assert "elders: in GEMMA aggregeert soort deze functie niet" in tekst
+    assert "eigen: de bovenliggende functie nieuw heeft geen GEMMA-match" in tekst
+    # domeinniveau hangt aan de groepering; een functie onder een GEMMA-functie die GEMMA volgt geeft geen signaal
+    assert not any(tekst_regel.startswith(("domein:", "soort:", "onderwerp:", "nieuw:")) for tekst_regel in tekst.splitlines())
+
+
 def _indeling_wiki(wiki):
     """Een taak met een ketenproces, een deelproces, een kernobject met subobject, een generiek object met
     specialisatie, een functie, een gebeurtenis en een dienst."""
