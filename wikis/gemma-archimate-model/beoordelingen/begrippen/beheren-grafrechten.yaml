@@ -253,6 +253,13 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 28 lid 4–7; Groningen art. 20
+- soort: aggregatie
+  naar: verval-van-het-grafrecht
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 20 lid 4, 26
 - soort: toegang (bijwerken)
   naar: grafrecht
   naam: beheert

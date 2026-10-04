@@ -6,6 +6,8 @@ status: goedgekeurd
 naam: Model-beheersverordening begraafplaatsen
 onderwerpen:
 - lijkbezorging
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
 definitie: Model van de VNG voor de verordening waarin een gemeente het beheer en het gebruik van haar begraafplaatsen regelt.
 grondslag: regelgeving
 match:
@@ -52,6 +54,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 ### Plaats in de indelingen
 
 - **Regelgever**: VNG-model.
+- **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 

@@ -358,3 +358,7 @@ verwijderen; de pre-commit-hook weigert dat.
 ## [2026-10-04] promote | exploiteren-van-begraafplaatsen | Mark Backer | dfdd5f7d
 ## [2026-10-04] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | f731fa90
 ## [2026-10-04] promote | vergunningenbeheer-publieksdiensten | Mark Backer | 0bdbdb78
+## [2026-10-04] promote | beheren-grafrechten | Mark Backer | 8016b4d7
+## [2026-10-04] promote | bezorgen-lijken | Mark Backer | 0776ebe0
+## [2026-10-04] promote | model-beheersverordening-begraafplaatsen | Mark Backer | 6de78e09
+## [2026-10-04] promote | wet-op-de-lijkbezorging | Mark Backer | 3623896e

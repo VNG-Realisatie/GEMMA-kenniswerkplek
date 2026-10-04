@@ -271,6 +271,20 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22a
+- soort: aggregatie
+  naar: overlijden
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 3, 16
+- soort: aggregatie
+  naar: besmet-lijk-gemeld
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 22a; Wpg art. 27 lid 3
 - soort: toegang (bijwerken)
   naar: lijk
   naam: bezorgt

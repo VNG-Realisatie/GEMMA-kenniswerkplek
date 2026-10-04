@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: 977ef5de6d0ef332f3ee09a362ade0af4c384800876f4088aac2c99f9ba2b0e7 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 4f3670db70da8c745bb5197ae931a5af69e133ca1ba2a6ef74bb5220e67d44a3 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-04T17:57:16. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 13 gekoppeld aan GEMMA, 55 nieuw. Relaties: 0 gekoppeld, 213 nieuw, 21 overgeslagen. Indelingen: 22 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-04T20:35:13. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 18 gekoppeld aan GEMMA, 55 nieuw. Relaties: 7 gekoppeld, 241 nieuw, 0 overgeslagen. Indelingen: 43 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
 
 ## Wijzigt een GEMMA-element
 
@@ -96,27 +96,3 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Verzorgen gemeentebegrafenis
 - Verzorgen lijkbezorging
 - Wet op de lijkbezorging
-
-## Overgeslagen relaties
-
-- Adviseur: doelgroep 'ketenpartners' bestaat niet als rol in GEMMA
-- Ambtenaar van de burgerlijke stand: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Beheerder van de begraafplaats: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Beslisser: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Burgemeester: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- College van B&W: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Degene die in de lijkbezorging voorziet: doelgroep 'inwoners en ondernemers' bestaat niet als rol in GEMMA
-- Gemeente: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Gemeentelijke lijkschouwer: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Gemeenteraad: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- GGD: doelgroep 'ketenpartners' bestaat niet als rol in GEMMA
-- Houder van de begraafplaats: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Houder van een plaats van bijzetting: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Houder van het crematorium: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Kerkgenootschap: doelgroep 'ketenpartners' bestaat niet als rol in GEMMA
-- Ketenpartner: doelgroep 'ketenpartners' bestaat niet als rol in GEMMA
-- Kostendrager: doelgroep 'gemeente' bestaat niet als rol in GEMMA
-- Nabestaande: doelgroep 'inwoners en ondernemers' bestaat niet als rol in GEMMA
-- Officier van justitie: doelgroep 'ketenpartners' bestaat niet als rol in GEMMA
-- Rechthebbende op het graf: doelgroep 'inwoners en ondernemers' bestaat niet als rol in GEMMA
-- Uitvaartondernemer: doelgroep 'inwoners en ondernemers' bestaat niet als rol in GEMMA

@@ -390,3 +390,41 @@ def test_dienst_hangt_onder_haar_functie_en_niet_onder_de_domeingroepering(tmp_p
     assert _props(agg)["wiki-gemma-model indeling"] == "Functie-indeling naar domein"
     assert not _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "graf-aanvragen"))
     assert any("Losse dienst: geen plaats in de Functie-indeling naar domein" in o for o in uit.overgeslagen)
+
+
+def test_element_zonder_plaats_in_een_indeling_wordt_gemeld(tmp_path):
+    uit, _ = _export_indeling(tmp_path)
+    # alleen de actor met een onbekende doelgroep staat nergens
+    assert uit.zonder_plaats == ["Gemeente", "Verzorgen lijkbezorging"]
+
+
+def test_gebeurtenis_hangt_onder_het_proces_in_de_procesindeling_naar_taak(tmp_path):
+    begrippen = _indeling_begrippen()
+    gebeurtenis = _begrip("Overlijden", "business-event", status="review")
+    gebeurtenis["afgeleid"]["uitkomst"]["paginatype"] = "gebeurtenis"
+    begrippen["overlijden"] = gebeurtenis
+    uit, root = _export_indeling(tmp_path, begrippen)
+    assert "Overlijden" in uit.zonder_plaats
+    begrippen["opgraven-lijk"]["relaties"].append(
+        {"soort": "aggregatie", "naar": "overlijden", "grondslag": "bron", "bronnen": ["2026-bron"]})
+    uit, root = _export_indeling(tmp_path, begrippen)
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", ae.vast_id("element", "opgraven-lijk"),
+                           ae.vast_id("element", "overlijden"))
+    assert _props(agg)["wiki-gemma-model indeling"] == "Procesindeling naar taak"
+    assert "Overlijden" not in uit.zonder_plaats
+
+
+def test_taak_hangt_onder_haar_beleidsdomein_en_zonder_beleidsdomein_heeft_zij_geen_plaats(tmp_path):
+    begrippen = _indeling_begrippen()
+    begrippen["verzorgen-lijkbezorging"].update(taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen")
+    uit, root = _export_indeling(tmp_path, begrippen)
+    nieuw = ae.vast_id("groepering", "beleidsdomein", "Begraafplaatsen")
+    assert _relaties_van(root, "archimate:AggregationRelationship", nieuw, ae.vast_id("element", "verzorgen-lijkbezorging"))
+    assert "Verzorgen lijkbezorging" not in uit.zonder_plaats
+
+
+def test_taakveld_wordt_op_nummer_gevonden():
+    gemma_data = {"elementen": {"a": {"id": "a", "type": "grouping", "naam": "0 Bestuur, Politiek en Ondersteuning",
+                                      "eigenschappen": {"GEMMA type": "Taakveld Iv3"}}}}
+    assert ae._vind_taakveld(gemma_data, "0 Bestuur en Ondersteuning")["id"] == "a"
+    assert ae._vind_taakveld(gemma_data, "7 Volksgezondheid en Milieu") is None

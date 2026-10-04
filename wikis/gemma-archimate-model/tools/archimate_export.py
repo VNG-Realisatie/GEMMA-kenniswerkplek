@@ -19,6 +19,8 @@ staat in de map `Procesindeling naar taak`; `gemma_generiek` wordt een specialis
 letterlijk meegaat); beleidsdomein en domein worden een aggregatie vanuit de bestaande GEMMA-groepering, of vanuit een
 nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type `Groep`).
 
+Een element dat in geen enkele indeling staat, houdt de export tegen (`--check` meldt het ook).
+
 Alleen begrippen met status `goedgekeurd` (akkoord van de redacteur); `--concept` neemt ook kandidaat en review mee,
 voor het bekijken, en schrijft naar het kladblok. Het GEMMA-model moet als Archi-bestand zijn ingelezen
 (tools/gemma.py release <bestand.archimate>): de AMEFF heeft geen map-id's.
@@ -112,6 +114,7 @@ class Uitkomst:
     groeperingen_nieuw: list[str] = field(default_factory=list)
     specialisaties: list[str] = field(default_factory=list)
     indelingen: int = 0
+    zonder_plaats: list[str] = field(default_factory=list)
 
 
 # --- Voorwaarden ---
@@ -221,6 +224,16 @@ def _vind_groepering(gemma_data: dict, gemma_type: str | None, naam: str, map_ei
         if map_eindigt and not e["map"].endswith(map_eindigt):
             continue
         return e
+    return None
+
+
+def _vind_taakveld(gemma_data: dict, taakveld: str) -> dict | None:
+    """Het GEMMA-taakveld Iv3 op het nummer vooraan (`0 Bestuur…` → `0`): de naam in de wiki en in GEMMA mag verschillen."""
+    nummer = taakveld.split()[:1]
+    for e in sorted(gemma_data["elementen"].values(), key=lambda x: x["id"]):
+        if (e["type"] == "grouping" and e["eigenschappen"].get("GEMMA type") == "Taakveld Iv3"
+                and e["naam"].split()[:1] == nummer):
+            return e
     return None
 
 
@@ -375,6 +388,9 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == doel_u.get("paginatype") == "bedrijfsproces":
                 paren += [(eig("indeling"), "Procesindeling naar taak"),
                           (eig("procesniveau"), f"{bron_u.get('procesniveau')} → {doel_u.get('procesniveau')}")]
+            if rtype == "aggregation-relationship" and bron_u.get("paginatype") == "bedrijfsproces" \
+                    and doel_u.get("paginatype") == "gebeurtenis":
+                paren.append((eig("indeling"), "Procesindeling naar taak"))
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == "bedrijfsfunctie" \
                     and doel_u.get("paginatype") in ("bedrijfsfunctie", "product", "dienst"):
                 paren.append((eig("indeling"), "Functie-indeling naar domein"))
@@ -390,6 +406,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
 
     _gemma_specialisaties(b, uit, gemma_data, gekozen, ids, gemma_relaties)
     _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties)
+    uit.zonder_plaats = _zonder_plaats(b, gekozen, ids)
     uit.xml = _serialiseer(b, gemma_bron)
     return uit
 
@@ -420,6 +437,7 @@ def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: d
 # De indelingen die een element in een bestaande GEMMA-groepering plaatsen: paginatype → (indeling, soort).
 BELEIDSDOMEIN_TYPEN = ("bedrijfsobject", "product", "dienst", "beleidskader")
 DOMEIN_TYPEN = ("bedrijfsfunctie", "product", "dienst")
+# Een taak (procescluster) valt ook in de Beleidsdomeinindeling: boven haar staat in de Procesindeling naar taak niets.
 DOELGROEP_TYPEN = ("actor", "rol", "bedrijfssamenwerking", "kanaal")
 
 
@@ -442,7 +460,8 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
         paginatype = data["afgeleid"]["uitkomst"].get("paginatype")
         element = ids[bid]
         beleidsdomein = data.get("beleidsdomein")
-        if paginatype in BELEIDSDOMEIN_TYPEN and beleidsdomein:
+        taak = paginatype == "bedrijfsproces" and data["afgeleid"]["uitkomst"].get("procesniveau") == "taak"
+        if (paginatype in BELEIDSDOMEIN_TYPEN or taak) and beleidsdomein:
             groep = _vind_groepering(gemma_data, "Beleidsdomein", beleidsdomein)
             if groep is None:
                 if beleidsdomein not in nieuwe:
@@ -454,7 +473,7 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
                                         *b.gemeen("nieuw"), (eig("taakveld"), taakveld or "")])
                     b.eigen_map("other", ["Beleidsdomeinindeling", taakveld] if taakveld else ["Beleidsdomeinindeling"]).objecten.append(el)
                     uit.groeperingen_nieuw.append(f"{beleidsdomein} (taakveld {taakveld or '—'})")
-                    ouder = _vind_groepering(gemma_data, "Taakveld Iv3", taakveld) if taakveld else None
+                    ouder = _vind_taakveld(gemma_data, taakveld) if taakveld else None
                     if ouder is not None:
                         _stub(b, ouder)
                         _relatie(b, uit, gemma_relaties, "aggregation-relationship", ouder["id"], gid,
@@ -483,6 +502,39 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
             else:
                 aggregatie(rol["id"], element, "Doelgroepindeling", bid, rol)
 
+
+
+def _alle_objecten(m: Map):
+    yield from m.objecten
+    for kind in m.mappen.values():
+        yield from _alle_objecten(kind)
+
+
+def _indeling_van(obj: ET.Element) -> str | None:
+    return next((p.get("value") for p in obj.findall("property") if p.get("key") == eig("indeling")), None)
+
+
+def _zonder_plaats(b: Bouwer, gekozen: dict, ids: dict) -> list[str]:
+    """De elementen die in geen enkele indeling staan (besluit 2026-10-04: alles wordt ingedeeld, geen wezen). Een
+    element staat in een indeling als een aggregatie met een indeling naar haar wijst of als zij een specialisatie met een
+    indeling heeft. Een taak staat in de Beleidsdomeinindeling (besluit 2026-10-04)."""
+    geplaatst = set()
+    for m in b.wortel.values():
+        for r in _alle_objecten(m):
+            indeling, rtype = _indeling_van(r), r.get(XSI)
+            if indeling is None:
+                continue
+            if rtype == "archimate:AggregationRelationship":
+                geplaatst.add(r.get("target"))
+            elif rtype == "archimate:SpecializationRelationship":
+                geplaatst.add(r.get("source"))
+    zonder = []
+    for bid, data in sorted(gekozen.items()):
+        eid = ids.get(bid)
+        if eid is None or eid in geplaatst:
+            continue
+        zonder.append(data["begrip"])
+    return zonder
 
 
 def _map_xml(m: Map, ouder: ET.Element) -> None:
@@ -566,6 +618,7 @@ def main(argv: list[str] | None = None) -> int:
     log = (args.wiki / "log.md").read_text(encoding="utf-8") if (args.wiki / "log.md").exists() else ""
     uit = Uitkomst() if fouten else bouw(gemma_data, begrippen, gemma_bron, tijdstempel, args.concept, log, wiki_yaml)
     fouten += uit.fouten
+    fouten += [f"{naam}: geen plaats in een indeling (elk element staat in minstens één indeling)" for naam in uit.zonder_plaats]
     for f in fouten:
         print(f"fout: {f}")
     if fouten:

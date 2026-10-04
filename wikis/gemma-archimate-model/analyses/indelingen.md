@@ -67,7 +67,7 @@ Stand van het GEMMA-model van 2026-10-02.
 | Procesindeling naar soort werk | GEMMA, per taak uitgebreid | deelprocessen; via generieke GEMMA-elementen ook gebeurtenissen, diensten en rollen | generiek GEMMA-proces → cluster naar soort werk → deelproces | specialisatie naar het GEMMA-element (exacte match); aggregatie |
 | Procesindeling naar taak | nieuw | bedrijfs-, keten- en deelprocessen, gebeurtenissen | taak → bedrijfs- of ketenproces per kernobject → deelproces | aggregatie; map `wiki-gemma-model / Procesindeling naar taak` |
 | Functie-indeling naar domein | GEMMA | functies, producten, diensten | domein → functie → product of dienst | aggregatie; functie bedient proces |
-| Beleidsdomeinindeling | GEMMA | objecten, afspraken, producten, diensten, beleidskaders | taakveld → beleidsdomein → element | aggregatie vanuit de groepering |
+| Beleidsdomeinindeling | GEMMA | objecten, afspraken, producten, diensten, beleidskaders, taken | taakveld → beleidsdomein → element | aggregatie vanuit de groepering |
 | Doelgroepindeling | GEMMA, uitgebreid | rollen, actoren, samenwerkingen, kanalen | gemeente (bestuursorgaan, ambtelijk), inwoners en ondernemers, ketenpartners → element | aggregatie vanuit de doelgroeprol |
 
 Een deelproces heeft twee ouders: het proces van zijn kernobject en zijn cluster naar soort werk. Een deelproces uit een andere taak mag ook in een ketenproces hangen; dat geeft een signaal.
@@ -77,6 +77,7 @@ Een deelproces heeft twee ouders: het proces van zijn kernobject en zijn cluster
 Een product- en dienstindeling, beleidskaderindeling en kanaalindeling zijn geen eigen indelingen:
 - producten en diensten vallen in de Beleidsdomeinindeling en de Functie-indeling (twee ouders; de UPL draagt beide als kolom);
 - beleidskaders vallen in de Beleidsdomeinindeling, met de regelgever als eigenschap;
+- een taak valt in de Beleidsdomeinindeling, omdat er in de Procesindeling naar taak niets boven haar staat;
 - kanalen vallen in de Doelgroepindeling, met fysiek of digitaal als eigenschap.
 
 Verder:
@@ -308,6 +309,7 @@ Besluiten over de werkwijze en de criteria. Besluiten over afzonderlijke begripp
 | 2026-10-04 | Generieke objecten krijgen nu een kenmerk en verhuizen later naar een algemeen onderwerp; hun domeinspecialisaties krijgen geen pagina en worden genoemd met `via`. |
 | 2026-10-04 | Tussen actoren alleen structurele relaties (deel van, lid van, voorzitter van); een handeling loopt via rollen en processen of een gebeurtenis. Een actor is een soort partij, nooit een individuele organisatie. |
 | 2026-10-04 | Producten en diensten vallen in de Beleidsdomeinindeling en de Functie-indeling naar domein; interne producten fijner onder bedrijfsfuncties. |
+| 2026-10-04 | Een taak valt in de Beleidsdomeinindeling, onder haar beleidsdomein, zodat ook de bovenste knoop van de Procesindeling naar taak een plaats heeft. Alleen de taak, niet de bedrijfs-, keten- en deelprocessen daaronder. |
 | 2026-10-04 | Een beleidskader hangt bij voorkeur aan een product (regel 595); aan een proces of dienst alleen zolang er geen product is. |
 | 2026-10-04 | Alles wordt ingedeeld, geen wezen: elk element staat in minstens één indeling, ook in de export naar Archi. Een functie zonder GEMMA-match breidt de GEMMA-functieketen uit: ze wordt geaggregeerd door een bestaande GEMMA-functie. |
 | 2026-10-04 | De Functie-indeling naar domein is een relatie, geen eigenschap: de bovenliggende functie wordt een element, onderbouwd uit de bronnen, en aggregeert de functie eronder, zoals in GEMMA (*Exploitatie fysieke leefomgeving* aggregeert *Exploiteren van begraafplaatsen*). De keten wordt element tot en met de functie op domeinniveau (GEMMA type *Bedrijfsfunctie domein*); alleen die hangt via `domein` aan de domeingroepering. Bij meer GEMMA-ouders de ouder in de keten van het eigen domein. Een nieuwe aggregatie in Archi alleen voorleggen bij twijfel. |

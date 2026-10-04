@@ -6,6 +6,8 @@ status: goedgekeurd
 naam: Wet op de lijkbezorging
 onderwerpen:
 - lijkbezorging
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
 definitie: Wet die regelt hoe een lijk wordt geschouwd, begraven, gecremeerd of anders bezorgd, en welke taken de gemeente daarbij heeft.
 grondslag: regelgeving
 match:
@@ -42,6 +44,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 ### Plaats in de indelingen
 
 - **Regelgever**: rijk.
+- **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
