@@ -1,17 +1,17 @@
-begrip: Burgerlijke stand diensten
+begrip: Uitvoering Publieksdiensten
 onderwerpen:
 - lijkbezorging
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie; na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof af (RVO).
+    onderbouwing: GEMMA-bedrijfsfunctie op domeinniveau (GEMMA type Bedrijfsfunctie domein), onder de laag Uitvoering.
     bronnen:
     - 2026-vng-gemma-2026-10-02
-    - 2026-rvo-aangifte-en-akte-van-overlijden
   gemeentelijk:
     waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand verleent het verlof (art. 11).
+    onderbouwing: Het leveren van gemeentelijke publieksdiensten; daaronder het verlof tot begraving of crematie van de ambtenaar van de burgerlijke stand (art. 11).
     bronnen:
+    - 2026-vng-gemma-2026-10-02
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
     waarde: nee
@@ -21,19 +21,19 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een zelfstandige groepering van gedrag.
+    onderbouwing: Een zelfstandige functie in de GEMMA-functie-indeling, met eigen functies eronder.
     bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-vng-gemma-2026-10-02
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Geen ander onderwerp beoordeelt het; hoort later ook bij een onderwerp burgerzaken.
+    onderbouwing: Geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling.
     bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-vng-gemma-2026-10-02
   gedrag:
     waarde: ja
     onderbouwing: Een groep van activiteiten.
     bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-vng-gemma-2026-10-02
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -81,10 +81,9 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   gegroepeerd_gedrag:
     waarde: ja
-    onderbouwing: Groepeert het bijhouden van de burgerlijke staat bij geboorte, overlijden en huwelijk op grond van dezelfde kennis en bevoegdheid (ambtenaar van de burgerlijke stand); geen eigen volgorde of doorlooptijd.
+    onderbouwing: Groepeert alle uitvoerende functies van het domein Publieksdiensten; geen eigen volgorde of doorlooptijd.
     bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-gemma-2026-10-02
   toestandsverandering:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -95,13 +94,11 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   toegewezen_partij:
-    waarde: ja
-    onderbouwing: Ambtenaar van de burgerlijke stand (art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Geen afzonderlijke rol voor het hele domein; de functies eronder hebben elk hun rol, zoals de Ambtenaar van de burgerlijke stand.
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Raadpleegt de verklaring van overlijden en legt het verlof vast (art. 11–13).
+    onderbouwing: 'Via de functies eronder: de verklaring van overlijden en het verlof (art. 11–13).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   aanleiding:
@@ -118,9 +115,9 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   stabiel_over_tijd:
     waarde: ja
-    onderbouwing: Volgt uit de wettelijke taak van de ambtenaar van de burgerlijke stand, los van de organisatie (art. 11).
+    onderbouwing: Een domein van het GEMMA-bedrijfsfunctiemodel, los van de organisatie.
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-gemma-2026-10-02
   afnemer:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -150,12 +147,12 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bedient_gedrag:
     waarde: ja
-    onderbouwing: Bedient Verlenen verlof tot begraving of crematie (art. 11).
+    onderbouwing: Via Producten- en dienstenrealisatie publieksdiensten en Burgerlijke stand diensten bedient ze Verlenen verlof tot begraving of crematie; wat een functie eronder bedient, bedient zij ook.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   in_functie_indeling:
     waarde: ja
-    onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
+    onderbouwing: 'Op domeinniveau: de GEMMA-groepering Publieksdiensten aggregeert haar, naast de laag Uitvoering (GEMMA-relaties id-cdd20628-9f5a-4162-8c8c-354586487bbf en id-770f77ce-dca4-4722-bab1-91b8a017c08b).'
     bronnen:
     - 2026-vng-gemma-2026-10-02
   leidt_tot_gebeurtenis:
@@ -202,42 +199,40 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen bredere functie in deze wiki.
+    onderbouwing: 'Geen breder begrip van hetzelfde type: de bovenliggende functie aggregeert haar, ze specialiseert niets.'
     bronnen:
     - 2026-vng-gemma-2026-10-02
   generiek:
-    waarde: nee
-    onderbouwing: Een domeinfunctie, niet in veel onderwerpen.
-definitie: Het bijhouden van de burgerlijke staat van personen naar aanleiding van geboorte, overlijden, huwelijk en verhuizing.
+    waarde: ja
+    onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp van de publieksdienstverlening.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+definitie: Het leveren van gemeentelijke producten en diensten die tot het domein publieksdiensten worden gerekend.
+beschrijving:
+- De uitvoerende functies van het domein Publieksdiensten in het GEMMA-bedrijfsfunctiemodel, tussen de laag Uitvoering en de functies per soort werk.
 per_onderwerp:
   lijkbezorging:
-  - Na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof tot begraven, cremeren of ontleding af (RVO). Het verlof verleent de ambtenaar van de burgerlijke stand (Wet op de lijkbezorging art. 11).
+  - Het verlof tot begraving of crematie valt eronder, via Producten- en dienstenrealisatie publieksdiensten en Burgerlijke stand diensten.
 domein: Publieksdiensten
 grondslag: bron
 gemma:
-  id: id-c689b2cc-4672-4474-a82f-44273c60d384
+  id: id-f54b116c-22f4-4f01-bf6d-997debf536c3
   sterkte: exact
-  onderbouwing: 'Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Burgerlijke stand diensten.'
+  onderbouwing: 'Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Uitvoering Publieksdiensten.'
 relaties:
-- soort: bediening
-  naar: verlenen-verlof-tot-begraving-of-crematie
-  naam: bedient
+- soort: aggregatie
+  naar: producten-en-dienstenrealisatie-publieksdiensten
+  naam: omvat
   grondslag: bron
   bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 11
-beschrijving:
-- De ambtenaar van de burgerlijke stand maakt akten op van geboorte, huwelijk en overlijden en verleent het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11; RVO). De functie bedient de processen daarvoor.
-besluiten:
-- datum: '2026-10-04'
-  besluit: Opnemen als bedienende functie met exacte GEMMA-match, met de GEMMA-naam en -definitie.
-  gevolg: verwerkt
+  - 2026-vng-gemma-2026-10-02
+  vindplaats: GEMMA-relatie id-ec3df199-3782-479d-874e-73b99b31262b
 status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
     regel: 26
-    toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
+    toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *toegewezen partij*)'
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
@@ -246,16 +241,16 @@ afgeleid:
     typeregel: 17
   bronnen:
   - 2026-vng-gemma-2026-10-02
-  - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet
   gemma:
-    gemma_id: id-c689b2cc-4672-4474-a82f-44273c60d384
-    gemma_naam: Burgerlijke stand diensten
+    gemma_id: id-f54b116c-22f4-4f01-bf6d-997debf536c3
+    gemma_naam: Uitvoering Publieksdiensten
     gemma_type: business-function
-    gemma_definitie: Het bijhouden van de burgerlijke staat van personen n.a.v. geboorte, overlijden, huwelijk en verhuizing
-    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_definitie: Het leveren van gemeentelijke producten en diensten die tot het domein publieksdiensten worden gerekend.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
     gemma_eigenschappen:
-      Object ID: c689b2cc-4672-4474-a82f-44273c60d384
-      Toelichting: Bijv. het opmaken van akten bij geboorte, huwelijk, echtscheiding en overlijden.
-  pad: bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md
+      GEMMA type: Bedrijfsfunctie domein
+      Object ID: f54b116c-22f4-4f01-bf6d-997debf536c3
+      Toelichting: Bijv. klachtenafhandeling, subsidiering, burgelijke stand diensten en belastingoplegging.
+  pad: bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/uitvoering-publieksdiensten.md

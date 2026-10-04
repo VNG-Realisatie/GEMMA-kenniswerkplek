@@ -37,9 +37,9 @@ page_types:                          # pagina's van curated typen en onderwerpen
     dir: bedrijfsarchitectuur/bedrijfsprocessen
     submappen: [taakveld, beleidsdomein]
     curated: true
-  bedrijfsfunctie:
+  bedrijfsfunctie:                   # Functie-indeling naar domein, niet de Beleidsdomeinindeling (besluit 2026-10-04)
     dir: bedrijfsarchitectuur/bedrijfsfuncties
-    submappen: [taakveld, beleidsdomein]
+    submappen: [domein]
     curated: true
   gebeurtenis:                       # GEMMA-naam Gebeurtenis (Business Event)
     dir: bedrijfsarchitectuur/gebeurtenissen

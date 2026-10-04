@@ -51,7 +51,7 @@ per_onderwerp:
   lijkbezorging:
     - De gemeente geeft graven uit en ruimt ze.
 synoniemen: [{naam: begraafterrein, context: beleid}]
-taakveld: 7 Volksgezondheid en Milieu         # bij typen met submappen (wiki.yaml)
+taakveld: 7 Volksgezondheid en Milieu         # bij typen met submappen taakveld en beleidsdomein (wiki.yaml); niet bij een functie (submap domein)
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron                               # ggm-entiteit | ggm-afgeleid | procesobject | regelgeving | bron
 grondslag_toelichting: []                     # verplicht bij regelgeving, procesobject, ggm-afgeleid

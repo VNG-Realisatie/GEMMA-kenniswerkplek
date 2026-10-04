@@ -333,7 +333,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             map_naam = Path(page_types.get(afgeleid["uitkomst"].get("paginatype"), {}).get("dir", atype)).name.capitalize()
             if afgeleid["uitkomst"].get("paginatype") == "bedrijfsproces":
                 map_naam = "Procesindeling naar taak"
-            doel = b.eigen_map(bovenste_map(atype), [n for n in (map_naam, data.get("taakveld"), data.get("beleidsdomein")) if n])
+            submappen = page_types.get(afgeleid["uitkomst"].get("paginatype"), {}).get("submappen", ["taakveld", "beleidsdomein"])
+            doel = b.eigen_map(bovenste_map(atype), [n for n in (map_naam, *(data.get(s) for s in submappen)) if n])
         _eigenschappen(el, paren)
         doel.objecten.append(el)
 

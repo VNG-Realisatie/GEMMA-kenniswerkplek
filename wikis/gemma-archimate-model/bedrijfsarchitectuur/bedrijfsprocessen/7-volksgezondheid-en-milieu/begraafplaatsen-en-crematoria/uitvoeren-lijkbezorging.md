@@ -47,7 +47,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 - **Procesniveau**: deelproces.
 - **Procesindeling naar taak, onderdeel van**: [Bezorgen lijken](bezorgen-lijken.md), [Uitbaten begraafplaatsen en crematoria](uitbaten-begraafplaatsen-en-crematoria.md).
 - **Kernobject**: [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md).
-- **Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/exploiteren-van-begraafplaatsen.md).
+- **Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md).
 - **Gestart door gebeurtenis**: [Overlijden](../../../gebeurtenissen/overlijden.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
@@ -98,7 +98,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | [Beheerder van de begraafplaats](../../../rollen/beheerder-van-de-begraafplaats.md) | bepaalt tijd en plaats van *toewijzing* | Uitvoeren lijkbezorging | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
 | [Bezorgen lijken](bezorgen-lijken.md) | omvat *aggregatie* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1, 16) |
 | [Degene die in de lijkbezorging voorziet](../../../rollen/degene-die-in-de-lijkbezorging-voorziet.md) | voorziet in en vraagt het verlof aan voor *toewijzing* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 18; Groningen art. 7 lid 2) |
-| [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/exploiteren-van-begraafplaatsen.md) | bedient *bediening* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23) |
+| [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | bedient *bediening* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23) |
 | [Houder van de begraafplaats](../../../rollen/houder-van-de-begraafplaats.md) | stelt de identiteit vast bij *toewijzing* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 8 lid 2) |
 | [Houder van het crematorium](../../../rollen/houder-van-het-crematorium.md) | bergt de as bij *toewijzing* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 58) |
 | [Overlijden](../../../gebeurtenissen/overlijden.md) | leidt tot *triggering* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 16) |

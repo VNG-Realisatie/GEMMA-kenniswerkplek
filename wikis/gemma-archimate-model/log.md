@@ -349,3 +349,9 @@ verwijderen; de pre-commit-hook weigert dat.
 ## [2026-10-04] promote | verzorgen-gemeentebegrafenis | Mark Backer | 4996af51
 ## [2026-10-04] promote | verzorgen-lijkbezorging | Mark Backer | a0ff03cd
 ## [2026-10-04] promote | wet-op-de-lijkbezorging | Mark Backer | 8204c2a5
+## [2026-10-04] promote | burgerlijke-stand-diensten | Mark Backer | e2c9ad59
+## [2026-10-04] promote | exploitatie-fysieke-leefomgeving | Mark Backer | b92d0d07
+## [2026-10-04] promote | exploiteren-van-begraafplaatsen | Mark Backer | 38bf9598
+## [2026-10-04] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 7b748487
+## [2026-10-04] promote | uitvoering-fysieke-leefomgeving | Mark Backer | 9fe259a7
+## [2026-10-04] promote | uitvoering-publieksdiensten | Mark Backer | 75e6b6c7

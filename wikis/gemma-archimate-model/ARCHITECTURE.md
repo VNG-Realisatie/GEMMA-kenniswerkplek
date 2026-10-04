@@ -56,7 +56,7 @@ wikis/gemma-archimate-model/
 
 | Bestand | Inhoud |
 |---|---|
-| `bedrijfsarchitectuur/<map>/<taakveld>/<beleidsdomein>/<id>.md`, `motivatie/beleidskaders/<id>.md` | Elementpagina; de map volgt uit het type (`wiki.yaml` `page_types`), de submappen uit taakveld en beleidsdomein (kleine letters met koppeltekens) |
+| `bedrijfsarchitectuur/<map>/<taakveld>/<beleidsdomein>/<id>.md`, `bedrijfsarchitectuur/bedrijfsfuncties/<domein>/<id>.md`, `motivatie/beleidskaders/<id>.md` | Elementpagina; de map volgt uit het type (`wiki.yaml` `page_types`), de submappen uit taakveld en beleidsdomein, bij een functie uit het domein (kleine letters met koppeltekens) |
 | `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst (element met link en status, synoniem van, specialisatie van, geen element …), de reden, de herkomst en de GGM-entiteit |
 | `analyses/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
 | `ter-beoordeling.md` | Wat wacht op akkoord (status `review`), en wat nog moet worden voorgelegd |

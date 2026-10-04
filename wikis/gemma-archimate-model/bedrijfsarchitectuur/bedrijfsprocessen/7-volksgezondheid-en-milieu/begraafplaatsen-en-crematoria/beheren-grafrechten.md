@@ -49,7 +49,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 - **Procesindeling naar taak, onderdeel van**: [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md).
 - **Procesindeling naar taak, omvat**: [Verlenen grafrecht](verlenen-grafrecht.md), [Vervallen verklaren grafrecht](vervallen-verklaren-grafrecht.md).
 - **Kernobject**: [Grafrecht](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md).
-- **Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/exploiteren-van-begraafplaatsen.md).
+- **Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
@@ -90,7 +90,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/exploiteren-van-begraafplaatsen.md) | bedient *bediening* | Beheren grafrechten | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28) |
+| [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | bedient *bediening* | Beheren grafrechten | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28) |
 | [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md) | omvat *aggregatie* | Beheren grafrechten | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28) |
 
 ## Herkomst

@@ -6,7 +6,7 @@ Leest elke beoordeling in `beoordelingen/begrippen/<id>.yaml` (het oordeel van d
 - `status` (alleen bij een element): `kandidaat` als er iets open staat, anders `review`; `afgewezen` na het besluit
   `afwijzen`. `goedgekeurd` blijft staan zolang `log.md` een promotieregel met de hash van de inhoud heeft; zet
   alleen `llmwiki promote` (na akkoord). Elke inhoudelijke wijziging maakt een goedgekeurd element weer `review`;
-- `afgeleid.pad`: waar het render-script de pagina zet (map uit wiki.yaml, submappen taakveld en beleidsdomein);
+- `afgeleid.pad`: waar het render-script de pagina zet (map en submappen uit wiki.yaml: taakveld en beleidsdomein, bij een functie het domein);
 - `afgeleid.ggm`, `afgeleid.ggm_duplicaten`, `afgeleid.gemma`: de letterlijke velden bij de match die de AI koos
   (tools/ggm.py, tools/gemma.py); de AI vult die nooit zelf;
 - `afgeleid.bronnen` en `afgeleid.herkomst`: alle bronnen van het begrip, en het brontype van de hoogste.

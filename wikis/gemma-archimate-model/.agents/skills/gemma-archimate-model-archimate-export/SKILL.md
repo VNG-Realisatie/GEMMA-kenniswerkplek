@@ -15,7 +15,7 @@ metadata:
 | Wat | Id | Map |
 |---|---|---|
 | Element met een GEMMA-match (`gemma.id`) | het GEMMA-id | dezelfde mappen als in GEMMA, met dezelfde map-id's |
-| Nieuw element | vast id, afgeleid van het begrip-id | `<Business of Motivation> / wiki-gemma-model / <paginatype> / <taakveld> / <beleidsdomein>` |
+| Nieuw element | vast id, afgeleid van het begrip-id | `<Business of Motivation> / wiki-gemma-model / <paginatype> / <taakveld> / <beleidsdomein>`; een functie `… / Bedrijfsfuncties / <domein>` |
 | Relatie die in GEMMA al bestaat (zelfde type, zelfde elementen, zelfde toegangstype) | het GEMMA-id | dezelfde map als in GEMMA |
 | Nieuwe relatie | vast id, afgeleid van bron, soort, doel en naam | `Relations / wiki-gemma-model` |
 

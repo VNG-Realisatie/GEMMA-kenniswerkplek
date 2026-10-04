@@ -47,7 +47,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 - **Procesniveau**: deelproces.
 - **Procesindeling naar taak, onderdeel van**: [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md), [Bezorgen lijken](bezorgen-lijken.md).
 - **Kernobject**: [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md).
-- **Functie-indeling naar domein, bediend door**: [Burgerlijke stand diensten](../../../bedrijfsfuncties/0-bestuur-en-ondersteuning/burgerzaken/burgerlijke-stand-diensten.md).
+- **Functie-indeling naar domein, bediend door**: [Burgerlijke stand diensten](../../../bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
@@ -89,7 +89,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [Ambtenaar van de burgerlijke stand](../../../rollen/ambtenaar-van-de-burgerlijke-stand.md) | verleent *toewijzing* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
 | [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md) | omvat *aggregatie* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
 | [Bezorgen lijken](bezorgen-lijken.md) | omvat *aggregatie* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11, 12) |
-| [Burgerlijke stand diensten](../../../bedrijfsfuncties/0-bestuur-en-ondersteuning/burgerzaken/burgerlijke-stand-diensten.md) | bedient *bediening* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
+| [Burgerlijke stand diensten](../../../bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md) | bedient *bediening* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
 
 ## Herkomst
 
