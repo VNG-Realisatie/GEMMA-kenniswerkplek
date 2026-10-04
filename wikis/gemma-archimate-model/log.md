@@ -362,3 +362,5 @@ verwijderen; de pre-commit-hook weigert dat.
 ## [2026-10-04] promote | bezorgen-lijken | Mark Backer | 0776ebe0
 ## [2026-10-04] promote | model-beheersverordening-begraafplaatsen | Mark Backer | 6de78e09
 ## [2026-10-04] promote | wet-op-de-lijkbezorging | Mark Backer | 3623896e
+## [2026-10-04] promote | arts | Mark Backer | d81a8731
+## [2026-10-04] promote | ketenpartner | Mark Backer | 07503132

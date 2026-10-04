@@ -189,6 +189,12 @@ kenmerken:
 toelichting: 'Buiten scope: alleen context (VNG-model, toelichting art. 17).'
 onderwerpen:
 - lijkbezorging
+besluiten:
+- datum: '2026-10-04'
+  besluit: 'Buiten scope: alleen genoemd als mogelijke nieuwe rechthebbende op het graf (VNG-model, toelichting art. 17); geen structurele relatie met de gemeente.'
+  gevolg: afwijzen
+  redenen:
+  - 'gemeentelijk: nee'
 afgeleid:
   uitkomst:
     soort: buiten_scope
@@ -200,8 +206,6 @@ afgeleid:
     data_object: nee
     generiek: false
   voor_te_leggen:
-  - 'gemeentelijk: nee'
-  open:
   - 'gemeentelijk: nee'
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen

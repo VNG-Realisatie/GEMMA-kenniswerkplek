@@ -11,7 +11,7 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 ## Indelingen (analyse 2026-10-04, `analyses/indelingen.md`)
 
-- **Lijkbezorging in Archi**: na het akkoord op de elementen in `ter-beoordeling.md` opnieuw exporteren, importeren in een GEMMA-kopie (*File › Import › Model into selected model…*, bestaande objecten bijwerken), jArchi-script draaien, controleren dat gekoppelde elementen in hun GEMMA-map blijven, geen dubbele mappen ontstaan, `Object ID` blijft staan. Het exportbestand in Archi nooit opslaan (Archi overschrijft het en maakt een `.bak`). Daarna `voortgang.md` bijwerken (was: 48 elementen).
+- **Definitie van Ketenpartner**: nu "verantwoordelijkheid van een andere organisatie", terwijl de rol wordt vervuld door personen (Arts als behandelende arts, Officier van justitie; besluit redacteur 2026-10-04). Definitie verbreden naar een andere partij, of de organisatie (openbaar ministerie, zorgaanbieder) als actor nemen; meenemen in het voorstel aan het GEMMA-team over de definitie van de rol Ketenpartner.
 - **Verlengen en overschrijven van het grafrecht**: nu onderdelen van Grafrecht (eigen identiteit nee). Met de criteria van 2026-10-04 mogelijk deelprocessen van Beheren grafrechten (eigen besluit, Wlb art. 28 lid 1–3; Groningen art. 16–20). Beoordelen samen met de UPL-producten.
 - **UPL-lijsten als bron**: de externe en interne lijst van GEMMA Online (*Producten en diensten procesarchitectuur*) opnemen met `gemma-archimate-model-ingest`. Daarna de producten en diensten van lijkbezorging beoordelen (16 in de externe lijst). Via de grondslagkolommen bronnen zoeken voor de gaten: de model-APV (asverstrooiing) en het Besluit op de lijkbezorging (vervoersdocumenten).
 - **Voorstellen aan het GEMMA-team**:

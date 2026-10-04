@@ -65,6 +65,12 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Gemeentelijke lijkschouwer | verricht *toewijzing* | [Schouwen lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
 | Gemeentelijke lijkschouwer | waarschuwt bij een niet-natuurlijke dood *associatie (gericht)* | [Ambtenaar van de burgerlijke stand](ambtenaar-van-de-burgerlijke-stand.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10 lid 1) |
 
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Arts](../actoren/arts.md) | vervult als forensisch arts *toewijzing* | Gemeentelijke lijkschouwer | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 4, 5) |
+
 ## Herkomst
 
 ### Bronnen

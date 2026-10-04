@@ -45,6 +45,8 @@ Een ketenpartner is een andere organisatie die een eigen deel van een ketenproce
 
 De officier van justitie is ketenpartner in Bezorgen lijken: hij ontvangt bij een niet-natuurlijke dood het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (Wet op de lijkbezorging art. 10, 12, 17).
 
+De arts is als behandelende arts ketenpartner in Bezorgen lijken: hij schouwt het lijk en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).
+
 ## Plaats in het model
 
 ### Typering
@@ -77,11 +79,13 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 |---|---|---|---|
 | Ketenpartner | voert zijn deel uit van *toewijzing* | [Bezorgen lijken](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bezorgen-lijken.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10, 12, 17) |
 | Ketenpartner | stemt in met vervroegen bij *toewijzing* | [Stellen andere termijn](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17 lid 1) |
+| Ketenpartner | schouwt als behandelende arts *toewijzing* | [Schouwen lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 7 lid 1) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Arts](../actoren/arts.md) | vervult als behandelende arts *toewijzing* | Ketenpartner | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 7, 10a, 12) |
 | [Officier van justitie](../actoren/officier-van-justitie.md) | vervult *toewijzing* | Ketenpartner | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10, 12, 17) |
 
 ## Herkomst
@@ -100,3 +104,4 @@ Match **exact** met GEMMA-element *Ketenpartner* (business-role). GEMMA-rol Kete
 ### Besluiten redacteur
 
 - 2026-10-04: Nieuwe rol Ketenpartner met exacte GEMMA-match; vervuld door de Officier van justitie, toegewezen aan Bezorgen lijken en Stellen andere termijn.
+- 2026-10-04: Ook vervuld door de Arts als behandelende arts, en toegewezen aan Schouwen lijk (art. 3).

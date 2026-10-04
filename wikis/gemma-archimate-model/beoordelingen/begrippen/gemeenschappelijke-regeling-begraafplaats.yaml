@@ -206,6 +206,11 @@ besluiten:
   gevolg: afwijzen
   redenen:
   - 'voert gedrag uit: nee'
+- datum: '2026-10-04'
+  besluit: 'Geen element: de wet noemt alleen de mogelijkheid (Wlb art. 33), dus geen samenwerkingsverband bij elke gemeente. Vult het besluit van 2026-10-01 aan.'
+  gevolg: afwijzen
+  redenen:
+  - 'soort partij: nee'
 afgeleid:
   uitkomst:
     soort: geen_element
@@ -221,8 +226,6 @@ afgeleid:
     typeregel: 9
   voor_te_leggen:
   - 'voert gedrag uit: nee'
-  - 'soort partij: nee'
-  open:
   - 'soort partij: nee'
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen

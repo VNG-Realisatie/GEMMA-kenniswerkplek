@@ -189,6 +189,12 @@ kenmerken:
 toelichting: 'Buiten scope: nog niet herkenbaar als begrip (VNG standpunt).'
 onderwerpen:
 - lijkbezorging
+besluiten:
+- datum: '2026-10-04'
+  besluit: 'Buiten scope: alleen genoemd in het VNG-standpunt over de wetswijziging; de wet regelt ze nog niet en er is geen herkenbaar begrip.'
+  gevolg: afwijzen
+  redenen:
+  - 'herkenbaar: nee'
 afgeleid:
   uitkomst:
     soort: buiten_scope
@@ -200,8 +206,6 @@ afgeleid:
     data_object: nee
     generiek: false
   voor_te_leggen:
-  - 'herkenbaar: nee'
-  open:
   - 'herkenbaar: nee'
   bronnen:
   - 2026-vng-wet-op-de-lijkbezorging

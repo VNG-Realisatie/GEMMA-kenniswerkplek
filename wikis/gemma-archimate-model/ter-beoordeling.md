@@ -16,30 +16,4 @@ Niets.
 
 ## Voor te leggen
 
-**Adviescommissie begraafplaatsen** (geen element)
-
-- soort partij: nee
-
-**Behandelende arts** (buiten scope)
-
-- gemeentelijk: nee
-
-**Beschikking ter bezorging van het lijk** (buiten scope)
-
-- gemeentelijk: nee
-
-**Gedeputeerde staten** (buiten scope)
-
-- gemeentelijk: nee
-
-**Gemeenschappelijke regeling begraafplaats** (geen element)
-
-- soort partij: nee
-
-**Nieuwe vormen van lijkbezorging** (buiten scope)
-
-- herkenbaar: nee
-
-**Stichting Grafzorg Nederland** (buiten scope)
-
-- gemeentelijk: nee
+Niets.

@@ -201,6 +201,7 @@ definitie: Verantwoordelijkheid van een andere organisatie voor haar deel van ee
 per_onderwerp:
   lijkbezorging:
   - 'De officier van justitie is ketenpartner in Bezorgen lijken: hij ontvangt bij een niet-natuurlijke dood het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (Wet op de lijkbezorging art. 10, 12, 17).'
+  - 'De arts is als behandelende arts ketenpartner in Bezorgen lijken: hij schouwt het lijk en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).'
 doelgroep: ketenpartners
 grondslag: bron
 gemma:
@@ -222,8 +223,22 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17 lid 1
+- soort: toewijzing
+  naar: schouwen-lijk
+  naam: schouwt als behandelende arts
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 3, 7 lid 1
 beschrijving:
 - Een ketenpartner is een andere organisatie die een eigen deel van een ketenproces uitvoert, vanuit een eigen wettelijke taak, en niet als klant of alleen als adviseur. GEMMA kent de rol Ketenpartner in de procesarchitectuur en de doelgroep Ketenpartners.
+besluiten:
+- datum: '2026-10-04'
+  besluit: Nieuwe rol Ketenpartner met exacte GEMMA-match; vervuld door de Officier van justitie, toegewezen aan Bezorgen lijken en Stellen andere termijn.
+  gevolg: verwerkt
+- datum: '2026-10-04'
+  besluit: Ook vervuld door de Arts als behandelende arts, en toegewezen aan Schouwen lijk (art. 3).
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -248,7 +263,3 @@ afgeleid:
     gemma_eigenschappen:
       Object ID: e03a0402-1890-4a21-8143-c44a8ba53ea4
   pad: bedrijfsarchitectuur/rollen/ketenpartner.md
-besluiten:
-- datum: '2026-10-04'
-  besluit: Nieuwe rol Ketenpartner met exacte GEMMA-match; vervuld door de Officier van justitie, toegewezen aan Bezorgen lijken en Stellen andere termijn.
-  gevolg: verwerkt

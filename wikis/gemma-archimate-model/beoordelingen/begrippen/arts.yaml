@@ -1,4 +1,4 @@
-begrip: Behandelende arts
+begrip: Arts
 kenmerken:
   herkenbaar:
     waarde: ja
@@ -6,8 +6,10 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
-    waarde: nee
-    onderbouwing: Medische partij buiten de gemeente; de interne zaak van een ketenpartner (afbakening redacteur 2026-09-29).
+    waarde: ja
+    onderbouwing: 'Als behandelende arts een wettelijke meld- en overlegplicht met de gemeentelijke lijkschouwer: meldt hem als hij geen verklaring van overlijden kan afgeven, overlegt met hem voordat hij die bij een minderjarige afgeeft en geeft hem informatie voor het nader onderzoek (art. 7 lid 2 en 6, art. 10a lid 1 en 3); zonder zijn verklaring geen verlof (art. 12). Als forensisch arts benoemd tot gemeentelijke lijkschouwer (art. 4, 5). Besluit redacteur 2026-10-04.'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -28,10 +30,12 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+    onderbouwing: Een partij, geen gedrag.
   handelende_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+    waarde: ja
+    onderbouwing: 'Een persoon die activiteiten uitvoert: schouwt het lijk, geeft de verklaring van overlijden af en doet mededeling aan de gemeentelijke lijkschouwer (art. 3, 7).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   hoedanigheid:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
@@ -51,20 +55,27 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
   los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
+    waarde: ja
+    onderbouwing: 'Bestaat los van de lijkbezorging, als arts die de overledene behandelde (RVO: de verklaring krijgt u van een behandelend arts).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rvo-aangifte-en-akte-van-overlijden
   eigen_rechtspersoon:
     waarde: nee
-    onderbouwing: Niet van toepassing.
+    onderbouwing: Een arts als persoon, geen eigen rechtspersoon.
   vervult_een_rol:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
+    waarde: ja
+    onderbouwing: Ketenpartner als behandelende arts (art. 3, 7, 10a, 12) en Gemeentelijke lijkschouwer als forensisch arts die het college benoemt (art. 4, 5); besluit redacteur 2026-10-04.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   voert_gedrag_uit:
     waarde: nee
-    onderbouwing: Niet van toepassing.
+    onderbouwing: Een actor hangt via zijn rol aan gedrag.
   soort_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    waarde: ja
+    onderbouwing: Bij elk overlijden schouwt een arts het lijk, als behandelende arts of als gemeentelijke lijkschouwer (art. 3, 5); een soort partij, geen individuele arts.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -160,10 +171,10 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst buiten_scope).'
+    onderbouwing: 'Niet van toepassing: een partij, geen ding.'
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst buiten_scope).'
+    onderbouwing: 'Niet van toepassing: een partij, geen ding.'
   zelfstandig_aanbod:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -183,29 +194,65 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip krijgt geen eigen pagina.'
+    waarde: ja
+    onderbouwing: Geen bredere actor in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst buiten_scope).'
-toelichting: 'Buiten scope: medische partij, alleen context (art. 3, 7).'
+    onderbouwing: Komt in deze wiki alleen in de lijkbezorging voor.
+toelichting: Actor die als behandelende arts ketenpartner is (meld- en overlegplicht, art. 7, 10a) en als forensisch arts gemeentelijke lijkschouwer (art. 4, 5).
 onderwerpen:
 - lijkbezorging
+definitie: Persoon die als arts mensen medisch onderzoekt en behandelt.
+beschrijving:
+- 'Lijkschouwing gebeurt door de behandelende arts of door een gemeentelijke lijkschouwer (Wet op de lijkbezorging art. 3). Behandelend is de hoedanigheid: de arts die de overledene voor het overlijden behandelde. Is die ervan overtuigd dat de dood een natuurlijke oorzaak heeft, dan geeft hij een verklaring van overlijden af (art. 7). De nabestaanden hebben die nodig voor de aangifte (RVO), en zonder die verklaring verleent de ambtenaar van de burgerlijke stand geen verlof tot begraving of crematie (art. 12).'
+- Kan de behandelende arts geen verklaring afgeven, of gaat het om euthanasie of hulp bij zelfdoding, dan doet hij met een formulier mededeling aan de gemeentelijke lijkschouwer (art. 7 lid 2 en 6). Bij een overleden minderjarige geeft hij de verklaring pas af na overleg met de gemeentelijke lijkschouwer, en geeft hij die op verzoek de informatie voor een nader onderzoek naar de doodsoorzaak (art. 10a).
+- 'Het college benoemt een of meer gemeentelijke lijkschouwers, uitsluitend artsen die als forensisch arts zijn ingeschreven (art. 4, 5). De medische behandeling zelf blijft buiten het model: die is de interne zaak van de arts als ketenpartner.'
+synoniemen:
+- naam: Behandelende arts
+  context: wet
+doelgroep: ketenpartners
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen actor of rol voor een arts; nieuw voor GEMMA.
+relaties:
+- soort: toewijzing
+  naar: ketenpartner
+  naam: vervult als behandelende arts
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 3, 7, 10a, 12
+- soort: toewijzing
+  naar: gemeentelijke-lijkschouwer
+  naam: vervult als forensisch arts
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 4, 5
+besluiten:
+- datum: '2026-10-04'
+  besluit: 'Actor als ketenpartner in het ketenproces Bezorgen lijken, zoals de Officier van justitie: wettelijke overlegplicht (art. 10a lid 1) en meldplicht (art. 7 lid 2 en 6) met de gemeentelijke lijkschouwer. Herziet de uitkomst buiten scope en het voorbeeld in de beslistabel.'
+  gevolg: verwerkt
+- datum: '2026-10-04'
+  besluit: 'Actor Arts in plaats van Behandelende arts (synoniem, wet): behandelend is de hoedanigheid tegenover de overledene. Arts vervult Ketenpartner en Gemeentelijke lijkschouwer (art. 4, 5); Ketenpartner wordt ook toegewezen aan Schouwen lijk (art. 3). Geen directe relatie behandelt: de medische behandeling is de interne zaak van de ketenpartner en de overledene is geen element; de arts hangt via Schouwen lijk aan het Lijk.'
+  gevolg: verwerkt
+status: goedgekeurd
 afgeleid:
   uitkomst:
-    soort: buiten_scope
-    regel: 2
-    toelichting: Niet herkenbaar of niet gemeentelijk
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
     voorleggen: false
-    redenen:
-    - 'gemeentelijk: nee'
     data_object: nee
     generiek: false
-  voor_te_leggen:
-  - 'gemeentelijk: nee'
-  open:
-  - 'gemeentelijk: nee'
+    typeregel: 11
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
   herkomst: wet
+  pad: bedrijfsarchitectuur/actoren/arts.md

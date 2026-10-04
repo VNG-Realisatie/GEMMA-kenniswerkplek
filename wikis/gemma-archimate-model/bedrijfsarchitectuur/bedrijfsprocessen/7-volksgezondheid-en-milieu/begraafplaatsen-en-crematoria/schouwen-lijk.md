@@ -97,6 +97,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 |---|---|---|---|
 | [Bezorgen lijken](bezorgen-lijken.md) | omvat *aggregatie* | Schouwen lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
 | [Gemeentelijke lijkschouwer](../../../rollen/gemeentelijke-lijkschouwer.md) | verricht *toewijzing* | Schouwen lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
+| [Ketenpartner](../../../rollen/ketenpartner.md) | schouwt als behandelende arts *toewijzing* | Schouwen lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 7 lid 1) |
 | [Overlijden](../../../gebeurtenissen/overlijden.md) | leidt tot *triggering* | Schouwen lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Schouwen lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 4, 7) |
 

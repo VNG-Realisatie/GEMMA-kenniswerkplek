@@ -7,7 +7,9 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
     waarde: nee
-    onderbouwing: Provinciaal bestuursorgaan; beslist in beroep en verleent ontheffingen, geen structurele samenwerking met de gemeente.
+    onderbouwing: 'Provinciaal bestuursorgaan; beslist per geval en op verzoek: beroep tegen besluiten van raad en college (art. 42, 45, 55, 64), ontheffing van de plicht tot een gemeentelijke begraafplaats (art. 33), vaststellen van verordeningen en voorwaarden bij een geschil (art. 36, 40), schadeloosstelling (art. 45). Geen structurele samenwerking met de gemeente. Besluit redacteur 2026-10-04.'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -189,6 +191,12 @@ kenmerken:
 toelichting: 'Buiten scope: provinciaal orgaan, alleen context (art. 31, 42, 45).'
 onderwerpen:
 - lijkbezorging
+besluiten:
+- datum: '2026-10-04'
+  besluit: 'Buiten scope: beroep, ontheffing en geschilbeslechting per geval en op verzoek, geen structurele samenwerking met de gemeente; genoemd in de beschrijving van Sluiten begraafplaats, Verlenen toestemming bijzondere begraafplaats en Verlenen vergunning bijzonder crematorium. Beroepsinstanties blijven buiten het model.'
+  gevolg: afwijzen
+  redenen:
+  - 'gemeentelijk: nee'
 afgeleid:
   uitkomst:
     soort: buiten_scope
@@ -200,8 +208,6 @@ afgeleid:
     data_object: nee
     generiek: false
   voor_te_leggen:
-  - 'gemeentelijk: nee'
-  open:
   - 'gemeentelijk: nee'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

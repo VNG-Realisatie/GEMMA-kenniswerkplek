@@ -49,7 +49,7 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 |---|---|---|
 | Aangifte van overlijden *verwijzing* | Verwijzing: beoordelen in het onderwerp burgerlijke stand. Het enige kanaal in de bron (digitaal aangifte doen met eHerkenning) hoort daarbij. | overig |
 | Aanwijzing van grond voor bijzondere begraafplaats *specialisatie zonder pagina* van [Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | Specialisatie zonder pagina van Beschikking: aanwijzing door de gemeenteraad (art. 40 lid 1). | wet |
-| Adviescommissie begraafplaatsen *geen element* | Geen element: het VNG-model beveelt de commissie alleen aan (toelichting 2). Voorleggen: soort partij: nee. | beleid |
+| Adviescommissie begraafplaatsen *geen element* | Geen element: het VNG-model beveelt de commissie alleen aan (toelichting 2). | beleid |
 | [Adviseur](../bedrijfsarchitectuur/rollen/adviseur.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | wet |
 | Afstand van het grafrecht *onderdeel* van [Grafrecht](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | Onderdeel van Grafrecht: Stap in de levenscyclus van het grafrecht (Groningen art. 19; VNG-model art. 18). | wet |
 | Akte van overlijden *verwijzing* | Verwijzing: beoordelen in het onderwerp burgerlijke stand. | wet |
@@ -59,11 +59,11 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 | Algemene wet bestuursrecht *verwijzing* | Verwijzing: de Awb is een generiek kader; ze wordt beoordeeld in het algemene onderwerp besluitvorming. | wet |
 | [Ambtenaar van de burgerlijke stand](../bedrijfsarchitectuur/rollen/ambtenaar-van-de-burgerlijke-stand.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | wet |
 | Andere termijn *specialisatie zonder pagina* van [Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | Specialisatie zonder pagina van Beschikking: door de burgemeester gestelde afwijkende termijn voor begraving of crematie (art. 17); gangbaar vervroegen of uitstellen van de uitvaart. | wet |
+| [Arts](../bedrijfsarchitectuur/actoren/arts.md) *Actor, goedgekeurd* | Actor die als behandelende arts ketenpartner is (meld- en overlegplicht, art. 7, 10a) en als forensisch arts gemeentelijke lijkschouwer (art. 4, 5). | wet |
 | As *onderdeel* van [Urn](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | Onderdeel van Urn: De inhoud van de urn (art. 58). | wet |
 | [Begraafplaats](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | wet |
 | Begraving *specialisatie zonder pagina* van [Uitvoeren lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | Specialisatie zonder pagina van Uitvoeren lijkbezorging: begraven op een begraafplaats, in een algemeen of particulier graf (art. 23). | wet |
 | [Behandelen vergunningaanvragen lijkbezorging](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/behandelen-vergunningaanvragen-lijkbezorging.md) *Bedrijfsproces, goedgekeurd* | Gedrag, *groepeert processen* (kern ja) | wet |
-| Behandelende arts *buiten scope* | Buiten scope: medische partij, alleen context (art. 3, 7). Voorleggen: gemeentelijk: nee. | wet |
 | [Beheerder van de begraafplaats](../bedrijfsarchitectuur/rollen/beheerder-van-de-begraafplaats.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | wet |
 | Beheersverordening begraafplaatsen *specialisatie zonder pagina* van [Regeling](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) | Specialisatie zonder pagina van Regeling: verordening van de gemeente over beheer en gebruik van haar begraafplaatsen (VNG; Groningen; VNG-model). | wet |
 | [Beheren begraafplaatsen](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-begraafplaatsen.md) *Bedrijfsproces, goedgekeurd* | Gedrag, *per keer doorlopen* (kern ja) | wet |
@@ -73,7 +73,7 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 | Belanghebbende *verwijzing* | Verwijzing: beoordelen in het algemene onderwerp besluitvorming. GGM-terugmelding 9 blijft open tot dat onderwerp het element beoordeelt. | wet |
 | Benoemen gemeentelijke lijkschouwer *geen element* | Geen element: een zelden voorkomende benoeming zonder aanwijsbare aanleiding of objecten; de taak staat bij de rol Gemeentelijke lijkschouwer en de functie Lijkbezorging. | wet |
 | [Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | wet; GGM: Beschikking |
-| Beschikking ter bezorging van het lijk *buiten scope* | Buiten scope: wilsbeschikking van de overledene (art. 19). Voorleggen: gemeentelijk: nee. | wet |
+| Beschikking ter bezorging van het lijk *buiten scope* | Buiten scope: wilsbeschikking van de overledene (art. 19). | wet |
 | [Beslisser](../bedrijfsarchitectuur/rollen/beslisser.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | wet |
 | [Besluit](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | wet; GGM: Besluit |
 | [Besmet lijk gemeld](../bedrijfsarchitectuur/gebeurtenissen/besmet-lijk-gemeld.md) *Gebeurtenis, goedgekeurd* | Gedrag, *toestandsverandering* (kern ja, 1/1) | wet |
@@ -96,8 +96,8 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 | [Exploitatie fysieke leefomgeving](../bedrijfsarchitectuur/bedrijfsfuncties/fysieke-leefomgeving/exploitatie-fysieke-leefomgeving.md) *Bedrijfsfunctie, goedgekeurd* | Gedrag, *gegroepeerd gedrag* (kern ja, 4/4) | wet |
 | [Exploiteren van begraafplaatsen](../bedrijfsarchitectuur/bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) *Bedrijfsfunctie, goedgekeurd* | Gedrag, *gegroepeerd gedrag* (kern ja, 4/4) | wet |
 | Gebruiker *geen element* | Geen element: de gebruiker van een algemeen graf heeft plichten, maar is niet aan gemeentelijk gedrag toegewezen (VNG-model art. 1 p, 21). | beleid |
-| Gedeputeerde staten *buiten scope* | Buiten scope: provinciaal orgaan, alleen context (art. 31, 42, 45). Voorleggen: gemeentelijk: nee. | wet |
-| Gemeenschappelijke regeling begraafplaats *geen element* | Geen element: de bronnen beschrijven alleen de mogelijkheid van een gemeenschappelijke regeling, geen bestaand verband met gedrag. Voorleggen: soort partij: nee. | wet |
+| Gedeputeerde staten *buiten scope* | Buiten scope: provinciaal orgaan, alleen context (art. 31, 42, 45). | wet |
+| Gemeenschappelijke regeling begraafplaats *geen element* | Geen element: de bronnen beschrijven alleen de mogelijkheid van een gemeenschappelijke regeling, geen bestaand verband met gedrag. | wet |
 | [Gemeente](../bedrijfsarchitectuur/actoren/gemeente.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | wet |
 | [Gemeentebegrafenis](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | wet; GGM: Gemeentebegrafenis |
 | Gemeentelijk crematorium *specialisatie zonder pagina* van [Crematorium](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md) | Specialisatie zonder pagina van Crematorium: crematorium van de gemeente (art. 51, 54, 56). | wet |
@@ -135,7 +135,7 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 | [Model-beheersverordening begraafplaatsen](../motivatie/beleidskaders/model-beheersverordening-begraafplaatsen.md) *Beleidskader, goedgekeurd* | Regeling als geheel, landelijk (kern ja, 0/1, ontbreekt: *in werking*) | beleid |
 | [Nabestaande](../bedrijfsarchitectuur/rollen/nabestaande.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | wet |
 | Nader onderzoek *specialisatie zonder pagina* van [Schouwen lijk](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md) | Specialisatie zonder pagina van Schouwen lijk: onderzoek naar de doodsoorzaak van een minderjarige (art. 10a). | wet |
-| Nieuwe vormen van lijkbezorging *buiten scope* | Buiten scope: nog niet herkenbaar als begrip (VNG standpunt). Voorleggen: herkenbaar: nee. | overig |
+| Nieuwe vormen van lijkbezorging *buiten scope* | Buiten scope: nog niet herkenbaar als begrip (VNG standpunt). | overig |
 | [Officier van justitie](../bedrijfsarchitectuur/actoren/officier-van-justitie.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | wet |
 | [Onderhoud van graven](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) *Dienst, goedgekeurd* | Gedrag, *aangeboden gedrag* (kern ja, 2/2) | wet |
 | [Onderhouden graf](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) *Bedrijfsproces, goedgekeurd* | Gedrag, *per keer doorlopen* (kern ja) | wet |
@@ -166,7 +166,7 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 | [Sluiten begraafplaats](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/sluiten-begraafplaats.md) *Bedrijfsproces, goedgekeurd* | Gedrag, *per keer doorlopen* (kern ja) | wet |
 | Sluiting van een begraafplaats *specialisatie zonder pagina* van [Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | Specialisatie zonder pagina van Beschikking: besluit van B&W tot sluiting of geslotenverklaring (art. 43, 44). | wet |
 | [Stellen andere termijn](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) *Bedrijfsproces, goedgekeurd* | Gedrag, *per keer doorlopen* (kern ja) | wet |
-| Stichting Grafzorg Nederland *buiten scope* | Buiten scope: alleen context (VNG-model, toelichting art. 17). Voorleggen: gemeentelijk: nee. | beleid |
+| Stichting Grafzorg Nederland *buiten scope* | Buiten scope: alleen context (VNG-model, toelichting art. 17). | beleid |
 | Termijn van lijkbezorging *buiten het model* | Buiten dit model (Constraint): Norm uit één artikel: niet eerder dan 36 uur en uiterlijk de zesde werkdag na overlijden (art. 16). | wet |
 | Termijn van uitgifte *eigenschap* van [Grafrecht](../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | Eigenschap of indeling van Grafrecht: Eigenschap van het grafrecht en het algemeen graf: looptijd waarvan het verstrijken vooraf wordt meegedeeld (art. 27a, 28 lid 2; Groningen art. 16). | wet |
 | Toestemming ingebruikneming bijzondere begraafplaats *specialisatie zonder pagina* van [Vergunning](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | Specialisatie zonder pagina van Vergunning: toestemming van B&W (art. 41). | wet |

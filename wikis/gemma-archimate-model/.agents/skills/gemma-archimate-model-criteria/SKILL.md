@@ -422,7 +422,7 @@ Stap 0–4 van boven naar beneden: de eerste passende regel beslist en levert he
 
 ## Scope
 
-- **Gemeentelijk perspectief.** Alleen wat de gemeente ziet, doet of beslist, of een partij waarmee zij structureel samenwerkt. Een ketenpartner (UWV, IND, COA, GGD …) krijgt ALLEEN een actorpagina bij een structurele relatie met de gemeente: opdrachtgever, mede-eigenaar (gemeenschappelijke regeling), prestatieafspraken of een wettelijke overlegplicht. Een partij die alleen als context of afbakening in de bron staat (behandelend arts, gedeputeerde staten), krijgt *gemeentelijk*: nee. De interne processen en rollen van een ketenpartner blijven altijd buiten scope. Precedent: GGD (gemeente is mede-eigenaar en opdrachtgever).
+- **Gemeentelijk perspectief.** Alleen wat de gemeente ziet, doet of beslist, of een partij waarmee zij structureel samenwerkt. Een ketenpartner (UWV, IND, COA, GGD …) krijgt ALLEEN een actorpagina bij een structurele relatie met de gemeente: opdrachtgever, mede-eigenaar (gemeenschappelijke regeling), prestatieafspraken of een wettelijke overlegplicht. Een partij die alleen als context of afbakening in de bron staat, of die alleen per geval en op verzoek beslist (gedeputeerde staten als beroepsinstantie), krijgt *gemeentelijk*: nee. De interne processen en rollen van een ketenpartner blijven altijd buiten scope. Precedenten: GGD (gemeente is mede-eigenaar en opdrachtgever); Officier van justitie en Arts als behandelende arts (wettelijke meld- en overlegplicht met de gemeentelijke lijkschouwer, ketenpartner in Bezorgen lijken).
 - **Een begrip met uitkomst "geen element"** wordt niet weggelaten: het blijft in de begrippenlijst van het onderwerp staan, met de uitkomst en de reden.
 
 ## Anti-patronen

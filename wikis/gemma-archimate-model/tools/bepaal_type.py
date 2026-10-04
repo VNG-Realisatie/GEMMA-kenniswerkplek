@@ -69,8 +69,8 @@ KENMERKEN: list[Kenmerk] = [
     Kenmerk("gemeentelijk", "gemeentelijk", "Poort",
             "Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij "
             "(opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)?",
-            "de gemeente voert uit, beslist, stelt vast, of is structureel partner (GGD)",
-            "alleen context, of de interne zaak van een ketenpartner (behandelend arts)",
+            "de gemeente voert uit, beslist, stelt vast, of is structureel partner (GGD; behandelende arts via de overlegplicht met de lijkschouwer)",
+            "alleen context (gedeputeerde staten als beroepsinstantie), of de interne zaak van een ketenpartner (de medische behandeling door de arts)",
             "GEMMA (gemeentelijk perspectief)"),
     Kenmerk("buiten_dit_model", "buiten dit model", "Poort",
             "Is het een doel, waarde, drijfveer, principe, losse norm of eis, vermogen of thema, en geen beleidskader? "
