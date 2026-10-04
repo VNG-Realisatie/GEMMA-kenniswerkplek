@@ -256,9 +256,9 @@ def indelingen(w: Wiki, van: str, bid: str, d: dict) -> list[str]:
     bediend = w.inkomend_van(bid, "bediening")
     if bediend and u.get("paginatype") == "bedrijfsproces":
         regels.append(f"- **Functie-indeling naar domein, bediend door**: {_links(w, van, [b for b in bediend if w.paginatype(b) == 'bedrijfsfunctie'])}.")
-    if u.get("paginatype") == "bedrijfsfunctie":
+    if u.get("paginatype") in ("bedrijfsfunctie", "product", "dienst"):
         boven = [v for v in w.inkomend_van(bid, "aggregatie") if w.paginatype(v) == "bedrijfsfunctie"]
-        onder = [n for n in w.uitgaand(bid, "aggregatie") if w.paginatype(n) == "bedrijfsfunctie"]
+        onder = [n for n in w.uitgaand(bid, "aggregatie") if w.paginatype(n) in ("bedrijfsfunctie", "product", "dienst")]
         if boven:
             regels.append(f"- **Functie-indeling naar domein, onderdeel van**: {_links(w, van, boven)}.")
         if onder:
@@ -572,9 +572,11 @@ def overzicht(w: Wiki, oid: str) -> str:
     r += _sectie("Doelgroepen", doelgroepen + [""] if doelgroepen else [])
 
     aanbod = [b for b in eigen if w.paginatype(b) in ("product", "dienst")]
-    rijen = [[w.link(van, b), w.paginatype(b), w.begrippen[b].get("domein", "—"), w.begrippen[b].get("afnemer", "—"),
+    rijen = [[w.link(van, b), w.paginatype(b), w.begrippen[b].get("domein", "—"),
+              _links(w, van, [x for x in w.inkomend_van(b, "aggregatie") if w.paginatype(x) == "bedrijfsfunctie"]) or "—",
+              w.begrippen[b].get("afnemer", "—"),
               _links(w, van, [x for x in w.inkomend_van(b, "realisatie") if w.paginatype(x) == "bedrijfsproces"]) or "—"] for b in aanbod]
-    r += _sectie("Producten en diensten", _tabel(["Element", "Type", "Domein", "Afnemer", "Geleverd door"], rijen) if rijen else [])
+    r += _sectie("Producten en diensten", _tabel(["Element", "Type", "Domein", "Functie", "Afnemer", "Geleverd door"], rijen) if rijen else [])
 
     kaders = [[w.link(van, b), w.begrippen[b].get("regelgever", "—"),
                _links(w, van, w.uitgaand(b, "associatie (gericht)") + w.uitgaand(b, "associatie")) or "—"] for b in van_type("beleidskader")]

@@ -734,10 +734,10 @@ NAREGELS = [
     ("Aanvulling", "*geautomatiseerd verwerkt*", "annotatie `data_object: ja`"),
     ("Signaal (controle)", "Dienst zonder realiserend proces of functie met pagina; Gebeurtenis zonder gestart gedrag met pagina",
      "waarschuwing: proces als kandidaat voorleggen"),
-    ("Signaal (controle)", "Functie onder domeinniveau zonder bovenliggende functie, met meer bovenliggende functies, met "
-     "een ander domein of buiten de GEMMA-functieketen",
-     "waarschuwing: de bovenliggende functie wordt een element met een aggregatie naar de functie; alleen een functie "
-     "met GEMMA type *Bedrijfsfunctie domein* hangt via `domein` aan de domeingroepering"),
+    ("Signaal (controle)", "Functie onder domeinniveau, product of dienst zonder (bovenliggende) functie, met meer "
+     "(bovenliggende) functies, met een ander domein, of een functie buiten de GEMMA-functieketen",
+     "waarschuwing: de (bovenliggende) functie wordt een element met een aggregatie naar de functie, het product of de "
+     "dienst; alleen een functie met GEMMA type *Bedrijfsfunctie domein* hangt via `domein` aan de domeingroepering"),
 ]
 
 

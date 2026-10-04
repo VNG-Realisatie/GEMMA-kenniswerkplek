@@ -209,7 +209,7 @@ Bij gebeurtenis, rol en dienst geeft *generiek* een specialisatie van een GEMMA-
 #### Controles
 
 - Elk element staat in zijn verplichte indeling. Meer ouders geeft een signaal, behalve de twee ouders van een deelproces.
-- Een functie onder domeinniveau wordt geaggregeerd door één bovenliggende GEMMA-functie in hetzelfde domein, volgens de GEMMA-functieketen; een functie op domeinniveau hangt via `domein` aan de domeingroepering.
+- Een functie onder domeinniveau wordt geaggregeerd door één bovenliggende GEMMA-functie in hetzelfde domein, volgens de GEMMA-functieketen; een functie op domeinniveau hangt via `domein` aan de domeingroepering. Een product of dienst wordt geaggregeerd door één functie in hetzelfde domein.
 - Specialisatie en bediening naar GEMMA lopen alleen via een exacte match.
 - *leidt tot gebeurtenis* vraagt een triggering.
 - `via` wijst naar een specialisatie van het doel.

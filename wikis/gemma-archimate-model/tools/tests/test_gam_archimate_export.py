@@ -374,3 +374,19 @@ def test_functie_zonder_bovenliggende_functie_heeft_geen_plaats(tmp_path):
     uit, root = _export_indeling(tmp_path, begrippen)
     assert not _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "exploiteren"))
     assert any("Exploiteren van begraafplaatsen: geen plaats in de Functie-indeling naar domein" in o for o in uit.overgeslagen)
+
+
+def test_dienst_hangt_onder_haar_functie_en_niet_onder_de_domeingroepering(tmp_path):
+    begrippen = _indeling_begrippen()
+    dienst = _begrip("Graf aanvragen", "business-service", status="review", domein="Fysieke leefomgeving", afnemer="extern")
+    dienst["afgeleid"]["uitkomst"]["paginatype"] = "dienst"
+    begrippen["graf-aanvragen"] = dienst
+    zonder = _begrip("Losse dienst", "business-service", status="review", domein="Fysieke leefomgeving", afnemer="extern")
+    zonder["afgeleid"]["uitkomst"]["paginatype"] = "dienst"
+    begrippen["losse-dienst"] = zonder
+    begrippen["exploiteren"]["relaties"] = [{"soort": "aggregatie", "naar": "graf-aanvragen", "grondslag": "bron", "bronnen": ["2026-bron"]}]
+    uit, root = _export_indeling(tmp_path, begrippen)
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", ae.vast_id("element", "exploiteren"), ae.vast_id("element", "graf-aanvragen"))
+    assert _props(agg)["wiki-gemma-model indeling"] == "Functie-indeling naar domein"
+    assert not _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "graf-aanvragen"))
+    assert any("Losse dienst: geen plaats in de Functie-indeling naar domein" in o for o in uit.overgeslagen)

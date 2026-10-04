@@ -13,8 +13,8 @@ Het bestand is bedoeld om in Archi te bekijken (File › Open) en om in het GEMM
 
 Indelingen (analyses/indelingen.md): een element krijgt de eigenschappen procesniveau, objectniveau en zijn indelingsvelden;
 een aggregatie tussen processen heeft `indeling` en `procesniveau` ("taak → bedrijfsproces"), een aggregatie tussen
-functies `indeling`; een functie hangt alleen op domeinniveau (GEMMA type *Bedrijfsfunctie domein*) aan de domeingroepering,
-daaronder aan haar bovenliggende functie; een proces zonder GEMMA-match
+functies, en van een functie naar een product of dienst, `indeling`; een functie hangt alleen op domeinniveau (GEMMA type
+*Bedrijfsfunctie domein*) aan de domeingroepering, daaronder aan haar bovenliggende functie; een product of dienst aan een functie; een proces zonder GEMMA-match
 staat in de map `Procesindeling naar taak`; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
 letterlijk meegaat); beleidsdomein en domein worden een aggregatie vanuit de bestaande GEMMA-groepering, of vanuit een
 nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type `Groep`).
@@ -375,7 +375,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == doel_u.get("paginatype") == "bedrijfsproces":
                 paren += [(eig("indeling"), "Procesindeling naar taak"),
                           (eig("procesniveau"), f"{bron_u.get('procesniveau')} → {doel_u.get('procesniveau')}")]
-            if rtype == "aggregation-relationship" and bron_u.get("paginatype") == doel_u.get("paginatype") == "bedrijfsfunctie":
+            if rtype == "aggregation-relationship" and bron_u.get("paginatype") == "bedrijfsfunctie" \
+                    and doel_u.get("paginatype") in ("bedrijfsfunctie", "product", "dienst"):
                 paren.append((eig("indeling"), "Functie-indeling naar domein"))
             if r.get("via"):
                 paren.append((eig("specialisatie"), (begrippen.get(r["via"]) or {}).get("begrip", r["via"])))
@@ -461,13 +462,14 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
                 aggregatie(nieuwe[beleidsdomein], element, "Beleidsdomeinindeling", bid)
             else:
                 aggregatie(groep["id"], element, "Beleidsdomeinindeling", bid, groep)
-        if paginatype == "bedrijfsfunctie" and not signalen.is_domeinfunctie(data, gemma_data):
-            # onder domeinniveau: de aggregatie vanaf de bovenliggende functie (een relatie in de beoordeling)
+        if paginatype in DOMEIN_TYPEN and not signalen.is_domeinfunctie(data, gemma_data):
+            # een product, dienst of functie onder domeinniveau: de aggregatie vanaf de (bovenliggende) functie, een
+            # relatie in de beoordeling
             if not any(r["soort"] == "aggregatie" and r["naar"] == bid and ids.get(van)
                        and gekozen[van]["afgeleid"]["uitkomst"].get("paginatype") == "bedrijfsfunctie"
                        for van in gekozen for r in gekozen[van].get("relaties", [])):
                 uit.overgeslagen.append(f"{data['begrip']}: geen plaats in de Functie-indeling naar domein (geen "
-                                        "bovenliggende functie in deze export)")
+                                        "(bovenliggende) functie in deze export)")
         elif paginatype in DOMEIN_TYPEN and data.get("domein"):
             groep = _vind_groepering(gemma_data, None, data["domein"], "Domeinen")
             if groep is None:

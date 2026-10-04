@@ -133,9 +133,20 @@ def is_domeinfunctie(data: dict, gemma_data: dict) -> bool:
 def functie_indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[tuple[str, dict]],
                      gemma_data: dict) -> list[str]:
     """Signalen bij de Functie-indeling naar domein: elke functie onder domeinniveau wordt geaggregeerd door één
-    bovenliggende functie (een element), in hetzelfde domein en volgens de GEMMA-functieketen (besluit 2026-10-04)."""
+    bovenliggende functie (een element), in hetzelfde domein en volgens de GEMMA-functieketen; een product of dienst
+    door één functie in hetzelfde domein (besluiten 2026-10-04)."""
     w = []
     functies = {b for b, u in elementen.items() if u["paginatype"] == "bedrijfsfunctie"}
+    for bid in sorted(b for b, u in elementen.items() if u["paginatype"] in ("product", "dienst")):
+        boven = sorted(van for van, r in relaties if r["soort"] == "aggregatie" and r["naar"] == bid and van in functies)
+        if not boven:
+            w.append(f"{bid}: hangt onder geen functie: aggregatie vanaf een functie ontbreekt (Functie-indeling naar domein)")
+        if len(boven) > 1:
+            w.append(f"{bid}: meer functies ({', '.join(boven)}): kies die in het eigen domein")
+        for ouder in boven:
+            if alle[ouder].get("domein") != alle[bid].get("domein"):
+                w.append(f"{bid}: domein '{alle[bid].get('domein')}' wijkt af van dat van de functie {ouder} "
+                         f"('{alle[ouder].get('domein')}')")
     gemma_id = {b: (alle[b].get("gemma") or {}).get("id") for b in functies}
     gemma_agg = {(r["bron"], r["doel"]) for r in gemma_data.get("relaties", {}).values()
                  if r["type"] == "aggregation-relationship"}

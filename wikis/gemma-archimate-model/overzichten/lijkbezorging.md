@@ -103,11 +103,11 @@ Processen over meer organisaties.
 
 ## Producten en diensten
 
-| Element | Type | Domein | Afnemer | Geleverd door |
-|---|---|---|---|---|
-| [Graf aanvragen](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf-aanvragen.md) | dienst | Fysieke leefomgeving | extern | [Verlenen grafrecht](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) |
-| [Onderhoud van graven](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) | dienst | Fysieke leefomgeving | extern | [Onderhouden graf](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) |
-| [Uitvaart vervroegen of uitstellen](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvaart-vervroegen-of-uitstellen.md) | dienst | Publieksdiensten | extern | [Stellen andere termijn](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) |
+| Element | Type | Domein | Functie | Afnemer | Geleverd door |
+|---|---|---|---|---|---|
+| [Graf aanvragen](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf-aanvragen.md) | dienst | Fysieke leefomgeving | — | extern | [Verlenen grafrecht](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) |
+| [Onderhoud van graven](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md) | dienst | Fysieke leefomgeving | — | extern | [Onderhouden graf](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) |
+| [Uitvaart vervroegen of uitstellen](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvaart-vervroegen-of-uitstellen.md) | dienst | Publieksdiensten | — | extern | [Stellen andere termijn](../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) |
 
 ## Beleidskaders
 

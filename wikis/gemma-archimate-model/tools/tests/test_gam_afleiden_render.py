@@ -419,6 +419,15 @@ def test_signalen_voor_de_functie_indeling():
     assert "elders: domein 'Publieksdiensten' wijkt af" in tekst
     assert "elders: in GEMMA aggregeert soort deze functie niet" in tekst
     assert "eigen: de bovenliggende functie nieuw heeft geen GEMMA-match" in tekst
+    # een dienst hangt onder één functie in hetzelfde domein
+    elementen.update({"dienst": {"paginatype": "dienst", "soort": "element"}, "los": {"paginatype": "dienst", "soort": "element"},
+                      "verkeerd": {"paginatype": "product", "soort": "element"}})
+    alle.update({"dienst": {"domein": fl}, "los": {"domein": fl}, "verkeerd": {"domein": "Publieksdiensten"}})
+    alle["onderwerp"]["relaties"] = [agg("dienst"), agg("verkeerd")]
+    relaties = [(van, r) for van in elementen for r in alle[van].get("relaties", [])]
+    tekst = "\n".join(signalen.functie_indeling(alle, elementen, relaties, gemma_data))
+    assert "los: hangt onder geen functie" in tekst and "dienst:" not in tekst
+    assert "verkeerd: domein 'Publieksdiensten' wijkt af van dat van de functie onderwerp" in tekst
     # domeinniveau hangt aan de groepering; een functie onder een GEMMA-functie die GEMMA volgt geeft geen signaal
     assert not any(tekst_regel.startswith(("domein:", "soort:", "onderwerp:", "nieuw:")) for tekst_regel in tekst.splitlines())
 
