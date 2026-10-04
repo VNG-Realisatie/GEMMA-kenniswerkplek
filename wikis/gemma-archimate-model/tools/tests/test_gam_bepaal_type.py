@@ -25,15 +25,17 @@ def beoordeling(ja: set[str], **extra) -> dict:
 SCOPE = {"herkenbaar", "gemeentelijk"}
 BASIS = SCOPE | {"eigen_identiteit", "betekenis_in_onderwerp", "zelfstandige_specialisatie"}
 BO = BASIS | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}
-ACTOR = BASIS | {"handelende_partij", "los_van_verantwoordelijkheid", "vervult_een_rol"}
+ACTOR = BASIS | {"handelende_partij", "los_van_verantwoordelijkheid", "vervult_een_rol", "soort_partij"}
 ROL = BASIS | {"hoedanigheid", "voert_gedrag_uit"}
-PROCES = BASIS | {"gedrag", "per_keer_doorlopen", "toegewezen_partij", "gebruikt_objecten", "aanleiding",
-                  "benoembaar_resultaat", "komt_herhaald_voor", "eigen_normering"}
-FUNCTIE = BASIS | {"gedrag", "gegroepeerd_gedrag", "toegewezen_partij", "gebruikt_objecten", "stabiel_over_tijd"}
+PROCES = BASIS | {"gedrag", "per_keer_doorlopen", "toegewezen_partij", "aanleiding", "benoembaar_resultaat",
+                  "omvat_levensloop"}
+FUNCTIE = BASIS | {"gedrag", "gegroepeerd_gedrag", "bedient_gedrag", "toegewezen_partij", "gebruikt_objecten",
+                   "stabiel_over_tijd", "in_functie_indeling"}
 DIENST = BASIS | {"gedrag", "aangeboden_gedrag", "gerealiseerd_door", "afnemer", "benoembaar_resultaat"}
 GEBEURTENIS = BASIS | {"gedrag", "toestandsverandering", "leidt_tot_gedrag", "komt_herhaald_voor"}
-PRODUCT = BASIS | {"aanbod_als_geheel", "omvat_diensten_en_afspraken", "afnemer", "benoembaar_resultaat"}
-SAMENWERKING = BASIS | {"samenwerkingsverband", "voert_gedrag_uit"}
+PRODUCT = BASIS | {"aanbod_als_geheel", "omvat_diensten_en_afspraken", "afnemer", "benoembaar_resultaat",
+                   "zelfstandig_aanbod"}
+SAMENWERKING = BASIS | {"samenwerkingsverband", "voert_gedrag_uit", "soort_partij"}
 KANAAL = BASIS | {"toegangspunt", "ontsluit_een_dienst"}
 BELEIDSKADER = BASIS | {"regeling_als_geheel", "landelijk", "in_werking", "is_grondslag_voor"}
 
@@ -96,7 +98,7 @@ def test_consistentie_kenmerken_passen_bij_de_aard():
 
 
 def test_drempel_kernrelatie_moet_ja():
-    for ja, kern in [(BO, "wordt_bewerkt"), (PROCES, "toegewezen_partij"), (FUNCTIE, "toegewezen_partij"),
+    for ja, kern in [(BO, "wordt_bewerkt"), (PROCES, "toegewezen_partij"), (FUNCTIE, "bedient_gedrag"),
                      (DIENST, "gerealiseerd_door"), (GEBEURTENIS, "leidt_tot_gedrag"), (ACTOR, "vervult_een_rol"),
                      (ROL, "voert_gedrag_uit"), (PRODUCT, "omvat_diensten_en_afspraken"),
                      (SAMENWERKING, "voert_gedrag_uit"), (KANAAL, "ontsluit_een_dienst"), (BELEIDSKADER, "is_grondslag_voor")]:
@@ -111,12 +113,20 @@ def test_drempel_hoogstens_een_overig_nee():
     assert bt.voorgestelde_status(u) == "review"
     u = bt.evalueer(beoordeling(BO - {"levenscyclus", "onderscheidbare_exemplaren"}))
     assert (u.soort, u.regel) == ("geen_element", bt.EERSTE_DREMPELREGEL + 1)
-    assert bt.evalueer(beoordeling(PROCES - {"komt_herhaald_voor"})).paginatype == "bedrijfsproces"
-    assert bt.evalueer(beoordeling(PROCES - {"komt_herhaald_voor", "eigen_normering"})).soort == "geen_element"
+    assert bt.evalueer(beoordeling(PROCES - {"aanleiding"}, kernobject="graf")).paginatype == "bedrijfsproces"
+    assert bt.evalueer(beoordeling(PROCES - {"aanleiding", "benoembaar_resultaat"})).soort == "geen_element"
     # Dienst zonder toegewezen partij (besluit 2026-10-01); product zonder exemplaren
     assert bt.evalueer(beoordeling(DIENST)).paginatype == "dienst"
-    assert "toegewezen_partij" not in bt.TYPE[("dienst", "business-service")].drempel
-    assert "onderscheidbare_exemplaren" not in bt.TYPE[("product", "product")].drempel
+    assert "toegewezen_partij" not in bt.typedef("dienst", "business-service").drempel
+    assert "onderscheidbare_exemplaren" not in bt.typedef("product", "product").drempel
+
+
+def test_eis_naast_de_kernrelatie():
+    """Actor, bedrijfssamenwerking en product hebben een eis: een soort partij, en een zelfstandig aanbod."""
+    for ja, eis in [(ACTOR, "soort_partij"), (SAMENWERKING, "soort_partij"), (PRODUCT, "zelfstandig_aanbod")]:
+        u = bt.evalueer(beoordeling(ja - {eis}))
+        assert (u.soort, u.regel, u.voorleggen) == ("geen_element", bt.EERSTE_DREMPELREGEL, True), eis
+        assert f"{bt.NAAM[eis]}: nee" in u.redenen
 
 
 def test_specialisatieniveau():
@@ -136,7 +146,7 @@ def test_actor_rol_en_samenwerking():
     assert bt.evalueer(beoordeling(ROL | {"los_van_verantwoordelijkheid"})).soort == "conflict"
     # GGD: organisatie en samenwerkingsverband met eigen rechtspersoon → actor
     ggd = bt.evalueer(beoordeling(BASIS | {"handelende_partij", "samenwerkingsverband", "eigen_rechtspersoon",
-                                           "vervult_een_rol"}))
+                                           "vervult_een_rol", "soort_partij"}))
     assert ggd.paginatype == "actor"
     # Zorg- en Veiligheidshuis: zonder eigen rechtspersoon → bedrijfssamenwerking
     assert bt.evalueer(beoordeling(SAMENWERKING)).paginatype == "bedrijfssamenwerking"
@@ -171,8 +181,6 @@ def test_aanvullingen():
     u = bt.evalueer(beoordeling(ACTOR | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}))
     assert u.tegenhanger == "bedrijfsobject"
     assert bt.evalueer(beoordeling(ACTOR)).tegenhanger is None
-    assert bt.evalueer(beoordeling(PROCES)).procesniveau == "bedrijfsproces"
-    assert bt.evalueer(beoordeling(PROCES | {"bijdrage_aan_groter_proces"})).procesniveau == "deelproces"
     data_object = bt.evalueer(beoordeling(BO | {"geautomatiseerd_verwerkt"}))
     assert data_object.data_object == "ja"
     assert bt.voorgestelde_status(data_object, ggm_match="partieel") == "kandidaat"
@@ -202,7 +210,7 @@ def test_onvolledige_beoordeling_wordt_geweigerd():
 def test_elk_kenmerk_telt_ergens():
     gebruikt = set()
     for t in bt.TYPEN:
-        gebruikt |= set(t.bep) | set(t.drempel) | set(t.aanvulling) | ({t.kern} if t.kern else set())
+        gebruikt |= set(t.bep) | set(t.drempel) | set(t.aanvulling) | set(t.eis) | ({t.kern} if t.kern else set())
     gebruikt |= {k.sleutel for k in bt.KENMERKEN if k.groep in ("Poort", "Specialisatie")}
     assert set(bt.SLEUTELS) - gebruikt == set()
 
@@ -219,3 +227,109 @@ def test_documentatie_is_gegenereerd():
     assert bt.markdown("skill") in skill, "draai: uv run python tools/bepaal_type.py markdown --schrijf"
     assert bt.markdown("wiki") in wiki, "draai: uv run python tools/bepaal_type.py markdown --schrijf"
     assert "### Stappentabel" not in wiki
+
+
+def test_stap_7_procesniveau():
+    keten = bt.evalueer(beoordeling(PROCES | {"meer_organisaties"}, kernobject="lijk"))
+    assert (keten.procesniveau, keten.voorleggen) == ("ketenproces", False)
+    proces = bt.evalueer(beoordeling(PROCES, kernobject="grafrecht"))
+    assert (proces.procesniveau, proces.voorleggen, proces.regel) == ("bedrijfsproces", False, bt.EERSTE_INDELINGSREGEL + 1)
+    zonder = bt.evalueer(beoordeling(PROCES))
+    assert zonder.voorleggen and any("kernobject" in r for r in zonder.redenen)
+    deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces"}
+    for criterium in ("eigen_besluit", "eigen_normering", "levert_aanbod"):
+        u = bt.evalueer(beoordeling(deel | {criterium}, kernobject="grafrecht"))
+        assert (u.procesniveau, u.voorleggen) == ("deelproces", False), criterium
+    # een deel van een groter proces zonder eigen besluit, normering of aanbod is een processtap: geen pagina
+    stap = bt.evalueer(beoordeling(deel, genoemd_begrip="Verlenen grafrecht"))
+    assert (stap.soort, stap.genoemd_begrip, stap.voorleggen) == ("onderdeel", "Verlenen grafrecht", False)
+    assert bt.evalueer(beoordeling(deel)).voorleggen  # zonder genoemd begrip
+    # geen levensloop en geen bijdrage: het niveau is niet te bepalen
+    onduidelijk = bt.evalueer(beoordeling(PROCES - {"omvat_levensloop"}))
+    assert onduidelijk.voorleggen and onduidelijk.procesniveau is None
+    # meer organisaties zonder levensloop wordt voorgelegd
+    assert bt.evalueer(beoordeling(deel | {"eigen_besluit", "meer_organisaties"}, kernobject="graf")).voorleggen
+
+
+def test_stap_7_procescluster():
+    cluster = BASIS | {"gedrag", "groepeert_processen", "omvat_processen"}
+    taak = bt.evalueer(beoordeling(cluster))
+    assert (taak.paginatype, taak.procesniveau) == ("bedrijfsproces", "taak")
+    soort_werk = bt.evalueer(beoordeling(cluster, gemma_generiek={"id": "id-1", "onderbouwing": "GEMMA-proces."}))
+    assert soort_werk.procesniveau == "cluster naar soort werk"
+    u = bt.evalueer(beoordeling(cluster - {"omvat_processen"}))
+    assert (u.soort, u.regel) == ("geen_element", bt.EERSTE_DREMPELREGEL)
+    # een cluster en een proces zijn één soort gedrag per begrip
+    assert bt.evalueer(beoordeling(cluster | {"per_keer_doorlopen"})).soort == "conflict"
+
+
+def test_stap_7_objectniveau_per_begrip():
+    assert bt.evalueer(beoordeling(BO | {"generiek"})).objectniveau == "generiek"
+    invoer = bt.evalueer(beoordeling(BO | {"invoer_van_een_ander"}, genoemd_begrip="Verlenen verlof"))
+    assert (invoer.soort, invoer.genoemd_begrip) == ("onderdeel", "Verlenen verlof")
+    for soort in (GEBEURTENIS, ROL, DIENST):
+        assert bt.evalueer(beoordeling(soort | {"generiek"})).generiek
+    assert not bt.evalueer(beoordeling(GEBEURTENIS)).generiek
+
+
+def _bo_uitkomsten(**kenmerken):
+    """Beoordelingen en uitkomsten voor `indeling`: elk argument is `id=(kenmerken, extra)`."""
+    beoordelingen = {i: beoordeling(ja, **extra) for i, (ja, extra) in kenmerken.items()}
+    return beoordelingen, {i: bt.asdict(bt.evalueer(b)) for i, b in beoordelingen.items()}
+
+
+def test_indeling_kernobject_subobject_onderdeel():
+    beoordelingen, uitkomsten = _bo_uitkomsten(
+        grafrecht=(BO, {}),
+        beheren=(PROCES, {"kernobject": "grafrecht"}),
+        verlenen=(PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces", "eigen_besluit"}, {"kernobject": "bedekking"}),
+        bedekking=(BO | {"deel_van_object"}, {}),
+        stoep=(BO | {"deel_van_object"}, {"genoemd_begrip": "Graf"}),
+        losse=(BO, {}),
+        besluit=(BO | {"generiek"}, {}),
+    )
+    assert bt.indeling(beoordelingen, uitkomsten) == []
+    assert uitkomsten["grafrecht"]["objectniveau"] == "kernobject"
+    assert uitkomsten["bedekking"]["objectniveau"] == "subobject"
+    assert (uitkomsten["stoep"]["soort"], uitkomsten["stoep"]["genoemd_begrip"]) == ("onderdeel", "Graf")
+    assert uitkomsten["besluit"]["objectniveau"] == "generiek"
+    assert uitkomsten["losse"]["voorleggen"] and any("levensloop" in r for r in uitkomsten["losse"]["redenen"])
+
+
+def test_indeling_per_kernobject_een_proces():
+    beoordelingen, uitkomsten = _bo_uitkomsten(
+        graf=(BO, {}),
+        beheren=(PROCES, {"kernobject": "graf"}),
+        ruimen=(PROCES, {"kernobject": "graf"}),
+        verdwaald=(PROCES, {"kernobject": "bestaat-niet"}),
+    )
+    fouten = bt.indeling(beoordelingen, uitkomsten)
+    assert any("al het proces" in f for f in fouten)
+    assert any("bestaat-niet" in f and "geen bedrijfsobject" in f for f in fouten)
+
+
+def test_indelingsvelden_zijn_verplicht_en_beperkt():
+    product = bt.asdict(bt.evalueer(beoordeling(PRODUCT)))
+    fouten = bt.controleer_indelingsvelden({}, product)
+    assert any("domein" in f for f in fouten) and any("afnemer" in f for f in fouten)
+    assert bt.controleer_indelingsvelden({"domein": "Publieksdiensten", "afnemer": "extern"}, product) == []
+    assert bt.controleer_indelingsvelden({"domein": "Verkeerd", "afnemer": "extern"}, product)
+    taak = bt.asdict(bt.evalueer(beoordeling(BASIS | {"gedrag", "groepeert_processen", "omvat_processen"})))
+    assert bt.controleer_indelingsvelden({}, taak) == []  # een taak heeft geen afnemer
+    proces = bt.asdict(bt.evalueer(beoordeling(PROCES, kernobject="graf")))
+    assert any("afnemer" in f for f in bt.controleer_indelingsvelden({}, proces))
+    assert bt.controleer_indelingsvelden({"afnemer": "intern"}, proces) == []
+
+
+def test_elk_type_met_pagina_is_compleet():
+    """Elk type met een pagina heeft een typebepalend kenmerk, een kernrelatie, een regel voor een eigen pagina en
+    een plaats in de indelingen."""
+    for t in bt.TYPEN:
+        if t.laag != "pagina":
+            continue
+        assert t.bep, t.naam
+        assert t.kern, t.naam
+        assert t.paginatype in bt.INDELING_PER_TYPE, t.naam
+        assert "zelfstandige_specialisatie" in bt.SLEUTELS
+    paginatypen = {t.paginatype for t in bt.TYPEN if t.laag == "pagina"}
+    assert paginatypen <= set(bt.INDELING_PER_TYPE)

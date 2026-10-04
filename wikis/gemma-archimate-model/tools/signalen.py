@@ -73,6 +73,57 @@ def per_begrip(bid: str, data: dict, uitkomst: dict, onderwerpnamen: list[str], 
     return w
 
 
+STRUCTUREEL = ("voorzitter", "lid van", "deel van", "onderdeel", "omvat", "bevat", "bestaat uit", "maakt deel uit")
+
+
+def indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[tuple[str, dict]]) -> list[str]:
+    """Signalen bij stap 7 (indeling): de plaats in de procesindeling naar taak, afwijkingen van het kennismodel."""
+    w = []
+    niveau = {b: u.get("procesniveau") for b, u in elementen.items() if u["paginatype"] == "bedrijfsproces"}
+    ouders: dict[str, list[str]] = {}
+    for van, r in relaties:
+        if r["soort"] == "aggregatie" and r["naar"] in elementen and van in elementen:
+            ouders.setdefault(r["naar"], []).append(van)
+    for bid, n in sorted(niveau.items()):
+        boven = [o for o in ouders.get(bid, []) if o in niveau]
+        if n in ("bedrijfsproces", "ketenproces") and not any(niveau[o] in ("taak", "cluster naar soort werk") for o in boven):
+            w.append(f"{bid}: hangt onder geen taak: aggregatie vanaf een taak ontbreekt (procesindeling naar taak)")
+        if n == "deelproces" and not any(niveau[o] in ("bedrijfsproces", "ketenproces") for o in boven):
+            w.append(f"{bid}: deelproces hangt onder geen bedrijfs- of ketenproces (procesindeling naar taak)")
+        if len(boven) > 2:
+            w.append(f"{bid}: meer dan twee ouders in de procesindelingen: {', '.join(sorted(boven))}")
+        if n == "deelproces" and any(r["soort"] == "realisatie" and (elementen.get(r["naar"]) or {}).get("paginatype") == "dienst"
+                                     for van, r in relaties if van == bid):
+            w.append(f"{bid}: een deelproces levert een dienst; het kennismodel laat een deelproces een deelservice "
+                     "leveren (regel 398): afwijking, voorstel aan het GEMMA-team")
+        if n == "ketenproces":
+            eigen = set(alle[bid].get("onderwerpen", []))
+            for deel in boven_van(bid, relaties, niveau, "deelproces"):
+                if not eigen & set(alle[deel].get("onderwerpen", [])):
+                    w.append(f"{bid}: ketenproces met deelproces '{deel}' uit een andere taak: afwijking van het "
+                             "kennismodel (regel 590)")
+    for bid, u in sorted(elementen.items()):
+        if u["paginatype"] == "beleidskader" and not any(
+                {(elementen.get(van) or {}).get("paginatype"), (elementen.get(r["naar"]) or {}).get("paginatype")} >= {"product", "beleidskader"}
+                and bid in (van, r["naar"]) for van, r in relaties):
+            w.append(f"{bid}: geen product heeft dit beleidskader als grondslag; bij voorkeur hangt het aan een product "
+                     "(kennismodel regel 595), aan een proces of dienst alleen tijdelijk")
+        if u.get("generiek") and not alle[bid].get("gemma_generiek"):
+            w.append(f"{bid}: generiek, maar geen `gemma_generiek`: specialisatie van een GEMMA-element of voorstel aan GEMMA")
+        if u["paginatype"] == "actor":
+            for r in alle[bid].get("relaties", []):
+                doel = elementen.get(r["naar"])
+                if doel and doel["paginatype"] == "actor" and r["soort"].startswith("associatie") \
+                        and not any(x in (r.get("naam") or "").lower() for x in STRUCTUREEL):
+                    w.append(f"{bid}: relatie '{r.get('naam')}' tussen actoren is geen structuur (deel van, lid van, "
+                             "voorzitter van): een handeling loopt via rollen en processen of een gebeurtenis")
+    return w
+
+
+def boven_van(bid: str, relaties: list[tuple[str, dict]], niveau: dict[str, str | None], welk: str) -> list[str]:
+    return [r["naar"] for van, r in relaties if van == bid and r["soort"] == "aggregatie" and niveau.get(r["naar"]) == welk]
+
+
 def over_begrippen(alle: dict[str, dict], uitkomsten: dict[str, dict | None]) -> list[str]:
     w = []
     elementen = {b: u for b, u in uitkomsten.items() if u and u["soort"] == "element"}
@@ -82,6 +133,7 @@ def over_begrippen(alle: dict[str, dict], uitkomsten: dict[str, dict | None]) ->
             w.append(f"{bid}: geen proces of functie realiseert deze dienst: proces als kandidaat voorleggen (beslistabel)")
         if u["paginatype"] == "gebeurtenis" and not any(van == bid and r["soort"] == "triggering" for van, r in relaties):
             w.append(f"{bid}: deze gebeurtenis start geen gedrag: proces als kandidaat voorleggen (beslistabel)")
+    w += indeling(alle, elementen, relaties)
     bij: dict[str, list[str]] = {}
     for bid in elementen:
         for s in alle[bid].get("synoniemen", []):

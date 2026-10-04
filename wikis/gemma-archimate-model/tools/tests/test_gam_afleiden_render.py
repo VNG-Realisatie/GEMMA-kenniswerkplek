@@ -43,13 +43,14 @@ def _element(begrip: str, ja: set[str], **extra) -> dict:
 
 
 def _bo(**extra) -> dict:
-    return _element("Beschikking", BO, ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}, **extra)
+    return _element("Beschikking", BO | {"generiek"}, ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}, **extra)
 
 
 def _proces(**extra) -> dict:
     relatie = {"soort": "toegang (registreren)", "naar": "beschikking", "naam": "stelt vast", "grondslag": "bron",
                "bronnen": [WET], "vindplaats": "art. 2"}
-    return _element("Behandelen aanvraag", PROCES, relaties=[relatie], **extra)
+    return _element("Behandelen aanvraag", PROCES, relaties=[relatie], kernobject="beschikking", afnemer="extern",
+                    **extra)
 
 
 def _schrijf(wiki, bid, data):
@@ -96,26 +97,30 @@ def test_elk_paginatype_wordt_afgeleid_en_gerenderd(wiki):
     geen_ggm = {"ggm": {"sterkte": "geen", "onderbouwing": "Niet in het GGM."}}
     gevallen = {
         "graf": ("bedrijfsobject", "business-object", _element("Graf", BO, **geen_ggm)),
-        "grafrecht": ("bedrijfsobject", "contract", _element("Grafrecht", BO | {"afspraak"}, **geen_ggm)),
+        "grafrecht": ("bedrijfsobject", "contract", _element("Grafrecht", BO | {"afspraak", "generiek"}, **geen_ggm)),
         "ruimen-graf": ("bedrijfsproces", "business-process", _element("Ruimen graf", PROCES, relaties=[
-            _rel("toegang (beëindigen)", "graf"), _rel("realisatie", "onderhoud-van-graven")])),
+            _rel("toegang (beëindigen)", "graf"), _rel("realisatie", "onderhoud-van-graven")],
+            kernobject="graf", afnemer="extern")),
         "begraafplaatsbeheer": ("bedrijfsfunctie", "business-function", _element("Begraafplaatsbeheer", FUNCTIE,
-                                relaties=[_rel("bediening", "ruimen-graf")])),
+                                relaties=[_rel("bediening", "ruimen-graf")], domein="Fysieke leefomgeving")),
         "overlijden": ("gebeurtenis", "business-event", _element("Overlijden", GEBEURTENIS,
                        relaties=[_rel("triggering", "ruimen-graf")])),
-        "onderhoud-van-graven": ("dienst", "business-service", _element("Onderhoud van graven", DIENST)),
+        "onderhoud-van-graven": ("dienst", "business-service", _element("Onderhoud van graven", DIENST,
+                                 domein="Fysieke leefomgeving", afnemer="extern")),
         "grafproduct": ("product", "product", _element("Grafproduct", PRODUCT, relaties=[
-            _rel("aggregatie", "onderhoud-van-graven"), _rel("aggregatie", "grafrecht")], **geen_ggm)),
+            _rel("aggregatie", "onderhoud-van-graven"), _rel("aggregatie", "grafrecht")],
+            domein="Fysieke leefomgeving", afnemer="extern", **geen_ggm)),
         "houder-van-de-begraafplaats": ("rol", "business-role", _element("Houder van de begraafplaats", ROL, relaties=[
-            _rel("toewijzing", "ruimen-graf"), _rel("toegang (houder)", "graf")])),
+            _rel("toewijzing", "ruimen-graf"), _rel("toegang (houder)", "graf")], doelgroep="ketenpartners")),
         "kerkgenootschap": ("actor", "business-actor", _element("Kerkgenootschap", ACTOR,
-                            relaties=[_rel("toewijzing", "houder-van-de-begraafplaats")])),
+                            relaties=[_rel("toewijzing", "houder-van-de-begraafplaats")], doelgroep="ketenpartners")),
         "zorg-en-veiligheidshuis": ("bedrijfssamenwerking", "business-collaboration", _element(
-            "Zorg- en Veiligheidshuis", SAMENWERKING, relaties=[_rel("toewijzing", "ruimen-graf")])),
+            "Zorg- en Veiligheidshuis", SAMENWERKING, relaties=[_rel("toewijzing", "ruimen-graf")],
+            doelgroep="ketenpartners")),
         "publieksbalie": ("kanaal", "business-interface", _element("Publieksbalie", KANAAL,
-                          relaties=[_rel("toewijzing", "onderhoud-van-graven")])),
+                          relaties=[_rel("toewijzing", "onderhoud-van-graven")], doelgroep="inwoners en ondernemers")),
         "wet-op-de-lijkbezorging": ("beleidskader", "driver", _element("Wet op de lijkbezorging", BELEIDSKADER,
-                                    relaties=[_rel("associatie (gericht)", "ruimen-graf")])),
+                                    relaties=[_rel("associatie (gericht)", "ruimen-graf")], regelgever="rijk")),
     }
     for bid, (_, _, data) in gevallen.items():
         _schrijf(wiki, bid, data)
@@ -230,7 +235,7 @@ def test_nieuwe_terugmelding_krijgt_het_volgende_nummer(wiki):
 
 def test_signalen_noemen_de_regel_bij_naam(wiki):
     _schrijf(wiki, "beschikking", _bo(beschrijving=["Wordt geregistreerd in het zaaksysteem."]))
-    _schrijf(wiki, "aanvraag-behandeling", _element("Aanvraagbehandeling", PROCES))
+    _schrijf(wiki, "aanvraag-behandeling", _element("Aanvraagbehandeling", PROCES, kernobject="beschikking", afnemer="extern"))
     res = afleiden.afleiden(wiki)
     assert res.fouten == []
     assert any("regel Naamvorm" in w and "aanvraag-behandeling" in w for w in res.waarschuwingen)
@@ -252,3 +257,125 @@ def test_element_zonder_enige_bron_is_een_fout(wiki):
     fouten = afleiden.afleiden(wiki).fouten
     assert any("element zonder bron" in f for f in fouten)
     assert any("kenmerk 'ja' zonder bron" in f for f in fouten)
+
+
+# --- Stap 7: indeling ---
+
+
+def _deelproces(**extra) -> dict:
+    ja = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "eigen_besluit"}
+    return _element("Verlenen grafrecht", ja, kernobject="beschikking", afnemer="extern", **extra)
+
+
+def test_object_zonder_proces_wordt_voorgelegd_en_een_kernobject_is_een_kernobject(wiki):
+    _schrijf(wiki, "graf", _element("Graf", BO, ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}))
+    _afleiden(wiki)
+    data = _lees(wiki, "graf")
+    assert data["status"] == "kandidaat"
+    assert any("levensloop" in r for r in data["afgeleid"]["voor_te_leggen"])
+
+    _schrijf(wiki, "beheren-graven", _element("Beheren graven", PROCES, kernobject="graf", afnemer="extern",
+                                              relaties=[_rel("toegang (registreren)", "graf")]))
+    _afleiden(wiki)
+    assert _lees(wiki, "graf")["afgeleid"]["uitkomst"]["objectniveau"] == "kernobject"
+    assert _lees(wiki, "graf")["status"] == "review"
+    assert _lees(wiki, "beheren-graven")["afgeleid"]["uitkomst"]["procesniveau"] == "bedrijfsproces"
+
+
+def test_twee_processen_voor_een_kernobject_is_een_fout(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    _schrijf(wiki, "behandelen-aanvraag", _proces())
+    _schrijf(wiki, "beheren", _element("Beheren beschikkingen", PROCES, kernobject="beschikking", afnemer="extern"))
+    res = afleiden.afleiden(wiki)
+    assert any("per kernobject één proces" in f for f in res.fouten)
+
+
+def test_indelingsveld_ontbreekt_of_heeft_een_onbekende_waarde(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    data = _proces()
+    del data["afnemer"]
+    _schrijf(wiki, "behandelen-aanvraag", data)
+    assert any("zonder 'afnemer'" in f for f in afleiden.afleiden(wiki).fouten)
+    data["afnemer"] = "allemaal"
+    _schrijf(wiki, "behandelen-aanvraag", data)
+    assert any("allemaal" in f for f in afleiden.afleiden(wiki).fouten)  # het schema weigert de waarde
+
+
+def test_via_moet_een_specialisatie_van_het_doel_zijn(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    _schrijf(wiki, "verlof", _element("Verlof", BO - {"zelfstandige_specialisatie"}, genoemd_begrip="Beschikking",
+                                      ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}))
+    proces = _proces()
+    proces["relaties"][0]["via"] = "verlof"
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+    assert afleiden.afleiden(wiki).fouten == []
+    proces["relaties"][0]["via"] = "beschikking"  # een element, geen specialisatie
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+    assert any("geen specialisatie van dat doel" in f for f in afleiden.afleiden(wiki).fouten)
+
+
+def test_leidt_tot_gebeurtenis_vraagt_een_triggering(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    _schrijf(wiki, "overlijden", _element("Overlijden", GEBEURTENIS, relaties=[_rel("triggering", "behandelen-aanvraag")]))
+    proces = _proces()
+    proces["kenmerken"]["leidt_tot_gebeurtenis"] = {"waarde": "ja", "onderbouwing": "Eindigt in een overlijden.", "bronnen": [WET]}
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+    assert any("geen relatie 'triggering' naar een gebeurtenis" in f for f in afleiden.afleiden(wiki).fouten)
+    proces["relaties"].append(_rel("triggering", "overlijden"))
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+    assert afleiden.afleiden(wiki).fouten == []
+
+
+def test_gemma_generiek_moet_in_het_gemma_model_staan(wiki):
+    import gam_gemeen
+
+    gam_gemeen.schrijf_json_gegenereerd(
+        wiki / "gemma" / "gemma_parsed.json",
+        {"elementen": {"id-vergunning": {"id": "id-vergunning", "naam": "Behandelen aanvraag vergunning of ontheffing",
+                                         "type": "business-process", "documentatie": "", "map": "Business", "map_id": "f",
+                                         "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}}, "test")
+    _schrijf(wiki, "beschikking", _bo())
+    _schrijf(wiki, "behandelen-aanvraag", _proces(gemma_generiek={"id": "id-vergunning", "onderbouwing": "Generiek proces."}))
+    assert afleiden.afleiden(wiki).fouten == []
+    _schrijf(wiki, "behandelen-aanvraag", _proces(gemma_generiek={"id": "id-weg", "onderbouwing": "Bestaat niet."}))
+    assert any("gemma_generiek 'id-weg' bestaat niet" in f for f in afleiden.afleiden(wiki).fouten)
+
+
+def test_signalen_voor_de_indeling():
+    import signalen
+
+    def el(paginatype, **u):
+        return {"paginatype": paginatype, "soort": "element", **u}
+
+    elementen = {
+        "taak": el("bedrijfsproces", procesniveau="taak"),
+        "beheren": el("bedrijfsproces", procesniveau="bedrijfsproces"),
+        "los": el("bedrijfsproces", procesniveau="bedrijfsproces"),
+        "keten": el("bedrijfsproces", procesniveau="ketenproces"),
+        "deel": el("bedrijfsproces", procesniveau="deelproces"),
+        "elders": el("bedrijfsproces", procesniveau="deelproces"),
+        "wees": el("bedrijfsproces", procesniveau="deelproces"),
+        "onderhoud": el("dienst"),
+        "wet": el("beleidskader"),
+        "gemeente": el("actor"),
+        "raad": el("actor"),
+        "arts": el("gebeurtenis", generiek=True),
+    }
+    rel = lambda soort, naar, naam=None: {"soort": soort, "naar": naar, "naam": naam}  # noqa: E731
+    alle = {b: {"onderwerpen": ["lijkbezorging" if b != "elders" else "burgerzaken"]} for b in elementen}
+    alle["taak"]["relaties"] = [rel("aggregatie", "beheren"), rel("aggregatie", "keten")]
+    alle["beheren"]["relaties"] = [rel("aggregatie", "deel")]
+    alle["keten"]["relaties"] = [rel("aggregatie", "elders")]
+    alle["deel"]["relaties"] = [rel("realisatie", "onderhoud")]
+    alle["gemeente"]["relaties"] = [rel("associatie (gericht)", "raad", "geeft melding door aan"),
+                                    rel("associatie (gericht)", "raad", "is voorzitter van")]
+    relaties = [(van, r) for van in elementen for r in alle[van].get("relaties", [])]
+    tekst = "\n".join(signalen.indeling(alle, elementen, relaties))
+    assert "los: hangt onder geen taak" in tekst
+    assert "wees: deelproces hangt onder geen bedrijfs- of ketenproces" in tekst
+    assert "deel: een deelproces levert een dienst" in tekst
+    assert "keten: ketenproces met deelproces 'elders' uit een andere taak" in tekst
+    assert "wet: geen product heeft dit beleidskader" in tekst
+    assert "geeft melding door aan" in tekst and "is voorzitter van" not in tekst
+    assert "arts: generiek, maar geen `gemma_generiek`" in tekst
+    assert "beheren: hangt onder geen taak" not in tekst and "keten: hangt onder geen taak" not in tekst

@@ -135,6 +135,7 @@ def _controleer_element(ctx: Context, bid: str, data: dict, uitkomst: dict, res:
     if uitkomst.get("data_object") == "ja" or paginatype in ("bedrijfsobject", "product"):
         if not data.get("ggm"):
             res.fouten.append(f"{bid}: {paginatype} zonder GGM-match ('ggm', ook bij sterkte geen)")
+    res.fouten += [f"{bid}: {f}" for f in bepaal_type.controleer_indelingsvelden(data, uitkomst)]
     for onderwerp in data.get("per_onderwerp", {}):
         if onderwerp not in data["onderwerpen"]:
             res.fouten.append(f"{bid}: per_onderwerp '{onderwerp}' staat niet in onderwerpen")
@@ -175,6 +176,13 @@ def _modelvelden(ctx: Context, bid: str, data: dict, res: Resultaat) -> dict:
             res.fouten.append(f"{bid}: GEMMA-id {gemma_keuze['id']} bestaat niet in het GEMMA-model")
     elif gemma_keuze and gemma_keuze.get("sterkte") != "geen":
         res.fouten.append(f"{bid}: GEMMA-match '{gemma_keuze.get('sterkte')}' zonder id")
+    generiek = data.get("gemma_generiek") or {}
+    if generiek.get("id"):
+        treffers = gemmatool.zoek_element(ctx.gemma(), generiek["id"])
+        if treffers:
+            afgeleid["gemma_generiek"] = gemmatool.velden(treffers[0])
+        else:
+            res.fouten.append(f"{bid}: gemma_generiek '{generiek['id']}' bestaat niet in het GEMMA-model")
     return afgeleid
 
 
@@ -192,8 +200,23 @@ def herkomst(ctx: Context, bronnen: list[str]) -> str | None:
     return min(typen, key=volgorde.index) if typen else None
 
 
-def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], res: Resultaat) -> None:
+def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], res: Resultaat,
+                             namen: dict[str, str] | None = None) -> None:
     elementen = {i for i, u in uitkomsten.items() if u and u.get("soort") == "element"}
+    namen = namen or {}
+    for r in data.get("relaties", []):
+        via = r.get("via")
+        if not via:
+            continue
+        u = uitkomsten.get(via)
+        doel = namen.get(r["naar"], r["naar"]).lower()
+        if not u or u.get("soort") != "specialisatie" or str(u.get("genoemd_begrip") or "").lower() != doel:
+            res.fouten.append(f"{bid}: via '{via}' bij de relatie naar '{r['naar']}' is geen specialisatie van dat doel")
+    kenmerken = data.get("kenmerken", {})
+    if kenmerken.get("leidt_tot_gebeurtenis", {}).get("waarde") == "ja" and not any(
+            r["soort"] == "triggering" and (uitkomsten.get(r["naar"]) or {}).get("paginatype") == "gebeurtenis"
+            for r in data.get("relaties", [])):
+        res.fouten.append(f"{bid}: leidt tot gebeurtenis, maar geen relatie 'triggering' naar een gebeurtenis")
     van_type = uitkomsten[bid]["archimate_type"]
     for r in data.get("relaties", []):
         if r["naar"] not in elementen:
@@ -268,6 +291,8 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             res.fouten += [f"{bid}: {f}" for f in exc.fouten]
             uitkomsten[bid] = None
 
+    res.fouten += [f"{f}" for f in bepaal_type.indeling({b: d for b, (_, d) in alle.items()}, uitkomsten)]
+
     nieuw: dict[str, dict] = {}
     for bid, (pad, data) in alle.items():
         uitkomst = uitkomsten[bid]
@@ -291,7 +316,7 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             if not bronnen:
                 res.fouten.append(f"{bid}: element zonder bron (regel Elke claim een bron)")
             _controleer_element(ctx, bid, data, uitkomst, res)
-            _controleer_verwijzingen(bid, data, uitkomsten, res)
+            _controleer_verwijzingen(bid, data, uitkomsten, res, {b: d["begrip"] for b, (_, d) in alle.items()})
             afgeleid.update(_modelvelden(ctx, bid, data, res))
             status = bepaal_type.voorgestelde_status(uitkomst, ggm_sterkte, data.get("grondslag"), data.get("besluiten"))
             if status != "afgewezen":

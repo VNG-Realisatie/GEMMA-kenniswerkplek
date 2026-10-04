@@ -34,7 +34,7 @@ De vraag, voorbeelden bij ja en nee en de herkomst van elk kenmerk staan op éé
 
 **Specialisatieniveau (alle typen met een paginatype).** Dit kenmerk gaat over de "is een"-relatie tussen twee verschillende begrippen van hetzelfde type, nadat het type vaststaat. Het zegt niets over herkomst uit wet of beleid. Synoniemen (ander woord, zelfde betekenis) en homoniemen (zelfde woord, andere betekenis) zijn naamconflicten die vóór de beslistabel worden afgehandeld.
 
-Samen 46 kenmerken: 6 poorten, 1 voor het specialisatieniveau, 8 voor de aard, 5 voor de partij, 5 voor de soort gedrag, 11 voor gedrag, 7 passief en 3 voor het beleidskader.
+Samen 60 kenmerken (criteria van 2026-10-04, zie [Indelingen](indelingen.md)): 6 poorten, 2 voor het specialisatieniveau (met *generiek*), 8 voor de aard, 6 voor de partij (met *soort partij*), 6 voor de soort gedrag (met *groepeert processen*), 19 voor gedrag, 10 passief en 3 voor het beleidskader.
 
 ## Bevindingen
 

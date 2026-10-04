@@ -43,8 +43,10 @@
         "eigen_rechtspersoon",
         "vervult_een_rol",
         "voert_gedrag_uit",
+        "soort_partij",
         "ontsluit_een_dienst",
         "per_keer_doorlopen",
+        "groepeert_processen",
         "gegroepeerd_gedrag",
         "toestandsverandering",
         "aangeboden_gedrag",
@@ -60,17 +62,29 @@
         "gerealiseerd_door",
         "leidt_tot_gedrag",
         "bijdrage_aan_groter_proces",
+        "omvat_processen",
+        "omvat_levensloop",
+        "meer_organisaties",
+        "eigen_besluit",
+        "levert_aanbod",
+        "bedient_gedrag",
+        "in_functie_indeling",
+        "leidt_tot_gebeurtenis",
         "onderscheidbare_exemplaren",
         "levenscyclus",
         "wordt_bewerkt",
         "afspraak",
         "waarneembare_vorm",
+        "deel_van_object",
+        "invoer_van_een_ander",
+        "zelfstandig_aanbod",
         "omvat_diensten_en_afspraken",
         "geautomatiseerd_verwerkt",
         "landelijk",
         "in_werking",
         "is_grondslag_voor",
-        "zelfstandige_specialisatie"
+        "zelfstandige_specialisatie",
+        "generiek"
       ],
       "properties": {
         "herkenbaar": {
@@ -127,10 +141,16 @@
         "voert_gedrag_uit": {
           "$ref": "#/$defs/antwoord"
         },
+        "soort_partij": {
+          "$ref": "#/$defs/antwoord"
+        },
         "ontsluit_een_dienst": {
           "$ref": "#/$defs/antwoord"
         },
         "per_keer_doorlopen": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "groepeert_processen": {
           "$ref": "#/$defs/antwoord"
         },
         "gegroepeerd_gedrag": {
@@ -178,6 +198,30 @@
         "bijdrage_aan_groter_proces": {
           "$ref": "#/$defs/antwoord"
         },
+        "omvat_processen": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "omvat_levensloop": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "meer_organisaties": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "eigen_besluit": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "levert_aanbod": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "bedient_gedrag": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "in_functie_indeling": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "leidt_tot_gebeurtenis": {
+          "$ref": "#/$defs/antwoord"
+        },
         "onderscheidbare_exemplaren": {
           "$ref": "#/$defs/antwoord"
         },
@@ -191,6 +235,15 @@
           "$ref": "#/$defs/antwoord"
         },
         "waarneembare_vorm": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "deel_van_object": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "invoer_van_een_ander": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "zelfstandig_aanbod": {
           "$ref": "#/$defs/antwoord"
         },
         "omvat_diensten_en_afspraken": {
@@ -209,6 +262,9 @@
           "$ref": "#/$defs/antwoord"
         },
         "zelfstandige_specialisatie": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "generiek": {
           "$ref": "#/$defs/antwoord"
         }
       },
@@ -229,6 +285,45 @@
     "archimate_buiten_model": {
       "type": "string",
       "description": "Het ArchiMate-type buiten dit model (Goal, Outcome, Principle, Requirement, Constraint, Value, Capability, Grouping …)"
+    },
+    "kernobject": {
+      "type": "string",
+      "description": "Stap 7: het bedrijfsobject waarvan dit proces de levensloop omvat (bedrijfs- en ketenproces) of waarin het een mutatie doet (deelproces)"
+    },
+    "afnemer": {
+      "enum": [
+        "extern",
+        "intern"
+      ],
+      "description": "Indelingsveld: de plaats in de indelingen (stap 7)"
+    },
+    "domein": {
+      "enum": [
+        "Bestuur",
+        "Fysieke leefomgeving",
+        "Niet domeingebonden",
+        "Openbare orde en veiligheid",
+        "Ondersteuning",
+        "Publieksdiensten",
+        "Sociaal domein"
+      ],
+      "description": "Indelingsveld: de plaats in de indelingen (stap 7)"
+    },
+    "doelgroep": {
+      "enum": [
+        "gemeente",
+        "inwoners en ondernemers",
+        "ketenpartners"
+      ],
+      "description": "Indelingsveld: de plaats in de indelingen (stap 7)"
+    },
+    "regelgever": {
+      "enum": [
+        "EU",
+        "rijk",
+        "VNG-model"
+      ],
+      "description": "Indelingsveld: de plaats in de indelingen (stap 7)"
     },
     "toelichting": {
       "type": "string",
@@ -410,6 +505,25 @@
       },
       "additionalProperties": false
     },
+    "gemma_generiek": {
+      "type": "object",
+      "required": [
+        "id",
+        "onderbouwing"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "onderbouwing": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "description": "Specialisatie van een generiek GEMMA-element (bedrijfsproces, gebeurtenis, dienst of rol), met het id van dat element; bij een cluster naar soort werk bepaalt dit het procesniveau"
+    },
     "naamkeuze": {
       "type": "array",
       "items": {
@@ -570,6 +684,11 @@
               "ggm-afgeleid",
               "bron"
             ]
+          },
+          "via": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Een begrip met uitkomst specialisatie van het doel (een specialisatie zonder pagina)"
           },
           "ggm_relatie": {
             "type": "array",
