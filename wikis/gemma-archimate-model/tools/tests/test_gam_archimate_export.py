@@ -188,7 +188,12 @@ GEMMA_INDELING = """<?xml version="1.0" encoding="UTF-8"?>
       <element xsi:type="archimate:BusinessEvent" name="Aanvraag ontvangen" id="id-gebeurtenis"/>
     </folder>
     <folder name="Bedrijfsrollen" id="f-rol">
-      <element xsi:type="archimate:BusinessRole" name="Inwoners en ondernemers" id="id-doelgroep-inwoners"/>
+      <element xsi:type="archimate:BusinessRole" name="Inwoners en ondernemers" id="id-doelgroep-inwoners">
+        <property key="GEMMA type" value="Groep"/>
+      </element>
+    </folder>
+    <folder name="Actoren en rollen" id="f-ar">
+      <element xsi:type="archimate:BusinessRole" name="Inwoners en ondernemers" id="id-aaa-rol-zonder-groep"/>
     </folder>
     <folder name="Bedrijfsobjecten" id="f-bo">
       <element xsi:type="archimate:BusinessObject" name="Beschikking" id="id-beschikking"/>
@@ -198,9 +203,6 @@ GEMMA_INDELING = """<?xml version="1.0" encoding="UTF-8"?>
     <folder name="Domein en doelgroep" id="f-dd">
       <folder name="Domeinen" id="f-domeinen">
         <element xsi:type="archimate:Grouping" name="Fysieke leefomgeving" id="id-domein-fl"/>
-      </folder>
-      <folder name="Doelgroep" id="f-doelgroep">
-        <element xsi:type="archimate:BusinessRole" name="Inwoners en ondernemers" id="id-doelgroep-inwoners2"/>
       </folder>
     </folder>
     <folder name="Beleidsdomeinen" id="f-bd">
@@ -329,7 +331,10 @@ def test_beleidsdomein_uit_gemma_wordt_hergebruikt_en_een_onbekende_wordt_nieuw(
 def test_domein_en_doelgroep_aggregeren_vanuit_de_gemma_groepering(tmp_path):
     uit, root = _export_indeling(tmp_path)
     assert _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "exploiteren"))
-    assert _relaties_van(root, "archimate:AggregationRelationship", "id-doelgroep-inwoners2", ae.vast_id("element", "nabestaande"))
+    # de doelgroep is de GEMMA-rol met GEMMA type Groep, niet een gewone rol met dezelfde naam
+    assert _relaties_van(root, "archimate:AggregationRelationship", "id-doelgroep-inwoners", ae.vast_id("element", "nabestaande"))
+    assert not _relaties_van(root, "archimate:AggregationRelationship", "id-aaa-rol-zonder-groep")
+    assert _pad(root, "id-doelgroep-inwoners") == [("Business", "f-business"), ("Bedrijfsrollen", "f-rol")]
     assert any("onbekende groep" in o for o in uit.overgeslagen)
 
 

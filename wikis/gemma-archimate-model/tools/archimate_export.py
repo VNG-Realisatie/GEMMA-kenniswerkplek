@@ -14,8 +14,8 @@ Het bestand is bedoeld om in Archi te bekijken (File › Open) en om in het GEMM
 Indelingen (analyses/indelingen.md): een element krijgt de eigenschappen procesniveau, objectniveau en zijn indelingsvelden;
 een aggregatie tussen processen heeft `indeling` en `procesniveau` ("taak → bedrijfsproces"); een proces zonder GEMMA-match
 staat in de map `Procesindeling naar taak`; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
-letterlijk meegaat); beleidsdomein, domein en doelgroep worden een aggregatie vanuit de bestaande GEMMA-groepering, of
-vanuit een nieuwe groepering in de map van de wiki.
+letterlijk meegaat); beleidsdomein en domein worden een aggregatie vanuit de bestaande GEMMA-groepering, of vanuit een
+nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type `Groep`).
 
 Alleen begrippen met status `goedgekeurd` (akkoord van de redacteur); `--concept` neemt ook kandidaat en review mee,
 voor het bekijken, en schrijft naar het kladblok. Het GEMMA-model moet als Archi-bestand zijn ingelezen
@@ -221,9 +221,12 @@ def _vind_groepering(gemma_data: dict, gemma_type: str | None, naam: str, map_ei
     return None
 
 
-def _vind_rol(gemma_data: dict, naam: str) -> dict | None:
+def _vind_doelgroep(gemma_data: dict, naam: str) -> dict | None:
+    """De GEMMA-rol van een doelgroep (*Gemeente*, *Inwoners en ondernemers*, *Ketenpartners*): een rol met de
+    eigenschap *GEMMA type* `Groep`, in GEMMA in de map `Business / Bedrijfsrollen`."""
     for e in sorted(gemma_data["elementen"].values(), key=lambda x: x["id"]):
-        if e["type"] == "business-role" and e["naam"].strip().lower() == naam.strip().lower() and "Doelgroep" in e["map"]:
+        if (e["type"] == "business-role" and e["naam"].strip().lower() == naam.strip().lower()
+                and e["eigenschappen"].get("GEMMA type") == "Groep"):
             return e
     return None
 
@@ -414,8 +417,9 @@ DOELGROEP_TYPEN = ("actor", "rol", "bedrijfssamenwerking", "kanaal")
 
 
 def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict) -> None:
-    """Aggregaties vanuit de GEMMA-groepering van de Beleidsdomeinindeling, de Functie-indeling naar domein en de
-    Doelgroepindeling; een beleidsdomein dat GEMMA niet kent wordt een nieuwe groepering onder het taakveld."""
+    """Aggregaties vanuit de GEMMA-groepering van de Beleidsdomeinindeling en de Functie-indeling naar domein, en vanuit
+    de GEMMA-rol van de Doelgroepindeling; een beleidsdomein dat GEMMA niet kent wordt een nieuwe groepering onder het
+    taakveld."""
     nieuwe: dict[str, str] = {}
 
     def aggregatie(groep_id: str, element: str, indeling: str, bid: str, gemma_groep: dict | None = None) -> None:
@@ -458,7 +462,7 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
             else:
                 aggregatie(groep["id"], element, "Functie-indeling naar domein", bid, groep)
         if paginatype in DOELGROEP_TYPEN and data.get("doelgroep"):
-            rol = _vind_rol(gemma_data, data["doelgroep"])
+            rol = _vind_doelgroep(gemma_data, data["doelgroep"])
             if rol is None:
                 uit.overgeslagen.append(f"{data['begrip']}: doelgroep '{data['doelgroep']}' bestaat niet als rol in GEMMA")
             else:

@@ -53,7 +53,7 @@ Stand van het GEMMA-model van 2026-10-02.
 | Procesindeling naar soort werk (processenlandschap) | bedrijfsprocessen | sturend, uitvoerend of ondersteunend → procescluster → generiek bedrijfsproces → deelproces → processtap → handeling; een domeinproces via specialisatie (*Behandelen omgevingsvergunningaanvraag* → *Behandelen vergunningaanvraag*) | aggregatie (102×), compositie (31×) |
 | Functie-indeling naar domein | bedrijfsfuncties | soort sturing → domein → soort werk → onderwerp (*Uitvoering › Fysieke leefomgeving › Exploitatie › Exploiteren van begraafplaatsen*); 7 van de 289 functies hebben meer ouders | aggregatie (302×); groepering *GEMMA domeinen* |
 | Beleidsdomeinindeling | bedrijfsobjecten | taakveld Iv3 → beleidsdomein (GGM) → object | groepering (507×) |
-| Doelgroepindeling | rollen | *Gemeente*, *Inwoners en ondernemers*, *Ketenpartners*, *Generiek* → rol | groepering (regel 214) |
+| Doelgroepindeling | rollen | *Gemeente*, *Inwoners en ondernemers*, *Ketenpartners*, *Generiek* → rol | rol met *GEMMA type* `Groep` in `Business / Bedrijfsrollen` (regel 214), bediend door de groeperingen *Domein en doelgroep* |
 | Applicatieservice-indeling naar domein | applicatieservices | domein × doelgroep → service | groepering (regel 208, 221-227); alleen gedocumenteerd |
 
 - **Twee rode draden**: het GEMMA-domein (functies, applicatieservices, UPL) en het taakveld Iv3 met beleidsdomein (objecten, UPL).
@@ -68,7 +68,7 @@ Stand van het GEMMA-model van 2026-10-02.
 | Procesindeling naar taak | nieuw | bedrijfs-, keten- en deelprocessen, gebeurtenissen | taak → bedrijfs- of ketenproces per kernobject → deelproces | aggregatie; map `wiki-gemma-model / Procesindeling naar taak` |
 | Functie-indeling naar domein | GEMMA | functies, producten, diensten | domein → functie → product of dienst | aggregatie; functie bedient proces |
 | Beleidsdomeinindeling | GEMMA | objecten, afspraken, producten, diensten, beleidskaders | taakveld → beleidsdomein → element | aggregatie vanuit de groepering |
-| Doelgroepindeling | GEMMA, uitgebreid | rollen, actoren, samenwerkingen, kanalen | gemeente (bestuursorgaan, ambtelijk), inwoners en ondernemers, ketenpartners → element | aggregatie vanuit de groepering |
+| Doelgroepindeling | GEMMA, uitgebreid | rollen, actoren, samenwerkingen, kanalen | gemeente (bestuursorgaan, ambtelijk), inwoners en ondernemers, ketenpartners → element | aggregatie vanuit de doelgroeprol |
 
 Een deelproces heeft twee ouders: het proces van zijn kernobject en zijn cluster naar soort werk. Een deelproces uit een andere taak mag ook in een ketenproces hangen; dat geeft een signaal.
 
