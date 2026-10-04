@@ -26,7 +26,7 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 ## Export naar Archi
 
 - **Verzoek aan het GEMMA-team**: zet bij elke release naast `export/GEMMA release.xml` (AMEFF) ook `export/GEMMA release.archimate` in de GEMMA-Archi-repository (opslagformaat van Archi, met map-id's en profielen). Daarna `wiki.yaml` → `gemma.herkomst.pad` daarop zetten; na de overgang naar coArchi 2 op `model.archimate`. Tot dan neemt de redacteur een lokaal opgeslagen `.archimate` op (skill `gemma-archimate-model-gemma-release`).
-- **Eerste proefimport** op een kopie van het GEMMA-model: controleren dat gekoppelde elementen in hun GEMMA-map blijven, geen dubbele mappen ontstaan, `Object ID` blijft staan; de naam van de importoptie vastleggen in de skill `gemma-archimate-model-archimate-export`; het jArchi-script proberen met een tweede export.
+- **Naam van de importoptie** in Archi (*File › Import › Model into selected model…*, bestaande objecten bijwerken) vastleggen in de skill `gemma-archimate-model-archimate-export`, stap 4. Proefimport en jArchi-sync zijn geslaagd (2026-10-04).
 
 ## Algemeen onderwerp besluitvorming en heffingen
 
