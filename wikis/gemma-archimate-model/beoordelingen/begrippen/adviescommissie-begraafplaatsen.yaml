@@ -68,7 +68,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   soort_partij:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Een adviescommissie is alleen een aanbeveling in het VNG-model; niet bij elke gemeente.
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -193,7 +193,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
 toelichting: 'Geen element: het VNG-model beveelt de commissie alleen aan (toelichting 2).'
 onderwerpen:
 - lijkbezorging

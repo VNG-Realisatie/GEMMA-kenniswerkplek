@@ -74,7 +74,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -200,7 +200,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Verantwoordelijkheid voor een plaats waar urnen worden bijgezet.
 beschrijving:
 - De houder van een plaats van bijzetting houdt een openbaar register van de bijgezette asbussen, stelt ze op verzoek ter beschikking en ruimt ze door verstrooiing van de as (art. 63, 65, 66). Het register gaat bij opheffing naar het archief van de gemeente (art. 65 lid 3).
@@ -219,13 +219,6 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 66
-- soort: toegang (houder)
-  naar: plaats-van-bijzetting
-  naam: houdt
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 63, 65
 - soort: toegang (bronhouder)
   naar: urn
   naam: houdt register van
@@ -233,9 +226,17 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 65
+- soort: toewijzing
+  naar: bijzetten-of-verstrooien-van-de-as
+  naam: houdt het register bij en stelt de asbus ter beschikking bij
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 63, 65
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: gemeente
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -243,16 +244,10 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

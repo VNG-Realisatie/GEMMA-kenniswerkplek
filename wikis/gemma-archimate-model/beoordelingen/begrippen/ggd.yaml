@@ -78,8 +78,10 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet van toepassing.
   soort_partij:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Elke gemeente is via een gemeenschappelijke regeling aangesloten bij een GGD (Wpg art. 14); een soort partij, geen individuele GGD.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -204,7 +206,7 @@ kenmerken:
     - 2026-rijk-wet-publieke-gezondheid-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt voor in de lijkbezorging en de publieke gezondheid, niet in veel onderwerpen.
 definitie: Gezondheidsdienst die de colleges van de gemeenten in een regio via een gemeenschappelijke regeling instellen en in stand houden voor de publieke gezondheid.
 beschrijving:
 - De colleges van burgemeester en wethouders van de gemeenten in een regio stellen de gemeentelijke gezondheidsdienst via een gemeenschappelijke regeling in en houden haar in stand (Wet publieke gezondheid art. 14 lid 1); de regeling stelt een openbaar lichaam in, zodat de GGD eigen rechtspersoonlijkheid heeft (art. 14 lid 2). De gemeenten zijn zo mede-eigenaar en opdrachtgever. De GGD staat onder leiding van een directeur publieke gezondheid (art. 14 lid 3).
@@ -231,32 +233,23 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-wet-publieke-gezondheid-wettekst
   vindplaats: Wlb art. 22a; Wpg art. 16
-- soort: associatie (gericht)
-  naar: burgemeester
-  naam: geeft de melding van een besmet lijk door aan
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-publieke-gezondheid-wettekst
-  vindplaats: art. 27 lid 3
 onderwerpen:
 - lijkbezorging
+doelgroep: ketenpartners
+status: goedgekeurd
 afgeleid:
   uitkomst:
-    soort: geen_element
-    regel: 22
-    toelichting: Eis ontbreekt voor Actor
+    soort: element
+    regel: 26
+    toelichting: Samenwerkingsverband met eigen rechtspersoon (kern ja)
+    paginatype: actor
     archimate_type: business-actor
-    voorleggen: true
-    redenen:
-    - 'soort partij: nee'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 9
-  voor_te_leggen:
-  - 'soort partij: nee'
-  open:
-  - 'soort partij: nee'
   bronnen:
   - 2026-rijk-wet-publieke-gezondheid-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet
+  pad: bedrijfsarchitectuur/actoren/ggd.md

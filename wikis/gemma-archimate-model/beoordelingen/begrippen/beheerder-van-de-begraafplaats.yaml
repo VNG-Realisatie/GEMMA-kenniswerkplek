@@ -1,4 +1,4 @@
-begrip: Beheerder
+begrip: Beheerder van de begraafplaats
 kenmerken:
   herkenbaar:
     waarde: ja
@@ -74,7 +74,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -200,18 +200,17 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: De beheerder van de gemeentelijke begraafplaatsen komt alleen in de lijkbezorging voor; de generieke GEMMA-rol Beheerder is breder.
 definitie: Ambtenaar die belast is met de dagelijkse leiding van de gemeentelijke begraafplaatsen.
 beschrijving:
 - De beheerder bepaalt tijd en plaats van begravingen in overleg met de uitvaartondernemer, ontvangt en toetst de stukken (verlof, machtiging) en aanvragen, houdt het register van begraven lijken bij, handhaaft de orde en ziet toe op ruiming (Groningen art. 1 e, 4–9, 27, 30). Het VNG-model beveelt aan de beheerder aan te wijzen als aanspreekpunt voor burgers en aanvragen, met mandaat om te beslissen (toelichting 2).
 synoniemen:
-- naam: Beheerder van de begraafplaats
+- naam: Beheerder
   context: beleid
 grondslag: bron
 gemma:
-  id: id-a96ec982-643b-4c36-aa13-f36a51b85694
-  sterkte: zwak
-  onderbouwing: GEMMA-rol Beheerder heeft geen definitie en staat niet bij begraafplaatsen; verwant door de naam, niet aantoonbaar hetzelfde begrip.
+  sterkte: geen
+  onderbouwing: De GEMMA-rol Beheerder is generiek en heeft geen definitie; deze rol is daarvan een specialisatie voor de begraafplaats (zie Generiek GEMMA-element). Geen match, zodat de export het generieke GEMMA-element niet overschrijft (besluit redacteur 2026-10-04).
 relaties:
 - soort: toewijzing
   naar: uitvoeren-lijkbezorging
@@ -243,7 +242,15 @@ relaties:
   vindplaats: art. 1 e
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: gemeente
+gemma_generiek:
+  id: id-a96ec982-643b-4c36-aa13-f36a51b85694
+  onderbouwing: De beheerder van de begraafplaats is een beheerder met de dagelijkse leiding over de gemeentelijke begraafplaatsen (Groningen art. 1 e).
+besluiten:
+- datum: '2026-10-04'
+  besluit: Naam Beheerder van de begraafplaats, met synoniem Beheerder (beleid). Geen GEMMA-match meer; specialisatie van de generieke GEMMA-rol Beheerder.
+  gevolg: verwerkt
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -251,25 +258,19 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   herkomst: wet
-  gemma:
+  gemma_generiek:
     gemma_id: id-a96ec982-643b-4c36-aa13-f36a51b85694
     gemma_naam: Beheerder
     gemma_type: business-role
     gemma_map: Business / Procesarchitectuur / Actoren en rollen
     gemma_eigenschappen:
       Object ID: a96ec982-643b-4c36-aa13-f36a51b85694
-  pad: bedrijfsarchitectuur/rollen/beheerder.md
+  pad: bedrijfsarchitectuur/rollen/beheerder-van-de-begraafplaats.md

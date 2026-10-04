@@ -2,7 +2,7 @@
 id: gemeentebegrafenis
 type: bedrijfsobject
 archimate_type: business-object
-status: kandidaat
+status: goedgekeurd
 naam: Gemeentebegrafenis
 onderwerpen:
 - lijkbezorging
@@ -14,6 +14,7 @@ match:
   ggm: sterk
   gemma: sterk
 data_object: ja
+objectniveau: kernobject
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 ggm_entiteit: Gemeentebegrafenis
@@ -44,11 +45,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/gemeentebegrafenis.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -64,10 +61,12 @@ Een gemeentebegrafenis is het geval dat ontstaat als de burgemeester de lijkbezo
 
 ### Typering
 
-Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Objectniveau**: kernobject.
+- **Levensloop bepaald door**: [Verzorgen gemeentebegrafenis](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
@@ -98,7 +97,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Verzorgen gemeentebegrafenis](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | leidt tot *toegang (registreren)* | Gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
+| [Verzorgen gemeentebegrafenis](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | legt vast en handelt af *toegang (bijwerken)* | Gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
 
 ## Herkomst
 

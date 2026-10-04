@@ -68,7 +68,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -193,7 +193,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Verantwoordelijkheid voor een crematorium, het bergen van de as en de bestemming daarvan.
 beschrijving:
 - De houder van het crematorium bergt de as in asbussen, bewaart ze en zorgt voor de bestemming van de as, en houdt een openbaar register van gecremeerde lijken (art. 50, 58, 59). Bij een gemeentelijk crematorium is de gemeente houder, bij een bijzonder crematorium een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52).
@@ -204,11 +204,11 @@ gemma:
 relaties:
 - soort: toewijzing
   naar: uitvoeren-lijkbezorging
-  naam: bergt de as en zorgt voor de bestemming bij
+  naam: bergt de as bij
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 58, 59
+  vindplaats: art. 58
 - soort: toegang (houder)
   naar: crematorium
   naam: houdt
@@ -223,9 +223,24 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 58, 59 lid 1
+- soort: toewijzing
+  naar: beheren-crematoria
+  naam: houdt in werking
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 50, 52
+- soort: toewijzing
+  naar: bijzetten-of-verstrooien-van-de-as
+  naam: zorgt voor de bewaring en de bestemming van de as bij
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 59
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: gemeente
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -233,16 +248,10 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet

@@ -1,0 +1,263 @@
+begrip: Burgerlijke stand diensten
+onderwerpen:
+- lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: GEMMA-bedrijfsfunctie; na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof af (RVO).
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De ambtenaar van de burgerlijke stand verleent het verlof (art. 11).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandige groepering van gedrag.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Geen ander onderwerp beoordeelt het; hoort later ook bij een onderwerp burgerzaken.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  gedrag:
+    waarde: ja
+    onderbouwing: Een groep van activiteiten.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: ja
+    onderbouwing: Groepeert het bijhouden van de burgerlijke staat bij geboorte, overlijden en huwelijk op grond van dezelfde kennis en bevoegdheid (ambtenaar van de burgerlijke stand); geen eigen volgorde of doorlooptijd.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Ambtenaar van de burgerlijke stand (art. 11).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Raadpleegt de verklaring van overlijden en legt het verlof vast (art. 11–13).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: ja
+    onderbouwing: Volgt uit de wettelijke taak van de ambtenaar van de burgerlijke stand, los van de organisatie (art. 11).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: ja
+    onderbouwing: Bedient Verlenen verlof tot begraving of crematie (art. 11).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  in_functie_indeling:
+    waarde: ja
+    onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  levenscyclus:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  afspraak:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen bredere functie in deze wiki.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  generiek:
+    waarde: nee
+    onderbouwing: Een domeinfunctie, niet in veel onderwerpen.
+definitie: Het bijhouden van de burgerlijke staat van personen naar aanleiding van geboorte, overlijden, huwelijk en verhuizing.
+per_onderwerp:
+  lijkbezorging:
+  - Na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof tot begraven, cremeren of ontleding af (RVO). Het verlof verleent de ambtenaar van de burgerlijke stand (Wet op de lijkbezorging art. 11).
+domein: Publieksdiensten
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  id: id-c689b2cc-4672-4474-a82f-44273c60d384
+  sterkte: exact
+  onderbouwing: 'Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Burgerlijke stand diensten.'
+relaties:
+- soort: bediening
+  naar: verlenen-verlof-tot-begraving-of-crematie
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 11
+beschrijving:
+- De ambtenaar van de burgerlijke stand maakt akten op van geboorte, huwelijk en overlijden en verleent het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11; RVO). De functie bedient de processen daarvoor.
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-vng-gemma-2026-10-02
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  gemma:
+    gemma_id: id-c689b2cc-4672-4474-a82f-44273c60d384
+    gemma_naam: Burgerlijke stand diensten
+    gemma_type: business-function
+    gemma_definitie: Het bijhouden van de burgerlijke staat van personen n.a.v. geboorte, overlijden, huwelijk en verhuizing
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: c689b2cc-4672-4474-a82f-44273c60d384
+      Toelichting: Bijv. het opmaken van akten bij geboorte, huwelijk, echtscheiding en overlijden.
+  pad: bedrijfsarchitectuur/bedrijfsfuncties/0-bestuur-en-ondersteuning/burgerzaken/burgerlijke-stand-diensten.md
+besluiten:
+- datum: '2026-10-04'
+  besluit: Opnemen als bedienende functie met exacte GEMMA-match, met de GEMMA-naam en -definitie.
+  gevolg: verwerkt

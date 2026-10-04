@@ -80,7 +80,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   groepeert_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -126,7 +126,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: 'De functie Lijkbezorging: de burgemeester stelt de andere termijn als beschikking (besluit redacteur 2026-10-01).'
+    onderbouwing: 'Het deelproces Stellen andere termijn: de burgemeester stelt de andere termijn (art. 17; besluit redacteur 2026-10-04).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   leidt_tot_gedrag:
@@ -137,28 +137,28 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   meer_organisaties:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   eigen_besluit:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   levert_aanbod:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   bedient_gedrag:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -205,7 +205,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
@@ -222,6 +222,9 @@ besluiten:
 - datum: '2026-10-01'
   besluit: Dienst, gerealiseerd door de functie Lijkbezorging; geen eigen proces voor het stellen van een andere termijn.
   gevolg: verwerkt
+- datum: '2026-10-04'
+  besluit: Gerealiseerd door het nieuwe deelproces Stellen andere termijn; herziet het besluit van 2026-10-01 (gerealiseerd door de functie Lijkbezorging).
+  gevolg: verwerkt
 relaties:
 - soort: bediening
   naar: degene-die-in-de-lijkbezorging-voorziet
@@ -232,7 +235,9 @@ relaties:
   vindplaats: § Uitvaart vervroegen, § Uitvaart uitstellen
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+domein: Publieksdiensten
+afnemer: extern
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -240,19 +245,10 @@ afgeleid:
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: domein'
-    - 'indelingsveld ontbreekt: afnemer'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 17
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: domein'
-  - 'indelingsveld ontbreekt: afnemer'
-  open:
-  - 'indelingsveld ontbreekt: domein'
-  - 'indelingsveld ontbreekt: afnemer'
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

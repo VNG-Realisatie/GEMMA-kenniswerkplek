@@ -2,7 +2,7 @@
 id: grafbedekking
 type: bedrijfsobject
 archimate_type: business-object
-status: kandidaat
+status: goedgekeurd
 naam: Grafbedekking
 onderwerpen:
 - lijkbezorging
@@ -14,6 +14,7 @@ match:
   ggm: geen
   gemma: geen
 data_object: nee
+objectniveau: subobject
 synoniemen:
 - Gedenkteken (beleid)
 - Grafmonument (beleid)
@@ -27,11 +28,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/grafbedekking.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -54,15 +51,17 @@ Voor een grafbedekking is een vergunning van het college nodig, die de rechthebb
 
 ### Typering
 
-Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+Bedrijfsobject, niveau subobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Objectniveau**: subobject.
+- **Mutaties door deelprocessen**: [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -73,6 +72,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, per graf (Groningen art. 22). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, vergund, geplaatst, onderhouden, verwijderd (Groningen art. 22, 23, 26). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, de gemeente vergunt, onderhoudt en verwijdert grafbedekkingen (Groningen art. 22, 23, 26; VNG-model art. 19–23). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
+| **deel van object**: Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? | Ja, een onderdeel van het graf: staat erop en wordt bij verval van het grafrecht of ruiming van het graf verwijderd (Groningen art. 1 i, 20 lid 4, 26). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 
 ### Relaties

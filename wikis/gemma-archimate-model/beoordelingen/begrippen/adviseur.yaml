@@ -74,7 +74,7 @@ kenmerken:
     - 2026-rijk-wet-publieke-gezondheid-wettekst
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -200,7 +200,7 @@ kenmerken:
     - 2026-rijk-wet-publieke-gezondheid-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element.
 definitie: Verantwoordelijkheid voor het geven van advies aan wie een besluit neemt.
 beschrijving:
 - Een adviseur geeft een bestuursorgaan vooraf advies over een besluit. De wet bepaalt wanneer advies nodig is, bijvoorbeeld het advies van de GGD aan de burgemeester bij een besmet lijk (Wet op de lijkbezorging art. 22a) of aan het college bij besluiten met belangrijke gevolgen voor de publieke gezondheid (Wet publieke gezondheid art. 16).
@@ -219,7 +219,8 @@ relaties:
   vindplaats: art. 22a
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: ketenpartners
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -227,16 +228,10 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-wet-publieke-gezondheid-wettekst

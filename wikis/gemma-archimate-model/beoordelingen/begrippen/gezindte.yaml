@@ -71,7 +71,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   soort_partij:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst synoniem).'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -196,7 +196,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst synoniem).'
 toelichting: Synoniem van Kerkgenootschap (Groningen art. 3 lid 3).
 onderwerpen:
 - lijkbezorging

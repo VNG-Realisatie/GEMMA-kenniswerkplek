@@ -2,7 +2,7 @@
 id: besluit
 type: bedrijfsobject
 archimate_type: business-object
-status: kandidaat
+status: goedgekeurd
 naam: Besluit
 onderwerpen:
 - lijkbezorging
@@ -14,6 +14,7 @@ match:
   ggm: sterk
   gemma: sterk
 data_object: nee
+objectniveau: generiek
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -51,11 +52,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/besluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -77,15 +74,16 @@ Raad, college en burgemeester nemen op grond van de Wet op de lijkbezorging een 
 
 ### Typering
 
-Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Objectniveau**: generiek.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -97,6 +95,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, genomen, bekendgemaakt, in werking, ingetrokken (Awb hfst. 3). [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, vastgelegd in de beslisprocessen (Treffen maatregel bij besmet lijk, Vervallen verklaren grafrecht). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip; Beschikking is zijn specialisatie (besluit redacteur 2026-09-30). [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, een besluit in de zin van de Awb komt in elk onderwerp voor (Awb art. 1:3; besluit redacteur 2026-09-30: generiek en domeinoverstijgend). [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 
 ### Specialisaties
 

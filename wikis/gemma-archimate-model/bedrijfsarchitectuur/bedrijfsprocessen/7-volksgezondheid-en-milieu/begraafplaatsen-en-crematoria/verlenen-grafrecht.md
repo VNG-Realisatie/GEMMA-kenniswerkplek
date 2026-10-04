@@ -2,7 +2,7 @@
 id: verlenen-grafrecht
 type: bedrijfsproces
 archimate_type: business-process
-status: kandidaat
+status: goedgekeurd
 naam: Verlenen grafrecht
 onderwerpen:
 - lijkbezorging
@@ -13,6 +13,8 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
+procesniveau: deelproces
+afnemer: extern
 synoniemen:
 - Uitgifte van een graf (beleid)
 - Vestigen van het uitsluitend recht op een graf (wet)
@@ -27,11 +29,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/verlenen-grafrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -54,16 +52,20 @@ Het college verleent op schriftelijke aanvraag een recht op een particulier graf
 
 ### Typering
 
-Bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, bediend door**: [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md).
+- **Procesniveau**: deelproces.
+- **Procesindeling naar taak, onderdeel van**: [Beheren grafrechten](beheren-grafrechten.md).
+- **Kernobject**: [Grafrecht](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md).
+- **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Behandelen aanvraag product*. Een grafrecht wordt op aanvraag uitgegeven, in volgorde van ligging en voor zover er ruimte is (Groningen art. 14, 16): een product dat gereed ligt.
+- **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 47 zijn nee.
+Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -79,6 +81,9 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, grafrecht op een particulier graf, voor bepaalde of onbepaalde tijd (art. 28). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elke uitgifte van een particulier graf, urnengraf of urnennis. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 28 (schriftelijk, ten minste tien jaar, verlenging); Groningen art. 14, 16 (volgorde, termijnen). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren grafrechten: de verlening, het begin van het grafrecht (art. 28 lid 1; Groningen art. 16). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, het college verleent het grafrecht op schriftelijke aanvraag (Groningen art. 16 lid 1). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de dienst Graf aanvragen (Groningen art. 16; VNG-model art. 15). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
@@ -96,8 +101,8 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Beheren grafrechten](beheren-grafrechten.md) | omvat *aggregatie* | Verlenen grafrecht | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28 lid 1; Groningen art. 16) |
 | [Beslisser](../../../rollen/beslisser.md) | beslist over *toewijzing* | Verlenen grafrecht | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 16 lid 1) |
-| [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | bedient *bediening* | Verlenen grafrecht | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1–33) |
 | [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/model-beheersverordening-begraafplaatsen.md) | is grondslag voor *associatie (gericht)* | Verlenen grafrecht | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (art. 15, 17) |
 | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | vraagt aan *toewijzing* | Verlenen grafrecht | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (Groningen art. 16; VNG-model art. 15) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Verlenen grafrecht | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28 lid 1) |
@@ -116,3 +121,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-04: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.

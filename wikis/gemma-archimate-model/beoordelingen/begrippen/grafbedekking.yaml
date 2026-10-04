@@ -170,14 +170,16 @@ kenmerken:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: 'Een onderdeel van het graf: staat erop en wordt bij verval van het grafrecht of ruiming van het graf verwijderd (Groningen art. 1 i, 20 lid 4, 26).'
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -200,7 +202,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Gedenkteken en grafbeplanting op een graf, gedenkplaats of verstrooiingsplaats.
@@ -231,24 +233,20 @@ relaties:
   vindplaats: Groningen art. 1 i; VNG-model art. 1 m
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+genoemd_begrip: Graf
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 38
+    regel: 36
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
-    voorleggen: true
-    redenen:
-    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    voorleggen: false
     data_object: nee
+    objectniveau: subobject
     generiek: false
     typeregel: 21
-  voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

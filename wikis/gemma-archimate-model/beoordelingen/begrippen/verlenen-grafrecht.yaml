@@ -89,7 +89,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   groepeert_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -149,32 +149,40 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Levert zelf het eindresultaat; geen deelproces van een groter proces.
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Beheren grafrechten: de verlening, het begin van het grafrecht (art. 28 lid 1; Groningen art. 16).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   omvat_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Beheren grafrechten.
   meer_organisaties:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Uitgevoerd door de gemeente.
   eigen_besluit:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Het college verleent het grafrecht op schriftelijke aanvraag (Groningen art. 16 lid 1).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   levert_aanbod:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Realiseert de dienst Graf aanvragen (Groningen art. 16; VNG-model art. 15).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
   bedient_gedrag:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen functie.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen functie.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -221,7 +229,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
@@ -269,28 +277,41 @@ relaties:
   vindplaats: Groningen art. 16; VNG-model art. 15
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+kernobject: grafrecht
+afnemer: extern
+gemma_generiek:
+  id: id-49fe8555-b001-4c86-9a81-20491e16af75
+  onderbouwing: 'Een grafrecht wordt op aanvraag uitgegeven, in volgorde van ligging en voor zover er ruimte is (Groningen art. 14, 16): een product dat gereed ligt.'
+besluiten:
+- datum: '2026-10-04'
+  besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
+  gevolg: verwerkt
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 31
+    regel: 29
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
-    voorleggen: true
-    redenen:
-    - 'procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces'
+    voorleggen: false
     data_object: nee
+    procesniveau: deelproces
     generiek: false
     typeregel: 17
-  voor_te_leggen:
-  - 'procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces'
-  open:
-  - 'procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-vng-retributies
   herkomst: wet
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
   pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md

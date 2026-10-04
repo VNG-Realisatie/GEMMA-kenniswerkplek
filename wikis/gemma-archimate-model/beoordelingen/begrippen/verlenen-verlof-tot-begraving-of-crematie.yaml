@@ -83,7 +83,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   groepeert_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -140,32 +140,39 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Levert zelf het eindresultaat; geen deelproces van een groter proces.
+    waarde: ja
+    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen lijken: zonder verlof geen begraving of crematie (art. 11).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen lijken.
   meer_organisaties:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: De officier van justitie levert bij een niet-natuurlijke dood de verklaring van geen bezwaar aan, maar voert het verlenen niet mee uit (art. 12).
   eigen_besluit:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: De ambtenaar van de burgerlijke stand verleent het schriftelijk verlof (art. 11).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   levert_aanbod:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Levert het verlof tot begraven, verlof tot cremeren of verlof tot ontleding, dat de gemeente na aangifte van overlijden afgeeft (RVO; art. 11).
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bedient_gedrag:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen functie.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen functie.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -207,12 +214,12 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen breder proces in deze wiki (er is geen element voor het behandelen van een vergunningaanvraag); eigen normering, eigen bevoegde (ambtenaar van de burgerlijke stand) en kosteloos.
+    onderbouwing: Geen breder proces in deze wiki; het cluster naar soort werk is een groepering, geen generalisatie. Eigen normering en een eigen bevoegde (ambtenaar van de burgerlijke stand).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
@@ -226,49 +233,37 @@ besluiten:
 - datum: '2026-10-01'
   besluit: 'Afwijzen: geen eigen proces; het verlof blijft een specialisatie van Vergunning (precedent 2026-09-29). De ambtenaar van de burgerlijke stand hangt via de functie Lijkbezorging aan gedrag.'
   gevolg: afwijzen
+- datum: '2026-10-04'
+  besluit: Deelproces van het ketenproces Bezorgen lijken; levert het verlof tot begraven. Herziet het besluit van 2026-10-01 (geen eigen proces).
+  gevolg: verwerkt
 relaties:
-- soort: toegang (raadplegen)
-  naar: verklaring-van-overlijden
-  naam: vereist
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 12
-- soort: toegang (raadplegen)
-  naar: verklaring-van-geen-bezwaar
-  naam: vereist
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 12
 - soort: toegang (registreren)
   naar: vergunning
-  naam: geeft af (verlof tot begraving of crematie)
+  naam: geeft af
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 11
+  via: verlof-tot-begraving-of-crematie
 onderwerpen:
 - lijkbezorging
-status: afgewezen
+kernobject: lijk
+afnemer: extern
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 31
+    regel: 29
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
-    voorleggen: true
-    redenen:
-    - 'procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces'
+    voorleggen: false
     data_object: nee
+    procesniveau: deelproces
     generiek: false
     typeregel: 17
-  voor_te_leggen:
-  - 'procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces'
-  open:
-  - 'procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
   herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-begraving-of-crematie.md

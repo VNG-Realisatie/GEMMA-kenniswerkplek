@@ -2,7 +2,7 @@
 id: regeling
 type: bedrijfsobject
 archimate_type: business-object
-status: kandidaat
+status: goedgekeurd
 naam: Regeling
 onderwerpen:
 - lijkbezorging
@@ -14,6 +14,7 @@ match:
   ggm: geen
   gemma: sterk
 data_object: nee
+objectniveau: generiek
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
 - 2026-vng-wet-op-de-lijkbezorging
@@ -36,11 +37,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/regeling.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -72,15 +69,22 @@ Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschr
 
 ### Typering
 
-Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Objectniveau**: generiek.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
+
+### Specialisaties per onderwerp
+
+#### Lijkbezorging
+
+- **Beheersverordening begraafplaatsen**: Specialisatie zonder pagina van Regeling: verordening van de gemeente over beheer en gebruik van haar begraafplaatsen (VNG; Groningen; VNG-model).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -92,6 +96,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, vastgesteld, gewijzigd, ingetrokken (Groningen art. 31). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, de raad stelt de beheersverordening vast; beheerder en college passen haar toe en stellen nadere regels (Gemeentewet art. 149; Groningen intitulé, art. 2 lid 2). [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie (besluit redacteur 2026-09-30). [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
+| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, regelingen komen in elk onderwerp voor; de gemeentelijke verordening op grond van de Gemeentewet (art. 147). [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
 
 ### Specialisaties
 

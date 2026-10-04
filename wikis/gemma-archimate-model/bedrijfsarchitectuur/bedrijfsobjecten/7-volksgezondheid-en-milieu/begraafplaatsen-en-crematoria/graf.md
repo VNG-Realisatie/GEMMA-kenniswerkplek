@@ -2,7 +2,7 @@
 id: graf
 type: bedrijfsobject
 archimate_type: business-object
-status: kandidaat
+status: goedgekeurd
 naam: Graf
 onderwerpen:
 - lijkbezorging
@@ -14,6 +14,7 @@ match:
   ggm: geen
   gemma: geen
 data_object: ja
+objectniveau: kernobject
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -24,11 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/graf.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -44,10 +41,13 @@ Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groni
 
 ### Typering
 
-Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Objectniveau**: kernobject.
+- **Levensloop bepaald door**: [Beheren graven](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-graven.md), [Ruimen graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md).
+- **Mutaties door deelprocessen**: [Ruimen graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
@@ -89,10 +89,12 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Begraafplaats](begraafplaats.md) | bevat *aggregatie* | Graf | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 d, h) |
-| [Gemeente](../../../rollen/gemeente.md) | heeft het uitsluitend recht tot begraven in (algemeen graf) *toegang (houder)* | Graf | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 13 lid 1) |
+| [Beheren graven](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-graven.md) | beheert *toegang (bijwerken)* | Graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 23, 27, 31; Groningen art. 11–16) |
+| [Bijzetten of verstrooien van de as](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md) | zet bij in of op *toegang (bijwerken)* | Graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 1 b, 3) |
 | [Grafbedekking](grafbedekking.md) | staat op *associatie (gericht)* | Graf | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (Groningen art. 1 i; VNG-model art. 1 m) |
 | [Grafrecht](grafrecht.md) | rust op *associatie (gericht)* | Graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 23 lid 2; Groningen art. 1 p) |
 | [Houder van de begraafplaats](../../../rollen/houder-van-de-begraafplaats.md) | houdt het register van begraven lijken bij *toegang (bronhouder)* | Graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 27) |
+| [Houder van de begraafplaats](../../../rollen/houder-van-de-begraafplaats.md) | bepaalt wie begraven wordt in (algemeen graf) *toegang (houder)* | Graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 23 lid 2; Groningen art. 13 lid 1) |
 | [Ruimen graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | ruimt *toegang (bijwerken)* | Graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 31; Groningen art. 27) |
 | [Uitvoeren lijkbezorging](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | begraaft in *toegang (bijwerken)* | Graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23 lid 2) |
 | [Urn](urn.md) | wordt bijgezet in *associatie (gericht)* | Graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 62 lid 1; Groningen art. 1 p) |

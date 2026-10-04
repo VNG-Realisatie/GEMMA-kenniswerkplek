@@ -170,14 +170,16 @@ kenmerken:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Een deel van een begraafplaats, een crematorium of een graf (art. 62 lid 1 a, b); de bewaarplaats buiten crematorium of begraafplaats is de uitzondering (art. 62 lid 1 c, 64). Geen eigen proces (besluit redacteur 2026-10-04).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -200,7 +202,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Plaats waar urnen worden bijgezet, zoals een urnengraf, urnennis, crematorium of bewaarplaats.
@@ -220,28 +222,24 @@ besluiten:
 - datum: '2026-09-30'
   besluit: 'Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.'
   gevolg: verwerkt
+- datum: '2026-10-04'
+  besluit: 'Geen pagina: een plaats van bijzetting is een deel van een begraafplaats, crematorium of graf, of een bewaarplaats. De vergunning bewaarplaats blijft een specialisatie van Vergunning.'
+  gevolg: verwerkt
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+genoemd_begrip: Begraafplaats
 afgeleid:
   uitkomst:
-    soort: element
-    regel: 38
-    toelichting: Passief (kern ja, 2/2)
-    paginatype: bedrijfsobject
+    soort: onderdeel
+    regel: 37
+    toelichting: Onderdeel van een ander object, zonder eigen proces
     archimate_type: business-object
-    voorleggen: true
-    redenen:
-    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    voorleggen: false
     data_object: nee
+    genoemd_begrip: Begraafplaats
     generiek: false
     typeregel: 21
-  voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/plaats-van-bijzetting.md

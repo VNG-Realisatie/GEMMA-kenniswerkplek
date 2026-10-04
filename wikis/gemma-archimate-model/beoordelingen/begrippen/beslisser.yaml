@@ -80,7 +80,7 @@ kenmerken:
     - 2024-rijk-gemeentewet-wettekst
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -207,7 +207,7 @@ kenmerken:
     - 2024-rijk-gemeentewet-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element.
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 beschrijving:
 - 'Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit redacteur 2026-10-01).'
@@ -256,9 +256,38 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22a
+- soort: toewijzing
+  naar: verlenen-toestemming-bijzondere-begraafplaats
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 40 lid 1, 41
+- soort: toewijzing
+  naar: sluiten-begraafplaats
+  naam: besluit tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 43 lid 2, 44
+- soort: toewijzing
+  naar: verlenen-vergunning-bijzonder-crematorium
+  naam: verleent
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 53
+- soort: toewijzing
+  naar: stellen-andere-termijn
+  naam: stelt
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 17 lid 1
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: gemeente
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -266,16 +295,10 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

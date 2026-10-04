@@ -6,8 +6,10 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
-    waarde: nee
-    onderbouwing: Justitiële partij; geeft de verklaring van geen bezwaar af, maar de gemeente werkt niet structureel met haar samen in de zin van de criteria.
+    waarde: ja
+    onderbouwing: 'Structurele, wettelijke rol in het ketenproces Bezorgen lijken: ontvangt het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (art. 10, 12, 17).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -26,10 +28,12 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+    onderbouwing: Een partij, geen gedrag.
   handelende_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+    waarde: ja
+    onderbouwing: 'Een persoon die activiteiten uitvoert: ontvangt verslagen en geeft verklaringen af (art. 10, 12).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   hoedanigheid:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
@@ -49,20 +53,27 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
   los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
+    waarde: ja
+    onderbouwing: 'Bestaat los van de lijkbezorging, met eigen taken in de strafrechtspleging (RVO: strafrechtelijk onderzoek).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rvo-aangifte-en-akte-van-overlijden
   eigen_rechtspersoon:
     waarde: nee
-    onderbouwing: Niet van toepassing.
+    onderbouwing: Een ambtenaar van het openbaar ministerie, geen eigen rechtspersoon.
   vervult_een_rol:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
+    waarde: ja
+    onderbouwing: Ketenpartner in het ketenproces Bezorgen lijken (art. 10, 12, 17; besluit redacteur 2026-10-04).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   voert_gedrag_uit:
     waarde: nee
-    onderbouwing: Niet van toepassing.
+    onderbouwing: Een actor hangt via zijn rol aan gedrag.
   soort_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    waarde: ja
+    onderbouwing: Bij elke gemeente betrokken bij een niet-natuurlijke dood (art. 10, 12); een soort partij, geen individuele officier.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -158,10 +169,10 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
   zelfstandig_aanbod:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -181,28 +192,49 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip krijgt geen eigen pagina.'
+    waarde: ja
+    onderbouwing: Geen bredere actor in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
-toelichting: 'Buiten scope: justitiële partij, alleen context (art. 10, 12).'
+    onderbouwing: Komt in deze wiki alleen in de lijkbezorging voor.
 onderwerpen:
 - lijkbezorging
-afgeleid:
-  uitkomst:
-    soort: buiten_scope
-    regel: 2
-    toelichting: Niet herkenbaar of niet gemeentelijk
-    voorleggen: false
-    redenen:
-    - 'gemeentelijk: nee'
-    data_object: nee
-    generiek: false
-  voor_te_leggen:
-  - 'gemeentelijk: nee'
-  open:
-  - 'gemeentelijk: nee'
+definitie: Lid van het openbaar ministerie dat beslist over strafrechtelijk onderzoek, ook naar een niet-natuurlijke dood.
+beschrijving:
+- Bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar tegen begraving of crematie afgeeft als er geen strafrechtelijk onderzoek nodig is (Wet op de lijkbezorging art. 10, 12). Zonder die verklaring verleent de ambtenaar van de burgerlijke stand geen verlof. Een uitvaart binnen 36 uur vraagt ook zijn instemming (art. 17; RVO).
+doelgroep: ketenpartners
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen actor Officier van justitie; nieuw voor GEMMA.
+relaties:
+- soort: toewijzing
+  naar: ketenpartner
+  naam: vervult
+  grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 10, 12, 17
+besluiten:
+- datum: '2026-10-04'
+  besluit: Actor als ketenpartner in het ketenproces Bezorgen lijken (Wlb art. 10, 12), zonder eigen deelproces. Herziet de uitkomst buiten scope.
+  gevolg: verwerkt
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 11
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
   herkomst: wet
+  pad: bedrijfsarchitectuur/actoren/officier-van-justitie.md

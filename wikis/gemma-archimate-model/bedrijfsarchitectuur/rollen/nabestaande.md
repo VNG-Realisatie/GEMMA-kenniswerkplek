@@ -2,7 +2,7 @@
 id: nabestaande
 type: rol
 archimate_type: business-role
-status: kandidaat
+status: goedgekeurd
 naam: Nabestaande
 onderwerpen:
 - lijkbezorging
@@ -11,6 +11,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
+doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -21,11 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/nabestaande.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: doelgroep
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -42,6 +39,10 @@ De nabestaande draagt zorg voor de asbus, geeft opdracht tot bijzetting of verst
 ### Typering
 
 Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
+
+### Plaats in de indelingen
+
+- **Doelgroep**: inwoners en ondernemers.
 
 ### Kenmerken
 
@@ -63,7 +64,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Nabestaande | geeft opdracht tot bijzetting bij *toewijzing* | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 2) |
+| Nabestaande | geeft opdracht tot bijzetting bij *toewijzing* | [Bijzetten of verstrooien van de as](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 2) |
 | Nabestaande | draagt zorg voor *toegang (houder)* | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 60 lid 2) |
 
 ## Herkomst

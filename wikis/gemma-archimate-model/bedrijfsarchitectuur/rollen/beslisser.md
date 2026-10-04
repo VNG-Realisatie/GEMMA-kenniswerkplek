@@ -2,7 +2,7 @@
 id: beslisser
 type: rol
 archimate_type: business-role
-status: kandidaat
+status: goedgekeurd
 naam: Beslisser
 onderwerpen:
 - lijkbezorging
@@ -11,6 +11,7 @@ grondslag: bron
 match:
   gemma: sterk
 data_object: nee
+doelgroep: gemeente
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -27,11 +28,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/beslisser.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: doelgroep
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -48,6 +45,10 @@ Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burg
 ### Typering
 
 Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
+
+### Plaats in de indelingen
+
+- **Doelgroep**: gemeente.
 
 ### Kenmerken
 
@@ -74,6 +75,18 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Beslisser | verleent vergunning voor *toewijzing* | [Opgraven lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29 lid 1) |
 | Beslisser | draagt zorg voor *toewijzing* | [Verzorgen gemeentebegrafenis](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21 lid 1) |
 | Beslisser | treft *toewijzing* | [Treffen maatregel bij besmet lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22a) |
+| Beslisser | beslist over *toewijzing* | [Verlenen toestemming bijzondere begraafplaats](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-bijzondere-begraafplaats.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 40 lid 1, 41) |
+| Beslisser | besluit tot *toewijzing* | [Sluiten begraafplaats](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/sluiten-begraafplaats.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 43 lid 2, 44) |
+| Beslisser | verleent *toewijzing* | [Verlenen vergunning bijzonder crematorium](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-vergunning-bijzonder-crematorium.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 53) |
+| Beslisser | stelt *toewijzing* | [Stellen andere termijn](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17 lid 1) |
+
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Burgemeester](../actoren/burgemeester.md) | vervult *toewijzing* | Beslisser | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17, 21, 22a, 29, 68) |
+| [College van B&W](../actoren/college-van-b-w.md) | vervult *toewijzing* | Beslisser | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 43, 53; Groningen art. 16, 20) |
+| [Gemeenteraad](../actoren/gemeenteraad.md) | vervult *toewijzing* | Beslisser | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (Gemeentewet art. 147; Wlb art. 38, 40) |
 
 ## Herkomst
 

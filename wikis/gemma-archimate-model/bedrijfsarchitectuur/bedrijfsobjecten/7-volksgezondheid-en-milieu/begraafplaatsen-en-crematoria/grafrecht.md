@@ -2,7 +2,7 @@
 id: grafrecht
 type: bedrijfsobject
 archimate_type: contract
-status: kandidaat
+status: goedgekeurd
 naam: Grafrecht
 onderwerpen:
 - lijkbezorging
@@ -14,6 +14,7 @@ match:
   ggm: geen
   gemma: geen
 data_object: ja
+objectniveau: kernobject
 synoniemen:
 - Uitsluitend recht op een graf (wet)
 - Recht op een particulier graf (beleid)
@@ -29,11 +30,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/grafrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -59,10 +56,13 @@ Het grafrecht is een afspraak (besluit redacteur 2026-09-30): het legt de rechte
 
 ### Typering
 
-Afspraak. Uitkomst van de beslistabel: Passief, afspraak (kern ja, 2/2).
+Afspraak, niveau kernobject. Uitkomst van de beslistabel: Passief, afspraak (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Objectniveau**: kernobject.
+- **Levensloop bepaald door**: [Beheren grafrechten](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-grafrechten.md), [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md), [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md).
+- **Mutaties door deelprocessen**: [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md), [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
@@ -94,6 +94,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Beheren grafrechten](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-grafrechten.md) | beheert *toegang (bijwerken)* | Grafrecht | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28; Groningen art. 16–20) |
 | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | heeft *toegang (partij)* | Grafrecht | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28; Groningen art. 1 w) |
 | [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | verleent *toegang (registreren)* | Grafrecht | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28; Groningen art. 16) |
 | [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | doet vervallen *toegang (beëindigen)* | Grafrecht | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28 lid 6; Groningen art. 20) |

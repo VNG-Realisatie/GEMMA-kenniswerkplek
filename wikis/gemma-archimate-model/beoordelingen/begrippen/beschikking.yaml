@@ -170,13 +170,13 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -198,8 +198,10 @@ kenmerken:
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   generiek:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: 'Een beschikking komt in elk onderwerp voor (Awb art. 1:3 lid 2; besluit redacteur 2026-09-30: generiek en domeinoverstijgend).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
 definitie: Besluit van een bestuursorgaan in een concreet geval, zoals het verlenen van een vergunning.
@@ -248,24 +250,19 @@ relaties:
   vindplaats: art. 1:3 lid 2
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 38
+    regel: 32
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
-    voorleggen: true
-    redenen:
-    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    voorleggen: false
     data_object: nee
+    objectniveau: generiek
     generiek: false
     typeregel: 21
-  voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

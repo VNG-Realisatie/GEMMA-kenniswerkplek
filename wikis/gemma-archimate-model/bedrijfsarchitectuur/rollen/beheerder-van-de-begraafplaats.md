@@ -1,38 +1,29 @@
 ---
-id: beheerder
+id: beheerder-van-de-begraafplaats
 type: rol
 archimate_type: business-role
-status: kandidaat
-naam: Beheerder
+status: goedgekeurd
+naam: Beheerder van de begraafplaats
 onderwerpen:
 - lijkbezorging
 definitie: Ambtenaar die belast is met de dagelijkse leiding van de gemeentelijke begraafplaatsen.
 grondslag: bron
 match:
-  gemma: zwak
+  gemma: geen
 data_object: nee
+doelgroep: gemeente
 synoniemen:
-- Beheerder van de begraafplaats (beleid)
+- Beheerder (beleid)
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
-gemma_id: id-a96ec982-643b-4c36-aa13-f36a51b85694
-gemma_naam: Beheerder
-gemma_type: business-role
-gemma_map: Business / Procesarchitectuur / Actoren en rollen
-gemma_eigenschappen:
-  Object ID: a96ec982-643b-4c36-aa13-f36a51b85694
 ---
 
-# Beheerder
+# Beheerder van de begraafplaats
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/beheerder.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/beheerder-van-de-begraafplaats.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: doelgroep
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -48,13 +39,18 @@ De beheerder bepaalt tijd en plaats van begravingen in overleg met de uitvaarton
 
 | Synoniem | Context |
 |---|---|
-| Beheerder van de begraafplaats | beleid |
+| Beheerder | beleid |
 
 ## Plaats in het model
 
 ### Typering
 
 Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
+
+### Plaats in de indelingen
+
+- **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Beheerder*. De beheerder van de begraafplaats is een beheerder met de dagelijkse leiding over de gemeentelijke begraafplaatsen (Groningen art. 1 e).
+- **Doelgroep**: gemeente.
 
 ### Kenmerken
 
@@ -76,10 +72,10 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Beheerder | bepaalt tijd en plaats van *toewijzing* | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
-| Beheerder | ziet toe op *toewijzing* | [Ruimen graf](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 27 lid 2) |
-| Beheerder | is belast met de werkzaamheden bij *toewijzing* | [Opgraven lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 28 lid 6) |
-| Beheerder | heeft de dagelijkse leiding van *toegang (beheerder)* | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 e) |
+| Beheerder van de begraafplaats | bepaalt tijd en plaats van *toewijzing* | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
+| Beheerder van de begraafplaats | ziet toe op *toewijzing* | [Ruimen graf](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 27 lid 2) |
+| Beheerder van de begraafplaats | is belast met de werkzaamheden bij *toewijzing* | [Opgraven lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 28 lid 6) |
+| Beheerder van de begraafplaats | heeft de dagelijkse leiding van *toegang (beheerder)* | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 e) |
 
 ## Herkomst
 
@@ -92,4 +88,8 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 ### Afstemming met GEMMA
 
-Match **zwak** met GEMMA-element *Beheerder* (business-role). GEMMA-rol Beheerder heeft geen definitie en staat niet bij begraafplaatsen; verwant door de naam, niet aantoonbaar hetzelfde begrip.
+Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. De GEMMA-rol Beheerder is generiek en heeft geen definitie; deze rol is daarvan een specialisatie voor de begraafplaats (zie Generiek GEMMA-element). Geen match, zodat de export het generieke GEMMA-element niet overschrijft (besluit redacteur 2026-10-04).
+
+### Besluiten redacteur
+
+- 2026-10-04: Naam Beheerder van de begraafplaats, met synoniem Beheerder (beleid). Geen GEMMA-match meer; specialisatie van de generieke GEMMA-rol Beheerder.

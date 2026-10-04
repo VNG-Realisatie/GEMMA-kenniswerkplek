@@ -80,7 +80,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   groepeert_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -127,7 +127,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gedrag:
     waarde: ja
-    onderbouwing: Start Schouwen lijk (art. 3) en Uitvoeren lijkbezorging binnen de termijn (art. 16).
+    onderbouwing: Start het ketenproces Bezorgen lijken, met Schouwen lijk (art. 3) en de termijn voor de lijkbezorging (art. 16).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bijdrage_aan_groter_proces:
@@ -135,28 +135,28 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   meer_organisaties:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   eigen_besluit:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   levert_aanbod:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   bedient_gedrag:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -203,7 +203,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke gebeurtenis zoals aanvraag ontvangen (besluit redacteur 2026-10-04); de plaats bij burgerzaken volgt bij dat onderwerp.
 grondslag: bron
 gemma:
   sterkte: geen
@@ -229,9 +229,20 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 16
+- soort: triggering
+  naar: bezorgen-lijken
+  naam: start
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 3, 16
 onderwerpen:
 - lijkbezorging
-status: review
+besluiten:
+- datum: '2026-10-04'
+  besluit: 'Niet generiek: Overlijden is een specifieke gebeurtenis, geen specialisatie van een generieke GEMMA-gebeurtenis; geen voorstel aan GEMMA.'
+  gevolg: verwerkt
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element

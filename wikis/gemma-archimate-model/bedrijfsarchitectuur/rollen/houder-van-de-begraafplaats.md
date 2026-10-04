@@ -2,7 +2,7 @@
 id: houder-van-de-begraafplaats
 type: rol
 archimate_type: business-role
-status: kandidaat
+status: goedgekeurd
 naam: Houder van de begraafplaats
 onderwerpen:
 - lijkbezorging
@@ -11,20 +11,18 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
+doelgroep: gemeente
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2010-vng-model-beheersverordening-begraafplaatsen
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 ---
 
 # Houder van de begraafplaats
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/houder-van-de-begraafplaats.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: doelgroep
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -41,6 +39,10 @@ De houder van de begraafplaats stelt voor een begraving de identiteit van het li
 ### Typering
 
 Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
+
+### Plaats in de indelingen
+
+- **Doelgroep**: gemeente.
 
 ### Kenmerken
 
@@ -67,6 +69,16 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Houder van de begraafplaats | stelt verklaring van verwaarlozing op bij *toewijzing* | [Vervallen verklaren grafrecht](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28 lid 4) |
 | Houder van de begraafplaats | houdt *toegang (houder)* | [Begraafplaats](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 8, 23) |
 | Houder van de begraafplaats | houdt het register van begraven lijken bij *toegang (bronhouder)* | [Graf](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 27) |
+| Houder van de begraafplaats | bepaalt wie begraven wordt in (algemeen graf) *toegang (houder)* | [Graf](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 23 lid 2; Groningen art. 13 lid 1) |
+| Houder van de begraafplaats | voert uit *toewijzing* | [Onderhouden graf](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
+| Houder van de begraafplaats | houdt in stand *toewijzing* | [Beheren begraafplaatsen](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-begraafplaatsen.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 33, 37) |
+
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Gemeente](../actoren/gemeente.md) | vervult *toewijzing* | Houder van de begraafplaats | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 33, 39 lid 2) |
+| [Kerkgenootschap](../actoren/kerkgenootschap.md) | vervult *toewijzing* | Houder van de begraafplaats | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 37) |
 
 ## Herkomst
 
@@ -76,6 +88,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 |---|---|
 | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) | Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting |
+| [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) | Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023 |
 
 ### Afstemming met GEMMA
 

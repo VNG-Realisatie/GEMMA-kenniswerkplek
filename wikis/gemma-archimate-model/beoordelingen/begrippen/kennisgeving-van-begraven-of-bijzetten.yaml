@@ -77,7 +77,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   groepeert_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -125,28 +125,28 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   meer_organisaties:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   eigen_besluit:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   levert_aanbod:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   bedient_gedrag:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -191,7 +191,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: het begrip krijgt geen eigen pagina.'
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
 toelichting: 'Onderdeel van Uitvoeren lijkbezorging: Stap waarmee Uitvoeren lijkbezorging op de gemeentelijke begraafplaats begint (Groningen art. 7 lid 2; VNG-model art. 7).'
 genoemd_begrip: Uitvoeren lijkbezorging
 onderwerpen:

@@ -71,7 +71,7 @@ kenmerken:
     onderbouwing: De bronnen noemen alleen de mogelijkheid, geen concreet verband met toegewezen gedrag.
   soort_partij:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: De bronnen beschrijven alleen de mogelijkheid; geen verband dat bij elke gemeente voorkomt.
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -196,7 +196,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
 toelichting: 'Geen element: de bronnen beschrijven alleen de mogelijkheid van een gemeenschappelijke regeling, geen bestaand verband met gedrag.'
 onderwerpen:
 - lijkbezorging

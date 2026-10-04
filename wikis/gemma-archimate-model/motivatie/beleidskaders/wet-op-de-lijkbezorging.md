@@ -2,7 +2,7 @@
 id: wet-op-de-lijkbezorging
 type: beleidskader
 archimate_type: driver
-status: kandidaat
+status: goedgekeurd
 naam: Wet op de lijkbezorging
 onderwerpen:
 - lijkbezorging
@@ -11,6 +11,7 @@ grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
+regelgever: rijk
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-vng-wet-op-de-lijkbezorging
@@ -20,11 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/wet-op-de-lijkbezorging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: regelgever
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -41,6 +38,10 @@ De Wet op de lijkbezorging (BWBR0005009) bepaalt wat een lijk is, hoe lijkschouw
 ### Typering
 
 Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern ja, 1/1).
+
+### Plaats in de indelingen
+
+- **Regelgever**: rijk.
 
 ### Kenmerken
 
@@ -72,6 +73,11 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Wet op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Vervallen verklaren grafrecht](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28 lid 4–7) |
 | Wet op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Opgraven lijk](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
 | Wet op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Ruimen graf](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 31) |
+| Wet op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Verlenen toestemming bijzondere begraafplaats](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-bijzondere-begraafplaats.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 40, 41) |
+| Wet op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Sluiten begraafplaats](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/sluiten-begraafplaats.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 43, 44) |
+| Wet op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Verlenen vergunning bijzonder crematorium](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-vergunning-bijzonder-crematorium.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 53–55) |
+| Wet op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Bijzetten of verstrooien van de as](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59–66b) |
+| Wet op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Stellen andere termijn](../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17) |
 
 #### Inkomend
 

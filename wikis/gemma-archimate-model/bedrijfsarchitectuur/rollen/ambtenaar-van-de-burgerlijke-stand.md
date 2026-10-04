@@ -2,7 +2,7 @@
 id: ambtenaar-van-de-burgerlijke-stand
 type: rol
 archimate_type: business-role
-status: kandidaat
+status: goedgekeurd
 naam: Ambtenaar van de burgerlijke stand
 onderwerpen:
 - lijkbezorging
@@ -11,6 +11,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
+doelgroep: gemeente
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rvo-aangifte-en-akte-van-overlijden
@@ -20,11 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/ambtenaar-van-de-burgerlijke-stand.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: doelgroep
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -48,6 +45,10 @@ De ambtenaar van de burgerlijke stand geeft kosteloos het schriftelijk verlof to
 
 Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
+### Plaats in de indelingen
+
+- **Doelgroep**: gemeente.
+
 ### Kenmerken
 
 Alleen de kenmerken met ja; de overige 53 zijn nee.
@@ -68,7 +69,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Ambtenaar van de burgerlijke stand | geeft het verlof tot begraving of crematie af *toewijzing* | [Lijkbezorging](../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
+| Ambtenaar van de burgerlijke stand | verleent *toewijzing* | [Verlenen verlof tot begraving of crematie](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-begraving-of-crematie.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
 
 #### Inkomend
 

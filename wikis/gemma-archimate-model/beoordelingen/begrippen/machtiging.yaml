@@ -161,10 +161,10 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
   zelfstandig_aanbod:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -188,7 +188,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: het begrip krijgt geen eigen pagina.'
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
 toelichting: 'Onderdeel van Uitvoeren lijkbezorging: Stuk dat bij begraving in een particulier graf aan de beheerder wordt overgelegd (Groningen art. 9 lid 2; VNG-model art. 9 lid 2).'
 genoemd_begrip: Uitvoeren lijkbezorging
 onderwerpen:

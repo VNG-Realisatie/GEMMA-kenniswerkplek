@@ -2,7 +2,7 @@
 id: gemeentelijke-lijkschouwer
 type: rol
 archimate_type: business-role
-status: kandidaat
+status: goedgekeurd
 naam: Gemeentelijke lijkschouwer
 onderwerpen:
 - lijkbezorging
@@ -11,6 +11,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
+doelgroep: gemeente
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 ---
@@ -19,11 +20,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/gemeentelijke-lijkschouwer.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: doelgroep
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -40,6 +37,10 @@ Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uit
 ### Typering
 
 Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
+
+### Plaats in de indelingen
+
+- **Doelgroep**: gemeente.
 
 ### Kenmerken
 

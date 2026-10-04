@@ -68,7 +68,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -193,7 +193,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Arts die door het college is benoemd om lijken te schouwen.
 beschrijving:
 - Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uitsluitend forensisch artsen (art. 4, 5). Normaal schouwt de behandelend arts het lijk; de gemeentelijke lijkschouwer is de uitzondering en schouwt alleen als de behandelend arts dat niet doet, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a). Hij kan de elektronische weg openstellen voor mededelingen van de behandelend arts (art. 7 lid 3).
@@ -218,7 +218,8 @@ relaties:
   vindplaats: art. 10 lid 1
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: gemeente
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -226,16 +227,10 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet

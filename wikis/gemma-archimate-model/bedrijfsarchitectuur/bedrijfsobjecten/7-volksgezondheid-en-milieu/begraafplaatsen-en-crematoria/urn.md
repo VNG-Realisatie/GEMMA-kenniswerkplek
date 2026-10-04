@@ -2,7 +2,7 @@
 id: urn
 type: bedrijfsobject
 archimate_type: business-object
-status: kandidaat
+status: goedgekeurd
 naam: Urn
 onderwerpen:
 - lijkbezorging
@@ -14,6 +14,7 @@ match:
   ggm: geen
   gemma: geen
 data_object: nee
+objectniveau: subobject
 synoniemen:
 - Asbus (wet)
 - Sierurn (beleid)
@@ -27,11 +28,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/urn.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -54,15 +51,17 @@ Na de crematie wordt de as geborgen in een of meer gesloten asbussen met naam en
 
 ### Typering
 
-Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+Bedrijfsobject, niveau subobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Objectniveau**: subobject.
+- **Mutaties door deelprocessen**: [Bijzetten of verstrooien van de as](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -73,6 +72,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke asbus met naam en nummer (art. 58 lid 2). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, geborgen, bewaard, bijgezet of verstrooid, geruimd (art. 58, 59, 66). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, bijgezet, geruimd en in het register van de plaats van bijzetting bijgehouden (art. 62, 65, 66). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **deel van object**: Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? | Ja, een onderdeel van het lijk na de crematie: de urn bevat de as, ontstaat bij de crematie en eindigt met de bestemming van de as, binnen de levensloop van het lijk (art. 58, 59, 66). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
@@ -82,17 +82,18 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Urn | wordt bijgezet in *associatie (gericht)* | [Graf](graf.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 62 lid 1; Groningen art. 1 p) |
-| Urn | wordt bijgezet in *associatie (gericht)* | [Plaats van bijzetting](plaats-van-bijzetting.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 1) |
+| Urn | wordt bijgezet op *associatie (gericht)* | [Begraafplaats](begraafplaats.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 1 b) |
+| Urn | wordt bijgezet in *associatie (gericht)* | [Crematorium](crematorium.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 1 a) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Bijzetten of verstrooien van de as](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md) | zet bij of verstrooit de as uit *toegang (bijwerken)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59 lid 2) |
 | [Houder van een plaats van bijzetting](../../../rollen/houder-van-een-plaats-van-bijzetting.md) | houdt register van *toegang (bronhouder)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 65) |
 | [Houder van het crematorium](../../../rollen/houder-van-het-crematorium.md) | bergt as in en bewaart *toegang (houder)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 58, 59 lid 1) |
 | [Nabestaande](../../../rollen/nabestaande.md) | draagt zorg voor *toegang (houder)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 60 lid 2) |
 | [Ruimen graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | ruimt door verstrooiing *toegang (bijwerken)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 66) |
-| [Uitvoeren lijkbezorging](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | zet bij of verstrooit de as uit *toegang (bijwerken)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59 lid 2) |
 
 ## Herkomst
 
@@ -115,3 +116,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-09-30: Naam Urn volgens het gangbare gebruik; asbus (wet, beheersverordening) is een synoniem. Een sierurn met meer asbussen is één urn.
+- 2026-10-04: Subobject van Lijk, met het deelproces Bijzetten of verstrooien van de as.

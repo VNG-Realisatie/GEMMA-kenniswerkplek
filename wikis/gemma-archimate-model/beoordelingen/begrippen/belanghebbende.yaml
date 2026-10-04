@@ -164,10 +164,10 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
   zelfstandig_aanbod:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -191,7 +191,7 @@ kenmerken:
     onderbouwing: 'Niet beoordeeld: het begrip wordt in een ander onderwerp beoordeeld.'
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
 toelichting: 'Verwijzing: beoordelen in het algemene onderwerp besluitvorming. GGM-terugmelding 9 blijft open tot dat onderwerp het element beoordeelt.'
 onderwerpen:
 - lijkbezorging

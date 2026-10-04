@@ -2,7 +2,7 @@
 id: graf-aanvragen
 type: dienst
 archimate_type: business-service
-status: kandidaat
+status: goedgekeurd
 naam: Graf aanvragen
 onderwerpen:
 - lijkbezorging
@@ -13,6 +13,8 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
+afnemer: extern
+domein: Fysieke leefomgeving
 synoniemen:
 - Grafrecht aanvragen (beleid)
 bronnen:
@@ -25,12 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/graf-aanvragen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: domein
-- indelingsveld ontbreekt: afnemer
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -56,6 +53,8 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Afnemer**: extern.
+- **Domein**: Fysieke leefomgeving.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken

@@ -80,7 +80,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -207,7 +207,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Wie de lijkbezorging van een overledene regelt en daarvoor het verlof aanvraagt.
 beschrijving:
 - Degene die in de lijkbezorging voorziet vraagt het verlof tot begraving of crematie aan, of is redelijkerwijs in diens plaats getreden; de lijkbezorging volgt zoveel mogelijk de wens van de overledene (art. 18, 19). Op de gemeentelijke begraafplaats doet hij de kennisgeving van begraven of bijzetten en ondertekent hij zo nodig de machtiging (Groningen art. 7 lid 2, 9). In de praktijk vervult vaak de uitvaartondernemer deze rol namens de nabestaanden.
@@ -229,7 +229,8 @@ relaties:
   vindplaats: Wlb art. 18; Groningen art. 7 lid 2
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: inwoners en ondernemers
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -237,16 +238,10 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

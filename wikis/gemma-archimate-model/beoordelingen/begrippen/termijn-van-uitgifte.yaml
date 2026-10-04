@@ -167,10 +167,10 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst eigenschap).'
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst eigenschap).'
   zelfstandig_aanbod:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -194,7 +194,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: het begrip krijgt geen eigen pagina.'
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst eigenschap).'
 toelichting: 'Eigenschap of indeling van Grafrecht: Eigenschap van het grafrecht en het algemeen graf: looptijd waarvan het verstrijken vooraf wordt meegedeeld (art. 27a, 28 lid 2; Groningen art. 16).'
 genoemd_begrip: Grafrecht
 onderwerpen:

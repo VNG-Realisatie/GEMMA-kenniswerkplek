@@ -1,0 +1,263 @@
+begrip: Beheren crematoria
+onderwerpen:
+- lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Vestiging, uitbreiding, wijziging en opheffing van crematoria zijn wettelijk geregeld (art. 50–56).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente besluit tot vestiging van een gemeentelijk crematorium en verleent de vergunning voor een bijzonder crematorium (art. 53, 54).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: 'Bestaat zelfstandig: het beheer van een crematorium van vestiging tot opheffing.'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per crematorium doorlopen, van vestiging tot opheffing (art. 50 lid 3, 53, 54).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Houder van het crematorium en Beslisser (college) (art. 50, 53, 54).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Legt het crematorium vast, werkt het bij en beëindigt het (art. 50 lid 3, 53, 54).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Het voornemen tot vestiging van een gemeentelijk crematorium, of een aanvraag om vergunning voor een bijzonder crematorium (art. 53, 54).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een crematorium dat gevestigd en in werking is, en na opheffing niet meer bestaat (art. 50 lid 3, 51, 54).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk crematorium, gemeentelijk of bijzonder.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Wet op de lijkbezorging art. 50–56.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: ja
+    onderbouwing: Houders van bijzondere crematoria en nabestaanden (art. 52, 58).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Levert zelf het eindresultaat voor zijn kernobject; geen deel van een groter proces.
+  omvat_processen:
+    waarde: ja
+    onderbouwing: Verlenen vergunning bijzonder crematorium (art. 53–55).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  omvat_levensloop:
+    waarde: ja
+    onderbouwing: 'Omvat de levensloop van het crematorium: vestiging, uitbreiding of wijziging, en opheffing (art. 50 lid 3, 53, 54).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: De houder van een bijzonder crematorium vraagt de vergunning aan als klant; de gemeente voert het proces uit (art. 52, 53).
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in het deelproces.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Het deelproces levert het aanbod.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt in een opgeheven crematorium, niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Specifiek voor de lijkbezorging.
+definitie: 'Het beheer van een crematorium over de hele levensloop: vestigen, uitbreiden of wijzigen, en opheffen.'
+beschrijving:
+- Crematoria zijn gemeentelijk of bijzonder; een bijzonder crematorium wordt gevestigd en in werking gehouden door een kerkgenootschap, een privaatrechtelijke rechtspersoon of een natuurlijk persoon (Wet op de lijkbezorging art. 51, 52). Het college besluit tot vestiging van een gemeentelijk crematorium of verleent een vergunning voor een bijzonder crematorium, in beide gevallen na een openbare kennisgeving van ten minste dertig dagen (art. 53, 54). Bij opheffing van een bijzonder crematorium gaat het register naar het archief van de gemeente (art. 50 lid 3).
+kernobject: crematorium
+afnemer: extern
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor het beheer van crematoria; nieuw voor GEMMA.
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+relaties:
+- soort: aggregatie
+  naar: verlenen-vergunning-bijzonder-crematorium
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 53–55
+- soort: toegang (bijwerken)
+  naar: crematorium
+  naam: beheert
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 50, 51, 54
+besluiten:
+- datum: '2026-10-04'
+  besluit: Nieuw bedrijfsproces met kernobject Crematorium, met het deelproces Verlenen vergunning bijzonder crematorium.
+  gevolg: verwerkt
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-crematoria.md

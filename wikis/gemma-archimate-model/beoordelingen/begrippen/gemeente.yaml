@@ -38,15 +38,14 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
   handelende_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
-  hoedanigheid:
     waarde: ja
-    onderbouwing: De hoedanigheid waarin een afzonderlijke gemeente, als rechtspersoon (BW Boek 2 art. 1), optreedt.
+    onderbouwing: Een rechtspersoon die via haar organen handelt (BW 2 art. 1; Gemeentewet art. 6).
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rijk-bw2-rechtspersonen
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2024-rijk-gemeentewet-wettekst
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Een partij, geen verantwoordelijkheid: de verantwoordelijkheden van de gemeente zijn de rollen die zij vervult (besluit redacteur 2026-10-04).'
   samenwerkingsverband:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
@@ -63,24 +62,28 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
   los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: Gemeente is de hoedanigheid; de afzonderlijke gemeenten (Amsterdam, Utrecht) zijn de partijen die haar vervullen (besluit redacteur 2026-09-30).
-  eigen_rechtspersoon:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
-  vervult_een_rol:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
-  voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan de functie Lijkbezorging en aan Verzorgen gemeentebegrafenis (kosten en verhaal, art. 22) en Onderhouden graf (Groningen art. 23).
+    onderbouwing: 'Blijft bestaan als een rol wegvalt en vervult meer rollen: houder van de begraafplaats, het crematorium en een plaats van bijzetting, en kostendrager (art. 22, 33).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  eigen_rechtspersoon:
+    waarde: ja
+    onderbouwing: Gemeenten bezitten rechtspersoonlijkheid (BW 2 art. 1).
+    bronnen:
     - 2026-rijk-bw2-rechtspersonen
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  soort_partij:
+  vervult_een_rol:
+    waarde: ja
+    onderbouwing: Houder van de begraafplaats (art. 33, 39 lid 2), Houder van het crematorium (art. 51), Houder van een plaats van bijzetting (art. 62) en Kostendrager (art. 22).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  voert_gedrag_uit:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Een actor hangt via zijn rollen aan gedrag.
+  soort_partij:
+    waarde: ja
+    onderbouwing: Elke gemeente; een soort partij, geen individuele gemeente (besluit redacteur 2026-10-04).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -206,96 +209,107 @@ kenmerken:
     - 2026-rijk-bw2-rechtspersonen
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   generiek:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
-definitie: Hoedanigheid van het openbaar lichaam met rechtspersoonlijkheid dat het lokale bestuur vormt, met een raad, een college en een burgemeester.
+    waarde: ja
+    onderbouwing: 'Komt in elk onderwerp voor: de gemeente als partij (Gemeentewet art. 6).'
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
+definitie: Een gemeente als rechtspersoon, met een raad, een college van burgemeester en wethouders en een burgemeester.
 beschrijving:
-- 'Gemeente is de hoedanigheid waarin een afzonderlijke gemeente, zoals Amsterdam of Utrecht, optreedt. Die afzonderlijke gemeenten zijn de actoren: rechtspersonen (BW Boek 2 art. 1) met een raad, een college en een burgemeester (Gemeentewet art. 6). Het GGM en GEMMA kennen daarnaast het bedrijfsobject Gemeente als gedeelte van het grondgebied; dat is een ander begrip.'
+- 'De actor Gemeente staat voor een gemeente als rechtspersoon (BW Boek 2 art. 1), met een raad, een college van burgemeester en wethouders en een burgemeester als organen (Gemeentewet art. 6). Het is een soort partij: elke gemeente, niet een afzonderlijke gemeente zoals Amsterdam of Utrecht.'
+- Wat een gemeente moet of mag doen, zijn verantwoordelijkheden. Die staan in het model als rollen die de gemeente vervult, zoals houder van een begraafplaats of kostendrager; de actor is de partij die ze vervult. Het GGM en GEMMA kennen daarnaast het bedrijfsobject Gemeente als gedeelte van het grondgebied; dat is een ander begrip.
 per_onderwerp:
   lijkbezorging:
-  - De gemeente heeft ten minste één gemeentelijke begraafplaats en is daarvan houder; zij draagt de kosten van de gemeentebegrafenis, verhaalt die, en onderhoudt graven tegen betaling (Wet op de lijkbezorging art. 22, 33, 39 lid 2; Groningen art. 3, 23).
+  - De gemeente vervult de rollen Houder van de begraafplaats, Houder van het crematorium, Houder van een plaats van bijzetting en Kostendrager. Als houder van de gemeentelijke begraafplaats geeft zij graven uit en onderhoudt zij ze tegen betaling; als kostendrager betaalt zij de lijkbezorging als niemand anders erin voorziet en verhaalt zij de kosten (Wet op de lijkbezorging art. 22, 33, 39 lid 2; Groningen art. 3, 23).
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
 besluiten:
 - datum: '2026-09-30'
   besluit: 'Rol, geen actor: Gemeente is de hoedanigheid; de afzonderlijke gemeenten zijn de actoren.'
   gevolg: verwerkt
+- datum: '2026-10-04'
+  besluit: Actor als soort partij (elke gemeente), geen rol meer. Vervult Houder van de begraafplaats, Houder van het crematorium, Houder van een plaats van bijzetting en Kostendrager; omvat Gemeenteraad, College van B&W en Burgemeester. Herziet het besluit van 2026-09-30.
+  gevolg: verwerkt
+- datum: '2026-10-04'
+  besluit: 'Geen GEMMA-match: de actor Gemeente is een gemeente als rechtspersoon, de GEMMA-rol Gemeente is de verantwoordelijkheid die gemeenten hebben (doelgroep van applicatieservices). Het onderscheid staat in definitie, beschrijving en homoniemen.'
+  gevolg: verwerkt
 grondslag: bron
 gemma:
-  id: id-17a7441705094ba9b385c25497844778
-  sterkte: zwak
-  onderbouwing: 'GEMMA-rol Gemeente is een doelgroep, een groepering van applicatieservices voor de medewerkers van de gemeente. Zelfde naam en type, ander gebruik; nieuw: een definitie van de rol zelf.'
+  sterkte: geen
+  onderbouwing: 'De GEMMA-rol Gemeente staat voor de verantwoordelijkheid die gemeenten hebben, en ordent als doelgroep de applicatieservices voor de medewerkers van de gemeente. Dit element is de gemeente als rechtspersoon, een actor: een ander begrip en een ander type, dus geen koppeling (besluit redacteur 2026-10-04).'
 relaties:
 - soort: toewijzing
-  naar: lijkbezorging
-  naam: voert uit
+  naar: houder-van-de-begraafplaats
+  naam: vervult
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 4, 21, 33
+  vindplaats: art. 33, 39 lid 2
 - soort: toewijzing
-  naar: verzorgen-gemeentebegrafenis
-  naam: draagt de kosten van
+  naar: houder-van-het-crematorium
+  naam: vervult
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 51
+- soort: toewijzing
+  naar: houder-van-een-plaats-van-bijzetting
+  naam: vervult
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 62 lid 1
+- soort: toewijzing
+  naar: kostendrager
+  naam: vervult
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22
-- soort: toewijzing
-  naar: onderhouden-graf
-  naam: voert uit
+- soort: aggregatie
+  naar: gemeenteraad
+  naam: omvat
   grondslag: bron
   bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 23
-- soort: toegang (houder)
-  naar: begraafplaats
-  naam: heeft
+  - 2024-rijk-gemeentewet-wettekst
+  vindplaats: art. 6
+- soort: aggregatie
+  naar: college-van-b-w
+  naam: omvat
   grondslag: bron
   bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: Wlb art. 33; Groningen art. 3
-- soort: toegang (houder)
-  naar: graf
-  naam: heeft het uitsluitend recht tot begraven in (algemeen graf)
+  - 2024-rijk-gemeentewet-wettekst
+  vindplaats: art. 6
+- soort: aggregatie
+  naar: burgemeester
+  naam: omvat
   grondslag: bron
   bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 13 lid 1
+  - 2024-rijk-gemeentewet-wettekst
+  vindplaats: art. 6
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: gemeente
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
     regel: 26
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
+    typeregel: 11
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-bw2-rechtspersonen
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: wet
-  gemma:
-    gemma_id: id-17a7441705094ba9b385c25497844778
-    gemma_naam: Gemeente
-    gemma_type: business-role
-    gemma_definitie: Groepering van applicatieservices ten behoeve van de (medewerkers) van de gemeente
-    gemma_map: Business / Bedrijfsrollen
-    gemma_eigenschappen:
-      GEMMA subtype: Doelgroep
-      GEMMA type: Groep
-      Object ID: ff2d196f-11e0-4328-b78a-0714eb1c4e92
-  pad: bedrijfsarchitectuur/rollen/gemeente.md
+  pad: bedrijfsarchitectuur/actoren/gemeente.md
+homoniemen:
+- begrip: Gemeente
+  betekenis: De verantwoordelijkheid die gemeenten hebben; in GEMMA de doelgroep die de applicatieservices voor de medewerkers van de gemeente ordent
+  waar: GEMMA-rol, doelgroep in de Applicatieservice-indeling
+  naamkeuze: 'Deze pagina heet Gemeente: de gemeente als rechtspersoon. De GEMMA-rol wordt niet gekoppeld; de verantwoordelijkheden van de gemeente zijn in de wiki eigen rollen.'

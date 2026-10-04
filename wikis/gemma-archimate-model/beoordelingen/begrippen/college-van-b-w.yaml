@@ -78,8 +78,10 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet van toepassing.
   soort_partij:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Elke gemeente heeft een raad, een college van burgemeester en wethouders en een burgemeester (Gemeentewet art. 6).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -203,8 +205,10 @@ kenmerken:
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
   generiek:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Komt in elk onderwerp voor als bestuursorgaan (Gemeentewet art. 6).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
 definitie: Dagelijks bestuur van de gemeente, bestaande uit de burgemeester en de wethouders.
 beschrijving:
 - Het college bestaat uit de burgemeester, die voorzitter is, en de wethouders (Gemeentewet art. 34). Het voert het dagelijks bestuur van de gemeente, voor zover de wet dat niet aan de raad of de burgemeester opdraagt (art. 160).
@@ -230,33 +234,31 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 43, 53; Groningen art. 16, 20
-- soort: associatie (gericht)
-  naar: gemeentelijke-lijkschouwer
-  naam: benoemt
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 4
 onderwerpen:
 - lijkbezorging
+doelgroep: gemeente
+status: goedgekeurd
 afgeleid:
   uitkomst:
-    soort: geen_element
-    regel: 22
-    toelichting: Eis ontbreekt voor Actor
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
     archimate_type: business-actor
-    voorleggen: true
-    redenen:
-    - 'soort partij: nee'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 11
-  voor_te_leggen:
-  - 'soort partij: nee'
-  open:
-  - 'soort partij: nee'
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: wet
+  gemma:
+    gemma_id: id-af1a85d2-b6d6-44da-b562-ef2ccd69108e
+    gemma_naam: College
+    gemma_type: business-actor
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: af1a85d2-b6d6-44da-b562-ef2ccd69108e
+  pad: bedrijfsarchitectuur/actoren/college-van-b-w.md

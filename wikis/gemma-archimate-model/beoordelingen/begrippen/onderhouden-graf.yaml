@@ -87,7 +87,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   groepeert_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -145,32 +145,36 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Levert zelf het eindresultaat; geen deelproces van een groter proces.
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Beheren graven: het onderhoud van de grafbedekking op het graf (Groningen art. 23).'
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   omvat_processen:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Beheren graven.
   meer_organisaties:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Uitgevoerd door de gemeente.
   eigen_besluit:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
   levert_aanbod:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Realiseert de dienst Onderhoud van graven (Groningen art. 23).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   bedient_gedrag:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen functie.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen functie.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -217,7 +221,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
@@ -252,27 +256,40 @@ relaties:
   vindplaats: art. 23
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+kernobject: grafbedekking
+afnemer: extern
+gemma_generiek:
+  id: id-1a739ba4-08d4-4b65-84d8-4ea89499b4ca
+  onderbouwing: Het jaarlijkse onderhoud van grafbedekking en beplanting op de gemeentelijke begraafplaats (Groningen art. 23; VNG-model art. 20).
+besluiten:
+- datum: '2026-10-04'
+  besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
+  gevolg: verwerkt
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 31
+    regel: 29
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
-    voorleggen: true
-    redenen:
-    - 'procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces'
+    voorleggen: false
     data_object: nee
+    procesniveau: deelproces
     generiek: false
     typeregel: 17
-  voor_te_leggen:
-  - 'procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces'
-  open:
-  - 'procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces'
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-vng-retributies
   herkomst: wet
+  gemma_generiek:
+    gemma_id: id-1a739ba4-08d4-4b65-84d8-4ea89499b4ca
+    gemma_naam: Onderhouden
+    gemma_type: business-process
+    gemma_definitie: Het planmatig (preventief) onderhouden van de openbare ruimte, zoals het maaien van bermen, het onderhoud van plantsoenen, schilderen van gemeente-eigendommen en gebouwen.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1a739ba4-08d4-4b65-84d8-4ea89499b4ca
   pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md

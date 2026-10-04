@@ -75,8 +75,10 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet van toepassing.
   soort_partij:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Een soort partij die in elke gemeente houder van een bijzondere begraafplaats of crematorium kan zijn (art. 37, 52); geen individueel kerkgenootschap.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -201,7 +203,7 @@ kenmerken:
     - 2026-rijk-bw2-rechtspersonen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Kerkelijke gemeenschap, met inbegrip van haar zelfstandige onderdelen en de lichamen waarin kerkgenootschappen zijn verenigd.
 beschrijving:
 - Kerkgenootschappen, hun zelfstandige onderdelen en de lichamen waarin zij zijn verenigd, hebben rechtspersoonlijkheid en worden geregeerd door hun eigen statuut, voor zover dat niet in strijd is met de wet (BW Boek 2 art. 2).
@@ -232,23 +234,21 @@ relaties:
   vindplaats: art. 52
 onderwerpen:
 - lijkbezorging
+doelgroep: ketenpartners
+status: goedgekeurd
 afgeleid:
   uitkomst:
-    soort: geen_element
-    regel: 22
-    toelichting: Eis ontbreekt voor Actor
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
     archimate_type: business-actor
-    voorleggen: true
-    redenen:
-    - 'soort partij: nee'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 11
-  voor_te_leggen:
-  - 'soort partij: nee'
-  open:
-  - 'soort partij: nee'
   bronnen:
   - 2026-rijk-bw2-rechtspersonen
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet
+  pad: bedrijfsarchitectuur/actoren/kerkgenootschap.md

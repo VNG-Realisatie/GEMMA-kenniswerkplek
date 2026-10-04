@@ -80,7 +80,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -207,7 +207,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Naaste van een overledene die zorg draagt voor de uitvaart of de urn.
 beschrijving:
 - De nabestaande draagt zorg voor de asbus, geeft opdracht tot bijzetting of verstrooiing en kan de as laten meegeven (art. 58–60, 62). Op de gemeentelijke begraafplaats kan hij werkzaamheden bij de begraving zelf verrichten en bij ruiming de resten laten herbegraven of cremeren (Groningen art. 7 lid 4, 27 lid 4; VNG-model art. 24 lid 4).
@@ -217,7 +217,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 relaties:
 - soort: toewijzing
-  naar: uitvoeren-lijkbezorging
+  naar: bijzetten-of-verstrooien-van-de-as
   naam: geeft opdracht tot bijzetting bij
   grondslag: bron
   bronnen:
@@ -232,7 +232,8 @@ relaties:
   vindplaats: art. 60 lid 2
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: inwoners en ondernemers
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -240,16 +241,10 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

@@ -74,7 +74,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -200,7 +200,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Verantwoordelijkheid voor het in stand houden en beheren van een begraafplaats.
 beschrijving:
 - De houder van de begraafplaats stelt voor een begraving de identiteit van het lijk vast (art. 8), bepaalt wie in een algemeen graf wordt begraven (art. 23), houdt het register van begraven lijken (art. 27), doet mededeling van het verstrijken van termijnen (art. 27a, 28 lid 2), kan een verklaring van verwaarlozing opstellen (art. 28 lid 4) en geeft last tot het ruimen van graven (art. 31). Bij een gemeentelijke begraafplaats is de gemeente houder; bij een bijzondere begraafplaats een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 37).
@@ -244,9 +244,32 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 27
+- soort: toegang (houder)
+  naar: graf
+  naam: bepaalt wie begraven wordt in (algemeen graf)
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: Wlb art. 23 lid 2; Groningen art. 13 lid 1
+- soort: toewijzing
+  naar: onderhouden-graf
+  naam: voert uit
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 23
+- soort: toewijzing
+  naar: beheren-begraafplaatsen
+  naam: houdt in stand
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 33, 37
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: gemeente
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -254,18 +277,13 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: wet
   pad: bedrijfsarchitectuur/rollen/houder-van-de-begraafplaats.md

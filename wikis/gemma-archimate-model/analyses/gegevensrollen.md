@@ -86,7 +86,7 @@ Een verantwoordelijkheid zegt wat de rol ten opzichte van het object ís. Wat de
 Toelichting bij de keuzes:
 
 - **Houder in plaats van eigenaar.** De wetten spreken van *houden*, niet van eigendom. Eigendom van gegevens is juridisch geen gangbaar begrip, en "eigendom" is in deze wiki uitdrukkelijk geen argument (regel Beslistabel beslist). De GEMMA-betekenis "is eigenaar van" valt onder houder.
-- **Beheerder en verstrekker apart.** In de Wet BAG en de Wet WOZ houdt en beheert de Dienst de landelijke voorziening, en verstrekt de gemeente ook zelf aan eenieder (Wet BAG art. 32). Beheer (de voorziening werkt) en verstrekking (anderen krijgen de gegevens) zijn dus verschillende verantwoordelijkheden. De verantwoordelijkheid *beheerder* is iets anders dan de rol [Beheerder](../bedrijfsarchitectuur/rollen/beheerder.md) van een begraafplaats; die rol kan wel de verantwoordelijkheid beheerder hebben.
+- **Beheerder en verstrekker apart.** In de Wet BAG en de Wet WOZ houdt en beheert de Dienst de landelijke voorziening, en verstrekt de gemeente ook zelf aan eenieder (Wet BAG art. 32). Beheer (de voorziening werkt) en verstrekking (anderen krijgen de gegevens) zijn dus verschillende verantwoordelijkheden. De verantwoordelijkheid *beheerder* is iets anders dan de rol [Beheerder van de begraafplaats](../bedrijfsarchitectuur/rollen/beheerder-van-de-begraafplaats.md); die rol kan wel de verantwoordelijkheid beheerder hebben.
 - **Afnemer in plaats van raadpleger.** Afnemer is de wettelijke term, en draagt de plicht tot gebruik en terugmelding mee. Raadplegen is een handeling.
 - **Partij alleen bij een afspraak.** Een rol bij een contract heeft rechten en plichten, geen gegevensverantwoordelijkheid. Zonder deze naam blijft die relatie een associatie.
 - **Opdrachtgever hoort niet in deze reeks.** De opdrachtgever stuurt de verstrekker aan en heeft geen eigen toegang tot de gegevens; het is een relatie tussen partijen, en meestal een ministerie buiten het gemeentelijk perspectief (regel Gemeentelijk perspectief).
@@ -118,10 +118,10 @@ Een voorlopige indeling van de 21 relaties van een rol naar een object, volgens 
 | [Houder van de begraafplaats](../bedrijfsarchitectuur/rollen/houder-van-de-begraafplaats.md) | houdt | Begraafplaats | toegang: houder |
 | [Houder van een plaats van bijzetting](../bedrijfsarchitectuur/rollen/houder-van-een-plaats-van-bijzetting.md) | houdt | Plaats van bijzetting | toegang: houder |
 | [Houder van het crematorium](../bedrijfsarchitectuur/rollen/houder-van-het-crematorium.md) | houdt | Crematorium | toegang: houder |
-| [Beheerder](../bedrijfsarchitectuur/rollen/beheerder.md) | heeft de dagelijkse leiding van | Begraafplaats | toegang: beheerder |
+| [Beheerder van de begraafplaats](../bedrijfsarchitectuur/rollen/beheerder-van-de-begraafplaats.md) | heeft de dagelijkse leiding van | Begraafplaats | toegang: beheerder |
 | [Rechthebbende op het graf](../bedrijfsarchitectuur/rollen/rechthebbende-op-het-graf.md) | onderhoudt | Grafbedekking | toegang: beheerder |
 | [Nabestaande](../bedrijfsarchitectuur/rollen/nabestaande.md) | draagt zorg voor | Urn | toegang: beheerder |
-| [Beheerder](../bedrijfsarchitectuur/rollen/beheerder.md) | ontvangt (verlof tot begraving of crematie) | Vergunning | toegang: afnemer |
+| [Beheerder van de begraafplaats](../bedrijfsarchitectuur/rollen/beheerder-van-de-begraafplaats.md) | ontvangt (verlof tot begraving of crematie) | Vergunning | toegang: afnemer |
 | [Rechthebbende op het graf](../bedrijfsarchitectuur/rollen/rechthebbende-op-het-graf.md) | heeft | Grafrecht | toegang: partij |
 | [Indiener](../bedrijfsarchitectuur/rollen/indiener.md) | legt met de gemeente vast | Uitvoeringsovereenkomst | toegang: partij |
 | [Ambtenaar van de burgerlijke stand](../bedrijfsarchitectuur/rollen/ambtenaar-van-de-burgerlijke-stand.md) | geeft af (verlof tot begraving of crematie) | Vergunning | handeling: proces dat het verlof verleent (nog geen pagina) |

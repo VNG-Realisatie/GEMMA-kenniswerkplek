@@ -2,7 +2,7 @@
 id: verzorgen-gemeentebegrafenis
 type: bedrijfsproces
 archimate_type: business-process
-status: kandidaat
+status: goedgekeurd
 naam: Verzorgen gemeentebegrafenis
 onderwerpen:
 - lijkbezorging
@@ -13,21 +13,20 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
+procesniveau: bedrijfsproces
+afnemer: extern
 synoniemen:
 - Lijkbezorging door de burgemeester (wet)
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-vng-ggm-2-5-1
 ---
 
 # Verzorgen gemeentebegrafenis
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/verzorgen-gemeentebegrafenis.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -49,16 +48,19 @@ Als niemand voorziet in de lijkschouwing en lijkbezorging, waarschuwt degene die
 
 ### Typering
 
-Bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, bediend door**: [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md).
+- **Procesniveau**: bedrijfsproces.
+- **Procesindeling naar taak, onderdeel van**: [Bezorgen lijken](bezorgen-lijken.md), [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md).
+- **Kernobject**: [Gemeentebegrafenis](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md).
+- **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 47 zijn nee.
+Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -74,6 +76,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een gemeentebegrafenis, met kostenverhaal (art. 21, 22). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk overlijden waarbij niemand in de lijkbezorging voorziet. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 20–22: melding, zorgplicht, kostenverhaal; art. 21 lid 3–6 bij onbekende identiteit. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde? | Ja, omvat de levensloop van de gemeentebegrafenis: de melding dat niemand in de lijkbezorging voorziet (art. 20), de zorg door de burgemeester (art. 21), het kostenverhaal (art. 22) en de afdoening (GGM-attributen datumGemeld, datumBegrafenis, verhaaldBedrag, datumAfgedaan). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [GGM](../../../../../../sources/raw/2026-vng-ggm-2-5-1.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
@@ -83,15 +86,16 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Verzorgen gemeentebegrafenis | betreft *toegang (raadplegen)* | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
-| Verzorgen gemeentebegrafenis | leidt tot *toegang (registreren)* | [Gemeentebegrafenis](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
+| Verzorgen gemeentebegrafenis | legt vast en handelt af *toegang (bijwerken)* | [Gemeentebegrafenis](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Beslisser](../../../rollen/beslisser.md) | draagt zorg voor *toewijzing* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21 lid 1) |
-| [Gemeente](../../../rollen/gemeente.md) | draagt de kosten van *toewijzing* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22) |
-| [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | bedient *bediening* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1–33) |
+| [Bezorgen lijken](bezorgen-lijken.md) | omvat *aggregatie* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
+| [Kostendrager](../../../rollen/kostendrager.md) | draagt de kosten van *toewijzing* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22) |
+| [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md) | omvat *aggregatie* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 20–22) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
 
 ## Herkomst
@@ -101,7 +105,12 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+| [GGM](../../../../../../sources/raw/2026-vng-ggm-2-5-1.md) | Gemeentelijk Gegevensmodel 2.5.1 |
 
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-04: Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), binnen het ketenproces Bezorgen lijken.

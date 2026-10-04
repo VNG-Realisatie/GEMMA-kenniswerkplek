@@ -74,8 +74,10 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet van toepassing.
   soort_partij:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Elke gemeente heeft een raad, een college van burgemeester en wethouders en een burgemeester (Gemeentewet art. 6).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -199,8 +201,10 @@ kenmerken:
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
   generiek:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: Komt in elk onderwerp voor als bestuursorgaan (Gemeentewet art. 6).
+    bronnen:
+    - 2024-rijk-gemeentewet-wettekst
 definitie: Bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt.
 beschrijving:
 - De raad vertegenwoordigt de gehele bevolking van de gemeente (Gemeentewet art. 7). Hij stelt de gemeentelijke verordeningen vast, voor zover die bevoegdheid niet bij het college of de burgemeester ligt (art. 147, 149), en benoemt de wethouders (art. 35). De burgemeester is voorzitter van de raad (art. 9).
@@ -226,23 +230,28 @@ relaties:
   vindplaats: Gemeentewet art. 147; Wlb art. 38, 40
 onderwerpen:
 - lijkbezorging
+doelgroep: gemeente
+status: goedgekeurd
 afgeleid:
   uitkomst:
-    soort: geen_element
-    regel: 22
-    toelichting: Eis ontbreekt voor Actor
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
     archimate_type: business-actor
-    voorleggen: true
-    redenen:
-    - 'soort partij: nee'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 11
-  voor_te_leggen:
-  - 'soort partij: nee'
-  open:
-  - 'soort partij: nee'
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet
+  gemma:
+    gemma_id: id-b69cb101-8708-47de-9ac1-e138f205a49f
+    gemma_naam: Gemeenteraad
+    gemma_type: business-actor
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: b69cb101-8708-47de-9ac1-e138f205a49f
+  pad: bedrijfsarchitectuur/actoren/gemeenteraad.md

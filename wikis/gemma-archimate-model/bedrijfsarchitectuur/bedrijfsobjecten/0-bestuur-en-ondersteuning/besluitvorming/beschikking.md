@@ -2,7 +2,7 @@
 id: beschikking
 type: bedrijfsobject
 archimate_type: business-object
-status: kandidaat
+status: goedgekeurd
 naam: Beschikking
 onderwerpen:
 - lijkbezorging
@@ -14,6 +14,7 @@ match:
   ggm: sterk
   gemma: sterk
 data_object: nee
+objectniveau: generiek
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -49,11 +50,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/beschikking.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -75,15 +72,26 @@ Burgemeester, college en gemeenteraad nemen een reeks beschikkingen die elk een 
 
 ### Typering
 
-Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Objectniveau**: generiek.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
+
+### Specialisaties per onderwerp
+
+#### Lijkbezorging
+
+- **Aanwijzing van grond voor bijzondere begraafplaats**: Specialisatie zonder pagina van Beschikking: aanwijzing door de gemeenteraad (art. 40 lid 1). Genoemd door [Verlenen toestemming bijzondere begraafplaats](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-bijzondere-begraafplaats.md).
+- **Andere termijn**: Specialisatie zonder pagina van Beschikking: door de burgemeester gestelde afwijkende termijn voor begraving of crematie (art. 17); gangbaar vervroegen of uitstellen van de uitvaart. Genoemd door [Stellen andere termijn](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md).
+- **Maatregel bij besmet lijk**: Specialisatie zonder pagina van Beschikking: maatregel van de burgemeester na advies van de GGD (art. 22a); het treffen ervan is het proces Treffen maatregel bij besmet lijk. Genoemd door [Treffen maatregel bij besmet lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md).
+- **Sluiting van een begraafplaats**: Specialisatie zonder pagina van Beschikking: besluit van B&W tot sluiting of geslotenverklaring (art. 43, 44). Genoemd door [Sluiten begraafplaats](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/sluiten-begraafplaats.md).
+- **Verklaring van verwaarlozing**: Specialisatie zonder pagina van Beschikking: verklaring van de houder dat het onderhoud van een particulier graf kennelijk verwaarloosd is (art. 28 lid 4). Genoemd door [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -95,6 +103,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, aangevraagd, genomen, bekendgemaakt, in bezwaar, ingetrokken (Awb). [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, vastgelegd in Treffen maatregel bij besmet lijk en Vervallen verklaren grafrecht (Wlb art. 22a, 28 lid 4). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, specialisatie van Besluit met eigen regels (bezwaar en beroep, aanvraag); eigen GEMMA-element. [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, een beschikking komt in elk onderwerp voor (Awb art. 1:3 lid 2; besluit redacteur 2026-09-30: generiek en domeinoverstijgend). [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 
 ### Specialisaties
 
@@ -117,9 +126,12 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Treffen maatregel bij besmet lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md) | treft (maatregel bij besmet lijk) *toegang (registreren)* | Beschikking | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22a) |
+| [Sluiten begraafplaats](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/sluiten-begraafplaats.md) | besluit tot *toegang (registreren)* | Beschikking | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 43 lid 2, 44) |
+| [Stellen andere termijn](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) | stelt *toegang (registreren)* | Beschikking | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17 lid 1) |
+| [Treffen maatregel bij besmet lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md) | treft *toegang (registreren)* | Beschikking | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22a) |
 | [Vergunning](vergunning.md) | is een *specialisatie* | Beschikking | [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (Awb art. 1:3 lid 2; Wlb art. 29, 53) |
-| [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | stelt op (verklaring van verwaarlozing) *toegang (registreren)* | Beschikking | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28 lid 4) |
+| [Verlenen toestemming bijzondere begraafplaats](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-bijzondere-begraafplaats.md) | wijst aan *toegang (registreren)* | Beschikking | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 40 lid 1) |
+| [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | stelt op *toegang (registreren)* | Beschikking | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28 lid 4) |
 
 ## Herkomst
 

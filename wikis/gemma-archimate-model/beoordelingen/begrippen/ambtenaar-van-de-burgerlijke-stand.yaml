@@ -74,7 +74,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: een rol, geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -200,7 +200,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken.
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt de akten van de burgerlijke stand op, waaronder de akte van overlijden na aangifte bij de gemeente waar iemand is overleden (Wet op de lijkbezorging art. 13, 14; Ondernemersplein).
@@ -213,15 +213,16 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 relaties:
 - soort: toewijzing
-  naar: lijkbezorging
-  naam: geeft het verlof tot begraving of crematie af
+  naar: verlenen-verlof-tot-begraving-of-crematie
+  naam: verleent
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 11
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+doelgroep: gemeente
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -229,16 +230,10 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: doelgroep'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 12
-  voor_te_leggen:
-  - 'indelingsveld ontbreekt: doelgroep'
-  open:
-  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden

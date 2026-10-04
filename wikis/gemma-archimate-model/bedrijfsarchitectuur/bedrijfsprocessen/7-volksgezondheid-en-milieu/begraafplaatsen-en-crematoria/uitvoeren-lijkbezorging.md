@@ -2,17 +2,19 @@
 id: uitvoeren-lijkbezorging
 type: bedrijfsproces
 archimate_type: business-process
-status: kandidaat
+status: goedgekeurd
 naam: Uitvoeren lijkbezorging
 onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk, met de bestemming van de as.
+definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk.
 grondslag: bron
 match:
   gemma: geen
 data_object: nee
+procesniveau: deelproces
+afnemer: extern
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -22,37 +24,37 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/uitvoeren-lijkbezorging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
 ### Definitie
 
-Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk, met de bestemming van de as.
+Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk.
 
 ### Beschrijving
 
-De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie, ontleding, bijzetting en verstrooiing zijn varianten zonder eigen pagina.
+De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie en ontleding zijn varianten zonder eigen pagina; het bijzetten of verstrooien van de as is een eigen deelproces.
 
 ## Plaats in het model
 
 ### Typering
 
-Bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, bediend door**: [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md).
+- **Procesniveau**: deelproces.
+- **Procesindeling naar taak, onderdeel van**: [Bezorgen lijken](bezorgen-lijken.md), [Uitbaten begraafplaatsen en crematoria](uitbaten-begraafplaatsen-en-crematoria.md).
+- **Kernobject**: [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md).
+- **Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/exploiteren-van-begraafplaatsen.md).
 - **Gestart door gebeurtenis**: [Overlijden](../../../gebeurtenissen/overlijden.md).
+- **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 47 zijn nee.
+Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -68,16 +70,14 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, begraven of gecremeerd lijk, bijgezette of verstrooide as (art. 1, 59). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elke uitvaart. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 16 (termijn), 23 (graf), 49 (crematorium), 59 (bestemming as); Groningen art. 7–10 (tijden, stukken). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki; begraving, crematie, bijzetting en verstrooiing zijn zijn varianten. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan het ketenproces Bezorgen lijken: de begraving, crematie of bijzetting zelf (art. 1, 23, 49). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki; begraving, crematie en ontleding zijn zijn varianten. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Specialisaties
 
 - **Begraving**: Begraven van een lijk op een begraafplaats, in een algemeen of particulier graf (art. 23). Geen eigen pagina.
 - **Crematie**: Cremeren van een lijk in een crematorium (art. 49). Geen eigen pagina.
 - **Ontleding**: Ontleden van een lijk in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68). Geen eigen pagina.
-- **Bijzetting**: Bijzetten van een asbus in een crematorium, graf, urnennis of bewaarplaats (art. 62). Geen eigen pagina.
-- **Verstrooiing**: Verstrooien van as op een daartoe bestemd terrein of in open zee (art. 66a). Geen eigen pagina.
-- **Incidentele asverstrooiing**: Verstrooien van as op een aangewezen plek op of buiten de begraafplaats, met toestemming van het college (Groningen art. 1 m, 21). Geen eigen pagina.
 
 ### Relaties
 
@@ -85,10 +85,9 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Uitvoeren lijkbezorging | vereist (verlof tot begraving of crematie) *toegang (raadplegen)* | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
+| Uitvoeren lijkbezorging | vereist *toegang (raadplegen)* | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
 | Uitvoeren lijkbezorging | bezorgt *toegang (bijwerken)* | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1) |
 | Uitvoeren lijkbezorging | begraaft in *toegang (bijwerken)* | [Graf](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23 lid 2) |
-| Uitvoeren lijkbezorging | zet bij of verstrooit de as uit *toegang (bijwerken)* | [Urn](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59 lid 2) |
 | Uitvoeren lijkbezorging | geschiedt op *toegang (raadplegen)* | [Begraafplaats](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23 lid 1) |
 | Uitvoeren lijkbezorging | geschiedt in *toegang (raadplegen)* | [Crematorium](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 49) |
 
@@ -96,14 +95,15 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Beheerder](../../../rollen/beheerder.md) | bepaalt tijd en plaats van *toewijzing* | Uitvoeren lijkbezorging | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
+| [Beheerder van de begraafplaats](../../../rollen/beheerder-van-de-begraafplaats.md) | bepaalt tijd en plaats van *toewijzing* | Uitvoeren lijkbezorging | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 7 lid 1) |
+| [Bezorgen lijken](bezorgen-lijken.md) | omvat *aggregatie* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1, 16) |
 | [Degene die in de lijkbezorging voorziet](../../../rollen/degene-die-in-de-lijkbezorging-voorziet.md) | voorziet in en vraagt het verlof aan voor *toewijzing* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 18; Groningen art. 7 lid 2) |
+| [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/exploiteren-van-begraafplaatsen.md) | bedient *bediening* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23) |
 | [Houder van de begraafplaats](../../../rollen/houder-van-de-begraafplaats.md) | stelt de identiteit vast bij *toewijzing* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 8 lid 2) |
-| [Houder van het crematorium](../../../rollen/houder-van-het-crematorium.md) | bergt de as en zorgt voor de bestemming bij *toewijzing* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 58, 59) |
-| [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md) | bedient *bediening* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1–33) |
-| [Nabestaande](../../../rollen/nabestaande.md) | geeft opdracht tot bijzetting bij *toewijzing* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 2) |
+| [Houder van het crematorium](../../../rollen/houder-van-het-crematorium.md) | bergt de as bij *toewijzing* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 58) |
 | [Overlijden](../../../gebeurtenissen/overlijden.md) | leidt tot *triggering* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 16) |
 | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | machtigt tot begraving in het particulier graf *toewijzing* | Uitvoeren lijkbezorging | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (Groningen art. 9 lid 2; VNG-model art. 9 lid 2) |
+| [Uitbaten begraafplaatsen en crematoria](uitbaten-begraafplaatsen-en-crematoria.md) | omvat *aggregatie* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 49; Groningen art. 7) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Uitvoeren lijkbezorging | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1, 23, 49) |
 
 ## Herkomst
@@ -118,3 +118,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-04: Bijzetting en verstrooiing van de as gaan naar het nieuwe deelproces Bijzetten of verstrooien van de as, met Urn als subobject van Lijk.

@@ -201,7 +201,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Model van de VNG voor de verordening waarin een gemeente het beheer en het gebruik van haar begraafplaatsen regelt.
 beschrijving:
 - De raad stelt de beheersverordening vast op grond van art. 35 Wet op de lijkbezorging en art. 149 Gemeentewet; het model geeft de begripsbepalingen (particulier en algemeen graf, urnengraf, urnennis, gedenkplaats, rechthebbende, gebruiker, beheerder) en de regels voor uitgifte, termijnen, overschrijving, afstand, grafbedekking, onderhoud en ruiming (aanhef, art. 1–24).
@@ -274,7 +274,8 @@ relaties:
   vindplaats: aanhef; VNG inleiding
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+regelgever: VNG-model
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
@@ -282,17 +283,12 @@ afgeleid:
     toelichting: 'Regeling als geheel, landelijk (kern ja, 0/1, ontbreekt: *in werking*)'
     paginatype: beleidskader
     archimate_type: driver
-    voorleggen: true
-    redenen:
-    - 'indelingsveld ontbreekt: regelgever'
+    voorleggen: false
     data_object: nee
     generiek: false
     typeregel: 16
   voor_te_leggen:
-  - 'indelingsveld ontbreekt: regelgever'
   - 'grondslag regelgeving: altijd voorleggen'
-  open:
-  - 'indelingsveld ontbreekt: regelgever'
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-vng-wet-op-de-lijkbezorging

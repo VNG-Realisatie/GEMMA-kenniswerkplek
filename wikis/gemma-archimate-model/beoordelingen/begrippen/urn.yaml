@@ -173,14 +173,16 @@ kenmerken:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: 'Een onderdeel van het lijk na de crematie: de urn bevat de as, ontstaat bij de crematie en eindigt met de bestemming van de as, binnen de levensloop van het lijk (art. 58, 59, 66).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -203,7 +205,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Houder waarin de as van een overledene wordt geborgen en wordt bewaard, bijgezet of verstrooid.
@@ -217,6 +219,9 @@ synoniemen:
 besluiten:
 - datum: '2026-09-30'
   besluit: Naam Urn volgens het gangbare gebruik; asbus (wet, beheersverordening) is een synoniem. Een sierurn met meer asbussen is één urn.
+  gevolg: verwerkt
+- datum: '2026-10-04'
+  besluit: Subobject van Lijk, met het deelproces Bijzetten of verstrooien van de as.
   gevolg: verwerkt
 grondslag: bron
 ggm:
@@ -235,32 +240,35 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 62 lid 1; Groningen art. 1 p
 - soort: associatie (gericht)
-  naar: plaats-van-bijzetting
+  naar: begraafplaats
+  naam: wordt bijgezet op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 62 lid 1 b
+- soort: associatie (gericht)
+  naar: crematorium
   naam: wordt bijgezet in
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 62 lid 1
+  vindplaats: art. 62 lid 1 a
 onderwerpen:
 - lijkbezorging
-status: kandidaat
+genoemd_begrip: Lijk
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 38
+    regel: 36
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
-    voorleggen: true
-    redenen:
-    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    voorleggen: false
     data_object: nee
+    objectniveau: subobject
     generiek: false
     typeregel: 21
-  voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

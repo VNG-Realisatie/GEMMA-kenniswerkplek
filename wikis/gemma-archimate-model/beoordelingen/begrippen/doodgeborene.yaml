@@ -162,10 +162,10 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst eigenschap).'
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst eigenschap).'
   zelfstandig_aanbod:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -189,7 +189,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: het begrip krijgt geen eigen pagina.'
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst eigenschap).'
 toelichting: 'Eigenschap of indeling van Lijk: Indeling van Lijk: een lijk is het lichaam van een overledene of doodgeborene (art. 2 lid 1).'
 genoemd_begrip: Lijk
 onderwerpen:

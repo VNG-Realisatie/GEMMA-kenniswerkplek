@@ -2,7 +2,7 @@
 id: model-beheersverordening-begraafplaatsen
 type: beleidskader
 archimate_type: driver
-status: kandidaat
+status: goedgekeurd
 naam: Model-beheersverordening begraafplaatsen
 onderwerpen:
 - lijkbezorging
@@ -11,6 +11,7 @@ grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
+regelgever: VNG-model
 synoniemen:
 - VNG Model beheersverordening begraafplaatsen (beleid)
 bronnen:
@@ -22,11 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/model-beheersverordening-begraafplaatsen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: regelgever
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -51,6 +48,10 @@ De openbare versie is die van 2010, met toelichting; nieuwere versies staan in d
 ### Typering
 
 Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern ja, 0/1, ontbreekt: *in werking*).
+
+### Plaats in de indelingen
+
+- **Regelgever**: VNG-model.
 
 ### Kenmerken
 

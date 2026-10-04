@@ -170,13 +170,15 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
   invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    waarde: ja
+    onderbouwing: De officier van justitie geeft haar af; de ambtenaar van de burgerlijke stand ontvangt haar voor het verlof (art. 12).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -199,7 +201,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Verklaring van de officier van justitie dat hij geen bezwaar heeft tegen begraving of crematie.
@@ -218,24 +220,18 @@ besluiten:
   gevolg: afwijzen
 onderwerpen:
 - lijkbezorging
-status: afgewezen
+genoemd_begrip: Verlenen verlof tot begraving of crematie
 afgeleid:
   uitkomst:
-    soort: element
-    regel: 38
-    toelichting: Passief (kern ja, 2/2)
-    paginatype: bedrijfsobject
+    soort: onderdeel
+    regel: 33
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
-    voorleggen: true
-    redenen:
-    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    voorleggen: false
     data_object: nee
+    genoemd_begrip: Verlenen verlof tot begraving of crematie
     generiek: false
     typeregel: 21
-  voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden

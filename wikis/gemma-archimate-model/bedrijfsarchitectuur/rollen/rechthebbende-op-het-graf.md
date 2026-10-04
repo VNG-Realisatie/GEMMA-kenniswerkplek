@@ -2,7 +2,7 @@
 id: rechthebbende-op-het-graf
 type: rol
 archimate_type: business-role
-status: kandidaat
+status: goedgekeurd
 naam: Rechthebbende op het graf
 onderwerpen:
 - lijkbezorging
@@ -11,6 +11,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
+doelgroep: inwoners en ondernemers
 synoniemen:
 - Rechthebbende (beleid)
 bronnen:
@@ -23,11 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/rechthebbende-op-het-graf.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- indelingsveld ontbreekt: doelgroep
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -60,6 +57,10 @@ Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, a
 ### Typering
 
 Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
+
+### Plaats in de indelingen
+
+- **Doelgroep**: inwoners en ondernemers.
 
 ### Kenmerken
 

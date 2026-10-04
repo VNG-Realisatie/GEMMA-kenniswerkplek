@@ -2,7 +2,7 @@
 id: heffing
 type: bedrijfsobject
 archimate_type: business-object
-status: kandidaat
+status: goedgekeurd
 naam: Heffing
 onderwerpen:
 - lijkbezorging
@@ -14,6 +14,7 @@ match:
   ggm: exact
   gemma: exact
 data_object: ja
+objectniveau: generiek
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
 - 2026-vng-retributies
@@ -50,11 +51,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/heffing.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -76,15 +73,23 @@ De gemeente heft lijkbezorgingsrechten, ook begraafplaatsrechten genoemd: retrib
 
 ### Typering
 
-Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
+- **Objectniveau**: generiek.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Belastingen.
+
+### Specialisaties per onderwerp
+
+#### Lijkbezorging
+
+- **Lijkbezorgingsrechten**: Specialisatie zonder pagina van Heffing: retributies voor het gebruik van begraafplaats of crematorium (VNG retributies).
+- **Retributie**: Specialisatie zonder pagina van Heffing: heffing voor het gebruik van gemeentebezittingen of het genot van gemeentelijke diensten (Gemeentewet art. 229; VNG retributies).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -97,6 +102,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, vastgelegd bij de uitgifte van een graf en het onderhoud ervan (VNG retributies; Groningen art. 23). [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, GGM-entiteit. [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie (besluit redacteur 2026-09-30). [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
+| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, heffingen komen in veel onderwerpen voor: belastingen en rechten (Gemeentewet art. 216, 229). [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
 
 ### Specialisaties
 
