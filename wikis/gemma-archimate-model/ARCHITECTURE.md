@@ -161,7 +161,7 @@ De match kiest de AI op betekenis; het afleid-script haalt bij elke run de lette
 
 ## 12. Export naar Archi
 
-[tools/archimate_export.py](tools/archimate_export.py) schrijft de goedgekeurde elementen en relaties als `export/gemma-archimate-model.archimate`, om in Archi te bekijken en in het GEMMA-model te importeren (*Import › Import another model into selected model*: Archi voegt samen op id). Werkwijze: skill [gemma-archimate-model-archimate-export](.agents/skills/gemma-archimate-model-archimate-export/SKILL.md).
+[tools/archimate_export.py](tools/archimate_export.py) schrijft de goedgekeurde elementen en relaties als `export/gemma-archimate-model.archimate`, om in Archi te bekijken en in het GEMMA-model te importeren (*Import › Another model into selected model*: Archi voegt samen op id). Werkwijze: skill [gemma-archimate-model-archimate-export](.agents/skills/gemma-archimate-model-archimate-export/SKILL.md).
 
 - **Id's:** een element met een GEMMA-match krijgt het GEMMA-id en staat in dezelfde mappen (met dezelfde map-id's) als in GEMMA; een nieuw element krijgt een vast id (uuid5 van het begrip-id) onder `wiki-gemma-model`. Een relatie krijgt het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id. Daarvoor is het GEMMA-model als `.archimate` nodig; de AMEFF heeft geen map-id's.
 - **Inhoud:** naam en definitie uit de wiki (ook over een GEMMA-element heen, met de oude als eigenschap); de GEMMA-eigenschappen en het profiel letterlijk; eigen eigenschappen `wiki-gemma-model …`, onder meer `procesniveau`, `objectniveau` en de indelingsvelden.

@@ -1,7 +1,7 @@
 /*
  * wiki-gemma-model sync (jArchi)
  *
- * Draai dit script in Archi op het GEMMA-model, direct na "Import > Import another model into selected model" van
+ * Draai dit script in Archi op het GEMMA-model, direct na "Import > Another model into selected model" van
  * export/gemma-archimate-model.archimate. Het maakt de import een volledige sync:
  * - een object (element of relatie) met een oudere "wiki-gemma-model exportdatum" dan de nieuwste stond in een
  *   eerdere export, maar niet meer in deze;

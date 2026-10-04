@@ -10,7 +10,7 @@ metadata:
 
 # Export naar Archi
 
-`tools/archimate_export.py` schrijft `export/gemma-archimate-model.archimate`, in het opslagformaat van Archi (ook dat van coArchi 2). Archi voegt bij *Import › Import another model into selected model* samen op id. Daarom neemt de export de id's van GEMMA over:
+`tools/archimate_export.py` schrijft `export/gemma-archimate-model.archimate`, in het opslagformaat van Archi (ook dat van coArchi 2). Archi voegt bij *Import › Another model into selected model* samen op id. Daarom neemt de export de id's van GEMMA over:
 
 | Wat | Id | Map |
 |---|---|---|
@@ -30,7 +30,7 @@ Naam en definitie komen uit de wiki en overschrijven die van GEMMA. De GEMMA-eig
 3. **Bekijken:** in Archi `File › Open` op `export/gemma-archimate-model.archimate`. Voor een blik op alles wat nog niet goedgekeurd is: `--concept` schrijft `.work/export/gemma-archimate-model-concept.archimate`, met modelnaam `CONCEPT – wiki-gemma-model`. Dat bestand is nooit voor import in GEMMA; het sync-script weigert het.
 4. **Importeren in GEMMA** (door de redacteur of het GEMMA-team, niet door de AI):
    1. De eerste keer, en na een wijziging van deze tool: op een kopie van het GEMMA-model.
-   2. Selecteer het GEMMA-model in de modelboom, dan `File › Import › Import another model into selected model…` (Archi 5.10; de naam verschilt per versie), kies het exportbestand en zet de optie aan om bestaande objecten bij te werken.
+   2. Selecteer het GEMMA-model in de modelboom, dan `File › Import › Another model into selected model…` (Archi 5.10; de naam verschilt per versie), kies het exportbestand en zet de optie aan om bestaande objecten bij te werken.
    3. Draai in Archi het jArchi-script [scripts/wiki-gemma-model-sync.ajs](scripts/wiki-gemma-model-sync.ajs) (de plugin jArchi is nodig). Het toont eerst de lijst en voert pas uit na bevestiging. Wat de wiki zelf maakte en niet meer in de export staat, wordt verwijderd. Bij een GEMMA-object dat niet meer gekoppeld is, gaan alleen de `wiki-gemma-model`-eigenschappen weg.
    4. Controleer het resultaat en commit met coArchi.
 5. **Daarna:** na de volgende GEMMA-release (skill `gemma-archimate-model-gemma-release`) staan de `wiki-gemma-model`-eigenschappen in GEMMA. De export negeert ze bij het overnemen en zet ze opnieuw.
