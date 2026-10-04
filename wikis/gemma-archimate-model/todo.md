@@ -12,6 +12,18 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **GGM-terugmeldingen 1–9** bij de herbeoordeling koppelen aan de nieuwe beoordelingen; een melding die niet meer van toepassing is, voorleggen.
 - **Links in de analyses** (`analyses/gegevensrollen.md`, `analyses/gemma-kennismodel.md`) naar de oude elementpagina's bijwerken zodra de elementen opnieuw bestaan.
 
+## Indelingen (analyse 2026-10-04, `analyses/indelingen.md`)
+
+- **Beslistabel omzetten**: de nieuwe kenmerken, de kernrelaties en stap 7 (indeling) in `tools/bepaal_type.py`, met de indelingsvelden, controles en signalen; daarna render (frontmatter `procesniveau` en `objectniveau`, *Plaats in de indelingen*, `overzicht.md` met views per indeling) en export (eigenschappen, groeperingen). Daarna lijkbezorging opnieuw beoordelen.
+- **UPL-lijsten als bron**: de externe en interne lijst van GEMMA Online (*Producten en diensten procesarchitectuur*) opnemen met `gemma-archimate-model-ingest`. Daarna de producten en diensten van lijkbezorging beoordelen (16 in de externe lijst). Via de grondslagkolommen bronnen zoeken voor de gaten: de model-APV (asverstrooiing) en het Besluit op de lijkbezorging (vervoersdocumenten).
+- **Voorstellen aan het GEMMA-team**:
+  - het beleidsdomein *Begraafplaatsen en crematoria* onder taakveld 7;
+  - generieke gebeurtenissen (aanvraag ontvangen, besluit bekendgemaakt);
+  - de afwijkingen van het kennismodel procesarchitectuur: een deelproces levert een dienst, een ketenproces bevat deelprocessen, structurele relaties tussen actoren;
+  - het advies om referentiecomponenten te laten aggregeren door een hogere bedrijfsfunctie.
+- **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein.
+- **Archi-views** per indeling en elementtype in de export, na de eerste proefimport (herziening van het besluit van 2026-10-02: geen views).
+
 ## Export naar Archi
 
 - **Verzoek aan het GEMMA-team**: zet bij elke release naast `export/GEMMA release.xml` (AMEFF) ook `export/GEMMA release.archimate` in de GEMMA-Archi-repository (opslagformaat van Archi, met map-id's en profielen). Daarna `wiki.yaml` → `gemma.herkomst.pad` daarop zetten; na de overgang naar coArchi 2 op `model.archimate`. Tot dan neemt de redacteur een lokaal opgeslagen `.archimate` op (skill `gemma-archimate-model-gemma-release`).
