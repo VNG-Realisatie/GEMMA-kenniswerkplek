@@ -10,7 +10,7 @@ bronnen:
 
 # Indelingen van de bedrijfsarchitectuur
 
-Bronnen: Over GEMMA [tekst](../../../sources/raw/2026-vng-over-gemma.md) (regelnummers verwijzen hiernaar) · GEMMA-architectuurmodel [origineel](../../../sources/raw/2026-vng-gemma-2026-10-02.archimate), gelezen via `tools/gemma.py` · [Producten en diensten procesarchitectuur](https://www.gemmaonline.nl/wiki/Producten_en_diensten_procesarchitectuur) op GEMMA Online, met de externe UPL-lijst (506 regels) en de interne lijst (587 regels). De UPL-lijsten zijn hier analysemateriaal en nog geen bron van de wiki (todo).
+Bronnen: Over GEMMA [tekst](../../../sources/raw/2026-vng-over-gemma.md) (regelnummers verwijzen hiernaar) · GEMMA-architectuurmodel [origineel](../../../sources/raw/2026-vng-gemma-2026-10-02.archimate), gelezen via `tools/gemma.py` · [Producten en diensten procesarchitectuur](https://www.gemmaonline.nl/wiki/Producten_en_diensten_procesarchitectuur) op GEMMA Online, met de externe UPL-lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-extern.md) (500 producten; voor lijkbezorging [bronanalyse](../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md)) en de interne lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-intern.md) (215 producten).
 
 Hoe het model wordt ingedeeld in de hele breedte van de bedrijfsarchitectuur: welke indelingen GEMMA heeft, welke erbij komen, welk elementtype waar valt, en welke kenmerken en regels daarvoor nodig zijn. Aanleiding: lijkbezorging was plat en fijnmazig (één functie voor negen processen, vijftien bedrijfsobjecten naast elkaar). Doel: een compleet GEMMA-model op het juiste abstractieniveau, met een indeling die ook in Archi zichtbaar is. De besluiten staan onderaan; de omzetting in de beslistabel volgt.
 
@@ -106,7 +106,7 @@ De taak blijft dus een eigen niveau, met een hoofdbeleidsdomein als eigenschap.
 
 ### Eén bedrijfsproces per kernobject
 
-Een gemeente levert meer dan 500 externe en 587 interne producten en diensten; GEMMA dekt ze met zo'n 50 generieke bedrijfsprocessen. Eén bedrijfsproces per product maakt het model plat. Eén per kernobject zit daartussen: herkenbaar per taak, en het aantal groeit met het aantal kernobjecten, niet met het aantal producten. Deelprocessen leveren de producten. Het cluster naar soort werk houdt de aansluiting op het processenlandschap. GEMMA kent ook processen die een levensloop omvatten (*Onderhouden*, *Heffen en innen*).
+Een gemeente levert 500 externe en 215 interne producten en diensten (UPL-lijsten); GEMMA dekt ze met zo'n 50 generieke bedrijfsprocessen. Eén bedrijfsproces per product maakt het model plat. Eén per kernobject zit daartussen: herkenbaar per taak, en het aantal groeit met het aantal kernobjecten, niet met het aantal producten. Deelprocessen leveren de producten. Het cluster naar soort werk houdt de aansluiting op het processenlandschap. GEMMA kent ook processen die een levensloop omvatten (*Onderhouden*, *Heffen en innen*).
 
 ### Toets aan het Kennismodel procesarchitectuur
 

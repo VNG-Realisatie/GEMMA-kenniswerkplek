@@ -19,7 +19,7 @@ Volg `wiki-ingest`. Voor deze wiki is `--brontype` verplicht:
 | Brontype | Voorbeelden |
 |---|---|
 | `wet` | wetten.overheid.nl, lokale verordeningen en regelingen |
-| `informatiemodel` | GGM, RSGB, RGBZ, catalogi van basisregistraties, ZTC, MIM-modellen |
+| `informatiemodel` | GGM, RSGB, RGBZ, catalogi van basisregistraties, ZTC, MIM-modellen; architectuurmodellen zoals de UPL-lijsten van de GEMMA-procesarchitectuur (zelfde voorrang, besluit redacteur 2026-10-04) |
 | `beleid` | beleidsnota's, raadsvoorstellen, VNG-handreikingen |
 | `overig` | websites, presentaties, overige documenten |
 
