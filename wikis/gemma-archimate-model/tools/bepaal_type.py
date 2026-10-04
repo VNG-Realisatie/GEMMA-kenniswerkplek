@@ -508,11 +508,14 @@ def verplichte_velden(uitkomst: dict) -> tuple:
     return VERPLICHT.get(uitkomst.get("paginatype"), ())
 
 
+def ontbrekende_velden(beoordeling: dict, uitkomst: dict) -> list[str]:
+    """De verplichte indelingsvelden die nog niet zijn ingevuld: een reden om voor te leggen, geen fout (regel Navragen)."""
+    return [v for v in verplichte_velden(uitkomst) if not beoordeling.get(v)]
+
+
 def controleer_indelingsvelden(beoordeling: dict, uitkomst: dict) -> list[str]:
+    """Fouten in de waarden van de indelingsvelden."""
     fouten = []
-    for veld in verplichte_velden(uitkomst):
-        if not beoordeling.get(veld):
-            fouten.append(f"{uitkomst['paginatype']} zonder '{veld}' (plaats in de indeling)")
     for veld, toegestaan in WAARDEN.items():
         if beoordeling.get(veld) and beoordeling[veld] not in toegestaan:
             fouten.append(f"'{veld}' is '{beoordeling[veld]}'; kies uit {', '.join(toegestaan)}")
@@ -861,6 +864,10 @@ def evalueer(beoordeling: dict) -> Uitkomst:
         uitkomst = _stap_5_en_6(uitkomst, k, extra)
     if uitkomst.soort == "element":
         uitkomst = _stap_7(uitkomst, k, extra)
+    if uitkomst.soort == "element":
+        for veld in ontbrekende_velden(beoordeling, asdict(uitkomst)):
+            uitkomst.voorleggen = True
+            uitkomst.redenen.append(f"indelingsveld ontbreekt: {veld}")
 
     if uitkomst.soort in ("eigenschap", "onderdeel", "geen_pagina") and uitkomst.archimate_type != "location" \
             and not extra.get("genoemd_begrip"):

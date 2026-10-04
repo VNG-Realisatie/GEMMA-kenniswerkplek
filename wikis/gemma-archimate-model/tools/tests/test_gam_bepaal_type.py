@@ -230,15 +230,15 @@ def test_documentatie_is_gegenereerd():
 
 
 def test_stap_7_procesniveau():
-    keten = bt.evalueer(beoordeling(PROCES | {"meer_organisaties"}, kernobject="lijk"))
+    keten = bt.evalueer(beoordeling(PROCES | {"meer_organisaties"}, kernobject="lijk", afnemer="extern"))
     assert (keten.procesniveau, keten.voorleggen) == ("ketenproces", False)
-    proces = bt.evalueer(beoordeling(PROCES, kernobject="grafrecht"))
+    proces = bt.evalueer(beoordeling(PROCES, kernobject="grafrecht", afnemer="extern"))
     assert (proces.procesniveau, proces.voorleggen, proces.regel) == ("bedrijfsproces", False, bt.EERSTE_INDELINGSREGEL + 1)
     zonder = bt.evalueer(beoordeling(PROCES))
     assert zonder.voorleggen and any("kernobject" in r for r in zonder.redenen)
     deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces"}
     for criterium in ("eigen_besluit", "eigen_normering", "levert_aanbod"):
-        u = bt.evalueer(beoordeling(deel | {criterium}, kernobject="grafrecht"))
+        u = bt.evalueer(beoordeling(deel | {criterium}, kernobject="grafrecht", afnemer="extern"))
         assert (u.procesniveau, u.voorleggen) == ("deelproces", False), criterium
     # een deel van een groter proces zonder eigen besluit, normering of aanbod is een processtap: geen pagina
     stap = bt.evalueer(beoordeling(deel, genoemd_begrip="Verlenen grafrecht"))
@@ -309,16 +309,27 @@ def test_indeling_per_kernobject_een_proces():
 
 
 def test_indelingsvelden_zijn_verplicht_en_beperkt():
-    product = bt.asdict(bt.evalueer(beoordeling(PRODUCT)))
-    fouten = bt.controleer_indelingsvelden({}, product)
-    assert any("domein" in f for f in fouten) and any("afnemer" in f for f in fouten)
-    assert bt.controleer_indelingsvelden({"domein": "Publieksdiensten", "afnemer": "extern"}, product) == []
-    assert bt.controleer_indelingsvelden({"domein": "Verkeerd", "afnemer": "extern"}, product)
-    taak = bt.asdict(bt.evalueer(beoordeling(BASIS | {"gedrag", "groepeert_processen", "omvat_processen"})))
-    assert bt.controleer_indelingsvelden({}, taak) == []  # een taak heeft geen afnemer
-    proces = bt.asdict(bt.evalueer(beoordeling(PROCES, kernobject="graf")))
-    assert any("afnemer" in f for f in bt.controleer_indelingsvelden({}, proces))
-    assert bt.controleer_indelingsvelden({"afnemer": "intern"}, proces) == []
+    product = bt.evalueer(beoordeling(PRODUCT))
+    assert product.voorleggen and "indelingsveld ontbreekt: domein" in product.redenen
+    assert "indelingsveld ontbreekt: afnemer" in product.redenen
+    assert bt.voorgestelde_status(product) == "kandidaat"
+    compleet = bt.evalueer(beoordeling(PRODUCT, domein="Publieksdiensten", afnemer="extern"))
+    assert not compleet.voorleggen and bt.voorgestelde_status(compleet) == "review"
+    # een besluit van de redacteur dekt een reden alleen als hij haar noemt
+    assert bt.open_redenen(product.redenen, [{"redenen": ["indelingsveld ontbreekt: domein"]}]) == [
+        "indelingsveld ontbreekt: afnemer"]
+    # de waarden zijn beperkt
+    assert bt.controleer_indelingsvelden({"domein": "Verkeerd", "afnemer": "extern"}, bt.asdict(compleet))
+    assert bt.controleer_indelingsvelden({"domein": "Publieksdiensten", "afnemer": "extern"}, bt.asdict(compleet)) == []
+    # een taak heeft geen afnemer; een proces wel
+    taak = bt.evalueer(beoordeling(BASIS | {"gedrag", "groepeert_processen", "omvat_processen"}))
+    assert not taak.voorleggen
+    proces = bt.evalueer(beoordeling(PROCES, kernobject="graf"))
+    assert "indelingsveld ontbreekt: afnemer" in proces.redenen
+    assert not bt.evalueer(beoordeling(PROCES, kernobject="graf", afnemer="intern")).voorleggen
+    for ja, veld in [(FUNCTIE, "domein"), (ACTOR, "doelgroep"), (ROL, "doelgroep"), (KANAAL, "doelgroep"),
+                     (BELEIDSKADER, "regelgever")]:
+        assert f"indelingsveld ontbreekt: {veld}" in bt.evalueer(beoordeling(ja)).redenen, veld
 
 
 def test_elk_type_met_pagina_is_compleet():

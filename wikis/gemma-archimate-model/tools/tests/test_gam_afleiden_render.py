@@ -290,12 +290,16 @@ def test_twee_processen_voor_een_kernobject_is_een_fout(wiki):
     assert any("per kernobject één proces" in f for f in res.fouten)
 
 
-def test_indelingsveld_ontbreekt_of_heeft_een_onbekende_waarde(wiki):
+def test_indelingsveld_ontbreekt_wordt_voorgelegd_en_een_onbekende_waarde_is_een_fout(wiki):
     _schrijf(wiki, "beschikking", _bo())
     data = _proces()
     del data["afnemer"]
     _schrijf(wiki, "behandelen-aanvraag", data)
-    assert any("zonder 'afnemer'" in f for f in afleiden.afleiden(wiki).fouten)
+    assert afleiden.afleiden(wiki).fouten == []
+    _afleiden(wiki)
+    afgeleid = _lees(wiki, "behandelen-aanvraag")
+    assert afgeleid["status"] == "kandidaat"
+    assert "indelingsveld ontbreekt: afnemer" in afgeleid["afgeleid"]["voor_te_leggen"]
     data["afnemer"] = "allemaal"
     _schrijf(wiki, "behandelen-aanvraag", data)
     assert any("allemaal" in f for f in afleiden.afleiden(wiki).fouten)  # het schema weigert de waarde
