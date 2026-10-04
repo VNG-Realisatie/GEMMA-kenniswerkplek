@@ -2,7 +2,7 @@
 id: wet-op-de-lijkbezorging
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: kandidaat
 naam: Wet op de lijkbezorging
 onderwerpen:
 - lijkbezorging
@@ -20,7 +20,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/wet-op-de-lijkbezorging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- indelingsveld ontbreekt: regelgever
 
 ## Betekenis
 
@@ -40,7 +44,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 37 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

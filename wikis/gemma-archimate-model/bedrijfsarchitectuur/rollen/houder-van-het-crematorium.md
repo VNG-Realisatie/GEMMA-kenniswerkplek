@@ -2,7 +2,7 @@
 id: houder-van-het-crematorium
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: kandidaat
 naam: Houder van het crematorium
 onderwerpen:
 - lijkbezorging
@@ -19,7 +19,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/houder-van-het-crematorium.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- indelingsveld ontbreekt: doelgroep
 
 ## Betekenis
 
@@ -39,7 +43,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 39 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -60,12 +64,6 @@ Alleen de kenmerken met ja; de overige 39 zijn nee.
 | Houder van het crematorium | bergt de as en zorgt voor de bestemming bij *toewijzing* | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 58, 59) |
 | Houder van het crematorium | houdt *toegang (houder)* | [Crematorium](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 50) |
 | Houder van het crematorium | bergt as in en bewaart *toegang (houder)* | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 58, 59 lid 1) |
-
-#### Inkomend
-
-| Van | Relatie | Naar | Bron |
-|---|---|---|---|
-| [Kerkgenootschap](../actoren/kerkgenootschap.md) | vervult *toewijzing* | Houder van het crematorium | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 52) |
 
 ## Herkomst
 

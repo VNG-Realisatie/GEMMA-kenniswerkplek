@@ -2,7 +2,7 @@
 id: uitvaart-vervroegen-of-uitstellen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: kandidaat
 naam: Uitvaart vervroegen of uitstellen
 onderwerpen:
 - lijkbezorging
@@ -24,7 +24,12 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/uitvaart-vervroegen-of-uitstellen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- indelingsveld ontbreekt: domein
+- indelingsveld ontbreekt: afnemer
 
 ## Betekenis
 
@@ -48,9 +53,13 @@ Begraven of cremeren mag niet eerder dan 36 uur en uiterlijk op de zesde werkdag
 
 Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
+### Plaats in de indelingen
+
+- **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
+
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 36 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

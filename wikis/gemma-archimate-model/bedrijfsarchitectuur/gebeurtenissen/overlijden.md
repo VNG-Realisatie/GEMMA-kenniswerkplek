@@ -2,7 +2,7 @@
 id: overlijden
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Overlijden
 onderwerpen:
 - lijkbezorging
@@ -20,7 +20,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/overlijden.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -44,9 +44,13 @@ Het overlijden start de schouwing van het lijk (Wet op de lijkbezorging art. 3) 
 
 Gebeurtenis. Uitkomst van de beslistabel: Gedrag, *toestandsverandering* (kern ja, 1/1).
 
+### Plaats in de indelingen
+
+- **Start**: [Schouwen lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md), [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md).
+
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 37 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

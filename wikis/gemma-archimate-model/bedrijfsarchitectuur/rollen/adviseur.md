@@ -2,7 +2,7 @@
 id: adviseur
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: kandidaat
 naam: Adviseur
 onderwerpen:
 - lijkbezorging
@@ -26,7 +26,11 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/adviseur.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- indelingsveld ontbreekt: doelgroep
 
 ## Betekenis
 
@@ -46,7 +50,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 39 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -65,12 +69,6 @@ Alleen de kenmerken met ja; de overige 39 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Adviseur | adviseert over *toewijzing* | [Treffen maatregel bij besmet lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22a) |
-
-#### Inkomend
-
-| Van | Relatie | Naar | Bron |
-|---|---|---|---|
-| [GGD](../actoren/ggd.md) | vervult *toewijzing* | Adviseur | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Wet publieke gezondheid](../../bronanalyses/lijkbezorging/2026-rijk-wet-publieke-gezondheid-wettekst.md) (Wlb art. 22a; Wpg art. 16) |
 
 ## Herkomst
 

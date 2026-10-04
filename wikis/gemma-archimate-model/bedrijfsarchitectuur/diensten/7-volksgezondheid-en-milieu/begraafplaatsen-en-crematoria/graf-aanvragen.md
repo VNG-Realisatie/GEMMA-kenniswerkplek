@@ -2,7 +2,7 @@
 id: graf-aanvragen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: kandidaat
 naam: Graf aanvragen
 onderwerpen:
 - lijkbezorging
@@ -25,7 +25,12 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/graf-aanvragen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- indelingsveld ontbreekt: domein
+- indelingsveld ontbreekt: afnemer
 
 ## Betekenis
 
@@ -49,9 +54,13 @@ Wie een graf wil, dient een schriftelijke aanvraag in; het college verleent het 
 
 Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
+### Plaats in de indelingen
+
+- **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
+
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 36 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

@@ -18,6 +18,10 @@ bronnen:
 
 Wat de gemeente ziet, doet en beslist bij het betrekken van inwoners en maatschappelijke partijen bij haar beleid: de participatieverordening van de raad, inspraak, inwonersparticipatie bij voorbereiding, uitvoering en evaluatie van beleid, en het uitdaagrecht en andere verzoeken van inwoners om een gemeentelijke taak over te nemen of een initiatief te ondersteunen (overheidsparticipatie). Participatie op grond van andere wetten (cliëntenparticipatie in het sociaal domein, participatie bij een omgevingsvergunning) valt buiten dit onderwerp.
 
+## Overzicht
+
+De views op de indelingen staan in het [overzicht](../overzichten/participatie.md).
+
 ## Bronnen
 
 - [Gemeentewet (BWBR0005416)](../bronanalyses/participatie/2026-rijk-gemeentewet-wettekst.md)

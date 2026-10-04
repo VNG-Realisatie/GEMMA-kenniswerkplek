@@ -2,7 +2,7 @@
 id: besmet-lijk-gemeld
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Besmet lijk gemeld
 onderwerpen:
 - lijkbezorging
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/besmet-lijk-gemeld.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -46,9 +46,13 @@ De arts die vaststelt dat een lijk besmet is met een infectieus of giftig agens 
 
 Gebeurtenis. Uitkomst van de beslistabel: Gedrag, *toestandsverandering* (kern ja, 1/1).
 
+### Plaats in de indelingen
+
+- **Start**: [Treffen maatregel bij besmet lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md).
+
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 37 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

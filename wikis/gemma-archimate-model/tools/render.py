@@ -485,9 +485,9 @@ def _proces_regel(w: Wiki, van: str, bid: str, niveau: int) -> list[str]:
     eind = [g for g in w.uitgaand(bid, "triggering") if w.paginatype(g) == "gebeurtenis"]
     if eind:
         details.append(f"eindigt in {_links(w, van, eind)}")
-    niveau_tekst = w.niveau(bid) or ""
-    afnemer = f", afnemer {d['afnemer']}" if d.get("afnemer") else ""
-    regel = f"{'  ' * niveau}- {w.link(van, bid)} *({niveau_tekst}{afnemer})*" + (f": {'; '.join(details)}" if details else "")
+    kenmerken = ", ".join(x for x in (w.niveau(bid) or "niveau nog niet vastgesteld",
+                                      f"afnemer {d['afnemer']}" if d.get("afnemer") else "") if x)
+    regel = f"{'  ' * niveau}- {w.link(van, bid)} *({kenmerken})*" + (f": {'; '.join(details)}" if details else "")
     uit = [regel]
     for kind in sorted(w.uitgaand(bid, "aggregatie"), key=lambda k: w.naam(k).lower()):
         if w.paginatype(kind) == "bedrijfsproces" and niveau < 6:

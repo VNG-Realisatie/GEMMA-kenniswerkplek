@@ -2,7 +2,7 @@
 id: crematorium
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: kandidaat
 naam: Crematorium
 onderwerpen:
 - lijkbezorging
@@ -22,7 +22,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/crematorium.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
 
 ## Betekenis
 
@@ -40,9 +44,13 @@ Crematoria zijn gemeentelijk of bijzonder (art. 51). Een bijzonder crematorium w
 
 Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
+### Plaats in de indelingen
+
+- **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
+
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 38 zijn nee.
+Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

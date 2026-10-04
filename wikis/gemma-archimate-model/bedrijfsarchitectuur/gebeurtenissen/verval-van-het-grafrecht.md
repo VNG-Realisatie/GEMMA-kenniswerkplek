@@ -2,7 +2,7 @@
 id: verval-van-het-grafrecht
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Verval van het grafrecht
 onderwerpen:
 - lijkbezorging
@@ -20,7 +20,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/verval-van-het-grafrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -38,9 +38,13 @@ Een grafrecht vervalt door het verlopen van de termijn, door afstand of door oph
 
 Gebeurtenis. Uitkomst van de beslistabel: Gedrag, *toestandsverandering* (kern ja, 1/1).
 
+### Plaats in de indelingen
+
+- **Start**: [Ruimen graf](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md).
+
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 37 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

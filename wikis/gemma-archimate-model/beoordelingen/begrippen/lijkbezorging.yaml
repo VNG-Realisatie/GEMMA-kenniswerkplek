@@ -68,12 +68,18 @@ kenmerken:
   voert_gedrag_uit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
   gegroepeerd_gedrag:
     waarde: ja
     onderbouwing: Groepeert de doorlopende gemeentelijke taken uit de wet op grond van vergelijkbare kennis en middelen (begraafplaatsen, lijkschouw, vergunningen); geen eigen volgorde of doorlooptijd (besluit redacteur 2026-09-30).
@@ -127,6 +133,32 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  bedient_gedrag:
+    waarde: ja
+    onderbouwing: 'Bedient de processen van de lijkbezorging (de bestaande relaties). Tijdelijk, tot de herbeoordeling: de functie wordt het proces Verzorgen lijkbezorging (besluit 2026-10-04).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -142,6 +174,15 @@ kenmerken:
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -162,6 +203,9 @@ kenmerken:
     onderbouwing: Geen breder element in deze wiki.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
 definitie: 'Het geheel van gemeentelijke taken rond het bezorgen van een overledene: schouwen, begraven of cremeren, graven uitgeven, opgraven en ruimen.'
 beschrijving:
 - Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze (Wet op de lijkbezorging art. 1). De gemeente schouwt lijken via de gemeentelijke lijkschouwer, geeft het verlof tot begraving of crematie af, heeft ten minste één gemeentelijke begraafplaats, geeft graven uit, staat opgraving en ruiming toe en draagt zorg voor de lijkbezorging als niemand daarin voorziet (art. 4, 11, 21, 28, 29, 31, 33). De functie bedient de processen daarvoor.
@@ -252,17 +296,24 @@ relaties:
   vindplaats: art. 17
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: kandidaat
 afgeleid:
   uitkomst:
     soort: element
     regel: 26
-    toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 2/2)
+    toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *in functie-indeling*)'
     paginatype: bedrijfsfunctie
     archimate_type: business-function
-    voorleggen: false
+    voorleggen: true
+    redenen:
+    - 'indelingsveld ontbreekt: domein'
     data_object: nee
+    generiek: false
     typeregel: 17
+  voor_te_leggen:
+  - 'indelingsveld ontbreekt: domein'
+  open:
+  - 'indelingsveld ontbreekt: domein'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-vng-wet-op-de-lijkbezorging

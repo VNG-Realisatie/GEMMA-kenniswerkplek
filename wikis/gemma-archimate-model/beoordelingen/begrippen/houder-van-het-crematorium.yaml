@@ -66,12 +66,18 @@ kenmerken:
     onderbouwing: 'Toegewezen aan Uitvoeren lijkbezorging: stelt de identiteit vast, bergt de as en zorgt voor de bestemming ervan (art. 8, 58, 59).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
   per_keer_doorlopen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -117,6 +123,30 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -132,6 +162,15 @@ kenmerken:
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -152,6 +191,9 @@ kenmerken:
     onderbouwing: 'Naast Houder van de begraafplaats: eigen plichten (bergen en bestemmen van de as, register van gecremeerde lijken); geen breder element.'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
 definitie: Verantwoordelijkheid voor een crematorium, het bergen van de as en de bestemming daarvan.
 beschrijving:
 - De houder van het crematorium bergt de as in asbussen, bewaart ze en zorgt voor de bestemming van de as, en houdt een openbaar register van gecremeerde lijken (art. 50, 58, 59). Bij een gemeentelijk crematorium is de gemeente houder, bij een bijzonder crematorium een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52).
@@ -183,7 +225,7 @@ relaties:
   vindplaats: art. 58, 59 lid 1
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: kandidaat
 afgeleid:
   uitkomst:
     soort: element
@@ -191,9 +233,16 @@ afgeleid:
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
-    voorleggen: false
+    voorleggen: true
+    redenen:
+    - 'indelingsveld ontbreekt: doelgroep'
     data_object: nee
+    generiek: false
     typeregel: 12
+  voor_te_leggen:
+  - 'indelingsveld ontbreekt: doelgroep'
+  open:
+  - 'indelingsveld ontbreekt: doelgroep'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet

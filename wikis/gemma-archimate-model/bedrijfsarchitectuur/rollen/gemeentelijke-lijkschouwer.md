@@ -2,7 +2,7 @@
 id: gemeentelijke-lijkschouwer
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: kandidaat
 naam: Gemeentelijke lijkschouwer
 onderwerpen:
 - lijkbezorging
@@ -19,7 +19,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/gemeentelijke-lijkschouwer.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- indelingsveld ontbreekt: doelgroep
 
 ## Betekenis
 
@@ -39,7 +43,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 39 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -59,12 +63,6 @@ Alleen de kenmerken met ja; de overige 39 zijn nee.
 |---|---|---|---|
 | Gemeentelijke lijkschouwer | verricht *toewijzing* | [Schouwen lijk](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
 | Gemeentelijke lijkschouwer | waarschuwt bij een niet-natuurlijke dood *associatie (gericht)* | [Ambtenaar van de burgerlijke stand](ambtenaar-van-de-burgerlijke-stand.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10 lid 1) |
-
-#### Inkomend
-
-| Van | Relatie | Naar | Bron |
-|---|---|---|---|
-| [College van B&W](../actoren/college-van-b-w.md) | benoemt *associatie (gericht)* | Gemeentelijke lijkschouwer | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 4) |
 
 ## Herkomst
 

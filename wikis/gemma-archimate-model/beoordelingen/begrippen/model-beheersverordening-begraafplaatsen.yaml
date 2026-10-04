@@ -69,12 +69,18 @@ kenmerken:
   voert_gedrag_uit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -120,6 +126,30 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -135,6 +165,15 @@ kenmerken:
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -160,6 +199,9 @@ kenmerken:
     onderbouwing: Geen breder beleidskader in deze wiki.
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
+  generiek:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
 definitie: Model van de VNG voor de verordening waarin een gemeente het beheer en het gebruik van haar begraafplaatsen regelt.
 beschrijving:
 - De raad stelt de beheersverordening vast op grond van art. 35 Wet op de lijkbezorging en art. 149 Gemeentewet; het model geeft de begripsbepalingen (particulier en algemeen graf, urnengraf, urnennis, gedenkplaats, rechthebbende, gebruiker, beheerder) en de regels voor uitgifte, termijnen, overschrijving, afstand, grafbedekking, onderhoud en ruiming (aanhef, art. 1–24).
@@ -232,7 +274,7 @@ relaties:
   vindplaats: aanhef; VNG inleiding
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: kandidaat
 afgeleid:
   uitkomst:
     soort: element
@@ -240,11 +282,17 @@ afgeleid:
     toelichting: 'Regeling als geheel, landelijk (kern ja, 0/1, ontbreekt: *in werking*)'
     paginatype: beleidskader
     archimate_type: driver
-    voorleggen: false
+    voorleggen: true
+    redenen:
+    - 'indelingsveld ontbreekt: regelgever'
     data_object: nee
+    generiek: false
     typeregel: 16
   voor_te_leggen:
+  - 'indelingsveld ontbreekt: regelgever'
   - 'grondslag regelgeving: altijd voorleggen'
+  open:
+  - 'indelingsveld ontbreekt: regelgever'
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-vng-wet-op-de-lijkbezorging

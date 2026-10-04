@@ -2,7 +2,7 @@
 id: grafrecht
 type: bedrijfsobject
 archimate_type: contract
-status: goedgekeurd
+status: kandidaat
 naam: Grafrecht
 onderwerpen:
 - lijkbezorging
@@ -29,7 +29,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/grafrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
 
 ## Betekenis
 
@@ -57,9 +61,13 @@ Het grafrecht is een afspraak (besluit redacteur 2026-09-30): het legt de rechte
 
 Afspraak. Uitkomst van de beslistabel: Passief, afspraak (kern ja, 2/2).
 
+### Plaats in de indelingen
+
+- **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
+
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 36 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

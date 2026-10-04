@@ -64,12 +64,18 @@ kenmerken:
   voert_gedrag_uit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -115,6 +121,30 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -130,6 +160,15 @@ kenmerken:
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -148,6 +187,9 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip krijgt geen eigen pagina.'
+  generiek:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
 toelichting: 'Buiten dit model (Constraint): Norm uit één artikel: niet eerder dan 36 uur en uiterlijk de zesde werkdag na overlijden (art. 16).'
 archimate_buiten_model: Constraint
 onderwerpen:
@@ -160,6 +202,7 @@ afgeleid:
     archimate_type: Constraint
     voorleggen: false
     data_object: nee
+    generiek: false
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet

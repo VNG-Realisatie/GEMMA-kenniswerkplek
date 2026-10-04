@@ -2,7 +2,7 @@
 id: onderhouden-graf
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: kandidaat
 naam: Onderhouden graf
 onderwerpen:
 - lijkbezorging
@@ -13,7 +13,6 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: bedrijfsproces
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -24,7 +23,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/onderhouden-graf.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces
 
 ## Betekenis
 
@@ -40,11 +43,16 @@ De gemeente maakt gedenktekens schoon en onderhoudt de beplanting op graven, op 
 
 ### Typering
 
-Bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja, 5/5).
+Bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+
+### Plaats in de indelingen
+
+- **Functie-indeling naar domein, bediend door**: [Lijkbezorging](../../../bedrijfsfuncties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijkbezorging.md).
+- **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 33 zijn nee.
+Alleen de kenmerken met ja; de overige 47 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

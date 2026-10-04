@@ -398,7 +398,7 @@ TYPEN: list[Typedef] = [
             "Onderhoud van graven", "Dienst"),
     Typedef("bedrijfsproces", "business-process", "Bedrijfsproces", "pagina", "*gedrag* en *per keer doorlopen*",
             {"gedrag": "ja", "per_keer_doorlopen": "ja"}, "toegewezen_partij",
-            ("aanleiding", "benoembaar_resultaat"),
+            (),
             {"omvat_levensloop": "ja: procesniveau bedrijfsproces, of ketenproces bij *meer organisaties*",
              "bijdrage_aan_groter_proces": "ja: procesniveau deelproces, bij *eigen besluit*, *eigen normering* of "
                                            "*levert aanbod*; anders processtap zonder pagina",
@@ -406,7 +406,7 @@ TYPEN: list[Typedef] = [
              "meer_organisaties": "ja: ketenproces", "eigen_besluit": "telt voor het deelproces",
              "eigen_normering": "telt voor het deelproces", "gebruikt_objecten": "annotatie",
              "komt_herhaald_voor": "annotatie", "leidt_tot_gebeurtenis": "triggering naar een gebeurtenis"},
-            "Beheren grafrechten; Verlenen grafrecht (deelproces)", "Proc"),
+            "Beheren grafrechten; Verlenen grafrecht (deelproces)", "Proc", eis=("aanleiding", "benoembaar_resultaat")),
     Typedef("bedrijfsproces", "business-process", "Procescluster", "pagina",
             "*gedrag* en *groepeert processen*", {"gedrag": "ja", "groepeert_processen": "ja"}, "omvat_processen", (),
             {}, "Verzorgen lijkbezorging (taak); Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk)",

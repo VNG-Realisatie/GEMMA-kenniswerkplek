@@ -210,8 +210,7 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 **Wanneer is iets een bedrijfsproces?**
 
 - Type volgt uit: *gedrag* en *per keer doorlopen*.
-- Moet ja zijn: *toegewezen partij*.
-- Hoogstens één nee: *aanleiding*, *benoembaar resultaat*.
+- Moet ja zijn: *toegewezen partij* en *aanleiding* en *benoembaar resultaat*.
 - Daarna: ja: procesniveau bedrijfsproces, of ketenproces bij *meer organisaties* (*omvat levensloop*); ja: procesniveau deelproces, bij *eigen besluit*, *eigen normering* of *levert aanbod*; anders processtap zonder pagina (*bijdrage aan groter proces*); levert een product of dienst: nooit een processtap (*levert aanbod*); ja: ketenproces (*meer organisaties*); telt voor het deelproces (*eigen besluit*); telt voor het deelproces (*eigen normering*); annotatie (*gebruikt objecten*); annotatie (*komt herhaald voor*); triggering naar een gebeurtenis (*leidt tot gebeurtenis*).
 - Indeling: Procesindeling naar taak en naar soort werk.
 - Voorbeeld: Beheren grafrechten; Verlenen grafrecht (deelproces).
@@ -334,8 +333,8 @@ Typen: Obj = Bedrijfsobject · Afspr = Afspraak · Prod = Product · Dienst = Di
 | **Gedrag** | | | | | | | | | | | | | | | | |
 | toegewezen partij |  |  |  |  | K |  | D |  |  |  |  |  |  |  |  |  |
 | gebruikt objecten |  |  |  |  | A |  | D |  |  |  |  |  |  |  |  |  |
-| aanleiding |  |  |  |  | D |  |  |  |  |  |  |  |  |  |  |  |
-| benoembaar resultaat |  |  | D | D | D |  |  |  |  |  |  |  |  |  |  |  |
+| aanleiding |  |  |  |  | E |  |  |  |  |  |  |  |  |  |  |  |
+| benoembaar resultaat |  |  | D | D | E |  |  |  |  |  |  |  |  |  |  |  |
 | komt herhaald voor |  |  |  |  | A |  |  | D |  |  |  |  |  |  |  |  |
 | eigen normering |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
 | stabiel over tijd |  |  |  |  |  |  | D |  |  |  |  |  |  |  |  |  |

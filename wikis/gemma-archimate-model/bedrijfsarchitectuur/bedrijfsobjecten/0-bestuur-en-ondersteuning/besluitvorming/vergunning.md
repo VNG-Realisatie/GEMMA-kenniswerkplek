@@ -2,7 +2,7 @@
 id: vergunning
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: kandidaat
 naam: Vergunning
 onderwerpen:
 - lijkbezorging
@@ -28,7 +28,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/vergunning.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
 
 ## Betekenis
 
@@ -59,9 +63,13 @@ Begraven of cremeren (verlof van de ambtenaar van de burgerlijke stand, art. 11)
 
 Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
+### Plaats in de indelingen
+
+- **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
+
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 38 zijn nee.
+Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

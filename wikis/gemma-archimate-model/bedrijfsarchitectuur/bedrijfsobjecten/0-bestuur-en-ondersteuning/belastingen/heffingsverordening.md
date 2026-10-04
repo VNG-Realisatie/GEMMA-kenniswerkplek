@@ -2,7 +2,7 @@
 id: heffingsverordening
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: kandidaat
 naam: Heffingsverordening
 onderwerpen:
 - lijkbezorging
@@ -51,7 +51,11 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/heffingsverordening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
 
 ## Betekenis
 
@@ -81,9 +85,13 @@ Gemeenten leggen de lijkbezorgingsrechten vast in een heffingsverordening, de ve
 
 Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
+### Plaats in de indelingen
+
+- **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Belastingen.
+
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 37 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

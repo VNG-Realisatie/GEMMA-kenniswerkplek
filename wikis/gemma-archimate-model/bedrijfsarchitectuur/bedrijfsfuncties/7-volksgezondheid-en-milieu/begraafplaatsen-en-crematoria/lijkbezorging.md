@@ -2,7 +2,7 @@
 id: lijkbezorging
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: kandidaat
 naam: Lijkbezorging
 onderwerpen:
 - lijkbezorging
@@ -32,7 +32,11 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/lijkbezorging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- indelingsveld ontbreekt: domein
 
 ## Betekenis
 
@@ -54,11 +58,16 @@ Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze 
 
 ### Typering
 
-Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern ja, 2/2).
+Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *in functie-indeling*).
+
+### Plaats in de indelingen
+
+- **Bedient**: [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md), [Opgraven lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md), [Ruimen graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md), [Schouwen lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md), [Treffen maatregel bij besmet lijk](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md), [Uitvoeren lijkbezorging](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md), [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md), [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md), [Verzorgen gemeentebegrafenis](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md).
+- **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 36 zijn nee.
+Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -71,6 +80,7 @@ Alleen de kenmerken met ja; de overige 36 zijn nee.
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, de rol Gemeente voert de taken uit (art. 4, 21, 33). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, raadpleegt en werkt bij: graf, grafrecht, begraafplaats, lijk, urn (art. 23, 27, 28). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, de taken volgen uit de wet en blijven bestaan bij een andere organisatie. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient de processen van de lijkbezorging (de bestaande relaties). Tijdelijk, tot de herbeoordeling: de functie wordt het proces Verzorgen lijkbezorging (besluit 2026-10-04). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties

@@ -2,7 +2,7 @@
 id: gemeente
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: kandidaat
 naam: Gemeente
 onderwerpen:
 - lijkbezorging
@@ -31,7 +31,11 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/gemeente.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- indelingsveld ontbreekt: doelgroep
 
 ## Betekenis
 
@@ -57,7 +61,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 39 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

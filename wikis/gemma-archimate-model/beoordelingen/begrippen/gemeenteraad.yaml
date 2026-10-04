@@ -73,12 +73,18 @@ kenmerken:
   voert_gedrag_uit:
     waarde: nee
     onderbouwing: Niet van toepassing.
+  soort_partij:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
   per_keer_doorlopen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -124,6 +130,30 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -139,6 +169,15 @@ kenmerken:
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -159,6 +198,9 @@ kenmerken:
     onderbouwing: Geen breder element in deze wiki.
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
 definitie: Bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt.
 beschrijving:
 - De raad vertegenwoordigt de gehele bevolking van de gemeente (Gemeentewet art. 7). Hij stelt de gemeentelijke verordeningen vast, voor zover die bevoegdheid niet bij het college of de burgemeester ligt (art. 147, 149), en benoemt de wethouders (art. 35). De burgemeester is voorzitter van de raad (art. 9).
@@ -184,26 +226,23 @@ relaties:
   vindplaats: Gemeentewet art. 147; Wlb art. 38, 40
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
 afgeleid:
   uitkomst:
-    soort: element
-    regel: 26
-    toelichting: Handelende partij (kern ja)
-    paginatype: actor
+    soort: geen_element
+    regel: 22
+    toelichting: Eis ontbreekt voor Actor
     archimate_type: business-actor
-    voorleggen: false
+    voorleggen: true
+    redenen:
+    - 'soort partij: nee'
     data_object: nee
+    generiek: false
     typeregel: 11
+  voor_te_leggen:
+  - 'soort partij: nee'
+  open:
+  - 'soort partij: nee'
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet
-  gemma:
-    gemma_id: id-b69cb101-8708-47de-9ac1-e138f205a49f
-    gemma_naam: Gemeenteraad
-    gemma_type: business-actor
-    gemma_map: Business / Procesarchitectuur / Actoren en rollen
-    gemma_eigenschappen:
-      Object ID: b69cb101-8708-47de-9ac1-e138f205a49f
-  pad: bedrijfsarchitectuur/actoren/gemeenteraad.md

@@ -113,8 +113,6 @@ def test_drempel_hoogstens_een_overig_nee():
     assert bt.voorgestelde_status(u) == "review"
     u = bt.evalueer(beoordeling(BO - {"levenscyclus", "onderscheidbare_exemplaren"}))
     assert (u.soort, u.regel) == ("geen_element", bt.EERSTE_DREMPELREGEL + 1)
-    assert bt.evalueer(beoordeling(PROCES - {"aanleiding"}, kernobject="graf")).paginatype == "bedrijfsproces"
-    assert bt.evalueer(beoordeling(PROCES - {"aanleiding", "benoembaar_resultaat"})).soort == "geen_element"
     # Dienst zonder toegewezen partij (besluit 2026-10-01); product zonder exemplaren
     assert bt.evalueer(beoordeling(DIENST)).paginatype == "dienst"
     assert "toegewezen_partij" not in bt.typedef("dienst", "business-service").drempel
@@ -123,7 +121,8 @@ def test_drempel_hoogstens_een_overig_nee():
 
 def test_eis_naast_de_kernrelatie():
     """Actor, bedrijfssamenwerking en product hebben een eis: een soort partij, en een zelfstandig aanbod."""
-    for ja, eis in [(ACTOR, "soort_partij"), (SAMENWERKING, "soort_partij"), (PRODUCT, "zelfstandig_aanbod")]:
+    for ja, eis in [(ACTOR, "soort_partij"), (SAMENWERKING, "soort_partij"), (PRODUCT, "zelfstandig_aanbod"),
+                    (PROCES, "aanleiding"), (PROCES, "benoembaar_resultaat")]:
         u = bt.evalueer(beoordeling(ja - {eis}))
         assert (u.soort, u.regel, u.voorleggen) == ("geen_element", bt.EERSTE_DREMPELREGEL, True), eis
         assert f"{bt.NAAM[eis]}: nee" in u.redenen

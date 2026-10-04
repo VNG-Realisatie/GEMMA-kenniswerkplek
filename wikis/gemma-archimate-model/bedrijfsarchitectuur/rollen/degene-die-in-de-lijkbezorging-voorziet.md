@@ -2,7 +2,7 @@
 id: degene-die-in-de-lijkbezorging-voorziet
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: kandidaat
 naam: Degene die in de lijkbezorging voorziet
 onderwerpen:
 - lijkbezorging
@@ -23,7 +23,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/degene-die-in-de-lijkbezorging-voorziet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
+
+## Ter discussie
+
+- indelingsveld ontbreekt: doelgroep
 
 ## Betekenis
 
@@ -49,7 +53,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 39 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -74,7 +78,6 @@ Alleen de kenmerken met ja; de overige 39 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Uitvaart vervroegen of uitstellen](../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvaart-vervroegen-of-uitstellen.md) | bedient *bediening* | Degene die in de lijkbezorging voorziet | [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (§ Uitvaart vervroegen, § Uitvaart uitstellen) |
-| [Uitvaartondernemer](../actoren/uitvaartondernemer.md) | vervult namens de nabestaanden *toewijzing* | Degene die in de lijkbezorging voorziet | [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (inleiding, § Aangifte doen van overlijden) |
 
 ## Herkomst
 

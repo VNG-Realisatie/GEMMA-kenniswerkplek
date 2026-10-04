@@ -62,12 +62,18 @@ kenmerken:
   voert_gedrag_uit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -113,6 +119,30 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per rechthebbende.
@@ -130,6 +160,15 @@ kenmerken:
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -150,6 +189,9 @@ kenmerken:
     onderbouwing: Geen breder begrip.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Nog niet beoordeeld met de criteria van 2026-10-04; nee tot de herbeoordeling.
 toelichting: 'Geen element: gedeputeerde staten stellen de schadeloosstelling vast; de gemeente draagt alleen de kosten (art. 45 lid 2).'
 onderwerpen:
 - lijkbezorging
@@ -171,6 +213,7 @@ afgeleid:
     - 'wordt bewerkt: nee'
     - 'levenscyclus: nee'
     data_object: nee
+    generiek: false
     typeregel: 21
   voor_te_leggen:
   - 'wordt bewerkt: nee'
