@@ -19,3 +19,6 @@ throttle.ctrl
 __pycache__/
 *.pyc
 *.egg-info/
+
+# Reservekopie die Archi maakt bij opslaan
+*.archimate.bak

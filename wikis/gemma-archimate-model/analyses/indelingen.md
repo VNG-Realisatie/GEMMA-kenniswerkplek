@@ -308,4 +308,5 @@ Besluiten over de werkwijze en de criteria. Besluiten over afzonderlijke begripp
 | 2026-10-04 | Tussen actoren alleen structurele relaties (deel van, lid van, voorzitter van); een handeling loopt via rollen en processen of een gebeurtenis. Een actor is een soort partij, nooit een individuele organisatie. |
 | 2026-10-04 | Producten en diensten vallen in de Beleidsdomeinindeling en de Functie-indeling naar domein; interne producten fijner onder bedrijfsfuncties. |
 | 2026-10-04 | Een beleidskader hangt bij voorkeur aan een product (regel 595); aan een proces of dienst alleen zolang er geen product is. |
+| 2026-10-04 | Alles wordt ingedeeld, geen wezen: elk element staat in minstens één indeling, ook in de export naar Archi. Een functie zonder GEMMA-match breidt de GEMMA-functieketen uit: ze wordt geaggregeerd door een bestaande GEMMA-functie. |
 | 2026-10-04 | De wiki genereert views per indeling en elementtype. De export blijft zonder views (besluit 2026-10-02); Archi-views staan op de todo. |
