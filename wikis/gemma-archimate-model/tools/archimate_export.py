@@ -1,7 +1,7 @@
 """Export naar Archi: de elementen en relaties van deze wiki als Archi-bestand (`.archimate`), met de id's van GEMMA.
 
 Het bestand is bedoeld om in Archi te bekijken (File › Open) en om in het GEMMA-model te importeren
-(File › Import › Model into selected model): Archi voegt samen op id. Daarom:
+(File › Import › Import another model into selected model): Archi voegt samen op id. Daarom:
 - een element met een GEMMA-match (`gemma.id` in de beoordeling) krijgt het GEMMA-id en staat in dezelfde mappen (met
   dezelfde map-id's) als in GEMMA; naam en definitie komen uit de wiki, de GEMMA-eigenschappen gaan letterlijk mee. De
   match is de verantwoordelijkheid van de wiki en de redacteur: de export vertrouwt haar;
