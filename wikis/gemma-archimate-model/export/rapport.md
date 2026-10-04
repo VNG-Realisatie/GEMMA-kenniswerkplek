@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: 4f3670db70da8c745bb5197ae931a5af69e133ca1ba2a6ef74bb5220e67d44a3 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: d13deb30af2cf9bd7eaa54febc2fb00ddfeeb046b618756eacc9ae512aafeabe -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-04T20:35:13. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 18 gekoppeld aan GEMMA, 55 nieuw. Relaties: 7 gekoppeld, 241 nieuw, 0 overgeslagen. Indelingen: 43 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-04T22:37:59. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 18 gekoppeld aan GEMMA, 56 nieuw. Relaties: 7 gekoppeld, 245 nieuw, 0 overgeslagen. Indelingen: 44 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
 
 ## Wijzigt een GEMMA-element
 
@@ -42,6 +42,7 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 ## Nieuw in GEMMA
 
 - Ambtenaar van de burgerlijke stand
+- Arts
 - Begraafplaats
 - Behandelen vergunningaanvragen lijkbezorging
 - Beheerder van de begraafplaats
