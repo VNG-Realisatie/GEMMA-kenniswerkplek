@@ -11,6 +11,12 @@ Het bestand is bedoeld om in Archi te bekijken (File › Open) en om in het GEMM
 - elk element en elke relatie krijgt `wiki-gemma-model exportdatum`: na de import verwijdert het jArchi-script van de
   skill wat een oudere datum heeft (volledige sync).
 
+Indelingen (analyses/indelingen.md): een element krijgt de eigenschappen procesniveau, objectniveau en zijn indelingsvelden;
+een aggregatie tussen processen heeft `indeling` en `procesniveau` ("taak → bedrijfsproces"); een proces zonder GEMMA-match
+staat in de map `Procesindeling naar taak`; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
+letterlijk meegaat); beleidsdomein, domein en doelgroep worden een aggregatie vanuit de bestaande GEMMA-groepering, of
+vanuit een nieuwe groepering in de map van de wiki.
+
 Alleen begrippen met status `goedgekeurd` (akkoord van de redacteur); `--concept` neemt ook kandidaat en review mee,
 voor het bekijken, en schrijft naar het kladblok. Het GEMMA-model moet als Archi-bestand zijn ingelezen
 (tools/gemma.py release <bestand.archimate>): de AMEFF heeft geen map-id's.
@@ -100,6 +106,9 @@ class Uitkomst:
     relaties_gekoppeld: int = 0
     relaties_nieuw: int = 0
     overgeslagen: list[str] = field(default_factory=list)
+    groeperingen_nieuw: list[str] = field(default_factory=list)
+    specialisaties: list[str] = field(default_factory=list)
+    indelingen: int = 0
 
 
 # --- Voorwaarden ---
@@ -157,6 +166,8 @@ class Bouwer:
             self.wortel[soort] = (Map(m["id"], m["naam"], soort, m["documentatie"], dict(m["eigenschappen"])) if m
                                   else Map(vast_id("map", soort), soort.capitalize(), soort))
         self._index = {m.id: m for m in self.wortel.values()}
+        self.meegenomen: set[str] = set()  # GEMMA-elementen die letterlijk meegaan als doel van een relatie
+        self.relatie_ids: set[str] = set()
 
     def gemma_map(self, map_id: str) -> Map:
         """De map met dit GEMMA-id, met de hele keten van ouders, zoals in GEMMA."""
@@ -197,6 +208,71 @@ def _gemma_eigen(eigenschappen: dict) -> list[tuple[str, str]]:
     return [(k, v) for k, v in eigenschappen.items() if not k.startswith(PREFIX + " ")]
 
 
+def _vind_groepering(gemma_data: dict, gemma_type: str | None, naam: str, map_eindigt: str | None = None) -> dict | None:
+    """Een GEMMA-groepering op naam; `gemma_type` is de eigenschap *GEMMA type*, `map_eindigt` de naam van de map."""
+    for e in sorted(gemma_data["elementen"].values(), key=lambda x: x["id"]):
+        if e["type"] != "grouping" or e["naam"].strip().lower() != naam.strip().lower():
+            continue
+        if gemma_type and e["eigenschappen"].get("GEMMA type") != gemma_type:
+            continue
+        if map_eindigt and not e["map"].endswith(map_eindigt):
+            continue
+        return e
+    return None
+
+
+def _vind_rol(gemma_data: dict, naam: str) -> dict | None:
+    for e in sorted(gemma_data["elementen"].values(), key=lambda x: x["id"]):
+        if e["type"] == "business-role" and e["naam"].strip().lower() == naam.strip().lower() and "Doelgroep" in e["map"]:
+            return e
+    return None
+
+
+def _stub(b: Bouwer, g: dict) -> None:
+    """Het GEMMA-element letterlijk meenemen, zodat een relatie ernaartoe in het bestand een doel heeft."""
+    if g["id"] in b.meegenomen:
+        return
+    b.meegenomen.add(g["id"])
+    el = ET.Element("element", {XSI: xsi_type(g["type"]), "name": g["naam"], "id": g["id"]})
+    if g.get("profiel"):
+        el.set("profiles", g["profiel"])
+        b.profielen.update(g["profiel"].split())
+    if g.get("documentatie"):
+        ET.SubElement(el, "documentation").text = g["documentatie"]
+    _eigenschappen(el, _gemma_eigen(g["eigenschappen"]))
+    b.gemma_map(g["map_id"]).objecten.append(el)
+
+
+def _relatie(b: Bouwer, uit: Uitkomst, gemma_relaties: dict, rtype: str, bron: str, doel: str, herkomst: str,
+             paren: list[tuple[str, str]], naam: str = "") -> None:
+    """Een relatie met het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id."""
+    bestaand = sorted(gemma_relaties.get((rtype, bron, doel), []), key=lambda x: x["id"])
+    g = bestaand[0] if bestaand else None
+    rid = g["id"] if g else vast_id("relatie", herkomst, rtype, bron, doel)
+    if rid in b.relatie_ids:
+        return
+    b.relatie_ids.add(rid)
+    attrs = {XSI: xsi_type(rtype)}
+    if naam:
+        attrs["name"] = naam
+    attrs.update({"id": rid, "source": bron, "target": doel})
+    el = ET.Element("element", attrs)
+    if g is not None and g.get("documentatie"):
+        ET.SubElement(el, "documentation").text = g["documentatie"]
+    alle = (_gemma_eigen(g["eigenschappen"]) if g is not None else []) + [
+        (eig("id"), herkomst), *b.gemeen("gekoppeld" if g is not None else "nieuw"), *paren]
+    _eigenschappen(el, alle)
+    if g is not None:
+        uit.relaties_gekoppeld += 1
+        b.gemma_map(g["map_id"]).objecten.append(el)
+    else:
+        uit.relaties_nieuw += 1
+        b.eigen_map("relations", []).objecten.append(el)
+
+
+EIGENSCHAPPEN_INDELING = ("afnemer", "domein", "doelgroep", "regelgever", "kernobject", "taakveld", "beleidsdomein")
+
+
 def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstempel: str, concept: bool = False,
          log: str = "", wiki_yaml: dict | None = None) -> Uitkomst:
     uit = Uitkomst()
@@ -233,7 +309,11 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                   (eig("beschrijving"), "\n\n".join(data.get("beschrijving", []))),
                   (eig("synoniemen"), "; ".join(f"{s['naam']} ({s['context']})" if s.get("context") else s["naam"]
                                                 for s in data.get("synoniemen", []))),
-                  (eig("pagina"), afgeleid.get("pad", ""))]
+                  (eig("pagina"), afgeleid.get("pad", "")),
+                  (eig("procesniveau"), afgeleid["uitkomst"].get("procesniveau") or ""),
+                  (eig("objectniveau"), afgeleid["uitkomst"].get("objectniveau") or ""),
+                  (eig("generiek"), "ja" if afgeleid["uitkomst"].get("generiek") else ""),
+                  *[(eig(k), data.get(k, "")) for k in EIGENSCHAPPEN_INDELING]]
         if g is not None:
             vorige_naam = g["naam"] if g["naam"] != data["begrip"] else g["eigenschappen"].get(eig("vorige naam"), "")
             vorige_def = (g["documentatie"] if g["documentatie"] != (data.get("definitie") or "").strip()
@@ -245,6 +325,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
         else:
             uit.nieuw.append({"id": bid, "naam": data["begrip"]})
             map_naam = Path(page_types.get(afgeleid["uitkomst"].get("paginatype"), {}).get("dir", atype)).name.capitalize()
+            if afgeleid["uitkomst"].get("paginatype") == "bedrijfsproces":
+                map_naam = "Procesindeling naar taak"
             doel = b.eigen_map(bovenste_map(atype), [n for n in (map_naam, data.get("taakveld"), data.get("beleidsdomein")) if n])
         _eigenschappen(el, paren)
         doel.objecten.append(el)
@@ -266,6 +348,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                               key=lambda x: x["id"])
             g = bestaand[0] if bestaand else None
             rid = g["id"] if g else vast_id("relatie", bid, r["soort"], r["naar"], r.get("naam", ""))
+            b.relatie_ids.add(rid)
             attrs = {XSI: xsi_type(rtype)}
             if r.get("naam"):
                 attrs["name"] = r["naam"]
@@ -281,6 +364,12 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             paren += [(eig("id"), f"{bid}#{i + 1}"), *b.gemeen("gekoppeld" if g is not None else "nieuw"),
                       (eig("grondslag"), r.get("grondslag", "")), (eig("bronnen"), "; ".join(r.get("bronnen", []))),
                       (eig("vindplaats"), r.get("vindplaats", ""))]
+            bron_u, doel_u = data["afgeleid"]["uitkomst"], gekozen[r["naar"]]["afgeleid"]["uitkomst"]
+            if rtype == "aggregation-relationship" and bron_u.get("paginatype") == doel_u.get("paginatype") == "bedrijfsproces":
+                paren += [(eig("indeling"), "Procesindeling naar taak"),
+                          (eig("procesniveau"), f"{bron_u.get('procesniveau')} → {doel_u.get('procesniveau')}")]
+            if r.get("via"):
+                paren.append((eig("specialisatie"), (begrippen.get(r["via"]) or {}).get("begrip", r["via"])))
             _eigenschappen(el, paren)
             if g is not None:
                 uit.relaties_gekoppeld += 1
@@ -289,8 +378,91 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                 uit.relaties_nieuw += 1
                 b.eigen_map("relations", []).objecten.append(el)
 
+    _gemma_specialisaties(b, uit, gemma_data, gekozen, ids, gemma_relaties)
+    _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties)
     uit.xml = _serialiseer(b, gemma_bron)
     return uit
+
+
+def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict) -> None:
+    """`gemma_generiek`: een specialisatie naar een generiek GEMMA-element, dat letterlijk meegaat."""
+    for bid, data in sorted(gekozen.items()):
+        generiek = data.get("gemma_generiek")
+        if not generiek or bid not in ids:
+            continue
+        g = gemma_data["elementen"].get(generiek["id"])
+        atype = data["afgeleid"]["uitkomst"]["archimate_type"]
+        if g is None:
+            uit.fouten.append(f"{bid}: gemma_generiek {generiek['id']} staat niet in het ingelezen GEMMA-model")
+            continue
+        if g["type"] != atype:
+            uit.fouten.append(f"{bid}: gemma_generiek {g['naam']} is een {g['type']}, het begrip een {atype}: een "
+                              "specialisatie heeft hetzelfde type. Leg dit voor aan de redacteur.")
+            continue
+        if g["id"] not in ids.values():
+            _stub(b, g)
+        indeling = "Procesindeling naar soort werk" if atype == "business-process" else "Specialisatie van een generiek GEMMA-element"
+        _relatie(b, uit, gemma_relaties, "specialization-relationship", ids[bid], g["id"], f"{bid}#gemma_generiek",
+                 [(eig("indeling"), indeling), (eig("onderbouwing"), generiek.get("onderbouwing", ""))])
+        uit.specialisaties.append(f"{data['begrip']} → {g['naam']}")
+
+
+# De indelingen die een element in een bestaande GEMMA-groepering plaatsen: paginatype → (indeling, soort).
+BELEIDSDOMEIN_TYPEN = ("bedrijfsobject", "product", "dienst", "beleidskader")
+DOMEIN_TYPEN = ("bedrijfsfunctie", "product", "dienst")
+DOELGROEP_TYPEN = ("actor", "rol", "bedrijfssamenwerking", "kanaal")
+
+
+def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict) -> None:
+    """Aggregaties vanuit de GEMMA-groepering van de Beleidsdomeinindeling, de Functie-indeling naar domein en de
+    Doelgroepindeling; een beleidsdomein dat GEMMA niet kent wordt een nieuwe groepering onder het taakveld."""
+    nieuwe: dict[str, str] = {}
+
+    def aggregatie(groep_id: str, element: str, indeling: str, bid: str, gemma_groep: dict | None = None) -> None:
+        if gemma_groep is not None and groep_id not in ids.values():
+            _stub(b, gemma_groep)
+        _relatie(b, uit, gemma_relaties, "aggregation-relationship", groep_id, element, f"{bid}#{indeling}",
+                 [(eig("indeling"), indeling)])
+        uit.indelingen += 1
+
+    for bid, data in sorted(gekozen.items()):
+        if bid not in ids:
+            continue
+        paginatype = data["afgeleid"]["uitkomst"].get("paginatype")
+        element = ids[bid]
+        beleidsdomein = data.get("beleidsdomein")
+        if paginatype in BELEIDSDOMEIN_TYPEN and beleidsdomein:
+            groep = _vind_groepering(gemma_data, "Beleidsdomein", beleidsdomein)
+            if groep is None:
+                if beleidsdomein not in nieuwe:
+                    gid = vast_id("groepering", "beleidsdomein", beleidsdomein)
+                    nieuwe[beleidsdomein] = gid
+                    taakveld = data.get("taakveld")
+                    el = ET.Element("element", {XSI: "archimate:Grouping", "name": beleidsdomein, "id": gid})
+                    _eigenschappen(el, [("GEMMA type", "Beleidsdomein"), (eig("id"), f"beleidsdomein:{beleidsdomein}"),
+                                        *b.gemeen("nieuw"), (eig("taakveld"), taakveld or "")])
+                    b.eigen_map("other", ["Beleidsdomeinindeling", taakveld] if taakveld else ["Beleidsdomeinindeling"]).objecten.append(el)
+                    uit.groeperingen_nieuw.append(f"{beleidsdomein} (taakveld {taakveld or '—'})")
+                    ouder = _vind_groepering(gemma_data, "Taakveld Iv3", taakveld) if taakveld else None
+                    if ouder is not None:
+                        _stub(b, ouder)
+                        _relatie(b, uit, gemma_relaties, "aggregation-relationship", ouder["id"], gid,
+                                 f"beleidsdomein:{beleidsdomein}", [(eig("indeling"), "Beleidsdomeinindeling")])
+                aggregatie(nieuwe[beleidsdomein], element, "Beleidsdomeinindeling", bid)
+            else:
+                aggregatie(groep["id"], element, "Beleidsdomeinindeling", bid, groep)
+        if paginatype in DOMEIN_TYPEN and data.get("domein"):
+            groep = _vind_groepering(gemma_data, None, data["domein"], "Domeinen")
+            if groep is None:
+                uit.overgeslagen.append(f"{data['begrip']}: domein '{data['domein']}' bestaat niet als groepering in GEMMA")
+            else:
+                aggregatie(groep["id"], element, "Functie-indeling naar domein", bid, groep)
+        if paginatype in DOELGROEP_TYPEN and data.get("doelgroep"):
+            rol = _vind_rol(gemma_data, data["doelgroep"])
+            if rol is None:
+                uit.overgeslagen.append(f"{data['begrip']}: doelgroep '{data['doelgroep']}' bestaat niet als rol in GEMMA")
+            else:
+                aggregatie(rol["id"], element, "Doelgroepindeling", bid, rol)
 
 
 
@@ -334,12 +506,21 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
     regels = [f"# Export naar Archi ({'concept' if concept else 'definitief'})", "",
               f"Exportdatum: {tijdstempel}. GEMMA-bron: {gemma_bron}. Elementen: {len(uit.gekoppeld)} gekoppeld aan GEMMA, "
               f"{len(uit.nieuw)} nieuw. Relaties: {uit.relaties_gekoppeld} gekoppeld, {uit.relaties_nieuw} nieuw, "
-              f"{len(uit.overgeslagen)} overgeslagen.", ""]
+              f"{len(uit.overgeslagen)} overgeslagen. Indelingen: {uit.indelingen} aggregaties vanuit een groepering, "
+              f"{len(uit.specialisaties)} specialisaties naar een GEMMA-element.", ""]
     gewijzigd = [e for e in uit.gekoppeld if e["naam"] != e["gemma_naam"] or e["definitie_gewijzigd"]]
     if gewijzigd:
         regels += ["## Wijzigt een GEMMA-element", "", "| Begrip | Naam in GEMMA | Definitie gewijzigd |", "|---|---|---|"]
         regels += [f"| {e['naam']} | {e['gemma_naam']} | {'ja' if e['definitie_gewijzigd'] else 'nee'} |" for e in gewijzigd]
         regels.append("")
+    if uit.specialisaties:
+        regels += ["## Specialisaties naar een GEMMA-element", "",
+                   "Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets in gewijzigd.", ""]
+        regels += [f"- {x}" for x in sorted(uit.specialisaties)] + [""]
+    if uit.groeperingen_nieuw:
+        regels += ["## Nieuwe groeperingen", "",
+                   "Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het GEMMA-taakveld als dat bestaat.", ""]
+        regels += [f"- {x}" for x in sorted(uit.groeperingen_nieuw)] + [""]
     if uit.nieuw:
         regels += ["## Nieuw in GEMMA", ""] + [f"- {e['naam']}" for e in sorted(uit.nieuw, key=lambda e: e["naam"].lower())] + [""]
     if uit.overgeslagen:

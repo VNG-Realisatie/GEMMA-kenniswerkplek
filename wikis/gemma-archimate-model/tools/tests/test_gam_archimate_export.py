@@ -139,7 +139,8 @@ def test_relaties_hergebruiken_gemma_id_en_hebben_expliciet_toegangstype(tmp_pat
     assert schrijven.get("accessType") == "0"
     gericht = _el(root, ae.vast_id("relatie", "behandelen-aanvraag", "associatie (gericht)", "urn", ""))
     assert gericht.get("directed") == "true"
-    assert uit.relaties_gekoppeld == 1 and uit.relaties_nieuw == 2
+    # de twee bedrijfsobjecten met een beleidsdomein krijgen elk een aggregatie vanuit een nieuwe groepering
+    assert uit.relaties_gekoppeld == 1 and uit.relaties_nieuw == 4
     assert any("graf" in o for o in uit.overgeslagen)
 
 
@@ -177,3 +178,173 @@ def test_verwijzingen_kloppen_en_export_is_deterministisch(tmp_path):
     assert uit1.xml == uit2.xml
     uit3, _ = _export(tmp_path, tijd="2026-10-03T08:00:00")
     assert uit3.xml.replace(b"2026-10-03T08:00:00", b"2026-10-02T12:00:00") == uit1.xml
+
+
+GEMMA_INDELING = """<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="GEMMA" id="id-gemma" version="5.0.0">
+  <folder name="Business" id="f-business" type="business">
+    <folder name="Bedrijfsprocessen" id="f-proc">
+      <element xsi:type="archimate:BusinessProcess" name="Behandelen aanvraag vergunning of ontheffing" id="id-generiek"/>
+      <element xsi:type="archimate:BusinessEvent" name="Aanvraag ontvangen" id="id-gebeurtenis"/>
+    </folder>
+    <folder name="Bedrijfsrollen" id="f-rol">
+      <element xsi:type="archimate:BusinessRole" name="Inwoners en ondernemers" id="id-doelgroep-inwoners"/>
+    </folder>
+    <folder name="Bedrijfsobjecten" id="f-bo">
+      <element xsi:type="archimate:BusinessObject" name="Beschikking" id="id-beschikking"/>
+    </folder>
+  </folder>
+  <folder name="Other" id="f-other" type="other">
+    <folder name="Domein en doelgroep" id="f-dd">
+      <folder name="Domeinen" id="f-domeinen">
+        <element xsi:type="archimate:Grouping" name="Fysieke leefomgeving" id="id-domein-fl"/>
+      </folder>
+      <folder name="Doelgroep" id="f-doelgroep">
+        <element xsi:type="archimate:BusinessRole" name="Inwoners en ondernemers" id="id-doelgroep-inwoners2"/>
+      </folder>
+    </folder>
+    <folder name="Beleidsdomeinen" id="f-bd">
+      <element xsi:type="archimate:Grouping" name="Besluitvorming" id="id-bd-besluitvorming">
+        <property key="GEMMA type" value="Beleidsdomein"/>
+      </element>
+      <element xsi:type="archimate:Grouping" name="Bestuur" id="id-taakveld-bestuur">
+        <property key="GEMMA type" value="Taakveld Iv3"/>
+      </element>
+    </folder>
+  </folder>
+  <folder name="Relations" id="f-rel" type="relations">
+    <element xsi:type="archimate:AggregationRelationship" id="r-agg-bd" source="id-bd-besluitvorming" target="id-beschikking"/>
+  </folder>
+</archimate:model>
+"""
+
+
+def _indeling_begrippen():
+    def element(naam, atype, paginatype, **extra):
+        data = _begrip(naam, atype, status="review", **extra)
+        data["afgeleid"]["uitkomst"]["paginatype"] = paginatype
+        return data
+
+    beschikking = element("Beschikking", "business-object", "bedrijfsobject", gemma_id="id-beschikking",
+                          taakveld="Bestuur", beleidsdomein="Besluitvorming")
+    beschikking["afgeleid"]["uitkomst"]["objectniveau"] = "generiek"
+    taak = element("Verzorgen lijkbezorging", "business-process", "bedrijfsproces",
+                   relaties=[{"soort": "aggregatie", "naar": "opgraven-lijk", "grondslag": "bron", "bronnen": ["2026-bron"]}])
+    taak["afgeleid"]["uitkomst"]["procesniveau"] = "taak"
+    deel = element("Opgraven lijk", "business-process", "bedrijfsproces", taakveld="Volksgezondheid",
+                   beleidsdomein="Begraafplaatsen", kernobject="lijk", afnemer="extern",
+                   gemma_generiek={"id": "id-generiek", "onderbouwing": "Een vergunningaanvraag."},
+                   relaties=[{"soort": "toegang (registreren)", "naar": "beschikking", "grondslag": "bron",
+                              "bronnen": ["2026-bron"], "via": "vergunning-tot-opgraving"}])
+    deel["afgeleid"]["uitkomst"]["procesniveau"] = "deelproces"
+    lijk = element("Lijk", "business-object", "bedrijfsobject", taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen")
+    lijk["afgeleid"]["uitkomst"]["objectniveau"] = "kernobject"
+    functie = element("Exploiteren van begraafplaatsen", "business-function", "bedrijfsfunctie", domein="Fysieke leefomgeving")
+    nabestaande = element("Nabestaande", "business-role", "rol", doelgroep="inwoners en ondernemers")
+    zonder = element("Gemeente", "business-actor", "actor", doelgroep="onbekende groep")
+    specialisatie = {"begrip": "Vergunning tot opgraving", "status": "review"}
+    return {"beschikking": beschikking, "verzorgen-lijkbezorging": taak, "opgraven-lijk": deel, "lijk": lijk,
+            "exploiteren": functie, "nabestaande": nabestaande, "gemeente": zonder,
+            "vergunning-tot-opgraving": specialisatie}
+
+
+def _export_indeling(tmp_path, begrippen=None):
+    pad = tmp_path / "gemma-indeling.archimate"
+    pad.write_text(GEMMA_INDELING, encoding="utf-8")
+    begrippen = begrippen or _indeling_begrippen()
+    gemma_data = gemma.parse(pad)
+    uit = ae.bouw(gemma_data, begrippen, "2026-vng-gemma", "2026-10-04T12:00:00", True, "", WIKI_YAML)
+    return uit, ET.fromstring(uit.xml)
+
+
+def _relaties_van(root, rtype, bron=None, doel=None):
+    return [e for e in root.iter("element") if e.get("{http://www.w3.org/2001/XMLSchema-instance}type") == rtype
+            and (bron is None or e.get("source") == bron) and (doel is None or e.get("target") == doel)]
+
+
+def test_elementen_krijgen_niveau_en_indelingsvelden_als_eigenschap(tmp_path):
+    uit, root = _export_indeling(tmp_path)
+    assert not uit.fouten, uit.fouten
+    deel = _props(_el(root, ae.vast_id("element", "opgraven-lijk")))
+    assert deel["wiki-gemma-model procesniveau"] == "deelproces" and deel["wiki-gemma-model afnemer"] == "extern"
+    assert deel["wiki-gemma-model kernobject"] == "lijk"
+    assert _props(_el(root, ae.vast_id("element", "lijk")))["wiki-gemma-model objectniveau"] == "kernobject"
+    assert _props(_el(root, ae.vast_id("element", "exploiteren")))["wiki-gemma-model domein"] == "Fysieke leefomgeving"
+    assert _props(_el(root, "id-beschikking"))["wiki-gemma-model objectniveau"] == "generiek"
+
+
+def test_processen_staan_in_de_map_procesindeling_naar_taak(tmp_path):
+    _, root = _export_indeling(tmp_path)
+    namen = [n for n, _ in _pad(root, ae.vast_id("element", "opgraven-lijk"))]
+    assert namen == ["Business", "wiki-gemma-model", "Procesindeling naar taak", "Volksgezondheid", "Begraafplaatsen"]
+
+
+def test_aggregatie_tussen_processen_heeft_indeling_en_niveau(tmp_path):
+    _, root = _export_indeling(tmp_path)
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", ae.vast_id("element", "verzorgen-lijkbezorging"),
+                           ae.vast_id("element", "opgraven-lijk"))
+    props = _props(agg)
+    assert props["wiki-gemma-model indeling"] == "Procesindeling naar taak"
+    assert props["wiki-gemma-model procesniveau"] == "taak → deelproces"
+
+
+def test_via_wordt_een_eigenschap_van_de_relatie(tmp_path):
+    _, root = _export_indeling(tmp_path)
+    (toegang,) = _relaties_van(root, "archimate:AccessRelationship", ae.vast_id("element", "opgraven-lijk"))
+    assert _props(toegang)["wiki-gemma-model specialisatie"] == "Vergunning tot opgraving"
+
+
+def test_gemma_generiek_wordt_een_specialisatie_naar_het_gemma_element(tmp_path):
+    uit, root = _export_indeling(tmp_path)
+    (spec,) = _relaties_van(root, "archimate:SpecializationRelationship", ae.vast_id("element", "opgraven-lijk"), "id-generiek")
+    assert _props(spec)["wiki-gemma-model indeling"] == "Procesindeling naar soort werk"
+    generiek = _el(root, "id-generiek")  # het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen
+    assert generiek.get("name") == "Behandelen aanvraag vergunning of ontheffing"
+    assert not any(k.startswith("wiki-gemma-model") for k in _props(generiek))
+    assert _pad(root, "id-generiek") == [("Business", "f-business"), ("Bedrijfsprocessen", "f-proc")]
+    assert uit.specialisaties == ["Opgraven lijk → Behandelen aanvraag vergunning of ontheffing"]
+
+
+def test_gemma_generiek_met_ander_type_is_een_fout(tmp_path):
+    begrippen = _indeling_begrippen()
+    begrippen["opgraven-lijk"]["gemma_generiek"] = {"id": "id-gebeurtenis", "onderbouwing": "Verkeerd type."}
+    uit, _ = _export_indeling(tmp_path, begrippen)
+    assert any("een specialisatie heeft hetzelfde type" in f for f in uit.fouten)
+
+
+def test_beleidsdomein_uit_gemma_wordt_hergebruikt_en_een_onbekende_wordt_nieuw(tmp_path):
+    uit, root = _export_indeling(tmp_path)
+    # Besluitvorming bestaat in GEMMA, met een eigen aggregatie die haar id behoudt
+    assert _el(root, "r-agg-bd").get("source") == "id-bd-besluitvorming"
+    assert _props(_el(root, "r-agg-bd"))["wiki-gemma-model indeling"] == "Beleidsdomeinindeling"
+    assert _el(root, "id-bd-besluitvorming").get("name") == "Besluitvorming"
+    # Begraafplaatsen niet: een nieuwe groepering in de map van de wiki, zonder taakveld in GEMMA
+    nieuw = _el(root, ae.vast_id("groepering", "beleidsdomein", "Begraafplaatsen"))
+    assert nieuw.get("name") == "Begraafplaatsen" and _props(nieuw)["GEMMA type"] == "Beleidsdomein"
+    assert [n for n, _ in _pad(root, nieuw.get("id"))] == ["Other", "wiki-gemma-model", "Beleidsdomeinindeling", "Volksgezondheid"]
+    assert uit.groeperingen_nieuw == ["Begraafplaatsen (taakveld Volksgezondheid)"]
+    assert _relaties_van(root, "archimate:AggregationRelationship", nieuw.get("id"), ae.vast_id("element", "lijk"))
+
+
+def test_domein_en_doelgroep_aggregeren_vanuit_de_gemma_groepering(tmp_path):
+    uit, root = _export_indeling(tmp_path)
+    assert _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "exploiteren"))
+    assert _relaties_van(root, "archimate:AggregationRelationship", "id-doelgroep-inwoners2", ae.vast_id("element", "nabestaande"))
+    assert any("onbekende groep" in o for o in uit.overgeslagen)
+
+
+def test_indelingen_geven_geen_dubbele_ids_en_geen_dangling_relaties(tmp_path):
+    _, root = _export_indeling(tmp_path)
+    ids = [e.get("id") for e in root.iter("element")]
+    assert len(ids) == len(set(ids))
+    for r in root.iter("element"):
+        if r.get("source"):
+            assert r.get("source") in ids and r.get("target") in ids, r.attrib
+
+
+def test_rapport_noemt_specialisaties_en_nieuwe_groeperingen(tmp_path):
+    uit, _ = _export_indeling(tmp_path)
+    rapport = ae.rapport_md(uit, "2026-10-04T12:00:00", "2026-vng-gemma", True)
+    assert "## Specialisaties naar een GEMMA-element" in rapport
+    assert "- Opgraven lijk → Behandelen aanvraag vergunning of ontheffing" in rapport
+    assert "## Nieuwe groeperingen" in rapport and "- Begraafplaatsen (taakveld Volksgezondheid)" in rapport

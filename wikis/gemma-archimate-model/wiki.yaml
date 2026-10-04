@@ -12,6 +12,8 @@ bronvoorrang: [wet, informatiemodel, beleid, overig]
 page_types:                          # pagina's van curated typen en onderwerpen maakt tools/render.py; zonder schema
   onderwerp:
     dir: begrippen                   # begrippenlijst per onderwerp (gegenereerd uit beoordelingen/onderwerpen)
+  overzicht:
+    dir: overzichten                 # overzicht per onderwerp: de views op de indelingen (gegenereerd)
   bronanalyse:
     dir: bronanalyses
     group_by: onderwerp

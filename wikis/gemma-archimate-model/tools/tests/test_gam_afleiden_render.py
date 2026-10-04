@@ -379,3 +379,90 @@ def test_signalen_voor_de_indeling():
     assert "geeft melding door aan" in tekst and "is voorzitter van" not in tekst
     assert "arts: generiek, maar geen `gemma_generiek`" in tekst
     assert "beheren: hangt onder geen taak" not in tekst and "keten: hangt onder geen taak" not in tekst
+
+
+def _indeling_wiki(wiki):
+    """Een taak met een ketenproces, een deelproces, een kernobject met subobject, een generiek object met
+    specialisatie, een functie, een gebeurtenis en een dienst."""
+    import gam_gemeen
+
+    gam_gemeen.schrijf_json_gegenereerd(
+        wiki / "gemma" / "gemma_parsed.json",
+        {"elementen": {"id-vergunning": {"id": "id-vergunning", "naam": "Behandelen aanvraag vergunning of ontheffing",
+                                         "type": "business-process", "documentatie": "", "map": "Business", "map_id": "f",
+                                         "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}}, "test")
+    geen_ggm = {"ggm": {"sterkte": "geen", "onderbouwing": "Niet in het GGM."}}
+    taak = BASIS_TAAK = {"herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp",
+                         "zelfstandige_specialisatie", "gedrag", "groepeert_processen", "omvat_processen"}
+    keten = PROCES | {"meer_organisaties"}
+    deel = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "eigen_besluit"}
+    gevallen = {
+        "verzorgen-lijkbezorging": _element("Verzorgen lijkbezorging", taak, relaties=[_rel("aggregatie", "bezorgen-lijken")]),
+        "bezorgen-lijken": _element("Bezorgen lijken", keten, kernobject="lijk", afnemer="extern",
+                                    relaties=[_rel("aggregatie", "opgraven-lijk"), _rel("toegang (registreren)", "lijk")]),
+        "opgraven-lijk": _element("Opgraven lijk", deel, kernobject="grafbedekking", afnemer="extern",
+                                  gemma_generiek={"id": "id-vergunning", "onderbouwing": "Een vergunningaanvraag."},
+                                  relaties=[{**_rel("toegang (registreren)", "vergunning"), "via": "vergunning-tot-opgraving"},
+                                            _rel("realisatie", "onderhoud-van-graven")]),
+        "lijk": _element("Lijk", BO, relaties=[_rel("compositie", "grafbedekking")], **geen_ggm),
+        "grafbedekking": _element("Grafbedekking", BO | {"deel_van_object"}, **geen_ggm),
+        "vergunning": _element("Vergunning", BO | {"generiek"}, **geen_ggm),
+        "vergunning-tot-opgraving": _element("Vergunning tot opgraving", BO - {"zelfstandige_specialisatie"},
+                                             genoemd_begrip="Vergunning", **geen_ggm),
+        "onderhoud-van-graven": _element("Onderhoud van graven", DIENST, domein="Fysieke leefomgeving", afnemer="extern"),
+        "exploiteren-begraafplaatsen": _element("Exploiteren van begraafplaatsen", FUNCTIE, domein="Fysieke leefomgeving",
+                                                relaties=[_rel("bediening", "opgraven-lijk")]),
+        "overlijden": _element("Overlijden", GEBEURTENIS, relaties=[_rel("triggering", "bezorgen-lijken")]),
+    }
+    for bid, data in gevallen.items():
+        _schrijf(wiki, bid, data)
+    _afleiden(wiki)
+    return gevallen
+
+
+def test_pagina_toont_de_plaats_in_de_indelingen(wiki):
+    _indeling_wiki(wiki)
+    opgraven = _lees(wiki, "opgraven-lijk")
+    assert opgraven["afgeleid"]["uitkomst"]["procesniveau"] == "deelproces"
+    pagina = (wiki / opgraven["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    assert "procesniveau: deelproces" in pagina and "afnemer: extern" in pagina
+    assert "kernobject:" not in pagina.split("---")[1]  # een verwijzing staat niet in de frontmatter
+    assert "#### Plaats in de indelingen" in pagina or "### Plaats in de indelingen" in pagina
+    assert "**Procesindeling naar taak, onderdeel van**: [Bezorgen lijken]" in pagina
+    assert "**Kernobject**: [Grafbedekking]" in pagina
+    assert "**Procesindeling naar soort werk, specialisatie van**: GEMMA-element *id-vergunning*" in pagina or \
+        "specialisatie van**: GEMMA-element" in pagina
+    assert "**Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen]" in pagina
+
+    keten = (wiki / _lees(wiki, "bezorgen-lijken")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    assert "**Procesniveau**: ketenproces." in keten and "**Gestart door gebeurtenis**: [Overlijden]" in keten
+    assert "onderdeel van**: [Verzorgen lijkbezorging]" in keten and "omvat**: [Opgraven lijk]" in keten
+
+    lijk = (wiki / _lees(wiki, "lijk")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    assert "objectniveau: kernobject" in lijk and "**Levensloop bepaald door**: [Bezorgen lijken]" in lijk
+    bedekking = (wiki / _lees(wiki, "grafbedekking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    assert "objectniveau: subobject" in bedekking and "**Subobject van**: [Lijk]" in bedekking
+    assert "**Mutaties door deelprocessen**: [Opgraven lijk]" in bedekking
+
+    vergunning = (wiki / _lees(wiki, "vergunning")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    assert "objectniveau: generiek" in vergunning and "Specialisaties per onderwerp" in vergunning
+    assert "**Vergunning tot opgraving**" in vergunning and "Genoemd door [Opgraven lijk]" in vergunning
+
+
+def test_overzicht_per_onderwerp_toont_de_views(wiki):
+    _indeling_wiki(wiki)
+    overzicht = (wiki / "overzichten" / "test.md").read_text(encoding="utf-8")
+    assert "## Procesindeling naar taak" in overzicht
+    assert "- [Verzorgen lijkbezorging](" in overzicht
+    assert "  - [Bezorgen lijken](" in overzicht and "*(ketenproces, afnemer extern)*" in overzicht
+    assert "    - [Opgraven lijk](" in overzicht and "bediend door [Exploiteren van begraafplaatsen]" in overzicht
+    assert "levert [Onderhoud van graven]" in overzicht
+    assert "## Ketens" in overzicht and "deelprocessen [Opgraven lijk]" in overzicht
+    assert "## Procesindeling naar soort werk" in overzicht
+    assert "## Gebeurtenissen" in overzicht and "| [Overlijden](" in overzicht
+    assert "**Kernobjecten**" in overzicht and "subobjecten [Grafbedekking]" in overzicht
+    assert "**Generiek**" in overzicht and "[Vergunning]" in overzicht
+    assert "## Functies" in overzicht and "## Producten en diensten" in overzicht
+    lijst = (wiki / "begrippen" / "test.md").read_text(encoding="utf-8")
+    assert "overzichten/test.md" in lijst
+    assert render.main(["--wiki", str(wiki), "--check"]) == 0

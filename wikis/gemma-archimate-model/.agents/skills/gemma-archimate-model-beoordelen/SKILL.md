@@ -57,6 +57,13 @@ grondslag: bron                               # ggm-entiteit | ggm-afgeleid | pr
 grondslag_toelichting: []                     # verplicht bij regelgeving, procesobject, ggm-afgeleid
 ggm: {sterkte: geen, onderbouwing: "Het GGM kent geen begraafplaats."}          # bij gegevensobjecten; met guid bij een match
 gemma: {sterkte: geen, onderbouwing: "Nieuw voor GEMMA."}                       # altijd; met id bij een match
+# Indeling (stap 7, zie analyses/indelingen.md), alleen waar het type erom vraagt:
+kernobject: graf                              # bedrijfs-, keten- en deelproces: het object waarvan het de levensloop omvat of waarin het een mutatie doet
+afnemer: extern                               # proces, product, dienst: extern of intern
+domein: Fysieke leefomgeving                  # functie, product, dienst: GEMMA-domein
+doelgroep: gemeente                           # actor, rol, samenwerking, kanaal: gemeente | inwoners en ondernemers | ketenpartners
+regelgever: rijk                              # beleidskader: EU | rijk | VNG-model
+gemma_generiek: {id: id-…, onderbouwing: "Een vergunningaanvraag."}   # specialisatie van een generiek GEMMA-element (exacte match)
 specialisaties: [{naam: Bijzondere begraafplaats, omschrijving: "Van een kerkgenootschap of rechtspersoon (art. 24)."}]
 relaties:
   - {soort: aggregatie, naar: graf, naam: bevat, grondslag: bron, bronnen: [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen], vindplaats: art. 1}
@@ -75,7 +82,8 @@ Velden en wat erin hoort:
 | `gemma` (id, sterkte, onderbouwing) | `references/gemma-match.md` |
 | `generalisatie`, `specialisaties`, `ggm_componenten` | `references/hierarchie.md` |
 | `tegenhanger` | `references/tegenhangers.md` |
-| `relaties` | `references/relaties.md` |
+| `relaties` (ook `via`: de specialisatie zonder pagina van het generieke doel) | `references/relaties.md` |
+| `kernobject`, `afnemer`, `domein`, `doelgroep`, `regelgever`, `gemma_generiek` | skill `gemma-archimate-model-criteria`, stap 7, en `analyses/indelingen.md` |
 
 ## 5. Match op betekenis
 

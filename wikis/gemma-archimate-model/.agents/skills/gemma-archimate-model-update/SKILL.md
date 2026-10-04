@@ -28,7 +28,7 @@ Volg skill `wiki-curatie-update`. Deze workflow vult de stappen in voor deze wik
 
 ## Grenzen
 
-- Pagina's (`bedrijfsarchitectuur/`, `motivatie/`, `begrippen/`, `analyses/ggm-terugmeldingen.md`, `ter-beoordeling.md`, `voortgang.md`) nooit met de hand bewerken: wijzig de beoordeling en draai `tools/afleiden.py`.
+- Pagina's (`bedrijfsarchitectuur/`, `motivatie/`, `begrippen/`, `overzichten/`, `analyses/ggm-terugmeldingen.md`, `ter-beoordeling.md`, `voortgang.md`) nooit met de hand bewerken: wijzig de beoordeling en draai `tools/afleiden.py`.
 - `status:` en `afgeleid:` in een beoordeling nooit zelf invullen; de scripts zetten ze.
 - Nooit zelf AKKOORD typen of `promote apply` draaien zonder dat de redacteur letterlijk AKKOORD typte.
 
