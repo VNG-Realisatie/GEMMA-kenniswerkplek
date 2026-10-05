@@ -8,7 +8,7 @@ onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Plaats op een begraafplaats waarin lijken worden begraven of urnen worden bijgezet.
+definitie: Plaats op een begraafplaats waarin stoffelijke overschotten worden begraven of urnen worden bijgezet.
 grondslag: bron
 match:
   ggm: geen
@@ -31,11 +31,11 @@ bronnen:
 
 ### Definitie
 
-Plaats op een begraafplaats waarin lijken worden begraven of urnen worden bijgezet.
+Plaats op een begraafplaats waarin stoffelijke overschotten worden begraven of urnen worden bijgezet.
 
 ### Beschrijving
 
-Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k); het is een zandgraf of keldergraf (VNG-model art. 1 b). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven lijken met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina. Graven van historische betekenis staan op een lijst; over het ruimen daarvan beslist de raad (VNG-model art. 26).
+Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k); het is een zandgraf of keldergraf (VNG-model art. 1 b). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven stoffelijke overschotten met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina. Graven van historische betekenis staan op een lijst; over het ruimen daarvan beslist de raad (VNG-model art. 26).
 
 ## Plaats in het model
 
@@ -125,3 +125,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-09-30: Opname akkoord als gegevensobject zonder GGM-entiteit (GGM-terugmelding 3).
+- 2026-10-05: Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie en in de zin over het register (die beschrijft de inhoud, niet de naam).

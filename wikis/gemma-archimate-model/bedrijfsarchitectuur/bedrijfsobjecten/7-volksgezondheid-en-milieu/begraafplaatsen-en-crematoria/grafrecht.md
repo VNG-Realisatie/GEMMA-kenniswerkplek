@@ -8,7 +8,7 @@ onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Uitsluitend recht om in een particulier graf lijken te laten begraven of urnen te laten bijzetten, voor bepaalde of onbepaalde tijd.
+definitie: Uitsluitend recht om in een particulier graf stoffelijke overschotten te laten begraven of urnen te laten bijzetten, voor bepaalde of onbepaalde tijd.
 grondslag: bron
 match:
   ggm: geen
@@ -36,7 +36,7 @@ bronnen:
 
 ### Definitie
 
-Uitsluitend recht om in een particulier graf lijken te laten begraven of urnen te laten bijzetten, voor bepaalde of onbepaalde tijd.
+Uitsluitend recht om in een particulier graf stoffelijke overschotten te laten begraven of urnen te laten bijzetten, voor bepaalde of onbepaalde tijd.
 
 ### Beschrijving
 
@@ -126,3 +126,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-09-30: Afspraak (contract): tweezijdig, met rechten en plichten, ook als besluit op aanvraag verleend. Opname akkoord als gegevensobject zonder GGM-entiteit (GGM-terugmelding 4).
+- 2026-10-05: Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie; uitsluitend recht blijft (wetsterm).

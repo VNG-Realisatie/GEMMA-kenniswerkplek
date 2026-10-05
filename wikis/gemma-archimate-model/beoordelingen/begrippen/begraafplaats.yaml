@@ -207,7 +207,7 @@ kenmerken:
     onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Terrein waar lijken worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
+definitie: Terrein waar stoffelijke overschotten worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
 beschrijving:
 - Elke gemeente heeft ten minste één gemeentelijke begraafplaats, voor zich of samen met andere gemeenten (art. 33). Daarnaast bestaan bijzondere begraafplaatsen van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 24, 37). De gemeente beslist over grond voor en ingebruikname van bijzondere begraafplaatsen en kan begraafplaatsen sluiten (art. 40, 41, 43, 44). Op de begraafplaats liggen graven, urnenmuren en verstrooiingsplaatsen (Groningen art. 1). Een begraafplaats is een fysieke plaats, maar wordt hier als gemeentelijke voorziening beschreven (besluit redacteur 2026-09-30).
 grondslag: bron
@@ -227,6 +227,9 @@ specialisaties:
 besluiten:
 - datum: '2026-09-30'
   besluit: 'Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.'
+  gevolg: verwerkt
+- datum: '2026-10-05'
+  besluit: 'Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie.'
   gevolg: verwerkt
 relaties:
 - soort: aggregatie

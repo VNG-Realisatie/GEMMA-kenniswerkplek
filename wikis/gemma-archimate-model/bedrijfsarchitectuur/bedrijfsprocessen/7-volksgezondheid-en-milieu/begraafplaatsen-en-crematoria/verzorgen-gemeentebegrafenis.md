@@ -36,7 +36,7 @@ Het regelen en betalen van de lijkbezorging door de gemeente als niemand anders 
 
 ### Beschrijving
 
-Als niemand voorziet in de lijkschouwing en lijkbezorging, waarschuwt degene die het lijk onder zich heeft de burgemeester, die daarvoor zorg draagt (art. 20, 21 lid 1). Beslisser is de burgemeester. De kosten komen ten laste van de gemeente, die ze kan verhalen op de nalatenschap, onderhoudsplichtige verwanten of de werkgever (art. 22); dat kostenverhaal is een stap in dit proces. Een lijk waarvan de identiteit niet kan worden vastgesteld, wordt begraven (art. 21 lid 6). Het resultaat is een gemeentebegrafenis.
+Als niemand voorziet in de lijkschouwing en lijkbezorging, waarschuwt degene die het stoffelijk overschot onder zich heeft de burgemeester, die daarvoor zorg draagt (art. 20, 21 lid 1). Beslisser is de burgemeester. De kosten komen ten laste van de gemeente, die ze kan verhalen op de nalatenschap, onderhoudsplichtige verwanten of de werkgever (art. 22); dat kostenverhaal is een stap in dit proces. Een stoffelijk overschot waarvan de identiteit niet kan worden vastgesteld, wordt begraven (art. 21 lid 6). Het resultaat is een gemeentebegrafenis.
 
 ### Synoniemen
 
@@ -114,3 +114,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-04: Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), binnen het ketenproces Bezorgen lijken.
+- 2026-10-05: Stoffelijk overschot in lopende tekst: twee keer in de beschrijving; lijkschouwing en lijkbezorging blijven (vaste termen).

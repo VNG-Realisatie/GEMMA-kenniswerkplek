@@ -8,7 +8,7 @@ onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Het afgeven van het schriftelijk verlof waarmee een lijk mag worden begraven of gecremeerd.
+definitie: Het afgeven van het schriftelijk verlof waarmee een stoffelijk overschot mag worden begraven of gecremeerd.
 grondslag: bron
 match:
   gemma: geen
@@ -31,7 +31,7 @@ bronnen:
 
 ### Definitie
 
-Het afgeven van het schriftelijk verlof waarmee een lijk mag worden begraven of gecremeerd.
+Het afgeven van het schriftelijk verlof waarmee een stoffelijk overschot mag worden begraven of gecremeerd.
 
 ### Beschrijving
 
@@ -115,3 +115,4 @@ Procesarchitectuur-terugmeldingen:
 
 - 2026-10-01: Afwijzen: geen eigen proces; het verlof blijft een specialisatie van Vergunning (precedent 2026-09-29). De ambtenaar van de burgerlijke stand hangt via de functie Lijkbezorging aan gedrag.
 - 2026-10-04: Deelproces van het ketenproces Bezorgen lijken; levert het verlof tot begraven. Herziet het besluit van 2026-10-01 (geen eigen proces).
+- 2026-10-05: Stoffelijk overschot in lopende tekst: in de definitie.

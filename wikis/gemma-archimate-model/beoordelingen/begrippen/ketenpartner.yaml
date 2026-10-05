@@ -201,7 +201,7 @@ definitie: Verantwoordelijkheid van een andere organisatie voor haar deel van ee
 per_onderwerp:
   lijkbezorging:
   - 'De officier van justitie is ketenpartner in Bezorgen stoffelijk overschot: hij ontvangt bij een niet-natuurlijke dood het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (Wet op de lijkbezorging art. 10, 12, 17).'
-  - 'De arts is als behandelende arts ketenpartner in Bezorgen stoffelijk overschot: hij schouwt het lijk en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).'
+  - 'De arts is als behandelende arts ketenpartner in Bezorgen stoffelijk overschot: hij schouwt het stoffelijk overschot en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).'
 doelgroep: ketenpartners
 grondslag: bron
 gemma:
@@ -238,6 +238,9 @@ besluiten:
   gevolg: verwerkt
 - datum: '2026-10-04'
   besluit: Ook vervuld door de Arts als behandelende arts, en toegewezen aan Schouwen lijk (art. 3).
+  gevolg: verwerkt
+- datum: '2026-10-05'
+  besluit: 'Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.'
   gevolg: verwerkt
 status: goedgekeurd
 afgeleid:

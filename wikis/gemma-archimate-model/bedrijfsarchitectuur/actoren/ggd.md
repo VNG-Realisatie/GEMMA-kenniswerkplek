@@ -39,7 +39,7 @@ De colleges van burgemeester en wethouders van de gemeenten in een regio stellen
 
 #### [Lijkbezorging](../../begrippen/lijkbezorging.md)
 
-Een arts meldt een besmet lijk aan de GGD, die de melding doorgeeft aan de burgemeester (Wet publieke gezondheid art. 21 lid 2, 27 lid 3). De GGD adviseert de burgemeester over maatregelen om het gevaar af te wenden (Wet op de lijkbezorging art. 22a).
+Een arts meldt een besmet stoffelijk overschot aan de GGD, die de melding doorgeeft aan de burgemeester (Wet publieke gezondheid art. 21 lid 2, 27 lid 3). De GGD adviseert de burgemeester over maatregelen om het gevaar af te wenden (Wet op de lijkbezorging art. 22a).
 
 ### Synoniemen
 
@@ -99,3 +99,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-09-30: Actor, op grond van het precedent GGD: mede-eigenaar en opdrachtgever via de gemeenschappelijke regeling.
+- 2026-10-05: Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.

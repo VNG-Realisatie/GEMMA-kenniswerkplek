@@ -8,7 +8,7 @@ onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Inrichting waar lijken worden gecremeerd en de as wordt geborgen.
+definitie: Inrichting waar stoffelijke overschotten worden gecremeerd en de as wordt geborgen.
 grondslag: bron
 match:
   ggm: geen
@@ -29,7 +29,7 @@ bronnen:
 
 ### Definitie
 
-Inrichting waar lijken worden gecremeerd en de as wordt geborgen.
+Inrichting waar stoffelijke overschotten worden gecremeerd en de as wordt geborgen.
 
 ### Beschrijving
 
@@ -100,3 +100,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-09-30: Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.
+- 2026-10-05: Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie.

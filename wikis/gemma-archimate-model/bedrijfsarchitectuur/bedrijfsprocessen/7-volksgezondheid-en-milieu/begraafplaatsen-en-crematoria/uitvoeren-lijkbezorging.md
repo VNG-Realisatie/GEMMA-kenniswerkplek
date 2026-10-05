@@ -8,7 +8,7 @@ onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk.
+definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een stoffelijk overschot.
 grondslag: bron
 match:
   gemma: geen
@@ -30,7 +30,7 @@ bronnen:
 
 ### Definitie
 
-Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk.
+Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een stoffelijk overschot.
 
 ### Beschrijving
 
@@ -75,9 +75,9 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 ### Specialisaties
 
-- **Begraving**: Begraven van een lijk op een begraafplaats, in een algemeen of particulier graf (art. 23). Geen eigen pagina.
-- **Crematie**: Cremeren van een lijk in een crematorium (art. 49). Geen eigen pagina.
-- **Ontleding**: Ontleden van een lijk in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68). Geen eigen pagina.
+- **Begraving**: Begraven van een stoffelijk overschot op een begraafplaats, in een algemeen of particulier graf (art. 23). Geen eigen pagina.
+- **Crematie**: Cremeren van een stoffelijk overschot in een crematorium (art. 49). Geen eigen pagina.
+- **Ontleding**: Ontleden van een stoffelijk overschot in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68). Geen eigen pagina.
 
 ### Relaties
 
@@ -122,3 +122,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-04: Bijzetting en verstrooiing van de as gaan naar het nieuwe deelproces Bijzetten of verstrooien van de as, met Urn als subobject van Lijk.
+- 2026-10-05: Stoffelijk overschot in lopende tekst: in de definitie en de omschrijvingen van de specialisaties; de naam blijft (lijkbezorging is een vaste term).

@@ -194,9 +194,9 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in de lijkbezorging voor.
-definitie: Arts die door het college is benoemd om lijken te schouwen.
+definitie: Arts die door het college is benoemd om stoffelijke overschotten te schouwen.
 beschrijving:
-- Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uitsluitend forensisch artsen (art. 4, 5). Normaal schouwt de behandelend arts het lijk; de gemeentelijke lijkschouwer is de uitzondering en schouwt alleen als de behandelend arts dat niet doet, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a). Hij kan de elektronische weg openstellen voor mededelingen van de behandelend arts (art. 7 lid 3).
+- Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uitsluitend forensisch artsen (art. 4, 5). Normaal schouwt de behandelend arts het stoffelijk overschot; de gemeentelijke lijkschouwer is de uitzondering en schouwt alleen als de behandelend arts dat niet doet, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a). Hij kan de elektronische weg openstellen voor mededelingen van de behandelend arts (art. 7 lid 3).
 grondslag: bron
 gemma:
   sterkte: geen
@@ -219,6 +219,10 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: gemeente
+besluiten:
+- datum: '2026-10-05'
+  besluit: 'Stoffelijk overschot in lopende tekst: in definitie en beschrijving; de naam blijft (vaste term).'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:

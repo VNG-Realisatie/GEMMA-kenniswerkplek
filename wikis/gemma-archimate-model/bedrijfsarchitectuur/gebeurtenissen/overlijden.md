@@ -36,7 +36,7 @@ Het overlijden van een persoon wordt aangegeven bij de gemeente waar de persoon 
 
 #### [Lijkbezorging](../../begrippen/lijkbezorging.md)
 
-Het overlijden start de schouwing van het lijk (Wet op de lijkbezorging art. 3) en de termijn waarbinnen de lijkbezorging moet plaatsvinden: niet eerder dan 36 uur en uiterlijk op de zesde werkdag (art. 16).
+Het overlijden start de schouwing van het stoffelijk overschot (Wet op de lijkbezorging art. 3) en de termijn waarbinnen de lijkbezorging moet plaatsvinden: niet eerder dan 36 uur en uiterlijk op de zesde werkdag (art. 16).
 
 ## Plaats in het model
 
@@ -96,3 +96,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-04: Niet generiek: Overlijden is een specifieke gebeurtenis, geen specialisatie van een generieke GEMMA-gebeurtenis; geen voorstel aan GEMMA.
+- 2026-10-05: Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.

@@ -210,9 +210,9 @@ kenmerken:
     onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Plaats op een begraafplaats waarin lijken worden begraven of urnen worden bijgezet.
+definitie: Plaats op een begraafplaats waarin stoffelijke overschotten worden begraven of urnen worden bijgezet.
 beschrijving:
-- Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k); het is een zandgraf of keldergraf (VNG-model art. 1 b). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven lijken met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina. Graven van historische betekenis staan op een lijst; over het ruimen daarvan beslist de raad (VNG-model art. 26).
+- Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k); het is een zandgraf of keldergraf (VNG-model art. 1 b). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven stoffelijke overschotten met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina. Graven van historische betekenis staan op een lijst; over het ruimen daarvan beslist de raad (VNG-model art. 26).
 grondslag: bron
 ggm:
   sterkte: geen
@@ -253,6 +253,9 @@ besluiten:
   gevolg: opnemen
   redenen:
   - gegevensobject zonder sterke GGM-match
+- datum: '2026-10-05'
+  besluit: 'Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie en in de zin over het register (die beschrijft de inhoud, niet de naam).'
+  gevolg: verwerkt
 onderwerpen:
 - lijkbezorging
 status: goedgekeurd

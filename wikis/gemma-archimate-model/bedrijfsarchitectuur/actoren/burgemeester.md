@@ -37,7 +37,7 @@ De burgemeester wordt bij koninklijk besluit benoemd voor zes jaar (Gemeentewet 
 
 #### [Lijkbezorging](../../begrippen/lijkbezorging.md)
 
-De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, verleent vergunning tot opgraving en verlof tot ontleding, stelt een andere termijn en treft maatregelen bij een besmet lijk (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68).
+De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, verleent vergunning tot opgraving en verlof tot ontleding, stelt een andere termijn en treft maatregelen bij een besmet stoffelijk overschot (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68).
 
 ## Plaats in het model
 
@@ -98,3 +98,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 Procesarchitectuur-terugmeldingen:
 
 - [Nummer 6](../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** het kennismodel procesarchitectuur kent geen relaties tussen actoren; een actor wordt alleen aan een rol toegewezen ([2026-vng-over-gemma](../../analyses/gemma-kennismodel.md), regel 602). **GEMMA:** tussen actoren alleen structurele relaties: deel van, lid van, voorzitter van. De Gemeente omvat de Gemeenteraad, het College van B&W en de Burgemeester, en de Burgemeester is voorzitter van de gemeenteraad en van het college ([2024-rijk-gemeentewet-wettekst](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), art. 6, 9, 34). Een handeling tussen partijen loopt via rollen en processen of een gebeurtenis.
+
+### Besluiten redacteur
+
+- 2026-10-05: Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.

@@ -227,7 +227,7 @@ grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-definitie: Het afgeven van het schriftelijk verlof waarmee een lijk mag worden begraven of gecremeerd.
+definitie: Het afgeven van het schriftelijk verlof waarmee een stoffelijk overschot mag worden begraven of gecremeerd.
 beschrijving:
 - Geen begraving of crematie geschiedt zonder schriftelijk verlof van de ambtenaar van de burgerlijke stand, dat kosteloos wordt afgegeven (art. 11). Hij verleent het alleen als hij beschikt over een verklaring van overlijden van de behandelend arts of de gemeentelijke lijkschouwer, of over een verklaring van geen bezwaar van de officier van justitie (art. 12). De stukken worden bij de akte van overlijden gevoegd (art. 13). In de praktijk krijgt de uitvaartondernemer het verlof na de aangifte van overlijden (Ondernemersplein).
 besluiten:
@@ -236,6 +236,9 @@ besluiten:
   gevolg: afwijzen
 - datum: '2026-10-04'
   besluit: Deelproces van het ketenproces Bezorgen lijken; levert het verlof tot begraven. Herziet het besluit van 2026-10-01 (geen eigen proces).
+  gevolg: verwerkt
+- datum: '2026-10-05'
+  besluit: 'Stoffelijk overschot in lopende tekst: in de definitie.'
   gevolg: verwerkt
 relaties:
 - soort: toegang (registreren)

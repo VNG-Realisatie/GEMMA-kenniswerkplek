@@ -198,7 +198,7 @@ kenmerken:
     onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Inrichting waar lijken worden gecremeerd en de as wordt geborgen.
+definitie: Inrichting waar stoffelijke overschotten worden gecremeerd en de as wordt geborgen.
 beschrijving:
 - Crematoria zijn gemeentelijk of bijzonder (art. 51). Een bijzonder crematorium wordt gevestigd door een kerkgenootschap, rechtspersoon of natuurlijk persoon, met een vergunning van burgemeester en wethouders (art. 52, 53). De houder bergt de as, zorgt voor de bestemming ervan en houdt een openbaar register (art. 50, 58, 59).
 grondslag: bron
@@ -216,6 +216,9 @@ specialisaties:
 besluiten:
 - datum: '2026-09-30'
   besluit: 'Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.'
+  gevolg: verwerkt
+- datum: '2026-10-05'
+  besluit: 'Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie.'
   gevolg: verwerkt
 onderwerpen:
 - lijkbezorging

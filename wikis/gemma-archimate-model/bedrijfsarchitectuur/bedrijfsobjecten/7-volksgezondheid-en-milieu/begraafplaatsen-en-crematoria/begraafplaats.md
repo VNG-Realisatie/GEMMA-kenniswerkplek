@@ -8,7 +8,7 @@ onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Terrein waar lijken worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
+definitie: Terrein waar stoffelijke overschotten worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
 grondslag: bron
 match:
   ggm: geen
@@ -31,7 +31,7 @@ bronnen:
 
 ### Definitie
 
-Terrein waar lijken worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
+Terrein waar stoffelijke overschotten worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
 
 ### Beschrijving
 
@@ -114,3 +114,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-09-30: Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.
+- 2026-10-05: Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie.

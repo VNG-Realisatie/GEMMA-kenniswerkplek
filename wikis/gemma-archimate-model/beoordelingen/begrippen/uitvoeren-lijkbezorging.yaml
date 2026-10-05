@@ -223,16 +223,16 @@ grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een lijk.
+definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een stoffelijk overschot.
 beschrijving:
 - De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie en ontleding zijn varianten zonder eigen pagina; het bijzetten of verstrooien van de as is een eigen deelproces.
 specialisaties:
 - naam: Begraving
-  omschrijving: Begraven van een lijk op een begraafplaats, in een algemeen of particulier graf (art. 23). Geen eigen pagina.
+  omschrijving: Begraven van een stoffelijk overschot op een begraafplaats, in een algemeen of particulier graf (art. 23). Geen eigen pagina.
 - naam: Crematie
-  omschrijving: Cremeren van een lijk in een crematorium (art. 49). Geen eigen pagina.
+  omschrijving: Cremeren van een stoffelijk overschot in een crematorium (art. 49). Geen eigen pagina.
 - naam: Ontleding
-  omschrijving: Ontleden van een lijk in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68). Geen eigen pagina.
+  omschrijving: Ontleden van een stoffelijk overschot in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68). Geen eigen pagina.
 relaties:
 - soort: toegang (raadplegen)
   naar: vergunning
@@ -277,6 +277,9 @@ afnemer: extern
 besluiten:
 - datum: '2026-10-04'
   besluit: Bijzetting en verstrooiing van de as gaan naar het nieuwe deelproces Bijzetten of verstrooien van de as, met Urn als subobject van Lijk.
+  gevolg: verwerkt
+- datum: '2026-10-05'
+  besluit: 'Stoffelijk overschot in lopende tekst: in de definitie en de omschrijvingen van de specialisaties; de naam blijft (lijkbezorging is een vaste term).'
   gevolg: verwerkt
 status: goedgekeurd
 afgeleid:

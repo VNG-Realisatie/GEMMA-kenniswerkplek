@@ -32,7 +32,7 @@ Verantwoordelijkheid voor het in stand houden en beheren van een begraafplaats.
 
 ### Beschrijving
 
-De houder van de begraafplaats stelt voor een begraving de identiteit van het lijk vast (art. 8), bepaalt wie in een algemeen graf wordt begraven (art. 23), houdt het register van begraven lijken (art. 27), doet mededeling van het verstrijken van termijnen (art. 27a, 28 lid 2), kan een verklaring van verwaarlozing opstellen (art. 28 lid 4) en geeft last tot het ruimen van graven (art. 31). Bij een gemeentelijke begraafplaats is de gemeente houder; bij een bijzondere begraafplaats een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 37).
+De houder van de begraafplaats stelt voor een begraving de identiteit van het stoffelijk overschot vast (art. 8), bepaalt wie in een algemeen graf wordt begraven (art. 23), houdt het register van begraven lijken (art. 27), doet mededeling van het verstrijken van termijnen (art. 27a, 28 lid 2), kan een verklaring van verwaarlozing opstellen (art. 28 lid 4) en geeft last tot het ruimen van graven (art. 31). Bij een gemeentelijke begraafplaats is de gemeente houder; bij een bijzondere begraafplaats een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 37).
 
 ## Plaats in het model
 
@@ -94,3 +94,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-05: Stoffelijk overschot in lopende tekst: bij de identiteitsvaststelling; het register van begraven lijken blijft (besluit 2026-10-05).

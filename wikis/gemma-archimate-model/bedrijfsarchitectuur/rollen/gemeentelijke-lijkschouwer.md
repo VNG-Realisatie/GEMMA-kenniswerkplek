@@ -6,7 +6,7 @@ status: goedgekeurd
 naam: Gemeentelijke lijkschouwer
 onderwerpen:
 - lijkbezorging
-definitie: Arts die door het college is benoemd om lijken te schouwen.
+definitie: Arts die door het college is benoemd om stoffelijke overschotten te schouwen.
 grondslag: bron
 match:
   gemma: geen
@@ -26,11 +26,11 @@ bronnen:
 
 ### Definitie
 
-Arts die door het college is benoemd om lijken te schouwen.
+Arts die door het college is benoemd om stoffelijke overschotten te schouwen.
 
 ### Beschrijving
 
-Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uitsluitend forensisch artsen (art. 4, 5). Normaal schouwt de behandelend arts het lijk; de gemeentelijke lijkschouwer is de uitzondering en schouwt alleen als de behandelend arts dat niet doet, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a). Hij kan de elektronische weg openstellen voor mededelingen van de behandelend arts (art. 7 lid 3).
+Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uitsluitend forensisch artsen (art. 4, 5). Normaal schouwt de behandelend arts het stoffelijk overschot; de gemeentelijke lijkschouwer is de uitzondering en schouwt alleen als de behandelend arts dat niet doet, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a). Hij kan de elektronische weg openstellen voor mededelingen van de behandelend arts (art. 7 lid 3).
 
 ## Plaats in het model
 
@@ -82,3 +82,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-05: Stoffelijk overschot in lopende tekst: in definitie en beschrijving; de naam blijft (vaste term).

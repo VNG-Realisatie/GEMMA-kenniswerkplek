@@ -212,13 +212,16 @@ beschrijving:
 - De colleges van burgemeester en wethouders van de gemeenten in een regio stellen de gemeentelijke gezondheidsdienst via een gemeenschappelijke regeling in en houden haar in stand (Wet publieke gezondheid art. 14 lid 1); de regeling stelt een openbaar lichaam in, zodat de GGD eigen rechtspersoonlijkheid heeft (art. 14 lid 2). De gemeenten zijn zo mede-eigenaar en opdrachtgever. De GGD staat onder leiding van een directeur publieke gezondheid (art. 14 lid 3).
 per_onderwerp:
   lijkbezorging:
-  - Een arts meldt een besmet lijk aan de GGD, die de melding doorgeeft aan de burgemeester (Wet publieke gezondheid art. 21 lid 2, 27 lid 3). De GGD adviseert de burgemeester over maatregelen om het gevaar af te wenden (Wet op de lijkbezorging art. 22a).
+  - Een arts meldt een besmet stoffelijk overschot aan de GGD, die de melding doorgeeft aan de burgemeester (Wet publieke gezondheid art. 21 lid 2, 27 lid 3). De GGD adviseert de burgemeester over maatregelen om het gevaar af te wenden (Wet op de lijkbezorging art. 22a).
 synoniemen:
 - naam: Gemeentelijke gezondheidsdienst
   context: wet
 besluiten:
 - datum: '2026-09-30'
   besluit: 'Actor, op grond van het precedent GGD: mede-eigenaar en opdrachtgever via de gemeenschappelijke regeling.'
+  gevolg: verwerkt
+- datum: '2026-10-05'
+  besluit: 'Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.'
   gevolg: verwerkt
 grondslag: bron
 gemma:

@@ -85,7 +85,7 @@ Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 
 
 - **Aanwijzing van grond voor bijzondere begraafplaats**: Specialisatie zonder pagina van Beschikking: aanwijzing door de gemeenteraad (art. 40 lid 1). Genoemd door [Verlenen toestemming bijzondere begraafplaats](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-bijzondere-begraafplaats.md).
 - **Andere termijn**: Specialisatie zonder pagina van Beschikking: door de burgemeester gestelde afwijkende termijn voor begraving of crematie (art. 17); gangbaar vervroegen of uitstellen van de uitvaart. Genoemd door [Stellen andere termijn](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md).
-- **Maatregel bij besmet lijk**: Specialisatie zonder pagina van Beschikking: maatregel van de burgemeester na advies van de GGD (art. 22a); het treffen ervan is het proces Treffen maatregel bij besmet stoffelijk overschot. Genoemd door [Treffen maatregel bij besmet stoffelijk overschot](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-stoffelijk-overschot.md).
+- **Maatregel bij besmet stoffelijk overschot**: Specialisatie zonder pagina van Beschikking: maatregel van de burgemeester na advies van de GGD (art. 22a); het treffen ervan is het proces Treffen maatregel bij besmet stoffelijk overschot. Genoemd door [Treffen maatregel bij besmet stoffelijk overschot](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-stoffelijk-overschot.md).
 - **Sluiting van een begraafplaats**: Specialisatie zonder pagina van Beschikking: besluit van B&W tot sluiting of geslotenverklaring (art. 43, 44). Genoemd door [Sluiten begraafplaats](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/sluiten-begraafplaats.md).
 - **Verklaring van verwaarlozing**: Specialisatie zonder pagina van Beschikking: verklaring van de houder dat het onderhoud van een particulier graf kennelijk verwaarloosd is (art. 28 lid 4). Genoemd door [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md).
 
@@ -112,7 +112,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 - **Sluiting van een begraafplaats**: Besluit van B&W tot sluiting of geslotenverklaring (art. 43, 44). Geen eigen pagina.
 - **Andere termijn**: Door de burgemeester gestelde afwijkende termijn voor begraving of crematie (art. 17); gangbaar vervroegen of uitstellen van de uitvaart (Ondernemersplein). Geen eigen pagina.
 - **Verklaring van verwaarlozing**: Schriftelijke verklaring van de houder dat het onderhoud van een particulier graf kennelijk verwaarloosd is (art. 28 lid 4). Geen eigen pagina.
-- **Maatregel bij besmet lijk**: Maatregel van de burgemeester na advies van de GGD (art. 22a). Geen eigen pagina.
+- **Maatregel bij besmet stoffelijk overschot**: Maatregel van de burgemeester na advies van de GGD (art. 22a). Geen eigen pagina.
 
 ### Relaties
 
@@ -168,3 +168,4 @@ Match **sterk** met GEMMA-element *Beschikking* (business-object). Gekoppeld aan
 ### Besluiten redacteur
 
 - 2026-09-30: Generiek en domeinoverstijgend; de GUID van Generiek Jeugd en Wmo blijft de koppeling zolang het GGM geen domeinoverstijgende entiteit kent.
+- 2026-10-05: Specialisatie Maatregel bij besmet lijk heet Maatregel bij besmet stoffelijk overschot.

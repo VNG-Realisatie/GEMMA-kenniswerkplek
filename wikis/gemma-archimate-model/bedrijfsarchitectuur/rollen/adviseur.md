@@ -37,7 +37,7 @@ Verantwoordelijkheid voor het geven van advies aan wie een besluit neemt.
 
 ### Beschrijving
 
-Een adviseur geeft een bestuursorgaan vooraf advies over een besluit. De wet bepaalt wanneer advies nodig is, bijvoorbeeld het advies van de GGD aan de burgemeester bij een besmet lijk (Wet op de lijkbezorging art. 22a) of aan het college bij besluiten met belangrijke gevolgen voor de publieke gezondheid (Wet publieke gezondheid art. 16).
+Een adviseur geeft een bestuursorgaan vooraf advies over een besluit. De wet bepaalt wanneer advies nodig is, bijvoorbeeld het advies van de GGD aan de burgemeester bij een besmet stoffelijk overschot (Wet op de lijkbezorging art. 22a) of aan het college bij besluiten met belangrijke gevolgen voor de publieke gezondheid (Wet publieke gezondheid art. 16).
 
 ## Plaats in het model
 
@@ -89,3 +89,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 ### Afstemming met GEMMA
 
 Match **sterk** met GEMMA-element *Adviseur* (business-role). GEMMA-rol Adviseur; zelfde begrip, in GEMMA zonder definitie. Nieuw: een definitie.
+
+### Besluiten redacteur
+
+- 2026-10-05: Stoffelijk overschot in lopende tekst: in de beschrijving; de export zet die als eigenschap op het GEMMA-element Adviseur.

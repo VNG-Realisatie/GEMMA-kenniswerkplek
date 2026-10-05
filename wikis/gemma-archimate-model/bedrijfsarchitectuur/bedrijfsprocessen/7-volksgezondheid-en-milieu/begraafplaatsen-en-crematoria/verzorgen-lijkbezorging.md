@@ -8,7 +8,7 @@ onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: 'Gemeentelijke taak rond de lijkbezorging: het bezorgen van lijken en het beheer van graven en grafrechten.'
+definitie: 'Gemeentelijke taak rond de lijkbezorging: het bezorgen van stoffelijke overschotten en het beheer van graven en grafrechten.'
 grondslag: bron
 match:
   gemma: geen
@@ -29,11 +29,11 @@ bronnen:
 
 ### Definitie
 
-Gemeentelijke taak rond de lijkbezorging: het bezorgen van lijken en het beheer van graven en grafrechten.
+Gemeentelijke taak rond de lijkbezorging: het bezorgen van stoffelijke overschotten en het beheer van graven en grafrechten.
 
 ### Beschrijving
 
-Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze (Wet op de lijkbezorging art. 1). De gemeente schouwt lijken via de gemeentelijke lijkschouwer, geeft het verlof tot begraving of crematie af, heeft ten minste één gemeentelijke begraafplaats, geeft graven uit, staat opgraving en ruiming toe en draagt zorg voor de lijkbezorging als niemand daarin voorziet (art. 4, 11, 21, 28, 29, 31, 33). De taak groepeert de processen daarvoor, één per kernobject: het lijk, de gemeentebegrafenis, het grafrecht, het graf, de begraafplaats en het crematorium.
+Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze (Wet op de lijkbezorging art. 1). De gemeente schouwt stoffelijke overschotten via de gemeentelijke lijkschouwer, geeft het verlof tot begraving of crematie af, heeft ten minste één gemeentelijke begraafplaats, geeft graven uit, staat opgraving en ruiming toe en draagt zorg voor de lijkbezorging als niemand daarin voorziet (art. 4, 11, 21, 28, 29, 31, 33). De taak groepeert de processen daarvoor, één per kernobject: het stoffelijk overschot, de gemeentebegrafenis, het grafrecht, het graf, de begraafplaats en het crematorium.
 
 ## Plaats in het model
 
@@ -94,3 +94,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 - 2026-09-30: Overkoepelende bedrijfsfunctie voor de gemeentelijke taken rond de lijkbezorging.
 - 2026-10-04: De functie wordt de taak Verzorgen lijkbezorging, een procescluster boven Bezorgen lijken, Beheren grafrechten en Beheren graven. De partiële GEMMA-match met Exploiteren van begraafplaatsen vervalt; die GEMMA-functie wordt een eigen element dat de processen bedient.
+- 2026-10-05: Stoffelijk overschot in lopende tekst: in definitie en beschrijving, met het kernobject Stoffelijk overschot.

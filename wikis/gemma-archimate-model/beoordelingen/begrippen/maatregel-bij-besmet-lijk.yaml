@@ -1,4 +1,4 @@
-begrip: Maatregel bij besmet lijk
+begrip: Maatregel bij besmet stoffelijk overschot
 kenmerken:
   herkenbaar:
     waarde: ja
@@ -198,6 +198,10 @@ genoemd_begrip: Beschikking
 toelichting: 'Specialisatie zonder pagina van Beschikking: maatregel van de burgemeester na advies van de GGD (art. 22a); het treffen ervan is het proces Treffen maatregel bij besmet stoffelijk overschot.'
 onderwerpen:
 - lijkbezorging
+besluiten:
+- datum: '2026-10-05'
+  besluit: Naam Maatregel bij besmet stoffelijk overschot, in lijn met Treffen maatregel bij besmet stoffelijk overschot; geen vaste term (Wlb art. 22a). Het id blijft.
+  gevolg: verwerkt
 afgeleid:
   uitkomst:
     soort: specialisatie

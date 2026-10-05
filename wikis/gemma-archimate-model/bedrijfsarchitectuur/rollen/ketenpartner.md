@@ -45,7 +45,7 @@ Een ketenpartner is een andere organisatie die een eigen deel van een ketenproce
 
 De officier van justitie is ketenpartner in Bezorgen stoffelijk overschot: hij ontvangt bij een niet-natuurlijke dood het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (Wet op de lijkbezorging art. 10, 12, 17).
 
-De arts is als behandelende arts ketenpartner in Bezorgen stoffelijk overschot: hij schouwt het lijk en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).
+De arts is als behandelende arts ketenpartner in Bezorgen stoffelijk overschot: hij schouwt het stoffelijk overschot en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).
 
 ## Plaats in het model
 
@@ -105,3 +105,4 @@ Match **exact** met GEMMA-element *Ketenpartner* (business-role). GEMMA-rol Kete
 
 - 2026-10-04: Nieuwe rol Ketenpartner met exacte GEMMA-match; vervuld door de Officier van justitie, toegewezen aan Bezorgen lijken en Stellen andere termijn.
 - 2026-10-04: Ook vervuld door de Arts als behandelende arts, en toegewezen aan Schouwen lijk (art. 3).
+- 2026-10-05: Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.

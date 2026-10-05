@@ -8,7 +8,7 @@ onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Wet die regelt hoe een lijk wordt geschouwd, begraven, gecremeerd of anders bezorgd, en welke taken de gemeente daarbij heeft.
+definitie: Wet die regelt hoe een stoffelijk overschot wordt geschouwd, begraven, gecremeerd of anders bezorgd, en welke taken de gemeente daarbij heeft.
 grondslag: regelgeving
 match:
   gemma: geen
@@ -29,7 +29,7 @@ bronnen:
 
 ### Definitie
 
-Wet die regelt hoe een lijk wordt geschouwd, begraven, gecremeerd of anders bezorgd, en welke taken de gemeente daarbij heeft.
+Wet die regelt hoe een stoffelijk overschot wordt geschouwd, begraven, gecremeerd of anders bezorgd, en welke taken de gemeente daarbij heeft.
 
 ### Beschrijving
 
@@ -108,3 +108,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-01: Opnemen als beleidskader.
+- 2026-10-05: Stoffelijk overschot in lopende tekst: in de definitie; in de beschrijving blijft 'bepaalt wat een lijk is' (de wetsterm zelf).

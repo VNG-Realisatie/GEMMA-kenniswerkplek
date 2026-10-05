@@ -25,7 +25,6 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 ## Na de UPL-producten (2026-10-05)
 
-- **Stoffelijk overschot in lopende tekst**: de zes elementen met *lijk* in de naam zijn hernoemd; in de definitie en beschrijving van ongeveer twintig andere elementen staat nog het losse woord *lijk* (Begraafplaats, Crematorium, Graf, Grafrecht, Gemeentelijke lijkschouwer, Uitvoeren lijkbezorging en andere). Per element voorleggen; letterlijke citaten en wetstermen blijven.
 - **Bediening vanuit een product in `tools/relaties.py`**: de relatietabel kent geen bediening van een product naar een rol (kennismodel regel 596, *Product → bediening → Klant*); Grafuitgifte bedient de Rechthebbende op het graf daardoor alleen via de dienst Graf aanvragen. Toetsen aan de ArchiMate-relatietabel en zo nodig toevoegen.
 
 ## Export naar Archi

@@ -36,7 +36,7 @@ Het toestaan dat een overledene eerder dan 36 uur of later dan de zesde werkdag 
 
 ### Beschrijving
 
-Begraving of crematie geschiedt niet eerder dan 36 uur en uiterlijk op de zesde werkdag na het overlijden (Wet op de lijkbezorging art. 16). Na een arts te hebben gehoord kan de burgemeester van de gemeente waar het lijk zich bevindt een andere termijn stellen; binnen 36 uur alleen in overeenstemming met de officier van justitie (art. 17 lid 1). Tegen het besluit staat binnen 24 uur beroep open bij de commissaris van de Koning (art. 17 lid 2). De nabestaanden vragen de vergunning aan bij de gemeente waar de persoon is overleden, meestal via de uitvaartondernemer (RVO).
+Begraving of crematie geschiedt niet eerder dan 36 uur en uiterlijk op de zesde werkdag na het overlijden (Wet op de lijkbezorging art. 16). Na een arts te hebben gehoord kan de burgemeester van de gemeente waar het stoffelijk overschot zich bevindt een andere termijn stellen; binnen 36 uur alleen in overeenstemming met de officier van justitie (art. 17 lid 1). Tegen het besluit staat binnen 24 uur beroep open bij de commissaris van de Koning (art. 17 lid 2). De nabestaanden vragen de vergunning aan bij de gemeente waar de persoon is overleden, meestal via de uitvaartondernemer (RVO).
 
 ### Synoniemen
 
@@ -123,3 +123,4 @@ Procesarchitectuur-terugmeldingen:
 ### Besluiten redacteur
 
 - 2026-10-04: Nieuw deelproces van Bezorgen lijken dat de dienst Uitvaart vervroegen of uitstellen realiseert. Herziet het besluit van 2026-10-01 (geen eigen proces).
+- 2026-10-05: Stoffelijk overschot in lopende tekst: in de beschrijving.

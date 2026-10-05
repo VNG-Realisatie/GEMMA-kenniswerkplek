@@ -234,11 +234,14 @@ specialisaties:
   omschrijving: Door de burgemeester gestelde afwijkende termijn voor begraving of crematie (art. 17); gangbaar vervroegen of uitstellen van de uitvaart (Ondernemersplein). Geen eigen pagina.
 - naam: Verklaring van verwaarlozing
   omschrijving: Schriftelijke verklaring van de houder dat het onderhoud van een particulier graf kennelijk verwaarloosd is (art. 28 lid 4). Geen eigen pagina.
-- naam: Maatregel bij besmet lijk
+- naam: Maatregel bij besmet stoffelijk overschot
   omschrijving: Maatregel van de burgemeester na advies van de GGD (art. 22a). Geen eigen pagina.
 besluiten:
 - datum: '2026-09-30'
   besluit: Generiek en domeinoverstijgend; de GUID van Generiek Jeugd en Wmo blijft de koppeling zolang het GGM geen domeinoverstijgende entiteit kent.
+  gevolg: verwerkt
+- datum: '2026-10-05'
+  besluit: Specialisatie Maatregel bij besmet lijk heet Maatregel bij besmet stoffelijk overschot.
   gevolg: verwerkt
 relaties:
 - soort: specialisatie

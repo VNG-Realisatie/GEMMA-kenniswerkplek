@@ -209,7 +209,7 @@ beschrijving:
 - De burgemeester wordt bij koninklijk besluit benoemd voor zes jaar (Gemeentewet art. 61) en is voorzitter van de raad en van het college (art. 9, 34). De burgemeester vertegenwoordigt de gemeente in en buiten rechte (art. 171).
 per_onderwerp:
   lijkbezorging:
-  - De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, verleent vergunning tot opgraving en verlof tot ontleding, stelt een andere termijn en treft maatregelen bij een besmet lijk (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68).
+  - De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, verleent vergunning tot opgraving en verlof tot ontleding, stelt een andere termijn en treft maatregelen bij een besmet stoffelijk overschot (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68).
 grondslag: bron
 gemma:
   sterkte: geen
@@ -239,6 +239,10 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: gemeente
+besluiten:
+- datum: '2026-10-05'
+  besluit: 'Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
