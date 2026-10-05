@@ -83,5 +83,16 @@ gemma:
     ref: master
     pad: export/GEMMA release.xml
 
+# Het kennismodel dat de export meeneemt: de elementen en relaties van deze views in de bron (Over GEMMA, AMEFF).
+kennismodel:
+  bron: 2026-vng-over-gemma
+  views:
+    - GEMMA kennismodel
+    - GEMMA kennismodel bedrijfslaag
+    - GEMMA kennismodel applicatielaag
+    - GEMMA kennismodel technologielaag
+    - GEMMA kennismodel strategie en motivatie
+    - GEMMA kennismodel uitgebreid
+
 work:
   retention_days: 30

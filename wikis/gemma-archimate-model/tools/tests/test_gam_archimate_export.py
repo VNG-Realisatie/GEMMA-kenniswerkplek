@@ -480,3 +480,92 @@ def test_taakveld_wordt_op_nummer_gevonden():
                                       "eigenschappen": {"GEMMA type": "Taakveld Iv3"}}}}
     assert ae._vind_taakveld(gemma_data, "0 Bestuur en Ondersteuning")["id"] == "a"
     assert ae._vind_taakveld(gemma_data, "7 Volksgezondheid en Milieu") is None
+
+
+OVER_GEMMA = """<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="id-og">
+  <name xml:lang="nl">Over GEMMA</name>
+  <elements>
+    <element identifier="id-km-bo" xsi:type="BusinessObject"><name xml:lang="nl">Bedrijfsobject</name><documentation xml:lang="nl">Een concept.</documentation></element>
+    <element identifier="id-km-rol" xsi:type="BusinessRole"><name xml:lang="nl">Rol</name></element>
+    <element identifier="id-km-doel" xsi:type="Goal"><name xml:lang="nl">Kwaliteitsdoel</name></element>
+    <element identifier="id-buiten" xsi:type="BusinessObject"><name xml:lang="nl">Zaakgericht werken</name></element>
+  </elements>
+  <relationships>
+    <relationship identifier="id-km-r1" xsi:type="Access" source="id-km-rol" target="id-km-bo" accessType="Read"/>
+    <relationship identifier="id-km-r2" xsi:type="Association" source="id-km-doel" target="id-km-bo" isDirected="true"/>
+  </relationships>
+  <organizations>
+    <item><label xml:lang="nl">Business</label>
+      <item><label xml:lang="nl">Kennismodel</label><item identifierRef="id-km-bo"/></item>
+      <item identifierRef="id-km-rol"/></item>
+    <item><label xml:lang="nl">Motivation</label><item identifierRef="id-km-doel"/></item>
+  </organizations>
+  <views><diagrams>
+    <view identifier="v1" xsi:type="Diagram"><name xml:lang="nl">GEMMA kennismodel</name>
+      <node identifier="n1" xsi:type="Element" elementRef="id-km-bo"/>
+      <node identifier="n2" xsi:type="Element" elementRef="id-km-rol"><node identifier="n3" xsi:type="Element" elementRef="id-km-doel"/></node>
+      <connection identifier="c1" xsi:type="Relationship" relationshipRef="id-km-r1" source="n2" target="n1"/>
+      <connection identifier="c2" xsi:type="Relationship" relationshipRef="id-km-r2" source="n3" target="n1"/>
+    </view>
+    <view identifier="v2" xsi:type="Diagram"><name xml:lang="nl">Andere view</name>
+      <node identifier="n4" xsi:type="Element" elementRef="id-buiten"/>
+    </view>
+  </diagrams></views>
+</model>
+"""
+
+
+def test_kennismodel_gaat_mee_met_id_van_over_gemma_en_hangt_aan_een_groep(tmp_path):
+    pad = tmp_path / "over-gemma.xml"
+    pad.write_text(OVER_GEMMA, encoding="utf-8")
+    km = ae.laad_kennismodel(pad, ["GEMMA kennismodel", "Bestaat niet"])
+    assert sorted(km["elementen"]) == ["id-km-bo", "id-km-doel", "id-km-rol"]
+    assert km["ontbrekende_views"] == ["Bestaat niet"]
+    begrippen = _begrippen()
+    uit = ae.bouw(_gemma(tmp_path), begrippen, "2026-vng-gemma", "2026-10-02T12:00:00", False, _log(begrippen),
+                  WIKI_YAML, kennismodel=km)
+    root = ET.fromstring(uit.xml)
+    assert (uit.kennismodel_elementen, uit.kennismodel_relaties) == (3, 2)
+    assert _el(root, "id-km-bo").get("name") == "Bedrijfsobject"
+    assert [n for n, _ in _pad(root, "id-km-doel")][:2] == ["Motivation", "wiki-gemma-model"]
+    assert _pad(root, "id-km-bo")[-1][0] == "Kennismodel"
+    assert _el(root, "id-km-r1").get("accessType") == "1"
+    assert _el(root, "id-km-r2").get("directed") == "true"
+    assert _props(_el(root, "id-km-bo"))["wiki-gemma-model herkomst"] == "kennismodel"
+    groep = next(e for e in root.iter("element") if e.get("name") == "Kennismodel")
+    assert groep.get(ae.XSI) == "archimate:Grouping"
+    def doelen(bron):
+        return {e.get("target") for e in root.iter("element") if e.get("source") == bron}
+    namen = {e.get("name"): e.get("id") for e in root.iter("element") if e.get(ae.XSI) == "archimate:Grouping"}
+    assert doelen(groep.get("id")) == {namen["Bedrijfsarchitectuur"], namen["Motivatie"]}
+    assert doelen(namen["Bedrijfsarchitectuur"]) == {"id-km-bo", "id-km-rol"}
+    assert doelen(namen["Motivatie"]) == {"id-km-doel"}
+    assert "Applicatiearchitectuur" not in namen
+    ids = [e.get("id") for e in root.iter("element")]
+    assert len(ids) == len(set(ids))
+
+
+def test_wat_de_wiki_gebruikt_en_het_kennismodel_mist_komt_in_de_groep_kennismodel_wiki(tmp_path):
+    pad = tmp_path / "over-gemma.xml"
+    pad.write_text(OVER_GEMMA.replace('<element identifier="id-buiten" xsi:type="BusinessObject">',
+                                      '<element identifier="id-km-bo2" xsi:type="BusinessObject"><name xml:lang="nl">Tweede</name></element>'
+                                      '<element identifier="id-afspraak" xsi:type="Contract"><name xml:lang="nl">Afspraak</name></element>'
+                                      '<element identifier="id-buiten" xsi:type="BusinessObject">'), encoding="utf-8")
+    km = ae.laad_kennismodel(pad, ["GEMMA kennismodel"])
+    km["elementen"].pop("id-km-bo2", None)
+    begrippen = {"a": _begrip("A", "business-object"), "c": _begrip("Afspraak A", "contract")}
+    begrippen["a"]["relaties"] = [{"soort": "associatie", "naar": "c", "grondslag": "bron", "bronnen": ["2026-bron"]}]
+    uit = ae.bouw(_gemma(tmp_path), begrippen, "2026-vng-gemma", "2026-10-02T12:00:00", False, _log(begrippen),
+                  WIKI_YAML, kennismodel=km)
+    assert not uit.fouten
+    root = ET.fromstring(uit.xml)
+    assert _el(root, "id-afspraak").get("name") == "Afspraak"
+    groep = next(e for e in root.iter("element") if e.get("name") == "Kennismodel-wiki")
+    assert {e.get("target") for e in root.iter("element") if e.get("source") == groep.get("id")} == {"id-afspraak"}
+    rel = next(e for e in root.iter("element") if e.get(ae.XSI) == "archimate:AssociationRelationship"
+               and e.get("source") == "id-km-bo" and e.get("target") == "id-afspraak")
+    assert _props(rel)["wiki-gemma-model in Over GEMMA"] == "nee"
+    assert _pad(root, rel.get("id"))[-1][0] == "Kennismodel-wiki"
+    ids = [e.get("id") for e in root.iter("element")]
+    assert len(ids) == len(set(ids))

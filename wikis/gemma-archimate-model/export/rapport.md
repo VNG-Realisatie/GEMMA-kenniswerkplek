@@ -1,7 +1,47 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: 5991a5d7484f094b32ee4db9db6917fa76b9d624f58e2dd5d3c2a15698ca1f6b -->
+<!-- gegenereerd door tools/archimate_export.py; hash: af7cad8b35dcd3a64a4f108959a16756fef6cb8d204df3a349d064d290dc2a21 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-05T10:05:11. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 21 gekoppeld aan GEMMA, 72 nieuw. Relaties: 10 gekoppeld, 318 nieuw, 0 overgeslagen. Indelingen: 58 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-05T10:26:06. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 21 gekoppeld aan GEMMA, 72 nieuw. Relaties: 10 gekoppeld, 318 nieuw, 0 overgeslagen. Indelingen: 58 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
+
+Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de groep Kennismodel met een groep per laag (map Other / wiki-gemma-model / Kennismodel).
+
+## Kennismodel-wiki
+
+Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kennismodel-wiki.
+
+- element Afspraak (contract)
+- relatie access Bedrijfsproces → Afspraak (schrijven), 2×, niet in Over GEMMA
+- relatie access Bedrijfsproces → Afspraak (lezen-schrijven), 1×, niet in Over GEMMA
+- relatie access Rol → Afspraak (lezen-schrijven), 1×, niet in Over GEMMA
+- relatie aggregation Actor → Actor, 3×, niet in Over GEMMA
+- relatie aggregation Bedrijfsfunctie → Bedrijfsfunctie, 7×
+- relatie aggregation Bedrijfsfunctie → Dienst, 13×, niet in Over GEMMA
+- relatie aggregation Bedrijfsobject → Bedrijfsobject, 1×
+- relatie aggregation Bedrijfsproces → Gebeurtenis, 3×, niet in Over GEMMA
+- relatie aggregation Bedrijfsproces → Bedrijfsproces, 37×
+- relatie aggregation Rol → Actor, 9×, niet in Over GEMMA
+- relatie aggregation Rol → Rol, 13×
+- relatie aggregation Groep → Bedrijfsfunctie, 3×
+- relatie aggregation Groep → Bedrijfsobject, 13×
+- relatie aggregation Groep → Bedrijfsproces, 1×, niet in Over GEMMA
+- relatie aggregation Groep → Dienst, 13×, niet in Over GEMMA
+- relatie aggregation Groep → Afspraak, 1×, niet in Over GEMMA
+- relatie aggregation Groep → Beleidskader, 3×, niet in Over GEMMA
+- relatie aggregation Groep → Product, 2×, niet in Over GEMMA
+- relatie aggregation Product → Afspraak, 1×
+- relatie assignment Rol → Bedrijfsproces, 42×
+- relatie association Actor → Actor, 2×, niet in Over GEMMA
+- relatie association Gebeurtenis → Bedrijfsobject, 1×, niet in Over GEMMA
+- relatie association Bedrijfsobject → Dienst, 1×, niet in Over GEMMA
+- relatie association Rol → Rol, 1×, niet in Over GEMMA
+- relatie association Afspraak → Bedrijfsobject, 1×, niet in Over GEMMA
+- relatie association Beleidskader → Bedrijfsobject, 1×, niet in Over GEMMA
+- relatie association Beleidskader → Bedrijfsproces, 21×, niet in Over GEMMA
+- relatie association Beleidskader → Dienst, 1×, niet in Over GEMMA
+- relatie association Beleidskader → Beleidskader, 2×, niet in Over GEMMA
+- relatie association Beleidskader → Product, 1×, niet in Over GEMMA
+- relatie serving Dienst → Rol, 9×
+- relatie serving Product → Rol, 1×
 
 ## Wijzigt een GEMMA-element
 

@@ -21,6 +21,12 @@ nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit de GEMM
 
 Een element dat in geen enkele indeling staat, houdt de export tegen (`--check` meldt het ook).
 
+Het kennismodel (wiki.yaml `kennismodel`): de elementen en relaties van de views van het GEMMA-kennismodel in Over GEMMA
+(de ArchiMate-concepten die GEMMA gebruikt) gaan mee met de id's van Over GEMMA, in de map `Kennismodel` onder de
+wiki-map van hun laag. Ze hangen met een aggregatie aan één groep `Kennismodel` (map `Other / wiki-gemma-model /
+Kennismodel`); onder die groep hangen de groepen Bedrijfsarchitectuur, Applicatiearchitectuur, Technische architectuur en
+Motivatie, die elk de elementen van hun laag aggregeren (een element van een andere laag hangt aan Kennismodel zelf).
+
 Alleen begrippen met status `goedgekeurd` (akkoord van de redacteur); `--concept` neemt ook kandidaat en review mee,
 voor het bekijken, en schrijft naar het kladblok. Het GEMMA-model moet als Archi-bestand zijn ingelezen
 (tools/gemma.py release <bestand.archimate>): de AMEFF heeft geen map-id's.
@@ -32,6 +38,7 @@ Gebruik (vanuit de wikimap):
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 import uuid
 import xml.etree.ElementTree as ET
@@ -139,6 +146,9 @@ class Uitkomst:
     groeperingen_nieuw: list[str] = field(default_factory=list)
     specialisaties: list[str] = field(default_factory=list)
     indelingen: int = 0
+    kennismodel_elementen: int = 0
+    kennismodel_relaties: int = 0
+    kennismodel_wiki: list[str] = field(default_factory=list)
     zonder_plaats: list[str] = field(default_factory=list)
 
 
@@ -320,7 +330,7 @@ EIGENSCHAPPEN_INDELING = ("afnemer", "domein", "doelgroep", "regelgever", "kerno
 
 def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstempel: str, concept: bool = False,
          log: str = "", wiki_yaml: dict | None = None, objecten: dict | None = None,
-         vorige: dict[str, str] | None = None) -> Uitkomst:
+         vorige: dict[str, str] | None = None, kennismodel: dict | None = None) -> Uitkomst:
     uit = Uitkomst()
     sleutels = object_sleutels(objecten)
     sleutel = lambda bid: sleutels.get(bid, bid)  # noqa: E731
@@ -440,6 +450,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
 
     _gemma_specialisaties(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
     _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
+    if kennismodel:
+        _kennismodel(b, uit, kennismodel)
     uit.zonder_plaats = _zonder_plaats(b, gekozen, ids)
     uit.xml = _serialiseer(b, gemma_bron)
     return uit
@@ -541,6 +553,194 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
 
 
 
+# --- Kennismodel ---
+
+KENNISMODEL_LAGEN = {"Strategy": "strategy", "Business": "business", "Application": "application",
+                     "Technology & Physical": "technology", "Motivation": "motivation", "Other": "other"}
+AMEFF_TOEGANG = {"Write": "0", "Read": "1", "Access": "2", "ReadWrite": "3"}  # zonder attribuut: Write
+KENNISMODEL_GROEP = "Kennismodel"
+WIKI_GROEP = "Kennismodel-wiki"
+TOEGANG_NAAM = {v: k for k, v in ACCESS_TYPE.items() if k} | {"2": "toegang"}
+# Typen met meer dan één concept in het kennismodel: het concept waar de wiki-relaties aan hangen.
+CONCEPT_VOORKEUR = {"driver": "Beleidskader", "grouping": "Groep", "business-role": "Rol", "requirement": "Implicatie"}
+# Laag → groep onder de groep Kennismodel; elementen van een andere laag (strategie, overig) hangen aan Kennismodel zelf.
+KENNISMODEL_DEELGROEPEN = {"business": "Bedrijfsarchitectuur", "application": "Applicatiearchitectuur",
+                           "technology": "Technische architectuur", "motivation": "Motivatie"}
+
+
+def laad_kennismodel(pad: Path, views: list[str]) -> dict:
+    """De elementen en relaties die in de genoemde views van Over GEMMA (AMEFF) voorkomen, in het formaat van
+    gemma.parse_ameff, met per relatie het toegangstype en of een associatie gericht is."""
+    import gemma
+
+    model = gemma.parse_ameff(pad)
+    ns = {"a": gemma.AMEFF_NS}
+    root = ET.parse(pad).getroot()
+    gevonden = set()
+    elementen, relaties = {}, {}
+    for view in root.findall("a:views/a:diagrams/a:view", ns):
+        naam = view.find("a:name", ns)
+        if naam is None or (naam.text or "").strip() not in views:
+            continue
+        gevonden.add(naam.text.strip())
+        for node in view.iter(f"{{{gemma.AMEFF_NS}}}node"):
+            if node.get("elementRef") in model["elementen"]:
+                elementen[node.get("elementRef")] = model["elementen"][node.get("elementRef")]
+        for con in view.iter(f"{{{gemma.AMEFF_NS}}}connection"):
+            if con.get("relationshipRef") in model["relaties"]:
+                relaties[con.get("relationshipRef")] = dict(model["relaties"][con.get("relationshipRef")])
+    for r in root.findall("a:relationships/a:relationship", ns):
+        if r.get("identifier") in relaties:
+            relaties[r.get("identifier")]["toegang"] = AMEFF_TOEGANG.get(r.get("accessType") or "Write", "0")
+            relaties[r.get("identifier")]["gericht"] = r.get("isDirected") == "true"
+    relaties = {k: r for k, r in relaties.items() if r["bron"] in elementen and r["doel"] in elementen}
+    alle = model["elementen"]
+    driehoeken = {(r["type"], alle[r["bron"]]["type"], alle[r["doel"]]["type"]) for r in model["relaties"].values()
+                  if r["bron"] in alle and r["doel"] in alle}
+    return {"elementen": elementen, "relaties": relaties, "ontbrekende_views": sorted(set(views) - gevonden),
+            "model_elementen": alle, "model_relatietypen": driehoeken}
+
+
+def _kennismodel(b: Bouwer, uit: Uitkomst, kennismodel: dict) -> None:
+    """Het kennismodel: elementen en relaties met de id's van Over GEMMA, en een groep die ze allemaal aggregeert."""
+    herkomst = (eig("herkomst"), "kennismodel")
+    exportdatum = [p for p in b.gemeen("kennismodel") if p[0] != eig("herkomst")]
+
+    def eigen(e: dict) -> list[tuple[str, str]]:
+        return [(k, v) for k, v in e["eigenschappen"].items() if not k.startswith(PREFIX + " ")]
+
+    laag_van: dict[str, str] = {}
+    for eid, e in sorted(kennismodel["elementen"].items()):
+        el = ET.Element("element", {XSI: xsi_type(e["type"]), "name": e["naam"], "id": eid})
+        if e["documentatie"]:
+            ET.SubElement(el, "documentation").text = e["documentatie"]
+        _eigenschappen(el, [*eigen(e), (eig("id"), f"kennismodel:{eid}"), herkomst, *exportdatum])
+        laag = KENNISMODEL_LAGEN.get(e["map"].split(" / ")[0], bovenste_map(e["type"]))
+        laag_van[eid] = laag
+        b.eigen_map(laag, [KENNISMODEL_GROEP]).objecten.append(el)
+        uit.kennismodel_elementen += 1
+    for rid, r in sorted(kennismodel["relaties"].items()):
+        attrs = {XSI: xsi_type(r["type"])}
+        if r["naam"]:
+            attrs["name"] = r["naam"]
+        attrs.update({"id": rid, "source": r["bron"], "target": r["doel"]})
+        if r["type"] == "access-relationship":
+            attrs["accessType"] = r["toegang"]
+        if r["type"] == "association-relationship" and r["gericht"]:
+            attrs["directed"] = "true"
+        el = ET.Element("element", attrs)
+        if r["documentatie"]:
+            ET.SubElement(el, "documentation").text = r["documentatie"]
+        _eigenschappen(el, [*eigen(r), (eig("id"), f"kennismodel:{rid}"), herkomst, *exportdatum])
+        b.eigen_map("relations", [KENNISMODEL_GROEP]).objecten.append(el)
+        uit.kennismodel_relaties += 1
+
+    def groep(gid: str, naam: str, documentatie: str) -> None:
+        el = ET.Element("element", {XSI: "archimate:Grouping", "name": naam, "id": gid})
+        ET.SubElement(el, "documentation").text = documentatie
+        _eigenschappen(el, [(eig("id"), f"kennismodel:{naam}"), herkomst, *exportdatum])
+        b.eigen_map("other", [KENNISMODEL_GROEP]).objecten.append(el)
+
+    def aggregeer(van: str, naar: str) -> None:
+        rid = vast_id("relatie", "kennismodel", van, naar)
+        rel = ET.Element("element", {XSI: "archimate:AggregationRelationship", "id": rid, "source": van, "target": naar})
+        _eigenschappen(rel, [(eig("id"), f"kennismodel#{naar}"), herkomst, *exportdatum])
+        b.relatie_ids.add(rid)
+        b.eigen_map("relations", [KENNISMODEL_GROEP]).objecten.append(rel)
+
+    gid = vast_id("groepering", "kennismodel")
+    wiki_gid = vast_id("groepering", "kennismodel", "wiki")
+    groep(gid, KENNISMODEL_GROEP,
+          "Het GEMMA-kennismodel (Over GEMMA): de ArchiMate-concepten die GEMMA gebruikt, in groepen per architectuurlaag.")
+    deel = {laag: vast_id("groepering", "kennismodel", laag) for laag in KENNISMODEL_DEELGROEPEN}
+    for laag, naam in KENNISMODEL_DEELGROEPEN.items():
+        if any(l == laag for l in laag_van.values()):
+            groep(deel[laag], naam, f"Kennismodel: de concepten van de {naam.lower()}. Selecteer de groep of haar elementen.")
+            aggregeer(gid, deel[laag])
+    for eid in sorted(kennismodel["elementen"]):
+        aggregeer(deel.get(laag_van[eid], gid), eid)
+    _kennismodel_wiki(b, uit, kennismodel, wiki_gid, gid, groep, aggregeer, eigen, [herkomst, *exportdatum])
+
+
+def _kennismodel_wiki(b: Bouwer, uit: Uitkomst, kennismodel: dict, wiki_gid: str, gid: str, groep, aggregeer, eigen,
+                      gemeen: list[tuple[str, str]]) -> None:
+    """Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft, in de groep Kennismodel-wiki: een elementtype
+    zonder concept (het concept uit Over GEMMA, als dat er één heeft) en een relatie van een type tussen twee typen die het
+    kennismodel niet kent (een relatie tussen de concepten, per toegangstype één)."""
+    typen: dict[str, str] = {}
+    relaties = []
+    for m in b.wortel.values():
+        for o in _alle_objecten(m):
+            if any(p.get("key") == eig("herkomst") and p.get("value") == "kennismodel" for p in o.findall("property")):
+                continue
+            if o.get("source"):
+                relaties.append(o)
+            else:
+                typen[o.get("id")] = o.get(XSI).split(":")[1]
+    soort = lambda x: re.sub(r"(?<!^)(?=[A-Z])", "-", x).lower()  # noqa: E731
+    typen = {i: soort(t) for i, t in typen.items()}
+    concept: dict[str, str] = {}  # elementtype → id van het concept in het kennismodel
+    for t in sorted(set(typen.values())):
+        kandidaten = sorted((e for e in kennismodel["elementen"].items() if e[1]["type"] == t), key=lambda x: x[1]["naam"])
+        voorkeur = [e for e in kandidaten if e[1]["naam"] == CONCEPT_VOORKEUR.get(t)]
+        if len(kandidaten) == 1 or voorkeur:
+            concept[t] = (voorkeur or kandidaten)[0][0]
+    nieuw: dict[str, str] = {}
+    for t in sorted(set(typen.values()) - set(concept)):
+        kandidaten = [(i, e) for i, e in kennismodel["model_elementen"].items() if e["type"] == t]
+        if len(kandidaten) != 1:
+            uit.fouten.append(f"kennismodel: het type {t} heeft geen concept in het kennismodel en Over GEMMA heeft er "
+                              f"{len(kandidaten)}; kies er één in CONCEPT_VOORKEUR")
+            continue
+        i, e = kandidaten[0]
+        el = ET.Element("element", {XSI: xsi_type(t), "name": e["naam"], "id": i})
+        if e["documentatie"]:
+            ET.SubElement(el, "documentation").text = e["documentatie"]
+        _eigenschappen(el, [*eigen(e), (eig("id"), f"kennismodel:{i}"), (eig("herkomst"), "kennismodel-wiki"), *gemeen[1:]])
+        laag = KENNISMODEL_LAGEN.get(e["map"].split(" / ")[0], bovenste_map(t))
+        b.eigen_map(laag, [KENNISMODEL_GROEP]).objecten.append(el)
+        concept[t] = nieuw[t] = i
+        uit.kennismodel_wiki.append(f"element {e['naam']} ({t})")
+    bekend = {(r["type"], kennismodel["elementen"][r["bron"]]["type"], kennismodel["elementen"][r["doel"]]["type"])
+              for r in kennismodel["relaties"].values()}
+    groepen: dict[tuple, list] = {}
+    for r in relaties:
+        rtype = soort(r.get(XSI).split(":")[1].replace("Relationship", "")) + "-relationship"
+        bron, doel = typen.get(r.get("source")), typen.get(r.get("target"))
+        if bron is None or doel is None or (rtype, bron, doel) in bekend or bron not in concept or doel not in concept:
+            continue
+        toegang = r.get("accessType") if rtype == "access-relationship" else None
+        groepen.setdefault((rtype, bron, doel, toegang), []).append(r)
+    namen = {i: e["naam"] for i, e in kennismodel["model_elementen"].items()}
+    if not groepen and not nieuw:
+        return
+    groep(wiki_gid, WIKI_GROEP, "Wat de inhoud van de wiki gebruikt en het GEMMA-kennismodel (nog) niet heeft: elementtypen "
+                                "en relaties tussen de concepten. Zie de map Kennismodel-wiki voor de relaties.")
+    aggregeer(gid, wiki_gid)
+    for t, i in nieuw.items():
+        aggregeer(wiki_gid, i)
+    for (rtype, bron, doel, toegang), lijst in sorted(groepen.items(), key=lambda x: tuple(map(str, x[0]))):
+        rid = vast_id("relatie", "kennismodel-wiki", rtype, concept[bron], concept[doel], toegang or "")
+        attrs = {XSI: xsi_type(rtype), "id": rid, "source": concept[bron], "target": concept[doel]}
+        if toegang is not None:
+            attrs["accessType"] = toegang
+        if rtype == "association-relationship" and any(r.get("directed") == "true" for r in lijst):
+            attrs["directed"] = "true"
+        el = ET.Element("element", attrs)
+        in_og = (rtype, bron, doel) in kennismodel["model_relatietypen"]
+        ET.SubElement(el, "documentation").text = (
+            f"De wiki gebruikt deze relatie {len(lijst)}× tussen {namen[concept[bron]]} en {namen[concept[doel]]}; het "
+            "kennismodel heeft haar niet" + (" (Over GEMMA heeft haar wel in een andere view)." if in_og else "."))
+        _eigenschappen(el, [(eig("id"), f"kennismodel-wiki#{rtype}:{bron}>{doel}:{toegang or ''}"),
+                            (eig("herkomst"), "kennismodel-wiki"), *gemeen[1:], (eig("gebruikt in"), str(len(lijst))),
+                            (eig("in Over GEMMA"), "ja, andere view" if in_og else "nee")])
+        b.eigen_map("relations", [KENNISMODEL_GROEP, WIKI_GROEP]).objecten.append(el)
+        b.relatie_ids.add(rid)
+        uit.kennismodel_wiki.append(f"relatie {rtype.replace('-relationship', '')} {namen[concept[bron]]} → "
+                                    f"{namen[concept[doel]]}{' (' + TOEGANG_NAAM[toegang] + ')' if toegang else ''}, "
+                                    f"{len(lijst)}×{'' if in_og else ', niet in Over GEMMA'}")
+
+
 def _alle_objecten(m: Map):
     yield from m.objecten
     for kind in m.mappen.values():
@@ -616,6 +816,13 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
               f"{len(uit.nieuw)} nieuw. Relaties: {uit.relaties_gekoppeld} gekoppeld, {uit.relaties_nieuw} nieuw, "
               f"{len(uit.overgeslagen)} overgeslagen. Indelingen: {uit.indelingen} aggregaties vanuit een groepering, "
               f"{len(uit.specialisaties)} specialisaties naar een GEMMA-element.", ""]
+    if uit.kennismodel_elementen:
+        regels += [f"Kennismodel: {uit.kennismodel_elementen} elementen en {uit.kennismodel_relaties} relaties uit Over GEMMA, "
+                   f"samengebracht in de groep {KENNISMODEL_GROEP} met een groep per laag (map Other / {PREFIX} / {KENNISMODEL_GROEP}).", ""]
+    if uit.kennismodel_wiki:
+        regels += [f"## Kennismodel-wiki", "",
+                   "Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kennismodel-wiki.", ""]
+        regels += [f"- {x}" for x in uit.kennismodel_wiki] + [""]
     gewijzigd = [e for e in uit.gekoppeld if e["naam"] != e["gemma_naam"] or e["definitie_gewijzigd"]]
     if gewijzigd:
         regels += ["## Wijzigt een GEMMA-element", "", "| Begrip | Naam in GEMMA | Definitie gewijzigd |", "|---|---|---|"]
@@ -655,8 +862,17 @@ def main(argv: list[str] | None = None) -> int:
     log = (args.wiki / "log.md").read_text(encoding="utf-8") if (args.wiki / "log.md").exists() else ""
     objecten = beoordeling.laad(args.wiki / OBJECTEN) if (args.wiki / OBJECTEN).exists() else None
     vorige = vorige_typen(args.wiki / EXPORT)
+    kennismodel = None
+    km_config = wiki_yaml.get("kennismodel") or {}
+    if km_config:
+        km_pad = paths.find_repo_root(args.wiki) / "sources" / "raw" / f"{km_config['bron']}.xml"
+        if km_pad.exists():
+            kennismodel = laad_kennismodel(km_pad, km_config["views"])
+            fouten += [f"kennismodel: view '{v}' staat niet in {km_pad.name}" for v in kennismodel["ontbrekende_views"]]
+        else:
+            fouten.append(f"kennismodel: bron {km_pad} ontbreekt (wiki.yaml kennismodel.bron)")
     uit = Uitkomst() if fouten else bouw(gemma_data, begrippen, gemma_bron, tijdstempel, args.concept, log, wiki_yaml,
-                                         objecten, vorige)
+                                         objecten, vorige, kennismodel)
     fouten += uit.fouten
     fouten += [f"{naam}: geen plaats in een indeling (elk element staat in minstens één indeling)" for naam in uit.zonder_plaats]
     for f in fouten:
