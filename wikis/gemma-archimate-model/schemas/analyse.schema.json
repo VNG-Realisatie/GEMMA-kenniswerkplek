@@ -27,6 +27,13 @@
       "items": {
         "type": "string"
       }
+    },
+    "bronanalyse_van": {
+      "description": "Bron-id's waarvan deze analyse de bronanalyse is; een verwijzing naar zo'n bron linkt hierheen.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "additionalProperties": false

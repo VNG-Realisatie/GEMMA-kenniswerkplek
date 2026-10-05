@@ -105,6 +105,10 @@ Geen GGM-entiteit. Het GGM kent geen entiteit voor graf of grafrecht (GGM-terugm
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 7](../../../../analyses/procesarchitectuur-terugmeldingen.md) (grondslag, open): **UPL:** grafuitgifte heeft als grondslag art. 11 van de model-beheersverordening begraafplaatsen ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md), nr. 165). **GEMMA:** art. 11 deelt de graven in: particuliere graven en urnengraven, urnennissen en gedenkplaatsen. De uitgifte zelf staat in art. 13 tot 15: de volgorde van uitgifte, de categorieën en het recht op een particulier graf voor tien tot dertig jaar ([2010-vng-model-beheersverordening-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md)). In het model is de model-beheersverordening grondslag voor Grafuitgifte op art. 11 en 13 tot 15.
+
 ### Besluiten redacteur
 
 - 2026-10-05: UPL-product van lijkbezorging, beoordeeld met de toets van 2026-10-05: een product bij een dienst met een afspraak, anders een dienst; de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt.

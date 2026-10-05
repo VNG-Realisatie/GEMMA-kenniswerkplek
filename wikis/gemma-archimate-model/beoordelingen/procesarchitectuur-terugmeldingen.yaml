@@ -29,3 +29,53 @@ terugmeldingen:
   - '**GEMMA:** 7.5, beleidsdomein Begraafplaatsen en crematoria: ontleding is een wettelijke wijze van lijkbezorging (Wet op de lijkbezorging art. 67, 68).'
   nummer: 3
   status: open
+- type: kennismodel
+  elementen:
+  - afgeven-laissez-passer
+  - onderhouden-graf
+  - opgraven-stoffelijk-overschot
+  - stellen-andere-termijn
+  - verlenen-grafrecht
+  - verlenen-toestemming-asverstrooiing
+  - verlenen-toestemming-bijzondere-begraafplaats
+  - verlenen-vergunning-grafbedekking
+  - verlenen-verlof-tot-begraving-of-crematie
+  - verlenen-verlof-tot-ontleding
+  bevinding:
+  - '**Kennismodel:** een deelproces realiseert een deelservice: een onderdeel van een dienst, dat in verschillende bedrijfsprocessen wordt gebruikt maar geen dienst is die de organisatie aan de buitenwereld levert. De dienst zelf wordt gerealiseerd door een bedrijfsproces of ketenproces (2026-vng-over-gemma, regel 385, 398, 591, 603).'
+  - '**GEMMA:** een deelproces realiseert de dienst van een UPL-product, bijvoorbeeld Verlenen verlof tot begraving of crematie de dienst Verlof tot begraven en Verlenen grafrecht de dienst Graf aanvragen. Het model heeft één bedrijfs- of ketenproces per kernobject (Beheren grafrechten, Beheren graven, Bezorgen stoffelijk overschot); daaronder levert elk deelproces één product of dienst. Eén bedrijfsproces per product maakt het model plat: een gemeente levert zo''n 500 externe en 215 interne producten en diensten (2025-vng-upl-producten-en-diensten-extern, 2025-vng-upl-producten-en-diensten-intern).'
+  nummer: 4
+  status: open
+- type: kennismodel
+  elementen:
+  - bezorgen-stoffelijk-overschot
+  bevinding:
+  - '**Kennismodel:** een ketenproces is een samenhangend geheel van processen over afdelingen of organisaties, en aggregeert bedrijfsprocessen (2026-vng-over-gemma, regel 564, 590).'
+  - '**GEMMA:** het ketenproces Bezorgen stoffelijk overschot aggregeert vooral deelprocessen (Schouwen stoffelijk overschot, Verlenen verlof tot begraving of crematie, Opgraven stoffelijk overschot en andere) en één bedrijfsproces (Verzorgen gemeentebegrafenis). Een ketenproces omvat net als een bedrijfsproces de levensloop van één kernobject, hier het stoffelijk overschot, maar met meer organisaties, zoals de officier van justitie (Wet op de lijkbezorging art. 10, 12). De stappen daarin zijn deelprocessen die elk een product of dienst leveren; een deelproces uit een andere taak mag ook in een ketenproces hangen.'
+  nummer: 5
+  status: open
+- type: kennismodel
+  elementen:
+  - gemeente
+  - burgemeester
+  bevinding:
+  - '**Kennismodel:** het kennismodel procesarchitectuur kent geen relaties tussen actoren; een actor wordt alleen aan een rol toegewezen (2026-vng-over-gemma, regel 602).'
+  - '**GEMMA:** tussen actoren alleen structurele relaties: deel van, lid van, voorzitter van. De Gemeente omvat de Gemeenteraad, het College van B&W en de Burgemeester, en de Burgemeester is voorzitter van de gemeenteraad en van het college (2024-rijk-gemeentewet-wettekst, art. 6, 9, 34). Een handeling tussen partijen loopt via rollen en processen of een gebeurtenis.'
+  nummer: 6
+  status: open
+- type: grondslag
+  elementen:
+  - grafuitgifte
+  bevinding:
+  - '**UPL:** grafuitgifte heeft als grondslag art. 11 van de model-beheersverordening begraafplaatsen (2025-vng-upl-producten-en-diensten-extern, nr. 165).'
+  - '**GEMMA:** art. 11 deelt de graven in: particuliere graven en urnengraven, urnennissen en gedenkplaatsen. De uitgifte zelf staat in art. 13 tot 15: de volgorde van uitgifte, de categorieën en het recht op een particulier graf voor tien tot dertig jaar (2010-vng-model-beheersverordening-begraafplaatsen). In het model is de model-beheersverordening grondslag voor Grafuitgifte op art. 11 en 13 tot 15.'
+  nummer: 7
+  status: open
+- type: grondslag
+  elementen:
+  - grafonderhoud
+  bevinding:
+  - '**UPL:** grafonderhoud heeft als grondslag het Begraafplaatsenbeleid 2020-2030 van één gemeente (CVDR659831), niet een model- of landelijke regeling (2025-vng-upl-producten-en-diensten-extern, nr. 163).'
+  - '**GEMMA:** het onderhoud op verzoek van de rechthebbende en tegen betaling staat in de beheersverordening (2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, art. 23, 24); de heffingsverordening regelt het recht. De model-beheersverordening regelt in art. 20 alleen het minimale onderhoud dat de gemeente altijd doet (eenmaal per jaar schoonmaken, winterharde beplanting) en in art. 21 het onderhoud door de rechthebbende; het betaalde onderhoud op verzoek staat er niet in (2010-vng-model-beheersverordening-begraafplaatsen). In het model heeft Grafonderhoud daardoor nog geen beleidskader als grondslag.'
+  nummer: 8
+  status: open

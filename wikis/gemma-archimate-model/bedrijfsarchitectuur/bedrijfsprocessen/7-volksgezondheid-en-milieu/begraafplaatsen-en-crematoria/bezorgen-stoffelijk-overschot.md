@@ -130,6 +130,10 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor de lijkbezorging; nieuw voor GEMMA.
 
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 5](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** een ketenproces is een samenhangend geheel van processen over afdelingen of organisaties, en aggregeert bedrijfsprocessen ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 564, 590). **GEMMA:** het ketenproces Bezorgen stoffelijk overschot aggregeert vooral deelprocessen (Schouwen stoffelijk overschot, Verlenen verlof tot begraving of crematie, Opgraven stoffelijk overschot en andere) en één bedrijfsproces (Verzorgen gemeentebegrafenis). Een ketenproces omvat net als een bedrijfsproces de levensloop van één kernobject, hier het stoffelijk overschot, maar met meer organisaties, zoals de officier van justitie (Wet op de lijkbezorging art. 10, 12). De stappen daarin zijn deelprocessen die elk een product of dienst leveren; een deelproces uit een andere taak mag ook in een ketenproces hangen.
+
 ### Besluiten redacteur
 
 - 2026-10-05: Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).

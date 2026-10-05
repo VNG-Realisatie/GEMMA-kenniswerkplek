@@ -106,6 +106,10 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. De GEMMA-rol Gemeente staat voor de verantwoordelijkheid die gemeenten hebben, en ordent als doelgroep de applicatieservices voor de medewerkers van de gemeente. Dit element is de gemeente als rechtspersoon, een actor: een ander begrip en een ander type, dus geen koppeling (besluit redacteur 2026-10-04).
 
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 6](../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** het kennismodel procesarchitectuur kent geen relaties tussen actoren; een actor wordt alleen aan een rol toegewezen ([2026-vng-over-gemma](../../analyses/gemma-kennismodel.md), regel 602). **GEMMA:** tussen actoren alleen structurele relaties: deel van, lid van, voorzitter van. De Gemeente omvat de Gemeenteraad, het College van B&W en de Burgemeester, en de Burgemeester is voorzitter van de gemeenteraad en van het college ([2024-rijk-gemeentewet-wettekst](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), art. 6, 9, 34). Een handeling tussen partijen loopt via rollen en processen of een gebeurtenis.
+
 ### Besluiten redacteur
 
 - 2026-09-30: Rol, geen actor: Gemeente is de hoedanigheid; de afzonderlijke gemeenten zijn de actoren.

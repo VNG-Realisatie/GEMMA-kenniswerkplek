@@ -35,4 +35,4 @@ titel: Voortgang
 
 ## Procesarchitectuur-terugmeldingen
 
-[3 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 3.
+[8 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 8.

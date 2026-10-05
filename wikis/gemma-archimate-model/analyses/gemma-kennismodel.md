@@ -5,6 +5,8 @@ titel: Elementtypen, kenmerken en het GEMMA-kennismodel
 bijgewerkt: '2026-10-01'
 bronnen:
 - 2026-vng-over-gemma
+bronanalyse_van:
+- 2026-vng-over-gemma
 ---
 
 # Elementtypen, kenmerken en het GEMMA-kennismodel

@@ -94,3 +94,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen actor Burgemeester (tools/gemma.py kandidaten: geen naamgenoot); nieuw voor GEMMA.
+
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 6](../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** het kennismodel procesarchitectuur kent geen relaties tussen actoren; een actor wordt alleen aan een rol toegewezen ([2026-vng-over-gemma](../../analyses/gemma-kennismodel.md), regel 602). **GEMMA:** tussen actoren alleen structurele relaties: deel van, lid van, voorzitter van. De Gemeente omvat de Gemeenteraad, het College van B&W en de Burgemeester, en de Burgemeester is voorzitter van de gemeenteraad en van het college ([2024-rijk-gemeentewet-wettekst](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), art. 6, 9, 34). Een handeling tussen partijen loopt via rollen en processen of een gebeurtenis.

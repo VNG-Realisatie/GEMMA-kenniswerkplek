@@ -17,7 +17,7 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **Voorstellen aan het GEMMA-team**:
   - het beleidsdomein *Begraafplaatsen en crematoria* onder taakveld 7, met de GEMMA-domeinen waaronder het valt (procesarchitectuur-terugmelding 1);
   - generieke gebeurtenissen (aanvraag ontvangen, besluit bekendgemaakt);
-  - de afwijkingen van het kennismodel procesarchitectuur: een deelproces levert een dienst, een ketenproces bevat deelprocessen, structurele relaties tussen actoren;
+  - de afwijkingen van het kennismodel procesarchitectuur: een deelproces levert een dienst, een ketenproces bevat deelprocessen, structurele relaties tussen actoren (procesarchitectuur-terugmeldingen 4–6);
   - het advies om referentiecomponenten te laten aggregeren door een hogere bedrijfsfunctie;
   - de definities van de GEMMA-rollen Ketenpartner, Adviseur en Beslisser, die in GEMMA leeg zijn en die de export met de definitie uit de wiki vult.
 - **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein.
@@ -27,7 +27,6 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 - **Stoffelijk overschot in lopende tekst**: de zes elementen met *lijk* in de naam zijn hernoemd; in de definitie en beschrijving van ongeveer twintig andere elementen staat nog het losse woord *lijk* (Begraafplaats, Crematorium, Graf, Grafrecht, Gemeentelijke lijkschouwer, Uitvoeren lijkbezorging en andere). Per element voorleggen; letterlijke citaten en wetstermen blijven.
 - **Bediening vanuit een product in `tools/relaties.py`**: de relatietabel kent geen bediening van een product naar een rol (kennismodel regel 596, *Product → bediening → Klant*); Grafuitgifte bedient de Rechthebbende op het graf daardoor alleen via de dienst Graf aanvragen. Toetsen aan de ArchiMate-relatietabel en zo nodig toevoegen.
-- **Procesarchitectuur-terugmeldingen aanvullen**: de afwijkingen van het kennismodel procesarchitectuur (hieronder bij de voorstellen aan het GEMMA-team) en de bevindingen over grondslagen in de UPL (grafuitgifte art. 11 in plaats van art. 13–15 van de model-beheersverordening, grafonderhoud op het beleid van één gemeente) als terugmelding opnemen in `beoordelingen/procesarchitectuur-terugmeldingen.yaml`.
 
 ## Export naar Archi
 

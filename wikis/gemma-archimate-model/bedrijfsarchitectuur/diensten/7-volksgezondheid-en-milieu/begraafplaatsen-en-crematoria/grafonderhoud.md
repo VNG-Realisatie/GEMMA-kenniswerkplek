@@ -103,6 +103,10 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 8](../../../../analyses/procesarchitectuur-terugmeldingen.md) (grondslag, open): **UPL:** grafonderhoud heeft als grondslag het Begraafplaatsenbeleid 2020-2030 van één gemeente (CVDR659831), niet een model- of landelijke regeling ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md), nr. 163). **GEMMA:** het onderhoud op verzoek van de rechthebbende en tegen betaling staat in de beheersverordening ([2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), art. 23, 24); de heffingsverordening regelt het recht. De model-beheersverordening regelt in art. 20 alleen het minimale onderhoud dat de gemeente altijd doet (eenmaal per jaar schoonmaken, winterharde beplanting) en in art. 21 het onderhoud door de rechthebbende; het betaalde onderhoud op verzoek staat er niet in ([2010-vng-model-beheersverordening-begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md)). In het model heeft Grafonderhoud daardoor nog geen beleidskader als grondslag.
+
 ### Besluiten redacteur
 
 - 2026-10-05: Naam Grafonderhoud, de UPL-naam letterlijk; Onderhoud van graven (beleid) wordt een synoniem.

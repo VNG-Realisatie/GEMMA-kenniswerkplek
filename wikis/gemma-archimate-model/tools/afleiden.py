@@ -388,7 +388,10 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             res.fouten.append(f"{bid}: zelfde paginapad als '{paden[pad]}' ({pad})")
         paden[pad] = bid
 
-    res.waarschuwingen += signalen.over_begrippen({b: d for b, (_, d) in alle.items()}, uitkomsten)
+    pa_register = _pa_terugmeldingen(ctx, uitkomsten, res)
+    gemeld = [m for m in (pa_register or {}).get("terugmeldingen", []) if m.get("status") != "afgewezen"]
+    res.waarschuwingen += signalen.over_begrippen({b: d for b, (_, d) in alle.items()}, uitkomsten,
+                                                  {e for m in gemeld if m["type"] == "kennismodel" for e in m.get("elementen") or []})
     elementen = {b: u for b, u in uitkomsten.items() if u and u["soort"] == "element"}
     functies = [b for b, u in elementen.items() if u["paginatype"] == "bedrijfsfunctie"]
     if any(u["paginatype"] in ("bedrijfsfunctie", "product", "dienst") for u in elementen.values()):
@@ -396,11 +399,9 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         res.waarschuwingen += signalen.functie_indeling(
             {b: d for b, (_, d) in alle.items()}, elementen,
             [(van, r) for van in elementen for r in alle[van][1].get("relaties", [])], ctx.gemma() if gekoppeld else {})
-    pa_register = _pa_terugmeldingen(ctx, uitkomsten, res)
     _objecten(ctx, uitkomsten, res)
     if any(u["paginatype"] in ("product", "dienst") for u in elementen.values()) \
             and (wiki_root / "gemma" / "gemma_parsed.json").exists():
-        gemeld = [m for m in (pa_register or {}).get("terugmeldingen", []) if m.get("status") != "afgewezen"]
         res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,
                                                               ctx.gemma(), gemeld)
     res.fouten += signalen.bronanalyses(wiki_root, onderwerpen) + signalen.modelmappen(wiki_root)
