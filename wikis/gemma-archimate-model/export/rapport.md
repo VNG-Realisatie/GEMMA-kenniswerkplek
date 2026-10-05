@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: 09bda3fa4290764c4f5cdb12b93d704727a5bfbda6050e3d760dc6fc87a19563 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 5991a5d7484f094b32ee4db9db6917fa76b9d624f58e2dd5d3c2a15698ca1f6b -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-05T09:53:16. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 21 gekoppeld aan GEMMA, 72 nieuw. Relaties: 10 gekoppeld, 317 nieuw, 0 overgeslagen. Indelingen: 58 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-05T10:05:11. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 21 gekoppeld aan GEMMA, 72 nieuw. Relaties: 10 gekoppeld, 318 nieuw, 0 overgeslagen. Indelingen: 58 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
 
 ## Wijzigt een GEMMA-element
 

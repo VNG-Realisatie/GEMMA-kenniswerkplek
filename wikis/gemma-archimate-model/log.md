@@ -441,3 +441,4 @@ verwijderen; de pre-commit-hook weigert dat.
 ## [2026-10-05] promote | verzorgen-gemeentebegrafenis | Mark Backer | 7ad373da
 ## [2026-10-05] promote | verzorgen-lijkbezorging | Mark Backer | f5b421ed
 ## [2026-10-05] promote | wet-op-de-lijkbezorging | Mark Backer | 93766c68
+## [2026-10-05] promote | grafuitgifte | Mark Backer | 0214b613

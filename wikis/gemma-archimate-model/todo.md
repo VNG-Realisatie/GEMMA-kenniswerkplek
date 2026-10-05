@@ -23,10 +23,6 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein.
 - **Archi-views** per indeling en elementtype in de export, na de eerste proefimport (herziening van het besluit van 2026-10-02: geen views).
 
-## Na de UPL-producten (2026-10-05)
-
-- **Bediening van een product naar een rol vastleggen**: `tools/relaties.py` staat Product → bediening → Rol nu toe (ArchiMate 3.2, kennismodel regel 596). Per product beoordelen of de bediening in de beoordeling hoort, naast de bediening door de dienst; begin met Grafuitgifte (Rechthebbende op het graf). Per element voorleggen.
-
 ## Export naar Archi
 
 - **Verzoek aan het GEMMA-team**: zet bij elke release naast `export/GEMMA release.xml` (AMEFF) ook `export/GEMMA release.archimate` in de GEMMA-Archi-repository (opslagformaat van Archi, met map-id's en profielen). Daarna `wiki.yaml` → `gemma.herkomst.pad` daarop zetten; na de overgang naar coArchi 2 op `model.archimate`. Tot dan neemt de redacteur een lokaal opgeslagen `.archimate` op (skill `gemma-archimate-model-gemma-release`).

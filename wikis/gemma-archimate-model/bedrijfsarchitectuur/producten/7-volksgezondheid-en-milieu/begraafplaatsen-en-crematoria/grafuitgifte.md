@@ -79,6 +79,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 |---|---|---|---|
 | Grafuitgifte | omvat *aggregatie* | [Graf aanvragen](../../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf-aanvragen.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (Groningen art. 16; VNG-model art. 15) |
 | Grafuitgifte | omvat *aggregatie* | [Grafrecht](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (Groningen art. 16; VNG-model art. 15) |
+| Grafuitgifte | bedient *bediening* | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (Groningen art. 16; VNG-model art. 15) |
 
 #### Inkomend
 
@@ -112,3 +113,4 @@ Procesarchitectuur-terugmeldingen:
 ### Besluiten redacteur
 
 - 2026-10-05: UPL-product van lijkbezorging, beoordeeld met de toets van 2026-10-05: een product bij een dienst met een afspraak, anders een dienst; de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt.
+- 2026-10-05: Het product bedient de Rechthebbende op het graf (kennismodel regel 596: Product → bediening → Klant); de bediening door de dienst Graf aanvragen blijft.

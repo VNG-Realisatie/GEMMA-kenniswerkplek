@@ -242,10 +242,21 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   vindplaats: Groningen art. 16; VNG-model art. 15
+- soort: bediening
+  naar: rechthebbende-op-het-graf
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: Groningen art. 16; VNG-model art. 15
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt
   besluit: 'UPL-product van lijkbezorging, beoordeeld met de toets van 2026-10-05: een product bij een dienst met een afspraak, anders een dienst; de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt.'
+- datum: '2026-10-05'
+  besluit: 'Het product bedient de Rechthebbende op het graf (kennismodel regel 596: Product → bediening → Klant); de bediening door de dienst Graf aanvragen blijft.'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
