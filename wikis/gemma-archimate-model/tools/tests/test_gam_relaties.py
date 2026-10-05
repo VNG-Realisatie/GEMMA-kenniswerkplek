@@ -97,6 +97,8 @@ def test_archimate_toets():
     assert relaties.toegestaan("specialization", "contract", "business-object")
     assert not relaties.toegestaan("composition", "business-object", "business-process")
     assert not relaties.toegestaan("specialization", "business-actor", "business-role")
+    assert relaties.toegestaan("serving", "product", "business-role")
+    assert not relaties.toegestaan("serving", "product", "business-process")
     assert not relaties.toegestaan("assignment", "business-object", "business-process")
     assert relaties.toegestaan("assignment", "business-actor", "business-role")
     assert not relaties.toegestaan("assignment", "business-role", "business-role")

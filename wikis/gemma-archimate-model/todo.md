@@ -25,7 +25,7 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 ## Na de UPL-producten (2026-10-05)
 
-- **Bediening vanuit een product in `tools/relaties.py`**: de relatietabel kent geen bediening van een product naar een rol (kennismodel regel 596, *Product → bediening → Klant*); Grafuitgifte bedient de Rechthebbende op het graf daardoor alleen via de dienst Graf aanvragen. Toetsen aan de ArchiMate-relatietabel en zo nodig toevoegen.
+- **Bediening van een product naar een rol vastleggen**: `tools/relaties.py` staat Product → bediening → Rol nu toe (ArchiMate 3.2, kennismodel regel 596). Per product beoordelen of de bediening in de beoordeling hoort, naast de bediening door de dienst; begin met Grafuitgifte (Rechthebbende op het graf). Per element voorleggen.
 
 ## Export naar Archi
 

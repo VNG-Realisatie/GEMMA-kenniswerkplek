@@ -89,6 +89,7 @@ TOEGESTAAN = {
     ("triggering", "gedrag", "gedrag"), ("flow", "gedrag", "gedrag"),
     ("realization", "gedrag", "gedrag"), ("realization", "passief", "passief"),
     ("serving", "gedrag", "gedrag"), ("serving", "gedrag", "actief"),
+    ("serving", "samengesteld", "actief"),  # Product → bediening → Klant (kennismodel regel 596)
 }
 STERKTE = {"composition": 3, "aggregation": 2, "association": 1}
 DEEL_GEHEEL_WERKWOORDEN = ("bevat", "bestaat uit", "omvat", "onderdeel van", "deel van", "maakt deel uit van",
