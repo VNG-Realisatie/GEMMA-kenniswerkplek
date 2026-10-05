@@ -34,7 +34,7 @@ wikis/gemma-archimate-model/
 │   ├── onderwerpen/<onderwerp>.yaml  naam, omschrijving, bronnen en status van een onderwerp
 │   └── terugmeldingen.yaml           register van GGM-terugmeldingen
 ├── bronanalyses/<onderwerp>/<bron-id>.md   wat een bron betekent voor de architectuur (AI)
-├── analyses/                         analyses en besluiten (AI), plus ggm-terugmeldingen.md (gegenereerd)
+├── analyses/                         analyses en besluiten (AI), plus ggm-terugmeldingen.md en procesarchitectuur-terugmeldingen.md (gegenereerd)
 ├── bedrijfsarchitectuur/ · motivatie/ · begrippen/   gegenereerd door tools/render.py
 ├── ter-beoordeling.md · voortgang.md                gegenereerd door tools/render.py
 ├── ggm/ · gemma/                     gegenereerd door tools/ggm.py en tools/gemma.py
@@ -59,6 +59,7 @@ wikis/gemma-archimate-model/
 | `bedrijfsarchitectuur/<map>/<taakveld>/<beleidsdomein>/<id>.md`, `bedrijfsarchitectuur/bedrijfsfuncties/<domein>/<id>.md`, `motivatie/beleidskaders/<id>.md` | Elementpagina; de map volgt uit het type (`wiki.yaml` `page_types`), de submappen uit taakveld en beleidsdomein, bij een functie uit het domein (kleine letters met koppeltekens) |
 | `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst (element met link en status, synoniem van, specialisatie van, geen element …), de reden, de herkomst en de GGM-entiteit |
 | `analyses/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
+| `analyses/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel), uit `beoordelingen/procesarchitectuur-terugmeldingen.yaml` |
 | `ter-beoordeling.md` | Wat wacht op akkoord (status `review`), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 
@@ -89,7 +90,8 @@ Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update
  6 Bekijken                     redacteur  llmwiki promote plan; ter-beoordeling.md, pagina's, Source Control
  7 AKKOORD in de chat           redacteur
  8 Vastleggen                   script     llmwiki promote apply (klik "toestaan"); log.md   review → goedgekeurd
- 9 Commit                       redact./AI pre-commit: render-check, goedgekeurd-guard
+ 9 Exporteren                   script     tools/archimate_export.py; export/                 —
+10 Commit                       redact./AI pre-commit: render-check, goedgekeurd-guard
 ```
 
 | Stap | Skill | Gereedschap |
@@ -98,6 +100,7 @@ Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update
 | 3 | [gemma-archimate-model-beoordelen](.agents/skills/gemma-archimate-model-beoordelen/SKILL.md) + [criteria](.agents/skills/gemma-archimate-model-criteria/SKILL.md) | `tools/ggm.py kandidaten`, `tools/gemma.py kandidaten`, `tools/relaties.py voorstel` |
 | 4 | — | `tools/afleiden.py` (roept `tools/render.py` aan) |
 | 6–8 | — | `llmwiki promote plan`, `llmwiki promote apply --akkoord-woord AKKOORD` |
+| 9 | [gemma-archimate-model-archimate-export](.agents/skills/gemma-archimate-model-archimate-export/SKILL.md) | `tools/archimate_export.py --check`, `tools/archimate_export.py` |
 
 Nieuwe modelversies: [gemma-archimate-model-ggm-release](.agents/skills/gemma-archimate-model-ggm-release/SKILL.md) en [gemma-archimate-model-gemma-release](.agents/skills/gemma-archimate-model-gemma-release/SKILL.md): release, daarna `tools/afleiden.py`.
 

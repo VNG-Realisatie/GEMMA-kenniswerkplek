@@ -18,6 +18,7 @@ afnemer: extern
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rvo-aangifte-en-akte-van-overlijden
+- 2025-vng-upl-producten-en-diensten-extern
 ---
 
 # Verlenen verlof tot begraving of crematie
@@ -45,8 +46,8 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 ### Plaats in de indelingen
 
 - **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md), [Bezorgen lijken](bezorgen-lijken.md).
-- **Kernobject**: [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md).
+- **Procesindeling naar taak, onderdeel van**: [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md), [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md).
+- **Kernobject**: [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md).
 - **Functie-indeling naar domein, bediend door**: [Burgerlijke stand diensten](../../../bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
@@ -69,9 +70,9 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, schriftelijk verlof tot begraving of crematie (art. 11). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elke begraving of crematie. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 11–14: kosteloos, alleen op grond van de verklaringen, bevoegde ambtenaar. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan het ketenproces Bezorgen lijken: zonder verlof geen begraving of crematie (art. 11). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan het ketenproces Bezorgen stoffelijk overschot: zonder verlof geen begraving of crematie (art. 11). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, de ambtenaar van de burgerlijke stand verleent het schriftelijk verlof (art. 11). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, levert het verlof tot begraven, verlof tot cremeren of verlof tot ontleding, dat de gemeente na aangifte van overlijden afgeeft (RVO; art. 11). [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de dienst Verlof tot begraven (UPL nr. 438): het verlof tot begraving of crematie dat de gemeente na aangifte van overlijden afgeeft (RVO; art. 11). [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki; het cluster naar soort werk is een groepering, geen generalisatie. Eigen normering en een eigen bevoegde (ambtenaar van de burgerlijke stand). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
@@ -81,6 +82,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Verlenen verlof tot begraving of crematie | geeft af *toegang (registreren)* | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
+| Verlenen verlof tot begraving of crematie | realiseert *realisatie* | [Verlof tot begraven](../../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlof-tot-begraven.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) (Wlb art. 11; UPL nr. 438) |
 
 #### Inkomend
 
@@ -88,7 +90,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 |---|---|---|---|
 | [Ambtenaar van de burgerlijke stand](../../../rollen/ambtenaar-van-de-burgerlijke-stand.md) | verleent *toewijzing* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
 | [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md) | omvat *aggregatie* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
-| [Bezorgen lijken](bezorgen-lijken.md) | omvat *aggregatie* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11, 12) |
+| [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md) | omvat *aggregatie* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11, 12) |
 | [Burgerlijke stand diensten](../../../bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md) | bedient *bediening* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
 
 ## Herkomst
@@ -99,6 +101,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 |---|---|
 | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
+| [UPL-lijst extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 

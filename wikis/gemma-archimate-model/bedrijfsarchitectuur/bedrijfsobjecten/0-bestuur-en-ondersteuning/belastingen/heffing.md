@@ -84,6 +84,7 @@ Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 
 
 #### Lijkbezorging
 
+- **Grafrechten**: Specialisatie zonder pagina van Heffing: in de UPL het product grafrechten (nr. 164, Gemeentewet art. 229), de lijkbezorgingsrechten voor de uitgifte van een graf; het tarief van het product Grafuitgifte. Niet te verwarren met Grafrecht, het recht op het graf zelf.
 - **Lijkbezorgingsrechten**: Specialisatie zonder pagina van Heffing: retributies voor het gebruik van begraafplaats of crematorium (VNG retributies).
 - **Retributie**: Specialisatie zonder pagina van Heffing: heffing voor het gebruik van gemeentebezittingen of het genot van gemeentelijke diensten (Gemeentewet art. 229; VNG retributies).
 
@@ -108,6 +109,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 - **Lijkbezorgingsrechten**: Retributies voor het gebruik van de gemeentelijke begraafplaats of het crematorium (VNG retributies). Geen eigen pagina.
 - **Retributie**: Heffing voor het gebruik van gemeentebezittingen of het genot van gemeentelijke diensten (Gemeentewet art. 229; VNG retributies). Geen eigen pagina.
+- **Grafrechten**: De lijkbezorgingsrechten voor de uitgifte van een graf, in de UPL een eigen product (UPL nr. 164; Gemeentewet art. 229). Geen eigen pagina.
 
 ### Relaties
 

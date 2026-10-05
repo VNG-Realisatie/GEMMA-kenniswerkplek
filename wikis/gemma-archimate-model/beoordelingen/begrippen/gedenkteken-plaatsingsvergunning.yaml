@@ -1,17 +1,20 @@
-begrip: Onderhoud van graven
+begrip: Gedenkteken plaatsingsvergunning
+onderwerpen:
+- lijkbezorging
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: Gangbaar in verordening en VNG ('onderhoud van graven en urnen').
+    onderbouwing: Product in de UPL (nr. 142); de vergunning grafbedekking staat in de beheersverordeningen (VNG-model art. 19; Groningen art. 22).
     bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
   gemeentelijk:
     waarde: ja
-    onderbouwing: De gemeente biedt het aan tegen betaling (Groningen art. 23; VNG retributies).
+    onderbouwing: Het college verleent de vergunning (VNG-model art. 19 lid 1; Groningen art. 22 lid 1).
     bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -20,22 +23,19 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    onderbouwing: Een zelfstandig product in de UPL, niet een onderdeel of deelstap van één ander begrip.
     bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
+    - 2025-vng-upl-producten-en-diensten-extern
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    onderbouwing: Hoort primair bij de lijkbezorging.
     bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
+    - 2025-vng-upl-producten-en-diensten-extern
   gedrag:
     waarde: ja
     onderbouwing: Iets wat de gemeente aanbiedt.
     bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
+    - 2025-vng-upl-producten-en-diensten-extern
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -71,94 +71,94 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen partij.'
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces.'
   groepeert_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   gegroepeerd_gedrag:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   toestandsverandering:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   aangeboden_gedrag:
     waarde: ja
-    onderbouwing: Prestatie die de gemeente aan de rechthebbende aanbiedt, los van hoe zij het onderhoud uitvoert.
+    onderbouwing: 'Een prestatie die de gemeente aan de rechthebbende aanbiedt: een vergunning voor een gedenkteken of andere grafbedekking (Groningen art. 22).'
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
   gezamenlijk_gedrag:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   toegewezen_partij:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   gebruikt_objecten:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   aanleiding:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: Een onderhouden graf (Groningen art. 23 lid 3).
+    onderbouwing: Een schriftelijke vergunning voor het hebben van een grafbedekking (Groningen art. 22 lid 1).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   komt_herhaald_voor:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   eigen_normering:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   stabiel_over_tijd:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   afnemer:
     waarde: ja
-    onderbouwing: Rechthebbende op het graf (Groningen art. 23, 24 lid 3).
+    onderbouwing: Burger en bedrijf (UPL); de rechthebbende van een particulier graf vraagt de vergunning aan (Groningen art. 22 lid 2).
     bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het proces Onderhouden graf.
+    onderbouwing: Het deelproces Verlenen vergunning grafbedekking (Groningen art. 22).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   leidt_tot_gedrag:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   omvat_processen:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   meer_organisaties:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   eigen_besluit:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   bedient_gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   in_functie_indeling:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -173,22 +173,22 @@ kenmerken:
     onderbouwing: Geen overeenkomst tussen partijen.
   waarneembare_vorm:
     waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+    onderbouwing: Wordt niet als ding behandeld.
   deel_van_object:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Wordt niet als ding behandeld.
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Wordt niet als ding behandeld.
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Wordt niet als ding behandeld.
   omvat_diensten_en_afspraken:
     waarde: nee
-    onderbouwing: Geen gebundeld aanbod.
+    onderbouwing: 'Geen gebundeld aanbod: één prestatie, uitkomst een beschikking, geen afspraak.'
   geautomatiseerd_verwerkt:
     waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+    onderbouwing: Wordt niet als ding behandeld.
   landelijk:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
@@ -200,21 +200,23 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen bredere dienst in deze wiki.
+    onderbouwing: Geen bredere dienst in deze wiki of in het GEMMA-model.
     bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2025-vng-upl-producten-en-diensten-extern
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in de lijkbezorging voor.
+definitie: Vergunning van de gemeente voor het plaatsen en hebben van een gedenkteken of andere grafbedekking op een graf.
+beschrijving:
+- Voor het hebben van een grafbedekking is een schriftelijke vergunning van het college nodig; de rechthebbende van een particulier graf vraagt haar aan (VNG-model art. 19 lid 1–2; Groningen art. 22 lid 1–2). Het college kan nadere regels stellen over de aanvraag, de aard en de afmetingen van de grafbedekking en kan de vergunning weigeren (Groningen art. 22 lid 3–4). De beheersverordeningen spreken van vergunning grafbedekking; de UPL van gedenkteken plaatsingsvergunning (UPL).
+afnemer: extern
+domein: Fysieke leefomgeving
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-definitie: Onderhoud van grafmonumenten en grafbeplanting door de gemeente, tegen betaling door de rechthebbende.
-beschrijving:
-- Op verzoek van de rechthebbende, of op sommige begraafplaatsen altijd, onderhoudt de gemeente de grafbedekking tegen betaling van een recht uit de heffingsverordening (Groningen art. 23, 24; VNG retributies). Een retributie is een tegenprestatie voor zo'n dienst (VNG retributies).
 relaties:
 - soort: bediening
   naar: rechthebbende-op-het-graf
@@ -222,11 +224,11 @@ relaties:
   grondslag: bron
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 23, 24 lid 3
-onderwerpen:
-- lijkbezorging
-domein: Fysieke leefomgeving
-afnemer: extern
+  vindplaats: art. 22 lid 2
+besluiten:
+- datum: '2026-10-05'
+  gevolg: verwerkt
+  besluit: 'UPL-product van lijkbezorging, beoordeeld met de toets van 2026-10-05: een product bij een dienst met een afspraak, anders een dienst; de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt.'
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -240,7 +242,8 @@ afgeleid:
     generiek: false
     typeregel: 17
   bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  - 2026-vng-retributies
   herkomst: wet
-  pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhoud-van-graven.md
+  pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gedenkteken-plaatsingsvergunning.md

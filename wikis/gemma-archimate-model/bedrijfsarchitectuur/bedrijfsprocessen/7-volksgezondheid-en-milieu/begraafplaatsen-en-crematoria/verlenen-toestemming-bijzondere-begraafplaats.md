@@ -17,6 +17,7 @@ procesniveau: deelproces
 afnemer: extern
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2025-vng-upl-producten-en-diensten-extern
 ---
 
 # Verlenen toestemming bijzondere begraafplaats
@@ -51,7 +52,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -69,6 +70,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 40–42: alleen grond die de raad aanwijst; toestemming alleen te weigeren bij strijd met de wet; beroep bij gedeputeerde staten. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren begraafplaatsen: het begin van een bijzondere begraafplaats (art. 40, 41). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, het college geeft toestemming voor de ingebruikneming (art. 41); de raad wijst de grond aan (art. 40 lid 1). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de dienst Bijzondere begraafplaats toestemming (UPL nr. 71). [UPL-lijst extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki of in het GEMMA-model. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
@@ -80,6 +82,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | Verlenen toestemming bijzondere begraafplaats | wijst aan *toegang (registreren)* | [Beschikking](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 40 lid 1) |
 | Verlenen toestemming bijzondere begraafplaats | geeft *toegang (registreren)* | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 41) |
 | Verlenen toestemming bijzondere begraafplaats | betreft *toegang (bijwerken)* | [Begraafplaats](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 40, 41) |
+| Verlenen toestemming bijzondere begraafplaats | realiseert *realisatie* | [Bijzondere begraafplaats toestemming](../../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzondere-begraafplaats-toestemming.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) (Wlb art. 40, 41; UPL nr. 71) |
 
 #### Inkomend
 
@@ -97,6 +100,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+| [UPL-lijst extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 

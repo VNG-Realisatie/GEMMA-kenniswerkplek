@@ -481,9 +481,9 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
                 aggregatie(nieuwe[beleidsdomein], element, "Beleidsdomeinindeling", bid)
             else:
                 aggregatie(groep["id"], element, "Beleidsdomeinindeling", bid, groep)
-        if paginatype in DOMEIN_TYPEN and not signalen.is_domeinfunctie(data, gemma_data):
-            # een product, dienst of functie onder domeinniveau: de aggregatie vanaf de (bovenliggende) functie, een
-            # relatie in de beoordeling
+        if paginatype in DOMEIN_TYPEN and paginatype != "product" and not signalen.is_domeinfunctie(data, gemma_data):
+            # een dienst of functie onder domeinniveau: de aggregatie vanaf de (bovenliggende) functie, een relatie in
+            # de beoordeling; een product en een functie op domeinniveau hangen aan de domeingroepering
             if not any(r["soort"] == "aggregatie" and r["naar"] == bid and ids.get(van)
                        and gekozen[van]["afgeleid"]["uitkomst"].get("paginatype") == "bedrijfsfunctie"
                        for van in gekozen for r in gekozen[van].get("relaties", [])):

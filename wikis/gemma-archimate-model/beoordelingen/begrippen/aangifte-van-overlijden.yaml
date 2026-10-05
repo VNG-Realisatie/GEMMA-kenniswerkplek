@@ -186,7 +186,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
-toelichting: 'Verwijzing: beoordelen in het onderwerp burgerlijke stand. Het enige kanaal in de bron (digitaal aangifte doen met eHerkenning) hoort daarbij.'
+toelichting: 'Verwijzing: beoordelen in het onderwerp burgerlijke stand. Het enige kanaal in de bron (digitaal aangifte doen met eHerkenning) hoort daarbij. In de UPL het product overlijdensaangifte (nr. 315, BW Boek 1 art. 19h).'
 onderwerpen:
 - lijkbezorging
 afgeleid:
@@ -200,3 +200,6 @@ afgeleid:
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   herkomst: overig
+synoniemen:
+- naam: Overlijdensaangifte
+  context: UPL

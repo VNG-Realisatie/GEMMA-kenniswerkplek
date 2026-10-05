@@ -214,7 +214,7 @@ gemma:
   onderbouwing: 'Overgenomen uit het GGM. Nieuw: een definitie die ook crematie omvat, en plaatsing in beleidsdomein Begraafplaatsen en crematoria.'
 relaties:
 - soort: associatie (gericht)
-  naar: lijk
+  naar: stoffelijk-overschot
   naam: betreft
   grondslag: bron
   bronnen:

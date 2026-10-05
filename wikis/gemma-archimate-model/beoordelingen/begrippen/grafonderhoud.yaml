@@ -1,15 +1,17 @@
-begrip: Schouwen lijk
+begrip: Grafonderhoud
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: Wettelijke taak; lijkschouwing is gangbaar.
+    onderbouwing: Gangbaar in verordening en VNG ('onderhoud van graven en urnen').
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
   gemeentelijk:
     waarde: ja
-    onderbouwing: De gemeentelijke lijkschouwer schouwt namens de gemeente (art. 4).
+    onderbouwing: De gemeente biedt het aan tegen betaling (Groningen art. 23; VNG retributies).
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -20,17 +22,20 @@ kenmerken:
     waarde: ja
     onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
   gedrag:
     waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
+    onderbouwing: Iets wat de gemeente aanbiedt.
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -71,13 +76,11 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   groepeert_processen:
     waarde: nee
-    onderbouwing: Wordt per geval doorlopen; geen groepering.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -85,82 +88,77 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   aangeboden_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Prestatie die de gemeente aan de rechthebbende aanbiedt, los van hoe zij het onderhoud uitvoert.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-vng-retributies
   gezamenlijk_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   toegewezen_partij:
-    waarde: ja
-    onderbouwing: Gemeentelijke lijkschouwer (art. 3).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   gebruikt_objecten:
-    waarde: ja
-    onderbouwing: Raadpleegt het lijk en legt de verklaring van overlijden vast (art. 3, 7).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   aanleiding:
-    waarde: ja
-    onderbouwing: 'Het overlijden (art. 3: zo spoedig mogelijk na het overlijden).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: Verklaring van overlijden, of een verslag aan de officier van justitie (art. 7, 10).
+    onderbouwing: Een onderhouden graf (Groningen art. 23 lid 3).
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk overlijden waarbij de lijkschouwer schouwt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_normering:
-    waarde: ja
-    onderbouwing: 'Art. 3–10a: wie schouwt, wanneer, en wat bij een niet-natuurlijke dood.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   stabiel_over_tijd:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   afnemer:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Rechthebbende op het graf (Groningen art. 23, 24 lid 3).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Het proces Onderhouden graf.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   leidt_tot_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen lijken: zonder verklaring van overlijden of verklaring van geen bezwaar geen verlof (art. 3, 12).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_processen:
     waarde: nee
-    onderbouwing: Omvat geen andere processen.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen lijken.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   meer_organisaties:
     waarde: nee
-    onderbouwing: Uitgevoerd door de gemeentelijke lijkschouwer; het verslag aan de officier van justitie is een overdracht, geen gezamenlijke uitvoering (art. 10).
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   eigen_besluit:
     waarde: nee
-    onderbouwing: De verklaring van overlijden is een verklaring van een arts, geen besluit van een bestuursorgaan (art. 7).
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   levert_aanbod:
     waarde: nee
-    onderbouwing: Levert geen product of dienst aan een afnemer; de verklaring van overlijden is invoer voor het verlof (art. 12).
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   bedient_gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen functie.'
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen functie.'
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Eindigt in een verklaring of een verslag, niet in een benoemde toestandsverandering.
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -202,53 +200,54 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
+    onderbouwing: Geen bredere dienst in deze wiki.
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   generiek:
     waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-definitie: Onderzoek van een lijk door een arts na het overlijden, om vast te stellen of de dood een natuurlijke oorzaak heeft.
+definitie: Onderhoud van grafmonumenten en grafbeplanting door de gemeente, tegen betaling door de rechthebbende.
 beschrijving:
-- Elk lijk wordt zo spoedig mogelijk geschouwd, door de behandelend arts of door een gemeentelijke lijkschouwer (art. 3). Is de dood natuurlijk, dan volgt een verklaring van overlijden (art. 7); anders waarschuwt de lijkschouwer de officier van justitie en de ambtenaar van de burgerlijke stand (art. 10). Bij een minderjarige kan een nader onderzoek naar de doodsoorzaak volgen (art. 10a). De schouwing door de behandelend arts valt buiten het gemeentelijk perspectief.
-synoniemen:
-- naam: Lijkschouwing
-  context: wet
-specialisaties:
-- naam: Nader onderzoek
-  omschrijving: Onderzoek naar de doodsoorzaak van een minderjarige, geleid door de gemeentelijke lijkschouwer (art. 10a). Geen eigen pagina.
+- Op verzoek van de rechthebbende, of op sommige begraafplaatsen altijd, onderhoudt de gemeente de grafbedekking tegen betaling van een recht uit de heffingsverordening (Groningen art. 23, 24; VNG retributies). Een retributie is een tegenprestatie voor zo'n dienst (VNG retributies).
 relaties:
-- soort: toegang (raadplegen)
-  naar: lijk
-  naam: schouwt
+- soort: bediening
+  naar: rechthebbende-op-het-graf
+  naam: bedient
   grondslag: bron
   bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 3
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 23, 24 lid 3
 onderwerpen:
 - lijkbezorging
-kernobject: lijk
+domein: Fysieke leefomgeving
 afnemer: extern
+synoniemen:
+- naam: Onderhoud van graven
+  context: beleid
+besluiten:
+- datum: '2026-10-05'
+  besluit: Naam Grafonderhoud, de UPL-naam letterlijk; Onderhoud van graven (beleid) wordt een synoniem.
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 29
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-vng-retributies
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-lijk.md
+  pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafonderhoud.md

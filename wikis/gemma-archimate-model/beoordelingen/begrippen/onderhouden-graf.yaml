@@ -163,7 +163,7 @@ kenmerken:
     onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Onderhoud van graven (Groningen art. 23).
+    onderbouwing: Realiseert de dienst Grafonderhoud (Groningen art. 23).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   bedient_gedrag:
@@ -248,7 +248,7 @@ relaties:
   - 2026-vng-retributies
   vindplaats: Groningen art. 23 lid 2; § Lijkbezorgingsrechten
 - soort: realisatie
-  naar: onderhoud-van-graven
+  naar: grafonderhoud
   naam: realiseert
   grondslag: bron
   bronnen:

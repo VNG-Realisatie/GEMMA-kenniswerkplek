@@ -1,0 +1,355 @@
+begrip: Bezorgen stoffelijk overschot
+onderwerpen:
+- lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De lijkbezorging is de kern van de wet en van de gemeentelijke taak; bezorgen is de werkwoordsvorm (art. 1, 18).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente schouwt, geeft verlof, begraaft en cremeert, en zorgt voor de lijkbezorging als niemand anders dat doet (art. 4, 11, 21, 33).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: 'Bestaat zelfstandig: het proces van overlijden tot de bezorging van het lijk.'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per overledene doorlopen, van overlijden tot de bezorging van het lijk en de bestemming van de as (art. 3, 16, 59).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: 'In de deelprocessen: Gemeentelijke lijkschouwer, Ambtenaar van de burgerlijke stand, Houder van de begraafplaats, Houder van het crematorium en Beslisser; de officier van justitie als ketenpartner (art. 3, 11, 12, 21, 23, 49).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Werkt het lijk bij, van overlijden tot bezorging (art. 1, 3, 11).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Het overlijden (art. 3, 16).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: 'Een bezorgd lijk: begraven, gecremeerd of ontleed, met een bestemming voor de as (art. 1, 18 lid 2, 59).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk overlijden.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Wet op de lijkbezorging art. 3–22a: schouwing, verlof, termijnen en de zorg van de burgemeester.'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: ja
+    onderbouwing: Degene die in de lijkbezorging voorziet, meestal een nabestaande (art. 18).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Levert zelf het eindresultaat voor zijn kernobject; geen deel van een groter proces.
+  omvat_processen:
+    waarde: ja
+    onderbouwing: Schouwen stoffelijk overschot, Verlenen verlof tot begraving of crematie, Stellen andere termijn, Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as, Opgraven stoffelijk overschot, Verzorgen gemeentebegrafenis en Treffen maatregel bij besmet stoffelijk overschot (art. 3, 11, 17, 21, 22a, 29, 59).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  omvat_levensloop:
+    waarde: ja
+    onderbouwing: Omvat de levensloop van het lijk, van overlijden tot de bezorging en de bestemming van de as, ook een latere opgraving (art. 1, 3, 29, 59).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  meer_organisaties:
+    waarde: ja
+    onderbouwing: 'De gemeente en de officier van justitie: bij een niet-natuurlijke dood geeft de officier de verklaring van geen bezwaar af, zonder welke geen verlof wordt verleend, en een vervroegde uitvaart vraagt zijn instemming (art. 10, 12, 17).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'De deelprocessen leveren het aanbod (Stellen andere termijn: Uitvaart vervroegen of uitstellen).'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt in een bezorgd lijk, niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Specifiek voor de lijkbezorging.
+definitie: 'Het proces van overlijden tot de bezorging van het stoffelijk overschot: schouwen, verlof verlenen, begraven of cremeren, en zo nodig zorg door de gemeente.'
+beschrijving:
+- Na het overlijden wordt het stoffelijk overschot geschouwd, verleent de ambtenaar van de burgerlijke stand verlof tot begraving of crematie, en wordt het binnen de wettelijke termijn begraven, gecremeerd of ontleed (Wet op de lijkbezorging art. 3, 11, 16, 67). Zorgt niemand anders voor de bezorging, dan draagt de burgemeester er zorg voor (art. 21); bij een besmet stoffelijk overschot kan hij maatregelen treffen (art. 22a). Ook een latere opgraving hoort bij de levensloop van het stoffelijk overschot (art. 29).
+- 'Het is een ketenproces: bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar afgeeft voordat verlof kan worden verleend (art. 10, 12); een vervroegde uitvaart vraagt ook zijn instemming (art. 17). De uitvaartondernemer regelt de uitvaart namens de nabestaanden (RVO).'
+kernobject: stoffelijk-overschot
+afnemer: extern
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor de lijkbezorging; nieuw voor GEMMA.
+relaties:
+- soort: aggregatie
+  naar: schouwen-stoffelijk-overschot
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 3
+- soort: aggregatie
+  naar: verlenen-verlof-tot-begraving-of-crematie
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 11, 12
+- soort: aggregatie
+  naar: uitvoeren-lijkbezorging
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1, 16
+- soort: aggregatie
+  naar: opgraven-stoffelijk-overschot
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 29
+- soort: aggregatie
+  naar: verzorgen-gemeentebegrafenis
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 21, 22
+- soort: aggregatie
+  naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 22a
+- soort: aggregatie
+  naar: overlijden
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 3, 16
+- soort: aggregatie
+  naar: besmet-stoffelijk-overschot-gemeld
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 22a; Wpg art. 27 lid 3
+- soort: toegang (bijwerken)
+  naar: stoffelijk-overschot
+  naam: bezorgt
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 1
+- soort: aggregatie
+  naar: bijzetten-of-verstrooien-van-de-as
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 59–66b
+- soort: aggregatie
+  naar: stellen-andere-termijn
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 17
+- soort: aggregatie
+  naar: verlenen-toestemming-asverstrooiing
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-groningen-algemene-plaatselijke-verordening
+  vindplaats: art. 5:27 lid 3
+- soort: aggregatie
+  naar: verlenen-verlof-tot-ontleding
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 67, 68
+- soort: aggregatie
+  naar: afgeven-laissez-passer
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  vindplaats: Besluit op de lijkbezorging art. 11
+synoniemen:
+- naam: Bezorgen lijken
+  context: wet
+besluiten:
+- datum: '2026-10-05'
+  besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
+  gevolg: verwerkt
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: ketenproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-groningen-algemene-plaatselijke-verordening
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bezorgen-stoffelijk-overschot.md

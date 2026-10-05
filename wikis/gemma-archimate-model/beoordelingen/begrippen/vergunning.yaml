@@ -164,7 +164,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: Afgegeven door de ambtenaar van de burgerlijke stand en de burgemeester, geraadpleegd in Uitvoeren lijkbezorging en Opgraven lijk (art. 11, 29).
+    onderbouwing: Afgegeven door de ambtenaar van de burgerlijke stand en de burgemeester, geraadpleegd in Uitvoeren lijkbezorging en Opgraven stoffelijk overschot (art. 11, 29).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   afspraak:
@@ -224,7 +224,7 @@ synoniemen:
   context: wet
 grondslag: procesobject
 grondslag_toelichting:
-- 'Ontstaat in de gemeentelijke beslisprocessen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), Opgraven lijk (art. 29) en de vergunningen van art. 53, 64, 66b en 68.'
+- 'Ontstaat in de gemeentelijke beslisprocessen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), Opgraven stoffelijk overschot (art. 29) en de vergunningen van art. 53, 64, 66b en 68.'
 ggm:
   sterkte: geen
   onderbouwing: 'Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers).'
@@ -250,6 +250,10 @@ specialisaties:
   omschrijving: Vergunning van het college, aangevraagd door de rechthebbende (Groningen art. 22; VNG-model art. 19). Geen eigen pagina.
 - naam: Vergunning grafkelder
   omschrijving: Vergunning van het college aan de rechthebbende voor het aanbrengen van een grafkelder (Groningen art. 17; VNG-model art. 16). Geen eigen pagina.
+- naam: Toestemming asverstrooiing
+  omschrijving: Ontheffing van het college van het verbod op asverstrooiing buiten de begraafplaats (APV Groningen art. 5:27 lid 3) en toestemming voor verstrooiing op een aangewezen plek op de begraafplaats (Groningen art. 21). Geen eigen pagina.
+- naam: Laissez-passer voor lijken
+  omschrijving: Document van de burgemeester voor vervoer van een stoffelijk overschot naar een verdragsstaat van de Overeenkomst van Straatsburg (Besluit op de lijkbezorging art. 11). Geen eigen pagina.
 besluiten:
 - datum: '2026-09-30'
   besluit: Het gekozen niveau voor de vergunningen en verloven in de lijkbezorging (geen element per soort vergunning of verlof).

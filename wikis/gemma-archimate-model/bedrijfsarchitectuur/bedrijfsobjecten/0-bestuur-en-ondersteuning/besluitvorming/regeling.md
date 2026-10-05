@@ -136,7 +136,7 @@ Geen GGM-entiteit. De drie GGM-entiteiten Regeling (Inkomen) zijn een ander begr
 
 GGM-terugmeldingen:
 
-- [Nummer 10](../../../../analyses/ggm-terugmeldingen.md) (homoniem, open): Het GGM gebruikt de naam Regeling voor een afspraak of regeling met een cliënt (Terug- en invordering, Diensten, Model Inkomen), terwijl GEMMA en het spraakgebruik Regeling gebruiken voor de soort wet of verordening (algemeen verbindend voorschrift; Gemeentewet art. 147, 149). Voorstel: de GGM-entiteiten een specifiekere naam geven, bijvoorbeeld Cliëntregeling of Betalingsregeling, en in alle drie de domeinen dezelfde naam gebruiken.
+- [Nummer 10](../../../../analyses/ggm-terugmeldingen.md) (homoniem, open): **GGM:** Regeling is een afspraak of regeling met een cliënt (Terug- en invordering, Diensten, Model Inkomen). **Bevinding:** GEMMA en het spraakgebruik gebruiken Regeling voor de soort wet of verordening (algemeen verbindend voorschrift; Gemeentewet art. 147, 149). **Voorstel:** de GGM-entiteiten een specifiekere naam geven, bijvoorbeeld Cliëntregeling of Betalingsregeling, en in alle drie de domeinen dezelfde naam gebruiken.
 
 ### Afstemming met GEMMA
 

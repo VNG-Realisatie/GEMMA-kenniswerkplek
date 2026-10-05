@@ -1,17 +1,17 @@
-begrip: Opgraven lijk
+begrip: Besmet stoffelijk overschot gemeld
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: Wettelijk 'opgraving' (art. 29).
+    onderbouwing: Wettelijke melding (Wpg art. 21 lid 2).
     bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: De burgemeester verleent de vergunning; de beheerder is belast met de werkzaamheden (art. 29; Groningen art. 28).
+    onderbouwing: De GGD geeft de melding door aan de burgemeester (Wpg art. 27 lid 3).
     bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -22,20 +22,20 @@ kenmerken:
     waarde: ja
     onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
     bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
     bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gedrag:
     waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
+    onderbouwing: Iets wat gebeurt.
     bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -76,20 +76,20 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   groepeert_processen:
     waarde: nee
-    onderbouwing: Wordt per geval doorlopen; geen groepering.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   toestandsverandering:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Gebeurt op één moment en heeft gevolgen.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   aangeboden_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -97,37 +97,25 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   toegewezen_partij:
-    waarde: ja
-    onderbouwing: Beslisser (burgemeester, art. 29), beheerder (Groningen art. 28 lid 6), rechthebbende (vraagt aan).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   gebruikt_objecten:
-    waarde: ja
-    onderbouwing: Raadpleegt de vergunning tot opgraving en werkt het lijk bij (art. 29).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   aanleiding:
-    waarde: ja
-    onderbouwing: Aanvraag van de rechthebbende bij de burgemeester (Groningen art. 28 lid 1).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Opgegraven lijk, met voorschriften over vervoer en bestemming (art. 29 lid 2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   komt_herhaald_voor:
     waarde: ja
-    onderbouwing: Voor verschillende graven, op aanvraag.
+    onderbouwing: Bij elk besmet lijk.
     bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
   eigen_normering:
-    waarde: ja
-    onderbouwing: Art. 29 (vergunning, toestemming rechthebbende, voorschriften); Groningen art. 28 (grafrust tien jaar).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   stabiel_over_tijd:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -138,39 +126,38 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gedrag:
+    waarde: ja
+    onderbouwing: Start Treffen maatregel bij besmet stoffelijk overschot (Wlb art. 22a).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+  bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen lijken: een opgraving verandert de bezorging van het lijk (art. 29).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
-    onderbouwing: Omvat geen andere processen.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen lijken.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   meer_organisaties:
     waarde: nee
-    onderbouwing: Uitgevoerd door de gemeente.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   eigen_besluit:
-    waarde: ja
-    onderbouwing: De burgemeester verleent de vergunning tot opgraving (art. 29 lid 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   levert_aanbod:
     waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit deelproces levert.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   bedient_gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen functie.'
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen functie.'
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
+    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -212,59 +199,60 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
+    onderbouwing: Geen bredere gebeurtenis in deze wiki.
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
-taakveld: 7 Volksgezondheid en Milieu
-beleidsdomein: Begraafplaatsen en crematoria
+    onderbouwing: Komt alleen in de lijkbezorging voor.
 grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-definitie: Het opgraven van een lijk uit een graf, met vergunning van de burgemeester.
+definitie: De burgemeester heeft van de GGD de melding ontvangen dat een stoffelijk overschot besmet is met gevaar voor de volksgezondheid.
 beschrijving:
-- Een lijk wordt slechts opgegraven met vergunning van de burgemeester en, bij een particulier graf, met toestemming van de rechthebbende; de burgemeester verbindt voorschriften aan de vergunning over geneeskundig toezicht, vervoer en bestemming (art. 29). Beslisser is de burgemeester. De rechthebbende dient de aanvraag in en schakelt een erkend bedrijf in; opgraven gebeurt in de regel pas na tien jaar grafrust (Groningen art. 28).
+- De arts die vaststelt dat een stoffelijk overschot besmet is met een infectieus of giftig agens of stof met ernstig gevaar voor de volksgezondheid, meldt dat onverwijld aan de GGD (Wet publieke gezondheid art. 21 lid 2); de GGD geeft de ontvangst onverwijld door aan de burgemeester van de gemeente waarin het stoffelijk overschot zich bevindt (art. 27 lid 3).
 synoniemen:
-- naam: Opgraving
+- naam: Melding besmet lijk
+  context: wet
+- naam: Besmet lijk gemeld
   context: wet
 relaties:
-- soort: toegang (raadplegen)
-  naar: vergunning
-  naam: vereist
+- soort: triggering
+  naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
+  naam: leidt tot
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 29 lid 1
-  via: vergunning-tot-opgraving
-- soort: toegang (bijwerken)
-  naar: lijk
-  naam: graaft op
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  vindplaats: Wlb art. 22a; Wpg art. 27 lid 3
+- soort: associatie (gericht)
+  naar: stoffelijk-overschot
+  naam: betreft
   grondslag: bron
   bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 29
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  vindplaats: art. 21 lid 2
 onderwerpen:
 - lijkbezorging
-kernobject: lijk
-afnemer: extern
+besluiten:
+- datum: '2026-10-05'
+  besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 29
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
+    regel: 26
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
     generiek: false
     typeregel: 17
   bronnen:
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-lijk.md
+  pad: bedrijfsarchitectuur/gebeurtenissen/besmet-stoffelijk-overschot-gemeld.md

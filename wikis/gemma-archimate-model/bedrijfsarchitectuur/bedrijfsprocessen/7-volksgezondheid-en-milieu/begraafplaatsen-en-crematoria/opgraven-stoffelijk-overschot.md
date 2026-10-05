@@ -1,14 +1,14 @@
 ---
-id: opgraven-lijk
+id: opgraven-stoffelijk-overschot
 type: bedrijfsproces
 archimate_type: business-process
 status: goedgekeurd
-naam: Opgraven lijk
+naam: Opgraven stoffelijk overschot
 onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-definitie: Het opgraven van een lijk uit een graf, met vergunning van de burgemeester.
+definitie: Het opgraven van een stoffelijk overschot uit een graf, met vergunning van de burgemeester.
 grondslag: bron
 match:
   gemma: geen
@@ -17,14 +17,16 @@ procesniveau: deelproces
 afnemer: extern
 synoniemen:
 - Opgraving (wet)
+- Opgraven lijk (wet)
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2025-vng-upl-producten-en-diensten-extern
 ---
 
-# Opgraven lijk
+# Opgraven stoffelijk overschot
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/opgraven-lijk.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/opgraven-stoffelijk-overschot.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
 **Status: goedgekeurd** door de redacteur.
 
@@ -32,17 +34,18 @@ bronnen:
 
 ### Definitie
 
-Het opgraven van een lijk uit een graf, met vergunning van de burgemeester.
+Het opgraven van een stoffelijk overschot uit een graf, met vergunning van de burgemeester.
 
 ### Beschrijving
 
-Een lijk wordt slechts opgegraven met vergunning van de burgemeester en, bij een particulier graf, met toestemming van de rechthebbende; de burgemeester verbindt voorschriften aan de vergunning over geneeskundig toezicht, vervoer en bestemming (art. 29). Beslisser is de burgemeester. De rechthebbende dient de aanvraag in en schakelt een erkend bedrijf in; opgraven gebeurt in de regel pas na tien jaar grafrust (Groningen art. 28).
+Een stoffelijk overschot wordt slechts opgegraven met vergunning van de burgemeester en, bij een particulier graf, met toestemming van de rechthebbende; de burgemeester verbindt voorschriften aan de vergunning over geneeskundig toezicht, vervoer en bestemming (art. 29). Beslisser is de burgemeester. De rechthebbende dient de aanvraag in en schakelt een erkend bedrijf in; opgraven gebeurt in de regel pas na tien jaar grafrust (Groningen art. 28).
 
 ### Synoniemen
 
 | Synoniem | Context |
 |---|---|
 | Opgraving | wet |
+| Opgraven lijk | wet |
 
 ## Plaats in het model
 
@@ -53,14 +56,14 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 ### Plaats in de indelingen
 
 - **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md), [Bezorgen lijken](bezorgen-lijken.md).
-- **Kernobject**: [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md).
+- **Procesindeling naar taak, onderdeel van**: [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md), [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md).
+- **Kernobject**: [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -76,8 +79,9 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, opgegraven lijk, met voorschriften over vervoer en bestemming (art. 29 lid 2). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor verschillende graven, op aanvraag. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 29 (vergunning, toestemming rechthebbende, voorschriften); Groningen art. 28 (grafrust tien jaar). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan het ketenproces Bezorgen lijken: een opgraving verandert de bezorging van het lijk (art. 29). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan het ketenproces Bezorgen stoffelijk overschot: een opgraving verandert de bezorging van het lijk (art. 29). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, de burgemeester verleent de vergunning tot opgraving (art. 29 lid 1). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de dienst Herbegraven of alsnog cremeren (UPL nr. 171). [UPL-lijst extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
@@ -86,19 +90,20 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Opgraven lijk | vereist *toegang (raadplegen)* | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29 lid 1) |
-| Opgraven lijk | graaft op *toegang (bijwerken)* | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
+| Opgraven stoffelijk overschot | vereist *toegang (raadplegen)* | [Vergunning](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29 lid 1) |
+| Opgraven stoffelijk overschot | graaft op *toegang (bijwerken)* | [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
+| Opgraven stoffelijk overschot | realiseert *realisatie* | [Herbegraven of alsnog cremeren](../../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/herbegraven-of-alsnog-cremeren.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) (Wlb art. 29; UPL nr. 171) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md) | omvat *aggregatie* | Opgraven lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
-| [Beheerder van de begraafplaats](../../../rollen/beheerder-van-de-begraafplaats.md) | is belast met de werkzaamheden bij *toewijzing* | Opgraven lijk | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 28 lid 6) |
-| [Beslisser](../../../rollen/beslisser.md) | verleent vergunning voor *toewijzing* | Opgraven lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29 lid 1) |
-| [Bezorgen lijken](bezorgen-lijken.md) | omvat *aggregatie* | Opgraven lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
-| [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | vraagt aan *toewijzing* | Opgraven lijk | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 28 lid 1) |
-| [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Opgraven lijk | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
+| [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md) | omvat *aggregatie* | Opgraven stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
+| [Beheerder van de begraafplaats](../../../rollen/beheerder-van-de-begraafplaats.md) | is belast met de werkzaamheden bij *toewijzing* | Opgraven stoffelijk overschot | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 28 lid 6) |
+| [Beslisser](../../../rollen/beslisser.md) | verleent vergunning voor *toewijzing* | Opgraven stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29 lid 1) |
+| [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md) | omvat *aggregatie* | Opgraven stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
+| [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | vraagt aan *toewijzing* | Opgraven stoffelijk overschot | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 28 lid 1) |
+| [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Opgraven stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
 
 ## Herkomst
 
@@ -108,7 +113,12 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 |---|---|
 | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) | Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023 |
+| [UPL-lijst extern](../../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-05: Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).

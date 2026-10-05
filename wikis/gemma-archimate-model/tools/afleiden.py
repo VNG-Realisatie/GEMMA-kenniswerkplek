@@ -44,6 +44,8 @@ TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen.yaml"
 ONDERWERPEN = Path("beoordelingen") / "onderwerpen"
 TERUGMELDTYPEN = ("hiaat", "definitie", "structuur", "scope", "duplicaat", "homoniem", "relatie")
 TERUGMELDSTATUS = ("open", "gemeld", "opgelost", "afgewezen")
+PA_TERUGMELDINGEN = Path("beoordelingen") / "procesarchitectuur-terugmeldingen.yaml"
+PA_TYPEN = ("indeling", "grondslag", "product", "kennismodel")
 
 
 @dataclass
@@ -241,8 +243,11 @@ def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], 
             res.fouten.append(f"{bid}: {naam} '{doel}' is geen element (of heeft geen beoordeling)")
 
 
-def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> dict | None:
-    pad = ctx.wiki_root / TERUGMELDINGEN
+def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat, rel: Path = TERUGMELDINGEN,
+                    typen: tuple[str, ...] = TERUGMELDTYPEN, verplicht: tuple[str, ...] = ("domein", "bevinding"),
+                    label: str = "terugmelding") -> dict | None:
+    """Een register van terugmeldingen (GGM of procesarchitectuur): nummers geven, type, status en velden toetsen."""
+    pad = ctx.wiki_root / rel
     if not pad.exists():
         return None
     register = beoordeling.laad(pad)
@@ -253,18 +258,32 @@ def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -
             hoogste += 1
             m["nummer"] = hoogste
             m.setdefault("status", "open")
-        if m.get("type") not in TERUGMELDTYPEN:
-            res.fouten.append(f"terugmelding {m['nummer']}: type '{m.get('type')}' (kies uit {', '.join(TERUGMELDTYPEN)})")
+        if m.get("type") not in typen:
+            res.fouten.append(f"{label} {m['nummer']}: type '{m.get('type')}' (kies uit {', '.join(typen)})")
         if m.get("status") not in TERUGMELDSTATUS:
-            res.fouten.append(f"terugmelding {m['nummer']}: status '{m.get('status')}' (kies uit {', '.join(TERUGMELDSTATUS)})")
-        for veld in ("domein", "bevinding"):
+            res.fouten.append(f"{label} {m['nummer']}: status '{m.get('status')}' (kies uit {', '.join(TERUGMELDSTATUS)})")
+        for veld in verplicht:
             if not m.get(veld):
-                res.fouten.append(f"terugmelding {m['nummer']}: '{veld}' ontbreekt")
-        if m.get("element") and (uitkomsten.get(m["element"]) or {}).get("soort") != "element":
-            res.waarschuwingen.append(f"terugmelding {m['nummer']}: element '{m['element']}' is (nog) geen element")
+                res.fouten.append(f"{label} {m['nummer']}: '{veld}' ontbreekt")
+        b = m.get("bevinding")
+        if b and not (isinstance(b, str) or (isinstance(b, list) and all(isinstance(a, str) and a for a in b))):
+            res.fouten.append(f"{label} {m['nummer']}: 'bevinding' is een tekst of een lijst alinea's")
+        for element in ([m["element"]] if m.get("element") else []) + list(m.get("elementen") or []):
+            if (uitkomsten.get(element) or {}).get("soort") != "element":
+                res.waarschuwingen.append(f"{label} {m['nummer']}: element '{element}' is (nog) geen element")
     nummers = [m["nummer"] for m in meldingen]
     if len(nummers) != len(set(nummers)):
-        res.fouten.append("terugmeldingen: een nummer komt dubbel voor")
+        res.fouten.append(f"{label}en: een nummer komt dubbel voor")
+    return register
+
+
+def _pa_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> dict | None:
+    """Procesarchitectuur-terugmeldingen: het model mag afwijken van de UPL-indeling, mits teruggemeld (2026-10-05)."""
+    register = _terugmeldingen(ctx, uitkomsten, res, PA_TERUGMELDINGEN, PA_TYPEN, ("bevinding",),
+                               "procesarchitectuur-terugmelding")
+    for m in (register or {}).get("terugmeldingen", []):
+        if not m.get("elementen") and not m.get("beleidsdomein"):
+            res.fouten.append(f"procesarchitectuur-terugmelding {m['nummer']}: noem 'elementen' of 'beleidsdomein'")
     return register
 
 
@@ -347,6 +366,12 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         res.waarschuwingen += signalen.functie_indeling(
             {b: d for b, (_, d) in alle.items()}, elementen,
             [(van, r) for van in elementen for r in alle[van][1].get("relaties", [])], ctx.gemma() if gekoppeld else {})
+    pa_register = _pa_terugmeldingen(ctx, uitkomsten, res)
+    if any(u["paginatype"] in ("product", "dienst") for u in elementen.values()) \
+            and (wiki_root / "gemma" / "gemma_parsed.json").exists():
+        gemeld = [m for m in (pa_register or {}).get("terugmeldingen", []) if m.get("status") != "afgewezen"]
+        res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,
+                                                              ctx.gemma(), gemeld)
     res.fouten += signalen.bronanalyses(wiki_root, onderwerpen) + signalen.modelmappen(wiki_root)
     register = _terugmeldingen(ctx, uitkomsten, res)
     if res.fouten:
@@ -357,13 +382,15 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     for bid, data in nieuw.items():
         beoordeling.schrijf(alle[bid][0], data)
         res.gewijzigd.append(bid)
-    if register is not None:
-        pad = wiki_root / TERUGMELDINGEN
+    for reg, rel in ((register, TERUGMELDINGEN), (pa_register, PA_TERUGMELDINGEN)):
+        if reg is None:
+            continue
+        pad = wiki_root / rel
         kop = "".join(r + "\n" for r in pad.read_text(encoding="utf-8").splitlines() if r.startswith("#"))
-        tekst = kop + beoordeling.dump(register)
+        tekst = kop + beoordeling.dump(reg)
         if tekst != pad.read_text(encoding="utf-8"):
             pad.write_text(tekst, encoding="utf-8", newline="\n")
-            res.gewijzigd.append(str(TERUGMELDINGEN))
+            res.gewijzigd.append(str(rel))
     return res
 
 

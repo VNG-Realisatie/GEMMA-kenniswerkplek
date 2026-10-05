@@ -1,0 +1,242 @@
+begrip: Bijzettingenregister
+onderwerpen:
+- lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Product in de UPL (nr. 70); het register is een wettelijk begrip (Wlb art. 65).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente houdt het register bij als houder van een plaats van bijzetting, en het register is openbaar (Wlb art. 65 lid 1–2).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandig product in de UPL, niet een onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij de lijkbezorging (UPL, Iv3 7.5).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat de gemeente aanbiedt.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: ja
+    onderbouwing: 'Een prestatie die de gemeente als houder aanbiedt: inzage in het openbare register (Wlb art. 65 lid 2).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Inzage in of gegevens uit het register van alle daar bijgezette asbussen (Wlb art. 65).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  afnemer:
+    waarde: ja
+    onderbouwing: Bedrijf (UPL); het register is openbaar, dus ook voor anderen (Wlb art. 65 lid 2).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gerealiseerd_door:
+    waarde: ja
+    onderbouwing: De functie Exploiteren van begraafplaatsen, die het register als houder bijhoudt.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-gemma-2026-10-02
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Geen gebundeld aanbod: één prestatie.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen bredere dienst in deze wiki of in het GEMMA-model.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in de lijkbezorging voor.
+definitie: Inzage in het openbare register van alle daar bijgezette asbussen dat de houder van een plaats van bijzetting bijhoudt.
+beschrijving:
+- De houder van een plaats van bijzetting houdt een register bij van alle daar bijgezette asbussen; het register is openbaar en gaat bij opheffing naar het archief van de gemeente waar de plaats lag (Wet op de lijkbezorging art. 65). Is de gemeente houder, dan biedt zij de inzage aan. Het register zelf is een representatie, zonder pagina; de inhoud staat in het Besluit op de lijkbezorging (art. 10).
+- De UPL noemt alleen bedrijven als afnemer en rekent het product tot de Dienstenwet (UPL).
+afnemer: extern
+domein: Fysieke leefomgeving
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties: []
+besluiten:
+- datum: '2026-10-05'
+  gevolg: verwerkt
+  besluit: 'Dienst met de UPL-naam: inzage in het openbare register, gerealiseerd door Exploiteren van begraafplaatsen (keuze B; een product of dienst uit de UPL valt niet weg). Het register zelf blijft een representatie zonder pagina.'
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-gemma-2026-10-02
+  herkomst: wet
+  pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzettingenregister.md

@@ -116,7 +116,7 @@ Geen GGM-entiteit. Het GGM kent geen entiteit Graf, terwijl Gemeentebegrafenis e
 
 GGM-terugmeldingen:
 
-- [Nummer 3](../../../../analyses/ggm-terugmeldingen.md) (hiaat, open): Graf ontbreekt in het GGM, terwijl Gemeentebegrafenis er wel naar verwijst (attribuut datumRuimingGraf). Als houder van de gemeentelijke begraafplaats geeft de gemeente graven uit, opent en sluit ze en ruimt ze (Wet op de lijkbezorging art. 23, 27, 31; beheersverordening Groningen art. 7, 11-16, 27). Relevante attributen: grafsoort (algemeen, particulier, kinder-, urnengraf, urnennis, partnergraf), ligging (vak, nummer), aantal grafruimtes, datum laatste begraving (ruimtermijn tien jaar), en per graf de begraven lijken en bijgezette urnen met datum (register van begraven lijken, art. 27). Past in een beleidsdomein Begraafplaatsen en crematoria, naast Gemeentebegrafenis.
+- [Nummer 3](../../../../analyses/ggm-terugmeldingen.md) (hiaat, open): **GGM:** Graf ontbreekt, terwijl Gemeentebegrafenis er wel naar verwijst (attribuut datumRuimingGraf). **Bevinding:** als houder van de gemeentelijke begraafplaats geeft de gemeente graven uit, opent en sluit ze en ruimt ze (Wet op de lijkbezorging art. 23, 27, 31; beheersverordening Groningen art. 7, 11-16, 27). Relevante attributen: grafsoort (algemeen, particulier, kinder-, urnengraf, urnennis, partnergraf); ligging (vak, nummer); aantal grafruimtes; datum laatste begraving (ruimtermijn tien jaar); per graf de begraven lijken en bijgezette urnen met datum (register van begraven lijken, art. 27). **Voorstel:** opnemen in een beleidsdomein Begraafplaatsen en crematoria, naast Gemeentebegrafenis.
 
 ### Afstemming met GEMMA
 

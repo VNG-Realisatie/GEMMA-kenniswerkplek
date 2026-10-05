@@ -191,9 +191,10 @@ kenmerken:
     onderbouwing: De openbare versie is van 2010; nieuwere versies staan in de betaalde Kennisbank decentrale regelgeving. De toelichting citeert Wlb art. 28 lid 7 nog met twintig jaar, waar de huidige wet tien jaar zegt. Of het model in deze vorm actueel is, is niet vast te stellen.
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 15 (uitgifte en verlenging), 17 (overschrijving en vervallen), 20 (onderhoud door de gemeente), 24 (ruiming): gedrag in de processen hieronder.'
+    onderbouwing: 'Art. 11 en 15 (uitgifte en verlenging), 17 (overschrijving en vervallen), 19 (vergunning grafbedekking), 20 (onderhoud door de gemeente), 24 (ruiming): gedrag in de processen hieronder en het product Grafuitgifte.'
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2025-vng-upl-producten-en-diensten-extern
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen breder beleidskader in deze wiki.
@@ -274,6 +275,21 @@ relaties:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-vng-wet-op-de-lijkbezorging
   vindplaats: aanhef; VNG inleiding
+- soort: associatie (gericht)
+  naar: grafuitgifte
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 11, 13–15; UPL nr. 165
+- soort: associatie (gericht)
+  naar: verlenen-vergunning-grafbedekking
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: art. 19
 onderwerpen:
 - lijkbezorging
 regelgever: VNG-model
@@ -294,5 +310,6 @@ afgeleid:
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-vng-wet-op-de-lijkbezorging
-  herkomst: beleid
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
   pad: motivatie/beleidskaders/model-beheersverordening-begraafplaatsen.md

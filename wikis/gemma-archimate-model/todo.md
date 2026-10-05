@@ -12,16 +12,22 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 ## Indelingen (analyse 2026-10-04, `analyses/indelingen.md`)
 
 - **Definitie van Ketenpartner**: nu "verantwoordelijkheid van een andere organisatie", terwijl de rol wordt vervuld door personen (Arts als behandelende arts, Officier van justitie; besluit redacteur 2026-10-04). Definitie verbreden naar een andere partij, of de organisatie (openbaar ministerie, zorgaanbieder) als actor nemen; meenemen in het voorstel aan het GEMMA-team over de definitie van de rol Ketenpartner.
-- **Verlengen en overschrijven van het grafrecht**: nu onderdelen van Grafrecht (eigen identiteit nee). Met de criteria van 2026-10-04 mogelijk deelprocessen van Beheren grafrechten (eigen besluit, Wlb art. 28 lid 1–3; Groningen art. 16–20). Beoordelen samen met de UPL-producten.
-- **UPL-producten van lijkbezorging beoordelen**: de 16 producten uit de externe UPL-lijst (bronanalyse `bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md`), met het Besluit op de lijkbezorging (vervoersdocumenten, laissez-passer) en de APV van Groningen (ontheffing asverstrooiing; tegenspraak in de definitie van incidentele asverstrooiing met de beheersverordening). De interne UPL-lijst staat in `sources/` en krijgt een bronanalyse bij het eerste onderwerp met sturende of ondersteunende producten.
+- **Verlengen en overschrijven van het grafrecht**: nu onderdelen van Grafrecht (eigen identiteit nee). Met de criteria van 2026-10-04 mogelijk deelprocessen van Beheren grafrechten (eigen besluit, Wlb art. 28 lid 1–3; Groningen art. 16–20). De UPL kent er geen eigen product voor (beoordeling UPL-producten 2026-10-05).
+- **Interne UPL-lijst**: staat in `sources/` en krijgt een bronanalyse bij het eerste onderwerp met sturende of ondersteunende producten.
 - **Voorstellen aan het GEMMA-team**:
-  - het beleidsdomein *Begraafplaatsen en crematoria* onder taakveld 7;
+  - het beleidsdomein *Begraafplaatsen en crematoria* onder taakveld 7, met de GEMMA-domeinen waaronder het valt (procesarchitectuur-terugmelding 1);
   - generieke gebeurtenissen (aanvraag ontvangen, besluit bekendgemaakt);
   - de afwijkingen van het kennismodel procesarchitectuur: een deelproces levert een dienst, een ketenproces bevat deelprocessen, structurele relaties tussen actoren;
   - het advies om referentiecomponenten te laten aggregeren door een hogere bedrijfsfunctie;
   - de definities van de GEMMA-rollen Ketenpartner, Adviseur en Beslisser, die in GEMMA leeg zijn en die de export met de definitie uit de wiki vult.
 - **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein.
 - **Archi-views** per indeling en elementtype in de export, na de eerste proefimport (herziening van het besluit van 2026-10-02: geen views).
+
+## Na de UPL-producten (2026-10-05)
+
+- **Stoffelijk overschot in lopende tekst**: de zes elementen met *lijk* in de naam zijn hernoemd; in de definitie en beschrijving van ongeveer twintig andere elementen staat nog het losse woord *lijk* (Begraafplaats, Crematorium, Graf, Grafrecht, Gemeentelijke lijkschouwer, Uitvoeren lijkbezorging en andere). Per element voorleggen; letterlijke citaten en wetstermen blijven.
+- **Bediening vanuit een product in `tools/relaties.py`**: de relatietabel kent geen bediening van een product naar een rol (kennismodel regel 596, *Product → bediening → Klant*); Grafuitgifte bedient de Rechthebbende op het graf daardoor alleen via de dienst Graf aanvragen. Toetsen aan de ArchiMate-relatietabel en zo nodig toevoegen.
+- **Procesarchitectuur-terugmeldingen aanvullen**: de afwijkingen van het kennismodel procesarchitectuur (hieronder bij de voorstellen aan het GEMMA-team) en de bevindingen over grondslagen in de UPL (grafuitgifte art. 11 in plaats van art. 13–15 van de model-beheersverordening, grafonderhoud op het beleid van één gemeente) als terugmelding opnemen in `beoordelingen/procesarchitectuur-terugmeldingen.yaml`.
 
 ## Export naar Archi
 

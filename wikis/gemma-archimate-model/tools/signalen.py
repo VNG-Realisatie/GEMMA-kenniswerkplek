@@ -130,14 +130,70 @@ def is_domeinfunctie(data: dict, gemma_data: dict) -> bool:
     return g is not None and g["eigenschappen"].get("GEMMA type") == DOMEINFUNCTIE
 
 
+def beleidsdomein_domeinen(gemma_data: dict) -> dict[str, set[str]]:
+    """Beleidsdomein (naam, kleine letters) → de GEMMA-domeinen die het aggregeren of omvatten (groeperingen in de map
+    *Domeinen*). Een beleidsdomein kan onder meer domeinen vallen (Erfgoed: Publieksdiensten en Fysieke leefomgeving)."""
+    el = gemma_data.get("elementen", {})
+    domeinen = {i for i, e in el.items() if e["type"] == "grouping" and e["map"].endswith("Domeinen")}
+    uit: dict[str, set[str]] = {}
+    for r in gemma_data.get("relaties", {}).values():
+        if r["type"] not in ("aggregation-relationship", "composition-relationship") or r["bron"] not in domeinen:
+            continue
+        doel = el.get(r["doel"])
+        if doel and doel["type"] == "grouping" and doel["eigenschappen"].get("GEMMA type") == "Beleidsdomein":
+            uit.setdefault(doel["naam"].strip().lower(), set()).add(el[r["bron"]]["naam"])
+    return uit
+
+
+def domein_en_beleidsdomein(alle: dict[str, dict], elementen: dict[str, dict], gemma_data: dict,
+                            gemeld: list[dict] = ()) -> list[str]:
+    """Signalen bij een product of dienst waarvan het domein (Functie-indeling naar domein) niet past bij de GEMMA-domeinen
+    van zijn beleidsdomein (Beleidsdomeinindeling): in GEMMA aggregeert een domein de beleidsdomeinen. Een beleidsdomein
+    dat GEMMA niet kent, geeft een signaal als zijn producten en diensten in meer domeinen vallen: het voorstel aan GEMMA
+    moet zeggen onder welk domein het hoort (besluit 2026-10-05). Het model mag afwijken, mits teruggemeld: een
+    procesarchitectuur-terugmelding (`gemeld`) met het element of het beleidsdomein dekt het signaal."""
+    if not gemma_data:
+        return []
+    gemelde_elementen = {e for m in gemeld for e in m.get("elementen") or []}
+    gemelde_bd = {m["beleidsdomein"].strip().lower() for m in gemeld if m.get("beleidsdomein")}
+    bekend = beleidsdomein_domeinen(gemma_data)
+    w = []
+    nieuw: dict[str, dict[str, list[str]]] = {}
+    for bid in sorted(b for b, u in elementen.items() if u["paginatype"] in ("product", "dienst")):
+        bd, domein = alle[bid].get("beleidsdomein"), alle[bid].get("domein")
+        if not bd or not domein:
+            continue
+        if bid in gemelde_elementen or bd.strip().lower() in gemelde_bd:
+            continue
+        domeinen = bekend.get(bd.strip().lower())
+        if domeinen is None:
+            nieuw.setdefault(bd, {}).setdefault(domein, []).append(bid)
+        elif domein not in domeinen:
+            w.append(f"{bid}: domein '{domein}' past niet bij beleidsdomein '{bd}', dat in GEMMA onder "
+                     f"{', '.join(sorted(domeinen))} valt (Beleidsdomeinindeling tegenover Functie-indeling naar domein); "
+                     "herzien of terugmelden (beoordelingen/procesarchitectuur-terugmeldingen.yaml)")
+    for bd, per_domein in sorted(nieuw.items()):
+        if len(per_domein) > 1:
+            delen = "; ".join(f"{d}: {', '.join(ids)}" for d, ids in sorted(per_domein.items()))
+            w.append(f"beleidsdomein '{bd}' (nieuw voor GEMMA): producten en diensten in {len(per_domein)} domeinen "
+                     f"({delen}); leg vast hoe GEMMA het indeelt en meld het terug "
+                     "(beoordelingen/procesarchitectuur-terugmeldingen.yaml)")
+    return w
+
 def functie_indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[tuple[str, dict]],
                      gemma_data: dict) -> list[str]:
     """Signalen bij de Functie-indeling naar domein: elke functie onder domeinniveau wordt geaggregeerd door één
-    bovenliggende functie (een element), in hetzelfde domein en volgens de GEMMA-functieketen; een product of dienst
-    door één functie in hetzelfde domein (besluiten 2026-10-04)."""
+    bovenliggende functie (een element), in hetzelfde domein en volgens de GEMMA-functieketen; een dienst door één
+    functie in hetzelfde domein (besluiten 2026-10-04). Een product hangt via `domein` aan de domeingroepering, want
+    ArchiMate laat een functie geen product aggregeren (besluit 2026-10-05)."""
     w = []
     functies = {b for b, u in elementen.items() if u["paginatype"] == "bedrijfsfunctie"}
-    for bid in sorted(b for b, u in elementen.items() if u["paginatype"] in ("product", "dienst")):
+    for bid in sorted(b for b, u in elementen.items() if u["paginatype"] == "product"):
+        boven = sorted(van for van, r in relaties if r["soort"] == "aggregatie" and r["naar"] == bid and van in functies)
+        if boven:
+            w.append(f"{bid}: product onder een functie ({', '.join(boven)}): een product hangt via `domein` aan de "
+                     "domeingroepering (Functie-indeling naar domein)")
+    for bid in sorted(b for b, u in elementen.items() if u["paginatype"] == "dienst"):
         boven = sorted(van for van, r in relaties if r["soort"] == "aggregatie" and r["naar"] == bid and van in functies)
         if not boven:
             w.append(f"{bid}: hangt onder geen functie: aggregatie vanaf een functie ontbreekt (Functie-indeling naar domein)")

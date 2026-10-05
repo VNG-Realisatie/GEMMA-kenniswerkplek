@@ -66,7 +66,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Bezorgen lijken: de officier van justitie geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (art. 12, 17).'
+    onderbouwing: 'Bezorgen stoffelijk overschot: de officier van justitie geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (art. 12, 17).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   soort_partij:
@@ -200,8 +200,8 @@ kenmerken:
 definitie: Verantwoordelijkheid van een andere organisatie voor haar deel van een ketenproces dat zij met de gemeente uitvoert.
 per_onderwerp:
   lijkbezorging:
-  - 'De officier van justitie is ketenpartner in Bezorgen lijken: hij ontvangt bij een niet-natuurlijke dood het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (Wet op de lijkbezorging art. 10, 12, 17).'
-  - 'De arts is als behandelende arts ketenpartner in Bezorgen lijken: hij schouwt het lijk en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).'
+  - 'De officier van justitie is ketenpartner in Bezorgen stoffelijk overschot: hij ontvangt bij een niet-natuurlijke dood het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (Wet op de lijkbezorging art. 10, 12, 17).'
+  - 'De arts is als behandelende arts ketenpartner in Bezorgen stoffelijk overschot: hij schouwt het lijk en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).'
 doelgroep: ketenpartners
 grondslag: bron
 gemma:
@@ -210,7 +210,7 @@ gemma:
   onderbouwing: 'GEMMA-rol Ketenpartner (procesarchitectuur, actoren en rollen); zelfde begrip, in GEMMA zonder definitie. Nieuw: een definitie.'
 relaties:
 - soort: toewijzing
-  naar: bezorgen-lijken
+  naar: bezorgen-stoffelijk-overschot
   naam: voert zijn deel uit van
   grondslag: bron
   bronnen:
@@ -224,7 +224,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17 lid 1
 - soort: toewijzing
-  naar: schouwen-lijk
+  naar: schouwen-stoffelijk-overschot
   naam: schouwt als behandelende arts
   grondslag: bron
   bronnen:

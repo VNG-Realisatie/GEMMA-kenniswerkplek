@@ -128,9 +128,12 @@ kenmerken:
     onderbouwing: Een groepering, geen deel van een proces.
   omvat_processen:
     waarde: ja
-    onderbouwing: Verlenen verlof tot begraving of crematie, Stellen andere termijn, Opgraven lijk, Verlenen toestemming bijzondere begraafplaats en Verlenen vergunning bijzonder crematorium (art. 11, 17, 29, 40, 41, 53).
+    onderbouwing: Verlenen verlof tot begraving of crematie, Stellen andere termijn, Opgraven stoffelijk overschot, Verlenen toestemming bijzondere begraafplaats, Verlenen vergunning bijzonder crematorium, Verlenen verlof tot ontleding (art. 11, 17, 29, 40, 41, 53, 68), Afgeven laissez-passer (Besluit op de lijkbezorging art. 11), Verlenen vergunning grafbedekking (Groningen art. 22) en Verlenen toestemming asverstrooiing (APV Groningen art. 5:27 lid 3).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2025-groningen-algemene-plaatselijke-verordening
   omvat_levensloop:
     waarde: nee
     onderbouwing: Omvat deelprocessen van verschillende kernobjecten, niet de levensloop van één.
@@ -201,7 +204,7 @@ kenmerken:
     onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het behandelen van aanvragen om een vergunning, verlof of toestemming voor de lijkbezorging en voor begraafplaatsen en crematoria.
 beschrijving:
-- 'Binnen de lijkbezorging verleent de gemeente op aanvraag verloven, vergunningen en toestemmingen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), een andere termijn (art. 17), de vergunning tot opgraving (art. 29), de toestemming voor een bijzondere begraafplaats (art. 40, 41) en de vergunning voor een bijzonder crematorium (art. 53). Het cluster groepeert deze deelprocessen als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.'
+- 'Binnen de lijkbezorging verleent de gemeente op aanvraag verloven, vergunningen en toestemmingen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), een andere termijn (art. 17), de vergunning tot opgraving (art. 29), de toestemming voor een bijzondere begraafplaats (art. 40, 41), de vergunning voor een bijzonder crematorium (art. 53), het verlof tot ontleding (art. 68), het laissez-passer voor lijken (Besluit op de lijkbezorging art. 11), de vergunning grafbedekking (Groningen art. 22) en de toestemming voor asverstrooiing (APV Groningen art. 5:27 lid 3; Groningen art. 21). Het cluster groepeert deze deelprocessen als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.'
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
@@ -227,7 +230,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17
 - soort: aggregatie
-  naar: opgraven-lijk
+  naar: opgraven-stoffelijk-overschot
   naam: omvat
   grondslag: bron
   bronnen:
@@ -247,6 +250,35 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 53
+- soort: aggregatie
+  naar: verlenen-vergunning-grafbedekking
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: Groningen art. 22
+- soort: aggregatie
+  naar: verlenen-toestemming-asverstrooiing
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-groningen-algemene-plaatselijke-verordening
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: APV Groningen art. 5:27 lid 3; Groningen art. 21
+- soort: aggregatie
+  naar: verlenen-verlof-tot-ontleding
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 68
+- soort: aggregatie
+  naar: afgeven-laissez-passer
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  vindplaats: Besluit op de lijkbezorging art. 11
 besluiten:
 - datum: '2026-10-04'
   besluit: Cluster naar soort werk met vijf deelprocessen, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.
@@ -267,6 +299,9 @@ afgeleid:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-vng-gemma-2026-10-02
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2025-groningen-algemene-plaatselijke-verordening
   herkomst: wet
   gemma_generiek:
     gemma_id: id-85fdb525-85a2-40d0-b90c-f4cfd4306ef7

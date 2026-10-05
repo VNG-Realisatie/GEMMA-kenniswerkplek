@@ -143,7 +143,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen lijken: de begraving, crematie of bijzetting zelf (art. 1, 23, 49).'
+    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen stoffelijk overschot: de begraving, crematie of bijzetting zelf (art. 1, 23, 49).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -151,7 +151,7 @@ kenmerken:
     onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen lijken.
+    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
   meer_organisaties:
     waarde: nee
     onderbouwing: De gemeente begraaft of cremeert; de uitvaartondernemer treedt op namens de nabestaanden, als klant (Groningen art. 7 lid 2).
@@ -243,7 +243,7 @@ relaties:
   vindplaats: art. 11
   via: verlof-tot-begraving-of-crematie
 - soort: toegang (bijwerken)
-  naar: lijk
+  naar: stoffelijk-overschot
   naam: bezorgt
   grondslag: bron
   bronnen:
@@ -272,8 +272,12 @@ relaties:
   vindplaats: art. 49
 onderwerpen:
 - lijkbezorging
-kernobject: lijk
+kernobject: stoffelijk-overschot
 afnemer: extern
+besluiten:
+- datum: '2026-10-04'
+  besluit: Bijzetting en verstrooiing van de as gaan naar het nieuwe deelproces Bijzetten of verstrooien van de as, met Urn als subobject van Lijk.
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -292,7 +296,3 @@ afgeleid:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: wet
   pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md
-besluiten:
-- datum: '2026-10-04'
-  besluit: Bijzetting en verstrooiing van de as gaan naar het nieuwe deelproces Bijzetten of verstrooien van de as, met Urn als subobject van Lijk.
-  gevolg: verwerkt

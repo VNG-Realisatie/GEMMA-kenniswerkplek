@@ -7,7 +7,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
     waarde: ja
-    onderbouwing: 'Structurele, wettelijke rol in het ketenproces Bezorgen lijken: ontvangt het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (art. 10, 12, 17).'
+    onderbouwing: 'Structurele, wettelijke rol in het ketenproces Bezorgen stoffelijk overschot: ontvangt het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (art. 10, 12, 17).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
@@ -63,7 +63,7 @@ kenmerken:
     onderbouwing: Een ambtenaar van het openbaar ministerie, geen eigen rechtspersoon.
   vervult_een_rol:
     waarde: ja
-    onderbouwing: Ketenpartner in het ketenproces Bezorgen lijken (art. 10, 12, 17; besluit redacteur 2026-10-04).
+    onderbouwing: Ketenpartner in het ketenproces Bezorgen stoffelijk overschot (art. 10, 12, 17; besluit redacteur 2026-10-04).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   voert_gedrag_uit:

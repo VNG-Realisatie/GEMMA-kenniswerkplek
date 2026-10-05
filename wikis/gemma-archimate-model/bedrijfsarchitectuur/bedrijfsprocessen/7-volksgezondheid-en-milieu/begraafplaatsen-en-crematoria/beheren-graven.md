@@ -46,7 +46,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 - **Procesniveau**: bedrijfsproces.
 - **Procesindeling naar taak, onderdeel van**: [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md).
-- **Procesindeling naar taak, omvat**: [Onderhouden graf](onderhouden-graf.md), [Ruimen graf](ruimen-graf.md).
+- **Procesindeling naar taak, omvat**: [Onderhouden graf](onderhouden-graf.md), [Ruimen graf](ruimen-graf.md), [Verlenen vergunning grafbedekking](verlenen-vergunning-grafbedekking.md).
 - **Kernobject**: [Graf](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md).
 - **Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md).
 - **Afnemer**: extern.
@@ -84,6 +84,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | Beheren graven | omvat *aggregatie* | [Ruimen graf](ruimen-graf.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 31; Groningen art. 27) |
 | Beheren graven | omvat *aggregatie* | [Onderhouden graf](onderhouden-graf.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Groningen art. 23) |
 | Beheren graven | beheert *toegang (bijwerken)* | [Graf](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 23, 27, 31; Groningen art. 11–16) |
+| Beheren graven | omvat *aggregatie* | [Verlenen vergunning grafbedekking](verlenen-vergunning-grafbedekking.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Groningen art. 22) |
 
 #### Inkomend
 

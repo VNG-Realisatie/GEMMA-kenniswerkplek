@@ -199,7 +199,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_pagina).'
 toelichting: 'Representatie van Lijk: Document bij de kist met het nummer en de gegevens van de overledene (art. 8 lid 1; Groningen art. 9 lid 1).'
-genoemd_begrip: Lijk
+genoemd_begrip: Stoffelijk overschot
 onderwerpen:
 - lijkbezorging
 afgeleid:
@@ -210,7 +210,7 @@ afgeleid:
     archimate_type: representation
     voorleggen: false
     data_object: nee
-    genoemd_begrip: Lijk
+    genoemd_begrip: Stoffelijk overschot
     generiek: false
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

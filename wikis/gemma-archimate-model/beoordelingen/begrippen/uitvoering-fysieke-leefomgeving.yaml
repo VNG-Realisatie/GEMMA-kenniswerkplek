@@ -227,6 +227,13 @@ relaties:
   bronnen:
   - 2026-vng-gemma-2026-10-02
   vindplaats: GEMMA-relatie id-6e34e824-ae6b-4999-a141-0ceb1dd36099
+- soort: aggregatie
+  naar: producten-en-dienstenrealisatie-fysieke-leefomgeving
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-vng-gemma-2026-10-02
+  vindplaats: GEMMA-relatie id-abf62f00-46ee-4865-a01e-141b51a507c1
 status: goedgekeurd
 afgeleid:
   uitkomst:

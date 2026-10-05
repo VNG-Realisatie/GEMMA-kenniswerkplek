@@ -55,7 +55,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, omvat**: [Exploitatie fysieke leefomgeving](exploitatie-fysieke-leefomgeving.md).
+- **Functie-indeling naar domein, omvat**: [Exploitatie fysieke leefomgeving](exploitatie-fysieke-leefomgeving.md), [Producten- en dienstenrealisatie fysieke leefomgeving](producten-en-dienstenrealisatie-fysieke-leefomgeving.md).
 - **Domein**: Fysieke leefomgeving.
 
 ### Kenmerken
@@ -84,6 +84,7 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Uitvoering fysieke leefomgeving | omvat *aggregatie* | [Exploitatie fysieke leefomgeving](exploitatie-fysieke-leefomgeving.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-6e34e824-ae6b-4999-a141-0ceb1dd36099) |
+| Uitvoering fysieke leefomgeving | omvat *aggregatie* | [Producten- en dienstenrealisatie fysieke leefomgeving](producten-en-dienstenrealisatie-fysieke-leefomgeving.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-abf62f00-46ee-4865-a01e-141b51a507c1) |
 
 ## Herkomst
 

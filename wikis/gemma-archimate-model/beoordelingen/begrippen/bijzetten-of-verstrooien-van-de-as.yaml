@@ -139,7 +139,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen lijken: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59).'
+    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen stoffelijk overschot: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -147,7 +147,7 @@ kenmerken:
     onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het lijk, binnen Bezorgen lijken.
+    onderbouwing: Eén mutatie in de levensloop van het lijk, binnen Bezorgen stoffelijk overschot.
   meer_organisaties:
     waarde: nee
     onderbouwing: Uitgevoerd door de houder van het crematorium of de plaats van bijzetting; de nabestaande geeft opdracht als klant (art. 62 lid 2).

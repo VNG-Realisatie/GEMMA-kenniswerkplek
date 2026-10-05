@@ -1,9 +1,9 @@
 ---
-id: onderhoud-van-graven
+id: grafonderhoud
 type: dienst
 archimate_type: business-service
 status: goedgekeurd
-naam: Onderhoud van graven
+naam: Grafonderhoud
 onderwerpen:
 - lijkbezorging
 taakveld: 7 Volksgezondheid en Milieu
@@ -15,14 +15,16 @@ match:
 data_object: nee
 afnemer: extern
 domein: Fysieke leefomgeving
+synoniemen:
+- Onderhoud van graven (beleid)
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-retributies
 ---
 
-# Onderhoud van graven
+# Grafonderhoud
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/onderhoud-van-graven.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/grafonderhoud.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
 **Status: goedgekeurd** door de redacteur.
 
@@ -35,6 +37,12 @@ Onderhoud van grafmonumenten en grafbeplanting door de gemeente, tegen betaling 
 ### Beschrijving
 
 Op verzoek van de rechthebbende, of op sommige begraafplaatsen altijd, onderhoudt de gemeente de grafbedekking tegen betaling van een recht uit de heffingsverordening (Groningen art. 23, 24; VNG retributies). Een retributie is een tegenprestatie voor zo'n dienst (VNG retributies).
+
+### Synoniemen
+
+| Synoniem | Context |
+|---|---|
+| Onderhoud van graven | beleid |
 
 ## Plaats in het model
 
@@ -72,15 +80,15 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Onderhoud van graven | bedient *bediening* | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 24 lid 3) |
+| Grafonderhoud | bedient *bediening* | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 24 lid 3) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | omvat *aggregatie* | Onderhoud van graven | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
-| [Heffingsverordening](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) | regelt het recht voor *associatie (gericht)* | Onderhoud van graven | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 24) |
-| [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | realiseert *realisatie* | Onderhoud van graven | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
+| [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | omvat *aggregatie* | Grafonderhoud | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
+| [Heffingsverordening](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) | regelt het recht voor *associatie (gericht)* | Grafonderhoud | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 24) |
+| [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | realiseert *realisatie* | Grafonderhoud | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
 
 ## Herkomst
 
@@ -94,3 +102,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-05: Naam Grafonderhoud, de UPL-naam letterlijk; Onderhoud van graven (beleid) wordt een synoniem.

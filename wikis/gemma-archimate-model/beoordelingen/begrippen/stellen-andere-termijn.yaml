@@ -139,7 +139,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen lijken: wijkt af van de termijn voor begraving of crematie (art. 16, 17).'
+    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen stoffelijk overschot: wijkt af van de termijn voor begraving of crematie (art. 16, 17).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -147,7 +147,7 @@ kenmerken:
     onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het lijk, binnen Bezorgen lijken.
+    onderbouwing: Eén mutatie in de levensloop van het lijk, binnen Bezorgen stoffelijk overschot.
   meer_organisaties:
     waarde: nee
     onderbouwing: De burgemeester beslist; de officier van justitie stemt alleen in bij een termijn binnen 36 uur (art. 17 lid 1).
@@ -224,7 +224,7 @@ beschrijving:
 synoniemen:
 - naam: Andere termijn stellen
   context: wet
-kernobject: lijk
+kernobject: stoffelijk-overschot
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
@@ -242,7 +242,7 @@ relaties:
   vindplaats: art. 17 lid 1
   via: andere-termijn
 - soort: toegang (bijwerken)
-  naar: lijk
+  naar: stoffelijk-overschot
   naam: betreft
   grondslag: bron
   bronnen:

@@ -1,0 +1,283 @@
+begrip: Verlenen vergunning grafbedekking
+onderwerpen:
+- lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Gangbaar: de vergunning grafbedekking in de beheersverordeningen (VNG-model art. 19; Groningen art. 22).'
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het college verleent of weigert de vergunning (Groningen art. 22 lid 1, 4).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, met een eigen besluit.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij de lijkbezorging.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Per aanvraag van de rechthebbende, van aanvraag tot besluit (Groningen art. 22 lid 2–4).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (college) en Rechthebbende op het graf, die de vergunning aanvraagt (Groningen art. 22 lid 1–2).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Legt de vergunning grafbedekking vast en betreft de grafbedekking (Groningen art. 22).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een aanvraag van de rechthebbende van een particulier graf (Groningen art. 22 lid 2).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een schriftelijke vergunning of een weigering (Groningen art. 22 lid 1, 4).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk gedenkteken op een particulier graf (Groningen art. 22 lid 1).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Groningen art. 22: schriftelijke vergunning, nadere regels van het college, weigeringsgronden; VNG-model art. 19.'
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: de dienst heeft de afnemer.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een proces, geen dienst.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan het bedrijfsproces Beheren graven: een mutatie in de grafbedekking op een graf (Groningen art. 22).'
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Omvat geen andere processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Eén mutatie in de grafbedekking, binnen Beheren graven.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Eén bestuursorgaan van de gemeente beslist.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Het college besluit over de vergunning (Groningen art. 22 lid 1, 4; VNG-model art. 19).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Gedenkteken plaatsingsvergunning (UPL nr. 142).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki; het cluster Behandelen vergunningaanvragen lijkbezorging groepeert, het specialiseert niet.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  generiek:
+    waarde: nee
+    onderbouwing: Specifiek voor de lijkbezorging.
+definitie: Het beslissen op een aanvraag om een vergunning voor een gedenkteken of andere grafbedekking op een particulier graf.
+beschrijving:
+- De rechthebbende van een particulier graf vraagt de vergunning aan; het college beslist en kan de vergunning weigeren als niet wordt voldaan aan de nadere regels over de aard en de afmetingen van de grafbedekking (Groningen art. 22; VNG-model art. 19). Beslisser is het college.
+kernobject: grafbedekking
+afnemer: extern
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: toegang (registreren)
+  naar: vergunning
+  naam: verleent
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: Groningen art. 22 lid 1; VNG-model art. 19 lid 1
+  via: vergunning-grafbedekking
+- soort: toegang (bijwerken)
+  naar: grafbedekking
+  naam: betreft
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 22
+- soort: realisatie
+  naar: gedenkteken-plaatsingsvergunning
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: Groningen art. 22; UPL nr. 142
+besluiten:
+- datum: '2026-10-05'
+  gevolg: verwerkt
+  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (analyses/indelingen.md).
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-vergunning-grafbedekking.md

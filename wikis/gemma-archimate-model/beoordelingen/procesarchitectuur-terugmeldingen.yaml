@@ -1,0 +1,31 @@
+# Procesarchitectuur-terugmeldingen: het register. De AI voegt een melding toe zonder nummer; tools/afleiden.py geeft het volgende nummer.
+# tools/render.py maakt hieruit analyses/procesarchitectuur-terugmeldingen.md en de sectie op de elementpagina.
+# Het model mag afwijken van de UPL-indeling, mits de afwijking hier is teruggemeld (besluit redacteur 2026-10-05).
+terugmeldingen:
+- type: indeling
+  beleidsdomein: Begraafplaatsen en crematoria
+  bevinding:
+  - '**UPL:** de producten van de lijkbezorging vallen in drie GEMMA-domeinen (2025-vng-upl-producten-en-diensten-extern):'
+  - '- Fysieke leefomgeving: grafuitgifte, grafonderhoud, gedenkteken plaatsingsvergunning, herbegraven of alsnog cremeren, verlof tot begraven, ontleding stoffelijk overschot toestemming, vervoersdocumenten stoffelijk overschot, crematoriumregister en bijzettingenregister;'
+  - '- Publieksdiensten: begraafplaatsregister en bijzondere begraafplaats toestemming;'
+  - '- Openbare orde en veiligheid: asverstrooiing.'
+  - 'Verwante producten komen zo in verschillende domeinen terecht: het begraafplaatsregister bij Publieksdiensten, het crematorium- en het bijzettingenregister bij Fysieke leefomgeving. In het GEMMA-model valt het verwante beleidsdomein Gemeentebegrafenissen bovendien onder Sociaal domein.'
+  - '**GEMMA:** alle producten en diensten van de lijkbezorging staan bij elkaar in één beleidsdomein, Begraafplaatsen en crematoria, onder taakveld 7 (Iv3 7.5). In de Functie-indeling naar domein houden ze het GEMMA-domein uit de UPL.'
+  nummer: 1
+  status: open
+- type: indeling
+  elementen:
+  - verlof-tot-begraven
+  bevinding:
+  - '**UPL:** verlof tot begraven valt onder Iv3 0.2 (Burgerzaken); de andere producten van de lijkbezorging vallen onder 7.5 (2025-vng-upl-producten-en-diensten-extern).'
+  - '**GEMMA:** 7.5, beleidsdomein Begraafplaatsen en crematoria, naast het deelproces Verlenen verlof tot begraving of crematie in Bezorgen stoffelijk overschot. Het verlof hoort bij de lijkbezorging, ook al geeft de ambtenaar van de burgerlijke stand het af (Wet op de lijkbezorging art. 11).'
+  nummer: 2
+  status: open
+- type: indeling
+  elementen:
+  - ontleding-stoffelijk-overschot-toestemming
+  bevinding:
+  - '**UPL:** ontleding stoffelijk overschot toestemming heeft geen Iv3-taakveld (2025-vng-upl-producten-en-diensten-extern).'
+  - '**GEMMA:** 7.5, beleidsdomein Begraafplaatsen en crematoria: ontleding is een wettelijke wijze van lijkbezorging (Wet op de lijkbezorging art. 67, 68).'
+  nummer: 3
+  status: open

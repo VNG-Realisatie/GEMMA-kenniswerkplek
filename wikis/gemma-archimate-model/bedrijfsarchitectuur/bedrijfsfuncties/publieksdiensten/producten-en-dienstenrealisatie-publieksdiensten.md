@@ -16,6 +16,7 @@ bronnen:
 - 2026-vng-gemma-2026-10-02
 - 2026-rvo-aangifte-en-akte-van-overlijden
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2025-vng-upl-producten-en-diensten-extern
 gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
 gemma_naam: Producten- en dienstenrealisatie publieksdiensten
 gemma_type: business-function
@@ -57,7 +58,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 ### Plaats in de indelingen
 
 - **Functie-indeling naar domein, onderdeel van**: [Uitvoering Publieksdiensten](uitvoering-publieksdiensten.md).
-- **Functie-indeling naar domein, omvat**: [Burgerlijke stand diensten](burgerlijke-stand-diensten.md), [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md).
+- **Functie-indeling naar domein, omvat**: [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md), [Burgerlijke stand diensten](burgerlijke-stand-diensten.md), [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md).
 - **Domein**: Publieksdiensten.
 
 ### Kenmerken
@@ -88,6 +89,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 |---|---|---|---|
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Burgerlijke stand diensten](burgerlijke-stand-diensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-efd77657-f6f9-457c-a9e8-93d6d11647df) |
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc) |
+| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md) | [UPL-lijst extern](../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 45 (GEMMA-domein Publieksdiensten)) |
 
 #### Inkomend
 
@@ -104,6 +106,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
 | [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+| [UPL-lijst extern](../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 

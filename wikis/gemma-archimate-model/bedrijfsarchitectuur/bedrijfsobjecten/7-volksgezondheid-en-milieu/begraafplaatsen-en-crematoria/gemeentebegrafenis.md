@@ -91,7 +91,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Gemeentebegrafenis | betreft *associatie (gericht)* | [Lijk](lijk.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
+| Gemeentebegrafenis | betreft *associatie (gericht)* | [Stoffelijk overschot](stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
 
 #### Inkomend
 
@@ -115,8 +115,8 @@ Match **sterk** met GGM-entiteit *Gemeentebegrafenis* (beleidsdomein Gemeentebeg
 
 GGM-terugmeldingen:
 
-- [Nummer 1](../../../../analyses/ggm-terugmeldingen.md) (definitie, open): Definitie 'Teraardebestelling onder verantwoordelijjkheid van de gemeente' is te smal: de burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, en dat kan ook crematie zijn; alleen een lijk waarvan de identiteit niet kan worden vastgesteld, wordt begraven (Wet op de lijkbezorging art. 21 lid 1 en 6). Voorstel: 'Lijkbezorging waarvoor de gemeente zorgt en betaalt omdat niemand anders daarin voorziet.' Ook tikfout 'verantwoordelijjkheid'.
-- [Nummer 2](../../../../analyses/ggm-terugmeldingen.md) (scope, open): Gemeentebegrafenis staat onder 6 Sociaal Domein. De lijkbezorging (graf, grafrecht, begraafplaats, gemeentebegrafenis) hoort bij Iv3-taakveld 7.5 Begraafplaatsen en crematoria (7 Volksgezondheid en Milieu); deze wiki plaatst het element daar. Overweeg een beleidsdomein Begraafplaatsen en crematoria, waarin ook de hiaten graf en grafrecht passen.
+- [Nummer 1](../../../../analyses/ggm-terugmeldingen.md) (definitie, open): **GGM:** 'Teraardebestelling onder verantwoordelijjkheid van de gemeente'. **Bevinding:** de definitie is te smal. De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, en dat kan ook crematie zijn; alleen een lijk waarvan de identiteit niet kan worden vastgesteld, wordt begraven (Wet op de lijkbezorging art. 21 lid 1 en 6). Ook tikfout 'verantwoordelijjkheid'. **Voorstel:** 'Lijkbezorging waarvoor de gemeente zorgt en betaalt omdat niemand anders daarin voorziet.'
+- [Nummer 2](../../../../analyses/ggm-terugmeldingen.md) (scope, open): **GGM:** Gemeentebegrafenis staat onder 6 Sociaal Domein. **Bevinding:** de lijkbezorging (graf, grafrecht, begraafplaats, gemeentebegrafenis) hoort bij Iv3-taakveld 7.5 Begraafplaatsen en crematoria (7 Volksgezondheid en Milieu); deze wiki plaatst het element daar. **Voorstel:** een beleidsdomein Begraafplaatsen en crematoria, waarin ook de hiaten graf en grafrecht passen.
 
 ### Afstemming met GEMMA
 

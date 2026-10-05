@@ -200,12 +200,12 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: nee
-    onderbouwing: 'Variant van Schouwen lijk: zelfde gegevens en behandeling, geen eigen levenscyclus.'
+    onderbouwing: 'Variant van Schouwen stoffelijk overschot: zelfde gegevens en behandeling, geen eigen levenscyclus.'
   generiek:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-genoemd_begrip: Schouwen lijk
-toelichting: 'Specialisatie zonder pagina van Schouwen lijk: onderzoek naar de doodsoorzaak van een minderjarige (art. 10a).'
+genoemd_begrip: Schouwen stoffelijk overschot
+toelichting: 'Specialisatie zonder pagina van Schouwen stoffelijk overschot: onderzoek naar de doodsoorzaak van een minderjarige (art. 10a).'
 onderwerpen:
 - lijkbezorging
 afgeleid:
@@ -216,7 +216,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    genoemd_begrip: Schouwen lijk
+    genoemd_begrip: Schouwen stoffelijk overschot
     generiek: false
     typeregel: 17
   bronnen:

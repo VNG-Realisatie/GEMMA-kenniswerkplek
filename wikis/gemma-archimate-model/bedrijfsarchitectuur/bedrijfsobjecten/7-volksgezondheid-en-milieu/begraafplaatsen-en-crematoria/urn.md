@@ -56,7 +56,7 @@ Bedrijfsobject, niveau subobject. Uitkomst van de beslistabel: Passief (kern ja,
 ### Plaats in de indelingen
 
 - **Objectniveau**: subobject.
-- **Mutaties door deelprocessen**: [Bijzetten of verstrooien van de as](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md).
+- **Mutaties door deelprocessen**: [Bijzetten of verstrooien van de as](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md), [Verlenen toestemming asverstrooiing](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-asverstrooiing.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
@@ -94,6 +94,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | [Houder van het crematorium](../../../rollen/houder-van-het-crematorium.md) | bergt as in en bewaart *toegang (houder)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 58, 59 lid 1) |
 | [Nabestaande](../../../rollen/nabestaande.md) | draagt zorg voor *toegang (houder)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 60 lid 2) |
 | [Ruimen graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | ruimt door verstrooiing *toegang (bijwerken)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 66) |
+| [Verlenen toestemming asverstrooiing](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-asverstrooiing.md) | betreft *toegang (bijwerken)* | Urn | [APV Groningen](../../../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md) (art. 5:27 lid 3) |
 
 ## Herkomst
 

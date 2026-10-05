@@ -236,6 +236,13 @@ relaties:
   bronnen:
   - 2026-vng-gemma-2026-10-02
   vindplaats: GEMMA-relatie id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc
+- soort: aggregatie
+  naar: begraafplaatsregister
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 45 (GEMMA-domein Publieksdiensten)
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -252,6 +259,7 @@ afgeleid:
   - 2026-vng-gemma-2026-10-02
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
   herkomst: wet
   gemma:
     gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64

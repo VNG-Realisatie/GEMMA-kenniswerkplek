@@ -1,16 +1,14 @@
-begrip: Besmet lijk gemeld
+begrip: Schouwen stoffelijk overschot
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: Wettelijke melding (Wpg art. 21 lid 2).
+    onderbouwing: Wettelijke taak; lijkschouwing is gangbaar.
     bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
     waarde: ja
-    onderbouwing: De GGD geeft de melding door aan de burgemeester (Wpg art. 27 lid 3).
+    onderbouwing: De gemeentelijke lijkschouwer schouwt namens de gemeente (art. 4).
     bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
     waarde: nee
@@ -22,19 +20,16 @@ kenmerken:
     waarde: ja
     onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
     bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
     bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gedrag:
     waarde: ja
-    onderbouwing: Iets wat gebeurt.
+    onderbouwing: Iets wat gedaan wordt.
     bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   handelende_partij:
     waarde: nee
@@ -76,20 +71,19 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   groepeert_processen:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   toestandsverandering:
-    waarde: ja
-    onderbouwing: Gebeurt op één moment en heeft gevolgen.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   aangeboden_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -97,25 +91,35 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   toegewezen_partij:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Gemeentelijke lijkschouwer (art. 3).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gebruikt_objecten:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Raadpleegt het lijk en legt de verklaring van overlijden vast (art. 3, 7).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   aanleiding:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: 'Het overlijden (art. 3: zo spoedig mogelijk na het overlijden).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   benoembaar_resultaat:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Verklaring van overlijden, of een verslag aan de officier van justitie (art. 7, 10).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   komt_herhaald_voor:
     waarde: ja
-    onderbouwing: Bij elk besmet lijk.
+    onderbouwing: Bij elk overlijden waarbij de lijkschouwer schouwt.
     bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   eigen_normering:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: 'Art. 3–10a: wie schouwt, wanneer, en wat bij een niet-natuurlijke dood.'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   stabiel_over_tijd:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -126,38 +130,37 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gedrag:
-    waarde: ja
-    onderbouwing: Start Treffen maatregel bij besmet lijk (Wlb art. 22a).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen stoffelijk overschot: zonder verklaring van overlijden of verklaring van geen bezwaar geen verlof (art. 3, 12).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
+    onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
+    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
   meer_organisaties:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
+    onderbouwing: Uitgevoerd door de gemeentelijke lijkschouwer; het verslag aan de officier van justitie is een overdracht, geen gezamenlijke uitvoering (art. 10).
   eigen_besluit:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
+    onderbouwing: De verklaring van overlijden is een verklaring van een arts, geen besluit van een bestuursorgaan (art. 7).
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
+    onderbouwing: Levert geen product of dienst aan een afnemer; de verklaring van overlijden is invoer voor het verlof (art. 12).
   bedient_gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
+    onderbouwing: 'Niet van toepassing: geen functie.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
+    onderbouwing: 'Niet van toepassing: geen functie.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
+    onderbouwing: Eindigt in een verklaring of een verslag, niet in een benoemde toestandsverandering.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -199,54 +202,59 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen bredere gebeurtenis in deze wiki.
+    onderbouwing: Geen breder proces in deze wiki.
     bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
+    onderbouwing: Specifiek voor de lijkbezorging.
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-definitie: De burgemeester heeft van de GGD de melding ontvangen dat een lijk besmet is met gevaar voor de volksgezondheid.
+definitie: Onderzoek van een stoffelijk overschot door een arts na het overlijden, om vast te stellen of de dood een natuurlijke oorzaak heeft.
 beschrijving:
-- De arts die vaststelt dat een lijk besmet is met een infectieus of giftig agens of stof met ernstig gevaar voor de volksgezondheid, meldt dat onverwijld aan de GGD (Wet publieke gezondheid art. 21 lid 2); de GGD geeft de ontvangst onverwijld door aan de burgemeester van de gemeente waarin het lijk zich bevindt (art. 27 lid 3).
+- Elk stoffelijk overschot wordt zo spoedig mogelijk geschouwd, door de behandelend arts of door een gemeentelijke lijkschouwer (art. 3). Is de dood natuurlijk, dan volgt een verklaring van overlijden (art. 7); anders waarschuwt de lijkschouwer de officier van justitie en de ambtenaar van de burgerlijke stand (art. 10). Bij een minderjarige kan een nader onderzoek naar de doodsoorzaak volgen (art. 10a). De schouwing door de behandelend arts valt buiten het gemeentelijk perspectief.
 synoniemen:
-- naam: Melding besmet lijk
+- naam: Lijkschouwing
   context: wet
+- naam: Schouwen lijk
+  context: wet
+specialisaties:
+- naam: Nader onderzoek
+  omschrijving: Onderzoek naar de doodsoorzaak van een minderjarige, geleid door de gemeentelijke lijkschouwer (art. 10a). Geen eigen pagina.
 relaties:
-- soort: triggering
-  naar: treffen-maatregel-bij-besmet-lijk
-  naam: leidt tot
+- soort: toegang (raadplegen)
+  naar: stoffelijk-overschot
+  naam: schouwt
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-rijk-wet-publieke-gezondheid-wettekst
-  vindplaats: Wlb art. 22a; Wpg art. 27 lid 3
-- soort: associatie (gericht)
-  naar: lijk
-  naam: betreft
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-publieke-gezondheid-wettekst
-  vindplaats: art. 21 lid 2
+  vindplaats: art. 3
 onderwerpen:
 - lijkbezorging
+kernobject: stoffelijk-overschot
+afnemer: extern
+besluiten:
+- datum: '2026-10-05'
+  besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 26
-    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
-    paginatype: gebeurtenis
-    archimate_type: business-event
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
     voorleggen: false
     data_object: nee
+    procesniveau: deelproces
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-rijk-wet-publieke-gezondheid-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet
-  pad: bedrijfsarchitectuur/gebeurtenissen/besmet-lijk-gemeld.md
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-stoffelijk-overschot.md

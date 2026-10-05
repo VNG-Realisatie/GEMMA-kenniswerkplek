@@ -73,7 +73,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Verlenen grafrecht (vraagt aan, Groningen art. 16), Opgraven lijk (vraagt aan, art. 28) en Onderhouden graf (verzoekt, art. 23).
+    onderbouwing: Toegewezen aan Verlenen grafrecht (vraagt aan, Groningen art. 16), Opgraven stoffelijk overschot (vraagt aan, art. 28), Onderhouden graf (verzoekt, art. 23) en Verlenen vergunning grafbedekking (vraagt aan, art. 22).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -242,7 +242,7 @@ relaties:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   vindplaats: Groningen art. 16; VNG-model art. 15
 - soort: toewijzing
-  naar: opgraven-lijk
+  naar: opgraven-stoffelijk-overschot
   naam: vraagt aan
   grondslag: bron
   bronnen:
@@ -286,6 +286,13 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   vindplaats: Groningen art. 9 lid 2; VNG-model art. 9 lid 2
+- soort: toewijzing
+  naar: verlenen-vergunning-grafbedekking
+  naam: vraagt aan
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 22 lid 2
 onderwerpen:
 - lijkbezorging
 doelgroep: inwoners en ondernemers

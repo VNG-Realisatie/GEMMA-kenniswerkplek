@@ -53,7 +53,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 ### Plaats in de indelingen
 
 - **Procesniveau**: bedrijfsproces.
-- **Procesindeling naar taak, onderdeel van**: [Bezorgen lijken](bezorgen-lijken.md), [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md).
+- **Procesindeling naar taak, onderdeel van**: [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md), [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md).
 - **Kernobject**: [Gemeentebegrafenis](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
@@ -85,7 +85,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Verzorgen gemeentebegrafenis | betreft *toegang (raadplegen)* | [Lijk](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
+| Verzorgen gemeentebegrafenis | betreft *toegang (raadplegen)* | [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
 | Verzorgen gemeentebegrafenis | legt vast en handelt af *toegang (bijwerken)* | [Gemeentebegrafenis](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
 
 #### Inkomend
@@ -93,7 +93,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Beslisser](../../../rollen/beslisser.md) | draagt zorg voor *toewijzing* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21 lid 1) |
-| [Bezorgen lijken](bezorgen-lijken.md) | omvat *aggregatie* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
+| [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md) | omvat *aggregatie* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
 | [Kostendrager](../../../rollen/kostendrager.md) | draagt de kosten van *toewijzing* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22) |
 | [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md) | omvat *aggregatie* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 20–22) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |

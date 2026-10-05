@@ -133,7 +133,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_processen:
     waarde: ja
-    onderbouwing: 'Per kernobject één proces: Bezorgen lijken (art. 1–22a), Verzorgen gemeentebegrafenis (art. 20–22), Beheren grafrechten (art. 28), Beheren graven (art. 23, 27, 31), Beheren begraafplaatsen (art. 33–47) en Beheren crematoria (art. 50–56).'
+    onderbouwing: 'Per kernobject één proces: Bezorgen stoffelijk overschot (art. 1–22a), Verzorgen gemeentebegrafenis (art. 20–22), Beheren grafrechten (art. 28), Beheren graven (art. 23, 27, 31), Beheren begraafplaatsen (art. 33–47) en Beheren crematoria (art. 50–56).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_levensloop:
@@ -141,7 +141,7 @@ kenmerken:
     onderbouwing: Omvat de processen van drie kernobjecten, niet de levensloop van één.
   meer_organisaties:
     waarde: nee
-    onderbouwing: De taak is van de gemeente; de ketenpartners horen bij het ketenproces Bezorgen lijken.
+    onderbouwing: De taak is van de gemeente; de ketenpartners horen bij het ketenproces Bezorgen stoffelijk overschot.
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
@@ -222,7 +222,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen taak voor de lijkbezorging. De partiële match met de functie Exploiteren van begraafplaatsen vervalt; die functie is een eigen element dat de processen bedient (besluit redacteur 2026-10-04).
 relaties:
 - soort: aggregatie
-  naar: bezorgen-lijken
+  naar: bezorgen-stoffelijk-overschot
   naam: omvat
   grondslag: bron
   bronnen:

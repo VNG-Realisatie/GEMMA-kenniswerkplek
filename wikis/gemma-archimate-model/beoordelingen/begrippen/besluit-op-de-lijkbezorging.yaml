@@ -1,0 +1,262 @@
+begrip: Besluit op de lijkbezorging
+onderwerpen:
+- lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare naam van de AMvB bij de Wet op de lijkbezorging; de UPL noemt haar als grondslag (UPL nr. 445).
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: 'Geeft de burgemeester taken: het laissez-passer voor lijken afgeven en beslissen op een verlof tot ontleding (art. 11, 17).'
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij de lijkbezorging.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  regeling_als_geheel:
+    waarde: ja
+    onderbouwing: Een concreet benoemde algemene maatregel van bestuur als geheel (BWBR0009080).
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  afspraak:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  landelijk:
+    waarde: ja
+    onderbouwing: 'Rijksregelgeving: een algemene maatregel van bestuur.'
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  in_werking:
+    waarde: ja
+    onderbouwing: Geldend recht.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  is_grondslag_voor:
+    waarde: ja
+    onderbouwing: 'Art. 11 (laissez-passer voor lijken) en art. 17 (beslistermijn verlof tot ontleding): gedrag in Afgeven laissez-passer en Verlenen verlof tot ontleding.'
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder beleidskader in deze wiki; het besluit werkt de Wet op de lijkbezorging uit.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Specifiek voor de lijkbezorging.
+definitie: Algemene maatregel van bestuur die de Wet op de lijkbezorging uitwerkt, onder meer voor het vervoer van een stoffelijk overschot naar en uit het buitenland.
+beschrijving:
+- Het Besluit op de lijkbezorging (BWBR0009080) regelt de modellen van de verklaring van overlijden, de eisen aan kist, graf en grafkelder, de inhoud van de registers van crematorium en plaats van bijzetting en het vervoer naar en uit het buitenland (art. 2–11). Voor de gemeente gaat het vooral om het laissez-passer voor lijken (art. 11) en de beslistermijn voor het verlof tot ontleding (art. 17).
+regelgever: rijk
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: regelgeving
+grondslag_toelichting:
+- Het besluit zelf (2026-rijk-besluit-op-de-lijkbezorging-wettekst).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: associatie (gericht)
+  naar: afgeven-laissez-passer
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  vindplaats: art. 11
+- soort: associatie (gericht)
+  naar: verlenen-verlof-tot-ontleding
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  vindplaats: art. 17
+- soort: associatie (gericht)
+  naar: wet-op-de-lijkbezorging
+  naam: werkt uit
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  vindplaats: aanhef
+besluiten:
+- datum: '2026-10-05'
+  besluit: 'Opnemen als beleidskader: grondslag van Afgeven laissez-passer (art. 11) en Verlenen verlof tot ontleding (art. 17); werkt de Wet op de lijkbezorging uit.'
+  gevolg: opnemen
+  redenen:
+  - 'grondslag regelgeving: altijd voorleggen'
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'grondslag regelgeving: altijd voorleggen'
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  pad: motivatie/beleidskaders/besluit-op-de-lijkbezorging.md

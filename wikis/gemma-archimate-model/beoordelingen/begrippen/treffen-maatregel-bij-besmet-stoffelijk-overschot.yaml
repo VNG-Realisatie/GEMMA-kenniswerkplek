@@ -1,4 +1,4 @@
-begrip: Treffen maatregel bij besmet lijk
+begrip: Treffen maatregel bij besmet stoffelijk overschot
 kenmerken:
   herkenbaar:
     waarde: ja
@@ -141,7 +141,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen lijken: een maatregel bij een besmet lijk (art. 22a).'
+    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen stoffelijk overschot: een maatregel bij een besmet lijk (art. 22a).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -149,7 +149,7 @@ kenmerken:
     onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen lijken.
+    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
   meer_organisaties:
     waarde: nee
     onderbouwing: De burgemeester treft de maatregel; de GGD adviseert alleen (art. 22a).
@@ -223,9 +223,9 @@ grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-definitie: Het nemen van maatregelen om gevaar voor de volksgezondheid door een besmet lijk af te wenden.
+definitie: Het nemen van maatregelen om gevaar voor de volksgezondheid door een besmet stoffelijk overschot af te wenden.
 beschrijving:
-- Is een lijk besmet met een infectieus of giftig agens of stof, of bestaat daarvan een gegrond vermoeden, waardoor een ernstig gevaar voor de volksgezondheid kan ontstaan, dan kan de burgemeester maatregelen treffen om dit gevaar af te wenden, na advies van de GGD (Wet op de lijkbezorging art. 22a). Beslisser is de burgemeester. De melding komt van een arts via de GGD (Wet publieke gezondheid art. 21 lid 2, 27 lid 3). De maatregel zelf is een beschikking.
+- Is een stoffelijk overschot besmet met een infectieus of giftig agens of stof, of bestaat daarvan een gegrond vermoeden, waardoor een ernstig gevaar voor de volksgezondheid kan ontstaan, dan kan de burgemeester maatregelen treffen om dit gevaar af te wenden, na advies van de GGD (Wet op de lijkbezorging art. 22a). Beslisser is de burgemeester. De melding komt van een arts via de GGD (Wet publieke gezondheid art. 21 lid 2, 27 lid 3). De maatregel zelf is een beschikking.
 relaties:
 - soort: toegang (registreren)
   naar: beschikking
@@ -236,7 +236,7 @@ relaties:
   vindplaats: art. 22a
   via: maatregel-bij-besmet-lijk
 - soort: toegang (raadplegen)
-  naar: lijk
+  naar: stoffelijk-overschot
   naam: betreft
   grondslag: bron
   bronnen:
@@ -244,7 +244,7 @@ relaties:
   vindplaats: art. 22a
 onderwerpen:
 - lijkbezorging
-kernobject: lijk
+kernobject: stoffelijk-overschot
 afnemer: extern
 gemma_generiek:
   id: id-729e05ea-f9f7-4583-a645-ec4e573b74ce
@@ -253,6 +253,12 @@ besluiten:
 - datum: '2026-10-04'
   besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
   gevolg: verwerkt
+- datum: '2026-10-05'
+  besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
+  gevolg: verwerkt
+synoniemen:
+- naam: Treffen maatregel bij besmet lijk
+  context: wet
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -279,4 +285,4 @@ afgeleid:
     gemma_eigenschappen:
       GEMMA type: Bedrijfsproces
       Object ID: 729e05ea-f9f7-4583-a645-ec4e573b74ce
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-lijk.md
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-stoffelijk-overschot.md

@@ -73,11 +73,13 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Verlenen grafrecht en Vervallen verklaren grafrecht (college), Opgraven lijk, Verzorgen gemeentebegrafenis en Treffen maatregel bij besmet lijk (burgemeester) (Wlb art. 21, 22a, 29; Groningen art. 16, 20).
+    onderbouwing: Toegewezen aan Verlenen grafrecht, Vervallen verklaren grafrecht, Verlenen vergunning grafbedekking en Verlenen toestemming asverstrooiing (college), Opgraven stoffelijk overschot, Verzorgen gemeentebegrafenis, Treffen maatregel bij besmet stoffelijk overschot, Verlenen verlof tot ontleding en Afgeven laissez-passer (burgemeester) (Wlb art. 21, 22a, 29, 68; Groningen art. 16, 20, 22; APV Groningen art. 5:27; Besluit op de lijkbezorging art. 11).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2024-rijk-gemeentewet-wettekst
+    - 2025-groningen-algemene-plaatselijke-verordening
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   soort_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een rol, geen partij.'
@@ -236,7 +238,7 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 18 lid 4, 20 lid 2
 - soort: toewijzing
-  naar: opgraven-lijk
+  naar: opgraven-stoffelijk-overschot
   naam: verleent vergunning voor
   grondslag: bron
   bronnen:
@@ -250,7 +252,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21 lid 1
 - soort: toewijzing
-  naar: treffen-maatregel-bij-besmet-lijk
+  naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
   naam: treft
   grondslag: bron
   bronnen:
@@ -284,6 +286,34 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17 lid 1
+- soort: toewijzing
+  naar: verlenen-vergunning-grafbedekking
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 22 lid 1
+- soort: toewijzing
+  naar: verlenen-toestemming-asverstrooiing
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2025-groningen-algemene-plaatselijke-verordening
+  vindplaats: art. 5:27 lid 3
+- soort: toewijzing
+  naar: verlenen-verlof-tot-ontleding
+  naam: geeft verlof voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 68 lid 1
+- soort: toewijzing
+  naar: afgeven-laissez-passer
+  naam: geeft af
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  vindplaats: art. 11 lid 1
 onderwerpen:
 - lijkbezorging
 doelgroep: gemeente
@@ -303,6 +333,8 @@ afgeleid:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2024-rijk-gemeentewet-wettekst
+  - 2025-groningen-algemene-plaatselijke-verordening
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   herkomst: wet
   gemma:
     gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e

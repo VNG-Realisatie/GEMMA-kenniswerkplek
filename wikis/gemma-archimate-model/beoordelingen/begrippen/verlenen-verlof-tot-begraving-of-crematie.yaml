@@ -141,7 +141,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen lijken: zonder verlof geen begraving of crematie (art. 11).'
+    onderbouwing: 'Draagt bij aan het ketenproces Bezorgen stoffelijk overschot: zonder verlof geen begraving of crematie (art. 11).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -149,7 +149,7 @@ kenmerken:
     onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen lijken.
+    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
   meer_organisaties:
     waarde: nee
     onderbouwing: De officier van justitie levert bij een niet-natuurlijke dood de verklaring van geen bezwaar aan, maar voert het verlenen niet mee uit (art. 12).
@@ -160,10 +160,11 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   levert_aanbod:
     waarde: ja
-    onderbouwing: Levert het verlof tot begraven, verlof tot cremeren of verlof tot ontleding, dat de gemeente na aangifte van overlijden afgeeft (RVO; art. 11).
+    onderbouwing: 'Realiseert de dienst Verlof tot begraven (UPL nr. 438): het verlof tot begraving of crematie dat de gemeente na aangifte van overlijden afgeeft (RVO; art. 11).'
     bronnen:
     - 2026-rvo-aangifte-en-akte-van-overlijden
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -245,9 +246,17 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 11
   via: verlof-tot-begraving-of-crematie
+- soort: realisatie
+  naar: verlof-tot-begraven
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: Wlb art. 11; UPL nr. 438
 onderwerpen:
 - lijkbezorging
-kernobject: lijk
+kernobject: stoffelijk-overschot
 afnemer: extern
 status: goedgekeurd
 afgeleid:
@@ -265,5 +274,6 @@ afgeleid:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2025-vng-upl-producten-en-diensten-extern
   herkomst: wet
   pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-begraving-of-crematie.md

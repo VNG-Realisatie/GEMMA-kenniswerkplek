@@ -134,7 +134,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Bezorgen lijken (kennismodel: een ketenproces bevat bedrijfsprocessen), geen deelproces.'
+    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Bezorgen stoffelijk overschot (kennismodel: een ketenproces bevat bedrijfsprocessen), geen deelproces.'
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.
@@ -223,7 +223,7 @@ synoniemen:
   context: wet
 relaties:
 - soort: toegang (raadplegen)
-  naar: lijk
+  naar: stoffelijk-overschot
   naam: betreft
   grondslag: bron
   bronnen:

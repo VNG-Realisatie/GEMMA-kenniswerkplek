@@ -392,6 +392,18 @@ def test_dienst_hangt_onder_haar_functie_en_niet_onder_de_domeingroepering(tmp_p
     assert any("Losse dienst: geen plaats in de Functie-indeling naar domein" in o for o in uit.overgeslagen)
 
 
+
+def test_product_hangt_aan_de_domeingroepering(tmp_path):
+    # ArchiMate laat een functie geen product aggregeren: het product hangt via domein aan de groepering (2026-10-05)
+    begrippen = _indeling_begrippen()
+    product = _begrip("Grafuitgifte", "product", status="review", domein="Fysieke leefomgeving", afnemer="extern")
+    product["afgeleid"]["uitkomst"]["paginatype"] = "product"
+    begrippen["grafuitgifte"] = product
+    uit, root = _export_indeling(tmp_path, begrippen)
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "grafuitgifte"))
+    assert _props(agg)["wiki-gemma-model indeling"] == "Functie-indeling naar domein"
+    assert not any("Grafuitgifte" in o for o in uit.overgeslagen)
+
 def test_element_zonder_plaats_in_een_indeling_wordt_gemeld(tmp_path):
     uit, _ = _export_indeling(tmp_path)
     # alleen de actor met een onbekende doelgroep staat nergens

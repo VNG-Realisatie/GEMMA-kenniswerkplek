@@ -127,7 +127,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gedrag:
     waarde: ja
-    onderbouwing: Start het ketenproces Bezorgen lijken, met Schouwen lijk (art. 3) en de termijn voor de lijkbezorging (art. 16).
+    onderbouwing: Start het ketenproces Bezorgen stoffelijk overschot, met Schouwen stoffelijk overschot (art. 3) en de termijn voor de lijkbezorging (art. 16).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bijdrage_aan_groter_proces:
@@ -216,7 +216,7 @@ per_onderwerp:
   - 'Het overlijden start de schouwing van het lijk (Wet op de lijkbezorging art. 3) en de termijn waarbinnen de lijkbezorging moet plaatsvinden: niet eerder dan 36 uur en uiterlijk op de zesde werkdag (art. 16).'
 relaties:
 - soort: triggering
-  naar: schouwen-lijk
+  naar: schouwen-stoffelijk-overschot
   naam: leidt tot
   grondslag: bron
   bronnen:
@@ -230,7 +230,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 16
 - soort: triggering
-  naar: bezorgen-lijken
+  naar: bezorgen-stoffelijk-overschot
   naam: start
   grondslag: bron
   bronnen:

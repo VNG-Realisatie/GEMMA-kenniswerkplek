@@ -169,7 +169,7 @@ kenmerken:
     onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'De deelprocessen leveren het aanbod (Onderhouden graf: Onderhoud van graven).'
+    onderbouwing: 'De deelprocessen leveren het aanbod (Onderhouden graf: Grafonderhoud).'
   bedient_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -262,6 +262,13 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 23, 27, 31; Groningen art. 11–16
+- soort: aggregatie
+  naar: verlenen-vergunning-grafbedekking
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: Groningen art. 22
 status: goedgekeurd
 afgeleid:
   uitkomst:

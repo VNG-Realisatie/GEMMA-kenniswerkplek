@@ -73,11 +73,12 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan Uitvoeren lijkbezorging: geeft opdracht tot bijzetting of verstrooiing (art. 62 lid 2, 66a) en kan werkzaamheden bij de begraving zelf verrichten (Groningen art. 7 lid 4).'
+    onderbouwing: 'Toegewezen aan Uitvoeren lijkbezorging: geeft opdracht tot bijzetting of verstrooiing (art. 62 lid 2, 66a) en kan werkzaamheden bij de begraving zelf verrichten (Groningen art. 7 lid 4); en aan Verlenen toestemming asverstrooiing: verzoekt om ontheffing (APV Groningen art. 5:27 lid 3).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2025-groningen-algemene-plaatselijke-verordening
   soort_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een rol, geen partij.'
@@ -230,6 +231,13 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 60 lid 2
+- soort: toewijzing
+  naar: verlenen-toestemming-asverstrooiing
+  naam: verzoekt om
+  grondslag: bron
+  bronnen:
+  - 2025-groningen-algemene-plaatselijke-verordening
+  vindplaats: art. 5:27 lid 3
 onderwerpen:
 - lijkbezorging
 doelgroep: inwoners en ondernemers
@@ -249,5 +257,6 @@ afgeleid:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2025-groningen-algemene-plaatselijke-verordening
   herkomst: wet
   pad: bedrijfsarchitectuur/rollen/nabestaande.md

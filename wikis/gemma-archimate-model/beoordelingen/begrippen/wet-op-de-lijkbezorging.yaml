@@ -221,7 +221,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 relaties:
 - soort: associatie (gericht)
-  naar: schouwen-lijk
+  naar: schouwen-stoffelijk-overschot
   naam: is grondslag voor
   grondslag: bron
   bronnen:
@@ -242,7 +242,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21, 22
 - soort: associatie (gericht)
-  naar: treffen-maatregel-bij-besmet-lijk
+  naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
   naam: is grondslag voor
   grondslag: bron
   bronnen:
@@ -263,7 +263,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 28 lid 4–7
 - soort: associatie (gericht)
-  naar: opgraven-lijk
+  naar: opgraven-stoffelijk-overschot
   naam: is grondslag voor
   grondslag: bron
   bronnen:
@@ -311,6 +311,13 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17
+- soort: associatie (gericht)
+  naar: verlenen-verlof-tot-ontleding
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 67, 68
 onderwerpen:
 - lijkbezorging
 regelgever: rijk

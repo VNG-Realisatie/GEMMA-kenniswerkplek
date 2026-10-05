@@ -2,7 +2,7 @@
 id: besluiten-redacteur
 type: analyse
 titel: Besluiten van de redacteur
-bijgewerkt: '2026-10-04'
+bijgewerkt: '2026-10-05'
 ---
 
 # Besluiten van de redacteur
@@ -63,6 +63,14 @@ Besluiten over de werkwijze en de criteria staan bij de analyse waar ze bij hore
 | 2026-10-04 | Indelingsvelden | lijkbezorging | Doelgroep, domein, afnemer en regelgever zoals voorgesteld: onder meer de houder-rollen en de gemeentelijke lijkschouwer *gemeente*, Kerkgenootschap en Adviseur *ketenpartners*, Uitvaartondernemer *inwoners en ondernemers*, Uitvaart vervroegen of uitstellen *Publieksdiensten*, alle processen en diensten *extern*. |
 | 2026-10-04 | Arts (was: Behandelende arts) | lijkbezorging | Actor Arts, met synoniem Behandelende arts (wet): behandelend is de hoedanigheid. Vervult Ketenpartner als behandelende arts, op grond van de wettelijke overlegplicht (Wlb art. 10a lid 1) en meldplicht (art. 7 lid 2 en 6) met de gemeentelijke lijkschouwer, zoals de Officier van justitie, en Gemeentelijke lijkschouwer als forensisch arts (art. 4, 5). Ketenpartner is ook toegewezen aan Schouwen lijk (art. 3). Geen directe relatie *behandelt*: de medische behandeling is de interne zaak van de ketenpartner en de overledene is geen element. Herziet de uitkomst buiten scope; het voorbeeld in de beslistabel is aangepast. |
 | 2026-10-04 | Gedeputeerde staten | lijkbezorging | Buiten scope: beroep, ontheffing en geschilbeslechting per geval en op verzoek (Wlb art. 33, 36, 40, 42, 45, 55, 64), geen structurele samenwerking met de gemeente. Beroepsinstanties blijven buiten het model; genoemd in de beschrijving van de processen. |
+| 2026-10-05 | UPL-producten van lijkbezorging | lijkbezorging | Toets per UPL-product volgens de GEMMA-definities: een product als het een dienst met een afspraak bundelt (Grafuitgifte: Graf aanvragen en Grafrecht), anders een dienst die een deelproces realiseert. Het tarief grafrechten is een specialisatie van Heffing; overlijdensaangifte, overlijdensakte en doodgeboren kind aangifte horen bij het onderwerp burgerlijke stand. Nieuw: product Grafuitgifte, zeven diensten en vier deelprocessen (Verlenen vergunning grafbedekking, Verlenen toestemming asverstrooiing, Verlenen verlof tot ontleding, Afgeven laissez-passer). |
+| 2026-10-05 | Naam van een UPL-product | (alle) | Een product of dienst uit de UPL krijgt de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt (regel Naamvorm). Onderhoud van graven wordt Grafonderhoud. |
+| 2026-10-05 | Stoffelijk overschot (was: Lijk) | lijkbezorging | De term van de UPL: Lijk wordt Stoffelijk overschot, met Lijk als synoniem (wet). Hernoemd: Bezorgen stoffelijk overschot, Opgraven stoffelijk overschot, Schouwen stoffelijk overschot, Treffen maatregel bij besmet stoffelijk overschot en Besmet stoffelijk overschot gemeld. Niet hernoemd: de vaste termen lijkbezorging en gemeentelijke lijkschouwer, en wetstermen bij begrippen zonder pagina (Register van begraven lijken). |
+| 2026-10-05 | Asverstrooiing | lijkbezorging | Eén dienst voor de ontheffing buiten de begraafplaats (APV) en de toestemming op de begraafplaats (beheersverordening art. 21); het besluit is de specialisatie Toestemming asverstrooiing van Vergunning, het verstrooien zelf blijft Incidentele asverstrooiing bij Bijzetten of verstrooien van de as. |
+| 2026-10-05 | Besluit op de lijkbezorging | lijkbezorging | Opnemen als beleidskader: grondslag van Afgeven laissez-passer (art. 11) en Verlenen verlof tot ontleding (art. 17); werkt de Wet op de lijkbezorging uit. |
+| 2026-10-05 | Begraafplaatsregister, Crematoriumregister, Bijzettingenregister | lijkbezorging | Drie diensten met de UPL-naam: inzage in het openbare register (Wlb art. 27, 50, 65 lid 2), gerealiseerd door Exploiteren van begraafplaatsen; een product of dienst uit de UPL valt niet weg. Het register zelf blijft een representatie zonder pagina. |
+| 2026-10-05 | Export na akkoord | (alle) | Elk AKKOORD levert meteen een nieuwe export naar Archi op: na `llmwiki promote apply` volgen `tools/archimate_export.py --check` en de export, en de export gaat mee in de commit (stap 9 van gemma-archimate-model-update). Importeren in GEMMA blijft aan de redacteur. |
+| 2026-10-05 | Procesarchitectuur-terugmeldingen | (alle) | Een register van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel), naast de GGM-terugmeldingen. Het model mag afwijken van de UPL-indeling, mits teruggemeld. Eerste meldingen: de domeinen van het beleidsdomein Begraafplaatsen en crematoria, en het taakveld van verlof tot begraven en van ontleding stoffelijk overschot toestemming. |
 
 ## Open punten uit eerdere besluiten
 

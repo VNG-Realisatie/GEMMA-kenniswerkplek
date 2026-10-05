@@ -44,7 +44,7 @@ Bedrijfsproces, niveau taak. Uitkomst van de beslistabel: Gedrag, *groepeert pro
 ### Plaats in de indelingen
 
 - **Procesniveau**: taak.
-- **Procesindeling naar taak, omvat**: [Beheren begraafplaatsen](beheren-begraafplaatsen.md), [Beheren crematoria](beheren-crematoria.md), [Beheren grafrechten](beheren-grafrechten.md), [Beheren graven](beheren-graven.md), [Bezorgen lijken](bezorgen-lijken.md), [Verzorgen gemeentebegrafenis](verzorgen-gemeentebegrafenis.md).
+- **Procesindeling naar taak, omvat**: [Beheren begraafplaatsen](beheren-begraafplaatsen.md), [Beheren crematoria](beheren-crematoria.md), [Beheren grafrechten](beheren-grafrechten.md), [Beheren graven](beheren-graven.md), [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md), [Verzorgen gemeentebegrafenis](verzorgen-gemeentebegrafenis.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
@@ -61,7 +61,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **groepeert processen**: Is het een groepering van processen rond één taak of één soort werk, die niet per geval wordt doorlopen? | Ja, groepeert de processen rond de gemeentelijke taak lijkbezorging en wordt niet per geval doorlopen (besluit redacteur 2026-10-04). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, de rollen Houder van de begraafplaats, Houder van het crematorium en Houder van een plaats van bijzetting, die de gemeente vervult (art. 33, 37, 52, 63). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, raadpleegt en werkt bij: graf, grafrecht, begraafplaats, lijk, urn (art. 23, 27, 28). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **omvat processen**: Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? | Ja, per kernobject één proces: Bezorgen lijken (art. 1–22a), Verzorgen gemeentebegrafenis (art. 20–22), Beheren grafrechten (art. 28), Beheren graven (art. 23, 27, 31), Beheren begraafplaatsen (art. 33–47) en Beheren crematoria (art. 50–56). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **omvat processen**: Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? | Ja, per kernobject één proces: Bezorgen stoffelijk overschot (art. 1–22a), Verzorgen gemeentebegrafenis (art. 20–22), Beheren grafrechten (art. 28), Beheren graven (art. 23, 27, 31), Beheren begraafplaatsen (art. 33–47) en Beheren crematoria (art. 50–56). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
@@ -70,7 +70,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Verzorgen lijkbezorging | omvat *aggregatie* | [Bezorgen lijken](bezorgen-lijken.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1–22a) |
+| Verzorgen lijkbezorging | omvat *aggregatie* | [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1–22a) |
 | Verzorgen lijkbezorging | omvat *aggregatie* | [Beheren grafrechten](beheren-grafrechten.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28) |
 | Verzorgen lijkbezorging | omvat *aggregatie* | [Beheren graven](beheren-graven.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23, 27, 31) |
 | Verzorgen lijkbezorging | omvat *aggregatie* | [Beheren begraafplaatsen](beheren-begraafplaatsen.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 33–47) |

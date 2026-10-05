@@ -1,0 +1,220 @@
+begrip: Laissez-passer voor lijken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wettelijk begrip (Besluit op de lijkbezorging art. 11); in de UPL vervoersdocumenten stoffelijk overschot.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Afgegeven door de burgemeester (Besluit op de lijkbezorging art. 11 lid 1).
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij de lijkbezorging.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: nee
+    onderbouwing: Een ding, geen gedrag.
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elk exemplaar apart.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Zoals elk(e) vergunning.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: Door de gemeente afgegeven in Afgeven laissez-passer.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: nee
+    onderbouwing: 'Variant van Vergunning: zelfde gegevens en behandeling, geen eigen levenscyclus.'
+  generiek:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
+genoemd_begrip: Vergunning
+toelichting: 'Specialisatie zonder pagina van Vergunning: het document van de burgemeester waarmee een stoffelijk overschot ongehinderd naar een verdragsstaat van de Overeenkomst van Straatsburg wordt vervoerd (Besluit op de lijkbezorging art. 11 lid 1).'
+onderwerpen:
+- lijkbezorging
+afgeleid:
+  uitkomst:
+    soort: specialisatie
+    regel: 24
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    data_object: nee
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 21
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet

@@ -154,8 +154,11 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   levert_aanbod:
-    waarde: nee
-    onderbouwing: De bronnen in de wiki noemen geen product of dienst; de UPL noemt een product (nog geen bron).
+    waarde: ja
+    onderbouwing: Realiseert de dienst Bijzondere begraafplaats toestemming (UPL nr. 71).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -247,6 +250,14 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 40, 41
+- soort: realisatie
+  naar: bijzondere-begraafplaats-toestemming
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: Wlb art. 40, 41; UPL nr. 71
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -262,5 +273,6 @@ afgeleid:
     typeregel: 17
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
   herkomst: wet
   pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-bijzondere-begraafplaats.md

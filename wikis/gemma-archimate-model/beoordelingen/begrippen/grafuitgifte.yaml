@@ -1,0 +1,267 @@
+begrip: Grafuitgifte
+onderwerpen:
+- lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Product in de Uniforme Productenlijst (UPL, nr. 165); uitgifte van graven is gangbaar in de beheersverordeningen (VNG-model art. 11, 13–15; Groningen art. 14, 16).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente geeft graven uit op haar begraafplaatsen (VNG-model art. 13–15; Groningen art. 16).
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandig product met een eigen naam in de UPL.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij de lijkbezorging (UPL, Iv3 7.5).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een aanbod.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een aanbod.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een aanbod.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een aanbod.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een aanbod.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een aanbod.'
+  aanbod_als_geheel:
+    waarde: ja
+    onderbouwing: 'Een aanbod dat de gemeente als geheel levert: een particulier graf, urnengraf of urnennis met het grafrecht daarop (VNG-model art. 11, 15; UPL).'
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2025-vng-upl-producten-en-diensten-extern
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een aanbod.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Het uitsluitend recht op een particulier graf voor een vaste termijn (VNG-model art. 15; Groningen art. 16).
+    bronnen:
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  afnemer:
+    waarde: ja
+    onderbouwing: Burger en bedrijf (UPL); wie een graf wil en daarna rechthebbende op het graf is (Groningen art. 16).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  zelfstandig_aanbod:
+    waarde: ja
+    onderbouwing: Onder een eigen naam aangeboden in de UPL (nr. 165), naast het tarief grafrechten (nr. 164).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  omvat_diensten_en_afspraken:
+    waarde: ja
+    onderbouwing: De dienst Graf aanvragen en de afspraak Grafrecht, met de lijkbezorgingsrechten als prijs (Groningen art. 16; VNG-model art. 15; VNG retributies).
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2026-vng-retributies
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder product in deze wiki of in het GEMMA-model.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in de lijkbezorging voor.
+definitie: Een particulier graf, urnengraf of urnennis op een gemeentelijke begraafplaats, met het uitsluitend recht daarop voor een vaste termijn.
+beschrijving:
+- De gemeente geeft op haar begraafplaatsen particuliere graven, urnengraven en urnennissen uit (VNG-model art. 11, 13–15; Groningen art. 14, 16). Het product bundelt de dienst Graf aanvragen en de afspraak Grafrecht. De gemeente heft er lijkbezorgingsrechten voor; die staan in de UPL als het product grafrechten (Gemeentewet art. 229; VNG retributies).
+- De UPL geeft als grondslag art. 11 van de model-beheersverordening (indeling graven en asbezorging); de uitgifte zelf staat in art. 13 tot 15 van dat model (UPL).
+afnemer: extern
+domein: Fysieke leefomgeving
+taakveld: 7 Volksgezondheid en Milieu
+beleidsdomein: Begraafplaatsen en crematoria
+grondslag: bron
+ggm:
+  sterkte: geen
+  onderbouwing: Het GGM kent geen entiteit voor graf of grafrecht (GGM-terugmeldingen 3 en 4).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: aggregatie
+  naar: graf-aanvragen
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: Groningen art. 16; VNG-model art. 15
+- soort: aggregatie
+  naar: grafrecht
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: Groningen art. 16; VNG-model art. 15
+besluiten:
+- datum: '2026-10-05'
+  gevolg: verwerkt
+  besluit: 'UPL-product van lijkbezorging, beoordeeld met de toets van 2026-10-05: een product bij een dienst met een afspraak, anders een dienst; de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt.'
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Aanbod als geheel (kern ja, 2/2)
+    paginatype: product
+    archimate_type: product
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 13
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-vng-retributies
+  herkomst: wet
+  pad: bedrijfsarchitectuur/producten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafuitgifte.md

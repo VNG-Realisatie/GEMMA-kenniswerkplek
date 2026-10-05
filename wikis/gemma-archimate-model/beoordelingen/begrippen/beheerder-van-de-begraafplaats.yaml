@@ -68,7 +68,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Uitvoeren lijkbezorging (bepaalt tijd en plaats), Ruimen graf (ziet toe) en Opgraven lijk (is belast met de werkzaamheden) (Groningen art. 7, 27, 28).
+    onderbouwing: Toegewezen aan Uitvoeren lijkbezorging (bepaalt tijd en plaats), Ruimen graf (ziet toe) en Opgraven stoffelijk overschot (is belast met de werkzaamheden) (Groningen art. 7, 27, 28).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -227,7 +227,7 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 27 lid 2
 - soort: toewijzing
-  naar: opgraven-lijk
+  naar: opgraven-stoffelijk-overschot
   naam: is belast met de werkzaamheden bij
   grondslag: bron
   bronnen:

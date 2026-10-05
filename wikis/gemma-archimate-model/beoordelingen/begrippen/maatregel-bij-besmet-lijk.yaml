@@ -7,7 +7,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
     waarde: ja
-    onderbouwing: 'Gemeentelijk: maatregel van de burgemeester na advies van de GGD (art. 22a); het treffen ervan is het proces Treffen maatregel bij besmet lijk.'
+    onderbouwing: 'Gemeentelijk: maatregel van de burgemeester na advies van de GGD (art. 22a); het treffen ervan is het proces Treffen maatregel bij besmet stoffelijk overschot.'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
@@ -195,7 +195,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
 genoemd_begrip: Beschikking
-toelichting: 'Specialisatie zonder pagina van Beschikking: maatregel van de burgemeester na advies van de GGD (art. 22a); het treffen ervan is het proces Treffen maatregel bij besmet lijk.'
+toelichting: 'Specialisatie zonder pagina van Beschikking: maatregel van de burgemeester na advies van de GGD (art. 22a); het treffen ervan is het proces Treffen maatregel bij besmet stoffelijk overschot.'
 onderwerpen:
 - lijkbezorging
 afgeleid:

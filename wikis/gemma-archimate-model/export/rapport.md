@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: d13deb30af2cf9bd7eaa54febc2fb00ddfeeb046b618756eacc9ae512aafeabe -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 2cafcc03264c43ff5e85f83242c54741c9e2d2d2ebe4b5a2f92ecae98c0e10c0 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-04T22:37:59. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 18 gekoppeld aan GEMMA, 56 nieuw. Relaties: 7 gekoppeld, 245 nieuw, 0 overgeslagen. Indelingen: 44 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-05T08:50:53. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 21 gekoppeld aan GEMMA, 72 nieuw. Relaties: 10 gekoppeld, 317 nieuw, 0 overgeslagen. Indelingen: 58 aggregaties vanuit een groepering, 6 specialisaties naar een GEMMA-element.
 
 ## Wijzigt een GEMMA-element
 
@@ -27,7 +27,7 @@ Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets
 - Behandelen vergunningaanvragen lijkbezorging → Behandelen aanvraag vergunning of ontheffing
 - Beheerder van de begraafplaats → Beheerder
 - Onderhouden graf → Onderhouden
-- Treffen maatregel bij besmet lijk → Behandelen melding
+- Treffen maatregel bij besmet stoffelijk overschot → Behandelen melding
 - Uitbaten begraafplaatsen en crematoria → Uitbaten gemeentelijke voorzieningen
 - Verlenen grafrecht → Behandelen aanvraag product
 
@@ -41,47 +41,58 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 
 ## Nieuw in GEMMA
 
+- Afgeven laissez-passer
 - Ambtenaar van de burgerlijke stand
 - Arts
+- Asverstrooiing
 - Begraafplaats
+- Begraafplaatsregister
 - Behandelen vergunningaanvragen lijkbezorging
 - Beheerder van de begraafplaats
 - Beheren begraafplaatsen
 - Beheren crematoria
 - Beheren grafrechten
 - Beheren graven
-- Besmet lijk gemeld
-- Bezorgen lijken
+- Besluit op de lijkbezorging
+- Besmet stoffelijk overschot gemeld
+- Bezorgen stoffelijk overschot
 - Bijzetten of verstrooien van de as
+- Bijzettingenregister
+- Bijzondere begraafplaats toestemming
 - Burgemeester
 - Crematorium
+- Crematoriumregister
 - Degene die in de lijkbezorging voorziet
+- Gedenkteken plaatsingsvergunning
 - Gemeente
 - Gemeentelijke lijkschouwer
 - GGD
 - Graf
 - Graf aanvragen
 - Grafbedekking
+- Grafonderhoud
 - Grafrecht
+- Grafuitgifte
+- Herbegraven of alsnog cremeren
 - Houder van de begraafplaats
 - Houder van een plaats van bijzetting
 - Houder van het crematorium
 - Kerkgenootschap
 - Kostendrager
-- Lijk
 - Model-beheersverordening begraafplaatsen
 - Nabestaande
 - Officier van justitie
-- Onderhoud van graven
 - Onderhouden graf
-- Opgraven lijk
+- Ontleding stoffelijk overschot toestemming
+- Opgraven stoffelijk overschot
 - Overlijden
 - Rechthebbende op het graf
 - Ruimen graf
-- Schouwen lijk
+- Schouwen stoffelijk overschot
 - Sluiten begraafplaats
 - Stellen andere termijn
-- Treffen maatregel bij besmet lijk
+- Stoffelijk overschot
+- Treffen maatregel bij besmet stoffelijk overschot
 - Uitbaten begraafplaatsen en crematoria
 - Uitvaart vervroegen of uitstellen
 - Uitvaartondernemer
@@ -89,11 +100,16 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Urn
 - Vergunning
 - Verlenen grafrecht
+- Verlenen toestemming asverstrooiing
 - Verlenen toestemming bijzondere begraafplaats
 - Verlenen vergunning bijzonder crematorium
+- Verlenen vergunning grafbedekking
 - Verlenen verlof tot begraving of crematie
+- Verlenen verlof tot ontleding
+- Verlof tot begraven
 - Verval van het grafrecht
 - Vervallen verklaren grafrecht
+- Vervoersdocumenten stoffelijk overschot
 - Verzorgen gemeentebegrafenis
 - Verzorgen lijkbezorging
 - Wet op de lijkbezorging

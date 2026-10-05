@@ -1,4 +1,4 @@
-begrip: Lijk
+begrip: Stoffelijk overschot
 kenmerken:
   herkenbaar:
     waarde: ja
@@ -200,7 +200,7 @@ taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het lichaam van een overledene of doodgeborene.
 beschrijving:
-- Het lijk wordt geschouwd, begraven, gecremeerd of ontleed, en soms opgegraven (art. 1, 3, 29). Bij een begraving of crematie stelt de houder de identiteit vast aan de hand van het nummer op kist en document (art. 8). Een doodgeborene (na ten minste 24 weken zwangerschap) valt ook onder het begrip lijk; dat is een indeling, geen eigen element (art. 2 lid 1 b).
+- Het stoffelijk overschot wordt geschouwd, begraven, gecremeerd of ontleed, en soms opgegraven (art. 1, 3, 29). Bij een begraving of crematie stelt de houder de identiteit vast aan de hand van het nummer op kist en document (art. 8). Een doodgeborene (na ten minste 24 weken zwangerschap) valt ook onder het begrip lijk (wet) en daarmee onder stoffelijk overschot; dat is een indeling, geen eigen element (art. 2 lid 1 b).
 grondslag: bron
 ggm:
   sterkte: geen
@@ -210,6 +210,15 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 onderwerpen:
 - lijkbezorging
+synoniemen:
+- naam: Lijk
+  context: wet
+besluiten:
+- datum: '2026-10-05'
+  besluit: Naam Stoffelijk overschot, de term van de UPL; Lijk (wet, beheersverordening, VNG) wordt een synoniem.
+  gevolg: verwerkt
+naamkeuze:
+- Stoffelijk overschot is de term van de Uniforme Productenlijst (2025-vng-upl-producten-en-diensten-extern, bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk (2026-rvo-aangifte-en-akte-van-overlijden). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet (besluit redacteur 2026-10-05).
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -226,4 +235,4 @@ afgeleid:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/lijk.md
+  pad: bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md

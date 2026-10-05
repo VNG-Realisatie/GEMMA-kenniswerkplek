@@ -63,7 +63,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Schouwen lijk (art. 3).
+    onderbouwing: Toegewezen aan Schouwen stoffelijk overschot (art. 3).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   soort_partij:
@@ -203,7 +203,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 relaties:
 - soort: toewijzing
-  naar: schouwen-lijk
+  naar: schouwen-stoffelijk-overschot
   naam: verricht
   grondslag: bron
   bronnen:

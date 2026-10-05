@@ -80,6 +80,8 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 |---|---|---|---|
 | [Uitvaart vervroegen of uitstellen](../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvaart-vervroegen-of-uitstellen.md) | bedient *bediening* | Degene die in de lijkbezorging voorziet | [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (§ Uitvaart vervroegen, § Uitvaart uitstellen) |
 | [Uitvaartondernemer](../actoren/uitvaartondernemer.md) | vervult namens de nabestaanden *toewijzing* | Degene die in de lijkbezorging voorziet | [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (inleiding, § Aangifte doen van overlijden) |
+| [Verlof tot begraven](../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlof-tot-begraven.md) | bedient *bediening* | Degene die in de lijkbezorging voorziet | [UPL-lijst extern](../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md), [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (UPL nr. 438; RVO inleiding) |
+| [Vervoersdocumenten stoffelijk overschot](../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervoersdocumenten-stoffelijk-overschot.md) | bedient *bediening* | Degene die in de lijkbezorging voorziet | [UPL-lijst extern](../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md), [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (UPL nr. 445; RVO, Zie ook) |
 
 ## Herkomst
 

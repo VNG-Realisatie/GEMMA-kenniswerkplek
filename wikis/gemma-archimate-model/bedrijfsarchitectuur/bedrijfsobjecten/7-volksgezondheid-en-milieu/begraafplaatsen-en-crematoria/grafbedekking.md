@@ -56,7 +56,7 @@ Bedrijfsobject, niveau subobject. Uitkomst van de beslistabel: Passief (kern ja,
 ### Plaats in de indelingen
 
 - **Objectniveau**: subobject.
-- **Mutaties door deelprocessen**: [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md).
+- **Mutaties door deelprocessen**: [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md), [Verlenen vergunning grafbedekking](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-vergunning-grafbedekking.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
@@ -90,6 +90,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | onderhoudt *toegang (bijwerken)* | Grafbedekking | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
 | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | onderhoudt *toegang (beheerder)* | Grafbedekking | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) (Groningen art. 24; VNG-model art. 21) |
 | [Vergunning](../../0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) | betreft (vergunning grafbedekking) *associatie (gericht)* | Grafbedekking | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 22) |
+| [Verlenen vergunning grafbedekking](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-vergunning-grafbedekking.md) | betreft *toegang (bijwerken)* | Grafbedekking | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 22) |
 
 ## Herkomst
 

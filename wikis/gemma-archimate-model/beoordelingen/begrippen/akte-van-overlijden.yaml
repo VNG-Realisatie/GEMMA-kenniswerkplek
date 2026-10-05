@@ -189,7 +189,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
-toelichting: 'Verwijzing: beoordelen in het onderwerp burgerlijke stand.'
+toelichting: 'Verwijzing: beoordelen in het onderwerp burgerlijke stand. In de UPL het product overlijdensakte (nr. 316, BW Boek 1 art. 19f).'
 onderwerpen:
 - lijkbezorging
 afgeleid:
@@ -204,3 +204,6 @@ afgeleid:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
   herkomst: wet
+synoniemen:
+- naam: Overlijdensakte
+  context: UPL

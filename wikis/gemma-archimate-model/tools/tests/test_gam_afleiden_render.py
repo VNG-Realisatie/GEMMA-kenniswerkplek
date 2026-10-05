@@ -421,16 +421,62 @@ def test_signalen_voor_de_functie_indeling():
     assert "eigen: de bovenliggende functie nieuw heeft geen GEMMA-match" in tekst
     # een dienst hangt onder één functie in hetzelfde domein
     elementen.update({"dienst": {"paginatype": "dienst", "soort": "element"}, "los": {"paginatype": "dienst", "soort": "element"},
-                      "verkeerd": {"paginatype": "product", "soort": "element"}})
-    alle.update({"dienst": {"domein": fl}, "los": {"domein": fl}, "verkeerd": {"domein": "Publieksdiensten"}})
-    alle["onderwerp"]["relaties"] = [agg("dienst"), agg("verkeerd")]
+                      "verkeerd": {"paginatype": "dienst", "soort": "element"},
+                      "product": {"paginatype": "product", "soort": "element"},
+                      "los-product": {"paginatype": "product", "soort": "element"}})
+    alle.update({"dienst": {"domein": fl}, "los": {"domein": fl}, "verkeerd": {"domein": "Publieksdiensten"},
+                 "product": {"domein": fl}, "los-product": {"domein": fl}})
+    alle["onderwerp"]["relaties"] = [agg("dienst"), agg("verkeerd"), agg("product")]
     relaties = [(van, r) for van in elementen for r in alle[van].get("relaties", [])]
     tekst = "\n".join(signalen.functie_indeling(alle, elementen, relaties, gemma_data))
     assert "los: hangt onder geen functie" in tekst and "dienst:" not in tekst
     assert "verkeerd: domein 'Publieksdiensten' wijkt af van dat van de functie onderwerp" in tekst
+    # een product hangt via domein aan de domeingroepering, niet onder een functie (besluit 2026-10-05)
+    assert "product: product onder een functie (onderwerp)" in tekst and "los-product:" not in tekst
     # domeinniveau hangt aan de groepering; een functie onder een GEMMA-functie die GEMMA volgt geeft geen signaal
     assert not any(tekst_regel.startswith(("domein:", "soort:", "onderwerp:", "nieuw:")) for tekst_regel in tekst.splitlines())
 
+
+
+def test_domein_past_bij_de_gemma_domeinen_van_het_beleidsdomein():
+    import signalen
+
+    # GEMMA-domeinen aggregeren beleidsdomeinen; een beleidsdomein kan onder meer domeinen vallen (besluit 2026-10-05)
+    groep = lambda naam, map_, soort=None: {"type": "grouping", "naam": naam, "map": map_,  # noqa: E731
+                                            "eigenschappen": {"GEMMA type": soort} if soort else {}}
+    gemma_data = {
+        "elementen": {
+            "d-fl": groep("Fysieke leefomgeving", "Other / Domein en doelgroep / Domeinen"),
+            "d-pd": groep("Publieksdiensten", "Other / Domein en doelgroep / Domeinen"),
+            "b-erfgoed": groep("Erfgoed", "Other / Beleidsdomeinen", "Beleidsdomein"),
+            "b-burgerzaken": groep("Burgerzaken", "Other / Beleidsdomeinen", "Beleidsdomein"),
+        },
+        "relaties": {
+            "r1": {"type": "aggregation-relationship", "bron": "d-fl", "doel": "b-erfgoed"},
+            "r2": {"type": "aggregation-relationship", "bron": "d-pd", "doel": "b-erfgoed"},
+            "r3": {"type": "aggregation-relationship", "bron": "d-pd", "doel": "b-burgerzaken"},
+        },
+    }
+    fl, pd = "Fysieke leefomgeving", "Publieksdiensten"
+    alle = {
+        "monument": {"beleidsdomein": "Erfgoed", "domein": fl},
+        "akte": {"beleidsdomein": "Burgerzaken", "domein": pd},
+        "verkeerd": {"beleidsdomein": "Burgerzaken", "domein": fl},
+        "graf": {"beleidsdomein": "Begraafplaatsen", "domein": fl},
+        "register": {"beleidsdomein": "Begraafplaatsen", "domein": pd},
+        "alleen": {"beleidsdomein": "Nieuw en enkel", "domein": fl},
+    }
+    elementen = {b: {"paginatype": "dienst", "soort": "element"} for b in alle}
+    elementen["graf"]["paginatype"] = "product"
+    tekst = "\n".join(signalen.domein_en_beleidsdomein(alle, elementen, gemma_data))
+    assert "verkeerd: domein 'Fysieke leefomgeving' past niet bij beleidsdomein 'Burgerzaken'" in tekst
+    assert "monument:" not in tekst and "akte:" not in tekst
+    assert "beleidsdomein 'Begraafplaatsen' (nieuw voor GEMMA): producten en diensten in 2 domeinen" in tekst
+    assert "Nieuw en enkel" not in tekst
+    assert signalen.domein_en_beleidsdomein(alle, elementen, {}) == []
+    # het model mag afwijken, mits teruggemeld: een procesarchitectuur-terugmelding dekt het signaal
+    gemeld = [{"elementen": ["verkeerd"]}, {"beleidsdomein": "begraafplaatsen"}]
+    assert signalen.domein_en_beleidsdomein(alle, elementen, gemma_data, gemeld) == []
 
 def _indeling_wiki(wiki):
     """Een taak met een ketenproces, een deelproces, een kernobject met subobject, een generiek object met

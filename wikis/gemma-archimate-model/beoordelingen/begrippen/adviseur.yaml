@@ -68,7 +68,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan Treffen maatregel bij besmet lijk: de GGD adviseert de burgemeester (Wlb art. 22a).'
+    onderbouwing: 'Toegewezen aan Treffen maatregel bij besmet stoffelijk overschot: de GGD adviseert de burgemeester (Wlb art. 22a).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rijk-wet-publieke-gezondheid-wettekst
@@ -211,7 +211,7 @@ gemma:
   onderbouwing: 'GEMMA-rol Adviseur; zelfde begrip, in GEMMA zonder definitie. Nieuw: een definitie.'
 relaties:
 - soort: toewijzing
-  naar: treffen-maatregel-bij-besmet-lijk
+  naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
   naam: adviseert over
   grondslag: bron
   bronnen:

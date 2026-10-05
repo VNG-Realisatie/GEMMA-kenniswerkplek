@@ -77,6 +77,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Bijzondere begraafplaats toestemming](../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzondere-begraafplaats-toestemming.md) | bedient *bediening* | Houder van de begraafplaats | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 37, 40, 41) |
 | [Gemeente](../actoren/gemeente.md) | vervult *toewijzing* | Houder van de begraafplaats | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 33, 39 lid 2) |
 | [Kerkgenootschap](../actoren/kerkgenootschap.md) | vervult *toewijzing* | Houder van de begraafplaats | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 37) |
 

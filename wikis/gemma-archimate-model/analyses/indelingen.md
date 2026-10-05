@@ -66,7 +66,7 @@ Stand van het GEMMA-model van 2026-10-02.
 |---|---|---|---|---|
 | Procesindeling naar soort werk | GEMMA, per taak uitgebreid | deelprocessen; via generieke GEMMA-elementen ook gebeurtenissen, diensten en rollen | generiek GEMMA-proces → cluster naar soort werk → deelproces | specialisatie naar het GEMMA-element (exacte match); aggregatie |
 | Procesindeling naar taak | nieuw | bedrijfs-, keten- en deelprocessen, gebeurtenissen | taak → bedrijfs- of ketenproces per kernobject → deelproces | aggregatie; map `wiki-gemma-model / Procesindeling naar taak` |
-| Functie-indeling naar domein | GEMMA | functies, producten, diensten | domein → functie → product of dienst | aggregatie; functie bedient proces |
+| Functie-indeling naar domein | GEMMA | functies, producten, diensten | domein → functie → dienst; domein → product | aggregatie; functie bedient proces |
 | Beleidsdomeinindeling | GEMMA | objecten, afspraken, producten, diensten, beleidskaders, taken | taakveld → beleidsdomein → element | aggregatie vanuit de groepering |
 | Doelgroepindeling | GEMMA, uitgebreid | rollen, actoren, samenwerkingen, kanalen | gemeente (bestuursorgaan, ambtelijk), inwoners en ondernemers, ketenpartners → element | aggregatie vanuit de doelgroeprol |
 
@@ -210,7 +210,8 @@ Bij gebeurtenis, rol en dienst geeft *generiek* een specialisatie van een GEMMA-
 #### Controles
 
 - Elk element staat in zijn verplichte indeling. Meer ouders geeft een signaal, behalve de twee ouders van een deelproces.
-- Een functie onder domeinniveau wordt geaggregeerd door één bovenliggende GEMMA-functie in hetzelfde domein, volgens de GEMMA-functieketen; een functie op domeinniveau hangt via `domein` aan de domeingroepering. Een product of dienst wordt geaggregeerd door één functie in hetzelfde domein.
+- Een functie onder domeinniveau wordt geaggregeerd door één bovenliggende GEMMA-functie in hetzelfde domein, volgens de GEMMA-functieketen; een functie op domeinniveau hangt via `domein` aan de domeingroepering. Een dienst wordt geaggregeerd door één functie in hetzelfde domein. Een product hangt via `domein` direct aan de domeingroepering: ArchiMate laat een functie geen product aggregeren (besluit 2026-10-05).
+- In GEMMA aggregeert een domein de beleidsdomeinen. Het domein van een product of dienst moet passen bij de GEMMA-domeinen van zijn beleidsdomein (soms meer dan één, zoals bij Erfgoed). Een beleidsdomein dat GEMMA niet kent, geeft een signaal als zijn producten en diensten in meer domeinen vallen (besluit 2026-10-05). Het model mag afwijken van de UPL-indeling, mits de afwijking is teruggemeld in de [procesarchitectuur-terugmeldingen](procesarchitectuur-terugmeldingen.md); de terugmelding dekt het signaal.
 - Specialisatie en bediening naar GEMMA lopen alleen via een exacte match.
 - *leidt tot gebeurtenis* vraagt een triggering.
 - `via` wijst naar een specialisatie van het doel.
@@ -315,3 +316,6 @@ Besluiten over de werkwijze en de criteria. Besluiten over afzonderlijke begripp
 | 2026-10-04 | De Functie-indeling naar domein is een relatie, geen eigenschap: de bovenliggende functie wordt een element, onderbouwd uit de bronnen, en aggregeert de functie eronder, zoals in GEMMA (*Exploitatie fysieke leefomgeving* aggregeert *Exploiteren van begraafplaatsen*). De keten wordt element tot en met de functie op domeinniveau (GEMMA type *Bedrijfsfunctie domein*); alleen die hangt via `domein` aan de domeingroepering. Bij meer GEMMA-ouders de ouder in de keten van het eigen domein. Een nieuwe aggregatie in Archi alleen voorleggen bij twijfel. |
 | 2026-10-04 | Een functiepagina staat in een map per domein (`bedrijfsfuncties/<domein>/`), niet per taakveld en beleidsdomein: een functie valt alleen in de Functie-indeling naar domein, en een functie op domeinniveau omvat meer taakvelden. |
 | 2026-10-04 | De wiki genereert views per indeling en elementtype. De export blijft zonder views (besluit 2026-10-02); Archi-views staan op de todo. |
+| 2026-10-05 | Een product hangt in de Functie-indeling naar domein via `domein` direct aan de domeingroepering, niet onder een functie: ArchiMate laat een functie geen product aggregeren. Het product valt ook in de Beleidsdomeinindeling. De diensten die het omvat hangen onder hun functie. |
+| 2026-10-05 | Controle op de samenhang tussen de Beleidsdomeinindeling en de Functie-indeling naar domein: het domein van een product of dienst moet passen bij de GEMMA-domeinen die zijn beleidsdomein aggregeren; bij een beleidsdomein dat GEMMA niet kent een signaal als zijn producten en diensten in meer domeinen vallen. |
+| 2026-10-05 | Het model mag afwijken van de UPL-indeling (taakveld, GEMMA-domein, beleidsdomein in een GEMMA-domein), mits teruggemeld in de procesarchitectuur-terugmeldingen (`beoordelingen/procesarchitectuur-terugmeldingen.yaml`). |
