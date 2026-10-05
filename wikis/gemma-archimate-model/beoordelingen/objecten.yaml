@@ -1,0 +1,32 @@
+# Archi-objecten: welk bestaand object een element voortzet na hernoemen, samenvoegen of splitsen (besluit redacteur 2026-10-05).
+# De export geeft het element en zijn relaties de id's van het object van `object_van`, zodat views in Archi blijven werken.
+# Hernoemd: altijd. Samengevoegd: de redacteur kiest of en welk object blijft. Gesplitst: de redacteur kiest of en welk deel het object krijgt.
+objecten:
+- element: stoffelijk-overschot
+  object_van: lijk
+  wijziging: hernoemd
+  datum: '2026-10-05'
+- element: bezorgen-stoffelijk-overschot
+  object_van: bezorgen-lijken
+  wijziging: hernoemd
+  datum: '2026-10-05'
+- element: opgraven-stoffelijk-overschot
+  object_van: opgraven-lijk
+  wijziging: hernoemd
+  datum: '2026-10-05'
+- element: schouwen-stoffelijk-overschot
+  object_van: schouwen-lijk
+  wijziging: hernoemd
+  datum: '2026-10-05'
+- element: treffen-maatregel-bij-besmet-stoffelijk-overschot
+  object_van: treffen-maatregel-bij-besmet-lijk
+  wijziging: hernoemd
+  datum: '2026-10-05'
+- element: besmet-stoffelijk-overschot-gemeld
+  object_van: besmet-lijk-gemeld
+  wijziging: hernoemd
+  datum: '2026-10-05'
+- element: grafonderhoud
+  object_van: onderhoud-van-graven
+  wijziging: hernoemd
+  datum: '2026-10-05'

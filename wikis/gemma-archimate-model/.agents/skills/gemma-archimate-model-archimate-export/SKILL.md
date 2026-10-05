@@ -15,11 +15,13 @@ metadata:
 | Wat | Id | Map |
 |---|---|---|
 | Element met een GEMMA-match (`gemma.id`) | het GEMMA-id | dezelfde mappen als in GEMMA, met dezelfde map-id's |
-| Nieuw element | vast id, afgeleid van het begrip-id | `<Business of Motivation> / wiki-gemma-model / <paginatype> / <taakveld> / <beleidsdomein>`; een functie `… / Bedrijfsfuncties / <domein>` |
+| Nieuw element | vast id, afgeleid van het begrip-id; na hernoemen, samenvoegen of splitsen van het begrip-id waarvan het het object voortzet (`beoordelingen/objecten.yaml`) | `<Business of Motivation> / wiki-gemma-model / <paginatype> / <taakveld> / <beleidsdomein>`; een functie `… / Bedrijfsfuncties / <domein>` |
 | Relatie die in GEMMA al bestaat (zelfde type, zelfde elementen, zelfde toegangstype) | het GEMMA-id | dezelfde map als in GEMMA |
-| Nieuwe relatie | vast id, afgeleid van bron, soort, doel en naam | `Relations / wiki-gemma-model` |
+| Nieuwe relatie | vast id, afgeleid van bron, soort, doel en naam (bron en doel ook via `beoordelingen/objecten.yaml`) | `Relations / wiki-gemma-model` |
 
 Naam en definitie komen uit de wiki en overschrijven die van GEMMA. De GEMMA-eigenschappen (`Object ID`, `GEMMA URL`, `GGM-*` …) en het profiel (specialisatie) gaan letterlijk mee; een `Object ID` maakt de export nooit. Eigen eigenschappen beginnen met `wiki-gemma-model`: `id`, `herkomst` (`gekoppeld` of `nieuw`), `exportdatum`, `soort export`, `status`, `GEMMA-match`, `bronnen`, `beschrijving`, `synoniemen`, `pagina`, en bij een gekoppeld element `vorige naam` en `vorige definitie`. Relaties krijgen `id`, `herkomst`, `exportdatum`, `soort export`, `grondslag`, `bronnen` en `vindplaats`.
+
+**Objectbehoud.** Een hernoemd, samengevoegd of gesplitst element zet het Archi-object voort dat in `beoordelingen/objecten.yaml` staat (regel Objectbehoud): Archi werkt bij de import naam, definitie en eigenschappen bij, en views met het object blijven werken. De export weigert als het type van een voortgezet object wijzigt ten opzichte van de vorige export, want dat kan Archi bij een import niet.
 
 **De export vertrouwt de match.** Elke match met een id overschrijft het GEMMA-element, ook een zwakke of partiële. Matchen is de verantwoordelijkheid van de wiki en de redacteur (regel Zwakke match voorleggen in `AGENTS.md`), niet van de export of van Archi.
 

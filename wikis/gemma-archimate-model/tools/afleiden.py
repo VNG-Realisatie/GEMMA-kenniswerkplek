@@ -46,6 +46,8 @@ TERUGMELDTYPEN = ("hiaat", "definitie", "structuur", "scope", "duplicaat", "homo
 TERUGMELDSTATUS = ("open", "gemeld", "opgelost", "afgewezen")
 PA_TERUGMELDINGEN = Path("beoordelingen") / "procesarchitectuur-terugmeldingen.yaml"
 PA_TYPEN = ("indeling", "grondslag", "product", "kennismodel")
+OBJECTEN = Path("beoordelingen") / "objecten.yaml"
+WIJZIGINGEN = ("hernoemd", "samengevoegd", "gesplitst")
 
 
 @dataclass
@@ -277,6 +279,34 @@ def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat, r
     return register
 
 
+def _objecten(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> None:
+    """Het register van Archi-objecten: welk bestaand object een element voortzet na hernoemen, samenvoegen of splitsen
+    (besluit redacteur 2026-10-05). Een element zet hoogstens één object voort, een object wordt door hoogstens één
+    element voortgezet, en een begrip dat nog een element is, geeft zijn object niet door."""
+    pad = ctx.wiki_root / OBJECTEN
+    if not pad.exists():
+        return
+    regels = beoordeling.laad(pad).get("objecten", [])
+    elementen, objecten = set(), set()
+    for i, o in enumerate(regels, 1):
+        naam = f"objecten {i} ({o.get('element')})"
+        for veld in ("element", "object_van", "wijziging", "datum"):
+            if not o.get(veld):
+                res.fouten.append(f"{naam}: '{veld}' ontbreekt")
+        if o.get("wijziging") and o["wijziging"] not in WIJZIGINGEN:
+            res.fouten.append(f"{naam}: wijziging '{o['wijziging']}' (kies uit {', '.join(WIJZIGINGEN)})")
+        if o.get("element") and (uitkomsten.get(o["element"]) or {}).get("soort") != "element":
+            res.fouten.append(f"{naam}: '{o['element']}' is geen element")
+        if o.get("object_van") and (uitkomsten.get(o["object_van"]) or {}).get("soort") == "element":
+            res.fouten.append(f"{naam}: '{o['object_van']}' is zelf nog een element en houdt zijn eigen object")
+        if o.get("element") in elementen:
+            res.fouten.append(f"{naam}: het element zet al een ander object voort")
+        if o.get("object_van") in objecten:
+            res.fouten.append(f"{naam}: het object van '{o['object_van']}' wordt al door een ander element voortgezet")
+        elementen.add(o.get("element"))
+        objecten.add(o.get("object_van"))
+
+
 def _pa_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> dict | None:
     """Procesarchitectuur-terugmeldingen: het model mag afwijken van de UPL-indeling, mits teruggemeld (2026-10-05)."""
     register = _terugmeldingen(ctx, uitkomsten, res, PA_TERUGMELDINGEN, PA_TYPEN, ("bevinding",),
@@ -367,6 +397,7 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             {b: d for b, (_, d) in alle.items()}, elementen,
             [(van, r) for van in elementen for r in alle[van][1].get("relaties", [])], ctx.gemma() if gekoppeld else {})
     pa_register = _pa_terugmeldingen(ctx, uitkomsten, res)
+    _objecten(ctx, uitkomsten, res)
     if any(u["paginatype"] in ("product", "dienst") for u in elementen.values()) \
             and (wiki_root / "gemma" / "gemma_parsed.json").exists():
         gemeld = [m for m in (pa_register or {}).get("terugmeldingen", []) if m.get("status") != "afgewezen"]

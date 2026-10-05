@@ -73,6 +73,31 @@ def vast_id(*delen: str) -> str:
     return "id-" + uuid.uuid5(NS, "/".join(delen)).hex
 
 
+OBJECTEN = Path("beoordelingen") / "objecten.yaml"
+
+
+def object_sleutels(register: dict | None) -> dict[str, str]:
+    """Begrip-id → het begrip-id waarvan het Archi-object wordt voortgezet (na hernoemen, samenvoegen of splitsen),
+    langs een keten (a → b → c). Zo houdt een element zijn id in Archi en blijven views werken."""
+    direct = {o["element"]: o["object_van"] for o in (register or {}).get("objecten", [])}
+    uit = {}
+    for bid in direct:
+        sleutel, gezien = bid, set()
+        while sleutel in direct and sleutel not in gezien:
+            gezien.add(sleutel)
+            sleutel = direct[sleutel]
+        uit[bid] = sleutel
+    return uit
+
+
+def vorige_typen(pad: Path) -> dict[str, str]:
+    """Id → xsi:type van de elementen in de vorige export; Archi kan het type van een bestaand object niet wijzigen."""
+    if not pad.exists():
+        return {}
+    return {e.get("id"): e.get(XSI) for e in ET.parse(pad).getroot().iter("element")
+            if e.get(XSI) and "Relationship" not in e.get(XSI)}
+
+
 def xsi_type(archimate_type: str) -> str:
     """`business-object` → `archimate:BusinessObject`; omgekeerde van gemma.archimate_type."""
     return "archimate:" + "".join(d.capitalize() for d in archimate_type.split("-"))
@@ -263,11 +288,12 @@ def _stub(b: Bouwer, g: dict) -> None:
 
 
 def _relatie(b: Bouwer, uit: Uitkomst, gemma_relaties: dict, rtype: str, bron: str, doel: str, herkomst: str,
-             paren: list[tuple[str, str]], naam: str = "") -> None:
-    """Een relatie met het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id."""
+             paren: list[tuple[str, str]], naam: str = "", sleutel: str | None = None) -> None:
+    """Een relatie met het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id
+    (uit `sleutel`, standaard de herkomst)."""
     bestaand = sorted(gemma_relaties.get((rtype, bron, doel), []), key=lambda x: x["id"])
     g = bestaand[0] if bestaand else None
-    rid = g["id"] if g else vast_id("relatie", herkomst, rtype, bron, doel)
+    rid = g["id"] if g else vast_id("relatie", sleutel or herkomst, rtype, bron, doel)
     if rid in b.relatie_ids:
         return
     b.relatie_ids.add(rid)
@@ -293,8 +319,11 @@ EIGENSCHAPPEN_INDELING = ("afnemer", "domein", "doelgroep", "regelgever", "kerno
 
 
 def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstempel: str, concept: bool = False,
-         log: str = "", wiki_yaml: dict | None = None) -> Uitkomst:
+         log: str = "", wiki_yaml: dict | None = None, objecten: dict | None = None,
+         vorige: dict[str, str] | None = None) -> Uitkomst:
     uit = Uitkomst()
+    sleutels = object_sleutels(objecten)
+    sleutel = lambda bid: sleutels.get(bid, bid)  # noqa: E731
     gekozen, uit.fouten = selectie(begrippen, log, concept)
     b = Bouwer(gemma_data, tijdstempel, concept)
     page_types = (wiki_yaml or {}).get("page_types", {})
@@ -312,7 +341,12 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             uit.fouten.append(f"{bid}: type {atype} wijkt af van GEMMA ({g['type']}, {gemma_id}); Archi kan het type "
                               "van een bestaand element niet wijzigen bij een import. Leg dit voor aan de redacteur.")
             continue
-        eid = gemma_id or vast_id("element", bid)
+        eid = gemma_id or vast_id("element", sleutel(bid))
+        if eid in (vorige or {}) and vorige[eid] != xsi_type(atype):
+            uit.fouten.append(f"{bid}: zet het Archi-object van '{sleutel(bid)}' voort, maar het type wijzigt "
+                              f"({vorige[eid]} → {xsi_type(atype)}); Archi kan het type van een bestaand object niet "
+                              "wijzigen bij een import. Leg dit voor aan de redacteur (beoordelingen/objecten.yaml).")
+            continue
         ids[bid] = eid
         el = ET.Element("element", {XSI: xsi_type(atype), "name": data["begrip"], "id": eid})
         if g is not None and g.get("profiel"):
@@ -367,7 +401,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                                if rtype != "access-relationship" or x.get("toegang", 0) == int(ACCESS_TYPE[toevoeging])),
                               key=lambda x: x["id"])
             g = bestaand[0] if bestaand else None
-            rid = g["id"] if g else vast_id("relatie", bid, r["soort"], r["naar"], r.get("naam", ""))
+            rid = g["id"] if g else vast_id("relatie", sleutel(bid), r["soort"], sleutel(r["naar"]), r.get("naam", ""))
             b.relatie_ids.add(rid)
             attrs = {XSI: xsi_type(rtype)}
             if r.get("naam"):
@@ -404,14 +438,15 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                 uit.relaties_nieuw += 1
                 b.eigen_map("relations", []).objecten.append(el)
 
-    _gemma_specialisaties(b, uit, gemma_data, gekozen, ids, gemma_relaties)
-    _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties)
+    _gemma_specialisaties(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
+    _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
     uit.zonder_plaats = _zonder_plaats(b, gekozen, ids)
     uit.xml = _serialiseer(b, gemma_bron)
     return uit
 
 
-def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict) -> None:
+def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict,
+                          sleutels: dict[str, str] | None = None) -> None:
     """`gemma_generiek`: een specialisatie naar een generiek GEMMA-element, dat letterlijk meegaat."""
     for bid, data in sorted(gekozen.items()):
         generiek = data.get("gemma_generiek")
@@ -430,7 +465,8 @@ def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: d
             _stub(b, g)
         indeling = "Procesindeling naar soort werk" if atype == "business-process" else "Specialisatie van een generiek GEMMA-element"
         _relatie(b, uit, gemma_relaties, "specialization-relationship", ids[bid], g["id"], f"{bid}#gemma_generiek",
-                 [(eig("indeling"), indeling), (eig("onderbouwing"), generiek.get("onderbouwing", ""))])
+                 [(eig("indeling"), indeling), (eig("onderbouwing"), generiek.get("onderbouwing", ""))],
+                 sleutel=f"{(sleutels or {}).get(bid, bid)}#gemma_generiek")
         uit.specialisaties.append(f"{data['begrip']} → {g['naam']}")
 
 
@@ -441,7 +477,8 @@ DOMEIN_TYPEN = ("bedrijfsfunctie", "product", "dienst")
 DOELGROEP_TYPEN = ("actor", "rol", "bedrijfssamenwerking", "kanaal")
 
 
-def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict) -> None:
+def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict,
+                sleutels: dict[str, str] | None = None) -> None:
     """Aggregaties vanuit de GEMMA-groepering van de Beleidsdomeinindeling en de Functie-indeling naar domein, en vanuit
     de GEMMA-rol van de Doelgroepindeling; een beleidsdomein dat GEMMA niet kent wordt een nieuwe groepering onder het
     taakveld."""
@@ -451,7 +488,7 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
         if gemma_groep is not None and groep_id not in ids.values():
             _stub(b, gemma_groep)
         _relatie(b, uit, gemma_relaties, "aggregation-relationship", groep_id, element, f"{bid}#{indeling}",
-                 [(eig("indeling"), indeling)])
+                 [(eig("indeling"), indeling)], sleutel=f"{(sleutels or {}).get(bid, bid)}#{indeling}")
         uit.indelingen += 1
 
     for bid, data in sorted(gekozen.items()):
@@ -616,7 +653,10 @@ def main(argv: list[str] | None = None) -> int:
     tijdstempel = datetime.now().isoformat(timespec="seconds")
     begrippen = {bid: data for bid, (_, data) in beoordeling.alle(args.wiki, wiki_yaml).items()}
     log = (args.wiki / "log.md").read_text(encoding="utf-8") if (args.wiki / "log.md").exists() else ""
-    uit = Uitkomst() if fouten else bouw(gemma_data, begrippen, gemma_bron, tijdstempel, args.concept, log, wiki_yaml)
+    objecten = beoordeling.laad(args.wiki / OBJECTEN) if (args.wiki / OBJECTEN).exists() else None
+    vorige = vorige_typen(args.wiki / EXPORT)
+    uit = Uitkomst() if fouten else bouw(gemma_data, begrippen, gemma_bron, tijdstempel, args.concept, log, wiki_yaml,
+                                         objecten, vorige)
     fouten += uit.fouten
     fouten += [f"{naam}: geen plaats in een indeling (elk element staat in minstens één indeling)" for naam in uit.zonder_plaats]
     for f in fouten:
