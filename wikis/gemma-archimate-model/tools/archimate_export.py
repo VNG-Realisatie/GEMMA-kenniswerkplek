@@ -896,4 +896,6 @@ def main(argv: list[str] | None = None) -> int:
 
 
 if __name__ == "__main__":
+    # Het rapport bevat pijltjes; de Windows-console (cp1252) kan die niet afdrukken.
+    sys.stdout.reconfigure(encoding="utf-8")
     sys.exit(main())
