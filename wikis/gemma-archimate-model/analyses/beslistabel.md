@@ -35,7 +35,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 3. Is het een doel, waarde, drijfveer, principe, losse norm of eis, vermogen of thema, en geen beleidskader? Noem het ArchiMate-type. (*buiten dit model*)
 4. Is het alleen een eigenschap, status, waarde, classificatie of indeling van één ander begrip, ook een doelgroep? Noem dat begrip. (*slechts eigenschap*)
 5. Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? Noem bij nee dat begrip. (*eigen identiteit*)
-6. Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? Noem bij nee dat onderwerp. (*betekenis in onderwerp*)
+6. Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? Noem bij nee het onderwerp waar het thuishoort. (*betekenis in onderwerp*)
 
 **Aard.** Altijd. Precies één ja; alleen *handelende partij* met *hoedanigheid* of met *samenwerkingsverband* mag samen.
 
@@ -123,7 +123,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 | **buiten dit model**: Is het een doel, waarde, drijfveer, principe, losse norm of eis, vermogen of thema, en geen beleidskader? Noem het ArchiMate-type. | Ja: armoedebestrijding (doel); 'binnen acht weken beslissen' (norm uit één artikel). Nee: bijstandsuitkering; Wet op de lijkbezorging (beleidskader). Herkomst: ArchiMate (motivatie-, strategie- en overige lagen). |
 | **slechts eigenschap**: Is het alleen een eigenschap, status, waarde, classificatie of indeling van één ander begrip, ook een doelgroep? Noem dat begrip. | Ja: bouwjaar (van Pand); minima (indeling van Inwoner). Nee: Pand. Herkomst: GEMMA (negatieve toets: eigenschap, status, classificatie). |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? Noem bij nee dat begrip. | Ja: Beschikking; uitgifte van een graf. Nee: ondertekening van een besluit (deelstap). Herkomst: GEMMA (eigen bestaan; procesarchitectuur: processtap, handeling). |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? Noem bij nee dat onderwerp. | Ja: Graf in lijkbezorging. Nee: akte van overlijden in lijkbezorging (hoort bij de burgerlijke stand). Herkomst: GEMMA (betekenis binnen het onderwerp). |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? Noem bij nee het onderwerp waar het thuishoort. | Ja: Graf in lijkbezorging. Nee: akte van overlijden in lijkbezorging (hoort bij de burgerlijke stand). Herkomst: GEMMA (betekenis binnen het onderwerp). |
 
 **Aard.** Altijd. Precies één ja; alleen *handelende partij* met *hoedanigheid* of met *samenwerkingsverband* mag samen.
 

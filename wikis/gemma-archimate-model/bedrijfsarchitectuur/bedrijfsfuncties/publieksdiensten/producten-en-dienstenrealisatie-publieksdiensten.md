@@ -70,7 +70,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie onder Uitvoering Publieksdiensten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof af (RVO; art. 11). [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige functie in de GEMMA-functie-indeling, met eigen functies eronder. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? | Ja, geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert het leveren van producten en diensten aan inwoners en ondernemers in het domein Publieksdiensten, zoals burgerlijke stand, bevolkingsadministratie en officiële documenten; geen eigen volgorde of doorlooptijd. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, voor de burgerlijke stand de ambtenaar van de burgerlijke stand (art. 11). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
@@ -89,7 +89,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 |---|---|---|---|
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Burgerlijke stand diensten](burgerlijke-stand-diensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-efd77657-f6f9-457c-a9e8-93d6d11647df) |
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc) |
-| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md) | [UPL-lijst extern](../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 45 (GEMMA-domein Publieksdiensten)) |
+| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md) | [UPL-lijst extern](../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 45 (GEMMA-domein Publieksdiensten)) |
 
 #### Inkomend
 
@@ -106,7 +106,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
 | [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
-| [UPL-lijst extern](../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [UPL-lijst extern](../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 

@@ -89,8 +89,8 @@ KENMERKEN: list[Kenmerk] = [
             "Beschikking; uitgifte van een graf", "ondertekening van een besluit (deelstap)",
             "GEMMA (eigen bestaan; procesarchitectuur: processtap, handeling)"),
     Kenmerk("betekenis_in_onderwerp", "betekenis in onderwerp", "Poort",
-            "Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? "
-            "Noem bij nee dat onderwerp.",
+            "Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij "
+            "een ander onderwerp? Noem bij nee het onderwerp waar het thuishoort.",
             "Graf in lijkbezorging", "akte van overlijden in lijkbezorging (hoort bij de burgerlijke stand)",
             "GEMMA (betekenis binnen het onderwerp)"),
     # Aard (precies één ja; handelende partij met hoedanigheid of met samenwerkingsverband mag samen)
@@ -1154,7 +1154,9 @@ def schema() -> dict:
         "required": ["begrip", "onderwerpen", "kenmerken"],
         "properties": {
             "begrip": {**tekst, "description": "De naam: de gangbare term uit beleid en praktijk"},
-            "onderwerpen": {"type": "array", "minItems": 1, "items": id_},
+            "onderwerpen": {"type": "array", "minItems": 1, "items": id_,
+                            "description": "Het eerste is het thuisonderwerp (regel Thuishoren); de andere gebruiken het "
+                                           "element met relaties en per_onderwerp"},
             "kenmerken": {
                 "type": "object",
                 "required": SLEUTELS,

@@ -71,7 +71,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten; vergunningverlening voor lokale activiteiten is een gangbaar begrip. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente verleent de vergunning om de uitvaart te vervroegen of uit te stellen, met toestemming van de burgemeester (RVO; art. 17). [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige functie in de GEMMA-functie-indeling. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? | Ja, geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor vergunningen. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor vergunningen. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert het beheren en verlenen van vergunningen voor lokale activiteiten op grond van vergelijkbare kennis van aanvragen, toetsen en beslissen; geen eigen volgorde of doorlooptijd. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, de burgemeester beslist over een andere termijn voor begraving of crematie (art. 17). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
@@ -90,7 +90,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 |---|---|---|---|
 | Vergunningenbeheer Publieksdiensten | omvat *aggregatie* | [Uitvaart vervroegen of uitstellen](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvaart-vervroegen-of-uitstellen.md) | [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (§ Uitvaart vervroegen, § Uitvaart uitstellen) |
 | Vergunningenbeheer Publieksdiensten | bedient *bediening* | [Stellen andere termijn](../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) | [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17) |
-| Vergunningenbeheer Publieksdiensten | omvat *aggregatie* | [Bijzondere begraafplaats toestemming](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzondere-begraafplaats-toestemming.md) | [UPL-lijst extern](../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 71 (GEMMA-domein Publieksdiensten)) |
+| Vergunningenbeheer Publieksdiensten | omvat *aggregatie* | [Bijzondere begraafplaats toestemming](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzondere-begraafplaats-toestemming.md) | [UPL-lijst extern](../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 71 (GEMMA-domein Publieksdiensten)) |
 
 #### Inkomend
 
@@ -107,7 +107,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
 | [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
-| [UPL-lijst extern](../../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [UPL-lijst extern](../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 

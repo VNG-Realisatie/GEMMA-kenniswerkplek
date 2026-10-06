@@ -477,6 +477,9 @@ def begrippenlijst(w: Wiki, oid: str) -> str:
             continue
         a = d["afgeleid"]
         reden = d.get("toelichting") or a["uitkomst"]["toelichting"]
+        t = gam_gemeen.thuis(d)
+        if t != oid:
+            reden = f"Uit onderwerp [{w.onderwerpen.get(t, {}).get('naam', t)}]({w.rel(van, f'{w.onderwerp_dir}/{t}.md')}). " + reden
         if a.get("open"):
             reden += " Voorleggen: " + "; ".join(a["open"]) + "."
         ggm = (a.get("ggm") or {}).get("ggm_entiteit")
@@ -720,6 +723,28 @@ def ter_beoordeling(w: Wiki) -> str:
     return _pagina(meta, r)
 
 
+def _samenhang(w: Wiki) -> list[str]:
+    """Per onderwerp de elementen die er thuishoren, die het uit andere onderwerpen gebruikt, en de relaties binnen het
+    onderwerp en met andere onderwerpen (regels Thuishoren en Relaties tussen onderwerpen)."""
+    elementen = {b for b, d in w.begrippen.items() if d.get("status") and d["status"] != "afgewezen"}
+    per = gam_gemeen.relaties_per_onderwerp(w.begrippen, elementen)
+    rijen = []
+    for oid, o in w.onderwerpen.items():
+        eigen = [b for b in elementen if gam_gemeen.thuis(w.begrippen[b]) == oid]
+        gebruikt = [b for b in elementen if oid in w.begrippen[b]["onderwerpen"][1:]]
+        binnen = sum(per[b].get(oid, 0) for b in eigen) // 2
+        andere: dict[str, int] = {}
+        for b in eigen:
+            for ander, n in per[b].items():
+                if ander != oid:
+                    andere[ander] = andere.get(ander, 0) + n
+        rijen.append([o["naam"], len(eigen), len(gebruikt), binnen,
+                      ", ".join(f"{w.onderwerpen.get(a, {}).get('naam', a)} {n}" for a, n in sorted(andere.items())) or "—"])
+    return ["Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tussen elementen, in beide "
+            "richtingen; weinig relaties met andere onderwerpen is een goede grens.", "",
+            *_tabel(["Onderwerp", "Elementen", "Gebruikt uit andere", "Relaties binnen", "Relaties met andere"], rijen)]
+
+
 def voortgang(w: Wiki) -> str:
     meta = {"id": "voortgang", "type": "analyse", "titel": "Voortgang"}
     r = ["# Voortgang", "", _gegenereerd("de beoordelingen"), ""]
@@ -729,6 +754,7 @@ def voortgang(w: Wiki) -> str:
         rijen.append([f"[{o['naam']}]({w.onderwerp_dir}/{oid}.md)", o.get("status", "in-behandeling"), len(eigen),
                       sum(1 for d in eigen if d.get("status"))])
     r += _sectie("Onderwerpen", _tabel(["Onderwerp", "Status", "Begrippen", "Elementen"], rijen))
+    r += _sectie("Samenhang tussen onderwerpen", _samenhang(w))
     typen: dict[str, dict[str, int]] = {}
     for d in w.begrippen.values():
         if d.get("status"):

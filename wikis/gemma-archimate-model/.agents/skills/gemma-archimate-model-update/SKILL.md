@@ -16,7 +16,7 @@ Volg skill `wiki-curatie-update`. Deze workflow vult de stappen in voor deze wik
 
 | # | Stap | Wie | Denkniveau | Hoe | Resultaat |
 |---|---|---|---|---|---|
-| 1 | Onderwerp | AI met redacteur | middel | Bestaat `beoordelingen/onderwerpen/<onderwerp>.yaml` niet, maak het dan in overleg (naam, omschrijving als alinea's, bronnen, status `in-behandeling`); bepaal de grens op modulariteit (regel Grenzen van een onderwerp) en noem in de omschrijving wat buiten het onderwerp valt en bij welk onderwerp het thuishoort | onderwerp |
+| 1 | Onderwerp | AI met redacteur | middel | Bestaat `beoordelingen/onderwerpen/<onderwerp>.yaml` niet, maak het dan in overleg (naam, omschrijving als alinea's, bronnen, status `in-behandeling`); noem in de omschrijving de kernobjecten, en wat buiten het onderwerp valt met het onderwerp waar het thuishoort (regel Thuishoren) | onderwerp |
 | 2 | Bronnen en bronanalyse | AI | middel | Skill `gemma-archimate-model-ingest`; daarna de kernpunten bespreken met de redacteur | `sources/`, `bronanalyses/<onderwerp>/` |
 | 3 | Beoordelen | AI | hoog | Skill `gemma-archimate-model-beoordelen`: per begrip een beoordeling met kenmerken, tekst, match, relaties en terugmeldingen; lees eerst `analyses/besluiten-redacteur.md` | `beoordelingen/begrippen/<id>.yaml`, `beoordelingen/terugmeldingen.yaml` |
 | 4 | Afleiden en renderen | script | hoog | `uv run python tools/afleiden.py`. Een fout lost de AI op in de beoordeling en draait opnieuw. Een waarschuwing beoordeelt de AI inhoudelijk: oplossen of toelichten | status, pagina's, `ter-beoordeling.md` |

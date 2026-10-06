@@ -563,3 +563,57 @@ def test_overzicht_per_onderwerp_toont_de_views(wiki):
     lijst = (wiki / "begrippen" / "test.md").read_text(encoding="utf-8")
     assert "overzichten/test.md" in lijst
     assert render.main(["--wiki", str(wiki), "--check"]) == 0
+
+
+def test_signalen_voor_een_model_over_alle_onderwerpen():
+    import signalen
+
+    el = lambda paginatype, **u: {"soort": "element", "paginatype": paginatype, **u}  # noqa: E731
+    rel = lambda naar: {"soort": "associatie", "naar": naar}  # noqa: E731
+    alle = {
+        "graf": {"begrip": "Graf", "onderwerpen": ["lijkbezorging"], "synoniemen": [{"naam": "Grafplaats", "context": "beleid"}],
+                 "gemma": {"id": "id-1", "sterkte": "sterk"}, "relaties": [rel("beheren-graf")]},
+        "grafplaats": {"begrip": "Grafplaats", "onderwerpen": ["lijkbezorging"], "gemma": {"id": "id-1", "sterkte": "exact"},
+                       "relaties": [rel("graf")]},
+        "gezindte": {"begrip": "Gezindte", "onderwerpen": ["lijkbezorging"], "synoniem_van": "Kerkgenootschap"},
+        "kerkgenootschap": {"begrip": "Kerkgenootschap", "onderwerpen": ["lijkbezorging"],
+                            "synoniemen": [{"naam": "Gezindte", "context": "wet"}], "relaties": [rel("graf")]},
+        "beheren-graf": {"begrip": "Beheren graf", "onderwerpen": ["burgerzaken", "lijkbezorging"], "kernobject": "graf"},
+        "beschikking": {"begrip": "Beschikking", "onderwerpen": ["algemeen"], "relaties": [rel("akte-opmaken")]},
+        "akte-opmaken": {"begrip": "Opmaken akte", "onderwerpen": ["burgerzaken"], "kernobject": "beschikking",
+                         "relaties": [rel("ambtenaar")]},
+        "ambtenaar": {"begrip": "Ambtenaar", "onderwerpen": ["lijkbezorging"], "relaties": [rel("beheren-graf")]},
+        "akte": {"begrip": "Akte", "onderwerpen": ["lijkbezorging"],
+                 "kenmerken": {"betekenis_in_onderwerp": {"onderbouwing": "Hoort bij Burgerzaken."}}},
+        "wees": {"begrip": "Wees", "onderwerpen": ["lijkbezorging"]},
+    }
+    uitkomsten = {b: el("bedrijfsobject") for b in alle}
+    uitkomsten["gezindte"] = {"soort": "synoniem"}
+    uitkomsten["akte"] = {"soort": "verwijzing"}
+    uitkomsten["beschikking"] = el("bedrijfsobject", objectniveau="generiek")
+    onderwerpen = {o: {"naam": o.capitalize()} for o in ("lijkbezorging", "burgerzaken", "algemeen")}
+    tekst = "\n".join(signalen.modulariteit(alle, uitkomsten, onderwerpen))
+    assert "'grafplaats' is naam of synoniem van graf, grafplaats" in tekst and "regel Eén element" in tekst
+    assert "gezindte" not in tekst
+    assert "graf, grafplaats: zelfde GEMMA-match id-1" in tekst
+    assert "beheren-graf: thuisonderwerp 'burgerzaken', maar het kernobject graf hoort bij 'lijkbezorging'" in tekst
+    assert "akte-opmaken: thuisonderwerp" not in tekst  # generiek kernobject
+    assert "akte: verwijst naar onderwerp 'burgerzaken'" in tekst
+    assert "wees: geen relatie met een ander element" in tekst
+    assert "ambtenaar: 2 relaties met elementen van 'burgerzaken' en 0 met het eigen thuisonderwerp" in tekst
+    assert "beschikking: " not in tekst.replace("kernobject", "")
+
+
+def test_begrippenlijst_en_voortgang_tonen_thuisonderwerp_en_samenhang(wiki):
+    beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/ander.yaml",
+                        {"naam": "Ander", "status": "in-behandeling", "omschrijving": ["Een ander onderwerp."], "bronnen": []})
+    _schrijf(wiki, "beschikking", _bo(onderwerpen=["ander", "test"]))
+    _schrijf(wiki, "behandelen-aanvraag", _proces())
+    res = _afleiden(wiki)
+    assert not any("behandelen-aanvraag: thuisonderwerp" in w for w in res.waarschuwingen)  # generiek kernobject
+    lijst = (wiki / "begrippen" / "test.md").read_text(encoding="utf-8")
+    assert "Uit onderwerp [Ander](ander.md)." in lijst
+    assert "Uit onderwerp" not in (wiki / "begrippen" / "ander.md").read_text(encoding="utf-8")
+    voortgang = (wiki / "voortgang.md").read_text(encoding="utf-8")
+    assert "## Samenhang tussen onderwerpen" in voortgang
+    assert "| Ander | 1 | 0 | 0 | Test 1 |" in voortgang and "| Test | 1 | 1 | 0 | Ander 1 |" in voortgang

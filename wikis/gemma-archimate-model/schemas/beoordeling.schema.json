@@ -20,7 +20,8 @@
       "items": {
         "type": "string",
         "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
-      }
+      },
+      "description": "Het eerste is het thuisonderwerp (regel Thuishoren); de andere gebruiken het element met relaties en per_onderwerp"
     },
     "kenmerken": {
       "type": "object",

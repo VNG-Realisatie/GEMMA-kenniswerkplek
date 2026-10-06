@@ -4,7 +4,9 @@
   wijzigde;
 - secties, tabellen en links in Markdown lezen (bronanalyses);
 - bronverwijzingen: pagina → bronanalyse (domein-lens) → sources/raw/;
-- modelbestanden ophalen van GitHub.
+- modelbestanden ophalen van GitHub;
+- onderwerpen als één model: thuisonderwerp en relaties tussen onderwerpen (regels Thuishoren, Relaties tussen
+  onderwerpen).
 """
 from __future__ import annotations
 
@@ -16,6 +18,7 @@ from llmwiki import hashing, paths
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 GEGENEREERD_PREFIX = "<!-- gegenereerd door "
+ALGEMEEN = "algemeen"  # het onderwerp van de generieke elementen en de organen van de gemeente (besluit 2026-10-06)
 GEGENEREERD_RE = re.compile(r"^<!-- gegenereerd door (?P<tool>\S+); hash: (?P<hash>[0-9a-f]{64}) -->\n")
 
 
@@ -189,3 +192,30 @@ def haal_op(wiki_root: Path, sleutel: str, bron_id: str, ref: str | None = None,
     doel.parent.mkdir(parents=True, exist_ok=True)
     doel.write_bytes(fetch.fetch(url, timeout=300).inhoud)
     return doel, url, weergave
+
+
+# --- Onderwerpen als één model ---
+
+
+def thuis(data: dict) -> str:
+    """Het thuisonderwerp van een beoordeling: het eerste in `onderwerpen` (regel Thuishoren)."""
+    return data["onderwerpen"][0]
+
+
+def is_generiek(data: dict, uitkomst: dict | None) -> bool:
+    """Generiek element (kenmerk *generiek*) of thuis in het algemene onderwerp: telt niet mee voor de koppeling."""
+    u = uitkomst or {}
+    return thuis(data) == ALGEMEEN or bool(u.get("generiek")) or u.get("objectniveau") == "generiek"
+
+
+def relaties_per_onderwerp(alle: dict[str, dict], elementen: set[str]) -> dict[str, dict[str, int]]:
+    """Per element het aantal relaties (beide richtingen) met elementen, naar het thuisonderwerp van de andere kant."""
+    uit: dict[str, dict[str, int]] = {b: {} for b in elementen}
+    for van in sorted(elementen):
+        for r in alle[van].get("relaties", []):
+            naar = r["naar"]
+            if naar not in elementen or naar == van:
+                continue
+            uit[van][thuis(alle[naar])] = uit[van].get(thuis(alle[naar]), 0) + 1
+            uit[naar][thuis(alle[van])] = uit[naar].get(thuis(alle[van]), 0) + 1
+    return uit

@@ -392,6 +392,7 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     gemeld = [m for m in (pa_register or {}).get("terugmeldingen", []) if m.get("status") != "afgewezen"]
     res.waarschuwingen += signalen.over_begrippen({b: d for b, (_, d) in alle.items()}, uitkomsten,
                                                   {e for m in gemeld if m["type"] == "kennismodel" for e in m.get("elementen") or []})
+    res.waarschuwingen += signalen.modulariteit({b: d for b, (_, d) in alle.items()}, uitkomsten, onderwerpen)
     elementen = {b: u for b, u in uitkomsten.items() if u and u["soort"] == "element"}
     functies = [b for b, u in elementen.items() if u["paginatype"] == "bedrijfsfunctie"]
     if any(u["paginatype"] in ("bedrijfsfunctie", "product", "dienst") for u in elementen.values()):

@@ -246,13 +246,73 @@ def over_begrippen(alle: dict[str, dict], uitkomsten: dict[str, dict | None], ge
         if u["paginatype"] == "gebeurtenis" and not any(van == bid and r["soort"] == "triggering" for van, r in relaties):
             w.append(f"{bid}: deze gebeurtenis start geen gedrag: proces als kandidaat voorleggen (beslistabel)")
     w += indeling(alle, elementen, relaties, gemeld)
-    bij: dict[str, list[str]] = {}
-    for bid in elementen:
-        for s in alle[bid].get("synoniemen", []):
-            bij.setdefault(s["naam"].strip().lower(), []).append(bid)
-    for naam, ids in sorted(bij.items()):
-        if len(ids) > 1:
-            w.append(f"synoniem '{naam}' staat bij meer elementen ({', '.join(ids)}): homoniem of fout")
+    return w
+
+
+def _gekoppeld(alle: dict[str, dict], a: str, b: str) -> bool:
+    """Twee beoordelingen met een gelijke naam zijn verantwoord: de een is `synoniem_van` de ander, of een homoniem."""
+    for x, y in ((a, b), (b, a)):
+        doel = (alle[x].get("synoniem_van") or "").strip().lower()
+        if doel and doel in (y, alle[y]["begrip"].strip().lower()):
+            return True
+        if any(h.get("element") == y for h in alle[x].get("homoniemen", [])):
+            return True
+    return False
+
+
+def modulariteit(alle: dict[str, dict], uitkomsten: dict[str, dict | None], onderwerpen: dict[str, dict]) -> list[str]:
+    """Signalen voor één model over alle onderwerpen (regels Eén element in het hele model, Thuishoren, Relaties tussen
+    onderwerpen; besluit 2026-10-06). Het thuisonderwerp is het eerste in `onderwerpen`."""
+    w = []
+    beoordeeld = {b for b, u in uitkomsten.items() if u}
+    elementen = {b for b in beoordeeld if uitkomsten[b]["soort"] == "element"}
+
+    namen: dict[str, set[str]] = {}
+    for bid in beoordeeld:
+        for naam in [alle[bid]["begrip"], *[s["naam"] for s in alle[bid].get("synoniemen", [])]]:
+            namen.setdefault(naam.strip().lower(), set()).add(bid)
+    for naam, ids in sorted(namen.items()):
+        ids_ = sorted(ids)
+        if any(not _gekoppeld(alle, a, b) for i, a in enumerate(ids_) for b in ids_[i + 1:]):
+            w.append(f"'{naam}' is naam of synoniem van {', '.join(ids_)}: één begrip (één beoordeling, of "
+                     "`synoniem_van`) of een homoniem (`homoniemen`) (regel Eén element in het hele model)")
+
+    for veld, sleutel in (("gemma", "id"), ("ggm", "guid")):
+        per_match: dict[str, list[str]] = {}
+        for bid in sorted(elementen):
+            m = alle[bid].get(veld) or {}
+            if m.get(sleutel) and m.get("sterkte") in ("exact", "sterk"):
+                per_match.setdefault(m[sleutel], []).append(bid)
+        for match, ids_ in sorted(per_match.items()):
+            if len(ids_) > 1:
+                w.append(f"{', '.join(ids_)}: zelfde {veld.upper()}-match {match} (exact of sterk): één element, of een "
+                         "zwakkere match (regel Eén element in het hele model)")
+
+    for bid in sorted(elementen):
+        ko = alle[bid].get("kernobject")
+        if ko in elementen and not gam_gemeen.is_generiek(alle[ko], uitkomsten[ko])                 and gam_gemeen.thuis(alle[bid]) != gam_gemeen.thuis(alle[ko]):
+            w.append(f"{bid}: thuisonderwerp '{gam_gemeen.thuis(alle[bid])}', maar het kernobject {ko} hoort bij "
+                     f"'{gam_gemeen.thuis(alle[ko])}' (regel Thuishoren)")
+
+    for bid in sorted(b for b in beoordeeld if uitkomsten[b]["soort"] == "verwijzing"):
+        tekst = (alle[bid]["kenmerken"].get("betekenis_in_onderwerp") or {}).get("onderbouwing", "")
+        for oid, o in sorted(onderwerpen.items()):
+            if oid != gam_gemeen.thuis(alle[bid]) and re.search(
+                    rf"\b(?:{re.escape(oid)}|{re.escape(o.get('naam') or oid)})\b", tekst, re.IGNORECASE):
+                w.append(f"{bid}: verwijst naar onderwerp '{oid}', dat nu bestaat: beoordeel het daar en zet '{oid}' "
+                         "als eerste in onderwerpen (regel Thuishoren)")
+
+    alle_rel = gam_gemeen.relaties_per_onderwerp(alle, elementen)
+    for bid in sorted(elementen):
+        if not alle_rel[bid]:
+            w.append(f"{bid}: geen relatie met een ander element (regel Relaties tussen onderwerpen)")
+    specifiek = {b for b in elementen if not gam_gemeen.is_generiek(alle[b], uitkomsten[b])}
+    for bid, per in sorted(gam_gemeen.relaties_per_onderwerp(alle, specifiek).items()):
+        eigen = per.get(gam_gemeen.thuis(alle[bid]), 0)
+        for oid, n in sorted(per.items()):
+            if oid != gam_gemeen.thuis(alle[bid]) and n > eigen:
+                w.append(f"{bid}: {n} relaties met elementen van '{oid}' en {eigen} met het eigen thuisonderwerp "
+                         f"'{gam_gemeen.thuis(alle[bid])}': hoort het daar thuis? (regel Thuishoren)")
     return w
 
 

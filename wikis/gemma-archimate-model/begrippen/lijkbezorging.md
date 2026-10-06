@@ -43,7 +43,7 @@ De views op de indelingen staan in het [overzicht](../overzichten/lijkbezorging.
 - [Algemene wet bestuursrecht (BWBR0005537)](../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
 - [Burgerlijk Wetboek Boek 2 Rechtspersonen (BWBR0003045)](../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md)
 - [Aangifte en akte van overlijden (Ondernemersplein)](../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md)
-- [Standaard producten en dienstenlijst extern basis UPL](../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md)
+- [Standaard producten en dienstenlijst extern basis UPL](../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md)
 - [Besluit op de lijkbezorging](../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md)
 - [Algemene Plaatselijke Verordening Groningen 2021](../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md)
 

@@ -52,10 +52,10 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de AMvB bij de Wet op de lijkbezorging; de UPL noemt haar als grondslag (UPL nr. 445). [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de AMvB bij de Wet op de lijkbezorging; de UPL noemt haar als grondslag (UPL nr. 445). [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft de burgemeester taken: het laissez-passer voor lijken afgeven en beslissen op een verlof tot ontleding (art. 11, 17). [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, en niet bij een ander onderwerp waar het wordt beoordeeld? | Ja, hoort primair bij de lijkbezorging. [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij de lijkbezorging. [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde algemene maatregel van bestuur als geheel (BWBR0009080). [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **landelijk**: Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? | Ja, rijksregelgeving: een algemene maatregel van bestuur. [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
@@ -81,7 +81,7 @@ Het besluit zelf ([2026-rijk-besluit-op-de-lijkbezorging-wettekst](../../bronana
 | Korte titel | Bron |
 |---|---|
 | [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) | Besluit op de lijkbezorging |
-| [UPL-lijst extern](../../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 
