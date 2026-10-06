@@ -30,3 +30,8 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 ## Algemeen onderwerp besluitvorming en heffingen
 
 - **VNG Modelverordening lijkbezorgingsrechten** (ledenbrief 2011, met kostenonderbouwing) als bron en mogelijk beleidskader opnemen bij het algemene onderwerp voor Heffing en Heffingsverordening (besluit redacteur 2026-10-01). De link op de VNG-pagina `https://vng.nl/artikelen/modelverordeningen-wet-op-de-lijkbezorging` geeft een 404; zoek een openbare kopie.
+
+## Onderwerpen als één model (besluit 2026-10-06)
+
+- **Controle op dubbelingen en koppeling**: een script of signaal in `tools/signalen.py` dat elementen met dezelfde naam of hetzelfde synoniem in meer onderwerpen meldt, en per onderwerp het aantal relaties naar andere onderwerpen toont (samenhang tegenover koppeling), als hulp bij de regels Eén element in het hele model en Thuishoren.
+- **Bestaande beoordelingen toetsen** op Thuishoren, te beginnen bij de overlijdensaangifte en overlijdensakte (nu Lijkbezorging, thuishoort Burgerzaken): per geval verplaatsen.

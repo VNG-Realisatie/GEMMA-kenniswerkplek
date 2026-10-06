@@ -2,7 +2,7 @@
 id: besluiten-redacteur
 type: analyse
 titel: Besluiten van de redacteur
-bijgewerkt: '2026-10-05'
+bijgewerkt: '2026-10-06'
 ---
 
 # Besluiten van de redacteur
@@ -73,6 +73,9 @@ Besluiten over de werkwijze en de criteria staan bij de analyse waar ze bij hore
 | 2026-10-05 | Procesarchitectuur-terugmeldingen | (alle) | Een register van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel), naast de GGM-terugmeldingen. Het model mag afwijken van de UPL-indeling, mits teruggemeld. Eerste meldingen: de domeinen van het beleidsdomein Begraafplaatsen en crematoria, en het taakveld van verlof tot begraven en van ontleding stoffelijk overschot toestemming. |
 | 2026-10-05 | Objectbehoud in Archi | (alle) | Hernoemen, samenvoegen en splitsen leiden niet vanzelf tot nieuwe objecten in Archi: de redacteur gebruikt de objecten in views, die de export niet bijwerkt. Het register `beoordelingen/objecten.yaml` legt vast welk object een element voortzet. Bij samenvoegen kiest de redacteur of en welk object blijft, bij splitsen of er een blijft en welk deel het krijgt. De zeven hernoemingen van 2026-10-05 houden zo hun object (Lijk, Bezorgen lijken, Opgraven lijk, Schouwen lijk, Treffen maatregel bij besmet lijk, Besmet lijk gemeld, Onderhoud van graven). |
 | 2026-10-05 | Stoffelijk overschot in lopende tekst | lijkbezorging | Per element beoordeeld (19 elementen): in definitie, beschrijving en tekst per onderwerp wordt lijk stoffelijk overschot, ook waar een zin de inhoud van een register beschrijft (Graf, Houder van het crematorium). Blijven staan: de wetsterm waar het over het begrip zelf gaat (Wet op de lijkbezorging: "bepaalt wat een lijk is"), de vaste termen lijkbezorging, lijkschouwing, lijkschouwer en laissez-passer voor lijken, het begrip Register van begraven lijken en synoniemen met context wet. Maatregel bij besmet lijk (specialisatie van Beschikking, geen pagina) heet Maatregel bij besmet stoffelijk overschot. |
+| 2026-10-06 | Eén element in het hele model | (alle) | Geen dubbelingen tussen onderwerpen: een begrip is één element, geplaatst bij het onderwerp met de meeste samenhang (maximale samenhang, minimale koppeling), met relaties naar de andere onderwerpen; de onderwerpgrenzen volgen modulariteit. Vastgelegd in de regels Eén element in het hele model, Thuishoren, Relaties tussen onderwerpen en Grenzen van een onderwerp. Het overlijden (aangifte, akte) hoort bij Burgerzaken, het verlof tot begraven en het laissez-passer bij Lijkbezorging. |
+| 2026-10-06 | Tegenspraak tussen bronnen | (alle) | Beide vastleggen en markeren; wat formeel geldt volgt de bronvoorrang (wet vóór praktijk). Voorbeeld: de bevestigingstermijn van de optie (wet 13 weken, Utrecht 13 tot 26 weken). |
+| 2026-10-06 | Afbakening Burgerzaken | burgerzaken | Eén onderwerp; producten en diensten uit Utrecht en de UPL onder 0.2; het Logisch Ontwerp BRP en de HUP alleen op object- en gebeurtenisniveau; Kieswet en Rijkswet alleen de gemeentelijke taak. Producten waar de gemeente een eigen handeling heeft, worden opgenomen ook als de rechtbank beslist; varianten zijn een apart product waar de UPL ze apart noemt; de wetsterm is een synoniem van de gangbare naam; adresonderzoek, verwijdering of overschrijving (art. 2.57), levenloos geboren kind (art. 2.56a) en correctieverzoek (art. 2.58 e.v.) worden als deelproces beoordeeld; de volmacht is een dienst, het bewijs een onderdeel; de gemeentelijke rol bij de Rijkswet komt uit het Besluit verkrijging en verlies Nederlanderschap. |
 
 ## Open punten uit eerdere besluiten
 
