@@ -117,6 +117,7 @@ class Wiki:
         self.log = log.read_text(encoding="utf-8") if log.exists() else ""
         self.onderwerp_dir = self.yaml["page_types"].get("onderwerp", {}).get("dir", "begrippen")
         self._titels: dict[str, str] = {}
+        self._korte_titels: dict[str, str] = {}
 
     def pad(self, bid: str) -> str | None:
         return (self.begrippen.get(bid, {}).get("afgeleid") or {}).get("pad")
@@ -144,9 +145,11 @@ class Wiki:
         for model in ("ggm", "gemma"):
             if self.yaml.get(model, {}).get("bron") == bron_id:
                 return model.upper()
-        doel = gam_gemeen.bron_doel(self.root, bron_id)
-        binnen = doel is not None and doel.is_relative_to(self.root.resolve())
-        return (frontmatter.read(doel).meta.get("korte_titel") if binnen else None) or self.titel(bron_id)
+        if bron_id not in self._korte_titels:
+            doel = gam_gemeen.bron_doel(self.root, bron_id)
+            binnen = doel is not None and doel.is_relative_to(self.root.resolve())
+            self._korte_titels[bron_id] = (frontmatter.read(doel).meta.get("korte_titel") if binnen else None) or self.titel(bron_id)
+        return self._korte_titels[bron_id]
 
     def bron(self, van: str, bron_id: str, tekst: str | None = None) -> str:
         doel = gam_gemeen.bron_doel(self.root, bron_id)

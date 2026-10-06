@@ -13,6 +13,9 @@ from pathlib import Path
 
 import yaml
 
+# De C-versie van de veilige loader (libyaml) als die er is: tien keer sneller, dezelfde uitkomst.
+SNELLE_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
+
 from . import hashing
 
 SCRIPTVELDEN = ("status", "afgeleid")
@@ -24,7 +27,7 @@ def map_(wiki_root: Path, wiki_yaml: dict) -> Path | None:
 
 
 def laad(pad: Path) -> dict:
-    data = yaml.safe_load(pad.read_text(encoding="utf-8")) or {}
+    data = yaml.load(pad.read_text(encoding="utf-8"), Loader=SNELLE_LOADER) or {}
     if not isinstance(data, dict):
         raise ValueError(f"{pad}: een beoordeling moet een YAML-object zijn")
     return data

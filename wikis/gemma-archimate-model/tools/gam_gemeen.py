@@ -10,6 +10,8 @@
 """
 from __future__ import annotations
 
+import copy
+import functools
 import json
 import re
 from pathlib import Path
@@ -23,6 +25,13 @@ GEGENEREERD_RE = re.compile(r"^<!-- gegenereerd door (?P<tool>\S+); hash: (?P<ha
 
 
 def wiki_yaml(wiki_root: Path = WIKI_ROOT) -> dict:
+    """wiki.yaml, één keer per proces gelezen (de render vraagt haar per bronverwijzing op); een kopie, zodat een
+    aanroeper de gedeelde versie niet kan wijzigen."""
+    return copy.deepcopy(_wiki_yaml(Path(wiki_root).resolve()))
+
+
+@functools.cache
+def _wiki_yaml(wiki_root: Path) -> dict:
     return paths.load_wiki_yaml(wiki_root)
 
 

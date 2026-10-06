@@ -6,6 +6,9 @@ from pathlib import Path
 
 import yaml
 
+# De C-versie van de veilige loader (libyaml) als die er is: tien keer sneller, dezelfde uitkomst.
+SNELLE_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
+
 FRONTMATTER_DELIM = "---"
 
 
@@ -32,7 +35,7 @@ def parse(text: str) -> Page:
         raise ValueError("Ongesloten YAML-frontmatter (geen tweede '---' gevonden)") from exc
     yaml_text = "\n".join(lines[1:end])
     body = "\n".join(lines[end + 1 :])
-    meta = yaml.safe_load(yaml_text) or {}
+    meta = yaml.load(yaml_text, Loader=SNELLE_LOADER) or {}
     if not isinstance(meta, dict):
         raise ValueError("Frontmatter moet een YAML-object (mapping) zijn")
     return Page(meta=meta, body=body)
