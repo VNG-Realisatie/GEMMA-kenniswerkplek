@@ -83,6 +83,13 @@ Besluiten over de werkwijze en de criteria staan bij de analyse waar ze bij hore
 | 2026-10-06 | Generieke elementen en organen naar Algemeen | algemeen | Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd. |
 | 2026-10-06 | Homoniemen Andere termijn en Laissez-passer voor lijken | lijkbezorging | Vastgelegd als homoniemen (regel Eén element in het hele model): het besluit of document zelf is een specialisatie zonder pagina (van Beschikking, van Vergunning), de dienst heet Uitvaart vervroegen of uitstellen en Vervoersdocumenten stoffelijk overschot en houdt de term als synoniem (wet). |
 | 2026-10-06 | Beslisser | algemeen | Generiek: de GEMMA-rol Beslisser geldt in elk onderwerp en verhuist naar Algemeen (`algemeen` eerste in `onderwerpen`). Het kenmerk *generiek* blijft nee: Beslisser is zelf de generieke GEMMA-rol, geen variant daarvan. Belanghebbende hoort ook bij Algemeen; die beoordeling volgt (nog een verwijzing). |
+| 2026-10-07 | Ingeschreven persoon | burgerzaken | Thuisonderwerp Burgerzaken, niet generiek: de persoon ontstaat en verandert in de bijhouding van de BRP; andere onderwerpen gebruiken het met relaties. Kernobject van Bijhouden persoonsgegevens. |
+| 2026-10-07 | Verblijfplaats | burgerzaken | Koppelen aan het GEMMA-bedrijfsobject Verblijfplaats (partiële match): dezelfde naam en kern, het GEMMA-element is verweesd; de export overschrijft de definitie. |
+| 2026-10-07 | Producten- en dienstenrealisatie publieksdiensten | algemeen | Naar Algemeen (`algemeen` eerste in `onderwerpen`): generieke functie voor de publieksdiensten van alle onderwerpen; Lijkbezorging en Burgerzaken houden hun tekst per onderwerp. |
+| 2026-10-07 | Wet BRP, Besluit BRP | burgerzaken | Opnemen als beleidskader; grondslag van de BRP-diensten en -deelprocessen. |
+| 2026-10-07 | Akte van de burgerlijke stand, Reisdocument | burgerzaken | Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12). |
+| 2026-10-07 | Briefadres aanvragen | burgerzaken | Naam van de dienst, met briefadres (UPL) als synoniem; homoniem van het bedrijfsobject Briefadres. |
+| 2026-10-07 | Adres | burgerzaken | Verwijzing zonder pagina, voor een later onderwerp BAG of adressen. |
 
 ## Open punten uit eerdere besluiten
 

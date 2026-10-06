@@ -1,0 +1,355 @@
+begrip: Bevolkingsadministratie bijhouding
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden).
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  gedrag:
+    waarde: ja
+    onderbouwing: Een groep van activiteiten.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: ja
+    onderbouwing: Groepeert de bijhouding van de BRP en de dienstverlening daarover op grond van dezelfde kennis en bevoegdheid (medewerker BRP namens het college); geen eigen volgorde of doorlooptijd (HUP Algemeen).
+    bronnen:
+    - 2026-rvig-hup-algemeen
+    - 2026-vng-gemma-2026-10-02
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Bijhoudingsgemeente (HUP Achtergronden).
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Werkt de ingeschreven persoon en zijn verblijfplaats bij (HUP Achtergronden).
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: ja
+    onderbouwing: Volgt uit de wettelijke taak van het college in de BRP, los van de organisatie (HUP Achtergronden).
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: ja
+    onderbouwing: Bedient Bijhouden persoonsgegevens (HUP Algemeen).
+    bronnen:
+    - 2026-rvig-hup-algemeen
+  in_functie_indeling:
+    waarde: ja
+    onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling (GEMMA-relatie id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb).
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het uitvoeren van taken om de basisregistratie personen actueel en betrouwbaar te houden.
+beschrijving:
+- De functie omvat de bijhouding van de BRP (inschrijving, adreswijziging, emigratie, adresonderzoek, correctie) en de diensten die daaruit voortkomen, zoals uittreksels, geheimhouding en de verhuismelding (HUP Achtergronden; UPL).
+grondslag: bron
+gemma:
+  id: id-05ebfe88-2d7a-4093-bb4c-d9371baeb43c
+  sterkte: exact
+  onderbouwing: 'Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Bevolkingsadministratie bijhouding.'
+domein: Publieksdiensten
+relaties:
+- soort: bediening
+  naar: bijhouden-persoonsgegevens
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-algemeen
+  vindplaats: Doelgroep
+- soort: aggregatie
+  naar: brp-inschrijving
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 88 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: rni-inschrijving
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 369 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: verhuismelding
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 424 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: aangifte-vertrek-buitenland
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 1 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: briefadres-aanvragen
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 85 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: persoonsgegevens-verklaring-onder-eed-of-belofte
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 335 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: brp-geheimhoudingsverzoek
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 87 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: brp-uittreksel
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 93 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: brp-uittreksel-met-gezag
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 94 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: brp-inzagerecht
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 91 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: brp-inzagerecht-gegevensverstrekking
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 92 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: brp-wijzigingsverzoek
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 95 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: brp-adoptie-uitschrijving
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 86 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: onjuiste-inschrijving-op-adres-melden
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  vindplaats: inleiding
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-vng-gemma-2026-10-02
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2026-rvig-hup-algemeen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  herkomst: informatiemodel
+  gemma:
+    gemma_id: id-05ebfe88-2d7a-4093-bb4c-d9371baeb43c
+    gemma_naam: Bevolkingsadministratie bijhouding
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van taken om de Basisregistratie Personen actueel en betrouwbaar te houden
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: 05ebfe88-2d7a-4093-bb4c-d9371baeb43c
+      Toelichting: Bijv. het actualiseren van gegevens naar aanleiding van verleende diensten of het onderzoeken van persoons- en/of adres gegevens (bijv. n.a..v terugmeldingen)
+  pad: bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md

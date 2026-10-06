@@ -1,0 +1,402 @@
+begrip: Bijhouden persoonsgegevens
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Gangbare taak: medewerkers die persoonsgegevens in de BRP bijhouden, namens het college (HUP Algemeen; HUP Achtergronden).'
+    bronnen:
+    - 2026-rvig-hup-algemeen
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het college is verantwoordelijk voor de bijhouding van de gegevens van de ingezetenen (HUP Achtergronden; Circulaire adresonderzoek 1.1).
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rvig-hup-algemeen
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rvig-hup-algemeen
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per ingeschreven persoon doorlopen, van inschrijving tot opschorting (LO BRP 1.6).
+    bronnen:
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Bijhoudingsgemeente (HUP Achtergronden; HUP Intergemeentelijke adreswijziging).
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Schrijft de ingeschreven persoon in, werkt hem bij en verstrekt gegevens; raadpleegt akten en andere brondocumenten (HUP Achtergronden; HUP Algemeen).
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+    - 2026-rvig-hup-algemeen
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een aangifte van de persoon, een akte van de burgerlijke stand of een ander document (HUP Algemeen).
+    bronnen:
+    - 2026-rvig-hup-algemeen
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een actuele, juiste en betrouwbare persoonslijst (Circulaire adresonderzoek 1.1).
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elke ingeschreven persoon.
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Wet BRP, Besluit BRP en Regeling BRP, uitgewerkt in het LO BRP (LO BRP; Besluit BRP).
+    bronnen:
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+    - 2026-rijk-besluit-brp-bwbr0034306
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Levert zelf het eindresultaat voor zijn kernobject.
+  omvat_processen:
+    waarde: ja
+    onderbouwing: Inschrijven ingezetene, Verwerken adreswijziging, Verwerken emigratie, Uitvoeren adresonderzoek en de andere deelprocessen van de bijhouding (HUP Achtergronden; Circulaire adresonderzoek).
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  omvat_levensloop:
+    waarde: ja
+    onderbouwing: Van de eerste inschrijving via vervolginschrijvingen tot de opschorting bij emigratie, overlijden of fout (LO BRP 1.6; HUP Achtergronden).
+    bronnen:
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: De bijhouding van ingezetenen is een taak van het college; de minister houdt de niet-ingezetenen bij in de RNI en de IND levert gegevens, niet als uitvoerder van dit proces (HUP Achtergronden).
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: De deelprocessen leveren de producten en diensten.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt in een opgeschorte persoonslijst, niet in een benoemde toestandsverandering die een ander proces start.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.
+    bronnen:
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het bijhouden van de gegevens van een ingeschreven persoon in de basisregistratie personen, van inschrijving tot opschorting.
+beschrijving:
+- 'Bijhouden omvat het inschrijven van personen en het actualiseren, corrigeren en verwijderen van gegevens (HUP Achtergronden). De bijhouding is per gebeurtenis opgezet: een aangifte van de persoon, een akte uit de registers van de burgerlijke stand of een ander document, zoals een buitenlandse akte of een rechterlijke uitspraak; de gemeente ontleent de gegevens aan zulke brondocumenten (HUP Algemeen; HUP Achtergronden). Het college van de gemeente waar een ingezetene zijn adres heeft is verantwoordelijk; bij een verhuizing naar een andere gemeente gaat de persoonslijst naar de nieuwe bijhoudingsgemeente, bij emigratie naar de RNI (HUP Achtergronden; LO BRP 1.6).'
+- 'Registratiestappen zonder eigen besluit of product zijn processtappen zonder pagina: het onderzoeken en in onderzoek stellen van gegevens, het vaststellen van de identiteit, het afvoeren van een persoonslijst na een dubbele inschrijving en het leggen van relaties tussen persoonslijsten (HUP Proceduregegevens; HUP Dubbelinschrijving; HUP Gerelateerden).'
+synoniemen:
+- naam: Bijhouding
+  context: wet
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor de bijhouding van de BRP; de functie Bevolkingsadministratie bijhouding bedient het.
+kernobject: ingeschreven-persoon
+afnemer: extern
+relaties:
+- soort: toegang (bijwerken)
+  naar: ingeschreven-persoon
+  naam: houdt bij
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  vindplaats: BRP stelsel; De inschrijving
+- soort: toegang (raadplegen)
+  naar: akte-van-de-burgerlijke-stand
+  naam: ontleent gegevens aan
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-algemeen
+  vindplaats: regel 55
+- soort: aggregatie
+  naar: inschrijven-ingezetene
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-immigratie
+  - 2026-rvig-hup-hervestiging
+  vindplaats: HUP Immigratie; HUP Hervestiging
+- soort: aggregatie
+  naar: inschrijven-niet-ingezetene
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
+  vindplaats: HUP Achtergronden regel 38; Utrecht RNI
+- soort: aggregatie
+  naar: verwerken-adreswijziging
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  vindplaats: HUP Binnengemeentelijke en Intergemeentelijke adreswijziging
+- soort: aggregatie
+  naar: verwerken-emigratie
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-emigratie
+  vindplaats: inleiding
+- soort: aggregatie
+  naar: inschrijven-op-briefadres
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-verblijfplaats
+  vindplaats: Briefadres
+- soort: aggregatie
+  naar: uitvoeren-adresonderzoek
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  vindplaats: par. 2, 4
+- soort: aggregatie
+  naar: behandelen-verzoek-om-geheimhouding
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-verstrekkingsbeperking
+  vindplaats: inleiding
+- soort: aggregatie
+  naar: verstrekken-persoonsgegevens
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  vindplaats: Waarom dit schema
+- soort: aggregatie
+  naar: verstrekken-overzicht-gegevensverstrekkingen
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: Utrecht Aanvragen overzicht; UPL nr. 92
+- soort: aggregatie
+  naar: behandelen-verzoek-om-correctie
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
+  vindplaats: inleiding
+- soort: aggregatie
+  naar: behandelen-verzoek-om-verwijdering-van-gegevens
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: Utrecht Gegevens verwijderen; UPL nr. 86
+- soort: aggregatie
+  naar: wijzigen-identificatienummers
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-wijzigen-identificatienummers
+  vindplaats: regel 19
+- soort: aggregatie
+  naar: verhuizing
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  vindplaats: Wet BRP art. 2.20, 2.39
+- soort: aggregatie
+  naar: emigratie
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-emigratie
+  vindplaats: Wet BRP art. 2.21, 2.43
+- soort: aggregatie
+  naar: vestiging-vanuit-het-buitenland
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-immigratie
+  vindplaats: Wet BRP art. 2.4, 2.38
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rvig-hup-algemeen
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rvig-hup-immigratie
+  - 2026-rvig-hup-hervestiging
+  - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rvig-hup-emigratie
+  - 2026-rvig-hup-verblijfplaats
+  - 2026-rvig-hup-verstrekkingsbeperking
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  - 2026-rvig-hup-wijzigen-identificatienummers
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md

@@ -1,0 +1,303 @@
+begrip: Verstrekken persoonsgegevens
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Gangbaar: uittreksel aanvragen, schriftelijke gegevensverstrekking (NVVB Schema; Utrecht).'
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het college beslist op een schriftelijk verzoek om gegevens uit de BRP (NVVB Schema).
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2025-vng-upl-producten-en-diensten-extern
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2025-vng-upl-producten-en-diensten-extern
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2025-vng-upl-producten-en-diensten-extern
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Bijhoudingsgemeente en Beslisser (college); voor niet-ingezetenen het RNI-loket (NVVB Schema).
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Raadpleegt en verstrekt de gegevens van de ingeschreven persoon en protocolleert de verstrekking (NVVB Schema; art. 3.11 Wet BRP).
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een verzoek van de ingeschrevene, een overheidsorgaan of een derde (NVVB Schema, stap 1).
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een uittreksel, een kopie of een schriftelijke verstrekking van gegevens, of een weigering (NVVB Schema; UPL nr. 91, 93, 94).
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2025-vng-upl-producten-en-diensten-extern
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval dat zich voordoet.
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2025-vng-upl-producten-en-diensten-extern
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Wet BRP art. 2.55 (inzage, uittreksel, binnen vier weken), 3.5 tot en met 3.9 (categorieën van verzoekers), 3.11 (protocollering), 3.13 (leges); Besluit BRP art. 40 (weigering) (NVVB Schema; UPL; Besluit BRP).
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-besluit-brp-bwbr0034306
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: levert de gegevens van de persoonslijst (NVVB Schema).'
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Geen groepering van processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: De gemeente voert het uit; andere partijen leveren alleen gegevens of vragen erom.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Het college beslist op het verzoek, na een belangenafweging bij een geregistreerde verstrekkingsbeperking, met bezwaar (NVVB Schema, Belangenafweging; Besluit BRP art. 40).
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2026-rijk-besluit-brp-bwbr0034306
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de diensten BRP-inzagerecht, BRP-uittreksel en BRP-uittreksel met gezag (UPL nr. 91, 93, 94).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het beslissen op een verzoek om gegevens uit de basisregistratie personen en het verstrekken ervan aan de ingeschrevene of aan anderen.
+beschrijving:
+- 'Het college ontvangt verzoeken om gegevens uit de BRP: van de ingeschrevene zelf (inzage, kopie, uittreksel; art. 2.55 Wet BRP) en van overheidsorganen, bij besluit aangewezen derden, bij gemeentelijke verordening aangewezen derden en overige verzoekers (NVVB Schema; UPL). De medewerker stelt vast wie verzoekt en waarvoor, deelt het verzoek in, verstrekt de gegevens die daarbij horen en protocolleert de verstrekking; bij een geregistreerde verstrekkingsbeperking volgt een belangenafweging (NVVB Schema). Gegevens in onderzoek worden met vermelding daarvan verstrekt; verzoeken over niet-ingezetenen gaan naar een RNI-loket (NVVB Schema).'
+- De systematische verstrekking aan afnemers loopt via de BRP-verstrekkingsvoorziening van de minister, niet via dit proces (LO BRP 1.5.2; Besluit BRP art. 37).
+synoniemen:
+- naam: Schriftelijke gegevensverstrekking
+  context: beleid
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: ingeschreven-persoon
+afnemer: extern
+gemma_generiek:
+  id: id-49fe8555-b001-4c86-9a81-20491e16af75
+  onderbouwing: Een verzoek om een product (uittreksel, verstrekking) dat de gemeente levert (NVVB Schema).
+relaties:
+- soort: toegang (verstrekken)
+  naar: ingeschreven-persoon
+  naam: verstrekt gegevens van
+  grondslag: bron
+  bronnen:
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  vindplaats: Schema 1 t/m 4
+- soort: realisatie
+  naar: brp-inzagerecht
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 91
+- soort: realisatie
+  naar: brp-uittreksel
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  vindplaats: UPL nr. 93
+- soort: realisatie
+  naar: brp-uittreksel-met-gezag
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 94
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-besluit-brp-bwbr0034306
+  herkomst: wet
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-persoonsgegevens.md

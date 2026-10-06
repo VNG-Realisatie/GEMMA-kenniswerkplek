@@ -1,0 +1,279 @@
+begrip: Uitvoeren adresonderzoek
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Gangbaar: adresonderzoek (Circulaire adresonderzoek; Utrecht).'
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente start het onderzoek en besluit over de uitkomst (Circulaire adresonderzoek par. 2, 4.6).
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+    - 2026-nvvb-handreiking-adresonderzoek
+    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+    - 2026-nvvb-handreiking-adresonderzoek
+    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+    - 2026-nvvb-handreiking-adresonderzoek
+    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+    - 2026-nvvb-handreiking-adresonderzoek
+    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Bijhoudingsgemeente, Toezichthouder BRP (huisbezoek) en Beslisser (college) (Circulaire adresonderzoek 4.5, 4.6).
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Stelt de verblijfplaats in onderzoek en wijzigt of beëindigt haar ambtshalve; legt een onderzoeksdossier aan (Circulaire adresonderzoek 3.2, 4.2, 4.8).
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een melding van een persoon of organisatie, een terugmelding, een LAA-signaal of een eigen constatering (Circulaire adresonderzoek par. 2; NVVB Handreiking adresonderzoek).
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+    - 2026-nvvb-handreiking-adresonderzoek
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: 'Een besluit: woont nog op het adres, briefadres, ambtshalve verhuizing, ambtshalve vertrek of vestiging vanuit het buitenland (Circulaire adresonderzoek 4.8).'
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval dat zich voordoet.
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+    - 2026-nvvb-handreiking-adresonderzoek
+    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Circulaire adresonderzoek BRP: voornemen en besluit, terugkoppeling binnen vijf werkdagen of vier weken, richtlijn tien weken; Besluit BRP art. 28a tot en met 28g (LAA).'
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+    - 2026-rijk-besluit-brp-bwbr0034306
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: herstelt een verkeerde adresinschrijving (Circulaire adresonderzoek par. 2).'
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Geen groepering van processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: De gemeente voert het uit; andere partijen leveren alleen gegevens of vragen erom.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Het college neemt na een voornemen een besluit en maakt het bekend (Circulaire adresonderzoek 4.6).
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Onjuiste inschrijving op adres melden (Utrecht).
+    bronnen:
+    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het onderzoeken of een persoon woont op het adres waarop hij is ingeschreven, en het besluiten over een juiste inschrijving.
+beschrijving:
+- Het adresonderzoek is het instrument waarmee de gemeente een verkeerde adresinschrijving verbetert; zij start het bij twijfel over de juistheid van adresgegevens (Circulaire adresonderzoek par. 2). Aanleidingen zijn een melding van een bewoner of organisatie, een terugmelding van een bestuursorgaan, een signaal uit de Landelijke Aanpak Adreskwaliteit (LAA), een eigen constatering of een aangifte van verhuizing (Circulaire adresonderzoek; NVVB Handreiking adresonderzoek). De gemeente legt een onderzoeksdossier aan, plaatst een aantekening in onderzoek, schrijft de persoon aan, kan een huisbezoek laten afleggen door een toezichthouder BRP en neemt na een voornemen een besluit; de melder wordt over het resultaat geïnformeerd (Circulaire adresonderzoek 3.2–4.7). Een richtlijn voor de doorlooptijd is tien weken.
+- 'De uitkomst is: woont nog op het adres, inschrijving op een briefadres, vestiging vanuit het buitenland, ambtshalve verhuizing binnen of naar een andere gemeente, of ambtshalve vertrek naar het buitenland of naar een onbekend land (Circulaire adresonderzoek 4.8).'
+synoniemen:
+- naam: Adresonderzoek
+  context: beleid
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: verblijfplaats
+afnemer: extern
+relaties:
+- soort: toegang (bijwerken)
+  naar: verblijfplaats
+  naam: verbetert
+  grondslag: bron
+  bronnen:
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  vindplaats: '4.8'
+- soort: realisatie
+  naar: onjuiste-inschrijving-op-adres-melden
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  vindplaats: Na uw melding
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  - 2026-nvvb-handreiking-adresonderzoek
+  - 2026-rijk-besluit-brp-bwbr0034306
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitvoeren-adresonderzoek.md

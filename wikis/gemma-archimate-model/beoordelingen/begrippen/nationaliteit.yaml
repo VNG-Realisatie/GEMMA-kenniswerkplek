@@ -1,0 +1,227 @@
+begrip: Nationaliteit
+onderwerpen:
+- burgerzaken
+genoemd_begrip: Ingeschreven persoon
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar begrip; de BRP kent de Nederlandse, vreemde en onbekende nationaliteit en staatloosheid (HUP Nationaliteit).
+    bronnen:
+    - 2026-rvig-hup-nationaliteit
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente neemt de nationaliteit op de persoonslijst op (HUP Nationaliteit).
+    bronnen:
+    - 2026-rvig-hup-nationaliteit
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een rechtsverhouding tussen persoon en staat met een eigen begin en einde (GGM Nationaliteit; HUP Nationaliteit).
+    bronnen:
+    - 2026-rvig-hup-nationaliteit
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort bij burgerzaken (BRP en Nederlanderschap).
+    bronnen:
+    - 2026-rvig-hup-nationaliteit
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elke nationaliteit heeft een eigen stapel op de persoonslijst (HUP Nationaliteit).
+    bronnen:
+    - 2026-rvig-hup-nationaliteit
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Wordt opgenomen en beëindigd bij verkrijging of verlies (HUP Nationaliteit).
+    bronnen:
+    - 2026-rvig-hup-nationaliteit
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: De gemeente neemt de nationaliteit op, ook als onbekend (HUP Nationaliteit; NVVB mededeling art. 2.17).
+    bronnen:
+    - 2026-rvig-hup-nationaliteit
+    - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: ja
+    onderbouwing: Een groep gegevens van één ingeschreven persoon (categorie 04 op de persoonslijst; LO BRP 4.4).
+    bronnen:
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: ja
+    onderbouwing: Categorie 04 van de persoonslijst (LO BRP 4.4).
+    bronnen:
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip in deze wiki.
+    bronnen:
+    - 2026-rvig-hup-nationaliteit
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+toelichting: 'Onderdeel van Ingeschreven persoon (categorie 04 van de persoonslijst), nu zonder eigen deelproces: geen pagina. Bij de beoordeling van het Nederlanderschap (verkrijging en verlies) krijgt het een eigen deelproces en wordt het een subobject.'
+ggm:
+  guid: EAID_69B41CDD_C3F1_449b_92B4_8F7657840646
+  sterkte: exact
+  onderbouwing: GGM-entiteit Nationaliteit (RSGBPlus), met de reden van verkrijging en verlies; het GGM kent een tweede entiteit Nationaliteit (EAID_71B3BE0D_2BF9_4740_9597_A0EEC75AFE9B). Het duplicaat wordt beoordeeld en teruggemeld bij het Nederlanderschap.
+afgeleid:
+  uitkomst:
+    soort: onderdeel
+    regel: 37
+    toelichting: Onderdeel van een ander object, zonder eigen proces
+    archimate_type: business-object
+    voorleggen: false
+    data_object: nee
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+    typeregel: 21
+  bronnen:
+  - 2026-rvig-hup-nationaliteit
+  - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  herkomst: informatiemodel

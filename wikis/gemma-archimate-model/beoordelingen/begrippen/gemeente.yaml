@@ -220,6 +220,8 @@ beschrijving:
 per_onderwerp:
   lijkbezorging:
   - De gemeente vervult de rollen Houder van de begraafplaats, Houder van het crematorium, Houder van een plaats van bijzetting en Kostendrager. Als houder van de gemeentelijke begraafplaats geeft zij graven uit en onderhoudt zij ze tegen betaling; als kostendrager betaalt zij de lijkbezorging als niemand anders erin voorziet en verhaalt zij de kosten (Wet op de lijkbezorging art. 22, 33, 39 lid 2; Groningen art. 3, 23).
+  burgerzaken:
+  - 'De gemeente vervult de rol Bijhoudingsgemeente: het college van de gemeente waar een ingezetene zijn adres heeft, houdt zijn gegevens in de basisregistratie personen bij (HUP Achtergronden). Een daartoe aangewezen gemeente is ook RNI-loket (Utrecht RNI).'
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
 besluiten:
@@ -286,9 +288,24 @@ relaties:
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   vindplaats: art. 6
+- soort: toewijzing
+  naar: bijhoudingsgemeente
+  naam: vervult
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  vindplaats: BRP stelsel
+- soort: toewijzing
+  naar: rni-loket
+  naam: vervult
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
+  vindplaats: Inschrijven RNI
 onderwerpen:
 - algemeen
 - lijkbezorging
+- burgerzaken
 doelgroep: gemeente
 homoniemen:
 - begrip: Gemeente
@@ -312,5 +329,7 @@ afgeleid:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-bw2-rechtspersonen
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
   herkomst: wet
   pad: bedrijfsarchitectuur/actoren/gemeente.md

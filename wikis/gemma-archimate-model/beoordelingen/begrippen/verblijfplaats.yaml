@@ -1,0 +1,296 @@
+begrip: Verblijfplaats
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare term in HUP en LO BRP (categorie 08 Verblijfplaats); in de praktijk het adres (Utrecht Verhuizing doorgeven).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente legt bij aangifte of ambtshalve de verblijfplaats vast en wijzigt haar (HUP Verblijfplaats; HUP Binnengemeentelijke adreswijziging).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elke verblijfplaats heeft een adres en een datum aanvang adreshouding (HUP Binnengemeentelijke adreswijziging).
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Begint bij inschrijving of verhuizing en eindigt bij de volgende adreswijziging of emigratie (HUP Binnengemeentelijke en Intergemeentelijke adreswijziging; HUP Emigratie).
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+    - 2026-rvig-hup-emigratie
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: Verwerken adreswijziging legt de nieuwe verblijfplaats vast; Uitvoeren adresonderzoek wijzigt haar ambtshalve (HUP Binnengemeentelijke adreswijziging; Circulaire adresonderzoek 4.8).
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: ja
+    onderbouwing: Een groep gegevens van de ingeschreven persoon (categorie 08 op de persoonslijst); bestaat niet zonder die persoon (LO BRP 4.4).
+    bronnen:
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: ja
+    onderbouwing: Categorie 08 van de persoonslijst, gekoppeld aan de BAG (HUP Verblijfplaats; LO BRP 4.4).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type; woonadres en briefadres zijn haar specialisaties (HUP Verblijfplaats).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het adres waar een ingeschreven persoon woont of, zonder woonadres, zijn post ontvangt, met de periode waarin dat adres geldt.
+beschrijving:
+- De verblijfplaats is een woonadres of een briefadres (HUP Verblijfplaats). Een woonadres is het adres waar iemand woont, in een woning of op een vaste stand- of ligplaats; bij wisselend verblijf het adres waar hij in een half jaar de meeste malen overnacht. Wie geen woonadres heeft, wordt ingeschreven op een briefadres. Het actuele adres in de BRP verwijst sinds 1 januari 2024 verplicht naar een adres in de BAG (HUP Verblijfplaats).
+- De verblijfplaats verandert bij een verhuizing binnen of naar de gemeente, bij emigratie en na een adresonderzoek (HUP Binnengemeentelijke en Intergemeentelijke adreswijziging; Circulaire adresonderzoek). Na emigratie heeft een niet-ingezetene een adres in het buitenland.
+synoniemen:
+- naam: VerblijfadresIngeschrevenPersoon
+  context: GGM
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: ggm-entiteit
+ggm:
+  guid: EAID_F6DAC299_3F19_45c6_BFFE_EB38C1C51459
+  sterkte: exact
+  onderbouwing: 'GGM-entiteit VerblijfadresIngeschrevenPersoon (RSGBPlus): de gegevens over het verblijf en adres van de ingeschreven persoon, gelijk aan categorie 08 van het LO BRP.'
+  duplicaten:
+  - guid: EAID_E5E010C2_C1F3_4986_AA9A_C71C19263606
+    toelichting: VerblijfadresIngeschrevenNatuurlijkPersoon, zelfde definitie bij de ingeschreven natuurlijk persoon; de primaire GUID volgt de match van Ingeschreven persoon (IngeschrevenPersoon).
+gemma:
+  id: id-9a240ef1e16e476887b3c67526facb98
+  sterkte: partieel
+  onderbouwing: 'GEMMA-bedrijfsobject Verblijfplaats: de locatie waar een persoon feitelijk woont of verblijft. Dat dekt het woonadres, niet het briefadres en de periode van adreshouding uit de BRP. De GGM-guid van het GEMMA-element komt in het huidige GGM niet meer voor. Bij koppelen krijgt het GEMMA-element de definitie uit de wiki.'
+specialisaties:
+- naam: Woonadres
+  omschrijving: 'Adres waar de ingeschreven persoon woont (functie adres W; HUP Verblijfplaats). Geen eigen pagina: het gewone geval van de verblijfplaats.'
+- naam: Briefadres
+  omschrijving: Adres waar post voor iemand zonder woonadres in ontvangst wordt genomen (HUP Verblijfplaats).
+  element: briefadres
+- naam: Verblijf in het buitenland
+  omschrijving: Adres in het buitenland van een niet-ingezetene, door te geven via MyRNI (Utrecht Emigratie doorgeven). Geen eigen pagina.
+  ggm_guid: EAID_E3567219_5744_4b70_901D_BAEBD8FF4947
+vragen: []
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Koppelen aan het GEMMA-bedrijfsobject Verblijfplaats (partiële match): dezelfde naam en kern, het GEMMA-element is verweesd; de export overschrijft de definitie met die uit de wiki.'
+  gevolg: verwerkt
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 36
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    data_object: ja
+    objectniveau: subobject
+    generiek: false
+    typeregel: 21
+  bronnen:
+  - 2026-rvig-hup-verblijfplaats
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  - 2026-rvig-hup-emigratie
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  herkomst: informatiemodel
+  ggm:
+    ggm_entiteit: VerblijfadresIngeschrevenPersoon
+    ggm_guid: EAID_F6DAC299_3F19_45c6_BFFE_EB38C1C51459
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RSGBPlus
+    ggm_taakveld: 99 Kern
+    ggm_definitie: De gegevens over het verblijf en adres van de INGESCHREVEN PERSOON
+  ggm_duplicaten:
+  - entiteit: VerblijfadresIngeschrevenNatuurlijkPersoon
+    guid: EAID_E5E010C2_C1F3_4986_AA9A_C71C19263606
+    beleidsdomein: RSGBPlus
+    taakveld: 99 Kern
+  gemma:
+    gemma_id: id-9a240ef1e16e476887b3c67526facb98
+    gemma_naam: Verblijfplaats
+    gemma_type: business-object
+    gemma_definitie: Een verblijfplaats is de locatie waar een persoon feitelijk woont of verblijft, ongeacht of dit permanent of tijdelijk is. Het kan een huis, appartement, kamer, opvanglocatie of andere woonruimte zijn, en wordt vaak gebruikt om iemands woonadres aan te duiden voor juridische, administratieve of sociale doeleinden. De verblijfplaats is doorgaans bepalend voor het ontvangen van voorzieningen, het uitoefenen van rechten, en het voldoen aan verplichtingen binnen een specifieke jurisdictie of gemeenschap.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-397f0d07-8500-40ea-9d3a-a142dc9a94f9
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{0028CB85-5EF0-45aa-A06F-4A8F14E71AB8}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: 397f0d07-8500-40ea-9d3a-a142dc9a94f9
+  pad: bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verblijfplaats.md

@@ -1,0 +1,318 @@
+begrip: Inschrijven ingezetene
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Gangbaar als inschrijving of inschrijven vanuit het buitenland (Utrecht; HUP Immigratie: eerste inschrijving).'
+    bronnen:
+    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+    - 2026-rvig-hup-immigratie
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente schrijft de persoon in en kent een BSN toe (HUP Immigratie; Utrecht).
+    bronnen:
+    - 2026-rvig-hup-immigratie
+    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rvig-hup-immigratie
+    - 2026-rvig-hup-hervestiging
+    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rvig-hup-immigratie
+    - 2026-rvig-hup-hervestiging
+    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rvig-hup-immigratie
+    - 2026-rvig-hup-hervestiging
+    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rvig-hup-immigratie
+    - 2026-rvig-hup-hervestiging
+    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Bijhoudingsgemeente en Beslisser (college); de Aangever doet de aangifte (HUP Immigratie; HUP Hervestiging).
+    bronnen:
+    - 2026-rvig-hup-immigratie
+    - 2026-rvig-hup-hervestiging
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Legt de ingeschreven persoon en zijn verblijfplaats vast en raadpleegt akten en andere brondocumenten (HUP Immigratie).
+    bronnen:
+    - 2026-rvig-hup-immigratie
+  aanleiding:
+    waarde: ja
+    onderbouwing: Aangifte van verblijf en adres, in persoon, uiterlijk de vijfde dag na aanvang van het verblijf (HUP Immigratie).
+    bronnen:
+    - 2026-rvig-hup-immigratie
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een persoonslijst als ingezetene, met A-nummer en BSN, en binnen vier weken een overzicht van de persoonslijst (HUP Immigratie).
+    bronnen:
+    - 2026-rvig-hup-immigratie
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval dat zich voordoet.
+    bronnen:
+    - 2026-rvig-hup-immigratie
+    - 2026-rvig-hup-hervestiging
+    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Aangifte binnen vijf dagen in persoon (Besluit BRP art. 30), criterium van rechtmatig verblijf, overzicht binnen vier weken (HUP Immigratie); bij hervestiging vaststellen van alle gegevens aan de hand van brondocumenten (HUP Hervestiging, art. 2.63 lid 3 Wet BRP).
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+    - 2026-rvig-hup-immigratie
+    - 2026-rvig-hup-hervestiging
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: de inschrijving begint de administratieve levensloop (HUP Immigratie).'
+    bronnen:
+    - 2026-rvig-hup-immigratie
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Geen groepering van processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: De gemeente voert het uit; andere partijen leveren alleen gegevens of vragen erom.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Het college beslist over de inschrijving; bij een vreemdeling zendt het een afschrift van de beslissing aan de korpschef (Besluit BRP art. 24).
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de diensten BRP-inschrijving (UPL nr. 88) en Persoonsgegevens verklaring onder eed of belofte (UPL nr. 335).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rvig-hup-immigratie
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het inschrijven van een persoon die zich vanuit het buitenland in de gemeente vestigt als ingezetene in de basisregistratie personen.
+beschrijving:
+- Wie zich vanuit het buitenland in de gemeente vestigt, doet uiterlijk de vijfde dag na aanvang van het verblijf in persoon aangifte van verblijf en adres (HUP Immigratie). De gemeente stelt de identiteit vast, toetst de criteria (waaronder rechtmatig verblijf), gaat na of de persoon al in de BRP of RNI voorkomt, verifieert het adres en schrijft de persoon in met een A-nummer en een BSN; binnen vier weken stuurt zij een volledig overzicht van de persoonslijst (HUP Immigratie; Utrecht Inschrijven vanuit het buitenland). Kan de geboortedatum of de vreemde nationaliteit niet uit de gewone bronnen worden ontleend, dan vraagt de gemeente een mededeling ex artikel 2.17 Wet BRP op bij de IND (NVVB mededeling art. 2.17). Ontbreekt een brondocument, dan neemt de gemeente een verklaring onder eed of belofte af (HUP Immigratie; UPL nr. 335).
+- 'Bij een hervestiging staat de persoon al in de RNI: de gemeente wordt bijhoudingsgemeente en stelt alle gegevens vast aan de hand van brondocumenten (HUP Hervestiging). Het college beslist over de inschrijving (Besluit BRP art. 24).'
+synoniemen:
+- naam: Eerste inschrijving
+  context: LO BRP
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: ingeschreven-persoon
+afnemer: extern
+gemma_generiek:
+  id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  onderbouwing: De inschrijving volgt op een aangifte van verblijf en adres die de basisregistratie bijwerkt (HUP Immigratie).
+relaties:
+- soort: toegang (registreren)
+  naar: ingeschreven-persoon
+  naam: schrijft in
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-immigratie
+  vindplaats: inleiding
+- soort: toegang (registreren)
+  naar: verblijfplaats
+  naam: legt vast
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-immigratie
+  vindplaats: Stap 5
+- soort: toegang (raadplegen)
+  naar: akte-van-de-burgerlijke-stand
+  naam: ontleent gegevens aan
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-immigratie
+  - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  vindplaats: Utrecht Wat neemt u mee
+- soort: realisatie
+  naar: brp-inschrijving
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  vindplaats: UPL nr. 88
+- soort: realisatie
+  naar: persoonsgegevens-verklaring-onder-eed-of-belofte
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-immigratie
+  vindplaats: UPL nr. 335; HUP Immigratie categorie 04
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  - 2026-rvig-hup-immigratie
+  - 2026-rvig-hup-hervestiging
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md

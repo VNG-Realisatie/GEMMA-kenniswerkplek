@@ -314,10 +314,70 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: art. 11 lid 1
+- soort: toewijzing
+  naar: inschrijven-ingezetene
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-brp-bwbr0034306
+  vindplaats: Besluit BRP art. 24
+- soort: toewijzing
+  naar: inschrijven-op-briefadres
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-verblijfplaats
+  vindplaats: Briefadres
+- soort: toewijzing
+  naar: uitvoeren-adresonderzoek
+  naam: besluit na
+  grondslag: bron
+  bronnen:
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  vindplaats: '4.6'
+- soort: toewijzing
+  naar: behandelen-verzoek-om-geheimhouding
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-verstrekkingsbeperking
+  vindplaats: art. 2.60 Wet BRP
+- soort: toewijzing
+  naar: verstrekken-persoonsgegevens
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  vindplaats: Belangenafweging
+- soort: toewijzing
+  naar: behandelen-verzoek-om-correctie
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  vindplaats: Na uw aanvraag
+- soort: toewijzing
+  naar: behandelen-verzoek-om-verwijdering-van-gegevens
+  naam: beslist over
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  vindplaats: Na uw aanvraag
+- soort: toewijzing
+  naar: wijzigen-identificatienummers
+  naam: besluit tot
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-wijzigen-bsn
+  vindplaats: regel 19-25
 onderwerpen:
 - algemeen
 - lijkbezorging
+- burgerzaken
 doelgroep: gemeente
+per_onderwerp:
+  burgerzaken:
+  - 'In de bijhouding van de basisregistratie personen beslist het college: over de inschrijving, het briefadres, de uitkomst van een adresonderzoek, geheimhouding, verstrekking, correctie, verwijdering van gegevens en de wijziging van het BSN (Besluit BRP art. 24; Circulaire adresonderzoek 4.6; HUP Verstrekkingsbeperking; HUP Wijzigen BSN).'
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -336,6 +396,13 @@ afgeleid:
   - 2024-rijk-gemeentewet-wettekst
   - 2025-groningen-algemene-plaatselijke-verordening
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rvig-hup-verblijfplaats
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2026-rvig-hup-verstrekkingsbeperking
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  - 2026-rvig-hup-wijzigen-bsn
   herkomst: wet
   gemma:
     gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e

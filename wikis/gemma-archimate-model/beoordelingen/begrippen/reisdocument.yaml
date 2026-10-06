@@ -1,0 +1,283 @@
+begrip: Reisdocument
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Kernbegrip van de Paspoortwet en de UPL: paspoort, identiteitskaart en andere reisdocumenten (Paspoortwet art. 1, 2; UPL nr. 329, 186, 356).'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2025-vng-upl-producten-en-diensten-extern
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester neemt de aanvraag in ontvangst, verstrekt het reisdocument en reikt het uit (Paspoortwet art. 26, 40, 42).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elk reisdocument heeft een documentnummer en een houder (Paspoortwet art. 1, 3).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Aanvraag, verstrekking, uitreiking, en verval of vervallenverklaring, inhouding of vermissing (Paspoortwet art. 1, 44, 47).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: De burgemeester verstrekt en reikt uit; de gemeente legt de gegevens over Nederlandse reisdocumenten vast in categorie 12 van de persoonslijst (Paspoortwet art. 40, 42; HUP Reisdocument).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-reisdocument
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Het document is zelf het object met een eigen levensloop (verstrekking, uitreiking, verval), niet alleen de vorm van gegevens van een ander begrip (Paspoortwet art. 1).
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: ja
+    onderbouwing: Reisdocumentenadministratie, basisregister reisdocumenten en categorie 12 van de persoonslijst (Paspoortwet art. 3, 4c; LO BRP 4.4).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip in deze wiki; paspoort, identiteitskaart en de andere soorten zijn zijn specialisaties (Paspoortwet art. 2).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Document van het Koninkrijk op naam van een persoon waarmee hij kan reizen en zich kan identificeren, zoals een paspoort of identiteitskaart.
+beschrijving:
+- 'De Paspoortwet kent onder meer het nationaal paspoort, het reisdocument voor vluchtelingen en voor vreemdelingen en het nooddocument; de Nederlandse identiteitskaart heeft een eigen wet maar valt voor vermissing, inhouding en signalering ook onder de Paspoortwet (Paspoortwet art. 1, 2). Het document blijft rijkseigendom (art. 2 lid 4). In de BRP staan de gegevens over Nederlandse reisdocumenten in categorie 12 van de persoonslijst (HUP Reisdocument; LO BRP 1.1: Nederlands paspoort of Nederlandse identiteitskaart). De processen rond reisdocumenten worden apart beoordeeld.'
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: ggm-entiteit
+ggm:
+  guid: EAID_CA9BC1BB_D572_4e47_BECF_17CFD379BD6A
+  sterkte: sterk
+  onderbouwing: 'GGM-entiteit Reisdocument (RSGBPlus): een document dat vereist is voor reizen naar het buitenland. Zelfde begrip; de attributen volgen categorie 12 van het LO BRP. De GGM-definitie noemt de identificatie en de houder niet; de wiki volgt de Paspoortwet (art. 1, 2).'
+gemma:
+  id: id-07cb7da54dac4181839b23d677fefd4e
+  sterkte: sterk
+  onderbouwing: 'GEMMA-bedrijfsobject Reisdocument, overgenomen uit het GGM (zelfde GGM-guid en definitie). Nieuw: een definitie volgens de Paspoortwet.'
+status: kandidaat
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 38
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    data_object: ja
+    generiek: false
+    typeregel: 21
+  voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-reisdocument
+  herkomst: wet
+  ggm:
+    ggm_entiteit: Reisdocument
+    ggm_guid: EAID_CA9BC1BB_D572_4e47_BECF_17CFD379BD6A
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RSGBPlus
+    ggm_taakveld: 99 Kern
+    ggm_diagram:
+    - Burgerzaken
+    - Detaillering subjecten op hoofdlijnen
+    - Detaillering subjecten met attributen
+    - Reidoscumentsoorten referenties
+    - mGBA
+    - INGESCHREVEN NATUURLIJK  PERSOON
+    - REISDOCUMENT
+    ggm_diagram_ids:
+    - EAID_D9511F60_3CA7_43bd_B6C8_F66447D66DBA
+    - EAID_BE50EA2F_917E_434f_91ED_0EB06CCBEFB6
+    - EAID_EB4053EE_18A5_4578_8973_7FD5967CDFC8
+    - EAID_8FDA2EB0_1359_493c_B72E_751468C6153C
+    - EAID_9A447DCF_183C_4efc_819F_1C5CD48D9F83
+    - EAID_D6979B1E_19B7_405d_A366_0F319815E0A0
+    - EAID_58363CF8_C242_4dca_8651_1DBB7B5D5BF7
+    ggm_definitie: Een document dat vereist is voor reizen naar het buitenland
+  gemma:
+    gemma_id: id-07cb7da54dac4181839b23d677fefd4e
+    gemma_naam: Reisdocument
+    gemma_type: business-object
+    gemma_definitie: Een document dat vereist is voor reizen naar het buitenland
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      Bron: BRP
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-bd460a48-7720-465d-b12b-c15097ec620c
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{CA9BC1BB-D572-4e47-BECF-17CFD379BD6A}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: bd460a48-7720-465d-b12b-c15097ec620c
+  pad: bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md

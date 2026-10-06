@@ -7,6 +7,7 @@ naam: Beslisser
 onderwerpen:
 - algemeen
 - lijkbezorging
+- burgerzaken
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 grondslag: bron
 match:
@@ -19,6 +20,13 @@ bronnen:
 - 2024-rijk-gemeentewet-wettekst
 - 2025-groningen-algemene-plaatselijke-verordening
 - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+- 2026-rijk-besluit-brp-bwbr0034306
+- 2026-rvig-hup-verblijfplaats
+- 2023-rvig-circulaire-adresonderzoek-brp
+- 2026-rvig-hup-verstrekkingsbeperking
+- 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+- 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+- 2026-rvig-hup-wijzigen-bsn
 gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
 gemma_naam: Beslisser
 gemma_type: business-role
@@ -42,6 +50,12 @@ Verantwoordelijkheid voor het nemen van het besluit in een proces.
 ### Beschrijving
 
 Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit redacteur 2026-10-01).
+
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In de bijhouding van de basisregistratie personen beslist het college: over de inschrijving, het briefadres, de uitkomst van een adresonderzoek, geheimhouding, verstrekking, correctie, verwijdering van gegevens en de wijziging van het BSN (Besluit BRP art. 24; Circulaire adresonderzoek 4.6; HUP Verstrekkingsbeperking; HUP Wijzigen BSN).
 
 ## Plaats in het model
 
@@ -86,6 +100,14 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Beslisser | beslist over *toewijzing* | [Verlenen toestemming asverstrooiing](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-asverstrooiing.md) | [APV Groningen](../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md) (art. 5:27 lid 3) |
 | Beslisser | geeft verlof voor *toewijzing* | [Verlenen verlof tot ontleding](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-ontleding.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 68 lid 1) |
 | Beslisser | geeft af *toewijzing* | [Afgeven laissez-passer](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/afgeven-laissez-passer.md) | [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) (art. 11 lid 1) |
+| Beslisser | beslist over *toewijzing* | [Inschrijven ingezetene](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md) | [Besluit BRP](../../bronanalyses/burgerzaken/2026-rijk-besluit-brp-bwbr0034306.md) (Besluit BRP art. 24) |
+| Beslisser | beslist over *toewijzing* | [Inschrijven op briefadres](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md) | [HUP Verblijfplaats](../../bronanalyses/burgerzaken/2026-rvig-hup-verblijfplaats.md) (Briefadres) |
+| Beslisser | besluit na *toewijzing* | [Uitvoeren adresonderzoek](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitvoeren-adresonderzoek.md) | [RvIG Circulaire adresonderzoek BRP](../../bronanalyses/burgerzaken/2023-rvig-circulaire-adresonderzoek-brp.md) (4.6) |
+| Beslisser | beslist over *toewijzing* | [Behandelen verzoek om geheimhouding](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-geheimhouding.md) | [HUP Verstrekkingsbeperking](../../bronanalyses/burgerzaken/2026-rvig-hup-verstrekkingsbeperking.md) (art. 2.60 Wet BRP) |
+| Beslisser | beslist over *toewijzing* | [Verstrekken persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-persoonsgegevens.md) | [NVVB Schema schriftelijke gegevensverstrekking BRP](../../bronanalyses/burgerzaken/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) (Belangenafweging) |
+| Beslisser | beslist over *toewijzing* | [Behandelen verzoek om correctie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-correctie.md) | [Utrecht BRP-gegevens opvragen of aanpassen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (Na uw aanvraag) |
+| Beslisser | beslist over *toewijzing* | [Behandelen verzoek om verwijdering van gegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-verwijdering-van-gegevens.md) | [Utrecht BRP-gegevens opvragen of aanpassen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (Na uw aanvraag) |
+| Beslisser | besluit tot *toewijzing* | [Wijzigen identificatienummers](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-identificatienummers.md) | [HUP BRP: Wijzigen bsn](../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-bsn.md) (regel 19-25) |
 
 #### Inkomend
 
@@ -106,6 +128,13 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) - geldend per 2024-01-31 |
 | [APV Groningen](../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md) | Algemene Plaatselijke Verordening Groningen 2021 |
 | [Besluit op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) | Besluit op de lijkbezorging |
+| [Besluit BRP](../../bronanalyses/burgerzaken/2026-rijk-besluit-brp-bwbr0034306.md) | Besluit basisregistratie personen |
+| [HUP Verblijfplaats](../../bronanalyses/burgerzaken/2026-rvig-hup-verblijfplaats.md) | HUP BRP: Verblijfplaats |
+| [RvIG Circulaire adresonderzoek BRP](../../bronanalyses/burgerzaken/2023-rvig-circulaire-adresonderzoek-brp.md) | Circulaire adresonderzoek BRP |
+| [HUP Verstrekkingsbeperking](../../bronanalyses/burgerzaken/2026-rvig-hup-verstrekkingsbeperking.md) | HUP BRP: Verstrekkingsbeperking |
+| [NVVB Schema schriftelijke gegevensverstrekking BRP](../../bronanalyses/burgerzaken/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) | Schema verzoeken om schriftelijke gegevensverstrekking uit de BRP |
+| [Utrecht BRP-gegevens opvragen of aanpassen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) | Gemeente Utrecht: Persoonsgegevens opvragen of aanpassen |
+| [HUP BRP: Wijzigen bsn](../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-bsn.md) | HUP BRP: Wijzigen bsn |
 
 ### Afstemming met GEMMA
 

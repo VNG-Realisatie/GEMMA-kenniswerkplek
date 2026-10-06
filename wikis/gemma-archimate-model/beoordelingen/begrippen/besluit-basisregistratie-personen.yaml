@@ -1,0 +1,277 @@
+begrip: Besluit basisregistratie personen
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare naam van de AMvB bij de Wet BRP (BWBR0034306).
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Geeft het college taken bij inschrijving, aangifte en verstrekking (art. 6, 24, 30, 40).
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  regeling_als_geheel:
+    waarde: ja
+    onderbouwing: Een concreet benoemde algemene maatregel van bestuur als geheel (BWBR0034306).
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: ja
+    onderbouwing: 'Rijksregelgeving: een algemene maatregel van bestuur.'
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  in_werking:
+    waarde: ja
+    onderbouwing: Geldend recht.
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  is_grondslag_voor:
+    waarde: ja
+    onderbouwing: 'Art. 24 (beslissing over inschrijving), 28a tot en met 28g (ondersteuning adresonderzoek), 29 en 30 (aangifte van vertrek, in persoon), 40 (weigering verstrekking): gedrag in Inschrijven ingezetene, Uitvoeren adresonderzoek, Verwerken emigratie en Verstrekken persoonsgegevens.'
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder beleidskader in deze wiki; het besluit werkt de Wet BRP uit.
+    bronnen:
+    - 2026-rijk-besluit-brp-bwbr0034306
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Algemene maatregel van bestuur die de Wet basisregistratie personen uitwerkt, onder meer voor inschrijving, aangifte, adresonderzoek en verstrekking.
+beschrijving:
+- Het Besluit BRP (BWBR0034306) regelt wie niet als ingezetene wordt ingeschreven (art. 21, 22), de ondersteuning van het adresonderzoek met de Landelijke Aanpak Adreskwaliteit (art. 28a tot en met 28g), de aangifteplicht en het verschijnen in persoon (art. 29, 30), de verstrekking aan overheidsorganen en derden (hoofdstuk 3, art. 37 tot en met 46) en de beveiliging van de gemeentelijke voorziening (art. 6).
+synoniemen:
+- naam: Besluit BRP
+  context: dagelijks gebruik
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: regelgeving
+grondslag_toelichting:
+- Het besluit zelf (2026-rijk-besluit-brp-bwbr0034306).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen beleidskader voor dit besluit; nieuw voor GEMMA.
+regelgever: rijk
+relaties:
+- soort: associatie (gericht)
+  naar: inschrijven-ingezetene
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-brp-bwbr0034306
+  vindplaats: art. 24, 30
+- soort: associatie (gericht)
+  naar: uitvoeren-adresonderzoek
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-brp-bwbr0034306
+  vindplaats: art. 28a–28g
+- soort: associatie (gericht)
+  naar: verwerken-emigratie
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-brp-bwbr0034306
+  vindplaats: art. 29
+- soort: associatie (gericht)
+  naar: verstrekken-persoonsgegevens
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-brp-bwbr0034306
+  vindplaats: art. 40
+- soort: associatie (gericht)
+  naar: wet-basisregistratie-personen
+  naam: werkt uit
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-brp-bwbr0034306
+  vindplaats: aanhef
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Opnemen als beleidskader: grondslag van inschrijving, adresonderzoek, emigratie en verstrekking (art. 24, 28a–g, 29, 30, 40); precedent Besluit op de lijkbezorging.'
+  gevolg: opnemen
+  redenen:
+  - 'grondslag regelgeving: altijd voorleggen'
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'grondslag regelgeving: altijd voorleggen'
+  bronnen:
+  - 2026-rijk-besluit-brp-bwbr0034306
+  herkomst: wet
+  pad: motivatie/beleidskaders/besluit-basisregistratie-personen.md

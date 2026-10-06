@@ -5,7 +5,9 @@ archimate_type: business-function
 status: goedgekeurd
 naam: Producten- en dienstenrealisatie publieksdiensten
 onderwerpen:
+- algemeen
 - lijkbezorging
+- burgerzaken
 definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
 grondslag: bron
 match:
@@ -17,6 +19,7 @@ bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
 gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
 gemma_naam: Producten- en dienstenrealisatie publieksdiensten
 gemma_type: business-function
@@ -49,6 +52,10 @@ De gemeente levert publieksdiensten aan inwoners en ondernemers, zoals de dienst
 
 Burgerlijke stand diensten valt eronder: na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof tot begraving of crematie af (RVO; Wet op de lijkbezorging art. 11).
 
+#### [Burgerzaken](../../../begrippen/burgerzaken.md)
+
+Bevolkingsadministratie bijhouding valt eronder: de bijhouding van de basisregistratie personen en de diensten daarover. De legalisatie van een handtekening aan de balie valt er direct onder (Utrecht Handtekening legaliseren).
+
 ## Plaats in het model
 
 ### Typering
@@ -58,7 +65,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 ### Plaats in de indelingen
 
 - **Functie-indeling naar domein, onderdeel van**: [Uitvoering Publieksdiensten](uitvoering-publieksdiensten.md).
-- **Functie-indeling naar domein, omvat**: [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md), [Burgerlijke stand diensten](burgerlijke-stand-diensten.md), [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md).
+- **Functie-indeling naar domein, omvat**: [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md), [Bevolkingsadministratie bijhouding](bevolkingsadministratie-bijhouding.md), [Burgerlijke stand diensten](burgerlijke-stand-diensten.md), [Legalisatie handtekening](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md), [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md).
 - **Domein**: Publieksdiensten.
 
 ### Kenmerken
@@ -90,6 +97,9 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Burgerlijke stand diensten](burgerlijke-stand-diensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-efd77657-f6f9-457c-a9e8-93d6d11647df) |
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc) |
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md) | [UPL-lijst extern](../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 45 (GEMMA-domein Publieksdiensten)) |
+| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Bevolkingsadministratie bijhouding](bevolkingsadministratie-bijhouding.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb) |
+| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Legalisatie handtekening](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md) | [UPL-lijst extern](../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 226 (GEMMA-domein Publieksdiensten)) |
+| Producten- en dienstenrealisatie publieksdiensten | realiseert *realisatie* | [Legalisatie handtekening](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md) | [Utrecht Handtekening laten legaliseren](../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) (inleiding) |
 
 #### Inkomend
 
@@ -107,9 +117,14 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
 | [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [UPL-lijst extern](../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Utrecht Handtekening laten legaliseren](../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) | Gemeente Utrecht: Legalisatie handtekening |
 
 ### Afstemming met GEMMA
 
 Match **exact** met GEMMA-element *Producten- en dienstenrealisatie publieksdiensten* (business-function). Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Producten- en dienstenrealisatie publieksdiensten.
 
 > Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+
+### Besluiten redacteur
+
+- 2026-10-07: Thuisonderwerp Algemeen (regel Thuishoren): een generieke functie die de publieksdiensten van alle onderwerpen dient; Lijkbezorging en Burgerzaken houden hun tekst per onderwerp. Het object in Archi blijft.

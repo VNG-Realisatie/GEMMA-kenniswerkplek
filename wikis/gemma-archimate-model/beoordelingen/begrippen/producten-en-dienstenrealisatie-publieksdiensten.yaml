@@ -1,6 +1,8 @@
 begrip: Producten- en dienstenrealisatie publieksdiensten
 onderwerpen:
+- algemeen
 - lijkbezorging
+- burgerzaken
 kenmerken:
   herkenbaar:
     waarde: ja
@@ -215,6 +217,8 @@ beschrijving:
 per_onderwerp:
   lijkbezorging:
   - 'Burgerlijke stand diensten valt eronder: na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof tot begraving of crematie af (RVO; Wet op de lijkbezorging art. 11).'
+  burgerzaken:
+  - 'Bevolkingsadministratie bijhouding valt eronder: de bijhouding van de basisregistratie personen en de diensten daarover. De legalisatie van een handtekening aan de balie valt er direct onder (Utrecht Handtekening legaliseren).'
 domein: Publieksdiensten
 grondslag: bron
 gemma:
@@ -243,6 +247,31 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 45 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: bevolkingsadministratie-bijhouding
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-vng-gemma-2026-10-02
+  vindplaats: GEMMA-relatie id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
+- soort: aggregatie
+  naar: legalisatie-handtekening
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 226 (GEMMA-domein Publieksdiensten)
+- soort: realisatie
+  naar: legalisatie-handtekening
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
+  vindplaats: inleiding
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Thuisonderwerp Algemeen (regel Thuishoren): een generieke functie die de publieksdiensten van alle onderwerpen dient; Lijkbezorging en Burgerzaken houden hun tekst per onderwerp. Het object in Archi blijft.'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -260,6 +289,7 @@ afgeleid:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
   herkomst: wet
   gemma:
     gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64

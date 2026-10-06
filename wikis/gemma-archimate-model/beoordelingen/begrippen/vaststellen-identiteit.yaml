@@ -1,0 +1,242 @@
+begrip: Vaststellen identiteit
+onderwerpen:
+- burgerzaken
+genoemd_begrip: Inschrijven ingezetene
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Gangbaar: identiteitsvaststelling, ID-controle (NVVB ID-protocol 2.2).'
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Gemeentelijk gedrag in de bijhouding van de BRP.
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+    - 2026-rvig-hup-immigratie
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+    - 2026-rvig-hup-immigratie
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+    - 2026-rvig-hup-immigratie
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+    - 2026-rvig-hup-immigratie
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval doorlopen.
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+    - 2026-rvig-hup-immigratie
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Bijhoudingsgemeente (medewerker Burgerzaken; NVVB ID-protocol).
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Raadpleegt het identiteitsdocument en legt pas na vaststelling persoonsgegevens vast (NVVB ID-protocol 2.2, 2.3).
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een aangifte of aanvraag aan de balie (NVVB ID-protocol; HUP Immigratie stap 1).
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+    - 2026-rvig-hup-immigratie
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een vastgestelde identiteit (NVVB ID-protocol 2.2).
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval.
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+    - 2026-rvig-hup-immigratie
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Het ID-protocol is een werkinstructie van de NVVB; de wettelijke eisen horen bij de aangifte of aanvraag waarin de stap valt.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: Stap 1 van Inschrijven ingezetene en een stap in de andere deelprocessen (HUP Immigratie; HUP Binnengemeentelijke adreswijziging).
+    bronnen:
+    - 2026-rvig-hup-immigratie
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+    - 2026-rvig-hup-immigratie
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+toelichting: 'Processtap zonder pagina: de medewerker stelt bij elke aangifte of aanvraag de identiteit vast aan de hand van een identiteitsdocument, volgens het ID-protocol van de NVVB. Het is een stap in onder meer Inschrijven ingezetene en Verwerken adreswijziging, zonder eigen besluit, eigen wettelijke regels of eigen product. GEMMA kent daarnaast de generieke bedrijfsfunctie Identiteitvaststelling (Niet domeingebonden), die later in Algemeen kan worden beoordeeld.'
+synoniemen:
+- naam: Identiteitsvaststelling
+  context: beleid
+- naam: ID-protocol
+  context: beleid
+afgeleid:
+  uitkomst:
+    soort: onderdeel
+    regel: 30
+    toelichting: 'Processtap: een deel van een groter proces zonder eigen besluit, eigen normering of aanbod'
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    genoemd_begrip: Inschrijven ingezetene
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-nvvb-id-protocol-medewerkers
+  - 2026-rvig-hup-immigratie
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  herkomst: beleid

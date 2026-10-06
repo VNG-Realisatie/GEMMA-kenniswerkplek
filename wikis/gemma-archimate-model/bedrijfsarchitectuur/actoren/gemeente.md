@@ -7,6 +7,7 @@ naam: Gemeente
 onderwerpen:
 - algemeen
 - lijkbezorging
+- burgerzaken
 definitie: Een gemeente als rechtspersoon, met een raad, een college van burgemeester en wethouders en een burgemeester.
 grondslag: bron
 match:
@@ -18,6 +19,8 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rijk-bw2-rechtspersonen
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-rvig-hup-achtergronden-en-begrippen
+- 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
 ---
 
 # Gemeente
@@ -43,6 +46,10 @@ Wat een gemeente moet of mag doen, zijn verantwoordelijkheden. Die staan in het 
 #### [Lijkbezorging](../../begrippen/lijkbezorging.md)
 
 De gemeente vervult de rollen Houder van de begraafplaats, Houder van het crematorium, Houder van een plaats van bijzetting en Kostendrager. Als houder van de gemeentelijke begraafplaats geeft zij graven uit en onderhoudt zij ze tegen betaling; als kostendrager betaalt zij de lijkbezorging als niemand anders erin voorziet en verhaalt zij de kosten (Wet op de lijkbezorging art. 22, 33, 39 lid 2; Groningen art. 3, 23).
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+De gemeente vervult de rol Bijhoudingsgemeente: het college van de gemeente waar een ingezetene zijn adres heeft, houdt zijn gegevens in de basisregistratie personen bij (HUP Achtergronden). Een daartoe aangewezen gemeente is ook RNI-loket (Utrecht RNI).
 
 ### Homoniemen
 
@@ -91,6 +98,8 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | Gemeente | omvat *aggregatie* | [Gemeenteraad](gemeenteraad.md) | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) (art. 6) |
 | Gemeente | omvat *aggregatie* | [College van B&W](college-van-b-w.md) | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) (art. 6) |
 | Gemeente | omvat *aggregatie* | [Burgemeester](burgemeester.md) | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) (art. 6) |
+| Gemeente | vervult *toewijzing* | [Bijhoudingsgemeente](../rollen/bijhoudingsgemeente.md) | [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
+| Gemeente | vervult *toewijzing* | [RNI-loket](../rollen/rni-loket.md) | [Utrecht RNI inschrijven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) (Inschrijven RNI) |
 
 ## Herkomst
 
@@ -102,6 +111,8 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [BW Boek 2](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md) | Burgerlijk Wetboek Boek 2 Rechtspersonen (BWBR0003045) |
 | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) | Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023 |
+| [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md) | HUP BRP: Achtergronden en begrippen |
+| [Utrecht RNI inschrijven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) | Gemeente Utrecht: Registratie niet-ingezetenen (RNI) |
 
 ### Afstemming met GEMMA
 

@@ -1,0 +1,350 @@
+begrip: Wet basisregistratie personen
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare naam; grondslag van de BRP-producten in de UPL en kader van Besluit, Regeling en HUP (UPL; Besluit BRP; HUP Algemeen).
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-besluit-brp-bwbr0034306
+    - 2026-rvig-hup-algemeen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Geeft het college de bijhouding van de BRP en de producten daarvan (UPL; HUP Achtergronden).
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rvig-hup-achtergronden-en-begrippen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-besluit-brp-bwbr0034306
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-besluit-brp-bwbr0034306
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  regeling_als_geheel:
+    waarde: ja
+    onderbouwing: Een concreet benoemde wet als geheel (BWBR0033715).
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-besluit-brp-bwbr0034306
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: ja
+    onderbouwing: 'Rijkswet: een formele wet.'
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2025-vng-upl-producten-en-diensten-extern
+  in_werking:
+    waarde: ja
+    onderbouwing: Geldend recht; de UPL en de HUP verwijzen naar de actuele tekst.
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rvig-hup-algemeen
+  is_grondslag_voor:
+    waarde: ja
+    onderbouwing: 'Art. 2.23, 2.38, 2.39, 2.43, 2.55, 2.57, 2.58, 2.59, 2.66 en 3.22: grondslag van de BRP-producten in de UPL, die de deelprocessen van Bijhouden persoonsgegevens leveren.'
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2025-vng-upl-producten-en-diensten-extern
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder beleidskader in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2025-vng-upl-producten-en-diensten-extern
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: 'Wet die de basisregistratie personen regelt: de inschrijving en bijhouding van gegevens over ingezetenen en niet-ingezetenen en de verstrekking daarvan.'
+beschrijving:
+- De Wet BRP wordt uitgewerkt in het Besluit BRP, de Regeling BRP en het Logisch Ontwerp BRP (Besluit BRP; LO BRP). Het college houdt de gegevens van de ingezetenen bij; de minister van BZK de RNI en de centrale voorzieningen (HUP Achtergronden). De UPL noemt de wet als grondslag van onder meer de BRP-inschrijving, de verhuismelding, de aangifte van vertrek, het briefadres, het uittreksel en de geheimhouding (UPL).
+synoniemen:
+- naam: Wet BRP
+  context: dagelijks gebruik
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: regelgeving
+grondslag_toelichting:
+- De wet zelf (BWBR0033715), zoals de UPL haar als grondslag noemt en het Besluit BRP haar uitwerkt (Wet BRP art. 1.1–1.10).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen beleidskader voor deze wet; nieuw voor GEMMA.
+regelgever: rijk
+relaties:
+- soort: associatie (gericht)
+  naar: brp-inschrijving
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 88, art. 2.38
+- soort: associatie (gericht)
+  naar: verhuismelding
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 424, art. 2.39
+- soort: associatie (gericht)
+  naar: aangifte-vertrek-buitenland
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 1, art. 2.43
+- soort: associatie (gericht)
+  naar: briefadres-aanvragen
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 85, art. 2.23
+- soort: associatie (gericht)
+  naar: brp-uittreksel
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 93, art. 2.55
+- soort: associatie (gericht)
+  naar: brp-inzagerecht
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 91, art. 2.55
+- soort: associatie (gericht)
+  naar: brp-geheimhoudingsverzoek
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 87, art. 2.59
+- soort: associatie (gericht)
+  naar: brp-wijzigingsverzoek
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 95, art. 2.58
+- soort: associatie (gericht)
+  naar: brp-adoptie-uitschrijving
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 86, art. 2.57
+- soort: associatie (gericht)
+  naar: rni-inschrijving
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 369, art. 2.66
+- soort: associatie (gericht)
+  naar: brp-inzagerecht-gegevensverstrekking
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 92, art. 3.22
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Opnemen als beleidskader: grondslag van de BRP-diensten in de UPL en kader van Besluit en Regeling BRP.'
+  gevolg: opnemen
+  redenen:
+  - 'grondslag regelgeving: altijd voorleggen'
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'grondslag regelgeving: altijd voorleggen'
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rvig-hup-algemeen
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  herkomst: wet
+  pad: motivatie/beleidskaders/wet-basisregistratie-personen.md

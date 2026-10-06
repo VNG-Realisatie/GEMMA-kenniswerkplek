@@ -1,0 +1,287 @@
+begrip: Inschrijven op briefadres
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar als aanvraag briefadres (NVVB Beleidsregel briefadres; UPL nr. 85).
+    bronnen:
+    - 2026-nvvb-beleidsregel-briefadres
+    - 2025-vng-upl-producten-en-diensten-extern
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente beoordeelt de aangifte en registreert, zo nodig ambtshalve, op een briefadres (HUP Verblijfplaats; NVVB Beleidsregel briefadres).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2026-nvvb-beleidsregel-briefadres
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2026-nvvb-beleidsregel-briefadres
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2026-nvvb-beleidsregel-briefadres
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2026-nvvb-beleidsregel-briefadres
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2026-nvvb-beleidsregel-briefadres
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Bijhoudingsgemeente en Beslisser (college); de Aangever doet de aangifte en de Briefadresgever stemt in (HUP Verblijfplaats).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Legt het briefadres vast (HUP Verblijfplaats).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+  aanleiding:
+    waarde: ja
+    onderbouwing: Aangifte van een briefadres door wie geen woonadres heeft, of ambtshalve als die aangifte uitblijft (HUP Verblijfplaats; NVVB Beleidsregel briefadres).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2026-nvvb-beleidsregel-briefadres
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een inschrijving op een briefadres (HUP Verblijfplaats).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval dat zich voordoet.
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+    - 2026-nvvb-beleidsregel-briefadres
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Wet BRP art. 2.23, 2.40, 2.41 en 2.45 (UPL nr. 85; HUP Verblijfplaats); gemeentelijke beleidsregel naar het NVVB-model (NVVB Beleidsregel briefadres).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rvig-hup-verblijfplaats
+    - 2026-nvvb-beleidsregel-briefadres
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie in de verblijfplaats (HUP Verblijfplaats).'
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Geen groepering van processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: De gemeente voert het uit; andere partijen leveren alleen gegevens of vragen erom.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Het college beoordeelt of de aangifte van een briefadres kan worden ingewilligd (HUP Verblijfplaats).
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Briefadres aanvragen (UPL nr. 85).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rvig-hup-verblijfplaats
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het beoordelen van een aangifte van een briefadres en het inschrijven van een persoon zonder woonadres op een briefadres.
+beschrijving:
+- Een briefadres wordt geregistreerd als iemand geen woonadres heeft, in een aangewezen instelling verblijft of als de burgemeester opneming van het woonadres om veiligheidsredenen niet wenselijk vindt; de briefadresgever stemt schriftelijk in (HUP Verblijfplaats). Het college beoordeelt of de aangifte kan worden ingewilligd en wijst zo nodig een rechtspersoon als briefadresgever aan (HUP Verblijfplaats). Sinds 1 januari 2022 registreert de gemeente iemand zonder woonadres die geen aangifte doet ambtshalve op een briefadres; de NVVB heeft daarvoor een modelregeling met een aanvraagformulier, een toestemmingsverklaring en een beheerregeling (NVVB Beleidsregel briefadres).
+synoniemen:
+- naam: Aangifte van een briefadres
+  context: HUP
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: briefadres
+afnemer: extern
+gemma_generiek:
+  id: id-49fe8555-b001-4c86-9a81-20491e16af75
+  onderbouwing: Een aanvraag die het college beoordeelt en honoreert (HUP Verblijfplaats; NVVB Beleidsregel briefadres).
+relaties:
+- soort: toegang (registreren)
+  naar: briefadres
+  naam: legt vast
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-verblijfplaats
+  vindplaats: Briefadres
+- soort: realisatie
+  naar: briefadres-aanvragen
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-nvvb-beleidsregel-briefadres
+  vindplaats: UPL nr. 85
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-nvvb-beleidsregel-briefadres
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-verblijfplaats
+  herkomst: informatiemodel
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md

@@ -1,0 +1,294 @@
+begrip: Verwerken adreswijziging
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar als verhuizing doorgeven (Utrecht) en adreswijziging (HUP).
+    bronnen:
+    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente past de gegevens aan en geeft de verhuizing door aan organisaties (Utrecht Verhuizing doorgeven).
+    bronnen:
+    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Bijhoudingsgemeente; de Aangever doet aangifte (HUP Binnengemeentelijke en Intergemeentelijke adreswijziging).
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Legt de nieuwe verblijfplaats vast; bij een verhuizing naar de gemeente neemt zij de persoonslijst over (HUP Intergemeentelijke adreswijziging).
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  aanleiding:
+    waarde: ja
+    onderbouwing: Aangifte van adreswijziging, of ambtshalve na een onderzoek (HUP Binnengemeentelijke adreswijziging).
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een nieuwe verblijfplaats met datum aanvang adreshouding (HUP Binnengemeentelijke adreswijziging).
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval dat zich voordoet.
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Aangifte vanaf vier weken voor tot de vijfde dag na de verhuizing; bij latere aangifte geldt de ontvangstdatum (art. 2.39 Wet BRP; HUP Binnengemeentelijke adreswijziging; UPL nr. 424).
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+    - 2025-vng-upl-producten-en-diensten-extern
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie in de verblijfplaats (HUP Binnengemeentelijke adreswijziging).'
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Geen groepering van processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: De gemeente voert het uit; andere partijen leveren alleen gegevens of vragen erom.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen apart besluit bij de verwerking van de aangifte; de ambtshalve wijziging volgt uit het adresonderzoek.
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Verhuismelding (UPL nr. 424).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het verwerken van een verhuizing binnen of naar de gemeente in de verblijfplaats van de ingeschreven persoon.
+beschrijving:
+- Wie binnen of naar de gemeente verhuist, doet aangifte van adreswijziging, vanaf vier weken voor tot de vijfde dag na de verhuizing; alle verhuizende personen ondertekenen, de aangifte kan schriftelijk of digitaal met DigiD en de gemeente kan de betrouwbaarheid controleren (HUP Binnengemeentelijke adreswijziging; Utrecht Verhuizing doorgeven). Bij een verhuizing vanuit een andere gemeente wordt de nieuwe gemeente bijhoudingsgemeente en neemt zij de persoonslijst over, met openstaande onderzoeken (HUP Intergemeentelijke adreswijziging). Wie bij iemand anders gaat wonen, levert een verklaring van inwoning van de hoofdbewoner (Utrecht).
+- Een infrastructurele wijziging zonder verhuizing (straatnaamwijziging, vernummering, gemeentelijke herindeling) wordt als adreswijziging verwerkt, zonder aangifte (HUP Binnengemeentelijke en Intergemeentelijke adreswijziging).
+synoniemen:
+- naam: Binnengemeentelijke adreswijziging
+  context: HUP
+- naam: Intergemeentelijke adreswijziging
+  context: HUP
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: verblijfplaats
+afnemer: extern
+gemma_generiek:
+  id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  onderbouwing: De verwerking volgt op een aangifte van adreswijziging die de basisregistratie bijwerkt (HUP Binnengemeentelijke adreswijziging).
+relaties:
+- soort: toegang (bijwerken)
+  naar: verblijfplaats
+  naam: legt vast
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  vindplaats: inleiding
+- soort: realisatie
+  naar: verhuismelding
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  vindplaats: UPL nr. 424
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-adreswijziging.md

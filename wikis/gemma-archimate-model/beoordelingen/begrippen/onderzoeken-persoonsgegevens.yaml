@@ -1,0 +1,233 @@
+begrip: Onderzoeken persoonsgegevens
+onderwerpen:
+- burgerzaken
+genoemd_begrip: Bijhouden persoonsgegevens
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Gangbaar: gegevens in onderzoek (HUP Proceduregegevens; Circulaire adresonderzoek 4.2).'
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+    - 2023-rvig-circulaire-adresonderzoek-brp
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Gemeentelijk gedrag in de bijhouding van de BRP.
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval doorlopen.
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Bijhoudingsgemeente (HUP Proceduregegevens).
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Plaatst een aantekening in onderzoek op de persoonslijst (HUP Proceduregegevens).
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  aanleiding:
+    waarde: ja
+    onderbouwing: Twijfel, bijvoorbeeld door een terugmelding van een afnemer (HUP Proceduregegevens).
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Juiste, geactualiseerde of gecorrigeerde gegevens (HUP Proceduregegevens).
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval.
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: Een stap in Bijhouden persoonsgegevens (HUP Proceduregegevens).
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rvig-hup-proceduregegevens
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+toelichting: 'Processtap zonder pagina: bij twijfel stelt de bijhoudingsgemeente gegevens in onderzoek en neemt proceduregegevens op; het onderzoek eindigt in een actualisering of correctie zonder eigen besluit. Twijfel over het adres leidt tot het deelproces Uitvoeren adresonderzoek; een verzoek van de burger tot Behandelen verzoek om correctie.'
+synoniemen:
+- naam: In onderzoek stellen van gegevens
+  context: HUP
+- naam: Behandelen terugmelding
+  context: HUP
+afgeleid:
+  uitkomst:
+    soort: onderdeel
+    regel: 30
+    toelichting: 'Processtap: een deel van een groter proces zonder eigen besluit, eigen normering of aanbod'
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    genoemd_begrip: Bijhouden persoonsgegevens
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rvig-hup-proceduregegevens
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  herkomst: beleid

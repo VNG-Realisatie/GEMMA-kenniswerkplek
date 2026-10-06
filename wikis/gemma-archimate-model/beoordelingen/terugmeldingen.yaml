@@ -124,3 +124,29 @@ terugmeldingen:
   element: rechthebbende-op-het-graf
   nummer: 11
   status: open
+- domein: RSGBPlus
+  entiteit: Akte van de burgerlijke stand
+  type: hiaat
+  element: akte-van-de-burgerlijke-stand
+  bevinding:
+  - '**GGM:** het GGM kent geen entiteit voor de akte van de burgerlijke stand; IngeschrevenPersoon en de BRP-categorieën verwijzen wel naar brondocumenten.'
+  - '**Bevinding:** de gemeente maakt akten op in de registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden en verwerkt ze als brondocument in de BRP (2026-rijk-burgerlijk-wetboek-boek-1, art. 16a, 18, 19; 2026-rvig-hup-algemeen). De akten worden digitaal bijgehouden en elektronisch aangegeven met het burgerservicenummer (2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493, art. 67a).'
+  - '**Voorstel:** een entiteit Akte van de burgerlijke stand in een beleidsdomein Burgerzaken, met onder meer:'
+  - '- soort akte, aktenummer, register en gemeente;'
+  - '- datum opmaak en ambtenaar van de burgerlijke stand;'
+  - '- latere vermeldingen;'
+  - '- de relatie met de ingeschreven persoon (brondocument).'
+  nummer: 12
+  status: open
+- domein: RSGBPlus
+  entiteit: VerblijfadresIngeschrevenPersoon
+  type: duplicaat
+  element: verblijfplaats
+  bevinding:
+  - '**GGM:** de gegevens over het verblijf en adres staan twee keer in RSGBPlus, met dezelfde definitie:'
+  - '- VerblijfadresIngeschrevenPersoon (EAID_F6DAC299_3F19_45c6_BFFE_EB38C1C51459);'
+  - '- VerblijfadresIngeschrevenNatuurlijkPersoon (EAID_E5E010C2_C1F3_4986_AA9A_C71C19263606).'
+  - '**Bevinding:** de BRP kent één categorie Verblijfplaats van de ingeschreven persoon (2025-rvig-logisch-ontwerp-brp-2025q1, 4.4); de entiteit IngeschrevenNatuurlijkPersoon bestaat niet meer in het GGM.'
+  - '**Voorstel:** samenvoegen tot VerblijfadresIngeschrevenPersoon.'
+  nummer: 13
+  status: open
