@@ -5,6 +5,7 @@ archimate_type: business-role
 status: goedgekeurd
 naam: Beslisser
 onderwerpen:
+- algemeen
 - lijkbezorging
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 grondslag: bron

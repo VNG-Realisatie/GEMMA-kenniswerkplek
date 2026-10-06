@@ -5,6 +5,7 @@ archimate_type: business-actor
 status: goedgekeurd
 naam: Burgemeester
 onderwerpen:
+- algemeen
 - lijkbezorging
 definitie: Bestuursorgaan van de gemeente, voorzitter van gemeenteraad en college, benoemd bij koninklijk besluit.
 grondslag: bron

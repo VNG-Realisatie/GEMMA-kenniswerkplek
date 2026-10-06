@@ -5,6 +5,7 @@ archimate_type: business-actor
 status: goedgekeurd
 naam: Gemeente
 onderwerpen:
+- algemeen
 - lijkbezorging
 definitie: Een gemeente als rechtspersoon, met een raad, een college van burgemeester en wethouders en een burgemeester.
 grondslag: bron

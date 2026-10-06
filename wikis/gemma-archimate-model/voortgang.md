@@ -12,7 +12,7 @@ titel: Voortgang
 
 | Onderwerp | Status | Begrippen | Elementen |
 |---|---|---|---|
-| [Algemeen](begrippen/algemeen.md) | in-behandeling | 0 | 0 |
+| [Algemeen](begrippen/algemeen.md) | in-behandeling | 11 | 11 |
 | [Burgerzaken](begrippen/burgerzaken.md) | in-behandeling | 0 | 0 |
 | [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 183 | 93 |
 | [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
@@ -23,9 +23,9 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 | Onderwerp | Elementen | Gebruikt uit andere | Relaties binnen | Relaties met andere |
 |---|---|---|---|---|
-| Algemeen | 0 | 0 | 0 | — |
+| Algemeen | 11 | 0 | 12 | Lijkbezorging 39 |
 | Burgerzaken | 0 | 0 | 0 | — |
-| Lijkbezorging | 93 | 0 | 261 | — |
+| Lijkbezorging | 82 | 11 | 210 | Algemeen 39 |
 | Participatie | 0 | 0 | 0 | — |
 
 ## Elementen per type en status

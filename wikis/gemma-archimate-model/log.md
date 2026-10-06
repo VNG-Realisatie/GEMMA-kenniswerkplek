@@ -442,3 +442,16 @@ verwijderen; de pre-commit-hook weigert dat.
 ## [2026-10-05] promote | verzorgen-lijkbezorging | Mark Backer | f5b421ed
 ## [2026-10-05] promote | wet-op-de-lijkbezorging | Mark Backer | 93766c68
 ## [2026-10-05] promote | grafuitgifte | Mark Backer | 0214b613
+## [2026-10-06] promote | beschikking | Mark Backer | 484bab45
+## [2026-10-06] promote | beslisser | Mark Backer | f2526acb
+## [2026-10-06] promote | besluit | Mark Backer | 54fecf03
+## [2026-10-06] promote | burgemeester | Mark Backer | fcbd15e4
+## [2026-10-06] promote | college-van-b-w | Mark Backer | bb8f6759
+## [2026-10-06] promote | gemeente | Mark Backer | 37b54eee
+## [2026-10-06] promote | gemeenteraad | Mark Backer | e58fc270
+## [2026-10-06] promote | heffing | Mark Backer | c1dcf0eb
+## [2026-10-06] promote | heffingsverordening | Mark Backer | 08f58fc4
+## [2026-10-06] promote | regeling | Mark Backer | a5d1f88f
+## [2026-10-06] promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | 1690cfb8
+## [2026-10-06] promote | vergunning | Mark Backer | 9bbac78b
+## [2026-10-06] promote | vervoersdocumenten-stoffelijk-overschot | Mark Backer | 7a795f43

@@ -201,6 +201,12 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
 genoemd_begrip: Vergunning
 toelichting: 'Specialisatie zonder pagina van Vergunning: het document van de burgemeester waarmee een stoffelijk overschot ongehinderd naar een verdragsstaat van de Overeenkomst van Straatsburg wordt vervoerd (Besluit op de lijkbezorging art. 11 lid 1).'
+homoniemen:
+- begrip: Laissez-passer voor lijken
+  betekenis: 'De dienst waarmee de afnemer het vervoer van een stoffelijk overschot naar het buitenland regelt, met de UPL-naam Vervoersdocumenten stoffelijk overschot'
+  waar: 'De dienst Vervoersdocumenten stoffelijk overschot in deze wiki, met Laissez-passer voor lijken als synoniem (wet)'
+  naamkeuze: 'Dit begrip is het document zelf: een specialisatie van Vergunning zonder pagina. De dienst heet Vervoersdocumenten stoffelijk overschot.'
+  element: vervoersdocumenten-stoffelijk-overschot
 onderwerpen:
 - lijkbezorging
 afgeleid:

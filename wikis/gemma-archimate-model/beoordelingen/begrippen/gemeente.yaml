@@ -287,8 +287,14 @@ relaties:
   - 2024-rijk-gemeentewet-wettekst
   vindplaats: art. 6
 onderwerpen:
+- algemeen
 - lijkbezorging
 doelgroep: gemeente
+homoniemen:
+- begrip: Gemeente
+  betekenis: De verantwoordelijkheid die gemeenten hebben; in GEMMA de doelgroep die de applicatieservices voor de medewerkers van de gemeente ordent
+  waar: GEMMA-rol, doelgroep in de Applicatieservice-indeling
+  naamkeuze: 'Deze pagina heet Gemeente: de gemeente als rechtspersoon. De GEMMA-rol wordt niet gekoppeld; de verantwoordelijkheden van de gemeente zijn in de wiki eigen rollen.'
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -308,8 +314,3 @@ afgeleid:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: wet
   pad: bedrijfsarchitectuur/actoren/gemeente.md
-homoniemen:
-- begrip: Gemeente
-  betekenis: De verantwoordelijkheid die gemeenten hebben; in GEMMA de doelgroep die de applicatieservices voor de medewerkers van de gemeente ordent
-  waar: GEMMA-rol, doelgroep in de Applicatieservice-indeling
-  naamkeuze: 'Deze pagina heet Gemeente: de gemeente als rechtspersoon. De GEMMA-rol wordt niet gekoppeld; de verantwoordelijkheden van de gemeente zijn in de wiki eigen rollen.'

@@ -5,6 +5,7 @@ archimate_type: business-actor
 status: goedgekeurd
 naam: College van B&W
 onderwerpen:
+- algemeen
 - lijkbezorging
 definitie: Dagelijks bestuur van de gemeente, bestaande uit de burgemeester en de wethouders.
 grondslag: bron

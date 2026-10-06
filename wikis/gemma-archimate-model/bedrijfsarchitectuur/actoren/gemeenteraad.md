@@ -5,6 +5,7 @@ archimate_type: business-actor
 status: goedgekeurd
 naam: Gemeenteraad
 onderwerpen:
+- algemeen
 - lijkbezorging
 definitie: Bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt.
 grondslag: bron

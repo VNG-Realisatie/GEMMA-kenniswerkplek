@@ -45,6 +45,12 @@ Vervoer naar een staat die partij is bij de Overeenkomst van Straatsburg gaat on
 |---|---|
 | Laissez-passer voor lijken | wet |
 
+### Homoniemen
+
+| Begrip | Betekenis | Naamkeuze |
+|---|---|---|
+| Laissez-passer voor lijken (Specialisatie van Vergunning zonder eigen pagina in deze wiki) | Het document van de burgemeester waarmee een stoffelijk overschot ongehinderd naar een verdragsstaat van de Overeenkomst van Straatsburg wordt vervoerd (Besluit op de lijkbezorging art. 11 lid 1) | Deze pagina heet Vervoersdocumenten stoffelijk overschot: de dienst, met de UPL-naam, en Laissez-passer voor lijken als synoniem (wet). Het document zelf is de specialisatie Laissez-passer voor lijken van Vergunning en krijgt geen pagina; het afgeven is het deelproces Afgeven laissez-passer. |
+
 ## Plaats in het model
 
 ### Typering

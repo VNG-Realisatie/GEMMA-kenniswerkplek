@@ -44,6 +44,12 @@ Begraven of cremeren mag niet eerder dan 36 uur en uiterlijk op de zesde werkdag
 |---|---|
 | Andere termijn | wet |
 
+### Homoniemen
+
+| Begrip | Betekenis | Naamkeuze |
+|---|---|---|
+| Andere termijn (Specialisatie van Beschikking zonder eigen pagina in deze wiki) | Het besluit van de burgemeester waarmee een afwijkende termijn voor begraving of crematie wordt gesteld (Wet op de lijkbezorging art. 17) | Deze pagina heet Uitvaart vervroegen of uitstellen: de dienst voor de afnemer, met Andere termijn als synoniem (wet). Het besluit zelf is de specialisatie Andere termijn van Beschikking en krijgt geen pagina. |
+
 ## Plaats in het model
 
 ### Typering

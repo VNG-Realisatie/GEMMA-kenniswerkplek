@@ -5,6 +5,7 @@ archimate_type: business-object
 status: goedgekeurd
 naam: Heffing
 onderwerpen:
+- algemeen
 - lijkbezorging
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Belastingen

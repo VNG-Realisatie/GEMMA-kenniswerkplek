@@ -233,6 +233,11 @@ relaties:
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   vindplaats: § Uitvaart vervroegen, § Uitvaart uitstellen
+homoniemen:
+- begrip: Andere termijn
+  betekenis: Het besluit van de burgemeester waarmee een afwijkende termijn voor begraving of crematie wordt gesteld (Wet op de lijkbezorging art. 17)
+  waar: Specialisatie van Beschikking zonder eigen pagina in deze wiki
+  naamkeuze: 'Deze pagina heet Uitvaart vervroegen of uitstellen: de dienst voor de afnemer, met Andere termijn als synoniem (wet). Het besluit zelf is de specialisatie Andere termijn van Beschikking en krijgt geen pagina.'
 onderwerpen:
 - lijkbezorging
 domein: Publieksdiensten
