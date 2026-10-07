@@ -6,12 +6,14 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   gemeentelijk:
     waarde: ja
     onderbouwing: Gemeentelijke ambtenaar.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -68,10 +70,11 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan de functie Lijkbezorging: geeft het verlof tot begraving of crematie af (art. 11, 12).'
+    onderbouwing: 'Toegewezen aan de functie Lijkbezorging: geeft het verlof tot begraving of crematie af (art. 11, 12). In de burgerlijke stand toegewezen aan Bijhouden burgerlijke stand en zijn deelprocessen (BW 1 art. 16a).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   soort_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een rol, geen partij.'
@@ -207,6 +210,8 @@ beschrijving:
 per_onderwerp:
   lijkbezorging:
   - De ambtenaar van de burgerlijke stand geeft kosteloos het schriftelijk verlof tot begraving of crematie af, op grond van een verklaring van overlijden of een verklaring van geen bezwaar, en bewaart die stukken (Wet op de lijkbezorging art. 11–13).
+  burgerzaken:
+  - Burgemeester en wethouders wijzen de ambtenaren aan; een van hen heeft de leiding van de dienst (BW 1 art. 16; Besluit burgerlijke stand art. 2). De ambtenaar neemt de akten en latere vermeldingen op in de registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden, houdt de registers bij en geeft afschriften en uittreksels af; hij voltrekt huwelijken, registreert partnerschappen, neemt erkenningen en naamskeuzes op en weigert een akte bij ongenoegzame bescheiden of strijd met de openbare orde (BW 1 art. 16a, 18c, 23, 63, 80a, 203; Besluit burgerlijke stand art. 5).
 grondslag: bron
 gemma:
   sterkte: geen
@@ -219,9 +224,110 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 11
+- soort: toewijzing
+  naar: bijhouden-burgerlijke-stand
+  naam: houdt de registers bij
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  vindplaats: BW 1 art. 16a; Besluit art. 5
+- soort: toewijzing
+  naar: opmaken-akte-van-overlijden
+  naam: maakt akte op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19f
+- soort: toewijzing
+  naar: verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
+  naam: geeft af
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  vindplaats: BW 1 art. 19k, 23; Besluit art. 26
+- soort: toewijzing
+  naar: opmaken-geboorteakte
+  naam: maakt akte op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19
+- soort: toewijzing
+  naar: opmaken-akte-levenloos-geboren-kind
+  naam: maakt akte op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19i
+- soort: toewijzing
+  naar: opmaken-akte-van-erkenning
+  naam: maakt akte op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 203
+- soort: toewijzing
+  naar: toevoegen-latere-vermelding
+  naam: voegt toe
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 20
+- soort: toewijzing
+  naar: opmaken-akte-van-naamskeuze
+  naam: maakt akte op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 5
+- soort: toewijzing
+  naar: wijzigen-geslachtsvermelding
+  naam: voegt latere vermelding toe
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 28b
+- soort: toewijzing
+  naar: behandelen-melding-voorgenomen-huwelijk-of-partnerschap
+  naam: ontvangt kennisgeving
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 44
+- soort: toewijzing
+  naar: voltrekken-huwelijk
+  naam: voltrekt
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 63
+- soort: toewijzing
+  naar: registreren-partnerschap
+  naam: maakt akte op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 80a lid 3, 80g
+- soort: toewijzing
+  naar: inschrijven-ontbinding-huwelijk-of-partnerschap
+  naam: schrijft in
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 80c lid 2, 163
 onderwerpen:
+- burgerzaken
 - lijkbezorging
 doelgroep: gemeente
+specialisaties:
+- naam: Buitengewoon ambtenaar van de burgerlijke stand
+  omschrijving: Ambtenaar met een beperkter takenpakket, zoals het voltrekken van huwelijken en registreren van partnerschappen; ook voor één dag aangewezen op verzoek van het bruidspaar (BW 1 art. 16, 16a lid 2). Geen eigen pagina.
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Thuisonderwerp Burgerzaken (regel Thuishoren): de ambtenaar maakt alle akten van de burgerlijke stand op en houdt de registers bij (BW 1 art. 16a, 18, 20); het verlof tot begraving of crematie staat onder de tekst per onderwerp van Lijkbezorging. Het object in Archi blijft.'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -237,5 +343,7 @@ afgeleid:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   herkomst: wet
   pad: bedrijfsarchitectuur/rollen/ambtenaar-van-de-burgerlijke-stand.md

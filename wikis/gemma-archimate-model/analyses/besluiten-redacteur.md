@@ -90,6 +90,12 @@ Besluiten over de werkwijze en de criteria staan bij de analyse waar ze bij hore
 | 2026-10-07 | Akte van de burgerlijke stand, Reisdocument | burgerzaken | Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12). |
 | 2026-10-07 | Briefadres aanvragen | burgerzaken | Naam van de dienst, met briefadres (UPL) als synoniem; homoniem van het bedrijfsobject Briefadres. |
 | 2026-10-07 | Adres | burgerzaken | Verwijzing zonder pagina, voor een later onderwerp BAG of adressen. |
+| 2026-10-07 | Ambtenaar van de burgerlijke stand | burgerzaken | Thuisonderwerp Burgerzaken (`burgerzaken` eerste in `onderwerpen`): de rol maakt alle akten op en houdt de registers bij; het verlof tot begraving of crematie blijft als tekst per onderwerp in Lijkbezorging. Het object in Archi blijft. |
+| 2026-10-07 | Overlijden | burgerzaken | Thuisonderwerp Burgerzaken (`burgerzaken` eerste in `onderwerpen`): het overlijden is in de eerste plaats een feit van de burgerlijke stand; Lijkbezorging gebruikt de gebeurtenis met een relatie en houdt haar tekst per onderwerp. Het besluit van 2026-10-04 (niet generiek) blijft. Het object in Archi blijft. |
+| 2026-10-07 | Burgerlijke stand diensten | burgerzaken | Thuisonderwerp Burgerzaken (`burgerzaken` eerste in `onderwerpen`): de functie bedient Bijhouden burgerlijke stand en omvat de diensten van de burgerlijke stand. Het object in Archi blijft. |
+| 2026-10-07 | Thuisonderwerp en eerdere goedkeuring | alle | Dat een element eerder in een ander onderwerp is beoordeeld of goedgekeurd, is geen argument voor zijn thuisonderwerp: dat komt door de volgorde van inlezen. Alleen de inhoud telt (regel Thuishoren). Volgt het thuisonderwerp eenduidig uit de inhoud, dan verplaatst de AI het element zonder voor te leggen en noemt het in de lijst ter bevestiging; alleen bij inhoudelijke twijfel voorleggen. |
+| 2026-10-07 | Burgerlijk Wetboek Boek 1, Besluit burgerlijke stand 1994 | burgerzaken | Opnemen als beleidskader; grondslag van Bijhouden burgerlijke stand, de akten en de diensten van de burgerlijke stand. |
+| 2026-10-07 | Akte van de burgerlijke stand | burgerzaken | Opgenomen als gegevensobject zonder GGM-entiteit, kernobject van Bijhouden burgerlijke stand (GGM-terugmelding 12). |
 
 ## Open punten uit eerdere besluiten
 

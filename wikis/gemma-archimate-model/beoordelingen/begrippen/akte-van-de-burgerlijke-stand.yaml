@@ -199,7 +199,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki; de akten per soort zijn zijn specialisaties (Besluit burgerlijke stand hoofdstuk 2).
+    onderbouwing: 'Geen breder begrip in deze wiki; de akten per soort zijn specialisaties zonder eigen pagina: ze worden door hetzelfde proces bijgehouden en verschillen alleen in de gegevens die de wet per soort vraagt (Besluit burgerlijke stand hoofdstuk 2).'
     bronnen:
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   generiek:
@@ -208,7 +208,8 @@ kenmerken:
 definitie: Akte die de ambtenaar van de burgerlijke stand opmaakt over een geboorte, huwelijk, partnerschap, overlijden of ander feit van de burgerlijke stand.
 beschrijving:
 - De ambtenaar van de burgerlijke stand neemt de akten en latere vermeldingen op in de registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden van de gemeente; een akte bevat alleen de gegevens die de wet vraagt en heeft de bewijskracht van een authentieke akte (BW 1 art. 16a, 18, 22). Het Besluit burgerlijke stand regelt per aktesoort de inhoud (hoofdstuk 2).
-- 'Voor de BRP is de akte het belangrijkste brondocument: de medewerker BRP ontleent de gegevens van de persoonslijst aan akten uit de registers van de burgerlijke stand (HUP Algemeen; HUP Achtergronden). De akten per soort en de processen van de burgerlijke stand worden apart beoordeeld.'
+- 'Voor de BRP is de akte het belangrijkste brondocument: de medewerker BRP ontleent de gegevens van de persoonslijst aan akten uit de registers van de burgerlijke stand (HUP Algemeen; HUP Achtergronden). De akte is het kernobject van het bedrijfsproces Bijhouden burgerlijke stand, van opmaken tot latere vermelding en afgifte van afschriften en uittreksels.'
+- Een afschrift bevat ook de latere vermeldingen; een uittreksel geeft de toestand op het moment van afgifte (Besluit burgerlijke stand art. 26). De registers en de afschriften en uittreksels zijn de vorm waarin de akten worden bewaard en verstrekt; ze krijgen geen eigen pagina, net als de latere vermelding, die een onderdeel van de akte is (BW 1 art. 20).
 synoniemen:
 - naam: Akte
   context: dagelijks gebruik
@@ -217,29 +218,55 @@ beleidsdomein: Burgerzaken
 grondslag: bron
 ggm:
   sterkte: geen
-  onderbouwing: 'Het GGM kent geen entiteit voor de akte van de burgerlijke stand (tools/ggm.py zoek akte: geen treffer in Burgerzaken of RSGBPlus); GGM-terugmelding (hiaat).'
+  onderbouwing: 'Het GGM kent geen entiteit voor de akte van de burgerlijke stand (tools/ggm.py kandidaten Akte: geen treffer in Burgerzaken of RSGBPlus); GGM-terugmelding 12 (hiaat).'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen bedrijfsobject Akte; nieuw voor GEMMA.
-status: kandidaat
+specialisaties:
+- naam: Akte van geboorte
+  omschrijving: 'Opgemaakt in de gemeente van geboorte na de aangifte van geboorte (BW 1 art. 19, 19e; Besluit burgerlijke stand art. 43). Gangbaar: geboorteakte. Geen eigen pagina.'
+- naam: Akte van geboorte levenloos geboren kind
+  omschrijving: Opgemaakt na de aangifte van een levenloos geboren kind en opgenomen in het register van overlijden (BW 1 art. 19i; Besluit burgerlijke stand art. 66). Geen eigen pagina.
+- naam: Akte van erkenning
+  omschrijving: Opgemaakt als een man of vrouw een kind erkent, ook vóór de geboorte (BW 1 art. 203; Besluit burgerlijke stand art. 49). Geen eigen pagina.
+- naam: Akte van naamskeuze
+  omschrijving: Opgemaakt op de verklaring van de ouders over de geslachtsnaam van het kind (BW 1 art. 5; Besluit burgerlijke stand art. 52a). Geen eigen pagina.
+- naam: Huwelijksakte
+  omschrijving: Opgemaakt bij de voltrekking van het huwelijk (BW 1 art. 63; Besluit burgerlijke stand art. 57). Geen eigen pagina.
+- naam: Akte van registratie van partnerschap
+  omschrijving: Opgemaakt bij de registratie van een geregistreerd partnerschap (BW 1 art. 80a lid 3; Besluit burgerlijke stand art. 57a). Geen eigen pagina.
+- naam: Akte van omzetting
+  omschrijving: Opgemaakt bij de omzetting van een geregistreerd partnerschap in een huwelijk (BW 1 art. 80g; Besluit burgerlijke stand art. 57c). Geen eigen pagina.
+- naam: Akte van inschrijving
+  omschrijving: Waarmee een rechterlijke uitspraak, zoals een echtscheiding, of een buiten Nederland opgemaakte akte in de registers wordt ingeschreven (BW 1 art. 25; Besluit burgerlijke stand art. 60, 60a). Geen eigen pagina.
+- naam: Akte van overlijden
+  omschrijving: 'Opgemaakt in de gemeente van overlijden na de aangifte van overlijden, ook bij lijkvinding (BW 1 art. 19f, 19h; Besluit burgerlijke stand art. 61-65). Gangbaar: overlijdensakte. Geen eigen pagina.'
+homoniemen:
+- begrip: Uittreksel burgerlijke stand
+  betekenis: De dienst waarmee iemand een afschrift of uittreksel van een akte krijgt; in de UPL het product akte van de burgerlijke stand (nr. 23)
+  waar: UPL-lijst extern
+  element: uittreksel-burgerlijke-stand
+  naamkeuze: 'Deze pagina heet Akte van de burgerlijke stand: de akte zelf. De dienst heet Uittreksel burgerlijke stand, met de UPL-naam als synoniem.'
+besluiten:
+- datum: '2026-10-07'
+  besluit: Opnemen als gegevensobject zonder GGM-entiteit, kernobject van Bijhouden burgerlijke stand; GGM-terugmelding 12 (besluit 2026-10-07).
+  gevolg: opnemen
+  redenen:
+  - gegevensobject zonder sterke GGM-match
+status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 38
+    regel: 35
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
-    voorleggen: true
-    redenen:
-    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    voorleggen: false
     data_object: ja
+    objectniveau: kernobject
     generiek: false
     typeregel: 21
   voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  - gegevensobject zonder sterke GGM-match
-  open:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1

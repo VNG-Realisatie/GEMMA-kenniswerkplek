@@ -22,6 +22,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-besluit-brp-bwbr0034306
+- 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
 ---
 
 # Verstrekken persoonsgegevens
@@ -96,6 +97,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | Verstrekken persoonsgegevens | realiseert *realisatie* | [BRP-inzagerecht](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inzagerecht.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 91) |
 | Verstrekken persoonsgegevens | realiseert *realisatie* | [BRP-uittreksel](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht BRP bekijken en overzicht aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen.md) (UPL nr. 93) |
 | Verstrekken persoonsgegevens | realiseert *realisatie* | [BRP-uittreksel met gezag](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel-met-gezag.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 94) |
+| Verstrekken persoonsgegevens | realiseert *realisatie* | [Bewijs van in leven zijn](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-in-leven-zijn.md) | [Utrecht Bewijs van in leven zijn of attestatie de vita](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen.md) (Bewijs van in leven zijn (uittreksel BRP)) |
 
 #### Inkomend
 
@@ -117,6 +119,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [Utrecht BRP bekijken en overzicht aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen.md) | Gemeente Utrecht: Persoonsgegevens bekijken of aanvragen |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [Besluit BRP](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-brp-bwbr0034306.md) | Besluit basisregistratie personen |
+| [Utrecht Bewijs van in leven zijn of attestatie de vita](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen.md) | Gemeente Utrecht: Verklaring van in leven zijn (attestatie de vita) |
 
 ### Afstemming met GEMMA
 

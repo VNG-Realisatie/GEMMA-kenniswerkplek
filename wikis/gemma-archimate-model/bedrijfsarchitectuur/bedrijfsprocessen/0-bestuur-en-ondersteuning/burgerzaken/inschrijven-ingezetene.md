@@ -23,6 +23,7 @@ bronnen:
 - 2026-rvig-hup-hervestiging
 - 2026-rijk-besluit-brp-bwbr0034306
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
 ---
 
 # Inschrijven ingezetene
@@ -61,7 +62,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 - **Procesindeling naar taak, onderdeel van**: [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
 - **Kernobject**: [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md).
 - **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Behandelen aangifte of melding*. De inschrijving volgt op een aangifte van verblijf en adres die de basisregistratie bijwerkt (HUP Immigratie).
-- **Gestart door gebeurtenis**: [Vestiging vanuit het buitenland](../../../gebeurtenissen/vestiging-vanuit-het-buitenland.md).
+- **Gestart door gebeurtenis**: [Adoptie](../../../gebeurtenissen/adoptie.md), [Vestiging vanuit het buitenland](../../../gebeurtenissen/vestiging-vanuit-het-buitenland.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
@@ -99,12 +100,14 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | Inschrijven ingezetene | ontleent gegevens aan *toegang (raadplegen)* | [Akte van de burgerlijke stand](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md) | [HUP Immigratie](../../../../bronanalyses/burgerzaken/2026-rvig-hup-immigratie.md), [Utrecht Inschrijven vanuit het buitenland](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland.md) (Utrecht Wat neemt u mee) |
 | Inschrijven ingezetene | realiseert *realisatie* | [BRP-inschrijving](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Inschrijven vanuit het buitenland](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland.md) (UPL nr. 88) |
 | Inschrijven ingezetene | realiseert *realisatie* | [Persoonsgegevens verklaring onder eed of belofte](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/persoonsgegevens-verklaring-onder-eed-of-belofte.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [HUP Immigratie](../../../../bronanalyses/burgerzaken/2026-rvig-hup-immigratie.md) (UPL nr. 335; HUP Immigratie categorie 04) |
+| Inschrijven ingezetene | realiseert *realisatie* | [Adoptie aangifte](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/adoptie-aangifte.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Adoptie, kind inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) (UPL nr. 6; Utrecht inleiding) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Aangever](../../../rollen/aangever.md) | doet aangifte *toewijzing* | Inschrijven ingezetene | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/2026-rvig-hup-verblijfplaats.md) (Verplichte of bevoegde aangever) |
+| [Adoptie](../../../gebeurtenissen/adoptie.md) | leidt tot (adoptiekind uit het buitenland) *triggering* | Inschrijven ingezetene | [Utrecht Adoptie, kind inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) (inleiding) |
 | [Beslisser](../../../rollen/beslisser.md) | beslist over *toewijzing* | Inschrijven ingezetene | [Besluit BRP](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-brp-bwbr0034306.md) (Besluit BRP art. 24) |
 | [Besluit basisregistratie personen](../../../../motivatie/beleidskaders/besluit-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Inschrijven ingezetene | [Besluit BRP](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-brp-bwbr0034306.md) (art. 24, 30) |
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Inschrijven ingezetene | [HUP Immigratie](../../../../bronanalyses/burgerzaken/2026-rvig-hup-immigratie.md), [HUP Hervestiging](../../../../bronanalyses/burgerzaken/2026-rvig-hup-hervestiging.md) (HUP Immigratie; HUP Hervestiging) |
@@ -122,6 +125,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [HUP Hervestiging](../../../../bronanalyses/burgerzaken/2026-rvig-hup-hervestiging.md) | HUP BRP: Hervestiging |
 | [Besluit BRP](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-brp-bwbr0034306.md) | Besluit basisregistratie personen |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Utrecht Adoptie, kind inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) | Gemeente Utrecht: Adoptie |
 
 ### Afstemming met GEMMA
 

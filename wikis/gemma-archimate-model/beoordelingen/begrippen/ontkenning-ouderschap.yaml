@@ -1,0 +1,255 @@
+begrip: Ontkenning ouderschap
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Wettelijk begrip: ontkenning van het vaderschap of moederschap (BW 1 art. 200; Besluit burgerlijke stand art. 49-52; HUP Ontkenning ouderschap).'
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-ontkenning-ouderschap
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente maakt de akte van ontkenning op of schrijft de uitspraak in en verwerkt haar in de BRP (Besluit burgerlijke stand art. 49-52; HUP Ontkenning ouderschap).
+    bronnen:
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-ontkenning-ouderschap
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-ontkenning-ouderschap
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-ontkenning-ouderschap
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gebeurt.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-ontkenning-ouderschap
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: ja
+    onderbouwing: Het ouderschap van de ene ouder vervalt met terugwerkende kracht, door een uitspraak van de rechtbank of een verklaring van de moeder (HUP Ontkenning ouderschap).
+    bronnen:
+    - 2026-rvig-hup-ontkenning-ouderschap
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Gebeurt bij veel personen, elk jaar opnieuw.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-ontkenning-ouderschap
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: ja
+    onderbouwing: Start het opmaken of inschrijven van de akte en de latere vermelding op de geboorteakte (Besluit burgerlijke stand art. 49-52; HUP Ontkenning ouderschap).
+    bronnen:
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-ontkenning-ouderschap
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-ontkenning-ouderschap
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het vervallen van het juridisch ouderschap van een ouder die niet de biologische ouder is, door een uitspraak of verklaring.
+beschrijving:
+- De vader, de moeder of het kind kan het ouderschap ontkennen op de grond dat de ouder niet de biologische ouder is (BW 1 art. 200); de moeder uit wie het kind is geboren kan in bepaalde gevallen zelf een verklaring afleggen bij de ambtenaar (HUP Ontkenning ouderschap). Ook de geslachtsnaam van het kind kan daardoor veranderen.
+synoniemen:
+- naam: Ontkenning van het vaderschap
+  context: wet
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: triggering
+  naar: toevoegen-latere-vermelding
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvig-hup-ontkenning-ouderschap
+  vindplaats: art. 49-52
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvig-hup-ontkenning-ouderschap
+  herkomst: wet
+  pad: bedrijfsarchitectuur/gebeurtenissen/ontkenning-ouderschap.md

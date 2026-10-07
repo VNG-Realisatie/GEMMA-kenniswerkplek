@@ -17,6 +17,7 @@ procesniveau: taak
 bronnen:
 - 2026-rijk-wet-brp-bwbr0033715
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-burgerlijk-wetboek-boek-1
 ---
 
 # Verzorgen burgerzaken
@@ -33,7 +34,7 @@ Gemeentelijke taak rond burgerzaken: het bijhouden van de persoonsgegevens, de b
 
 ### Beschrijving
 
-Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De taak groepeert de processen daarvoor, één per kernobject; nu Bijhouden persoonsgegevens met de ingeschreven persoon als kernobject.
+Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon en Bijhouden burgerlijke stand met de akte van de burgerlijke stand als kernobject.
 
 ## Plaats in het model
 
@@ -44,7 +45,7 @@ Bedrijfsproces, niveau taak. Uitkomst van de beslistabel: Gedrag, *groepeert pro
 ### Plaats in de indelingen
 
 - **Procesniveau**: taak.
-- **Procesindeling naar taak, omvat**: [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
+- **Procesindeling naar taak, omvat**: [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md), [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
@@ -71,6 +72,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Verzorgen burgerzaken | omvat *aggregatie* | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) (art. 1.4, hoofdstuk 2) |
+| Verzorgen burgerzaken | omvat *aggregatie* | [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 16a, 17) |
 
 ## Herkomst
 
@@ -80,6 +82,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 |---|---|
 | [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) | Burgerlijk Wetboek Boek 1 (Personen- en familierecht) |
 
 ### Afstemming met GEMMA
 

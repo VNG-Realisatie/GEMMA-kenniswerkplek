@@ -1,0 +1,264 @@
+begrip: Overlijdensaangifte
+onderwerpen:
+- burgerzaken
+- lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Gangbaar (RVO); product in de UPL (nr. 315); Utrecht: overlijden, aangifte doen.'
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Bij de gemeente waar iemand is overleden (RVO; BW 1 art. 19f, 19h).
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij Burgerzaken: de aangifte wordt gedaan bij de ambtenaar van de burgerlijke stand en leidt tot de akte van overlijden (BW 1 art. 19f, 19h; besluit redacteur 2026-10-06).'
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat de gemeente aanbiedt.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: ja
+    onderbouwing: 'Een prestatie die de gemeente op aangifte levert, beschreven vanuit de afnemer: overlijden aangeven en de akte en het verlof krijgen (UPL nr. 315; Utrecht).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De akte van overlijden; daarna het verlof tot begraving of crematie (Utrecht inleiding; RVO).
+    bronnen:
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elke afnemer die erom vraagt.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: ja
+    onderbouwing: 'Burger en bedrijf (UPL nr. 315): nabestaanden en de uitvaartondernemer (Utrecht inleiding).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  gerealiseerd_door:
+    waarde: ja
+    onderbouwing: Het deelproces Opmaken akte van overlijden (BW 1 art. 19f).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL (nr. 315); geen bredere dienst in deze wiki.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het doen van aangifte van een overlijden bij de gemeente waar iemand is overleden, waarna de gemeente een akte van overlijden opmaakt.
+beschrijving:
+- Aangifte doet wie het overlijden uit eigen wetenschap kent; degene die de lijkbezorging regelt kan een gemachtigde aanwijzen, meestal de uitvaartondernemer, ook elektronisch (BW 1 art. 19h). Voor de aangifte is een verklaring van overlijden van de behandelend arts of de gemeentelijke lijkschouwer nodig (Utrecht; RVO). De aangifte is gratis (Utrecht).
+- 'Kanalen: online voor uitvaartondernemers met eHerkenning, met het burgerservicenummer van de overledene (Besluit burgerlijke stand art. 67a; Utrecht; RVO), of aan de balie op afspraak voor uitvaartondernemers en nabestaanden (Utrecht). Bij een lijkvinding doet de hulpofficier van justitie schriftelijk aangifte (BW 1 art. 19h lid 6; Besluit burgerlijke stand art. 62).'
+per_onderwerp:
+  lijkbezorging:
+  - Na de aangifte krijgt de aangever het verlof tot begraving of crematie en zo nodig het laissez-passer voor vervoer naar het buitenland (RVO; Utrecht).
+synoniemen:
+- naam: Aangifte van overlijden
+  context: wet
+- naam: Overlijden, aangifte doen
+  context: beleid
+naamkeuze:
+- De UPL-naam letterlijk (regel Naamvorm, besluit redacteur 2026-10-05); de wetsterm aangifte van overlijden (BW 1 art. 19h), tot 2026-10-07 de naam van deze beoordeling, is een synoniem.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen dienst voor de aangifte van overlijden; nieuw voor GEMMA.
+afnemer: extern
+domein: Publieksdiensten
+bronnen:
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: wet
+  pad: bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/overlijdensaangifte.md

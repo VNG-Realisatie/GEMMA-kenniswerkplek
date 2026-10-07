@@ -286,6 +286,14 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rvig-hup-immigratie
   vindplaats: UPL nr. 335; HUP Immigratie categorie 04
+- soort: realisatie
+  naar: adoptie-aangifte
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  vindplaats: UPL nr. 6; Utrecht inleiding
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -305,6 +313,7 @@ afgeleid:
   - 2026-rvig-hup-hervestiging
   - 2026-rijk-besluit-brp-bwbr0034306
   - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
   herkomst: wet
   gemma_generiek:
     gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072

@@ -1,0 +1,278 @@
+begrip: Opmaken akte van naamskeuze
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'De ambtenaar maakt een akte van naamskeuze op (BW 1 art. 5 lid 2, 4; Besluit burgerlijke stand art. 52a); Utrecht: achternaam kind kiezen.'
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Taak van de ambtenaar van de burgerlijke stand van de gemeente (BW 1 art. 5).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Ambtenaar van de burgerlijke stand; beide Ouders leggen de verklaring af (BW 1 art. 5 lid 4; Utrecht).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert de akte van naamskeuze (BW 1 art. 5).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  aanleiding:
+    waarde: ja
+    onderbouwing: De verklaring van de ouders, vóór de geboorte, bij de erkenning of uiterlijk bij de geboorteaangifte (Utrecht).
+    bronnen:
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De akte van naamskeuze; de keuze geldt voor alle volgende kinderen van dezelfde ouders (BW 1 art. 5; Utrecht).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval dat zich voordoet.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: BW 1 art. 5; Besluit burgerlijke stand art. 52a, 52b.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één akte.'
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Naamskeuzeverklaring (UPL nr. 258).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het opnemen van de gezamenlijke verklaring van de ouders over de achternaam van hun kind in een akte van naamskeuze.
+beschrijving:
+- Zonder keuze krijgt het kind de achternaam van de moeder, of van de vader bij gehuwde ouders; bij het eerste kind kunnen de ouders samen kiezen voor de achternaam van de andere ouder of, sinds 2024, een dubbele achternaam. Beide ouders zijn aanwezig met een geldig identiteitsbewijs (BW 1 art. 5; Utrecht). Een kind met een tweede nationaliteit kan de achternaam volgens die nationaliteit krijgen (Utrecht).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: akte-van-de-burgerlijke-stand
+afnemer: extern
+relaties:
+- soort: toegang (registreren)
+  naar: akte-van-de-burgerlijke-stand
+  naam: maakt akte van naamskeuze op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 5
+- soort: realisatie
+  naar: naamskeuzeverklaring
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  vindplaats: UPL nr. 258
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-naamskeuze.md

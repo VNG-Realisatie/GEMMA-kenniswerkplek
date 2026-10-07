@@ -226,9 +226,21 @@ relaties:
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   vindplaats: inleiding, § Aangifte doen van overlijden
+- soort: toewijzing
+  naar: aangever
+  naam: doet aangifte van overlijden als
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: Utrecht inleiding; BW 1 art. 19h lid 2
 onderwerpen:
 - lijkbezorging
+- burgerzaken
 doelgroep: inwoners en ondernemers
+per_onderwerp:
+  burgerzaken:
+  - De uitvaartondernemer doet meestal de aangifte van overlijden, als gemachtigde van degene die in de lijkbezorging voorziet, online met eHerkenning of aan de balie (BW 1 art. 19h lid 2; Utrecht Overlijden, aangifte doen).
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -245,5 +257,7 @@ afgeleid:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
   herkomst: wet
   pad: bedrijfsarchitectuur/actoren/uitvaartondernemer.md

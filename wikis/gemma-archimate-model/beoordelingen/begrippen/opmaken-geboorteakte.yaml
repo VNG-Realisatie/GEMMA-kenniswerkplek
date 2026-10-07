@@ -1,0 +1,293 @@
+begrip: Opmaken geboorteakte
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De ambtenaar van de burgerlijke stand van de gemeente van geboorte maakt de akte van geboorte op na aangifte (BW 1 art. 19, 19e; Utrecht).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Taak van de ambtenaar van de burgerlijke stand van de gemeente (BW 1 art. 19).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Ambtenaar van de burgerlijke stand; de Aangever doet aangifte, meestal een Ouder (BW 1 art. 19e).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert de akte van geboorte (BW 1 art. 19).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  aanleiding:
+    waarde: ja
+    onderbouwing: De geboorte en de aangifte daarvan, binnen drie dagen (BW 1 art. 19e).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De geboorteakte; de aangever krijgt een uittreksel (Utrecht).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval dat zich voordoet.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: BW 1 art. 4, 5, 19-19e; Besluit burgerlijke stand art. 27, 43-47.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één akte in het register van geboorten.'
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Geboorteaangifte (UPL nr. 136).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het ontvangen van de aangifte van een geboorte en het opmaken van de geboorteakte.
+beschrijving:
+- De aangever doet binnen drie dagen aangifte in de gemeente van geboorte; verplicht is de vader of de moeder uit wie het kind niet is geboren, anders wie bij de bevalling aanwezig was of het hoofd van de instelling. Elektronisch kan alleen de moeder of de andere ouder; de ambtenaar stelt de identiteit vast en controleert de verklaring van arts of verloskundige (BW 1 art. 19e; Besluit burgerlijke stand art. 27; Utrecht). Een te late aangifte meldt hij aan het openbaar ministerie (art. 19e lid 7).
+- De ambtenaar weigert ongepaste voornamen (BW 1 art. 4). Bij de aangifte kan ook een erkenning of een naamskeuze worden opgenomen. De geboorteakte gaat naar de woongemeente van de moeder, die het kind in de BRP inschrijft (HUP Geboorte; Utrecht).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: akte-van-de-burgerlijke-stand
+afnemer: extern
+gemma_generiek:
+  id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  onderbouwing: Een aangifte van een gebeurtenis van de burgerlijke stand die de gemeente verwerkt (BW 1 art. 19e).
+relaties:
+- soort: toegang (registreren)
+  naar: akte-van-de-burgerlijke-stand
+  naam: maakt geboorteakte op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19
+- soort: realisatie
+  naar: geboorteaangifte
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  vindplaats: UPL nr. 136
+- soort: stroom
+  naar: bijhouden-persoonsgegevens
+  naam: zendt geboorteakte aan
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-geboorte
+  - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  vindplaats: HUP Geboorte inleiding; Utrecht Na de aangifte
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-geboorte
+  herkomst: wet
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-geboorteakte.md

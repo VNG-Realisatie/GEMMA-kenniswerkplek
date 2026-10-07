@@ -1,0 +1,308 @@
+begrip: Opmaken akte van overlijden
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De ambtenaar van de burgerlijke stand van de gemeente van overlijden maakt de akte van overlijden op na aangifte (BW 1 art. 19f, 19h; Utrecht).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Taak van de ambtenaar van de burgerlijke stand van de gemeente (BW 1 art. 19f).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per geval van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Ambtenaar van de burgerlijke stand (BW 1 art. 19f); de Aangever doet de aangifte (art. 19h).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert de akte van overlijden in het register van overlijden (BW 1 art. 17, 19f).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  aanleiding:
+    waarde: ja
+    onderbouwing: Het overlijden en de aangifte daarvan, of de schriftelijke aangifte van een lijkvinding door de hulpofficier van justitie (BW 1 art. 19h; Besluit burgerlijke stand art. 62).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De akte van overlijden (BW 1 art. 19f).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval dat zich voordoet.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: BW 1 art. 19f-19h; Besluit burgerlijke stand art. 61-65, 67a.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één akte in het register van overlijden.'
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Overlijdensaangifte (UPL nr. 315).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het ontvangen van de aangifte van een overlijden of lijkvinding en het opmaken van de akte van overlijden.
+beschrijving:
+- De ambtenaar van de burgerlijke stand van de gemeente van overlijden stelt de identiteit van de aangever vast en maakt de akte op, op grond van de verklaring van overlijden; de aangifte kan elektronisch, met het burgerservicenummer van de overledene en de verklaring van de arts (BW 1 art. 19f, 19h; Besluit burgerlijke stand art. 67a). Bij een lijkvinding maakt hij de akte op de schriftelijke aangifte van de hulpofficier van justitie; datum en plaats van de vinding gelden als datum en plaats van overlijden (Besluit burgerlijke stand art. 62; HUP Lijkvinding).
+- De akte gaat naar de woongemeente, die het overlijden in de BRP verwerkt en de bijhouding van de persoonslijst opschort; bij een echtgenoot of geregistreerd partner wordt de ontbinding door overlijden verwerkt (HUP Overlijden in Nederland; Utrecht). Een overlijden in het buitenland of een rechtsvermoeden van overlijden wordt via een akte van inschrijving opgenomen (HUP Overlijden buitenland; HUP Rechtsvermoeden van overlijden).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: akte-van-de-burgerlijke-stand
+afnemer: extern
+gemma_generiek:
+  id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  onderbouwing: Een aangifte van een gebeurtenis van de burgerlijke stand die de gemeente verwerkt (BW 1 art. 19h).
+relaties:
+- soort: toegang (registreren)
+  naar: akte-van-de-burgerlijke-stand
+  naam: maakt akte van overlijden op
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19f
+- soort: realisatie
+  naar: overlijdensaangifte
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: UPL nr. 315; art. 19h
+- soort: stroom
+  naar: bijhouden-persoonsgegevens
+  naam: zendt akte aan
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-overlijden-nederland
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  vindplaats: HUP regel 19; Utrecht Op de hoogte brengen van organisaties
+- soort: triggering
+  naar: verlenen-verlof-tot-begraving-of-crematie
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  vindplaats: Utrecht inleiding
+bronnen:
+- 2026-rvig-hup-lijkvinding
+- 2026-rvig-hup-overlijden-buitenland
+- 2026-rvig-hup-rechtsvermoeden-van-overlijden
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rvig-hup-lijkvinding
+  - 2026-rvig-hup-overlijden-buitenland
+  - 2026-rvig-hup-rechtsvermoeden-van-overlijden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-overlijden-nederland
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: wet
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-overlijden.md

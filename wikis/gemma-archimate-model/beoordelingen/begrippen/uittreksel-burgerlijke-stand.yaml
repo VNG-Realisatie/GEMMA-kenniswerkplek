@@ -1,0 +1,258 @@
+begrip: Uittreksel burgerlijke stand
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Product in de UPL (nr. 23, akte van de burgerlijke stand); Utrecht: uittreksel burgerlijke stand.'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente waar de gebeurtenis plaatsvond geeft het af (BW 1 art. 23; Utrecht).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat de gemeente aanbiedt.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: ja
+    onderbouwing: 'Een prestatie die de gemeente op verzoek levert: een afschrift of uittreksel van een akte, beschreven vanuit de afnemer (UPL nr. 23; Utrecht).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een afschrift of uittreksel van een akte van geboorte, huwelijk, partnerschap, echtscheiding of overlijden, ook meertalig (Utrecht; Besluit burgerlijke stand art. 24, 26).
+    bronnen:
+    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elke afnemer die erom vraagt.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: ja
+    onderbouwing: 'Burger (UPL nr. 23): de betrokkene of een naaste, zoals echtgenoot, kind, ouder of erfgenaam (Utrecht).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  gerealiseerd_door:
+    waarde: ja
+    onderbouwing: Het deelproces Verstrekken uittreksels en verklaringen burgerlijke stand (BW 1 art. 23b).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL (nr. 23); de akten van geboorte en overlijden hebben in de UPL eigen producten (Geboorteakte, Overlijdensakte).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het verkrijgen van een afschrift of uittreksel van een akte van de burgerlijke stand.
+beschrijving:
+- Alleen bij de gemeente waar de gebeurtenis plaatsvond; online met vooraf betalen en verzending per post, of aan de balie op afspraak; meertalig in tien talen; Utrecht € 17,80 in 2026 (Utrecht). Een uittreksel uit de BRP, over de huidige situatie, is een andere dienst (BRP-uittreksel). Grondslag art. 23b BW 1 (UPL nr. 23).
+synoniemen:
+- naam: Akte van de burgerlijke stand
+  context: UPL
+- naam: Afschrift of uittreksel van een akte
+  context: wet
+naamkeuze:
+- De UPL-naam akte van de burgerlijke stand is ook de naam van het bedrijfsobject; de dienst heet daarom naar de gangbare naam van de gemeente, Uittreksel burgerlijke stand (Utrecht), met de UPL-naam als synoniem (precedent Briefadres aanvragen).
+homoniemen:
+- begrip: Akte van de burgerlijke stand
+  betekenis: De akte zelf, het bedrijfsobject
+  waar: wiki, BW 1 art. 18
+  element: akte-van-de-burgerlijke-stand
+  naamkeuze: Deze pagina heet Uittreksel burgerlijke stand, de dienst; de UPL-naam akte van de burgerlijke stand is een synoniem, omdat het bedrijfsobject die naam draagt.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
+afnemer: extern
+domein: Publieksdiensten
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  herkomst: wet
+  pad: bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/uittreksel-burgerlijke-stand.md

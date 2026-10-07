@@ -6,6 +6,7 @@ status: goedgekeurd
 naam: Uitvaartondernemer
 onderwerpen:
 - lijkbezorging
+- burgerzaken
 definitie: Onderneming die in opdracht van nabestaanden de uitvaart verzorgt.
 grondslag: bron
 match:
@@ -18,6 +19,8 @@ bronnen:
 - 2010-vng-model-beheersverordening-begraafplaatsen
 - 2026-rvo-aangifte-en-akte-van-overlijden
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+- 2026-rijk-burgerlijk-wetboek-boek-1
 ---
 
 # Uitvaartondernemer
@@ -35,6 +38,12 @@ Onderneming die in opdracht van nabestaanden de uitvaart verzorgt.
 ### Beschrijving
 
 De uitvaartondernemer doet voor de nabestaanden aangifte van overlijden bij de gemeente waar de persoon is overleden, en krijgt van de gemeente de akte van overlijden en het verlof tot begraven of cremeren; voor het vervroegen of uitstellen van de uitvaart vraagt hij een vergunning aan (Ondernemersplein). De beheerder bepaalt tijd en plaats van een begraving in overleg met de uitvaartondernemer; personeel van uitvaartondernemingen volgt op de begraafplaats de aanwijzingen van de beheerder (Groningen art. 5, 7; VNG-model art. 4).
+
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+De uitvaartondernemer doet meestal de aangifte van overlijden, als gemachtigde van degene die in de lijkbezorging voorziet, online met eHerkenning of aan de balie (BW 1 art. 19h lid 2; Utrecht Overlijden, aangifte doen).
 
 ### Synoniemen
 
@@ -75,6 +84,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Uitvaartondernemer | vervult namens de nabestaanden *toewijzing* | [Degene die in de lijkbezorging voorziet](../rollen/degene-die-in-de-lijkbezorging-voorziet.md) | [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (inleiding, § Aangifte doen van overlijden) |
+| Uitvaartondernemer | doet aangifte van overlijden als *toewijzing* | [Aangever](../rollen/aangever.md) | [Utrecht Overlijden, aangifte doen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-overlijden-aangifte-doen.md), [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (Utrecht inleiding; BW 1 art. 19h lid 2) |
 
 ## Herkomst
 
@@ -85,6 +95,8 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | [VNG Model-beheersverordening begraafplaatsen](../../bronanalyses/lijkbezorging/2010-vng-model-beheersverordening-begraafplaatsen.md) | Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting |
 | [Ondernemersplein Aangifte overlijden](../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
 | [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) | Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023 |
+| [Utrecht Overlijden, aangifte doen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-overlijden-aangifte-doen.md) | Gemeente Utrecht: Overlijden |
+| [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) | Burgerlijk Wetboek Boek 1 (Personen- en familierecht) |
 
 ### Afstemming met GEMMA
 

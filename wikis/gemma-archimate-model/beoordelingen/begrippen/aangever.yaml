@@ -39,6 +39,7 @@ kenmerken:
     onderbouwing: De hoedanigheid waarin iemand aangifte doet voor zichzelf of een ander, verplicht of bevoegd (HUP Verblijfplaats).
     bronnen:
     - 2026-rvig-hup-verblijfplaats
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   samenwerkingsverband:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij.'
@@ -65,10 +66,11 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen partij.'
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Inschrijven ingezetene, Verwerken adreswijziging, Verwerken emigratie en Inschrijven op briefadres (HUP Verblijfplaats; HUP Emigratie).
+    onderbouwing: 'Toegewezen aan Inschrijven ingezetene, Verwerken adreswijziging, Verwerken emigratie en Inschrijven op briefadres (HUP Verblijfplaats; HUP Emigratie). Bij de burgerlijke stand: de aangifte van geboorte, overlijden, levenloos geboren kind en geslachtswijziging (BW 1 art. 19e, 19h, 19i, 28).'
     bronnen:
     - 2026-rvig-hup-verblijfplaats
     - 2026-rvig-hup-emigratie
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   soort_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
@@ -197,9 +199,10 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-definitie: Hoedanigheid van wie bij de gemeente aangifte doet van een feit dat in de basisregistratie personen moet worden verwerkt, voor zichzelf of een ander.
+definitie: Hoedanigheid van wie bij de gemeente aangifte doet van een feit voor de basisregistratie personen of de burgerlijke stand, voor zichzelf of een ander.
 beschrijving:
 - Een meerderjarige doet zelf aangifte van verblijf en adres, adreswijziging en vertrek; ouders, voogden en verzorgers zijn verplicht aangifte te doen voor minderjarigen; echtgenoten, partners en ouders met een meerderjarig kind zijn bevoegd voor elkaar; het hoofd van een instelling kan aangifte doen voor wie er verblijft (HUP Verblijfplaats). Het college kan verplichten in persoon te verschijnen (HUP Verblijfplaats; Besluit BRP art. 30).
+- 'Bij de burgerlijke stand doet de aangever aangifte bij de ambtenaar van de burgerlijke stand: van een geboorte (de vader of moeder, of wie bij de bevalling aanwezig was; BW 1 art. 19e), van een overlijden (wie het uit eigen wetenschap weet, of een gemachtigde zoals de uitvaartondernemer; art. 19h), van een levenloos geboren kind (art. 19i) en van de wijziging van de vermelding van het geslacht (art. 28). De ambtenaar stelt de identiteit van de aangever vast (art. 19e lid 8).'
 synoniemen:
 - naam: Doorgever
   context: beleid
@@ -237,6 +240,35 @@ relaties:
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   vindplaats: Verplichte of bevoegde aangever
+- soort: toewijzing
+  naar: opmaken-akte-van-overlijden
+  naam: doet aangifte
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19h
+- soort: toewijzing
+  naar: opmaken-geboorteakte
+  naam: doet aangifte
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19e
+- soort: toewijzing
+  naar: opmaken-akte-levenloos-geboren-kind
+  naam: doet aangifte
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  vindplaats: art. 19i
+- soort: toewijzing
+  naar: wijzigen-geslachtsvermelding
+  naam: doet aangifte
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 28
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -251,6 +283,8 @@ afgeleid:
     typeregel: 12
   bronnen:
   - 2026-rvig-hup-verblijfplaats
+  - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rvig-hup-emigratie
-  herkomst: beleid
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  herkomst: wet
   pad: bedrijfsarchitectuur/rollen/aangever.md

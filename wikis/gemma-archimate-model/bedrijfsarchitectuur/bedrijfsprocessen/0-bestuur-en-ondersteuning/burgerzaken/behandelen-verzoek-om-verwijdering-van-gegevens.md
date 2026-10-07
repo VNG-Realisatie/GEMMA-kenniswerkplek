@@ -48,6 +48,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 - **Procesindeling naar taak, onderdeel van**: [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
 - **Kernobject**: [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md).
 - **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Behandelen aanvraag product*. Een verzoek waarop de gemeente beslist (Utrecht).
+- **Gestart door gebeurtenis**: [Adoptie](../../../gebeurtenissen/adoptie.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
@@ -87,9 +88,11 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Adoptie](../../../gebeurtenissen/adoptie.md) | kan leiden tot *triggering* | Behandelen verzoek om verwijdering van gegevens | [HUP BRP: Adoptie](../../../../bronanalyses/burgerzaken/2026-rvig-hup-adoptie.md), [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.57) |
 | [Beslisser](../../../rollen/beslisser.md) | beslist over *toewijzing* | Behandelen verzoek om verwijdering van gegevens | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (Na uw aanvraag) |
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Behandelen verzoek om verwijdering van gegevens | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (Utrecht Gegevens verwijderen; UPL nr. 86) |
 | [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Behandelen verzoek om verwijdering van gegevens | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
+| [Wijzigen geslachtsvermelding](wijzigen-geslachtsvermelding.md) | kan leiden tot *triggering* | Behandelen verzoek om verwijdering van gegevens | [HUP BRP: Geslachtswijziging](../../../../bronanalyses/burgerzaken/2026-rvig-hup-geslachtswijziging.md), [HUP BRP: Overschrijven gegevens bij geslachtswijziging](../../../../bronanalyses/burgerzaken/2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging.md) (art. 2.57 Wet BRP) |
 
 ## Herkomst
 

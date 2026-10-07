@@ -272,6 +272,13 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 94
+- soort: realisatie
+  naar: bewijs-van-in-leven-zijn
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
+  vindplaats: Bewijs van in leven zijn (uittreksel BRP)
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -290,6 +297,7 @@ afgeleid:
   - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
   herkomst: wet
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75

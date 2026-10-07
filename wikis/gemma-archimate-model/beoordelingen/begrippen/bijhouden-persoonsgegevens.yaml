@@ -364,6 +364,29 @@ relaties:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2026-rvig-hup-immigratie
   vindplaats: Wet BRP art. 2.4, 2.38
+- soort: aggregatie
+  naar: inschrijven-levenloos-geboren-kind
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-geboorte
+  vindplaats: art. 2.56a
+- soort: aggregatie
+  naar: wijzigen-naamgebruik
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-wijziging-naamgebruik
+  vindplaats: inleiding
+- soort: aggregatie
+  naar: verwerken-buitenlands-document
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  - 2026-rvig-hup-overlijden-buitenland
+  vindplaats: Utrecht; HUP art. 2.8, 2.51
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -398,5 +421,9 @@ afgeleid:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   - 2026-rvig-hup-wijzigen-identificatienummers
   - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-geboorte
+  - 2026-rvig-hup-wijziging-naamgebruik
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  - 2026-rvig-hup-overlijden-buitenland
   herkomst: wet
   pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md

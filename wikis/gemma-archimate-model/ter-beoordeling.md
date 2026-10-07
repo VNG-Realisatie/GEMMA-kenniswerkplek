@@ -16,11 +16,6 @@ Niets.
 
 ## Voor te leggen
 
-**[Akte van de burgerlijke stand](bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md)** (kandidaat)
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-- gegevensobject zonder sterke GGM-match
-
 **[Reisdocument](bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md)** (kandidaat)
 
 - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek

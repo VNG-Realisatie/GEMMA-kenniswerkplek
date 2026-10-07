@@ -127,9 +127,10 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gedrag:
     waarde: ja
-    onderbouwing: Start het ketenproces Bezorgen stoffelijk overschot, met Schouwen stoffelijk overschot (art. 3) en de termijn voor de lijkbezorging (art. 16).
+    onderbouwing: Start het ketenproces Bezorgen stoffelijk overschot, met Schouwen stoffelijk overschot (art. 3) en de termijn voor de lijkbezorging (art. 16). In de burgerlijke stand start het de aangifte en het opmaken van de akte van overlijden (BW 1 art. 19f, 19h).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -214,6 +215,8 @@ beschrijving:
 per_onderwerp:
   lijkbezorging:
   - 'Het overlijden start de schouwing van het stoffelijk overschot (Wet op de lijkbezorging art. 3) en de termijn waarbinnen de lijkbezorging moet plaatsvinden: niet eerder dan 36 uur en uiterlijk op de zesde werkdag (art. 16).'
+  burgerzaken:
+  - 'Het overlijden wordt aangegeven bij de ambtenaar van de burgerlijke stand van de gemeente van overlijden, die de akte van overlijden opmaakt (BW 1 art. 19f, 19h). De woongemeente verwerkt het in de BRP: de bijhouding van de persoonslijst wordt opgeschort, en bij een echtgenoot of geregistreerd partner wordt de ontbinding door overlijden verwerkt (HUP Overlijden in Nederland).'
 relaties:
 - soort: triggering
   naar: schouwen-stoffelijk-overschot
@@ -236,7 +239,16 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 3, 16
+- soort: triggering
+  naar: opmaken-akte-van-overlijden
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  vindplaats: art. 19f, 19h; Utrecht inleiding
 onderwerpen:
+- burgerzaken
 - lijkbezorging
 besluiten:
 - datum: '2026-10-04'
@@ -245,6 +257,16 @@ besluiten:
 - datum: '2026-10-05'
   besluit: 'Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.'
   gevolg: verwerkt
+- datum: '2026-10-07'
+  besluit: 'Thuisonderwerp Burgerzaken (regel Thuishoren): het overlijden verandert de toestand van de Ingeschreven persoon en wordt vastgelegd in de akte van overlijden (BW 1 art. 19f, 19h); Lijkbezorging gebruikt de gebeurtenis met een relatie, de tekst voor lijkbezorging staat per onderwerp. Het object in Archi blijft.'
+  gevolg: verwerkt
+specialisaties:
+- naam: Lijkvinding
+  omschrijving: Het vinden van een stoffelijk overschot van een onbekende of niet aangegeven overledene; de hulpofficier van justitie doet aangifte en datum en plaats van de vinding gelden als die van het overlijden (Besluit burgerlijke stand art. 62; HUP Lijkvinding). Geen eigen pagina.
+- naam: Rechtsvermoeden van overlijden
+  omschrijving: Een uitspraak van de rechtbank dat een vermiste wordt vermoed te zijn overleden, ingeschreven in de registers (HUP Rechtsvermoeden van overlijden). Geen eigen pagina.
+- naam: Overlijden in het buitenland
+  omschrijving: Verwerkt op een buitenlandse, consulaire of Haagse akte (HUP Overlijden buitenland). Geen eigen pagina.
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -260,5 +282,7 @@ afgeleid:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
   herkomst: wet
   pad: bedrijfsarchitectuur/gebeurtenissen/overlijden.md

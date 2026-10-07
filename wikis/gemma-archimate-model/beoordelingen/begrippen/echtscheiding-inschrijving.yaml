@@ -1,15 +1,19 @@
-begrip: Aangifte van overlijden
+begrip: Echtscheiding inschrijving
+onderwerpen:
+- burgerzaken
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: Gangbaar (RVO).
+    onderbouwing: 'Product in de UPL (nr. 122); Utrecht: scheiden.'
     bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   gemeentelijk:
     waarde: ja
-    onderbouwing: Bij de gemeente waar iemand is overleden.
+    onderbouwing: De gemeente waar het huwelijk is gesloten schrijft de echtscheiding in (BW 1 art. 163; Utrecht).
     bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -20,13 +24,20 @@ kenmerken:
     waarde: ja
     onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
     bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   betekenis_in_onderwerp:
-    waarde: nee
-    onderbouwing: Hoort bij een onderwerp burgerlijke stand.
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   gedrag:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+    waarde: ja
+    onderbouwing: Iets wat de gemeente aanbiedt.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -62,7 +73,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen partij.'
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
@@ -71,7 +82,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   groepeert_processen:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -79,8 +90,11 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   aangeboden_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: 'Een prestatie die de gemeente levert: de echtscheiding laten inschrijven (UPL nr. 122; Utrecht).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   gezamenlijk_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -94,11 +108,16 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   benoembaar_resultaat:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: De echtscheiding op de huwelijksakte en in de BRP; vanaf die dag is zij definitief (Utrecht).
+    bronnen:
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   komt_herhaald_voor:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Voor elke afnemer die erom vraagt.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   eigen_normering:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -106,11 +125,16 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   afnemer:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Burger (UPL nr. 122); de advocaat stuurt de stukken (Utrecht).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   gerealiseerd_door:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: Het deelproces Inschrijven ontbinding huwelijk of partnerschap (BW 1 art. 163).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   leidt_tot_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -119,28 +143,28 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_processen:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   meer_organisaties:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bedient_gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   in_functie_indeling:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -158,13 +182,13 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
+    onderbouwing: 'Niet van toepassing: geen ding.'
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
+    onderbouwing: 'Niet van toepassing: geen ding.'
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
@@ -181,25 +205,42 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
-    waarde: nee
-    onderbouwing: 'Niet beoordeeld: het begrip wordt in een ander onderwerp beoordeeld.'
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL (nr. 122); geen bredere dienst in deze wiki.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
   generiek:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
-toelichting: 'Verwijzing: beoordelen in het onderwerp burgerlijke stand. Het enige kanaal in de bron (digitaal aangifte doen met eHerkenning) hoort daarbij. In de UPL het product overlijdensaangifte (nr. 315, BW Boek 1 art. 19h).'
-onderwerpen:
-- lijkbezorging
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het laten inschrijven van een door de rechtbank uitgesproken echtscheiding in de registers van de burgerlijke stand.
+beschrijving:
+- Scheiden gaat via de rechtbank; de gemeente schrijft de beschikking in (Utrecht). Grondslag art. 163 BW 1 (UPL nr. 122).
+synoniemen:
+- naam: Scheiden
+  context: beleid
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
+afnemer: extern
+domein: Publieksdiensten
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
 afgeleid:
   uitkomst:
-    soort: verwijzing
-    regel: 6
-    toelichting: Hoort bij een ander onderwerp
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
+    typeregel: 17
   bronnen:
-  - 2026-rvo-aangifte-en-akte-van-overlijden
-  herkomst: overig
-synoniemen:
-- naam: Overlijdensaangifte
-  context: UPL
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: wet
+  pad: bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/echtscheiding-inschrijving.md

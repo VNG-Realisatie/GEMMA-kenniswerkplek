@@ -92,6 +92,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md) | omvat *aggregatie* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
 | [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md) | omvat *aggregatie* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11, 12) |
 | [Burgerlijke stand diensten](../../../bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md) | bedient *bediening* | Verlenen verlof tot begraving of crematie | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11) |
+| [Opmaken akte van overlijden](../../0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-overlijden.md) | leidt tot *triggering* | Verlenen verlof tot begraving of crematie | [Utrecht Overlijden, aangifte doen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-overlijden-aangifte-doen.md), [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) (Utrecht inleiding) |
 
 ## Herkomst
 

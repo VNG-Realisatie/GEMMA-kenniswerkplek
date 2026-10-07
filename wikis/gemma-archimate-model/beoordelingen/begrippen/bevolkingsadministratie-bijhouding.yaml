@@ -324,6 +324,34 @@ relaties:
   bronnen:
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   vindplaats: inleiding
+- soort: aggregatie
+  naar: brp-inschrijving-niet-in-leven-zijnd-kind
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 90 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: adoptie-aangifte
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 6 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: naamgebruik-verzoek-aanduiding
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 257 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: brp-inschrijving-buitenlandse-akte
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 89 (GEMMA-domein Publieksdiensten)
 status: goedgekeurd
 afgeleid:
   uitkomst:

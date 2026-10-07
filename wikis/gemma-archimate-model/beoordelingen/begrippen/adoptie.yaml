@@ -1,0 +1,272 @@
+begrip: Adoptie
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbaar en wettelijk (BW 1 art. 227; HUP Adoptie; Utrecht).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rvig-hup-adoptie
+    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente voegt de latere vermelding van de adoptie toe en verwerkt haar in de BRP; een adoptiekind uit het buitenland schrijft zij in (Besluit burgerlijke stand art. 53; HUP Adoptie; Utrecht).
+    bronnen:
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-adoptie
+    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rvig-hup-adoptie
+    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rvig-hup-adoptie
+    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gebeurt.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rvig-hup-adoptie
+    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: ja
+    onderbouwing: De uitspraak van de rechtbank of de erkenning van een buitenlandse adoptie verandert de afstamming van het kind op één moment (BW 1 art. 227; HUP Adoptie).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rvig-hup-adoptie
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Gebeurt bij veel personen, elk jaar opnieuw.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rvig-hup-adoptie
+    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: ja
+    onderbouwing: Start het toevoegen van de latere vermelding van adoptie aan de geboorteakte (Besluit burgerlijke stand art. 53), de inschrijving van een adoptiekind uit het buitenland (Utrecht) en eventueel een verzoek om verwijdering van gegevens van vóór de adoptie (Wet BRP art. 2.57; HUP Adoptie).
+    bronnen:
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+    - 2026-rvig-hup-adoptie
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rvig-hup-adoptie
+    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het door een uitspraak van de rechtbank ontstaan van de familierechtelijke betrekking tussen een kind en zijn adoptiefouders.
+beschrijving:
+- Adoptie geschiedt door een uitspraak van de rechtbank op verzoek van twee personen samen of één persoon alleen (BW 1 art. 227); een buitenlandse adoptie wordt erkend op grond van het Haags adoptieverdrag of een verklaring voor recht (HUP Adoptie). De adoptie zelf is geen gemeentelijk product; de gemeente verwerkt de uitspraak (Utrecht). Adoptiefouders krijgen het gezag van rechtswege; een herroeping van de adoptie wordt ook als latere vermelding verwerkt (HUP Adoptie; Besluit burgerlijke stand art. 53, 54).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: triggering
+  naar: toevoegen-latere-vermelding
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvig-hup-adoptie
+  vindplaats: art. 53
+- soort: triggering
+  naar: inschrijven-ingezetene
+  naam: leidt tot (adoptiekind uit het buitenland)
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  vindplaats: inleiding
+- soort: triggering
+  naar: behandelen-verzoek-om-verwijdering-van-gegevens
+  naam: kan leiden tot
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-adoptie
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: art. 2.57
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-adoptie
+  - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: wet
+  pad: bedrijfsarchitectuur/gebeurtenissen/adoptie.md

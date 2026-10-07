@@ -1,0 +1,412 @@
+begrip: Bijhouden burgerlijke stand
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De ambtenaar van de burgerlijke stand is belast met het opnemen van akten en latere vermeldingen in de registers van de burgerlijke stand en verricht onverwijld de werkzaamheden voor het houden van de registers (BW 1 art. 16a; Besluit burgerlijke stand art. 5).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Elke gemeente houdt registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden bij, door ambtenaren die burgemeester en wethouders aanwijzen (BW 1 art. 16, 17).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: 'Wordt per akte doorlopen: opmaken op aangifte of verklaring, latere vermeldingen toevoegen, bewaren en afschriften en uittreksels afgeven (BW 1 art. 18, 20, 23; Besluit burgerlijke stand art. 6, 26).'
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Ambtenaar van de burgerlijke stand (BW 1 art. 16a).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: 'Registreert en bijwerkt de akte van de burgerlijke stand: opmaken en latere vermeldingen toevoegen (BW 1 art. 18, 20); verstrekt afschriften en uittreksels (art. 23).'
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een aangifte (geboorte, overlijden), een verklaring of kennisgeving (erkenning, naamskeuze, voornemen te trouwen) of een rechterlijke uitspraak of besluit (BW 1 art. 19e, 19h, 44, 203, 20).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een akte of een latere vermelding in de registers, en afschriften en uittreksels daarvan (BW 1 art. 18, 20, 23).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk geval dat zich voordoet.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Titel 4 Boek 1 BW (art. 16-29) en het Besluit burgerlijke stand 1994.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Is zelf het bedrijfsproces onder de taak Verzorgen burgerzaken.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: ja
+    onderbouwing: 'Omvat de levensloop van de akte: opmaken, latere vermeldingen, aanvulling of verbetering, afsluiten en overbrengen van de registers (BW 1 art. 18, 20, 24; Besluit burgerlijke stand art. 6, 7, 31).'
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Alleen de gemeente; de rechtbank en de minister beslissen per geval buiten het proces.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het opmaken en bijhouden van de akten van de burgerlijke stand in de registers van de gemeente, van opmaken tot latere vermelding en afgifte.
+beschrijving:
+- De ambtenaar van de burgerlijke stand maakt de akten op van geboorte, erkenning, naamskeuze, huwelijk, geregistreerd partnerschap, omzetting en overlijden, schrijft rechterlijke uitspraken en buitenlandse akten in en voegt latere vermeldingen toe, zoals een naamswijziging, adoptie, geslachtswijziging of echtscheiding (BW 1 art. 16a, 18, 20). Hij weigert een akte bij ongenoegzame bescheiden of strijd met de openbare orde; de belanghebbende kan dan de rechtbank verzoeken (art. 18c, 27).
+- 'De registers worden aan het eind van het jaar afgesloten; dubbelen en latere vermeldingen gaan naar de centrale bewaarplaats van de minister (Besluit burgerlijke stand art. 6, 7, 31). Een akte is een brondocument voor de BRP: de gemeente verwerkt haar in Bijhouden persoonsgegevens (HUP Algemeen).'
+- De deelprocessen leveren elk een akte, latere vermelding of afschrift, en daarmee de diensten van de burgerlijke stand uit de UPL. Burgemeester en wethouders wijzen de ambtenaren aan en zorgen voor de voorzieningen (BW 1 art. 16, 16d; Besluit burgerlijke stand art. 2-4).
+synoniemen:
+- naam: Houden van de registers van de burgerlijke stand
+  context: wet
+naamkeuze:
+- Infinitief met object in GEMMA-volgorde, naar het bedrijfsproces Bijhouden persoonsgegevens; de wet spreekt van het houden van de registers (Besluit burgerlijke stand art. 5), wat een synoniem is.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor de burgerlijke stand; de functie Burgerlijke stand diensten bedient het, en het generieke proces Behandelen aangifte of melding is het patroon voor de deelprocessen op aangifte.
+kernobject: akte-van-de-burgerlijke-stand
+afnemer: extern
+relaties:
+- soort: toegang (registreren)
+  naar: akte-van-de-burgerlijke-stand
+  naam: maakt op en houdt bij
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 16a, 18, 20
+- soort: aggregatie
+  naar: opmaken-akte-van-overlijden
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19f
+- soort: aggregatie
+  naar: verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  vindplaats: BW 1 art. 23; Besluit art. 26
+- soort: aggregatie
+  naar: overlijden
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19f, 19h
+- soort: aggregatie
+  naar: opmaken-geboorteakte
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19, 19e
+- soort: aggregatie
+  naar: opmaken-akte-levenloos-geboren-kind
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19i
+- soort: aggregatie
+  naar: opmaken-akte-van-erkenning
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 203
+- soort: aggregatie
+  naar: toevoegen-latere-vermelding
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 20
+- soort: aggregatie
+  naar: geboorte
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19e
+- soort: aggregatie
+  naar: levenloze-geboorte
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 19i
+- soort: aggregatie
+  naar: adoptie
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  vindplaats: art. 53
+- soort: aggregatie
+  naar: ontkenning-ouderschap
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  vindplaats: art. 49-52
+- soort: aggregatie
+  naar: vaststelling-ouderschap
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-vaststelling-ouderschap
+  vindplaats: inleiding
+- soort: aggregatie
+  naar: opmaken-akte-van-naamskeuze
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 5
+- soort: aggregatie
+  naar: wijzigen-geslachtsvermelding
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 28b
+- soort: aggregatie
+  naar: naamswijziging
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
+  vindplaats: art. 4, 7
+- soort: aggregatie
+  naar: behandelen-melding-voorgenomen-huwelijk-of-partnerschap
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 44, 80a
+- soort: aggregatie
+  naar: voltrekken-huwelijk
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 63
+- soort: aggregatie
+  naar: registreren-partnerschap
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 80a, 80g
+- soort: aggregatie
+  naar: inschrijven-ontbinding-huwelijk-of-partnerschap
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 80c, 163
+- soort: aggregatie
+  naar: ontbinding-huwelijk-of-partnerschap
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 80c, 163
+bronnen:
+- 2026-rvig-hup-algemeen
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rvig-hup-algemeen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvig-hup-vaststelling-ouderschap
+  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-burgerlijke-stand.md

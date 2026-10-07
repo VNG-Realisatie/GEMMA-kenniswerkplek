@@ -17,6 +17,8 @@ afnemer: extern
 domein: Publieksdiensten
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-nvvb-handreiking-gezag
+- 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
 - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
 ---
 
@@ -34,7 +36,7 @@ Een uittreksel uit de basisregistratie personen met de gegevens over het gezag o
 
 ### Beschrijving
 
-Grondslag is art. 2.55 Wet BRP (UPL nr. 94). De UPL noemt het apart van het BRP-uittreksel; daarom is het een eigen dienst (besluit redacteur 2026-10-06). Het gezag zelf wordt bij de burgerlijke stand beoordeeld.
+Grondslag is art. 2.55 Wet BRP (UPL nr. 94). De UPL noemt het apart van het BRP-uittreksel; daarom is het een eigen dienst (besluit redacteur 2026-10-06). Het gezag zelf komt uit het gezagsregister van de rechtbank en wordt in de BRP overgenomen; een uittreksel met gezag kan alleen als een gezaghouder uit de BRP-gegevens is af te leiden (NVVB Handreiking gezag). Utrecht geeft het op afspraak af, niet via DigiD (Utrecht Ouderlijk gezag aanvragen).
 
 ## Plaats in het model
 
@@ -55,7 +57,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, product in de UPL (nr. 94), apart van het BRP-uittreksel. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, product in de UPL (nr. 94), apart van het BRP-uittreksel. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [NVVB Handreiking Gezag](../../../../bronanalyses/burgerzaken/2026-nvvb-handreiking-gezag.md), [Utrecht Ouderlijk gezag aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente verstrekt het uittreksel (NVVB Schema). [NVVB Schema schriftelijke gegevensverstrekking BRP](../../../../bronanalyses/burgerzaken/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [NVVB Schema schriftelijke gegevensverstrekking BRP](../../../../bronanalyses/burgerzaken/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [NVVB Schema schriftelijke gegevensverstrekking BRP](../../../../bronanalyses/burgerzaken/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) |
@@ -83,6 +85,8 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [NVVB Handreiking Gezag](../../../../bronanalyses/burgerzaken/2026-nvvb-handreiking-gezag.md) | NVVB: Gezag |
+| [Utrecht Ouderlijk gezag aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen.md) | Gemeente Utrecht: Ouderlijk gezag |
 | [NVVB Schema schriftelijke gegevensverstrekking BRP](../../../../bronanalyses/burgerzaken/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) | Schema verzoeken om schriftelijke gegevensverstrekking uit de BRP |
 
 ### Afstemming met GEMMA

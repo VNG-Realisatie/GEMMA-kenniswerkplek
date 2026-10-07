@@ -1,4 +1,7 @@
 begrip: Akte van overlijden
+onderwerpen:
+- burgerzaken
+- lijkbezorging
 kenmerken:
   herkenbaar:
     waarde: ja
@@ -6,6 +9,7 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   gemeentelijk:
     waarde: ja
     onderbouwing: De ambtenaar van de burgerlijke stand maakt haar op.
@@ -24,9 +28,14 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   betekenis_in_onderwerp:
-    waarde: nee
-    onderbouwing: Hoort bij een onderwerp burgerlijke stand (afbakening redacteur 2026-09-29).
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een ding.'
@@ -65,7 +74,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen partij.'
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
@@ -74,7 +83,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen gedrag.'
   groepeert_processen:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -122,37 +131,44 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_levensloop:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   meer_organisaties:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   bedient_gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
+    waarde: ja
+    onderbouwing: Eén akte per overlijden, in het register van overlijden van de gemeente van overlijden (BW 1 art. 17, 19f).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   levenscyclus:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
+    waarde: ja
+    onderbouwing: Wordt opgemaakt en kan latere vermeldingen krijgen (BW 1 art. 19f, 20).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
+    waarde: ja
+    onderbouwing: De ambtenaar van de burgerlijke stand maakt haar op na de aangifte (BW 1 art. 19f, 19h); de woongemeente verwerkt haar in de BRP (HUP Overlijden in Nederland).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rvig-hup-overlijden-nederland
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -161,19 +177,21 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
+    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
+    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
   omvat_diensten_en_afspraken:
     waarde: nee
     onderbouwing: Geen gebundeld aanbod.
   geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+    waarde: ja
+    onderbouwing: De elektronische aangifte van overlijden gaat met het burgerservicenummer (Besluit burgerlijke stand art. 67a).
+    bronnen:
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   landelijk:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
@@ -185,25 +203,36 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: nee
-    onderbouwing: 'Niet beoordeeld: het begrip wordt in een ander onderwerp beoordeeld.'
+    onderbouwing: 'Specialisatie van Akte van de burgerlijke stand: dezelfde levensloop in hetzelfde proces, alleen andere gegevens per aktesoort (Besluit burgerlijke stand art. 61-65); GEMMA kent geen akten per soort.'
   generiek:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
-toelichting: 'Verwijzing: beoordelen in het onderwerp burgerlijke stand. In de UPL het product overlijdensakte (nr. 316, BW Boek 1 art. 19f).'
-onderwerpen:
-- lijkbezorging
-afgeleid:
-  uitkomst:
-    soort: verwijzing
-    regel: 6
-    toelichting: Hoort bij een ander onderwerp
-    voorleggen: false
-    data_object: nee
-    generiek: false
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-rvo-aangifte-en-akte-van-overlijden
-  herkomst: wet
+    onderbouwing: Komt alleen in burgerzaken voor.
+genoemd_begrip: Akte van de burgerlijke stand
+toelichting: 'Specialisatie zonder pagina van Akte van de burgerlijke stand (Besluit burgerlijke stand art. 61-65); de relaties gaan naar de akte. Ook bij lijkvinding wordt een akte van overlijden opgemaakt (art. 62). In de UPL is overlijdensakte (nr. 316, BW 1 art. 19f) de dienst Overlijdensakte: een uittreksel of afschrift van deze akte. Tot 2026-10-07 een verwijzing vanuit Lijkbezorging.'
 synoniemen:
 - naam: Overlijdensakte
   context: UPL
+homoniemen:
+- begrip: Overlijdensakte
+  betekenis: De dienst waarmee iemand een uittreksel of afschrift van de akte van overlijden krijgt (UPL nr. 316)
+  waar: UPL-lijst extern
+  element: overlijdensakte
+  naamkeuze: Deze beoordeling heet Akte van overlijden, de akte zelf (wetsterm); de dienst heet Overlijdensakte, de UPL-naam.
+afgeleid:
+  uitkomst:
+    soort: specialisatie
+    regel: 24
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    data_object: ja
+    genoemd_begrip: Akte van de burgerlijke stand
+    generiek: false
+    typeregel: 21
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-overlijden-nederland
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  herkomst: wet

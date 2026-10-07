@@ -1,15 +1,20 @@
 begrip: Doodgeboren kind aangifte
+onderwerpen:
+- burgerzaken
+- lijkbezorging
 kenmerken:
   herkenbaar:
     waarde: ja
     onderbouwing: Product in de UPL (nr. 118).
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   gemeentelijk:
     waarde: ja
     onderbouwing: Aangifte bij de ambtenaar van de burgerlijke stand (UPL, grondslag BW Boek 1 art. 19i).
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -21,14 +26,19 @@ kenmerken:
     onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   betekenis_in_onderwerp:
-    waarde: nee
-    onderbouwing: Hoort bij een onderwerp burgerlijke stand (UPL, Iv3 0.2, Burgerlijk Wetboek Boek 1 art. 19i).
+    waarde: ja
+    onderbouwing: 'Hoort bij Burgerzaken: een aangifte bij de ambtenaar van de burgerlijke stand (UPL, Iv3 0.2, Burgerlijk Wetboek Boek 1 art. 19i).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   gedrag:
     waarde: ja
     onderbouwing: Iets wat de gemeente aanbiedt.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -70,81 +80,92 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   groepeert_processen:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   gegroepeerd_gedrag:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   toestandsverandering:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   aangeboden_gedrag:
     waarde: ja
-    onderbouwing: Een product van de burgerlijke stand (UPL, Iv3 0.2).
+    onderbouwing: 'Een product van de burgerlijke stand (UPL, Iv3 0.2): de afnemer geeft de levenloze geboorte aan en krijgt een akte (Utrecht).'
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   gezamenlijk_gedrag:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   toegewezen_partij:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   gebruikt_objecten:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   aanleiding:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   benoembaar_resultaat:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    waarde: ja
+    onderbouwing: De akte van geboorte (levenloos) en een gratis uittreksel (Utrecht).
+    bronnen:
+    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   komt_herhaald_voor:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    waarde: ja
+    onderbouwing: Voor elke afnemer die erom vraagt.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   eigen_normering:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   stabiel_over_tijd:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   afnemer:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    waarde: ja
+    onderbouwing: 'Burger (UPL nr. 118): een ouder, de uitvaartondernemer, een aanwezige of het ziekenhuis (Utrecht).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   gerealiseerd_door:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    waarde: ja
+    onderbouwing: Het deelproces Opmaken akte levenloos geboren kind (BW 1 art. 19i).
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   leidt_tot_gedrag:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_processen:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   meer_organisaties:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   levert_aanbod:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bedient_gedrag:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   in_functie_indeling:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -156,25 +177,25 @@ kenmerken:
     onderbouwing: Wordt niet als ding behandeld.
   afspraak:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: Geen overeenkomst tussen partijen.
   waarneembare_vorm:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: 'Niet van toepassing: geen ding.'
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: 'Niet van toepassing: geen ding.'
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
   omvat_diensten_en_afspraken:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: Geen gebundeld aanbod.
   geautomatiseerd_verwerkt:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   landelijk:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
@@ -185,22 +206,45 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL (nr. 118); geen bredere dienst in deze wiki.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
   generiek:
     waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-toelichting: 'Verwijzing: beoordelen in het onderwerp burgerlijke stand. De Wet op de lijkbezorging geldt ook voor een doodgeborene (art. 2 lid 1); die is een indeling van Stoffelijk overschot.'
-onderwerpen:
-- lijkbezorging
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het doen van aangifte van een levenloos geboren kind bij de gemeente van geboorte, waarna de gemeente een akte opmaakt.
+beschrijving:
+- Aangifte alleen aan de balie op afspraak, gratis (Utrecht). Heeft het kind kort geleefd, dan volgen een geboorteaangifte en een overlijdensaangifte. Opname in de BRP gebeurt alleen op verzoek (BRP-inschrijving niet in leven zijnd kind).
+synoniemen:
+- naam: Aangifte levenloos geboren kind
+  context: beleid
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
+afnemer: extern
+domein: Publieksdiensten
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+status: goedgekeurd
 afgeleid:
   uitkomst:
-    soort: verwijzing
-    regel: 6
-    toelichting: Hoort bij een ander onderwerp
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
+    typeregel: 17
   bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: informatiemodel
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: wet
+  pad: bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/doodgeboren-kind-aangifte.md

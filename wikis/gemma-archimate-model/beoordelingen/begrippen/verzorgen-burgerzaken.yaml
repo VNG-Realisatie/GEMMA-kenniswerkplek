@@ -208,7 +208,7 @@ kenmerken:
     onderbouwing: Specifiek voor burgerzaken.
 definitie: 'Gemeentelijke taak rond burgerzaken: het bijhouden van de persoonsgegevens, de burgerlijke stand, reisdocumenten, het Nederlanderschap en het kiesrecht.'
 beschrijving:
-- Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De taak groepeert de processen daarvoor, één per kernobject; nu Bijhouden persoonsgegevens met de ingeschreven persoon als kernobject.
+- 'Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon en Bijhouden burgerlijke stand met de akte van de burgerlijke stand als kernobject.'
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: bron
@@ -227,6 +227,13 @@ relaties:
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 1.4, hoofdstuk 2
+- soort: aggregatie
+  naar: bijhouden-burgerlijke-stand
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 16a, 17
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -243,5 +250,6 @@ afgeleid:
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-burgerlijk-wetboek-boek-1
   herkomst: wet
   pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verzorgen-burgerzaken.md

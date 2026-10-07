@@ -7,6 +7,8 @@ kenmerken:
     onderbouwing: Product in de UPL (nr. 94), apart van het BRP-uittreksel.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-nvvb-handreiking-gezag
+    - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
   gemeentelijk:
     waarde: ja
     onderbouwing: De gemeente verstrekt het uittreksel (NVVB Schema).
@@ -211,7 +213,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Een uittreksel uit de basisregistratie personen met de gegevens over het gezag over een minderjarige.
 beschrijving:
-- Grondslag is art. 2.55 Wet BRP (UPL nr. 94). De UPL noemt het apart van het BRP-uittreksel; daarom is het een eigen dienst (besluit redacteur 2026-10-06). Het gezag zelf wordt bij de burgerlijke stand beoordeeld.
+- Grondslag is art. 2.55 Wet BRP (UPL nr. 94). De UPL noemt het apart van het BRP-uittreksel; daarom is het een eigen dienst (besluit redacteur 2026-10-06). Het gezag zelf komt uit het gezagsregister van de rechtbank en wordt in de BRP overgenomen; een uittreksel met gezag kan alleen als een gezaghouder uit de BRP-gegevens is af te leiden (NVVB Handreiking gezag). Utrecht geeft het op afspraak af, niet via DigiD (Utrecht Ouderlijk gezag aanvragen).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: bron
@@ -234,6 +236,8 @@ afgeleid:
     typeregel: 17
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-nvvb-handreiking-gezag
+  - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
   - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
   herkomst: informatiemodel
   pad: bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel-met-gezag.md

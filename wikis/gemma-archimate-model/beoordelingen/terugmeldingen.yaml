@@ -136,6 +136,7 @@ terugmeldingen:
   - '- datum opmaak en ambtenaar van de burgerlijke stand;'
   - '- latere vermeldingen;'
   - '- de relatie met de ingeschreven persoon (brondocument).'
+  - In het model is de akte het kernobject van het bedrijfsproces Bijhouden burgerlijke stand; de soorten akte (geboorte, levenloos geboren kind, erkenning, naamskeuze, huwelijk, registratie van partnerschap, omzetting, inschrijving, overlijden) zijn specialisaties zonder eigen entiteit, met dezelfde levensloop (2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493, hoofdstuk 2).
   nummer: 12
   status: open
 - domein: RSGBPlus

@@ -320,6 +320,38 @@ relaties:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 92, art. 3.22
+- soort: associatie (gericht)
+  naar: brp-inschrijving-niet-in-leven-zijnd-kind
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 90, art. 2.56a
+- soort: associatie (gericht)
+  naar: adoptie-aangifte
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 6, art. 2.38
+- soort: associatie (gericht)
+  naar: naamgebruik-verzoek-aanduiding
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 257, art. 2.25
+- soort: associatie (gericht)
+  naar: brp-inschrijving-buitenlandse-akte
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 89, art. 2.38
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: grondslag van de BRP-diensten in de UPL en kader van Besluit en Regeling BRP.'
