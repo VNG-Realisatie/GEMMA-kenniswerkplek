@@ -34,5 +34,4 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 ## Onderwerpen als één model (besluit 2026-10-06)
 
 - **Belanghebbende** beoordelen in Algemeen (Awb art. 1:2; besluit 2026-10-06: generiek, hoort bij Algemeen). Nu nog een verwijzing in Lijkbezorging; vraagt een volledige beoordeling met bron en GGM-terugmelding 9.
-- **Bij Burgerzaken**: de verwijzingen Aangifte van overlijden, Akte van overlijden en Doodgeboren kind aangifte zijn geen elementen; Burgerzaken neemt die beoordelingen over (burgerzaken als eerste in `onderwerpen`, *betekenis in onderwerp* ja). Per geval voorleggen of Ambtenaar van de burgerlijke stand (in de bronnen 46 relaties in Burgerzaken, 5 in Lijkbezorging) en Overlijden (toestand van de persoon) thuishoren in Burgerzaken.
 - **Bronanalyse per onderwerp in de render**: een bron met een bronanalyse in meer onderwerpen (UPL extern: lijkbezorging en burgerzaken) krijgt op elke pagina een link naar de alfabetisch eerste lens; sinds Burgerzaken linken lijkbezorgingspagina's naar de lens van Burgerzaken. Kies de lens van het thuisonderwerp van de pagina.
