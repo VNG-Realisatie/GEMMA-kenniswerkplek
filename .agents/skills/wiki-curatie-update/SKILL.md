@@ -38,6 +38,13 @@ Het denkniveau en wat het Model bij een overgang doet, staan in `AGENTS.md` (Wer
 
 `llmwiki promote apply` weigert als er na de samenvatting iets is gewijzigd; maak dan een nieuw plan. Het zet de status `goedgekeurd` en schrijft per element een regel in `log.md` met de hash van de inhoud van de beoordeling. Een inhoudelijke wijziging maakt een goedgekeurd element via het afleid-script weer `review`; een andere opmaak of een bijgewerkt model niet.
 
+## Een onderwerp in één keer afronden
+
+- Rond een onderwerp zoveel mogelijk in één keer af voordat je aan een volgend begint: elk begrip beoordeeld, elke vraag beslist, elke ontbrekende bron opgenomen. Opnieuw opstarten kost het opnieuw inlezen van bronnen, besluiten en samenhang, en geparkeerde punten raken uit beeld of worden later zonder de oorspronkelijke afweging opgepakt.
+- Een open punt binnen de scope van het onderwerp los je meteen op, niet als todo: ontbreekt bijvoorbeeld de wet die grondslag is van een product, neem haar dan op als bron en beleidskader.
+- Past een onderwerp niet in één Sessie, verdeel het dan in plakken naar samenhang (een kernobject of proces). Elke plak wordt volledig afgerond (akkoord, vastleggen, commit) en de plakken volgen direct op elkaar; wat voor een volgende plak blijft, staat onder het onderwerp in de todo van de wiki en in de startprompt van die plak, en verdwijnt uit de todo zodra die plak is afgerond.
+- Een todo is alleen voor wat binnen het onderwerp niet kan: een begrip dat thuishoort in een onderwerp dat nog niet bestaat (een verwijzing), of een voorstel aan of besluit van een andere partij.
+
 ## Grenzen
 
 - Nooit zelf een status zetten of AKKOORD typen; nooit `promote apply` zonder dat de redacteur letterlijk AKKOORD typte.
