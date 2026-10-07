@@ -27,6 +27,9 @@ bronnen:
 - 2026-utrecht-burgerzaken-kind-erkennen
 - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
 - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
 ---
 
 # Ouder
@@ -44,6 +47,8 @@ Hoedanigheid van wie juridisch moeder of andere ouder van een kind is, door gebo
 ### Beschrijving
 
 Een kind heeft juridisch altijd een moeder, de vrouw uit wie het is geboren of de adoptiefmoeder, en hoogstens één andere ouder: de echtgenoot of partner van de moeder, de erkenner, de ouder van wie het ouderschap is vastgesteld of de adoptiefouder (BW 1 art. 198, 199; HUP Geboorte). In de gemeentelijke praktijk heet de vrouwelijke andere ouder duomoeder (Utrecht). De ouder doet aangifte van geboorte, erkent het kind, kiest samen met de andere ouder de achternaam en heeft gezag over een minderjarig kind (BW 1 art. 5, 19e, 203, 247).
+
+Voor een reisdocument van een minderjarige geeft iedere ouder met gezag toestemming, online of op een formulier; een ouder meldt de vermissing van het reisdocument van een kind tot en met elf jaar (Paspoortwet art. 34; Utrecht).
 
 ### Synoniemen
 
@@ -90,6 +95,8 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | Ouder | erkent of stemt toe *toewijzing* | [Opmaken akte van erkenning](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-erkenning.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Kind erkennen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-kind-erkennen.md) (art. 203, 204) |
 | Ouder | verzoekt *toewijzing* | [Inschrijven levenloos geboren kind](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-levenloos-geboren-kind.md) | [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [Utrecht Levenloos geboren kind, aangifte doen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen.md) (art. 2.56a) |
 | Ouder | verklaart naamskeuze *toewijzing* | [Opmaken akte van naamskeuze](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-naamskeuze.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Achternaam kind kiezen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-achternaam-kind-kiezen.md) (art. 5 lid 4) |
+| Ouder | geeft toestemming voor een minderjarige *toewijzing* | [Behandelen aanvraag reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) (art. 34; Utrecht regel 131-185) |
+| Ouder | meldt vermissing voor een kind *toewijzing* | [Verwerken vermissing reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md) | [Utrecht Vermissing paspoort of ID-kaart](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven.md) (regel 35-37) |
 
 ## Herkomst
 
@@ -104,6 +111,9 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | [Utrecht Kind erkennen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-kind-erkennen.md) | Gemeente Utrecht: Kind erkennen |
 | [Utrecht Levenloos geboren kind, aangifte doen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen.md) | Gemeente Utrecht: Levenloos geboren kind |
 | [Utrecht Achternaam kind kiezen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-achternaam-kind-kiezen.md) | Gemeente Utrecht: Achternaam kind |
+| [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [Utrecht Paspoort of identiteitskaart aanvragen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) | Gemeente Utrecht: Paspoort of ID-kaart aanvragen |
+| [Utrecht Vermissing paspoort of ID-kaart](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven.md) | Gemeente Utrecht: Paspoort of ID-kaart kwijt |
 
 ### Afstemming met GEMMA
 

@@ -1,0 +1,285 @@
+begrip: Inhouden reisdocument
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wetsbegrip inhouding (Paspoortwet art. 1 onder h, hoofdstuk VIII); de HUP beschrijft inhouding en inlevering (HUP Inhouding).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester is als autoriteit die aanvragen in ontvangst neemt bevoegd tot inhouding (Paspoortwet art. 50b lid 1 onder a).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per in te houden of in te leveren reisdocument doorlopen.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: De Houder van het reisdocument levert het in, op eigen initiatief of na aanschrijving (Paspoortwet art. 56; HUP Inhouding; HUP Van rechtswege vervallen).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+    - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: 'Beëindigt het reisdocument: ingehouden en definitief aan het verkeer onttrokken (Paspoortwet art. 54 lid 3; Paspoortbesluit art. 7.1).'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  aanleiding:
+    waarde: ja
+    onderbouwing: Het verval van het reisdocument, een mededeling van de minister tot inhouding, beschadiging of fouten, of inlevering door de houder (Paspoortwet art. 53, 54 lid 1, 56).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een ingehouden reisdocument, dat definitief aan het verkeer is onttrokken of naar de tot vervallenverklaring bevoegde autoriteit gaat (Paspoortwet art. 53, 54).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk vervallen, beschadigd of teruggevonden reisdocument.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Paspoortwet art. 50b tot en met 57 (bevoegdheid, gronden, kennisgeving aan de minister, inlevering); Paspoortbesluit art. 6.1 (mededeling bij niet inleveren) en 7.1 (onttrekking aan het verkeer).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het einde van het reisdocument.'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Inhouding is het feitelijk onttrekken aan de houder (Paspoortwet art. 1 onder h); het besluit tot vervallenverklaring valt in Vervallen verklaren reisdocument.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Levert geen product of dienst uit de UPL.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het innemen van een vervallen, beschadigd of te weigeren reisdocument en het definitief aan het verkeer onttrekken ervan.
+beschrijving:
+- Een reisdocument wordt ingehouden als het van rechtswege is vervallen, zo is beschadigd dat beveiligingskenmerken zijn aangetast of gegevens onleesbaar zijn, onbevoegd is gewijzigd, de gezichtsopname niet meer lijkt of er fouten in staan (Paspoortwet art. 54 lid 1). Een document dat vervallen kan worden verklaard, houdt de burgemeester in na een mededeling van de minister en hij beslist daarna over de vervallenverklaring (art. 44 lid 2, 53). Ook de politie en de grensbewaking zijn bevoegd tot inhouding (art. 50b).
+- Inhouding gebeurt door een bevoegde autoriteit, inlevering op initiatief van de houder; een teruggevonden vermist document wordt ingeleverd en niet meer teruggegeven (HUP Inhouding). De gemeente registreert de inhouding of inlevering in de BRP en meldt een inhouding na een mededeling aan de minister (Paspoortwet art. 54 lid 5; Paspoortbesluit art. 6.1 lid 3). Het ingehouden document wordt terstond definitief aan het verkeer onttrokken, vernietigd of op verzoek van de houder ongeldig gemaakt en teruggegeven, tenzij het nog nodig is in een procedure (art. 1 onder j, 54 lid 3; Paspoortbesluit art. 7.1; HUP Inhouding).
+synoniemen:
+- naam: Inhouding
+  context: wet
+- naam: Inleveren reisdocument
+  context: beleid
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: reisdocument
+afnemer: extern
+relaties:
+- soort: toegang (beëindigen)
+  naar: reisdocument
+  naam: houdt in en onttrekt aan het verkeer
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: Paspoortwet art. 1 onder h en j, 54; Paspoortbesluit art. 7.1
+- soort: triggering
+  naar: vervallen-verklaren-reisdocument
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 44 lid 2, 53
+- soort: stroom
+  naar: bijhouden-persoonsgegevens
+  naam: geeft inhouding of inlevering door aan
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  - 2026-rvig-hup-reisdocument
+  vindplaats: HUP Inhouding, inleiding; HUP Reisdocument
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rvig-hup-reisdocument
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md

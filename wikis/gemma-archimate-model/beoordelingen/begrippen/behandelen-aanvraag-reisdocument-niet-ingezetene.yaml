@@ -1,0 +1,311 @@
+begrip: Behandelen aanvraag reisdocument niet-ingezetene
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De UPL noemt het reisdocument voor een niet-ingezetene als eigen product (nr. 357); het Paspoortbesluit geeft de aangewezen gemeenten er een eigen bevoegdheid voor (art. 3.2, 4.2).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester van een bij ministeriële regeling aangewezen gemeente neemt de aanvraag in ontvangst en verstrekt het reisdocument (Paspoortbesluit art. 3.2, 4.2).
+    bronnen:
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een eigen bevoegdheid met een eigen doelgroep, alleen voor aangewezen gemeenten (Paspoortbesluit art. 3.2, 4.2).
+    bronnen:
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Deelproces van Beheren reisdocumenten in burgerzaken.
+    bronnen:
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per aanvraag van begin tot eind doorlopen (Paspoortbesluit art. 3.2, 4.2).
+    bronnen:
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: 'Beslisser: de burgemeester van de aangewezen gemeente verstrekt of weigert (Paspoortbesluit art. 4.2; Paspoortwet art. 44); de Houder van het reisdocument vraagt aan (Paspoortbesluit art. 3.2).'
+    bronnen:
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+    - 2026-rijk-paspoortwet-bwbr0005212
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert het reisdocument bij de verstrekking en werkt het bij bij een wijziging (Paspoortwet art. 1 onder d en g, 40, 43); raadpleegt de ingeschreven persoon voor identiteit en nationaliteit (art. 26, 28; Paspoortbesluit art. 2.1).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  aanleiding:
+    waarde: ja
+    onderbouwing: De aanvraag, op afspraak aan de balie (Paspoortwet art. 27; Utrecht).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De verstrekking, de beslissing tot uitreiking van een nieuw reisdocument, of de weigering (Paspoortwet art. 1 onder c en d).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elke aanvraag.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Een eigen bevoegdheid voor alleen de aangewezen gemeenten en alleen voor personen die niet als ingezetene in de BRP staan (Paspoortbesluit art. 3.2, 4.2); verder gelden de regels van de Paspoortwet voor de aanvraag (art. 26-41).
+    bronnen:
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+    - 2026-rijk-paspoortwet-bwbr0005212
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het ontstaan van het reisdocument van een niet-ingezetene.'
+    bronnen:
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: De verstrekking of de weigering door de burgemeester van de aangewezen gemeente (Paspoortbesluit art. 4.2; Paspoortwet art. 40, 44).
+    bronnen:
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+    - 2026-rijk-paspoortwet-bwbr0005212
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de diensten Paspoort, Paspoort tweede, Zakenpaspoort, Vluchtelingenpaspoort, Vreemdelingenpaspoort, Identiteitskaart en Reisdocument niet-ingezetene (UPL nr. 329, 330, 494, 449, 462, 186, 357).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Specialisatie van Behandelen aanvraag reisdocument met een eigen bevoegdheid, een eigen doelgroep en een taak die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2; besluit redacteur 2026-10-07).
+    bronnen:
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een reisdocument van iemand die niet als ingezetene in de BRP staat, door een aangewezen gemeente.
+beschrijving:
+- 'Alleen de burgemeester van een bij ministeriële regeling aangewezen gemeente is bevoegd aanvragen in ontvangst te nemen en reisdocumenten te verstrekken voor personen die niet als ingezetene in de basisregistratie personen zijn ingeschreven: het nationaal paspoort, de reisdocumenten voor vluchtelingen en voor vreemdelingen en het nooddocument (Paspoortbesluit art. 3.2, 4.2; Paspoortwet art. 2 lid 1 onder a, d, e en g). Het document is hetzelfde Reisdocument als bij een ingezetene; bijzonder zijn de bevoegde gemeente en de aanvrager. Verder volgt de behandeling Behandelen aanvraag reisdocument.'
+synoniemen:
+- naam: Verstrekken reisdocument aan niet-ingezetene
+  context: wet
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA. Het specialiseert het generieke proces Behandelen aanvraag product.
+kernobject: reisdocument
+afnemer: extern
+gemma_generiek:
+  id: id-49fe8555-b001-4c86-9a81-20491e16af75
+  onderbouwing: Een aanvraag voor een product dat de gemeente na een toets op identiteit en aanspraak verstrekt; GEMMA noemt het paspoort als voorbeeld.
+relaties:
+- soort: specialisatie
+  naar: behandelen-aanvraag-reisdocument
+  naam: is een
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: art. 3.2, 4.2
+- soort: toegang (registreren)
+  naar: reisdocument
+  naam: verstrekt
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: art. 4.2
+- soort: toegang (raadplegen)
+  naar: ingeschreven-persoon
+  naam: stelt identiteit en nationaliteit vast
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: art. 2.1, 3.2
+- soort: realisatie
+  naar: reisdocument-niet-ingezetene
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: UPL nr. 356, 357; Paspoortbesluit art. 3.2, 4.2
+- soort: triggering
+  naar: uitreiken-reisdocument
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 42 lid 2
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Eigen deelproces voor de aanvraag van een niet-ingezetene, specialisatie van Behandelen aanvraag reisdocument: bijzonder is niet het document maar de taak, die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2). Realiseert de dienst Reisdocument niet-ingezetene.'
+  gevolg: verwerkt
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: wet
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md

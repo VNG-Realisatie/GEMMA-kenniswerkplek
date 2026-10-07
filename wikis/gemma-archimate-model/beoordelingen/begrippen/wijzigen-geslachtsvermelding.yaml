@@ -262,6 +262,14 @@ relaties:
   - 2026-rvig-hup-geslachtswijziging
   - 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
   vindplaats: art. 2.57 Wet BRP
+- soort: triggering
+  naar: verval-van-het-reisdocument
+  naam: doet het reisdocument vervallen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  vindplaats: Paspoortwet art. 47 lid 1 onder e; HUP Van rechtswege vervallen
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: bron
@@ -284,6 +292,8 @@ afgeleid:
   - 2026-rvig-hup-geslachtswijziging
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   herkomst: wet
   gemma_generiek:
     gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072

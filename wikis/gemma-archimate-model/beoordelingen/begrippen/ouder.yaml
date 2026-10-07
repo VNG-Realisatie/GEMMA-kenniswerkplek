@@ -210,6 +210,7 @@ kenmerken:
 definitie: Hoedanigheid van wie juridisch moeder of andere ouder van een kind is, door geboorte, huwelijk, erkenning, vaststelling of adoptie.
 beschrijving:
 - 'Een kind heeft juridisch altijd een moeder, de vrouw uit wie het is geboren of de adoptiefmoeder, en hoogstens één andere ouder: de echtgenoot of partner van de moeder, de erkenner, de ouder van wie het ouderschap is vastgesteld of de adoptiefouder (BW 1 art. 198, 199; HUP Geboorte). In de gemeentelijke praktijk heet de vrouwelijke andere ouder duomoeder (Utrecht). De ouder doet aangifte van geboorte, erkent het kind, kiest samen met de andere ouder de achternaam en heeft gezag over een minderjarig kind (BW 1 art. 5, 19e, 203, 247).'
+- Voor een reisdocument van een minderjarige geeft iedere ouder met gezag toestemming, online of op een formulier; een ouder meldt de vermissing van het reisdocument van een kind tot en met elf jaar (Paspoortwet art. 34; Utrecht).
 synoniemen:
 - naam: Moeder
   context: wet
@@ -256,6 +257,21 @@ relaties:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
   vindplaats: art. 5 lid 4
+- soort: toewijzing
+  naar: behandelen-aanvraag-reisdocument
+  naam: geeft toestemming voor een minderjarige
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  vindplaats: art. 34; Utrecht regel 131-185
+- soort: toewijzing
+  naar: verwerken-vermissing-reisdocument
+  naam: meldt vermissing voor een kind
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  vindplaats: regel 35-37
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: bron
@@ -279,5 +295,8 @@ afgeleid:
   - 2026-utrecht-burgerzaken-kind-erkennen
   - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   herkomst: wet
   pad: bedrijfsarchitectuur/rollen/ouder.md

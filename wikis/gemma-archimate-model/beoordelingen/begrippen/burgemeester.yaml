@@ -210,6 +210,8 @@ beschrijving:
 per_onderwerp:
   lijkbezorging:
   - De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, verleent vergunning tot opgraving en verlof tot ontleding, stelt een andere termijn en treft maatregelen bij een besmet stoffelijk overschot (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68).
+  burgerzaken:
+  - De burgemeester neemt aanvragen voor reisdocumenten in ontvangst van ingezetenen met een adres in zijn gemeente, verstrekt, reikt uit, wijzigt, weigert, verklaart vervallen en houdt in (Paspoortwet art. 26, 40, 42, 43, 44, 50b).
 grondslag: bron
 gemma:
   sterkte: geen
@@ -221,7 +223,8 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 17, 21, 22a, 29, 68
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: Wet op de lijkbezorging art. 17, 21, 22a, 29, 68; Paspoortwet art. 40, 44
 - soort: associatie (gericht)
   naar: gemeenteraad
   naam: is voorzitter van
@@ -239,6 +242,7 @@ relaties:
 onderwerpen:
 - algemeen
 - lijkbezorging
+- burgerzaken
 doelgroep: gemeente
 besluiten:
 - datum: '2026-10-05'
@@ -259,5 +263,6 @@ afgeleid:
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-paspoortwet-bwbr0005212
   herkomst: wet
   pad: bedrijfsarchitectuur/actoren/burgemeester.md

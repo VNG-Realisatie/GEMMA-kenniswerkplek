@@ -213,6 +213,8 @@ beschrijving:
 per_onderwerp:
   lijkbezorging:
   - 'De gemeente heft lijkbezorgingsrechten, ook begraafplaatsrechten genoemd: retributies voor het gebruik van de gemeentelijke begraafplaats of het crematorium, voor de uitgifte en het onderhoud van graven en urnen, en voor gemeentelijke diensten (VNG retributies; Groningen art. 8, 23).'
+  burgerzaken:
+  - De gemeente heft rechten voor de handelingen van de burgemeester ten behoeve van de aanvraag van een reisdocument; ze gelden als gemeentelijke belasting en worden bij de indiening voldaan (Paspoortwet art. 7 lid 2 en 4, 33).
 grondslag: ggm-entiteit
 ggm:
   guid: EAID_B3371695_97AD_49d2_9AF1_15591B422007
@@ -229,6 +231,8 @@ specialisaties:
   omschrijving: Heffing voor het gebruik van gemeentebezittingen of het genot van gemeentelijke diensten (Gemeentewet art. 229; VNG retributies). Geen eigen pagina.
 - naam: Grafrechten
   omschrijving: De lijkbezorgingsrechten voor de uitgifte van een graf, in de UPL een eigen product (UPL nr. 164; Gemeentewet art. 229). Geen eigen pagina.
+- naam: Leges reisdocumenten
+  omschrijving: Rechten voor de aanvraag van een reisdocument, gemeentelijke belasting (Paspoortwet art. 7, 33; voor de identiteitskaart Wet op de Nederlandse identiteitskaart art. 9). Geen eigen pagina.
 besluiten:
 - datum: '2026-09-30'
   besluit: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie.
@@ -251,6 +255,7 @@ relaties:
 onderwerpen:
 - algemeen
 - lijkbezorging
+- burgerzaken
 status: goedgekeurd
 afgeleid:
   uitkomst:

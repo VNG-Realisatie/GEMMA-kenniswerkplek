@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: b76b7dbd33ff44870cdf4a7122b85b8276fd71d3934664d10b69f7e7bbb92668 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: e6484f1eb20195ab2fb1c0ffd295f349a337337e6e41951a599c3145b9bd4539 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-07T09:12:45. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 25 gekoppeld aan GEMMA, 164 nieuw. Relaties: 11 gekoppeld, 677 nieuw, 1 overgeslagen. Indelingen: 114 aggregaties vanuit een groepering, 27 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-07T10:47:09. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 27 gekoppeld aan GEMMA, 186 nieuw. Relaties: 13 gekoppeld, 781 nieuw, 0 overgeslagen. Indelingen: 128 aggregaties vanuit een groepering, 30 specialisaties naar een GEMMA-element.
 
 Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de groep Kennismodel met een groep per laag (map Other / wiki-gemma-model / Kennismodel).
 
@@ -14,36 +14,37 @@ Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kenni
 - relatie access Bedrijfsproces → Afspraak (lezen-schrijven), 1×, niet in Over GEMMA
 - relatie access Rol → Afspraak (lezen-schrijven), 1×, niet in Over GEMMA
 - relatie aggregation Actor → Actor, 3×, niet in Over GEMMA
-- relatie aggregation Bedrijfsfunctie → Bedrijfsfunctie, 8×
-- relatie aggregation Bedrijfsfunctie → Dienst, 54×, niet in Over GEMMA
+- relatie aggregation Bedrijfsfunctie → Bedrijfsfunctie, 9×
+- relatie aggregation Bedrijfsfunctie → Dienst, 63×, niet in Over GEMMA
 - relatie aggregation Bedrijfsobject → Bedrijfsobject, 1×
-- relatie aggregation Bedrijfsproces → Gebeurtenis, 14×, niet in Over GEMMA
-- relatie aggregation Bedrijfsproces → Bedrijfsproces, 66×
+- relatie aggregation Bedrijfsproces → Gebeurtenis, 16×, niet in Over GEMMA
+- relatie aggregation Bedrijfsproces → Bedrijfsproces, 73×
 - relatie aggregation Rol → Actor, 9×, niet in Over GEMMA
-- relatie aggregation Rol → Rol, 19×
+- relatie aggregation Rol → Rol, 20×
 - relatie aggregation Groep → Bedrijfsfunctie, 3×
-- relatie aggregation Groep → Bedrijfsobject, 17×
+- relatie aggregation Groep → Bedrijfsobject, 18×
 - relatie aggregation Groep → Bedrijfsproces, 2×, niet in Over GEMMA
-- relatie aggregation Groep → Dienst, 54×, niet in Over GEMMA
+- relatie aggregation Groep → Dienst, 63×, niet in Over GEMMA
 - relatie aggregation Groep → Afspraak, 1×, niet in Over GEMMA
-- relatie aggregation Groep → Beleidskader, 7×, niet in Over GEMMA
+- relatie aggregation Groep → Beleidskader, 10×, niet in Over GEMMA
 - relatie aggregation Groep → Product, 2×, niet in Over GEMMA
 - relatie aggregation Product → Afspraak, 1×
-- relatie assignment Rol → Bedrijfsproces, 91×
+- relatie assignment Rol → Bedrijfsproces, 101×
 - relatie association Actor → Actor, 2×, niet in Over GEMMA
 - relatie association Gebeurtenis → Bedrijfsobject, 1×, niet in Over GEMMA
 - relatie association Bedrijfsobject → Dienst, 1×, niet in Over GEMMA
 - relatie association Rol → Rol, 1×, niet in Over GEMMA
 - relatie association Afspraak → Bedrijfsobject, 1×, niet in Over GEMMA
 - relatie association Beleidskader → Bedrijfsobject, 1×, niet in Over GEMMA
-- relatie association Beleidskader → Bedrijfsproces, 27×, niet in Over GEMMA
-- relatie association Beleidskader → Dienst, 38×, niet in Over GEMMA
-- relatie association Beleidskader → Beleidskader, 4×, niet in Over GEMMA
+- relatie association Beleidskader → Bedrijfsproces, 40×, niet in Over GEMMA
+- relatie association Beleidskader → Dienst, 47×, niet in Over GEMMA
+- relatie association Beleidskader → Beleidskader, 6×, niet in Over GEMMA
 - relatie association Beleidskader → Product, 1×, niet in Over GEMMA
 - relatie composition Bedrijfsobject → Bedrijfsobject, 1×
-- relatie flow Bedrijfsproces → Bedrijfsproces, 3×, niet in Over GEMMA
+- relatie flow Bedrijfsproces → Bedrijfsproces, 6×, niet in Over GEMMA
 - relatie serving Dienst → Rol, 13×
 - relatie serving Product → Rol, 1×
+- relatie triggering Gebeurtenis → Gebeurtenis, 2×, niet in Over GEMMA
 
 ## Wijzigt een GEMMA-element
 
@@ -63,13 +64,17 @@ Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kenni
 | Heffingsverordening | Heffingsverordening | ja |
 | Ingeschreven persoon | IngeschrevenPersoon | ja |
 | Ketenpartner | Ketenpartner | ja |
+| Officiële documenten verstrekking | Officiële documenten verstrekking | ja |
 | Regeling | Regeling | ja |
+| Reisdocument | Reisdocument | ja |
 | Verblijfplaats | Verblijfplaats | ja |
 
 ## Specialisaties naar een GEMMA-element
 
 Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets in gewijzigd.
 
+- Behandelen aanvraag reisdocument niet-ingezetene → Behandelen aanvraag product
+- Behandelen aanvraag reisdocument → Behandelen aanvraag product
 - Behandelen melding voorgenomen huwelijk of partnerschap → Behandelen aangifte of melding
 - Behandelen vergunningaanvragen lijkbezorging → Behandelen aanvraag vergunning of ontheffing
 - Behandelen verzoek om correctie → Behandelen aanvraag product
@@ -94,6 +99,7 @@ Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets
 - Verwerken adreswijziging → Behandelen aangifte of melding
 - Verwerken buitenlands document → Behandelen aanvraag product
 - Verwerken emigratie → Behandelen aangifte of melding
+- Verwerken vermissing reisdocument → Behandelen aangifte of melding
 - Voltrekken huwelijk → Behandelen aanvraag product
 - Wijzigen geslachtsvermelding → Behandelen aangifte of melding
 - Wijzigen naamgebruik → Behandelen aanvraag product
@@ -121,6 +127,8 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Asverstrooiing
 - Begraafplaats
 - Begraafplaatsregister
+- Behandelen aanvraag reisdocument
+- Behandelen aanvraag reisdocument niet-ingezetene
 - Behandelen melding voorgenomen huwelijk of partnerschap
 - Behandelen vergunningaanvragen lijkbezorging
 - Behandelen verzoek om correctie
@@ -131,6 +139,7 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Beheren crematoria
 - Beheren grafrechten
 - Beheren graven
+- Beheren reisdocumenten
 - Besluit basisregistratie personen
 - Besluit burgerlijke stand 1994
 - Besluit op de lijkbezorging
@@ -175,6 +184,7 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Geregistreerd partnerschap ontbinding
 - Geregistreerd partnerschapaangifte
 - Geslachtswijzigingsaangifte
+- Gewaarmerkte kopie reisdocument aanvragen
 - GGD
 - Graf
 - Graf aanvragen
@@ -186,8 +196,11 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Houder van de begraafplaats
 - Houder van een plaats van bijzetting
 - Houder van het crematorium
+- Houder van het reisdocument
 - Huwelijk
 - Huwelijksaangifte
+- Identiteitskaart
+- Inhouden reisdocument
 - Inschrijven ingezetene
 - Inschrijven levenloos geboren kind
 - Inschrijven niet-ingezetene
@@ -218,9 +231,14 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Overlijden
 - Overlijdensaangifte
 - Overlijdensakte
+- Paspoort
+- Paspoort tweede
+- Paspoortbesluit
+- Paspoortwet
 - Persoonsgegevens verklaring onder eed of belofte
 - Rechthebbende op het graf
 - Registreren partnerschap
+- Reisdocument niet-ingezetene
 - RNI inschrijving
 - RNI-loket
 - Ruimen graf
@@ -233,6 +251,7 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Treffen maatregel bij besmet stoffelijk overschot
 - Trouwlocatie
 - Uitbaten begraafplaatsen en crematoria
+- Uitreiken reisdocument
 - Uittreksel burgerlijke stand
 - Uitvaart vervroegen of uitstellen
 - Uitvaartondernemer
@@ -252,27 +271,32 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Verlenen verlof tot begraving of crematie
 - Verlenen verlof tot ontleding
 - Verlof tot begraven
+- Vermissing of diefstal reisdocument doorgeven
+- Vermissing van het reisdocument
 - Verstrekken overzicht gegevensverstrekkingen
 - Verstrekken persoonsgegevens
 - Verstrekken uittreksels en verklaringen burgerlijke stand
 - Verval van het grafrecht
+- Verval van het reisdocument
 - Vervallen verklaren grafrecht
+- Vervallen verklaren reisdocument
 - Vervoersdocumenten stoffelijk overschot
 - Verwerken adreswijziging
 - Verwerken buitenlands document
 - Verwerken emigratie
+- Verwerken vermissing reisdocument
 - Verzorgen burgerzaken
 - Verzorgen gemeentebegrafenis
 - Verzorgen lijkbezorging
 - Vestiging vanuit het buitenland
+- Vluchtelingenpaspoort
 - Voltrekken huwelijk
 - Voornaamwijziging
+- Vreemdelingenpaspoort
 - Wet basisregistratie personen
 - Wet op de lijkbezorging
+- Wet op de Nederlandse identiteitskaart
 - Wijzigen geslachtsvermelding
 - Wijzigen identificatienummers
 - Wijzigen naamgebruik
-
-## Overgeslagen relaties
-
-- Ingeschreven persoon → reisdocument (associatie (gericht)): het doel gaat niet mee in deze export
+- Zakenpaspoort

@@ -20,6 +20,7 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
+- 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
 gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
 gemma_naam: Producten- en dienstenrealisatie publieksdiensten
 gemma_type: business-function
@@ -54,7 +55,7 @@ Burgerlijke stand diensten valt eronder: na aangifte van overlijden geeft de gem
 
 #### [Burgerzaken](../../../begrippen/burgerzaken.md)
 
-Bevolkingsadministratie bijhouding valt eronder: de bijhouding van de basisregistratie personen en de diensten daarover. De legalisatie van een handtekening aan de balie valt er direct onder (Utrecht Handtekening legaliseren).
+Bevolkingsadministratie bijhouding valt eronder: de bijhouding van de basisregistratie personen en de diensten daarover. Officiële documenten verstrekking valt eronder: de verstrekking van reisdocumenten (Paspoortwet art. 40). De legalisatie van een handtekening en het waarmerken van een kopie van een reisdocument aan de balie vallen er direct onder (Utrecht Handtekening legaliseren; Utrecht Waarmerken kopie).
 
 ## Plaats in het model
 
@@ -65,7 +66,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 ### Plaats in de indelingen
 
 - **Functie-indeling naar domein, onderdeel van**: [Uitvoering Publieksdiensten](uitvoering-publieksdiensten.md).
-- **Functie-indeling naar domein, omvat**: [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md), [Bevolkingsadministratie bijhouding](bevolkingsadministratie-bijhouding.md), [Burgerlijke stand diensten](burgerlijke-stand-diensten.md), [Legalisatie handtekening](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md), [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md).
+- **Functie-indeling naar domein, omvat**: [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md), [Bevolkingsadministratie bijhouding](bevolkingsadministratie-bijhouding.md), [Burgerlijke stand diensten](burgerlijke-stand-diensten.md), [Gewaarmerkte kopie reisdocument aanvragen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/gewaarmerkte-kopie-reisdocument-aanvragen.md), [Legalisatie handtekening](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md), [Officiële documenten verstrekking](officiele-documenten-verstrekking.md), [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md).
 - **Domein**: Publieksdiensten.
 
 ### Kenmerken
@@ -100,6 +101,9 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Bevolkingsadministratie bijhouding](bevolkingsadministratie-bijhouding.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb) |
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Legalisatie handtekening](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md) | [UPL-lijst extern](../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 226 (GEMMA-domein Publieksdiensten)) |
 | Producten- en dienstenrealisatie publieksdiensten | realiseert *realisatie* | [Legalisatie handtekening](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md) | [Utrecht Handtekening laten legaliseren](../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) (inleiding) |
+| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Officiële documenten verstrekking](officiele-documenten-verstrekking.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-1f944d4b-41d8-40cb-be75-8706806e07cc) |
+| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Gewaarmerkte kopie reisdocument aanvragen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/gewaarmerkte-kopie-reisdocument-aanvragen.md) | [Utrecht Waarmerken kopie reisdocument](../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.md) (Utrecht; GEMMA-domein Publieksdiensten) |
+| Producten- en dienstenrealisatie publieksdiensten | realiseert *realisatie* | [Gewaarmerkte kopie reisdocument aanvragen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/gewaarmerkte-kopie-reisdocument-aanvragen.md) | [Utrecht Waarmerken kopie reisdocument](../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.md) (regel 17-19) |
 
 #### Inkomend
 
@@ -118,6 +122,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [UPL-lijst extern](../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [Utrecht Handtekening laten legaliseren](../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) | Gemeente Utrecht: Legalisatie handtekening |
+| [Utrecht Waarmerken kopie reisdocument](../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.md) | Gemeente Utrecht: Gewaarmerkte kopie reisdocument |
 
 ### Afstemming met GEMMA
 

@@ -7,6 +7,7 @@ naam: Heffing
 onderwerpen:
 - algemeen
 - lijkbezorging
+- burgerzaken
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Belastingen
 definitie: Een door de overheid opgelegde verplichting tot betaling.
@@ -70,6 +71,10 @@ Een heffing is een door de overheid opgelegde verplichting tot betaling. De geme
 
 De gemeente heft lijkbezorgingsrechten, ook begraafplaatsrechten genoemd: retributies voor het gebruik van de gemeentelijke begraafplaats of het crematorium, voor de uitgifte en het onderhoud van graven en urnen, en voor gemeentelijke diensten (VNG retributies; Groningen art. 8, 23).
 
+#### [Burgerzaken](../../../../begrippen/burgerzaken.md)
+
+De gemeente heft rechten voor de handelingen van de burgemeester ten behoeve van de aanvraag van een reisdocument; ze gelden als gemeentelijke belasting en worden bij de indiening voldaan (Paspoortwet art. 7 lid 2 en 4, 33).
+
 ## Plaats in het model
 
 ### Typering
@@ -82,6 +87,10 @@ Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Belastingen.
 
 ### Specialisaties per onderwerp
+
+#### Burgerzaken
+
+- **Leges reisdocumenten**: Specialisatie zonder pagina van Heffing: de rechten voor de aanvraag van een reisdocument, gemeentelijke belasting en bij de indiening te voldoen (Paspoortwet art. 7, 33). Het tarief en de bezorgkosten zijn lokale gegevens (Utrecht).
 
 #### Lijkbezorging
 
@@ -111,6 +120,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 - **Lijkbezorgingsrechten**: Retributies voor het gebruik van de gemeentelijke begraafplaats of het crematorium (VNG retributies). Geen eigen pagina.
 - **Retributie**: Heffing voor het gebruik van gemeentebezittingen of het genot van gemeentelijke diensten (Gemeentewet art. 229; VNG retributies). Geen eigen pagina.
 - **Grafrechten**: De lijkbezorgingsrechten voor de uitgifte van een graf, in de UPL een eigen product (UPL nr. 164; Gemeentewet art. 229). Geen eigen pagina.
+- **Leges reisdocumenten**: Rechten voor de aanvraag van een reisdocument, gemeentelijke belasting (Paspoortwet art. 7, 33; voor de identiteitskaart Wet op de Nederlandse identiteitskaart art. 9). Geen eigen pagina.
 
 ### Relaties
 

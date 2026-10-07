@@ -247,6 +247,14 @@ relaties:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
   vindplaats: art. 19f, 19h; Utrecht inleiding
+- soort: triggering
+  naar: verval-van-het-reisdocument
+  naam: doet het reisdocument vervallen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  vindplaats: Paspoortwet art. 47 lid 1 onder f; HUP Van rechtswege vervallen
 onderwerpen:
 - burgerzaken
 - lijkbezorging
@@ -284,5 +292,7 @@ afgeleid:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   herkomst: wet
   pad: bedrijfsarchitectuur/gebeurtenissen/overlijden.md

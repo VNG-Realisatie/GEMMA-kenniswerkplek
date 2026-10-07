@@ -23,6 +23,8 @@ bronnen:
 - 2026-rvig-hup-geslachtswijziging
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
 ---
 
 # Wijzigen geslachtsvermelding
@@ -61,6 +63,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 - **Procesindeling naar taak, onderdeel van**: [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md).
 - **Kernobject**: [Akte van de burgerlijke stand](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md).
 - **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Behandelen aangifte of melding*. Een aangifte bij de ambtenaar van de burgerlijke stand die de gemeente verwerkt (BW 1 art. 28).
+- **Eindigt in gebeurtenis**: [Verval van het reisdocument](../../../gebeurtenissen/verval-van-het-reisdocument.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
@@ -96,6 +99,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | Wijzigen geslachtsvermelding | voegt latere vermelding toe aan *toegang (bijwerken)* | [Akte van de burgerlijke stand](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 28b) |
 | Wijzigen geslachtsvermelding | realiseert *realisatie* | [Geslachtswijzigingsaangifte](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/geslachtswijzigingsaangifte.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Geslacht, vermelding aanpassen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen.md) (UPL nr. 159) |
 | Wijzigen geslachtsvermelding | kan leiden tot *triggering* | [Behandelen verzoek om verwijdering van gegevens](behandelen-verzoek-om-verwijdering-van-gegevens.md) | [HUP BRP: Geslachtswijziging](../../../../bronanalyses/burgerzaken/2026-rvig-hup-geslachtswijziging.md), [HUP BRP: Overschrijven gegevens bij geslachtswijziging](../../../../bronanalyses/burgerzaken/2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging.md) (art. 2.57 Wet BRP) |
+| Wijzigen geslachtsvermelding | doet het reisdocument vervallen *triggering* | [Verval van het reisdocument](../../../gebeurtenissen/verval-van-het-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Van rechtswege vervallen reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) (Paspoortwet art. 47 lid 1 onder e; HUP Van rechtswege vervallen) |
 
 #### Inkomend
 
@@ -116,6 +120,8 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [HUP BRP: Geslachtswijziging](../../../../bronanalyses/burgerzaken/2026-rvig-hup-geslachtswijziging.md) | HUP BRP: Geslachtswijziging |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [HUP BRP: Overschrijven gegevens bij geslachtswijziging](../../../../bronanalyses/burgerzaken/2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging.md) | HUP BRP: Overschrijven gegevens bij geslachtswijziging |
+| [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [HUP Van rechtswege vervallen reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) | HUP BRP: Van rechtswege vervallen reisdocument |
 
 ### Afstemming met GEMMA
 

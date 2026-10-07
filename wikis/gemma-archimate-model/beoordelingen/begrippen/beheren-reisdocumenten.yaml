@@ -1,0 +1,321 @@
+begrip: Beheren reisdocumenten
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De aanvraag, verstrekking, uitreiking, wijziging, inhouding en vervallenverklaring van reisdocumenten zijn de taak van de burgemeester (Paspoortwet art. 26, 40, 42, 43, 44, 50b); gemeenten bieden paspoort en identiteitskaart aan (Utrecht).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester neemt de aanvraag in ontvangst, verstrekt en reikt uit, voor ingezetenen met een adres in zijn gemeente (Paspoortwet art. 26, 40, 42).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: het kernobject Reisdocument is van dit onderwerp (UPL taakveld 0.2).'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per reisdocument doorlopen, van aanvraag tot verval of inhouding (Paspoortwet art. 1).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: 'Beslisser: de burgemeester is bevoegd tot verstrekking, uitreiking, weigering, vervallenverklaring en inhouding (Paspoortwet art. 40, 42, 44, 50b); de Houder van het reisdocument vraagt aan en levert in (art. 1, 28, 32).'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: 'Registreert, werkt bij en beëindigt het reisdocument: verstrekking, uitreiking, vermissing, inhouding en definitieve onttrekking aan het verkeer (Paspoortwet art. 1, 40, 42, 54); raadpleegt de ingeschreven persoon (art. 26).'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  aanleiding:
+    waarde: ja
+    onderbouwing: De aanvraag van een reisdocument (Paspoortwet art. 27).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een uitgereikt reisdocument, en aan het eind een vervallen, ingehouden of aan het verkeer onttrokken reisdocument (Paspoortwet art. 42, 47, 54).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk reisdocument dat wordt aangevraagd.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Paspoortwet hoofdstuk IV tot en met VIII; Paspoortbesluit hoofdstuk 2 tot en met 7.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rijk-paspoortbesluit-bwbr0044308
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Het proces van een kernobject; de taak Verzorgen burgerzaken groepeert het, maar het levert zelf het eindresultaat.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: ja
+    onderbouwing: 'Omvat de levensloop van het reisdocument: aanvraag, verstrekking, uitreiking, wijziging, vermissing, inhouding, vervallenverklaring, verval en definitieve onttrekking aan het verkeer (Paspoortwet art. 1).'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: De gemeente voert de levensloop uit tegenover de houder; de minister laat de documenten maken en houdt de registers bij (Paspoortwet art. 2 lid 3, 4a, 4c), maar voert geen eigen deel van het proces uit tegenover de houder. Zelfde keuze als bij Bijhouden persoonsgegevens met de centrale voorzieningen van de BRP.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar; de deelprocessen leiden tot de gebeurtenissen.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het behandelen van aanvragen, verstrekken en uitreiken van reisdocumenten en het verwerken van vermissing, inhouding en verval ervan.
+beschrijving:
+- De burgemeester neemt de aanvraag in ontvangst, verstrekt het reisdocument binnen vier weken en reikt het binnen twee weken daarna uit, voor wie als ingezetene met een adres in zijn gemeente in de basisregistratie personen staat (Paspoortwet art. 26, 40, 41, 42). Een aangewezen gemeente behandelt ook aanvragen van niet-ingezetenen (Paspoortbesluit art. 3.2, 4.2). De Nederlandse identiteitskaart heeft een eigen wet, maar valt voor vermissing, signalering en inhouding ook onder de Paspoortwet (art. 1 onder u, 25, 50b).
+- Het reisdocument eindigt door verval van rechtswege, bijvoorbeeld na vermissing, wijziging van de naam of overlijden, of door vervallenverklaring op verzoek van een tot signalering bevoegd orgaan; de burgemeester houdt het in en onttrekt het definitief aan het verkeer (Paspoortwet art. 44, 47, 54). Het blijft rijkseigendom; de minister laat het maken en houdt het register vermiste of vervallen reisdocumenten, het basisregister reisdocumenten en het register paspoortsignaleringen bij (art. 2, 4a, 4c, 25).
+- De deelprocessen leveren de diensten van de UPL voor reisdocumenten (paspoort, identiteitskaart, vluchtelingen- en vreemdelingenpaspoort) en de melding van vermissing. De gemeente legt de uitgereikte Nederlandse reisdocumenten en de signalering vast in categorie 12 van de persoonslijst (HUP Reisdocument).
+synoniemen:
+- naam: Reisdocumenten
+  context: dagelijks gebruik
+naamkeuze:
+- 'Infinitief met object in GEMMA-volgorde, zoals Beheren grafrechten: het proces omvat de hele levensloop van het reisdocument, ook vermissing, inhouding en verval. Verstrekken reisdocumenten is overwogen, maar verstrekking is in de Paspoortwet alleen de beslissing tot uitreiking (art. 1 onder d) en wordt een deel van Behandelen aanvraag reisdocument.'
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor reisdocumenten; de functie Officiële documenten verstrekking bedient het, en het generieke proces Behandelen aanvraag product noemt het paspoort als voorbeeld.
+kernobject: reisdocument
+afnemer: extern
+relaties:
+- soort: toegang (registreren)
+  naar: reisdocument
+  naam: verstrekt, reikt uit en onttrekt aan het verkeer
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 1, 40, 42, 54
+- soort: aggregatie
+  naar: behandelen-aanvraag-reisdocument
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 26-41
+- soort: aggregatie
+  naar: uitreiken-reisdocument
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 42
+- soort: aggregatie
+  naar: verwerken-vermissing-reisdocument
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  vindplaats: Paspoortwet art. 5a; HUP Inhouding
+- soort: aggregatie
+  naar: vermissing-van-het-reisdocument
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 1 onder k
+- soort: aggregatie
+  naar: inhouden-reisdocument
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 50b-57
+- soort: aggregatie
+  naar: vervallen-verklaren-reisdocument
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 44-46
+- soort: aggregatie
+  naar: verval-van-het-reisdocument
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 47
+- soort: aggregatie
+  naar: behandelen-aanvraag-reisdocument-niet-ingezetene
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: art. 3.2, 4.2
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md

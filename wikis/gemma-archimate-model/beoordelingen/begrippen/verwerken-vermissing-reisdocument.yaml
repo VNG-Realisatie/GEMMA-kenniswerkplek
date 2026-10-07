@@ -1,0 +1,307 @@
+begrip: Verwerken vermissing reisdocument
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Vermissing of diefstal doorgeven (Utrecht); de HUP beschrijft de registratie van de vermissing (HUP Inhouding).
+    bronnen:
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente neemt de verklaring van vermissing in ontvangst en registreert haar (HUP Inhouding; Utrecht).
+    bronnen:
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per gemelde vermissing doorlopen.
+    bronnen:
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: De Houder van het reisdocument meldt de vermissing, vanaf achttien jaar zelf; voor een kind tot en met elf jaar een Ouder, van twaalf tot en met zeventien jaar het kind of een ouder (Paspoortwet art. 5a; Utrecht).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: 'Werkt het reisdocument bij: vermist en daarmee ongeldig (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j).'
+    bronnen:
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+    - 2026-rijk-paspoortwet-bwbr0005212
+  aanleiding:
+    waarde: ja
+    onderbouwing: De vermissing van het reisdocument en de melding daarvan (Paspoortwet art. 5a, 31 lid 1).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: 'De geregistreerde vermissing: het document is niet meer geldig, ook niet als het terugkomt (Utrecht; HUP Inhouding).'
+    bronnen:
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elke gemelde vermissing.
+    bronnen:
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Paspoortwet art. 4a (register vermiste of vervallen reisdocumenten), 5a (melding), 31 lid 1 (melding bij een nieuwe aanvraag) en 47 lid 1 onder j (verval door de verklaring).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het einde van een vermist reisdocument.'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: De registratie volgt direct op de verklaring; het verval treedt van rechtswege in (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j).
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Vermissing of diefstal reisdocument doorgeven (Utrecht).
+    bronnen:
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: ja
+    onderbouwing: 'Verval van het reisdocument: door de verklaring van vermissing vervalt het van rechtswege (Paspoortwet art. 47 lid 1 onder j).'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het ontvangen en registreren van de melding dat een reisdocument kwijt of gestolen is, waardoor het document ongeldig wordt.
+beschrijving:
+- De houder meldt de vermissing per document, online en gratis; de gemeente registreert de schriftelijke verklaring van vermissing direct (Utrecht; HUP Inhouding). Met de registratie wordt het document in het basisregister reisdocumenten automatisch ongeldig en vervalt het van rechtswege (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j). De minister vermeldt vermiste reisdocumenten in het register vermiste of vervallen reisdocumenten, ter voorkoming van fraude (art. 4a).
+- 'Een vermissing is onomkeerbaar: een teruggevonden document wordt nooit meer teruggegeven, maar ingeleverd bij de gemeente (HUP Inhouding; Utrecht). Wie na een vermissing een nieuw document aanvraagt zonder ander reisdocument, laat eerst de identiteit vaststellen (Utrecht).'
+synoniemen:
+- naam: Melding van vermissing
+  context: wet
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA. Het specialiseert het generieke proces Behandelen aangifte of melding.
+kernobject: reisdocument
+afnemer: extern
+gemma_generiek:
+  id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  onderbouwing: Een melding van een gebeurtenis waardoor de gemeente haar registratie bijwerkt; de melder krijgt bericht dat ze is verwerkt (HUP Inhouding).
+relaties:
+- soort: toegang (bijwerken)
+  naar: reisdocument
+  naam: registreert vermissing van
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: HUP Inhouding, inleiding; Paspoortwet art. 47 lid 1 onder j
+- soort: realisatie
+  naar: vermissing-of-diefstal-reisdocument-doorgeven
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  vindplaats: regel 17-23
+- soort: stroom
+  naar: bijhouden-persoonsgegevens
+  naam: geeft vermissing door aan
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  - 2026-rvig-hup-reisdocument
+  vindplaats: HUP Inhouding, inleiding; HUP Reisdocument
+- soort: triggering
+  naar: verval-van-het-reisdocument
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  vindplaats: Paspoortwet art. 47 lid 1 onder j; HUP Inhouding
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-reisdocument
+  herkomst: wet
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md

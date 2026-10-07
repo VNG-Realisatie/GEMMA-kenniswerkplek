@@ -1,0 +1,255 @@
+begrip: Vervallen verklaren reisdocument
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wetsbegrip vervallenverklaring (Paspoortwet art. 1 onder i, hoofdstuk VI).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester is bevoegd tot vervallenverklaring (Paspoortwet art. 44 lid 1, 40).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per ingehouden reisdocument doorlopen.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: 'Beslisser: de burgemeester (Paspoortwet art. 44 lid 1).'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Beëindigt het reisdocument (vervallen verklaard) of geeft het terug (Paspoortwet art. 45).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een ingehouden reisdocument van een persoon over wie de minister een mededeling heeft gedaan op verzoek van een tot signalering bevoegd orgaan (Paspoortwet art. 25 lid 4, 44 lid 2, 52, 53).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De beschikking tot vervallenverklaring, of de teruggave of een document met beperkte geldigheid (Paspoortwet art. 45, 46).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk ingehouden reisdocument met een signalering.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Paspoortwet art. 44 tot en met 46b (voornemen, aanhouding van acht weken, termijn van vier weken, mededeling aan de minister).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het einde van het reisdocument.'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: De beschikking tot vervallenverklaring van de burgemeester (Paspoortwet art. 1 onder i, 44, 46).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Levert geen product of dienst uit de UPL.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het beslissen dat een ingehouden reisdocument ongeldig is, omdat een tot signalering bevoegd orgaan daar gronden voor heeft.
+beschrijving:
+- Na de inhouding gaat de burgemeester na of de gronden nog bestaan en kondigt hij binnen vier weken zijn voornemen aan; de houder kan vragen de beslissing acht weken aan te houden om met de autoriteit bij wie de gronden bestaan overeenstemming te bereiken. Zonder overeenstemming verklaart hij het document vervallen, tenzij de houder onevenredig wordt benadeeld; dan geeft hij het terug of verstrekt hij een document met beperkte geldigheid (Paspoortwet art. 44, 45). Hij deelt zijn beslissing mee aan de minister, die haar opneemt in het register paspoortsignaleringen (art. 45 lid 3).
+- 'De gronden liggen bij andere organen: het openbaar ministerie, de minister van Justitie en Veiligheid, de rechter-commissaris, een minister of een tot invordering bevoegd orgaan zoals het college van burgemeester en wethouders (Paspoortwet art. 18 tot en met 24). Dezelfde gronden kunnen leiden tot weigering bij een aanvraag (art. 44).'
+- De burgemeester kan als met de uitvoering van de Paspoortwet belaste autoriteit zelf om weigering of vervallenverklaring verzoeken bij het gegronde vermoeden van fraude met reisdocumenten of Nederlandse identiteitskaarten (Paspoortwet art. 24 onder b); het college doet dat als tot invordering bevoegd orgaan (art. 22).
+synoniemen:
+- naam: Vervallenverklaring
+  context: wet
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: reisdocument
+afnemer: extern
+relaties:
+- soort: toegang (beëindigen)
+  naar: reisdocument
+  naam: verklaart vervallen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 1 onder i, 44
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md

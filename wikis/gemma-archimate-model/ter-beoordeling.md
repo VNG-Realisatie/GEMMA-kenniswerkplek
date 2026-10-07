@@ -16,6 +16,4 @@ Niets.
 
 ## Voor te leggen
 
-**[Reisdocument](bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md)** (kandidaat)
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+Niets.

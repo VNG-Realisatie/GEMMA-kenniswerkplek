@@ -2,7 +2,7 @@
 id: besluiten-redacteur
 type: analyse
 titel: Besluiten van de redacteur
-bijgewerkt: '2026-10-06'
+bijgewerkt: '2026-10-07'
 ---
 
 # Besluiten van de redacteur
@@ -96,6 +96,12 @@ Besluiten over de werkwijze en de criteria staan bij de analyse waar ze bij hore
 | 2026-10-07 | Thuisonderwerp en eerdere goedkeuring | alle | Dat een element eerder in een ander onderwerp is beoordeeld of goedgekeurd, is geen argument voor zijn thuisonderwerp: dat komt door de volgorde van inlezen. Alleen de inhoud telt (regel Thuishoren). Volgt het thuisonderwerp eenduidig uit de inhoud, dan verplaatst de AI het element zonder voor te leggen en noemt het in de lijst ter bevestiging; alleen bij inhoudelijke twijfel voorleggen. |
 | 2026-10-07 | Burgerlijk Wetboek Boek 1, Besluit burgerlijke stand 1994 | burgerzaken | Opnemen als beleidskader; grondslag van Bijhouden burgerlijke stand, de akten en de diensten van de burgerlijke stand. |
 | 2026-10-07 | Akte van de burgerlijke stand | burgerzaken | Opgenomen als gegevensobject zonder GGM-entiteit, kernobject van Bijhouden burgerlijke stand (GGM-terugmelding 12). |
+| 2026-10-07 | Reisdocument niet-ingezetene, Behandelen aanvraag reisdocument niet-ingezetene | burgerzaken | Het document van een niet-ingezetene is een gewoon reisdocument; bijzonder is de taak, die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2). Nieuw deelproces Behandelen aanvraag reisdocument niet-ingezetene, specialisatie van Behandelen aanvraag reisdocument, dat de dienst Reisdocument niet-ingezetene (UPL 357) realiseert. UPL 356 reisdocument is een synoniem van die dienst (zelfde grondslag, geen doelgroep), met procesarchitectuur-terugmelding. |
+| 2026-10-07 | Verzoeken om signalering | burgerzaken | Verwijzing naar een later onderwerp invordering: het verzoek van het college (Paspoortwet art. 22) verandert geen reisdocument en ontstaat in de invordering. Het verzoek van de burgemeester bij fraude (art. 24 onder b) staat in de beschrijving van Vervallen verklaren reisdocument. |
+| 2026-10-07 | Minister van BZK | burgerzaken | Geen element, in lijn met plak 1: één organisatie van het Rijk, geen soort partij; zijn registers zijn invoer en hij staat in de beschrijvingen. De rijkskant (minister/RvIG, IND) eventueel in één keer zichtbaar maken bij plak 4. |
+| 2026-10-07 | Wet op de Nederlandse identiteitskaart | burgerzaken | Opnemen als bron en als beleidskader: sinds 2026-10-01 de grondslag van de dienst Identiteitskaart (art. 11, 15, 25) en, voor de identiteitskaart, van de aanvraag, uitreiking, vermissing en inhouding. Procesarchitectuur-terugmelding 9 verwijst ernaar. |
+| 2026-10-07 | Paspoortwet, Paspoortbesluit | burgerzaken | Opnemen als beleidskader; grondslag van Beheren reisdocumenten, de deelprocessen en de diensten van reisdocumenten. |
+| 2026-10-07 | Reisdocument, Beheren reisdocumenten | burgerzaken | Reisdocument is kernobject van het nieuwe bedrijfsproces Beheren reisdocumenten onder Verzorgen burgerzaken (geen ketenproces: de minister voert tegenover de houder geen eigen deel uit), met de deelprocessen voor aanvraag, aanvraag niet-ingezetene, uitreiking, vermissing, inhouding en vervallenverklaring; de documentsoorten zijn specialisaties zonder pagina met de wetsterm, de diensten houden de UPL-naam. |
 
 ## Open punten uit eerdere besluiten
 

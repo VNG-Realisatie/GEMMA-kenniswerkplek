@@ -370,6 +370,27 @@ relaties:
   bronnen:
   - 2026-rvig-hup-wijzigen-bsn
   vindplaats: regel 19-25
+- soort: toewijzing
+  naar: behandelen-aanvraag-reisdocument
+  naam: verstrekt of weigert
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 40, 44
+- soort: toewijzing
+  naar: vervallen-verklaren-reisdocument
+  naam: verklaart vervallen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 44, 46
+- soort: toewijzing
+  naar: behandelen-aanvraag-reisdocument-niet-ingezetene
+  naam: verstrekt of weigert
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: art. 4.2
 onderwerpen:
 - algemeen
 - lijkbezorging
@@ -378,6 +399,7 @@ doelgroep: gemeente
 per_onderwerp:
   burgerzaken:
   - 'In de bijhouding van de basisregistratie personen beslist het college: over de inschrijving, het briefadres, de uitkomst van een adresonderzoek, geheimhouding, verstrekking, correctie, verwijdering van gegevens en de wijziging van het BSN (Besluit BRP art. 24; Circulaire adresonderzoek 4.6; HUP Verstrekkingsbeperking; HUP Wijzigen BSN).'
+  - 'Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdocument en verklaart het vervallen (Paspoortwet art. 40, 44).'
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -403,6 +425,8 @@ afgeleid:
   - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   - 2026-rvig-hup-wijzigen-bsn
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
   herkomst: wet
   gemma:
     gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e

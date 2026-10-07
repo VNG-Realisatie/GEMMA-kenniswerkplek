@@ -1,0 +1,282 @@
+begrip: Wet op de Nederlandse identiteitskaart
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare naam van de wet over de identiteitskaart (BWBR0052951, art. 55).
+    bronnen:
+    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Geeft de burgemeester de bevoegdheid tot het in ontvangst nemen van de aanvraag, verstrekking, uitreiking, weigering en inhouding van de identiteitskaart (art. 15, 25, 27, 28, 35).
+    bronnen:
+    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  regeling_als_geheel:
+    waarde: ja
+    onderbouwing: Een concreet benoemde regeling als geheel (BWBR0052951).
+    bronnen:
+    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: ja
+    onderbouwing: Rijkswet (Stb. 2026/180).
+    bronnen:
+    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  in_werking:
+    waarde: ja
+    onderbouwing: Geldend recht sinds 2026-10-01; hoofdstuk III en IV en art. 12 vervallen per 01-03-2027.
+    bronnen:
+    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  is_grondslag_voor:
+    waarde: ja
+    onderbouwing: 'Art. 11, 15 en 25 (aanspraak, aanvraag en verstrekking), 27 (uitreiking), 7, 19 en 30 (vermissing en verval), 35 tot en met 39 (inhouding): grondslag van de dienst Identiteitskaart en, voor de identiteitskaart, van Behandelen aanvraag reisdocument, Uitreiken reisdocument, Verwerken vermissing reisdocument en Inhouden reisdocument.'
+    bronnen:
+    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Wet over de Nederlandse identiteitskaart, de aanspraak erop en de aanvraag, verstrekking, uitreiking, weigering, het verval en de inhouding.
+beschrijving:
+- 'De Wet op de Nederlandse identiteitskaart (BWBR0052951, sinds 2026-10-01) regelt de identiteitskaart buiten de Paspoortwet: de gegevens op de kaart en het publiek identificatiemiddel (art. 3, 4), de aanspraak (art. 11), de aanvraag, de verstrekking en de uitreiking door de burgemeester voor ingezetenen van zijn gemeente (art. 15-27), de weigering (art. 13, 28), het verval van rechtswege (art. 30), de inhouding en inlevering (art. 35-39) en de rechten die de gemeente als gemeentelijke belasting heft (art. 9). Een vervallenverklaring door de burgemeester kent de wet niet. Voor de registers van de minister verwijst ze naar de Paspoortwet (art. 5, 5a, 14).'
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: regelgeving
+grondslag_toelichting:
+- De regeling zelf (2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
+regelgever: rijk
+relaties:
+- soort: associatie (gericht)
+  naar: identiteitskaart
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  vindplaats: art. 11, 15, 25
+- soort: associatie (gericht)
+  naar: behandelen-aanvraag-reisdocument
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  vindplaats: art. 15-26, 28
+- soort: associatie (gericht)
+  naar: uitreiken-reisdocument
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  vindplaats: art. 20, 27
+- soort: associatie (gericht)
+  naar: verwerken-vermissing-reisdocument
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  vindplaats: art. 5a, 7, 19, 30 lid 1 onder h
+- soort: associatie (gericht)
+  naar: inhouden-reisdocument
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  vindplaats: art. 35-39
+- soort: associatie (gericht)
+  naar: paspoortwet
+  naam: verwijst naar
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  vindplaats: art. 1, 5, 5a, 14
+synoniemen: []
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Opnemen als bron en beleidskader: grondslag van de dienst Identiteitskaart en, voor de identiteitskaart, van de aanvraag, uitreiking, vermissing en inhouding.'
+  gevolg: opnemen
+  redenen:
+  - 'grondslag regelgeving: altijd voorleggen'
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'grondslag regelgeving: altijd voorleggen'
+  bronnen:
+  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  herkomst: wet
+  pad: motivatie/beleidskaders/wet-op-de-nederlandse-identiteitskaart.md

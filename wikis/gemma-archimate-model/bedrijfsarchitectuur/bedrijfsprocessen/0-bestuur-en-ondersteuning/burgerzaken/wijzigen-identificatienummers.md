@@ -22,6 +22,8 @@ bronnen:
 - 2026-rvig-hup-wijzigen-identificatienummers
 - 2026-rvig-hup-wijzigen-bsn
 - 2026-rvig-hup-wijzigen-administratienummer
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
 ---
 
 # Wijzigen identificatienummers
@@ -58,6 +60,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 - **Procesniveau**: deelproces.
 - **Procesindeling naar taak, onderdeel van**: [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
 - **Kernobject**: [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md).
+- **Eindigt in gebeurtenis**: [Verval van het reisdocument](../../../gebeurtenissen/verval-van-het-reisdocument.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
@@ -90,6 +93,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Wijzigen identificatienummers | wijzigt nummer van *toegang (bijwerken)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [HUP BRP: Wijzigen bsn](../../../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-bsn.md), [HUP BRP: Wijzigen administratienummer](../../../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-administratienummer.md) (regel 19) |
+| Wijzigen identificatienummers | doet het reisdocument vervallen *triggering* | [Verval van het reisdocument](../../../gebeurtenissen/verval-van-het-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Van rechtswege vervallen reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) (Paspoortwet art. 47 lid 1 onder e; HUP Van rechtswege vervallen) |
 
 #### Inkomend
 
@@ -108,6 +112,8 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | [HUP BRP: Wijzigen identificatienummers](../../../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-identificatienummers.md) | HUP BRP: Wijzigen identificatienummers |
 | [HUP BRP: Wijzigen bsn](../../../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-bsn.md) | HUP BRP: Wijzigen bsn |
 | [HUP BRP: Wijzigen administratienummer](../../../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-administratienummer.md) | HUP BRP: Wijzigen administratienummer |
+| [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [HUP Van rechtswege vervallen reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) | HUP BRP: Van rechtswege vervallen reisdocument |
 
 ### Afstemming met GEMMA
 

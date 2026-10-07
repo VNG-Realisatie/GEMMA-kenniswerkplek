@@ -27,6 +27,8 @@ bronnen:
 - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
 - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
 - 2026-rvig-hup-wijzigen-bsn
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-paspoortbesluit-bwbr0044308
 gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
 gemma_naam: Beslisser
 gemma_type: business-role
@@ -56,6 +58,8 @@ Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burg
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
 In de bijhouding van de basisregistratie personen beslist het college: over de inschrijving, het briefadres, de uitkomst van een adresonderzoek, geheimhouding, verstrekking, correctie, verwijdering van gegevens en de wijziging van het BSN (Besluit BRP art. 24; Circulaire adresonderzoek 4.6; HUP Verstrekkingsbeperking; HUP Wijzigen BSN).
+
+Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdocument en verklaart het vervallen (Paspoortwet art. 40, 44).
 
 ## Plaats in het model
 
@@ -108,12 +112,15 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Beslisser | beslist over *toewijzing* | [Behandelen verzoek om correctie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-correctie.md) | [Utrecht BRP-gegevens opvragen of aanpassen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (Na uw aanvraag) |
 | Beslisser | beslist over *toewijzing* | [Behandelen verzoek om verwijdering van gegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-verwijdering-van-gegevens.md) | [Utrecht BRP-gegevens opvragen of aanpassen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (Na uw aanvraag) |
 | Beslisser | besluit tot *toewijzing* | [Wijzigen identificatienummers](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-identificatienummers.md) | [HUP BRP: Wijzigen bsn](../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-bsn.md) (regel 19-25) |
+| Beslisser | verstrekt of weigert *toewijzing* | [Behandelen aanvraag reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 40, 44) |
+| Beslisser | verklaart vervallen *toewijzing* | [Vervallen verklaren reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 44, 46) |
+| Beslisser | verstrekt of weigert *toewijzing* | [Behandelen aanvraag reisdocument niet-ingezetene](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md) | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 4.2) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Burgemeester](../actoren/burgemeester.md) | vervult *toewijzing* | Beslisser | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17, 21, 22a, 29, 68) |
+| [Burgemeester](../actoren/burgemeester.md) | vervult *toewijzing* | Beslisser | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68; Paspoortwet art. 40, 44) |
 | [College van B&W](../actoren/college-van-b-w.md) | vervult *toewijzing* | Beslisser | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 43, 53; Groningen art. 16, 20) |
 | [Gemeenteraad](../actoren/gemeenteraad.md) | vervult *toewijzing* | Beslisser | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (Gemeentewet art. 147; Wlb art. 38, 40) |
 
@@ -135,6 +142,8 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [NVVB Schema schriftelijke gegevensverstrekking BRP](../../bronanalyses/burgerzaken/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) | Schema verzoeken om schriftelijke gegevensverstrekking uit de BRP |
 | [Utrecht BRP-gegevens opvragen of aanpassen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) | Gemeente Utrecht: Persoonsgegevens opvragen of aanpassen |
 | [HUP BRP: Wijzigen bsn](../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-bsn.md) | HUP BRP: Wijzigen bsn |
+| [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) | Paspoortbesluit |
 
 ### Afstemming met GEMMA
 

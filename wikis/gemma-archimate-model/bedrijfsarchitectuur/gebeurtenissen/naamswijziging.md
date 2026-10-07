@@ -23,6 +23,8 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rvig-hup-vaststelling-geslachtsnaam
 - 2026-rvig-hup-wijziging-geslachtsnaam
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
 ---
 
 # Naamswijziging
@@ -56,7 +58,7 @@ Gebeurtenis. Uitkomst van de beslistabel: Gedrag, *toestandsverandering* (kern j
 
 ### Plaats in de indelingen
 
-- **Start**: [Toevoegen latere vermelding](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/toevoegen-latere-vermelding.md).
+- **Start**: [Toevoegen latere vermelding](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/toevoegen-latere-vermelding.md), [Verval van het reisdocument](verval-van-het-reisdocument.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
@@ -82,6 +84,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Naamswijziging | leidt tot *triggering* | [Toevoegen latere vermelding](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/toevoegen-latere-vermelding.md) | [Utrecht Voornaam of achternaam veranderen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen.md), [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (Utrecht inleiding; art. 20) |
+| Naamswijziging | doet het reisdocument vervallen *triggering* | [Verval van het reisdocument](verval-van-het-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Van rechtswege vervallen reisdocument](../../bronanalyses/burgerzaken/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) (Paspoortwet art. 47 lid 1 onder e; HUP Van rechtswege vervallen) |
 
 #### Inkomend
 
@@ -101,6 +104,8 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) | Burgerlijk Wetboek Boek 1 (Personen- en familierecht) |
 | [HUP BRP: Vaststelling geslachtsnaam](../../bronanalyses/burgerzaken/2026-rvig-hup-vaststelling-geslachtsnaam.md) | HUP BRP: Vaststelling geslachtsnaam |
 | [HUP BRP: Wijziging geslachtsnaam](../../bronanalyses/burgerzaken/2026-rvig-hup-wijziging-geslachtsnaam.md) | HUP BRP: Wijziging geslachtsnaam |
+| [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [HUP Van rechtswege vervallen reisdocument](../../bronanalyses/burgerzaken/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) | HUP BRP: Van rechtswege vervallen reisdocument |
 
 ### Afstemming met GEMMA
 
