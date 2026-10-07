@@ -2,7 +2,7 @@
 id: indelingen
 type: analyse
 titel: Indelingen van de bedrijfsarchitectuur
-bijgewerkt: '2026-10-07'
+bijgewerkt: '2026-10-08'
 bronnen:
 - 2026-vng-over-gemma
 - 2026-vng-gemma-2026-10-02
@@ -23,6 +23,8 @@ Hoe het model wordt ingedeeld in de hele breedte van de bedrijfsarchitectuur: we
 - **Specialisatie of aggregatie**: specialisatie koppelt aan een GEMMA-indeling (wat voor soort is het?), aggregatie aan een eigen indeling (waar hoort het bij?).
 
 ### Procesniveaus
+
+Herzien op 2026-10-08: de niveaus volgen de GEMMA-ladder (levensloopproces → bedrijfsproces → deelproces), de taak vervalt en ketens worden bedrijfsinteracties; zie [Proceshiërarchie](proceshierarchie.md). De tekst hieronder wordt bij de uitwerking bijgewerkt (`todo.md`).
 
 - **Taak**: een procescluster voor een gemeentelijke taak als geheel (*Verzorgen lijkbezorging*). Een procescluster wordt niet per geval doorlopen (regel 409, 419-420); in ArchiMate een business-process.
 - **Bedrijfsproces**: per kernobject het gedrag over de levensloop van één exemplaar, onder verantwoordelijkheid van één organisatie (*Beheren grafrechten*: van uitgifte tot verval). Dit volgt de GEMMA-definitie (regel 573).
@@ -320,3 +322,4 @@ Besluiten over de werkwijze en de criteria. Besluiten over afzonderlijke begripp
 | 2026-10-05 | Controle op de samenhang tussen de Beleidsdomeinindeling en de Functie-indeling naar domein: het domein van een product of dienst moet passen bij de GEMMA-domeinen die zijn beleidsdomein aggregeren; bij een beleidsdomein dat GEMMA niet kent een signaal als zijn producten en diensten in meer domeinen vallen. |
 | 2026-10-05 | Het model mag afwijken van de UPL-indeling (taakveld, GEMMA-domein, beleidsdomein in een GEMMA-domein), mits teruggemeld in de procesarchitectuur-terugmeldingen (`beoordelingen/procesarchitectuur-terugmeldingen.yaml`). |
 | 2026-10-07 | *Soort partij* betekent: elke gemeente heeft met de partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt. Het criterium sluit uit wat bij één of enkele gemeenten hoort (gemeente Utrecht, provincie Utrecht), niet een partij die landelijk maar één keer bestaat. Rijk, Provincie en Waterschap zijn een soort partij (de bestuurslaag als geheel); een afzonderlijk ministerie of rijksdienst (minister van BZK, IND) staat in de beschrijving van Rijk. Verduidelijkt het besluit van 2026-10-04 ("nooit een individuele organisatie"). |
+| 2026-10-08 | De procesniveaus volgen de GEMMA-ladder: levensloopproces (per kernobject, GEMMA type *Bedrijfsproces (cluster)*) → bedrijfsproces (klant-tot-klant, levert product of dienst) → deelproces (binnen één bedrijfsfunctie). De taak vervalt: boven het levensloopproces staan beleidsdomein en taakveld uit de Beleidsdomeinindeling, afgeleid uit het kernobject. Ketensamenwerking is een bedrijfsinteractie, geen procesniveau. De procesindeling naar soort werk blijft. Herziet de besluiten van 2026-10-04 over de processtructuur en over de taak in de Beleidsdomeinindeling. Zie [Proceshiërarchie](proceshierarchie.md). |
