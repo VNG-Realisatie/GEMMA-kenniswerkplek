@@ -23,6 +23,15 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein.
 - **Archi-views** per indeling en elementtype in de export, na de eerste proefimport (herziening van het besluit van 2026-10-02: geen views).
 
+## Ketenprocessen en bedrijfsprocessen (besluit 2026-10-07)
+
+Drie ketenprocessen aggregeren deelprocessen rechtstreeks, wat het kennismodel niet kent (besluit in [besluiten](analyses/besluiten-redacteur.md)): Bezorgen stoffelijk overschot (10 deelprocessen), Beheren Nederlanderschap (4) en Afgeven verklaring omtrent het gedrag (1).
+
+- **Bedrijfsprocessen ertussen**: per ketenproces bedrijfsprocessen die logische groepen deelprocessen aggregeren, liefst geen 1-op-1, bij voorkeur per uitvoerende partij. Voorstel: Behandelen aanvraag VOG wordt het bedrijfsproces van het gemeentelijke deel; Beheren Nederlanderschap krijgt één bedrijfsproces voor het gemeentelijke deel met alle vier de deelprocessen; bij Bezorgen eerst per deelproces uitzoeken wie het uitvoert. Verzorgen gemeentebegrafenis blijft direct onder het ketenproces.
+- **Criteria en beslistabel**: leg de lezing van *omvat levensloop* vast (ketenproces over de partijen heen, bedrijfsproces het deel van één partij) in de skill gemma-archimate-model-criteria en in [Beslistabel](analyses/beslistabel.md), en een ketenproces aggregeert alleen bedrijfsprocessen.
+- **Terugmeldingen**: procesarchitectuur-terugmelding 5 bijwerken (nog alleen een afwijking voor wat blijft) en als voorstel aan het GEMMA-team: bedrijfsproces is het deel van één partij binnen een ketenproces.
+- **Daarna** nieuwe export.
+
 ## Export naar Archi
 
 - **Verzoek aan het GEMMA-team**: zet bij elke release naast `export/GEMMA release.xml` (AMEFF) ook `export/GEMMA release.archimate` in de GEMMA-Archi-repository (opslagformaat van Archi, met map-id's en profielen). Daarna `wiki.yaml` → `gemma.herkomst.pad` daarop zetten; na de overgang naar coArchi 2 op `model.archimate`. Tot dan neemt de redacteur een lokaal opgeslagen `.archimate` op (skill `gemma-archimate-model-gemma-release`).
