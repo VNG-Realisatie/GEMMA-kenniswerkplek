@@ -1,0 +1,320 @@
+begrip: Beheren rijbewijzen
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Het aanvragen, afgeven en uitreiken van rijbewijzen is de taak van de burgemeester (Wegenverkeerswet 1994 art. 113, 116, 120a); gemeenten bieden het rijbewijs aan (Utrecht).
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester neemt de aanvraag in ontvangst, besluit tot afgifte en reikt het rijbewijs uit, voor ingezetenen met een adres in zijn gemeente (Wegenverkeerswet 1994 art. 116, 118a; Reglement rijbewijzen art. 27).
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: het kernobject Rijbewijs is van dit onderwerp (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per rijbewijs doorlopen, van aanvraag tot verlies van geldigheid (Wegenverkeerswet 1994 art. 113 tot en met 123).
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: 'Beslisser: de burgemeester besluit tot afgifte (Wegenverkeerswet 1994 art. 116, 118a); de Houder van het rijbewijs vraagt aan, haalt op en levert in (Reglement rijbewijzen art. 27, 33; Wegenverkeerswet 1994 art. 119 lid 2 en 4).'
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: 'Registreert en beëindigt het rijbewijs: afgifte, uitreiking, inneming en vermissing (Wegenverkeerswet 1994 art. 115, 116, 119, 120a); raadpleegt de ingeschreven persoon in de basisregistratie personen (Reglement rijbewijzen art. 33 lid 2).'
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  aanleiding:
+    waarde: ja
+    onderbouwing: De aanvraag van een rijbewijs, op afspraak aan de balie of online bij de RDW (Reglement rijbewijzen art. 27; Utrecht).
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een afgegeven en uitgereikt rijbewijs, of een geregistreerde vermissing (Wegenverkeerswet 1994 art. 116, 120a, 123 lid 1 onder h).
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk rijbewijs dat wordt aangevraagd.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Wegenverkeerswet 1994 art. 111 tot en met 123 (voorwaarden, aanvraag, afgifte, nieuw en vervangend rijbewijs, verlies van geldigheid); Reglement rijbewijzen hoofdstuk II en V.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Het proces van een kernobject; de taak Verzorgen burgerzaken groepeert het, maar het levert zelf het eindresultaat.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: ja
+    onderbouwing: 'Omvat de levensloop van het rijbewijs voor zover de gemeente handelt: aanvraag, afgifte, uitreiking, vervanging bij vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 113 tot en met 123).'
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'De gemeente voert de levensloop uit tegenover de houder: de burgemeester besluit tot afgifte (Wegenverkeerswet 1994 art. 116, 118a). De RDW produceert, vervoert en levert de rijbewijzen af, beheert het rijbewijzenregister en geeft in bij algemene maatregel van bestuur bepaalde gevallen zelf af; het CBR registreert de verklaring van geschiktheid (Reglement rijbewijzen art. 97, 105, 119; Wegenverkeerswet 1994 art. 126). Dat is invoer en productie voor de gemeente, zoals de minister bij Beheren reisdocumenten, en geen eigen deel tegenover de houder; alleen bij de omwisseling van een buitenlands rijbewijs beslist de RDW zelf (zie het deelproces en de vraag).'
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar; de deelprocessen leiden tot de gebeurtenissen.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het behandelen van aanvragen, afgeven en uitreiken van rijbewijzen en het verwerken van de vermissing ervan.
+beschrijving:
+- De burgemeester neemt de aanvraag in ontvangst en geeft het rijbewijs af, voor wie als ingezetene met een adres in zijn gemeente in de basisregistratie personen staat; het besluit tot afgifte neemt hij na de controle van de identiteit, de bescheiden en de voorwaarden (Wegenverkeerswet 1994 art. 113, 116, 118a; Reglement rijbewijzen art. 27, 33). De gemeente stelt het tarief vast bij plaatselijke verordening en betaalt de RDW een vergoeding voor de productie en aflevering (Wegenverkeerswet 1994 art. 111 lid 5, 121).
+- In de bij algemene maatregel van bestuur bepaalde gevallen geeft de RDW het rijbewijs af, onder meer bij omwisseling van een rijbewijs dat buiten Nederland is afgegeven; de burgemeester geleidt de aanvraag dan terstond door (Reglement rijbewijzen art. 28, 29, 105 lid 2). De RDW produceert de rijbewijzen en beheert het rijbewijzenregister; het CBR registreert de verklaring van geschiktheid die bij vernieuwing in bepaalde gevallen is vereist (Reglement rijbewijzen art. 35, 97, 119; Wegenverkeerswet 1994 art. 126). Beide zijn zelfstandige bestuursorganen (art. 4a, 4z) en geen eigen element.
+- 'Het proces omvat de levensloop van het rijbewijs: aanvraag, afgifte, uitreiking, vervanging en vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 119, 120, 123). De deelprocessen leveren de diensten van de UPL voor het rijbewijs (rijbewijs, rijbewijs verlengen en rijbewijs buitenlands omwisseling) en het doorgeven van vermissing. De gemeente toetst bij de aanvraag of een vereiste verklaring van geschiktheid bij het CBR is geregistreerd, als onderdeel van Behandelen aanvraag rijbewijs; de gezondheidsverklaring (UPL nr. 362) is geen eigen dienst (Reglement rijbewijzen art. 35, 45; Utrecht).'
+synoniemen:
+- naam: Rijbewijzen
+  context: dagelijks gebruik
+naamkeuze:
+- 'Infinitief met object in GEMMA-volgorde, zoals Beheren reisdocumenten: het proces omvat de hele levensloop van het rijbewijs waarbij de gemeente handelt, van aanvraag en afgifte tot vermissing. Verstrekken rijbewijs is overwogen, maar de wet kent afgifte en uitreiking als twee momenten (Wegenverkeerswet 1994 art. 116, 120a).'
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor het rijbewijs; de functie Officiële documenten verstrekking bedient het.
+kernobject: rijbewijs
+afnemer: extern
+relaties:
+- soort: toegang (registreren)
+  naar: rijbewijs
+  naam: geeft af, reikt uit en neemt in
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 115, 116, 119, 120a
+- soort: toegang (raadplegen)
+  naar: ingeschreven-persoon
+  naam: raadpleegt de basisregistratie personen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: art. 33 lid 2
+- soort: aggregatie
+  naar: behandelen-aanvraag-rijbewijs
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: WVW art. 113, 116; Reglement art. 27, 33, 35
+- soort: aggregatie
+  naar: behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: art. 28, 45, 105 lid 2, 109
+- soort: aggregatie
+  naar: uitreiken-rijbewijs
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 119 lid 2, 120a
+- soort: aggregatie
+  naar: verwerken-vermissing-rijbewijs
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  vindplaats: WVW art. 123 lid 1 onder h; Reglement art. 39; Utrecht regel 126-140
+- soort: aggregatie
+  naar: vermissing-van-het-rijbewijs
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 123 lid 1 onder h
+vragen: []
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Bedrijfsproces, geen ketenproces: de burgemeester besluit tot afgifte; RDW en CBR zijn producent en bron van invoer en geen eigen actor. De omwisseling van een buitenlands rijbewijs is een deelproces waarin de gemeente doorgeleidt.'
+  gevolg: verwerkt
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-rijbewijzen.md

@@ -36,6 +36,12 @@ Algemene maatregel van rijksbestuur die de bevoegde autoriteiten aanwijst en de 
 
 Het Besluit verkrijging en verlies Nederlanderschap (BWBR0013605) werkt de Rijkswet op het Nederlanderschap uit, onder meer art. 21. Het wijst in het Europese deel van Nederland de burgemeesters aan (art. 2) en regelt de ontvangst en behandeling van de optieverklaring (art. 7-12), het naturalisatieverzoek met het advies aan de minister (art. 31-38), de uitreiking van de bevestiging en het uittreksel met de verklaring van verbondenheid (art. 60a, 60b), het bewijs van het Nederlanderschap (art. 61) en de verklaring van afstand (art. 62-64). Gemeente, college, ambtenaar van de burgerlijke stand en IND komen er niet in voor. Een beslistermijn voor de optie noemt het besluit niet; die staat in de Rijkswet (art. 6 lid 5).
 
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Naturalisatieceremonie (UPL nr. 261), van het bewijs van Nederlanderschap (art. 61) en van de deelprocessen van het ketenproces Beheren Nederlanderschap.
+
 ## Plaats in het model
 
 ### Typering
@@ -75,6 +81,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Houden naturalisatieceremonie](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/houden-naturalisatieceremonie.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 60a, 60b) |
 | Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Behandelen verklaring van afstand](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 62-64) |
 | Besluit verkrijging en verlies Nederlanderschap | werkt uit *associatie (gericht)* | [Rijkswet op het Nederlanderschap](rijkswet-op-het-nederlanderschap.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (aanhef; art. 2) |
+| Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Bewijs van nederlanderschap](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 61; UPL nr. 62) |
 
 ## Herkomst
 

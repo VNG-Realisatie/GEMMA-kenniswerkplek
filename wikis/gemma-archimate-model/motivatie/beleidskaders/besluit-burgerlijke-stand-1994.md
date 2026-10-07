@@ -36,11 +36,21 @@ Algemene maatregel van bestuur die de ambtsuitoefening van de ambtenaar van de b
 
 Het besluit werkt titel 4 van Boek 1 BW uit. Hoofdstuk 1 regelt de ambtsuitoefening en de voorzieningen van de gemeente, het houden, afsluiten en overbrengen van de registers naar de centrale bewaarplaats, en afschriften en uittreksels (art. 1-7, 26, 30, 31). Hoofdstuk 2 legt per aktesoort de gegevens vast (art. 36-66); de elektronische aangifte van overlijden en kennisgeving van een huwelijk gaan met het burgerservicenummer (art. 67a).
 
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De UPL noemt het besluit bij geen enkel item; het is grondslag van Bijhouden burgerlijke stand en van de dienst Uittreksel burgerlijke stand (art. 24, 26), die de akte als afschrift of uittreksel verstrekt.
+
 ### Synoniemen
 
 | Synoniem | Context |
 |---|---|
 | Besluit burgerlijke stand | dagelijks gebruik |
+
+### Naamkeuze
+
+De naam is de officiële titel van het besluit (BWBR0006493), met het jaartal; Besluit burgerlijke stand is de gangbare korte vorm en blijft synoniem.
 
 ## Plaats in het model
 

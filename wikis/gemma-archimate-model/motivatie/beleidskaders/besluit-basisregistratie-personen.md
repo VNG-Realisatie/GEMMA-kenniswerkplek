@@ -36,11 +36,21 @@ Algemene maatregel van bestuur die de Wet basisregistratie personen uitwerkt, on
 
 Het Besluit BRP (BWBR0034306) regelt wie niet als ingezetene wordt ingeschreven (art. 21, 22), de ondersteuning van het adresonderzoek met de Landelijke Aanpak Adreskwaliteit (art. 28a tot en met 28g), de aangifteplicht en het verschijnen in persoon (art. 29, 30), de verstrekking aan overheidsorganen en derden (hoofdstuk 3, art. 37 tot en met 46) en de beveiliging van de gemeentelijke voorziening (art. 6).
 
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De UPL noemt het besluit bij geen enkel item, zodat het ook niet aan een UPL-dienst hangt; het is grondslag van de processen waarin het college de wet uitvoert (inschrijven, adresonderzoek, emigratie, verstrekking).
+
 ### Synoniemen
 
 | Synoniem | Context |
 |---|---|
 | Besluit BRP | dagelijks gebruik |
+
+### Naamkeuze
+
+De naam is de titel van het besluit (BWBR0034306), zoals een beleidskader heet; Besluit BRP is de afkorting in dagelijks gebruik en blijft synoniem.
 
 ## Plaats in het model
 

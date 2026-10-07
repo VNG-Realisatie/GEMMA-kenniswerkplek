@@ -420,6 +420,14 @@ relaties:
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. D 7
+- soort: toewijzing
+  naar: behandelen-aanvraag-rijbewijs
+  naam: besluit tot afgifte of weigering
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: WVW art. 116, 118a; Reglement art. 27
 onderwerpen:
 - algemeen
 - lijkbezorging
@@ -428,7 +436,7 @@ doelgroep: gemeente
 per_onderwerp:
   burgerzaken:
   - 'In de bijhouding van de basisregistratie personen beslist het college: over de inschrijving, het briefadres, de uitkomst van een adresonderzoek, geheimhouding, verstrekking, correctie, verwijdering van gegevens en de wijziging van het BSN (Besluit BRP art. 24; Circulaire adresonderzoek 4.6; HUP Verstrekkingsbeperking; HUP Wijzigen BSN).'
-  - 'Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdocument en verklaart het vervallen (Paspoortwet art. 40, 44).'
+  - 'Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdocument en verklaart het vervallen (Paspoortwet art. 40, 44). Over het rijbewijs beslist de burgemeester: hij besluit tot afgifte of weigering (Wegenverkeerswet 1994 art. 116, 118a; Reglement rijbewijzen art. 27).'
   - 'Over het Nederlanderschap beslist de burgemeester: hij bevestigt of weigert de optie en bevestigt de afstand (Rijkswet op het Nederlanderschap art. 6; Besluit verkrijging en verlies Nederlanderschap art. 2, 11, 63). Over de naturalisatie beslist de minister van Justitie en Veiligheid; de burgemeester adviseert.'
   - Bij het kiesrecht beslissen burgemeester en wethouders over de registratie van de kiesgerechtigdheid en de burgemeester over een verzoek om bij volmacht te stemmen (Kieswet art. D 1, D 7, L 11).
 status: goedgekeurd
@@ -461,6 +469,8 @@ afgeleid:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   herkomst: wet
   gemma:
     gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e

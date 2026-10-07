@@ -37,6 +37,12 @@ Rijkswet over de verkrijging, het verlies en de vaststelling van het Nederlander
 
 De Rijkswet op het Nederlanderschap (BWBR0003738) regelt de verkrijging van rechtswege (art. 3-5), door optie (art. 6) en door verlening (art. 7-13), het verlies (art. 14-16), de vaststelling door de rechtbank Den Haag (art. 17-20) en het openbare register van de minister van Justitie en Veiligheid (art. 22). Ze noemt de gemeente niet: de autoriteiten die verzoeken en verklaringen in ontvangst nemen, worden bij algemene maatregel van rijksbestuur aangewezen (art. 21); het Besluit verkrijging en verlies Nederlanderschap wijst daarvoor de burgemeester aan.
 
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de diensten Naturalisatieoptie, Naturalisatieverzoek en Verklaring van afstand Nederlandse nationaliteit (UPL nr. 262, 263, 436), gerealiseerd door deelprocessen van het ketenproces Beheren Nederlanderschap.
+
 ## Plaats in het model
 
 ### Typering

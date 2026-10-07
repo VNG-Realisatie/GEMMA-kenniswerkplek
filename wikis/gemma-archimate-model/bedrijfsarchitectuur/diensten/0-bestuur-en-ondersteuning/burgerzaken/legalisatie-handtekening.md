@@ -36,7 +36,7 @@ Het bewijzen dat een handtekening echt is, doordat de gemeente haar vergelijkt m
 
 ### Beschrijving
 
-De aanvrager tekent bij voorkeur aan de balie met een ambtenaar erbij en kan niemand anders sturen; het tarief is per handtekening (Utrecht Handtekening legaliseren). Grondslag is art. 23 Wet griffierechten burgerlijke zaken (UPL nr. 226).
+De aanvrager tekent bij voorkeur aan de balie met een ambtenaar erbij en kan niemand anders sturen; het tarief is € 21,20 per handtekening in 2026 ([2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md)). De UPL noemt art. 23 Wet griffierechten burgerlijke zaken als grondslag ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), nr. 226), maar dat artikel stelt alleen het griffierecht vast (€ 25 per handtekening, meerdere handtekeningen van dezelfde persoon op hetzelfde stuk tellen als één; [2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899](../../../../bronanalyses/burgerzaken/2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899.md), art. 23 lid 2) en geeft de gemeente geen taak of bevoegdheid: de wet is bron voor het tarief en geen beleidskader (besluit redacteur 2026-10-07). De bevoegdheidsgrondslag van de gemeentelijke legalisatie is in de wet niet gevonden (verificatie nodig): ook de Wet regels inzake heffing van rechten voor legalisatie van handtekeningen (BWBR0005125) en de O. en W.-regeling legalisatie handtekeningen (BWBR0005229) regelen alleen rechten voor het Rijk, en gemeenten mandateren het afgeven van legalisatieverklaringen aan ambtenaren zonder wetsartikel te noemen.
 
 ### Synoniemen
 
@@ -100,3 +100,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-07: De Wet griffierechten burgerlijke zaken is bron en geen beleidskader: art. 23 bevat alleen het tarief. De bevoegdheidsgrondslag van de gemeentelijke legalisatie is niet gevonden (verificatie nodig). Regel: een wet die de UPL als grondslag noemt, wordt als bron opgehaald en dan beoordeeld of ze een beleidskader wordt.

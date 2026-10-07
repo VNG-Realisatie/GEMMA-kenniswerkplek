@@ -1,0 +1,242 @@
+begrip: Vermissing van het rijbewijs
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Wetsbegrip aangifte van vermissing van het rijbewijs (Wegenverkeerswet 1994 art. 123 lid 1 onder h); gangbaar: rijbewijs kwijt of gestolen (Utrecht).'
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De houder geeft de vermissing door aan de RDW of aan de balie van de gemeente, die haar opneemt (Utrecht).
+    bronnen:
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: de toestand van het rijbewijs verandert (regel Thuishoren).'
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gebeurt.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: ja
+    onderbouwing: Het moment waarop de houder niet meer over zijn rijbewijs beschikt, doordat het kwijt of gestolen is; door de aangifte vervalt de geldigheid (Wegenverkeerswet 1994 art. 123 lid 1 onder h).
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk rijbewijs dat kwijtraakt of wordt gestolen.
+    bronnen:
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: ja
+    onderbouwing: 'Start Verwerken vermissing rijbewijs: de houder geeft de vermissing zo snel mogelijk door, om misbruik te voorkomen (Utrecht).'
+    bronnen:
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het moment waarop de houder niet meer over zijn rijbewijs beschikt, doordat het kwijt of gestolen is.
+beschrijving:
+- Diefstal of beroving is een vorm van vermissing; bij diefstal of beroving adviseert Utrecht ook aangifte bij de politie te doen, wat niet verplicht is maar nodig kan zijn voor de verzekering (Utrecht). Een rijbewijs dat bij identiteitsfraude of een datalek is betrokken, laat men op dezelfde manier ongeldig maken, ook als het niet kwijt is (Utrecht).
+synoniemen:
+- naam: Aangifte van vermissing van het rijbewijs
+  context: wet
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: triggering
+  naar: verwerken-vermissing-rijbewijs
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  vindplaats: WVW art. 123 lid 1 onder h; Utrecht regel 126-140
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  herkomst: wet
+  pad: bedrijfsarchitectuur/gebeurtenissen/vermissing-van-het-rijbewijs.md

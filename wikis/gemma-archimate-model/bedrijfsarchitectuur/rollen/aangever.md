@@ -12,8 +12,6 @@ match:
   gemma: geen
 data_object: nee
 doelgroep: inwoners en ondernemers
-synoniemen:
-- Doorgever (beleid)
 bronnen:
 - 2026-rvig-hup-verblijfplaats
 - 2026-rijk-burgerlijk-wetboek-boek-1
@@ -39,11 +37,9 @@ Een meerderjarige doet zelf aangifte van verblijf en adres, adreswijziging en ve
 
 Bij de burgerlijke stand doet de aangever aangifte bij de ambtenaar van de burgerlijke stand: van een geboorte (de vader of moeder, of wie bij de bevalling aanwezig was; BW 1 art. 19e), van een overlijden (wie het uit eigen wetenschap weet, of een gemachtigde zoals de uitvaartondernemer; art. 19h), van een levenloos geboren kind (art. 19i) en van de wijziging van de vermelding van het geslacht (art. 28). De ambtenaar stelt de identiteit van de aangever vast (art. 19e lid 8).
 
-### Synoniemen
+### Naamkeuze
 
-| Synoniem | Context |
-|---|---|
-| Doorgever | beleid |
+Aangever is de wetsterm (BW 1 art. 19e, 19h, 19i, 28) en ook de term van de HUP (Verplichte of bevoegde aangever) en van Utrecht (Geboorteaangifte doen); een afwijkende gangbare term staat in geen bron. Doorgever, dat een eerdere versie als synoniem met context beleid noemde, komt als zelfstandig naamwoord in geen enkele bron voor (Utrecht noemt alleen het werkwoord doorgeven bij Verhuizing doorgeven en Emigratie doorgeven) en is vervallen.
 
 ## Plaats in het model
 

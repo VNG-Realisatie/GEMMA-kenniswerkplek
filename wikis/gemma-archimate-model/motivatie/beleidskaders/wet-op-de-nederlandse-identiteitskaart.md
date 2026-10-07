@@ -34,6 +34,12 @@ Wet over de Nederlandse identiteitskaart, de aanspraak erop en de aanvraag, vers
 
 De Wet op de Nederlandse identiteitskaart (BWBR0052951, sinds 2026-10-01) regelt de identiteitskaart buiten de Paspoortwet: de gegevens op de kaart en het publiek identificatiemiddel (art. 3, 4), de aanspraak (art. 11), de aanvraag, de verstrekking en de uitreiking door de burgemeester voor ingezetenen van zijn gemeente (art. 15-27), de weigering (art. 13, 28), het verval van rechtswege (art. 30), de inhouding en inlevering (art. 35-39) en de rechten die de gemeente als gemeentelijke belasting heft (art. 9). Een vervallenverklaring door de burgemeester kent de wet niet. Voor de registers van de minister verwijst ze naar de Paspoortwet (art. 5, 5a, 14).
 
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de dienst Identiteitskaart (UPL nr. 186, waar de UPL nog art. 16a Paspoortwet noemt; procesarchitectuur-terugmelding 9) en van de deelprocessen voor de identiteitskaart.
+
 ## Plaats in het model
 
 ### Typering

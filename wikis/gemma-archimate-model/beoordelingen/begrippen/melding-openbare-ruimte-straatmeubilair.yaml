@@ -1,0 +1,206 @@
+begrip: Melding openbare ruimte straatmeubilair
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Product in de UPL (nr. 245), onder Iv3-taakveld 0.2.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente biedt het product aan (UPL).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een eigen product van de UPL.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  betekenis_in_onderwerp:
+    waarde: nee
+    onderbouwing: 'Hoort niet bij Burgerzaken: het gaat om een melding over de openbare ruimte (UPL-domein Fysieke leefomgeving, zonder grondslag), geen taak uit de BRP, de burgerlijke stand, de reisdocumenten, het kiesrecht of het Nederlanderschap. Beoordelen in een later onderwerp openbare ruimte, een onderwerp dat nog niet bestaat.'
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat de gemeente aanbiedt.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: 'Niet beoordeeld: verwijzing naar een later onderwerp.'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  generiek:
+    waarde: nee
+    onderbouwing: 'Niet beoordeeld: verwijzing naar een later onderwerp.'
+toelichting: 'Verwijzing: UPL-product nr. 245 (zonder grondslag) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): het gaat om een melding over de openbare ruimte (UPL-domein Fysieke leefomgeving, zonder grondslag), geen taak uit de BRP, de burgerlijke stand, de reisdocumenten, het kiesrecht of het Nederlanderschap. Het product krijgt zijn pagina in een later onderwerp openbare ruimte.'
+afgeleid:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    data_object: nee
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel

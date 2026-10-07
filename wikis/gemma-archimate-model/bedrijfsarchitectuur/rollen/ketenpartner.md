@@ -19,6 +19,8 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+- 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+- 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
 gemma_id: id-e03a0402-1890-4a21-8143-c44a8ba53ea4
 gemma_naam: Ketenpartner
 gemma_type: business-role
@@ -53,7 +55,7 @@ De arts is als behandelende arts ketenpartner in Bezorgen stoffelijk overschot: 
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-Het Rijk is ketenpartner in Beheren Nederlanderschap via de minister van Justitie en Veiligheid, in de praktijk de IND: hij ontvangt het naturalisatieverzoek met het advies van de burgemeester, beoordeelt het en beslist; de Koning verleent het Nederlanderschap op zijn voordracht, en hij adviseert bij sommige opties en kan het Nederlanderschap intrekken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Rijkswet op het Nederlanderschap art. 6 lid 3, 7, 15; Utrecht). Bijhouden persoonsgegevens en Beheren reisdocumenten zijn geen ketenproces: de minister van BZK voert daar tegenover de burger geen eigen deel uit.
+Het Rijk is ketenpartner in Beheren Nederlanderschap via de minister van Justitie en Veiligheid, in de praktijk de IND: hij ontvangt het naturalisatieverzoek met het advies van de burgemeester, beoordeelt het en beslist; de Koning verleent het Nederlanderschap op zijn voordracht, en hij adviseert bij sommige opties en kan het Nederlanderschap intrekken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Rijkswet op het Nederlanderschap art. 6 lid 3, 7, 15; Utrecht). Het Rijk is ook ketenpartner in Afgeven verklaring omtrent het gedrag via de minister van Justitie en Veiligheid, in de praktijk Justis: de gemeente ontvangt, controleert en zendt door, de minister onderzoekt het gedrag en beslist (Wet justitiële en strafvorderlijke gegevens art. 30, 36, 37; Utrecht). Bijhouden persoonsgegevens, Beheren reisdocumenten en Beheren rijbewijzen zijn geen ketenproces: de minister van BZK voert daar tegenover de burger geen eigen deel uit, en de RDW en het CBR leveren productie, register en verklaring van geschiktheid als invoer terwijl de burgemeester besluit (Wegenverkeerswet 1994 art. 116, 118a; Reglement rijbewijzen art. 97, 105, 119).
 
 ## Plaats in het model
 
@@ -89,6 +91,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Ketenpartner | stemt in met vervroegen bij *toewijzing* | [Stellen andere termijn](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17 lid 1) |
 | Ketenpartner | schouwt als behandelende arts *toewijzing* | [Schouwen stoffelijk overschot](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 7 lid 1) |
 | Ketenpartner | beoordeelt en beslist over de naturalisatie *toewijzing* | [Beheren Nederlanderschap](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-nederlanderschap.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [Utrecht Nederlander worden](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.md) (Besluit art. 37, 38; Utrecht) |
+| Ketenpartner | onderzoekt het gedrag en beslist over de afgifte *toewijzing* | [Afgeven verklaring omtrent het gedrag](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/afgeven-verklaring-omtrent-het-gedrag.md) | [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [Utrecht VOG aanvragen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) (art. 30, 36, 37; Utrecht regel 59) |
 
 #### Inkomend
 
@@ -96,7 +99,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 |---|---|---|---|
 | [Arts](../actoren/arts.md) | vervult als behandelende arts *toewijzing* | Ketenpartner | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 7, 10a, 12) |
 | [Officier van justitie](../actoren/officier-van-justitie.md) | vervult *toewijzing* | Ketenpartner | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10, 12, 17) |
-| [Rijk](../actoren/rijk.md) | vervult *toewijzing* | Ketenpartner | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 37, 38) |
+| [Rijk](../actoren/rijk.md) | vervult *toewijzing* | Ketenpartner | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) (art. 37, 38; Wjsg art. 30, 37) |
 
 ## Herkomst
 
@@ -108,6 +111,8 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
 | [Utrecht Nederlander worden](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.md) | Gemeente Utrecht: Nederlander worden door naturalisatie of optie |
+| [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) | Wet justitiële en strafvorderlijke gegevens |
+| [Utrecht VOG aanvragen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) | Gemeente Utrecht: Verklaring omtrent het gedrag (VOG) aanvragen |
 
 ### Afstemming met GEMMA
 

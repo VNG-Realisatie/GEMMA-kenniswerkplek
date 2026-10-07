@@ -15,7 +15,7 @@ Bron: [tekst](../../../../sources/raw/2026-utrecht-burgerzaken.md) · [origineel
 
 ## Samenvatting
 
-Overzichtspagina van Burgerzaken van de gemeente Utrecht. De pagina bevat geen definities, alleen de indeling van het productaanbod in acht groepen, de openingstijden (alleen op afspraak) en twee adressen (Stadskantoor en Wijkservicecentrum Vleuten - De Meern). De groepen en producten geven de gangbare gemeentelijke namen voor het onderwerp en vormen de lijst van producten van deze gemeente: Paspoort en rijbewijs, Geboorte en overlijden, Trouwen en scheiden, Naam en geslacht, Uittreksels en aktes, Persoonsgegevens, Verhuizen, In Nederland komen wonen. Rijbewijs, gezondheidsverklaring en medische keuring voor rijbewijs, verklaring omtrent het gedrag en garantstelling en particuliere logiesverstrekking vallen buiten de afbakening (garantstelling en logiesverstrekking staat wel in de bronnenlijst van het onderwerp). Begraafplaatsen hoort bij Lijkbezorging. De pagina bevat ook twee uitgelichte producten: Buitenlandse akte inschrijven en Melden vermist paspoort.
+Overzichtspagina van Burgerzaken van de gemeente Utrecht. De pagina bevat geen definities, alleen de indeling van het productaanbod in acht groepen, de openingstijden (alleen op afspraak) en twee adressen (Stadskantoor en Wijkservicecentrum Vleuten - De Meern). De groepen en producten geven de gangbare gemeentelijke namen voor het onderwerp en vormen de lijst van producten van deze gemeente: Paspoort en rijbewijs, Geboorte en overlijden, Trouwen en scheiden, Naam en geslacht, Uittreksels en aktes, Persoonsgegevens, Verhuizen, In Nederland komen wonen. Rijbewijs, rijbewijs buitenland, gezondheidsverklaring en medische keuring voor rijbewijs en verklaring omtrent het gedrag vallen sinds het besluit van 2026-10-07 binnen de afbakening (zesde plak); elk heeft een eigen bronanalyse. Garantstelling en particuliere logiesverstrekking staat in de bronnenlijst van het onderwerp. Begraafplaatsen hoort bij Lijkbezorging. De pagina bevat ook twee uitgelichte producten: Buitenlandse akte inschrijven en Melden vermist paspoort.
 
 ## Kernbegrippen
 
@@ -23,6 +23,9 @@ Overzichtspagina van Burgerzaken van de gemeente Utrecht. De pagina bevat geen d
 |---|---|---|---|
 | Paspoort of ID-kaart | menu-item onder Paspoort en rijbewijs | — | regel 29 |
 | Paspoort of ID-kaart kwijt | menu-item onder Paspoort en rijbewijs; uitgelicht als Melden vermist paspoort | Melden vermist paspoort | regels 31 en 174 |
+| Rijbewijs | menu-item onder Paspoort en rijbewijs | Rijbewijs aanvragen/verlengen | regel 33 |
+| Rijbewijs buitenland | menu-item onder Paspoort en rijbewijs | Rijbewijs buitenland omwisselen | regel 35 |
+| Gezondheidsverklaring en medische keuring voor rijbewijs | menu-item onder Paspoort en rijbewijs | — | regel 37 |
 | Gewaarmerkte kopie | menu-item onder Paspoort en rijbewijs | — | regel 39 |
 | Geboorteaangifte | menu-item onder Geboorte en overlijden | — | regel 44 |
 | Achternaam kind | menu-item onder Geboorte en overlijden en onder Naam en geslacht | — | regels 46 en 78 |
@@ -41,6 +44,7 @@ Overzichtspagina van Burgerzaken van de gemeente Utrecht. De pagina bevat geen d
 | Voornaam of achternaam veranderen | menu-item onder Naam en geslacht | — | regel 82 |
 | Geslachtsregistratie | menu-item onder Naam en geslacht | — | regel 84 |
 | Uittreksel of akte | menu-item onder Uittreksels en aktes | — | regel 89 |
+| Verklaring omtrent het gedrag | menu-item onder Uittreksels en aktes | VOG | regel 91 |
 | Verklaring van in leven zijn (attestatie de vita) | menu-item onder Uittreksels en aktes | — | regel 93 |
 | Legalisatie handtekening | menu-item onder Uittreksels en aktes | — | regel 95 |
 | Buitenlandse documenten inschrijven | menu-item onder Uittreksels en aktes; uitgelicht als Buitenlandse akte inschrijven (laat buitenlandse akte van geboorte, huwelijk of overlijden inschrijven in de BRP) | Buitenlandse akte inschrijven | regels 97 en 166 |

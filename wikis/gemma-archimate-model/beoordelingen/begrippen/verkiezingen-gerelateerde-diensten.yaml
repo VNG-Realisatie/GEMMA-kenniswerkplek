@@ -215,6 +215,8 @@ beschrijving:
 per_onderwerp:
   burgerzaken:
   - 'Van deze functie valt alleen de gemeentelijke taak voor de kiezer in dit onderwerp: ze bedient Beheren stempassen en Registreren kiesgerechtigdheid en omvat de diensten Stempas ontvangen, Kiezerspas, Volmachtbewijs verkiezingen en Stemrecht (UPL nr. 397, 208, 453, 398). De organisatie van de verkiezing zelf (kandidaatstelling, stembureaus, stemming, uitslag) valt erbuiten (besluit redacteur 2026-10-06, Afbakening Burgerzaken).'
+naamkeuze:
+- 'De naam is de GEMMA-naam, met de GEMMA-definitie (besluit redacteur 2026-10-04: bedienende functies met een exacte GEMMA-match houden de GEMMA-naam, precedent Exploiteren van begraafplaatsen en Burgerlijke stand diensten). Het signaal dat de naam een proces lijkt, is hier een vals alarm: Verkiezingen is een meervoudig zelfstandig naamwoord, geen werkwoord, en de naam is een zelfstandig naamwoord voor het gebied van gedrag.'
 grondslag: bron
 gemma:
   id: id-78bbc144-8a22-43a4-8233-c4cfaf7b73c2

@@ -40,6 +40,12 @@ Titel 4 regelt de burgerlijke stand: de ambtenaar, de registers, de akten, de la
 
 Andere organen beslissen per geval: de rechtbank over voornamen, adoptie, echtscheiding en verbetering van akten, de Koning over de geslachtsnaam, het openbaar ministerie over stuiting; de gemeente schrijft hun uitspraken en besluiten in (BW 1 art. 4, 7, 20, 24, 80a).
 
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De items van de burgerlijke stand zijn diensten (UPL nr. 5, 23, 28, 61, 118, 122, 129, 136 tot en met 138, 156 tot en met 159, 184, 185, 258, 315, 316, 414, 460), elk gerealiseerd door een deelproces van Bijhouden burgerlijke stand; het boek is grondslag van die diensten en van het proces zelf.
+
 ### Synoniemen
 
 | Synoniem | Context |
@@ -102,6 +108,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Burgerlijk Wetboek Boek 1 | is grondslag voor *associatie (gericht)* | [Echtscheiding inschrijving](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/echtscheiding-inschrijving.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 122, art. 163) |
 | Burgerlijk Wetboek Boek 1 | is grondslag voor *associatie (gericht)* | [Uittreksel burgerlijke stand](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/uittreksel-burgerlijke-stand.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 23, art. 23b) |
 | Burgerlijk Wetboek Boek 1 | is grondslag voor *associatie (gericht)* | [Bewijs van in leven zijn](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-in-leven-zijn.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 61, art. 19k) |
+| Burgerlijk Wetboek Boek 1 | is grondslag voor *associatie (gericht)* | [Verklaring van huwelijksbevoegdheid](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-huwelijksbevoegdheid.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 437, art. 49a) |
 
 #### Inkomend
 

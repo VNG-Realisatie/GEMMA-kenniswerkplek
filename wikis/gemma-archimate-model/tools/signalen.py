@@ -58,10 +58,12 @@ def per_begrip(bid: str, data: dict, uitkomst: dict, onderwerpnamen: list[str], 
     if paginatype not in ("bedrijfsproces", "dienst") and contexten & {"beleid", "dagelijks gebruik"} and "wet" not in contexten:
         w.append(f"{bid}: een gangbare term staat als synoniem en geen wetsterm: is de naam de wetsterm? De naam komt uit "
                  "de gangbare taal (regel Bronvoorrang)")
-    synoniemen = {s["naam"].strip().lower(): s["context"].lower() for s in data.get("synoniemen", [])}
+    synoniemen: dict[str, set[str]] = {}
+    for s in data.get("synoniemen", []):  # dezelfde naam mag in meer contexten staan (GGM en GEMMA)
+        synoniemen.setdefault(s["naam"].strip().lower(), set()).add(s["context"].lower())
     for veld, context in (("ggm", "ggm_entiteit"), ("gemma", "gemma_naam")):
         modelnaam = str((afgeleid.get(veld) or {}).get(context) or "").strip()
-        if modelnaam and modelnaam.lower() != naam.lower() and synoniemen.get(modelnaam.lower()) != veld:
+        if modelnaam and modelnaam.lower() != naam.lower() and veld not in synoniemen.get(modelnaam.lower(), set()):
             w.append(f"{bid}: de {veld.upper()}-naam '{modelnaam}' wijkt af van de naam: neem haar op in synoniemen met "
                      f"context '{veld.upper()}' (regel Match op betekenis)")
     if onderwerpnamen:

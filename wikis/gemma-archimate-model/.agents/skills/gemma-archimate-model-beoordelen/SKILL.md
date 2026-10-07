@@ -23,6 +23,7 @@ Eerst `analyses/besluiten-redacteur.md` (wat al beslist is, vraag je niet opnieu
 - Alle kernbegrippen uit de bronanalyses van het onderwerp, plus wat al als beoordeling bestaat met dit onderwerp in `onderwerpen`.
 - De GGM-entiteiten van de betrokken beleidsdomeinen. Sla nooit een begrip over omdat het GGM er al een entiteit voor heeft: deze stap toetst ook het GGM.
 - Kijk per partij ook naar kanalen, beleidskaders en samenwerkingen; die typen bestaan sinds 2026-10-01.
+- Een wet die de UPL noemt als grondslag van een UPL-product haal je op als bron (besluit redacteur 2026-10-07). Daarna beoordeel je of ze een beleidskader wordt: alleen als ze de gemeente een taak of bevoegdheid geeft. Een wet die alleen een tarief of een regel buiten de gemeentelijke taak bevat (Wet griffierechten burgerlijke zaken, art. 23), blijft bron zonder beleidskader; zoek dan de bevoegdheidsgrondslag.
 
 ## 3. Per begrip, vóór de kenmerken
 

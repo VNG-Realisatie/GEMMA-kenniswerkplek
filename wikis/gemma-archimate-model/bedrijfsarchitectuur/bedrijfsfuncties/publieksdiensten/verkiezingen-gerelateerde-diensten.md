@@ -49,6 +49,10 @@ GEMMA noemt als voorbeeld het inrichten van stemlokalen en het verstrekken van s
 
 Van deze functie valt alleen de gemeentelijke taak voor de kiezer in dit onderwerp: ze bedient Beheren stempassen en Registreren kiesgerechtigdheid en omvat de diensten Stempas ontvangen, Kiezerspas, Volmachtbewijs verkiezingen en Stemrecht (UPL nr. 397, 208, 453, 398). De organisatie van de verkiezing zelf (kandidaatstelling, stembureaus, stemming, uitslag) valt erbuiten (besluit redacteur 2026-10-06, Afbakening Burgerzaken).
 
+### Naamkeuze
+
+De naam is de GEMMA-naam, met de GEMMA-definitie (besluit redacteur 2026-10-04: bedienende functies met een exacte GEMMA-match houden de GEMMA-naam, precedent Exploiteren van begraafplaatsen en Burgerlijke stand diensten). Het signaal dat de naam een proces lijkt, is hier een vals alarm: Verkiezingen is een meervoudig zelfstandig naamwoord, geen werkwoord, en de naam is een zelfstandig naamwoord voor het gebied van gedrag.
+
 ## Plaats in het model
 
 ### Typering

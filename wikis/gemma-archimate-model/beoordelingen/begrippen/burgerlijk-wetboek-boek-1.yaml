@@ -210,6 +210,9 @@ synoniemen:
   context: dagelijks gebruik
 - naam: Personen- en familierecht
   context: wet
+per_onderwerp:
+  burgerzaken:
+  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De items van de burgerlijke stand zijn diensten (UPL nr. 5, 23, 28, 61, 118, 122, 129, 136 tot en met 138, 156 tot en met 159, 184, 185, 258, 315, 316, 414, 460), elk gerealiseerd door een deelproces van Bijhouden burgerlijke stand; het boek is grondslag van die diensten en van het proces zelf.'
 grondslag: regelgeving
 grondslag_toelichting:
 - De wet zelf (BWBR0002656), zoals de UPL haar als grondslag noemt en het Besluit burgerlijke stand haar uitwerkt (BW 1 titel 4).
@@ -393,6 +396,14 @@ relaties:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 61, art. 19k
+- soort: associatie (gericht)
+  naar: verklaring-van-huwelijksbevoegdheid
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 437, art. 49a
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 besluiten:

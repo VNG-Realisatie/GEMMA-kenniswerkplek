@@ -73,8 +73,10 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Besluit verkrijging en verlies Nederlanderschap](../../../../motivatie/beleidskaders/besluit-verkrijging-en-verlies-nederlanderschap.md) | is grondslag voor *associatie (gericht)* | Bewijs van nederlanderschap | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 61; UPL nr. 62) |
 | [Nederlanderschap diensten](../../../bedrijfsfuncties/publieksdiensten/nederlanderschap-diensten.md) | omvat *aggregatie* | Bewijs van nederlanderschap | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 62 (GEMMA-domein Publieksdiensten)) |
 | [Verstrekken persoonsgegevens](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-persoonsgegevens.md) | realiseert *realisatie* | Bewijs van nederlanderschap | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (UPL nr. 62; Besluit art. 61) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Bewijs van nederlanderschap | [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 62, art. 2.55) |
 
 ## Herkomst
 

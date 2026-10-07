@@ -26,8 +26,10 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Wordt in geen ander onderwerp beoordeeld; wat het in de lijkbezorging start, staat onder per_onderwerp.
+    onderbouwing: Het overlijden verandert de toestand van de persoon, de ingeschreven persoon van Bijhouden persoonsgegevens (opschorting van de persoonslijst), en leidt tot de akte van overlijden in Bijhouden burgerlijke stand; Lijkbezorging gebruikt de gebeurtenis voor het stoffelijk overschot dat daarbij ontstaat en houdt haar tekst per onderwerp (regel Thuishoren; besluit redacteur 2026-10-07).
     bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rvig-hup-overlijden-nederland
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gedrag:
@@ -291,6 +293,7 @@ afgeleid:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-overlijden-nederland
   - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument

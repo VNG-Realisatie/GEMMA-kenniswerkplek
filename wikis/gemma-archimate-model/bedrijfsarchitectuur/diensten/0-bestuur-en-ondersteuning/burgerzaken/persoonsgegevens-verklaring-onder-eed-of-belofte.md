@@ -75,6 +75,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 |---|---|---|---|
 | [Bevolkingsadministratie bijhouding](../../../bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md) | omvat *aggregatie* | Persoonsgegevens verklaring onder eed of belofte | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 335 (GEMMA-domein Publieksdiensten)) |
 | [Inschrijven ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md) | realiseert *realisatie* | Persoonsgegevens verklaring onder eed of belofte | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [HUP Immigratie](../../../../bronanalyses/burgerzaken/2026-rvig-hup-immigratie.md) (UPL nr. 335; HUP Immigratie categorie 04) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Persoonsgegevens verklaring onder eed of belofte | [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 335, art. 2.8) |
 
 ## Herkomst
 

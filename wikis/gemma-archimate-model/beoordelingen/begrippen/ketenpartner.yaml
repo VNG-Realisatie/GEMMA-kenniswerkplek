@@ -206,7 +206,7 @@ per_onderwerp:
   - 'De officier van justitie is ketenpartner in Bezorgen stoffelijk overschot: hij ontvangt bij een niet-natuurlijke dood het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (Wet op de lijkbezorging art. 10, 12, 17).'
   - 'De arts is als behandelende arts ketenpartner in Bezorgen stoffelijk overschot: hij schouwt het stoffelijk overschot en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).'
   burgerzaken:
-  - 'Het Rijk is ketenpartner in Beheren Nederlanderschap via de minister van Justitie en Veiligheid, in de praktijk de IND: hij ontvangt het naturalisatieverzoek met het advies van de burgemeester, beoordeelt het en beslist; de Koning verleent het Nederlanderschap op zijn voordracht, en hij adviseert bij sommige opties en kan het Nederlanderschap intrekken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Rijkswet op het Nederlanderschap art. 6 lid 3, 7, 15; Utrecht). Bijhouden persoonsgegevens en Beheren reisdocumenten zijn geen ketenproces: de minister van BZK voert daar tegenover de burger geen eigen deel uit.'
+  - 'Het Rijk is ketenpartner in Beheren Nederlanderschap via de minister van Justitie en Veiligheid, in de praktijk de IND: hij ontvangt het naturalisatieverzoek met het advies van de burgemeester, beoordeelt het en beslist; de Koning verleent het Nederlanderschap op zijn voordracht, en hij adviseert bij sommige opties en kan het Nederlanderschap intrekken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Rijkswet op het Nederlanderschap art. 6 lid 3, 7, 15; Utrecht). Het Rijk is ook ketenpartner in Afgeven verklaring omtrent het gedrag via de minister van Justitie en Veiligheid, in de praktijk Justis: de gemeente ontvangt, controleert en zendt door, de minister onderzoekt het gedrag en beslist (Wet justitiële en strafvorderlijke gegevens art. 30, 36, 37; Utrecht). Bijhouden persoonsgegevens, Beheren reisdocumenten en Beheren rijbewijzen zijn geen ketenproces: de minister van BZK voert daar tegenover de burger geen eigen deel uit, en de RDW en het CBR leveren productie, register en verklaring van geschiktheid als invoer terwijl de burgemeester besluit (Wegenverkeerswet 1994 art. 116, 118a; Reglement rijbewijzen art. 97, 105, 119).'
 doelgroep: ketenpartners
 grondslag: bron
 gemma:
@@ -243,6 +243,14 @@ relaties:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   vindplaats: Besluit art. 37, 38; Utrecht
+- soort: toewijzing
+  naar: afgeven-verklaring-omtrent-het-gedrag
+  naam: onderzoekt het gedrag en beslist over de afgifte
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  vindplaats: art. 30, 36, 37; Utrecht regel 59
 beschrijving:
 - Een ketenpartner is een andere organisatie die een eigen deel van een ketenproces uitvoert, vanuit een eigen wettelijke taak, en niet als klant of alleen als adviseur. GEMMA kent de rol Ketenpartner in de procesarchitectuur en de doelgroep Ketenpartners.
 besluiten:
@@ -272,6 +280,8 @@ afgeleid:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   herkomst: wet
   gemma:
     gemma_id: id-e03a0402-1890-4a21-8143-c44a8ba53ea4

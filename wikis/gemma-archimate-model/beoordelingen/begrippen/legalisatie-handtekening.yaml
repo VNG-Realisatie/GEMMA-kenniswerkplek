@@ -213,7 +213,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het bewijzen dat een handtekening echt is, doordat de gemeente haar vergelijkt met de handtekening op het identiteitsbewijs.
 beschrijving:
-- De aanvrager tekent bij voorkeur aan de balie met een ambtenaar erbij en kan niemand anders sturen; het tarief is per handtekening (Utrecht Handtekening legaliseren). Grondslag is art. 23 Wet griffierechten burgerlijke zaken (UPL nr. 226).
+- 'De aanvrager tekent bij voorkeur aan de balie met een ambtenaar erbij en kan niemand anders sturen; het tarief is € 21,20 per handtekening in 2026 (2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is). De UPL noemt art. 23 Wet griffierechten burgerlijke zaken als grondslag (2025-vng-upl-producten-en-diensten-extern, nr. 226), maar dat artikel stelt alleen het griffierecht vast (€ 25 per handtekening, meerdere handtekeningen van dezelfde persoon op hetzelfde stuk tellen als één; 2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899, art. 23 lid 2) en geeft de gemeente geen taak of bevoegdheid: de wet is bron voor het tarief en geen beleidskader (besluit redacteur 2026-10-07). De bevoegdheidsgrondslag van de gemeentelijke legalisatie is in de wet niet gevonden (verificatie nodig): ook de Wet regels inzake heffing van rechten voor legalisatie van handtekeningen (BWBR0005125) en de O. en W.-regeling legalisatie handtekeningen (BWBR0005229) regelen alleen rechten voor het Rijk, en gemeenten mandateren het afgeven van legalisatieverklaringen aan ambtenaren zonder wetsartikel te noemen.'
 synoniemen:
 - naam: Handtekening legaliseren
   context: beleid
@@ -228,6 +228,11 @@ domein: Publieksdiensten
 specialisaties:
 - naam: Garantstelling en particuliere logiesverstrekking
   omschrijving: 'De gemeente legaliseert de handtekening van de gastheer op het formulier bewijs garantstelling en/of particuliere logiesverstrekking, dat de gast gebruikt voor een visumaanvraag; het formulier is een half jaar geldig (Utrecht Garantstelling). Geen eigen pagina: een legalisatie met een ander formulier, die de UPL niet apart noemt onder 0.2.'
+vragen: []
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'De Wet griffierechten burgerlijke zaken is bron en geen beleidskader: art. 23 bevat alleen het tarief. De bevoegdheidsgrondslag van de gemeentelijke legalisatie is niet gevonden (verificatie nodig). Regel: een wet die de UPL als grondslag noemt, wordt als bron opgehaald en dan beoordeeld of ze een beleidskader wordt.'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:

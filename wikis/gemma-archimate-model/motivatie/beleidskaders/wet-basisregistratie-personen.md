@@ -40,11 +40,21 @@ Wet die de basisregistratie personen regelt: de inschrijving en bijhouding van g
 
 De Wet BRP wordt uitgewerkt in het Besluit BRP, de Regeling BRP en het Logisch Ontwerp BRP (Besluit BRP; LO BRP). Het college houdt de gegevens van de ingezetenen bij; de minister van BZK de RNI en de centrale voorzieningen (HUP Achtergronden). De UPL noemt de wet als grondslag van onder meer de BRP-inschrijving, de verhuismelding, de aangifte van vertrek, het briefadres, het uittreksel en de geheimhouding (UPL).
 
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De BRP-items zijn diensten die deelprocessen van Bijhouden persoonsgegevens realiseren; de wet is daarom grondslag van die diensten en deelprocessen (UPL nr. 1, 6, 62, 85 tot en met 95, 257, 335, 369, 424) en niet van een product.
+
 ### Synoniemen
 
 | Synoniem | Context |
 |---|---|
 | Wet BRP | dagelijks gebruik |
+
+### Naamkeuze
+
+De naam is de titel van de wet (BWBR0033715), zoals een beleidskader heet (precedent Wet op de lijkbezorging); Wet BRP is de afkorting in dagelijks gebruik en blijft synoniem.
 
 ## Plaats in het model
 
@@ -70,7 +80,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde wet als geheel (BWBR0033715). [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Besluit BRP](../../bronanalyses/burgerzaken/2026-rijk-besluit-brp-bwbr0034306.md) |
 | **landelijk**: Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? | Ja, rijkswet: een formele wet. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht; de UPL en de HUP verwijzen naar de actuele tekst. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [HUP BRP Algemeen](../../bronanalyses/burgerzaken/2026-rvig-hup-algemeen.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? | Ja, art. 2.23, 2.38, 2.39, 2.43, 2.55, 2.57, 2.58, 2.59, 2.66 en 3.22: grondslag van de BRP-producten in de UPL, die de deelprocessen van Bijhouden persoonsgegevens leveren. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? | Ja, art. 2.8, 2.23, 2.25, 2.38, 2.39, 2.43, 2.55, 2.56a, 2.57, 2.58, 2.59, 2.66 en 3.22: grondslag van de BRP-items in de UPL, die de deelprocessen van Bijhouden persoonsgegevens leveren. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties
@@ -94,6 +104,9 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Wet basisregistratie personen | is grondslag voor *associatie (gericht)* | [Adoptie aangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/adoptie-aangifte.md) | [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 6, art. 2.38) |
 | Wet basisregistratie personen | is grondslag voor *associatie (gericht)* | [Naamgebruik verzoek aanduiding](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naamgebruik-verzoek-aanduiding.md) | [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 257, art. 2.25) |
 | Wet basisregistratie personen | is grondslag voor *associatie (gericht)* | [BRP-inschrijving buitenlandse akte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving-buitenlandse-akte.md) | [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 89, art. 2.38) |
+| Wet basisregistratie personen | is grondslag voor *associatie (gericht)* | [Bewijs van nederlanderschap](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md) | [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 62, art. 2.55) |
+| Wet basisregistratie personen | is grondslag voor *associatie (gericht)* | [BRP-uittreksel met gezag](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel-met-gezag.md) | [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 94, art. 2.55) |
+| Wet basisregistratie personen | is grondslag voor *associatie (gericht)* | [Persoonsgegevens verklaring onder eed of belofte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/persoonsgegevens-verklaring-onder-eed-of-belofte.md) | [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 335, art. 2.8) |
 
 #### Inkomend
 

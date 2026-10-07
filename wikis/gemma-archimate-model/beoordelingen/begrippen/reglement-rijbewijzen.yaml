@@ -1,0 +1,298 @@
+begrip: Reglement rijbewijzen
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare naam van de algemene maatregel van bestuur over rijbewijzen (BWBR0008074); de UPL noemt het als grondslag van vier producten.
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+    - 2025-vng-upl-producten-en-diensten-extern
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Geeft de burgemeester de aanvraag van een rijbewijs bij de gemeente van inschrijving, de doorgeleiding naar de Dienst Wegverkeer in bepaalde gevallen en de inneming van een buitenlands rijbewijs (art. 27, 28, 29, 109).
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van de deelprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  regeling_als_geheel:
+    waarde: ja
+    onderbouwing: Een concreet benoemde regeling als geheel (BWBR0008074).
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: ja
+    onderbouwing: Algemene maatregel van bestuur van het Rijk.
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  in_werking:
+    waarde: ja
+    onderbouwing: Geldend recht.
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  is_grondslag_voor:
+    waarde: ja
+    onderbouwing: 'Art. 26 tot en met 29 en 33 (aanvraag bij de burgemeester), 35 (vernieuwing), 39 (vermissing), 45 (omwisseling), 105 tot en met 109 (afgifte, vervangend rijbewijs, inname): grondslag van Behandelen aanvraag rijbewijs, Behandelen aanvraag omwisseling buitenlands rijbewijs, Uitreiken rijbewijs, Verwerken vermissing rijbewijs en de diensten Rijbewijs aanvragen, Rijbewijs verlengen, Rijbewijs buitenlands omwisseling (UPL nr. 360 tot en met 363; nr. 362 rijbewijs gezondheidsverklaring is een onderdeel van Rijbewijs aanvragen: de controle van de verklaring van geschiktheid).'
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+    - 2025-vng-upl-producten-en-diensten-extern
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Algemene maatregel van bestuur met de regels voor de aanvraag, afgifte en omwisseling van rijbewijzen en de verklaringen van rijvaardigheid en geschiktheid.
+beschrijving:
+- 'Het Reglement rijbewijzen (BWBR0008074) werkt de Wegenverkeerswet 1994 uit: de aanvraag bij de burgemeester van de gemeente van inschrijving (hoofdstuk II, art. 26 tot en met 45), de verklaringen van rijvaardigheid en geschiktheid die het CBR registreert (hoofdstuk III en IV, art. 97 en 100) en de afgifte (hoofdstuk V, art. 104a tot en met 121). De gezondheidsverklaring dient de aanvrager bij het CBR in (art. 100). Rijexamens, vakbekwaamheid en de registratie van gegevens vallen buiten dit onderwerp.'
+per_onderwerp:
+  burgerzaken:
+  - 'Grondslag van de deelprocessen en diensten van het rijbewijs. Het is de wet die de UPL noemt voor rijbewijs (art. 26), rijbewijs verlengen (art. 35), rijbewijs buitenlands omwisseling (art. 45) en rijbewijs gezondheidsverklaring (art. 100); bij die laatste past de grondslag niet bij een gemeentelijke taak: de gezondheidsverklaring is een onderdeel (subdienst) van Rijbewijs aanvragen (procesarchitectuur-terugmelding).'
+grondslag_toelichting:
+- De regeling zelf (2026-rijk-reglement-rijbewijzen-bwbr0008074).
+relaties:
+- soort: associatie (gericht)
+  naar: behandelen-aanvraag-rijbewijs
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: art. 26-39
+- soort: associatie (gericht)
+  naar: behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: art. 28, 45, 105, 109
+- soort: associatie (gericht)
+  naar: uitreiken-rijbewijs
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: art. 105a, 109
+- soort: associatie (gericht)
+  naar: verwerken-vermissing-rijbewijs
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: art. 39
+- soort: associatie (gericht)
+  naar: rijbewijs-aanvragen
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 26
+- soort: associatie (gericht)
+  naar: rijbewijs-verlengen
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 35
+- soort: associatie (gericht)
+  naar: rijbewijs-buitenlands-omwisseling
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 45
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: regelgeving
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
+regelgever: rijk
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Opnemen als beleidskader: grondslag van de rijbewijsdiensten (UPL 360, 361, 363) en de deelprocessen, onder meer de omwisseling van een buitenlands rijbewijs en de controle van de verklaring van geschiktheid.'
+  gevolg: opnemen
+  redenen:
+  - 'grondslag regelgeving: altijd voorleggen'
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'grondslag regelgeving: altijd voorleggen'
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  pad: motivatie/beleidskaders/reglement-rijbewijzen.md

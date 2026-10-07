@@ -35,6 +35,12 @@ Wet over het kiesrecht en de verkiezing van de vertegenwoordigende organen, waar
 
 De Kieswet (BWBR0004627) regelt wie kiesgerechtigd is (hoofdstuk B), de registratie van de kiesgerechtigdheid door burgemeester en wethouders (D), de stempas (J), de kiezerspas (K) en het stemmen bij volmacht (L), en daarnaast de kandidaatstelling, de stembureaus, de stemming en de uitslag, die buiten dit onderwerp vallen (besluit redacteur 2026-10-06, Afbakening Burgerzaken).
 
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de diensten Stempas ontvangen, Kiezerspas, Volmachtbewijs verkiezingen en Stemrecht (UPL nr. 397, 208, 453, 398) en van de processen Beheren stempassen en Registreren kiesgerechtigdheid. De UPL-items Kandidaatstelling verkiezingen, Stembiljet en Stemmen identificatieplicht (nr. 205, 395, 396) steunen ook op de Kieswet, maar vallen buiten de afbakening en zijn verwijzingen naar een later onderwerp verkiezingen.
+
 ## Plaats in het model
 
 ### Typering

@@ -212,7 +212,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het verkrijgen van een internationaal document waaruit blijkt dat iemand mag trouwen, voor een huwelijk in het buitenland.
 beschrijving:
-- 'Utrecht: € 31,10 in 2026; daarnaast kan een ongehuwdverklaring nodig zijn, een internationaal uittreksel BRP met de burgerlijke staat (BRP-uittreksel). Grondslag: de Overeenkomst van München van 5 september 1980; digitaal kanaal (UPL nr. 437).'
+- 'Utrecht: € 31,10 in 2026; daarnaast kan een ongehuwdverklaring nodig zijn, een internationaal uittreksel BRP met de burgerlijke staat (BRP-uittreksel). Grondslag: de Overeenkomst van München van 5 september 1980 (UPL nr. 437; 1980-munchen-overeenkomst-verklaring-huwelijksbevoegdheid-bwbv0003766, art. 1): elke verdragsstaat geeft zijn onderdaan die in het buitenland wil trouwen een verklaring volgens een meertalig model, zes maanden geldig en vrijgesteld van legalisatie (art. 7, 10). Het verdrag is bron en geen beleidskader (besluit redacteur 2026-10-07): de Nederlandse uitvoering staat in het Burgerlijk Wetboek boek 1 art. 49a (2026-rijk-burgerlijk-wetboek-boek-1) en het Besluit burgerlijke stand 1994, die beleidskader zijn. De ambtenaar van de burgerlijke stand van de woonplaats geeft de verklaring af, na verificatie dat naar Nederlands recht geen beletselen tegen het huwelijk bestaan (art. 49a lid 2 en 3). Digitaal kanaal (UPL nr. 437).'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
@@ -221,6 +221,11 @@ domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: bron
+vragen: []
+besluiten:
+- datum: '2026-10-07'
+  besluit: De Overeenkomst van München 1980 is bron en geen beleidskader; de Nederlandse uitvoering is BW boek 1 art. 49a. Genoemd in de beschrijving van de dienst.
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:

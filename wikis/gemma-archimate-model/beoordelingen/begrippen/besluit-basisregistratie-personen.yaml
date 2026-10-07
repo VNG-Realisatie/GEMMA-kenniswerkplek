@@ -208,6 +208,11 @@ synoniemen:
   context: dagelijks gebruik
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
+naamkeuze:
+- De naam is de titel van het besluit (BWBR0034306), zoals een beleidskader heet; Besluit BRP is de afkorting in dagelijks gebruik en blijft synoniem.
+per_onderwerp:
+  burgerzaken:
+  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De UPL noemt het besluit bij geen enkel item, zodat het ook niet aan een UPL-dienst hangt; het is grondslag van de processen waarin het college de wet uitvoert (inschrijven, adresonderzoek, emigratie, verstrekking).'
 grondslag: regelgeving
 grondslag_toelichting:
 - Het besluit zelf (2026-rijk-besluit-brp-bwbr0034306).

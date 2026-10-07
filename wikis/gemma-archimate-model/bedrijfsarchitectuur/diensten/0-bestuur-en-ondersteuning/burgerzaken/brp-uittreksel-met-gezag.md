@@ -77,6 +77,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 |---|---|---|---|
 | [Bevolkingsadministratie bijhouding](../../../bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md) | omvat *aggregatie* | BRP-uittreksel met gezag | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 94 (GEMMA-domein Publieksdiensten)) |
 | [Verstrekken persoonsgegevens](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-persoonsgegevens.md) | realiseert *realisatie* | BRP-uittreksel met gezag | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 94) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | BRP-uittreksel met gezag | [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 94, art. 2.55) |
 
 ## Herkomst
 

@@ -1,0 +1,280 @@
+begrip: Behandelen aanvraag verklaring omtrent het gedrag
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De VOG aanvragen bij de gemeente (Utrecht); de aanvraag en de doorzending zijn geregeld in de wet (Wet justitiële en strafvorderlijke gegevens art. 30).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester neemt de aanvraag in ontvangst, onderzoekt de volledigheid en de identiteit en zendt haar door aan de minister (Wet justitiële en strafvorderlijke gegevens art. 30).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een eigen gemeentelijk deel van de aanvraag, met een eigen taak en vergoeding (Wet justitiële en strafvorderlijke gegevens art. 30, 39).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Deelproces van Afgeven verklaring omtrent het gedrag in burgerzaken.
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Wordt per aanvraag van begin tot eind doorlopen.
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: De Aanvrager van de verklaring omtrent het gedrag dient de aanvraag in en betaalt (Wet justitiële en strafvorderlijke gegevens art. 33; Utrecht).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert de aanvraag voor de verklaring (Wet justitiële en strafvorderlijke gegevens art. 30, 32); toetst de inschrijving in de basisregistratie personen en de identiteit (art. 30).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  aanleiding:
+    waarde: ja
+    onderbouwing: De aanvraag, online of aan de balie op afspraak (Wet justitiële en strafvorderlijke gegevens art. 30; Utrecht).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De ontvangen, gecontroleerde en doorgezonden aanvraag (Wet justitiële en strafvorderlijke gegevens art. 30 lid 2 en 4).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elke aanvraag.
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Wet justitiële en strafvorderlijke gegevens art. 30 tot en met 33 en 39 (indiening bij de burgemeester, volledigheid en identiteit, doorzending, vergoeding).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Afgeven verklaring omtrent het gedrag: de ontvangst van de aanvraag.'
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: De beslissing over de afgifte is van de minister; de burgemeester onderzoekt alleen de volledigheid en de identiteit en zendt door (Wet justitiële en strafvorderlijke gegevens art. 30, 37).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Verklaring omtrent gedrag aanvragen (UPL nr. 434).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het in ontvangst nemen van een VOG-aanvraag, het controleren van de volledigheid en de identiteit en het doorzenden ervan naar de minister.
+beschrijving:
+- De aanvrager die als ingezetene in de gemeente staat, dient de aanvraag van een natuurlijk persoon in bij de burgemeester, online met een scan van het formulier van de werkgever of aan de balie op afspraak met dat formulier en een identiteitsbewijs, en betaalt direct (Wet justitiële en strafvorderlijke gegevens art. 30, 32, 33; Utrecht). De burgemeester onderzoekt de volledigheid van de gegevens, verschaft zich zekerheid over de identiteit en zendt de aanvraag terstond door aan de minister; de gemeente is de minister een vergoeding verschuldigd voor aanvragen die bij haar zijn ingediend (art. 30 lid 2 en 4, 39).
+- De minister van Justitie en Veiligheid, in de praktijk Justis, onderzoekt het gedrag en beslist binnen vier weken en stuurt de aanvrager bericht (art. 35 tot en met 37; Utrecht); de gemeente reikt de verklaring niet uit. Een aanvraag van een rechtspersoon, van wie niet als inwoner in de BRP staat ingeschreven, of die de werkgever rechtstreeks bij Justis doet, loopt buiten de gemeente om (art. 30 lid 1, 31; Utrecht).
+synoniemen:
+- naam: Doorzenden aanvraag verklaring omtrent het gedrag
+  context: wet
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+kernobject: verklaring-omtrent-het-gedrag
+afnemer: extern
+relaties:
+- soort: toegang (bijwerken)
+  naar: verklaring-omtrent-het-gedrag
+  naam: ontvangt de aanvraag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  vindplaats: art. 30, 32
+- soort: toegang (raadplegen)
+  naar: ingeschreven-persoon
+  naam: toetst de inschrijving in de basisregistratie personen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  vindplaats: art. 30 lid 1
+- soort: realisatie
+  naar: verklaring-omtrent-gedrag-aanvragen
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  vindplaats: UPL nr. 434; Utrecht regel 21-55
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-verklaring-omtrent-het-gedrag.md

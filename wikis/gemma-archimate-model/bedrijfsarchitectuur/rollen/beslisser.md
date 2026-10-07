@@ -32,6 +32,8 @@ bronnen:
 - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-rijk-kieswet-bwbr0004627
+- 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+- 2026-rijk-reglement-rijbewijzen-bwbr0008074
 gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
 gemma_naam: Beslisser
 gemma_type: business-role
@@ -62,7 +64,7 @@ Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burg
 
 In de bijhouding van de basisregistratie personen beslist het college: over de inschrijving, het briefadres, de uitkomst van een adresonderzoek, geheimhouding, verstrekking, correctie, verwijdering van gegevens en de wijziging van het BSN (Besluit BRP art. 24; Circulaire adresonderzoek 4.6; HUP Verstrekkingsbeperking; HUP Wijzigen BSN).
 
-Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdocument en verklaart het vervallen (Paspoortwet art. 40, 44).
+Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdocument en verklaart het vervallen (Paspoortwet art. 40, 44). Over het rijbewijs beslist de burgemeester: hij besluit tot afgifte of weigering (Wegenverkeerswet 1994 art. 116, 118a; Reglement rijbewijzen art. 27).
 
 Over het Nederlanderschap beslist de burgemeester: hij bevestigt of weigert de optie en bevestigt de afstand (Rijkswet op het Nederlanderschap art. 6; Besluit verkrijging en verlies Nederlanderschap art. 2, 11, 63). Over de naturalisatie beslist de minister van Justitie en Veiligheid; de burgemeester adviseert.
 
@@ -126,12 +128,13 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Beslisser | bevestigt de afstand *toewijzing* | [Behandelen verklaring van afstand](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 63) |
 | Beslisser | beslist op het verzoek *toewijzing* | [Behandelen verzoek om volmacht](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-volmacht.md) | [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (art. L 11) |
 | Beslisser | beslist op een aanvraag tot wijziging *toewijzing* | [Registreren kiesgerechtigdheid](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md) | [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (art. D 7) |
+| Beslisser | besluit tot afgifte of weigering *toewijzing* | [Behandelen aanvraag rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (WVW art. 116, 118a; Reglement art. 27) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Burgemeester](../actoren/burgemeester.md) | vervult *toewijzing* | Beslisser | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68; Paspoortwet art. 40, 44) |
+| [Burgemeester](../actoren/burgemeester.md) | vervult *toewijzing* | Beslisser | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68; Paspoortwet art. 40, 44; Wegenverkeerswet 1994 art. 116, 118a) |
 | [College van B&W](../actoren/college-van-b-w.md) | vervult *toewijzing* | Beslisser | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 43, 53; Groningen art. 16, 20) |
 | [Gemeenteraad](../actoren/gemeenteraad.md) | vervult *toewijzing* | Beslisser | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (Gemeentewet art. 147; Wlb art. 38, 40) |
 
@@ -158,6 +161,8 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [Rijkswet op het Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) | Rijkswet op het Nederlanderschap |
 | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
 | [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
+| [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) | Wegenverkeerswet 1994 |
+| [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) | Reglement rijbewijzen |
 
 ### Afstemming met GEMMA
 

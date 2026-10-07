@@ -206,6 +206,11 @@ beschrijving:
 synoniemen:
 - naam: Besluit burgerlijke stand
   context: dagelijks gebruik
+naamkeuze:
+- De naam is de officiële titel van het besluit (BWBR0006493), met het jaartal; Besluit burgerlijke stand is de gangbare korte vorm en blijft synoniem.
+per_onderwerp:
+  burgerzaken:
+  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De UPL noemt het besluit bij geen enkel item; het is grondslag van Bijhouden burgerlijke stand en van de dienst Uittreksel burgerlijke stand (art. 24, 26), die de akte als afschrift of uittreksel verstrekt.'
 grondslag: regelgeving
 grondslag_toelichting:
 - Het besluit zelf (BWBR0006493), ter uitvoering van titel 4 van Boek 1 BW.

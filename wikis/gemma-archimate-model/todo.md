@@ -35,3 +35,15 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 - **Belanghebbende** beoordelen in Algemeen (Awb art. 1:2; besluit 2026-10-06: generiek, hoort bij Algemeen). Nu nog een verwijzing in Lijkbezorging; vraagt een volledige beoordeling met bron en GGM-terugmelding 9.
 - **Bronanalyse per onderwerp in de render**: een bron met een bronanalyse in meer onderwerpen (UPL extern: lijkbezorging en burgerzaken) krijgt op elke pagina een link naar de alfabetisch eerste lens; sinds Burgerzaken linken lijkbezorgingspagina's naar de lens van Burgerzaken. Kies de lens van het thuisonderwerp van de pagina.
+
+## Verwijzingen vanuit Burgerzaken (onderwerp afgerond op 2026-10-07)
+
+Begrippen die thuishoren in een onderwerp dat nog niet bestaat; ze staan als verwijzing in de begrippenlijst van Burgerzaken.
+
+- **Verkiezingen** (organisatie): Kandidaatstelling verkiezingen, Stembiljet, Stemmen identificatieplicht (UPL nr. 205, 395, 396; Kieswet).
+- **Invordering**: Verzoeken om signalering (Paspoortwet art. 22).
+- **Adressen en BAG**: Adres.
+- **Openbare ruimte**: de vier meldingen openbare ruimte (UPL nr. 243 tot en met 246).
+- **Sociaal domein**: Overlijdensuitkering (UPL nr. 317).
+- **Dienstverlening aan inwoners en leefomgeving**: Contactgegevens aanpassing (UPL nr. 105), Reclamesticker (UPL nr. 348).
+- **Wet griffierechten burgerlijke zaken en Overeenkomst van München**: of ze bron en beleidskader worden, hangt af van de vragen bij Legalisatie handtekening en Verklaring van huwelijksbevoegdheid.

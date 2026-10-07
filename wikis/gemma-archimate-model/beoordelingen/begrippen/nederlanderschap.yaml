@@ -242,6 +242,11 @@ relaties:
   - 2026-rvig-hup-nederlandse-nationaliteit
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   vindplaats: HUP Nederlandse nationaliteit; Rijkswet art. 1
+vragen: []
+besluiten:
+- datum: '2026-10-07'
+  besluit: Naam Nederlanderschap blijft (wetsterm en term van het besluit van 2026-10-07), met Nederlandse nationaliteit als synoniem (beleid).
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:

@@ -9,9 +9,10 @@ kenmerken:
     - 2026-vng-gemma-2026-10-02
   gemeentelijk:
     waarde: ja
-    onderbouwing: De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42).
+    onderbouwing: De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42) en geeft rijbewijzen af en reikt ze uit (Wegenverkeerswet 1994 art. 116, 120a).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -26,10 +27,11 @@ kenmerken:
     - 2026-rijk-paspoortwet-bwbr0005212
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: de functie bedient Beheren reisdocumenten en omvat de diensten voor reisdocumenten (UPL taakveld 0.2).'
+    onderbouwing: 'Hoort bij burgerzaken: de functie bedient Beheren reisdocumenten en Beheren rijbewijzen en omvat de diensten voor reisdocumenten en rijbewijzen (UPL taakveld 0.2).'
     bronnen:
     - 2026-vng-gemma-2026-10-02
     - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   gedrag:
     waarde: ja
     onderbouwing: Een groep van activiteiten.
@@ -149,10 +151,11 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bedient_gedrag:
     waarde: ja
-    onderbouwing: Bedient Beheren reisdocumenten.
+    onderbouwing: Bedient Beheren reisdocumenten en Beheren rijbewijzen.
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-vng-gemma-2026-10-02
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling (GEMMA-relatie id-1f944d4b-41d8-40cb-be75-8706806e07cc).
@@ -213,7 +216,7 @@ beschrijving:
 - 'GEMMA rekent er rijbewijzen, identiteitsbewijzen en reisdocumenten toe: documenten die de gemeente op aanvraag op naam van een persoon verstrekt (GEMMA, toelichting bij de functie).'
 per_onderwerp:
   burgerzaken:
-  - 'De functie bedient Beheren reisdocumenten en omvat de diensten voor reisdocumenten uit de UPL onder taakveld 0.2: paspoort, tweede paspoort, zakenpaspoort, vluchtelingen- en vreemdelingenpaspoort, identiteitskaart en het reisdocument voor niet-ingezetenen, en de melding van vermissing of diefstal (UPL; Utrecht; Paspoortwet art. 40). Het rijbewijs valt buiten de afbakening van dit onderwerp.'
+  - 'De functie bedient Beheren reisdocumenten en omvat de diensten voor reisdocumenten uit de UPL onder taakveld 0.2: paspoort, tweede paspoort, zakenpaspoort, vluchtelingen- en vreemdelingenpaspoort, identiteitskaart en het reisdocument voor niet-ingezetenen, en de melding van vermissing of diefstal (UPL; Utrecht; Paspoortwet art. 40), en bedient Beheren rijbewijzen met de diensten voor het rijbewijs uit de UPL onder taakveld 0.2: rijbewijs, rijbewijs verlengen en rijbewijs buitenlands omwisseling, en de melding van vermissing of diefstal van een rijbewijs (UPL; Utrecht; Wegenverkeerswet 1994 art. 116). De gezondheidsverklaring voor het rijbewijs (UPL nr. 362) is geen eigen dienst en valt er niet onder: de gemeente controleert de verklaring van geschiktheid bij het CBR als onderdeel van Rijbewijs aanvragen. De verklaring omtrent het gedrag is geen document dat de gemeente verstrekt: de minister geeft haar af.'
 domein: Publieksdiensten
 grondslag: bron
 gemma:
@@ -285,6 +288,42 @@ relaties:
   bronnen:
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   vindplaats: Utrecht; GEMMA-domein Publieksdiensten
+- soort: bediening
+  naar: beheren-rijbewijzen
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-vng-gemma-2026-10-02
+  vindplaats: Wegenverkeerswet 1994 art. 116, 120a
+- soort: aggregatie
+  naar: rijbewijs-aanvragen
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 360 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: rijbewijs-verlengen
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 363 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: rijbewijs-buitenlands-omwisseling
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 361 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: vermissing-of-diefstal-rijbewijs-doorgeven
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  vindplaats: Utrecht regel 126-140; GEMMA-domein Publieksdiensten
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -300,8 +339,10 @@ afgeleid:
   bronnen:
   - 2026-vng-gemma-2026-10-02
   - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   herkomst: wet
   gemma:
     gemma_id: id-3668255a-275b-4c9a-9b61-f4a475600ed0

@@ -1,0 +1,247 @@
+begrip: Aanvrager van de verklaring omtrent het gedrag
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Wetsbegrip: degene omtrent wiens gedrag een verklaring wordt gevraagd, of zijn vertegenwoordiger (Wet justitiële en strafvorderlijke gegevens art. 33); Utrecht spreekt van de aanvrager van de VOG.'
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Dient de aanvraag in bij de gemeente, met het formulier van de werkgever en een identiteitsbewijs, en betaalt (Wet justitiële en strafvorderlijke gegevens art. 30, 33; Utrecht).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: het meeste gedrag van de rol ligt in Afgeven verklaring omtrent het gedrag (regel Thuishoren).'
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij.'
+  hoedanigheid:
+    waarde: ja
+    onderbouwing: 'De hoedanigheid van degene omtrent wiens gedrag een verklaring wordt gevraagd, met eigen plichten: de aanvraag indienen met opgave van het doel en het risico, en de kosten betalen (Wet justitiële en strafvorderlijke gegevens art. 32, 33, 39; Utrecht).'
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Een hoedanigheid, geen partij: de persoon zelf is de ingeschreven persoon.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: ja
+    onderbouwing: Toegewezen aan Behandelen aanvraag verklaring omtrent het gedrag (dient de aanvraag in, art. 33; Utrecht).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Per aanvraag één aanvrager (Wet justitiële en strafvorderlijke gegevens art. 33).
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: De gegevens van de persoon horen bij Ingeschreven persoon; de rol zelf wordt niet bijgehouden.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Hoedanigheid van degene omtrent wiens gedrag een verklaring omtrent het gedrag wordt gevraagd en die de aanvraag indient.
+beschrijving:
+- De wet kent de aanvrager, degene omtrent wiens gedrag de verklaring wordt gevraagd, of een vertegenwoordiger van de rechtspersoon (Wet justitiële en strafvorderlijke gegevens art. 33). De aanvraag bevat de voornamen, de geboortedatum en het doel, en de aanvrager of degene te wiens behoeve de verklaring wordt gevraagd, geeft het risico voor de samenleving op (art. 32). In de praktijk heeft vaak een werkgever of een andere organisatie het aanvraagformulier ingevuld; de aanvrager zelf dient in en betaalt (Utrecht).
+synoniemen:
+- naam: Aanvrager VOG
+  context: beleid
+- naam: Aanvrager verklaring omtrent het gedrag
+  context: wet
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen rol voor dit begrip; nieuw voor GEMMA.
+doelgroep: inwoners en ondernemers
+naamkeuze:
+- 'Naar het precedent Houder van het reisdocument: de rol heet naar het object, zodat de naam ondubbelzinnig is; de korte term Aanvrager is al synoniem van Houder van het reisdocument. De wet noemt ook de vertegenwoordiger van een rechtspersoon, maar de gemeente behandelt alleen de aanvraag van een natuurlijk persoon.'
+relaties:
+- soort: toewijzing
+  naar: behandelen-aanvraag-verklaring-omtrent-het-gedrag
+  naam: dient de aanvraag in
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  vindplaats: art. 30, 33; Utrecht regel 37-53
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 12
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  herkomst: wet
+  pad: bedrijfsarchitectuur/rollen/aanvrager-van-de-verklaring-omtrent-het-gedrag.md

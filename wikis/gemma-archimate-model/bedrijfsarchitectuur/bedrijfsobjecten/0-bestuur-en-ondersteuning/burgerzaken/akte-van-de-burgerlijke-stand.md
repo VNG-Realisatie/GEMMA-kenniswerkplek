@@ -49,6 +49,10 @@ Een afschrift bevat ook de latere vermeldingen; een uittreksel geeft de toestand
 |---|---|
 | Akte | dagelijks gebruik |
 
+### Naamkeuze
+
+De naam is de wetsterm (BW 1 art. 23b, Besluit burgerlijke stand) en de naam van het UPL-product (nr. 23); de bronnen gebruiken geen andere gangbare term dan de verkorting Akte, die synoniem blijft. Akte alleen is niet ondubbelzinnig, want ook andere akten heten zo. De dienst heet Uittreksel burgerlijke stand (zie Homoniemen).
+
 ### Homoniemen
 
 | Begrip | Betekenis | Naamkeuze |

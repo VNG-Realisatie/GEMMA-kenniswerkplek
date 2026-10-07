@@ -19,6 +19,7 @@ bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-vng-gemma-2026-10-02
 - 2026-rijk-bw2-rechtspersonen
+- 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 gemma_id: id-9f6a80ba-b7fb-4a58-b599-b5f2b33b840e
 gemma_naam: Rijk
 gemma_type: business-actor
@@ -41,9 +42,9 @@ De Staat der Nederlanden als bestuurslaag, die met zijn ministers en rijksdienst
 
 ### Beschrijving
 
-Het Rijk handelt via zijn ministers, die elk een deel van de rijkstaken dragen, en hun diensten. Voor de gemeente gaat het om taken die in de wet naast de gemeentelijke taak staan: de minister van Binnenlandse Zaken en Koninkrijksrelaties (uitgevoerd door de Rijksdienst voor Identiteitsgegevens, RvIG) houdt de niet-ingezetenen bij in de BRP en de voorzieningen daarvoor in stand (Wet BRP art. 1.4 lid 2, 2.64), laat de reisdocumenten maken en houdt de registers van reisdocumenten bij (Paspoortwet art. 2 lid 3–4); de minister van Justitie en Veiligheid (uitgevoerd door de Immigratie- en Naturalisatiedienst, IND) beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38).
+Het Rijk handelt via zijn ministers, die elk een deel van de rijkstaken dragen, en hun diensten. Voor de gemeente gaat het om taken die in de wet naast de gemeentelijke taak staan: de minister van Binnenlandse Zaken en Koninkrijksrelaties (uitgevoerd door de Rijksdienst voor Identiteitsgegevens, RvIG) houdt de niet-ingezetenen bij in de BRP en de voorzieningen daarvoor in stand (Wet BRP art. 1.4 lid 2, 2.64), laat de reisdocumenten maken en houdt de registers van reisdocumenten bij (Paspoortwet art. 2 lid 3–4); de minister van Justitie en Veiligheid (uitgevoerd door de Immigratie- en Naturalisatiedienst, IND) beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38) en, in de praktijk via Justis, over de afgifte van de verklaring omtrent het gedrag (Wet justitiële en strafvorderlijke gegevens art. 30, 37).
 
-Het model kent het Rijk als één actor, de bestuurslaag als geheel, zoals Gemeente, Provincie en Waterschap; de afzonderlijke ministeries en rijksdiensten staan in de beschrijving en zijn geen eigen element. Waar de gemeente gegevens of registers van het Rijk gebruikt, zijn die invoer.
+Het model kent het Rijk als één actor, de bestuurslaag als geheel, zoals Gemeente, Provincie en Waterschap; de afzonderlijke ministeries en rijksdiensten staan in de beschrijving en zijn geen eigen element. Waar de gemeente gegevens of registers van het Rijk gebruikt, zijn die invoer. De RDW en het CBR zijn zelfstandige bestuursorganen met een eigen rechtspersoonlijkheid; ze zijn geen eigen element en staan in de beschrijving van Beheren rijbewijzen (Wegenverkeerswet 1994 art. 4a, 4z).
 
 ## Plaats in het model
 
@@ -78,7 +79,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Rijk | vervult *toewijzing* | [Ketenpartner](../rollen/ketenpartner.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 37, 38) |
+| Rijk | vervult *toewijzing* | [Ketenpartner](../rollen/ketenpartner.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) (art. 37, 38; Wjsg art. 30, 37) |
 
 ## Herkomst
 
@@ -91,6 +92,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
 | [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [BW Boek 2](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md) | Burgerlijk Wetboek Boek 2 Rechtspersonen (BWBR0003045) |
+| [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) | Wet justitiële en strafvorderlijke gegevens |
 
 ### Afstemming met GEMMA
 

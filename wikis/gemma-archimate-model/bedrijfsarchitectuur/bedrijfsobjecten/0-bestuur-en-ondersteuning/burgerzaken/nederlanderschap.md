@@ -136,3 +136,7 @@ GGM-terugmeldingen:
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen bedrijfsobject voor het Nederlanderschap; de GEMMA-bedrijfsobjecten Nationaliteit (RSGB Model en Referentielijsten) zijn breder of de referentielijst. Nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-07: Naam Nederlanderschap blijft (wetsterm en term van het besluit van 2026-10-07), met Nederlandse nationaliteit als synoniem (beleid).

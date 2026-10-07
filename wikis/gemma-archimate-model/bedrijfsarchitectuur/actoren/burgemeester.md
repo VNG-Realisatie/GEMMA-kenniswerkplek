@@ -18,6 +18,8 @@ bronnen:
 - 2024-rijk-gemeentewet-wettekst
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+- 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 ---
 
 # Burgemeester
@@ -44,7 +46,7 @@ De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, v
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-De burgemeester neemt aanvragen voor reisdocumenten in ontvangst van ingezetenen met een adres in zijn gemeente, verstrekt, reikt uit, wijzigt, weigert, verklaart vervallen en houdt in (Paspoortwet art. 26, 40, 42, 43, 44, 50b).
+De burgemeester neemt aanvragen voor reisdocumenten in ontvangst van ingezetenen met een adres in zijn gemeente, verstrekt, reikt uit, wijzigt, weigert, verklaart vervallen en houdt in (Paspoortwet art. 26, 40, 42, 43, 44, 50b). Hij besluit tot afgifte van rijbewijzen en reikt ze uit (Wegenverkeerswet 1994 art. 116, 118a, 120a) en ontvangt de aanvraag voor een verklaring omtrent het gedrag, die hij doorzendt aan de minister (Wet justitiële en strafvorderlijke gegevens art. 30).
 
 ## Plaats in het model
 
@@ -79,7 +81,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Burgemeester | vervult *toewijzing* | [Beslisser](../rollen/beslisser.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68; Paspoortwet art. 40, 44) |
+| Burgemeester | vervult *toewijzing* | [Beslisser](../rollen/beslisser.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68; Paspoortwet art. 40, 44; Wegenverkeerswet 1994 art. 116, 118a) |
 | Burgemeester | is voorzitter van *associatie (gericht)* | [Gemeenteraad](gemeenteraad.md) | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) (art. 9) |
 | Burgemeester | is voorzitter van *associatie (gericht)* | [College van B&W](college-van-b-w.md) | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) (art. 34 lid 2) |
 
@@ -98,6 +100,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) - geldend per 2024-01-31 |
 | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) | Wegenverkeerswet 1994 |
+| [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) | Wet justitiële en strafvorderlijke gegevens |
 
 ### Afstemming met GEMMA
 

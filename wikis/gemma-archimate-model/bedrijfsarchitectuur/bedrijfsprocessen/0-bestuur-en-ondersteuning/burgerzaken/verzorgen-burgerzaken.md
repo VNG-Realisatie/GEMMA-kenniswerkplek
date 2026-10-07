@@ -8,7 +8,7 @@ onderwerpen:
 - burgerzaken
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-definitie: 'Gemeentelijke taak rond burgerzaken: het bijhouden van de persoonsgegevens, de burgerlijke stand, reisdocumenten, het Nederlanderschap en het kiesrecht.'
+definitie: 'Gemeentelijke taak rond burgerzaken: persoonsgegevens, burgerlijke stand, reisdocumenten, rijbewijzen, Nederlanderschap, kiesrecht en de VOG.'
 grondslag: bron
 match:
   gemma: geen
@@ -19,6 +19,8 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+- 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-rijk-kieswet-bwbr0004627
 ---
@@ -33,11 +35,11 @@ bronnen:
 
 ### Definitie
 
-Gemeentelijke taak rond burgerzaken: het bijhouden van de persoonsgegevens, de burgerlijke stand, reisdocumenten, het Nederlanderschap en het kiesrecht.
+Gemeentelijke taak rond burgerzaken: persoonsgegevens, burgerlijke stand, reisdocumenten, rijbewijzen, Nederlanderschap, kiesrecht en de VOG.
 
 ### Beschrijving
 
-Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42), neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit verkrijging en verlies Nederlanderschap art. 2) en verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon, Bijhouden burgerlijke stand met de akte van de burgerlijke stand, Beheren reisdocumenten met het reisdocument, Beheren Nederlanderschap met het Nederlanderschap en Beheren stempassen met de stempas als kernobject.
+Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42), neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit verkrijging en verlies Nederlanderschap art. 2), verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11), geeft rijbewijzen af (Wegenverkeerswet 1994 art. 116) en ontvangt de aanvraag voor een verklaring omtrent het gedrag, die de minister afgeeft (Wet justitiële en strafvorderlijke gegevens art. 30, 37). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon, Bijhouden burgerlijke stand met de akte van de burgerlijke stand, Beheren reisdocumenten met het reisdocument, Beheren Nederlanderschap met het Nederlanderschap, Beheren stempassen met de stempas, Beheren rijbewijzen met het rijbewijs en Afgeven verklaring omtrent het gedrag met de verklaring omtrent het gedrag als kernobject.
 
 ## Plaats in het model
 
@@ -48,7 +50,7 @@ Bedrijfsproces, niveau taak. Uitkomst van de beslistabel: Gedrag, *groepeert pro
 ### Plaats in de indelingen
 
 - **Procesniveau**: taak.
-- **Procesindeling naar taak, omvat**: [Beheren Nederlanderschap](beheren-nederlanderschap.md), [Beheren reisdocumenten](beheren-reisdocumenten.md), [Beheren stempassen](beheren-stempassen.md), [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md), [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
+- **Procesindeling naar taak, omvat**: [Afgeven verklaring omtrent het gedrag](afgeven-verklaring-omtrent-het-gedrag.md), [Beheren Nederlanderschap](beheren-nederlanderschap.md), [Beheren reisdocumenten](beheren-reisdocumenten.md), [Beheren rijbewijzen](beheren-rijbewijzen.md), [Beheren stempassen](beheren-stempassen.md), [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md), [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
@@ -65,7 +67,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **groepeert processen**: Is het een groepering van processen rond één taak of één soort werk, die niet per geval wordt doorlopen? | Ja, groepeert de processen rond de gemeentelijke taak burgerzaken en wordt niet per geval doorlopen (besluit redacteur 2026-10-07). [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, de rol Bijhoudingsgemeente, die de gemeente vervult (Wet BRP art. 1.1 onder h, 1.4). [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, raadpleegt en werkt bij: ingeschreven persoon, verblijfplaats, briefadres (Wet BRP art. 2.7, 2.19–2.23). [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) |
-| **omvat processen**: Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? | Ja, per kernobject één proces: Bijhouden persoonsgegevens (Wet BRP hoofdstuk 2), Bijhouden burgerlijke stand (BW 1 titel 4) en Beheren reisdocumenten (Paspoortwet hoofdstuk IV tot en met VIII); het proces voor het Nederlanderschap volgt in plak 4. [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **omvat processen**: Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? | Ja, per kernobject één proces: Bijhouden persoonsgegevens (Wet BRP hoofdstuk 2), Bijhouden burgerlijke stand (BW 1 titel 4), Beheren reisdocumenten (Paspoortwet hoofdstuk IV tot en met VIII), Beheren Nederlanderschap, Beheren stempassen, Beheren rijbewijzen (Wegenverkeerswet 1994 hoofdstuk VI) en Afgeven verklaring omtrent het gedrag (Wet justitiële en strafvorderlijke gegevens art. 28 tot en met 39). [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki. [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) |
 
 ### Relaties
@@ -79,6 +81,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Verzorgen burgerzaken | omvat *aggregatie* | [Beheren reisdocumenten](beheren-reisdocumenten.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 26, 40, 42) |
 | Verzorgen burgerzaken | omvat *aggregatie* | [Beheren Nederlanderschap](beheren-nederlanderschap.md) | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 2, 7, 33, 63) |
 | Verzorgen burgerzaken | omvat *aggregatie* | [Beheren stempassen](beheren-stempassen.md) | [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (art. J 7, K 4, L 11) |
+| Verzorgen burgerzaken | omvat *aggregatie* | [Beheren rijbewijzen](beheren-rijbewijzen.md) | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 113, 116, 123) |
+| Verzorgen burgerzaken | omvat *aggregatie* | [Afgeven verklaring omtrent het gedrag](afgeven-verklaring-omtrent-het-gedrag.md) | [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) (art. 28-39) |
 
 ## Herkomst
 
@@ -90,6 +94,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) | Burgerlijk Wetboek Boek 1 (Personen- en familierecht) |
 | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) | Wegenverkeerswet 1994 |
+| [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) | Wet justitiële en strafvorderlijke gegevens |
 | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
 | [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
 

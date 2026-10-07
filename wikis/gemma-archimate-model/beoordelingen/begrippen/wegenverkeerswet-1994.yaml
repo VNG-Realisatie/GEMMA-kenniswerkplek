@@ -1,0 +1,293 @@
+begrip: Wegenverkeerswet 1994
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Gangbare naam van de wet over het verkeer op de weg (BWBR0006622), afgekort Wvw 1994.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Geeft de burgemeester de bevoegdheid tot afgifte van rijbewijzen en tot het afgeven van internationale rijbewijzen (art. 116, 117), en de gemeente het tarief bij plaatselijke verordening (art. 111 lid 5).
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Rijbewijs en Beheren rijbewijzen (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een regeling.'
+  regeling_als_geheel:
+    waarde: ja
+    onderbouwing: Een concreet benoemde regeling als geheel (BWBR0006622).
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: ja
+    onderbouwing: Wet van het Rijk.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  in_werking:
+    waarde: ja
+    onderbouwing: Geldend recht; enkele onderdelen zijn nog niet in werking (wijzigingen zonder datum van inwerkingtreding).
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  is_grondslag_voor:
+    waarde: ja
+    onderbouwing: 'Art. 111 tot en met 113 (voorwaarden en aanvraag), 116 en 118a (afgifte en besluit tot afgifte), 119 en 120 (nieuw en vervangend rijbewijs), 120a (uitreiking) en 123 (verlies van geldigheid): grondslag van Beheren rijbewijzen, Behandelen aanvraag rijbewijs, Uitreiken rijbewijs, Verwerken vermissing rijbewijs en de diensten Rijbewijs aanvragen en Rijbewijs verlengen.'
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Wet over het verkeer op de weg, met de regels voor de aanvraag, afgifte en geldigheid van rijbewijzen en de taken van de RDW en het CBR.
+beschrijving:
+- 'De Wegenverkeerswet 1994 (BWBR0006622) regelt het verkeer op de weg. Voor Burgerzaken telt hoofdstuk VI: de rijbewijsplicht (art. 107), de voorwaarden voor afgifte (art. 111, 112), de aanvraag (art. 113), de afgifte door de burgemeester of de RDW (art. 116), het nieuwe en het vervangende rijbewijs (art. 119, 120), de uitreiking (art. 120a), de geldigheid en het verlies ervan (art. 122, 123) en het rijbewijzenregister van de RDW (art. 126). De RDW en het CBR zijn zelfstandige bestuursorganen (art. 4a, 4z). Kentekens, voertuigeisen, rijonderricht, het onderzoek naar rijvaardigheid en de maatregelen na overtredingen vallen buiten dit onderwerp.'
+per_onderwerp:
+  burgerzaken:
+  - Grondslag van Beheren rijbewijzen, de deelprocessen en de diensten van het rijbewijs, naast het Reglement rijbewijzen, dat de aanvraag en afgifte uitwerkt. De UPL noemt alleen het Reglement als grondslag (nr. 360 tot en met 363); zie de procesarchitectuur-terugmelding.
+grondslag_toelichting:
+- De regeling zelf (2026-rijk-wegenverkeerswet-1994-bwbr0006622).
+relaties:
+- soort: associatie (gericht)
+  naar: beheren-rijbewijzen
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 113, 116, 123
+- soort: associatie (gericht)
+  naar: behandelen-aanvraag-rijbewijs
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 111-113, 116, 118a, 119, 120
+- soort: associatie (gericht)
+  naar: uitreiken-rijbewijs
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 111 lid 2, 119 lid 2, 120a
+- soort: associatie (gericht)
+  naar: verwerken-vermissing-rijbewijs
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 123 lid 1 onder h
+- soort: associatie (gericht)
+  naar: rijbewijs-aanvragen
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 111, 113, 116
+- soort: associatie (gericht)
+  naar: rijbewijs-verlengen
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 119 lid 1 onder a
+- soort: associatie (gericht)
+  naar: behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 116 lid 1, 123 lid 1 onder b
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: regelgeving
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
+regelgever: rijk
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Opnemen als beleidskader: grondslag van Beheren rijbewijzen, de rijbewijsdiensten en de deelprocessen (de burgemeester besluit tot afgifte, art. 116 en 118a).'
+  gevolg: opnemen
+  redenen:
+  - 'grondslag regelgeving: altijd voorleggen'
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'grondslag regelgeving: altijd voorleggen'
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  pad: motivatie/beleidskaders/wegenverkeerswet-1994.md

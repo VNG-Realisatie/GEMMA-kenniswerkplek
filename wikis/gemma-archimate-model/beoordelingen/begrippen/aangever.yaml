@@ -203,9 +203,8 @@ definitie: Hoedanigheid van wie bij de gemeente aangifte doet van een feit voor 
 beschrijving:
 - Een meerderjarige doet zelf aangifte van verblijf en adres, adreswijziging en vertrek; ouders, voogden en verzorgers zijn verplicht aangifte te doen voor minderjarigen; echtgenoten, partners en ouders met een meerderjarig kind zijn bevoegd voor elkaar; het hoofd van een instelling kan aangifte doen voor wie er verblijft (HUP Verblijfplaats). Het college kan verplichten in persoon te verschijnen (HUP Verblijfplaats; Besluit BRP art. 30).
 - 'Bij de burgerlijke stand doet de aangever aangifte bij de ambtenaar van de burgerlijke stand: van een geboorte (de vader of moeder, of wie bij de bevalling aanwezig was; BW 1 art. 19e), van een overlijden (wie het uit eigen wetenschap weet, of een gemachtigde zoals de uitvaartondernemer; art. 19h), van een levenloos geboren kind (art. 19i) en van de wijziging van de vermelding van het geslacht (art. 28). De ambtenaar stelt de identiteit van de aangever vast (art. 19e lid 8).'
-synoniemen:
-- naam: Doorgever
-  context: beleid
+naamkeuze:
+- Aangever is de wetsterm (BW 1 art. 19e, 19h, 19i, 28) en ook de term van de HUP (Verplichte of bevoegde aangever) en van Utrecht (Geboorteaangifte doen); een afwijkende gangbare term staat in geen bron. Doorgever, dat een eerdere versie als synoniem met context beleid noemde, komt als zelfstandig naamwoord in geen enkele bron voor (Utrecht noemt alleen het werkwoord doorgeven bij Verhuizing doorgeven en Emigratie doorgeven) en is vervallen.
 grondslag: bron
 gemma:
   sterkte: geen

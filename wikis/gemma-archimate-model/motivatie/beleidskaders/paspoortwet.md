@@ -35,6 +35,12 @@ Rijkswet over de soorten reisdocumenten, de aanspraak erop en de aanvraag, verst
 
 De Paspoortwet (BWBR0005212) regelt de soorten reisdocumenten en wie er recht op heeft (art. 2, 9 tot en met 16), de registers van de minister (art. 4a, 4c), de rechten die de gemeente als gemeentelijke belasting heft (art. 7), de gronden en de signalering voor weigering of vervallenverklaring (hoofdstuk III), de aanvraag (hoofdstuk IV), de verstrekking, uitreiking en wijziging (hoofdstuk V), de weigering of vervallenverklaring (hoofdstuk VI), het verval van rechtswege (hoofdstuk VII) en de inhouding en inlevering (hoofdstuk VIII). De Nederlandse identiteitskaart heeft sinds 2026-10-01 alleen nog een eigen wet; de Paspoortwet noemt haar bij vermissing, signalering en inhouding.
 
+### Per onderwerp
+
+#### [Burgerzaken](../../begrippen/burgerzaken.md)
+
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Elke soort reisdocument is een dienst die Behandelen aanvraag reisdocument realiseert, zonder gebundelde afspraken; de wet is grondslag van die diensten (UPL nr. 329, 330, 449, 462, 494) en van de deelprocessen. De UPL noemt haar ook bij de identiteitskaart (nr. 186), maar die grondslag is per 2026-10-01 vervallen (procesarchitectuur-terugmelding 9).
+
 ## Plaats in het model
 
 ### Typering

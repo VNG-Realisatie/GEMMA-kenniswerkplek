@@ -200,3 +200,19 @@ terugmeldingen:
   element: stempas
   nummer: 17
   status: open
+- domein: RSGBPlus
+  entiteit: null
+  type: hiaat
+  element: rijbewijs
+  bevinding:
+  - '**GGM:** het GGM kent geen rijbewijs en geen ander begrip voor de afgifte van een rijbewijs door de gemeente.'
+  - '**Bevinding:** de burgemeester neemt de aanvraag van een rijbewijs in ontvangst, besluit tot afgifte, geeft het rijbewijs af en reikt het uit (2026-rijk-wegenverkeerswet-1994-bwbr0006622, art. 113, 116, 118a, 120a). Het rijbewijzenregister met de gegevens van elk rijbewijs is van de RDW en niet van de gemeente (art. 126); voor de gemeentelijke afgifte zijn de volgende attributen relevant:'
+  - '- rijbewijsnummer;'
+  - '- houder (ingeschreven persoon);'
+  - '- categorieën, met beperkingen;'
+  - '- datum van afgifte en geldig tot;'
+  - '- afgevende autoriteit (burgemeester of RDW);'
+  - '- ongeldig, met reden (art. 123).'
+  - '**Voorstel:** opnemen in RSGBPlus bij het beleidsdomein Burgerzaken, met een relatie naar IngeschrevenPersoon; alleen de gegevens die de gemeente voor de afgifte nodig heeft, niet het rijbewijzenregister van de RDW.'
+  nummer: 18
+  status: open
