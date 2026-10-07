@@ -279,6 +279,14 @@ relaties:
   bronnen:
   - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
   vindplaats: Bewijs van in leven zijn (uittreksel BRP)
+- soort: realisatie
+  naar: bewijs-van-nederlanderschap
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: UPL nr. 62; Besluit art. 61
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -298,6 +306,7 @@ afgeleid:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-besluit-brp-bwbr0034306
   - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   herkomst: wet
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75

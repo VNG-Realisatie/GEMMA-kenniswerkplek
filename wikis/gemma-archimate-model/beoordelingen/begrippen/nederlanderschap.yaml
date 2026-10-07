@@ -1,0 +1,274 @@
+begrip: Nederlanderschap
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Kernbegrip van de Rijkswet op het Nederlanderschap en het Besluit verkrijging en verlies Nederlanderschap; in de praktijk ook de Nederlandse nationaliteit (Rijkswet art. 1, 3; Utrecht).
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst, bevestigt de optie en reikt de bevestiging en het uittreksel van het naturalisatiebesluit uit (Besluit art. 2, 7, 11, 33, 60a, 60b, 63).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een rechtsverhouding tussen persoon en Koninkrijk met een eigen begin (verkrijging) en einde (verlies), los van één ander begrip (Rijkswet art. 3 tot en met 16).
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: kernobject van Beheren Nederlanderschap (UPL taakveld 0.2).'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Per persoon, met een eigen datum en reden van verkrijging en verlies (HUP Nederlandse nationaliteit).
+    bronnen:
+    - 2026-rvig-hup-nederlandse-nationaliteit
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Ontstaat van rechtswege, door optie of door naturalisatie en eindigt door verlies, afstand of intrekking (Rijkswet art. 3, 6, 7, 14, 15).
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: 'Beheren Nederlanderschap registreert en beëindigt het: de burgemeester bevestigt de optie, reikt de bevestiging of het uittreksel uit en neemt de verklaring van afstand in ontvangst; de gemeente neemt het op en beëindigt het in de persoonslijst (Besluit art. 11, 60a, 60b, 63, 64; HUP Nederlandse nationaliteit).'
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-rvig-hup-nederlandse-nationaliteit
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen vorm van een ander begrip; de bevestiging en het uittreksel van het besluit zijn de stukken waarmee het in werking treedt (Besluit art. 60a, 60b).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Geen onderdeel dat met de ingeschreven persoon ontstaat en eindigt: het kan later worden verkregen en verloren terwijl de persoon blijft (Rijkswet art. 6, 7, 15).'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: De burgemeester bevestigt de optie zelf en reikt de bevestiging en het uittreksel uit; alleen het besluit tot verlening neemt de minister (Besluit art. 11, 38, 60b).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: ja
+    onderbouwing: Categorie 04 Nationaliteit van de persoonslijst, met de reden van opnemen en beëindigen (HUP Nederlandse nationaliteit; LO BRP 4.4).
+    bronnen:
+    - 2026-rvig-hup-nederlandse-nationaliteit
+    - 2025-rvig-logisch-ontwerp-brp-2025q1
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: 'Specialisatie van Nationaliteit die de gemeente anders behandelt: alleen voor het Nederlanderschap kent zij eigen processen (optie, naturalisatie, afstand) met eigen gegevens (reden van verkrijging en verlies, bijzonder Nederlanderschap); Nationaliteit zelf is een onderdeel van Ingeschreven persoon zonder pagina (Rijkswet; Besluit; HUP Nationaliteit).'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-rvig-hup-nationaliteit
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: De Nederlandse nationaliteit van een persoon, verkregen van rechtswege, door optie of door naturalisatie, tot het verlies ervan.
+beschrijving:
+- Het Nederlanderschap wordt verkregen van rechtswege (bij geboorte, erkenning of adoptie), door optie of door verlening (naturalisatie), en gaat verloren door het vrijwillig verkrijgen van een andere nationaliteit, door een verklaring van afstand, door langdurig hoofdverblijf buiten het Koninkrijk en de Europese Unie of door intrekking door de minister (Rijkswet op het Nederlanderschap art. 3, 6, 7, 14, 15). Bij optie bevestigt de burgemeester de verkrijging; bij naturalisatie verleent de Koning het Nederlanderschap op voordracht van de minister van Justitie en Veiligheid (art. 6, 7; Besluit verkrijging en verlies Nederlanderschap art. 2, 11).
+- Het is het kernobject van Beheren Nederlanderschap. Bij optie en naturalisatie ontstaat het pas door de uitreiking van de bevestiging of van het uittreksel van het besluit, met terugwerkende kracht tot de dagtekening, na de verklaring van verbondenheid (Besluit art. 60a, 60b; Utrecht). Of iemand het Nederlanderschap bezit, stelt alleen de rechtbank Den Haag vast (Rijkswet art. 17); bewijs is onder meer een uittreksel uit de basisregistratie personen (Besluit art. 61).
+- In de basisregistratie personen staat het in categorie 04 Nationaliteit; naast de Nederlandse nationaliteit worden geen vreemde of onbekende nationaliteiten opgenomen (HUP Nederlandse nationaliteit). Wie als Nederlander wordt behandeld zonder het Nederlanderschap te bezitten, staat met de aanduiding bijzonder Nederlanderschap in dezelfde stapel (HUP Bijzonder Nederlanderschap).
+synoniemen:
+- naam: Nederlandse nationaliteit
+  context: beleid
+- naam: NederlandseNationaliteitIngeschrevenPersoon
+  context: GGM
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: ggm-entiteit
+ggm:
+  guid: EAID_BA5F2281_466D_4c69_9EB8_D10614C5CD8E
+  sterkte: sterk
+  onderbouwing: 'GGM-entiteit NederlandseNationaliteitIngeschrevenPersoon (RSGBPlus), met de reden van verkrijging en verlies van de Nederlandse nationaliteit en de aanduiding bijzonder Nederlanderschap: zelfde begrip, maar de definitie ''Gegevens over de nationaliteit'' noemt het Nederlanderschap niet (GGM-terugmelding 15). De bredere entiteit Nationaliteit (EAID_69B41CDD_C3F1_449b_92B4_8F7657840646) blijft de match van het onderdeel Nationaliteit; het GGM legt de nationaliteit in vier entiteiten vast (GGM-terugmelding 16).'
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen bedrijfsobject voor het Nederlanderschap; de GEMMA-bedrijfsobjecten Nationaliteit (RSGB Model en Referentielijsten) zijn breder of de referentielijst. Nieuw voor GEMMA.
+relaties:
+- soort: associatie (gericht)
+  naar: ingeschreven-persoon
+  naam: is nationaliteit van
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  vindplaats: HUP Nederlandse nationaliteit; Rijkswet art. 1
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 35
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    data_object: ja
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 21
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-nationaliteit
+  herkomst: wet
+  ggm:
+    ggm_entiteit: NederlandseNationaliteitIngeschrevenPersoon
+    ggm_guid: EAID_BA5F2281_466D_4c69_9EB8_D10614C5CD8E
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RSGBPlus
+    ggm_taakveld: 99 Kern
+    ggm_definitie: Gegevens over de nationaliteit.
+  pad: bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/nederlanderschap.md

@@ -391,6 +391,35 @@ relaties:
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 4.2
+- soort: toewijzing
+  naar: behandelen-optieverklaring
+  naam: bevestigt of weigert de optie
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: Rijkswet art. 6 lid 3-5; Besluit art. 11
+- soort: toewijzing
+  naar: behandelen-verklaring-van-afstand
+  naam: bevestigt de afstand
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 63
+- soort: toewijzing
+  naar: behandelen-verzoek-om-volmacht
+  naam: beslist op het verzoek
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  vindplaats: art. L 11
+- soort: toewijzing
+  naar: registreren-kiesgerechtigdheid
+  naam: beslist op een aanvraag tot wijziging
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  vindplaats: art. D 7
 onderwerpen:
 - algemeen
 - lijkbezorging
@@ -400,6 +429,8 @@ per_onderwerp:
   burgerzaken:
   - 'In de bijhouding van de basisregistratie personen beslist het college: over de inschrijving, het briefadres, de uitkomst van een adresonderzoek, geheimhouding, verstrekking, correctie, verwijdering van gegevens en de wijziging van het BSN (Besluit BRP art. 24; Circulaire adresonderzoek 4.6; HUP Verstrekkingsbeperking; HUP Wijzigen BSN).'
   - 'Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdocument en verklaart het vervallen (Paspoortwet art. 40, 44).'
+  - 'Over het Nederlanderschap beslist de burgemeester: hij bevestigt of weigert de optie en bevestigt de afstand (Rijkswet op het Nederlanderschap art. 6; Besluit verkrijging en verlies Nederlanderschap art. 2, 11, 63). Over de naturalisatie beslist de minister van Justitie en Veiligheid; de burgemeester adviseert.'
+  - Bij het kiesrecht beslissen burgemeester en wethouders over de registratie van de kiesgerechtigdheid en de burgemeester over een verzoek om bij volmacht te stemmen (Kieswet art. D 1, D 7, L 11).
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -427,6 +458,9 @@ afgeleid:
   - 2026-rvig-hup-wijzigen-bsn
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rijk-kieswet-bwbr0004627
   herkomst: wet
   gemma:
     gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e

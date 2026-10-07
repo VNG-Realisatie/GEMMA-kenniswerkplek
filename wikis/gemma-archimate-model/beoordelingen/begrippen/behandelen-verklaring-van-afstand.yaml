@@ -1,0 +1,301 @@
+begrip: Behandelen verklaring van afstand
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De Nederlandse nationaliteit opgeven met een verklaring van afstand bij de gemeente (Utrecht; UPL nr. 436); wetsbegrip (Rijkswet art. 15 lid 1 onder b; Besluit art. 63).
+    bronnen:
+    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De verklaring wordt afgelegd voor de burgemeester, die de identiteit vaststelt, de afstand bevestigt en de verklaring aan de minister zendt (Besluit art. 63, 64).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: deelproces van Beheren Nederlanderschap (UPL taakveld 0.2).'
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2025-vng-upl-producten-en-diensten-extern
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Per verklaring doorlopen, van afleggen tot toezending en verwerking (Besluit art. 63, 64).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: 'Beslisser: de burgemeester neemt de verklaring in ontvangst en bevestigt haar; tegen een weigering staat beroep open bij de rechtbank Den Haag (Besluit art. 63; Utrecht).'
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Beëindigt het Nederlanderschap door de afstand (Rijkswet art. 15 lid 1 onder b); bevordert de verwerking in de basisregistratie personen en de inname van reisdocumenten (Besluit art. 64 lid 3).
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  aanleiding:
+    waarde: ja
+    onderbouwing: De verklaring van afstand, door de meerderjarige zelf ondertekend, met inlevering van identiteitsbewijs en reisdocumenten (Besluit art. 62, 63; Utrecht).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De bevestiging van de afstand, met de namen van de personen die het Nederlanderschap verliezen (Besluit art. 63 lid 3).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elke verklaring van afstand.
+    bronnen:
+    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Rijkswet art. 15, 16; Besluit art. 62-64: afleggen voor de burgemeester, vaststellen van de identiteit, bevestiging, toezending aan de minister en de bijhoudingsgemeente.'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Draagt bij aan Beheren Nederlanderschap: het verlies door afstand.'
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: De bevestiging van de afstand door de burgemeester; tegen een weigering staat beroep open bij de rechtbank Den Haag (Besluit art. 63 lid 3; Utrecht).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Verklaring van afstand nederlandse nationaliteit (UPL nr. 436).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: ja
+    onderbouwing: Verlies van het Nederlanderschap (Rijkswet art. 15 lid 1 onder b).
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aangifte of melding.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-vng-gemma-2026-10-02
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+kernobject: nederlanderschap
+afnemer: extern
+definitie: Het in ontvangst nemen en bevestigen van een verklaring waarmee een persoon afstand doet van het Nederlanderschap.
+beschrijving:
+- Een meerderjarige met een andere nationaliteit legt de verklaring van afstand af voor de burgemeester; die stelt eerst de identiteit vast en bepaalt welke andere personen, zoals minderjarige kinderen, door de afstand het Nederlanderschap verliezen (Rijkswet op het Nederlanderschap art. 15, 16; Besluit verkrijging en verlies Nederlanderschap art. 63 lid 1-2). Kinderen van 12 tot 16 jaar mogen hun mening geven; vanaf 16 jaar legt een kind zelf een verklaring af (Utrecht).
+- De persoon ontvangt onverwijld een bevestiging (Besluit art. 63 lid 3). De burgemeester zendt de verklaring en een afschrift van de bevestiging aan de minister en aan de bijhoudingsgemeente, en bevordert dat de afstand in de basisregistratie personen wordt verwerkt en de Nederlandse reisdocumenten en identiteitskaarten worden ingenomen (art. 64). Weigert de gemeente het verlies te bevestigen, dan staat beroep open bij de rechtbank Den Haag en daarna cassatie bij de Hoge Raad (Utrecht).
+synoniemen:
+- naam: Afstand van het Nederlanderschap
+  context: wet
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+gemma_generiek:
+  id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  onderbouwing: Een verklaring van een feit dat tot bijwerking van de basisregistratie personen leidt; de persoon krijgt een bevestiging.
+relaties:
+- soort: toegang (beëindigen)
+  naar: nederlanderschap
+  naam: beëindigt door afstand
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: Rijkswet art. 15 lid 1 onder b; Besluit art. 63
+- soort: realisatie
+  naar: verklaring-van-afstand-nederlandse-nationaliteit
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  vindplaats: UPL nr. 436
+- soort: triggering
+  naar: verlies-van-het-nederlanderschap
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  vindplaats: art. 15 lid 1 onder b
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-vng-gemma-2026-10-02
+  herkomst: wet
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md

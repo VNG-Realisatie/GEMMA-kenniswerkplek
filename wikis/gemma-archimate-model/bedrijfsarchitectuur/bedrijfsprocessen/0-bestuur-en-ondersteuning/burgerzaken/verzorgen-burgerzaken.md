@@ -19,6 +19,8 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+- 2026-rijk-kieswet-bwbr0004627
 ---
 
 # Verzorgen burgerzaken
@@ -35,7 +37,7 @@ Gemeentelijke taak rond burgerzaken: het bijhouden van de persoonsgegevens, de b
 
 ### Beschrijving
 
-Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon, Bijhouden burgerlijke stand met de akte van de burgerlijke stand en Beheren reisdocumenten met het reisdocument als kernobject.
+Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42), neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit verkrijging en verlies Nederlanderschap art. 2) en verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon, Bijhouden burgerlijke stand met de akte van de burgerlijke stand, Beheren reisdocumenten met het reisdocument, Beheren Nederlanderschap met het Nederlanderschap en Beheren stempassen met de stempas als kernobject.
 
 ## Plaats in het model
 
@@ -46,7 +48,7 @@ Bedrijfsproces, niveau taak. Uitkomst van de beslistabel: Gedrag, *groepeert pro
 ### Plaats in de indelingen
 
 - **Procesniveau**: taak.
-- **Procesindeling naar taak, omvat**: [Beheren reisdocumenten](beheren-reisdocumenten.md), [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md), [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
+- **Procesindeling naar taak, omvat**: [Beheren Nederlanderschap](beheren-nederlanderschap.md), [Beheren reisdocumenten](beheren-reisdocumenten.md), [Beheren stempassen](beheren-stempassen.md), [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md), [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
@@ -75,6 +77,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Verzorgen burgerzaken | omvat *aggregatie* | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) (art. 1.4, hoofdstuk 2) |
 | Verzorgen burgerzaken | omvat *aggregatie* | [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 16a, 17) |
 | Verzorgen burgerzaken | omvat *aggregatie* | [Beheren reisdocumenten](beheren-reisdocumenten.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 26, 40, 42) |
+| Verzorgen burgerzaken | omvat *aggregatie* | [Beheren Nederlanderschap](beheren-nederlanderschap.md) | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 2, 7, 33, 63) |
+| Verzorgen burgerzaken | omvat *aggregatie* | [Beheren stempassen](beheren-stempassen.md) | [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (art. J 7, K 4, L 11) |
 
 ## Herkomst
 
@@ -86,6 +90,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) | Burgerlijk Wetboek Boek 1 (Personen- en familierecht) |
 | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
+| [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
 
 ### Afstemming met GEMMA
 

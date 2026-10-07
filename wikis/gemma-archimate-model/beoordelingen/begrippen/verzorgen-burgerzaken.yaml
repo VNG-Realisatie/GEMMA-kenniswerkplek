@@ -210,7 +210,7 @@ kenmerken:
     onderbouwing: Specifiek voor burgerzaken.
 definitie: 'Gemeentelijke taak rond burgerzaken: het bijhouden van de persoonsgegevens, de burgerlijke stand, reisdocumenten, het Nederlanderschap en het kiesrecht.'
 beschrijving:
-- 'Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon, Bijhouden burgerlijke stand met de akte van de burgerlijke stand en Beheren reisdocumenten met het reisdocument als kernobject.'
+- 'Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42), neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit verkrijging en verlies Nederlanderschap art. 2) en verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon, Bijhouden burgerlijke stand met de akte van de burgerlijke stand, Beheren reisdocumenten met het reisdocument, Beheren Nederlanderschap met het Nederlanderschap en Beheren stempassen met de stempas als kernobject.'
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: bron
@@ -243,6 +243,20 @@ relaties:
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 26, 40, 42
+- soort: aggregatie
+  naar: beheren-nederlanderschap
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 2, 7, 33, 63
+- soort: aggregatie
+  naar: beheren-stempassen
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  vindplaats: art. J 7, K 4, L 11
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -261,5 +275,7 @@ afgeleid:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rijk-kieswet-bwbr0004627
   herkomst: wet
   pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verzorgen-burgerzaken.md

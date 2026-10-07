@@ -29,6 +29,9 @@ bronnen:
 - 2026-rvig-hup-wijzigen-bsn
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-paspoortbesluit-bwbr0044308
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+- 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+- 2026-rijk-kieswet-bwbr0004627
 gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
 gemma_naam: Beslisser
 gemma_type: business-role
@@ -60,6 +63,10 @@ Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burg
 In de bijhouding van de basisregistratie personen beslist het college: over de inschrijving, het briefadres, de uitkomst van een adresonderzoek, geheimhouding, verstrekking, correctie, verwijdering van gegevens en de wijziging van het BSN (Besluit BRP art. 24; Circulaire adresonderzoek 4.6; HUP Verstrekkingsbeperking; HUP Wijzigen BSN).
 
 Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdocument en verklaart het vervallen (Paspoortwet art. 40, 44).
+
+Over het Nederlanderschap beslist de burgemeester: hij bevestigt of weigert de optie en bevestigt de afstand (Rijkswet op het Nederlanderschap art. 6; Besluit verkrijging en verlies Nederlanderschap art. 2, 11, 63). Over de naturalisatie beslist de minister van Justitie en Veiligheid; de burgemeester adviseert.
+
+Bij het kiesrecht beslissen burgemeester en wethouders over de registratie van de kiesgerechtigdheid en de burgemeester over een verzoek om bij volmacht te stemmen (Kieswet art. D 1, D 7, L 11).
 
 ## Plaats in het model
 
@@ -115,6 +122,10 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Beslisser | verstrekt of weigert *toewijzing* | [Behandelen aanvraag reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 40, 44) |
 | Beslisser | verklaart vervallen *toewijzing* | [Vervallen verklaren reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 44, 46) |
 | Beslisser | verstrekt of weigert *toewijzing* | [Behandelen aanvraag reisdocument niet-ingezetene](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md) | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 4.2) |
+| Beslisser | bevestigt of weigert de optie *toewijzing* | [Behandelen optieverklaring](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md) | [Rijkswet op het Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md), [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (Rijkswet art. 6 lid 3-5; Besluit art. 11) |
+| Beslisser | bevestigt de afstand *toewijzing* | [Behandelen verklaring van afstand](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 63) |
+| Beslisser | beslist op het verzoek *toewijzing* | [Behandelen verzoek om volmacht](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-volmacht.md) | [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (art. L 11) |
+| Beslisser | beslist op een aanvraag tot wijziging *toewijzing* | [Registreren kiesgerechtigdheid](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md) | [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (art. D 7) |
 
 #### Inkomend
 
@@ -144,6 +155,9 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [HUP BRP: Wijzigen bsn](../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-bsn.md) | HUP BRP: Wijzigen bsn |
 | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
 | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) | Paspoortbesluit |
+| [Rijkswet op het Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) | Rijkswet op het Nederlanderschap |
+| [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
+| [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
 
 ### Afstemming met GEMMA
 

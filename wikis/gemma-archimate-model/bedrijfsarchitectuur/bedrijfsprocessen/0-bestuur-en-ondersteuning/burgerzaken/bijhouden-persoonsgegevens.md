@@ -42,6 +42,10 @@ bronnen:
 - 2026-rvig-hup-wijziging-naamgebruik
 - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
 - 2026-rvig-hup-overlijden-buitenland
+- 2026-rvig-hup-nederlandse-nationaliteit
+- 2026-rijk-kieswet-bwbr0004627
+- 2026-rvig-hup-kiesrecht
+- 2026-rvig-hup-nederlands-kiesrecht
 ---
 
 # Bijhouden persoonsgegevens
@@ -78,9 +82,10 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 - **Procesniveau**: bedrijfsproces.
 - **Procesindeling naar taak, onderdeel van**: [Verzorgen burgerzaken](verzorgen-burgerzaken.md).
-- **Procesindeling naar taak, omvat**: [Behandelen verzoek om correctie](behandelen-verzoek-om-correctie.md), [Behandelen verzoek om geheimhouding](behandelen-verzoek-om-geheimhouding.md), [Behandelen verzoek om verwijdering van gegevens](behandelen-verzoek-om-verwijdering-van-gegevens.md), [Inschrijven ingezetene](inschrijven-ingezetene.md), [Inschrijven levenloos geboren kind](inschrijven-levenloos-geboren-kind.md), [Inschrijven niet-ingezetene](inschrijven-niet-ingezetene.md), [Inschrijven op briefadres](inschrijven-op-briefadres.md), [Uitvoeren adresonderzoek](uitvoeren-adresonderzoek.md), [Verstrekken overzicht gegevensverstrekkingen](verstrekken-overzicht-gegevensverstrekkingen.md), [Verstrekken persoonsgegevens](verstrekken-persoonsgegevens.md), [Verwerken adreswijziging](verwerken-adreswijziging.md), [Verwerken buitenlands document](verwerken-buitenlands-document.md), [Verwerken emigratie](verwerken-emigratie.md), [Wijzigen identificatienummers](wijzigen-identificatienummers.md), [Wijzigen naamgebruik](wijzigen-naamgebruik.md).
+- **Procesindeling naar taak, omvat**: [Behandelen verzoek om correctie](behandelen-verzoek-om-correctie.md), [Behandelen verzoek om geheimhouding](behandelen-verzoek-om-geheimhouding.md), [Behandelen verzoek om verwijdering van gegevens](behandelen-verzoek-om-verwijdering-van-gegevens.md), [Inschrijven ingezetene](inschrijven-ingezetene.md), [Inschrijven levenloos geboren kind](inschrijven-levenloos-geboren-kind.md), [Inschrijven niet-ingezetene](inschrijven-niet-ingezetene.md), [Inschrijven op briefadres](inschrijven-op-briefadres.md), [Registreren kiesgerechtigdheid](registreren-kiesgerechtigdheid.md), [Uitvoeren adresonderzoek](uitvoeren-adresonderzoek.md), [Verstrekken overzicht gegevensverstrekkingen](verstrekken-overzicht-gegevensverstrekkingen.md), [Verstrekken persoonsgegevens](verstrekken-persoonsgegevens.md), [Verwerken adreswijziging](verwerken-adreswijziging.md), [Verwerken buitenlands document](verwerken-buitenlands-document.md), [Verwerken emigratie](verwerken-emigratie.md), [Wijzigen identificatienummers](wijzigen-identificatienummers.md), [Wijzigen naamgebruik](wijzigen-naamgebruik.md).
 - **Kernobject**: [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md).
 - **Functie-indeling naar domein, bediend door**: [Bevolkingsadministratie bijhouding](../../../bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md).
+- **Gestart door gebeurtenis**: [Verkrijging van het Nederlanderschap](../../../gebeurtenissen/verkrijging-van-het-nederlanderschap.md), [Verlies van het Nederlanderschap](../../../gebeurtenissen/verlies-van-het-nederlanderschap.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
@@ -132,6 +137,9 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | Bijhouden persoonsgegevens | omvat *aggregatie* | [Inschrijven levenloos geboren kind](inschrijven-levenloos-geboren-kind.md) | [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [HUP BRP: Geboorte](../../../../bronanalyses/burgerzaken/2026-rvig-hup-geboorte.md) (art. 2.56a) |
 | Bijhouden persoonsgegevens | omvat *aggregatie* | [Wijzigen naamgebruik](wijzigen-naamgebruik.md) | [HUP BRP: Wijziging naamgebruik](../../../../bronanalyses/burgerzaken/2026-rvig-hup-wijziging-naamgebruik.md) (inleiding) |
 | Bijhouden persoonsgegevens | omvat *aggregatie* | [Verwerken buitenlands document](verwerken-buitenlands-document.md) | [Utrecht Buitenlandse documenten inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md), [HUP BRP: Overlijden buitenland](../../../../bronanalyses/burgerzaken/2026-rvig-hup-overlijden-buitenland.md) (Utrecht; HUP art. 2.8, 2.51) |
+| Bijhouden persoonsgegevens | neemt de Nederlandse nationaliteit op en beëindigt haar *toegang (bijwerken)* | [Nederlanderschap](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/nederlanderschap.md) | [HUP Nederlandse nationaliteit](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlandse-nationaliteit.md) (HUP Nederlandse nationaliteit) |
+| Bijhouden persoonsgegevens | omvat *aggregatie* | [Registreren kiesgerechtigdheid](registreren-kiesgerechtigdheid.md) | [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-kiesrecht.md) (Kieswet art. D 1; HUP Kiesrecht) |
+| Bijhouden persoonsgegevens | omvat *aggregatie* | [Uitsluiting van het kiesrecht](../../../gebeurtenissen/uitsluiting-van-het-kiesrecht.md) | [HUP Nederlands kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) (HUP Nederlands kiesrecht) |
 
 #### Inkomend
 
@@ -143,6 +151,8 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | [Opmaken akte van overlijden](opmaken-akte-van-overlijden.md) | zendt akte aan *stroom* | Bijhouden persoonsgegevens | [HUP BRP: Overlijden nederland](../../../../bronanalyses/burgerzaken/2026-rvig-hup-overlijden-nederland.md), [Utrecht Overlijden, aangifte doen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-overlijden-aangifte-doen.md) (HUP regel 19; Utrecht Op de hoogte brengen van organisaties) |
 | [Opmaken geboorteakte](opmaken-geboorteakte.md) | zendt geboorteakte aan *stroom* | Bijhouden persoonsgegevens | [HUP BRP: Geboorte](../../../../bronanalyses/burgerzaken/2026-rvig-hup-geboorte.md), [Utrecht Geboorteaangifte doen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-geboorteaangifte-doen.md) (HUP Geboorte inleiding; Utrecht Na de aangifte) |
 | [Uitreiken reisdocument](uitreiken-reisdocument.md) | geeft uitgereikt reisdocument door aan *stroom* | Bijhouden persoonsgegevens | [HUP Uitreiking reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.md), [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) (HUP Uitreiking, inleiding; HUP Reisdocument) |
+| [Verkrijging van het Nederlanderschap](../../../gebeurtenissen/verkrijging-van-het-nederlanderschap.md) | leidt tot bijhouding van nationaliteit, verblijfstitel en Europees kiesrecht *triggering* | Bijhouden persoonsgegevens | [HUP Nederlandse nationaliteit](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlandse-nationaliteit.md), [HUP Verblijfstitel](../../../../bronanalyses/burgerzaken/2026-rvig-hup-verblijfstitel.md), [HUP Europees kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-europees-kiesrecht.md) (HUP Nederlandse nationaliteit; HUP Verblijfstitel; HUP Europees kiesrecht) |
+| [Verlies van het Nederlanderschap](../../../gebeurtenissen/verlies-van-het-nederlanderschap.md) | leidt tot beëindiging van de Nederlandse nationaliteit *triggering* | Bijhouden persoonsgegevens | [HUP Nederlandse nationaliteit](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlandse-nationaliteit.md) (HUP Nederlandse nationaliteit, kop Verlies) |
 | [Verwerken vermissing reisdocument](verwerken-vermissing-reisdocument.md) | geeft vermissing door aan *stroom* | Bijhouden persoonsgegevens | [HUP Inhouding, inlevering of vermissing](../../../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md), [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) (HUP Inhouding, inleiding; HUP Reisdocument) |
 | [Verzorgen burgerzaken](verzorgen-burgerzaken.md) | omvat *aggregatie* | Bijhouden persoonsgegevens | [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) (art. 1.4, hoofdstuk 2) |
 | [Voltrekken huwelijk](voltrekken-huwelijk.md) | zendt huwelijksakte aan *stroom* | Bijhouden persoonsgegevens | [HUP BRP: Huwelijk en geregistreerd partnerschap](../../../../bronanalyses/burgerzaken/2026-rvig-hup-huwelijkgeregistreerd-partnerschap.md) (inleiding) |
@@ -177,6 +187,10 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | [HUP BRP: Wijziging naamgebruik](../../../../bronanalyses/burgerzaken/2026-rvig-hup-wijziging-naamgebruik.md) | HUP BRP: Wijziging naamgebruik |
 | [Utrecht Buitenlandse documenten inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md) | Gemeente Utrecht: Buitenlandse documenten inschrijven |
 | [HUP BRP: Overlijden buitenland](../../../../bronanalyses/burgerzaken/2026-rvig-hup-overlijden-buitenland.md) | HUP BRP: Overlijden buitenland |
+| [HUP Nederlandse nationaliteit](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlandse-nationaliteit.md) | HUP BRP: Nederlandse nationaliteit |
+| [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
+| [HUP Kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-kiesrecht.md) | HUP BRP: Kiesrecht |
+| [HUP Nederlands kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) | HUP BRP: Nederlands kiesrecht |
 
 ### Afstemming met GEMMA
 

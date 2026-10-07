@@ -1,0 +1,260 @@
+begrip: Verkrijging van het Nederlanderschap
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Wetsbegrip: verkrijging van rechtswege, door optie of door verlening (Rijkswet art. 3-7); de HUP behandelt de verkrijging als gebeurtenis in de BRP.'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-rvig-hup-nederlandse-nationaliteit
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente reikt de bevestiging of het uittreksel uit, waarmee de verkrijging in werking treedt, en verwerkt haar in de basisregistratie personen (Besluit art. 60a, 60b; HUP Nederlandse nationaliteit).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-rvig-hup-nederlandse-nationaliteit
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandige gebeurtenis met eigen gevolgen voor BRP, reisdocument en kiesrecht (HUP Nederlandse nationaliteit).
+    bronnen:
+    - 2026-rvig-hup-nederlandse-nationaliteit
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: verandert de toestand van het Nederlanderschap, kernobject van dit onderwerp.'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gebeurt.
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: ja
+    onderbouwing: 'Op één moment wordt de persoon Nederlander: van rechtswege, of bij de uitreiking van de bevestiging of het uittreksel, met terugwerkende kracht tot de dagtekening (Rijkswet art. 3; Besluit art. 60a lid 1, 60b lid 1).'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elke persoon die Nederlander wordt.
+    bronnen:
+    - 2026-rvig-hup-nederlandse-nationaliteit
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: ja
+    onderbouwing: 'Start Bijhouden persoonsgegevens: opnemen van de Nederlandse nationaliteit en beëindigen van vreemde en onbekende nationaliteiten, de verblijfstitel en de aanduiding Europees kiesrecht (HUP Nederlandse nationaliteit; HUP Vreemde nationaliteit); en het verval van een reisdocument voor vluchtelingen of vreemdelingen (Paspoortwet art. 47 lid 1 onder b).'
+    bronnen:
+    - 2026-rvig-hup-nederlandse-nationaliteit
+    - 2026-rvig-hup-vreemde-nationaliteit
+    - 2026-rijk-paspoortwet-bwbr0005212
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het moment waarop een persoon Nederlander wordt, van rechtswege of door de uitreiking van de bevestiging van de optie of het naturalisatiebesluit.
+beschrijving:
+- Het Nederlanderschap wordt verkregen van rechtswege, bij geboorte, erkenning of adoptie, of door optie of verlening (Rijkswet op het Nederlanderschap art. 3-7). Bij optie en naturalisatie treedt de verkrijging in werking door de uitreiking van de bevestiging of van het uittreksel van het besluit, en werkt terug tot de dagtekening (Besluit verkrijging en verlies Nederlanderschap art. 60a, 60b).
+- In de basisregistratie personen wordt de Nederlandse nationaliteit opgenomen, met de datum van naturalisatie of optiebevestiging als ingangsdatum; de registratie van vreemde en onbekende nationaliteiten en van staatloosheid, de verblijfstitel en de aanduiding Europees kiesrecht worden beëindigd (HUP Nederlandse nationaliteit; HUP Vreemde nationaliteit; HUP Verblijfstitel; HUP Europees kiesrecht). Een reisdocument voor vluchtelingen of vreemdelingen vervalt van rechtswege (Paspoortwet art. 47 lid 1 onder b).
+synoniemen:
+- naam: Verkrijging Nederlanderschap
+  context: informatiemodel
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: triggering
+  naar: bijhouden-persoonsgegevens
+  naam: leidt tot bijhouding van nationaliteit, verblijfstitel en Europees kiesrecht
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2026-rvig-hup-verblijfstitel
+  - 2026-rvig-hup-europees-kiesrecht
+  vindplaats: HUP Nederlandse nationaliteit; HUP Verblijfstitel; HUP Europees kiesrecht
+- soort: triggering
+  naar: verval-van-het-reisdocument
+  naam: doet een reisdocument voor vluchtelingen of vreemdelingen vervallen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  vindplaats: Paspoortwet art. 47 lid 1 onder b
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rvig-hup-vreemde-nationaliteit
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-verblijfstitel
+  - 2026-rvig-hup-europees-kiesrecht
+  herkomst: wet
+  pad: bedrijfsarchitectuur/gebeurtenissen/verkrijging-van-het-nederlanderschap.md

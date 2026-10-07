@@ -1,0 +1,274 @@
+begrip: Behandelen verzoek om kiezerspas
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Kiezerspas: UPL-product (nr. 208) en wetsbegrip (Kieswet art. K 1, K 4).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-kieswet-bwbr0004627
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De kiezer richt het verzoek aan de burgemeester, die de kiezerspas uitreikt of verzendt (Kieswet art. K 3, K 4).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: deelproces van Beheren stempassen.'
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Per verzoek doorlopen (Kieswet art. K 3, K 4).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: 'Kiezer: richt het verzoek aan de burgemeester (Kieswet art. K 3).'
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert de kiezerspas, een specialisatie van de stempas, en beëindigt de stempas, die ongeldig wordt (Kieswet art. K 4, J 7a lid 2 onder a).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  aanleiding:
+    waarde: ja
+    onderbouwing: Het schriftelijke of mondelinge verzoek van de kiezer (Kieswet art. K 3).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De kiezerspas, uitgereikt of verzonden als bewijs dat aan het verzoek is voldaan (Kieswet art. K 4 lid 1).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elk verzoek.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Kieswet art. K 1-K 6: termijnen, kopie identiteitsbewijs, formulier, geen vervanging.'
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: Draagt bij aan Beheren stempassen.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: De bron noemt geen besluit; de kiezerspas is het bewijs dat aan het verzoek is voldaan (Kieswet art. K 4).
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Kiezerspas (UPL nr. 208).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+    - 2026-vng-gemma-2026-10-02
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+kernobject: stempas
+afnemer: extern
+definitie: Het behandelen van het verzoek van een kiezer om in een stembureau naar keuze te stemmen, tot uitreiking van een kiezerspas.
+beschrijving:
+- De kiezer richt zijn verzoek schriftelijk, tot de vijfde dag voor de stemming, of mondeling in persoon, tot de dag voor de stemming om twaalf uur, aan de burgemeester van de gemeente waar hij op de dag van de kandidaatstelling als kiezer is geregistreerd, met een kopie van een identiteitsbewijs; de burgemeester maakt de termijnen bekend in het gemeenteblad (Kieswet art. K 3, K 6). Als bewijs krijgt de kiezer een kiezerspas, waarmee hij in het hele gebied van de verkiezing kan stemmen; een kwijtgeraakte kiezerspas wordt niet vervangen en de stempas wordt ongeldig (art. K 1, K 4, J 7a).
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+gemma_generiek:
+  id: id-49fe8555-b001-4c86-9a81-20491e16af75
+  onderbouwing: Een aanvraag voor een document dat na een directe toets wordt uitgereikt of verzonden.
+relaties:
+- soort: toegang (registreren)
+  naar: stempas
+  naam: reikt een kiezerspas uit in plaats van de stempas
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  vindplaats: art. K 4, J 7a lid 2 onder a
+- soort: realisatie
+  naar: kiezerspas
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-kieswet-bwbr0004627
+  vindplaats: UPL nr. 208
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-vng-gemma-2026-10-02
+  herkomst: wet
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-kiezerspas.md

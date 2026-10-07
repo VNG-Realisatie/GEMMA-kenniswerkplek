@@ -218,7 +218,7 @@ per_onderwerp:
   lijkbezorging:
   - 'Burgerlijke stand diensten valt eronder: na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof tot begraving of crematie af (RVO; Wet op de lijkbezorging art. 11).'
   burgerzaken:
-  - 'Bevolkingsadministratie bijhouding valt eronder: de bijhouding van de basisregistratie personen en de diensten daarover. Officiële documenten verstrekking valt eronder: de verstrekking van reisdocumenten (Paspoortwet art. 40). De legalisatie van een handtekening en het waarmerken van een kopie van een reisdocument aan de balie vallen er direct onder (Utrecht Handtekening legaliseren; Utrecht Waarmerken kopie).'
+  - 'Bevolkingsadministratie bijhouding valt eronder: de bijhouding van de basisregistratie personen en de diensten daarover. Officiële documenten verstrekking valt eronder: de verstrekking van reisdocumenten (Paspoortwet art. 40). De legalisatie van een handtekening en het waarmerken van een kopie van een reisdocument aan de balie vallen er direct onder (Utrecht Handtekening legaliseren; Utrecht Waarmerken kopie). Nederlanderschap diensten valt eronder: de diensten rond optie, naturalisatie, afstand en het bewijs van Nederlanderschap (Besluit verkrijging en verlies Nederlanderschap art. 2). Verkiezingen gerelateerde diensten valt eronder, in dit onderwerp alleen met de taak voor de kiezer: stempas, kiezerspas, volmacht en de registratie van de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11).'
 domein: Publieksdiensten
 grondslag: bron
 gemma:
@@ -289,6 +289,20 @@ relaties:
   bronnen:
   - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
   vindplaats: regel 17-19
+- soort: aggregatie
+  naar: nederlanderschap-diensten
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-vng-gemma-2026-10-02
+  vindplaats: GEMMA-relatie id-21417578-47f0-4f78-a4ba-50b4ee134815
+- soort: aggregatie
+  naar: verkiezingen-gerelateerde-diensten
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-vng-gemma-2026-10-02
+  vindplaats: GEMMA-relatie id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Thuisonderwerp Algemeen (regel Thuishoren): een generieke functie die de publieksdiensten van alle onderwerpen dient; Lijkbezorging en Burgerzaken houden hun tekst per onderwerp. Het object in Archi blijft.'

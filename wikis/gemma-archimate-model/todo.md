@@ -35,7 +35,3 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 - **Belanghebbende** beoordelen in Algemeen (Awb art. 1:2; besluit 2026-10-06: generiek, hoort bij Algemeen). Nu nog een verwijzing in Lijkbezorging; vraagt een volledige beoordeling met bron en GGM-terugmelding 9.
 - **Bronanalyse per onderwerp in de render**: een bron met een bronanalyse in meer onderwerpen (UPL extern: lijkbezorging en burgerzaken) krijgt op elke pagina een link naar de alfabetisch eerste lens; sinds Burgerzaken linken lijkbezorgingspagina's naar de lens van Burgerzaken. Kies de lens van het thuisonderwerp van de pagina.
-
-## Burgerzaken
-
-- **Rijkskant in plak 4**: bekijk bij Nederlanderschap of de minister van BZK (RvIG) en de IND zichtbaar moeten worden, in één keer voor BRP, reisdocumenten en Nederlanderschap (actor of rol Ketenpartner). Nu geen element; zijn registers zijn invoer (besluit redacteur 2026-10-07).

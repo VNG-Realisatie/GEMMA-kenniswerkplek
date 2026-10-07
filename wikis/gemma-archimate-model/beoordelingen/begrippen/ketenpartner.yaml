@@ -1,6 +1,8 @@
 begrip: Ketenpartner
 onderwerpen:
+- algemeen
 - lijkbezorging
+- burgerzaken
 kenmerken:
   herkenbaar:
     waarde: ja
@@ -26,9 +28,10 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Geen ander onderwerp beoordeelt het.
+    onderbouwing: 'Generieke GEMMA-rol die in elk onderwerp kan gelden; nu in lijkbezorging en burgerzaken: thuisonderwerp Algemeen (regel Thuishoren; precedent Beslisser, besluit redacteur 2026-10-06).'
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-gemma-2026-10-02
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
@@ -202,6 +205,8 @@ per_onderwerp:
   lijkbezorging:
   - 'De officier van justitie is ketenpartner in Bezorgen stoffelijk overschot: hij ontvangt bij een niet-natuurlijke dood het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (Wet op de lijkbezorging art. 10, 12, 17).'
   - 'De arts is als behandelende arts ketenpartner in Bezorgen stoffelijk overschot: hij schouwt het stoffelijk overschot en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).'
+  burgerzaken:
+  - 'Het Rijk is ketenpartner in Beheren Nederlanderschap via de minister van Justitie en Veiligheid, in de praktijk de IND: hij ontvangt het naturalisatieverzoek met het advies van de burgemeester, beoordeelt het en beslist; de Koning verleent het Nederlanderschap op zijn voordracht, en hij adviseert bij sommige opties en kan het Nederlanderschap intrekken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Rijkswet op het Nederlanderschap art. 6 lid 3, 7, 15; Utrecht). Bijhouden persoonsgegevens en Beheren reisdocumenten zijn geen ketenproces: de minister van BZK voert daar tegenover de burger geen eigen deel uit.'
 doelgroep: ketenpartners
 grondslag: bron
 gemma:
@@ -230,6 +235,14 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 3, 7 lid 1
+- soort: toewijzing
+  naar: beheren-nederlanderschap
+  naam: beoordeelt en beslist over de naturalisatie
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  vindplaats: Besluit art. 37, 38; Utrecht
 beschrijving:
 - Een ketenpartner is een andere organisatie die een eigen deel van een ketenproces uitvoert, vanuit een eigen wettelijke taak, en niet als klant of alleen als adviseur. GEMMA kent de rol Ketenpartner in de procesarchitectuur en de doelgroep Ketenpartners.
 besluiten:
@@ -257,6 +270,8 @@ afgeleid:
   bronnen:
   - 2026-vng-gemma-2026-10-02
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   herkomst: wet
   gemma:
     gemma_id: id-e03a0402-1890-4a21-8143-c44a8ba53ea4

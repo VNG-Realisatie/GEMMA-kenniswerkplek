@@ -146,9 +146,16 @@ KENMERKEN: list[Kenmerk] = [
             "GEMMA (rol wordt toegewezen aan functie); besluit redacteur 2026-10-01 (ook aan proces)",
             _bij("hoedanigheid", "samenwerkingsverband")),
     Kenmerk("soort_partij", "soort partij", "Partij",
-            "Komt deze partij met dezelfde rol bij elke gemeente voor, en is het geen individuele organisatie?",
-            "Gemeente; College van B&W; Kerkgenootschap", "gemeente Utrecht (één gemeente)",
-            "GEMMA (referentiemodel voor alle gemeenten)", _bij("handelende_partij", "samenwerkingsverband")),
+            "Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten "
+            "geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk "
+            "maar één keer bestaat.",
+            "Gemeente; College van B&W; Kerkgenootschap; Rijk, Provincie en Waterschap (de bestuurslaag als "
+            "geheel, ook al is er maar één Rijk)",
+            "gemeente Utrecht, provincie Utrecht (één exemplaar, niet elke gemeente heeft ermee te maken); een "
+            "afzonderlijk ministerie of rijksdienst (minister van BZK, IND) is geen eigen actor maar staat in de "
+            "beschrijving van Rijk",
+            "GEMMA (referentiemodel voor alle gemeenten); besluit redacteur 2026-10-07 (Rijk)",
+            _bij("handelende_partij", "samenwerkingsverband")),
     Kenmerk("ontsluit_een_dienst", "ontsluit een dienst", "Partij",
             "Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst.",
             "website → Melding openbare ruimte doen", "kanaal zonder aanwijsbare dienst",

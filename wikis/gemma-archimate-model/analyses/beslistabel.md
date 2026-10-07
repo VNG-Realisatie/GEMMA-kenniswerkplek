@@ -54,7 +54,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 16. Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? (*eigen rechtspersoon*)
 17. Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? Noem de rol. (*vervult een rol*)
 18. Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? Noem het. (*voert gedrag uit*)
-19. Komt deze partij met dezelfde rol bij elke gemeente voor, en is het geen individuele organisatie? (*soort partij*)
+19. Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. (*soort partij*)
 20. Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst. (*ontsluit een dienst*)
 
 **Soort gedrag.** Alleen bij *gedrag*. Precies één ja.
@@ -146,7 +146,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 | **eigen rechtspersoon**: Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | Ja: GGD (openbaar lichaam). Nee: Zorg- en Veiligheidshuis. Herkomst: besluit redacteur 2026-10-01 (scheidslijn actor en bedrijfssamenwerking). |
 | **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? Noem de rol. | Ja: kerkgenootschap vervult Houder van de begraafplaats. Nee: partij die alleen genoemd wordt. Herkomst: GEMMA (actor wordt toegewezen aan rol). |
 | **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? Noem het. | Ja: Houder van de begraafplaats → Ruimen graf. Nee: rol zonder aanwijsbaar gedrag. Herkomst: GEMMA (rol wordt toegewezen aan functie); besluit redacteur 2026-10-01 (ook aan proces). |
-| **soort partij**: Komt deze partij met dezelfde rol bij elke gemeente voor, en is het geen individuele organisatie? | Ja: Gemeente; College van B&W; Kerkgenootschap. Nee: gemeente Utrecht (één gemeente). Herkomst: GEMMA (referentiemodel voor alle gemeenten). |
+| **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja: Gemeente; College van B&W; Kerkgenootschap; Rijk, Provincie en Waterschap (de bestuurslaag als geheel, ook al is er maar één Rijk). Nee: gemeente Utrecht, provincie Utrecht (één exemplaar, niet elke gemeente heeft ermee te maken); een afzonderlijk ministerie of rijksdienst (minister van BZK, IND) is geen eigen actor maar staat in de beschrijving van Rijk. Herkomst: GEMMA (referentiemodel voor alle gemeenten); besluit redacteur 2026-10-07 (Rijk). |
 | **ontsluit een dienst**: Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst. | Ja: website → Melding openbare ruimte doen. Nee: kanaal zonder aanwijsbare dienst. Herkomst: GEMMA (kanaal wordt toegewezen aan dienst). |
 
 **Soort gedrag.** Alleen bij *gedrag*. Precies één ja.

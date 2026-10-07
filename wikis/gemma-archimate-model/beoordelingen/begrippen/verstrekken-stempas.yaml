@@ -1,0 +1,267 @@
+begrip: Verstrekken stempas
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Elke kiezer ontvangt een stempas, en bij verlies op verzoek een nieuwe (Kieswet art. J 7, J 8; UPL nr. 397).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+    - 2025-vng-upl-producten-en-diensten-extern
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester stelt de gegevens vast en verstrekt de stempas (Kieswet art. J 7, J 8).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: deelproces van Beheren stempassen.'
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Per verkiezing voor elke kiezer doorlopen, en per verzoek om een nieuwe stempas (Kieswet art. J 7, J 8).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: 'Kiezer: ontvangt de stempas en verzoekt om een nieuwe (Kieswet art. J 7 lid 2, J 8).'
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert en vervangt de stempas (Kieswet art. J 7, J 8); raadpleegt de als kiezer geregistreerde ingeschreven personen (art. J 7 lid 1).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  aanleiding:
+    waarde: ja
+    onderbouwing: De dag van de kandidaatstelling, en voor een nieuwe stempas het verzoek van de kiezer (Kieswet art. J 7 lid 1, J 8 lid 2).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een stempas met volgnummer bij elke kiezer, ten minste veertien dagen voor de stemming, of een vervangende stempas (Kieswet art. J 7 lid 2, J 8 lid 1).
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elke verkiezing.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Kieswet art. J 7, J 7a, J 8: veertien dagen voor de stemming, verzoek tot de vijfde dag of tot de dag voor de stemming om twaalf uur, kopie identiteitsbewijs, geen vervanging van een ongeldige stempas.'
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: Draagt bij aan Beheren stempassen.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: De verstrekking volgt uit de registratie als kiezer; de bron noemt geen besluit.
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Stempas ontvangen (UPL nr. 397).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+kernobject: stempas
+afnemer: extern
+definitie: Het vaststellen, personaliseren en toezenden van stempassen aan de kiezers, en het uitreiken van een nieuwe stempas op verzoek.
+beschrijving:
+- Daags na de kandidaatstelling stelt de burgemeester de gegevens vast voor het personaliseren van de stempassen, met de informatie van de minister voor de productie (Kieswet art. J 7 lid 1 en 4). Ten minste veertien dagen voor de stemming ontvangt elke kiezer een stempas met volgnummer (art. J 7 lid 2). Wie zijn stempas kwijt is of niet heeft ontvangen, vraagt schriftelijk tot de vijfde dag voor de stemming of mondeling tot de dag voor de stemming om twaalf uur een nieuwe aan, met een kopie van een identiteitsbewijs; de oude wordt ongeldig. Een stempas die ongeldig is door een kiezerspas, volmacht, briefstembewijs, onterechte registratie of ontvreemding, wordt niet vervangen (art. J 7a, J 8).
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: toegang (registreren)
+  naar: stempas
+  naam: verstrekt en vervangt
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  vindplaats: art. J 7, J 8
+- soort: toegang (raadplegen)
+  naar: ingeschreven-persoon
+  naam: stelt de gegevens van de geregistreerde kiezers vast
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  vindplaats: art. J 7 lid 1
+- soort: realisatie
+  naar: stempas-ontvangen
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-kieswet-bwbr0004627
+  vindplaats: UPL nr. 397
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: deelproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-stempas.md

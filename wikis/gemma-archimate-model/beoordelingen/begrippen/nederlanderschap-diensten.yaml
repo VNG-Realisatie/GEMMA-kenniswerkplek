@@ -1,0 +1,292 @@
+begrip: Nederlanderschap diensten
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: GEMMA-bedrijfsfunctie Nederlanderschap diensten, onder Producten- en dienstenrealisatie publieksdiensten (GEMMA).
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit art. 2, 63).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandige groepering van gedrag.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: bedient Beheren Nederlanderschap.'
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: ja
+    onderbouwing: Doorlopende groepering van de dienstverlening rond het Nederlanderschap, op grond van dezelfde kennis van de Rijkswet en het Besluit, zonder eigen volgorde (GEMMA).
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: De bron wijst geen rol aan de functie toe; de rollen hangen aan de processen.
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert en beëindigt het Nederlanderschap en raadpleegt de ingeschreven persoon (Besluit art. 9, 11, 60a, 63).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: ja
+    onderbouwing: De taak volgt uit de wet en blijft bij een andere organisatie of werkwijze (Besluit art. 2).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: ja
+    onderbouwing: Bedient Beheren Nederlanderschap (Besluit art. 2, 7, 33, 63).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-vng-gemma-2026-10-02
+  in_functie_indeling:
+    waarde: ja
+    onderbouwing: Onder Producten- en dienstenrealisatie publieksdiensten (GEMMA).
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp.
+    bronnen:
+    - 2026-vng-gemma-2026-10-02
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+domein: Publieksdiensten
+definitie: Het behandelen van aanvragen van de Nederlandse nationaliteit of het verkrijgen van bewijs daarvan.
+beschrijving:
+- GEMMA noemt als voorbeeld het beoordelen of iemand in aanmerking komt voor de naturalisatie- of optieprocedure en het in gang zetten daarvan (GEMMA, toelichting bij de functie).
+per_onderwerp:
+  burgerzaken:
+  - De functie bedient Beheren Nederlanderschap en omvat de diensten Naturalisatieoptie, Naturalisatieverzoek, Naturalisatieceremonie, Verklaring van afstand nederlandse nationaliteit en Bewijs van nederlanderschap (UPL nr. 262, 263, 261, 436, 62).
+grondslag: bron
+gemma:
+  id: id-4c27c433-eded-46a9-bef1-002b82759ca9
+  sterkte: exact
+  onderbouwing: 'Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Nederlanderschap diensten.'
+relaties:
+- soort: bediening
+  naar: beheren-nederlanderschap
+  naam: bedient
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-vng-gemma-2026-10-02
+  vindplaats: Besluit art. 2
+- soort: aggregatie
+  naar: naturalisatieoptie
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 262 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: naturalisatieverzoek
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 263 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: naturalisatieceremonie
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 261 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: verklaring-van-afstand-nederlandse-nationaliteit
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 436 (GEMMA-domein Publieksdiensten)
+- soort: aggregatie
+  naar: bewijs-van-nederlanderschap
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 62 (GEMMA-domein Publieksdiensten)
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *toegewezen partij*)'
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-vng-gemma-2026-10-02
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: wet
+  gemma:
+    gemma_id: id-4c27c433-eded-46a9-bef1-002b82759ca9
+    gemma_naam: Nederlanderschap diensten
+    gemma_type: business-function
+    gemma_definitie: Het behandelen van aanvragen van de Nederlandse nationaliteit of het verkrijgen van bewijs daarvan
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: 4c27c433-eded-46a9-bef1-002b82759ca9
+      Toelichting: Bijv. het beoordelen of iemand in aanmerking komt voor naturalisatieprocedure of optieprocedure en het in gang zetten daarvan
+  pad: bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/nederlanderschap-diensten.md

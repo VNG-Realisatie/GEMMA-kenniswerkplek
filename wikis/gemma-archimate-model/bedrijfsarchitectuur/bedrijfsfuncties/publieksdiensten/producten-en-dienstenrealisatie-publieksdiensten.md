@@ -55,7 +55,7 @@ Burgerlijke stand diensten valt eronder: na aangifte van overlijden geeft de gem
 
 #### [Burgerzaken](../../../begrippen/burgerzaken.md)
 
-Bevolkingsadministratie bijhouding valt eronder: de bijhouding van de basisregistratie personen en de diensten daarover. Officiële documenten verstrekking valt eronder: de verstrekking van reisdocumenten (Paspoortwet art. 40). De legalisatie van een handtekening en het waarmerken van een kopie van een reisdocument aan de balie vallen er direct onder (Utrecht Handtekening legaliseren; Utrecht Waarmerken kopie).
+Bevolkingsadministratie bijhouding valt eronder: de bijhouding van de basisregistratie personen en de diensten daarover. Officiële documenten verstrekking valt eronder: de verstrekking van reisdocumenten (Paspoortwet art. 40). De legalisatie van een handtekening en het waarmerken van een kopie van een reisdocument aan de balie vallen er direct onder (Utrecht Handtekening legaliseren; Utrecht Waarmerken kopie). Nederlanderschap diensten valt eronder: de diensten rond optie, naturalisatie, afstand en het bewijs van Nederlanderschap (Besluit verkrijging en verlies Nederlanderschap art. 2). Verkiezingen gerelateerde diensten valt eronder, in dit onderwerp alleen met de taak voor de kiezer: stempas, kiezerspas, volmacht en de registratie van de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11).
 
 ## Plaats in het model
 
@@ -66,7 +66,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 ### Plaats in de indelingen
 
 - **Functie-indeling naar domein, onderdeel van**: [Uitvoering Publieksdiensten](uitvoering-publieksdiensten.md).
-- **Functie-indeling naar domein, omvat**: [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md), [Bevolkingsadministratie bijhouding](bevolkingsadministratie-bijhouding.md), [Burgerlijke stand diensten](burgerlijke-stand-diensten.md), [Gewaarmerkte kopie reisdocument aanvragen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/gewaarmerkte-kopie-reisdocument-aanvragen.md), [Legalisatie handtekening](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md), [Officiële documenten verstrekking](officiele-documenten-verstrekking.md), [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md).
+- **Functie-indeling naar domein, omvat**: [Begraafplaatsregister](../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md), [Bevolkingsadministratie bijhouding](bevolkingsadministratie-bijhouding.md), [Burgerlijke stand diensten](burgerlijke-stand-diensten.md), [Gewaarmerkte kopie reisdocument aanvragen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/gewaarmerkte-kopie-reisdocument-aanvragen.md), [Legalisatie handtekening](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md), [Nederlanderschap diensten](nederlanderschap-diensten.md), [Officiële documenten verstrekking](officiele-documenten-verstrekking.md), [Vergunningenbeheer Publieksdiensten](vergunningenbeheer-publieksdiensten.md), [Verkiezingen gerelateerde diensten](verkiezingen-gerelateerde-diensten.md).
 - **Domein**: Publieksdiensten.
 
 ### Kenmerken
@@ -104,6 +104,8 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Officiële documenten verstrekking](officiele-documenten-verstrekking.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-1f944d4b-41d8-40cb-be75-8706806e07cc) |
 | Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Gewaarmerkte kopie reisdocument aanvragen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/gewaarmerkte-kopie-reisdocument-aanvragen.md) | [Utrecht Waarmerken kopie reisdocument](../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.md) (Utrecht; GEMMA-domein Publieksdiensten) |
 | Producten- en dienstenrealisatie publieksdiensten | realiseert *realisatie* | [Gewaarmerkte kopie reisdocument aanvragen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/gewaarmerkte-kopie-reisdocument-aanvragen.md) | [Utrecht Waarmerken kopie reisdocument](../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.md) (regel 17-19) |
+| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Nederlanderschap diensten](nederlanderschap-diensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-21417578-47f0-4f78-a4ba-50b4ee134815) |
+| Producten- en dienstenrealisatie publieksdiensten | omvat *aggregatie* | [Verkiezingen gerelateerde diensten](verkiezingen-gerelateerde-diensten.md) | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff) |
 
 #### Inkomend
 

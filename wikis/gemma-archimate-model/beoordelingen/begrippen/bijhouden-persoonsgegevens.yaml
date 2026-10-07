@@ -387,6 +387,28 @@ relaties:
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
   - 2026-rvig-hup-overlijden-buitenland
   vindplaats: Utrecht; HUP art. 2.8, 2.51
+- soort: toegang (bijwerken)
+  naar: nederlanderschap
+  naam: neemt de Nederlandse nationaliteit op en beëindigt haar
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  vindplaats: HUP Nederlandse nationaliteit
+- soort: aggregatie
+  naar: registreren-kiesgerechtigdheid
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rvig-hup-kiesrecht
+  vindplaats: Kieswet art. D 1; HUP Kiesrecht
+- soort: aggregatie
+  naar: uitsluiting-van-het-kiesrecht
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-nederlands-kiesrecht
+  vindplaats: HUP Nederlands kiesrecht
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -425,5 +447,9 @@ afgeleid:
   - 2026-rvig-hup-wijziging-naamgebruik
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
   - 2026-rvig-hup-overlijden-buitenland
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rvig-hup-kiesrecht
+  - 2026-rvig-hup-nederlands-kiesrecht
   herkomst: wet
   pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md

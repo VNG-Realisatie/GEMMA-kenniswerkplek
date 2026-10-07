@@ -37,6 +37,8 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 | [Gemeenteraad](../bedrijfsarchitectuur/actoren/gemeenteraad.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | wet |
 | [Heffing](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | wet; GGM: Heffing |
 | [Heffingsverordening](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | wet; GGM: Heffingsverordening |
+| [Ketenpartner](../bedrijfsarchitectuur/rollen/ketenpartner.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | wet |
 | [Producten- en dienstenrealisatie publieksdiensten](../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) *Bedrijfsfunctie, goedgekeurd* | Gedrag, *gegroepeerd gedrag* (kern ja, 4/4) | wet |
 | [Regeling](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | wet |
+| [Rijk](../bedrijfsarchitectuur/actoren/rijk.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | wet |
 | [Vergunning](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | wet |

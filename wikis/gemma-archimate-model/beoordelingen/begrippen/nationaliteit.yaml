@@ -160,8 +160,9 @@ kenmerken:
     waarde: ja
     onderbouwing: De gemeente neemt de nationaliteit op, ook als onbekend (HUP Nationaliteit; NVVB mededeling art. 2.17).
     bronnen:
-    - 2026-rvig-hup-nationaliteit
     - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
+    - 2026-rvig-hup-nationaliteit
+    - 2026-rvig-hup-vreemde-nationaliteit
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -204,11 +205,11 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-toelichting: 'Onderdeel van Ingeschreven persoon (categorie 04 van de persoonslijst), nu zonder eigen deelproces: geen pagina. Bij de beoordeling van het Nederlanderschap (verkrijging en verlies) krijgt het een eigen deelproces en wordt het een subobject.'
+toelichting: 'Onderdeel van Ingeschreven persoon (categorie 04 van de persoonslijst), zonder eigen deelproces: geen pagina. De Nederlandse nationaliteit heeft wel eigen processen (optie, naturalisatie, afstand) en is als Nederlanderschap een eigen element, kernobject van Beheren Nederlanderschap; de andere nationaliteiten neemt de gemeente alleen op en beëindigt ze in de bijhouding van de persoonsgegevens, op grond van brondocumenten of een mededeling van de minister (HUP Nationaliteit; HUP Vreemde nationaliteit; HUP Onbekende nationaliteit). Vreemde nationaliteit, onbekende nationaliteit en staatloosheid zijn waarden van dit gegeven zonder pagina; stapels, codes en redenen blijven buiten het model.'
 ggm:
   guid: EAID_69B41CDD_C3F1_449b_92B4_8F7657840646
   sterkte: exact
-  onderbouwing: GGM-entiteit Nationaliteit (RSGBPlus), met de reden van verkrijging en verlies; het GGM kent een tweede entiteit Nationaliteit (EAID_71B3BE0D_2BF9_4740_9597_A0EEC75AFE9B). Het duplicaat wordt beoordeeld en teruggemeld bij het Nederlanderschap.
+  onderbouwing: GGM-entiteit Nationaliteit (RSGBPlus), met de reden van verkrijging en verlies. Het GGM kent daarnaast een tweede entiteit Nationaliteit (EAID_71B3BE0D_2BF9_4740_9597_A0EEC75AFE9B) met code, omschrijving en geldigheid, in GEMMA de referentielijst van nationaliteiten, en de entiteiten NationaliteitIngeschrevenNatuurlijkPersoon en NederlandseNationaliteitIngeschrevenPersoon; de laatste is de match van het element Nederlanderschap (GGM-terugmelding 16).
 afgeleid:
   uitkomst:
     soort: onderdeel
@@ -223,5 +224,6 @@ afgeleid:
   bronnen:
   - 2026-rvig-hup-nationaliteit
   - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
+  - 2026-rvig-hup-vreemde-nationaliteit
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   herkomst: informatiemodel

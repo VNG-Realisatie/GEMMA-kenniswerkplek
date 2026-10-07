@@ -30,7 +30,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
    - *gebruikt objecten* en *wordt bewerkt*: noem de handeling uit de vaste reeks (registreren, bijwerken, beëindigen, raadplegen, verstrekken, bewaren, overbrengen, vernietigen).
    - *Procesniveau* (stap 7): een bedrijfsproces omvat de levensloop van één kernobject (*omvat levensloop*, met `kernobject`); bij meer organisaties is het een ketenproces. Een deelproces doet één mutatie of levert één product of dienst (*bijdrage aan groter proces*, met *eigen besluit*, *eigen normering* of *levert aanbod*); een product of dienst valt nooit weg. Een deel zonder dat alles is een processtap: geen pagina. Een groepering van processen (*groepeert processen*) is een taak, of een cluster naar soort werk als `gemma_generiek` is ingevuld.
    - *Objectniveau* (stap 7): een kernobject wordt bewerkt door één bedrijfs- of ketenproces; een deel van dat object met een eigen deelproces is een subobject, anders een onderdeel zonder pagina. *generiek* voor een object dat in veel onderwerpen voorkomt; *invoer van een ander* krijgt geen pagina. Voor een gebeurtenis, rol of dienst met *generiek*: vul `gemma_generiek`.
-   - *soort partij*: een actor is een soort partij die bij elke gemeente voorkomt, nooit een individuele organisatie (Amsterdam of Utrecht).
+   - *soort partij*: een actor is een partij waarmee elke gemeente in dezelfde rol te maken heeft, zodat het element voor alle gemeenten geldt. Het criterium sluit uit wat bij één of enkele gemeenten hoort (gemeente Utrecht, provincie Utrecht), niet een partij die landelijk maar één keer bestaat: Rijk, Provincie en Waterschap zijn een soort partij (de bestuurslaag als geheel). Een afzonderlijk ministerie of rijksdienst (minister van BZK, IND) is geen eigen actor; die staat in de beschrijving van Rijk (besluit redacteur 2026-10-07).
    - Een doelgroep (minima, jongeren) is geen actor of rol maar een indeling van een actor: *slechts eigenschap* ja, met de actor als `genoemd_begrip`.
    - Een regeling: een concreet benoemde landelijke regeling wordt beleidskader; de soort ("verordening") is het bedrijfsobject Regeling; een gemeentelijke verordening blijft bron; een los artikel is *buiten dit model*.
 4. Vul waar nodig de extra velden in:
@@ -111,7 +111,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 16. Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? (*eigen rechtspersoon*)
 17. Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? Noem de rol. (*vervult een rol*)
 18. Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? Noem het. (*voert gedrag uit*)
-19. Komt deze partij met dezelfde rol bij elke gemeente voor, en is het geen individuele organisatie? (*soort partij*)
+19. Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. (*soort partij*)
 20. Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst. (*ontsluit een dienst*)
 
 **Soort gedrag.** Alleen bij *gedrag*. Precies één ja.

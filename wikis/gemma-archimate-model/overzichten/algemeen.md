@@ -23,3 +23,4 @@ De views op de indelingen voor het onderwerp [Algemeen](../begrippen/algemeen.md
 ## Doelgroepen
 
 - **gemeente**: actor: [Burgemeester](../bedrijfsarchitectuur/actoren/burgemeester.md), [College van B&W](../bedrijfsarchitectuur/actoren/college-van-b-w.md), [Gemeente](../bedrijfsarchitectuur/actoren/gemeente.md), [Gemeenteraad](../bedrijfsarchitectuur/actoren/gemeenteraad.md); rol: [Beslisser](../bedrijfsarchitectuur/rollen/beslisser.md).
+- **ketenpartners**: actor: [Rijk](../bedrijfsarchitectuur/actoren/rijk.md); rol: [Ketenpartner](../bedrijfsarchitectuur/rollen/ketenpartner.md).

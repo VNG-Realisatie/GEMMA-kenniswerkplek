@@ -12,8 +12,8 @@ titel: Voortgang
 
 | Onderwerp | Status | Begrippen | Elementen |
 |---|---|---|---|
-| [Algemeen](begrippen/algemeen.md) | in-behandeling | 12 | 12 |
-| [Burgerzaken](begrippen/burgerzaken.md) | in-behandeling | 177 | 129 |
+| [Algemeen](begrippen/algemeen.md) | in-behandeling | 14 | 14 |
+| [Burgerzaken](begrippen/burgerzaken.md) | in-behandeling | 228 | 163 |
 | [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 183 | 95 |
 | [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
 
@@ -23,29 +23,29 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 | Onderwerp | Elementen | Gebruikt uit andere | Relaties binnen | Relaties met andere |
 |---|---|---|---|---|
-| Algemeen | 12 | 0 | 12 | Burgerzaken 20, Lijkbezorging 42 |
-| Burgerzaken | 123 | 6 | 351 | Algemeen 20, Lijkbezorging 9 |
-| Lijkbezorging | 78 | 17 | 199 | Algemeen 42, Burgerzaken 9 |
+| Algemeen | 14 | 0 | 13 | Burgerzaken 27, Lijkbezorging 47 |
+| Burgerzaken | 155 | 8 | 443 | Algemeen 27, Lijkbezorging 9 |
+| Lijkbezorging | 77 | 18 | 194 | Algemeen 47, Burgerzaken 9 |
 | Participatie | 0 | 0 | 0 | — |
 
 ## Elementen per type en status
 
 | Type | kandidaat | review | goedgekeurd | afgewezen |
 |---|---|---|---|---|
-| actor | 0 | 0 | 9 | 0 |
-| bedrijfsfunctie | 0 | 0 | 12 | 0 |
-| bedrijfsobject | 0 | 0 | 19 | 0 |
-| bedrijfsproces | 0 | 0 | 64 | 0 |
-| beleidskader | 0 | 0 | 10 | 0 |
-| dienst | 0 | 0 | 63 | 0 |
-| gebeurtenis | 0 | 0 | 15 | 0 |
+| actor | 0 | 0 | 10 | 0 |
+| bedrijfsfunctie | 0 | 0 | 14 | 0 |
+| bedrijfsobject | 0 | 0 | 21 | 0 |
+| bedrijfsproces | 0 | 0 | 74 | 0 |
+| beleidskader | 0 | 0 | 13 | 0 |
+| dienst | 0 | 0 | 72 | 0 |
+| gebeurtenis | 0 | 0 | 18 | 0 |
 | product | 0 | 0 | 1 | 0 |
-| rol | 0 | 0 | 20 | 0 |
+| rol | 0 | 0 | 23 | 0 |
 
 ## GGM-terugmeldingen
 
-[14 terugmeldingen](analyses/ggm-terugmeldingen.md): open 14.
+[17 terugmeldingen](analyses/ggm-terugmeldingen.md): open 17.
 
 ## Procesarchitectuur-terugmeldingen
 
-[12 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 12.
+[15 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 15.

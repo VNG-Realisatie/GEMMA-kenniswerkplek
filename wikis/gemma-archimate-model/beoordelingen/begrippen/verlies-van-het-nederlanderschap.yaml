@@ -1,0 +1,257 @@
+begrip: Verlies van het Nederlanderschap
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Wetsbegrip (Rijkswet art. 15, 16); Utrecht: de Nederlandse nationaliteit verliezen; gebeurtenis in de BRP (HUP Nederlandse nationaliteit).'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+    - 2026-rvig-hup-nederlandse-nationaliteit
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester bevestigt de afstand en de gemeente verwerkt het verlies in de basisregistratie personen en laat reisdocumenten innemen (Besluit art. 63, 64; HUP Nederlandse nationaliteit).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-rvig-hup-nederlandse-nationaliteit
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandige gebeurtenis met eigen gevolgen voor BRP en reisdocument (HUP Nationaliteit).
+    bronnen:
+    - 2026-rvig-hup-nationaliteit
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij burgerzaken: verandert de toestand van het Nederlanderschap, kernobject van dit onderwerp.'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gebeurt.
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: ja
+    onderbouwing: 'Op één moment verliest de persoon het Nederlanderschap: door afstand, het vrijwillig verkrijgen van een andere nationaliteit, langdurig hoofdverblijf buiten het Koninkrijk en de EU, of intrekking (Rijkswet art. 15).'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aanleiding:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Voor elke persoon die het Nederlanderschap verliest.
+    bronnen:
+    - 2026-rvig-hup-nederlandse-nationaliteit
+  eigen_normering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: ja
+    onderbouwing: 'Start Bijhouden persoonsgegevens: beëindigen van de Nederlandse nationaliteit en opnieuw opnemen van vreemde of onbekende nationaliteiten (HUP Nederlandse nationaliteit); en het verval van een Nederlands reisdocument van rechtswege (Paspoortwet art. 47 lid 1 onder a; HUP Nationaliteit).'
+    bronnen:
+    - 2026-rvig-hup-nederlandse-nationaliteit
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rvig-hup-nationaliteit
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in burgerzaken voor.
+definitie: Het moment waarop een persoon het Nederlanderschap verliest, door afstand, een andere nationaliteit, verblijf in het buitenland of intrekking.
+beschrijving:
+- Het Nederlanderschap gaat voor een meerderjarige verloren door het vrijwillig verkrijgen van een andere nationaliteit, door een verklaring van afstand, door dertien jaar hoofdverblijf buiten het Koninkrijk en de EU met ook een vreemde nationaliteit, of door intrekking door de minister; een minderjarige verliest het onder meer met zijn ouder (Rijkswet op het Nederlanderschap art. 14-16). Utrecht onderscheidt het opgeven, door een verklaring van afstand, van het verliezen zonder bewuste keuze.
+- In de basisregistratie personen wordt de Nederlandse nationaliteit beëindigd en worden vreemde of onbekende nationaliteiten weer opgenomen; een Nederlands reisdocument vervalt van rechtswege en de burgemeester bevordert dat het wordt ingenomen (HUP Nederlandse nationaliteit; Paspoortwet art. 47 lid 1 onder a; Besluit verkrijging en verlies Nederlanderschap art. 64 lid 3).
+synoniemen:
+- naam: Verlies Nederlanderschap
+  context: informatiemodel
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: triggering
+  naar: bijhouden-persoonsgegevens
+  naam: leidt tot beëindiging van de Nederlandse nationaliteit
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  vindplaats: HUP Nederlandse nationaliteit, kop Verlies
+- soort: triggering
+  naar: verval-van-het-reisdocument
+  naam: doet een Nederlands reisdocument vervallen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-nationaliteit
+  vindplaats: Paspoortwet art. 47 lid 1 onder a; HUP Nationaliteit
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rvig-hup-nationaliteit
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: wet
+  pad: bedrijfsarchitectuur/gebeurtenissen/verlies-van-het-nederlanderschap.md

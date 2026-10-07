@@ -175,7 +175,7 @@ Gaten die hiermee dicht gaan:
 | Gedrag | *bedient gedrag* | Ondersteunt de functie aanwijsbaar een proces? Noem het. |
 | Gedrag | *in functie-indeling* | Past de functie als onderwerp onder een soort werk in de Functie-indeling naar domein? Noem de bovenliggende functie. |
 | Gedrag | *leidt tot gebeurtenis* | Eindigt het in een benoemde toestandsverandering, of in een die een ander proces start? Noem die. |
-| Partij | *soort partij* | Komt deze partij met dezelfde rol bij elke gemeente voor, en is het geen individuele organisatie? |
+| Partij | *soort partij* | Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. |
 | Passief | *deel van object* | Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? Noem dat object. |
 | Passief | *invoer van een ander* | Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. |
 | Passief | *zelfstandig aanbod* | Wordt het onder eigen naam aangeboden, en niet als variant of tarief? |
@@ -319,3 +319,4 @@ Besluiten over de werkwijze en de criteria. Besluiten over afzonderlijke begripp
 | 2026-10-05 | Een product hangt in de Functie-indeling naar domein via `domein` direct aan de domeingroepering, niet onder een functie: ArchiMate laat een functie geen product aggregeren. Het product valt ook in de Beleidsdomeinindeling. De diensten die het omvat hangen onder hun functie. |
 | 2026-10-05 | Controle op de samenhang tussen de Beleidsdomeinindeling en de Functie-indeling naar domein: het domein van een product of dienst moet passen bij de GEMMA-domeinen die zijn beleidsdomein aggregeren; bij een beleidsdomein dat GEMMA niet kent een signaal als zijn producten en diensten in meer domeinen vallen. |
 | 2026-10-05 | Het model mag afwijken van de UPL-indeling (taakveld, GEMMA-domein, beleidsdomein in een GEMMA-domein), mits teruggemeld in de procesarchitectuur-terugmeldingen (`beoordelingen/procesarchitectuur-terugmeldingen.yaml`). |
+| 2026-10-07 | *Soort partij* betekent: elke gemeente heeft met de partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt. Het criterium sluit uit wat bij één of enkele gemeenten hoort (gemeente Utrecht, provincie Utrecht), niet een partij die landelijk maar één keer bestaat. Rijk, Provincie en Waterschap zijn een soort partij (de bestuurslaag als geheel); een afzonderlijk ministerie of rijksdienst (minister van BZK, IND) staat in de beschrijving van Rijk. Verduidelijkt het besluit van 2026-10-04 ("nooit een individuele organisatie"). |

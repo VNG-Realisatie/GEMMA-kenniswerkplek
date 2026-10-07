@@ -161,3 +161,42 @@ terugmeldingen:
   - '**Voorstel:** de definitie aanpassen: een document van het Koninkrijk op naam van een persoon waarmee hij kan reizen en zich kan identificeren, zoals een paspoort of identiteitskaart. Daarnaast de signalering opnemen, als attribuut van de ingeschreven persoon (verstrekkingsbelemmering) of als eigen groep, met ingangsdatum en verwijdering.'
   nummer: 14
   status: open
+- domein: RSGBPlus
+  entiteit: NederlandseNationaliteitIngeschrevenPersoon
+  type: definitie
+  bevinding:
+  - '**GGM:** NederlandseNationaliteitIngeschrevenPersoon heeft de definitie ''Gegevens over de nationaliteit.'', met de attributen aanduidingBijzonderNederlanderschap, redenVerkrijgingNederlandseNationaliteit, redenVerliesNederlandseNationaliteit en nationaliteit.'
+  - '**Bevinding:** de entiteit gaat over het Nederlanderschap: de Nederlandse nationaliteit, verkregen van rechtswege, door optie of door verlening, en verloren door onder meer afstand (2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738, art. 3-7, 15; 2026-rvig-hup-nederlandse-nationaliteit). De definitie onderscheidt haar niet van de andere entiteiten voor de nationaliteit.'
+  - '**Voorstel:** ''De Nederlandse nationaliteit van een persoon, verkregen van rechtswege, door optie of door naturalisatie, tot het verlies ervan.'', en de naam Nederlanderschap overwegen.'
+  element: nederlanderschap
+  nummer: 15
+  status: open
+- domein: RSGBPlus
+  entiteit: Nationaliteit
+  type: structuur
+  bevinding:
+  - '**GGM:** de nationaliteit staat in vier entiteiten in RSGBPlus:'
+  - '- Nationaliteit (EAID_69B41CDD_C3F1_449b_92B4_8F7657840646), de rechtsverhouding, met redenen van verkrijging en verlies;'
+  - '- Nationaliteit (EAID_71B3BE0D_2BF9_4740_9597_A0EEC75AFE9B), met dezelfde definitie maar met code, omschrijving en geldigheid: de referentielijst van nationaliteiten (in GEMMA de groepering Referentielijsten);'
+  - '- NationaliteitIngeschrevenNatuurlijkPersoon (EAID_261B509E_6879_4475_B5F8_77E8428816CE), met reden verkrijging en verlies en buitenlands persoonsnummer;'
+  - '- NederlandseNationaliteitIngeschrevenPersoon (EAID_BA5F2281_466D_4c69_9EB8_D10614C5CD8E), met de redenen voor de Nederlandse nationaliteit en de aanduiding bijzonder Nederlanderschap.'
+  - '**Bevinding:** de BRP kent één gegevensgroep nationaliteit per persoon, met de Nederlandse, vreemde en onbekende nationaliteit en staatloosheid als soorten, en het bijzonder Nederlanderschap in dezelfde stapel als de Nederlandse (2026-rvig-hup-nationaliteit). Twee entiteiten met dezelfde naam en definitie voor een ander begrip (rechtsverhouding en referentielijst) zijn een homoniem; de reden van verkrijging en verlies staat drie keer.'
+  - '**Voorstel:** één entiteit Nationaliteit voor de rechtsverhouding, met Nederlanderschap als specialisatie; de referentielijst een eigen naam geven (bijvoorbeeld Nationaliteitentabel); de mGBA-entiteiten daarop afbeelden.'
+  element: nederlanderschap
+  nummer: 16
+  status: open
+- domein: RSGBPlus
+  entiteit: null
+  type: hiaat
+  bevinding:
+  - '**GGM:** het GGM kent geen stempas en geen ander begrip voor de gemeentelijke taak bij verkiezingen.'
+  - '**Bevinding:** de burgemeester stelt bij elke verkiezing de gegevens van de geregistreerde kiezers vast, verstrekt elke kiezer een stempas met volgnummer, vervangt haar op verzoek en houdt een register van ongeldige stempassen bij (2026-rijk-kieswet-bwbr0004627, art. J 7, J 7a, J 8). Relevante attributen:'
+  - '- volgnummer;'
+  - '- kiezer (ingeschreven persoon) en verkiezing;'
+  - '- datum van verstrekking;'
+  - '- soort (stempas, vervangende stempas, kiezerspas, omgezet in volmachtbewijs);'
+  - '- ongeldig, met reden (art. J 7a lid 2).'
+  - '**Voorstel:** opnemen in RSGBPlus of een beleidsdomein Verkiezingen, met een relatie naar IngeschrevenPersoon.'
+  element: stempas
+  nummer: 17
+  status: open

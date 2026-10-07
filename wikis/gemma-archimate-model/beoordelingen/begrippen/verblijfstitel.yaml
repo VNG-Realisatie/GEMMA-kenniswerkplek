@@ -161,6 +161,7 @@ kenmerken:
     waarde: ja
     onderbouwing: De gemeente laat de verblijfstitel vervallen bij verkrijging van het Nederlanderschap (HUP Verblijfstitel).
     bronnen:
+    - 2026-rvig-hup-nederlandse-nationaliteit
     - 2026-rvig-hup-verblijfstitel
   afspraak:
     waarde: nee
@@ -205,7 +206,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-toelichting: 'Invoer van een andere partij: de IND levert de verblijfstitelgegevens, de gemeente neemt ze over (HUP Verblijfstitel). Geen pagina; vermeld bij Ingeschreven persoon. Het GGM kent twee entiteiten Verblijfstitel (EAID_0F51B100_1C60_4d54_9B60_1C9BF9C856A2 en EAID_A660422D_E9ED_47c9_9978_480E57572775).'
+toelichting: 'Invoer van een andere partij: de IND levert de verblijfstitelgegevens met berichten, de gemeente neemt ze over en wijzigt ze alleen in overleg met de IND (HUP Verblijfstitel). Geen pagina; vermeld bij Ingeschreven persoon. Zelf laat de gemeente de verblijfstitel vervallen op de datum waarop de persoon het Nederlanderschap verkrijgt: een gevolg van de gebeurtenis Verkrijging van het Nederlanderschap in Bijhouden persoonsgegevens (HUP Verblijfstitel; HUP Nederlandse nationaliteit). Het GGM kent twee entiteiten Verblijfstitel (EAID_0F51B100_1C60_4d54_9B60_1C9BF9C856A2 en EAID_A660422D_E9ED_47c9_9978_480E57572775); GEMMA heeft het bedrijfsobject Verblijfstitel met de tweede GUID, dat ongekoppeld blijft.'
 afgeleid:
   uitkomst:
     soort: onderdeel
@@ -220,4 +221,5 @@ afgeleid:
   bronnen:
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   - 2026-rvig-hup-verblijfstitel
+  - 2026-rvig-hup-nederlandse-nationaliteit
   herkomst: informatiemodel

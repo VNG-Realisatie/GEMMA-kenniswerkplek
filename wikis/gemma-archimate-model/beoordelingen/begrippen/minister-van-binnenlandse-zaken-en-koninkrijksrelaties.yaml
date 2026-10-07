@@ -205,10 +205,15 @@ synoniemen:
   context: wet
 - naam: RvIG
   context: dagelijks gebruik
-toelichting: 'Voorgelegd: de minister heeft een structurele, wettelijke relatie met de gemeente (registers, mededelingen, kosten), maar is één bestuursorgaan en geen soort partij (kenmerk soort partij). Zolang de redacteur niet anders beslist: geen element; de rol van de minister staat in de beschrijving van Beheren reisdocumenten, en zijn registers zijn invoer (Basisregister reisdocumenten, Register vermiste of vervallen reisdocumenten, Signalering).'
+toelichting: 'Voorgelegd: de minister heeft een structurele, wettelijke relatie met de gemeente (registers, mededelingen, kosten), maar is één bestuursorgaan en geen soort partij (kenmerk soort partij). Zolang de redacteur niet anders beslist: geen element; de rol van de minister staat in de beschrijving van Beheren reisdocumenten, en zijn registers zijn invoer (Basisregister reisdocumenten, Register vermiste of vervallen reisdocumenten, Signalering). Bij plak 4 opnieuw bekeken in samenhang met de IND en het ketenproces Beheren Nederlanderschap: zie de vraag.'
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Geen element, in lijn met plak 1: één organisatie van het Rijk, geen soort partij; de gemeente ontvangt zijn mededelingen en gebruikt zijn registers als invoer. De minister staat in de beschrijvingen. De rijkskant (minister, RvIG, IND) eventueel later in één keer zichtbaar maken, bij plak 4.'
+  gevolg: afwijzen
+  redenen:
+  - 'soort partij: nee'
+- datum: '2026-10-07'
+  besluit: 'Rijkskant (plak 4): geen eigen actor; het Rijk is de actor (GEMMA-actor Rijk) die Ketenpartner vervult, en de minister van BZK met de RvIG staat in de beschrijving van Rijk. Bevestigt het besluit van 2026-10-07 met de verduidelijkte betekenis van soort partij: een afzonderlijk ministerie is geen eigen actor.'
   gevolg: afwijzen
   redenen:
   - 'soort partij: nee'
