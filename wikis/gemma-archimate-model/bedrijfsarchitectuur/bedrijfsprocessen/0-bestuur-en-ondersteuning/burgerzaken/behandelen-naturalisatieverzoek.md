@@ -57,7 +57,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 ### Plaats in de indelingen
 
 - **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Beheren Nederlanderschap](beheren-nederlanderschap.md).
+- **Procesindeling naar taak, onderdeel van**: [Behandelen verkrijging en verlies Nederlanderschap](behandelen-verkrijging-en-verlies-nederlanderschap.md).
 - **Kernobject**: [Nederlanderschap](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/nederlanderschap.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
@@ -80,7 +80,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, het advies van de burgemeester over het verzoek, met het verzoek toegezonden aan de minister (Besluit art. 36 lid 6, 37). [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk naturalisatieverzoek. [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [Utrecht Nederlander worden](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, besluit art. 31-38: ontvangst, betaling van het naturalisatiegeld, toetsing aan de BRP (door andere autoriteiten binnen vier of tien weken), onderzoek van de verblijfsrechtelijke status, advies en toezending. [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren Nederlanderschap: de verkrijging door naturalisatie. [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Behandelen verkrijging en verlies Nederlanderschap, binnen het ketenproces Beheren Nederlanderschap: de verkrijging door naturalisatie. [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de dienst Naturalisatieverzoek (UPL nr. 263). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 
@@ -98,7 +98,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Beheren Nederlanderschap](beheren-nederlanderschap.md) | omvat *aggregatie* | Behandelen naturalisatieverzoek | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 31-38) |
+| [Behandelen verkrijging en verlies Nederlanderschap](behandelen-verkrijging-en-verlies-nederlanderschap.md) | omvat *aggregatie* | Behandelen naturalisatieverzoek | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 31-38) |
 | [Besluit verkrijging en verlies Nederlanderschap](../../../../motivatie/beleidskaders/besluit-verkrijging-en-verlies-nederlanderschap.md) | is grondslag voor *associatie (gericht)* | Behandelen naturalisatieverzoek | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 31-38) |
 | [Verzoeker om naturalisatie](../../../rollen/verzoeker-om-naturalisatie.md) | dient het verzoek in *toewijzing* | Behandelen naturalisatieverzoek | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 3, 33) |
 

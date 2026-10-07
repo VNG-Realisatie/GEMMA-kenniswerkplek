@@ -86,10 +86,15 @@ terugmeldingen:
 - type: kennismodel
   elementen:
   - bezorgen-stoffelijk-overschot
+  - toestaan-lijkbezorging
+  - begraven-en-cremeren-stoffelijk-overschot
   - beheren-nederlanderschap
+  - behandelen-verkrijging-en-verlies-nederlanderschap
+  - afgeven-verklaring-omtrent-het-gedrag
+  - behandelen-aanvraag-verklaring-omtrent-het-gedrag
   bevinding:
-  - '**Kennismodel:** een ketenproces is een samenhangend geheel van processen over afdelingen of organisaties, en aggregeert bedrijfsprocessen (2026-vng-over-gemma, regel 564, 590).'
-  - '**GEMMA:** het ketenproces Bezorgen stoffelijk overschot aggregeert vooral deelprocessen (Schouwen stoffelijk overschot, Verlenen verlof tot begraving of crematie, Opgraven stoffelijk overschot en andere) en één bedrijfsproces (Verzorgen gemeentebegrafenis). Een ketenproces omvat net als een bedrijfsproces de levensloop van één kernobject, hier het stoffelijk overschot, maar met meer organisaties, zoals de officier van justitie (Wet op de lijkbezorging art. 10, 12). De stappen daarin zijn deelprocessen die elk een product of dienst leveren; een deelproces uit een andere taak mag ook in een ketenproces hangen.'
+  - '**Kennismodel:** een ketenproces is een samenhangend geheel van processen over afdelingen of organisaties en aggregeert bedrijfsprocessen; een bedrijfsproces is een reeks activiteiten die bijdraagt aan een specifiek resultaat en is opgebouwd uit deelprocessen, die elk binnen één organisatorische eenheid worden uitgevoerd (2026-vng-over-gemma, regel 564, 571, 573, 590, 605). Het kennismodel zegt niet wat een bedrijfsproces binnen een ketenproces afbakent.'
+  - '**GEMMA:** een ketenproces aggregeert alleen bedrijfsprocessen, nooit rechtstreeks deelprocessen. Het ketenproces omvat de levensloop van één kernobject over de partijen heen; elk bedrijfsproces daarin omvat het deel van die levensloop dat één partij uitvoert, met hetzelfde kernobject, en aggregeert de deelprocessen van die partij. De partij kan ook de gemeente in een eigen hoedanigheid zijn. Zo heeft Bezorgen stoffelijk overschot de bedrijfsprocessen Toestaan lijkbezorging (de gemeente als overheid: schouwen, verlof, andere termijn, ontleding, laissez-passer, asverstrooiing, opgraving en maatregel bij besmetting), Begraven en cremeren stoffelijk overschot (de houder van de begraafplaats of het crematorium) en Verzorgen gemeentebegrafenis (2026-rijk-wet-op-de-lijkbezorging-wettekst, art. 3, 11, 21, 23, 49). Beheren Nederlanderschap heeft Behandelen verkrijging en verlies Nederlanderschap (de burgemeester; 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605, hoofdstuk II, III, IIIA en V), en Afgeven verklaring omtrent het gedrag heeft Behandelen aanvraag verklaring omtrent het gedrag (de burgemeester; 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194, art. 30). Het deel van een partij buiten de gemeente, zoals de minister of de behandelend arts, staat alleen in de beschrijving van het ketenproces. De levensloop staat niet in de GEMMA-definities; het is een criterium van dit model. Voorstel: neem in de definitie van bedrijfsproces op dat een bedrijfsproces binnen een ketenproces het deel van één partij is, en in die van ketenproces dat het geen deelprocessen rechtstreeks bevat.'
   nummer: 5
   status: open
 - type: kennismodel

@@ -290,6 +290,26 @@ def test_twee_processen_voor_een_kernobject_is_een_fout(wiki):
     assert any("per kernobject één proces" in f for f in res.fouten)
 
 
+def test_bedrijfsproces_binnen_een_ketenproces_deelt_het_kernobject(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    _schrijf(wiki, "behandelen-aanvraag", _proces())
+    _schrijf(wiki, "keten", _element("Afhandelen beschikkingen", PROCES | {"meer_organisaties"}, kernobject="beschikking",
+                                     afnemer="extern", relaties=[_rel("aggregatie", "behandelen-aanvraag")]))
+    res = afleiden.afleiden(wiki)
+    assert not any("per kernobject één proces" in f for f in res.fouten)
+
+
+def test_ketenproces_met_een_deelproces_is_een_fout(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    _schrijf(wiki, "verlenen", _element("Verlenen beschikking", (PROCES - {"omvat_levensloop"})
+                                        | {"bijdrage_aan_groter_proces", "eigen_besluit"}, kernobject="beschikking",
+                                        afnemer="extern"))
+    _schrijf(wiki, "keten", _element("Afhandelen beschikkingen", PROCES | {"meer_organisaties"}, kernobject="beschikking",
+                                     afnemer="extern", relaties=[_rel("aggregatie", "verlenen")]))
+    res = afleiden.afleiden(wiki)
+    assert any("ketenproces aggregeert deelproces 'verlenen'" in f for f in res.fouten)
+
+
 def test_indelingsveld_ontbreekt_wordt_voorgelegd_en_een_onbekende_waarde_is_een_fout(wiki):
     _schrijf(wiki, "beschikking", _bo())
     data = _proces()
@@ -357,6 +377,7 @@ def test_signalen_voor_de_indeling():
         "los": el("bedrijfsproces", procesniveau="bedrijfsproces"),
         "keten": el("bedrijfsproces", procesniveau="ketenproces"),
         "deel": el("bedrijfsproces", procesniveau="deelproces"),
+        "partij": el("bedrijfsproces", procesniveau="bedrijfsproces"),
         "elders": el("bedrijfsproces", procesniveau="deelproces"),
         "wees": el("bedrijfsproces", procesniveau="deelproces"),
         "onderhoud": el("dienst"),
@@ -369,16 +390,17 @@ def test_signalen_voor_de_indeling():
     alle = {b: {"onderwerpen": ["lijkbezorging" if b != "elders" else "burgerzaken"]} for b in elementen}
     alle["taak"]["relaties"] = [rel("aggregatie", "beheren"), rel("aggregatie", "keten")]
     alle["beheren"]["relaties"] = [rel("aggregatie", "deel")]
-    alle["keten"]["relaties"] = [rel("aggregatie", "elders")]
+    alle["keten"]["relaties"] = [rel("aggregatie", "partij"), rel("aggregatie", "elders")]
     alle["deel"]["relaties"] = [rel("realisatie", "onderhoud")]
     alle["gemeente"]["relaties"] = [rel("associatie (gericht)", "raad", "geeft melding door aan"),
                                     rel("associatie (gericht)", "raad", "is voorzitter van")]
     relaties = [(van, r) for van in elementen for r in alle[van].get("relaties", [])]
     tekst = "\n".join(signalen.indeling(alle, elementen, relaties))
     assert "los: hangt onder geen taak" in tekst
-    assert "wees: deelproces hangt onder geen bedrijfs- of ketenproces" in tekst
+    assert "wees: deelproces hangt onder geen bedrijfsproces" in tekst
+    assert "elders: deelproces hangt onder geen bedrijfsproces" in tekst  # een ketenproces telt niet
+    assert "partij: hangt onder geen" not in tekst  # een bedrijfsproces binnen een ketenproces
     assert "deel: een deelproces levert een dienst" in tekst
-    assert "keten: ketenproces met deelproces 'elders' uit een andere taak" in tekst
     assert "wet: geen product heeft dit beleidskader" in tekst
     assert "geeft melding door aan" in tekst and "is voorzitter van" not in tekst
     assert "arts: generiek, maar geen `gemma_generiek`" in tekst
@@ -496,7 +518,9 @@ def _indeling_wiki(wiki):
     gevallen = {
         "verzorgen-lijkbezorging": _element("Verzorgen lijkbezorging", taak, relaties=[_rel("aggregatie", "bezorgen-lijken")]),
         "bezorgen-lijken": _element("Bezorgen lijken", keten, kernobject="lijk", afnemer="extern",
-                                    relaties=[_rel("aggregatie", "opgraven-lijk"), _rel("toegang (registreren)", "lijk")]),
+                                    relaties=[_rel("aggregatie", "toestaan-lijkbezorging"), _rel("toegang (registreren)", "lijk")]),
+        "toestaan-lijkbezorging": _element("Toestaan lijkbezorging", PROCES, kernobject="lijk", afnemer="extern",
+                                           relaties=[_rel("aggregatie", "opgraven-lijk")]),
         "opgraven-lijk": _element("Opgraven lijk", deel, kernobject="grafbedekking", afnemer="extern",
                                   gemma_generiek={"id": "id-vergunning", "onderbouwing": "Een vergunningaanvraag."},
                                   relaties=[{**_rel("toegang (registreren)", "vergunning"), "via": "vergunning-tot-opgraving"},
@@ -525,7 +549,7 @@ def test_pagina_toont_de_plaats_in_de_indelingen(wiki):
     assert "procesniveau: deelproces" in pagina and "afnemer: extern" in pagina
     assert "kernobject:" not in pagina.split("---")[1]  # een verwijzing staat niet in de frontmatter
     assert "#### Plaats in de indelingen" in pagina or "### Plaats in de indelingen" in pagina
-    assert "**Procesindeling naar taak, onderdeel van**: [Bezorgen lijken]" in pagina
+    assert "**Procesindeling naar taak, onderdeel van**: [Toestaan lijkbezorging]" in pagina
     assert "**Kernobject**: [Grafbedekking]" in pagina
     assert "**Procesindeling naar soort werk, specialisatie van**: GEMMA-element *id-vergunning*" in pagina or \
         "specialisatie van**: GEMMA-element" in pagina
@@ -533,7 +557,7 @@ def test_pagina_toont_de_plaats_in_de_indelingen(wiki):
 
     keten = (wiki / _lees(wiki, "bezorgen-lijken")["afgeleid"]["pad"]).read_text(encoding="utf-8")
     assert "**Procesniveau**: ketenproces." in keten and "**Gestart door gebeurtenis**: [Overlijden]" in keten
-    assert "onderdeel van**: [Verzorgen lijkbezorging]" in keten and "omvat**: [Opgraven lijk]" in keten
+    assert "onderdeel van**: [Verzorgen lijkbezorging]" in keten and "omvat**: [Toestaan lijkbezorging]" in keten
 
     lijk = (wiki / _lees(wiki, "lijk")["afgeleid"]["pad"]).read_text(encoding="utf-8")
     assert "objectniveau: kernobject" in lijk and "**Levensloop bepaald door**: [Bezorgen lijken]" in lijk
@@ -552,9 +576,10 @@ def test_overzicht_per_onderwerp_toont_de_views(wiki):
     assert "## Procesindeling naar taak" in overzicht
     assert "- [Verzorgen lijkbezorging](" in overzicht
     assert "  - [Bezorgen lijken](" in overzicht and "*(ketenproces, afnemer extern)*" in overzicht
-    assert "    - [Opgraven lijk](" in overzicht and "bediend door [Exploiteren van begraafplaatsen]" in overzicht
+    assert "      - [Opgraven lijk](" in overzicht and "bediend door [Exploiteren van begraafplaatsen]" in overzicht
     assert "levert [Onderhoud van graven]" in overzicht
-    assert "## Ketens" in overzicht and "deelprocessen [Opgraven lijk]" in overzicht
+    assert "## Ketens" in overzicht and "bedrijfsprocessen [Toestaan lijkbezorging](" in overzicht
+    assert "(deelprocessen [Opgraven lijk]" in overzicht
     assert "## Procesindeling naar soort werk" in overzicht
     assert "## Gebeurtenissen" in overzicht and "| [Overlijden](" in overzicht
     assert "**Kernobjecten**" in overzicht and "subobjecten [Grafbedekking]" in overzicht

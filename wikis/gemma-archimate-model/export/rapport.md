@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: 36bd0ff202e4f719119989314f44ced371bed67ab3efa3e556479e64d4337aa7 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 248947b3fd4d5551b848ea2fbf9c984abce97df1e4d37c501d75c91ddca0dbc5 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-07T18:58:42. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 31 gekoppeld aan GEMMA, 235 nieuw. Relaties: 15 gekoppeld, 980 nieuw, 0 overgeslagen. Indelingen: 158 aggregaties vanuit een groepering, 35 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-07T22:56:36. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 31 gekoppeld aan GEMMA, 238 nieuw. Relaties: 15 gekoppeld, 985 nieuw, 0 overgeslagen. Indelingen: 158 aggregaties vanuit een groepering, 35 specialisaties naar een GEMMA-element.
 
 Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de groep Kennismodel met een groep per laag (map Other / wiki-gemma-model / Kennismodel).
 
@@ -18,7 +18,7 @@ Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kenni
 - relatie aggregation Bedrijfsfunctie → Dienst, 77×, niet in Over GEMMA
 - relatie aggregation Bedrijfsobject → Bedrijfsobject, 1×
 - relatie aggregation Bedrijfsproces → Gebeurtenis, 20×, niet in Over GEMMA
-- relatie aggregation Bedrijfsproces → Bedrijfsproces, 90×
+- relatie aggregation Bedrijfsproces → Bedrijfsproces, 93×
 - relatie aggregation Rol → Actor, 10×, niet in Over GEMMA
 - relatie aggregation Rol → Rol, 25×
 - relatie aggregation Groep → Bedrijfsfunctie, 3×
@@ -138,6 +138,7 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Asverstrooiing
 - Begraafplaats
 - Begraafplaatsregister
+- Begraven en cremeren stoffelijk overschot
 - Behandelen aanvraag omwisseling buitenlands rijbewijs
 - Behandelen aanvraag reisdocument
 - Behandelen aanvraag reisdocument niet-ingezetene
@@ -148,6 +149,7 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Behandelen optieverklaring
 - Behandelen vergunningaanvragen lijkbezorging
 - Behandelen verklaring van afstand
+- Behandelen verkrijging en verlies Nederlanderschap
 - Behandelen verzoek om correctie
 - Behandelen verzoek om geheimhouding
 - Behandelen verzoek om kiezerspas
@@ -289,6 +291,7 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Stempas ontvangen
 - Stemrecht
 - Stoffelijk overschot
+- Toestaan lijkbezorging
 - Toevoegen latere vermelding
 - Toezichthouder BRP
 - Treffen maatregel bij besmet stoffelijk overschot

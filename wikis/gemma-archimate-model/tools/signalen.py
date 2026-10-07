@@ -48,7 +48,7 @@ def per_begrip(bid: str, data: dict, uitkomst: dict, onderwerpnamen: list[str], 
         w.append(f"{bid}: de definitie lijkt meer dan één zin (regel Begrijpelijk)")
     eerste_woord = naam.split(" ")[0].lower()
     paginatype = uitkomst["paginatype"]
-    if paginatype == "bedrijfsproces" and not eerste_woord.endswith("en"):
+    if paginatype == "bedrijfsproces" and not eerste_woord.endswith(("en", "aan")):  # infinitief: behandelen, toestaan
         w.append(f"{bid}: procesnaam '{naam}' begint niet met een werkwoord, zoals 'Behandelen aanvraag'; het "
                  "zelfstandig naamwoord wordt synoniem (regel Naamvorm)")
     if paginatype == "bedrijfsfunctie" and eerste_woord.endswith("en"):
@@ -90,22 +90,18 @@ def indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[t
             ouders.setdefault(r["naar"], []).append(van)
     for bid, n in sorted(niveau.items()):
         boven = [o for o in ouders.get(bid, []) if o in niveau]
-        if n in ("bedrijfsproces", "ketenproces") and not any(niveau[o] in ("taak", "cluster naar soort werk") for o in boven):
+        if n == "ketenproces" and not any(niveau[o] in ("taak", "cluster naar soort werk") for o in boven):
             w.append(f"{bid}: hangt onder geen taak: aggregatie vanaf een taak ontbreekt (procesindeling naar taak)")
-        if n == "deelproces" and not any(niveau[o] in ("bedrijfsproces", "ketenproces") for o in boven):
-            w.append(f"{bid}: deelproces hangt onder geen bedrijfs- of ketenproces (procesindeling naar taak)")
+        if n == "bedrijfsproces" and not any(niveau[o] in ("taak", "cluster naar soort werk", "ketenproces") for o in boven):
+            w.append(f"{bid}: hangt onder geen taak of ketenproces: aggregatie ontbreekt (procesindeling naar taak)")
+        if n == "deelproces" and not any(niveau[o] == "bedrijfsproces" for o in boven):
+            w.append(f"{bid}: deelproces hangt onder geen bedrijfsproces (procesindeling naar taak)")
         if len(boven) > 2:
             w.append(f"{bid}: meer dan twee ouders in de procesindelingen: {', '.join(sorted(boven))}")
         if n == "deelproces" and bid not in gemeld and any(r["soort"] == "realisatie" and (elementen.get(r["naar"]) or {}).get("paginatype") == "dienst"
                                      for van, r in relaties if van == bid):
             w.append(f"{bid}: een deelproces levert een dienst; het kennismodel laat een deelproces een deelservice "
                      "leveren (regel 398): afwijking, voorstel aan het GEMMA-team")
-        if n == "ketenproces" and bid not in gemeld:
-            eigen = set(alle[bid].get("onderwerpen", []))
-            for deel in boven_van(bid, relaties, niveau, "deelproces"):
-                if not eigen & set(alle[deel].get("onderwerpen", [])):
-                    w.append(f"{bid}: ketenproces met deelproces '{deel}' uit een andere taak: afwijking van het "
-                             "kennismodel (regel 590)")
     for bid, u in sorted(elementen.items()):
         if u["paginatype"] == "beleidskader" and not any(
                 {(elementen.get(van) or {}).get("paginatype"), (elementen.get(r["naar"]) or {}).get("paginatype")} >= {"product", "beleidskader"}
@@ -232,10 +228,6 @@ def functie_indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties
             elif gemma_id[bid] and (gemma_id[ouder], gemma_id[bid]) not in gemma_agg:
                 w.append(f"{bid}: in GEMMA aggregeert {ouder} deze functie niet: de wiki volgt de GEMMA-functieketen")
     return w
-
-
-def boven_van(bid: str, relaties: list[tuple[str, dict]], niveau: dict[str, str | None], welk: str) -> list[str]:
-    return [r["naar"] for van, r in relaties if van == bid and r["soort"] == "aggregatie" and niveau.get(r["naar"]) == welk]
 
 
 def over_begrippen(alle: dict[str, dict], uitkomsten: dict[str, dict | None], gemeld: set[str] = frozenset()) -> list[str]:

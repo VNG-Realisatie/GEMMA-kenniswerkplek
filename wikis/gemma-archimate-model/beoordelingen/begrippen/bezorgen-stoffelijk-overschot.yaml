@@ -141,7 +141,7 @@ kenmerken:
     onderbouwing: Levert zelf het eindresultaat voor zijn kernobject; geen deel van een groter proces.
   omvat_processen:
     waarde: ja
-    onderbouwing: Schouwen stoffelijk overschot, Verlenen verlof tot begraving of crematie, Stellen andere termijn, Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as, Opgraven stoffelijk overschot, Verzorgen gemeentebegrafenis en Treffen maatregel bij besmet stoffelijk overschot (art. 3, 11, 17, 21, 22a, 29, 59).
+    onderbouwing: Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis, elk het deel van één partij (art. 3, 11, 21, 23, 49).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_levensloop:
@@ -220,6 +220,7 @@ definitie: 'Het proces van overlijden tot de bezorging van het stoffelijk oversc
 beschrijving:
 - Na het overlijden wordt het stoffelijk overschot geschouwd, verleent de ambtenaar van de burgerlijke stand verlof tot begraving of crematie, en wordt het binnen de wettelijke termijn begraven, gecremeerd of ontleed (Wet op de lijkbezorging art. 3, 11, 16, 67). Zorgt niemand anders voor de bezorging, dan draagt de burgemeester er zorg voor (art. 21); bij een besmet stoffelijk overschot kan hij maatregelen treffen (art. 22a). Ook een latere opgraving hoort bij de levensloop van het stoffelijk overschot (art. 29).
 - 'Het is een ketenproces: bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar afgeeft voordat verlof kan worden verleend (art. 10, 12); een vervroegde uitvaart vraagt ook zijn instemming (art. 17). De uitvaartondernemer regelt de uitvaart namens de nabestaanden (RVO).'
+- 'Elk deel van één partij is een bedrijfsproces: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet (besluit redacteur 2026-10-07).'
 kernobject: stoffelijk-overschot
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
@@ -230,33 +231,19 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen proces voor de lijkbezorging; nieuw voor GEMMA.
 relaties:
 - soort: aggregatie
-  naar: schouwen-stoffelijk-overschot
+  naar: toestaan-lijkbezorging
   naam: omvat
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 3
+  vindplaats: art. 3, 11, 17, 22a, 29, 68
 - soort: aggregatie
-  naar: verlenen-verlof-tot-begraving-of-crematie
+  naar: begraven-en-cremeren-stoffelijk-overschot
   naam: omvat
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 11, 12
-- soort: aggregatie
-  naar: uitvoeren-lijkbezorging
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 1, 16
-- soort: aggregatie
-  naar: opgraven-stoffelijk-overschot
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 29
+  vindplaats: art. 1, 23, 49, 59
 - soort: aggregatie
   naar: verzorgen-gemeentebegrafenis
   naam: omvat
@@ -264,13 +251,6 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21, 22
-- soort: aggregatie
-  naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 22a
 - soort: aggregatie
   naar: overlijden
   naam: omvat
@@ -292,47 +272,15 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 1
-- soort: aggregatie
-  naar: bijzetten-of-verstrooien-van-de-as
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 59–66b
-- soort: aggregatie
-  naar: stellen-andere-termijn
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 17
-- soort: aggregatie
-  naar: verlenen-toestemming-asverstrooiing
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2025-groningen-algemene-plaatselijke-verordening
-  vindplaats: art. 5:27 lid 3
-- soort: aggregatie
-  naar: verlenen-verlof-tot-ontleding
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 67, 68
-- soort: aggregatie
-  naar: afgeven-laissez-passer
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  vindplaats: Besluit op de lijkbezorging art. 11
 synoniemen:
 - naam: Bezorgen lijken
   context: wet
 besluiten:
 - datum: '2026-10-05'
   besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
+  gevolg: verwerkt
+- datum: '2026-10-07'
+  besluit: 'Aggregeert alleen bedrijfsprocessen: Toestaan lijkbezorging (gemeente als overheid, acht deelprocessen), Begraven en cremeren stoffelijk overschot (houder, twee deelprocessen) en Verzorgen gemeentebegrafenis.'
   gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
@@ -349,7 +297,5 @@ afgeleid:
     typeregel: 17
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2025-groningen-algemene-plaatselijke-verordening
-  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   herkomst: wet
   pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bezorgen-stoffelijk-overschot.md

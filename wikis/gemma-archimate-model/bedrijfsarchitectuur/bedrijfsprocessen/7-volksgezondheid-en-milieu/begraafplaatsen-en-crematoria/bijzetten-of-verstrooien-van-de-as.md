@@ -45,7 +45,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 ### Plaats in de indelingen
 
 - **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md), [Uitbaten begraafplaatsen en crematoria](uitbaten-begraafplaatsen-en-crematoria.md).
+- **Procesindeling naar taak, onderdeel van**: [Begraven en cremeren stoffelijk overschot](begraven-en-cremeren-stoffelijk-overschot.md), [Uitbaten begraafplaatsen en crematoria](uitbaten-begraafplaatsen-en-crematoria.md).
 - **Kernobject**: [Urn](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
@@ -68,7 +68,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een bijgezette, verstrooide, aan de nabestaande meegegeven of naar het buitenland gezonden asbus (art. 59 lid 2). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, na elke crematie. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 59–66b: termijn van een maand, toestemming van de rechthebbende bij een particulier graf, register, verstrooiing op een bestemd terrein of in open zee; Groningen art. 21. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan het ketenproces Bezorgen stoffelijk overschot: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Begraven en cremeren stoffelijk overschot, binnen het ketenproces Bezorgen stoffelijk overschot: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki of in het GEMMA-model. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Specialisaties
@@ -90,7 +90,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md) | omvat *aggregatie* | Bijzetten of verstrooien van de as | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59–66b) |
+| [Begraven en cremeren stoffelijk overschot](begraven-en-cremeren-stoffelijk-overschot.md) | omvat *aggregatie* | Bijzetten of verstrooien van de as | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59–66b) |
 | [Houder van een plaats van bijzetting](../../../rollen/houder-van-een-plaats-van-bijzetting.md) | houdt het register bij en stelt de asbus ter beschikking bij *toewijzing* | Bijzetten of verstrooien van de as | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 63, 65) |
 | [Houder van het crematorium](../../../rollen/houder-van-het-crematorium.md) | zorgt voor de bewaring en de bestemming van de as bij *toewijzing* | Bijzetten of verstrooien van de as | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59) |
 | [Nabestaande](../../../rollen/nabestaande.md) | geeft opdracht tot bijzetting bij *toewijzing* | Bijzetten of verstrooien van de as | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 2) |

@@ -2,7 +2,7 @@
 id: beslistabel
 type: analyse
 titel: Kenmerken en beslistabel
-bijgewerkt: '2026-10-01'
+bijgewerkt: '2026-10-07'
 bronnen: [2026-vng-over-gemma]
 ---
 
@@ -80,7 +80,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 36. Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? Noem het. (*leidt tot gedrag*)
 37. Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? Noem dat proces. (*bijdrage aan groter proces*)
 38. Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? Noem ze. (*omvat processen*)
-39. Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde? Noem het object. (*omvat levensloop*)
+39. Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? Noem het object. (*omvat levensloop*)
 40. Voeren twee of meer organisaties het samen uit, elk vanuit een eigen rol en niet als klant of alleen als adviseur? Noem ze. (*meer organisaties*)
 41. Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. (*eigen besluit*)
 42. Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). (*levert aanbod*)
@@ -176,7 +176,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 | **leidt tot gedrag**: Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? Noem het. | Ja: Overlijden → Uitvoeren lijkbezorging. Nee: voorval zonder gemeentelijk gevolg. Herkomst: GEMMA (gebeurtenis triggert proces). |
 | **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? Noem dat proces. | Ja: toetsen indieningsvereisten (in behandelen aanvraag). Nee: behandelen aanvraag (levert het besluit zelf). Herkomst: GEMMA (definitie Deelproces). |
 | **omvat processen**: Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? Noem ze. | Ja: Verzorgen lijkbezorging (Bezorgen lijken, Beheren grafrechten, Beheren graven). Nee: een proces met één stap. Herkomst: GEMMA (procescluster aggregeert bedrijfsprocessen, regel 419-420). |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde? Noem het object. | Ja: Beheren grafrechten (Grafrecht: van uitgifte tot verval). Nee: Verlenen grafrecht (één mutatie in die levensloop). Herkomst: GEMMA (definitie Bedrijfsproces; procesbouwstenen). |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? Noem het object. | Ja: Beheren grafrechten (Grafrecht: van uitgifte tot verval); Toestaan lijkbezorging (het deel van de gemeente als overheid in de levensloop van het stoffelijk overschot). Nee: Verlenen grafrecht (één mutatie in die levensloop). Herkomst: GEMMA (definitie Bedrijfsproces; procesbouwstenen); lezing redacteur 2026-10-07. |
 | **meer organisaties**: Voeren twee of meer organisaties het samen uit, elk vanuit een eigen rol en niet als klant of alleen als adviseur? Noem ze. | Ja: Bezorgen lijken (gemeente, arts, officier van justitie, uitvaartondernemer). Nee: Treffen maatregel bij besmet lijk (de GGD adviseert alleen). Herkomst: GEMMA (definitie Ketenproces, regel 564). |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. | Ja: Verlenen grafrecht (college, Wlb art. 28). Nee: Onderhouden graf (feitelijk handelen). Herkomst: GEMMA (procesbouwstenen: besluiten). |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). | Ja: Onderhouden graf (grafonderhoud). Nee: interne registratiestap. Herkomst: GEMMA (Product en dienst procesarchitectuur, UPL). |

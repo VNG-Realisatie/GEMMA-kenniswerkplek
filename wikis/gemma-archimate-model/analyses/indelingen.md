@@ -2,7 +2,7 @@
 id: indelingen
 type: analyse
 titel: Indelingen van de bedrijfsarchitectuur
-bijgewerkt: '2026-10-04'
+bijgewerkt: '2026-10-07'
 bronnen:
 - 2026-vng-over-gemma
 - 2026-vng-gemma-2026-10-02
@@ -26,14 +26,14 @@ Hoe het model wordt ingedeeld in de hele breedte van de bedrijfsarchitectuur: we
 
 - **Taak**: een procescluster voor een gemeentelijke taak als geheel (*Verzorgen lijkbezorging*). Een procescluster wordt niet per geval doorlopen (regel 409, 419-420); in ArchiMate een business-process.
 - **Bedrijfsproces**: per kernobject het gedrag over de levensloop van één exemplaar, onder verantwoordelijkheid van één organisatie (*Beheren grafrechten*: van uitgifte tot verval). Dit volgt de GEMMA-definitie (regel 573).
-- **Ketenproces**: hetzelfde, maar uitgevoerd door meer organisaties (regel 564), zoals *Bezorgen lijken*.
+- **Ketenproces**: hetzelfde, maar uitgevoerd door meer organisaties (regel 564), zoals *Bezorgen stoffelijk overschot*. Het ketenproces omvat de levensloop over de partijen heen en aggregeert alleen bedrijfsprocessen, nooit rechtstreeks deelprocessen (regel 590, 605). Een bedrijfsproces binnen een ketenproces omvat het deel van die levensloop dat één partij uitvoert, met het kernobject van het ketenproces; de partij kan ook de gemeente in een eigen hoedanigheid zijn (*Toestaan lijkbezorging* door de gemeente als overheid, *Begraven en cremeren stoffelijk overschot* door de houder van de begraafplaats of het crematorium). Een bedrijfsproces met een eigen kernobject kan ook deel zijn van een ketenproces (*Verzorgen gemeentebegrafenis*). Dit is een lezing van de definities: GEMMA noemt geen levensloop (besluit redacteur 2026-10-07).
 - **Deelproces (werkproces)**: één mutatie, besluit, product of dienst binnen het proces van een kernobject (*Verlenen grafrecht*), in principe binnen één organisatorische eenheid (regel 571). Deelprocessen leveren de producten en diensten.
 - **Cluster naar soort werk**: de deelprocessen van één soort binnen een taak, als specialisatie van een generiek GEMMA-bedrijfsproces. Alleen bij minstens twee deelprocessen; anders specialiseert het deelproces zelf.
 - **Processtap**, **handeling**: geen pagina (regel 560, 563).
 
 ### Objectniveaus
 
-- **Kernobject**: het bedrijfsobject waarvan één bedrijfsproces of ketenproces de hele levensloop omvat.
+- **Kernobject**: het bedrijfsobject waarvan één bedrijfsproces of ketenproces de hele levensloop omvat; de bedrijfsprocessen binnen dat ketenproces delen het.
 - **Subobject**: een deel van een kernobject, met een eigen proces.
 - **Generiek object**: dezelfde betekenis in veel onderwerpen. Blijft voorlopig element in het onderwerp en verhuist later naar een algemeen onderwerp. Domeinspecialisaties krijgen geen pagina en worden in relaties genoemd met **`via`** (Vergunning via *vergunning tot opgraving*).
 - Een onderdeel zonder eigen proces, en invoer die een andere partij maakt, krijgen geen pagina.
@@ -70,7 +70,7 @@ Stand van het GEMMA-model van 2026-10-02.
 | Beleidsdomeinindeling | GEMMA | objecten, afspraken, producten, diensten, beleidskaders, taken | taakveld → beleidsdomein → element | aggregatie vanuit de groepering |
 | Doelgroepindeling | GEMMA, uitgebreid | rollen, actoren, samenwerkingen, kanalen | gemeente (bestuursorgaan, ambtelijk), inwoners en ondernemers, ketenpartners → element | aggregatie vanuit de doelgroeprol |
 
-Een deelproces heeft twee ouders: het proces van zijn kernobject en zijn cluster naar soort werk. Een deelproces uit een andere taak mag ook in een ketenproces hangen; dat geeft een signaal.
+Een deelproces heeft twee ouders: het proces van zijn kernobject en zijn cluster naar soort werk. Een ketenproces aggregeert geen deelprocessen, ook niet uit een andere taak; dat is een fout.
 
 #### Hergebruik
 
@@ -97,7 +97,7 @@ De taak blijft dus een eigen niveau, met een hoofdbeleidsdomein als eigenschap.
 | Indeling | Views |
 |---|---|
 | Procesindeling naar soort werk | Deelprocessen per cluster en generiek GEMMA-proces |
-| Procesindeling naar taak | Per taak: processen per kernobject, deelprocessen met producten en diensten, gebeurtenissen; per ketenproces de deelprocessen in volgorde met de organisaties |
+| Procesindeling naar taak | Per taak: processen per kernobject, deelprocessen met producten en diensten, gebeurtenissen; per ketenproces de bedrijfsprocessen per partij, met hun deelprocessen |
 | Functie-indeling naar domein | Functies die processen bedienen; Producten en diensten per functie |
 | Beleidsdomeinindeling | Bedrijfsobjecten (kern- en subobjecten), Producten en diensten, Beleidskaders per beleidsdomein |
 | Doelgroepindeling | Actoren en rollen per doelgroep; Kanalen per doelgroep |
@@ -200,7 +200,7 @@ Een nieuwe stap na stap 6, met de context van alle uitkomsten.
 #### Object
 
 - *generiek* → generiek.
-- `kernobject` van een proces → kernobject (per kernobject precies één proces).
+- `kernobject` van een proces → kernobject (per kernobject precies één proces, plus de bedrijfsprocessen binnen het ketenproces met dat kernobject).
 - *deel van object* met een eigen deelproces → subobject; zonder → onderdeel, geen pagina.
 - *invoer van een ander* → geen pagina; vermeld bij het proces.
 - Anders voorleggen.

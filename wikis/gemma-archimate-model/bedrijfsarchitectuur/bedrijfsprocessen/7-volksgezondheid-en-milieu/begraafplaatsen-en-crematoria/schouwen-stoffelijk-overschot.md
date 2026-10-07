@@ -54,7 +54,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 ### Plaats in de indelingen
 
 - **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md).
+- **Procesindeling naar taak, onderdeel van**: [Toestaan lijkbezorging](toestaan-lijkbezorging.md).
 - **Kernobject**: [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md).
 - **Gestart door gebeurtenis**: [Overlijden](../../../gebeurtenissen/overlijden.md).
 - **Afnemer**: extern.
@@ -78,7 +78,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, verklaring van overlijden, of een verslag aan de officier van justitie (art. 7, 10). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk overlijden waarbij de lijkschouwer schouwt. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 3–10a: wie schouwt, wanneer, en wat bij een niet-natuurlijke dood. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan het ketenproces Bezorgen stoffelijk overschot: zonder verklaring van overlijden of verklaring van geen bezwaar geen verlof (art. 3, 12). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Toestaan lijkbezorging, binnen het ketenproces Bezorgen stoffelijk overschot: zonder verklaring van overlijden of verklaring van geen bezwaar geen verlof (art. 3, 12). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Specialisaties
@@ -97,10 +97,10 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md) | omvat *aggregatie* | Schouwen stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
 | [Gemeentelijke lijkschouwer](../../../rollen/gemeentelijke-lijkschouwer.md) | verricht *toewijzing* | Schouwen stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
 | [Ketenpartner](../../../rollen/ketenpartner.md) | schouwt als behandelende arts *toewijzing* | Schouwen stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 7 lid 1) |
 | [Overlijden](../../../gebeurtenissen/overlijden.md) | leidt tot *triggering* | Schouwen stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
+| [Toestaan lijkbezorging](toestaan-lijkbezorging.md) | omvat *aggregatie* | Schouwen stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Schouwen stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 4, 7) |
 
 ## Herkomst

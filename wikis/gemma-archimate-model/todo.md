@@ -17,20 +17,11 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **Voorstellen aan het GEMMA-team**:
   - het beleidsdomein *Begraafplaatsen en crematoria* onder taakveld 7, met de GEMMA-domeinen waaronder het valt (procesarchitectuur-terugmelding 1);
   - generieke gebeurtenissen (aanvraag ontvangen, besluit bekendgemaakt);
-  - de afwijkingen van het kennismodel procesarchitectuur: een deelproces levert een dienst, een ketenproces bevat deelprocessen, structurele relaties tussen actoren (procesarchitectuur-terugmeldingen 4–6);
+  - de afwijkingen van het kennismodel procesarchitectuur: een deelproces levert een dienst, een bedrijfsproces binnen een ketenproces is het deel van één partij, structurele relaties tussen actoren (procesarchitectuur-terugmeldingen 4–6);
   - het advies om referentiecomponenten te laten aggregeren door een hogere bedrijfsfunctie;
   - de definities van de GEMMA-rollen Ketenpartner, Adviseur en Beslisser, die in GEMMA leeg zijn en die de export met de definitie uit de wiki vult.
 - **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein.
 - **Archi-views** per indeling en elementtype in de export, na de eerste proefimport (herziening van het besluit van 2026-10-02: geen views).
-
-## Ketenprocessen en bedrijfsprocessen (besluit 2026-10-07)
-
-Drie ketenprocessen aggregeren deelprocessen rechtstreeks, wat het kennismodel niet kent (besluit in [besluiten](analyses/besluiten-redacteur.md)): Bezorgen stoffelijk overschot (10 deelprocessen), Beheren Nederlanderschap (4) en Afgeven verklaring omtrent het gedrag (1).
-
-- **Bedrijfsprocessen ertussen**: per ketenproces bedrijfsprocessen die logische groepen deelprocessen aggregeren, liefst geen 1-op-1, bij voorkeur per uitvoerende partij. Voorstel: Behandelen aanvraag VOG wordt het bedrijfsproces van het gemeentelijke deel; Beheren Nederlanderschap krijgt één bedrijfsproces voor het gemeentelijke deel met alle vier de deelprocessen; bij Bezorgen eerst per deelproces uitzoeken wie het uitvoert. Verzorgen gemeentebegrafenis blijft direct onder het ketenproces.
-- **Criteria en beslistabel**: leg de lezing van *omvat levensloop* vast (ketenproces over de partijen heen, bedrijfsproces het deel van één partij) in de skill gemma-archimate-model-criteria en in [Beslistabel](analyses/beslistabel.md), en een ketenproces aggregeert alleen bedrijfsprocessen.
-- **Terugmeldingen**: procesarchitectuur-terugmelding 5 bijwerken (nog alleen een afwijking voor wat blijft) en als voorstel aan het GEMMA-team: bedrijfsproces is het deel van één partij binnen een ketenproces.
-- **Daarna** nieuwe export.
 
 ## Export naar Archi
 

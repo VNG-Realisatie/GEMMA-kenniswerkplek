@@ -542,16 +542,23 @@ def overzicht(w: Wiki, oid: str) -> str:
     for b in wortels:
         boom += _proces_regel(w, van, b, 0)
     r += _sectie("Procesindeling naar taak", [
-        "Taak → bedrijfsproces of ketenproces per kernobject → deelproces. Tussen haakjes het procesniveau.", "", *boom]
+        "Taak → bedrijfsproces of ketenproces per kernobject → (binnen een ketenproces: bedrijfsproces per partij →) "
+        "deelproces. Tussen haakjes het procesniveau.", "", *boom]
         if boom else [])
 
     ketens = [b for b in processen if w.niveau(b) == "ketenproces"]
     keten_regels = []
     for b in ketens:
-        deel = [n for n in w.uitgaand(b, "aggregatie") if w.paginatype(n) == "bedrijfsproces"]
+        delen = []
+        for n in w.uitgaand(b, "aggregatie"):
+            if w.paginatype(n) != "bedrijfsproces":
+                continue
+            onder = [x for x in w.uitgaand(n, "aggregatie") if w.paginatype(x) == "bedrijfsproces"]
+            delen.append(w.link(van, n) + (f" (deelprocessen {_links(w, van, onder)})" if onder else ""))
         rollen = [v for v in w.inkomend_van(b, "toewijzing") if w.paginatype(v) in ("rol", "actor", "bedrijfssamenwerking")]
-        keten_regels += [f"- {w.link(van, b)}: deelprocessen {_links(w, van, deel) or '—'}; betrokken {_links(w, van, rollen) or '—'}."]
-    r += _sectie("Ketens", ["Processen over meer organisaties.", "", *keten_regels] if keten_regels else [])
+        keten_regels += [f"- {w.link(van, b)}: bedrijfsprocessen {', '.join(delen) or '—'}; betrokken {_links(w, van, rollen) or '—'}."]
+    r += _sectie("Ketens", ["Processen over meer organisaties; per partij een bedrijfsproces.", "", *keten_regels]
+                 if keten_regels else [])
 
     soort_werk = []
     for b in processen:

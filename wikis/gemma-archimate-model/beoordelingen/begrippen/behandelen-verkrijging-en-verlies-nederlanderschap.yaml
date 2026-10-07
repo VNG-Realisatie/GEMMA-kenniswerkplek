@@ -1,0 +1,300 @@
+begrip: Behandelen verkrijging en verlies Nederlanderschap
+onderwerpen:
+- burgerzaken
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De administratieve behandeling van optieverklaringen, naturalisatieverzoeken en verklaringen van afstand is het onderwerp van het Besluit verkrijging en verlies Nederlanderschap (hoofdstuk II, III, IIIA en V).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De burgemeester neemt in ontvangst, onderzoekt, bevestigt, adviseert en reikt uit (Besluit art. 7, 11, 33, 36, 60a, 60b, 63).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig als het deel van de gemeente binnen het ketenproces Beheren Nederlanderschap (besluit redacteur 2026-10-07).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  gedrag:
+    waarde: ja
+    onderbouwing: Iets wat gedaan wordt.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Per optieverklaring, naturalisatieverzoek of verklaring van afstand, van ontvangst tot bevestiging of uitreiking.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (burgemeester), Optant en Verzoeker om naturalisatie (Besluit art. 7, 11, 33, 60a, 63).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Bevestigt, doet in werking treden en beëindigt het Nederlanderschap en toetst aan de basisregistratie personen (Besluit art. 9, 11, 35, 60a, 63).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een optieverklaring, naturalisatieverzoek of verklaring van afstand bij de burgemeester (Besluit art. 7, 33, 63).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een bevestiging of weigering, een advies aan de minister, een uitreiking die de verkrijging doet ingaan, of een bevestigde afstand (Besluit art. 11, 36, 60a, 60b, 63).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elke optie, naturalisatie en afstand.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Besluit verkrijging en verlies Nederlanderschap hoofdstuk II, III, IIIA en V paragraaf 1; Rijkswet op het Nederlanderschap art. 6, 7, 15.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Beheren Nederlanderschap: het deel van de gemeente, geen deelproces (besluit redacteur 2026-10-07).'
+  omvat_processen:
+    waarde: ja
+    onderbouwing: Behandelen optieverklaring, Behandelen naturalisatieverzoek, Houden naturalisatieceremonie en Behandelen verklaring van afstand (Besluit art. 7-12, 31-38, 60a, 60b, 62-64).
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  omvat_levensloop:
+    waarde: ja
+    onderbouwing: 'Omvat het deel van de gemeente in de levensloop van het Nederlanderschap: verkrijging door optie of naturalisatie, het in werking treden door de uitreiking, en verlies door afstand (Rijkswet art. 6, 7, 15; Besluit art. 11, 36-38, 60a, 60b, 63).'
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  meer_organisaties:
+    waarde: nee
+    onderbouwing: Uitgevoerd door de burgemeester; de minister beslist over naturalisatie en adviseert bij sommige opties, maar voert dit deel niet mee uit (Rijkswet art. 6 lid 3, 7; Besluit art. 37, 38).
+    bronnen:
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: De deelprocessen leveren het aanbod.
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: Geen gebundeld aanbod.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  generiek:
+    waarde: nee
+    onderbouwing: Specifiek voor het Nederlanderschap.
+definitie: Het in ontvangst nemen en onderzoeken van optie, naturalisatieverzoek en afstand van het Nederlanderschap, en het bevestigen of uitreiken door de burgemeester.
+beschrijving:
+- In het Europese deel van Nederland neemt de burgemeester optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst van wie in zijn gemeente is ingeschreven of verblijft (Besluit verkrijging en verlies Nederlanderschap art. 2, 7, 33, 63). Bij optie behandelt hij de verklaring zelf en bevestigt of weigert hij de verkrijging; bij naturalisatie onderzoekt hij het verzoek, adviseert hij de minister van Justitie en Veiligheid en reikt hij het uittreksel van het besluit uit; bij afstand neemt hij de verklaring in ontvangst en bevestigt hij haar (Rijkswet op het Nederlanderschap art. 6, 7; Besluit art. 11, 36-38, 60a, 60b, 63).
+- Het is het deel van de gemeente binnen het ketenproces Beheren Nederlanderschap; het deel van de minister staat in de beschrijving van dat ketenproces.
+naamkeuze:
+- Infinitief met object in GEMMA-volgorde, naar de titel van het Besluit verkrijging en verlies Nederlanderschap, dat vooral de administratieve behandeling door de burgemeester regelt. Behandelen verzoeken en verklaringen Nederlanderschap is overwogen, maar de ceremonie is geen verzoek en geen verklaring (besluit redacteur 2026-10-07).
+kernobject: nederlanderschap
+afnemer: extern
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Burgerzaken
+grondslag: bron
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor het Nederlanderschap; de functie Nederlanderschap diensten bedient het ketenproces. Nieuw voor GEMMA.
+relaties:
+- soort: toegang (registreren)
+  naar: nederlanderschap
+  naam: bevestigt, doet in werking treden en beëindigt
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 11, 60a, 60b, 63
+- soort: toegang (raadplegen)
+  naar: ingeschreven-persoon
+  naam: toetst aan de basisregistratie personen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 9, 35
+- soort: aggregatie
+  naar: behandelen-optieverklaring
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: Rijkswet art. 6; Besluit art. 7-12
+- soort: aggregatie
+  naar: behandelen-naturalisatieverzoek
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 31-38
+- soort: aggregatie
+  naar: houden-naturalisatieceremonie
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 60a, 60b
+- soort: aggregatie
+  naar: behandelen-verklaring-van-afstand
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 62-64
+vragen: []
+besluiten:
+- datum: '2026-10-07'
+  besluit: Nieuw bedrijfsproces voor het deel van de gemeente binnen Beheren Nederlanderschap, met alle vier de deelprocessen; de indeling 2+2 vervalt. Kernobject Nederlanderschap, zoals het ketenproces; de toegang-relaties verhuizen van het ketenproces, de gebeurtenissen blijven daar. Naam Behandelen verkrijging en verlies Nederlanderschap.
+  gevolg: opnemen
+status: goedgekeurd
+afgeleid:
+  uitkomst:
+    soort: element
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  herkomst: wet
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verkrijging-en-verlies-nederlanderschap.md

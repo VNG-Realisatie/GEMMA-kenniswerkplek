@@ -246,9 +246,11 @@ KENMERKEN: list[Kenmerk] = [
             "GEMMA (procescluster aggregeert bedrijfsprocessen, regel 419-420)", GEDRAG_BIJ),
     Kenmerk("omvat_levensloop", "omvat levensloop", "Gedrag",
             "Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot "
-            "einde? Noem het object.",
-            "Beheren grafrechten (Grafrecht: van uitgifte tot verval)", "Verlenen grafrecht (één mutatie in die levensloop)",
-            "GEMMA (definitie Bedrijfsproces; procesbouwstenen)", GEDRAG_BIJ),
+            "einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? Noem het object.",
+            "Beheren grafrechten (Grafrecht: van uitgifte tot verval); Toestaan lijkbezorging (het deel van de gemeente "
+            "als overheid in de levensloop van het stoffelijk overschot)",
+            "Verlenen grafrecht (één mutatie in die levensloop)",
+            "GEMMA (definitie Bedrijfsproces; procesbouwstenen); lezing redacteur 2026-10-07", GEDRAG_BIJ),
     Kenmerk("meer_organisaties", "meer organisaties", "Gedrag",
             "Voeren twee of meer organisaties het samen uit, elk vanuit een eigen rol en niet als klant of alleen als "
             "adviseur? Noem ze.",
@@ -721,7 +723,9 @@ SPECIALISATIE = [
 EERSTE_INDELINGSREGEL = EERSTE_SPECIALISATIEREGEL + 3
 INDELING = [
     ("7 Indeling", "procescluster (*groepeert processen*)", "procesniveau taak, of cluster naar soort werk als `gemma_generiek` is ingevuld"),
-    ("7 Indeling", "*omvat levensloop*", "procesniveau ketenproces bij *meer organisaties*, anders bedrijfsproces; `kernobject` verplicht"),
+    ("7 Indeling", "*omvat levensloop*", "procesniveau ketenproces bij *meer organisaties*, anders bedrijfsproces; `kernobject` "
+                                          "verplicht. Een ketenproces aggregeert van de processen alleen bedrijfsprocessen, "
+                                          "nooit rechtstreeks deelprocessen"),
     ("7 Indeling", "*bijdrage aan groter proces* met *eigen besluit*, *eigen normering* of *levert aanbod*",
      "procesniveau deelproces; `kernobject` verplicht"),
     ("7 Indeling", "*bijdrage aan groter proces* zonder die drie", "processtap: onderdeel, geen pagina; de tekst naar het deelproces"),
@@ -729,7 +733,8 @@ INDELING = [
     ("7 Indeling", "bedrijfsobject met *generiek*", "objectniveau generiek (verhuist later naar een algemeen onderwerp)"),
     ("7 Indeling", "bedrijfsobject met *invoer van een ander*", "onderdeel: geen pagina; vermelden bij het genoemde proces"),
     ("7 Indeling", "gebeurtenis, rol of dienst met *generiek*", "specialisatie van een generiek GEMMA-element (exacte match)"),
-    ("7 Indeling", "bedrijfsobject dat `kernobject` is van een bedrijfs- of ketenproces", "objectniveau kernobject; per kernobject één proces"),
+    ("7 Indeling", "bedrijfsobject dat `kernobject` is van een bedrijfs- of ketenproces", "objectniveau kernobject; per kernobject één bedrijfs- of ketenproces, plus de bedrijfsprocessen die dat "
+     "ketenproces aggregeert, met hetzelfde kernobject"),
     ("7 Indeling", "bedrijfsobject met *deel van object* en een eigen deelproces", "objectniveau subobject"),
     ("7 Indeling", "bedrijfsobject met *deel van object* zonder eigen deelproces", "onderdeel: geen pagina"),
     ("7 Indeling", "ander bedrijfsobject", "voorleggen: geen proces bepaalt zijn levensloop"),
@@ -902,11 +907,28 @@ def indeling(beoordelingen: dict[str, dict], uitkomsten: dict[str, dict | None])
     """Stap 7 met context: het objectniveau (kernobject, subobject of onderdeel) en de controle op `kernobject`.
 
     Wijzigt `uitkomsten` ter plekke; levert fouten (per `id: tekst`). Een bedrijfs- of ketenproces heeft een kernobject;
-    per kernobject bestaat precies één zo'n proces. Een deelproces noemt het object waarin het een mutatie doet."""
+    per kernobject bestaat precies één zo'n proces, plus de bedrijfsprocessen die het ketenproces met dat kernobject
+    aggregeert: elk het deel van één partij in die levensloop. Een ketenproces aggregeert van de processen alleen
+    bedrijfsprocessen (besluit redacteur 2026-10-07). Een deelproces noemt het object waarin het een mutatie doet."""
     fouten = []
     kernobject_van: dict[str, str] = {}
     deel: set[str] = set()
     objecten = {b for b, u in uitkomsten.items() if u and u["soort"] == "element" and u["paginatype"] == "bedrijfsobject"}
+    niveau = {b: u["procesniveau"] for b, u in uitkomsten.items()
+              if u and u["soort"] == "element" and u["paginatype"] == "bedrijfsproces"}
+    binnen_keten: set[str] = set()
+    for bid, n in sorted(niveau.items()):
+        if n != "ketenproces":
+            continue
+        for r in beoordelingen[bid].get("relaties") or []:
+            if r["soort"] != "aggregatie" or r["naar"] not in niveau:
+                continue
+            if niveau[r["naar"]] == "deelproces":
+                fouten.append(f"{bid}: ketenproces aggregeert deelproces '{r['naar']}'; een ketenproces aggregeert alleen "
+                              "bedrijfsprocessen (kennismodel regel 590, 605)")
+            elif niveau[r["naar"]] == "bedrijfsproces" and beoordelingen[r["naar"]].get("kernobject") \
+                    == beoordelingen[bid].get("kernobject"):
+                binnen_keten.add(r["naar"])
     for bid, u in sorted(uitkomsten.items()):
         if not u or u["soort"] != "element" or u["paginatype"] != "bedrijfsproces":
             continue
@@ -915,6 +937,8 @@ def indeling(beoordelingen: dict[str, dict], uitkomsten: dict[str, dict | None])
             continue
         if ko not in objecten:
             fouten.append(f"{bid}: kernobject '{ko}' is geen bedrijfsobject of afspraak met een pagina")
+        elif bid in binnen_keten:
+            continue
         elif u["procesniveau"] in ("bedrijfsproces", "ketenproces"):
             if ko in kernobject_van:
                 fouten.append(f"{bid}: kernobject '{ko}' heeft al het proces '{kernobject_van[ko]}' (per kernobject één proces)")

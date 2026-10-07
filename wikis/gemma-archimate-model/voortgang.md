@@ -13,8 +13,8 @@ titel: Voortgang
 | Onderwerp | Status | Begrippen | Elementen |
 |---|---|---|---|
 | [Algemeen](begrippen/algemeen.md) | in-behandeling | 14 | 14 |
-| [Burgerzaken](begrippen/burgerzaken.md) | in-behandeling | 259 | 183 |
-| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 183 | 95 |
+| [Burgerzaken](begrippen/burgerzaken.md) | in-behandeling | 260 | 184 |
+| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 185 | 97 |
 | [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
 
 ## Samenhang tussen onderwerpen
@@ -24,8 +24,8 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | Onderwerp | Elementen | Gebruikt uit andere | Relaties binnen | Relaties met andere |
 |---|---|---|---|---|
 | Algemeen | 14 | 0 | 13 | Burgerzaken 30, Lijkbezorging 47 |
-| Burgerzaken | 175 | 8 | 506 | Algemeen 30, Lijkbezorging 9 |
-| Lijkbezorging | 77 | 18 | 194 | Algemeen 47, Burgerzaken 9 |
+| Burgerzaken | 176 | 8 | 507 | Algemeen 30, Lijkbezorging 9 |
+| Lijkbezorging | 79 | 18 | 198 | Algemeen 47, Burgerzaken 9 |
 | Participatie | 0 | 0 | 0 | — |
 
 ## Elementen per type en status
@@ -35,7 +35,7 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | actor | 0 | 0 | 10 | 0 |
 | bedrijfsfunctie | 0 | 0 | 14 | 0 |
 | bedrijfsobject | 0 | 0 | 23 | 0 |
-| bedrijfsproces | 0 | 0 | 81 | 0 |
+| bedrijfsproces | 0 | 0 | 84 | 0 |
 | beleidskader | 0 | 0 | 16 | 0 |
 | dienst | 0 | 0 | 77 | 0 |
 | gebeurtenis | 0 | 0 | 19 | 0 |

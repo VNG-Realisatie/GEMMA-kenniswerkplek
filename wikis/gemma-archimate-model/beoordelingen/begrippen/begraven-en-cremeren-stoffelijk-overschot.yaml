@@ -1,14 +1,15 @@
-begrip: Uitvoeren lijkbezorging
+begrip: Begraven en cremeren stoffelijk overschot
+onderwerpen:
+- lijkbezorging
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: Kern van de wet (art. 1).
+    onderbouwing: Begraven en cremeren zijn de gangbare wijzen van lijkbezorging (Wet op de lijkbezorging art. 1, 23, 49).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: Op de gemeentelijke begraafplaats en in een gemeentelijk crematorium voert de gemeente de begraving, bijzetting of crematie uit (Groningen art. 7, 10).
+    onderbouwing: De gemeente heeft ten minste één gemeentelijke begraafplaats en begraaft daar; de beheerder bepaalt tijd en plaats (art. 33; Groningen art. 7).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -20,22 +21,19 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    onderbouwing: Bestaat zelfstandig als het deel van de houder van de begraafplaats of het crematorium binnen het ketenproces Bezorgen stoffelijk overschot (besluit redacteur 2026-10-07).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gedrag:
     waarde: ja
     onderbouwing: Iets wat gedaan wordt.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -80,7 +78,6 @@ kenmerken:
     onderbouwing: Wordt per geval van begin tot eind doorlopen.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   groepeert_processen:
     waarde: nee
     onderbouwing: Wordt per geval doorlopen; geen groepering.
@@ -98,34 +95,34 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Houder van de begraafplaats of van het crematorium, beheerder (art. 8, 58; Groningen art. 7).
+    onderbouwing: Houder van de begraafplaats, Beheerder van de begraafplaats, Houder van het crematorium en Houder van een plaats van bijzetting (art. 23, 50, 59, 62; Groningen art. 7).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Raadpleegt het verlof, werkt graf, lijk en urn bij (art. 11, 23, 59).
+    onderbouwing: Bewerkt het stoffelijk overschot, het graf en de urn en raadpleegt het verlof (art. 11, 23, 59, 62).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   aanleiding:
     waarde: ja
-    onderbouwing: Overlijden en kennisgeving door degene die wil doen begraven (art. 16; Groningen art. 7 lid 2).
+    onderbouwing: De kennisgeving door wie de uitvaart regelt, met het verlof tot begraving of crematie (art. 11; Groningen art. 7).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: Begraven of gecremeerd lijk, bijgezette of verstrooide as (art. 1, 59).
+    onderbouwing: Een begraven of gecremeerd stoffelijk overschot en een bestemming voor de as (art. 1, 59).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   komt_herhaald_voor:
     waarde: ja
-    onderbouwing: Bij elke uitvaart.
+    onderbouwing: Bij elke begraving of crematie.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   eigen_normering:
     waarde: ja
-    onderbouwing: Art. 16 (termijn), 23 (graf), 49 (crematorium), 59 (bestemming as); Groningen art. 7–10 (tijden, stukken).
+    onderbouwing: Wet op de lijkbezorging hoofdstuk III en IV (art. 23–66b); beheersverordening Groningen art. 7, 21.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -142,25 +139,30 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Bezorgen stoffelijk overschot: het deel van de houder van de begraafplaats of het crematorium, geen deelproces (besluit redacteur 2026-10-07).'
+  omvat_processen:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Begraven en cremeren stoffelijk overschot, binnen het ketenproces Bezorgen stoffelijk overschot: de begraving, crematie of bijzetting zelf (art. 1, 23, 49).'
+    onderbouwing: Uitvoeren lijkbezorging en Bijzetten of verstrooien van de as (art. 1, 23, 49, 59).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_processen:
-    waarde: nee
-    onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
+    waarde: ja
+    onderbouwing: 'Omvat het deel van de houder in de levensloop van het stoffelijk overschot: de begraving of crematie, het register, de bewaring van de asbus en de bestemming van de as (art. 23, 50, 59, 62–66a).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   meer_organisaties:
     waarde: nee
-    onderbouwing: De gemeente begraaft of cremeert; de uitvaartondernemer treedt op namens de nabestaanden, als klant (Groningen art. 7 lid 2).
+    onderbouwing: Uitgevoerd door de houder van de begraafplaats of het crematorium; de uitvaartondernemer en de nabestaande treden op als klant (art. 18, 62 lid 2; Groningen art. 7 lid 2).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
   levert_aanbod:
     waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit deelproces levert.
+    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces zelf levert.
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -211,91 +213,68 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen breder proces in deze wiki; begraving, crematie en ontleding zijn zijn varianten.
+    onderbouwing: Geen breder proces in deze wiki; het cluster Uitbaten begraafplaatsen en crematoria is een indeling naar soort werk, geen generalisatie.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
     onderbouwing: Specifiek voor de lijkbezorging.
+definitie: Het begraven of cremeren van een stoffelijk overschot door de houder van een begraafplaats of crematorium, tot en met de bestemming van de as.
+beschrijving:
+- 'Begraving geschiedt op een begraafplaats, crematie in een crematorium (Wet op de lijkbezorging art. 23, 49). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). De houder van een crematorium houdt een register bij, bewaart de asbus minimaal een maand en zorgt daarna voor de bestemming van de as: bijzetting, verstrooiing of meegeven aan de nabestaande (art. 50, 59, 62).'
+- Het is het deel van de houder van de begraafplaats of het crematorium binnen het ketenproces Bezorgen stoffelijk overschot. De gemeente voert het uit als houder van de gemeentelijke begraafplaats of van een gemeentelijk crematorium (art. 33); bij een bijzondere begraafplaats of een particulier crematorium doet de particuliere houder het.
+naamkeuze:
+- 'Infinitief met object in GEMMA-volgorde: begraven en cremeren zijn de wettelijke wijzen van lijkbezorging bij de houder, met de bestemming van de as als onderdeel (art. 1). Bezorgen en bestemmen is overwogen, maar valt bijna samen met de naam van het ketenproces (besluit redacteur 2026-10-07).'
+kernobject: stoffelijk-overschot
+afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
 gemma:
   sterkte: geen
-  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een stoffelijk overschot.
-beschrijving:
-- De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie en ontleding zijn varianten zonder eigen pagina; het bijzetten of verstrooien van de as is een eigen deelproces.
-specialisaties:
-- naam: Begraving
-  omschrijving: Begraven van een stoffelijk overschot op een begraafplaats, in een algemeen of particulier graf (art. 23). Geen eigen pagina.
-- naam: Crematie
-  omschrijving: Cremeren van een stoffelijk overschot in een crematorium (art. 49). Geen eigen pagina.
-- naam: Ontleding
-  omschrijving: Ontleden van een stoffelijk overschot in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68). Geen eigen pagina.
+  onderbouwing: Het GEMMA-model kent geen proces voor begraven en cremeren; Uitbaten gemeentelijke voorzieningen is het generieke proces achter het cluster Uitbaten begraafplaatsen en crematoria, geen match voor dit deel van een ketenproces. Nieuw voor GEMMA.
 relaties:
-- soort: toegang (raadplegen)
-  naar: vergunning
-  naam: vereist
+- soort: aggregatie
+  naar: uitvoeren-lijkbezorging
+  naam: omvat
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 11
-  via: verlof-tot-begraving-of-crematie
+  vindplaats: art. 1, 16
+- soort: aggregatie
+  naar: bijzetten-of-verstrooien-van-de-as
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 59–66b
 - soort: toegang (bijwerken)
   naar: stoffelijk-overschot
-  naam: bezorgt
+  naam: begraaft of cremeert
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 1
-- soort: toegang (bijwerken)
-  naar: graf
-  naam: begraaft in
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 23 lid 2
-- soort: toegang (raadplegen)
-  naar: begraafplaats
-  naam: geschiedt op
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 23 lid 1
-- soort: toegang (raadplegen)
-  naar: crematorium
-  naam: geschiedt in
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 49
-onderwerpen:
-- lijkbezorging
-kernobject: stoffelijk-overschot
-afnemer: extern
+  vindplaats: art. 23, 49
+vragen: []
 besluiten:
-- datum: '2026-10-04'
-  besluit: Bijzetting en verstrooiing van de as gaan naar het nieuwe deelproces Bijzetten of verstrooien van de as, met Urn als subobject van Lijk.
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: in de definitie en de omschrijvingen van de specialisaties; de naam blijft (lijkbezorging is een vaste term).'
-  gevolg: verwerkt
+- datum: '2026-10-07'
+  besluit: Nieuw bedrijfsproces voor het deel van de houder van de begraafplaats of het crematorium binnen Bezorgen stoffelijk overschot, met twee deelprocessen. Kernobject Stoffelijk overschot, zoals het ketenproces. Naam Begraven en cremeren stoffelijk overschot.
+  gevolg: opnemen
 status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 28
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md
+  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraven-en-cremeren-stoffelijk-overschot.md

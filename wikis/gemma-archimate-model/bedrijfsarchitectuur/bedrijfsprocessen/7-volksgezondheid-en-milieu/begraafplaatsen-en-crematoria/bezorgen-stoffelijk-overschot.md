@@ -19,8 +19,6 @@ synoniemen:
 - Bezorgen lijken (wet)
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-- 2025-groningen-algemene-plaatselijke-verordening
-- 2026-rijk-besluit-op-de-lijkbezorging-wettekst
 ---
 
 # Bezorgen stoffelijk overschot
@@ -41,6 +39,8 @@ Na het overlijden wordt het stoffelijk overschot geschouwd, verleent de ambtenaa
 
 Het is een ketenproces: bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar afgeeft voordat verlof kan worden verleend (art. 10, 12); een vervroegde uitvaart vraagt ook zijn instemming (art. 17). De uitvaartondernemer regelt de uitvaart namens de nabestaanden (RVO).
 
+Elk deel van één partij is een bedrijfsproces: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet (besluit redacteur 2026-10-07).
+
 ### Synoniemen
 
 | Synoniem | Context |
@@ -57,7 +57,7 @@ Bedrijfsproces, niveau ketenproces. Uitkomst van de beslistabel: Gedrag, *per ke
 
 - **Procesniveau**: ketenproces.
 - **Procesindeling naar taak, onderdeel van**: [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md).
-- **Procesindeling naar taak, omvat**: [Afgeven laissez-passer](afgeven-laissez-passer.md), [Bijzetten of verstrooien van de as](bijzetten-of-verstrooien-van-de-as.md), [Opgraven stoffelijk overschot](opgraven-stoffelijk-overschot.md), [Schouwen stoffelijk overschot](schouwen-stoffelijk-overschot.md), [Stellen andere termijn](stellen-andere-termijn.md), [Treffen maatregel bij besmet stoffelijk overschot](treffen-maatregel-bij-besmet-stoffelijk-overschot.md), [Uitvoeren lijkbezorging](uitvoeren-lijkbezorging.md), [Verlenen toestemming asverstrooiing](verlenen-toestemming-asverstrooiing.md), [Verlenen verlof tot begraving of crematie](verlenen-verlof-tot-begraving-of-crematie.md), [Verlenen verlof tot ontleding](verlenen-verlof-tot-ontleding.md), [Verzorgen gemeentebegrafenis](verzorgen-gemeentebegrafenis.md).
+- **Procesindeling naar taak, omvat**: [Begraven en cremeren stoffelijk overschot](begraven-en-cremeren-stoffelijk-overschot.md), [Toestaan lijkbezorging](toestaan-lijkbezorging.md), [Verzorgen gemeentebegrafenis](verzorgen-gemeentebegrafenis.md).
 - **Kernobject**: [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md).
 - **Gestart door gebeurtenis**: [Overlijden](../../../gebeurtenissen/overlijden.md).
 - **Afnemer**: extern.
@@ -82,8 +82,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk overlijden. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, wet op de lijkbezorging art. 3–22a: schouwing, verlof, termijnen en de zorg van de burgemeester. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, degene die in de lijkbezorging voorziet, meestal een nabestaande (art. 18). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **omvat processen**: Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? | Ja, schouwen stoffelijk overschot, Verlenen verlof tot begraving of crematie, Stellen andere termijn, Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as, Opgraven stoffelijk overschot, Verzorgen gemeentebegrafenis en Treffen maatregel bij besmet stoffelijk overschot (art. 3, 11, 17, 21, 22a, 29, 59). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde? | Ja, omvat de levensloop van het lijk, van overlijden tot de bezorging en de bestemming van de as, ook een latere opgraving (art. 1, 3, 29, 59). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **omvat processen**: Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? | Ja, toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis, elk het deel van één partij (art. 3, 11, 21, 23, 49). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van het lijk, van overlijden tot de bezorging en de bestemming van de as, ook een latere opgraving (art. 1, 3, 29, 59). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **meer organisaties**: Voeren twee of meer organisaties het samen uit, elk vanuit een eigen rol en niet als klant of alleen als adviseur? | Ja, de gemeente en de officier van justitie: bij een niet-natuurlijke dood geeft de officier de verklaring van geen bezwaar af, zonder welke geen verlof wordt verleend, en een vervroegde uitvaart vraagt zijn instemming (art. 10, 12, 17). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki of in het GEMMA-model. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
@@ -93,20 +93,12 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Schouwen stoffelijk overschot](schouwen-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Verlenen verlof tot begraving of crematie](verlenen-verlof-tot-begraving-of-crematie.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 11, 12) |
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Uitvoeren lijkbezorging](uitvoeren-lijkbezorging.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1, 16) |
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Opgraven stoffelijk overschot](opgraven-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
+| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Toestaan lijkbezorging](toestaan-lijkbezorging.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 11, 17, 22a, 29, 68) |
+| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Begraven en cremeren stoffelijk overschot](begraven-en-cremeren-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1, 23, 49, 59) |
 | Bezorgen stoffelijk overschot | omvat *aggregatie* | [Verzorgen gemeentebegrafenis](verzorgen-gemeentebegrafenis.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Treffen maatregel bij besmet stoffelijk overschot](treffen-maatregel-bij-besmet-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22a) |
 | Bezorgen stoffelijk overschot | omvat *aggregatie* | [Overlijden](../../../gebeurtenissen/overlijden.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3, 16) |
 | Bezorgen stoffelijk overschot | omvat *aggregatie* | [Besmet stoffelijk overschot gemeld](../../../gebeurtenissen/besmet-stoffelijk-overschot-gemeld.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22a; Wpg art. 27 lid 3) |
 | Bezorgen stoffelijk overschot | bezorgt *toegang (bijwerken)* | [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1) |
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Bijzetten of verstrooien van de as](bijzetten-of-verstrooien-van-de-as.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59–66b) |
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Stellen andere termijn](stellen-andere-termijn.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17) |
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Verlenen toestemming asverstrooiing](verlenen-toestemming-asverstrooiing.md) | [APV Groningen](../../../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md) (art. 5:27 lid 3) |
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Verlenen verlof tot ontleding](verlenen-verlof-tot-ontleding.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 67, 68) |
-| Bezorgen stoffelijk overschot | omvat *aggregatie* | [Afgeven laissez-passer](afgeven-laissez-passer.md) | [Besluit op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) (Besluit op de lijkbezorging art. 11) |
 
 #### Inkomend
 
@@ -123,8 +115,6 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
-| [APV Groningen](../../../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md) | Algemene Plaatselijke Verordening Groningen 2021 |
-| [Besluit op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) | Besluit op de lijkbezorging |
 
 ### Afstemming met GEMMA
 
@@ -132,8 +122,9 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 5](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** een ketenproces is een samenhangend geheel van processen over afdelingen of organisaties, en aggregeert bedrijfsprocessen ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 564, 590). **GEMMA:** het ketenproces Bezorgen stoffelijk overschot aggregeert vooral deelprocessen (Schouwen stoffelijk overschot, Verlenen verlof tot begraving of crematie, Opgraven stoffelijk overschot en andere) en één bedrijfsproces (Verzorgen gemeentebegrafenis). Een ketenproces omvat net als een bedrijfsproces de levensloop van één kernobject, hier het stoffelijk overschot, maar met meer organisaties, zoals de officier van justitie (Wet op de lijkbezorging art. 10, 12). De stappen daarin zijn deelprocessen die elk een product of dienst leveren; een deelproces uit een andere taak mag ook in een ketenproces hangen.
+- [Nummer 5](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** een ketenproces is een samenhangend geheel van processen over afdelingen of organisaties en aggregeert bedrijfsprocessen; een bedrijfsproces is een reeks activiteiten die bijdraagt aan een specifiek resultaat en is opgebouwd uit deelprocessen, die elk binnen één organisatorische eenheid worden uitgevoerd ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 564, 571, 573, 590, 605). Het kennismodel zegt niet wat een bedrijfsproces binnen een ketenproces afbakent. **GEMMA:** een ketenproces aggregeert alleen bedrijfsprocessen, nooit rechtstreeks deelprocessen. Het ketenproces omvat de levensloop van één kernobject over de partijen heen; elk bedrijfsproces daarin omvat het deel van die levensloop dat één partij uitvoert, met hetzelfde kernobject, en aggregeert de deelprocessen van die partij. De partij kan ook de gemeente in een eigen hoedanigheid zijn. Zo heeft Bezorgen stoffelijk overschot de bedrijfsprocessen Toestaan lijkbezorging (de gemeente als overheid: schouwen, verlof, andere termijn, ontleding, laissez-passer, asverstrooiing, opgraving en maatregel bij besmetting), Begraven en cremeren stoffelijk overschot (de houder van de begraafplaats of het crematorium) en Verzorgen gemeentebegrafenis ([2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), art. 3, 11, 21, 23, 49). Beheren Nederlanderschap heeft Behandelen verkrijging en verlies Nederlanderschap (de burgemeester; [2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), hoofdstuk II, III, IIIA en V), en Afgeven verklaring omtrent het gedrag heeft Behandelen aanvraag verklaring omtrent het gedrag (de burgemeester; [2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194](../../../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), art. 30). Het deel van een partij buiten de gemeente, zoals de minister of de behandelend arts, staat alleen in de beschrijving van het ketenproces. De levensloop staat niet in de GEMMA-definities; het is een criterium van dit model. Voorstel: neem in de definitie van bedrijfsproces op dat een bedrijfsproces binnen een ketenproces het deel van één partij is, en in die van ketenproces dat het geen deelprocessen rechtstreeks bevat.
 
 ### Besluiten redacteur
 
 - 2026-10-05: Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).
+- 2026-10-07: Aggregeert alleen bedrijfsprocessen: Toestaan lijkbezorging (gemeente als overheid, acht deelprocessen), Begraven en cremeren stoffelijk overschot (houder, twee deelprocessen) en Verzorgen gemeentebegrafenis.
