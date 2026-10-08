@@ -14,6 +14,7 @@ data_object: nee
 doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rvig-hup-verblijfplaats
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Briefadresgever
@@ -62,8 +63,14 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Briefadresgever | stemt in met *toewijzing* | [Inschrijven op briefadres](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md) | [HUP Verblijfplaats](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Briefadres) |
-| Briefadresgever | geeft post door *toegang (beheerder)* | [Briefadres](../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/briefadres.md) | [HUP Verblijfplaats](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Briefadres (art. 2.45)) |
+| Briefadresgever | stemt in met *toewijzing* | [Inschrijven op briefadres](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md) | [HUP Verblijfplaats](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md), [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Briefadres; Wet BRP art. 2.23 lid 3, 2.45 lid 2) |
+| Briefadresgever | geeft post door *toegang (beheerder)* | [Briefadres](../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/briefadres.md) | [HUP Verblijfplaats](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md), [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Briefadres; Wet BRP art. 2.45 lid 3) |
+
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Wet basisregistratie personen](../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Briefadresgever | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 1.1, 2.42, 2.45) |
 
 ## Herkomst
 
@@ -72,6 +79,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [HUP Verblijfplaats](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) | HUP BRP: Verblijfplaats |
+| [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

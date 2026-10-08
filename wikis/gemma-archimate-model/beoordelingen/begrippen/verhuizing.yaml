@@ -232,7 +232,8 @@ relaties:
   bronnen:
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging
   - 2026-utrecht-burgerzaken-verhuizing-doorgeven
-  vindplaats: HUP inleiding; Utrecht inleiding
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: HUP inleiding; Utrecht inleiding; Wet BRP art. 2.39 lid 1
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -249,5 +250,6 @@ afgeleid:
   - 2026-utrecht-burgerzaken-verhuizing-doorgeven
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging
   - 2026-rvig-hup-intergemeentelijke-adreswijziging
-  herkomst: richtlijn
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/gebeurtenissen/verhuizing.md

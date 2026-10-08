@@ -233,7 +233,8 @@ relaties:
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: Groningen art. 16; VNG-model art. 15
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: Groningen art. 16; VNG-model art. 15; Wlb art. 28 lid 1
 - soort: aggregatie
   naar: grafrecht
   naam: omvat
@@ -241,7 +242,8 @@ relaties:
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: Groningen art. 16; VNG-model art. 15
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: Groningen art. 16; VNG-model art. 15; Wlb art. 28 lid 1
 - soort: bediening
   naar: rechthebbende-op-het-graf
   naam: bedient
@@ -249,7 +251,8 @@ relaties:
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: Groningen art. 16; VNG-model art. 15
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: Groningen art. 16; VNG-model art. 15; Wlb art. 23 lid 2
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt
@@ -274,5 +277,6 @@ afgeleid:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2026-vng-retributies
-  herkomst: informatiemodel
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/producten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafuitgifte.md

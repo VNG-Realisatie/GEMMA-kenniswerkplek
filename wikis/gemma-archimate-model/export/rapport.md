@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: de75fb4790638c154449198fde55193124596ae2ce5ae6bc61a41cc81e601d47 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: fe62d37801ee4c8b565cebc430dd35d0778f37a080656028a2c5153dcd274c78 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-08T12:07:07. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 31 gekoppeld aan GEMMA, 230 nieuw. Relaties: 15 gekoppeld, 958 nieuw, 0 overgeslagen. Indelingen: 171 aggregaties vanuit een groepering, 36 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-08T15:35:34. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 31 gekoppeld aan GEMMA, 229 nieuw. Relaties: 15 gekoppeld, 1000 nieuw, 0 overgeslagen. Indelingen: 186 aggregaties vanuit een groepering, 35 specialisaties naar een GEMMA-element.
 
 Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de groep Kennismodel met een groep per laag (map Other / wiki-gemma-model / Kennismodel).
 
@@ -22,28 +22,30 @@ Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kenni
 - relatie aggregation Bedrijfsproces → Gebeurtenis, 20×, niet in Over GEMMA
 - relatie aggregation Bedrijfsproces → Bedrijfsproces, 69×
 - relatie aggregation Rol → Actor, 10×, niet in Over GEMMA
-- relatie aggregation Rol → Rol, 25×
+- relatie aggregation Rol → Rol, 24×
 - relatie aggregation Groep → Bedrijfsfunctie, 3×
 - relatie aggregation Groep → Bedrijfsinteractie, 1×, niet in Over GEMMA
 - relatie aggregation Groep → Bedrijfsobject, 22×
 - relatie aggregation Groep → Bedrijfsproces, 14×, niet in Over GEMMA
 - relatie aggregation Groep → Dienst, 77×, niet in Over GEMMA
 - relatie aggregation Groep → Afspraak, 1×, niet in Over GEMMA
-- relatie aggregation Groep → Beleidskader, 16×, niet in Over GEMMA
+- relatie aggregation Groep → Beleidskader, 32×, niet in Over GEMMA
 - relatie aggregation Groep → Product, 2×, niet in Over GEMMA
 - relatie aggregation Product → Afspraak, 1×
 - relatie assignment Rol → Bedrijfsinteractie, 1×, niet in Over GEMMA
-- relatie assignment Rol → Bedrijfsproces, 114×
+- relatie assignment Rol → Bedrijfsproces, 111×
 - relatie association Actor → Actor, 2×, niet in Over GEMMA
 - relatie association Gebeurtenis → Bedrijfsobject, 1×, niet in Over GEMMA
 - relatie association Bedrijfsobject → Dienst, 1×, niet in Over GEMMA
 - relatie association Rol → Rol, 1×, niet in Over GEMMA
 - relatie association Afspraak → Bedrijfsobject, 1×, niet in Over GEMMA
-- relatie association Beleidskader → Bedrijfsobject, 1×, niet in Over GEMMA
-- relatie association Beleidskader → Bedrijfsproces, 50×, niet in Over GEMMA
-- relatie association Beleidskader → Dienst, 66×, niet in Over GEMMA
+- relatie association Beleidskader → Gebeurtenis, 3×, niet in Over GEMMA
+- relatie association Beleidskader → Bedrijfsobject, 4×, niet in Over GEMMA
+- relatie association Beleidskader → Bedrijfsproces, 57×, niet in Over GEMMA
+- relatie association Beleidskader → Rol, 5×, niet in Over GEMMA
+- relatie association Beleidskader → Dienst, 79×, niet in Over GEMMA
 - relatie association Beleidskader → Beleidskader, 7×, niet in Over GEMMA
-- relatie association Beleidskader → Product, 1×, niet in Over GEMMA
+- relatie association Beleidskader → Product, 2×, niet in Over GEMMA
 - relatie composition Bedrijfsobject → Bedrijfsobject, 1×
 - relatie flow Bedrijfsproces → Bedrijfsproces, 7×, niet in Over GEMMA
 - relatie serving Bedrijfsproces → Bedrijfsinteractie, 3×, niet in Over GEMMA
@@ -95,7 +97,6 @@ Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets
 - Behandelen verzoek om geheimhouding → Behandelen aanvraag product
 - Behandelen verzoek om kiezerspas → Behandelen aanvraag product
 - Behandelen verzoek om verwijdering van gegevens → Behandelen aanvraag product
-- Beheerder van de begraafplaats → Beheerder
 - Inschrijven ingezetene → Behandelen aangifte of melding
 - Inschrijven levenloos geboren kind → Behandelen aanvraag product
 - Inschrijven niet-ingezetene → Behandelen aangifte of melding
@@ -122,11 +123,13 @@ Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets
 
 ## Nieuwe groeperingen
 
-Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het GEMMA-taakveld als dat bestaat.
+Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder het GEMMA-taakveld als dat bestaat) en de groepen van de Regelgevingindeling.
 
 - Begraafplaatsen en crematoria (taakveld 7 Volksgezondheid en Milieu)
 - Belastingen (taakveld 0 Bestuur en Ondersteuning)
 - Besluitvorming (taakveld 0 Bestuur en Ondersteuning)
+- Gemeentelijke regelgeving (Regelgevingindeling)
+- Rijksregelgeving (Regelgevingindeling)
 
 ## Nieuw in GEMMA
 
@@ -160,7 +163,6 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Behandelen verzoek om kiezerspas
 - Behandelen verzoek om verwijdering van gegevens
 - Behandelen verzoek om volmacht
-- Beheerder van de begraafplaats
 - Beheren begraafplaatsen
 - Beheren crematoria
 - Beheren grafrechten

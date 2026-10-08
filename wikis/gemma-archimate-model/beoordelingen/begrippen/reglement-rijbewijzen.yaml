@@ -257,6 +257,13 @@ relaties:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: art. 45
+- soort: associatie (gericht)
+  naar: vermissing-of-diefstal-rijbewijs-doorgeven
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: art. 39 lid 1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: regelgeving

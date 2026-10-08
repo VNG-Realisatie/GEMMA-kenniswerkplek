@@ -23,6 +23,7 @@ bronnen:
 - 2026-rvig-hup-binnengemeentelijke-adreswijziging
 - 2026-rvig-hup-intergemeentelijke-adreswijziging
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Verwerken adreswijziging
@@ -95,8 +96,8 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Verwerken adreswijziging | legt vast *toegang (bijwerken)* | [Verblijfplaats](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verblijfplaats.md) | [HUP Binnengemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) (inleiding) |
-| Verwerken adreswijziging | realiseert *realisatie* | [Verhuismelding](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/verhuismelding.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Verhuizing doorgeven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-verhuizing-doorgeven.md) (UPL nr. 424) |
+| Verwerken adreswijziging | legt vast *toegang (bijwerken)* | [Verblijfplaats](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verblijfplaats.md) | [HUP Binnengemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (inleiding; Wet BRP art. 2.20 lid 1) |
+| Verwerken adreswijziging | realiseert *realisatie* | [Verhuismelding](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/verhuismelding.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Verhuizing doorgeven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-verhuizing-doorgeven.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (UPL nr. 424; Wet BRP art. 2.39) |
 
 #### Inkomend
 
@@ -104,8 +105,9 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 |---|---|---|---|
 | [Aangever](../../../rollen/aangever.md) | doet aangifte *toewijzing* | Verwerken adreswijziging | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Verplichte of bevoegde aangever) |
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Verwerken adreswijziging | [HUP Binnengemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md), [HUP Intergemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-intergemeentelijke-adreswijziging.md) (HUP Binnengemeentelijke en Intergemeentelijke adreswijziging) |
-| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Verwerken adreswijziging | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
-| [Verhuizing](../../../gebeurtenissen/verhuizing.md) | leidt tot *triggering* | Verwerken adreswijziging | [HUP Binnengemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md), [Utrecht Verhuizing doorgeven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-verhuizing-doorgeven.md) (HUP inleiding; Utrecht inleiding) |
+| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Verwerken adreswijziging | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 1.4 lid 1, 2.39) |
+| [Verhuizing](../../../gebeurtenissen/verhuizing.md) | leidt tot *triggering* | Verwerken adreswijziging | [HUP Binnengemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md), [Utrecht Verhuizing doorgeven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-verhuizing-doorgeven.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (HUP inleiding; Utrecht inleiding; Wet BRP art. 2.39 lid 1) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Verwerken adreswijziging | [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.20, 2.39) |
 
 ## Herkomst
 
@@ -117,6 +119,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [HUP Binnengemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) | HUP BRP: Binnengemeentelijke adreswijziging |
 | [HUP Intergemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-intergemeentelijke-adreswijziging.md) | HUP BRP: Intergemeentelijke adreswijziging |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

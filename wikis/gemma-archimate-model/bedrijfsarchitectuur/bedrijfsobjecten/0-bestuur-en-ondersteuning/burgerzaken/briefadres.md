@@ -21,6 +21,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
 - 2023-rvig-circulaire-adresonderzoek-brp
 - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+- 2026-rijk-wet-brp-bwbr0033715
 ggm_entiteit: Briefadres
 ggm_guid: EAID_3015DCE3_7C05_4160_A717_533553258C15
 ggm_uml_type: Class
@@ -102,14 +103,15 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Briefadres | is een *specialisatie* | [Verblijfplaats](verblijfplaats.md) | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md), [HUP Binnengemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) (HUP Verblijfplaats, functie adres B) |
+| Briefadres | is een *specialisatie* | [Verblijfplaats](verblijfplaats.md) | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md), [HUP Binnengemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (HUP Verblijfplaats, functie adres B; Wet BRP art. 1.1 (adres)) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Briefadresgever](../../../rollen/briefadresgever.md) | geeft post door *toegang (beheerder)* | Briefadres | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Briefadres (art. 2.45)) |
-| [Inschrijven op briefadres](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md) | legt vast *toegang (registreren)* | Briefadres | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Briefadres) |
+| [Briefadresgever](../../../rollen/briefadresgever.md) | geeft post door *toegang (beheerder)* | Briefadres | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Briefadres; Wet BRP art. 2.45 lid 3) |
+| [Inschrijven op briefadres](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md) | legt vast *toegang (registreren)* | Briefadres | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Briefadres; Wet BRP art. 2.23) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Briefadres | [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 1.1, 2.23, 2.40) |
 
 ## Herkomst
 
@@ -122,6 +124,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) | Gemeente Utrecht: Adresonderzoek |
 | [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) | Circulaire adresonderzoek BRP |
 | [HUP Binnengemeentelijke adreswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) | HUP BRP: Binnengemeentelijke adreswijziging |
+| [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GGM
 

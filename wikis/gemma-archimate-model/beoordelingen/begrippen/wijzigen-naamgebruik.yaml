@@ -244,7 +244,8 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-wijziging-naamgebruik
-  vindplaats: inleiding
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: inleiding; Wet BRP art. 2.25
 - soort: realisatie
   naar: naamgebruik-verzoek-aanduiding
   naam: realiseert
@@ -252,7 +253,8 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  vindplaats: UPL nr. 257
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: UPL nr. 257; Wet BRP art. 2.25
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: bron
@@ -273,7 +275,8 @@ afgeleid:
   - 2026-rvig-hup-wijziging-naamgebruik
   - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
   - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: informatiemodel
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
     gemma_naam: Behandelen aanvraag product

@@ -248,7 +248,8 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-  vindplaats: inleiding
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: inleiding; Wet BRP art. 2.66 lid 1
 - soort: realisatie
   naar: rni-inschrijving
   naam: realiseert
@@ -256,7 +257,12 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-  vindplaats: UPL nr. 369
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: UPL nr. 369; Wet BRP art. 2.66
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'Behouden met grondslag Wet BRP art. 2.64, 2.66 en 2.67 (regel Wettelijke grondslag): de gemeente voert als RNI-loket de inschrijving van de minister uit.'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -274,7 +280,8 @@ afgeleid:
   - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rvig-hup-achtergronden-en-begrippen
-  herkomst: informatiemodel
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   gemma_generiek:
     gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
     gemma_naam: Behandelen aangifte of melding

@@ -21,6 +21,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rvig-hup-achtergronden-en-begrippen
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Inschrijven niet-ingezetene
@@ -89,15 +90,16 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Inschrijven niet-ingezetene | schrijft in *toegang (registreren)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [Utrecht RNI inschrijven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) (inleiding) |
-| Inschrijven niet-ingezetene | realiseert *realisatie* | [RNI inschrijving](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/rni-inschrijving.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht RNI inschrijven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) (UPL nr. 369) |
+| Inschrijven niet-ingezetene | schrijft in *toegang (registreren)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [Utrecht RNI inschrijven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (inleiding; Wet BRP art. 2.66 lid 1) |
+| Inschrijven niet-ingezetene | realiseert *realisatie* | [RNI inschrijving](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/rni-inschrijving.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht RNI inschrijven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (UPL nr. 369; Wet BRP art. 2.66) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Inschrijven niet-ingezetene | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Utrecht RNI inschrijven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) (HUP Achtergronden regel 38; Utrecht RNI) |
-| [RNI-loket](../../../rollen/rni-loket.md) | schrijft in *toewijzing* | Inschrijven niet-ingezetene | [Utrecht RNI inschrijven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) (Inschrijven RNI) |
+| [RNI-loket](../../../rollen/rni-loket.md) | schrijft in *toewijzing* | Inschrijven niet-ingezetene | [Utrecht RNI inschrijven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Inschrijven RNI; Wet BRP art. 2.66, 2.67 lid 3) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Inschrijven niet-ingezetene | [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.64, 2.66, 2.67) |
 
 ## Herkomst
 
@@ -108,6 +110,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [Utrecht RNI inschrijven](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) | Gemeente Utrecht: Registratie niet-ingezetenen (RNI) |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) | HUP BRP: Achtergronden en begrippen |
+| [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 
@@ -116,3 +119,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 Procesarchitectuur-terugmeldingen:
 
 - [Nummer 4](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, opgelost): **Kennismodel:** een deelproces realiseert een deelservice: een onderdeel van een dienst, dat in verschillende bedrijfsprocessen wordt gebruikt maar geen dienst is die de organisatie aan de buitenwereld levert. De dienst zelf wordt gerealiseerd door een bedrijfsproces of ketenproces ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 385, 398, 591, 603). **GEMMA:** een deelproces realiseert de dienst van een UPL-product, bijvoorbeeld Verlenen verlof tot begraving of crematie de dienst Verlof tot begraven en Verlenen grafrecht de dienst Graf aanvragen. Het model heeft één bedrijfs- of ketenproces per kernobject (Beheren grafrechten, Beheren graven, Bezorgen stoffelijk overschot); daaronder levert elk deelproces één product of dienst. Eén bedrijfsproces per product maakt het model plat: een gemeente levert zo'n 500 externe en 215 interne producten en diensten ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), 2025-vng-upl-producten-en-diensten-intern). **Opgelost (2026-10-08):** de procesniveaus van het model volgen nu de ladder van GEMMA Online, Proceshiërarchie ([2026-vng-gemma-proceshierarchie](../../../../analyses/proceshierarchie.md), regel 47, 81, 83): wat het model deelproces noemde, is een bedrijfsproces, en een bedrijfsproces realiseert de dienst, zoals het kennismodel zegt. De afwijking bestaat niet meer; de melding wordt niet verstuurd.
+- [Nummer 23](../../../../analyses/procesarchitectuur-terugmeldingen.md) (grondslag, open): **UPL:** de UPL noemt RNI-inschrijving als product van de gemeente, met grondslag art. 2.66 Wet BRP ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), nr. 369). **Bevinding:** de inschrijving in de RNI is een taak van de minister van BZK. De persoon verschijnt bij een inschrijfvoorziening van de minister ([2026-rijk-wet-brp-bwbr0033715](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), art. 2.64, 2.66, 2.67 lid 3); het Besluit BRP spreekt van de gemeente waar de inschrijfvoorziening is ondergebracht ([2026-rijk-besluit-brp-bwbr0034306](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md), art. 36). Welke gemeenten dat zijn, staat niet in de wet, het besluit of de regeling. Alleen een informatiepagina noemt de 19 gemeenten ([2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven](../../../../bronanalyses/burgerzaken/overig/2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven.md)). Het product geldt dus niet voor alle gemeenten. GEMMA modelleert het als de rol RNI-loket met het proces Inschrijven niet-ingezetene, net als de reisdocumenten voor niet-ingezetenen bij aangewezen gemeenten. **Voorstel:** vermeld bij het UPL-product dat alleen gemeenten met een RNI-loket het leveren, en verwijs naar de grondslag van de loketten (de afspraak of aanwijzing door de minister), zodat gemeenten zonder loket het product niet hoeven aan te bieden.
+
+### Besluiten redacteur
+
+- 2026-10-08: Behouden met grondslag Wet BRP art. 2.64, 2.66 en 2.67 (regel Wettelijke grondslag): de gemeente voert als RNI-loket de inschrijving van de minister uit.

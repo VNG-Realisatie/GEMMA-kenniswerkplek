@@ -77,6 +77,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 |---|---|---|---|
 | [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | realiseert *realisatie* | Begraafplaatsregister | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 27) |
 | [Producten- en dienstenrealisatie publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Begraafplaatsregister | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 45 (GEMMA-domein Publieksdiensten)) |
+| [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/rijksregelgeving/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Begraafplaatsregister | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (UPL nr. 45, art. 27) |
 
 ## Herkomst
 

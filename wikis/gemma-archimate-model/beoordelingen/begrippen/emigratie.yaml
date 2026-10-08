@@ -225,7 +225,8 @@ relaties:
   bronnen:
   - 2026-rvig-hup-emigratie
   - 2026-utrecht-burgerzaken-emigratie-doorgeven
-  vindplaats: inleiding
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: inleiding; Wet BRP art. 2.43 lid 1
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -241,5 +242,6 @@ afgeleid:
   bronnen:
   - 2026-utrecht-burgerzaken-emigratie-doorgeven
   - 2026-rvig-hup-emigratie
-  herkomst: richtlijn
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/gebeurtenissen/emigratie.md

@@ -14,6 +14,7 @@ data_object: nee
 doelgroep: gemeente
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Toezichthouder BRP
@@ -63,7 +64,13 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Toezichthouder BRP | legt huisbezoek af *toewijzing* | [Uitvoeren adresonderzoek](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitvoeren-adresonderzoek.md) | [RvIG Circulaire adresonderzoek BRP](../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) (4.5) |
+| Toezichthouder BRP | legt huisbezoek af *toewijzing* | [Uitvoeren adresonderzoek](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitvoeren-adresonderzoek.md) | [RvIG Circulaire adresonderzoek BRP](../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (4.5; Wet BRP art. 4.2) |
+
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Wet basisregistratie personen](../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Toezichthouder BRP | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 4.2) |
 
 ## Herkomst
 
@@ -72,6 +79,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [RvIG Circulaire adresonderzoek BRP](../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) | Circulaire adresonderzoek BRP |
+| [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

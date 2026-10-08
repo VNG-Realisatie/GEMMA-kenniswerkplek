@@ -19,6 +19,7 @@ bronnen:
 - 2026-rvig-hup-wijziging-naamgebruik
 - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Wijzigen naamgebruik
@@ -82,14 +83,15 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Wijzigen naamgebruik | wijzigt naamgebruik van *toegang (bijwerken)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [HUP BRP: Wijziging naamgebruik](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md) (inleiding) |
-| Wijzigen naamgebruik | realiseert *realisatie* | [Naamgebruik verzoek aanduiding](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naamgebruik-verzoek-aanduiding.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Achternaamgebruik veranderen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-achternaamgebruik-veranderen.md) (UPL nr. 257) |
+| Wijzigen naamgebruik | wijzigt naamgebruik van *toegang (bijwerken)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [HUP BRP: Wijziging naamgebruik](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (inleiding; Wet BRP art. 2.25) |
+| Wijzigen naamgebruik | realiseert *realisatie* | [Naamgebruik verzoek aanduiding](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naamgebruik-verzoek-aanduiding.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Achternaamgebruik veranderen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-achternaamgebruik-veranderen.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (UPL nr. 257; Wet BRP art. 2.25) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Wijzigen naamgebruik | [HUP BRP: Wijziging naamgebruik](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md) (inleiding) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Wijzigen naamgebruik | [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.25) |
 
 ## Herkomst
 
@@ -100,6 +102,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [HUP BRP: Wijziging naamgebruik](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md) | HUP BRP: Wijziging naamgebruik |
 | [Utrecht Achternaamgebruik veranderen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-achternaamgebruik-veranderen.md) | Gemeente Utrecht: Achternaamgebruik |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

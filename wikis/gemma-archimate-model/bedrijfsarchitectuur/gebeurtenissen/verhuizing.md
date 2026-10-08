@@ -17,6 +17,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-verhuizing-doorgeven
 - 2026-rvig-hup-binnengemeentelijke-adreswijziging
 - 2026-rvig-hup-intergemeentelijke-adreswijziging
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Verhuizing
@@ -73,13 +74,14 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Verhuizing | leidt tot *triggering* | [Verwerken adreswijziging](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-adreswijziging.md) | [HUP Binnengemeentelijke adreswijziging](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md), [Utrecht Verhuizing doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-verhuizing-doorgeven.md) (HUP inleiding; Utrecht inleiding) |
+| Verhuizing | leidt tot *triggering* | [Verwerken adreswijziging](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-adreswijziging.md) | [HUP Binnengemeentelijke adreswijziging](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md), [Utrecht Verhuizing doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-verhuizing-doorgeven.md), [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (HUP inleiding; Utrecht inleiding; Wet BRP art. 2.39 lid 1) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Verhuizing | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [HUP Intergemeentelijke adreswijziging](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-intergemeentelijke-adreswijziging.md) (Wet BRP art. 2.20, 2.39) |
+| [Wet basisregistratie personen](../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Verhuizing | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.39) |
 
 ## Herkomst
 
@@ -90,6 +92,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | [Utrecht Verhuizing doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-verhuizing-doorgeven.md) | Gemeente Utrecht: Verhuizing doorgeven |
 | [HUP Binnengemeentelijke adreswijziging](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) | HUP BRP: Binnengemeentelijke adreswijziging |
 | [HUP Intergemeentelijke adreswijziging](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-intergemeentelijke-adreswijziging.md) | HUP BRP: Intergemeentelijke adreswijziging |
+| [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

@@ -21,6 +21,7 @@ bronnen:
 - 2026-nvvb-beleidsregel-briefadres
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rvig-hup-verblijfplaats
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Inschrijven op briefadres
@@ -90,8 +91,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Inschrijven op briefadres | legt vast *toegang (registreren)* | [Briefadres](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/briefadres.md) | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Briefadres) |
-| Inschrijven op briefadres | realiseert *realisatie* | [Briefadres aanvragen](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/briefadres-aanvragen.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [NVVB Beleidsregel briefadres](../../../../bronanalyses/burgerzaken/gemeentelijke-regelgeving/2026-nvvb-beleidsregel-briefadres.md) (UPL nr. 85) |
+| Inschrijven op briefadres | legt vast *toegang (registreren)* | [Briefadres](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/briefadres.md) | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Briefadres; Wet BRP art. 2.23) |
+| Inschrijven op briefadres | realiseert *realisatie* | [Briefadres aanvragen](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/briefadres-aanvragen.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [NVVB Beleidsregel briefadres](../../../../bronanalyses/burgerzaken/gemeentelijke-regelgeving/2026-nvvb-beleidsregel-briefadres.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (UPL nr. 85; Wet BRP art. 2.23 lid 1) |
 
 #### Inkomend
 
@@ -100,8 +101,9 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Aangever](../../../rollen/aangever.md) | doet aangifte *toewijzing* | Inschrijven op briefadres | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Verplichte of bevoegde aangever) |
 | [Beslisser](../../../rollen/beslisser.md) | beslist over *toewijzing* | Inschrijven op briefadres | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Briefadres) |
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Inschrijven op briefadres | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Briefadres) |
-| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Inschrijven op briefadres | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
-| [Briefadresgever](../../../rollen/briefadresgever.md) | stemt in met *toewijzing* | Inschrijven op briefadres | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) (Briefadres) |
+| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Inschrijven op briefadres | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 1.4 lid 1, 2.23) |
+| [Briefadresgever](../../../rollen/briefadresgever.md) | stemt in met *toewijzing* | Inschrijven op briefadres | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Briefadres; Wet BRP art. 2.23 lid 3, 2.45 lid 2) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Inschrijven op briefadres | [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.23, 2.40, 2.41, 2.45) |
 
 ## Herkomst
 
@@ -112,6 +114,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [NVVB Beleidsregel briefadres](../../../../bronanalyses/burgerzaken/gemeentelijke-regelgeving/2026-nvvb-beleidsregel-briefadres.md) | NVVB: Beleidsregel briefadres |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [HUP Verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md) | HUP BRP: Verblijfplaats |
+| [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

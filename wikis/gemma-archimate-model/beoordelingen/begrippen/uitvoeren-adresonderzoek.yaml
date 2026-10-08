@@ -259,7 +259,9 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  vindplaats: Na uw melding
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  vindplaats: Na uw melding; Wet BRP art. 2.20 lid 2; Circulaire adresonderzoek 4.7 (melder)
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -278,5 +280,6 @@ afgeleid:
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   - 2026-nvvb-handreiking-adresonderzoek
   - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rijk-wet-brp-bwbr0033715
   herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitvoeren-adresonderzoek.md

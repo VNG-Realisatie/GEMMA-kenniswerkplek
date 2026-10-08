@@ -12,6 +12,9 @@ match:
   gemma: geen
 data_object: nee
 doelgroep: gemeente
+synoniemen:
+- Beheerder van de begraafplaats (beleid)
+- Beheerder (beleid)
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -33,6 +36,19 @@ Verantwoordelijkheid voor het in stand houden en beheren van een begraafplaats.
 ### Beschrijving
 
 De houder van de begraafplaats stelt voor een begraving de identiteit van het stoffelijk overschot vast (art. 8), bepaalt wie in een algemeen graf wordt begraven (art. 23), houdt het register van begraven lijken (art. 27), doet mededeling van het verstrijken van termijnen (art. 27a, 28 lid 2), kan een verklaring van verwaarlozing opstellen (art. 28 lid 4) en geeft last tot het ruimen van graven (art. 31). Bij een gemeentelijke begraafplaats is de gemeente houder; bij een bijzondere begraafplaats een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 37).
+
+Bij een gemeentelijke begraafplaats laat de gemeente de taken van de houder meestal uitvoeren door een beheerder van de begraafplaats: een ambtenaar met de dagelijkse leiding, die als aanspreekpunt met mandaat beslist ([2010-vng-model-beheersverordening-begraafplaatsen](../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), toelichting 2).
+
+### Synoniemen
+
+| Synoniem | Context |
+|---|---|
+| Beheerder van de begraafplaats | beleid |
+| Beheerder | beleid |
+
+### Naamkeuze
+
+De naam blijft de wetsterm houder van de begraafplaats (Wlb art. 23, 27, 37): die omvat ook de houder van een bijzondere begraafplaats (kerkgenootschap, rechtspersoon of natuurlijk persoon). De gangbare term beheerder van de begraafplaats dekt alleen de ambtenaar die bij een gemeentelijke begraafplaats de taken van de houder uitvoert, en is daarom synoniem (besluit redacteur 2026-10-08).
 
 ## Plaats in het model
 
@@ -98,3 +114,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-05: Stoffelijk overschot in lopende tekst: bij de identiteitsvaststelling; het register van begraven lijken blijft (besluit 2026-10-05).
+- 2026-10-08: Beheerder van de begraafplaats wordt synoniem (context beleid) van deze rol; een zin over het mandaat in de beschrijving (regel Wettelijke grondslag).

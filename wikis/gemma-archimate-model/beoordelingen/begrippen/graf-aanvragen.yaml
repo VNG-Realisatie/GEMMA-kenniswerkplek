@@ -235,7 +235,8 @@ relaties:
   grondslag: bron
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 16
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 16; Wlb art. 23 lid 2, 28 lid 1
 onderwerpen:
 - lijkbezorging
 domein: Fysieke leefomgeving
@@ -256,5 +257,6 @@ afgeleid:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-vng-retributies
-  herkomst: gemeentelijke-regelgeving
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf-aanvragen.md

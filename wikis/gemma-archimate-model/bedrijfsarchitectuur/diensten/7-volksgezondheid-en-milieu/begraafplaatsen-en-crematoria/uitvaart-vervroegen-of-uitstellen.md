@@ -94,6 +94,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 |---|---|---|---|
 | [Stellen andere termijn](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md) | realiseert *realisatie* | Uitvaart vervroegen of uitstellen | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md) (art. 17; § Uitvaart vervroegen, § Uitvaart uitstellen) |
 | [Vergunningenbeheer Publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/vergunningenbeheer-publieksdiensten.md) | omvat *aggregatie* | Uitvaart vervroegen of uitstellen | [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md) (§ Uitvaart vervroegen, § Uitvaart uitstellen) |
+| [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/rijksregelgeving/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Uitvaart vervroegen of uitstellen | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 17) |
 
 ## Herkomst
 

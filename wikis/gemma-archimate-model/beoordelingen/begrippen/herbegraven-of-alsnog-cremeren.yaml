@@ -223,7 +223,8 @@ relaties:
   grondslag: bron
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 28 lid 1
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 28 lid 1; Wlb art. 29 lid 1
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt

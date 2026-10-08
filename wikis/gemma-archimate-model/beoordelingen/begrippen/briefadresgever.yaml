@@ -211,14 +211,16 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-verblijfplaats
-  vindplaats: Briefadres
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: Briefadres; Wet BRP art. 2.23 lid 3, 2.45 lid 2
 - soort: toegang (beheerder)
   naar: briefadres
   naam: geeft post door
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-verblijfplaats
-  vindplaats: Briefadres (art. 2.45)
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: Briefadres; Wet BRP art. 2.45 lid 3
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -233,5 +235,6 @@ afgeleid:
     typeregel: 12
   bronnen:
   - 2026-rvig-hup-verblijfplaats
-  herkomst: richtlijn
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/rollen/briefadresgever.md

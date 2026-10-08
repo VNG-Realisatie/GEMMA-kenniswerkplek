@@ -204,6 +204,14 @@ kenmerken:
 definitie: Verantwoordelijkheid voor het in stand houden en beheren van een begraafplaats.
 beschrijving:
 - De houder van de begraafplaats stelt voor een begraving de identiteit van het stoffelijk overschot vast (art. 8), bepaalt wie in een algemeen graf wordt begraven (art. 23), houdt het register van begraven lijken (art. 27), doet mededeling van het verstrijken van termijnen (art. 27a, 28 lid 2), kan een verklaring van verwaarlozing opstellen (art. 28 lid 4) en geeft last tot het ruimen van graven (art. 31). Bij een gemeentelijke begraafplaats is de gemeente houder; bij een bijzondere begraafplaats een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 37).
+- 'Bij een gemeentelijke begraafplaats laat de gemeente de taken van de houder meestal uitvoeren door een beheerder van de begraafplaats: een ambtenaar met de dagelijkse leiding, die als aanspreekpunt met mandaat beslist (2010-vng-model-beheersverordening-begraafplaatsen, toelichting 2).'
+synoniemen:
+- naam: Beheerder van de begraafplaats
+  context: beleid
+- naam: Beheerder
+  context: beleid
+naamkeuze:
+- 'De naam blijft de wetsterm houder van de begraafplaats (Wlb art. 23, 27, 37): die omvat ook de houder van een bijzondere begraafplaats (kerkgenootschap, rechtspersoon of natuurlijk persoon). De gangbare term beheerder van de begraafplaats dekt alleen de ambtenaar die bij een gemeentelijke begraafplaats de taken van de houder uitvoert, en is daarom synoniem (besluit redacteur 2026-10-08).'
 grondslag: bron
 gemma:
   sterkte: geen
@@ -272,6 +280,9 @@ doelgroep: gemeente
 besluiten:
 - datum: '2026-10-05'
   besluit: 'Stoffelijk overschot in lopende tekst: bij de identiteitsvaststelling; het register van begraven lijken blijft (besluit 2026-10-05).'
+  gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: Beheerder van de begraafplaats wordt synoniem (context beleid) van deze rol; een zin over het mandaat in de beschrijving (regel Wettelijke grondslag).
   gevolg: verwerkt
 status: goedgekeurd
 afgeleid:

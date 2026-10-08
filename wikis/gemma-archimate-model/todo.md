@@ -12,11 +12,10 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 ## Wettelijke grondslag (analyse 2026-10-08, `analyses/wettelijke-grondslag.md`)
 
 - **Richtlijnen als beleidskader** (besluit 9): per onderwerp beoordelen welke landelijke richtlijnen als geheel een beleidskader worden, met relatie *geeft richtlijn voor*. Kandidaten in burgerzaken: de HUP van RvIG (per hoofdstuk of als geheel, voorleggen), de Circulaire adresonderzoek BRP, de NVVB-handreikingen adresonderzoek en gezag.
-- **A, per geval**: 22 elementen met een wet die niet genoemd wordt (vooral Wet BRP); de landelijke bron en de relatie *is grondslag voor* toevoegen; voor Ingeschreven persoon, Bijhoudingsgemeente, Toezichthouder BRP, Briefadresgever en de aanwijzing van de RNI-loketten eerst het artikel bepalen.
 - **B, per geval**: Gedenkteken plaatsingsvergunning, Grafonderhoud en Asverstrooiing behouden met een grondslag in Gemeentelijke regelgeving; de processen Verlenen vergunning grafbedekking, Onderhouden graf en Verlenen toestemming asverstrooiing laten vervallen, met wat alleen voor hen bestaat. Model-APV (art. 5:36) eerst als bron ophalen en als beleidskader beoordelen. Grafonderhoud noemt de UPL (nr. 163) nog niet als bron, waardoor het script het niet als UPL-product herkent; voeg de UPL toe.
 - **Na B**: het signaal voor een bedrijfsproces dat een UPL-product zonder landelijke grondslag realiseert, omzetten naar een fout in `tools/signalen.py` (`wettelijke_grondslag`).
 - **C**: Gewaarmerkte kopie reisdocument aanvragen laten vervallen, met procesarchitectuur-terugmelding 11 en de representatie Gewaarmerkte kopie.
-- **D, per geval**: de relatie *is grondslag voor* toevoegen bij negen diensten in lijkbezorging en bij Vermissing of diefstal rijbewijs doorgeven.
+- **Relaties zonder landelijke wettelijke bron**: de regel Wettelijke grondslag geldt ook voor relaties, maar `tools/signalen.py` controleert alleen elementen. Bij groep A en D zijn de relaties van de behandelde elementen nagelopen; andere relaties steunen nog alleen op een richtlijn of een gemeentelijke bron (bijvoorbeeld *bedient* Degene die in de lijkbezorging voorziet vanuit Verlof tot begraven, Uitvaart vervroegen of uitstellen en Vervoersdocumenten stoffelijk overschot). Per onderwerp nalopen, en daarna een signaal voor een relatie zonder landelijke bron overwegen.
 - **Procesarchitectuur-terugmeldingen**: terugmelding 11 bijwerken als Gewaarmerkte kopie vervalt (het element verdwijnt uit `elementen`).
 
 ## Indelingen (analyse 2026-10-04, `analyses/indelingen.md`)

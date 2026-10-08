@@ -16,6 +16,7 @@ synoniemen:
 bronnen:
 - 2026-utrecht-burgerzaken-emigratie-doorgeven
 - 2026-rvig-hup-emigratie
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Emigratie
@@ -72,13 +73,14 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Emigratie | leidt tot *triggering* | [Verwerken emigratie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-emigratie.md) | [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md), [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md) (inleiding) |
+| Emigratie | leidt tot *triggering* | [Verwerken emigratie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-emigratie.md) | [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md), [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (inleiding; Wet BRP art. 2.43 lid 1) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Emigratie | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) (Wet BRP art. 2.21, 2.43) |
+| [Wet basisregistratie personen](../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Emigratie | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.43) |
 
 ## Herkomst
 
@@ -88,6 +90,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 |---|---|
 | [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md) | Gemeente Utrecht: Emigratie doorgeven |
 | [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) | HUP BRP: Emigratie |
+| [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

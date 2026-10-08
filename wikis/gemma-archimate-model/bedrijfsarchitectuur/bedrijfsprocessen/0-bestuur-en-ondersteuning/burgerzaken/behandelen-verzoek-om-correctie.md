@@ -22,6 +22,7 @@ bronnen:
 - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
 - 2018-nvvb-stappenplan-identiteitswijziging-brp
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Behandelen verzoek om correctie
@@ -95,8 +96,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Behandelen verzoek om correctie | corrigeert *toegang (bijwerken)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [HUP BRP Correcties](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md) (Persoonsgegevens aanpassen) |
-| Behandelen verzoek om correctie | realiseert *realisatie* | [BRP-wijzigingsverzoek](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-wijzigingsverzoek.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (UPL nr. 95) |
+| Behandelen verzoek om correctie | corrigeert *toegang (bijwerken)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [HUP BRP Correcties](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Persoonsgegevens aanpassen; Wet BRP art. 2.58) |
+| Behandelen verzoek om correctie | realiseert *realisatie* | [BRP-wijzigingsverzoek](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-wijzigingsverzoek.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (UPL nr. 95; Wet BRP art. 2.58) |
 
 #### Inkomend
 
@@ -104,7 +105,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 |---|---|---|---|
 | [Beslisser](../../../rollen/beslisser.md) | beslist over *toewijzing* | Behandelen verzoek om correctie | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (Na uw aanvraag) |
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Behandelen verzoek om correctie | [HUP BRP Correcties](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md) (inleiding) |
-| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Behandelen verzoek om correctie | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
+| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Behandelen verzoek om correctie | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 2.58) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Behandelen verzoek om correctie | [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.58) |
 
 ## Herkomst
 
@@ -116,6 +118,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [HUP BRP Correcties](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md) | HUP BRP: Correcties en ten onrechte opgenomen gegevens |
 | [NVVB Stappenplan identiteitswijziging BRP](../../../../bronanalyses/burgerzaken/richtlijn/2018-nvvb-stappenplan-identiteitswijziging-brp.md) | NVVB: Stappenplan identiteitswijziging in de BRP |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

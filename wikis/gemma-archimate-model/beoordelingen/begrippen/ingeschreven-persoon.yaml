@@ -240,7 +240,8 @@ relaties:
   grondslag: bron
   bronnen:
   - 2025-rvig-logisch-ontwerp-brp-2025q1
-  vindplaats: 4.4, categorie 08 Verblijfplaats
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: 4.4, categorie 08 Verblijfplaats; Wet BRP art. 2.7 lid 1 onder a 7°
 - soort: associatie (gericht)
   naar: reisdocument
   naam: is houder van
@@ -251,7 +252,9 @@ relaties:
   bronnen:
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   - 2026-rvig-hup-reisdocument
-  vindplaats: LO 4.4, categorie 12; HUP Reisdocument
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: LO 4.4, categorie 12; HUP Reisdocument; Besluit BRP bijlage 1 (gegevens omtrent het reisdocument); Paspoortwet art. 1 onder f (houder)
 - soort: associatie (gericht)
   naar: akte-van-de-burgerlijke-stand
   naam: gegevens ontleend aan
@@ -259,7 +262,8 @@ relaties:
   bronnen:
   - 2026-rvig-hup-algemeen
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: HUP Algemeen regel 55; HUP Achtergronden regel 87
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: HUP Algemeen regel 55; HUP Achtergronden regel 87; Wet BRP art. 2.8 lid 1
 vragen: []
 besluiten:
 - datum: '2026-10-07'
@@ -283,9 +287,12 @@ afgeleid:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-rvig-hup-immigratie
+  - 2026-rijk-wet-brp-bwbr0033715
   - 2026-rvig-hup-reisdocument
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-algemeen
-  herkomst: informatiemodel
+  herkomst: rijksregelgeving
   ggm:
     ggm_entiteit: IngeschrevenPersoon
     ggm_guid: EAID_AF9534B0_7CBD_4061_9276_A7B6698B383A

@@ -9,9 +9,11 @@ kenmerken:
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   gemeentelijk:
     waarde: ja
-    onderbouwing: De gemeente kan na de melding een adresonderzoek starten (Utrecht).
+    onderbouwing: De gemeente kan na de melding een adresonderzoek starten (Utrecht). Het college houdt het adres ambtshalve juist en onderzoekt een mogelijk onjuiste inschrijving (Wet BRP art. 2.20 lid 2, 2.22, 2.26); de melding van een bewoner staat niet in de wet, wel in de Circulaire adresonderzoek (§ 4.7, de melder).
     bronnen:
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2023-rvig-circulaire-adresonderzoek-brp
   buiten_dit_model:
     waarde: nee
     onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
@@ -22,19 +24,16 @@ kenmerken:
     waarde: ja
     onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
     bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
     bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   gedrag:
     waarde: ja
     onderbouwing: Iets wat de gemeente aanbiedt.
     bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   handelende_partij:
     waarde: nee
@@ -113,7 +112,6 @@ kenmerken:
     waarde: ja
     onderbouwing: Voor elke afnemer die erom vraagt.
     bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   eigen_normering:
     waarde: nee
@@ -223,6 +221,10 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'Behouden met grondslag Wet BRP art. 2.20 lid 2, 2.22 en 2.26 (regel Wettelijke grondslag): de dienst is de toegang tot het wettelijke adresonderzoek. De UPL is geen bron (geen UPL-item); procesarchitectuur-terugmelding met het voorstel de melding als UPL-item op te nemen.'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -237,7 +239,7 @@ afgeleid:
     typeregel: 17
   bronnen:
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-brp-bwbr0033715
   - 2023-rvig-circulaire-adresonderzoek-brp
-  herkomst: informatiemodel
+  herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/onjuiste-inschrijving-op-adres-melden.md

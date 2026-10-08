@@ -244,7 +244,8 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-verstrekkingsbeperking
-  vindplaats: inleiding
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: inleiding; Wet BRP art. 2.59 lid 1
 - soort: realisatie
   naar: brp-geheimhoudingsverzoek
   naam: realiseert
@@ -252,7 +253,8 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-  vindplaats: UPL nr. 87
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: UPL nr. 87; Wet BRP art. 2.59
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -270,7 +272,8 @@ afgeleid:
   - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
   - 2026-rvig-hup-verstrekkingsbeperking
   - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: informatiemodel
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
     gemma_naam: Behandelen aanvraag product

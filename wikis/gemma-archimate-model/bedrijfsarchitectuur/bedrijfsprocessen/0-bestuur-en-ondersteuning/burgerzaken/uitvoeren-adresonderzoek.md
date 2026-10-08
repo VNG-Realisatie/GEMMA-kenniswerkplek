@@ -22,6 +22,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
 - 2026-nvvb-handreiking-adresonderzoek
 - 2026-rijk-besluit-brp-bwbr0034306
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Uitvoeren adresonderzoek
@@ -93,7 +94,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Uitvoeren adresonderzoek | verbetert *toegang (bijwerken)* | [Verblijfplaats](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verblijfplaats.md) | [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) (4.8) |
-| Uitvoeren adresonderzoek | realiseert *realisatie* | [Onjuiste inschrijving op adres melden](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/onjuiste-inschrijving-op-adres-melden.md) | [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) (Na uw melding) |
+| Uitvoeren adresonderzoek | realiseert *realisatie* | [Onjuiste inschrijving op adres melden](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/onjuiste-inschrijving-op-adres-melden.md) | [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) (Na uw melding; Wet BRP art. 2.20 lid 2; Circulaire adresonderzoek 4.7 (melder)) |
 
 #### Inkomend
 
@@ -102,8 +103,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Beslisser](../../../rollen/beslisser.md) | besluit na *toewijzing* | Uitvoeren adresonderzoek | [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) (4.6) |
 | [Besluit basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/besluit-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Uitvoeren adresonderzoek | [Besluit BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 28a–28g) |
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Uitvoeren adresonderzoek | [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) (par. 2, 4) |
-| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Uitvoeren adresonderzoek | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
-| [Toezichthouder BRP](../../../rollen/toezichthouder-brp.md) | legt huisbezoek af *toewijzing* | Uitvoeren adresonderzoek | [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) (4.5) |
+| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Uitvoeren adresonderzoek | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 1.4 lid 1, 2.20 lid 2) |
+| [Toezichthouder BRP](../../../rollen/toezichthouder-brp.md) | legt huisbezoek af *toewijzing* | Uitvoeren adresonderzoek | [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (4.5; Wet BRP art. 4.2) |
 
 ## Herkomst
 
@@ -115,6 +116,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) | Gemeente Utrecht: Adresonderzoek |
 | [NVVB Handreiking adresonderzoek](../../../../bronanalyses/burgerzaken/richtlijn/2026-nvvb-handreiking-adresonderzoek.md) | NVVB: Adresonderzoek |
 | [Besluit BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) | Besluit basisregistratie personen |
+| [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

@@ -314,6 +314,76 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 67, 68
+- soort: associatie (gericht)
+  naar: graf-aanvragen
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 23 lid 2, 28 lid 1
+- soort: associatie (gericht)
+  naar: grafuitgifte
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 23 lid 2, 28 lid 1, 33
+- soort: associatie (gericht)
+  naar: begraafplaatsregister
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: UPL nr. 45, art. 27
+- soort: associatie (gericht)
+  naar: bijzettingenregister
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: UPL nr. 70, art. 65
+- soort: associatie (gericht)
+  naar: crematoriumregister
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: UPL nr. 106, art. 50
+- soort: associatie (gericht)
+  naar: bijzondere-begraafplaats-toestemming
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: UPL nr. 71, art. 37, 40, 41
+- soort: associatie (gericht)
+  naar: herbegraven-of-alsnog-cremeren
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: UPL nr. 171, art. 29
+- soort: associatie (gericht)
+  naar: ontleding-stoffelijk-overschot-toestemming
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: UPL nr. 306, art. 67, 68
+- soort: associatie (gericht)
+  naar: uitvaart-vervroegen-of-uitstellen
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 17
+- soort: associatie (gericht)
+  naar: verlof-tot-begraven
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: UPL nr. 438, art. 11
 onderwerpen:
 - lijkbezorging
 regelgever: rijk

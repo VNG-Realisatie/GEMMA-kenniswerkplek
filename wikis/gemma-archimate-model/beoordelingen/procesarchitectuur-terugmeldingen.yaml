@@ -253,3 +253,23 @@ terugmeldingen:
   - '**Voorstel:** zoek de bevoegdheidsgrondslag van de burgemeester voor de legalisatie van een handtekening uit en neem die op in de UPL. Is er geen, vermeld dan dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), met de leges in de legesverordening, en noem de Wet griffierechten niet als grondslag.'
   nummer: 21
   status: open
+- type: product
+  elementen:
+  - onjuiste-inschrijving-op-adres-melden
+  bevinding:
+  - '**UPL:** de UPL kent geen product voor het melden van een onjuiste inschrijving op een adres (2025-vng-upl-producten-en-diensten-extern).'
+  - '**Bevinding:** het college moet het adres in de BRP ambtshalve juist houden en een mogelijk onjuiste inschrijving onderzoeken (2026-rijk-wet-brp-bwbr0033715, art. 2.20 lid 2, 2.22, 2.26). Een melding van een bewoner is een gewone aanleiding voor zo''n adresonderzoek; de Circulaire adresonderzoek beschrijft de melder (2023-rvig-circulaire-adresonderzoek-brp, § 4.7). Gemeenten bieden de melding aan, gratis, online of aan de balie (2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek). In GEMMA is het de dienst Onjuiste inschrijving op adres melden, gerealiseerd door Uitvoeren adresonderzoek.'
+  - '**Voorstel:** neem in de UPL het product onjuiste inschrijving op adres melden op, onder taakveld 0.2, met als grondslag art. 2.20 lid 2, 2.22 en 2.26 Wet BRP.'
+  nummer: 22
+  status: open
+- type: grondslag
+  elementen:
+  - rni-loket
+  - inschrijven-niet-ingezetene
+  - rni-inschrijving
+  bevinding:
+  - '**UPL:** de UPL noemt RNI-inschrijving als product van de gemeente, met grondslag art. 2.66 Wet BRP (2025-vng-upl-producten-en-diensten-extern, nr. 369).'
+  - '**Bevinding:** de inschrijving in de RNI is een taak van de minister van BZK. De persoon verschijnt bij een inschrijfvoorziening van de minister (2026-rijk-wet-brp-bwbr0033715, art. 2.64, 2.66, 2.67 lid 3); het Besluit BRP spreekt van de gemeente waar de inschrijfvoorziening is ondergebracht (2026-rijk-besluit-brp-bwbr0034306, art. 36). Welke gemeenten dat zijn, staat niet in de wet, het besluit of de regeling. Alleen een informatiepagina noemt de 19 gemeenten (2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven). Het product geldt dus niet voor alle gemeenten. GEMMA modelleert het als de rol RNI-loket met het proces Inschrijven niet-ingezetene, net als de reisdocumenten voor niet-ingezetenen bij aangewezen gemeenten.'
+  - '**Voorstel:** vermeld bij het UPL-product dat alleen gemeenten met een RNI-loket het leveren, en verwijs naar de grondslag van de loketten (de afspraak of aanwijzing door de minister), zodat gemeenten zonder loket het product niet hoeven aan te bieden.'
+  nummer: 23
+  status: open

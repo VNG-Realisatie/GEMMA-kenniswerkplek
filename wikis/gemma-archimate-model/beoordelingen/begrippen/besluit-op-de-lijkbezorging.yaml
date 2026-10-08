@@ -235,6 +235,13 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: aanhef
+- soort: associatie (gericht)
+  naar: vervoersdocumenten-stoffelijk-overschot
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  vindplaats: UPL nr. 445, art. 11
 besluiten:
 - datum: '2026-10-05'
   besluit: 'Opnemen als beleidskader: grondslag van Afgeven laissez-passer (art. 11) en Verlenen verlof tot ontleding (art. 17); werkt de Wet op de lijkbezorging uit.'

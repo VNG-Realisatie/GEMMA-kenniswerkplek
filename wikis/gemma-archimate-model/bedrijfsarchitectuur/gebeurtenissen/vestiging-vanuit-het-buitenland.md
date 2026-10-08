@@ -16,6 +16,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
 - 2026-rvig-hup-immigratie
 - 2026-rvig-hup-hervestiging
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Vestiging vanuit het buitenland
@@ -71,13 +72,14 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Vestiging vanuit het buitenland | leidt tot *triggering* | [Inschrijven ingezetene](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md) | [HUP Immigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-immigratie.md), [HUP Hervestiging](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-hervestiging.md) (inleiding) |
+| Vestiging vanuit het buitenland | leidt tot *triggering* | [Inschrijven ingezetene](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md) | [HUP Immigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-immigratie.md), [HUP Hervestiging](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-hervestiging.md), [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (inleiding; Wet BRP art. 2.2, 2.38 lid 1) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Vestiging vanuit het buitenland | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [HUP Immigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-immigratie.md) (Wet BRP art. 2.4, 2.38) |
+| [Wet basisregistratie personen](../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Vestiging vanuit het buitenland | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.38) |
 
 ## Herkomst
 
@@ -89,6 +91,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | [Utrecht Inschrijven vanuit het buitenland](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland.md) | Gemeente Utrecht: Inschrijven vanuit het buitenland |
 | [HUP Immigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-immigratie.md) | HUP BRP: Immigratie |
 | [HUP Hervestiging](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-hervestiging.md) | HUP BRP: Hervestiging |
+| [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

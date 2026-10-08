@@ -97,7 +97,6 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Beheerder van de begraafplaats](../../../rollen/beheerder-van-de-begraafplaats.md) | ziet toe op *toewijzing* | Ruimen graf | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 27 lid 2) |
 | [Beheren graven](beheren-graven.md) | omvat *aggregatie* | Ruimen graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 31; Groningen art. 27) |
 | [Houder van de begraafplaats](../../../rollen/houder-van-de-begraafplaats.md) | geeft last tot *toewijzing* | Ruimen graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 31 lid 2) |
 | [Houder van een plaats van bijzetting](../../../rollen/houder-van-een-plaats-van-bijzetting.md) | ruimt asbussen bij *toewijzing* | Ruimen graf | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 66) |

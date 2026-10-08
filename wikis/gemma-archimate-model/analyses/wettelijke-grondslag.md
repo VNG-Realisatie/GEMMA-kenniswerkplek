@@ -31,6 +31,7 @@ Aanleiding: in burgerzaken staan vier diensten zonder wettelijke grondslag, waar
 8. Eén naamgeving voor één indeling: het brontype is de indeling, en de groep in Archi en de map in de wiki en in Archi heten als het brontype. Daarom is `wet` gesplitst in `europese-regelgeving` en `rijksregelgeving`; samen heten ze landelijke regelgeving. Het veld regelgever (EU, rijk, VNG-model) blijft als eigenschap: wie de regeling vaststelt.
 9. Ook een landelijke richtlijn als geheel kan een beleidskader zijn (regelgever *landelijke organisatie*, groep en map *Richtlijn*), zoals de definitie van Beleidskader in GEMMA toelaat. Zij is geen wettelijke grondslag: haar relatie heet *geeft richtlijn voor*. De bronanalyses staan per onderwerp in een map per brontype: `bronanalyses/<onderwerp>/<brontype>/`.
 10. `tools/afleiden.py` controleert de regel: een fout bij een relatie *is grondslag voor* vanuit een richtlijn, een signaal bij een element zonder landelijke wettelijke bron (UPL-producten en -diensten, bedrijfsfuncties en beleidskaders uitgezonderd) en bij een bedrijfsproces dat een UPL-product zonder landelijke grondslag realiseert. Dat laatste wordt een fout zodra groep B is afgerond, zodat het per geval laten vervallen van die processen niet wordt tegengehouden.
+11. Bij groep A en D wordt een geval zonder twijfel (de grondslag staat eenduidig in de nagelezen wettekst) niet meer apart voorgelegd: de AI voegt de bron en de relatie toe en noemt het geval in de samenvatting ter bevestiging. Een geval met twijfel wordt wel voorgelegd.
 
 Uitwerking in de regel: een grondslag in gemeentelijke regelgeving is een VNG-modelverordening, niet de verordening van één gemeente. Zo raken verordeningen die elkaar tegenspreken het model niet: de verordening van een gemeente blijft bron voor taal, voorbeelden en lacunes, en een afwijking ervan is een afwijking in de praktijk (regel Tegenspraak).
 
@@ -145,6 +146,11 @@ Producten- en dienstenrealisatie veiligheidsdomein en Uitvoering openbare orde e
 ## Terugmeldingen
 
 Alle open procesarchitectuur-terugmeldingen zijn op 2026-10-08 herschreven naar de opbouw van de GGM-terugmeldingen: wat de UPL of het kennismodel zegt, **Bevinding:** en **Voorstel:**. `tools/afleiden.py` houdt een open melding zonder die twee alinea's tegen. Nieuw: nr. 21, de grondslag van Legalisatie handtekening. Nr. 7, 8 en 11 noemen nu ook de landelijke grondslag of het ontbreken ervan.
+
+## Uitwerking
+
+- **A (2026-10-08).** Alle elementen hebben nu een relatie *is grondslag voor* van de Wet BRP of de Wet op de lijkbezorging, en hun eigen relaties de wet als bron. De open artikelen zijn bepaald: Ingeschreven persoon art. 1.1 onder e en f, 2.2, 2.7; Bijhoudingsgemeente art. 1.1 onder h, 1.4 lid 1; Toezichthouder BRP art. 4.2; Briefadresgever art. 1.1, 2.42, 2.45. RNI-loket: Wet BRP art. 2.64, 2.67 lid 3, 2.79 en Besluit BRP art. 36; de wet zegt niet welke gemeenten loket zijn, de beschrijving noemt ze (Nederland Wereldwijd) en een procesarchitectuur-terugmelding vraagt de grondslag. Onjuiste inschrijving op adres melden blijft met Wet BRP art. 2.20 lid 2, 2.22, 2.26; ze staat niet in de UPL, en een terugmelding stelt voor haar op te nemen. Beheerder van de begraafplaats vervalt: de Wlb kent alleen de houder, en de beheerder is nu synoniem van Houder van de begraafplaats. Bevolkingsadministratie bijhouding is een bedrijfsfunctie en krijgt geen eigen grondslag (besluit 5).
+- **D (2026-10-08).** De relatie *is grondslag voor* staat nu bij de negen diensten in lijkbezorging (Wlb of Besluit op de lijkbezorging) en bij Vermissing of diefstal rijbewijs doorgeven (Wegenverkeerswet 1994 art. 123 lid 1 onder h, Reglement rijbewijzen art. 39 lid 1).
 
 ## Vragen aan de redacteur
 

@@ -217,84 +217,96 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 1.4 lid 1
 - soort: toewijzing
   naar: inschrijven-ingezetene
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 1.4 lid 1, 2.38
 - soort: toewijzing
   naar: verwerken-adreswijziging
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 1.4 lid 1, 2.39
 - soort: toewijzing
   naar: verwerken-emigratie
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 1.4 lid 1, 2.43
 - soort: toewijzing
   naar: inschrijven-op-briefadres
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 1.4 lid 1, 2.23
 - soort: toewijzing
   naar: uitvoeren-adresonderzoek
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 1.4 lid 1, 2.20 lid 2
 - soort: toewijzing
   naar: behandelen-verzoek-om-geheimhouding
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 2.59
 - soort: toewijzing
   naar: verstrekken-persoonsgegevens
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP hoofdstuk 3, paragraaf 3
 - soort: toewijzing
   naar: verstrekken-overzicht-gegevensverstrekkingen
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 3.22
 - soort: toewijzing
   naar: behandelen-verzoek-om-correctie
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 2.58
 - soort: toewijzing
   naar: behandelen-verzoek-om-verwijdering-van-gegevens
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 2.57
 - soort: toewijzing
   naar: wijzigen-identificatienummers
   naam: voert uit
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
-  vindplaats: BRP stelsel
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: BRP stelsel; Wet BRP art. 1.4 lid 1
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -312,5 +324,6 @@ afgeleid:
   - 2026-rvig-hup-emigratie
   - 2026-rvig-hup-wijzigen-bsn
   - 2026-rvig-hup-achtergronden-en-begrippen
-  herkomst: richtlijn
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/rollen/bijhoudingsgemeente.md

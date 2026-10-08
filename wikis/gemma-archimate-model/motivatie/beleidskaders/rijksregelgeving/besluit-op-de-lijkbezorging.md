@@ -71,6 +71,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Besluit op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Afgeven laissez-passer](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/afgeven-laissez-passer.md) | [Besluit op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) (art. 11) |
 | Besluit op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Verlenen verlof tot ontleding](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-ontleding.md) | [Besluit op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) (art. 17) |
 | Besluit op de lijkbezorging | werkt uit *associatie (gericht)* | [Wet op de lijkbezorging](wet-op-de-lijkbezorging.md) | [Besluit op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) (aanhef) |
+| Besluit op de lijkbezorging | is grondslag voor *associatie (gericht)* | [Vervoersdocumenten stoffelijk overschot](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervoersdocumenten-stoffelijk-overschot.md) | [Besluit op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) (UPL nr. 445, art. 11) |
 
 ## Herkomst
 

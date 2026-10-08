@@ -90,6 +90,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Verwerken emigratie](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-emigratie.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 29) |
 | Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Verstrekken persoonsgegevens](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-persoonsgegevens.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 40) |
 | Besluit basisregistratie personen | werkt uit *associatie (gericht)* | [Wet basisregistratie personen](wet-basisregistratie-personen.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (aanhef) |
+| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [RNI-loket](../../../bedrijfsarchitectuur/rollen/rni-loket.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 36 (de gemeente waar de inschrijfvoorziening is ondergebracht)) |
 
 ## Herkomst
 

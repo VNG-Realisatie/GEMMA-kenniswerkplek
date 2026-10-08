@@ -252,6 +252,13 @@ relaties:
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 116 lid 1, 123 lid 1 onder b
+- soort: associatie (gericht)
+  naar: vermissing-of-diefstal-rijbewijs-doorgeven
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 123 lid 1 onder h
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: regelgeving

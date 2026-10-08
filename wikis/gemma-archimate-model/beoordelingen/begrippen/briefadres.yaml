@@ -237,7 +237,8 @@ relaties:
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-  vindplaats: HUP Verblijfplaats, functie adres B
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: HUP Verblijfplaats, functie adres B; Wet BRP art. 1.1 (adres)
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -257,7 +258,8 @@ afgeleid:
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-  herkomst: richtlijn
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   ggm:
     ggm_entiteit: Briefadres
     ggm_guid: EAID_3015DCE3_7C05_4160_A717_533553258C15

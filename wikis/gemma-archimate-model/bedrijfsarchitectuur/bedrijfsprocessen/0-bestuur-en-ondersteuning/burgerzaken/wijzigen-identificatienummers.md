@@ -102,7 +102,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 |---|---|---|---|
 | [Beslisser](../../../rollen/beslisser.md) | besluit tot *toewijzing* | Wijzigen identificatienummers | [HUP BRP: Wijzigen bsn](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijzigen-bsn.md) (regel 19-25) |
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Wijzigen identificatienummers | [HUP BRP: Wijzigen identificatienummers](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijzigen-identificatienummers.md) (regel 19) |
-| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Wijzigen identificatienummers | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
+| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Wijzigen identificatienummers | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 1.4 lid 1) |
 
 ## Herkomst
 

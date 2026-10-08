@@ -214,7 +214,8 @@ relaties:
   grondslag: bron
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
-  vindplaats: '4.5'
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: 4.5; Wet BRP art. 4.2
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -229,7 +230,8 @@ afgeleid:
     typeregel: 12
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
-  herkomst: richtlijn
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   gemma_generiek:
     gemma_id: id-54e7f48b-af2a-45cb-bcae-1e7bbb5ddd0a
     gemma_naam: Toezichthouder

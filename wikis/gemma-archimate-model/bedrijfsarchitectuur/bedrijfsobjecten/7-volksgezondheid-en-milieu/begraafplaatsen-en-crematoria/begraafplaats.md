@@ -83,7 +83,6 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Beheerder van de begraafplaats](../../../rollen/beheerder-van-de-begraafplaats.md) | heeft de dagelijkse leiding van *toegang (beheerder)* | Begraafplaats | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 e) |
 | [Beheren begraafplaatsen](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-begraafplaatsen.md) | beheert *toegang (bijwerken)* | Begraafplaats | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 33, 36, 43, 47) |
 | [Heffing](../../0-bestuur-en-ondersteuning/belastingen/heffing.md) | voor het gebruik van (lijkbezorgingsrechten) *associatie (gericht)* | Begraafplaats | [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
 | [Houder van de begraafplaats](../../../rollen/houder-van-de-begraafplaats.md) | houdt *toegang (houder)* | Begraafplaats | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 8, 23) |

@@ -256,7 +256,8 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-  vindplaats: inleiding
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: inleiding; Wet BRP art. 2.20 lid 1
 - soort: realisatie
   naar: verhuismelding
   naam: realiseert
@@ -264,7 +265,8 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-verhuizing-doorgeven
-  vindplaats: UPL nr. 424
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: UPL nr. 424; Wet BRP art. 2.39
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -283,7 +285,8 @@ afgeleid:
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging
   - 2026-rvig-hup-intergemeentelijke-adreswijziging
   - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: informatiemodel
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
   gemma_generiek:
     gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
     gemma_naam: Behandelen aangifte of melding

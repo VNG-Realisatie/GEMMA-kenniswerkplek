@@ -14,7 +14,7 @@ titel: Voortgang
 |---|---|---|---|
 | [Algemeen](begrippen/algemeen.md) | in-behandeling | 14 | 14 |
 | [Burgerzaken](begrippen/burgerzaken.md) | in-behandeling | 260 | 180 |
-| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 185 | 96 |
+| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 185 | 95 |
 | [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
 
 ## Samenhang tussen onderwerpen
@@ -24,8 +24,8 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | Onderwerp | Elementen | Gebruikt uit andere | Relaties binnen | Relaties met andere |
 |---|---|---|---|---|
 | Algemeen | 14 | 0 | 13 | Burgerzaken 30, Lijkbezorging 47 |
-| Burgerzaken | 170 | 8 | 477 | Algemeen 30, Lijkbezorging 8 |
-| Lijkbezorging | 77 | 18 | 188 | Algemeen 47, Burgerzaken 8 |
+| Burgerzaken | 170 | 8 | 498 | Algemeen 30, Lijkbezorging 8 |
+| Lijkbezorging | 76 | 18 | 195 | Algemeen 47, Burgerzaken 8 |
 | Participatie | 0 | 0 | 0 | — |
 
 ## Elementen per type en status
@@ -41,7 +41,7 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | dienst | 0 | 0 | 77 | 0 |
 | gebeurtenis | 0 | 0 | 20 | 0 |
 | product | 0 | 0 | 1 | 0 |
-| rol | 0 | 0 | 25 | 0 |
+| rol | 0 | 0 | 24 | 0 |
 
 ## GGM-terugmeldingen
 
@@ -49,4 +49,4 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 ## Procesarchitectuur-terugmeldingen
 
-[21 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 20, opgelost 1.
+[23 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 22, opgelost 1.

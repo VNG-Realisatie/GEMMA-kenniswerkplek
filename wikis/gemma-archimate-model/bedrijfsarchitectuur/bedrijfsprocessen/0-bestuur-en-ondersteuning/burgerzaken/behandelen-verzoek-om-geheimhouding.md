@@ -19,6 +19,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
 - 2026-rvig-hup-verstrekkingsbeperking
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Behandelen verzoek om geheimhouding
@@ -82,8 +83,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Behandelen verzoek om geheimhouding | tekent geheimhouding aan *toegang (bijwerken)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [HUP Verstrekkingsbeperking](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verstrekkingsbeperking.md) (inleiding) |
-| Behandelen verzoek om geheimhouding | realiseert *realisatie* | [BRP-geheimhoudingsverzoek](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-geheimhoudingsverzoek.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Persoonsgegevens geheimhouden](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden.md) (UPL nr. 87) |
+| Behandelen verzoek om geheimhouding | tekent geheimhouding aan *toegang (bijwerken)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [HUP Verstrekkingsbeperking](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verstrekkingsbeperking.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (inleiding; Wet BRP art. 2.59 lid 1) |
+| Behandelen verzoek om geheimhouding | realiseert *realisatie* | [BRP-geheimhoudingsverzoek](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-geheimhoudingsverzoek.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Persoonsgegevens geheimhouden](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (UPL nr. 87; Wet BRP art. 2.59) |
 
 #### Inkomend
 
@@ -91,7 +92,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 |---|---|---|---|
 | [Beslisser](../../../rollen/beslisser.md) | beslist over *toewijzing* | Behandelen verzoek om geheimhouding | [HUP Verstrekkingsbeperking](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verstrekkingsbeperking.md) (art. 2.60 Wet BRP) |
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Behandelen verzoek om geheimhouding | [HUP Verstrekkingsbeperking](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verstrekkingsbeperking.md) (inleiding) |
-| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Behandelen verzoek om geheimhouding | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
+| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Behandelen verzoek om geheimhouding | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 2.59) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Behandelen verzoek om geheimhouding | [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.59) |
 
 ## Herkomst
 
@@ -102,6 +104,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Utrecht Persoonsgegevens geheimhouden](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden.md) | Gemeente Utrecht: Persoonsgegevens geheimhouden |
 | [HUP Verstrekkingsbeperking](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verstrekkingsbeperking.md) | HUP BRP: Verstrekkingsbeperking |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 

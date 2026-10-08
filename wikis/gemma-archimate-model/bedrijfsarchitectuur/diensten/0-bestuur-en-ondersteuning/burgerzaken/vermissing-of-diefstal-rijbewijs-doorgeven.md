@@ -84,7 +84,9 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Officiële documenten verstrekking](../../../bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md) | omvat *aggregatie* | Vermissing of diefstal rijbewijs doorgeven | [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) (Utrecht regel 126-140; GEMMA-domein Publieksdiensten) |
+| [Reglement rijbewijzen](../../../../motivatie/beleidskaders/rijksregelgeving/reglement-rijbewijzen.md) | is grondslag voor *associatie (gericht)* | Vermissing of diefstal rijbewijs doorgeven | [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (art. 39 lid 1) |
 | [Verwerken vermissing rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md) | realiseert *realisatie* | Vermissing of diefstal rijbewijs doorgeven | [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) (Utrecht regel 134-140) |
+| [Wegenverkeerswet 1994](../../../../motivatie/beleidskaders/rijksregelgeving/wegenverkeerswet-1994.md) | is grondslag voor *associatie (gericht)* | Vermissing of diefstal rijbewijs doorgeven | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 123 lid 1 onder h) |
 
 ## Herkomst
 

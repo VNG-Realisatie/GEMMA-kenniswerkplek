@@ -256,6 +256,13 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-brp-bwbr0034306
   vindplaats: aanhef
+- soort: associatie (gericht)
+  naar: rni-loket
+  naam: is grondslag voor
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-brp-bwbr0034306
+  vindplaats: art. 36 (de gemeente waar de inschrijfvoorziening is ondergebracht)
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: grondslag van inschrijving, adresonderzoek, emigratie en verstrekking (art. 24, 28a–g, 29, 30, 40); precedent Besluit op de lijkbezorging.'

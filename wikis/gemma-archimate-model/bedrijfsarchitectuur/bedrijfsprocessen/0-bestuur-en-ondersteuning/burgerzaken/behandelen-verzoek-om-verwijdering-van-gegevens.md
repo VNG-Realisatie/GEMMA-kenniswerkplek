@@ -18,6 +18,7 @@ afnemer: extern
 bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-wet-brp-bwbr0033715
 ---
 
 # Behandelen verzoek om verwijdering van gegevens
@@ -82,8 +83,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Behandelen verzoek om verwijdering van gegevens | verwijdert gegevens van *toegang (bijwerken)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (Gegevens verwijderen) |
-| Behandelen verzoek om verwijdering van gegevens | realiseert *realisatie* | [BRP-adoptie-uitschrijving](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-adoptie-uitschrijving.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (UPL nr. 86) |
+| Behandelen verzoek om verwijdering van gegevens | verwijdert gegevens van *toegang (bijwerken)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Gegevens verwijderen; Wet BRP art. 2.57) |
+| Behandelen verzoek om verwijdering van gegevens | realiseert *realisatie* | [BRP-adoptie-uitschrijving](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-adoptie-uitschrijving.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (UPL nr. 86; Wet BRP art. 2.57) |
 
 #### Inkomend
 
@@ -92,7 +93,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Adoptie](../../../gebeurtenissen/adoptie.md) | kan leiden tot *triggering* | Behandelen verzoek om verwijdering van gegevens | [HUP BRP: Adoptie](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-adoptie.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.57) |
 | [Beslisser](../../../rollen/beslisser.md) | beslist over *toewijzing* | Behandelen verzoek om verwijdering van gegevens | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (Na uw aanvraag) |
 | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Behandelen verzoek om verwijdering van gegevens | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (Utrecht Gegevens verwijderen; UPL nr. 86) |
-| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Behandelen verzoek om verwijdering van gegevens | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
+| [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | voert uit *toewijzing* | Behandelen verzoek om verwijdering van gegevens | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 2.57) |
+| [Wet basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Behandelen verzoek om verwijdering van gegevens | [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 2.57) |
 | [Wijzigen geslachtsvermelding](wijzigen-geslachtsvermelding.md) | kan leiden tot *triggering* | Behandelen verzoek om verwijdering van gegevens | [HUP BRP: Geslachtswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-geslachtswijziging.md), [HUP BRP: Overschrijven gegevens bij geslachtswijziging](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging.md) (art. 2.57 Wet BRP) |
 
 ## Herkomst
@@ -103,6 +105,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 |---|---|
 | [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) | Gemeente Utrecht: Persoonsgegevens opvragen of aanpassen |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Wet BRP](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA
 
