@@ -21,14 +21,10 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **Verlengen en overschrijven van het grafrecht**: nu onderdelen van Grafrecht (eigen identiteit nee). Mogelijk eigen bedrijfsprocessen onder het levensloopproces Beheren grafrechten (eigen besluit, Wlb art. 28 lid 1–3; Groningen art. 16–20). De UPL kent er geen eigen product voor (beoordeling UPL-producten 2026-10-05).
 - **Interne UPL-lijst**: staat in `sources/` en krijgt een bronanalyse bij het eerste onderwerp met sturende of ondersteunende producten.
 - **Kennismodel-aanvullingen als GEMMA-terugmelding**: de wiki gebruikt elementen en relaties die Over GEMMA niet kent (`export/rapport.md`, Kennismodel-wiki): Afspraak met toegang door bedrijfsproces en rol, aggregatie van Dienst door Bedrijfsfunctie (76×), flow tussen bedrijfsprocessen (7×) en triggering tussen gebeurtenissen (5×). Bepaal of ze in het GEMMA-model zelf voorkomen en meld de ontbrekende bij de procesarchitectuur-terugmeldingen over het kennismodel (5 en 6).
-- **GEMMA-terugmeldingen**: de voorstellen hieronder die over het GEMMA-model zelf gaan (generieke gebeurtenissen, referentiecomponenten, de definities van Ketenpartner, Adviseur en Beslisser) overzetten naar `beoordelingen/gemma-terugmeldingen.yaml`, met GEMMA, Bevinding en Voorstel (register sinds 2026-10-08).
-- **Voorstellen aan het GEMMA-team**:
+- **Voorstellen aan het GEMMA-team** (de voorstellen over het GEMMA-model zelf staan in `beoordelingen/gemma-terugmeldingen.yaml`):
   - het beleidsdomein *Begraafplaatsen en crematoria* onder taakveld 7, met de GEMMA-domeinen waaronder het valt (procesarchitectuur-terugmelding 1);
-  - generieke gebeurtenissen (aanvraag ontvangen, besluit bekendgemaakt);
-  - de procesarchitectuur-terugmeldingen over het kennismodel: de tegenspraak over het ketenproces tussen het kennismodel en de pagina Proceshiërarchie (5), structurele relaties tussen actoren (6), en het levensloopproces als cluster per thema met de themaclusters van de ondersteunende tak als groepering per beleidsdomein (20); 4 is opgelost door de procesniveaus van 2026-10-08;
-  - het advies om referentiecomponenten te laten aggregeren door een hogere bedrijfsfunctie;
-  - de definities van de GEMMA-rollen Ketenpartner, Adviseur en Beslisser, die in GEMMA leeg zijn en die de export met de definitie uit de wiki vult.
-- **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein.
+  - de procesarchitectuur-terugmeldingen over het kennismodel: de tegenspraak over het ketenproces tussen het kennismodel en de pagina Proceshiërarchie (5), structurele relaties tussen actoren (6), en het levensloopproces als cluster per thema met de themaclusters van de ondersteunende tak als groepering per beleidsdomein (20); 4 is opgelost door de procesniveaus van 2026-10-08.
+- **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein. Daarbij de referentiecomponenten: in GEMMA hangt geen van de 256 applicatiecomponenten direct aan een bedrijfsfunctie, 76 alleen aan een groepering. Beoordeel de koppeling (aggregatie door een hogere bedrijfsfunctie, als ArchiMate dat toestaat, of via de applicatieservice die de functie bedient) en maak dan een GEMMA-terugmelding (besluit redacteur 2026-10-08).
 - **Archi-views** per indeling en elementtype in de export, na de eerste proefimport (herziening van het besluit van 2026-10-02: geen views).
 
 ## Export naar Archi

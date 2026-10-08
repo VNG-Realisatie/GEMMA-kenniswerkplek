@@ -90,6 +90,10 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 Match **sterk** met GEMMA-element *Adviseur* (business-role). GEMMA-rol Adviseur; zelfde begrip, in GEMMA zonder definitie. Nieuw: een definitie.
 
+GEMMA-terugmeldingen:
+
+- [Nummer 4](../../analyses/gemma-terugmeldingen.md) (definitie, open): **GEMMA:** de rollen Ketenpartner, Adviseur en Beslisser in de procesarchitectuur hebben geen definitie ([2026-vng-gemma-2026-10-02](../../../../sources/raw/2026-vng-gemma-2026-10-02.md)). **Bevinding:** de wiki heeft deze drie rollen aan GEMMA gekoppeld en gebruikt ze in lijkbezorging en burgerzaken. De import vult dus de definities in. Via Beslisser hangen burgemeester, college en raad aan de processen; welk orgaan beslist, staat in de beschrijving van het proces. De definitie van Ketenpartner spreekt van een andere organisatie, terwijl in de wiki ook personen de rol vervullen, zoals de behandelende arts en de officier van justitie; de wiki kan die definitie nog verbreden. **Voorstel:** controleer de definities bij de import: Ketenpartner: verantwoordelijkheid van een andere organisatie voor haar deel van een keten die zij met de gemeente uitvoert; Adviseur: verantwoordelijkheid voor het geven van advies aan wie een besluit neemt; Beslisser: verantwoordelijkheid voor het nemen van het besluit in een proces.
+
 ### Besluiten redacteur
 
 - 2026-10-05: Stoffelijk overschot in lopende tekst: in de beschrijving; de export zet die als eigenschap op het GEMMA-element Adviseur.

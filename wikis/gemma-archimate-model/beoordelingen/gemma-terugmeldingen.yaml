@@ -53,3 +53,34 @@ terugmeldingen:
   - '**Voorstel:** neem de definitie van de wiki over: het adres waar een ingeschreven persoon woont of, zonder woonadres, zijn post ontvangt, met de periode waarin dat adres geldt. Werk de GGM-guid bij.'
   nummer: 3
   status: open
+- type: definitie
+  elementen:
+  - ketenpartner
+  - adviseur
+  - beslisser
+  gemma_elementen:
+  - id: id-e03a0402-1890-4a21-8143-c44a8ba53ea4
+    naam: Ketenpartner
+  - id: id-f3219a6a-532f-482d-897c-dafe0dc70bb0
+    naam: Adviseur
+  - id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
+    naam: Beslisser
+  bevinding:
+  - '**GEMMA:** de rollen Ketenpartner, Adviseur en Beslisser in de procesarchitectuur hebben geen definitie (2026-vng-gemma-2026-10-02).'
+  - '**Bevinding:** de wiki heeft deze drie rollen aan GEMMA gekoppeld en gebruikt ze in lijkbezorging en burgerzaken. De import vult dus de definities in. Via Beslisser hangen burgemeester, college en raad aan de processen; welk orgaan beslist, staat in de beschrijving van het proces. De definitie van Ketenpartner spreekt van een andere organisatie, terwijl in de wiki ook personen de rol vervullen, zoals de behandelende arts en de officier van justitie; de wiki kan die definitie nog verbreden.'
+  - '**Voorstel:** controleer de definities bij de import:'
+  - '- Ketenpartner: verantwoordelijkheid van een andere organisatie voor haar deel van een keten die zij met de gemeente uitvoert;'
+  - '- Adviseur: verantwoordelijkheid voor het geven van advies aan wie een besluit neemt;'
+  - '- Beslisser: verantwoordelijkheid voor het nemen van het besluit in een proces.'
+  nummer: 4
+  status: open
+- type: element
+  gemma_elementen:
+  - id: id-43f274b9-663d-46cb-b11d-6a6fe2aaf410
+    naam: Statusmelding
+  bevinding:
+  - '**GEMMA:** het model kent één bedrijfsgebeurtenis, Statusmelding, in het klant-tot-klantproces (2026-vng-gemma-2026-10-02). Generieke gebeurtenissen die in veel processen een stap starten of afsluiten, zoals aanvraag ontvangen en besluit bekendgemaakt, ontbreken.'
+  - '**Bevinding:** de import voegt de gebeurtenissen van de wiki toe, nu twintig, zoals Overlijden, Verhuizing en Verval van het grafrecht. Dat zijn specifieke gebeurtenissen bij hun kernobject. De wiki toont een specifiek element als specialisatie van een generiek GEMMA-element, maar voor gebeurtenissen bestaat dat generieke element niet. De Awb geeft er de grondslag voor: de beslistermijn loopt vanaf de ontvangst van de aanvraag (art. 4:13 lid 1) en een besluit treedt pas in werking als het is bekendgemaakt (art. 3:40) (2026-rijk-algemene-wet-bestuursrecht-wettekst).'
+  - '**Voorstel:** neem generieke gebeurtenissen op naast Statusmelding, te beginnen met Aanvraag ontvangen en Besluit bekendgemaakt, zodat de specifieke gebeurtenissen er een specialisatie van kunnen zijn.'
+  nummer: 5
+  status: open
