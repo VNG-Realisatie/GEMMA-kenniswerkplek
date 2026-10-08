@@ -1,1286 +1,1288 @@
 # Logboek
 
-Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen of
-verwijderen; de pre-commit-hook weigert dat.
-## [2026-09-29] promote | overlijden | Mark Backer | b48dbcac
-## [2026-09-29] promote | lijk | Mark Backer | d40d807e
-## [2026-09-29] promote | lijkschouwing | Mark Backer | 77a2b0ac
-## [2026-09-29] promote | nader-onderzoek-naar-de-doodsoorzaak | Mark Backer | c46c9877
-## [2026-09-29] promote | gemeentelijke-lijkschouwer | Mark Backer | b5a27ca0
-## [2026-09-29] promote | verklaring-van-overlijden | Mark Backer | 1acad91d
-## [2026-09-29] promote | verklaring-van-geen-bezwaar | Mark Backer | 40182545
-## [2026-09-29] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 51e29f81
-## [2026-09-29] promote | afgeven-verlof-tot-begraving-of-crematie | Mark Backer | c91bf800
-## [2026-09-29] promote | verlof-tot-begraving-of-crematie | Mark Backer | 3d5bec0d
-## [2026-09-29] promote | besluit-andere-termijn-lijkbezorging | Mark Backer | 9b1fbb63
-## [2026-09-29] promote | lijkbezorging | Mark Backer | 5f603f21
-## [2026-09-29] promote | begraving | Mark Backer | 52ec5fcb
-## [2026-09-29] promote | crematie | Mark Backer | dc5ad074
-## [2026-09-29] promote | verlof-tot-ontleding | Mark Backer | 85a55824
-## [2026-09-29] promote | opdrachtgever-van-de-uitvaart | Mark Backer | 26e44f81
-## [2026-09-29] promote | lijkbezorging-door-de-burgemeester | Mark Backer | 80c4a26b
-## [2026-09-29] promote | gemeentebegrafenis | Mark Backer | dcde00c6
-## [2026-09-29] promote | kostenverhaal-lijkbezorging | Mark Backer | 0b486b8b
-## [2026-09-29] promote | maatregel-bij-besmet-lijk | Mark Backer | 52c6db4e
-## [2026-09-29] promote | begraafplaats | Mark Backer | 3faeac8e
-## [2026-09-29] promote | houder-van-de-begraafplaats | Mark Backer | 33f7eeba
-## [2026-09-29] promote | rechthebbende-op-het-graf | Mark Backer | 1f4e89a5
-## [2026-09-29] promote | uitgifte-van-een-graf | Mark Backer | c53a3970
-## [2026-09-29] promote | verlenging-van-het-grafrecht | Mark Backer | a45e34d8
-## [2026-09-29] promote | einde-termijn-grafrecht | Mark Backer | ead3f420
-## [2026-09-29] promote | einde-uitgiftetermijn-algemeen-graf | Mark Backer | 3a71d525
-## [2026-09-29] promote | verklaring-van-verwaarlozing | Mark Backer | f34eb70a
-## [2026-09-29] promote | opgraving | Mark Backer | 92b2b297
-## [2026-09-29] promote | vergunning-tot-opgraving | Mark Backer | 9f1ddcb3
-## [2026-09-29] promote | ruimen-van-graven | Mark Backer | f037f3c8
-## [2026-09-29] promote | onderhoud-van-graven | Mark Backer | e16f2fc8
-## [2026-09-29] promote | besluit-tot-sluiting-van-een-begraafplaats | Mark Backer | 99c30d7a
-## [2026-09-29] promote | aanwijzing-van-grond-voor-een-bijzondere-begraafplaats | Mark Backer | ea9da832
-## [2026-09-29] promote | toestemming-ingebruikneming-bijzondere-begraafplaats | Mark Backer | 1a3b6d5d
-## [2026-09-29] promote | kerkgenootschap | Mark Backer | c8b7eef7
-## [2026-09-29] promote | crematorium | Mark Backer | c74146e9
-## [2026-09-29] promote | vergunning-bijzonder-crematorium | Mark Backer | 8d2ac8d0
-## [2026-09-29] promote | houder-van-het-crematorium | Mark Backer | 4f19204d
-## [2026-09-29] promote | asbus | Mark Backer | 67194e83
-## [2026-09-29] promote | bijzetting-van-een-asbus | Mark Backer | 5141daa7
-## [2026-09-29] promote | verstrooiing-van-as | Mark Backer | c35f16ed
-## [2026-09-29] promote | bewaarplaats-voor-asbussen | Mark Backer | 77fc2975
-## [2026-09-29] promote | vergunning-bewaarplaats-voor-asbussen | Mark Backer | c50fc340
-## [2026-09-29] promote | verstrooiingsterrein | Mark Backer | fb1bc81b
-## [2026-09-29] promote | vergunning-verstrooiingsterrein | Mark Backer | ff4c2002
-## [2026-09-29] promote | nabestaande | Mark Backer | 5d2c4c44
-## [2026-09-29] promote | burgemeester | Mark Backer | 783ad0b0
-## [2026-09-29] promote | burgemeester-en-wethouders | Mark Backer | d7528ae0
-## [2026-09-29] promote | gemeenteraad | Mark Backer | 996e000d
-## [2026-09-29] promote | officier-van-justitie | Mark Backer | e783c6f6
-## [2026-09-29] promote | ggd | Mark Backer | 1060bc2e
-## [2026-09-30] promote | lijk | Mark Backer | 74fa8e4e
-## [2026-09-30] promote | urn | Mark Backer | b72d1980
-## [2026-09-30] promote | verklaring-van-overlijden | Mark Backer | 3992ff4a
-## [2026-09-30] promote | verklaring-van-geen-bezwaar | Mark Backer | db3c0270
-## [2026-09-30] promote | gemeentebegrafenis | Mark Backer | 38c04e49
-## [2026-09-30] promote | begraafplaats | Mark Backer | b372c5d7
-## [2026-09-30] promote | crematorium | Mark Backer | 3b481cea
-## [2026-09-30] promote | plaats-van-bijzetting | Mark Backer | a4ae26e9
-## [2026-09-30] promote | verval-van-het-grafrecht | Mark Backer | 9636a3b9
-## [2026-09-30] promote | grafbedekking | Mark Backer | b1bb83f8
-## [2026-09-30] promote | lijkbezorging | Mark Backer | 7bfe878b
-## [2026-09-30] promote | lijkschouwing | Mark Backer | d3c5d346
-## [2026-09-30] promote | lijkbezorging-door-de-burgemeester | Mark Backer | 6c592cac
-## [2026-09-30] promote | uitgifte-van-een-graf | Mark Backer | 6e40b8e8
-## [2026-09-30] promote | opgraving | Mark Backer | 7cfb68ce
-## [2026-09-30] promote | ruiming | Mark Backer | d5255011
-## [2026-09-30] promote | onderhoud-van-graven | Mark Backer | 527a7d1e
-## [2026-09-30] promote | overlijden | Mark Backer | 0f2c8229
-## [2026-09-30] promote | kerkgenootschap | Mark Backer | 6684834e
-## [2026-09-30] promote | houder-van-de-begraafplaats | Mark Backer | 96106bd9
-## [2026-09-30] promote | houder-van-het-crematorium | Mark Backer | 04af6b48
-## [2026-09-30] promote | houder-van-een-plaats-van-bijzetting | Mark Backer | b949b6be
-## [2026-09-30] promote | rechthebbende-op-het-graf | Mark Backer | 0d1bc813
-## [2026-09-30] promote | nabestaande | Mark Backer | 744ab53b
-## [2026-09-30] promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | dc7e34f4
-## [2026-09-30] promote | gemeentelijke-lijkschouwer | Mark Backer | fa3fa6bf
-## [2026-09-30] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 6b24a8fd
-## [2026-09-30] promote | beheerder | Mark Backer | f49fed24
-## [2026-09-30] promote | burgemeester | Mark Backer | 8c5a6a76
-## [2026-09-30] promote | college-van-b-w | Mark Backer | db41ef39
-## [2026-09-30] promote | gemeenteraad | Mark Backer | f0052570
-## [2026-09-30] promote | ggd | Mark Backer | 97449ff8
-## [2026-09-30] promote | uitvaartondernemer | Mark Backer | 8a39f96c
-## [2026-09-30] promote | gemeente | Mark Backer | f9c11886
-## [2026-09-30] promote | beschikking | Mark Backer | 4706980b
-## [2026-09-30] promote | besluit | Mark Backer | 4abf3ff3
-## [2026-09-30] promote | vergunning | Mark Backer | fc7f2548
-## [2026-09-30] promote | heffing | Mark Backer | d971d06e
-## [2026-09-30] promote | heffingsverordening | Mark Backer | 9f1639ca
-## [2026-09-30] promote | burgemeester | Mark Backer | 384ff9be
-## [2026-09-30] promote | college-van-b-w | Mark Backer | cefb0941
-## [2026-09-30] promote | gemeenteraad | Mark Backer | 03a0eacd
-## [2026-09-30] promote | ggd | Mark Backer | bbd6c24a
-## [2026-09-30] promote | kerkgenootschap | Mark Backer | 03dea0d6
-## [2026-09-30] promote | uitvaartondernemer | Mark Backer | 68d504af
-## [2026-09-30] promote | onderhoud-van-graven | Mark Backer | d94135d1
-## [2026-09-30] promote | overlijden | Mark Backer | 51d4c949
-## [2026-09-30] promote | verval-van-het-grafrecht | Mark Backer | 9c19324d
-## [2026-09-30] promote | heffing | Mark Backer | ce6a6535
-## [2026-09-30] promote | heffingsverordening | Mark Backer | d629c20e
-## [2026-09-30] promote | beschikking | Mark Backer | 8d437f14
-## [2026-09-30] promote | besluit | Mark Backer | 6501d444
-## [2026-09-30] promote | vergunning | Mark Backer | 3cba689d
-## [2026-09-30] promote | begraafplaats | Mark Backer | a963d5b4
-## [2026-09-30] promote | crematorium | Mark Backer | 424e5898
-## [2026-09-30] promote | gemeentebegrafenis | Mark Backer | 32624583
-## [2026-09-30] promote | grafbedekking | Mark Backer | 1eeaf56a
-## [2026-09-30] promote | lijk | Mark Backer | 551d0e4d
-## [2026-09-30] promote | plaats-van-bijzetting | Mark Backer | 4c389761
-## [2026-09-30] promote | urn | Mark Backer | 1e03c4c2
-## [2026-09-30] promote | verklaring-van-geen-bezwaar | Mark Backer | 78e12012
-## [2026-09-30] promote | verklaring-van-overlijden | Mark Backer | 41dad55f
-## [2026-09-30] promote | lijkbezorging-door-de-burgemeester | Mark Backer | e92f6ca4
-## [2026-09-30] promote | lijkbezorging | Mark Backer | 6c68b4a1
-## [2026-09-30] promote | lijkschouwing | Mark Backer | c6bc538b
-## [2026-09-30] promote | opgraving | Mark Backer | 1ee8f055
-## [2026-09-30] promote | ruiming | Mark Backer | 191be3e4
-## [2026-09-30] promote | uitgifte-van-een-graf | Mark Backer | 575a2688
-## [2026-09-30] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 37739613
-## [2026-09-30] promote | beheerder | Mark Backer | 0152bee3
-## [2026-09-30] promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | 58a7a082
-## [2026-09-30] promote | gemeente | Mark Backer | b90617b0
-## [2026-09-30] promote | gemeentelijke-lijkschouwer | Mark Backer | 5b947773
-## [2026-09-30] promote | houder-van-de-begraafplaats | Mark Backer | ee14037d
-## [2026-09-30] promote | houder-van-een-plaats-van-bijzetting | Mark Backer | abdcd4ce
-## [2026-09-30] promote | houder-van-het-crematorium | Mark Backer | e297a789
-## [2026-09-30] promote | nabestaande | Mark Backer | 651b2919
-## [2026-09-30] promote | rechthebbende-op-het-graf | Mark Backer | 42a99c09
-## [2026-09-30] promote | burgemeester | Mark Backer | d4706373
-## [2026-09-30] promote | college-van-b-w | Mark Backer | 5590efca
-## [2026-09-30] promote | gemeenteraad | Mark Backer | 7f134556
-## [2026-09-30] promote | ggd | Mark Backer | 57ddd1ff
-## [2026-09-30] promote | kerkgenootschap | Mark Backer | d8d18eaf
-## [2026-09-30] promote | uitvaartondernemer | Mark Backer | 0f102680
-## [2026-09-30] promote | onderhoud-van-graven | Mark Backer | ba048e02
-## [2026-09-30] promote | overlijden | Mark Backer | 510993b6
-## [2026-09-30] promote | verval-van-het-grafrecht | Mark Backer | 094055d8
-## [2026-09-30] promote | heffing | Mark Backer | 1223ad59
-## [2026-09-30] promote | heffingsverordening | Mark Backer | ee72b9af
-## [2026-09-30] promote | beschikking | Mark Backer | 3f789b61
-## [2026-09-30] promote | besluit | Mark Backer | bf6e66dd
-## [2026-09-30] promote | vergunning | Mark Backer | 583f9997
-## [2026-09-30] promote | begraafplaats | Mark Backer | 19157165
-## [2026-09-30] promote | crematorium | Mark Backer | 1652c964
-## [2026-09-30] promote | gemeentebegrafenis | Mark Backer | 096889a1
-## [2026-09-30] promote | grafbedekking | Mark Backer | c2a8a766
-## [2026-09-30] promote | lijk | Mark Backer | 66d34a20
-## [2026-09-30] promote | plaats-van-bijzetting | Mark Backer | 7dd6ecf0
-## [2026-09-30] promote | urn | Mark Backer | 406c01d3
-## [2026-09-30] promote | verklaring-van-geen-bezwaar | Mark Backer | 1d8d3ffb
-## [2026-09-30] promote | verklaring-van-overlijden | Mark Backer | bf94c31c
-## [2026-09-30] promote | lijkbezorging-door-de-burgemeester | Mark Backer | 1af7c1b9
-## [2026-09-30] promote | lijkbezorging | Mark Backer | ff5ccc78
-## [2026-09-30] promote | lijkschouwing | Mark Backer | 37534b55
-## [2026-09-30] promote | opgraving | Mark Backer | c9738b6d
-## [2026-09-30] promote | ruiming | Mark Backer | 07134637
-## [2026-09-30] promote | uitgifte-van-een-graf | Mark Backer | 19e9fe0e
-## [2026-09-30] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 009892e0
-## [2026-09-30] promote | beheerder | Mark Backer | 7cab94a1
-## [2026-09-30] promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | 39220c7b
-## [2026-09-30] promote | gemeente | Mark Backer | 78975a37
-## [2026-09-30] promote | gemeentelijke-lijkschouwer | Mark Backer | 5ab4c6f7
-## [2026-09-30] promote | houder-van-de-begraafplaats | Mark Backer | f3573abc
-## [2026-09-30] promote | houder-van-een-plaats-van-bijzetting | Mark Backer | d325b19b
-## [2026-09-30] promote | houder-van-het-crematorium | Mark Backer | 464630e9
-## [2026-09-30] promote | nabestaande | Mark Backer | cb66933b
-## [2026-09-30] promote | rechthebbende-op-het-graf | Mark Backer | b5b39741
-## [2026-09-30] promote | participatie | Mark Backer | 99ec45c5
-## [2026-09-30] promote | uitvoeren-inwonersparticipatie | Mark Backer | 768abb0d
-## [2026-09-30] promote | behandelen-verzoek-om-overheidsparticipatie | Mark Backer | 912c0f2b
-## [2026-09-30] promote | uitvoeren-inspraakprocedure | Mark Backer | 12916578
-## [2026-09-30] promote | verzoek-om-overheidsparticipatie | Mark Backer | b2d77d79
-## [2026-09-30] promote | plan-voor-inwonersparticipatie | Mark Backer | 388437b8
-## [2026-09-30] promote | eindverslag-inwonersparticipatie | Mark Backer | 020fb714
-## [2026-09-30] promote | zienswijze | Mark Backer | 1e8a2665
-## [2026-09-30] promote | uitvoeringsovereenkomst | Mark Backer | 5d2f064c
-## [2026-09-30] promote | inwoner | Mark Backer | 04742c50
-## [2026-09-30] promote | maatschappelijke-partij | Mark Backer | 19edbfe5
-## [2026-09-30] promote | adviesraad | Mark Backer | 3fbe0a90
-## [2026-09-30] promote | indiener | Mark Backer | 5d083d78
-## [2026-09-30] promote | belanghebbende | Mark Backer | 85217ce2
-## [2026-09-30] promote | gemeenteraad | Mark Backer | 4117e744
-## [2026-09-30] promote | college-van-b-w | Mark Backer | b5d9d1db
-## [2026-09-30] promote | burgemeester | Mark Backer | d54eb770
-## [2026-09-30] promote | college-van-b-w | Mark Backer | 1c5eab07
-## [2026-09-30] promote | gemeenteraad | Mark Backer | 4117e744
-## [2026-09-30] promote | ggd | Mark Backer | 9fa6e944
-## [2026-09-30] promote | kerkgenootschap | Mark Backer | 0321b9fe
-## [2026-09-30] promote | uitvaartondernemer | Mark Backer | 966211ef
-## [2026-09-30] promote | onderhoud-van-graven | Mark Backer | 3c83d4b6
-## [2026-09-30] promote | overlijden | Mark Backer | 8c91e303
-## [2026-09-30] promote | verval-van-het-grafrecht | Mark Backer | 059b71d3
-## [2026-09-30] promote | heffing | Mark Backer | 1e9cb2ed
-## [2026-09-30] promote | heffingsverordening | Mark Backer | 704735b4
-## [2026-09-30] promote | beschikking | Mark Backer | 3ccfd276
-## [2026-09-30] promote | besluit | Mark Backer | fc1e7f2a
-## [2026-09-30] promote | vergunning | Mark Backer | b1a3b0d9
-## [2026-09-30] promote | begraafplaats | Mark Backer | 49124427
-## [2026-09-30] promote | crematorium | Mark Backer | b6853853
-## [2026-09-30] promote | gemeentebegrafenis | Mark Backer | 17443710
-## [2026-09-30] promote | grafbedekking | Mark Backer | 168188b7
-## [2026-09-30] promote | lijk | Mark Backer | 00b24f4d
-## [2026-09-30] promote | plaats-van-bijzetting | Mark Backer | b7fe7fb3
-## [2026-09-30] promote | urn | Mark Backer | d86c4959
-## [2026-09-30] promote | verklaring-van-geen-bezwaar | Mark Backer | 904bcfe9
-## [2026-09-30] promote | verklaring-van-overlijden | Mark Backer | a5afcc03
-## [2026-09-30] promote | verzorgen-gemeentebegrafenis | Mark Backer | c3fb54f4
-## [2026-09-30] promote | uitvoeren-lijkbezorging | Mark Backer | 25f3e2a2
-## [2026-09-30] promote | schouwen-lijk | Mark Backer | 49177e85
-## [2026-09-30] promote | opgraven-lijk | Mark Backer | 58f852e3
-## [2026-09-30] promote | ruimen-graf | Mark Backer | ca4c7fd8
-## [2026-09-30] promote | verlenen-grafrecht | Mark Backer | e3f78008
-## [2026-09-30] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 918894f8
-## [2026-09-30] promote | beheerder | Mark Backer | 34c54ab9
-## [2026-09-30] promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | fefe7627
-## [2026-09-30] promote | gemeente | Mark Backer | 59c1365d
-## [2026-09-30] promote | gemeentelijke-lijkschouwer | Mark Backer | 027ac885
-## [2026-09-30] promote | houder-van-de-begraafplaats | Mark Backer | 735fa851
-## [2026-09-30] promote | houder-van-een-plaats-van-bijzetting | Mark Backer | 25cf6864
-## [2026-09-30] promote | houder-van-het-crematorium | Mark Backer | 9ecb1e3f
-## [2026-09-30] promote | nabestaande | Mark Backer | 6c57031b
-## [2026-09-30] promote | rechthebbende-op-het-graf | Mark Backer | 12c75731
-## [2026-09-30] promote | lijkbezorging | Mark Backer | 63185d6b
-## [2026-10-02] promote | adviseur | Mark Backer | 8b9501d9
-## [2026-10-02] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 3ede279c
-## [2026-10-02] promote | begraafplaats | Mark Backer | 0222aca4
-## [2026-10-02] promote | beheerder | Mark Backer | 6d25965f
-## [2026-10-02] promote | beschikking | Mark Backer | 52664ba2
-## [2026-10-02] promote | beslisser | Mark Backer | 6beb4ddf
-## [2026-10-02] promote | besluit | Mark Backer | e958fb2a
-## [2026-10-02] promote | besmet-lijk-gemeld | Mark Backer | e5fe1d90
-## [2026-10-02] promote | burgemeester | Mark Backer | 701489a6
-## [2026-10-02] promote | college-van-b-w | Mark Backer | 50e9d49a
-## [2026-10-02] promote | crematorium | Mark Backer | c73fe2a3
-## [2026-10-02] promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | 76655730
-## [2026-10-02] promote | gemeente | Mark Backer | 7402c632
-## [2026-10-02] promote | gemeentebegrafenis | Mark Backer | 7c5ca143
-## [2026-10-02] promote | gemeentelijke-lijkschouwer | Mark Backer | 0bcfcb6f
-## [2026-10-02] promote | gemeenteraad | Mark Backer | 9e01c8cc
-## [2026-10-02] promote | ggd | Mark Backer | 6ea9003f
-## [2026-10-02] promote | graf | Mark Backer | fc798c02
-## [2026-10-02] promote | graf-aanvragen | Mark Backer | 346fff8a
-## [2026-10-02] promote | grafbedekking | Mark Backer | b401ce34
-## [2026-10-02] promote | grafrecht | Mark Backer | 9222ab06
-## [2026-10-02] promote | heffing | Mark Backer | 364ee401
-## [2026-10-02] promote | heffingsverordening | Mark Backer | 2509cfc8
-## [2026-10-02] promote | houder-van-de-begraafplaats | Mark Backer | 2cda2ed3
-## [2026-10-02] promote | houder-van-een-plaats-van-bijzetting | Mark Backer | bba26151
-## [2026-10-02] promote | houder-van-het-crematorium | Mark Backer | 99ac5a79
-## [2026-10-02] promote | kerkgenootschap | Mark Backer | 3d4d4682
-## [2026-10-02] promote | lijk | Mark Backer | f085d4cc
-## [2026-10-02] promote | lijkbezorging | Mark Backer | 753d926c
-## [2026-10-02] promote | model-beheersverordening-begraafplaatsen | Mark Backer | 25daca41
-## [2026-10-02] promote | nabestaande | Mark Backer | 9f21fc54
-## [2026-10-02] promote | onderhoud-van-graven | Mark Backer | 95d2ed6d
-## [2026-10-02] promote | onderhouden-graf | Mark Backer | 000a6808
-## [2026-10-02] promote | opgraven-lijk | Mark Backer | 1d2b331d
-## [2026-10-02] promote | overlijden | Mark Backer | 61f45811
-## [2026-10-02] promote | plaats-van-bijzetting | Mark Backer | 6db5ae7f
-## [2026-10-02] promote | rechthebbende-op-het-graf | Mark Backer | 8b7065fc
-## [2026-10-02] promote | regeling | Mark Backer | 68c1677d
-## [2026-10-02] promote | ruimen-graf | Mark Backer | ba801d1d
-## [2026-10-02] promote | schouwen-lijk | Mark Backer | 74e1f1f6
-## [2026-10-02] promote | treffen-maatregel-bij-besmet-lijk | Mark Backer | 758cdde0
-## [2026-10-02] promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | 299341c8
-## [2026-10-02] promote | uitvaartondernemer | Mark Backer | 5bb19640
-## [2026-10-02] promote | uitvoeren-lijkbezorging | Mark Backer | be1565ec
-## [2026-10-02] promote | urn | Mark Backer | 2e83577d
-## [2026-10-02] promote | vergunning | Mark Backer | c0ac53d8
-## [2026-10-02] promote | verklaring-van-geen-bezwaar | Mark Backer | 25e1cc00
-## [2026-10-02] promote | verklaring-van-overlijden | Mark Backer | e22f6761
-## [2026-10-02] promote | verlenen-grafrecht | Mark Backer | 755efbe7
-## [2026-10-02] promote | verval-van-het-grafrecht | Mark Backer | 67de1649
-## [2026-10-02] promote | vervallen-verklaren-grafrecht | Mark Backer | 7a0f7288
-## [2026-10-02] promote | verzorgen-gemeentebegrafenis | Mark Backer | 8d48c922
-## [2026-10-02] promote | wet-op-de-lijkbezorging | Mark Backer | bd0c6a65
-## [2026-10-03] promote | gemeentelijke-lijkschouwer | Mark Backer | cfce5e2d
-## [2026-10-04] promote | adviseur | Mark Backer | b5812028
-## [2026-10-04] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 3a26f6c2
-## [2026-10-04] promote | begraafplaats | Mark Backer | 9b71b089
-## [2026-10-04] promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 2ef83930
-## [2026-10-04] promote | beheerder-van-de-begraafplaats | Mark Backer | 1e1f6355
-## [2026-10-04] promote | beheren-begraafplaatsen | Mark Backer | 0ac090fd
-## [2026-10-04] promote | beheren-crematoria | Mark Backer | 23eb2b15
-## [2026-10-04] promote | beheren-grafrechten | Mark Backer | 040ae7a1
-## [2026-10-04] promote | beheren-graven | Mark Backer | 99a02077
-## [2026-10-04] promote | beschikking | Mark Backer | 969fdcc2
-## [2026-10-04] promote | beslisser | Mark Backer | 84312f10
-## [2026-10-04] promote | besluit | Mark Backer | f64dc102
-## [2026-10-04] promote | besmet-lijk-gemeld | Mark Backer | f7d3385f
-## [2026-10-04] promote | bezorgen-lijken | Mark Backer | 4a79088e
-## [2026-10-04] promote | bijzetten-of-verstrooien-van-de-as | Mark Backer | d1143500
-## [2026-10-04] promote | burgemeester | Mark Backer | 18a0e374
-## [2026-10-04] promote | burgerlijke-stand-diensten | Mark Backer | 788591d9
-## [2026-10-04] promote | college-van-b-w | Mark Backer | c29dd1ec
-## [2026-10-04] promote | crematorium | Mark Backer | 89cdd4be
-## [2026-10-04] promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | a67efd41
-## [2026-10-04] promote | exploiteren-van-begraafplaatsen | Mark Backer | 6a691852
-## [2026-10-04] promote | gemeente | Mark Backer | bb5b68d9
-## [2026-10-04] promote | gemeentebegrafenis | Mark Backer | ee929580
-## [2026-10-04] promote | gemeentelijke-lijkschouwer | Mark Backer | 72a31a59
-## [2026-10-04] promote | gemeenteraad | Mark Backer | 787e7889
-## [2026-10-04] promote | ggd | Mark Backer | 867263e2
-## [2026-10-04] promote | graf | Mark Backer | 8a66717c
-## [2026-10-04] promote | graf-aanvragen | Mark Backer | b904eba6
-## [2026-10-04] promote | grafbedekking | Mark Backer | 785b3faf
-## [2026-10-04] promote | grafrecht | Mark Backer | 42049f30
-## [2026-10-04] promote | heffing | Mark Backer | f5a6bfb4
-## [2026-10-04] promote | heffingsverordening | Mark Backer | 9d668b78
-## [2026-10-04] promote | houder-van-de-begraafplaats | Mark Backer | 5b303c2e
-## [2026-10-04] promote | houder-van-een-plaats-van-bijzetting | Mark Backer | 35090076
-## [2026-10-04] promote | houder-van-het-crematorium | Mark Backer | 9c467567
-## [2026-10-04] promote | kerkgenootschap | Mark Backer | 7d9c0cf4
-## [2026-10-04] promote | ketenpartner | Mark Backer | 312dc4b3
-## [2026-10-04] promote | kostendrager | Mark Backer | 04aae169
-## [2026-10-04] promote | lijk | Mark Backer | 6ef29d0d
-## [2026-10-04] promote | model-beheersverordening-begraafplaatsen | Mark Backer | 95c5faee
-## [2026-10-04] promote | nabestaande | Mark Backer | 495eff2f
-## [2026-10-04] promote | officier-van-justitie | Mark Backer | 485ba0fd
-## [2026-10-04] promote | onderhoud-van-graven | Mark Backer | e9787ce4
-## [2026-10-04] promote | onderhouden-graf | Mark Backer | 760a0ba9
-## [2026-10-04] promote | opgraven-lijk | Mark Backer | 43bb90ac
-## [2026-10-04] promote | overlijden | Mark Backer | 2d6a875c
-## [2026-10-04] promote | rechthebbende-op-het-graf | Mark Backer | ab10dd68
-## [2026-10-04] promote | regeling | Mark Backer | 25f4889e
-## [2026-10-04] promote | ruimen-graf | Mark Backer | adcac313
-## [2026-10-04] promote | schouwen-lijk | Mark Backer | 697b8e8f
-## [2026-10-04] promote | sluiten-begraafplaats | Mark Backer | 41243bff
-## [2026-10-04] promote | stellen-andere-termijn | Mark Backer | ae7ca1b4
-## [2026-10-04] promote | treffen-maatregel-bij-besmet-lijk | Mark Backer | 22662197
-## [2026-10-04] promote | uitbaten-begraafplaatsen-en-crematoria | Mark Backer | b75d4cae
-## [2026-10-04] promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | e07e6a5f
-## [2026-10-04] promote | uitvaartondernemer | Mark Backer | c1865c77
-## [2026-10-04] promote | uitvoeren-lijkbezorging | Mark Backer | a57f6f50
-## [2026-10-04] promote | urn | Mark Backer | ba66e6c7
-## [2026-10-04] promote | vergunning | Mark Backer | 4993cd39
-## [2026-10-04] promote | verlenen-grafrecht | Mark Backer | 4aa85c07
-## [2026-10-04] promote | verlenen-toestemming-bijzondere-begraafplaats | Mark Backer | 036491c9
-## [2026-10-04] promote | verlenen-vergunning-bijzonder-crematorium | Mark Backer | 9c2c3102
-## [2026-10-04] promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | 365ccddb
-## [2026-10-04] promote | verval-van-het-grafrecht | Mark Backer | e1b7db7c
-## [2026-10-04] promote | vervallen-verklaren-grafrecht | Mark Backer | 6e1ad07e
-## [2026-10-04] promote | verzorgen-gemeentebegrafenis | Mark Backer | 4996af51
-## [2026-10-04] promote | verzorgen-lijkbezorging | Mark Backer | a0ff03cd
-## [2026-10-04] promote | wet-op-de-lijkbezorging | Mark Backer | 8204c2a5
-## [2026-10-04] promote | burgerlijke-stand-diensten | Mark Backer | e2c9ad59
-## [2026-10-04] promote | exploitatie-fysieke-leefomgeving | Mark Backer | b92d0d07
-## [2026-10-04] promote | exploiteren-van-begraafplaatsen | Mark Backer | 38bf9598
-## [2026-10-04] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 7b748487
-## [2026-10-04] promote | uitvoering-fysieke-leefomgeving | Mark Backer | 9fe259a7
-## [2026-10-04] promote | uitvoering-publieksdiensten | Mark Backer | 75e6b6c7
-## [2026-10-04] promote | exploiteren-van-begraafplaatsen | Mark Backer | dfdd5f7d
-## [2026-10-04] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | f731fa90
-## [2026-10-04] promote | vergunningenbeheer-publieksdiensten | Mark Backer | 0bdbdb78
-## [2026-10-04] promote | beheren-grafrechten | Mark Backer | 8016b4d7
-## [2026-10-04] promote | bezorgen-lijken | Mark Backer | 0776ebe0
-## [2026-10-04] promote | model-beheersverordening-begraafplaatsen | Mark Backer | 6de78e09
-## [2026-10-04] promote | wet-op-de-lijkbezorging | Mark Backer | 3623896e
-## [2026-10-04] promote | arts | Mark Backer | d81a8731
-## [2026-10-04] promote | ketenpartner | Mark Backer | 07503132
-## [2026-10-05] promote | adviseur | Mark Backer | 97bac173
-## [2026-10-05] promote | afgeven-laissez-passer | Mark Backer | d386ccbe
-## [2026-10-05] promote | asverstrooiing | Mark Backer | 3552e9f5
-## [2026-10-05] promote | begraafplaatsregister | Mark Backer | ae317988
-## [2026-10-05] promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 091f528b
-## [2026-10-05] promote | beheerder-van-de-begraafplaats | Mark Backer | 0b32d4a8
-## [2026-10-05] promote | beheren-graven | Mark Backer | 0af18270
-## [2026-10-05] promote | beschikking | Mark Backer | 0ac43257
-## [2026-10-05] promote | beslisser | Mark Backer | 3ae502a0
-## [2026-10-05] promote | besluit | Mark Backer | 112a948a
-## [2026-10-05] promote | besluit-op-de-lijkbezorging | Mark Backer | 1637af85
-## [2026-10-05] promote | besmet-stoffelijk-overschot-gemeld | Mark Backer | 4df0c042
-## [2026-10-05] promote | bezorgen-stoffelijk-overschot | Mark Backer | 1d0fc23a
-## [2026-10-05] promote | bijzetten-of-verstrooien-van-de-as | Mark Backer | 9bbebf82
-## [2026-10-05] promote | bijzettingenregister | Mark Backer | 12ad7793
-## [2026-10-05] promote | bijzondere-begraafplaats-toestemming | Mark Backer | 8f0986ee
-## [2026-10-05] promote | crematoriumregister | Mark Backer | 1eb0ad9f
-## [2026-10-05] promote | exploiteren-van-begraafplaatsen | Mark Backer | 44ae4b8e
-## [2026-10-05] promote | gedenkteken-plaatsingsvergunning | Mark Backer | 4868a6fe
-## [2026-10-05] promote | gemeentebegrafenis | Mark Backer | 2ab2df16
-## [2026-10-05] promote | gemeentelijke-lijkschouwer | Mark Backer | 7ef2ffae
-## [2026-10-05] promote | grafonderhoud | Mark Backer | fca8fb68
-## [2026-10-05] promote | grafuitgifte | Mark Backer | ebb5ad8e
-## [2026-10-05] promote | heffing | Mark Backer | 2010d3da
-## [2026-10-05] promote | heffingsverordening | Mark Backer | 21c7ae2b
-## [2026-10-05] promote | herbegraven-of-alsnog-cremeren | Mark Backer | a4882827
-## [2026-10-05] promote | ketenpartner | Mark Backer | 5256b54a
-## [2026-10-05] promote | model-beheersverordening-begraafplaatsen | Mark Backer | 2791f042
-## [2026-10-05] promote | nabestaande | Mark Backer | 0b74f590
-## [2026-10-05] promote | officier-van-justitie | Mark Backer | 133ec214
-## [2026-10-05] promote | onderhouden-graf | Mark Backer | c51b422b
-## [2026-10-05] promote | ontleding-stoffelijk-overschot-toestemming | Mark Backer | 5b35b9e3
-## [2026-10-05] promote | opgraven-stoffelijk-overschot | Mark Backer | 50d14faa
-## [2026-10-05] promote | overlijden | Mark Backer | 1a12b404
-## [2026-10-05] promote | producten-en-dienstenrealisatie-fysieke-leefomgeving | Mark Backer | f5babe1d
-## [2026-10-05] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 9156f8d8
-## [2026-10-05] promote | producten-en-dienstenrealisatie-veiligheidsdomein | Mark Backer | 4d753932
-## [2026-10-05] promote | rechthebbende-op-het-graf | Mark Backer | e3fc0afe
-## [2026-10-05] promote | schouwen-stoffelijk-overschot | Mark Backer | 81b2aa8d
-## [2026-10-05] promote | stellen-andere-termijn | Mark Backer | 7dbcabff
-## [2026-10-05] promote | stoffelijk-overschot | Mark Backer | 20824331
-## [2026-10-05] promote | treffen-maatregel-bij-besmet-stoffelijk-overschot | Mark Backer | 3dcdb7a3
-## [2026-10-05] promote | uitvoeren-lijkbezorging | Mark Backer | 985b53af
-## [2026-10-05] promote | uitvoering-fysieke-leefomgeving | Mark Backer | b49780aa
-## [2026-10-05] promote | uitvoering-openbare-orde-en-veiligheid | Mark Backer | f17d8960
-## [2026-10-05] promote | urn | Mark Backer | 1e3adad8
-## [2026-10-05] promote | vergunning | Mark Backer | ec5e4664
-## [2026-10-05] promote | vergunningenbeheer-publieksdiensten | Mark Backer | b1fbe20b
-## [2026-10-05] promote | verlenen-toestemming-asverstrooiing | Mark Backer | 5b32aa91
-## [2026-10-05] promote | verlenen-toestemming-bijzondere-begraafplaats | Mark Backer | 4a6803ce
-## [2026-10-05] promote | verlenen-vergunning-grafbedekking | Mark Backer | 77c5226a
-## [2026-10-05] promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | 4325441b
-## [2026-10-05] promote | verlenen-verlof-tot-ontleding | Mark Backer | 097f5507
-## [2026-10-05] promote | verlof-tot-begraven | Mark Backer | 9c9dd3a0
-## [2026-10-05] promote | vervoersdocumenten-stoffelijk-overschot | Mark Backer | 1e985bd7
-## [2026-10-05] promote | verzorgen-gemeentebegrafenis | Mark Backer | 1581ad73
-## [2026-10-05] promote | verzorgen-lijkbezorging | Mark Backer | e2065d54
-## [2026-10-05] promote | wet-op-de-lijkbezorging | Mark Backer | b1e2b5e8
-## [2026-10-05] promote | adviseur | Mark Backer | 73a529a4
-## [2026-10-05] promote | begraafplaats | Mark Backer | 6a1f7cb6
-## [2026-10-05] promote | beschikking | Mark Backer | cb56b1df
-## [2026-10-05] promote | burgemeester | Mark Backer | e1e1497e
-## [2026-10-05] promote | crematorium | Mark Backer | 9c3ad7fa
-## [2026-10-05] promote | gemeentelijke-lijkschouwer | Mark Backer | 6f645763
-## [2026-10-05] promote | ggd | Mark Backer | ecda1c94
-## [2026-10-05] promote | graf | Mark Backer | b3992f3e
-## [2026-10-05] promote | grafrecht | Mark Backer | 05af9621
-## [2026-10-05] promote | houder-van-de-begraafplaats | Mark Backer | b3d4ab7f
-## [2026-10-05] promote | houder-van-het-crematorium | Mark Backer | 5419730d
-## [2026-10-05] promote | ketenpartner | Mark Backer | 7928bd56
-## [2026-10-05] promote | overlijden | Mark Backer | 18f5e3c2
-## [2026-10-05] promote | stellen-andere-termijn | Mark Backer | e26edf46
-## [2026-10-05] promote | uitvoeren-lijkbezorging | Mark Backer | 7a001e34
-## [2026-10-05] promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | eeadc14f
-## [2026-10-05] promote | verzorgen-gemeentebegrafenis | Mark Backer | 7ad373da
-## [2026-10-05] promote | verzorgen-lijkbezorging | Mark Backer | f5b421ed
-## [2026-10-05] promote | wet-op-de-lijkbezorging | Mark Backer | 93766c68
-## [2026-10-05] promote | grafuitgifte | Mark Backer | 0214b613
-## [2026-10-06] promote | beschikking | Mark Backer | 484bab45
-## [2026-10-06] promote | beslisser | Mark Backer | f2526acb
-## [2026-10-06] promote | besluit | Mark Backer | 54fecf03
-## [2026-10-06] promote | burgemeester | Mark Backer | fcbd15e4
-## [2026-10-06] promote | college-van-b-w | Mark Backer | bb8f6759
-## [2026-10-06] promote | gemeente | Mark Backer | 37b54eee
-## [2026-10-06] promote | gemeenteraad | Mark Backer | e58fc270
-## [2026-10-06] promote | heffing | Mark Backer | c1dcf0eb
-## [2026-10-06] promote | heffingsverordening | Mark Backer | 08f58fc4
-## [2026-10-06] promote | regeling | Mark Backer | a5d1f88f
-## [2026-10-06] promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | 1690cfb8
-## [2026-10-06] promote | vergunning | Mark Backer | 9bbac78b
-## [2026-10-06] promote | vervoersdocumenten-stoffelijk-overschot | Mark Backer | 7a795f43
-## [2026-10-07] promote | aangever | Mark Backer | bfed291a
-## [2026-10-07] promote | aangifte-vertrek-buitenland | Mark Backer | 246915f2
-## [2026-10-07] promote | behandelen-verzoek-om-correctie | Mark Backer | d7c2cac8
-## [2026-10-07] promote | behandelen-verzoek-om-geheimhouding | Mark Backer | 98576119
-## [2026-10-07] promote | behandelen-verzoek-om-verwijdering-van-gegevens | Mark Backer | 3ce91fc2
-## [2026-10-07] promote | beslisser | Mark Backer | 9e858df6
-## [2026-10-07] promote | besluit-basisregistratie-personen | Mark Backer | 53d432b3
-## [2026-10-07] promote | bevolkingsadministratie-bijhouding | Mark Backer | 2b9d0251
-## [2026-10-07] promote | bijhouden-persoonsgegevens | Mark Backer | bd410c7d
-## [2026-10-07] promote | bijhoudingsgemeente | Mark Backer | 49f6b548
-## [2026-10-07] promote | briefadres | Mark Backer | 62ae91e3
-## [2026-10-07] promote | briefadres-aanvragen | Mark Backer | 16e8fbe4
-## [2026-10-07] promote | briefadresgever | Mark Backer | 05676433
-## [2026-10-07] promote | brp-adoptie-uitschrijving | Mark Backer | a256d1bb
-## [2026-10-07] promote | brp-geheimhoudingsverzoek | Mark Backer | 9e244d78
-## [2026-10-07] promote | brp-inschrijving | Mark Backer | 968500e0
-## [2026-10-07] promote | brp-inzagerecht | Mark Backer | 210572c9
-## [2026-10-07] promote | brp-inzagerecht-gegevensverstrekking | Mark Backer | 8dfbd5b1
-## [2026-10-07] promote | brp-uittreksel | Mark Backer | c0da6587
-## [2026-10-07] promote | brp-uittreksel-met-gezag | Mark Backer | 86bba3f4
-## [2026-10-07] promote | brp-wijzigingsverzoek | Mark Backer | 2ac4c578
-## [2026-10-07] promote | emigratie | Mark Backer | c4627dc0
-## [2026-10-07] promote | gemeente | Mark Backer | f6c8419d
-## [2026-10-07] promote | ingeschreven-persoon | Mark Backer | 96e93561
-## [2026-10-07] promote | inschrijven-ingezetene | Mark Backer | 42de8394
-## [2026-10-07] promote | inschrijven-niet-ingezetene | Mark Backer | 6a2d20c1
-## [2026-10-07] promote | inschrijven-op-briefadres | Mark Backer | 1a0a99a5
-## [2026-10-07] promote | legalisatie-handtekening | Mark Backer | d4e596af
-## [2026-10-07] promote | onjuiste-inschrijving-op-adres-melden | Mark Backer | d7974ee2
-## [2026-10-07] promote | persoonsgegevens-verklaring-onder-eed-of-belofte | Mark Backer | a1f6c6a4
-## [2026-10-07] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 8a4b7087
-## [2026-10-07] promote | rni-inschrijving | Mark Backer | e26156a6
-## [2026-10-07] promote | rni-loket | Mark Backer | 53f2572e
-## [2026-10-07] promote | toezichthouder-brp | Mark Backer | b4bb20bb
-## [2026-10-07] promote | uitvoeren-adresonderzoek | Mark Backer | fa167122
-## [2026-10-07] promote | verblijfplaats | Mark Backer | 8b21fd08
-## [2026-10-07] promote | verhuismelding | Mark Backer | c9d2a370
-## [2026-10-07] promote | verhuizing | Mark Backer | 90143d58
-## [2026-10-07] promote | verstrekken-overzicht-gegevensverstrekkingen | Mark Backer | 6838b19e
-## [2026-10-07] promote | verstrekken-persoonsgegevens | Mark Backer | 4e5bf375
-## [2026-10-07] promote | verwerken-adreswijziging | Mark Backer | 76a4c558
-## [2026-10-07] promote | verwerken-emigratie | Mark Backer | 222d8d7b
-## [2026-10-07] promote | vestiging-vanuit-het-buitenland | Mark Backer | 8a412895
-## [2026-10-07] promote | wet-basisregistratie-personen | Mark Backer | e697891f
-## [2026-10-07] promote | wijzigen-identificatienummers | Mark Backer | 1bbb373d
-## [2026-10-07] promote | bijhouden-persoonsgegevens | Mark Backer | d23a6d82
-## [2026-10-07] promote | verzorgen-burgerzaken | Mark Backer | 8c3a7104
-## [2026-10-07] promote | aangever | Mark Backer | 5017f3c2
-## [2026-10-07] promote | achternaamwijziging | Mark Backer | 475e97d6
-## [2026-10-07] promote | adoptie | Mark Backer | 5bdf8a9e
-## [2026-10-07] promote | adoptie-aangifte | Mark Backer | 5aa0bbe2
-## [2026-10-07] promote | akte-van-de-burgerlijke-stand | Mark Backer | b83541a9
-## [2026-10-07] promote | ambtenaar-burgerlijke-stand-aanvragen | Mark Backer | 90a9dddb
-## [2026-10-07] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | de5b4530
-## [2026-10-07] promote | behandelen-melding-voorgenomen-huwelijk-of-partnerschap | Mark Backer | b032a096
-## [2026-10-07] promote | besluit-burgerlijke-stand-1994 | Mark Backer | b6d63671
-## [2026-10-07] promote | bevolkingsadministratie-bijhouding | Mark Backer | e0c9a2ce
-## [2026-10-07] promote | bewijs-van-in-leven-zijn | Mark Backer | 144f5520
-## [2026-10-07] promote | bijhouden-burgerlijke-stand | Mark Backer | 6fd23763
-## [2026-10-07] promote | bijhouden-persoonsgegevens | Mark Backer | e17efa41
-## [2026-10-07] promote | brp-inschrijving-buitenlandse-akte | Mark Backer | 0f6c8a8d
-## [2026-10-07] promote | brp-inschrijving-niet-in-leven-zijnd-kind | Mark Backer | 11fa4635
-## [2026-10-07] promote | brp-uittreksel-met-gezag | Mark Backer | c30897a3
-## [2026-10-07] promote | burgerlijk-wetboek-boek-1 | Mark Backer | 54220369
-## [2026-10-07] promote | burgerlijke-stand-diensten | Mark Backer | 40d321af
-## [2026-10-07] promote | doodgeboren-kind-aangifte | Mark Backer | 3f59bec1
-## [2026-10-07] promote | echtscheiding-inschrijving | Mark Backer | a4988c08
-## [2026-10-07] promote | erkenning-kind | Mark Backer | af5f4faa
-## [2026-10-07] promote | geboorte | Mark Backer | 57bf80d4
-## [2026-10-07] promote | geboorteaangifte | Mark Backer | eadaaf80
-## [2026-10-07] promote | geboorteakte | Mark Backer | b0bb0de8
-## [2026-10-07] promote | geboorteakte-levenloos-kind | Mark Backer | 6f8048ba
-## [2026-10-07] promote | geregistreerd-partnerschap-omzetting-in-huwelijk | Mark Backer | b713697a
-## [2026-10-07] promote | geregistreerd-partnerschap-ontbinding | Mark Backer | acfd3e80
-## [2026-10-07] promote | geregistreerd-partnerschapaangifte | Mark Backer | f979f3a9
-## [2026-10-07] promote | geslachtswijzigingsaangifte | Mark Backer | a0db2479
-## [2026-10-07] promote | huwelijk | Mark Backer | 42624342
-## [2026-10-07] promote | huwelijksaangifte | Mark Backer | 8bec0fac
-## [2026-10-07] promote | inschrijven-ingezetene | Mark Backer | 9e653e78
-## [2026-10-07] promote | inschrijven-levenloos-geboren-kind | Mark Backer | 96be0a96
-## [2026-10-07] promote | inschrijven-ontbinding-huwelijk-of-partnerschap | Mark Backer | f9b15abb
-## [2026-10-07] promote | levenloze-geboorte | Mark Backer | c09c538e
-## [2026-10-07] promote | naamgebruik-verzoek-aanduiding | Mark Backer | 271a50ec
-## [2026-10-07] promote | naamskeuzeverklaring | Mark Backer | f502c63f
-## [2026-10-07] promote | naamswijziging | Mark Backer | 3ec80450
-## [2026-10-07] promote | ontbinding-huwelijk-of-partnerschap | Mark Backer | 9704eec1
-## [2026-10-07] promote | ontkenning-ouderschap | Mark Backer | d2d4624d
-## [2026-10-07] promote | opmaken-akte-levenloos-geboren-kind | Mark Backer | f0ea0ff8
-## [2026-10-07] promote | opmaken-akte-van-erkenning | Mark Backer | 2b54f228
-## [2026-10-07] promote | opmaken-akte-van-naamskeuze | Mark Backer | b3bd0228
-## [2026-10-07] promote | opmaken-akte-van-overlijden | Mark Backer | 9cca0c4c
-## [2026-10-07] promote | opmaken-geboorteakte | Mark Backer | eafa5f09
-## [2026-10-07] promote | ouder | Mark Backer | a7a51997
-## [2026-10-07] promote | overlijden | Mark Backer | 011b17e2
-## [2026-10-07] promote | overlijdensaangifte | Mark Backer | 99d00edd
-## [2026-10-07] promote | overlijdensakte | Mark Backer | 8ca1ec69
-## [2026-10-07] promote | registreren-partnerschap | Mark Backer | fa0253c0
-## [2026-10-07] promote | toevoegen-latere-vermelding | Mark Backer | 8a19b089
-## [2026-10-07] promote | trouwlocatie | Mark Backer | ce6e0c29
-## [2026-10-07] promote | uittreksel-burgerlijke-stand | Mark Backer | 3e4546bf
-## [2026-10-07] promote | uitvaartondernemer | Mark Backer | 5e031a2b
-## [2026-10-07] promote | vaststelling-ouderschap | Mark Backer | 2a719526
-## [2026-10-07] promote | verklaring-van-huwelijksbevoegdheid | Mark Backer | 8018ec90
-## [2026-10-07] promote | verstrekken-persoonsgegevens | Mark Backer | bc6c3b21
-## [2026-10-07] promote | verstrekken-uittreksels-en-verklaringen-burgerlijke-stand | Mark Backer | 0a3dfdf3
-## [2026-10-07] promote | verwerken-buitenlands-document | Mark Backer | 2dd9b777
-## [2026-10-07] promote | verzorgen-burgerzaken | Mark Backer | 762a189c
-## [2026-10-07] promote | voltrekken-huwelijk | Mark Backer | e60cd5ea
-## [2026-10-07] promote | voornaamwijziging | Mark Backer | 231c1f7d
-## [2026-10-07] promote | wet-basisregistratie-personen | Mark Backer | 310e74d3
-## [2026-10-07] promote | wijzigen-geslachtsvermelding | Mark Backer | 725ee9e8
-## [2026-10-07] promote | wijzigen-naamgebruik | Mark Backer | 676d3990
-## [2026-10-07] promote | behandelen-aanvraag-reisdocument | Mark Backer | 9ea21998
-## [2026-10-07] promote | behandelen-aanvraag-reisdocument-niet-ingezetene | Mark Backer | 64a6fd78
-## [2026-10-07] promote | beheren-reisdocumenten | Mark Backer | 53b36884
-## [2026-10-07] promote | beslisser | Mark Backer | ec59a683
-## [2026-10-07] promote | burgemeester | Mark Backer | 3289df21
-## [2026-10-07] promote | gewaarmerkte-kopie-reisdocument-aanvragen | Mark Backer | 3e8530ec
-## [2026-10-07] promote | heffing | Mark Backer | f29e837d
-## [2026-10-07] promote | houder-van-het-reisdocument | Mark Backer | 57f263ce
-## [2026-10-07] promote | identiteitskaart | Mark Backer | b4ed7456
-## [2026-10-07] promote | inhouden-reisdocument | Mark Backer | 7f0d35f4
-## [2026-10-07] promote | naamswijziging | Mark Backer | 28c4006c
-## [2026-10-07] promote | officiele-documenten-verstrekking | Mark Backer | 68f2aaf1
-## [2026-10-07] promote | ouder | Mark Backer | 01de23ad
-## [2026-10-07] promote | overlijden | Mark Backer | 715b4343
-## [2026-10-07] promote | paspoort | Mark Backer | 20150619
-## [2026-10-07] promote | paspoort-tweede | Mark Backer | e0f3dc93
-## [2026-10-07] promote | paspoortbesluit | Mark Backer | 3210f39e
-## [2026-10-07] promote | paspoortwet | Mark Backer | 753fc4b9
-## [2026-10-07] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 69d7641b
-## [2026-10-07] promote | reisdocument | Mark Backer | 38eb7cd2
-## [2026-10-07] promote | reisdocument-niet-ingezetene | Mark Backer | d1528bba
-## [2026-10-07] promote | uitreiken-reisdocument | Mark Backer | 50eb1630
-## [2026-10-07] promote | vermissing-of-diefstal-reisdocument-doorgeven | Mark Backer | 023a93a3
-## [2026-10-07] promote | vermissing-van-het-reisdocument | Mark Backer | 705dfdee
-## [2026-10-07] promote | verval-van-het-reisdocument | Mark Backer | 8fb69c18
-## [2026-10-07] promote | vervallen-verklaren-reisdocument | Mark Backer | 75db3bdf
-## [2026-10-07] promote | verwerken-vermissing-reisdocument | Mark Backer | 79a51580
-## [2026-10-07] promote | verzorgen-burgerzaken | Mark Backer | 53d30394
-## [2026-10-07] promote | vluchtelingenpaspoort | Mark Backer | 1ff3bf69
-## [2026-10-07] promote | vreemdelingenpaspoort | Mark Backer | 1d7d3307
-## [2026-10-07] promote | wet-op-de-nederlandse-identiteitskaart | Mark Backer | 7f1bb854
-## [2026-10-07] promote | wijzigen-geslachtsvermelding | Mark Backer | 997ffea3
-## [2026-10-07] promote | wijzigen-identificatienummers | Mark Backer | 09e03921
-## [2026-10-07] promote | zakenpaspoort | Mark Backer | 486d76fe
-## [2026-10-07] promote | behandelen-naturalisatieverzoek | Mark Backer | 17163654
-## [2026-10-07] promote | behandelen-optieverklaring | Mark Backer | 94d5c864
-## [2026-10-07] promote | behandelen-verklaring-van-afstand | Mark Backer | 6fa597bd
-## [2026-10-07] promote | behandelen-verzoek-om-kiezerspas | Mark Backer | da44c8be
-## [2026-10-07] promote | behandelen-verzoek-om-volmacht | Mark Backer | a0644a3c
-## [2026-10-07] promote | beheren-nederlanderschap | Mark Backer | 7fddc1ad
-## [2026-10-07] promote | beheren-stempassen | Mark Backer | 84812aca
-## [2026-10-07] promote | beslisser | Mark Backer | 7099e8e4
-## [2026-10-07] promote | besluit-verkrijging-en-verlies-nederlanderschap | Mark Backer | de484466
-## [2026-10-07] promote | bewijs-van-nederlanderschap | Mark Backer | 345f4169
-## [2026-10-07] promote | bijhouden-persoonsgegevens | Mark Backer | 15bde7d6
-## [2026-10-07] promote | houden-naturalisatieceremonie | Mark Backer | 8e23cb08
-## [2026-10-07] promote | ketenpartner | Mark Backer | cf5d1c9c
-## [2026-10-07] promote | kieswet | Mark Backer | 8b215c1a
-## [2026-10-07] promote | kiezer | Mark Backer | 425c07ae
-## [2026-10-07] promote | kiezerspas | Mark Backer | 1bf4e97b
-## [2026-10-07] promote | naturalisatieceremonie | Mark Backer | c8adf7f6
-## [2026-10-07] promote | naturalisatieoptie | Mark Backer | fe961309
-## [2026-10-07] promote | naturalisatieverzoek | Mark Backer | 4b3e2082
-## [2026-10-07] promote | nederlanderschap | Mark Backer | afe19610
-## [2026-10-07] promote | nederlanderschap-diensten | Mark Backer | 5bc29ed1
-## [2026-10-07] promote | optant | Mark Backer | cb3b76b9
-## [2026-10-07] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 874726bd
-## [2026-10-07] promote | registreren-kiesgerechtigdheid | Mark Backer | 0479196c
-## [2026-10-07] promote | rijk | Mark Backer | 7140f12b
-## [2026-10-07] promote | rijkswet-op-het-nederlanderschap | Mark Backer | e91d5a38
-## [2026-10-07] promote | stempas | Mark Backer | 5e553d48
-## [2026-10-07] promote | stempas-ontvangen | Mark Backer | 2544548a
-## [2026-10-07] promote | stemrecht | Mark Backer | 8e6cb5ba
-## [2026-10-07] promote | uitsluiting-van-het-kiesrecht | Mark Backer | 93c2e823
-## [2026-10-07] promote | verkiezingen-gerelateerde-diensten | Mark Backer | f0cddf78
-## [2026-10-07] promote | verklaring-van-afstand-nederlandse-nationaliteit | Mark Backer | adfed78a
-## [2026-10-07] promote | verkrijging-van-het-nederlanderschap | Mark Backer | d3f8c176
-## [2026-10-07] promote | verlies-van-het-nederlanderschap | Mark Backer | 60148032
-## [2026-10-07] promote | verstrekken-persoonsgegevens | Mark Backer | 7f6bdd0e
-## [2026-10-07] promote | verstrekken-stempas | Mark Backer | 21a18d71
-## [2026-10-07] promote | verzoeker-om-naturalisatie | Mark Backer | 75338094
-## [2026-10-07] promote | verzorgen-burgerzaken | Mark Backer | c2a8f72a
-## [2026-10-07] promote | volmachtbewijs-verkiezingen | Mark Backer | 2787566c
-## [2026-10-07] promote | aangever | Mark Backer | 4063dea7
-## [2026-10-07] promote | aanvrager-van-de-verklaring-omtrent-het-gedrag | Mark Backer | d74e8b36
-## [2026-10-07] promote | afgeven-verklaring-omtrent-het-gedrag | Mark Backer | 290a8a43
-## [2026-10-07] promote | akte-van-de-burgerlijke-stand | Mark Backer | 6a8cbca6
-## [2026-10-07] promote | behandelen-aanvraag-omwisseling-buitenlands-rijbewijs | Mark Backer | 45cd2d73
-## [2026-10-07] promote | behandelen-aanvraag-rijbewijs | Mark Backer | ee8728ab
-## [2026-10-07] promote | behandelen-aanvraag-verklaring-omtrent-het-gedrag | Mark Backer | 735512ed
-## [2026-10-07] promote | beheren-rijbewijzen | Mark Backer | 79ca15af
-## [2026-10-07] promote | beslisser | Mark Backer | 794da887
-## [2026-10-07] promote | besluit-basisregistratie-personen | Mark Backer | b72c64d4
-## [2026-10-07] promote | besluit-burgerlijke-stand-1994 | Mark Backer | b57a34ef
-## [2026-10-07] promote | besluit-verkrijging-en-verlies-nederlanderschap | Mark Backer | 8e1653ea
-## [2026-10-07] promote | burgemeester | Mark Backer | 71d9dd5f
-## [2026-10-07] promote | burgerlijk-wetboek-boek-1 | Mark Backer | a992b122
-## [2026-10-07] promote | houder-van-het-rijbewijs | Mark Backer | fd7cf520
-## [2026-10-07] promote | ketenpartner | Mark Backer | f7498a21
-## [2026-10-07] promote | kieswet | Mark Backer | cbdefa16
-## [2026-10-07] promote | legalisatie-handtekening | Mark Backer | e89c3b15
-## [2026-10-07] promote | nederlanderschap | Mark Backer | 510f6f2f
-## [2026-10-07] promote | officiele-documenten-verstrekking | Mark Backer | 5a549063
-## [2026-10-07] promote | overlijden | Mark Backer | edd36a28
-## [2026-10-07] promote | paspoortbesluit | Mark Backer | 84666117
-## [2026-10-07] promote | paspoortwet | Mark Backer | e01171d5
-## [2026-10-07] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | cbdbd145
-## [2026-10-07] promote | reglement-rijbewijzen | Mark Backer | eff2df20
-## [2026-10-07] promote | rijbewijs | Mark Backer | 2fc99142
-## [2026-10-07] promote | rijbewijs-aanvragen | Mark Backer | 8f9ad25f
-## [2026-10-07] promote | rijbewijs-buitenlands-omwisseling | Mark Backer | 675ea1c8
-## [2026-10-07] promote | rijbewijs-verlengen | Mark Backer | 7c9788cd
-## [2026-10-07] promote | rijk | Mark Backer | e8f06b11
-## [2026-10-07] promote | rijkswet-op-het-nederlanderschap | Mark Backer | 26753891
-## [2026-10-07] promote | uitreiken-rijbewijs | Mark Backer | 2b713554
-## [2026-10-07] promote | verkiezingen-gerelateerde-diensten | Mark Backer | 2a6bcd2f
-## [2026-10-07] promote | verklaring-omtrent-gedrag-aanvragen | Mark Backer | 2162c392
-## [2026-10-07] promote | verklaring-omtrent-het-gedrag | Mark Backer | 4a020ce9
-## [2026-10-07] promote | verklaring-van-huwelijksbevoegdheid | Mark Backer | 8ff9e440
-## [2026-10-07] promote | vermissing-of-diefstal-rijbewijs-doorgeven | Mark Backer | d4f6a8fb
-## [2026-10-07] promote | vermissing-van-het-rijbewijs | Mark Backer | a085b6a5
-## [2026-10-07] promote | verwerken-vermissing-rijbewijs | Mark Backer | 4a0754fb
-## [2026-10-07] promote | verzorgen-burgerzaken | Mark Backer | 10aa55c9
-## [2026-10-07] promote | wegenverkeerswet-1994 | Mark Backer | a61975ec
-## [2026-10-07] promote | wet-basisregistratie-personen | Mark Backer | 35ddc21e
-## [2026-10-07] promote | wet-justitiele-en-strafvorderlijke-gegevens | Mark Backer | 7dde071c
-## [2026-10-07] promote | wet-op-de-nederlandse-identiteitskaart | Mark Backer | 84f816a2
-## [2026-10-07] promote | afgeven-laissez-passer | Mark Backer | f5a7cb7f
-## [2026-10-07] promote | afgeven-verklaring-omtrent-het-gedrag | Mark Backer | edaf0540
-## [2026-10-07] promote | begraven-en-cremeren-stoffelijk-overschot | Mark Backer | ae501502
-## [2026-10-07] promote | behandelen-aanvraag-verklaring-omtrent-het-gedrag | Mark Backer | 45e370f4
-## [2026-10-07] promote | behandelen-naturalisatieverzoek | Mark Backer | 194f4eea
-## [2026-10-07] promote | behandelen-optieverklaring | Mark Backer | a41f706a
-## [2026-10-07] promote | behandelen-verklaring-van-afstand | Mark Backer | 52b13dda
-## [2026-10-07] promote | behandelen-verkrijging-en-verlies-nederlanderschap | Mark Backer | 9a5191fb
-## [2026-10-07] promote | beheren-nederlanderschap | Mark Backer | 47b955dd
-## [2026-10-07] promote | bezorgen-stoffelijk-overschot | Mark Backer | 75686f1f
-## [2026-10-07] promote | bijzetten-of-verstrooien-van-de-as | Mark Backer | 64225d6f
-## [2026-10-07] promote | houden-naturalisatieceremonie | Mark Backer | dff394b8
-## [2026-10-07] promote | opgraven-stoffelijk-overschot | Mark Backer | be33ac77
-## [2026-10-07] promote | schouwen-stoffelijk-overschot | Mark Backer | 67f2fb1e
-## [2026-10-07] promote | stellen-andere-termijn | Mark Backer | 5103fefc
-## [2026-10-07] promote | toestaan-lijkbezorging | Mark Backer | f87e707f
-## [2026-10-07] promote | treffen-maatregel-bij-besmet-stoffelijk-overschot | Mark Backer | 84bb82de
-## [2026-10-07] promote | uitvoeren-lijkbezorging | Mark Backer | 0a533914
-## [2026-10-07] promote | verlenen-toestemming-asverstrooiing | Mark Backer | 3530a79c
-## [2026-10-07] promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | 9dc6b341
-## [2026-10-07] promote | verlenen-verlof-tot-ontleding | Mark Backer | ae905aa8
-## [2026-10-08] promote | aangever | Mark Backer | 5de9fa7a
-## [2026-10-08] promote | aangifte-vertrek-buitenland | Mark Backer | 8a931cfe
-## [2026-10-08] promote | aanvrager-van-de-verklaring-omtrent-het-gedrag | Mark Backer | f473c551
-## [2026-10-08] promote | achternaamwijziging | Mark Backer | 6d938a48
-## [2026-10-08] promote | adoptie | Mark Backer | 47c1102a
-## [2026-10-08] promote | adoptie-aangifte | Mark Backer | 76222aed
-## [2026-10-08] promote | adviseur | Mark Backer | 0426cc11
-## [2026-10-08] promote | afgeven-laissez-passer | Mark Backer | d80bd439
-## [2026-10-08] promote | afgeven-verklaring-omtrent-het-gedrag | Mark Backer | b8b6a7a6
-## [2026-10-08] promote | akte-van-de-burgerlijke-stand | Mark Backer | 08fa6971
-## [2026-10-08] promote | ambtenaar-burgerlijke-stand-aanvragen | Mark Backer | 8095193c
-## [2026-10-08] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 71abb4dd
-## [2026-10-08] promote | arts | Mark Backer | 4fd5de1b
-## [2026-10-08] promote | asverstrooiing | Mark Backer | 9f12ac6a
-## [2026-10-08] promote | begraafplaats | Mark Backer | 810811fa
-## [2026-10-08] promote | begraafplaatsregister | Mark Backer | 1b9c86e6
-## [2026-10-08] promote | begraven-en-cremeren-stoffelijk-overschot | Mark Backer | dae7aba8
-## [2026-10-08] promote | behandelen-aanvraag-omwisseling-buitenlands-rijbewijs | Mark Backer | d9351af6
-## [2026-10-08] promote | behandelen-aanvraag-reisdocument | Mark Backer | 58102c4b
-## [2026-10-08] promote | behandelen-aanvraag-reisdocument-niet-ingezetene | Mark Backer | de241987
-## [2026-10-08] promote | behandelen-aanvraag-rijbewijs | Mark Backer | c241ec4c
-## [2026-10-08] promote | behandelen-aanvraag-verklaring-omtrent-het-gedrag | Mark Backer | 51bf587c
-## [2026-10-08] promote | behandelen-melding-voorgenomen-huwelijk-of-partnerschap | Mark Backer | 5e2bae88
-## [2026-10-08] promote | behandelen-naturalisatieverzoek | Mark Backer | 2ebe9b56
-## [2026-10-08] promote | behandelen-optieverklaring | Mark Backer | 601e60d2
-## [2026-10-08] promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 032bf76e
-## [2026-10-08] promote | behandelen-verklaring-van-afstand | Mark Backer | 684ddd81
-## [2026-10-08] promote | behandelen-verzoek-om-correctie | Mark Backer | 59a50bf2
-## [2026-10-08] promote | behandelen-verzoek-om-geheimhouding | Mark Backer | 86b7ce35
-## [2026-10-08] promote | behandelen-verzoek-om-kiezerspas | Mark Backer | eaa7da00
-## [2026-10-08] promote | behandelen-verzoek-om-verwijdering-van-gegevens | Mark Backer | fc557e92
-## [2026-10-08] promote | behandelen-verzoek-om-volmacht | Mark Backer | 126fd852
-## [2026-10-08] promote | beheerder-van-de-begraafplaats | Mark Backer | 9bd487ad
-## [2026-10-08] promote | beheren-begraafplaatsen | Mark Backer | 84a9505e
-## [2026-10-08] promote | beheren-crematoria | Mark Backer | 17e41d3c
-## [2026-10-08] promote | beheren-grafrechten | Mark Backer | 7a38eaf1
-## [2026-10-08] promote | beheren-graven | Mark Backer | 15a7b581
-## [2026-10-08] promote | beheren-nederlanderschap | Mark Backer | 17ddac85
-## [2026-10-08] promote | beheren-reisdocumenten | Mark Backer | ffa6a529
-## [2026-10-08] promote | beheren-rijbewijzen | Mark Backer | dd5124bc
-## [2026-10-08] promote | beheren-stempassen | Mark Backer | dc0e267a
-## [2026-10-08] promote | beschikking | Mark Backer | ee5e2b8a
-## [2026-10-08] promote | beslisser | Mark Backer | 0bf54825
-## [2026-10-08] promote | besluit | Mark Backer | e9091edd
-## [2026-10-08] promote | besluit-basisregistratie-personen | Mark Backer | a8b8028e
-## [2026-10-08] promote | besluit-burgerlijke-stand-1994 | Mark Backer | 3adc64a2
-## [2026-10-08] promote | besluit-op-de-lijkbezorging | Mark Backer | db8bf67d
-## [2026-10-08] promote | besluit-verkrijging-en-verlies-nederlanderschap | Mark Backer | 596f60dd
-## [2026-10-08] promote | besmet-stoffelijk-overschot-gemeld | Mark Backer | 987268f3
-## [2026-10-08] promote | bevolkingsadministratie-bijhouding | Mark Backer | d2957bdc
-## [2026-10-08] promote | bewijs-van-in-leven-zijn | Mark Backer | 3ab6f82f
-## [2026-10-08] promote | bewijs-van-nederlanderschap | Mark Backer | 7f4c8710
-## [2026-10-08] promote | bezorgen-stoffelijk-overschot | Mark Backer | 1b594194
-## [2026-10-08] promote | bijhouden-burgerlijke-stand | Mark Backer | 506575a4
-## [2026-10-08] promote | bijhouden-persoonsgegevens | Mark Backer | e989e0a3
-## [2026-10-08] promote | bijhoudingsgemeente | Mark Backer | 43a7eed8
-## [2026-10-08] promote | bijzetten-of-verstrooien-van-de-as | Mark Backer | b0dd23f7
-## [2026-10-08] promote | bijzettingenregister | Mark Backer | 425ed3d1
-## [2026-10-08] promote | bijzondere-begraafplaats-toestemming | Mark Backer | 303ce016
-## [2026-10-08] promote | briefadres | Mark Backer | e49d98f5
-## [2026-10-08] promote | briefadres-aanvragen | Mark Backer | 7f472604
-## [2026-10-08] promote | briefadresgever | Mark Backer | eeb8dc59
-## [2026-10-08] promote | brp-adoptie-uitschrijving | Mark Backer | b4d1184b
-## [2026-10-08] promote | brp-geheimhoudingsverzoek | Mark Backer | b14342b7
-## [2026-10-08] promote | brp-inschrijving | Mark Backer | 8952ffc5
-## [2026-10-08] promote | brp-inschrijving-buitenlandse-akte | Mark Backer | e06a04a1
-## [2026-10-08] promote | brp-inschrijving-niet-in-leven-zijnd-kind | Mark Backer | 573222cf
-## [2026-10-08] promote | brp-inzagerecht | Mark Backer | 0b9f1c38
-## [2026-10-08] promote | brp-inzagerecht-gegevensverstrekking | Mark Backer | 49d4c739
-## [2026-10-08] promote | brp-uittreksel | Mark Backer | 7ad2f63e
-## [2026-10-08] promote | brp-uittreksel-met-gezag | Mark Backer | 7c455315
-## [2026-10-08] promote | brp-wijzigingsverzoek | Mark Backer | b6193dce
-## [2026-10-08] promote | burgemeester | Mark Backer | bf39b615
-## [2026-10-08] promote | burgerlijk-wetboek-boek-1 | Mark Backer | 4534ee22
-## [2026-10-08] promote | burgerlijke-stand-diensten | Mark Backer | 4a1d5dca
-## [2026-10-08] promote | college-van-b-w | Mark Backer | 7c59518f
-## [2026-10-08] promote | crematorium | Mark Backer | b6d32d68
-## [2026-10-08] promote | crematoriumregister | Mark Backer | 498eccd6
-## [2026-10-08] promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | 65bb0a46
-## [2026-10-08] promote | doodgeboren-kind-aangifte | Mark Backer | 17f2e273
-## [2026-10-08] promote | echtscheiding-inschrijving | Mark Backer | 3f6c1542
-## [2026-10-08] promote | emigratie | Mark Backer | 430eca77
-## [2026-10-08] promote | erkenning-kind | Mark Backer | 2b788efa
-## [2026-10-08] promote | exploitatie-fysieke-leefomgeving | Mark Backer | 15f533cd
-## [2026-10-08] promote | exploiteren-van-begraafplaatsen | Mark Backer | 732cc5ee
-## [2026-10-08] promote | geboorte | Mark Backer | 151ab78f
-## [2026-10-08] promote | geboorteaangifte | Mark Backer | e4f899e3
-## [2026-10-08] promote | geboorteakte | Mark Backer | 7a64f998
-## [2026-10-08] promote | geboorteakte-levenloos-kind | Mark Backer | 8ef04529
-## [2026-10-08] promote | gedenkteken-plaatsingsvergunning | Mark Backer | 0afd4637
-## [2026-10-08] promote | gemeente | Mark Backer | 7d9b9fed
-## [2026-10-08] promote | gemeentebegrafenis | Mark Backer | 81b673d7
-## [2026-10-08] promote | gemeentelijke-lijkschouwer | Mark Backer | 7389918e
-## [2026-10-08] promote | gemeenteraad | Mark Backer | 3a326de9
-## [2026-10-08] promote | geregistreerd-partnerschap-omzetting-in-huwelijk | Mark Backer | 95eaa3d6
-## [2026-10-08] promote | geregistreerd-partnerschap-ontbinding | Mark Backer | a2d72b3c
-## [2026-10-08] promote | geregistreerd-partnerschapaangifte | Mark Backer | e3084ac9
-## [2026-10-08] promote | geslachtswijzigingsaangifte | Mark Backer | bc563b4d
-## [2026-10-08] promote | gewaarmerkte-kopie-reisdocument-aanvragen | Mark Backer | f9d9507e
-## [2026-10-08] promote | ggd | Mark Backer | d9c66669
-## [2026-10-08] promote | graf | Mark Backer | a6610efc
-## [2026-10-08] promote | graf-aanvragen | Mark Backer | a2652c78
-## [2026-10-08] promote | grafbedekking | Mark Backer | aeca56fb
-## [2026-10-08] promote | grafonderhoud | Mark Backer | 1532edbf
-## [2026-10-08] promote | grafrecht | Mark Backer | 05c16091
-## [2026-10-08] promote | grafuitgifte | Mark Backer | fb056bf9
-## [2026-10-08] promote | heffing | Mark Backer | 159a5a2f
-## [2026-10-08] promote | heffingsverordening | Mark Backer | 461117e8
-## [2026-10-08] promote | herbegraven-of-alsnog-cremeren | Mark Backer | b42bac03
-## [2026-10-08] promote | houden-naturalisatieceremonie | Mark Backer | 952c6f95
-## [2026-10-08] promote | houder-van-de-begraafplaats | Mark Backer | fa1cc4c0
-## [2026-10-08] promote | houder-van-een-plaats-van-bijzetting | Mark Backer | 62a631c2
-## [2026-10-08] promote | houder-van-het-crematorium | Mark Backer | bd883219
-## [2026-10-08] promote | houder-van-het-reisdocument | Mark Backer | 8a660fed
-## [2026-10-08] promote | houder-van-het-rijbewijs | Mark Backer | 6edabf79
-## [2026-10-08] promote | huwelijk | Mark Backer | 90dc029c
-## [2026-10-08] promote | huwelijksaangifte | Mark Backer | 71fd0d09
-## [2026-10-08] promote | identiteitskaart | Mark Backer | bdb44a6b
-## [2026-10-08] promote | ingeschreven-persoon | Mark Backer | 8a106b0c
-## [2026-10-08] promote | inhouden-reisdocument | Mark Backer | 4e7e05bc
-## [2026-10-08] promote | inschrijven-ingezetene | Mark Backer | 913d527d
-## [2026-10-08] promote | inschrijven-levenloos-geboren-kind | Mark Backer | 9bae8b8d
-## [2026-10-08] promote | inschrijven-niet-ingezetene | Mark Backer | 11bb7f09
-## [2026-10-08] promote | inschrijven-ontbinding-huwelijk-of-partnerschap | Mark Backer | 3ff8ad0f
-## [2026-10-08] promote | inschrijven-op-briefadres | Mark Backer | 22d38ed6
-## [2026-10-08] promote | kerkgenootschap | Mark Backer | 997d6fb6
-## [2026-10-08] promote | ketenpartner | Mark Backer | 3f7c24cc
-## [2026-10-08] promote | kieswet | Mark Backer | 41549786
-## [2026-10-08] promote | kiezer | Mark Backer | 8bdf8117
-## [2026-10-08] promote | kiezerspas | Mark Backer | aa0ec07d
-## [2026-10-08] promote | kostendrager | Mark Backer | ea3f4c88
-## [2026-10-08] promote | legalisatie-handtekening | Mark Backer | 89e50829
-## [2026-10-08] promote | levenloze-geboorte | Mark Backer | 46c985b7
-## [2026-10-08] promote | model-beheersverordening-begraafplaatsen | Mark Backer | 341b6d30
-## [2026-10-08] promote | naamgebruik-verzoek-aanduiding | Mark Backer | 5d84a454
-## [2026-10-08] promote | naamskeuzeverklaring | Mark Backer | cc738d34
-## [2026-10-08] promote | naamswijziging | Mark Backer | 36cdd1af
-## [2026-10-08] promote | nabestaande | Mark Backer | 289014a0
-## [2026-10-08] promote | naturalisatieceremonie | Mark Backer | ca68f42a
-## [2026-10-08] promote | naturalisatieoptie | Mark Backer | b7fba3af
-## [2026-10-08] promote | naturalisatieverzoek | Mark Backer | 6b586126
-## [2026-10-08] promote | nederlanderschap | Mark Backer | ec30a737
-## [2026-10-08] promote | nederlanderschap-diensten | Mark Backer | 52d5852d
-## [2026-10-08] promote | officiele-documenten-verstrekking | Mark Backer | 516a0d3a
-## [2026-10-08] promote | officier-van-justitie | Mark Backer | 5f350494
-## [2026-10-08] promote | onderhouden-graf | Mark Backer | cb614f7e
-## [2026-10-08] promote | onjuiste-inschrijving-op-adres-melden | Mark Backer | 5a10cc9f
-## [2026-10-08] promote | ontbinding-huwelijk-of-partnerschap | Mark Backer | 4f55536d
-## [2026-10-08] promote | ontkenning-ouderschap | Mark Backer | 2286f445
-## [2026-10-08] promote | ontleding-stoffelijk-overschot-toestemming | Mark Backer | 0f193855
-## [2026-10-08] promote | opgraven-stoffelijk-overschot | Mark Backer | 169f1e2d
-## [2026-10-08] promote | opmaken-akte-levenloos-geboren-kind | Mark Backer | 74a1b49b
-## [2026-10-08] promote | opmaken-akte-van-erkenning | Mark Backer | febb5fb8
-## [2026-10-08] promote | opmaken-akte-van-naamskeuze | Mark Backer | e3f63a5c
-## [2026-10-08] promote | opmaken-akte-van-overlijden | Mark Backer | 656bef5d
-## [2026-10-08] promote | opmaken-geboorteakte | Mark Backer | af30cf56
-## [2026-10-08] promote | optant | Mark Backer | e08e87a9
-## [2026-10-08] promote | ouder | Mark Backer | 02668f8f
-## [2026-10-08] promote | overlijden | Mark Backer | 0a1ac9dc
-## [2026-10-08] promote | overlijdensaangifte | Mark Backer | 68e327a7
-## [2026-10-08] promote | overlijdensakte | Mark Backer | 111a194f
-## [2026-10-08] promote | paspoort | Mark Backer | 7c06951b
-## [2026-10-08] promote | paspoort-tweede | Mark Backer | adae5aa2
-## [2026-10-08] promote | paspoortbesluit | Mark Backer | fbd11b55
-## [2026-10-08] promote | paspoortwet | Mark Backer | 277b2c47
-## [2026-10-08] promote | persoonsgegevens-verklaring-onder-eed-of-belofte | Mark Backer | dc1aea38
-## [2026-10-08] promote | producten-en-dienstenrealisatie-fysieke-leefomgeving | Mark Backer | 34a414da
-## [2026-10-08] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 0cfd9cc5
-## [2026-10-08] promote | producten-en-dienstenrealisatie-veiligheidsdomein | Mark Backer | 1c1a5678
-## [2026-10-08] promote | rechthebbende-op-het-graf | Mark Backer | 93bcc9cd
-## [2026-10-08] promote | regeling | Mark Backer | 1e8d7a8d
-## [2026-10-08] promote | registreren-kiesgerechtigdheid | Mark Backer | d6ddd967
-## [2026-10-08] promote | registreren-partnerschap | Mark Backer | f8a0ed4d
-## [2026-10-08] promote | reglement-rijbewijzen | Mark Backer | 98ff38c4
-## [2026-10-08] promote | reisdocument | Mark Backer | d13a95b2
-## [2026-10-08] promote | reisdocument-niet-ingezetene | Mark Backer | 32961c93
-## [2026-10-08] promote | rijbewijs | Mark Backer | 79ad11fc
-## [2026-10-08] promote | rijbewijs-aanvragen | Mark Backer | d257868f
-## [2026-10-08] promote | rijbewijs-buitenlands-omwisseling | Mark Backer | 05ae5956
-## [2026-10-08] promote | rijbewijs-verlengen | Mark Backer | 45c1de4d
-## [2026-10-08] promote | rijk | Mark Backer | 48d5a1eb
-## [2026-10-08] promote | rijkswet-op-het-nederlanderschap | Mark Backer | 57ba8699
-## [2026-10-08] promote | rni-inschrijving | Mark Backer | 645de76b
-## [2026-10-08] promote | rni-loket | Mark Backer | e554589c
-## [2026-10-08] promote | ruimen-graf | Mark Backer | 65d78b62
-## [2026-10-08] promote | schouwen-stoffelijk-overschot | Mark Backer | b6198faa
-## [2026-10-08] promote | sluiten-begraafplaats | Mark Backer | 6f8fd6d1
-## [2026-10-08] promote | stellen-andere-termijn | Mark Backer | b3649222
-## [2026-10-08] promote | stempas | Mark Backer | e8774bce
-## [2026-10-08] promote | stempas-ontvangen | Mark Backer | c5165940
-## [2026-10-08] promote | stemrecht | Mark Backer | 3cae9d67
-## [2026-10-08] promote | stoffelijk-overschot | Mark Backer | 3f4c8f8d
-## [2026-10-08] promote | toestaan-lijkbezorging | Mark Backer | fd285665
-## [2026-10-08] promote | toevoegen-latere-vermelding | Mark Backer | 6ae8e9fc
-## [2026-10-08] promote | toezichthouder-brp | Mark Backer | 2e5767a5
-## [2026-10-08] promote | treffen-maatregel-bij-besmet-stoffelijk-overschot | Mark Backer | 4709adb9
-## [2026-10-08] promote | trouwlocatie | Mark Backer | 6d0dc227
-## [2026-10-08] promote | uitbaten-begraafplaatsen-en-crematoria | Mark Backer | 2f2204af
-## [2026-10-08] promote | uitreiken-reisdocument | Mark Backer | cd95d6de
-## [2026-10-08] promote | uitreiken-rijbewijs | Mark Backer | d51d6545
-## [2026-10-08] promote | uitsluiting-van-het-kiesrecht | Mark Backer | 8b201567
-## [2026-10-08] promote | uittreksel-burgerlijke-stand | Mark Backer | f74dab85
-## [2026-10-08] promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | f3c531b5
-## [2026-10-08] promote | uitvaartondernemer | Mark Backer | 70b65b50
-## [2026-10-08] promote | uitvoeren-adresonderzoek | Mark Backer | 64c5bb67
-## [2026-10-08] promote | uitvoeren-lijkbezorging | Mark Backer | 7d5d965d
-## [2026-10-08] promote | uitvoering-fysieke-leefomgeving | Mark Backer | 43934378
-## [2026-10-08] promote | uitvoering-openbare-orde-en-veiligheid | Mark Backer | ac41f163
-## [2026-10-08] promote | uitvoering-publieksdiensten | Mark Backer | 8d21853c
-## [2026-10-08] promote | urn | Mark Backer | bf7649f5
-## [2026-10-08] promote | vaststelling-ouderschap | Mark Backer | 2c240887
-## [2026-10-08] promote | verblijfplaats | Mark Backer | b330351c
-## [2026-10-08] promote | vergunning | Mark Backer | 922a9a07
-## [2026-10-08] promote | vergunningenbeheer-publieksdiensten | Mark Backer | 76778998
-## [2026-10-08] promote | verhuismelding | Mark Backer | 3525e1d4
-## [2026-10-08] promote | verhuizing | Mark Backer | 38f01159
-## [2026-10-08] promote | verkiezingen-gerelateerde-diensten | Mark Backer | 5afbd7fb
-## [2026-10-08] promote | verklaring-omtrent-gedrag-aanvragen | Mark Backer | 559571ff
-## [2026-10-08] promote | verklaring-omtrent-het-gedrag | Mark Backer | aa287545
-## [2026-10-08] promote | verklaring-van-afstand-nederlandse-nationaliteit | Mark Backer | 82d1ae41
-## [2026-10-08] promote | verklaring-van-huwelijksbevoegdheid | Mark Backer | 3f8e3493
-## [2026-10-08] promote | verkrijging-van-het-nederlanderschap | Mark Backer | a7edd001
-## [2026-10-08] promote | verlenen-grafrecht | Mark Backer | 72ec9ba8
-## [2026-10-08] promote | verlenen-toestemming-asverstrooiing | Mark Backer | 96ac3dd5
-## [2026-10-08] promote | verlenen-toestemming-bijzondere-begraafplaats | Mark Backer | 6716de7d
-## [2026-10-08] promote | verlenen-vergunning-bijzonder-crematorium | Mark Backer | 32528ae4
-## [2026-10-08] promote | verlenen-vergunning-grafbedekking | Mark Backer | a1da3f2a
-## [2026-10-08] promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | 9eb03d25
-## [2026-10-08] promote | verlenen-verlof-tot-ontleding | Mark Backer | 2a15efce
-## [2026-10-08] promote | verlies-van-het-nederlanderschap | Mark Backer | 4a541fa3
-## [2026-10-08] promote | verlof-tot-begraven | Mark Backer | 9ccc70da
-## [2026-10-08] promote | vermissing-of-diefstal-reisdocument-doorgeven | Mark Backer | ab730abe
-## [2026-10-08] promote | vermissing-of-diefstal-rijbewijs-doorgeven | Mark Backer | 3aaa2be4
-## [2026-10-08] promote | vermissing-van-het-reisdocument | Mark Backer | 2260647a
-## [2026-10-08] promote | vermissing-van-het-rijbewijs | Mark Backer | 48822c68
-## [2026-10-08] promote | verstrekken-overzicht-gegevensverstrekkingen | Mark Backer | 745735d2
-## [2026-10-08] promote | verstrekken-persoonsgegevens | Mark Backer | 0a3b4a28
-## [2026-10-08] promote | verstrekken-stempas | Mark Backer | 55e9504f
-## [2026-10-08] promote | verstrekken-uittreksels-en-verklaringen-burgerlijke-stand | Mark Backer | afbd2fdf
-## [2026-10-08] promote | verval-van-het-grafrecht | Mark Backer | 722c94d9
-## [2026-10-08] promote | verval-van-het-reisdocument | Mark Backer | 93e57277
-## [2026-10-08] promote | vervallen-verklaren-grafrecht | Mark Backer | 438fc0da
-## [2026-10-08] promote | vervallen-verklaren-reisdocument | Mark Backer | 3a54cedf
-## [2026-10-08] promote | vervoersdocumenten-stoffelijk-overschot | Mark Backer | ea4c19cc
-## [2026-10-08] promote | verwerken-adreswijziging | Mark Backer | f35ffba1
-## [2026-10-08] promote | verwerken-buitenlands-document | Mark Backer | f0c9dc59
-## [2026-10-08] promote | verwerken-emigratie | Mark Backer | 6e08e777
-## [2026-10-08] promote | verwerken-vermissing-reisdocument | Mark Backer | be7fba8d
-## [2026-10-08] promote | verwerken-vermissing-rijbewijs | Mark Backer | 2cdb0a83
-## [2026-10-08] promote | verzoeker-om-naturalisatie | Mark Backer | e5767d77
-## [2026-10-08] promote | verzorgen-gemeentebegrafenis | Mark Backer | c7eeb78d
-## [2026-10-08] promote | vestiging-vanuit-het-buitenland | Mark Backer | f2b03b06
-## [2026-10-08] promote | vluchtelingenpaspoort | Mark Backer | 0270bb14
-## [2026-10-08] promote | volmachtbewijs-verkiezingen | Mark Backer | 570e146d
-## [2026-10-08] promote | voltrekken-huwelijk | Mark Backer | 09f68f91
-## [2026-10-08] promote | voornaamwijziging | Mark Backer | 1096515f
-## [2026-10-08] promote | vreemdelingenpaspoort | Mark Backer | 2eda9a61
-## [2026-10-08] promote | wegenverkeerswet-1994 | Mark Backer | 5018bac2
-## [2026-10-08] promote | wet-basisregistratie-personen | Mark Backer | 6860e780
-## [2026-10-08] promote | wet-justitiele-en-strafvorderlijke-gegevens | Mark Backer | 932a1439
-## [2026-10-08] promote | wet-op-de-lijkbezorging | Mark Backer | 520c04c1
-## [2026-10-08] promote | wet-op-de-nederlandse-identiteitskaart | Mark Backer | 4d110273
-## [2026-10-08] promote | wijzigen-geslachtsvermelding | Mark Backer | 239b52b5
-## [2026-10-08] promote | wijzigen-identificatienummers | Mark Backer | f1e5103c
-## [2026-10-08] promote | wijzigen-naamgebruik | Mark Backer | e9e6711a
-## [2026-10-08] promote | zakenpaspoort | Mark Backer | b70e0c19
-## [2026-10-08] promote | aangever | Mark Backer | 511e2aa8
-## [2026-10-08] promote | aangifte-vertrek-buitenland | Mark Backer | 0a2e14d5
-## [2026-10-08] promote | aanvrager-van-de-verklaring-omtrent-het-gedrag | Mark Backer | 076d2359
-## [2026-10-08] promote | achternaamwijziging | Mark Backer | d73bc52a
-## [2026-10-08] promote | adoptie | Mark Backer | 089bfab2
-## [2026-10-08] promote | adoptie-aangifte | Mark Backer | 8606f1df
-## [2026-10-08] promote | adviseur | Mark Backer | 80e84aa8
-## [2026-10-08] promote | afgeven-laissez-passer | Mark Backer | ce9e1cae
-## [2026-10-08] promote | afgeven-verklaring-omtrent-het-gedrag | Mark Backer | e7613e7e
-## [2026-10-08] promote | akte-van-de-burgerlijke-stand | Mark Backer | 3d283149
-## [2026-10-08] promote | ambtenaar-burgerlijke-stand-aanvragen | Mark Backer | 7fdfaecc
-## [2026-10-08] promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 5c026371
-## [2026-10-08] promote | arts | Mark Backer | f3d0dc5a
-## [2026-10-08] promote | asverstrooiing | Mark Backer | a63ac607
-## [2026-10-08] promote | begraafplaats | Mark Backer | 26f89662
-## [2026-10-08] promote | begraafplaatsregister | Mark Backer | 8f914d19
-## [2026-10-08] promote | begraven-en-cremeren-stoffelijk-overschot | Mark Backer | 97e58817
-## [2026-10-08] promote | behandelen-aanvraag-omwisseling-buitenlands-rijbewijs | Mark Backer | d4afbe71
-## [2026-10-08] promote | behandelen-aanvraag-reisdocument | Mark Backer | e09af7eb
-## [2026-10-08] promote | behandelen-aanvraag-reisdocument-niet-ingezetene | Mark Backer | 7142f24e
-## [2026-10-08] promote | behandelen-aanvraag-rijbewijs | Mark Backer | 1f3e4299
-## [2026-10-08] promote | behandelen-aanvraag-verklaring-omtrent-het-gedrag | Mark Backer | ae8ba168
-## [2026-10-08] promote | behandelen-naturalisatieverzoek | Mark Backer | b4617ebd
-## [2026-10-08] promote | behandelen-optieverklaring | Mark Backer | e09303da
-## [2026-10-08] promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 46606789
-## [2026-10-08] promote | behandelen-verklaring-van-afstand | Mark Backer | f8119da8
-## [2026-10-08] promote | behandelen-verzoek-om-correctie | Mark Backer | 40839198
-## [2026-10-08] promote | behandelen-verzoek-om-geheimhouding | Mark Backer | e07f0084
-## [2026-10-08] promote | behandelen-verzoek-om-kiezerspas | Mark Backer | 92d89d98
-## [2026-10-08] promote | behandelen-verzoek-om-verwijdering-van-gegevens | Mark Backer | a46cdf36
-## [2026-10-08] promote | behandelen-verzoek-om-volmacht | Mark Backer | ab85fbe9
-## [2026-10-08] promote | beheerder-van-de-begraafplaats | Mark Backer | 4c3f379c
-## [2026-10-08] promote | beheren-begraafplaatsen | Mark Backer | 6bbc969f
-## [2026-10-08] promote | beheren-crematoria | Mark Backer | c7ffced3
-## [2026-10-08] promote | beheren-grafrechten | Mark Backer | 56bbebb1
-## [2026-10-08] promote | beheren-graven | Mark Backer | df71ad33
-## [2026-10-08] promote | beheren-nederlanderschap | Mark Backer | 75352916
-## [2026-10-08] promote | beheren-reisdocumenten | Mark Backer | 5b65a649
-## [2026-10-08] promote | beheren-rijbewijzen | Mark Backer | 43c789c3
-## [2026-10-08] promote | beheren-stempassen | Mark Backer | 6ecbd786
-## [2026-10-08] promote | beschikking | Mark Backer | 7ce4fb20
-## [2026-10-08] promote | beslisser | Mark Backer | de6b6cfd
-## [2026-10-08] promote | besluit | Mark Backer | ffacdd62
-## [2026-10-08] promote | besluit-basisregistratie-personen | Mark Backer | 3483aa97
-## [2026-10-08] promote | besluit-burgerlijke-stand-1994 | Mark Backer | e9fa283f
-## [2026-10-08] promote | besluit-op-de-lijkbezorging | Mark Backer | 08bed3f3
-## [2026-10-08] promote | besluit-verkrijging-en-verlies-nederlanderschap | Mark Backer | 26dc5c6f
-## [2026-10-08] promote | besmet-stoffelijk-overschot-gemeld | Mark Backer | ea49b21e
-## [2026-10-08] promote | bevolkingsadministratie-bijhouding | Mark Backer | 47bccd70
-## [2026-10-08] promote | bewijs-van-in-leven-zijn | Mark Backer | 78dfaca2
-## [2026-10-08] promote | bewijs-van-nederlanderschap | Mark Backer | 76be2307
-## [2026-10-08] promote | bezorgen-stoffelijk-overschot | Mark Backer | 4c9e3cb3
-## [2026-10-08] promote | bijhouden-burgerlijke-stand | Mark Backer | 19de3870
-## [2026-10-08] promote | bijhouden-persoonsgegevens | Mark Backer | d6bf6d4c
-## [2026-10-08] promote | bijhoudingsgemeente | Mark Backer | 44796ad1
-## [2026-10-08] promote | bijzettingenregister | Mark Backer | 110e7f3e
-## [2026-10-08] promote | bijzondere-begraafplaats-toestemming | Mark Backer | 176180f5
-## [2026-10-08] promote | briefadres | Mark Backer | 579d0b3b
-## [2026-10-08] promote | briefadres-aanvragen | Mark Backer | cd4f1b54
-## [2026-10-08] promote | briefadresgever | Mark Backer | 82fc94eb
-## [2026-10-08] promote | brp-adoptie-uitschrijving | Mark Backer | 882c9c0b
-## [2026-10-08] promote | brp-geheimhoudingsverzoek | Mark Backer | 1ce509f0
-## [2026-10-08] promote | brp-inschrijving | Mark Backer | 02c3a830
-## [2026-10-08] promote | brp-inschrijving-buitenlandse-akte | Mark Backer | 730241d9
-## [2026-10-08] promote | brp-inschrijving-niet-in-leven-zijnd-kind | Mark Backer | 0ef99667
-## [2026-10-08] promote | brp-inzagerecht | Mark Backer | bba4e793
-## [2026-10-08] promote | brp-inzagerecht-gegevensverstrekking | Mark Backer | 532a62ad
-## [2026-10-08] promote | brp-uittreksel | Mark Backer | c3731935
-## [2026-10-08] promote | brp-uittreksel-met-gezag | Mark Backer | 1b3630f9
-## [2026-10-08] promote | brp-wijzigingsverzoek | Mark Backer | 7b2e6b42
-## [2026-10-08] promote | burgemeester | Mark Backer | ebcfb1c5
-## [2026-10-08] promote | burgerlijk-wetboek-boek-1 | Mark Backer | c44e6630
-## [2026-10-08] promote | burgerlijke-stand-diensten | Mark Backer | bdd01180
-## [2026-10-08] promote | college-van-b-w | Mark Backer | a794a542
-## [2026-10-08] promote | crematorium | Mark Backer | fb947fd3
-## [2026-10-08] promote | crematoriumregister | Mark Backer | ca8d0ad4
-## [2026-10-08] promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | e64a58e0
-## [2026-10-08] promote | doodgeboren-kind-aangifte | Mark Backer | e3f3b362
-## [2026-10-08] promote | echtscheiding-inschrijving | Mark Backer | 8a7f142c
-## [2026-10-08] promote | emigratie | Mark Backer | 560e79e0
-## [2026-10-08] promote | erkenning-kind | Mark Backer | 44ce7252
-## [2026-10-08] promote | exploitatie-fysieke-leefomgeving | Mark Backer | 8c77a623
-## [2026-10-08] promote | exploiteren-van-begraafplaatsen | Mark Backer | 729d3b0c
-## [2026-10-08] promote | geboorte | Mark Backer | c68c81ac
-## [2026-10-08] promote | geboorteaangifte | Mark Backer | f02f4bff
-## [2026-10-08] promote | geboorteakte | Mark Backer | f34823c3
-## [2026-10-08] promote | geboorteakte-levenloos-kind | Mark Backer | d5855890
-## [2026-10-08] promote | gedenkteken-plaatsingsvergunning | Mark Backer | de467569
-## [2026-10-08] promote | gemeente | Mark Backer | 6d747552
-## [2026-10-08] promote | gemeentebegrafenis | Mark Backer | 3abd1ac5
-## [2026-10-08] promote | gemeentelijke-lijkschouwer | Mark Backer | 1ecc2b45
-## [2026-10-08] promote | gemeenteraad | Mark Backer | ab158614
-## [2026-10-08] promote | geregistreerd-partnerschap-omzetting-in-huwelijk | Mark Backer | a1116cc8
-## [2026-10-08] promote | geregistreerd-partnerschap-ontbinding | Mark Backer | 1679a099
-## [2026-10-08] promote | geregistreerd-partnerschapaangifte | Mark Backer | 4f1cf6f2
-## [2026-10-08] promote | geslachtswijzigingsaangifte | Mark Backer | f95dd193
-## [2026-10-08] promote | gewaarmerkte-kopie-reisdocument-aanvragen | Mark Backer | d9cf896d
-## [2026-10-08] promote | ggd | Mark Backer | e6ba4ee6
-## [2026-10-08] promote | graf | Mark Backer | a5fe8bc3
-## [2026-10-08] promote | graf-aanvragen | Mark Backer | 60e36a4b
-## [2026-10-08] promote | grafbedekking | Mark Backer | efc1c99c
-## [2026-10-08] promote | grafonderhoud | Mark Backer | 2d368a46
-## [2026-10-08] promote | grafrecht | Mark Backer | 600a2510
-## [2026-10-08] promote | grafuitgifte | Mark Backer | b992efa2
-## [2026-10-08] promote | heffing | Mark Backer | 79f387d5
-## [2026-10-08] promote | heffingsverordening | Mark Backer | 7b89528a
-## [2026-10-08] promote | herbegraven-of-alsnog-cremeren | Mark Backer | 8f22ab3b
-## [2026-10-08] promote | houder-van-de-begraafplaats | Mark Backer | b4b7bc4d
-## [2026-10-08] promote | houder-van-een-plaats-van-bijzetting | Mark Backer | 08185338
-## [2026-10-08] promote | houder-van-het-crematorium | Mark Backer | a4c8e84d
-## [2026-10-08] promote | houder-van-het-reisdocument | Mark Backer | 3f43215f
-## [2026-10-08] promote | houder-van-het-rijbewijs | Mark Backer | 2cb4fccc
-## [2026-10-08] promote | huwelijk | Mark Backer | 70497d9d
-## [2026-10-08] promote | huwelijksaangifte | Mark Backer | cea2c50f
-## [2026-10-08] promote | identiteitskaart | Mark Backer | 7771a4b4
-## [2026-10-08] promote | ingeschreven-persoon | Mark Backer | b055029d
-## [2026-10-08] promote | inhouden-reisdocument | Mark Backer | 7929da79
-## [2026-10-08] promote | inlevering-van-het-reisdocument | Mark Backer | 06b04da6
-## [2026-10-08] promote | inschrijven-ingezetene | Mark Backer | 2a594706
-## [2026-10-08] promote | inschrijven-levenloos-geboren-kind | Mark Backer | 1c3db8b6
-## [2026-10-08] promote | inschrijven-niet-ingezetene | Mark Backer | 7494625e
-## [2026-10-08] promote | inschrijven-ontbinding-huwelijk-of-partnerschap | Mark Backer | dd9c943b
-## [2026-10-08] promote | inschrijven-op-briefadres | Mark Backer | d10d0132
-## [2026-10-08] promote | kerkgenootschap | Mark Backer | 8f934b6c
-## [2026-10-08] promote | ketenpartner | Mark Backer | 8d73ec12
-## [2026-10-08] promote | kieswet | Mark Backer | f95d9089
-## [2026-10-08] promote | kiezer | Mark Backer | 2781408c
-## [2026-10-08] promote | kiezerspas | Mark Backer | 662b0217
-## [2026-10-08] promote | kostendrager | Mark Backer | db628fd5
-## [2026-10-08] promote | legalisatie-handtekening | Mark Backer | 801f5111
-## [2026-10-08] promote | levenloze-geboorte | Mark Backer | d7e7031c
-## [2026-10-08] promote | model-beheersverordening-begraafplaatsen | Mark Backer | 400bcc04
-## [2026-10-08] promote | naamgebruik-verzoek-aanduiding | Mark Backer | 1cda4262
-## [2026-10-08] promote | naamskeuzeverklaring | Mark Backer | ad95bff7
-## [2026-10-08] promote | naamswijziging | Mark Backer | f4080815
-## [2026-10-08] promote | nabestaande | Mark Backer | 3015797f
-## [2026-10-08] promote | naturalisatieceremonie | Mark Backer | 8284f0e5
-## [2026-10-08] promote | naturalisatieoptie | Mark Backer | 74350b01
-## [2026-10-08] promote | naturalisatieverzoek | Mark Backer | 5a98dd4e
-## [2026-10-08] promote | nederlanderschap | Mark Backer | ec0225a4
-## [2026-10-08] promote | nederlanderschap-diensten | Mark Backer | 024698e0
-## [2026-10-08] promote | officiele-documenten-verstrekking | Mark Backer | 92c38d01
-## [2026-10-08] promote | officier-van-justitie | Mark Backer | c971d47d
-## [2026-10-08] promote | onderhouden-graf | Mark Backer | dfe556f9
-## [2026-10-08] promote | onjuiste-inschrijving-op-adres-melden | Mark Backer | 792fbc17
-## [2026-10-08] promote | ontbinding-huwelijk-of-partnerschap | Mark Backer | 0736e045
-## [2026-10-08] promote | ontkenning-ouderschap | Mark Backer | f6e68a5b
-## [2026-10-08] promote | ontleding-stoffelijk-overschot-toestemming | Mark Backer | 1e759596
-## [2026-10-08] promote | opgraven-stoffelijk-overschot | Mark Backer | b7cc7f22
-## [2026-10-08] promote | opmaken-akte-levenloos-geboren-kind | Mark Backer | 9d215b9e
-## [2026-10-08] promote | opmaken-akte-van-erkenning | Mark Backer | 9252d97f
-## [2026-10-08] promote | opmaken-akte-van-naamskeuze | Mark Backer | 07efc2f7
-## [2026-10-08] promote | opmaken-akte-van-overlijden | Mark Backer | a3f595b2
-## [2026-10-08] promote | opmaken-geboorteakte | Mark Backer | 09604166
-## [2026-10-08] promote | optant | Mark Backer | b2ef2873
-## [2026-10-08] promote | ouder | Mark Backer | 502c4f47
-## [2026-10-08] promote | overlijden | Mark Backer | ddd44b38
-## [2026-10-08] promote | overlijdensaangifte | Mark Backer | 59375e4e
-## [2026-10-08] promote | overlijdensakte | Mark Backer | 76504e4b
-## [2026-10-08] promote | paspoort | Mark Backer | 8bd540c9
-## [2026-10-08] promote | paspoort-tweede | Mark Backer | 49b549a6
-## [2026-10-08] promote | paspoortbesluit | Mark Backer | 58fb5df1
-## [2026-10-08] promote | paspoortwet | Mark Backer | 870290c9
-## [2026-10-08] promote | persoonsgegevens-verklaring-onder-eed-of-belofte | Mark Backer | b355aa31
-## [2026-10-08] promote | producten-en-dienstenrealisatie-fysieke-leefomgeving | Mark Backer | d6b6d2cc
-## [2026-10-08] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 0129e138
-## [2026-10-08] promote | producten-en-dienstenrealisatie-veiligheidsdomein | Mark Backer | 0ffcb6bb
-## [2026-10-08] promote | rechthebbende-op-het-graf | Mark Backer | 48253516
-## [2026-10-08] promote | regeling | Mark Backer | 3dd9a35a
-## [2026-10-08] promote | registreren-kiesgerechtigdheid | Mark Backer | e5c1d817
-## [2026-10-08] promote | registreren-partnerschap | Mark Backer | 17e2fe6e
-## [2026-10-08] promote | reglement-rijbewijzen | Mark Backer | cafcb69b
-## [2026-10-08] promote | reisdocument | Mark Backer | 9b56c683
-## [2026-10-08] promote | reisdocument-niet-ingezetene | Mark Backer | a1401861
-## [2026-10-08] promote | rijbewijs | Mark Backer | 8d378f51
-## [2026-10-08] promote | rijbewijs-aanvragen | Mark Backer | d8a8d547
-## [2026-10-08] promote | rijbewijs-buitenlands-omwisseling | Mark Backer | 96c5d9ed
-## [2026-10-08] promote | rijbewijs-verlengen | Mark Backer | de1d64a6
-## [2026-10-08] promote | rijk | Mark Backer | 4248be9d
-## [2026-10-08] promote | rijkswet-op-het-nederlanderschap | Mark Backer | bfa9152a
-## [2026-10-08] promote | rni-inschrijving | Mark Backer | cff439e4
-## [2026-10-08] promote | rni-loket | Mark Backer | 3325ecea
-## [2026-10-08] promote | ruimen-graf | Mark Backer | 88b11d92
-## [2026-10-08] promote | schouwen-stoffelijk-overschot | Mark Backer | dfd25d60
-## [2026-10-08] promote | sluiten-begraafplaats | Mark Backer | a16df5ae
-## [2026-10-08] promote | stellen-andere-termijn | Mark Backer | 31531a71
-## [2026-10-08] promote | stempas | Mark Backer | 5fafe008
-## [2026-10-08] promote | stempas-ontvangen | Mark Backer | c18f677c
-## [2026-10-08] promote | stemrecht | Mark Backer | a8df03ec
-## [2026-10-08] promote | stoffelijk-overschot | Mark Backer | 91b69d95
-## [2026-10-08] promote | toestaan-lijkbezorging | Mark Backer | dd3c8557
-## [2026-10-08] promote | toevoegen-latere-vermelding | Mark Backer | 59746fd6
-## [2026-10-08] promote | toezichthouder-brp | Mark Backer | dee62646
-## [2026-10-08] promote | treffen-maatregel-bij-besmet-stoffelijk-overschot | Mark Backer | 3aa40fe2
-## [2026-10-08] promote | trouwlocatie | Mark Backer | 8482f19c
-## [2026-10-08] promote | uitbaten-begraafplaatsen-en-crematoria | Mark Backer | 28ca7356
-## [2026-10-08] promote | uitsluiting-van-het-kiesrecht | Mark Backer | 071d20af
-## [2026-10-08] promote | uittreksel-burgerlijke-stand | Mark Backer | f2449893
-## [2026-10-08] promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | b10ee42f
-## [2026-10-08] promote | uitvaartondernemer | Mark Backer | e8c89138
-## [2026-10-08] promote | uitvoeren-adresonderzoek | Mark Backer | 29b99b7b
-## [2026-10-08] promote | uitvoeren-lijkbezorging | Mark Backer | 86aecd08
-## [2026-10-08] promote | uitvoering-fysieke-leefomgeving | Mark Backer | 4cf231b3
-## [2026-10-08] promote | uitvoering-openbare-orde-en-veiligheid | Mark Backer | 0a09adf5
-## [2026-10-08] promote | uitvoering-publieksdiensten | Mark Backer | 8d6b48ba
-## [2026-10-08] promote | urn | Mark Backer | 4c6ac2bf
-## [2026-10-08] promote | vaststelling-ouderschap | Mark Backer | efa87120
-## [2026-10-08] promote | verblijfplaats | Mark Backer | 9a8a878a
-## [2026-10-08] promote | vergunning | Mark Backer | cb3a5c51
-## [2026-10-08] promote | vergunningenbeheer-publieksdiensten | Mark Backer | c8f106b0
-## [2026-10-08] promote | verhuismelding | Mark Backer | fd4824cf
-## [2026-10-08] promote | verhuizing | Mark Backer | d6eb8b7f
-## [2026-10-08] promote | verkiezingen-gerelateerde-diensten | Mark Backer | 916ccaf4
-## [2026-10-08] promote | verklaring-omtrent-gedrag-aanvragen | Mark Backer | 6f0ad7f0
-## [2026-10-08] promote | verklaring-omtrent-het-gedrag | Mark Backer | 51e2f6db
-## [2026-10-08] promote | verklaring-van-afstand-nederlandse-nationaliteit | Mark Backer | d0c1536f
-## [2026-10-08] promote | verklaring-van-huwelijksbevoegdheid | Mark Backer | d73e3c96
-## [2026-10-08] promote | verkrijging-van-het-nederlanderschap | Mark Backer | dc01e67a
-## [2026-10-08] promote | verlenen-grafrecht | Mark Backer | f557515e
-## [2026-10-08] promote | verlenen-toestemming-asverstrooiing | Mark Backer | a500de81
-## [2026-10-08] promote | verlenen-toestemming-bijzondere-begraafplaats | Mark Backer | 8e0a9dcd
-## [2026-10-08] promote | verlenen-vergunning-bijzonder-crematorium | Mark Backer | 79eb410e
-## [2026-10-08] promote | verlenen-vergunning-grafbedekking | Mark Backer | 7d957612
-## [2026-10-08] promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | c9dea4c4
-## [2026-10-08] promote | verlenen-verlof-tot-ontleding | Mark Backer | 827066aa
-## [2026-10-08] promote | verlies-van-het-nederlanderschap | Mark Backer | 1a96dac8
-## [2026-10-08] promote | verlof-tot-begraven | Mark Backer | 6c74b66b
-## [2026-10-08] promote | vermissing-of-diefstal-reisdocument-doorgeven | Mark Backer | f9d4a649
-## [2026-10-08] promote | vermissing-of-diefstal-rijbewijs-doorgeven | Mark Backer | ee610c7c
-## [2026-10-08] promote | vermissing-van-het-reisdocument | Mark Backer | 689efcaf
-## [2026-10-08] promote | vermissing-van-het-rijbewijs | Mark Backer | c8052023
-## [2026-10-08] promote | verstrekken-overzicht-gegevensverstrekkingen | Mark Backer | ba020bf1
-## [2026-10-08] promote | verstrekken-persoonsgegevens | Mark Backer | 38c2889d
-## [2026-10-08] promote | verstrekken-stempas | Mark Backer | e35930e0
-## [2026-10-08] promote | verstrekken-uittreksels-en-verklaringen-burgerlijke-stand | Mark Backer | a8bde0a5
-## [2026-10-08] promote | verval-van-het-grafrecht | Mark Backer | c638fdc2
-## [2026-10-08] promote | verval-van-het-reisdocument | Mark Backer | a6a4a2df
-## [2026-10-08] promote | vervallen-verklaren-grafrecht | Mark Backer | 6274c4c8
-## [2026-10-08] promote | vervoersdocumenten-stoffelijk-overschot | Mark Backer | 34c9115b
-## [2026-10-08] promote | verwerken-adreswijziging | Mark Backer | da674821
-## [2026-10-08] promote | verwerken-buitenlands-document | Mark Backer | 5d26cede
-## [2026-10-08] promote | verwerken-emigratie | Mark Backer | 8e47b3a9
-## [2026-10-08] promote | verwerken-vermissing-reisdocument | Mark Backer | bc1858d3
-## [2026-10-08] promote | verwerken-vermissing-rijbewijs | Mark Backer | 5993c795
-## [2026-10-08] promote | verzoeker-om-naturalisatie | Mark Backer | 14ea8bed
-## [2026-10-08] promote | verzorgen-gemeentebegrafenis | Mark Backer | 91cd194f
-## [2026-10-08] promote | vestiging-vanuit-het-buitenland | Mark Backer | 241a36e0
-## [2026-10-08] promote | vluchtelingenpaspoort | Mark Backer | c8b30f8c
-## [2026-10-08] promote | volmachtbewijs-verkiezingen | Mark Backer | 3cd43fce
-## [2026-10-08] promote | voltrekken-huwelijk | Mark Backer | d4e827fc
-## [2026-10-08] promote | voornaamwijziging | Mark Backer | f8423db3
-## [2026-10-08] promote | vreemdelingenpaspoort | Mark Backer | c5c0a1bd
-## [2026-10-08] promote | wegenverkeerswet-1994 | Mark Backer | ffd1457c
-## [2026-10-08] promote | wet-basisregistratie-personen | Mark Backer | 09174812
-## [2026-10-08] promote | wet-justitiele-en-strafvorderlijke-gegevens | Mark Backer | 9ff07d6a
-## [2026-10-08] promote | wet-op-de-lijkbezorging | Mark Backer | d01f5128
-## [2026-10-08] promote | wet-op-de-nederlandse-identiteitskaart | Mark Backer | 3027d415
-## [2026-10-08] promote | wijzigen-geslachtsvermelding | Mark Backer | 45fc8b07
-## [2026-10-08] promote | wijzigen-identificatienummers | Mark Backer | 9bf7c4a6
-## [2026-10-08] promote | wijzigen-naamgebruik | Mark Backer | 265a8f6f
-## [2026-10-08] promote | zakenpaspoort | Mark Backer | 8b520f89
-## [2026-10-08] promote | behandelen-verzoek-om-correctie | Mark Backer | b576c5d5
-## [2026-10-08] promote | behandelen-verzoek-om-geheimhouding | Mark Backer | ebd8abcc
-## [2026-10-08] promote | behandelen-verzoek-om-verwijdering-van-gegevens | Mark Backer | faebbee0
-## [2026-10-08] promote | besluit-basisregistratie-personen | Mark Backer | bb5e301b
-## [2026-10-08] promote | besluit-op-de-lijkbezorging | Mark Backer | 74eaa3c4
-## [2026-10-08] promote | bijhoudingsgemeente | Mark Backer | e0c3c0f4
-## [2026-10-08] promote | briefadres | Mark Backer | e527f84e
-## [2026-10-08] promote | briefadresgever | Mark Backer | c7bb29aa
-## [2026-10-08] promote | emigratie | Mark Backer | d727f72d
-## [2026-10-08] promote | graf-aanvragen | Mark Backer | 5e84fce2
-## [2026-10-08] promote | grafuitgifte | Mark Backer | 167c8a10
-## [2026-10-08] promote | herbegraven-of-alsnog-cremeren | Mark Backer | 24d69575
-## [2026-10-08] promote | houder-van-de-begraafplaats | Mark Backer | 9dc52e27
-## [2026-10-08] promote | ingeschreven-persoon | Mark Backer | dbac538a
-## [2026-10-08] promote | inschrijven-niet-ingezetene | Mark Backer | 47b4ab85
-## [2026-10-08] promote | inschrijven-op-briefadres | Mark Backer | d3413f4c
-## [2026-10-08] promote | onjuiste-inschrijving-op-adres-melden | Mark Backer | 2cbd5a27
-## [2026-10-08] promote | reglement-rijbewijzen | Mark Backer | e7d0129b
-## [2026-10-08] promote | rni-loket | Mark Backer | 6c6a70a4
-## [2026-10-08] promote | toezichthouder-brp | Mark Backer | e222ce84
-## [2026-10-08] promote | uitvoeren-adresonderzoek | Mark Backer | fea45d18
-## [2026-10-08] promote | verhuizing | Mark Backer | 103d4c46
-## [2026-10-08] promote | verwerken-adreswijziging | Mark Backer | fd79b3c4
-## [2026-10-08] promote | vestiging-vanuit-het-buitenland | Mark Backer | 76de61f7
-## [2026-10-08] promote | wegenverkeerswet-1994 | Mark Backer | 3c51f5d4
-## [2026-10-08] promote | wet-basisregistratie-personen | Mark Backer | c40ca496
-## [2026-10-08] promote | wet-op-de-lijkbezorging | Mark Backer | 6189ceaf
-## [2026-10-08] promote | wijzigen-naamgebruik | Mark Backer | 00f7fb30
-## [2026-10-08] promote | asverstrooiing | Mark Backer | c7e182e1
-## [2026-10-08] promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 13f906d6
-## [2026-10-08] promote | beheren-graven | Mark Backer | 0712a6f8
-## [2026-10-08] promote | beslisser | Mark Backer | 626eaaf0
-## [2026-10-08] promote | exploiteren-van-begraafplaatsen | Mark Backer | 6268172c
-## [2026-10-08] promote | gedenkteken-plaatsingsvergunning | Mark Backer | ab939a7e
-## [2026-10-08] promote | graf | Mark Backer | be9acff2
-## [2026-10-08] promote | grafonderhoud | Mark Backer | f3bb0f67
-## [2026-10-08] promote | houder-van-de-begraafplaats | Mark Backer | 88f47658
-## [2026-10-08] promote | model-apv | Mark Backer | 29d2e8b0
-## [2026-10-08] promote | model-beheersverordening-begraafplaatsen | Mark Backer | 9aa70080
-## [2026-10-08] promote | nabestaande | Mark Backer | 100efbe5
-## [2026-10-08] promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | fa7235db
-## [2026-10-08] promote | rechthebbende-op-het-graf | Mark Backer | dea98a23
-## [2026-10-08] promote | toestaan-lijkbezorging | Mark Backer | fd388f3b
-## [2026-10-08] promote | urn | Mark Backer | ef6be80c
-## [2026-10-08] promote | vergunning | Mark Backer | fb5b4933
-## [2026-10-08] promote | asverstrooiing | Mark Backer | b61de177
-## [2026-10-08] promote | begraafplaats | Mark Backer | 93225858
-## [2026-10-08] promote | beheren-grafrechten | Mark Backer | d21cfc86
-## [2026-10-08] promote | gedenkteken-plaatsingsvergunning | Mark Backer | 641fc287
-## [2026-10-08] promote | rechthebbende-op-het-graf | Mark Backer | 64a3da1b
-## [2026-10-08] promote | verlenen-grafrecht | Mark Backer | a1555daa
-## [2026-10-08] promote | verlof-tot-begraven | Mark Backer | e308314a
+Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen of verwijderen; de pre-commit-hook weigert dat (`llmwiki precommit log-alleen-aanvullen`).
+
+| Datum | Actie | Id | Door | Hash |
+|---|---|---|---|---|
+| 2026-09-29 | promote | overlijden | Mark Backer | b48dbcac |
+| 2026-09-29 | promote | lijk | Mark Backer | d40d807e |
+| 2026-09-29 | promote | lijkschouwing | Mark Backer | 77a2b0ac |
+| 2026-09-29 | promote | nader-onderzoek-naar-de-doodsoorzaak | Mark Backer | c46c9877 |
+| 2026-09-29 | promote | gemeentelijke-lijkschouwer | Mark Backer | b5a27ca0 |
+| 2026-09-29 | promote | verklaring-van-overlijden | Mark Backer | 1acad91d |
+| 2026-09-29 | promote | verklaring-van-geen-bezwaar | Mark Backer | 40182545 |
+| 2026-09-29 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 51e29f81 |
+| 2026-09-29 | promote | afgeven-verlof-tot-begraving-of-crematie | Mark Backer | c91bf800 |
+| 2026-09-29 | promote | verlof-tot-begraving-of-crematie | Mark Backer | 3d5bec0d |
+| 2026-09-29 | promote | besluit-andere-termijn-lijkbezorging | Mark Backer | 9b1fbb63 |
+| 2026-09-29 | promote | lijkbezorging | Mark Backer | 5f603f21 |
+| 2026-09-29 | promote | begraving | Mark Backer | 52ec5fcb |
+| 2026-09-29 | promote | crematie | Mark Backer | dc5ad074 |
+| 2026-09-29 | promote | verlof-tot-ontleding | Mark Backer | 85a55824 |
+| 2026-09-29 | promote | opdrachtgever-van-de-uitvaart | Mark Backer | 26e44f81 |
+| 2026-09-29 | promote | lijkbezorging-door-de-burgemeester | Mark Backer | 80c4a26b |
+| 2026-09-29 | promote | gemeentebegrafenis | Mark Backer | dcde00c6 |
+| 2026-09-29 | promote | kostenverhaal-lijkbezorging | Mark Backer | 0b486b8b |
+| 2026-09-29 | promote | maatregel-bij-besmet-lijk | Mark Backer | 52c6db4e |
+| 2026-09-29 | promote | begraafplaats | Mark Backer | 3faeac8e |
+| 2026-09-29 | promote | houder-van-de-begraafplaats | Mark Backer | 33f7eeba |
+| 2026-09-29 | promote | rechthebbende-op-het-graf | Mark Backer | 1f4e89a5 |
+| 2026-09-29 | promote | uitgifte-van-een-graf | Mark Backer | c53a3970 |
+| 2026-09-29 | promote | verlenging-van-het-grafrecht | Mark Backer | a45e34d8 |
+| 2026-09-29 | promote | einde-termijn-grafrecht | Mark Backer | ead3f420 |
+| 2026-09-29 | promote | einde-uitgiftetermijn-algemeen-graf | Mark Backer | 3a71d525 |
+| 2026-09-29 | promote | verklaring-van-verwaarlozing | Mark Backer | f34eb70a |
+| 2026-09-29 | promote | opgraving | Mark Backer | 92b2b297 |
+| 2026-09-29 | promote | vergunning-tot-opgraving | Mark Backer | 9f1ddcb3 |
+| 2026-09-29 | promote | ruimen-van-graven | Mark Backer | f037f3c8 |
+| 2026-09-29 | promote | onderhoud-van-graven | Mark Backer | e16f2fc8 |
+| 2026-09-29 | promote | besluit-tot-sluiting-van-een-begraafplaats | Mark Backer | 99c30d7a |
+| 2026-09-29 | promote | aanwijzing-van-grond-voor-een-bijzondere-begraafplaats | Mark Backer | ea9da832 |
+| 2026-09-29 | promote | toestemming-ingebruikneming-bijzondere-begraafplaats | Mark Backer | 1a3b6d5d |
+| 2026-09-29 | promote | kerkgenootschap | Mark Backer | c8b7eef7 |
+| 2026-09-29 | promote | crematorium | Mark Backer | c74146e9 |
+| 2026-09-29 | promote | vergunning-bijzonder-crematorium | Mark Backer | 8d2ac8d0 |
+| 2026-09-29 | promote | houder-van-het-crematorium | Mark Backer | 4f19204d |
+| 2026-09-29 | promote | asbus | Mark Backer | 67194e83 |
+| 2026-09-29 | promote | bijzetting-van-een-asbus | Mark Backer | 5141daa7 |
+| 2026-09-29 | promote | verstrooiing-van-as | Mark Backer | c35f16ed |
+| 2026-09-29 | promote | bewaarplaats-voor-asbussen | Mark Backer | 77fc2975 |
+| 2026-09-29 | promote | vergunning-bewaarplaats-voor-asbussen | Mark Backer | c50fc340 |
+| 2026-09-29 | promote | verstrooiingsterrein | Mark Backer | fb1bc81b |
+| 2026-09-29 | promote | vergunning-verstrooiingsterrein | Mark Backer | ff4c2002 |
+| 2026-09-29 | promote | nabestaande | Mark Backer | 5d2c4c44 |
+| 2026-09-29 | promote | burgemeester | Mark Backer | 783ad0b0 |
+| 2026-09-29 | promote | burgemeester-en-wethouders | Mark Backer | d7528ae0 |
+| 2026-09-29 | promote | gemeenteraad | Mark Backer | 996e000d |
+| 2026-09-29 | promote | officier-van-justitie | Mark Backer | e783c6f6 |
+| 2026-09-29 | promote | ggd | Mark Backer | 1060bc2e |
+| 2026-09-30 | promote | lijk | Mark Backer | 74fa8e4e |
+| 2026-09-30 | promote | urn | Mark Backer | b72d1980 |
+| 2026-09-30 | promote | verklaring-van-overlijden | Mark Backer | 3992ff4a |
+| 2026-09-30 | promote | verklaring-van-geen-bezwaar | Mark Backer | db3c0270 |
+| 2026-09-30 | promote | gemeentebegrafenis | Mark Backer | 38c04e49 |
+| 2026-09-30 | promote | begraafplaats | Mark Backer | b372c5d7 |
+| 2026-09-30 | promote | crematorium | Mark Backer | 3b481cea |
+| 2026-09-30 | promote | plaats-van-bijzetting | Mark Backer | a4ae26e9 |
+| 2026-09-30 | promote | verval-van-het-grafrecht | Mark Backer | 9636a3b9 |
+| 2026-09-30 | promote | grafbedekking | Mark Backer | b1bb83f8 |
+| 2026-09-30 | promote | lijkbezorging | Mark Backer | 7bfe878b |
+| 2026-09-30 | promote | lijkschouwing | Mark Backer | d3c5d346 |
+| 2026-09-30 | promote | lijkbezorging-door-de-burgemeester | Mark Backer | 6c592cac |
+| 2026-09-30 | promote | uitgifte-van-een-graf | Mark Backer | 6e40b8e8 |
+| 2026-09-30 | promote | opgraving | Mark Backer | 7cfb68ce |
+| 2026-09-30 | promote | ruiming | Mark Backer | d5255011 |
+| 2026-09-30 | promote | onderhoud-van-graven | Mark Backer | 527a7d1e |
+| 2026-09-30 | promote | overlijden | Mark Backer | 0f2c8229 |
+| 2026-09-30 | promote | kerkgenootschap | Mark Backer | 6684834e |
+| 2026-09-30 | promote | houder-van-de-begraafplaats | Mark Backer | 96106bd9 |
+| 2026-09-30 | promote | houder-van-het-crematorium | Mark Backer | 04af6b48 |
+| 2026-09-30 | promote | houder-van-een-plaats-van-bijzetting | Mark Backer | b949b6be |
+| 2026-09-30 | promote | rechthebbende-op-het-graf | Mark Backer | 0d1bc813 |
+| 2026-09-30 | promote | nabestaande | Mark Backer | 744ab53b |
+| 2026-09-30 | promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | dc7e34f4 |
+| 2026-09-30 | promote | gemeentelijke-lijkschouwer | Mark Backer | fa3fa6bf |
+| 2026-09-30 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 6b24a8fd |
+| 2026-09-30 | promote | beheerder | Mark Backer | f49fed24 |
+| 2026-09-30 | promote | burgemeester | Mark Backer | 8c5a6a76 |
+| 2026-09-30 | promote | college-van-b-w | Mark Backer | db41ef39 |
+| 2026-09-30 | promote | gemeenteraad | Mark Backer | f0052570 |
+| 2026-09-30 | promote | ggd | Mark Backer | 97449ff8 |
+| 2026-09-30 | promote | uitvaartondernemer | Mark Backer | 8a39f96c |
+| 2026-09-30 | promote | gemeente | Mark Backer | f9c11886 |
+| 2026-09-30 | promote | beschikking | Mark Backer | 4706980b |
+| 2026-09-30 | promote | besluit | Mark Backer | 4abf3ff3 |
+| 2026-09-30 | promote | vergunning | Mark Backer | fc7f2548 |
+| 2026-09-30 | promote | heffing | Mark Backer | d971d06e |
+| 2026-09-30 | promote | heffingsverordening | Mark Backer | 9f1639ca |
+| 2026-09-30 | promote | burgemeester | Mark Backer | 384ff9be |
+| 2026-09-30 | promote | college-van-b-w | Mark Backer | cefb0941 |
+| 2026-09-30 | promote | gemeenteraad | Mark Backer | 03a0eacd |
+| 2026-09-30 | promote | ggd | Mark Backer | bbd6c24a |
+| 2026-09-30 | promote | kerkgenootschap | Mark Backer | 03dea0d6 |
+| 2026-09-30 | promote | uitvaartondernemer | Mark Backer | 68d504af |
+| 2026-09-30 | promote | onderhoud-van-graven | Mark Backer | d94135d1 |
+| 2026-09-30 | promote | overlijden | Mark Backer | 51d4c949 |
+| 2026-09-30 | promote | verval-van-het-grafrecht | Mark Backer | 9c19324d |
+| 2026-09-30 | promote | heffing | Mark Backer | ce6a6535 |
+| 2026-09-30 | promote | heffingsverordening | Mark Backer | d629c20e |
+| 2026-09-30 | promote | beschikking | Mark Backer | 8d437f14 |
+| 2026-09-30 | promote | besluit | Mark Backer | 6501d444 |
+| 2026-09-30 | promote | vergunning | Mark Backer | 3cba689d |
+| 2026-09-30 | promote | begraafplaats | Mark Backer | a963d5b4 |
+| 2026-09-30 | promote | crematorium | Mark Backer | 424e5898 |
+| 2026-09-30 | promote | gemeentebegrafenis | Mark Backer | 32624583 |
+| 2026-09-30 | promote | grafbedekking | Mark Backer | 1eeaf56a |
+| 2026-09-30 | promote | lijk | Mark Backer | 551d0e4d |
+| 2026-09-30 | promote | plaats-van-bijzetting | Mark Backer | 4c389761 |
+| 2026-09-30 | promote | urn | Mark Backer | 1e03c4c2 |
+| 2026-09-30 | promote | verklaring-van-geen-bezwaar | Mark Backer | 78e12012 |
+| 2026-09-30 | promote | verklaring-van-overlijden | Mark Backer | 41dad55f |
+| 2026-09-30 | promote | lijkbezorging-door-de-burgemeester | Mark Backer | e92f6ca4 |
+| 2026-09-30 | promote | lijkbezorging | Mark Backer | 6c68b4a1 |
+| 2026-09-30 | promote | lijkschouwing | Mark Backer | c6bc538b |
+| 2026-09-30 | promote | opgraving | Mark Backer | 1ee8f055 |
+| 2026-09-30 | promote | ruiming | Mark Backer | 191be3e4 |
+| 2026-09-30 | promote | uitgifte-van-een-graf | Mark Backer | 575a2688 |
+| 2026-09-30 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 37739613 |
+| 2026-09-30 | promote | beheerder | Mark Backer | 0152bee3 |
+| 2026-09-30 | promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | 58a7a082 |
+| 2026-09-30 | promote | gemeente | Mark Backer | b90617b0 |
+| 2026-09-30 | promote | gemeentelijke-lijkschouwer | Mark Backer | 5b947773 |
+| 2026-09-30 | promote | houder-van-de-begraafplaats | Mark Backer | ee14037d |
+| 2026-09-30 | promote | houder-van-een-plaats-van-bijzetting | Mark Backer | abdcd4ce |
+| 2026-09-30 | promote | houder-van-het-crematorium | Mark Backer | e297a789 |
+| 2026-09-30 | promote | nabestaande | Mark Backer | 651b2919 |
+| 2026-09-30 | promote | rechthebbende-op-het-graf | Mark Backer | 42a99c09 |
+| 2026-09-30 | promote | burgemeester | Mark Backer | d4706373 |
+| 2026-09-30 | promote | college-van-b-w | Mark Backer | 5590efca |
+| 2026-09-30 | promote | gemeenteraad | Mark Backer | 7f134556 |
+| 2026-09-30 | promote | ggd | Mark Backer | 57ddd1ff |
+| 2026-09-30 | promote | kerkgenootschap | Mark Backer | d8d18eaf |
+| 2026-09-30 | promote | uitvaartondernemer | Mark Backer | 0f102680 |
+| 2026-09-30 | promote | onderhoud-van-graven | Mark Backer | ba048e02 |
+| 2026-09-30 | promote | overlijden | Mark Backer | 510993b6 |
+| 2026-09-30 | promote | verval-van-het-grafrecht | Mark Backer | 094055d8 |
+| 2026-09-30 | promote | heffing | Mark Backer | 1223ad59 |
+| 2026-09-30 | promote | heffingsverordening | Mark Backer | ee72b9af |
+| 2026-09-30 | promote | beschikking | Mark Backer | 3f789b61 |
+| 2026-09-30 | promote | besluit | Mark Backer | bf6e66dd |
+| 2026-09-30 | promote | vergunning | Mark Backer | 583f9997 |
+| 2026-09-30 | promote | begraafplaats | Mark Backer | 19157165 |
+| 2026-09-30 | promote | crematorium | Mark Backer | 1652c964 |
+| 2026-09-30 | promote | gemeentebegrafenis | Mark Backer | 096889a1 |
+| 2026-09-30 | promote | grafbedekking | Mark Backer | c2a8a766 |
+| 2026-09-30 | promote | lijk | Mark Backer | 66d34a20 |
+| 2026-09-30 | promote | plaats-van-bijzetting | Mark Backer | 7dd6ecf0 |
+| 2026-09-30 | promote | urn | Mark Backer | 406c01d3 |
+| 2026-09-30 | promote | verklaring-van-geen-bezwaar | Mark Backer | 1d8d3ffb |
+| 2026-09-30 | promote | verklaring-van-overlijden | Mark Backer | bf94c31c |
+| 2026-09-30 | promote | lijkbezorging-door-de-burgemeester | Mark Backer | 1af7c1b9 |
+| 2026-09-30 | promote | lijkbezorging | Mark Backer | ff5ccc78 |
+| 2026-09-30 | promote | lijkschouwing | Mark Backer | 37534b55 |
+| 2026-09-30 | promote | opgraving | Mark Backer | c9738b6d |
+| 2026-09-30 | promote | ruiming | Mark Backer | 07134637 |
+| 2026-09-30 | promote | uitgifte-van-een-graf | Mark Backer | 19e9fe0e |
+| 2026-09-30 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 009892e0 |
+| 2026-09-30 | promote | beheerder | Mark Backer | 7cab94a1 |
+| 2026-09-30 | promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | 39220c7b |
+| 2026-09-30 | promote | gemeente | Mark Backer | 78975a37 |
+| 2026-09-30 | promote | gemeentelijke-lijkschouwer | Mark Backer | 5ab4c6f7 |
+| 2026-09-30 | promote | houder-van-de-begraafplaats | Mark Backer | f3573abc |
+| 2026-09-30 | promote | houder-van-een-plaats-van-bijzetting | Mark Backer | d325b19b |
+| 2026-09-30 | promote | houder-van-het-crematorium | Mark Backer | 464630e9 |
+| 2026-09-30 | promote | nabestaande | Mark Backer | cb66933b |
+| 2026-09-30 | promote | rechthebbende-op-het-graf | Mark Backer | b5b39741 |
+| 2026-09-30 | promote | participatie | Mark Backer | 99ec45c5 |
+| 2026-09-30 | promote | uitvoeren-inwonersparticipatie | Mark Backer | 768abb0d |
+| 2026-09-30 | promote | behandelen-verzoek-om-overheidsparticipatie | Mark Backer | 912c0f2b |
+| 2026-09-30 | promote | uitvoeren-inspraakprocedure | Mark Backer | 12916578 |
+| 2026-09-30 | promote | verzoek-om-overheidsparticipatie | Mark Backer | b2d77d79 |
+| 2026-09-30 | promote | plan-voor-inwonersparticipatie | Mark Backer | 388437b8 |
+| 2026-09-30 | promote | eindverslag-inwonersparticipatie | Mark Backer | 020fb714 |
+| 2026-09-30 | promote | zienswijze | Mark Backer | 1e8a2665 |
+| 2026-09-30 | promote | uitvoeringsovereenkomst | Mark Backer | 5d2f064c |
+| 2026-09-30 | promote | inwoner | Mark Backer | 04742c50 |
+| 2026-09-30 | promote | maatschappelijke-partij | Mark Backer | 19edbfe5 |
+| 2026-09-30 | promote | adviesraad | Mark Backer | 3fbe0a90 |
+| 2026-09-30 | promote | indiener | Mark Backer | 5d083d78 |
+| 2026-09-30 | promote | belanghebbende | Mark Backer | 85217ce2 |
+| 2026-09-30 | promote | gemeenteraad | Mark Backer | 4117e744 |
+| 2026-09-30 | promote | college-van-b-w | Mark Backer | b5d9d1db |
+| 2026-09-30 | promote | burgemeester | Mark Backer | d54eb770 |
+| 2026-09-30 | promote | college-van-b-w | Mark Backer | 1c5eab07 |
+| 2026-09-30 | promote | gemeenteraad | Mark Backer | 4117e744 |
+| 2026-09-30 | promote | ggd | Mark Backer | 9fa6e944 |
+| 2026-09-30 | promote | kerkgenootschap | Mark Backer | 0321b9fe |
+| 2026-09-30 | promote | uitvaartondernemer | Mark Backer | 966211ef |
+| 2026-09-30 | promote | onderhoud-van-graven | Mark Backer | 3c83d4b6 |
+| 2026-09-30 | promote | overlijden | Mark Backer | 8c91e303 |
+| 2026-09-30 | promote | verval-van-het-grafrecht | Mark Backer | 059b71d3 |
+| 2026-09-30 | promote | heffing | Mark Backer | 1e9cb2ed |
+| 2026-09-30 | promote | heffingsverordening | Mark Backer | 704735b4 |
+| 2026-09-30 | promote | beschikking | Mark Backer | 3ccfd276 |
+| 2026-09-30 | promote | besluit | Mark Backer | fc1e7f2a |
+| 2026-09-30 | promote | vergunning | Mark Backer | b1a3b0d9 |
+| 2026-09-30 | promote | begraafplaats | Mark Backer | 49124427 |
+| 2026-09-30 | promote | crematorium | Mark Backer | b6853853 |
+| 2026-09-30 | promote | gemeentebegrafenis | Mark Backer | 17443710 |
+| 2026-09-30 | promote | grafbedekking | Mark Backer | 168188b7 |
+| 2026-09-30 | promote | lijk | Mark Backer | 00b24f4d |
+| 2026-09-30 | promote | plaats-van-bijzetting | Mark Backer | b7fe7fb3 |
+| 2026-09-30 | promote | urn | Mark Backer | d86c4959 |
+| 2026-09-30 | promote | verklaring-van-geen-bezwaar | Mark Backer | 904bcfe9 |
+| 2026-09-30 | promote | verklaring-van-overlijden | Mark Backer | a5afcc03 |
+| 2026-09-30 | promote | verzorgen-gemeentebegrafenis | Mark Backer | c3fb54f4 |
+| 2026-09-30 | promote | uitvoeren-lijkbezorging | Mark Backer | 25f3e2a2 |
+| 2026-09-30 | promote | schouwen-lijk | Mark Backer | 49177e85 |
+| 2026-09-30 | promote | opgraven-lijk | Mark Backer | 58f852e3 |
+| 2026-09-30 | promote | ruimen-graf | Mark Backer | ca4c7fd8 |
+| 2026-09-30 | promote | verlenen-grafrecht | Mark Backer | e3f78008 |
+| 2026-09-30 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 918894f8 |
+| 2026-09-30 | promote | beheerder | Mark Backer | 34c54ab9 |
+| 2026-09-30 | promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | fefe7627 |
+| 2026-09-30 | promote | gemeente | Mark Backer | 59c1365d |
+| 2026-09-30 | promote | gemeentelijke-lijkschouwer | Mark Backer | 027ac885 |
+| 2026-09-30 | promote | houder-van-de-begraafplaats | Mark Backer | 735fa851 |
+| 2026-09-30 | promote | houder-van-een-plaats-van-bijzetting | Mark Backer | 25cf6864 |
+| 2026-09-30 | promote | houder-van-het-crematorium | Mark Backer | 9ecb1e3f |
+| 2026-09-30 | promote | nabestaande | Mark Backer | 6c57031b |
+| 2026-09-30 | promote | rechthebbende-op-het-graf | Mark Backer | 12c75731 |
+| 2026-09-30 | promote | lijkbezorging | Mark Backer | 63185d6b |
+| 2026-10-02 | promote | adviseur | Mark Backer | 8b9501d9 |
+| 2026-10-02 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 3ede279c |
+| 2026-10-02 | promote | begraafplaats | Mark Backer | 0222aca4 |
+| 2026-10-02 | promote | beheerder | Mark Backer | 6d25965f |
+| 2026-10-02 | promote | beschikking | Mark Backer | 52664ba2 |
+| 2026-10-02 | promote | beslisser | Mark Backer | 6beb4ddf |
+| 2026-10-02 | promote | besluit | Mark Backer | e958fb2a |
+| 2026-10-02 | promote | besmet-lijk-gemeld | Mark Backer | e5fe1d90 |
+| 2026-10-02 | promote | burgemeester | Mark Backer | 701489a6 |
+| 2026-10-02 | promote | college-van-b-w | Mark Backer | 50e9d49a |
+| 2026-10-02 | promote | crematorium | Mark Backer | c73fe2a3 |
+| 2026-10-02 | promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | 76655730 |
+| 2026-10-02 | promote | gemeente | Mark Backer | 7402c632 |
+| 2026-10-02 | promote | gemeentebegrafenis | Mark Backer | 7c5ca143 |
+| 2026-10-02 | promote | gemeentelijke-lijkschouwer | Mark Backer | 0bcfcb6f |
+| 2026-10-02 | promote | gemeenteraad | Mark Backer | 9e01c8cc |
+| 2026-10-02 | promote | ggd | Mark Backer | 6ea9003f |
+| 2026-10-02 | promote | graf | Mark Backer | fc798c02 |
+| 2026-10-02 | promote | graf-aanvragen | Mark Backer | 346fff8a |
+| 2026-10-02 | promote | grafbedekking | Mark Backer | b401ce34 |
+| 2026-10-02 | promote | grafrecht | Mark Backer | 9222ab06 |
+| 2026-10-02 | promote | heffing | Mark Backer | 364ee401 |
+| 2026-10-02 | promote | heffingsverordening | Mark Backer | 2509cfc8 |
+| 2026-10-02 | promote | houder-van-de-begraafplaats | Mark Backer | 2cda2ed3 |
+| 2026-10-02 | promote | houder-van-een-plaats-van-bijzetting | Mark Backer | bba26151 |
+| 2026-10-02 | promote | houder-van-het-crematorium | Mark Backer | 99ac5a79 |
+| 2026-10-02 | promote | kerkgenootschap | Mark Backer | 3d4d4682 |
+| 2026-10-02 | promote | lijk | Mark Backer | f085d4cc |
+| 2026-10-02 | promote | lijkbezorging | Mark Backer | 753d926c |
+| 2026-10-02 | promote | model-beheersverordening-begraafplaatsen | Mark Backer | 25daca41 |
+| 2026-10-02 | promote | nabestaande | Mark Backer | 9f21fc54 |
+| 2026-10-02 | promote | onderhoud-van-graven | Mark Backer | 95d2ed6d |
+| 2026-10-02 | promote | onderhouden-graf | Mark Backer | 000a6808 |
+| 2026-10-02 | promote | opgraven-lijk | Mark Backer | 1d2b331d |
+| 2026-10-02 | promote | overlijden | Mark Backer | 61f45811 |
+| 2026-10-02 | promote | plaats-van-bijzetting | Mark Backer | 6db5ae7f |
+| 2026-10-02 | promote | rechthebbende-op-het-graf | Mark Backer | 8b7065fc |
+| 2026-10-02 | promote | regeling | Mark Backer | 68c1677d |
+| 2026-10-02 | promote | ruimen-graf | Mark Backer | ba801d1d |
+| 2026-10-02 | promote | schouwen-lijk | Mark Backer | 74e1f1f6 |
+| 2026-10-02 | promote | treffen-maatregel-bij-besmet-lijk | Mark Backer | 758cdde0 |
+| 2026-10-02 | promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | 299341c8 |
+| 2026-10-02 | promote | uitvaartondernemer | Mark Backer | 5bb19640 |
+| 2026-10-02 | promote | uitvoeren-lijkbezorging | Mark Backer | be1565ec |
+| 2026-10-02 | promote | urn | Mark Backer | 2e83577d |
+| 2026-10-02 | promote | vergunning | Mark Backer | c0ac53d8 |
+| 2026-10-02 | promote | verklaring-van-geen-bezwaar | Mark Backer | 25e1cc00 |
+| 2026-10-02 | promote | verklaring-van-overlijden | Mark Backer | e22f6761 |
+| 2026-10-02 | promote | verlenen-grafrecht | Mark Backer | 755efbe7 |
+| 2026-10-02 | promote | verval-van-het-grafrecht | Mark Backer | 67de1649 |
+| 2026-10-02 | promote | vervallen-verklaren-grafrecht | Mark Backer | 7a0f7288 |
+| 2026-10-02 | promote | verzorgen-gemeentebegrafenis | Mark Backer | 8d48c922 |
+| 2026-10-02 | promote | wet-op-de-lijkbezorging | Mark Backer | bd0c6a65 |
+| 2026-10-03 | promote | gemeentelijke-lijkschouwer | Mark Backer | cfce5e2d |
+| 2026-10-04 | promote | adviseur | Mark Backer | b5812028 |
+| 2026-10-04 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 3a26f6c2 |
+| 2026-10-04 | promote | begraafplaats | Mark Backer | 9b71b089 |
+| 2026-10-04 | promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 2ef83930 |
+| 2026-10-04 | promote | beheerder-van-de-begraafplaats | Mark Backer | 1e1f6355 |
+| 2026-10-04 | promote | beheren-begraafplaatsen | Mark Backer | 0ac090fd |
+| 2026-10-04 | promote | beheren-crematoria | Mark Backer | 23eb2b15 |
+| 2026-10-04 | promote | beheren-grafrechten | Mark Backer | 040ae7a1 |
+| 2026-10-04 | promote | beheren-graven | Mark Backer | 99a02077 |
+| 2026-10-04 | promote | beschikking | Mark Backer | 969fdcc2 |
+| 2026-10-04 | promote | beslisser | Mark Backer | 84312f10 |
+| 2026-10-04 | promote | besluit | Mark Backer | f64dc102 |
+| 2026-10-04 | promote | besmet-lijk-gemeld | Mark Backer | f7d3385f |
+| 2026-10-04 | promote | bezorgen-lijken | Mark Backer | 4a79088e |
+| 2026-10-04 | promote | bijzetten-of-verstrooien-van-de-as | Mark Backer | d1143500 |
+| 2026-10-04 | promote | burgemeester | Mark Backer | 18a0e374 |
+| 2026-10-04 | promote | burgerlijke-stand-diensten | Mark Backer | 788591d9 |
+| 2026-10-04 | promote | college-van-b-w | Mark Backer | c29dd1ec |
+| 2026-10-04 | promote | crematorium | Mark Backer | 89cdd4be |
+| 2026-10-04 | promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | a67efd41 |
+| 2026-10-04 | promote | exploiteren-van-begraafplaatsen | Mark Backer | 6a691852 |
+| 2026-10-04 | promote | gemeente | Mark Backer | bb5b68d9 |
+| 2026-10-04 | promote | gemeentebegrafenis | Mark Backer | ee929580 |
+| 2026-10-04 | promote | gemeentelijke-lijkschouwer | Mark Backer | 72a31a59 |
+| 2026-10-04 | promote | gemeenteraad | Mark Backer | 787e7889 |
+| 2026-10-04 | promote | ggd | Mark Backer | 867263e2 |
+| 2026-10-04 | promote | graf | Mark Backer | 8a66717c |
+| 2026-10-04 | promote | graf-aanvragen | Mark Backer | b904eba6 |
+| 2026-10-04 | promote | grafbedekking | Mark Backer | 785b3faf |
+| 2026-10-04 | promote | grafrecht | Mark Backer | 42049f30 |
+| 2026-10-04 | promote | heffing | Mark Backer | f5a6bfb4 |
+| 2026-10-04 | promote | heffingsverordening | Mark Backer | 9d668b78 |
+| 2026-10-04 | promote | houder-van-de-begraafplaats | Mark Backer | 5b303c2e |
+| 2026-10-04 | promote | houder-van-een-plaats-van-bijzetting | Mark Backer | 35090076 |
+| 2026-10-04 | promote | houder-van-het-crematorium | Mark Backer | 9c467567 |
+| 2026-10-04 | promote | kerkgenootschap | Mark Backer | 7d9c0cf4 |
+| 2026-10-04 | promote | ketenpartner | Mark Backer | 312dc4b3 |
+| 2026-10-04 | promote | kostendrager | Mark Backer | 04aae169 |
+| 2026-10-04 | promote | lijk | Mark Backer | 6ef29d0d |
+| 2026-10-04 | promote | model-beheersverordening-begraafplaatsen | Mark Backer | 95c5faee |
+| 2026-10-04 | promote | nabestaande | Mark Backer | 495eff2f |
+| 2026-10-04 | promote | officier-van-justitie | Mark Backer | 485ba0fd |
+| 2026-10-04 | promote | onderhoud-van-graven | Mark Backer | e9787ce4 |
+| 2026-10-04 | promote | onderhouden-graf | Mark Backer | 760a0ba9 |
+| 2026-10-04 | promote | opgraven-lijk | Mark Backer | 43bb90ac |
+| 2026-10-04 | promote | overlijden | Mark Backer | 2d6a875c |
+| 2026-10-04 | promote | rechthebbende-op-het-graf | Mark Backer | ab10dd68 |
+| 2026-10-04 | promote | regeling | Mark Backer | 25f4889e |
+| 2026-10-04 | promote | ruimen-graf | Mark Backer | adcac313 |
+| 2026-10-04 | promote | schouwen-lijk | Mark Backer | 697b8e8f |
+| 2026-10-04 | promote | sluiten-begraafplaats | Mark Backer | 41243bff |
+| 2026-10-04 | promote | stellen-andere-termijn | Mark Backer | ae7ca1b4 |
+| 2026-10-04 | promote | treffen-maatregel-bij-besmet-lijk | Mark Backer | 22662197 |
+| 2026-10-04 | promote | uitbaten-begraafplaatsen-en-crematoria | Mark Backer | b75d4cae |
+| 2026-10-04 | promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | e07e6a5f |
+| 2026-10-04 | promote | uitvaartondernemer | Mark Backer | c1865c77 |
+| 2026-10-04 | promote | uitvoeren-lijkbezorging | Mark Backer | a57f6f50 |
+| 2026-10-04 | promote | urn | Mark Backer | ba66e6c7 |
+| 2026-10-04 | promote | vergunning | Mark Backer | 4993cd39 |
+| 2026-10-04 | promote | verlenen-grafrecht | Mark Backer | 4aa85c07 |
+| 2026-10-04 | promote | verlenen-toestemming-bijzondere-begraafplaats | Mark Backer | 036491c9 |
+| 2026-10-04 | promote | verlenen-vergunning-bijzonder-crematorium | Mark Backer | 9c2c3102 |
+| 2026-10-04 | promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | 365ccddb |
+| 2026-10-04 | promote | verval-van-het-grafrecht | Mark Backer | e1b7db7c |
+| 2026-10-04 | promote | vervallen-verklaren-grafrecht | Mark Backer | 6e1ad07e |
+| 2026-10-04 | promote | verzorgen-gemeentebegrafenis | Mark Backer | 4996af51 |
+| 2026-10-04 | promote | verzorgen-lijkbezorging | Mark Backer | a0ff03cd |
+| 2026-10-04 | promote | wet-op-de-lijkbezorging | Mark Backer | 8204c2a5 |
+| 2026-10-04 | promote | burgerlijke-stand-diensten | Mark Backer | e2c9ad59 |
+| 2026-10-04 | promote | exploitatie-fysieke-leefomgeving | Mark Backer | b92d0d07 |
+| 2026-10-04 | promote | exploiteren-van-begraafplaatsen | Mark Backer | 38bf9598 |
+| 2026-10-04 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 7b748487 |
+| 2026-10-04 | promote | uitvoering-fysieke-leefomgeving | Mark Backer | 9fe259a7 |
+| 2026-10-04 | promote | uitvoering-publieksdiensten | Mark Backer | 75e6b6c7 |
+| 2026-10-04 | promote | exploiteren-van-begraafplaatsen | Mark Backer | dfdd5f7d |
+| 2026-10-04 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | f731fa90 |
+| 2026-10-04 | promote | vergunningenbeheer-publieksdiensten | Mark Backer | 0bdbdb78 |
+| 2026-10-04 | promote | beheren-grafrechten | Mark Backer | 8016b4d7 |
+| 2026-10-04 | promote | bezorgen-lijken | Mark Backer | 0776ebe0 |
+| 2026-10-04 | promote | model-beheersverordening-begraafplaatsen | Mark Backer | 6de78e09 |
+| 2026-10-04 | promote | wet-op-de-lijkbezorging | Mark Backer | 3623896e |
+| 2026-10-04 | promote | arts | Mark Backer | d81a8731 |
+| 2026-10-04 | promote | ketenpartner | Mark Backer | 07503132 |
+| 2026-10-05 | promote | adviseur | Mark Backer | 97bac173 |
+| 2026-10-05 | promote | afgeven-laissez-passer | Mark Backer | d386ccbe |
+| 2026-10-05 | promote | asverstrooiing | Mark Backer | 3552e9f5 |
+| 2026-10-05 | promote | begraafplaatsregister | Mark Backer | ae317988 |
+| 2026-10-05 | promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 091f528b |
+| 2026-10-05 | promote | beheerder-van-de-begraafplaats | Mark Backer | 0b32d4a8 |
+| 2026-10-05 | promote | beheren-graven | Mark Backer | 0af18270 |
+| 2026-10-05 | promote | beschikking | Mark Backer | 0ac43257 |
+| 2026-10-05 | promote | beslisser | Mark Backer | 3ae502a0 |
+| 2026-10-05 | promote | besluit | Mark Backer | 112a948a |
+| 2026-10-05 | promote | besluit-op-de-lijkbezorging | Mark Backer | 1637af85 |
+| 2026-10-05 | promote | besmet-stoffelijk-overschot-gemeld | Mark Backer | 4df0c042 |
+| 2026-10-05 | promote | bezorgen-stoffelijk-overschot | Mark Backer | 1d0fc23a |
+| 2026-10-05 | promote | bijzetten-of-verstrooien-van-de-as | Mark Backer | 9bbebf82 |
+| 2026-10-05 | promote | bijzettingenregister | Mark Backer | 12ad7793 |
+| 2026-10-05 | promote | bijzondere-begraafplaats-toestemming | Mark Backer | 8f0986ee |
+| 2026-10-05 | promote | crematoriumregister | Mark Backer | 1eb0ad9f |
+| 2026-10-05 | promote | exploiteren-van-begraafplaatsen | Mark Backer | 44ae4b8e |
+| 2026-10-05 | promote | gedenkteken-plaatsingsvergunning | Mark Backer | 4868a6fe |
+| 2026-10-05 | promote | gemeentebegrafenis | Mark Backer | 2ab2df16 |
+| 2026-10-05 | promote | gemeentelijke-lijkschouwer | Mark Backer | 7ef2ffae |
+| 2026-10-05 | promote | grafonderhoud | Mark Backer | fca8fb68 |
+| 2026-10-05 | promote | grafuitgifte | Mark Backer | ebb5ad8e |
+| 2026-10-05 | promote | heffing | Mark Backer | 2010d3da |
+| 2026-10-05 | promote | heffingsverordening | Mark Backer | 21c7ae2b |
+| 2026-10-05 | promote | herbegraven-of-alsnog-cremeren | Mark Backer | a4882827 |
+| 2026-10-05 | promote | ketenpartner | Mark Backer | 5256b54a |
+| 2026-10-05 | promote | model-beheersverordening-begraafplaatsen | Mark Backer | 2791f042 |
+| 2026-10-05 | promote | nabestaande | Mark Backer | 0b74f590 |
+| 2026-10-05 | promote | officier-van-justitie | Mark Backer | 133ec214 |
+| 2026-10-05 | promote | onderhouden-graf | Mark Backer | c51b422b |
+| 2026-10-05 | promote | ontleding-stoffelijk-overschot-toestemming | Mark Backer | 5b35b9e3 |
+| 2026-10-05 | promote | opgraven-stoffelijk-overschot | Mark Backer | 50d14faa |
+| 2026-10-05 | promote | overlijden | Mark Backer | 1a12b404 |
+| 2026-10-05 | promote | producten-en-dienstenrealisatie-fysieke-leefomgeving | Mark Backer | f5babe1d |
+| 2026-10-05 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 9156f8d8 |
+| 2026-10-05 | promote | producten-en-dienstenrealisatie-veiligheidsdomein | Mark Backer | 4d753932 |
+| 2026-10-05 | promote | rechthebbende-op-het-graf | Mark Backer | e3fc0afe |
+| 2026-10-05 | promote | schouwen-stoffelijk-overschot | Mark Backer | 81b2aa8d |
+| 2026-10-05 | promote | stellen-andere-termijn | Mark Backer | 7dbcabff |
+| 2026-10-05 | promote | stoffelijk-overschot | Mark Backer | 20824331 |
+| 2026-10-05 | promote | treffen-maatregel-bij-besmet-stoffelijk-overschot | Mark Backer | 3dcdb7a3 |
+| 2026-10-05 | promote | uitvoeren-lijkbezorging | Mark Backer | 985b53af |
+| 2026-10-05 | promote | uitvoering-fysieke-leefomgeving | Mark Backer | b49780aa |
+| 2026-10-05 | promote | uitvoering-openbare-orde-en-veiligheid | Mark Backer | f17d8960 |
+| 2026-10-05 | promote | urn | Mark Backer | 1e3adad8 |
+| 2026-10-05 | promote | vergunning | Mark Backer | ec5e4664 |
+| 2026-10-05 | promote | vergunningenbeheer-publieksdiensten | Mark Backer | b1fbe20b |
+| 2026-10-05 | promote | verlenen-toestemming-asverstrooiing | Mark Backer | 5b32aa91 |
+| 2026-10-05 | promote | verlenen-toestemming-bijzondere-begraafplaats | Mark Backer | 4a6803ce |
+| 2026-10-05 | promote | verlenen-vergunning-grafbedekking | Mark Backer | 77c5226a |
+| 2026-10-05 | promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | 4325441b |
+| 2026-10-05 | promote | verlenen-verlof-tot-ontleding | Mark Backer | 097f5507 |
+| 2026-10-05 | promote | verlof-tot-begraven | Mark Backer | 9c9dd3a0 |
+| 2026-10-05 | promote | vervoersdocumenten-stoffelijk-overschot | Mark Backer | 1e985bd7 |
+| 2026-10-05 | promote | verzorgen-gemeentebegrafenis | Mark Backer | 1581ad73 |
+| 2026-10-05 | promote | verzorgen-lijkbezorging | Mark Backer | e2065d54 |
+| 2026-10-05 | promote | wet-op-de-lijkbezorging | Mark Backer | b1e2b5e8 |
+| 2026-10-05 | promote | adviseur | Mark Backer | 73a529a4 |
+| 2026-10-05 | promote | begraafplaats | Mark Backer | 6a1f7cb6 |
+| 2026-10-05 | promote | beschikking | Mark Backer | cb56b1df |
+| 2026-10-05 | promote | burgemeester | Mark Backer | e1e1497e |
+| 2026-10-05 | promote | crematorium | Mark Backer | 9c3ad7fa |
+| 2026-10-05 | promote | gemeentelijke-lijkschouwer | Mark Backer | 6f645763 |
+| 2026-10-05 | promote | ggd | Mark Backer | ecda1c94 |
+| 2026-10-05 | promote | graf | Mark Backer | b3992f3e |
+| 2026-10-05 | promote | grafrecht | Mark Backer | 05af9621 |
+| 2026-10-05 | promote | houder-van-de-begraafplaats | Mark Backer | b3d4ab7f |
+| 2026-10-05 | promote | houder-van-het-crematorium | Mark Backer | 5419730d |
+| 2026-10-05 | promote | ketenpartner | Mark Backer | 7928bd56 |
+| 2026-10-05 | promote | overlijden | Mark Backer | 18f5e3c2 |
+| 2026-10-05 | promote | stellen-andere-termijn | Mark Backer | e26edf46 |
+| 2026-10-05 | promote | uitvoeren-lijkbezorging | Mark Backer | 7a001e34 |
+| 2026-10-05 | promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | eeadc14f |
+| 2026-10-05 | promote | verzorgen-gemeentebegrafenis | Mark Backer | 7ad373da |
+| 2026-10-05 | promote | verzorgen-lijkbezorging | Mark Backer | f5b421ed |
+| 2026-10-05 | promote | wet-op-de-lijkbezorging | Mark Backer | 93766c68 |
+| 2026-10-05 | promote | grafuitgifte | Mark Backer | 0214b613 |
+| 2026-10-06 | promote | beschikking | Mark Backer | 484bab45 |
+| 2026-10-06 | promote | beslisser | Mark Backer | f2526acb |
+| 2026-10-06 | promote | besluit | Mark Backer | 54fecf03 |
+| 2026-10-06 | promote | burgemeester | Mark Backer | fcbd15e4 |
+| 2026-10-06 | promote | college-van-b-w | Mark Backer | bb8f6759 |
+| 2026-10-06 | promote | gemeente | Mark Backer | 37b54eee |
+| 2026-10-06 | promote | gemeenteraad | Mark Backer | e58fc270 |
+| 2026-10-06 | promote | heffing | Mark Backer | c1dcf0eb |
+| 2026-10-06 | promote | heffingsverordening | Mark Backer | 08f58fc4 |
+| 2026-10-06 | promote | regeling | Mark Backer | a5d1f88f |
+| 2026-10-06 | promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | 1690cfb8 |
+| 2026-10-06 | promote | vergunning | Mark Backer | 9bbac78b |
+| 2026-10-06 | promote | vervoersdocumenten-stoffelijk-overschot | Mark Backer | 7a795f43 |
+| 2026-10-07 | promote | aangever | Mark Backer | bfed291a |
+| 2026-10-07 | promote | aangifte-vertrek-buitenland | Mark Backer | 246915f2 |
+| 2026-10-07 | promote | behandelen-verzoek-om-correctie | Mark Backer | d7c2cac8 |
+| 2026-10-07 | promote | behandelen-verzoek-om-geheimhouding | Mark Backer | 98576119 |
+| 2026-10-07 | promote | behandelen-verzoek-om-verwijdering-van-gegevens | Mark Backer | 3ce91fc2 |
+| 2026-10-07 | promote | beslisser | Mark Backer | 9e858df6 |
+| 2026-10-07 | promote | besluit-basisregistratie-personen | Mark Backer | 53d432b3 |
+| 2026-10-07 | promote | bevolkingsadministratie-bijhouding | Mark Backer | 2b9d0251 |
+| 2026-10-07 | promote | bijhouden-persoonsgegevens | Mark Backer | bd410c7d |
+| 2026-10-07 | promote | bijhoudingsgemeente | Mark Backer | 49f6b548 |
+| 2026-10-07 | promote | briefadres | Mark Backer | 62ae91e3 |
+| 2026-10-07 | promote | briefadres-aanvragen | Mark Backer | 16e8fbe4 |
+| 2026-10-07 | promote | briefadresgever | Mark Backer | 05676433 |
+| 2026-10-07 | promote | brp-adoptie-uitschrijving | Mark Backer | a256d1bb |
+| 2026-10-07 | promote | brp-geheimhoudingsverzoek | Mark Backer | 9e244d78 |
+| 2026-10-07 | promote | brp-inschrijving | Mark Backer | 968500e0 |
+| 2026-10-07 | promote | brp-inzagerecht | Mark Backer | 210572c9 |
+| 2026-10-07 | promote | brp-inzagerecht-gegevensverstrekking | Mark Backer | 8dfbd5b1 |
+| 2026-10-07 | promote | brp-uittreksel | Mark Backer | c0da6587 |
+| 2026-10-07 | promote | brp-uittreksel-met-gezag | Mark Backer | 86bba3f4 |
+| 2026-10-07 | promote | brp-wijzigingsverzoek | Mark Backer | 2ac4c578 |
+| 2026-10-07 | promote | emigratie | Mark Backer | c4627dc0 |
+| 2026-10-07 | promote | gemeente | Mark Backer | f6c8419d |
+| 2026-10-07 | promote | ingeschreven-persoon | Mark Backer | 96e93561 |
+| 2026-10-07 | promote | inschrijven-ingezetene | Mark Backer | 42de8394 |
+| 2026-10-07 | promote | inschrijven-niet-ingezetene | Mark Backer | 6a2d20c1 |
+| 2026-10-07 | promote | inschrijven-op-briefadres | Mark Backer | 1a0a99a5 |
+| 2026-10-07 | promote | legalisatie-handtekening | Mark Backer | d4e596af |
+| 2026-10-07 | promote | onjuiste-inschrijving-op-adres-melden | Mark Backer | d7974ee2 |
+| 2026-10-07 | promote | persoonsgegevens-verklaring-onder-eed-of-belofte | Mark Backer | a1f6c6a4 |
+| 2026-10-07 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 8a4b7087 |
+| 2026-10-07 | promote | rni-inschrijving | Mark Backer | e26156a6 |
+| 2026-10-07 | promote | rni-loket | Mark Backer | 53f2572e |
+| 2026-10-07 | promote | toezichthouder-brp | Mark Backer | b4bb20bb |
+| 2026-10-07 | promote | uitvoeren-adresonderzoek | Mark Backer | fa167122 |
+| 2026-10-07 | promote | verblijfplaats | Mark Backer | 8b21fd08 |
+| 2026-10-07 | promote | verhuismelding | Mark Backer | c9d2a370 |
+| 2026-10-07 | promote | verhuizing | Mark Backer | 90143d58 |
+| 2026-10-07 | promote | verstrekken-overzicht-gegevensverstrekkingen | Mark Backer | 6838b19e |
+| 2026-10-07 | promote | verstrekken-persoonsgegevens | Mark Backer | 4e5bf375 |
+| 2026-10-07 | promote | verwerken-adreswijziging | Mark Backer | 76a4c558 |
+| 2026-10-07 | promote | verwerken-emigratie | Mark Backer | 222d8d7b |
+| 2026-10-07 | promote | vestiging-vanuit-het-buitenland | Mark Backer | 8a412895 |
+| 2026-10-07 | promote | wet-basisregistratie-personen | Mark Backer | e697891f |
+| 2026-10-07 | promote | wijzigen-identificatienummers | Mark Backer | 1bbb373d |
+| 2026-10-07 | promote | bijhouden-persoonsgegevens | Mark Backer | d23a6d82 |
+| 2026-10-07 | promote | verzorgen-burgerzaken | Mark Backer | 8c3a7104 |
+| 2026-10-07 | promote | aangever | Mark Backer | 5017f3c2 |
+| 2026-10-07 | promote | achternaamwijziging | Mark Backer | 475e97d6 |
+| 2026-10-07 | promote | adoptie | Mark Backer | 5bdf8a9e |
+| 2026-10-07 | promote | adoptie-aangifte | Mark Backer | 5aa0bbe2 |
+| 2026-10-07 | promote | akte-van-de-burgerlijke-stand | Mark Backer | b83541a9 |
+| 2026-10-07 | promote | ambtenaar-burgerlijke-stand-aanvragen | Mark Backer | 90a9dddb |
+| 2026-10-07 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | de5b4530 |
+| 2026-10-07 | promote | behandelen-melding-voorgenomen-huwelijk-of-partnerschap | Mark Backer | b032a096 |
+| 2026-10-07 | promote | besluit-burgerlijke-stand-1994 | Mark Backer | b6d63671 |
+| 2026-10-07 | promote | bevolkingsadministratie-bijhouding | Mark Backer | e0c9a2ce |
+| 2026-10-07 | promote | bewijs-van-in-leven-zijn | Mark Backer | 144f5520 |
+| 2026-10-07 | promote | bijhouden-burgerlijke-stand | Mark Backer | 6fd23763 |
+| 2026-10-07 | promote | bijhouden-persoonsgegevens | Mark Backer | e17efa41 |
+| 2026-10-07 | promote | brp-inschrijving-buitenlandse-akte | Mark Backer | 0f6c8a8d |
+| 2026-10-07 | promote | brp-inschrijving-niet-in-leven-zijnd-kind | Mark Backer | 11fa4635 |
+| 2026-10-07 | promote | brp-uittreksel-met-gezag | Mark Backer | c30897a3 |
+| 2026-10-07 | promote | burgerlijk-wetboek-boek-1 | Mark Backer | 54220369 |
+| 2026-10-07 | promote | burgerlijke-stand-diensten | Mark Backer | 40d321af |
+| 2026-10-07 | promote | doodgeboren-kind-aangifte | Mark Backer | 3f59bec1 |
+| 2026-10-07 | promote | echtscheiding-inschrijving | Mark Backer | a4988c08 |
+| 2026-10-07 | promote | erkenning-kind | Mark Backer | af5f4faa |
+| 2026-10-07 | promote | geboorte | Mark Backer | 57bf80d4 |
+| 2026-10-07 | promote | geboorteaangifte | Mark Backer | eadaaf80 |
+| 2026-10-07 | promote | geboorteakte | Mark Backer | b0bb0de8 |
+| 2026-10-07 | promote | geboorteakte-levenloos-kind | Mark Backer | 6f8048ba |
+| 2026-10-07 | promote | geregistreerd-partnerschap-omzetting-in-huwelijk | Mark Backer | b713697a |
+| 2026-10-07 | promote | geregistreerd-partnerschap-ontbinding | Mark Backer | acfd3e80 |
+| 2026-10-07 | promote | geregistreerd-partnerschapaangifte | Mark Backer | f979f3a9 |
+| 2026-10-07 | promote | geslachtswijzigingsaangifte | Mark Backer | a0db2479 |
+| 2026-10-07 | promote | huwelijk | Mark Backer | 42624342 |
+| 2026-10-07 | promote | huwelijksaangifte | Mark Backer | 8bec0fac |
+| 2026-10-07 | promote | inschrijven-ingezetene | Mark Backer | 9e653e78 |
+| 2026-10-07 | promote | inschrijven-levenloos-geboren-kind | Mark Backer | 96be0a96 |
+| 2026-10-07 | promote | inschrijven-ontbinding-huwelijk-of-partnerschap | Mark Backer | f9b15abb |
+| 2026-10-07 | promote | levenloze-geboorte | Mark Backer | c09c538e |
+| 2026-10-07 | promote | naamgebruik-verzoek-aanduiding | Mark Backer | 271a50ec |
+| 2026-10-07 | promote | naamskeuzeverklaring | Mark Backer | f502c63f |
+| 2026-10-07 | promote | naamswijziging | Mark Backer | 3ec80450 |
+| 2026-10-07 | promote | ontbinding-huwelijk-of-partnerschap | Mark Backer | 9704eec1 |
+| 2026-10-07 | promote | ontkenning-ouderschap | Mark Backer | d2d4624d |
+| 2026-10-07 | promote | opmaken-akte-levenloos-geboren-kind | Mark Backer | f0ea0ff8 |
+| 2026-10-07 | promote | opmaken-akte-van-erkenning | Mark Backer | 2b54f228 |
+| 2026-10-07 | promote | opmaken-akte-van-naamskeuze | Mark Backer | b3bd0228 |
+| 2026-10-07 | promote | opmaken-akte-van-overlijden | Mark Backer | 9cca0c4c |
+| 2026-10-07 | promote | opmaken-geboorteakte | Mark Backer | eafa5f09 |
+| 2026-10-07 | promote | ouder | Mark Backer | a7a51997 |
+| 2026-10-07 | promote | overlijden | Mark Backer | 011b17e2 |
+| 2026-10-07 | promote | overlijdensaangifte | Mark Backer | 99d00edd |
+| 2026-10-07 | promote | overlijdensakte | Mark Backer | 8ca1ec69 |
+| 2026-10-07 | promote | registreren-partnerschap | Mark Backer | fa0253c0 |
+| 2026-10-07 | promote | toevoegen-latere-vermelding | Mark Backer | 8a19b089 |
+| 2026-10-07 | promote | trouwlocatie | Mark Backer | ce6e0c29 |
+| 2026-10-07 | promote | uittreksel-burgerlijke-stand | Mark Backer | 3e4546bf |
+| 2026-10-07 | promote | uitvaartondernemer | Mark Backer | 5e031a2b |
+| 2026-10-07 | promote | vaststelling-ouderschap | Mark Backer | 2a719526 |
+| 2026-10-07 | promote | verklaring-van-huwelijksbevoegdheid | Mark Backer | 8018ec90 |
+| 2026-10-07 | promote | verstrekken-persoonsgegevens | Mark Backer | bc6c3b21 |
+| 2026-10-07 | promote | verstrekken-uittreksels-en-verklaringen-burgerlijke-stand | Mark Backer | 0a3dfdf3 |
+| 2026-10-07 | promote | verwerken-buitenlands-document | Mark Backer | 2dd9b777 |
+| 2026-10-07 | promote | verzorgen-burgerzaken | Mark Backer | 762a189c |
+| 2026-10-07 | promote | voltrekken-huwelijk | Mark Backer | e60cd5ea |
+| 2026-10-07 | promote | voornaamwijziging | Mark Backer | 231c1f7d |
+| 2026-10-07 | promote | wet-basisregistratie-personen | Mark Backer | 310e74d3 |
+| 2026-10-07 | promote | wijzigen-geslachtsvermelding | Mark Backer | 725ee9e8 |
+| 2026-10-07 | promote | wijzigen-naamgebruik | Mark Backer | 676d3990 |
+| 2026-10-07 | promote | behandelen-aanvraag-reisdocument | Mark Backer | 9ea21998 |
+| 2026-10-07 | promote | behandelen-aanvraag-reisdocument-niet-ingezetene | Mark Backer | 64a6fd78 |
+| 2026-10-07 | promote | beheren-reisdocumenten | Mark Backer | 53b36884 |
+| 2026-10-07 | promote | beslisser | Mark Backer | ec59a683 |
+| 2026-10-07 | promote | burgemeester | Mark Backer | 3289df21 |
+| 2026-10-07 | promote | gewaarmerkte-kopie-reisdocument-aanvragen | Mark Backer | 3e8530ec |
+| 2026-10-07 | promote | heffing | Mark Backer | f29e837d |
+| 2026-10-07 | promote | houder-van-het-reisdocument | Mark Backer | 57f263ce |
+| 2026-10-07 | promote | identiteitskaart | Mark Backer | b4ed7456 |
+| 2026-10-07 | promote | inhouden-reisdocument | Mark Backer | 7f0d35f4 |
+| 2026-10-07 | promote | naamswijziging | Mark Backer | 28c4006c |
+| 2026-10-07 | promote | officiele-documenten-verstrekking | Mark Backer | 68f2aaf1 |
+| 2026-10-07 | promote | ouder | Mark Backer | 01de23ad |
+| 2026-10-07 | promote | overlijden | Mark Backer | 715b4343 |
+| 2026-10-07 | promote | paspoort | Mark Backer | 20150619 |
+| 2026-10-07 | promote | paspoort-tweede | Mark Backer | e0f3dc93 |
+| 2026-10-07 | promote | paspoortbesluit | Mark Backer | 3210f39e |
+| 2026-10-07 | promote | paspoortwet | Mark Backer | 753fc4b9 |
+| 2026-10-07 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 69d7641b |
+| 2026-10-07 | promote | reisdocument | Mark Backer | 38eb7cd2 |
+| 2026-10-07 | promote | reisdocument-niet-ingezetene | Mark Backer | d1528bba |
+| 2026-10-07 | promote | uitreiken-reisdocument | Mark Backer | 50eb1630 |
+| 2026-10-07 | promote | vermissing-of-diefstal-reisdocument-doorgeven | Mark Backer | 023a93a3 |
+| 2026-10-07 | promote | vermissing-van-het-reisdocument | Mark Backer | 705dfdee |
+| 2026-10-07 | promote | verval-van-het-reisdocument | Mark Backer | 8fb69c18 |
+| 2026-10-07 | promote | vervallen-verklaren-reisdocument | Mark Backer | 75db3bdf |
+| 2026-10-07 | promote | verwerken-vermissing-reisdocument | Mark Backer | 79a51580 |
+| 2026-10-07 | promote | verzorgen-burgerzaken | Mark Backer | 53d30394 |
+| 2026-10-07 | promote | vluchtelingenpaspoort | Mark Backer | 1ff3bf69 |
+| 2026-10-07 | promote | vreemdelingenpaspoort | Mark Backer | 1d7d3307 |
+| 2026-10-07 | promote | wet-op-de-nederlandse-identiteitskaart | Mark Backer | 7f1bb854 |
+| 2026-10-07 | promote | wijzigen-geslachtsvermelding | Mark Backer | 997ffea3 |
+| 2026-10-07 | promote | wijzigen-identificatienummers | Mark Backer | 09e03921 |
+| 2026-10-07 | promote | zakenpaspoort | Mark Backer | 486d76fe |
+| 2026-10-07 | promote | behandelen-naturalisatieverzoek | Mark Backer | 17163654 |
+| 2026-10-07 | promote | behandelen-optieverklaring | Mark Backer | 94d5c864 |
+| 2026-10-07 | promote | behandelen-verklaring-van-afstand | Mark Backer | 6fa597bd |
+| 2026-10-07 | promote | behandelen-verzoek-om-kiezerspas | Mark Backer | da44c8be |
+| 2026-10-07 | promote | behandelen-verzoek-om-volmacht | Mark Backer | a0644a3c |
+| 2026-10-07 | promote | beheren-nederlanderschap | Mark Backer | 7fddc1ad |
+| 2026-10-07 | promote | beheren-stempassen | Mark Backer | 84812aca |
+| 2026-10-07 | promote | beslisser | Mark Backer | 7099e8e4 |
+| 2026-10-07 | promote | besluit-verkrijging-en-verlies-nederlanderschap | Mark Backer | de484466 |
+| 2026-10-07 | promote | bewijs-van-nederlanderschap | Mark Backer | 345f4169 |
+| 2026-10-07 | promote | bijhouden-persoonsgegevens | Mark Backer | 15bde7d6 |
+| 2026-10-07 | promote | houden-naturalisatieceremonie | Mark Backer | 8e23cb08 |
+| 2026-10-07 | promote | ketenpartner | Mark Backer | cf5d1c9c |
+| 2026-10-07 | promote | kieswet | Mark Backer | 8b215c1a |
+| 2026-10-07 | promote | kiezer | Mark Backer | 425c07ae |
+| 2026-10-07 | promote | kiezerspas | Mark Backer | 1bf4e97b |
+| 2026-10-07 | promote | naturalisatieceremonie | Mark Backer | c8adf7f6 |
+| 2026-10-07 | promote | naturalisatieoptie | Mark Backer | fe961309 |
+| 2026-10-07 | promote | naturalisatieverzoek | Mark Backer | 4b3e2082 |
+| 2026-10-07 | promote | nederlanderschap | Mark Backer | afe19610 |
+| 2026-10-07 | promote | nederlanderschap-diensten | Mark Backer | 5bc29ed1 |
+| 2026-10-07 | promote | optant | Mark Backer | cb3b76b9 |
+| 2026-10-07 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 874726bd |
+| 2026-10-07 | promote | registreren-kiesgerechtigdheid | Mark Backer | 0479196c |
+| 2026-10-07 | promote | rijk | Mark Backer | 7140f12b |
+| 2026-10-07 | promote | rijkswet-op-het-nederlanderschap | Mark Backer | e91d5a38 |
+| 2026-10-07 | promote | stempas | Mark Backer | 5e553d48 |
+| 2026-10-07 | promote | stempas-ontvangen | Mark Backer | 2544548a |
+| 2026-10-07 | promote | stemrecht | Mark Backer | 8e6cb5ba |
+| 2026-10-07 | promote | uitsluiting-van-het-kiesrecht | Mark Backer | 93c2e823 |
+| 2026-10-07 | promote | verkiezingen-gerelateerde-diensten | Mark Backer | f0cddf78 |
+| 2026-10-07 | promote | verklaring-van-afstand-nederlandse-nationaliteit | Mark Backer | adfed78a |
+| 2026-10-07 | promote | verkrijging-van-het-nederlanderschap | Mark Backer | d3f8c176 |
+| 2026-10-07 | promote | verlies-van-het-nederlanderschap | Mark Backer | 60148032 |
+| 2026-10-07 | promote | verstrekken-persoonsgegevens | Mark Backer | 7f6bdd0e |
+| 2026-10-07 | promote | verstrekken-stempas | Mark Backer | 21a18d71 |
+| 2026-10-07 | promote | verzoeker-om-naturalisatie | Mark Backer | 75338094 |
+| 2026-10-07 | promote | verzorgen-burgerzaken | Mark Backer | c2a8f72a |
+| 2026-10-07 | promote | volmachtbewijs-verkiezingen | Mark Backer | 2787566c |
+| 2026-10-07 | promote | aangever | Mark Backer | 4063dea7 |
+| 2026-10-07 | promote | aanvrager-van-de-verklaring-omtrent-het-gedrag | Mark Backer | d74e8b36 |
+| 2026-10-07 | promote | afgeven-verklaring-omtrent-het-gedrag | Mark Backer | 290a8a43 |
+| 2026-10-07 | promote | akte-van-de-burgerlijke-stand | Mark Backer | 6a8cbca6 |
+| 2026-10-07 | promote | behandelen-aanvraag-omwisseling-buitenlands-rijbewijs | Mark Backer | 45cd2d73 |
+| 2026-10-07 | promote | behandelen-aanvraag-rijbewijs | Mark Backer | ee8728ab |
+| 2026-10-07 | promote | behandelen-aanvraag-verklaring-omtrent-het-gedrag | Mark Backer | 735512ed |
+| 2026-10-07 | promote | beheren-rijbewijzen | Mark Backer | 79ca15af |
+| 2026-10-07 | promote | beslisser | Mark Backer | 794da887 |
+| 2026-10-07 | promote | besluit-basisregistratie-personen | Mark Backer | b72c64d4 |
+| 2026-10-07 | promote | besluit-burgerlijke-stand-1994 | Mark Backer | b57a34ef |
+| 2026-10-07 | promote | besluit-verkrijging-en-verlies-nederlanderschap | Mark Backer | 8e1653ea |
+| 2026-10-07 | promote | burgemeester | Mark Backer | 71d9dd5f |
+| 2026-10-07 | promote | burgerlijk-wetboek-boek-1 | Mark Backer | a992b122 |
+| 2026-10-07 | promote | houder-van-het-rijbewijs | Mark Backer | fd7cf520 |
+| 2026-10-07 | promote | ketenpartner | Mark Backer | f7498a21 |
+| 2026-10-07 | promote | kieswet | Mark Backer | cbdefa16 |
+| 2026-10-07 | promote | legalisatie-handtekening | Mark Backer | e89c3b15 |
+| 2026-10-07 | promote | nederlanderschap | Mark Backer | 510f6f2f |
+| 2026-10-07 | promote | officiele-documenten-verstrekking | Mark Backer | 5a549063 |
+| 2026-10-07 | promote | overlijden | Mark Backer | edd36a28 |
+| 2026-10-07 | promote | paspoortbesluit | Mark Backer | 84666117 |
+| 2026-10-07 | promote | paspoortwet | Mark Backer | e01171d5 |
+| 2026-10-07 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | cbdbd145 |
+| 2026-10-07 | promote | reglement-rijbewijzen | Mark Backer | eff2df20 |
+| 2026-10-07 | promote | rijbewijs | Mark Backer | 2fc99142 |
+| 2026-10-07 | promote | rijbewijs-aanvragen | Mark Backer | 8f9ad25f |
+| 2026-10-07 | promote | rijbewijs-buitenlands-omwisseling | Mark Backer | 675ea1c8 |
+| 2026-10-07 | promote | rijbewijs-verlengen | Mark Backer | 7c9788cd |
+| 2026-10-07 | promote | rijk | Mark Backer | e8f06b11 |
+| 2026-10-07 | promote | rijkswet-op-het-nederlanderschap | Mark Backer | 26753891 |
+| 2026-10-07 | promote | uitreiken-rijbewijs | Mark Backer | 2b713554 |
+| 2026-10-07 | promote | verkiezingen-gerelateerde-diensten | Mark Backer | 2a6bcd2f |
+| 2026-10-07 | promote | verklaring-omtrent-gedrag-aanvragen | Mark Backer | 2162c392 |
+| 2026-10-07 | promote | verklaring-omtrent-het-gedrag | Mark Backer | 4a020ce9 |
+| 2026-10-07 | promote | verklaring-van-huwelijksbevoegdheid | Mark Backer | 8ff9e440 |
+| 2026-10-07 | promote | vermissing-of-diefstal-rijbewijs-doorgeven | Mark Backer | d4f6a8fb |
+| 2026-10-07 | promote | vermissing-van-het-rijbewijs | Mark Backer | a085b6a5 |
+| 2026-10-07 | promote | verwerken-vermissing-rijbewijs | Mark Backer | 4a0754fb |
+| 2026-10-07 | promote | verzorgen-burgerzaken | Mark Backer | 10aa55c9 |
+| 2026-10-07 | promote | wegenverkeerswet-1994 | Mark Backer | a61975ec |
+| 2026-10-07 | promote | wet-basisregistratie-personen | Mark Backer | 35ddc21e |
+| 2026-10-07 | promote | wet-justitiele-en-strafvorderlijke-gegevens | Mark Backer | 7dde071c |
+| 2026-10-07 | promote | wet-op-de-nederlandse-identiteitskaart | Mark Backer | 84f816a2 |
+| 2026-10-07 | promote | afgeven-laissez-passer | Mark Backer | f5a7cb7f |
+| 2026-10-07 | promote | afgeven-verklaring-omtrent-het-gedrag | Mark Backer | edaf0540 |
+| 2026-10-07 | promote | begraven-en-cremeren-stoffelijk-overschot | Mark Backer | ae501502 |
+| 2026-10-07 | promote | behandelen-aanvraag-verklaring-omtrent-het-gedrag | Mark Backer | 45e370f4 |
+| 2026-10-07 | promote | behandelen-naturalisatieverzoek | Mark Backer | 194f4eea |
+| 2026-10-07 | promote | behandelen-optieverklaring | Mark Backer | a41f706a |
+| 2026-10-07 | promote | behandelen-verklaring-van-afstand | Mark Backer | 52b13dda |
+| 2026-10-07 | promote | behandelen-verkrijging-en-verlies-nederlanderschap | Mark Backer | 9a5191fb |
+| 2026-10-07 | promote | beheren-nederlanderschap | Mark Backer | 47b955dd |
+| 2026-10-07 | promote | bezorgen-stoffelijk-overschot | Mark Backer | 75686f1f |
+| 2026-10-07 | promote | bijzetten-of-verstrooien-van-de-as | Mark Backer | 64225d6f |
+| 2026-10-07 | promote | houden-naturalisatieceremonie | Mark Backer | dff394b8 |
+| 2026-10-07 | promote | opgraven-stoffelijk-overschot | Mark Backer | be33ac77 |
+| 2026-10-07 | promote | schouwen-stoffelijk-overschot | Mark Backer | 67f2fb1e |
+| 2026-10-07 | promote | stellen-andere-termijn | Mark Backer | 5103fefc |
+| 2026-10-07 | promote | toestaan-lijkbezorging | Mark Backer | f87e707f |
+| 2026-10-07 | promote | treffen-maatregel-bij-besmet-stoffelijk-overschot | Mark Backer | 84bb82de |
+| 2026-10-07 | promote | uitvoeren-lijkbezorging | Mark Backer | 0a533914 |
+| 2026-10-07 | promote | verlenen-toestemming-asverstrooiing | Mark Backer | 3530a79c |
+| 2026-10-07 | promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | 9dc6b341 |
+| 2026-10-07 | promote | verlenen-verlof-tot-ontleding | Mark Backer | ae905aa8 |
+| 2026-10-08 | promote | aangever | Mark Backer | 5de9fa7a |
+| 2026-10-08 | promote | aangifte-vertrek-buitenland | Mark Backer | 8a931cfe |
+| 2026-10-08 | promote | aanvrager-van-de-verklaring-omtrent-het-gedrag | Mark Backer | f473c551 |
+| 2026-10-08 | promote | achternaamwijziging | Mark Backer | 6d938a48 |
+| 2026-10-08 | promote | adoptie | Mark Backer | 47c1102a |
+| 2026-10-08 | promote | adoptie-aangifte | Mark Backer | 76222aed |
+| 2026-10-08 | promote | adviseur | Mark Backer | 0426cc11 |
+| 2026-10-08 | promote | afgeven-laissez-passer | Mark Backer | d80bd439 |
+| 2026-10-08 | promote | afgeven-verklaring-omtrent-het-gedrag | Mark Backer | b8b6a7a6 |
+| 2026-10-08 | promote | akte-van-de-burgerlijke-stand | Mark Backer | 08fa6971 |
+| 2026-10-08 | promote | ambtenaar-burgerlijke-stand-aanvragen | Mark Backer | 8095193c |
+| 2026-10-08 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 71abb4dd |
+| 2026-10-08 | promote | arts | Mark Backer | 4fd5de1b |
+| 2026-10-08 | promote | asverstrooiing | Mark Backer | 9f12ac6a |
+| 2026-10-08 | promote | begraafplaats | Mark Backer | 810811fa |
+| 2026-10-08 | promote | begraafplaatsregister | Mark Backer | 1b9c86e6 |
+| 2026-10-08 | promote | begraven-en-cremeren-stoffelijk-overschot | Mark Backer | dae7aba8 |
+| 2026-10-08 | promote | behandelen-aanvraag-omwisseling-buitenlands-rijbewijs | Mark Backer | d9351af6 |
+| 2026-10-08 | promote | behandelen-aanvraag-reisdocument | Mark Backer | 58102c4b |
+| 2026-10-08 | promote | behandelen-aanvraag-reisdocument-niet-ingezetene | Mark Backer | de241987 |
+| 2026-10-08 | promote | behandelen-aanvraag-rijbewijs | Mark Backer | c241ec4c |
+| 2026-10-08 | promote | behandelen-aanvraag-verklaring-omtrent-het-gedrag | Mark Backer | 51bf587c |
+| 2026-10-08 | promote | behandelen-melding-voorgenomen-huwelijk-of-partnerschap | Mark Backer | 5e2bae88 |
+| 2026-10-08 | promote | behandelen-naturalisatieverzoek | Mark Backer | 2ebe9b56 |
+| 2026-10-08 | promote | behandelen-optieverklaring | Mark Backer | 601e60d2 |
+| 2026-10-08 | promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 032bf76e |
+| 2026-10-08 | promote | behandelen-verklaring-van-afstand | Mark Backer | 684ddd81 |
+| 2026-10-08 | promote | behandelen-verzoek-om-correctie | Mark Backer | 59a50bf2 |
+| 2026-10-08 | promote | behandelen-verzoek-om-geheimhouding | Mark Backer | 86b7ce35 |
+| 2026-10-08 | promote | behandelen-verzoek-om-kiezerspas | Mark Backer | eaa7da00 |
+| 2026-10-08 | promote | behandelen-verzoek-om-verwijdering-van-gegevens | Mark Backer | fc557e92 |
+| 2026-10-08 | promote | behandelen-verzoek-om-volmacht | Mark Backer | 126fd852 |
+| 2026-10-08 | promote | beheerder-van-de-begraafplaats | Mark Backer | 9bd487ad |
+| 2026-10-08 | promote | beheren-begraafplaatsen | Mark Backer | 84a9505e |
+| 2026-10-08 | promote | beheren-crematoria | Mark Backer | 17e41d3c |
+| 2026-10-08 | promote | beheren-grafrechten | Mark Backer | 7a38eaf1 |
+| 2026-10-08 | promote | beheren-graven | Mark Backer | 15a7b581 |
+| 2026-10-08 | promote | beheren-nederlanderschap | Mark Backer | 17ddac85 |
+| 2026-10-08 | promote | beheren-reisdocumenten | Mark Backer | ffa6a529 |
+| 2026-10-08 | promote | beheren-rijbewijzen | Mark Backer | dd5124bc |
+| 2026-10-08 | promote | beheren-stempassen | Mark Backer | dc0e267a |
+| 2026-10-08 | promote | beschikking | Mark Backer | ee5e2b8a |
+| 2026-10-08 | promote | beslisser | Mark Backer | 0bf54825 |
+| 2026-10-08 | promote | besluit | Mark Backer | e9091edd |
+| 2026-10-08 | promote | besluit-basisregistratie-personen | Mark Backer | a8b8028e |
+| 2026-10-08 | promote | besluit-burgerlijke-stand-1994 | Mark Backer | 3adc64a2 |
+| 2026-10-08 | promote | besluit-op-de-lijkbezorging | Mark Backer | db8bf67d |
+| 2026-10-08 | promote | besluit-verkrijging-en-verlies-nederlanderschap | Mark Backer | 596f60dd |
+| 2026-10-08 | promote | besmet-stoffelijk-overschot-gemeld | Mark Backer | 987268f3 |
+| 2026-10-08 | promote | bevolkingsadministratie-bijhouding | Mark Backer | d2957bdc |
+| 2026-10-08 | promote | bewijs-van-in-leven-zijn | Mark Backer | 3ab6f82f |
+| 2026-10-08 | promote | bewijs-van-nederlanderschap | Mark Backer | 7f4c8710 |
+| 2026-10-08 | promote | bezorgen-stoffelijk-overschot | Mark Backer | 1b594194 |
+| 2026-10-08 | promote | bijhouden-burgerlijke-stand | Mark Backer | 506575a4 |
+| 2026-10-08 | promote | bijhouden-persoonsgegevens | Mark Backer | e989e0a3 |
+| 2026-10-08 | promote | bijhoudingsgemeente | Mark Backer | 43a7eed8 |
+| 2026-10-08 | promote | bijzetten-of-verstrooien-van-de-as | Mark Backer | b0dd23f7 |
+| 2026-10-08 | promote | bijzettingenregister | Mark Backer | 425ed3d1 |
+| 2026-10-08 | promote | bijzondere-begraafplaats-toestemming | Mark Backer | 303ce016 |
+| 2026-10-08 | promote | briefadres | Mark Backer | e49d98f5 |
+| 2026-10-08 | promote | briefadres-aanvragen | Mark Backer | 7f472604 |
+| 2026-10-08 | promote | briefadresgever | Mark Backer | eeb8dc59 |
+| 2026-10-08 | promote | brp-adoptie-uitschrijving | Mark Backer | b4d1184b |
+| 2026-10-08 | promote | brp-geheimhoudingsverzoek | Mark Backer | b14342b7 |
+| 2026-10-08 | promote | brp-inschrijving | Mark Backer | 8952ffc5 |
+| 2026-10-08 | promote | brp-inschrijving-buitenlandse-akte | Mark Backer | e06a04a1 |
+| 2026-10-08 | promote | brp-inschrijving-niet-in-leven-zijnd-kind | Mark Backer | 573222cf |
+| 2026-10-08 | promote | brp-inzagerecht | Mark Backer | 0b9f1c38 |
+| 2026-10-08 | promote | brp-inzagerecht-gegevensverstrekking | Mark Backer | 49d4c739 |
+| 2026-10-08 | promote | brp-uittreksel | Mark Backer | 7ad2f63e |
+| 2026-10-08 | promote | brp-uittreksel-met-gezag | Mark Backer | 7c455315 |
+| 2026-10-08 | promote | brp-wijzigingsverzoek | Mark Backer | b6193dce |
+| 2026-10-08 | promote | burgemeester | Mark Backer | bf39b615 |
+| 2026-10-08 | promote | burgerlijk-wetboek-boek-1 | Mark Backer | 4534ee22 |
+| 2026-10-08 | promote | burgerlijke-stand-diensten | Mark Backer | 4a1d5dca |
+| 2026-10-08 | promote | college-van-b-w | Mark Backer | 7c59518f |
+| 2026-10-08 | promote | crematorium | Mark Backer | b6d32d68 |
+| 2026-10-08 | promote | crematoriumregister | Mark Backer | 498eccd6 |
+| 2026-10-08 | promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | 65bb0a46 |
+| 2026-10-08 | promote | doodgeboren-kind-aangifte | Mark Backer | 17f2e273 |
+| 2026-10-08 | promote | echtscheiding-inschrijving | Mark Backer | 3f6c1542 |
+| 2026-10-08 | promote | emigratie | Mark Backer | 430eca77 |
+| 2026-10-08 | promote | erkenning-kind | Mark Backer | 2b788efa |
+| 2026-10-08 | promote | exploitatie-fysieke-leefomgeving | Mark Backer | 15f533cd |
+| 2026-10-08 | promote | exploiteren-van-begraafplaatsen | Mark Backer | 732cc5ee |
+| 2026-10-08 | promote | geboorte | Mark Backer | 151ab78f |
+| 2026-10-08 | promote | geboorteaangifte | Mark Backer | e4f899e3 |
+| 2026-10-08 | promote | geboorteakte | Mark Backer | 7a64f998 |
+| 2026-10-08 | promote | geboorteakte-levenloos-kind | Mark Backer | 8ef04529 |
+| 2026-10-08 | promote | gedenkteken-plaatsingsvergunning | Mark Backer | 0afd4637 |
+| 2026-10-08 | promote | gemeente | Mark Backer | 7d9b9fed |
+| 2026-10-08 | promote | gemeentebegrafenis | Mark Backer | 81b673d7 |
+| 2026-10-08 | promote | gemeentelijke-lijkschouwer | Mark Backer | 7389918e |
+| 2026-10-08 | promote | gemeenteraad | Mark Backer | 3a326de9 |
+| 2026-10-08 | promote | geregistreerd-partnerschap-omzetting-in-huwelijk | Mark Backer | 95eaa3d6 |
+| 2026-10-08 | promote | geregistreerd-partnerschap-ontbinding | Mark Backer | a2d72b3c |
+| 2026-10-08 | promote | geregistreerd-partnerschapaangifte | Mark Backer | e3084ac9 |
+| 2026-10-08 | promote | geslachtswijzigingsaangifte | Mark Backer | bc563b4d |
+| 2026-10-08 | promote | gewaarmerkte-kopie-reisdocument-aanvragen | Mark Backer | f9d9507e |
+| 2026-10-08 | promote | ggd | Mark Backer | d9c66669 |
+| 2026-10-08 | promote | graf | Mark Backer | a6610efc |
+| 2026-10-08 | promote | graf-aanvragen | Mark Backer | a2652c78 |
+| 2026-10-08 | promote | grafbedekking | Mark Backer | aeca56fb |
+| 2026-10-08 | promote | grafonderhoud | Mark Backer | 1532edbf |
+| 2026-10-08 | promote | grafrecht | Mark Backer | 05c16091 |
+| 2026-10-08 | promote | grafuitgifte | Mark Backer | fb056bf9 |
+| 2026-10-08 | promote | heffing | Mark Backer | 159a5a2f |
+| 2026-10-08 | promote | heffingsverordening | Mark Backer | 461117e8 |
+| 2026-10-08 | promote | herbegraven-of-alsnog-cremeren | Mark Backer | b42bac03 |
+| 2026-10-08 | promote | houden-naturalisatieceremonie | Mark Backer | 952c6f95 |
+| 2026-10-08 | promote | houder-van-de-begraafplaats | Mark Backer | fa1cc4c0 |
+| 2026-10-08 | promote | houder-van-een-plaats-van-bijzetting | Mark Backer | 62a631c2 |
+| 2026-10-08 | promote | houder-van-het-crematorium | Mark Backer | bd883219 |
+| 2026-10-08 | promote | houder-van-het-reisdocument | Mark Backer | 8a660fed |
+| 2026-10-08 | promote | houder-van-het-rijbewijs | Mark Backer | 6edabf79 |
+| 2026-10-08 | promote | huwelijk | Mark Backer | 90dc029c |
+| 2026-10-08 | promote | huwelijksaangifte | Mark Backer | 71fd0d09 |
+| 2026-10-08 | promote | identiteitskaart | Mark Backer | bdb44a6b |
+| 2026-10-08 | promote | ingeschreven-persoon | Mark Backer | 8a106b0c |
+| 2026-10-08 | promote | inhouden-reisdocument | Mark Backer | 4e7e05bc |
+| 2026-10-08 | promote | inschrijven-ingezetene | Mark Backer | 913d527d |
+| 2026-10-08 | promote | inschrijven-levenloos-geboren-kind | Mark Backer | 9bae8b8d |
+| 2026-10-08 | promote | inschrijven-niet-ingezetene | Mark Backer | 11bb7f09 |
+| 2026-10-08 | promote | inschrijven-ontbinding-huwelijk-of-partnerschap | Mark Backer | 3ff8ad0f |
+| 2026-10-08 | promote | inschrijven-op-briefadres | Mark Backer | 22d38ed6 |
+| 2026-10-08 | promote | kerkgenootschap | Mark Backer | 997d6fb6 |
+| 2026-10-08 | promote | ketenpartner | Mark Backer | 3f7c24cc |
+| 2026-10-08 | promote | kieswet | Mark Backer | 41549786 |
+| 2026-10-08 | promote | kiezer | Mark Backer | 8bdf8117 |
+| 2026-10-08 | promote | kiezerspas | Mark Backer | aa0ec07d |
+| 2026-10-08 | promote | kostendrager | Mark Backer | ea3f4c88 |
+| 2026-10-08 | promote | legalisatie-handtekening | Mark Backer | 89e50829 |
+| 2026-10-08 | promote | levenloze-geboorte | Mark Backer | 46c985b7 |
+| 2026-10-08 | promote | model-beheersverordening-begraafplaatsen | Mark Backer | 341b6d30 |
+| 2026-10-08 | promote | naamgebruik-verzoek-aanduiding | Mark Backer | 5d84a454 |
+| 2026-10-08 | promote | naamskeuzeverklaring | Mark Backer | cc738d34 |
+| 2026-10-08 | promote | naamswijziging | Mark Backer | 36cdd1af |
+| 2026-10-08 | promote | nabestaande | Mark Backer | 289014a0 |
+| 2026-10-08 | promote | naturalisatieceremonie | Mark Backer | ca68f42a |
+| 2026-10-08 | promote | naturalisatieoptie | Mark Backer | b7fba3af |
+| 2026-10-08 | promote | naturalisatieverzoek | Mark Backer | 6b586126 |
+| 2026-10-08 | promote | nederlanderschap | Mark Backer | ec30a737 |
+| 2026-10-08 | promote | nederlanderschap-diensten | Mark Backer | 52d5852d |
+| 2026-10-08 | promote | officiele-documenten-verstrekking | Mark Backer | 516a0d3a |
+| 2026-10-08 | promote | officier-van-justitie | Mark Backer | 5f350494 |
+| 2026-10-08 | promote | onderhouden-graf | Mark Backer | cb614f7e |
+| 2026-10-08 | promote | onjuiste-inschrijving-op-adres-melden | Mark Backer | 5a10cc9f |
+| 2026-10-08 | promote | ontbinding-huwelijk-of-partnerschap | Mark Backer | 4f55536d |
+| 2026-10-08 | promote | ontkenning-ouderschap | Mark Backer | 2286f445 |
+| 2026-10-08 | promote | ontleding-stoffelijk-overschot-toestemming | Mark Backer | 0f193855 |
+| 2026-10-08 | promote | opgraven-stoffelijk-overschot | Mark Backer | 169f1e2d |
+| 2026-10-08 | promote | opmaken-akte-levenloos-geboren-kind | Mark Backer | 74a1b49b |
+| 2026-10-08 | promote | opmaken-akte-van-erkenning | Mark Backer | febb5fb8 |
+| 2026-10-08 | promote | opmaken-akte-van-naamskeuze | Mark Backer | e3f63a5c |
+| 2026-10-08 | promote | opmaken-akte-van-overlijden | Mark Backer | 656bef5d |
+| 2026-10-08 | promote | opmaken-geboorteakte | Mark Backer | af30cf56 |
+| 2026-10-08 | promote | optant | Mark Backer | e08e87a9 |
+| 2026-10-08 | promote | ouder | Mark Backer | 02668f8f |
+| 2026-10-08 | promote | overlijden | Mark Backer | 0a1ac9dc |
+| 2026-10-08 | promote | overlijdensaangifte | Mark Backer | 68e327a7 |
+| 2026-10-08 | promote | overlijdensakte | Mark Backer | 111a194f |
+| 2026-10-08 | promote | paspoort | Mark Backer | 7c06951b |
+| 2026-10-08 | promote | paspoort-tweede | Mark Backer | adae5aa2 |
+| 2026-10-08 | promote | paspoortbesluit | Mark Backer | fbd11b55 |
+| 2026-10-08 | promote | paspoortwet | Mark Backer | 277b2c47 |
+| 2026-10-08 | promote | persoonsgegevens-verklaring-onder-eed-of-belofte | Mark Backer | dc1aea38 |
+| 2026-10-08 | promote | producten-en-dienstenrealisatie-fysieke-leefomgeving | Mark Backer | 34a414da |
+| 2026-10-08 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 0cfd9cc5 |
+| 2026-10-08 | promote | producten-en-dienstenrealisatie-veiligheidsdomein | Mark Backer | 1c1a5678 |
+| 2026-10-08 | promote | rechthebbende-op-het-graf | Mark Backer | 93bcc9cd |
+| 2026-10-08 | promote | regeling | Mark Backer | 1e8d7a8d |
+| 2026-10-08 | promote | registreren-kiesgerechtigdheid | Mark Backer | d6ddd967 |
+| 2026-10-08 | promote | registreren-partnerschap | Mark Backer | f8a0ed4d |
+| 2026-10-08 | promote | reglement-rijbewijzen | Mark Backer | 98ff38c4 |
+| 2026-10-08 | promote | reisdocument | Mark Backer | d13a95b2 |
+| 2026-10-08 | promote | reisdocument-niet-ingezetene | Mark Backer | 32961c93 |
+| 2026-10-08 | promote | rijbewijs | Mark Backer | 79ad11fc |
+| 2026-10-08 | promote | rijbewijs-aanvragen | Mark Backer | d257868f |
+| 2026-10-08 | promote | rijbewijs-buitenlands-omwisseling | Mark Backer | 05ae5956 |
+| 2026-10-08 | promote | rijbewijs-verlengen | Mark Backer | 45c1de4d |
+| 2026-10-08 | promote | rijk | Mark Backer | 48d5a1eb |
+| 2026-10-08 | promote | rijkswet-op-het-nederlanderschap | Mark Backer | 57ba8699 |
+| 2026-10-08 | promote | rni-inschrijving | Mark Backer | 645de76b |
+| 2026-10-08 | promote | rni-loket | Mark Backer | e554589c |
+| 2026-10-08 | promote | ruimen-graf | Mark Backer | 65d78b62 |
+| 2026-10-08 | promote | schouwen-stoffelijk-overschot | Mark Backer | b6198faa |
+| 2026-10-08 | promote | sluiten-begraafplaats | Mark Backer | 6f8fd6d1 |
+| 2026-10-08 | promote | stellen-andere-termijn | Mark Backer | b3649222 |
+| 2026-10-08 | promote | stempas | Mark Backer | e8774bce |
+| 2026-10-08 | promote | stempas-ontvangen | Mark Backer | c5165940 |
+| 2026-10-08 | promote | stemrecht | Mark Backer | 3cae9d67 |
+| 2026-10-08 | promote | stoffelijk-overschot | Mark Backer | 3f4c8f8d |
+| 2026-10-08 | promote | toestaan-lijkbezorging | Mark Backer | fd285665 |
+| 2026-10-08 | promote | toevoegen-latere-vermelding | Mark Backer | 6ae8e9fc |
+| 2026-10-08 | promote | toezichthouder-brp | Mark Backer | 2e5767a5 |
+| 2026-10-08 | promote | treffen-maatregel-bij-besmet-stoffelijk-overschot | Mark Backer | 4709adb9 |
+| 2026-10-08 | promote | trouwlocatie | Mark Backer | 6d0dc227 |
+| 2026-10-08 | promote | uitbaten-begraafplaatsen-en-crematoria | Mark Backer | 2f2204af |
+| 2026-10-08 | promote | uitreiken-reisdocument | Mark Backer | cd95d6de |
+| 2026-10-08 | promote | uitreiken-rijbewijs | Mark Backer | d51d6545 |
+| 2026-10-08 | promote | uitsluiting-van-het-kiesrecht | Mark Backer | 8b201567 |
+| 2026-10-08 | promote | uittreksel-burgerlijke-stand | Mark Backer | f74dab85 |
+| 2026-10-08 | promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | f3c531b5 |
+| 2026-10-08 | promote | uitvaartondernemer | Mark Backer | 70b65b50 |
+| 2026-10-08 | promote | uitvoeren-adresonderzoek | Mark Backer | 64c5bb67 |
+| 2026-10-08 | promote | uitvoeren-lijkbezorging | Mark Backer | 7d5d965d |
+| 2026-10-08 | promote | uitvoering-fysieke-leefomgeving | Mark Backer | 43934378 |
+| 2026-10-08 | promote | uitvoering-openbare-orde-en-veiligheid | Mark Backer | ac41f163 |
+| 2026-10-08 | promote | uitvoering-publieksdiensten | Mark Backer | 8d21853c |
+| 2026-10-08 | promote | urn | Mark Backer | bf7649f5 |
+| 2026-10-08 | promote | vaststelling-ouderschap | Mark Backer | 2c240887 |
+| 2026-10-08 | promote | verblijfplaats | Mark Backer | b330351c |
+| 2026-10-08 | promote | vergunning | Mark Backer | 922a9a07 |
+| 2026-10-08 | promote | vergunningenbeheer-publieksdiensten | Mark Backer | 76778998 |
+| 2026-10-08 | promote | verhuismelding | Mark Backer | 3525e1d4 |
+| 2026-10-08 | promote | verhuizing | Mark Backer | 38f01159 |
+| 2026-10-08 | promote | verkiezingen-gerelateerde-diensten | Mark Backer | 5afbd7fb |
+| 2026-10-08 | promote | verklaring-omtrent-gedrag-aanvragen | Mark Backer | 559571ff |
+| 2026-10-08 | promote | verklaring-omtrent-het-gedrag | Mark Backer | aa287545 |
+| 2026-10-08 | promote | verklaring-van-afstand-nederlandse-nationaliteit | Mark Backer | 82d1ae41 |
+| 2026-10-08 | promote | verklaring-van-huwelijksbevoegdheid | Mark Backer | 3f8e3493 |
+| 2026-10-08 | promote | verkrijging-van-het-nederlanderschap | Mark Backer | a7edd001 |
+| 2026-10-08 | promote | verlenen-grafrecht | Mark Backer | 72ec9ba8 |
+| 2026-10-08 | promote | verlenen-toestemming-asverstrooiing | Mark Backer | 96ac3dd5 |
+| 2026-10-08 | promote | verlenen-toestemming-bijzondere-begraafplaats | Mark Backer | 6716de7d |
+| 2026-10-08 | promote | verlenen-vergunning-bijzonder-crematorium | Mark Backer | 32528ae4 |
+| 2026-10-08 | promote | verlenen-vergunning-grafbedekking | Mark Backer | a1da3f2a |
+| 2026-10-08 | promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | 9eb03d25 |
+| 2026-10-08 | promote | verlenen-verlof-tot-ontleding | Mark Backer | 2a15efce |
+| 2026-10-08 | promote | verlies-van-het-nederlanderschap | Mark Backer | 4a541fa3 |
+| 2026-10-08 | promote | verlof-tot-begraven | Mark Backer | 9ccc70da |
+| 2026-10-08 | promote | vermissing-of-diefstal-reisdocument-doorgeven | Mark Backer | ab730abe |
+| 2026-10-08 | promote | vermissing-of-diefstal-rijbewijs-doorgeven | Mark Backer | 3aaa2be4 |
+| 2026-10-08 | promote | vermissing-van-het-reisdocument | Mark Backer | 2260647a |
+| 2026-10-08 | promote | vermissing-van-het-rijbewijs | Mark Backer | 48822c68 |
+| 2026-10-08 | promote | verstrekken-overzicht-gegevensverstrekkingen | Mark Backer | 745735d2 |
+| 2026-10-08 | promote | verstrekken-persoonsgegevens | Mark Backer | 0a3b4a28 |
+| 2026-10-08 | promote | verstrekken-stempas | Mark Backer | 55e9504f |
+| 2026-10-08 | promote | verstrekken-uittreksels-en-verklaringen-burgerlijke-stand | Mark Backer | afbd2fdf |
+| 2026-10-08 | promote | verval-van-het-grafrecht | Mark Backer | 722c94d9 |
+| 2026-10-08 | promote | verval-van-het-reisdocument | Mark Backer | 93e57277 |
+| 2026-10-08 | promote | vervallen-verklaren-grafrecht | Mark Backer | 438fc0da |
+| 2026-10-08 | promote | vervallen-verklaren-reisdocument | Mark Backer | 3a54cedf |
+| 2026-10-08 | promote | vervoersdocumenten-stoffelijk-overschot | Mark Backer | ea4c19cc |
+| 2026-10-08 | promote | verwerken-adreswijziging | Mark Backer | f35ffba1 |
+| 2026-10-08 | promote | verwerken-buitenlands-document | Mark Backer | f0c9dc59 |
+| 2026-10-08 | promote | verwerken-emigratie | Mark Backer | 6e08e777 |
+| 2026-10-08 | promote | verwerken-vermissing-reisdocument | Mark Backer | be7fba8d |
+| 2026-10-08 | promote | verwerken-vermissing-rijbewijs | Mark Backer | 2cdb0a83 |
+| 2026-10-08 | promote | verzoeker-om-naturalisatie | Mark Backer | e5767d77 |
+| 2026-10-08 | promote | verzorgen-gemeentebegrafenis | Mark Backer | c7eeb78d |
+| 2026-10-08 | promote | vestiging-vanuit-het-buitenland | Mark Backer | f2b03b06 |
+| 2026-10-08 | promote | vluchtelingenpaspoort | Mark Backer | 0270bb14 |
+| 2026-10-08 | promote | volmachtbewijs-verkiezingen | Mark Backer | 570e146d |
+| 2026-10-08 | promote | voltrekken-huwelijk | Mark Backer | 09f68f91 |
+| 2026-10-08 | promote | voornaamwijziging | Mark Backer | 1096515f |
+| 2026-10-08 | promote | vreemdelingenpaspoort | Mark Backer | 2eda9a61 |
+| 2026-10-08 | promote | wegenverkeerswet-1994 | Mark Backer | 5018bac2 |
+| 2026-10-08 | promote | wet-basisregistratie-personen | Mark Backer | 6860e780 |
+| 2026-10-08 | promote | wet-justitiele-en-strafvorderlijke-gegevens | Mark Backer | 932a1439 |
+| 2026-10-08 | promote | wet-op-de-lijkbezorging | Mark Backer | 520c04c1 |
+| 2026-10-08 | promote | wet-op-de-nederlandse-identiteitskaart | Mark Backer | 4d110273 |
+| 2026-10-08 | promote | wijzigen-geslachtsvermelding | Mark Backer | 239b52b5 |
+| 2026-10-08 | promote | wijzigen-identificatienummers | Mark Backer | f1e5103c |
+| 2026-10-08 | promote | wijzigen-naamgebruik | Mark Backer | e9e6711a |
+| 2026-10-08 | promote | zakenpaspoort | Mark Backer | b70e0c19 |
+| 2026-10-08 | promote | aangever | Mark Backer | 511e2aa8 |
+| 2026-10-08 | promote | aangifte-vertrek-buitenland | Mark Backer | 0a2e14d5 |
+| 2026-10-08 | promote | aanvrager-van-de-verklaring-omtrent-het-gedrag | Mark Backer | 076d2359 |
+| 2026-10-08 | promote | achternaamwijziging | Mark Backer | d73bc52a |
+| 2026-10-08 | promote | adoptie | Mark Backer | 089bfab2 |
+| 2026-10-08 | promote | adoptie-aangifte | Mark Backer | 8606f1df |
+| 2026-10-08 | promote | adviseur | Mark Backer | 80e84aa8 |
+| 2026-10-08 | promote | afgeven-laissez-passer | Mark Backer | ce9e1cae |
+| 2026-10-08 | promote | afgeven-verklaring-omtrent-het-gedrag | Mark Backer | e7613e7e |
+| 2026-10-08 | promote | akte-van-de-burgerlijke-stand | Mark Backer | 3d283149 |
+| 2026-10-08 | promote | ambtenaar-burgerlijke-stand-aanvragen | Mark Backer | 7fdfaecc |
+| 2026-10-08 | promote | ambtenaar-van-de-burgerlijke-stand | Mark Backer | 5c026371 |
+| 2026-10-08 | promote | arts | Mark Backer | f3d0dc5a |
+| 2026-10-08 | promote | asverstrooiing | Mark Backer | a63ac607 |
+| 2026-10-08 | promote | begraafplaats | Mark Backer | 26f89662 |
+| 2026-10-08 | promote | begraafplaatsregister | Mark Backer | 8f914d19 |
+| 2026-10-08 | promote | begraven-en-cremeren-stoffelijk-overschot | Mark Backer | 97e58817 |
+| 2026-10-08 | promote | behandelen-aanvraag-omwisseling-buitenlands-rijbewijs | Mark Backer | d4afbe71 |
+| 2026-10-08 | promote | behandelen-aanvraag-reisdocument | Mark Backer | e09af7eb |
+| 2026-10-08 | promote | behandelen-aanvraag-reisdocument-niet-ingezetene | Mark Backer | 7142f24e |
+| 2026-10-08 | promote | behandelen-aanvraag-rijbewijs | Mark Backer | 1f3e4299 |
+| 2026-10-08 | promote | behandelen-aanvraag-verklaring-omtrent-het-gedrag | Mark Backer | ae8ba168 |
+| 2026-10-08 | promote | behandelen-naturalisatieverzoek | Mark Backer | b4617ebd |
+| 2026-10-08 | promote | behandelen-optieverklaring | Mark Backer | e09303da |
+| 2026-10-08 | promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 46606789 |
+| 2026-10-08 | promote | behandelen-verklaring-van-afstand | Mark Backer | f8119da8 |
+| 2026-10-08 | promote | behandelen-verzoek-om-correctie | Mark Backer | 40839198 |
+| 2026-10-08 | promote | behandelen-verzoek-om-geheimhouding | Mark Backer | e07f0084 |
+| 2026-10-08 | promote | behandelen-verzoek-om-kiezerspas | Mark Backer | 92d89d98 |
+| 2026-10-08 | promote | behandelen-verzoek-om-verwijdering-van-gegevens | Mark Backer | a46cdf36 |
+| 2026-10-08 | promote | behandelen-verzoek-om-volmacht | Mark Backer | ab85fbe9 |
+| 2026-10-08 | promote | beheerder-van-de-begraafplaats | Mark Backer | 4c3f379c |
+| 2026-10-08 | promote | beheren-begraafplaatsen | Mark Backer | 6bbc969f |
+| 2026-10-08 | promote | beheren-crematoria | Mark Backer | c7ffced3 |
+| 2026-10-08 | promote | beheren-grafrechten | Mark Backer | 56bbebb1 |
+| 2026-10-08 | promote | beheren-graven | Mark Backer | df71ad33 |
+| 2026-10-08 | promote | beheren-nederlanderschap | Mark Backer | 75352916 |
+| 2026-10-08 | promote | beheren-reisdocumenten | Mark Backer | 5b65a649 |
+| 2026-10-08 | promote | beheren-rijbewijzen | Mark Backer | 43c789c3 |
+| 2026-10-08 | promote | beheren-stempassen | Mark Backer | 6ecbd786 |
+| 2026-10-08 | promote | beschikking | Mark Backer | 7ce4fb20 |
+| 2026-10-08 | promote | beslisser | Mark Backer | de6b6cfd |
+| 2026-10-08 | promote | besluit | Mark Backer | ffacdd62 |
+| 2026-10-08 | promote | besluit-basisregistratie-personen | Mark Backer | 3483aa97 |
+| 2026-10-08 | promote | besluit-burgerlijke-stand-1994 | Mark Backer | e9fa283f |
+| 2026-10-08 | promote | besluit-op-de-lijkbezorging | Mark Backer | 08bed3f3 |
+| 2026-10-08 | promote | besluit-verkrijging-en-verlies-nederlanderschap | Mark Backer | 26dc5c6f |
+| 2026-10-08 | promote | besmet-stoffelijk-overschot-gemeld | Mark Backer | ea49b21e |
+| 2026-10-08 | promote | bevolkingsadministratie-bijhouding | Mark Backer | 47bccd70 |
+| 2026-10-08 | promote | bewijs-van-in-leven-zijn | Mark Backer | 78dfaca2 |
+| 2026-10-08 | promote | bewijs-van-nederlanderschap | Mark Backer | 76be2307 |
+| 2026-10-08 | promote | bezorgen-stoffelijk-overschot | Mark Backer | 4c9e3cb3 |
+| 2026-10-08 | promote | bijhouden-burgerlijke-stand | Mark Backer | 19de3870 |
+| 2026-10-08 | promote | bijhouden-persoonsgegevens | Mark Backer | d6bf6d4c |
+| 2026-10-08 | promote | bijhoudingsgemeente | Mark Backer | 44796ad1 |
+| 2026-10-08 | promote | bijzettingenregister | Mark Backer | 110e7f3e |
+| 2026-10-08 | promote | bijzondere-begraafplaats-toestemming | Mark Backer | 176180f5 |
+| 2026-10-08 | promote | briefadres | Mark Backer | 579d0b3b |
+| 2026-10-08 | promote | briefadres-aanvragen | Mark Backer | cd4f1b54 |
+| 2026-10-08 | promote | briefadresgever | Mark Backer | 82fc94eb |
+| 2026-10-08 | promote | brp-adoptie-uitschrijving | Mark Backer | 882c9c0b |
+| 2026-10-08 | promote | brp-geheimhoudingsverzoek | Mark Backer | 1ce509f0 |
+| 2026-10-08 | promote | brp-inschrijving | Mark Backer | 02c3a830 |
+| 2026-10-08 | promote | brp-inschrijving-buitenlandse-akte | Mark Backer | 730241d9 |
+| 2026-10-08 | promote | brp-inschrijving-niet-in-leven-zijnd-kind | Mark Backer | 0ef99667 |
+| 2026-10-08 | promote | brp-inzagerecht | Mark Backer | bba4e793 |
+| 2026-10-08 | promote | brp-inzagerecht-gegevensverstrekking | Mark Backer | 532a62ad |
+| 2026-10-08 | promote | brp-uittreksel | Mark Backer | c3731935 |
+| 2026-10-08 | promote | brp-uittreksel-met-gezag | Mark Backer | 1b3630f9 |
+| 2026-10-08 | promote | brp-wijzigingsverzoek | Mark Backer | 7b2e6b42 |
+| 2026-10-08 | promote | burgemeester | Mark Backer | ebcfb1c5 |
+| 2026-10-08 | promote | burgerlijk-wetboek-boek-1 | Mark Backer | c44e6630 |
+| 2026-10-08 | promote | burgerlijke-stand-diensten | Mark Backer | bdd01180 |
+| 2026-10-08 | promote | college-van-b-w | Mark Backer | a794a542 |
+| 2026-10-08 | promote | crematorium | Mark Backer | fb947fd3 |
+| 2026-10-08 | promote | crematoriumregister | Mark Backer | ca8d0ad4 |
+| 2026-10-08 | promote | degene-die-in-de-lijkbezorging-voorziet | Mark Backer | e64a58e0 |
+| 2026-10-08 | promote | doodgeboren-kind-aangifte | Mark Backer | e3f3b362 |
+| 2026-10-08 | promote | echtscheiding-inschrijving | Mark Backer | 8a7f142c |
+| 2026-10-08 | promote | emigratie | Mark Backer | 560e79e0 |
+| 2026-10-08 | promote | erkenning-kind | Mark Backer | 44ce7252 |
+| 2026-10-08 | promote | exploitatie-fysieke-leefomgeving | Mark Backer | 8c77a623 |
+| 2026-10-08 | promote | exploiteren-van-begraafplaatsen | Mark Backer | 729d3b0c |
+| 2026-10-08 | promote | geboorte | Mark Backer | c68c81ac |
+| 2026-10-08 | promote | geboorteaangifte | Mark Backer | f02f4bff |
+| 2026-10-08 | promote | geboorteakte | Mark Backer | f34823c3 |
+| 2026-10-08 | promote | geboorteakte-levenloos-kind | Mark Backer | d5855890 |
+| 2026-10-08 | promote | gedenkteken-plaatsingsvergunning | Mark Backer | de467569 |
+| 2026-10-08 | promote | gemeente | Mark Backer | 6d747552 |
+| 2026-10-08 | promote | gemeentebegrafenis | Mark Backer | 3abd1ac5 |
+| 2026-10-08 | promote | gemeentelijke-lijkschouwer | Mark Backer | 1ecc2b45 |
+| 2026-10-08 | promote | gemeenteraad | Mark Backer | ab158614 |
+| 2026-10-08 | promote | geregistreerd-partnerschap-omzetting-in-huwelijk | Mark Backer | a1116cc8 |
+| 2026-10-08 | promote | geregistreerd-partnerschap-ontbinding | Mark Backer | 1679a099 |
+| 2026-10-08 | promote | geregistreerd-partnerschapaangifte | Mark Backer | 4f1cf6f2 |
+| 2026-10-08 | promote | geslachtswijzigingsaangifte | Mark Backer | f95dd193 |
+| 2026-10-08 | promote | gewaarmerkte-kopie-reisdocument-aanvragen | Mark Backer | d9cf896d |
+| 2026-10-08 | promote | ggd | Mark Backer | e6ba4ee6 |
+| 2026-10-08 | promote | graf | Mark Backer | a5fe8bc3 |
+| 2026-10-08 | promote | graf-aanvragen | Mark Backer | 60e36a4b |
+| 2026-10-08 | promote | grafbedekking | Mark Backer | efc1c99c |
+| 2026-10-08 | promote | grafonderhoud | Mark Backer | 2d368a46 |
+| 2026-10-08 | promote | grafrecht | Mark Backer | 600a2510 |
+| 2026-10-08 | promote | grafuitgifte | Mark Backer | b992efa2 |
+| 2026-10-08 | promote | heffing | Mark Backer | 79f387d5 |
+| 2026-10-08 | promote | heffingsverordening | Mark Backer | 7b89528a |
+| 2026-10-08 | promote | herbegraven-of-alsnog-cremeren | Mark Backer | 8f22ab3b |
+| 2026-10-08 | promote | houder-van-de-begraafplaats | Mark Backer | b4b7bc4d |
+| 2026-10-08 | promote | houder-van-een-plaats-van-bijzetting | Mark Backer | 08185338 |
+| 2026-10-08 | promote | houder-van-het-crematorium | Mark Backer | a4c8e84d |
+| 2026-10-08 | promote | houder-van-het-reisdocument | Mark Backer | 3f43215f |
+| 2026-10-08 | promote | houder-van-het-rijbewijs | Mark Backer | 2cb4fccc |
+| 2026-10-08 | promote | huwelijk | Mark Backer | 70497d9d |
+| 2026-10-08 | promote | huwelijksaangifte | Mark Backer | cea2c50f |
+| 2026-10-08 | promote | identiteitskaart | Mark Backer | 7771a4b4 |
+| 2026-10-08 | promote | ingeschreven-persoon | Mark Backer | b055029d |
+| 2026-10-08 | promote | inhouden-reisdocument | Mark Backer | 7929da79 |
+| 2026-10-08 | promote | inlevering-van-het-reisdocument | Mark Backer | 06b04da6 |
+| 2026-10-08 | promote | inschrijven-ingezetene | Mark Backer | 2a594706 |
+| 2026-10-08 | promote | inschrijven-levenloos-geboren-kind | Mark Backer | 1c3db8b6 |
+| 2026-10-08 | promote | inschrijven-niet-ingezetene | Mark Backer | 7494625e |
+| 2026-10-08 | promote | inschrijven-ontbinding-huwelijk-of-partnerschap | Mark Backer | dd9c943b |
+| 2026-10-08 | promote | inschrijven-op-briefadres | Mark Backer | d10d0132 |
+| 2026-10-08 | promote | kerkgenootschap | Mark Backer | 8f934b6c |
+| 2026-10-08 | promote | ketenpartner | Mark Backer | 8d73ec12 |
+| 2026-10-08 | promote | kieswet | Mark Backer | f95d9089 |
+| 2026-10-08 | promote | kiezer | Mark Backer | 2781408c |
+| 2026-10-08 | promote | kiezerspas | Mark Backer | 662b0217 |
+| 2026-10-08 | promote | kostendrager | Mark Backer | db628fd5 |
+| 2026-10-08 | promote | legalisatie-handtekening | Mark Backer | 801f5111 |
+| 2026-10-08 | promote | levenloze-geboorte | Mark Backer | d7e7031c |
+| 2026-10-08 | promote | model-beheersverordening-begraafplaatsen | Mark Backer | 400bcc04 |
+| 2026-10-08 | promote | naamgebruik-verzoek-aanduiding | Mark Backer | 1cda4262 |
+| 2026-10-08 | promote | naamskeuzeverklaring | Mark Backer | ad95bff7 |
+| 2026-10-08 | promote | naamswijziging | Mark Backer | f4080815 |
+| 2026-10-08 | promote | nabestaande | Mark Backer | 3015797f |
+| 2026-10-08 | promote | naturalisatieceremonie | Mark Backer | 8284f0e5 |
+| 2026-10-08 | promote | naturalisatieoptie | Mark Backer | 74350b01 |
+| 2026-10-08 | promote | naturalisatieverzoek | Mark Backer | 5a98dd4e |
+| 2026-10-08 | promote | nederlanderschap | Mark Backer | ec0225a4 |
+| 2026-10-08 | promote | nederlanderschap-diensten | Mark Backer | 024698e0 |
+| 2026-10-08 | promote | officiele-documenten-verstrekking | Mark Backer | 92c38d01 |
+| 2026-10-08 | promote | officier-van-justitie | Mark Backer | c971d47d |
+| 2026-10-08 | promote | onderhouden-graf | Mark Backer | dfe556f9 |
+| 2026-10-08 | promote | onjuiste-inschrijving-op-adres-melden | Mark Backer | 792fbc17 |
+| 2026-10-08 | promote | ontbinding-huwelijk-of-partnerschap | Mark Backer | 0736e045 |
+| 2026-10-08 | promote | ontkenning-ouderschap | Mark Backer | f6e68a5b |
+| 2026-10-08 | promote | ontleding-stoffelijk-overschot-toestemming | Mark Backer | 1e759596 |
+| 2026-10-08 | promote | opgraven-stoffelijk-overschot | Mark Backer | b7cc7f22 |
+| 2026-10-08 | promote | opmaken-akte-levenloos-geboren-kind | Mark Backer | 9d215b9e |
+| 2026-10-08 | promote | opmaken-akte-van-erkenning | Mark Backer | 9252d97f |
+| 2026-10-08 | promote | opmaken-akte-van-naamskeuze | Mark Backer | 07efc2f7 |
+| 2026-10-08 | promote | opmaken-akte-van-overlijden | Mark Backer | a3f595b2 |
+| 2026-10-08 | promote | opmaken-geboorteakte | Mark Backer | 09604166 |
+| 2026-10-08 | promote | optant | Mark Backer | b2ef2873 |
+| 2026-10-08 | promote | ouder | Mark Backer | 502c4f47 |
+| 2026-10-08 | promote | overlijden | Mark Backer | ddd44b38 |
+| 2026-10-08 | promote | overlijdensaangifte | Mark Backer | 59375e4e |
+| 2026-10-08 | promote | overlijdensakte | Mark Backer | 76504e4b |
+| 2026-10-08 | promote | paspoort | Mark Backer | 8bd540c9 |
+| 2026-10-08 | promote | paspoort-tweede | Mark Backer | 49b549a6 |
+| 2026-10-08 | promote | paspoortbesluit | Mark Backer | 58fb5df1 |
+| 2026-10-08 | promote | paspoortwet | Mark Backer | 870290c9 |
+| 2026-10-08 | promote | persoonsgegevens-verklaring-onder-eed-of-belofte | Mark Backer | b355aa31 |
+| 2026-10-08 | promote | producten-en-dienstenrealisatie-fysieke-leefomgeving | Mark Backer | d6b6d2cc |
+| 2026-10-08 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | 0129e138 |
+| 2026-10-08 | promote | producten-en-dienstenrealisatie-veiligheidsdomein | Mark Backer | 0ffcb6bb |
+| 2026-10-08 | promote | rechthebbende-op-het-graf | Mark Backer | 48253516 |
+| 2026-10-08 | promote | regeling | Mark Backer | 3dd9a35a |
+| 2026-10-08 | promote | registreren-kiesgerechtigdheid | Mark Backer | e5c1d817 |
+| 2026-10-08 | promote | registreren-partnerschap | Mark Backer | 17e2fe6e |
+| 2026-10-08 | promote | reglement-rijbewijzen | Mark Backer | cafcb69b |
+| 2026-10-08 | promote | reisdocument | Mark Backer | 9b56c683 |
+| 2026-10-08 | promote | reisdocument-niet-ingezetene | Mark Backer | a1401861 |
+| 2026-10-08 | promote | rijbewijs | Mark Backer | 8d378f51 |
+| 2026-10-08 | promote | rijbewijs-aanvragen | Mark Backer | d8a8d547 |
+| 2026-10-08 | promote | rijbewijs-buitenlands-omwisseling | Mark Backer | 96c5d9ed |
+| 2026-10-08 | promote | rijbewijs-verlengen | Mark Backer | de1d64a6 |
+| 2026-10-08 | promote | rijk | Mark Backer | 4248be9d |
+| 2026-10-08 | promote | rijkswet-op-het-nederlanderschap | Mark Backer | bfa9152a |
+| 2026-10-08 | promote | rni-inschrijving | Mark Backer | cff439e4 |
+| 2026-10-08 | promote | rni-loket | Mark Backer | 3325ecea |
+| 2026-10-08 | promote | ruimen-graf | Mark Backer | 88b11d92 |
+| 2026-10-08 | promote | schouwen-stoffelijk-overschot | Mark Backer | dfd25d60 |
+| 2026-10-08 | promote | sluiten-begraafplaats | Mark Backer | a16df5ae |
+| 2026-10-08 | promote | stellen-andere-termijn | Mark Backer | 31531a71 |
+| 2026-10-08 | promote | stempas | Mark Backer | 5fafe008 |
+| 2026-10-08 | promote | stempas-ontvangen | Mark Backer | c18f677c |
+| 2026-10-08 | promote | stemrecht | Mark Backer | a8df03ec |
+| 2026-10-08 | promote | stoffelijk-overschot | Mark Backer | 91b69d95 |
+| 2026-10-08 | promote | toestaan-lijkbezorging | Mark Backer | dd3c8557 |
+| 2026-10-08 | promote | toevoegen-latere-vermelding | Mark Backer | 59746fd6 |
+| 2026-10-08 | promote | toezichthouder-brp | Mark Backer | dee62646 |
+| 2026-10-08 | promote | treffen-maatregel-bij-besmet-stoffelijk-overschot | Mark Backer | 3aa40fe2 |
+| 2026-10-08 | promote | trouwlocatie | Mark Backer | 8482f19c |
+| 2026-10-08 | promote | uitbaten-begraafplaatsen-en-crematoria | Mark Backer | 28ca7356 |
+| 2026-10-08 | promote | uitsluiting-van-het-kiesrecht | Mark Backer | 071d20af |
+| 2026-10-08 | promote | uittreksel-burgerlijke-stand | Mark Backer | f2449893 |
+| 2026-10-08 | promote | uitvaart-vervroegen-of-uitstellen | Mark Backer | b10ee42f |
+| 2026-10-08 | promote | uitvaartondernemer | Mark Backer | e8c89138 |
+| 2026-10-08 | promote | uitvoeren-adresonderzoek | Mark Backer | 29b99b7b |
+| 2026-10-08 | promote | uitvoeren-lijkbezorging | Mark Backer | 86aecd08 |
+| 2026-10-08 | promote | uitvoering-fysieke-leefomgeving | Mark Backer | 4cf231b3 |
+| 2026-10-08 | promote | uitvoering-openbare-orde-en-veiligheid | Mark Backer | 0a09adf5 |
+| 2026-10-08 | promote | uitvoering-publieksdiensten | Mark Backer | 8d6b48ba |
+| 2026-10-08 | promote | urn | Mark Backer | 4c6ac2bf |
+| 2026-10-08 | promote | vaststelling-ouderschap | Mark Backer | efa87120 |
+| 2026-10-08 | promote | verblijfplaats | Mark Backer | 9a8a878a |
+| 2026-10-08 | promote | vergunning | Mark Backer | cb3a5c51 |
+| 2026-10-08 | promote | vergunningenbeheer-publieksdiensten | Mark Backer | c8f106b0 |
+| 2026-10-08 | promote | verhuismelding | Mark Backer | fd4824cf |
+| 2026-10-08 | promote | verhuizing | Mark Backer | d6eb8b7f |
+| 2026-10-08 | promote | verkiezingen-gerelateerde-diensten | Mark Backer | 916ccaf4 |
+| 2026-10-08 | promote | verklaring-omtrent-gedrag-aanvragen | Mark Backer | 6f0ad7f0 |
+| 2026-10-08 | promote | verklaring-omtrent-het-gedrag | Mark Backer | 51e2f6db |
+| 2026-10-08 | promote | verklaring-van-afstand-nederlandse-nationaliteit | Mark Backer | d0c1536f |
+| 2026-10-08 | promote | verklaring-van-huwelijksbevoegdheid | Mark Backer | d73e3c96 |
+| 2026-10-08 | promote | verkrijging-van-het-nederlanderschap | Mark Backer | dc01e67a |
+| 2026-10-08 | promote | verlenen-grafrecht | Mark Backer | f557515e |
+| 2026-10-08 | promote | verlenen-toestemming-asverstrooiing | Mark Backer | a500de81 |
+| 2026-10-08 | promote | verlenen-toestemming-bijzondere-begraafplaats | Mark Backer | 8e0a9dcd |
+| 2026-10-08 | promote | verlenen-vergunning-bijzonder-crematorium | Mark Backer | 79eb410e |
+| 2026-10-08 | promote | verlenen-vergunning-grafbedekking | Mark Backer | 7d957612 |
+| 2026-10-08 | promote | verlenen-verlof-tot-begraving-of-crematie | Mark Backer | c9dea4c4 |
+| 2026-10-08 | promote | verlenen-verlof-tot-ontleding | Mark Backer | 827066aa |
+| 2026-10-08 | promote | verlies-van-het-nederlanderschap | Mark Backer | 1a96dac8 |
+| 2026-10-08 | promote | verlof-tot-begraven | Mark Backer | 6c74b66b |
+| 2026-10-08 | promote | vermissing-of-diefstal-reisdocument-doorgeven | Mark Backer | f9d4a649 |
+| 2026-10-08 | promote | vermissing-of-diefstal-rijbewijs-doorgeven | Mark Backer | ee610c7c |
+| 2026-10-08 | promote | vermissing-van-het-reisdocument | Mark Backer | 689efcaf |
+| 2026-10-08 | promote | vermissing-van-het-rijbewijs | Mark Backer | c8052023 |
+| 2026-10-08 | promote | verstrekken-overzicht-gegevensverstrekkingen | Mark Backer | ba020bf1 |
+| 2026-10-08 | promote | verstrekken-persoonsgegevens | Mark Backer | 38c2889d |
+| 2026-10-08 | promote | verstrekken-stempas | Mark Backer | e35930e0 |
+| 2026-10-08 | promote | verstrekken-uittreksels-en-verklaringen-burgerlijke-stand | Mark Backer | a8bde0a5 |
+| 2026-10-08 | promote | verval-van-het-grafrecht | Mark Backer | c638fdc2 |
+| 2026-10-08 | promote | verval-van-het-reisdocument | Mark Backer | a6a4a2df |
+| 2026-10-08 | promote | vervallen-verklaren-grafrecht | Mark Backer | 6274c4c8 |
+| 2026-10-08 | promote | vervoersdocumenten-stoffelijk-overschot | Mark Backer | 34c9115b |
+| 2026-10-08 | promote | verwerken-adreswijziging | Mark Backer | da674821 |
+| 2026-10-08 | promote | verwerken-buitenlands-document | Mark Backer | 5d26cede |
+| 2026-10-08 | promote | verwerken-emigratie | Mark Backer | 8e47b3a9 |
+| 2026-10-08 | promote | verwerken-vermissing-reisdocument | Mark Backer | bc1858d3 |
+| 2026-10-08 | promote | verwerken-vermissing-rijbewijs | Mark Backer | 5993c795 |
+| 2026-10-08 | promote | verzoeker-om-naturalisatie | Mark Backer | 14ea8bed |
+| 2026-10-08 | promote | verzorgen-gemeentebegrafenis | Mark Backer | 91cd194f |
+| 2026-10-08 | promote | vestiging-vanuit-het-buitenland | Mark Backer | 241a36e0 |
+| 2026-10-08 | promote | vluchtelingenpaspoort | Mark Backer | c8b30f8c |
+| 2026-10-08 | promote | volmachtbewijs-verkiezingen | Mark Backer | 3cd43fce |
+| 2026-10-08 | promote | voltrekken-huwelijk | Mark Backer | d4e827fc |
+| 2026-10-08 | promote | voornaamwijziging | Mark Backer | f8423db3 |
+| 2026-10-08 | promote | vreemdelingenpaspoort | Mark Backer | c5c0a1bd |
+| 2026-10-08 | promote | wegenverkeerswet-1994 | Mark Backer | ffd1457c |
+| 2026-10-08 | promote | wet-basisregistratie-personen | Mark Backer | 09174812 |
+| 2026-10-08 | promote | wet-justitiele-en-strafvorderlijke-gegevens | Mark Backer | 9ff07d6a |
+| 2026-10-08 | promote | wet-op-de-lijkbezorging | Mark Backer | d01f5128 |
+| 2026-10-08 | promote | wet-op-de-nederlandse-identiteitskaart | Mark Backer | 3027d415 |
+| 2026-10-08 | promote | wijzigen-geslachtsvermelding | Mark Backer | 45fc8b07 |
+| 2026-10-08 | promote | wijzigen-identificatienummers | Mark Backer | 9bf7c4a6 |
+| 2026-10-08 | promote | wijzigen-naamgebruik | Mark Backer | 265a8f6f |
+| 2026-10-08 | promote | zakenpaspoort | Mark Backer | 8b520f89 |
+| 2026-10-08 | promote | behandelen-verzoek-om-correctie | Mark Backer | b576c5d5 |
+| 2026-10-08 | promote | behandelen-verzoek-om-geheimhouding | Mark Backer | ebd8abcc |
+| 2026-10-08 | promote | behandelen-verzoek-om-verwijdering-van-gegevens | Mark Backer | faebbee0 |
+| 2026-10-08 | promote | besluit-basisregistratie-personen | Mark Backer | bb5e301b |
+| 2026-10-08 | promote | besluit-op-de-lijkbezorging | Mark Backer | 74eaa3c4 |
+| 2026-10-08 | promote | bijhoudingsgemeente | Mark Backer | e0c3c0f4 |
+| 2026-10-08 | promote | briefadres | Mark Backer | e527f84e |
+| 2026-10-08 | promote | briefadresgever | Mark Backer | c7bb29aa |
+| 2026-10-08 | promote | emigratie | Mark Backer | d727f72d |
+| 2026-10-08 | promote | graf-aanvragen | Mark Backer | 5e84fce2 |
+| 2026-10-08 | promote | grafuitgifte | Mark Backer | 167c8a10 |
+| 2026-10-08 | promote | herbegraven-of-alsnog-cremeren | Mark Backer | 24d69575 |
+| 2026-10-08 | promote | houder-van-de-begraafplaats | Mark Backer | 9dc52e27 |
+| 2026-10-08 | promote | ingeschreven-persoon | Mark Backer | dbac538a |
+| 2026-10-08 | promote | inschrijven-niet-ingezetene | Mark Backer | 47b4ab85 |
+| 2026-10-08 | promote | inschrijven-op-briefadres | Mark Backer | d3413f4c |
+| 2026-10-08 | promote | onjuiste-inschrijving-op-adres-melden | Mark Backer | 2cbd5a27 |
+| 2026-10-08 | promote | reglement-rijbewijzen | Mark Backer | e7d0129b |
+| 2026-10-08 | promote | rni-loket | Mark Backer | 6c6a70a4 |
+| 2026-10-08 | promote | toezichthouder-brp | Mark Backer | e222ce84 |
+| 2026-10-08 | promote | uitvoeren-adresonderzoek | Mark Backer | fea45d18 |
+| 2026-10-08 | promote | verhuizing | Mark Backer | 103d4c46 |
+| 2026-10-08 | promote | verwerken-adreswijziging | Mark Backer | fd79b3c4 |
+| 2026-10-08 | promote | vestiging-vanuit-het-buitenland | Mark Backer | 76de61f7 |
+| 2026-10-08 | promote | wegenverkeerswet-1994 | Mark Backer | 3c51f5d4 |
+| 2026-10-08 | promote | wet-basisregistratie-personen | Mark Backer | c40ca496 |
+| 2026-10-08 | promote | wet-op-de-lijkbezorging | Mark Backer | 6189ceaf |
+| 2026-10-08 | promote | wijzigen-naamgebruik | Mark Backer | 00f7fb30 |
+| 2026-10-08 | promote | asverstrooiing | Mark Backer | c7e182e1 |
+| 2026-10-08 | promote | behandelen-vergunningaanvragen-lijkbezorging | Mark Backer | 13f906d6 |
+| 2026-10-08 | promote | beheren-graven | Mark Backer | 0712a6f8 |
+| 2026-10-08 | promote | beslisser | Mark Backer | 626eaaf0 |
+| 2026-10-08 | promote | exploiteren-van-begraafplaatsen | Mark Backer | 6268172c |
+| 2026-10-08 | promote | gedenkteken-plaatsingsvergunning | Mark Backer | ab939a7e |
+| 2026-10-08 | promote | graf | Mark Backer | be9acff2 |
+| 2026-10-08 | promote | grafonderhoud | Mark Backer | f3bb0f67 |
+| 2026-10-08 | promote | houder-van-de-begraafplaats | Mark Backer | 88f47658 |
+| 2026-10-08 | promote | model-apv | Mark Backer | 29d2e8b0 |
+| 2026-10-08 | promote | model-beheersverordening-begraafplaatsen | Mark Backer | 9aa70080 |
+| 2026-10-08 | promote | nabestaande | Mark Backer | 100efbe5 |
+| 2026-10-08 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | fa7235db |
+| 2026-10-08 | promote | rechthebbende-op-het-graf | Mark Backer | dea98a23 |
+| 2026-10-08 | promote | toestaan-lijkbezorging | Mark Backer | fd388f3b |
+| 2026-10-08 | promote | urn | Mark Backer | ef6be80c |
+| 2026-10-08 | promote | vergunning | Mark Backer | fb5b4933 |
+| 2026-10-08 | promote | asverstrooiing | Mark Backer | b61de177 |
+| 2026-10-08 | promote | begraafplaats | Mark Backer | 93225858 |
+| 2026-10-08 | promote | beheren-grafrechten | Mark Backer | d21cfc86 |
+| 2026-10-08 | promote | gedenkteken-plaatsingsvergunning | Mark Backer | 641fc287 |
+| 2026-10-08 | promote | rechthebbende-op-het-graf | Mark Backer | 64a3da1b |
+| 2026-10-08 | promote | verlenen-grafrecht | Mark Backer | a1555daa |
+| 2026-10-08 | promote | verlof-tot-begraven | Mark Backer | e308314a |

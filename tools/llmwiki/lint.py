@@ -116,10 +116,28 @@ def check_sources_immutable(repo_root: Path, changed_paths: list[str]) -> list[s
     return errors
 
 
+def check_log_alleen_aanvullen(repo_root: Path, vorige: dict[str, str]) -> list[str]:
+    """Elk logboek begint met dezelfde gebeurtenissen als de vorige versie (`vorige`: pad relatief aan
+    repo_root → tekst, meestal uit HEAD). Vergelijkt de inhoud, niet de opmaak: een omzetting van het oude
+    kopformaat naar de tabel mag, een gewijzigde of verwijderde gebeurtenis niet."""
+    from . import logbook
+
+    errors = []
+    for rel_path, oude_tekst in sorted(vorige.items()):
+        pad = repo_root / rel_path
+        oud = logbook.lees_log(oude_tekst)
+        nieuw = logbook.lees_log(pad.read_text(encoding="utf-8")) if pad.exists() else []
+        if nieuw[:len(oud)] != oud:
+            eerste = next((i for i, (a, b) in enumerate(zip(oud, nieuw)) if a != b), min(len(oud), len(nieuw)))
+            errors.append(f"{rel_path}: het logboek is alleen aan te vullen; gebeurtenis {eerste + 1} "
+                          "is gewijzigd of verwijderd (alleen 'llmwiki promote apply' of 'publish apply' schrijft hier)")
+    return errors
+
+
 def check_goedgekeurd_guard(repo_root: Path) -> list[str]:
     """Elke pagina (of, bij een wiki met beoordelingen, elke beoordeling) met status 'goedgekeurd' moet een
     overeenkomende regel in log.md hebben, met de hash van de inhoud."""
-    from . import akkoord, beoordeling, hashing, paths
+    from . import akkoord, beoordeling, hashing, logbook, paths
 
     errors = []
     for wiki_root in (repo_root / "wikis").glob("*"):
@@ -147,7 +165,7 @@ def check_goedgekeurd_guard(repo_root: Path) -> list[str]:
                     continue
                 page_id = page.meta.get("id", page_path.stem)
                 content_hash = hashing.short(hashing.hash_text(page_path.read_text(encoding="utf-8")))
-                if f"| {page_id} |" not in log_text or content_hash not in log_text:
+                if not any(r.id == page_id and r.hash == content_hash for r in logbook.lees_log(log_text)):
                     errors.append(
                         f"{page_path}: status 'goedgekeurd' zonder overeenkomende regel in {log_path} "
                         "(gebruik 'llmwiki promote apply', zet dit niet handmatig)"

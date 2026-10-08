@@ -19,6 +19,12 @@ repos:
         language: system
         pass_filenames: false
 
+      - id: llmwiki-log-alleen-aanvullen
+        name: log.md is alleen aan te vullen
+        entry: uv run python -m llmwiki precommit log-alleen-aanvullen
+        language: system
+        pass_filenames: false
+
       - id: llmwiki-render-check
         name: gegenereerde pagina's gelijk aan de beoordelingen
         entry: uv run python -m llmwiki precommit render-check

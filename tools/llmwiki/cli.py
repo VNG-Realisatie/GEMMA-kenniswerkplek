@@ -600,6 +600,21 @@ def cmd_precommit_goedgekeurd(args) -> int:
     return 1 if errors else 0
 
 
+def cmd_precommit_log(args) -> int:
+    """log.md is alleen aan te vullen: vergelijk elk logboek met de versie in HEAD."""
+    repo_root = _repo_root()
+    vorige = {}
+    for log_path in sorted((repo_root / "wikis").glob("*/log.md")):
+        rel = log_path.relative_to(repo_root).as_posix()
+        r = subprocess.run(["git", "show", f"HEAD:{rel}"], cwd=repo_root, capture_output=True, text=True, check=False)
+        if r.returncode == 0:
+            vorige[rel] = r.stdout
+    errors = lint.check_log_alleen_aanvullen(repo_root, vorige)
+    for err in errors:
+        print(f"FOUT: {err}", file=sys.stderr)
+    return 1 if errors else 0
+
+
 def cmd_precommit_render(args) -> int:
     """Elke gegenereerde pagina is gelijk aan wat het render-script van de wiki uit de beoordelingen maakt."""
     fouten = 0
@@ -791,6 +806,8 @@ def build_parser() -> argparse.ArgumentParser:
     p_pc_sources.set_defaults(func=cmd_precommit_sources)
     p_pc_goedgekeurd = precommit_sub.add_parser("goedgekeurd-guard")
     p_pc_goedgekeurd.set_defaults(func=cmd_precommit_goedgekeurd)
+    p_pc_log = precommit_sub.add_parser("log-alleen-aanvullen", help="log.md: bestaande gebeurtenissen blijven gelijk")
+    p_pc_log.set_defaults(func=cmd_precommit_log)
     p_pc_render = precommit_sub.add_parser("render-check", help="Gegenereerde pagina's gelijk aan de beoordelingen")
     p_pc_render.set_defaults(func=cmd_precommit_render)
 

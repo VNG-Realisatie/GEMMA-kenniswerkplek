@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 
 import archimate_export as ae
 import gemma
-from llmwiki import beoordeling, hashing
+from llmwiki import beoordeling, hashing, logbook
 
 GEMMA = """<?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="GEMMA" id="id-gemma" version="5.0.0">
@@ -46,8 +46,10 @@ def _begrip(naam, atype, status="goedgekeurd", gemma_id=None, relaties=(), **ext
 
 
 def _log(begrippen):
-    return "\n".join(f"- [2026-10-02] promote | {bid} | {hashing.short(beoordeling.inhoud_hash(d))}"
-                     for bid, d in begrippen.items() if d["status"] == "goedgekeurd")
+    return logbook.tabelkop(False) + "".join(
+        logbook.tabelrij(logbook.Logregel("2026-10-02", "promote", bid, "Redacteur",
+                                          hashing.short(beoordeling.inhoud_hash(d))), False)
+        for bid, d in begrippen.items() if d["status"] == "goedgekeurd")
 
 
 def _begrippen():

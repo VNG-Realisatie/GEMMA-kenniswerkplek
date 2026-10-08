@@ -47,7 +47,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import bepaal_type  # noqa: E402
 import gam_gemeen  # noqa: E402
-from llmwiki import beoordeling, frontmatter, paths  # noqa: E402
+from llmwiki import beoordeling, frontmatter, logbook, paths  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
 ONDERWERPEN = Path("beoordelingen") / "onderwerpen"
@@ -210,7 +210,7 @@ class Wiki:
                 and str((x["afgeleid"]["uitkomst"].get("genoemd_begrip") or "")).lower() in (naam, bid)]
 
     def gewijzigd_na_akkoord(self, bid: str) -> bool:
-        return any(f"] promote | {bid} |" in r for r in self.log.splitlines())
+        return logbook.heeft_regel(self.log, "promote", bid)
 
 
 # --- Elementpagina ---

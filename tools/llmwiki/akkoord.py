@@ -74,7 +74,7 @@ def plan(wiki_root: Path, wiki_yaml: dict, onderwerp: str | None = None) -> dict
     return {
         "te_keuren": [{"id": bid, "naam": data.get("begrip", bid),
                        "type": data["afgeleid"]["uitkomst"].get("paginatype"),
-                       "eerder_goedgekeurd": f"] promote | {bid} |" in log} for bid, (_, data) in sorted(selectie.items())],
+                       "eerder_goedgekeurd": logbook.heeft_regel(log, "promote", bid)} for bid, (_, data) in sorted(selectie.items())],
         "voor_te_leggen": sorted(bid for bid, (_, d) in alle.items() if (d.get("afgeleid") or {}).get("open")
                                  and (onderwerp is None or onderwerp in d.get("onderwerpen", []))),
     }

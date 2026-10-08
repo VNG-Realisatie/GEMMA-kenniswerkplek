@@ -1306,7 +1306,7 @@ MediaWiki is één van de doelen, geen vaste afhankelijkheid.
 | Vertaling paginatype → ArchiMate-element of UML-klasse | Wiki: `mappings/`, eventueel wiki-script | Domeinkennis blijft in de wiki |
 
 Logboekdiscipline:
-- `log.md` wordt alleen aangevuld, altijd door de CLI, één kop per gebeurtenis, bijvoorbeeld `## [2026-09-27] promote | kandidaat-zaakdossier | M. Jansen | a3f9` (curatie) of `## [2026-09-27] publish | Contact | M. Jansen | a3f9` (sync). Lint en pre-commit weigeren wijzigen of verwijderen van bestaande regels.
+- `log.md` wordt alleen aangevuld, altijd door de CLI, één tabel met een rij per gebeurtenis: `| Datum | Actie | Id | Door | Hash |` (curatie, bijvoorbeeld `| 2026-09-27 | promote | kandidaat-zaakdossier | M. Jansen | a3f9 |`) of `| Datum | Actie | Pagina | Doel | Door | Hash |` (sync). `llmwiki precommit log-alleen-aanvullen` weigert een gewijzigde of verwijderde gebeurtenis; het vergelijkt de inhoud met HEAD, zodat het oudere formaat met één kop per gebeurtenis eenmalig kon worden omgezet (2026-10-08).
 - `voortgang.md` wordt bij `run complete`, `promote apply` en `workspace-check` opnieuw gegenereerd (curatie): open runs, aantallen per status, wat wacht op review, laatste export per doel. Een sync-wiki heeft geen `voortgang.md` — `log.md` en `git log` volstaan voor een kale werkkopie.
 
 Gevolgen:

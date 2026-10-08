@@ -61,6 +61,6 @@ def inhoud_hash(data: dict) -> str:
 
 def goedgekeurd_in_log(log_tekst: str, beoordeling_id: str, data: dict) -> bool:
     """Staat er een promotieregel voor dit id met de hash van de huidige inhoud?"""
-    kort = hashing.short(inhoud_hash(data))
-    return any(f"| {beoordeling_id} |" in regel and regel.rstrip().endswith(kort)
-               for regel in log_tekst.splitlines() if "] promote |" in regel)
+    from . import logbook
+
+    return logbook.heeft_regel(log_tekst, "promote", beoordeling_id, hashing.short(inhoud_hash(data)))
