@@ -1,45 +1,21 @@
 ---
 id: gemma-kennismodel
-type: analyse
+type: doc
 titel: Elementtypen, kenmerken en het GEMMA-kennismodel
-bijgewerkt: '2026-10-01'
+bijgewerkt: '2026-10-08'
 bronnen:
-- 2026-vng-over-gemma
-bronanalyse_van:
 - 2026-vng-over-gemma
 ---
 
 # Elementtypen, kenmerken en het GEMMA-kennismodel
 
-Bron: [tekst](../../../sources/raw/2026-vng-over-gemma.md) · [origineel (xml)](../../../sources/raw/2026-vng-over-gemma.xml) · [online](https://raw.githubusercontent.com/VNG-Realisatie/Over-GEMMA-Archi-repository/Master/export/Over%20GEMMA.xml)
+Bron: [Over GEMMA (kennismodel en modelleerafspraken)](../bronanalyses/algemeen/overig/2026-vng-over-gemma.md)
 
-Deze analyse vergelijkt de elementtypen van deze wiki, hun kenmerken en de beslistabel met het GEMMA-kennismodel uit Over GEMMA. Ze legt de besluiten van de redacteur vast en noemt wat er nog open is. Deze pagina is de bronanalyse van Over GEMMA: de regelnummers verwijzen naar de tekst hierboven. De wijzigingen in de beslistabel zijn besloten maar nog niet doorgevoerd; ze staan als punt in de todo van deze wiki.
+Welke elementtypen en kenmerken heeft het model, en waarom wijken ze af van of volgen ze het GEMMA-kennismodel? Deze analyse vergelijkt de elementtypen van deze wiki, hun kenmerken en de beslistabel met het GEMMA-kennismodel uit Over GEMMA. Ze legt de besluiten van de redacteur vast. Regelnummers verwijzen naar de tekst van Over GEMMA; wat de bron zegt, staat in haar bronanalyse. De besloten opzet van 2026-10-01 is doorgevoerd; de geldende beslistabel staat in [Kenmerken en beslistabel](../naslag/beslistabel.md).
 
 ## Het GEMMA-kennismodel
 
-Het kennismodel is volgens GEMMA "de invulling van de ArchiMate conventie voor de informatievoorziening van het gemeentelijk domein", met "alle in de GEMMA gebruikte ArchiMate element- en relatietypen" (regel 802-803). De uitgebreide view voegt "gewenste uitbreidingen, zoals diensten en producten" toe (regel 862). De procesarchitectuur, de modellering van product en dienst en de modellering van bedrijfsobject en bedrijfsfunctie staan in eigen views.
-
-| Paginatype in deze wiki | GEMMA-naam | ArchiMate | GEMMA-definitie | Herkomst | Regel | Verschil |
-|---|---|---|---|---|---|---|
-| bedrijfsobject | Bedrijfsobject | Business Object | Een concept dat binnen een bepaald domein wordt gebruikt en betekenis heeft. | GEMMA | 182 | Gelijk. Deze wiki toetst strenger: het object wordt operationeel bewerkt. |
-| bedrijfsobject (contract) | Afspraak | Contract | Overeenkomst tussen meerdere partijen betreffende een bepaald onderwerp. | GEMMA | 246 | Naam verschilt. Alleen in de view over product en dienst, niet in de twee kennismodel-views. |
-| product | Product | Product | Een Product is een gebundeld aanbod van diensten met bijbehorende afspraken, geleverd door een organisatie aan een afnemer en met waarde voor die afnemer. | GEMMA | 76 | Een product bundelt diensten en afspraken, geen bedrijfsobjecten (regel 257). |
-| bedrijfsdienst | Dienst | Business Service | Een afgebakende prestatie van een persoon of organisatie (de dienstverlener), die voorziet in een behoefte van haar omgeving (de dienstafnemer(s)). | NORA | 243 | Naam verschilt. |
-| bedrijfsproces | Bedrijfsproces | Business Process | Reeks opeenvolgend uit te voeren activiteiten die bijdraagt aan een specifiek resultaat, zoals de levering van een Product of Dienst. | GEMMA | 320 | Gelijk. GEMMA kent daaronder deelproces, processtap en handeling. |
-| bedrijfsfunctie | Bedrijfsfunctie | Business Function | Activiteiten die zijn gegroepeerd omdat daarvoor vergelijkbare bedrijfsmiddelen, kennis of competenties nodig zijn. | GEMMA | 325 | Gelijk. |
-| bedrijfsgebeurtenis | Gebeurtenis | Business Event | Iets dat binnen of buiten een organisatie is gebeurd en binnen die organisatie of daarbuiten gevolgen heeft. | GEMMA | 874 | Naam verschilt. GEMMA legt de nadruk op de gevolgen, deze wiki op het ogenblikkelijke karakter. |
-| actor | Actor | Business Actor | Een organisatie, afdeling daarbinnen of persoon die activiteiten kan uitvoeren. | GEMMA | 572 | Gelijk. |
-| rol | Rol | Business Role | Een rol is de verantwoordelijkheid voor specifiek gedrag waar een actor aan toegewezen kan worden. | ArchiMate | 569 | Gelijk. |
-| samenwerkingsverband (besloten) | Bedrijfssamenwerking | Business Collaboration | Een bedrijfssamenwerking is een (tijdelijke) samenstelling van twee of meer bedrijfsrollen resulterend in een specifiek collectief gedrag in een bepaalde context. | ArchiMate | 817 | GEMMA spreekt over rollen, niet over partijen, en noemt tijdelijkheid. |
-| kanaal (besloten) | Kanaal | Business Interface | Communicatiekanaal dat bij de dienstverlening wordt gebruikt. Elk kanaal kent verschillende vormen waarin informatie kan worden gedeeld. | NORA | 870 | Gelijk. |
-| annotatie `data_object` | Data-object | Data Object | Samenhangende set gegevens die geautomatiseerd kan worden verwerkt. | GEMMA | 897 | Gelijk. In GEMMA realiseert een data-object een bedrijfsobject (regel 971). |
-| herkend: Business Interaction (sinds 2026-10-08 paginatype bedrijfsinteractie) | — | Business Interaction | — | — | — | Niet in het kennismodel; in het GEMMA-model wel, als *Ketensamenwerking*. |
-| geen pagina: Representation, Location | — | Representation, Location | — | — | — | Niet in het kennismodel. |
-| bedrijfsobject (governance-object: wet of verordening als geheel); wordt beleidskader | Beleidskader | Driver | Beleidskader is gebaseerd op bestaand overheidsbeleid (Nationaal en Europees) en op de instrumenten die in het kader van dat beleid zijn ontwikkeld, zoals wetten, regelgeving, Kamerstukken en bestuursakkoorden | NORA | 448 | Besloten 2026-10-01: een concrete wet of verordening wordt een beleidskader in `motivatie/`; het object Regeling blijft. |
-| buiten dit model: losse norm (Requirement of Constraint) | Standaard; Implicatie | Constraint; Requirement | Constraint is in GEMMA alleen een standaard; Requirement is een implicatie van een principe of een eis aan een informatiesysteem. | Wikipedia; GEMMA | 18, 450 | GEMMA heeft geen type voor een wettelijke norm. |
-| buiten dit model: vermogen, groepering, doel | Capability; Domein, Beleidsdomein; Kwaliteitsdoel | Capability; Grouping; Goal | — | — | 565, 183, 54, 447 | GEMMA gebruikt ze, deze wiki modelleert ze niet. De mappen per beleidsdomein volgen dezelfde Iv3-indeling als GEMMA (regel 193). |
-
-Ook bevestigend: GEMMA kent een rol *Klant (intern of extern)*, "de ontvanger van producten of diensten" (regel 567). Dat is de afnemer uit de nieuwe kenmerken. Het begrip *Doelgroep* is in GEMMA een rol die applicatieservices ordent naar gebruikersgroep (regel 214). Dat is iets anders dan een doelgroep in deze wiki (een indeling van een actor, zoals minima).
+Wat Over GEMMA over de elementtypen zegt, met per paginatype van deze wiki de GEMMA-naam, de definitie en het verschil, staat in de [bronanalyse van Over GEMMA](../bronanalyses/algemeen/overig/2026-vng-over-gemma.md) (verplaatst 2026-10-08).
 
 ## Kenmerkenmatrix: huidige situatie
 
@@ -108,114 +84,6 @@ Aantal getelde drempelcriteria per type, en hoeveel daarvan ja moeten zijn:
 - **Eenzijdige conflictcontrole.** De beslistabel ziet "geen gedrag, wel een soort gedrag" als conflict, maar niet het omgekeerde: een gedragsbegrip met *afspraak* ja wordt zonder melding een proces.
 - **Representatie wordt elke keer voorgelegd**, terwijl de redacteur al besliste hoe het moet: vermelden bij het object, geen pagina (Register van begraven lijken, 30 september 2026).
 
-## Kenmerkenmatrix: besloten opzet
-
-Elk type krijgt één kernrelatie (**K**). Die relaties volgen het GEMMA-kennismodel: een dienst wordt gerealiseerd door een proces of functie (regel 925, 921), een gebeurtenis triggert een proces (regel 915), een kanaal is toegewezen aan een dienst (regel 910), een product bundelt diensten en afspraken (regel 257), een rol wordt toegewezen aan een functie (regel 918) en, volgens het besluit van 1 oktober, ook aan een proces.
-
-Legenda: **T** bepaalt het type · **K** kernrelatie, moet ja zijn · **D** telt in de drempel · **P** poort voor alle typen · **S** specialisatieniveau · **A** aanvulling (tegenhanger of annotatie) · **x** moet nee zijn voor dit type · **E** vaste uitkomst zonder pagina.
-
-| Kenmerk | Bedrijfsobject | Afspraak | Product | Dienst | Bedrijfsproces | Bedrijfsfunctie | Gebeurtenis | Actor | Rol | Bedrijfssamenwerking | Kanaal | Interactie (herkend) | Geen pagina |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **Scope en afhankelijkheid** | | | | | | | | | | | | | |
-| herkenbaar | P | P | P | P | P | P | P | P | P | P | P | P | P |
-| gemeentelijk | P | P | P | P | P | P | P | P | P | P | P | P | P |
-| buiten kernlagen (moet nee) | P | P | P | P | P | P | P | P | P | P | P | P | P |
-| slechts eigenschap (moet nee) | P | P | P | P | P | P | P | P | P | P | P | P | P |
-| eigen identiteit | P | P | P | P | P | P | P | P | P | P | P | P | P |
-| betekenis in onderwerp (gewijzigd) | P | P | P | P | P | P | P | P | P | P | P | P | P |
-| relaties (vervalt) |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| zelfstandig beleidsbegrip | S | S | S | S | S | S | S | S | S | S | S |  |  |
-| **Aard** | | | | | | | | | | | | | |
-| gedrag |  |  |  | T | T | T | T |  |  |  |  | T |  |
-| handelende partij |  |  |  |  |  |  |  | T |  |  |  |  |  |
-| hoedanigheid |  |  |  |  |  |  |  |  | T |  |  |  |  |
-| samenwerkingsverband (gewijzigd) |  |  |  |  |  |  |  |  |  | T |  |  |  |
-| toegangspunt (gewijzigd) |  |  |  |  |  |  |  |  |  |  | T |  |  |
-| plaats (gewijzigd) |  |  |  |  |  |  |  |  |  |  |  |  | E |
-| aanbod als geheel |  |  | T |  |  |  |  |  |  |  |  |  |  |
-| **Partij** | | | | | | | | | | | | | |
-| los van verantwoordelijkheid |  |  |  |  |  |  |  | T | T |  |  |  |  |
-| meerdere vervullers (vervalt) |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| voert gedrag uit (nieuw) |  |  |  |  |  |  |  | K | K | K | K |  |  |
-| **Soort gedrag** | | | | | | | | | | | | | |
-| per keer doorlopen (gewijzigd) |  |  |  |  | T |  |  |  |  |  |  |  |  |
-| gegroepeerd gedrag |  |  |  |  |  | T |  |  |  |  |  |  |  |
-| toestandsverandering |  |  |  |  |  |  | T |  |  |  |  |  |  |
-| aangeboden gedrag |  |  |  | T |  |  |  |  |  |  |  |  |  |
-| gezamenlijk gedrag |  |  |  |  |  |  |  |  |  |  |  | T |  |
-| **Gedrag** | | | | | | | | | | | | | |
-| toegewezen partij (gewijzigd) |  |  |  | D | K | K |  |  |  |  |  |  |  |
-| gebruikt objecten |  |  |  |  | D | D |  |  |  |  |  |  |  |
-| aanleiding |  |  |  |  | D |  |  |  |  |  |  |  |  |
-| benoembaar resultaat (gewijzigd) |  |  |  | D | D |  |  |  |  |  |  |  |  |
-| komt herhaald voor (gewijzigd) |  |  |  |  | D |  | D |  |  |  |  |  |  |
-| eigen normering |  |  |  |  | D |  |  |  |  |  |  |  |  |
-| stabiel over tijd |  |  |  |  |  | D |  |  |  |  |  |  |  |
-| afnemer (nieuw) |  |  | D | D |  |  |  |  |  |  |  |  |  |
-| gerealiseerd door (nieuw) |  |  |  | K |  |  |  |  |  |  |  |  |  |
-| leidt tot gedrag (nieuw) |  |  |  |  |  |  | K |  |  |  |  |  |  |
-| **Passief** | | | | | | | | | | | | | |
-| onderscheidbare exemplaren | D | D | D |  |  |  |  | A | A |  |  |  |  |
-| levenscyclus | D | D |  |  |  |  |  | A | A |  |  |  |  |
-| wordt bewerkt (gewijzigd) | K | K |  |  |  |  |  | A | A |  |  |  |  |
-| omvat diensten en afspraken (nieuw) |  |  | K |  |  |  |  |  |  |  |  |  |  |
-| afspraak | x | T |  |  |  |  |  |  |  |  |  |  |  |
-| waarneembare vorm (gewijzigd) | x | x |  |  |  |  |  |  |  |  |  |  | E |
-| geautomatiseerd verwerkt | A | A | A | A | A | A | A | A | A |  |  |  |  |
-
-Toelichting bij de gewijzigde en nieuwe kenmerken:
-
-- **betekenis in onderwerp** wordt een poort. Nee betekent: verwijzen naar het onderwerp waar het begrip hoort.
-- **samenwerkingsverband** wordt het paginatype Bedrijfssamenwerking: een samenstelling van rollen die samen gedrag uitvoeren, ook tijdelijk. Een verband met eigen rechtspersoon, zoals de GGD, blijft een actor.
-- **toegangspunt** wordt het paginatype Kanaal, als één centrale set.
-- **plaats** en **waarneembare vorm** worden een vaste uitkomst zonder pagina. Een gebiedsindeling blijft een bedrijfsobject; een vorm wordt vermeld bij het object waarvan het de vorm is.
-- **voert gedrag uit**: is de partij toegewezen aan aanwijsbaar gemeentelijk gedrag, of ontsluit het kanaal een aanwijsbare dienst?
-- **per keer doorlopen** zonder de deelvraag naar een resultaat; dat telt apart.
-- **toegewezen partij** is de kernrelatie van proces en functie, en telt ook bij een dienst.
-- **benoembaar resultaat** telt ook bij een dienst: wat krijgt de afnemer?
-- **komt herhaald voor** (was: herhaald uitgevoerd) telt ook bij een gebeurtenis.
-- **afnemer**: is er een afnemer buiten de uitvoerder aanwijsbaar, de klant intern of extern?
-- **gerealiseerd door**: is er een proces of functie aanwijsbaar dat de dienst uitvoert?
-- **leidt tot gedrag**: start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag?
-- **omvat diensten en afspraken**: bestaat het product uit aanwijsbare diensten en afspraken?
-- **wordt bewerkt** is de kernrelatie van bedrijfsobject en afspraak.
-
-Het aantal kenmerken gaat van 35 naar 38. De set wordt niet kleiner, maar elk kenmerk telt voortaan bij een type waarvoor het onderscheidend is.
-
-## Besloten beslistabel
-
-| Stap | Als | Dan | Status |
-|---|---|---|---|
-| 1 Scope | niet herkenbaar of niet gemeentelijk | buiten scope, met reden | ongewijzigd |
-| 1 Scope | buiten kernlagen | buiten dit model, met het ArchiMate-type | ongewijzigd |
-| 2 Afhankelijk | slechts eigenschap | eigenschap van het genoemde begrip; geen pagina | ongewijzigd |
-| 2 Afhankelijk | niet eigen identiteit | onderdeel of deelstap; relaties opgetild | ongewijzigd |
-| 2 Afhankelijk | niet betekenis in onderwerp | verwijzing in de begrippenlijst, beoordelen in het onderwerp waar het hoort | nieuw |
-| 3 Consistentie | gedragskenmerken ja, maar niet gedrag | conflict, voorleggen | nieuw |
-| 3 Consistentie | partijkenmerken ja, maar geen partij, hoedanigheid of samenwerkingsverband | conflict, voorleggen | nieuw |
-| 3 Consistentie | afspraak of waarneembare vorm ja, naast een aard | conflict, voorleggen | nieuw |
-| 4 Aard | handelende partij én hoedanigheid | los van verantwoordelijkheid ja: Actor, nee: Rol | ongewijzigd |
-| 4 Aard | meer dan één aard (behalve actor en rol) | conflict, voorleggen | ongewijzigd |
-| 4 Aard | handelende partij | Actor; conflict als niet los van verantwoordelijkheid | ongewijzigd |
-| 4 Aard | hoedanigheid | Rol; conflict als los van verantwoordelijkheid | ongewijzigd |
-| 4 Aard | samenwerkingsverband | Bedrijfssamenwerking | gewijzigd |
-| 4 Aard | aanbod als geheel | Product | ongewijzigd |
-| 4 Aard | toegangspunt | Kanaal: koppelen aan de centrale set; een nieuw kanaal alleen na besluit van de redacteur | gewijzigd |
-| 4 Aard | plaats | fysieke plaats; geen pagina | gewijzigd |
-| 4 Gedrag | gedrag en precies één soort gedrag | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis of Dienst; Business Interaction: herkend, voorleggen | ongewijzigd |
-| 4 Gedrag | gedrag, maar geen of meer dan één soort | conflict, voorleggen | ongewijzigd |
-| 4 Passief | waarneembare vorm | vorm van het genoemde object; geen pagina, vermelden bij dat object | gewijzigd |
-| 4 Passief | afspraak | Afspraak (Contract) | gewijzigd (naam) |
-| 4 Passief | overig passief begrip | Bedrijfsobject | ongewijzigd |
-| 5 Drempel | kernrelatie van het type nee | geen element; voorleggen met de ontbrekende relatie | nieuw |
-| 5 Drempel | van de overige drempelcriteria meer dan één nee | geen element; voorleggen met de ontbrekende criteria | gewijzigd |
-| 6 Specialisatie | niet zelfstandig beleidsbegrip, met genoemd begrip | specialisatie zonder pagina; relaties opgetild | ongewijzigd |
-| 6 Specialisatie | niet zelfstandig beleidsbegrip, zonder genoemd begrip | voorleggen: noem het bredere begrip | ongewijzigd |
-| Aanvulling | Actor of Rol met exemplaren, levenscyclus en wordt bewerkt | ook een objectpagina (tegenhanger) | ongewijzigd |
-| Aanvulling | Dienst waarvan het realiserende proces nog geen pagina heeft | signaal: proces als kandidaat voorleggen | nieuw |
-| Aanvulling | Gebeurtenis waarvan het gestarte gedrag nog geen pagina heeft | signaal: proces als kandidaat voorleggen | nieuw |
-| Aanvulling | geautomatiseerd verwerkt | annotatie data-object | ongewijzigd |
-
 ## Relaties: kennismodel en wiki
 
 Het kennismodel legt per typepaar vast welke relatie GEMMA gebruikt. Deze wiki staat de volledige ArchiMate-set toe. Het aantal is het aantal relatierijen op de elementpagina's op 1 oktober 2026.
@@ -245,7 +113,7 @@ Het kennismodel legt per typepaar vast welke relatie GEMMA gebruikt. Deze wiki s
 
 ## Inhoudelijke gevolgen
 
-Deze gevolgen leidden tot de besluiten van 1 oktober 2026 bovenaan de pagina.
+Deze gevolgen leidden tot de besluiten van 1 oktober 2026 onderaan de pagina.
 
 - **Rol aan proces.** Het besluit van 1 oktober bevestigt wat de wiki al doet: zeven toewijzingen van een rol aan een proces blijven staan. *Toegewezen partij* blijft de kernrelatie van een proces.
 - **Actor via de rol.** In GEMMA wordt een actor alleen aan een rol toegewezen (regel 914). In deze wiki staan zes actoren direct aan een proces en één aan een gebeurtenis, en zeventien actoren met een associatie naar een object. Volgt de wiki GEMMA, dan komt er steeds een rol tussen. Dan wordt de kernrelatie van een actor *vervult een rol*.
@@ -281,4 +149,4 @@ Deze gevolgen leidden tot de besluiten van 1 oktober 2026 bovenaan de pagina.
 
 ## Open vragen
 
-Geen. De vragen van 1 oktober 2026 zijn beantwoord; zie de besluiten bovenaan. De namen voor de toegang tot een object (verantwoordelijkheden van een rol en handelingen van een functie of proces) zijn uitgewerkt en besloten in [Toegang tot een bedrijfsobject](gegevensrollen.md).
+Geen. De vragen van 1 oktober 2026 zijn beantwoord; zie de besluiten hierboven. De namen voor de toegang tot een object (verantwoordelijkheden van een rol en handelingen van een functie of proces) zijn uitgewerkt en besloten in [Toegang tot een bedrijfsobject](gegevensrollen.md).

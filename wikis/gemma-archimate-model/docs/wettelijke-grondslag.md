@@ -1,6 +1,6 @@
 ---
 id: wettelijke-grondslag
-type: analyse
+type: doc
 titel: Wettelijke grondslag
 bijgewerkt: '2026-10-08'
 bronnen:
@@ -18,7 +18,7 @@ bronnen:
 
 # Wettelijke grondslag
 
-Aanleiding: in burgerzaken staan vier diensten zonder wettelijke grondslag, waaronder Gewaarmerkte kopie reisdocument aanvragen, die alleen op de productpagina van Utrecht steunt. De redacteur stelt op 2026-10-08 de regel Wettelijke grondslag vast (`AGENTS.md`). Deze analyse meet welke elementen geen landelijke wettelijke bron hebben, zoekt die bron alsnog op en geeft per geval een advies. De beoordelingen zijn nog niet aangepast: dat gaat per geval na een besluit van de redacteur (regel Per geval).
+Waarop steunt een element, en wanneer blijft het zonder landelijke wettelijke grondslag? Aanleiding: in burgerzaken staan vier diensten zonder wettelijke grondslag, waaronder Gewaarmerkte kopie reisdocument aanvragen, die alleen op de productpagina van Utrecht steunt. De redacteur stelt op 2026-10-08 de regel Wettelijke grondslag vast (`AGENTS.md`). Deze analyse meet welke elementen geen landelijke wettelijke bron hebben, zoekt die bron alsnog op en geeft per geval een advies. De beoordelingen zijn nog niet aangepast: dat gaat per geval na een besluit van de redacteur (regel Per geval).
 
 ## Groepen in de Regelgevingindeling
 

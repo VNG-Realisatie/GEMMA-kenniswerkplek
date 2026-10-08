@@ -1,13 +1,13 @@
 ---
 id: synoniemen-en-homoniemen
-type: analyse
+type: doc
 titel: Synoniemen en homoniemen
 bijgewerkt: '2026-10-01'
 ---
 
 # Synoniemen en homoniemen
 
-Deze analyse vergelijkt hoe de vorige bedrijfsobjectenwiki (repository GEMMA-GGM-bedrijfsobjectenwiki, map Bedrijfsarchitectuur) met synoniemen en homoniemen omging, met wat deze wiki nu doet, en adviseert hoe het past in de aanpak met kenmerken en beslistabel ([kenmerken per elementtype](kenmerken.md)).
+Hoe gaat het model om met andere woorden voor hetzelfde begrip, en met dezelfde naam voor een ander begrip? Deze analyse vergelijkt hoe de vorige bedrijfsobjectenwiki (repository GEMMA-GGM-bedrijfsobjectenwiki, map Bedrijfsarchitectuur) met synoniemen en homoniemen omging, met wat deze wiki nu doet, en adviseert hoe het past in de aanpak met kenmerken en beslistabel ([kenmerken per elementtype](kenmerken.md)).
 
 ## Begrippen
 

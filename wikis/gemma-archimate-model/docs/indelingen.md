@@ -1,6 +1,6 @@
 ---
 id: indelingen
-type: analyse
+type: doc
 titel: Indelingen van de bedrijfsarchitectuur
 bijgewerkt: '2026-10-08'
 bronnen:
@@ -11,9 +11,9 @@ bronnen:
 
 # Indelingen van de bedrijfsarchitectuur
 
-Bronnen: Over GEMMA [tekst](../../../sources/raw/2026-vng-over-gemma.md) (regelnummers verwijzen hiernaar) · GEMMA-architectuurmodel [origineel](../../../sources/raw/2026-vng-gemma-2026-10-02.archimate), gelezen via `tools/gemma.py` · [Producten en diensten procesarchitectuur](https://www.gemmaonline.nl/wiki/Producten_en_diensten_procesarchitectuur) op GEMMA Online, met de externe UPL-lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-extern.md) (500 producten; voor lijkbezorging [bronanalyse](../bronanalyses/lijkbezorging/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)) en de interne lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-intern.md) (215 producten).
+Bronnen: Over GEMMA [bronanalyse](../bronanalyses/algemeen/overig/2026-vng-over-gemma.md) (regelnummers verwijzen naar de tekst van de bron) · GEMMA-architectuurmodel [origineel](../../../sources/raw/2026-vng-gemma-2026-10-02.archimate), gelezen via `tools/gemma.py` · [Producten en diensten procesarchitectuur](https://www.gemmaonline.nl/wiki/Producten_en_diensten_procesarchitectuur) op GEMMA Online, met de externe UPL-lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-extern.md) (500 producten; voor lijkbezorging [bronanalyse](../bronanalyses/lijkbezorging/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)) en de interne lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-intern.md) (215 producten).
 
-Hoe het model wordt ingedeeld in de hele breedte van de bedrijfsarchitectuur: welke indelingen GEMMA heeft, welke erbij komen, welk elementtype waar valt, en welke kenmerken en regels daarvoor nodig zijn. Aanleiding: lijkbezorging was plat en fijnmazig (één functie voor negen processen, vijftien bedrijfsobjecten naast elkaar). Doel: een compleet GEMMA-model op het juiste abstractieniveau, met een indeling die ook in Archi zichtbaar is. De besluiten staan onderaan; de omzetting in de beslistabel volgt.
+Waar staat elk element in de indelingen van het model? Hoe het model wordt ingedeeld in de hele breedte van de bedrijfsarchitectuur: welke indelingen GEMMA heeft, welke erbij komen, welk elementtype waar valt, en welke kenmerken en regels daarvoor nodig zijn. Aanleiding: lijkbezorging was plat en fijnmazig (één functie voor negen processen, vijftien bedrijfsobjecten naast elkaar). Doel: een compleet GEMMA-model op het juiste abstractieniveau, met een indeling die ook in Archi zichtbaar is. De besluiten staan onderaan; de omzetting in de beslistabel volgt.
 
 ## Begrippen
 
@@ -25,17 +25,7 @@ Hoe het model wordt ingedeeld in de hele breedte van de bedrijfsarchitectuur: we
 
 ### Procesniveaus
 
-De niveaus volgen sinds 2026-10-08 de ladder van GEMMA Online, Proceshiërarchie (PH); de afweging staat in [Proceshiërarchie](proceshierarchie.md). Tot dan lagen de niveaus van de wiki één trede hoger: een taak boven de processen per kernobject, en wat nu bedrijfsproces heet, heette deelproces.
-
-- **Levensloopproces**: per kernobject het gedrag over de levensloop van één exemplaar, van begin tot eind (*Beheren grafrechten*: van uitgifte tot verval). In GEMMA een cluster van bedrijfsprocessen over één thema (PH 91), met GEMMA type *Bedrijfsproces (cluster)*; in ArchiMate een business-process. Per kernobject één; het taakveld en beleidsdomein zijn die van het kernobject. Binnen een ketensamenwerking mag een kernobject één levensloopproces per partij hebben, als die samen de bedrijfsinteractie met dat kernobject bedienen (besluit 2026-10-08).
-- **Bedrijfsproces**: klant-tot-klant, onder verantwoordelijkheid van één organisatie, en het levert een product, dienst of besluit (PH 47, 81): één mutatie in de levensloop van een kernobject (*Verlenen grafrecht*). Vaak een specialisatie van een generiek GEMMA-bedrijfsproces (*Behandelen aanvraag product*); een specialisatie is geen niveau (PH 95). Bedrijfsprocessen leveren de producten en diensten.
-- **Deelproces**: in de betekenis van GEMMA een deel van een bedrijfsproces binnen één bedrijfsfunctie, dat een deeldienst levert (PH 83). Meestal geen pagina; de tekst gaat naar het bedrijfsproces.
-- **Cluster naar soort werk**: de bedrijfsprocessen van één soort, als specialisatie van een generiek GEMMA-bedrijfsproces. Alleen bij minstens twee bedrijfsprocessen; anders specialiseert het bedrijfsproces zelf.
-- **Processtap**, **handeling**: geen pagina (regel 560, 563).
-
-Geen procesniveau zijn:
-- **Taak**: vervalt. Boven het levensloopproces staan de groeperingen beleidsdomein en taakveld uit de Beleidsdomeinindeling; het beleidsdomein volgt uit het kernobject, want een bedrijfsobject heeft één beleidsdomein.
-- **Ketenproces**: waar de bedrijfsprocessen van meer partijen samenkomen, is dat een **ketensamenwerking**: een bedrijfsinteractie, bediend door de bedrijfsprocessen van de partijen en uitgevoerd door een bedrijfssamenwerking of hun rollen (PH 146; GEMMA-element *Ketensamenwerking*). Het ketenproces erboven is impliciet: het hoeft niet afgesproken te zijn of te bestaan, en staat alleen in de beschrijving van de interactie. Een keten kan ook orkestratie zijn: één partij is verantwoordelijk en de andere voeren onder haar aansturing een deel uit (IK 27-34); de gemeente levert dan een dienst aan derden.
+De procesniveaus, de processtructuur (één levensloopproces per kernobject) en de toets aan het Kennismodel procesarchitectuur staan in [Processen: niveaus, klant-tot-klant en ketensamenwerking](proceshierarchie.md).
 
 ### Objectniveaus
 
@@ -105,35 +95,9 @@ Tot 2026-10-08 was de taak een eigen niveau, met een hoofdbeleidsdomein als eige
 | Beleidsdomeinindeling | Bedrijfsobjecten (kern- en subobjecten), Producten en diensten, Beleidskaders per beleidsdomein |
 | Doelgroepindeling | Actoren en rollen per doelgroep; Kanalen per doelgroep |
 
-## Processtructuur
-
-### Eén levensloopproces per kernobject
-
-Een gemeente levert 500 externe en 215 interne producten en diensten (UPL-lijsten); GEMMA dekt ze met zo'n 50 generieke bedrijfsprocessen. Eén bedrijfsproces per product of dienst volgt de definitie van GEMMA (klant-tot-klant, PH 81), maar zonder groepering wordt het model plat. Eén levensloopproces per kernobject groepeert ze: herkenbaar per beleidsdomein, en het aantal groeit met het aantal kernobjecten, niet met het aantal producten. Het cluster naar soort werk houdt de aansluiting op het processenlandschap. GEMMA kent ook processen die een levensloop omvatten (*Onderhouden*, *Heffen en innen*).
-
-### Toets aan het Kennismodel procesarchitectuur
-
-Het kennismodel (regel 544-606) is work in progress.
-
-| Kennismodel (regel) | Wiki | Oordeel |
-|---|---|---|
-| Actor → toewijzing → Rol (602) | actor alleen via een rol | volgt |
-| Rol → toewijzing → Deelproces (599) | rol aan bedrijfsproces (het deelproces heeft meestal geen pagina) | volgt |
-| Product → bediening → Klant (596) | *afnemer* noemt een specialisatie van Klant; het product bedient die rol | volgt (toegevoegd) |
-| Product → associatie → Beleidskader (595) | *is grondslag voor* bij voorkeur van een product, tijdelijk van proces of dienst | volgt, met overgang |
-| Product → aggregatie → Dienst (593) | *omvat diensten en afspraken* | volgt |
-| Bedrijfsfunctie ↔ bediening ↔ Bedrijfsproces (597, 604) | *bedient gedrag* | volgt |
-| Bedrijfsproces → aggregatie → Deelproces → Processtap → Handeling (605, 601, 589) | procesniveaus; deelproces, processtap en handeling meestal zonder pagina | volgt |
-| Bedrijfsproces → toegang → Bedrijfsobject (606) | kernobject via toegang | volgt |
-| Procescluster → aggregatie → Bedrijfsproces, Procescluster (419-420) | levensloopproces en cluster naar soort werk | volgt |
-| Deelproces → realisatie → Deelservice (398) | een bedrijfsproces levert een dienst | volgt (tot 2026-10-08 een afwijking: het deelproces van de wiki leverde een dienst) |
-| Ketenproces → aggregatie → Bedrijfsproces (590) | ketensamenwerking als bedrijfsinteractie, bediend door de bedrijfsprocessen (PH 146) | afwijking van het kennismodel, in lijn met de pagina Proceshiërarchie; terugmelding |
-| Relaties tussen actoren: niet in het kennismodel | alleen structurele relaties | aanvulling |
-| Gebeurtenis: niet in deze view | uit het uitgebreide kennismodel (regel 915, 924) | aanvulling |
-
-De afwijkingen en aanvullingen gaan als voorstel naar het GEMMA-team (todo).
-
 ## Kenmerken en beslistabel
+
+Dit is het ontwerp van de criteria voor de indelingen (2026-10-04, bijgewerkt 2026-10-08). De werkinstructie staat in skill gemma-archimate-model-criteria (stap 7) en in [Kenmerken en beslistabel](../naslag/beslistabel.md); de controles zitten in `tools/bepaal_type.py` en `tools/afleiden.py`.
 
 ### Per elementtype
 
@@ -195,7 +159,7 @@ Een nieuwe stap na stap 6, met de context van alle uitkomsten.
 
 - Cluster naar soort werk bij *groepeert processen* met een specialisatie naar GEMMA; minstens twee bedrijfsprocessen. Zonder specialisatie voorleggen: een taak is geen procesniveau.
 - Levensloopproces bij *omvat levensloop*.
-- Bedrijfsproces bij *bijdrage aan groter proces* met *klant tot klant* (besluit redacteur 2026-10-08, zie [Klant tot klant](klant-tot-klant.md)); zonder is het een deelproces of processtap zonder pagina, beschreven in `deelprocessen` van het bedrijfsproces. *Eigen besluit* en *eigen normering* bepalen het niveau niet; een deelproces dat een dienst levert, wordt voorgelegd.
+- Bedrijfsproces bij *bijdrage aan groter proces* met *klant tot klant* (besluit redacteur 2026-10-08, zie [Klant tot klant](proceshierarchie.md#bedrijfsproces-of-deelproces-de-toets-klant-tot-klant)); zonder is het een deelproces of processtap zonder pagina, beschreven in `deelprocessen` van het bedrijfsproces. *Eigen besluit* en *eigen normering* bepalen het niveau niet; een deelproces dat een dienst levert, wordt voorgelegd.
 - Anders deelproces of processtap: geen pagina; de tekst gaat naar het bedrijfsproces.
 - Bedrijfsinteractie bij *gezamenlijk gedrag*, met een kernobject; altijd voorleggen (estafette of orkestratie).
 

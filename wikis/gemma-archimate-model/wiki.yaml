@@ -18,9 +18,9 @@ page_types:                          # pagina's van curated typen en onderwerpen
     dir: bronanalyses
     group_by: onderwerp              # en daaronder per brontype: bronanalyses/<onderwerp>/<brontype>/ (besluit 2026-10-08)
     schema: schemas/bronanalyse.schema.json
-  analyse:
-    dir: analyses
-    schema: schemas/analyse.schema.json
+  doc:                               # documentatie: waarom het model is zoals het is (docs/, besluiten/werkwijze.md)
+    dir: docs
+    schema: schemas/doc.schema.json
   lijst:                             # wat een script als lijst maakt: terugmeldingen/, naslag/, ter-beoordeling.md, voortgang.md; geen eigen map
     schema: schemas/lijst.schema.json
   bedrijfsobject:                    # archimate_type business-object | contract

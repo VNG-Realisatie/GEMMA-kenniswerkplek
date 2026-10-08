@@ -828,7 +828,12 @@ def besluiten_per_begrip(w: Wiki) -> str:
             if gam_gemeen.thuis(d) != oid:
                 continue
             a = (d.get("afgeleid") or {}).get("uitkomst", {})
-            soort = ARCHIMATE_NAAM.get(a.get("archimate_type"), "") if w.pad(bid) else UITKOMST.get(a.get("soort"), a.get("soort", ""))
+            if w.pad(bid):
+                soort = ARCHIMATE_NAAM.get(a.get("archimate_type"), "")
+            elif d.get("status") == "afgewezen":
+                soort = f"{ARCHIMATE_NAAM.get(a.get('archimate_type'), 'element')}, afgewezen"
+            else:
+                soort = UITKOMST.get(a.get("soort"), a.get("soort", ""))
             for b in d.get("besluiten") or []:
                 rijen.append((str(b.get("datum")), d["begrip"].lower(),
                               [str(b.get("datum")), w.link(van, bid), soort, w.tekst(van, b.get("besluit", "")), b.get("gevolg", "")]))

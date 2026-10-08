@@ -1,6 +1,6 @@
 ---
 id: gegevensrollen
-type: analyse
+type: doc
 titel: 'Toegang tot een bedrijfsobject: verantwoordelijkheden en handelingen'
 bijgewerkt: '2026-10-01'
 bronnen: [2026-bzk-rollen-stelsel-basisregistraties, 2026-rijk-wet-bag-bwbr0023466, 2026-rijk-wet-bgt-bwbr0034026, 2026-rijk-wet-brp-bwbr0033715, 2026-rijk-wet-woz-bwbr0007119, 2026-rijk-handelsregisterwet-2007-bwbr0021777, 2015-rijk-wmo, 2026-rijk-wet-suwi-bwbr0013060, 2026-rijk-wet-op-de-lijkbezorging-wettekst, 1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995, 2026-vng-over-gemma, 2026-vng-gemma-2026-07-01, 2016-eu-avg-geconsolideerd, 2026-rijk-archiefwet-1995-bwbr0007376]
@@ -8,7 +8,7 @@ bronnen: [2026-bzk-rollen-stelsel-basisregistraties, 2026-rijk-wet-bag-bwbr00234
 
 # Toegang tot een bedrijfsobject: verantwoordelijkheden en handelingen
 
-De redacteur besloot op 1 oktober 2026 dat een relatie van een rol naar een bedrijfsobject wordt gesplitst: wat de rol met het object ís, wordt een toegangsrelatie met een getypeerde naam; een handeling wordt een toewijzing van de rol aan een proces ([besluiten](gemma-kennismodel.md#besluiten-van-de-redacteur)). De indeling van die namen moest komen uit de wetgeving over basisregistraties. Deze analyse bepaalt twee reeksen namen: de verantwoordelijkheid van een rol voor een object, en de handeling van een functie of proces op een object. Ze beoordeelt ook of de verantwoordelijkheden passen bij andere gegevensbronnen van de gemeente, intern en extern. Ze is de bronanalyse van de bronnen hieronder; regelnummers verwijzen naar hun tekst.
+Welke verantwoordelijkheid heeft een rol voor een bedrijfsobject, en welke handeling voert een proces erop uit? De redacteur besloot op 1 oktober 2026 dat een relatie van een rol naar een bedrijfsobject wordt gesplitst: wat de rol met het object ís, wordt een toegangsrelatie met een getypeerde naam; een handeling wordt een toewijzing van de rol aan een proces ([besluiten](gemma-kennismodel.md#besluiten-van-de-redacteur)). De indeling van die namen moest komen uit de wetgeving over basisregistraties. Deze analyse bepaalt twee reeksen namen: de verantwoordelijkheid van een rol voor een object, en de handeling van een functie of proces op een object. Ze beoordeelt ook of de verantwoordelijkheden passen bij andere gegevensbronnen van de gemeente, intern en extern. Ze is de bronanalyse van de bronnen hieronder; regelnummers verwijzen naar hun tekst.
 
 Een algemene "Wet basisregistraties" bestaat niet. Het stelsel van basisregistraties heeft vaste rollen, die per basisregistratie in een eigen wet zijn uitgewerkt. Deze analyse gebruikt de rollenbeschrijving van het stelsel en de wetten van de basisregistraties waarin de gemeente bronhouder of afnemer is.
 

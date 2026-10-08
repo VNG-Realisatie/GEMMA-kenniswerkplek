@@ -9,12 +9,12 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **Participatie** daarna, met de participatie-modelverordening als mogelijk beleidskader.
 - **Kanalen** als één centrale set. Input uit lijkbezorging (geen element daar, besluit redacteur 2026-10-01): de elektronische weg (Wlb art. 7, Awb art. 2:13–2:15), het mededelingenbord en bordje bij het graf (Groningen art. 27, VNG-model art. 24), de beheerder als aanspreekpunt voor aanvragen (VNG-model toelichting 2), en digitaal aangifte doen met eHerkenning (RVO, burgerlijke stand).
 
-## Wettelijke grondslag (analyse 2026-10-08, `analyses/wettelijke-grondslag.md`)
+## Wettelijke grondslag (analyse 2026-10-08, `docs/wettelijke-grondslag.md`)
 
 - **Richtlijnen als beleidskader** (besluit 9): per onderwerp beoordelen welke landelijke richtlijnen als geheel een beleidskader worden, met relatie *geeft richtlijn voor*. Kandidaten in burgerzaken: de HUP van RvIG (per hoofdstuk of als geheel, voorleggen), de Circulaire adresonderzoek BRP, de NVVB-handreikingen adresonderzoek en gezag.
 - **Licentie VNG-modellen**: de Model-APV (2023-vng-model-apv) en de Model beheersverordening (2010) staan letterlijk in `sources/raw/` van een publieke repository, zonder licentie in de bron. Laat de VNG (juridische zaken of het team modelverordeningen) bevestigen dat hergebruik mag, of er een licentie op zetten. De VNG herziet de Model-APV volledig (gepland begin 2027): vervang dan de bron.
 
-## Indelingen (analyse 2026-10-04, `analyses/indelingen.md`)
+## Indelingen (analyse 2026-10-04, `docs/indelingen.md`)
 
 - **Definitie van Ketenpartner**: nu "verantwoordelijkheid van een andere organisatie", terwijl de rol wordt vervuld door personen (Arts als behandelende arts, Officier van justitie; besluit redacteur 2026-10-04). Definitie verbreden naar een andere partij, of de organisatie (openbaar ministerie, zorgaanbieder) als actor nemen; meenemen in het voorstel aan het GEMMA-team over de definitie van de rol Ketenpartner.
 - **Verlengen en overschrijven van het grafrecht**: nu onderdelen van Grafrecht (eigen identiteit nee). Mogelijk eigen bedrijfsprocessen onder het levensloopproces Beheren grafrechten (eigen besluit, Wlb art. 28 lid 1–3; Groningen art. 16–20). De UPL kent er geen eigen product voor (beoordeling UPL-producten 2026-10-05).

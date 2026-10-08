@@ -58,7 +58,7 @@ grondslag: bron                               # ggm-entiteit | ggm-afgeleid | pr
 grondslag_toelichting: []                     # verplicht bij regelgeving, procesobject, ggm-afgeleid
 ggm: {sterkte: geen, onderbouwing: "Het GGM kent geen begraafplaats."}          # bij gegevensobjecten; met guid bij een match
 gemma: {sterkte: geen, onderbouwing: "Nieuw voor GEMMA."}                       # altijd; met id bij een match
-# Indeling (stap 7, zie analyses/indelingen.md), alleen waar het type erom vraagt:
+# Indeling (stap 7 van skill gemma-archimate-model-criteria), alleen waar het type erom vraagt:
 kernobject: graf                              # levensloopproces, bedrijfsproces, bedrijfsinteractie: het object waarvan het de levensloop omvat, waarin het een mutatie doet of dat door de keten gaat
 afnemer: extern                               # proces, product, dienst: extern of intern
 domein: Fysieke leefomgeving                  # functie, product, dienst: GEMMA-domein
@@ -84,7 +84,7 @@ Velden en wat erin hoort:
 | `generalisatie`, `specialisaties`, `ggm_componenten` | `references/hierarchie.md` |
 | `tegenhanger` | `references/tegenhangers.md` |
 | `relaties` (ook `via`: de specialisatie zonder pagina van het generieke doel) | `references/relaties.md` |
-| `kernobject`, `afnemer`, `domein`, `doelgroep`, `regelgever`, `gemma_generiek` | skill `gemma-archimate-model-criteria`, stap 7, en `analyses/indelingen.md` |
+| `kernobject`, `afnemer`, `domein`, `doelgroep`, `regelgever`, `gemma_generiek` | skill `gemma-archimate-model-criteria`, stap 7 (achtergrond: `docs/indelingen.md`) |
 
 De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet in een beoordeling of in de omschrijving van een onderwerp, maar in het register `beoordelingen/beleidsdomeinen.yaml` (`beleidsdomein`, `taakveld`, `beschrijving`, `bronnen`); de render toont haar in het overzicht en de export zet haar op de groepering. `tools/afleiden.py` controleert dat een element het beleidsdomein gebruikt en het taakveld klopt.
 

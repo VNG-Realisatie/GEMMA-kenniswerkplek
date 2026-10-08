@@ -1,6 +1,6 @@
 ---
 id: kenmerken
-type: analyse
+type: doc
 titel: Kenmerken per elementtype
 bijgewerkt: '2026-10-08'
 bronnen: [2026-vng-over-gemma]
@@ -8,7 +8,7 @@ bronnen: [2026-vng-over-gemma]
 
 # Kenmerken per elementtype
 
-Deze analyse loopt voor elk elementtype de kenmerken na, na de besluiten van 30 september en 1 oktober 2026 ([GEMMA-kennismodel](gemma-kennismodel.md), [toegang tot een bedrijfsobject](gegevensrollen.md)). Ze toetst of de set compleet en kloppend is, en formuleert per kenmerk de vraag die bepaalt of het kenmerk op een begrip van toepassing is. De set is nog niet doorgevoerd in de beslistabel; dat gebeurt bij de herziening uit de todo van deze wiki.
+Welke kenmerken bepalen per elementtype of een begrip een element is? Deze analyse loopt voor elk elementtype de kenmerken na, na de besluiten van 30 september en 1 oktober 2026 ([GEMMA-kennismodel](gemma-kennismodel.md), [toegang tot een bedrijfsobject](gegevensrollen.md)). Ze toetst of de set compleet en kloppend is, en formuleert per kenmerk de vraag die bepaalt of het kenmerk op een begrip van toepassing is. De set is nog niet doorgevoerd in de beslistabel; dat gebeurt bij de herziening uit de todo van deze wiki.
 
 ## Hoe een vraag is opgebouwd
 

@@ -3,7 +3,10 @@ id: algemeen
 type: onderwerp
 naam: Algemeen
 status: in-behandeling
-bronnen: []
+bronnen:
+- 2026-vng-over-gemma
+- 2026-vng-gemma-proceshierarchie
+- 2026-vng-gemma-impact-ketensamenwerking
 ---
 
 # Algemeen
@@ -14,13 +17,19 @@ bronnen: []
 
 De elementen die in veel onderwerpen met dezelfde betekenis voorkomen: de generieke elementen (kenmerk *generiek*), zoals Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling, de algemene begrippen van besluitvorming, zoals Bestuursorgaan, Uniforme openbare voorbereidingsprocedure en Beleidsnota, en de organen en de organisatie van de gemeente, zoals Gemeente, Gemeenteraad, College van B&W en Burgemeester. Een specifiek onderwerp gebruikt deze elementen met relaties en zet wat alleen daar geldt onder per_onderwerp (regels Eén element in het hele model en Thuishoren).
 
-Dit onderwerp is licht ingericht (besluit redacteur 2026-10-06): nog geen eigen bronnen en geen inhoudelijke herbeoordeling. Bestaande elementen komen hier per geval terecht door `algemeen` als eerste in `onderwerpen` te zetten; het object in Archi blijft.
+Dit onderwerp is licht ingericht (besluit redacteur 2026-10-06): nog geen eigen bronnen voor begrippen en geen inhoudelijke herbeoordeling. Bestaande elementen komen hier per geval terecht door `algemeen` als eerste in `onderwerpen` te zetten; het object in Archi blijft.
+
+Hier staan ook de bronanalyses van bronnen die voor de hele wiki gelden: Over GEMMA en de GEMMA-procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking) (2026-10-08).
 
 ## Overzicht
 
 De views op de indelingen staan in het [overzicht](../overzichten/algemeen.md).
 
 ## Bronnen
+
+- [Over GEMMA (kennismodel en modelleerafspraken)](../bronanalyses/algemeen/overig/2026-vng-over-gemma.md)
+- [GEMMA Procesarchitectuur Proceshiërarchie](../bronanalyses/algemeen/overig/2026-vng-gemma-proceshierarchie.md)
+- [GEMMA Procesarchitectuur Impact van ketensamenwerking](../bronanalyses/algemeen/overig/2026-vng-gemma-impact-ketensamenwerking.md)
 
 ## Begrippen
 

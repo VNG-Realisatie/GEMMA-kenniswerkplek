@@ -160,19 +160,13 @@ def brontype(wiki_root: Path, bron_id: str) -> str | None:
 def bron_doel(wiki_root: Path, bron_id: str) -> Path | None:
     """Waar een verwijzing naar deze bron heen linkt: de bronanalyse. Een modelbron (GGM, GEMMA) heeft geen
     bronanalyse (tools/ggm.py en tools/gemma.py zijn haar lens) en linkt naar haar tekst in sources/raw/. Een bron die
-    voor de hele wiki geldt, kan haar bronanalyse in een analyse hebben (`bronanalyse_van`, zoals Over GEMMA)."""
+    voor de hele wiki geldt (Over GEMMA, de GEMMA-procesarchitectuur), heeft haar bronanalyse bij het onderwerp
+    Algemeen."""
     if bron_id in modelbronnen(wiki_root):
         pad = paths.find_repo_root(wiki_root) / "sources" / "raw" / f"{bron_id}.md"
         return pad.resolve() if pad.exists() else None
     treffers = sorted(bronanalyse_map(wiki_root).glob(f"*/*/{bron_id}.md"))
-    if treffers:
-        return treffers[0].resolve()
-    from llmwiki import frontmatter
-
-    for pad in sorted((wiki_root / "analyses").glob("*.md")):
-        if bron_id in (frontmatter.read(pad).meta.get("bronanalyse_van") or []):
-            return pad.resolve()
-    return None
+    return treffers[0].resolve() if treffers else None
 
 
 def bronnen_als_link(van: Path, tekst: str, wiki_root: Path = WIKI_ROOT) -> str:
