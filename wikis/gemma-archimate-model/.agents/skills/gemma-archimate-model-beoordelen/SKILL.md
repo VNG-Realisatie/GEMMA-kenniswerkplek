@@ -16,7 +16,7 @@ De AI schrijft alleen het oordeel. Type, status, letterlijke modelvelden, pagina
 
 ## 1. Lezen
 
-Eerst `besluiten/per-begrip.md` (wat al beslist is, vraag je niet opnieuw), dan de technische index (`sources/index/`), de bronanalyses van dit onderwerp, en uit `sources/raw/` alleen de passages die index of bronanalyse aanwijzen. Houd de regel Bronvoorrang aan (`europese-regelgeving` → `rijksregelgeving` → `informatiemodel` → `richtlijn` → `gemeentelijke-regelgeving` → `beleid` → `overig`): de hogere brontypen bepalen welke begrippen er zijn en wat ze formeel betekenen; `richtlijn`, `beleid` en `overig` laten zien hoe erover gesproken wordt.
+Eerst `besluiten/per-begrip.md` (wat al beslist is, vraag je niet opnieuw), dan de technische index (`sources/index/`), de bronanalyses van dit onderwerp, en uit `sources/raw/` alleen de passages die index of bronanalyse aanwijzen. Houd de regel Bronvoorrang aan: de hogere brontypen bepalen welke begrippen er zijn en wat ze formeel betekenen; `richtlijn`, `beleid` en `overig` laten zien hoe erover gesproken wordt.
 
 ## 2. Begrippen verzamelen
 
@@ -84,6 +84,8 @@ Velden en wat erin hoort:
 | `generalisatie`, `specialisaties`, `ggm_componenten` | `references/hierarchie.md` |
 | `tegenhanger` | `references/tegenhangers.md` |
 | `relaties` (ook `via`: de specialisatie zonder pagina van het generieke doel) | `references/relaties.md` |
+| `onderwerpen`, `per_onderwerp`, `synoniem_van` (één model over de onderwerpen heen) | `references/onderwerpen.md` |
+| `besluiten` | `references/besluiten.md` |
 | `kernobject`, `afnemer`, `domein`, `doelgroep`, `regelgever`, `gemma_generiek` | skill `gemma-archimate-model-criteria`, stap 7 (achtergrond: `docs/indelingen.md`) |
 
 De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet in een beoordeling of in de omschrijving van een onderwerp, maar in het register `beoordelingen/beleidsdomeinen.yaml` (`beleidsdomein`, `taakveld`, `beschrijving`, `bronnen`); de render toont haar in het overzicht en de export zet haar op de groepering. `tools/afleiden.py` controleert dat een element het beleidsdomein gebruikt en het taakveld klopt.
@@ -96,24 +98,10 @@ De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet 
 
 Na een eerste `uv run python tools/afleiden.py` (zonder relaties werkt dat al): `uv run python tools/relaties.py voorstel <id>` geeft kandidaten uit het GGM en uit de relatietabellen van de bronanalyses, als YAML voor `relaties:`. Kies, geef een herkenbare naam, controleer richting en kardinaliteit. Een relatie staat alleen in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. `uv run python tools/relaties.py uit-bronnen <onderwerp>` toont welke relaties uit de bronnen vervallen omdat een kant geen element is; leg belangrijke vervallen relaties voor.
 
-## 7. Terugmeldingen (GGM en procesarchitectuur)
+## 7. Terugmeldingen (GGM, procesarchitectuur en GEMMA)
 
-Een bevinding over het GGM (hiaat, definitie, structuur, scope, duplicaat, homoniem, relatie) zet je in `beoordelingen/terugmeldingen/ggm.yaml`, zonder nummer: `{domein, entiteit, type, bevinding, element}`. `tools/afleiden.py` geeft het volgende nummer. Een hiaat alleen bij een gegevensobject zonder GGM-match, conservatief: motiveer waar de gegevens worden beheerd, welke attributen relevant zijn en in welk beleidsdomein het past. Een proces, functie of regeling zonder GGM-entiteit is geen hiaat. Schrijf een bevinding als lijst alinea's: **GGM:** (wat er nu staat), **Bevinding:** (wat er niet klopt, met bron) en **Voorstel:**; een alinea die met `- ` begint, wordt een lijstitem (attributen, dubbele GUID's). In de tabel van de analyse staan de alinea's in één cel, met regelovergangen.
-
-Een bevinding over de GEMMA-procesarchitectuur (de UPL-lijsten of het kennismodel procesarchitectuur) zet je in `beoordelingen/terugmeldingen/procesarchitectuur.yaml`, zonder nummer: `{type, bevinding, elementen of beleidsdomein}`, met type `indeling`, `grondslag`, `product` of `kennismodel`. De bevinding is voor de werkgroep procesarchitectuur: wat GEMMA anders indeelt of modelleert dan de UPL of het kennismodel, en waarom; geen vraag. Schrijf haar net als een GGM-terugmelding als lijst alinea's: **UPL:** (wat de UPL zegt) of bij type `kennismodel` **Kennismodel:** (wat het kennismodel zegt), dan **Bevinding:** (wat er niet klopt of anders is, hoe GEMMA het modelleert en waarom, met bron) en **Voorstel:** (wat de werkgroep concreet kan veranderen); een alinea die met `- ` begint, wordt een lijstitem. Schrijf voor een lezer zonder deze wiki: korte zinnen, de kern vooraan, bronnen achteraan tussen haakjes, geen interne termen zonder uitleg. Een open melding zonder alinea **Bevinding:** of **Voorstel:** houdt `tools/afleiden.py` tegen, ook bij de GGM (besluit redacteur 2026-10-08). Een UPL-product zonder grondslag, of met een UPL-grondslag die geen taak geeft (alleen een tarief, een beleidsstuk van één gemeente), krijgt een melding van type `grondslag` (regel Wettelijke grondslag). Het model mag afwijken van de UPL-indeling (taakveld, GEMMA-domein) en van het kennismodel procesarchitectuur, mits de afwijking daar is teruggemeld (besluit redacteur 2026-10-05); de terugmelding dekt dan het signaal van `tools/afleiden.py`. Een nieuw element met dezelfde afwijking voeg je toe aan de `elementen` van de bestaande melding.
-
-Een bevinding over het GEMMA-model zelf (een GEMMA-element dat ontbreekt, in de wiki vervalt of herzien moet worden, een afwijkende indeling, definitie of relatie) zet je in `beoordelingen/terugmeldingen/gemma.yaml`, zonder nummer: `{type, bevinding, elementen en/of gemma_elementen}`, met type `element`, `indeling`, `definitie` of `relatie`. Een GEMMA-element dat de wiki niet (meer) kent, noem je in `gemma_elementen` met `id` en `naam` zoals in het GEMMA-model; `tools/afleiden.py` controleert beide. De bevinding volgt dezelfde opbouw: **GEMMA:** (wat het GEMMA-model nu zegt), **Bevinding:** en **Voorstel:** (besluit redacteur 2026-10-08). Laat de wiki een gekoppeld GEMMA-element vervallen, dan blijft het in GEMMA (de sync haalt alleen de wiki-eigenschappen weg); meld het dan hier.
+Een bevinding over het GGM, over de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel procesarchitectuur) of over het GEMMA-model zelf zet je zonder nummer in het register van de ontvanger: `beoordelingen/terugmeldingen/ggm.yaml`, `procesarchitectuur.yaml` of `gemma.yaml`. Welk register, welke velden en typen, de opbouw (**GGM:**/**UPL:**/**Kennismodel:**/**GEMMA:**, **Bevinding:**, **Voorstel:**) en hoe je schrijft voor een lezer buiten de wiki: `references/terugmeldingen.md`.
 
 ## 8. Afleiden en voorleggen
 
-Draai `uv run python tools/afleiden.py`. De uitkomst van de beslistabel is bindend; pas een kenmerk alleen aan als het aantoonbaar fout was. Leg daarna per begrip met open redenen (`afgeleid.open`) de vraag voor in de chat, één voor één, met context (welk begrip, wat de beslistabel zegt), argumenten voor en tegen, en een advies. Leg het antwoord vast in `besluiten:`:
-
-```yaml
-besluiten:
-  - datum: 2026-10-01
-    besluit: Opnemen als gegevensobject zonder GGM-entiteit; terugmelding 3.
-    gevolg: opnemen                 # opnemen | afwijzen | verwerkt
-    redenen: [gegevensobject zonder sterke GGM-match]   # letterlijk uit afgeleid.voor_te_leggen
-```
-
-`opnemen` met de gedekte redenen maakt een kandidaat `review`; `afwijzen` maakt hem `afgewezen`; `verwerkt` legt een besluit vast dat de AI in de beoordeling heeft doorgevoerd (bijvoorbeeld een naamkeuze).
+Draai `uv run python tools/afleiden.py`. De uitkomst van de beslistabel is bindend; pas een kenmerk alleen aan als het aantoonbaar fout was. Wat dan nog een keuze van de redacteur vraagt, leg je één voor één voor in de chat en leg je vast in `besluiten:`: `references/besluiten.md`.

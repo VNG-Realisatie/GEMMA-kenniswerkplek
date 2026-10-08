@@ -1,6 +1,6 @@
 # Architectuur van de wiki gemma-archimate-model
 
-Deze wiki bouwt het GEMMA-architectuurmodel voor de bedrijfslaag onderbouwd opnieuw op: bedrijfsobjecten, contracten, producten, diensten, processen, functies, gebeurtenissen, actoren, rollen, samenwerkingen, kanalen en beleidskaders. Elk element is herleidbaar tot bronnen, gematcht op het GGM en op het huidige GEMMA-model, en pas na akkoord van een redacteur vastgesteld. Het is een wiki van het type `curation` (zie de `ARCHITECTURE.md` van de repository voor de algemene opzet). De regels staan in [AGENTS.md](AGENTS.md); dit document legt uit hoe alles samenhangt.
+Deze wiki bouwt het GEMMA-architectuurmodel voor de bedrijfslaag onderbouwd opnieuw op: bedrijfsobjecten, contracten, producten, diensten, processen, functies, gebeurtenissen, actoren, rollen, samenwerkingen, kanalen en beleidskaders. Elk element is herleidbaar tot bronnen, gematcht op het GGM en op het huidige GEMMA-model, en pas na akkoord van een redacteur vastgesteld. Het is een wiki van het type `curation` (zie de `ARCHITECTURE.md` van de repository voor de algemene opzet). De regels (wat geldt) staan in [AGENTS.md](AGENTS.md), de onderbouwing (waarom) in [docs/](docs/README.md), de werkinstructies (hoe je het doet) in de skills; dit document legt uit hoe de wiki technisch werkt.
 
 ## 1. Plaats in de keten
 
@@ -20,7 +20,8 @@ Het GGM is zowel bron (kandidaat-begrippen, definities, relaties) als toets. Het
 | **Besluiten** van de redacteur over een voorgelegd punt | redacteur, vastgelegd door de AI | `besluiten:` in de beoordeling; eerdere besluiten per begrip in [besluiten/per-begrip.md](besluiten/per-begrip.md) (gegenereerd), over de werkwijze in [besluiten/werkwijze.md](besluiten/werkwijze.md) |
 | **Afleiding**: type uit de beslistabel, status, letterlijke GGM- en GEMMA-velden, paginapad, herkomst, nummers van terugmeldingen; harde controles en signalen | [tools/afleiden.py](tools/afleiden.py), [tools/signalen.py](tools/signalen.py) | `status:` en `afgeleid:` in de beoordeling |
 | **Vorm**: alle leesbare pagina's en overzichten | [tools/render.py](tools/render.py) | zie §4 |
-| **Akkoord** | redacteur, met het woord AKKOORD in de chat | `llmwiki promote plan/apply`, `log.md` |
+| **Akkoord** | redacteur, met het woord AKKOORD in de chat | `llmwiki promote plan/apply`, `log.md` (een tabel, alleen aan te vullen) |
+| **Regels en onderbouwing** | redacteur, vastgelegd door de AI | [AGENTS.md](AGENTS.md) (wat geldt), [docs/](docs/README.md) (waarom), [besluiten/werkwijze.md](besluiten/werkwijze.md) (geschiedenis) |
 
 De AI schrijft dus geen pagina's, geen links en geen statussen. Wat het render-script garandeert, hoeft geen regel te zijn; wat het schema of het afleid-script tegenhoudt, ook niet. De regels in [AGENTS.md](AGENTS.md) gaan over het oordeel.
 
@@ -28,24 +29,26 @@ De AI schrijft dus geen pagina's, geen links en geen statussen. Wat het render-s
 
 ```text
 wikis/gemma-archimate-model/
-├── AGENTS.md · ARCHITECTURE.md · wiki.yaml · todo.md · log.md
-├── beoordelingen/
+├── AGENTS.md                         wat geldt: de regels, met de kaart "Waar vind je wat"
+├── ARCHITECTURE.md · wiki.yaml · todo.md · log.md
+├── beoordelingen/                    wat de AI schrijft (YAML)
 │   ├── begrippen/<id>.yaml           het oordeel per begrip (AI); status en afgeleid (scripts)
 │   ├── onderwerpen/<onderwerp>.yaml  naam, omschrijving, bronnen en status van een onderwerp
-│   ├── terugmeldingen.yaml           register van GGM-terugmeldingen
-│   ├── procesarchitectuur-terugmeldingen.yaml   register van terugmeldingen aan de GEMMA-procesarchitectuur
-│   ├── gemma-terugmeldingen.yaml     register van terugmeldingen aan het GEMMA-team over het GEMMA-model
+│   ├── terugmeldingen/               registers van terugmeldingen: ggm.yaml, procesarchitectuur.yaml, gemma.yaml
 │   ├── objecten.yaml                 welk Archi-object een hernoemd, samengevoegd of gesplitst element voortzet
-│   └── beleidsdomeinen.yaml          de beschrijving van een beleidsdomein (Beleidsdomeinindeling)
-├── bronanalyses/<onderwerp>/<brontype>/<bron-id>.md   wat een bron betekent voor de architectuur (AI)
-├── docs/                         documentatie: waarom het model is zoals het is (AI); leeswijzer docs/README.md
-├── bedrijfsarchitectuur/ · motivatie/ · begrippen/   gegenereerd door tools/render.py
-├── ter-beoordeling.md · voortgang.md                gegenereerd door tools/render.py
+│   ├── beleidsdomeinen.yaml          de beschrijving van een beleidsdomein (Beleidsdomeinindeling)
+│   └── besluiten-eerder.yaml         eerdere besluiten per begrip zonder tegenhanger in een beoordeling
+├── bronanalyses/<onderwerp>/<brontype>/<bron-id>.md   wat een bron betekent voor de architectuur (AI); bronnen voor de hele wiki onder algemeen/
+├── docs/                             waarom het model is zoals het is (AI, type doc); leeswijzer docs/README.md
+├── besluiten/                        werkwijze.md (AI, type doc) en per-begrip.md (gegenereerd, type lijst)
+├── bedrijfsarchitectuur/ · motivatie/ · begrippen/ · overzichten/   gegenereerd door tools/render.py
+├── terugmeldingen/ · ter-beoordeling.md · voortgang.md              gegenereerd door tools/render.py (type lijst)
+├── naslag/beslistabel.md             gegenereerd door tools/bepaal_type.py (type lijst)
 ├── ggm/ · gemma/                     gegenereerd door tools/ggm.py en tools/gemma.py
 ├── export/                           gegenereerd door tools/archimate_export.py: het Archi-bestand en het rapport
-├── schemas/                          beoordeling (gegenereerd uit tools/bepaal_type.py), bronanalyse, analyse
+├── schemas/                          beoordeling (gegenereerd uit tools/bepaal_type.py), bronanalyse, doc, lijst
 ├── tools/                            Python-gereedschap van deze wiki (met tests in tools/tests/)
-└── .agents/skills/                   vaardigheden van deze wiki
+└── .agents/skills/                   hoe je het doet: de vaardigheden van deze wiki
 ```
 
 ## 4. Render
@@ -65,6 +68,7 @@ wikis/gemma-archimate-model/
 | `terugmeldingen/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
 | `terugmeldingen/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel), uit `beoordelingen/terugmeldingen/procesarchitectuur.yaml` |
 | `terugmeldingen/gemma-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model (elementen, indelingen, definities, relaties), uit `beoordelingen/terugmeldingen/gemma.yaml` |
+| `besluiten/per-begrip.md` | Besluiten van de redacteur per begrip, per thuisonderwerp, uit de beoordelingen en `beoordelingen/besluiten-eerder.yaml` |
 | `ter-beoordeling.md` | Wat wacht op akkoord (status `review`), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 
@@ -128,7 +132,7 @@ Eén plek: skill [gemma-archimate-model-criteria](.agents/skills/gemma-archimate
 - **Criteria** zijn de regels van de beslistabel: welke combinatie van kenmerken tot welk type leidt. Het script past ze toe; het type is een uitkomst, geen keuze vooraf.
 - De beslistabel heeft acht stappen: welk begrip (synoniem of homoniem), scope, afhankelijkheid, consistentie, type, een **drempel** per type (een kernrelatie die ja moet zijn, eventueel een eis, en van de overige drempelcriteria hoogstens één nee), de **zelfstandige specialisatie** en de **indeling** (stap 7: procesniveau en objectniveau, met de plaats in de indelingen; `tools/bepaal_type.py indeling` heeft de context van alle begrippen). Criteria van 2026-10-04 (`docs/indelingen.md`); de onderbouwing staat in `docs/kenmerken.md`, `docs/gemma-kennismodel.md`, `docs/gegevensrollen.md` en `docs/synoniemen-en-homoniemen.md`.
 - De documentatie in de skill en in [naslag/beslistabel.md](naslag/beslistabel.md), en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json), worden uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
-- Interaction wordt herkend, maar heeft geen paginatype: zo'n begrip wordt voorgelegd. Representation en Location zijn een vaste uitkomst zonder pagina. Van de motivatielaag zit alleen het beleidskader in dit model.
+- Een bedrijfsinteractie (Business Interaction) heeft sinds 2026-10-08 een paginatype; elke nieuwe wordt voorgelegd. Representation en Location zijn een vaste uitkomst zonder pagina. Van de motivatielaag zit alleen het beleidskader in dit model.
 
 ## 8. Bronvoorrang en definities
 
@@ -185,3 +189,10 @@ De match kiest de AI op betekenis; het afleid-script haalt bij elke run de lette
 - Het hernoemen van een element met automatisch bijwerken van de id's in andere beoordelingen.
 - Paginatypen voor Interaction, Location en Representation, en `applicatiearchitectuur/`.
 - Het tonen van de formele definitie op GEMMA Online.
+
+## 14. Verder lezen
+
+- [AGENTS.md](AGENTS.md): de regels, met onderaan de kaart *Waar vind je wat*.
+- [docs/README.md](docs/README.md): de onderbouwing per onderwerp (elementtypen en kenmerken, processen en indelingen, bronnen en grondslag).
+- [besluiten/werkwijze.md](besluiten/werkwijze.md) en [besluiten/per-begrip.md](besluiten/per-begrip.md): wat de redacteur besliste, en waar het nu staat.
+- Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update/SKILL.md): de werkstroom.
