@@ -154,6 +154,10 @@ Match **partieel** met GEMMA-element *Verblijfplaats* (business-object). GEMMA-b
 
 > Een verblijfplaats is de locatie waar een persoon feitelijk woont of verblijft, ongeacht of dit permanent of tijdelijk is. Het kan een huis, appartement, kamer, opvanglocatie of andere woonruimte zijn, en wordt vaak gebruikt om iemands woonadres aan te duiden voor juridische, administratieve of sociale doeleinden. De verblijfplaats is doorgaans bepalend voor het ontvangen van voorzieningen, het uitoefenen van rechten, en het voldoen aan verplichtingen binnen een specifieke jurisdictie of gemeenschap.
 
+GEMMA-terugmeldingen:
+
+- [Nummer 3](../../../../analyses/gemma-terugmeldingen.md) (definitie, open): **GEMMA:** het bedrijfsobject Verblijfplaats is "de locatie waar een persoon feitelijk woont of verblijft", en verwijst naar de GGM-guid {0028CB85-5EF0-45aa-A06F-4A8F14E71AB8} ([2026-vng-gemma-2026-10-02](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md)). **Bevinding:** de definitie dekt het woonadres, niet het briefadres en niet de periode waarin het adres geldt; de BRP kent één categorie Verblijfplaats met woonadres en briefadres als soorten ([2026-rvig-hup-verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md); [2025-rvig-logisch-ontwerp-brp-2025q1](../../../../bronanalyses/burgerzaken/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md)). De GGM-guid komt in het huidige GGM niet meer voor: de entiteit heet VerblijfadresIngeschrevenPersoon (GGM-terugmelding 13). **Voorstel:** definieer Verblijfplaats als het adres waar een ingeschreven persoon woont of, zonder woonadres, zijn post ontvangt, met de periode waarin dat adres geldt, en werk de GGM-guid bij na de GGM-terugmelding.
+
 ### Besluiten redacteur
 
 - 2026-10-07: Koppelen aan het GEMMA-bedrijfsobject Verblijfplaats (partiële match): dezelfde naam en kern, het GEMMA-element is verweesd; de export overschrijft de definitie met die uit de wiki.

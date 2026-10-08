@@ -16,3 +16,36 @@ terugmeldingen:
   - '**Voorstel:** neem asverstrooiing in GEMMA op onder Exploiteren van begraafplaatsen. Beoordeel bij een onderwerp Openbare orde en veiligheid per product en functie onder Uitvoering openbare orde en veiligheid of er een landelijke wettelijke grondslag is, en laat functies vervallen die alleen producten zonder die grondslag omvatten.'
   nummer: 1
   status: open
+- type: definitie
+  elementen:
+  - kiezer
+  - gemeenteraad
+  - college-van-b-w
+  - rijk
+  gemma_elementen:
+  - id: id-d649e10e-d9a6-4ac7-b436-2d659cb4fdbf
+    naam: Kiezer
+  - id: id-b69cb101-8708-47de-9ac1-e138f205a49f
+    naam: Gemeenteraad
+  - id: id-af1a85d2-b6d6-44da-b562-ef2ccd69108e
+    naam: College
+  - id: id-9f6a80ba-b7fb-4a58-b599-b5f2b33b840e
+    naam: Rijk
+  bevinding:
+  - '**GEMMA:** de rol Kiezer en de actoren Gemeenteraad, College en Rijk (Procesarchitectuur, Actoren en rollen) hebben geen definitie (2026-vng-gemma-2026-10-02). Rijk heeft ook geen relaties.'
+  - '**Bevinding:** zonder definitie is niet te zien wat de elementen omvatten. Kiezer is een hoedanigheid (Kieswet art. D 1), de Gemeenteraad vertegenwoordigt de gehele bevolking (Gemeentewet art. 7), het College bestaat uit de burgemeester en de wethouders (Gemeentewet art. 34) en het Rijk is de Staat der Nederlanden als bestuurslaag. De naam College is bovendien niet eenduidig: de wiki noemt het element College van B&W. De export vult de definities uit de wiki.'
+  - '**Voorstel:** neem in GEMMA definities op: Kiezer, "hoedanigheid van wie kiesgerechtigd en als kiezer geregistreerd is en bij een verkiezing mag stemmen"; Gemeenteraad, "bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt"; College, "dagelijks bestuur van de gemeente, bestaande uit de burgemeester en de wethouders" onder de naam College van B&W; Rijk, "de Staat der Nederlanden als bestuurslaag, die met zijn ministers en rijksdiensten wettelijke taken uitvoert waarmee elke gemeente te maken heeft", met een relatie naar de rollen die het Rijk vervult.'
+  nummer: 2
+  status: open
+- type: definitie
+  elementen:
+  - verblijfplaats
+  gemma_elementen:
+  - id: id-9a240ef1e16e476887b3c67526facb98
+    naam: Verblijfplaats
+  bevinding:
+  - '**GEMMA:** het bedrijfsobject Verblijfplaats is "de locatie waar een persoon feitelijk woont of verblijft", en verwijst naar de GGM-guid {0028CB85-5EF0-45aa-A06F-4A8F14E71AB8} (2026-vng-gemma-2026-10-02).'
+  - '**Bevinding:** de definitie dekt het woonadres, niet het briefadres en niet de periode waarin het adres geldt; de BRP kent één categorie Verblijfplaats met woonadres en briefadres als soorten (2026-rvig-hup-verblijfplaats; 2025-rvig-logisch-ontwerp-brp-2025q1). De GGM-guid komt in het huidige GGM niet meer voor: de entiteit heet VerblijfadresIngeschrevenPersoon (GGM-terugmelding 13).'
+  - '**Voorstel:** definieer Verblijfplaats als het adres waar een ingeschreven persoon woont of, zonder woonadres, zijn post ontvangt, met de periode waarin dat adres geldt, en werk de GGM-guid bij na de GGM-terugmelding.'
+  nummer: 3
+  status: open

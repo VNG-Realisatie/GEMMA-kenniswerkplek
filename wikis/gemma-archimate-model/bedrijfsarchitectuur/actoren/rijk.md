@@ -98,6 +98,10 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 Match **exact** met GEMMA-element *Rijk* (business-actor). GEMMA-actor Rijk (procesarchitectuur, actoren en rollen); zelfde begrip, in GEMMA zonder definitie en zonder relaties. Nieuw: een definitie (besluit redacteur 2026-10-07).
 
+GEMMA-terugmeldingen:
+
+- [Nummer 2](../../analyses/gemma-terugmeldingen.md) (definitie, open): **GEMMA:** de rol Kiezer en de actoren Gemeenteraad, College en Rijk (Procesarchitectuur, Actoren en rollen) hebben geen definitie ([2026-vng-gemma-2026-10-02](../../../../sources/raw/2026-vng-gemma-2026-10-02.md)). Rijk heeft ook geen relaties. **Bevinding:** zonder definitie is niet te zien wat de elementen omvatten. Kiezer is een hoedanigheid (Kieswet art. D 1), de Gemeenteraad vertegenwoordigt de gehele bevolking (Gemeentewet art. 7), het College bestaat uit de burgemeester en de wethouders (Gemeentewet art. 34) en het Rijk is de Staat der Nederlanden als bestuurslaag. De naam College is bovendien niet eenduidig: de wiki noemt het element College van B&W. De export vult de definities uit de wiki. **Voorstel:** neem in GEMMA definities op: Kiezer, "hoedanigheid van wie kiesgerechtigd en als kiezer geregistreerd is en bij een verkiezing mag stemmen"; Gemeenteraad, "bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt"; College, "dagelijks bestuur van de gemeente, bestaande uit de burgemeester en de wethouders" onder de naam College van B&W; Rijk, "de Staat der Nederlanden als bestuurslaag, die met zijn ministers en rijksdiensten wettelijke taken uitvoert waarmee elke gemeente te maken heeft", met een relatie naar de rollen die het Rijk vervult.
+
 ### Besluiten redacteur
 
 - 2026-10-07: Rijkskant: één actor Rijk met de GEMMA-match, die de rol Ketenpartner vervult; de afzonderlijke ministers en rijksdiensten (minister van BZK met de RvIG, minister van JenV met de IND) staan in de beschrijving. Het Rijk is een soort partij: de bestuurslaag als geheel, waarmee elke gemeente te maken heeft, zoals Provincie en Waterschap.

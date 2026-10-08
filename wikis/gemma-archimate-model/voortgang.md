@@ -53,4 +53,4 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 ## GEMMA-terugmeldingen
 
-[1 terugmeldingen](analyses/gemma-terugmeldingen.md): open 1.
+[3 terugmeldingen](analyses/gemma-terugmeldingen.md): open 3.
