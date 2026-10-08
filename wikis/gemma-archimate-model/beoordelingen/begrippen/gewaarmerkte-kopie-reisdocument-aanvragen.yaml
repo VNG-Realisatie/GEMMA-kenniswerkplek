@@ -223,7 +223,7 @@ naamkeuze:
 toelichting: 'Vervalt: geen landelijke wettelijke grondslag (niet in de Paspoortwet, het Paspoortbesluit of de Wet op de Nederlandse identiteitskaart) en geen product in de UPL; gemeenten verschillen in wat ze waarmerken (regel Wettelijke grondslag; procesarchitectuur-terugmelding 11).'
 besluiten:
 - datum: '2026-10-08'
-  besluit: 'Vervalt (regel Wettelijke grondslag, groep C in analyses/wettelijke-grondslag.md): geen UPL-product en geen landelijke wettelijke grondslag. De representatie Gewaarmerkte kopie gaat mee; procesarchitectuur-terugmelding 11 noemt de dienst niet meer als element. Het object van dit element in Archi vervalt.'
+  besluit: 'Vervalt (regel Wettelijke grondslag, groep C in docs/wettelijke-grondslag.md): geen UPL-product en geen landelijke wettelijke grondslag. De representatie Gewaarmerkte kopie gaat mee; procesarchitectuur-terugmelding 11 noemt de dienst niet meer als element. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
 status: afgewezen
 afgeleid:

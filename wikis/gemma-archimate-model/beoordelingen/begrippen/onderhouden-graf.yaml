@@ -262,7 +262,7 @@ besluiten:
   besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
   gevolg: verwerkt
 - datum: '2026-10-08'
-  besluit: 'Vervalt (regel Wettelijke grondslag, besluit 3 in analyses/wettelijke-grondslag.md): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Grafonderhoud (UPL nr. 163), met grondslag in de Model beheersverordening begraafplaatsen art. 20. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
+  besluit: 'Vervalt (regel Wettelijke grondslag, besluit 3 in docs/wettelijke-grondslag.md): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Grafonderhoud (UPL nr. 163), met grondslag in de Model beheersverordening begraafplaatsen art. 20. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
 toelichting: 'Vervalt: geen landelijke wettelijke grondslag. Het proces realiseerde de dienst Grafonderhoud (UPL nr. 163), met grondslag in de Model beheersverordening begraafplaatsen art. 20; zo''n UPL-product blijft, maar wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen (regel Wettelijke grondslag).'
 status: afgewezen

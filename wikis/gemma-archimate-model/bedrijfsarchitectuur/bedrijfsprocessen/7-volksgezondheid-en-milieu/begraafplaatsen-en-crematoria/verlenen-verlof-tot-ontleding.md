@@ -117,4 +117,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-05: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (analyses/indelingen.md).
+- 2026-10-05: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (docs/indelingen.md).

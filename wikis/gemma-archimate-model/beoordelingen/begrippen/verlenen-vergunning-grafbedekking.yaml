@@ -256,9 +256,9 @@ relaties:
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt
-  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (analyses/indelingen.md).
+  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (docs/indelingen.md).
 - datum: '2026-10-08'
-  besluit: 'Vervalt (regel Wettelijke grondslag, besluit 3 in analyses/wettelijke-grondslag.md): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Gedenkteken plaatsingsvergunning (UPL nr. 142), met grondslag in de Model beheersverordening begraafplaatsen art. 19. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
+  besluit: 'Vervalt (regel Wettelijke grondslag, besluit 3 in docs/wettelijke-grondslag.md): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Gedenkteken plaatsingsvergunning (UPL nr. 142), met grondslag in de Model beheersverordening begraafplaatsen art. 19. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
 toelichting: 'Vervalt: geen landelijke wettelijke grondslag. Het proces realiseerde de dienst Gedenkteken plaatsingsvergunning (UPL nr. 142), met grondslag in de Model beheersverordening begraafplaatsen art. 19; zo''n UPL-product blijft, maar wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen (regel Wettelijke grondslag).'
 status: afgewezen

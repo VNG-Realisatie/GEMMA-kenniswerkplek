@@ -1286,3 +1286,5 @@ Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen o
 | 2026-10-08 | promote | rechthebbende-op-het-graf | Mark Backer | 64a3da1b |
 | 2026-10-08 | promote | verlenen-grafrecht | Mark Backer | a1555daa |
 | 2026-10-08 | promote | verlof-tot-begraven | Mark Backer | e308314a |
+| 2026-10-08 | promote | afgeven-laissez-passer | Mark Backer | acf8397d |
+| 2026-10-08 | promote | verlenen-verlof-tot-ontleding | Mark Backer | 7587a663 |

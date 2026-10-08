@@ -255,7 +255,7 @@ relaties:
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt
-  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (analyses/indelingen.md).
+  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (docs/indelingen.md).
 status: goedgekeurd
 afgeleid:
   uitkomst:
