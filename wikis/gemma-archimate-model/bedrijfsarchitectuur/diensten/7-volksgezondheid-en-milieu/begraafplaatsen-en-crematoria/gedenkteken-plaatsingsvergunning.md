@@ -73,7 +73,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Gedenkteken plaatsingsvergunning | bedient *bediening* | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 22 lid 2) |
+| Gedenkteken plaatsingsvergunning | bedient *bediening* | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (VNG-model art. 19 lid 2; Groningen art. 22 lid 2) |
 
 #### Inkomend
 

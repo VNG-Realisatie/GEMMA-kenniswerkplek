@@ -1277,3 +1277,10 @@ verwijderen; de pre-commit-hook weigert dat.
 ## [2026-10-08] promote | toestaan-lijkbezorging | Mark Backer | fd388f3b
 ## [2026-10-08] promote | urn | Mark Backer | ef6be80c
 ## [2026-10-08] promote | vergunning | Mark Backer | fb5b4933
+## [2026-10-08] promote | asverstrooiing | Mark Backer | b61de177
+## [2026-10-08] promote | begraafplaats | Mark Backer | 93225858
+## [2026-10-08] promote | beheren-grafrechten | Mark Backer | d21cfc86
+## [2026-10-08] promote | gedenkteken-plaatsingsvergunning | Mark Backer | 641fc287
+## [2026-10-08] promote | rechthebbende-op-het-graf | Mark Backer | 64a3da1b
+## [2026-10-08] promote | verlenen-grafrecht | Mark Backer | a1555daa
+## [2026-10-08] promote | verlof-tot-begraven | Mark Backer | e308314a

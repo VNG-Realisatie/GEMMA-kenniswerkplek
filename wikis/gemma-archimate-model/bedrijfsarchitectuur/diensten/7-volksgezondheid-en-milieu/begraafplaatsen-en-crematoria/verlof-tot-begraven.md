@@ -76,7 +76,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Verlof tot begraven | bedient *bediening* | [Degene die in de lijkbezorging voorziet](../../../rollen/degene-die-in-de-lijkbezorging-voorziet.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md) (UPL nr. 438; RVO inleiding) |
+| Verlof tot begraven | bedient *bediening* | [Degene die in de lijkbezorging voorziet](../../../rollen/degene-die-in-de-lijkbezorging-voorziet.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md) (Wlb art. 11, 18 lid 1; UPL nr. 438; RVO inleiding) |
 
 #### Inkomend
 

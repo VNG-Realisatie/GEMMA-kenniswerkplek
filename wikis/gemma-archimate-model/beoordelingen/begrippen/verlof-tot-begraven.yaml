@@ -224,9 +224,10 @@ relaties:
   naam: bedient
   grondslag: bron
   bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rvo-aangifte-en-akte-van-overlijden
-  vindplaats: UPL nr. 438; RVO inleiding
+  vindplaats: Wlb art. 11, 18 lid 1; UPL nr. 438; RVO inleiding
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt

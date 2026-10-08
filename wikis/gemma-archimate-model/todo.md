@@ -13,7 +13,6 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 - **Richtlijnen als beleidskader** (besluit 9): per onderwerp beoordelen welke landelijke richtlijnen als geheel een beleidskader worden, met relatie *geeft richtlijn voor*. Kandidaten in burgerzaken: de HUP van RvIG (per hoofdstuk of als geheel, voorleggen), de Circulaire adresonderzoek BRP, de NVVB-handreikingen adresonderzoek en gezag.
 - **Licentie VNG-modellen**: de Model-APV (2023-vng-model-apv) en de Model beheersverordening (2010) staan letterlijk in `sources/raw/` van een publieke repository, zonder licentie in de bron. Laat de VNG (juridische zaken of het team modelverordeningen) bevestigen dat hergebruik mag, of er een licentie op zetten. De VNG herziet de Model-APV volledig (gepland begin 2027): vervang dan de bron.
-- **Relaties zonder landelijke wettelijke bron**: de regel Wettelijke grondslag geldt ook voor relaties, maar `tools/signalen.py` controleert alleen elementen. Bij groep A en D zijn de relaties van de behandelde elementen nagelopen; andere relaties steunen nog alleen op een richtlijn of een gemeentelijke bron (bijvoorbeeld *bedient* Degene die in de lijkbezorging voorziet vanuit Verlof tot begraven, Uitvaart vervroegen of uitstellen en Vervoersdocumenten stoffelijk overschot). Per onderwerp nalopen, en daarna een signaal voor een relatie zonder landelijke bron overwegen.
 
 ## Indelingen (analyse 2026-10-04, `analyses/indelingen.md`)
 

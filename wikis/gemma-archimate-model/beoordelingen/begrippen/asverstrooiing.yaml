@@ -228,8 +228,9 @@ relaties:
   naam: bedient
   grondslag: bron
   bronnen:
+  - 2023-vng-model-apv
   - 2025-groningen-algemene-plaatselijke-verordening
-  vindplaats: art. 5:27 lid 3
+  vindplaats: Model-APV art. 5:36 lid 3; Groningen art. 5:27 lid 3
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt

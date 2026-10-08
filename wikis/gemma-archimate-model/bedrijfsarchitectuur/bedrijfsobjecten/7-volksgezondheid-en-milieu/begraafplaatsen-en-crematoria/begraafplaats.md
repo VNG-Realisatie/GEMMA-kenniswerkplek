@@ -77,7 +77,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Begraafplaats | bevat *aggregatie* | [Graf](graf.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 1 d, h) |
+| Begraafplaats | bevat *aggregatie* | [Graf](graf.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 23 lid 1, 2; Groningen art. 1 d, h) |
 
 #### Inkomend
 

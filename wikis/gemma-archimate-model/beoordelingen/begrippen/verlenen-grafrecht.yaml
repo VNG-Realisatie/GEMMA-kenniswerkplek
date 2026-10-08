@@ -262,23 +262,26 @@ relaties:
   naam: geeft uit
   grondslag: bron
   bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 14
+  vindplaats: Wlb art. 23 lid 2, 28 lid 1; Groningen art. 14
 - soort: toegang (registreren)
   naar: heffing
   naam: leidt tot (lijkbezorgingsrechten)
   grondslag: bron
   bronnen:
+  - 2024-rijk-gemeentewet-wettekst
   - 2026-vng-retributies
-  vindplaats: § Lijkbezorgingsrechten
+  vindplaats: Gemeentewet art. 229 lid 1 onder a, b; VNG § Lijkbezorgingsrechten
 - soort: realisatie
   naar: graf-aanvragen
   naam: realiseert
   grondslag: bron
   bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: Groningen art. 16; VNG-model art. 15
+  vindplaats: Wlb art. 23 lid 2, 28 lid 1; Groningen art. 16; VNG-model art. 15
 onderwerpen:
 - lijkbezorging
 kernobject: grafrecht
@@ -308,6 +311,7 @@ afgeleid:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-vng-retributies
+  - 2024-rijk-gemeentewet-wettekst
   herkomst: rijksregelgeving
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75

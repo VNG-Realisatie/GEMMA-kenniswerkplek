@@ -237,8 +237,9 @@ relaties:
   naam: bevat
   grondslag: bron
   bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 1 d, h
+  vindplaats: Wlb art. 23 lid 1, 2; Groningen art. 1 d, h
 onderwerpen:
 - lijkbezorging
 status: goedgekeurd

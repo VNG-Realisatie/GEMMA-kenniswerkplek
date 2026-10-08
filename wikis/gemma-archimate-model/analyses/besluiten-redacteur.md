@@ -142,6 +142,7 @@ Besluiten over de werkwijze en de criteria staan bij de analyse waar ze bij hore
 | 2026-10-08 | Producten- en dienstenrealisatie veiligheidsdomein, Uitvoering openbare orde en veiligheid | lijkbezorging | Vervallen in de wiki: ze omvatten alleen Asverstrooiing, die geen landelijke grondslag en geen proces heeft; Asverstrooiing gaat naar Exploiteren van begraafplaatsen. Besluit 5 blijft, met een aanvulling (besluit 12 in analyses/wettelijke-grondslag.md). De GEMMA-elementen blijven; voorstel in GEMMA-terugmelding 1, in een nieuw register van GEMMA-terugmeldingen met de opbouw van de GGM- en procesarchitectuur-terugmeldingen. |
 | 2026-10-08 | Model beheersverordening begraafplaatsen | lijkbezorging | Is grondslag voor alleen bij UPL-producten zonder landelijke grondslag (Gedenkteken plaatsingsvergunning, Grafonderhoud); waar de Wet op de lijkbezorging de grondslag is, heet de relatie *werkt uit voor* (besluit 13). |
 | 2026-10-08 | Gewaarmerkte kopie reisdocument aanvragen | burgerzaken | Vervalt: geen UPL-product en geen landelijke wettelijke grondslag (groep C). |
+| 2026-10-08 | Relaties en wettelijke grondslag | alle | Een relatie heeft geen eigen landelijke grondslag nodig (te gedetailleerd): elementen en structuur worden afgeleid uit wettelijke bronnen, maar per relatie volstaat een bron. Voor elementen blijft de regel Wettelijke grondslag gelden (besluit 16 in `analyses/wettelijke-grondslag.md`). |
 
 ## Open punten uit eerdere besluiten
 

@@ -23,6 +23,7 @@ bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
 - 2026-vng-retributies
+- 2024-rijk-gemeentewet-wettekst
 ---
 
 # Verlenen grafrecht
@@ -94,9 +95,9 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Verlenen grafrecht | verleent *toegang (registreren)* | [Grafrecht](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28; Groningen art. 16) |
-| Verlenen grafrecht | geeft uit *toegang (raadplegen)* | [Graf](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 14) |
-| Verlenen grafrecht | leidt tot (lijkbezorgingsrechten) *toegang (registreren)* | [Heffing](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) | [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
-| Verlenen grafrecht | realiseert *realisatie* | [Graf aanvragen](../../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf-aanvragen.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md) (Groningen art. 16; VNG-model art. 15) |
+| Verlenen grafrecht | geeft uit *toegang (raadplegen)* | [Graf](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 23 lid 2, 28 lid 1; Groningen art. 14) |
+| Verlenen grafrecht | leidt tot (lijkbezorgingsrechten) *toegang (registreren)* | [Heffing](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) | [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (Gemeentewet art. 229 lid 1 onder a, b; VNG § Lijkbezorgingsrechten) |
+| Verlenen grafrecht | realiseert *realisatie* | [Graf aanvragen](../../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf-aanvragen.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md) (Wlb art. 23 lid 2, 28 lid 1; Groningen art. 16; VNG-model art. 15) |
 
 #### Inkomend
 
@@ -118,6 +119,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) | Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023 |
 | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md) | Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting |
 | [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) | Retributies |
+| [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) - geldend per 2024-01-31 |
 
 ### Afstemming met GEMMA
 

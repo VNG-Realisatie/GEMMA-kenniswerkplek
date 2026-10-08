@@ -224,8 +224,9 @@ relaties:
   naam: bedient
   grondslag: bron
   bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 22 lid 2
+  vindplaats: VNG-model art. 19 lid 2; Groningen art. 22 lid 2
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt

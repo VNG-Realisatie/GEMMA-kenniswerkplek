@@ -136,7 +136,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Heffingsverordening](heffingsverordening.md) | regelt *associatie (gericht)* | Heffing | [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (Gemeentewet art. 216, 229; § Lijkbezorgingsrechten) |
-| [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | leidt tot (lijkbezorgingsrechten) *toegang (registreren)* | Heffing | [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
+| [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | leidt tot (lijkbezorgingsrechten) *toegang (registreren)* | Heffing | [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (Gemeentewet art. 229 lid 1 onder a, b; VNG § Lijkbezorgingsrechten) |
 
 ## Herkomst
 

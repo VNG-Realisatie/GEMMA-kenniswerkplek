@@ -268,9 +268,10 @@ relaties:
   naam: machtigt tot begraving in het particulier graf
   grondslag: bron
   bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: Groningen art. 9 lid 2; VNG-model art. 9 lid 2
+  vindplaats: Wlb art. 23 lid 2; Groningen art. 9 lid 2; VNG-model art. 9 lid 2
 onderwerpen:
 - lijkbezorging
 doelgroep: inwoners en ondernemers

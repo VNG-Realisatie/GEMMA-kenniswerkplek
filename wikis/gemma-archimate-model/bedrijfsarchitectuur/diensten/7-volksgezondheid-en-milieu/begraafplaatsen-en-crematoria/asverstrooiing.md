@@ -78,7 +78,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Asverstrooiing | bedient *bediening* | [Nabestaande](../../../rollen/nabestaande.md) | [APV Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md) (art. 5:27 lid 3) |
+| Asverstrooiing | bedient *bediening* | [Nabestaande](../../../rollen/nabestaande.md) | [Model-APV](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md), [APV Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md) (Model-APV art. 5:36 lid 3; Groningen art. 5:27 lid 3) |
 
 #### Inkomend
 

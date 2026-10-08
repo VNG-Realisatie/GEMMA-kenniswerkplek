@@ -72,7 +72,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Asverstrooiing](../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md) | bedient *bediening* | Nabestaande | [APV Groningen](../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md) (art. 5:27 lid 3) |
+| [Asverstrooiing](../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md) | bedient *bediening* | Nabestaande | [Model-APV](../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md), [APV Groningen](../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md) (Model-APV art. 5:36 lid 3; Groningen art. 5:27 lid 3) |
 
 ## Herkomst
 
