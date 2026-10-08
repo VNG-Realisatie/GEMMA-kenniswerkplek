@@ -1,5 +1,5 @@
 # Procesarchitectuur-terugmeldingen: het register. De AI voegt een melding toe zonder nummer; tools/afleiden.py geeft het volgende nummer.
-# tools/render.py maakt hieruit analyses/procesarchitectuur-terugmeldingen.md en de sectie op de elementpagina.
+# tools/render.py maakt hieruit terugmeldingen/procesarchitectuur-terugmeldingen.md en de sectie op de elementpagina.
 # Het model mag afwijken van de UPL-indeling, mits de afwijking hier is teruggemeld (besluit redacteur 2026-10-05).
 terugmeldingen:
 - type: indeling

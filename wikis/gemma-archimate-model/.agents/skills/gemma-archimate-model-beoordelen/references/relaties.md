@@ -61,4 +61,4 @@ Controleer elke voorgestelde relatie op richting en betekenis; de tool kent alle
 
 ## Terugmelden
 
-Alleen bij `ggm-exact`: fout type, richting, kardinaliteit, naam of een dubbele relatie → een terugmelding van type `relatie` in `beoordelingen/terugmeldingen.yaml` (het voorstel noemt kandidaten in het commentaar). Nieuwe en afgeleide relaties worden niet teruggemeld. Bij tegenspraak tussen wet en GGM wint de wet.
+Alleen bij `ggm-exact`: fout type, richting, kardinaliteit, naam of een dubbele relatie → een terugmelding van type `relatie` in `beoordelingen/terugmeldingen/ggm.yaml` (het voorstel noemt kandidaten in het commentaar). Nieuwe en afgeleide relaties worden niet teruggemeld. Bij tegenspraak tussen wet en GGM wint de wet.

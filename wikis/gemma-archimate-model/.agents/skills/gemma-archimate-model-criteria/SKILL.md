@@ -11,7 +11,7 @@ metadata:
 
 # Criteria: is dit begrip een ArchiMate-element, en welk?
 
-Deze skill is de enige plek waar staat wanneer een begrip een element van dit model wordt. Ze beschrijft alleen *wat* het begrip is. Hoe je het daarna vastlegt (GGM-match, naam, definitie, relaties) staat in `gemma-archimate-model-write`.
+Deze skill is de enige plek waar staat wanneer een begrip een element van dit model wordt. Ze beschrijft alleen *wat* het begrip is. Hoe je het daarna vastlegt (GGM-match, naam, definitie, relaties) staat in skill `gemma-archimate-model-beoordelen`.
 
 ## Kenmerk en criterium
 
@@ -25,7 +25,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
 1. **Stap 0: welk begrip?** Bepaal vóór de kenmerken of het woord een synoniem is van een bestaand element (of van een begrip dat nu wordt beoordeeld), en of dezelfde naam al voor een ander begrip bestaat: in de wiki, het GGM of het GEMMA-model (`tools/ggm.py kandidaten <naam>`, `tools/gemma.py kandidaten <naam>`) of een bron. Vul `synoniem_van` of `homoniem_van` in. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
 2. Beantwoord **alle** kenmerken uit de vragenlijst hieronder, ook als ze niet bij het vermoedelijke type horen (dan nee). Gebruik de bronnen in de volgorde van de regel Bronvoorrang (`europese-regelgeving` → `rijksregelgeving` → `informatiemodel` → `richtlijn` → `gemeentelijke-regelgeving` → `beleid` → `overig`). Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; staat die niet in de bronanalyse, vul dan eerst de bronanalyse aan.
 3. Let op:
-   - *zelfstandige specialisatie*: kijk eerst naar boven. Zoek de generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek`) en noteer de keten (bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Het kenmerk gaat over de "is een"-relatie, niet over herkomst uit wet of beleid; zie `gemma-archimate-model-assess` §3.
+   - *zelfstandige specialisatie*: kijk eerst naar boven. Zoek de generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek`) en noteer de keten (bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Het kenmerk gaat over de "is een"-relatie, niet over herkomst uit wet of beleid; zie skill `gemma-archimate-model-beoordelen` §3 en `references/hierarchie.md`.
    - *los van verantwoordelijkheid* en *eigen rechtspersoon* beslissen tussen actor, rol en bedrijfssamenwerking. Een actor hangt alleen via een rol aan gedrag en objecten (*vervult een rol*).
    - *gebruikt objecten* en *wordt bewerkt*: noem de handeling uit de vaste reeks (registreren, bijwerken, beëindigen, raadplegen, verstrekken, bewaren, overbrengen, vernietigen).
    - *Procesniveau* (stap 7), volgens de ladder van GEMMA Online, Proceshiërarchie (besluit redacteur 2026-10-08): een **levensloopproces** omvat de levensloop van één kernobject, van begin tot eind (*omvat levensloop*, met `kernobject`; *Beheren grafrechten*). Per kernobject is er één; zijn taakveld en beleidsdomein zijn die van het kernobject. Alleen binnen een ketensamenwerking mag een kernobject er meer hebben, één per partij, die samen de bedrijfsinteractie met dat kernobject bedienen (*Toestaan lijkbezorging* door de gemeente als overheid en *Begraven en cremeren stoffelijk overschot* door de houder; de partij kan de gemeente in een eigen hoedanigheid zijn). In GEMMA is het een cluster van bedrijfsprocessen over één thema (GEMMA type *Bedrijfsproces (cluster)*). Een **bedrijfsproces** loopt van klant tot klant en levert een product, dienst of besluit (*bijdrage aan groter proces*, met *eigen besluit*, *eigen normering* of *levert aanbod*; *Verlenen grafrecht*). Het hangt onder één levensloopproces, en vaak specialiseert het een generiek GEMMA-bedrijfsproces (`gemma_generiek`). Een product of dienst valt nooit weg. Een **deelproces** (binnen één bedrijfsfunctie, levert een deeldienst) en een processtap zonder dat alles krijgen geen pagina; de tekst gaat naar het bedrijfsproces. Een groepering van processen (*groepeert processen*) is alleen een cluster naar soort werk, met `gemma_generiek`. De taak is geen procesniveau: boven het levensloopproces staan beleidsdomein en taakveld uit de Beleidsdomeinindeling.
@@ -70,7 +70,7 @@ Buiten dit model vallen de overige motivatie- en strategie-elementen (Goal, Outc
 
 ## Kenmerken en beslistabel
 
-Gegenereerd uit de beslistabel (`uv run python tools/bepaal_type.py markdown --schrijf`); de wikipagina `analyses/beslistabel.md` heeft dezelfde tekst met de naslag per kenmerk (voorbeelden en herkomst), zonder de stappentabel.
+Gegenereerd uit de beslistabel (`uv run python tools/bepaal_type.py markdown --schrijf`); de wikipagina `naslag/beslistabel.md` heeft dezelfde tekst met de naslag per kenmerk (voorbeelden en herkomst), zonder de stappentabel.
 
 <!-- BEGIN gegenereerd uit de beslistabel; niet met de hand bewerken -->
 ### Stap 0: welk begrip?

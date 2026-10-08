@@ -115,6 +115,8 @@ def append_log(
 
 def _iter_pages(wiki_root: Path, wiki_yaml: dict):
     for type_name, type_def in wiki_yaml.get("page_types", {}).items():
+        if "dir" not in type_def:  # een type zonder eigen map (zoals gegenereerde lijsten) telt niet mee
+            continue
         page_dir = wiki_root / type_def["dir"]
         if not page_dir.exists():
             continue

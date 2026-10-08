@@ -112,7 +112,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 GGM-terugmeldingen:
 
-- [Nummer 11](../../analyses/ggm-terugmeldingen.md) (homoniem, open): **GGM:** Rechthebbende in Archief is iemand die rechten heeft op een goed. **Bevinding:** de Wet op de lijkbezorging en de beheersverordeningen gebruiken rechthebbende voor wie het uitsluitend recht op een particulier graf heeft (art. 23, 28). Deze wiki noemt dat element Rechthebbende op het graf. **Voorstel:** de GGM-definitie in Archief verbijzonderen (rechthebbende op archiefbescheiden), zodat de algemene naam niet aan één domein vastzit.
+- [Nummer 11](../../terugmeldingen/ggm-terugmeldingen.md) (homoniem, open): **GGM:** Rechthebbende in Archief is iemand die rechten heeft op een goed. **Bevinding:** de Wet op de lijkbezorging en de beheersverordeningen gebruiken rechthebbende voor wie het uitsluitend recht op een particulier graf heeft (art. 23, 28). Deze wiki noemt dat element Rechthebbende op het graf. **Voorstel:** de GGM-definitie in Archief verbijzonderen (rechthebbende op archiefbescheiden), zodat de algemene naam niet aan één domein vastzit.
 
 ### Afstemming met GEMMA
 

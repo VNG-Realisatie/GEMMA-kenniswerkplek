@@ -1,6 +1,6 @@
 # GEMMA-terugmeldingen: het register van voorstellen aan het GEMMA-team over het GEMMA-model (besluit redacteur 2026-10-08).
 # De AI voegt een melding toe zonder nummer; tools/afleiden.py geeft het volgende nummer.
-# tools/render.py maakt hieruit analyses/gemma-terugmeldingen.md en de sectie op de elementpagina.
+# tools/render.py maakt hieruit terugmeldingen/gemma-terugmeldingen.md en de sectie op de elementpagina.
 terugmeldingen:
 - type: element
   elementen:

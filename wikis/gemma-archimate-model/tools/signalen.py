@@ -171,13 +171,13 @@ def domein_en_beleidsdomein(alle: dict[str, dict], elementen: dict[str, dict], g
         elif domein not in domeinen:
             w.append(f"{bid}: domein '{domein}' past niet bij beleidsdomein '{bd}', dat in GEMMA onder "
                      f"{', '.join(sorted(domeinen))} valt (Beleidsdomeinindeling tegenover Functie-indeling naar domein); "
-                     "herzien of terugmelden (beoordelingen/procesarchitectuur-terugmeldingen.yaml)")
+                     "herzien of terugmelden (beoordelingen/terugmeldingen/procesarchitectuur.yaml)")
     for bd, per_domein in sorted(nieuw.items()):
         if len(per_domein) > 1:
             delen = "; ".join(f"{d}: {', '.join(ids)}" for d, ids in sorted(per_domein.items()))
             w.append(f"beleidsdomein '{bd}' (nieuw voor GEMMA): producten en diensten in {len(per_domein)} domeinen "
                      f"({delen}); leg vast hoe GEMMA het indeelt en meld het terug "
-                     "(beoordelingen/procesarchitectuur-terugmeldingen.yaml)")
+                     "(beoordelingen/terugmeldingen/procesarchitectuur.yaml)")
     return w
 
 def functie_indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[tuple[str, dict]],

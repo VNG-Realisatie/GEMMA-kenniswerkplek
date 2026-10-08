@@ -235,7 +235,7 @@ def test_nieuwe_terugmelding_krijgt_het_volgende_nummer(wiki):
     meldingen = beoordeling.laad(wiki / afleiden.TERUGMELDINGEN)["terugmeldingen"]
     assert [(m["nummer"], m["status"]) for m in meldingen] == [(1, "open"), (2, "open")]
     pagina = (wiki / _lees(wiki, "beschikking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
-    assert "[Nummer 2](../../../../analyses/ggm-terugmeldingen.md)" in pagina
+    assert "[Nummer 2](../../../../terugmeldingen/ggm-terugmeldingen.md)" in pagina
 
 
 def test_open_terugmelding_zonder_voorstel_is_een_fout(wiki):
@@ -265,10 +265,10 @@ def test_gemma_terugmelding_noemt_wiki_en_gemma_elementen(wiki):
     _afleiden(wiki)
     meldingen = beoordeling.laad(wiki / afleiden.GEMMA_TERUGMELDINGEN)["terugmeldingen"]
     assert [(m["nummer"], m["status"]) for m in meldingen] == [(1, "open")]
-    lijst = (wiki / "analyses" / "gemma-terugmeldingen.md").read_text(encoding="utf-8")
+    lijst = (wiki / "terugmeldingen" / "gemma-terugmeldingen.md").read_text(encoding="utf-8")
     assert "Uitvoering veiligheid (GEMMA)" in lijst and "## Terugmeldingen" in lijst
     pagina = (wiki / _lees(wiki, "beschikking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
-    assert "[Nummer 1](../../../../analyses/gemma-terugmeldingen.md)" in pagina
+    assert "[Nummer 1](../../../../terugmeldingen/gemma-terugmeldingen.md)" in pagina
     # een GEMMA-element dat niet bestaat of anders heet, is een fout
     register["terugmeldingen"][0]["gemma_elementen"] = [{"id": "id-functie", "naam": "Andere naam"}]
     register["terugmeldingen"][0] |= {"nummer": 1, "status": "open"}

@@ -1,12 +1,12 @@
 ---
 id: ggm-terugmeldingen
-type: analyse
+type: lijst
 titel: GGM-terugmeldingen
 ---
 
 # GGM-terugmeldingen
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/terugmeldingen.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit beoordelingen/terugmeldingen/ggm.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
 Bevindingen uit de beoordeling van elementen die aan het GGM-beheer worden teruggekoppeld.
 

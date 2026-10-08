@@ -117,7 +117,7 @@ Geen GGM-entiteit. Het GGM kent geen entiteit voor het grafrecht; GGM-terugmeldi
 
 GGM-terugmeldingen:
 
-- [Nummer 4](../../../../analyses/ggm-terugmeldingen.md) (hiaat, open): **GGM:** Grafrecht (uitsluitend recht op een graf, art. 28) ontbreekt. **Bevinding:** het recht wordt schriftelijk gevestigd voor onbepaalde tijd of ten minste tien jaar, verlengd, overgeschreven en kan vervallen of vervallen worden verklaard (Wet op de lijkbezorging art. 28; beheersverordening Groningen art. 16, 18-20); gemeenten heffen er lijkbezorgingsrechten voor. Relevante attributen: rechthebbende; graf; ingangsdatum en looptijd; verlengingen en overschrijvingen; datum verval en reden. **Voorstel:** opnemen in een beleidsdomein Begraafplaatsen en crematoria.
+- [Nummer 4](../../../../terugmeldingen/ggm-terugmeldingen.md) (hiaat, open): **GGM:** Grafrecht (uitsluitend recht op een graf, art. 28) ontbreekt. **Bevinding:** het recht wordt schriftelijk gevestigd voor onbepaalde tijd of ten minste tien jaar, verlengd, overgeschreven en kan vervallen of vervallen worden verklaard (Wet op de lijkbezorging art. 28; beheersverordening Groningen art. 16, 18-20); gemeenten heffen er lijkbezorgingsrechten voor. Relevante attributen: rechthebbende; graf; ingangsdatum en looptijd; verlengingen en overschrijvingen; datum verval en reden. **Voorstel:** opnemen in een beleidsdomein Begraafplaatsen en crematoria.
 
 ### Afstemming met GEMMA
 

@@ -21,6 +21,8 @@ page_types:                          # pagina's van curated typen en onderwerpen
   analyse:
     dir: analyses
     schema: schemas/analyse.schema.json
+  lijst:                             # wat een script als lijst maakt: terugmeldingen/, naslag/, ter-beoordeling.md, voortgang.md; geen eigen map
+    schema: schemas/lijst.schema.json
   bedrijfsobject:                    # archimate_type business-object | contract
     dir: bedrijfsarchitectuur/bedrijfsobjecten
     submappen: [taakveld, beleidsdomein]

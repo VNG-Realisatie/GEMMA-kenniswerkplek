@@ -1,12 +1,12 @@
 ---
 id: gemma-terugmeldingen
-type: analyse
+type: lijst
 titel: GEMMA-terugmeldingen
 ---
 
 # GEMMA-terugmeldingen
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/gemma-terugmeldingen.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit beoordelingen/terugmeldingen/gemma.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
 Voorstellen voor het GEMMA-team over het GEMMA-model zelf: elementen die ontbreken, vervallen of herzien moeten worden, en afwijkende indelingen, definities en relaties. De export naar Archi werkt alleen elementen bij die de wiki kent; wat de wiki laat vervallen, blijft in GEMMA tot het GEMMA-team erover besluit (besluit redacteur 2026-10-08).
 

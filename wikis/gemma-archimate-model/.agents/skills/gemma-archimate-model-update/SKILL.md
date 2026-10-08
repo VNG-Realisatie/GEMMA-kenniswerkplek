@@ -18,7 +18,7 @@ Volg skill `wiki-curatie-update`. Deze workflow vult de stappen in voor deze wik
 |---|---|---|---|---|---|
 | 1 | Onderwerp | AI met redacteur | middel | Bestaat `beoordelingen/onderwerpen/<onderwerp>.yaml` niet, maak het dan in overleg (naam, omschrijving als alinea's, bronnen, status `in-behandeling`); noem in de omschrijving de kernobjecten, en wat buiten het onderwerp valt met het onderwerp waar het thuishoort (regel Thuishoren) | onderwerp |
 | 2 | Bronnen en bronanalyse | AI | middel | Skill `gemma-archimate-model-ingest`; daarna de kernpunten bespreken met de redacteur | `sources/`, `bronanalyses/<onderwerp>/` |
-| 3 | Beoordelen | AI | hoog | Skill `gemma-archimate-model-beoordelen`: per begrip een beoordeling met kenmerken, tekst, match, relaties en terugmeldingen; lees eerst `analyses/besluiten-redacteur.md` | `beoordelingen/begrippen/<id>.yaml`, `beoordelingen/terugmeldingen.yaml` |
+| 3 | Beoordelen | AI | hoog | Skill `gemma-archimate-model-beoordelen`: per begrip een beoordeling met kenmerken, tekst, match, relaties en terugmeldingen; lees eerst `analyses/besluiten-redacteur.md` | `beoordelingen/begrippen/<id>.yaml`, `beoordelingen/terugmeldingen/ggm.yaml` |
 | 4 | Afleiden en renderen | script | hoog | `uv run python tools/afleiden.py`. Een fout lost de AI op in de beoordeling en draait opnieuw. Een waarschuwing beoordeelt de AI inhoudelijk: oplossen of toelichten | status, pagina's, `ter-beoordeling.md` |
 | 5 | Voorleggen | AI → redacteur | hoog | Wat een keuze van de redacteur vraagt, één voor één in de chat: een element met open redenen (`afgeleid.open`, ook in `ter-beoordeling.md`), een open vraag, twijfel over een kenmerk, een nieuw element of een afwijking van een eerder besluit. Context, argumenten voor en tegen, advies, in eenvoudige taal met een concreet voorbeeld uit het model; per optie wat er gebeurt. Het antwoord komt in `besluiten:` (datum, besluit, `gevolg`, en bij `opnemen` de redenen die het besluit dekt); daarna stap 4. Een begrip zonder pagina waarvan de uitkomst eenduidig uit de beslistabel of een eerdere afbakening volgt (buiten scope, geen element zonder twijfel), leg je niet los voor: noem die samen in de samenvatting van stap 6 (besluit redacteur 2026-10-01) | `kandidaat` → `review` of `afgewezen` |
 | 6 | Bekijken | redacteur | laag | `uv run python -m llmwiki promote plan [--onderwerp <id>]` en de samenvatting in de chat tonen. De redacteur leest `ter-beoordeling.md`, de pagina's en de wijzigingen in Source Control. Wil de redacteur iets anders: aanpassen in de beoordeling, terug naar stap 4 | — |
@@ -29,7 +29,7 @@ Volg skill `wiki-curatie-update`. Deze workflow vult de stappen in voor deze wik
 
 ## Grenzen
 
-- Pagina's (`bedrijfsarchitectuur/`, `motivatie/`, `begrippen/`, `overzichten/`, `analyses/ggm-terugmeldingen.md`, `ter-beoordeling.md`, `voortgang.md`) nooit met de hand bewerken: wijzig de beoordeling en draai `tools/afleiden.py`.
+- Pagina's (`bedrijfsarchitectuur/`, `motivatie/`, `begrippen/`, `overzichten/`, `terugmeldingen/ggm-terugmeldingen.md`, `ter-beoordeling.md`, `voortgang.md`) nooit met de hand bewerken: wijzig de beoordeling en draai `tools/afleiden.py`.
 - `status:` en `afgeleid:` in een beoordeling nooit zelf invullen; de scripts zetten ze.
 - Hernoemen, samenvoegen of splitsen van een element: leg in `beoordelingen/objecten.yaml` vast welk Archi-object het voortzet (regel Objectbehoud). Bij samenvoegen en splitsen eerst de redacteur vragen.
 - Nooit zelf AKKOORD typen of `promote apply` draaien zonder dat de redacteur letterlijk AKKOORD typte.

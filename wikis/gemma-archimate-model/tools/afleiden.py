@@ -10,7 +10,7 @@ Leest elke beoordeling in `beoordelingen/begrippen/<id>.yaml` (het oordeel van d
 - `afgeleid.ggm`, `afgeleid.ggm_duplicaten`, `afgeleid.gemma`: de letterlijke velden bij de match die de AI koos
   (tools/ggm.py, tools/gemma.py); de AI vult die nooit zelf;
 - `afgeleid.bronnen` en `afgeleid.herkomst`: alle bronnen van het begrip, en het brontype van de hoogste.
-Nieuwe GGM-terugmeldingen in `beoordelingen/terugmeldingen.yaml` krijgen het volgende nummer.
+Nieuwe GGM-terugmeldingen in `beoordelingen/terugmeldingen/ggm.yaml` krijgen het volgende nummer.
 
 Harde controles (fout: er wordt niets geschreven): schema, kenmerken, verplichte velden van een element, bestaan van
 bronnen (met bronanalyse), GGM-guid, GEMMA-id, doelen van relaties, specialisaties, tegenhanger en homoniemen, de
@@ -41,13 +41,13 @@ import signalen  # noqa: E402
 from llmwiki import beoordeling, frontmatter, paths  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
-TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen.yaml"
+TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "ggm.yaml"
 ONDERWERPEN = Path("beoordelingen") / "onderwerpen"
 TERUGMELDTYPEN = ("hiaat", "definitie", "structuur", "scope", "duplicaat", "homoniem", "relatie")
 TERUGMELDSTATUS = ("open", "gemeld", "opgelost", "afgewezen")
-PA_TERUGMELDINGEN = Path("beoordelingen") / "procesarchitectuur-terugmeldingen.yaml"
+PA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "procesarchitectuur.yaml"
 PA_TYPEN = ("indeling", "grondslag", "product", "kennismodel")
-GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "gemma-terugmeldingen.yaml"
+GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "gemma.yaml"
 GEMMA_TYPEN = ("element", "indeling", "definitie", "relatie")
 OBJECTEN = Path("beoordelingen") / "objecten.yaml"
 BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"

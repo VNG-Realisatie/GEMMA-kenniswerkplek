@@ -1,6 +1,6 @@
 ---
 id: voortgang
-type: analyse
+type: lijst
 titel: Voortgang
 ---
 
@@ -45,12 +45,12 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 ## GGM-terugmeldingen
 
-[18 terugmeldingen](analyses/ggm-terugmeldingen.md): open 18.
+[18 terugmeldingen](terugmeldingen/ggm-terugmeldingen.md): open 18.
 
 ## Procesarchitectuur-terugmeldingen
 
-[23 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 22, opgelost 1.
+[23 terugmeldingen](terugmeldingen/procesarchitectuur-terugmeldingen.md): open 22, opgelost 1.
 
 ## GEMMA-terugmeldingen
 
-[5 terugmeldingen](analyses/gemma-terugmeldingen.md): open 5.
+[5 terugmeldingen](terugmeldingen/gemma-terugmeldingen.md): open 5.

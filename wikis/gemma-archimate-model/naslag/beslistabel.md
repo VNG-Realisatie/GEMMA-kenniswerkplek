@@ -1,6 +1,6 @@
 ---
 id: beslistabel
-type: analyse
+type: lijst
 titel: Kenmerken en beslistabel
 bijgewerkt: '2026-10-07'
 bronnen: [2026-vng-over-gemma]

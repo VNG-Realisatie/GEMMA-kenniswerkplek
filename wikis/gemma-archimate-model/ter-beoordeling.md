@@ -1,6 +1,6 @@
 ---
 id: ter-beoordeling
-type: analyse
+type: lijst
 titel: Ter beoordeling
 ---
 

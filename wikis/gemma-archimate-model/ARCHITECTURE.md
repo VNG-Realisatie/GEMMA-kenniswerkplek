@@ -62,9 +62,9 @@ wikis/gemma-archimate-model/
 |---|---|
 | `bedrijfsarchitectuur/<map>/<taakveld>/<beleidsdomein>/<id>.md`, `bedrijfsarchitectuur/bedrijfsfuncties/<domein>/<id>.md`, `motivatie/beleidskaders/<id>.md` | Elementpagina; de map volgt uit het type (`wiki.yaml` `page_types`), de submappen uit taakveld en beleidsdomein, bij een functie uit het domein (kleine letters met koppeltekens) |
 | `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst (element met link en status, synoniem van, specialisatie van, geen element …), de reden, de herkomst en de GGM-entiteit |
-| `analyses/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
-| `analyses/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel), uit `beoordelingen/procesarchitectuur-terugmeldingen.yaml` |
-| `analyses/gemma-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model (elementen, indelingen, definities, relaties), uit `beoordelingen/gemma-terugmeldingen.yaml` |
+| `terugmeldingen/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
+| `terugmeldingen/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel), uit `beoordelingen/terugmeldingen/procesarchitectuur.yaml` |
+| `terugmeldingen/gemma-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model (elementen, indelingen, definities, relaties), uit `beoordelingen/terugmeldingen/gemma.yaml` |
 | `ter-beoordeling.md` | Wat wacht op akkoord (status `review`), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 
@@ -127,7 +127,7 @@ Eén plek: skill [gemma-archimate-model-criteria](.agents/skills/gemma-archimate
 - **Kenmerken** zijn neutrale eigenschappen van een begrip (bijv. *onderscheidbare exemplaren*). De AI beantwoordt ze allemaal, één keer, met onderbouwing en bron-id's.
 - **Criteria** zijn de regels van de beslistabel: welke combinatie van kenmerken tot welk type leidt. Het script past ze toe; het type is een uitkomst, geen keuze vooraf.
 - De beslistabel heeft acht stappen: welk begrip (synoniem of homoniem), scope, afhankelijkheid, consistentie, type, een **drempel** per type (een kernrelatie die ja moet zijn, eventueel een eis, en van de overige drempelcriteria hoogstens één nee), de **zelfstandige specialisatie** en de **indeling** (stap 7: procesniveau en objectniveau, met de plaats in de indelingen; `tools/bepaal_type.py indeling` heeft de context van alle begrippen). Criteria van 2026-10-04 (`analyses/indelingen.md`); de onderbouwing staat in `analyses/kenmerken.md`, `analyses/gemma-kennismodel.md`, `analyses/gegevensrollen.md` en `analyses/synoniemen-en-homoniemen.md`.
-- De documentatie in de skill en in [analyses/beslistabel.md](analyses/beslistabel.md), en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json), worden uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
+- De documentatie in de skill en in [naslag/beslistabel.md](naslag/beslistabel.md), en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json), worden uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
 - Interaction wordt herkend, maar heeft geen paginatype: zo'n begrip wordt voorgelegd. Representation en Location zijn een vaste uitkomst zonder pagina. Van de motivatielaag zit alleen het beleidskader in dit model.
 
 ## 8. Bronvoorrang en definities

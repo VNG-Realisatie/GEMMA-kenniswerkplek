@@ -1,8 +1,8 @@
 """Render: alle leesbare pagina's van deze wiki uit de beoordelingen.
 
 Invoer (alleen lezen): `beoordelingen/begrippen/<id>.yaml` (het oordeel van de AI, met `status` en `afgeleid` van
-tools/afleiden.py), `beoordelingen/onderwerpen/<id>.yaml`, `beoordelingen/terugmeldingen.yaml`,
-`beoordelingen/procesarchitectuur-terugmeldingen.yaml`, `beoordelingen/gemma-terugmeldingen.yaml`, `beoordelingen/beleidsdomeinen.yaml`, `log.md`, `wiki.yaml`,
+tools/afleiden.py), `beoordelingen/onderwerpen/<id>.yaml`, `beoordelingen/terugmeldingen/ggm.yaml`,
+`beoordelingen/terugmeldingen/procesarchitectuur.yaml`, `beoordelingen/terugmeldingen/gemma.yaml`, `beoordelingen/beleidsdomeinen.yaml`, `log.md`, `wiki.yaml`,
 de bronanalyses en `sources/index` (titels). Het script oordeelt niet en schrijft nooit in `beoordelingen/`.
 
 Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--check` vangt dat):
@@ -12,9 +12,9 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 | `<map van het type>/<taakveld>/<beleidsdomein>/<id>.md` (pad uit `afgeleid.pad`) | Elementpagina |
 | `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst, de reden, de herkomst en de GGM-entiteit |
 | `overzichten/<onderwerp>.md` | Overzicht per onderwerp: de views op de indelingen (processen naar kernobject en naar soort werk, ketensamenwerking, objecten, functies, doelgroepen, producten en diensten, beleidskaders) |
-| `analyses/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
-| `analyses/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel) |
-| `analyses/gemma-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model |
+| `terugmeldingen/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
+| `terugmeldingen/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel) |
+| `terugmeldingen/gemma-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model |
 | `ter-beoordeling.md` | Wat wacht op akkoord (review), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 
@@ -52,14 +52,14 @@ from llmwiki import beoordeling, frontmatter, logbook, paths  # noqa: E402
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
 ONDERWERPEN = Path("beoordelingen") / "onderwerpen"
 OVERZICHTEN = "overzichten"
-TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen.yaml"
+TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "ggm.yaml"
 TER_BEOORDELING = Path("ter-beoordeling.md")
 VOORTGANG = Path("voortgang.md")
-TERUGMELDLIJST = Path("analyses") / "ggm-terugmeldingen.md"
-PA_TERUGMELDINGEN = Path("beoordelingen") / "procesarchitectuur-terugmeldingen.yaml"
-PA_TERUGMELDLIJST = Path("analyses") / "procesarchitectuur-terugmeldingen.md"
-GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "gemma-terugmeldingen.yaml"
-GEMMA_TERUGMELDLIJST = Path("analyses") / "gemma-terugmeldingen.md"
+TERUGMELDLIJST = Path("terugmeldingen") / "ggm-terugmeldingen.md"
+PA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "procesarchitectuur.yaml"
+PA_TERUGMELDLIJST = Path("terugmeldingen") / "procesarchitectuur-terugmeldingen.md"
+GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "gemma.yaml"
+GEMMA_TERUGMELDLIJST = Path("terugmeldingen") / "gemma-terugmeldingen.md"
 BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
 INDELINGSVELDEN = ("afnemer", "domein", "doelgroep", "regelgever")  # waarden zonder verwijzing: ook in de frontmatter
 
@@ -689,8 +689,8 @@ def _terugmeld_element(w: Wiki, van: str, m: dict) -> str:
 
 def terugmeldlijst(w: Wiki) -> str:
     van = TERUGMELDLIJST.as_posix()
-    meta = {"id": "ggm-terugmeldingen", "type": "analyse", "titel": "GGM-terugmeldingen"}
-    r = ["# GGM-terugmeldingen", "", _gegenereerd("beoordelingen/terugmeldingen.yaml"), "",
+    meta = {"id": "ggm-terugmeldingen", "type": "lijst", "titel": "GGM-terugmeldingen"}
+    r = ["# GGM-terugmeldingen", "", _gegenereerd(TERUGMELDINGEN.as_posix()), "",
          "Bevindingen uit de beoordeling van elementen die aan het GGM-beheer worden teruggekoppeld.", ""]
     per_type = []
     for soort, betekenis in TERUGMELDTYPEN.items():
@@ -737,8 +737,8 @@ def _bevinding_cel(w: Wiki, van: str, bevinding: str | list[str]) -> str:
 
 def pa_terugmeldlijst(w: Wiki) -> str:
     van = PA_TERUGMELDLIJST.as_posix()
-    meta = {"id": "procesarchitectuur-terugmeldingen", "type": "analyse", "titel": "Procesarchitectuur-terugmeldingen"}
-    r = ["# Procesarchitectuur-terugmeldingen", "", _gegenereerd("beoordelingen/procesarchitectuur-terugmeldingen.yaml"), "",
+    meta = {"id": "procesarchitectuur-terugmeldingen", "type": "lijst", "titel": "Procesarchitectuur-terugmeldingen"}
+    r = ["# Procesarchitectuur-terugmeldingen", "", _gegenereerd(PA_TERUGMELDINGEN.as_posix()), "",
          "Bevindingen voor de werkgroep procesarchitectuur: waar GEMMA tot een andere indeling of modellering komt dan de "
          "UPL-lijsten (producten en diensten, extern en intern) en het kennismodel procesarchitectuur. Het model mag "
          "afwijken van de UPL-indeling, mits de afwijking hier is teruggemeld (besluit redacteur 2026-10-05); een "
@@ -766,8 +766,8 @@ GEMMA_TYPEN = {
 
 def gemma_terugmeldlijst(w: Wiki) -> str:
     van = GEMMA_TERUGMELDLIJST.as_posix()
-    meta = {"id": "gemma-terugmeldingen", "type": "analyse", "titel": "GEMMA-terugmeldingen"}
-    r = ["# GEMMA-terugmeldingen", "", _gegenereerd("beoordelingen/gemma-terugmeldingen.yaml"), "",
+    meta = {"id": "gemma-terugmeldingen", "type": "lijst", "titel": "GEMMA-terugmeldingen"}
+    r = ["# GEMMA-terugmeldingen", "", _gegenereerd(GEMMA_TERUGMELDINGEN.as_posix()), "",
          "Voorstellen voor het GEMMA-team over het GEMMA-model zelf: elementen die ontbreken, vervallen of herzien moeten "
          "worden, en afwijkende indelingen, definities en relaties. De export naar Archi werkt alleen elementen bij die "
          "de wiki kent; wat de wiki laat vervallen, blijft in GEMMA tot het GEMMA-team erover besluit (besluit redacteur "
@@ -787,7 +787,7 @@ def gemma_terugmeldlijst(w: Wiki) -> str:
 
 def ter_beoordeling(w: Wiki) -> str:
     van = TER_BEOORDELING.as_posix()
-    meta = {"id": "ter-beoordeling", "type": "analyse", "titel": "Ter beoordeling"}
+    meta = {"id": "ter-beoordeling", "type": "lijst", "titel": "Ter beoordeling"}
     r = ["# Ter beoordeling", "", _gegenereerd("de beoordelingen"), "",
          "Wat wacht op het akkoord van de redacteur. Bekijk per element de pagina en de wijziging in Source Control. "
          "Geef akkoord door in de chat AKKOORD te typen; daarna worden alle elementen hieronder goedgekeurd.", ""]
@@ -830,7 +830,7 @@ def _samenhang(w: Wiki) -> list[str]:
 
 
 def voortgang(w: Wiki) -> str:
-    meta = {"id": "voortgang", "type": "analyse", "titel": "Voortgang"}
+    meta = {"id": "voortgang", "type": "lijst", "titel": "Voortgang"}
     r = ["# Voortgang", "", _gegenereerd("de beoordelingen"), ""]
     rijen = []
     for oid, o in w.onderwerpen.items():

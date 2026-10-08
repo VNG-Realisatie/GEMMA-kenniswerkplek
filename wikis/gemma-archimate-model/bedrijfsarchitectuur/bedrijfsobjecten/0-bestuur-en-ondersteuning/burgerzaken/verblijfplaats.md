@@ -146,7 +146,7 @@ Duplicaten in het GGM:
 
 GGM-terugmeldingen:
 
-- [Nummer 13](../../../../analyses/ggm-terugmeldingen.md) (duplicaat, open): **GGM:** de gegevens over het verblijf en adres staan twee keer in RSGBPlus, met dezelfde definitie: VerblijfadresIngeschrevenPersoon (EAID_F6DAC299_3F19_45c6_BFFE_EB38C1C51459); VerblijfadresIngeschrevenNatuurlijkPersoon (EAID_E5E010C2_C1F3_4986_AA9A_C71C19263606). **Bevinding:** de BRP kent één categorie Verblijfplaats van de ingeschreven persoon ([2025-rvig-logisch-ontwerp-brp-2025q1](../../../../bronanalyses/burgerzaken/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md), 4.4); de entiteit IngeschrevenNatuurlijkPersoon bestaat niet meer in het GGM. **Voorstel:** samenvoegen tot VerblijfadresIngeschrevenPersoon.
+- [Nummer 13](../../../../terugmeldingen/ggm-terugmeldingen.md) (duplicaat, open): **GGM:** de gegevens over het verblijf en adres staan twee keer in RSGBPlus, met dezelfde definitie: VerblijfadresIngeschrevenPersoon (EAID_F6DAC299_3F19_45c6_BFFE_EB38C1C51459); VerblijfadresIngeschrevenNatuurlijkPersoon (EAID_E5E010C2_C1F3_4986_AA9A_C71C19263606). **Bevinding:** de BRP kent één categorie Verblijfplaats van de ingeschreven persoon ([2025-rvig-logisch-ontwerp-brp-2025q1](../../../../bronanalyses/burgerzaken/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md), 4.4); de entiteit IngeschrevenNatuurlijkPersoon bestaat niet meer in het GGM. **Voorstel:** samenvoegen tot VerblijfadresIngeschrevenPersoon.
 
 ### Afstemming met GEMMA
 
@@ -156,7 +156,7 @@ Match **partieel** met GEMMA-element *Verblijfplaats* (business-object). GEMMA-b
 
 GEMMA-terugmeldingen:
 
-- [Nummer 3](../../../../analyses/gemma-terugmeldingen.md) (definitie, open): **GEMMA:** Verblijfplaats is "de locatie waar een persoon feitelijk woont of verblijft" ([2026-vng-gemma-2026-10-02](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md)). **Bevinding:** dat past niet bij de BRP, waar de verblijfplaats het woonadres of het briefadres is, met de periode dat het adres geldt ([2026-rvig-hup-verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md)). De import vervangt de definitie door die van de wiki. De GGM-guid in GEMMA verwijst bovendien naar een entiteit die niet meer bestaat; die heet nu VerblijfadresIngeschrevenPersoon (GGM-terugmelding 13). **Voorstel:** neem de definitie van de wiki over: het adres waar een ingeschreven persoon woont of, zonder woonadres, zijn post ontvangt, met de periode waarin dat adres geldt. Werk de GGM-guid bij.
+- [Nummer 3](../../../../terugmeldingen/gemma-terugmeldingen.md) (definitie, open): **GEMMA:** Verblijfplaats is "de locatie waar een persoon feitelijk woont of verblijft" ([2026-vng-gemma-2026-10-02](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md)). **Bevinding:** dat past niet bij de BRP, waar de verblijfplaats het woonadres of het briefadres is, met de periode dat het adres geldt ([2026-rvig-hup-verblijfplaats](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-verblijfplaats.md)). De import vervangt de definitie door die van de wiki. De GGM-guid in GEMMA verwijst bovendien naar een entiteit die niet meer bestaat; die heet nu VerblijfadresIngeschrevenPersoon (GGM-terugmelding 13). **Voorstel:** neem de definitie van de wiki over: het adres waar een ingeschreven persoon woont of, zonder woonadres, zijn post ontvangt, met de periode waarin dat adres geldt. Werk de GGM-guid bij.
 
 ### Besluiten redacteur
 

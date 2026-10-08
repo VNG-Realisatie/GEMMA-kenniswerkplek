@@ -1,5 +1,5 @@
 # GGM-terugmeldingen: het register. De AI voegt een melding toe zonder nummer; tools/afleiden.py geeft het volgende nummer.
-# tools/render.py maakt hieruit analyses/ggm-terugmeldingen.md en de sectie op de elementpagina.
+# tools/render.py maakt hieruit terugmeldingen/ggm-terugmeldingen.md en de sectie op de elementpagina.
 terugmeldingen:
 - nummer: 1
   domein: Gemeentebegrafenissen
