@@ -1,0 +1,10 @@
+{
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "userIgnoreFilters": [
+    "tools/",
+    "tests/"
+  ],
+  "propertiesInDocument": "hidden",
+  "defaultViewMode": "preview"
+}
