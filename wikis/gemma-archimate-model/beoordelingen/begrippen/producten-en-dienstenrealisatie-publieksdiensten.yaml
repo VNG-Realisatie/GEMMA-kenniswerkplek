@@ -276,20 +276,6 @@ relaties:
   - 2026-vng-gemma-2026-10-02
   vindplaats: GEMMA-relatie id-1f944d4b-41d8-40cb-be75-8706806e07cc
 - soort: aggregatie
-  naar: gewaarmerkte-kopie-reisdocument-aanvragen
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  vindplaats: Utrecht; GEMMA-domein Publieksdiensten
-- soort: realisatie
-  naar: gewaarmerkte-kopie-reisdocument-aanvragen
-  naam: realiseert
-  grondslag: bron
-  bronnen:
-  - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  vindplaats: regel 17-19
-- soort: aggregatie
   naar: nederlanderschap-diensten
   naam: omvat
   grondslag: bron
@@ -332,7 +318,6 @@ afgeleid:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-  - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
   herkomst: rijksregelgeving
   gemma:
     gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64

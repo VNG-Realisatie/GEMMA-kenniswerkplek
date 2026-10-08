@@ -235,13 +235,6 @@ definitie: Het onderhouden van grafbedekking en beplanting op een graf door de g
 beschrijving:
 - De gemeente maakt gedenktekens schoon en onderhoudt de beplanting op graven, op sommige begraafplaatsen altijd en elders op schriftelijk verzoek van de rechthebbende voor ten minste vijf jaar, tegen betaling van een recht uit de heffingsverordening (Groningen art. 23, 24 lid 3). Bij niet-betalen wordt de grafbedekking na waarschuwing verwijderd (art. 23 lid 4). Het VNG-model regelt een minimaal onderhoud door de gemeente (art. 20).
 relaties:
-- soort: toegang (bijwerken)
-  naar: grafbedekking
-  naam: onderhoudt
-  grondslag: bron
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 23
 - soort: toegang (registreren)
   naar: heffing
   naam: leidt tot (recht voor onderhoud)
@@ -268,7 +261,11 @@ besluiten:
 - datum: '2026-10-04'
   besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
   gevolg: verwerkt
-status: goedgekeurd
+- datum: '2026-10-08'
+  besluit: 'Vervalt (regel Wettelijke grondslag, besluit 3 in analyses/wettelijke-grondslag.md): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Grafonderhoud (UPL nr. 163), met grondslag in de Model beheersverordening begraafplaatsen art. 20. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
+  gevolg: afwijzen
+toelichting: 'Vervalt: geen landelijke wettelijke grondslag. Het proces realiseerde de dienst Grafonderhoud (UPL nr. 163), met grondslag in de Model beheersverordening begraafplaatsen art. 20; zo''n UPL-product blijft, maar wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen (regel Wettelijke grondslag).'
+status: afgewezen
 afgeleid:
   uitkomst:
     soort: element
@@ -295,4 +292,3 @@ afgeleid:
     gemma_eigenschappen:
       GEMMA type: Bedrijfsproces
       Object ID: 1a739ba4-08d4-4b65-84d8-4ea89499b4ca
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md

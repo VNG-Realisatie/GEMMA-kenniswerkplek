@@ -173,10 +173,8 @@ kenmerken:
     waarde: nee
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
-    waarde: ja
-    onderbouwing: 'Een onderdeel van het lijk na de crematie: de urn bevat de as, ontstaat bij de crematie en eindigt met de bestemming van de as, binnen de levensloop van het lijk (art. 58, 59, 66).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: 'Geen deel van het stoffelijk overschot: de as is dat deel, de urn (asbus) is de houder waarin de as wordt geborgen (art. 58), met een eigen levensloop van bijzetting, bewaring en ruiming en een eigen register (art. 59, 62, 65, 66).'
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
@@ -223,6 +221,11 @@ besluiten:
 - datum: '2026-10-04'
   besluit: Subobject van Lijk, met het deelproces Bijzetten of verstrooien van de as.
   gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: 'Herziet het besluit van 2026-10-04: geen subobject van Stoffelijk overschot, maar een eigen bedrijfsobject. De as is deel van het stoffelijk overschot, de urn is de houder ervan, met een eigen levensloop en register (Wlb art. 58, 59, 62, 65, 66). Het enige bedrijfsproces met Urn als kernobject, Verlenen toestemming asverstrooiing, vervalt (regel Wettelijke grondslag); bijzetten en verstrooien vallen in Uitvoeren lijkbezorging. De pagina en het object in Archi blijven.'
+  gevolg: opnemen
+  redenen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
 grondslag: bron
 ggm:
   sterkte: geen
@@ -255,20 +258,22 @@ relaties:
   vindplaats: art. 62 lid 1 a
 onderwerpen:
 - lijkbezorging
-genoemd_begrip: Stoffelijk overschot
 status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 36
+    regel: 38
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
-    voorleggen: false
+    voorleggen: true
+    redenen:
+    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
     data_object: nee
-    objectniveau: subobject
     generiek: false
     typeregel: 21
+  voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

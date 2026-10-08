@@ -128,10 +128,10 @@ kenmerken:
     - 2025-groningen-algemene-plaatselijke-verordening
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Verlenen toestemming asverstrooiing (APV Groningen art. 5:27 lid 3; Groningen art. 21).
+    onderbouwing: 'De functie Exploiteren van begraafplaatsen, zonder eigen proces: een UPL-product zonder landelijke wettelijke grondslag wordt niet uitgewerkt in processen (regel Wettelijke grondslag).'
     bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2023-vng-model-apv
+    - 2025-vng-upl-producten-en-diensten-extern
   leidt_tot_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -215,7 +215,7 @@ beschrijving:
 - De UPL geeft als grondslag art. 5:36 van de model-APV en rekent het product tot het GEMMA-domein Openbare orde en veiligheid (UPL).
 - 'Tegenspraak: de APV definieert incidentele asverstrooiing als verstrooien op een plek die de overledene of nabestaande kiest, buiten een permanent daartoe bestemd terrein (APV Groningen art. 5:26); de beheersverordening als verstrooien op een plek die de gemeente aanwijst, op of buiten de begraafplaats (Groningen art. 1). Beide vallen onder deze dienst.'
 afnemer: extern
-domein: Openbare orde en veiligheid
+domein: Fysieke leefomgeving
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
@@ -250,5 +250,6 @@ afgeleid:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2025-groningen-algemene-plaatselijke-verordening
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2023-vng-model-apv
   herkomst: informatiemodel
   pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md

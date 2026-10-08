@@ -38,6 +38,7 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 | [Heffing](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | rijksregelgeving; GGM: Heffing |
 | [Heffingsverordening](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | rijksregelgeving; GGM: Heffingsverordening |
 | [Ketenpartner](../bedrijfsarchitectuur/rollen/ketenpartner.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | rijksregelgeving |
+| [Model-APV](../motivatie/beleidskaders/gemeentelijke-regelgeving/model-apv.md) *Beleidskader, goedgekeurd* | Regeling als geheel, landelijk (kern ja, 1/1) | informatiemodel |
 | [Producten- en dienstenrealisatie publieksdiensten](../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) *Bedrijfsfunctie, goedgekeurd* | Gedrag, *gegroepeerd gedrag* (kern ja, 4/4) | rijksregelgeving |
 | [Regeling](../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) *Bedrijfsobject, goedgekeurd* | Passief (kern ja, 2/2) | rijksregelgeving |
 | [Rijk](../bedrijfsarchitectuur/actoren/rijk.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |

@@ -126,9 +126,10 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Verlenen vergunning grafbedekking (Groningen art. 22).
+    onderbouwing: 'De functie Exploiteren van begraafplaatsen, zonder eigen proces: een UPL-product zonder landelijke wettelijke grondslag wordt niet uitgewerkt in processen (regel Wettelijke grondslag).'
     bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2025-vng-upl-producten-en-diensten-extern
   leidt_tot_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.

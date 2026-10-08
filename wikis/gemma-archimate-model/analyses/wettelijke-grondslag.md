@@ -11,6 +11,7 @@ bronnen:
 - 2026-rijk-gemeentewet-wettekst
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2010-vng-model-beheersverordening-begraafplaatsen
+- 2023-vng-model-apv
 - 2025-vng-upl-producten-en-diensten-extern
 - 2023-rvig-circulaire-adresonderzoek-brp
 ---
@@ -33,6 +34,13 @@ Aanleiding: in burgerzaken staan vier diensten zonder wettelijke grondslag, waar
 10. `tools/afleiden.py` controleert de regel: een fout bij een relatie *is grondslag voor* vanuit een richtlijn, een signaal bij een element zonder landelijke wettelijke bron (UPL-producten en -diensten, bedrijfsfuncties en beleidskaders uitgezonderd) en bij een bedrijfsproces dat een UPL-product zonder landelijke grondslag realiseert. Dat laatste wordt een fout zodra groep B is afgerond, zodat het per geval laten vervallen van die processen niet wordt tegengehouden.
 11. Bij groep A en D wordt een geval zonder twijfel (de grondslag staat eenduidig in de nagelezen wettekst) niet meer apart voorgelegd: de AI voegt de bron en de relatie toe en noemt het geval in de samenvatting ter bevestiging. Een geval met twijfel wordt wel voorgelegd.
 
+Aanvullingen bij de uitwerking van groep B (2026-10-08):
+
+12. Bij besluit 5: een bedrijfsfunctie die alleen UPL-producten of -diensten zonder landelijke grondslag zou omvatten, bedient geen proces (besluit 3) en vervalt in de wiki; die producten hangen onder de functie van hun beleidsdomein, met een GEMMA-terugmelding. Besluit 5 blijft verder gelden.
+13. Een beleidskader in Gemeentelijke regelgeving is alleen grondslag (*is grondslag voor*) voor een UPL-product of -dienst zonder landelijke grondslag; waar de wet de grondslag is en het VNG-model de uitvoering regelt, heet de relatie *werkt uit voor*. `tools/signalen.py` houdt een afwijking tegen.
+14. Een bedrijfsproces dat een UPL-product zonder landelijke grondslag realiseert, is een fout (besluit 10, na groep B).
+15. Voorstellen aan het GEMMA-team over het GEMMA-model zelf staan in een eigen register, `beoordelingen/gemma-terugmeldingen.yaml`, met dezelfde opbouw als de GGM- en procesarchitectuur-terugmeldingen (GEMMA, Bevinding, Voorstel); de lijst staat in [GEMMA-terugmeldingen](gemma-terugmeldingen.md).
+
 Uitwerking in de regel: een grondslag in gemeentelijke regelgeving is een VNG-modelverordening, niet de verordening van één gemeente. Zo raken verordeningen die elkaar tegenspreken het model niet: de verordening van een gemeente blijft bron voor taal, voorbeelden en lacunes, en een afwijking ervan is een afwijking in de praktijk (regel Tegenspraak).
 
 ## Groepen in de Regelgevingindeling
@@ -48,7 +56,7 @@ Een beleidskader staat naast de Beleidsdomeinindeling in de Regelgevingindeling,
 
 De omschrijving van elke groep is die van het brontype in de regel Bronvoorrang (`AGENTS.md`); de export neemt haar als documentatie van de groep over.
 
-Nu in het model: 15 beleidskaders in Rijksregelgeving en 1 in Gemeentelijke regelgeving (Model beheersverordening begraafplaatsen); Europese regelgeving is nog leeg en wordt dus niet geëxporteerd. Een beleidskader in Gemeentelijke regelgeving is alleen grondslag voor een UPL-product of -dienst, niet voor een proces of object.
+Nu in het model: 15 beleidskaders in Rijksregelgeving en 2 in Gemeentelijke regelgeving (Model beheersverordening begraafplaatsen, Model-APV); Europese regelgeving is nog leeg en wordt dus niet geëxporteerd. Een beleidskader in Gemeentelijke regelgeving is alleen grondslag voor een UPL-product of -dienst, niet voor een proces of object.
 
 ### Wat valt onder gemeentelijke regelgeving
 
@@ -118,7 +126,7 @@ Alle artikelen hieronder zijn in de wettekst nagelezen, behalve waar "artikel te
 |---|---|---|---|
 | [Gedenkteken plaatsingsvergunning](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gedenkteken-plaatsingsvergunning.md) | nr. 142 | [Model beheersverordening begraafplaatsen](../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md) art. 19 | proces Verlenen vergunning grafbedekking, met zijn relaties |
 | [Grafonderhoud](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafonderhoud.md) | nr. 163 (grondslag in de UPL: een begraafplaatsenbeleid) | Model beheersverordening art. 20 (onderhoud door de gemeente) | proces Onderhouden graf, met zijn relaties. Wlb art. 28 lid 4 gaat over de onderhoudsplicht van de rechthebbende, niet over de dienst van de gemeente |
-| [Asverstrooiing](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md) | nr. 32 | Model-APV art. 5:36 (nog niet als bron opgehaald) | proces Verlenen toestemming asverstrooiing. De Wlb staat verstrooien toe (art. 66a lid 2 onder b); het verbod en de toestemming voor een plek komen uit de APV. Wlb art. 66b (vergunning voor een terrein om permanent as te verstrooien, voor de houder) is een andere, landelijke taak |
+| [Asverstrooiing](../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md) | nr. 32 | [Model-APV](../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) art. 5:36 | proces Verlenen toestemming asverstrooiing. De Wlb staat verstrooien toe (art. 66a lid 2 onder b); het verbod en de toestemming voor een plek komen uit de APV. Wlb art. 66b (vergunning voor een terrein om permanent as te verstrooien, voor de houder) is een andere, landelijke taak |
 | [Legalisatie handtekening](../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md) | nr. 226 (grondslag in de UPL: [Wet griffierechten](../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899.md) art. 23, alleen een tarief) | geen gevonden; de tarieventabel van een legesverordening geeft alleen een tarief | geen uitwerking aanwezig. De dienst blijft (UPL); [procesarchitectuur-terugmelding 21](procesarchitectuur-terugmeldingen.md) vraagt de werkgroep de bevoegdheidsgrondslag uit te zoeken |
 
 Bij elk vervallen proces: nagaan of de objecten, gebeurtenissen en rollen die alleen voor dat proces bestaan ook vervallen (bijvoorbeeld een toegang tot Grafbedekking of Vergunning), en of de relaties naar de bedrijfsfunctie blijven.
@@ -150,6 +158,8 @@ Alle open procesarchitectuur-terugmeldingen zijn op 2026-10-08 herschreven naar 
 ## Uitwerking
 
 - **A (2026-10-08).** Alle elementen hebben nu een relatie *is grondslag voor* van de Wet BRP of de Wet op de lijkbezorging, en hun eigen relaties de wet als bron. De open artikelen zijn bepaald: Ingeschreven persoon art. 1.1 onder e en f, 2.2, 2.7; Bijhoudingsgemeente art. 1.1 onder h, 1.4 lid 1; Toezichthouder BRP art. 4.2; Briefadresgever art. 1.1, 2.42, 2.45. RNI-loket: Wet BRP art. 2.64, 2.67 lid 3, 2.79 en Besluit BRP art. 36; de wet zegt niet welke gemeenten loket zijn, de beschrijving noemt ze (Nederland Wereldwijd) en een procesarchitectuur-terugmelding vraagt de grondslag. Onjuiste inschrijving op adres melden blijft met Wet BRP art. 2.20 lid 2, 2.22, 2.26; ze staat niet in de UPL, en een terugmelding stelt voor haar op te nemen. Beheerder van de begraafplaats vervalt: de Wlb kent alleen de houder, en de beheerder is nu synoniem van Houder van de begraafplaats. Bevolkingsadministratie bijhouding is een bedrijfsfunctie en krijgt geen eigen grondslag (besluit 5).
+- **B (2026-10-08).** De Model-APV is bron (VNG, november 2023; openbare kopie bij een raadsvoorstel van Opmeer, opgenomen met de VNG als eigenaar) en beleidskader in Gemeentelijke regelgeving, thuis in Algemeen (generiek), taakveld 0, beleidsdomein Besluitvorming; zij is grondslag voor Asverstrooiing (art. 5:36 lid 3). De Model beheersverordening is grondslag voor Gedenkteken plaatsingsvergunning (art. 19) en Grafonderhoud (art. 20); haar relaties naar elementen met een grondslag in de Wet op de lijkbezorging heten nu *werkt uit voor* (besluit 13). De UPL is bron van Grafonderhoud. De processen Verlenen vergunning grafbedekking, Onderhouden graf en Verlenen toestemming asverstrooiing vervallen, met hun relaties. De drie diensten worden gerealiseerd door de functie Exploiteren van begraafplaatsen, zonder eigen proces, zoals Legalisatie handtekening door Producten- en dienstenrealisatie publieksdiensten. Wat alleen voor de processen bestond: Grafbedekking wordt onderdeel van Graf, zonder pagina, en de relatie *betreft (vergunning grafbedekking)* van Vergunning vervalt. Urn blijft: de urn is de houder van de as en geen deel van het stoffelijk overschot (Wlb art. 58, 59, 65, 66), met een besluit omdat geen proces haar levensloop bepaalt. De functies Producten- en dienstenrealisatie veiligheidsdomein en Uitvoering openbare orde en veiligheid vervallen in de wiki (besluit 12); Asverstrooiing staat nu onder Exploiteren van begraafplaatsen, met [GEMMA-terugmelding 1](gemma-terugmeldingen.md) en een aanvulling op procesarchitectuur-terugmelding 1. Het signaal voor een proces dat een UPL-product zonder landelijke grondslag realiseert, is nu een fout (besluit 14).
+- **C (2026-10-08).** Gewaarmerkte kopie reisdocument aanvragen vervalt, met de relaties vanuit Producten- en dienstenrealisatie publieksdiensten; de representatie Gewaarmerkte kopie blijft een begrip zonder pagina. Procesarchitectuur-terugmelding 11 noemt de dienst niet meer als element en zegt dat GEMMA het waarmerken niet opneemt.
 - **D (2026-10-08).** De relatie *is grondslag voor* staat nu bij de negen diensten in lijkbezorging (Wlb of Besluit op de lijkbezorging) en bij Vermissing of diefstal rijbewijs doorgeven (Wegenverkeerswet 1994 art. 123 lid 1 onder h, Reglement rijbewijzen art. 39 lid 1).
 
 ## Vragen aan de redacteur

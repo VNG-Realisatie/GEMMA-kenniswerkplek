@@ -12,9 +12,9 @@ titel: Voortgang
 
 | Onderwerp | Status | Begrippen | Elementen |
 |---|---|---|---|
-| [Algemeen](begrippen/algemeen.md) | in-behandeling | 14 | 14 |
+| [Algemeen](begrippen/algemeen.md) | in-behandeling | 15 | 15 |
 | [Burgerzaken](begrippen/burgerzaken.md) | in-behandeling | 260 | 180 |
-| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 185 | 95 |
+| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 186 | 95 |
 | [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
 
 ## Samenhang tussen onderwerpen
@@ -23,9 +23,9 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 | Onderwerp | Elementen | Gebruikt uit andere | Relaties binnen | Relaties met andere |
 |---|---|---|---|---|
-| Algemeen | 14 | 0 | 13 | Burgerzaken 30, Lijkbezorging 47 |
-| Burgerzaken | 170 | 8 | 498 | Algemeen 30, Lijkbezorging 8 |
-| Lijkbezorging | 76 | 18 | 195 | Algemeen 47, Burgerzaken 8 |
+| Algemeen | 15 | 0 | 14 | Burgerzaken 28, Lijkbezorging 42 |
+| Burgerzaken | 169 | 8 | 498 | Algemeen 28, Lijkbezorging 8 |
+| Lijkbezorging | 70 | 19 | 179 | Algemeen 42, Burgerzaken 8 |
 | Participatie | 0 | 0 | 0 | — |
 
 ## Elementen per type en status
@@ -33,12 +33,12 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | Type | kandidaat | review | goedgekeurd | afgewezen |
 |---|---|---|---|---|
 | actor | 0 | 0 | 10 | 0 |
-| bedrijfsfunctie | 0 | 0 | 14 | 0 |
+| bedrijfsfunctie | 0 | 0 | 12 | 2 |
 | bedrijfsinteractie | 0 | 0 | 1 | 0 |
-| bedrijfsobject | 0 | 0 | 23 | 0 |
-| bedrijfsproces | 0 | 0 | 74 | 3 |
-| beleidskader | 0 | 0 | 16 | 0 |
-| dienst | 0 | 0 | 77 | 0 |
+| bedrijfsobject | 0 | 0 | 22 | 0 |
+| bedrijfsproces | 0 | 0 | 71 | 6 |
+| beleidskader | 0 | 0 | 17 | 0 |
+| dienst | 0 | 0 | 76 | 1 |
 | gebeurtenis | 0 | 0 | 20 | 0 |
 | product | 0 | 0 | 1 | 0 |
 | rol | 0 | 0 | 24 | 0 |
@@ -50,3 +50,7 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 ## Procesarchitectuur-terugmeldingen
 
 [23 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 22, opgelost 1.
+
+## GEMMA-terugmeldingen
+
+[1 terugmeldingen](analyses/gemma-terugmeldingen.md): open 1.

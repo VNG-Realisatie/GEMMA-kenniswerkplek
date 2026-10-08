@@ -9,7 +9,7 @@ terugmeldingen:
   - '- Fysieke leefomgeving: grafuitgifte, grafonderhoud, gedenkteken plaatsingsvergunning, herbegraven of alsnog cremeren, verlof tot begraven, ontleding stoffelijk overschot toestemming, vervoersdocumenten stoffelijk overschot, crematoriumregister en bijzettingenregister;'
   - '- Publieksdiensten: begraafplaatsregister en bijzondere begraafplaats toestemming;'
   - '- Openbare orde en veiligheid: asverstrooiing.'
-  - '**Bevinding:** verwante producten komen zo in verschillende domeinen terecht. Het begraafplaatsregister staat bij Publieksdiensten, het crematorium- en het bijzettingenregister bij Fysieke leefomgeving. In het GEMMA-model valt het verwante beleidsdomein Gemeentebegrafenissen bovendien onder Sociaal domein. GEMMA zet alle producten en diensten van de lijkbezorging bij elkaar in één beleidsdomein, Begraafplaatsen en crematoria, onder taakveld 7 (Iv3 7.5); in de Functie-indeling naar domein houden ze het GEMMA-domein uit de UPL.'
+  - '**Bevinding:** verwante producten komen zo in verschillende domeinen terecht. Het begraafplaatsregister staat bij Publieksdiensten, het crematorium- en het bijzettingenregister bij Fysieke leefomgeving. In het GEMMA-model valt het verwante beleidsdomein Gemeentebegrafenissen bovendien onder Sociaal domein. GEMMA zet alle producten en diensten van de lijkbezorging bij elkaar in één beleidsdomein, Begraafplaatsen en crematoria, onder taakveld 7 (Iv3 7.5); in de Functie-indeling naar domein houden ze het GEMMA-domein uit de UPL, behalve asverstrooiing: dat staat onder Exploiteren van begraafplaatsen (Fysieke leefomgeving), omdat het geen landelijke wettelijke grondslag heeft en de functies van Openbare orde en veiligheid in GEMMA-terugmelding 1 ter discussie staan (2023-vng-model-apv, art. 5:36).'
   - '**Voorstel:** neem in de UPL en het GEMMA-model het beleidsdomein Begraafplaatsen en crematoria op onder taakveld 7.5, met alle producten van de lijkbezorging, en leg vast onder welke GEMMA-domeinen het valt.'
   nummer: 1
   status: open
@@ -34,13 +34,10 @@ terugmeldingen:
 - type: kennismodel
   elementen:
   - afgeven-laissez-passer
-  - onderhouden-graf
   - opgraven-stoffelijk-overschot
   - stellen-andere-termijn
   - verlenen-grafrecht
-  - verlenen-toestemming-asverstrooiing
   - verlenen-toestemming-bijzondere-begraafplaats
-  - verlenen-vergunning-grafbedekking
   - verlenen-verlof-tot-begraving-of-crematie
   - verlenen-verlof-tot-ontleding
   - inschrijven-ingezetene
@@ -148,10 +145,9 @@ terugmeldingen:
 - type: product
   elementen:
   - vermissing-of-diefstal-reisdocument-doorgeven
-  - gewaarmerkte-kopie-reisdocument-aanvragen
   bevinding:
   - '**UPL:** de UPL kent geen product voor het melden van de vermissing of diefstal van een reisdocument, en geen product voor het waarmerken van een kopie van een reisdocument (2025-vng-upl-producten-en-diensten-extern).'
-  - '**Bevinding:** het doorgeven van vermissing of diefstal van een paspoort of identiteitskaart is een wettelijke taak: na de melding is het document ongeldig (2026-rijk-paspoortwet-bwbr0005212, art. 5a, 47 lid 1 onder j). Gemeenten bieden het aan, online en gratis (2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven); in GEMMA is het de dienst Vermissing of diefstal reisdocument doorgeven, gerealiseerd door Verwerken vermissing reisdocument. Het waarmerken van een kopie bieden gemeenten ook aan, maar daarvoor is geen landelijke grondslag gevonden, en gemeenten verschillen in wat ze waarmerken (2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen).'
+  - '**Bevinding:** het doorgeven van vermissing of diefstal van een paspoort of identiteitskaart is een wettelijke taak: na de melding is het document ongeldig (2026-rijk-paspoortwet-bwbr0005212, art. 5a, 47 lid 1 onder j). Gemeenten bieden het aan, online en gratis (2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven); in GEMMA is het de dienst Vermissing of diefstal reisdocument doorgeven, gerealiseerd door Verwerken vermissing reisdocument. Het waarmerken van een kopie bieden gemeenten ook aan, maar daarvoor is geen landelijke grondslag gevonden (niet in de Paspoortwet, het Paspoortbesluit of de Wet op de Nederlandse identiteitskaart), en gemeenten verschillen in wat ze waarmerken (2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen). GEMMA neemt het daarom niet op (regel Wettelijke grondslag).'
   - '**Voorstel:** neem in de UPL het product vermissing of diefstal reisdocument op, met als grondslag art. 5a en 47 Paspoortwet en de Wet op de Nederlandse identiteitskaart. Neem het waarmerken van een kopie niet op zolang er geen landelijke grondslag is.'
   nummer: 11
   status: open

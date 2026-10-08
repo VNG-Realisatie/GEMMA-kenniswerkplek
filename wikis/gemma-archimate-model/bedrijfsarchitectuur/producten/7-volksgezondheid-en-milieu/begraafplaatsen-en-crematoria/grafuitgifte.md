@@ -86,7 +86,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md) | is grondslag voor *associatie (gericht)* | Grafuitgifte | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 11, 13–15; UPL nr. 165) |
+| [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md) | werkt uit voor *associatie (gericht)* | Grafuitgifte | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 11, 13–15; UPL nr. 165) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/rijksregelgeving/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Grafuitgifte | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23 lid 2, 28 lid 1, 33) |
 
 ## Herkomst

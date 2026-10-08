@@ -249,6 +249,34 @@ def test_open_terugmelding_zonder_voorstel_is_een_fout(wiki):
     assert res.fouten == ["terugmelding 1: een open melding heeft een alinea die begint met **Voorstel:**"]
 
 
+def test_gemma_terugmelding_noemt_wiki_en_gemma_elementen(wiki):
+    import gam_gemeen
+
+    gam_gemeen.schrijf_json_gegenereerd(
+        wiki / "gemma" / "gemma_parsed.json",
+        {"elementen": {"id-functie": {"id": "id-functie", "naam": "Uitvoering veiligheid", "type": "business-function",
+                                      "documentatie": "", "map": "Business", "map_id": "f", "eigenschappen": {}}},
+         "mappen": {}, "model": {}, "relaties": {}}, "test")
+    _schrijf(wiki, "beschikking", _bo())
+    register = {"terugmeldingen": [
+        {"type": "element", "elementen": ["beschikking"], "gemma_elementen": [{"id": "id-functie", "naam": "Uitvoering veiligheid"}],
+         "bevinding": ["**Bevinding:** vervalt in de wiki.", "**Voorstel:** herzien."]}]}
+    beoordeling.schrijf(wiki / afleiden.GEMMA_TERUGMELDINGEN, register)
+    _afleiden(wiki)
+    meldingen = beoordeling.laad(wiki / afleiden.GEMMA_TERUGMELDINGEN)["terugmeldingen"]
+    assert [(m["nummer"], m["status"]) for m in meldingen] == [(1, "open")]
+    lijst = (wiki / "analyses" / "gemma-terugmeldingen.md").read_text(encoding="utf-8")
+    assert "Uitvoering veiligheid (GEMMA)" in lijst and "## Terugmeldingen" in lijst
+    pagina = (wiki / _lees(wiki, "beschikking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    assert "[Nummer 1](../../../../analyses/gemma-terugmeldingen.md)" in pagina
+    # een GEMMA-element dat niet bestaat of anders heet, is een fout
+    register["terugmeldingen"][0]["gemma_elementen"] = [{"id": "id-functie", "naam": "Andere naam"}]
+    register["terugmeldingen"][0] |= {"nummer": 1, "status": "open"}
+    beoordeling.schrijf(wiki / afleiden.GEMMA_TERUGMELDINGEN, register)
+    res = afleiden.afleiden(wiki, schrijven=False)
+    assert res.fouten == ["GEMMA-terugmelding 1: GEMMA-element 'id-functie' heet 'Uitvoering veiligheid', niet 'Andere naam'"]
+
+
 def test_signalen_noemen_de_regel_bij_naam(wiki):
     _schrijf(wiki, "beschikking", _bo(beschrijving=["Wordt geregistreerd in het zaaksysteem."]))
     _schrijf(wiki, "aanvraag-behandeling", _element("Aanvraagbehandeling", PROCES, kernobject="beschikking", afnemer="extern"))
@@ -668,17 +696,26 @@ def test_wettelijke_grondslag():
         "wet-x": data(["wet"], regelgever="rijk", relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
         "hup-x": data(["hup"], regelgever="landelijke organisatie",
                       relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
+        "vng-model": data(["site"], regelgever="VNG-model",
+                          relaties=[{"soort": "associatie (gericht)", "naar": "dienst-upl", "naam": "is grondslag voor"},
+                                    {"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"},
+                                    {"soort": "associatie (gericht)", "naar": "proces-upl", "naam": "werkt uit voor"}]),
         "dienst-a": data(["site"]),                       # gegrond via het beleidskader van het Rijk
         "dienst-upl": data(["2025-vng-upl-producten"]),   # UPL zonder landelijke grondslag: blijft, geen uitwerking
         "proces-upl": data(["wet"], relaties=[{"soort": "realisatie", "naar": "dienst-upl"}]),
+        "proces-vervallen": data(["site"], status="afgewezen", relaties=[{"soort": "realisatie", "naar": "dienst-upl"}]),
         "rol-zonder": data(["site"]),
         "functie": data(["site"]),
     }
-    elementen = {"wet-x": el("beleidskader"), "hup-x": el("beleidskader"), "dienst-a": el("dienst"),
-                 "dienst-upl": el("dienst"), "proces-upl": el("bedrijfsproces"), "rol-zonder": el("rol"),
+    elementen = {"wet-x": el("beleidskader"), "hup-x": el("beleidskader"), "vng-model": el("beleidskader"), "dienst-a": el("dienst"),
+                 "dienst-upl": el("dienst"), "proces-upl": el("bedrijfsproces"),
+                 "proces-vervallen": el("bedrijfsproces"), "rol-zonder": el("rol"),
                  "functie": el("bedrijfsfunctie")}
     fouten, signalen_ = signalen.wettelijke_grondslag(alle, elementen, soorten.get)
-    assert fouten == ["hup-x: een richtlijn is geen wettelijke grondslag; noem de relatie naar 'dienst-a' 'geeft "
-                      "richtlijn voor' (regel Wettelijke grondslag)"]
-    assert [s.split(":")[0] for s in signalen_] == ["rol-zonder", "proces-upl"]
-    assert "realiseert UPL-product 'dienst-upl'" in signalen_[1]
+    assert fouten[0] == ("hup-x: een richtlijn is geen wettelijke grondslag; noem de relatie naar 'dienst-a' 'geeft "
+                         "richtlijn voor' (regel Wettelijke grondslag)")
+    # het VNG-model is grondslag voor de UPL-dienst zonder landelijke grondslag, niet voor dienst-a (die heeft er een)
+    assert [f.split(":")[0] for f in fouten] == ["hup-x", "vng-model", "proces-upl"]   # een vervallen proces telt niet mee
+    assert "noem de relatie naar 'dienst-a' 'werkt uit voor'" in fouten[1]
+    assert "realiseert UPL-product 'dienst-upl'" in fouten[2]
+    assert [s.split(":")[0] for s in signalen_] == ["rol-zonder"]

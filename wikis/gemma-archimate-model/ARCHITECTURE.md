@@ -34,10 +34,11 @@ wikis/gemma-archimate-model/
 │   ├── onderwerpen/<onderwerp>.yaml  naam, omschrijving, bronnen en status van een onderwerp
 │   ├── terugmeldingen.yaml           register van GGM-terugmeldingen
 │   ├── procesarchitectuur-terugmeldingen.yaml   register van terugmeldingen aan de GEMMA-procesarchitectuur
+│   ├── gemma-terugmeldingen.yaml     register van terugmeldingen aan het GEMMA-team over het GEMMA-model
 │   ├── objecten.yaml                 welk Archi-object een hernoemd, samengevoegd of gesplitst element voortzet
 │   └── beleidsdomeinen.yaml          de beschrijving van een beleidsdomein (Beleidsdomeinindeling)
 ├── bronanalyses/<onderwerp>/<brontype>/<bron-id>.md   wat een bron betekent voor de architectuur (AI)
-├── analyses/                         analyses en besluiten (AI), plus ggm-terugmeldingen.md en procesarchitectuur-terugmeldingen.md (gegenereerd)
+├── analyses/                         analyses en besluiten (AI), plus ggm-terugmeldingen.md, procesarchitectuur-terugmeldingen.md en gemma-terugmeldingen.md (gegenereerd)
 ├── bedrijfsarchitectuur/ · motivatie/ · begrippen/   gegenereerd door tools/render.py
 ├── ter-beoordeling.md · voortgang.md                gegenereerd door tools/render.py
 ├── ggm/ · gemma/                     gegenereerd door tools/ggm.py en tools/gemma.py
@@ -63,6 +64,7 @@ wikis/gemma-archimate-model/
 | `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst (element met link en status, synoniem van, specialisatie van, geen element …), de reden, de herkomst en de GGM-entiteit |
 | `analyses/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
 | `analyses/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel), uit `beoordelingen/procesarchitectuur-terugmeldingen.yaml` |
+| `analyses/gemma-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model (elementen, indelingen, definities, relaties), uit `beoordelingen/gemma-terugmeldingen.yaml` |
 | `ter-beoordeling.md` | Wat wacht op akkoord (status `review`), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 

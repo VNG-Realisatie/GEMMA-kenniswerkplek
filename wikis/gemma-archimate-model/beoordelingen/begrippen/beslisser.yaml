@@ -73,7 +73,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Verlenen grafrecht, Vervallen verklaren grafrecht, Verlenen vergunning grafbedekking en Verlenen toestemming asverstrooiing (college), Opgraven stoffelijk overschot, Verzorgen gemeentebegrafenis, Treffen maatregel bij besmet stoffelijk overschot, Verlenen verlof tot ontleding en Afgeven laissez-passer (burgemeester) (Wlb art. 21, 22a, 29, 68; Groningen art. 16, 20, 22; APV Groningen art. 5:27; Besluit op de lijkbezorging art. 11).
+    onderbouwing: Toegewezen aan Verlenen grafrecht en Vervallen verklaren grafrecht (college), Opgraven stoffelijk overschot, Verzorgen gemeentebegrafenis, Treffen maatregel bij besmet stoffelijk overschot, Verlenen verlof tot ontleding en Afgeven laissez-passer (burgemeester) (Wlb art. 21, 22a, 29, 68; Groningen art. 16, 20; Besluit op de lijkbezorging art. 11).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -286,20 +286,6 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17 lid 1
-- soort: toewijzing
-  naar: verlenen-vergunning-grafbedekking
-  naam: beslist over
-  grondslag: bron
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 22 lid 1
-- soort: toewijzing
-  naar: verlenen-toestemming-asverstrooiing
-  naam: beslist over
-  grondslag: bron
-  bronnen:
-  - 2025-groningen-algemene-plaatselijke-verordening
-  vindplaats: art. 5:27 lid 3
 - soort: toewijzing
   naar: verlenen-verlof-tot-ontleding
   naam: geeft verlof voor

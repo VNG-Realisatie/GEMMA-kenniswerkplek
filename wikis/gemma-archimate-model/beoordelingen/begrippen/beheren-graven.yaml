@@ -154,7 +154,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: ja
-    onderbouwing: Ruimen graf en Onderhouden graf (art. 31; Groningen art. 23, 27).
+    onderbouwing: Ruimen graf (art. 31; Groningen art. 27).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -169,7 +169,7 @@ kenmerken:
     onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'De bedrijfsprocessen leveren het aanbod (Onderhouden graf: Grafonderhoud).'
+    onderbouwing: Niet bij dit gedrag aanwijsbaar; Grafonderhoud wordt niet uitgewerkt in een proces (regel Wettelijke grondslag).
   bedient_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -247,13 +247,6 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 31; Groningen art. 27
-- soort: aggregatie
-  naar: onderhouden-graf
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: Groningen art. 23
 - soort: toegang (bijwerken)
   naar: graf
   naam: beheert
@@ -262,13 +255,6 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 23, 27, 31; Groningen art. 11–16
-- soort: aggregatie
-  naar: verlenen-vergunning-grafbedekking
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: Groningen art. 22
 status: goedgekeurd
 afgeleid:
   uitkomst:

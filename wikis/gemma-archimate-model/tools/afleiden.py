@@ -47,6 +47,8 @@ TERUGMELDTYPEN = ("hiaat", "definitie", "structuur", "scope", "duplicaat", "homo
 TERUGMELDSTATUS = ("open", "gemeld", "opgelost", "afgewezen")
 PA_TERUGMELDINGEN = Path("beoordelingen") / "procesarchitectuur-terugmeldingen.yaml"
 PA_TYPEN = ("indeling", "grondslag", "product", "kennismodel")
+GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "gemma-terugmeldingen.yaml"
+GEMMA_TYPEN = ("element", "indeling", "definitie", "relatie")
 OBJECTEN = Path("beoordelingen") / "objecten.yaml"
 BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
 WIJZIGINGEN = ("hernoemd", "samengevoegd", "gesplitst")
@@ -361,6 +363,30 @@ def _pa_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat
     return register
 
 
+def _gemma_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> dict | None:
+    """GEMMA-terugmeldingen: voorstellen aan het GEMMA-team over elementen, indelingen, definities en relaties van het
+    GEMMA-model (besluit redacteur 2026-10-08). Een melding noemt elementen van de wiki of GEMMA-elementen (`id` en
+    `naam`, zoals in het GEMMA-model)."""
+    register = _terugmeldingen(ctx, uitkomsten, res, GEMMA_TERUGMELDINGEN, GEMMA_TYPEN, ("bevinding",),
+                               "GEMMA-terugmelding")
+    gemma_model = (ctx.wiki_root / "gemma" / "gemma_parsed.json").exists()
+    for m in (register or {}).get("terugmeldingen", []):
+        if not m.get("elementen") and not m.get("gemma_elementen"):
+            res.fouten.append(f"GEMMA-terugmelding {m['nummer']}: noem 'elementen' of 'gemma_elementen'")
+        for g in m.get("gemma_elementen") or []:
+            if not isinstance(g, dict) or not g.get("id") or not g.get("naam"):
+                res.fouten.append(f"GEMMA-terugmelding {m['nummer']}: een GEMMA-element heeft 'id' en 'naam'")
+                continue
+            if gemma_model:
+                gevonden = ctx.gemma()["elementen"].get(g["id"])
+                if not gevonden:
+                    res.fouten.append(f"GEMMA-terugmelding {m['nummer']}: GEMMA-element '{g['id']}' bestaat niet")
+                elif gevonden["naam"] != g["naam"]:
+                    res.fouten.append(f"GEMMA-terugmelding {m['nummer']}: GEMMA-element '{g['id']}' heet "
+                                      f"'{gevonden['naam']}', niet '{g['naam']}'")
+    return register
+
+
 def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     ctx = Context(wiki_root)
     res = Resultaat()
@@ -433,11 +459,13 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         paden[pad] = bid
 
     pa_register = _pa_terugmeldingen(ctx, uitkomsten, res)
+    gemma_register = _gemma_terugmeldingen(ctx, uitkomsten, res)
     gemeld = [m for m in (pa_register or {}).get("terugmeldingen", []) if m.get("status") != "afgewezen"]
     res.waarschuwingen += signalen.over_begrippen({b: d for b, (_, d) in alle.items()}, uitkomsten,
                                                   {e for m in gemeld if m["type"] == "kennismodel" for e in m.get("elementen") or []})
     res.waarschuwingen += signalen.modulariteit({b: d for b, (_, d) in alle.items()}, uitkomsten, onderwerpen)
-    elementen = {b: u for b, u in uitkomsten.items() if u and u["soort"] == "element"}
+    elementen = {b: u for b, u in uitkomsten.items()   # een vervallen element (besluit afwijzen) telt niet mee
+                 if u and u["soort"] == "element" and not bepaal_type.is_afgewezen(alle[b][1])}
     functies = [b for b, u in elementen.items() if u["paginatype"] == "bedrijfsfunctie"]
     if any(u["paginatype"] in ("bedrijfsfunctie", "product", "dienst") for u in elementen.values()):
         gekoppeld = any((alle[b][1].get("gemma") or {}).get("id") for b in functies)
@@ -464,7 +492,7 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     for bid, data in nieuw.items():
         beoordeling.schrijf(alle[bid][0], data)
         res.gewijzigd.append(bid)
-    for reg, rel in ((register, TERUGMELDINGEN), (pa_register, PA_TERUGMELDINGEN)):
+    for reg, rel in ((register, TERUGMELDINGEN), (pa_register, PA_TERUGMELDINGEN), (gemma_register, GEMMA_TERUGMELDINGEN)):
         if reg is None:
             continue
         pad = wiki_root / rel

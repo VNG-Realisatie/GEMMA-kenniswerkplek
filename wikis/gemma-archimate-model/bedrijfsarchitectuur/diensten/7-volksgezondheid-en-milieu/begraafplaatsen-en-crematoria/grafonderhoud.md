@@ -18,8 +18,10 @@ domein: Fysieke leefomgeving
 synoniemen:
 - Onderhoud van graven (beleid)
 bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-retributies
+- 2010-vng-model-beheersverordening-begraafplaatsen
 ---
 
 # Grafonderhoud
@@ -63,7 +65,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar in verordening en VNG ('onderhoud van graven en urnen'). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar in verordening en VNG ('onderhoud van graven en urnen'). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente biedt het aan tegen betaling (Groningen art. 23; VNG retributies). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
@@ -71,7 +73,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, prestatie die de gemeente aan de rechthebbende aanbiedt, los van hoe zij het onderhoud uitvoert. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een onderhouden graf (Groningen art. 23 lid 3). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, rechthebbende op het graf (Groningen art. 23, 24 lid 3). [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het proces Onderhouden graf. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, de functie Exploiteren van begraafplaatsen, zonder eigen proces: een UPL-product zonder landelijke wettelijke grondslag wordt niet uitgewerkt in processen (regel Wettelijke grondslag). [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere dienst in deze wiki. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 
 ### Relaties
@@ -87,8 +89,9 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | omvat *aggregatie* | Grafonderhoud | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
+| [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | realiseert *realisatie* | Grafonderhoud | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (VNG-model art. 20; UPL nr. 163) |
 | [Heffingsverordening](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) | regelt het recht voor *associatie (gericht)* | Grafonderhoud | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 24) |
-| [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | realiseert *realisatie* | Grafonderhoud | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23) |
+| [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md) | is grondslag voor *associatie (gericht)* | Grafonderhoud | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 20; UPL nr. 163) |
 
 ## Herkomst
 
@@ -96,8 +99,10 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
+| [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) | Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023 |
 | [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) | Retributies |
+| [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md) | Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting |
 
 ### Afstemming met GEMMA
 

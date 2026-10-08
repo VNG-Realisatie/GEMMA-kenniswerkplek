@@ -117,6 +117,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Heffingsverordening](../belastingen/heffingsverordening.md) | is een *specialisatie* | Regeling | [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 216) |
+| [Model-APV](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-apv.md) | is model voor (algemene plaatselijke verordening) *associatie (gericht)* | Regeling | [Model-APV](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) (aanhef; leeswijzer) |
 | [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md) | is model voor (beheersverordening begraafplaatsen) *associatie (gericht)* | Regeling | [VNG Model-beheersverordening begraafplaatsen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/overig/2026-vng-wet-op-de-lijkbezorging.md) (aanhef; VNG inleiding) |
 
 ## Herkomst

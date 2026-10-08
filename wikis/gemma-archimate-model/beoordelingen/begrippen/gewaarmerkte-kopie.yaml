@@ -197,7 +197,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-toelichting: 'Representatie, geen pagina: een kopie van het Nederlandse reisdocument met de verklaring van de gemeente dat ze gelijk is aan het origineel (Utrecht). Vermeld bij de dienst Gewaarmerkte kopie reisdocument aanvragen.'
+toelichting: 'Representatie, geen pagina: een kopie van het Nederlandse reisdocument met de verklaring van de gemeente dat ze gelijk is aan het origineel (Utrecht). De dienst Gewaarmerkte kopie reisdocument aanvragen is vervallen, omdat er geen landelijke wettelijke grondslag is (regel Wettelijke grondslag).'
 afgeleid:
   uitkomst:
     soort: geen_pagina

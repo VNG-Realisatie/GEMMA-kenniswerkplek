@@ -234,17 +234,20 @@ relaties:
 onderwerpen:
 - lijkbezorging
 genoemd_begrip: Graf
-status: goedgekeurd
+toelichting: 'Onderdeel van Graf, zonder pagina: geen bedrijfsproces heeft de grafbedekking als kernobject. Vergunning, onderhoud door de gemeente en verwijdering zijn gemeentelijke uitwerking (VNG-model art. 19–23) van UPL-producten zonder landelijke wettelijke grondslag, die niet worden uitgewerkt in objecten (regel Wettelijke grondslag).'
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'Geen subobject meer maar onderdeel van Graf, zonder pagina: de processen Verlenen vergunning grafbedekking en Onderhouden graf vervallen (regel Wettelijke grondslag), en landelijk regelt alleen Wlb art. 32a het eigendom van wat op het graf is geplaatst. De relatie onderhoudt vanuit Rechthebbende op het graf vervalt. Het object van dit element in Archi vervalt.'
+  gevolg: verwerkt
 afgeleid:
   uitkomst:
-    soort: element
-    regel: 36
-    toelichting: Passief (kern ja, 2/2)
-    paginatype: bedrijfsobject
+    soort: onderdeel
+    regel: 37
+    toelichting: Onderdeel van een ander object, zonder eigen proces
     archimate_type: business-object
     voorleggen: false
     data_object: nee
-    objectniveau: subobject
+    genoemd_begrip: Graf
     generiek: false
     typeregel: 21
   bronnen:
@@ -252,4 +255,3 @@ afgeleid:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   herkomst: rijksregelgeving
-  pad: bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafbedekking.md

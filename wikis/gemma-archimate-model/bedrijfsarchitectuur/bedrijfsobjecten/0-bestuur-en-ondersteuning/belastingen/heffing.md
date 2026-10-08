@@ -136,7 +136,6 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Heffingsverordening](heffingsverordening.md) | regelt *associatie (gericht)* | Heffing | [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (Gemeentewet art. 216, 229; § Lijkbezorgingsrechten) |
-| [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | leidt tot (recht voor onderhoud) *toegang (registreren)* | Heffing | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (Groningen art. 23 lid 2; § Lijkbezorgingsrechten) |
 | [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | leidt tot (lijkbezorgingsrechten) *toegang (registreren)* | Heffing | [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
 
 ## Herkomst

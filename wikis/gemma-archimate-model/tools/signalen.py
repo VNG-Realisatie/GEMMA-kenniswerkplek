@@ -260,7 +260,7 @@ def modulariteit(alle: dict[str, dict], uitkomsten: dict[str, dict | None], onde
     onderwerpen; besluit 2026-10-06). Het thuisonderwerp is het eerste in `onderwerpen`."""
     w = []
     beoordeeld = {b for b, u in uitkomsten.items() if u}
-    elementen = {b for b in beoordeeld if uitkomsten[b]["soort"] == "element"}
+    elementen = {b for b in beoordeeld if uitkomsten[b]["soort"] == "element" and not bepaal_type.is_afgewezen(alle[b])}
 
     namen: dict[str, set[str]] = {}
     for bid in beoordeeld:
@@ -366,11 +366,14 @@ def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], bron
     """Regel Wettelijke grondslag (besluiten redacteur 2026-10-08). `brontype` geeft per bron-id het brontype.
 
     Fout: een relatie *is grondslag voor* vanuit een beleidskader in Richtlijn (een richtlijn is geen wettelijke
-    grondslag). Signaal: een element zonder landelijke wettelijke bron (een bron van `europese-regelgeving` of
-    `rijksregelgeving`, of een relatie *is grondslag voor* van een beleidskader van de EU of het Rijk), behalve een
-    UPL-product of -dienst, een bedrijfsfunctie en een beleidskader; en een bedrijfsproces dat een UPL-product zonder
-    landelijke grondslag realiseert (zo'n product wordt niet uitgewerkt)."""
+    grondslag); een relatie *is grondslag voor* vanuit een beleidskader in Gemeentelijke regelgeving naar iets anders
+    dan een UPL-product of -dienst zonder landelijke grondslag (die relatie heet *werkt uit voor*); en een bedrijfsproces dat een UPL-product zonder landelijke grondslag realiseert (zo'n product wordt
+    niet uitgewerkt; een fout sinds groep B is afgerond, 2026-10-08). Signaal: een element zonder landelijke wettelijke
+    bron (een bron van `europese-regelgeving` of `rijksregelgeving`, of een relatie *is grondslag voor* van een
+    beleidskader van de EU of het Rijk), behalve een UPL-product of -dienst, een bedrijfsfunctie en een beleidskader.
+    Een vervallen element (status `afgewezen`) telt niet mee."""
     fouten, signalen_ = [], []
+    elementen = {b: u for b, u in elementen.items() if alle[b].get("status") != "afgewezen"}
     landelijk_kader = {b for b, u in elementen.items()
                        if u["paginatype"] == "beleidskader" and alle[b].get("regelgever") in ("EU", "rijk")}
     gegrond: set[str] = set()
@@ -399,6 +402,13 @@ def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], bron
     def upl(b: str) -> bool:
         return elementen[b]["paginatype"] in ("product", "dienst") and any(UPL_BRON.search(i) for i in bronnen(b))
 
+    for b, u in sorted(elementen.items()):
+        if u["paginatype"] != "beleidskader" or alle[b].get("regelgever") != "VNG-model":
+            continue
+        for r in alle[b].get("relaties", []):
+            if r.get("naam") == "is grondslag voor" and r["naar"] in elementen and (not upl(r["naar"]) or landelijk(r["naar"])):
+                fouten.append(f"{b}: gemeentelijke regelgeving is alleen grondslag voor een UPL-product of -dienst zonder "
+                              f"landelijke grondslag; noem de relatie naar '{r['naar']}' 'werkt uit voor' (regel Wettelijke grondslag)")
     zonder = set()
     for b, u in sorted(elementen.items()):
         if u["paginatype"] in ("beleidskader", "bedrijfsfunctie") or landelijk(b):
@@ -413,6 +423,6 @@ def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], bron
             continue
         for r in alle[b].get("relaties", []):
             if r["soort"] == "realisatie" and r["naar"] in zonder:
-                signalen_.append(f"{b}: realiseert UPL-product '{r['naar']}' zonder landelijke grondslag; zo'n product "
+                fouten.append(f"{b}: realiseert UPL-product '{r['naar']}' zonder landelijke grondslag; zo'n product "
                                  "wordt niet uitgewerkt in processen (regel Wettelijke grondslag)")
     return fouten, signalen_

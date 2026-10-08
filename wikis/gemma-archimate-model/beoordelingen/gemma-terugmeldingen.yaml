@@ -1,0 +1,18 @@
+# GEMMA-terugmeldingen: het register van voorstellen aan het GEMMA-team over het GEMMA-model (besluit redacteur 2026-10-08).
+# De AI voegt een melding toe zonder nummer; tools/afleiden.py geeft het volgende nummer.
+# tools/render.py maakt hieruit analyses/gemma-terugmeldingen.md en de sectie op de elementpagina.
+terugmeldingen:
+- type: element
+  elementen:
+  - asverstrooiing
+  gemma_elementen:
+  - id: id-11ceda47-d0a4-49cb-88d7-eaf623172f3f
+    naam: Producten- en dienstenrealisatie veiligheidsdomein
+  - id: id-de168a10-7030-4026-bd95-298e6a6cb3e2
+    naam: Uitvoering openbare orde en veiligheid
+  bevinding:
+  - '**GEMMA:** de bedrijfsfunctie Producten- en dienstenrealisatie veiligheidsdomein omvat Vergunningenbeheer evenementen, Horeca vergunningverlening en Preventiecampagnes, en valt onder Uitvoering openbare orde en veiligheid, die ook Toezicht en handhaving veiligheidsdomein, Casusregievoering veiligheidsdomein, Beheren openbare orde en veiligheid en Veiligheidsdata-analyse omvat (2026-vng-gemma-2026-10-02). De UPL rekent asverstrooiing tot het domein Openbare orde en veiligheid (2025-vng-upl-producten-en-diensten-extern, nr. 32).'
+  - '**Bevinding:** het model geldt voor alle gemeenten en neemt daarom alleen elementen op met een landelijke wettelijke grondslag; een UPL-product zonder die grondslag blijft, maar wordt niet uitgewerkt in processen. Asverstrooiing steunt alleen op de Model-APV (art. 5:36): gemeenten kiezen daarin een variant of laten de bepaling weg (2023-vng-model-apv). In de wiki was het het enige wat deze functies omvatten. Zonder proces om te bedienen vervallen beide functies in de wiki, en staat asverstrooiing onder Exploiteren van begraafplaatsen, bij de andere producten van de lijkbezorging. In GEMMA blijven de functies bestaan: ze omvatten producten en functies die de wiki nog niet heeft beoordeeld. Een deel daarvan steunt, net als asverstrooiing, alleen op de APV (zoals de evenementenvergunning).'
+  - '**Voorstel:** neem asverstrooiing in GEMMA op onder Exploiteren van begraafplaatsen. Beoordeel bij een onderwerp Openbare orde en veiligheid per product en functie onder Uitvoering openbare orde en veiligheid of er een landelijke wettelijke grondslag is, en laat functies vervallen die alleen producten zonder die grondslag omvatten.'
+  nummer: 1
+  status: open

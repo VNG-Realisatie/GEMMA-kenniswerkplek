@@ -219,22 +219,13 @@ gemma:
   id: id-11ceda47-d0a4-49cb-88d7-eaf623172f3f
   sterkte: exact
   onderbouwing: 'Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Producten- en dienstenrealisatie veiligheidsdomein.'
-relaties:
-- soort: aggregatie
-  naar: asverstrooiing
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2025-vng-upl-producten-en-diensten-extern
-  vindplaats: UPL nr. 32 (GEMMA-domein Openbare orde en Veiligheid)
-- soort: bediening
-  naar: verlenen-toestemming-asverstrooiing
-  naam: bedient
-  grondslag: bron
-  bronnen:
-  - 2025-groningen-algemene-plaatselijke-verordening
-  vindplaats: art. 5:27 lid 3
-status: goedgekeurd
+relaties: []
+toelichting: 'Vervalt in de wiki: de functie omvatte alleen de dienst Asverstrooiing, die geen landelijke wettelijke grondslag heeft en geen proces heeft om te bedienen (regel Wettelijke grondslag); Asverstrooiing staat nu onder Exploiteren van begraafplaatsen. Het GEMMA-element blijft; GEMMA-terugmelding 1.'
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'Vervalt in de wiki (regel Wettelijke grondslag): na het vervallen van Verlenen toestemming asverstrooiing bedient de functie geen proces meer, en Asverstrooiing gaat naar Exploiteren van begraafplaatsen. Het GEMMA-element blijft in GEMMA (de sync haalt alleen de wiki-eigenschappen weg); het voorstel aan het GEMMA-team staat in GEMMA-terugmelding 1.'
+  gevolg: afwijzen
+status: afgewezen
 afgeleid:
   uitkomst:
     soort: element
@@ -260,4 +251,3 @@ afgeleid:
     gemma_eigenschappen:
       GEMMA type: Bedrijfsfunctie
       Object ID: 11ceda47-d0a4-49cb-88d7-eaf623172f3f
-  pad: bedrijfsarchitectuur/bedrijfsfuncties/openbare-orde-en-veiligheid/producten-en-dienstenrealisatie-veiligheidsdomein.md

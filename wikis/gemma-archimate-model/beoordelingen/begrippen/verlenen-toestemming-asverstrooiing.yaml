@@ -270,7 +270,11 @@ besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt
   besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (analyses/indelingen.md).
-status: goedgekeurd
+- datum: '2026-10-08'
+  besluit: 'Vervalt (regel Wettelijke grondslag, besluit 3 in analyses/wettelijke-grondslag.md): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Asverstrooiing (UPL nr. 32), met grondslag in de Model-APV art. 5:36. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
+  gevolg: afwijzen
+toelichting: 'Vervalt: geen landelijke wettelijke grondslag. Het proces realiseerde de dienst Asverstrooiing (UPL nr. 32), met grondslag in de Model-APV art. 5:36; zo''n UPL-product blijft, maar wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen (regel Wettelijke grondslag).'
+status: afgewezen
 afgeleid:
   uitkomst:
     soort: element
@@ -289,4 +293,3 @@ afgeleid:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: rijksregelgeving
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-asverstrooiing.md

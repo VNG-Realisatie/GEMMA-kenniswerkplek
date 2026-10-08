@@ -73,7 +73,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Verlenen grafrecht (vraagt aan, Groningen art. 16), Opgraven stoffelijk overschot (vraagt aan, art. 28), Onderhouden graf (verzoekt, art. 23) en Verlenen vergunning grafbedekking (vraagt aan, art. 22).
+    onderbouwing: Toegewezen aan Verlenen grafrecht (vraagt aan, Groningen art. 16) en Opgraven stoffelijk overschot (vraagt aan, art. 28).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -248,13 +248,6 @@ relaties:
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 28 lid 1
-- soort: toewijzing
-  naar: onderhouden-graf
-  naam: verzoekt om
-  grondslag: bron
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 23 lid 1
 - soort: toegang (partij)
   naar: grafrecht
   naam: heeft
@@ -263,14 +256,6 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 28; Groningen art. 1 w
-- soort: toegang (beheerder)
-  naar: grafbedekking
-  naam: onderhoudt
-  grondslag: bron
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: Groningen art. 24; VNG-model art. 21
 - soort: toewijzing
   naar: ruimen-graf
   naam: geeft toestemming voor
@@ -286,13 +271,6 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   vindplaats: Groningen art. 9 lid 2; VNG-model art. 9 lid 2
-- soort: toewijzing
-  naar: verlenen-vergunning-grafbedekking
-  naam: vraagt aan
-  grondslag: bron
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 22 lid 2
 onderwerpen:
 - lijkbezorging
 doelgroep: inwoners en ondernemers

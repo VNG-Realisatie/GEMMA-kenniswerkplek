@@ -220,7 +220,12 @@ afnemer: extern
 domein: Publieksdiensten
 naamkeuze:
 - Dienst vanuit de afnemer (regel Naamvorm), naar de productpagina van Utrecht; de UPL kent het product niet. De kortere vorm, met gewaarmerkte kopie als wat de afnemer krijgt, is gekozen boven de volledige Utrechtse titel, die als synoniem blijft.
-status: goedgekeurd
+toelichting: 'Vervalt: geen landelijke wettelijke grondslag (niet in de Paspoortwet, het Paspoortbesluit of de Wet op de Nederlandse identiteitskaart) en geen product in de UPL; gemeenten verschillen in wat ze waarmerken (regel Wettelijke grondslag; procesarchitectuur-terugmelding 11).'
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'Vervalt (regel Wettelijke grondslag, groep C in analyses/wettelijke-grondslag.md): geen UPL-product en geen landelijke wettelijke grondslag. De representatie Gewaarmerkte kopie gaat mee; procesarchitectuur-terugmelding 11 noemt de dienst niet meer als element. Het object van dit element in Archi vervalt.'
+  gevolg: afwijzen
+status: afgewezen
 afgeleid:
   uitkomst:
     soort: element
@@ -235,4 +240,3 @@ afgeleid:
   bronnen:
   - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
   herkomst: overig
-  pad: bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/gewaarmerkte-kopie-reisdocument-aanvragen.md

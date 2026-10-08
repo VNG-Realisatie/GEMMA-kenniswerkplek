@@ -261,13 +261,6 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 23 lid 2; Groningen art. 13 lid 1
 - soort: toewijzing
-  naar: onderhouden-graf
-  naam: voert uit
-  grondslag: bron
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 23
-- soort: toewijzing
   naar: beheren-begraafplaatsen
   naam: houdt in stand
   grondslag: bron

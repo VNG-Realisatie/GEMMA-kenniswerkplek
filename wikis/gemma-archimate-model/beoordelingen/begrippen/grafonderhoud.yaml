@@ -4,6 +4,7 @@ kenmerken:
     waarde: ja
     onderbouwing: Gangbaar in verordening en VNG ('onderhoud van graven en urnen').
     bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2026-vng-retributies
   gemeentelijk:
@@ -126,9 +127,10 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het proces Onderhouden graf.
+    onderbouwing: 'De functie Exploiteren van begraafplaatsen, zonder eigen proces: een UPL-product zonder landelijke wettelijke grondslag wordt niet uitgewerkt in processen (regel Wettelijke grondslag).'
     bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+    - 2025-vng-upl-producten-en-diensten-extern
   leidt_tot_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -247,7 +249,9 @@ afgeleid:
     generiek: false
     typeregel: 17
   bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2026-vng-retributies
-  herkomst: gemeentelijke-regelgeving
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: informatiemodel
   pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafonderhoud.md

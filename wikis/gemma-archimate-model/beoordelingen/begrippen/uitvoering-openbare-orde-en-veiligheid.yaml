@@ -228,7 +228,12 @@ relaties:
   bronnen:
   - 2026-vng-gemma-2026-10-02
   vindplaats: GEMMA-relatie id-aaa45392-d081-4a55-97d9-698db0f4934f
-status: goedgekeurd
+toelichting: 'Vervalt in de wiki: de functie omvatte alleen Producten- en dienstenrealisatie veiligheidsdomein, die vervalt (besluit 5 in analyses/wettelijke-grondslag.md: een functie vervalt als zij niets meer omvat). Het GEMMA-element blijft; GEMMA-terugmelding 1.'
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'Vervalt in de wiki: omvat niets meer na het vervallen van Producten- en dienstenrealisatie veiligheidsdomein. Het GEMMA-element blijft in GEMMA; GEMMA-terugmelding 1.'
+  gevolg: afwijzen
+status: afgewezen
 afgeleid:
   uitkomst:
     soort: element
@@ -254,4 +259,3 @@ afgeleid:
     gemma_eigenschappen:
       GEMMA type: Bedrijfsfunctie domein
       Object ID: de168a10-7030-4026-bd95-298e6a6cb3e2
-  pad: bedrijfsarchitectuur/bedrijfsfuncties/openbare-orde-en-veiligheid/uitvoering-openbare-orde-en-veiligheid.md

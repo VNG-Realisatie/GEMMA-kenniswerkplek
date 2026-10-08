@@ -14,7 +14,6 @@ match:
   ggm: geen
   gemma: geen
 data_object: nee
-objectniveau: subobject
 synoniemen:
 - Asbus (wet)
 - Sierurn (beleid)
@@ -51,17 +50,15 @@ Na de crematie wordt de as geborgen in een of meer gesloten asbussen met naam en
 
 ### Typering
 
-Bedrijfsobject, niveau subobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
+Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
-- **Objectniveau**: subobject.
-- **Mutaties door bedrijfsprocessen**: [Verlenen toestemming asverstrooiing](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-asverstrooiing.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -72,7 +69,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke asbus met naam en nummer (art. 58 lid 2). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, geborgen, bewaard, bijgezet of verstrooid, geruimd (art. 58, 59, 66). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, bijgezet, geruimd en in het register van de plaats van bijzetting bijgehouden (art. 62, 65, 66). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **deel van object**: Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? | Ja, een onderdeel van het lijk na de crematie: de urn bevat de as, ontstaat bij de crematie en eindigt met de bestemming van de as, binnen de levensloop van het lijk (art. 58, 59, 66). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
@@ -94,7 +90,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | [Nabestaande](../../../rollen/nabestaande.md) | draagt zorg voor *toegang (houder)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 60 lid 2) |
 | [Ruimen graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | ruimt door verstrooiing *toegang (bijwerken)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 66) |
 | [Uitvoeren lijkbezorging](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | zet bij of verstrooit de as uit *toegang (bijwerken)* | Urn | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 59 lid 2) |
-| [Verlenen toestemming asverstrooiing](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-asverstrooiing.md) | betreft *toegang (bijwerken)* | Urn | [APV Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md) (art. 5:27 lid 3) |
 
 ## Herkomst
 
@@ -118,3 +113,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 - 2026-09-30: Naam Urn volgens het gangbare gebruik; asbus (wet, beheersverordening) is een synoniem. Een sierurn met meer asbussen is één urn.
 - 2026-10-04: Subobject van Lijk, met het deelproces Bijzetten of verstrooien van de as.
+- 2026-10-08: Herziet het besluit van 2026-10-04: geen subobject van Stoffelijk overschot, maar een eigen bedrijfsobject. De as is deel van het stoffelijk overschot, de urn is de houder ervan, met een eigen levensloop en register (Wlb art. 58, 59, 62, 65, 66). Het enige bedrijfsproces met Urn als kernobject, Verlenen toestemming asverstrooiing, vervalt (regel Wettelijke grondslag); bijzetten en verstrooien vallen in Uitvoeren lijkbezorging. De pagina en het object in Archi blijven.

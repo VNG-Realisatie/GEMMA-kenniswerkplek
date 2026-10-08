@@ -245,13 +245,6 @@ relaties:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   vindplaats: Groningen art. 22 lid 1; VNG-model art. 19 lid 1
   via: vergunning-grafbedekking
-- soort: toegang (bijwerken)
-  naar: grafbedekking
-  naam: betreft
-  grondslag: bron
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 22
 - soort: realisatie
   naar: gedenkteken-plaatsingsvergunning
   naam: realiseert
@@ -264,7 +257,11 @@ besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt
   besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (analyses/indelingen.md).
-status: goedgekeurd
+- datum: '2026-10-08'
+  besluit: 'Vervalt (regel Wettelijke grondslag, besluit 3 in analyses/wettelijke-grondslag.md): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Gedenkteken plaatsingsvergunning (UPL nr. 142), met grondslag in de Model beheersverordening begraafplaatsen art. 19. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
+  gevolg: afwijzen
+toelichting: 'Vervalt: geen landelijke wettelijke grondslag. Het proces realiseerde de dienst Gedenkteken plaatsingsvergunning (UPL nr. 142), met grondslag in de Model beheersverordening begraafplaatsen art. 19; zo''n UPL-product blijft, maar wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen (regel Wettelijke grondslag).'
+status: afgewezen
 afgeleid:
   uitkomst:
     soort: element
@@ -282,4 +279,3 @@ afgeleid:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: informatiemodel
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-vergunning-grafbedekking.md

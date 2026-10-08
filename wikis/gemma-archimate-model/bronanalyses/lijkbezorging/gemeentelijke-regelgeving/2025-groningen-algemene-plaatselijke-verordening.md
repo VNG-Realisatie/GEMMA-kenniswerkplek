@@ -6,7 +6,7 @@ bronnen:
 - 2025-groningen-algemene-plaatselijke-verordening
 relevant: ja
 korte_titel: APV Groningen
-bijgewerkt: 2026-10-04
+bijgewerkt: 2026-10-08
 ---
 
 # Algemene Plaatselijke Verordening Groningen 2021, afdeling Verstrooiing van as
@@ -15,7 +15,7 @@ Bron: [tekst](../../../../../sources/raw/2025-groningen-algemene-plaatselijke-ve
 
 ## Samenvatting
 
-Voor dit onderwerp is van de APV van Groningen alleen hoofdstuk 5, afdeling 7 *Verstrooiing van as* (art. 5:26–5:28) in scope. Die afdeling staat in de bronnen in plaats van de VNG-model-APV, waarvan art. 5:36 de grondslag is van het UPL-product *asverstrooiing*. Een openbare kopie van de model-APV is er niet: ze staat in de KDER van Sdu, waarvoor je moet inloggen (besluit redacteur 2026-10-04). De APV volgt de opzet van het model, maar de nummering wijkt af.
+Voor dit onderwerp is van de APV van Groningen alleen hoofdstuk 5, afdeling 7 *Verstrooiing van as* (art. 5:26–5:28) in scope. Die afdeling stond in de bronnen in plaats van de VNG-model-APV, waarvan art. 5:36 de grondslag is van het UPL-product *asverstrooiing*, zolang er geen openbare kopie van het model was (besluit redacteur 2026-10-04). Sinds 2026-10-08 is de Model-APV zelf bron (2023-vng-model-apv) en de grondslag van Asverstrooiing; deze APV is een voorbeeld van een gemeentelijke uitwerking (regel Wettelijke grondslag). De APV volgt de opzet van het model, maar de nummering wijkt af.
 
 De afdeling regelt de asverstrooiing **buiten** de begraafplaats. Op de gemeentelijke begraafplaatsen en crematoriumterreinen is incidentele asverstrooiing verboden, "tenzij de verordening anders aangeeft". Daarmee verwijst de APV naar de beheersverordening, die de verstrooiing op de begraafplaats regelt (Groningen beheersverordening art. 21). Buiten de begraafplaats is asverstrooiing vrij, behalve op de plaatsen die art. 5:27 lid 1 opsomt en bij hinder of overlast (art. 5:28). Het college kan:
 
@@ -53,9 +53,9 @@ Die ontheffing is het gemeentelijke besluit achter het UPL-product asverstrooiin
 
 ## Relevantie voor de architectuur
 
-- **Proces en dienst (kandidaat):** het verlenen van een ontheffing voor asverstrooiing door het college, op verzoek van de nabestaande. Dat is het besluit achter het UPL-product asverstrooiing en mogelijk een deelproces in het cluster *Behandelen vergunningaanvragen lijkbezorging* (in GEMMA: Behandelen aanvraag vergunning of ontheffing). In de ijking stond hier een gat (`analyses/indelingen.md`, § IJking met de UPL).
+- **Dienst:** het verlenen van een ontheffing voor asverstrooiing door het college, op verzoek van de nabestaande, is het besluit achter het UPL-product asverstrooiing. Het werd eerst uitgewerkt als bedrijfsproces; dat vervalt, omdat er geen landelijke wettelijke grondslag is (regel Wettelijke grondslag).
 - **Bestaande begrippen:** *Incidentele asverstrooiing* (specialisatie van *Bijzetten of verstrooien van de as*), *Verstrooiingsplaats*, *Nabestaande*, *College van B&W* en *Urn* (wettelijk asbus). Let bij het beoordelen op de tegenspraak in de definitie hierboven.
-- **Beleidskader:** de APV is een gemeentelijke verordening met een brede reikwijdte. Voor dit onderwerp is alleen de afdeling over asverstrooiing van belang. Of de (model-)APV een beleidskader wordt, beslist een onderwerp openbare orde.
+- **Beleidskader:** de APV van Groningen is de verordening van één gemeente en geen element; het beleidskader is de Model-APV van de VNG (2023-vng-model-apv), thuis in Algemeen.
 - **Gemeentelijk perspectief:** de provinciale omgevingsverordening (art. 5:27 lid 1 onder c) is alleen context.
 
 ## Citaten
