@@ -152,9 +152,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De gemeente voert het uit; andere partijen leveren alleen gegevens of vragen erom.
   eigen_besluit:
     waarde: nee
     onderbouwing: De verwerking van de aangifte eindigt niet in een apart besluit; het ambtshalve vertrek is een besluit in Uitvoeren adresonderzoek.
@@ -262,7 +259,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

@@ -44,7 +44,7 @@ De Wet BRP wordt uitgewerkt in het Besluit BRP, de Regeling BRP en het Logisch O
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De BRP-items zijn diensten die deelprocessen van Bijhouden persoonsgegevens realiseren; de wet is daarom grondslag van die diensten en deelprocessen (UPL nr. 1, 6, 62, 85 tot en met 95, 257, 335, 369, 424) en niet van een product.
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De BRP-items zijn diensten die bedrijfsprocessen onder Bijhouden persoonsgegevens realiseren; de wet is daarom grondslag van die diensten en bedrijfsprocessen (UPL nr. 1, 6, 62, 85 tot en met 95, 257, 335, 369, 424) en niet van een product.
 
 ### Synoniemen
 
@@ -69,7 +69,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -80,7 +80,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde wet als geheel (BWBR0033715). [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Besluit BRP](../../bronanalyses/burgerzaken/2026-rijk-besluit-brp-bwbr0034306.md) |
 | **landelijk**: Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? | Ja, rijkswet: een formele wet. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht; de UPL en de HUP verwijzen naar de actuele tekst. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [HUP BRP Algemeen](../../bronanalyses/burgerzaken/2026-rvig-hup-algemeen.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? | Ja, art. 2.8, 2.23, 2.25, 2.38, 2.39, 2.43, 2.55, 2.56a, 2.57, 2.58, 2.59, 2.66 en 3.22: grondslag van de BRP-items in de UPL, die de deelprocessen van Bijhouden persoonsgegevens leveren. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? | Ja, art. 2.8, 2.23, 2.25, 2.38, 2.39, 2.43, 2.55, 2.56a, 2.57, 2.58, 2.59, 2.66 en 3.22: grondslag van de BRP-items in de UPL, die de bedrijfsprocessen onder Bijhouden persoonsgegevens leveren. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties

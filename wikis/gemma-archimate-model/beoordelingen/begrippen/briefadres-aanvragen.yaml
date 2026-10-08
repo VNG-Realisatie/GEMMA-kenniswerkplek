@@ -135,7 +135,7 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Inschrijven op briefadres (HUP Verblijfplaats).
+    onderbouwing: Het bedrijfsproces Inschrijven op briefadres (HUP Verblijfplaats).
     bronnen:
     - 2026-rvig-hup-verblijfplaats
   leidt_tot_gedrag:
@@ -148,9 +148,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

@@ -136,7 +136,7 @@ kenmerken:
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Toestaan lijkbezorging, binnen het ketenproces Bezorgen stoffelijk overschot: vervoer naar de plaats van bezorging in het buitenland (Besluit op de lijkbezorging art. 11).'
+    onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: vervoer naar de plaats van bezorging in het buitenland (Besluit op de lijkbezorging art. 11).'
     bronnen:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -145,9 +145,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van het stoffelijk overschot, binnen Bezorgen stoffelijk overschot.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Eén bestuursorgaan van de gemeente beslist.
   eigen_besluit:
     waarde: ja
     onderbouwing: De burgemeester geeft het laissez-passer af (Besluit op de lijkbezorging art. 11 lid 1).
@@ -264,7 +261,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

@@ -49,7 +49,7 @@ Vervoer naar een staat die partij is bij de Overeenkomst van Straatsburg gaat on
 
 | Begrip | Betekenis | Naamkeuze |
 |---|---|---|
-| Laissez-passer voor lijken (Specialisatie van Vergunning zonder eigen pagina in deze wiki) | Het document van de burgemeester waarmee een stoffelijk overschot ongehinderd naar een verdragsstaat van de Overeenkomst van Straatsburg wordt vervoerd (Besluit op de lijkbezorging art. 11 lid 1) | Deze pagina heet Vervoersdocumenten stoffelijk overschot: de dienst, met de UPL-naam, en Laissez-passer voor lijken als synoniem (wet). Het document zelf is de specialisatie Laissez-passer voor lijken van Vergunning en krijgt geen pagina; het afgeven is het deelproces Afgeven laissez-passer. |
+| Laissez-passer voor lijken (Specialisatie van Vergunning zonder eigen pagina in deze wiki) | Het document van de burgemeester waarmee een stoffelijk overschot ongehinderd naar een verdragsstaat van de Overeenkomst van Straatsburg wordt vervoerd (Besluit op de lijkbezorging art. 11 lid 1) | Deze pagina heet Vervoersdocumenten stoffelijk overschot: de dienst, met de UPL-naam, en Laissez-passer voor lijken als synoniem (wet). Het document zelf is de specialisatie Laissez-passer voor lijken van Vergunning en krijgt geen pagina; het afgeven is het bedrijfsproces Afgeven laissez-passer. |
 
 ## Plaats in het model
 
@@ -66,7 +66,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -78,7 +78,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, een prestatie die de gemeente aanbiedt: het document waarmee een stoffelijk overschot ongehinderd naar het buitenland wordt vervoerd (Besluit op de lijkbezorging art. 11). [Besluit op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een laissez-passer voor lijken (Besluit op de lijkbezorging art. 11 lid 1). [Besluit op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger en bedrijf (UPL): wie het vervoer regelt, meestal de uitvaartondernemer (RVO). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het deelproces Afgeven laissez-passer (Besluit op de lijkbezorging art. 11). [Besluit op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Afgeven laissez-passer (Besluit op de lijkbezorging art. 11). [Besluit op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere dienst in deze wiki of in het GEMMA-model. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties

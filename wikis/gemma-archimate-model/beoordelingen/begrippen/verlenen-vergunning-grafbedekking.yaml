@@ -150,9 +150,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de grafbedekking, binnen Beheren graven.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Eén bestuursorgaan van de gemeente beslist.
   eigen_besluit:
     waarde: ja
     onderbouwing: Het college besluit over de vergunning (Groningen art. 22 lid 1, 4; VNG-model art. 19).
@@ -272,7 +269,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

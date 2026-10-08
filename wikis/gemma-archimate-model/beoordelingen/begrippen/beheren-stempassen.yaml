@@ -138,18 +138,13 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: Het proces van een kernobject; de taak Verzorgen burgerzaken groepeert het, maar het levert zelf het eindresultaat.
+    onderbouwing: Het levensloopproces van een kernobject; geen deel van een groter proces.
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
     waarde: ja
     onderbouwing: 'Omvat de levensloop van de stempas: vaststelling, verstrekking, vervanging, omzetting in kiezerspas of volmachtbewijs, ongeldigheid en vernietiging van het register (Kieswet art. J 7, J 7a, J 8, K 4, L 14).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De gemeente voert het uit tegenover de kiezer; de minister stelt alleen modellen vast en levert informatie voor de productie (Kieswet art. J 7 lid 3-4, K 4 lid 4).
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
   eigen_besluit:
@@ -269,7 +264,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    procesniveau: levensloopproces
     generiek: false
     typeregel: 17
   bronnen:

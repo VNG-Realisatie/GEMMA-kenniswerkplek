@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: bedrijfsproces
+procesniveau: levensloopproces
 afnemer: extern
 synoniemen:
 - Lijkbezorging door de burgemeester (wet)
@@ -48,19 +48,20 @@ Als niemand voorziet in de lijkschouwing en lijkbezorging, waarschuwt degene die
 
 ### Typering
 
-Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: bedrijfsproces.
-- **Procesindeling naar taak, onderdeel van**: [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md), [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md).
+- **Procesniveau**: levensloopproces.
+- **Beleidsdomeinindeling**: beleidsdomein Begraafplaatsen en crematoria, taakveld 7 Volksgezondheid en Milieu (van het kernobject).
 - **Kernobject**: [Gemeentebegrafenis](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md).
+- **Ketensamenwerking, bedient**: [Bezorgen stoffelijk overschot](../../../bedrijfsinteracties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bezorgen-stoffelijk-overschot.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 46 zijn nee.
+Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -76,7 +77,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een gemeentebegrafenis, met kostenverhaal (art. 21, 22). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk overlijden waarbij niemand in de lijkbezorging voorziet. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 20–22: melding, zorgplicht, kostenverhaal; art. 21 lid 3–6 bij onbekende identiteit. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van de gemeentebegrafenis: de melding dat niemand in de lijkbezorging voorziet (art. 20), de zorg door de burgemeester (art. 21), het kostenverhaal (art. 22) en de afdoening (GGM-attributen datumGemeld, datumBegrafenis, verhaaldBedrag, datumAfgedaan). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [GGM](../../../../../../sources/raw/2026-vng-ggm-2-5-1.md) |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van de gemeentebegrafenis: de melding dat niemand in de lijkbezorging voorziet (art. 20), de zorg door de burgemeester (art. 21), het kostenverhaal (art. 22) en de afdoening (GGM-attributen datumGemeld, datumBegrafenis, verhaaldBedrag, datumAfgedaan). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [GGM](../../../../../../sources/raw/2026-vng-ggm-2-5-1.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
@@ -87,15 +88,14 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 |---|---|---|---|
 | Verzorgen gemeentebegrafenis | betreft *toegang (raadplegen)* | [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
 | Verzorgen gemeentebegrafenis | legt vast en handelt af *toegang (bijwerken)* | [Gemeentebegrafenis](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
+| Verzorgen gemeentebegrafenis | zorgt voor de bezorging in *bediening* | [Bezorgen stoffelijk overschot](../../../bedrijfsinteracties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bezorgen-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Beslisser](../../../rollen/beslisser.md) | draagt zorg voor *toewijzing* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21 lid 1) |
-| [Bezorgen stoffelijk overschot](bezorgen-stoffelijk-overschot.md) | omvat *aggregatie* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
 | [Kostendrager](../../../rollen/kostendrager.md) | draagt de kosten van *toewijzing* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 22) |
-| [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md) | omvat *aggregatie* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 20–22) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Verzorgen gemeentebegrafenis | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21, 22) |
 
 ## Herkomst
@@ -111,7 +111,12 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 5](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** een ketenproces is een samenhangend geheel van processen over afdelingen of organisaties en aggregeert bedrijfsprocessen: Ketenproces → aggregatie → Bedrijfsproces ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 564, 590). **GEMMA Online, Proceshiërarchie:** 'Ketensamenwerking wordt soms aangeduid als "ketenproces", een proces op een hoger niveau dan de eigen bedrijfsprocessen', maar dat is 'vanuit de procesarchitectuur gezien niet correct'; in ArchiMate is het 'een bedrijfsinteractie waarin de bedrijfsprocessen van de betrokken organisaties samenkomen', niet een proces dat met een aggregatie uit andere processen is samengesteld ([2026-vng-gemma-proceshierarchie](../../../../analyses/proceshierarchie.md), regel 144, 146). Het GEMMA-model volgt dat: de business-interaction Ketensamenwerking wordt bediend door Bedrijfsproces 1 en Bedrijfsproces 2. De pagina Impact van ketensamenwerking onderscheidt het orkestratiemodel en het estafettemodel ([2026-vng-gemma-impact-ketensamenwerking](../../../../analyses/proceshierarchie.md), regel 27-34). **GEMMA:** de bronnen van GEMMA spreken elkaar tegen. Het model volgt de pagina Proceshiërarchie, omdat die uitwerkt hoe GEMMA ketens modelleert en het GEMMA-model zelf dat ook doet. Een estafette wordt een bedrijfsinteractie met een kernobject, bediend door de levensloopprocessen van de partijen: Bezorgen stoffelijk overschot, bediend door Toestaan lijkbezorging (de gemeente als overheid), Begraven en cremeren stoffelijk overschot (de houder van de begraafplaats of het crematorium) en Verzorgen gemeentebegrafenis, met de officier van justitie als ketenpartner ([2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), art. 10, 11, 12, 21, 23, 49). Bij orkestratie is er geen interactie; het deel dat de gemeente voor een andere partij uitvoert, specialiseert Leveren dienst aan derden (de verklaring omtrent het gedrag, de naturalisatie). Voorstel: haal Ketenproces → aggregatie → Bedrijfsproces uit het kennismodel en neem de bedrijfsinteractie op, bediend door bedrijfsprocessen en toegewezen aan een bedrijfssamenwerking of de rollen van de partijen.
+
 ### Besluiten redacteur
 
 - 2026-10-04: Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), binnen het ketenproces Bezorgen lijken.
 - 2026-10-05: Stoffelijk overschot in lopende tekst: twee keer in de beschrijving; lijkschouwing en lijkbezorging blijven (vaste termen).
+- 2026-10-08: Levensloopproces van de gemeentebegrafenis; bedient de bedrijfsinteractie Bezorgen stoffelijk overschot in plaats van erin te hangen.

@@ -155,9 +155,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
     onderbouwing: De registratie volgt direct op de verklaring; het verval treedt van rechtswege in (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j).
@@ -286,7 +283,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

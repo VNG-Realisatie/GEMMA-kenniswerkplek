@@ -2,7 +2,7 @@
 
 Invoer (alleen lezen): `beoordelingen/begrippen/<id>.yaml` (het oordeel van de AI, met `status` en `afgeleid` van
 tools/afleiden.py), `beoordelingen/onderwerpen/<id>.yaml`, `beoordelingen/terugmeldingen.yaml`,
-`beoordelingen/procesarchitectuur-terugmeldingen.yaml`, `log.md`, `wiki.yaml`,
+`beoordelingen/procesarchitectuur-terugmeldingen.yaml`, `beoordelingen/beleidsdomeinen.yaml`, `log.md`, `wiki.yaml`,
 de bronanalyses en `sources/index` (titels). Het script oordeelt niet en schrijft nooit in `beoordelingen/`.
 
 Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--check` vangt dat):
@@ -11,7 +11,7 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 |---|---|
 | `<map van het type>/<taakveld>/<beleidsdomein>/<id>.md` (pad uit `afgeleid.pad`) | Elementpagina |
 | `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst, de reden, de herkomst en de GGM-entiteit |
-| `overzichten/<onderwerp>.md` | Overzicht per onderwerp: de views op de indelingen (processen naar taak en naar soort werk, objecten, functies, doelgroepen, producten en diensten, beleidskaders) |
+| `overzichten/<onderwerp>.md` | Overzicht per onderwerp: de views op de indelingen (processen naar kernobject en naar soort werk, ketensamenwerking, objecten, functies, doelgroepen, producten en diensten, beleidskaders) |
 | `analyses/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
 | `analyses/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel) |
 | `ter-beoordeling.md` | Wat wacht op akkoord (review), en wat nog moet worden voorgelegd |
@@ -57,6 +57,7 @@ VOORTGANG = Path("voortgang.md")
 TERUGMELDLIJST = Path("analyses") / "ggm-terugmeldingen.md"
 PA_TERUGMELDINGEN = Path("beoordelingen") / "procesarchitectuur-terugmeldingen.yaml"
 PA_TERUGMELDLIJST = Path("analyses") / "procesarchitectuur-terugmeldingen.md"
+BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
 INDELINGSVELDEN = ("afnemer", "domein", "doelgroep", "regelgever")  # waarden zonder verwijzing: ook in de frontmatter
 
 STATUSSEN = ["kandidaat", "review", "goedgekeurd", "afgewezen"]
@@ -113,6 +114,9 @@ class Wiki:
         self.terugmeldingen = beoordeling.laad(register).get("terugmeldingen", []) if register.exists() else []
         pa = wiki_root / PA_TERUGMELDINGEN
         self.pa_terugmeldingen = beoordeling.laad(pa).get("terugmeldingen", []) if pa.exists() else []
+        bd = wiki_root / BELEIDSDOMEINEN
+        self.beleidsdomeinen = {b["beleidsdomein"]: b for b in beoordeling.laad(bd).get("beleidsdomeinen", [])} \
+            if bd.exists() else {}
         log = wiki_root / "log.md"
         self.log = log.read_text(encoding="utf-8") if log.exists() else ""
         self.onderwerp_dir = self.yaml["page_types"].get("onderwerp", {}).get("dir", "begrippen")
@@ -238,25 +242,41 @@ def indelingen(w: Wiki, van: str, bid: str, d: dict) -> list[str]:
         onder = [n for n in w.uitgaand(bid, "aggregatie") if w.paginatype(n) == "bedrijfsproces"]
         regels.append(f"- **Procesniveau**: {u['procesniveau']}.")
         if boven:
-            regels.append(f"- **Procesindeling naar taak, onderdeel van**: {_links(w, van, boven)}.")
+            regels.append(f"- **Procesindeling naar kernobject, onderdeel van**: {_links(w, van, boven)}.")
         if onder:
-            regels.append(f"- **Procesindeling naar taak, omvat**: {_links(w, van, onder)}.")
+            regels.append(f"- **Procesindeling naar kernobject, omvat**: {_links(w, van, onder)}.")
+    if (u.get("procesniveau") == "levensloopproces" or u.get("paginatype") == "bedrijfsinteractie") \
+            and d.get("beleidsdomein"):
+        regels.append(f"- **Beleidsdomeinindeling**: beleidsdomein {d['beleidsdomein']}"
+                      + (f", taakveld {d['taakveld']}" if d.get("taakveld") else "") + " (van het kernobject).")
     if d.get("kernobject"):
         regels.append(f"- **Kernobject**: {w.link(van, d['kernobject'])}.")
+    if u.get("paginatype") == "bedrijfsinteractie":
+        partijen = [v for v in w.inkomend_van(bid, "bediening") if w.paginatype(v) == "bedrijfsproces"]
+        if partijen:
+            regels.append(f"- **Ketensamenwerking, bediend door**: {_links(w, van, partijen)}.")
+    if u.get("paginatype") == "bedrijfsproces":
+        ketens = [n for n in w.uitgaand(bid, "bediening") if w.paginatype(n) == "bedrijfsinteractie"]
+        if ketens:
+            regels.append(f"- **Ketensamenwerking, bedient**: {_links(w, van, ketens)}.")
     if u.get("objectniveau"):
         regels.append(f"- **Objectniveau**: {u['objectniveau']}.")
     if u.get("objectniveau") == "kernobject":
-        door = [b for b, x in w.begrippen.items() if x.get("kernobject") == bid and w.is_element(b)]
+        door = [b for b, x in w.begrippen.items() if x.get("kernobject") == bid and w.niveau(b) == "levensloopproces"]
         if door:
             regels.append(f"- **Levensloop bepaald door**: {_links(w, van, door)}.")
+        ketens = [b for b, x in w.begrippen.items() if x.get("kernobject") == bid and w.paginatype(b) == "bedrijfsinteractie"
+                  and w.is_element(b)]
+        if ketens:
+            regels.append(f"- **Ketensamenwerking**: {_links(w, van, ketens)}.")
     if u.get("objectniveau") == "subobject":
         van_object = [v for v in w.inkomend_van(bid, "compositie") if w.paginatype(v) == "bedrijfsobject"]
         if van_object:
             regels.append(f"- **Subobject van**: {_links(w, van, van_object)}.")
     if u.get("paginatype") == "bedrijfsobject":
-        mutaties = [b for b, x in w.begrippen.items() if x.get("kernobject") == bid and w.niveau(b) == "deelproces"]
+        mutaties = [b for b, x in w.begrippen.items() if x.get("kernobject") == bid and w.niveau(b) == "bedrijfsproces"]
         if mutaties:
-            regels.append(f"- **Mutaties door deelprocessen**: {_links(w, van, mutaties)}.")
+            regels.append(f"- **Mutaties door bedrijfsprocessen**: {_links(w, van, mutaties)}.")
     generiek = (d.get("afgeleid") or {}).get("gemma_generiek")
     if d.get("gemma_generiek"):
         naam = (generiek or {}).get("gemma_naam") or d["gemma_generiek"]["id"]
@@ -498,7 +518,7 @@ def begrippenlijst(w: Wiki, oid: str) -> str:
 
 
 def _proces_regel(w: Wiki, van: str, bid: str, niveau: int) -> list[str]:
-    """Een proces in de procesindeling naar taak, met kernobject, aanbod, functies en gebeurtenissen."""
+    """Een proces in de procesindeling naar kernobject, met kernobject, aanbod, functies en gebeurtenissen."""
     d = w.begrippen[bid]
     details = []
     if d.get("kernobject") and w.is_element(d["kernobject"]):
@@ -520,7 +540,7 @@ def _proces_regel(w: Wiki, van: str, bid: str, niveau: int) -> list[str]:
     regel = f"{'  ' * niveau}- {w.link(van, bid)} *({kenmerken})*" + (f": {'; '.join(details)}" if details else "")
     uit = [regel]
     for kind in sorted(w.uitgaand(bid, "aggregatie"), key=lambda k: w.naam(k).lower()):
-        if w.paginatype(kind) == "bedrijfsproces" and niveau < 6:
+        if w.paginatype(kind) == "bedrijfsproces" and w.niveau(kind) != "cluster naar soort werk" and niveau < 6:
             uit += _proces_regel(w, van, kind, niveau + 1)
     return uit
 
@@ -536,28 +556,37 @@ def overzicht(w: Wiki, oid: str) -> str:
          f"De views op de indelingen voor het onderwerp [{o['naam']}](../{w.onderwerp_dir}/{oid}.md). Per element de pagina met de details.", ""]
 
     processen = van_type("bedrijfsproces")
-    ouders = {n for b in processen for n in w.uitgaand(b, "aggregatie") if w.paginatype(n) == "bedrijfsproces"}
-    wortels = [b for b in processen if b not in ouders]
-    boom = []
+    clusters = {b for b in processen if w.niveau(b) == "cluster naar soort werk"}
+    ouders = {n for b in processen if b not in clusters for n in w.uitgaand(b, "aggregatie")
+              if w.paginatype(n) == "bedrijfsproces"}
+    wortels = [b for b in processen if b not in ouders and b not in clusters]
+    per_domein: dict[tuple[str, str], list[str]] = {}
     for b in wortels:
-        boom += _proces_regel(w, van, b, 0)
-    r += _sectie("Procesindeling naar taak", [
-        "Taak → bedrijfsproces of ketenproces per kernobject → (binnen een ketenproces: bedrijfsproces per partij →) "
-        "deelproces. Tussen haakjes het procesniveau.", "", *boom]
+        d = w.begrippen[b]
+        per_domein.setdefault((d.get("taakveld") or "—", d.get("beleidsdomein") or "—"), []).append(b)
+    boom = []
+    for (taakveld, beleidsdomein), bids in sorted(per_domein.items()):
+        bd = w.beleidsdomeinen.get(beleidsdomein)
+        tekst = f": {' '.join(w.tekst(van, a) for a in bd['beschrijving'])} Bronnen: {w.bronnen(van, bd['bronnen'])}." \
+            if bd else ""
+        boom.append(f"- **{beleidsdomein}** *(beleidsdomein, taakveld {taakveld})*{tekst}")
+        for b in bids:
+            boom += _proces_regel(w, van, b, 1)
+    r += _sectie("Procesindeling naar kernobject", [
+        "Beleidsdomein (Beleidsdomeinindeling) → levensloopproces per kernobject → bedrijfsproces. Tussen haakjes het "
+        "procesniveau.", "", *boom]
         if boom else [])
 
-    ketens = [b for b in processen if w.niveau(b) == "ketenproces"]
     keten_regels = []
-    for b in ketens:
-        delen = []
-        for n in w.uitgaand(b, "aggregatie"):
-            if w.paginatype(n) != "bedrijfsproces":
-                continue
-            onder = [x for x in w.uitgaand(n, "aggregatie") if w.paginatype(x) == "bedrijfsproces"]
-            delen.append(w.link(van, n) + (f" (deelprocessen {_links(w, van, onder)})" if onder else ""))
+    for b in van_type("bedrijfsinteractie"):
+        d = w.begrippen[b]
+        partijen = [v for v in w.inkomend_van(b, "bediening") if w.paginatype(v) == "bedrijfsproces"]
         rollen = [v for v in w.inkomend_van(b, "toewijzing") if w.paginatype(v) in ("rol", "actor", "bedrijfssamenwerking")]
-        keten_regels += [f"- {w.link(van, b)}: bedrijfsprocessen {', '.join(delen) or '—'}; betrokken {_links(w, van, rollen) or '—'}."]
-    r += _sectie("Ketens", ["Processen over meer organisaties; per partij een bedrijfsproces.", "", *keten_regels]
+        keten_regels.append(f"- {w.link(van, b)}: kernobject "
+                            f"{w.link(van, d['kernobject']) if d.get('kernobject') and w.is_element(d['kernobject']) else '—'}; "
+                            f"bediend door {_links(w, van, partijen) or '—'}; uitgevoerd door {_links(w, van, rollen) or '—'}.")
+    r += _sectie("Ketensamenwerking", ["Bedrijfsinteracties waarin de bedrijfsprocessen van de partijen samenkomen; het "
+                                       "ketenproces erboven is geen element.", "", *keten_regels]
                  if keten_regels else [])
 
     soort_werk = []
@@ -567,7 +596,7 @@ def overzicht(w: Wiki, oid: str) -> str:
             onder = [n for n in w.uitgaand(b, "aggregatie") if w.paginatype(n) == "bedrijfsproces"]
             soort_werk.append([w.link(van, b), w.niveau(b), generiek, _links(w, van, onder) or "—"])
     r += _sectie("Procesindeling naar soort werk", _tabel(
-        ["Proces", "Niveau", "Specialisatie van GEMMA-element", "Deelprocessen"], soort_werk) if soort_werk else [])
+        ["Proces", "Niveau", "Specialisatie van GEMMA-element", "Bedrijfsprocessen"], soort_werk) if soort_werk else [])
 
     gebeurtenissen = [[w.link(van, g), _links(w, van, [b for b in processen if g in w.uitgaand(b, "triggering")]) or "—",
                        _links(w, van, w.uitgaand(g, "triggering")) or "—"] for g in van_type("gebeurtenis")]
@@ -578,7 +607,7 @@ def overzicht(w: Wiki, oid: str) -> str:
     regels = []
     for b in kern:
         sub = [x for x in objecten if w.uitkomst(x).get("objectniveau") == "subobject" and b in w.inkomend_van(x, "compositie")]
-        door = [x for x in processen if w.begrippen[x].get("kernobject") == b and w.niveau(x) in ("bedrijfsproces", "ketenproces")]
+        door = [x for x in processen if w.begrippen[x].get("kernobject") == b and w.niveau(x) == "levensloopproces"]
         regels.append(f"- {w.link(van, b)}: levensloop door {_links(w, van, door) or '—'}"
                       + (f"; subobjecten {_links(w, van, sub)}" if sub else "") + ".")
     generiek = [b for b in objecten if w.uitkomst(b).get("objectniveau") == "generiek"]

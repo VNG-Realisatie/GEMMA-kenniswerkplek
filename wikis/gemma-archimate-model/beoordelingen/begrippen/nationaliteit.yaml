@@ -128,9 +128,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -205,7 +202,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-toelichting: 'Onderdeel van Ingeschreven persoon (categorie 04 van de persoonslijst), zonder eigen deelproces: geen pagina. De Nederlandse nationaliteit heeft wel eigen processen (optie, naturalisatie, afstand) en is als Nederlanderschap een eigen element, kernobject van Beheren Nederlanderschap; de andere nationaliteiten neemt de gemeente alleen op en beëindigt ze in de bijhouding van de persoonsgegevens, op grond van brondocumenten of een mededeling van de minister (HUP Nationaliteit; HUP Vreemde nationaliteit; HUP Onbekende nationaliteit). Vreemde nationaliteit, onbekende nationaliteit en staatloosheid zijn waarden van dit gegeven zonder pagina; stapels, codes en redenen blijven buiten het model.'
+toelichting: 'Onderdeel van Ingeschreven persoon (categorie 04 van de persoonslijst), zonder eigen bedrijfsproces: geen pagina. De Nederlandse nationaliteit heeft wel eigen processen (optie, naturalisatie, afstand) en is als Nederlanderschap een eigen element, kernobject van Beheren Nederlanderschap; de andere nationaliteiten neemt de gemeente alleen op en beëindigt ze in de bijhouding van de persoonsgegevens, op grond van brondocumenten of een mededeling van de minister (HUP Nationaliteit; HUP Vreemde nationaliteit; HUP Onbekende nationaliteit). Vreemde nationaliteit, onbekende nationaliteit en staatloosheid zijn waarden van dit gegeven zonder pagina; stapels, codes en redenen blijven buiten het model.'
 ggm:
   guid: EAID_69B41CDD_C3F1_449b_92B4_8F7657840646
   sterkte: exact

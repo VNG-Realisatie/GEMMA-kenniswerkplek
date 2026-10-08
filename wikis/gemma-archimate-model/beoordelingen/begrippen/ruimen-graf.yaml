@@ -158,15 +158,12 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Beheren graven.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Uitgevoerd door de gemeente.
   eigen_besluit:
     waarde: nee
     onderbouwing: De houder geeft last tot ruiming en het college kondigt die aan (art. 31 lid 2; Groningen art. 27); de bronnen noemen geen besluit van een bevoegd orgaan.
   levert_aanbod:
     waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit deelproces levert.
+    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces levert.
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -269,7 +266,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

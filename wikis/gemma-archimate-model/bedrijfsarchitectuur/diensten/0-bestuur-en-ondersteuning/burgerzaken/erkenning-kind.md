@@ -62,7 +62,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 49 zijn nee.
+Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -75,7 +75,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, de akte van erkenning: het kind heeft juridisch een tweede ouder (Utrecht). [Utrecht Kind erkennen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-kind-erkennen.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke afnemer die erom vraagt. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Kind erkennen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-kind-erkennen.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger (UPL nr. 129): de erkenner en de moeder. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Kind erkennen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-kind-erkennen.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het deelproces Opmaken akte van erkenning (BW 1 art. 203). [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Opmaken akte van erkenning (BW 1 art. 203). [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 129); geen bredere dienst in deze wiki. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties

@@ -65,7 +65,6 @@
         "bijdrage_aan_groter_proces",
         "omvat_processen",
         "omvat_levensloop",
-        "meer_organisaties",
         "eigen_besluit",
         "levert_aanbod",
         "bedient_gedrag",
@@ -205,9 +204,6 @@
         "omvat_levensloop": {
           "$ref": "#/$defs/antwoord"
         },
-        "meer_organisaties": {
-          "$ref": "#/$defs/antwoord"
-        },
         "eigen_besluit": {
           "$ref": "#/$defs/antwoord"
         },
@@ -289,7 +285,7 @@
     },
     "kernobject": {
       "type": "string",
-      "description": "Stap 7: het bedrijfsobject waarvan dit proces de levensloop omvat (bedrijfs- en ketenproces) of waarin het een mutatie doet (deelproces)"
+      "description": "Stap 7: het bedrijfsobject waarvan dit proces de levensloop omvat (levensloopproces), waarin het een mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie)"
     },
     "afnemer": {
       "enum": [

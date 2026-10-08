@@ -129,9 +129,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -230,7 +227,7 @@ homoniemen:
   naamkeuze: Deze pagina heet Stempas, het document; de dienst heet Stempas ontvangen, met de UPL-naam stempas als synoniem (precedent Briefadres aanvragen).
 specialisaties:
 - naam: Vervangende stempas
-  omschrijving: 'Nieuwe stempas op verzoek als de stempas in het ongerede is of niet is ontvangen; de oude wordt ongeldig (Kieswet art. J 7a lid 2 onder b, J 8). Geen eigen pagina: dezelfde gegevens en hetzelfde deelproces.'
+  omschrijving: 'Nieuwe stempas op verzoek als de stempas in het ongerede is of niet is ontvangen; de oude wordt ongeldig (Kieswet art. J 7a lid 2 onder b, J 8). Geen eigen pagina: dezelfde gegevens en hetzelfde bedrijfsproces.'
 - naam: Kiezerspas
   omschrijving: Verklaring op verzoek waarmee de kiezer in een stembureau naar keuze in het gebied van de verkiezing kan stemmen; ze komt in de plaats van de stempas, die ongeldig wordt, en wordt niet vervangen (Kieswet art. K 1, K 4, J 7a lid 2 onder a). Geen eigen pagina; de dienst Kiezerspas levert haar.
 relaties:

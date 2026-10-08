@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: bedrijfsproces
+procesniveau: levensloopproces
 afnemer: extern
 synoniemen:
 - Reisdocumenten (dagelijks gebruik)
@@ -43,7 +43,7 @@ De burgemeester neemt de aanvraag in ontvangst, verstrekt het reisdocument binne
 
 Het reisdocument eindigt door verval van rechtswege, bijvoorbeeld na vermissing, wijziging van de naam of overlijden, of door vervallenverklaring op verzoek van een tot signalering bevoegd orgaan; de burgemeester houdt het in en onttrekt het definitief aan het verkeer (Paspoortwet art. 44, 47, 54). Het blijft rijkseigendom; de minister laat het maken en houdt het register vermiste of vervallen reisdocumenten, het basisregister reisdocumenten en het register paspoortsignaleringen bij (art. 2, 4a, 4c, 25).
 
-De deelprocessen leveren de diensten van de UPL voor reisdocumenten (paspoort, identiteitskaart, vluchtelingen- en vreemdelingenpaspoort) en de melding van vermissing. De gemeente legt de uitgereikte Nederlandse reisdocumenten en de signalering vast in categorie 12 van de persoonslijst (HUP Reisdocument).
+De bedrijfsprocessen leveren de diensten van de UPL voor reisdocumenten (paspoort, identiteitskaart, vluchtelingen- en vreemdelingenpaspoort) en de melding van vermissing. De gemeente legt de uitgereikte Nederlandse reisdocumenten en de signalering vast in categorie 12 van de persoonslijst (HUP Reisdocument).
 
 ### Synoniemen
 
@@ -59,13 +59,13 @@ Infinitief met object in GEMMA-volgorde, zoals Beheren grafrechten: het proces o
 
 ### Typering
 
-Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: bedrijfsproces.
-- **Procesindeling naar taak, onderdeel van**: [Verzorgen burgerzaken](verzorgen-burgerzaken.md).
-- **Procesindeling naar taak, omvat**: [Behandelen aanvraag reisdocument](behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Inhouden reisdocument](inhouden-reisdocument.md), [Uitreiken reisdocument](uitreiken-reisdocument.md), [Vervallen verklaren reisdocument](vervallen-verklaren-reisdocument.md), [Verwerken vermissing reisdocument](verwerken-vermissing-reisdocument.md).
+- **Procesniveau**: levensloopproces.
+- **Procesindeling naar kernobject, omvat**: [Behandelen aanvraag reisdocument](behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Inhouden reisdocument](inhouden-reisdocument.md), [Uitreiken reisdocument](uitreiken-reisdocument.md), [Vervallen verklaren reisdocument](vervallen-verklaren-reisdocument.md), [Verwerken vermissing reisdocument](verwerken-vermissing-reisdocument.md).
+- **Beleidsdomeinindeling**: beleidsdomein Burgerzaken, taakveld 0 Bestuur en Ondersteuning (van het kernobject).
 - **Kernobject**: [Reisdocument](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md).
 - **Functie-indeling naar domein, bediend door**: [Officiële documenten verstrekking](../../../bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md).
 - **Afnemer**: extern.
@@ -73,7 +73,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 46 zijn nee.
+Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -89,7 +89,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een uitgereikt reisdocument, en aan het eind een vervallen, ingehouden of aan het verkeer onttrokken reisdocument (Paspoortwet art. 42, 47, 54). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk reisdocument dat wordt aangevraagd. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, paspoortwet hoofdstuk IV tot en met VIII; Paspoortbesluit hoofdstuk 2 tot en met 7. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van het reisdocument: aanvraag, verstrekking, uitreiking, wijziging, vermissing, inhouding, vervallenverklaring, verval en definitieve onttrekking aan het verkeer (Paspoortwet art. 1). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van het reisdocument: aanvraag, verstrekking, uitreiking, wijziging, vermissing, inhouding, vervallenverklaring, verval en definitieve onttrekking aan het verkeer (Paspoortwet art. 1). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 
 ### Relaties
@@ -113,7 +113,6 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Officiële documenten verstrekking](../../../bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md) | bedient *bediening* | Beheren reisdocumenten | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (Paspoortwet art. 40, 42) |
-| [Verzorgen burgerzaken](verzorgen-burgerzaken.md) | omvat *aggregatie* | Beheren reisdocumenten | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 26, 40, 42) |
 
 ## Herkomst
 
@@ -130,3 +129,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor reisdocumenten; de functie Officiële documenten verstrekking bedient het, en het generieke proces Behandelen aanvraag product noemt het paspoort als voorbeeld.
+
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 20](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **GEMMA Online, Proceshiërarchie:** het hoogste niveau van de hiërarchie is het klant-tot-klant- of bedrijfsproces; daarboven spreekt GEMMA van clusters van bedrijfsprocessen: 'een groepering van bedrijfsprocessen die bij elkaar horen omdat ze op hetzelfde 'thema' betrekking hebben', bijvoorbeeld personeelszaken ([2026-vng-gemma-proceshierarchie](../../../../analyses/proceshierarchie.md), regel 47, 91). Het processenlandschap van het GEMMA-model deelt de uitvoerende processen in naar soort werk (Uitvoeren, Handhaven, Nazorgen, Ontwikkelen; GEMMA type Bedrijfsproces (cluster)); alleen de ondersteunende tak heeft clusters per thema, zoals Beheren personeel, 'de bedrijfsprocessen die corresponderen met de bedrijfsfunctie Personeelsmanagement', zonder bedrijfsprocessen eronder. **GEMMA:** het model groepeert de bedrijfsprocessen per kernobject in een levensloopproces, het gedrag over de levensloop van één kernobject van begin tot eind (Beheren grafrechten, Beheren graven, Bijhouden persoonsgegevens, Beheren reisdocumenten), met GEMMA type Bedrijfsproces (cluster). Daarboven staan geen procesniveaus maar de groeperingen beleidsdomein en taakveld uit de Beleidsdomeinindeling; het beleidsdomein volgt uit het kernobject (besluit redacteur 2026-10-08). Voorstel: (1) neem het levensloopproces op als cluster per thema voor de uitvoerende processen, naast de indeling naar soort werk, die blijft; (2) zie de themaclusters van de ondersteunende tak (Beheren personeel, Beheren financiën) als groepering per beleidsdomein, met levensloopprocessen per kernobject eronder, zoals in de uitvoerende tak.

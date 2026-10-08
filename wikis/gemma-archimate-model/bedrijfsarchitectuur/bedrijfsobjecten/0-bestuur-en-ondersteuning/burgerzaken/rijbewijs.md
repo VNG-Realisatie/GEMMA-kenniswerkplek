@@ -57,13 +57,13 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 ### Plaats in de indelingen
 
 - **Objectniveau**: kernobject.
-- **Levensloop bepaald door**: [Behandelen aanvraag omwisseling buitenlands rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Behandelen aanvraag rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md), [Beheren rijbewijzen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-rijbewijzen.md), [Uitreiken rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-rijbewijs.md), [Verwerken vermissing rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md).
-- **Mutaties door deelprocessen**: [Behandelen aanvraag omwisseling buitenlands rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Behandelen aanvraag rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md), [Uitreiken rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-rijbewijs.md), [Verwerken vermissing rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md).
+- **Levensloop bepaald door**: [Beheren rijbewijzen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-rijbewijzen.md).
+- **Mutaties door bedrijfsprocessen**: [Behandelen aanvraag omwisseling buitenlands rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Behandelen aanvraag rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md), [Uitreiken rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-rijbewijs.md), [Verwerken vermissing rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -79,7 +79,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Specialisaties
 
-- **Beginnersrijbewijs**: Het eerste rijbewijs, tien jaar geldig; de eerste vijf jaar is de straf bij verkeersovertredingen zwaarder (Utrecht). Geen eigen pagina: dezelfde gegevens en hetzelfde deelproces.
+- **Beginnersrijbewijs**: Het eerste rijbewijs, tien jaar geldig; de eerste vijf jaar is de straf bij verkeersovertredingen zwaarder (Utrecht). Geen eigen pagina: dezelfde gegevens en hetzelfde bedrijfsproces.
 - **Bromfietsrijbewijs**: Voor bromfietsen (categorie AM); aanvragen gaat als een eerste rijbewijs en vraagt geen verklaring van geschiktheid (Utrecht; Reglement rijbewijzen art. 45). Geen eigen pagina.
 - **Groot rijbewijs**: Voor vrachtwagen of bus (categorieën C en D); altijd een medische keuring, ook bij verlengen (Utrecht; Reglement rijbewijzen art. 35). Geen eigen pagina.
 - **Vervangend rijbewijs**: Afgegeven in de bij algemene maatregel van bestuur aangegeven gevallen, na vermissing of bij versleten rijbewijs of omwisseling; het oude rijbewijs wordt ingeleverd, tenzij het verloren is (Wegenverkeerswet 1994 art. 120; Reglement rijbewijzen art. 105a). Geen eigen pagina: het UPL kent het niet apart.

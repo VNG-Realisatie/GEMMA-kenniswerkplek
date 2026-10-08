@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: deelproces
+procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
 - Uitreiking van het rijbewijs (wet)
@@ -53,19 +53,19 @@ Het rijbewijs wordt niet uitgereikt, maar blijft bij degene die afgeeft, als tus
 
 ### Typering
 
-Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Beheren rijbewijzen](beheren-rijbewijzen.md).
+- **Procesniveau**: bedrijfsproces.
+- **Procesindeling naar kernobject, onderdeel van**: [Beheren rijbewijzen](beheren-rijbewijzen.md).
 - **Kernobject**: [Rijbewijs](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 46 zijn nee.
+Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -81,7 +81,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, het rijbewijs in handen van de houder, of een rijbewijs dat bij degene die afgeeft blijft (Wegenverkeerswet 1994 art. 120a). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk afgegeven rijbewijs. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, wegenverkeerswet 1994 art. 111 lid 2, 115, 119 lid 2, 120 lid 2 en 120a (identificatie bij uitreiking, inneming, inlevering van het eerdere rijbewijs, geen uitreiking bij nieuwe omstandigheden). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren rijbewijzen: het rijbewijs komt in gebruik. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
+| **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren rijbewijzen: het rijbewijs komt in gebruik. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 
 ### Relaties

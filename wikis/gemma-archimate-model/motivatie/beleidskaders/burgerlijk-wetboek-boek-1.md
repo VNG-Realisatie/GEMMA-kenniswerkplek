@@ -44,7 +44,7 @@ Andere organen beslissen per geval: de rechtbank over voornamen, adoptie, echtsc
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De items van de burgerlijke stand zijn diensten (UPL nr. 5, 23, 28, 61, 118, 122, 129, 136 tot en met 138, 156 tot en met 159, 184, 185, 258, 315, 316, 414, 460), elk gerealiseerd door een deelproces van Bijhouden burgerlijke stand; het boek is grondslag van die diensten en van het proces zelf.
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De items van de burgerlijke stand zijn diensten (UPL nr. 5, 23, 28, 61, 118, 122, 129, 136 tot en met 138, 156 tot en met 159, 184, 185, 258, 315, 316, 414, 460), elk gerealiseerd door een bedrijfsproces onder Bijhouden burgerlijke stand; het boek is grondslag van die diensten en van het proces zelf.
 
 ### Synoniemen
 
@@ -66,7 +66,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

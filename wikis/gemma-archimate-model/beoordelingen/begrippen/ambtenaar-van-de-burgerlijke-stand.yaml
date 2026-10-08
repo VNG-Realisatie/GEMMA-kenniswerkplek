@@ -70,7 +70,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan de functie Lijkbezorging: geeft het verlof tot begraving of crematie af (art. 11, 12). In de burgerlijke stand toegewezen aan Bijhouden burgerlijke stand en zijn deelprocessen (BW 1 art. 16a).'
+    onderbouwing: 'Toegewezen aan de functie Lijkbezorging: geeft het verlof tot begraving of crematie af (art. 11, 12). In de burgerlijke stand toegewezen aan Bijhouden burgerlijke stand en zijn bedrijfsprocessen (BW 1 art. 16a).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rvo-aangifte-en-akte-van-overlijden
@@ -136,9 +136,6 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  meer_organisaties:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   eigen_besluit:

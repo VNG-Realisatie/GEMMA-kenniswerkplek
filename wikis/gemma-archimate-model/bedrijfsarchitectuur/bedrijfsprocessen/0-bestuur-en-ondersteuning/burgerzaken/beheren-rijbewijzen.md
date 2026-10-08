@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: bedrijfsproces
+procesniveau: levensloopproces
 afnemer: extern
 synoniemen:
 - Rijbewijzen (dagelijks gebruik)
@@ -42,7 +42,7 @@ De burgemeester neemt de aanvraag in ontvangst en geeft het rijbewijs af, voor w
 
 In de bij algemene maatregel van bestuur bepaalde gevallen geeft de RDW het rijbewijs af, onder meer bij omwisseling van een rijbewijs dat buiten Nederland is afgegeven; de burgemeester geleidt de aanvraag dan terstond door (Reglement rijbewijzen art. 28, 29, 105 lid 2). De RDW produceert de rijbewijzen en beheert het rijbewijzenregister; het CBR registreert de verklaring van geschiktheid die bij vernieuwing in bepaalde gevallen is vereist (Reglement rijbewijzen art. 35, 97, 119; Wegenverkeerswet 1994 art. 126). Beide zijn zelfstandige bestuursorganen (art. 4a, 4z) en geen eigen element.
 
-Het proces omvat de levensloop van het rijbewijs: aanvraag, afgifte, uitreiking, vervanging en vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 119, 120, 123). De deelprocessen leveren de diensten van de UPL voor het rijbewijs (rijbewijs, rijbewijs verlengen en rijbewijs buitenlands omwisseling) en het doorgeven van vermissing. De gemeente toetst bij de aanvraag of een vereiste verklaring van geschiktheid bij het CBR is geregistreerd, als onderdeel van Behandelen aanvraag rijbewijs; de gezondheidsverklaring (UPL nr. 362) is geen eigen dienst (Reglement rijbewijzen art. 35, 45; Utrecht).
+Het proces omvat de levensloop van het rijbewijs: aanvraag, afgifte, uitreiking, vervanging en vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 119, 120, 123). De bedrijfsprocessen leveren de diensten van de UPL voor het rijbewijs (rijbewijs, rijbewijs verlengen en rijbewijs buitenlands omwisseling) en het doorgeven van vermissing. De gemeente toetst bij de aanvraag of een vereiste verklaring van geschiktheid bij het CBR is geregistreerd, als onderdeel van Behandelen aanvraag rijbewijs; de gezondheidsverklaring (UPL nr. 362) is geen eigen dienst (Reglement rijbewijzen art. 35, 45; Utrecht).
 
 ### Synoniemen
 
@@ -58,13 +58,13 @@ Infinitief met object in GEMMA-volgorde, zoals Beheren reisdocumenten: het proce
 
 ### Typering
 
-Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: bedrijfsproces.
-- **Procesindeling naar taak, onderdeel van**: [Verzorgen burgerzaken](verzorgen-burgerzaken.md).
-- **Procesindeling naar taak, omvat**: [Behandelen aanvraag omwisseling buitenlands rijbewijs](behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Behandelen aanvraag rijbewijs](behandelen-aanvraag-rijbewijs.md), [Uitreiken rijbewijs](uitreiken-rijbewijs.md), [Verwerken vermissing rijbewijs](verwerken-vermissing-rijbewijs.md).
+- **Procesniveau**: levensloopproces.
+- **Procesindeling naar kernobject, omvat**: [Behandelen aanvraag omwisseling buitenlands rijbewijs](behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Behandelen aanvraag rijbewijs](behandelen-aanvraag-rijbewijs.md), [Uitreiken rijbewijs](uitreiken-rijbewijs.md), [Verwerken vermissing rijbewijs](verwerken-vermissing-rijbewijs.md).
+- **Beleidsdomeinindeling**: beleidsdomein Burgerzaken, taakveld 0 Bestuur en Ondersteuning (van het kernobject).
 - **Kernobject**: [Rijbewijs](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md).
 - **Functie-indeling naar domein, bediend door**: [Officiële documenten verstrekking](../../../bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md).
 - **Afnemer**: extern.
@@ -72,7 +72,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 46 zijn nee.
+Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -88,7 +88,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een afgegeven en uitgereikt rijbewijs, of een geregistreerde vermissing (Wegenverkeerswet 1994 art. 116, 120a, 123 lid 1 onder h). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk rijbewijs dat wordt aangevraagd. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, wegenverkeerswet 1994 art. 111 tot en met 123 (voorwaarden, aanvraag, afgifte, nieuw en vervangend rijbewijs, verlies van geldigheid); Reglement rijbewijzen hoofdstuk II en V. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van het rijbewijs voor zover de gemeente handelt: aanvraag, afgifte, uitreiking, vervanging bij vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 113 tot en met 123). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van het rijbewijs voor zover de gemeente handelt: aanvraag, afgifte, uitreiking, vervanging bij vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 113 tot en met 123). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 
 ### Relaties
@@ -110,7 +110,6 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Officiële documenten verstrekking](../../../bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md) | bedient *bediening* | Beheren rijbewijzen | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (Wegenverkeerswet 1994 art. 116, 120a) |
-| [Verzorgen burgerzaken](verzorgen-burgerzaken.md) | omvat *aggregatie* | Beheren rijbewijzen | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 113, 116, 123) |
 | [Wegenverkeerswet 1994](../../../../motivatie/beleidskaders/wegenverkeerswet-1994.md) | is grondslag voor *associatie (gericht)* | Beheren rijbewijzen | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 113, 116, 123) |
 
 ## Herkomst

@@ -145,9 +145,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: ja
     onderbouwing: De beschikking tot vervallenverklaring van de burgemeester (Paspoortwet art. 1 onder i, 44, 46).
@@ -246,7 +243,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

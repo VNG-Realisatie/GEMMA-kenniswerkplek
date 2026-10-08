@@ -159,9 +159,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: ja
     onderbouwing: Het college beslist op het verzoek; weigeren is een Awb-besluit (Wet BRP art. 2.60; HUP Geboorte).
@@ -233,7 +230,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het beslissen op het verzoek van een ouder om de gegevens van een levenloos geboren kind in de basisregistratie personen op te nemen.
 beschrijving:
-- 'Een levenloos geboren kind wordt alleen op verzoek van een ouder in de BRP opgenomen; een kind dat kort heeft geleefd wordt automatisch ingeschreven (HUP Geboorte; Utrecht). Het weigeren van de opname is een besluit in de zin van de Awb (Wet BRP art. 2.60; HUP Geboorte). Afbakening als deelproces: besluit redacteur 2026-10-06.'
+- 'Een levenloos geboren kind wordt alleen op verzoek van een ouder in de BRP opgenomen; een kind dat kort heeft geleefd wordt automatisch ingeschreven (HUP Geboorte; Utrecht). Het weigeren van de opname is een besluit in de zin van de Awb (Wet BRP art. 2.60; HUP Geboorte). Afbakening als bedrijfsproces: besluit redacteur 2026-10-06.'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -270,7 +267,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

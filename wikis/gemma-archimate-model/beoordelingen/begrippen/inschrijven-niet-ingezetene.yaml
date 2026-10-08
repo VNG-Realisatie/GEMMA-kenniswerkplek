@@ -154,9 +154,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De gemeente voert het uit; andere partijen leveren alleen gegevens of vragen erom.
   eigen_besluit:
     waarde: nee
     onderbouwing: De bronnen noemen geen besluit van de gemeente; de minister is verantwoordelijk voor de RNI (HUP Achtergronden).
@@ -264,7 +261,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

@@ -39,7 +39,7 @@ De Wegenverkeerswet 1994 (BWBR0006622) regelt het verkeer op de weg. Voor Burger
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-Grondslag van Beheren rijbewijzen, de deelprocessen en de diensten van het rijbewijs, naast het Reglement rijbewijzen, dat de aanvraag en afgifte uitwerkt. De UPL noemt alleen het Reglement als grondslag (nr. 360 tot en met 363); zie de procesarchitectuur-terugmelding.
+Grondslag van Beheren rijbewijzen, de bedrijfsprocessen en de diensten van het rijbewijs, naast het Reglement rijbewijzen, dat de aanvraag en afgifte uitwerkt. De UPL noemt alleen het Reglement als grondslag (nr. 360 tot en met 363); zie de procesarchitectuur-terugmelding.
 
 ## Plaats in het model
 
@@ -54,7 +54,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: deelproces
+procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
 - Ruiming (beleid)
@@ -51,12 +51,12 @@ Een graf wordt geruimd op last van de houder van de begraafplaats, na ten minste
 
 ### Typering
 
-Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Beheren graven](beheren-graven.md), [Uitbaten begraafplaatsen en crematoria](uitbaten-begraafplaatsen-en-crematoria.md).
+- **Procesniveau**: bedrijfsproces.
+- **Procesindeling naar kernobject, onderdeel van**: [Beheren graven](beheren-graven.md), [Uitbaten begraafplaatsen en crematoria](uitbaten-begraafplaatsen-en-crematoria.md).
 - **Kernobject**: [Graf](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md).
 - **Gestart door gebeurtenis**: [Verval van het grafrecht](../../../gebeurtenissen/verval-van-het-grafrecht.md).
 - **Afnemer**: extern.
@@ -64,7 +64,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 46 zijn nee.
+Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -80,7 +80,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een geruimd graf; resten herbegraven, as verstrooid (art. 31 lid 3; Groningen art. 27 lid 3). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, regelmatig, voor veel graven. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 31 (tien jaar grafrust, toestemming rechthebbende, melding graf van een onbekende); Groningen art. 27 (aankondiging een jaar vooraf). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren graven: het einde van de levensloop van het graf (art. 31; Groningen art. 27). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren graven: het einde van de levensloop van het graf (art. 31; Groningen art. 27). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties

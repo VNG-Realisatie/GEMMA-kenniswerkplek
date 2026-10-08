@@ -38,7 +38,7 @@ De Wet op de Nederlandse identiteitskaart (BWBR0052951, sinds 2026-10-01) regelt
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de dienst Identiteitskaart (UPL nr. 186, waar de UPL nog art. 16a Paspoortwet noemt; procesarchitectuur-terugmelding 9) en van de deelprocessen voor de identiteitskaart.
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de dienst Identiteitskaart (UPL nr. 186, waar de UPL nog art. 16a Paspoortwet noemt; procesarchitectuur-terugmelding 9) en van de bedrijfsprocessen voor de identiteitskaart.
 
 ## Plaats in het model
 
@@ -53,7 +53,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

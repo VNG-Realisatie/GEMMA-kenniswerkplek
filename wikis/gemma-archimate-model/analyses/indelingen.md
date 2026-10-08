@@ -6,6 +6,7 @@ bijgewerkt: '2026-10-08'
 bronnen:
 - 2026-vng-over-gemma
 - 2026-vng-gemma-2026-10-02
+- 2026-vng-gemma-proceshierarchie
 ---
 
 # Indelingen van de bedrijfsarchitectuur
@@ -24,19 +25,22 @@ Hoe het model wordt ingedeeld in de hele breedte van de bedrijfsarchitectuur: we
 
 ### Procesniveaus
 
-Herzien op 2026-10-08: de niveaus volgen de GEMMA-ladder (levensloopproces → bedrijfsproces → deelproces), de taak vervalt en ketens worden bedrijfsinteracties; zie [Proceshiërarchie](proceshierarchie.md). De tekst hieronder wordt bij de uitwerking bijgewerkt (`todo.md`).
+De niveaus volgen sinds 2026-10-08 de ladder van GEMMA Online, Proceshiërarchie (PH); de afweging staat in [Proceshiërarchie](proceshierarchie.md). Tot dan lagen de niveaus van de wiki één trede hoger: een taak boven de processen per kernobject, en wat nu bedrijfsproces heet, heette deelproces.
 
-- **Taak**: een procescluster voor een gemeentelijke taak als geheel (*Verzorgen lijkbezorging*). Een procescluster wordt niet per geval doorlopen (regel 409, 419-420); in ArchiMate een business-process.
-- **Bedrijfsproces**: per kernobject het gedrag over de levensloop van één exemplaar, onder verantwoordelijkheid van één organisatie (*Beheren grafrechten*: van uitgifte tot verval). Dit volgt de GEMMA-definitie (regel 573).
-- **Ketenproces**: hetzelfde, maar uitgevoerd door meer organisaties (regel 564), zoals *Bezorgen stoffelijk overschot*. Het ketenproces omvat de levensloop over de partijen heen en aggregeert alleen bedrijfsprocessen, nooit rechtstreeks deelprocessen (regel 590, 605). Een bedrijfsproces binnen een ketenproces omvat het deel van die levensloop dat één partij uitvoert, met het kernobject van het ketenproces; de partij kan ook de gemeente in een eigen hoedanigheid zijn (*Toestaan lijkbezorging* door de gemeente als overheid, *Begraven en cremeren stoffelijk overschot* door de houder van de begraafplaats of het crematorium). Een bedrijfsproces met een eigen kernobject kan ook deel zijn van een ketenproces (*Verzorgen gemeentebegrafenis*). Dit is een lezing van de definities: GEMMA noemt geen levensloop (besluit redacteur 2026-10-07).
-- **Deelproces (werkproces)**: één mutatie, besluit, product of dienst binnen het proces van een kernobject (*Verlenen grafrecht*), in principe binnen één organisatorische eenheid (regel 571). Deelprocessen leveren de producten en diensten.
-- **Cluster naar soort werk**: de deelprocessen van één soort binnen een taak, als specialisatie van een generiek GEMMA-bedrijfsproces. Alleen bij minstens twee deelprocessen; anders specialiseert het deelproces zelf.
+- **Levensloopproces**: per kernobject het gedrag over de levensloop van één exemplaar, van begin tot eind (*Beheren grafrechten*: van uitgifte tot verval). In GEMMA een cluster van bedrijfsprocessen over één thema (PH 91), met GEMMA type *Bedrijfsproces (cluster)*; in ArchiMate een business-process. Per kernobject één; het taakveld en beleidsdomein zijn die van het kernobject. Binnen een ketensamenwerking mag een kernobject één levensloopproces per partij hebben, als die samen de bedrijfsinteractie met dat kernobject bedienen (besluit 2026-10-08).
+- **Bedrijfsproces**: klant-tot-klant, onder verantwoordelijkheid van één organisatie, en het levert een product, dienst of besluit (PH 47, 81): één mutatie in de levensloop van een kernobject (*Verlenen grafrecht*). Vaak een specialisatie van een generiek GEMMA-bedrijfsproces (*Behandelen aanvraag product*); een specialisatie is geen niveau (PH 95). Bedrijfsprocessen leveren de producten en diensten.
+- **Deelproces**: in de betekenis van GEMMA een deel van een bedrijfsproces binnen één bedrijfsfunctie, dat een deeldienst levert (PH 83). Meestal geen pagina; de tekst gaat naar het bedrijfsproces.
+- **Cluster naar soort werk**: de bedrijfsprocessen van één soort, als specialisatie van een generiek GEMMA-bedrijfsproces. Alleen bij minstens twee bedrijfsprocessen; anders specialiseert het bedrijfsproces zelf.
 - **Processtap**, **handeling**: geen pagina (regel 560, 563).
+
+Geen procesniveau zijn:
+- **Taak**: vervalt. Boven het levensloopproces staan de groeperingen beleidsdomein en taakveld uit de Beleidsdomeinindeling; het beleidsdomein volgt uit het kernobject, want een bedrijfsobject heeft één beleidsdomein.
+- **Ketenproces**: waar de bedrijfsprocessen van meer partijen samenkomen, is dat een **ketensamenwerking**: een bedrijfsinteractie, bediend door de bedrijfsprocessen van de partijen en uitgevoerd door een bedrijfssamenwerking of hun rollen (PH 146; GEMMA-element *Ketensamenwerking*). Het ketenproces erboven is impliciet: het hoeft niet afgesproken te zijn of te bestaan, en staat alleen in de beschrijving van de interactie. Een keten kan ook orkestratie zijn: één partij is verantwoordelijk en de andere voeren onder haar aansturing een deel uit (IK 27-34); de gemeente levert dan een dienst aan derden.
 
 ### Objectniveaus
 
-- **Kernobject**: het bedrijfsobject waarvan één bedrijfsproces of ketenproces de hele levensloop omvat; de bedrijfsprocessen binnen dat ketenproces delen het.
-- **Subobject**: een deel van een kernobject, met een eigen proces.
+- **Kernobject**: het bedrijfsobject waarvan één levensloopproces de hele levensloop omvat.
+- **Subobject**: een deel van een kernobject, met een eigen bedrijfsproces.
 - **Generiek object**: dezelfde betekenis in veel onderwerpen. Blijft voorlopig element in het onderwerp en verhuist later naar een algemeen onderwerp. Domeinspecialisaties krijgen geen pagina en worden in relaties genoemd met **`via`** (Vergunning via *vergunning tot opgraving*).
 - Een onderdeel zonder eigen proces, en invoer die een andere partij maakt, krijgen geen pagina.
 
@@ -66,20 +70,20 @@ Stand van het GEMMA-model van 2026-10-02.
 
 | Indeling | Van | Deelt in | Niveaus | Relatie in Archi |
 |---|---|---|---|---|
-| Procesindeling naar soort werk | GEMMA, per taak uitgebreid | deelprocessen; via generieke GEMMA-elementen ook gebeurtenissen, diensten en rollen | generiek GEMMA-proces → cluster naar soort werk → deelproces | specialisatie naar het GEMMA-element (exacte match); aggregatie |
-| Procesindeling naar taak | nieuw | bedrijfs-, keten- en deelprocessen, gebeurtenissen | taak → bedrijfs- of ketenproces per kernobject → deelproces | aggregatie; map `wiki-gemma-model / Procesindeling naar taak` |
+| Procesindeling naar soort werk | GEMMA, uitgebreid | bedrijfsprocessen; via generieke GEMMA-elementen ook gebeurtenissen, diensten en rollen | generiek GEMMA-proces → cluster naar soort werk → bedrijfsproces | specialisatie naar het GEMMA-element (exacte match); aggregatie |
+| Procesindeling naar kernobject | nieuw | levensloopprocessen, bedrijfsprocessen, gebeurtenissen, bedrijfsinteracties | levensloopproces per kernobject → bedrijfsproces; een bedrijfsinteractie bij haar kernobject | aggregatie; map `wiki-gemma-model / Procesindeling naar kernobject`, een bedrijfsinteractie in `wiki-gemma-model / Ketensamenwerking` |
 | Functie-indeling naar domein | GEMMA | functies, producten, diensten | domein → functie → dienst; domein → product | aggregatie; functie bedient proces |
-| Beleidsdomeinindeling | GEMMA | objecten, afspraken, producten, diensten, beleidskaders, taken | taakveld → beleidsdomein → element | aggregatie vanuit de groepering |
+| Beleidsdomeinindeling | GEMMA | objecten, afspraken, producten, diensten, beleidskaders, levensloopprocessen, bedrijfsinteracties | taakveld → beleidsdomein → element | aggregatie vanuit de groepering |
 | Doelgroepindeling | GEMMA, uitgebreid | rollen, actoren, samenwerkingen, kanalen | gemeente (bestuursorgaan, ambtelijk), inwoners en ondernemers, ketenpartners → element | aggregatie vanuit de doelgroeprol |
 
-Een deelproces heeft twee ouders: het proces van zijn kernobject en zijn cluster naar soort werk. Een ketenproces aggregeert geen deelprocessen, ook niet uit een andere taak; dat is een fout.
+Een bedrijfsproces heeft hoogstens twee ouders: het levensloopproces van zijn kernobject en zijn cluster naar soort werk. De procesindeling naar kernobject is strikt hiërarchisch: een levensloopproces aggregeert geen levensloopproces, en een bedrijfsproces hangt onder één levensloopproces; anders is het een fout.
 
 #### Hergebruik
 
 Een product- en dienstindeling, beleidskaderindeling en kanaalindeling zijn geen eigen indelingen:
 - producten en diensten vallen in de Beleidsdomeinindeling en de Functie-indeling (twee ouders; de UPL draagt beide als kolom);
 - beleidskaders vallen in de Beleidsdomeinindeling, met de regelgever als eigenschap;
-- een taak valt in de Beleidsdomeinindeling, omdat er in de Procesindeling naar taak niets boven haar staat;
+- een levensloopproces en een bedrijfsinteractie vallen in de Beleidsdomeinindeling, onder het beleidsdomein van hun kernobject, omdat er in de Procesindeling naar kernobject niets boven hen staat;
 - kanalen vallen in de Doelgroepindeling, met fysiek of digitaal als eigenschap.
 
 Verder:
@@ -88,27 +92,23 @@ Verder:
 
 #### Taak en beleidsdomein
 
-De taak is geen hergebruik van het beleidsdomein:
-- GEMMA kent geen beleidsdomein *Begraafplaatsen en crematoria*; onder taakveld 7 staat alleen *Afval*, en *Gemeentebegrafenissen* valt onder 6;
-- de UPL zet het verlof tot begraven onder 0.2 (Burgerzaken), de rest onder 7.5.
-
-De taak blijft dus een eigen niveau, met een hoofdbeleidsdomein als eigenschap.
+Tot 2026-10-08 was de taak een eigen niveau, met een hoofdbeleidsdomein als eigenschap, omdat GEMMA geen beleidsdomein *Begraafplaatsen en crematoria* kent en de UPL het verlof tot begraven onder 0.2 zet. In de praktijk viel elke taak samen met het beleidsdomein van haar kernobjecten (*Verzorgen burgerzaken* met Burgerzaken, *Verzorgen lijkbezorging* met Begraafplaatsen en crematoria). De taak vervalt daarom (besluit 2026-10-08): een beleidsdomein dat GEMMA niet kent, wordt een gemeentelijk beleidsdomein met een terugmelding, en een product dat de UPL onder een ander taakveld zet, heeft al een procesarchitectuur-terugmelding. Zie [Proceshiërarchie](proceshierarchie.md).
 
 #### Views
 
 | Indeling | Views |
 |---|---|
-| Procesindeling naar soort werk | Deelprocessen per cluster en generiek GEMMA-proces |
-| Procesindeling naar taak | Per taak: processen per kernobject, deelprocessen met producten en diensten, gebeurtenissen; per ketenproces de bedrijfsprocessen per partij, met hun deelprocessen |
+| Procesindeling naar soort werk | Bedrijfsprocessen per cluster en generiek GEMMA-proces |
+| Procesindeling naar kernobject | Per beleidsdomein: levensloopprocessen per kernobject, bedrijfsprocessen met producten en diensten, gebeurtenissen; per ketensamenwerking de bedrijfsprocessen die haar bedienen |
 | Functie-indeling naar domein | Functies die processen bedienen; Producten en diensten per functie |
 | Beleidsdomeinindeling | Bedrijfsobjecten (kern- en subobjecten), Producten en diensten, Beleidskaders per beleidsdomein |
 | Doelgroepindeling | Actoren en rollen per doelgroep; Kanalen per doelgroep |
 
 ## Processtructuur
 
-### Eén bedrijfsproces per kernobject
+### Eén levensloopproces per kernobject
 
-Een gemeente levert 500 externe en 215 interne producten en diensten (UPL-lijsten); GEMMA dekt ze met zo'n 50 generieke bedrijfsprocessen. Eén bedrijfsproces per product maakt het model plat. Eén per kernobject zit daartussen: herkenbaar per taak, en het aantal groeit met het aantal kernobjecten, niet met het aantal producten. Deelprocessen leveren de producten. Het cluster naar soort werk houdt de aansluiting op het processenlandschap. GEMMA kent ook processen die een levensloop omvatten (*Onderhouden*, *Heffen en innen*).
+Een gemeente levert 500 externe en 215 interne producten en diensten (UPL-lijsten); GEMMA dekt ze met zo'n 50 generieke bedrijfsprocessen. Eén bedrijfsproces per product of dienst volgt de definitie van GEMMA (klant-tot-klant, PH 81), maar zonder groepering wordt het model plat. Eén levensloopproces per kernobject groepeert ze: herkenbaar per beleidsdomein, en het aantal groeit met het aantal kernobjecten, niet met het aantal producten. Het cluster naar soort werk houdt de aansluiting op het processenlandschap. GEMMA kent ook processen die een levensloop omvatten (*Onderhouden*, *Heffen en innen*).
 
 ### Toets aan het Kennismodel procesarchitectuur
 
@@ -117,16 +117,16 @@ Het kennismodel (regel 544-606) is work in progress.
 | Kennismodel (regel) | Wiki | Oordeel |
 |---|---|---|
 | Actor → toewijzing → Rol (602) | actor alleen via een rol | volgt |
-| Rol → toewijzing → Deelproces (599) | rol aan deelproces; aan bedrijfsproces mag | volgt |
+| Rol → toewijzing → Deelproces (599) | rol aan bedrijfsproces (het deelproces heeft meestal geen pagina) | volgt |
 | Product → bediening → Klant (596) | *afnemer* noemt een specialisatie van Klant; het product bedient die rol | volgt (toegevoegd) |
 | Product → associatie → Beleidskader (595) | *is grondslag voor* bij voorkeur van een product, tijdelijk van proces of dienst | volgt, met overgang |
 | Product → aggregatie → Dienst (593) | *omvat diensten en afspraken* | volgt |
 | Bedrijfsfunctie ↔ bediening ↔ Bedrijfsproces (597, 604) | *bedient gedrag* | volgt |
-| Bedrijfsproces → aggregatie → Deelproces → Processtap → Handeling (605, 601, 589) | procesniveaus | volgt |
+| Bedrijfsproces → aggregatie → Deelproces → Processtap → Handeling (605, 601, 589) | procesniveaus; deelproces, processtap en handeling meestal zonder pagina | volgt |
 | Bedrijfsproces → toegang → Bedrijfsobject (606) | kernobject via toegang | volgt |
-| Procescluster → aggregatie → Bedrijfsproces, Procescluster (419-420) | taak en cluster naar soort werk | volgt |
-| Deelproces → realisatie → Deelservice (398) | een deelproces levert een dienst | afwijking, signaal |
-| Ketenproces → aggregatie → Bedrijfsproces (590) | een ketenproces aggregeert deelprocessen, ook uit andere taken | afwijking, signaal |
+| Procescluster → aggregatie → Bedrijfsproces, Procescluster (419-420) | levensloopproces en cluster naar soort werk | volgt |
+| Deelproces → realisatie → Deelservice (398) | een bedrijfsproces levert een dienst | volgt (tot 2026-10-08 een afwijking: het deelproces van de wiki leverde een dienst) |
+| Ketenproces → aggregatie → Bedrijfsproces (590) | ketensamenwerking als bedrijfsinteractie, bediend door de bedrijfsprocessen (PH 146) | afwijking van het kennismodel, in lijn met de pagina Proceshiërarchie; terugmelding |
 | Relaties tussen actoren: niet in het kennismodel | alleen structurele relaties | aanvulling |
 | Gebeurtenis: niet in deze view | uit het uitgebreide kennismodel (regel 915, 924) | aanvulling |
 
@@ -136,24 +136,23 @@ De afwijkingen en aanvullingen gaan als voorstel naar het GEMMA-team (todo).
 
 ### Per elementtype
 
-Een **vet** woord is nieuw of gewijzigd ten opzichte van de beslistabel van 2026-10-01.
+Een **vet** woord is nieuw of gewijzigd ten opzichte van de beslistabel van 2026-10-01. Bijgewerkt naar de procesniveaus van 2026-10-08: de taak en het kenmerk *meer organisaties* vervallen, de bedrijfsinteractie krijgt een pagina.
 
 | Type | Bepaald door | Kernrelatie | Drempel | Eigen pagina | Indeling |
 |---|---|---|---|---|---|
 | Bedrijfsobject, afspraak | geen aard; *afspraak* | *wordt bewerkt* | *onderscheidbare exemplaren*, *levenscyclus* | **objectniveau**; *zelfstandige specialisatie* | Beleidsdomein |
 | Product | *aanbod als geheel* | *omvat diensten en afspraken* | *afnemer* (**klantrol, met bediening**), *benoembaar resultaat* | **zelfstandig aanbod** | Beleidsdomein en Functie |
-| Dienst | *aangeboden gedrag* | *gerealiseerd door* (**deel-, bedrijfs- of ketenproces, of functie**) | *afnemer*, *benoembaar resultaat* | **generiek** → specialisatie | Beleidsdomein en Functie |
-| Taak | **groepeert processen** | **omvat processen** (minstens 2 per kernobject) | *toegewezen partij* | — | Naar taak |
-| Cluster naar soort werk | **groepeert processen** | **omvat processen** (minstens 2 deelprocessen) en specialisatie naar GEMMA | — | anders specialiseert het deelproces | Naar soort werk |
-| Bedrijfsproces, ketenproces | *per keer doorlopen* en **omvat levensloop**; keten: **meer organisaties** | *toegewezen partij* | *aanleiding*, *benoembaar resultaat* | **procesniveau** | Naar taak |
-| Deelproces | *per keer doorlopen* en *bijdrage aan groter proces* | *toegewezen partij* | pagina bij *eigen besluit*, *eigen normering* of **levert aanbod** | **procesniveau** | Naar taak en naar soort werk |
+| Dienst | *aangeboden gedrag* | *gerealiseerd door* (**bedrijfsproces of functie**) | *afnemer*, *benoembaar resultaat* | **generiek** → specialisatie | Beleidsdomein en Functie |
+| Cluster naar soort werk | **groepeert processen** | **omvat processen** (minstens 2 bedrijfsprocessen) en specialisatie naar GEMMA | — | anders specialiseert het bedrijfsproces | Naar soort werk |
+| Levensloopproces | *per keer doorlopen* en **omvat levensloop** | *toegewezen partij* | *aanleiding*, *benoembaar resultaat* | **procesniveau** | Naar kernobject en Beleidsdomein |
+| Bedrijfsproces | *per keer doorlopen* en *bijdrage aan groter proces* | *toegewezen partij* | pagina bij *eigen besluit*, *eigen normering* of **levert aanbod** | **procesniveau** | Naar kernobject en naar soort werk |
 | Bedrijfsfunctie | *gegroepeerd gedrag* | **bedient gedrag** | *toegewezen partij*, *gebruikt objecten*, *stabiel over tijd* | **in functie-indeling** | Functie |
-| Gebeurtenis | *toestandsverandering* | *leidt tot gedrag* | *komt herhaald voor* | **generiek** → specialisatie | Naar taak |
+| Gebeurtenis | *toestandsverandering* | *leidt tot gedrag* | *komt herhaald voor* | **generiek** → specialisatie | Naar kernobject |
 | Actor, bedrijfssamenwerking | partij of verband | *vervult een rol*, *voert gedrag uit* | — | **soort partij** | Doelgroep |
 | Rol | *hoedanigheid* | *voert gedrag uit* | — | *zelfstandige specialisatie*; **generiek** → specialisatie | Doelgroep |
 | Kanaal | *toegangspunt* | *ontsluit een dienst* | — | centrale set | Doelgroep |
 | Beleidskader | *regeling als geheel*, *landelijk* | *is grondslag voor* (**bij voorkeur van een product**) | *in werking* | regeling als geheel | Beleidsdomein |
-| Interaction | *gezamenlijk gedrag* | — | — | herkend, voorleggen | als deelproces |
+| Bedrijfsinteractie | *gezamenlijk gedrag* | *toegewezen partij* | *aanleiding*, *benoembaar resultaat* | pagina met kernobject; voorleggen | Naar kernobject en Beleidsdomein |
 | Representatie, locatie | — | — | — | geen pagina | — |
 
 Gaten die hiermee dicht gaan:
@@ -168,10 +167,10 @@ Gaten die hiermee dicht gaan:
 
 | Groep | Kenmerk | Vraag |
 |---|---|---|
-| Soort gedrag | *groepeert processen* | Is het een groepering van processen rond één taak of één soort werk, die niet per geval wordt doorlopen? |
+| Soort gedrag | *groepeert processen* | Is het een groepering van bedrijfsprocessen van één soort werk, die niet per geval wordt doorlopen? (tot 2026-10-08 ook rond één taak) |
 | Gedrag | *omvat processen* | Omvat het minstens twee processen? Noem ze. |
 | Gedrag | *omvat levensloop* | Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject? Noem het object. |
-| Gedrag | *meer organisaties* | Voeren twee of meer organisaties het samen uit, elk vanuit een eigen rol, niet als klant of alleen als adviseur? Noem ze. |
+| Gedrag | *meer organisaties* (vervallen op 2026-10-08) | Voeren twee of meer organisaties het samen uit, elk vanuit een eigen rol, niet als klant of alleen als adviseur? Noem ze. |
 | Gedrag | *eigen besluit* | Eindigt het in een besluit van een bevoegd orgaan of mandataris? Noem orgaan en artikel. |
 | Gedrag | *levert aanbod* | Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). |
 | Gedrag | *bedient gedrag* | Ondersteunt de functie aanwijsbaar een proces? Noem het. |
@@ -183,9 +182,9 @@ Gaten die hiermee dicht gaan:
 | Passief | *zelfstandig aanbod* | Wordt het onder eigen naam aangeboden, en niet als variant of tarief? |
 | Specialisatie | *generiek* | Komt het met dezelfde betekenis in veel onderwerpen voor? |
 
-Hergebruikt worden: *per keer doorlopen*, *aanleiding*, *afnemer*, *benoembaar resultaat*, *eigen normering*, *bijdrage aan groter proces* (nu: één mutatie binnen het proces van een kernobject), *zelfstandige specialisatie* en *leidt tot gedrag*.
+Hergebruikt worden: *per keer doorlopen*, *aanleiding*, *afnemer*, *benoembaar resultaat*, *eigen normering*, *bijdrage aan groter proces* (nu: één mutatie binnen het levensloopproces van een kernobject), *zelfstandige specialisatie*, *leidt tot gedrag* en *gezamenlijk gedrag* (nu ook: de ketensamenwerking).
 
-**Indelingsvelden**, verplicht per type: `taakveld` en `beleidsdomein` (bestaan), `domein` (functie, product, dienst), `doelgroep` (actor, rol, samenwerking, kanaal), `regelgever` (beleidskader), `kernobject` (bedrijfs- en ketenproces), `afnemer` (processen, product, dienst).
+**Indelingsvelden**, verplicht per type: `taakveld` en `beleidsdomein` (bestaan), `domein` (functie, product, dienst), `doelgroep` (actor, rol, samenwerking, kanaal), `regelgever` (beleidskader), `kernobject` (levensloopproces, bedrijfsproces, bedrijfsinteractie), `afnemer` (levensloopproces, bedrijfsproces, product, dienst).
 
 ### Stap 7: indeling
 
@@ -193,17 +192,17 @@ Een nieuwe stap na stap 6, met de context van alle uitkomsten.
 
 #### Proces
 
-- Taak bij *groepeert processen* zonder specialisatie naar GEMMA; minstens twee processen per kernobject, anders voorleggen.
-- Cluster naar soort werk bij *groepeert processen* met een specialisatie naar GEMMA; minstens twee deelprocessen.
-- Ketenproces bij *omvat levensloop* en *meer organisaties*; bedrijfsproces bij *omvat levensloop* zonder *meer organisaties*.
-- Deelproces bij *bijdrage aan groter proces* met *eigen besluit*, *eigen normering* of *levert aanbod*. Wie een product of dienst levert, is nooit een processtap.
-- Anders processtap: geen pagina; de tekst gaat naar het deelproces.
+- Cluster naar soort werk bij *groepeert processen* met een specialisatie naar GEMMA; minstens twee bedrijfsprocessen. Zonder specialisatie voorleggen: een taak is geen procesniveau.
+- Levensloopproces bij *omvat levensloop*.
+- Bedrijfsproces bij *bijdrage aan groter proces* met *eigen besluit*, *eigen normering* of *levert aanbod*. Wie een product of dienst levert, is nooit een deelproces of processtap.
+- Anders deelproces of processtap: geen pagina; de tekst gaat naar het bedrijfsproces.
+- Bedrijfsinteractie bij *gezamenlijk gedrag*, met een kernobject; altijd voorleggen (estafette of orkestratie).
 
 #### Object
 
 - *generiek* → generiek.
-- `kernobject` van een proces → kernobject (per kernobject precies één proces, plus de bedrijfsprocessen binnen het ketenproces met dat kernobject).
-- *deel van object* met een eigen deelproces → subobject; zonder → onderdeel, geen pagina.
+- `kernobject` van een levensloopproces → kernobject (per kernobject precies één levensloopproces).
+- *deel van object* met een eigen bedrijfsproces → subobject; zonder → onderdeel, geen pagina.
 - *invoer van een ander* → geen pagina; vermeld bij het proces.
 - Anders voorleggen.
 
@@ -211,7 +210,8 @@ Bij gebeurtenis, rol en dienst geeft *generiek* een specialisatie van een GEMMA-
 
 #### Controles
 
-- Elk element staat in zijn verplichte indeling. Meer ouders geeft een signaal, behalve de twee ouders van een deelproces.
+- Elk element staat in zijn verplichte indeling. Meer ouders geeft een signaal, behalve de twee ouders van een bedrijfsproces (levensloopproces en cluster naar soort werk).
+- Strikt hiërarchisch (fout): per kernobject één levensloopproces, of één per partij als ze samen een bedrijfsinteractie met dat kernobject bedienen; een levensloopproces aggregeert geen levensloopproces; een bedrijfsproces hangt onder hoogstens één levensloopproces; het taakveld en beleidsdomein van een levensloopproces en een bedrijfsinteractie zijn die van hun kernobject.
 - Een functie onder domeinniveau wordt geaggregeerd door één bovenliggende GEMMA-functie in hetzelfde domein, volgens de GEMMA-functieketen; een functie op domeinniveau hangt via `domein` aan de domeingroepering. Een dienst wordt geaggregeerd door één functie in hetzelfde domein. Een product hangt via `domein` direct aan de domeingroepering: ArchiMate laat een functie geen product aggregeren (besluit 2026-10-05).
 - In GEMMA aggregeert een domein de beleidsdomeinen. Het domein van een product of dienst moet passen bij de GEMMA-domeinen van zijn beleidsdomein (soms meer dan één, zoals bij Erfgoed). Een beleidsdomein dat GEMMA niet kent, geeft een signaal als zijn producten en diensten in meer domeinen vallen (besluit 2026-10-05). Het model mag afwijken van de UPL-indeling, mits de afwijking is teruggemeld in de [procesarchitectuur-terugmeldingen](procesarchitectuur-terugmeldingen.md); de terugmelding dekt het signaal.
 - Specialisatie en bediening naar GEMMA lopen alleen via een exacte match.
@@ -220,8 +220,8 @@ Bij gebeurtenis, rol en dienst geeft *generiek* een specialisatie van een GEMMA-
 - Signalen bij:
   - een actorrelatie met een werkwoord van gedrag;
   - een beleidskader zonder product;
-  - een deelproces dat een dienst levert;
-  - een ketenproces met deelprocessen uit een andere taak.
+  - een bedrijfsproces onder geen levensloopproces;
+  - een bedrijfsinteractie die geen bedrijfsproces bedient.
 
 ## Lijkbezorging
 
@@ -231,60 +231,72 @@ De externe UPL-lijst over lijkbezorging, met het proces dat elk product levert:
 
 | UPL-product (Iv3, grondslag) | Levert | Stap 7 |
 |---|---|---|
-| grafuitgifte (7.5, model-beheersverordening art. 11) | Verlenen grafrecht | deelproces van *Beheren grafrechten* |
+| grafuitgifte (7.5, model-beheersverordening art. 11) | Verlenen grafrecht | bedrijfsproces onder *Beheren grafrechten* |
 | grafrechten (7.5, Gemeentewet art. 229) | generiek *Heffen en innen* | geen domeinproces |
-| grafonderhoud (7.5) | Onderhouden graf | deelproces van *Beheren graven* |
-| gedenkteken plaatsingsvergunning (7.5, art. 19) | nog geen proces | gat: deelproces van *Beheren graven*; Grafbedekking wordt subobject |
-| herbegraven of alsnog cremeren (7.5, Wlb art. 29) | Opgraven lijk | deelproces van *Bezorgen lijken* |
-| verlof tot begraven (0.2, Wlb art. 11) | Verlenen verlof tot begraving of crematie | deelproces van *Bezorgen lijken* |
+| grafonderhoud (7.5) | Onderhouden graf | bedrijfsproces onder *Beheren graven* |
+| gedenkteken plaatsingsvergunning (7.5, art. 19) | nog geen proces | gat: bedrijfsproces onder *Beheren graven*; Grafbedekking wordt subobject |
+| herbegraven of alsnog cremeren (7.5, Wlb art. 29) | Opgraven lijk | bedrijfsproces onder *Bezorgen lijken* |
+| verlof tot begraven (0.2, Wlb art. 11) | Verlenen verlof tot begraving of crematie | bedrijfsproces onder *Bezorgen lijken* |
 | asverstrooiing (7.5, model-APV art. 5:36) | nog geen proces | gat: de APV is geen bron |
 | bijzondere begraafplaats toestemming (7.5, Wlb art. 40-41) | nog geen proces | gat: proces rond Begraafplaats |
-| ontleding stoffelijk overschot toestemming (Wlb art. 67) | nog geen proces | gat: deelproces van *Bezorgen lijken* |
+| ontleding stoffelijk overschot toestemming (Wlb art. 67) | nog geen proces | gat: bedrijfsproces onder *Bezorgen lijken* |
 | vervoersdocumenten stoffelijk overschot (7.5, Besluit op de lijkbezorging art. 11) | nog geen proces | gat: het besluit is geen bron |
 | begraafplaats-, bijzettingen-, crematoriumregister (7.5, Wlb art. 27, 65, 50) | representatie bij Graf | dienst (raadplegen) |
 | overlijdensaangifte, overlijdensakte (0.2, BW 1 art. 19h, 19f) | onderwerp Burgerzaken | ook in *Bezorgen lijken* |
 
 Uitkomst:
-- Elk product komt uit bij een deelproces of bij het generieke proces; geen product wordt een eigen bedrijfsproces.
-- De ijking vindt vier ontbrekende deelprocessen, plus asverstrooiing. De UPL-grondslagen wijzen de bronnen aan (todo).
-- Begraafplaats is mogelijk een kernobject met een proces *Beheren begraafplaatsen*.
+- Elk product komt uit bij een bedrijfsproces (in 2026-10-04: deelproces) of bij het generieke proces; geen product wordt een eigen levensloopproces.
+- De ijking vond vier ontbrekende processen, plus asverstrooiing. De UPL-grondslagen wijzen de bronnen aan.
+- Begraafplaats is mogelijk een kernobject met een levensloopproces *Beheren begraafplaatsen*.
 
 ### Inschatting
 
-Ter toetsing in de herbeoordeling. Elk verlies van een pagina en elke nieuwe GEMMA-koppeling wordt apart voorgelegd.
+De inschatting van 2026-10-04, ter toetsing in de herbeoordeling, in de niveaus van 2026-10-08 (levensloopproces → bedrijfsproces; de taak is het beleidsdomein en het ketenproces een ketensamenwerking). Elk verlies van een pagina en elke nieuwe GEMMA-koppeling wordt apart voorgelegd. De procesindeling hieronder is de uitkomst; de tabel naar soort werk en de overige elementen zijn de inschatting.
 
-#### Procesindeling naar taak
+#### Procesindeling naar kernobject
+
+De uitkomst van de herbeoordeling van 2026-10-08 (besluiten redacteur), met de huidige namen; de afbeelding volgt het overzicht van het onderwerp.
 
 ```
-Verzorgen lijkbezorging                         taak
-├─ Bezorgen lijken                              ketenproces, kernobject Lijk
-│   ├─ Schouwen lijk                            deelproces
-│   ├─ Verlenen verlof tot begraving of crematie deelproces → verlof tot begraven
-│   ├─ Uitvoeren lijkbezorging                  deelproces
-│   ├─ Opgraven lijk                            deelproces → herbegraven of alsnog cremeren
-│   ├─ Verzorgen gemeentebegrafenis             deelproces
-│   └─ Treffen maatregel bij besmet lijk        deelproces
-├─ Beheren grafrechten                          bedrijfsproces, kernobject Grafrecht
-│   ├─ Verlenen grafrecht                       deelproces → grafuitgifte
-│   └─ Vervallen verklaren grafrecht            deelproces
-└─ Beheren graven                               bedrijfsproces, kernobject Graf
-    ├─ Ruimen graf                              deelproces
-    └─ Onderhouden graf                         deelproces → grafonderhoud
+Begraafplaatsen en crematoria                       beleidsdomein (taakveld 7)
+├─ Toestaan lijkbezorging                           levensloopproces, kernobject Stoffelijk overschot (gemeente als overheid)
+│   ├─ Schouwen stoffelijk overschot                bedrijfsproces
+│   ├─ Verlenen verlof tot begraving of crematie    bedrijfsproces → verlof tot begraven
+│   ├─ Opgraven stoffelijk overschot                bedrijfsproces → herbegraven of alsnog cremeren
+│   ├─ Treffen maatregel bij besmet stoffelijk overschot  bedrijfsproces
+│   └─ … (andere termijn, laissez-passer, ontleding, asverstrooiing)
+├─ Begraven en cremeren stoffelijk overschot        levensloopproces, kernobject Stoffelijk overschot (houder)
+│   ├─ Uitvoeren lijkbezorging                      bedrijfsproces
+│   └─ Bijzetten of verstrooien van de as           bedrijfsproces
+├─ Verzorgen gemeentebegrafenis                     levensloopproces, kernobject Gemeentebegrafenis
+├─ Beheren grafrechten                              levensloopproces, kernobject Grafrecht
+│   ├─ Verlenen grafrecht                           bedrijfsproces → grafuitgifte
+│   └─ Vervallen verklaren grafrecht                bedrijfsproces
+├─ Beheren graven                                   levensloopproces, kernobject Graf
+│   ├─ Ruimen graf                                  bedrijfsproces
+│   ├─ Onderhouden graf                             bedrijfsproces → grafonderhoud
+│   └─ Verlenen vergunning grafbedekking            bedrijfsproces → gedenkteken plaatsingsvergunning
+├─ Beheren begraafplaatsen                          levensloopproces, kernobject Begraafplaats
+└─ Beheren crematoria                               levensloopproces, kernobject Crematorium
+
+Bezorgen stoffelijk overschot   bedrijfsinteractie (estafette), kernobject Stoffelijk overschot,
+                                bediend door Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en
+                                Verzorgen gemeentebegrafenis; uitgevoerd door onder meer de Ketenpartner (officier van justitie)
 ```
 
 #### Procesindeling naar soort werk
 
-| Cluster naar soort werk | Generiek GEMMA-proces | Deelprocessen |
+| Cluster naar soort werk | Generiek GEMMA-proces | Bedrijfsprocessen |
 |---|---|---|
 | Behandelen vergunningaanvragen lijkbezorging | Behandelen aanvraag vergunning of ontheffing | Verlenen verlof, Opgraven lijk |
 | Behandelen meldingen lijkbezorging | Behandelen melding | Treffen maatregel bij besmet lijk, Verzorgen gemeentebegrafenis |
 | Uitbaten begraafplaatsen en crematoria | Uitbaten gemeentelijke voorzieningen | Uitvoeren lijkbezorging, Ruimen graf |
-| — (deelproces specialiseert zelf) | Behandelen aanvraag product; Onderhouden; Opleggen sanctie; nog te bepalen | Verlenen grafrecht; Onderhouden graf; Vervallen verklaren grafrecht; Schouwen lijk |
+| — (bedrijfsproces specialiseert zelf) | Behandelen aanvraag product; Onderhouden; Opleggen sanctie; nog te bepalen | Verlenen grafrecht; Onderhouden graf; Vervallen verklaren grafrecht; Schouwen lijk |
 
 #### Overige elementen
 
 - **Functies**: *Exploiteren van begraafplaatsen*, *Burgerlijke stand diensten* en waar nodig *Handhaving*, met exacte match.
-- **Gebeurtenissen**: Overlijden (start *Bezorgen lijken*), Verval van het grafrecht (start Ruimen graf), Besmet lijk gemeld.
+- **Gebeurtenissen**: Overlijden (start *Bezorgen lijken*), Verval van het grafrecht (start Ruimen graf), Besmet lijk gemeld. Een gebeurtenis hangt onder het levensloopproces van het object waarvan de toestand verandert, en triggert de bedrijfsprocessen die ze start.
 - **Objecten**:
   - kernobject: Lijk, Graf, Grafrecht (of een specialisatie: voorleggen), mogelijk Begraafplaats;
   - subobject of onderdeel: Grafbedekking, Plaats van bijzetting, Urn;
@@ -323,3 +335,6 @@ Besluiten over de werkwijze en de criteria. Besluiten over afzonderlijke begripp
 | 2026-10-05 | Het model mag afwijken van de UPL-indeling (taakveld, GEMMA-domein, beleidsdomein in een GEMMA-domein), mits teruggemeld in de procesarchitectuur-terugmeldingen (`beoordelingen/procesarchitectuur-terugmeldingen.yaml`). |
 | 2026-10-07 | *Soort partij* betekent: elke gemeente heeft met de partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt. Het criterium sluit uit wat bij één of enkele gemeenten hoort (gemeente Utrecht, provincie Utrecht), niet een partij die landelijk maar één keer bestaat. Rijk, Provincie en Waterschap zijn een soort partij (de bestuurslaag als geheel); een afzonderlijk ministerie of rijksdienst (minister van BZK, IND) staat in de beschrijving van Rijk. Verduidelijkt het besluit van 2026-10-04 ("nooit een individuele organisatie"). |
 | 2026-10-08 | De procesniveaus volgen de GEMMA-ladder: levensloopproces (per kernobject, GEMMA type *Bedrijfsproces (cluster)*) → bedrijfsproces (klant-tot-klant, levert product of dienst) → deelproces (binnen één bedrijfsfunctie). De taak vervalt: boven het levensloopproces staan beleidsdomein en taakveld uit de Beleidsdomeinindeling, afgeleid uit het kernobject. Ketensamenwerking is een bedrijfsinteractie, geen procesniveau. De procesindeling naar soort werk blijft. Herziet de besluiten van 2026-10-04 over de processtructuur en over de taak in de Beleidsdomeinindeling. Zie [Proceshiërarchie](proceshierarchie.md). |
+| 2026-10-08 | De *Procesindeling naar taak* heet *Procesindeling naar kernobject*: zij deelt de processen in naar hun kernobject. Het niveau heet *levensloopproces*. Afgewezen: *Procesindeling naar levensloop* (zegt minder concreet waarnaar wordt ingedeeld) en *Procesindeling naar beleidsdomein* (het beleidsdomein hoort bij de Beleidsdomeinindeling). Herziet de naam uit het besluit van 2026-10-04. |
+| 2026-10-08 | Een bedrijfsinteractie krijgt een eigen paginatype (*bedrijfsinteractie*), met een kernobject: het object dat door de keten gaat. Ze staat in de Procesindeling naar kernobject bij dat object en, via het beleidsdomein van het kernobject, in de Beleidsdomeinindeling; in Archi in de map *Ketensamenwerking*, zoals in GEMMA. Kernrelatie *toegewezen partij*; elke nieuwe interactie wordt voorgelegd (estafette of orkestratie). Het kenmerk *meer organisaties* vervalt; een keten volgt uit *gezamenlijk gedrag*. Herziet het besluit van 2026-09-30 (Business Interaction herkend). Afgewezen: een paginatype zonder indeling (wijkt af van "geen wezen", 2026-10-04) en herkend laten (de keten zou geen element in Archi zijn). |
+| 2026-10-08 | Per kernobject één levensloopproces, of één per partij als ze samen een bedrijfsinteractie met dat kernobject bedienen (Toestaan lijkbezorging en Begraven en cremeren stoffelijk overschot in de ketensamenwerking Bezorgen stoffelijk overschot). Een estafette wordt een bedrijfsinteractie; bij orkestratie is er geen interactie, en het deel dat de gemeente voor een ander uitvoert, specialiseert *Leveren dienst aan derden* (VOG, naturalisatie). Een beleidsdomein krijgt zijn beschrijving in het register `beoordelingen/beleidsdomeinen.yaml`. Zie [Besluiten van de redacteur](besluiten-redacteur.md). |

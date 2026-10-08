@@ -1,6 +1,6 @@
 """Bepaal het ArchiMate-elementtype van een begrip uit zijn kenmerken.
 
-Eén bron van waarheid voor de criteria van deze wiki (criteria van 2026-10-04):
+Eén bron van waarheid voor de criteria van deze wiki (criteria van 2026-10-04, procesniveaus van 2026-10-08):
 - KENMERKEN: de neutrale eigenschappen die het model per begrip één keer beantwoordt (ja/nee), met de vraag die
   bepaalt of het kenmerk van toepassing is, en bij welke aard een ja mag (consistentie);
 - TYPEN: per elementtype het kenmerk dat het type bepaalt, de kernrelatie (moet ja), de overige drempelcriteria
@@ -37,7 +37,7 @@ WIKI_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = WIKI_ROOT / "schemas" / "beoordeling.schema.json"
 SKILL_PATH = WIKI_ROOT / ".agents" / "skills" / "gemma-archimate-model-criteria" / "SKILL.md"
 DOC_PATH = WIKI_ROOT / "analyses" / "beslistabel.md"
-CRITERIA_VERSIE = "2026-10-04"
+CRITERIA_VERSIE = "2026-10-08"
 
 GEEN_AARD = ""  # in `bij`: ja mag ook als het begrip geen aard heeft (een ding)
 
@@ -166,10 +166,12 @@ KENMERKEN: list[Kenmerk] = [
             "aanvraag omgevingsvergunning behandelen", "vergunningverlening", "GEMMA (definitie Bedrijfsproces)",
             GEDRAG_BIJ),
     Kenmerk("groepeert_processen", "groepeert processen", "Soort gedrag",
-            "Is het een groepering van processen rond één taak of één soort werk, die niet per geval wordt doorlopen?",
-            "Verzorgen lijkbezorging (taak); Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk)",
-            "Beheren grafrechten (loopt per grafrecht van begin tot eind door)",
-            "GEMMA (definitie Procescluster, regel 409 en 419-420)", GEDRAG_BIJ),
+            "Is het een groepering van bedrijfsprocessen van één soort werk, die niet per geval wordt doorlopen?",
+            "Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk)",
+            "Beheren grafrechten (loopt per grafrecht van begin tot eind door); Verzorgen lijkbezorging (een "
+            "groepering naar taak is het beleidsdomein, geen proces)",
+            "GEMMA (definitie Procescluster, regel 409 en 419-420; processenlandschap naar soort werk); besluit "
+            "redacteur 2026-10-08 (de taak vervalt)", GEDRAG_BIJ),
     Kenmerk("gegroepeerd_gedrag", "gegroepeerd gedrag", "Soort gedrag",
             "Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of "
             "competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'?",
@@ -185,9 +187,12 @@ KENMERKEN: list[Kenmerk] = [
             "behoefte van de afnemer en los van hoe zij wordt uitgevoerd?",
             "melding openbare ruimte doen", "melding afhandelen", "NORA (definitie Dienst)", GEDRAG_BIJ),
     Kenmerk("gezamenlijk_gedrag", "gezamenlijk gedrag", "Soort gedrag",
-            "Kan het alleen door twee of meer partijen samen worden uitgevoerd?",
-            "keukentafelgesprek; hoorzitting", "beschikking opstellen", "ArchiMate (Business Interaction)",
-            GEDRAG_BIJ),
+            "Kan het alleen door twee of meer partijen samen worden uitgevoerd, zoals een ketensamenwerking waarin de "
+            "bedrijfsprocessen van de partijen samenkomen?",
+            "Bezorgen stoffelijk overschot (ketensamenwerking van gemeente, arts en uitvaartondernemer); "
+            "keukentafelgesprek", "beschikking opstellen; Treffen maatregel bij besmet lijk (de GGD adviseert alleen)",
+            "ArchiMate (Business Interaction); GEMMA Online, Proceshiërarchie (ketensamenwerking als "
+            "bedrijfsinteractie); besluit redacteur 2026-10-08", GEDRAG_BIJ),
     # Gedrag (drempel)
     Kenmerk("toegewezen_partij", "toegewezen partij", "Gedrag",
             "Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? Noem de rol.",
@@ -235,28 +240,25 @@ KENMERKEN: list[Kenmerk] = [
             "Overlijden → Uitvoeren lijkbezorging", "voorval zonder gemeentelijk gevolg",
             "GEMMA (gebeurtenis triggert proces)", GEDRAG_BIJ),
     Kenmerk("bijdrage_aan_groter_proces", "bijdrage aan groter proces", "Gedrag",
-            "Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat "
-            "het eindresultaat levert? Noem dat proces.",
-            "toetsen indieningsvereisten (in behandelen aanvraag)", "behandelen aanvraag (levert het besluit zelf)",
-            "GEMMA (definitie Deelproces)", GEDRAG_BIJ),
+            "Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een "
+            "bedrijfsproces dat het eindresultaat levert? Noem dat proces.",
+            "Verlenen grafrecht (in Beheren grafrechten); toetsen indieningsvereisten (in behandelen aanvraag)",
+            "Beheren grafrechten (omvat zelf de hele levensloop)",
+            "GEMMA Online, Proceshiërarchie (bedrijfsproces en deelproces); besluit redacteur 2026-10-08", GEDRAG_BIJ),
     Kenmerk("omvat_processen", "omvat processen", "Gedrag",
-            "Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort "
-            "werk: de deelprocessen)? Noem ze.",
-            "Verzorgen lijkbezorging (Bezorgen lijken, Beheren grafrechten, Beheren graven)", "een proces met één stap",
+            "Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? Noem ze.",
+            "Behandelen vergunningaanvragen lijkbezorging (Verlenen verlof tot begraving of crematie, Opgraven "
+            "stoffelijk overschot)", "een proces met één stap",
             "GEMMA (procescluster aggregeert bedrijfsprocessen, regel 419-420)", GEDRAG_BIJ),
     Kenmerk("omvat_levensloop", "omvat levensloop", "Gedrag",
             "Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot "
-            "einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? Noem het object.",
+            "einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? Noem het "
+            "object.",
             "Beheren grafrechten (Grafrecht: van uitgifte tot verval); Toestaan lijkbezorging (het deel van de gemeente "
             "als overheid in de levensloop van het stoffelijk overschot)",
             "Verlenen grafrecht (één mutatie in die levensloop)",
-            "GEMMA (definitie Bedrijfsproces; procesbouwstenen); lezing redacteur 2026-10-07", GEDRAG_BIJ),
-    Kenmerk("meer_organisaties", "meer organisaties", "Gedrag",
-            "Voeren twee of meer organisaties het samen uit, elk vanuit een eigen rol en niet als klant of alleen als "
-            "adviseur? Noem ze.",
-            "Bezorgen lijken (gemeente, arts, officier van justitie, uitvaartondernemer)",
-            "Treffen maatregel bij besmet lijk (de GGD adviseert alleen)", "GEMMA (definitie Ketenproces, regel 564)",
-            GEDRAG_BIJ),
+            "GEMMA Online, Proceshiërarchie (cluster van bedrijfsprocessen over één thema, PH 91); besluit redacteur "
+            "2026-10-08 (levensloopproces; één per partij binnen een ketensamenwerking)", GEDRAG_BIJ),
     Kenmerk("eigen_besluit", "eigen besluit", "Gedrag",
             "Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel.",
             "Verlenen grafrecht (college, Wlb art. 28)", "Onderhouden graf (feitelijk handelen)",
@@ -391,13 +393,13 @@ TYPEN: list[Typedef] = [
             "geen aard (een ding); *afspraak* en *waarneembare vorm* nee", {"afspraak": "nee", "waarneembare_vorm": "nee"},
             "wordt_bewerkt", ("onderscheidbare_exemplaren", "levenscyclus"),
             {"geautomatiseerd_verwerkt": "annotatie data-object",
-             "deel_van_object": "ja: subobject bij een eigen deelproces, anders onderdeel zonder pagina",
+             "deel_van_object": "ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina",
              "invoer_van_een_ander": "ja: onderdeel, geen pagina"}, "Graf; Aanvraag; Vergunning", "Obj"),
     Typedef("bedrijfsobject", "contract", "Afspraak", "pagina", "*afspraak*",
             {"afspraak": "ja", "waarneembare_vorm": "nee"}, "wordt_bewerkt",
             ("onderscheidbare_exemplaren", "levenscyclus"),
             {"geautomatiseerd_verwerkt": "annotatie data-object",
-             "deel_van_object": "ja: subobject bij een eigen deelproces, anders onderdeel zonder pagina",
+             "deel_van_object": "ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina",
              "invoer_van_een_ander": "ja: onderdeel, geen pagina"}, "Uitvoeringsovereenkomst; Grafrecht", "Afspr"),
     Typedef("product", "product", "Product", "pagina", "*aanbod als geheel*", {"aanbod_als_geheel": "ja"},
             "omvat_diensten_en_afspraken", ("afnemer", "benoembaar_resultaat"), {},
@@ -408,17 +410,18 @@ TYPEN: list[Typedef] = [
     Typedef("bedrijfsproces", "business-process", "Bedrijfsproces", "pagina", "*gedrag* en *per keer doorlopen*",
             {"gedrag": "ja", "per_keer_doorlopen": "ja"}, "toegewezen_partij",
             (),
-            {"omvat_levensloop": "ja: procesniveau bedrijfsproces, of ketenproces bij *meer organisaties*",
-             "bijdrage_aan_groter_proces": "ja: procesniveau deelproces, bij *eigen besluit*, *eigen normering* of "
-                                           "*levert aanbod*; anders processtap zonder pagina",
-             "levert_aanbod": "levert een product of dienst: nooit een processtap",
-             "meer_organisaties": "ja: ketenproces", "eigen_besluit": "telt voor het deelproces",
-             "eigen_normering": "telt voor het deelproces", "gebruikt_objecten": "annotatie",
+            {"omvat_levensloop": "ja: procesniveau levensloopproces",
+             "bijdrage_aan_groter_proces": "ja: procesniveau bedrijfsproces, bij *eigen besluit*, *eigen normering* of "
+                                           "*levert aanbod*; anders deelproces of processtap zonder pagina",
+             "levert_aanbod": "levert een product of dienst: nooit een deelproces of processtap",
+             "eigen_besluit": "telt voor het bedrijfsproces",
+             "eigen_normering": "telt voor het bedrijfsproces", "gebruikt_objecten": "annotatie",
              "komt_herhaald_voor": "annotatie", "leidt_tot_gebeurtenis": "triggering naar een gebeurtenis"},
-            "Beheren grafrechten; Verlenen grafrecht (deelproces)", "Proc", eis=("aanleiding", "benoembaar_resultaat")),
+            "Beheren grafrechten (levensloopproces); Verlenen grafrecht (bedrijfsproces)", "Proc",
+            eis=("aanleiding", "benoembaar_resultaat")),
     Typedef("bedrijfsproces", "business-process", "Procescluster", "pagina",
             "*gedrag* en *groepeert processen*", {"gedrag": "ja", "groepeert_processen": "ja"}, "omvat_processen", (),
-            {}, "Verzorgen lijkbezorging (taak); Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk)",
+            {}, "Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk)",
             "Clus", keuze="groepeert_processen"),
     Typedef("bedrijfsfunctie", "business-function", "Bedrijfsfunctie", "pagina", "*gedrag* en *gegroepeerd gedrag*",
             {"gedrag": "ja", "gegroepeerd_gedrag": "ja"}, "bedient_gedrag",
@@ -444,8 +447,10 @@ TYPEN: list[Typedef] = [
     Typedef("beleidskader", "driver", "Beleidskader", "pagina", "*regeling als geheel* en *landelijk*",
             {"regeling_als_geheel": "ja", "landelijk": "ja"}, "is_grondslag_voor", ("in_werking",), {},
             "Wet op de lijkbezorging; Archiefwet; AVG", "Bkad"),
-    Typedef(None, "business-interaction", "Interaction", "herkend", "*gedrag* en *gezamenlijk gedrag*",
-            {"gedrag": "ja", "gezamenlijk_gedrag": "ja"}, None, (), {}, "keukentafelgesprek (voorleggen)", "Inter"),
+    Typedef("bedrijfsinteractie", "business-interaction", "Bedrijfsinteractie", "pagina",
+            "*gedrag* en *gezamenlijk gedrag*", {"gedrag": "ja", "gezamenlijk_gedrag": "ja"}, "toegewezen_partij",
+            ("aanleiding", "benoembaar_resultaat"), {"gebruikt_objecten": "annotatie"},
+            "Bezorgen stoffelijk overschot (ketensamenwerking; voorleggen)", "Inter"),
     Typedef(None, "representation", "Representatie", "geen pagina", "*waarneembare vorm*",
             {"waarneembare_vorm": "ja"}, None, (), {}, "register van begraven lijken (vermelden bij Graf)", "Repr"),
     Typedef(None, "location", "Locatie", "geen pagina", "*plaats*", {"plaats": "ja"}, None, (), {},
@@ -473,8 +478,8 @@ EXTRA_VELDEN = {
     "genoemd_begrip": "Het begrip waarvan dit een eigenschap, onderdeel, bredere specialisatie of waarneembare vorm is",
     "archimate_buiten_model": "Het ArchiMate-type buiten dit model (Goal, Outcome, Principle, Requirement, Constraint, "
                               "Value, Capability, Grouping …)",
-    "kernobject": "Stap 7: het bedrijfsobject waarvan dit proces de levensloop omvat (bedrijfs- en ketenproces) of "
-                  "waarin het een mutatie doet (deelproces)",
+    "kernobject": "Stap 7: het bedrijfsobject waarvan dit proces de levensloop omvat (levensloopproces), waarin het "
+                  "een mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie)",
 }
 # Indelingsvelden: de plaats van een element in de indelingen (naast taakveld en beleidsdomein, die de map bepalen).
 AFNEMERS = ("extern", "intern")
@@ -499,9 +504,12 @@ INDELING_PER_TYPE = {  # paginatype → de indelingen waarin het type valt
     "bedrijfsobject": "Beleidsdomeinindeling",
     "product": "Beleidsdomeinindeling en Functie-indeling naar domein",
     "dienst": "Beleidsdomeinindeling en Functie-indeling naar domein",
-    "bedrijfsproces": "Procesindeling naar taak en naar soort werk",
+    "bedrijfsproces": "Procesindeling naar kernobject en naar soort werk; een levensloopproces ook in de "
+                      "Beleidsdomeinindeling, onder het beleidsdomein van zijn kernobject",
+    "bedrijfsinteractie": "Procesindeling naar kernobject, bij haar kernobject, en Beleidsdomeinindeling, onder het "
+                          "beleidsdomein van haar kernobject",
     "bedrijfsfunctie": "Functie-indeling naar domein",
-    "gebeurtenis": "Procesindeling naar taak",
+    "gebeurtenis": "Procesindeling naar kernobject",
     "actor": "Doelgroepindeling",
     "rol": "Doelgroepindeling",
     "bedrijfssamenwerking": "Doelgroepindeling",
@@ -513,7 +521,7 @@ INDELING_PER_TYPE = {  # paginatype → de indelingen waarin het type valt
 def verplichte_velden(uitkomst: dict) -> tuple:
     """De indelingsvelden die bij deze uitkomst verplicht zijn; bij een proces hangt dat af van het procesniveau."""
     if uitkomst.get("paginatype") == "bedrijfsproces":
-        return ("afnemer",) if uitkomst.get("procesniveau") in ("bedrijfsproces", "ketenproces", "deelproces") else ()
+        return ("afnemer",) if uitkomst.get("procesniveau") in ("levensloopproces", "bedrijfsproces") else ()
     return VERPLICHT.get(uitkomst.get("paginatype"), ())
 
 
@@ -691,7 +699,7 @@ REGELS: list[Regel] = [
     Regel("4 Type", "*regeling als geheel*", "*landelijk*: ja Beleidskader, nee bron (geen element)",
           lambda k, e: _aard(k) == {"regeling_als_geheel"}, _regeling),
     Regel("4 Type", "*gedrag* en precies één soort gedrag",
-          "Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis of Dienst; *gezamenlijk gedrag*: Interaction, voorleggen",
+          "Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Dienst of Bedrijfsinteractie",
           lambda k, e: _aard(k) == {"gedrag"} and len(_soorten(k)) == 1, _gedrag),
     Regel("4 Type", "*gedrag*, maar geen of meer dan één soort gedrag", "conflict: voorleggen",
           lambda k, e: _aard(k) == {"gedrag"},
@@ -722,22 +730,30 @@ SPECIALISATIE = [
 ]
 EERSTE_INDELINGSREGEL = EERSTE_SPECIALISATIEREGEL + 3
 INDELING = [
-    ("7 Indeling", "procescluster (*groepeert processen*)", "procesniveau taak, of cluster naar soort werk als `gemma_generiek` is ingevuld"),
-    ("7 Indeling", "*omvat levensloop*", "procesniveau ketenproces bij *meer organisaties*, anders bedrijfsproces; `kernobject` "
-                                          "verplicht. Een ketenproces aggregeert van de processen alleen bedrijfsprocessen, "
-                                          "nooit rechtstreeks deelprocessen"),
+    ("7 Indeling", "procescluster (*groepeert processen*)", "procesniveau cluster naar soort werk; `gemma_generiek` "
+                                                             "verplicht, anders voorleggen: een taak is geen procesniveau, "
+                                                             "de groepering naar taak is het beleidsdomein"),
+    ("7 Indeling", "*omvat levensloop*", "procesniveau levensloopproces; `kernobject` verplicht. Per kernobject één "
+                                          "levensloopproces, met het beleidsdomein van het kernobject; meer alleen als "
+                                          "ze samen een bedrijfsinteractie met dat kernobject bedienen, elk het deel "
+                                          "van één partij"),
     ("7 Indeling", "*bijdrage aan groter proces* met *eigen besluit*, *eigen normering* of *levert aanbod*",
-     "procesniveau deelproces; `kernobject` verplicht"),
-    ("7 Indeling", "*bijdrage aan groter proces* zonder die drie", "processtap: onderdeel, geen pagina; de tekst naar het deelproces"),
+     "procesniveau bedrijfsproces (klant-tot-klant); `kernobject` verplicht; geaggregeerd door één levensloopproces"),
+    ("7 Indeling", "*bijdrage aan groter proces* zonder die drie", "deelproces of processtap: onderdeel, geen pagina; de "
+                                                                   "tekst naar het bedrijfsproces"),
     ("7 Indeling", "geen levensloop en geen bijdrage aan een groter proces", "voorleggen: procesniveau niet te bepalen"),
     ("7 Indeling", "bedrijfsobject met *generiek*", "objectniveau generiek (verhuist later naar een algemeen onderwerp)"),
     ("7 Indeling", "bedrijfsobject met *invoer van een ander*", "onderdeel: geen pagina; vermelden bij het genoemde proces"),
     ("7 Indeling", "gebeurtenis, rol of dienst met *generiek*", "specialisatie van een generiek GEMMA-element (exacte match)"),
-    ("7 Indeling", "bedrijfsobject dat `kernobject` is van een bedrijfs- of ketenproces", "objectniveau kernobject; per kernobject één bedrijfs- of ketenproces, plus de bedrijfsprocessen die dat "
-     "ketenproces aggregeert, met hetzelfde kernobject"),
-    ("7 Indeling", "bedrijfsobject met *deel van object* en een eigen deelproces", "objectniveau subobject"),
-    ("7 Indeling", "bedrijfsobject met *deel van object* zonder eigen deelproces", "onderdeel: geen pagina"),
+    ("7 Indeling", "bedrijfsobject dat `kernobject` is van een levensloopproces", "objectniveau kernobject; per "
+                                                                                    "kernobject één levensloopproces, of "
+                                                                                    "één per partij in een "
+                                                                                    "ketensamenwerking"),
+    ("7 Indeling", "bedrijfsobject met *deel van object* en een eigen bedrijfsproces", "objectniveau subobject"),
+    ("7 Indeling", "bedrijfsobject met *deel van object* zonder eigen bedrijfsproces", "onderdeel: geen pagina"),
     ("7 Indeling", "ander bedrijfsobject", "voorleggen: geen proces bepaalt zijn levensloop"),
+    ("7 Indeling", "bedrijfsinteractie", "`kernobject` verplicht; voorleggen: ketensamenwerking (estafette) of "
+                                         "orkestratie (de gemeente levert een dienst aan derden)"),
 ]
 NAREGELS = [
     ("Aanvulling", "`homoniem_van` ingevuld", "voorleggen: naamkeuze; `## Homoniemen` bij beide; bij een GGM-homoniem een terugmelding"),
@@ -827,38 +843,51 @@ def _indeling(u: Uitkomst, n: int) -> Uitkomst:
 
 
 def _niveau_proces(u: Uitkomst, k: dict, extra: dict) -> Uitkomst:
-    """Stap 7, proces: taak, cluster naar soort werk, ketenproces, bedrijfsproces, deelproces of processtap."""
+    """Stap 7, proces: levensloopproces, bedrijfsproces, cluster naar soort werk, of deelproces en processtap (geen
+    pagina). Procesniveaus volgens GEMMA Online, Proceshiërarchie (besluit redacteur 2026-10-08)."""
     if _ja(k, "groepeert_processen"):
-        u.procesniveau = "cluster naar soort werk" if extra.get("soort_werk_van") else "taak"
+        if extra.get("soort_werk_van"):
+            u.procesniveau = "cluster naar soort werk"
+        else:
+            u.voorleggen = True
+            u.redenen.append("groepering van processen zonder soort werk (gemma_generiek): een taak is geen "
+                             "procesniveau; de groepering naar taak is het beleidsdomein")
         return _indeling(u, 0)
     if _ja(k, "omvat_levensloop"):
-        u.procesniveau = "ketenproces" if _ja(k, "meer_organisaties") else "bedrijfsproces"
+        u.procesniveau = "levensloopproces"
         if not extra.get("kernobject"):
             u.voorleggen = True
             u.redenen.append("kernobject ontbreekt: noem het object waarvan dit proces de levensloop omvat")
         return _indeling(u, 1)
-    if _ja(k, "meer_organisaties"):
-        u.voorleggen = True
-        u.redenen.append("meer organisaties, maar geen levensloop van een kernobject: ketenproces of deelproces?")
     if _ja(k, "bijdrage_aan_groter_proces"):
         if any(_ja(k, s) for s in ("eigen_besluit", "eigen_normering", "levert_aanbod")):
-            u.procesniveau = "deelproces"
+            u.procesniveau = "bedrijfsproces"
             if not extra.get("kernobject"):
                 u.voorleggen = True
-                u.redenen.append("kernobject ontbreekt: noem het object waarin dit deelproces een mutatie doet")
+                u.redenen.append("kernobject ontbreekt: noem het object waarin dit bedrijfsproces een mutatie doet")
             return _indeling(u, 2)
-        return _indeling(Uitkomst("onderdeel", 0, "Processtap: een deel van een groter proces zonder eigen besluit, "
-                                  "eigen normering of aanbod", archimate_type=u.archimate_type, typeregel=u.typeregel,
-                                  genoemd_begrip=extra.get("genoemd_begrip")), 3)
+        return _indeling(Uitkomst("onderdeel", 0, "Deelproces of processtap: een deel van een bedrijfsproces zonder "
+                                  "eigen besluit, eigen normering of aanbod", archimate_type=u.archimate_type,
+                                  typeregel=u.typeregel, genoemd_begrip=extra.get("genoemd_begrip")), 3)
     u.procesniveau = None
     u.voorleggen = True
     u.redenen.append("procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces")
     return _indeling(u, 4)
 
 
+REDEN_INTERACTIE = ("bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of "
+                    "orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?")
+
+
 def _stap_7(u: Uitkomst, k: dict, extra: dict) -> Uitkomst:
     if u.paginatype == "bedrijfsproces":
         u = _niveau_proces(u, k, extra)
+    if u.paginatype == "bedrijfsinteractie":
+        _indeling(u, 12)
+        u.voorleggen = True
+        u.redenen.append(REDEN_INTERACTIE)
+        if not extra.get("kernobject"):
+            u.redenen.append("kernobject ontbreekt: noem het object dat door de keten gaat")
     if u.soort == "element" and u.paginatype == "bedrijfsobject":
         if _ja(k, "generiek"):
             u.objectniveau = "generiek"
@@ -903,48 +932,81 @@ def evalueer(beoordeling: dict) -> Uitkomst:
     return uitkomst
 
 
+def is_afgewezen(beoordeling: dict) -> bool:
+    """Het laatste besluit van de redacteur is `afwijzen`: het begrip is geen element meer in het model."""
+    besluiten = beoordeling.get("besluiten") or []
+    return bool(besluiten) and besluiten[-1].get("gevolg") == "afwijzen"
+
+
 def indeling(beoordelingen: dict[str, dict], uitkomsten: dict[str, dict | None]) -> list[str]:
     """Stap 7 met context: het objectniveau (kernobject, subobject of onderdeel) en de controle op `kernobject`.
 
-    Wijzigt `uitkomsten` ter plekke; levert fouten (per `id: tekst`). Een bedrijfs- of ketenproces heeft een kernobject;
-    per kernobject bestaat precies één zo'n proces, plus de bedrijfsprocessen die het ketenproces met dat kernobject
-    aggregeert: elk het deel van één partij in die levensloop. Een ketenproces aggregeert van de processen alleen
-    bedrijfsprocessen (besluit redacteur 2026-10-07). Een deelproces noemt het object waarin het een mutatie doet."""
+    Wijzigt `uitkomsten` ter plekke; levert fouten (per `id: tekst`). De procesindeling naar kernobject is strikt
+    hiërarchisch (besluit redacteur 2026-10-08): per kernobject precies één levensloopproces, met het taakveld en
+    beleidsdomein van dat kernobject; meer alleen als ze allemaal een bedrijfsinteractie met dat kernobject bedienen
+    (elk het deel van één partij in de ketensamenwerking); een levensloopproces aggregeert geen levensloopproces; een
+    bedrijfsproces hangt
+    onder hoogstens één levensloopproces en noemt het object waarin het een mutatie doet. Een bedrijfsinteractie noemt
+    het object dat door de keten gaat, met het beleidsdomein van dat object."""
     fouten = []
     kernobject_van: dict[str, str] = {}
     deel: set[str] = set()
+    afgewezen = {b for b, d in beoordelingen.items() if is_afgewezen(d)}
     objecten = {b for b, u in uitkomsten.items() if u and u["soort"] == "element" and u["paginatype"] == "bedrijfsobject"}
     niveau = {b: u["procesniveau"] for b, u in uitkomsten.items()
-              if u and u["soort"] == "element" and u["paginatype"] == "bedrijfsproces"}
-    binnen_keten: set[str] = set()
+              if u and u["soort"] == "element" and u["paginatype"] == "bedrijfsproces" and b not in afgewezen}
+    interacties = {b for b, u in uitkomsten.items()
+                   if u and u["soort"] == "element" and u["paginatype"] == "bedrijfsinteractie" and b not in afgewezen}
+
+    def ketens(bid: str, ko: str) -> set[str]:
+        """De bedrijfsinteracties met kernobject `ko` die dit proces bedient."""
+        return {r["naar"] for r in beoordelingen[bid].get("relaties") or []
+                if r["soort"] == "bediening" and r["naar"] in interacties
+                and beoordelingen[r["naar"]].get("kernobject") == ko}
+
+    per_kernobject: dict[str, list[str]] = {}
+    ouders: dict[str, list[str]] = {}
     for bid, n in sorted(niveau.items()):
-        if n != "ketenproces":
+        if n != "levensloopproces":
             continue
         for r in beoordelingen[bid].get("relaties") or []:
             if r["soort"] != "aggregatie" or r["naar"] not in niveau:
                 continue
-            if niveau[r["naar"]] == "deelproces":
-                fouten.append(f"{bid}: ketenproces aggregeert deelproces '{r['naar']}'; een ketenproces aggregeert alleen "
-                              "bedrijfsprocessen (kennismodel regel 590, 605)")
-            elif niveau[r["naar"]] == "bedrijfsproces" and beoordelingen[r["naar"]].get("kernobject") \
-                    == beoordelingen[bid].get("kernobject"):
-                binnen_keten.add(r["naar"])
+            if niveau[r["naar"]] == "levensloopproces":
+                fouten.append(f"{bid}: levensloopproces aggregeert levensloopproces '{r['naar']}'; de procesindeling "
+                              "naar kernobject is strikt hiërarchisch (een keten is een bedrijfsinteractie)")
+            else:
+                ouders.setdefault(r["naar"], []).append(bid)
+    for bid, boven in sorted(ouders.items()):
+        if len(boven) > 1:
+            fouten.append(f"{bid}: hangt onder meer levensloopprocessen ({', '.join(boven)}); een bedrijfsproces hangt "
+                          "onder één levensloopproces")
     for bid, u in sorted(uitkomsten.items()):
-        if not u or u["soort"] != "element" or u["paginatype"] != "bedrijfsproces":
+        if not u or u["soort"] != "element" or u["paginatype"] not in ("bedrijfsproces", "bedrijfsinteractie")                 or bid in afgewezen:
             continue
         ko = beoordelingen[bid].get("kernobject")
         if not ko:
             continue
         if ko not in objecten:
             fouten.append(f"{bid}: kernobject '{ko}' is geen bedrijfsobject of afspraak met een pagina")
-        elif bid in binnen_keten:
             continue
-        elif u["procesniveau"] in ("bedrijfsproces", "ketenproces"):
-            if ko in kernobject_van:
-                fouten.append(f"{bid}: kernobject '{ko}' heeft al het proces '{kernobject_van[ko]}' (per kernobject één proces)")
+        if u["paginatype"] == "bedrijfsinteractie" or u["procesniveau"] == "levensloopproces":
+            for veld in ("taakveld", "beleidsdomein"):
+                eigen, van_object = beoordelingen[bid].get(veld), beoordelingen[ko].get(veld)
+                if van_object and eigen != van_object:
+                    fouten.append(f"{bid}: {veld} '{eigen or '—'}' wijkt af van dat van het kernobject '{ko}' "
+                                  f"('{van_object}'); het volgt uit het kernobject")
+        if u["procesniveau"] == "levensloopproces":
+            per_kernobject.setdefault(ko, []).append(bid)
             kernobject_van.setdefault(ko, bid)
-        elif u["procesniveau"] == "deelproces":
+        elif u["procesniveau"] == "bedrijfsproces":
             deel.add(ko)
+    for ko, processen in sorted(per_kernobject.items()):
+        if len(processen) > 1 and not set.intersection(*(ketens(p, ko) for p in processen)):
+            for bid in processen[1:]:
+                fouten.append(f"{bid}: kernobject '{ko}' heeft al het levensloopproces '{processen[0]}' (per "
+                              "kernobject één levensloopproces, of één per partij als ze samen een bedrijfsinteractie "
+                              "met dat kernobject bedienen)")
     for bid in sorted(objecten):
         u = uitkomsten[bid]
         if u["objectniveau"] or u["generiek"]:

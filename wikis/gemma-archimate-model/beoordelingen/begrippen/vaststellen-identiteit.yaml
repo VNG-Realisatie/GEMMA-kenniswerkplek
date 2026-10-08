@@ -142,7 +142,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: Stap 1 van Inschrijven ingezetene en een stap in de andere deelprocessen (HUP Immigratie; HUP Binnengemeentelijke adreswijziging).
+    onderbouwing: Stap 1 van Inschrijven ingezetene en een stap in de andere bedrijfsprocessen (HUP Immigratie; HUP Binnengemeentelijke adreswijziging).
     bronnen:
     - 2026-rvig-hup-immigratie
     - 2026-rvig-hup-binnengemeentelijke-adreswijziging
@@ -150,9 +150,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
@@ -228,7 +225,7 @@ afgeleid:
   uitkomst:
     soort: onderdeel
     regel: 30
-    toelichting: 'Processtap: een deel van een groter proces zonder eigen besluit, eigen normering of aanbod'
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces zonder eigen besluit, eigen normering of aanbod'
     archimate_type: business-process
     voorleggen: false
     data_object: nee

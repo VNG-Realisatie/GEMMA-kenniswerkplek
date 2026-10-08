@@ -126,7 +126,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Verlenen verlof tot begraving of crematie (Wlb art. 11).
+    onderbouwing: Het bedrijfsproces Verlenen verlof tot begraving of crematie (Wlb art. 11).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   leidt_tot_gedrag:
@@ -139,9 +139,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   eigen_besluit:
@@ -209,7 +206,7 @@ kenmerken:
 definitie: Toestemming van de gemeente om een stoffelijk overschot te begraven of te cremeren.
 beschrijving:
 - Geen begraving of crematie zonder schriftelijk verlof van de ambtenaar van de burgerlijke stand, dat kosteloos wordt afgegeven (Wet op de lijkbezorging art. 11). De UPL-naam noemt alleen begraven; het verlof geldt ook voor crematie. Voor vervoer over land naar België of Luxemburg volstaat het verlof (Besluit op de lijkbezorging art. 11 lid 3).
-- De UPL rekent het product tot Iv3 0.2 (Burgerzaken) en het GEMMA-domein Fysieke leefomgeving (UPL). In dit model staat het bij de begraafplaatsen en crematoria, naast het deelproces dat het levert, en in de functie-indeling bij het domein van de UPL.
+- De UPL rekent het product tot Iv3 0.2 (Burgerzaken) en het GEMMA-domein Fysieke leefomgeving (UPL). In dit model staat het bij de begraafplaatsen en crematoria, naast het bedrijfsproces dat het levert, en in de functie-indeling bij het domein van de UPL.
 afnemer: extern
 domein: Fysieke leefomgeving
 taakveld: 7 Volksgezondheid en Milieu

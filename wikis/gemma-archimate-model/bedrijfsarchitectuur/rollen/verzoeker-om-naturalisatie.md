@@ -61,7 +61,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 53 zijn nee.
+Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

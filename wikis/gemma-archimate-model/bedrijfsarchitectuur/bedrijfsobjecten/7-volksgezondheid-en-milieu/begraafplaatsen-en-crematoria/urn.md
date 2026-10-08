@@ -56,12 +56,12 @@ Bedrijfsobject, niveau subobject. Uitkomst van de beslistabel: Passief (kern ja,
 ### Plaats in de indelingen
 
 - **Objectniveau**: subobject.
-- **Mutaties door deelprocessen**: [Bijzetten of verstrooien van de as](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md), [Verlenen toestemming asverstrooiing](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-asverstrooiing.md).
+- **Mutaties door bedrijfsprocessen**: [Bijzetten of verstrooien van de as](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md), [Verlenen toestemming asverstrooiing](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-asverstrooiing.md).
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

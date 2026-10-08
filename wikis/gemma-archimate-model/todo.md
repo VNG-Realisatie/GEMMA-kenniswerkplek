@@ -12,25 +12,16 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 ## Indelingen (analyse 2026-10-04, `analyses/indelingen.md`)
 
 - **Definitie van Ketenpartner**: nu "verantwoordelijkheid van een andere organisatie", terwijl de rol wordt vervuld door personen (Arts als behandelende arts, Officier van justitie; besluit redacteur 2026-10-04). Definitie verbreden naar een andere partij, of de organisatie (openbaar ministerie, zorgaanbieder) als actor nemen; meenemen in het voorstel aan het GEMMA-team over de definitie van de rol Ketenpartner.
-- **Verlengen en overschrijven van het grafrecht**: nu onderdelen van Grafrecht (eigen identiteit nee). Met de criteria van 2026-10-04 mogelijk deelprocessen van Beheren grafrechten (eigen besluit, Wlb art. 28 lid 1–3; Groningen art. 16–20). De UPL kent er geen eigen product voor (beoordeling UPL-producten 2026-10-05).
+- **Verlengen en overschrijven van het grafrecht**: nu onderdelen van Grafrecht (eigen identiteit nee). Mogelijk eigen bedrijfsprocessen onder het levensloopproces Beheren grafrechten (eigen besluit, Wlb art. 28 lid 1–3; Groningen art. 16–20). De UPL kent er geen eigen product voor (beoordeling UPL-producten 2026-10-05).
 - **Interne UPL-lijst**: staat in `sources/` en krijgt een bronanalyse bij het eerste onderwerp met sturende of ondersteunende producten.
 - **Voorstellen aan het GEMMA-team**:
   - het beleidsdomein *Begraafplaatsen en crematoria* onder taakveld 7, met de GEMMA-domeinen waaronder het valt (procesarchitectuur-terugmelding 1);
   - generieke gebeurtenissen (aanvraag ontvangen, besluit bekendgemaakt);
-  - de afwijkingen van het kennismodel procesarchitectuur: een deelproces levert een dienst, een bedrijfsproces binnen een ketenproces is het deel van één partij, structurele relaties tussen actoren (procesarchitectuur-terugmeldingen 4–6);
+  - de procesarchitectuur-terugmeldingen over het kennismodel: de tegenspraak over het ketenproces tussen het kennismodel en de pagina Proceshiërarchie (5), structurele relaties tussen actoren (6), en het levensloopproces als cluster per thema met de themaclusters van de ondersteunende tak als groepering per beleidsdomein (20); 4 is opgelost door de procesniveaus van 2026-10-08;
   - het advies om referentiecomponenten te laten aggregeren door een hogere bedrijfsfunctie;
   - de definities van de GEMMA-rollen Ketenpartner, Adviseur en Beslisser, die in GEMMA leeg zijn en die de export met de definitie uit de wiki vult.
 - **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein.
 - **Archi-views** per indeling en elementtype in de export, na de eerste proefimport (herziening van het besluit van 2026-10-02: geen views).
-
-## Proceshiërarchie (besluit 2026-10-08, `analyses/proceshierarchie.md`)
-
-De procesniveaus volgen de GEMMA-ladder, de taak vervalt en ketens worden bedrijfsinteracties. Uitwerken in één keer, in deze volgorde:
-
-- **Criteria**: beslistabel, kenmerken, `analyses/indelingen.md` (Procesniveaus, Processtructuur, Stap 7, lijkbezorgingvoorbeeld), `analyses/gemma-kennismodel.md` en skill `gemma-archimate-model-criteria`: procesniveaus levensloopproces (*omvat levensloop*, `kernobject`), bedrijfsproces (klant-tot-klant, *levert aanbod*, `gemma_generiek`), deelproces (GEMMA-betekenis, binnen één bedrijfsfunctie); taak en ketenproces vervallen; ketensamenwerking als bedrijfsinteractie, bediend door de bedrijfsprocessen van de partijen en uitgevoerd door een bedrijfssamenwerking. Waar gebeurtenissen hangen (nu aggregatie vanuit het proces per kernobject).
-- **Scripts**: `tools/bepaal_type.py`, `tools/signalen.py`, `tools/render.py`, `tools/archimate_export.py`: de waarden van `procesniveau`, de controles (een levensloopproces per kernobject, een bedrijfsproces onder één levensloopproces), de indeling van levensloopprocessen in de Beleidsdomeinindeling (afgeleid uit het kernobject), GEMMA type *Bedrijfsproces (cluster)* voor een levensloopproces in de export, de mapnaam *Procesindeling naar taak*.
-- **Beoordelingen**: alle processen opnieuw afleiden; de procesniveaus schuiven mee (objecten in Archi blijven). Per geval voorleggen: het vervallen van Verzorgen burgerzaken en Verzorgen lijkbezorging (hun beschrijving letterlijk naar de beschrijving van het beleidsdomein; een typewijziging naar groepering kan niet, regel Objectbehoud) en de herbeoordeling van Bezorgen stoffelijk overschot, Beheren Nederlanderschap en Afgeven verklaring omtrent het gedrag (estafette of orkestratie, IK 27-34; bij orkestratie levert de gemeente een dienst aan derden). Daarbij: krijgt het gedeelde kernobject Stoffelijk overschot één levensloopproces of één per partij (Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot)?
-- **Terugmeldingen**: procesarchitectuur-terugmelding over de tegenspraak tussen het kennismodel (Ketenproces → aggregatie → Bedrijfsproces, OG 590) en de pagina Proceshiërarchie (PH 146); voorstel om de themaclusters in de ondersteunende tak (*Beheren personeel*) als groepering per beleidsdomein te zien; terugmeldingen 4 en 5 (deelproces levert dienst, bedrijfsproces binnen ketenproces) en de voorstellen hierboven onder Indelingen bijwerken.
 
 ## Export naar Archi
 

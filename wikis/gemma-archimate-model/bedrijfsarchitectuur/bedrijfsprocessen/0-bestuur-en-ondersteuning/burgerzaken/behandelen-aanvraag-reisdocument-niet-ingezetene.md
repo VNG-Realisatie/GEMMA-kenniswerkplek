@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: deelproces
+procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
 - Verstrekken reisdocument aan niet-ingezetene (wet)
@@ -50,12 +50,12 @@ Alleen de burgemeester van een bij ministeriële regeling aangewezen gemeente is
 
 ### Typering
 
-Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Beheren reisdocumenten](beheren-reisdocumenten.md).
+- **Procesniveau**: bedrijfsproces.
+- **Procesindeling naar kernobject, onderdeel van**: [Beheren reisdocumenten](beheren-reisdocumenten.md).
 - **Kernobject**: [Reisdocument](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md).
 - **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Behandelen aanvraag product*. Een aanvraag voor een product dat de gemeente na een toets op identiteit en aanspraak verstrekt; GEMMA noemt het paspoort als voorbeeld.
 - **Afnemer**: extern.
@@ -63,14 +63,14 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 44 zijn nee.
+Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de UPL noemt het reisdocument voor een niet-ingezetene als eigen product (nr. 357); het Paspoortbesluit geeft de aangewezen gemeenten er een eigen bevoegdheid voor (art. 3.2, 4.2). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester van een bij ministeriële regeling aangewezen gemeente neemt de aanvraag in ontvangst en verstrekt het reisdocument (Paspoortbesluit art. 3.2, 4.2). [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen bevoegdheid met een eigen doelgroep, alleen voor aangewezen gemeenten (Paspoortbesluit art. 3.2, 4.2). [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, deelproces van Beheren reisdocumenten in burgerzaken. [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, bedrijfsproces onder Beheren reisdocumenten in burgerzaken. [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) |
 | **per keer doorlopen**: Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? | Ja, wordt per aanvraag van begin tot eind doorlopen (Paspoortbesluit art. 3.2, 4.2). [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, beslisser: de burgemeester van de aangewezen gemeente verstrekt of weigert (Paspoortbesluit art. 4.2; Paspoortwet art. 44); de Houder van het reisdocument vraagt aan (Paspoortbesluit art. 3.2). [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md), [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
@@ -79,7 +79,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, de verstrekking, de beslissing tot uitreiking van een nieuw reisdocument, of de weigering (Paspoortwet art. 1 onder c en d). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke aanvraag. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, een eigen bevoegdheid voor alleen de aangewezen gemeenten en alleen voor personen die niet als ingezetene in de BRP staan (Paspoortbesluit art. 3.2, 4.2); verder gelden de regels van de Paspoortwet voor de aanvraag (art. 26-41). [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md), [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren reisdocumenten: het ontstaan van het reisdocument van een niet-ingezetene. [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren reisdocumenten: het ontstaan van het reisdocument van een niet-ingezetene. [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, de verstrekking of de weigering door de burgemeester van de aangewezen gemeente (Paspoortbesluit art. 4.2; Paspoortwet art. 40, 44). [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md), [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de diensten Paspoort, Paspoort tweede, Zakenpaspoort, Vluchtelingenpaspoort, Vreemdelingenpaspoort, Identiteitskaart en Reisdocument niet-ingezetene (UPL nr. 329, 330, 494, 449, 462, 186, 357). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, specialisatie van Behandelen aanvraag reisdocument met een eigen bevoegdheid, een eigen doelgroep en een taak die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2; besluit redacteur 2026-10-07). [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
@@ -122,7 +122,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 4](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** een deelproces realiseert een deelservice: een onderdeel van een dienst, dat in verschillende bedrijfsprocessen wordt gebruikt maar geen dienst is die de organisatie aan de buitenwereld levert. De dienst zelf wordt gerealiseerd door een bedrijfsproces of ketenproces ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 385, 398, 591, 603). **GEMMA:** een deelproces realiseert de dienst van een UPL-product, bijvoorbeeld Verlenen verlof tot begraving of crematie de dienst Verlof tot begraven en Verlenen grafrecht de dienst Graf aanvragen. Het model heeft één bedrijfs- of ketenproces per kernobject (Beheren grafrechten, Beheren graven, Bezorgen stoffelijk overschot); daaronder levert elk deelproces één product of dienst. Eén bedrijfsproces per product maakt het model plat: een gemeente levert zo'n 500 externe en 215 interne producten en diensten ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), 2025-vng-upl-producten-en-diensten-intern).
+- [Nummer 4](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, opgelost): **Kennismodel:** een deelproces realiseert een deelservice: een onderdeel van een dienst, dat in verschillende bedrijfsprocessen wordt gebruikt maar geen dienst is die de organisatie aan de buitenwereld levert. De dienst zelf wordt gerealiseerd door een bedrijfsproces of ketenproces ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 385, 398, 591, 603). **GEMMA:** een deelproces realiseert de dienst van een UPL-product, bijvoorbeeld Verlenen verlof tot begraving of crematie de dienst Verlof tot begraven en Verlenen grafrecht de dienst Graf aanvragen. Het model heeft één bedrijfs- of ketenproces per kernobject (Beheren grafrechten, Beheren graven, Bezorgen stoffelijk overschot); daaronder levert elk deelproces één product of dienst. Eén bedrijfsproces per product maakt het model plat: een gemeente levert zo'n 500 externe en 215 interne producten en diensten ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), 2025-vng-upl-producten-en-diensten-intern). **Opgelost (2026-10-08):** de procesniveaus van het model volgen nu de ladder van GEMMA Online, Proceshiërarchie ([2026-vng-gemma-proceshierarchie](../../../../analyses/proceshierarchie.md), regel 47, 81, 83): wat het model deelproces noemde, is een bedrijfsproces, en een bedrijfsproces realiseert de dienst, zoals het kennismodel zegt. De afwijking bestaat niet meer; de melding wordt niet verstuurd.
 
 ### Besluiten redacteur
 

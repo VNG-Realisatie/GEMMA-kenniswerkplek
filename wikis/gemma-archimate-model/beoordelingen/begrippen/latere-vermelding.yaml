@@ -124,9 +124,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -195,7 +192,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 genoemd_begrip: Akte van de burgerlijke stand
-toelichting: 'Onderdeel van de akte van de burgerlijke stand, geen pagina: de vermelding van een naamswijziging, adoptie, geslachtswijziging, echtscheiding of ontbinding wordt aan de akte toegevoegd (BW 1 art. 20; Besluit burgerlijke stand art. 53). Het toevoegen is het deelproces Toevoegen latere vermelding.'
+toelichting: 'Onderdeel van de akte van de burgerlijke stand, geen pagina: de vermelding van een naamswijziging, adoptie, geslachtswijziging, echtscheiding of ontbinding wordt aan de akte toegevoegd (BW 1 art. 20; Besluit burgerlijke stand art. 53). Het toevoegen is het bedrijfsproces Toevoegen latere vermelding.'
 afgeleid:
   uitkomst:
     soort: onderdeel

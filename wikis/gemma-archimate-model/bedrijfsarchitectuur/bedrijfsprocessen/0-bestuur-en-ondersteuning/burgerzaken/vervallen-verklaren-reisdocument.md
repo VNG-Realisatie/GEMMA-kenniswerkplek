@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: deelproces
+procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
 - Vervallenverklaring (wet)
@@ -51,19 +51,19 @@ De burgemeester kan als met de uitvoering van de Paspoortwet belaste autoriteit 
 
 ### Typering
 
-Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Beheren reisdocumenten](beheren-reisdocumenten.md).
+- **Procesniveau**: bedrijfsproces.
+- **Procesindeling naar kernobject, onderdeel van**: [Beheren reisdocumenten](beheren-reisdocumenten.md).
 - **Kernobject**: [Reisdocument](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -79,7 +79,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, de beschikking tot vervallenverklaring, of de teruggave of een document met beperkte geldigheid (Paspoortwet art. 45, 46). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk ingehouden reisdocument met een signalering. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, paspoortwet art. 44 tot en met 46b (voornemen, aanhouding van acht weken, termijn van vier weken, mededeling aan de minister). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren reisdocumenten: het einde van het reisdocument. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren reisdocumenten: het einde van het reisdocument. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, de beschikking tot vervallenverklaring van de burgemeester (Paspoortwet art. 1 onder i, 44, 46). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 

@@ -147,9 +147,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -226,6 +223,16 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
+besluiten:
+- datum: '2026-10-07'
+  besluit: UPL nr. 356 reisdocument is geen eigen dienst maar een synoniem (context UPL) van deze dienst, met procesarchitectuur-terugmelding. De dienst wordt gerealiseerd door het nieuwe deelproces Behandelen aanvraag reisdocument niet-ingezetene.
+  gevolg: verwerkt
+homoniemen:
+- begrip: Reisdocument
+  betekenis: Het document zelf, het bedrijfsobject Reisdocument
+  waar: wiki, Paspoortwet art. 2
+  element: reisdocument
+  naamkeuze: Deze dienst heet Reisdocument niet-ingezetene, de UPL-naam van nr. 357; reisdocument (UPL nr. 356) is een synoniem met context UPL, want het valt samen met deze dienst. Het bedrijfsobject houdt de naam Reisdocument.
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -244,13 +251,3 @@ afgeleid:
   - 2026-rijk-paspoortwet-bwbr0005212
   herkomst: wet
   pad: bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument-niet-ingezetene.md
-besluiten:
-- datum: '2026-10-07'
-  besluit: UPL nr. 356 reisdocument is geen eigen dienst maar een synoniem (context UPL) van deze dienst, met procesarchitectuur-terugmelding. De dienst wordt gerealiseerd door het nieuwe deelproces Behandelen aanvraag reisdocument niet-ingezetene.
-  gevolg: verwerkt
-homoniemen:
-- begrip: Reisdocument
-  betekenis: Het document zelf, het bedrijfsobject Reisdocument
-  waar: wiki, Paspoortwet art. 2
-  element: reisdocument
-  naamkeuze: Deze dienst heet Reisdocument niet-ingezetene, de UPL-naam van nr. 357; reisdocument (UPL nr. 356) is een synoniem met context UPL, want het valt samen met deze dienst. Het bedrijfsobject houdt de naam Reisdocument.

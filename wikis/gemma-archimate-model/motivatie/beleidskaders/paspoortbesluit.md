@@ -38,7 +38,7 @@ Het Paspoortbesluit (BWBR0044308) regelt de geldigheidsduur per soort reisdocume
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Reisdocument niet-ingezetene (UPL nr. 356 en 357) en van de deelprocessen waarin de gemeente reisdocumenten aanvraagt, uitreikt en inhoudt.
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Reisdocument niet-ingezetene (UPL nr. 356 en 357) en van de bedrijfsprocessen waarin de gemeente reisdocumenten aanvraagt, uitreikt en inhoudt.
 
 ## Plaats in het model
 
@@ -53,7 +53,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

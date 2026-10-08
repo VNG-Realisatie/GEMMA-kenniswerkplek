@@ -155,9 +155,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -291,7 +288,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

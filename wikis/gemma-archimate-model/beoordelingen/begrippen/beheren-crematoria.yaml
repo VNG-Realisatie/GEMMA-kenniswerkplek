@@ -149,15 +149,12 @@ kenmerken:
     onderbouwing: 'Omvat de levensloop van het crematorium: vestiging, uitbreiding of wijziging, en opheffing (art. 50 lid 3, 53, 54).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De houder van een bijzonder crematorium vraagt de vergunning aan als klant; de gemeente voert het proces uit (art. 52, 53).
   eigen_besluit:
     waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in het deelproces.
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in het bedrijfsproces.
   levert_aanbod:
     waarde: nee
-    onderbouwing: Het deelproces levert het aanbod.
+    onderbouwing: Het bedrijfsproces levert het aanbod.
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -254,7 +251,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    procesniveau: levensloopproces
     generiek: false
     typeregel: 17
   bronnen:

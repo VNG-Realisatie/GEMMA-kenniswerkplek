@@ -22,7 +22,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
-    onderbouwing: 'Bestaat niet los van Behandelen aanvraag reisdocument: het verzoek waarmee dat deelproces begint, met de gegevens die de aanvrager daarbij verstrekt (Paspoortwet art. 1 onder a, 27, 28).'
+    onderbouwing: 'Bestaat niet los van Behandelen aanvraag reisdocument: het verzoek waarmee dat bedrijfsproces begint, met de gegevens die de aanvrager daarbij verstrekt (Paspoortwet art. 1 onder a, 27, 28).'
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
@@ -125,9 +125,6 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:

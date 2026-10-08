@@ -128,7 +128,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Uitvoeren adresonderzoek (Utrecht; Circulaire adresonderzoek).
+    onderbouwing: Het bedrijfsproces Uitvoeren adresonderzoek (Utrecht; Circulaire adresonderzoek).
     bronnen:
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
     - 2023-rvig-circulaire-adresonderzoek-brp
@@ -142,9 +142,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

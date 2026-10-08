@@ -59,7 +59,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 49 zijn nee.
+Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -72,7 +72,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, de inschrijving van het adoptiekind in de BRP (Utrecht). [Utrecht Adoptie, kind inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke afnemer die erom vraagt. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Adoptie, kind inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger (UPL nr. 6): de adoptiefouders. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Adoptie, kind inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het deelproces Inschrijven ingezetene: Utrecht verwerkt de aangifte als verhuizing vanuit het buitenland. [Utrecht Adoptie, kind inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Inschrijven ingezetene: Utrecht verwerkt de aangifte als verhuizing vanuit het buitenland. [Utrecht Adoptie, kind inschrijven](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 6), apart van de BRP-inschrijving; geen bredere dienst in deze wiki. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties

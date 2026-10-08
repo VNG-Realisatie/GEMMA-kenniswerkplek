@@ -131,7 +131,7 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Toevoegen latere vermelding (BW 1 art. 20; Utrecht).
+    onderbouwing: Het bedrijfsproces Toevoegen latere vermelding (BW 1 art. 20; Utrecht).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
@@ -145,9 +145,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

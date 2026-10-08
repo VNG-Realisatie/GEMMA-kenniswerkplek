@@ -130,9 +130,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -206,7 +203,7 @@ beschrijving:
 - 'De Wegenverkeerswet 1994 (BWBR0006622) regelt het verkeer op de weg. Voor Burgerzaken telt hoofdstuk VI: de rijbewijsplicht (art. 107), de voorwaarden voor afgifte (art. 111, 112), de aanvraag (art. 113), de afgifte door de burgemeester of de RDW (art. 116), het nieuwe en het vervangende rijbewijs (art. 119, 120), de uitreiking (art. 120a), de geldigheid en het verlies ervan (art. 122, 123) en het rijbewijzenregister van de RDW (art. 126). De RDW en het CBR zijn zelfstandige bestuursorganen (art. 4a, 4z). Kentekens, voertuigeisen, rijonderricht, het onderzoek naar rijvaardigheid en de maatregelen na overtredingen vallen buiten dit onderwerp.'
 per_onderwerp:
   burgerzaken:
-  - Grondslag van Beheren rijbewijzen, de deelprocessen en de diensten van het rijbewijs, naast het Reglement rijbewijzen, dat de aanvraag en afgifte uitwerkt. De UPL noemt alleen het Reglement als grondslag (nr. 360 tot en met 363); zie de procesarchitectuur-terugmelding.
+  - Grondslag van Beheren rijbewijzen, de bedrijfsprocessen en de diensten van het rijbewijs, naast het Reglement rijbewijzen, dat de aanvraag en afgifte uitwerkt. De UPL noemt alleen het Reglement als grondslag (nr. 360 tot en met 363); zie de procesarchitectuur-terugmelding.
 grondslag_toelichting:
 - De regeling zelf (2026-rijk-wegenverkeerswet-1994-bwbr0006622).
 relaties:

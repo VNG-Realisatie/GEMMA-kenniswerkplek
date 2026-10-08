@@ -149,15 +149,12 @@ kenmerken:
     onderbouwing: 'Omvat de levensloop van de begraafplaats: aanleg of uitbreiding, ingebruikneming, sluiting en opheffing (art. 36, 40, 41, 43, 44, 47).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De houder van een bijzondere begraafplaats vraagt toestemming aan als klant; de gemeente voert het proces uit (art. 40, 41).
   eigen_besluit:
     waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
   levert_aanbod:
     waarde: nee
-    onderbouwing: De deelprocessen leveren het aanbod.
+    onderbouwing: De bedrijfsprocessen leveren het aanbod.
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -261,7 +258,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    procesniveau: levensloopproces
     generiek: false
     typeregel: 17
   bronnen:

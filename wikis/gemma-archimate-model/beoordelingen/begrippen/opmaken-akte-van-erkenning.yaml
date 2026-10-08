@@ -161,9 +161,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: ja
     onderbouwing: De ambtenaar beoordeelt of de erkenning geldig kan zijn (leeftijd, toestemming, verboden graad) en weigert de akte zo nodig (BW 1 art. 18c, 204).
@@ -270,7 +267,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

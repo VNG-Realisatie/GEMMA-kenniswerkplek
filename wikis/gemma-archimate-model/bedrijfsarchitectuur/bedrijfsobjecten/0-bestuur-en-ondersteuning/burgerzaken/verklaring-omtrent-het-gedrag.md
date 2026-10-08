@@ -71,12 +71,13 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 ### Plaats in de indelingen
 
 - **Objectniveau**: kernobject.
-- **Levensloop bepaald door**: [Afgeven verklaring omtrent het gedrag](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/afgeven-verklaring-omtrent-het-gedrag.md), [Behandelen aanvraag verklaring omtrent het gedrag](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-verklaring-omtrent-het-gedrag.md).
+- **Levensloop bepaald door**: [Afgeven verklaring omtrent het gedrag](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/afgeven-verklaring-omtrent-het-gedrag.md).
+- **Mutaties door bedrijfsprocessen**: [Behandelen aanvraag verklaring omtrent het gedrag](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-verklaring-omtrent-het-gedrag.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

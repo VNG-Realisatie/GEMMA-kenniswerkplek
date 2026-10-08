@@ -59,7 +59,7 @@ grondslag_toelichting: []                     # verplicht bij regelgeving, proce
 ggm: {sterkte: geen, onderbouwing: "Het GGM kent geen begraafplaats."}          # bij gegevensobjecten; met guid bij een match
 gemma: {sterkte: geen, onderbouwing: "Nieuw voor GEMMA."}                       # altijd; met id bij een match
 # Indeling (stap 7, zie analyses/indelingen.md), alleen waar het type erom vraagt:
-kernobject: graf                              # bedrijfs-, keten- en deelproces: het object waarvan het de levensloop omvat of waarin het een mutatie doet
+kernobject: graf                              # levensloopproces, bedrijfsproces, bedrijfsinteractie: het object waarvan het de levensloop omvat, waarin het een mutatie doet of dat door de keten gaat
 afnemer: extern                               # proces, product, dienst: extern of intern
 domein: Fysieke leefomgeving                  # functie, product, dienst: GEMMA-domein
 doelgroep: gemeente                           # actor, rol, samenwerking, kanaal: gemeente | inwoners en ondernemers | ketenpartners

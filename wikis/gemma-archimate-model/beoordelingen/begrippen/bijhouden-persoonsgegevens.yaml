@@ -146,7 +146,7 @@ kenmerken:
     onderbouwing: Levert zelf het eindresultaat voor zijn kernobject.
   omvat_processen:
     waarde: ja
-    onderbouwing: Inschrijven ingezetene, Verwerken adreswijziging, Verwerken emigratie, Uitvoeren adresonderzoek en de andere deelprocessen van de bijhouding (HUP Achtergronden; Circulaire adresonderzoek).
+    onderbouwing: Inschrijven ingezetene, Verwerken adreswijziging, Verwerken emigratie, Uitvoeren adresonderzoek en de andere bedrijfsprocessen van de bijhouding (HUP Achtergronden; Circulaire adresonderzoek).
     bronnen:
     - 2026-rvig-hup-achtergronden-en-begrippen
     - 2023-rvig-circulaire-adresonderzoek-brp
@@ -156,15 +156,12 @@ kenmerken:
     bronnen:
     - 2025-rvig-logisch-ontwerp-brp-2025q1
     - 2026-rvig-hup-achtergronden-en-begrippen
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De bijhouding van ingezetenen is een taak van het college; de minister houdt de niet-ingezetenen bij in de RNI en de IND levert gegevens, niet als uitvoerder van dit proces (HUP Achtergronden).
   eigen_besluit:
     waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
   levert_aanbod:
     waarde: nee
-    onderbouwing: De deelprocessen leveren de producten en diensten.
+    onderbouwing: De bedrijfsprocessen leveren de producten en diensten.
   bedient_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -419,7 +416,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    procesniveau: levensloopproces
     generiek: false
     typeregel: 17
   bronnen:

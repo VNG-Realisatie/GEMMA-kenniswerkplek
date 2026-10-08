@@ -40,7 +40,7 @@ Het Besluit verkrijging en verlies Nederlanderschap (BWBR0013605) werkt de Rijks
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Naturalisatieceremonie (UPL nr. 261), van het bewijs van Nederlanderschap (art. 61) en van de deelprocessen van het ketenproces Beheren Nederlanderschap.
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Naturalisatieceremonie (UPL nr. 261), van het bewijs van Nederlanderschap (art. 61) en van de bedrijfsprocessen onder Beheren Nederlanderschap.
 
 ## Plaats in het model
 
@@ -55,18 +55,18 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, algemene maatregel van rijksbestuur bij de Rijkswet; de UPL noemt haar als grondslag van de naturalisatieceremonie en Utrecht als grondslag van het opgeven van de nationaliteit (UPL nr. 261). [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht nationaliteit opgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, wijst in het Europese deel van Nederland de burgemeester aan voor het in ontvangst nemen van optieverklaringen, naturalisatieverzoeken en verklaringen van afstand en het uitreiken van bevestigingen en uittreksels (art. 2, 63). [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige regeling. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van de deelprocessen van Beheren Nederlanderschap. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van de bedrijfsprocessen onder Beheren Nederlanderschap. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde algemene maatregel van rijksbestuur als geheel (BWBR0013605). [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **landelijk**: Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? | Ja, algemene maatregel van rijksbestuur. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? | Ja, art. 60a is de grondslag van de dienst Naturalisatieceremonie (UPL nr. 261); art. 7-12, 31-38, 60a-60b en 62-64 regelen de behandeling door de burgemeester in de deelprocessen van Beheren Nederlanderschap. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? | Ja, art. 60a is de grondslag van de dienst Naturalisatieceremonie (UPL nr. 261); art. 7-12, 31-38, 60a-60b en 62-64 regelen de behandeling door de burgemeester in de bedrijfsprocessen onder Beheren Nederlanderschap. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 
 ### Relaties

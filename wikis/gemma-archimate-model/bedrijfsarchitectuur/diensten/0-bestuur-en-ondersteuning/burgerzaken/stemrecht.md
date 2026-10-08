@@ -51,7 +51,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 49 zijn nee.
+Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -98,4 +98,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 14](../../../../analyses/procesarchitectuur-terugmeldingen.md) (product, open): **UPL:** het product stemrecht heeft als grondslag art. B 1-B 3 en Y 2 Kieswet ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), nr. 398). **GEMMA:** het kiesrecht is een recht van de persoon, geen prestatie van de gemeente. Wat de gemeente levert, is de registratie van de kiesgerechtigdheid en de mededeling op verzoek of iemand als kiezer is geregistreerd ([2026-rijk-kieswet-bwbr0004627](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), art. D 1, D 5). In het model is Stemrecht de dienst die het deelproces Registreren kiesgerechtigdheid realiseert; voorstel: art. D 1 en D 5 als grondslag toevoegen.
+- [Nummer 14](../../../../analyses/procesarchitectuur-terugmeldingen.md) (product, open): **UPL:** het product stemrecht heeft als grondslag art. B 1-B 3 en Y 2 Kieswet ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), nr. 398). **GEMMA:** het kiesrecht is een recht van de persoon, geen prestatie van de gemeente. Wat de gemeente levert, is de registratie van de kiesgerechtigdheid en de mededeling op verzoek of iemand als kiezer is geregistreerd ([2026-rijk-kieswet-bwbr0004627](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), art. D 1, D 5). In het model is Stemrecht de dienst die het bedrijfsproces Registreren kiesgerechtigdheid realiseert; voorstel: art. D 1 en D 5 als grondslag toevoegen.

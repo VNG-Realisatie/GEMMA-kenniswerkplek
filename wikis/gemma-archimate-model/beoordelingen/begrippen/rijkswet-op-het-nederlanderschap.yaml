@@ -132,9 +132,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -212,7 +209,7 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 per_onderwerp:
   burgerzaken:
-  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de diensten Naturalisatieoptie, Naturalisatieverzoek en Verklaring van afstand Nederlandse nationaliteit (UPL nr. 262, 263, 436), gerealiseerd door deelprocessen van het ketenproces Beheren Nederlanderschap.'
+  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de diensten Naturalisatieoptie, Naturalisatieverzoek en Verklaring van afstand Nederlandse nationaliteit (UPL nr. 262, 263, 436), gerealiseerd door bedrijfsprocessen onder het levensloopproces Beheren Nederlanderschap.'
 grondslag: regelgeving
 grondslag_toelichting:
 - De regeling zelf (2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738).

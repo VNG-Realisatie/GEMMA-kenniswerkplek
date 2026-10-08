@@ -145,9 +145,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van de begraafplaats, binnen Beheren begraafplaatsen.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Uitgevoerd door de gemeente; de houder van de bijzondere begraafplaats is aanvrager.
   eigen_besluit:
     waarde: ja
     onderbouwing: Het college geeft toestemming voor de ingebruikneming (art. 41); de raad wijst de grond aan (art. 40 lid 1).
@@ -268,7 +265,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

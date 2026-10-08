@@ -133,7 +133,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: De deelprocessen Verstrekken uittreksels en verklaringen burgerlijke stand (attestatie de vita, BW 1 art. 19k) en Verstrekken persoonsgegevens (bewijs uit de BRP; Utrecht).
+    onderbouwing: De bedrijfsprocessen Verstrekken uittreksels en verklaringen burgerlijke stand (attestatie de vita, BW 1 art. 19k) en Verstrekken persoonsgegevens (bewijs uit de BRP; Utrecht).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
@@ -147,9 +147,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

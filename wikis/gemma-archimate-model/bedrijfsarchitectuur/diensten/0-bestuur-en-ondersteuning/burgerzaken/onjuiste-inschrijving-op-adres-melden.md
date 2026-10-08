@@ -60,7 +60,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 49 zijn nee.
+Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -73,7 +73,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een adresonderzoek en, na onderzoek, een juiste inschrijving op het adres (Utrecht). [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke afnemer die erom vraagt. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, bewoner die meldt dat iemand onterecht op zijn adres staat ingeschreven (Utrecht). [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het deelproces Uitvoeren adresonderzoek (Utrecht; Circulaire adresonderzoek). [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md), [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/2023-rvig-circulaire-adresonderzoek-brp.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Uitvoeren adresonderzoek (Utrecht; Circulaire adresonderzoek). [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md), [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/2023-rvig-circulaire-adresonderzoek-brp.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product van de gemeente (Utrecht); geen bredere dienst in deze wiki. [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) |
 
 ### Relaties

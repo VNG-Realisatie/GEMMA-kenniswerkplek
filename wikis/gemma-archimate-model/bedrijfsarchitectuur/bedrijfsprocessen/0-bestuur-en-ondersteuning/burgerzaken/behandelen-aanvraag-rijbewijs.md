@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: deelproces
+procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
 - Afgeven rijbewijs (wet)
@@ -41,7 +41,7 @@ Het in ontvangst nemen en beoordelen van een aanvraag voor een rijbewijs, tot de
 
 De aanvrager dient de aanvraag in bij de burgemeester van de gemeente waar hij als ingezetene staat, aan de balie op afspraak, met een ingevuld formulier, een identiteitsbewijs of eerder rijbewijs en een pasfoto; de burgemeester raadpleegt de basisregistratie personen (Wegenverkeerswet 1994 art. 113; Reglement rijbewijzen art. 27, 33; Utrecht). Verlengen en een categorie-uitbreiding kan ook online via de RDW met DigiD; de gemeente reikt het rijbewijs dan alleen uit (Utrecht). Een spoedaanvraag kost extra en levert sneller (Utrecht).
 
-Degene die afgeeft verschaft zich zekerheid over de identiteit en vergewist zich dat de bescheiden en de voorwaarden kloppen: de leeftijd, de rijvaardigheid en geschiktheid, geen ontzegging of invordering, en bij vernieuwing het eerdere rijbewijs en zo nodig een in het rijbewijzenregister geregistreerde verklaring van geschiktheid (Wegenverkeerswet 1994 art. 111, 112, 113; Reglement rijbewijzen art. 35). Die controle van de verklaring van geschiktheid, die het CBR registreert (art. 97), is een onderdeel van dit deelproces (UPL nr. 362 rijbewijs gezondheidsverklaring; Reglement rijbewijzen art. 35, 45). Daarna neemt de burgemeester het besluit tot afgifte (Wegenverkeerswet 1994 art. 116, 118a).
+Degene die afgeeft verschaft zich zekerheid over de identiteit en vergewist zich dat de bescheiden en de voorwaarden kloppen: de leeftijd, de rijvaardigheid en geschiktheid, geen ontzegging of invordering, en bij vernieuwing het eerdere rijbewijs en zo nodig een in het rijbewijzenregister geregistreerde verklaring van geschiktheid (Wegenverkeerswet 1994 art. 111, 112, 113; Reglement rijbewijzen art. 35). Die controle van de verklaring van geschiktheid, die het CBR registreert (art. 97), is een onderdeel van dit bedrijfsproces (UPL nr. 362 rijbewijs gezondheidsverklaring; Reglement rijbewijzen art. 35, 45). Daarna neemt de burgemeester het besluit tot afgifte (Wegenverkeerswet 1994 art. 116, 118a).
 
 Bij vermissing legt de aanvrager een proces-verbaal van vermissing of diefstal over, op ambtseed opgemaakt door een opsporingsambtenaar (Reglement rijbewijzen art. 39 lid 1); Utrecht spreekt van een vermissingsverklaring die men aan de balie invult, een verschil dat uit de bronnen niet te verklaren is (verificatie nodig). Een aanvrager die niet als ingezetene staat ingeschreven, dient de aanvraag in bij de burgemeester van zijn woonplaats, die haar doorgeleidt naar de RDW; die geeft dan af (Reglement rijbewijzen art. 29, 105 lid 2).
 
@@ -55,12 +55,12 @@ Bij vermissing legt de aanvrager een proces-verbaal van vermissing of diefstal o
 
 ### Typering
 
-Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Beheren rijbewijzen](beheren-rijbewijzen.md).
+- **Procesniveau**: bedrijfsproces.
+- **Procesindeling naar kernobject, onderdeel van**: [Beheren rijbewijzen](beheren-rijbewijzen.md).
 - **Kernobject**: [Rijbewijs](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md).
 - **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Behandelen aanvraag product*. Een aanvraag voor een product dat de gemeente na een toets op identiteit en voorwaarden afgeeft; GEMMA noemt het rijbewijs in de functie Officiële documenten verstrekking.
 - **Afnemer**: extern.
@@ -68,7 +68,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 44 zijn nee.
+Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -84,7 +84,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, het besluit tot afgifte van een nieuw, vernieuwd of vervangend rijbewijs, of de weigering (Wegenverkeerswet 1994 art. 112, 116, 118a, 119, 120). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke aanvraag. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, wegenverkeerswet 1994 art. 111 tot en met 120 en Reglement rijbewijzen art. 26 tot en met 45 (bevoegde autoriteit, bescheiden, vernieuwing, vermissing). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren rijbewijzen: het ontstaan van het rijbewijs. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
+| **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren rijbewijzen: het ontstaan van het rijbewijs. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, het besluit tot afgifte of de weigering door de burgemeester (Wegenverkeerswet 1994 art. 111, 112, 116, 118a). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de diensten Rijbewijs aanvragen en Rijbewijs verlengen (UPL nr. 360, 363). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
@@ -130,4 +130,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 18](../../../../analyses/procesarchitectuur-terugmeldingen.md) (product, open): **UPL:** het product rijbewijs gezondheidsverklaring (nr. 362) staat als zelfstandig product onder taakveld 0.2, met als grondslag art. 100 Reglement rijbewijzen ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md)). **GEMMA:** de gezondheidsverklaring is geen zelfstandige dienst maar een onderdeel (subdienst) van het besluit over de aanvraag van een rijbewijs, want de gemeente heeft er geen eigen handeling voor. Art. 100 gaat over de aanvraag van een verklaring van geschiktheid bij het CBR: de aanvrager overlegt de gezondheidsverklaring aan het CBR, dat de verklaring registreert ([2026-rijk-reglement-rijbewijzen-bwbr0008074](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), art. 97, 100). De gemeente verkoopt of ontvangt geen gezondheidsverklaring ([2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs.md)) en controleert alleen als onderdeel van Behandelen aanvraag rijbewijs of een vereiste verklaring van geschiktheid is geregistreerd (art. 35, 45). In het model is het daarom geen element: het begrip staat in de begrippenlijst als onderdeel van de dienst Rijbewijs aanvragen en van het deelproces Behandelen aanvraag rijbewijs; voorstel: de UPL laat het product vervallen of beschrijft het als onderdeel van het product rijbewijs, met art. 35 en 45 als grondslag.
+- [Nummer 18](../../../../analyses/procesarchitectuur-terugmeldingen.md) (product, open): **UPL:** het product rijbewijs gezondheidsverklaring (nr. 362) staat als zelfstandig product onder taakveld 0.2, met als grondslag art. 100 Reglement rijbewijzen ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md)). **GEMMA:** de gezondheidsverklaring is geen zelfstandige dienst maar een onderdeel (subdienst) van het besluit over de aanvraag van een rijbewijs, want de gemeente heeft er geen eigen handeling voor. Art. 100 gaat over de aanvraag van een verklaring van geschiktheid bij het CBR: de aanvrager overlegt de gezondheidsverklaring aan het CBR, dat de verklaring registreert ([2026-rijk-reglement-rijbewijzen-bwbr0008074](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), art. 97, 100). De gemeente verkoopt of ontvangt geen gezondheidsverklaring ([2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs.md)) en controleert alleen als onderdeel van Behandelen aanvraag rijbewijs of een vereiste verklaring van geschiktheid is geregistreerd (art. 35, 45). In het model is het daarom geen element: het begrip staat in de begrippenlijst als onderdeel van de dienst Rijbewijs aanvragen en van het bedrijfsproces Behandelen aanvraag rijbewijs; voorstel: de UPL laat het product vervallen of beschrijft het als onderdeel van het product rijbewijs, met art. 35 en 45 als grondslag.

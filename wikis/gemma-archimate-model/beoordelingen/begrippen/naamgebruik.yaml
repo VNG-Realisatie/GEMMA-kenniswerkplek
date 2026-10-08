@@ -128,9 +128,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -192,7 +189,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 genoemd_begrip: Ingeschreven persoon
-toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: de aanduiding naamgebruik met vier waarden (HUP Wijziging naamgebruik). Het verzoek is de dienst Naamgebruik verzoek aanduiding, het deelproces Wijzigen naamgebruik.'
+toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: de aanduiding naamgebruik met vier waarden (HUP Wijziging naamgebruik). Het verzoek is de dienst Naamgebruik verzoek aanduiding, het bedrijfsproces Wijzigen naamgebruik.'
 synoniemen:
 - naam: Achternaamgebruik
   context: beleid

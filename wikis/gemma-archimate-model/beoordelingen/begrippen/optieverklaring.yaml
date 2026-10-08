@@ -22,7 +22,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
-    onderbouwing: Het verzoek waarmee Behandelen optieverklaring begint; het bestaat niet los van dat deelproces (Besluit art. 7).
+    onderbouwing: Het verzoek waarmee Behandelen optieverklaring begint; het bestaat niet los van dat bedrijfsproces (Besluit art. 7).
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort bij burgerzaken.
@@ -125,9 +125,6 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:

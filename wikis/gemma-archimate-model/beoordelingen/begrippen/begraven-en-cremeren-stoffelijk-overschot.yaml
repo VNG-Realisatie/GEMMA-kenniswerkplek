@@ -21,7 +21,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Bestaat zelfstandig als het deel van de houder van de begraafplaats of het crematorium binnen het ketenproces Bezorgen stoffelijk overschot (besluit redacteur 2026-10-07).
+    onderbouwing: Bestaat zelfstandig als het deel van de houder van de begraafplaats of het crematorium in de ketensamenwerking Bezorgen stoffelijk overschot (besluit redacteur 2026-10-07).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   betekenis_in_onderwerp:
@@ -140,7 +140,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Bezorgen stoffelijk overschot: het deel van de houder van de begraafplaats of het crematorium, geen deelproces (besluit redacteur 2026-10-07).'
+    onderbouwing: 'Een eigen levensloopproces: het deel van de houder van de begraafplaats of het crematorium in de levensloop van het stoffelijk overschot, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces (besluit redacteur 2026-10-08).'
   omvat_processen:
     waarde: ja
     onderbouwing: Uitvoeren lijkbezorging en Bijzetten of verstrooien van de as (art. 1, 23, 49, 59).
@@ -148,15 +148,9 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_levensloop:
     waarde: ja
-    onderbouwing: 'Omvat het deel van de houder in de levensloop van het stoffelijk overschot: de begraving of crematie, het register, de bewaring van de asbus en de bestemming van de as (art. 23, 50, 59, 62–66a).'
+    onderbouwing: 'Omvat, binnen de ketensamenwerking Bezorgen stoffelijk overschot, het deel van de houder in de levensloop van het stoffelijk overschot: de begraving of crematie, het register, de bewaring van de asbus en de bestemming van de as (art. 23, 50, 59, 62–66a).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Uitgevoerd door de houder van de begraafplaats of het crematorium; de uitvaartondernemer en de nabestaande treden op als klant (art. 18, 62 lid 2; Groningen art. 7 lid 2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
@@ -222,9 +216,9 @@ kenmerken:
 definitie: Het begraven of cremeren van een stoffelijk overschot door de houder van een begraafplaats of crematorium, tot en met de bestemming van de as.
 beschrijving:
 - 'Begraving geschiedt op een begraafplaats, crematie in een crematorium (Wet op de lijkbezorging art. 23, 49). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). De houder van een crematorium houdt een register bij, bewaart de asbus minimaal een maand en zorgt daarna voor de bestemming van de as: bijzetting, verstrooiing of meegeven aan de nabestaande (art. 50, 59, 62).'
-- Het is het deel van de houder van de begraafplaats of het crematorium binnen het ketenproces Bezorgen stoffelijk overschot. De gemeente voert het uit als houder van de gemeentelijke begraafplaats of van een gemeentelijk crematorium (art. 33); bij een bijzondere begraafplaats of een particulier crematorium doet de particuliere houder het.
+- Het is het deel van de houder van de begraafplaats of het crematorium in de ketensamenwerking Bezorgen stoffelijk overschot. De gemeente voert het uit als houder van de gemeentelijke begraafplaats of van een gemeentelijk crematorium (art. 33); bij een bijzondere begraafplaats of een particulier crematorium doet de particuliere houder het.
 naamkeuze:
-- 'Infinitief met object in GEMMA-volgorde: begraven en cremeren zijn de wettelijke wijzen van lijkbezorging bij de houder, met de bestemming van de as als onderdeel (art. 1). Bezorgen en bestemmen is overwogen, maar valt bijna samen met de naam van het ketenproces (besluit redacteur 2026-10-07).'
+- 'Infinitief met object in GEMMA-volgorde: begraven en cremeren zijn de wettelijke wijzen van lijkbezorging bij de houder, met de bestemming van de as als onderdeel (art. 1). Bezorgen en bestemmen is overwogen, maar valt bijna samen met de naam van de ketensamenwerking (besluit redacteur 2026-10-07).'
 kernobject: stoffelijk-overschot
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
@@ -232,7 +226,7 @@ beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
 gemma:
   sterkte: geen
-  onderbouwing: Het GEMMA-model kent geen proces voor begraven en cremeren; Uitbaten gemeentelijke voorzieningen is het generieke proces achter het cluster Uitbaten begraafplaatsen en crematoria, geen match voor dit deel van een ketenproces. Nieuw voor GEMMA.
+  onderbouwing: Het GEMMA-model kent geen proces voor begraven en cremeren; Uitbaten gemeentelijke voorzieningen is het generieke proces achter het cluster Uitbaten begraafplaatsen en crematoria, geen match voor dit deel van een ketensamenwerking. Nieuw voor GEMMA.
 relaties:
 - soort: aggregatie
   naar: uitvoeren-lijkbezorging
@@ -255,11 +249,21 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 23, 49
+- soort: bediening
+  naar: bezorgen-stoffelijk-overschot
+  naam: begraaft of cremeert in
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 23, 49
 vragen: []
 besluiten:
 - datum: '2026-10-07'
   besluit: Nieuw bedrijfsproces voor het deel van de houder van de begraafplaats of het crematorium binnen Bezorgen stoffelijk overschot, met twee deelprocessen. Kernobject Stoffelijk overschot, zoals het ketenproces. Naam Begraven en cremeren stoffelijk overschot.
   gevolg: opnemen
+- datum: '2026-10-08'
+  besluit: 'Levensloopproces van de houder van de begraafplaats of het crematorium voor het stoffelijk overschot, één per partij in de ketensamenwerking: bedient de bedrijfsinteractie Bezorgen stoffelijk overschot in plaats van erin te hangen (procesniveaus volgens GEMMA Online, Proceshiërarchie).'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -270,7 +274,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    procesniveau: levensloopproces
     generiek: false
     typeregel: 17
   bronnen:

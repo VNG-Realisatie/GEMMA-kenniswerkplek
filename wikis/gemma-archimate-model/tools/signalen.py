@@ -11,6 +11,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+import bepaal_type
 import gam_gemeen
 from llmwiki import frontmatter, paths
 
@@ -80,8 +81,9 @@ STRUCTUREEL = ("voorzitter", "lid van", "deel van", "onderdeel", "omvat", "bevat
 
 def indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[tuple[str, dict]],
              gemeld: set[str] = frozenset()) -> list[str]:
-    """Signalen bij stap 7 (indeling): de plaats in de procesindeling naar taak, afwijkingen van het kennismodel. Een
-    element in een procesarchitectuur-terugmelding over het kennismodel (`gemeld`) geeft geen signaal over die afwijking."""
+    """Signalen bij stap 7 (indeling): de plaats in de procesindeling naar kernobject, afwijkingen van het kennismodel.
+    Een element in een procesarchitectuur-terugmelding over het kennismodel (`gemeld`) geeft geen signaal over die
+    afwijking."""
     w = []
     niveau = {b: u.get("procesniveau") for b, u in elementen.items() if u["paginatype"] == "bedrijfsproces"}
     ouders: dict[str, list[str]] = {}
@@ -90,19 +92,17 @@ def indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[t
             ouders.setdefault(r["naar"], []).append(van)
     for bid, n in sorted(niveau.items()):
         boven = [o for o in ouders.get(bid, []) if o in niveau]
-        if n == "ketenproces" and not any(niveau[o] in ("taak", "cluster naar soort werk") for o in boven):
-            w.append(f"{bid}: hangt onder geen taak: aggregatie vanaf een taak ontbreekt (procesindeling naar taak)")
-        if n == "bedrijfsproces" and not any(niveau[o] in ("taak", "cluster naar soort werk", "ketenproces") for o in boven):
-            w.append(f"{bid}: hangt onder geen taak of ketenproces: aggregatie ontbreekt (procesindeling naar taak)")
-        if n == "deelproces" and not any(niveau[o] == "bedrijfsproces" for o in boven):
-            w.append(f"{bid}: deelproces hangt onder geen bedrijfsproces (procesindeling naar taak)")
+        if n == "bedrijfsproces" and not any(niveau[o] == "levensloopproces" for o in boven):
+            w.append(f"{bid}: hangt onder geen levensloopproces: aggregatie vanaf het levensloopproces van het "
+                     "kernobject ontbreekt (procesindeling naar kernobject)")
         if len(boven) > 2:
             w.append(f"{bid}: meer dan twee ouders in de procesindelingen: {', '.join(sorted(boven))}")
-        if n == "deelproces" and bid not in gemeld and any(r["soort"] == "realisatie" and (elementen.get(r["naar"]) or {}).get("paginatype") == "dienst"
-                                     for van, r in relaties if van == bid):
-            w.append(f"{bid}: een deelproces levert een dienst; het kennismodel laat een deelproces een deelservice "
-                     "leveren (regel 398): afwijking, voorstel aan het GEMMA-team")
     for bid, u in sorted(elementen.items()):
+        if u["paginatype"] == "bedrijfsinteractie" and bid not in gemeld and not any(
+                r["soort"] == "bediening" and r["naar"] == bid and niveau.get(van) in ("levensloopproces", "bedrijfsproces")
+                for van, r in relaties):
+            w.append(f"{bid}: geen bedrijfsproces bedient deze bedrijfsinteractie; in een ketensamenwerking komen de "
+                     "bedrijfsprocessen van de partijen samen (GEMMA Online, Proceshiërarchie)")
         if u["paginatype"] == "beleidskader" and not any(
                 {(elementen.get(van) or {}).get("paginatype"), (elementen.get(r["naar"]) or {}).get("paginatype")} >= {"product", "beleidskader"}
                 and bid in (van, r["naar"]) for van, r in relaties):
@@ -232,7 +232,8 @@ def functie_indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties
 
 def over_begrippen(alle: dict[str, dict], uitkomsten: dict[str, dict | None], gemeld: set[str] = frozenset()) -> list[str]:
     w = []
-    elementen = {b: u for b, u in uitkomsten.items() if u and u["soort"] == "element"}
+    elementen = {b: u for b, u in uitkomsten.items() if u and u["soort"] == "element"
+                 and not bepaal_type.is_afgewezen(alle[b])}
     relaties = [(van, r) for van in elementen for r in alle[van].get("relaties", [])]
     for bid, u in elementen.items():
         if u["paginatype"] == "dienst" and not any(r["soort"] == "realisatie" and r["naar"] == bid for _, r in relaties):

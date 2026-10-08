@@ -76,12 +76,12 @@ Bedrijfsobject, niveau subobject. Uitkomst van de beslistabel: Passief (kern ja,
 ### Plaats in de indelingen
 
 - **Objectniveau**: subobject.
-- **Mutaties door deelprocessen**: [Inschrijven op briefadres](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md).
+- **Mutaties door bedrijfsprocessen**: [Inschrijven op briefadres](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

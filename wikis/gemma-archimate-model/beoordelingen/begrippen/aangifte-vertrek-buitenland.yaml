@@ -131,7 +131,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-emigratie-doorgeven
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Verwerken emigratie (HUP Emigratie).
+    onderbouwing: Het bedrijfsproces Verwerken emigratie (HUP Emigratie).
     bronnen:
     - 2026-rvig-hup-emigratie
   leidt_tot_gedrag:
@@ -144,9 +144,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

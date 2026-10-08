@@ -130,9 +130,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -175,7 +172,7 @@ kenmerken:
     onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: De minister geeft de verklaring af binnen het ketenproces dat de gemeente met hem uitvoert; ze is geen invoer voor een gemeentelijk proces (Wet justitiële en strafvorderlijke gegevens art. 30, 37).
+    onderbouwing: De minister geeft de verklaring af binnen de keten die de gemeente met hem uitvoert; ze is geen invoer voor een gemeentelijk proces (Wet justitiële en strafvorderlijke gegevens art. 30, 37).
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   zelfstandig_aanbod:

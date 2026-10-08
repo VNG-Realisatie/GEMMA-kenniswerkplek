@@ -132,7 +132,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Verstrekken uittreksels en verklaringen burgerlijke stand (BW 1 art. 23; Besluit burgerlijke stand art. 26).
+    onderbouwing: Het bedrijfsproces Verstrekken uittreksels en verklaringen burgerlijke stand (BW 1 art. 23; Besluit burgerlijke stand art. 26).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
@@ -146,9 +146,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

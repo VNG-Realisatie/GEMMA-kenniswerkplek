@@ -128,9 +128,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -193,7 +190,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-toelichting: 'Eigenschap van Ingeschreven persoon: zijn identificatienummer. Het wijzigen ervan is het deelproces Wijzigen identificatienummers.'
+toelichting: 'Eigenschap van Ingeschreven persoon: zijn identificatienummer. Het wijzigen ervan is het bedrijfsproces Wijzigen identificatienummers.'
 synoniemen:
 - naam: BSN
   context: dagelijks gebruik

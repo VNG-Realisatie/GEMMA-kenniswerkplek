@@ -129,9 +129,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -207,7 +204,7 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 per_onderwerp:
   burgerzaken:
-  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Reisdocument niet-ingezetene (UPL nr. 356 en 357) en van de deelprocessen waarin de gemeente reisdocumenten aanvraagt, uitreikt en inhoudt.'
+  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Reisdocument niet-ingezetene (UPL nr. 356 en 357) en van de bedrijfsprocessen waarin de gemeente reisdocumenten aanvraagt, uitreikt en inhoudt.'
 grondslag: regelgeving
 grondslag_toelichting:
 - De regeling zelf (2026-rijk-paspoortbesluit-bwbr0044308).

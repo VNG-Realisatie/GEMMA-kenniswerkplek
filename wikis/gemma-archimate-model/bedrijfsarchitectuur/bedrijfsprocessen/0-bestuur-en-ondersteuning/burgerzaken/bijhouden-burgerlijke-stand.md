@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: bedrijfsproces
+procesniveau: levensloopproces
 afnemer: extern
 synoniemen:
 - Houden van de registers van de burgerlijke stand (wet)
@@ -43,7 +43,7 @@ De ambtenaar van de burgerlijke stand maakt de akten op van geboorte, erkenning,
 
 De registers worden aan het eind van het jaar afgesloten; dubbelen en latere vermeldingen gaan naar de centrale bewaarplaats van de minister (Besluit burgerlijke stand art. 6, 7, 31). Een akte is een brondocument voor de BRP: de gemeente verwerkt haar in Bijhouden persoonsgegevens (HUP Algemeen).
 
-De deelprocessen leveren elk een akte, latere vermelding of afschrift, en daarmee de diensten van de burgerlijke stand uit de UPL. Burgemeester en wethouders wijzen de ambtenaren aan en zorgen voor de voorzieningen (BW 1 art. 16, 16d; Besluit burgerlijke stand art. 2-4).
+De bedrijfsprocessen leveren elk een akte, latere vermelding of afschrift, en daarmee de diensten van de burgerlijke stand uit de UPL. Burgemeester en wethouders wijzen de ambtenaren aan en zorgen voor de voorzieningen (BW 1 art. 16, 16d; Besluit burgerlijke stand art. 2-4).
 
 ### Synoniemen
 
@@ -59,13 +59,13 @@ Infinitief met object in GEMMA-volgorde, naar het bedrijfsproces Bijhouden perso
 
 ### Typering
 
-Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: bedrijfsproces.
-- **Procesindeling naar taak, onderdeel van**: [Verzorgen burgerzaken](verzorgen-burgerzaken.md).
-- **Procesindeling naar taak, omvat**: [Behandelen melding voorgenomen huwelijk of partnerschap](behandelen-melding-voorgenomen-huwelijk-of-partnerschap.md), [Inschrijven ontbinding huwelijk of partnerschap](inschrijven-ontbinding-huwelijk-of-partnerschap.md), [Opmaken akte levenloos geboren kind](opmaken-akte-levenloos-geboren-kind.md), [Opmaken akte van erkenning](opmaken-akte-van-erkenning.md), [Opmaken akte van naamskeuze](opmaken-akte-van-naamskeuze.md), [Opmaken akte van overlijden](opmaken-akte-van-overlijden.md), [Opmaken geboorteakte](opmaken-geboorteakte.md), [Registreren partnerschap](registreren-partnerschap.md), [Toevoegen latere vermelding](toevoegen-latere-vermelding.md), [Verstrekken uittreksels en verklaringen burgerlijke stand](verstrekken-uittreksels-en-verklaringen-burgerlijke-stand.md), [Voltrekken huwelijk](voltrekken-huwelijk.md), [Wijzigen geslachtsvermelding](wijzigen-geslachtsvermelding.md).
+- **Procesniveau**: levensloopproces.
+- **Procesindeling naar kernobject, omvat**: [Behandelen melding voorgenomen huwelijk of partnerschap](behandelen-melding-voorgenomen-huwelijk-of-partnerschap.md), [Inschrijven ontbinding huwelijk of partnerschap](inschrijven-ontbinding-huwelijk-of-partnerschap.md), [Opmaken akte levenloos geboren kind](opmaken-akte-levenloos-geboren-kind.md), [Opmaken akte van erkenning](opmaken-akte-van-erkenning.md), [Opmaken akte van naamskeuze](opmaken-akte-van-naamskeuze.md), [Opmaken akte van overlijden](opmaken-akte-van-overlijden.md), [Opmaken geboorteakte](opmaken-geboorteakte.md), [Registreren partnerschap](registreren-partnerschap.md), [Toevoegen latere vermelding](toevoegen-latere-vermelding.md), [Verstrekken uittreksels en verklaringen burgerlijke stand](verstrekken-uittreksels-en-verklaringen-burgerlijke-stand.md), [Voltrekken huwelijk](voltrekken-huwelijk.md), [Wijzigen geslachtsvermelding](wijzigen-geslachtsvermelding.md).
+- **Beleidsdomeinindeling**: beleidsdomein Burgerzaken, taakveld 0 Bestuur en Ondersteuning (van het kernobject).
 - **Kernobject**: [Akte van de burgerlijke stand](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md).
 - **Functie-indeling naar domein, bediend door**: [Burgerlijke stand diensten](../../../bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md).
 - **Afnemer**: extern.
@@ -73,7 +73,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 46 zijn nee.
+Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -89,7 +89,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een akte of een latere vermelding in de registers, en afschriften en uittreksels daarvan (BW 1 art. 18, 20, 23). [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk geval dat zich voordoet. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, titel 4 Boek 1 BW (art. 16-29) en het Besluit burgerlijke stand 1994. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van de akte: opmaken, latere vermeldingen, aanvulling of verbetering, afsluiten en overbrengen van de registers (BW 1 art. 18, 20, 24; Besluit burgerlijke stand art. 6, 7, 31). [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van de akte: opmaken, latere vermeldingen, aanvulling of verbetering, afsluiten en overbrengen van de registers (BW 1 art. 18, 20, 24; Besluit burgerlijke stand art. 6, 7, 31). [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
 
 ### Relaties
@@ -128,7 +128,6 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | [Besluit burgerlijke stand 1994](../../../../motivatie/beleidskaders/besluit-burgerlijke-stand-1994.md) | is grondslag voor *associatie (gericht)* | Bijhouden burgerlijke stand | [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) (art. 5-7, 26) |
 | [Burgerlijk Wetboek Boek 1](../../../../motivatie/beleidskaders/burgerlijk-wetboek-boek-1.md) | is grondslag voor *associatie (gericht)* | Bijhouden burgerlijke stand | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 16a, 18) |
 | [Burgerlijke stand diensten](../../../bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md) | bedient *bediening* | Bijhouden burgerlijke stand | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (BW 1 art. 16a; UPL taakveld 0.2) |
-| [Verzorgen burgerzaken](verzorgen-burgerzaken.md) | omvat *aggregatie* | Bijhouden burgerlijke stand | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 16a, 17) |
 
 ## Herkomst
 
@@ -144,4 +143,4 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 ### Afstemming met GEMMA
 
-Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor de burgerlijke stand; de functie Burgerlijke stand diensten bedient het, en het generieke proces Behandelen aangifte of melding is het patroon voor de deelprocessen op aangifte.
+Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor de burgerlijke stand; de functie Burgerlijke stand diensten bedient het, en het generieke proces Behandelen aangifte of melding is het patroon voor de bedrijfsprocessen op aangifte.

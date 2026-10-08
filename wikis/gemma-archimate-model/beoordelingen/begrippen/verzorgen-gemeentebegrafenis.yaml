@@ -134,7 +134,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Bezorgen stoffelijk overschot (kennismodel: een ketenproces bevat bedrijfsprocessen), geen deelproces.'
+    onderbouwing: Een eigen levensloopproces met kernobject Gemeentebegrafenis, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces (besluit redacteur 2026-10-08).
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.
@@ -144,15 +144,12 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-vng-ggm-2-5-1
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Uitgevoerd door de gemeente.
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
   levert_aanbod:
     waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit deelproces levert.
+    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces levert.
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -236,6 +233,13 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21, 22
+- soort: bediening
+  naar: bezorgen-stoffelijk-overschot
+  naam: zorgt voor de bezorging in
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 21
 onderwerpen:
 - lijkbezorging
 kernobject: gemeentebegrafenis
@@ -247,6 +251,9 @@ besluiten:
 - datum: '2026-10-05'
   besluit: 'Stoffelijk overschot in lopende tekst: twee keer in de beschrijving; lijkschouwing en lijkbezorging blijven (vaste termen).'
   gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: Levensloopproces van de gemeentebegrafenis; bedient de bedrijfsinteractie Bezorgen stoffelijk overschot in plaats van erin te hangen.
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -257,7 +264,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    procesniveau: levensloopproces
     generiek: false
     typeregel: 17
   bronnen:

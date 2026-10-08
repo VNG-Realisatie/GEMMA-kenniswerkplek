@@ -91,13 +91,13 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 ### Plaats in de indelingen
 
 - **Objectniveau**: kernobject.
-- **Levensloop bepaald door**: [Behandelen aanvraag reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Beheren reisdocumenten](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md), [Inhouden reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Uitreiken reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-reisdocument.md), [Vervallen verklaren reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md), [Verwerken vermissing reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md).
-- **Mutaties door deelprocessen**: [Behandelen aanvraag reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Inhouden reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Uitreiken reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-reisdocument.md), [Vervallen verklaren reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md), [Verwerken vermissing reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md).
+- **Levensloop bepaald door**: [Beheren reisdocumenten](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md).
+- **Mutaties door bedrijfsprocessen**: [Behandelen aanvraag reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Inhouden reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Uitreiken reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-reisdocument.md), [Vervallen verklaren reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md), [Verwerken vermissing reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

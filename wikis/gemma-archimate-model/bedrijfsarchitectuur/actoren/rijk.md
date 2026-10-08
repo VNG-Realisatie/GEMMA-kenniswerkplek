@@ -58,7 +58,7 @@ Actor. Uitkomst van de beslistabel: Handelende partij (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -69,7 +69,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **handelende partij**: Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren? | Ja, een partij die activiteiten uitvoert: beslist over naturalisatie, houdt registers bij en laat documenten maken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Paspoortwet art. 2 lid 3). [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, bestaat los van elke verantwoordelijkheid in burgerzaken, met eigen taken op vele terreinen. [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) |
 | **eigen rechtspersoon**: Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | Ja, de Staat is rechtspersoon (BW Boek 2 art. 1); de ministers zijn zijn organen. [BW Boek 2](../../bronanalyses/lijkbezorging/2026-rijk-bw2-rechtspersonen.md) |
-| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, ketenpartner in het ketenproces Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; besluit redacteur 2026-10-07). [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, ketenpartner in Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; besluit redacteur 2026-10-07). [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, de bestuurslaag als geheel, waarmee elke gemeente in dezelfde rol te maken heeft; zo ook Provincie en Waterschap (besluit redacteur 2026-10-07). Afzonderlijke ministeries en rijksdiensten zijn geen eigen actor. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere actor in deze wiki. [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 

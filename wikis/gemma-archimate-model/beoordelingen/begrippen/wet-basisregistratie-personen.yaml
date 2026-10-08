@@ -140,9 +140,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -203,7 +200,7 @@ kenmerken:
     - 2026-rvig-hup-algemeen
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 2.8, 2.23, 2.25, 2.38, 2.39, 2.43, 2.55, 2.56a, 2.57, 2.58, 2.59, 2.66 en 3.22: grondslag van de BRP-items in de UPL, die de deelprocessen van Bijhouden persoonsgegevens leveren.'
+    onderbouwing: 'Art. 2.8, 2.23, 2.25, 2.38, 2.39, 2.43, 2.55, 2.56a, 2.57, 2.58, 2.59, 2.66 en 3.22: grondslag van de BRP-items in de UPL, die de bedrijfsprocessen onder Bijhouden persoonsgegevens leveren.'
     bronnen:
     - 2026-rijk-wet-brp-bwbr0033715
     - 2025-vng-upl-producten-en-diensten-extern
@@ -228,7 +225,7 @@ naamkeuze:
 - De naam is de titel van de wet (BWBR0033715), zoals een beleidskader heet (precedent Wet op de lijkbezorging); Wet BRP is de afkorting in dagelijks gebruik en blijft synoniem.
 per_onderwerp:
   burgerzaken:
-  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De BRP-items zijn diensten die deelprocessen van Bijhouden persoonsgegevens realiseren; de wet is daarom grondslag van die diensten en deelprocessen (UPL nr. 1, 6, 62, 85 tot en met 95, 257, 335, 369, 424) en niet van een product.'
+  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De BRP-items zijn diensten die bedrijfsprocessen onder Bijhouden persoonsgegevens realiseren; de wet is daarom grondslag van die diensten en bedrijfsprocessen (UPL nr. 1, 6, 62, 85 tot en met 95, 257, 335, 369, 424) en niet van een product.'
 grondslag: regelgeving
 grondslag_toelichting:
 - De wet zelf (BWBR0033715), zoals de UPL haar als grondslag noemt en het Besluit BRP haar uitwerkt (Wet BRP art. 1.1–1.10).
@@ -361,7 +358,7 @@ relaties:
   naar: bewijs-van-nederlanderschap
   naam: is grondslag voor
   grondslag: bron
-  bronnen: &id001
+  bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 62, art. 2.55
@@ -369,13 +366,17 @@ relaties:
   naar: brp-uittreksel-met-gezag
   naam: is grondslag voor
   grondslag: bron
-  bronnen: *id001
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 94, art. 2.55
 - soort: associatie (gericht)
   naar: persoonsgegevens-verklaring-onder-eed-of-belofte
   naam: is grondslag voor
   grondslag: bron
-  bronnen: *id001
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 335, art. 2.8
 besluiten:
 - datum: '2026-10-07'

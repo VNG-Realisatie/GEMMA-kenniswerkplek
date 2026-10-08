@@ -139,7 +139,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Begraven en cremeren stoffelijk overschot, binnen het ketenproces Bezorgen stoffelijk overschot: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59).'
+    onderbouwing: 'Draagt bij aan het levensloopproces Begraven en cremeren stoffelijk overschot: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -148,9 +148,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van het lijk, binnen Bezorgen stoffelijk overschot.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Uitgevoerd door de houder van het crematorium of de plaats van bijzetting; de nabestaande geeft opdracht als klant (art. 62 lid 2).
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan; alleen voor incidentele asverstrooiing is toestemming van het college nodig (Groningen art. 21).
@@ -260,7 +257,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

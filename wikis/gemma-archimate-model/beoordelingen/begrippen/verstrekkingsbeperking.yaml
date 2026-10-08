@@ -128,9 +128,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -193,7 +190,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-toelichting: 'Eigenschap van Ingeschreven persoon: een aantekening (indicatie geheim) op de persoonslijst die de verstrekking aan bepaalde derden beperkt. Het vastleggen ervan is het deelproces Behandelen verzoek om geheimhouding.'
+toelichting: 'Eigenschap van Ingeschreven persoon: een aantekening (indicatie geheim) op de persoonslijst die de verstrekking aan bepaalde derden beperkt. Het vastleggen ervan is het bedrijfsproces Behandelen verzoek om geheimhouding.'
 synoniemen:
 - naam: Geheimhouding
   context: beleid

@@ -131,7 +131,7 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Verstrekken persoonsgegevens (NVVB Schema).
+    onderbouwing: Het bedrijfsproces Verstrekken persoonsgegevens (NVVB Schema).
     bronnen:
     - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
   leidt_tot_gedrag:
@@ -144,9 +144,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

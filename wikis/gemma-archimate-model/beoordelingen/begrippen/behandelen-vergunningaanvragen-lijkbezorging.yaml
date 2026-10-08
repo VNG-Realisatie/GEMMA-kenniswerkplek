@@ -9,7 +9,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
     waarde: ja
-    onderbouwing: De deelprocessen zijn gemeentelijk gedrag (zie elk deelproces).
+    onderbouwing: De bedrijfsprocessen zijn gemeentelijk gedrag (zie elk bedrijfsproces).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
@@ -20,7 +20,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een eigen groepering van deelprocessen van één soort werk.
+    onderbouwing: Een eigen groepering van bedrijfsprocessen van één soort werk.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   betekenis_in_onderwerp:
@@ -77,7 +77,7 @@ kenmerken:
     onderbouwing: Wordt niet per geval doorlopen; een groepering van processen.
   groepeert_processen:
     waarde: ja
-    onderbouwing: Groepeert de deelprocessen van één soort werk binnen de taak Verzorgen lijkbezorging, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing (besluit redacteur 2026-10-04).
+    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing (besluit redacteur 2026-10-04).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-vng-gemma-2026-10-02
@@ -136,16 +136,13 @@ kenmerken:
     - 2025-groningen-algemene-plaatselijke-verordening
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Omvat deelprocessen van verschillende kernobjecten, niet de levensloop van één.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Een groepering, geen uitvoering.
+    onderbouwing: Omvat bedrijfsprocessen van verschillende kernobjecten, niet de levensloop van één.
   eigen_besluit:
     waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
   levert_aanbod:
     waarde: nee
-    onderbouwing: Levert zelf geen aanbod; dat doen de deelprocessen.
+    onderbouwing: Levert zelf geen aanbod; dat doen de bedrijfsprocessen.
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -204,7 +201,7 @@ kenmerken:
     onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het behandelen van aanvragen om een vergunning, verlof of toestemming voor de lijkbezorging en voor begraafplaatsen en crematoria.
 beschrijving:
-- 'Binnen de lijkbezorging verleent de gemeente op aanvraag verloven, vergunningen en toestemmingen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), een andere termijn (art. 17), de vergunning tot opgraving (art. 29), de toestemming voor een bijzondere begraafplaats (art. 40, 41), de vergunning voor een bijzonder crematorium (art. 53), het verlof tot ontleding (art. 68), het laissez-passer voor lijken (Besluit op de lijkbezorging art. 11), de vergunning grafbedekking (Groningen art. 22) en de toestemming voor asverstrooiing (APV Groningen art. 5:27 lid 3; Groningen art. 21). Het cluster groepeert deze deelprocessen als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.'
+- 'Binnen de lijkbezorging verleent de gemeente op aanvraag verloven, vergunningen en toestemmingen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), een andere termijn (art. 17), de vergunning tot opgraving (art. 29), de toestemming voor een bijzondere begraafplaats (art. 40, 41), de vergunning voor een bijzonder crematorium (art. 53), het verlof tot ontleding (art. 68), het laissez-passer voor lijken (Besluit op de lijkbezorging art. 11), de vergunning grafbedekking (Groningen art. 22) en de toestemming voor asverstrooiing (APV Groningen art. 5:27 lid 3; Groningen art. 21). Het cluster groepeert deze bedrijfsprocessen als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.'
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
@@ -213,7 +210,7 @@ gemma:
   onderbouwing: Een nieuw cluster; het specialiseert het GEMMA-proces Behandelen aanvraag vergunning of ontheffing (zie Generiek GEMMA-element).
 gemma_generiek:
   id: id-85fdb525-85a2-40d0-b90c-f4cfd4306ef7
-  onderbouwing: Elk deelproces behandelt een aanvraag om een vergunning, verlof of toestemming.
+  onderbouwing: Elk bedrijfsproces behandelt een aanvraag om een vergunning, verlof of toestemming.
 relaties:
 - soort: aggregatie
   naar: verlenen-verlof-tot-begraving-of-crematie

@@ -26,7 +26,7 @@ kenmerken:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Deelproces van Afgeven verklaring omtrent het gedrag in burgerzaken.
+    onderbouwing: Bedrijfsproces onder Afgeven verklaring omtrent het gedrag in burgerzaken.
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   gedrag:
@@ -141,19 +141,17 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Afgeven verklaring omtrent het gedrag: het deel van de gemeente, geen deelproces (besluit redacteur 2026-10-07).'
+    waarde: ja
+    onderbouwing: 'Een bedrijfsproces binnen het levensloopproces Afgeven verklaring omtrent het gedrag: het deel dat de gemeente voor de minister uitvoert, in het orkestratiemodel (art. 30, 35-37; IK 27).'
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-vng-gemma-impact-ketensamenwerking
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: ja
-    onderbouwing: 'Omvat het deel van de gemeente in de levensloop van de verklaring: de ontvangst van de aanvraag, het onderzoek van de volledigheid en de identiteit, de doorzending aan de minister en de vergoeding (Wet justitiële en strafvorderlijke gegevens art. 30, 39).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  meer_organisaties:
     waarde: nee
-    onderbouwing: Uitgevoerd door de burgemeester; de minister onderzoekt het gedrag en beslist, maar voert dit deel niet mee uit (art. 30, 37).
+    onderbouwing: 'Omvat één stap in de levensloop van de verklaring: de ontvangst, het onderzoek van de volledigheid en de identiteit en de doorzending aan de minister (art. 30); de afgifte is van de minister.'
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   eigen_besluit:
@@ -227,7 +225,7 @@ definitie: Het in ontvangst nemen van een VOG-aanvraag, het controleren van de v
 beschrijving:
 - De aanvrager die als ingezetene in de gemeente staat, dient de aanvraag van een natuurlijk persoon in bij de burgemeester, online met een scan van het formulier van de werkgever of aan de balie op afspraak met dat formulier en een identiteitsbewijs, en betaalt direct (Wet justitiële en strafvorderlijke gegevens art. 30, 32, 33; Utrecht). De burgemeester onderzoekt de volledigheid van de gegevens, verschaft zich zekerheid over de identiteit en zendt de aanvraag terstond door aan de minister; de gemeente is de minister een vergoeding verschuldigd voor aanvragen die bij haar zijn ingediend (art. 30 lid 2 en 4, 39).
 - De minister van Justitie en Veiligheid, in de praktijk Justis, onderzoekt het gedrag en beslist binnen vier weken en stuurt de aanvrager bericht (art. 35 tot en met 37; Utrecht); de gemeente reikt de verklaring niet uit. Een aanvraag van een rechtspersoon, van wie niet als inwoner in de BRP staat ingeschreven, of die de werkgever rechtstreeks bij Justis doet, loopt buiten de gemeente om (art. 30 lid 1, 31; Utrecht).
-- Het is het deel van de gemeente binnen het ketenproces Afgeven verklaring omtrent het gedrag.
+- Het is het deel dat de gemeente voor de minister uitvoert, binnen het levensloopproces Afgeven verklaring omtrent het gedrag.
 synoniemen:
 - naam: Doorzenden aanvraag verklaring omtrent het gedrag
   context: wet
@@ -266,11 +264,17 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Van deelproces naar bedrijfsproces: het deel van de gemeente binnen Afgeven verklaring omtrent het gedrag, met kernobject Verklaring omtrent het gedrag zoals het ketenproces; het realiseert de dienst Verklaring omtrent gedrag aanvragen. Het deel van de minister blijft in de beschrijving van het ketenproces.'
   gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: 'Bedrijfsproces onder het levensloopproces Afgeven verklaring omtrent het gedrag, in het orkestratiemodel: het deel dat de gemeente voor de minister uitvoert. Specialiseert het GEMMA-proces Leveren dienst aan derden en realiseert de dienst Verklaring omtrent gedrag aanvragen.'
+  gevolg: verwerkt
+gemma_generiek:
+  id: id-874c14bc-24ec-409a-9d68-56d7c4f18eb7
+  onderbouwing: 'De gemeente voert de ontvangst en het onderzoek van de aanvraag uit voor de minister, die over de verklaring beslist (art. 30, 37): een dienst aan een ketenpartner, zoals GEMMA Leveren dienst aan derden beschrijft (''een (deel)proces dat aan de gemeente is uitbesteed'').'
 status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 28
+    regel: 29
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -282,6 +286,16 @@ afgeleid:
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  - 2026-vng-gemma-impact-ketensamenwerking
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: wet
+  gemma_generiek:
+    gemma_id: id-874c14bc-24ec-409a-9d68-56d7c4f18eb7
+    gemma_naam: Leveren dienst aan derden
+    gemma_type: business-process
+    gemma_definitie: Het leveren van een dienst aan een (keten)partner conform eerder gemaakte samenwerkingsafspraken. Het kan bijvoorbeeld gaan om een (deel)proces dat aan de gemeente is uitbesteed, of om het geven van advies.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 874c14bc-24ec-409a-9d68-56d7c4f18eb7
   pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-verklaring-omtrent-het-gedrag.md

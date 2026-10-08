@@ -132,7 +132,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Inschrijven ontbinding huwelijk of partnerschap (BW 1 art. 163).
+    onderbouwing: Het bedrijfsproces Inschrijven ontbinding huwelijk of partnerschap (BW 1 art. 163).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
   leidt_tot_gedrag:
@@ -145,9 +145,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

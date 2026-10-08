@@ -71,7 +71,7 @@ kenmerken:
     - 2026-rijk-bw2-rechtspersonen
   vervult_een_rol:
     waarde: ja
-    onderbouwing: 'Ketenpartner in het ketenproces Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; besluit redacteur 2026-10-07).'
+    onderbouwing: 'Ketenpartner in Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; besluit redacteur 2026-10-07).'
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   voert_gedrag_uit:
@@ -141,9 +141,6 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  meer_organisaties:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   eigen_besluit:

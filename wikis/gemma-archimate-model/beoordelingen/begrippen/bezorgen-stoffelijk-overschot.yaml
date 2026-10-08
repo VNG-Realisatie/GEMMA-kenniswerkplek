@@ -73,10 +73,10 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
   per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per overledene doorlopen, van overlijden tot de bezorging van het lijk en de bestemming van de as (art. 3, 16, 59).
+    waarde: nee
+    onderbouwing: 'Geen eigen reeks activiteiten van één partij: een ketensamenwerking waarin de levensloopprocessen van de partijen samenkomen (GEMMA Online, Proceshiërarchie).'
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-gemma-proceshierarchie
   groepeert_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -90,11 +90,15 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   gezamenlijk_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+    waarde: ja
+    onderbouwing: 'De gemeente als overheid, de houder van de begraafplaats of het crematorium en de officier van justitie voeren het samen uit, elk onder eigen verantwoordelijkheid: bij een niet-natuurlijke dood geeft de officier de verklaring van geen bezwaar af, zonder welke geen verlof wordt verleend, en een vervroegde uitvaart vraagt zijn instemming (art. 10, 12, 17); de houder begraaft of cremeert (art. 23, 49). Niemand stuurt het geheel aan: een estafette (IK 27-34), in ArchiMate een bedrijfsinteractie waarin de bedrijfsprocessen van de partijen samenkomen (PH 144, 146).'
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-gemma-proceshierarchie
+    - 2026-vng-gemma-impact-ketensamenwerking
   toegewezen_partij:
     waarde: ja
-    onderbouwing: 'In de deelprocessen: Gemeentelijke lijkschouwer, Ambtenaar van de burgerlijke stand, Houder van de begraafplaats, Houder van het crematorium en Beslisser; de officier van justitie als ketenpartner (art. 3, 11, 12, 21, 23, 49).'
+    onderbouwing: 'Ketenpartner (de officier van justitie, art. 10, 12, 17), naast de rollen van de gemeente in de bedienende processen: Gemeentelijke lijkschouwer, Ambtenaar van de burgerlijke stand, Houder van de begraafplaats, Houder van het crematorium en Beslisser (art. 3, 11, 21, 23, 49).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gebruikt_objecten:
@@ -140,26 +144,19 @@ kenmerken:
     waarde: nee
     onderbouwing: Levert zelf het eindresultaat voor zijn kernobject; geen deel van een groter proces.
   omvat_processen:
-    waarde: ja
-    onderbouwing: Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis, elk het deel van één partij (art. 3, 11, 21, 23, 49).
+    waarde: nee
+    onderbouwing: 'Aggregeert geen processen: de levensloopprocessen van de partijen bedienen de interactie (PH 146).'
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-vng-gemma-proceshierarchie
   omvat_levensloop:
-    waarde: ja
-    onderbouwing: Omvat de levensloop van het lijk, van overlijden tot de bezorging en de bestemming van de as, ook een latere opgraving (art. 1, 3, 29, 59).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  meer_organisaties:
-    waarde: ja
-    onderbouwing: 'De gemeente en de officier van justitie: bij een niet-natuurlijke dood geeft de officier de verklaring van geen bezwaar af, zonder welke geen verlof wordt verleend, en een vervroegde uitvaart vraagt zijn instemming (art. 10, 12, 17).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    waarde: nee
+    onderbouwing: De levensloop omvatten de levensloopprocessen van de partijen, elk voor het eigen deel; de interactie verbindt ze (besluit redacteur 2026-10-08).
   eigen_besluit:
     waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'De deelprocessen leveren het aanbod (Stellen andere termijn: Uitvaart vervroegen of uitstellen).'
+    onderbouwing: 'De bedrijfsprocessen leveren het aanbod (Stellen andere termijn: Uitvaart vervroegen of uitstellen).'
   bedient_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -216,11 +213,11 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Specifiek voor de lijkbezorging.
-definitie: 'Het proces van overlijden tot de bezorging van het stoffelijk overschot: schouwen, verlof verlenen, begraven of cremeren, en zo nodig zorg door de gemeente.'
+definitie: De samenwerking van gemeente, houder van begraafplaats of crematorium en officier van justitie bij de bezorging van een stoffelijk overschot.
 beschrijving:
 - Na het overlijden wordt het stoffelijk overschot geschouwd, verleent de ambtenaar van de burgerlijke stand verlof tot begraving of crematie, en wordt het binnen de wettelijke termijn begraven, gecremeerd of ontleed (Wet op de lijkbezorging art. 3, 11, 16, 67). Zorgt niemand anders voor de bezorging, dan draagt de burgemeester er zorg voor (art. 21); bij een besmet stoffelijk overschot kan hij maatregelen treffen (art. 22a). Ook een latere opgraving hoort bij de levensloop van het stoffelijk overschot (art. 29).
-- 'Het is een ketenproces: bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar afgeeft voordat verlof kan worden verleend (art. 10, 12); een vervroegde uitvaart vraagt ook zijn instemming (art. 17). De uitvaartondernemer regelt de uitvaart namens de nabestaanden (RVO).'
-- 'Elk deel van één partij is een bedrijfsproces: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet (besluit redacteur 2026-10-07).'
+- 'Het is een ketensamenwerking: bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar afgeeft voordat verlof kan worden verleend (art. 10, 12); een vervroegde uitvaart vraagt ook zijn instemming (art. 17). De uitvaartondernemer regelt de uitvaart namens de nabestaanden (RVO).'
+- 'Elke partij voert haar deel uit in een eigen levensloopproces, dat de ketensamenwerking bedient: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet. Niemand stuurt het geheel aan (estafette); het ketenproces erboven is geen element (besluit redacteur 2026-10-08).'
 kernobject: stoffelijk-overschot
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
@@ -230,41 +227,6 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor de lijkbezorging; nieuw voor GEMMA.
 relaties:
-- soort: aggregatie
-  naar: toestaan-lijkbezorging
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 3, 11, 17, 22a, 29, 68
-- soort: aggregatie
-  naar: begraven-en-cremeren-stoffelijk-overschot
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 1, 23, 49, 59
-- soort: aggregatie
-  naar: verzorgen-gemeentebegrafenis
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 21, 22
-- soort: aggregatie
-  naar: overlijden
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 3, 16
-- soort: aggregatie
-  naar: besmet-stoffelijk-overschot-gemeld
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 22a; Wpg art. 27 lid 3
 - soort: toegang (bijwerken)
   naar: stoffelijk-overschot
   naam: bezorgt
@@ -282,20 +244,30 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Aggregeert alleen bedrijfsprocessen: Toestaan lijkbezorging (gemeente als overheid, acht deelprocessen), Begraven en cremeren stoffelijk overschot (houder, twee deelprocessen) en Verzorgen gemeentebegrafenis.'
   gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: 'Estafette: gemeente, houder en officier van justitie werken elk onder eigen verantwoordelijkheid samen, zonder aansturing van het geheel (IK 27-34; PH 144). Wordt een bedrijfsinteractie met kernobject Stoffelijk overschot, bediend door Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis; de aggregaties worden bedieningen, Besmet stoffelijk overschot gemeld gaat naar Toestaan lijkbezorging en Overlijden start de interactie. Het object in Archi (Bezorgen lijken) vervalt: proces naar interactie is een typewijziging (regel Objectbehoud); de interactie is een nieuw object.'
+  gevolg: opnemen
+  redenen:
+  - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
 status: goedgekeurd
 afgeleid:
   uitkomst:
     soort: element
-    regel: 28
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
+    regel: 39
+    toelichting: Gedrag, *gezamenlijk gedrag* (kern ja, 2/2)
+    paginatype: bedrijfsinteractie
+    archimate_type: business-interaction
+    voorleggen: true
+    redenen:
+    - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
     data_object: nee
-    procesniveau: ketenproces
     generiek: false
     typeregel: 17
+  voor_te_leggen:
+  - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-gemma-proceshierarchie
+  - 2026-vng-gemma-impact-ketensamenwerking
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bezorgen-stoffelijk-overschot.md
+  pad: bedrijfsarchitectuur/bedrijfsinteracties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bezorgen-stoffelijk-overschot.md

@@ -155,9 +155,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Beheren graven.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Uitgevoerd door de gemeente.
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
@@ -275,7 +272,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

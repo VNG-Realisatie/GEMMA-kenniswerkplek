@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: deelproces
+procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
 - Omwisselen buitenlands rijbewijs (beleid)
@@ -51,12 +51,12 @@ Of omwisselen kan en wat daarvoor nodig is, bepaalt de RDW; voor een rijbewijs u
 
 ### Typering
 
-Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Beheren rijbewijzen](beheren-rijbewijzen.md).
+- **Procesniveau**: bedrijfsproces.
+- **Procesindeling naar kernobject, onderdeel van**: [Beheren rijbewijzen](beheren-rijbewijzen.md).
 - **Kernobject**: [Rijbewijs](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md).
 - **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Behandelen aanvraag product*. Een aanvraag voor een product dat de gemeente na een toets op identiteit en voorwaarden ontvangt; hier beslist de RDW.
 - **Afnemer**: extern.
@@ -64,14 +64,14 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de UPL noemt de omwisseling van een buitenlands rijbewijs als eigen product (nr. 361); Utrecht heeft er een eigen productpagina voor (Reglement rijbewijzen art. 28, 45). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs buitenland omwisselen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester neemt de aanvraag in ontvangst, controleert haar, neemt het buitenlandse rijbewijs in en geleidt de aanvraag door naar de RDW (Reglement rijbewijzen art. 28, 109; Utrecht). [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs buitenland omwisselen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen aanvraag waarvoor de RDW afgeeft en de gemeente alleen ontvangt en doorgeleidt (Reglement rijbewijzen art. 28, 105 lid 2). [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, deelproces van Beheren rijbewijzen in burgerzaken. [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, bedrijfsproces onder Beheren rijbewijzen in burgerzaken. [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs buitenland omwisselen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) |
 | **per keer doorlopen**: Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? | Ja, wordt per aanvraag van begin tot eind doorlopen. [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs buitenland omwisselen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, de Houder van het rijbewijs vraagt aan en levert het buitenlandse rijbewijs in (Reglement rijbewijzen art. 27, 45, 109; Utrecht). [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs buitenland omwisselen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) |
@@ -80,7 +80,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, de ontvangen aanvraag met het ingeleverde buitenlandse rijbewijs, doorgeleid naar de RDW voor de beslissing (Reglement rijbewijzen art. 28, 109; Utrecht). [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs buitenland omwisselen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke aanvraag. [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs buitenland omwisselen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, reglement rijbewijzen art. 28, 45 en 105 tot en met 109: aanvraag via de burgemeester, afgifte door de RDW, vereisten voor een rijbewijs uit een andere lidstaat, inname van het buitenlandse rijbewijs. [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren rijbewijzen: het ontstaan van het Nederlandse rijbewijs bij een buitenlands rijbewijs. [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
+| **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren rijbewijzen: het ontstaan van het Nederlandse rijbewijs bij een buitenlands rijbewijs. [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de dienst Rijbewijs buitenlands omwisseling (UPL nr. 361). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Rijbewijs buitenland omwisselen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, specialisatie van Behandelen aanvraag rijbewijs met een eigen afgever, de RDW, en een eigen eis, het inleveren van het buitenlandse rijbewijs (Reglement rijbewijzen art. 28, 105, 109). [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 

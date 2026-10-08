@@ -55,13 +55,13 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 ### Plaats in de indelingen
 
 - **Objectniveau**: kernobject.
-- **Levensloop bepaald door**: [Behandelen verzoek om kiezerspas](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-kiezerspas.md), [Behandelen verzoek om volmacht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-volmacht.md), [Beheren stempassen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md), [Verstrekken stempas](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-stempas.md).
-- **Mutaties door deelprocessen**: [Behandelen verzoek om kiezerspas](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-kiezerspas.md), [Behandelen verzoek om volmacht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-volmacht.md), [Verstrekken stempas](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-stempas.md).
+- **Levensloop bepaald door**: [Beheren stempassen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md).
+- **Mutaties door bedrijfsprocessen**: [Behandelen verzoek om kiezerspas](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-kiezerspas.md), [Behandelen verzoek om volmacht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-volmacht.md), [Verstrekken stempas](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-stempas.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -77,7 +77,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Specialisaties
 
-- **Vervangende stempas**: Nieuwe stempas op verzoek als de stempas in het ongerede is of niet is ontvangen; de oude wordt ongeldig (Kieswet art. J 7a lid 2 onder b, J 8). Geen eigen pagina: dezelfde gegevens en hetzelfde deelproces.
+- **Vervangende stempas**: Nieuwe stempas op verzoek als de stempas in het ongerede is of niet is ontvangen; de oude wordt ongeldig (Kieswet art. J 7a lid 2 onder b, J 8). Geen eigen pagina: dezelfde gegevens en hetzelfde bedrijfsproces.
 - **Kiezerspas**: Verklaring op verzoek waarmee de kiezer in een stembureau naar keuze in het gebied van de verkiezing kan stemmen; ze komt in de plaats van de stempas, die ongeldig wordt, en wordt niet vervangen (Kieswet art. K 1, K 4, J 7a lid 2 onder a). Geen eigen pagina; de dienst Kiezerspas levert haar.
 
 ### Relaties

@@ -12,10 +12,13 @@ Het bestand is bedoeld om in Archi te bekijken (File › Open) en om in het GEMM
   skill wat een oudere datum heeft (volledige sync).
 
 Indelingen (analyses/indelingen.md): een element krijgt de eigenschappen procesniveau, objectniveau en zijn indelingsvelden;
-een aggregatie tussen processen heeft `indeling` en `procesniveau` ("taak → bedrijfsproces"), een aggregatie tussen
-functies, en van een functie naar een product of dienst, `indeling`; een functie hangt alleen op domeinniveau (GEMMA type
-*Bedrijfsfunctie domein*) aan de domeingroepering, daaronder aan haar bovenliggende functie; een product of dienst aan een functie; een proces zonder GEMMA-match
-staat in de map `Procesindeling naar taak`; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
+een aggregatie tussen processen heeft `indeling` en `procesniveau` ("levensloopproces → bedrijfsproces"), een aggregatie
+tussen functies, en van een functie naar een product of dienst, `indeling`; een functie hangt alleen op domeinniveau (GEMMA
+type *Bedrijfsfunctie domein*) aan de domeingroepering, daaronder aan haar bovenliggende functie; een product of dienst aan
+een functie; een proces zonder GEMMA-match staat in de map `Procesindeling naar kernobject`, een bedrijfsinteractie in de
+map `Ketensamenwerking` (zoals in GEMMA); een levensloopproces zonder GEMMA-match krijgt GEMMA type *Bedrijfsproces
+(cluster)* en valt, net als een bedrijfsinteractie, in de Beleidsdomeinindeling onder het beleidsdomein van zijn
+kernobject; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
 letterlijk meegaat); beleidsdomein en domein worden een aggregatie vanuit de bestaande GEMMA-groepering, of vanuit een
 nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type `Groep`).
 
@@ -81,6 +84,7 @@ def vast_id(*delen: str) -> str:
 
 
 OBJECTEN = Path("beoordelingen") / "objecten.yaml"
+BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
 
 
 def object_sleutels(register: dict | None) -> dict[str, str]:
@@ -208,6 +212,7 @@ class Bouwer:
                                   else Map(vast_id("map", soort), soort.capitalize(), soort))
         self._index = {m.id: m for m in self.wortel.values()}
         self.meegenomen: set[str] = set()  # GEMMA-elementen die letterlijk meegaan als doel van een relatie
+        self.beschreven: set[str] = set()  # GEMMA-groeperingen met de beschrijving uit het register van beleidsdomeinen
         self.relatie_ids: set[str] = set()
 
     def gemma_map(self, map_id: str) -> Map:
@@ -326,11 +331,14 @@ def _relatie(b: Bouwer, uit: Uitkomst, gemma_relaties: dict, rtype: str, bron: s
 
 
 EIGENSCHAPPEN_INDELING = ("afnemer", "domein", "doelgroep", "regelgever", "kernobject", "taakveld", "beleidsdomein")
+PROCESINDELING = "Procesindeling naar kernobject"
+GEMMA_TYPE_LEVENSLOOP = "Bedrijfsproces (cluster)"  # GEMMA type van de clusters in het processenlandschap
 
 
 def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstempel: str, concept: bool = False,
          log: str = "", wiki_yaml: dict | None = None, objecten: dict | None = None,
-         vorige: dict[str, str] | None = None, kennismodel: dict | None = None) -> Uitkomst:
+         vorige: dict[str, str] | None = None, kennismodel: dict | None = None,
+         beleidsdomeinen: dict[str, dict] | None = None) -> Uitkomst:
     uit = Uitkomst()
     sleutels = object_sleutels(objecten)
     sleutel = lambda bid: sleutels.get(bid, bid)  # noqa: E731
@@ -365,6 +373,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
         if data.get("definitie"):
             ET.SubElement(el, "documentation").text = data["definitie"]
         paren = _gemma_eigen(g["eigenschappen"]) if g is not None else []
+        if g is None and afgeleid["uitkomst"].get("procesniveau") == "levensloopproces":
+            paren.append(("GEMMA type", GEMMA_TYPE_LEVENSLOOP))
         paren += [(eig("id"), bid), *b.gemeen("gekoppeld" if g is not None else "nieuw"),
                   (eig("status"), data.get("status", "")),
                   (eig("GEMMA-match"), (data.get("gemma") or {}).get("sterkte", "") if g is not None else ""),
@@ -389,7 +399,9 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             uit.nieuw.append({"id": bid, "naam": data["begrip"]})
             map_naam = Path(page_types.get(afgeleid["uitkomst"].get("paginatype"), {}).get("dir", atype)).name.capitalize()
             if afgeleid["uitkomst"].get("paginatype") == "bedrijfsproces":
-                map_naam = "Procesindeling naar taak"
+                map_naam = PROCESINDELING
+            if afgeleid["uitkomst"].get("paginatype") == "bedrijfsinteractie":
+                map_naam = "Ketensamenwerking"
             submappen = page_types.get(afgeleid["uitkomst"].get("paginatype"), {}).get("submappen", ["taakveld", "beleidsdomein"])
             doel = b.eigen_map(bovenste_map(atype), [n for n in (map_naam, *(data.get(s) for s in submappen)) if n])
         _eigenschappen(el, paren)
@@ -430,11 +442,11 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                       (eig("vindplaats"), r.get("vindplaats", ""))]
             bron_u, doel_u = data["afgeleid"]["uitkomst"], gekozen[r["naar"]]["afgeleid"]["uitkomst"]
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == doel_u.get("paginatype") == "bedrijfsproces":
-                paren += [(eig("indeling"), "Procesindeling naar taak"),
+                paren += [(eig("indeling"), PROCESINDELING),
                           (eig("procesniveau"), f"{bron_u.get('procesniveau')} → {doel_u.get('procesniveau')}")]
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == "bedrijfsproces" \
                     and doel_u.get("paginatype") == "gebeurtenis":
-                paren.append((eig("indeling"), "Procesindeling naar taak"))
+                paren.append((eig("indeling"), PROCESINDELING))
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == "bedrijfsfunctie" \
                     and doel_u.get("paginatype") in ("bedrijfsfunctie", "product", "dienst"):
                 paren.append((eig("indeling"), "Functie-indeling naar domein"))
@@ -449,7 +461,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                 b.eigen_map("relations", []).objecten.append(el)
 
     _gemma_specialisaties(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
-    _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
+    _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels, beleidsdomeinen)
     if kennismodel:
         _kennismodel(b, uit, kennismodel)
     uit.zonder_plaats = _zonder_plaats(b, gekozen, ids)
@@ -485,16 +497,19 @@ def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: d
 # De indelingen die een element in een bestaande GEMMA-groepering plaatsen: paginatype → (indeling, soort).
 BELEIDSDOMEIN_TYPEN = ("bedrijfsobject", "product", "dienst", "beleidskader")
 DOMEIN_TYPEN = ("bedrijfsfunctie", "product", "dienst")
-# Een taak (procescluster) valt ook in de Beleidsdomeinindeling: boven haar staat in de Procesindeling naar taak niets.
+# Een levensloopproces en een bedrijfsinteractie vallen ook in de Beleidsdomeinindeling, onder het beleidsdomein van hun
+# kernobject: daarboven staat in de Procesindeling naar kernobject niets (besluit 2026-10-08).
 DOELGROEP_TYPEN = ("actor", "rol", "bedrijfssamenwerking", "kanaal")
 
 
 def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict,
-                sleutels: dict[str, str] | None = None) -> None:
+                sleutels: dict[str, str] | None = None, beleidsdomeinen: dict[str, dict] | None = None) -> None:
     """Aggregaties vanuit de GEMMA-groepering van de Beleidsdomeinindeling en de Functie-indeling naar domein, en vanuit
     de GEMMA-rol van de Doelgroepindeling; een beleidsdomein dat GEMMA niet kent wordt een nieuwe groepering onder het
-    taakveld."""
+    taakveld. De beschrijving uit het register van beleidsdomeinen wordt de documentatie van een nieuwe groepering, en
+    bij een GEMMA-groepering een wiki-eigenschap: de documentatie van GEMMA blijft (besluit redacteur 2026-10-08)."""
     nieuwe: dict[str, str] = {}
+    register = beleidsdomeinen or {}
 
     def aggregatie(groep_id: str, element: str, indeling: str, bid: str, gemma_groep: dict | None = None) -> None:
         if gemma_groep is not None and groep_id not in ids.values():
@@ -509,8 +524,9 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
         paginatype = data["afgeleid"]["uitkomst"].get("paginatype")
         element = ids[bid]
         beleidsdomein = data.get("beleidsdomein")
-        taak = paginatype == "bedrijfsproces" and data["afgeleid"]["uitkomst"].get("procesniveau") == "taak"
-        if (paginatype in BELEIDSDOMEIN_TYPEN or taak) and beleidsdomein:
+        bovenaan = paginatype == "bedrijfsinteractie" or (
+            paginatype == "bedrijfsproces" and data["afgeleid"]["uitkomst"].get("procesniveau") == "levensloopproces")
+        if (paginatype in BELEIDSDOMEIN_TYPEN or bovenaan) and beleidsdomein:
             groep = _vind_groepering(gemma_data, "Beleidsdomein", beleidsdomein)
             if groep is None:
                 if beleidsdomein not in nieuwe:
@@ -518,8 +534,12 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
                     nieuwe[beleidsdomein] = gid
                     taakveld = data.get("taakveld")
                     el = ET.Element("element", {XSI: "archimate:Grouping", "name": beleidsdomein, "id": gid})
+                    bd = register.get(beleidsdomein) or {}
+                    if bd.get("beschrijving"):
+                        ET.SubElement(el, "documentation").text = "\n\n".join(bd["beschrijving"])
                     _eigenschappen(el, [("GEMMA type", "Beleidsdomein"), (eig("id"), f"beleidsdomein:{beleidsdomein}"),
-                                        *b.gemeen("nieuw"), (eig("taakveld"), taakveld or "")])
+                                        *b.gemeen("nieuw"), (eig("taakveld"), taakveld or ""),
+                                        (eig("bronnen"), "; ".join(bd.get("bronnen", [])))])
                     b.eigen_map("other", ["Beleidsdomeinindeling", taakveld] if taakveld else ["Beleidsdomeinindeling"]).objecten.append(el)
                     uit.groeperingen_nieuw.append(f"{beleidsdomein} (taakveld {taakveld or '—'})")
                     ouder = _vind_taakveld(gemma_data, taakveld) if taakveld else None
@@ -530,6 +550,13 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
                 aggregatie(nieuwe[beleidsdomein], element, "Beleidsdomeinindeling", bid)
             else:
                 aggregatie(groep["id"], element, "Beleidsdomeinindeling", bid, groep)
+                bd = register.get(beleidsdomein) or {}
+                if bd.get("beschrijving") and groep["id"] not in b.beschreven:
+                    b.beschreven.add(groep["id"])
+                    obj = next((o for m in b.wortel.values() for o in _alle_objecten(m) if o.get("id") == groep["id"]), None)
+                    if obj is not None:
+                        _eigenschappen(obj, [(eig("beschrijving"), "\n\n".join(bd["beschrijving"])),
+                                             (eig("bronnen"), "; ".join(bd.get("bronnen", [])))])
         if paginatype in DOMEIN_TYPEN and paginatype != "product" and not signalen.is_domeinfunctie(data, gemma_data):
             # een dienst of functie onder domeinniveau: de aggregatie vanaf de (bovenliggende) functie, een relatie in
             # de beoordeling; een product en een functie op domeinniveau hangen aan de domeingroepering
@@ -563,6 +590,11 @@ WIKI_GROEP = "Kennismodel-wiki"
 TOEGANG_NAAM = {v: k for k, v in ACCESS_TYPE.items() if k} | {"2": "toegang"}
 # Typen met meer dan één concept in het kennismodel: het concept waar de wiki-relaties aan hangen.
 CONCEPT_VOORKEUR = {"driver": "Beleidskader", "grouping": "Groep", "business-role": "Rol", "requirement": "Implicatie"}
+# Typen die de wiki gebruikt en die ook Over GEMMA niet kent: een eigen concept in de groep Kennismodel-wiki.
+WIKI_CONCEPT = {"business-interaction": (
+    "Bedrijfsinteractie", "Gezamenlijk gedrag van twee of meer partijen of rollen, zoals een ketensamenwerking waarin de "
+    "bedrijfsprocessen van de partijen samenkomen (GEMMA Online, Proceshiërarchie; in het GEMMA-model het element "
+    "Ketensamenwerking). Het GEMMA-kennismodel kent het type (nog) niet.")}
 # Laag → groep onder de groep Kennismodel; elementen van een andere laag (strategie, overig) hangen aan Kennismodel zelf.
 KENNISMODEL_DEELGROEPEN = {"business": "Bedrijfsarchitectuur", "application": "Applicatiearchitectuur",
                            "technology": "Technische architectuur", "motivation": "Motivatie"}
@@ -686,8 +718,14 @@ def _kennismodel_wiki(b: Bouwer, uit: Uitkomst, kennismodel: dict, wiki_gid: str
         if len(kandidaten) == 1 or voorkeur:
             concept[t] = (voorkeur or kandidaten)[0][0]
     nieuw: dict[str, str] = {}
+    nieuwe_namen: dict[str, str] = {}
     for t in sorted(set(typen.values()) - set(concept)):
         kandidaten = [(i, e) for i, e in kennismodel["model_elementen"].items() if e["type"] == t]
+        if not kandidaten and t in WIKI_CONCEPT:
+            # Over GEMMA kent het type niet (business-interaction): een eigen concept van de wiki
+            naam, documentatie = WIKI_CONCEPT[t]
+            kandidaten = [(vast_id("kennismodel-wiki", t), {"naam": naam, "documentatie": documentatie, "map": "",
+                                                            "eigenschappen": {}})]
         if len(kandidaten) != 1:
             uit.fouten.append(f"kennismodel: het type {t} heeft geen concept in het kennismodel en Over GEMMA heeft er "
                               f"{len(kandidaten)}; kies er één in CONCEPT_VOORKEUR")
@@ -700,6 +738,7 @@ def _kennismodel_wiki(b: Bouwer, uit: Uitkomst, kennismodel: dict, wiki_gid: str
         laag = KENNISMODEL_LAGEN.get(e["map"].split(" / ")[0], bovenste_map(t))
         b.eigen_map(laag, [KENNISMODEL_GROEP]).objecten.append(el)
         concept[t] = nieuw[t] = i
+        nieuwe_namen[i] = e["naam"]
         uit.kennismodel_wiki.append(f"element {e['naam']} ({t})")
     bekend = {(r["type"], kennismodel["elementen"][r["bron"]]["type"], kennismodel["elementen"][r["doel"]]["type"])
               for r in kennismodel["relaties"].values()}
@@ -711,7 +750,7 @@ def _kennismodel_wiki(b: Bouwer, uit: Uitkomst, kennismodel: dict, wiki_gid: str
             continue
         toegang = r.get("accessType") if rtype == "access-relationship" else None
         groepen.setdefault((rtype, bron, doel, toegang), []).append(r)
-    namen = {i: e["naam"] for i, e in kennismodel["model_elementen"].items()}
+    namen = {i: e["naam"] for i, e in kennismodel["model_elementen"].items()} | nieuwe_namen
     if not groepen and not nieuw:
         return
     groep(wiki_gid, WIKI_GROEP, "Wat de inhoud van de wiki gebruikt en het GEMMA-kennismodel (nog) niet heeft: elementtypen "
@@ -754,7 +793,8 @@ def _indeling_van(obj: ET.Element) -> str | None:
 def _zonder_plaats(b: Bouwer, gekozen: dict, ids: dict) -> list[str]:
     """De elementen die in geen enkele indeling staan (besluit 2026-10-04: alles wordt ingedeeld, geen wezen). Een
     element staat in een indeling als een aggregatie met een indeling naar haar wijst of als zij een specialisatie met een
-    indeling heeft. Een taak staat in de Beleidsdomeinindeling (besluit 2026-10-04)."""
+    indeling heeft. Een levensloopproces en een bedrijfsinteractie staan in de Beleidsdomeinindeling (besluit
+    2026-10-08)."""
     geplaatst = set()
     for m in b.wortel.values():
         for r in _alle_objecten(m):
@@ -861,6 +901,8 @@ def main(argv: list[str] | None = None) -> int:
     begrippen = {bid: data for bid, (_, data) in beoordeling.alle(args.wiki, wiki_yaml).items()}
     log = (args.wiki / "log.md").read_text(encoding="utf-8") if (args.wiki / "log.md").exists() else ""
     objecten = beoordeling.laad(args.wiki / OBJECTEN) if (args.wiki / OBJECTEN).exists() else None
+    beleidsdomeinen = {x["beleidsdomein"]: x for x in beoordeling.laad(args.wiki / BELEIDSDOMEINEN).get("beleidsdomeinen", [])} \
+        if (args.wiki / BELEIDSDOMEINEN).exists() else None
     vorige = vorige_typen(args.wiki / EXPORT)
     kennismodel = None
     km_config = wiki_yaml.get("kennismodel") or {}
@@ -872,7 +914,7 @@ def main(argv: list[str] | None = None) -> int:
         else:
             fouten.append(f"kennismodel: bron {km_pad} ontbreekt (wiki.yaml kennismodel.bron)")
     uit = Uitkomst() if fouten else bouw(gemma_data, begrippen, gemma_bron, tijdstempel, args.concept, log, wiki_yaml,
-                                         objecten, vorige, kennismodel)
+                                         objecten, vorige, kennismodel, beleidsdomeinen)
     fouten += uit.fouten
     fouten += [f"{naam}: geen plaats in een indeling (elk element staat in minstens één indeling)" for naam in uit.zonder_plaats]
     for f in fouten:

@@ -236,15 +236,16 @@ def _indeling_begrippen():
     beschikking = element("Beschikking", "business-object", "bedrijfsobject", gemma_id="id-beschikking",
                           taakveld="Bestuur", beleidsdomein="Besluitvorming")
     beschikking["afgeleid"]["uitkomst"]["objectniveau"] = "generiek"
-    taak = element("Verzorgen lijkbezorging", "business-process", "bedrijfsproces",
-                   relaties=[{"soort": "aggregatie", "naar": "opgraven-lijk", "grondslag": "bron", "bronnen": ["2026-bron"]}])
-    taak["afgeleid"]["uitkomst"]["procesniveau"] = "taak"
+    levensloop = element("Toestaan lijkbezorging", "business-process", "bedrijfsproces", kernobject="lijk",
+                         relaties=[{"soort": "aggregatie", "naar": "opgraven-lijk", "grondslag": "bron",
+                                    "bronnen": ["2026-bron"]}])
+    levensloop["afgeleid"]["uitkomst"]["procesniveau"] = "levensloopproces"
     deel = element("Opgraven lijk", "business-process", "bedrijfsproces", taakveld="Volksgezondheid",
                    beleidsdomein="Begraafplaatsen", kernobject="lijk", afnemer="extern",
                    gemma_generiek={"id": "id-generiek", "onderbouwing": "Een vergunningaanvraag."},
                    relaties=[{"soort": "toegang (registreren)", "naar": "beschikking", "grondslag": "bron",
                               "bronnen": ["2026-bron"], "via": "vergunning-tot-opgraving"}])
-    deel["afgeleid"]["uitkomst"]["procesniveau"] = "deelproces"
+    deel["afgeleid"]["uitkomst"]["procesniveau"] = "bedrijfsproces"
     lijk = element("Lijk", "business-object", "bedrijfsobject", taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen")
     lijk["afgeleid"]["uitkomst"]["objectniveau"] = "kernobject"
     functie = element("Exploiteren van begraafplaatsen", "business-function", "bedrijfsfunctie", domein="Fysieke leefomgeving")
@@ -254,7 +255,7 @@ def _indeling_begrippen():
     nabestaande = element("Nabestaande", "business-role", "rol", doelgroep="inwoners en ondernemers")
     zonder = element("Gemeente", "business-actor", "actor", doelgroep="onbekende groep")
     specialisatie = {"begrip": "Vergunning tot opgraving", "status": "review"}
-    return {"beschikking": beschikking, "verzorgen-lijkbezorging": taak, "opgraven-lijk": deel, "lijk": lijk,
+    return {"beschikking": beschikking, "toestaan-lijkbezorging": levensloop, "opgraven-lijk": deel, "lijk": lijk,
             "exploiteren": functie, "uitvoering-fl": domeinfunctie, "nabestaande": nabestaande, "gemeente": zonder,
             "vergunning-tot-opgraving": specialisatie}
 
@@ -277,26 +278,26 @@ def test_elementen_krijgen_niveau_en_indelingsvelden_als_eigenschap(tmp_path):
     uit, root = _export_indeling(tmp_path)
     assert not uit.fouten, uit.fouten
     deel = _props(_el(root, ae.vast_id("element", "opgraven-lijk")))
-    assert deel["wiki-gemma-model procesniveau"] == "deelproces" and deel["wiki-gemma-model afnemer"] == "extern"
+    assert deel["wiki-gemma-model procesniveau"] == "bedrijfsproces" and deel["wiki-gemma-model afnemer"] == "extern"
     assert deel["wiki-gemma-model kernobject"] == "lijk"
     assert _props(_el(root, ae.vast_id("element", "lijk")))["wiki-gemma-model objectniveau"] == "kernobject"
     assert _props(_el(root, ae.vast_id("element", "exploiteren")))["wiki-gemma-model domein"] == "Fysieke leefomgeving"
     assert _props(_el(root, "id-beschikking"))["wiki-gemma-model objectniveau"] == "generiek"
 
 
-def test_processen_staan_in_de_map_procesindeling_naar_taak(tmp_path):
+def test_processen_staan_in_de_map_procesindeling_naar_kernobject(tmp_path):
     _, root = _export_indeling(tmp_path)
     namen = [n for n, _ in _pad(root, ae.vast_id("element", "opgraven-lijk"))]
-    assert namen == ["Business", "wiki-gemma-model", "Procesindeling naar taak", "Volksgezondheid", "Begraafplaatsen"]
+    assert namen == ["Business", "wiki-gemma-model", "Procesindeling naar kernobject", "Volksgezondheid", "Begraafplaatsen"]
 
 
 def test_aggregatie_tussen_processen_heeft_indeling_en_niveau(tmp_path):
     _, root = _export_indeling(tmp_path)
-    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", ae.vast_id("element", "verzorgen-lijkbezorging"),
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", ae.vast_id("element", "toestaan-lijkbezorging"),
                            ae.vast_id("element", "opgraven-lijk"))
     props = _props(agg)
-    assert props["wiki-gemma-model indeling"] == "Procesindeling naar taak"
-    assert props["wiki-gemma-model procesniveau"] == "taak → deelproces"
+    assert props["wiki-gemma-model indeling"] == "Procesindeling naar kernobject"
+    assert props["wiki-gemma-model procesniveau"] == "levensloopproces → bedrijfsproces"
 
 
 def test_via_wordt_een_eigenschap_van_de_relatie(tmp_path):
@@ -415,12 +416,12 @@ def _export_met(tmp_path, begrippen, objecten=None, vorige=None):
 def test_hernoemd_element_houdt_zijn_archi_object_en_relaties(tmp_path):
     # besluit 2026-10-05: hernoemen, samenvoegen en splitsen zetten een bestaand object voort, zodat views blijven werken
     _, voor = _export_met(tmp_path, _indeling_begrippen())
-    oud_rel = {e.get("id") for e in voor.iter("element") if e.get("source") == ae.vast_id("element", "verzorgen-lijkbezorging")}
+    oud_rel = {e.get("id") for e in voor.iter("element") if e.get("source") == ae.vast_id("element", "toestaan-lijkbezorging")}
     begrippen = _indeling_begrippen()
     deel = begrippen.pop("opgraven-lijk")
     deel["begrip"] = "Opgraven stoffelijk overschot"
     begrippen["opgraven-stoffelijk-overschot"] = deel
-    begrippen["verzorgen-lijkbezorging"]["relaties"][0]["naar"] = "opgraven-stoffelijk-overschot"
+    begrippen["toestaan-lijkbezorging"]["relaties"][0]["naar"] = "opgraven-stoffelijk-overschot"
     objecten = {"objecten": [{"element": "opgraven-stoffelijk-overschot", "object_van": "opgraven-lijk",
                               "wijziging": "hernoemd", "datum": "2026-10-05"}]}
     uit, na = _export_met(tmp_path, begrippen, objecten)
@@ -429,7 +430,7 @@ def test_hernoemd_element_houdt_zijn_archi_object_en_relaties(tmp_path):
     assert el.get("name") == "Opgraven stoffelijk overschot"
     assert _props(el)["wiki-gemma-model id"] == "opgraven-stoffelijk-overschot"
     assert not [e for e in na.iter("element") if e.get("id") == ae.vast_id("element", "opgraven-stoffelijk-overschot")]
-    nieuw_rel = {e.get("id") for e in na.iter("element") if e.get("source") == ae.vast_id("element", "verzorgen-lijkbezorging")}
+    nieuw_rel = {e.get("id") for e in na.iter("element") if e.get("source") == ae.vast_id("element", "toestaan-lijkbezorging")}
     assert nieuw_rel == oud_rel
 
 
@@ -447,10 +448,10 @@ def test_object_sleutels_volgen_een_keten():
 def test_element_zonder_plaats_in_een_indeling_wordt_gemeld(tmp_path):
     uit, _ = _export_indeling(tmp_path)
     # alleen de actor met een onbekende doelgroep staat nergens
-    assert uit.zonder_plaats == ["Gemeente", "Verzorgen lijkbezorging"]
+    assert uit.zonder_plaats == ["Gemeente", "Toestaan lijkbezorging"]
 
 
-def test_gebeurtenis_hangt_onder_het_proces_in_de_procesindeling_naar_taak(tmp_path):
+def test_gebeurtenis_hangt_onder_het_proces_in_de_procesindeling_naar_kernobject(tmp_path):
     begrippen = _indeling_begrippen()
     gebeurtenis = _begrip("Overlijden", "business-event", status="review")
     gebeurtenis["afgeleid"]["uitkomst"]["paginatype"] = "gebeurtenis"
@@ -462,17 +463,40 @@ def test_gebeurtenis_hangt_onder_het_proces_in_de_procesindeling_naar_taak(tmp_p
     uit, root = _export_indeling(tmp_path, begrippen)
     (agg,) = _relaties_van(root, "archimate:AggregationRelationship", ae.vast_id("element", "opgraven-lijk"),
                            ae.vast_id("element", "overlijden"))
-    assert _props(agg)["wiki-gemma-model indeling"] == "Procesindeling naar taak"
+    assert _props(agg)["wiki-gemma-model indeling"] == "Procesindeling naar kernobject"
     assert "Overlijden" not in uit.zonder_plaats
 
 
-def test_taak_hangt_onder_haar_beleidsdomein_en_zonder_beleidsdomein_heeft_zij_geen_plaats(tmp_path):
+def test_levensloopproces_hangt_onder_zijn_beleidsdomein_met_gemma_type_cluster(tmp_path):
     begrippen = _indeling_begrippen()
-    begrippen["verzorgen-lijkbezorging"].update(taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen")
+    begrippen["toestaan-lijkbezorging"].update(taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen")
     uit, root = _export_indeling(tmp_path, begrippen)
     nieuw = ae.vast_id("groepering", "beleidsdomein", "Begraafplaatsen")
-    assert _relaties_van(root, "archimate:AggregationRelationship", nieuw, ae.vast_id("element", "verzorgen-lijkbezorging"))
-    assert "Verzorgen lijkbezorging" not in uit.zonder_plaats
+    assert _relaties_van(root, "archimate:AggregationRelationship", nieuw, ae.vast_id("element", "toestaan-lijkbezorging"))
+    assert "Toestaan lijkbezorging" not in uit.zonder_plaats
+    assert _props(_el(root, ae.vast_id("element", "toestaan-lijkbezorging")))["GEMMA type"] == "Bedrijfsproces (cluster)"
+    assert "GEMMA type" not in _props(_el(root, ae.vast_id("element", "opgraven-lijk")))  # een bedrijfsproces niet
+    # een bedrijfsproces hangt niet aan het beleidsdomein, alleen onder zijn levensloopproces
+    assert not _relaties_van(root, "archimate:AggregationRelationship", nieuw, ae.vast_id("element", "opgraven-lijk"))
+
+
+def test_bedrijfsinteractie_staat_in_de_map_ketensamenwerking_onder_het_beleidsdomein(tmp_path):
+    begrippen = _indeling_begrippen()
+    keten = _begrip("Bezorgen lijken", "business-interaction", status="review", taakveld="Volksgezondheid",
+                    beleidsdomein="Begraafplaatsen", kernobject="lijk")
+    keten["afgeleid"]["uitkomst"]["paginatype"] = "bedrijfsinteractie"
+    begrippen["bezorgen-lijken"] = keten
+    begrippen["opgraven-lijk"]["relaties"].append(
+        {"soort": "bediening", "naar": "bezorgen-lijken", "grondslag": "bron", "bronnen": ["2026-bron"]})
+    uit, root = _export_indeling(tmp_path, begrippen)
+    assert not uit.fouten, uit.fouten
+    eid = ae.vast_id("element", "bezorgen-lijken")
+    assert _el(root, eid).get("{http://www.w3.org/2001/XMLSchema-instance}type") == "archimate:BusinessInteraction"
+    assert [n for n, _ in _pad(root, eid)][:3] == ["Business", "wiki-gemma-model", "Ketensamenwerking"]
+    assert _relaties_van(root, "archimate:ServingRelationship", ae.vast_id("element", "opgraven-lijk"), eid)
+    assert _relaties_van(root, "archimate:AggregationRelationship",
+                         ae.vast_id("groepering", "beleidsdomein", "Begraafplaatsen"), eid)
+    assert "Bezorgen lijken" not in uit.zonder_plaats
 
 
 def test_taakveld_wordt_op_nummer_gevonden():

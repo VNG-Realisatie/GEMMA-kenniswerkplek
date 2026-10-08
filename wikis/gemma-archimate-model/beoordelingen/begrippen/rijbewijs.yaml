@@ -130,9 +130,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -233,7 +230,7 @@ homoniemen:
   naamkeuze: Deze pagina heet Rijbewijs, het document; de dienst heet Rijbewijs aanvragen, met de UPL-naam rijbewijs als synoniem (precedent Briefadres aanvragen en Stempas ontvangen).
 specialisaties:
 - naam: Beginnersrijbewijs
-  omschrijving: 'Het eerste rijbewijs, tien jaar geldig; de eerste vijf jaar is de straf bij verkeersovertredingen zwaarder (Utrecht). Geen eigen pagina: dezelfde gegevens en hetzelfde deelproces.'
+  omschrijving: 'Het eerste rijbewijs, tien jaar geldig; de eerste vijf jaar is de straf bij verkeersovertredingen zwaarder (Utrecht). Geen eigen pagina: dezelfde gegevens en hetzelfde bedrijfsproces.'
 - naam: Bromfietsrijbewijs
   omschrijving: Voor bromfietsen (categorie AM); aanvragen gaat als een eerste rijbewijs en vraagt geen verklaring van geschiktheid (Utrecht; Reglement rijbewijzen art. 45). Geen eigen pagina.
 - naam: Groot rijbewijs

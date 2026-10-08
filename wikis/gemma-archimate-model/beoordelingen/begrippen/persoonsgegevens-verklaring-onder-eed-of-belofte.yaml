@@ -129,7 +129,7 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Inschrijven ingezetene (HUP Immigratie).
+    onderbouwing: Het bedrijfsproces Inschrijven ingezetene (HUP Immigratie).
     bronnen:
     - 2026-rvig-hup-immigratie
   leidt_tot_gedrag:
@@ -142,9 +142,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

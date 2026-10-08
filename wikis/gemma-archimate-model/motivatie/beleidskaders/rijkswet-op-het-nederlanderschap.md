@@ -41,7 +41,7 @@ De Rijkswet op het Nederlanderschap (BWBR0003738) regelt de verkrijging van rech
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de diensten Naturalisatieoptie, Naturalisatieverzoek en Verklaring van afstand Nederlandse nationaliteit (UPL nr. 262, 263, 436), gerealiseerd door deelprocessen van het ketenproces Beheren Nederlanderschap.
+In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de diensten Naturalisatieoptie, Naturalisatieverzoek en Verklaring van afstand Nederlandse nationaliteit (UPL nr. 262, 263, 436), gerealiseerd door bedrijfsprocessen onder het levensloopproces Beheren Nederlanderschap.
 
 ## Plaats in het model
 
@@ -56,7 +56,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

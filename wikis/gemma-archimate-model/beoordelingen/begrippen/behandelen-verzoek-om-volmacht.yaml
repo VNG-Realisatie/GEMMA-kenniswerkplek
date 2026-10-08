@@ -26,7 +26,7 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: deelproces van Beheren stempassen.'
+    onderbouwing: 'Hoort bij burgerzaken: bedrijfsproces onder Beheren stempassen.'
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
   gedrag:
@@ -146,9 +146,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: ja
     onderbouwing: Een beschikking van de burgemeester op het verzoek (Kieswet art. L 11 lid 1 en 4).
@@ -252,7 +249,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

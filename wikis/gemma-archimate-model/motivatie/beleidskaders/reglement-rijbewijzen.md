@@ -39,7 +39,7 @@ Het Reglement rijbewijzen (BWBR0008074) werkt de Wegenverkeerswet 1994 uit: de a
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-Grondslag van de deelprocessen en diensten van het rijbewijs. Het is de wet die de UPL noemt voor rijbewijs (art. 26), rijbewijs verlengen (art. 35), rijbewijs buitenlands omwisseling (art. 45) en rijbewijs gezondheidsverklaring (art. 100); bij die laatste past de grondslag niet bij een gemeentelijke taak: de gezondheidsverklaring is een onderdeel (subdienst) van Rijbewijs aanvragen (procesarchitectuur-terugmelding).
+Grondslag van de bedrijfsprocessen en diensten van het rijbewijs. Het is de wet die de UPL noemt voor rijbewijs (art. 26), rijbewijs verlengen (art. 35), rijbewijs buitenlands omwisseling (art. 45) en rijbewijs gezondheidsverklaring (art. 100); bij die laatste past de grondslag niet bij een gemeentelijke taak: de gezondheidsverklaring is een onderdeel (subdienst) van Rijbewijs aanvragen (procesarchitectuur-terugmelding).
 
 ## Plaats in het model
 
@@ -54,14 +54,14 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de algemene maatregel van bestuur over rijbewijzen (BWBR0008074); de UPL noemt het als grondslag van vier producten. [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft de burgemeester de aanvraag van een rijbewijs bij de gemeente van inschrijving, de doorgeleiding naar de Dienst Wegverkeer in bepaalde gevallen en de inneming van een buitenlands rijbewijs (art. 27, 28, 29, 109). [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van de deelprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit redacteur 2026-10-07). [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit redacteur 2026-10-07). [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde regeling als geheel (BWBR0008074). [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **landelijk**: Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? | Ja, algemene maatregel van bestuur van het Rijk. [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |

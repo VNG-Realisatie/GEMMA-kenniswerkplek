@@ -28,15 +28,16 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
    - *zelfstandige specialisatie*: kijk eerst naar boven. Zoek de generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek`) en noteer de keten (bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Het kenmerk gaat over de "is een"-relatie, niet over herkomst uit wet of beleid; zie `gemma-archimate-model-assess` §3.
    - *los van verantwoordelijkheid* en *eigen rechtspersoon* beslissen tussen actor, rol en bedrijfssamenwerking. Een actor hangt alleen via een rol aan gedrag en objecten (*vervult een rol*).
    - *gebruikt objecten* en *wordt bewerkt*: noem de handeling uit de vaste reeks (registreren, bijwerken, beëindigen, raadplegen, verstrekken, bewaren, overbrengen, vernietigen).
-   - *Procesniveau* (stap 7): een bedrijfsproces omvat de levensloop van één kernobject (*omvat levensloop*, met `kernobject`); bij meer organisaties is het een ketenproces. Een ketenproces omvat de levensloop over de partijen heen en aggregeert alleen bedrijfsprocessen, nooit rechtstreeks deelprocessen (kennismodel regel 590, 605). Een bedrijfsproces binnen een ketenproces omvat het deel van die levensloop dat één partij uitvoert, met het kernobject van het ketenproces; de partij kan ook de gemeente in een eigen hoedanigheid zijn, zoals houder van de begraafplaats (besluit redacteur 2026-10-07). Een bedrijfsproces met een eigen kernobject kan ook deel zijn van een ketenproces (Verzorgen gemeentebegrafenis). Dit is een lezing van de definities: GEMMA noemt geen levensloop. Een deelproces doet één mutatie of levert één product of dienst (*bijdrage aan groter proces*, met *eigen besluit*, *eigen normering* of *levert aanbod*); een product of dienst valt nooit weg. Een deel zonder dat alles is een processtap: geen pagina. Een groepering van processen (*groepeert processen*) is een taak, of een cluster naar soort werk als `gemma_generiek` is ingevuld.
-   - *Objectniveau* (stap 7): een kernobject wordt bewerkt door één bedrijfs- of ketenproces, plus de bedrijfsprocessen binnen dat ketenproces; een deel van dat object met een eigen deelproces is een subobject, anders een onderdeel zonder pagina. *generiek* voor een object dat in veel onderwerpen voorkomt; *invoer van een ander* krijgt geen pagina. Voor een gebeurtenis, rol of dienst met *generiek*: vul `gemma_generiek`.
+   - *Procesniveau* (stap 7), volgens de ladder van GEMMA Online, Proceshiërarchie (besluit redacteur 2026-10-08): een **levensloopproces** omvat de levensloop van één kernobject, van begin tot eind (*omvat levensloop*, met `kernobject`; *Beheren grafrechten*). Per kernobject is er één; zijn taakveld en beleidsdomein zijn die van het kernobject. Alleen binnen een ketensamenwerking mag een kernobject er meer hebben, één per partij, die samen de bedrijfsinteractie met dat kernobject bedienen (*Toestaan lijkbezorging* door de gemeente als overheid en *Begraven en cremeren stoffelijk overschot* door de houder; de partij kan de gemeente in een eigen hoedanigheid zijn). In GEMMA is het een cluster van bedrijfsprocessen over één thema (GEMMA type *Bedrijfsproces (cluster)*). Een **bedrijfsproces** loopt van klant tot klant en levert een product, dienst of besluit (*bijdrage aan groter proces*, met *eigen besluit*, *eigen normering* of *levert aanbod*; *Verlenen grafrecht*). Het hangt onder één levensloopproces, en vaak specialiseert het een generiek GEMMA-bedrijfsproces (`gemma_generiek`). Een product of dienst valt nooit weg. Een **deelproces** (binnen één bedrijfsfunctie, levert een deeldienst) en een processtap zonder dat alles krijgen geen pagina; de tekst gaat naar het bedrijfsproces. Een groepering van processen (*groepeert processen*) is alleen een cluster naar soort werk, met `gemma_generiek`. De taak is geen procesniveau: boven het levensloopproces staan beleidsdomein en taakveld uit de Beleidsdomeinindeling.
+   - *Ketensamenwerking*: waar de bedrijfsprocessen van meer partijen samenkomen, is dat een **bedrijfsinteractie** (*gezamenlijk gedrag*, met `kernobject`: het object dat door de keten gaat). De bedrijfsprocessen van de partijen bedienen de interactie, en een bedrijfssamenwerking of de rollen van de partijen voeren haar uit (GEMMA Online, Proceshiërarchie; GEMMA-element *Ketensamenwerking*). Een ketenproces erboven is impliciet: het staat alleen in de beschrijving van de interactie en is geen procesniveau en geen element. Een levensloopproces aggregeert dus nooit een ander levensloopproces. Voorleggen: estafette (elke partij verantwoordelijk voor haar deel: een bedrijfsinteractie, zoals *Bezorgen stoffelijk overschot*) of orkestratie (één partij verantwoordelijk, de andere voeren onder haar verantwoordelijkheid een deel uit: geen interactie; voert de gemeente het deel uit, dan specialiseert dat bedrijfsproces het GEMMA-proces *Leveren dienst aan derden*, zoals *Behandelen aanvraag verklaring omtrent het gedrag*). Een vervallen element of een samengevoegd element krijgt het besluit `afwijzen`; de controles op de indeling slaan het over.
+   - *Objectniveau* (stap 7): een kernobject wordt bewerkt door één levensloopproces; een deel van dat object met een eigen bedrijfsproces is een subobject, anders een onderdeel zonder pagina. *generiek* voor een object dat in veel onderwerpen voorkomt; *invoer van een ander* krijgt geen pagina. Voor een gebeurtenis, rol of dienst met *generiek*: vul `gemma_generiek`.
    - *soort partij*: een actor is een partij waarmee elke gemeente in dezelfde rol te maken heeft, zodat het element voor alle gemeenten geldt. Het criterium sluit uit wat bij één of enkele gemeenten hoort (gemeente Utrecht, provincie Utrecht), niet een partij die landelijk maar één keer bestaat: Rijk, Provincie en Waterschap zijn een soort partij (de bestuurslaag als geheel). Een afzonderlijk ministerie of rijksdienst (minister van BZK, IND) is geen eigen actor; die staat in de beschrijving van Rijk (besluit redacteur 2026-10-07).
    - Een doelgroep (minima, jongeren) is geen actor of rol maar een indeling van een actor: *slechts eigenschap* ja, met de actor als `genoemd_begrip`.
    - Een regeling: een concreet benoemde landelijke regeling wordt beleidskader; de soort ("verordening") is het bedrijfsobject Regeling; een gemeentelijke verordening blijft bron; een los artikel is *buiten dit model*.
 4. Vul waar nodig de extra velden in:
    - `genoemd_begrip` bij *slechts eigenschap*, *eigen identiteit* nee (het geheel), *zelfstandige specialisatie* nee (het bredere begrip) of *waarneembare vorm* (het object);
    - `archimate_buiten_model` bij *buiten dit model*;
-   - `kernobject` bij een bedrijfs-, keten- of deelproces: het object waarvan het proces de levensloop omvat of waarin het een mutatie doet (een id van een bedrijfsobject of afspraak);
+   - `kernobject` bij een levensloopproces, bedrijfsproces of bedrijfsinteractie: het object waarvan het proces de levensloop omvat, waarin het een mutatie doet of dat door de keten gaat (een id van een bedrijfsobject of afspraak);
    - `gemma_generiek` (`id`, `onderbouwing`): de specialisatie van een generiek GEMMA-element;
    - de indelingsvelden `domein` (product, dienst, functie), `afnemer` (extern of intern; proces, product, dienst), `doelgroep` (actor, rol, samenwerking, kanaal) en `regelgever` (beleidskader), naast `taakveld` en `beleidsdomein`. Een relatie naar een generiek object noemt zijn specialisatie zonder pagina in `via`.
 5. Leg de beoordeling vast in `beoordelingen/begrippen/<id>.yaml` (schema `schemas/beoordeling.schema.json`, zie skill `gemma-archimate-model-beoordelen`) en draai `uv run python tools/afleiden.py`. De uitkomst is bindend.
@@ -52,7 +53,7 @@ Namen en definities volgen het GEMMA-kennismodel (bron `2026-vng-over-gemma`, be
 | Contract | `bedrijfsobject` (`archimate_type: contract`) | Afspraak | Overeenkomst tussen meerdere partijen betreffende een bepaald onderwerp. (GEMMA) | Een afspraak tussen partijen (overeenkomst, convenant). Een besluit of verordening is géén afspraak. |
 | Product | `product` | Product | Een Product is een gebundeld aanbod van diensten met bijbehorende afspraken, geleverd door een organisatie aan een afnemer en met waarde voor die afnemer. (GEMMA) | Wat de gemeente als geheel aanbiedt (bijv. uit de productencatalogus): diensten met afspraken, geen losse objecten. |
 | Business Service | `dienst` | Dienst | Een afgebakende prestatie van een persoon of organisatie (de dienstverlener), die voorziet in een behoefte van haar omgeving (de dienstafnemer(s)). (NORA) | Wat een afnemer van de gemeente kan krijgen, los van hoe het wordt uitgevoerd; gerealiseerd door een proces of functie. |
-| Business Process | `bedrijfsproces` | Bedrijfsproces | Reeks opeenvolgend uit te voeren activiteiten die bijdraagt aan een specifiek resultaat, zoals de levering van een Product of Dienst. (GEMMA) | Wordt per keer doorlopen en levert een resultaat op. Een rol mag aan een bedrijfsproces of deelproces worden toegewezen. Procesniveau (stap 7): taak of cluster naar soort werk (een groepering, ook een Business Process), ketenproces, bedrijfsproces (één per kernobject, plus de bedrijfsprocessen binnen een ketenproces) of deelproces (één mutatie, besluit, product of dienst). Een processtap krijgt geen pagina. |
+| Business Process | `bedrijfsproces` | Bedrijfsproces | Reeks opeenvolgend uit te voeren activiteiten die bijdraagt aan een specifiek resultaat, zoals de levering van een Product of Dienst. (GEMMA) | Wordt per keer doorlopen en levert een resultaat op. Een rol mag aan een bedrijfsproces of deelproces worden toegewezen. Procesniveau (stap 7): levensloopproces (één per kernobject, GEMMA type *Bedrijfsproces (cluster)*), bedrijfsproces (klant-tot-klant: één mutatie, besluit, product of dienst) of cluster naar soort werk (een groepering, ook een Business Process). Een deelproces en een processtap krijgen geen pagina. |
 | Business Function | `bedrijfsfunctie` | Bedrijfsfunctie | Activiteiten die zijn gegroepeerd omdat daarvoor vergelijkbare bedrijfsmiddelen, kennis of competenties nodig zijn. (GEMMA) | Doorlopende groepering van gedrag; bedient processen. Niet "wat de gemeente kan": dat is een vermogen (Capability). |
 | Business Event | `gebeurtenis` | Gebeurtenis | Iets dat binnen of buiten een organisatie is gebeurd en binnen die organisatie of daarbuiten gevolgen heeft. (GEMMA) | Ogenblikkelijk voorval dat gedrag start of afsluit (verhuizing, aanvraag ontvangen). |
 | Business Actor | `actor` | Actor | Een organisatie, afdeling daarbinnen of persoon die activiteiten kan uitvoeren. (GEMMA) | Persoon, organisatie of eenheid, ook extern of generiek (inwoner), en een samenwerkingsverband met eigen rechtspersoon (GGD). Hangt alleen via een rol aan gedrag en objecten. |
@@ -60,7 +61,7 @@ Namen en definities volgen het GEMMA-kennismodel (bron `2026-vng-over-gemma`, be
 | Business Collaboration | `bedrijfssamenwerking` | Bedrijfssamenwerking | Een bedrijfssamenwerking is een (tijdelijke) samenstelling van twee of meer bedrijfsrollen resulterend in een specifiek collectief gedrag in een bepaalde context. (ArchiMate) | Samenwerkingsverband zonder eigen rechtspersoon (Zorg- en Veiligheidshuis). |
 | Business Interface | `kanaal` | Kanaal | Communicatiekanaal dat bij de dienstverlening wordt gebruikt. Elk kanaal kent verschillende vormen waarin informatie kan worden gedeeld. (NORA) | Loket, website, telefoon. Eén centrale set; een onderwerp koppelt alleen een dienst aan een bestaand kanaal. |
 | Driver | `beleidskader` (map `motivatie/`) | Beleidskader | Beleidskader is gebaseerd op bestaand overheidsbeleid (Nationaal en Europees) en op de instrumenten die in het kader van dat beleid zijn ontwikkeld, zoals wetten, regelgeving, Kamerstukken en bestuursakkoorden (NORA) | Een concreet benoemde rijks- of EU-regeling of VNG-modelverordening die de gemeente een taak, bevoegdheid of plicht geeft. |
-| Business Interaction | herkend | — | A unit of collective business behavior performed by two or more business actors, roles or collaborations. (ArchiMate) | Gezamenlijk gedrag (keukentafelgesprek, zitting). |
+| Business Interaction | `bedrijfsinteractie` | Bedrijfsinteractie | A unit of collective business behavior performed by two or more business actors, roles or collaborations. (ArchiMate) | Gezamenlijk gedrag, zoals een ketensamenwerking waarin de bedrijfsprocessen van de partijen samenkomen (GEMMA: *Ketensamenwerking*), of een keukentafelgesprek. Met een kernobject; elke nieuwe interactie wordt voorgelegd (besluit redacteur 2026-10-08). |
 | Representation | geen pagina | — | A perceptible form of the information carried by a business object. (ArchiMate) | Document, formulier, register, bericht: vermelden bij het object. |
 | Location | geen pagina | — | A conceptual or physical place or position where concepts are located or performed. (ArchiMate) | Fysieke plaats als zodanig; een gebiedsindeling als gegevensconcept is een bedrijfsobject. |
 | Data Object (applicatielaag) | annotatie `data_object` | Data-object | Samenhangende set gegevens die geautomatiseerd kan worden verwerkt. (GEMMA) | Voorbereiding op `applicatiearchitectuur/`; hier alleen als signaal. In GEMMA realiseert een data-object een bedrijfsobject. |
@@ -117,11 +118,11 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 **Soort gedrag.** Alleen bij *gedrag*. Precies één ja.
 
 21. Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? (*per keer doorlopen*)
-22. Is het een groepering van processen rond één taak of één soort werk, die niet per geval wordt doorlopen? (*groepeert processen*)
+22. Is het een groepering van bedrijfsprocessen van één soort werk, die niet per geval wordt doorlopen? (*groepeert processen*)
 23. Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? (*gegroepeerd gedrag*)
 24. Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? (*toestandsverandering*)
 25. Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? (*aangeboden gedrag*)
-26. Kan het alleen door twee of meer partijen samen worden uitgevoerd? (*gezamenlijk gedrag*)
+26. Kan het alleen door twee of meer partijen samen worden uitgevoerd, zoals een ketensamenwerking waarin de bedrijfsprocessen van de partijen samenkomen? (*gezamenlijk gedrag*)
 
 **Gedrag.** Alleen bij *gedrag*; *afnemer* en *benoembaar resultaat* ook bij *aanbod als geheel*.
 
@@ -135,39 +136,38 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 34. Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? Noem die. (*afnemer*)
 35. Is er een proces of functie aanwijsbaar dat de dienst uitvoert? Noem het. (*gerealiseerd door*)
 36. Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? Noem het. (*leidt tot gedrag*)
-37. Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? Noem dat proces. (*bijdrage aan groter proces*)
-38. Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? Noem ze. (*omvat processen*)
-39. Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? Noem het object. (*omvat levensloop*)
-40. Voeren twee of meer organisaties het samen uit, elk vanuit een eigen rol en niet als klant of alleen als adviseur? Noem ze. (*meer organisaties*)
-41. Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. (*eigen besluit*)
-42. Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). (*levert aanbod*)
-43. Ondersteunt de functie aanwijsbaar een proces? Noem het. (*bedient gedrag*)
-44. Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. (*in functie-indeling*)
-45. Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. (*leidt tot gebeurtenis*)
+37. Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? Noem dat proces. (*bijdrage aan groter proces*)
+38. Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? Noem ze. (*omvat processen*)
+39. Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? Noem het object. (*omvat levensloop*)
+40. Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. (*eigen besluit*)
+41. Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). (*levert aanbod*)
+42. Ondersteunt de functie aanwijsbaar een proces? Noem het. (*bedient gedrag*)
+43. Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. (*in functie-indeling*)
+44. Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. (*leidt tot gebeurtenis*)
 
 **Passief.** Bij een ding (geen aard); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en *geautomatiseerd verwerkt* bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; *omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.
 
-46. Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? (*onderscheidbare exemplaren*)
-47. Ontstaan, veranderen en eindigen de exemplaren? (*levenscyclus*)
-48. Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? Noem het gedrag. (*wordt bewerkt*)
-49. Is het een overeenkomst tussen twee of meer partijen met rechten en plichten, en geen eenzijdig besluit of regeling? (*afspraak*)
-50. Is het de vorm (document, formulier, register, bericht) waarin informatie van een ander begrip wordt vastgelegd of overgebracht? Noem dat begrip. (*waarneembare vorm*)
-51. Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? Noem dat object. (*deel van object*)
-52. Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. (*invoer van een ander*)
-53. Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? (*zelfstandig aanbod*)
-54. Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. (*omvat diensten en afspraken*)
-55. Wordt het als gegevensstructuur geautomatiseerd verwerkt? (*geautomatiseerd verwerkt*)
+45. Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? (*onderscheidbare exemplaren*)
+46. Ontstaan, veranderen en eindigen de exemplaren? (*levenscyclus*)
+47. Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? Noem het gedrag. (*wordt bewerkt*)
+48. Is het een overeenkomst tussen twee of meer partijen met rechten en plichten, en geen eenzijdig besluit of regeling? (*afspraak*)
+49. Is het de vorm (document, formulier, register, bericht) waarin informatie van een ander begrip wordt vastgelegd of overgebracht? Noem dat begrip. (*waarneembare vorm*)
+50. Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? Noem dat object. (*deel van object*)
+51. Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. (*invoer van een ander*)
+52. Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? (*zelfstandig aanbod*)
+53. Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. (*omvat diensten en afspraken*)
+54. Wordt het als gegevensstructuur geautomatiseerd verwerkt? (*geautomatiseerd verwerkt*)
 
 **Beleidskader.** Alleen bij *regeling als geheel*.
 
-56. Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? (*landelijk*)
-57. Is de regeling geldend recht, of als modelverordening actueel? (*in werking*)
-58. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? Noem het artikel en het gedrag. (*is grondslag voor*)
+55. Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? (*landelijk*)
+56. Is de regeling geldend recht, of als modelverordening actueel? (*in werking*)
+57. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? Noem het artikel en het gedrag. (*is grondslag voor*)
 
 **Specialisatie.** Altijd, als het type een pagina heeft.
 
-59. Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. (*zelfstandige specialisatie*)
-60. Komt het met dezelfde betekenis in veel onderwerpen voor? (*generiek*)
+58. Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. (*zelfstandige specialisatie*)
+59. Komt het met dezelfde betekenis in veel onderwerpen voor? (*generiek*)
 
 ### Beslistabel per elementtype
 
@@ -178,7 +178,7 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 - Type volgt uit: geen aard (een ding); *afspraak* en *waarneembare vorm* nee.
 - Moet ja zijn: *wordt bewerkt*.
 - Hoogstens één nee: *onderscheidbare exemplaren*, *levenscyclus*.
-- Daarna: annotatie data-object (*geautomatiseerd verwerkt*); ja: subobject bij een eigen deelproces, anders onderdeel zonder pagina (*deel van object*); ja: onderdeel, geen pagina (*invoer van een ander*).
+- Daarna: annotatie data-object (*geautomatiseerd verwerkt*); ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina (*deel van object*); ja: onderdeel, geen pagina (*invoer van een ander*).
 - Indeling: Beleidsdomeinindeling.
 - Voorbeeld: Graf; Aanvraag; Vergunning.
 
@@ -187,7 +187,7 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 - Type volgt uit: *afspraak*.
 - Moet ja zijn: *wordt bewerkt*.
 - Hoogstens één nee: *onderscheidbare exemplaren*, *levenscyclus*.
-- Daarna: annotatie data-object (*geautomatiseerd verwerkt*); ja: subobject bij een eigen deelproces, anders onderdeel zonder pagina (*deel van object*); ja: onderdeel, geen pagina (*invoer van een ander*).
+- Daarna: annotatie data-object (*geautomatiseerd verwerkt*); ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina (*deel van object*); ja: onderdeel, geen pagina (*invoer van een ander*).
 - Indeling: Beleidsdomeinindeling.
 - Voorbeeld: Uitvoeringsovereenkomst; Grafrecht.
 
@@ -211,16 +211,16 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 
 - Type volgt uit: *gedrag* en *per keer doorlopen*.
 - Moet ja zijn: *toegewezen partij* en *aanleiding* en *benoembaar resultaat*.
-- Daarna: ja: procesniveau bedrijfsproces, of ketenproces bij *meer organisaties* (*omvat levensloop*); ja: procesniveau deelproces, bij *eigen besluit*, *eigen normering* of *levert aanbod*; anders processtap zonder pagina (*bijdrage aan groter proces*); levert een product of dienst: nooit een processtap (*levert aanbod*); ja: ketenproces (*meer organisaties*); telt voor het deelproces (*eigen besluit*); telt voor het deelproces (*eigen normering*); annotatie (*gebruikt objecten*); annotatie (*komt herhaald voor*); triggering naar een gebeurtenis (*leidt tot gebeurtenis*).
-- Indeling: Procesindeling naar taak en naar soort werk.
-- Voorbeeld: Beheren grafrechten; Verlenen grafrecht (deelproces).
+- Daarna: ja: procesniveau levensloopproces (*omvat levensloop*); ja: procesniveau bedrijfsproces, bij *eigen besluit*, *eigen normering* of *levert aanbod*; anders deelproces of processtap zonder pagina (*bijdrage aan groter proces*); levert een product of dienst: nooit een deelproces of processtap (*levert aanbod*); telt voor het bedrijfsproces (*eigen besluit*); telt voor het bedrijfsproces (*eigen normering*); annotatie (*gebruikt objecten*); annotatie (*komt herhaald voor*); triggering naar een gebeurtenis (*leidt tot gebeurtenis*).
+- Indeling: Procesindeling naar kernobject en naar soort werk; een levensloopproces ook in de Beleidsdomeinindeling, onder het beleidsdomein van zijn kernobject.
+- Voorbeeld: Beheren grafrechten (levensloopproces); Verlenen grafrecht (bedrijfsproces).
 
 **Wanneer is iets een procescluster?**
 
 - Type volgt uit: *gedrag* en *groepeert processen*.
 - Moet ja zijn: *omvat processen*.
-- Indeling: Procesindeling naar taak en naar soort werk.
-- Voorbeeld: Verzorgen lijkbezorging (taak); Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk).
+- Indeling: Procesindeling naar kernobject en naar soort werk; een levensloopproces ook in de Beleidsdomeinindeling, onder het beleidsdomein van zijn kernobject.
+- Voorbeeld: Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk).
 
 **Wanneer is iets een bedrijfsfunctie?**
 
@@ -235,7 +235,7 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 - Type volgt uit: *gedrag* en *toestandsverandering*.
 - Moet ja zijn: *leidt tot gedrag*.
 - Hoogstens één nee: *komt herhaald voor*.
-- Indeling: Procesindeling naar taak.
+- Indeling: Procesindeling naar kernobject.
 - Voorbeeld: Overlijden; Verval van het grafrecht.
 
 **Wanneer is iets een actor?**
@@ -277,10 +277,14 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 - Indeling: Beleidsdomeinindeling.
 - Voorbeeld: Wet op de lijkbezorging; Archiefwet; AVG.
 
-**Wanneer is iets een interaction?** (herkend)
+**Wanneer is iets een bedrijfsinteractie?**
 
 - Type volgt uit: *gedrag* en *gezamenlijk gedrag*.
-- Voorbeeld: keukentafelgesprek (voorleggen).
+- Moet ja zijn: *toegewezen partij*.
+- Hoogstens één nee: *aanleiding*, *benoembaar resultaat*.
+- Daarna: annotatie (*gebruikt objecten*).
+- Indeling: Procesindeling naar kernobject, bij haar kernobject, en Beleidsdomeinindeling, onder het beleidsdomein van haar kernobject.
+- Voorbeeld: Bezorgen stoffelijk overschot (ketensamenwerking; voorleggen).
 
 **Wanneer is iets een representatie?** (geen pagina)
 
@@ -296,7 +300,7 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 
 Per kenmerk: bij welke typen het telt, en hoe. **T** bepaalt het type · **x** moet nee zijn voor dit type · **K** kernrelatie: moet ja zijn · **D** telt in de drempel (hoogstens één nee) · **P** poort: geldt voor alle typen · **S** specialisatieniveau · **A** aanvulling (tegenhanger, procesniveau, objectniveau, annotatie) · **E** eis: moet ja zijn naast de kernrelatie.
 
-Typen: Obj = Bedrijfsobject · Afspr = Afspraak · Prod = Product · Dienst = Dienst · Proc = Bedrijfsproces · Clus = Procescluster · Func = Bedrijfsfunctie · Gebt = Gebeurtenis · Actor = Actor · Rol = Rol · Samw = Bedrijfssamenwerking · Kan = Kanaal · Bkad = Beleidskader · Inter = Interaction (herkend) · Repr = Representatie (geen pagina) · Loc = Locatie (geen pagina).
+Typen: Obj = Bedrijfsobject · Afspr = Afspraak · Prod = Product · Dienst = Dienst · Proc = Bedrijfsproces · Clus = Procescluster · Func = Bedrijfsfunctie · Gebt = Gebeurtenis · Actor = Actor · Rol = Rol · Samw = Bedrijfssamenwerking · Kan = Kanaal · Bkad = Beleidskader · Inter = Bedrijfsinteractie · Repr = Representatie (geen pagina) · Loc = Locatie (geen pagina).
 
 | Kenmerk | Obj | Afspr | Prod | Dienst | Proc | Clus | Func | Gebt | Actor | Rol | Samw | Kan | Bkad | Inter | Repr | Loc |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -331,10 +335,10 @@ Typen: Obj = Bedrijfsobject · Afspr = Afspraak · Prod = Product · Dienst = Di
 | aangeboden gedrag |  |  |  | T |  |  |  |  |  |  |  |  |  |  |  |  |
 | gezamenlijk gedrag |  |  |  |  |  |  |  |  |  |  |  |  |  | T |  |  |
 | **Gedrag** | | | | | | | | | | | | | | | | |
-| toegewezen partij |  |  |  |  | K |  | D |  |  |  |  |  |  |  |  |  |
-| gebruikt objecten |  |  |  |  | A |  | D |  |  |  |  |  |  |  |  |  |
-| aanleiding |  |  |  |  | E |  |  |  |  |  |  |  |  |  |  |  |
-| benoembaar resultaat |  |  | D | D | E |  |  |  |  |  |  |  |  |  |  |  |
+| toegewezen partij |  |  |  |  | K |  | D |  |  |  |  |  |  | K |  |  |
+| gebruikt objecten |  |  |  |  | A |  | D |  |  |  |  |  |  | A |  |  |
+| aanleiding |  |  |  |  | E |  |  |  |  |  |  |  |  | D |  |  |
+| benoembaar resultaat |  |  | D | D | E |  |  |  |  |  |  |  |  | D |  |  |
 | komt herhaald voor |  |  |  |  | A |  |  | D |  |  |  |  |  |  |  |  |
 | eigen normering |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
 | stabiel over tijd |  |  |  |  |  |  | D |  |  |  |  |  |  |  |  |  |
@@ -344,7 +348,6 @@ Typen: Obj = Bedrijfsobject · Afspr = Afspraak · Prod = Product · Dienst = Di
 | bijdrage aan groter proces |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
 | omvat processen |  |  |  |  |  | K |  |  |  |  |  |  |  |  |  |  |
 | omvat levensloop |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
-| meer organisaties |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
 | eigen besluit |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
 | levert aanbod |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
 | bedient gedrag |  |  |  |  |  |  | K |  |  |  |  |  |  |  |  |  |
@@ -366,7 +369,7 @@ Typen: Obj = Bedrijfsobject · Afspr = Afspraak · Prod = Product · Dienst = Di
 | in werking |  |  |  |  |  |  |  |  |  |  |  |  | D |  |  |  |
 | is grondslag voor |  |  |  |  |  |  |  |  |  |  |  |  | K |  |  |  |
 | **Specialisatie** | | | | | | | | | | | | | | | | |
-| zelfstandige specialisatie | S | S | S | S | S | S | S | S | S | S | S | S | S |  |  |  |
+| zelfstandige specialisatie | S | S | S | S | S | S | S | S | S | S | S | S | S | S |  |  |
 | generiek |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 ### Stappentabel
@@ -391,7 +394,7 @@ Stap 0–4 van boven naar beneden: de eerste passende regel beslist en levert he
 | 14 | 4 Type | *toegangspunt* | Kanaal: koppelen aan de centrale set; voorleggen |
 | 15 | 4 Type | *plaats* | Locatie: geen pagina |
 | 16 | 4 Type | *regeling als geheel* | *landelijk*: ja Beleidskader, nee bron (geen element) |
-| 17 | 4 Type | *gedrag* en precies één soort gedrag | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis of Dienst; *gezamenlijk gedrag*: Interaction, voorleggen |
+| 17 | 4 Type | *gedrag* en precies één soort gedrag | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Dienst of Bedrijfsinteractie |
 | 18 | 4 Type | *gedrag*, maar geen of meer dan één soort gedrag | conflict: voorleggen |
 | 19 | 4 Type | geen aard, *waarneembare vorm* | Representatie: geen pagina; vermelden bij het genoemde object |
 | 20 | 4 Type | geen aard, *afspraak* | Afspraak (Contract) |
@@ -401,18 +404,19 @@ Stap 0–4 van boven naar beneden: de eerste passende regel beslist en levert he
 | 24 | 6 Specialisatie | niet *zelfstandige specialisatie*, met `genoemd_begrip` | specialisatie zonder pagina; relaties naar het genoemde, bredere begrip |
 | 25 | 6 Specialisatie | niet *zelfstandige specialisatie*, zonder `genoemd_begrip` | voorleggen: noem het bredere begrip |
 | 26 | 6 Specialisatie | anders | element van het voorlopige type |
-| 27 | 7 Indeling | procescluster (*groepeert processen*) | procesniveau taak, of cluster naar soort werk als `gemma_generiek` is ingevuld |
-| 28 | 7 Indeling | *omvat levensloop* | procesniveau ketenproces bij *meer organisaties*, anders bedrijfsproces; `kernobject` verplicht. Een ketenproces aggregeert van de processen alleen bedrijfsprocessen, nooit rechtstreeks deelprocessen |
-| 29 | 7 Indeling | *bijdrage aan groter proces* met *eigen besluit*, *eigen normering* of *levert aanbod* | procesniveau deelproces; `kernobject` verplicht |
-| 30 | 7 Indeling | *bijdrage aan groter proces* zonder die drie | processtap: onderdeel, geen pagina; de tekst naar het deelproces |
+| 27 | 7 Indeling | procescluster (*groepeert processen*) | procesniveau cluster naar soort werk; `gemma_generiek` verplicht, anders voorleggen: een taak is geen procesniveau, de groepering naar taak is het beleidsdomein |
+| 28 | 7 Indeling | *omvat levensloop* | procesniveau levensloopproces; `kernobject` verplicht. Per kernobject één levensloopproces, met het beleidsdomein van het kernobject; meer alleen als ze samen een bedrijfsinteractie met dat kernobject bedienen, elk het deel van één partij |
+| 29 | 7 Indeling | *bijdrage aan groter proces* met *eigen besluit*, *eigen normering* of *levert aanbod* | procesniveau bedrijfsproces (klant-tot-klant); `kernobject` verplicht; geaggregeerd door één levensloopproces |
+| 30 | 7 Indeling | *bijdrage aan groter proces* zonder die drie | deelproces of processtap: onderdeel, geen pagina; de tekst naar het bedrijfsproces |
 | 31 | 7 Indeling | geen levensloop en geen bijdrage aan een groter proces | voorleggen: procesniveau niet te bepalen |
 | 32 | 7 Indeling | bedrijfsobject met *generiek* | objectniveau generiek (verhuist later naar een algemeen onderwerp) |
 | 33 | 7 Indeling | bedrijfsobject met *invoer van een ander* | onderdeel: geen pagina; vermelden bij het genoemde proces |
 | 34 | 7 Indeling | gebeurtenis, rol of dienst met *generiek* | specialisatie van een generiek GEMMA-element (exacte match) |
-| 35 | 7 Indeling | bedrijfsobject dat `kernobject` is van een bedrijfs- of ketenproces | objectniveau kernobject; per kernobject één bedrijfs- of ketenproces, plus de bedrijfsprocessen die dat ketenproces aggregeert, met hetzelfde kernobject |
-| 36 | 7 Indeling | bedrijfsobject met *deel van object* en een eigen deelproces | objectniveau subobject |
-| 37 | 7 Indeling | bedrijfsobject met *deel van object* zonder eigen deelproces | onderdeel: geen pagina |
+| 35 | 7 Indeling | bedrijfsobject dat `kernobject` is van een levensloopproces | objectniveau kernobject; per kernobject één levensloopproces, of één per partij in een ketensamenwerking |
+| 36 | 7 Indeling | bedrijfsobject met *deel van object* en een eigen bedrijfsproces | objectniveau subobject |
+| 37 | 7 Indeling | bedrijfsobject met *deel van object* zonder eigen bedrijfsproces | onderdeel: geen pagina |
 | 38 | 7 Indeling | ander bedrijfsobject | voorleggen: geen proces bepaalt zijn levensloop |
+| 39 | 7 Indeling | bedrijfsinteractie | `kernobject` verplicht; voorleggen: ketensamenwerking (estafette) of orkestratie (de gemeente levert een dienst aan derden) |
 | — | Aanvulling | `homoniem_van` ingevuld | voorleggen: naamkeuze; `## Homoniemen` bij beide; bij een GGM-homoniem een terugmelding |
 | — | Aanvulling | Actor of Rol met *onderscheidbare exemplaren*, *levenscyclus* en *wordt bewerkt* | ook een bedrijfsobjectpagina (tegenhanger) |
 | — | Aanvulling | *geautomatiseerd verwerkt* | annotatie `data_object: ja` |

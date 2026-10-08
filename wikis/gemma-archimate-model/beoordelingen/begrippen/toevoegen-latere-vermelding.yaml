@@ -154,9 +154,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -225,7 +222,7 @@ kenmerken:
 definitie: Het toevoegen van een rechterlijke uitspraak of een besluit over de staat van een persoon aan een akte als latere vermelding.
 beschrijving:
 - 'Een latere vermelding legt een verandering vast die na het opmaken van de akte is ontstaan: een adoptie of herroeping daarvan, een ontkenning of gerechtelijke vaststelling van het ouderschap, een vernietigde erkenning, of een wijziging van de voornaam (rechtbank) of geslachtsnaam (Koning) (BW 1 art. 4, 7, 20; Besluit burgerlijke stand art. 53, 54; HUP Adoptie; HUP Vaststelling ouderschap). De gemeente waar de akte berust, voegt de vermelding toe; de woongemeente verwerkt de wijziging in de BRP.'
-- 'De gemeente beslist hier niet zelf over de staat van de persoon: de rechtbank of de Koning heeft beslist. Het geslacht (BW 1 art. 28b) en de ontbinding van een huwelijk of partnerschap hebben een eigen deelproces.'
+- 'De gemeente beslist hier niet zelf over de staat van de persoon: de rechtbank of de Koning heeft beslist. Het geslacht (BW 1 art. 28b) en de ontbinding van een huwelijk of partnerschap hebben een eigen bedrijfsproces.'
 synoniemen:
 - naam: Verwerken rechterlijke uitspraak
   context: beleid
@@ -274,7 +271,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

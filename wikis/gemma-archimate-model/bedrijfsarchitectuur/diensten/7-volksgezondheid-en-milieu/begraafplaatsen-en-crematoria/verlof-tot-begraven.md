@@ -38,7 +38,7 @@ Toestemming van de gemeente om een stoffelijk overschot te begraven of te cremer
 
 Geen begraving of crematie zonder schriftelijk verlof van de ambtenaar van de burgerlijke stand, dat kosteloos wordt afgegeven (Wet op de lijkbezorging art. 11). De UPL-naam noemt alleen begraven; het verlof geldt ook voor crematie. Voor vervoer over land naar België of Luxemburg volstaat het verlof (Besluit op de lijkbezorging art. 11 lid 3).
 
-De UPL rekent het product tot Iv3 0.2 (Burgerzaken) en het GEMMA-domein Fysieke leefomgeving (UPL). In dit model staat het bij de begraafplaatsen en crematoria, naast het deelproces dat het levert, en in de functie-indeling bij het domein van de UPL.
+De UPL rekent het product tot Iv3 0.2 (Burgerzaken) en het GEMMA-domein Fysieke leefomgeving (UPL). In dit model staat het bij de begraafplaatsen en crematoria, naast het bedrijfsproces dat het levert, en in de functie-indeling bij het domein van de UPL.
 
 ## Plaats in het model
 
@@ -55,7 +55,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -67,7 +67,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, een prestatie die de gemeente aan wie de uitvaart regelt aanbiedt: het verlof om te begraven of te cremeren (Wlb art. 11; UPL). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, schriftelijk verlof tot begraving of crematie, kosteloos (Wlb art. 11). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger en bedrijf (UPL): wie in de lijkbezorging voorziet, meestal via de uitvaartondernemer (RVO). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Ondernemersplein Aangifte overlijden](../../../../bronanalyses/lijkbezorging/2026-rvo-aangifte-en-akte-van-overlijden.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het deelproces Verlenen verlof tot begraving of crematie (Wlb art. 11). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Verlenen verlof tot begraving of crematie (Wlb art. 11). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere dienst in deze wiki of in het GEMMA-model. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties
@@ -102,7 +102,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 2](../../../../analyses/procesarchitectuur-terugmeldingen.md) (indeling, open): **UPL:** verlof tot begraven valt onder Iv3 0.2 (Burgerzaken); de andere producten van de lijkbezorging vallen onder 7.5 ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md)). **GEMMA:** 7.5, beleidsdomein Begraafplaatsen en crematoria, naast het deelproces Verlenen verlof tot begraving of crematie in Bezorgen stoffelijk overschot. Het verlof hoort bij de lijkbezorging, ook al geeft de ambtenaar van de burgerlijke stand het af (Wet op de lijkbezorging art. 11).
+- [Nummer 2](../../../../analyses/procesarchitectuur-terugmeldingen.md) (indeling, open): **UPL:** verlof tot begraven valt onder Iv3 0.2 (Burgerzaken); de andere producten van de lijkbezorging vallen onder 7.5 ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md)). **GEMMA:** 7.5, beleidsdomein Begraafplaatsen en crematoria, naast het bedrijfsproces Verlenen verlof tot begraving of crematie onder Toestaan lijkbezorging. Het verlof hoort bij de lijkbezorging, ook al geeft de ambtenaar van de burgerlijke stand het af (Wet op de lijkbezorging art. 11).
 
 ### Besluiten redacteur
 

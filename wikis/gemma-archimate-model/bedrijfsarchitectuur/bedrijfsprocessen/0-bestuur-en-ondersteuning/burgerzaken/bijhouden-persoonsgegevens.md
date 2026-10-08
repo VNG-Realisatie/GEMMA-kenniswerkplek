@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: bedrijfsproces
+procesniveau: levensloopproces
 afnemer: extern
 synoniemen:
 - Bijhouding (wet)
@@ -76,13 +76,13 @@ Registratiestappen zonder eigen besluit of product zijn processtappen zonder pag
 
 ### Typering
 
-Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: bedrijfsproces.
-- **Procesindeling naar taak, onderdeel van**: [Verzorgen burgerzaken](verzorgen-burgerzaken.md).
-- **Procesindeling naar taak, omvat**: [Behandelen verzoek om correctie](behandelen-verzoek-om-correctie.md), [Behandelen verzoek om geheimhouding](behandelen-verzoek-om-geheimhouding.md), [Behandelen verzoek om verwijdering van gegevens](behandelen-verzoek-om-verwijdering-van-gegevens.md), [Inschrijven ingezetene](inschrijven-ingezetene.md), [Inschrijven levenloos geboren kind](inschrijven-levenloos-geboren-kind.md), [Inschrijven niet-ingezetene](inschrijven-niet-ingezetene.md), [Inschrijven op briefadres](inschrijven-op-briefadres.md), [Registreren kiesgerechtigdheid](registreren-kiesgerechtigdheid.md), [Uitvoeren adresonderzoek](uitvoeren-adresonderzoek.md), [Verstrekken overzicht gegevensverstrekkingen](verstrekken-overzicht-gegevensverstrekkingen.md), [Verstrekken persoonsgegevens](verstrekken-persoonsgegevens.md), [Verwerken adreswijziging](verwerken-adreswijziging.md), [Verwerken buitenlands document](verwerken-buitenlands-document.md), [Verwerken emigratie](verwerken-emigratie.md), [Wijzigen identificatienummers](wijzigen-identificatienummers.md), [Wijzigen naamgebruik](wijzigen-naamgebruik.md).
+- **Procesniveau**: levensloopproces.
+- **Procesindeling naar kernobject, omvat**: [Behandelen verzoek om correctie](behandelen-verzoek-om-correctie.md), [Behandelen verzoek om geheimhouding](behandelen-verzoek-om-geheimhouding.md), [Behandelen verzoek om verwijdering van gegevens](behandelen-verzoek-om-verwijdering-van-gegevens.md), [Inschrijven ingezetene](inschrijven-ingezetene.md), [Inschrijven levenloos geboren kind](inschrijven-levenloos-geboren-kind.md), [Inschrijven niet-ingezetene](inschrijven-niet-ingezetene.md), [Inschrijven op briefadres](inschrijven-op-briefadres.md), [Registreren kiesgerechtigdheid](registreren-kiesgerechtigdheid.md), [Uitvoeren adresonderzoek](uitvoeren-adresonderzoek.md), [Verstrekken overzicht gegevensverstrekkingen](verstrekken-overzicht-gegevensverstrekkingen.md), [Verstrekken persoonsgegevens](verstrekken-persoonsgegevens.md), [Verwerken adreswijziging](verwerken-adreswijziging.md), [Verwerken buitenlands document](verwerken-buitenlands-document.md), [Verwerken emigratie](verwerken-emigratie.md), [Wijzigen identificatienummers](wijzigen-identificatienummers.md), [Wijzigen naamgebruik](wijzigen-naamgebruik.md).
+- **Beleidsdomeinindeling**: beleidsdomein Burgerzaken, taakveld 0 Bestuur en Ondersteuning (van het kernobject).
 - **Kernobject**: [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md).
 - **Functie-indeling naar domein, bediend door**: [Bevolkingsadministratie bijhouding](../../../bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md).
 - **Gestart door gebeurtenis**: [Verkrijging van het Nederlanderschap](../../../gebeurtenissen/verkrijging-van-het-nederlanderschap.md), [Verlies van het Nederlanderschap](../../../gebeurtenissen/verlies-van-het-nederlanderschap.md).
@@ -91,7 +91,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -107,8 +107,8 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een actuele, juiste en betrouwbare persoonslijst (Circulaire adresonderzoek 1.1). [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/2023-rvig-circulaire-adresonderzoek-brp.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke ingeschreven persoon. [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, wet BRP, Besluit BRP en Regeling BRP, uitgewerkt in het LO BRP (LO BRP; Besluit BRP). [Logisch Ontwerp BRP 2025.Q1](../../../../bronanalyses/burgerzaken/2025-rvig-logisch-ontwerp-brp-2025q1.md), [Besluit BRP](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **omvat processen**: Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? | Ja, inschrijven ingezetene, Verwerken adreswijziging, Verwerken emigratie, Uitvoeren adresonderzoek en de andere deelprocessen van de bijhouding (HUP Achtergronden; Circulaire adresonderzoek). [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md), [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/2023-rvig-circulaire-adresonderzoek-brp.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? | Ja, van de eerste inschrijving via vervolginschrijvingen tot de opschorting bij emigratie, overlijden of fout (LO BRP 1.6; HUP Achtergronden). [Logisch Ontwerp BRP 2025.Q1](../../../../bronanalyses/burgerzaken/2025-rvig-logisch-ontwerp-brp-2025q1.md), [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md) |
+| **omvat processen**: Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? | Ja, inschrijven ingezetene, Verwerken adreswijziging, Verwerken emigratie, Uitvoeren adresonderzoek en de andere bedrijfsprocessen van de bijhouding (HUP Achtergronden; Circulaire adresonderzoek). [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md), [RvIG Circulaire adresonderzoek BRP](../../../../bronanalyses/burgerzaken/2023-rvig-circulaire-adresonderzoek-brp.md) |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, van de eerste inschrijving via vervolginschrijvingen tot de opschorting bij emigratie, overlijden of fout (LO BRP 1.6; HUP Achtergronden). [Logisch Ontwerp BRP 2025.Q1](../../../../bronanalyses/burgerzaken/2025-rvig-logisch-ontwerp-brp-2025q1.md), [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki of in het GEMMA-model. [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md) |
 
 ### Relaties
@@ -154,7 +154,6 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | [Verkrijging van het Nederlanderschap](../../../gebeurtenissen/verkrijging-van-het-nederlanderschap.md) | leidt tot bijhouding van nationaliteit, verblijfstitel en Europees kiesrecht *triggering* | Bijhouden persoonsgegevens | [HUP Nederlandse nationaliteit](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlandse-nationaliteit.md), [HUP Verblijfstitel](../../../../bronanalyses/burgerzaken/2026-rvig-hup-verblijfstitel.md), [HUP Europees kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-europees-kiesrecht.md) (HUP Nederlandse nationaliteit; HUP Verblijfstitel; HUP Europees kiesrecht) |
 | [Verlies van het Nederlanderschap](../../../gebeurtenissen/verlies-van-het-nederlanderschap.md) | leidt tot beëindiging van de Nederlandse nationaliteit *triggering* | Bijhouden persoonsgegevens | [HUP Nederlandse nationaliteit](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlandse-nationaliteit.md) (HUP Nederlandse nationaliteit, kop Verlies) |
 | [Verwerken vermissing reisdocument](verwerken-vermissing-reisdocument.md) | geeft vermissing door aan *stroom* | Bijhouden persoonsgegevens | [HUP Inhouding, inlevering of vermissing](../../../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md), [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) (HUP Inhouding, inleiding; HUP Reisdocument) |
-| [Verzorgen burgerzaken](verzorgen-burgerzaken.md) | omvat *aggregatie* | Bijhouden persoonsgegevens | [Wet BRP](../../../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md) (art. 1.4, hoofdstuk 2) |
 | [Voltrekken huwelijk](voltrekken-huwelijk.md) | zendt huwelijksakte aan *stroom* | Bijhouden persoonsgegevens | [HUP BRP: Huwelijk en geregistreerd partnerschap](../../../../bronanalyses/burgerzaken/2026-rvig-hup-huwelijkgeregistreerd-partnerschap.md) (inleiding) |
 
 ## Herkomst
@@ -195,3 +194,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor de bijhouding van de BRP; de functie Bevolkingsadministratie bijhouding bedient het.
+
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 20](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **GEMMA Online, Proceshiërarchie:** het hoogste niveau van de hiërarchie is het klant-tot-klant- of bedrijfsproces; daarboven spreekt GEMMA van clusters van bedrijfsprocessen: 'een groepering van bedrijfsprocessen die bij elkaar horen omdat ze op hetzelfde 'thema' betrekking hebben', bijvoorbeeld personeelszaken ([2026-vng-gemma-proceshierarchie](../../../../analyses/proceshierarchie.md), regel 47, 91). Het processenlandschap van het GEMMA-model deelt de uitvoerende processen in naar soort werk (Uitvoeren, Handhaven, Nazorgen, Ontwikkelen; GEMMA type Bedrijfsproces (cluster)); alleen de ondersteunende tak heeft clusters per thema, zoals Beheren personeel, 'de bedrijfsprocessen die corresponderen met de bedrijfsfunctie Personeelsmanagement', zonder bedrijfsprocessen eronder. **GEMMA:** het model groepeert de bedrijfsprocessen per kernobject in een levensloopproces, het gedrag over de levensloop van één kernobject van begin tot eind (Beheren grafrechten, Beheren graven, Bijhouden persoonsgegevens, Beheren reisdocumenten), met GEMMA type Bedrijfsproces (cluster). Daarboven staan geen procesniveaus maar de groeperingen beleidsdomein en taakveld uit de Beleidsdomeinindeling; het beleidsdomein volgt uit het kernobject (besluit redacteur 2026-10-08). Voorstel: (1) neem het levensloopproces op als cluster per thema voor de uitvoerende processen, naast de indeling naar soort werk, die blijft; (2) zie de themaclusters van de ondersteunende tak (Beheren personeel, Beheren financiën) als groepering per beleidsdomein, met levensloopprocessen per kernobject eronder, zoals in de uitvoerende tak.

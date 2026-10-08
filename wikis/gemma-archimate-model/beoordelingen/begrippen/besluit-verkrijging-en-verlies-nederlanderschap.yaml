@@ -27,7 +27,7 @@ kenmerken:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van de deelprocessen van Beheren Nederlanderschap.'
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van de bedrijfsprocessen onder Beheren Nederlanderschap.'
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   gedrag:
@@ -131,9 +131,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -191,7 +188,7 @@ kenmerken:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Art. 60a is de grondslag van de dienst Naturalisatieceremonie (UPL nr. 261); art. 7-12, 31-38, 60a-60b en 62-64 regelen de behandeling door de burgemeester in de deelprocessen van Beheren Nederlanderschap.
+    onderbouwing: Art. 60a is de grondslag van de dienst Naturalisatieceremonie (UPL nr. 261); art. 7-12, 31-38, 60a-60b en 62-64 regelen de behandeling door de burgemeester in de bedrijfsprocessen onder Beheren Nederlanderschap.
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
     - 2025-vng-upl-producten-en-diensten-extern
@@ -211,7 +208,7 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 per_onderwerp:
   burgerzaken:
-  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Naturalisatieceremonie (UPL nr. 261), van het bewijs van Nederlanderschap (art. 61) en van de deelprocessen van het ketenproces Beheren Nederlanderschap.'
+  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Naturalisatieceremonie (UPL nr. 261), van het bewijs van Nederlanderschap (art. 61) en van de bedrijfsprocessen onder Beheren Nederlanderschap.'
 grondslag: regelgeving
 grondslag_toelichting:
 - De regeling zelf (2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605).

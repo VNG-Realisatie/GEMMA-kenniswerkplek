@@ -127,9 +127,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -191,7 +188,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 genoemd_begrip: Ingeschreven persoon
-toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: het huwelijk en het geregistreerd partnerschap als relatie tussen twee personen staan in de BRP als gegevens van de persoon, met de (ex-)echtgenoot of partner als gerelateerde (HUP Huwelijk/geregistreerd partnerschap). De akten zijn specialisaties van Akte van de burgerlijke stand; het sluiten en ontbinden zijn de deelprocessen Voltrekken huwelijk, Registreren partnerschap en Inschrijven ontbinding huwelijk of partnerschap. Het GGM kent de burgerlijke staat als attribuut en de sluiting en ontbinding als gegevensgroepen.'
+toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: het huwelijk en het geregistreerd partnerschap als relatie tussen twee personen staan in de BRP als gegevens van de persoon, met de (ex-)echtgenoot of partner als gerelateerde (HUP Huwelijk/geregistreerd partnerschap). De akten zijn specialisaties van Akte van de burgerlijke stand; het sluiten en ontbinden zijn de bedrijfsprocessen Voltrekken huwelijk, Registreren partnerschap en Inschrijven ontbinding huwelijk of partnerschap. Het GGM kent de burgerlijke staat als attribuut en de sluiting en ontbinding als gegevensgroepen.'
 synoniemen:
 - naam: Huwelijk of geregistreerd partnerschap
   context: HUP

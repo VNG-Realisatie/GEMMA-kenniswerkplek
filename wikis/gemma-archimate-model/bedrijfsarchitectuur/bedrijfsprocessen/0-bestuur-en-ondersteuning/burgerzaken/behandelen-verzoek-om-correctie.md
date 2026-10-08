@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: deelproces
+procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
 - Correctieverzoek (HUP)
@@ -50,12 +50,12 @@ De burger kan vragen gegevens te laten aanpassen: adresgegevens, zoals een onjui
 
 ### Typering
 
-Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
+- **Procesniveau**: bedrijfsproces.
+- **Procesindeling naar kernobject, onderdeel van**: [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
 - **Kernobject**: [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md).
 - **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Behandelen aanvraag product*. Een verzoek waarop de gemeente na beoordeling van de bewijsstukken beslist (Utrecht).
 - **Afnemer**: extern.
@@ -63,7 +63,7 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 44 zijn nee.
+Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -79,7 +79,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een besluit: gecorrigeerde gegevens of een weigeringsbeschikking (Utrecht; NVVB Identiteitswijziging). [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [NVVB Stappenplan identiteitswijziging BRP](../../../../bronanalyses/burgerzaken/2018-nvvb-stappenplan-identiteitswijziging-brp.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk geval dat zich voordoet. [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [HUP BRP Correcties](../../../../bronanalyses/burgerzaken/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md), [NVVB Stappenplan identiteitswijziging BRP](../../../../bronanalyses/burgerzaken/2018-nvvb-stappenplan-identiteitswijziging-brp.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, wet BRP art. 2.58 en verder en de Awb (HUP Correcties; UPL nr. 95). [HUP BRP Correcties](../../../../bronanalyses/burgerzaken/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Bijhouden persoonsgegevens: één correctie in de persoonslijst (HUP Correcties). [HUP BRP Correcties](../../../../bronanalyses/burgerzaken/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md) |
+| **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Bijhouden persoonsgegevens: één correctie in de persoonslijst (HUP Correcties). [HUP BRP Correcties](../../../../bronanalyses/burgerzaken/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, het college beslist binnen vier weken; bezwaar is mogelijk (Utrecht; NVVB Model weigeringsbeschikking). [Utrecht BRP-gegevens opvragen of aanpassen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md), [NVVB Stappenplan identiteitswijziging BRP](../../../../bronanalyses/burgerzaken/2018-nvvb-stappenplan-identiteitswijziging-brp.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de dienst BRP-wijzigingsverzoek (UPL nr. 95). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki. [HUP BRP Correcties](../../../../bronanalyses/burgerzaken/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md) |
@@ -122,4 +122,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 4](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** een deelproces realiseert een deelservice: een onderdeel van een dienst, dat in verschillende bedrijfsprocessen wordt gebruikt maar geen dienst is die de organisatie aan de buitenwereld levert. De dienst zelf wordt gerealiseerd door een bedrijfsproces of ketenproces ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 385, 398, 591, 603). **GEMMA:** een deelproces realiseert de dienst van een UPL-product, bijvoorbeeld Verlenen verlof tot begraving of crematie de dienst Verlof tot begraven en Verlenen grafrecht de dienst Graf aanvragen. Het model heeft één bedrijfs- of ketenproces per kernobject (Beheren grafrechten, Beheren graven, Bezorgen stoffelijk overschot); daaronder levert elk deelproces één product of dienst. Eén bedrijfsproces per product maakt het model plat: een gemeente levert zo'n 500 externe en 215 interne producten en diensten ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), 2025-vng-upl-producten-en-diensten-intern).
+- [Nummer 4](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, opgelost): **Kennismodel:** een deelproces realiseert een deelservice: een onderdeel van een dienst, dat in verschillende bedrijfsprocessen wordt gebruikt maar geen dienst is die de organisatie aan de buitenwereld levert. De dienst zelf wordt gerealiseerd door een bedrijfsproces of ketenproces ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 385, 398, 591, 603). **GEMMA:** een deelproces realiseert de dienst van een UPL-product, bijvoorbeeld Verlenen verlof tot begraving of crematie de dienst Verlof tot begraven en Verlenen grafrecht de dienst Graf aanvragen. Het model heeft één bedrijfs- of ketenproces per kernobject (Beheren grafrechten, Beheren graven, Bezorgen stoffelijk overschot); daaronder levert elk deelproces één product of dienst. Eén bedrijfsproces per product maakt het model plat: een gemeente levert zo'n 500 externe en 215 interne producten en diensten ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), 2025-vng-upl-producten-en-diensten-intern). **Opgelost (2026-10-08):** de procesniveaus van het model volgen nu de ladder van GEMMA Online, Proceshiërarchie ([2026-vng-gemma-proceshierarchie](../../../../analyses/proceshierarchie.md), regel 47, 81, 83): wat het model deelproces noemde, is een bedrijfsproces, en een bedrijfsproces realiseert de dienst, zoals het kennismodel zegt. De afwijking bestaat niet meer; de melding wordt niet verstuurd.

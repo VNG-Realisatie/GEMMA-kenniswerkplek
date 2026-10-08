@@ -37,6 +37,10 @@ page_types:                          # pagina's van curated typen en onderwerpen
     dir: bedrijfsarchitectuur/bedrijfsprocessen
     submappen: [taakveld, beleidsdomein]
     curated: true
+  bedrijfsinteractie:                # Business Interaction, zoals een ketensamenwerking (besluit 2026-10-08); map naar het kernobject
+    dir: bedrijfsarchitectuur/bedrijfsinteracties
+    submappen: [taakveld, beleidsdomein]
+    curated: true
   bedrijfsfunctie:                   # Functie-indeling naar domein, niet de Beleidsdomeinindeling (besluit 2026-10-04)
     dir: bedrijfsarchitectuur/bedrijfsfuncties
     submappen: [domein]

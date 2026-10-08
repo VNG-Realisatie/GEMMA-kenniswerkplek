@@ -73,7 +73,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 49 zijn nee.
+Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -86,7 +86,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een afschrift of uittreksel van een akte van geboorte, huwelijk, partnerschap, echtscheiding of overlijden, ook meertalig (Utrecht; Besluit burgerlijke stand art. 24, 26). [Utrecht Uittreksel of akte aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke afnemer die erom vraagt. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Uittreksel of akte aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger (UPL nr. 23): de betrokkene of een naaste, zoals echtgenoot, kind, ouder of erfgenaam (Utrecht). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Uittreksel of akte aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het deelproces Verstrekken uittreksels en verklaringen burgerlijke stand (BW 1 art. 23b). [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Verstrekken uittreksels en verklaringen burgerlijke stand (BW 1 art. 23b). [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 23); de akten van geboorte en overlijden hebben in de UPL eigen producten (Geboorteakte, Overlijdensakte). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties

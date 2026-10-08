@@ -12,7 +12,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
     waarde: ja
-    onderbouwing: Structurele, wettelijke rol in een gemeentelijk ketenproces (art. 10, 12, 17).
+    onderbouwing: Structurele, wettelijke rol in een keten met de gemeente (art. 10, 12, 17).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
@@ -23,7 +23,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een eigen verantwoordelijkheid in een ketenproces.
+    onderbouwing: Een eigen verantwoordelijkheid in een keten.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   betekenis_in_onderwerp:
@@ -40,7 +40,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
   hoedanigheid:
     waarde: ja
-    onderbouwing: De verantwoordelijkheid van een andere organisatie voor haar deel van een ketenproces.
+    onderbouwing: De verantwoordelijkheid van een andere organisatie voor haar deel van een keten.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   samenwerkingsverband:
@@ -135,9 +135,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -200,13 +197,13 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element.
-definitie: Verantwoordelijkheid van een andere organisatie voor haar deel van een ketenproces dat zij met de gemeente uitvoert.
+definitie: Verantwoordelijkheid van een andere organisatie voor haar deel van een keten die zij met de gemeente uitvoert.
 per_onderwerp:
   lijkbezorging:
   - 'De officier van justitie is ketenpartner in Bezorgen stoffelijk overschot: hij ontvangt bij een niet-natuurlijke dood het verslag van de lijkschouwer, geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (Wet op de lijkbezorging art. 10, 12, 17).'
   - 'De arts is als behandelende arts ketenpartner in Bezorgen stoffelijk overschot: hij schouwt het stoffelijk overschot en geeft de verklaring van overlijden af, en meldt zich bij de gemeentelijke lijkschouwer als hij dat niet kan of als het om een minderjarige gaat (Wet op de lijkbezorging art. 3, 7, 10a, 12).'
   burgerzaken:
-  - 'Het Rijk is ketenpartner in Beheren Nederlanderschap via de minister van Justitie en Veiligheid, in de praktijk de IND: hij ontvangt het naturalisatieverzoek met het advies van de burgemeester, beoordeelt het en beslist; de Koning verleent het Nederlanderschap op zijn voordracht, en hij adviseert bij sommige opties en kan het Nederlanderschap intrekken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Rijkswet op het Nederlanderschap art. 6 lid 3, 7, 15; Utrecht). Het Rijk is ook ketenpartner in Afgeven verklaring omtrent het gedrag via de minister van Justitie en Veiligheid, in de praktijk Justis: de gemeente ontvangt, controleert en zendt door, de minister onderzoekt het gedrag en beslist (Wet justitiële en strafvorderlijke gegevens art. 30, 36, 37; Utrecht). Bijhouden persoonsgegevens, Beheren reisdocumenten en Beheren rijbewijzen zijn geen ketenproces: de minister van BZK voert daar tegenover de burger geen eigen deel uit, en de RDW en het CBR leveren productie, register en verklaring van geschiktheid als invoer terwijl de burgemeester besluit (Wegenverkeerswet 1994 art. 116, 118a; Reglement rijbewijzen art. 97, 105, 119).'
+  - 'Het Rijk is ketenpartner in Beheren Nederlanderschap via de minister van Justitie en Veiligheid, in de praktijk de IND: hij ontvangt het naturalisatieverzoek met het advies van de burgemeester, beoordeelt het en beslist; de Koning verleent het Nederlanderschap op zijn voordracht, en hij adviseert bij sommige opties en kan het Nederlanderschap intrekken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Rijkswet op het Nederlanderschap art. 6 lid 3, 7, 15; Utrecht). Het Rijk is ook ketenpartner in Afgeven verklaring omtrent het gedrag via de minister van Justitie en Veiligheid, in de praktijk Justis: de gemeente ontvangt, controleert en zendt door, de minister onderzoekt het gedrag en beslist (Wet justitiële en strafvorderlijke gegevens art. 30, 36, 37; Utrecht). Bijhouden persoonsgegevens, Beheren reisdocumenten en Beheren rijbewijzen zijn geen keten: de minister van BZK voert daar tegenover de burger geen eigen deel uit, en de RDW en het CBR leveren productie, register en verklaring van geschiktheid als invoer terwijl de burgemeester besluit (Wegenverkeerswet 1994 art. 116, 118a; Reglement rijbewijzen art. 97, 105, 119).'
 doelgroep: ketenpartners
 grondslag: bron
 gemma:
@@ -252,7 +249,7 @@ relaties:
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   vindplaats: art. 30, 36, 37; Utrecht regel 59
 beschrijving:
-- Een ketenpartner is een andere organisatie die een eigen deel van een ketenproces uitvoert, vanuit een eigen wettelijke taak, en niet als klant of alleen als adviseur. GEMMA kent de rol Ketenpartner in de procesarchitectuur en de doelgroep Ketenpartners.
+- Een ketenpartner is een andere organisatie die een eigen deel van een keten uitvoert, vanuit een eigen wettelijke taak, en niet als klant of alleen als adviseur. GEMMA kent de rol Ketenpartner in de procesarchitectuur en de doelgroep Ketenpartners.
 besluiten:
 - datum: '2026-10-04'
   besluit: Nieuwe rol Ketenpartner met exacte GEMMA-match; vervuld door de Officier van justitie, toegewezen aan Bezorgen lijken en Stellen andere termijn.

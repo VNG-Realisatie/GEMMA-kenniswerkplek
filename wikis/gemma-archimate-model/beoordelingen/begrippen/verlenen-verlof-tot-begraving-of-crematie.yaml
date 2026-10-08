@@ -141,7 +141,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Toestaan lijkbezorging, binnen het ketenproces Bezorgen stoffelijk overschot: zonder verlof geen begraving of crematie (art. 11).'
+    onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: zonder verlof geen begraving of crematie (art. 11).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -150,9 +150,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De officier van justitie levert bij een niet-natuurlijke dood de verklaring van geen bezwaar aan, maar voert het verlenen niet mee uit (art. 12).
   eigen_besluit:
     waarde: ja
     onderbouwing: De ambtenaar van de burgerlijke stand verleent het schriftelijk verlof (art. 11).
@@ -271,7 +268,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

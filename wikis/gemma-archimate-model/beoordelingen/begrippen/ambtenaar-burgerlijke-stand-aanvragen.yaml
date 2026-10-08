@@ -133,7 +133,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-trouwen-in-utrecht
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Voltrekken huwelijk (BW 1 art. 16, 63).
+    onderbouwing: Het bedrijfsproces Voltrekken huwelijk (BW 1 art. 16, 63).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
   leidt_tot_gedrag:
@@ -146,9 +146,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

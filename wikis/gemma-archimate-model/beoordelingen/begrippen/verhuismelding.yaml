@@ -131,7 +131,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-verhuizing-doorgeven
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Verwerken adreswijziging (HUP Binnengemeentelijke adreswijziging).
+    onderbouwing: Het bedrijfsproces Verwerken adreswijziging (HUP Binnengemeentelijke adreswijziging).
     bronnen:
     - 2026-rvig-hup-binnengemeentelijke-adreswijziging
   leidt_tot_gedrag:
@@ -144,9 +144,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

@@ -139,9 +139,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Omvat de processen van drie kernobjecten, niet de levensloop van één.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De taak is van de gemeente; de ketenpartners horen bij het ketenproces Bezorgen stoffelijk overschot.
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
@@ -220,6 +217,11 @@ besluiten:
 - datum: '2026-10-05'
   besluit: 'Stoffelijk overschot in lopende tekst: in definitie en beschrijving, met het kernobject Stoffelijk overschot.'
   gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: 'Vervalt: de taak is geen procesniveau meer (besluit 2026-10-08, procesniveaus volgens GEMMA Online, Proceshiërarchie). Boven de levensloopprocessen staat het beleidsdomein Begraafplaatsen en crematoria; de beschrijving staat letterlijk, zonder de zin over de taak als groepering, in het register van beleidsdomeinen. Het object in Archi vervalt; een typewijziging naar groepering kan niet (regel Objectbehoud).'
+  gevolg: afwijzen
+  redenen:
+  - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen taak voor de lijkbezorging. De partiële match met de functie Exploiteren van begraafplaatsen vervalt; die functie is een eigen element dat de processen bedient (besluit redacteur 2026-10-04).
@@ -268,7 +270,7 @@ relaties:
   vindplaats: art. 20–22
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: afgewezen
 afgeleid:
   uitkomst:
     soort: element
@@ -276,13 +278,15 @@ afgeleid:
     toelichting: Gedrag, *groepeert processen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
-    voorleggen: false
+    voorleggen: true
+    redenen:
+    - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
     data_object: nee
-    procesniveau: taak
     generiek: false
     typeregel: 17
+  voor_te_leggen:
+  - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-vng-wet-op-de-lijkbezorging
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-lijkbezorging.md

@@ -14,7 +14,8 @@ Nieuwe GGM-terugmeldingen in `beoordelingen/terugmeldingen.yaml` krijgen het vol
 
 Harde controles (fout: er wordt niets geschreven): schema, kenmerken, verplichte velden van een element, bestaan van
 bronnen (met bronanalyse), GGM-guid, GEMMA-id, doelen van relaties, specialisaties, tegenhanger en homoniemen, de
-ArchiMate-relatietabel, de bronanalyses en de gegenereerde modelmappen. Zachte signalen (waarschuwingen, met de naam
+ArchiMate-relatietabel, de bronanalyses, de gegenereerde modelmappen, het register van Archi-objecten
+(`beoordelingen/objecten.yaml`) en het register van beleidsdomeinen (`beoordelingen/beleidsdomeinen.yaml`). Zachte signalen (waarschuwingen, met de naam
 van de regel) staan in tools/signalen.py. Daarna draait het render-script (tools/render.py), tenzij `--zonder-render`.
 
 Gebruik (vanuit de wikimap):
@@ -47,6 +48,7 @@ TERUGMELDSTATUS = ("open", "gemeld", "opgelost", "afgewezen")
 PA_TERUGMELDINGEN = Path("beoordelingen") / "procesarchitectuur-terugmeldingen.yaml"
 PA_TYPEN = ("indeling", "grondslag", "product", "kennismodel")
 OBJECTEN = Path("beoordelingen") / "objecten.yaml"
+BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
 WIJZIGINGEN = ("hernoemd", "samengevoegd", "gesplitst")
 
 
@@ -307,6 +309,36 @@ def _objecten(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> None
         objecten.add(o.get("object_van"))
 
 
+def _beleidsdomeinen(ctx: Context, alle: dict[str, tuple[Path, dict]], uitkomsten: dict[str, dict], res: Resultaat) -> None:
+    """Het register van beleidsdomeinen: de beschrijving van een beleidsdomein in de Beleidsdomeinindeling (besluit
+    redacteur 2026-10-08, de tekst van een vervallen taak). Elk beleidsdomein komt hoogstens één keer voor, wordt door
+    een element gebruikt, heeft het taakveld van die elementen, een beschrijving en bestaande bronnen."""
+    pad = ctx.wiki_root / BELEIDSDOMEINEN
+    if not pad.exists():
+        return
+    gebruikt: dict[str, set[str]] = {}
+    for bid, (_, data) in alle.items():
+        if (uitkomsten.get(bid) or {}).get("soort") == "element" and data.get("beleidsdomein"):
+            gebruikt.setdefault(data["beleidsdomein"], set()).add(data.get("taakveld") or "")
+    gezien = set()
+    for i, b in enumerate(beoordeling.laad(pad).get("beleidsdomeinen", []), 1):
+        naam = f"beleidsdomeinen {i} ({b.get('beleidsdomein')})"
+        for veld in ("beleidsdomein", "taakveld", "beschrijving", "bronnen"):
+            if not b.get(veld):
+                res.fouten.append(f"{naam}: '{veld}' ontbreekt")
+        if b.get("beleidsdomein") in gezien:
+            res.fouten.append(f"{naam}: staat al in het register")
+        gezien.add(b.get("beleidsdomein"))
+        if b.get("beleidsdomein") and b["beleidsdomein"] not in gebruikt:
+            res.fouten.append(f"{naam}: geen element heeft dit beleidsdomein")
+        elif b.get("taakveld") and gebruikt.get(b.get("beleidsdomein"), set()) - {b["taakveld"]}:
+            res.fouten.append(f"{naam}: taakveld '{b['taakveld']}' wijkt af van dat van de elementen "
+                              f"({', '.join(sorted(gebruikt[b['beleidsdomein']]))})")
+        for bron in b.get("bronnen") or []:
+            if gam_gemeen.bron_doel(ctx.wiki_root, bron) is None:
+                res.fouten.append(f"{naam}: bron '{bron}' heeft geen bronanalyse")
+
+
 def _pa_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> dict | None:
     """Procesarchitectuur-terugmeldingen: het model mag afwijken van de UPL-indeling, mits teruggemeld (2026-10-05)."""
     register = _terugmeldingen(ctx, uitkomsten, res, PA_TERUGMELDINGEN, PA_TYPEN, ("bevinding",),
@@ -401,6 +433,7 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             {b: d for b, (_, d) in alle.items()}, elementen,
             [(van, r) for van in elementen for r in alle[van][1].get("relaties", [])], ctx.gemma() if gekoppeld else {})
     _objecten(ctx, uitkomsten, res)
+    _beleidsdomeinen(ctx, alle, uitkomsten, res)
     if any(u["paginatype"] in ("product", "dienst") for u in elementen.values()) \
             and (wiki_root / "gemma" / "gemma_parsed.json").exists():
         res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,

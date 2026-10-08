@@ -131,7 +131,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-kind-erkennen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Opmaken akte van erkenning (BW 1 art. 203).
+    onderbouwing: Het bedrijfsproces Opmaken akte van erkenning (BW 1 art. 203).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
   leidt_tot_gedrag:
@@ -144,9 +144,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

@@ -47,7 +47,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 53 zijn nee.
+Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -56,7 +56,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md), [HUP Intergemeentelijke adreswijziging](../../bronanalyses/burgerzaken/2026-rvig-hup-intergemeentelijke-adreswijziging.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md), [HUP Intergemeentelijke adreswijziging](../../bronanalyses/burgerzaken/2026-rvig-hup-intergemeentelijke-adreswijziging.md) |
 | **hoedanigheid**: Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | Ja, de verantwoordelijkheid voor de bijhouding van de persoonslijsten van de ingezetenen met een adres in de gemeente (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, toegewezen aan Bijhouden persoonsgegevens en zijn deelprocessen (HUP Achtergronden; HUP Intergemeentelijke adreswijziging). [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md), [HUP Intergemeentelijke adreswijziging](../../bronanalyses/burgerzaken/2026-rvig-hup-intergemeentelijke-adreswijziging.md) |
+| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, toegewezen aan Bijhouden persoonsgegevens en zijn bedrijfsprocessen (HUP Achtergronden; HUP Intergemeentelijke adreswijziging). [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md), [HUP Intergemeentelijke adreswijziging](../../bronanalyses/burgerzaken/2026-rvig-hup-intergemeentelijke-adreswijziging.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere rol in deze wiki. [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md), [HUP Intergemeentelijke adreswijziging](../../bronanalyses/burgerzaken/2026-rvig-hup-intergemeentelijke-adreswijziging.md) |
 
 ### Relaties

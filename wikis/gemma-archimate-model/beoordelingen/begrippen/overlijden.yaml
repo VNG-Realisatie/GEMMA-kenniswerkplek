@@ -129,7 +129,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gedrag:
     waarde: ja
-    onderbouwing: Start het ketenproces Bezorgen stoffelijk overschot, met Schouwen stoffelijk overschot (art. 3) en de termijn voor de lijkbezorging (art. 16). In de burgerlijke stand start het de aangifte en het opmaken van de akte van overlijden (BW 1 art. 19f, 19h).
+    onderbouwing: Start de ketensamenwerking Bezorgen stoffelijk overschot, met Schouwen stoffelijk overschot (art. 3) en de termijn voor de lijkbezorging (art. 16). In de burgerlijke stand start het de aangifte en het opmaken van de akte van overlijden (BW 1 art. 19f, 19h).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rijk-burgerlijk-wetboek-boek-1
@@ -140,9 +140,6 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
-  meer_organisaties:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   eigen_besluit:

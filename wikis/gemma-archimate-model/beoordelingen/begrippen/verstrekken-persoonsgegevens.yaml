@@ -154,9 +154,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De gemeente voert het uit; andere partijen leveren alleen gegevens of vragen erom.
   eigen_besluit:
     waarde: ja
     onderbouwing: Het college beslist op het verzoek, na een belangenafweging bij een geregistreerde verstrekkingsbeperking, met bezwaar (NVVB Schema, Belangenafweging; Besluit BRP art. 40).
@@ -297,7 +294,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

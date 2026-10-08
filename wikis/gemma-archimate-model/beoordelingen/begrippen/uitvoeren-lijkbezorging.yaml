@@ -143,7 +143,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Begraven en cremeren stoffelijk overschot, binnen het ketenproces Bezorgen stoffelijk overschot: de begraving, crematie of bijzetting zelf (art. 1, 23, 49).'
+    onderbouwing: 'Draagt bij aan het levensloopproces Begraven en cremeren stoffelijk overschot: de begraving, crematie of bijzetting zelf (art. 1, 23, 49).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -152,15 +152,12 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De gemeente begraaft of cremeert; de uitvaartondernemer treedt op namens de nabestaanden, als klant (Groningen art. 7 lid 2).
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
   levert_aanbod:
     waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit deelproces levert.
+    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces levert.
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -225,7 +222,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een stoffelijk overschot.
 beschrijving:
-- De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie en ontleding zijn varianten zonder eigen pagina; het bijzetten of verstrooien van de as is een eigen deelproces.
+- De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie en ontleding zijn varianten zonder eigen pagina; het bijzetten of verstrooien van de as is een eigen bedrijfsproces.
 specialisaties:
 - naam: Begraving
   omschrijving: Begraven van een stoffelijk overschot op een begraafplaats, in een algemeen of particulier graf (art. 23). Geen eigen pagina.
@@ -291,7 +288,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

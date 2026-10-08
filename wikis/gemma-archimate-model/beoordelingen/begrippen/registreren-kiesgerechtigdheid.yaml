@@ -27,7 +27,7 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: deelproces van Bijhouden persoonsgegevens.'
+    onderbouwing: 'Hoort bij burgerzaken: bedrijfsproces onder Bijhouden persoonsgegevens.'
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
     - 2026-rvig-hup-kiesrecht
@@ -155,9 +155,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: ja
     onderbouwing: B&W beslissen op een aanvraag tot wijziging van de registratie (Kieswet art. D 6 lid 1 onder a, D 7 lid 1).
@@ -268,7 +265,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

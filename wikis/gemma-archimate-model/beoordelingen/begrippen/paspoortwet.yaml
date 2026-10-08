@@ -129,9 +129,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -189,7 +186,7 @@ kenmerken:
     - 2026-rijk-paspoortwet-bwbr0005212
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 26 tot en met 41 (aanvraag en verstrekking), 42 (uitreiking), 44 tot en met 46 (weigering en vervallenverklaring), 5a, 31 en 47 (vermissing en verval), 50b tot en met 57 (inhouding): gedrag in Behandelen aanvraag reisdocument, Uitreiken reisdocument en de andere deelprocessen van Beheren reisdocumenten.'
+    onderbouwing: 'Art. 26 tot en met 41 (aanvraag en verstrekking), 42 (uitreiking), 44 tot en met 46 (weigering en vervallenverklaring), 5a, 31 en 47 (vermissing en verval), 50b tot en met 57 (inhouding): gedrag in Behandelen aanvraag reisdocument, Uitreiken reisdocument en de andere bedrijfsprocessen onder Beheren reisdocumenten.'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
   zelfstandige_specialisatie:
@@ -207,7 +204,7 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 per_onderwerp:
   burgerzaken:
-  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Elke soort reisdocument is een dienst die Behandelen aanvraag reisdocument realiseert, zonder gebundelde afspraken; de wet is grondslag van die diensten (UPL nr. 329, 330, 449, 462, 494) en van de deelprocessen. De UPL noemt haar ook bij de identiteitskaart (nr. 186), maar die grondslag is per 2026-10-01 vervallen (procesarchitectuur-terugmelding 9).'
+  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Elke soort reisdocument is een dienst die Behandelen aanvraag reisdocument realiseert, zonder gebundelde afspraken; de wet is grondslag van die diensten (UPL nr. 329, 330, 449, 462, 494) en van de bedrijfsprocessen. De UPL noemt haar ook bij de identiteitskaart (nr. 186), maar die grondslag is per 2026-10-01 vervallen (procesarchitectuur-terugmelding 9).'
 grondslag: regelgeving
 grondslag_toelichting:
 - De regeling zelf (2026-rijk-paspoortwet-bwbr0005212).

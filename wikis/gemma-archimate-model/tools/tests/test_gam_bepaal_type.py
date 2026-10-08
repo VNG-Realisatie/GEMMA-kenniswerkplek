@@ -170,10 +170,20 @@ def test_geen_pagina_en_herkend():
     assert bt.evalueer(beoordeling(BASIS | {"waarneembare_vorm"})).voorleggen  # zonder genoemd object
     plaats = bt.evalueer(beoordeling(BASIS | {"plaats"}))
     assert (plaats.soort, plaats.archimate_type, plaats.voorleggen) == ("geen_pagina", "location", False)
-    interactie = bt.evalueer(beoordeling(BASIS | {"gedrag", "gezamenlijk_gedrag"}))
-    assert (interactie.soort, interactie.archimate_type, interactie.voorleggen) == ("herkend", "business-interaction", True)
-    for u in (vorm, plaats, interactie):
+    for u in (vorm, plaats):
         assert bt.voorgestelde_status(u) is None
+
+
+def test_bedrijfsinteractie_is_een_element_dat_wordt_voorgelegd():
+    """Een ketensamenwerking is een bedrijfsinteractie (besluit redacteur 2026-10-08): een pagina met een kernobject,
+    altijd voorgelegd (estafette of orkestratie)."""
+    keten = BASIS | {"gedrag", "gezamenlijk_gedrag", "toegewezen_partij", "aanleiding", "benoembaar_resultaat"}
+    u = bt.evalueer(beoordeling(keten, kernobject="stoffelijk-overschot"))
+    assert (u.soort, u.paginatype, u.archimate_type) == ("element", "bedrijfsinteractie", "business-interaction")
+    assert u.voorleggen and bt.REDEN_INTERACTIE in u.redenen and bt.voorgestelde_status(u) == "kandidaat"
+    assert bt.voorgestelde_status(u, besluiten=[{"gevolg": "opnemen", "redenen": [bt.REDEN_INTERACTIE]}]) == "review"
+    assert any("kernobject ontbreekt" in r for r in bt.evalueer(beoordeling(keten)).redenen)
+    assert bt.evalueer(beoordeling(keten - {"toegewezen_partij"})).soort == "geen_element"
 
 
 def test_aanvullingen():
@@ -229,31 +239,29 @@ def test_documentatie_is_gegenereerd():
 
 
 def test_stap_7_procesniveau():
-    keten = bt.evalueer(beoordeling(PROCES | {"meer_organisaties"}, kernobject="lijk", afnemer="extern"))
-    assert (keten.procesniveau, keten.voorleggen) == ("ketenproces", False)
     proces = bt.evalueer(beoordeling(PROCES, kernobject="grafrecht", afnemer="extern"))
-    assert (proces.procesniveau, proces.voorleggen, proces.regel) == ("bedrijfsproces", False, bt.EERSTE_INDELINGSREGEL + 1)
+    assert (proces.procesniveau, proces.voorleggen, proces.regel) == ("levensloopproces", False, bt.EERSTE_INDELINGSREGEL + 1)
     zonder = bt.evalueer(beoordeling(PROCES))
     assert zonder.voorleggen and any("kernobject" in r for r in zonder.redenen)
     deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces"}
     for criterium in ("eigen_besluit", "eigen_normering", "levert_aanbod"):
         u = bt.evalueer(beoordeling(deel | {criterium}, kernobject="grafrecht", afnemer="extern"))
-        assert (u.procesniveau, u.voorleggen) == ("deelproces", False), criterium
-    # een deel van een groter proces zonder eigen besluit, normering of aanbod is een processtap: geen pagina
+        assert (u.procesniveau, u.voorleggen) == ("bedrijfsproces", False), criterium
+    # een deel van een groter proces zonder eigen besluit, normering of aanbod is een deelproces of processtap: geen pagina
     stap = bt.evalueer(beoordeling(deel, genoemd_begrip="Verlenen grafrecht"))
     assert (stap.soort, stap.genoemd_begrip, stap.voorleggen) == ("onderdeel", "Verlenen grafrecht", False)
     assert bt.evalueer(beoordeling(deel)).voorleggen  # zonder genoemd begrip
     # geen levensloop en geen bijdrage: het niveau is niet te bepalen
     onduidelijk = bt.evalueer(beoordeling(PROCES - {"omvat_levensloop"}))
     assert onduidelijk.voorleggen and onduidelijk.procesniveau is None
-    # meer organisaties zonder levensloop wordt voorgelegd
-    assert bt.evalueer(beoordeling(deel | {"eigen_besluit", "meer_organisaties"}, kernobject="graf")).voorleggen
 
 
 def test_stap_7_procescluster():
     cluster = BASIS | {"gedrag", "groepeert_processen", "omvat_processen"}
+    # een groepering zonder soort werk is een taak, en de taak is geen procesniveau meer (besluit 2026-10-08)
     taak = bt.evalueer(beoordeling(cluster))
-    assert (taak.paginatype, taak.procesniveau) == ("bedrijfsproces", "taak")
+    assert (taak.paginatype, taak.procesniveau, taak.voorleggen) == ("bedrijfsproces", None, True)
+    assert any("taak is geen procesniveau" in r for r in taak.redenen)
     soort_werk = bt.evalueer(beoordeling(cluster, gemma_generiek={"id": "id-1", "onderbouwing": "GEMMA-proces."}))
     assert soort_werk.procesniveau == "cluster naar soort werk"
     u = bt.evalueer(beoordeling(cluster - {"omvat_processen"}))
@@ -303,8 +311,50 @@ def test_indeling_per_kernobject_een_proces():
         verdwaald=(PROCES, {"kernobject": "bestaat-niet"}),
     )
     fouten = bt.indeling(beoordelingen, uitkomsten)
-    assert any("al het proces" in f for f in fouten)
+    assert any("al het levensloopproces" in f for f in fouten)
     assert any("bestaat-niet" in f and "geen bedrijfsobject" in f for f in fouten)
+
+
+def test_indeling_is_strikt_hierarchisch():
+    """Een levensloopproces aggregeert geen levensloopproces, een bedrijfsproces hangt onder één levensloopproces, en
+    het beleidsdomein van een levensloopproces of bedrijfsinteractie volgt uit het kernobject (besluit 2026-10-08)."""
+    deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces", "eigen_besluit"}
+    keten = BASIS | {"gedrag", "gezamenlijk_gedrag", "toegewezen_partij", "aanleiding", "benoembaar_resultaat"}
+    agg = lambda *naar: [{"soort": "aggregatie", "naar": n, "grondslag": "bron"} for n in naar]  # noqa: E731
+    beoordelingen, uitkomsten = _bo_uitkomsten(
+        graf=(BO, {"beleidsdomein": "Begraafplaatsen"}),
+        recht=(BO, {"beleidsdomein": "Begraafplaatsen"}),
+        beheren=(PROCES, {"kernobject": "graf", "beleidsdomein": "Begraafplaatsen", "relaties": agg("ruimen", "rechten")}),
+        rechten=(PROCES, {"kernobject": "recht", "beleidsdomein": "Burgerzaken", "relaties": agg("ruimen")}),
+        ruimen=(deel, {"kernobject": "graf"}),
+        bezorgen=(keten, {"kernobject": "graf", "beleidsdomein": "Begraafplaatsen"}),
+    )
+    fouten = bt.indeling(beoordelingen, uitkomsten)
+    assert any(f.startswith("beheren: levensloopproces aggregeert levensloopproces 'rechten'") for f in fouten)
+    assert any(f.startswith("ruimen: hangt onder meer levensloopprocessen") for f in fouten)
+    assert any(f.startswith("rechten: beleidsdomein 'Burgerzaken' wijkt af") for f in fouten)
+    assert not any(f.startswith("bezorgen") or f.startswith("beheren: beleidsdomein") for f in fouten)
+    assert uitkomsten["graf"]["objectniveau"] == "kernobject"
+
+
+def test_een_levensloopproces_per_partij_binnen_een_ketensamenwerking():
+    """Meer levensloopprocessen met hetzelfde kernobject mogen alleen als ze samen een bedrijfsinteractie met dat
+    kernobject bedienen: elk het deel van één partij (besluit redacteur 2026-10-08)."""
+    keten = BASIS | {"gedrag", "gezamenlijk_gedrag", "toegewezen_partij", "aanleiding", "benoembaar_resultaat"}
+    bedient = lambda naar: [{"soort": "bediening", "naar": naar, "grondslag": "bron"}]  # noqa: E731
+    beoordelingen, uitkomsten = _bo_uitkomsten(
+        lijk=(BO, {}), graf=(BO, {}),
+        toestaan=(PROCES, {"kernobject": "lijk", "relaties": bedient("bezorgen")}),
+        begraven=(PROCES, {"kernobject": "lijk", "relaties": bedient("bezorgen")}),
+        bezorgen=(keten, {"kernobject": "lijk"}),
+        andere=(keten, {"kernobject": "graf"}),
+    )
+    assert bt.indeling(beoordelingen, uitkomsten) == []
+    assert uitkomsten["lijk"]["objectniveau"] == "kernobject"
+    # bedient een van beide de interactie niet, of een interactie met een ander kernobject: fout
+    beoordelingen["begraven"]["relaties"] = bedient("andere")
+    assert any(f.startswith("toestaan: kernobject 'lijk' heeft al het levensloopproces 'begraven'")
+               for f in bt.indeling(beoordelingen, uitkomsten))
 
 
 def test_indelingsvelden_zijn_verplicht_en_beperkt():
@@ -320,9 +370,10 @@ def test_indelingsvelden_zijn_verplicht_en_beperkt():
     # de waarden zijn beperkt
     assert bt.controleer_indelingsvelden({"domein": "Verkeerd", "afnemer": "extern"}, bt.asdict(compleet))
     assert bt.controleer_indelingsvelden({"domein": "Publieksdiensten", "afnemer": "extern"}, bt.asdict(compleet)) == []
-    # een taak heeft geen afnemer; een proces wel
-    taak = bt.evalueer(beoordeling(BASIS | {"gedrag", "groepeert_processen", "omvat_processen"}))
-    assert not taak.voorleggen
+    # een cluster naar soort werk heeft geen afnemer; een proces wel
+    cluster = bt.evalueer(beoordeling(BASIS | {"gedrag", "groepeert_processen", "omvat_processen"},
+                                      gemma_generiek={"id": "id-1", "onderbouwing": "GEMMA-proces."}))
+    assert not cluster.voorleggen
     proces = bt.evalueer(beoordeling(PROCES, kernobject="graf"))
     assert "indelingsveld ontbreekt: afnemer" in proces.redenen
     assert not bt.evalueer(beoordeling(PROCES, kernobject="graf", afnemer="intern")).voorleggen

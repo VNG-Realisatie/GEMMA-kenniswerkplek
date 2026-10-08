@@ -159,15 +159,12 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Alleen de gemeente als houder van de begraafplaats voert het uit.
   eigen_besluit:
     waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'De deelprocessen leveren het aanbod (Verlenen grafrecht: Graf aanvragen).'
+    onderbouwing: 'De bedrijfsprocessen leveren het aanbod (Verlenen grafrecht: Graf aanvragen).'
   bedient_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -176,7 +173,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Het verval van het grafrecht volgt uit het deelproces Vervallen verklaren grafrecht.
+    onderbouwing: Het verval van het grafrecht volgt uit het bedrijfsproces Vervallen verklaren grafrecht.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -278,7 +275,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    procesniveau: levensloopproces
     generiek: false
     typeregel: 17
   bronnen:

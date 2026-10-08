@@ -131,7 +131,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Inschrijven niet-ingezetene (Utrecht RNI).
+    onderbouwing: Het bedrijfsproces Inschrijven niet-ingezetene (Utrecht RNI).
     bronnen:
     - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
   leidt_tot_gedrag:
@@ -144,9 +144,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

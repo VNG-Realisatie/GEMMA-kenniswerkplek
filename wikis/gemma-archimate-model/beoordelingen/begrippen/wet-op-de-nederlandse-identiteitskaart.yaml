@@ -129,9 +129,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -207,7 +204,7 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 per_onderwerp:
   burgerzaken:
-  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de dienst Identiteitskaart (UPL nr. 186, waar de UPL nog art. 16a Paspoortwet noemt; procesarchitectuur-terugmelding 9) en van de deelprocessen voor de identiteitskaart.'
+  - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de dienst Identiteitskaart (UPL nr. 186, waar de UPL nog art. 16a Paspoortwet noemt; procesarchitectuur-terugmelding 9) en van de bedrijfsprocessen voor de identiteitskaart.'
 grondslag: regelgeving
 grondslag_toelichting:
 - De regeling zelf (2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951).

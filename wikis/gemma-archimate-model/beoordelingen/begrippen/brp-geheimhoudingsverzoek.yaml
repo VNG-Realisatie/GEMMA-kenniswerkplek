@@ -136,7 +136,7 @@ kenmerken:
     - 2026-rvig-hup-verstrekkingsbeperking
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Behandelen verzoek om geheimhouding (HUP Verstrekkingsbeperking).
+    onderbouwing: Het bedrijfsproces Behandelen verzoek om geheimhouding (HUP Verstrekkingsbeperking).
     bronnen:
     - 2026-rvig-hup-verstrekkingsbeperking
   leidt_tot_gedrag:
@@ -149,9 +149,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

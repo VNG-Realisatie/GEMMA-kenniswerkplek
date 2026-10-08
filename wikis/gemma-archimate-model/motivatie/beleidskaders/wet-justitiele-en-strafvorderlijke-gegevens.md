@@ -39,7 +39,7 @@ De Wet justitiële en strafvorderlijke gegevens (BWBR0014194) regelt de verwerki
 
 #### [Burgerzaken](../../begrippen/burgerzaken.md)
 
-Grondslag van het ketenproces Afgeven verklaring omtrent het gedrag, het deelproces en de dienst. De UPL noemt art. 28, dat de VOG definieert; de gemeentelijke taak staat in art. 30 en 39 (procesarchitectuur-terugmelding).
+Grondslag van het levensloopproces Afgeven verklaring omtrent het gedrag, het bedrijfsproces en de dienst. De UPL noemt art. 28, dat de VOG definieert; de gemeentelijke taak staat in art. 30 en 39 (procesarchitectuur-terugmelding).
 
 ## Plaats in het model
 
@@ -54,7 +54,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

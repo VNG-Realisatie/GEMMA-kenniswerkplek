@@ -131,7 +131,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Registreren partnerschap (BW 1 art. 80g).
+    onderbouwing: Het bedrijfsproces Registreren partnerschap (BW 1 art. 80g).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
   leidt_tot_gedrag:
@@ -144,9 +144,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

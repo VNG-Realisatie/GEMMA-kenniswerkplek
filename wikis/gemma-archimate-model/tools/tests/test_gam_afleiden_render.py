@@ -279,7 +279,7 @@ def test_object_zonder_proces_wordt_voorgelegd_en_een_kernobject_is_een_kernobje
     _afleiden(wiki)
     assert _lees(wiki, "graf")["afgeleid"]["uitkomst"]["objectniveau"] == "kernobject"
     assert _lees(wiki, "graf")["status"] == "review"
-    assert _lees(wiki, "beheren-graven")["afgeleid"]["uitkomst"]["procesniveau"] == "bedrijfsproces"
+    assert _lees(wiki, "beheren-graven")["afgeleid"]["uitkomst"]["procesniveau"] == "levensloopproces"
 
 
 def test_twee_processen_voor_een_kernobject_is_een_fout(wiki):
@@ -287,27 +287,18 @@ def test_twee_processen_voor_een_kernobject_is_een_fout(wiki):
     _schrijf(wiki, "behandelen-aanvraag", _proces())
     _schrijf(wiki, "beheren", _element("Beheren beschikkingen", PROCES, kernobject="beschikking", afnemer="extern"))
     res = afleiden.afleiden(wiki)
-    assert any("per kernobject één proces" in f for f in res.fouten)
+    assert any("per kernobject één levensloopproces" in f for f in res.fouten)
 
 
-def test_bedrijfsproces_binnen_een_ketenproces_deelt_het_kernobject(wiki):
+def test_levensloopproces_onder_een_levensloopproces_is_een_fout(wiki):
+    """Een keten is een bedrijfsinteractie, geen proces boven de levensloopprocessen (besluit 2026-10-08)."""
     _schrijf(wiki, "beschikking", _bo())
-    _schrijf(wiki, "behandelen-aanvraag", _proces())
-    _schrijf(wiki, "keten", _element("Afhandelen beschikkingen", PROCES | {"meer_organisaties"}, kernobject="beschikking",
-                                     afnemer="extern", relaties=[_rel("aggregatie", "behandelen-aanvraag")]))
+    _schrijf(wiki, "aanvraag", _element("Aanvraag", BO, ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}))
+    _schrijf(wiki, "behandelen-aanvraag", _element("Behandelen aanvragen", PROCES, kernobject="aanvraag", afnemer="extern"))
+    _schrijf(wiki, "keten", _element("Afhandelen beschikkingen", PROCES, kernobject="beschikking", afnemer="extern",
+                                     relaties=[_rel("aggregatie", "behandelen-aanvraag")]))
     res = afleiden.afleiden(wiki)
-    assert not any("per kernobject één proces" in f for f in res.fouten)
-
-
-def test_ketenproces_met_een_deelproces_is_een_fout(wiki):
-    _schrijf(wiki, "beschikking", _bo())
-    _schrijf(wiki, "verlenen", _element("Verlenen beschikking", (PROCES - {"omvat_levensloop"})
-                                        | {"bijdrage_aan_groter_proces", "eigen_besluit"}, kernobject="beschikking",
-                                        afnemer="extern"))
-    _schrijf(wiki, "keten", _element("Afhandelen beschikkingen", PROCES | {"meer_organisaties"}, kernobject="beschikking",
-                                     afnemer="extern", relaties=[_rel("aggregatie", "verlenen")]))
-    res = afleiden.afleiden(wiki)
-    assert any("ketenproces aggregeert deelproces 'verlenen'" in f for f in res.fouten)
+    assert any("levensloopproces aggregeert levensloopproces 'behandelen-aanvraag'" in f for f in res.fouten)
 
 
 def test_indelingsveld_ontbreekt_wordt_voorgelegd_en_een_onbekende_waarde_is_een_fout(wiki):
@@ -372,14 +363,13 @@ def test_signalen_voor_de_indeling():
         return {"paginatype": paginatype, "soort": "element", **u}
 
     elementen = {
-        "taak": el("bedrijfsproces", procesniveau="taak"),
-        "beheren": el("bedrijfsproces", procesniveau="bedrijfsproces"),
-        "los": el("bedrijfsproces", procesniveau="bedrijfsproces"),
-        "keten": el("bedrijfsproces", procesniveau="ketenproces"),
-        "deel": el("bedrijfsproces", procesniveau="deelproces"),
-        "partij": el("bedrijfsproces", procesniveau="bedrijfsproces"),
-        "elders": el("bedrijfsproces", procesniveau="deelproces"),
-        "wees": el("bedrijfsproces", procesniveau="deelproces"),
+        "beheren": el("bedrijfsproces", procesniveau="levensloopproces"),
+        "cluster": el("bedrijfsproces", procesniveau="cluster naar soort werk"),
+        "deel": el("bedrijfsproces", procesniveau="bedrijfsproces"),
+        "wees": el("bedrijfsproces", procesniveau="bedrijfsproces"),
+        "alleen-soort": el("bedrijfsproces", procesniveau="bedrijfsproces"),
+        "keten": el("bedrijfsinteractie"),
+        "lege-keten": el("bedrijfsinteractie"),
         "onderhoud": el("dienst"),
         "wet": el("beleidskader"),
         "gemeente": el("actor"),
@@ -388,23 +378,20 @@ def test_signalen_voor_de_indeling():
     }
     rel = lambda soort, naar, naam=None: {"soort": soort, "naar": naar, "naam": naam}  # noqa: E731
     alle = {b: {"onderwerpen": ["lijkbezorging" if b != "elders" else "burgerzaken"]} for b in elementen}
-    alle["taak"]["relaties"] = [rel("aggregatie", "beheren"), rel("aggregatie", "keten")]
     alle["beheren"]["relaties"] = [rel("aggregatie", "deel")]
-    alle["keten"]["relaties"] = [rel("aggregatie", "partij"), rel("aggregatie", "elders")]
-    alle["deel"]["relaties"] = [rel("realisatie", "onderhoud")]
+    alle["cluster"]["relaties"] = [rel("aggregatie", "deel"), rel("aggregatie", "alleen-soort")]
+    alle["deel"]["relaties"] = [rel("realisatie", "onderhoud"), rel("bediening", "keten")]
     alle["gemeente"]["relaties"] = [rel("associatie (gericht)", "raad", "geeft melding door aan"),
                                     rel("associatie (gericht)", "raad", "is voorzitter van")]
     relaties = [(van, r) for van in elementen for r in alle[van].get("relaties", [])]
     tekst = "\n".join(signalen.indeling(alle, elementen, relaties))
-    assert "los: hangt onder geen taak" in tekst
-    assert "wees: deelproces hangt onder geen bedrijfsproces" in tekst
-    assert "elders: deelproces hangt onder geen bedrijfsproces" in tekst  # een ketenproces telt niet
-    assert "partij: hangt onder geen" not in tekst  # een bedrijfsproces binnen een ketenproces
-    assert "deel: een deelproces levert een dienst" in tekst
+    assert "wees: hangt onder geen levensloopproces" in tekst
+    assert "alleen-soort: hangt onder geen levensloopproces" in tekst  # een cluster naar soort werk telt niet
+    assert "deel: hangt onder geen" not in tekst and "beheren: hangt" not in tekst
+    assert "lege-keten: geen bedrijfsproces bedient" in tekst and "keten: geen bedrijfsproces" not in tekst.replace("lege-keten", "")
     assert "wet: geen product heeft dit beleidskader" in tekst
     assert "geeft melding door aan" in tekst and "is voorzitter van" not in tekst
     assert "arts: generiek, maar geen `gemma_generiek`" in tekst
-    assert "beheren: hangt onder geen taak" not in tekst and "keten: hangt onder geen taak" not in tekst
 
 
 def test_signalen_voor_de_functie_indeling():
@@ -501,8 +488,8 @@ def test_domein_past_bij_de_gemma_domeinen_van_het_beleidsdomein():
     assert signalen.domein_en_beleidsdomein(alle, elementen, gemma_data, gemeld) == []
 
 def _indeling_wiki(wiki):
-    """Een taak met een ketenproces, een deelproces, een kernobject met subobject, een generiek object met
-    specialisatie, een functie, een gebeurtenis en een dienst."""
+    """Een ketensamenwerking, een levensloopproces met een bedrijfsproces, een kernobject met subobject, een generiek
+    object met specialisatie, een functie, een gebeurtenis en een dienst."""
     import gam_gemeen
 
     gam_gemeen.schrijf_json_gegenereerd(
@@ -511,20 +498,17 @@ def _indeling_wiki(wiki):
                                          "type": "business-process", "documentatie": "", "map": "Business", "map_id": "f",
                                          "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}}, "test")
     geen_ggm = {"ggm": {"sterkte": "geen", "onderbouwing": "Niet in het GGM."}}
-    taak = BASIS_TAAK = {"herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp",
-                         "zelfstandige_specialisatie", "gedrag", "groepeert_processen", "omvat_processen"}
-    keten = PROCES | {"meer_organisaties"}
+    keten = (PROCES - {"per_keer_doorlopen", "omvat_levensloop"}) | {"gezamenlijk_gedrag"}
     deel = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "eigen_besluit"}
     gevallen = {
-        "verzorgen-lijkbezorging": _element("Verzorgen lijkbezorging", taak, relaties=[_rel("aggregatie", "bezorgen-lijken")]),
-        "bezorgen-lijken": _element("Bezorgen lijken", keten, kernobject="lijk", afnemer="extern",
-                                    relaties=[_rel("aggregatie", "toestaan-lijkbezorging"), _rel("toegang (registreren)", "lijk")]),
+        "bezorgen-lijken": _element("Bezorgen lijken", keten, kernobject="lijk",
+                                    relaties=[_rel("toegang (registreren)", "lijk")]),
         "toestaan-lijkbezorging": _element("Toestaan lijkbezorging", PROCES, kernobject="lijk", afnemer="extern",
                                            relaties=[_rel("aggregatie", "opgraven-lijk")]),
         "opgraven-lijk": _element("Opgraven lijk", deel, kernobject="grafbedekking", afnemer="extern",
                                   gemma_generiek={"id": "id-vergunning", "onderbouwing": "Een vergunningaanvraag."},
                                   relaties=[{**_rel("toegang (registreren)", "vergunning"), "via": "vergunning-tot-opgraving"},
-                                            _rel("realisatie", "onderhoud-van-graven")]),
+                                            _rel("realisatie", "onderhoud-van-graven"), _rel("bediening", "bezorgen-lijken")]),
         "lijk": _element("Lijk", BO, relaties=[_rel("compositie", "grafbedekking")], **geen_ggm),
         "grafbedekking": _element("Grafbedekking", BO | {"deel_van_object"}, **geen_ggm),
         "vergunning": _element("Vergunning", BO | {"generiek"}, **geen_ggm),
@@ -533,7 +517,7 @@ def _indeling_wiki(wiki):
         "onderhoud-van-graven": _element("Onderhoud van graven", DIENST, domein="Fysieke leefomgeving", afnemer="extern"),
         "exploiteren-begraafplaatsen": _element("Exploiteren van begraafplaatsen", FUNCTIE, domein="Fysieke leefomgeving",
                                                 relaties=[_rel("bediening", "opgraven-lijk")]),
-        "overlijden": _element("Overlijden", GEBEURTENIS, relaties=[_rel("triggering", "bezorgen-lijken")]),
+        "overlijden": _element("Overlijden", GEBEURTENIS, relaties=[_rel("triggering", "toestaan-lijkbezorging")]),
     }
     for bid, data in gevallen.items():
         _schrijf(wiki, bid, data)
@@ -544,26 +528,31 @@ def _indeling_wiki(wiki):
 def test_pagina_toont_de_plaats_in_de_indelingen(wiki):
     _indeling_wiki(wiki)
     opgraven = _lees(wiki, "opgraven-lijk")
-    assert opgraven["afgeleid"]["uitkomst"]["procesniveau"] == "deelproces"
+    assert opgraven["afgeleid"]["uitkomst"]["procesniveau"] == "bedrijfsproces"
     pagina = (wiki / opgraven["afgeleid"]["pad"]).read_text(encoding="utf-8")
-    assert "procesniveau: deelproces" in pagina and "afnemer: extern" in pagina
+    assert "procesniveau: bedrijfsproces" in pagina and "afnemer: extern" in pagina
     assert "kernobject:" not in pagina.split("---")[1]  # een verwijzing staat niet in de frontmatter
     assert "#### Plaats in de indelingen" in pagina or "### Plaats in de indelingen" in pagina
-    assert "**Procesindeling naar taak, onderdeel van**: [Toestaan lijkbezorging]" in pagina
+    assert "**Procesindeling naar kernobject, onderdeel van**: [Toestaan lijkbezorging]" in pagina
+    assert "**Ketensamenwerking, bedient**: [Bezorgen lijken]" in pagina
     assert "**Kernobject**: [Grafbedekking]" in pagina
     assert "**Procesindeling naar soort werk, specialisatie van**: GEMMA-element *id-vergunning*" in pagina or \
         "specialisatie van**: GEMMA-element" in pagina
     assert "**Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen]" in pagina
 
     keten = (wiki / _lees(wiki, "bezorgen-lijken")["afgeleid"]["pad"]).read_text(encoding="utf-8")
-    assert "**Procesniveau**: ketenproces." in keten and "**Gestart door gebeurtenis**: [Overlijden]" in keten
-    assert "onderdeel van**: [Verzorgen lijkbezorging]" in keten and "omvat**: [Toestaan lijkbezorging]" in keten
+    assert "bedrijfsinteracties" in _lees(wiki, "bezorgen-lijken")["afgeleid"]["pad"]
+    assert "**Kernobject**: [Lijk]" in keten and "**Ketensamenwerking, bediend door**: [Opgraven lijk]" in keten
+    levensloop = (wiki / _lees(wiki, "toestaan-lijkbezorging")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    assert "**Procesniveau**: levensloopproces." in levensloop and "**Gestart door gebeurtenis**: [Overlijden]" in levensloop
+    assert "omvat**: [Opgraven lijk]" in levensloop
 
     lijk = (wiki / _lees(wiki, "lijk")["afgeleid"]["pad"]).read_text(encoding="utf-8")
-    assert "objectniveau: kernobject" in lijk and "**Levensloop bepaald door**: [Bezorgen lijken]" in lijk
+    assert "objectniveau: kernobject" in lijk and "**Levensloop bepaald door**: [Toestaan lijkbezorging]" in lijk
+    assert "**Ketensamenwerking**: [Bezorgen lijken]" in lijk
     bedekking = (wiki / _lees(wiki, "grafbedekking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
     assert "objectniveau: subobject" in bedekking and "**Subobject van**: [Lijk]" in bedekking
-    assert "**Mutaties door deelprocessen**: [Opgraven lijk]" in bedekking
+    assert "**Mutaties door bedrijfsprocessen**: [Opgraven lijk]" in bedekking
 
     vergunning = (wiki / _lees(wiki, "vergunning")["afgeleid"]["pad"]).read_text(encoding="utf-8")
     assert "objectniveau: generiek" in vergunning and "Specialisaties per onderwerp" in vergunning
@@ -573,13 +562,12 @@ def test_pagina_toont_de_plaats_in_de_indelingen(wiki):
 def test_overzicht_per_onderwerp_toont_de_views(wiki):
     _indeling_wiki(wiki)
     overzicht = (wiki / "overzichten" / "test.md").read_text(encoding="utf-8")
-    assert "## Procesindeling naar taak" in overzicht
-    assert "- [Verzorgen lijkbezorging](" in overzicht
-    assert "  - [Bezorgen lijken](" in overzicht and "*(ketenproces, afnemer extern)*" in overzicht
-    assert "      - [Opgraven lijk](" in overzicht and "bediend door [Exploiteren van begraafplaatsen]" in overzicht
+    assert "## Procesindeling naar kernobject" in overzicht
+    assert "- **Vergunningen** *(beleidsdomein, taakveld 8 Wonen)*" in overzicht
+    assert "  - [Toestaan lijkbezorging](" in overzicht and "*(levensloopproces, afnemer extern)*" in overzicht
+    assert "    - [Opgraven lijk](" in overzicht and "bediend door [Exploiteren van begraafplaatsen]" in overzicht
     assert "levert [Onderhoud van graven]" in overzicht
-    assert "## Ketens" in overzicht and "bedrijfsprocessen [Toestaan lijkbezorging](" in overzicht
-    assert "(deelprocessen [Opgraven lijk]" in overzicht
+    assert "## Ketensamenwerking" in overzicht and "bediend door [Opgraven lijk](" in overzicht
     assert "## Procesindeling naar soort werk" in overzicht
     assert "## Gebeurtenissen" in overzicht and "| [Overlijden](" in overzicht
     assert "**Kernobjecten**" in overzicht and "subobjecten [Grafbedekking]" in overzicht

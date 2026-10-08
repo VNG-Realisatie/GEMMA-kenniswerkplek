@@ -139,7 +139,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Toestaan lijkbezorging, binnen het ketenproces Bezorgen stoffelijk overschot: wijkt af van de termijn voor begraving of crematie (art. 16, 17).'
+    onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: wijkt af van de termijn voor begraving of crematie (art. 16, 17).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -148,9 +148,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van het lijk, binnen Bezorgen stoffelijk overschot.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De burgemeester beslist; de officier van justitie stemt alleen in bij een termijn binnen 36 uur (art. 17 lid 1).
   eigen_besluit:
     waarde: ja
     onderbouwing: De burgemeester stelt de andere termijn, na een arts te hebben gehoord (art. 17 lid 1).
@@ -273,7 +270,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

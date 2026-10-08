@@ -126,7 +126,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: 'Het deelproces Stellen andere termijn: de burgemeester stelt de andere termijn (art. 17; besluit redacteur 2026-10-04).'
+    onderbouwing: 'Het bedrijfsproces Stellen andere termijn: de burgemeester stelt de andere termijn (art. 17; besluit redacteur 2026-10-04).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   leidt_tot_gedrag:
@@ -139,9 +139,6 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
-  meer_organisaties:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
   eigen_besluit:

@@ -26,7 +26,7 @@ kenmerken:
     - 2026-rijk-paspoortbesluit-bwbr0044308
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Deelproces van Beheren reisdocumenten in burgerzaken.
+    onderbouwing: Bedrijfsproces onder Beheren reisdocumenten in burgerzaken.
     bronnen:
     - 2026-rijk-paspoortbesluit-bwbr0044308
   gedrag:
@@ -150,9 +150,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
@@ -290,7 +287,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

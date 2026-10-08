@@ -128,7 +128,7 @@ kenmerken:
     - 2025-groningen-algemene-plaatselijke-verordening
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Verlenen toestemming asverstrooiing (APV Groningen art. 5:27 lid 3; Groningen art. 21).
+    onderbouwing: Het bedrijfsproces Verlenen toestemming asverstrooiing (APV Groningen art. 5:27 lid 3; Groningen art. 21).
     bronnen:
     - 2025-groningen-algemene-plaatselijke-verordening
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -142,9 +142,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   eigen_besluit:

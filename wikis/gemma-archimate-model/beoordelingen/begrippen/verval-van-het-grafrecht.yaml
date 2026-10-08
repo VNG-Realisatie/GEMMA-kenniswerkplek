@@ -139,9 +139,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: een gebeurtenis, geen proces of functie.'

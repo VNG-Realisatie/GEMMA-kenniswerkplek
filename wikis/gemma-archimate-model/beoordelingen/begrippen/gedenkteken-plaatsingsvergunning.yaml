@@ -126,7 +126,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Verlenen vergunning grafbedekking (Groningen art. 22).
+    onderbouwing: Het bedrijfsproces Verlenen vergunning grafbedekking (Groningen art. 22).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   leidt_tot_gedrag:
@@ -139,9 +139,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   eigen_besluit:

@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: deelproces
+procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
 - Kiezersregistratie (dagelijks gebruik)
@@ -55,12 +55,12 @@ De registratie van kiezers buiten Nederland is een taak van één gemeente, 's-G
 
 ### Typering
 
-Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: deelproces.
-- **Procesindeling naar taak, onderdeel van**: [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
+- **Procesniveau**: bedrijfsproces.
+- **Procesindeling naar kernobject, onderdeel van**: [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md).
 - **Kernobject**: [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md).
 - **Functie-indeling naar domein, bediend door**: [Verkiezingen gerelateerde diensten](../../../bedrijfsfuncties/publieksdiensten/verkiezingen-gerelateerde-diensten.md).
 - **Gestart door gebeurtenis**: [Uitsluiting van het kiesrecht](../../../gebeurtenissen/uitsluiting-van-het-kiesrecht.md).
@@ -69,14 +69,14 @@ Bedrijfsproces, niveau deelproces. Uitkomst van de beslistabel: Gedrag, *per kee
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 44 zijn nee.
+Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, burgemeester en wethouders registreren de kiesgerechtigdheid van de ingezetenen (Kieswet art. D 1); UPL-product stemrecht (nr. 398); de BRP kent de categorie kiesrecht (HUP Kiesrecht). [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [HUP Kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-kiesrecht.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, b&W registreren de kiesgerechtigdheid en delen op verzoek mee of iemand als kiezer is geregistreerd; de burgemeester stelt een uitgesloten persoon in kennis (Kieswet art. B 5, D 1, D 5). [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: deelproces van Bijhouden persoonsgegevens. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-kiesrecht.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: bedrijfsproces onder Bijhouden persoonsgegevens. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-kiesrecht.md) |
 | **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
 | **per keer doorlopen**: Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? | Ja, per mededeling of verzoek doorlopen (Kieswet art. B 5, D 5; HUP Europees kiesrecht). [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Europees kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-europees-kiesrecht.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, beslisser: burgemeester en wethouders, die op een aanvraag tot wijziging beslissen (Kieswet art. D 1, D 7); Kiezer: verzoekt om mededeling of, als EU-onderdaan, om registratie voor het Europees Parlement (art. D 5; HUP Europees kiesrecht). [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Europees kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-europees-kiesrecht.md) |
@@ -85,7 +85,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, de registratie als kiezer, de mededeling of iemand is geregistreerd, en de kennisgeving van een uitsluiting (Kieswet art. B 5, D 1, D 5). [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke mededeling en elk verzoek. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, kieswet art. B 1-B 5 en D 1-D 8; HUP Nederlands en Europees kiesrecht. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md), [HUP Europees kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-europees-kiesrecht.md) |
-| **bijdrage aan groter proces**: Wordt het binnen één organisatorische eenheid uitgevoerd als bijdrage aan een groter bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Bijhouden persoonsgegevens: de kiesrechtgegevens van de ingeschreven persoon. [HUP Kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-kiesrecht.md) |
+| **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Bijhouden persoonsgegevens: de kiesrechtgegevens van de ingeschreven persoon. [HUP Kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-kiesrecht.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, b&W beslissen op een aanvraag tot wijziging van de registratie (Kieswet art. D 6 lid 1 onder a, D 7 lid 1). [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de dienst Stemrecht (UPL nr. 398). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
@@ -128,4 +128,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 4](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** een deelproces realiseert een deelservice: een onderdeel van een dienst, dat in verschillende bedrijfsprocessen wordt gebruikt maar geen dienst is die de organisatie aan de buitenwereld levert. De dienst zelf wordt gerealiseerd door een bedrijfsproces of ketenproces ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 385, 398, 591, 603). **GEMMA:** een deelproces realiseert de dienst van een UPL-product, bijvoorbeeld Verlenen verlof tot begraving of crematie de dienst Verlof tot begraven en Verlenen grafrecht de dienst Graf aanvragen. Het model heeft één bedrijfs- of ketenproces per kernobject (Beheren grafrechten, Beheren graven, Bezorgen stoffelijk overschot); daaronder levert elk deelproces één product of dienst. Eén bedrijfsproces per product maakt het model plat: een gemeente levert zo'n 500 externe en 215 interne producten en diensten ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), 2025-vng-upl-producten-en-diensten-intern).
+- [Nummer 4](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, opgelost): **Kennismodel:** een deelproces realiseert een deelservice: een onderdeel van een dienst, dat in verschillende bedrijfsprocessen wordt gebruikt maar geen dienst is die de organisatie aan de buitenwereld levert. De dienst zelf wordt gerealiseerd door een bedrijfsproces of ketenproces ([2026-vng-over-gemma](../../../../analyses/gemma-kennismodel.md), regel 385, 398, 591, 603). **GEMMA:** een deelproces realiseert de dienst van een UPL-product, bijvoorbeeld Verlenen verlof tot begraving of crematie de dienst Verlof tot begraven en Verlenen grafrecht de dienst Graf aanvragen. Het model heeft één bedrijfs- of ketenproces per kernobject (Beheren grafrechten, Beheren graven, Bezorgen stoffelijk overschot); daaronder levert elk deelproces één product of dienst. Eén bedrijfsproces per product maakt het model plat: een gemeente levert zo'n 500 externe en 215 interne producten en diensten ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), 2025-vng-upl-producten-en-diensten-intern). **Opgelost (2026-10-08):** de procesniveaus van het model volgen nu de ladder van GEMMA Online, Proceshiërarchie ([2026-vng-gemma-proceshierarchie](../../../../analyses/proceshierarchie.md), regel 47, 81, 83): wat het model deelproces noemde, is een bedrijfsproces, en een bedrijfsproces realiseert de dienst, zoals het kennismodel zegt. De afwijking bestaat niet meer; de melding wordt niet verstuurd.

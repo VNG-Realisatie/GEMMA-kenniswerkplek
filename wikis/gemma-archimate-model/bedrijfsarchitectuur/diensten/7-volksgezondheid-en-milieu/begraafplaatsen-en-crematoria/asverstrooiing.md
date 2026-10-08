@@ -56,7 +56,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -68,7 +68,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, een prestatie die de gemeente aan de nabestaande aanbiedt: toestemming om as te verstrooien op een plek waar dat zonder toestemming verboden is (APV Groningen art. 5:27 lid 3; Groningen art. 21). [APV Groningen](../../../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een ontheffing van het verbod of een toestemming om op een aangewezen plek te verstrooien (APV Groningen art. 5:27 lid 3; Groningen art. 21 lid 2). [APV Groningen](../../../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger en bedrijf (UPL); de nabestaande die zorgdraagt voor de asbus vraagt de ontheffing aan (APV Groningen art. 5:27 lid 3). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [APV Groningen](../../../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het deelproces Verlenen toestemming asverstrooiing (APV Groningen art. 5:27 lid 3; Groningen art. 21). [APV Groningen](../../../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Verlenen toestemming asverstrooiing (APV Groningen art. 5:27 lid 3; Groningen art. 21). [APV Groningen](../../../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere dienst in deze wiki of in het GEMMA-model. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties

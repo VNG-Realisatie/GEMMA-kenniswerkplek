@@ -26,7 +26,7 @@ kenmerken:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van de deelprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
     - 2025-vng-upl-producten-en-diensten-extern
@@ -131,9 +131,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -208,7 +205,7 @@ beschrijving:
 - 'Het Reglement rijbewijzen (BWBR0008074) werkt de Wegenverkeerswet 1994 uit: de aanvraag bij de burgemeester van de gemeente van inschrijving (hoofdstuk II, art. 26 tot en met 45), de verklaringen van rijvaardigheid en geschiktheid die het CBR registreert (hoofdstuk III en IV, art. 97 en 100) en de afgifte (hoofdstuk V, art. 104a tot en met 121). De gezondheidsverklaring dient de aanvrager bij het CBR in (art. 100). Rijexamens, vakbekwaamheid en de registratie van gegevens vallen buiten dit onderwerp.'
 per_onderwerp:
   burgerzaken:
-  - 'Grondslag van de deelprocessen en diensten van het rijbewijs. Het is de wet die de UPL noemt voor rijbewijs (art. 26), rijbewijs verlengen (art. 35), rijbewijs buitenlands omwisseling (art. 45) en rijbewijs gezondheidsverklaring (art. 100); bij die laatste past de grondslag niet bij een gemeentelijke taak: de gezondheidsverklaring is een onderdeel (subdienst) van Rijbewijs aanvragen (procesarchitectuur-terugmelding).'
+  - 'Grondslag van de bedrijfsprocessen en diensten van het rijbewijs. Het is de wet die de UPL noemt voor rijbewijs (art. 26), rijbewijs verlengen (art. 35), rijbewijs buitenlands omwisseling (art. 45) en rijbewijs gezondheidsverklaring (art. 100); bij die laatste past de grondslag niet bij een gemeentelijke taak: de gezondheidsverklaring is een onderdeel (subdienst) van Rijbewijs aanvragen (procesarchitectuur-terugmelding).'
 grondslag_toelichting:
 - De regeling zelf (2026-rijk-reglement-rijbewijzen-bwbr0008074).
 relaties:

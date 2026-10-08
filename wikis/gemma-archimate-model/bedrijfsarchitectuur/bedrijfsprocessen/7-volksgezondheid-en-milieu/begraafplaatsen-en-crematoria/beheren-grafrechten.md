@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: bedrijfsproces
+procesniveau: levensloopproces
 afnemer: extern
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -41,13 +41,13 @@ Het grafrecht wordt schriftelijk gevestigd voor onbepaalde tijd of voor ten mins
 
 ### Typering
 
-Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: bedrijfsproces.
-- **Procesindeling naar taak, onderdeel van**: [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md).
-- **Procesindeling naar taak, omvat**: [Verlenen grafrecht](verlenen-grafrecht.md), [Vervallen verklaren grafrecht](vervallen-verklaren-grafrecht.md).
+- **Procesniveau**: levensloopproces.
+- **Procesindeling naar kernobject, omvat**: [Verlenen grafrecht](verlenen-grafrecht.md), [Vervallen verklaren grafrecht](vervallen-verklaren-grafrecht.md).
+- **Beleidsdomeinindeling**: beleidsdomein Begraafplaatsen en crematoria, taakveld 7 Volksgezondheid en Milieu (van het kernobject).
 - **Kernobject**: [Grafrecht](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md).
 - **Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md).
 - **Afnemer**: extern.
@@ -55,7 +55,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 44 zijn nee.
+Alleen de kenmerken met ja; de overige 43 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -72,8 +72,8 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk particulier graf, urnengraf of urnennis. [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, wet op de lijkbezorging art. 28; Groningen art. 16–20. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, rechthebbende op het graf (art. 28). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **omvat processen**: Omvat het minstens twee processen (bij een taak: de processen per kernobject; bij een cluster naar soort werk: de deelprocessen)? | Ja, verlenen grafrecht en Vervallen verklaren grafrecht (art. 28; Groningen art. 16, 20). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van het grafrecht, van verlening via verlenging en overschrijving tot verval (art. 28; Groningen art. 16–20). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **omvat processen**: Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? | Ja, verlenen grafrecht en Vervallen verklaren grafrecht (art. 28; Groningen art. 16, 20). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van het grafrecht, van verlening via verlenging en overschrijving tot verval (art. 28; Groningen art. 16–20). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki of in het GEMMA-model. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 
 ### Relaties
@@ -92,7 +92,6 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | bedient *bediening* | Beheren grafrechten | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28) |
-| [Verzorgen lijkbezorging](verzorgen-lijkbezorging.md) | omvat *aggregatie* | Beheren grafrechten | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28) |
 
 ## Herkomst
 
@@ -107,3 +106,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor het beheer van grafrechten; nieuw voor GEMMA.
+
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 20](../../../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **GEMMA Online, Proceshiërarchie:** het hoogste niveau van de hiërarchie is het klant-tot-klant- of bedrijfsproces; daarboven spreekt GEMMA van clusters van bedrijfsprocessen: 'een groepering van bedrijfsprocessen die bij elkaar horen omdat ze op hetzelfde 'thema' betrekking hebben', bijvoorbeeld personeelszaken ([2026-vng-gemma-proceshierarchie](../../../../analyses/proceshierarchie.md), regel 47, 91). Het processenlandschap van het GEMMA-model deelt de uitvoerende processen in naar soort werk (Uitvoeren, Handhaven, Nazorgen, Ontwikkelen; GEMMA type Bedrijfsproces (cluster)); alleen de ondersteunende tak heeft clusters per thema, zoals Beheren personeel, 'de bedrijfsprocessen die corresponderen met de bedrijfsfunctie Personeelsmanagement', zonder bedrijfsprocessen eronder. **GEMMA:** het model groepeert de bedrijfsprocessen per kernobject in een levensloopproces, het gedrag over de levensloop van één kernobject van begin tot eind (Beheren grafrechten, Beheren graven, Bijhouden persoonsgegevens, Beheren reisdocumenten), met GEMMA type Bedrijfsproces (cluster). Daarboven staan geen procesniveaus maar de groeperingen beleidsdomein en taakveld uit de Beleidsdomeinindeling; het beleidsdomein volgt uit het kernobject (besluit redacteur 2026-10-08). Voorstel: (1) neem het levensloopproces op als cluster per thema voor de uitvoerende processen, naast de indeling naar soort werk, die blijft; (2) zie de themaclusters van de ondersteunende tak (Beheren personeel, Beheren financiën) als groepering per beleidsdomein, met levensloopprocessen per kernobject eronder, zoals in de uitvoerende tak.

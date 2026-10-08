@@ -1,0 +1,24 @@
+# Beleidsdomeinen: de beschrijving van een beleidsdomein in de Beleidsdomeinindeling (besluit redacteur 2026-10-08).
+# De render toont haar in het overzicht, bij het beleidsdomein in de Procesindeling naar kernobject. De export zet haar als
+# documentatie op een nieuwe groepering, en als wiki-eigenschap op een GEMMA-groepering (de GEMMA-documentatie blijft).
+beleidsdomeinen:
+- beleidsdomein: Burgerzaken
+  taakveld: 0 Bestuur en Ondersteuning
+  herkomst: beschrijving van de vervallen taak Verzorgen burgerzaken (besluit redacteur 2026-10-08)
+  beschrijving:
+  - 'Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42), neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit verkrijging en verlies Nederlanderschap art. 2), verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11), geeft rijbewijzen af (Wegenverkeerswet 1994 art. 116) en ontvangt de aanvraag voor een verklaring omtrent het gedrag, die de minister afgeeft (Wet justitiële en strafvorderlijke gegevens art. 30, 37).'
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+- beleidsdomein: Begraafplaatsen en crematoria
+  taakveld: 7 Volksgezondheid en Milieu
+  herkomst: beschrijving van de vervallen taak Verzorgen lijkbezorging (besluit redacteur 2026-10-08)
+  beschrijving:
+  - 'Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze (Wet op de lijkbezorging art. 1). De gemeente schouwt stoffelijke overschotten via de gemeentelijke lijkschouwer, geeft het verlof tot begraving of crematie af, heeft ten minste één gemeentelijke begraafplaats, geeft graven uit, staat opgraving en ruiming toe en draagt zorg voor de lijkbezorging als niemand daarin voorziet (art. 4, 11, 21, 28, 29, 31, 33).'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst

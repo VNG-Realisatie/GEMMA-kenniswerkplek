@@ -131,9 +131,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -208,7 +205,7 @@ beschrijving:
 - 'De Wet justitiële en strafvorderlijke gegevens (BWBR0014194) regelt de verwerking en verstrekking van justitiële en strafvorderlijke gegevens, de rechten van de betrokkene, controle en toezicht en de persoonsdossiers. Voor Burgerzaken telt titel 2, afdeling 5 (art. 28 tot en met 39) over de verklaring omtrent het gedrag: de definitie (art. 28), de beschikking (art. 29), de aanvraag bij de burgemeester en de doorzending (art. 30, 31), het onderzoek en de weigering door de minister (art. 34 tot en met 38) en de kosten (art. 39). De rest van de wet valt buiten dit onderwerp. Het Besluit justitiële en strafvorderlijke gegevens werkt het onderzoek van de minister uit en geeft de gemeente geen taak; het is een bron, geen beleidskader.'
 per_onderwerp:
   burgerzaken:
-  - Grondslag van het ketenproces Afgeven verklaring omtrent het gedrag, het deelproces en de dienst. De UPL noemt art. 28, dat de VOG definieert; de gemeentelijke taak staat in art. 30 en 39 (procesarchitectuur-terugmelding).
+  - Grondslag van het levensloopproces Afgeven verklaring omtrent het gedrag, het bedrijfsproces en de dienst. De UPL noemt art. 28, dat de VOG definieert; de gemeentelijke taak staat in art. 30 en 39 (procesarchitectuur-terugmelding).
 grondslag_toelichting:
 - De regeling zelf (2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194).
 relaties:

@@ -124,7 +124,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Verlenen toestemming bijzondere begraafplaats (Wlb art. 40, 41).
+    onderbouwing: Het bedrijfsproces Verlenen toestemming bijzondere begraafplaats (Wlb art. 40, 41).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   leidt_tot_gedrag:
@@ -137,9 +137,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   eigen_besluit:

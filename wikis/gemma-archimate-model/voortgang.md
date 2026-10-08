@@ -24,8 +24,8 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | Onderwerp | Elementen | Gebruikt uit andere | Relaties binnen | Relaties met andere |
 |---|---|---|---|---|
 | Algemeen | 14 | 0 | 13 | Burgerzaken 30, Lijkbezorging 47 |
-| Burgerzaken | 176 | 8 | 507 | Algemeen 30, Lijkbezorging 9 |
-| Lijkbezorging | 79 | 18 | 198 | Algemeen 47, Burgerzaken 9 |
+| Burgerzaken | 174 | 8 | 499 | Algemeen 30, Lijkbezorging 8 |
+| Lijkbezorging | 78 | 18 | 192 | Algemeen 47, Burgerzaken 8 |
 | Participatie | 0 | 0 | 0 | — |
 
 ## Elementen per type en status
@@ -34,8 +34,9 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 |---|---|---|---|---|
 | actor | 0 | 0 | 10 | 0 |
 | bedrijfsfunctie | 0 | 0 | 14 | 0 |
+| bedrijfsinteractie | 0 | 0 | 1 | 0 |
 | bedrijfsobject | 0 | 0 | 23 | 0 |
-| bedrijfsproces | 0 | 0 | 84 | 0 |
+| bedrijfsproces | 0 | 0 | 80 | 3 |
 | beleidskader | 0 | 0 | 16 | 0 |
 | dienst | 0 | 0 | 77 | 0 |
 | gebeurtenis | 0 | 0 | 19 | 0 |
@@ -48,4 +49,4 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 ## Procesarchitectuur-terugmeldingen
 
-[19 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 19.
+[20 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 19, opgelost 1.

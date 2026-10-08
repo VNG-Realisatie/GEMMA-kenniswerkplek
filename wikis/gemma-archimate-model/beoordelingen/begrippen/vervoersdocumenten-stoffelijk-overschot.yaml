@@ -3,7 +3,7 @@ homoniemen:
 - begrip: Laissez-passer voor lijken
   betekenis: Het document van de burgemeester waarmee een stoffelijk overschot ongehinderd naar een verdragsstaat van de Overeenkomst van Straatsburg wordt vervoerd (Besluit op de lijkbezorging art. 11 lid 1)
   waar: Specialisatie van Vergunning zonder eigen pagina in deze wiki
-  naamkeuze: 'Deze pagina heet Vervoersdocumenten stoffelijk overschot: de dienst, met de UPL-naam, en Laissez-passer voor lijken als synoniem (wet). Het document zelf is de specialisatie Laissez-passer voor lijken van Vergunning en krijgt geen pagina; het afgeven is het deelproces Afgeven laissez-passer.'
+  naamkeuze: 'Deze pagina heet Vervoersdocumenten stoffelijk overschot: de dienst, met de UPL-naam, en Laissez-passer voor lijken als synoniem (wet). Het document zelf is de specialisatie Laissez-passer voor lijken van Vergunning en krijgt geen pagina; het afgeven is het bedrijfsproces Afgeven laissez-passer.'
 onderwerpen:
 - lijkbezorging
 kenmerken:
@@ -129,7 +129,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Afgeven laissez-passer (Besluit op de lijkbezorging art. 11).
+    onderbouwing: Het bedrijfsproces Afgeven laissez-passer (Besluit op de lijkbezorging art. 11).
     bronnen:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   leidt_tot_gedrag:
@@ -142,9 +142,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   eigen_besluit:

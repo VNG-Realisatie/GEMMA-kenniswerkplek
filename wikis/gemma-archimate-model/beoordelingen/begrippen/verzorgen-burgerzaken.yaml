@@ -145,9 +145,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Omvat de processen van de kernobjecten van burgerzaken, niet de levensloop van één.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: De taak is van de gemeente.
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
@@ -220,6 +217,11 @@ besluiten:
 - datum: '2026-10-07'
   besluit: Nieuwe taak boven Bijhouden persoonsgegevens, met voorlopig één proces; de processen voor de akte van de burgerlijke stand (plak 2) en het reisdocument (plak 3) komen erbij. Afwijking van minstens twee processen per kernobject tot plak 2.
   gevolg: opnemen
+- datum: '2026-10-08'
+  besluit: 'Vervalt: de taak is geen procesniveau meer (besluit 2026-10-08, procesniveaus volgens GEMMA Online, Proceshiërarchie). Boven de levensloopprocessen staat het beleidsdomein Burgerzaken; de beschrijving staat letterlijk, zonder de zin over de taak als groepering, in het register van beleidsdomeinen. Het object in Archi vervalt; een typewijziging naar groepering kan niet (regel Objectbehoud).'
+  gevolg: afwijzen
+  redenen:
+  - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen taak voor burgerzaken; Burgerzaken is in GEMMA een beleidsdomein (groepering), geen gedrag.
@@ -273,7 +275,7 @@ relaties:
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 28-39
-status: goedgekeurd
+status: afgewezen
 afgeleid:
   uitkomst:
     soort: element
@@ -281,11 +283,14 @@ afgeleid:
     toelichting: Gedrag, *groepeert processen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
-    voorleggen: false
+    voorleggen: true
+    redenen:
+    - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
     data_object: nee
-    procesniveau: taak
     generiek: false
     typeregel: 17
+  voor_te_leggen:
+  - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -296,4 +301,3 @@ afgeleid:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-rijk-kieswet-bwbr0004627
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verzorgen-burgerzaken.md

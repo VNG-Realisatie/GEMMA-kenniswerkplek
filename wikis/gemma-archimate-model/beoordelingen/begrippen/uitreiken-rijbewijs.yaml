@@ -153,9 +153,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
     onderbouwing: De uitreiking is een feitelijke handeling; de beslissing ligt bij de afgifte (Wegenverkeerswet 1994 art. 116, 118a); alleen het niet uitreiken volgt uit art. 120a.
@@ -257,7 +254,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

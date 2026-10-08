@@ -30,7 +30,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort primair bij burgerzaken: onderdeel van Rijbewijs aanvragen en van het deelproces Behandelen aanvraag rijbewijs (besluit redacteur 2026-10-07).'
+    onderbouwing: 'Hoort primair bij burgerzaken: onderdeel van Rijbewijs aanvragen en van het bedrijfsproces Behandelen aanvraag rijbewijs (besluit redacteur 2026-10-07).'
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
     - 2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs
@@ -148,9 +148,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -212,7 +209,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 genoemd_begrip: Rijbewijs aanvragen
-toelichting: 'Onderdeel (subdienst), geen pagina (besluit redacteur 2026-10-07): de UPL noemt de gezondheidsverklaring als zelfstandig product (nr. 362, art. 100 Reglement rijbewijzen), maar de gemeente heeft er geen eigen handeling voor. Ze controleert bij de aanvraag of de verklaring van geschiktheid bij het CBR is geregistreerd, als onderdeel van de dienst Rijbewijs aanvragen en van het deelproces Behandelen aanvraag rijbewijs (Reglement rijbewijzen art. 35 en 45). De aanvrager koopt de gezondheidsverklaring bij het CBR en de gemeente verkoopt of ontvangt haar niet (Utrecht); het CBR registreert de verklaring van geschiktheid (art. 97, 100). Zie procesarchitectuur-terugmelding 18.'
+toelichting: 'Onderdeel (subdienst), geen pagina (besluit redacteur 2026-10-07): de UPL noemt de gezondheidsverklaring als zelfstandig product (nr. 362, art. 100 Reglement rijbewijzen), maar de gemeente heeft er geen eigen handeling voor. Ze controleert bij de aanvraag of de verklaring van geschiktheid bij het CBR is geregistreerd, als onderdeel van de dienst Rijbewijs aanvragen en van het bedrijfsproces Behandelen aanvraag rijbewijs (Reglement rijbewijzen art. 35 en 45). De aanvrager koopt de gezondheidsverklaring bij het CBR en de gemeente verkoopt of ontvangt haar niet (Utrecht); het CBR registreert de verklaring van geschiktheid (art. 97, 100). Zie procesarchitectuur-terugmelding 18.'
 synoniemen:
 - naam: Gezondheidsverklaring en medische keuring voor rijbewijs
   context: beleid

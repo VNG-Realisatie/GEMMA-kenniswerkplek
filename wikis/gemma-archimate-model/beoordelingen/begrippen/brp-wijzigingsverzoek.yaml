@@ -131,7 +131,7 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het deelproces Behandelen verzoek om correctie (Utrecht).
+    onderbouwing: Het bedrijfsproces Behandelen verzoek om correctie (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   leidt_tot_gedrag:
@@ -144,9 +144,6 @@ kenmerken:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:

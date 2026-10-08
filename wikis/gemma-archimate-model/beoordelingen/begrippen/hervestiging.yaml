@@ -136,9 +136,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -195,7 +192,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: nee
-    onderbouwing: Een soort vestiging vanuit het buitenland die tot hetzelfde deelproces leidt.
+    onderbouwing: Een soort vestiging vanuit het buitenland die tot hetzelfde bedrijfsproces leidt.
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.

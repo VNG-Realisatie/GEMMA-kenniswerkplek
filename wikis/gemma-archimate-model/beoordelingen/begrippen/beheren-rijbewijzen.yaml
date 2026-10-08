@@ -145,7 +145,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: Het proces van een kernobject; de taak Verzorgen burgerzaken groepeert het, maar het levert zelf het eindresultaat.
+    onderbouwing: Het levensloopproces van een kernobject; geen deel van een groter proces.
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -154,12 +154,6 @@ kenmerken:
     onderbouwing: 'Omvat de levensloop van het rijbewijs voor zover de gemeente handelt: aanvraag, afgifte, uitreiking, vervanging bij vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 113 tot en met 123).'
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'De gemeente voert de levensloop uit tegenover de houder: de burgemeester besluit tot afgifte (Wegenverkeerswet 1994 art. 116, 118a). De RDW produceert, vervoert en levert de rijbewijzen af, beheert het rijbewijzenregister en geeft in bij algemene maatregel van bestuur bepaalde gevallen zelf af; het CBR registreert de verklaring van geschiktheid (Reglement rijbewijzen art. 97, 105, 119; Wegenverkeerswet 1994 art. 126). Dat is invoer en productie voor de gemeente, zoals de minister bij Beheren reisdocumenten, en geen eigen deel tegenover de houder; alleen bij de omwisseling van een buitenlands rijbewijs beslist de RDW zelf (zie het deelproces en de vraag).'
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   eigen_besluit:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -174,7 +168,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar; de deelprocessen leiden tot de gebeurtenissen.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar; de bedrijfsprocessen leiden tot de gebeurtenissen.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -226,7 +220,7 @@ definitie: Het behandelen van aanvragen, afgeven en uitreiken van rijbewijzen en
 beschrijving:
 - De burgemeester neemt de aanvraag in ontvangst en geeft het rijbewijs af, voor wie als ingezetene met een adres in zijn gemeente in de basisregistratie personen staat; het besluit tot afgifte neemt hij na de controle van de identiteit, de bescheiden en de voorwaarden (Wegenverkeerswet 1994 art. 113, 116, 118a; Reglement rijbewijzen art. 27, 33). De gemeente stelt het tarief vast bij plaatselijke verordening en betaalt de RDW een vergoeding voor de productie en aflevering (Wegenverkeerswet 1994 art. 111 lid 5, 121).
 - In de bij algemene maatregel van bestuur bepaalde gevallen geeft de RDW het rijbewijs af, onder meer bij omwisseling van een rijbewijs dat buiten Nederland is afgegeven; de burgemeester geleidt de aanvraag dan terstond door (Reglement rijbewijzen art. 28, 29, 105 lid 2). De RDW produceert de rijbewijzen en beheert het rijbewijzenregister; het CBR registreert de verklaring van geschiktheid die bij vernieuwing in bepaalde gevallen is vereist (Reglement rijbewijzen art. 35, 97, 119; Wegenverkeerswet 1994 art. 126). Beide zijn zelfstandige bestuursorganen (art. 4a, 4z) en geen eigen element.
-- 'Het proces omvat de levensloop van het rijbewijs: aanvraag, afgifte, uitreiking, vervanging en vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 119, 120, 123). De deelprocessen leveren de diensten van de UPL voor het rijbewijs (rijbewijs, rijbewijs verlengen en rijbewijs buitenlands omwisseling) en het doorgeven van vermissing. De gemeente toetst bij de aanvraag of een vereiste verklaring van geschiktheid bij het CBR is geregistreerd, als onderdeel van Behandelen aanvraag rijbewijs; de gezondheidsverklaring (UPL nr. 362) is geen eigen dienst (Reglement rijbewijzen art. 35, 45; Utrecht).'
+- 'Het proces omvat de levensloop van het rijbewijs: aanvraag, afgifte, uitreiking, vervanging en vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 119, 120, 123). De bedrijfsprocessen leveren de diensten van de UPL voor het rijbewijs (rijbewijs, rijbewijs verlengen en rijbewijs buitenlands omwisseling) en het doorgeven van vermissing. De gemeente toetst bij de aanvraag of een vereiste verklaring van geschiktheid bij het CBR is geregistreerd, als onderdeel van Behandelen aanvraag rijbewijs; de gezondheidsverklaring (UPL nr. 362) is geen eigen dienst (Reglement rijbewijzen art. 35, 45; Utrecht).'
 synoniemen:
 - naam: Rijbewijzen
   context: dagelijks gebruik
@@ -308,7 +302,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    procesniveau: levensloopproces
     generiek: false
     typeregel: 17
   bronnen:

@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: 248947b3fd4d5551b848ea2fbf9c984abce97df1e4d37c501d75c91ddca0dbc5 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 69ed17510666f5520d1321db8328fc0291a3e8a2f37633a8e8dc8e1ccb4039e0 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-07T22:56:36. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 31 gekoppeld aan GEMMA, 238 nieuw. Relaties: 15 gekoppeld, 985 nieuw, 0 overgeslagen. Indelingen: 158 aggregaties vanuit een groepering, 35 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-08T08:42:26. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 31 gekoppeld aan GEMMA, 235 nieuw. Relaties: 15 gekoppeld, 986 nieuw, 0 overgeslagen. Indelingen: 171 aggregaties vanuit een groepering, 38 specialisaties naar een GEMMA-element.
 
 Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de groep Kennismodel met een groep per laag (map Other / wiki-gemma-model / Kennismodel).
 
@@ -9,7 +9,9 @@ Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de gro
 
 Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kennismodel-wiki.
 
+- element Bedrijfsinteractie (business-interaction)
 - element Afspraak (contract)
+- relatie access Bedrijfsinteractie → Bedrijfsobject (lezen-schrijven), 1×, niet in Over GEMMA
 - relatie access Bedrijfsproces → Afspraak (schrijven), 2×, niet in Over GEMMA
 - relatie access Bedrijfsproces → Afspraak (lezen-schrijven), 1×, niet in Over GEMMA
 - relatie access Rol → Afspraak (lezen-schrijven), 1×, niet in Over GEMMA
@@ -17,19 +19,21 @@ Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kenni
 - relatie aggregation Bedrijfsfunctie → Bedrijfsfunctie, 11×
 - relatie aggregation Bedrijfsfunctie → Dienst, 77×, niet in Over GEMMA
 - relatie aggregation Bedrijfsobject → Bedrijfsobject, 1×
-- relatie aggregation Bedrijfsproces → Gebeurtenis, 20×, niet in Over GEMMA
-- relatie aggregation Bedrijfsproces → Bedrijfsproces, 93×
+- relatie aggregation Bedrijfsproces → Gebeurtenis, 19×, niet in Over GEMMA
+- relatie aggregation Bedrijfsproces → Bedrijfsproces, 76×
 - relatie aggregation Rol → Actor, 10×, niet in Over GEMMA
 - relatie aggregation Rol → Rol, 25×
 - relatie aggregation Groep → Bedrijfsfunctie, 3×
+- relatie aggregation Groep → Bedrijfsinteractie, 1×, niet in Over GEMMA
 - relatie aggregation Groep → Bedrijfsobject, 22×
-- relatie aggregation Groep → Bedrijfsproces, 2×, niet in Over GEMMA
+- relatie aggregation Groep → Bedrijfsproces, 14×, niet in Over GEMMA
 - relatie aggregation Groep → Dienst, 77×, niet in Over GEMMA
 - relatie aggregation Groep → Afspraak, 1×, niet in Over GEMMA
 - relatie aggregation Groep → Beleidskader, 16×, niet in Over GEMMA
 - relatie aggregation Groep → Product, 2×, niet in Over GEMMA
 - relatie aggregation Product → Afspraak, 1×
-- relatie assignment Rol → Bedrijfsproces, 121×
+- relatie assignment Rol → Bedrijfsinteractie, 1×, niet in Over GEMMA
+- relatie assignment Rol → Bedrijfsproces, 120×
 - relatie association Actor → Actor, 2×, niet in Over GEMMA
 - relatie association Gebeurtenis → Bedrijfsobject, 1×, niet in Over GEMMA
 - relatie association Bedrijfsobject → Dienst, 1×, niet in Over GEMMA
@@ -42,9 +46,11 @@ Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kenni
 - relatie association Beleidskader → Product, 1×, niet in Over GEMMA
 - relatie composition Bedrijfsobject → Bedrijfsobject, 1×
 - relatie flow Bedrijfsproces → Bedrijfsproces, 6×, niet in Over GEMMA
+- relatie serving Bedrijfsproces → Bedrijfsinteractie, 3×, niet in Over GEMMA
 - relatie serving Dienst → Rol, 21×
 - relatie serving Product → Rol, 1×
 - relatie triggering Gebeurtenis → Gebeurtenis, 4×, niet in Over GEMMA
+- relatie triggering Gebeurtenis → Bedrijfsinteractie, 1×, niet in Over GEMMA
 
 ## Wijzigt een GEMMA-element
 
@@ -81,7 +87,9 @@ Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets
 - Behandelen aanvraag reisdocument niet-ingezetene → Behandelen aanvraag product
 - Behandelen aanvraag reisdocument → Behandelen aanvraag product
 - Behandelen aanvraag rijbewijs → Behandelen aanvraag product
+- Behandelen aanvraag verklaring omtrent het gedrag → Leveren dienst aan derden
 - Behandelen melding voorgenomen huwelijk of partnerschap → Behandelen aangifte of melding
+- Behandelen naturalisatieverzoek → Leveren dienst aan derden
 - Behandelen vergunningaanvragen lijkbezorging → Behandelen aanvraag vergunning of ontheffing
 - Behandelen verklaring van afstand → Behandelen aangifte of melding
 - Behandelen verzoek om correctie → Behandelen aanvraag product
@@ -89,6 +97,7 @@ Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets
 - Behandelen verzoek om kiezerspas → Behandelen aanvraag product
 - Behandelen verzoek om verwijdering van gegevens → Behandelen aanvraag product
 - Beheerder van de begraafplaats → Beheerder
+- Houden naturalisatieceremonie → Leveren dienst aan derden
 - Inschrijven ingezetene → Behandelen aangifte of melding
 - Inschrijven levenloos geboren kind → Behandelen aanvraag product
 - Inschrijven niet-ingezetene → Behandelen aangifte of melding
@@ -149,7 +158,6 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Behandelen optieverklaring
 - Behandelen vergunningaanvragen lijkbezorging
 - Behandelen verklaring van afstand
-- Behandelen verkrijging en verlies Nederlanderschap
 - Behandelen verzoek om correctie
 - Behandelen verzoek om geheimhouding
 - Behandelen verzoek om kiezerspas
@@ -343,9 +351,7 @@ Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het G
 - Verwerken vermissing reisdocument
 - Verwerken vermissing rijbewijs
 - Verzoeker om naturalisatie
-- Verzorgen burgerzaken
 - Verzorgen gemeentebegrafenis
-- Verzorgen lijkbezorging
 - Vestiging vanuit het buitenland
 - Vluchtelingenpaspoort
 - Volmachtbewijs verkiezingen

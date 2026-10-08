@@ -145,9 +145,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -210,7 +207,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-toelichting: 'Processtap zonder pagina: bij twijfel stelt de bijhoudingsgemeente gegevens in onderzoek en neemt proceduregegevens op; het onderzoek eindigt in een actualisering of correctie zonder eigen besluit. Twijfel over het adres leidt tot het deelproces Uitvoeren adresonderzoek; een verzoek van de burger tot Behandelen verzoek om correctie.'
+toelichting: 'Processtap zonder pagina: bij twijfel stelt de bijhoudingsgemeente gegevens in onderzoek en neemt proceduregegevens op; het onderzoek eindigt in een actualisering of correctie zonder eigen besluit. Twijfel over het adres leidt tot het bedrijfsproces Uitvoeren adresonderzoek; een verzoek van de burger tot Behandelen verzoek om correctie.'
 synoniemen:
 - naam: In onderzoek stellen van gegevens
   context: HUP
@@ -220,7 +217,7 @@ afgeleid:
   uitkomst:
     soort: onderdeel
     regel: 30
-    toelichting: 'Processtap: een deel van een groter proces zonder eigen besluit, eigen normering of aanbod'
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces zonder eigen besluit, eigen normering of aanbod'
     archimate_type: business-process
     voorleggen: false
     data_object: nee

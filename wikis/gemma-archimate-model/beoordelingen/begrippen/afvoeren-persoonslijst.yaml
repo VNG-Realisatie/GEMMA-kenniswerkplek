@@ -151,9 +151,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   eigen_besluit:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -225,7 +222,7 @@ afgeleid:
   uitkomst:
     soort: onderdeel
     regel: 30
-    toelichting: 'Processtap: een deel van een groter proces zonder eigen besluit, eigen normering of aanbod'
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces zonder eigen besluit, eigen normering of aanbod'
     archimate_type: business-process
     voorleggen: false
     data_object: nee

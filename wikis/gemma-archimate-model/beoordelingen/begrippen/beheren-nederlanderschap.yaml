@@ -144,7 +144,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: Het proces van een kernobject; de taak Verzorgen burgerzaken groepeert het, maar het levert zelf het eindresultaat.
+    onderbouwing: Het levensloopproces van het Nederlanderschap; geen deel van een groter proces.
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -154,12 +154,6 @@ kenmerken:
     bronnen:
     - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  meer_organisaties:
-    waarde: ja
-    onderbouwing: 'Gemeente en minister van Justitie en Veiligheid voeren het samen uit, elk met een eigen deel tegenover de persoon: de burgemeester neemt het naturalisatieverzoek in ontvangst, onderzoekt en adviseert; de minister beslist, zendt een afwijzing aan de verzoeker en het uittreksel aan de burgemeester ter uitreiking (Besluit art. 33-38; Utrecht: de IND beoordeelt en stuurt de aanvrager het resultaat). Anders dan bij Beheren reisdocumenten voert de minister hier een eigen deel uit.'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   eigen_besluit:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -174,7 +168,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar; de deelprocessen leiden tot de gebeurtenissen.
+    onderbouwing: Niet bij dit gedrag aanwijsbaar; de bedrijfsprocessen leiden tot de gebeurtenissen.
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -227,9 +221,9 @@ afnemer: extern
 definitie: Het behandelen van optie, naturalisatie en afstand, waarmee een persoon het Nederlanderschap verkrijgt of verliest.
 beschrijving:
 - In het Europese deel van Nederland neemt de burgemeester optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst van wie in zijn gemeente is ingeschreven of verblijft (Besluit verkrijging en verlies Nederlanderschap art. 2, 7, 33, 63). Bij optie behandelt hij de verklaring zelf en bevestigt of weigert hij de verkrijging; bij naturalisatie onderzoekt hij het verzoek, adviseert hij de minister van Justitie en Veiligheid en reikt hij het uittreksel van het besluit uit; bij afstand neemt hij de verklaring in ontvangst en bevestigt hij haar (Rijkswet op het Nederlanderschap art. 6, 7; Besluit art. 11, 36-38, 60a, 60b, 63).
-- 'Het is een ketenproces: de minister van Justitie en Veiligheid, in de praktijk de IND, beoordeelt het naturalisatieverzoek en beslist erover, adviseert bij sommige opties en kan het Nederlanderschap intrekken; hij houdt het openbare register van verklaringen, bevestigingen en verleningen (Rijkswet art. 6 lid 3, 7, 14, 15, 22; Utrecht). Een naturalisatie kan ook online bij de IND worden aangevraagd; de gemeente controleert dan bij een afspraak de identiteit en de geboorteakte, laat betalen en meldt dit aan de IND (Utrecht).'
+- 'Bij de naturalisatie is het een keten in het orkestratiemodel: de minister van Justitie en Veiligheid, in de praktijk de IND, beoordeelt het naturalisatieverzoek en beslist erover, adviseert bij sommige opties en kan het Nederlanderschap intrekken; hij houdt het openbare register van verklaringen, bevestigingen en verleningen (Rijkswet art. 6 lid 3, 7, 14, 15, 22; Utrecht). Een naturalisatie kan ook online bij de IND worden aangevraagd; de gemeente controleert dan bij een afspraak de identiteit en de geboorteakte, laat betalen en meldt dit aan de IND (Utrecht).'
 - 'De verkrijging en het verlies werken door in de basisregistratie personen, het reisdocument en het kiesrecht: de gemeente neemt de Nederlandse nationaliteit op of beëindigt haar, beëindigt bij verkrijging de verblijfstitel en de aanduiding Europees kiesrecht, en een Nederlands reisdocument vervalt bij verlies van rechtswege (HUP Nederlandse nationaliteit; Paspoortwet art. 47 lid 1 onder a en b).'
-- Het deel van de gemeente is het bedrijfsproces Behandelen verkrijging en verlies Nederlanderschap; het deel van de minister staat alleen in deze beschrijving (besluit redacteur 2026-10-07).
+- 'De gemeente voert haar deel uit in vier bedrijfsprocessen: Behandelen optieverklaring en Behandelen verklaring van afstand, waarin de burgemeester zelf beslist, en Behandelen naturalisatieverzoek en Houden naturalisatieceremonie, die de gemeente uitvoert voor de minister; het deel van de minister staat alleen in deze beschrijving (besluit redacteur 2026-10-08).'
 synoniemen:
 - naam: Verkrijging en verlies Nederlanderschap
   context: wet
@@ -242,13 +236,49 @@ gemma:
 naamkeuze:
 - 'Infinitief met object in GEMMA-volgorde, zoals Beheren reisdocumenten en Beheren grafrechten: het proces omvat de levensloop van het Nederlanderschap waarbij de gemeente handelt, van verkrijging door optie of naturalisatie tot verlies door afstand. Naturalisatie is overwogen, maar dat is één van de wegen tot verkrijging (Besluit art. 1 onder c en d).'
 relaties:
+- soort: toegang (registreren)
+  naar: nederlanderschap
+  naam: bevestigt, doet in werking treden en beëindigt
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 11, 60a, 60b, 63
+- soort: toegang (raadplegen)
+  naar: ingeschreven-persoon
+  naam: toetst aan de basisregistratie personen
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 9, 35
 - soort: aggregatie
-  naar: behandelen-verkrijging-en-verlies-nederlanderschap
+  naar: behandelen-optieverklaring
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: Rijkswet art. 6; Besluit art. 7-12
+- soort: aggregatie
+  naar: behandelen-naturalisatieverzoek
   naam: omvat
   grondslag: bron
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  vindplaats: hoofdstuk II, III, IIIA, V paragraaf 1
+  vindplaats: art. 31-38
+- soort: aggregatie
+  naar: houden-naturalisatieceremonie
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 60a, 60b
+- soort: aggregatie
+  naar: behandelen-verklaring-van-afstand
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 62-64
 - soort: aggregatie
   naar: verkrijging-van-het-nederlanderschap
   naam: omvat
@@ -267,6 +297,9 @@ besluiten:
 - datum: '2026-10-07'
   besluit: Aggregeert alleen het bedrijfsproces Behandelen verkrijging en verlies Nederlanderschap (het deel van de gemeente), dat de vier deelprocessen en de toegang-relaties overneemt; de gebeurtenissen blijven bij het ketenproces.
   gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: 'Geen bedrijfsinteractie: bij optie en afstand beslist de burgemeester zelf, bij de naturalisatie voert de gemeente delen uit voor de minister (orkestratie, IK 27). Blijft het ene levensloopproces van Nederlanderschap, met zijn object in Archi; Behandelen verkrijging en verlies Nederlanderschap is erin samengevoegd: de vier bedrijfsprocessen en de toegangsrelaties komen hier terug, het object van Behandelen vervalt.'
+  gevolg: verwerkt
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -277,7 +310,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: ketenproces
+    procesniveau: levensloopproces
     generiek: false
     typeregel: 17
   bronnen:

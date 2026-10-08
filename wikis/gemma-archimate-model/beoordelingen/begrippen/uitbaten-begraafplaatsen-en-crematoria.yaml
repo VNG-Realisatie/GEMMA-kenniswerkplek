@@ -10,7 +10,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: De deelprocessen zijn gemeentelijk gedrag (zie elk deelproces).
+    onderbouwing: De bedrijfsprocessen zijn gemeentelijk gedrag (zie elk bedrijfsproces).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -22,7 +22,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een eigen groepering van deelprocessen van één soort werk.
+    onderbouwing: Een eigen groepering van bedrijfsprocessen van één soort werk.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -82,7 +82,7 @@ kenmerken:
     onderbouwing: Wordt niet per geval doorlopen; een groepering van processen.
   groepeert_processen:
     waarde: ja
-    onderbouwing: Groepeert de deelprocessen van één soort werk binnen de taak Verzorgen lijkbezorging, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen (besluit redacteur 2026-10-04).
+    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen (besluit redacteur 2026-10-04).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -140,16 +140,13 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   omvat_levensloop:
     waarde: nee
-    onderbouwing: Omvat deelprocessen van verschillende kernobjecten, niet de levensloop van één.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Een groepering, geen uitvoering.
+    onderbouwing: Omvat bedrijfsprocessen van verschillende kernobjecten, niet de levensloop van één.
   eigen_besluit:
     waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
+    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
   levert_aanbod:
     waarde: nee
-    onderbouwing: Levert zelf geen aanbod; dat doen de deelprocessen.
+    onderbouwing: Levert zelf geen aanbod; dat doen de bedrijfsprocessen.
   bedient_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen functie.'
@@ -209,7 +206,7 @@ kenmerken:
     onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het openhouden van gemeentelijke begraafplaatsen en crematoria en het ter beschikking stellen van graven en ruimte voor bijzetting en verstrooiing.
 beschrijving:
-- Op de gemeentelijke begraafplaats en in een gemeentelijk crematorium begraaft, cremeert en zet de gemeente bij, binnen de tijden die de verordening bepaalt (Wet op de lijkbezorging art. 23, 49, 56, 62; Groningen art. 7, 21), en ruimt zij graven om ruimte vrij te maken (art. 31; Groningen art. 27). Het cluster groepeert deze deelprocessen als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen.
+- Op de gemeentelijke begraafplaats en in een gemeentelijk crematorium begraaft, cremeert en zet de gemeente bij, binnen de tijden die de verordening bepaalt (Wet op de lijkbezorging art. 23, 49, 56, 62; Groningen art. 7, 21), en ruimt zij graven om ruimte vrij te maken (art. 31; Groningen art. 27). Het cluster groepeert deze bedrijfsprocessen als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
@@ -218,7 +215,7 @@ gemma:
   onderbouwing: Een nieuw cluster; het specialiseert het GEMMA-proces Uitbaten gemeentelijke voorzieningen (zie Generiek GEMMA-element).
 gemma_generiek:
   id: id-de88d348-dcce-4b8a-a3f6-cac6351a8311
-  onderbouwing: Elk deelproces stelt de gemeentelijke begraafplaats of het crematorium ter beschikking voor begraven, cremeren, bijzetten of het vrijmaken van grafruimte.
+  onderbouwing: Elk bedrijfsproces stelt de gemeentelijke begraafplaats of het crematorium ter beschikking voor begraven, cremeren, bijzetten of het vrijmaken van grafruimte.
 relaties:
 - soort: aggregatie
   naar: uitvoeren-lijkbezorging

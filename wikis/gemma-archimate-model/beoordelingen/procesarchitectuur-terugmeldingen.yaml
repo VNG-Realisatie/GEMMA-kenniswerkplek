@@ -18,7 +18,7 @@ terugmeldingen:
   - verlof-tot-begraven
   bevinding:
   - '**UPL:** verlof tot begraven valt onder Iv3 0.2 (Burgerzaken); de andere producten van de lijkbezorging vallen onder 7.5 (2025-vng-upl-producten-en-diensten-extern).'
-  - '**GEMMA:** 7.5, beleidsdomein Begraafplaatsen en crematoria, naast het deelproces Verlenen verlof tot begraving of crematie in Bezorgen stoffelijk overschot. Het verlof hoort bij de lijkbezorging, ook al geeft de ambtenaar van de burgerlijke stand het af (Wet op de lijkbezorging art. 11).'
+  - '**GEMMA:** 7.5, beleidsdomein Begraafplaatsen en crematoria, naast het bedrijfsproces Verlenen verlof tot begraving of crematie onder Toestaan lijkbezorging. Het verlof hoort bij de lijkbezorging, ook al geeft de ambtenaar van de burgerlijke stand het af (Wet op de lijkbezorging art. 11).'
   nummer: 2
   status: open
 - type: indeling
@@ -81,20 +81,19 @@ terugmeldingen:
   bevinding:
   - '**Kennismodel:** een deelproces realiseert een deelservice: een onderdeel van een dienst, dat in verschillende bedrijfsprocessen wordt gebruikt maar geen dienst is die de organisatie aan de buitenwereld levert. De dienst zelf wordt gerealiseerd door een bedrijfsproces of ketenproces (2026-vng-over-gemma, regel 385, 398, 591, 603).'
   - '**GEMMA:** een deelproces realiseert de dienst van een UPL-product, bijvoorbeeld Verlenen verlof tot begraving of crematie de dienst Verlof tot begraven en Verlenen grafrecht de dienst Graf aanvragen. Het model heeft één bedrijfs- of ketenproces per kernobject (Beheren grafrechten, Beheren graven, Bezorgen stoffelijk overschot); daaronder levert elk deelproces één product of dienst. Eén bedrijfsproces per product maakt het model plat: een gemeente levert zo''n 500 externe en 215 interne producten en diensten (2025-vng-upl-producten-en-diensten-extern, 2025-vng-upl-producten-en-diensten-intern).'
+  - '**Opgelost (2026-10-08):** de procesniveaus van het model volgen nu de ladder van GEMMA Online, Proceshiërarchie (2026-vng-gemma-proceshierarchie, regel 47, 81, 83): wat het model deelproces noemde, is een bedrijfsproces, en een bedrijfsproces realiseert de dienst, zoals het kennismodel zegt. De afwijking bestaat niet meer; de melding wordt niet verstuurd.'
   nummer: 4
-  status: open
+  status: opgelost
 - type: kennismodel
   elementen:
   - bezorgen-stoffelijk-overschot
   - toestaan-lijkbezorging
   - begraven-en-cremeren-stoffelijk-overschot
-  - beheren-nederlanderschap
-  - behandelen-verkrijging-en-verlies-nederlanderschap
-  - afgeven-verklaring-omtrent-het-gedrag
-  - behandelen-aanvraag-verklaring-omtrent-het-gedrag
+  - verzorgen-gemeentebegrafenis
   bevinding:
-  - '**Kennismodel:** een ketenproces is een samenhangend geheel van processen over afdelingen of organisaties en aggregeert bedrijfsprocessen; een bedrijfsproces is een reeks activiteiten die bijdraagt aan een specifiek resultaat en is opgebouwd uit deelprocessen, die elk binnen één organisatorische eenheid worden uitgevoerd (2026-vng-over-gemma, regel 564, 571, 573, 590, 605). Het kennismodel zegt niet wat een bedrijfsproces binnen een ketenproces afbakent.'
-  - '**GEMMA:** een ketenproces aggregeert alleen bedrijfsprocessen, nooit rechtstreeks deelprocessen. Het ketenproces omvat de levensloop van één kernobject over de partijen heen; elk bedrijfsproces daarin omvat het deel van die levensloop dat één partij uitvoert, met hetzelfde kernobject, en aggregeert de deelprocessen van die partij. De partij kan ook de gemeente in een eigen hoedanigheid zijn. Zo heeft Bezorgen stoffelijk overschot de bedrijfsprocessen Toestaan lijkbezorging (de gemeente als overheid: schouwen, verlof, andere termijn, ontleding, laissez-passer, asverstrooiing, opgraving en maatregel bij besmetting), Begraven en cremeren stoffelijk overschot (de houder van de begraafplaats of het crematorium) en Verzorgen gemeentebegrafenis (2026-rijk-wet-op-de-lijkbezorging-wettekst, art. 3, 11, 21, 23, 49). Beheren Nederlanderschap heeft Behandelen verkrijging en verlies Nederlanderschap (de burgemeester; 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605, hoofdstuk II, III, IIIA en V), en Afgeven verklaring omtrent het gedrag heeft Behandelen aanvraag verklaring omtrent het gedrag (de burgemeester; 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194, art. 30). Het deel van een partij buiten de gemeente, zoals de minister of de behandelend arts, staat alleen in de beschrijving van het ketenproces. De levensloop staat niet in de GEMMA-definities; het is een criterium van dit model. Voorstel: neem in de definitie van bedrijfsproces op dat een bedrijfsproces binnen een ketenproces het deel van één partij is, en in die van ketenproces dat het geen deelprocessen rechtstreeks bevat.'
+  - '**Kennismodel:** een ketenproces is een samenhangend geheel van processen over afdelingen of organisaties en aggregeert bedrijfsprocessen: Ketenproces → aggregatie → Bedrijfsproces (2026-vng-over-gemma, regel 564, 590).'
+  - '**GEMMA Online, Proceshiërarchie:** ''Ketensamenwerking wordt soms aangeduid als "ketenproces", een proces op een hoger niveau dan de eigen bedrijfsprocessen'', maar dat is ''vanuit de procesarchitectuur gezien niet correct''; in ArchiMate is het ''een bedrijfsinteractie waarin de bedrijfsprocessen van de betrokken organisaties samenkomen'', niet een proces dat met een aggregatie uit andere processen is samengesteld (2026-vng-gemma-proceshierarchie, regel 144, 146). Het GEMMA-model volgt dat: de business-interaction Ketensamenwerking wordt bediend door Bedrijfsproces 1 en Bedrijfsproces 2. De pagina Impact van ketensamenwerking onderscheidt het orkestratiemodel en het estafettemodel (2026-vng-gemma-impact-ketensamenwerking, regel 27-34).'
+  - '**GEMMA:** de bronnen van GEMMA spreken elkaar tegen. Het model volgt de pagina Proceshiërarchie, omdat die uitwerkt hoe GEMMA ketens modelleert en het GEMMA-model zelf dat ook doet. Een estafette wordt een bedrijfsinteractie met een kernobject, bediend door de levensloopprocessen van de partijen: Bezorgen stoffelijk overschot, bediend door Toestaan lijkbezorging (de gemeente als overheid), Begraven en cremeren stoffelijk overschot (de houder van de begraafplaats of het crematorium) en Verzorgen gemeentebegrafenis, met de officier van justitie als ketenpartner (2026-rijk-wet-op-de-lijkbezorging-wettekst, art. 10, 11, 12, 21, 23, 49). Bij orkestratie is er geen interactie; het deel dat de gemeente voor een andere partij uitvoert, specialiseert Leveren dienst aan derden (de verklaring omtrent het gedrag, de naturalisatie). Voorstel: haal Ketenproces → aggregatie → Bedrijfsproces uit het kennismodel en neem de bedrijfsinteractie op, bediend door bedrijfsprocessen en toegewezen aan een bedrijfssamenwerking of de rollen van de partijen.'
   nummer: 5
   status: open
 - type: kennismodel
@@ -168,7 +167,7 @@ terugmeldingen:
   - stemrecht
   bevinding:
   - '**UPL:** het product stemrecht heeft als grondslag art. B 1-B 3 en Y 2 Kieswet (2025-vng-upl-producten-en-diensten-extern, nr. 398).'
-  - '**GEMMA:** het kiesrecht is een recht van de persoon, geen prestatie van de gemeente. Wat de gemeente levert, is de registratie van de kiesgerechtigdheid en de mededeling op verzoek of iemand als kiezer is geregistreerd (2026-rijk-kieswet-bwbr0004627, art. D 1, D 5). In het model is Stemrecht de dienst die het deelproces Registreren kiesgerechtigdheid realiseert; voorstel: art. D 1 en D 5 als grondslag toevoegen.'
+  - '**GEMMA:** het kiesrecht is een recht van de persoon, geen prestatie van de gemeente. Wat de gemeente levert, is de registratie van de kiesgerechtigdheid en de mededeling op verzoek of iemand als kiezer is geregistreerd (2026-rijk-kieswet-bwbr0004627, art. D 1, D 5). In het model is Stemrecht de dienst die het bedrijfsproces Registreren kiesgerechtigdheid realiseert; voorstel: art. D 1 en D 5 als grondslag toevoegen.'
   nummer: 14
   status: open
 - type: product
@@ -202,7 +201,7 @@ terugmeldingen:
   - behandelen-aanvraag-rijbewijs
   bevinding:
   - '**UPL:** het product rijbewijs gezondheidsverklaring (nr. 362) staat als zelfstandig product onder taakveld 0.2, met als grondslag art. 100 Reglement rijbewijzen (2025-vng-upl-producten-en-diensten-extern).'
-  - '**GEMMA:** de gezondheidsverklaring is geen zelfstandige dienst maar een onderdeel (subdienst) van het besluit over de aanvraag van een rijbewijs, want de gemeente heeft er geen eigen handeling voor. Art. 100 gaat over de aanvraag van een verklaring van geschiktheid bij het CBR: de aanvrager overlegt de gezondheidsverklaring aan het CBR, dat de verklaring registreert (2026-rijk-reglement-rijbewijzen-bwbr0008074, art. 97, 100). De gemeente verkoopt of ontvangt geen gezondheidsverklaring (2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs) en controleert alleen als onderdeel van Behandelen aanvraag rijbewijs of een vereiste verklaring van geschiktheid is geregistreerd (art. 35, 45). In het model is het daarom geen element: het begrip staat in de begrippenlijst als onderdeel van de dienst Rijbewijs aanvragen en van het deelproces Behandelen aanvraag rijbewijs; voorstel: de UPL laat het product vervallen of beschrijft het als onderdeel van het product rijbewijs, met art. 35 en 45 als grondslag.'
+  - '**GEMMA:** de gezondheidsverklaring is geen zelfstandige dienst maar een onderdeel (subdienst) van het besluit over de aanvraag van een rijbewijs, want de gemeente heeft er geen eigen handeling voor. Art. 100 gaat over de aanvraag van een verklaring van geschiktheid bij het CBR: de aanvrager overlegt de gezondheidsverklaring aan het CBR, dat de verklaring registreert (2026-rijk-reglement-rijbewijzen-bwbr0008074, art. 97, 100). De gemeente verkoopt of ontvangt geen gezondheidsverklaring (2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs) en controleert alleen als onderdeel van Behandelen aanvraag rijbewijs of een vereiste verklaring van geschiktheid is geregistreerd (art. 35, 45). In het model is het daarom geen element: het begrip staat in de begrippenlijst als onderdeel van de dienst Rijbewijs aanvragen en van het bedrijfsproces Behandelen aanvraag rijbewijs; voorstel: de UPL laat het product vervallen of beschrijft het als onderdeel van het product rijbewijs, met art. 35 en 45 als grondslag.'
   nummer: 18
   status: open
 - type: grondslag
@@ -213,4 +212,15 @@ terugmeldingen:
   - '**UPL:** de grondslag van rijbewijs (nr. 360) is art. 26 Reglement rijbewijzen en die van verklaring omtrent gedrag (vog) (nr. 434) art. 28 Wet justitiële en strafvorderlijke gegevens (2025-vng-upl-producten-en-diensten-extern).'
   - '**GEMMA:** art. 26 Reglement rijbewijzen zegt alleen dat de aanvraag volgens de volgende artikelen geschiedt; de bevoegdheid van de burgemeester tot afgifte staat in art. 116 lid 1 Wegenverkeerswet 1994 en art. 27 Reglement (2026-rijk-reglement-rijbewijzen-bwbr0008074; 2026-rijk-wegenverkeerswet-1994-bwbr0006622). Art. 28 Wjsg definieert de VOG; de gemeentelijke taak (ontvangen, controleren, doorzenden, vergoeding) staat in art. 30 en 39 (2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194). In het model zijn de Wegenverkeerswet 1994, het Reglement rijbewijzen en de Wjsg beleidskaders; voorstel: art. 116 Wegenverkeerswet 1994 en art. 27 Reglement, en art. 30 en 39 Wjsg als grondslag toevoegen.'
   nummer: 19
+  status: open
+- type: kennismodel
+  elementen:
+  - beheren-grafrechten
+  - beheren-graven
+  - bijhouden-persoonsgegevens
+  - beheren-reisdocumenten
+  bevinding:
+  - '**GEMMA Online, Proceshiërarchie:** het hoogste niveau van de hiërarchie is het klant-tot-klant- of bedrijfsproces; daarboven spreekt GEMMA van clusters van bedrijfsprocessen: ''een groepering van bedrijfsprocessen die bij elkaar horen omdat ze op hetzelfde ''thema'' betrekking hebben'', bijvoorbeeld personeelszaken (2026-vng-gemma-proceshierarchie, regel 47, 91). Het processenlandschap van het GEMMA-model deelt de uitvoerende processen in naar soort werk (Uitvoeren, Handhaven, Nazorgen, Ontwikkelen; GEMMA type Bedrijfsproces (cluster)); alleen de ondersteunende tak heeft clusters per thema, zoals Beheren personeel, ''de bedrijfsprocessen die corresponderen met de bedrijfsfunctie Personeelsmanagement'', zonder bedrijfsprocessen eronder.'
+  - '**GEMMA:** het model groepeert de bedrijfsprocessen per kernobject in een levensloopproces, het gedrag over de levensloop van één kernobject van begin tot eind (Beheren grafrechten, Beheren graven, Bijhouden persoonsgegevens, Beheren reisdocumenten), met GEMMA type Bedrijfsproces (cluster). Daarboven staan geen procesniveaus maar de groeperingen beleidsdomein en taakveld uit de Beleidsdomeinindeling; het beleidsdomein volgt uit het kernobject (besluit redacteur 2026-10-08). Voorstel: (1) neem het levensloopproces op als cluster per thema voor de uitvoerende processen, naast de indeling naar soort werk, die blijft; (2) zie de themaclusters van de ondersteunende tak (Beheren personeel, Beheren financiën) als groepering per beleidsdomein, met levensloopprocessen per kernobject eronder, zoals in de uitvoerende tak.'
+  nummer: 20
   status: open

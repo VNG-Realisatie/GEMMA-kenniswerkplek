@@ -142,7 +142,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Toestaan lijkbezorging, binnen het ketenproces Bezorgen stoffelijk overschot: een opgraving verandert de bezorging van het lijk (art. 29).'
+    onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: een opgraving verandert de bezorging van het lijk (art. 29).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
@@ -151,9 +151,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: Uitgevoerd door de gemeente.
   eigen_besluit:
     waarde: ja
     onderbouwing: De burgemeester verleent de vergunning tot opgraving (art. 29 lid 1).
@@ -277,7 +274,7 @@ afgeleid:
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: deelproces
+    procesniveau: bedrijfsproces
     generiek: false
     typeregel: 17
   bronnen:

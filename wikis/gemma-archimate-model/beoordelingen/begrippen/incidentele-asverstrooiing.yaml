@@ -141,9 +141,6 @@ kenmerken:
   omvat_levensloop:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  meer_organisaties:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
   eigen_besluit:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'

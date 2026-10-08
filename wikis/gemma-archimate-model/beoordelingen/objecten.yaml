@@ -6,10 +6,6 @@ objecten:
   object_van: lijk
   wijziging: hernoemd
   datum: '2026-10-05'
-- element: bezorgen-stoffelijk-overschot
-  object_van: bezorgen-lijken
-  wijziging: hernoemd
-  datum: '2026-10-05'
 - element: opgraven-stoffelijk-overschot
   object_van: opgraven-lijk
   wijziging: hernoemd

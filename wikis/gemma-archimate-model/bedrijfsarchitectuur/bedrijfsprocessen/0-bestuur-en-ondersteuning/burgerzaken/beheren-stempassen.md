@@ -13,7 +13,7 @@ grondslag: bron
 match:
   gemma: geen
 data_object: nee
-procesniveau: bedrijfsproces
+procesniveau: levensloopproces
 afnemer: extern
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
@@ -43,13 +43,13 @@ De organisatie van de verkiezing zelf, met de stembureaus, de stemming en de uit
 
 ### Typering
 
-Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
 
 ### Plaats in de indelingen
 
-- **Procesniveau**: bedrijfsproces.
-- **Procesindeling naar taak, onderdeel van**: [Verzorgen burgerzaken](verzorgen-burgerzaken.md).
-- **Procesindeling naar taak, omvat**: [Behandelen verzoek om kiezerspas](behandelen-verzoek-om-kiezerspas.md), [Behandelen verzoek om volmacht](behandelen-verzoek-om-volmacht.md), [Verstrekken stempas](verstrekken-stempas.md).
+- **Procesniveau**: levensloopproces.
+- **Procesindeling naar kernobject, omvat**: [Behandelen verzoek om kiezerspas](behandelen-verzoek-om-kiezerspas.md), [Behandelen verzoek om volmacht](behandelen-verzoek-om-volmacht.md), [Verstrekken stempas](verstrekken-stempas.md).
+- **Beleidsdomeinindeling**: beleidsdomein Burgerzaken, taakveld 0 Bestuur en Ondersteuning (van het kernobject).
 - **Kernobject**: [Stempas](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/stempas.md).
 - **Functie-indeling naar domein, bediend door**: [Verkiezingen gerelateerde diensten](../../../bedrijfsfuncties/publieksdiensten/verkiezingen-gerelateerde-diensten.md).
 - **Afnemer**: extern.
@@ -57,7 +57,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 46 zijn nee.
+Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -73,7 +73,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een verstrekte stempas, kiezerspas of volmachtbewijs voor elke kiezer, en het uittreksel van ongeldige stempassen (Kieswet art. J 7, J 7a, K 4, L 11). [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elke verkiezing, voor elke kiezer. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, kieswet hoofdstuk J (art. J 7-J 8), K en L. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of binnen een ketenproces het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van de stempas: vaststelling, verstrekking, vervanging, omzetting in kiezerspas of volmachtbewijs, ongeldigheid en vernietiging van het register (Kieswet art. J 7, J 7a, J 8, K 4, L 14). [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
+| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van de stempas: vaststelling, verstrekking, vervanging, omzetting in kiezerspas of volmachtbewijs, ongeldigheid en vernietiging van het register (Kieswet art. J 7, J 7a, J 8, K 4, L 14). [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
 
 ### Relaties
@@ -93,7 +93,6 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 |---|---|---|---|
 | [Kieswet](../../../../motivatie/beleidskaders/kieswet.md) | is grondslag voor *associatie (gericht)* | Beheren stempassen | [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (hoofdstuk J, K, L) |
 | [Verkiezingen gerelateerde diensten](../../../bedrijfsfuncties/publieksdiensten/verkiezingen-gerelateerde-diensten.md) | bedient *bediening* | Beheren stempassen | [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (Kieswet art. J 7) |
-| [Verzorgen burgerzaken](verzorgen-burgerzaken.md) | omvat *aggregatie* | Beheren stempassen | [Kieswet](../../../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (art. J 7, K 4, L 11) |
 
 ## Herkomst
 
