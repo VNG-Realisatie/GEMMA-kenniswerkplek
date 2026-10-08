@@ -148,6 +148,13 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één mutatie van een bestaande akte.'
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de uitspraak of het besluit dat de staat verandert tot de latere vermelding.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    - 2026-rvig-hup-adoptie
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

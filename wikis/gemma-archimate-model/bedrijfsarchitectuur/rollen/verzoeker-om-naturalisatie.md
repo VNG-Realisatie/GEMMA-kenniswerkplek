@@ -61,7 +61,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -79,8 +79,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Verzoeker om naturalisatie | dient het verzoek in *toewijzing* | [Behandelen naturalisatieverzoek](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 3, 33) |
-| Verzoeker om naturalisatie | legt de verklaring van verbondenheid af *toewijzing* | [Houden naturalisatieceremonie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/houden-naturalisatieceremonie.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 60b lid 2 en 4) |
+| Verzoeker om naturalisatie | dient het verzoek in, legt de verklaring van verbondenheid af *toewijzing* | [Behandelen naturalisatieverzoek](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 3, 33; art. 60b lid 2 en 4) |
 
 #### Inkomend
 

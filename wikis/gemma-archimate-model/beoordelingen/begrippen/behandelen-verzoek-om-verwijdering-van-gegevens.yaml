@@ -145,6 +145,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie in de persoonslijst (Utrecht).'
     bronnen:
     - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het verzoek tot de verwijderde gegevens en de mededeling; een eigen verzoek, ook na een geslachtswijziging.
+    bronnen:
+    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   omvat_processen:
     waarde: nee
     onderbouwing: Geen groepering van processen.

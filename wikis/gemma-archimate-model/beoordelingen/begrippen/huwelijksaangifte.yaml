@@ -132,7 +132,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Behandelen melding voorgenomen huwelijk of partnerschap (BW 1 art. 44).
+    onderbouwing: Het bedrijfsproces Voltrekken huwelijk, in het deelproces Behandelen melding voorgenomen huwelijk of partnerschap (BW 1 art. 44).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
   leidt_tot_gedrag:
@@ -141,6 +141,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen proces dat per keer wordt doorlopen.'
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

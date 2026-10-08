@@ -53,7 +53,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -74,8 +74,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Wet op de Nederlandse identiteitskaart | is grondslag voor *associatie (gericht)* | [Identiteitskaart](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/identiteitskaart.md) | [Wet op de Nederlandse identiteitskaart](../../bronanalyses/burgerzaken/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 11, 15, 25) |
-| Wet op de Nederlandse identiteitskaart | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Wet op de Nederlandse identiteitskaart](../../bronanalyses/burgerzaken/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 15-26, 28) |
-| Wet op de Nederlandse identiteitskaart | is grondslag voor *associatie (gericht)* | [Uitreiken reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-reisdocument.md) | [Wet op de Nederlandse identiteitskaart](../../bronanalyses/burgerzaken/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 20, 27) |
+| Wet op de Nederlandse identiteitskaart | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Wet op de Nederlandse identiteitskaart](../../bronanalyses/burgerzaken/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 15-26, 28; art. 20, 27) |
 | Wet op de Nederlandse identiteitskaart | is grondslag voor *associatie (gericht)* | [Verwerken vermissing reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md) | [Wet op de Nederlandse identiteitskaart](../../bronanalyses/burgerzaken/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 5a, 7, 19, 30 lid 1 onder h) |
 | Wet op de Nederlandse identiteitskaart | is grondslag voor *associatie (gericht)* | [Inhouden reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Wet op de Nederlandse identiteitskaart](../../bronanalyses/burgerzaken/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 35-39) |
 | Wet op de Nederlandse identiteitskaart | verwijst naar *associatie (gericht)* | [Paspoortwet](paspoortwet.md) | [Wet op de Nederlandse identiteitskaart](../../bronanalyses/burgerzaken/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 1, 5, 5a, 14) |

@@ -154,6 +154,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één akte.'
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de verklaring van de ouders tot de akte.
+    bronnen:
+    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

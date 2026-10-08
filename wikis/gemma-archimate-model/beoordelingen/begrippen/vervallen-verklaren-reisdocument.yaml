@@ -139,6 +139,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het einde van het reisdocument.'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: Nee, volgt op de inhouding na een signalering, voor hetzelfde geval (Paspoortwet art. 44 lid 2, 53).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -210,43 +215,27 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het beslissen dat een ingehouden reisdocument ongeldig is, omdat een tot signalering bevoegd orgaan daar gronden voor heeft.
-beschrijving:
-- Na de inhouding gaat de burgemeester na of de gronden nog bestaan en kondigt hij binnen vier weken zijn voornemen aan; de houder kan vragen de beslissing acht weken aan te houden om met de autoriteit bij wie de gronden bestaan overeenstemming te bereiken. Zonder overeenstemming verklaart hij het document vervallen, tenzij de houder onevenredig wordt benadeeld; dan geeft hij het terug of verstrekt hij een document met beperkte geldigheid (Paspoortwet art. 44, 45). Hij deelt zijn beslissing mee aan de minister, die haar opneemt in het register paspoortsignaleringen (art. 45 lid 3).
-- 'De gronden liggen bij andere organen: het openbaar ministerie, de minister van Justitie en Veiligheid, de rechter-commissaris, een minister of een tot invordering bevoegd orgaan zoals het college van burgemeester en wethouders (Paspoortwet art. 18 tot en met 24). Dezelfde gronden kunnen leiden tot weigering bij een aanvraag (art. 44).'
-- De burgemeester kan als met de uitvoering van de Paspoortwet belaste autoriteit zelf om weigering of vervallenverklaring verzoeken bij het gegronde vermoeden van fraude met reisdocumenten of Nederlandse identiteitskaarten (Paspoortwet art. 24 onder b); het college doet dat als tot invordering bevoegd orgaan (art. 22).
 synoniemen:
 - naam: Vervallenverklaring
   context: wet
-taakveld: 0 Bestuur en Ondersteuning
-beleidsdomein: Burgerzaken
 grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
-kernobject: reisdocument
-afnemer: extern
-relaties:
-- soort: toegang (beëindigen)
-  naar: reisdocument
-  naam: verklaart vervallen
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 1 onder i, 44
-status: goedgekeurd
+genoemd_begrip: Inhouden reisdocument
+toelichting: 'Deelproces zonder pagina van Inhouden reisdocument: het beslissen dat een ingehouden reisdocument ongeldig is, omdat een tot signalering bevoegd orgaan daar gronden voor heeft.'
+relaties: []
 afgeleid:
   uitkomst:
-    soort: element
-    regel: 29
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
+    soort: onderdeel
+    regel: 30
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    genoemd_begrip: Inhouden reisdocument
     generiek: false
     typeregel: 17
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md

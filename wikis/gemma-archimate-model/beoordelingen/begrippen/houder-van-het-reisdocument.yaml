@@ -130,6 +130,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -220,20 +223,12 @@ naamkeuze:
 relaties:
 - soort: toewijzing
   naar: behandelen-aanvraag-reisdocument
-  naam: vraagt aan
+  naam: vraagt aan, haalt op en levert oude documenten in
   grondslag: bron
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  vindplaats: art. 1 onder b, 28, 29
-- soort: toewijzing
-  naar: uitreiken-reisdocument
-  naam: haalt op en levert oude documenten in
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  vindplaats: art. 32, 42
+  vindplaats: art. 1 onder b, 28, 29; art. 32, 42
 - soort: toewijzing
   naar: verwerken-vermissing-reisdocument
   naam: meldt vermissing

@@ -145,6 +145,11 @@ kenmerken:
     onderbouwing: Een stap in Bijhouden persoonsgegevens (HUP Afvoeren).
     bronnen:
     - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: Nee, een stap in het herstel van een dubbele inschrijving, geen eigen klant-tot-klantproces.
+    bronnen:
+    - 2026-rvig-hup-dubbelinschrijving
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -222,7 +227,7 @@ afgeleid:
   uitkomst:
     soort: onderdeel
     regel: 30
-    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces zonder eigen besluit, eigen normering of aanbod'
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee

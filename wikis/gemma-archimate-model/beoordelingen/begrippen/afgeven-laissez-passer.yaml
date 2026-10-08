@@ -139,6 +139,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: vervoer naar de plaats van bezorging in het buitenland (Besluit op de lijkbezorging art. 11).'
     bronnen:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het verzoek voor vervoer naar een verdragsstaat tot het afgegeven laissez-passer.
+    bronnen:
+    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.

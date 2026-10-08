@@ -63,6 +63,7 @@
         "gerealiseerd_door",
         "leidt_tot_gedrag",
         "bijdrage_aan_groter_proces",
+        "klant_tot_klant",
         "omvat_processen",
         "omvat_levensloop",
         "eigen_besluit",
@@ -196,6 +197,9 @@
           "$ref": "#/$defs/antwoord"
         },
         "bijdrage_aan_groter_proces": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "klant_tot_klant": {
           "$ref": "#/$defs/antwoord"
         },
         "omvat_processen": {
@@ -604,6 +608,44 @@
         },
         "additionalProperties": false
       }
+    },
+    "deelprocessen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "naam",
+          "omschrijving",
+          "bronnen"
+        ],
+        "properties": {
+          "naam": {
+            "type": "string",
+            "minLength": 1
+          },
+          "omschrijving": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bronnen": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "vindplaats": {
+            "type": "string",
+            "minLength": 1
+          },
+          "begrip": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "Bij een bedrijfsproces: de deelprocessen in volgorde, elk met één of twee zinnen voor procesontwerpers (wat er gebeurt, wie, welke termijn); `begrip` is de beoordeling van een deelproces zonder pagina"
     },
     "ggm_componenten": {
       "type": "array",

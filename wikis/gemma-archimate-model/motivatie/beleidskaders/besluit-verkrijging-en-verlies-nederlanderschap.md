@@ -55,7 +55,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -76,9 +76,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Naturalisatieceremonie](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieceremonie.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (art. 60a; UPL nr. 261) |
-| Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Behandelen optieverklaring](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 7-12) |
-| Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Behandelen naturalisatieverzoek](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 31-38) |
-| Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Houden naturalisatieceremonie](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/houden-naturalisatieceremonie.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 60a, 60b) |
+| Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Behandelen optieverklaring](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 7-12; art. 60a, 60b) |
+| Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Behandelen naturalisatieverzoek](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 31-38; art. 60a, 60b) |
 | Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Behandelen verklaring van afstand](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 62-64) |
 | Besluit verkrijging en verlies Nederlanderschap | werkt uit *associatie (gericht)* | [Rijkswet op het Nederlanderschap](rijkswet-op-het-nederlanderschap.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (aanhef; art. 2) |
 | Besluit verkrijging en verlies Nederlanderschap | is grondslag voor *associatie (gericht)* | [Bewijs van nederlanderschap](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 61; UPL nr. 62) |

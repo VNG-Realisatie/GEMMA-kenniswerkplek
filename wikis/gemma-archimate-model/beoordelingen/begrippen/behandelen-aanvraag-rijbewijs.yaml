@@ -120,7 +120,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: Het besluit tot afgifte van een nieuw, vernieuwd of vervangend rijbewijs, of de weigering (Wegenverkeerswet 1994 art. 112, 116, 118a, 119, 120).
+    onderbouwing: Het uitgereikte nieuwe, vernieuwde of vervangende rijbewijs, na het besluit tot afgifte, of de weigering (Wegenverkeerswet 1994 art. 112, 116, 118a, 119, 120).
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   komt_herhaald_voor:
@@ -151,6 +151,13 @@ kenmerken:
     waarde: ja
     onderbouwing: 'Draagt bij aan Beheren rijbewijzen: het ontstaan van het rijbewijs.'
     bronnen:
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aanvraag tot de uitreiking of de weigering.
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   omvat_processen:
     waarde: nee
@@ -226,11 +233,13 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een rijbewijs, tot de afgifte of weigering, ook bij vernieuwing of vervanging.
+definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een rijbewijs, tot de uitreiking of weigering, ook bij vernieuwing of vervanging.
 beschrijving:
 - De aanvrager dient de aanvraag in bij de burgemeester van de gemeente waar hij als ingezetene staat, aan de balie op afspraak, met een ingevuld formulier, een identiteitsbewijs of eerder rijbewijs en een pasfoto; de burgemeester raadpleegt de basisregistratie personen (Wegenverkeerswet 1994 art. 113; Reglement rijbewijzen art. 27, 33; Utrecht). Verlengen en een categorie-uitbreiding kan ook online via de RDW met DigiD; de gemeente reikt het rijbewijs dan alleen uit (Utrecht). Een spoedaanvraag kost extra en levert sneller (Utrecht).
 - 'Degene die afgeeft verschaft zich zekerheid over de identiteit en vergewist zich dat de bescheiden en de voorwaarden kloppen: de leeftijd, de rijvaardigheid en geschiktheid, geen ontzegging of invordering, en bij vernieuwing het eerdere rijbewijs en zo nodig een in het rijbewijzenregister geregistreerde verklaring van geschiktheid (Wegenverkeerswet 1994 art. 111, 112, 113; Reglement rijbewijzen art. 35). Die controle van de verklaring van geschiktheid, die het CBR registreert (art. 97), is een onderdeel van dit bedrijfsproces (UPL nr. 362 rijbewijs gezondheidsverklaring; Reglement rijbewijzen art. 35, 45). Daarna neemt de burgemeester het besluit tot afgifte (Wegenverkeerswet 1994 art. 116, 118a).'
 - Bij vermissing legt de aanvrager een proces-verbaal van vermissing of diefstal over, op ambtseed opgemaakt door een opsporingsambtenaar (Reglement rijbewijzen art. 39 lid 1); Utrecht spreekt van een vermissingsverklaring die men aan de balie invult, een verschil dat uit de bronnen niet te verklaren is (verificatie nodig). Een aanvrager die niet als ingezetene staat ingeschreven, dient de aanvraag in bij de burgemeester van zijn woonplaats, die haar doorgeleidt naar de RDW; die geeft dan af (Reglement rijbewijzen art. 29, 105 lid 2).
+- 'De aanvrager haalt het rijbewijs persoonlijk op, op afspraak bij dezelfde balie als waar hij het aanvroeg, en identificeert zich opnieuw (Wegenverkeerswet 1994 art. 111 lid 2; Utrecht). Bij het ophalen levert hij zijn oude rijbewijs in: het nieuwe of vervangende rijbewijs wordt niet afgegeven voordat het eerdere is ingeleverd, tenzij het verloren is (Wegenverkeerswet 1994 art. 119 lid 2, 120 lid 2).'
+- Het rijbewijs wordt niet uitgereikt, maar blijft bij degene die afgeeft, als tussen aanvraag en uitreiking een omstandigheid bekend wordt die afgifte had verhinderd (Wegenverkeerswet 1994 art. 120a). De burgemeester neemt een rijbewijs in dat is gevorderd of ongeldig is geworden en geleidt het door (art. 115). Een buitenlands rijbewijs bij omwisseling gaat terug naar het land van afgifte (Reglement rijbewijzen art. 109).
 synoniemen:
 - naam: Afgeven rijbewijs
   context: wet
@@ -277,14 +286,31 @@ relaties:
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: UPL nr. 363; Utrecht regel 21-23; Reglement art. 35
-- soort: triggering
-  naar: uitreiken-rijbewijs
-  naam: leidt tot
+- soort: toegang (bijwerken)
+  naar: rijbewijs
+  naam: reikt uit en neemt het eerdere rijbewijs in
   grondslag: bron
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  vindplaats: WVW art. 120a; Utrecht regel 29, 41
+  vindplaats: art. 119 lid 2, 120a
+deelprocessen:
+- naam: Aanvraag innemen
+  omschrijving: De aanvrager dient de aanvraag in aan de balie met formulier, identiteitsbewijs of eerder rijbewijs en pasfoto; de burgemeester raadpleegt de basisregistratie personen.
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: Wegenverkeerswet 1994 art. 113; Reglement rijbewijzen art. 27, 33
+- naam: Beoordelen en besluiten
+  omschrijving: De burgemeester stelt de identiteit vast, controleert leeftijd, rijvaardigheid, geschiktheid en ontzeggingen en besluit tot afgifte of weigering.
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 111, 112, 116, 118a, 120
+- naam: Uitreiken
+  omschrijving: De aanvrager haalt het rijbewijs op aan dezelfde balie, identificeert zich opnieuw en levert het eerdere rijbewijs in; blijkt een omstandigheid die afgifte had verhinderd, dan blijft het rijbewijs achter.
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 111 lid 2, 119 lid 2, 120a
+  begrip: uitreiken-rijbewijs
 status: goedgekeurd
 afgeleid:
   uitkomst:

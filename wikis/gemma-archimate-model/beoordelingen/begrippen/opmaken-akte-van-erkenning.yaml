@@ -155,6 +155,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één akte of latere vermelding.'
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het verzoek van de erkenner tot de akte.
+    bronnen:
+    - 2026-utrecht-burgerzaken-kind-erkennen
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

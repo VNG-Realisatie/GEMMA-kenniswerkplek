@@ -148,6 +148,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Beheren Nederlanderschap: de verkrijging door optie.'
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de optieverklaring tot de bevestiging op de ceremonie of de weigering.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -223,7 +229,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 kernobject: nederlanderschap
 afnemer: extern
-definitie: Het in ontvangst nemen en beoordelen van een optieverklaring, tot bevestiging of weigering van de verkrijging van het Nederlanderschap.
+definitie: Het in ontvangst nemen en beoordelen van een optieverklaring, tot de uitreiking van de bevestiging van het Nederlanderschap of de weigering.
 beschrijving:
 - De optant legt de optieverklaring in persoon af bij de burgemeester van de gemeente waar hij als ingezetene is ingeschreven of zijn hoofdverblijf heeft, op afspraak aan de balie, en betaalt het optiegeld (Besluit verkrijging en verlies Nederlanderschap art. 3, 7, 8; Utrecht). De burgemeester toetst de gegevens aan de basisregistratie personen en laat zo nodig andere autoriteiten toetsen, onderzoekt de verblijfsrechtelijke status en of er ernstige vermoedens bestaan van gevaar voor de openbare orde, en vraagt bij herkrijging advies aan de minister (art. 9, 10; Rijkswet op het Nederlanderschap art. 6 lid 3).
 - 'Hij beslist binnen dertien weken na ontvangst, eenmaal te verlengen met ten hoogste dertien weken (Rijkswet art. 6 lid 5). Tegenspraak: Utrecht noemt een uitslag binnen 13 tot 26 weken; formeel geldt de wettelijke termijn, de praktijkbron geeft de termijn met verlenging als bandbreedte (besluit redacteur 2026-10-06). Daarna bericht de burgemeester de optant hoe de bevestiging wordt bekendgemaakt en weigert hij haar voor wie niet aan de vereisten voldoet; hij zendt een afschrift aan de minister en archiveert verklaring en bevestiging twaalf jaar (Besluit art. 11, 12).'
@@ -240,11 +246,12 @@ gemma:
 relaties:
 - soort: toegang (registreren)
   naar: nederlanderschap
-  naam: bevestigt de verkrijging
+  naam: bevestigt de verkrijging, doet in werking treden
   grondslag: bron
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  vindplaats: art. 6 lid 3
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 6 lid 3; art. 60a lid 1, 60b lid 1
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: toetst aan de basisregistratie personen
@@ -260,13 +267,40 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   vindplaats: UPL nr. 262
+- soort: realisatie
+  naar: naturalisatieceremonie
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  vindplaats: UPL nr. 261
 - soort: triggering
-  naar: houden-naturalisatieceremonie
-  naam: leidt tot uitreiking van de bevestiging
+  naar: verkrijging-van-het-nederlanderschap
+  naam: leidt tot
   grondslag: bron
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  vindplaats: art. 11 lid 3, 60a
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  vindplaats: art. 60a lid 1, 60b lid 1
+deelprocessen:
+- naam: Verklaring innemen
+  omschrijving: De optant legt de optieverklaring in persoon af en betaalt het optiegeld.
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 3, 7, 8
+- naam: Beoordelen en beslissen
+  omschrijving: De burgemeester toetst en onderzoekt en beslist binnen dertien weken, eenmaal te verlengen, tot bevestiging of weigering.
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: Rijkswet art. 6; Besluit art. 9-11
+- naam: Naturalisatieceremonie
+  omschrijving: De bevestiging wordt binnen negen weken uitgereikt, na de verklaring van verbondenheid; daarmee gaat de verkrijging in.
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 60a
+  begrip: houden-naturalisatieceremonie
 status: goedgekeurd
 afgeleid:
   uitkomst:

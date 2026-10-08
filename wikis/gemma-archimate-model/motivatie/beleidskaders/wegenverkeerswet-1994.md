@@ -54,7 +54,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -75,8 +75,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Wegenverkeerswet 1994 | is grondslag voor *associatie (gericht)* | [Beheren rijbewijzen](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-rijbewijzen.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 113, 116, 123) |
-| Wegenverkeerswet 1994 | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag rijbewijs](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 111-113, 116, 118a, 119, 120) |
-| Wegenverkeerswet 1994 | is grondslag voor *associatie (gericht)* | [Uitreiken rijbewijs](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-rijbewijs.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 111 lid 2, 119 lid 2, 120a) |
+| Wegenverkeerswet 1994 | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag rijbewijs](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 111-113, 116, 118a, 119, 120; art. 111 lid 2, 119 lid 2, 120a) |
 | Wegenverkeerswet 1994 | is grondslag voor *associatie (gericht)* | [Verwerken vermissing rijbewijs](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 123 lid 1 onder h) |
 | Wegenverkeerswet 1994 | is grondslag voor *associatie (gericht)* | [Rijbewijs aanvragen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-aanvragen.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 111, 113, 116) |
 | Wegenverkeerswet 1994 | is grondslag voor *associatie (gericht)* | [Rijbewijs verlengen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-verlengen.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 119 lid 1 onder a) |

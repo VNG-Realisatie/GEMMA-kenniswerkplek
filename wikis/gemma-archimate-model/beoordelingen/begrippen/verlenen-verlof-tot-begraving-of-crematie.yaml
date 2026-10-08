@@ -144,6 +144,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: zonder verlof geen begraving of crematie (art. 11).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aanvraag (Wlb art. 18) tot het verlof; een eigen aanvraag, ook al volgt zij op de aangifte van het overlijden.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2026-rvo-aangifte-en-akte-van-overlijden
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.

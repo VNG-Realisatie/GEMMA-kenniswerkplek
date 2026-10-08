@@ -154,6 +154,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: de inschrijving begint de administratieve levensloop (HUP Immigratie).'
     bronnen:
     - 2026-rvig-hup-immigratie
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aangifte tot de persoonslijst en het overzicht.
+    bronnen:
+    - 2026-rvig-hup-immigratie
   omvat_processen:
     waarde: nee
     onderbouwing: Geen groepering van processen.

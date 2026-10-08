@@ -136,6 +136,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -214,13 +217,6 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 relaties:
-- soort: toewijzing
-  naar: bijzetten-of-verstrooien-van-de-as
-  naam: geeft opdracht tot bijzetting bij
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 62 lid 2
 - soort: toegang (houder)
   naar: urn
   naam: draagt zorg voor
@@ -235,6 +231,13 @@ relaties:
   bronnen:
   - 2025-groningen-algemene-plaatselijke-verordening
   vindplaats: art. 5:27 lid 3
+- soort: toewijzing
+  naar: uitvoeren-lijkbezorging
+  naam: geeft opdracht tot bijzetting bij
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 62 lid 2
 onderwerpen:
 - lijkbezorging
 doelgroep: inwoners en ondernemers

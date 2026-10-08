@@ -155,6 +155,12 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, ambtshalve, van de verwaarlozing, wanbetaling of het verzuim tot het vervallen grafrecht.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.

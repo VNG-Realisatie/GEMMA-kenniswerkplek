@@ -139,6 +139,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Beheren begraafplaatsen: het einde van het gebruik van een begraafplaats (art. 43, 44).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, ambtshalve, van het voornemen of de termijn tot het besluit.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.

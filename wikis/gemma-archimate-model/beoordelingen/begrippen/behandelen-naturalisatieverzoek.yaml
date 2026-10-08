@@ -114,7 +114,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: Het advies van de burgemeester over het verzoek, met het verzoek toegezonden aan de minister (Besluit art. 36 lid 6, 37).
+    onderbouwing: 'Het advies van de burgemeester, met het verzoek toegezonden aan de minister, en na diens besluit het uitgereikte uittreksel: de persoon is Nederlander (Besluit art. 36 lid 6, 37, 60b).'
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   komt_herhaald_voor:
@@ -145,6 +145,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Beheren Nederlanderschap: de verkrijging door naturalisatie.'
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het verzoek tot de bevestiging van het Nederlanderschap op de ceremonie.
+    bronnen:
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -220,10 +226,12 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 kernobject: nederlanderschap
 afnemer: extern
-definitie: Het in ontvangst nemen en onderzoeken van een verzoek om naturalisatie, tot het advies van de burgemeester aan de minister.
+definitie: Het in ontvangst nemen en onderzoeken van een verzoek om naturalisatie, met het advies aan de minister, tot de uitreiking op de naturalisatieceremonie.
 beschrijving:
 - De verzoeker dient het naturalisatieverzoek in persoon in bij de burgemeester van zijn woongemeente, op afspraak aan de balie, en betaalt het naturalisatiegeld; de geboorteakten van de aanvragers moeten eerst in de basisregistratie personen staan (Besluit verkrijging en verlies Nederlanderschap art. 3, 33, 34; Utrecht). De burgemeester toetst de gegevens aan de basisregistratie personen, onderzoekt de verblijfsrechtelijke status, informeert de verzoeker over de toetsing door de minister en brengt advies uit over het verzoek en een eventuele naamsvaststelling (art. 35, 36).
 - Hij zendt het verzoek met zijn advies aan de minister van Justitie en Veiligheid, die beslist; de Koning verleent het Nederlanderschap op voordracht van de minister (art. 37, 38; Rijkswet op het Nederlanderschap art. 7). In de praktijk beoordeelt de IND de aanvraag en stuurt zij de verzoeker het resultaat; bij een online aanvraag via de IND controleert de gemeente bij de afspraak de identiteit en de geboorteakte, laat betalen en meldt dit aan de IND (Utrecht). Na een positief besluit volgt de uitreiking van het uittreksel tijdens de naturalisatieceremonie (Besluit art. 38, 60b).
+- 'De verkrijging door optie of naturalisatie treedt pas in werking door de uitreiking van de bevestiging of van het uittreksel van het besluit, met terugwerkende kracht tot de dagtekening (Besluit verkrijging en verlies Nederlanderschap art. 60a lid 1, 60b lid 1). De burgemeester roept de betrokkenen van zestien jaar en ouder tijdig op; bij de uitreiking legt ieder de verklaring van verbondenheid mondeling af, of schriftelijk als dat redelijkerwijs niet kan worden verlangd (art. 60a lid 2-6, 60b lid 2-6). De gemeente doet dat tijdens een naturalisatieceremonie: men wordt pas Nederlander na de ceremonie en de verklaring (Utrecht).'
+- De bevestiging wordt uitgereikt binnen negen weken nadat is vastgesteld dat aan de vereisten is voldaan; bij naturalisatie roept de burgemeester binnen zes weken na dagtekening van het besluit op. Een bevestiging die niet binnen een jaar is bekendgemaakt, vervalt; na de uitreiking bericht de burgemeester de minister (art. 60a lid 7, 11 en 12, 60b lid 2).
 synoniemen:
 - naam: Naturalisatie
   context: beleid
@@ -249,13 +257,29 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   vindplaats: UPL nr. 263
-- soort: triggering
-  naar: houden-naturalisatieceremonie
-  naam: leidt na het besluit van de minister tot uitreiking
+- soort: toegang (registreren)
+  naar: nederlanderschap
+  naam: doet in werking treden
   grondslag: bron
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  vindplaats: art. 38, 60b
+  vindplaats: art. 60a lid 1, 60b lid 1
+- soort: realisatie
+  naar: naturalisatieceremonie
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  vindplaats: UPL nr. 261
+- soort: triggering
+  naar: verkrijging-van-het-nederlanderschap
+  naam: leidt tot
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  vindplaats: art. 60a lid 1, 60b lid 1
 gemma_generiek:
   id: id-874c14bc-24ec-409a-9d68-56d7c4f18eb7
   onderbouwing: 'De burgemeester ontvangt en onderzoekt het verzoek en adviseert de minister, die het besluit voordraagt (Rijkswet art. 7; Besluit art. 31-38): een deel van de naturalisatie dat de gemeente uitvoert voor de minister, zoals GEMMA Leveren dienst aan derden beschrijft (''een (deel)proces dat aan de gemeente is uitbesteed''); orkestratie (IK 27).'
@@ -263,6 +287,23 @@ besluiten:
 - datum: '2026-10-08'
   besluit: 'Bedrijfsproces onder het levensloopproces Beheren Nederlanderschap; specialiseert het GEMMA-proces Leveren dienst aan derden (orkestratie: de gemeente voert het uit voor de minister).'
   gevolg: verwerkt
+deelprocessen:
+- naam: Verzoek innemen
+  omschrijving: De verzoeker dient het verzoek in persoon in en betaalt het naturalisatiegeld.
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 3, 33, 34
+- naam: Onderzoeken en adviseren
+  omschrijving: De burgemeester toetst aan de basisregistratie personen, onderzoekt de verblijfsrechtelijke status en zendt het verzoek met zijn advies aan de minister, die beslist.
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 35-38
+- naam: Naturalisatieceremonie
+  omschrijving: Na het besluit roept de burgemeester binnen zes weken op; de verkrijging gaat in door de uitreiking van het uittreksel, na de verklaring van verbondenheid.
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 60b
+  begrip: houden-naturalisatieceremonie
 status: goedgekeurd
 afgeleid:
   uitkomst:

@@ -144,6 +144,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Het levensloopproces van een kernobject; geen deel van een groter proces.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -346,13 +349,6 @@ relaties:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
   vindplaats: art. 4, 7
-- soort: aggregatie
-  naar: behandelen-melding-voorgenomen-huwelijk-of-partnerschap
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  vindplaats: art. 44, 80a
 - soort: aggregatie
   naar: voltrekken-huwelijk
   naam: omvat

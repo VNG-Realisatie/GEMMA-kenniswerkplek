@@ -112,6 +112,8 @@ def bronnen_van(data: dict) -> list[str]:
         ids += antwoord.get("bronnen", [])
     for r in data.get("relaties", []):
         ids += r.get("bronnen", [])
+    for dp in data.get("deelprocessen", []):
+        ids += dp.get("bronnen", [])
     if data.get("definitie_formeel_bron"):
         ids.append(data["definitie_formeel_bron"]["bron"])
     return list(dict.fromkeys(ids))
@@ -245,6 +247,10 @@ def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], 
                        + [("tegenhanger", (data.get("tegenhanger") or {}).get("element"))]):
         if doel and doel not in elementen:
             res.fouten.append(f"{bid}: {naam} '{doel}' is geen element (of heeft geen beoordeling)")
+    for dp in data.get("deelprocessen", []):
+        u = uitkomsten.get(dp.get("begrip")) if dp.get("begrip") else None
+        if dp.get("begrip") and (not u or u.get("soort") != "onderdeel"):
+            res.fouten.append(f"{bid}: deelproces '{dp['begrip']}' is geen beoordeling van een deelproces zonder pagina")
 
 
 def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat, rel: Path = TERUGMELDINGEN,

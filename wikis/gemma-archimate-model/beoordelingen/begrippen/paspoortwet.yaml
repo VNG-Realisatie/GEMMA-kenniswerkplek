@@ -123,6 +123,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -219,14 +222,7 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 26-41
-- soort: associatie (gericht)
-  naar: uitreiken-reisdocument
-  naam: is grondslag voor
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 32, 42
+  vindplaats: art. 26-41; art. 32, 42
 - soort: associatie (gericht)
   naar: paspoort
   naam: is grondslag voor
@@ -275,14 +271,7 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 50b-57
-- soort: associatie (gericht)
-  naar: vervallen-verklaren-reisdocument
-  naam: is grondslag voor
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 44-46
+  vindplaats: art. 50b-57; art. 44-46
 - soort: associatie (gericht)
   naar: zakenpaspoort
   naam: is grondslag voor

@@ -146,6 +146,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: de opschorting van de bijhouding wegens emigratie (LO BRP 1.6).'
     bronnen:
     - 2025-rvig-logisch-ontwerp-brp-2025q1
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aangifte van vertrek tot de inschrijving in de RNI.
+    bronnen:
+    - 2026-rvig-hup-emigratie
+    - 2026-utrecht-burgerzaken-emigratie-doorgeven
   omvat_processen:
     waarde: nee
     onderbouwing: Geen groepering van processen.

@@ -145,6 +145,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: een opgraving verandert de bezorging van het lijk (art. 29).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aanvraag tot het opgegraven lijk.
+    bronnen:
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.

@@ -112,12 +112,12 @@ kenmerken:
     - 2026-rijk-paspoortbesluit-bwbr0044308
   aanleiding:
     waarde: ja
-    onderbouwing: Het verval van het reisdocument, een mededeling van de minister tot inhouding, beschadiging of fouten, of inlevering door de houder (Paspoortwet art. 53, 54 lid 1, 56).
+    onderbouwing: De inlevering of het aantreffen van een vervallen, beschadigd of foutief reisdocument, of een mededeling van de minister tot inhouding (Paspoortwet art. 53, 54 lid 1, 56).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: Een ingehouden reisdocument, dat definitief aan het verkeer is onttrokken of naar de tot vervallenverklaring bevoegde autoriteit gaat (Paspoortwet art. 53, 54).
+    onderbouwing: Een ingehouden reisdocument dat definitief aan het verkeer is onttrokken, vervallen is verklaard of is teruggegeven (Paspoortwet art. 44, 45, 53, 54).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
   komt_herhaald_voor:
@@ -147,6 +147,11 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: ja
     onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het einde van het reisdocument.'
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de inlevering of het aantreffen van het document tot de onttrekking aan het verkeer, de vervallenverklaring of de teruggave.
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
   omvat_processen:
@@ -218,10 +223,13 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-definitie: Het innemen van een vervallen, beschadigd of te weigeren reisdocument en het definitief aan het verkeer onttrekken ervan.
+definitie: Het innemen van een ingeleverd of in te houden reisdocument, zo nodig het vervallen verklaren ervan, tot de onttrekking aan het verkeer of de teruggave.
 beschrijving:
 - Een reisdocument wordt ingehouden als het van rechtswege is vervallen, zo is beschadigd dat beveiligingskenmerken zijn aangetast of gegevens onleesbaar zijn, onbevoegd is gewijzigd, de gezichtsopname niet meer lijkt of er fouten in staan (Paspoortwet art. 54 lid 1). Een document dat vervallen kan worden verklaard, houdt de burgemeester in na een mededeling van de minister en hij beslist daarna over de vervallenverklaring (art. 44 lid 2, 53). Ook de politie en de grensbewaking zijn bevoegd tot inhouding (art. 50b).
 - Inhouding gebeurt door een bevoegde autoriteit, inlevering op initiatief van de houder; een teruggevonden vermist document wordt ingeleverd en niet meer teruggegeven (HUP Inhouding). De gemeente registreert de inhouding of inlevering in de BRP en meldt een inhouding na een mededeling aan de minister (Paspoortwet art. 54 lid 5; Paspoortbesluit art. 6.1 lid 3). Het ingehouden document wordt terstond definitief aan het verkeer onttrokken, vernietigd of op verzoek van de houder ongeldig gemaakt en teruggegeven, tenzij het nog nodig is in een procedure (art. 1 onder j, 54 lid 3; Paspoortbesluit art. 7.1; HUP Inhouding).
+- Na de inhouding gaat de burgemeester na of de gronden nog bestaan en kondigt hij binnen vier weken zijn voornemen aan; de houder kan vragen de beslissing acht weken aan te houden om met de autoriteit bij wie de gronden bestaan overeenstemming te bereiken. Zonder overeenstemming verklaart hij het document vervallen, tenzij de houder onevenredig wordt benadeeld; dan geeft hij het terug of verstrekt hij een document met beperkte geldigheid (Paspoortwet art. 44, 45). Hij deelt zijn beslissing mee aan de minister, die haar opneemt in het register paspoortsignaleringen (art. 45 lid 3).
+- 'De gronden liggen bij andere organen: het openbaar ministerie, de minister van Justitie en Veiligheid, de rechter-commissaris, een minister of een tot invordering bevoegd orgaan zoals het college van burgemeester en wethouders (Paspoortwet art. 18 tot en met 24). Dezelfde gronden kunnen leiden tot weigering bij een aanvraag (art. 44).'
+- De burgemeester kan als met de uitvoering van de Paspoortwet belaste autoriteit zelf om weigering of vervallenverklaring verzoeken bij het gegronde vermoeden van fraude met reisdocumenten of Nederlandse identiteitskaarten (Paspoortwet art. 24 onder b); het college doet dat als tot invordering bevoegd orgaan (art. 22).
 synoniemen:
 - naam: Inhouding
   context: wet
@@ -238,19 +246,12 @@ afnemer: extern
 relaties:
 - soort: toegang (beëindigen)
   naar: reisdocument
-  naam: houdt in en onttrekt aan het verkeer
+  naam: houdt in en onttrekt aan het verkeer, verklaart vervallen
   grondslag: bron
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-paspoortbesluit-bwbr0044308
-  vindplaats: Paspoortwet art. 1 onder h en j, 54; Paspoortbesluit art. 7.1
-- soort: triggering
-  naar: vervallen-verklaren-reisdocument
-  naam: leidt tot
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 44 lid 2, 53
+  vindplaats: Paspoortwet art. 1 onder h en j, 54; Paspoortbesluit art. 7.1; art. 1 onder i, 44
 - soort: stroom
   naar: bijhouden-persoonsgegevens
   naam: geeft inhouding of inlevering door aan
@@ -259,6 +260,25 @@ relaties:
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   - 2026-rvig-hup-reisdocument
   vindplaats: HUP Inhouding, inleiding; HUP Reisdocument
+deelprocessen:
+- naam: Innemen
+  omschrijving: 'De houder levert het reisdocument in, of de burgemeester houdt het in: het is van rechtswege vervallen, beschadigd of foutief, of de minister heeft een signalering meegedeeld.'
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 53, 54 lid 1, 56
+- naam: Vervallen verklaren
+  omschrijving: 'Alleen na een signalering: de burgemeester gaat na of de gronden nog bestaan, kondigt binnen vier weken zijn voornemen aan en verklaart het document vervallen of geeft het terug.'
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 44, 45
+  begrip: vervallen-verklaren-reisdocument
+- naam: Onttrekken aan het verkeer
+  omschrijving: Het ingehouden document wordt definitief aan het verkeer onttrokken, of ongeldig gemaakt teruggegeven; de gemeente registreert de inhouding of inlevering in de basisregistratie personen.
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  vindplaats: Paspoortwet art. 54 lid 3; Paspoortbesluit art. 7.1; HUP Inhouding
 status: goedgekeurd
 afgeleid:
   uitkomst:

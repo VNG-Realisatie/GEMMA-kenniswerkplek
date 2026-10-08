@@ -8,7 +8,7 @@ onderwerpen:
 - burgerzaken
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-definitie: Het registreren van een geregistreerd partnerschap of het omzetten daarvan in een huwelijk, met het opmaken van de akte.
+definitie: Het behandelen van de melding van een voorgenomen partnerschap en het registreren ervan, of het omzetten van een partnerschap in een huwelijk, met de akte.
 grondslag: bron
 match:
   gemma: geen
@@ -22,6 +22,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
 ---
 
 # Registreren partnerschap
@@ -34,11 +35,16 @@ bronnen:
 
 ### Definitie
 
-Het registreren van een geregistreerd partnerschap of het omzetten daarvan in een huwelijk, met het opmaken van de akte.
+Het behandelen van de melding van een voorgenomen partnerschap en het registreren ervan, of het omzetten van een partnerschap in een huwelijk, met de akte.
 
 ### Beschrijving
 
 Het partnerschap wordt geregistreerd bij akte, opgemaakt door de ambtenaar; een ja-woord is niet verplicht (BW 1 art. 80a; Utrecht). Een partnerschap kan worden omgezet in een huwelijk met een akte van omzetting, zonder melding vooraf en zonder getuigen (BW 1 art. 80g; Utrecht). Locaties, tarieven en trouwambtenaar volgen het huwelijk (Utrecht Trouwen in Utrecht).
+
+### Deelprocessen
+
+1. **Melding voorgenomen partnerschap**: Zoals bij het huwelijk; een omzetting van een partnerschap in een huwelijk begint met een eigen verzoek, zonder melding. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80a, 80g)
+2. **Registreren**: De ambtenaar maakt de akte van registratie op, of de akte van omzetting in een huwelijk. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80a, 80g)
 
 ### Synoniemen
 
@@ -79,6 +85,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk geval dat zich voordoet. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Geregistreerd partnerschap aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, BW 1 art. 80a-80g; Besluit burgerlijke stand art. 57a-57c. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
 | **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Bijhouden burgerlijke stand: één akte in het register van geregistreerde partnerschappen of huwelijken. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **klant tot klant**: Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? | Ja, ja, van de melding van het voorgenomen partnerschap, of het verzoek om omzetting, tot de akte. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Geregistreerd partnerschap aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de dienst Geregistreerd partnerschap omzetting in huwelijk (UPL nr. 156); de registratie zelf volgt op Geregistreerd partnerschapaangifte (UPL nr. 158). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Geregistreerd partnerschap aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen.md) |
 
@@ -90,13 +97,14 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 |---|---|---|---|
 | Registreren partnerschap | maakt partnerschapsakte of akte van omzetting op *toegang (registreren)* | [Akte van de burgerlijke stand](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) (art. 80a, 80g) |
 | Registreren partnerschap | realiseert *realisatie* | [Geregistreerd partnerschap omzetting in huwelijk](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschap-omzetting-in-huwelijk.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Geregistreerd partnerschap aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen.md) (UPL nr. 156) |
+| Registreren partnerschap | verifieert gegevens van *toegang (raadplegen)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 18 lid 2) |
+| Registreren partnerschap | realiseert *realisatie* | [Geregistreerd partnerschapaangifte](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschapaangifte.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Voorgenomen huwelijk melden](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.md) (UPL nr. 158) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Ambtenaar van de burgerlijke stand](../../../rollen/ambtenaar-van-de-burgerlijke-stand.md) | maakt akte op *toewijzing* | Registreren partnerschap | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80a lid 3, 80g) |
-| [Behandelen melding voorgenomen huwelijk of partnerschap](behandelen-melding-voorgenomen-huwelijk-of-partnerschap.md) | gaat vooraf aan *triggering* | Registreren partnerschap | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Geregistreerd partnerschap aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen.md) (art. 80a) |
+| [Ambtenaar van de burgerlijke stand](../../../rollen/ambtenaar-van-de-burgerlijke-stand.md) | maakt akte op, ontvangt kennisgeving *toewijzing* | Registreren partnerschap | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80a lid 3, 80g; art. 44) |
 | [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md) | omvat *aggregatie* | Registreren partnerschap | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80a, 80g) |
 
 ## Herkomst
@@ -109,6 +117,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [Utrecht Geregistreerd partnerschap aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen.md) | Gemeente Utrecht: Geregistreerd partnerschap |
 | [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) | Besluit burgerlijke stand 1994 |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Utrecht Voorgenomen huwelijk melden](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.md) | Gemeente Utrecht: Melden voorgenomen huwelijk |
 
 ### Afstemming met GEMMA
 

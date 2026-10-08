@@ -133,6 +133,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen proces dat per keer wordt doorlopen.'
   omvat_processen:
     waarde: ja
     onderbouwing: 'Per kernobject één proces: Bijhouden persoonsgegevens (Wet BRP hoofdstuk 2), Bijhouden burgerlijke stand (BW 1 titel 4), Beheren reisdocumenten (Paspoortwet hoofdstuk IV tot en met VIII), Beheren Nederlanderschap, Beheren stempassen, Beheren rijbewijzen (Wegenverkeerswet 1994 hoofdstuk VI) en Afgeven verklaring omtrent het gedrag (Wet justitiële en strafvorderlijke gegevens art. 28 tot en met 39).'

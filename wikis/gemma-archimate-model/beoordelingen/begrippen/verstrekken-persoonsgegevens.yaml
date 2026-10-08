@@ -148,6 +148,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: levert de gegevens van de persoonslijst (NVVB Schema).'
     bronnen:
     - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het verzoek tot de verstrekking of de weigering.
+    bronnen:
+    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    - 2025-vng-upl-producten-en-diensten-extern
   omvat_processen:
     waarde: nee
     onderbouwing: Geen groepering van processen.

@@ -53,7 +53,7 @@ Bedrijfsproces, niveau cluster naar soort werk. Uitkomst van de beslistabel: Ged
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|

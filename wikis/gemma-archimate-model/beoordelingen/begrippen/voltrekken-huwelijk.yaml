@@ -149,6 +149,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één akte in het register van huwelijken.'
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de melding van het voorgenomen huwelijk tot de voltrekking en de huwelijksakte.
+    bronnen:
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -220,10 +226,12 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-definitie: Het in het openbaar voltrekken van een huwelijk ten overstaan van de ambtenaar van de burgerlijke stand en het opmaken van de huwelijksakte.
+definitie: Het behandelen van de melding van een voorgenomen huwelijk, het in het openbaar voltrekken ervan en het opmaken van de huwelijksakte.
 beschrijving:
 - 'Het huwelijk wordt in het openbaar voltrokken in het gemeentehuis, met twee tot vier meerderjarige getuigen; de partijen verschijnen in persoon (BW 1 art. 63, 65). Burgemeester en wethouders kunnen andere gebouwen als huis der gemeente aanwijzen: eigen locaties, vaste trouwlocaties en een locatie naar keuze die de gemeente goedkeurt (BW 1 art. 63, 64; Utrecht Trouwlocaties). De gemeente kiest de trouwambtenaar; een eigen trouwambtenaar voor één dag wordt als buitengewoon ambtenaar aangewezen (BW 1 art. 16; Utrecht).'
 - Gemeenten bieden varianten met eigen tarieven, van gratis trouwen op vaste momenten tot een locatie naar keuze (Utrecht); tarieven en wachtlijsten zijn lokaal. Bij het trouwen kunnen de ouders eenmalig de achternaam van hun gezamenlijke kinderen veranderen (Utrecht). De huwelijksakte gaat naar de woongemeenten voor de BRP.
+- De aanstaande echtgenoten verstrekken hun gegevens, een verklaring over bloedverwantschap en eerdere huwelijken, de getuigen en zo nodig gegevens over het verblijfsrecht; de ambtenaar verifieert die in de BRP, bewaart de verklaring omtrent verblijfsrecht twaalf jaar voor de IND en meldt een vermoeden van een schijnhuwelijk (BW 1 art. 18, 44, 58; Besluit burgerlijke stand art. 28). Bij beletselen stuit het openbaar ministerie het huwelijk (BW 1 art. 80a lid 4). De melding vervalt na een jaar (art. 46).
+- Online met DigiD, door beide partners elk met een eigen formulier, of aan de balie; gratis (Utrecht). Wie in het buitenland woont, meldt bij de gemeente Den Haag (Utrecht).
 synoniemen:
 - naam: Huwelijksvoltrekking
   context: wet
@@ -275,9 +283,37 @@ relaties:
   bronnen:
   - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
   vindplaats: inleiding
+- soort: toegang (raadplegen)
+  naar: ingeschreven-persoon
+  naam: verifieert gegevens van
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 18 lid 2
+- soort: realisatie
+  naar: huwelijksaangifte
+  naam: realiseert
+  grondslag: bron
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
+  vindplaats: UPL nr. 185
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 grondslag: bron
+deelprocessen:
+- naam: Melding voorgenomen huwelijk
+  omschrijving: De aanstaande echtgenoten melden het huwelijk minstens 14 dagen en hoogstens een jaar vooraf; de ambtenaar verifieert de gegevens en meldt een vermoeden van een schijnhuwelijk.
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
+  vindplaats: BW 1 art. 44, 46, 58; Utrecht
+  begrip: behandelen-melding-voorgenomen-huwelijk-of-partnerschap
+- naam: Voltrekken
+  omschrijving: Het huwelijk wordt in het openbaar voltrokken met twee tot vier getuigen, in het gemeentehuis of op een aangewezen locatie, en de ambtenaar maakt de huwelijksakte op.
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 63-65
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -298,6 +334,7 @@ afgeleid:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
   - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
+  - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
   herkomst: wet
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75

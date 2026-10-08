@@ -142,6 +142,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: wijkt af van de termijn voor begraving of crematie (art. 16, 17).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aanvraag tot de vergunning voor een andere termijn.
+    bronnen:
+    - 2026-rvo-aangifte-en-akte-van-overlijden
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.

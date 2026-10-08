@@ -138,6 +138,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Beheren Nederlanderschap: het deel van de gemeente, geen deelproces (besluit redacteur 2026-10-07).'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: ja
     onderbouwing: Behandelen optieverklaring, Behandelen naturalisatieverzoek, Houden naturalisatieceremonie en Behandelen verklaring van afstand (Besluit art. 7-12, 31-38, 60a, 60b, 62-64).
@@ -255,13 +258,6 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 31-38
-- soort: aggregatie
-  naar: houden-naturalisatieceremonie
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  vindplaats: art. 60a, 60b
 - soort: aggregatie
   naar: behandelen-verklaring-van-afstand
   naam: omvat

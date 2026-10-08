@@ -132,9 +132,12 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Een groepering, geen deel van een proces.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen proces dat per keer wordt doorlopen.'
   omvat_processen:
     waarde: ja
-    onderbouwing: Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as en Ruimen graf (art. 23, 31, 49, 59, 62; Groningen art. 7, 21, 27).
+    onderbouwing: Uitvoeren lijkbezorging (met het deelproces Bijzetten of verstrooien van de as) en Ruimen graf (art. 23, 31, 49, 59, 62; Groningen art. 7, 21, 27).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -224,15 +227,7 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 23, 49; Groningen art. 7
-- soort: aggregatie
-  naar: bijzetten-of-verstrooien-van-de-as
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: art. 59, 62; Groningen art. 21
+  vindplaats: art. 23, 49; Groningen art. 7; art. 59, 62; Groningen art. 21
 - soort: aggregatie
   naar: ruimen-graf
   naam: omvat

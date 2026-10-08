@@ -92,12 +92,12 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 
 - **Objectniveau**: kernobject.
 - **Levensloop bepaald door**: [Beheren reisdocumenten](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md).
-- **Mutaties door bedrijfsprocessen**: [Behandelen aanvraag reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Inhouden reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Uitreiken reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-reisdocument.md), [Vervallen verklaren reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md), [Verwerken vermissing reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md).
+- **Mutaties door bedrijfsprocessen**: [Behandelen aanvraag reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Inhouden reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Verwerken vermissing reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -134,13 +134,12 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Behandelen aanvraag reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | verstrekt *toegang (registreren)* | Reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1 onder d, 40) |
+| [Behandelen aanvraag reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | reikt uit *toegang (bijwerken)* | Reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1 onder e, 42) |
 | [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md) | verstrekt *toegang (registreren)* | Reisdocument | [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 4.2) |
 | [Beheren reisdocumenten](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md) | verstrekt, reikt uit en onttrekt aan het verkeer *toegang (registreren)* | Reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1, 40, 42, 54) |
 | [Houder van het reisdocument](../../../rollen/houder-van-het-reisdocument.md) | is houder van *toegang (houder)* | Reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1 onder f) |
 | [Ingeschreven persoon](ingeschreven-persoon.md) | is houder van *associatie (gericht), 1 → 0..** | Reisdocument | [Logisch Ontwerp BRP 2025.Q1](../../../../bronanalyses/burgerzaken/2025-rvig-logisch-ontwerp-brp-2025q1.md), [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) (LO 4.4, categorie 12; HUP Reisdocument); GGM (EAID_423300D3_B0CE_4c89_BA5F_84D7317DE876) |
-| [Inhouden reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | houdt in en onttrekt aan het verkeer *toegang (beëindigen)* | Reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (Paspoortwet art. 1 onder h en j, 54; Paspoortbesluit art. 7.1) |
-| [Uitreiken reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-reisdocument.md) | reikt uit *toegang (bijwerken)* | Reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1 onder e, 42) |
-| [Vervallen verklaren reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md) | verklaart vervallen *toegang (beëindigen)* | Reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1 onder i, 44) |
+| [Inhouden reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | houdt in en onttrekt aan het verkeer, verklaart vervallen *toegang (beëindigen)* | Reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (Paspoortwet art. 1 onder h en j, 54; Paspoortbesluit art. 7.1; art. 1 onder i, 44) |
 | [Verwerken vermissing reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md) | registreert vermissing van *toegang (bijwerken)* | Reisdocument | [HUP Inhouding, inlevering of vermissing](../../../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md), [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (HUP Inhouding, inleiding; Paspoortwet art. 47 lid 1 onder j) |
 
 ## Herkomst

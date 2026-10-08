@@ -144,6 +144,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: een maatregel bij een besmet lijk (art. 22a).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de melding van de GGD tot de maatregel.
+    bronnen:
+    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.

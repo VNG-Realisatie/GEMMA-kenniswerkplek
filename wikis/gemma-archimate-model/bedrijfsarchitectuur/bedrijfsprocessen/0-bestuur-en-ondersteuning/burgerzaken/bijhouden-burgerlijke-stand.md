@@ -64,7 +64,7 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 ### Plaats in de indelingen
 
 - **Procesniveau**: levensloopproces.
-- **Procesindeling naar kernobject, omvat**: [Behandelen melding voorgenomen huwelijk of partnerschap](behandelen-melding-voorgenomen-huwelijk-of-partnerschap.md), [Inschrijven ontbinding huwelijk of partnerschap](inschrijven-ontbinding-huwelijk-of-partnerschap.md), [Opmaken akte levenloos geboren kind](opmaken-akte-levenloos-geboren-kind.md), [Opmaken akte van erkenning](opmaken-akte-van-erkenning.md), [Opmaken akte van naamskeuze](opmaken-akte-van-naamskeuze.md), [Opmaken akte van overlijden](opmaken-akte-van-overlijden.md), [Opmaken geboorteakte](opmaken-geboorteakte.md), [Registreren partnerschap](registreren-partnerschap.md), [Toevoegen latere vermelding](toevoegen-latere-vermelding.md), [Verstrekken uittreksels en verklaringen burgerlijke stand](verstrekken-uittreksels-en-verklaringen-burgerlijke-stand.md), [Voltrekken huwelijk](voltrekken-huwelijk.md), [Wijzigen geslachtsvermelding](wijzigen-geslachtsvermelding.md).
+- **Procesindeling naar kernobject, omvat**: [Inschrijven ontbinding huwelijk of partnerschap](inschrijven-ontbinding-huwelijk-of-partnerschap.md), [Opmaken akte levenloos geboren kind](opmaken-akte-levenloos-geboren-kind.md), [Opmaken akte van erkenning](opmaken-akte-van-erkenning.md), [Opmaken akte van naamskeuze](opmaken-akte-van-naamskeuze.md), [Opmaken akte van overlijden](opmaken-akte-van-overlijden.md), [Opmaken geboorteakte](opmaken-geboorteakte.md), [Registreren partnerschap](registreren-partnerschap.md), [Toevoegen latere vermelding](toevoegen-latere-vermelding.md), [Verstrekken uittreksels en verklaringen burgerlijke stand](verstrekken-uittreksels-en-verklaringen-burgerlijke-stand.md), [Voltrekken huwelijk](voltrekken-huwelijk.md), [Wijzigen geslachtsvermelding](wijzigen-geslachtsvermelding.md).
 - **Beleidsdomeinindeling**: beleidsdomein Burgerzaken, taakveld 0 Bestuur en Ondersteuning (van het kernobject).
 - **Kernobject**: [Akte van de burgerlijke stand](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md).
 - **Functie-indeling naar domein, bediend door**: [Burgerlijke stand diensten](../../../bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md).
@@ -73,7 +73,7 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -114,7 +114,6 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | Bijhouden burgerlijke stand | omvat *aggregatie* | [Opmaken akte van naamskeuze](opmaken-akte-van-naamskeuze.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 5) |
 | Bijhouden burgerlijke stand | omvat *aggregatie* | [Wijzigen geslachtsvermelding](wijzigen-geslachtsvermelding.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 28b) |
 | Bijhouden burgerlijke stand | omvat *aggregatie* | [Naamswijziging](../../../gebeurtenissen/naamswijziging.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Voornaam of achternaam veranderen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen.md) (art. 4, 7) |
-| Bijhouden burgerlijke stand | omvat *aggregatie* | [Behandelen melding voorgenomen huwelijk of partnerschap](behandelen-melding-voorgenomen-huwelijk-of-partnerschap.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 44, 80a) |
 | Bijhouden burgerlijke stand | omvat *aggregatie* | [Voltrekken huwelijk](voltrekken-huwelijk.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 63) |
 | Bijhouden burgerlijke stand | omvat *aggregatie* | [Registreren partnerschap](registreren-partnerschap.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80a, 80g) |
 | Bijhouden burgerlijke stand | omvat *aggregatie* | [Inschrijven ontbinding huwelijk of partnerschap](inschrijven-ontbinding-huwelijk-of-partnerschap.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80c, 163) |

@@ -147,6 +147,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Beheren rijbewijzen: het rijbewijs komt in gebruik.'
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: Nee, volgt op de afgifte in Behandelen aanvraag rijbewijs, voor hetzelfde geval; pas met de uitreiking is de dienst geleverd.
+    bronnen:
+    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -220,41 +226,27 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het na de afgifte ter beschikking stellen van het rijbewijs aan de aanvrager, die daarbij zijn eerdere rijbewijs inlevert.
-beschrijving:
-- 'De aanvrager haalt het rijbewijs persoonlijk op, op afspraak bij dezelfde balie als waar hij het aanvroeg, en identificeert zich opnieuw (Wegenverkeerswet 1994 art. 111 lid 2; Utrecht). Bij het ophalen levert hij zijn oude rijbewijs in: het nieuwe of vervangende rijbewijs wordt niet afgegeven voordat het eerdere is ingeleverd, tenzij het verloren is (Wegenverkeerswet 1994 art. 119 lid 2, 120 lid 2).'
-- Het rijbewijs wordt niet uitgereikt, maar blijft bij degene die afgeeft, als tussen aanvraag en uitreiking een omstandigheid bekend wordt die afgifte had verhinderd (Wegenverkeerswet 1994 art. 120a). De burgemeester neemt een rijbewijs in dat is gevorderd of ongeldig is geworden en geleidt het door (art. 115). Een buitenlands rijbewijs bij omwisseling gaat terug naar het land van afgifte (Reglement rijbewijzen art. 109).
 synoniemen:
 - naam: Uitreiking van het rijbewijs
   context: wet
 - naam: Rijbewijs ophalen
   context: beleid
-taakveld: 0 Bestuur en Ondersteuning
-beleidsdomein: Burgerzaken
 grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
-kernobject: rijbewijs
-afnemer: extern
-relaties:
-- soort: toegang (bijwerken)
-  naar: rijbewijs
-  naam: reikt uit en neemt het eerdere rijbewijs in
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  vindplaats: art. 119 lid 2, 120a
-status: goedgekeurd
+genoemd_begrip: Behandelen aanvraag rijbewijs
+toelichting: 'Deelproces zonder pagina van Behandelen aanvraag rijbewijs, Behandelen aanvraag omwisseling buitenlands rijbewijs: het na de afgifte ter beschikking stellen van het rijbewijs aan de aanvrager, die daarbij zijn eerdere rijbewijs inlevert.'
+relaties: []
 afgeleid:
   uitkomst:
-    soort: element
-    regel: 29
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
+    soort: onderdeel
+    regel: 30
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    genoemd_begrip: Behandelen aanvraag rijbewijs
     generiek: false
     typeregel: 17
   bronnen:
@@ -262,4 +254,3 @@ afgeleid:
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-rijbewijs.md

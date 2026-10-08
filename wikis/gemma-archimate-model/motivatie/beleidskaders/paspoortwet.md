@@ -54,7 +54,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -74,16 +74,14 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Paspoortwet | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 26-41) |
-| Paspoortwet | is grondslag voor *associatie (gericht)* | [Uitreiken reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 32, 42) |
+| Paspoortwet | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 26-41; art. 32, 42) |
 | Paspoortwet | is grondslag voor *associatie (gericht)* | [Paspoort](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 9, 26) |
 | Paspoortwet | is grondslag voor *associatie (gericht)* | [Paspoort tweede](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 30) |
 | Paspoortwet | is grondslag voor *associatie (gericht)* | [Vluchtelingenpaspoort](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vluchtelingenpaspoort.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 11) |
 | Paspoortwet | is grondslag voor *associatie (gericht)* | [Vreemdelingenpaspoort](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vreemdelingenpaspoort.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 12-15, 40 lid 4) |
 | Paspoortwet | is grondslag voor *associatie (gericht)* | [Verwerken vermissing reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 4a, 5a, 31, 47 lid 1 onder j) |
 | Paspoortwet | is grondslag voor *associatie (gericht)* | [Vermissing of diefstal reisdocument doorgeven](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-reisdocument-doorgeven.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 5a) |
-| Paspoortwet | is grondslag voor *associatie (gericht)* | [Inhouden reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 50b-57) |
-| Paspoortwet | is grondslag voor *associatie (gericht)* | [Vervallen verklaren reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 44-46) |
+| Paspoortwet | is grondslag voor *associatie (gericht)* | [Inhouden reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 50b-57; art. 44-46) |
 | Paspoortwet | is grondslag voor *associatie (gericht)* | [Zakenpaspoort](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/zakenpaspoort.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) (art. 9, 26, 40 (nationaal paspoort); Utrecht regel 229) |
 
 #### Inkomend

@@ -147,6 +147,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie bij de ingeschreven persoon.'
     bronnen:
     - 2026-rvig-hup-wijziging-naamgebruik
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het verzoek tot de gewijzigde aanduiding of de weigering.
+    bronnen:
+    - 2026-rvig-hup-wijziging-naamgebruik
+    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

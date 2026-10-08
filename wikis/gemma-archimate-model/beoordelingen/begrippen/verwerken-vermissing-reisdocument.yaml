@@ -149,6 +149,13 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het einde van een vermist reisdocument.'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de melding van de vermissing tot de registratie en het verval van rechtswege.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+    - 2026-rvig-hup-inhouding-inlevering-vermissing
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

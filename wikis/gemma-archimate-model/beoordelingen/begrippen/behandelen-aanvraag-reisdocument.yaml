@@ -117,7 +117,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: De verstrekking, de beslissing tot uitreiking van een nieuw reisdocument, of de weigering (Paspoortwet art. 1 onder c en d).
+    onderbouwing: Het uitgereikte reisdocument, na de verstrekking, of de weigering (Paspoortwet art. 1 onder c, d en e, 42).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
   komt_herhaald_voor:
@@ -149,6 +149,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het ontstaan van het reisdocument.'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aanvraag tot de uitreiking of de weigering.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -222,12 +228,14 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een paspoort, identiteitskaart of ander reisdocument, tot verstrekking of weigering.
+definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een paspoort, identiteitskaart of ander reisdocument, tot de uitreiking of weigering.
 beschrijving:
 - De aanvrager verschijnt persoonlijk op afspraak aan de balie, met alle huidige reisdocumenten, ook verlopen, en een pasfoto; vanaf twaalf jaar worden twee vingerafdrukken opgenomen en de rechten worden bij de aanvraag betaald (Paspoortwet art. 28, 29, 33; Paspoortbesluit art. 3.6; Utrecht). De burgemeester verschaft zich zekerheid over de identiteit en de nationaliteit, uit het overgelegde reisdocument, de basisregistratie personen en het basisregister reisdocumenten; na vermissing of diefstal zonder ander reisdocument stelt hij de identiteit eerst vast (Paspoortbesluit art. 2.1; Utrecht).
 - Voor een minderjarige geeft iedere persoon die het gezag uitoefent een verklaring van toestemming, online of op een formulier; de rechter kan haar vervangen (Paspoortwet art. 34; Utrecht). De burgemeester verstrekt binnen vier weken, tenzij er een mededeling van de minister over een signalering is; dan beslist hij of de gronden tot weigering nog bestaan (Paspoortwet art. 41, 44, 45). Een aanvraag kan ook de wijziging van gegevens in een eerder verstrekt reisdocument betreffen (art. 1 onder a, 43).
 - 'Een vreemdelingenpaspoort wordt pas verstrekt nadat de minister van Justitie en Veiligheid heeft vastgesteld dat aan de voorwaarden is voldaan (Paspoortwet art. 40 lid 4; Utrecht: voorgelegd aan de IND en het ministerie van Buitenlandse Zaken). Een spoedaanvraag is een aanvraag met kortere levertijd tegen een hoger tarief (Utrecht).'
 - 'Voor personen die niet als ingezetene in de BRP staan, behandelen alleen aangewezen gemeenten de aanvraag: de specialisatie Behandelen aanvraag reisdocument niet-ingezetene (Paspoortbesluit art. 3.2, 4.2).'
+- 'De uitreiking volgt binnen twee weken na de verstrekking, nadat de identiteit van de aanvrager in zijn aanwezigheid is vastgesteld (Paspoortwet art. 42 lid 2; Paspoortbesluit art. 4.6). De aanvrager levert dan al zijn Nederlandse reisdocumenten in, tenzij hij een tweede paspoort mag houden; zonder inlevering, bij een mededeling tot inhouding of als het document al van rechtswege is vervallen, volgt geen uitreiking (art. 32, 42 lid 3). Een document dat niet binnen drie maanden is opgehaald, wordt definitief aan het verkeer onttrokken (art. 42 lid 4; Utrecht: vernietigd).'
+- In Utrecht haalt de aanvrager het document persoonlijk op aan de balie, of laat het tegen betaling bezorgen op een adres in Nederland, niet bij een spoedaanvraag (Utrecht). De bijhoudingsgemeente legt het uitgereikte Nederlandse reisdocument vast in categorie 12 van de persoonslijst; de gemeente die het verstrekte, beheert het paspoortdossier (HUP Uitreiking).
 synoniemen:
 - naam: Verstrekken reisdocument
   context: wet
@@ -308,13 +316,40 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   vindplaats: UPL nr. 186
-- soort: triggering
-  naar: uitreiken-reisdocument
-  naam: leidt tot
+- soort: toegang (bijwerken)
+  naar: reisdocument
+  naam: reikt uit
   grondslag: bron
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 42 lid 2
+  vindplaats: art. 1 onder e, 42
+- soort: stroom
+  naar: bijhouden-persoonsgegevens
+  naam: geeft uitgereikt reisdocument door aan
+  grondslag: bron
+  bronnen:
+  - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+  - 2026-rvig-hup-reisdocument
+  vindplaats: HUP Uitreiking, inleiding; HUP Reisdocument
+deelprocessen:
+- naam: Aanvraag innemen
+  omschrijving: De aanvrager verschijnt persoonlijk aan de balie; de burgemeester stelt identiteit en nationaliteit vast en neemt de aanvraag in ontvangst.
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: Paspoortwet art. 26-28; Paspoortbesluit art. 2.1
+- naam: Verstrekken of weigeren
+  omschrijving: Binnen vier weken beslist de burgemeester tot verstrekking (de beslissing tot uitreiking) of, na een mededeling over een signalering, tot weigering.
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 1 onder d, 40, 41, 44
+- naam: Uitreiken
+  omschrijving: Binnen twee weken na de verstrekking krijgt de aanvrager het document in handen, na vaststelling van zijn identiteit, en levert hij zijn oude Nederlandse reisdocumenten in. Een document dat niet binnen drie maanden is opgehaald, wordt aan het verkeer onttrokken.
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: Paspoortwet art. 32, 42; Paspoortbesluit art. 4.6
+  begrip: uitreiken-reisdocument
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -334,6 +369,8 @@ afgeleid:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-vng-gemma-2026-10-02
+  - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+  - 2026-rvig-hup-reisdocument
   herkomst: wet
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75

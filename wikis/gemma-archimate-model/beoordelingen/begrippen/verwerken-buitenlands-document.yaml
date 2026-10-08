@@ -150,6 +150,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie bij de ingeschreven persoon.'
     bronnen:
     - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het verzoek of de melding tot de verwerking of het besluit.
+    bronnen:
+    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+    - 2026-rvig-hup-overlijden-buitenland
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

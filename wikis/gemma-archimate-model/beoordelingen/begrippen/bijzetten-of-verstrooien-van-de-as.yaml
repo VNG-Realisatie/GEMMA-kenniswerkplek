@@ -142,6 +142,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Begraven en cremeren stoffelijk overschot: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: Nee, volgt op de crematie in Uitvoeren lijkbezorging, voor hetzelfde stoffelijk overschot en door dezelfde houder.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.
@@ -211,57 +216,28 @@ kenmerken:
     waarde: nee
     onderbouwing: Specifiek voor de lijkbezorging.
 definitie: 'Het geven van een bestemming aan de as na een crematie: bijzetten van de urn, verstrooien van de as of meegeven aan de nabestaande.'
-beschrijving:
-- Na de crematie bewaart de houder van het crematorium de asbus minimaal een maand en zorgt hij daarna dat de asbus wordt bijgezet, de as wordt verstrooid, de asbus aan de nabestaande wordt meegegeven of naar het buitenland gaat (Wet op de lijkbezorging art. 59). Een asbus wordt bijgezet in een crematorium, in of op een graf of op een afzonderlijke plaats op een begraafplaats, of in een bewaarplaats; in een particulier graf alleen met toestemming van de rechthebbende (art. 62). De houder van de plaats van bijzetting houdt een register bij en kan de asbus op verzoek aan de nabestaande meegeven (art. 63, 65). Verstrooien door een houder mag alleen op een daartoe bestemd terrein of in open zee (art. 66a); op de gemeentelijke begraafplaats kan het college incidentele asverstrooiing op een aangewezen plek toestaan (Groningen art. 21).
-specialisaties:
-- naam: Bijzetting
-  omschrijving: Bijzetten van een asbus in een crematorium, graf, urnennis of bewaarplaats (art. 62). Geen eigen pagina.
-- naam: Verstrooiing
-  omschrijving: Verstrooien van as op een daartoe bestemd terrein of in open zee (art. 66a). Geen eigen pagina.
-- naam: Incidentele asverstrooiing
-  omschrijving: Verstrooien van as op een aangewezen plek op of buiten de begraafplaats, met toestemming van het college (Groningen art. 1 m, 21). Geen eigen pagina.
-kernobject: urn
-afnemer: extern
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-taakveld: 7 Volksgezondheid en Milieu
-beleidsdomein: Begraafplaatsen en crematoria
 grondslag: bron
-relaties:
-- soort: toegang (bijwerken)
-  naar: urn
-  naam: zet bij of verstrooit de as uit
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 59 lid 2
-- soort: toegang (bijwerken)
-  naar: graf
-  naam: zet bij in of op
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 62 lid 1 b, 3
 besluiten:
 - datum: '2026-10-04'
   besluit: Nieuw deelproces van Bezorgen lijken met kernobject Urn (subobject van Lijk); bijzetting en verstrooiing komen over van Uitvoeren lijkbezorging.
   gevolg: verwerkt
-status: goedgekeurd
+genoemd_begrip: Uitvoeren lijkbezorging
+toelichting: 'Deelproces zonder pagina van Uitvoeren lijkbezorging: het geven van een bestemming aan de as na een crematie: bijzetten van de urn, verstrooien van de as of meegeven aan de nabestaande.'
 afgeleid:
   uitkomst:
-    soort: element
-    regel: 29
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
+    soort: onderdeel
+    regel: 30
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee
-    procesniveau: bedrijfsproces
+    genoemd_begrip: Uitvoeren lijkbezorging
     generiek: false
     typeregel: 17
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: wet
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md

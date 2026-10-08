@@ -149,6 +149,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Levert zelf het eindresultaat voor zijn kernobject; geen deel van een groter proces.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: ja
     onderbouwing: Ruimen graf en Onderhouden graf (art. 31; Groningen art. 23, 27).

@@ -47,7 +47,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -65,9 +65,9 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Nabestaande | geeft opdracht tot bijzetting bij *toewijzing* | [Bijzetten of verstrooien van de as](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzetten-of-verstrooien-van-de-as.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 2) |
 | Nabestaande | draagt zorg voor *toegang (houder)* | [Urn](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 60 lid 2) |
 | Nabestaande | verzoekt om *toewijzing* | [Verlenen toestemming asverstrooiing](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-asverstrooiing.md) | [APV Groningen](../../bronanalyses/lijkbezorging/2025-groningen-algemene-plaatselijke-verordening.md) (art. 5:27 lid 3) |
+| Nabestaande | geeft opdracht tot bijzetting bij *toewijzing* | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 62 lid 2) |
 
 #### Inkomend
 

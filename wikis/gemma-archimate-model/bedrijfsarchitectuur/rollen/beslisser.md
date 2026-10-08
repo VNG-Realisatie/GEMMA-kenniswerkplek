@@ -82,7 +82,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -122,13 +122,13 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | Beslisser | beslist over *toewijzing* | [Behandelen verzoek om verwijdering van gegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-verwijdering-van-gegevens.md) | [Utrecht BRP-gegevens opvragen of aanpassen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) (Na uw aanvraag) |
 | Beslisser | besluit tot *toewijzing* | [Wijzigen identificatienummers](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-identificatienummers.md) | [HUP BRP: Wijzigen bsn](../../bronanalyses/burgerzaken/2026-rvig-hup-wijzigen-bsn.md) (regel 19-25) |
 | Beslisser | verstrekt of weigert *toewijzing* | [Behandelen aanvraag reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 40, 44) |
-| Beslisser | verklaart vervallen *toewijzing* | [Vervallen verklaren reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/vervallen-verklaren-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 44, 46) |
 | Beslisser | verstrekt of weigert *toewijzing* | [Behandelen aanvraag reisdocument niet-ingezetene](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md) | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 4.2) |
 | Beslisser | bevestigt of weigert de optie *toewijzing* | [Behandelen optieverklaring](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md) | [Rijkswet op het Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md), [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (Rijkswet art. 6 lid 3-5; Besluit art. 11) |
 | Beslisser | bevestigt de afstand *toewijzing* | [Behandelen verklaring van afstand](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 63) |
 | Beslisser | beslist op het verzoek *toewijzing* | [Behandelen verzoek om volmacht](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-volmacht.md) | [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (art. L 11) |
 | Beslisser | beslist op een aanvraag tot wijziging *toewijzing* | [Registreren kiesgerechtigdheid](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md) | [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) (art. D 7) |
 | Beslisser | besluit tot afgifte of weigering *toewijzing* | [Behandelen aanvraag rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (WVW art. 116, 118a; Reglement art. 27) |
+| Beslisser | verklaart vervallen *toewijzing* | [Inhouden reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 44, 46) |
 
 #### Inkomend
 

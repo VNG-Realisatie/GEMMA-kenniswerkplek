@@ -114,7 +114,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: De verstrekking, de beslissing tot uitreiking van een nieuw reisdocument, of de weigering (Paspoortwet art. 1 onder c en d).
+    onderbouwing: Het uitgereikte reisdocument, na de verstrekking, of de weigering (Paspoortwet art. 1 onder c, d en e, 42).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
   komt_herhaald_voor:
@@ -146,6 +146,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het ontstaan van het reisdocument van een niet-ingezetene.'
     bronnen:
     - 2026-rijk-paspoortbesluit-bwbr0044308
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aanvraag tot de uitreiking of de weigering.
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -219,7 +225,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een reisdocument van iemand die niet als ingezetene in de BRP staat, door een aangewezen gemeente.
+definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een reisdocument van iemand die niet als ingezetene in de BRP staat, tot de uitreiking of weigering.
 beschrijving:
 - 'Alleen de burgemeester van een bij ministeriële regeling aangewezen gemeente is bevoegd aanvragen in ontvangst te nemen en reisdocumenten te verstrekken voor personen die niet als ingezetene in de basisregistratie personen zijn ingeschreven: het nationaal paspoort, de reisdocumenten voor vluchtelingen en voor vreemdelingen en het nooddocument (Paspoortbesluit art. 3.2, 4.2; Paspoortwet art. 2 lid 1 onder a, d, e en g). Het document is hetzelfde Reisdocument als bij een ingezetene; bijzonder zijn de bevoegde gemeente en de aanvrager. Verder volgt de behandeling Behandelen aanvraag reisdocument.'
 synoniemen:
@@ -266,17 +272,28 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: UPL nr. 356, 357; Paspoortbesluit art. 3.2, 4.2
-- soort: triggering
-  naar: uitreiken-reisdocument
-  naam: leidt tot
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 42 lid 2
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Eigen deelproces voor de aanvraag van een niet-ingezetene, specialisatie van Behandelen aanvraag reisdocument: bijzonder is niet het document maar de taak, die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2). Realiseert de dienst Reisdocument niet-ingezetene.'
   gevolg: verwerkt
+deelprocessen:
+- naam: Aanvraag innemen
+  omschrijving: Een aangewezen gemeente neemt de aanvraag in ontvangst van wie niet als ingezetene in de basisregistratie personen staat.
+  bronnen:
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: art. 3.2, 4.2
+- naam: Verstrekken of weigeren
+  omschrijving: Zoals bij Behandelen aanvraag reisdocument.
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 40, 41, 44
+- naam: Uitreiken
+  omschrijving: Binnen twee weken na de verstrekking krijgt de aanvrager het document in handen, na vaststelling van zijn identiteit, en levert hij zijn oude Nederlandse reisdocumenten in. Een document dat niet binnen drie maanden is opgehaald, wordt aan het verkeer onttrokken.
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  vindplaats: Paspoortwet art. 32, 42; Paspoortbesluit art. 4.6
+  begrip: uitreiken-reisdocument
 status: goedgekeurd
 afgeleid:
   uitkomst:

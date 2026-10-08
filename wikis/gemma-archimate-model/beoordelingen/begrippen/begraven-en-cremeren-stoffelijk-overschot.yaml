@@ -141,9 +141,12 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Een eigen levensloopproces: het deel van de houder van de begraafplaats of het crematorium in de levensloop van het stoffelijk overschot, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces (besluit redacteur 2026-10-08).'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: ja
-    onderbouwing: Uitvoeren lijkbezorging en Bijzetten of verstrooien van de as (art. 1, 23, 49, 59).
+    onderbouwing: Uitvoeren lijkbezorging, met het deelproces Bijzetten of verstrooien van de as (art. 1, 23, 49, 59).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_levensloop:
@@ -235,13 +238,6 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 1, 16
-- soort: aggregatie
-  naar: bijzetten-of-verstrooien-van-de-as
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 59–66b
 - soort: toegang (bijwerken)
   naar: stoffelijk-overschot
   naam: begraaft of cremeert

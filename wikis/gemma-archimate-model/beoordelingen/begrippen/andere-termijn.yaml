@@ -123,6 +123,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -202,8 +205,8 @@ genoemd_begrip: Beschikking
 toelichting: 'Specialisatie zonder pagina van Beschikking: door de burgemeester gestelde afwijkende termijn voor begraving of crematie (art. 17); gangbaar vervroegen of uitstellen van de uitvaart.'
 homoniemen:
 - begrip: Andere termijn
-  betekenis: 'De dienst waarmee de afnemer toestemming vraagt om eerder dan 36 uur of later dan zes werkdagen na het overlijden te begraven of te cremeren'
-  waar: 'De dienst Uitvaart vervroegen of uitstellen in deze wiki, met Andere termijn als synoniem (wet)'
+  betekenis: De dienst waarmee de afnemer toestemming vraagt om eerder dan 36 uur of later dan zes werkdagen na het overlijden te begraven of te cremeren
+  waar: De dienst Uitvaart vervroegen of uitstellen in deze wiki, met Andere termijn als synoniem (wet)
   naamkeuze: 'Dit begrip is het besluit zelf: een specialisatie van Beschikking zonder pagina. De dienst heet Uitvaart vervroegen of uitstellen.'
   element: uitvaart-vervroegen-of-uitstellen
 onderwerpen:

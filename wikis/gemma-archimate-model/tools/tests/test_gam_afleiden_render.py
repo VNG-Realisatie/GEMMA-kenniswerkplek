@@ -263,7 +263,7 @@ def test_element_zonder_enige_bron_is_een_fout(wiki):
 
 
 def _deelproces(**extra) -> dict:
-    ja = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "eigen_besluit"}
+    ja = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}
     return _element("Verlenen grafrecht", ja, kernobject="beschikking", afnemer="extern", **extra)
 
 
@@ -499,7 +499,7 @@ def _indeling_wiki(wiki):
                                          "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}}, "test")
     geen_ggm = {"ggm": {"sterkte": "geen", "onderbouwing": "Niet in het GGM."}}
     keten = (PROCES - {"per_keer_doorlopen", "omvat_levensloop"}) | {"gezamenlijk_gedrag"}
-    deel = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "eigen_besluit"}
+    deel = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}
     gevallen = {
         "bezorgen-lijken": _element("Bezorgen lijken", keten, kernobject="lijk",
                                     relaties=[_rel("toegang (registreren)", "lijk")]),

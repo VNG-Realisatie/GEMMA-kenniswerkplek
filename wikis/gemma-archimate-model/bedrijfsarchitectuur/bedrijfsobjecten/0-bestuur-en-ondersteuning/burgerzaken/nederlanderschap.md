@@ -71,12 +71,12 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 
 - **Objectniveau**: kernobject.
 - **Levensloop bepaald door**: [Beheren Nederlanderschap](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-nederlanderschap.md).
-- **Mutaties door bedrijfsprocessen**: [Behandelen naturalisatieverzoek](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md), [Behandelen optieverklaring](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md), [Behandelen verklaring van afstand](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md), [Houden naturalisatieceremonie](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/houden-naturalisatieceremonie.md).
+- **Mutaties door bedrijfsprocessen**: [Behandelen naturalisatieverzoek](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md), [Behandelen optieverklaring](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md), [Behandelen verklaring van afstand](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -102,11 +102,11 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Behandelen optieverklaring](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md) | bevestigt de verkrijging *toegang (registreren)* | Nederlanderschap | [Rijkswet op het Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) (art. 6 lid 3) |
+| [Behandelen naturalisatieverzoek](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md) | doet in werking treden *toegang (registreren)* | Nederlanderschap | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 60a lid 1, 60b lid 1) |
+| [Behandelen optieverklaring](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md) | bevestigt de verkrijging, doet in werking treden *toegang (registreren)* | Nederlanderschap | [Rijkswet op het Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 6 lid 3; art. 60a lid 1, 60b lid 1) |
 | [Behandelen verklaring van afstand](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md) | beëindigt door afstand *toegang (beëindigen)* | Nederlanderschap | [Rijkswet op het Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (Rijkswet art. 15 lid 1 onder b; Besluit art. 63) |
 | [Beheren Nederlanderschap](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-nederlanderschap.md) | bevestigt, doet in werking treden en beëindigt *toegang (registreren)* | Nederlanderschap | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 11, 60a, 60b, 63) |
 | [Bijhouden persoonsgegevens](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md) | neemt de Nederlandse nationaliteit op en beëindigt haar *toegang (bijwerken)* | Nederlanderschap | [HUP Nederlandse nationaliteit](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlandse-nationaliteit.md) (HUP Nederlandse nationaliteit) |
-| [Houden naturalisatieceremonie](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/houden-naturalisatieceremonie.md) | doet in werking treden *toegang (registreren)* | Nederlanderschap | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 60a lid 1, 60b lid 1) |
 
 ## Herkomst
 

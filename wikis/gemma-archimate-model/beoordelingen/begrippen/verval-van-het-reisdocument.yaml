@@ -126,13 +126,16 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   leidt_tot_gedrag:
     waarde: ja
-    onderbouwing: 'Start Inhouden reisdocument: een van rechtswege vervallen reisdocument wordt ingehouden en de houder levert het in (Paspoortwet art. 54 lid 1 onder a, 56; HUP Van rechtswege vervallen).'
+    onderbouwing: 'Leidt via de inlevering tot Inhouden reisdocument: de houder levert een van rechtswege vervallen reisdocument in en het wordt ingehouden (Paspoortwet art. 54 lid 1 onder a, 56; HUP Van rechtswege vervallen).'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen proces dat per keer wordt doorlopen.'
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -219,13 +222,13 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
 relaties:
 - soort: triggering
-  naar: inhouden-reisdocument
-  naam: leidt tot
+  naar: inlevering-van-het-reisdocument
+  naam: verplicht de houder tot
   grondslag: bron
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-  vindplaats: Paspoortwet art. 54 lid 1 onder a, 56; HUP Van rechtswege vervallen
+  vindplaats: art. 54 lid 1 onder a, 56
 status: goedgekeurd
 afgeleid:
   uitkomst:

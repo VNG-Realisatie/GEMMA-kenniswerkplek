@@ -140,6 +140,11 @@ kenmerken:
     onderbouwing: Draagt bij aan Beheren stempassen.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de termijn (de dag van de kandidaatstelling) of het verzoek tot de stempas.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

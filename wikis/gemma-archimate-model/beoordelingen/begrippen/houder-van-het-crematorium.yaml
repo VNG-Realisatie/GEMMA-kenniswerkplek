@@ -123,6 +123,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -201,11 +204,11 @@ gemma:
 relaties:
 - soort: toewijzing
   naar: uitvoeren-lijkbezorging
-  naam: bergt de as bij
+  naam: bergt de as bij, zorgt voor de bewaring en de bestemming van de as bij
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 58
+  vindplaats: art. 58; art. 59
 - soort: toegang (houder)
   naar: crematorium
   naam: houdt
@@ -227,13 +230,6 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 50, 52
-- soort: toewijzing
-  naar: bijzetten-of-verstrooien-van-de-as
-  naam: zorgt voor de bewaring en de bestemming van de as bij
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 59
 onderwerpen:
 - lijkbezorging
 doelgroep: gemeente

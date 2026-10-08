@@ -149,6 +149,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: de kiesrechtgegevens van de ingeschreven persoon.'
     bronnen:
     - 2026-rvig-hup-kiesrecht
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de mededeling of het verzoek tot de registratie of de kennisgeving.
+    bronnen:
+    - 2026-rijk-kieswet-bwbr0004627
+    - 2026-rvig-hup-europees-kiesrecht
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

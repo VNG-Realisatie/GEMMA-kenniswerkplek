@@ -144,6 +144,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Levert zelf het eindresultaat voor zijn kernobject.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: ja
     onderbouwing: Inschrijven ingezetene, Verwerken adreswijziging, Verwerken emigratie, Uitvoeren adresonderzoek en de andere bedrijfsprocessen van de bijhouding (HUP Achtergronden; Circulaire adresonderzoek).

@@ -131,6 +131,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen proces dat per keer wordt doorlopen.'
   omvat_processen:
     waarde: ja
     onderbouwing: 'Per kernobject één proces: Bezorgen stoffelijk overschot (art. 1–22a), Verzorgen gemeentebegrafenis (art. 20–22), Beheren grafrechten (art. 28), Beheren graven (art. 23, 27, 31), Beheren begraafplaatsen (art. 33–47) en Beheren crematoria (art. 50–56).'

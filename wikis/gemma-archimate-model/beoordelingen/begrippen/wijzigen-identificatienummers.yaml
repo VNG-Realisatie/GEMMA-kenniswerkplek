@@ -150,6 +150,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie in de persoonslijst (HUP Wijzigen identificatienummers).'
     bronnen:
     - 2026-rvig-hup-wijzigen-identificatienummers
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, ambtshalve, van de melding van de dubbele inschrijving of de fout tot het gewijzigde nummer.
+    bronnen:
+    - 2026-rvig-hup-wijzigen-bsn
+    - 2026-rvig-hup-wijzigen-administratienummer
   omvat_processen:
     waarde: nee
     onderbouwing: Geen groepering van processen.

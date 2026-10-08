@@ -64,7 +64,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -83,9 +83,8 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Houder van het rijbewijs | vraagt aan *toewijzing* | [Behandelen aanvraag rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs aanvragen of verlengen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) (art. 27, 33; Utrecht regel 17, 35) |
+| Houder van het rijbewijs | vraagt aan, haalt op en levert het eerdere rijbewijs in *toewijzing* | [Behandelen aanvraag rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs aanvragen of verlengen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md), [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 27, 33; Utrecht regel 17, 35; WVW art. 119 lid 2; Utrecht regel 29, 63-67) |
 | Houder van het rijbewijs | vraagt aan en levert het buitenlandse rijbewijs in *toewijzing* | [Behandelen aanvraag omwisseling buitenlands rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs buitenland omwisselen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) (art. 27, 109; Utrecht regel 55) |
-| Houder van het rijbewijs | haalt op en levert het eerdere rijbewijs in *toewijzing* | [Uitreiken rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-rijbewijs.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Utrecht Rijbewijs aanvragen of verlengen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) (WVW art. 119 lid 2; Utrecht regel 29, 63-67) |
 | Houder van het rijbewijs | geeft vermissing door *toewijzing* | [Verwerken vermissing rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md) | [Utrecht Rijbewijs aanvragen of verlengen](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) (Utrecht regel 126-140) |
 | Houder van het rijbewijs | is houder van *toegang (houder)* | [Rijbewijs](../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 119 lid 4) |
 

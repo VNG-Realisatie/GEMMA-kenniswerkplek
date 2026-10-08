@@ -53,7 +53,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -73,8 +73,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 2.1, 3.1, 3.2, 3.6) |
-| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Uitreiken reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-reisdocument.md) | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 4.6, 7.1) |
+| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 2.1, 3.1, 3.2, 3.6; art. 4.6, 7.1) |
 | Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Paspoort tweede](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md) | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 2.14, 2.15, 3.1, 4.1) |
 | Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Reisdocument niet-ingezetene](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument-niet-ingezetene.md) | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 3.2, 4.2) |
 | Paspoortbesluit | werkt uit *associatie (gericht)* | [Paspoortwet](paspoortwet.md) | [Paspoortbesluit](../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (aanhef) |

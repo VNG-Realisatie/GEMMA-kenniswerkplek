@@ -126,6 +126,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Een groepering, geen deel van een proces.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen proces dat per keer wordt doorlopen.'
   omvat_processen:
     waarde: ja
     onderbouwing: Verlenen verlof tot begraving of crematie, Stellen andere termijn, Opgraven stoffelijk overschot, Verlenen toestemming bijzondere begraafplaats, Verlenen vergunning bijzonder crematorium, Verlenen verlof tot ontleding (art. 11, 17, 29, 40, 41, 53, 68), Afgeven laissez-passer (Besluit op de lijkbezorging art. 11), Verlenen vergunning grafbedekking (Groningen art. 22) en Verlenen toestemming asverstrooiing (APV Groningen art. 5:27 lid 3).

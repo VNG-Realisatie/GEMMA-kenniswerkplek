@@ -91,7 +91,7 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 44 zijn nee.
+Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -145,12 +145,12 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Behandelen aanvraag reisdocument](behandelen-aanvraag-reisdocument.md) | geeft uitgereikt reisdocument door aan *stroom* | Bijhouden persoonsgegevens | [HUP Uitreiking reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.md), [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) (HUP Uitreiking, inleiding; HUP Reisdocument) |
 | [Bevolkingsadministratie bijhouding](../../../bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md) | bedient *bediening* | Bijhouden persoonsgegevens | [HUP BRP Algemeen](../../../../bronanalyses/burgerzaken/2026-rvig-hup-algemeen.md) (Doelgroep) |
 | [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md) | houdt bij *toewijzing* | Bijhouden persoonsgegevens | [HUP BRP Achtergronden en begrippen](../../../../bronanalyses/burgerzaken/2026-rvig-hup-achtergronden-en-begrippen.md) (BRP stelsel) |
 | [Inhouden reisdocument](inhouden-reisdocument.md) | geeft inhouding of inlevering door aan *stroom* | Bijhouden persoonsgegevens | [HUP Inhouding, inlevering of vermissing](../../../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md), [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) (HUP Inhouding, inleiding; HUP Reisdocument) |
 | [Opmaken akte van overlijden](opmaken-akte-van-overlijden.md) | zendt akte aan *stroom* | Bijhouden persoonsgegevens | [HUP BRP: Overlijden nederland](../../../../bronanalyses/burgerzaken/2026-rvig-hup-overlijden-nederland.md), [Utrecht Overlijden, aangifte doen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-overlijden-aangifte-doen.md) (HUP regel 19; Utrecht Op de hoogte brengen van organisaties) |
 | [Opmaken geboorteakte](opmaken-geboorteakte.md) | zendt geboorteakte aan *stroom* | Bijhouden persoonsgegevens | [HUP BRP: Geboorte](../../../../bronanalyses/burgerzaken/2026-rvig-hup-geboorte.md), [Utrecht Geboorteaangifte doen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-geboorteaangifte-doen.md) (HUP Geboorte inleiding; Utrecht Na de aangifte) |
-| [Uitreiken reisdocument](uitreiken-reisdocument.md) | geeft uitgereikt reisdocument door aan *stroom* | Bijhouden persoonsgegevens | [HUP Uitreiking reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.md), [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) (HUP Uitreiking, inleiding; HUP Reisdocument) |
 | [Verkrijging van het Nederlanderschap](../../../gebeurtenissen/verkrijging-van-het-nederlanderschap.md) | leidt tot bijhouding van nationaliteit, verblijfstitel en Europees kiesrecht *triggering* | Bijhouden persoonsgegevens | [HUP Nederlandse nationaliteit](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlandse-nationaliteit.md), [HUP Verblijfstitel](../../../../bronanalyses/burgerzaken/2026-rvig-hup-verblijfstitel.md), [HUP Europees kiesrecht](../../../../bronanalyses/burgerzaken/2026-rvig-hup-europees-kiesrecht.md) (HUP Nederlandse nationaliteit; HUP Verblijfstitel; HUP Europees kiesrecht) |
 | [Verlies van het Nederlanderschap](../../../gebeurtenissen/verlies-van-het-nederlanderschap.md) | leidt tot beëindiging van de Nederlandse nationaliteit *triggering* | Bijhouden persoonsgegevens | [HUP Nederlandse nationaliteit](../../../../bronanalyses/burgerzaken/2026-rvig-hup-nederlandse-nationaliteit.md) (HUP Nederlandse nationaliteit, kop Verlies) |
 | [Verwerken vermissing reisdocument](verwerken-vermissing-reisdocument.md) | geeft vermissing door aan *stroom* | Bijhouden persoonsgegevens | [HUP Inhouding, inlevering of vermissing](../../../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md), [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) (HUP Inhouding, inleiding; HUP Reisdocument) |

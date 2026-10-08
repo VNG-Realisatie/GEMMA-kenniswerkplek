@@ -54,7 +54,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -74,9 +74,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Reglement rijbewijzen | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag rijbewijs](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (art. 26-39) |
+| Reglement rijbewijzen | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag rijbewijs](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (art. 26-39; art. 105a, 109) |
 | Reglement rijbewijzen | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag omwisseling buitenlands rijbewijs](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (art. 28, 45, 105, 109) |
-| Reglement rijbewijzen | is grondslag voor *associatie (gericht)* | [Uitreiken rijbewijs](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitreiken-rijbewijs.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (art. 105a, 109) |
 | Reglement rijbewijzen | is grondslag voor *associatie (gericht)* | [Verwerken vermissing rijbewijs](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (art. 39) |
 | Reglement rijbewijzen | is grondslag voor *associatie (gericht)* | [Rijbewijs aanvragen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-aanvragen.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (art. 26) |
 | Reglement rijbewijzen | is grondslag voor *associatie (gericht)* | [Rijbewijs verlengen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-verlengen.md) | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (art. 35) |

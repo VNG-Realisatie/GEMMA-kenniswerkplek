@@ -18,7 +18,7 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 
 Opbouw van een elementpagina (vaste volgorde; een sectie zonder inhoud vervalt): frontmatter (gegevens en de
-letterlijke `ggm_*`/`gemma_*`-velden), titel en status, Ter discussie; Betekenis (Definitie, Beschrijving, Per
+letterlijke `ggm_*`/`gemma_*`-velden), titel en status, Ter discussie; Betekenis (Definitie, Beschrijving, Deelprocessen, Per
 onderwerp, Synoniemen, Naamkeuze, Homoniemen); Plaats in het model (Typering, Plaats in de indelingen, Kenmerken
 alleen met ja, Generalisatie, Specialisaties, GGM-componenten, Tegenhanger, Relaties uitgaand en inkomend); Herkomst (Bronnen met korte titel,
 Afstemming met GGM met de GGM-terugmeldingen, Afstemming met GEMMA, Besluiten redacteur). Een bron heet in links naar
@@ -375,8 +375,12 @@ def element_pagina(w: Wiki, bid: str) -> str:
     homoniemen = _tabel(["Begrip", "Betekenis", "Naamkeuze"], [
         [f"{w.link(van, h['element'], h['begrip']) if h.get('element') else h['begrip']} ({h['waar']})", h["betekenis"],
          h["naamkeuze"]] for h in d.get("homoniemen", [])]) if d.get("homoniemen") else []
+    deelprocessen = [*[f"{i}. **{x['naam']}**: {w.tekst(van, x['omschrijving'])} "
+                       f"{w.bronnen(van, x.get('bronnen', []), x.get('vindplaats'))}".rstrip()
+                       for i, x in enumerate(d.get("deelprocessen", []), 1)], ""] if d.get("deelprocessen") else []
     r += _groep("Betekenis", [
         _sub("Definitie", definitie), _sub("Beschrijving", w.alineas(van, d.get("beschrijving"))),
+        _sub("Deelprocessen", deelprocessen),
         _sub("Per onderwerp", per_onderwerp), _sub("Synoniemen", synoniemen),
         _sub("Naamkeuze", w.alineas(van, d.get("naamkeuze"))), _sub("Homoniemen", homoniemen)])
 

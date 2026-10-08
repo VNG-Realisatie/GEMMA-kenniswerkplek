@@ -45,7 +45,7 @@ Bij de naturalisatie is het een keten in het orkestratiemodel: de minister van J
 
 De verkrijging en het verlies werken door in de basisregistratie personen, het reisdocument en het kiesrecht: de gemeente neemt de Nederlandse nationaliteit op of beëindigt haar, beëindigt bij verkrijging de verblijfstitel en de aanduiding Europees kiesrecht, en een Nederlands reisdocument vervalt bij verlies van rechtswege (HUP Nederlandse nationaliteit; Paspoortwet art. 47 lid 1 onder a en b).
 
-De gemeente voert haar deel uit in vier bedrijfsprocessen: Behandelen optieverklaring en Behandelen verklaring van afstand, waarin de burgemeester zelf beslist, en Behandelen naturalisatieverzoek en Houden naturalisatieceremonie, die de gemeente uitvoert voor de minister; het deel van de minister staat alleen in deze beschrijving (besluit redacteur 2026-10-08).
+De gemeente voert haar deel uit in drie bedrijfsprocessen: Behandelen optieverklaring en Behandelen verklaring van afstand, waarin de burgemeester zelf beslist, en Behandelen naturalisatieverzoek, dat de gemeente uitvoert voor de minister; optie en naturalisatie eindigen met het deelproces Houden naturalisatieceremonie; het deel van de minister staat alleen in deze beschrijving (besluit redacteur 2026-10-08).
 
 ### Synoniemen
 
@@ -66,7 +66,7 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 ### Plaats in de indelingen
 
 - **Procesniveau**: levensloopproces.
-- **Procesindeling naar kernobject, omvat**: [Behandelen naturalisatieverzoek](behandelen-naturalisatieverzoek.md), [Behandelen optieverklaring](behandelen-optieverklaring.md), [Behandelen verklaring van afstand](behandelen-verklaring-van-afstand.md), [Houden naturalisatieceremonie](houden-naturalisatieceremonie.md).
+- **Procesindeling naar kernobject, omvat**: [Behandelen naturalisatieverzoek](behandelen-naturalisatieverzoek.md), [Behandelen optieverklaring](behandelen-optieverklaring.md), [Behandelen verklaring van afstand](behandelen-verklaring-van-afstand.md).
 - **Beleidsdomeinindeling**: beleidsdomein Burgerzaken, taakveld 0 Bestuur en Ondersteuning (van het kernobject).
 - **Kernobject**: [Nederlanderschap](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/nederlanderschap.md).
 - **Functie-indeling naar domein, bediend door**: [Nederlanderschap diensten](../../../bedrijfsfuncties/publieksdiensten/nederlanderschap-diensten.md).
@@ -75,7 +75,7 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -104,7 +104,6 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | Beheren Nederlanderschap | toetst aan de basisregistratie personen *toegang (raadplegen)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 9, 35) |
 | Beheren Nederlanderschap | omvat *aggregatie* | [Behandelen optieverklaring](behandelen-optieverklaring.md) | [Rijkswet op het Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (Rijkswet art. 6; Besluit art. 7-12) |
 | Beheren Nederlanderschap | omvat *aggregatie* | [Behandelen naturalisatieverzoek](behandelen-naturalisatieverzoek.md) | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 31-38) |
-| Beheren Nederlanderschap | omvat *aggregatie* | [Houden naturalisatieceremonie](houden-naturalisatieceremonie.md) | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 60a, 60b) |
 | Beheren Nederlanderschap | omvat *aggregatie* | [Behandelen verklaring van afstand](behandelen-verklaring-van-afstand.md) | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 62-64) |
 | Beheren Nederlanderschap | omvat *aggregatie* | [Verkrijging van het Nederlanderschap](../../../gebeurtenissen/verkrijging-van-het-nederlanderschap.md) | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 60a lid 1, 60b lid 1) |
 | Beheren Nederlanderschap | omvat *aggregatie* | [Verlies van het Nederlanderschap](../../../gebeurtenissen/verlies-van-het-nederlanderschap.md) | [Rijkswet op het Nederlanderschap](../../../../bronanalyses/burgerzaken/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) (art. 15) |

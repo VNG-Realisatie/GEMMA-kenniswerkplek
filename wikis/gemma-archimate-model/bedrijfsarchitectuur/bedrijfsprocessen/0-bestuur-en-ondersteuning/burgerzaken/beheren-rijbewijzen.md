@@ -63,7 +63,7 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 ### Plaats in de indelingen
 
 - **Procesniveau**: levensloopproces.
-- **Procesindeling naar kernobject, omvat**: [Behandelen aanvraag omwisseling buitenlands rijbewijs](behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Behandelen aanvraag rijbewijs](behandelen-aanvraag-rijbewijs.md), [Uitreiken rijbewijs](uitreiken-rijbewijs.md), [Verwerken vermissing rijbewijs](verwerken-vermissing-rijbewijs.md).
+- **Procesindeling naar kernobject, omvat**: [Behandelen aanvraag omwisseling buitenlands rijbewijs](behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Behandelen aanvraag rijbewijs](behandelen-aanvraag-rijbewijs.md), [Verwerken vermissing rijbewijs](verwerken-vermissing-rijbewijs.md).
 - **Beleidsdomeinindeling**: beleidsdomein Burgerzaken, taakveld 0 Bestuur en Ondersteuning (van het kernobject).
 - **Kernobject**: [Rijbewijs](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md).
 - **Functie-indeling naar domein, bediend door**: [Officiële documenten verstrekking](../../../bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md).
@@ -72,7 +72,7 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -101,7 +101,6 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | Beheren rijbewijzen | raadpleegt de basisregistratie personen *toegang (raadplegen)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (art. 33 lid 2) |
 | Beheren rijbewijzen | omvat *aggregatie* | [Behandelen aanvraag rijbewijs](behandelen-aanvraag-rijbewijs.md) | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (WVW art. 113, 116; Reglement art. 27, 33, 35) |
 | Beheren rijbewijzen | omvat *aggregatie* | [Behandelen aanvraag omwisseling buitenlands rijbewijs](behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md) | [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (art. 28, 45, 105 lid 2, 109) |
-| Beheren rijbewijzen | omvat *aggregatie* | [Uitreiken rijbewijs](uitreiken-rijbewijs.md) | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 119 lid 2, 120a) |
 | Beheren rijbewijzen | omvat *aggregatie* | [Verwerken vermissing rijbewijs](verwerken-vermissing-rijbewijs.md) | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) (WVW art. 123 lid 1 onder h; Reglement art. 39; Utrecht regel 126-140) |
 | Beheren rijbewijzen | omvat *aggregatie* | [Vermissing van het rijbewijs](../../../gebeurtenissen/vermissing-van-het-rijbewijs.md) | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 123 lid 1 onder h) |
 

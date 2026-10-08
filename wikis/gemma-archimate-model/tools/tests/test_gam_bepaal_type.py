@@ -244,13 +244,18 @@ def test_stap_7_procesniveau():
     zonder = bt.evalueer(beoordeling(PROCES))
     assert zonder.voorleggen and any("kernobject" in r for r in zonder.redenen)
     deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces"}
-    for criterium in ("eigen_besluit", "eigen_normering", "levert_aanbod"):
-        u = bt.evalueer(beoordeling(deel | {criterium}, kernobject="grafrecht", afnemer="extern"))
-        assert (u.procesniveau, u.voorleggen) == ("bedrijfsproces", False), criterium
-    # een deel van een groter proces zonder eigen besluit, normering of aanbod is een deelproces of processtap: geen pagina
-    stap = bt.evalueer(beoordeling(deel, genoemd_begrip="Verlenen grafrecht"))
-    assert (stap.soort, stap.genoemd_begrip, stap.voorleggen) == ("onderdeel", "Verlenen grafrecht", False)
+    # klant tot klant maakt een bedrijfsproces (besluit redacteur 2026-10-08)
+    u = bt.evalueer(beoordeling(deel | {"klant_tot_klant"}, kernobject="grafrecht", afnemer="extern"))
+    assert (u.procesniveau, u.voorleggen) == ("bedrijfsproces", False)
+    # zonder klant tot klant een deelproces of processtap, ook met eigen besluit of eigen normering: geen pagina
+    for criterium in ((), ("eigen_besluit",), ("eigen_normering",)):
+        stap = bt.evalueer(beoordeling(deel | set(criterium), genoemd_begrip="Behandelen aanvraag reisdocument"))
+        assert (stap.soort, stap.genoemd_begrip, stap.voorleggen) == ("onderdeel", "Behandelen aanvraag reisdocument",
+                                                                      False), criterium
     assert bt.evalueer(beoordeling(deel)).voorleggen  # zonder genoemd begrip
+    # een deelproces dat een dienst levert: voorleggen, de dienst hoort bij het bedrijfsproces
+    aanbod = bt.evalueer(beoordeling(deel | {"levert_aanbod"}, genoemd_begrip="Behandelen aanvraag reisdocument"))
+    assert aanbod.soort == "onderdeel" and any("levert aanbod zonder klant tot klant" in r for r in aanbod.redenen)
     # geen levensloop en geen bijdrage: het niveau is niet te bepalen
     onduidelijk = bt.evalueer(beoordeling(PROCES - {"omvat_levensloop"}))
     assert onduidelijk.voorleggen and onduidelijk.procesniveau is None
@@ -289,7 +294,7 @@ def test_indeling_kernobject_subobject_onderdeel():
     beoordelingen, uitkomsten = _bo_uitkomsten(
         grafrecht=(BO, {}),
         beheren=(PROCES, {"kernobject": "grafrecht"}),
-        verlenen=(PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces", "eigen_besluit"}, {"kernobject": "bedekking"}),
+        verlenen=(PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}, {"kernobject": "bedekking"}),
         bedekking=(BO | {"deel_van_object"}, {}),
         stoep=(BO | {"deel_van_object"}, {"genoemd_begrip": "Graf"}),
         losse=(BO, {}),
@@ -318,7 +323,7 @@ def test_indeling_per_kernobject_een_proces():
 def test_indeling_is_strikt_hierarchisch():
     """Een levensloopproces aggregeert geen levensloopproces, een bedrijfsproces hangt onder één levensloopproces, en
     het beleidsdomein van een levensloopproces of bedrijfsinteractie volgt uit het kernobject (besluit 2026-10-08)."""
-    deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces", "eigen_besluit"}
+    deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}
     keten = BASIS | {"gedrag", "gezamenlijk_gedrag", "toegewezen_partij", "aanleiding", "benoembaar_resultaat"}
     agg = lambda *naar: [{"soort": "aggregatie", "naar": n, "grondslag": "bron"} for n in naar]  # noqa: E731
     beoordelingen, uitkomsten = _bo_uitkomsten(
@@ -335,6 +340,27 @@ def test_indeling_is_strikt_hierarchisch():
     assert any(f.startswith("rechten: beleidsdomein 'Burgerzaken' wijkt af") for f in fouten)
     assert not any(f.startswith("bezorgen") or f.startswith("beheren: beleidsdomein") for f in fouten)
     assert uitkomsten["graf"]["objectniveau"] == "kernobject"
+
+
+def test_triggering_wijst_op_een_deelproces():
+    """Een bedrijfsproces dat een ander bedrijfsproces onder hetzelfde levensloopproces triggert: voorleggen; een
+    gebeurtenis die een deelproces triggert: fout (besluit redacteur 2026-10-08, klant tot klant)."""
+    deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}
+    stap = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces"}
+    rel = lambda soort, *naar: [{"soort": soort, "naar": n, "grondslag": "bron"} for n in naar]  # noqa: E731
+    beoordelingen, uitkomsten = _bo_uitkomsten(
+        document=(BO, {}),
+        beheren=(PROCES, {"kernobject": "document", "relaties": rel("aggregatie", "aanvragen", "uitreiken")}),
+        aanvragen=(deel, {"kernobject": "document", "relaties": rel("triggering", "uitreiken")}),
+        uitreiken=(deel, {"kernobject": "document"}),
+        inhouden=(stap, {"genoemd_begrip": "Aanvragen"}),
+        verval=(GEBEURTENIS, {"relaties": rel("triggering", "inhouden")}),
+    )
+    fouten = bt.indeling(beoordelingen, uitkomsten)
+    assert uitkomsten["uitreiken"]["voorleggen"]
+    assert any("getriggerd door bedrijfsproces 'aanvragen'" in r for r in uitkomsten["uitreiken"]["redenen"])
+    assert not any("getriggerd" in r for r in uitkomsten["aanvragen"]["redenen"])
+    assert any(f.startswith("verval: gebeurtenis triggert deelproces 'inhouden'") for f in fouten)
 
 
 def test_een_levensloopproces_per_partij_binnen_een_ketensamenwerking():

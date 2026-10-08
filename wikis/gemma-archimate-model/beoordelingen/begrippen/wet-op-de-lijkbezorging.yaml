@@ -125,6 +125,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -233,7 +236,7 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 1, 23, 49
+  vindplaats: art. 1, 23, 49; art. 59–66b
 - soort: associatie (gericht)
   naar: verzorgen-gemeentebegrafenis
   naam: is grondslag voor
@@ -297,13 +300,6 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 53–55
-- soort: associatie (gericht)
-  naar: bijzetten-of-verstrooien-van-de-as
-  naam: is grondslag voor
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 59–66b
 - soort: associatie (gericht)
   naar: stellen-andere-termijn
   naam: is grondslag voor

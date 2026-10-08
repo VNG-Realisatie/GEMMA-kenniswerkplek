@@ -380,6 +380,9 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                   (eig("GEMMA-match"), (data.get("gemma") or {}).get("sterkte", "") if g is not None else ""),
                   (eig("bronnen"), "; ".join(afgeleid.get("bronnen", []))),
                   (eig("beschrijving"), "\n\n".join(data.get("beschrijving", []))),
+                  (eig("deelprocessen"), "\n".join(f"{i}. {x['naam']}: {x['omschrijving']}"
+                                                   + (f" ({x['vindplaats']})" if x.get("vindplaats") else "")
+                                                   for i, x in enumerate(data.get("deelprocessen", []), 1))),
                   (eig("synoniemen"), "; ".join(f"{s['naam']} ({s['context']})" if s.get("context") else s["naam"]
                                                 for s in data.get("synoniemen", []))),
                   (eig("pagina"), afgeleid.get("pad", "")),

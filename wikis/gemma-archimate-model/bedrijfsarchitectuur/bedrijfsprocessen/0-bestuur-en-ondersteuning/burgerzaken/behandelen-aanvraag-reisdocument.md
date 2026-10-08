@@ -8,7 +8,7 @@ onderwerpen:
 - burgerzaken
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een paspoort, identiteitskaart of ander reisdocument, tot verstrekking of weigering.
+definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een paspoort, identiteitskaart of ander reisdocument, tot de uitreiking of weigering.
 grondslag: bron
 match:
   gemma: geen
@@ -24,6 +24,8 @@ bronnen:
 - 2026-rijk-paspoortbesluit-bwbr0044308
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-vng-gemma-2026-10-02
+- 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+- 2026-rvig-hup-reisdocument
 ---
 
 # Behandelen aanvraag reisdocument
@@ -36,7 +38,7 @@ bronnen:
 
 ### Definitie
 
-Het in ontvangst nemen en beoordelen van een aanvraag voor een paspoort, identiteitskaart of ander reisdocument, tot verstrekking of weigering.
+Het in ontvangst nemen en beoordelen van een aanvraag voor een paspoort, identiteitskaart of ander reisdocument, tot de uitreiking of weigering.
 
 ### Beschrijving
 
@@ -47,6 +49,16 @@ Voor een minderjarige geeft iedere persoon die het gezag uitoefent een verklarin
 Een vreemdelingenpaspoort wordt pas verstrekt nadat de minister van Justitie en Veiligheid heeft vastgesteld dat aan de voorwaarden is voldaan (Paspoortwet art. 40 lid 4; Utrecht: voorgelegd aan de IND en het ministerie van Buitenlandse Zaken). Een spoedaanvraag is een aanvraag met kortere levertijd tegen een hoger tarief (Utrecht).
 
 Voor personen die niet als ingezetene in de BRP staan, behandelen alleen aangewezen gemeenten de aanvraag: de specialisatie Behandelen aanvraag reisdocument niet-ingezetene (Paspoortbesluit art. 3.2, 4.2).
+
+De uitreiking volgt binnen twee weken na de verstrekking, nadat de identiteit van de aanvrager in zijn aanwezigheid is vastgesteld (Paspoortwet art. 42 lid 2; Paspoortbesluit art. 4.6). De aanvrager levert dan al zijn Nederlandse reisdocumenten in, tenzij hij een tweede paspoort mag houden; zonder inlevering, bij een mededeling tot inhouding of als het document al van rechtswege is vervallen, volgt geen uitreiking (art. 32, 42 lid 3). Een document dat niet binnen drie maanden is opgehaald, wordt definitief aan het verkeer onttrokken (art. 42 lid 4; Utrecht: vernietigd).
+
+In Utrecht haalt de aanvrager het document persoonlijk op aan de balie, of laat het tegen betaling bezorgen op een adres in Nederland, niet bij een spoedaanvraag (Utrecht). De bijhoudingsgemeente legt het uitgereikte Nederlandse reisdocument vast in categorie 12 van de persoonslijst; de gemeente die het verstrekte, beheert het paspoortdossier (HUP Uitreiking).
+
+### Deelprocessen
+
+1. **Aanvraag innemen**: De aanvrager verschijnt persoonlijk aan de balie; de burgemeester stelt identiteit en nationaliteit vast en neemt de aanvraag in ontvangst. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (Paspoortwet art. 26-28; Paspoortbesluit art. 2.1)
+2. **Verstrekken of weigeren**: Binnen vier weken beslist de burgemeester tot verstrekking (de beslissing tot uitreiking) of, na een mededeling over een signalering, tot weigering. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1 onder d, 40, 41, 44)
+3. **Uitreiken**: Binnen twee weken na de verstrekking krijgt de aanvrager het document in handen, na vaststelling van zijn identiteit, en levert hij zijn oude Nederlandse reisdocumenten in. Een document dat niet binnen drie maanden is opgehaald, wordt aan het verkeer onttrokken. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (Paspoortwet art. 32, 42; Paspoortbesluit art. 4.6)
 
 ### Synoniemen
 
@@ -85,10 +97,11 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, beslisser: de burgemeester verstrekt of weigert (Paspoortwet art. 40, 44); de Houder van het reisdocument vraagt aan en verschijnt persoonlijk (art. 1 onder b, 28); een Ouder met gezag geeft toestemming voor een minderjarige (art. 34; Utrecht). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, registreert het reisdocument bij de verstrekking en werkt het bij bij een wijziging (Paspoortwet art. 1 onder d en g, 40, 43); raadpleegt de ingeschreven persoon voor identiteit en nationaliteit (art. 26, 28; Paspoortbesluit art. 2.1). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, de aanvraag, op afspraak aan de balie (Paspoortwet art. 27; Utrecht). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) |
-| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, de verstrekking, de beslissing tot uitreiking van een nieuw reisdocument, of de weigering (Paspoortwet art. 1 onder c en d). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, het uitgereikte reisdocument, na de verstrekking, of de weigering (Paspoortwet art. 1 onder c, d en e, 42). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke aanvraag. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, paspoortwet art. 26 tot en met 41 (bevoegdheid, identiteit, inzage van oude documenten, toestemming voor minderjarigen, termijn van vier weken); Paspoortbesluit art. 2.1, 3.1, 3.2, 3.6. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Beheren reisdocumenten: het ontstaan van het reisdocument. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **klant tot klant**: Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? | Ja, ja, van de aanvraag tot de uitreiking of de weigering. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, de verstrekking of de weigering door de burgemeester (Paspoortwet art. 1 onder c en d, 40, 44, 46). [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de diensten Paspoort, Paspoort tweede, Zakenpaspoort, Vluchtelingenpaspoort, Vreemdelingenpaspoort, Identiteitskaart en Reisdocument niet-ingezetene (UPL nr. 329, 330, 494, 449, 462, 186, 357). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product. [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
@@ -107,7 +120,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | Behandelen aanvraag reisdocument | realiseert *realisatie* | [Vluchtelingenpaspoort](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/vluchtelingenpaspoort.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) (UPL nr. 449) |
 | Behandelen aanvraag reisdocument | realiseert *realisatie* | [Vreemdelingenpaspoort](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/vreemdelingenpaspoort.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) (UPL nr. 462) |
 | Behandelen aanvraag reisdocument | realiseert *realisatie* | [Identiteitskaart](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/identiteitskaart.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) (UPL nr. 186) |
-| Behandelen aanvraag reisdocument | leidt tot *triggering* | [Uitreiken reisdocument](uitreiken-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 42 lid 2) |
+| Behandelen aanvraag reisdocument | reikt uit *toegang (bijwerken)* | [Reisdocument](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1 onder e, 42) |
+| Behandelen aanvraag reisdocument | geeft uitgereikt reisdocument door aan *stroom* | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | [HUP Uitreiking reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.md), [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) (HUP Uitreiking, inleiding; HUP Reisdocument) |
 
 #### Inkomend
 
@@ -116,11 +130,11 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Behandelen aanvraag reisdocument niet-ingezetene](behandelen-aanvraag-reisdocument-niet-ingezetene.md) | is een *specialisatie* | Behandelen aanvraag reisdocument | [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 3.2, 4.2) |
 | [Beheren reisdocumenten](beheren-reisdocumenten.md) | omvat *aggregatie* | Behandelen aanvraag reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 26-41) |
 | [Beslisser](../../../rollen/beslisser.md) | verstrekt of weigert *toewijzing* | Behandelen aanvraag reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 40, 44) |
-| [Houder van het reisdocument](../../../rollen/houder-van-het-reisdocument.md) | vraagt aan *toewijzing* | Behandelen aanvraag reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) (art. 1 onder b, 28, 29) |
+| [Houder van het reisdocument](../../../rollen/houder-van-het-reisdocument.md) | vraagt aan, haalt op en levert oude documenten in *toewijzing* | Behandelen aanvraag reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) (art. 1 onder b, 28, 29; art. 32, 42) |
 | [Ouder](../../../rollen/ouder.md) | geeft toestemming voor een minderjarige *toewijzing* | Behandelen aanvraag reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) (art. 34; Utrecht regel 131-185) |
-| [Paspoortbesluit](../../../../motivatie/beleidskaders/paspoortbesluit.md) | is grondslag voor *associatie (gericht)* | Behandelen aanvraag reisdocument | [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 2.1, 3.1, 3.2, 3.6) |
-| [Paspoortwet](../../../../motivatie/beleidskaders/paspoortwet.md) | is grondslag voor *associatie (gericht)* | Behandelen aanvraag reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 26-41) |
-| [Wet op de Nederlandse identiteitskaart](../../../../motivatie/beleidskaders/wet-op-de-nederlandse-identiteitskaart.md) | is grondslag voor *associatie (gericht)* | Behandelen aanvraag reisdocument | [Wet op de Nederlandse identiteitskaart](../../../../bronanalyses/burgerzaken/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 15-26, 28) |
+| [Paspoortbesluit](../../../../motivatie/beleidskaders/paspoortbesluit.md) | is grondslag voor *associatie (gericht)* | Behandelen aanvraag reisdocument | [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 2.1, 3.1, 3.2, 3.6; art. 4.6, 7.1) |
+| [Paspoortwet](../../../../motivatie/beleidskaders/paspoortwet.md) | is grondslag voor *associatie (gericht)* | Behandelen aanvraag reisdocument | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 26-41; art. 32, 42) |
+| [Wet op de Nederlandse identiteitskaart](../../../../motivatie/beleidskaders/wet-op-de-nederlandse-identiteitskaart.md) | is grondslag voor *associatie (gericht)* | Behandelen aanvraag reisdocument | [Wet op de Nederlandse identiteitskaart](../../../../bronanalyses/burgerzaken/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 15-26, 28; art. 20, 27) |
 
 ## Herkomst
 
@@ -133,6 +147,8 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) | Paspoortbesluit |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
+| [HUP Uitreiking reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.md) | HUP BRP: Uitreiking registreren van een reisdocument |
+| [HUP Reisdocument](../../../../bronanalyses/burgerzaken/2026-rvig-hup-reisdocument.md) | HUP BRP: Reisdocument |
 
 ### Afstemming met GEMMA
 

@@ -8,7 +8,7 @@ onderwerpen:
 - burgerzaken
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-definitie: Het in het openbaar voltrekken van een huwelijk ten overstaan van de ambtenaar van de burgerlijke stand en het opmaken van de huwelijksakte.
+definitie: Het behandelen van de melding van een voorgenomen huwelijk, het in het openbaar voltrekken ervan en het opmaken van de huwelijksakte.
 grondslag: bron
 match:
   gemma: geen
@@ -24,6 +24,7 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
 - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
+- 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
 ---
 
 # Voltrekken huwelijk
@@ -36,13 +37,22 @@ bronnen:
 
 ### Definitie
 
-Het in het openbaar voltrekken van een huwelijk ten overstaan van de ambtenaar van de burgerlijke stand en het opmaken van de huwelijksakte.
+Het behandelen van de melding van een voorgenomen huwelijk, het in het openbaar voltrekken ervan en het opmaken van de huwelijksakte.
 
 ### Beschrijving
 
 Het huwelijk wordt in het openbaar voltrokken in het gemeentehuis, met twee tot vier meerderjarige getuigen; de partijen verschijnen in persoon (BW 1 art. 63, 65). Burgemeester en wethouders kunnen andere gebouwen als huis der gemeente aanwijzen: eigen locaties, vaste trouwlocaties en een locatie naar keuze die de gemeente goedkeurt (BW 1 art. 63, 64; Utrecht Trouwlocaties). De gemeente kiest de trouwambtenaar; een eigen trouwambtenaar voor één dag wordt als buitengewoon ambtenaar aangewezen (BW 1 art. 16; Utrecht).
 
 Gemeenten bieden varianten met eigen tarieven, van gratis trouwen op vaste momenten tot een locatie naar keuze (Utrecht); tarieven en wachtlijsten zijn lokaal. Bij het trouwen kunnen de ouders eenmalig de achternaam van hun gezamenlijke kinderen veranderen (Utrecht). De huwelijksakte gaat naar de woongemeenten voor de BRP.
+
+De aanstaande echtgenoten verstrekken hun gegevens, een verklaring over bloedverwantschap en eerdere huwelijken, de getuigen en zo nodig gegevens over het verblijfsrecht; de ambtenaar verifieert die in de BRP, bewaart de verklaring omtrent verblijfsrecht twaalf jaar voor de IND en meldt een vermoeden van een schijnhuwelijk (BW 1 art. 18, 44, 58; Besluit burgerlijke stand art. 28). Bij beletselen stuit het openbaar ministerie het huwelijk (BW 1 art. 80a lid 4). De melding vervalt na een jaar (art. 46).
+
+Online met DigiD, door beide partners elk met een eigen formulier, of aan de balie; gratis (Utrecht). Wie in het buitenland woont, meldt bij de gemeente Den Haag (Utrecht).
+
+### Deelprocessen
+
+1. **Melding voorgenomen huwelijk**: De aanstaande echtgenoten melden het huwelijk minstens 14 dagen en hoogstens een jaar vooraf; de ambtenaar verifieert de gegevens en meldt een vermoeden van een schijnhuwelijk. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Voorgenomen huwelijk melden](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.md) (BW 1 art. 44, 46, 58; Utrecht)
+2. **Voltrekken**: Het huwelijk wordt in het openbaar voltrokken met twee tot vier getuigen, in het gemeentehuis of op een aangewezen locatie, en de ambtenaar maakt de huwelijksakte op. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 63-65)
 
 ### Synoniemen
 
@@ -84,6 +94,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk geval dat zich voordoet. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Trouwen in Utrecht](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-trouwen-in-utrecht.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, BW 1 art. 62-67; Besluit burgerlijke stand art. 1, 57. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
 | **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, draagt bij aan Bijhouden burgerlijke stand: één akte in het register van huwelijken. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **klant tot klant**: Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? | Ja, ja, van de melding van het voorgenomen huwelijk tot de voltrekking en de huwelijksakte. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Trouwen in Utrecht](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-trouwen-in-utrecht.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de diensten Huwelijk (UPL nr. 184), Trouwlocatie (UPL nr. 414) en Ambtenaar burgerlijke stand aanvragen (UPL nr. 28). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Trouwen in Utrecht](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-trouwen-in-utrecht.md) |
 
@@ -98,13 +109,14 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | Voltrekken huwelijk | realiseert *realisatie* | [Trouwlocatie](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/trouwlocatie.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Trouwlocaties](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-trouwlocaties-in-utrecht.md) (UPL nr. 414) |
 | Voltrekken huwelijk | realiseert *realisatie* | [Ambtenaar burgerlijke stand aanvragen](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/ambtenaar-burgerlijke-stand-aanvragen.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Trouwen in Utrecht](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-trouwen-in-utrecht.md) (UPL nr. 28; Utrecht trouwambtenaar voor één dag) |
 | Voltrekken huwelijk | zendt huwelijksakte aan *stroom* | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | [HUP BRP: Huwelijk en geregistreerd partnerschap](../../../../bronanalyses/burgerzaken/2026-rvig-hup-huwelijkgeregistreerd-partnerschap.md) (inleiding) |
+| Voltrekken huwelijk | verifieert gegevens van *toegang (raadplegen)* | [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md) | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 18 lid 2) |
+| Voltrekken huwelijk | realiseert *realisatie* | [Huwelijksaangifte](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/huwelijksaangifte.md) | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Voorgenomen huwelijk melden](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.md) (UPL nr. 185) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Ambtenaar van de burgerlijke stand](../../../rollen/ambtenaar-van-de-burgerlijke-stand.md) | voltrekt *toewijzing* | Voltrekken huwelijk | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 63) |
-| [Behandelen melding voorgenomen huwelijk of partnerschap](behandelen-melding-voorgenomen-huwelijk-of-partnerschap.md) | gaat vooraf aan *triggering* | Voltrekken huwelijk | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md), [Utrecht Trouwen in Utrecht](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-trouwen-in-utrecht.md) (art. 44, 62) |
+| [Ambtenaar van de burgerlijke stand](../../../rollen/ambtenaar-van-de-burgerlijke-stand.md) | voltrekt, ontvangt kennisgeving *toewijzing* | Voltrekken huwelijk | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 63; art. 44) |
 | [Bijhouden burgerlijke stand](bijhouden-burgerlijke-stand.md) | omvat *aggregatie* | Voltrekken huwelijk | [BW boek 1](../../../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 63) |
 
 ## Herkomst
@@ -119,6 +131,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [Utrecht Trouwlocaties](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-trouwlocaties-in-utrecht.md) | Gemeente Utrecht: Trouwlocaties |
 | [HUP BRP: Huwelijk en geregistreerd partnerschap](../../../../bronanalyses/burgerzaken/2026-rvig-hup-huwelijkgeregistreerd-partnerschap.md) | HUP BRP: Huwelijk en geregistreerd partnerschap |
+| [Utrecht Voorgenomen huwelijk melden](../../../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.md) | Gemeente Utrecht: Melden voorgenomen huwelijk |
 
 ### Afstemming met GEMMA
 

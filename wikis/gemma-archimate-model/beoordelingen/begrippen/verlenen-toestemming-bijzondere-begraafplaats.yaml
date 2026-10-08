@@ -139,6 +139,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Beheren begraafplaatsen: het begin van een bijzondere begraafplaats (art. 40, 41).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het voornemen van de houder tot de aanwijzing en de toestemming.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.

@@ -148,6 +148,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Beheren rijbewijzen: het ontstaan van het Nederlandse rijbewijs bij een buitenlands rijbewijs.'
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aanvraag aan de balie tot het afgegeven of geweigerde rijbewijs.
+    bronnen:
+    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -263,14 +269,25 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
   vindplaats: UPL nr. 361; Utrecht regel 17, 55
-- soort: triggering
-  naar: uitreiken-rijbewijs
-  naam: leidt tot
-  grondslag: bron
+deelprocessen:
+- naam: Aanvraag innemen
+  omschrijving: De burgemeester neemt de aanvraag en het buitenlandse rijbewijs in ontvangst.
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  vindplaats: art. 27, 28, 109
+- naam: Doorgeleiden naar de RDW
+  omschrijving: De burgemeester geleidt de aanvraag terstond door; de RDW beslist en geeft het rijbewijs af.
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+  vindplaats: Reglement rijbewijzen art. 105, 109; Utrecht
+- naam: Uitreiken
+  omschrijving: Na het akkoord van de RDW maakt de aanvrager een afspraak en haalt hij het Nederlandse rijbewijs op.
   bronnen:
   - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  vindplaats: Utrecht regel 47-49; Reglement art. 109
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: Utrecht; Wegenverkeerswet 1994 art. 119 lid 2
+  begrip: uitreiken-rijbewijs
 status: goedgekeurd
 afgeleid:
   uitkomst:
@@ -288,6 +305,7 @@ afgeleid:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   herkomst: wet
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75

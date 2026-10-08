@@ -245,6 +245,14 @@ KENMERKEN: list[Kenmerk] = [
             "Verlenen grafrecht (in Beheren grafrechten); toetsen indieningsvereisten (in behandelen aanvraag)",
             "Beheren grafrechten (omvat zelf de hele levensloop)",
             "GEMMA Online, Proceshiërarchie (bedrijfsproces en deelproces); besluit redacteur 2026-10-08", GEDRAG_BIJ),
+    Kenmerk("klant_tot_klant", "klant tot klant", "Gedrag",
+            "Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis "
+            "of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van "
+            "een ander proces voor hetzelfde geval? Noem begin en eind.",
+            "Behandelen aanvraag reisdocument (van de aanvraag tot de uitreiking of weigering)",
+            "Uitreiken reisdocument (volgt op de verstrekking, voor hetzelfde geval)",
+            "GEMMA Online, Proceshiërarchie (bedrijfsproces klant-tot-klant, PH 81; deelproces levert een deeldienst, "
+            "PH 83); besluit redacteur 2026-10-08 (klant tot klant)", GEDRAG_BIJ),
     Kenmerk("omvat_processen", "omvat processen", "Gedrag",
             "Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? Noem ze.",
             "Behandelen vergunningaanvragen lijkbezorging (Verlenen verlof tot begraving of crematie, Opgraven "
@@ -411,11 +419,13 @@ TYPEN: list[Typedef] = [
             {"gedrag": "ja", "per_keer_doorlopen": "ja"}, "toegewezen_partij",
             (),
             {"omvat_levensloop": "ja: procesniveau levensloopproces",
-             "bijdrage_aan_groter_proces": "ja: procesniveau bedrijfsproces, bij *eigen besluit*, *eigen normering* of "
-                                           "*levert aanbod*; anders deelproces of processtap zonder pagina",
-             "levert_aanbod": "levert een product of dienst: nooit een deelproces of processtap",
-             "eigen_besluit": "telt voor het bedrijfsproces",
-             "eigen_normering": "telt voor het bedrijfsproces", "gebruikt_objecten": "annotatie",
+             "bijdrage_aan_groter_proces": "ja: procesniveau bedrijfsproces bij *klant tot klant*; anders deelproces "
+                                           "of processtap zonder pagina",
+             "klant_tot_klant": "ja: procesniveau bedrijfsproces; nee: deelproces of processtap, beschreven in "
+                                "`deelprocessen` van het bedrijfsproces",
+             "levert_aanbod": "levert een product of dienst; zonder *klant tot klant* voorleggen: de dienst hoort bij "
+                              "het bedrijfsproces",
+             "eigen_besluit": "annotatie", "eigen_normering": "annotatie", "gebruikt_objecten": "annotatie",
              "komt_herhaald_voor": "annotatie", "leidt_tot_gebeurtenis": "triggering naar een gebeurtenis"},
             "Beheren grafrechten (levensloopproces); Verlenen grafrecht (bedrijfsproces)", "Proc",
             eis=("aanleiding", "benoembaar_resultaat")),
@@ -737,10 +747,11 @@ INDELING = [
                                           "levensloopproces, met het beleidsdomein van het kernobject; meer alleen als "
                                           "ze samen een bedrijfsinteractie met dat kernobject bedienen, elk het deel "
                                           "van één partij"),
-    ("7 Indeling", "*bijdrage aan groter proces* met *eigen besluit*, *eigen normering* of *levert aanbod*",
-     "procesniveau bedrijfsproces (klant-tot-klant); `kernobject` verplicht; geaggregeerd door één levensloopproces"),
-    ("7 Indeling", "*bijdrage aan groter proces* zonder die drie", "deelproces of processtap: onderdeel, geen pagina; de "
-                                                                   "tekst naar het bedrijfsproces"),
+    ("7 Indeling", "*bijdrage aan groter proces* met *klant tot klant*",
+     "procesniveau bedrijfsproces; `kernobject` verplicht; geaggregeerd door één levensloopproces"),
+    ("7 Indeling", "*bijdrage aan groter proces* zonder *klant tot klant*",
+     "deelproces of processtap: onderdeel, geen pagina; `genoemd_begrip` is het bedrijfsproces, de tekst naar zijn "
+     "`deelprocessen`; met *levert aanbod* voorleggen"),
     ("7 Indeling", "geen levensloop en geen bijdrage aan een groter proces", "voorleggen: procesniveau niet te bepalen"),
     ("7 Indeling", "bedrijfsobject met *generiek*", "objectniveau generiek (verhuist later naar een algemeen onderwerp)"),
     ("7 Indeling", "bedrijfsobject met *invoer van een ander*", "onderdeel: geen pagina; vermelden bij het genoemde proces"),
@@ -860,15 +871,22 @@ def _niveau_proces(u: Uitkomst, k: dict, extra: dict) -> Uitkomst:
             u.redenen.append("kernobject ontbreekt: noem het object waarvan dit proces de levensloop omvat")
         return _indeling(u, 1)
     if _ja(k, "bijdrage_aan_groter_proces"):
-        if any(_ja(k, s) for s in ("eigen_besluit", "eigen_normering", "levert_aanbod")):
+        if _ja(k, "klant_tot_klant"):
             u.procesniveau = "bedrijfsproces"
             if not extra.get("kernobject"):
                 u.voorleggen = True
                 u.redenen.append("kernobject ontbreekt: noem het object waarin dit bedrijfsproces een mutatie doet")
             return _indeling(u, 2)
-        return _indeling(Uitkomst("onderdeel", 0, "Deelproces of processtap: een deel van een bedrijfsproces zonder "
-                                  "eigen besluit, eigen normering of aanbod", archimate_type=u.archimate_type,
-                                  typeregel=u.typeregel, genoemd_begrip=extra.get("genoemd_begrip")), 3)
+        redenen = []
+        if _ja(k, "levert_aanbod"):
+            redenen.append("levert aanbod zonder klant tot klant: de dienst hoort bij het bedrijfsproces waarvan dit een "
+                           "deelproces is")
+        if not extra.get("genoemd_begrip"):
+            redenen.append("genoemd begrip ontbreekt: noem het bedrijfsproces waarvan dit een deelproces is")
+        return _indeling(Uitkomst("onderdeel", 0, "Deelproces of processtap: een deel van een bedrijfsproces, niet "
+                                  "klant tot klant", archimate_type=u.archimate_type, typeregel=u.typeregel,
+                                  genoemd_begrip=extra.get("genoemd_begrip"), voorleggen=bool(redenen),
+                                  redenen=redenen), 3)
     u.procesniveau = None
     u.voorleggen = True
     u.redenen.append("procesniveau niet te bepalen: geen levensloop van een kernobject en geen bijdrage aan een groter proces")
@@ -981,6 +999,28 @@ def indeling(beoordelingen: dict[str, dict], uitkomsten: dict[str, dict | None])
         if len(boven) > 1:
             fouten.append(f"{bid}: hangt onder meer levensloopprocessen ({', '.join(boven)}); een bedrijfsproces hangt "
                           "onder één levensloopproces")
+    # Triggering (besluit redacteur 2026-10-08, klant tot klant): een bedrijfsproces dat een ander bedrijfsproces onder
+    # hetzelfde levensloopproces triggert, wijst op een deelproces (voorleggen); een gebeurtenis start altijd een
+    # bedrijfsproces, nooit een deelproces (fout).
+    for bid, d in sorted(beoordelingen.items()):
+        u = uitkomsten.get(bid)
+        if not u or u["soort"] != "element" or bid in afgewezen:
+            continue
+        for r in d.get("relaties") or []:
+            if r["soort"] != "triggering":
+                continue
+            doel = uitkomsten.get(r["naar"])
+            if (niveau.get(bid) == "bedrijfsproces" and niveau.get(r["naar"]) == "bedrijfsproces"
+                    and set(ouders.get(bid, [])) & set(ouders.get(r["naar"], []))):
+                reden = (f"getriggerd door bedrijfsproces '{bid}' onder hetzelfde levensloopproces: deelproces daarvan "
+                         "(klant tot klant)?")
+                if reden not in doel["redenen"]:
+                    doel["voorleggen"] = True
+                    doel["redenen"].append(reden)
+            elif (u["paginatype"] == "gebeurtenis" and doel and doel["soort"] == "onderdeel"
+                  and doel.get("archimate_type") == "business-process"):
+                fouten.append(f"{bid}: gebeurtenis triggert deelproces '{r['naar']}'; een gebeurtenis start een "
+                              "bedrijfsproces (klant tot klant)")
     for bid, u in sorted(uitkomsten.items()):
         if not u or u["soort"] != "element" or u["paginatype"] not in ("bedrijfsproces", "bedrijfsinteractie")                 or bid in afgewezen:
             continue
@@ -1291,6 +1331,12 @@ def schema() -> dict:
             "generalisatie": alineas,
             "specialisaties": {"type": "array", "items": obj(["naam", "omschrijving"], naam=tekst, omschrijving=tekst,
                                                              element=id_, ggm_guid=tekst, ggm_attribuut=tekst)},
+            "deelprocessen": {"type": "array", "items": obj(["naam", "omschrijving", "bronnen"], naam=tekst,
+                                                            omschrijving=tekst, bronnen=bron_ids, vindplaats=tekst,
+                                                            begrip=id_),
+                              "description": "Bij een bedrijfsproces: de deelprocessen in volgorde, elk met één of "
+                                             "twee zinnen voor procesontwerpers (wat er gebeurt, wie, welke termijn); "
+                                             "`begrip` is de beoordeling van een deelproces zonder pagina"},
             "ggm_componenten": {"type": "array", "items": obj(["naam", "guid", "toelichting"], naam=tekst,
                                                               guid={"type": "string", "pattern": "^EAID_"},
                                                               toelichting=tekst)},

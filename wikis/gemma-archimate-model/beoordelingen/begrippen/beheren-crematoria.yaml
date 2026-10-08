@@ -139,6 +139,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Levert zelf het eindresultaat voor zijn kernobject; geen deel van een groter proces.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: ja
     onderbouwing: Verlenen vergunning bijzonder crematorium (art. 53–55).

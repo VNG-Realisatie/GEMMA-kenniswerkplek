@@ -147,6 +147,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: de burger inzicht geven in de verstrekking van zijn gegevens (Utrecht).'
     bronnen:
     - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het verzoek tot het overzicht.
+    bronnen:
+    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
   omvat_processen:
     waarde: nee
     onderbouwing: Geen groepering van processen.

@@ -145,7 +145,7 @@ Een **vet** woord is nieuw of gewijzigd ten opzichte van de beslistabel van 2026
 | Dienst | *aangeboden gedrag* | *gerealiseerd door* (**bedrijfsproces of functie**) | *afnemer*, *benoembaar resultaat* | **generiek** → specialisatie | Beleidsdomein en Functie |
 | Cluster naar soort werk | **groepeert processen** | **omvat processen** (minstens 2 bedrijfsprocessen) en specialisatie naar GEMMA | — | anders specialiseert het bedrijfsproces | Naar soort werk |
 | Levensloopproces | *per keer doorlopen* en **omvat levensloop** | *toegewezen partij* | *aanleiding*, *benoembaar resultaat* | **procesniveau** | Naar kernobject en Beleidsdomein |
-| Bedrijfsproces | *per keer doorlopen* en *bijdrage aan groter proces* | *toegewezen partij* | pagina bij *eigen besluit*, *eigen normering* of **levert aanbod** | **procesniveau** | Naar kernobject en naar soort werk |
+| Bedrijfsproces | *per keer doorlopen* en *bijdrage aan groter proces* | *toegewezen partij* | pagina bij **klant tot klant**; een deelproces staat in `deelprocessen` van zijn bedrijfsproces | **procesniveau** | Naar kernobject en naar soort werk |
 | Bedrijfsfunctie | *gegroepeerd gedrag* | **bedient gedrag** | *toegewezen partij*, *gebruikt objecten*, *stabiel over tijd* | **in functie-indeling** | Functie |
 | Gebeurtenis | *toestandsverandering* | *leidt tot gedrag* | *komt herhaald voor* | **generiek** → specialisatie | Naar kernobject |
 | Actor, bedrijfssamenwerking | partij of verband | *vervult een rol*, *voert gedrag uit* | — | **soort partij** | Doelgroep |
@@ -194,7 +194,7 @@ Een nieuwe stap na stap 6, met de context van alle uitkomsten.
 
 - Cluster naar soort werk bij *groepeert processen* met een specialisatie naar GEMMA; minstens twee bedrijfsprocessen. Zonder specialisatie voorleggen: een taak is geen procesniveau.
 - Levensloopproces bij *omvat levensloop*.
-- Bedrijfsproces bij *bijdrage aan groter proces* met *eigen besluit*, *eigen normering* of *levert aanbod*. Wie een product of dienst levert, is nooit een deelproces of processtap.
+- Bedrijfsproces bij *bijdrage aan groter proces* met *klant tot klant* (besluit redacteur 2026-10-08, zie [Klant tot klant](klant-tot-klant.md)); zonder is het een deelproces of processtap zonder pagina, beschreven in `deelprocessen` van het bedrijfsproces. *Eigen besluit* en *eigen normering* bepalen het niveau niet; een deelproces dat een dienst levert, wordt voorgelegd.
 - Anders deelproces of processtap: geen pagina; de tekst gaat naar het bedrijfsproces.
 - Bedrijfsinteractie bij *gezamenlijk gedrag*, met een kernobject; altijd voorleggen (estafette of orkestratie).
 

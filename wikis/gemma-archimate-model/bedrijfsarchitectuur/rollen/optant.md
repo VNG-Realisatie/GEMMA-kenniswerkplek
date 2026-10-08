@@ -47,7 +47,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -65,8 +65,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Optant | legt de optieverklaring af *toewijzing* | [Behandelen optieverklaring](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 3, 6, 7) |
-| Optant | legt de verklaring van verbondenheid af *toewijzing* | [Houden naturalisatieceremonie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/houden-naturalisatieceremonie.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 60a lid 2 en 4) |
+| Optant | legt de optieverklaring af, legt de verklaring van verbondenheid af *toewijzing* | [Behandelen optieverklaring](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md) | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 3, 6, 7; art. 60a lid 2 en 4) |
 
 #### Inkomend
 

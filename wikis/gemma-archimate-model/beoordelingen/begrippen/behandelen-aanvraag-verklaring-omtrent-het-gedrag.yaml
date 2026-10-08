@@ -146,6 +146,12 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2026-vng-gemma-impact-ketensamenwerking
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aanvraag tot de doorgezonden aanvraag, het deel van de gemeente.
+    bronnen:
+    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

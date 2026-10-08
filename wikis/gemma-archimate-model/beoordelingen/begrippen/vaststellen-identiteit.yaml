@@ -146,6 +146,12 @@ kenmerken:
     bronnen:
     - 2026-rvig-hup-immigratie
     - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: Nee, een stap in elke aangifte of aanvraag aan de balie, geen eigen klant-tot-klantproces.
+    bronnen:
+    - 2026-nvvb-id-protocol-medewerkers
+    - 2026-rvig-hup-immigratie
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -225,7 +231,7 @@ afgeleid:
   uitkomst:
     soort: onderdeel
     regel: 30
-    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces zonder eigen besluit, eigen normering of aanbod'
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee

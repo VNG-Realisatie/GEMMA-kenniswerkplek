@@ -154,6 +154,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie in de verblijfplaats (HUP Binnengemeentelijke adreswijziging).'
     bronnen:
     - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de aangifte, of ambtshalve, tot de nieuwe verblijfplaats.
+    bronnen:
+    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
   omvat_processen:
     waarde: nee
     onderbouwing: Geen groepering van processen.

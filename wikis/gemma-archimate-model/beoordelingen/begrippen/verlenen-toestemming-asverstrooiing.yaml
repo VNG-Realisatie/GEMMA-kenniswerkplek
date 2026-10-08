@@ -148,6 +148,12 @@ kenmerken:
     bronnen:
     - 2025-groningen-algemene-plaatselijke-verordening
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het verzoek tot de toestemming of de weigering.
+    bronnen:
+    - 2025-groningen-algemene-plaatselijke-verordening
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.

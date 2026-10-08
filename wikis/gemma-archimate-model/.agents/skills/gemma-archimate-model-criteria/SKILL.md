@@ -137,37 +137,38 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 35. Is er een proces of functie aanwijsbaar dat de dienst uitvoert? Noem het. (*gerealiseerd door*)
 36. Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? Noem het. (*leidt tot gedrag*)
 37. Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? Noem dat proces. (*bijdrage aan groter proces*)
-38. Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? Noem ze. (*omvat processen*)
-39. Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? Noem het object. (*omvat levensloop*)
-40. Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. (*eigen besluit*)
-41. Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). (*levert aanbod*)
-42. Ondersteunt de functie aanwijsbaar een proces? Noem het. (*bedient gedrag*)
-43. Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. (*in functie-indeling*)
-44. Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. (*leidt tot gebeurtenis*)
+38. Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? Noem begin en eind. (*klant tot klant*)
+39. Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? Noem ze. (*omvat processen*)
+40. Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? Noem het object. (*omvat levensloop*)
+41. Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. (*eigen besluit*)
+42. Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). (*levert aanbod*)
+43. Ondersteunt de functie aanwijsbaar een proces? Noem het. (*bedient gedrag*)
+44. Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. (*in functie-indeling*)
+45. Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. (*leidt tot gebeurtenis*)
 
 **Passief.** Bij een ding (geen aard); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en *geautomatiseerd verwerkt* bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; *omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.
 
-45. Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? (*onderscheidbare exemplaren*)
-46. Ontstaan, veranderen en eindigen de exemplaren? (*levenscyclus*)
-47. Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? Noem het gedrag. (*wordt bewerkt*)
-48. Is het een overeenkomst tussen twee of meer partijen met rechten en plichten, en geen eenzijdig besluit of regeling? (*afspraak*)
-49. Is het de vorm (document, formulier, register, bericht) waarin informatie van een ander begrip wordt vastgelegd of overgebracht? Noem dat begrip. (*waarneembare vorm*)
-50. Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? Noem dat object. (*deel van object*)
-51. Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. (*invoer van een ander*)
-52. Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? (*zelfstandig aanbod*)
-53. Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. (*omvat diensten en afspraken*)
-54. Wordt het als gegevensstructuur geautomatiseerd verwerkt? (*geautomatiseerd verwerkt*)
+46. Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? (*onderscheidbare exemplaren*)
+47. Ontstaan, veranderen en eindigen de exemplaren? (*levenscyclus*)
+48. Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? Noem het gedrag. (*wordt bewerkt*)
+49. Is het een overeenkomst tussen twee of meer partijen met rechten en plichten, en geen eenzijdig besluit of regeling? (*afspraak*)
+50. Is het de vorm (document, formulier, register, bericht) waarin informatie van een ander begrip wordt vastgelegd of overgebracht? Noem dat begrip. (*waarneembare vorm*)
+51. Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? Noem dat object. (*deel van object*)
+52. Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. (*invoer van een ander*)
+53. Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? (*zelfstandig aanbod*)
+54. Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. (*omvat diensten en afspraken*)
+55. Wordt het als gegevensstructuur geautomatiseerd verwerkt? (*geautomatiseerd verwerkt*)
 
 **Beleidskader.** Alleen bij *regeling als geheel*.
 
-55. Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? (*landelijk*)
-56. Is de regeling geldend recht, of als modelverordening actueel? (*in werking*)
-57. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? Noem het artikel en het gedrag. (*is grondslag voor*)
+56. Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? (*landelijk*)
+57. Is de regeling geldend recht, of als modelverordening actueel? (*in werking*)
+58. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? Noem het artikel en het gedrag. (*is grondslag voor*)
 
 **Specialisatie.** Altijd, als het type een pagina heeft.
 
-58. Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. (*zelfstandige specialisatie*)
-59. Komt het met dezelfde betekenis in veel onderwerpen voor? (*generiek*)
+59. Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. (*zelfstandige specialisatie*)
+60. Komt het met dezelfde betekenis in veel onderwerpen voor? (*generiek*)
 
 ### Beslistabel per elementtype
 
@@ -211,7 +212,7 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 
 - Type volgt uit: *gedrag* en *per keer doorlopen*.
 - Moet ja zijn: *toegewezen partij* en *aanleiding* en *benoembaar resultaat*.
-- Daarna: ja: procesniveau levensloopproces (*omvat levensloop*); ja: procesniveau bedrijfsproces, bij *eigen besluit*, *eigen normering* of *levert aanbod*; anders deelproces of processtap zonder pagina (*bijdrage aan groter proces*); levert een product of dienst: nooit een deelproces of processtap (*levert aanbod*); telt voor het bedrijfsproces (*eigen besluit*); telt voor het bedrijfsproces (*eigen normering*); annotatie (*gebruikt objecten*); annotatie (*komt herhaald voor*); triggering naar een gebeurtenis (*leidt tot gebeurtenis*).
+- Daarna: ja: procesniveau levensloopproces (*omvat levensloop*); ja: procesniveau bedrijfsproces bij *klant tot klant*; anders deelproces of processtap zonder pagina (*bijdrage aan groter proces*); ja: procesniveau bedrijfsproces; nee: deelproces of processtap, beschreven in `deelprocessen` van het bedrijfsproces (*klant tot klant*); levert een product of dienst; zonder *klant tot klant* voorleggen: de dienst hoort bij het bedrijfsproces (*levert aanbod*); annotatie (*eigen besluit*); annotatie (*eigen normering*); annotatie (*gebruikt objecten*); annotatie (*komt herhaald voor*); triggering naar een gebeurtenis (*leidt tot gebeurtenis*).
 - Indeling: Procesindeling naar kernobject en naar soort werk; een levensloopproces ook in de Beleidsdomeinindeling, onder het beleidsdomein van zijn kernobject.
 - Voorbeeld: Beheren grafrechten (levensloopproces); Verlenen grafrecht (bedrijfsproces).
 
@@ -346,6 +347,7 @@ Typen: Obj = Bedrijfsobject · Afspr = Afspraak · Prod = Product · Dienst = Di
 | gerealiseerd door |  |  |  | K |  |  |  |  |  |  |  |  |  |  |  |  |
 | leidt tot gedrag |  |  |  |  |  |  |  | K |  |  |  |  |  |  |  |  |
 | bijdrage aan groter proces |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
+| klant tot klant |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
 | omvat processen |  |  |  |  |  | K |  |  |  |  |  |  |  |  |  |  |
 | omvat levensloop |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
 | eigen besluit |  |  |  |  | A |  |  |  |  |  |  |  |  |  |  |  |
@@ -406,8 +408,8 @@ Stap 0–4 van boven naar beneden: de eerste passende regel beslist en levert he
 | 26 | 6 Specialisatie | anders | element van het voorlopige type |
 | 27 | 7 Indeling | procescluster (*groepeert processen*) | procesniveau cluster naar soort werk; `gemma_generiek` verplicht, anders voorleggen: een taak is geen procesniveau, de groepering naar taak is het beleidsdomein |
 | 28 | 7 Indeling | *omvat levensloop* | procesniveau levensloopproces; `kernobject` verplicht. Per kernobject één levensloopproces, met het beleidsdomein van het kernobject; meer alleen als ze samen een bedrijfsinteractie met dat kernobject bedienen, elk het deel van één partij |
-| 29 | 7 Indeling | *bijdrage aan groter proces* met *eigen besluit*, *eigen normering* of *levert aanbod* | procesniveau bedrijfsproces (klant-tot-klant); `kernobject` verplicht; geaggregeerd door één levensloopproces |
-| 30 | 7 Indeling | *bijdrage aan groter proces* zonder die drie | deelproces of processtap: onderdeel, geen pagina; de tekst naar het bedrijfsproces |
+| 29 | 7 Indeling | *bijdrage aan groter proces* met *klant tot klant* | procesniveau bedrijfsproces; `kernobject` verplicht; geaggregeerd door één levensloopproces |
+| 30 | 7 Indeling | *bijdrage aan groter proces* zonder *klant tot klant* | deelproces of processtap: onderdeel, geen pagina; `genoemd_begrip` is het bedrijfsproces, de tekst naar zijn `deelprocessen`; met *levert aanbod* voorleggen |
 | 31 | 7 Indeling | geen levensloop en geen bijdrage aan een groter proces | voorleggen: procesniveau niet te bepalen |
 | 32 | 7 Indeling | bedrijfsobject met *generiek* | objectniveau generiek (verhuist later naar een algemeen onderwerp) |
 | 33 | 7 Indeling | bedrijfsobject met *invoer van een ander* | onderdeel: geen pagina; vermelden bij het genoemde proces |

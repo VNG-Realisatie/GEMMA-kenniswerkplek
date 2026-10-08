@@ -123,6 +123,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -219,14 +222,7 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
-  vindplaats: art. 2.1, 3.1, 3.2, 3.6
-- soort: associatie (gericht)
-  naar: uitreiken-reisdocument
-  naam: is grondslag voor
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-paspoortbesluit-bwbr0044308
-  vindplaats: art. 4.6, 7.1
+  vindplaats: art. 2.1, 3.1, 3.2, 3.6; art. 4.6, 7.1
 - soort: associatie (gericht)
   naar: paspoort-tweede
   naam: is grondslag voor

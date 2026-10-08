@@ -142,6 +142,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Het levensloopproces van een kernobject; geen deel van een groter proces.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -246,13 +249,6 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 26-41
 - soort: aggregatie
-  naar: uitreiken-reisdocument
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 42
-- soort: aggregatie
   naar: verwerken-vermissing-reisdocument
   naam: omvat
   grondslag: bron
@@ -275,13 +271,6 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 50b-57
 - soort: aggregatie
-  naar: vervallen-verklaren-reisdocument
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  vindplaats: art. 44-46
-- soort: aggregatie
   naar: verval-van-het-reisdocument
   naam: omvat
   grondslag: bron
@@ -295,6 +284,13 @@ relaties:
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 3.2, 4.2
+- soort: aggregatie
+  naar: inlevering-van-het-reisdocument
+  naam: omvat
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 56
 status: goedgekeurd
 afgeleid:
   uitkomst:

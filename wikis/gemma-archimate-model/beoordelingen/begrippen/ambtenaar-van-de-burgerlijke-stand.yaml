@@ -132,6 +132,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
@@ -287,26 +290,19 @@ relaties:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 28b
 - soort: toewijzing
-  naar: behandelen-melding-voorgenomen-huwelijk-of-partnerschap
-  naam: ontvangt kennisgeving
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  vindplaats: art. 44
-- soort: toewijzing
   naar: voltrekken-huwelijk
-  naam: voltrekt
+  naam: voltrekt, ontvangt kennisgeving
   grondslag: bron
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
-  vindplaats: art. 63
+  vindplaats: art. 63; art. 44
 - soort: toewijzing
   naar: registreren-partnerschap
-  naam: maakt akte op
+  naam: maakt akte op, ontvangt kennisgeving
   grondslag: bron
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
-  vindplaats: art. 80a lid 3, 80g
+  vindplaats: art. 80a lid 3, 80g; art. 44
 - soort: toewijzing
   naar: inschrijven-ontbinding-huwelijk-of-partnerschap
   naam: schrijft in

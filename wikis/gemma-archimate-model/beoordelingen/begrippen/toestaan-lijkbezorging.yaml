@@ -140,6 +140,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Een eigen levensloopproces: het deel van de gemeente als overheid in de levensloop van het stoffelijk overschot, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces (besluit redacteur 2026-10-08).'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: ja
     onderbouwing: Schouwen stoffelijk overschot, Verlenen verlof tot begraving of crematie, Stellen andere termijn, Verlenen verlof tot ontleding, Afgeven laissez-passer, Verlenen toestemming asverstrooiing, Opgraven stoffelijk overschot en Treffen maatregel bij besmet stoffelijk overschot (art. 3, 11, 17, 22a, 29, 68).

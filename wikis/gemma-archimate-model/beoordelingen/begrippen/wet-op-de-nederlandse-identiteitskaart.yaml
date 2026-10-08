@@ -123,6 +123,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -226,14 +229,7 @@ relaties:
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  vindplaats: art. 15-26, 28
-- soort: associatie (gericht)
-  naar: uitreiken-reisdocument
-  naam: is grondslag voor
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  vindplaats: art. 20, 27
+  vindplaats: art. 15-26, 28; art. 20, 27
 - soort: associatie (gericht)
   naar: verwerken-vermissing-reisdocument
   naam: is grondslag voor

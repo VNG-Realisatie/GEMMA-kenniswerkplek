@@ -135,6 +135,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -225,12 +228,13 @@ naamkeuze:
 relaties:
 - soort: toewijzing
   naar: behandelen-aanvraag-rijbewijs
-  naam: vraagt aan
+  naam: vraagt aan, haalt op en levert het eerdere rijbewijs in
   grondslag: bron
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  vindplaats: art. 27, 33; Utrecht regel 17, 35
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  vindplaats: art. 27, 33; Utrecht regel 17, 35; WVW art. 119 lid 2; Utrecht regel 29, 63-67
 - soort: toewijzing
   naar: behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
   naam: vraagt aan en levert het buitenlandse rijbewijs in
@@ -239,14 +243,6 @@ relaties:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
   vindplaats: art. 27, 109; Utrecht regel 55
-- soort: toewijzing
-  naar: uitreiken-rijbewijs
-  naam: haalt op en levert het eerdere rijbewijs in
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  vindplaats: WVW art. 119 lid 2; Utrecht regel 29, 63-67
 - soort: toewijzing
   naar: verwerken-vermissing-rijbewijs
   naam: geeft vermissing door

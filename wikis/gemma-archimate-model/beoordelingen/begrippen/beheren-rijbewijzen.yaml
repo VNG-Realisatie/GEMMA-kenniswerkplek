@@ -146,6 +146,9 @@ kenmerken:
   bijdrage_aan_groter_proces:
     waarde: nee
     onderbouwing: Het levensloopproces van een kernobject; geen deel van een groter proces.
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -264,13 +267,6 @@ relaties:
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 28, 45, 105 lid 2, 109
-- soort: aggregatie
-  naar: uitreiken-rijbewijs
-  naam: omvat
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  vindplaats: art. 119 lid 2, 120a
 - soort: aggregatie
   naar: verwerken-vermissing-rijbewijs
   naam: omvat

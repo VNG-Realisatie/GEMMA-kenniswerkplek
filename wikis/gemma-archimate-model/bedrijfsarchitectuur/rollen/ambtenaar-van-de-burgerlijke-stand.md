@@ -58,7 +58,7 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -90,9 +90,8 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | Ambtenaar van de burgerlijke stand | voegt toe *toewijzing* | [Toevoegen latere vermelding](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/toevoegen-latere-vermelding.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 20) |
 | Ambtenaar van de burgerlijke stand | maakt akte op *toewijzing* | [Opmaken akte van naamskeuze](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-naamskeuze.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 5) |
 | Ambtenaar van de burgerlijke stand | voegt latere vermelding toe *toewijzing* | [Wijzigen geslachtsvermelding](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-geslachtsvermelding.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 28b) |
-| Ambtenaar van de burgerlijke stand | ontvangt kennisgeving *toewijzing* | [Behandelen melding voorgenomen huwelijk of partnerschap](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-melding-voorgenomen-huwelijk-of-partnerschap.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 44) |
-| Ambtenaar van de burgerlijke stand | voltrekt *toewijzing* | [Voltrekken huwelijk](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/voltrekken-huwelijk.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 63) |
-| Ambtenaar van de burgerlijke stand | maakt akte op *toewijzing* | [Registreren partnerschap](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-partnerschap.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80a lid 3, 80g) |
+| Ambtenaar van de burgerlijke stand | voltrekt, ontvangt kennisgeving *toewijzing* | [Voltrekken huwelijk](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/voltrekken-huwelijk.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 63; art. 44) |
+| Ambtenaar van de burgerlijke stand | maakt akte op, ontvangt kennisgeving *toewijzing* | [Registreren partnerschap](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-partnerschap.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80a lid 3, 80g; art. 44) |
 | Ambtenaar van de burgerlijke stand | schrijft in *toewijzing* | [Inschrijven ontbinding huwelijk of partnerschap](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ontbinding-huwelijk-of-partnerschap.md) | [BW boek 1](../../bronanalyses/burgerzaken/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80c lid 2, 163) |
 
 #### Inkomend

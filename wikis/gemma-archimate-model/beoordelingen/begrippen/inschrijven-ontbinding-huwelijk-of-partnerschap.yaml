@@ -149,6 +149,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één inschrijving en latere vermelding.'
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van de stukken van advocaat of notaris tot de ingeschreven ontbinding.
+    bronnen:
+    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+    - 2026-rijk-burgerlijk-wetboek-boek-1
   omvat_processen:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

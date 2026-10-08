@@ -146,6 +146,12 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Begraven en cremeren stoffelijk overschot: de begraving, crematie of bijzetting zelf (art. 1, 23, 49).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het overlijden en de kennisgeving tot de begraven of gecremeerde overledene en de bestemming van de as.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.
@@ -222,7 +228,8 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 definitie: Het begraven, cremeren of op een andere wettelijke wijze bezorgen van een stoffelijk overschot.
 beschrijving:
-- De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie en ontleding zijn varianten zonder eigen pagina; het bijzetten of verstrooien van de as is een eigen bedrijfsproces.
+- De lijkbezorging geschiedt door begraving, crematie of op een andere wettelijk voorziene wijze, en omvat ook het geven van een bestemming aan de as (art. 1, 18 lid 2). Ze vereist een verlof tot begraving of crematie (art. 11) en volgt, waar mogelijk, de wens van de overledene (art. 19). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). Begraving, crematie en ontleding zijn varianten zonder eigen pagina; het bijzetten of verstrooien van de as is een deelproces.
+- Na de crematie bewaart de houder van het crematorium de asbus minimaal een maand en zorgt hij daarna dat de asbus wordt bijgezet, de as wordt verstrooid, de asbus aan de nabestaande wordt meegegeven of naar het buitenland gaat (Wet op de lijkbezorging art. 59). Een asbus wordt bijgezet in een crematorium, in of op een graf of op een afzonderlijke plaats op een begraafplaats, of in een bewaarplaats; in een particulier graf alleen met toestemming van de rechthebbende (art. 62). De houder van de plaats van bijzetting houdt een register bij en kan de asbus op verzoek aan de nabestaande meegeven (art. 63, 65). Verstrooien door een houder mag alleen op een daartoe bestemd terrein of in open zee (art. 66a); op de gemeentelijke begraafplaats kan het college incidentele asverstrooiing op een aangewezen plek toestaan (Groningen art. 21).
 specialisaties:
 - naam: Begraving
   omschrijving: Begraven van een stoffelijk overschot op een begraafplaats, in een algemeen of particulier graf (art. 23). Geen eigen pagina.
@@ -230,6 +237,12 @@ specialisaties:
   omschrijving: Cremeren van een stoffelijk overschot in een crematorium (art. 49). Geen eigen pagina.
 - naam: Ontleding
   omschrijving: Ontleden van een stoffelijk overschot in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68). Geen eigen pagina.
+- naam: Bijzetting
+  omschrijving: Bijzetten van een asbus in een crematorium, graf, urnennis of bewaarplaats (art. 62). Geen eigen pagina.
+- naam: Verstrooiing
+  omschrijving: Verstrooien van as op een daartoe bestemd terrein of in open zee (art. 66a). Geen eigen pagina.
+- naam: Incidentele asverstrooiing
+  omschrijving: Verstrooien van as op een aangewezen plek op of buiten de begraafplaats, met toestemming van het college (Groningen art. 1 m, 21). Geen eigen pagina.
 relaties:
 - soort: toegang (raadplegen)
   naar: vergunning
@@ -248,11 +261,11 @@ relaties:
   vindplaats: art. 1
 - soort: toegang (bijwerken)
   naar: graf
-  naam: begraaft in
+  naam: begraaft in, zet bij in of op
   grondslag: bron
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 23 lid 2
+  vindplaats: art. 23 lid 2; art. 62 lid 1 b, 3
 - soort: toegang (raadplegen)
   naar: begraafplaats
   naam: geschiedt op
@@ -267,6 +280,13 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 49
+- soort: toegang (bijwerken)
+  naar: urn
+  naam: zet bij of verstrooit de as uit
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 59 lid 2
 onderwerpen:
 - lijkbezorging
 kernobject: stoffelijk-overschot
@@ -278,6 +298,19 @@ besluiten:
 - datum: '2026-10-05'
   besluit: 'Stoffelijk overschot in lopende tekst: in de definitie en de omschrijvingen van de specialisaties; de naam blijft (lijkbezorging is een vaste term).'
   gevolg: verwerkt
+deelprocessen:
+- naam: Begraven of cremeren
+  omschrijving: Na het verlof bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, binnen de termijn na het overlijden.
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: Wlb art. 11, 16; Groningen art. 7
+- naam: Bijzetten of verstrooien van de as
+  omschrijving: 'Na een crematie bewaart de houder van het crematorium de asbus minimaal een maand en zorgt hij daarna voor de bestemming: bijzetten, verstrooien, meegeven aan de nabestaande of naar het buitenland.'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 59, 62
+  begrip: bijzetten-of-verstrooien-van-de-as
 status: goedgekeurd
 afgeleid:
   uitkomst:

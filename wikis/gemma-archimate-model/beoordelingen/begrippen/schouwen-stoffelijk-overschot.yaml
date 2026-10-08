@@ -137,6 +137,11 @@ kenmerken:
     onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: zonder verklaring van overlijden of verklaring van geen bezwaar geen verlof (art. 3, 12).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Ja, van het overlijden tot de verklaring van overlijden of het verslag aan de officier van justitie; het volgt niet op een ander gemeentelijk proces.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: nee
     onderbouwing: Omvat geen andere processen.
@@ -230,6 +235,13 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 3
+- soort: stroom
+  naar: verlenen-verlof-tot-begraving-of-crematie
+  naam: geeft de verklaring van overlijden door aan
+  grondslag: bron
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 7, 12
 onderwerpen:
 - lijkbezorging
 kernobject: stoffelijk-overschot

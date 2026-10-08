@@ -45,13 +45,13 @@ Bedrijfsproces, niveau cluster naar soort werk. Uitkomst van de beslistabel: Ged
 ### Plaats in de indelingen
 
 - **Procesniveau**: cluster naar soort werk.
-- **Procesindeling naar kernobject, omvat**: [Bijzetten of verstrooien van de as](bijzetten-of-verstrooien-van-de-as.md), [Ruimen graf](ruimen-graf.md), [Uitvoeren lijkbezorging](uitvoeren-lijkbezorging.md).
+- **Procesindeling naar kernobject, omvat**: [Ruimen graf](ruimen-graf.md), [Uitvoeren lijkbezorging](uitvoeren-lijkbezorging.md).
 - **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *Uitbaten gemeentelijke voorzieningen*. Elk bedrijfsproces stelt de gemeentelijke begraafplaats of het crematorium ter beschikking voor begraven, cremeren, bijzetten of het vrijmaken van grafruimte.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -61,7 +61,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **groepeert processen**: Is het een groepering van bedrijfsprocessen van één soort werk, die niet per geval wordt doorlopen? | Ja, groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen (besluit redacteur 2026-10-04). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **omvat processen**: Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? | Ja, uitvoeren lijkbezorging, Bijzetten of verstrooien van de as en Ruimen graf (art. 23, 31, 49, 59, 62; Groningen art. 7, 21, 27). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **omvat processen**: Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? | Ja, uitvoeren lijkbezorging (met het deelproces Bijzetten of verstrooien van de as) en Ruimen graf (art. 23, 31, 49, 59, 62; Groningen art. 7, 21, 27). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki of in het GEMMA-model. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 
 ### Relaties
@@ -70,8 +70,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Uitbaten begraafplaatsen en crematoria | omvat *aggregatie* | [Uitvoeren lijkbezorging](uitvoeren-lijkbezorging.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 49; Groningen art. 7) |
-| Uitbaten begraafplaatsen en crematoria | omvat *aggregatie* | [Bijzetten of verstrooien van de as](bijzetten-of-verstrooien-van-de-as.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 59, 62; Groningen art. 21) |
+| Uitbaten begraafplaatsen en crematoria | omvat *aggregatie* | [Uitvoeren lijkbezorging](uitvoeren-lijkbezorging.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 49; Groningen art. 7; art. 59, 62; Groningen art. 21) |
 | Uitbaten begraafplaatsen en crematoria | omvat *aggregatie* | [Ruimen graf](ruimen-graf.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 31; Groningen art. 27) |
 
 ## Herkomst

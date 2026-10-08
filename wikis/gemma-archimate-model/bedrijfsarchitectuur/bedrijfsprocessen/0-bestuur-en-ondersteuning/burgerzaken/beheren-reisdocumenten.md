@@ -64,7 +64,7 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 ### Plaats in de indelingen
 
 - **Procesniveau**: levensloopproces.
-- **Procesindeling naar kernobject, omvat**: [Behandelen aanvraag reisdocument](behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Inhouden reisdocument](inhouden-reisdocument.md), [Uitreiken reisdocument](uitreiken-reisdocument.md), [Vervallen verklaren reisdocument](vervallen-verklaren-reisdocument.md), [Verwerken vermissing reisdocument](verwerken-vermissing-reisdocument.md).
+- **Procesindeling naar kernobject, omvat**: [Behandelen aanvraag reisdocument](behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Inhouden reisdocument](inhouden-reisdocument.md), [Verwerken vermissing reisdocument](verwerken-vermissing-reisdocument.md).
 - **Beleidsdomeinindeling**: beleidsdomein Burgerzaken, taakveld 0 Bestuur en Ondersteuning (van het kernobject).
 - **Kernobject**: [Reisdocument](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md).
 - **Functie-indeling naar domein, bediend door**: [Officiële documenten verstrekking](../../../bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md).
@@ -73,7 +73,7 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
@@ -100,13 +100,12 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 |---|---|---|---|
 | Beheren reisdocumenten | verstrekt, reikt uit en onttrekt aan het verkeer *toegang (registreren)* | [Reisdocument](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1, 40, 42, 54) |
 | Beheren reisdocumenten | omvat *aggregatie* | [Behandelen aanvraag reisdocument](behandelen-aanvraag-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 26-41) |
-| Beheren reisdocumenten | omvat *aggregatie* | [Uitreiken reisdocument](uitreiken-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 42) |
 | Beheren reisdocumenten | omvat *aggregatie* | [Verwerken vermissing reisdocument](verwerken-vermissing-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md) (Paspoortwet art. 5a; HUP Inhouding) |
 | Beheren reisdocumenten | omvat *aggregatie* | [Vermissing van het reisdocument](../../../gebeurtenissen/vermissing-van-het-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 1 onder k) |
 | Beheren reisdocumenten | omvat *aggregatie* | [Inhouden reisdocument](inhouden-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 50b-57) |
-| Beheren reisdocumenten | omvat *aggregatie* | [Vervallen verklaren reisdocument](vervallen-verklaren-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 44-46) |
 | Beheren reisdocumenten | omvat *aggregatie* | [Verval van het reisdocument](../../../gebeurtenissen/verval-van-het-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 47) |
 | Beheren reisdocumenten | omvat *aggregatie* | [Behandelen aanvraag reisdocument niet-ingezetene](behandelen-aanvraag-reisdocument-niet-ingezetene.md) | [Paspoortbesluit](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 3.2, 4.2) |
+| Beheren reisdocumenten | omvat *aggregatie* | [Inlevering van het reisdocument](../../../gebeurtenissen/inlevering-van-het-reisdocument.md) | [Paspoortwet](../../../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 56) |
 
 #### Inkomend
 
