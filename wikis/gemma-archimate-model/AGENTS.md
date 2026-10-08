@@ -23,6 +23,7 @@ Wat het render-script garandeert, is geen regel: bronverwijzingen als link naar 
 ### Werkwijze
 
 - **Navragen** — Bij twijfel over een begrip, bron, naam of match: vraag het de redacteur, één vraag tegelijk, met context, argumenten en advies. Nooit gokken. Wat al in `analyses/besluiten-redacteur.md` staat, vraag je niet opnieuw.
+- **Eén naamgeving** — Noem brontypen, groepen en mappen precies zoals in de regel Bronvoorrang (`rijksregelgeving`, groep *Rijksregelgeving*; samen met `europese-regelgeving` heten ze landelijke regelgeving), in beoordelingen, analyses, terugmeldingen en de chat (besluit redacteur 2026-10-08).
 - **Bestaand bijwerken** — Bestaat een beoordeling al, werk haar dan bij. Neem niet aan wat erin hoort.
 - **Per geval** — Een besluit (hernoemen, samenvoegen, afwijzen, herformuleren) nooit in bulk doorvoeren op grond van één eerder akkoord; leg elk geval apart voor.
 - **Letterlijk verplaatsen** — Bij verplaatsen of splitsen de bestaande tekst ongewijzigd overnemen, tenzij de redacteur iets anders vraagt.
