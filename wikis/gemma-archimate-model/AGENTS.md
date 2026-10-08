@@ -8,6 +8,8 @@ Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al i
 - Doelgroep: het GEMMA-team van VNG. Het resultaat voedt een landelijke standaard; kwaliteit en herleidbaarheid gaan voor snelheid.
 - Taal: Nederlands; gevestigde ArchiMate-termen mogen Engels blijven.
 
+- **GEMMA-terugmeldingen formuleren** — Het wiki-model wordt in het GEMMA-model geïmporteerd: een wiki-element dat aan een GEMMA-element is gekoppeld, werkt dat element bij (naam, definitie, relaties, indeling). Formuleer een melding daarom als wat de import in GEMMA verandert en wat het GEMMA-team moet controleren of beslissen, niet als een verzoek om iets over te nemen. De import verwijdert niets: wat de wiki laat vervallen, blijft in GEMMA tot het GEMMA-team besluit.
+
 ## Standaard Workflow
 
 Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`beoordelingen/begrippen/<id>.yaml`); scripts leiden type en status af en maken alle pagina's (`tools/afleiden.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Eerdere besluiten van de redacteur staan in `analyses/besluiten-redacteur.md`.
