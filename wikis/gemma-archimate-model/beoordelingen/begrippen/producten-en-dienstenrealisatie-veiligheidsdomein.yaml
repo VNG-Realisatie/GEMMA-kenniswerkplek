@@ -250,7 +250,7 @@ afgeleid:
   - 2026-vng-gemma-2026-10-02
   - 2025-vng-upl-producten-en-diensten-extern
   - 2025-groningen-algemene-plaatselijke-verordening
-  herkomst: wet
+  herkomst: informatiemodel
   gemma:
     gemma_id: id-11ceda47-d0a4-49cb-88d7-eaf623172f3f
     gemma_naam: Producten- en dienstenrealisatie veiligheidsdomein

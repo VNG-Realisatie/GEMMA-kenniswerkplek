@@ -9,7 +9,7 @@ hash: ccc36e4275744aa5fd041f6ff6b6213eb474b74d2130c21ceb67e4b17f45064e
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: Werkinstructie van de NVVB voor het registreren van gezag in de BRP.
 url: https://nvvb.nl/media/filer_public/03/0c/030c6d36-0b91-4fbc-9ba9-0655057a3ec6/werkinstructie_registratie_gezag.pdf
 url_pagina: https://nvvb.nl/nl/producten-en-diensten/handreikingen/gezag/

@@ -11,7 +11,7 @@ bronnen:
 
 # Indelingen van de bedrijfsarchitectuur
 
-Bronnen: Over GEMMA [tekst](../../../sources/raw/2026-vng-over-gemma.md) (regelnummers verwijzen hiernaar) · GEMMA-architectuurmodel [origineel](../../../sources/raw/2026-vng-gemma-2026-10-02.archimate), gelezen via `tools/gemma.py` · [Producten en diensten procesarchitectuur](https://www.gemmaonline.nl/wiki/Producten_en_diensten_procesarchitectuur) op GEMMA Online, met de externe UPL-lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-extern.md) (500 producten; voor lijkbezorging [bronanalyse](../bronanalyses/lijkbezorging/2025-vng-upl-producten-en-diensten-extern.md)) en de interne lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-intern.md) (215 producten).
+Bronnen: Over GEMMA [tekst](../../../sources/raw/2026-vng-over-gemma.md) (regelnummers verwijzen hiernaar) · GEMMA-architectuurmodel [origineel](../../../sources/raw/2026-vng-gemma-2026-10-02.archimate), gelezen via `tools/gemma.py` · [Producten en diensten procesarchitectuur](https://www.gemmaonline.nl/wiki/Producten_en_diensten_procesarchitectuur) op GEMMA Online, met de externe UPL-lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-extern.md) (500 producten; voor lijkbezorging [bronanalyse](../bronanalyses/lijkbezorging/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)) en de interne lijst [tekst](../../../sources/raw/2025-vng-upl-producten-en-diensten-intern.md) (215 producten).
 
 Hoe het model wordt ingedeeld in de hele breedte van de bedrijfsarchitectuur: welke indelingen GEMMA heeft, welke erbij komen, welk elementtype waar valt, en welke kenmerken en regels daarvoor nodig zijn. Aanleiding: lijkbezorging was plat en fijnmazig (één functie voor negen processen, vijftien bedrijfsobjecten naast elkaar). Doel: een compleet GEMMA-model op het juiste abstractieniveau, met een indeling die ook in Archi zichtbaar is. De besluiten staan onderaan; de omzetting in de beslistabel volgt.
 
@@ -75,6 +75,7 @@ Stand van het GEMMA-model van 2026-10-02.
 | Functie-indeling naar domein | GEMMA | functies, producten, diensten | domein → functie → dienst; domein → product | aggregatie; functie bedient proces |
 | Beleidsdomeinindeling | GEMMA | objecten, afspraken, producten, diensten, beleidskaders, levensloopprocessen, bedrijfsinteracties | taakveld → beleidsdomein → element | aggregatie vanuit de groepering |
 | Doelgroepindeling | GEMMA, uitgebreid | rollen, actoren, samenwerkingen, kanalen | gemeente (bestuursorgaan, ambtelijk), inwoners en ondernemers, ketenpartners → element | aggregatie vanuit de doelgroeprol |
+| Regelgevingindeling | nieuw | beleidskaders | brontype van de regeling (regel Bronvoorrang), afgeleid uit de regelgever: *Europese regelgeving* (`europese-regelgeving`), *Rijksregelgeving* (`rijksregelgeving`), *Richtlijn* (`richtlijn`), *Gemeentelijke regelgeving* (`gemeentelijke-regelgeving`) → beleidskader; dezelfde naam voor de groep in Archi en de map in de wiki en in Archi; alleen gevulde groepen | aggregatie vanuit de groep (besluiten redacteur 2026-10-08) |
 
 Een bedrijfsproces heeft hoogstens twee ouders: het levensloopproces van zijn kernobject en zijn cluster naar soort werk. De procesindeling naar kernobject is strikt hiërarchisch: een levensloopproces aggregeert geen levensloopproces, en een bedrijfsproces hangt onder één levensloopproces; anders is het een fout.
 
@@ -82,7 +83,7 @@ Een bedrijfsproces heeft hoogstens twee ouders: het levensloopproces van zijn ke
 
 Een product- en dienstindeling, beleidskaderindeling en kanaalindeling zijn geen eigen indelingen:
 - producten en diensten vallen in de Beleidsdomeinindeling en de Functie-indeling (twee ouders; de UPL draagt beide als kolom);
-- beleidskaders vallen in de Beleidsdomeinindeling, met de regelgever als eigenschap;
+- beleidskaders vallen in de Beleidsdomeinindeling, met de regelgever als eigenschap, en in de Regelgevingindeling onder het brontype van hun regeling: *Europese regelgeving*, *Rijksregelgeving*, *Richtlijn* of *Gemeentelijke regelgeving*, als groep en als map (besluiten redacteur 2026-10-08; zie [Wettelijke grondslag](wettelijke-grondslag.md));
 - een levensloopproces en een bedrijfsinteractie vallen in de Beleidsdomeinindeling, onder het beleidsdomein van hun kernobject, omdat er in de Procesindeling naar kernobject niets boven hen staat;
 - kanalen vallen in de Doelgroepindeling, met fysiek of digitaal als eigenschap.
 

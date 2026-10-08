@@ -8,7 +8,7 @@ pad: sources/raw/2026-jenv-regeling-domeinlijsten-boa.md
 hash: 86c12ccfc28019249e0906668ad6b08aef35b176b868e6a53f9cdc95e74bd88b
 tags:
 - openbare-orde-en-veiligheid
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: Regeling met de zes domeinen (Openbare ruimte, Milieu/welzijn/infrastructuur,
   Onderwijs, Openbaar vervoer, Werk/inkomen/zorg, Generieke opsporing) en bijbehorende
   opsporingsbevoegdheden voor buitengewoon opsporingsambtenaren (boa's).

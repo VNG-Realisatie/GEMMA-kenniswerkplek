@@ -9,7 +9,7 @@ hash: d89b6d3ab5a313b3c9d9a817c6798ba03058634b7fb558870408b5d131e10167
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Actualiseren
   gerelateerdengegevens.'
 url: https://www.rvig.nl/hup/actualiseren-gerelateerdengegevens

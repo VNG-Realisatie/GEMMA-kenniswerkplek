@@ -8,7 +8,7 @@ pad: sources/raw/2013-jenv-landelijk-kader-veiligheidshuizen.pdf
 hash: 385c3280e2ce3b1b7742a8b3c9d41a0b274320950b051b7510996c4f4076191a
 tags:
 - openbare-orde-en-veiligheid
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Landelijk kader (2013) voor de functie, doelstelling, focus, organisatie
   en financiering van Veiligheidshuizen: netwerksamenwerking tussen straf-, zorg-
   en gemeentelijke partners, sinds 2013 onder gemeentelijke regie.'

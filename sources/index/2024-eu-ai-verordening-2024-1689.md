@@ -8,7 +8,7 @@ pad: sources/raw/2024-eu-ai-verordening-2024-1689.md
 hash: a11c63c1b226465cf416b1a0bcdba95e249252e91fee39137862a44b9d4fc5fc
 tags:
 - informatiesamenleving
-brontype: wet
+brontype: europese-regelgeving
 beschrijving: 'Selectie van gemeenterelevante artikelen uit de EU AI-verordening:
   definities, verboden, verplichtingen gebruiksverantwoordelijken, grondrechtenbeoordeling,
   hoog-risico lijst.'

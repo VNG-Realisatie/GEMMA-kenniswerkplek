@@ -9,7 +9,7 @@ hash: f017806b3a2ae893ffdf4b55c09407c823c3631b2b501416566d4149d99fc27f
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Immigratie.'
 url: https://www.rvig.nl/hup/immigratie
 url_pagina: https://www.rvig.nl/hup/verblijfplaats

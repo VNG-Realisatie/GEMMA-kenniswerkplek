@@ -9,7 +9,7 @@ hash: 6a435c770401739acb68659e2352cfd23090cc982158b0c368f0049d5bf2ad25
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Gezag
   over een minderjarige.'
 url: https://www.rvig.nl/hup/gezag-over-een-minderjarige

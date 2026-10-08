@@ -322,6 +322,7 @@
       "enum": [
         "EU",
         "rijk",
+        "landelijke organisatie",
         "VNG-model"
       ],
       "description": "Indelingsveld: de plaats in de indelingen (stap 7)"

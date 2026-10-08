@@ -49,4 +49,4 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 ## Procesarchitectuur-terugmeldingen
 
-[20 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 19, opgelost 1.
+[21 terugmeldingen](analyses/procesarchitectuur-terugmeldingen.md): open 20, opgelost 1.

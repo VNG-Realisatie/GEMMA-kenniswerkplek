@@ -7,7 +7,7 @@ sources:
 
 # Leesvolgorde op brontype (sources/index `brontype`); zie ARCHITECTURE.md §8.
 # Brontype `model` (het GEMMA-model) is een matchdoel, geen bron voor begrippen.
-bronvoorrang: [wet, informatiemodel, beleid, overig]
+bronvoorrang: [europese-regelgeving, rijksregelgeving, informatiemodel, richtlijn, gemeentelijke-regelgeving, beleid, overig]
 
 page_types:                          # pagina's van curated typen en onderwerpen maakt tools/render.py; zonder schema
   onderwerp:
@@ -16,7 +16,7 @@ page_types:                          # pagina's van curated typen en onderwerpen
     dir: overzichten                 # overzicht per onderwerp: de views op de indelingen (gegenereerd)
   bronanalyse:
     dir: bronanalyses
-    group_by: onderwerp
+    group_by: onderwerp              # en daaronder per brontype: bronanalyses/<onderwerp>/<brontype>/ (besluit 2026-10-08)
     schema: schemas/bronanalyse.schema.json
   analyse:
     dir: analyses
@@ -60,8 +60,9 @@ page_types:                          # pagina's van curated typen en onderwerpen
   kanaal:                            # Business Interface; één centrale set
     dir: bedrijfsarchitectuur/kanalen
     curated: true
-  beleidskader:                      # Driver (motivatielaag); rijks- of EU-regelgeving of VNG-modelverordening
+  beleidskader:                      # Driver (motivatielaag); Europese of rijksregelgeving, landelijke richtlijn of VNG-model
     dir: motivatie/beleidskaders
+    submappen: [regelgeving]         # afgeleid uit de regelgever: het brontype van de regeling (besluit 2026-10-08)
     curated: true
 
 curation:

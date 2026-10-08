@@ -8,7 +8,7 @@ pad: sources\raw\2026-rijk-gemeentewet-wettekst.html
 hash: 28ebbb96b2b2f15b50a3d9664f795c6d3ee915e144a5e5143108992271597497
 tags:
 - bestuur
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: Actuele wettekst van de Gemeentewet, met het verbrede artikel 150 over
   participatie en uitdaagrecht.
 url: https://wetten.overheid.nl/BWBR0005416/

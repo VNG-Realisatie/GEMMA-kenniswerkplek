@@ -9,7 +9,7 @@ hash: c4a4b514a644a039bab85ae3b325b2fdc726b97014720cf4ddc8089f17f464d2
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Geregistreerd
   partnerschap.'
 url: https://www.rvig.nl/hup/geregistreerd-partnerschap

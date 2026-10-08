@@ -51,7 +51,7 @@ De typen van beide elementen bepalen de soort relatie, het werkwoord de richting
 | gebeurtenis ↔ gedrag, gedrag → gedrag | triggering | "leidt tot", "start"; "volgt op" draait de richting om |
 | proces/functie → dienst | realisatie | — |
 | dienst → rol of gedrag | bediening | — (een dienst krijgt geen rol toegewezen en heeft geen toegang tot een object) |
-| beleidskader → proces, dienst, product | associatie (gericht), naam "is grondslag voor" | — |
+| beleidskader → proces, dienst, product | associatie (gericht), naam "is grondslag voor"; bij een beleidskader in de groep Richtlijn "geeft richtlijn voor" (geen wettelijke grondslag) | — |
 | gedrag → gedrag | stroom | "levert aan", "geeft door aan" |
 | elk → gelijk type | specialisatie | "is een" |
 | object → object, product → dienst/object | compositie of aggregatie | "bestaat uit" → compositie; "bevat", "omvat" → aggregatie; "maakt deel uit van" draait de richting om |

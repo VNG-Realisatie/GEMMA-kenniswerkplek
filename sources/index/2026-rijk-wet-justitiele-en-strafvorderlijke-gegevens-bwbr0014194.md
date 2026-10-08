@@ -10,7 +10,7 @@ tags:
 - wet
 - vog
 - burgerzaken
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: Wet justitiële en strafvorderlijke gegevens, met de verklaring omtrent
   het gedrag (art. 28 e.v.).
 url: https://wetten.overheid.nl/BWBR0014194

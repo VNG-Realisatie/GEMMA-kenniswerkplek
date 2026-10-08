@@ -9,7 +9,7 @@ hash: 0f0f5fb709de5892a3e83973f3ae684572c7bfffb37a1320b8c3e100ee3aed14
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Binnengemeentelijke
   adreswijziging.'
 url: https://www.rvig.nl/hup/binnengemeentelijke-adreswijziging

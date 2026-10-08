@@ -65,15 +65,15 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip inlevering (Paspoortwet art. 32, 56); HUP Inhouding. [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente neemt het ingeleverde reisdocument in ontvangst en registreert de inlevering (HUP Inhouding). [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, ja, een eigen moment in de levensloop van het reisdocument, waarna het wordt ingehouden: de houder levert het in, of het blijkt aan de balie vervallen, beschadigd of foutief (Paspoortwet art. 54 lid 1, 56). [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **toestandsverandering**: Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | Ja, ja, het reisdocument komt bij een tot inhouding bevoegde autoriteit en is niet meer bij de houder (Paspoortwet art. 56; HUP Inhouding). [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
-| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, ja, bij elk vervallen, teruggevonden, beschadigd of te vervangen reisdocument (Paspoortwet art. 32, 54, 56). [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **leidt tot gedrag**: Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? | Ja, ja, start Inhouden reisdocument: het ingeleverde document wordt ingehouden en definitief aan het verkeer onttrokken (Paspoortwet art. 54, 56; HUP Inhouding). [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip inlevering (Paspoortwet art. 32, 56); HUP Inhouding. [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente neemt het ingeleverde reisdocument in ontvangst en registreert de inlevering (HUP Inhouding). [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, ja, een eigen moment in de levensloop van het reisdocument, waarna het wordt ingehouden: de houder levert het in, of het blijkt aan de balie vervallen, beschadigd of foutief (Paspoortwet art. 54 lid 1, 56). [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **toestandsverandering**: Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | Ja, ja, het reisdocument komt bij een tot inhouding bevoegde autoriteit en is niet meer bij de houder (Paspoortwet art. 56; HUP Inhouding). [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
+| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, ja, bij elk vervallen, teruggevonden, beschadigd of te vervangen reisdocument (Paspoortwet art. 32, 54, 56). [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **leidt tot gedrag**: Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? | Ja, ja, start Inhouden reisdocument: het ingeleverde document wordt ingehouden en definitief aan het verkeer onttrokken (Paspoortwet art. 54, 56; HUP Inhouding). [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-inhouding-inlevering-vermissing.md) |
 
 ### Relaties
 
@@ -81,14 +81,14 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Inlevering van het reisdocument | leidt tot *triggering* | [Inhouden reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md) (Paspoortwet art. 54, 56; HUP Inhouding) |
+| Inlevering van het reisdocument | leidt tot *triggering* | [Inhouden reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-inhouding-inlevering-vermissing.md) (Paspoortwet art. 54, 56; HUP Inhouding) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Beheren reisdocumenten](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md) | omvat *aggregatie* | Inlevering van het reisdocument | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) (art. 56) |
-| [Verval van het reisdocument](verval-van-het-reisdocument.md) | verplicht de houder tot *triggering* | Inlevering van het reisdocument | [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Van rechtswege vervallen reisdocument](../../bronanalyses/burgerzaken/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) (art. 54 lid 1 onder a, 56) |
+| [Beheren reisdocumenten](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md) | omvat *aggregatie* | Inlevering van het reisdocument | [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) (art. 56) |
+| [Verval van het reisdocument](verval-van-het-reisdocument.md) | verplicht de houder tot *triggering* | Inlevering van het reisdocument | [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Van rechtswege vervallen reisdocument](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) (art. 54 lid 1 onder a, 56) |
 
 ## Herkomst
 
@@ -96,8 +96,8 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
-| [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/2026-rvig-hup-inhouding-inlevering-vermissing.md) | HUP BRP: Inhouding inlevering vermissing |
+| [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [HUP Inhouding, inlevering of vermissing](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-inhouding-inlevering-vermissing.md) | HUP BRP: Inhouding inlevering vermissing |
 
 ### Afstemming met GEMMA
 

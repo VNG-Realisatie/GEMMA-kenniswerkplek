@@ -9,7 +9,7 @@ hash: 37347751f89219e539b7a99a76573a11e1ddbb35afbda49823396de62df6c2d0
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Verwijderen
   van een geblokkeerde persoonslijst.'
 url: https://www.rvig.nl/hup/verwijderen-van-een-geblokkeerde-persoonslijst

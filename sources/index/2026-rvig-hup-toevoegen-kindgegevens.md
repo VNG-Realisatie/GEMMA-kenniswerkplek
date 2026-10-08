@@ -9,7 +9,7 @@ hash: b8b99a056f1c8e417ebf854b61fe34c5d6f82695a86d32911470f9b99aeb9a02
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Toevoegen
   kindgegevens.'
 url: https://www.rvig.nl/hup/toevoegen-kindgegevens

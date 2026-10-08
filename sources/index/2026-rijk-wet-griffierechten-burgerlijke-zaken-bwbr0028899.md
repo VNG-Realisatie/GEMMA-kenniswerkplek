@@ -10,7 +10,7 @@ tags:
 - wet
 - griffierechten
 - burgerzaken
-brontype: wet
+brontype: rijksregelgeving
 url: https://wetten.overheid.nl/BWBR0028899/2024-01-01
 opgehaald: '2026-10-07'
 ---

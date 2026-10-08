@@ -20,7 +20,9 @@ map `Ketensamenwerking` (zoals in GEMMA); een levensloopproces zonder GEMMA-matc
 (cluster)* en valt, net als een bedrijfsinteractie, in de Beleidsdomeinindeling onder het beleidsdomein van zijn
 kernobject; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
 letterlijk meegaat); beleidsdomein en domein worden een aggregatie vanuit de bestaande GEMMA-groepering, of vanuit een
-nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type `Groep`).
+nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type `Groep`);
+een beleidskader daarnaast een aggregatie vanuit de groep Europese regelgeving, Rijksregelgeving of Gemeentelijke
+regelgeving (naar de regelgever), in de map `Regelgevingindeling` van de wiki; alleen gevulde groepen.
 
 Een element dat in geen enkele indeling staat, houdt de export tegen (`--check` meldt het ook).
 
@@ -51,6 +53,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import bepaal_type  # noqa: E402
 import gam_gemeen  # noqa: E402
 import relaties as relatietool  # noqa: E402
 import signalen  # noqa: E402
@@ -406,7 +409,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             if afgeleid["uitkomst"].get("paginatype") == "bedrijfsinteractie":
                 map_naam = "Ketensamenwerking"
             submappen = page_types.get(afgeleid["uitkomst"].get("paginatype"), {}).get("submappen", ["taakveld", "beleidsdomein"])
-            doel = b.eigen_map(bovenste_map(atype), [n for n in (map_naam, *(data.get(s) for s in submappen)) if n])
+            doel = b.eigen_map(bovenste_map(atype), [n for n in (map_naam, *(bepaal_type.submap(data, s) for s in submappen)) if n])
         _eigenschappen(el, paren)
         doel.objecten.append(el)
 
@@ -512,6 +515,7 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
     taakveld. De beschrijving uit het register van beleidsdomeinen wordt de documentatie van een nieuwe groepering, en
     bij een GEMMA-groepering een wiki-eigenschap: de documentatie van GEMMA blijft (besluit redacteur 2026-10-08)."""
     nieuwe: dict[str, str] = {}
+    nieuwe_regelgeving: dict[str, str] = {}
     register = beleidsdomeinen or {}
 
     def aggregatie(groep_id: str, element: str, indeling: str, bid: str, gemma_groep: dict | None = None) -> None:
@@ -574,6 +578,18 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
                 uit.overgeslagen.append(f"{data['begrip']}: domein '{data['domein']}' bestaat niet als groepering in GEMMA")
             else:
                 aggregatie(groep["id"], element, "Functie-indeling naar domein", bid, groep)
+        naam = bepaal_type.regelgeving(data) if paginatype == "beleidskader" else None
+        if naam:
+            if naam not in nieuwe_regelgeving:
+                gid = vast_id("groepering", "regelgeving", naam)
+                nieuwe_regelgeving[naam] = gid
+                el = ET.Element("element", {XSI: "archimate:Grouping", "name": naam, "id": gid})
+                brontype = bepaal_type.REGELGEVER_BRONTYPE[data["regelgever"]]
+                ET.SubElement(el, "documentation").text = bepaal_type.BRONTYPE_OMSCHRIJVING[brontype]
+                _eigenschappen(el, [(eig("id"), f"regelgeving:{naam}"), (eig("brontype"), brontype), *b.gemeen("nieuw")])
+                b.eigen_map("other", ["Regelgevingindeling"]).objecten.append(el)
+                uit.groeperingen_nieuw.append(f"{naam} (Regelgevingindeling)")
+            aggregatie(nieuwe_regelgeving[naam], element, "Regelgevingindeling", bid)
         if paginatype in DOELGROEP_TYPEN and data.get("doelgroep"):
             rol = _vind_doelgroep(gemma_data, data["doelgroep"])
             if rol is None:
@@ -877,7 +893,8 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
         regels += [f"- {x}" for x in sorted(uit.specialisaties)] + [""]
     if uit.groeperingen_nieuw:
         regels += ["## Nieuwe groeperingen", "",
-                   "Beleidsdomeinen die GEMMA niet kent; ze komen in de map van de wiki, onder het GEMMA-taakveld als dat bestaat.", ""]
+                   "Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder het GEMMA-taakveld als "
+                   "dat bestaat) en de groepen van de Regelgevingindeling.", ""]
         regels += [f"- {x}" for x in sorted(uit.groeperingen_nieuw)] + [""]
     if uit.nieuw:
         regels += ["## Nieuw in GEMMA", ""] + [f"- {e['naam']}" for e in sorted(uit.nieuw, key=lambda e: e["naam"].lower())] + [""]

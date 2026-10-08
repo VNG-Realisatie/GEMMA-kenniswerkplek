@@ -9,7 +9,7 @@ hash: 07a1ad14bab08195fa9279cc625b21a8f932989c9e1a526cc9e923bdd18f5f51
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Rechtsvermoeden
   van overlijden.'
 url: https://www.rvig.nl/hup/rechtsvermoeden-van-overlijden

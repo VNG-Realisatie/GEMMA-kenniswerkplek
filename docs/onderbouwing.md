@@ -1333,7 +1333,7 @@ Regels:
 - **Hergebruik.** Bestaat `sources/index/<bron-id>.md` al, dan slaat INGEST laag 1 en 2 over en maakt alleen de domein-lens.
 
 - **Ophalen via URL.** `llmwiki source add --url <url>` haalt een bron op en zet HTML deterministisch om naar Markdown: tekst blijft letterlijk, alleen opmaakruis (scripts, navigatie, voettekst, knoppenteksten) verdwijnt. Bekende weergave-URL's worden eerst omgezet naar de download-URL (bijv. iBabs, `*.bestuurlijkeinformatie.nl`). Pdf's worden omgezet met pymupdf4llm (groep `pdf`, standaard geïnstalleerd met `uv sync`). De intake legt `url`, `url_pagina` en `opgehaald` vast.
-- **Brontype en bronvoorrang.** De intake kent een optioneel `brontype` (`wet`, `informatiemodel`, `beleid`, `overig`, `model`). Een wiki kan in `wiki.yaml` `bronvoorrang` een leesvolgorde op brontype vastleggen; `run start --onderwerp` zet de bronlijst in die volgorde. Wat de rangorde inhoudelijk betekent (bijv. voor definities), is een wiki-regel.
+- **Brontype en bronvoorrang.** De intake kent een optioneel `brontype` (`europese-regelgeving`, `rijksregelgeving`, `informatiemodel`, `richtlijn`, `gemeentelijke-regelgeving`, `beleid`, `overig`, `model`). Een wiki kan in `wiki.yaml` `bronvoorrang` een leesvolgorde op brontype vastleggen; `run start --onderwerp` zet de bronlijst in die volgorde. Wat de rangorde inhoudelijk betekent (bijv. voor definities), is een wiki-regel.
 
 **Waarom één intakebestand per bron.** Laag 2 is `sources/index/<bron-id>.md`, niet één catalogus.
 - *Herleidbaar via de bestandsnaam.* Het bron-id is in alle drie lagen de bestandsnaam; bestaan en uniciteit zijn een bestandscontrole (`source add` weigert een bestaand id, `validate` zoekt het bestand op).

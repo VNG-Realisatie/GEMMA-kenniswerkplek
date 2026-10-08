@@ -9,7 +9,7 @@ hash: f1dde732ac867a1af6754c971b6a8307f661e47b1dd74d88021d2cd08e541471
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Wijzigen
   bsn.'
 url: https://www.rvig.nl/hup/wijzigen-bsn

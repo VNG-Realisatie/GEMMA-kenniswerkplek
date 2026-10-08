@@ -9,7 +9,7 @@ hash: 22a037fb832040c0bbeedf6ebe25ec4e3406420a6dd26060abd51021cffaedd8
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Correcties
   en ten onrechte opgenomen gegevens.'
 url: https://www.rvig.nl/hup/correcties-en-ten-onrechte-opgenomen-gegevens

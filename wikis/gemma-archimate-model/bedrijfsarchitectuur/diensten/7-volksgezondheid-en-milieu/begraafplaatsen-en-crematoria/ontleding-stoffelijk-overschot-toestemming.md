@@ -57,16 +57,16 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, product in de UPL (nr. 306); het verlof tot ontleding is een wettelijk begrip (Wlb art. 68). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester geeft het verlof af (Wlb art. 68 lid 1). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandig product in de UPL, niet een onderdeel of deelstap van één ander begrip. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij de lijkbezorging. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat de gemeente aanbiedt. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
-| **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, een prestatie die de gemeente aanbiedt: verlof om een stoffelijk overschot in het belang van de wetenschap te laten ontleden (Wlb art. 67, 68). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, schriftelijk verlof tot ontleding, binnen drie dagen en kosteloos, met de plaats van ontleding (Wlb art. 68 lid 1). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, bedrijf (UPL): de instelling voor wetenschap of wetenschappelijk onderwijs die ontleedt (Wlb art. 67 lid 1). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Verlenen verlof tot ontleding (Wlb art. 68). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere dienst in deze wiki of in het GEMMA-model. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, product in de UPL (nr. 306); het verlof tot ontleding is een wettelijk begrip (Wlb art. 68). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester geeft het verlof af (Wlb art. 68 lid 1). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandig product in de UPL, niet een onderdeel of deelstap van één ander begrip. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij de lijkbezorging. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat de gemeente aanbiedt. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, een prestatie die de gemeente aanbiedt: verlof om een stoffelijk overschot in het belang van de wetenschap te laten ontleden (Wlb art. 67, 68). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, schriftelijk verlof tot ontleding, binnen drie dagen en kosteloos, met de plaats van ontleding (Wlb art. 68 lid 1). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, bedrijf (UPL): de instelling voor wetenschap of wetenschappelijk onderwijs die ontleedt (Wlb art. 67 lid 1). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Verlenen verlof tot ontleding (Wlb art. 68). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere dienst in deze wiki of in het GEMMA-model. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties
 
@@ -74,8 +74,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Producten- en dienstenrealisatie fysieke leefomgeving](../../../bedrijfsfuncties/fysieke-leefomgeving/producten-en-dienstenrealisatie-fysieke-leefomgeving.md) | omvat *aggregatie* | Ontleding stoffelijk overschot toestemming | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 306 (GEMMA-domein Fysieke leefomgeving)) |
-| [Verlenen verlof tot ontleding](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-ontleding.md) | realiseert *realisatie* | Ontleding stoffelijk overschot toestemming | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) (Wlb art. 68; UPL nr. 306) |
+| [Producten- en dienstenrealisatie fysieke leefomgeving](../../../bedrijfsfuncties/fysieke-leefomgeving/producten-en-dienstenrealisatie-fysieke-leefomgeving.md) | omvat *aggregatie* | Ontleding stoffelijk overschot toestemming | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 306 (GEMMA-domein Fysieke leefomgeving)) |
+| [Verlenen verlof tot ontleding](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-ontleding.md) | realiseert *realisatie* | Ontleding stoffelijk overschot toestemming | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (Wlb art. 68; UPL nr. 306) |
 
 ## Herkomst
 
@@ -83,8 +83,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [UPL-lijst extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
-| [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+| [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 
 ### Afstemming met GEMMA
 
@@ -92,7 +92,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 3](../../../../analyses/procesarchitectuur-terugmeldingen.md) (indeling, open): **UPL:** ontleding stoffelijk overschot toestemming heeft geen Iv3-taakveld ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/2025-vng-upl-producten-en-diensten-extern.md)). **GEMMA:** 7.5, beleidsdomein Begraafplaatsen en crematoria: ontleding is een wettelijke wijze van lijkbezorging (Wet op de lijkbezorging art. 67, 68).
+- [Nummer 3](../../../../analyses/procesarchitectuur-terugmeldingen.md) (indeling, open): **UPL:** ontleding stoffelijk overschot toestemming heeft geen Iv3-taakveld ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)). **Bevinding:** ontleding is een wettelijke wijze van lijkbezorging ([2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), art. 67, 68). GEMMA zet het product onder 7.5, beleidsdomein Begraafplaatsen en crematoria. **Voorstel:** geef het product in de UPL taakveld 7.5.
 
 ### Besluiten redacteur
 

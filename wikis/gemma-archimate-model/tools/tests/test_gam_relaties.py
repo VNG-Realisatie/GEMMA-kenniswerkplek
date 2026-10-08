@@ -181,7 +181,7 @@ def test_uit_bronnen_lost_op_tilt_op_en_laat_vervallen(wiki):
 
 
 def test_bronrelaties_uit_de_relatietabel_van_een_bronanalyse(wiki):
-    pad = wiki / "bronanalyses/o/2026-overheid-gemeentewet.md"
+    pad = wiki / "bronanalyses/o/rijksregelgeving/2026-overheid-gemeentewet.md"
     pad.parent.mkdir(parents=True)
     pad.write_text("# x\n\n## Relaties\n\n| Van | Werkwoord | Naar | Vindplaats |\n|---|---|---|---|\n"
                    "| Besluit | is een | Beschikking | art. 1 |\n", encoding="utf-8")

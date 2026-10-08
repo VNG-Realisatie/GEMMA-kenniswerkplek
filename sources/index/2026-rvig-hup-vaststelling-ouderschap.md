@@ -9,7 +9,7 @@ hash: 6eb6f4dc8f7e145aedb38e269dc1f982f728cd4a3241aa9256062136fdcb0f8d
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Vaststelling
   ouderschap.'
 url: https://www.rvig.nl/hup/vaststelling-ouderschap

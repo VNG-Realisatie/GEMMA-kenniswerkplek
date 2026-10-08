@@ -64,16 +64,16 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, bestuursorgaan van elke gemeente (Gemeentewet art. 6). [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, orgaan van de gemeente zelf; neemt besluiten in de lijkbezorging (Wlb art. 17, 21, 29, 68). [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **handelende partij**: Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren? | Ja, persoon en bestuursorgaan dat activiteiten uitvoert. [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
-| **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, bestaat los van elke afzonderlijke bevoegdheid; vervult ook andere rollen (voorzitter van raad en college, art. 9, 34). [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
-| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, vervult de rol Beslisser: verleent vergunning tot opgraving en verlof tot ontleding, draagt zorg voor de lijkbezorging als niemand dat doet, treft maatregelen bij een besmet lijk (Wlb art. 21, 22a, 29, 68). [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, elke gemeente heeft een raad, een college van burgemeester en wethouders en een burgemeester (Gemeentewet art. 6). [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki. [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
-| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, komt in elk onderwerp voor als bestuursorgaan (Gemeentewet art. 6). [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, bestuursorgaan van elke gemeente (Gemeentewet art. 6). [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, orgaan van de gemeente zelf; neemt besluiten in de lijkbezorging (Wlb art. 17, 21, 29, 68). [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **handelende partij**: Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren? | Ja, persoon en bestuursorgaan dat activiteiten uitvoert. [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
+| **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, bestaat los van elke afzonderlijke bevoegdheid; vervult ook andere rollen (voorzitter van raad en college, art. 9, 34). [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
+| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, vervult de rol Beslisser: verleent vergunning tot opgraving en verlof tot ontleding, draagt zorg voor de lijkbezorging als niemand dat doet, treft maatregelen bij een besmet lijk (Wlb art. 21, 22a, 29, 68). [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, elke gemeente heeft een raad, een college van burgemeester en wethouders en een burgemeester (Gemeentewet art. 6). [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki. [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
+| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, komt in elk onderwerp voor als bestuursorgaan (Gemeentewet art. 6). [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 
 ### Relaties
 
@@ -81,15 +81,15 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Burgemeester | vervult *toewijzing* | [Beslisser](../rollen/beslisser.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68; Paspoortwet art. 40, 44; Wegenverkeerswet 1994 art. 116, 118a) |
-| Burgemeester | is voorzitter van *associatie (gericht)* | [Gemeenteraad](gemeenteraad.md) | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) (art. 9) |
-| Burgemeester | is voorzitter van *associatie (gericht)* | [College van B&W](college-van-b-w.md) | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) (art. 34 lid 2) |
+| Burgemeester | vervult *toewijzing* | [Beslisser](../rollen/beslisser.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68; Paspoortwet art. 40, 44; Wegenverkeerswet 1994 art. 116, 118a) |
+| Burgemeester | is voorzitter van *associatie (gericht)* | [Gemeenteraad](gemeenteraad.md) | [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 9) |
+| Burgemeester | is voorzitter van *associatie (gericht)* | [College van B&W](college-van-b-w.md) | [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 34 lid 2) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Gemeente](gemeente.md) | omvat *aggregatie* | Burgemeester | [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) (art. 6) |
+| [Gemeente](gemeente.md) | omvat *aggregatie* | Burgemeester | [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 6) |
 
 ## Herkomst
 
@@ -97,11 +97,11 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Gemeentewet](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) - geldend per 2024-01-31 |
-| [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
-| [Paspoortwet](../../bronanalyses/burgerzaken/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
-| [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) | Wegenverkeerswet 1994 |
-| [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) | Wet justitiële en strafvorderlijke gegevens |
+| [Gemeentewet](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) - geldend per 2024-01-31 |
+| [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+| [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
+| [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) | Wegenverkeerswet 1994 |
+| [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) | Wet justitiële en strafvorderlijke gegevens |
 
 ### Afstemming met GEMMA
 
@@ -109,7 +109,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 6](../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** het kennismodel procesarchitectuur kent geen relaties tussen actoren; een actor wordt alleen aan een rol toegewezen ([2026-vng-over-gemma](../../analyses/gemma-kennismodel.md), regel 602). **GEMMA:** tussen actoren alleen structurele relaties: deel van, lid van, voorzitter van. De Gemeente omvat de Gemeenteraad, het College van B&W en de Burgemeester, en de Burgemeester is voorzitter van de gemeenteraad en van het college ([2024-rijk-gemeentewet-wettekst](../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), art. 6, 9, 34). Een handeling tussen partijen loopt via rollen en processen of een gebeurtenis.
+- [Nummer 6](../../analyses/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** het kennismodel procesarchitectuur kent geen relaties tussen actoren; een actor wordt alleen aan een rol toegewezen ([2026-vng-over-gemma](../../analyses/gemma-kennismodel.md), regel 602). **Bevinding:** tussen actoren bestaan structurele relaties die de gemeente nodig heeft om haar organisatie te beschrijven. De Gemeente omvat de Gemeenteraad, het College van B&W en de Burgemeester, en de Burgemeester is voorzitter van de raad en van het college ([2024-rijk-gemeentewet-wettekst](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), art. 6, 9, 34). Het model gebruikt tussen actoren alleen deze structurele relaties; een handeling tussen partijen loopt via rollen en processen of een gebeurtenis. **Voorstel:** neem in het kennismodel structurele relaties tussen actoren op (deel van, lid van, voorzitter van), als aggregatie of associatie; handelingen tussen partijen blijven lopen via rollen.
 
 ### Besluiten redacteur
 

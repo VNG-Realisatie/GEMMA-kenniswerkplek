@@ -95,8 +95,8 @@ def test_bronnen_are_ordered_by_bronvoorrang(repo, tmp_path):
     root, wiki_root = repo
     _add_source(root, tmp_path, "2026-gemeente-nota", "beleid")
     _add_source(root, tmp_path, "2026-vng-ggm", "informatiemodel")
-    _add_source(root, tmp_path, "2026-overheid-wet", "wet")
-    wiki_yaml = _set_wiki_yaml(wiki_root, bronvoorrang=["wet", "informatiemodel", "beleid", "overig"])
+    _add_source(root, tmp_path, "2026-overheid-wet", "rijksregelgeving")
+    wiki_yaml = _set_wiki_yaml(wiki_root, bronvoorrang=["rijksregelgeving", "informatiemodel", "beleid", "overig"])
     (wiki_root / "onderwerpen" / "demo.md").write_text(
         "---\nid: demo\ntype: onderwerp\nbronnen: [2026-gemeente-nota, onbekend-id, 2026-vng-ggm, 2026-overheid-wet]\n---\n\nx\n",
         encoding="utf-8",

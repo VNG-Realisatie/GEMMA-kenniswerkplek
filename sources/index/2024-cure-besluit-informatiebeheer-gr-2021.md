@@ -8,7 +8,7 @@ pad: sources/raw/2024-cure-besluit-informatiebeheer-gr-2021.md
 hash: d677d5860924b1759147cf4173b98629940318d6ba7ae707f7aef4a52692ba5a
 tags:
 - erfgoed
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: Voorschriften betreffende het beheer van de archiefbewaarplaats en het
   beheer van de documentaire informatie van GR Cure
 url: https://zoek.officielebekendmakingen.nl/bgr-2024-1647.html

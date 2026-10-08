@@ -8,7 +8,7 @@ pad: sources/raw/2026-vng-raadgever-inkoop-en-aanbesteden.md
 hash: 21a96f27160eb16c245e3c57d3d89a60df725d86d86a398528abd892196fd867
 tags:
 - dienstverlening
-brontype: beleid
+brontype: richtlijn
 beschrijving: Inkoop en gemeentenGemeenten hebben een indrukwekkende hoeveelheid taken,
   die ze niet alleen af kunnen. Daarom kopen gemeenten veel in. Denk daarbij aan diensten
   als jeugdhulp, maatschappelijke ondersteuning en doelgroepenvervoer, maar ook de

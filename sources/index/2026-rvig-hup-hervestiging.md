@@ -9,7 +9,7 @@ hash: c4d7e614c2313f36d2bd818c923f5d37e462734a0eac23717a62130d55b85313
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Hervestiging.'
 url: https://www.rvig.nl/hup/hervestiging
 url_pagina: https://www.rvig.nl/hup/verblijfplaats

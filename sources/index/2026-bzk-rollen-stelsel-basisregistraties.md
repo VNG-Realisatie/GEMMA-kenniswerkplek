@@ -8,7 +8,7 @@ pad: sources/raw/2026-bzk-rollen-stelsel-basisregistraties.html
 hash: 86744e35dc95f53102d78e153024a511aa523950bb832b7b00ae479a530d24d1
 tags:
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 url: https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/rollen-stelsel-basisregistraties/
 opgehaald: '2026-10-01'
 ---

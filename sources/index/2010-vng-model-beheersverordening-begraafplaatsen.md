@@ -9,7 +9,7 @@ hash: 73bb00907c4e7bab8291ded253b6cd2c9e652f5063ff6439ee1c2d01a2db007d
 tags:
 - openbare gezondheid
 - lijkbezorging
-brontype: beleid
+brontype: gemeentelijke-regelgeving
 beschrijving: VNG-model voor de gemeentelijke beheersverordening begraafplaatsen na
   de wijziging van de Wet op de lijkbezorging in 2009, met toelichting; openbare kopie
   bij de Eerste Kamer.

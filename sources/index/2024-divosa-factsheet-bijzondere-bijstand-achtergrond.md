@@ -8,7 +8,7 @@ pad: sources/raw/2024-divosa-factsheet-bijzondere-bijstand-achtergrond.md
 hash: 625fcb42f30d5368b2c03af8812acd0060f344c60271f15c988e1b3b6f6cde53
 tags:
 - werk-en-inkomen
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Achtergrond bijzondere bijstand: wettelijk kader (art. 35 Participatiewet),
   vormen (individueel/categoriaal, gift/lening/natura), beleidsvrijheid gemeenten,
   positie binnen minimabeleid'

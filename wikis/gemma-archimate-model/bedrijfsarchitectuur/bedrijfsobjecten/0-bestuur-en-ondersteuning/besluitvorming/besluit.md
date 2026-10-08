@@ -88,15 +88,15 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, kernbegrip van de Awb (art. 1:3). [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, gemeentelijke bestuursorganen nemen besluiten. [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elk besluit apart. [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, genomen, bekendgemaakt, in werking, ingetrokken (Awb hfst. 3). [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, vastgelegd in de beslisprocessen (Treffen maatregel bij besmet stoffelijk overschot, Vervallen verklaren grafrecht). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip; Beschikking is zijn specialisatie (besluit redacteur 2026-09-30). [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, een besluit in de zin van de Awb komt in elk onderwerp voor (Awb art. 1:3; besluit redacteur 2026-09-30: generiek en domeinoverstijgend). [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, kernbegrip van de Awb (art. 1:3). [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, gemeentelijke bestuursorganen nemen besluiten. [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elk besluit apart. [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, genomen, bekendgemaakt, in werking, ingetrokken (Awb hfst. 3). [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, vastgelegd in de beslisprocessen (Treffen maatregel bij besmet stoffelijk overschot, Vervallen verklaren grafrecht). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip; Beschikking is zijn specialisatie (besluit redacteur 2026-09-30). [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, een besluit in de zin van de Awb komt in elk onderwerp voor (Awb art. 1:3; besluit redacteur 2026-09-30: generiek en domeinoverstijgend). [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 
 ### Specialisaties
 
@@ -108,7 +108,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Beschikking](beschikking.md) | is een *specialisatie* | Besluit | [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 1:3 lid 2) |
+| [Beschikking](beschikking.md) | is een *specialisatie* | Besluit | [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 1:3 lid 2) |
 
 ## Herkomst
 
@@ -116,8 +116,8 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Awb](../../../../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) | Algemene wet bestuursrecht (BWBR0005537) |
-| [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+| [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) | Algemene wet bestuursrecht (BWBR0005537) |
+| [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 
 ### Afstemming met GGM
 
@@ -134,7 +134,7 @@ Duplicaten in het GGM:
 GGM-terugmeldingen:
 
 - [Nummer 6](../../../../analyses/ggm-terugmeldingen.md) (definitie, open): **GGM:** Besluit is 'een na overweging of beraadslaging vastgestelde beslissing voor een individueel of concreet geval'. **Bevinding:** die definitie beschrijft een beschikking. Volgens de Awb is een besluit een schriftelijke beslissing van een bestuursorgaan, inhoudende een publiekrechtelijke rechtshandeling (art. 1:3 lid 1), en omvat het ook besluiten van algemene strekking; een beschikking is een besluit dat niet van algemene strekking is (art. 1:3 lid 2). **Voorstel:** de Awb-definitie overnemen.
-- [Nummer 7](../../../../analyses/ggm-terugmeldingen.md) (duplicaat, open): **GGM:** Besluit komt twee keer voor met verschillende GUID's en dezelfde definitie: RGBZPlus (99 Kern, EAID_AFB100D2_8C68_4488_8949_13E945D15920, gekoppeld aan GEMMA-bedrijfsobject Besluit); Diensten (Inkomen, EAID_0CA08ED2_6990_8292_BBC7_281C33037374). **Voorstel:** samenvoegen tot de domeinoverstijgende entiteit in RGBZPlus.
+- [Nummer 7](../../../../analyses/ggm-terugmeldingen.md) (duplicaat, open): **GGM:** Besluit komt twee keer voor met verschillende GUID's en dezelfde definitie: RGBZPlus (99 Kern, EAID_AFB100D2_8C68_4488_8949_13E945D15920, gekoppeld aan GEMMA-bedrijfsobject Besluit); Diensten (Inkomen, EAID_0CA08ED2_6990_8292_BBC7_281C33037374). **Bevinding:** één begrip staat zo twee keer in het GGM; gegevens en koppelingen raken verdeeld over twee entiteiten, terwijl het GEMMA-bedrijfsobject Besluit maar aan één ervan hangt. **Voorstel:** samenvoegen tot de domeinoverstijgende entiteit in RGBZPlus.
 
 ### Afstemming met GEMMA
 

@@ -8,7 +8,7 @@ pad: sources/raw/2019-de-fryske-marren-beleidsregels-gemeentelijke-belastingen-d
 hash: 2e17b1feb0c0e73a8e747f1d3e52a9fb5c692f87e39ae6339392fc8a66612067
 tags:
 - belastingen
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: Beleidsregels voor heffing en invordering van gemeentelijke belastingen,
   inclusief aanwijzing belastingplichtige, WOZ-belanghebbende, ambtshalve verminderingen
   en afvalstoffen-/rioolheffing.

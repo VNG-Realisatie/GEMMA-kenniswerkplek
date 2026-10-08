@@ -447,9 +447,8 @@ def van_bron(bron_type: str, doel_type: str, werkwoord: str) -> dict:
 
 def bronrelaties(wiki_root: Path = WIKI_ROOT, onderwerp: str | None = None) -> list[dict]:
     """De rijen van `## Relaties` in de bronanalyses: {van, werkwoord, naar, bronnen, vindplaats}."""
-    map_ = wiki_root / paths.load_wiki_yaml(wiki_root)["page_types"].get("bronanalyse", {}).get("dir", "bronanalyses")
     rijen = []
-    for pad in sorted(map_.glob(f"{onderwerp or '*'}/*.md")):
+    for pad in gam_gemeen.bronanalyses(wiki_root, onderwerp or "*"):
         for rij in gam_gemeen.tabel(gam_gemeen.sectie(pad.read_text(encoding="utf-8"), "Relaties")):
             if rij.get("Van") and rij.get("Naar"):
                 rijen.append({"van": rij["Van"], "werkwoord": rij.get("Werkwoord", ""), "naar": rij["Naar"],

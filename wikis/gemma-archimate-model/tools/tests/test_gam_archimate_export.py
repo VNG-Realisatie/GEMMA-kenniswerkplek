@@ -338,6 +338,43 @@ def test_beleidsdomein_uit_gemma_wordt_hergebruikt_en_een_onbekende_wordt_nieuw(
     assert _relaties_van(root, "archimate:AggregationRelationship", nieuw.get("id"), ae.vast_id("element", "lijk"))
 
 
+def test_beleidskader_hangt_naar_regelgever_in_landelijke_of_gemeentelijke_regelgeving(tmp_path):
+    begrippen = _indeling_begrippen()
+    for bid, naam, regelgever in (("wlb", "Wet op de lijkbezorging", "rijk"), ("avg", "AVG", "EU"),
+                                  ("hup", "HUP BRP", "landelijke organisatie"),
+                                  ("model-bv", "Model beheersverordening begraafplaatsen", "VNG-model")):
+        data = _begrip(naam, "driver", status="review", taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen",
+                       regelgever=regelgever)
+        data["afgeleid"]["uitkomst"]["paginatype"] = "beleidskader"
+        begrippen[bid] = data
+    pad = tmp_path / "gemma-indeling.archimate"
+    pad.write_text(GEMMA_INDELING, encoding="utf-8")
+    wiki_yaml = {"page_types": {"beleidskader": {"dir": "motivatie/beleidskaders", "submappen": ["regelgeving"]}}}
+    uit = ae.bouw(gemma.parse(pad), begrippen, "2026-vng-gemma", "2026-10-04T12:00:00", True, "", wiki_yaml)
+    root = ET.fromstring(uit.xml)
+    landelijk = _el(root, ae.vast_id("groepering", "regelgeving", "Rijksregelgeving"))
+    gemeentelijk = _el(root, ae.vast_id("groepering", "regelgeving", "Gemeentelijke regelgeving"))
+    assert [n for n, _ in _pad(root, landelijk.get("id"))] == ["Other", "wiki-gemma-model", "Regelgevingindeling"]
+    assert landelijk.find("documentation").text.startswith("Regelgeving van het Rijk")
+    assert _props(landelijk)["wiki-gemma-model brontype"] == "rijksregelgeving"
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", landelijk.get("id"), ae.vast_id("element", "wlb"))
+    assert _props(agg)["wiki-gemma-model indeling"] == "Regelgevingindeling"
+    assert _relaties_van(root, "archimate:AggregationRelationship", gemeentelijk.get("id"), ae.vast_id("element", "model-bv"))
+    assert not _relaties_van(root, "archimate:AggregationRelationship", landelijk.get("id"), ae.vast_id("element", "model-bv"))
+    assert "Gemeentelijke regelgeving (Regelgevingindeling)" in uit.groeperingen_nieuw
+    # de map van het beleidskader volgt dezelfde indeling
+    assert [n for n, _ in _pad(root, ae.vast_id("element", "wlb"))] == [
+        "Motivation", "wiki-gemma-model", "Beleidskaders", "Rijksregelgeving"]
+    assert [n for n, _ in _pad(root, ae.vast_id("element", "model-bv"))][-1] == "Gemeentelijke regelgeving"
+    assert [n for n, _ in _pad(root, ae.vast_id("element", "avg"))][-1] == "Europese regelgeving"
+    assert _relaties_van(root, "archimate:AggregationRelationship",
+                         ae.vast_id("groepering", "regelgeving", "Europese regelgeving"), ae.vast_id("element", "avg"))
+    assert [n for n, _ in _pad(root, ae.vast_id("element", "hup"))][-1] == "Richtlijn"
+    # zonder beleidskaders geen groepen van de Regelgevingindeling
+    _, leeg = _export_indeling(tmp_path)
+    assert not any("regelgeving" in (e.get("name") or "").lower() for e in leeg.iter("element"))
+
+
 def test_domein_en_doelgroep_aggregeren_vanuit_de_gemma_groepering(tmp_path):
     uit, root = _export_indeling(tmp_path)
     # een functie hangt alleen op domeinniveau aan de domeingroepering, daaronder aan haar bovenliggende functie

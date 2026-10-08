@@ -104,16 +104,16 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GGM-entiteit; gangbaar (lijkbezorgingsrechten, retributie). [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente heft (Gemeentewet art. 229). [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
-| **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, per belastingplichtige en belastbaar feit. [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
-| **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, opgelegd, betaald, ingevorderd (Gemeentewet hfst. XV). [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, vastgelegd bij de uitgifte van een graf en het onderhoud ervan (VNG retributies; Groningen art. 23). [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, GGM-entiteit. [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie (besluit redacteur 2026-09-30). [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) |
-| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, heffingen komen in veel onderwerpen voor: belastingen en rechten (Gemeentewet art. 216, 229). [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GGM-entiteit; gangbaar (lijkbezorgingsrechten, retributie). [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente heft (Gemeentewet art. 229). [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
+| **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, per belastingplichtige en belastbaar feit. [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
+| **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, opgelegd, betaald, ingevorderd (Gemeentewet hfst. XV). [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, vastgelegd bij de uitgifte van een graf en het onderhoud ervan (VNG retributies; Groningen art. 23). [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
+| **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, GGM-entiteit. [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie (besluit redacteur 2026-09-30). [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
+| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, heffingen komen in veel onderwerpen voor: belastingen en rechten (Gemeentewet art. 216, 229). [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 
 ### Specialisaties
 
@@ -128,16 +128,16 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Heffing | voor het gebruik van (lijkbezorgingsrechten) *associatie (gericht)* | [Begraafplaats](../../7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
-| Heffing | voor het gebruik van (lijkbezorgingsrechten) *associatie (gericht)* | [Crematorium](../../7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md) | [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
+| Heffing | voor het gebruik van (lijkbezorgingsrechten) *associatie (gericht)* | [Begraafplaats](../../7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md) | [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
+| Heffing | voor het gebruik van (lijkbezorgingsrechten) *associatie (gericht)* | [Crematorium](../../7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md) | [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Heffingsverordening](heffingsverordening.md) | regelt *associatie (gericht)* | Heffing | [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) (Gemeentewet art. 216, 229; § Lijkbezorgingsrechten) |
-| [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | leidt tot (recht voor onderhoud) *toegang (registreren)* | Heffing | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) (Groningen art. 23 lid 2; § Lijkbezorgingsrechten) |
-| [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | leidt tot (lijkbezorgingsrechten) *toegang (registreren)* | Heffing | [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
+| [Heffingsverordening](heffingsverordening.md) | regelt *associatie (gericht)* | Heffing | [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (Gemeentewet art. 216, 229; § Lijkbezorgingsrechten) |
+| [Onderhouden graf](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/onderhouden-graf.md) | leidt tot (recht voor onderhoud) *toegang (registreren)* | Heffing | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (Groningen art. 23 lid 2; § Lijkbezorgingsrechten) |
+| [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | leidt tot (lijkbezorgingsrechten) *toegang (registreren)* | Heffing | [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (§ Lijkbezorgingsrechten) |
 
 ## Herkomst
 
@@ -145,9 +145,9 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Gemeentewet](../../../../bronanalyses/lijkbezorging/2024-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) - geldend per 2024-01-31 |
-| [VNG Retributies](../../../../bronanalyses/lijkbezorging/2026-vng-retributies.md) | Retributies |
-| [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) | Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023 |
+| [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) - geldend per 2024-01-31 |
+| [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) | Retributies |
+| [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) | Beheersverordening gemeentelijke begraafplaatsen gemeente Groningen 2023 |
 
 ### Afstemming met GGM
 

@@ -9,7 +9,7 @@ hash: 4a37278336e0300791e54311adbe1a4389050c4c9d222c2b2e7e9451f4ba7591
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: Schema van de NVVB voor het afhandelen van verzoeken om schriftelijke
   gegevensverstrekking uit de BRP.
 url: https://nvvb.nl/media/filer_public/42/f8/42f83479-ff63-426b-8d6b-ef57173f4e70/2024_schema_schriftelijke_verstrekkingen_brp_v2.pdf

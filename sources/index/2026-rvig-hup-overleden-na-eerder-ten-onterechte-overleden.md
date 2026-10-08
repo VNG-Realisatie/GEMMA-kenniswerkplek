@@ -9,7 +9,7 @@ hash: 2134ccef67f7837b02a37f0ac7715d6fe42dc710a676c6f1c2164eaa7b08023c
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Overleden
   na eerder ten onterechte overleden.'
 url: https://www.rvig.nl/hup/overleden-na-eerder-ten-onterechte-overleden

@@ -8,7 +8,7 @@ pad: sources/raw/2019-wageningen-archiefverordening.md
 hash: b9d2d3d1e25e0c06099498f98432b53f511e63333e8aa51ef64baae2322f7c28
 tags:
 - erfgoed
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: Gemeentelijke verordening over zorgplicht, taken gemeentearchivaris
   en verantwoording archiefbeheer.
 url: https://lokaleregelgeving.overheid.nl/CVDR620954

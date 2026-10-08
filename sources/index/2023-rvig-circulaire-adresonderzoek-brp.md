@@ -9,7 +9,7 @@ hash: 4dd827a3420da8c8f70722db4e074bc0b5c54ef2c039b4620d0e37211b03bca6
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: Circulaire van de RvIG aan de colleges en hoofden Burgerzaken over adresonderzoek
   in de BRP.
 url: https://www.rvig.nl/sites/default/files/2023-05/Circulaire%20adresonderzoek%20BRP.pdf

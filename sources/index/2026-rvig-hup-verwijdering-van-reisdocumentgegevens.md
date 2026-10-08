@@ -9,7 +9,7 @@ hash: e75c0e39c4b817a6a4654be31741d288a2be052aa7db6e025cc63b03e184b60a
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Verwijdering
   van reisdocumentgegevens.'
 url: https://www.rvig.nl/hup/verwijdering-van-reisdocumentgegevens

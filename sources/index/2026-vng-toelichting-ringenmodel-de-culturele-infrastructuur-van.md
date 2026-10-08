@@ -8,7 +8,7 @@ pad: sources/raw/2026-vng-toelichting-ringenmodel-de-culturele-infrastructuur-va
 hash: e155ee35151bf4ab5317a930a2e257a58d479013f7c2df1854ca4d54e7a8af07
 tags:
 - cultuur
-brontype: beleid
+brontype: richtlijn
 ---
 
 # Actualisering van het VNG-ringenmodel (culturele infrastructuur van gemeenten)

@@ -9,7 +9,7 @@ hash: 9ce07a5d5c97e2bab787563cd92b3f219da35dcad2f2b17d5c43e9cb636c9026
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Overlijden.'
 url: https://www.rvig.nl/hup/overlijden
 url_pagina: https://www.rvig.nl/hup/handleiding-uitvoeringsprocedures

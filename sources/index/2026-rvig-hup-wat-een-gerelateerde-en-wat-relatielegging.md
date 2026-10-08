@@ -9,7 +9,7 @@ hash: 76c7ec6813e274f1687f81846855174532ccff63e84f6312cab13a2a778380de
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Wat een
   gerelateerde en wat relatielegging.'
 url: https://www.rvig.nl/hup/wat-een-gerelateerde-en-wat-relatielegging

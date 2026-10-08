@@ -11,7 +11,7 @@ tags:
 - verdrag
 - huwelijksbevoegdheid
 - burgerzaken
-brontype: wet
+brontype: rijksregelgeving
 url: https://wetten.overheid.nl/jci1.3:c:BWBV0003766&z=1985-02-01&g=1985-02-01
 opgehaald: '2026-10-07'
 ---

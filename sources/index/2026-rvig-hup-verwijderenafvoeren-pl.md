@@ -9,7 +9,7 @@ hash: 9042f37545498cb38cffaae0c6cb217af978c48a3246e12a847448fd48717f60
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Verwijderen
   en afvoeren persoonslijst.'
 url: https://www.rvig.nl/hup/verwijderenafvoeren-pl

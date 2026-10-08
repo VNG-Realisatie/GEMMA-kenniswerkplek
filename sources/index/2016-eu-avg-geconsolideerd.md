@@ -10,7 +10,7 @@ tags:
 - privacy
 - avg
 - wet
-brontype: wet
+brontype: europese-regelgeving
 url: http://publications.europa.eu/resource/celex/02016R0679-20160504
 url_pagina: https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:02016R0679-20160504
 opgehaald: '2026-10-01'

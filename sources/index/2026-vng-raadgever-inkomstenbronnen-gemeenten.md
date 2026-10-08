@@ -8,7 +8,7 @@ pad: sources/raw/2026-vng-raadgever-inkomstenbronnen-gemeenten.md
 hash: 88eeb3d9285f0f2e39dd94117cd34730bce14197f97895ac3b2b577e36dec449
 tags:
 - financien
-brontype: beleid
+brontype: richtlijn
 beschrijving: Gemeenten zijn voor hun inkomsten grotendeels afhankelijk van het rijk.
   De gemeentelijke belastingen vormen slechts een beperkt deel van de inkomsten.Grofweg
   zijn er 4 verschillende inkomstenbronnen:GemeentefondsSpecifieke UitkeringenGemeentelijke

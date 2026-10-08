@@ -9,7 +9,7 @@ hash: a98b0d1e233ad0a772b2e149a8fd6c84e9c4cc5094e255a58b311e9586942782
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Kiesrecht.'
 url: https://www.rvig.nl/hup/kiesrecht
 url_pagina: https://www.rvig.nl/hup/handleiding-uitvoeringsprocedures

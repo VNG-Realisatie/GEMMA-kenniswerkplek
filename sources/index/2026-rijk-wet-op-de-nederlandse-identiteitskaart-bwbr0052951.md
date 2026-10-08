@@ -10,7 +10,7 @@ tags:
 - wet
 - identiteitskaart
 - burgerzaken
-brontype: wet
+brontype: rijksregelgeving
 url: https://wetten.overheid.nl/BWBR0052951/2026-10-01
 opgehaald: '2026-10-07'
 ---

@@ -9,7 +9,7 @@ hash: 721f6fe4c2a3c90f6cef65ac85c4c09c5be9ab081fbfc4fa42e4e40b5b405f1f
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Vreemde
   nationaliteit.'
 url: https://www.rvig.nl/hup/vreemde-nationaliteit

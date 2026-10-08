@@ -9,7 +9,7 @@ hash: 3ac0fadec07984dc377839aef20cad62c18f685a3c1ef8d69466cec574a12915
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Nederlandse
   nationaliteit.'
 url: https://www.rvig.nl/hup/nederlandse-nationaliteit

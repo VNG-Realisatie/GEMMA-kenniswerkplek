@@ -8,7 +8,7 @@ pad: sources/raw/2026-vng-raadgever-gemeentelijke-belastingen.md
 hash: 52c7f57d979796d4912d202202479e09c90cfd2b524fb0afe998e89a51a62bcd
 tags:
 - belastingen
-brontype: beleid
+brontype: richtlijn
 beschrijving: De gemeenteraad bepaalt welke gemeentelijke belastingen inwoners betalen
   en hoe hoog de belasting is. Dit is bij uitstek een politieke discussie waarover
   de meningen flink uiteen kunnen lopen. Gaan burgers of bedrijven betalen? Geldt

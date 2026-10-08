@@ -9,7 +9,7 @@ hash: 017b140e99f04b4b0fb0169358c0c88213ea1a031909c41df9e3840964f68b10
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Het beoordelen
   van de vergelijking.'
 url: https://www.rvig.nl/hup/het-beoordelen-van-de-vergelijking

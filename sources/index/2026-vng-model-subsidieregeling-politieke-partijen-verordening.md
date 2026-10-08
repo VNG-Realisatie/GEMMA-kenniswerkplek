@@ -8,7 +8,7 @@ pad: sources/raw/2026-vng-model-subsidieregeling-politieke-partijen-verordening.
 hash: 378a982506d59ad7dd30711d8898e8b5aa515debcba55e8a16e5db7232093051
 tags:
 - bestuur
-brontype: beleid
+brontype: gemeentelijke-regelgeving
 beschrijving: VNG-modelverordening met artikelen voor gemeentelijke subsidieregeling
   aan decentrale politieke partijen, gebaseerd op de Wpp.
 url: https://vng.nl/sites/default/files/2026-06/20260618-model-subsidieregeling-decentrale-politieke-partijen.docx

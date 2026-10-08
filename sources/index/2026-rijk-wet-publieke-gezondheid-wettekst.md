@@ -9,7 +9,7 @@ hash: fb200db4485fb73a7ac9b5593e02584d43d4c4bcf043a5302e133f181c48ad7d
 tags:
 - volksgezondheid
 - ggd
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: Wettekst van de Wet publieke gezondheid, met de taken van gemeenten
   en de GGD.
 url: https://wetten.overheid.nl/BWBR0024705/

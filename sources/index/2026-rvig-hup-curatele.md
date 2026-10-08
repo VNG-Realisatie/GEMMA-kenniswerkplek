@@ -9,7 +9,7 @@ hash: 25391cfd109920db29b77ae0d6a54380c4ec6bc8bce0a7a00a58981bbece8e62
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Curatele.'
 url: https://www.rvig.nl/hup/curatele
 url_pagina: https://www.rvig.nl/hup/gezagsverhouding

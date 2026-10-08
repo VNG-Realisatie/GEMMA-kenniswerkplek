@@ -9,7 +9,7 @@ hash: a581c063a4fe054987f6ba1b553326e8aff5eb522d097167b846b0021c3e49d0
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Adoptie.'
 url: https://www.rvig.nl/hup/adoptie
 url_pagina: https://www.rvig.nl/hup/afstamming

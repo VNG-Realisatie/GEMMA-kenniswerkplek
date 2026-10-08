@@ -8,7 +8,7 @@ pad: sources/raw/2026-rijk-besluit-op-de-lijkbezorging-wettekst.html
 hash: ed296d5c736e08c2ed23d826e8148d43a68193185b519fa72f8854cdfc60cd88
 tags:
 - openbare-gezondheid
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: 'Volledige tekst van het Besluit op de lijkbezorging (BWBR0009080),
   geldend vanaf 2025-07-01: uitvoeringsregels bij de Wet op de lijkbezorging, onder
   meer over kisten, vervoer en vervoersdocumenten van lijken.'

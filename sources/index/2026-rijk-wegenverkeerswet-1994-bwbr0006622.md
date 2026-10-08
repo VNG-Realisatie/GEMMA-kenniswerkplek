@@ -10,7 +10,7 @@ tags:
 - wet
 - rijbewijs
 - burgerzaken
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: Wegenverkeerswet 1994, met het hoofdstuk over rijbewijzen.
 url: https://wetten.overheid.nl/BWBR0006622
 opgehaald: '2026-10-07'

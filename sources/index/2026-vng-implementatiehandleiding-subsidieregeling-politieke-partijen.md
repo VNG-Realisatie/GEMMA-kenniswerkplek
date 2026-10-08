@@ -8,7 +8,7 @@ pad: sources/raw/2026-vng-implementatiehandleiding-subsidieregeling-politieke-pa
 hash: fea9afaf6e96ff1baec37e1aa66c7707b1934941a2e0ec7010b5adf69d49e33e
 tags:
 - bestuur
-brontype: beleid
+brontype: richtlijn
 beschrijving: Implementatiehandleiding bij het VNG-model met toelichting op varianten,
   bedragen per gemeente en voorbeeldformulier.
 url: https://vng.nl/sites/default/files/2026-06/20260618-implementatiehandleiding-model-subsidieregeling-decentrale-politieke-partijen.docx

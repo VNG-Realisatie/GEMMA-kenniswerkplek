@@ -56,12 +56,12 @@ def test_add_html_source_stores_original_markdown_and_metadata(tmp_path, repo):
     original.write_text(HTML, encoding="utf-8")
     sources.add(
         root, "2026-utrecht-parkeren", original, titel="Parkeren", tags=["demo"],
-        brontype="wet", url="https://example.org/parkeren", opgehaald="2026-09-29",
+        brontype="rijksregelgeving", url="https://example.org/parkeren", opgehaald="2026-09-29",
     )
     assert (root / "sources" / "raw" / "2026-utrecht-parkeren.html").exists()
     assert "# Verordening parkeren" in (root / "sources" / "raw" / "2026-utrecht-parkeren.md").read_text(encoding="utf-8")
     entry = sources.read_index_entry(root, "2026-utrecht-parkeren")
-    assert entry["brontype"] == "wet"
+    assert entry["brontype"] == "rijksregelgeving"
     assert entry["url"] == "https://example.org/parkeren"
 
 

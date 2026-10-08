@@ -9,7 +9,7 @@ hash: 8499a220036d6de2b627f3d394b9869d4a4592e4a800a1e2d1244d39b687455c
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Ontkenning
   ouderschap.'
 url: https://www.rvig.nl/hup/ontkenning-ouderschap

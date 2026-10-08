@@ -33,7 +33,7 @@ Een algemene "Wet basisregistraties" bestaat niet. Het stelsel van basisregistra
 - **2015-rijk-wmo** (Wet maatschappelijke ondersteuning 2015): [tekst](../../../sources/raw/2015-rijk-wmo.md) · [online](https://wetten.overheid.nl/BWBR0035362/2026-01-01)
 - **2026-rijk-wet-suwi-bwbr0013060** (Wet structuur uitvoeringsorganisatie werk en inkomen (Wet SUWI)): [tekst](../../../sources/raw/2026-rijk-wet-suwi-bwbr0013060.md) · [online](https://wetten.overheid.nl/BWBR0013060/2026-01-01)
 - **1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995** (Memorie van toelichting Archiefwet 1995): [tekst](../../../sources/raw/1992-tweede-kamer-memorie-van-toelichting-archiefwet-1995.md)
-- **2026-rijk-wet-op-de-lijkbezorging-wettekst**: [bronanalyse](../bronanalyses/lijkbezorging/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
+- **2026-rijk-wet-op-de-lijkbezorging-wettekst**: [bronanalyse](../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)
 - **2026-vng-over-gemma**: [bronanalyse](gemma-kennismodel.md)
 - **2016-eu-avg-geconsolideerd** (Algemene verordening gegevensbescherming, geconsolideerde tekst): [tekst](../../../sources/raw/2016-eu-avg-geconsolideerd.md) · [origineel (html)](../../../sources/raw/2016-eu-avg-geconsolideerd.html) · [online](http://publications.europa.eu/resource/celex/02016R0679-20160504)
 - **2026-rijk-archiefwet-1995-bwbr0007376** (Archiefwet 1995): [tekst](../../../sources/raw/2026-rijk-archiefwet-1995-bwbr0007376.md) · [origineel (html)](../../../sources/raw/2026-rijk-archiefwet-1995-bwbr0007376.html) · [online](https://wetten.overheid.nl/BWBR0007376/2024-06-19)

@@ -9,7 +9,7 @@ hash: b9d079c0804e0e550cef82616d4c453edf7c3c69b753fc04982b7af30ae418fc
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Het opnemen
   van het deelresultaat van een adresonderzoek.'
 url: https://www.rvig.nl/hup/het-opnemen-van-het-deelresultaat-van-een-adresonderzoek

@@ -10,7 +10,7 @@ tags:
 - burgerzaken
 - basisregistraties
 - wet
-brontype: wet
+brontype: rijksregelgeving
 url: https://wetten.overheid.nl/BWBR0034306
 opgehaald: '2026-10-06'
 ---

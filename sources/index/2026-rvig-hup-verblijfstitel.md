@@ -9,7 +9,7 @@ hash: 4288ec1507428245cfb2d27ecf737d3030504d702d8dae0c8cc89ce4aa58cfe2
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Verblijfstitel.'
 url: https://www.rvig.nl/hup/verblijfstitel
 url_pagina: https://www.rvig.nl/hup/handleiding-uitvoeringsprocedures

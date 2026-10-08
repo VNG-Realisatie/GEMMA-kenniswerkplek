@@ -9,7 +9,7 @@ hash: aa9bdea31dd10f5ee3faea87634d789c1ff858180bf2d111f86ec3f923a265c6
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Gezagsverhouding.'
 url: https://www.rvig.nl/hup/gezagsverhouding
 url_pagina: https://www.rvig.nl/hup/handleiding-uitvoeringsprocedures

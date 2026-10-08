@@ -10,7 +10,7 @@ tags:
 - wet
 - rijbewijs
 - burgerzaken
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: Reglement rijbewijzen.
 url: https://wetten.overheid.nl/BWBR0008074
 opgehaald: '2026-10-07'

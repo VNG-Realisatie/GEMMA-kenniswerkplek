@@ -9,7 +9,7 @@ hash: 6d4c2fbb5c8e23459024e632ce55700e7af2c99bcfc865e544e9c2b33f02ff73
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Geslachtswijziging.'
 url: https://www.rvig.nl/hup/geslachtswijziging
 url_pagina: https://www.rvig.nl/hup/handleiding-uitvoeringsprocedures

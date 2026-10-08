@@ -9,7 +9,7 @@ hash: 500468e8e3ecfeb2d76a0d100b1883dc70884c5c1a500c2072a2f0e3d7dc65d4
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Uitreiking
   registreren van een reisdocument.'
 url: https://www.rvig.nl/hup/uitreiking-registreren-van-een-reisdocument

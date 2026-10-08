@@ -9,7 +9,7 @@ hash: a9dd2d54c7748db82112850a30f7c34aee66f6dffa460bf45ce3e00cfa0e0cd5
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Geboorte.'
 url: https://www.rvig.nl/hup/geboorte
 url_pagina: https://www.rvig.nl/hup/afstamming

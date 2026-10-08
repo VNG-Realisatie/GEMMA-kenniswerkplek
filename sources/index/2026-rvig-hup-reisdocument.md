@@ -9,7 +9,7 @@ hash: 2571dd8d3f4b3c3f0d56bbc95d546379e723e6576e152892cbb1c94b3e075a6b
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Reisdocument.'
 url: https://www.rvig.nl/hup/reisdocument
 url_pagina: https://www.rvig.nl/hup/handleiding-uitvoeringsprocedures

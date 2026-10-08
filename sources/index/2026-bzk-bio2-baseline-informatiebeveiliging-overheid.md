@@ -8,7 +8,7 @@ pad: sources/raw/2026-bzk-bio2-baseline-informatiebeveiliging-overheid.md
 hash: 46981bb622b9a47a4ee1333e845761068c814bdf8153cd65ae0575eea1d560d9
 tags:
 - informatiesamenleving
-brontype: beleid
+brontype: richtlijn
 beschrijving: Normenkader voor informatiebeveiliging binnen alle overheidsentiteiten,
   op basis van ISO 27001/27002, met verplichte overheidsmaatregelen
 url: https://www.bio-overheid.nl/media/dr4inbhc/20260109-baseline-informatiebeveiliging-overheid-2-bio2-v13-def.pdf

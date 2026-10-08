@@ -8,7 +8,7 @@ pad: sources/raw/2000-rijk-wet-studiefinanciering-bwbr0011453.md
 hash: a3ce58f5bb4b87b902df887aa6c9678838aa484b0538bc665ce28707a725297f
 tags:
 - werk-en-inkomen
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: 'Wettekst studiefinanciering: definities, werkingssfeer (wie komt in
   aanmerking) en de vormen (basisbeurs, aanvullende beurs/lening, collegegeldkrediet,
   reisvoorziening)'

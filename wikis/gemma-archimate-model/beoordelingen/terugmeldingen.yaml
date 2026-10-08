@@ -81,6 +81,7 @@ terugmeldingen:
   - '**GGM:** Besluit komt twee keer voor met verschillende GUID''s en dezelfde definitie:'
   - '- RGBZPlus (99 Kern, EAID_AFB100D2_8C68_4488_8949_13E945D15920, gekoppeld aan GEMMA-bedrijfsobject Besluit);'
   - '- Diensten (Inkomen, EAID_0CA08ED2_6990_8292_BBC7_281C33037374).'
+  - '**Bevinding:** één begrip staat zo twee keer in het GGM; gegevens en koppelingen raken verdeeld over twee entiteiten, terwijl het GEMMA-bedrijfsobject Besluit maar aan één ervan hangt.'
   - '**Voorstel:** samenvoegen tot de domeinoverstijgende entiteit in RGBZPlus.'
   element: besluit
   status: open

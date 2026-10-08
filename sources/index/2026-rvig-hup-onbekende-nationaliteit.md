@@ -9,7 +9,7 @@ hash: 6d013c846386e2793ad6706dccfa7722f44a1725a308db9691a0f68871c90854
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Onbekende
   nationaliteit.'
 url: https://www.rvig.nl/hup/onbekende-nationaliteit

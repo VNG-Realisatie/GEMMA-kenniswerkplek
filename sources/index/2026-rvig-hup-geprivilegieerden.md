@@ -9,7 +9,7 @@ hash: 0c7368ac03e9598f053637c4dbd6afff7e55ab1e462c3f5b91cb2b957d5ad987
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Geprivilegieerden.'
 url: https://www.rvig.nl/hup/geprivilegieerden
 url_pagina: https://www.rvig.nl/hup/nationaliteit

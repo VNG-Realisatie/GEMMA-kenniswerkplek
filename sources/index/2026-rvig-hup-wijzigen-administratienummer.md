@@ -9,7 +9,7 @@ hash: 2b73070425858b53dd4173714fd76acf3a085d8957d02e2868d1b948b5d75f47
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Wijzigen
   administratienummer.'
 url: https://www.rvig.nl/hup/wijzigen-administratienummer

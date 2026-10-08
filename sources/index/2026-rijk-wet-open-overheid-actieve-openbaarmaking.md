@@ -9,7 +9,7 @@ pad: sources/raw/2026-rijk-wet-open-overheid-actieve-openbaarmaking.md
 hash: f4ed9fe01815e048c2e2421f859940b247f1139537c4caec9b51b365d7229104
 tags:
 - informatiesamenleving
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: 'Primaire wettekst van de Woo-artikelen over actieve openbaarmaking:
   inspanningsverplichting, de 17 categorieën, overzichten, wijze en moment van openbaarmaking,
   zwaarwegend algemeen belang en de openbaarheidsparagraaf.'

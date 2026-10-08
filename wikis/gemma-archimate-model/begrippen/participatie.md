@@ -24,10 +24,10 @@ De views op de indelingen staan in het [overzicht](../overzichten/participatie.m
 
 ## Bronnen
 
-- [Gemeentewet (BWBR0005416)](../bronanalyses/participatie/2026-rijk-gemeentewet-wettekst.md)
-- [Algemene wet bestuursrecht (BWBR0005537)](../bronanalyses/lijkbezorging/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
-- [Implementatiehandleiding VNG Model Participatieverordening 2024](../bronanalyses/participatie/2024-vng-implementatiehandleiding-model-participatieverordening.md)
-- [Versterking lokale democratie](../bronanalyses/participatie/2026-vng-versterking-lokale-democratie.md)
+- [Gemeentewet (BWBR0005416)](../bronanalyses/participatie/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md)
+- [Algemene wet bestuursrecht (BWBR0005537)](../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
+- [Implementatiehandleiding VNG Model Participatieverordening 2024](../bronanalyses/participatie/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md)
+- [Versterking lokale democratie](../bronanalyses/participatie/overig/2026-vng-versterking-lokale-democratie.md)
 
 ## Begrippen
 

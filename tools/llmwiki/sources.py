@@ -27,7 +27,8 @@ def _index_dir(repo_root: Path) -> Path:
     return repo_root / "sources" / "index"
 
 
-BRONTYPEN = ("wet", "informatiemodel", "beleid", "overig", "model")
+BRONTYPEN = ("europese-regelgeving", "rijksregelgeving", "informatiemodel", "richtlijn", "gemeentelijke-regelgeving", "beleid",
+             "overig", "model")
 
 
 def _convert_pdf(original: Path) -> str:

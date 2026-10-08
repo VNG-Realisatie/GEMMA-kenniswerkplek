@@ -9,7 +9,7 @@ hash: e68fc5ab1e876cdf560fadf348b4aefa18dda3f96e6ea56901c5ba1ba177541f
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Lijkvinding.'
 url: https://www.rvig.nl/hup/lijkvinding
 url_pagina: https://www.rvig.nl/hup/overlijden

@@ -9,7 +9,7 @@ hash: 58665ad1bc741a2779d5cda0ca626e53d72d1f058cc42de12d44c9a7874ae76b
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Gegevens
   opnieuw onderzoek stellen.'
 url: https://www.rvig.nl/hup/gegevens-opnieuw-onderzoek-stellen

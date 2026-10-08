@@ -8,7 +8,7 @@ pad: sources/raw/2024-rijk-gemeentewet-wettekst.md
 hash: a1052afec68a1a0ba21990a9df4ca45006203f02f94d3a145d5f47ea20c6b183
 tags:
 - bestuur
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: Volledige wettekst van de Gemeentewet, het juridisch kader voor inrichting,
   bevoegdheden en financiën van gemeenten.
 url: https://wetten.overheid.nl/BWBR0005416/2024-01-31/

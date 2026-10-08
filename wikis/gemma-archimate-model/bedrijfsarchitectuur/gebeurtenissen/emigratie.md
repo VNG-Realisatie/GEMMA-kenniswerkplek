@@ -56,15 +56,15 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar (Utrecht Emigratie doorgeven; HUP Emigratie). [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, wordt aangegeven bij de gemeente en start gemeentelijk gedrag (HUP Emigratie). [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gebeurt. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) |
-| **toestandsverandering**: Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | Ja, gebeurt op één moment en heeft gevolgen voor de inschrijving. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) |
-| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elke persoon die het overkomt. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) |
-| **leidt tot gedrag**: Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? | Ja, start Verwerken emigratie (HUP Emigratie). [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere gebeurtenis in deze wiki. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar (Utrecht Emigratie doorgeven; HUP Emigratie). [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, wordt aangegeven bij de gemeente en start gemeentelijk gedrag (HUP Emigratie). [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gebeurt. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) |
+| **toestandsverandering**: Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | Ja, gebeurt op één moment en heeft gevolgen voor de inschrijving. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) |
+| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elke persoon die het overkomt. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) |
+| **leidt tot gedrag**: Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? | Ja, start Verwerken emigratie (HUP Emigratie). [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere gebeurtenis in deze wiki. [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md), [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) |
 
 ### Relaties
 
@@ -72,13 +72,13 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Emigratie | leidt tot *triggering* | [Verwerken emigratie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-emigratie.md) | [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md), [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-emigratie-doorgeven.md) (inleiding) |
+| Emigratie | leidt tot *triggering* | [Verwerken emigratie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-emigratie.md) | [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md), [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md) (inleiding) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Emigratie | [Wet BRP](../../bronanalyses/burgerzaken/2026-rijk-wet-brp-bwbr0033715.md), [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) (Wet BRP art. 2.21, 2.43) |
+| [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Emigratie | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) (Wet BRP art. 2.21, 2.43) |
 
 ## Herkomst
 
@@ -86,8 +86,8 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/2026-utrecht-burgerzaken-emigratie-doorgeven.md) | Gemeente Utrecht: Emigratie doorgeven |
-| [HUP Emigratie](../../bronanalyses/burgerzaken/2026-rvig-hup-emigratie.md) | HUP BRP: Emigratie |
+| [Utrecht Emigratie doorgeven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-emigratie-doorgeven.md) | Gemeente Utrecht: Emigratie doorgeven |
+| [HUP Emigratie](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-emigratie.md) | HUP BRP: Emigratie |
 
 ### Afstemming met GEMMA
 

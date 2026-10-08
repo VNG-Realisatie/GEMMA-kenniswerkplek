@@ -221,6 +221,10 @@ gemma:
 onderwerpen:
 - lijkbezorging
 genoemd_begrip: Verlenen verlof tot begraving of crematie
+besluiten:
+- datum: '2026-10-04'
+  besluit: 'Geen pagina: invoer van een andere partij (de arts); vermeld bij Verlenen verlof tot begraving of crematie en Schouwen lijk.'
+  gevolg: verwerkt
 afgeleid:
   uitkomst:
     soort: onderdeel
@@ -235,8 +239,4 @@ afgeleid:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
-  herkomst: wet
-besluiten:
-- datum: '2026-10-04'
-  besluit: 'Geen pagina: invoer van een andere partij (de arts); vermeld bij Verlenen verlof tot begraving of crematie en Schouwen lijk.'
-  gevolg: verwerkt
+  herkomst: rijksregelgeving

@@ -9,7 +9,7 @@ hash: 7c1db53dd5f06f8041e8835dafa4e06067e93bde7f056481b6e51efc1779db84
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Inhouding
   inlevering vermissing.'
 url: https://www.rvig.nl/hup/inhouding-inlevering-vermissing

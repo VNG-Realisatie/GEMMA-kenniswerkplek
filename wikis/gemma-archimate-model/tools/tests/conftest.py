@@ -25,7 +25,7 @@ def archimate_repo(tmp_path):
     shutil.copytree(WIKI / "schemas", wiki / "schemas")
     (wiki / "log.md").write_text("# Logboek\n", encoding="utf-8")
     for bron_id, brontype in [
-        ("2026-overheid-gemeentewet", "wet"),
+        ("2026-overheid-gemeentewet", "rijksregelgeving"),
         ("2026-vng-ggm", "informatiemodel"),
         ("2026-utrecht-nota", "beleid"),
     ]:

@@ -9,7 +9,7 @@ hash: 39cf8b7a6f9f71d1dfd962a9c602f7f1b21b09ca3d78b6e01cc5db1e2dd19654
 tags:
 - burgerzaken
 - identiteit
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'ID-protocol van de NVVB voor medewerkers Burgerzaken: identiteitsvaststelling
   en fraudebestrijding bij reisdocumenten.'
 url: https://nvvb.nl/media/filer_public/52/97/52972044-97ab-4a30-a1b4-0bf64775932a/id_protocol_medewerkers_versie_juni_2026.pdf

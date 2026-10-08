@@ -8,7 +8,7 @@ pad: sources/raw/2025-vng-factsheet-informatiebronnen-natuur-groen.md
 hash: cb5dd75880f5096df35c536d05ab9bcf54ab3409a07841c4c52ff01bf9f0b43c
 tags:
 - beheer-openbare-ruimte
-brontype: beleid
+brontype: richtlijn
 beschrijving: VNG-factsheet met overzicht van informatiebronnen voor gemeentelijk
   natuur- en groenbeleid onder de Omgevingswet.
 url: https://vng.nl/sites/default/files/2025-08/factsheet-overzicht-informatiebronnen-natuur-en-groen.pdf

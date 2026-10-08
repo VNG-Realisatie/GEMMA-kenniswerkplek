@@ -9,7 +9,7 @@ hash: 5af984568d31f8ad9a750cd3e17e68c9bbc64b3c8fc189daced7f6062d070e5e
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): algemene
   procedures voor het bijhouden van persoonslijsten door gemeenten.'
 url: https://www.rvig.nl/hup/algemeen

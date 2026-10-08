@@ -8,7 +8,7 @@ pad: sources/raw/2024-vng-overheidsbrede-startsscan-voor-gemeenten.md
 hash: 1847afc40adff4bcc280ff7f5ac3dd70c8875f51254b1c186045bffd6c882e07
 tags:
 - dienstverlening
-brontype: beleid
+brontype: richtlijn
 ---
 
 # Overheidsbrede Startscan voor gemeenten

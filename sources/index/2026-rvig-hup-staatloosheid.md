@@ -9,7 +9,7 @@ hash: 298e5a1c6b6dcba554828a45ab46c844aaa5cb64ceae69eeb99f852253fb538d
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Staatloosheid.'
 url: https://www.rvig.nl/hup/staatloosheid
 url_pagina: https://www.rvig.nl/hup/nationaliteit

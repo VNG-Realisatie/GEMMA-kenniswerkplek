@@ -9,7 +9,7 @@ hash: 4de0dd147b4b57a7427316294ef35165d291a192fddbd5b11e904a3de7088f6d
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Het beeindigen
   van een onderzoek.'
 url: https://www.rvig.nl/hup/het-beeindigen-van-een-onderzoek

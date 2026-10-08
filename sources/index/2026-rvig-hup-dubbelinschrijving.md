@@ -9,7 +9,7 @@ hash: 4412e4aae9ea54ba2f9881e740ce29697ba8b35b80d9b6351ed3eeef5ddf1f8e
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Dubbelinschrijving.'
 url: https://www.rvig.nl/hup/dubbelinschrijving
 url_pagina: https://www.rvig.nl/hup/verblijfplaats

@@ -9,7 +9,7 @@ hash: 595ea5b1f3cdbec42b2a41fe5d7221798c84039309258baead6570b74c0a4a8c
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Wijziging
   geslachtsaanduiding.'
 url: https://www.rvig.nl/hup/wijziging-geslachtsaanduiding

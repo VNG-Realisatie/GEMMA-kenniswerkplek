@@ -9,7 +9,7 @@ hash: 83414acd55aeac68628157bb60584b015f34f848f6a961206a851a8786e35089
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Corrigeren
   gerelateerdengegevens.'
 url: https://www.rvig.nl/hup/corrigeren-gerelateerdengegevens

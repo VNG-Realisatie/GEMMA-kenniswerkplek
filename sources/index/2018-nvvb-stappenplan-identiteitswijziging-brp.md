@@ -9,7 +9,7 @@ hash: d5407abd04e2c81a59c33e01c2a13f75e221be87c63473d326713438c3c76e7f
 tags:
 - burgerzaken
 - identiteit
-brontype: beleid
+brontype: richtlijn
 beschrijving: Stappenplan van de NVVB voor een identiteitswijziging in de BRP.
 url: https://nvvb.nl/nl/producten-en-diensten/handreikingen/stappenplan/
 url_pagina: https://nvvb.nl/nl/producten-en-diensten/handreikingen/

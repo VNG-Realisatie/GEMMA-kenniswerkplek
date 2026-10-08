@@ -8,7 +8,7 @@ pad: sources/raw/2024-divosa-factsheet-bijzondere-bijstand-ontwikkelingen.md
 hash: 52a27b2b38faf1a1f068a2ee286e0ab517cfeb4f4a28f8fbba44518e27b5230c
 tags:
 - werk-en-inkomen
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Beleidswijzigingen bijzondere bijstand sinds 1991: decentralisatie,
   categoriale vormen, beschermingsbewind, energietoeslag, en parallelle ontwikkelingen
   (voedselbanken, toeslagen, Klijnsmagelden)'

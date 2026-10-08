@@ -9,7 +9,7 @@ hash: d72ff282a74e26c2ecf2460ff295bb3f027809e29a4dafc4db12a4c8738b5eff
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: gemeentelijke-regelgeving
 beschrijving: Handreiking van de NVVB over de beleidsregel voor briefadressen in de
   BRP.
 url: https://nvvb.nl/nl/producten-en-diensten/handreikingen/beleidsregel-briefadres/

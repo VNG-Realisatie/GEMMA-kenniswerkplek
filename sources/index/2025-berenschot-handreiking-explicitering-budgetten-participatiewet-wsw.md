@@ -8,7 +8,7 @@ pad: sources/raw/2025-berenschot-handreiking-explicitering-budgetten-participati
 hash: 1a0f17c01b7a9ec7c7adda019b0da2cefdf4e19abb410abe501d7b4de1869cef
 tags:
 - werk-en-inkomen
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handreiking die inzicht biedt in de financieringssystematiek van de
   Participatiewet en Wsw: bijstandsbudget, cluster Participatie in het gemeentefonds
   en integratie-uitkering Participatie.'

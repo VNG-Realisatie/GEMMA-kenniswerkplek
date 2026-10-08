@@ -9,7 +9,7 @@ hash: bc5d6ca562366986deb575919a8e3f77d6179e3a9f24dfe99d6ccf58533455db
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: Handreiking van de NVVB over adresonderzoek in de BRP.
 url: https://nvvb.nl/nl/producten-en-diensten/handreikingen/adresonderzoek/
 url_pagina: https://nvvb.nl/nl/producten-en-diensten/handreikingen/

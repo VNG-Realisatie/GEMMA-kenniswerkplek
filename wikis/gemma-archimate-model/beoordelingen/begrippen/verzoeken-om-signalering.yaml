@@ -193,6 +193,10 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Verwijzing: het college verzoekt de minister om weigering of vervallenverklaring van het reisdocument van iemand die zich door vertrek aan de invordering van belastingen, terugvorderingen of verhaalbare kosten dreigt te onttrekken (Paspoortwet art. 22, 25). Het verzoek ontstaat in de invordering, een onderwerp dat nog niet bestaat; een verzoek van de burgemeester bij fraude met reisdocumenten (art. 24 onder b) is daarnaast mogelijk. De gevolgen in dit onderwerp staan bij Signalering en Vervallen verklaren reisdocument.'
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Verwijzing naar een later onderwerp invordering (belastingen en terugvordering): het verzoek verandert geen reisdocument en de grond ontstaat in de invordering (Paspoortwet art. 22). Het verzoek van de burgemeester bij fraude met reisdocumenten (art. 24 onder b) staat in de beschrijving van Vervallen verklaren reisdocument.'
+  gevolg: verwerkt
 afgeleid:
   uitkomst:
     soort: verwijzing
@@ -203,8 +207,4 @@ afgeleid:
     generiek: false
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
-  herkomst: wet
-besluiten:
-- datum: '2026-10-07'
-  besluit: 'Verwijzing naar een later onderwerp invordering (belastingen en terugvordering): het verzoek verandert geen reisdocument en de grond ontstaat in de invordering (Paspoortwet art. 22). Het verzoek van de burgemeester bij fraude met reisdocumenten (art. 24 onder b) staat in de beschrijving van Vervallen verklaren reisdocument.'
-  gevolg: verwerkt
+  herkomst: rijksregelgeving

@@ -8,7 +8,7 @@ pad: sources/raw/2026-utrecht-huisvestingsverordening.md
 hash: ab087aab764f562295581507eac044344e9a5608d7b48f6b3f1374be7906eb37
 tags:
 - wonen
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: Verordening over verdeling woonruimte, huisvestingsvergunningen en wijzigingen
   woonruimtevoorraad
 url: https://lokaleregelgeving.overheid.nl/CVDR697254

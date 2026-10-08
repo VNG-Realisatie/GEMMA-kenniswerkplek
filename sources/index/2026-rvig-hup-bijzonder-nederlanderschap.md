@@ -9,7 +9,7 @@ hash: e6606637f1d533f27c81ea96132905ac16ca8afc07864701bed30c2dd6d1ebae
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Bijzonder
   nederlanderschap.'
 url: https://www.rvig.nl/hup/bijzonder-nederlanderschap

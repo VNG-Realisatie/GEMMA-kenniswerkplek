@@ -8,7 +8,7 @@ pad: sources/raw/2024-vng-implementatiehandleiding-model-participatieverordening
 hash: 37226817c24f093c3fb58914e41d490cc6e1d87d4d0364fac7717b25281fa658
 tags:
 - bestuur
-brontype: beleid
+brontype: richtlijn
 beschrijving: Implementatiehandleiding bij de VNG Model Participatieverordening 2024
   met toelichting op twee varianten voor gemeentelijke participatieverordeningen.
 url: https://vng.nl/sites/default/files/2024-12/bijlage_2_lb_24_051_implementatiehandleiding_vng_model_participatieverordening_2024.pdf

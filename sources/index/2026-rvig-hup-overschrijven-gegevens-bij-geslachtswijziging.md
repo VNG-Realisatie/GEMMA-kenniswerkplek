@@ -9,7 +9,7 @@ hash: bfb6b40ac885734da8bea8635971d9603b23e3773ef80b96dd3e6d2e234da71a
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Overschrijven
   gegevens bij geslachtswijziging.'
 url: https://www.rvig.nl/hup/overschrijven-gegevens-bij-geslachtswijziging

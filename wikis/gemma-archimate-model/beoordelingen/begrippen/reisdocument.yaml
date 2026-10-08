@@ -273,7 +273,7 @@ afgeleid:
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   - 2026-rvig-hup-reisdocument
   - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  herkomst: wet
+  herkomst: rijksregelgeving
   ggm:
     ggm_entiteit: Reisdocument
     ggm_guid: EAID_CA9BC1BB_D572_4e47_BECF_17CFD379BD6A

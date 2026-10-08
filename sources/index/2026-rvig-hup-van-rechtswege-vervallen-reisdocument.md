@@ -9,7 +9,7 @@ hash: c5af6e88d5ad34ff4ed838fc4aeb3609e449705df1a1cddc4890f541b39e0599
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Van rechtswege
   vervallen reisdocument.'
 url: https://www.rvig.nl/hup/van-rechtswege-vervallen-reisdocument

@@ -36,7 +36,7 @@ wikis/gemma-archimate-model/
 │   ├── procesarchitectuur-terugmeldingen.yaml   register van terugmeldingen aan de GEMMA-procesarchitectuur
 │   ├── objecten.yaml                 welk Archi-object een hernoemd, samengevoegd of gesplitst element voortzet
 │   └── beleidsdomeinen.yaml          de beschrijving van een beleidsdomein (Beleidsdomeinindeling)
-├── bronanalyses/<onderwerp>/<bron-id>.md   wat een bron betekent voor de architectuur (AI)
+├── bronanalyses/<onderwerp>/<brontype>/<bron-id>.md   wat een bron betekent voor de architectuur (AI)
 ├── analyses/                         analyses en besluiten (AI), plus ggm-terugmeldingen.md en procesarchitectuur-terugmeldingen.md (gegenereerd)
 ├── bedrijfsarchitectuur/ · motivatie/ · begrippen/   gegenereerd door tools/render.py
 ├── ter-beoordeling.md · voortgang.md                gegenereerd door tools/render.py
@@ -130,8 +130,8 @@ Eén plek: skill [gemma-archimate-model-criteria](.agents/skills/gemma-archimate
 
 ## 8. Bronvoorrang en definities
 
-- Brontype per bron (in de intake): `wet`, `informatiemodel`, `beleid`, `overig`, `model`. De volgorde staat in `wiki.yaml` (`bronvoorrang`); `model` (het GEMMA-model) is een matchdoel en valt erbuiten. De herkomst op de begrippenlijst is het brontype van de hoogste bron van het begrip.
-- Wet en informatiemodel bepalen welke begrippen er zijn en wat ze formeel betekenen; beleid levert de gangbare taal. Voorrang bepaalt niet of iets een element is.
+- Brontype per bron (in de intake): `europese-regelgeving`, `rijksregelgeving`, `informatiemodel`, `richtlijn`, `gemeentelijke-regelgeving`, `beleid`, `overig`, `model`. De volgorde staat in `wiki.yaml` (`bronvoorrang`); `model` (het GEMMA-model) is een matchdoel en valt erbuiten. De herkomst op de begrippenlijst is het brontype van de hoogste bron van het begrip.
+- De betekenis van elk brontype staat in de regel Bronvoorrang (`AGENTS.md`). Landelijke regelgeving (`europese-regelgeving`, `rijksregelgeving`) en `informatiemodel` bepalen welke begrippen er zijn en wat ze formeel betekenen; `richtlijn`, `beleid` en `overig` leveren de gangbare taal. Voorrang bepaalt niet of iets een element is.
 - De naam en de herkenbare `definitie` komen uit de gangbare taal; de wetsterm wordt een synoniem met context "wet" (bijv. *Urn*, met *asbus*). Zie [references/naamgeving.md](.agents/skills/gemma-archimate-model-beoordelen/references/naamgeving.md) en [references/definitie.md](.agents/skills/gemma-archimate-model-beoordelen/references/definitie.md).
 
 ## 9. Relaties

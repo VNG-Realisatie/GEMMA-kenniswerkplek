@@ -9,7 +9,7 @@ hash: 337274eddf6fe9285e89d2274f3be75f983b35d59709ac8166bb8a60363b00f4
 tags:
 - openbare-orde-en-veiligheid
 - openbare-gezondheid
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: APV van de gemeente Groningen (CVDR646003, versie geldend vanaf 2025-12-24),
   volgens de opzet van de VNG-model-APV; afdeling 5.7 regelt de verstrooiing van as.
 url: https://lokaleregelgeving.overheid.nl/CVDR646003/13

@@ -8,7 +8,7 @@ pad: sources/raw/2014-rijk-jeugdwet.md
 hash: 561ad9c5c9c9694562e307e5e8c766cee22a5f041e372fad629635718a8602c8
 tags:
 - maatschappelijke-ondersteuning
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: Wet gemeentelijke verantwoordelijkheid voor preventie, ondersteuning,
   hulp en zorg aan jeugdigen en ouders bij opgroei- en opvoedingsproblemen, psychische
   problemen en stoornissen

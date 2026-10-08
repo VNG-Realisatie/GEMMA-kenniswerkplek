@@ -8,7 +8,7 @@ pad: sources/raw/2026-utrecht-beleidsregel-huisvestingsverordening.md
 hash: 8d7dc890984d9ef09574aca86310225683a4ca8247301030cd8cd21960789869
 tags:
 - wonen
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: Beleidsregel bij de Huisvestingsverordening over omzetting, opkoopbescherming
   en goed verhuurderschap
 url: https://lokaleregelgeving.overheid.nl/CVDR698476

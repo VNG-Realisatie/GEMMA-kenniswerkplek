@@ -9,7 +9,7 @@ hash: 9bcc450c64c116a6fe609b5cc27887728c57d95266942d2b5809e4de7ae46711
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Vaststelling
   geslachtsnaam.'
 url: https://www.rvig.nl/hup/vaststelling-geslachtsnaam

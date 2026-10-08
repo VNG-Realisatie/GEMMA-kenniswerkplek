@@ -121,7 +121,7 @@ def bronnen_van(data: dict) -> list[str]:
 
 def pagina_pad(ctx: Context, paginatype: str, data: dict, beoordeling_id: str) -> str:
     definitie = ctx.wiki_yaml["page_types"][paginatype]
-    delen = [definitie["dir"]] + [slug(data[s]) for s in definitie.get("submappen", []) if data.get(s)]
+    delen = [definitie["dir"]] + [slug(w) for s in definitie.get("submappen", []) if (w := bepaal_type.submap(data, s))]
     return "/".join(delen + [f"{beoordeling_id}.md"])
 
 
@@ -138,7 +138,7 @@ def _controleer_element(ctx: Context, bid: str, data: dict, uitkomst: dict, res:
         if not data.get(veld):
             res.fouten.append(f"{bid}: element zonder '{veld}'")
     for veld in ctx.wiki_yaml["page_types"][paginatype].get("submappen", []):
-        if not data.get(veld):
+        if not bepaal_type.submap(data, veld):
             res.fouten.append(f"{bid}: {paginatype} zonder '{veld}' (bepaalt de map)")
     if uitkomst.get("data_object") == "ja" or paginatype in ("bedrijfsobject", "product"):
         if not data.get("ggm"):
@@ -278,6 +278,12 @@ def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat, r
         b = m.get("bevinding")
         if b and not (isinstance(b, str) or (isinstance(b, list) and all(isinstance(a, str) and a for a in b))):
             res.fouten.append(f"{label} {m['nummer']}: 'bevinding' is een tekst of een lijst alinea's")
+        elif b and m.get("status") == "open":
+            # een open melding is leesbaar en bruikbaar: de bevinding en een voorstel elk in een eigen alinea (2026-10-08)
+            alineas = [b] if isinstance(b, str) else b
+            for kop in ("**Bevinding:**", "**Voorstel:**"):
+                if not any(a.startswith(kop) for a in alineas):
+                    res.fouten.append(f"{label} {m['nummer']}: een open melding heeft een alinea die begint met {kop}")
         for element in ([m["element"]] if m.get("element") else []) + list(m.get("elementen") or []):
             if (uitkomsten.get(element) or {}).get("soort") != "element":
                 res.waarschuwingen.append(f"{label} {m['nummer']}: element '{element}' is (nog) geen element")
@@ -445,6 +451,10 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,
                                                               ctx.gemma(), gemeld)
     res.fouten += signalen.bronanalyses(wiki_root, onderwerpen) + signalen.modelmappen(wiki_root)
+    fouten, waarschuwingen = signalen.wettelijke_grondslag({b: nieuw.get(b, alle[b][1]) for b in alle}, elementen,
+                                                           lambda i: gam_gemeen.brontype(wiki_root, i))
+    res.fouten += fouten
+    res.waarschuwingen += waarschuwingen
     register = _terugmeldingen(ctx, uitkomsten, res)
     if res.fouten:
         return res

@@ -9,7 +9,7 @@ hash: 0f65e8b102bcfdbd85f5c6f7d5a24265e9ec47ef34831912514ff49ef6e17352
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Signalering
   verstrekking reisdocument.'
 url: https://www.rvig.nl/hup/signalering-verstrekking-reisdocument

@@ -9,7 +9,7 @@ hash: f1d4cc74427e69f210ba7d4a91ded9d230e70b9ed658b4f690343f083d116109
 tags:
 - basisregistraties
 - wet
-brontype: wet
+brontype: rijksregelgeving
 url: https://wetten.overheid.nl/BWBR0033715/2026-10-01
 opgehaald: '2026-10-01'
 ---

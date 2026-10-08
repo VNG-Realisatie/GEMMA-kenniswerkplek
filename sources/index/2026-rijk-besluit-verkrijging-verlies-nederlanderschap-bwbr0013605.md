@@ -9,7 +9,7 @@ hash: a7df3f41c63eb21702a8cf4d3b7a5174c777f724ef8e6be5bfbe0a5104c4b471
 tags:
 - burgerzaken
 - nederlanderschap
-brontype: wet
+brontype: rijksregelgeving
 url: https://wetten.overheid.nl/BWBR0013605
 opgehaald: '2026-10-06'
 ---

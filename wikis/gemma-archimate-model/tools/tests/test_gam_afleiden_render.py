@@ -11,15 +11,18 @@ from llmwiki import beoordeling, logbook
 WET = "2026-overheid-gemeentewet"
 
 
+BRONTYPE = {WET: "rijksregelgeving", "2026-vng-ggm": "informatiemodel", "2026-utrecht-nota": "beleid"}
+
+
 @pytest.fixture
 def wiki(archimate_repo):
     root, wiki = archimate_repo
     bronnen = [WET, "2026-vng-ggm", "2026-utrecht-nota"]
     for bron_id in bronnen:
-        pad = wiki / "bronanalyses" / "test" / f"{bron_id}.md"
+        pad = wiki / "bronanalyses" / "test" / BRONTYPE[bron_id] / f"{bron_id}.md"
         pad.parent.mkdir(parents=True, exist_ok=True)
         pad.write_text(f"---\nid: {bron_id}\ntype: bronanalyse\nonderwerp: test\nbronnen: [{bron_id}]\n---\n\n# {bron_id}\n\n"
-                       f"Bron: [tekst](../../../../sources/raw/{bron_id}.md)\n", encoding="utf-8")
+                       f"Bron: [tekst](../../../../../sources/raw/{bron_id}.md)\n", encoding="utf-8")
     beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/test.yaml",
                         {"naam": "Test", "status": "in-behandeling", "omschrijving": ["Een onderwerp."], "bronnen": bronnen})
     (wiki / "beoordelingen/begrippen").mkdir(parents=True)
@@ -76,12 +79,12 @@ def test_beoordelingen_worden_paginas_met_relaties_in_beide_richtingen(wiki):
     bo, proces = _lees(wiki, "beschikking"), _lees(wiki, "behandelen-aanvraag")
     assert (bo["status"], proces["status"]) == ("review", "review")
     assert bo["afgeleid"]["pad"] == "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md"
-    assert bo["afgeleid"]["herkomst"] == "wet"
+    assert bo["afgeleid"]["herkomst"] == "rijksregelgeving"
 
     pagina = (wiki / bo["afgeleid"]["pad"]).read_text(encoding="utf-8")
     assert "#### Inkomend" in pagina
     assert "[Behandelen aanvraag](../../../bedrijfsprocessen/8-wonen/vergunningen/behandelen-aanvraag.md)" in pagina
-    assert f"[{WET}](../../../../bronanalyses/test/{WET}.md)" in pagina
+    assert f"[{WET}](../../../../bronanalyses/test/rijksregelgeving/{WET}.md)" in pagina
     assert "**Status: review.**" in pagina
     lijst = (wiki / "begrippen/test.md").read_text(encoding="utf-8")
     assert "[Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md)" in lijst
@@ -223,14 +226,27 @@ def test_harde_fouten_schrijven_niets(wiki, wijziging, melding):
 def test_nieuwe_terugmelding_krijgt_het_volgende_nummer(wiki):
     _schrijf(wiki, "beschikking", _bo())
     register = {"terugmeldingen": [
-        {"nummer": 1, "domein": "Vergunningen", "type": "hiaat", "bevinding": "Ontbreekt.", "element": "beschikking", "status": "open"},
-        {"domein": "Vergunningen", "type": "definitie", "bevinding": "Te smal.", "element": "beschikking"}]}
+        {"nummer": 1, "domein": "Vergunningen", "type": "hiaat", "bevinding": ["**Bevinding:** ontbreekt.", "**Voorstel:** opnemen."],
+         "element": "beschikking", "status": "open"},
+        {"domein": "Vergunningen", "type": "definitie", "bevinding": ["**Bevinding:** te smal.", "**Voorstel:** verbreden."],
+         "element": "beschikking"}]}
     beoordeling.schrijf(wiki / afleiden.TERUGMELDINGEN, register)
     _afleiden(wiki)
     meldingen = beoordeling.laad(wiki / afleiden.TERUGMELDINGEN)["terugmeldingen"]
     assert [(m["nummer"], m["status"]) for m in meldingen] == [(1, "open"), (2, "open")]
     pagina = (wiki / _lees(wiki, "beschikking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
     assert "[Nummer 2](../../../../analyses/ggm-terugmeldingen.md)" in pagina
+
+
+def test_open_terugmelding_zonder_voorstel_is_een_fout(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    register = {"terugmeldingen": [
+        {"nummer": 1, "domein": "Vergunningen", "type": "hiaat", "bevinding": ["**GGM:** ontbreekt.", "**Bevinding:** nodig."],
+         "element": "beschikking", "status": "open"},
+        {"nummer": 2, "domein": "Vergunningen", "type": "hiaat", "bevinding": "Oud.", "element": "beschikking", "status": "opgelost"}]}
+    beoordeling.schrijf(wiki / afleiden.TERUGMELDINGEN, register)
+    res = afleiden.afleiden(wiki, schrijven=False)
+    assert res.fouten == ["terugmelding 1: een open melding heeft een alinea die begint met **Voorstel:**"]
 
 
 def test_signalen_noemen_de_regel_bij_naam(wiki):
@@ -242,8 +258,16 @@ def test_signalen_noemen_de_regel_bij_naam(wiki):
     assert any("regel Beslistabel beslist" in w and "geregistreerd" in w for w in res.waarschuwingen)
 
 
+def test_bronanalyse_staat_in_de_map_van_haar_brontype(wiki):
+    pad = wiki / "bronanalyses" / "test" / "rijksregelgeving" / f"{WET}.md"
+    fout = wiki / "bronanalyses" / "test" / "beleid" / f"{WET}.md"
+    pad.rename(fout)
+    _schrijf(wiki, "beschikking", _bo())
+    assert f"bronanalyses/test/beleid/{WET}.md: hoort in bronanalyses/test/rijksregelgeving/" in afleiden.afleiden(wiki).fouten
+
+
 def test_bronanalyse_zonder_bronregel_is_een_fout(wiki):
-    pad = wiki / "bronanalyses" / "test" / f"{WET}.md"
+    pad = wiki / "bronanalyses" / "test" / "rijksregelgeving" / f"{WET}.md"
     pad.write_text(pad.read_text(encoding="utf-8").replace("Bron: ", "Zie: "), encoding="utf-8")
     _schrijf(wiki, "beschikking", _bo())
     assert any("'Bron:'" in f for f in afleiden.afleiden(wiki).fouten)
@@ -630,3 +654,31 @@ def test_begrippenlijst_en_voortgang_tonen_thuisonderwerp_en_samenhang(wiki):
     voortgang = (wiki / "voortgang.md").read_text(encoding="utf-8")
     assert "## Samenhang tussen onderwerpen" in voortgang
     assert "| Ander | 1 | 0 | 0 | Test 1 |" in voortgang and "| Test | 1 | 1 | 0 | Ander 1 |" in voortgang
+
+
+def test_wettelijke_grondslag():
+    import signalen
+
+    def el(paginatype):
+        return {"paginatype": paginatype, "soort": "element"}
+    def data(bronnen, **extra):
+        return {"afgeleid": {"bronnen": bronnen}, **extra}
+    soorten = {"wet": "rijksregelgeving", "hup": "richtlijn", "2025-vng-upl-producten": "informatiemodel", "site": "overig"}
+    alle = {
+        "wet-x": data(["wet"], regelgever="rijk", relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
+        "hup-x": data(["hup"], regelgever="landelijke organisatie",
+                      relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
+        "dienst-a": data(["site"]),                       # gegrond via het beleidskader van het Rijk
+        "dienst-upl": data(["2025-vng-upl-producten"]),   # UPL zonder landelijke grondslag: blijft, geen uitwerking
+        "proces-upl": data(["wet"], relaties=[{"soort": "realisatie", "naar": "dienst-upl"}]),
+        "rol-zonder": data(["site"]),
+        "functie": data(["site"]),
+    }
+    elementen = {"wet-x": el("beleidskader"), "hup-x": el("beleidskader"), "dienst-a": el("dienst"),
+                 "dienst-upl": el("dienst"), "proces-upl": el("bedrijfsproces"), "rol-zonder": el("rol"),
+                 "functie": el("bedrijfsfunctie")}
+    fouten, signalen_ = signalen.wettelijke_grondslag(alle, elementen, soorten.get)
+    assert fouten == ["hup-x: een richtlijn is geen wettelijke grondslag; noem de relatie naar 'dienst-a' 'geeft "
+                      "richtlijn voor' (regel Wettelijke grondslag)"]
+    assert [s.split(":")[0] for s in signalen_] == ["rol-zonder", "proces-upl"]
+    assert "realiseert UPL-product 'dienst-upl'" in signalen_[1]

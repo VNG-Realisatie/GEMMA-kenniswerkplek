@@ -316,13 +316,17 @@ def bronanalyses(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
     en dat de bron in de bronnenlijst van het onderwerp staat."""
     fouten = []
     repo = paths.find_repo_root(wiki_root)
-    map_ = wiki_root / paths.load_wiki_yaml(wiki_root)["page_types"].get("bronanalyse", {}).get("dir", "bronanalyses")
+    map_ = gam_gemeen.bronanalyse_map(wiki_root)
     for pad in sorted(map_.glob("*/*.md")):
+        fouten.append(f"{pad.relative_to(wiki_root).as_posix()}: hoort in een map per brontype, "
+                      f"{map_.name}/<onderwerp>/<brontype>/")
+    for pad in gam_gemeen.bronanalyses(wiki_root):
         rel = pad.relative_to(wiki_root).as_posix()
         page = frontmatter.read(pad)
         onderwerp, bron_id = page.meta.get("onderwerp"), page.meta.get("id")
-        if pad.parent.name != onderwerp:
-            fouten.append(f"{rel}: hoort in {map_.name}/{onderwerp}/")
+        soort = gam_gemeen.brontype(wiki_root, bron_id) or "zonder-brontype"
+        if pad.parent.parent.name != onderwerp or pad.parent.name != soort:
+            fouten.append(f"{rel}: hoort in {map_.name}/{onderwerp}/{soort}/")
         if bron_id != pad.stem or bron_id not in (page.meta.get("bronnen") or []):
             fouten.append(f"{rel}: id is de bestandsnaam en staat zelf in bronnen:")
         tekst = (repo / "sources" / "raw" / f"{bron_id}.md").resolve()
@@ -352,3 +356,63 @@ def modelmappen(wiki_root: Path) -> list[str]:
             if melding:
                 fouten.append(f"{pad.relative_to(wiki_root).as_posix()}: {melding}")
     return fouten
+
+
+LANDELIJK = ("europese-regelgeving", "rijksregelgeving")
+UPL_BRON = re.compile(r"-vng-upl-")
+
+
+def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], brontype) -> tuple[list[str], list[str]]:
+    """Regel Wettelijke grondslag (besluiten redacteur 2026-10-08). `brontype` geeft per bron-id het brontype.
+
+    Fout: een relatie *is grondslag voor* vanuit een beleidskader in Richtlijn (een richtlijn is geen wettelijke
+    grondslag). Signaal: een element zonder landelijke wettelijke bron (een bron van `europese-regelgeving` of
+    `rijksregelgeving`, of een relatie *is grondslag voor* van een beleidskader van de EU of het Rijk), behalve een
+    UPL-product of -dienst, een bedrijfsfunctie en een beleidskader; en een bedrijfsproces dat een UPL-product zonder
+    landelijke grondslag realiseert (zo'n product wordt niet uitgewerkt)."""
+    fouten, signalen_ = [], []
+    landelijk_kader = {b for b, u in elementen.items()
+                       if u["paginatype"] == "beleidskader" and alle[b].get("regelgever") in ("EU", "rijk")}
+    gegrond: set[str] = set()
+    for b, u in elementen.items():
+        if u["paginatype"] != "beleidskader":
+            continue
+        for r in alle[b].get("relaties", []):
+            if r.get("naam") != "is grondslag voor":
+                continue
+            if alle[b].get("regelgever") == "landelijke organisatie":
+                fouten.append(f"{b}: een richtlijn is geen wettelijke grondslag; noem de relatie naar '{r['naar']}' "
+                              "'geeft richtlijn voor' (regel Wettelijke grondslag)")
+            if b in landelijk_kader:
+                gegrond.add(r["naar"])
+
+    def bronnen(b: str) -> set[str]:
+        data = alle[b]
+        ids = set((data.get("afgeleid") or {}).get("bronnen", []))
+        for r in data.get("relaties", []):
+            ids |= set(r.get("bronnen") or [])
+        return ids
+
+    def landelijk(b: str) -> bool:
+        return b in gegrond or any(brontype(i) in LANDELIJK for i in bronnen(b))
+
+    def upl(b: str) -> bool:
+        return elementen[b]["paginatype"] in ("product", "dienst") and any(UPL_BRON.search(i) for i in bronnen(b))
+
+    zonder = set()
+    for b, u in sorted(elementen.items()):
+        if u["paginatype"] in ("beleidskader", "bedrijfsfunctie") or landelijk(b):
+            continue
+        if upl(b):
+            zonder.add(b)
+            continue
+        signalen_.append(f"{b}: geen landelijke wettelijke bron (europese-regelgeving of rijksregelgeving); "
+                         "voeg de wet met artikel toe, of het element blijft niet (regel Wettelijke grondslag)")
+    for b, u in sorted(elementen.items()):
+        if u["paginatype"] != "bedrijfsproces":
+            continue
+        for r in alle[b].get("relaties", []):
+            if r["soort"] == "realisatie" and r["naar"] in zonder:
+                signalen_.append(f"{b}: realiseert UPL-product '{r['naar']}' zonder landelijke grondslag; zo'n product "
+                                 "wordt niet uitgewerkt in processen (regel Wettelijke grondslag)")
+    return fouten, signalen_

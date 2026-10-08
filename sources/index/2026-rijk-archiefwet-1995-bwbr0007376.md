@@ -9,7 +9,7 @@ hash: f693a93a203fecd90cc5fc641c3a7d7909ffdbf418d922fca0124e780867a5ae
 tags:
 - archief
 - wet
-brontype: wet
+brontype: rijksregelgeving
 url: https://wetten.overheid.nl/BWBR0007376/2024-06-19
 opgehaald: '2026-10-01'
 ---

@@ -8,7 +8,7 @@ pad: sources/raw/2025-oost-gelre-beleidsregels-jeugdhulp.md
 hash: 368bfcb0fc814aca6e9c8b92c509133a6f9fbcfe0dedc56dad54b1ea8fe60fea
 tags:
 - maatschappelijke-ondersteuning
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: 'Beleidsregels jeugdhulp Oost Gelre 2025: procedure, beoordeling aanspraak,
   eigen kracht, vormen van jeugdhulp en PGB.'
 url: https://lokaleregelgeving.overheid.nl/CVDR736501/

@@ -9,7 +9,7 @@ hash: 11eff9f2f710e37816777b2908127a2e2a5626df6be8c43251a87a925a7962f2
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Wijzigen
   identificatienummers.'
 url: https://www.rvig.nl/hup/wijzigen-identificatienummers

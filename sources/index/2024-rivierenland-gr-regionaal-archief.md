@@ -9,7 +9,7 @@ pad: sources/raw/2024-rivierenland-gr-regionaal-archief.md
 hash: d0a1bfb0e29fc34ab57f622b0a789f2ae824a52279c3882075e13749fad4583e
 tags:
 - erfgoed
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: Gemeenschappelijke regeling voor het Regionaal Archief Rivierenland
   als regionaal kennis- en informatiecentrum voor lokale en regionale geschiedenis
 url: https://lokaleregelgeving.overheid.nl/CVDR722169/1

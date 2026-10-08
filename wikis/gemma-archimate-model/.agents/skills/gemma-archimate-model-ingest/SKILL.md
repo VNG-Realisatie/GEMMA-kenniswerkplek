@@ -16,12 +16,19 @@ metadata:
 
 Volg `wiki-ingest`. Voor deze wiki is `--brontype` verplicht:
 
+Kies het brontype volgens de regel Bronvoorrang in `AGENTS.md`; daar staan de volgorde en de betekenis. Voorbeelden:
+
 | Brontype | Voorbeelden |
 |---|---|
-| `wet` | wetten.overheid.nl, lokale verordeningen en regelingen |
-| `informatiemodel` | GGM, RSGB, RGBZ, catalogi van basisregistraties, ZTC, MIM-modellen; architectuurmodellen zoals de UPL-lijsten van de GEMMA-procesarchitectuur (zelfde voorrang, besluit redacteur 2026-10-04) |
-| `beleid` | beleidsnota's, raadsvoorstellen, VNG-handreikingen |
-| `overig` | websites, presentaties, overige documenten |
+| `europese-regelgeving` | eur-lex.europa.eu: AVG, AI-verordening |
+| `rijksregelgeving` | wetten.overheid.nl: wetten, AMvB's, ministeriële regelingen, verdragen |
+| `informatiemodel` | GGM, RSGB, RGBZ, ZTC, MIM-modellen, catalogi van basisregistraties, UPL-lijsten (zelfde voorrang, besluit redacteur 2026-10-04) |
+| `richtlijn` | HUP en circulaires van RvIG, handreikingen en werkinstructies van NVVB, VNG-handreikingen en -raadgevers, Divosa |
+| `gemeentelijke-regelgeving` | lokaleregelgeving.overheid.nl: verordeningen (ook de APV), nadere regels, beleidsregels; VNG-modelverordeningen |
+| `beleid` | beleidsnota's, visies, programma's en raadsvoorstellen van een gemeente |
+| `overig` | productpagina's, websites, presentaties |
+
+Alleen `europese-regelgeving` en `rijksregelgeving` tellen als landelijke wettelijke bron (regel Wettelijke grondslag).
 
 Het GGM en het GEMMA-model komen niet via deze stap binnen, maar via de release-skills.
 
@@ -41,7 +48,7 @@ Lees de bron en bespreek met de redacteur, vóór je schrijft: hoe rijk is de br
 
 ## 4. Bronanalyse schrijven
 
-Pad `bronanalyses/<onderwerp>/<bron-id>.md` (schema `schemas/bronanalyse.schema.json`):
+Pad `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md`, met het brontype uit de intake (regel Bronvoorrang; `tools/afleiden.py` controleert de map) (schema `schemas/bronanalyse.schema.json`):
 
 ```markdown
 ---
@@ -75,7 +82,7 @@ Welke objecten, rollen, processen, diensten of gebeurtenissen; welke specialisat
 > Letterlijke tekst die een begrip definieert. (vindplaats: art./§/pagina)
 ```
 
-De regel `Bron:` zet het gereedschap: `uv run python -m llmwiki source bronregel <bron-id> --van bronanalyses/<onderwerp>/<bron-id>.md --schrijf`, nadat de pagina met titel bestaat. Het is de schakel van de pagina's naar de brontekst; zonder die regel meldt `tools/afleiden.py` een fout. Citaten zijn platte tekst, zonder links.
+De regel `Bron:` zet het gereedschap: `uv run python -m llmwiki source bronregel <bron-id> --van bronanalyses/<onderwerp>/<brontype>/<bron-id>.md --schrijf`, nadat de pagina met titel bestaat. Het is de schakel van de pagina's naar de brontekst; zonder die regel meldt `tools/afleiden.py` een fout. Citaten zijn platte tekst, zonder links.
 
 In *Andere termen in deze bron* staan de andere namen die de bron voor hetzelfde begrip gebruikt, en bij een beleids- of praktijkbron de wetsterm waarnaar de bron verwijst (bijv. "urn" in de bron, wettelijk "asbus"). Zo zijn wetsterm en gangbare term al bij de ingest aan elkaar gekoppeld.
 

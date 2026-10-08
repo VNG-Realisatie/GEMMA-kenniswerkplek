@@ -8,7 +8,7 @@ pad: sources/raw/2022-utrecht-beleidsregel-parkeernormen-fiets-2021.md
 hash: 7710154725a8f74550dbe1620bab872622f3724977b2a31707d681b53f8761ce
 tags:
 - mobiliteit
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: Beleidsregel die de parkeereis voor fietsen bepaalt bij bouwontwikkelingen
   waarvoor een omgevingsvergunning nodig is.
 url: https://lokaleregelgeving.overheid.nl/CVDR668766

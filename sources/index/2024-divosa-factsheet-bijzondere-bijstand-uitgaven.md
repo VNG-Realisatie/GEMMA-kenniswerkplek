@@ -8,7 +8,7 @@ pad: sources/raw/2024-divosa-factsheet-bijzondere-bijstand-uitgaven.md
 hash: 294ea12a1a9c5c74a15362e43f173a3c8cc506dd730f5e1ca1d426ac5d08d2d5
 tags:
 - werk-en-inkomen
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Uitgavenanalyse bijzondere bijstand 2010-2022: positie in sociaal domein,
   tienjarige trend, clusterverschillen (beschermingsbewind, zorgverzekering, energietoeslag),
   gemeentelijke variatie'

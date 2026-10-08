@@ -9,7 +9,7 @@ hash: 94e626994a3bbc066dbfed2bfa879d20f41cbb832c3d1e6a3f5fcfec01e17924
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: Procesbeschrijving van de NVVB voor de aanvraag van een mededeling op
   grond van artikel 2.17 Wet BRP (versie juli 2025).
 url: https://nvvb.nl/media/filer_public/68/61/6861126c-4a15-487b-b6ee-e246566f2d3f/update_30_stap_6_aangepast_pro_aanvr_mededeling_ex_artikel_2_17_wet_brp_juli2025.pdf

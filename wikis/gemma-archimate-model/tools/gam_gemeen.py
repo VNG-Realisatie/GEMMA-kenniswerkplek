@@ -138,6 +138,25 @@ def modelbronnen(wiki_root: Path = WIKI_ROOT) -> set[str]:
     return {y.get("ggm", {}).get("bron"), y.get("gemma", {}).get("bron")} - {None}
 
 
+def bronanalyse_map(wiki_root: Path = WIKI_ROOT) -> Path:
+    return wiki_root / wiki_yaml(wiki_root).get("page_types", {}).get("bronanalyse", {}).get("dir", "bronanalyses")
+
+
+def bronanalyses(wiki_root: Path = WIKI_ROOT, onderwerp: str = "*") -> list[Path]:
+    """De bronanalyses, in `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md` (besluit redacteur 2026-10-08)."""
+    return sorted(bronanalyse_map(wiki_root).glob(f"{onderwerp}/*/*.md"))
+
+
+def brontype(wiki_root: Path, bron_id: str) -> str | None:
+    """Het brontype van een bron uit de intake (`sources/index/<bron-id>.md`)."""
+    from llmwiki import sources
+
+    try:
+        return sources.read_index_entry(paths.find_repo_root(wiki_root), bron_id).get("brontype")
+    except FileNotFoundError:
+        return None
+
+
 def bron_doel(wiki_root: Path, bron_id: str) -> Path | None:
     """Waar een verwijzing naar deze bron heen linkt: de bronanalyse. Een modelbron (GGM, GEMMA) heeft geen
     bronanalyse (tools/ggm.py en tools/gemma.py zijn haar lens) en linkt naar haar tekst in sources/raw/. Een bron die
@@ -145,8 +164,7 @@ def bron_doel(wiki_root: Path, bron_id: str) -> Path | None:
     if bron_id in modelbronnen(wiki_root):
         pad = paths.find_repo_root(wiki_root) / "sources" / "raw" / f"{bron_id}.md"
         return pad.resolve() if pad.exists() else None
-    map_ = wiki_root / wiki_yaml(wiki_root).get("page_types", {}).get("bronanalyse", {}).get("dir", "bronanalyses")
-    treffers = sorted(map_.glob(f"*/{bron_id}.md"))
+    treffers = sorted(bronanalyse_map(wiki_root).glob(f"*/*/{bron_id}.md"))
     if treffers:
         return treffers[0].resolve()
     from llmwiki import frontmatter

@@ -9,7 +9,7 @@ hash: dfcfb00c3b9522e8f09d71528ec3eb0482ea4812dc4828bae2d7da9cb193adb2
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): De soorten
   gegevens.'
 url: https://www.rvig.nl/hup/de-soorten-gegevens

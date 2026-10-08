@@ -10,7 +10,7 @@ tags:
 - wet
 - vog
 - burgerzaken
-brontype: wet
+brontype: rijksregelgeving
 beschrijving: Besluit justitiële en strafvorderlijke gegevens.
 url: https://wetten.overheid.nl/BWBR0016544
 opgehaald: '2026-10-07'

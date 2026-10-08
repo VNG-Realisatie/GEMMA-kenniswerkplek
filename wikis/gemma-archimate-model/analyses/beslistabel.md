@@ -46,7 +46,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 11. Is het een communicatiekanaal waarlangs een dienst beschikbaar komt? (*toegangspunt*)
 12. Is het een fysieke plaats als zodanig, en geen gebiedsindeling als gegeven? (*plaats*)
 13. Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer wordt geleverd? (*aanbod als geheel*)
-14. Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? (*regeling als geheel*)
+14. Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? (*regeling als geheel*)
 
 **Partij.** Alleen bij *handelende partij*, *hoedanigheid*, *samenwerkingsverband* of *toegangspunt*; *soort partij* bij *handelende partij* en *samenwerkingsverband*.
 
@@ -103,9 +103,9 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 
 **Beleidskader.** Alleen bij *regeling als geheel*.
 
-56. Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? (*landelijk*)
+56. Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? (*landelijk*)
 57. Is de regeling geldend recht, of als modelverordening actueel? (*in werking*)
-58. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? Noem het artikel en het gedrag. (*is grondslag voor*)
+58. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. (*is grondslag voor*)
 
 **Specialisatie.** Altijd, als het type een pagina heeft.
 
@@ -136,7 +136,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 | **toegangspunt**: Is het een communicatiekanaal waarlangs een dienst beschikbaar komt? | Ja: publieksbalie; gemeentelijke website. Nee: klantcontact. Herkomst: NORA (definitie Kanaal). |
 | **plaats**: Is het een fysieke plaats als zodanig, en geen gebiedsindeling als gegeven? | Ja: stadskantoor als vestigingsplaats. Nee: wijk (indeling). Herkomst: ArchiMate (Location). |
 | **aanbod als geheel**: Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer wordt geleverd? | Ja: bewonersparkeervergunning zoals de productencatalogus haar aanbiedt. Nee: parkeren. Herkomst: GEMMA (definitie Product). |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? | Ja: Wet op de lijkbezorging; modelverordening participatie. Nee: 'verordening' als soort (bedrijfsobject Regeling); artikel 16 (losse norm). Herkomst: GEMMA (definitie Beleidskader). |
+| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja: Wet op de lijkbezorging; modelverordening participatie; Circulaire adresonderzoek BRP. Nee: 'verordening' als soort (bedrijfsobject Regeling); artikel 16 (losse norm). Herkomst: GEMMA (definitie Beleidskader). |
 
 **Partij.** Alleen bij *handelende partij*, *hoedanigheid*, *samenwerkingsverband* of *toegangspunt*; *soort partij* bij *handelende partij* en *samenwerkingsverband*.
 
@@ -203,9 +203,9 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 
 | Kenmerk | Voorbeelden en herkomst |
 |---|---|
-| **landelijk**: Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? | Ja: Wet op de lijkbezorging; AVG; modelverordening. Nee: beheersverordening van één gemeente (blijft bron). Herkomst: besluit redacteur 2026-10-01. |
+| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja: Wet op de lijkbezorging; AVG; Circulaire adresonderzoek BRP (RvIG); modelverordening. Nee: beheersverordening of beleidsnota van één gemeente (blijft bron). Herkomst: besluiten redacteur 2026-10-01 en 2026-10-08. |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja: Archiefwet 1995. Nee: ingetrokken wet. Herkomst: besluit redacteur 2026-10-01. |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? Noem het artikel en het gedrag. | Ja: Wet op de lijkbezorging art. 28 → Verlenen grafrecht. Nee: BW boek 2, gebruikt voor één definitie. Herkomst: GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader). |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. | Ja: Wet op de lijkbezorging art. 28 → Verlenen grafrecht. Nee: BW boek 2, gebruikt voor één definitie. Herkomst: GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader). |
 
 **Specialisatie.** Altijd, als het type een pagina heeft.
 
@@ -319,7 +319,7 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 - Type volgt uit: *regeling als geheel* en *landelijk*.
 - Moet ja zijn: *is grondslag voor*.
 - Hoogstens één nee: *in werking*.
-- Indeling: Beleidsdomeinindeling.
+- Indeling: Beleidsdomeinindeling en Regelgevingindeling (naar de regelgever).
 - Voorbeeld: Wet op de lijkbezorging; Archiefwet; AVG.
 
 **Wanneer is iets een bedrijfsinteractie?**

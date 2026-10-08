@@ -9,6 +9,16 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **Participatie** daarna, met de participatie-modelverordening als mogelijk beleidskader.
 - **Kanalen** als één centrale set. Input uit lijkbezorging (geen element daar, besluit redacteur 2026-10-01): de elektronische weg (Wlb art. 7, Awb art. 2:13–2:15), het mededelingenbord en bordje bij het graf (Groningen art. 27, VNG-model art. 24), de beheerder als aanspreekpunt voor aanvragen (VNG-model toelichting 2), en digitaal aangifte doen met eHerkenning (RVO, burgerlijke stand).
 
+## Wettelijke grondslag (analyse 2026-10-08, `analyses/wettelijke-grondslag.md`)
+
+- **Richtlijnen als beleidskader** (besluit 9): per onderwerp beoordelen welke landelijke richtlijnen als geheel een beleidskader worden, met relatie *geeft richtlijn voor*. Kandidaten in burgerzaken: de HUP van RvIG (per hoofdstuk of als geheel, voorleggen), de Circulaire adresonderzoek BRP, de NVVB-handreikingen adresonderzoek en gezag.
+- **A, per geval**: 22 elementen met een wet die niet genoemd wordt (vooral Wet BRP); de landelijke bron en de relatie *is grondslag voor* toevoegen; voor Ingeschreven persoon, Bijhoudingsgemeente, Toezichthouder BRP, Briefadresgever en de aanwijzing van de RNI-loketten eerst het artikel bepalen.
+- **B, per geval**: Gedenkteken plaatsingsvergunning, Grafonderhoud en Asverstrooiing behouden met een grondslag in Gemeentelijke regelgeving; de processen Verlenen vergunning grafbedekking, Onderhouden graf en Verlenen toestemming asverstrooiing laten vervallen, met wat alleen voor hen bestaat. Model-APV (art. 5:36) eerst als bron ophalen en als beleidskader beoordelen. Grafonderhoud noemt de UPL (nr. 163) nog niet als bron, waardoor het script het niet als UPL-product herkent; voeg de UPL toe.
+- **Na B**: het signaal voor een bedrijfsproces dat een UPL-product zonder landelijke grondslag realiseert, omzetten naar een fout in `tools/signalen.py` (`wettelijke_grondslag`).
+- **C**: Gewaarmerkte kopie reisdocument aanvragen laten vervallen, met procesarchitectuur-terugmelding 11 en de representatie Gewaarmerkte kopie.
+- **D, per geval**: de relatie *is grondslag voor* toevoegen bij negen diensten in lijkbezorging en bij Vermissing of diefstal rijbewijs doorgeven.
+- **Procesarchitectuur-terugmeldingen**: terugmelding 11 bijwerken als Gewaarmerkte kopie vervalt (het element verdwijnt uit `elementen`).
+
 ## Indelingen (analyse 2026-10-04, `analyses/indelingen.md`)
 
 - **Definitie van Ketenpartner**: nu "verantwoordelijkheid van een andere organisatie", terwijl de rol wordt vervuld door personen (Arts als behandelende arts, Officier van justitie; besluit redacteur 2026-10-04). Definitie verbreden naar een andere partij, of de organisatie (openbaar ministerie, zorgaanbieder) als actor nemen; meenemen in het voorstel aan het GEMMA-team over de definitie van de rol Ketenpartner.

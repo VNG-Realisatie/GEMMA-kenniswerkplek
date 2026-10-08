@@ -23,7 +23,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
 ## Werkwijze
 
 1. **Stap 0: welk begrip?** Bepaal vóór de kenmerken of het woord een synoniem is van een bestaand element (of van een begrip dat nu wordt beoordeeld), en of dezelfde naam al voor een ander begrip bestaat: in de wiki, het GGM of het GEMMA-model (`tools/ggm.py kandidaten <naam>`, `tools/gemma.py kandidaten <naam>`) of een bron. Vul `synoniem_van` of `homoniem_van` in. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
-2. Beantwoord **alle** kenmerken uit de vragenlijst hieronder, ook als ze niet bij het vermoedelijke type horen (dan nee). Gebruik de bronnen in de volgorde van de bronvoorrang (wet → informatiemodel → beleid → overig). Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; staat die niet in de bronanalyse, vul dan eerst de bronanalyse aan.
+2. Beantwoord **alle** kenmerken uit de vragenlijst hieronder, ook als ze niet bij het vermoedelijke type horen (dan nee). Gebruik de bronnen in de volgorde van de regel Bronvoorrang (`europese-regelgeving` → `rijksregelgeving` → `informatiemodel` → `richtlijn` → `gemeentelijke-regelgeving` → `beleid` → `overig`). Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; staat die niet in de bronanalyse, vul dan eerst de bronanalyse aan.
 3. Let op:
    - *zelfstandige specialisatie*: kijk eerst naar boven. Zoek de generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek`) en noteer de keten (bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Het kenmerk gaat over de "is een"-relatie, niet over herkomst uit wet of beleid; zie `gemma-archimate-model-assess` §3.
    - *los van verantwoordelijkheid* en *eigen rechtspersoon* beslissen tussen actor, rol en bedrijfssamenwerking. Een actor hangt alleen via een rol aan gedrag en objecten (*vervult een rol*).
@@ -33,7 +33,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
    - *Objectniveau* (stap 7): een kernobject wordt bewerkt door één levensloopproces; een deel van dat object met een eigen bedrijfsproces is een subobject, anders een onderdeel zonder pagina. *generiek* voor een object dat in veel onderwerpen voorkomt; *invoer van een ander* krijgt geen pagina. Voor een gebeurtenis, rol of dienst met *generiek*: vul `gemma_generiek`.
    - *soort partij*: een actor is een partij waarmee elke gemeente in dezelfde rol te maken heeft, zodat het element voor alle gemeenten geldt. Het criterium sluit uit wat bij één of enkele gemeenten hoort (gemeente Utrecht, provincie Utrecht), niet een partij die landelijk maar één keer bestaat: Rijk, Provincie en Waterschap zijn een soort partij (de bestuurslaag als geheel). Een afzonderlijk ministerie of rijksdienst (minister van BZK, IND) is geen eigen actor; die staat in de beschrijving van Rijk (besluit redacteur 2026-10-07).
    - Een doelgroep (minima, jongeren) is geen actor of rol maar een indeling van een actor: *slechts eigenschap* ja, met de actor als `genoemd_begrip`.
-   - Een regeling: een concreet benoemde landelijke regeling wordt beleidskader; de soort ("verordening") is het bedrijfsobject Regeling; een gemeentelijke verordening blijft bron; een los artikel is *buiten dit model*.
+   - Een regeling: een concreet benoemde regeling of richtlijn die voor alle gemeenten geldt (Europese regelgeving, rijksregelgeving, een landelijke richtlijn of een VNG-model) wordt beleidskader, met de regelgever EU, rijk, landelijke organisatie of VNG-model; de soort ("verordening") is het bedrijfsobject Regeling; een verordening of beleidsnota van één gemeente blijft bron; een los artikel is *buiten dit model*. Een beleidskader in de groep Richtlijn is geen wettelijke grondslag: zijn relatie heet "geeft richtlijn voor", niet "is grondslag voor" (regel Wettelijke grondslag; besluit redacteur 2026-10-08).
 4. Vul waar nodig de extra velden in:
    - `genoemd_begrip` bij *slechts eigenschap*, *eigen identiteit* nee (het geheel), *zelfstandige specialisatie* nee (het bredere begrip) of *waarneembare vorm* (het object);
    - `archimate_buiten_model` bij *buiten dit model*;
@@ -66,7 +66,7 @@ Namen en definities volgen het GEMMA-kennismodel (bron `2026-vng-over-gemma`, be
 | Location | geen pagina | — | A conceptual or physical place or position where concepts are located or performed. (ArchiMate) | Fysieke plaats als zodanig; een gebiedsindeling als gegevensconcept is een bedrijfsobject. |
 | Data Object (applicatielaag) | annotatie `data_object` | Data-object | Samenhangende set gegevens die geautomatiseerd kan worden verwerkt. (GEMMA) | Voorbereiding op `applicatiearchitectuur/`; hier alleen als signaal. In GEMMA realiseert een data-object een bedrijfsobject. |
 
-Buiten dit model vallen de overige motivatie- en strategie-elementen (Goal, Outcome, Principle, Requirement, Constraint, Value, Capability) en Grouping (thema). Een losse norm uit één artikel is een Requirement of Constraint en valt buiten het model; de regeling als geheel is een beleidskader (landelijk) of blijft bron (gemeentelijk).
+Buiten dit model vallen de overige motivatie- en strategie-elementen (Goal, Outcome, Principle, Requirement, Constraint, Value, Capability) en Grouping (thema). Een losse norm uit één artikel is een Requirement of Constraint en valt buiten het model; de regeling of richtlijn als geheel is een beleidskader (voor alle gemeenten) of blijft bron (van één gemeente).
 
 ## Kenmerken en beslistabel
 
@@ -104,7 +104,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 11. Is het een communicatiekanaal waarlangs een dienst beschikbaar komt? (*toegangspunt*)
 12. Is het een fysieke plaats als zodanig, en geen gebiedsindeling als gegeven? (*plaats*)
 13. Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer wordt geleverd? (*aanbod als geheel*)
-14. Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort regeling? (*regeling als geheel*)
+14. Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? (*regeling als geheel*)
 
 **Partij.** Alleen bij *handelende partij*, *hoedanigheid*, *samenwerkingsverband* of *toegangspunt*; *soort partij* bij *handelende partij* en *samenwerkingsverband*.
 
@@ -161,9 +161,9 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 
 **Beleidskader.** Alleen bij *regeling als geheel*.
 
-56. Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen regeling van één gemeente? (*landelijk*)
+56. Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? (*landelijk*)
 57. Is de regeling geldend recht, of als modelverordening actueel? (*in werking*)
-58. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar proces, dienst of product? Noem het artikel en het gedrag. (*is grondslag voor*)
+58. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. (*is grondslag voor*)
 
 **Specialisatie.** Altijd, als het type een pagina heeft.
 
@@ -275,7 +275,7 @@ Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandig
 - Type volgt uit: *regeling als geheel* en *landelijk*.
 - Moet ja zijn: *is grondslag voor*.
 - Hoogstens één nee: *in werking*.
-- Indeling: Beleidsdomeinindeling.
+- Indeling: Beleidsdomeinindeling en Regelgevingindeling (naar de regelgever).
 - Voorbeeld: Wet op de lijkbezorging; Archiefwet; AVG.
 
 **Wanneer is iets een bedrijfsinteractie?**

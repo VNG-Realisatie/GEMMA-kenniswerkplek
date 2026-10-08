@@ -9,7 +9,7 @@ hash: 5d93d3a944fa5de3b91bb1b7fb36ef2a6d7700e12e09ce77726d364d9f15a3c0
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Achtergronden
   en begrippen.'
 url: https://www.rvig.nl/hup/achtergronden-en-begrippen

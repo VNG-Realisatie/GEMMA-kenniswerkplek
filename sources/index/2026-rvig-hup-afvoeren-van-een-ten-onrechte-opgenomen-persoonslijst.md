@@ -9,7 +9,7 @@ hash: eb73e311721ebe6690a31dbf8cc18067b32cf6fe9ff8d5b73484c95c5dd0d56b
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Afvoeren
   van een ten onrechte opgenomen persoonslijst.'
 url: https://www.rvig.nl/hup/afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst

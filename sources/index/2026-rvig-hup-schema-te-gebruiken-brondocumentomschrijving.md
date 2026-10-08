@@ -9,7 +9,7 @@ hash: be2fed168dccb918d3734555a8a0f3f26a15d0ab908b6debc796225fe5a01c42
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Schema
   te gebruiken brondocumentomschrijving.'
 url: https://www.rvig.nl/hup/schema-te-gebruiken-brondocumentomschrijving

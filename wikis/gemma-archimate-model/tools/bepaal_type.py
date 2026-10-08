@@ -120,9 +120,9 @@ KENMERKEN: list[Kenmerk] = [
             "bewonersparkeervergunning zoals de productencatalogus haar aanbiedt", "parkeren",
             "GEMMA (definitie Product)"),
     Kenmerk("regeling_als_geheel", "regeling als geheel", "Aard",
-            "Is het een concreet benoemde wet, AMvB of verordening als geheel, en niet één artikel of een soort "
-            "regeling?",
-            "Wet op de lijkbezorging; modelverordening participatie",
+            "Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel "
+            "of een soort regeling?",
+            "Wet op de lijkbezorging; modelverordening participatie; Circulaire adresonderzoek BRP",
             "'verordening' als soort (bedrijfsobject Regeling); artikel 16 (losse norm)",
             "GEMMA (definitie Beleidskader)"),
     # Partij
@@ -330,16 +330,19 @@ KENMERKEN: list[Kenmerk] = [
             "zaak in het zaaksysteem", "keukentafelgesprek", "GEMMA (definitie Data-object)"),
     # Beleidskader
     Kenmerk("landelijk", "landelijk", "Beleidskader",
-            "Is het rijks- of EU-regelgeving (wet, AMvB, EU-verordening), of een VNG-modelverordening, en geen "
-            "regeling van één gemeente?",
-            "Wet op de lijkbezorging; AVG; modelverordening", "beheersverordening van één gemeente (blijft bron)",
-            "besluit redacteur 2026-10-01", _bij("regeling_als_geheel")),
+            "Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, "
+            "ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een "
+            "landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één "
+            "gemeente?",
+            "Wet op de lijkbezorging; AVG; Circulaire adresonderzoek BRP (RvIG); modelverordening",
+            "beheersverordening of beleidsnota van één gemeente (blijft bron)",
+            "besluiten redacteur 2026-10-01 en 2026-10-08", _bij("regeling_als_geheel")),
     Kenmerk("in_werking", "in werking", "Beleidskader",
             "Is de regeling geldend recht, of als modelverordening actueel?",
             "Archiefwet 1995", "ingetrokken wet", "besluit redacteur 2026-10-01", _bij("regeling_als_geheel")),
     Kenmerk("is_grondslag_voor", "is grondslag voor", "Beleidskader",
-            "Geeft de regeling de gemeente een taak, bevoegdheid of plicht, die zij uitvoert in een aanwijsbaar "
-            "proces, dienst of product? Noem het artikel en het gedrag.",
+            "Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die "
+            "uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag.",
             "Wet op de lijkbezorging art. 28 → Verlenen grafrecht", "BW boek 2, gebruikt voor één definitie",
             "GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader)",
             _bij("regeling_als_geheel")),
@@ -496,7 +499,40 @@ AFNEMERS = ("extern", "intern")
 DOMEINEN = ("Bestuur", "Fysieke leefomgeving", "Niet domeingebonden", "Openbare orde en veiligheid", "Ondersteuning",
             "Publieksdiensten", "Sociaal domein")  # GEMMA domeinen
 DOELGROEPEN = ("gemeente", "inwoners en ondernemers", "ketenpartners")
-REGELGEVERS = ("EU", "rijk", "VNG-model")
+REGELGEVERS = ("EU", "rijk", "landelijke organisatie", "VNG-model")
+# Regelgevingindeling: een beleidskader valt onder het brontype van zijn regeling (regel Bronvoorrang, wiki.yaml
+# `bronvoorrang`), afgeleid uit de regelgever. Groep en map heten als het brontype; de omschrijving is die van de regel
+# Bronvoorrang. Alleen gevulde groepen bestaan (besluiten redacteur 2026-10-08).
+REGELGEVER_BRONTYPE = {"EU": "europese-regelgeving", "rijk": "rijksregelgeving", "landelijke organisatie": "richtlijn",
+                       "VNG-model": "gemeentelijke-regelgeving"}
+BRONTYPE_OMSCHRIJVING = {
+    "europese-regelgeving": "Regelgeving van de Europese Unie die voor alle gemeenten geldt, zoals verordeningen die "
+                            "rechtstreeks werken (AVG, AI-verordening).",
+    "rijksregelgeving": "Regelgeving van het Rijk die voor alle gemeenten gelijk is: wetten, algemene maatregelen van "
+                        "bestuur en ministeriële regelingen, en door Nederland goedgekeurde verdragen.",
+    "richtlijn": "Landelijke uitvoeringsvoorschriften, handleidingen, circulaires en handreikingen van het Rijk, "
+                 "uitvoeringsorganisaties en koepels (HUP van RvIG, NVVB, VNG, Divosa).",
+    "gemeentelijke-regelgeving": "Verordeningen, nadere regels, beleidsregels en regelingen van gemeenschappelijke "
+                                 "regelingen, die elke gemeente zelf vaststelt, en de VNG-modellen daarvan. Omdat de "
+                                 "inhoud per gemeente verschilt, staat in het model het VNG-model als gemeenschappelijke "
+                                 "vorm; de regeling van één gemeente is een voorbeeld en geen element.",
+}
+
+
+def brontype_naam(brontype: str) -> str:
+    """De naam van een brontype als groep of map: `europese-regelgeving` → Europese regelgeving."""
+    return brontype.replace("-", " ").capitalize()
+
+
+def regelgeving(data: dict) -> str | None:
+    """De groep van een beleidskader in de Regelgevingindeling (ook zijn submap): de naam van zijn brontype."""
+    brontype = REGELGEVER_BRONTYPE.get(data.get("regelgever"))
+    return brontype_naam(brontype) if brontype else None
+
+
+def submap(data: dict, veld: str) -> str | None:
+    """De waarde van een submap uit wiki.yaml `page_types.<type>.submappen`: een veld, of een afgeleide indeling."""
+    return regelgeving(data) if veld == "regelgeving" else data.get(veld)
 WAARDEN = {"afnemer": AFNEMERS, "domein": DOMEINEN, "doelgroep": DOELGROEPEN, "regelgever": REGELGEVERS}
 VERPLICHT = {  # paginatype → velden die ingevuld moeten zijn
     "product": ("domein", "afnemer"),
@@ -524,7 +560,7 @@ INDELING_PER_TYPE = {  # paginatype → de indelingen waarin het type valt
     "rol": "Doelgroepindeling",
     "bedrijfssamenwerking": "Doelgroepindeling",
     "kanaal": "Doelgroepindeling",
-    "beleidskader": "Beleidsdomeinindeling",
+    "beleidskader": "Beleidsdomeinindeling en Regelgevingindeling (naar de regelgever)",
 }
 
 
@@ -649,7 +685,7 @@ def _kanaal(k, e, nr):
 def _regeling(k, e, nr):
     if _ja(k, "landelijk"):
         return _element(nr, "driver", "Regeling als geheel, landelijk")
-    return Uitkomst("bron", nr, "Regeling van één gemeente: blijft bron, geen element")
+    return Uitkomst("bron", nr, "Regeling of beleid van één gemeente: blijft bron, geen element")
 
 
 REGELS: list[Regel] = [

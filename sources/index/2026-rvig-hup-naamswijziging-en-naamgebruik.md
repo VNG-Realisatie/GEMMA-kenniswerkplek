@@ -9,7 +9,7 @@ hash: 78da2b732c432716f28b5a04a8d56f0fed765827b8d2a0f7a62b1fa8c296ef94
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Naamswijziging
   en naamgebruik.'
 url: https://www.rvig.nl/hup/naamswijziging-en-naamgebruik

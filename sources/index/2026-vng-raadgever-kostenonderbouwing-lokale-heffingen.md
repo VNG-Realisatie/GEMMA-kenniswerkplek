@@ -8,7 +8,7 @@ pad: sources/raw/2026-vng-raadgever-kostenonderbouwing-lokale-heffingen.md
 hash: 6825fe13ed2b8b04f9ebb8abd563118c4604536c4751047e3f208604a53c210c
 tags:
 - belastingen
-brontype: beleid
+brontype: richtlijn
 beschrijving: De belastingtarieven van gemeenten liggen geregeld onder vuur doordat
   belangenverenigingen en de media de tarieven van verschillende gemeenten vergelijken.
   Sommige gemeenten worden aan de schandpaal genageld omdat zij voor bepaalde diensten

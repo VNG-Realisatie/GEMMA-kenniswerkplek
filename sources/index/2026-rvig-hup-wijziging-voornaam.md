@@ -9,7 +9,7 @@ hash: 97571ee997b4f9316922704d438099ec2980cf49a7fd793fb84b1216484c02ad
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Wijziging
   voornaam.'
 url: https://www.rvig.nl/hup/wijziging-voornaam

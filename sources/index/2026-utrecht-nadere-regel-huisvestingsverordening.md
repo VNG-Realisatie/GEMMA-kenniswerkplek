@@ -8,7 +8,7 @@ pad: sources/raw/2026-utrecht-nadere-regel-huisvestingsverordening.md
 hash: 4043ef7e45aeecdd9a5f0dfe22ea301c7a968524b7bf2fd1594332097558fbe2
 tags:
 - wonen
-brontype: wet
+brontype: gemeentelijke-regelgeving
 beschrijving: Nadere regel bij de Huisvestingsverordening over woonruimteverdeling,
   urgentie en leefbaarheidstoetsen
 url: https://lokaleregelgeving.overheid.nl/CVDR698169

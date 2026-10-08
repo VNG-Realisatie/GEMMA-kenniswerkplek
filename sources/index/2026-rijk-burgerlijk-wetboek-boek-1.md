@@ -9,7 +9,7 @@ hash: 287e766e8c29b6a21509e8f3619f892cfb50a3b5dff5e54348ee388adb09fc32
 tags:
 - burgerzaken
 - wet
-brontype: wet
+brontype: rijksregelgeving
 url: https://wetten.overheid.nl/BWBR0002656
 opgehaald: '2026-10-06'
 ---

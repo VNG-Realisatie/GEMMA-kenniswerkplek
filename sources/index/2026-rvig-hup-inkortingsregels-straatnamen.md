@@ -9,7 +9,7 @@ hash: 38d5c6eacd495296c52817461aeb6d36584072276eba03f235229756aae1003e
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Inkortingsregels
   straatnamen.'
 url: https://www.rvig.nl/hup/inkortingsregels-straatnamen

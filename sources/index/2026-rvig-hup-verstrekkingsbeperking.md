@@ -9,7 +9,7 @@ hash: 5f9be9aab34224e9cf35bbcf8d98e239908c77ff1ce12766309c5941ca3db3f5
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Verstrekkingsbeperking.'
 url: https://www.rvig.nl/hup/verstrekkingsbeperking
 url_pagina: https://www.rvig.nl/hup/handleiding-uitvoeringsprocedures

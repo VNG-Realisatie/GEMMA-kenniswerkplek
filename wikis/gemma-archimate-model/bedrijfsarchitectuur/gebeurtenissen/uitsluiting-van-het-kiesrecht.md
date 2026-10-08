@@ -59,15 +59,15 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip (Kieswet art. B 5) en gebeurtenis in de BRP (HUP Nederlands kiesrecht). [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester ontvangt de mededeling en stelt de persoon in kennis; de gemeente legt de uitsluiting vast (Kieswet art. B 5; HUP Nederlands kiesrecht). [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige gebeurtenis met een eigen duur van de uitsluiting (Kieswet art. B 5). [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: verandert het kiesrecht van de ingeschreven persoon. [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gebeurt. [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
-| **toestandsverandering**: Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | Ja, met de onherroepelijke rechterlijke uitspraak is de persoon van het kiesrecht uitgesloten, voor bepaalde of onbepaalde tijd (Kieswet art. B 5 lid 1; HUP Nederlands kiesrecht). [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) |
-| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke uitspraak tot ontzetting. [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) |
-| **leidt tot gedrag**: Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? | Ja, start Registreren kiesgerechtigdheid: kennisgeving aan de persoon en vastlegging in de persoonslijst (Kieswet art. B 5 lid 3; HUP Nederlands kiesrecht). [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip (Kieswet art. B 5) en gebeurtenis in de BRP (HUP Nederlands kiesrecht). [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-nederlands-kiesrecht.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester ontvangt de mededeling en stelt de persoon in kennis; de gemeente legt de uitsluiting vast (Kieswet art. B 5; HUP Nederlands kiesrecht). [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-nederlands-kiesrecht.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige gebeurtenis met een eigen duur van de uitsluiting (Kieswet art. B 5). [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: verandert het kiesrecht van de ingeschreven persoon. [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-nederlands-kiesrecht.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gebeurt. [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **toestandsverandering**: Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | Ja, met de onherroepelijke rechterlijke uitspraak is de persoon van het kiesrecht uitgesloten, voor bepaalde of onbepaalde tijd (Kieswet art. B 5 lid 1; HUP Nederlands kiesrecht). [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-nederlands-kiesrecht.md) |
+| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke uitspraak tot ontzetting. [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-nederlands-kiesrecht.md) |
+| **leidt tot gedrag**: Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? | Ja, start Registreren kiesgerechtigdheid: kennisgeving aan de persoon en vastlegging in de persoonslijst (Kieswet art. B 5 lid 3; HUP Nederlands kiesrecht). [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-nederlands-kiesrecht.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 
 ### Relaties
 
@@ -75,13 +75,13 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Uitsluiting van het kiesrecht | leidt tot *triggering* | [Registreren kiesgerechtigdheid](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md) | [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) (Kieswet art. B 5 lid 3; HUP Nederlands kiesrecht) |
+| Uitsluiting van het kiesrecht | leidt tot *triggering* | [Registreren kiesgerechtigdheid](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md) | [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-nederlands-kiesrecht.md) (Kieswet art. B 5 lid 3; HUP Nederlands kiesrecht) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Uitsluiting van het kiesrecht | [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) (HUP Nederlands kiesrecht) |
+| [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md) | omvat *aggregatie* | Uitsluiting van het kiesrecht | [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-nederlands-kiesrecht.md) (HUP Nederlands kiesrecht) |
 
 ## Herkomst
 
@@ -89,8 +89,8 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Kieswet](../../bronanalyses/burgerzaken/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
-| [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/2026-rvig-hup-nederlands-kiesrecht.md) | HUP BRP: Nederlands kiesrecht |
+| [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
+| [HUP Nederlands kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-nederlands-kiesrecht.md) | HUP BRP: Nederlands kiesrecht |
 
 ### Afstemming met GEMMA
 

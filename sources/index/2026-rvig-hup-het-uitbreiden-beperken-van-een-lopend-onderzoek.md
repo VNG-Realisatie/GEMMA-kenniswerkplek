@@ -9,7 +9,7 @@ hash: ef931895c672a66f807c01cd5e4584d9690d471996726d78d995e072040dc6fc
 tags:
 - burgerzaken
 - basisregistraties
-brontype: beleid
+brontype: richtlijn
 beschrijving: 'Handleiding Uitvoeringsprocedures BRP, online versie (RvIG): Het uitbreiden
   beperken van een lopend onderzoek.'
 url: https://www.rvig.nl/hup/het-uitbreiden-beperken-van-een-lopend-onderzoek

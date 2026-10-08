@@ -9,7 +9,7 @@ pad: sources/raw/2023-bzk-17-categorieen-actief-openbaarmaken-woo.pdf
 hash: 332c0d6ff0f4330c8f73c5ef7af4b17200dfc8441e0c0a533bd736052bd1d4e4
 tags:
 - informatiesamenleving
-brontype: beleid
+brontype: richtlijn
 beschrijving: Officiële lijst van de 17 informatiecategorieën die bestuursorganen
   op grond van artikel 3.3 Woo uit eigen beweging openbaar moeten maken.
 url: https://open.overheid.nl/documenten/fd3aaf98-ad83-4a15-a526-b0511f283bad/file

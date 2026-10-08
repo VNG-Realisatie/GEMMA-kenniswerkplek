@@ -8,7 +8,7 @@ pad: sources/raw/2026-vng-raadgever-financiele-verordening.md
 hash: 737c89ad9acdfb652990719f273b168e883a786e410e0cec8580317b26597bd2
 tags:
 - financien
-brontype: beleid
+brontype: richtlijn
 beschrijving: Hoe gaan college en gemeenteraad met elkaar om op het gebied van financiële
   onderwerpen? Hoe zit de planning & controlcyclus in elkaar? Dit is geregeld in de
   Gemeentewet en andere rijksbesluiten. Omdat dit algemeen geformuleerde regelingen
