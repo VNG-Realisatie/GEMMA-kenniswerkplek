@@ -12,7 +12,7 @@ Eén bron van waarheid voor de criteria van deze wiki (criteria van 2026-10-04, 
 - NAREGELS: aanvullingen op de uitkomst (tegenhanger, procesniveau, annotatie, homoniem).
 
 Het model vult de kenmerken in (met onderbouwing en bron-id's); deze tool past de regels toe.
-De documentatie in skill `gemma-archimate-model-criteria`, de wikipagina `naslag/beslistabel.md` en
+De documentatie in skill `gemma-archimate-model-criteria`, de wikipagina `docs/beslistabel.md` en
 `schemas/beoordeling.schema.json` worden hieruit gegenereerd (`markdown --schrijf`, `schema --schrijf`); een test
 bewaakt dat ze gelijk blijven.
 
@@ -36,7 +36,7 @@ from typing import Callable
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = WIKI_ROOT / "schemas" / "beoordeling.schema.json"
 SKILL_PATH = WIKI_ROOT / ".agents" / "skills" / "gemma-archimate-model-criteria" / "SKILL.md"
-DOC_PATH = WIKI_ROOT / "naslag" / "beslistabel.md"
+DOC_PATH = WIKI_ROOT / "docs" / "beslistabel.md"
 CRITERIA_VERSIE = "2026-10-08"
 
 GEEN_AARD = ""  # in `bij`: ja mag ook als het begrip geen aard heeft (een ding)

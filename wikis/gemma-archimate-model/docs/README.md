@@ -17,7 +17,7 @@ bijgewerkt: '2026-10-08'
 | Waarom het model is zoals het is | deze map, `docs/` |
 | Wat de redacteur besliste | [Besluiten over de werkwijze](../besluiten/werkwijze.md) en [Besluiten per begrip](../besluiten/per-begrip.md) |
 
-Een document in deze map is geen werkinstructie: wat de AI moet doen, staat in een regel of een skill. Een document legt de vraag, de bronnen, de afweging, de afgewezen opties en de besluiten van de redacteur vast; de kolom Stand bij elk besluit zegt waar het nu als regel staat of door welk besluit het is herzien. Lees een document als een regel ter discussie staat of als je wilt weten waarom.
+Een document in deze map is geen werkinstructie: wat de AI moet doen, staat in een regel of een skill. Eén uitzondering om te lezen: [Kenmerken en beslistabel](beslistabel.md) is de gegenereerde, geldende beslistabel. Een document legt de vraag, de bronnen, de afweging, de afgewezen opties en de besluiten van de redacteur vast; de kolom Stand bij elk besluit zegt waar het nu als regel staat of door welk besluit het is herzien. Lees een document als een regel ter discussie staat of als je wilt weten waarom.
 
 Tot 2026-10-08 heette deze map `analyses/`; oudere besluitteksten en commits noemen nog die naam. Wat bronnen zeggen die voor de hele wiki gelden (Over GEMMA, de GEMMA-procesarchitectuur), staat in de bronanalyses van het onderwerp Algemeen (`bronanalyses/algemeen/`).
 
@@ -27,6 +27,7 @@ Wanneer is een begrip een element, en van welk type?
 
 | Document | Vraag | Kern |
 |---|---|---|
+| [Kenmerken en beslistabel](beslistabel.md) | Wat geldt nu: welke kenmerken beantwoord je, en welke uitkomst volgt eruit? | De geldende kenmerken en beslistabel, met voorbeelden en herkomst per kenmerk. Gegenereerd uit `tools/bepaal_type.py`, nooit met de hand bewerken; dezelfde tabellen staan in skill gemma-archimate-model-criteria. |
 | [Elementtypen, kenmerken en het GEMMA-kennismodel](gemma-kennismodel.md) | Welke elementtypen en kenmerken, en hoe verhouden ze zich tot het GEMMA-kennismodel? | De wiki volgt de namen en definities van het kennismodel; per type één kernrelatie en een drempel. |
 | [Kenmerken per elementtype](kenmerken.md) | Welke kenmerken bepalen per elementtype of een begrip een element is? | Per type de kenmerken, de kernrelatie en de drempel, getoetst op volledigheid. |
 | [Toegang tot een bedrijfsobject](gegevensrollen.md) | Welke verantwoordelijkheid heeft een rol voor een object, en welke handeling voert een proces erop uit? | Een vaste reeks van acht verantwoordelijkheden en acht handelingen, uit de wetten van de basisregistraties, de AVG en de Archiefwet. |

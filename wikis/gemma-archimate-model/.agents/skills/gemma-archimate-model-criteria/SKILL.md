@@ -70,7 +70,7 @@ Buiten dit model vallen de overige motivatie- en strategie-elementen (Goal, Outc
 
 ## Kenmerken en beslistabel
 
-Gegenereerd uit de beslistabel (`uv run python tools/bepaal_type.py markdown --schrijf`); de wikipagina `naslag/beslistabel.md` heeft dezelfde tekst met de naslag per kenmerk (voorbeelden en herkomst), zonder de stappentabel.
+Gegenereerd uit de beslistabel (`uv run python tools/bepaal_type.py markdown --schrijf`); de wikipagina `docs/beslistabel.md` heeft dezelfde tekst met de naslag per kenmerk (voorbeelden en herkomst), zonder de stappentabel.
 
 <!-- BEGIN gegenereerd uit de beslistabel; niet met de hand bewerken -->
 ### Stap 0: welk begrip?

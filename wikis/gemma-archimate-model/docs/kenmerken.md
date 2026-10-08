@@ -16,11 +16,11 @@ Elke vraag is met ja of nee te beantwoorden en gaat over het begrip zelf, niet o
 
 ## Opbouw per type
 
-Per elementtype welk kenmerk het type bepaalt, welke kernrelatie ja moet zijn, welke drempel geldt en wat er daarnaast uitkomt: zie [Kenmerken en beslistabel](../naslag/beslistabel.md), *Beslistabel per elementtype* en *Beslistabel vanuit de kenmerken*.
+Per elementtype welk kenmerk het type bepaalt, welke kernrelatie ja moet zijn, welke drempel geldt en wat er daarnaast uitkomt: zie [Kenmerken en beslistabel](beslistabel.md), *Beslistabel per elementtype* en *Beslistabel vanuit de kenmerken*.
 
 ## Kenmerken en hun vraag
 
-De vraag, voorbeelden bij ja en nee en de herkomst van elk kenmerk staan op één plek: [Kenmerken en beslistabel](../naslag/beslistabel.md), als vragenlijst in volgorde van beoordelen en als naslag per groep; welke typen een kenmerk gebruiken staat daar in de beslistabel vanuit de kenmerken. Ze worden gegenereerd uit de beslistabel zelf, zodat de vragen hier en daar niet uiteen kunnen lopen.
+De vraag, voorbeelden bij ja en nee en de herkomst van elk kenmerk staan op één plek: [Kenmerken en beslistabel](beslistabel.md), als vragenlijst in volgorde van beoordelen en als naslag per groep; welke typen een kenmerk gebruiken staat daar in de beslistabel vanuit de kenmerken. Ze worden gegenereerd uit de beslistabel zelf, zodat de vragen hier en daar niet uiteen kunnen lopen.
 
 **Specialisatieniveau (alle typen met een paginatype).** Dit kenmerk gaat over de "is een"-relatie tussen twee verschillende begrippen van hetzelfde type, nadat het type vaststaat. Het zegt niets over herkomst uit wet of beleid. Synoniemen (ander woord, zelfde betekenis) en homoniemen (zelfde woord, andere betekenis) zijn naamconflicten die vóór de beslistabel worden afgehandeld.
 
@@ -62,7 +62,7 @@ Samen 60 kenmerken (criteria van 2026-10-04, zie [Indelingen](indelingen.md)): 6
 | 2026-10-01 | De drempel van het product bevat geen *onderscheidbare exemplaren* maar *benoembaar resultaat* (de waarde voor de afnemer): kern *omvat diensten en afspraken*, overig *afnemer* en *benoembaar resultaat*. Een verleend exemplaar is een bedrijfsobject, geen product. | beslistabel (drempel product) |
 | 2026-10-01 | Een concreet benoemde regeling als geheel die rijks- of EU-regelgeving of een VNG-modelverordening is, wordt beleidskader; de soort regeling is het bedrijfsobject Regeling; een gemeentelijke verordening blijft bron en wordt geen element; een los artikel valt buiten dit model. | skill criteria (regeling); aangevuld door 2026-10-08 (landelijke richtlijn als beleidskader) |
 | 2026-10-01 | Het kenmerk "zelfstandig beleidsbegrip" heet voortaan *zelfstandige specialisatie*, met de vraag: is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt (eigen gegevens, regels of werkwijze)? | beslistabel (kenmerk zelfstandige specialisatie) |
-| 2026-10-01 | Documentatie: de kenmerken als vragenlijst in volgorde van beoordelen en als naslagtabel per groep; de beslistabel als matrix kenmerk × type en als kaart per elementtype ("wanneer is iets een …?"). Beide worden gegenereerd uit dezelfde bron als de beslistabel; de stappentabel blijft in de criteria. | naslag/beslistabel.md en skill criteria |
+| 2026-10-01 | Documentatie: de kenmerken als vragenlijst in volgorde van beoordelen en als naslagtabel per groep; de beslistabel als matrix kenmerk × type en als kaart per elementtype ("wanneer is iets een …?"). Beide worden gegenereerd uit dezelfde bron als de beslistabel; de stappentabel blijft in de criteria. | docs/beslistabel.md en skill criteria |
 | 2026-10-08 | *Bijdrage aan groter proces* toetst nu het bedrijfsproces (een mutatie in het levensloopproces van een kernobject, met *eigen besluit*, *eigen normering* of *levert aanbod*); zonder die drie is het een deelproces of processtap zonder pagina. *Groepeert processen* geldt alleen voor een cluster naar soort werk. *Meer organisaties* vervalt: een keten is een bedrijfsinteractie (*gezamenlijk gedrag*). Zie [Proceshiërarchie](proceshierarchie.md). | deels herzien door 2026-10-08 (klant tot klant): eigen besluit en eigen normering bepalen het procesniveau niet meer; de rest in de beslistabel |
 
 ## Open vragen

@@ -21,7 +21,7 @@ page_types:                          # pagina's van curated typen en onderwerpen
   doc:                               # documentatie: waarom het model is zoals het is (docs/, besluiten/werkwijze.md)
     dir: docs
     schema: schemas/doc.schema.json
-  lijst:                             # wat een script als lijst maakt: terugmeldingen/, naslag/, ter-beoordeling.md, voortgang.md; geen eigen map
+  lijst:                             # wat een script als lijst maakt: terugmeldingen/, docs/beslistabel.md, ter-beoordeling.md, voortgang.md; geen eigen map
     schema: schemas/lijst.schema.json
   bedrijfsobject:                    # archimate_type business-object | contract
     dir: bedrijfsarchitectuur/bedrijfsobjecten

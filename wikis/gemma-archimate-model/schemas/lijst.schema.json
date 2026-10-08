@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "lijst",
-  "description": "Gegenereerde lijst (bijv. terugmeldingen/ggm-terugmeldingen.md, naslag/beslistabel.md, ter-beoordeling.md); nooit met de hand bewerken.",
+  "description": "Gegenereerde lijst (bijv. terugmeldingen/ggm-terugmeldingen.md, docs/beslistabel.md, ter-beoordeling.md); nooit met de hand bewerken.",
   "type": "object",
   "required": [
     "id",

@@ -77,7 +77,7 @@ Een regel is kort: de kern. Staat er meer bij een regel, dan noemt zij waar de u
 |---|---|---|---|---|
 | Regels: wat geldt | dit bestand | — | de AI, na een besluit van de redacteur | ja |
 | Werkstroom: de stappen | skill `gemma-archimate-model-update` | — | — | ja |
-| Criteria: is het een element, en welk type | skill `gemma-archimate-model-criteria`; [naslag/beslistabel.md](naslag/beslistabel.md) | lijst | de tabellen: `tools/bepaal_type.py` | alleen de tekst buiten de gegenereerde blokken |
+| Criteria: is het een element, en welk type | skill `gemma-archimate-model-criteria`; [docs/beslistabel.md](docs/beslistabel.md) | lijst | de tabellen: `tools/bepaal_type.py` | alleen de tekst buiten de gegenereerde blokken |
 | Werkinstructie per veld van een beoordeling | skill gemma-archimate-model-beoordelen en zijn `references/` | — | — | ja |
 | Sjablonen | beoordeling: skill gemma-archimate-model-beoordelen §4; bronanalyse: skill gemma-archimate-model-ingest §4; terugmelding: `references/terugmeldingen.md`; besluit en voorleggen: `references/besluiten.md`; vorm: `schemas/` | — | — | ja |
 | Oordeel per begrip | `beoordelingen/begrippen/<id>.yaml` | — | de AI; `status` en `afgeleid` de scripts | ja, behalve `status` en `afgeleid` |

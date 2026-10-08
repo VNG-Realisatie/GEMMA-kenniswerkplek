@@ -39,11 +39,10 @@ wikis/gemma-archimate-model/
 │   ├── beleidsdomeinen.yaml          de beschrijving van een beleidsdomein (Beleidsdomeinindeling)
 │   └── besluiten-eerder.yaml         eerdere besluiten per begrip zonder tegenhanger in een beoordeling
 ├── bronanalyses/<onderwerp>/<brontype>/<bron-id>.md   wat een bron betekent voor de architectuur (AI); bronnen voor de hele wiki onder algemeen/
-├── docs/                             waarom het model is zoals het is (AI, type doc); leeswijzer docs/README.md
+├── docs/                             waarom het model is zoals het is (AI, type doc); leeswijzer docs/README.md; beslistabel.md gegenereerd door tools/bepaal_type.py (type lijst)
 ├── besluiten/                        werkwijze.md (AI, type doc) en per-begrip.md (gegenereerd, type lijst)
 ├── bedrijfsarchitectuur/ · motivatie/ · begrippen/ · overzichten/   gegenereerd door tools/render.py
 ├── terugmeldingen/ · ter-beoordeling.md · voortgang.md              gegenereerd door tools/render.py (type lijst)
-├── naslag/beslistabel.md             gegenereerd door tools/bepaal_type.py (type lijst)
 ├── ggm/ · gemma/                     gegenereerd door tools/ggm.py en tools/gemma.py
 ├── export/                           gegenereerd door tools/archimate_export.py: het Archi-bestand en het rapport
 ├── schemas/                          beoordeling (gegenereerd uit tools/bepaal_type.py), bronanalyse, doc, lijst
@@ -131,7 +130,7 @@ Eén plek: skill [gemma-archimate-model-criteria](.agents/skills/gemma-archimate
 - **Kenmerken** zijn neutrale eigenschappen van een begrip (bijv. *onderscheidbare exemplaren*). De AI beantwoordt ze allemaal, één keer, met onderbouwing en bron-id's.
 - **Criteria** zijn de regels van de beslistabel: welke combinatie van kenmerken tot welk type leidt. Het script past ze toe; het type is een uitkomst, geen keuze vooraf.
 - De beslistabel heeft acht stappen: welk begrip (synoniem of homoniem), scope, afhankelijkheid, consistentie, type, een **drempel** per type (een kernrelatie die ja moet zijn, eventueel een eis, en van de overige drempelcriteria hoogstens één nee), de **zelfstandige specialisatie** en de **indeling** (stap 7: procesniveau en objectniveau, met de plaats in de indelingen; `tools/bepaal_type.py indeling` heeft de context van alle begrippen). Criteria van 2026-10-04 (`docs/indelingen.md`); de onderbouwing staat in `docs/kenmerken.md`, `docs/gemma-kennismodel.md`, `docs/gegevensrollen.md` en `docs/synoniemen-en-homoniemen.md`.
-- De documentatie in de skill en in [naslag/beslistabel.md](naslag/beslistabel.md), en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json), worden uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
+- De documentatie in de skill en in [docs/beslistabel.md](docs/beslistabel.md), en het schema [schemas/beoordeling.schema.json](schemas/beoordeling.schema.json), worden uit de code gegenereerd; een test bewaakt dat ze gelijk blijven.
 - Een bedrijfsinteractie (Business Interaction) heeft sinds 2026-10-08 een paginatype; elke nieuwe wordt voorgelegd. Representation en Location zijn een vaste uitkomst zonder pagina. Van de motivatielaag zit alleen het beleidskader in dit model.
 
 ## 8. Bronvoorrang en definities

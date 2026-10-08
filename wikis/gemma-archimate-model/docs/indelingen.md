@@ -97,7 +97,7 @@ Tot 2026-10-08 was de taak een eigen niveau, met een hoofdbeleidsdomein als eige
 
 ## Kenmerken en beslistabel
 
-Dit is het ontwerp van de criteria voor de indelingen (2026-10-04, bijgewerkt 2026-10-08). De werkinstructie staat in skill gemma-archimate-model-criteria (stap 7) en in [Kenmerken en beslistabel](../naslag/beslistabel.md); de controles zitten in `tools/bepaal_type.py` en `tools/afleiden.py`.
+Dit is het ontwerp van de criteria voor de indelingen (2026-10-04, bijgewerkt 2026-10-08). De werkinstructie staat in skill gemma-archimate-model-criteria (stap 7) en in [Kenmerken en beslistabel](beslistabel.md); de controles zitten in `tools/bepaal_type.py` en `tools/afleiden.py`.
 
 ### Per elementtype
 
