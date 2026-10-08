@@ -84,6 +84,8 @@ Repareren en voorkomen, in deze volgorde. De besluiten van de redacteur en de ui
 
 ## Uitwerking (besluiten redacteur 2026-10-08)
 
+Stand: het kenmerk *klant tot klant* en de controles op triggering staan in skill gemma-archimate-model-criteria (Procesniveau) en `tools/bepaal_type.py`; het besluit staat in [Besluiten over de werkwijze](../besluiten/werkwijze.md), thema 2.
+
 - **Kenmerk en beslisregel**: *klant tot klant* is een nieuw kenmerk; alleen dat maakt van *bijdrage aan groter proces* een bedrijfsproces. Een deelproces dat een dienst levert, wordt voorgelegd. Alle 432 beoordelingen hebben het kenmerk: 58 processen zijn klant-tot-klant, 9 zijn deelproces of processtap, de rest is niet van toepassing.
 - **Geen pagina voor een deelproces**: het bedrijfsproces beschrijft zijn deelprocessen in het veld `deelprocessen`, in volgorde en met bron, op de pagina (sectie Deelprocessen) en in Archi als property *wiki-gemma-model deelprocessen*. De beoordeling van het deelproces blijft, als onderdeel zonder pagina; beschrijving en relaties zijn letterlijk naar het bedrijfsproces verplaatst.
 - **Controles**: een bedrijfsproces dat een ander bedrijfsproces onder hetzelfde levensloopproces triggert, wordt voorgelegd; een gebeurtenis die een deelproces triggert, is een fout.

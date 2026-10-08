@@ -719,3 +719,22 @@ def test_wettelijke_grondslag():
     assert "noem de relatie naar 'dienst-a' 'werkt uit voor'" in fouten[1]
     assert "realiseert UPL-product 'dienst-upl'" in fouten[2]
     assert [s.split(":")[0] for s in signalen_] == ["rol-zonder"]
+
+
+def test_besluiten_per_begrip_uit_beoordelingen_en_eerder(wiki):
+    _schrijf(wiki, "beschikking", _bo(besluiten=[{"datum": "2026-10-01", "besluit": f"Generiek ({WET}).",
+                                                  "gevolg": "verwerkt"}]))
+    eerder = {"besluiten": [{"datum": "2026-09-30", "begrip": "Uitdaagrecht", "onderwerp": "test",
+                             "besluit": "Geen eigen pagina.", "stand": "geldt"}]}
+    beoordeling.schrijf(wiki / afleiden.BESLUITEN_EERDER, eerder)
+    _afleiden(wiki)
+    lijst = (wiki / "besluiten" / "per-begrip.md").read_text(encoding="utf-8")
+    assert "## Test" in lijst and "| 2026-10-01 | [Beschikking](../" in lijst
+    assert f"[{WET}](../bronanalyses/test/rijksregelgeving/{WET}.md)" in lijst
+    assert "## Eerder" in lijst and "| 2026-09-30 | Uitdaagrecht | Test | Geen eigen pagina. | geldt |" in lijst
+    # een eerder besluit zonder stand of met een onbekend onderwerp is een fout
+    eerder["besluiten"][0] |= {"stand": "", "onderwerp": "onbekend"}
+    beoordeling.schrijf(wiki / afleiden.BESLUITEN_EERDER, eerder)
+    fouten = afleiden.afleiden(wiki, schrijven=False).fouten
+    assert "besluiten-eerder 1 (Uitdaagrecht): 'stand' ontbreekt" in fouten
+    assert "besluiten-eerder 1 (Uitdaagrecht): onbekend onderwerp 'onbekend'" in fouten

@@ -1,0 +1,200 @@
+# Besluiten van de redacteur over begrippen, van vóór de besluiten in de beoordelingen of over meer begrippen tegelijk,
+# zonder overeenkomend besluit in een beoordeling (verzameld uit analyses/besluiten-redacteur.md, 2026-10-08).
+# tools/render.py maakt hieruit de sectie Eerder van besluiten/per-begrip.md. Een nieuw besluit over één begrip komt
+# in de beoordeling (besluiten:), niet hier. `stand`: geldt, herzien door …, of open (todo.md).
+besluiten:
+- datum: '2026-09-30'
+  begrip: College van B&W
+  onderwerp: lijkbezorging
+  besluit: Naam *College van B&W*, de gangbare naam; de wetsterm *burgemeester en wethouders* en Groningen *college* zijn synoniemen.
+  stand: geldt
+- datum: '2026-09-30'
+  begrip: Lijkbezorging (functie)
+  onderwerp: lijkbezorging
+  besluit: '*Herzien op 2026-10-04.* Overkoepelende bedrijfsfunctie voor de gemeentelijke taken rond de lijkbezorging.'
+  stand: herzien door 2026-10-04 (Verzorgen lijkbezorging), vervallen 2026-10-08
+- datum: '2026-10-01'
+  begrip: Burgemeester, College van B&W, Gemeenteraad, Beslisser
+  onderwerp: lijkbezorging
+  besluit: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
+  stand: geldt
+- datum: '2026-09-30'
+  begrip: Uitdaagrecht
+  onderwerp: participatie
+  besluit: 'Geen eigen pagina: dezelfde procedure van verzoek, beoordeling, afspraken en evaluatie als overheidsparticipatie.'
+  stand: geldt
+- datum: '2026-09-30'
+  begrip: Uniforme openbare voorbereidingsprocedure
+  onderwerp: participatie
+  besluit: Verhuist naar een algemeen onderwerp besluitvorming.
+  stand: 'open: algemeen onderwerp besluitvorming (todo.md)'
+- datum: '2026-09-30'
+  begrip: Bestuursorgaan
+  onderwerp: participatie
+  besluit: Verhuist naar een algemeen onderwerp besluitvorming.
+  stand: 'open: algemeen onderwerp besluitvorming (todo.md)'
+- datum: '2026-09-30'
+  begrip: Participatiebeleid
+  onderwerp: participatie
+  besluit: Variant van Beleidsnota; oppakken in een algemeen onderwerp. Tot dan vervallen de relaties van Gemeenteraad en Plan voor inwonersparticipatie naar het participatiebeleid.
+  stand: 'open: algemeen onderwerp (todo.md)'
+- datum: '2026-10-04'
+  begrip: Beleidsdomein Begraafplaatsen en crematoria
+  onderwerp: lijkbezorging
+  besluit: 'Voorstel aan GEMMA en GGM: een beleidsdomein *Begraafplaatsen en crematoria* onder taakveld 7 (Iv3 7.5). De export maakt de groepering in de wiki-map voor de objecten, producten en beleidskaders van lijkbezorging. Gemeentebegrafenis blijft daarnaast in het GGM-beleidsdomein Gemeentebegrafenissen.'
+  stand: geldt; procesarchitectuur-terugmelding 1
+- datum: '2026-10-04'
+  begrip: Verzorgen gemeentebegrafenis, Gemeentebegrafenis
+  onderwerp: lijkbezorging
+  besluit: 'Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), onder de taak en binnen het ketenproces Bezorgen lijken (kennismodel: een ketenproces bevat bedrijfsprocessen).'
+  stand: 'deels herzien door 2026-10-08: levensloopproces dat de bedrijfsinteractie Bezorgen stoffelijk overschot bedient'
+- datum: '2026-10-04'
+  begrip: Begraafplaats
+  onderwerp: lijkbezorging
+  besluit: Kernobject van het nieuwe bedrijfsproces Beheren begraafplaatsen, met de nieuwe deelprocessen Verlenen toestemming bijzondere begraafplaats (Wlb art. 40–41) en Sluiten begraafplaats (art. 43–44).
+  stand: 'geldt; procesniveaus herzien 2026-10-08: Beheren begraafplaatsen is levensloopproces'
+- datum: '2026-10-04'
+  begrip: Crematorium
+  onderwerp: lijkbezorging
+  besluit: Kernobject van het nieuwe bedrijfsproces Beheren crematoria, met het nieuwe deelproces Verlenen vergunning bijzonder crematorium (Wlb art. 53–55).
+  stand: 'geldt; procesniveaus herzien 2026-10-08: Beheren crematoria is levensloopproces'
+- datum: '2026-10-04'
+  begrip: Uitbaten begraafplaatsen en crematoria
+  onderwerp: lijkbezorging
+  besluit: Cluster naar soort werk met Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as en Ruimen graf; specialisatie van GEMMA *Uitbaten gemeentelijke voorzieningen*.
+  stand: geldt
+- datum: '2026-10-04'
+  begrip: Treffen maatregel bij besmet lijk, Verlenen grafrecht, Onderhouden graf
+  onderwerp: lijkbezorging
+  besluit: 'Specialiseren zelf een GEMMA-proces: *Behandelen melding*, *Behandelen aanvraag product* en *Onderhouden*. Vervallen verklaren grafrecht niet naar *Opleggen sanctie*: het verval volgt uit de afspraak, niet uit handhaving.'
+  stand: geldt; Onderhouden graf vervallen 2026-10-08 (regel Wettelijke grondslag)
+- datum: '2026-10-04'
+  begrip: Indelingsvelden
+  onderwerp: lijkbezorging
+  besluit: 'Doelgroep, domein, afnemer en regelgever zoals voorgesteld: onder meer de houder-rollen en de gemeentelijke lijkschouwer *gemeente*, Kerkgenootschap en Adviseur *ketenpartners*, Uitvaartondernemer *inwoners en ondernemers*, Uitvaart vervroegen of uitstellen *Publieksdiensten*, alle processen en diensten *extern*.'
+  stand: geldt
+- datum: '2026-10-05'
+  begrip: UPL-producten van lijkbezorging
+  onderwerp: lijkbezorging
+  besluit: 'Toets per UPL-product volgens de GEMMA-definities: een product als het een dienst met een afspraak bundelt (Grafuitgifte: Graf aanvragen en Grafrecht), anders een dienst die een deelproces realiseert. Het tarief grafrechten is een specialisatie van Heffing; overlijdensaangifte, overlijdensakte en doodgeboren kind aangifte horen bij het onderwerp burgerlijke stand. Nieuw: product Grafuitgifte, zeven diensten en vier deelprocessen (Verlenen vergunning grafbedekking, Verlenen toestemming asverstrooiing, Verlenen verlof tot ontleding, Afgeven laissez-passer).'
+  stand: geldt
+- datum: '2026-10-05'
+  begrip: Stoffelijk overschot in lopende tekst
+  onderwerp: lijkbezorging
+  besluit: 'Per element beoordeeld (19 elementen): in definitie, beschrijving en tekst per onderwerp wordt lijk stoffelijk overschot, ook waar een zin de inhoud van een register beschrijft (Graf, Houder van het crematorium). Blijven staan: de wetsterm waar het over het begrip zelf gaat (Wet op de lijkbezorging: "bepaalt wat een lijk is"), de vaste termen lijkbezorging, lijkschouwing, lijkschouwer en laissez-passer voor lijken, het begrip Register van begraven lijken en synoniemen met context wet. Maatregel bij besmet lijk (specialisatie van Beschikking, geen pagina) heet Maatregel bij besmet stoffelijk overschot.'
+  stand: geldt
+- datum: '2026-10-06'
+  begrip: Afbakening Burgerzaken
+  onderwerp: burgerzaken
+  besluit: Eén onderwerp; producten en diensten uit Utrecht en de UPL onder 0.2; het Logisch Ontwerp BRP en de HUP alleen op object- en gebeurtenisniveau; Kieswet en Rijkswet alleen de gemeentelijke taak. Producten waar de gemeente een eigen handeling heeft, worden opgenomen ook als de rechtbank beslist; varianten zijn een apart product waar de UPL ze apart noemt; de wetsterm is een synoniem van de gangbare naam; adresonderzoek, verwijdering of overschrijving (art. 2.57), levenloos geboren kind (art. 2.56a) en correctieverzoek (art. 2.58 e.v.) worden als deelproces beoordeeld; de volmacht is een dienst, het bewijs een onderdeel; de gemeentelijke rol bij de Rijkswet komt uit het Besluit verkrijging en verlies Nederlanderschap.
+  stand: geldt
+- datum: '2026-10-06'
+  begrip: Onderwerp Algemeen
+  onderwerp: algemeen
+  besluit: 'Nu een licht onderwerp Algemeen voor de generieke elementen en de organen en organisatie van de gemeente, vóór Burgerzaken: nog geen eigen bronnen en geen herbeoordeling; bestaande elementen verhuizen per geval door `algemeen` als eerste in `onderwerpen` te zetten.'
+  stand: geldt
+- datum: '2026-10-06'
+  begrip: Generieke elementen en organen naar Algemeen
+  onderwerp: algemeen
+  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
+  stand: geldt; Belanghebbende open (todo.md)
+- datum: '2026-10-06'
+  begrip: Homoniemen Andere termijn en Laissez-passer voor lijken
+  onderwerp: lijkbezorging
+  besluit: 'Vastgelegd als homoniemen (regel Eén element in het hele model): het besluit of document zelf is een specialisatie zonder pagina (van Beschikking, van Vergunning), de dienst heet Uitvaart vervroegen of uitstellen en Vervoersdocumenten stoffelijk overschot en houdt de term als synoniem (wet).'
+  stand: geldt
+- datum: '2026-10-06'
+  begrip: Beslisser
+  onderwerp: algemeen
+  besluit: 'Generiek: de GEMMA-rol Beslisser geldt in elk onderwerp en verhuist naar Algemeen (`algemeen` eerste in `onderwerpen`). Het kenmerk *generiek* blijft nee: Beslisser is zelf de generieke GEMMA-rol, geen variant daarvan. Belanghebbende hoort ook bij Algemeen; die beoordeling volgt (nog een verwijzing).'
+  stand: geldt
+- datum: '2026-10-07'
+  begrip: Producten- en dienstenrealisatie publieksdiensten
+  onderwerp: algemeen
+  besluit: 'Naar Algemeen (`algemeen` eerste in `onderwerpen`): generieke functie voor de publieksdiensten van alle onderwerpen; Lijkbezorging en Burgerzaken houden hun tekst per onderwerp.'
+  stand: geldt
+- datum: '2026-10-07'
+  begrip: Wet BRP, Besluit BRP
+  onderwerp: burgerzaken
+  besluit: Opnemen als beleidskader; grondslag van de BRP-diensten en -deelprocessen.
+  stand: geldt
+- datum: '2026-10-07'
+  begrip: Akte van de burgerlijke stand, Reisdocument
+  onderwerp: burgerzaken
+  besluit: Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12).
+  stand: 'herzien door 2026-10-07: Akte van de burgerlijke stand opgenomen, Reisdocument kernobject'
+- datum: '2026-10-07'
+  begrip: Minister van BZK
+  onderwerp: burgerzaken
+  besluit: 'Geen element, in lijn met plak 1: één organisatie van het Rijk, geen soort partij; zijn registers zijn invoer en hij staat in de beschrijvingen. De rijkskant (minister/RvIG, IND) eventueel in één keer zichtbaar maken bij plak 4.'
+  stand: aangevuld door 2026-10-07 (Rijk, Minister van BZK, Immigratie- en Naturalisatiedienst)
+- datum: '2026-10-07'
+  begrip: Reisdocument, Beheren reisdocumenten
+  onderwerp: burgerzaken
+  besluit: 'Reisdocument is kernobject van het nieuwe bedrijfsproces Beheren reisdocumenten onder Verzorgen burgerzaken (geen ketenproces: de minister voert tegenover de houder geen eigen deel uit), met de deelprocessen voor aanvraag, aanvraag niet-ingezetene, uitreiking, vermissing, inhouding en vervallenverklaring; de documentsoorten zijn specialisaties zonder pagina met de wetsterm, de diensten houden de UPL-naam.'
+  stand: 'deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren reisdocumenten is levensloopproces'
+- datum: '2026-10-07'
+  begrip: Rijk, Minister van BZK, Immigratie- en Naturalisatiedienst
+  onderwerp: algemeen
+  besluit: 'Rijkskant: één actor Rijk (GEMMA-actor Rijk, exacte match; de export vult de lege GEMMA-definitie), thuis in Algemeen, die de rol Ketenpartner vervult in het ketenproces Beheren Nederlanderschap. De afzonderlijke ministers en rijksdiensten (minister van BZK met de RvIG, minister van JenV met de IND) zijn geen eigen actor en staan in de beschrijving van Rijk.'
+  stand: geldt
+- datum: '2026-10-07'
+  begrip: Rijkswet op het Nederlanderschap, Besluit verkrijging en verlies Nederlanderschap, Kieswet
+  onderwerp: burgerzaken
+  besluit: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap (optie, naturalisatie, afstand) en van Beheren stempassen en Registreren kiesgerechtigdheid.
+  stand: geldt
+- datum: '2026-10-07'
+  begrip: Beheren stempassen, Registreren kiesgerechtigdheid
+  onderwerp: burgerzaken
+  besluit: Stempas is kernobject van het bedrijfsproces Beheren stempassen onder Verzorgen burgerzaken (stempas, kiezerspas, volmacht); de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie.
+  stand: 'deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren stempassen is levensloopproces'
+- datum: '2026-10-07'
+  begrip: Rijbewijs, Verklaring omtrent het gedrag (VOG)
+  onderwerp: burgerzaken
+  besluit: 'Binnen Burgerzaken (plak 5), niet een later onderwerp: UPL 360-363 en 434 staan onder 0.2 en op de Utrecht-hubpagina. Rijbewijs is gegevensobject zonder GGM-entiteit en kernobject van het bedrijfsproces Beheren rijbewijzen (de burgemeester besluit tot afgifte; RDW en CBR zijn producent en bron van invoer, geen eigen actor; de omwisseling van een buitenlands rijbewijs is een deelproces waarin de gemeente doorgeleidt, GGM-terugmelding 18). De VOG is kernobject van het ketenproces Afgeven verklaring omtrent het gedrag, met het Rijk (de minister van JenV) als Ketenpartner, zonder GGM-terugmelding. Beleidskaders: Wegenverkeerswet 1994, Reglement rijbewijzen en Wet justitiële en strafvorderlijke gegevens; het Besluit justitiële en strafvorderlijke gegevens is bron.'
+  stand: 'deels herzien door 2026-10-08: de VOG is orkestratie, geen ketenproces'
+- datum: '2026-10-07'
+  begrip: Afronding Burgerzaken
+  onderwerp: burgerzaken
+  besluit: 'Alle UPL-regels onder 0.2 en alle Utrecht-pagina''s hebben een element of een vastgelegde uitkomst. Verwijzingen (geen element) naar latere onderwerpen: verkiezingsorganisatie (UPL 205, 395, 396), openbare ruimte (243-246), Overlijdensuitkering, Reclamesticker en Contactgegevens aanpassing. Het synoniem Doorgever bij Aangever vervalt (geen bron). De namen Akte van de burgerlijke stand, Wet en Besluit basisregistratie personen, Besluit burgerlijke stand 1994 en Verkiezingen gerelateerde diensten blijven, toegelicht in `naamkeuze`. Er is geen Product in Burgerzaken; de beleidskaders hangen aan de UPL-diensten en deelprocessen, met toelichting. Regeling BRP blijft bron. Overlijden blijft thuis in Burgerzaken. De diensten Rijbewijs aanvragen en Verklaring omtrent gedrag aanvragen krijgen de UPL-naam als synoniem (precedent Briefadres aanvragen). Tegenspraak vastgelegd: proces-verbaal bij vermissing (Reglement art. 39) tegenover vermissingsverklaring (Utrecht).'
+  stand: geldt
+- datum: '2026-10-07'
+  begrip: Behandelen verkrijging en verlies Nederlanderschap
+  onderwerp: burgerzaken
+  besluit: Nieuw bedrijfsproces voor het deel van de gemeente binnen Beheren Nederlanderschap, met alle vier de deelprocessen (optieverklaring, naturalisatieverzoek, naturalisatieceremonie, verklaring van afstand); de indeling 2+2 vervalt. De toegang-relaties naar Nederlanderschap en Ingeschreven persoon verhuizen van het ketenproces; de gebeurtenissen, Ketenpartner, de functie en de Rijkswet blijven bij het ketenproces. Naam naar de titel van het Besluit verkrijging en verlies Nederlanderschap; Behandelen verzoeken en verklaringen Nederlanderschap is afgewezen omdat de ceremonie geen verzoek of verklaring is.
+  stand: 'herzien door 2026-10-08: samengevoegd in Beheren Nederlanderschap'
+- datum: '2026-10-07'
+  begrip: Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot
+  onderwerp: lijkbezorging
+  besluit: 'Bezorgen stoffelijk overschot per partij in de keten, met de gemeente in de hoedanigheid waarin ze optreedt: Toestaan lijkbezorging (de gemeente als overheid: Schouwen, Verlenen verlof tot begraving of crematie, Stellen andere termijn, Verlenen verlof tot ontleding, Afgeven laissez-passer, Verlenen toestemming asverstrooiing, Opgraven, Treffen maatregel bij besmet stoffelijk overschot) en Begraven en cremeren stoffelijk overschot (de houder van de begraafplaats of het crematorium: Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as); Verzorgen gemeentebegrafenis blijft. Een groep arts vervalt: in het model schouwt alleen de gemeentelijke lijkschouwer, die de gemeente benoemt (Wlb art. 3, 4). Afgewezen: één gemeentelijk deel met alle tien (bijna gelijk aan het ketenproces, mengt overheid en houder) en fasegroepen (volgen de fase, niet de partij). Namen: Toezien op lijkbezorging afgewezen (homoniem met toezicht), Bezorgen en bestemmen afgewezen (bijna de naam van het ketenproces).'
+  stand: 'deels herzien door 2026-10-08: levensloopprocessen die de bedrijfsinteractie Bezorgen stoffelijk overschot bedienen'
+- datum: '2026-10-08'
+  begrip: Stoffelijk overschot, Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot
+  onderwerp: lijkbezorging
+  besluit: 'Eén levensloopproces per partij: Toestaan lijkbezorging (de gemeente als overheid) en Begraven en cremeren stoffelijk overschot (de houder) blijven allebei levensloopproces van Stoffelijk overschot. Afgewezen: één levensloopproces Bezorgen stoffelijk overschot met de tien bedrijfsprocessen, en Toestaan lijkbezorging als enige levensloopproces.'
+  stand: geldt
+- datum: '2026-10-08'
+  begrip: Beheren Nederlanderschap, Behandelen verkrijging en verlies Nederlanderschap
+  onderwerp: burgerzaken
+  besluit: 'Geen interactie: bij optie en afstand beslist de burgemeester zelf, bij de naturalisatie voert de gemeente delen uit voor de minister (orkestratie). Beheren Nederlanderschap blijft het levensloopproces met zijn object en aggregeert de vier bedrijfsprocessen; Behandelen verkrijging en verlies Nederlanderschap vervalt, samengevoegd. Behandelen naturalisatieverzoek en Houden naturalisatieceremonie specialiseren *Leveren dienst aan derden*.'
+  stand: geldt
+- datum: '2026-10-08'
+  begrip: Verval van het reisdocument, Inhouden reisdocument, Vervallen verklaren reisdocument, Inlevering van het reisdocument
+  onderwerp: burgerzaken
+  besluit: 'Het verval van rechtswege triggert de inhouding niet. Nieuwe gebeurtenis Inlevering van het reisdocument (wetsterm, Paspoortwet art. 56) triggert Inhouden reisdocument, het bedrijfsproces voor elke inlevering (teruggevonden vermist, vervallen, beschadigd of gesignaleerd document, art. 54). Vervallen verklaren reisdocument wordt daarin een deelproces, alleen na een signalering (art. 44, 53). Verwerken vermissing reisdocument eindigt bij de registratie en het verval (art. 47 lid 1 onder j). Afgewezen: de vervallenverklaring onder Verwerken vermissing (een vermist document vervalt van rechtswege), en de inlevering van een teruggevonden document als tweede gebeurtenis van Verwerken vermissing (het inhouden zou dan op twee plaatsen staan).'
+  stand: geldt
+- datum: '2026-10-08'
+  begrip: Behandelen melding voorgenomen huwelijk of partnerschap, Voltrekken huwelijk, Registreren partnerschap
+  onderwerp: burgerzaken
+  besluit: 'De klant wil trouwen of een partnerschap laten registreren: Voltrekken huwelijk en Registreren partnerschap zijn de bedrijfsprocessen, van de melding tot de akte; de melding wordt van beide een deelproces zonder pagina, de diensten van de melding gaan naar die bedrijfsprocessen en het Archi-object vervalt. Afgewezen: alle drie bedrijfsproces.'
+  stand: geldt
+- datum: '2026-10-08'
+  begrip: Overlijden, Schouwen stoffelijk overschot, Bijzetten of verstrooien van de as
+  onderwerp: lijkbezorging
+  besluit: 'Overlijden leidt tot de akte (Opmaken akte van overlijden, daarna Verlenen verlof) en tot het begraven of cremeren (Uitvoeren lijkbezorging). Bijzetten of verstrooien van de as wordt een deelproces van Uitvoeren lijkbezorging. Schouwen stoffelijk overschot blijft een eigen bedrijfsproces (de schouw gebeurt vóór de aangifte en de aanvraag van het verlof, door een andere rol); de verklaring van overlijden gaat als stroom naar Verlenen verlof (Wlb art. 12). Afgewezen: Schouwen als deelproces van Verlenen verlof.'
+  stand: geldt
+- datum: '2026-10-08'
+  begrip: Producten- en dienstenrealisatie veiligheidsdomein, Uitvoering openbare orde en veiligheid
+  onderwerp: lijkbezorging
+  besluit: 'Vervallen in de wiki: ze omvatten alleen Asverstrooiing, die geen landelijke grondslag en geen proces heeft; Asverstrooiing gaat naar Exploiteren van begraafplaatsen. Besluit 5 blijft, met een aanvulling (besluit 12 in analyses/wettelijke-grondslag.md). De GEMMA-elementen blijven; voorstel in GEMMA-terugmelding 1, in een nieuw register van GEMMA-terugmeldingen met de opbouw van de GGM- en procesarchitectuur-terugmeldingen.'
+  stand: geldt; GEMMA-terugmelding 1

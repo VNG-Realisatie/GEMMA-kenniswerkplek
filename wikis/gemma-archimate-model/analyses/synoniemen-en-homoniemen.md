@@ -9,14 +9,6 @@ bijgewerkt: '2026-10-01'
 
 Deze analyse vergelijkt hoe de vorige bedrijfsobjectenwiki (repository GEMMA-GGM-bedrijfsobjectenwiki, map Bedrijfsarchitectuur) met synoniemen en homoniemen omging, met wat deze wiki nu doet, en adviseert hoe het past in de aanpak met kenmerken en beslistabel ([kenmerken per elementtype](kenmerken.md)).
 
-## Besluiten van de redacteur
-
-| Datum | Besluit |
-|---|---|
-| 2026-10-01 | Een homoniem is: zelfde naam, ander begrip, in elke bron (wiki, GGM, GEMMA-model, wet, beleid) en voor elk elementtype. Naamkeuze en wederzijdse verwijzing altijd; een terugmelding alleen bij een GGM-homoniem. Een actor of rol en een bedrijfsobject met dezelfde naam blijven een tegenhanger. |
-| 2026-10-01 | Synoniem en homoniem komen als stap 0 *Welk begrip?* in de beslistabel, met de velden `synoniem_van` en `homoniem_van` in de beoordeling. Synoniem: uitkomst *synoniem*, geen pagina, het woord naar `synoniemen` van het element, in de begrippenlijst als "synoniem van". Homoniem: door naar de kenmerken, naamkeuze voorleggen. |
-| 2026-10-01 | `## Homoniemen` wordt een tabel met de kolommen Begrip (link als er een pagina is), Betekenis, Waar (GGM-entiteit met GUID en beleidsdomein, GEMMA-element of bron als link) en Naamkeuze. De controle toetst per rij de wederzijdse link en, bij een GGM-homoniem, de terugmelding. |
-
 ## Begrippen
 
 | Verhouding | Betekenis | Voorbeeld |
@@ -73,6 +65,14 @@ Een duplicaat is geen verhouding tussen begrippen maar tussen vastleggingen in e
 3. **`## Homoniemen` als tabel.** Kolommen: Begrip (link als er een pagina is), Betekenis, Waar (GGM-entiteit met GUID en beleidsdomein, GEMMA-element, of bron-id als link), Naamkeuze. Dat brengt de structuur van de vorige wiki terug zonder verwijzingen in de frontmatter.
 4. **Controle uitbreiden.** Waarschuwen als de GGM- of GEMMA-naam afwijkt van de naam en niet als synoniem met context "GGM" of "GEMMA" staat; waarschuwen als een woord in `synoniemen` van twee elementen staat (dan is het een homoniem of een fout).
 5. **Retroactief bij de herbeoordeling.** De naamconflicten van de bestaande 57 elementen worden in dezelfde run per onderwerp gecontroleerd, per geval voorgelegd (regel Per geval), zoals de audit-modus van de vorige wiki deed.
+
+## Besluiten van de redacteur
+
+| Datum | Besluit | Stand |
+|---|---|---|
+| 2026-10-01 | Een homoniem is: zelfde naam, ander begrip, in elke bron (wiki, GGM, GEMMA-model, wet, beleid) en voor elk elementtype. Naamkeuze en wederzijdse verwijzing altijd; een terugmelding alleen bij een GGM-homoniem. Een actor of rol en een bedrijfsobject met dezelfde naam blijven een tegenhanger. | skill beoordelen §3; references/naamgeving.md |
+| 2026-10-01 | Synoniem en homoniem komen als stap 0 *Welk begrip?* in de beslistabel, met de velden `synoniem_van` en `homoniem_van` in de beoordeling. Synoniem: uitkomst *synoniem*, geen pagina, het woord naar `synoniemen` van het element, in de begrippenlijst als "synoniem van". Homoniem: door naar de kenmerken, naamkeuze voorleggen. | beslistabel (stap 0); skill criteria |
+| 2026-10-01 | `## Homoniemen` wordt een tabel met de kolommen Begrip (link als er een pagina is), Betekenis, Waar (GGM-entiteit met GUID en beleidsdomein, GEMMA-element of bron als link) en Naamkeuze. De controle toetst per rij de wederzijdse link en, bij een GGM-homoniem, de terugmelding. | render (sectie Homoniemen) en tools/afleiden.py (controle) |
 
 ## Open vragen
 

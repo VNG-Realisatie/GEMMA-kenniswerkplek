@@ -15,7 +15,7 @@ Nieuwe GGM-terugmeldingen in `beoordelingen/terugmeldingen/ggm.yaml` krijgen het
 Harde controles (fout: er wordt niets geschreven): schema, kenmerken, verplichte velden van een element, bestaan van
 bronnen (met bronanalyse), GGM-guid, GEMMA-id, doelen van relaties, specialisaties, tegenhanger en homoniemen, de
 ArchiMate-relatietabel, de bronanalyses, de gegenereerde modelmappen, het register van Archi-objecten
-(`beoordelingen/objecten.yaml`) en het register van beleidsdomeinen (`beoordelingen/beleidsdomeinen.yaml`). Zachte signalen (waarschuwingen, met de naam
+(`beoordelingen/objecten.yaml`), het register van beleidsdomeinen (`beoordelingen/beleidsdomeinen.yaml`) en het register van eerdere besluiten (`beoordelingen/besluiten-eerder.yaml`). Zachte signalen (waarschuwingen, met de naam
 van de regel) staan in tools/signalen.py. Daarna draait het render-script (tools/render.py), tenzij `--zonder-render`.
 
 Gebruik (vanuit de wikimap):
@@ -51,6 +51,7 @@ GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "gemma.yaml"
 GEMMA_TYPEN = ("element", "indeling", "definitie", "relatie")
 OBJECTEN = Path("beoordelingen") / "objecten.yaml"
 BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
+BESLUITEN_EERDER = Path("beoordelingen") / "besluiten-eerder.yaml"
 WIJZIGINGEN = ("hernoemd", "samengevoegd", "gesplitst")
 
 
@@ -323,6 +324,22 @@ def _objecten(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> None
         objecten.add(o.get("object_van"))
 
 
+def _besluiten_eerder(ctx: Context, res: Resultaat) -> None:
+    """Het register van eerdere besluiten per begrip (zonder overeenkomend besluit in een beoordeling): elk besluit heeft
+    een datum, begrip, bestaand onderwerp, besluit en stand."""
+    pad = ctx.wiki_root / BESLUITEN_EERDER
+    if not pad.exists():
+        return
+    onderwerpen = {p.stem for p in (ctx.wiki_root / ONDERWERPEN).glob("*.yaml")}
+    for i, b in enumerate(beoordeling.laad(pad).get("besluiten", []), 1):
+        naam = f"besluiten-eerder {i} ({b.get('begrip')})"
+        for veld in ("datum", "begrip", "onderwerp", "besluit", "stand"):
+            if not b.get(veld):
+                res.fouten.append(f"{naam}: '{veld}' ontbreekt")
+        if b.get("onderwerp") and b["onderwerp"] not in onderwerpen:
+            res.fouten.append(f"{naam}: onbekend onderwerp '{b['onderwerp']}'")
+
+
 def _beleidsdomeinen(ctx: Context, alle: dict[str, tuple[Path, dict]], uitkomsten: dict[str, dict], res: Resultaat) -> None:
     """Het register van beleidsdomeinen: de beschrijving van een beleidsdomein in de Beleidsdomeinindeling (besluit
     redacteur 2026-10-08, de tekst van een vervallen taak). Elk beleidsdomein komt hoogstens één keer voor, wordt door
@@ -474,6 +491,7 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             [(van, r) for van in elementen for r in alle[van][1].get("relaties", [])], ctx.gemma() if gekoppeld else {})
     _objecten(ctx, uitkomsten, res)
     _beleidsdomeinen(ctx, alle, uitkomsten, res)
+    _besluiten_eerder(ctx, res)
     if any(u["paginatype"] in ("product", "dienst") for u in elementen.values()) \
             and (wiki_root / "gemma" / "gemma_parsed.json").exists():
         res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,

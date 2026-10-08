@@ -17,7 +17,7 @@ Het GGM is zowel bron (kandidaat-begrippen, definities, relaties) als toets. Het
 | | Wie | Waar |
 |---|---|---|
 | **Oordeel** per begrip: kenmerken met onderbouwing en bron, naam, definitie, beschrijving, tekst per onderwerp, GGM- en GEMMA-match op betekenis, relaties, hiërarchie, open vragen | AI | `beoordelingen/begrippen/<id>.yaml` |
-| **Besluiten** van de redacteur over een voorgelegd punt | redacteur, vastgelegd door de AI | `besluiten:` in de beoordeling; eerdere besluiten in [analyses/besluiten-redacteur.md](analyses/besluiten-redacteur.md) |
+| **Besluiten** van de redacteur over een voorgelegd punt | redacteur, vastgelegd door de AI | `besluiten:` in de beoordeling; eerdere besluiten per begrip in [besluiten/per-begrip.md](besluiten/per-begrip.md) (gegenereerd), over de werkwijze in [besluiten/werkwijze.md](besluiten/werkwijze.md) |
 | **Afleiding**: type uit de beslistabel, status, letterlijke GGM- en GEMMA-velden, paginapad, herkomst, nummers van terugmeldingen; harde controles en signalen | [tools/afleiden.py](tools/afleiden.py), [tools/signalen.py](tools/signalen.py) | `status:` en `afgeleid:` in de beoordeling |
 | **Vorm**: alle leesbare pagina's en overzichten | [tools/render.py](tools/render.py) | zie §4 |
 | **Akkoord** | redacteur, met het woord AKKOORD in de chat | `llmwiki promote plan/apply`, `log.md` |

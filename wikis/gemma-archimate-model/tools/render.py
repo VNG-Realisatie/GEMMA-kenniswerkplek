@@ -2,7 +2,7 @@
 
 Invoer (alleen lezen): `beoordelingen/begrippen/<id>.yaml` (het oordeel van de AI, met `status` en `afgeleid` van
 tools/afleiden.py), `beoordelingen/onderwerpen/<id>.yaml`, `beoordelingen/terugmeldingen/ggm.yaml`,
-`beoordelingen/terugmeldingen/procesarchitectuur.yaml`, `beoordelingen/terugmeldingen/gemma.yaml`, `beoordelingen/beleidsdomeinen.yaml`, `log.md`, `wiki.yaml`,
+`beoordelingen/terugmeldingen/procesarchitectuur.yaml`, `beoordelingen/terugmeldingen/gemma.yaml`, `beoordelingen/beleidsdomeinen.yaml`, `beoordelingen/besluiten-eerder.yaml`, `log.md`, `wiki.yaml`,
 de bronanalyses en `sources/index` (titels). Het script oordeelt niet en schrijft nooit in `beoordelingen/`.
 
 Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--check` vangt dat):
@@ -15,6 +15,7 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 | `terugmeldingen/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
 | `terugmeldingen/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel) |
 | `terugmeldingen/gemma-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model |
+| `besluiten/per-begrip.md` | Besluiten van de redacteur per begrip, per thuisonderwerp, en de eerdere besluiten uit `beoordelingen/besluiten-eerder.yaml` |
 | `ter-beoordeling.md` | Wat wacht op akkoord (review), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 
@@ -61,6 +62,8 @@ PA_TERUGMELDLIJST = Path("terugmeldingen") / "procesarchitectuur-terugmeldingen.
 GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "gemma.yaml"
 GEMMA_TERUGMELDLIJST = Path("terugmeldingen") / "gemma-terugmeldingen.md"
 BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
+BESLUITEN_EERDER = Path("beoordelingen") / "besluiten-eerder.yaml"
+BESLUITEN_PER_BEGRIP = Path("besluiten") / "per-begrip.md"
 INDELINGSVELDEN = ("afnemer", "domein", "doelgroep", "regelgever")  # waarden zonder verwijzing: ook in de frontmatter
 
 STATUSSEN = ["kandidaat", "review", "goedgekeurd", "afgewezen"]
@@ -122,6 +125,8 @@ class Wiki:
         bd = wiki_root / BELEIDSDOMEINEN
         self.beleidsdomeinen = {b["beleidsdomein"]: b for b in beoordeling.laad(bd).get("beleidsdomeinen", [])} \
             if bd.exists() else {}
+        be = wiki_root / BESLUITEN_EERDER
+        self.besluiten_eerder = beoordeling.laad(be).get("besluiten", []) if be.exists() else []
         log = wiki_root / "log.md"
         self.log = log.read_text(encoding="utf-8") if log.exists() else ""
         self.onderwerp_dir = self.yaml["page_types"].get("onderwerp", {}).get("dir", "begrippen")
@@ -807,6 +812,37 @@ def ter_beoordeling(w: Wiki) -> str:
     return _pagina(meta, r)
 
 
+def besluiten_per_begrip(w: Wiki) -> str:
+    """Alle besluiten van de redacteur uit de beoordelingen, per thuisonderwerp, en de eerdere besluiten zonder
+    overeenkomend besluit in een beoordeling (`beoordelingen/besluiten-eerder.yaml`)."""
+    van = BESLUITEN_PER_BEGRIP.as_posix()
+    meta = {"id": "per-begrip", "type": "lijst", "titel": "Besluiten per begrip"}
+    r = ["# Besluiten per begrip", "", _gegenereerd("de beoordelingen en beoordelingen/besluiten-eerder.yaml"), "",
+         "Wat de redacteur over afzonderlijke begrippen besliste. De AI leest deze lijst bij het beoordelen en legt een "
+         "besluit dat hier staat niet opnieuw voor; een besluit dat niet meer past bij de criteria wel, met de reden. "
+         "Een besluit over één begrip staat in zijn beoordeling (`besluiten:`); besluiten over de werkwijze staan in "
+         "[Besluiten over de werkwijze](werkwijze.md).", ""]
+    for oid, o in w.onderwerpen.items():
+        rijen = []
+        for bid, d in w.begrippen.items():
+            if gam_gemeen.thuis(d) != oid:
+                continue
+            a = (d.get("afgeleid") or {}).get("uitkomst", {})
+            soort = ARCHIMATE_NAAM.get(a.get("archimate_type"), "") if w.pad(bid) else UITKOMST.get(a.get("soort"), a.get("soort", ""))
+            for b in d.get("besluiten") or []:
+                rijen.append((str(b.get("datum")), d["begrip"].lower(),
+                              [str(b.get("datum")), w.link(van, bid), soort, w.tekst(van, b.get("besluit", "")), b.get("gevolg", "")]))
+        rijen.sort(key=lambda x: (x[0], x[1]))
+        r += _sectie(o.get("naam", oid), _tabel(["Datum", "Begrip", "Uitkomst", "Besluit", "Gevolg"], [x[2] for x in rijen])
+                     if rijen else ["Nog geen besluiten.", ""])
+    eerder = [[str(b["datum"]), b["begrip"], w.onderwerpen.get(b["onderwerp"], {}).get("naam", b["onderwerp"]),
+               w.tekst(van, b["besluit"]), b.get("stand", "")] for b in w.besluiten_eerder]
+    r += _sectie("Eerder", ["Besluiten van vóór de besluiten in de beoordelingen, of over meer begrippen tegelijk, die "
+                            "niet ook in een beoordeling staan. De kolom Stand zegt of het besluit nog geldt.", "",
+                            *_tabel(["Datum", "Begrip", "Onderwerp", "Besluit", "Stand"], eerder)] if eerder else [])
+    return _pagina(meta, r)
+
+
 def _samenhang(w: Wiki) -> list[str]:
     """Per onderwerp de elementen die er thuishoren, die het uit andere onderwerpen gebruikt, en de relaties binnen het
     onderwerp en met andere onderwerpen (regels Thuishoren en Relaties tussen onderwerpen)."""
@@ -885,6 +921,7 @@ def render(wiki_root: Path = WIKI_ROOT) -> dict[str, str]:
     uit[PA_TERUGMELDLIJST.as_posix()] = pa_terugmeldlijst(w)
     if w.gemma_terugmeldingen:
         uit[GEMMA_TERUGMELDLIJST.as_posix()] = gemma_terugmeldlijst(w)
+    uit[BESLUITEN_PER_BEGRIP.as_posix()] = besluiten_per_begrip(w)
     uit[TER_BEOORDELING.as_posix()] = ter_beoordeling(w)
     uit[VOORTGANG.as_posix()] = voortgang(w)
     return uit

@@ -43,7 +43,7 @@ De typen van beide elementen bepalen de soort relatie, het werkwoord de richting
 | rol, bedrijfssamenwerking → proces, functie | toewijzing | — |
 | actor → rol | toewijzing | alleen bij "vervult", "treedt op als", "fungeert als"; andere werkwoorden tussen partijen ("benoemt", "waarschuwt") → gerichte associatie |
 | actor → gedrag of object | — | een actor hangt alleen via een rol aan gedrag en objecten (besluit 2026-10-01): leg de rol vast |
-| rol → object | toegang (verantwoordelijkheid) | houder ("houdt"), bronhouder ("houdt bij"), beheerder ("beheert", "onderhoudt"), verstrekker, afnemer ("ontvangt", "gebruikt"), toezichthouder, betrokkene, partij (alleen naar een afspraak); een handeling ("vraagt aan", "geeft af") wordt een toewijzing van de rol aan het proces |
+| rol → object | toegang (verantwoordelijkheid) | houder ("houdt"), bronhouder ("houdt bij"), beheerder ("beheert", "onderhoudt"), verstrekker, afnemer ("ontvangt", "gebruikt"), toezichthouder, betrokkene, partij (alleen naar een afspraak); bij de AVG een toevoeging in de naam, bijvoorbeeld "houder (verwerkingsverantwoordelijke)", met het wetsartikel als vindplaats; een handeling ("vraagt aan", "geeft af") wordt een toewijzing van de rol aan het proces |
 | proces/functie → object | toegang (handeling) | registreren ("stelt vast", "legt vast", "verleent", "ontvangt" …), bijwerken ("wijzigt", "onderhoudt", "ruimt" …), beëindigen ("trekt in", "heft op" …), raadplegen ("gebruikt", "vereist", "toetst" …), verstrekken, bewaren, overbrengen, vernietigen |
 | object → proces/functie | toegang (handeling), omgedraaid | idem |
 | functie → proces | bediening | de functie bedient het proces; geen aggregatie |
@@ -51,7 +51,8 @@ De typen van beide elementen bepalen de soort relatie, het werkwoord de richting
 | gebeurtenis ↔ gedrag, gedrag → gedrag | triggering | "leidt tot", "start"; "volgt op" draait de richting om |
 | proces/functie → dienst | realisatie | — |
 | dienst → rol of gedrag | bediening | — (een dienst krijgt geen rol toegewezen en heeft geen toegang tot een object) |
-| beleidskader → proces, dienst, product | associatie (gericht), naam "is grondslag voor"; bij een beleidskader in de groep Richtlijn "geeft richtlijn voor" (geen wettelijke grondslag) | — |
+| product → rol | bediening | het product bedient de rol van de afnemer (kennismodel regel 596: Product → bediening → Klant; Grafuitgifte bedient Rechthebbende op het graf) |
+| beleidskader → proces, dienst, product | associatie (gericht), naam "is grondslag voor"; bij een beleidskader in de groep Richtlijn "geeft richtlijn voor" (geen wettelijke grondslag); bij een beleidskader in de groep Gemeentelijke regelgeving alleen "is grondslag voor" naar een UPL-product of -dienst zonder landelijke grondslag, anders "werkt uit voor" (regel Wettelijke grondslag). Bij voorkeur naar een product (kennismodel regel 595); naar een proces of dienst als er geen product is | — |
 | gedrag → gedrag | stroom | "levert aan", "geeft door aan" |
 | elk → gelijk type | specialisatie | "is een" |
 | object → object, product → dienst/object | compositie of aggregatie | "bestaat uit" → compositie; "bevat", "omvat" → aggregatie; "maakt deel uit van" draait de richting om |

@@ -10,17 +10,6 @@ bronnen: [2026-vng-over-gemma]
 
 Deze analyse loopt voor elk elementtype de kenmerken na, na de besluiten van 30 september en 1 oktober 2026 ([GEMMA-kennismodel](gemma-kennismodel.md), [toegang tot een bedrijfsobject](gegevensrollen.md)). Ze toetst of de set compleet en kloppend is, en formuleert per kenmerk de vraag die bepaalt of het kenmerk op een begrip van toepassing is. De set is nog niet doorgevoerd in de beslistabel; dat gebeurt bij de herziening uit de todo van deze wiki.
 
-## Besluiten van de redacteur
-
-| Datum | Besluit |
-|---|---|
-| 2026-10-01 | De drempel van de dienst bevat geen *toegewezen partij*: kern *gerealiseerd door*, overig *afnemer* en *benoembaar resultaat*. De verantwoordelijke rol hangt aan het realiserende proces of de functie, zoals in GEMMA. |
-| 2026-10-01 | De drempel van het product bevat geen *onderscheidbare exemplaren* maar *benoembaar resultaat* (de waarde voor de afnemer): kern *omvat diensten en afspraken*, overig *afnemer* en *benoembaar resultaat*. Een verleend exemplaar is een bedrijfsobject, geen product. |
-| 2026-10-01 | Een concreet benoemde regeling als geheel die rijks- of EU-regelgeving of een VNG-modelverordening is, wordt beleidskader; de soort regeling is het bedrijfsobject Regeling; een gemeentelijke verordening blijft bron en wordt geen element; een los artikel valt buiten dit model. |
-| 2026-10-01 | Het kenmerk "zelfstandig beleidsbegrip" heet voortaan *zelfstandige specialisatie*, met de vraag: is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt (eigen gegevens, regels of werkwijze)? |
-| 2026-10-01 | Documentatie: de kenmerken als vragenlijst in volgorde van beoordelen en als naslagtabel per groep; de beslistabel als matrix kenmerk × type en als kaart per elementtype ("wanneer is iets een …?"). Beide worden gegenereerd uit dezelfde bron als de beslistabel; de stappentabel blijft in de criteria. |
-| 2026-10-08 | *Bijdrage aan groter proces* toetst nu het bedrijfsproces (een mutatie in het levensloopproces van een kernobject, met *eigen besluit*, *eigen normering* of *levert aanbod*); zonder die drie is het een deelproces of processtap zonder pagina. *Groepeert processen* geldt alleen voor een cluster naar soort werk. *Meer organisaties* vervalt: een keten is een bedrijfsinteractie (*gezamenlijk gedrag*). Zie [Proceshiërarchie](proceshierarchie.md). |
-
 ## Hoe een vraag is opgebouwd
 
 Elke vraag is met ja of nee te beantwoorden en gaat over het begrip zelf, niet over het vermoedelijke type. Waar de vraag "Noem …" zegt, hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; zonder zo'n verwijzing is het antwoord nee. Een kenmerk dat niet bij de aard van het begrip past (een gedragskenmerk bij een ding), is nee.
@@ -64,6 +53,17 @@ Samen 60 kenmerken (criteria van 2026-10-04, zie [Indelingen](indelingen.md)): 6
 - Elk kenmerk telt bij minstens één type; er is geen kenmerk zonder functie.
 - De consistentieregels (gedrags-, partij- en passieve kenmerken alleen bij de passende aard) blijven nodig en dekken de nieuwe kenmerken: *eigen rechtspersoon*, *vervult een rol* en *ontsluit een dienst* zijn partijkenmerken, *bijdrage aan groter proces* is een gedragskenmerk, de drie beleidskaderkenmerken horen alleen bij *regeling als geheel*.
 - Twee extra controles volgen uit de set: *eigen normering* ja bij een proces hoort samen te gaan met een beleidskader dat er *grondslag voor* is; en de verantwoordelijkheid van een rol hoort te passen bij de handeling van het gedrag waaraan zij is toegewezen.
+
+## Besluiten van de redacteur
+
+| Datum | Besluit | Stand |
+|---|---|---|
+| 2026-10-01 | De drempel van de dienst bevat geen *toegewezen partij*: kern *gerealiseerd door*, overig *afnemer* en *benoembaar resultaat*. De verantwoordelijke rol hangt aan het realiserende proces of de functie, zoals in GEMMA. | beslistabel (drempel dienst) |
+| 2026-10-01 | De drempel van het product bevat geen *onderscheidbare exemplaren* maar *benoembaar resultaat* (de waarde voor de afnemer): kern *omvat diensten en afspraken*, overig *afnemer* en *benoembaar resultaat*. Een verleend exemplaar is een bedrijfsobject, geen product. | beslistabel (drempel product) |
+| 2026-10-01 | Een concreet benoemde regeling als geheel die rijks- of EU-regelgeving of een VNG-modelverordening is, wordt beleidskader; de soort regeling is het bedrijfsobject Regeling; een gemeentelijke verordening blijft bron en wordt geen element; een los artikel valt buiten dit model. | skill criteria (regeling); aangevuld door 2026-10-08 (landelijke richtlijn als beleidskader) |
+| 2026-10-01 | Het kenmerk "zelfstandig beleidsbegrip" heet voortaan *zelfstandige specialisatie*, met de vraag: is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt (eigen gegevens, regels of werkwijze)? | beslistabel (kenmerk zelfstandige specialisatie) |
+| 2026-10-01 | Documentatie: de kenmerken als vragenlijst in volgorde van beoordelen en als naslagtabel per groep; de beslistabel als matrix kenmerk × type en als kaart per elementtype ("wanneer is iets een …?"). Beide worden gegenereerd uit dezelfde bron als de beslistabel; de stappentabel blijft in de criteria. | naslag/beslistabel.md en skill criteria |
+| 2026-10-08 | *Bijdrage aan groter proces* toetst nu het bedrijfsproces (een mutatie in het levensloopproces van een kernobject, met *eigen besluit*, *eigen normering* of *levert aanbod*); zonder die drie is het een deelproces of processtap zonder pagina. *Groepeert processen* geldt alleen voor een cluster naar soort werk. *Meer organisaties* vervalt: een keten is een bedrijfsinteractie (*gezamenlijk gedrag*). Zie [Proceshiërarchie](proceshierarchie.md). | deels herzien door 2026-10-08 (klant tot klant): eigen besluit en eigen normering bepalen het procesniveau niet meer; de rest in de beslistabel |
 
 ## Open vragen
 

@@ -12,16 +12,6 @@ De redacteur besloot op 1 oktober 2026 dat een relatie van een rol naar een bedr
 
 Een algemene "Wet basisregistraties" bestaat niet. Het stelsel van basisregistraties heeft vaste rollen, die per basisregistratie in een eigen wet zijn uitgewerkt. Deze analyse gebruikt de rollenbeschrijving van het stelsel en de wetten van de basisregistraties waarin de gemeente bronhouder of afnemer is.
 
-## Besluiten van de redacteur
-
-| Datum | Besluit |
-|---|---|
-| 2026-10-01 | De toegang van een functie of proces tot een object krijgt een handeling uit een vaste reeks: registreren, bijwerken, beëindigen, raadplegen, verstrekken. In de kolom Relatie staat `toegang (<handeling>)`; het ArchiMate-toegangstype volgt eruit; het werkwoord uit de bron blijft de naam. |
-| 2026-10-01 | De verantwoordelijkheid van een rol voor een object komt uit een vaste reeks van acht: houder, bronhouder, beheerder, verstrekker, afnemer, toezichthouder, betrokkene, partij (alleen bij een afspraak). Notatie: `toegang (<verantwoordelijkheid>)`. |
-| 2026-10-01 | Verwerkingsverantwoordelijke (AVG) wordt een toevoeging in de kolom Naam, bijvoorbeeld "houder (verwerkingsverantwoordelijke)", met het wetsartikel in de kolom Bron. |
-| 2026-10-01 | De volledige AVG (geconsolideerd) en de geldende Archiefwet worden als bron opgenomen, als grondslag voor verwerkingsverantwoordelijke, betrokkene en zorgdrager. |
-| 2026-10-01 | Archiveren krijgt drie eigen handelingen volgens de Archiefwet: bewaren, overbrengen en vernietigen. De reeks handelingen wordt acht; beëindigen gaat alleen over het ophouden te gelden (intrekken, vervallen, opheffen). |
-
 ## Bronnen
 
 - **2026-bzk-rollen-stelsel-basisregistraties** (Rollen Stelsel van basisregistraties): [tekst](../../../sources/raw/2026-bzk-rollen-stelsel-basisregistraties.md) · [origineel (html)](../../../sources/raw/2026-bzk-rollen-stelsel-basisregistraties.html) · [online](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/rollen-stelsel-basisregistraties/)
@@ -194,6 +184,16 @@ Waarom deze vorm:
 Samen: negen keer registreren, zes keer bijwerken, zeven keer raadplegen; vier relaties krijgen een ander toegangstype. Twee relaties vertrekken uit een dienst; in GEMMA heeft een dienst geen toegang tot een object (de dienst wordt gerealiseerd door een proces), dus die gaan bij de herbeoordeling naar het realiserende proces.
 
 **Wat de indeling laat zien.** Geen enkel proces beëindigt een object, terwijl Grafrecht, Graf en Vergunning een levenscyclus hebben. Het vervallen van het grafrecht is nu alleen een [gebeurtenis](../bedrijfsarchitectuur/gebeurtenissen/verval-van-het-grafrecht.md); het gedrag dat het grafrecht vervallen verklaart en beëindigt, ontbreekt. De handelingen maken zulke gaten in de levenscyclus zichtbaar, en een functie-objectmatrix maakt ze per functie zichtbaar.
+
+## Besluiten van de redacteur
+
+| Datum | Besluit | Stand |
+|---|---|---|
+| 2026-10-01 | De toegang van een functie of proces tot een object krijgt een handeling uit een vaste reeks: registreren, bijwerken, beëindigen, raadplegen, verstrekken. In de kolom Relatie staat `toegang (<handeling>)`; het ArchiMate-toegangstype volgt eruit; het werkwoord uit de bron blijft de naam. | references/relaties.md; skill criteria; de reeks is aangevuld door 2026-10-01 (archiveren) |
+| 2026-10-01 | De verantwoordelijkheid van een rol voor een object komt uit een vaste reeks van acht: houder, bronhouder, beheerder, verstrekker, afnemer, toezichthouder, betrokkene, partij (alleen bij een afspraak). Notatie: `toegang (<verantwoordelijkheid>)`. | references/relaties.md (rol → object) |
+| 2026-10-01 | Verwerkingsverantwoordelijke (AVG) wordt een toevoeging in de kolom Naam, bijvoorbeeld "houder (verwerkingsverantwoordelijke)", met het wetsartikel in de kolom Bron. | references/relaties.md (aangevuld 2026-10-08) |
+| 2026-10-01 | De volledige AVG (geconsolideerd) en de geldende Archiefwet worden als bron opgenomen, als grondslag voor verwerkingsverantwoordelijke, betrokkene en zorgdrager. | uitgevoerd (bronnen opgenomen) |
+| 2026-10-01 | Archiveren krijgt drie eigen handelingen volgens de Archiefwet: bewaren, overbrengen en vernietigen. De reeks handelingen wordt acht; beëindigen gaat alleen over het ophouden te gelden (intrekken, vervallen, opheffen). | references/relaties.md; skill criteria |
 
 ## Open vragen
 

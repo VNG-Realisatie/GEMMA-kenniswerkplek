@@ -32,6 +32,8 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 ## Algemeen onderwerp besluitvorming en heffingen
 
+- **Algemeen onderwerp besluitvorming** voor de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling, en voor Uniforme openbare voorbereidingsprocedure, Bestuursorgaan en Beleidsnota. Het onderwerp Algemeen bestaat sinds 2026-10-06 (licht ingericht); de elementen verhuizen per geval.
+- **Bestuursorgaan**: zolang het geen element is, staat de toewijzing van inspraak aan het college en de gemeenteraad niet in het model.
 - **VNG Modelverordening lijkbezorgingsrechten** (ledenbrief 2011, met kostenonderbouwing) als bron en mogelijk beleidskader opnemen bij het algemene onderwerp voor Heffing en Heffingsverordening (besluit redacteur 2026-10-01). De link op de VNG-pagina `https://vng.nl/artikelen/modelverordeningen-wet-op-de-lijkbezorging` geeft een 404; zoek een openbare kopie.
 
 ## Onderwerpen als één model (besluit 2026-10-06)
