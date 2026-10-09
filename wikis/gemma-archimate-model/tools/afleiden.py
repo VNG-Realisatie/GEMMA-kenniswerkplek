@@ -235,9 +235,9 @@ def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], 
             continue
         relatie, toegang = _relatie_archimate(r["soort"])
         naar_type = uitkomsten[r["naar"]]["archimate_type"]
-        if not relatietool.toegestaan(relatie, van_type, naar_type):
+        if not relatietool.archimate_geldig(relatie, van_type, naar_type):  # buiten het kennismodel: signaal
             res.fouten.append(f"{bid}: relatie '{r['soort']}' van {van_type} naar {naar_type} ('{r['naar']}') "
-                              "past niet in de ArchiMate-relatietabel")
+                              "is niet geldig in de ArchiMate-relatietabel")
         if relatie == "access":
             soort = relatietool.categorie(van_type)
             toegestaan = relatietool.HANDELINGEN if soort == "gedrag" else relatietool.VERANTWOORDELIJKHEDEN
@@ -480,6 +480,7 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     gemeld = [m for m in (pa_register or {}).get("terugmeldingen", []) if m.get("status") != "afgewezen"]
     res.waarschuwingen += signalen.over_begrippen({b: d for b, (_, d) in alle.items()}, uitkomsten,
                                                   {e for m in gemeld if m["type"] == "kennismodel" for e in m.get("elementen") or []})
+    res.waarschuwingen += signalen.kennismodel({b: d for b, (_, d) in alle.items()}, uitkomsten)
     res.waarschuwingen += signalen.modulariteit({b: d for b, (_, d) in alle.items()}, uitkomsten, onderwerpen)
     elementen = {b: u for b, u in uitkomsten.items()   # een vervallen element (besluit afwijzen) telt niet mee
                  if u and u["soort"] == "element" and not bepaal_type.is_afgewezen(alle[b][1])}

@@ -9,7 +9,20 @@ relaties:
   - {soort: toegang (registreren), naar: beschikking, naam: stelt vast, grondslag: bron, bronnen: [2026-utrecht-nota], vindplaats: § 3.2}
 ```
 
-`soort`: `associatie`, `associatie (gericht)`, `aggregatie`, `compositie`, `specialisatie`, `toewijzing`, `toegang (<handeling>)` vanuit gedrag of `toegang (<verantwoordelijkheid>)` vanuit een rol of bedrijfssamenwerking, `triggering`, `stroom`, `realisatie`, `bediening`. `grondslag`: `ggm-exact`, `ggm-afgeleid` of `bron`; bij `bron` zijn `bronnen` verplicht. `tools/afleiden.py` toetst elke relatie aan de ArchiMate-relatietabel met de GEMMA-modelleerafspraken, en dat het doel een element is.
+`soort`: `associatie`, `associatie (gericht)`, `aggregatie`, `compositie`, `specialisatie`, `toewijzing`, `toegang (<handeling>)` vanuit gedrag of `toegang (<verantwoordelijkheid>)` vanuit een rol of bedrijfssamenwerking, `triggering`, `stroom`, `realisatie`, `bediening`. `grondslag`: `ggm-exact`, `ggm-afgeleid` of `bron`; bij `bron` zijn `bronnen` verplicht. `tools/afleiden.py` toetst of de relatie geldig is in ArchiMate en of het doel een element is; dat zijn de enige fouten.
+
+## Volgorde
+
+Leg per element alle relaties vast die de bronnen noemen en die geldig zijn in ArchiMate, ook als het kennismodel ze niet kent. Het kennismodel bepaalt niet wat je vastlegt maar wat de export meeneemt: een relatie erbuiten krijgt een signaal en een markering op de pagina (*niet in het kennismodel, gaat niet mee in de export*), en vervalt in de export. Welke relaties per elementtype toegestaan zijn, en welke zijn weggefilterd met reden, staat in de modelleerafspraken van dat type (`kennismodel/README.md`); herhaal die tabel hier niet. Een signaal beoordeel je per geval: de relatie hoort bij een andere vorm van modelleren (leg dat de redacteur voor), of ze blijft staan omdat de bron haar noemt.
+
+De stappen, in deze volgorde; bij het beoordelen gebeuren ze vaak tegelijk, uit dezelfde wettekst:
+
+1. **Grondslag:** *is grondslag voor* vanuit een beleidskader (regel Wettelijke grondslag).
+2. **Kernrelatie** van het type: de relatie die het kenmerk waarmaakt. Een kenmerk `ja` zonder zo'n relatie geeft een signaal.
+3. **Indelingsrelaties:** levensloopproces → aggregatie → bedrijfsproces, de functieketen, het kernobject.
+4. **Overige relaties** uit de bronanalyse: per partij wat zij houdt, beheert, uitvoert of vervult; toegang met een handeling of verantwoordelijkheid.
+5. **GGM-match van de relatie**, alleen bij bedrijfsobjecten, data-objecten en beleidsdomeinen (zie `ggm-match.md`).
+6. **GEMMA:** zonder match gaat de relatie als nieuw mee in de export.
 
 ## Kandidaten
 
@@ -42,7 +55,7 @@ De typen van beide elementen bepalen de soort relatie, het werkwoord de richting
 |---|---|---|
 | rol, bedrijfssamenwerking → proces, functie | toewijzing | — |
 | actor → rol | toewijzing | alleen bij "vervult", "treedt op als", "fungeert als"; andere werkwoorden tussen partijen ("benoemt", "waarschuwt") → gerichte associatie |
-| actor → gedrag of object | — | een actor hangt alleen via een rol aan gedrag en objecten (besluit 2026-10-01): leg de rol vast |
+| actor → gedrag of object | — | een actor hangt alleen via een rol aan gedrag en objecten: leg de rol vast |
 | rol → object | toegang (verantwoordelijkheid) | houder ("houdt"), bronhouder ("houdt bij"), beheerder ("beheert", "onderhoudt"), verstrekker, afnemer ("ontvangt", "gebruikt"), toezichthouder, betrokkene, partij (alleen naar een afspraak); bij de AVG een toevoeging in de naam, bijvoorbeeld "houder (verwerkingsverantwoordelijke)", met het wetsartikel als vindplaats; een handeling ("vraagt aan", "geeft af") wordt een toewijzing van de rol aan het proces |
 | proces/functie → object | toegang (handeling) | registreren ("stelt vast", "legt vast", "verleent", "ontvangt" …), bijwerken ("wijzigt", "onderhoudt", "ruimt" …), beëindigen ("trekt in", "heft op" …), raadplegen ("gebruikt", "vereist", "toetst" …), verstrekken, bewaren, overbrengen, vernietigen |
 | object → proces/functie | toegang (handeling), omgedraaid | idem |

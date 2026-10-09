@@ -286,6 +286,44 @@ def test_signalen_noemen_de_regel_bij_naam(wiki):
     assert any("regel Beslistabel beslist" in w and "geregistreerd" in w for w in res.waarschuwingen)
 
 
+def test_relatie_buiten_het_kennismodel_is_een_signaal_en_staat_op_de_pagina(wiki):
+    """Geldig in ArchiMate maar niet in het kennismodel: vastgelegd, signaal, markering op beide pagina's."""
+    _schrijf(wiki, "beschikking", _bo())
+    proces = _proces()
+    proces["relaties"][0].update(soort="associatie (gericht)", naam="betreft")
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+    res = _afleiden(wiki)
+    assert any("behandelen-aanvraag" in w and "nergens in het kennismodel" in w for w in res.waarschuwingen)
+    for pad in wiki.rglob("behandelen-aanvraag.md"), wiki.rglob("beschikking.md"):
+        tekst = next(pad).read_text(encoding="utf-8")
+        assert "niet in het kennismodel, gaat niet mee in de export" in tekst
+
+
+def test_relatie_in_het_kennismodel_heeft_geen_signaal_en_geen_markering(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    _schrijf(wiki, "behandelen-aanvraag", _proces())
+    res = _afleiden(wiki)
+    assert not any("kennismodel (" in w or "in het kennismodel;" in w for w in res.waarschuwingen)
+    assert "niet in het kennismodel" not in next(wiki.rglob("beschikking.md")).read_text(encoding="utf-8")
+
+
+def test_relatie_ongeldig_in_archimate_blijft_een_fout(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    proces = _proces()
+    proces["relaties"][0].update(soort="compositie")  # gedrag → passief bestaat niet in ArchiMate
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+    assert any("niet geldig in de ArchiMate-relatietabel" in f for f in afleiden.afleiden(wiki).fouten)
+
+
+def test_kenmerk_ja_zonder_kernrelatie_is_een_signaal(wiki):
+    _schrijf(wiki, "beschikking", _bo())  # wordt_bewerkt: ja, maar niets bewerkt haar
+    res = afleiden.afleiden(wiki)
+    assert res.fouten == []
+    assert any("beschikking" in w and "kenmerk wordt_bewerkt is ja" in w for w in res.waarschuwingen)
+    _schrijf(wiki, "behandelen-aanvraag", _proces())
+    assert not any("beschikking: kenmerk wordt_bewerkt" in w for w in afleiden.afleiden(wiki).waarschuwingen)
+
+
 def test_bronanalyse_staat_in_de_map_van_haar_brontype(wiki):
     pad = wiki / "bronanalyses" / "test" / "rijksregelgeving" / f"{WET}.md"
     fout = wiki / "bronanalyses" / "test" / "beleid" / f"{WET}.md"

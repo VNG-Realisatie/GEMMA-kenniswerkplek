@@ -98,7 +98,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Gemeentelijke lijkschouwer](gemeentelijke-lijkschouwer.md) | waarschuwt bij een niet-natuurlijke dood *associatie (gericht)* | Ambtenaar van de burgerlijke stand | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10 lid 1) |
+| [Gemeentelijke lijkschouwer](gemeentelijke-lijkschouwer.md) | waarschuwt bij een niet-natuurlijke dood *associatie (gericht)* (*niet in het kennismodel, gaat niet mee in de export*) | Ambtenaar van de burgerlijke stand | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10 lid 1) |
 
 ## Herkomst
 

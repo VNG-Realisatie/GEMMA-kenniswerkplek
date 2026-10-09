@@ -75,7 +75,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Besmet stoffelijk overschot gemeld | leidt tot *triggering* | [Treffen maatregel bij besmet stoffelijk overschot](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Wet publieke gezondheid](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) (Wlb art. 22a; Wpg art. 27 lid 3) |
-| Besmet stoffelijk overschot gemeld | betreft *associatie (gericht)* | [Stoffelijk overschot](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md) | [Wet publieke gezondheid](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) (art. 21 lid 2) |
+| Besmet stoffelijk overschot gemeld | betreft *associatie (gericht)* (*niet in het kennismodel, gaat niet mee in de export*) | [Stoffelijk overschot](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md) | [Wet publieke gezondheid](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) (art. 21 lid 2) |
 
 #### Inkomend
 

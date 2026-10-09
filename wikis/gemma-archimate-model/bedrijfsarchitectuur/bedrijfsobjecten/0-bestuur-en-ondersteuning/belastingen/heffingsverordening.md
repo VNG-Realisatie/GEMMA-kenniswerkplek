@@ -123,7 +123,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 |---|---|---|---|
 | Heffingsverordening | regelt *associatie (gericht)* | [Heffing](heffing.md) | [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) (Gemeentewet art. 216, 229; § Lijkbezorgingsrechten) |
 | Heffingsverordening | is een *specialisatie* | [Regeling](../besluitvorming/regeling.md) | [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 216) |
-| Heffingsverordening | regelt het recht voor *associatie (gericht)* | [Grafonderhoud](../../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafonderhoud.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 24) |
+| Heffingsverordening | regelt het recht voor *associatie (gericht)* (*niet in het kennismodel, gaat niet mee in de export*) | [Grafonderhoud](../../../diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafonderhoud.md) | [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23, 24) |
 
 ## Herkomst
 

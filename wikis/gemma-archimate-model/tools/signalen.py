@@ -13,6 +13,7 @@ from pathlib import Path
 
 import bepaal_type
 import gam_gemeen
+import kennismodel as km
 from llmwiki import frontmatter, paths
 
 VERBODEN_ZINNEN = ("structureel buiten scope", "structureel out-of-scope", "structureel geen ggm-match",
@@ -227,6 +228,41 @@ def functie_indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties
                          "door een bestaande GEMMA-functie")
             elif gemma_id[bid] and (gemma_id[ouder], gemma_id[bid]) not in gemma_agg:
                 w.append(f"{bid}: in GEMMA aggregeert {ouder} deze functie niet: de wiki volgt de GEMMA-functieketen")
+    return w
+
+
+def _relatie_sleutels(alle: dict[str, dict], uitkomsten: dict[str, dict | None]):
+    """(sleutel per element, de relaties als (van, relatie, bron-sleutel, doel-sleutel)) van de elementen met een pagina."""
+    sleutel = {b: km.sleutel_van(u["archimate_type"]) for b, u in uitkomsten.items()
+               if u and u["soort"] == "element" and not bepaal_type.is_afgewezen(alle[b])}
+    return sleutel, [(van, r, sleutel[van], sleutel[r["naar"]]) for van in sleutel
+                     for r in alle[van].get("relaties", []) if r["naar"] in sleutel]
+
+
+def kennismodel(alle: dict[str, dict], uitkomsten: dict[str, dict | None]) -> list[str]:
+    """Relaties buiten het kennismodel (geldig in ArchiMate, maar niet toegestaan) en kernrelaties die ontbreken.
+    Beide houden niets tegen: de beoordeling legt vast wat de bron zegt, de export filtert op het kennismodel."""
+    sleutel, relaties = _relatie_sleutels(alle, uitkomsten)
+    w = []
+    for van, r, bron, doel in relaties:
+        if km.toegestaan(bron, r["soort"], doel):
+            continue
+        weg = km.weggefilterd(bron, r["soort"], doel)
+        w.append(f"{van}: relatie '{r['soort']}' naar '{r['naar']}' ({bron} → {doel}) staat "
+                 + (f"niet in het kennismodel ({weg.reden}); " if weg else "nergens in het kennismodel; ")
+                 + "de export laat haar weg (regel Relaties tussen onderwerpen)")
+    for bid, d in sorted(alle.items()):
+        if bid not in sleutel:
+            continue
+        for kenmerk, k in d["kenmerken"].items():
+            kern = km.kernrelaties(kenmerk)
+            if k["waarde"] != "ja" or not kern:
+                continue
+            if not any(bid in (van, r["naar"]) and any(
+                    (x.bron, km.kale_soort(x.soort), x.doel) == (bron, km.kale_soort(r["soort"]), doel) for x in kern)
+                    for van, r, bron, doel in relaties):
+                w.append(f"{bid}: kenmerk {kenmerk} is ja, maar er is geen relatie van de kernrelatie "
+                         f"({'; '.join(f'{x.bron} {km.kale_soort(x.soort)} {x.doel}' for x in kern)}) (regel Beslistabel beslist)")
     return w
 
 

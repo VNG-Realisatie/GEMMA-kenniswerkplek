@@ -414,9 +414,14 @@ def element_pagina(w: Wiki, bid: str) -> str:
     tegenhanger = ([f"{w.link(van, d['tegenhanger']['element'])}: {w.tekst(van, d['tegenhanger']['toelichting'])}", ""]
                    if d.get("tegenhanger") else [])
 
-    def relatie(x: dict) -> str:
+    def buiten_kennismodel(van_id: str, x: dict) -> bool:
+        bron, doel = (kennismodel.sleutel_van(w.uitkomst(b)["archimate_type"]) for b in (van_id, x["naar"]))
+        return not kennismodel.toegestaan(bron, x["soort"], doel)
+
+    def relatie(x: dict, van_id: str = bid) -> str:
         soort = ", ".join(v for v in (x["soort"], x.get("kardinaliteit", "")) if v)
-        return f"{x['naam']} *{soort}*" if x.get("naam") else soort
+        tekst = f"{x['naam']} *{soort}*" if x.get("naam") else soort
+        return f"{tekst} (*niet in het kennismodel, gaat niet mee in de export*)" if buiten_kennismodel(van_id, x) else tekst
 
     def bron_cel(x: dict) -> str:
         cel = w.bronnen(van, x.get("bronnen", []), x.get("vindplaats"))
@@ -426,7 +431,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
     kolommen = ["Van", "Relatie", "Naar", "Bron"]
     uitgaand = _tabel(kolommen, [[d["begrip"], relatie(x), w.link(van, x["naar"]), bron_cel(x)]
                                  for x in d.get("relaties", [])]) if d.get("relaties") else []
-    inkomend = [[w.link(van, v), relatie(x), d["begrip"], bron_cel(x)] for v, x in w.inkomend(bid)]
+    inkomend = [[w.link(van, v), relatie(x, v), d["begrip"], bron_cel(x)] for v, x in w.inkomend(bid)]
     relaties = _sub("Uitgaand", uitgaand, 4) + _sub("Inkomend", _tabel(kolommen, inkomend) if inkomend else [], 4)
     specialisaties_zonder_pagina = specialisaties_per_onderwerp(w, van, bid) if u.get("objectniveau") == "generiek" else []
     r += _groep("Plaats in het model", [
