@@ -1,16 +1,16 @@
 # gemma-archimate-model-wiki (curation)
 
-Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de Context staan: lees dat bestand voordat je iets wijzigt. Dit bestand zegt hoe de AI werkt. Wat het model is (elementtypen, relaties, indelingen) en de regels voor het modelleren staan in het kennismodel (`kennismodel/`, met `kennismodel/modelleerregels.md`); hoe de wiki werkt (mappen, beoordelingen, scripts, render) in `ARCHITECTURE.md`, waarom het model is zoals het is in `ARCHITECTURE.md` (leidend), en hoe je het doet in de skills. Waar je wat vindt: de kaart onderaan.
+Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de Context staan: lees dat bestand voordat je iets wijzigt. Dit bestand zegt hoe de AI werkt. Wat het model is (elementtypen, relaties, indelingen) en de regels voor het modelleren staan in het kennismodel (`kennismodel/`, met `kennismodel/modelleerregels.md`); waarom het model is zoals het is en hoe de wiki werkt (mappen, beoordelingen, scripts, render) in `ARCHITECTURE.md`, dat leidend is; hoe je het doet in de skills. Waar je wat vindt: de kaart onderaan.
 
 ## Domein
 
-- Het GEMMA-architectuurmodel, bedrijfslaag: bedrijfsobjecten, contracten, producten, diensten, processen, functies, gebeurtenissen, actoren, rollen, samenwerkingen en kanalen, plus beleidskaders (motivatielaag). Elk element wordt onderbouwd afgeleid uit bronnen en gematcht op het GGM en het GEMMA-model.
+- Het GEMMA-architectuurmodel, bedrijfslaag: bedrijfsobjecten, afspraken, producten, diensten, processen, functies, gebeurtenissen, actoren, rollen, samenwerkingen, kanalen en bedrijfsinteracties, plus beleidskaders (motivatielaag). Elk element wordt onderbouwd met bronnen en gematcht op de matchdoelen (ARCHITECTURE.md, sectie 2).
 - Doelgroep: het GEMMA-team van VNG. Het resultaat voedt een landelijke standaard; kwaliteit en herleidbaarheid gaan voor snelheid.
 - Taal: Nederlands; gevestigde ArchiMate-termen mogen Engels blijven.
 
 ## Standaard Workflow
 
-Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`beoordelingen/begrippen/<id>.yaml`); scripts leiden type en status af en maken alle pagina's (`tools/beslissen.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Besluiten van de redacteur over een begrip staan in de `besluiten:` van zijn beoordeling, over een onderwerp als geheel in de `besluiten:` van het onderwerp; besluiten over de werkwijze staan in de regel of skill waar ze gelden.
+Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`beoordelingen/begrippen/<id>.yaml`); scripts beslissen type en status en maken alle pagina's (`tools/beslissen.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Besluiten van de redacteur over een begrip staan in de `besluiten:` van zijn beoordeling, over een onderwerp als geheel in de `besluiten:` van het onderwerp; besluiten over de werkwijze staan in de regel of skill waar ze gelden.
 
 ## Regels
 
@@ -75,14 +75,14 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 
 | Regel | Waar | Hoe (skill) | Waarom (ARCHITECTURE.md) | Controle |
 |---|---|---|---|---|
-| Navragen, Per geval | dit bestand | `references/besluiten.md` | sectie 3.1 | — |
+| Navragen, Per geval | dit bestand | `references/besluiten.md` | secties 3.1 en 3.2 | — |
 | Eén naamgeving, Bestaand bijwerken, Letterlijk verplaatsen | dit bestand | — | — | — |
 | Elke claim een bron, Zonder bron | dit bestand | skill gemma-archimate-model-ingest | — | script |
 | Geen absolute taal | dit bestand | `references/definitie.md` | — | signaal |
-| Drie registers, GEMMA-terugmeldingen formuleren | dit bestand | `references/terugmeldingen.md` | sectie 3.5 | script |
-| Bronvoorrang, Tegenspraak, Wettelijke grondslag | modelleerregels | skill gemma-archimate-model-ingest; `references/grondslag.md` | secties 3.4 en 4.2 | script, signaal |
+| Drie registers, GEMMA-terugmeldingen formuleren | dit bestand | `references/terugmeldingen.md` | secties 2 en 3.5 | script |
+| Bronvoorrang, Tegenspraak, Wettelijke grondslag | modelleerregels | skill gemma-archimate-model-ingest; `references/grondslag.md` | secties 3.4, 3.7 en 4.2 | script, signaal |
 | Beslistabel beslist | modelleerregels | skill gemma-archimate-model-criteria | secties 4.1, 4.3 en 4.4 | script, signaal |
-| Match op betekenis, Zwakke match voorleggen | modelleerregels | `references/ggm-match.md`, `references/gemma-match.md` | secties 4.5 en 6.4 | script, signaal |
+| Match op betekenis, Zwakke match voorleggen | modelleerregels | `references/ggm-match.md`, `references/gemma-match.md` | secties 3.7, 4.5 en 6.4 | script, signaal |
 | Eén element in het hele model, Thuishoren, Relaties tussen onderwerpen | modelleerregels | `references/relaties.md` | sectie 3.3 | signaal |
 | Gemeentelijk perspectief | modelleerregels | `references/relaties.md` | sectie 4.2 | — |
 | Begrijpelijk, Los van het onderwerp, Naamvorm | modelleerregels; de naamvorm per type in de modelleerafspraken | `references/definitie.md`, `references/naamgeving.md` | — | signaal |
