@@ -18,9 +18,6 @@ page_types:                          # pagina's van curated typen en onderwerpen
     dir: bronanalyses
     group_by: onderwerp              # en daaronder per brontype: bronanalyses/<onderwerp>/<brontype>/ (besluit 2026-10-08)
     schema: schemas/bronanalyse.schema.json
-  doc:                               # documentatie: waarom het model is zoals het is (docs/, besluiten/werkwijze.md)
-    dir: docs
-    schema: schemas/doc.schema.json
   kennismodel:                       # wat het model is: elementtypen, relaties, indelingen (tools/kennismodel.py; modelleerregels.md met de hand)
     dir: kennismodel
     schema: schemas/kennismodel.schema.json

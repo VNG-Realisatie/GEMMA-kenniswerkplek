@@ -792,17 +792,17 @@ def test_wettelijke_grondslag():
     assert [s.split(":")[0] for s in signalen_] == ["rol-zonder"]
 
 
-def test_besluiten_per_begrip_uit_beoordelingen_en_eerder(wiki):
-    _schrijf(wiki, "beschikking", _bo(besluiten=[{"datum": "2026-10-01", "besluit": f"Generiek ({WET}).",
-                                                  "gevolg": "verwerkt"}]))
+def test_besluiten_eerder_en_besluiten_van_een_onderwerp(wiki):
     eerder = {"besluiten": [{"datum": "2026-09-30", "begrip": "Uitdaagrecht", "onderwerp": "test",
                              "besluit": "Geen eigen pagina.", "stand": "geldt"}]}
     beoordeling.schrijf(wiki / beslissen.BESLUITEN_EERDER, eerder)
+    onderwerp = beoordeling.laad(wiki / "beoordelingen/onderwerpen/test.yaml")
+    onderwerp["besluiten"] = [{"datum": "2026-10-01", "besluit": "Afbakening van het onderwerp."}]
+    beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/test.yaml", onderwerp)
     _beslissen(wiki)
-    lijst = (wiki / "besluiten" / "per-begrip.md").read_text(encoding="utf-8")
-    assert "## Test" in lijst and "| 2026-10-01 | [Beschikking](../" in lijst
-    assert f"[{WET}](../bronanalyses/test/rijksregelgeving/{WET}.md)" in lijst
-    assert "## Eerder" in lijst and "| 2026-09-30 | Uitdaagrecht | Test | Geen eigen pagina. | geldt |" in lijst
+    assert not (wiki / "besluiten").exists()
+    lijst = (wiki / "begrippen" / "test.md").read_text(encoding="utf-8")
+    assert "## Besluiten" in lijst and "- 2026-10-01: Afbakening van het onderwerp." in lijst
     # een eerder besluit zonder stand of met een onbekend onderwerp is een fout
     eerder["besluiten"][0] |= {"stand": "", "onderwerp": "onbekend"}
     beoordeling.schrijf(wiki / beslissen.BESLUITEN_EERDER, eerder)

@@ -10,12 +10,11 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 | Bestand | Inhoud |
 |---|---|
 | `<map van het type>/<taakveld>/<beleidsdomein>/<id>.md` (pad uit `beslist.pad`) | Elementpagina |
-| `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst, de reden, de herkomst en de GGM-entiteit |
+| `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst, de reden, de herkomst en de GGM-entiteit, en de besluiten over het onderwerp |
 | `overzichten/<onderwerp>.md` | Overzicht per onderwerp: de views op de indelingen (processen naar kernobject en naar soort werk, ketensamenwerking, objecten, functies, doelgroepen, producten en diensten, beleidskaders) |
 | `terugmeldingen/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
 | `terugmeldingen/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel) |
 | `terugmeldingen/gemma-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model |
-| `besluiten/per-begrip.md` | Besluiten van de redacteur per begrip, per thuisonderwerp, en de eerdere besluiten uit `beoordelingen/besluiten-eerder.yaml` |
 | `ter-beoordeling.md` | Wat wacht op akkoord (review), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 | `kennismodel/**` | Het kennismodel uit tools/kennismodel.py (behalve `kennismodel/modelleerregels.md`, met de hand) |
@@ -65,7 +64,6 @@ GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "gemma.yaml"
 GEMMA_TERUGMELDLIJST = Path("terugmeldingen") / "gemma-terugmeldingen.md"
 BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
 BESLUITEN_EERDER = Path("beoordelingen") / "besluiten-eerder.yaml"
-BESLUITEN_PER_BEGRIP = Path("besluiten") / "per-begrip.md"
 INDELINGSVELDEN = ("afnemer", "domein", "doelgroep", "regelgever")  # waarden zonder verwijzing: ook in de frontmatter
 
 STATUSSEN = ["kandidaat", "review", "goedgekeurd", "afgewezen"]
@@ -547,6 +545,8 @@ def begrippenlijst(w: Wiki, oid: str) -> str:
         rijen.append([_begrip_cel(w, van, bid, d), w.tekst(van, reden), herkomst or "—"])
     r += _sectie("Begrippen", ["Een begrip met een link is een element; cursief staat de uitkomst.", "",
                                *_tabel(["Begrip", "Reden", "Herkomst"], rijen)] if rijen else ["Nog geen begrippen beoordeeld.", ""])
+    besluiten = [f"- {b['datum']}: {w.tekst(van, b['besluit'])}" for b in o.get("besluiten") or []]
+    r += _sectie("Besluiten", [*besluiten, ""] if besluiten else [])
     r += _sectie("Open vragen", [f"- {w.tekst(van, v)}" for v in o.get("open_vragen", [])] + [""] if o.get("open_vragen") else [])
     return _pagina(meta, r)
 
@@ -828,42 +828,6 @@ def ter_beoordeling(w: Wiki) -> str:
     return _pagina(meta, r)
 
 
-def besluiten_per_begrip(w: Wiki) -> str:
-    """Alle besluiten van de redacteur uit de beoordelingen, per thuisonderwerp, en de eerdere besluiten zonder
-    overeenkomend besluit in een beoordeling (`beoordelingen/besluiten-eerder.yaml`)."""
-    van = BESLUITEN_PER_BEGRIP.as_posix()
-    meta = {"id": "per-begrip", "type": "lijst", "titel": "Besluiten per begrip"}
-    r = ["# Besluiten per begrip", "", _gegenereerd("de beoordelingen en beoordelingen/besluiten-eerder.yaml"), "",
-         "Wat de redacteur over afzonderlijke begrippen besliste. De AI leest deze lijst bij het beoordelen en legt een "
-         "besluit dat hier staat niet opnieuw voor; een besluit dat niet meer past bij de criteria wel, met de reden. "
-         "Een besluit over één begrip staat in zijn beoordeling (`besluiten:`); besluiten over de werkwijze staan in "
-         "[Besluiten over de werkwijze](werkwijze.md).", ""]
-    for oid, o in w.onderwerpen.items():
-        rijen = []
-        for bid, d in w.begrippen.items():
-            if gam_gemeen.thuis(d) != oid:
-                continue
-            a = (d.get("beslist") or {}).get("uitkomst", {})
-            if w.pad(bid):
-                soort = ARCHIMATE_NAAM.get(a.get("archimate_type"), "")
-            elif d.get("status") == "afgewezen":
-                soort = f"{ARCHIMATE_NAAM.get(a.get('archimate_type'), 'element')}, afgewezen"
-            else:
-                soort = UITKOMST.get(a.get("soort"), a.get("soort", ""))
-            for b in d.get("besluiten") or []:
-                rijen.append((str(b.get("datum")), d["begrip"].lower(),
-                              [str(b.get("datum")), w.link(van, bid), soort, w.tekst(van, b.get("besluit", "")), b.get("gevolg", "")]))
-        rijen.sort(key=lambda x: (x[0], x[1]))
-        r += _sectie(o.get("naam", oid), _tabel(["Datum", "Begrip", "Uitkomst", "Besluit", "Gevolg"], [x[2] for x in rijen])
-                     if rijen else ["Nog geen besluiten.", ""])
-    eerder = [[str(b["datum"]), b["begrip"], w.onderwerpen.get(b["onderwerp"], {}).get("naam", b["onderwerp"]),
-               w.tekst(van, b["besluit"]), b.get("stand", "")] for b in w.besluiten_eerder]
-    r += _sectie("Eerder", ["Besluiten van vóór de besluiten in de beoordelingen, of over meer begrippen tegelijk, die "
-                            "niet ook in een beoordeling staan. De kolom Stand zegt of het besluit nog geldt.", "",
-                            *_tabel(["Datum", "Begrip", "Onderwerp", "Besluit", "Stand"], eerder)] if eerder else [])
-    return _pagina(meta, r)
-
-
 def _samenhang(w: Wiki) -> list[str]:
     """Per onderwerp de elementen die er thuishoren, die het uit andere onderwerpen gebruikt, en de relaties binnen het
     onderwerp en met andere onderwerpen (regels Thuishoren en Relaties tussen onderwerpen)."""
@@ -942,7 +906,6 @@ def render(wiki_root: Path = WIKI_ROOT) -> dict[str, str]:
     uit[PA_TERUGMELDLIJST.as_posix()] = pa_terugmeldlijst(w)
     if w.gemma_terugmeldingen:
         uit[GEMMA_TERUGMELDLIJST.as_posix()] = gemma_terugmeldlijst(w)
-    uit[BESLUITEN_PER_BEGRIP.as_posix()] = besluiten_per_begrip(w)
     uit[TER_BEOORDELING.as_posix()] = ter_beoordeling(w)
     uit[VOORTGANG.as_posix()] = voortgang(w)
     uit.update(kennismodel.paginas())
