@@ -20,7 +20,7 @@ Schrijf een bevinding als lijst alinea's: eerst wat er nu staat, dan **Bevinding
 | Procesarchitectuur | **UPL:** wat de UPL zegt, of bij type `kennismodel` **Kennismodel:** wat het kennismodel zegt |
 | GEMMA | **GEMMA:** wat het GEMMA-model nu zegt |
 
-Een open melding zonder alinea **Bevinding:** of **Voorstel:** houdt `tools/beslissen.py` tegen, in alle drie de registers (besluit redacteur 2026-10-08).
+Een open melding zonder alinea **Bevinding:** of **Voorstel:** houdt `tools/beslissen.py` tegen, in alle drie de registers.
 
 ## Schrijven voor een lezer buiten de wiki
 
@@ -35,7 +35,7 @@ Een bevinding over het GGM (hiaat, definitie, structuur, scope, duplicaat, homon
 De bevinding is voor de werkgroep procesarchitectuur: wat GEMMA anders indeelt of modelleert dan de UPL of het kennismodel, en waarom; geen vraag. In de alinea **Bevinding:** staat ook hoe GEMMA het modelleert en waarom.
 
 - Een UPL-product zonder grondslag, of met een UPL-grondslag die geen taak geeft (alleen een tarief, een beleidsstuk van één gemeente), krijgt een melding van type `grondslag` (regel Wettelijke grondslag).
-- Het model mag afwijken van de UPL-indeling (taakveld, GEMMA-domein) en van het kennismodel procesarchitectuur, mits de afwijking daar is teruggemeld (besluit redacteur 2026-10-05); de terugmelding dekt dan het signaal van `tools/beslissen.py`.
+- Het model mag afwijken van de UPL-indeling (taakveld, GEMMA-domein) en van het kennismodel procesarchitectuur, mits de afwijking daar is teruggemeld; de terugmelding dekt dan het signaal van `tools/beslissen.py`.
 - Een nieuw element met dezelfde afwijking voeg je toe aan de `elementen` van de bestaande melding.
 
 ## GEMMA

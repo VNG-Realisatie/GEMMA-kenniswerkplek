@@ -16,7 +16,7 @@ Precedent: *Urn* (VNG-bron, praktijk), niet *Asbus* (Wet op de lijkbezorging); a
 ## Naamconflict
 
 - **Wiki-conflict**: de naam (of het id) wordt al door een ander element gebruikt. Geldt voor elke grondslag.
-- **Homoniem**: dezelfde naam betekent elders iets anders, in de wiki, het GGM (`tools/ggm.py naamgenoten <naam>`), het GEMMA-model (`tools/gemma.py zoek <naam>`) of een bron; geldt voor elk elementtype (besluit 2026-10-01). Een GGM-homoniem meld je ook terug als `homoniem`. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
+- **Homoniem**: dezelfde naam betekent elders iets anders, in de wiki, het GGM (`tools/ggm.py naamgenoten <naam>`), het GEMMA-model (`tools/gemma.py zoek <naam>`) of een bron; geldt voor elk elementtype. Een GGM-homoniem meld je ook terug als `homoniem`. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
 
 Een homoniem staat bij beide elementen in `homoniemen`:
 

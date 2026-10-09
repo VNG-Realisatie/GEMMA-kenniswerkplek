@@ -41,6 +41,6 @@ Naam en definitie komen uit de wiki en overschrijven die van GEMMA. De GEMMA-eig
 
 ## Grenzen
 
-- Nooit exporteren of importeren zonder akkoord van de redacteur. Het AKKOORD bij `llmwiki promote apply` dekt de export die daar direct op volgt (besluit redacteur 2026-10-05); importeren in GEMMA blijft aan de redacteur. Een definitieve export bevat alleen goedgekeurde elementen; akkoordvelden vul je nooit zelf in.
+- Nooit exporteren of importeren zonder akkoord van de redacteur. Het AKKOORD bij `llmwiki promote apply` dekt de export die daar direct op volgt; importeren in GEMMA blijft aan de redacteur. Een definitieve export bevat alleen goedgekeurde elementen; akkoordvelden vul je nooit zelf in.
 - Het exportbestand en het rapport zijn gegenereerd: nooit met de hand bewerken.
 - Geen views: de export bevat alleen elementen, relaties en mappen.

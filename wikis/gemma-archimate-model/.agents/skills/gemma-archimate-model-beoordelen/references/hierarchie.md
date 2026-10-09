@@ -16,7 +16,7 @@ specialisaties:
 - **Zonder eigen element**: een omschrijving met vindplaats; `ggm_guid` als het GGM de specialisatie als aparte entiteit kent (dan tilt `tools/relaties.py` haar GGM-relaties op naar het bredere element), of `ggm_attribuut` als het GGM haar als attribuutwaarde draagt.
 - Bronnen voor specialisaties zonder pagina: typen of categorieën die de bronnen apart noemen; besluiten, vergunningen of processen die de wet per artikel onderscheidt maar die varianten zijn van een breder begrip (bijv. Vergunning tot opgraving bij Vergunning); GGM-attributen als `type`, `soort`, `materiaal`; GGM-generalisaties. Wijkt de GGM-hiërarchie af van het beleidsperspectief, zeg dat in de omschrijving.
 
-Precedent: bij lijkbezorging (2026-09-29) leverden vier soorten vergunningen eerst vier bedrijfsobjecten op en processen als "afgeven verlof tot begraving of crematie" eigen pagina's. Dat is te specifiek voor GEMMA: het zijn varianten van Vergunning en van het behandelen van een vergunningaanvraag.
+Precedent: bij lijkbezorging leverden vier soorten vergunningen eerst vier bedrijfsobjecten op en processen als "afgeven verlof tot begraving of crematie" eigen pagina's. Dat is te specifiek voor GEMMA: het zijn varianten van Vergunning en van het behandelen van een vergunningaanvraag.
 
 ## Generalisatie (opwaarts)
 

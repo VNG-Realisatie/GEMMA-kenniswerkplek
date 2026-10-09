@@ -1,6 +1,6 @@
 # gemma-archimate-model-wiki (curation)
 
-Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de Context staan: lees dat bestand voordat je iets wijzigt. Dit bestand zegt hoe de AI werkt. Wat het model is (elementtypen, relaties, indelingen) en de regels voor het modelleren staan in het kennismodel (`kennismodel/`, met `kennismodel/modelleerregels.md`); hoe de wiki werkt (mappen, beoordelingen, scripts, render) in `ARCHITECTURE.md`, waarom het model is zoals het is in `docs/`, en hoe je het doet in de skills. Waar je wat vindt: de kaart onderaan.
+Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al in de Context staan: lees dat bestand voordat je iets wijzigt. Dit bestand zegt hoe de AI werkt. Wat het model is (elementtypen, relaties, indelingen) en de regels voor het modelleren staan in het kennismodel (`kennismodel/`, met `kennismodel/modelleerregels.md`); hoe de wiki werkt (mappen, beoordelingen, scripts, render) in `ARCHITECTURE.md`, waarom het model is zoals het is in `ARCHITECTURE.md` (leidend), en hoe je het doet in de skills. Waar je wat vindt: de kaart onderaan.
 
 ## Domein
 
@@ -10,7 +10,7 @@ Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al i
 
 ## Standaard Workflow
 
-Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`beoordelingen/begrippen/<id>.yaml`); scripts leiden type en status af en maken alle pagina's (`tools/beslissen.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Eerdere besluiten van de redacteur staan in `besluiten/per-begrip.md` (per begrip) en `besluiten/werkwijze.md` (over de werkwijze, met waar ze nu staan).
+Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`beoordelingen/begrippen/<id>.yaml`); scripts leiden type en status af en maken alle pagina's (`tools/beslissen.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Besluiten van de redacteur over een begrip staan in de `besluiten:` van zijn beoordeling, over een onderwerp als geheel in de `besluiten:` van het onderwerp; besluiten over de werkwijze staan in de regel of skill waar ze gelden.
 
 ## Regels
 
@@ -18,11 +18,11 @@ Verwijs naar een regel met haar naam, bijvoorbeeld "regel Navragen". Achter een 
 
 Wat het render-script garandeert, is geen regel: bronverwijzingen als link naar de bronanalyse, relaties in beide richtingen, geen verwijzingen in de frontmatter, geen links naar tools of regels, de vorm van de pagina. De status zetten de scripts en het akkoord; de AI zet nooit een status.
 
-Een regel is kort: de kern. Staat er meer bij een regel, dan noemt zij waar de uitwerking staat (hoe, in een skill) en de onderbouwing (waarom, in `docs/`).
+Een regel is kort: de kern. Staat er meer bij een regel, dan noemt zij waar de uitwerking staat (hoe, in een skill) en de onderbouwing (waarom, in `ARCHITECTURE.md`).
 
 ### Werkwijze
 
-- **Navragen** — Bij twijfel over een begrip, bron, naam of match: vraag het de redacteur, één vraag tegelijk, met context, argumenten en advies. Nooit gokken. Wat al in `besluiten/per-begrip.md` staat, vraag je niet opnieuw.
+- **Navragen** — Bij twijfel over een begrip, bron, naam of match: vraag het de redacteur, één vraag tegelijk, met context, argumenten en advies. Nooit gokken. Wat al besloten is (de `besluiten:` van de beoordeling en van het onderwerp), vraag je niet opnieuw.
 - **Eén naamgeving** — Noem brontypen, groepen en mappen precies zoals in de regel Bronvoorrang (`rijksregelgeving`, groep *Rijksregelgeving*; samen met `europese-regelgeving` heten ze landelijke regelgeving), in beoordelingen, analyses, terugmeldingen en de chat.
 - **Bestaand bijwerken** — Bestaat een beoordeling al, werk haar dan bij. Neem niet aan wat erin hoort.
 - **Per geval** — Een besluit (hernoemen, samenvoegen, afwijzen, herformuleren) nooit in bulk doorvoeren op grond van één eerder akkoord; leg elk geval apart voor.
@@ -60,11 +60,10 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 | Werkinstructie per veld van een beoordeling | skill gemma-archimate-model-beoordelen en zijn `references/` | — | — | ja |
 | Sjablonen | beoordeling: skill gemma-archimate-model-beoordelen §4; bronanalyse: skill gemma-archimate-model-ingest §4; terugmelding: `references/terugmeldingen.md`; besluit en voorleggen: `references/besluiten.md`; vorm: `schemas/` | — | — | ja |
 | Oordeel per begrip | `beoordelingen/begrippen/<id>.yaml` | — | de AI; `status` en `beslist` de scripts | ja, behalve `status` en `beslist` |
-| Registers | `beoordelingen/terugmeldingen/`, `objecten.yaml`, `beleidsdomeinen.yaml`, `besluiten-eerder.yaml`, `onderwerpen/` | — | de AI | ja |
+| Registers | `beoordelingen/terugmeldingen/`, `objecten.yaml`, `beleidsdomeinen.yaml`, `onderwerpen/` | — | de AI | ja |
 | Wat een bron betekent | `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md` | bronanalyse | de AI | ja |
-| Waarom: onderbouwing | [docs/](docs/README.md) | doc | de AI | ja |
-| Besluiten over de werkwijze (geschiedenis) | [besluiten/werkwijze.md](besluiten/werkwijze.md) en de besluitentabellen in `docs/` | doc | de AI | ja |
-| Besluiten per begrip | [besluiten/per-begrip.md](besluiten/per-begrip.md) | lijst | `tools/render.py` | nee |
+| Waarom: uitgangspunten en onderbouwing | [ARCHITECTURE.md](ARCHITECTURE.md) | — | de AI, na een besluit van de redacteur | ja |
+| Besluiten over een begrip of onderwerp | `besluiten:` van de beoordeling of het onderwerp; de begrippenlijst toont die van het onderwerp | — | de AI, met de redacteur | ja |
 | Elementpagina's en overzichten | `bedrijfsarchitectuur/`, `motivatie/`, `begrippen/`, `overzichten/` | per elementtype | `tools/render.py` | nee |
 | Terugmeldlijsten, ter beoordeling, voortgang | `terugmeldingen/`, [ter-beoordeling.md](ter-beoordeling.md), [voortgang.md](voortgang.md) | lijst | `tools/render.py` | nee |
 | Open punten | [todo.md](todo.md) | — | de AI | ja |
@@ -74,20 +73,20 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 
 ### Per regel
 
-| Regel | Waar | Hoe (skill) | Waarom (docs, besluiten) | Controle |
+| Regel | Waar | Hoe (skill) | Waarom (ARCHITECTURE.md) | Controle |
 |---|---|---|---|---|
-| Navragen, Per geval | dit bestand | `references/besluiten.md` | `besluiten/werkwijze.md` | — |
+| Navragen, Per geval | dit bestand | `references/besluiten.md` | sectie 3.1 | — |
 | Eén naamgeving, Bestaand bijwerken, Letterlijk verplaatsen | dit bestand | — | — | — |
 | Elke claim een bron, Zonder bron | dit bestand | skill gemma-archimate-model-ingest | — | script |
 | Geen absolute taal | dit bestand | `references/definitie.md` | — | signaal |
-| Drie registers, GEMMA-terugmeldingen formuleren | dit bestand | `references/terugmeldingen.md` | `docs/wettelijke-grondslag.md` (besluit 4 en 15) | script |
-| Bronvoorrang, Tegenspraak, Wettelijke grondslag | modelleerregels | skill gemma-archimate-model-ingest; `references/grondslag.md` | `docs/wettelijke-grondslag.md` | script, signaal |
-| Beslistabel beslist | modelleerregels | skill gemma-archimate-model-criteria | `docs/kenmerken.md`, `docs/gemma-kennismodel.md`, `docs/proceshierarchie.md`, `docs/indelingen.md` | script, signaal |
-| Match op betekenis, Zwakke match voorleggen | modelleerregels | `references/ggm-match.md`, `references/gemma-match.md` | `docs/synoniemen-en-homoniemen.md` | script, signaal |
-| Eén element in het hele model, Thuishoren, Relaties tussen onderwerpen | modelleerregels | `references/relaties.md` | `besluiten/werkwijze.md`, thema 3 | signaal |
-| Gemeentelijk perspectief | modelleerregels | `references/relaties.md` | `docs/gegevensrollen.md` | — |
+| Drie registers, GEMMA-terugmeldingen formuleren | dit bestand | `references/terugmeldingen.md` | sectie 3.5 | script |
+| Bronvoorrang, Tegenspraak, Wettelijke grondslag | modelleerregels | skill gemma-archimate-model-ingest; `references/grondslag.md` | secties 3.4 en 4.2 | script, signaal |
+| Beslistabel beslist | modelleerregels | skill gemma-archimate-model-criteria | secties 4.1, 4.3 en 4.4 | script, signaal |
+| Match op betekenis, Zwakke match voorleggen | modelleerregels | `references/ggm-match.md`, `references/gemma-match.md` | secties 4.5 en 6.4 | script, signaal |
+| Eén element in het hele model, Thuishoren, Relaties tussen onderwerpen | modelleerregels | `references/relaties.md` | sectie 3.3 | signaal |
+| Gemeentelijk perspectief | modelleerregels | `references/relaties.md` | sectie 4.2 | — |
 | Begrijpelijk, Los van het onderwerp, Naamvorm | modelleerregels; de naamvorm per type in de modelleerafspraken | `references/definitie.md`, `references/naamgeving.md` | — | signaal |
-| Afwijken mits teruggemeld | modelleerregels | `references/terugmeldingen.md` | `docs/wettelijke-grondslag.md` (besluit 4 en 15) | signaal |
-| Objectbehoud | modelleerregels | skill gemma-archimate-model-archimate-export | `besluiten/werkwijze.md`, thema 6 | script |
+| Afwijken mits teruggemeld | modelleerregels | `references/terugmeldingen.md` | sectie 3.5 | signaal |
+| Objectbehoud | modelleerregels | skill gemma-archimate-model-archimate-export | sectie 6.5 | script |
 
 De `references/` in deze tabel zijn die van skill gemma-archimate-model-beoordelen.
