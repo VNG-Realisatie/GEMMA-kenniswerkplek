@@ -65,7 +65,7 @@ Stand van het GEMMA-model van 2026-10-02.
 | Functie-indeling naar domein | GEMMA | functies, producten, diensten | domein → functie → dienst; domein → product | aggregatie; functie bedient proces |
 | Beleidsdomeinindeling | GEMMA | objecten, afspraken, producten, diensten, beleidskaders, levensloopprocessen, bedrijfsinteracties | taakveld → beleidsdomein → element | aggregatie vanuit de groepering |
 | Doelgroepindeling | GEMMA, uitgebreid | rollen, actoren, samenwerkingen, kanalen | gemeente (bestuursorgaan, ambtelijk), inwoners en ondernemers, ketenpartners → element | aggregatie vanuit de doelgroeprol |
-| Regelgevingindeling | nieuw | beleidskaders | brontype van de regeling (regel Bronvoorrang), afgeleid uit de regelgever: *Europese regelgeving* (`europese-regelgeving`), *Rijksregelgeving* (`rijksregelgeving`), *Richtlijn* (`richtlijn`), *Gemeentelijke regelgeving* (`gemeentelijke-regelgeving`) → beleidskader; dezelfde naam voor de groep in Archi en de map in de wiki en in Archi; alleen gevulde groepen | aggregatie vanuit de groep (besluiten redacteur 2026-10-08) |
+| Grondslagindeling | nieuw | beleidskaders | brontype van de regeling (regel Bronvoorrang), afgeleid uit de regelgever: *Europese regelgeving* (`europese-regelgeving`), *Rijksregelgeving* (`rijksregelgeving`), *Richtlijn* (`richtlijn`), *Gemeentelijke regelgeving* (`gemeentelijke-regelgeving`) → beleidskader; dezelfde naam voor de groep in Archi en de map in de wiki en in Archi; alleen gevulde groepen | aggregatie vanuit de groep (besluiten redacteur 2026-10-08) |
 
 Een bedrijfsproces heeft hoogstens twee ouders: het levensloopproces van zijn kernobject en zijn cluster naar soort werk. De procesindeling naar kernobject is strikt hiërarchisch: een levensloopproces aggregeert geen levensloopproces, en een bedrijfsproces hangt onder één levensloopproces; anders is het een fout.
 
@@ -73,7 +73,7 @@ Een bedrijfsproces heeft hoogstens twee ouders: het levensloopproces van zijn ke
 
 Een product- en dienstindeling, beleidskaderindeling en kanaalindeling zijn geen eigen indelingen:
 - producten en diensten vallen in de Beleidsdomeinindeling en de Functie-indeling (twee ouders; de UPL draagt beide als kolom);
-- beleidskaders vallen in de Beleidsdomeinindeling, met de regelgever als eigenschap, en in de Regelgevingindeling onder het brontype van hun regeling: *Europese regelgeving*, *Rijksregelgeving*, *Richtlijn* of *Gemeentelijke regelgeving*, als groep en als map (besluiten redacteur 2026-10-08; zie [Wettelijke grondslag](wettelijke-grondslag.md));
+- beleidskaders vallen in de Beleidsdomeinindeling, met de regelgever als eigenschap, en in de Grondslagindeling onder het brontype van hun regeling: *Europese regelgeving*, *Rijksregelgeving*, *Richtlijn* of *Gemeentelijke regelgeving*, als groep en als map (besluiten redacteur 2026-10-08; zie [Wettelijke grondslag](wettelijke-grondslag.md));
 - een levensloopproces en een bedrijfsinteractie vallen in de Beleidsdomeinindeling, onder het beleidsdomein van hun kernobject, omdat er in de Procesindeling naar kernobject niets boven hen staat;
 - kanalen vallen in de Doelgroepindeling, met fysiek of digitaal als eigenschap.
 
@@ -97,7 +97,7 @@ Tot 2026-10-08 was de taak een eigen niveau, met een hoofdbeleidsdomein als eige
 
 ## Kenmerken en beslistabel
 
-Dit is het ontwerp van de criteria voor de indelingen (2026-10-04, bijgewerkt 2026-10-08). De werkinstructie staat in skill gemma-archimate-model-criteria (stap 7) en in [Kenmerken en beslistabel](beslistabel.md); de controles zitten in `tools/bepaal_type.py` en `tools/afleiden.py`.
+Dit is het ontwerp van de criteria voor de indelingen (2026-10-04, bijgewerkt 2026-10-08). De werkinstructie staat in skill gemma-archimate-model-criteria (stap 7) en in [Kenmerken en beslistabel](../kennismodel/kenmerken-en-beslistabel.md); de controles zitten in `tools/bepaal_type.py` en `tools/afleiden.py`.
 
 ### Per elementtype
 

@@ -11,15 +11,17 @@ Eén bron van waarheid voor de criteria van deze wiki (criteria van 2026-10-04, 
   context van alle begrippen in `indeling`) voor een voorlopig type met een pagina;
 - NAREGELS: aanvullingen op de uitkomst (tegenhanger, procesniveau, annotatie, homoniem).
 
-Het model vult de kenmerken in (met onderbouwing en bron-id's); deze tool past de regels toe.
-De documentatie in skill `gemma-archimate-model-criteria`, de wikipagina `docs/beslistabel.md` en
-`schemas/beoordeling.schema.json` worden hieruit gegenereerd (`markdown --schrijf`, `schema --schrijf`); een test
-bewaakt dat ze gelijk blijven.
+Het model vult de kenmerken in (met onderbouwing en bron-id's); deze tool past de regels toe. De elementtypen zelf
+(naam, ArchiMate-type, paginatype), hun eigenschappen en indelingen staan in het kennismodel (tools/kennismodel.py).
+De vragenlijst in skill `gemma-archimate-model-criteria` en `schemas/beoordeling.schema.json` worden hieruit gegenereerd
+(`markdown --schrijf`, `schema --schrijf`); de vragenlijst met voorbeelden en de stappentabel staan in
+`kennismodel/kenmerken-en-beslistabel.md` (gegenereerd door tools/kennismodel.py). Een test bewaakt dat ze gelijk
+blijven.
 
 Gebruik (vanuit de wikimap):
     uv run python tools/bepaal_type.py evalueer <assessment.json | beoordeling.json> [--schrijf]
     uv run python tools/bepaal_type.py status --uitkomst <uitkomst.json> [--ggm-match sterk] [--grondslag ggm-entiteit]
-    uv run python tools/bepaal_type.py markdown [--schrijf]   # documentatie in de criteria-skill en de wiki
+    uv run python tools/bepaal_type.py markdown [--schrijf]   # de vragenlijst in de criteria-skill
     uv run python tools/bepaal_type.py schema [--schrijf]     # schemas/beoordeling.schema.json
 """
 
@@ -33,10 +35,14 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Callable
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import kennismodel as km  # noqa: E402
+from kennismodel import AFNEMERS, DOELGROEPEN, DOMEINEN, REGELGEVERS, VERPLICHT, WAARDEN  # noqa: E402,F401
+
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = WIKI_ROOT / "schemas" / "beoordeling.schema.json"
 SKILL_PATH = WIKI_ROOT / ".agents" / "skills" / "gemma-archimate-model-criteria" / "SKILL.md"
-DOC_PATH = WIKI_ROOT / "docs" / "beslistabel.md"
 CRITERIA_VERSIE = "2026-10-08"
 
 GEEN_AARD = ""  # in `bij`: ja mag ook als het begrip geen aard heeft (een ding)
@@ -134,7 +140,7 @@ KENMERKEN: list[Kenmerk] = [
             "Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, "
             "vennootschap)?",
             "GGD (openbaar lichaam)", "Zorg- en Veiligheidshuis",
-            "besluit redacteur 2026-10-01 (scheidslijn actor en bedrijfssamenwerking)",
+            "wiki (scheidslijn actor en bedrijfssamenwerking)",
             _bij("handelende_partij", "samenwerkingsverband")),
     Kenmerk("vervult_een_rol", "vervult een rol", "Partij",
             "Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? Noem de rol.",
@@ -143,7 +149,7 @@ KENMERKEN: list[Kenmerk] = [
     Kenmerk("voert_gedrag_uit", "voert gedrag uit", "Partij",
             "Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? Noem het.",
             "Houder van de begraafplaats → Ruimen graf", "rol zonder aanwijsbaar gedrag",
-            "GEMMA (rol wordt toegewezen aan functie); besluit redacteur 2026-10-01 (ook aan proces)",
+            "GEMMA (rol wordt toegewezen aan functie); wiki (ook aan proces)",
             _bij("hoedanigheid", "samenwerkingsverband")),
     Kenmerk("soort_partij", "soort partij", "Partij",
             "Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten "
@@ -154,7 +160,7 @@ KENMERKEN: list[Kenmerk] = [
             "gemeente Utrecht, provincie Utrecht (één exemplaar, niet elke gemeente heeft ermee te maken); een "
             "afzonderlijk ministerie of rijksdienst (minister van BZK, IND) is geen eigen actor maar staat in de "
             "beschrijving van Rijk",
-            "GEMMA (referentiemodel voor alle gemeenten); besluit redacteur 2026-10-07 (Rijk)",
+            "GEMMA (referentiemodel voor alle gemeenten); wiki (Rijk)",
             _bij("handelende_partij", "samenwerkingsverband")),
     Kenmerk("ontsluit_een_dienst", "ontsluit een dienst", "Partij",
             "Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst.",
@@ -170,8 +176,8 @@ KENMERKEN: list[Kenmerk] = [
             "Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk)",
             "Beheren grafrechten (loopt per grafrecht van begin tot eind door); Verzorgen lijkbezorging (een "
             "groepering naar taak is het beleidsdomein, geen proces)",
-            "GEMMA (definitie Procescluster, regel 409 en 419-420; processenlandschap naar soort werk); besluit "
-            "redacteur 2026-10-08 (de taak vervalt)", GEDRAG_BIJ),
+            "GEMMA (definitie Procescluster, regel 409 en 419-420; processenlandschap naar soort werk); wiki (geen "
+            "taak)", GEDRAG_BIJ),
     Kenmerk("gegroepeerd_gedrag", "gegroepeerd gedrag", "Soort gedrag",
             "Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of "
             "competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'?",
@@ -192,7 +198,7 @@ KENMERKEN: list[Kenmerk] = [
             "Bezorgen stoffelijk overschot (ketensamenwerking van gemeente, arts en uitvaartondernemer); "
             "keukentafelgesprek", "beschikking opstellen; Treffen maatregel bij besmet lijk (de GGD adviseert alleen)",
             "ArchiMate (Business Interaction); GEMMA Online, Proceshiërarchie (ketensamenwerking als "
-            "bedrijfsinteractie); besluit redacteur 2026-10-08", GEDRAG_BIJ),
+            "bedrijfsinteractie)", GEDRAG_BIJ),
     # Gedrag (drempel)
     Kenmerk("toegewezen_partij", "toegewezen partij", "Gedrag",
             "Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? Noem de rol.",
@@ -202,7 +208,7 @@ KENMERKEN: list[Kenmerk] = [
             "Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag "
             "aanwijsbare bedrijfsobjecten? Noem object en handeling.",
             "Inspraak (registreert zienswijze)", "burgerberaad",
-            "ArchiMate (toegang van gedrag tot object); besluit redacteur 2026-10-01 (handelingen)", GEDRAG_BIJ),
+            "ArchiMate (toegang van gedrag tot object); wiki (handelingen)", GEDRAG_BIJ),
     Kenmerk("aanleiding", "aanleiding", "Gedrag",
             "Start het door een aanwijsbare gebeurtenis, verzoek of termijn? Noem die.",
             "overheidsparticipatie (verzoek ingediend)", "kennisdeling",
@@ -244,7 +250,7 @@ KENMERKEN: list[Kenmerk] = [
             "bedrijfsproces dat het eindresultaat levert? Noem dat proces.",
             "Verlenen grafrecht (in Beheren grafrechten); toetsen indieningsvereisten (in behandelen aanvraag)",
             "Beheren grafrechten (omvat zelf de hele levensloop)",
-            "GEMMA Online, Proceshiërarchie (bedrijfsproces en deelproces); besluit redacteur 2026-10-08", GEDRAG_BIJ),
+            "GEMMA Online, Proceshiërarchie (bedrijfsproces en deelproces)", GEDRAG_BIJ),
     Kenmerk("klant_tot_klant", "klant tot klant", "Gedrag",
             "Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis "
             "of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van "
@@ -252,7 +258,7 @@ KENMERKEN: list[Kenmerk] = [
             "Behandelen aanvraag reisdocument (van de aanvraag tot de uitreiking of weigering)",
             "Uitreiken reisdocument (volgt op de verstrekking, voor hetzelfde geval)",
             "GEMMA Online, Proceshiërarchie (bedrijfsproces klant-tot-klant, PH 81; deelproces levert een deeldienst, "
-            "PH 83); besluit redacteur 2026-10-08 (klant tot klant)", GEDRAG_BIJ),
+            "PH 83)", GEDRAG_BIJ),
     Kenmerk("omvat_processen", "omvat processen", "Gedrag",
             "Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? Noem ze.",
             "Behandelen vergunningaanvragen lijkbezorging (Verlenen verlof tot begraving of crematie, Opgraven "
@@ -265,8 +271,8 @@ KENMERKEN: list[Kenmerk] = [
             "Beheren grafrechten (Grafrecht: van uitgifte tot verval); Toestaan lijkbezorging (het deel van de gemeente "
             "als overheid in de levensloop van het stoffelijk overschot)",
             "Verlenen grafrecht (één mutatie in die levensloop)",
-            "GEMMA Online, Proceshiërarchie (cluster van bedrijfsprocessen over één thema, PH 91); besluit redacteur "
-            "2026-10-08 (levensloopproces; één per partij binnen een ketensamenwerking)", GEDRAG_BIJ),
+            "GEMMA Online, Proceshiërarchie (cluster van bedrijfsprocessen over één thema, PH 91); wiki "
+            "(levensloopproces; één per partij binnen een ketensamenwerking)", GEDRAG_BIJ),
     Kenmerk("eigen_besluit", "eigen besluit", "Gedrag",
             "Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel.",
             "Verlenen grafrecht (college, Wlb art. 28)", "Onderhouden graf (feitelijk handelen)",
@@ -336,10 +342,10 @@ KENMERKEN: list[Kenmerk] = [
             "gemeente?",
             "Wet op de lijkbezorging; AVG; Circulaire adresonderzoek BRP (RvIG); modelverordening",
             "beheersverordening of beleidsnota van één gemeente (blijft bron)",
-            "besluiten redacteur 2026-10-01 en 2026-10-08", _bij("regeling_als_geheel")),
+            "GEMMA (definitie Beleidskader); wiki", _bij("regeling_als_geheel")),
     Kenmerk("in_werking", "in werking", "Beleidskader",
             "Is de regeling geldend recht, of als modelverordening actueel?",
-            "Archiefwet 1995", "ingetrokken wet", "besluit redacteur 2026-10-01", _bij("regeling_als_geheel")),
+            "Archiefwet 1995", "ingetrokken wet", "wiki", _bij("regeling_als_geheel")),
     Kenmerk("is_grondslag_voor", "is grondslag voor", "Beleidskader",
             "Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die "
             "uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag.",
@@ -385,7 +391,7 @@ SOORT_GEDRAG = [k.sleutel for k in KENMERKEN if k.groep == "Soort gedrag"]
 class Typedef:
     paginatype: str | None
     archimate_type: str
-    naam: str  # GEMMA-naam
+    naam: str  # GEMMA-naam (uit het kennismodel)
     laag: str  # pagina | herkend | geen pagina
     bepaald_door: str
     bep: dict  # kenmerk → ja/nee (voor de documentatie)
@@ -400,25 +406,25 @@ class Typedef:
 
 TEGENHANGER = {"onderscheidbare_exemplaren": "tegenhanger", "levenscyclus": "tegenhanger", "wordt_bewerkt": "tegenhanger"}
 TYPEN: list[Typedef] = [
-    Typedef("bedrijfsobject", "business-object", "Bedrijfsobject", "pagina",
+    Typedef(*km.typevelden("bedrijfsobject"), "pagina",
             "geen aard (een ding); *afspraak* en *waarneembare vorm* nee", {"afspraak": "nee", "waarneembare_vorm": "nee"},
             "wordt_bewerkt", ("onderscheidbare_exemplaren", "levenscyclus"),
             {"geautomatiseerd_verwerkt": "annotatie data-object",
              "deel_van_object": "ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina",
              "invoer_van_een_ander": "ja: onderdeel, geen pagina"}, "Graf; Aanvraag; Vergunning", "Obj"),
-    Typedef("bedrijfsobject", "contract", "Afspraak", "pagina", "*afspraak*",
+    Typedef(*km.typevelden("afspraak"), "pagina", "*afspraak*",
             {"afspraak": "ja", "waarneembare_vorm": "nee"}, "wordt_bewerkt",
             ("onderscheidbare_exemplaren", "levenscyclus"),
             {"geautomatiseerd_verwerkt": "annotatie data-object",
              "deel_van_object": "ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina",
              "invoer_van_een_ander": "ja: onderdeel, geen pagina"}, "Uitvoeringsovereenkomst; Grafrecht", "Afspr"),
-    Typedef("product", "product", "Product", "pagina", "*aanbod als geheel*", {"aanbod_als_geheel": "ja"},
+    Typedef(*km.typevelden("product"), "pagina", "*aanbod als geheel*", {"aanbod_als_geheel": "ja"},
             "omvat_diensten_en_afspraken", ("afnemer", "benoembaar_resultaat"), {},
             "bewonersparkeervergunning in de productencatalogus", "Prod", eis=("zelfstandig_aanbod",)),
-    Typedef("dienst", "business-service", "Dienst", "pagina", "*gedrag* en *aangeboden gedrag*",
+    Typedef(*km.typevelden("dienst"), "pagina", "*gedrag* en *aangeboden gedrag*",
             {"gedrag": "ja", "aangeboden_gedrag": "ja"}, "gerealiseerd_door", ("afnemer", "benoembaar_resultaat"), {},
             "Onderhoud van graven", "Dienst"),
-    Typedef("bedrijfsproces", "business-process", "Bedrijfsproces", "pagina", "*gedrag* en *per keer doorlopen*",
+    Typedef(*km.typevelden("bedrijfsproces"), "pagina", "*gedrag* en *per keer doorlopen*",
             {"gedrag": "ja", "per_keer_doorlopen": "ja"}, "toegewezen_partij",
             (),
             {"omvat_levensloop": "ja: procesniveau levensloopproces",
@@ -432,41 +438,41 @@ TYPEN: list[Typedef] = [
              "komt_herhaald_voor": "annotatie", "leidt_tot_gebeurtenis": "triggering naar een gebeurtenis"},
             "Beheren grafrechten (levensloopproces); Verlenen grafrecht (bedrijfsproces)", "Proc",
             eis=("aanleiding", "benoembaar_resultaat")),
-    Typedef("bedrijfsproces", "business-process", "Procescluster", "pagina",
+    Typedef(*km.typevelden("bedrijfsproces")[:2], "Procescluster", "pagina",
             "*gedrag* en *groepeert processen*", {"gedrag": "ja", "groepeert_processen": "ja"}, "omvat_processen", (),
             {}, "Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk)",
             "Clus", keuze="groepeert_processen"),
-    Typedef("bedrijfsfunctie", "business-function", "Bedrijfsfunctie", "pagina", "*gedrag* en *gegroepeerd gedrag*",
+    Typedef(*km.typevelden("bedrijfsfunctie"), "pagina", "*gedrag* en *gegroepeerd gedrag*",
             {"gedrag": "ja", "gegroepeerd_gedrag": "ja"}, "bedient_gedrag",
             ("toegewezen_partij", "gebruikt_objecten", "stabiel_over_tijd", "in_functie_indeling"), {},
             "Exploiteren van begraafplaatsen; Burgerlijke stand diensten", "Func"),
-    Typedef("gebeurtenis", "business-event", "Gebeurtenis", "pagina", "*gedrag* en *toestandsverandering*",
+    Typedef(*km.typevelden("gebeurtenis"), "pagina", "*gedrag* en *toestandsverandering*",
             {"gedrag": "ja", "toestandsverandering": "ja"}, "leidt_tot_gedrag", ("komt_herhaald_voor",), {},
             "Overlijden; Verval van het grafrecht", "Gebt"),
-    Typedef("actor", "business-actor", "Actor", "pagina",
+    Typedef(*km.typevelden("actor"), "pagina",
             "*handelende partij* met *los van verantwoordelijkheid*; of *samenwerkingsverband* met *eigen rechtspersoon*",
             {"handelende_partij": "ja", "los_van_verantwoordelijkheid": "ja", "samenwerkingsverband": "ja",
              "eigen_rechtspersoon": "ja"}, "vervult_een_rol", (), dict(TEGENHANGER),
             "College van B&W; Kerkgenootschap; GGD", "Actor", eis=("soort_partij",)),
-    Typedef("rol", "business-role", "Rol", "pagina", "*hoedanigheid*, niet *los van verantwoordelijkheid*",
+    Typedef(*km.typevelden("rol"), "pagina", "*hoedanigheid*, niet *los van verantwoordelijkheid*",
             {"hoedanigheid": "ja", "los_van_verantwoordelijkheid": "nee"}, "voert_gedrag_uit", (), dict(TEGENHANGER),
             "Houder van de begraafplaats; Rechthebbende op het graf", "Rol"),
-    Typedef("bedrijfssamenwerking", "business-collaboration", "Bedrijfssamenwerking", "pagina",
+    Typedef(*km.typevelden("bedrijfssamenwerking"), "pagina",
             "*samenwerkingsverband* zonder *eigen rechtspersoon*",
             {"samenwerkingsverband": "ja", "eigen_rechtspersoon": "nee"}, "voert_gedrag_uit", (), {},
             "Zorg- en Veiligheidshuis", "Samw", eis=("soort_partij",)),
-    Typedef("kanaal", "business-interface", "Kanaal", "pagina", "*toegangspunt*", {"toegangspunt": "ja"},
+    Typedef(*km.typevelden("kanaal"), "pagina", "*toegangspunt*", {"toegangspunt": "ja"},
             "ontsluit_een_dienst", (), {}, "publieksbalie; gemeentelijke website (centrale set)", "Kan"),
-    Typedef("beleidskader", "driver", "Beleidskader", "pagina", "*regeling als geheel* en *landelijk*",
+    Typedef(*km.typevelden("beleidskader"), "pagina", "*regeling als geheel* en *landelijk*",
             {"regeling_als_geheel": "ja", "landelijk": "ja"}, "is_grondslag_voor", ("in_werking",), {},
             "Wet op de lijkbezorging; Archiefwet; AVG", "Bkad"),
-    Typedef("bedrijfsinteractie", "business-interaction", "Bedrijfsinteractie", "pagina",
+    Typedef(*km.typevelden("bedrijfsinteractie"), "pagina",
             "*gedrag* en *gezamenlijk gedrag*", {"gedrag": "ja", "gezamenlijk_gedrag": "ja"}, "toegewezen_partij",
             ("aanleiding", "benoembaar_resultaat"), {"gebruikt_objecten": "annotatie"},
             "Bezorgen stoffelijk overschot (ketensamenwerking; voorleggen)", "Inter"),
-    Typedef(None, "representation", "Representatie", "geen pagina", "*waarneembare vorm*",
+    Typedef(*km.typevelden("representatie"), "geen pagina", "*waarneembare vorm*",
             {"waarneembare_vorm": "ja"}, None, (), {}, "register van begraven lijken (vermelden bij Graf)", "Repr"),
-    Typedef(None, "location", "Locatie", "geen pagina", "*plaats*", {"plaats": "ja"}, None, (), {},
+    Typedef(*km.typevelden("locatie"), "geen pagina", "*plaats*", {"plaats": "ja"}, None, (), {},
             "stadskantoor als vestigingsplaats", "Loc"),
 ]
 def typedef(paginatype: str | None, archimate_type: str, k: dict | None = None) -> Typedef:
@@ -494,74 +500,13 @@ EXTRA_VELDEN = {
     "kernobject": "Stap 7: het bedrijfsobject waarvan dit proces de levensloop omvat (levensloopproces), waarin het "
                   "een mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie)",
 }
-# Indelingsvelden: de plaats van een element in de indelingen (naast taakveld en beleidsdomein, die de map bepalen).
-AFNEMERS = ("extern", "intern")
-DOMEINEN = ("Bestuur", "Fysieke leefomgeving", "Niet domeingebonden", "Openbare orde en veiligheid", "Ondersteuning",
-            "Publieksdiensten", "Sociaal domein")  # GEMMA domeinen
-DOELGROEPEN = ("gemeente", "inwoners en ondernemers", "ketenpartners")
-REGELGEVERS = ("EU", "rijk", "landelijke organisatie", "VNG-model")
-# Regelgevingindeling: een beleidskader valt onder het brontype van zijn regeling (regel Bronvoorrang, wiki.yaml
-# `bronvoorrang`), afgeleid uit de regelgever. Groep en map heten als het brontype; de omschrijving is die van de regel
-# Bronvoorrang. Alleen gevulde groepen bestaan (besluiten redacteur 2026-10-08).
-REGELGEVER_BRONTYPE = {"EU": "europese-regelgeving", "rijk": "rijksregelgeving", "landelijke organisatie": "richtlijn",
-                       "VNG-model": "gemeentelijke-regelgeving"}
-BRONTYPE_OMSCHRIJVING = {
-    "europese-regelgeving": "Regelgeving van de Europese Unie die voor alle gemeenten geldt, zoals verordeningen die "
-                            "rechtstreeks werken (AVG, AI-verordening).",
-    "rijksregelgeving": "Regelgeving van het Rijk die voor alle gemeenten gelijk is: wetten, algemene maatregelen van "
-                        "bestuur en ministeriële regelingen, en door Nederland goedgekeurde verdragen.",
-    "richtlijn": "Landelijke uitvoeringsvoorschriften, handleidingen, circulaires en handreikingen van het Rijk, "
-                 "uitvoeringsorganisaties en koepels (HUP van RvIG, NVVB, VNG, Divosa).",
-    "gemeentelijke-regelgeving": "Verordeningen, nadere regels, beleidsregels en regelingen van gemeenschappelijke "
-                                 "regelingen, die elke gemeente zelf vaststelt, en de VNG-modellen daarvan. Omdat de "
-                                 "inhoud per gemeente verschilt, staat in het model het VNG-model als gemeenschappelijke "
-                                 "vorm; de regeling van één gemeente is een voorbeeld en geen element.",
-}
-
-
-def brontype_naam(brontype: str) -> str:
-    """De naam van een brontype als groep of map: `europese-regelgeving` → Europese regelgeving."""
-    return brontype.replace("-", " ").capitalize()
-
-
-def regelgeving(data: dict) -> str | None:
-    """De groep van een beleidskader in de Regelgevingindeling (ook zijn submap): de naam van zijn brontype."""
-    brontype = REGELGEVER_BRONTYPE.get(data.get("regelgever"))
-    return brontype_naam(brontype) if brontype else None
+# Indelingsvelden (AFNEMERS, DOMEINEN, DOELGROEPEN, REGELGEVERS, WAARDEN, VERPLICHT): zie het kennismodel.
 
 
 def submap(data: dict, veld: str) -> str | None:
-    """De waarde van een submap uit wiki.yaml `page_types.<type>.submappen`: een veld, of een afgeleide indeling."""
-    return regelgeving(data) if veld == "regelgeving" else data.get(veld)
-WAARDEN = {"afnemer": AFNEMERS, "domein": DOMEINEN, "doelgroep": DOELGROEPEN, "regelgever": REGELGEVERS}
-VERPLICHT = {  # paginatype → velden die ingevuld moeten zijn
-    "product": ("domein", "afnemer"),
-    "dienst": ("domein", "afnemer"),
-    "bedrijfsfunctie": ("domein",),
-    "actor": ("doelgroep",),
-    "rol": ("doelgroep",),
-    "bedrijfssamenwerking": ("doelgroep",),
-    "kanaal": ("doelgroep",),
-    "beleidskader": ("regelgever",),
-}
-
-
-INDELING_PER_TYPE = {  # paginatype → de indelingen waarin het type valt
-    "bedrijfsobject": "Beleidsdomeinindeling",
-    "product": "Beleidsdomeinindeling en Functie-indeling naar domein",
-    "dienst": "Beleidsdomeinindeling en Functie-indeling naar domein",
-    "bedrijfsproces": "Procesindeling naar kernobject en naar soort werk; een levensloopproces ook in de "
-                      "Beleidsdomeinindeling, onder het beleidsdomein van zijn kernobject",
-    "bedrijfsinteractie": "Procesindeling naar kernobject, bij haar kernobject, en Beleidsdomeinindeling, onder het "
-                          "beleidsdomein van haar kernobject",
-    "bedrijfsfunctie": "Functie-indeling naar domein",
-    "gebeurtenis": "Procesindeling naar kernobject",
-    "actor": "Doelgroepindeling",
-    "rol": "Doelgroepindeling",
-    "bedrijfssamenwerking": "Doelgroepindeling",
-    "kanaal": "Doelgroepindeling",
-    "beleidskader": "Beleidsdomeinindeling en Regelgevingindeling (naar de regelgever)",
-}
+    """De waarde van een submap uit wiki.yaml `page_types.<type>.submappen`: een veld, of de groep in de
+    Grondslagindeling."""
+    return km.grondslaggroep(data) if veld == "grondslag" else data.get(veld)
 
 
 def verplichte_velden(uitkomst: dict) -> tuple:
@@ -1151,33 +1096,6 @@ def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None,
 
 # --- Generatie: documentatie (criteria-skill, wikipagina) en het beoordeling-schema ---
 
-CODE = {"T": "bepaalt het type", "x": "moet nee zijn voor dit type", "K": "kernrelatie: moet ja zijn",
-        "D": "telt in de drempel (hoogstens één nee)", "P": "poort: geldt voor alle typen",
-        "S": "specialisatieniveau", "A": "aanvulling (tegenhanger, procesniveau, objectniveau, annotatie)",
-        "E": "eis: moet ja zijn naast de kernrelatie"}
-
-
-def _codes() -> dict[str, dict[str, str]]:
-    m = {s: {} for s in SLEUTELS}
-    for i, t in enumerate(TYPEN):
-        for km in KENMERKEN:
-            if km.groep == "Poort":
-                m[km.sleutel][i] = "P"
-        if t.laag == "pagina":
-            m["zelfstandige_specialisatie"][i] = "S"
-        for s, w in t.bep.items():
-            m[s][i] = "T" if w == "ja" else "x"
-        if t.kern:
-            m[t.kern][i] = "K"
-        for s in t.eis:
-            m[s][i] = "E"
-        for s in t.drempel:
-            m[s][i] = "D"
-        for s in t.aanvulling:
-            m[s].setdefault(i, "A")
-    return m
-
-
 def _cel(tekst: str) -> str:
     return tekst.replace("|", "\\|")
 
@@ -1208,53 +1126,20 @@ def doc_vragenlijst() -> list[str]:
     return regels
 
 
-def doc_naslag() -> list[str]:
-    regels = ["### Kenmerken: naslag per groep", ""]
+def doc_vragentabel() -> list[str]:
+    """De vragenlijst met voorbeelden en herkomst, per groep (kennismodel/kenmerken-en-beslistabel.md)."""
+    regels = ["### Kenmerken", "",
+              "Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee). Bij \"Noem …\" hoort bij "
+              "ja een concreet begrip, artikel of relatie uit de bronnen; zonder zo'n verwijzing is het antwoord nee.", ""]
+    nr = 0
     for groep in GROEPEN:
-        regels += [f"**{groep}.** {GROEP_ALS[groep]}", "", "| Kenmerk | Voorbeelden en herkomst |", "|---|---|"]
-        regels += [f"| **{km.naam}**: {_cel(km.vraag)} | Ja: {_cel(km.ja)}. Nee: {_cel(km.nee)}. Herkomst: {_cel(km.herkomst)}. |"
-                   for km in KENMERKEN if km.groep == groep]
+        regels += [f"**{groep}.** {GROEP_ALS[groep]}", "", "| Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |",
+                   "|---|---|---|---|---|---|"]
+        for km_ in (k for k in KENMERKEN if k.groep == groep):
+            nr += 1
+            regels.append(f"| {nr} | *{km_.naam}* | {_cel(km_.vraag)} | {_cel(km_.ja)} | {_cel(km_.nee)} | "
+                          f"{_cel(km_.herkomst)} |")
         regels.append("")
-    return regels
-
-
-def doc_matrix() -> list[str]:
-    m = _codes()
-    kop = [t.kort for t in TYPEN]
-    regels = ["### Beslistabel vanuit de kenmerken", "",
-              "Per kenmerk: bij welke typen het telt, en hoe. "
-              + " · ".join(f"**{c}** {t}" for c, t in CODE.items()) + ".", "",
-              "Typen: " + " · ".join(f"{t.kort} = {t.naam}" + ("" if t.laag == "pagina" else f" ({t.laag})")
-                                     for t in TYPEN) + ".", "",
-              "| Kenmerk | " + " | ".join(kop) + " |", "|---|" + "---|" * len(kop)]
-    for groep in GROEPEN:
-        regels.append(f"| **{groep}** |" + " |" * len(kop))
-        for km in (k for k in KENMERKEN if k.groep == groep):
-            regels.append(f"| {km.naam} | " + " | ".join(m[km.sleutel].get(i, "") for i in range(len(TYPEN))) + " |")
-    regels.append("")
-    return regels
-
-
-def doc_per_type() -> list[str]:
-    regels = ["### Beslistabel per elementtype", "",
-              "Voor elk type gelden eerst stap 0 en de poorten, daarna de toets op *zelfstandige specialisatie*. "
-              f"Van de overige drempelcriteria mag er hoogstens {DREMPEL_ONTBREKEND} nee zijn.", ""]
-    for t in TYPEN:
-        kop = f"**Wanneer is iets een {t.naam.lower()}?**" + ("" if t.laag == "pagina" else f" ({t.laag})")
-        regels += [kop, "", f"- Type volgt uit: {t.bepaald_door}."]
-        if t.kern:
-            regels.append(f"- Moet ja zijn: *{NAAM[t.kern]}*" + "".join(f" en *{NAAM[e]}*" for e in t.eis) + ".")
-        if t.drempel:
-            regels.append(f"- Hoogstens één nee: {_namen(t.drempel)}.")
-        if t.aanvulling:
-            regels.append("- Daarna: " + "; ".join(dict.fromkeys(
-                f"{v} ({_namen([s])})" if v != "tegenhanger" else "tegenhanger bij *onderscheidbare exemplaren*, "
-                "*levenscyclus* en *wordt bewerkt*" for s, v in t.aanvulling.items())) + ".")
-        if t.paginatype == "kanaal":
-            regels.append("- Kanalen vormen één centrale set: koppelen aan een bestaand kanaal; een nieuw kanaal alleen na besluit van de redacteur.")
-        if t.paginatype in INDELING_PER_TYPE:
-            regels.append(f"- Indeling: {INDELING_PER_TYPE[t.paginatype]}.")
-        regels += [f"- Voorbeeld: {t.voorbeeld}.", ""]
     return regels
 
 
@@ -1273,13 +1158,9 @@ def doc_stappen() -> list[str]:
     return regels
 
 
-def markdown(doel: str = "skill") -> str:
-    """De gegenereerde documentatie. `skill`: zonder de naslag per groep (te lang voor een skill), met de
-    stappentabel; `wiki`: met de naslag, zonder de stappentabel."""
-    delen = doc_stap0() + doc_vragenlijst() + (doc_naslag() if doel == "wiki" else []) + doc_per_type() + doc_matrix()
-    if doel == "skill":
-        delen += doc_stappen()
-    return "\n".join(delen).rstrip("\n") + "\n"
+def markdown() -> str:
+    """De gegenereerde vragenlijst in de criteria-skill: stap 0 en de vragen in volgorde van beoordelen."""
+    return "\n".join(doc_stap0() + doc_vragenlijst()).rstrip("\n") + "\n"
 
 
 BEGIN = "<!-- BEGIN gegenereerd uit de beslistabel; niet met de hand bewerken -->"
@@ -1417,14 +1298,12 @@ def _beoordelingen(data: dict) -> list[tuple[str, dict]]:
 
 
 def schrijf_documentatie() -> list[Path]:
-    geschreven = []
-    for pad, doel in ((SKILL_PATH, "skill"), (DOC_PATH, "wiki")):
-        tekst = pad.read_text(encoding="utf-8")
-        nieuw = vervang_blok(tekst, markdown(doel))
-        if nieuw != tekst:
-            pad.write_text(nieuw, encoding="utf-8", newline="\n")
-            geschreven.append(pad)
-    return geschreven
+    tekst = SKILL_PATH.read_text(encoding="utf-8")
+    nieuw = vervang_blok(tekst, markdown())
+    if nieuw == tekst:
+        return []
+    SKILL_PATH.write_text(nieuw, encoding="utf-8", newline="\n")
+    return [SKILL_PATH]
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -1437,9 +1316,8 @@ def main(argv: list[str] | None = None) -> int:
     p_status.add_argument("--uitkomst", required=True)
     p_status.add_argument("--ggm-match")
     p_status.add_argument("--grondslag", choices=GRONDSLAGEN)
-    p_md = sub.add_parser("markdown", help="Documentatie voor de criteria-skill en de wikipagina")
-    p_md.add_argument("--schrijf", action="store_true", help="Werk de gegenereerde blokken in skill en wikipagina bij")
-    p_md.add_argument("--doel", choices=["skill", "wiki"], default="skill")
+    p_md = sub.add_parser("markdown", help="De vragenlijst voor de criteria-skill")
+    p_md.add_argument("--schrijf", action="store_true", help="Werk het gegenereerde blok in de skill bij")
     p_schema = sub.add_parser("schema", help="Beoordeling-schema")
     p_schema.add_argument("--schrijf", action="store_true", help=f"Schrijf naar {SCHEMA_PATH.relative_to(WIKI_ROOT)}")
     args = parser.parse_args(argv)
@@ -1449,7 +1327,7 @@ def main(argv: list[str] | None = None) -> int:
             for pad in schrijf_documentatie():
                 print(f"Bijgewerkt: {pad.relative_to(WIKI_ROOT)}")
             return 0
-        sys.stdout.write(markdown(args.doel))
+        sys.stdout.write(markdown())
         return 0
     if args.cmd == "schema":
         tekst = json.dumps(schema(), indent=2, ensure_ascii=False) + "\n"

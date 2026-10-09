@@ -21,7 +21,10 @@ page_types:                          # pagina's van curated typen en onderwerpen
   doc:                               # documentatie: waarom het model is zoals het is (docs/, besluiten/werkwijze.md)
     dir: docs
     schema: schemas/doc.schema.json
-  lijst:                             # wat een script als lijst maakt: terugmeldingen/, docs/beslistabel.md, ter-beoordeling.md, voortgang.md; geen eigen map
+  kennismodel:                       # wat het model is: elementtypen, relaties, indelingen (tools/kennismodel.py; modelleerregels.md met de hand)
+    dir: kennismodel
+    schema: schemas/kennismodel.schema.json
+  lijst:                             # wat een script als lijst maakt: terugmeldingen/, ter-beoordeling.md, voortgang.md; geen eigen map
     schema: schemas/lijst.schema.json
   bedrijfsobject:                    # archimate_type business-object | contract
     dir: bedrijfsarchitectuur/bedrijfsobjecten
@@ -64,7 +67,7 @@ page_types:                          # pagina's van curated typen en onderwerpen
     curated: true
   beleidskader:                      # Driver (motivatielaag); Europese of rijksregelgeving, landelijke richtlijn of VNG-model
     dir: motivatie/beleidskaders
-    submappen: [regelgeving]         # afgeleid uit de regelgever: het brontype van de regeling (besluit 2026-10-08)
+    submappen: [grondslag]           # de groep in de Grondslagindeling, afgeleid uit de regelgever (het brontype van de regeling)
     curated: true
 
 curation:

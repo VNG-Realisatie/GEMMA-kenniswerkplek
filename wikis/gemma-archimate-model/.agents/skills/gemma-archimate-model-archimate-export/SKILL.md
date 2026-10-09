@@ -25,7 +25,7 @@ Naam en definitie komen uit de wiki en overschrijven die van GEMMA. De GEMMA-eig
 
 **Objectbehoud.** Een hernoemd, samengevoegd of gesplitst element zet het Archi-object voort dat in `beoordelingen/objecten.yaml` staat (regel Objectbehoud): Archi werkt bij de import naam, definitie en eigenschappen bij, en views met het object blijven werken. De export weigert als het type van een voortgezet object wijzigt ten opzichte van de vorige export, want dat kan Archi bij een import niet.
 
-**De export vertrouwt de match.** Elke match met een id overschrijft het GEMMA-element, ook een zwakke of partiële. Matchen is de verantwoordelijkheid van de wiki en de redacteur (regel Zwakke match voorleggen in `AGENTS.md`), niet van de export of van Archi.
+**De export vertrouwt de match.** Elke match met een id overschrijft het GEMMA-element, ook een zwakke of partiële. Matchen is de verantwoordelijkheid van de wiki en de redacteur (regel Zwakke match voorleggen in `kennismodel/modelleerregels.md`), niet van de export of van Archi.
 
 ## Stappen
 

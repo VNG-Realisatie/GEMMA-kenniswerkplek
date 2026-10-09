@@ -6,10 +6,10 @@ kiest, geeft een herkenbare naam en schrijft ze in de beoordeling. tools/afleide
 
 Relatie (`soort`): associatie, associatie (gericht), aggregatie, compositie, specialisatie, toewijzing,
 toegang (<handeling> of <verantwoordelijkheid>), triggering, stroom, realisatie, bediening.
-Toegang van gedrag tot een object heeft een handeling (registreren, bijwerken, beëindigen, raadplegen, verstrekken,
-bewaren, overbrengen, vernietigen); toegang van een rol of bedrijfssamenwerking een verantwoordelijkheid (houder,
-bronhouder, beheerder, verstrekker, afnemer, toezichthouder, betrokkene, partij). Het ArchiMate-toegangstype volgt
-eruit (besluiten redacteur 2026-10-01).
+Toegang van gedrag tot een object heeft een handeling, toegang van een rol of bedrijfssamenwerking een
+verantwoordelijkheid; de vaste namen en het ArchiMate-toegangstype staan in het kennismodel (tools/kennismodel.py),
+net als welke relaties tussen de typen in het kennismodel van de wiki staan. Deze tool toetst de geldigheid in
+ArchiMate (`archimate_geldig`), aangescherpt met de GEMMA-modelleerafspraken (`toegestaan`).
 Grondslag: ggm-exact | ggm-afgeleid | bron. `ggm_relatie`: de GUID's, leeg bij `bron`. `bronnen`: verplicht bij
 `bron`, bij `ggm-*` de bronnen die de relatie bevestigen.
 
@@ -34,37 +34,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import gam_gemeen  # noqa: E402
+import kennismodel  # noqa: E402
+from kennismodel import HANDELINGEN, VERANTWOORDELIJKHEDEN, toegangstype  # noqa: E402,F401
 from llmwiki import beoordeling, paths  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
 
-# Nederlandse relatienaam → ArchiMate-relatie
-RELATIES = {
-    "associatie": "association",
-    "aggregatie": "aggregation",
-    "compositie": "composition",
-    "specialisatie": "specialization",
-    "toewijzing": "assignment",
-    "toegang": "access",
-    "triggering": "triggering",
-    "stroom": "flow",
-    "realisatie": "realization",
-    "bediening": "serving",
-}
-# Handeling van gedrag op een object → ArchiMate-toegangstype
-HANDELINGEN = {"registreren": "schrijven", "bijwerken": "lezen-schrijven", "beëindigen": "schrijven",
-               "raadplegen": "lezen", "verstrekken": "lezen", "bewaren": "lezen-schrijven", "overbrengen": "lezen",
-               "vernietigen": "schrijven"}
-# Verantwoordelijkheid van een rol (of bedrijfssamenwerking) voor een object → ArchiMate-toegangstype
-VERANTWOORDELIJKHEDEN = {"houder": "lezen-schrijven", "bronhouder": "schrijven", "beheerder": "lezen-schrijven",
-                         "verstrekker": "lezen", "afnemer": "lezen", "toezichthouder": "lezen", "betrokkene": "lezen",
-                         "partij": "lezen-schrijven"}
+RELATIES = kennismodel.RELATIETYPEN  # Nederlandse relatienaam → ArchiMate-relatie
 TOEGANG = tuple(HANDELINGEN) + tuple(VERANTWOORDELIJKHEDEN)
-
-
-def toegangstype(naam: str | None) -> str | None:
-    """ArchiMate-toegangstype (lezen, schrijven, lezen-schrijven) bij een handeling of verantwoordelijkheid."""
-    return HANDELINGEN.get(naam) or VERANTWOORDELIJKHEDEN.get(naam)
 GRONDSLAGEN = ("ggm-exact", "ggm-afgeleid", "bron")
 KOLOMMEN = ["Relatie", "Naar", "Naam", "Kardinaliteit", "Grondslag", "GGM-relatie", "Bron"]
 BRON_ID_RE = gam_gemeen.BRON_ID_RE
@@ -104,15 +81,23 @@ def categorie(archimate_type: str) -> str:
     return "onbekend"
 
 
+def archimate_geldig(relatie: str, bron_type: str, doel_type: str) -> bool:
+    """De relatie is geldig in ArchiMate (de conservatieve deelverzameling in TOEGESTAAN)."""
+    if relatie == "specialization":
+        return bron_type == doel_type or {bron_type, doel_type} == {"business-object", "contract"}
+    cb, cd = categorie(bron_type), categorie(doel_type)
+    return any(r == relatie and b in ("*", cb) and d in ("*", cd) for r, b, d in TOEGESTAAN if b != "zelfde")
+
+
 def toegestaan(relatie: str, bron_type: str, doel_type: str) -> bool:
-    """ArchiMate-toets, aangescherpt met de GEMMA-modelleerafspraken (besluiten redacteur 2026-10-01).
+    """ArchiMate-toets, aangescherpt met de GEMMA-modelleerafspraken; die staan in het kennismodel als weggefilterd.
 
     Een actor hangt alleen via een rol aan gedrag en objecten; een kanaal is toegewezen aan een dienst en bedient een
     rol; een functie bedient een proces (geen aggregatie); een dienst heeft geen toegang tot een object en krijgt geen
     rol toegewezen.
     """
     if relatie == "specialization":
-        return bron_type == doel_type or {bron_type, doel_type} == {"business-object", "contract"}
+        return archimate_geldig(relatie, bron_type, doel_type)
     cb, cd = categorie(bron_type), categorie(doel_type)
     if relatie == "assignment" and cb == cd == "actief":
         # Tussen twee partijen alleen: een actor vervult een rol.
@@ -128,7 +113,7 @@ def toegestaan(relatie: str, bron_type: str, doel_type: str) -> bool:
         return False
     if relatie == "access" and bron_type == "business-service":
         return False
-    return any(r == relatie and b in ("*", cb) and d in ("*", cd) for r, b, d in TOEGESTAAN if b != "zelfde")
+    return archimate_geldig(relatie, bron_type, doel_type)
 
 
 # --- De elementen: uit de beoordelingen ---

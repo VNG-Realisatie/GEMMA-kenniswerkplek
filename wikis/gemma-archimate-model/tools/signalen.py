@@ -1,6 +1,6 @@
 """Signalen bij het afleiden: zachte waarschuwingen over het oordeel, en harde controles op de bronanalyses.
 
-Een waarschuwing noemt de regel uit AGENTS.md bij naam ("regel Naamvorm"). De AI beoordeelt elke waarschuwing
+Een waarschuwing noemt de regel uit AGENTS.md of kennismodel/modelleerregels.md bij naam ("regel Naamvorm"). De AI beoordeelt elke waarschuwing
 inhoudelijk: oplossen in de beoordeling, of toelichten als de tekst terecht is. Een waarschuwing houdt niets tegen.
 
 Harde controles (fouten) gaan over wat de AI met de hand schrijft buiten de beoordelingen: de bronanalyses (de

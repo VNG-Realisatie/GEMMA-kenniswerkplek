@@ -232,10 +232,8 @@ def test_gegenereerd_schema_is_actueel_en_geldig():
 
 def test_documentatie_is_gegenereerd():
     skill = bt.SKILL_PATH.read_text(encoding="utf-8")
-    wiki = bt.DOC_PATH.read_text(encoding="utf-8")
-    assert bt.markdown("skill") in skill, "draai: uv run python tools/bepaal_type.py markdown --schrijf"
-    assert bt.markdown("wiki") in wiki, "draai: uv run python tools/bepaal_type.py markdown --schrijf"
-    assert "### Stappentabel" not in wiki
+    assert bt.markdown() in skill, "draai: uv run python tools/bepaal_type.py markdown --schrijf"
+    assert "### Stappentabel" not in skill
 
 
 def test_stap_7_procesniveau():
@@ -416,7 +414,5 @@ def test_elk_type_met_pagina_is_compleet():
             continue
         assert t.bep, t.naam
         assert t.kern, t.naam
-        assert t.paginatype in bt.INDELING_PER_TYPE, t.naam
+        assert bt.km.indeling_tekst(t.paginatype), t.naam
         assert "zelfstandige_specialisatie" in bt.SLEUTELS
-    paginatypen = {t.paginatype for t in bt.TYPEN if t.laag == "pagina"}
-    assert paginatypen <= set(bt.INDELING_PER_TYPE)

@@ -30,4 +30,4 @@ besluiten:
 
 ## Een algemeen besluit verwerken
 
-Een besluit over de werkwijze of de criteria (niet over één begrip) verwerk je in de regel in `AGENTS.md` of in de skill waar het hoort: daar staat wat nu geldt. Daarnaast komt het, met de datum en de kolom Stand, in `besluiten/werkwijze.md` of in de besluitentabel van het document in `docs/` waar het bij hoort. Wordt een eerder besluit herzien, zet dan bij het oude besluit "herzien door <datum>".
+Een besluit over de werkwijze of de criteria (niet over één begrip) verwerk je in `AGENTS.md` (werkwijze), in het kennismodel (`kennismodel/modelleerregels.md` of `tools/kennismodel.py`) of in de skill waar het hoort: daar staat wat nu geldt. Daarnaast komt het, met de datum en de kolom Stand, in `besluiten/werkwijze.md` of in de besluitentabel van het document in `docs/` waar het bij hoort. Wordt een eerder besluit herzien, zet dan bij het oude besluit "herzien door <datum>".

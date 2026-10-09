@@ -18,6 +18,7 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 | `besluiten/per-begrip.md` | Besluiten van de redacteur per begrip, per thuisonderwerp, en de eerdere besluiten uit `beoordelingen/besluiten-eerder.yaml` |
 | `ter-beoordeling.md` | Wat wacht op akkoord (review), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
+| `kennismodel/**` | Het kennismodel uit tools/kennismodel.py (behalve `kennismodel/modelleerregels.md`, met de hand) |
 
 Opbouw van een elementpagina (vaste volgorde; een sectie zonder inhoud vervalt): frontmatter (gegevens en de
 letterlijke `ggm_*`/`gemma_*`-velden), titel en status, Ter discussie; Betekenis (Definitie, Beschrijving, Deelprocessen, Per
@@ -48,6 +49,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import bepaal_type  # noqa: E402
 import gam_gemeen  # noqa: E402
+import kennismodel  # noqa: E402
 from llmwiki import beoordeling, frontmatter, logbook, paths  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
@@ -929,6 +931,7 @@ def render(wiki_root: Path = WIKI_ROOT) -> dict[str, str]:
     uit[BESLUITEN_PER_BEGRIP.as_posix()] = besluiten_per_begrip(w)
     uit[TER_BEOORDELING.as_posix()] = ter_beoordeling(w)
     uit[VOORTGANG.as_posix()] = voortgang(w)
+    uit.update(kennismodel.paginas())
     return uit
 
 
@@ -937,8 +940,9 @@ def beheerd(wiki_root: Path) -> set[str]:
     y = paths.load_wiki_yaml(wiki_root)
     mappen = [d["dir"] for d in y["page_types"].values() if d.get("curated")]
     mappen.append(y["page_types"].get("onderwerp", {}).get("dir", "begrippen"))
-    mappen.append(OVERZICHTEN)
-    return {p.relative_to(wiki_root).as_posix() for m in mappen for p in (wiki_root / m).rglob("*.md")}
+    mappen += [OVERZICHTEN, kennismodel.MAP]
+    handmatig = {f"{kennismodel.MAP}/{n}" for n in kennismodel.HANDMATIG}
+    return {p.relative_to(wiki_root).as_posix() for m in mappen for p in (wiki_root / m).rglob("*.md")} - handmatig
 
 
 def verschillen(wiki_root: Path = WIKI_ROOT) -> tuple[dict[str, str], list[str], list[str]]:

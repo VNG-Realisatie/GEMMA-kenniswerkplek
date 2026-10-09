@@ -84,7 +84,7 @@ Velden en wat erin hoort:
 | `generalisatie`, `specialisaties`, `ggm_componenten` | `references/hierarchie.md` |
 | `tegenhanger` | `references/tegenhangers.md` |
 | `relaties` (ook `via`: de specialisatie zonder pagina van het generieke doel) | `references/relaties.md` |
-| `onderwerpen`, `per_onderwerp`, `synoniem_van` (één model over de onderwerpen heen) | `references/onderwerpen.md` |
+| `onderwerpen`, `per_onderwerp`, `synoniem_van` (één model over de onderwerpen heen) | de regels Eén element in het hele model, Thuishoren en Relaties tussen onderwerpen in `kennismodel/modelleerregels.md` |
 | `besluiten` | `references/besluiten.md` |
 | `kernobject`, `afnemer`, `domein`, `doelgroep`, `regelgever`, `gemma_generiek` | skill `gemma-archimate-model-criteria`, stap 7 (achtergrond: `docs/indelingen.md`) |
 

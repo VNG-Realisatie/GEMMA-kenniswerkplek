@@ -11,7 +11,7 @@ Het bestand is bedoeld om in Archi te bekijken (File › Open) en om in het GEMM
 - elk element en elke relatie krijgt `wiki-gemma-model exportdatum`: na de import verwijdert het jArchi-script van de
   skill wat een oudere datum heeft (volledige sync).
 
-Indelingen (docs/indelingen.md): een element krijgt de eigenschappen procesniveau, objectniveau en zijn indelingsvelden;
+Indelingen (kennismodel/indelingen.md): een element krijgt de eigenschappen procesniveau, objectniveau en zijn indelingsvelden;
 een aggregatie tussen processen heeft `indeling` en `procesniveau` ("levensloopproces → bedrijfsproces"), een aggregatie
 tussen functies, en van een functie naar een product of dienst, `indeling`; een functie hangt alleen op domeinniveau (GEMMA
 type *Bedrijfsfunctie domein*) aan de domeingroepering, daaronder aan haar bovenliggende functie; een product of dienst aan
@@ -21,8 +21,9 @@ map `Ketensamenwerking` (zoals in GEMMA); een levensloopproces zonder GEMMA-matc
 kernobject; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
 letterlijk meegaat); beleidsdomein en domein worden een aggregatie vanuit de bestaande GEMMA-groepering, of vanuit een
 nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type `Groep`);
-een beleidskader daarnaast een aggregatie vanuit de groep Europese regelgeving, Rijksregelgeving of Gemeentelijke
-regelgeving (naar de regelgever), in de map `Regelgevingindeling` van de wiki; alleen gevulde groepen.
+een beleidskader daarnaast een aggregatie vanuit de groep Europese regelgeving, Rijksregelgeving, Richtlijn of
+Gemeentelijke regelgeving (naar de regelgever), in de map `Grondslagindeling` van de wiki; alleen gevulde groepen. De
+id's van die groepen houden hun sleutel `regelgeving`, zodat ze bij het hernoemen van de indeling gelijk bleven.
 
 Een element dat in geen enkele indeling staat, houdt de export tegen (`--check` meldt het ook).
 
@@ -55,6 +56,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import bepaal_type  # noqa: E402
 import gam_gemeen  # noqa: E402
+import kennismodel as km  # noqa: E402
 import relaties as relatietool  # noqa: E402
 import signalen  # noqa: E402
 from llmwiki import beoordeling, paths  # noqa: E402
@@ -500,12 +502,13 @@ def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: d
         uit.specialisaties.append(f"{data['begrip']} → {g['naam']}")
 
 
-# De indelingen die een element in een bestaande GEMMA-groepering plaatsen: paginatype → (indeling, soort).
-BELEIDSDOMEIN_TYPEN = ("bedrijfsobject", "product", "dienst", "beleidskader")
-DOMEIN_TYPEN = ("bedrijfsfunctie", "product", "dienst")
-# Een levensloopproces en een bedrijfsinteractie vallen ook in de Beleidsdomeinindeling, onder het beleidsdomein van hun
-# kernobject: daarboven staat in de Procesindeling naar kernobject niets (besluit 2026-10-08).
-DOELGROEP_TYPEN = ("actor", "rol", "bedrijfssamenwerking", "kanaal")
+# De paginatypen die altijd in een indeling vallen (kennismodel). Een levensloopproces en een bedrijfsinteractie vallen
+# ook in de Beleidsdomeinindeling, onder het beleidsdomein van hun kernobject: daarboven staat in de Procesindeling naar
+# kernobject niets.
+BELEIDSDOMEIN_TYPEN = km.paginatypen_in("Beleidsdomeinindeling")
+DOMEIN_TYPEN = km.paginatypen_in("Functie-indeling naar domein")
+DOELGROEP_TYPEN = km.paginatypen_in("Doelgroepindeling")
+GRONDSLAGINDELING = "Grondslagindeling"
 
 
 def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict,
@@ -578,18 +581,18 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
                 uit.overgeslagen.append(f"{data['begrip']}: domein '{data['domein']}' bestaat niet als groepering in GEMMA")
             else:
                 aggregatie(groep["id"], element, "Functie-indeling naar domein", bid, groep)
-        naam = bepaal_type.regelgeving(data) if paginatype == "beleidskader" else None
+        naam = km.grondslaggroep(data) if paginatype == "beleidskader" else None
         if naam:
             if naam not in nieuwe_regelgeving:
                 gid = vast_id("groepering", "regelgeving", naam)
                 nieuwe_regelgeving[naam] = gid
                 el = ET.Element("element", {XSI: "archimate:Grouping", "name": naam, "id": gid})
-                brontype = bepaal_type.REGELGEVER_BRONTYPE[data["regelgever"]]
-                ET.SubElement(el, "documentation").text = bepaal_type.BRONTYPE_OMSCHRIJVING[brontype]
+                brontype = km.REGELGEVER_BRONTYPE[data["regelgever"]]
+                ET.SubElement(el, "documentation").text = km.BRONTYPE_OMSCHRIJVING[brontype]
                 _eigenschappen(el, [(eig("id"), f"regelgeving:{naam}"), (eig("brontype"), brontype), *b.gemeen("nieuw")])
-                b.eigen_map("other", ["Regelgevingindeling"]).objecten.append(el)
-                uit.groeperingen_nieuw.append(f"{naam} (Regelgevingindeling)")
-            aggregatie(nieuwe_regelgeving[naam], element, "Regelgevingindeling", bid)
+                b.eigen_map("other", [GRONDSLAGINDELING]).objecten.append(el)
+                uit.groeperingen_nieuw.append(f"{naam} ({GRONDSLAGINDELING})")
+            aggregatie(nieuwe_regelgeving[naam], element, GRONDSLAGINDELING, bid)
         if paginatype in DOELGROEP_TYPEN and data.get("doelgroep"):
             rol = _vind_doelgroep(gemma_data, data["doelgroep"])
             if rol is None:
@@ -894,7 +897,7 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
     if uit.groeperingen_nieuw:
         regels += ["## Nieuwe groeperingen", "",
                    "Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder het GEMMA-taakveld als "
-                   "dat bestaat) en de groepen van de Regelgevingindeling.", ""]
+                   "dat bestaat) en de groepen van de Grondslagindeling.", ""]
         regels += [f"- {x}" for x in sorted(uit.groeperingen_nieuw)] + [""]
     if uit.nieuw:
         regels += ["## Nieuw in GEMMA", ""] + [f"- {e['naam']}" for e in sorted(uit.nieuw, key=lambda e: e["naam"].lower())] + [""]

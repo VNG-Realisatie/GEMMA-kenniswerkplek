@@ -16,7 +16,7 @@ metadata:
 
 Volg `wiki-ingest`. Voor deze wiki is `--brontype` verplicht:
 
-Kies het brontype volgens de regel Bronvoorrang in `AGENTS.md`; daar staan de volgorde en de betekenis. Voorbeelden:
+Kies het brontype volgens de regel Bronvoorrang in `kennismodel/modelleerregels.md`; daar staan de volgorde en de betekenis. Voorbeelden:
 
 | Brontype | Voorbeelden |
 |---|---|

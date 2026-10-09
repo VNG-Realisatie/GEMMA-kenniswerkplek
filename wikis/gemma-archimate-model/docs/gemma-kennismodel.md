@@ -11,7 +11,7 @@ bronnen:
 
 Bron: [Over GEMMA (kennismodel en modelleerafspraken)](../bronanalyses/algemeen/overig/2026-vng-over-gemma.md)
 
-Welke elementtypen en kenmerken heeft het model, en waarom wijken ze af van of volgen ze het GEMMA-kennismodel? Deze analyse vergelijkt de elementtypen van deze wiki, hun kenmerken en de beslistabel met het GEMMA-kennismodel uit Over GEMMA. Ze legt de besluiten van de redacteur vast. Regelnummers verwijzen naar de tekst van Over GEMMA; wat de bron zegt, staat in haar bronanalyse. De besloten opzet van 2026-10-01 is doorgevoerd; de geldende beslistabel staat in [Kenmerken en beslistabel](beslistabel.md).
+Welke elementtypen en kenmerken heeft het model, en waarom wijken ze af van of volgen ze het GEMMA-kennismodel? Deze analyse vergelijkt de elementtypen van deze wiki, hun kenmerken en de beslistabel met het GEMMA-kennismodel uit Over GEMMA. Ze legt de besluiten van de redacteur vast. Regelnummers verwijzen naar de tekst van Over GEMMA; wat de bron zegt, staat in haar bronanalyse. De besloten opzet van 2026-10-01 is doorgevoerd; de geldende beslistabel staat in [Kenmerken en beslistabel](../kennismodel/kenmerken-en-beslistabel.md).
 
 ## Het GEMMA-kennismodel
 

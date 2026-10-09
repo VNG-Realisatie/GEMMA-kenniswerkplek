@@ -2,7 +2,7 @@
 
 ## Bronvoorrang
 
-Voor welke begrippen er zijn en wat ze formeel betekenen (`definitie_formeel`): de regel Bronvoorrang (`AGENTS.md`).
+Voor welke begrippen er zijn en wat ze formeel betekenen (`definitie_formeel`): de regel Bronvoorrang (`kennismodel/modelleerregels.md`).
 
 UITZONDERING: de **naam** en de herkenbare **`definitie`** komen uit de gangbare taal: beleids- en praktijkbronnen, en wat domeinexperts zeggen. De wetsterm gaat naar `synoniemen` (context "wet"); zie `naamgeving.md`. Voorbeeld: het element heet *Urn* (VNG, praktijk), met *asbus* als synoniem (Wet op de lijkbezorging).
 

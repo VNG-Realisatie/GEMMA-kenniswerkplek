@@ -351,19 +351,19 @@ def test_beleidskader_hangt_naar_regelgever_in_landelijke_of_gemeentelijke_regel
         begrippen[bid] = data
     pad = tmp_path / "gemma-indeling.archimate"
     pad.write_text(GEMMA_INDELING, encoding="utf-8")
-    wiki_yaml = {"page_types": {"beleidskader": {"dir": "motivatie/beleidskaders", "submappen": ["regelgeving"]}}}
+    wiki_yaml = {"page_types": {"beleidskader": {"dir": "motivatie/beleidskaders", "submappen": ["grondslag"]}}}
     uit = ae.bouw(gemma.parse(pad), begrippen, "2026-vng-gemma", "2026-10-04T12:00:00", True, "", wiki_yaml)
     root = ET.fromstring(uit.xml)
     landelijk = _el(root, ae.vast_id("groepering", "regelgeving", "Rijksregelgeving"))
     gemeentelijk = _el(root, ae.vast_id("groepering", "regelgeving", "Gemeentelijke regelgeving"))
-    assert [n for n, _ in _pad(root, landelijk.get("id"))] == ["Other", "wiki-gemma-model", "Regelgevingindeling"]
+    assert [n for n, _ in _pad(root, landelijk.get("id"))] == ["Other", "wiki-gemma-model", "Grondslagindeling"]
     assert landelijk.find("documentation").text.startswith("Regelgeving van het Rijk")
     assert _props(landelijk)["wiki-gemma-model brontype"] == "rijksregelgeving"
     (agg,) = _relaties_van(root, "archimate:AggregationRelationship", landelijk.get("id"), ae.vast_id("element", "wlb"))
-    assert _props(agg)["wiki-gemma-model indeling"] == "Regelgevingindeling"
+    assert _props(agg)["wiki-gemma-model indeling"] == "Grondslagindeling"
     assert _relaties_van(root, "archimate:AggregationRelationship", gemeentelijk.get("id"), ae.vast_id("element", "model-bv"))
     assert not _relaties_van(root, "archimate:AggregationRelationship", landelijk.get("id"), ae.vast_id("element", "model-bv"))
-    assert "Gemeentelijke regelgeving (Regelgevingindeling)" in uit.groeperingen_nieuw
+    assert "Gemeentelijke regelgeving (Grondslagindeling)" in uit.groeperingen_nieuw
     # de map van het beleidskader volgt dezelfde indeling
     assert [n for n, _ in _pad(root, ae.vast_id("element", "wlb"))] == [
         "Motivation", "wiki-gemma-model", "Beleidskaders", "Rijksregelgeving"]
@@ -372,7 +372,7 @@ def test_beleidskader_hangt_naar_regelgever_in_landelijke_of_gemeentelijke_regel
     assert _relaties_van(root, "archimate:AggregationRelationship",
                          ae.vast_id("groepering", "regelgeving", "Europese regelgeving"), ae.vast_id("element", "avg"))
     assert [n for n, _ in _pad(root, ae.vast_id("element", "hup"))][-1] == "Richtlijn"
-    # zonder beleidskaders geen groepen van de Regelgevingindeling
+    # zonder beleidskaders geen groepen van de Grondslagindeling
     _, leeg = _export_indeling(tmp_path)
     assert not any("regelgeving" in (e.get("name") or "").lower() for e in leeg.iter("element"))
 
