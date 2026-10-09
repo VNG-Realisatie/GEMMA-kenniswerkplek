@@ -37,7 +37,7 @@ Geen relatietabel: de bron beschrijft typen van elementen en relaties, geen begr
 
 ## Relevantie voor de architectuur
 
-De procesniveaus van de wiki (levensloopproces, bedrijfsproces, deelproces) en de ketensamenwerking als bedrijfsinteractie volgen deze pagina. De afweging staat in [Processen: niveaus, klant-tot-klant en ketensamenwerking](../../../docs/proceshierarchie.md).
+De procesniveaus van de wiki (levensloopproces, bedrijfsproces, deelproces) en de ketensamenwerking als bedrijfsinteractie volgen deze pagina. De afweging staat in ARCHITECTURE.md, sectie [4.3 Processen en ketens](../../../ARCHITECTURE.md#43-processen-en-ketens).
 
 ## Citaten
 

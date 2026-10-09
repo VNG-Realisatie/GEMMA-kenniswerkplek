@@ -52,7 +52,7 @@ Geen relatietabel: de bron beschrijft typen van elementen en relaties, geen begr
 
 ## Relevantie voor de architectuur
 
-Levert de namen en definities van de elementtypen (skill gemma-archimate-model-criteria) en het kennismodel dat de export naar Archi meeneemt (`wiki.yaml` `kennismodel`). De vergelijking met de wiki staat in [Elementtypen, kenmerken en het GEMMA-kennismodel](../../../docs/gemma-kennismodel.md).
+Levert de namen en definities van de elementtypen (skill gemma-archimate-model-criteria) en het kennismodel dat de export naar Archi meeneemt (`wiki.yaml` `kennismodel`). De vergelijking met de wiki staat in ARCHITECTURE.md, sectie [4.1 Elementtypen en kenmerken](../../../ARCHITECTURE.md#41-elementtypen-en-kenmerken), en in de [modelleerafspraken per elementtype](../../../kennismodel/README.md).
 
 ## Citaten
 
