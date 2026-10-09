@@ -69,6 +69,7 @@ llm-wikis/                    open deze map in Obsidian
 ├── AGENTS.md                 huisregels voor de hele repository
 ├── ARCHITECTURE.md           dit kompas
 ├── docs/                     kluswijzer en onderbouwing
+│   └── plannen/              plannen voor de hele repository: <datum>-<titel>.md
 ├── sources/
 │   ├── raw/                  originelen + Markdown-versie   (nooit wijzigen)
 │   └── index/                één intakepagina per bron
@@ -94,7 +95,10 @@ llm-wikis/                    open deze map in Obsidian
     │   ├── voortgang.md      overzicht van open werk        (automatisch)
     │   └── voorstellen/
     └── gemma-archimate-model/  type curation met beoordelingen en gegenereerde pagina's (eigen ARCHITECTURE.md)
+        └── plannen/            plannen voor deze wiki: <datum>-<titel>.md
 ```
+
+Een plan voor een grotere wijziging staat in de repository, op de meest specifieke plek waar het geldt: `docs/plannen/` voor de hele repository, `wikis/<key>/plannen/` voor één wiki. Nooit alleen in de map van een harness (zoals `~/.claude/plans/`): die staat niet in Git en is niet zichtbaar op een andere werkplek. Een plan dat klaar is, blijft als geschiedenis staan; wat geldt, staat daarna in de regels en de ARCHITECTURE.md.
 
 De mapnamen van een curatie-wiki (`onderwerpen/`, `bronnen/`, `kandidaten/`) zijn standaardwaarden; een wiki kan eigen namen kiezen in `wiki.yaml` (`page_types.<type>.dir`).
 
