@@ -55,12 +55,12 @@ def _log(begrippen):
 def _begrippen():
     return {
         "beschikking": _begrip("Beschikking", "business-object", gemma_id="id-beschikking",
-                               taakveld="Bestuur", beleidsdomein="Besluitvorming"),
+                               taakveld="Bestuur", beleidsdomein="Besluitvorming", relaties=[
+                                   {"soort": "associatie (gericht)", "naar": "urn", "grondslag": "bron", "bronnen": ["2026-bron"]}]),
         "behandelen-aanvraag": _begrip("Behandelen aanvraag", "business-process", gemma_id="id-proces", relaties=[
             {"soort": "toegang (raadplegen)", "naar": "beschikking", "naam": "leest", "grondslag": "bron", "bronnen": ["2026-bron"]},
             {"soort": "toegang (registreren)", "naar": "beschikking", "grondslag": "bron", "bronnen": ["2026-bron"]},
-            {"soort": "triggering", "naar": "graf", "grondslag": "bron", "bronnen": ["2026-bron"]},
-            {"soort": "associatie (gericht)", "naar": "urn", "grondslag": "bron", "bronnen": ["2026-bron"]}]),
+            {"soort": "triggering", "naar": "graf", "grondslag": "bron", "bronnen": ["2026-bron"]}]),
         "urn": _begrip("Urn", "business-object", taakveld="Lijkbezorging", beleidsdomein="Begraven",
                        synoniemen=[{"naam": "Asbus", "context": "wet"}]),
         "graf": _begrip("Graf", "business-object", status="review"),
@@ -139,7 +139,7 @@ def test_relaties_hergebruiken_gemma_id_en_hebben_expliciet_toegangstype(tmp_pat
     assert _pad(root, "r-lezen") == [("Relations", "f-rel"), ("GGM", "f-rel-ggm")]
     schrijven = _el(root, ae.vast_id("relatie", "behandelen-aanvraag", "toegang (registreren)", "beschikking", ""))
     assert schrijven.get("accessType") == "0"
-    gericht = _el(root, ae.vast_id("relatie", "behandelen-aanvraag", "associatie (gericht)", "urn", ""))
+    gericht = _el(root, ae.vast_id("relatie", "beschikking", "associatie (gericht)", "urn", ""))
     assert gericht.get("directed") == "true"
     # de twee bedrijfsobjecten met een beleidsdomein krijgen elk een aggregatie vanuit een nieuwe groepering
     assert uit.relaties_gekoppeld == 1 and uit.relaties_nieuw == 4
@@ -601,7 +601,7 @@ def test_kennismodel_gaat_mee_met_id_van_over_gemma_en_hangt_aan_een_groep(tmp_p
     def doelen(bron):
         return {e.get("target") for e in root.iter("element") if e.get("source") == bron}
     namen = {e.get("name"): e.get("id") for e in root.iter("element") if e.get(ae.XSI) == "archimate:Grouping"}
-    assert doelen(groep.get("id")) == {namen["Bedrijfsarchitectuur"], namen["Motivatie"]}
+    assert doelen(groep.get("id")) == {namen["Bedrijfsarchitectuur"], namen["Motivatie"], namen["Kennismodel-wiki"]}
     assert doelen(namen["Bedrijfsarchitectuur"]) == {"id-km-bo", "id-km-rol"}
     assert doelen(namen["Motivatie"]) == {"id-km-doel"}
     assert "Applicatiearchitectuur" not in namen
@@ -609,26 +609,68 @@ def test_kennismodel_gaat_mee_met_id_van_over_gemma_en_hangt_aan_een_groep(tmp_p
     assert len(ids) == len(set(ids))
 
 
-def test_wat_de_wiki_gebruikt_en_het_kennismodel_mist_komt_in_de_groep_kennismodel_wiki(tmp_path):
+def _kennismodel_export(tmp_path, begrippen=None):
     pad = tmp_path / "over-gemma.xml"
-    pad.write_text(OVER_GEMMA.replace('<element identifier="id-buiten" xsi:type="BusinessObject">',
-                                      '<element identifier="id-km-bo2" xsi:type="BusinessObject"><name xml:lang="nl">Tweede</name></element>'
-                                      '<element identifier="id-afspraak" xsi:type="Contract"><name xml:lang="nl">Afspraak</name></element>'
-                                      '<element identifier="id-buiten" xsi:type="BusinessObject">'), encoding="utf-8")
-    km = ae.laad_kennismodel(pad, ["GEMMA kennismodel"])
-    km["elementen"].pop("id-km-bo2", None)
-    begrippen = {"a": _begrip("A", "business-object"), "c": _begrip("Afspraak A", "contract")}
-    begrippen["a"]["relaties"] = [{"soort": "associatie", "naar": "c", "grondslag": "bron", "bronnen": ["2026-bron"]}]
+    pad.write_text(OVER_GEMMA, encoding="utf-8")
+    kennis = ae.laad_kennismodel(pad, ["GEMMA kennismodel"])
+    begrippen = begrippen or _begrippen()
     uit = ae.bouw(_gemma(tmp_path), begrippen, "2026-vng-gemma", "2026-10-02T12:00:00", False, _log(begrippen),
-                  WIKI_YAML, kennismodel=km)
+                  WIKI_YAML, kennismodel=kennis)
     assert not uit.fouten
-    root = ET.fromstring(uit.xml)
-    assert _el(root, "id-afspraak").get("name") == "Afspraak"
+    return uit, ET.fromstring(uit.xml)
+
+
+def test_kennismodel_wiki_heeft_een_concept_per_elementtype_met_het_id_uit_over_gemma(tmp_path):
+    import kennismodel as km
+
+    uit, root = _kennismodel_export(tmp_path)
     groep = next(e for e in root.iter("element") if e.get("name") == "Kennismodel-wiki")
-    assert {e.get("target") for e in root.iter("element") if e.get("source") == groep.get("id")} == {"id-afspraak"}
-    rel = next(e for e in root.iter("element") if e.get(ae.XSI) == "archimate:AssociationRelationship"
-               and e.get("source") == "id-km-bo" and e.get("target") == "id-afspraak")
-    assert _props(rel)["wiki-gemma-model in Over GEMMA"] == "nee"
-    assert _pad(root, rel.get("id"))[-1][0] == "Kennismodel-wiki"
+    doelen = {e.get("target") for e in root.iter("element") if e.get("source") == groep.get("id")}
+    assert uit.kennismodel_wiki_aantal[0] == len(km.ELEMENTTYPEN)
+    assert {"id-km-bo", "id-km-rol"} <= doelen  # het concept uit Over GEMMA behoudt zijn id
+    assert _props(_el(root, "id-km-bo"))["wiki-gemma-model in Over GEMMA"] == "ja"
+    interactie = next(e for e in root.iter("element") if e.get("name") == "Bedrijfsinteractie")
+    assert interactie.get("id") in doelen and _props(interactie)["wiki-gemma-model in Over GEMMA"] == "nee"
+    assert any("Bedrijfsinteractie" in x for x in uit.kennismodel_wiki)
     ids = [e.get("id") for e in root.iter("element")]
     assert len(ids) == len(set(ids))
+
+
+def test_kennismodel_wiki_relaties_hebben_kernrelatie_en_in_over_gemma(tmp_path):
+    uit, root = _kennismodel_export(tmp_path)
+    # rol → toegang → bedrijfsobject staat in Over GEMMA (id-km-r1, Read): dat id blijft, zonder kernrelatie
+    eigenschappen = _props(_el(root, "id-km-r1"))
+    assert eigenschappen["wiki-gemma-model kernrelatie"] == "nee" and eigenschappen["wiki-gemma-model in Over GEMMA"] == "ja"
+    # rol → toewijzing → proces is de kernrelatie van het proces; de fixture heeft haar niet, dus een nieuwe relatie
+    toewijzing = next(e for e in root.iter("element") if e.get(ae.XSI) == "archimate:AssignmentRelationship"
+                      and e.get("source") == "id-km-rol")
+    assert _props(toewijzing)["wiki-gemma-model kernrelatie"] == "ja"
+    # proces → stroom → proces ontbreekt in Over GEMMA: een nieuwe relatie in de groep Kennismodel-wiki, geen kernrelatie
+    stroom = next(e for e in root.iter("element") if e.get(ae.XSI) == "archimate:FlowRelationship")
+    assert _props(stroom)["wiki-gemma-model kernrelatie"] == "nee" and _props(stroom)["wiki-gemma-model in Over GEMMA"] == "nee"
+    assert _pad(root, stroom.get("id"))[-1][0] == "Kennismodel-wiki"
+    assert any("relatie stroom Bedrijfsproces → Bedrijfsproces" in x for x in uit.kennismodel_wiki)
+
+
+def test_kennismodel_wiki_heeft_een_groepering_per_indeling(tmp_path):
+    import kennismodel as km
+
+    uit, root = _kennismodel_export(tmp_path)
+    namen = {e.get("name"): e.get("id") for e in root.iter("element") if e.get(ae.XSI) == "archimate:Grouping"}
+    assert uit.kennismodel_wiki_aantal[2] == len(km.INDELINGEN)
+    grondslag = namen["Grondslagindeling"]
+    doelen = {e.get("target") for e in root.iter("element") if e.get("source") == grondslag}
+    beleidskader = next(e for e in root.iter("element") if e.get("name") == "Beleidskader")
+    assert doelen == {beleidskader.get("id")}
+    assert _props(_el(root, grondslag))["wiki-gemma-model in Over GEMMA"] == "nee"
+
+
+def test_relatie_buiten_het_kennismodel_gaat_niet_mee_en_komt_in_het_rapport(tmp_path):
+    begrippen = _begrippen()
+    begrippen["behandelen-aanvraag"]["relaties"].append(
+        {"soort": "associatie (gericht)", "naar": "urn", "grondslag": "bron", "bronnen": ["2026-bron"]})  # proces → object
+    uit, root = _kennismodel_export(tmp_path, begrippen)
+    assert any("Behandelen aanvraag → Urn" in x for x in uit.weggelaten)
+    assert not [e for e in root.iter("element") if e.get(ae.XSI) == "archimate:AssociationRelationship"
+                and e.get("source") == ae.vast_id("element", "behandelen-aanvraag")]
+    assert "## Weggelaten relaties" in ae.rapport_md(uit, "t", "b", False)

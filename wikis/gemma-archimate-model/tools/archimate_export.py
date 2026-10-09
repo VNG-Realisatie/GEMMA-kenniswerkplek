@@ -32,6 +32,10 @@ Het kennismodel (wiki.yaml `kennismodel`): de elementen en relaties van de views
 wiki-map van hun laag. Ze hangen met een aggregatie aan één groep `Kennismodel` (map `Other / wiki-gemma-model /
 Kennismodel`); onder die groep hangen de groepen Bedrijfsarchitectuur, Applicatiearchitectuur, Technische architectuur en
 Motivatie, die elk de elementen van hun laag aggregeren (een element van een andere laag hangt aan Kennismodel zelf).
+Daarnaast het volledige kennismodel van de wiki (tools/kennismodel.py) in de groep `Kennismodel-wiki`: een concept per
+elementtype (met het id uit Over GEMMA waar dat bestaat), een relatie per toegestaan relatietype en een groepering per
+indeling, met de eigenschappen `kernrelatie` en `in Over GEMMA`. De relaties van de elementen worden gefilterd op dat
+kennismodel; het rapport noemt wat wegvalt.
 
 Alleen begrippen met status `goedgekeurd` (akkoord van de redacteur); `--concept` neemt ook kandidaat en review mee,
 voor het bekijken, en schrijft naar het kladblok. Het GEMMA-model moet als Archi-bestand zijn ingelezen
@@ -157,7 +161,10 @@ class Uitkomst:
     indelingen: int = 0
     kennismodel_elementen: int = 0
     kennismodel_relaties: int = 0
-    kennismodel_wiki: list[str] = field(default_factory=list)
+    kennismodel_wiki: list[str] = field(default_factory=list)  # concepten en relaties van de wiki die Over GEMMA niet kent
+    kennismodel_wiki_aantal: tuple = (0, 0, 0)  # concepten, relaties, indelingen
+    weggelaten: list[str] = field(default_factory=list)  # relaties van elementen buiten het kennismodel
+    niet_in_over_gemma: dict = field(default_factory=dict)  # (bron, relatie, doel) → aantal in de elementen
     zonder_plaats: list[str] = field(default_factory=list)
 
 
@@ -425,6 +432,17 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             if r["naar"] not in ids:
                 uit.overgeslagen.append(f"{data['begrip']} → {r['naar']} ({r['soort']}): het doel gaat niet mee in deze export")
                 continue
+            sleutels_ = (km.sleutel_van(data["afgeleid"]["uitkomst"]["archimate_type"]),
+                         km.sleutel_van(gekozen[r["naar"]]["afgeleid"]["uitkomst"]["archimate_type"]))
+            toegestaan_ = km.toegestaan(sleutels_[0], r["soort"], sleutels_[1])
+            if not toegestaan_:
+                weg = km.weggefilterd(*sleutels_[:1], r["soort"], sleutels_[1])
+                uit.weggelaten.append(f"{data['begrip']} → {gekozen[r['naar']]['begrip']} ({r['soort']}): "
+                                      + (weg.reden if weg else "staat nergens in het kennismodel"))
+                continue
+            if not toegestaan_.over_gemma:
+                sl = (sleutels_[0], km.kale_soort(r["soort"]), sleutels_[1])
+                uit.niet_in_over_gemma[sl] = uit.niet_in_over_gemma.get(sl, 0) + 1
             rtype, toevoeging = relatie_archimate(r["soort"])
             bron_id, doel_id = ids[bid], ids[r["naar"]]
             bestaand = sorted((x for x in gemma_relaties.get((rtype, bron_id, doel_id), [])
@@ -664,6 +682,8 @@ def _kennismodel(b: Bouwer, uit: Uitkomst, kennismodel: dict) -> None:
         return [(k, v) for k, v in e["eigenschappen"].items() if not k.startswith(PREFIX + " ")]
 
     laag_van: dict[str, str] = {}
+    el_van: dict[str, ET.Element] = {}
+    rel_van: dict[str, ET.Element] = {}
     for eid, e in sorted(kennismodel["elementen"].items()):
         el = ET.Element("element", {XSI: xsi_type(e["type"]), "name": e["naam"], "id": eid})
         if e["documentatie"]:
@@ -671,6 +691,7 @@ def _kennismodel(b: Bouwer, uit: Uitkomst, kennismodel: dict) -> None:
         _eigenschappen(el, [*eigen(e), (eig("id"), f"kennismodel:{eid}"), herkomst, *exportdatum])
         laag = KENNISMODEL_LAGEN.get(e["map"].split(" / ")[0], bovenste_map(e["type"]))
         laag_van[eid] = laag
+        el_van[eid] = el
         b.eigen_map(laag, [KENNISMODEL_GROEP]).objecten.append(el)
         uit.kennismodel_elementen += 1
     for rid, r in sorted(kennismodel["relaties"].items()):
@@ -686,6 +707,7 @@ def _kennismodel(b: Bouwer, uit: Uitkomst, kennismodel: dict) -> None:
         if r["documentatie"]:
             ET.SubElement(el, "documentation").text = r["documentatie"]
         _eigenschappen(el, [*eigen(r), (eig("id"), f"kennismodel:{rid}"), herkomst, *exportdatum])
+        rel_van[rid] = el
         b.eigen_map("relations", [KENNISMODEL_GROEP]).objecten.append(el)
         uit.kennismodel_relaties += 1
 
@@ -713,93 +735,105 @@ def _kennismodel(b: Bouwer, uit: Uitkomst, kennismodel: dict) -> None:
             aggregeer(gid, deel[laag])
     for eid in sorted(kennismodel["elementen"]):
         aggregeer(deel.get(laag_van[eid], gid), eid)
-    _kennismodel_wiki(b, uit, kennismodel, wiki_gid, gid, groep, aggregeer, eigen, [herkomst, *exportdatum])
+    _kennismodel_wiki(b, uit, kennismodel, wiki_gid, gid, groep, aggregeer, eigen, [herkomst, *exportdatum],
+                      el_van, rel_van)
+
+
+def _concept(kennismodel: dict, e: km.Elementtype) -> tuple[str, dict, bool, bool]:
+    """Het concept van een elementtype: (id, concept, staat in een view, staat in Over GEMMA). Het concept met de GEMMA-naam
+    van het type, anders de voorkeur (CONCEPT_VOORKEUR), anders het enige van dat ArchiMate-type; zonder: een eigen concept
+    van de wiki met een vast id."""
+    for bron, in_view in ((kennismodel["elementen"], True), (kennismodel["model_elementen"], False)):
+        kandidaten = sorted(((i, c) for i, c in bron.items() if c["type"] == e.archimate_type), key=lambda x: x[1]["naam"])
+        keuze = ([k for k in kandidaten if k[1]["naam"] == e.naam]
+                 or [k for k in kandidaten if k[1]["naam"] == CONCEPT_VOORKEUR.get(e.archimate_type)]
+                 or (kandidaten if len(kandidaten) == 1 else []))
+        if keuze:
+            return keuze[0][0], keuze[0][1], in_view, True
+    naam, documentatie = WIKI_CONCEPT.get(e.archimate_type, (e.naam, e.definitie))
+    return (vast_id("kennismodel-wiki", e.archimate_type, e.sleutel),
+            {"naam": naam, "documentatie": documentatie, "map": "", "eigenschappen": {}, "type": e.archimate_type},
+            False, False)
 
 
 def _kennismodel_wiki(b: Bouwer, uit: Uitkomst, kennismodel: dict, wiki_gid: str, gid: str, groep, aggregeer, eigen,
-                      gemeen: list[tuple[str, str]]) -> None:
-    """Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft, in de groep Kennismodel-wiki: een elementtype
-    zonder concept (het concept uit Over GEMMA, als dat er één heeft) en een relatie van een type tussen twee typen die het
-    kennismodel niet kent (een relatie tussen de concepten, per toegangstype één)."""
-    typen: dict[str, str] = {}
-    relaties = []
-    for m in b.wortel.values():
-        for o in _alle_objecten(m):
-            if any(p.get("key") == eig("herkomst") and p.get("value") == "kennismodel" for p in o.findall("property")):
-                continue
-            if o.get("source"):
-                relaties.append(o)
-            else:
-                typen[o.get("id")] = o.get(XSI).split(":")[1]
-    soort = lambda x: re.sub(r"(?<!^)(?=[A-Z])", "-", x).lower()  # noqa: E731
-    typen = {i: soort(t) for i, t in typen.items()}
-    concept: dict[str, str] = {}  # elementtype → id van het concept in het kennismodel
-    for t in sorted(set(typen.values())):
-        kandidaten = sorted((e for e in kennismodel["elementen"].items() if e[1]["type"] == t), key=lambda x: x[1]["naam"])
-        voorkeur = [e for e in kandidaten if e[1]["naam"] == CONCEPT_VOORKEUR.get(t)]
-        if len(kandidaten) == 1 or voorkeur:
-            concept[t] = (voorkeur or kandidaten)[0][0]
-    nieuw: dict[str, str] = {}
-    nieuwe_namen: dict[str, str] = {}
-    for t in sorted(set(typen.values()) - set(concept)):
-        kandidaten = [(i, e) for i, e in kennismodel["model_elementen"].items() if e["type"] == t]
-        if not kandidaten and t in WIKI_CONCEPT:
-            # Over GEMMA kent het type niet (business-interaction): een eigen concept van de wiki
-            naam, documentatie = WIKI_CONCEPT[t]
-            kandidaten = [(vast_id("kennismodel-wiki", t), {"naam": naam, "documentatie": documentatie, "map": "",
-                                                            "eigenschappen": {}})]
-        if len(kandidaten) != 1:
-            uit.fouten.append(f"kennismodel: het type {t} heeft geen concept in het kennismodel en Over GEMMA heeft er "
-                              f"{len(kandidaten)}; kies er één in CONCEPT_VOORKEUR")
-            continue
-        i, e = kandidaten[0]
-        el = ET.Element("element", {XSI: xsi_type(t), "name": e["naam"], "id": i})
-        if e["documentatie"]:
-            ET.SubElement(el, "documentation").text = e["documentatie"]
-        _eigenschappen(el, [*eigen(e), (eig("id"), f"kennismodel:{i}"), (eig("herkomst"), "kennismodel-wiki"), *gemeen[1:]])
-        laag = KENNISMODEL_LAGEN.get(e["map"].split(" / ")[0], bovenste_map(t))
-        b.eigen_map(laag, [KENNISMODEL_GROEP]).objecten.append(el)
-        concept[t] = nieuw[t] = i
-        nieuwe_namen[i] = e["naam"]
-        uit.kennismodel_wiki.append(f"element {e['naam']} ({t})")
-    bekend = {(r["type"], kennismodel["elementen"][r["bron"]]["type"], kennismodel["elementen"][r["doel"]]["type"])
-              for r in kennismodel["relaties"].values()}
-    groepen: dict[tuple, list] = {}
-    for r in relaties:
-        rtype = soort(r.get(XSI).split(":")[1].replace("Relationship", "")) + "-relationship"
-        bron, doel = typen.get(r.get("source")), typen.get(r.get("target"))
-        if bron is None or doel is None or (rtype, bron, doel) in bekend or bron not in concept or doel not in concept:
-            continue
-        toegang = r.get("accessType") if rtype == "access-relationship" else None
-        groepen.setdefault((rtype, bron, doel, toegang), []).append(r)
-    namen = {i: e["naam"] for i, e in kennismodel["model_elementen"].items()} | nieuwe_namen
-    if not groepen and not nieuw:
-        return
-    groep(wiki_gid, WIKI_GROEP, "Wat de inhoud van de wiki gebruikt en het GEMMA-kennismodel (nog) niet heeft: elementtypen "
-                                "en relaties tussen de concepten. Zie de map Kennismodel-wiki voor de relaties.")
+                      gemeen: list[tuple[str, str]], el_van: dict, rel_van: dict) -> None:
+    """Het kennismodel van de wiki (tools/kennismodel.py), in de groep Kennismodel-wiki: een concept per elementtype, een
+    relatie per toegestaan relatietype (met de eigenschappen kernrelatie en in Over GEMMA) en een groepering per indeling.
+    Een concept of relatie dat Over GEMMA al heeft, behoudt zijn id en krijgt de eigenschappen erbij."""
+    concept: dict[str, str] = {}  # elementtype-sleutel → id van het concept
+    namen: dict[str, str] = {}
+    for e in km.ELEMENTTYPEN:
+        i, c, _, in_og = _concept(kennismodel, e)
+        concept[e.sleutel], namen[i] = i, c["naam"]
+        if i in el_van:
+            el = el_van[i]
+        else:
+            el = ET.Element("element", {XSI: xsi_type(e.archimate_type), "name": c["naam"], "id": i})
+            if c["documentatie"]:
+                ET.SubElement(el, "documentation").text = c["documentatie"]
+            _eigenschappen(el, [*eigen(c), (eig("id"), f"kennismodel:{i}"), (eig("herkomst"), "kennismodel-wiki"), *gemeen[1:]])
+            laag = KENNISMODEL_LAGEN.get(c["map"].split(" / ")[0], bovenste_map(e.archimate_type))
+            b.eigen_map(laag, [KENNISMODEL_GROEP]).objecten.append(el)
+            el_van[i] = el
+        _eigenschappen(el, [(eig("in Over GEMMA"), "ja" if in_og else "nee")])
+        if not in_og:
+            uit.kennismodel_wiki.append(f"elementtype {e.naam} ({e.archimate_type})")
     aggregeer(gid, wiki_gid)
-    for t, i in nieuw.items():
-        aggregeer(wiki_gid, i)
-    for (rtype, bron, doel, toegang), lijst in sorted(groepen.items(), key=lambda x: tuple(map(str, x[0]))):
-        rid = vast_id("relatie", "kennismodel-wiki", rtype, concept[bron], concept[doel], toegang or "")
-        attrs = {XSI: xsi_type(rtype), "id": rid, "source": concept[bron], "target": concept[doel]}
-        if toegang is not None:
-            attrs["accessType"] = toegang
-        if rtype == "association-relationship" and any(r.get("directed") == "true" for r in lijst):
-            attrs["directed"] = "true"
-        el = ET.Element("element", attrs)
-        in_og = (rtype, bron, doel) in kennismodel["model_relatietypen"]
+    gerealiseerd = 0
+    for r in km.RELATIES:
+        if r.bron not in concept or r.doel not in concept:
+            continue
+        rtype = relatie_archimate(r.soort)[0]
+        toegangen = sorted({ACCESS_TYPE[km.toegangstype(n)] for n in r.namen}) if rtype == "access-relationship" else [None]
+        for toegang in toegangen:
+            bestaand = next((i for i, x in rel_van.items()
+                             if (x.get(XSI), x.get("source"), x.get("target")) == (xsi_type(rtype), concept[r.bron], concept[r.doel])
+                             and (toegang is None or x.get("accessType", "0") == toegang)), None)
+            rid = bestaand or vast_id("relatie", "kennismodel-wiki", r.soort, concept[r.bron], concept[r.doel], toegang or "")
+            if bestaand:
+                el = rel_van[rid]
+            else:
+                attrs = {XSI: xsi_type(rtype), "id": rid, "source": concept[r.bron], "target": concept[r.doel]}
+                if toegang is not None:
+                    attrs["accessType"] = toegang
+                if "(gericht)" in r.soort:
+                    attrs["directed"] = "true"
+                el = ET.Element("element", attrs)
+                namen_tekst = f" Namen: {', '.join(r.namen)}." if r.namen else ""
+                ET.SubElement(el, "documentation").text = (
+                    f"{namen[concept[r.bron]]} → {namen[concept[r.doel]]}." + namen_tekst + (f" {r.toelichting}" if r.toelichting else ""))
+                _eigenschappen(el, [(eig("id"), f"kennismodel-wiki#{r.soort}:{r.bron}>{r.doel}:{toegang or ''}"),
+                                    (eig("herkomst"), "kennismodel-wiki"), *gemeen[1:]])
+                b.eigen_map("relations", [KENNISMODEL_GROEP, WIKI_GROEP]).objecten.append(el)
+                b.relatie_ids.add(rid)
+                rel_van[rid] = el
+            _eigenschappen(el, [(eig("kernrelatie"), "ja" if r.kern else "nee"),
+                                (eig("in Over GEMMA"), "ja" if r.over_gemma else "nee")])
+            gerealiseerd += 1
+            if not r.over_gemma:
+                uit.kennismodel_wiki.append(f"relatie {km.kale_soort(r.soort)} {namen[concept[r.bron]]} → "
+                                            f"{namen[concept[r.doel]]}{' (' + TOEGANG_NAAM[toegang] + ')' if toegang else ''}")
+    for i in km.INDELINGEN:
+        gid_i = vast_id("groepering", "kennismodel", "indeling", i.naam)
+        el = ET.Element("element", {XSI: "archimate:Grouping", "name": i.naam, "id": gid_i})
         ET.SubElement(el, "documentation").text = (
-            f"De wiki gebruikt deze relatie {len(lijst)}× tussen {namen[concept[bron]]} en {namen[concept[doel]]}; het "
-            "kennismodel heeft haar niet" + (" (Over GEMMA heeft haar wel in een andere view)." if in_og else "."))
-        _eigenschappen(el, [(eig("id"), f"kennismodel-wiki#{rtype}:{bron}>{doel}:{toegang or ''}"),
-                            (eig("herkomst"), "kennismodel-wiki"), *gemeen[1:], (eig("gebruikt in"), str(len(lijst))),
-                            (eig("in Over GEMMA"), "ja, andere view" if in_og else "nee")])
-        b.eigen_map("relations", [KENNISMODEL_GROEP, WIKI_GROEP]).objecten.append(el)
-        b.relatie_ids.add(rid)
-        uit.kennismodel_wiki.append(f"relatie {rtype.replace('-relationship', '')} {namen[concept[bron]]} → "
-                                    f"{namen[concept[doel]]}{' (' + TOEGANG_NAAM[toegang] + ')' if toegang else ''}, "
-                                    f"{len(lijst)}×{'' if in_og else ', niet in Over GEMMA'}")
+            f"Indeling van {i.wat}, naar {i.waarnaar}. Opbouw: {i.niveaus}. Groepering: {i.groepering}; {i.in_archi}.")
+        in_og = i.groepering == "GEMMA"
+        _eigenschappen(el, [(eig("id"), f"kennismodel-wiki#indeling:{i.naam}"), (eig("herkomst"), "kennismodel-wiki"),
+                            *gemeen[1:], (eig("in Over GEMMA"), "ja" if in_og else "nee")])
+        b.eigen_map("other", [KENNISMODEL_GROEP, WIKI_GROEP]).objecten.append(el)
+        aggregeer(wiki_gid, gid_i)
+        for sleutel in i.typen:
+            aggregeer(gid_i, concept[sleutel])
+        if not in_og:
+            uit.kennismodel_wiki.append(f"indeling {i.naam}")
+    groep(wiki_gid, WIKI_GROEP, "Het kennismodel van de wiki (tools/kennismodel.py): een concept per elementtype, een relatie "
+                                "per toegestaan relatietype en de indelingen. Eigenschap kernrelatie: de relatie die het "
+                                "kenmerk van het type waarmaakt. Eigenschap in Over GEMMA: ja of nee.")
+    for sleutel in concept:
+        aggregeer(wiki_gid, concept[sleutel])
+    uit.kennismodel_wiki_aantal = (len(concept), gerealiseerd, len(km.INDELINGEN))
 
 
 def _alle_objecten(m: Map):
@@ -881,10 +915,20 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
     if uit.kennismodel_elementen:
         regels += [f"Kennismodel: {uit.kennismodel_elementen} elementen en {uit.kennismodel_relaties} relaties uit Over GEMMA, "
                    f"samengebracht in de groep {KENNISMODEL_GROEP} met een groep per laag (map Other / {PREFIX} / {KENNISMODEL_GROEP}).", ""]
-    if uit.kennismodel_wiki:
-        regels += [f"## Kennismodel-wiki", "",
-                   "Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kennismodel-wiki.", ""]
+    if uit.kennismodel_wiki_aantal[0]:
+        c, r, i = uit.kennismodel_wiki_aantal
+        regels += ["## Kennismodel-wiki", "",
+                   f"Het kennismodel van de wiki: {c} elementtypen, {r} relaties en {i} indelingen, in de groep {WIKI_GROEP}. "
+                   "Wat Over GEMMA niet kent, is een kandidaat voor een terugmelding over het kennismodel:", ""]
         regels += [f"- {x}" for x in uit.kennismodel_wiki] + [""]
+    if uit.niet_in_over_gemma:
+        regels += ["## Relaties van elementen die Over GEMMA niet kent", "",
+                   "Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMMA.", ""]
+        regels += [f"- {b} {r} {d}: {n}×" for (b, r, d), n in sorted(uit.niet_in_over_gemma.items())] + [""]
+    if uit.weggelaten:
+        regels += ["## Weggelaten relaties", "",
+                   "Relaties uit de beoordelingen die niet in het kennismodel van de wiki staan; ze gaan niet mee.", ""]
+        regels += [f"- {x}" for x in uit.weggelaten] + [""]
     gewijzigd = [e for e in uit.gekoppeld if e["naam"] != e["gemma_naam"] or e["definitie_gewijzigd"]]
     if gewijzigd:
         regels += ["## Wijzigt een GEMMA-element", "", "| Begrip | Naam in GEMMA | Definitie gewijzigd |", "|---|---|---|"]
