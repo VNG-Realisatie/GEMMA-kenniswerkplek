@@ -446,6 +446,39 @@ def test_gemma_generiek_moet_in_het_gemma_model_staan(wiki):
     assert any("gemma_generiek 'id-weg' bestaat niet" in f for f in beslissen.beslissen(wiki).fouten)
 
 
+def test_kwaliteitsdoelen_van_een_beleidskader(wiki):
+    import gam_gemeen
+
+    def goal(naam, gemma_type="Kwaliteitsdoel"):
+        return {"id": f"id-{naam.lower()}", "naam": naam, "type": "goal", "documentatie": f"{naam} als doel.",
+                "map": "Motivation", "map_id": "f", "eigenschappen": {"GEMMA type": gemma_type}}
+
+    gam_gemeen.schrijf_json_gegenereerd(
+        wiki / "gemma" / "gemma_parsed.json",
+        {"elementen": {"id-rechtmatig": goal("Rechtmatig"), "id-ander": goal("Ander", "Doel")},
+         "mappen": {}, "model": {}, "relaties": {}}, "test")
+    doel = {"id": "id-rechtmatig", "sterkte": "++", "onderbouwing": "De wet regelt de taak.", "bronnen": [WET],
+            "vindplaats": "art. 1"}
+    _schrijf(wiki, "behandelen-aanvraag", _proces())
+    _schrijf(wiki, "beschikking", _bo())
+    _schrijf(wiki, "wet", _element("Wet op de lijkbezorging", BELEIDSKADER, regelgever="rijk", kwaliteitsdoelen=[doel],
+                                   relaties=[_rel("associatie (gericht)", "behandelen-aanvraag")]))
+    _beslissen(wiki)
+    wet = _lees(wiki, "wet")
+    assert wet["beslist"]["kwaliteitsdoelen"] == [{"gemma_id": "id-rechtmatig", "gemma_naam": "Rechtmatig",
+                                                   "gemma_definitie": "Rechtmatig als doel."}]
+    pagina = (wiki / wet["beslist"]["pad"]).read_text(encoding="utf-8")
+    assert "### Kwaliteitsdoelen" in pagina and "| *Rechtmatig* (GEMMA) | `++` | De wet regelt de taak." in pagina
+    # alleen een kwaliteitsdoel van GEMMA, één keer, en alleen bij een beleidskader
+    _schrijf(wiki, "wet", {**_lees(wiki, "wet"), "kwaliteitsdoelen": [{**doel, "id": "id-ander"}, doel, doel]})
+    fouten = beslissen.beslissen(wiki).fouten
+    assert any("'id-ander' is geen kwaliteitsdoel" in f for f in fouten)
+    assert any("Rechtmatig staat er twee keer" in f for f in fouten)
+    _schrijf(wiki, "wet", {**_lees(wiki, "wet"), "kwaliteitsdoelen": [doel]})
+    _schrijf(wiki, "beschikking", _bo(kwaliteitsdoelen=[doel]))
+    assert any("horen alleen bij een beleidskader" in f for f in beslissen.beslissen(wiki).fouten)
+
+
 def test_signalen_voor_de_indeling():
     import signalen
 

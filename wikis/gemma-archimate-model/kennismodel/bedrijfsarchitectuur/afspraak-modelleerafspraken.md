@@ -34,6 +34,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | in | toegang | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | een handeling: registreren (schrijven), bijwerken (lezen-schrijven), beëindigen (schrijven), raadplegen (lezen), verstrekken (lezen), bewaren (lezen-schrijven), overbrengen (lezen), vernietigen (schrijven) | *wordt bewerkt* | nee: uitbreiding op het GEMMA-kennismodel |  |
 | in | aggregatie | [Product](product-modelleerafspraken.md) | omvat | *omvat diensten en afspraken* | ja |  |
 | uit | associatie (gericht) | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel |  |
+| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling |
 
 ## Weggefilterd
 

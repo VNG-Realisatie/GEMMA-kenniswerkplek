@@ -26,6 +26,10 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 - **Applicatielaag** in de wiki opnemen, met de Applicatieservice-indeling naar domein. Daarbij de referentiecomponenten: in GEMMA hangt geen van de 256 applicatiecomponenten direct aan een bedrijfsfunctie, 76 alleen aan een groepering. Beoordeel de koppeling (aggregatie door een hogere bedrijfsfunctie, als ArchiMate dat toestaat, of via de applicatieservice die de functie bedient) en maak dan een GEMMA-terugmelding (besluit redacteur 2026-10-08).
 - **Archi-views** per indeling en elementtype in de export, na de eerste proefimport (herziening van het besluit van 2026-10-02: geen views).
 
+## Kennismodel
+
+- **Kwaliteitsdoelen per beleidskader beoordelen** (na fase 5 van het plan kennismodel, als eigen klus): het kennismodel, het veld `kwaliteitsdoelen`, de controle, de render en de export bestaan. Beoordeel per beleidskader aan welke kwaliteitsdoelen van GEMMA (`tools/gemma.py kwaliteitsdoelen`) het grondslag geeft en hoe sterk, met de bepalingen als onderbouwing; leg het voor en vraag AKKOORD.
+
 ## Export naar Archi
 
 - **Verzoek aan het GEMMA-team**: zet bij elke release naast `export/GEMMA release.xml` (AMEFF) ook `export/GEMMA release.archimate` in de GEMMA-Archi-repository (opslagformaat van Archi, met map-id's en profielen). Daarna `wiki.yaml` → `gemma.herkomst.pad` daarop zetten; na de overgang naar coArchi 2 op `model.archimate`. Tot dan neemt de redacteur een lokaal opgeslagen `.archimate` op (skill `gemma-archimate-model-gemma-release`).

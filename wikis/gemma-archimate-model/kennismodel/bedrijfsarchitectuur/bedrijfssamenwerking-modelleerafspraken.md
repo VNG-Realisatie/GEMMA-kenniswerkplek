@@ -35,6 +35,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | uit | toewijzing | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit* | nee: uitbreiding op het GEMMA-kennismodel |  |
 | uit | toewijzing | [Bedrijfsinteractie](bedrijfsinteractie-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit* | nee: uitbreiding op het GEMMA-kennismodel |  |
 | uit | toegang | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | een verantwoordelijkheid: houder (lezen-schrijven), bronhouder (schrijven), beheerder (lezen-schrijven), verstrekker (lezen), afnemer (lezen), toezichthouder (lezen), betrokkene (lezen), partij (lezen-schrijven) |  | nee: uitbreiding op het GEMMA-kennismodel | een verantwoordelijkheid, als bij een rol |
+| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Doelgroepindeling |
 
 ## Weggefilterd
 

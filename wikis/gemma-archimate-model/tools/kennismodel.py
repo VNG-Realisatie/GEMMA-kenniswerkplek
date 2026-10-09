@@ -33,7 +33,7 @@ MAP = "kennismodel"
 HANDMATIG = ("modelleerregels.md",)  # met de hand geschreven; render beheert ze niet
 
 LAGEN = {"bedrijfsarchitectuur": "Bedrijfsarchitectuur", "motivatie": "Motivatie",
-         "applicatiearchitectuur": "Applicatiearchitectuur"}
+         "applicatiearchitectuur": "Applicatiearchitectuur", "overig": "Overig"}
 
 # --- Eigenschappen ---
 
@@ -41,6 +41,12 @@ AFNEMERS = ("extern", "intern")
 DOMEINEN = ("Bestuur", "Fysieke leefomgeving", "Niet domeingebonden", "Openbare orde en veiligheid", "Ondersteuning",
             "Publieksdiensten", "Sociaal domein")  # GEMMA domeinen
 DOELGROEPEN = ("gemeente", "inwoners en ondernemers", "ketenpartners")
+DOELGROEP_OMSCHRIJVING = {  # de documentatie van de groepering van een doelgroep in de export
+    "gemeente": "De gemeente zelf: haar bestuursorganen, ambtelijke rollen en kanalen.",
+    "inwoners en ondernemers": "Inwoners, ondernemers en organisaties die als klant of belanghebbende met de gemeente "
+                               "te maken hebben.",
+    "ketenpartners": "Organisaties waarmee de gemeente structureel samenwerkt of die zij opdracht geeft.",
+}
 REGELGEVERS = ("EU", "rijk", "landelijke organisatie", "VNG-model")
 WAARDEN = {"afnemer": AFNEMERS, "domein": DOMEINEN, "doelgroep": DOELGROEPEN, "regelgever": REGELGEVERS}
 
@@ -52,6 +58,8 @@ EIGENSCHAPPEN = {  # veld in de beoordeling → wat het vastlegt
     "domein": "het GEMMA-domein, de plaats in de Functie-indeling naar domein",
     "doelgroep": "gemeente, inwoners en ondernemers of ketenpartners: de plaats in de Doelgroepindeling",
     "regelgever": "EU, rijk, landelijke organisatie of VNG-model: bepaalt de groep in de Grondslagindeling",
+    "kwaliteitsdoelen": "de GEMMA-kwaliteitsdoelen waaraan het beleidskader grondslag geeft, met de sterkte van die "
+                        "invloed, een onderbouwing en de bronnen",
     "taakveld": "het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling",
     "beleidsdomein": "het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling",
     "gemma_generiek": "het generieke GEMMA-element waarvan dit een specialisatie is (exacte match)",
@@ -90,7 +98,13 @@ RELATIETYPEN = {  # Nederlandse naam → ArchiMate-relatie
     "stroom": "flow",
     "realisatie": "realization",
     "bediening": "serving",
+    "invloed": "influence",
 }
+# De sterkte van een invloed (ArchiMate: het attribuut strength van de influence-relatie).
+STERKTEN = {"++": "bindend: de regeling stelt eisen of normen voor het doel",
+            "+": "draagt bij: de regeling bevordert het doel",
+            "-": "beperkt: de regeling staat het doel deels in de weg",
+            "--": "staat haaks: de regeling gaat tegen het doel in"}
 RELATIETYPE_UITLEG = {
     "associatie": "een betekenisvolle verbinding; gericht als de naam een leesrichting heeft",
     "aggregatie": "het geheel omvat het deel; het deel bestaat ook los",
@@ -102,6 +116,7 @@ RELATIETYPE_UITLEG = {
     "stroom": "gedrag geeft iets door aan ander gedrag",
     "realisatie": "gedrag realiseert een dienst; een data-object realiseert een bedrijfsobject",
     "bediening": "het een ondersteunt of bedient het ander",
+    "invloed": "een motivatie-element beïnvloedt een ander, met een sterkte",
 }
 
 # --- Elementtypen ---
@@ -127,6 +142,7 @@ class Elementtype:
     eigenschappen: tuple = ()
     verplicht: tuple = ()  # eigenschappen die ingevuld moeten zijn
     afspraken: tuple = ()
+    zonder_pagina: str = "annotatie"  # bij paginatype None: wat het type dan is
 
 
 GEMMA_MATCH = ("GEMMA-model", "match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en "
@@ -360,7 +376,7 @@ ELEMENTTYPEN: list[Elementtype] = [
         "begraafplaatsen",
         "beheersverordening van één gemeente (blijft bron); artikel 16 (losse norm, buiten het model); 'verordening' "
         "als soort (bedrijfsobject Regeling)",
-        eigenschappen=("regelgever", "taakveld", "beleidsdomein", "gemma"), verplicht=("regelgever",),
+        eigenschappen=("regelgever", "taakveld", "beleidsdomein", "gemma", "kwaliteitsdoelen"), verplicht=("regelgever",),
         afspraken=("Een regeling of beleid van één gemeente blijft bron en wordt geen element; het VNG-model staat in "
                    "het model als gemeenschappelijke vorm.",
                    "Een beleidskader in de groep Richtlijn is geen wettelijke grondslag: zijn relatie heet *geeft "
@@ -370,6 +386,20 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "De relaties naar een ander beleidskader (*werkt uit*, *verwijst naar*) en naar een rol, gebeurtenis "
                    "of bedrijfsobject zijn een uitbreiding op het GEMMA-kennismodel, dat een beleidskader alleen aan "
                    "een product en een kwaliteitsdoel koppelt.")),
+    Elementtype(
+        "kwaliteitsdoel", "Kwaliteitsdoel", "Goal", "goal", "motivatie", None,
+        "Gewenste kenmerken van overheidsdienstverlening vanuit het perspectief van de wensen van de samenleving, de "
+        "burgers en bedrijven.", "NORA", True,
+        "Geen begrip uit een bron: de kwaliteitsdoelen staan vast in GEMMA (uit NORA en GEMMA). De wiki legt alleen vast "
+        "welke beleidskaders er grondslag aan geven, en hoe sterk. Een doel van één beleidsveld (armoedebestrijding) is "
+        "geen kwaliteitsdoel en geen element.",
+        "de naam uit GEMMA, letterlijk (Privacy, Rechtmatig)",
+        (("GEMMA-model", "een kwaliteitsdoel van GEMMA (GEMMA type Kwaliteitsdoel), op id; de wiki maakt er geen nieuw"),),
+        "Privacy (de AVG geeft er grondslag aan)", "armoedebestrijding (een beleidsdoel)",
+        afspraken=("Een kwaliteitsdoel krijgt geen pagina en geen beoordeling; het beleidskader noemt het in "
+                   "`kwaliteitsdoelen`, met het GEMMA-id, de sterkte, een onderbouwing en de bronnen.",
+                   "Sterkte: " + "; ".join(f"`{s}` {u}" for s, u in STERKTEN.items()) + "."),
+        zonder_pagina="matchdoel (GEMMA)"),
     Elementtype(
         "data-object", "Data-object", "Data Object", "data-object", "applicatiearchitectuur", None,
         "Samenhangende set gegevens die geautomatiseerd kan worden verwerkt.", "GEMMA", True,
@@ -381,6 +411,23 @@ ELEMENTTYPEN: list[Elementtype] = [
         eigenschappen=("data_object", "ggm"),
         afspraken=("Gegevensvastlegging bepaalt nooit of iets een element is; *geautomatiseerd verwerkt* is alleen een "
                    "annotatie.",)),
+    Elementtype(
+        "groepering", "Groepering", "Grouping", "grouping", "overig", None,
+        "Een groepering aggregeert of omvat concepten die bij elkaar horen op grond van een gemeenschappelijk kenmerk.",
+        "ArchiMate", True,
+        "Geen begrip uit een bron, maar een knoop van een indeling: taakveld, beleidsdomein, domein, groep van de "
+        "Grondslagindeling. Zonder groepering heeft een indeling geen relaties in de export. Een groepering komt uit "
+        "GEMMA, of de wiki maakt haar nieuw: een beleidsdomein dat GEMMA niet kent, een groep van de Grondslagindeling.",
+        "de naam uit de indelingslijst (Iv3-taakveld, GGM-beleidsdomein, GEMMA-domein) of het brontype (Rijksregelgeving)",
+        (("GEMMA-model", "de groepering van GEMMA met dezelfde naam en hetzelfde GEMMA type; anders een nieuwe groepering "
+                         "in de map van de wiki, met een terugmelding"),
+         ("GGM", "het beleidsdomein: per beleidsdomein de dekking")),
+        "Burgerzaken (beleidsdomein)", "lijkbezorging als thema (een onderwerp, geen groepering)",
+        afspraken=("Een groepering krijgt geen pagina en geen beoordeling; het script maakt haar bij de export uit de "
+                   "indelingsvelden van de elementen. De beschrijving van een beleidsdomein staat in het register van "
+                   "beleidsdomeinen.",
+                   "Een begrip dat alleen een thema is, wordt geen groepering en geen element."),
+        zonder_pagina="indeling"),
 ]
 ELEMENTTYPE = {e.sleutel: e for e in ELEMENTTYPEN}
 VAN_ARCHIMATE = {e.archimate_type: e for e in ELEMENTTYPEN}
@@ -420,10 +467,8 @@ ZONDER_ELEMENT: list[ZonderElement] = [
     ZonderElement("representatie", "Representatie", "Representation", "representation", "bedrijfsarchitectuur",
                   "De waarneembare vorm (document, formulier, register, bericht) van de informatie van een object: "
                   "vermelden bij dat object, geen pagina."),
-    ZonderElement("locatie", "Locatie", "Location", "location", "bedrijfsarchitectuur",
+    ZonderElement("locatie", "Locatie", "Location", "location", "overig",
                   "Een fysieke plaats als zodanig: geen pagina. Een gebiedsindeling als gegeven is een bedrijfsobject."),
-    ZonderElement("doel", "Doel", "Goal", "goal", "motivatie",
-                  "Buiten dit model: een doel (armoedebestrijding) is geen beleidskader.", "Kwaliteitsdoel"),
     ZonderElement("uitkomst", "Uitkomst", "Outcome", "outcome", "motivatie", "Buiten dit model."),
     ZonderElement("principe", "Principe", "Principle", "principle", "motivatie", "Buiten dit model.",
                   "Architectuurprincipe"),
@@ -438,8 +483,6 @@ ZONDER_ELEMENT: list[ZonderElement] = [
                   "Driver; alleen het beleidskader is een element.", "Kernwaarde"),
     ZonderElement("vermogen", "Vermogen", "Capability", "capability", "motivatie",
                   "Buiten dit model (strategielaag): \"wat de gemeente kan\" is geen bedrijfsfunctie.", "Capability"),
-    ZonderElement("groepering", "Groepering", "Grouping", "grouping", "motivatie",
-                  "Buiten dit model als begrip (een thema); de indelingen gebruiken groeperingen.", "Groep"),
     ZonderElement("applicatiecomponent", "Applicatiecomponent", "Application Component", "application-component",
                   "applicatiearchitectuur", "De applicatielaag is nog niet gebouwd.", "Applicatiecomponent"),
     ZonderElement("applicatieservice", "Applicatieservice", "Application Service", "application-service",
@@ -546,8 +589,26 @@ RELATIES: list[Relatie] = [
               f"de regeling die {naam} regelt" + ("; *is model voor*: een VNG-model voor de soort regeling "
                                                      "(Regeling)" if doel == "bedrijfsobject" else ""))
       for doel, naam in (("rol", "de rol"), ("gebeurtenis", "de gebeurtenis"), ("bedrijfsobject", "het object"))],
+    Relatie("beleidskader", "invloed", "kwaliteitsdoel", True, ("geeft grondslag aan",), (),
+            "met een sterkte; het kwaliteitsdoel is een element van GEMMA (veld `kwaliteitsdoelen`)"),
     # Applicatie
     Relatie("data-object", "realisatie", "bedrijfsobject", True, (), (), "nu een annotatie"),
+    # Indelingen: de groeperingen van de Beleidsdomeinindeling, de Functie-indeling naar domein en de Grondslagindeling
+    Relatie("groepering", "aggregatie", "groepering", True, (), (), "taakveld → beleidsdomein; domein → beleidsdomein"),
+    *[Relatie("groepering", "aggregatie", doel, doel in ("bedrijfsobject", "bedrijfsfunctie", "rol"), (), (), toelichting)
+      for doel, toelichting in (
+        ("bedrijfsobject", "Beleidsdomeinindeling"),
+        ("afspraak", "Beleidsdomeinindeling"),
+        ("product", "Beleidsdomeinindeling; Functie-indeling naar domein"),
+        ("dienst", "Beleidsdomeinindeling"),
+        ("bedrijfsproces", "Beleidsdomeinindeling: alleen een levensloopproces"),
+        ("bedrijfsinteractie", "Beleidsdomeinindeling"),
+        ("bedrijfsfunctie", "Functie-indeling naar domein: alleen een functie op domeinniveau"),
+        ("beleidskader", "Beleidsdomeinindeling; Grondslagindeling"),
+        ("actor", "Doelgroepindeling"),
+        ("rol", "Doelgroepindeling"),
+        ("bedrijfssamenwerking", "Doelgroepindeling"),
+        ("kanaal", "Doelgroepindeling"))],
 ]
 
 
@@ -681,8 +742,10 @@ INDELINGEN: list[Indeling] = [
               "Een cluster naar soort werk breidt het processenlandschap uit zonder GEMMA-elementen te wijzigen.")),
     Indeling("Doelgroepindeling", "partijen en kanalen", "de doelgroep",
              {"actor": None, "rol": None, "bedrijfssamenwerking": None, "kanaal": None},
-             "doelgroep (gemeente, inwoners en ondernemers, ketenpartners) › element", "GEMMA, uitgebreid",
-             "aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type *Groep*)", ("doelgroep",)),
+             "doelgroep (gemeente, inwoners en ondernemers, ketenpartners) › element", "wiki",
+             "aggregatie vanuit de groepering van de doelgroep, in de map Doelgroepindeling", ("doelgroep",),
+             ("Een doelgroep is een ordening, geen hoedanigheid: in de wiki een groepering. GEMMA modelleert de "
+              "doelgroep als rol (GEMMA type *Groep*) die applicatieservices ordent; die afwijking is teruggemeld.",)),
     Indeling("Grondslagindeling", "beleidskaders", "het brontype van de regeling, afgeleid uit de regelgever",
              {"beleidskader": None},
              "groep (Europese regelgeving, Rijksregelgeving, Richtlijn, Gemeentelijke regelgeving) › beleidskader",
@@ -797,6 +860,8 @@ def _namen(r: Relatie) -> str:
         return "een handeling: " + ", ".join(f"{n} ({HANDELINGEN[n]})" for n in H)
     if r.namen == V:
         return "een verantwoordelijkheid: " + ", ".join(f"{n} ({VERANTWOORDELIJKHEDEN[n]})" for n in V)
+    if r.bron == "groepering":
+        return "geen: het script maakt de relatie uit de indelingsvelden"
     return ", ".join(r.namen) if r.namen else "vrij, uit de bron"
 
 
@@ -853,7 +918,7 @@ def modelleerafspraken(e: Elementtype) -> str:
               ["Afstemming", " · ".join(f"{doel}: {tekst}" for doel, tekst in e.afstemming)],
               ["Voorbeeld", f"wel: {e.wel} · niet: {e.niet}"]]
     regels = [f"*{e.engels}* in ArchiMate · laag {LAGEN[e.laag]}"
-              + (f" · paginatype `{e.paginatype}`" if e.paginatype else " · geen pagina (annotatie)"), "",
+              + (f" · paginatype `{e.paginatype}`" if e.paginatype else f" · geen pagina ({e.zonder_pagina})"), "",
               *_tabel(["Afspraak", "Inhoud"], kaart)]
     if e.afspraken:
         regels += ["## Afspraken", "", *[f"- {a}" for a in e.afspraken], ""]
@@ -911,9 +976,10 @@ def readme() -> str:
               f"GEMMA): een {UITBREIDING}. Het gaat mee in de export, gemarkeerd, en is een kandidaat voor een "
               "terugmelding over het kennismodel.", ""]
     for laag, laagnaam in LAGEN.items():
-        rijen = [[_link(e.sleutel), e.engels, f"`{e.paginatype}`" if e.paginatype else "annotatie",
+        rijen = [[_link(e.sleutel), e.engels, f"`{e.paginatype}`" if e.paginatype else e.zonder_pagina,
                   "ja" if e.over_gemma else "nee"] for e in ELEMENTTYPEN if e.laag == laag]
-        regels += [f"## {laagnaam}", "", *_tabel(["Elementtype", "ArchiMate", "Paginatype", "In Over GEMMA"], rijen),
+        regels += [f"## {laagnaam}", "",
+                   *(_tabel(["Elementtype", "ArchiMate", "Paginatype", "In Over GEMMA"], rijen) if rijen else []),
                    f"Elementtypen zonder element: [weggefilterd]({laag}/weggefilterd.md) ("
                    + ", ".join(z.naam.lower() for z in ZONDER_ELEMENT if z.laag == laag) + ").", ""]
     regels += ["## Relatietypen", "",

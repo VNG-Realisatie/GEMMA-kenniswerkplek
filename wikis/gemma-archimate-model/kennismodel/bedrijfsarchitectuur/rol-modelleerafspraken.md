@@ -47,6 +47,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | in | bediening | [Dienst](dienst-modelleerafspraken.md) | bedient |  | ja | de rol van de afnemer |
 | in | bediening | [Product](product-modelleerafspraken.md) | bedient |  | ja | de rol van de afnemer, een specialisatie van Klant |
 | in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor |  | nee: uitbreiding op het GEMMA-kennismodel | de regeling die de rol regelt |
+| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Doelgroepindeling |
 
 ## Weggefilterd
 

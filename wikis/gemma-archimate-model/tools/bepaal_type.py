@@ -1242,6 +1242,13 @@ def schema() -> dict:
                                "description": "Specialisatie van een generiek GEMMA-element (bedrijfsproces, "
                                               "gebeurtenis, dienst of rol), met het id van dat element; bij een "
                                               "cluster naar soort werk bepaalt dit het procesniveau"},
+            "kwaliteitsdoelen": {"type": "array", "items": obj(
+                ["id", "sterkte", "onderbouwing", "bronnen"], id=tekst, sterkte={"enum": list(km.STERKTEN)},
+                onderbouwing=tekst, bronnen={**bron_ids, "minItems": 1}, vindplaats=tekst),
+                "description": "Bij een beleidskader: de GEMMA-kwaliteitsdoelen waaraan het grondslag geeft (relatie "
+                               "invloed, 'geeft grondslag aan'), met het GEMMA-id, de sterkte ("
+                               + ", ".join(f"{s} {u}" for s, u in km.STERKTEN.items()) + "), een onderbouwing en de "
+                               "bronnen"},
             "naamkeuze": alineas,
             "homoniemen": {"type": "array", "items": obj(["begrip", "betekenis", "waar", "naamkeuze"], begrip=tekst,
                                                          betekenis=tekst, waar=tekst, naamkeuze=tekst, element=id_)},

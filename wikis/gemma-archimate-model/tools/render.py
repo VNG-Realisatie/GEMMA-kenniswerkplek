@@ -23,7 +23,7 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 Opbouw van een elementpagina (vaste volgorde; een sectie zonder inhoud vervalt): frontmatter (gegevens en de
 letterlijke `ggm_*`/`gemma_*`-velden), titel en status, Ter discussie; Betekenis (Definitie, Beschrijving, Deelprocessen, Per
 onderwerp, Synoniemen, Naamkeuze, Homoniemen); Plaats in het model (Typering, Plaats in de indelingen, Kenmerken
-alleen met ja, Generalisatie, Specialisaties, GGM-componenten, Tegenhanger, Relaties uitgaand en inkomend); Herkomst (Bronnen met korte titel,
+alleen met ja, Generalisatie, Specialisaties, GGM-componenten, Tegenhanger, Relaties uitgaand en inkomend, Kwaliteitsdoelen); Herkomst (Bronnen met korte titel,
 Afstemming met GGM met de GGM-terugmeldingen, Afstemming met GEMMA, Besluiten redacteur). Een bron heet in links naar
 haar `korte_titel` uit de bronanalyse.
 
@@ -433,6 +433,14 @@ def element_pagina(w: Wiki, bid: str) -> str:
                                  for x in d.get("relaties", [])]) if d.get("relaties") else []
     inkomend = [[w.link(van, v), relatie(x, v), d["begrip"], bron_cel(x)] for v, x in w.inkomend(bid)]
     relaties = _sub("Uitgaand", uitgaand, 4) + _sub("Inkomend", _tabel(kolommen, inkomend) if inkomend else [], 4)
+    doelnaam = {k["gemma_id"]: k["gemma_naam"] for k in a.get("kwaliteitsdoelen", [])}
+    kwaliteitsdoelen = [
+        f"Dit beleidskader geeft grondslag aan deze kwaliteitsdoelen van GEMMA (relatie *invloed*, met de sterkte: "
+        + "; ".join(f"`{s}` {x}" for s, x in kennismodel.STERKTEN.items()) + ").", "",
+        *_tabel(["Kwaliteitsdoel", "Sterkte", "Onderbouwing", "Bron"], [
+            [f"*{doelnaam.get(k['id'], k['id'])}* (GEMMA)", f"`{k['sterkte']}`", w.tekst(van, k["onderbouwing"]),
+             w.bronnen(van, k["bronnen"], k.get("vindplaats"))] for k in d["kwaliteitsdoelen"]])] \
+        if d.get("kwaliteitsdoelen") else []
     specialisaties_zonder_pagina = specialisaties_per_onderwerp(w, van, bid) if u.get("objectniveau") == "generiek" else []
     r += _groep("Plaats in het model", [
         _sub("Typering", typering), _sub("Plaats in de indelingen", indelingen(w, van, bid, d)),
@@ -440,7 +448,8 @@ def element_pagina(w: Wiki, bid: str) -> str:
         _sub("Kenmerken", [f"Alleen de kenmerken met ja; de overige {nee} zijn nee.", "",
                            *_tabel(["Kenmerk", "Onderbouwing"], kenmerken)]),
         _sub("Generalisatie", w.alineas(van, d.get("generalisatie"))), _sub("Specialisaties", specialisaties),
-        _sub("GGM-componenten", componenten), _sub("Tegenhanger", tegenhanger), _sub("Relaties", relaties)])
+        _sub("GGM-componenten", componenten), _sub("Tegenhanger", tegenhanger), _sub("Relaties", relaties),
+        _sub("Kwaliteitsdoelen", kwaliteitsdoelen)])
 
     # Herkomst: waar het begrip is gevonden en hoe het aansluit op GGM en GEMMA.
     bronnen = [*w.alineas(van, d.get("grondslag_toelichting")),

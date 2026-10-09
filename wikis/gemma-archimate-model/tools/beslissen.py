@@ -9,6 +9,7 @@ Leest elke beoordeling in `beoordelingen/begrippen/<id>.yaml` (het oordeel van d
 - `beslist.pad`: waar het render-script de pagina zet (map en submappen uit wiki.yaml: taakveld en beleidsdomein, bij een functie het domein);
 - `beslist.ggm`, `beslist.ggm_duplicaten`, `beslist.gemma`: de letterlijke velden bij de match die de AI koos
   (tools/ggm.py, tools/gemma.py); de AI vult die nooit zelf;
+- `beslist.kwaliteitsdoelen`: bij een beleidskader de letterlijke naam en definitie van elk GEMMA-kwaliteitsdoel;
 - `beslist.bronnen` en `beslist.herkomst`: alle bronnen van het begrip, en het brontype van de hoogste.
 Nieuwe GGM-terugmeldingen in `beoordelingen/terugmeldingen/ggm.yaml` krijgen het volgende nummer.
 
@@ -117,6 +118,8 @@ def bronnen_van(data: dict) -> list[str]:
         ids += r.get("bronnen", [])
     for dp in data.get("deelprocessen", []):
         ids += dp.get("bronnen", [])
+    for k in data.get("kwaliteitsdoelen", []):
+        ids += k.get("bronnen", [])
     if data.get("definitie_formeel_bron"):
         ids.append(data["definitie_formeel_bron"]["bron"])
     return list(dict.fromkeys(ids))
@@ -195,6 +198,28 @@ def _modelvelden(ctx: Context, bid: str, data: dict, res: Resultaat) -> dict:
         else:
             res.fouten.append(f"{bid}: gemma_generiek '{generiek['id']}' bestaat niet in het GEMMA-model")
     return beslist
+
+
+def _kwaliteitsdoelen(ctx: Context, bid: str, data: dict, uitkomst: dict, res: Resultaat) -> dict:
+    """`kwaliteitsdoelen` van een beleidskader: elk een kwaliteitsdoel van GEMMA, op id, één keer; met de letterlijke
+    naam en definitie."""
+    doelen = data.get("kwaliteitsdoelen") or []
+    if doelen and uitkomst.get("paginatype") != "beleidskader":
+        res.fouten.append(f"{bid}: kwaliteitsdoelen horen alleen bij een beleidskader")
+        return {}
+    velden, gezien = [], set()
+    for k in doelen:
+        e = ctx.gemma()["elementen"].get(k["id"])
+        if e is None or e["type"] != "goal" or e["eigenschappen"].get("GEMMA type") != "Kwaliteitsdoel":
+            res.fouten.append(f"{bid}: '{k['id']}' is geen kwaliteitsdoel in het GEMMA-model "
+                              "(zoek met tools/gemma.py kandidaten)")
+            continue
+        if e["id"] in gezien:
+            res.fouten.append(f"{bid}: kwaliteitsdoel {e['naam']} staat er twee keer")
+            continue
+        gezien.add(e["id"])
+        velden.append({"gemma_id": e["id"], "gemma_naam": e["naam"], "gemma_definitie": e["documentatie"]})
+    return {"kwaliteitsdoelen": velden}
 
 
 def _controleer_bronnen(ctx: Context, bid: str, bronnen: list[str], res: Resultaat) -> None:
@@ -454,6 +479,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             _controleer_element(ctx, bid, data, uitkomst, res)
             _controleer_verwijzingen(bid, data, uitkomsten, res, {b: d["begrip"] for b, (_, d) in alle.items()})
             beslist.update(_modelvelden(ctx, bid, data, res))
+            beslist.update(_kwaliteitsdoelen(ctx, bid, data, uitkomst, res))
             status = bepaal_type.voorgestelde_status(uitkomst, ggm_sterkte, data.get("grondslag"), data.get("besluiten"))
             if status != "afgewezen":
                 beslist["pad"] = pagina_pad(ctx, uitkomst["paginatype"], data, bid)

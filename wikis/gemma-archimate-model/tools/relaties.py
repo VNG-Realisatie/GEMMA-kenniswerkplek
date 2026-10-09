@@ -47,10 +47,11 @@ KOLOMMEN = ["Relatie", "Naar", "Naam", "Kardinaliteit", "Grondslag", "GGM-relati
 BRON_ID_RE = gam_gemeen.BRON_ID_RE
 
 ACTIEF = {"business-actor", "business-role", "business-collaboration", "business-interface"}
-MOTIVATIE = {"driver"}
+MOTIVATIE = {"driver", "goal"}
 GEDRAG = {"business-process", "business-function", "business-event", "business-service", "business-interaction"}
 PASSIEF = {"business-object", "contract", "representation"}
 SAMENGESTELD = {"product"}
+GROEPERING = {"grouping"}
 
 # Deelverzameling van de ArchiMate-relatietabel voor de business-laag (conservatief).
 # (relatie, categorie bron, categorie doel); 'zelfde' = hetzelfde ArchiMate-type.
@@ -67,6 +68,8 @@ TOEGESTAAN = {
     ("realization", "gedrag", "gedrag"), ("realization", "passief", "passief"),
     ("serving", "gedrag", "gedrag"), ("serving", "gedrag", "actief"),
     ("serving", "samengesteld", "actief"),  # Product → bediening → Klant (kennismodel regel 596)
+    ("influence", "motivatie", "motivatie"),
+    ("composition", "groepering", "*"), ("aggregation", "groepering", "*"),  # een groepering groepeert elk concept
 }
 STERKTE = {"composition": 3, "aggregation": 2, "association": 1}
 DEEL_GEHEEL_WERKWOORDEN = ("bevat", "bestaat uit", "omvat", "onderdeel van", "deel van", "maakt deel uit van",
@@ -75,7 +78,7 @@ DEEL_GEHEEL_WERKWOORDEN = ("bevat", "bestaat uit", "omvat", "onderdeel van", "de
 
 def categorie(archimate_type: str) -> str:
     for naam, typen in (("actief", ACTIEF), ("gedrag", GEDRAG), ("passief", PASSIEF), ("samengesteld", SAMENGESTELD),
-                        ("motivatie", MOTIVATIE)):
+                        ("motivatie", MOTIVATIE), ("groepering", GROEPERING)):
         if archimate_type in typen:
             return naam
     return "onbekend"

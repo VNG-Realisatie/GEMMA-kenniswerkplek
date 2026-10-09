@@ -42,6 +42,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | in | bediening | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | bedient |  | ja |  |
 | uit | aggregatie | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | omvat |  | ja | de GEMMA-functieketen |
 | uit | aggregatie | [Dienst](dienst-modelleerafspraken.md) | omvat |  | nee: uitbreiding op het GEMMA-kennismodel | Functie-indeling naar domein |
+| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Functie-indeling naar domein: alleen een functie op domeinniveau |
 
 ## Weggefilterd
 

@@ -526,6 +526,50 @@
       "additionalProperties": false,
       "description": "Specialisatie van een generiek GEMMA-element (bedrijfsproces, gebeurtenis, dienst of rol), met het id van dat element; bij een cluster naar soort werk bepaalt dit het procesniveau"
     },
+    "kwaliteitsdoelen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "sterkte",
+          "onderbouwing",
+          "bronnen"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sterkte": {
+            "enum": [
+              "++",
+              "+",
+              "-",
+              "--"
+            ]
+          },
+          "onderbouwing": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bronnen": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$"
+            },
+            "minItems": 1
+          },
+          "vindplaats": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "Bij een beleidskader: de GEMMA-kwaliteitsdoelen waaraan het grondslag geeft (relatie invloed, 'geeft grondslag aan'), met het GEMMA-id, de sterkte (++ bindend: de regeling stelt eisen of normen voor het doel, + draagt bij: de regeling bevordert het doel, - beperkt: de regeling staat het doel deels in de weg, -- staat haaks: de regeling gaat tegen het doel in), een onderbouwing en de bronnen"
+    },
     "naamkeuze": {
       "type": "array",
       "items": {

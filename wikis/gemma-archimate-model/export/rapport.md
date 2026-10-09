@@ -1,58 +1,92 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: a4f3252a5fc90387f58b81c1af54f35396aaa1df8cd8f114f0253023980aee23 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 52e615ec420a0860f1bc46967349073f4b82391ced85726441d30f252f58377c -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-08T22:04:06. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 29 gekoppeld aan GEMMA, 225 nieuw. Relaties: 13 gekoppeld, 978 nieuw, 0 overgeslagen. Indelingen: 185 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-09T21:28:14. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 29 gekoppeld aan GEMMA, 225 nieuw. Relaties: 13 gekoppeld, 975 nieuw, 0 overgeslagen. Indelingen: 185 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
 
 Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de groep Kennismodel met een groep per laag (map Other / wiki-gemma-model / Kennismodel).
 
 ## Kennismodel-wiki
 
-Wat de inhoud van de wiki gebruikt en het kennismodel niet heeft; de groep Kennismodel-wiki.
+Het kennismodel van de wiki: 16 elementtypen, 87 relaties en 6 indelingen, in de groep Kennismodel-wiki. Wat Over GEMMA niet kent, is een kandidaat voor een terugmelding over het kennismodel:
 
-- element Bedrijfsinteractie (business-interaction)
-- element Afspraak (contract)
-- relatie access Bedrijfsinteractie → Bedrijfsobject (lezen-schrijven), 1×, niet in Over GEMMA
-- relatie access Bedrijfsproces → Afspraak (schrijven), 2×, niet in Over GEMMA
-- relatie access Bedrijfsproces → Afspraak (lezen-schrijven), 1×, niet in Over GEMMA
-- relatie access Rol → Afspraak (lezen-schrijven), 1×, niet in Over GEMMA
-- relatie aggregation Actor → Actor, 3×, niet in Over GEMMA
-- relatie aggregation Bedrijfsfunctie → Bedrijfsfunctie, 10×
-- relatie aggregation Bedrijfsfunctie → Dienst, 76×, niet in Over GEMMA
-- relatie aggregation Bedrijfsobject → Bedrijfsobject, 1×
-- relatie aggregation Bedrijfsproces → Gebeurtenis, 20×, niet in Over GEMMA
-- relatie aggregation Bedrijfsproces → Bedrijfsproces, 64×
-- relatie aggregation Rol → Actor, 10×, niet in Over GEMMA
-- relatie aggregation Rol → Rol, 24×
-- relatie aggregation Groep → Bedrijfsfunctie, 2×
-- relatie aggregation Groep → Bedrijfsinteractie, 1×, niet in Over GEMMA
-- relatie aggregation Groep → Bedrijfsobject, 21×
-- relatie aggregation Groep → Bedrijfsproces, 14×, niet in Over GEMMA
-- relatie aggregation Groep → Dienst, 76×, niet in Over GEMMA
-- relatie aggregation Groep → Afspraak, 1×, niet in Over GEMMA
-- relatie aggregation Groep → Beleidskader, 34×, niet in Over GEMMA
-- relatie aggregation Groep → Product, 2×, niet in Over GEMMA
-- relatie aggregation Product → Afspraak, 1×
-- relatie assignment Rol → Bedrijfsinteractie, 1×, niet in Over GEMMA
-- relatie assignment Rol → Bedrijfsproces, 105×
-- relatie association Actor → Actor, 2×, niet in Over GEMMA
-- relatie association Gebeurtenis → Bedrijfsobject, 1×, niet in Over GEMMA
-- relatie association Bedrijfsobject → Dienst, 1×, niet in Over GEMMA
-- relatie association Rol → Rol, 1×, niet in Over GEMMA
-- relatie association Afspraak → Bedrijfsobject, 1×, niet in Over GEMMA
-- relatie association Beleidskader → Gebeurtenis, 3×, niet in Over GEMMA
-- relatie association Beleidskader → Bedrijfsobject, 5×, niet in Over GEMMA
-- relatie association Beleidskader → Bedrijfsproces, 55×, niet in Over GEMMA
-- relatie association Beleidskader → Rol, 5×, niet in Over GEMMA
-- relatie association Beleidskader → Dienst, 82×, niet in Over GEMMA
-- relatie association Beleidskader → Beleidskader, 7×, niet in Over GEMMA
-- relatie association Beleidskader → Product, 2×, niet in Over GEMMA
-- relatie composition Bedrijfsobject → Bedrijfsobject, 1×
-- relatie flow Bedrijfsproces → Bedrijfsproces, 7×, niet in Over GEMMA
-- relatie serving Bedrijfsproces → Bedrijfsinteractie, 3×, niet in Over GEMMA
-- relatie serving Dienst → Rol, 21×
-- relatie serving Product → Rol, 1×
-- relatie triggering Gebeurtenis → Gebeurtenis, 5×, niet in Over GEMMA
-- relatie triggering Gebeurtenis → Bedrijfsinteractie, 1×, niet in Over GEMMA
+- elementtype Bedrijfsinteractie (business-interaction)
+- relatie aggregatie Actor → Actor
+- relatie associatie Actor → Actor
+- relatie toewijzing Bedrijfssamenwerking → Bedrijfsfunctie
+- relatie toewijzing Bedrijfssamenwerking → Bedrijfsinteractie
+- relatie toegang Bedrijfssamenwerking → Bedrijfsobject (schrijven)
+- relatie toegang Bedrijfssamenwerking → Bedrijfsobject (lezen)
+- relatie toegang Bedrijfssamenwerking → Bedrijfsobject (lezen-schrijven)
+- relatie toewijzing Rol → Bedrijfsinteractie
+- relatie toegang Rol → Afspraak (schrijven)
+- relatie toegang Rol → Afspraak (lezen)
+- relatie toegang Rol → Afspraak (lezen-schrijven)
+- relatie toegang Bedrijfsproces → Afspraak (schrijven)
+- relatie toegang Bedrijfsproces → Afspraak (lezen)
+- relatie toegang Bedrijfsproces → Afspraak (lezen-schrijven)
+- relatie toegang Bedrijfsinteractie → Bedrijfsobject (schrijven)
+- relatie toegang Bedrijfsinteractie → Bedrijfsobject (lezen)
+- relatie toegang Bedrijfsinteractie → Bedrijfsobject (lezen-schrijven)
+- relatie bediening Bedrijfsproces → Bedrijfsinteractie
+- relatie aggregatie Bedrijfsfunctie → Dienst
+- relatie aggregatie Bedrijfsproces → Gebeurtenis
+- relatie stroom Bedrijfsproces → Bedrijfsproces
+- relatie triggering Gebeurtenis → Bedrijfsinteractie
+- relatie triggering Gebeurtenis → Gebeurtenis
+- relatie specialisatie Gebeurtenis → Gebeurtenis
+- relatie specialisatie Dienst → Dienst
+- relatie associatie Afspraak → Bedrijfsobject
+- relatie associatie Beleidskader → Dienst
+- relatie associatie Beleidskader → Bedrijfsproces
+- relatie associatie Beleidskader → Beleidskader
+- relatie associatie Beleidskader → Rol
+- relatie associatie Beleidskader → Gebeurtenis
+- relatie associatie Beleidskader → Bedrijfsobject
+- relatie aggregatie Groep → Afspraak
+- relatie aggregatie Groep → Product
+- relatie aggregatie Groep → Dienst
+- relatie aggregatie Groep → Bedrijfsproces
+- relatie aggregatie Groep → Bedrijfsinteractie
+- relatie aggregatie Groep → Beleidskader
+- relatie aggregatie Groep → Actor
+- relatie aggregatie Groep → Bedrijfssamenwerking
+- relatie aggregatie Groep → Kanaal
+- indeling Procesindeling naar kernobject
+- indeling Procesindeling naar soort werk
+- indeling Doelgroepindeling
+- indeling Grondslagindeling
+
+## Relaties van elementen die Over GEMMA niet kent
+
+Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMMA.
+
+- actor aggregatie actor: 3×
+- actor associatie actor: 2×
+- afspraak associatie bedrijfsobject: 1×
+- bedrijfsfunctie aggregatie dienst: 76×
+- bedrijfsinteractie toegang bedrijfsobject: 1×
+- bedrijfsproces aggregatie gebeurtenis: 20×
+- bedrijfsproces bediening bedrijfsinteractie: 3×
+- bedrijfsproces stroom bedrijfsproces: 7×
+- bedrijfsproces toegang afspraak: 3×
+- beleidskader associatie bedrijfsobject: 5×
+- beleidskader associatie bedrijfsproces: 55×
+- beleidskader associatie beleidskader: 7×
+- beleidskader associatie dienst: 82×
+- beleidskader associatie gebeurtenis: 3×
+- beleidskader associatie rol: 5×
+- gebeurtenis triggering bedrijfsinteractie: 1×
+- gebeurtenis triggering gebeurtenis: 5×
+- rol toegang afspraak: 1×
+- rol toewijzing bedrijfsinteractie: 1×
+
+## Weggelaten relaties
+
+Relaties uit de beoordelingen die niet in het kennismodel van de wiki staan; ze gaan niet mee.
+
+- Besmet stoffelijk overschot gemeld → Stoffelijk overschot (associatie (gericht)): het object volgt uit het levensloopproces waaronder de gebeurtenis hangt
+- Gemeentelijke lijkschouwer → Ambtenaar van de burgerlijke stand (associatie (gericht)): een handeling tussen rollen loopt via een proces (toewijzing), een stroom of een gebeurtenis, zoals tussen actoren
+- Heffingsverordening → Grafonderhoud (associatie (gericht)): een object hangt via het proces dat de dienst realiseert (toegang) aan een dienst
 
 ## Wijzigt een GEMMA-element
 
@@ -122,13 +156,16 @@ Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets
 
 ## Nieuwe groeperingen
 
-Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder het GEMMA-taakveld als dat bestaat) en de groepen van de Regelgevingindeling.
+Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder het GEMMA-taakveld als dat bestaat), de groepen van de Grondslagindeling en de doelgroepen.
 
 - Begraafplaatsen en crematoria (taakveld 7 Volksgezondheid en Milieu)
 - Belastingen (taakveld 0 Bestuur en Ondersteuning)
 - Besluitvorming (taakveld 0 Bestuur en Ondersteuning)
-- Gemeentelijke regelgeving (Regelgevingindeling)
-- Rijksregelgeving (Regelgevingindeling)
+- Gemeente (Doelgroepindeling)
+- Gemeentelijke regelgeving (Grondslagindeling)
+- Inwoners en ondernemers (Doelgroepindeling)
+- Ketenpartners (Doelgroepindeling)
+- Rijksregelgeving (Grondslagindeling)
 
 ## Nieuw in GEMMA
 

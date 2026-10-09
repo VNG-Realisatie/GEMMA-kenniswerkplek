@@ -64,6 +64,7 @@ afnemer: extern                               # proces, product, dienst: extern 
 domein: Fysieke leefomgeving                  # functie, product, dienst: GEMMA-domein
 doelgroep: gemeente                           # actor, rol, samenwerking, kanaal: gemeente | inwoners en ondernemers | ketenpartners
 regelgever: rijk                              # beleidskader: EU | rijk | VNG-model
+kwaliteitsdoelen: [{id: id-…, sterkte: "++", onderbouwing: "De wet regelt de taak.", bronnen: [2026-rijk-…], vindplaats: art. 1}]   # beleidskader: GEMMA-kwaliteitsdoelen waaraan het grondslag geeft
 gemma_generiek: {id: id-…, onderbouwing: "Een vergunningaanvraag."}   # specialisatie van een generiek GEMMA-element (exacte match)
 specialisaties: [{naam: Bijzondere begraafplaats, omschrijving: "Van een kerkgenootschap of rechtspersoon (art. 24)."}]
 relaties:
@@ -86,6 +87,7 @@ Velden en wat erin hoort:
 | `relaties` (ook `via`: de specialisatie zonder pagina van het generieke doel) | `references/relaties.md` |
 | `onderwerpen`, `per_onderwerp`, `synoniem_van` (één model over de onderwerpen heen) | de regels Eén element in het hele model, Thuishoren en Relaties tussen onderwerpen in `kennismodel/modelleerregels.md` |
 | `besluiten` | `references/besluiten.md` |
+| `kwaliteitsdoelen` (alleen bij een beleidskader) | de modelleerafspraken van Kwaliteitsdoel en Beleidskader in het kennismodel. Een kwaliteitsdoel is een element van GEMMA: kies het uit `uv run python tools/gemma.py kwaliteitsdoelen` en noem het `id`. De sterkte en wat ze betekent, staan in de modelleerafspraken van Kwaliteitsdoel; onderbouw ze met de bepalingen uit de regeling die eisen of normen voor het doel stellen. |
 | `kernobject`, `afnemer`, `domein`, `doelgroep`, `regelgever`, `gemma_generiek` | skill `gemma-archimate-model-criteria`, stap 7 (achtergrond: `docs/indelingen.md`) |
 
 De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet in een beoordeling of in de omschrijving van een onderwerp, maar in het register `beoordelingen/beleidsdomeinen.yaml` (`beleidsdomein`, `taakveld`, `beschrijving`, `bronnen`); de render toont haar in het overzicht en de export zet haar op de groepering. `tools/beslissen.py` controleert dat een element het beleidsdomein gebruikt en het taakveld klopt.

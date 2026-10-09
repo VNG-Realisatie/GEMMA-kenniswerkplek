@@ -35,6 +35,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 |---|---|---|---|---|---|---|
 | uit | toewijzing | [Dienst](dienst-modelleerafspraken.md) | vrij, uit de bron | *ontsluit een dienst* | ja |  |
 | uit | bediening | [Rol](rol-modelleerafspraken.md) | vrij, uit de bron |  | ja |  |
+| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Doelgroepindeling |
 
 ## Weggefilterd
 

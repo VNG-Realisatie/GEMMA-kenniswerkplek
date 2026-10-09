@@ -206,6 +206,11 @@ GEMMA_INDELING = """<?xml version="1.0" encoding="UTF-8"?>
       </element>
     </folder>
   </folder>
+  <folder name="Motivation" id="f-motivation" type="motivation">
+    <element xsi:type="archimate:Goal" name="Privacy" id="id-kd-privacy">
+      <property key="GEMMA type" value="Kwaliteitsdoel"/>
+    </element>
+  </folder>
   <folder name="Other" id="f-other" type="other">
     <folder name="Domein en doelgroep" id="f-dd">
       <folder name="Domeinen" id="f-domeinen">
@@ -336,7 +341,7 @@ def test_beleidsdomein_uit_gemma_wordt_hergebruikt_en_een_onbekende_wordt_nieuw(
     nieuw = _el(root, ae.vast_id("groepering", "beleidsdomein", "Begraafplaatsen"))
     assert nieuw.get("name") == "Begraafplaatsen" and _props(nieuw)["GEMMA type"] == "Beleidsdomein"
     assert [n for n, _ in _pad(root, nieuw.get("id"))] == ["Other", "wiki-gemma-model", "Beleidsdomeinindeling", "Volksgezondheid"]
-    assert uit.groeperingen_nieuw == ["Begraafplaatsen (taakveld Volksgezondheid)"]
+    assert "Begraafplaatsen (taakveld Volksgezondheid)" in uit.groeperingen_nieuw
     assert _relaties_van(root, "archimate:AggregationRelationship", nieuw.get("id"), ae.vast_id("element", "lijk"))
 
 
@@ -377,6 +382,22 @@ def test_beleidskader_hangt_naar_regelgever_in_landelijke_of_gemeentelijke_regel
     assert not any("regelgeving" in (e.get("name") or "").lower() for e in leeg.iter("element"))
 
 
+def test_beleidskader_geeft_grondslag_aan_een_kwaliteitsdoel_met_sterkte(tmp_path):
+    begrippen = _indeling_begrippen()
+    avg = _begrip("AVG", "driver", status="review", regelgever="EU",
+                  kwaliteitsdoelen=[{"id": "id-kd-privacy", "sterkte": "++", "onderbouwing": "Stelt eisen aan de verwerking.",
+                                     "bronnen": ["2016-eu-avg"]}])
+    avg["beslist"]["uitkomst"]["paginatype"] = "beleidskader"
+    begrippen["avg"] = avg
+    uit, root = _export_indeling(tmp_path, begrippen)
+    (invloed,) = _relaties_van(root, "archimate:InfluenceRelationship", ae.vast_id("element", "avg"), "id-kd-privacy")
+    assert invloed.get("strength") == "++" and invloed.get("name") == "geeft grondslag aan"
+    assert _props(invloed)["wiki-gemma-model onderbouwing"] == "Stelt eisen aan de verwerking."
+    assert _el(root, "id-kd-privacy").get("name") == "Privacy"  # het GEMMA-kwaliteitsdoel gaat letterlijk mee
+    assert uit.kwaliteitsdoelen == ["AVG → Privacy (++)"]
+    assert "## Kwaliteitsdoelen" in ae.rapport_md(uit, "t", "b", True)
+
+
 def test_domein_en_doelgroep_aggregeren_vanuit_de_gemma_groepering(tmp_path):
     uit, root = _export_indeling(tmp_path)
     # een functie hangt alleen op domeinniveau aan de domeingroepering, daaronder aan haar bovenliggende functie
@@ -384,10 +405,14 @@ def test_domein_en_doelgroep_aggregeren_vanuit_de_gemma_groepering(tmp_path):
     assert not _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "exploiteren"))
     (agg,) = _relaties_van(root, "archimate:AggregationRelationship", "id-uitvoering-fl", ae.vast_id("element", "exploiteren"))
     assert _props(agg)["wiki-gemma-model indeling"] == "Functie-indeling naar domein"
-    # de doelgroep is de GEMMA-rol met GEMMA type Groep, niet een gewone rol met dezelfde naam
-    assert _relaties_van(root, "archimate:AggregationRelationship", "id-doelgroep-inwoners", ae.vast_id("element", "nabestaande"))
-    assert not _relaties_van(root, "archimate:AggregationRelationship", "id-aaa-rol-zonder-groep")
-    assert _pad(root, "id-doelgroep-inwoners") == [("Business", "f-business"), ("Bedrijfsrollen", "f-rol")]
+    # de doelgroep is een groepering van de wiki, niet de GEMMA-rol met GEMMA type Groep
+    doelgroep = ae.vast_id("groepering", "doelgroep", "Inwoners en ondernemers")
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", doelgroep, ae.vast_id("element", "nabestaande"))
+    assert _props(agg)["wiki-gemma-model indeling"] == "Doelgroepindeling"
+    assert _el(root, doelgroep).get("{http://www.w3.org/2001/XMLSchema-instance}type") == "archimate:Grouping"
+    assert [n for n, _ in _pad(root, doelgroep)] == ["Other", "wiki-gemma-model", "Doelgroepindeling"]
+    assert not _relaties_van(root, "archimate:AggregationRelationship", "id-doelgroep-inwoners")
+    assert "Inwoners en ondernemers (Doelgroepindeling)" in uit.groeperingen_nieuw
     assert any("onbekende groep" in o for o in uit.overgeslagen)
 
 

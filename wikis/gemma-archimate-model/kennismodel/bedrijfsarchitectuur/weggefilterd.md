@@ -13,4 +13,3 @@ Elementtypen van de laag Bedrijfsarchitectuur die niet tot een element van dit m
 | Elementtype | In Over GEMMA | Reden |
 |---|---|---|
 | Representatie (Representation) | — | De waarneembare vorm (document, formulier, register, bericht) van de informatie van een object: vermelden bij dat object, geen pagina. |
-| Locatie (Location) | — | Een fysieke plaats als zodanig: geen pagina. Een gebiedsindeling als gegeven is een bedrijfsobject. |

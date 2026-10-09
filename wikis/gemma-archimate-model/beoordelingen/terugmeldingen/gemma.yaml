@@ -84,3 +84,19 @@ terugmeldingen:
   - '**Voorstel:** neem generieke gebeurtenissen op naast Statusmelding, te beginnen met Aanvraag ontvangen en Besluit bekendgemaakt, zodat de specifieke gebeurtenissen er een specialisatie van kunnen zijn.'
   nummer: 5
   status: open
+- type: indeling
+  gemma_elementen:
+  - id: id-17a7441705094ba9b385c25497844778
+    naam: Gemeente
+  - id: id-c74f2326b7a84a54a1c4f240436938b8
+    naam: Inwoners en ondernemers
+  - id: id-9de7672ed232408c9b1844f955897b8e
+    naam: Ketenpartners
+  - id: id-f1ea73a24f804a91b0a07d4316c06e87
+    naam: Generiek
+  bevinding:
+  - '**GEMMA:** de doelgroepen Gemeente, Inwoners en ondernemers, Ketenpartners en Generiek zijn rollen (Business Role, GEMMA type Groep) in de map Business / Bedrijfsrollen, met de documentatie "Groepering van applicatieservices ten behoeve van …". De groeperingen Domein en doelgroep bedienen ze; zelf ordenen ze geen actoren, rollen of kanalen (2026-vng-gemma-2026-10-02). Over GEMMA beschrijft de doelgroep als "een ordening van de gemeentelijke applicatieservices naar de groep gebruikers" (2026-vng-over-gemma).'
+  - '**Bevinding:** een doelgroep is een ordening, geen hoedanigheid die een partij vervult, maar staat in GEMMA als rol. Daardoor kan de doelgroep niet ordenen wat in de bedrijfslaag bij haar hoort, en heet de rol Gemeente net als de actor Gemeente. De wiki deelt actoren, rollen, samenwerkingen en kanalen in naar doelgroep, en modelleert de doelgroep daarvoor als groepering, net als het beleidsdomein en het domein in GEMMA. De import voegt die groeperingen toe in de map wiki-gemma-model / Doelgroepindeling; de rollen van GEMMA blijven staan.'
+  - '**Voorstel:** maak de doelgroep in GEMMA een groepering (GEMMA type Doelgroep) in plaats van een rol. Laat haar de actoren, rollen, samenwerkingen en kanalen van die doelgroep aggregeren, en de groeperingen Domein en doelgroep aggregeren in plaats van bedienen. Neem de groeperingen uit de import over en laat de rollen met GEMMA type Groep daarna vervallen.'
+  nummer: 6
+  status: open

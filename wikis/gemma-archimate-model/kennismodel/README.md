@@ -32,15 +32,16 @@ Twee markeringen zijn verschillend:
 | [Kanaal](bedrijfsarchitectuur/kanaal-modelleerafspraken.md) | Business Interface | `kanaal` | ja |
 | [Bedrijfsinteractie](bedrijfsarchitectuur/bedrijfsinteractie-modelleerafspraken.md) | Business Interaction | `bedrijfsinteractie` | nee |
 
-Elementtypen zonder element: [weggefilterd](bedrijfsarchitectuur/weggefilterd.md) (representatie, locatie).
+Elementtypen zonder element: [weggefilterd](bedrijfsarchitectuur/weggefilterd.md) (representatie).
 
 ## Motivatie
 
 | Elementtype | ArchiMate | Paginatype | In Over GEMMA |
 |---|---|---|---|
 | [Beleidskader](motivatie/beleidskader-modelleerafspraken.md) | Driver | `beleidskader` | ja |
+| [Kwaliteitsdoel](motivatie/kwaliteitsdoel-modelleerafspraken.md) | Goal | matchdoel (GEMMA) | ja |
 
-Elementtypen zonder element: [weggefilterd](motivatie/weggefilterd.md) (doel, uitkomst, principe, eis, beperking, waarde, kernwaarde, vermogen, groepering).
+Elementtypen zonder element: [weggefilterd](motivatie/weggefilterd.md) (uitkomst, principe, eis, beperking, waarde, kernwaarde, vermogen).
 
 ## Applicatiearchitectuur
 
@@ -49,6 +50,14 @@ Elementtypen zonder element: [weggefilterd](motivatie/weggefilterd.md) (doel, ui
 | [Data-object](applicatiearchitectuur/data-object-modelleerafspraken.md) | Data Object | annotatie | ja |
 
 Elementtypen zonder element: [weggefilterd](applicatiearchitectuur/weggefilterd.md) (applicatiecomponent, applicatieservice, applicatiefunctie, applicatie-interface, applicatieproces, applicatie-event).
+
+## Overig
+
+| Elementtype | ArchiMate | Paginatype | In Over GEMMA |
+|---|---|---|---|
+| [Groepering](overig/groepering-modelleerafspraken.md) | Grouping | indeling | ja |
+
+Elementtypen zonder element: [weggefilterd](overig/weggefilterd.md) (locatie).
 
 ## Relatietypen
 
@@ -64,6 +73,7 @@ Elementtypen zonder element: [weggefilterd](applicatiearchitectuur/weggefilterd.
 | stroom | flow | gedrag geeft iets door aan ander gedrag |
 | realisatie | realization | gedrag realiseert een dienst; een data-object realiseert een bedrijfsobject |
 | bediening | serving | het een ondersteunt of bedient het ander |
+| invloed | influence | een motivatie-element beïnvloedt een ander, met een sterkte |
 
 De vaste namen: een **handeling** van gedrag op een object (registreren: schrijven, bijwerken: lezen-schrijven, beëindigen: schrijven, raadplegen: lezen, verstrekken: lezen, bewaren: lezen-schrijven, overbrengen: lezen, vernietigen: schrijven), een **verantwoordelijkheid** van een rol voor een object (houder: lezen-schrijven, bronhouder: schrijven, beheerder: lezen-schrijven, verstrekker: lezen, afnemer: lezen, toezichthouder: lezen, betrokkene: lezen, partij: lezen-schrijven), en de **grondslag** van een beleidskader (*is grondslag voor*: Europese regelgeving, Rijksregelgeving; Gemeentelijke regelgeving alleen naar een UPL-product of -dienst zonder landelijke grondslag; *werkt uit voor*: Gemeentelijke regelgeving: werkt de wet uit; *geeft richtlijn voor*: Richtlijn: geen wettelijke grondslag).
 
@@ -95,5 +105,5 @@ Per brontype (rij) en doeltype (kolom) de toegestane relaties; \* is een uitbrei
 | [Functie-indeling naar domein](indelingen.md) | functies, producten en diensten | het GEMMA-domein | GEMMA |
 | [Procesindeling naar kernobject](indelingen.md) | processen, gebeurtenissen en ketensamenwerkingen | het kernobject | wiki |
 | [Procesindeling naar soort werk](indelingen.md) | bedrijfsprocessen; via generieke GEMMA-elementen ook gebeurtenissen, diensten en rollen | de soort werk (het processenlandschap van GEMMA) | GEMMA, uitgebreid |
-| [Doelgroepindeling](indelingen.md) | partijen en kanalen | de doelgroep | GEMMA, uitgebreid |
+| [Doelgroepindeling](indelingen.md) | partijen en kanalen | de doelgroep | wiki |
 | [Grondslagindeling](indelingen.md) | beleidskaders | het brontype van de regeling, afgeleid uit de regelgever | wiki |

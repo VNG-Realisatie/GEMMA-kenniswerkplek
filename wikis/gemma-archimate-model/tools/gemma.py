@@ -16,6 +16,7 @@ Gebruik (vanuit de wikimap):
     uv run python tools/gemma.py groepering <id>            # groeperingen (beleidsdomein) die dit element aggregeren
     uv run python tools/gemma.py relaties <id>
     uv run python tools/gemma.py kandidaten <naam> [--ggm-guid EAID_…] [--synoniemen a,b]
+    uv run python tools/gemma.py kwaliteitsdoelen          # de kwaliteitsdoelen (id, naam, definitie) voor een beleidskader
 """
 from __future__ import annotations
 
@@ -205,6 +206,13 @@ def velden(element: dict) -> dict:
     return {k: v for k, v in kandidaten.items() if v}
 
 
+def kwaliteitsdoelen(data: dict) -> list[dict]:
+    """De kwaliteitsdoelen van GEMMA (Goal met GEMMA type Kwaliteitsdoel), op naam."""
+    return [{"id": e["id"], "naam": e["naam"], "definitie": e["documentatie"]}
+            for e in sorted(data["elementen"].values(), key=lambda x: x["naam"])
+            if e["type"] == "goal" and e["eigenschappen"].get("GEMMA type") == "Kwaliteitsdoel"]
+
+
 def relaties(data: dict, element_id: str) -> list[dict]:
     return [r for r in data["relaties"].values() if element_id in (r["bron"], r["doel"])]
 
@@ -300,6 +308,7 @@ def main(argv: list[str] | None = None) -> int:
     k.add_argument("naam")
     k.add_argument("--ggm-guid")
     k.add_argument("--synoniemen", default="", help="Komma-gescheiden andere namen")
+    sub.add_parser("kwaliteitsdoelen")
     a = p.parse_args(argv)
 
     if a.cmd == "release":
@@ -314,7 +323,9 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         sys.stdout.write(yaml.safe_dump(velden(gevonden[0]), sort_keys=False, allow_unicode=True))
         return 0
-    if a.cmd == "kandidaten":
+    if a.cmd == "kwaliteitsdoelen":
+        resultaat = kwaliteitsdoelen(data)
+    elif a.cmd == "kandidaten":
         resultaat = kandidaten(data, a.naam, a.ggm_guid, [s.strip() for s in a.synoniemen.split(",") if s.strip()])
     else:
         fn = {"zoek": zoek, "element": zoek_element, "koppel": koppel, "groepering": groepering, "relaties": relaties}[a.cmd]

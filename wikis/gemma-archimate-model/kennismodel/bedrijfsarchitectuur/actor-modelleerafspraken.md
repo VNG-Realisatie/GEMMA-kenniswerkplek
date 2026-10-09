@@ -39,6 +39,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | uit | aggregatie | [Actor](actor-modelleerafspraken.md) | omvat |  | nee: uitbreiding op het GEMMA-kennismodel | structureel: deel van, lid van |
 | uit | associatie (gericht) | [Actor](actor-modelleerafspraken.md) | is voorzitter van |  | nee: uitbreiding op het GEMMA-kennismodel | alleen een structurele relatie |
 | in | aggregatie | [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) | vrij, uit de bron |  | ja |  |
+| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Doelgroepindeling |
 
 ## Weggefilterd
 

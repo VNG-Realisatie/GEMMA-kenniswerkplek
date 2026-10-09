@@ -48,6 +48,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | in | associatie (gericht) | [Afspraak](afspraak-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel |  |
 | in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor, is model voor |  | nee: uitbreiding op het GEMMA-kennismodel | de regeling die het object regelt; *is model voor*: een VNG-model voor de soort regeling (Regeling) |
 | in | realisatie | [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) | vrij, uit de bron |  | ja | nu een annotatie |
+| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Beleidsdomeinindeling |
 
 ## Weggefilterd
 

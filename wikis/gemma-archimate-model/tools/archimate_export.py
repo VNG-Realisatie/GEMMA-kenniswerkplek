@@ -19,8 +19,9 @@ een functie; een proces zonder GEMMA-match staat in de map `Procesindeling naar 
 map `Ketensamenwerking` (zoals in GEMMA); een levensloopproces zonder GEMMA-match krijgt GEMMA type *Bedrijfsproces
 (cluster)* en valt, net als een bedrijfsinteractie, in de Beleidsdomeinindeling onder het beleidsdomein van zijn
 kernobject; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
-letterlijk meegaat); beleidsdomein en domein worden een aggregatie vanuit de bestaande GEMMA-groepering, of vanuit een
-nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type `Groep`);
+letterlijk meegaat); `kwaliteitsdoelen` van een beleidskader een invloed *geeft grondslag aan* met de sterkte naar
+het GEMMA-kwaliteitsdoel; beleidsdomein en domein worden een aggregatie vanuit de bestaande GEMMA-groepering, of vanuit een
+nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit een groepering van de wiki per doelgroep, in de map `Doelgroepindeling`;
 een beleidskader daarnaast een aggregatie vanuit de groep Europese regelgeving, Rijksregelgeving, Richtlijn of
 Gemeentelijke regelgeving (naar de regelgever), in de map `Grondslagindeling` van de wiki; alleen gevulde groepen. De
 id's van die groepen houden hun sleutel `regelgeving`, zodat ze bij het hernoemen van de indeling gelijk bleven.
@@ -158,6 +159,7 @@ class Uitkomst:
     overgeslagen: list[str] = field(default_factory=list)
     groeperingen_nieuw: list[str] = field(default_factory=list)
     specialisaties: list[str] = field(default_factory=list)
+    kwaliteitsdoelen: list[str] = field(default_factory=list)
     indelingen: int = 0
     kennismodel_elementen: int = 0
     kennismodel_relaties: int = 0
@@ -289,16 +291,6 @@ def _vind_taakveld(gemma_data: dict, taakveld: str) -> dict | None:
     return None
 
 
-def _vind_doelgroep(gemma_data: dict, naam: str) -> dict | None:
-    """De GEMMA-rol van een doelgroep (*Gemeente*, *Inwoners en ondernemers*, *Ketenpartners*): een rol met de
-    eigenschap *GEMMA type* `Groep`, in GEMMA in de map `Business / Bedrijfsrollen`."""
-    for e in sorted(gemma_data["elementen"].values(), key=lambda x: x["id"]):
-        if (e["type"] == "business-role" and e["naam"].strip().lower() == naam.strip().lower()
-                and e["eigenschappen"].get("GEMMA type") == "Groep"):
-            return e
-    return None
-
-
 def _stub(b: Bouwer, g: dict) -> None:
     """Het GEMMA-element letterlijk meenemen, zodat een relatie ernaartoe in het bestand een doel heeft."""
     if g["id"] in b.meegenomen:
@@ -315,9 +307,10 @@ def _stub(b: Bouwer, g: dict) -> None:
 
 
 def _relatie(b: Bouwer, uit: Uitkomst, gemma_relaties: dict, rtype: str, bron: str, doel: str, herkomst: str,
-             paren: list[tuple[str, str]], naam: str = "", sleutel: str | None = None) -> None:
+             paren: list[tuple[str, str]], naam: str = "", sleutel: str | None = None,
+             attributen: dict[str, str] | None = None) -> None:
     """Een relatie met het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id
-    (uit `sleutel`, standaard de herkomst)."""
+    (uit `sleutel`, standaard de herkomst). `attributen`: extra XML-attributen, zoals `strength` bij een invloed."""
     bestaand = sorted(gemma_relaties.get((rtype, bron, doel), []), key=lambda x: x["id"])
     g = bestaand[0] if bestaand else None
     rid = g["id"] if g else vast_id("relatie", sleutel or herkomst, rtype, bron, doel)
@@ -327,7 +320,7 @@ def _relatie(b: Bouwer, uit: Uitkomst, gemma_relaties: dict, rtype: str, bron: s
     attrs = {XSI: xsi_type(rtype)}
     if naam:
         attrs["name"] = naam
-    attrs.update({"id": rid, "source": bron, "target": doel})
+    attrs.update({"id": rid, "source": bron, "target": doel, **(attributen or {})})
     el = ET.Element("element", attrs)
     if g is not None and g.get("documentatie"):
         ET.SubElement(el, "documentation").text = g["documentatie"]
@@ -487,6 +480,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                 b.eigen_map("relations", []).objecten.append(el)
 
     _gemma_specialisaties(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
+    _kwaliteitsdoelen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
     _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels, beleidsdomeinen)
     if kennismodel:
         _kennismodel(b, uit, kennismodel)
@@ -520,6 +514,26 @@ def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: d
         uit.specialisaties.append(f"{data['begrip']} → {g['naam']}")
 
 
+def _kwaliteitsdoelen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict,
+                      sleutels: dict[str, str] | None = None) -> None:
+    """`kwaliteitsdoelen` van een beleidskader: een invloed *geeft grondslag aan* met de sterkte naar het
+    GEMMA-kwaliteitsdoel, dat letterlijk meegaat."""
+    for bid, data in sorted(gekozen.items()):
+        if bid not in ids:
+            continue
+        for k in data.get("kwaliteitsdoelen") or []:
+            g = gemma_data["elementen"].get(k["id"])
+            if g is None or g["type"] != "goal":
+                uit.fouten.append(f"{bid}: kwaliteitsdoel {k['id']} staat niet in het ingelezen GEMMA-model")
+                continue
+            _stub(b, g)
+            _relatie(b, uit, gemma_relaties, "influence-relationship", ids[bid], g["id"], f"{bid}#kwaliteitsdoel:{g['id']}",
+                     [(eig("onderbouwing"), k["onderbouwing"])], naam="geeft grondslag aan",
+                     sleutel=f"{(sleutels or {}).get(bid, bid)}#kwaliteitsdoel:{g['id']}",
+                     attributen={"strength": k["sterkte"]})
+            uit.kwaliteitsdoelen.append(f"{data['begrip']} → {g['naam']} ({k['sterkte']})")
+
+
 # De paginatypen die altijd in een indeling vallen (kennismodel). Een levensloopproces en een bedrijfsinteractie vallen
 # ook in de Beleidsdomeinindeling, onder het beleidsdomein van hun kernobject: daarboven staat in de Procesindeling naar
 # kernobject niets.
@@ -527,16 +541,18 @@ BELEIDSDOMEIN_TYPEN = km.paginatypen_in("Beleidsdomeinindeling")
 DOMEIN_TYPEN = km.paginatypen_in("Functie-indeling naar domein")
 DOELGROEP_TYPEN = km.paginatypen_in("Doelgroepindeling")
 GRONDSLAGINDELING = "Grondslagindeling"
+DOELGROEPINDELING = "Doelgroepindeling"
 
 
 def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict,
                 sleutels: dict[str, str] | None = None, beleidsdomeinen: dict[str, dict] | None = None) -> None:
     """Aggregaties vanuit de GEMMA-groepering van de Beleidsdomeinindeling en de Functie-indeling naar domein, en vanuit
-    de GEMMA-rol van de Doelgroepindeling; een beleidsdomein dat GEMMA niet kent wordt een nieuwe groepering onder het
-    taakveld. De beschrijving uit het register van beleidsdomeinen wordt de documentatie van een nieuwe groepering, en
+    de groeperingen van de wiki voor de Grondslagindeling en de Doelgroepindeling; een beleidsdomein dat GEMMA niet kent
+    wordt een nieuwe groepering onder het taakveld. De beschrijving uit het register van beleidsdomeinen wordt de documentatie van een nieuwe groepering, en
     bij een GEMMA-groepering een wiki-eigenschap: de documentatie van GEMMA blijft (besluit redacteur 2026-10-08)."""
     nieuwe: dict[str, str] = {}
     nieuwe_regelgeving: dict[str, str] = {}
+    nieuwe_doelgroepen: dict[str, str] = {}
     register = beleidsdomeinen or {}
 
     def aggregatie(groep_id: str, element: str, indeling: str, bid: str, gemma_groep: dict | None = None) -> None:
@@ -612,11 +628,21 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
                 uit.groeperingen_nieuw.append(f"{naam} ({GRONDSLAGINDELING})")
             aggregatie(nieuwe_regelgeving[naam], element, GRONDSLAGINDELING, bid)
         if paginatype in DOELGROEP_TYPEN and data.get("doelgroep"):
-            rol = _vind_doelgroep(gemma_data, data["doelgroep"])
-            if rol is None:
-                uit.overgeslagen.append(f"{data['begrip']}: doelgroep '{data['doelgroep']}' bestaat niet als rol in GEMMA")
+            doelgroep = data["doelgroep"]
+            if doelgroep not in km.DOELGROEPEN:
+                uit.overgeslagen.append(f"{data['begrip']}: '{doelgroep}' is geen doelgroep van de {DOELGROEPINDELING}")
             else:
-                aggregatie(rol["id"], element, "Doelgroepindeling", bid, rol)
+                naam = doelgroep.capitalize()
+                if naam not in nieuwe_doelgroepen:
+                    gid = vast_id("groepering", "doelgroep", naam)
+                    nieuwe_doelgroepen[naam] = gid
+                    el = ET.Element("element", {XSI: "archimate:Grouping", "name": naam, "id": gid})
+                    ET.SubElement(el, "documentation").text = km.DOELGROEP_OMSCHRIJVING[doelgroep]
+                    _eigenschappen(el, [("GEMMA type", "Doelgroep"), (eig("id"), f"doelgroep:{naam}"),
+                                        *b.gemeen("nieuw")])
+                    b.eigen_map("other", [DOELGROEPINDELING]).objecten.append(el)
+                    uit.groeperingen_nieuw.append(f"{naam} ({DOELGROEPINDELING})")
+                aggregatie(nieuwe_doelgroepen[naam], element, DOELGROEPINDELING, bid)
 
 
 
@@ -938,10 +964,15 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
         regels += ["## Specialisaties naar een GEMMA-element", "",
                    "Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets in gewijzigd.", ""]
         regels += [f"- {x}" for x in sorted(uit.specialisaties)] + [""]
+    if uit.kwaliteitsdoelen:
+        regels += ["## Kwaliteitsdoelen", "",
+                   "Beleidskaders die grondslag geven aan een kwaliteitsdoel van GEMMA (invloed, met de sterkte). Het "
+                   "kwaliteitsdoel gaat letterlijk mee.", ""]
+        regels += [f"- {x}" for x in sorted(uit.kwaliteitsdoelen)] + [""]
     if uit.groeperingen_nieuw:
         regels += ["## Nieuwe groeperingen", "",
                    "Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder het GEMMA-taakveld als "
-                   "dat bestaat) en de groepen van de Grondslagindeling.", ""]
+                   "dat bestaat), de groepen van de Grondslagindeling en de doelgroepen.", ""]
         regels += [f"- {x}" for x in sorted(uit.groeperingen_nieuw)] + [""]
     if uit.nieuw:
         regels += ["## Nieuw in GEMMA", ""] + [f"- {e['naam']}" for e in sorted(uit.nieuw, key=lambda e: e["naam"].lower())] + [""]

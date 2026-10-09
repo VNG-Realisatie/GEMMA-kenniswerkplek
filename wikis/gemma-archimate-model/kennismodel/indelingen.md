@@ -83,9 +83,11 @@ Waar staat elk element in het model? Een **indeling** ordent naar één criteriu
 | Deelt in | [Actor](bedrijfsarchitectuur/actor-modelleerafspraken.md); [Rol](bedrijfsarchitectuur/rol-modelleerafspraken.md); [Bedrijfssamenwerking](bedrijfsarchitectuur/bedrijfssamenwerking-modelleerafspraken.md); [Kanaal](bedrijfsarchitectuur/kanaal-modelleerafspraken.md) |
 | Naar | de doelgroep |
 | Niveaus | doelgroep (gemeente, inwoners en ondernemers, ketenpartners) › element |
-| Groepering | GEMMA, uitgebreid |
-| In Archi | aggregatie vanuit de GEMMA-rol van de doelgroep (GEMMA type *Groep*) |
+| Groepering | wiki |
+| In Archi | aggregatie vanuit de groepering van de doelgroep, in de map Doelgroepindeling |
 | Eigenschappen | `doelgroep` |
+
+- Een doelgroep is een ordening, geen hoedanigheid: in de wiki een groepering. GEMMA modelleert de doelgroep als rol (GEMMA type *Groep*) die applicatieservices ordent; die afwijking is teruggemeld.
 
 ## Grondslagindeling
 

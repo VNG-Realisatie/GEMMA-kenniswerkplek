@@ -44,6 +44,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | uit | specialisatie | [Dienst](dienst-modelleerafspraken.md) | is een |  | nee: uitbreiding op het GEMMA-kennismodel | naar een generieke dienst |
 | in | aggregatie | [Product](product-modelleerafspraken.md) | omvat | *omvat diensten en afspraken* | ja |  |
 | in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor, werkt uit voor, geeft richtlijn voor | *is grondslag voor* | nee: uitbreiding op het GEMMA-kennismodel | de grondslag; bij voorkeur naar een product |
+| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling |
 
 ## Weggefilterd
 
