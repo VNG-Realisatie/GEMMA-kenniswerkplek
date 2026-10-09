@@ -31,6 +31,7 @@ De AI schrijft dus geen pagina's, geen links en geen statussen. Wat het render-s
 wikis/gemma-archimate-model/
 ├── AGENTS.md                         wat geldt: de regels, met de kaart "Waar vind je wat"
 ├── ARCHITECTURE.md · wiki.yaml · todo.md · log.md
+├── plannen/<datum>-<titel>.md       plannen voor grotere wijzigingen; wat geldt staat daarna in de regels en dit document
 ├── beoordelingen/                    wat de AI schrijft (YAML)
 │   ├── begrippen/<id>.yaml           het oordeel per begrip (AI); status en afgeleid (scripts)
 │   ├── onderwerpen/<onderwerp>.yaml  naam, omschrijving, bronnen en status van een onderwerp

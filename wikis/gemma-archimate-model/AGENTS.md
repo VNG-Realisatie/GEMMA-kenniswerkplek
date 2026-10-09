@@ -89,6 +89,7 @@ Een regel is kort: de kern. Staat er meer bij een regel, dan noemt zij waar de u
 | Elementpagina's en overzichten | `bedrijfsarchitectuur/`, `motivatie/`, `begrippen/`, `overzichten/` | per elementtype | `tools/render.py` | nee |
 | Terugmeldlijsten, ter beoordeling, voortgang | `terugmeldingen/`, [ter-beoordeling.md](ter-beoordeling.md), [voortgang.md](voortgang.md) | lijst | `tools/render.py` | nee |
 | Open punten | [todo.md](todo.md) | — | de AI | ja |
+| Plannen voor grotere wijzigingen (een plan dat klaar is, blijft als geschiedenis) | `plannen/<datum>-<titel>.md` | — | de AI, met de redacteur | ja |
 | Akkoorden | [log.md](log.md) | — | `llmwiki promote apply` | nee |
 | Controles | `tools/afleiden.py` (fout), `tools/signalen.py` (signaal) | — | — | — |
 
