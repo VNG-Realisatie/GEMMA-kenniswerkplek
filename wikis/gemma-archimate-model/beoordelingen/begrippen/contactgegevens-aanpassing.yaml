@@ -193,7 +193,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet beoordeeld: verwijzing naar een later onderwerp.'
 toelichting: 'Verwijzing: UPL-product nr. 105 (Wet open overheid art. 3.3) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): het gaat om het aanpassen van contactgegevens bij de gemeente; de UPL noemt art. 3.3 Wet open overheid en geen wet uit Burgerzaken, en de bronnen van Burgerzaken beschrijven het product niet. Het product krijgt zijn pagina in een later onderwerp over dienstverlening aan inwoners.'
-afgeleid:
+beslist:
   uitkomst:
     soort: verwijzing
     regel: 6

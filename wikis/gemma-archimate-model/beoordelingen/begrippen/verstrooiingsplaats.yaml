@@ -193,7 +193,7 @@ toelichting: 'Onderdeel van Begraafplaats: Plaats op de begraafplaats waar as wo
 genoemd_begrip: Begraafplaats
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

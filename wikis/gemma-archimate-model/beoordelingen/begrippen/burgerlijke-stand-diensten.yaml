@@ -401,7 +401,7 @@ besluiten:
   besluit: 'Thuisonderwerp Burgerzaken (regel Thuishoren): de functie bedient Bijhouden burgerlijke stand en omvat de diensten van de burgerlijke stand; Lijkbezorging houdt haar tekst per onderwerp. Inhoudelijk eenduidig; dat de functie eerst in Lijkbezorging is beoordeeld, komt door de volgorde van inlezen en is geen argument. Het object in Archi blijft.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

@@ -211,7 +211,7 @@ besluiten:
   gevolg: afwijzen
   redenen:
   - 'soort partij: nee'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_element
     regel: 22

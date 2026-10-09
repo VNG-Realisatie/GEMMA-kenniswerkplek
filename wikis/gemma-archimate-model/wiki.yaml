@@ -72,7 +72,7 @@ page_types:                          # pagina's van curated typen en onderwerpen
 
 curation:
   beoordelingen: beoordelingen/begrippen   # het oordeel van de AI per begrip (YAML); zie ARCHITECTURE.md
-  afleiden: tools/afleiden.py              # type, status en modelvelden; daarna de render
+  beslissen: tools/beslissen.py              # type, status en modelvelden; daarna de render
   render: tools/render.py                  # alle pagina's uit de beoordelingen
   states: [kandidaat, review, goedgekeurd, afgewezen]
   gated: [goedgekeurd]

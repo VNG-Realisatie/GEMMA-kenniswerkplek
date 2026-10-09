@@ -264,7 +264,7 @@ besluiten:
   besluit: 'Behouden met grondslag Wet BRP art. 2.64, 2.66 en 2.67 (regel Wettelijke grondslag): de gemeente voert als RNI-loket de inschrijving van de minister uit.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 29

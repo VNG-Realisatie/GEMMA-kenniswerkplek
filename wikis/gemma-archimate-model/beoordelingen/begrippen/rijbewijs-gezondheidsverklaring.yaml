@@ -220,7 +220,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Geen zelfstandige dienst maar een subdienst: onderdeel van het besluit over de aanvraag (Rijbewijs aanvragen, Behandelen aanvraag rijbewijs); de gemeente controleert de verklaring van geschiktheid bij het CBR. Terugmelding aan de procesarchitectuur (18).'
   gevolg: verwerkt
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

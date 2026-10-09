@@ -5,14 +5,14 @@ metadata:
   kind: capability
   scope: wiki
   requires-skills: "gemma-archimate-model-criteria"
-  requires-tools: "python:tools/afleiden.py python:tools/bepaal_type.py python:tools/relaties.py python:tools/ggm.py python:tools/gemma.py"
+  requires-tools: "python:tools/beslissen.py python:tools/bepaal_type.py python:tools/relaties.py python:tools/ggm.py python:tools/gemma.py"
   reads: "bronanalyse"
   writes: "beoordeling"
 ---
 
 # Beoordelen: het oordeel per begrip
 
-De AI schrijft alleen het oordeel. Type, status, letterlijke modelvelden, paginapad en de hele pagina komen uit de scripts. Het formaat van een beoordeling staat in `schemas/beoordeling.schema.json` (gegenereerd door `tools/bepaal_type.py schema`); `tools/afleiden.py` toetst het.
+De AI schrijft alleen het oordeel. Type, status, letterlijke modelvelden, paginapad en de hele pagina komen uit de scripts. Het formaat van een beoordeling staat in `schemas/beoordeling.schema.json` (gegenereerd door `tools/bepaal_type.py schema`); `tools/beslissen.py` toetst het.
 
 ## 1. Lezen
 
@@ -88,20 +88,20 @@ Velden en wat erin hoort:
 | `besluiten` | `references/besluiten.md` |
 | `kernobject`, `afnemer`, `domein`, `doelgroep`, `regelgever`, `gemma_generiek` | skill `gemma-archimate-model-criteria`, stap 7 (achtergrond: `docs/indelingen.md`) |
 
-De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet in een beoordeling of in de omschrijving van een onderwerp, maar in het register `beoordelingen/beleidsdomeinen.yaml` (`beleidsdomein`, `taakveld`, `beschrijving`, `bronnen`); de render toont haar in het overzicht en de export zet haar op de groepering. `tools/afleiden.py` controleert dat een element het beleidsdomein gebruikt en het taakveld klopt.
+De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet in een beoordeling of in de omschrijving van een onderwerp, maar in het register `beoordelingen/beleidsdomeinen.yaml` (`beleidsdomein`, `taakveld`, `beschrijving`, `bronnen`); de render toont haar in het overzicht en de export zet haar op de groepering. `tools/beslissen.py` controleert dat een element het beleidsdomein gebruikt en het taakveld klopt.
 
 ## 5. Match op betekenis
 
-`uv run python tools/ggm.py kandidaten <naam> [--synoniemen a,b]` en `uv run python tools/gemma.py kandidaten <naam> [--ggm-guid <guid>]` geven in één overzicht de naamgenoten (mogelijke homoniemen), de treffers met definitie en beleidsdomein, en de generalisaties. Kies op betekenis: vergelijk definities, volg relaties en generalisaties, en let op homoniemen en synoniemen. Vul alleen `guid` of `id`, `sterkte` en `onderbouwing` in; de letterlijke velden haalt `tools/afleiden.py` op.
+`uv run python tools/ggm.py kandidaten <naam> [--synoniemen a,b]` en `uv run python tools/gemma.py kandidaten <naam> [--ggm-guid <guid>]` geven in één overzicht de naamgenoten (mogelijke homoniemen), de treffers met definitie en beleidsdomein, en de generalisaties. Kies op betekenis: vergelijk definities, volg relaties en generalisaties, en let op homoniemen en synoniemen. Vul alleen `guid` of `id`, `sterkte` en `onderbouwing` in; de letterlijke velden haalt `tools/beslissen.py` op.
 
 ## 6. Relaties
 
-Na een eerste `uv run python tools/afleiden.py` (zonder relaties werkt dat al): `uv run python tools/relaties.py voorstel <id>` geeft kandidaten uit het GGM en uit de relatietabellen van de bronanalyses, als YAML voor `relaties:`. Kies, geef een herkenbare naam, controleer richting en kardinaliteit. Een relatie staat alleen in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. `uv run python tools/relaties.py uit-bronnen <onderwerp>` toont welke relaties uit de bronnen vervallen omdat een kant geen element is; leg belangrijke vervallen relaties voor.
+Na een eerste `uv run python tools/beslissen.py` (zonder relaties werkt dat al): `uv run python tools/relaties.py voorstel <id>` geeft kandidaten uit het GGM en uit de relatietabellen van de bronanalyses, als YAML voor `relaties:`. Kies, geef een herkenbare naam, controleer richting en kardinaliteit. Een relatie staat alleen in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. `uv run python tools/relaties.py uit-bronnen <onderwerp>` toont welke relaties uit de bronnen vervallen omdat een kant geen element is; leg belangrijke vervallen relaties voor.
 
 ## 7. Terugmeldingen (GGM, procesarchitectuur en GEMMA)
 
 Een bevinding over het GGM, over de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel procesarchitectuur) of over het GEMMA-model zelf zet je zonder nummer in het register van de ontvanger: `beoordelingen/terugmeldingen/ggm.yaml`, `procesarchitectuur.yaml` of `gemma.yaml`. Welk register, welke velden en typen, de opbouw (**GGM:**/**UPL:**/**Kennismodel:**/**GEMMA:**, **Bevinding:**, **Voorstel:**) en hoe je schrijft voor een lezer buiten de wiki: `references/terugmeldingen.md`.
 
-## 8. Afleiden en voorleggen
+## 8. Beslissen en voorleggen
 
-Draai `uv run python tools/afleiden.py`. De uitkomst van de beslistabel is bindend; pas een kenmerk alleen aan als het aantoonbaar fout was. Wat dan nog een keuze van de redacteur vraagt, leg je één voor één voor in de chat en leg je vast in `besluiten:`: `references/besluiten.md`.
+Draai `uv run python tools/beslissen.py`. De uitkomst van de beslistabel is bindend; pas een kenmerk alleen aan als het aantoonbaar fout was. Wat dan nog een keuze van de redacteur vraagt, leg je één voor één voor in de chat en leg je vast in `besluiten:`: `references/besluiten.md`.

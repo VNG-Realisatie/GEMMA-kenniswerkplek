@@ -200,7 +200,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Specialisatie zonder pagina van Vestiging vanuit het buitenland: de eerste inschrijving van iemand die nooit in de BRP of RNI stond (HUP Immigratie).'
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

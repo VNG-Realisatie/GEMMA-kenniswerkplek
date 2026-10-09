@@ -236,7 +236,7 @@ besluiten:
 genoemd_begrip: Behandelen naturalisatieverzoek
 toelichting: 'Deelproces zonder pagina van Behandelen naturalisatieverzoek, Behandelen optieverklaring: het oproepen van nieuwe Nederlanders en het uitreiken van de bevestiging of het naturalisatiebesluit, na de verklaring van verbondenheid.'
 relaties: []
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 30

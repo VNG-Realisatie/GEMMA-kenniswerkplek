@@ -236,7 +236,7 @@ besluiten:
   gevolg: verwerkt
   besluit: 'UPL-product van lijkbezorging, beoordeeld met de toets van 2026-10-05: een product bij een dienst met een afspraak, anders een dienst; de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt.'
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

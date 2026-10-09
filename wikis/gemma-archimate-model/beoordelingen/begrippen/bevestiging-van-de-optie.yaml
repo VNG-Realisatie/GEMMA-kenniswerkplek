@@ -193,7 +193,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Onderdeel, geen pagina: de uitkomst van Behandelen optieverklaring, een beschikking van de burgemeester. Ze treedt in werking door de uitreiking tijdens de naturalisatieceremonie en vervalt als ze niet binnen een jaar is bekendgemaakt; de minister kan haar intrekken (Besluit verkrijging en verlies Nederlanderschap art. 11, 60a; Rijkswet op het Nederlanderschap art. 15 lid 1 onder e). De weigering is de andere uitkomst. Precedent: Weigering reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

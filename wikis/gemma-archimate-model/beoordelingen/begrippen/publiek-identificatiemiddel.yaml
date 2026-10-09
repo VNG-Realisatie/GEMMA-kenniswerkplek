@@ -192,7 +192,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Onderdeel, geen pagina: het van rijkswege uitgegeven elektronische middel op het reisdocument voor authenticatie bij elektronische dienstverlening (Paspoortwet art. 1 onder r, 3a). Vermeld bij Reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

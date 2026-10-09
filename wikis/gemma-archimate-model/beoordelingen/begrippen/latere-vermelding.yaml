@@ -196,7 +196,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 genoemd_begrip: Akte van de burgerlijke stand
 toelichting: 'Onderdeel van de akte van de burgerlijke stand, geen pagina: de vermelding van een naamswijziging, adoptie, geslachtswijziging, echtscheiding of ontbinding wordt aan de akte toegevoegd (BW 1 art. 20; Besluit burgerlijke stand art. 53). Het toevoegen is het bedrijfsproces Toevoegen latere vermelding.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

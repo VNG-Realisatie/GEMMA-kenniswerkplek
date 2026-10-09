@@ -237,7 +237,7 @@ besluiten:
   besluit: Naam Grafonderhoud, de UPL-naam letterlijk; Onderhoud van graven (beleid) wordt een synoniem.
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

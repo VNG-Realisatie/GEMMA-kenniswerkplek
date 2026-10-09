@@ -197,7 +197,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Verwijzing naar een later onderwerp invordering (belastingen en terugvordering): het verzoek verandert geen reisdocument en de grond ontstaat in de invordering (Paspoortwet art. 22). Het verzoek van de burgemeester bij fraude met reisdocumenten (art. 24 onder b) staat in de beschrijving van Vervallen verklaren reisdocument.'
   gevolg: verwerkt
-afgeleid:
+beslist:
   uitkomst:
     soort: verwijzing
     regel: 6

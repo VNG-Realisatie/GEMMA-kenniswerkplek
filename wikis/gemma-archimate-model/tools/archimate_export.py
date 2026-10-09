@@ -172,18 +172,18 @@ class Uitkomst:
 
 
 def controleer(wiki_root: Path, gemma_data: dict) -> list[str]:
-    """Fouten die een export tegenhouden: afleiden met fouten of verouderd, render niet actueel, GEMMA zonder mappen."""
-    import afleiden
+    """Fouten die een export tegenhouden: beslissen met fouten of verouderd, render niet actueel, GEMMA zonder mappen."""
+    import beslissen
     import render
 
-    res = afleiden.afleiden(wiki_root, schrijven=False)
-    fouten = [f"afleiden: {f}" for f in res.fouten]
+    res = beslissen.beslissen(wiki_root, schrijven=False)
+    fouten = [f"beslissen: {f}" for f in res.fouten]
     if res.gewijzigd:
-        fouten.append(f"afleiden is verouderd voor {', '.join(res.gewijzigd)}: draai eerst 'uv run python tools/afleiden.py'")
+        fouten.append(f"beslissen is verouderd voor {', '.join(res.gewijzigd)}: draai eerst 'uv run python tools/beslissen.py'")
     if not res.fouten:
         _, schrijven, verwijderen = render.verschillen(wiki_root)
         if schrijven or verwijderen:
-            fouten.append("de pagina's wijken af van de beoordelingen: draai eerst 'uv run python tools/afleiden.py'")
+            fouten.append("de pagina's wijken af van de beoordelingen: draai eerst 'uv run python tools/beslissen.py'")
     if gemma_data.get("model", {}).get("formaat") != "archimate" or "mappen" not in gemma_data:
         fouten.append("het GEMMA-model is niet als Archi-bestand ingelezen (geen map-id's): neem een .archimate op met "
                       "'uv run python tools/gemma.py release <bestand.archimate> --id <bron-id>' (skill gemma-archimate-model-gemma-release)")
@@ -197,7 +197,7 @@ def selectie(begrippen: dict[str, dict], log: str, concept: bool) -> tuple[dict[
     """De elementen die meegaan: goedgekeurd (met promotieregel in log.md), of bij concept alles behalve afgewezen."""
     gekozen, fouten = {}, []
     for bid, data in begrippen.items():
-        uitkomst = (data.get("afgeleid") or {}).get("uitkomst") or {}
+        uitkomst = (data.get("beslist") or {}).get("uitkomst") or {}
         if uitkomst.get("soort") != "element" or data.get("status") == "afgewezen":
             continue
         if data.get("status") == "goedgekeurd":
@@ -360,8 +360,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
     ids: dict[str, str] = {}
 
     for bid, data in sorted(gekozen.items()):
-        afgeleid = data["afgeleid"]
-        atype = afgeleid["uitkomst"]["archimate_type"]
+        beslist = data["beslist"]
+        atype = beslist["uitkomst"]["archimate_type"]
         gemma_id = (data.get("gemma") or {}).get("id")
         g = gemma_data["elementen"].get(gemma_id) if gemma_id else None
         if gemma_id and g is None:
@@ -385,22 +385,22 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
         if data.get("definitie"):
             ET.SubElement(el, "documentation").text = data["definitie"]
         paren = _gemma_eigen(g["eigenschappen"]) if g is not None else []
-        if g is None and afgeleid["uitkomst"].get("procesniveau") == "levensloopproces":
+        if g is None and beslist["uitkomst"].get("procesniveau") == "levensloopproces":
             paren.append(("GEMMA type", GEMMA_TYPE_LEVENSLOOP))
         paren += [(eig("id"), bid), *b.gemeen("gekoppeld" if g is not None else "nieuw"),
                   (eig("status"), data.get("status", "")),
                   (eig("GEMMA-match"), (data.get("gemma") or {}).get("sterkte", "") if g is not None else ""),
-                  (eig("bronnen"), "; ".join(afgeleid.get("bronnen", []))),
+                  (eig("bronnen"), "; ".join(beslist.get("bronnen", []))),
                   (eig("beschrijving"), "\n\n".join(data.get("beschrijving", []))),
                   (eig("deelprocessen"), "\n".join(f"{i}. {x['naam']}: {x['omschrijving']}"
                                                    + (f" ({x['vindplaats']})" if x.get("vindplaats") else "")
                                                    for i, x in enumerate(data.get("deelprocessen", []), 1))),
                   (eig("synoniemen"), "; ".join(f"{s['naam']} ({s['context']})" if s.get("context") else s["naam"]
                                                 for s in data.get("synoniemen", []))),
-                  (eig("pagina"), afgeleid.get("pad", "")),
-                  (eig("procesniveau"), afgeleid["uitkomst"].get("procesniveau") or ""),
-                  (eig("objectniveau"), afgeleid["uitkomst"].get("objectniveau") or ""),
-                  (eig("generiek"), "ja" if afgeleid["uitkomst"].get("generiek") else ""),
+                  (eig("pagina"), beslist.get("pad", "")),
+                  (eig("procesniveau"), beslist["uitkomst"].get("procesniveau") or ""),
+                  (eig("objectniveau"), beslist["uitkomst"].get("objectniveau") or ""),
+                  (eig("generiek"), "ja" if beslist["uitkomst"].get("generiek") else ""),
                   *[(eig(k), data.get(k, "")) for k in EIGENSCHAPPEN_INDELING]]
         if g is not None:
             vorige_naam = g["naam"] if g["naam"] != data["begrip"] else g["eigenschappen"].get(eig("vorige naam"), "")
@@ -412,12 +412,12 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             doel = b.gemma_map(g["map_id"])
         else:
             uit.nieuw.append({"id": bid, "naam": data["begrip"]})
-            map_naam = Path(page_types.get(afgeleid["uitkomst"].get("paginatype"), {}).get("dir", atype)).name.capitalize()
-            if afgeleid["uitkomst"].get("paginatype") == "bedrijfsproces":
+            map_naam = Path(page_types.get(beslist["uitkomst"].get("paginatype"), {}).get("dir", atype)).name.capitalize()
+            if beslist["uitkomst"].get("paginatype") == "bedrijfsproces":
                 map_naam = PROCESINDELING
-            if afgeleid["uitkomst"].get("paginatype") == "bedrijfsinteractie":
+            if beslist["uitkomst"].get("paginatype") == "bedrijfsinteractie":
                 map_naam = "Ketensamenwerking"
-            submappen = page_types.get(afgeleid["uitkomst"].get("paginatype"), {}).get("submappen", ["taakveld", "beleidsdomein"])
+            submappen = page_types.get(beslist["uitkomst"].get("paginatype"), {}).get("submappen", ["taakveld", "beleidsdomein"])
             doel = b.eigen_map(bovenste_map(atype), [n for n in (map_naam, *(bepaal_type.submap(data, s) for s in submappen)) if n])
         _eigenschappen(el, paren)
         doel.objecten.append(el)
@@ -432,8 +432,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             if r["naar"] not in ids:
                 uit.overgeslagen.append(f"{data['begrip']} → {r['naar']} ({r['soort']}): het doel gaat niet mee in deze export")
                 continue
-            sleutels_ = (km.sleutel_van(data["afgeleid"]["uitkomst"]["archimate_type"]),
-                         km.sleutel_van(gekozen[r["naar"]]["afgeleid"]["uitkomst"]["archimate_type"]))
+            sleutels_ = (km.sleutel_van(data["beslist"]["uitkomst"]["archimate_type"]),
+                         km.sleutel_van(gekozen[r["naar"]]["beslist"]["uitkomst"]["archimate_type"]))
             toegestaan_ = km.toegestaan(sleutels_[0], r["soort"], sleutels_[1])
             if not toegestaan_:
                 weg = km.weggefilterd(*sleutels_[:1], r["soort"], sleutels_[1])
@@ -466,7 +466,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             paren += [(eig("id"), f"{bid}#{i + 1}"), *b.gemeen("gekoppeld" if g is not None else "nieuw"),
                       (eig("grondslag"), r.get("grondslag", "")), (eig("bronnen"), "; ".join(r.get("bronnen", []))),
                       (eig("vindplaats"), r.get("vindplaats", ""))]
-            bron_u, doel_u = data["afgeleid"]["uitkomst"], gekozen[r["naar"]]["afgeleid"]["uitkomst"]
+            bron_u, doel_u = data["beslist"]["uitkomst"], gekozen[r["naar"]]["beslist"]["uitkomst"]
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == doel_u.get("paginatype") == "bedrijfsproces":
                 paren += [(eig("indeling"), PROCESINDELING),
                           (eig("procesniveau"), f"{bron_u.get('procesniveau')} → {doel_u.get('procesniveau')}")]
@@ -503,7 +503,7 @@ def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: d
         if not generiek or bid not in ids:
             continue
         g = gemma_data["elementen"].get(generiek["id"])
-        atype = data["afgeleid"]["uitkomst"]["archimate_type"]
+        atype = data["beslist"]["uitkomst"]["archimate_type"]
         if g is None:
             uit.fouten.append(f"{bid}: gemma_generiek {generiek['id']} staat niet in het ingelezen GEMMA-model")
             continue
@@ -549,11 +549,11 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
     for bid, data in sorted(gekozen.items()):
         if bid not in ids:
             continue
-        paginatype = data["afgeleid"]["uitkomst"].get("paginatype")
+        paginatype = data["beslist"]["uitkomst"].get("paginatype")
         element = ids[bid]
         beleidsdomein = data.get("beleidsdomein")
         bovenaan = paginatype == "bedrijfsinteractie" or (
-            paginatype == "bedrijfsproces" and data["afgeleid"]["uitkomst"].get("procesniveau") == "levensloopproces")
+            paginatype == "bedrijfsproces" and data["beslist"]["uitkomst"].get("procesniveau") == "levensloopproces")
         if (paginatype in BELEIDSDOMEIN_TYPEN or bovenaan) and beleidsdomein:
             groep = _vind_groepering(gemma_data, "Beleidsdomein", beleidsdomein)
             if groep is None:
@@ -589,7 +589,7 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
             # een dienst of functie onder domeinniveau: de aggregatie vanaf de (bovenliggende) functie, een relatie in
             # de beoordeling; een product en een functie op domeinniveau hangen aan de domeingroepering
             if not any(r["soort"] == "aggregatie" and r["naar"] == bid and ids.get(van)
-                       and gekozen[van]["afgeleid"]["uitkomst"].get("paginatype") == "bedrijfsfunctie"
+                       and gekozen[van]["beslist"]["uitkomst"].get("paginatype") == "bedrijfsfunctie"
                        for van in gekozen for r in gekozen[van].get("relaties", [])):
                 uit.overgeslagen.append(f"{data['begrip']}: geen plaats in de Functie-indeling naar domein (geen "
                                         "(bovenliggende) functie in deze export)")

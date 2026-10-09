@@ -119,8 +119,8 @@ _CLAUDE_SETTINGS = {
             "workspace-check*", "run *", "validate *", "source *", "lint*", "pull*", "promote plan*", "publish plan*",
             "voortgang*",
         ) + [
-            # Curatie-wiki met beoordelingen (curation.afleiden/render): afleiden en renderen schrijven alleen in de werkboom
-            "Bash(uv run python tools/afleiden.py*)",
+            # Curatie-wiki met beoordelingen (curation.beslissen/render): beslissen en renderen schrijven alleen in de werkboom
+            "Bash(uv run python tools/beslissen.py*)",
             "Bash(uv run python tools/render.py*)",
         ],
         "ask": _llmwiki_regels("pull* --doel *", "promote apply*", "publish apply*"),

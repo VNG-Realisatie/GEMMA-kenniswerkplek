@@ -251,7 +251,7 @@ besluiten:
   besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 29

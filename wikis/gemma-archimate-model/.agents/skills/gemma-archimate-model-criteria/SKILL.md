@@ -36,7 +36,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
    - `genoemd_begrip` bij *slechts eigenschap*, *eigen identiteit* nee (het geheel), *zelfstandige specialisatie* nee (het bredere begrip) of *waarneembare vorm* (het object);
    - `archimate_buiten_model` bij *buiten dit model*;
    - de eigenschappen van het type uit zijn modelleerafspraken, zoals `kernobject`, `gemma_generiek` en de indelingsvelden `domein`, `afnemer`, `doelgroep` en `regelgever`, naast `taakveld` en `beleidsdomein`. Een relatie naar een generiek object noemt zijn specialisatie zonder pagina in `via`.
-5. Leg de beoordeling vast in `beoordelingen/begrippen/<id>.yaml` (schema `schemas/beoordeling.schema.json`, zie skill `gemma-archimate-model-beoordelen`) en draai `uv run python tools/afleiden.py`. De uitkomst is bindend.
+5. Leg de beoordeling vast in `beoordelingen/begrippen/<id>.yaml` (schema `schemas/beoordeling.schema.json`, zie skill `gemma-archimate-model-beoordelen`) en draai `uv run python tools/beslissen.py`. De uitkomst is bindend.
 6. Is de uitkomst `conflict` of staat `voorleggen` aan, dan leg je het begrip voor aan de redacteur, met de redenen uit de uitkomst. Pas je antwoorden niet aan om een conflict weg te werken, tenzij een antwoord aantoonbaar fout was.
 
 ## Vragenlijst

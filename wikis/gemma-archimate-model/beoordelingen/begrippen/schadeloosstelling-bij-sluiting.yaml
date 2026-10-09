@@ -202,7 +202,7 @@ besluiten:
   redenen:
   - 'wordt bewerkt: nee'
   - 'levenscyclus: nee'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_element
     regel: 22

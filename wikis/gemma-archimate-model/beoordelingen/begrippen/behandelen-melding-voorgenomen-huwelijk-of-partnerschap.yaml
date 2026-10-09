@@ -241,7 +241,7 @@ grondslag: bron
 genoemd_begrip: Voltrekken huwelijk
 toelichting: 'Deelproces zonder pagina van Voltrekken huwelijk, Registreren partnerschap: het ontvangen en toetsen van de melding van een voorgenomen huwelijk of geregistreerd partnerschap.'
 relaties: []
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 30

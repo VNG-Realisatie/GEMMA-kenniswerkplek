@@ -198,7 +198,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Representatie, geen pagina: het dossier van de verstrekkende gemeente met het aanvraagformulier en de andere gegevens van een verstrekt reisdocument (HUP Uitreiking). Vermeld bij Reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_pagina
     regel: 19

@@ -201,7 +201,7 @@ besluiten:
   gevolg: afwijzen
   redenen:
   - 'gemeentelijk: nee'
-afgeleid:
+beslist:
   uitkomst:
     soort: buiten_scope
     regel: 2

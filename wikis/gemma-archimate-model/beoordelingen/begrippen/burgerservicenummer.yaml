@@ -197,7 +197,7 @@ toelichting: 'Eigenschap van Ingeschreven persoon: zijn identificatienummer. Het
 synoniemen:
 - naam: BSN
   context: dagelijks gebruik
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

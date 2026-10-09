@@ -294,7 +294,7 @@ besluiten:
   besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 29

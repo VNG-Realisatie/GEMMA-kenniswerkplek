@@ -201,7 +201,7 @@ toelichting: 'De vorm (representatie) waarin de gegevens van de ingeschreven per
 synoniemen:
 - naam: PL
   context: dagelijks gebruik
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_pagina
     regel: 19

@@ -9,7 +9,7 @@ relaties:
   - {soort: toegang (registreren), naar: beschikking, naam: stelt vast, grondslag: bron, bronnen: [2026-utrecht-nota], vindplaats: § 3.2}
 ```
 
-`soort`: `associatie`, `associatie (gericht)`, `aggregatie`, `compositie`, `specialisatie`, `toewijzing`, `toegang (<handeling>)` vanuit gedrag of `toegang (<verantwoordelijkheid>)` vanuit een rol of bedrijfssamenwerking, `triggering`, `stroom`, `realisatie`, `bediening`. `grondslag`: `ggm-exact`, `ggm-afgeleid` of `bron`; bij `bron` zijn `bronnen` verplicht. `tools/afleiden.py` toetst of de relatie geldig is in ArchiMate en of het doel een element is; dat zijn de enige fouten.
+`soort`: `associatie`, `associatie (gericht)`, `aggregatie`, `compositie`, `specialisatie`, `toewijzing`, `toegang (<handeling>)` vanuit gedrag of `toegang (<verantwoordelijkheid>)` vanuit een rol of bedrijfssamenwerking, `triggering`, `stroom`, `realisatie`, `bediening`. `grondslag`: `ggm-exact`, `ggm-afgeleid` of `bron`; bij `bron` zijn `bronnen` verplicht. `tools/beslissen.py` toetst of de relatie geldig is in ArchiMate en of het doel een element is; dat zijn de enige fouten.
 
 ## Volgorde
 

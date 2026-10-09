@@ -278,7 +278,7 @@ specialisaties:
 - naam: Overlijden in het buitenland
   omschrijving: Verwerkt op een buitenlandse, consulaire of Haagse akte (HUP Overlijden buitenland). Geen eigen pagina.
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

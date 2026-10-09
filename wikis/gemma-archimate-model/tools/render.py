@@ -1,7 +1,7 @@
 """Render: alle leesbare pagina's van deze wiki uit de beoordelingen.
 
-Invoer (alleen lezen): `beoordelingen/begrippen/<id>.yaml` (het oordeel van de AI, met `status` en `afgeleid` van
-tools/afleiden.py), `beoordelingen/onderwerpen/<id>.yaml`, `beoordelingen/terugmeldingen/ggm.yaml`,
+Invoer (alleen lezen): `beoordelingen/begrippen/<id>.yaml` (het oordeel van de AI, met `status` en `beslist` van
+tools/beslissen.py), `beoordelingen/onderwerpen/<id>.yaml`, `beoordelingen/terugmeldingen/ggm.yaml`,
 `beoordelingen/terugmeldingen/procesarchitectuur.yaml`, `beoordelingen/terugmeldingen/gemma.yaml`, `beoordelingen/beleidsdomeinen.yaml`, `beoordelingen/besluiten-eerder.yaml`, `log.md`, `wiki.yaml`,
 de bronanalyses en `sources/index` (titels). Het script oordeelt niet en schrijft nooit in `beoordelingen/`.
 
@@ -9,7 +9,7 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 
 | Bestand | Inhoud |
 |---|---|
-| `<map van het type>/<taakveld>/<beleidsdomein>/<id>.md` (pad uit `afgeleid.pad`) | Elementpagina |
+| `<map van het type>/<taakveld>/<beleidsdomein>/<id>.md` (pad uit `beslist.pad`) | Elementpagina |
 | `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst, de reden, de herkomst en de GGM-entiteit |
 | `overzichten/<onderwerp>.md` | Overzicht per onderwerp: de views op de indelingen (processen naar kernobject en naar soort werk, ketensamenwerking, objecten, functies, doelgroepen, producten en diensten, beleidskaders) |
 | `terugmeldingen/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
@@ -136,7 +136,7 @@ class Wiki:
         self._korte_titels: dict[str, str] = {}
 
     def pad(self, bid: str) -> str | None:
-        return (self.begrippen.get(bid, {}).get("afgeleid") or {}).get("pad")
+        return (self.begrippen.get(bid, {}).get("beslist") or {}).get("pad")
 
     def naam(self, bid: str) -> str:
         return self.begrippen.get(bid, {}).get("begrip", bid)
@@ -190,7 +190,7 @@ class Wiki:
                 for r in data.get("relaties", []) if r["naar"] == bid]
 
     def uitkomst(self, bid: str) -> dict:
-        return (self.begrippen.get(bid, {}).get("afgeleid") or {}).get("uitkomst") or {}
+        return (self.begrippen.get(bid, {}).get("beslist") or {}).get("uitkomst") or {}
 
     def is_element(self, bid: str) -> bool:
         return bool(self.pad(bid)) and self.uitkomst(bid).get("soort") == "element" \
@@ -213,8 +213,8 @@ class Wiki:
         """Begrippen zonder pagina die een specialisatie zijn van dit begrip."""
         naam = self.naam(bid).lower()
         return [b for b, x in sorted(self.begrippen.items())
-                if (x.get("afgeleid") or {}).get("uitkomst", {}).get("soort") == "specialisatie"
-                and str((x["afgeleid"]["uitkomst"].get("genoemd_begrip") or "")).lower() in (naam, bid)]
+                if (x.get("beslist") or {}).get("uitkomst", {}).get("soort") == "specialisatie"
+                and str((x["beslist"]["uitkomst"].get("genoemd_begrip") or "")).lower() in (naam, bid)]
 
     def gewijzigd_na_akkoord(self, bid: str) -> bool:
         return logbook.heeft_regel(self.log, "promote", bid)
@@ -247,7 +247,7 @@ def _links(w: Wiki, van: str, ids: list[str]) -> str:
 
 def indelingen(w: Wiki, van: str, bid: str, d: dict) -> list[str]:
     """De plaats van het element in de indelingen: boven, onder, kernobject, GEMMA, bediening en gebeurtenissen."""
-    u = d["afgeleid"]["uitkomst"]
+    u = d["beslist"]["uitkomst"]
     regels = []
     if u.get("procesniveau"):
         boven = [v for v in w.inkomend_van(bid, "aggregatie") if w.paginatype(v) == "bedrijfsproces"]
@@ -289,7 +289,7 @@ def indelingen(w: Wiki, van: str, bid: str, d: dict) -> list[str]:
         mutaties = [b for b, x in w.begrippen.items() if x.get("kernobject") == bid and w.niveau(b) == "bedrijfsproces"]
         if mutaties:
             regels.append(f"- **Mutaties door bedrijfsprocessen**: {_links(w, van, mutaties)}.")
-    generiek = (d.get("afgeleid") or {}).get("gemma_generiek")
+    generiek = (d.get("beslist") or {}).get("gemma_generiek")
     if d.get("gemma_generiek"):
         naam = (generiek or {}).get("gemma_naam") or d["gemma_generiek"]["id"]
         regels.append(f"- **Procesindeling naar soort werk, specialisatie van**: GEMMA-element *{naam}*. "
@@ -348,7 +348,7 @@ def specialisaties_per_onderwerp(w: Wiki, van: str, bid: str) -> list[str]:
 
 def element_pagina(w: Wiki, bid: str) -> str:
     d = w.begrippen[bid]
-    a = d["afgeleid"]
+    a = d["beslist"]
     u = a["uitkomst"]
     van = a["pad"]
     status = d["status"]
@@ -498,7 +498,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
 
 
 def _begrip_cel(w: Wiki, van: str, bid: str, d: dict) -> str:
-    u = d["afgeleid"]["uitkomst"]
+    u = d["beslist"]["uitkomst"]
     if u["soort"] == "element":
         if d.get("status") == "afgewezen":
             return f"{d['begrip']} *{ARCHIMATE_NAAM.get(u['archimate_type'], u['archimate_type'])}, afgewezen door de redacteur*"
@@ -524,9 +524,9 @@ def begrippenlijst(w: Wiki, oid: str) -> str:
     r += _sectie("Bronnen", [f"- {w.bron(van, b, w.titel(b))}" for b in o.get("bronnen", [])] + [""])
     rijen = []
     for bid, d in sorted(w.begrippen.items(), key=lambda x: x[1]["begrip"].lower()):
-        if oid not in d.get("onderwerpen", []) or "afgeleid" not in d:
+        if oid not in d.get("onderwerpen", []) or "beslist" not in d:
             continue
-        a = d["afgeleid"]
+        a = d["beslist"]
         reden = d.get("toelichting") or a["uitkomst"]["toelichting"]
         t = gam_gemeen.thuis(d)
         if t != oid:
@@ -620,7 +620,7 @@ def overzicht(w: Wiki, oid: str) -> str:
     soort_werk = []
     for b in processen:
         if w.begrippen[b].get("gemma_generiek"):
-            generiek = (w.begrippen[b]["afgeleid"].get("gemma_generiek") or {}).get("gemma_naam") or w.begrippen[b]["gemma_generiek"]["id"]
+            generiek = (w.begrippen[b]["beslist"].get("gemma_generiek") or {}).get("gemma_naam") or w.begrippen[b]["gemma_generiek"]["id"]
             onder = [n for n in w.uitgaand(b, "aggregatie") if w.paginatype(n) == "bedrijfsproces"]
             soort_werk.append([w.link(van, b), w.niveau(b), generiek, _links(w, van, onder) or "—"])
     r += _sectie("Procesindeling naar soort werk", _tabel(
@@ -754,7 +754,7 @@ def pa_terugmeldlijst(w: Wiki) -> str:
          "Bevindingen voor de werkgroep procesarchitectuur: waar GEMMA tot een andere indeling of modellering komt dan de "
          "UPL-lijsten (producten en diensten, extern en intern) en het kennismodel procesarchitectuur. Het model mag "
          "afwijken van de UPL-indeling, mits de afwijking hier is teruggemeld (besluit redacteur 2026-10-05); een "
-         "terugmelding dekt dan het signaal van tools/afleiden.py.", ""]
+         "terugmelding dekt dan het signaal van tools/beslissen.py.", ""]
     per_type = []
     for soort, betekenis in PA_TYPEN.items():
         rijen = [[f"{m['nummer']} {m.get('status', 'open')}",
@@ -805,12 +805,12 @@ def ter_beoordeling(w: Wiki) -> str:
          "Geef akkoord door in de chat AKKOORD te typen; daarna worden alle elementen hieronder goedgekeurd.", ""]
     review = [(bid, d) for bid, d in sorted(w.begrippen.items(), key=lambda x: x[1]["begrip"].lower()) if d.get("status") == "review"]
     r += _sectie("Wacht op akkoord", _tabel(["Element", "Type", "Onderwerpen", "Nieuw of gewijzigd", "Definitie"], [
-        [w.link(van, bid), ARCHIMATE_NAAM.get(d["afgeleid"]["uitkomst"]["archimate_type"], ""), ", ".join(d["onderwerpen"]),
+        [w.link(van, bid), ARCHIMATE_NAAM.get(d["beslist"]["uitkomst"]["archimate_type"], ""), ", ".join(d["onderwerpen"]),
          "gewijzigd na eerder akkoord" if w.gewijzigd_na_akkoord(bid) else "nieuw", d.get("definitie", "")]
         for bid, d in review]) if review else ["Niets.", ""])
     voorleggen = []
     for bid, d in sorted(w.begrippen.items(), key=lambda x: x[1]["begrip"].lower()):
-        a = d.get("afgeleid", {})
+        a = d.get("beslist", {})
         vragen = a.get("open", []) + (d.get("vragen", []) if d.get("status") != "goedgekeurd" else [])
         if vragen:
             soort = d.get("status") or UITKOMST.get(a["uitkomst"]["soort"], a["uitkomst"]["soort"])
@@ -834,7 +834,7 @@ def besluiten_per_begrip(w: Wiki) -> str:
         for bid, d in w.begrippen.items():
             if gam_gemeen.thuis(d) != oid:
                 continue
-            a = (d.get("afgeleid") or {}).get("uitkomst", {})
+            a = (d.get("beslist") or {}).get("uitkomst", {})
             if w.pad(bid):
                 soort = ARCHIMATE_NAAM.get(a.get("archimate_type"), "")
             elif d.get("status") == "afgewezen":
@@ -890,7 +890,7 @@ def voortgang(w: Wiki) -> str:
     typen: dict[str, dict[str, int]] = {}
     for d in w.begrippen.values():
         if d.get("status"):
-            t = typen.setdefault(d["afgeleid"]["uitkomst"]["paginatype"], {})
+            t = typen.setdefault(d["beslist"]["uitkomst"]["paginatype"], {})
             t[d["status"]] = t.get(d["status"], 0) + 1
     r += _sectie("Elementen per type en status", _tabel(["Type", *STATUSSEN], [
         [t, *[typen[t].get(s, 0) for s in STATUSSEN]] for t in sorted(typen)]) if typen else ["Nog geen elementen.", ""])
@@ -979,7 +979,7 @@ def main(argv: list[str] | None = None) -> int:
         for p in verwijderen:
             print(f"hoort bij geen beoordeling: {p}")
         if schrijven or verwijderen:
-            print("Draai 'uv run python tools/afleiden.py' en wijzig pagina's nooit met de hand.")
+            print("Draai 'uv run python tools/beslissen.py' en wijzig pagina's nooit met de hand.")
             return 1
         return 0
     for p in schrijven:

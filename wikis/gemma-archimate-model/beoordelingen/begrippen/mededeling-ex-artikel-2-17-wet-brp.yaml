@@ -200,7 +200,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer van een andere partij: de minister (via de IND) doet de mededeling over geboortedatum of nationaliteit van een vreemdeling; de gemeente ontleent de gegevens eraan zonder onderzoek. Geen pagina; vermeld bij Inschrijven ingezetene.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

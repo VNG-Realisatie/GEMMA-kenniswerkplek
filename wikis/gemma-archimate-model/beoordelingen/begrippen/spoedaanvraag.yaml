@@ -197,7 +197,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Eigenschap van de aanvraag: dezelfde aanvraag met een kortere levertijd tegen een toeslag; ophalen de werkdag erna, bezorgen kan dan niet (Utrecht). Geen pagina; vermeld bij Behandelen aanvraag reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

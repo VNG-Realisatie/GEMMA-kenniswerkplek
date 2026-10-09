@@ -195,7 +195,7 @@ kenmerken:
 toelichting: 'Verwijzing: beoordelen in het algemene onderwerp besluitvorming. GGM-terugmelding 9 blijft open tot dat onderwerp het element beoordeelt.'
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: verwijzing
     regel: 6

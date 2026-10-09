@@ -194,7 +194,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Onderdeel, geen pagina: het verzoek waarmee Behandelen aanvraag reisdocument begint, ook voor de wijziging van gegevens in een reisdocument (Paspoortwet art. 1 onder a, 43). De aanvraagstukken bewaart de verstrekkende gemeente in het paspoortdossier (HUP Uitreiking). Een algemeen bedrijfsobject Aanvraag kan later in Algemeen worden beoordeeld.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

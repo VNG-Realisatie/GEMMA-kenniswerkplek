@@ -8,7 +8,7 @@ titel: Procesarchitectuur-terugmeldingen
 
 <!-- Gegenereerd door tools/render.py uit beoordelingen/terugmeldingen/procesarchitectuur.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-Bevindingen voor de werkgroep procesarchitectuur: waar GEMMA tot een andere indeling of modellering komt dan de UPL-lijsten (producten en diensten, extern en intern) en het kennismodel procesarchitectuur. Het model mag afwijken van de UPL-indeling, mits de afwijking hier is teruggemeld (besluit redacteur 2026-10-05); een terugmelding dekt dan het signaal van tools/afleiden.py.
+Bevindingen voor de werkgroep procesarchitectuur: waar GEMMA tot een andere indeling of modellering komt dan de UPL-lijsten (producten en diensten, extern en intern) en het kennismodel procesarchitectuur. Het model mag afwijken van de UPL-indeling, mits de afwijking hier is teruggemeld (besluit redacteur 2026-10-05); een terugmelding dekt dan het signaal van tools/beslissen.py.
 
 ## Terugmeldingen
 

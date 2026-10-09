@@ -197,7 +197,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Eigenschap van Nederlanderschap, geen pagina: de aanduiding behandeld als Nederlander of vastgesteld niet-Nederlander staat in dezelfde stapel als de Nederlandse nationaliteit en sluit andere actuele nationaliteiten uit; bij verkrijging vervallen de verblijfstitel, een reisdocument voor vluchtelingen of vreemdelingen en de aanduiding Europees kiesrecht, bij verlies vervalt een Nederlands reisdocument (HUP Bijzonder Nederlanderschap). In het GGM een attribuut van NederlandseNationaliteitIngeschrevenPersoon en NatuurlijkPersoon.'
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

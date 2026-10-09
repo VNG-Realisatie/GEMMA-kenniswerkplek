@@ -1,7 +1,7 @@
 """Het GGM (Gemeentelijk Gegevensmodel) als bron: parsen, bevragen en `ggm_*`-velden leveren.
 
 Het XMI is de bron van waarheid en wordt NOOIT direct gelezen door het model; alleen via deze tool.
-De match kiest de AI (op betekenis); tools/afleiden.py haalt daarna bij elke run de letterlijke velden op met `velden`. Een nieuwe release is dus na `afleiden` vanzelf verwerkt.
+De match kiest de AI (op betekenis); tools/beslissen.py haalt daarna bij elke run de letterlijke velden op met `velden`. Een nieuwe release is dus na `beslissen` vanzelf verwerkt.
 
 Gebruik (vanuit de wikimap):
     uv run python tools/ggm.py release --id <bron-id> [--ref <branch|tag>]    # ophalen van ggm.herkomst (GitHub)

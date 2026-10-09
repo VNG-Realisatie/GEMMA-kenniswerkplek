@@ -256,7 +256,7 @@ besluiten:
   redenen:
   - gegevensobject zonder sterke GGM-match
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 35

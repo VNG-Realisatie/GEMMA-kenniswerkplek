@@ -201,7 +201,7 @@ ggm:
   guid: EAID_8E090A86_8095_458c_B162_B09982158CD5
   sterkte: partieel
   onderbouwing: GGM-entiteit VerstrekkingsbeperkingPartieelIngeschrevenNatuurlijkPersoon dekt alleen de partiële beperking per partij; geen element in de wiki.
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

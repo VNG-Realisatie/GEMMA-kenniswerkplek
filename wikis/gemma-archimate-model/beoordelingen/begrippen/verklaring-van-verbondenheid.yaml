@@ -194,7 +194,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Onderdeel, geen pagina: een processtap van Houden naturalisatieceremonie. Wie de bevestiging of het uittreksel in persoon ontvangt, legt de verklaring mondeling af, of schriftelijk als dat redelijkerwijs niet kan worden verlangd; men wordt pas Nederlander nadat zij is afgelegd (Besluit verkrijging en verlies Nederlanderschap art. 60a, 60b; Utrecht).'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

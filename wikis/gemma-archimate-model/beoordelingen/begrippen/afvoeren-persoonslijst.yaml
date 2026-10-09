@@ -223,7 +223,7 @@ toelichting: 'Processtap zonder pagina: een ten onrechte opgenomen persoonslijst
 synoniemen:
 - naam: Dubbelinschrijving afhandelen
   context: HUP
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 30

@@ -225,7 +225,7 @@ gemma:
 genoemd_begrip: Inhouden reisdocument
 toelichting: 'Deelproces zonder pagina van Inhouden reisdocument: het beslissen dat een ingehouden reisdocument ongeldig is, omdat een tot signalering bevoegd orgaan daar gronden voor heeft.'
 relaties: []
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 30

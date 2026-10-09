@@ -4,15 +4,15 @@ Geen run, geen voorstelbestand: de redacteur bekijkt de gerenderde pagina's en d
 met het woord AKKOORD in de chat. Daarna vraagt het harness nog om één klik op "toestaan" (permissie 'ask' op
 `llmwiki promote apply`); die klik is de echte beveiliging.
 
-- `plan` draait het afleid-script van de wiki (`curation.afleiden`, dat ook rendert), kiest de beoordelingen met status
+- `plan` draait het beslis-script van de wiki (`curation.beslissen`, dat ook rendert), kiest de beoordelingen met status
   `review` (optioneel van één onderwerp) en legt hun inhoudshash vast in `.work/akkoord.json`.
-- `apply` controleert het akkoordwoord, draait het afleid-script opnieuw en weigert als de selectie of een inhoudshash
+- `apply` controleert het akkoordwoord, draait het beslis-script opnieuw en weigert als de selectie of een inhoudshash
   afwijkt van het plan (er is iets gewijzigd na het tonen). Daarna: status `goedgekeurd`, per beoordeling een regel in
   `log.md` met de inhoudshash en de naam van de redacteur (`git config user.name`), en het render-script
   (`curation.render`).
 
 Het akkoord hoort bij de inhoud van de beoordeling (`beoordeling.inhoud_hash`). Een nieuwe opmaak of een bijgewerkt
-model raakt die niet; een inhoudelijke wijziging zet het element via het afleid-script terug op `review`.
+model raakt die niet; een inhoudelijke wijziging zet het element via het beslis-script terug op `review`.
 """
 from __future__ import annotations
 
@@ -62,8 +62,8 @@ def git_naam(wiki_root: Path) -> str:
 
 
 def plan(wiki_root: Path, wiki_yaml: dict, onderwerp: str | None = None) -> dict:
-    """Afleiden en renderen, dan vastleggen wat bij een akkoord wordt goedgekeurd. Geeft een samenvatting."""
-    draai_script(wiki_root, wiki_yaml, "afleiden")
+    """Beslissen en renderen, dan vastleggen wat bij een akkoord wordt goedgekeurd. Geeft een samenvatting."""
+    draai_script(wiki_root, wiki_yaml, "beslissen")
     selectie = te_keuren(wiki_root, wiki_yaml, onderwerp)
     alle = beoordeling.alle(wiki_root, wiki_yaml)
     log = (wiki_root / "log.md").read_text(encoding="utf-8") if (wiki_root / "log.md").exists() else ""
@@ -73,9 +73,9 @@ def plan(wiki_root: Path, wiki_yaml: dict, onderwerp: str | None = None) -> dict
                                               "plan_hash": hashing.hash_json(hashes)}, indent=2), encoding="utf-8")
     return {
         "te_keuren": [{"id": bid, "naam": data.get("begrip", bid),
-                       "type": data["afgeleid"]["uitkomst"].get("paginatype"),
+                       "type": data["beslist"]["uitkomst"].get("paginatype"),
                        "eerder_goedgekeurd": logbook.heeft_regel(log, "promote", bid)} for bid, (_, data) in sorted(selectie.items())],
-        "voor_te_leggen": sorted(bid for bid, (_, d) in alle.items() if (d.get("afgeleid") or {}).get("open")
+        "voor_te_leggen": sorted(bid for bid, (_, d) in alle.items() if (d.get("beslist") or {}).get("open")
                                  and (onderwerp is None or onderwerp in d.get("onderwerpen", []))),
     }
 
@@ -92,7 +92,7 @@ def apply(wiki_root: Path, wiki_yaml: dict, akkoord_woord: str | None, door: str
     if not pad.exists():
         raise AkkoordFout("Geen plan gevonden; draai eerst 'llmwiki promote plan' en toon de samenvatting")
     opgeslagen = json.loads(pad.read_text(encoding="utf-8"))
-    draai_script(wiki_root, wiki_yaml, "afleiden", "--zonder-render")
+    draai_script(wiki_root, wiki_yaml, "beslissen", "--zonder-render")
     selectie = te_keuren(wiki_root, wiki_yaml, opgeslagen.get("onderwerp"))
     if _hashes(selectie) != opgeslagen["beoordelingen"]:
         raise AkkoordFout("Er is iets gewijzigd sinds de samenvatting (een beoordeling is aangepast, bijgekomen of "

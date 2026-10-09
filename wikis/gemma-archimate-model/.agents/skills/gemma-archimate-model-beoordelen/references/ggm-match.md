@@ -27,4 +27,4 @@ Een gegevensobject (`data_object: ja`) met een match zwakker dan `sterk` wordt v
 
 ## Velden en afwijking
 
-De letterlijke `ggm_*`-velden haalt `tools/afleiden.py` bij elke run op; vul ze nooit zelf in. Een nieuwe GGM-release is na `afleiden` dus vanzelf verwerkt. Wijkt de GGM-definitie inhoudelijk af van de wet of de bronnen: zeg dat in de onderbouwing en meld terug als `definitie`. Wijkt de GGM-naam af van de naam: neem haar op in `synoniemen` met context "GGM".
+De letterlijke `ggm_*`-velden haalt `tools/beslissen.py` bij elke run op; vul ze nooit zelf in. Een nieuwe GGM-release is na `beslissen` dus vanzelf verwerkt. Wijkt de GGM-definitie inhoudelijk af van de wet of de bronnen: zeg dat in de onderbouwing en meld terug als `definitie`. Wijkt de GGM-naam af van de naam: neem haar op in `synoniemen` met context "GGM".

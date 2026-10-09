@@ -270,7 +270,7 @@ besluiten:
   besluit: 'Thuisonderwerp Burgerzaken, kenmerk generiek nee: de persoon ontstaat en verandert in de bijhouding van de BRP (regel Thuishoren); geen abstract type met domeinspecialisaties zoals Besluit, maar één concreet object dat andere onderwerpen met relaties gebruiken.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 35

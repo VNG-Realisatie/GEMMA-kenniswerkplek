@@ -239,7 +239,7 @@ besluiten:
 - datum: '2026-10-08'
   besluit: 'Geen subobject meer maar onderdeel van Graf, zonder pagina: de processen Verlenen vergunning grafbedekking en Onderhouden graf vervallen (regel Wettelijke grondslag), en landelijk regelt alleen Wlb art. 32a het eigendom van wat op het graf is geplaatst. De relatie onderhoudt vanuit Rechthebbende op het graf vervalt. Het object van dit element in Archi vervalt.'
   gevolg: verwerkt
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 37

@@ -218,7 +218,7 @@ homoniemen:
   waar: UPL-lijst extern
   element: overlijdensakte
   naamkeuze: Deze beoordeling heet Akte van overlijden, de akte zelf (wetsterm); de dienst heet Overlijdensakte, de UPL-naam.
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

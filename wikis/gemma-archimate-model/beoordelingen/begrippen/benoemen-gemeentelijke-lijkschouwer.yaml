@@ -211,7 +211,7 @@ besluiten:
   - 'gebruikt objecten: nee'
   - 'aanleiding: nee'
   - 'komt herhaald voor: nee'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_element
     regel: 22

@@ -192,7 +192,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Onderdeel, geen pagina: de afwijzende uitkomst van Behandelen aanvraag reisdocument. De burgemeester weigert op de gronden van hoofdstuk III, meestal na een mededeling van de minister over een signalering; hij kondigt het voornemen aan en houdt de beslissing op verzoek acht weken aan (Paspoortwet art. 44 tot en met 46). De verstrekking, de andere uitkomst, staat als synoniem (wet) bij het bedrijfsproces.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

@@ -211,7 +211,7 @@ homoniemen:
   element: uitvaart-vervroegen-of-uitstellen
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

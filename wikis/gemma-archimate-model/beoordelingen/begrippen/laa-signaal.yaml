@@ -204,7 +204,7 @@ toelichting: 'Invoer van een andere partij: de minister selecteert signalen van 
 synoniemen:
 - naam: LAA-melding
   context: beleid
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

@@ -194,7 +194,7 @@ toelichting: 'Buiten dit model (Constraint): Norm uit één artikel: niet eerder
 archimate_buiten_model: Constraint
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: buiten_model
     regel: 3

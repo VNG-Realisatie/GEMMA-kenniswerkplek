@@ -212,7 +212,7 @@ besluiten:
 - datum: '2026-10-08'
   besluit: 'Vervalt als rol: geen landelijke wettelijke bron (regel Wettelijke grondslag); de Wlb kent alleen de houder. Synoniem (context beleid) van Houder van de begraafplaats, met een zin over het mandaat in diens beschrijving. De relaties vervallen; de Houder dekt de wettelijke kern. Het Archi-object vervalt; de Houder houdt zijn eigen object.'
   gevolg: verwerkt
-afgeleid:
+beslist:
   uitkomst:
     soort: synoniem
     regel: 1

@@ -37,7 +37,7 @@ def _begrip(wiki, id_, naam, archimate="business-object", guid=None, soort="elem
     genoemd = extra.pop("genoemd", None)
     data = {"begrip": naam, **({"ggm": {"guid": guid, "sterkte": "exact", "onderbouwing": "x"}} if guid else {}),
             "status": "review" if soort == "element" else None, **extra,
-            "afgeleid": {"uitkomst": {"soort": soort, "archimate_type": archimate, "genoemd_begrip": genoemd}}}
+            "beslist": {"uitkomst": {"soort": soort, "archimate_type": archimate, "genoemd_begrip": genoemd}}}
     beoordeling.schrijf(wiki / f"beoordelingen/begrippen/{id_}.yaml", {k: v for k, v in data.items() if v is not None})
 
 

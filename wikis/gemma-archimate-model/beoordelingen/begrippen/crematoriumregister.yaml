@@ -223,7 +223,7 @@ besluiten:
   gevolg: verwerkt
   besluit: 'Dienst met de UPL-naam: inzage in het openbare register, gerealiseerd door Exploiteren van begraafplaatsen (keuze B; een product of dienst uit de UPL valt niet weg). Het register zelf blijft een representatie zonder pagina.'
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

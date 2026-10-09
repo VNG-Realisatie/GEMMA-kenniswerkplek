@@ -4,7 +4,7 @@ Twee formaten, automatisch herkend: het Archi-bronbestand (`.archimate`, voorkeu
 voor tools/archimate_export.py) en de ArchiMate Open Exchange-export (AMEFF, zonder map-id's). Zonder bestand haalt
 `release` het bestand op van `wiki.yaml` `gemma.herkomst`. Het GEMMA-model is
 een matchdoel (brontype `model`), geen bron voor begrippen. Het model leest het NOOIT direct; alleen via deze
-tool. De match kiest de AI; tools/afleiden.py haalt daarna bij elke run de letterlijke velden op met `velden`.
+tool. De match kiest de AI; tools/beslissen.py haalt daarna bij elke run de letterlijke velden op met `velden`.
 
 Gebruik (vanuit de wikimap):
     uv run python tools/gemma.py release --id <bron-id> [--ref <branch|tag>]   # AMEFF ophalen van gemma.herkomst

@@ -200,7 +200,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Specialisatie zonder pagina van Vestiging vanuit het buitenland: een persoon uit de RNI vestigt zich weer als ingezetene (HUP Hervestiging).'
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

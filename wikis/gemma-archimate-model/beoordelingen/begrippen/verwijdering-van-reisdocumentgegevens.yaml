@@ -195,7 +195,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Processtap zonder pagina: de gemeente verwijdert de gegevens van een Nederlands reisdocument van de persoonslijst als het niet is uitgereikt, of na de bewaartermijn van elf jaar (geldigheid vijf jaar of korter) of zestien jaar (langere geldigheid), na een inhouding in het basisregister reisdocumenten (HUP Verwijdering; LO BRP 4.4). De bewaartermijn is een eigenschap van de gegevens. Een registratiestap van de uitvoering, buiten het model volgens de afbakening van Burgerzaken; vermeld bij Bijhouden persoonsgegevens.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

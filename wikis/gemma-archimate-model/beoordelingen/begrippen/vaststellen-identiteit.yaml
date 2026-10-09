@@ -227,7 +227,7 @@ synoniemen:
   context: beleid
 - naam: ID-protocol
   context: beleid
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 30

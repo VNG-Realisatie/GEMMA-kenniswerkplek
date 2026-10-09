@@ -233,7 +233,7 @@ besluiten:
   besluit: Nieuwe gebeurtenis Inlevering van het reisdocument (wetsterm, Paspoortwet art. 56), die Inhouden reisdocument triggert, in plaats van het verval van rechtswege; werkt de processtap Inlevering reisdocument bij.
   gevolg: opnemen
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

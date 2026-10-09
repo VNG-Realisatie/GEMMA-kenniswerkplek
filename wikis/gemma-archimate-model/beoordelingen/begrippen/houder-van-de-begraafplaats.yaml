@@ -278,7 +278,7 @@ besluiten:
   besluit: Beheerder van de begraafplaats wordt synoniem (context beleid) van deze rol; een zin over het mandaat in de beschrijving (regel Wettelijke grondslag).
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

@@ -198,7 +198,7 @@ genoemd_begrip: Begraafplaats
 toelichting: 'Specialisatie zonder pagina van Begraafplaats: deel van een gemeentelijke begraafplaats, beheerd door de besturen van die gezindte (Groningen art. 3 lid 3).'
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

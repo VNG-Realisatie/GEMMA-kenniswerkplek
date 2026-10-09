@@ -203,7 +203,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer van een andere partij: een afnemer meldt via de terugmeldvoorziening gerede twijfel aan een gegeven. Geen pagina; aanleiding voor Onderzoeken persoonsgegevens en Uitvoeren adresonderzoek.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

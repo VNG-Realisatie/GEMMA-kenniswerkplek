@@ -198,7 +198,7 @@ genoemd_begrip: Begraafplaats
 toelichting: 'Specialisatie zonder pagina van Begraafplaats: begraafplaats van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 24, 37).'
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

@@ -196,7 +196,7 @@ toelichting: 'Buiten dit model (Grouping): Verzamelterm in de VNG-bron voor de d
 archimate_buiten_model: Grouping
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: buiten_model
     regel: 3

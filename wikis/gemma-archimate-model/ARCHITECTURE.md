@@ -18,12 +18,12 @@ Het GGM is zowel bron (kandidaat-begrippen, definities, relaties) als toets. Het
 |---|---|---|
 | **Oordeel** per begrip: kenmerken met onderbouwing en bron, naam, definitie, beschrijving, tekst per onderwerp, GGM- en GEMMA-match op betekenis, relaties, hiërarchie, open vragen | AI | `beoordelingen/begrippen/<id>.yaml` |
 | **Besluiten** van de redacteur over een voorgelegd punt | redacteur, vastgelegd door de AI | `besluiten:` in de beoordeling; eerdere besluiten per begrip in [besluiten/per-begrip.md](besluiten/per-begrip.md) (gegenereerd), over de werkwijze in [besluiten/werkwijze.md](besluiten/werkwijze.md) |
-| **Afleiding**: type uit de beslistabel, status, letterlijke GGM- en GEMMA-velden, paginapad, herkomst, nummers van terugmeldingen; harde controles en signalen | [tools/afleiden.py](tools/afleiden.py), [tools/signalen.py](tools/signalen.py) | `status:` en `afgeleid:` in de beoordeling |
+| **Afleiding**: type uit de beslistabel, status, letterlijke GGM- en GEMMA-velden, paginapad, herkomst, nummers van terugmeldingen; harde controles en signalen | [tools/beslissen.py](tools/beslissen.py), [tools/signalen.py](tools/signalen.py) | `status:` en `beslist:` in de beoordeling |
 | **Vorm**: alle leesbare pagina's en overzichten | [tools/render.py](tools/render.py) | zie §4 |
 | **Akkoord** | redacteur, met het woord AKKOORD in de chat | `llmwiki promote plan/apply`, `log.md` (een tabel, alleen aan te vullen) |
 | **Regels en onderbouwing** | redacteur, vastgelegd door de AI | [kennismodel/](kennismodel/README.md) (wat het model is: gegenereerd door [tools/kennismodel.py](tools/kennismodel.py), de modelleerregels met de hand), [AGENTS.md](AGENTS.md) (werkwijze), [docs/](docs/README.md) (waarom), [besluiten/werkwijze.md](besluiten/werkwijze.md) (geschiedenis) |
 
-De AI schrijft dus geen pagina's, geen links en geen statussen. Wat het render-script garandeert, hoeft geen regel te zijn; wat het schema of het afleid-script tegenhoudt, ook niet. De regels in [AGENTS.md](AGENTS.md) gaan over het oordeel.
+De AI schrijft dus geen pagina's, geen links en geen statussen. Wat het render-script garandeert, hoeft geen regel te zijn; wat het schema of het beslis-script tegenhoudt, ook niet. De regels in [AGENTS.md](AGENTS.md) gaan over het oordeel.
 
 ## 3. Plattegrond
 
@@ -54,7 +54,7 @@ wikis/gemma-archimate-model/
 
 ## 4. Render
 
-[tools/render.py](tools/render.py) maakt alle leesbare bestanden uit de beoordelingen, de bronanalyses en de titels in `sources/index`. Het oordeelt niet en schrijft nooit in `beoordelingen/`. Twee keer renderen geeft hetzelfde resultaat. `tools/afleiden.py` draait het na elke afleiding; `llmwiki promote apply` na elk akkoord.
+[tools/render.py](tools/render.py) maakt alle leesbare bestanden uit de beoordelingen, de bronanalyses en de titels in `sources/index`. Het oordeelt niet en schrijft nooit in `beoordelingen/`. Twee keer renderen geeft hetzelfde resultaat. `tools/beslissen.py` draait het na elke afleiding; `llmwiki promote apply` na elk akkoord.
 
 | Commando | Wat |
 |---|---|
@@ -108,20 +108,20 @@ Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update
 |---|---|---|
 | 2 | [gemma-archimate-model-ingest](.agents/skills/gemma-archimate-model-ingest/SKILL.md) | `llmwiki source add` (ook `--url`, pdf, `--brontype`), `llmwiki source bronregel` |
 | 3 | [gemma-archimate-model-beoordelen](.agents/skills/gemma-archimate-model-beoordelen/SKILL.md) + [criteria](.agents/skills/gemma-archimate-model-criteria/SKILL.md) | `tools/ggm.py kandidaten`, `tools/gemma.py kandidaten`, `tools/relaties.py voorstel` |
-| 4 | — | `tools/afleiden.py` (roept `tools/render.py` aan) |
+| 4 | — | `tools/beslissen.py` (roept `tools/render.py` aan) |
 | 6–8 | — | `llmwiki promote plan`, `llmwiki promote apply --akkoord-woord AKKOORD` |
 | 9 | [gemma-archimate-model-archimate-export](.agents/skills/gemma-archimate-model-archimate-export/SKILL.md) | `tools/archimate_export.py --check`, `tools/archimate_export.py` |
 
-Nieuwe modelversies: [gemma-archimate-model-ggm-release](.agents/skills/gemma-archimate-model-ggm-release/SKILL.md) en [gemma-archimate-model-gemma-release](.agents/skills/gemma-archimate-model-gemma-release/SKILL.md): release, daarna `tools/afleiden.py`.
+Nieuwe modelversies: [gemma-archimate-model-ggm-release](.agents/skills/gemma-archimate-model-ggm-release/SKILL.md) en [gemma-archimate-model-gemma-release](.agents/skills/gemma-archimate-model-gemma-release/SKILL.md): release, daarna `tools/beslissen.py`.
 
 ## 6. Status
 
 | Status | Wie | Wanneer |
 |---|---|---|
-| `kandidaat` | `tools/afleiden.py` | Er staat een reden open die geen besluit van de redacteur dekt: de beslistabel zegt "voorleggen", de grondslag is `regelgeving`, of het is een gegevensobject zonder sterke GGM-match |
-| `review` | `tools/afleiden.py` | Niets meer voor te leggen; wacht op akkoord |
-| `goedgekeurd` | `llmwiki promote apply`, na AKKOORD en de klik | Met een regel in `log.md` met de hash van de inhoud van de beoordeling (alles behalve `status` en `afgeleid`) |
-| `afgewezen` | `tools/afleiden.py`, na het besluit `afwijzen` | Geen pagina; blijft in de begrippenlijst |
+| `kandidaat` | `tools/beslissen.py` | Er staat een reden open die geen besluit van de redacteur dekt: de beslistabel zegt "voorleggen", de grondslag is `regelgeving`, of het is een gegevensobject zonder sterke GGM-match |
+| `review` | `tools/beslissen.py` | Niets meer voor te leggen; wacht op akkoord |
+| `goedgekeurd` | `llmwiki promote apply`, na AKKOORD en de klik | Met een regel in `log.md` met de hash van de inhoud van de beoordeling (alles behalve `status` en `beslist`) |
+| `afgewezen` | `tools/beslissen.py`, na het besluit `afwijzen` | Geen pagina; blijft in de begrippenlijst |
 
 Een inhoudelijke wijziging aan een goedgekeurde beoordeling maakt haar weer `review`; een andere opmaak, een nieuw render-script of een nieuwe modelrelease niet. De pre-commit-controle `llmwiki precommit goedgekeurd-guard` weigert `goedgekeurd` zonder overeenkomende regel in `log.md`.
 
@@ -149,7 +149,7 @@ Elementen en relaties worden samen gevonden. Een relatie wordt pas een ArchiMate
 - `tools/relaties.py voorstel <id>` voegt de kandidaten uit het GGM en uit de bronanalyses samen, als YAML voor `relaties:` in de beoordeling. Uit de bronnen: beide kanten worden opgelost via de beoordelingen; een eigenschap of specialisatie zonder pagina wordt opgetild naar het genoemde begrip; geen element → de relatie vervalt (`tools/relaties.py uit-bronnen <onderwerp>` toont welke en waarom). Uit het GGM: specialisaties zonder pagina en GGM-componenten worden opgetild; ketens via niet-opgenomen entiteiten krijgen het zwakste type en een samengestelde kardinaliteit; relaties naar enumeraties vervallen.
 - Een relatie staat één keer, in de beoordeling van het bronelement. De render zet de inkomende kant op de pagina van het doel.
 - **Grondslag**: `ggm-exact`, `ggm-afgeleid` of `bron` (bronnen verplicht). Een bronrelatie tussen dezelfde elementen als een GGM-relatie bevestigt die.
-- `tools/afleiden.py` toetst elke relatie aan de ArchiMate-relatietabel met de GEMMA-modelleerafspraken (actor via een rol; functie bedient proces; kanaal toegewezen aan dienst; dienst zonder toegang tot een object) en controleert dat het doel een element is.
+- `tools/beslissen.py` toetst elke relatie aan de ArchiMate-relatietabel met de GEMMA-modelleerafspraken (actor via een rol; functie bedient proces; kanaal toegewezen aan dienst; dienst zonder toegang tot een object) en controleert dat het doel een element is.
 - **Terugmelden** alleen bij `ggm-exact`. **Aandachtspunt:** in het GGM-export zijn de richting van deel-geheel en de multipliciteiten niet altijd eenduidig; controleer ze. Werkwijze in detail: [references/relaties.md](.agents/skills/gemma-archimate-model-beoordelen/references/relaties.md).
 
 ## 10. GGM en GEMMA als bron
@@ -161,14 +161,14 @@ Elementen en relaties worden samen gevonden. Een relatie wordt pas een ArchiMate
 | Tool | [tools/ggm.py](tools/ggm.py) | [tools/gemma.py](tools/gemma.py) |
 | Gegenereerd | `ggm/ggm_parsed.json`, `ggm/<taakveld>/<beleidsdomein>.md` | `gemma/gemma_parsed.json`, `gemma/overzicht.md` |
 | Zoeken (AI) | `kandidaten`, `entiteit`, `naamgenoten`, `generalisaties`, `attribuut`, `relaties` | `kandidaten`, `element`, `koppel`, `zoek`, `groepering` |
-| Letterlijke velden (script) | `velden` → `afgeleid.ggm` | `velden` → `afgeleid.gemma` |
-| Nieuwe versie | `release --id <bron-id> [--ref <branch/tag>]`, daarna `tools/afleiden.py` | idem |
+| Letterlijke velden (script) | `velden` → `beslist.ggm` | `velden` → `beslist.gemma` |
+| Nieuwe versie | `release --id <bron-id> [--ref <branch/tag>]`, daarna `tools/beslissen.py` | idem |
 
-De match kiest de AI op betekenis; het afleid-script haalt bij elke run de letterlijke velden op. Gegenereerde modelbestanden hebben een hash-kop; `tools/afleiden.py` meldt een handmatige wijziging als fout.
+De match kiest de AI op betekenis; het beslis-script haalt bij elke run de letterlijke velden op. Gegenereerde modelbestanden hebben een hash-kop; `tools/beslissen.py` meldt een handmatige wijziging als fout.
 
 ## 11. Controles
 
-`tools/afleiden.py` houdt tegen (fout, er wordt niets geschreven): het schema van de beoordeling, onvolledige kenmerken, een kenmerk `ja` zonder bron, een element zonder bron, ontbrekende velden van een element (definitie, beschrijving, grondslag, GEMMA-match, en bij een gegevensobject de GGM-match; taakveld en beleidsdomein bij typen met submappen), een bron zonder intake of bronanalyse, een onbekend onderwerp, een niet-bestaande GGM-guid of GEMMA-id, een relatie naar iets dat geen element is of die niet in de relatietabel past, specialisaties, tegenhangers en homoniemen die geen element zijn, dubbele paginapaden, bronanalyses zonder `Bron:`-regel of buiten de bronnenlijst van hun onderwerp, ongeldige terugmeldingen, en handmatig gewijzigde modelbestanden.
+`tools/beslissen.py` houdt tegen (fout, er wordt niets geschreven): het schema van de beoordeling, onvolledige kenmerken, een kenmerk `ja` zonder bron, een element zonder bron, ontbrekende velden van een element (definitie, beschrijving, grondslag, GEMMA-match, en bij een gegevensobject de GGM-match; taakveld en beleidsdomein bij typen met submappen), een bron zonder intake of bronanalyse, een onbekend onderwerp, een niet-bestaande GGM-guid of GEMMA-id, een relatie naar iets dat geen element is of die niet in de relatietabel past, specialisaties, tegenhangers en homoniemen die geen element zijn, dubbele paginapaden, bronanalyses zonder `Bron:`-regel of buiten de bronnenlijst van hun onderwerp, ongeldige terugmeldingen, en handmatig gewijzigde modelbestanden.
 
 [tools/signalen.py](tools/signalen.py) waarschuwt, met de naam van de regel: absolute taal, registr*-taal, een definitie van meer dan één zin, de naamvorm van processen en functies, de wetsterm als naam, een afwijkende GGM- of GEMMA-naam zonder synoniem, onderwerpgebonden tekst in definitie of beschrijving, een dienst zonder realiserend gedrag, een gebeurtenis die niets start, en een synoniem bij meer elementen. Waarschuwingen beoordeelt de AI inhoudelijk.
 
@@ -179,7 +179,7 @@ De match kiest de AI op betekenis; het afleid-script haalt bij elke run de lette
 - **Id's:** een element met een GEMMA-match krijgt het GEMMA-id en staat in dezelfde mappen (met dezelfde map-id's) als in GEMMA; een nieuw element krijgt een vast id (uuid5 van het begrip-id) onder `wiki-gemma-model`. Een relatie krijgt het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id. Daarvoor is het GEMMA-model als `.archimate` nodig; de AMEFF heeft geen map-id's.
 - **Inhoud:** naam en definitie uit de wiki (ook over een GEMMA-element heen, met de oude als eigenschap); de GEMMA-eigenschappen en het profiel letterlijk; eigen eigenschappen `wiki-gemma-model …`, onder meer `procesniveau`, `objectniveau` en de indelingsvelden.
 - **Indelingen** ([kennismodel/indelingen.md](kennismodel/indelingen.md)): een proces zonder GEMMA-match staat in de map `Procesindeling naar kernobject`, een bedrijfsinteractie in de map `Ketensamenwerking`; een levensloopproces krijgt GEMMA type *Bedrijfsproces (cluster)*; een aggregatie tussen processen heeft `indeling` en `procesniveau` ("levensloopproces → bedrijfsproces"); `gemma_generiek` wordt een specialisatie naar het GEMMA-element, dat letterlijk meegaat zonder wiki-eigenschappen; beleidsdomein, domein en doelgroep worden een aggregatie vanuit de bestaande GEMMA-groepering (die letterlijk meegaat), of vanuit een nieuwe groepering in de map van de wiki voor een beleidsdomein dat GEMMA niet kent. Het rapport noemt de specialisaties en de nieuwe groeperingen. De export vertrouwt de match: een zwakke of partiële match gaat alleen met akkoord van de redacteur (regel Zwakke match voorleggen).
-- **Objectbehoud:** een hernoemd, samengevoegd of gesplitst element zet het Archi-object voort dat `beoordelingen/objecten.yaml` noemt; element- en relatie-id's komen dan van dat begrip-id, zodat views in Archi blijven werken. `tools/afleiden.py` toetst het register; de export weigert een typewijziging van een voortgezet object.
+- **Objectbehoud:** een hernoemd, samengevoegd of gesplitst element zet het Archi-object voort dat `beoordelingen/objecten.yaml` noemt; element- en relatie-id's komen dan van dat begrip-id, zodat views in Archi blijven werken. `tools/beslissen.py` toetst het register; de export weigert een typewijziging van een voortgezet object.
 - **Volledige sync:** elk element en elke relatie heeft `wiki-gemma-model exportdatum`. Na de import verwijdert een jArchi-script wat de wiki zelf maakte en een oudere datum heeft; bij een GEMMA-object haalt het alleen de wiki-eigenschappen weg.
 - **Gate:** alleen `goedgekeurd`, met een promotieregel in `log.md`; `--concept` (alle statussen, in `.work/`) is alleen om te bekijken. De export weigert bij fouten of een verouderde afleiding of render.
 

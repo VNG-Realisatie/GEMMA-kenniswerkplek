@@ -195,7 +195,7 @@ toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: het huwelijk en 
 synoniemen:
 - naam: Huwelijk of geregistreerd partnerschap
   context: HUP
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

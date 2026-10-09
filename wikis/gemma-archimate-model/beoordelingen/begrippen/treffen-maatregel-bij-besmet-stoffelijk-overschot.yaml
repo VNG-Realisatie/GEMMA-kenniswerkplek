@@ -263,7 +263,7 @@ synoniemen:
 - naam: Treffen maatregel bij besmet lijk
   context: wet
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 29

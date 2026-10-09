@@ -2,7 +2,7 @@
 
 Een relatie staat in de beoordeling van het bronelement (`relaties:` in beoordelingen/begrippen/<id>.yaml); het
 render-script zet haar op de pagina, met de inkomende kant op de pagina van het doel. Deze tool doet voorstellen; de AI
-kiest, geeft een herkenbare naam en schrijft ze in de beoordeling. tools/afleiden.py toetst elke relatie.
+kiest, geeft een herkenbare naam en schrijft ze in de beoordeling. tools/beslissen.py toetst elke relatie.
 
 Relatie (`soort`): associatie, associatie (gericht), aggregatie, compositie, specialisatie, toewijzing,
 toegang (<handeling> of <verantwoordelijkheid>), triggering, stroom, realisatie, bediening.
@@ -18,7 +18,7 @@ de begrippen worden opgelost via de beoordelingen (naam of synoniem), een eigens
 zonder pagina wordt opgetild naar het genoemde begrip, en de typen van beide kanten plus het werkwoord bepalen de
 soort relatie.
 
-Gebruik (vanuit de wikimap, na tools/afleiden.py):
+Gebruik (vanuit de wikimap, na tools/beslissen.py):
     uv run python tools/relaties.py voorstel <element-id>      # kandidaten als YAML voor `relaties:`
     uv run python tools/relaties.py uit-bronnen [<onderwerp>]  # alle relaties uit de bronanalyses, met wat vervalt
 """
@@ -120,13 +120,13 @@ def toegestaan(relatie: str, bron_type: str, doel_type: str) -> bool:
 
 
 def begrippen(wiki_root: Path = WIKI_ROOT) -> dict[str, dict]:
-    """id → beoordeling, voor elke beoordeling die al is afgeleid (tools/afleiden.py)."""
+    """id → beoordeling, voor elke beoordeling die al is afgeleid (tools/beslissen.py)."""
     alle = beoordeling.alle(wiki_root, paths.load_wiki_yaml(wiki_root))
-    return {bid: data for bid, (_, data) in alle.items() if (data.get("afgeleid") or {}).get("uitkomst")}
+    return {bid: data for bid, (_, data) in alle.items() if (data.get("beslist") or {}).get("uitkomst")}
 
 
 def _uitkomst(data: dict) -> dict:
-    return data["afgeleid"]["uitkomst"]
+    return data["beslist"]["uitkomst"]
 
 
 def elementen(begrippen_: dict[str, dict]) -> dict[str, dict]:
@@ -135,7 +135,7 @@ def elementen(begrippen_: dict[str, dict]) -> dict[str, dict]:
             if _uitkomst(d)["soort"] == "element" and d.get("status") != "afgewezen"}
 
 
-# --- Afleiden uit het GGM ---
+# --- Afleiden uit het GGM (relaties afleiden uit een keten, geen beslissen) ---
 
 
 def _grens(waarde: str) -> int | str | None:
@@ -553,7 +553,7 @@ def main(argv: list[str] | None = None) -> int:
                           "vervallen": vervallen}, indent=2, ensure_ascii=False))
         return 0
     if a.element not in elementen(alle):
-        print(f"'{a.element}' is (nog) geen afgeleid element; draai eerst tools/afleiden.py")
+        print(f"'{a.element}' is (nog) geen afgeleid element; draai eerst tools/beslissen.py")
         return 1
     import ggm
 

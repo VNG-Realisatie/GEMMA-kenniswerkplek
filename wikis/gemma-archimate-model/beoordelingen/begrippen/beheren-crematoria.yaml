@@ -245,7 +245,7 @@ besluiten:
   besluit: Nieuw bedrijfsproces met kernobject Crematorium, met het deelproces Verlenen vergunning bijzonder crematorium.
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 28

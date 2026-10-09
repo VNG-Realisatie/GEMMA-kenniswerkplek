@@ -193,7 +193,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet beoordeeld: verwijzing naar een later onderwerp.'
 toelichting: 'Verwijzing: UPL-product nr. 396 (Kieswet art. J 24) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): de organisatie van de verkiezingen (kandidaatstelling, stembureaus, stemming, uitslag) valt buiten het onderwerp (besluit redacteur 2026-10-06, Afbakening Burgerzaken). Het product krijgt zijn pagina in een later onderwerp verkiezingen.'
-afgeleid:
+beslist:
   uitkomst:
     soort: verwijzing
     regel: 6

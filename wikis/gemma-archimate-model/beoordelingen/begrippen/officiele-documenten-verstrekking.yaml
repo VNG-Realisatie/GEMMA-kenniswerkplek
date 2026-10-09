@@ -325,7 +325,7 @@ relaties:
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   vindplaats: Utrecht regel 126-140; GEMMA-domein Publieksdiensten
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

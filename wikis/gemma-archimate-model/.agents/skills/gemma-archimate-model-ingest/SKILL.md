@@ -48,7 +48,7 @@ Lees de bron en bespreek met de redacteur, vóór je schrijft: hoe rijk is de br
 
 ## 4. Bronanalyse schrijven
 
-Pad `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md`, met het brontype uit de intake (regel Bronvoorrang; `tools/afleiden.py` controleert de map) (schema `schemas/bronanalyse.schema.json`):
+Pad `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md`, met het brontype uit de intake (regel Bronvoorrang; `tools/beslissen.py` controleert de map) (schema `schemas/bronanalyse.schema.json`):
 
 ```markdown
 ---
@@ -82,7 +82,7 @@ Welke objecten, rollen, processen, diensten of gebeurtenissen; welke specialisat
 > Letterlijke tekst die een begrip definieert. (vindplaats: art./§/pagina)
 ```
 
-De regel `Bron:` zet het gereedschap: `uv run python -m llmwiki source bronregel <bron-id> --van bronanalyses/<onderwerp>/<brontype>/<bron-id>.md --schrijf`, nadat de pagina met titel bestaat. Het is de schakel van de pagina's naar de brontekst; zonder die regel meldt `tools/afleiden.py` een fout. Citaten zijn platte tekst, zonder links.
+De regel `Bron:` zet het gereedschap: `uv run python -m llmwiki source bronregel <bron-id> --van bronanalyses/<onderwerp>/<brontype>/<bron-id>.md --schrijf`, nadat de pagina met titel bestaat. Het is de schakel van de pagina's naar de brontekst; zonder die regel meldt `tools/beslissen.py` een fout. Citaten zijn platte tekst, zonder links.
 
 In *Andere termen in deze bron* staan de andere namen die de bron voor hetzelfde begrip gebruikt, en bij een beleids- of praktijkbron de wetsterm waarnaar de bron verwijst (bijv. "urn" in de bron, wettelijk "asbus"). Zo zijn wetsterm en gangbare term al bij de ingest aan elkaar gekoppeld.
 
@@ -92,4 +92,4 @@ ALTIJD per partij (persoon, organisatie, verantwoordelijkheid) een rij voor wat 
 
 ## 5. Onderwerp
 
-Zet de bron-id in `bronnen` van `beoordelingen/onderwerpen/<onderwerp>.yaml`; `tools/afleiden.py` controleert dat elke bronanalyse daar staat. Bestaat het onderwerp nog niet, maak het in overleg met de redacteur: `naam`, `omschrijving` (alinea's), `bronnen` en `status: in-behandeling`. De begrippenlijst `begrippen/<onderwerp>.md` maakt het render-script. Een onderwerp wordt altijd afgesloten met `status: afgerond` en een `conclusie`, ook als er geen elementen uit voortkomen.
+Zet de bron-id in `bronnen` van `beoordelingen/onderwerpen/<onderwerp>.yaml`; `tools/beslissen.py` controleert dat elke bronanalyse daar staat. Bestaat het onderwerp nog niet, maak het in overleg met de redacteur: `naam`, `omschrijving` (alinea's), `bronnen` en `status: in-behandeling`. De begrippenlijst `begrippen/<onderwerp>.md` maakt het render-script. Een onderwerp wordt altijd afgesloten met `status: afgerond` en een `conclusie`, ook als er geen elementen uit voortkomen.

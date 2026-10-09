@@ -201,7 +201,7 @@ besluiten:
   gevolg: afwijzen
   redenen:
   - 'voert gedrag uit: nee'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_element
     regel: 22

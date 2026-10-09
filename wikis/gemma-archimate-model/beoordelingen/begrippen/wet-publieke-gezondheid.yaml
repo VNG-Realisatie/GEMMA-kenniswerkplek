@@ -205,7 +205,7 @@ besluiten:
   gevolg: afwijzen
   redenen:
   - 'is grondslag voor: nee'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_element
     regel: 22

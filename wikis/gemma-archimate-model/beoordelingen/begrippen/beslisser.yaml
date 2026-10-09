@@ -426,7 +426,7 @@ per_onderwerp:
   - 'Over het Nederlanderschap beslist de burgemeester: hij bevestigt of weigert de optie en bevestigt de afstand (Rijkswet op het Nederlanderschap art. 6; Besluit verkrijging en verlies Nederlanderschap art. 2, 11, 63). Over de naturalisatie beslist de minister van Justitie en Veiligheid; de burgemeester adviseert.'
   - Bij het kiesrecht beslissen burgemeester en wethouders over de registratie van de kiesgerechtigdheid en de burgemeester over een verzoek om bij volmacht te stemmen (Kieswet art. D 1, D 7, L 11).
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

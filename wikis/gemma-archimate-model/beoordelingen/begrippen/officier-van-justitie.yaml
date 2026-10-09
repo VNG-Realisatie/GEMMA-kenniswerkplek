@@ -222,7 +222,7 @@ besluiten:
   besluit: Actor als ketenpartner in het ketenproces Bezorgen lijken (Wlb art. 10, 12), zonder eigen deelproces. Herziet de uitkomst buiten scope.
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

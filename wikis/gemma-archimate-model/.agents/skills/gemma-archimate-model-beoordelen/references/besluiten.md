@@ -2,7 +2,7 @@
 
 ## Voorleggen
 
-Leg na `uv run python tools/afleiden.py` per begrip met open redenen (`afgeleid.open`, ook in `ter-beoordeling.md`) de vraag voor in de chat, één voor één. Voor te leggen is wat een keuze van de redacteur vraagt: een element met open redenen, een open vraag, twijfel over een kenmerk, een nieuw element of een afwijking van een eerder besluit.
+Leg na `uv run python tools/beslissen.py` per begrip met open redenen (`beslist.open`, ook in `ter-beoordeling.md`) de vraag voor in de chat, één voor één. Voor te leggen is wat een keuze van de redacteur vraagt: een element met open redenen, een open vraag, twijfel over een kenmerk, een nieuw element of een afwijking van een eerder besluit.
 
 - Context: welk begrip, wat de beslistabel zegt.
 - Argumenten voor en tegen, en een advies.
@@ -19,10 +19,10 @@ besluiten:
   - datum: 2026-10-01
     besluit: Opnemen als gegevensobject zonder GGM-entiteit; terugmelding 3.
     gevolg: opnemen                 # opnemen | afwijzen | verwerkt
-    redenen: [gegevensobject zonder sterke GGM-match]   # letterlijk uit afgeleid.voor_te_leggen
+    redenen: [gegevensobject zonder sterke GGM-match]   # letterlijk uit beslist.voor_te_leggen
 ```
 
-`opnemen` met de gedekte redenen maakt een kandidaat `review`; `afwijzen` maakt hem `afgewezen`; `verwerkt` legt een besluit vast dat de AI in de beoordeling heeft doorgevoerd (bijvoorbeeld een naamkeuze). Daarna weer `tools/afleiden.py`.
+`opnemen` met de gedekte redenen maakt een kandidaat `review`; `afwijzen` maakt hem `afgewezen`; `verwerkt` legt een besluit vast dat de AI in de beoordeling heeft doorgevoerd (bijvoorbeeld een naamkeuze). Daarna weer `tools/beslissen.py`.
 
 ## Wat al besloten is
 

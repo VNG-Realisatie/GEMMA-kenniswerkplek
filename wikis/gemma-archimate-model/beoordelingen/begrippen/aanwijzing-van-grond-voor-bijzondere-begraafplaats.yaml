@@ -198,7 +198,7 @@ genoemd_begrip: Beschikking
 toelichting: 'Specialisatie zonder pagina van Beschikking: aanwijzing door de gemeenteraad (art. 40 lid 1).'
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

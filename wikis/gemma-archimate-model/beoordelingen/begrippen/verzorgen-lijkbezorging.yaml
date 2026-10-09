@@ -274,7 +274,7 @@ relaties:
 onderwerpen:
 - lijkbezorging
 status: afgewezen
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 27

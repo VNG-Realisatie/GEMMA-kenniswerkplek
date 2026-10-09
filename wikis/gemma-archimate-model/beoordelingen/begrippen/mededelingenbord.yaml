@@ -211,7 +211,7 @@ besluiten:
   gevolg: afwijzen
   redenen:
   - 'ontsluit een dienst: nee'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_element
     regel: 22

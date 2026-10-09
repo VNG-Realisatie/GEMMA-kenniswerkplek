@@ -10,7 +10,7 @@ Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al i
 
 ## Standaard Workflow
 
-Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`beoordelingen/begrippen/<id>.yaml`); scripts leiden type en status af en maken alle pagina's (`tools/afleiden.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Eerdere besluiten van de redacteur staan in `besluiten/per-begrip.md` (per begrip) en `besluiten/werkwijze.md` (over de werkwijze, met waar ze nu staan).
+Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`beoordelingen/begrippen/<id>.yaml`); scripts leiden type en status af en maken alle pagina's (`tools/beslissen.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Eerdere besluiten van de redacteur staan in `besluiten/per-begrip.md` (per begrip) en `besluiten/werkwijze.md` (over de werkwijze, met waar ze nu staan).
 
 ## Regels
 
@@ -59,7 +59,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 | Criteria: is het een element, en welk type | skill `gemma-archimate-model-criteria`; [kennismodel/kenmerken-en-beslistabel.md](kennismodel/kenmerken-en-beslistabel.md) | kennismodel | de vragenlijst en de stappentabel: `tools/bepaal_type.py` | alleen de tekst buiten het gegenereerde blok van de skill |
 | Werkinstructie per veld van een beoordeling | skill gemma-archimate-model-beoordelen en zijn `references/` | — | — | ja |
 | Sjablonen | beoordeling: skill gemma-archimate-model-beoordelen §4; bronanalyse: skill gemma-archimate-model-ingest §4; terugmelding: `references/terugmeldingen.md`; besluit en voorleggen: `references/besluiten.md`; vorm: `schemas/` | — | — | ja |
-| Oordeel per begrip | `beoordelingen/begrippen/<id>.yaml` | — | de AI; `status` en `afgeleid` de scripts | ja, behalve `status` en `afgeleid` |
+| Oordeel per begrip | `beoordelingen/begrippen/<id>.yaml` | — | de AI; `status` en `beslist` de scripts | ja, behalve `status` en `beslist` |
 | Registers | `beoordelingen/terugmeldingen/`, `objecten.yaml`, `beleidsdomeinen.yaml`, `besluiten-eerder.yaml`, `onderwerpen/` | — | de AI | ja |
 | Wat een bron betekent | `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md` | bronanalyse | de AI | ja |
 | Waarom: onderbouwing | [docs/](docs/README.md) | doc | de AI | ja |
@@ -70,7 +70,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 | Open punten | [todo.md](todo.md) | — | de AI | ja |
 | Plannen voor grotere wijzigingen (een plan dat klaar is, blijft als geschiedenis) | `plannen/<datum>-<titel>.md` | — | de AI, met de redacteur | ja |
 | Akkoorden | [log.md](log.md) | — | `llmwiki promote apply` | nee |
-| Controles | `tools/afleiden.py` (fout), `tools/signalen.py` (signaal) | — | — | — |
+| Controles | `tools/beslissen.py` (fout), `tools/signalen.py` (signaal) | — | — | — |
 
 ### Per regel
 

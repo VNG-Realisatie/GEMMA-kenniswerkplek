@@ -192,7 +192,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Onderdeel, geen pagina (besluit redacteur 2026-10-06: de volmacht is een dienst, het bewijs een onderdeel): bij inwilliging van het verzoek maakt de burgemeester een volmachtbewijs op, of de kiezer zet zijn stempas of kiezerspas om in een volmachtbewijs (Kieswet art. L 6, L 11, L 14). De dienst heet met de UPL-naam Volmachtbewijs verkiezingen.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

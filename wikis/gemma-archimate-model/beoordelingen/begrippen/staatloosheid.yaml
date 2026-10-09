@@ -198,7 +198,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Waarde van Nationaliteit, geen pagina: sinds 1 oktober 2023 alleen opgenomen op grond van een rechterlijke uitspraak (Wet vaststellingsprocedure staatloosheid art. 4) of bij evidente staatloosheid, die de gemeente zelf vaststelt; wie beweert staatloos te zijn, moet dat aantonen. De staatloosheid eindigt bij verkrijging van een nationaliteit (HUP Staatloosheid). Het vaststellen van evidente staatloosheid is een processtap van Bijhouden persoonsgegevens; een staatloze betaalt een verlaagde prijs voor naturalisatie of optie (Utrecht).'
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

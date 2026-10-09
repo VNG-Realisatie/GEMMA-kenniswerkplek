@@ -233,7 +233,7 @@ specialisaties:
 - naam: Uittreksel RNI
   omschrijving: 'Uittreksel uit de RNI voor wie erin staat, gestuurd naar het adres in de RNI (Utrecht RNI). Geen eigen pagina: de UPL noemt het niet apart.'
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

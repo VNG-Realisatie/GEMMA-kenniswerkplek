@@ -268,7 +268,7 @@ besluiten:
   besluit: Cluster naar soort werk met vijf deelprocessen, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 27

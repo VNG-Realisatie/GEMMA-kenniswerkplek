@@ -199,7 +199,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: de kiesgerechtigdheid volgt uit de inschrijving, de nationaliteit en de leeftijd (Kieswet art. B 1-B 4); de persoonslijst bevat in de categorie kiesrecht alleen de uitsluiting en de deelname aan het Europees kiesrecht (HUP Kiesrecht). Registreren kiesgerechtigdheid werkt haar bij; de dienst heet met de UPL-naam Stemrecht.'
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

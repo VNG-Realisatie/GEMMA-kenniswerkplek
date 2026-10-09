@@ -252,7 +252,7 @@ besluiten:
   besluit: Nieuw bedrijfsproces met kernobject Begraafplaats, met de deelprocessen Verlenen toestemming bijzondere begraafplaats en Sluiten begraafplaats.
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 28

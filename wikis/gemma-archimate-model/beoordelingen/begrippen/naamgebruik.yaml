@@ -196,7 +196,7 @@ toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: de aanduiding na
 synoniemen:
 - naam: Achternaamgebruik
   context: beleid
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

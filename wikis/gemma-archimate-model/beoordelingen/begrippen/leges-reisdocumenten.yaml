@@ -202,7 +202,7 @@ synoniemen:
 - naam: Rechten
   context: wet
 toelichting: 'Specialisatie zonder pagina van Heffing: de rechten voor de aanvraag van een reisdocument, gemeentelijke belasting en bij de indiening te voldoen (Paspoortwet art. 7, 33). Het tarief en de bezorgkosten zijn lokale gegevens (Utrecht).'
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

@@ -261,7 +261,7 @@ besluiten:
   besluit: 'Levensloopproces van de houder van de begraafplaats of het crematorium voor het stoffelijk overschot, één per partij in de ketensamenwerking: bedient de bedrijfsinteractie Bezorgen stoffelijk overschot in plaats van erin te hangen (procesniveaus volgens GEMMA Online, Proceshiërarchie).'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 28

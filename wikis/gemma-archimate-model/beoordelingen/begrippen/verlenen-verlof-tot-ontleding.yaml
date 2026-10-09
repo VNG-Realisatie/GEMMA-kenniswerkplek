@@ -260,7 +260,7 @@ besluiten:
   gevolg: verwerkt
   besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (docs/indelingen.md).
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 29

@@ -198,7 +198,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Representatie, geen pagina: de administratie van de uitreikende autoriteit met de gegevens over aanvraag, verstrekking en uitreiking van de reisdocumenten (Paspoortwet art. 3 lid 8). Vermeld bij Reisdocument; precedent Register van de burgerlijke stand.'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_pagina
     regel: 19

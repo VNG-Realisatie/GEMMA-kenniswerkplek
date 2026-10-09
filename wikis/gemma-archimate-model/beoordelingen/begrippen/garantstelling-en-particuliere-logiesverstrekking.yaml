@@ -203,7 +203,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Specialisatie zonder pagina van de dienst Legalisatie handtekening: de gemeente legaliseert de handtekening van de garantsteller op het formulier voor de visumaanvraag van een gast (Utrecht). Het raakt de BRP niet.'
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

@@ -261,7 +261,7 @@ besluiten:
   besluit: 'Het product bedient de Rechthebbende op het graf (kennismodel regel 596: Product → bediening → Klant); de bediening door de dienst Graf aanvragen blijft.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

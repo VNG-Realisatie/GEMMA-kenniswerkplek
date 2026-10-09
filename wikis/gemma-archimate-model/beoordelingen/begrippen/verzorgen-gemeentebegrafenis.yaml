@@ -258,7 +258,7 @@ besluiten:
   besluit: Levensloopproces van de gemeentebegrafenis; bedient de bedrijfsinteractie Bezorgen stoffelijk overschot in plaats van erin te hangen.
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 28

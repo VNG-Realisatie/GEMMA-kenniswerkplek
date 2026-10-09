@@ -200,7 +200,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer: een toegelaten document dat een andere autoriteit verstrekt en dat de gemeente bij de balie controleert. Geen pagina; het Nederlandse reisdocument is het element Reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

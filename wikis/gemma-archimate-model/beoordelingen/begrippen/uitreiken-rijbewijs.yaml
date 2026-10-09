@@ -238,7 +238,7 @@ gemma:
 genoemd_begrip: Behandelen aanvraag rijbewijs
 toelichting: 'Deelproces zonder pagina van Behandelen aanvraag rijbewijs, Behandelen aanvraag omwisseling buitenlands rijbewijs: het na de afgifte ter beschikking stellen van het rijbewijs aan de aanvrager, die daarbij zijn eerdere rijbewijs inlevert.'
 relaties: []
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 30

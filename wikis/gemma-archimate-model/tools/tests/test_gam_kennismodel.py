@@ -93,11 +93,11 @@ def test_relaties_in_de_beoordelingen_zijn_toegestaan_of_weggefilterd():
     weggefilterd met een reden."""
     begrippen = relaties.elementen(relaties.begrippen(WIKI))
     for d in begrippen.values():
-        bron = km.sleutel_van(d["afgeleid"]["uitkomst"]["archimate_type"])
+        bron = km.sleutel_van(d["beslist"]["uitkomst"]["archimate_type"])
         for r in d.get("relaties") or []:
             if r["naar"] not in begrippen:
                 continue
-            doel = km.sleutel_van(begrippen[r["naar"]]["afgeleid"]["uitkomst"]["archimate_type"])
+            doel = km.sleutel_van(begrippen[r["naar"]]["beslist"]["uitkomst"]["archimate_type"])
             assert km.toegestaan(bron, r["soort"], doel) or km.weggefilterd(bron, r["soort"], doel), \
                 (d["begrip"], r["soort"], r["naar"])
 

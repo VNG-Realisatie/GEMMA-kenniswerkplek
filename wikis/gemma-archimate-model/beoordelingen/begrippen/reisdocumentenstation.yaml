@@ -196,7 +196,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 archimate_buiten_model: Application Component
 toelichting: 'Buiten dit model (Application Component): de apparatuur en programmatuur die de minister beschikbaar stelt voor de verwerking van aanvragen en uitreikingen en de uitwisseling met de leverancier (Paspoortbesluit art. 1.1). Kandidaat voor de applicatiearchitectuur.'
-afgeleid:
+beslist:
   uitkomst:
     soort: buiten_model
     regel: 3

@@ -2,7 +2,7 @@
 import pytest
 import yaml
 from gam_hulp import TOOLS
-from test_gam_afleiden_render import _bo, _lees, _proces, _schrijf, wiki  # noqa: F401  (fixture)
+from test_gam_beslissen_render import _bo, _lees, _proces, _schrijf, wiki  # noqa: F401  (fixture)
 
 from llmwiki import akkoord, beoordeling, lint, paths
 
@@ -11,7 +11,7 @@ from llmwiki import akkoord, beoordeling, lint, paths
 def wiki_met_scripts(wiki):  # noqa: F811
     """De fixture-wiki met de echte scripts (absoluut pad in wiki.yaml)."""
     y = paths.load_wiki_yaml(wiki)
-    y["curation"].update(afleiden=str(TOOLS / "afleiden.py"), render=str(TOOLS / "render.py"), approval="chat")
+    y["curation"].update(beslissen=str(TOOLS / "beslissen.py"), render=str(TOOLS / "render.py"), approval="chat")
     (wiki / "wiki.yaml").write_text(yaml.safe_dump(y, sort_keys=False, allow_unicode=True), encoding="utf-8")
     _schrijf(wiki, "beschikking", _bo())
     _schrijf(wiki, "behandelen-aanvraag", _proces())
@@ -27,10 +27,10 @@ def test_plan_en_akkoord_keuren_goed_en_leggen_vast(wiki_met_scripts):
     assert _lees(wiki, "beschikking")["status"] == "goedgekeurd"
     log = (wiki / "log.md").read_text(encoding="utf-8")
     assert "promote | beschikking | Redacteur |" in log
-    pagina = (wiki / _lees(wiki, "beschikking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    pagina = (wiki / _lees(wiki, "beschikking")["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "**Status: goedgekeurd**" in pagina
     assert lint.check_goedgekeurd_guard(wiki.parent.parent) == []
-    akkoord.draai_script(wiki, y, "afleiden")  # een volgende afleiding houdt goedgekeurd vast
+    akkoord.draai_script(wiki, y, "beslissen")  # een volgende run van beslissen houdt goedgekeurd vast
     assert _lees(wiki, "beschikking")["status"] == "goedgekeurd"
 
 
@@ -65,7 +65,7 @@ def test_plan_per_onderwerp(wiki_met_scripts):
 
 def test_guard_vangt_goedgekeurd_zonder_logregel(wiki_met_scripts):
     wiki, y = wiki_met_scripts
-    akkoord.draai_script(wiki, y, "afleiden")
+    akkoord.draai_script(wiki, y, "beslissen")
     data = _lees(wiki, "beschikking")
     data["status"] = "goedgekeurd"
     _schrijf(wiki, "beschikking", data)

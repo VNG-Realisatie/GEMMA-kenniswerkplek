@@ -193,7 +193,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet beoordeeld: verwijzing naar een later onderwerp.'
 toelichting: 'Verwijzing: UPL-product nr. 244 (zonder grondslag) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): het gaat om een melding over de openbare ruimte (UPL-domein Fysieke leefomgeving, zonder grondslag), geen taak uit de BRP, de burgerlijke stand, de reisdocumenten, het kiesrecht of het Nederlanderschap. Het product krijgt zijn pagina in een later onderwerp openbare ruimte.'
-afgeleid:
+beslist:
   uitkomst:
     soort: verwijzing
     regel: 6

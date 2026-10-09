@@ -212,7 +212,7 @@ synoniemen:
 - naam: Toestemmingsverklaring
   context: beleid
 toelichting: 'Invoer van een andere partij: de ouder of andere gezaghebber geeft de verklaring, de gemeente ontvangt en toetst haar bij de aanvraag voor een kind jonger dan achttien jaar (paspoort) of twaalf jaar (identiteitskaart). Geen pagina; vermeld bij Behandelen aanvraag reisdocument (Paspoortwet art. 34; Utrecht).'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

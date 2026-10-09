@@ -196,7 +196,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Representatie, geen pagina: het register legt de ongeldige stempassen vast; de burgemeester stelt de dag voor de stemming een uittreksel vast en vernietigt het register drie maanden na de toelating van de gekozenen (Kieswet art. J 7a). Vermeld bij Stempas. Precedent: Register van begraven lijken.'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_pagina
     regel: 19

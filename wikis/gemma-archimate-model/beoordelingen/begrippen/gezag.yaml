@@ -226,7 +226,7 @@ ggm:
   guid: EAID_C18BB25F_536F_4b80_BC7C_7855DF2D7389
   sterkte: sterk
   onderbouwing: 'GGM-entiteit Gezagsverhouding (Sociaal domein generiek), met indicatie gezag minderjarige en indicatie curateleregister en een relatie naar IngeschrevenPersoon: hetzelfde als de gezagsverhouding in de BRP. De GGM-definitie is breder (ook arbeidsrelaties).'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

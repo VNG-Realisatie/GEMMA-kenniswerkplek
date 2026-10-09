@@ -194,7 +194,7 @@ toelichting: 'Eigenschap of indeling van Urn: Eigenschap van de urn: bijgezet, v
 genoemd_begrip: Urn
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

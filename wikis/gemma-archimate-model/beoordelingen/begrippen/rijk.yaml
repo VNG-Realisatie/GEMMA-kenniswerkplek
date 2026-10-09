@@ -235,7 +235,7 @@ besluiten:
   besluit: 'Rijkskant: één actor Rijk met de GEMMA-match, die de rol Ketenpartner vervult; de afzonderlijke ministers en rijksdiensten (minister van BZK met de RvIG, minister van JenV met de IND) staan in de beschrijving. Het Rijk is een soort partij: de bestuurslaag als geheel, waarmee elke gemeente te maken heeft, zoals Provincie en Waterschap.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

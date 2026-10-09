@@ -218,7 +218,7 @@ synoniemen:
   context: HUP
 - naam: Behandelen terugmelding
   context: HUP
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 30

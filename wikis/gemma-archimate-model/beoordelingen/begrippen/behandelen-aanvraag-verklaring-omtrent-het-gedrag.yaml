@@ -277,7 +277,7 @@ gemma_generiek:
   id: id-874c14bc-24ec-409a-9d68-56d7c4f18eb7
   onderbouwing: 'De gemeente voert de ontvangst en het onderzoek van de aanvraag uit voor de minister, die over de verklaring beslist (art. 30, 37): een dienst aan een ketenpartner, zoals GEMMA Leveren dienst aan derden beschrijft (''een (deel)proces dat aan de gemeente is uitbesteed'').'
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 29

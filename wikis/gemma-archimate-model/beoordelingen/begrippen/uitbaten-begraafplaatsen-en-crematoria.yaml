@@ -241,7 +241,7 @@ besluiten:
   besluit: Cluster naar soort werk met Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as en Ruimen graf, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen.
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 27

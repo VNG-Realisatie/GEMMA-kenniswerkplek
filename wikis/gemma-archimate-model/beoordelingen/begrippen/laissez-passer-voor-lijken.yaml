@@ -209,7 +209,7 @@ homoniemen:
   element: vervoersdocumenten-stoffelijk-overschot
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

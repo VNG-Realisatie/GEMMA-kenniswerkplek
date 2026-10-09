@@ -1,8 +1,8 @@
 """Beoordelingen van een curatie-wiki: YAML-bestanden met het oordeel van de AI per begrip.
 
-Een beoordeling is de invoer voor de scripts van de wiki: een afleid-script vult `afgeleid:` en `status:`, een
+Een beoordeling is de invoer voor de scripts van de wiki: een beslis-script vult `beslist:` en `status:`, een
 render-script maakt er leesbare pagina's van. Het akkoord van de redacteur hoort bij de inhoud van de beoordeling
-(`inhoud_hash`): alles behalve `status` en `afgeleid`, want die zetten de scripts. Zo vraagt een andere opmaak of een
+(`inhoud_hash`): alles behalve `status` en `beslist`, want die zetten de scripts. Zo vraagt een andere opmaak of een
 bijgewerkt model geen nieuw akkoord, en een inhoudelijke wijziging wel.
 
 Waar de beoordelingen staan, zegt `wiki.yaml` `curation.beoordelingen` (een map, relatief aan de wiki).
@@ -18,7 +18,7 @@ SNELLE_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 
 from . import hashing
 
-SCRIPTVELDEN = ("status", "afgeleid")
+SCRIPTVELDEN = ("status", "beslist")
 
 
 def map_(wiki_root: Path, wiki_yaml: dict) -> Path | None:

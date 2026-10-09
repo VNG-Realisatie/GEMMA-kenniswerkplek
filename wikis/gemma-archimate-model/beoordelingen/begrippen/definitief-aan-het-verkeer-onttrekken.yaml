@@ -196,7 +196,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Processtap zonder pagina: het vernietigen, of onbruikbaar maken en teruggeven, van een ingeleverd, ingehouden, vervallen verklaard, niet opgehaald of gevonden reisdocument (Paspoortwet art. 1 onder j, 42 lid 4, 54 lid 3; Paspoortbesluit art. 7.1). Vermeld bij Inhouden reisdocument en Uitreiken reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

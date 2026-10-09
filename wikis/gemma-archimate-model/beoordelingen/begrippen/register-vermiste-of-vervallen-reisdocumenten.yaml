@@ -203,7 +203,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer van een andere partij: het register van de minister met ontvreemde, vermiste en van rechtswege vervallen reisdocumenten en identiteitskaarten, ter voorkoming en bestrijding van fraude (Paspoortwet art. 4a). De gemeente levert de gegevens door vermissing en verval te registreren. Geen pagina; vermeld bij Verwerken vermissing reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

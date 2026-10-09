@@ -197,7 +197,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Waarde van Nationaliteit, geen pagina: opgenomen als geen brondocument beschikbaar is en de nationaliteit niet van rechtswege kan worden bepaald; beëindigd als de werkelijke nationaliteit bekend wordt, bijvoorbeeld door een mededeling op grond van art. 2.17 Wet BRP, of bij verkrijging van het Nederlanderschap (HUP Onbekende nationaliteit). Een processtap van Bijhouden persoonsgegevens.'
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

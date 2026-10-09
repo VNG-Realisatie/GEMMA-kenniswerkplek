@@ -210,7 +210,7 @@ ggm:
   guid: EAID_69B41CDD_C3F1_449b_92B4_8F7657840646
   sterkte: exact
   onderbouwing: GGM-entiteit Nationaliteit (RSGBPlus), met de reden van verkrijging en verlies. Het GGM kent daarnaast een tweede entiteit Nationaliteit (EAID_71B3BE0D_2BF9_4740_9597_A0EEC75AFE9B) met code, omschrijving en geldigheid, in GEMMA de referentielijst van nationaliteiten, en de entiteiten NationaliteitIngeschrevenNatuurlijkPersoon en NederlandseNationaliteitIngeschrevenPersoon; de laatste is de match van het element Nederlanderschap (GGM-terugmelding 16).
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 37

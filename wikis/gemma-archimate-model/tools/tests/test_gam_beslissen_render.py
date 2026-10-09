@@ -1,9 +1,9 @@
-"""tools/afleiden.py en tools/render.py: van beoordeling naar status en pagina's."""
+"""tools/beslissen.py en tools/render.py: van beoordeling naar status en pagina's."""
 import pytest
 from test_gam_bepaal_type import (ACTOR, BELEIDSKADER, BO, DIENST, FUNCTIE, GEBEURTENIS, KANAAL, PROCES, PRODUCT, ROL,
                                   SAMENWERKING)
 
-import afleiden
+import beslissen
 import bepaal_type as bt
 import render
 from llmwiki import beoordeling, logbook
@@ -64,8 +64,8 @@ def _lees(wiki, bid):
     return beoordeling.laad(wiki / f"beoordelingen/begrippen/{bid}.yaml")
 
 
-def _afleiden(wiki):
-    res = afleiden.afleiden(wiki)
+def _beslissen(wiki):
+    res = beslissen.beslissen(wiki)
     assert res.fouten == []
     assert render.main(["--wiki", str(wiki)]) == 0
     return res
@@ -74,14 +74,14 @@ def _afleiden(wiki):
 def test_beoordelingen_worden_paginas_met_relaties_in_beide_richtingen(wiki):
     _schrijf(wiki, "beschikking", _bo())
     _schrijf(wiki, "behandelen-aanvraag", _proces())
-    _afleiden(wiki)
+    _beslissen(wiki)
 
     bo, proces = _lees(wiki, "beschikking"), _lees(wiki, "behandelen-aanvraag")
     assert (bo["status"], proces["status"]) == ("review", "review")
-    assert bo["afgeleid"]["pad"] == "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md"
-    assert bo["afgeleid"]["herkomst"] == "rijksregelgeving"
+    assert bo["beslist"]["pad"] == "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md"
+    assert bo["beslist"]["herkomst"] == "rijksregelgeving"
 
-    pagina = (wiki / bo["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    pagina = (wiki / bo["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "#### Inkomend" in pagina
     assert "[Behandelen aanvraag](../../../bedrijfsprocessen/8-wonen/vergunningen/behandelen-aanvraag.md)" in pagina
     assert f"[{WET}](../../../../bronanalyses/test/rijksregelgeving/{WET}.md)" in pagina
@@ -127,28 +127,28 @@ def test_elk_paginatype_wordt_afgeleid_en_gerenderd(wiki):
     }
     for bid, (_, _, data) in gevallen.items():
         _schrijf(wiki, bid, data)
-    _afleiden(wiki)
+    _beslissen(wiki)
 
     for bid, (paginatype, archimate_type, _) in gevallen.items():
         d = _lees(wiki, bid)
-        uitkomst = d["afgeleid"]["uitkomst"]
+        uitkomst = d["beslist"]["uitkomst"]
         assert (uitkomst["soort"], uitkomst["paginatype"], uitkomst["archimate_type"]) == \
             ("element", paginatype, archimate_type), bid
-        # Een kanaal wordt altijd voorgelegd (centrale set); de rest is na afleiden klaar voor review.
-        assert d["status"] == ("kandidaat" if paginatype == "kanaal" else "review"), (bid, d["afgeleid"].get("open"))
-        assert d["afgeleid"]["pad"].startswith(afleiden.paths.load_wiki_yaml(wiki)["page_types"][paginatype]["dir"])
-        assert (wiki / d["afgeleid"]["pad"]).exists(), bid
+        # Een kanaal wordt altijd voorgelegd (centrale set); de rest is na beslissen klaar voor review.
+        assert d["status"] == ("kandidaat" if paginatype == "kanaal" else "review"), (bid, d["beslist"].get("open"))
+        assert d["beslist"]["pad"].startswith(beslissen.paths.load_wiki_yaml(wiki)["page_types"][paginatype]["dir"])
+        assert (wiki / d["beslist"]["pad"]).exists(), bid
     lijst = (wiki / "begrippen/test.md").read_text(encoding="utf-8")
     assert all(data["begrip"] in lijst for _, _, data in gevallen.values())
 
 
-def test_afleiden_en_render_zijn_idempotent_en_check_vangt_handwerk(wiki):
+def test_beslissen_en_render_zijn_idempotent_en_check_vangt_handwerk(wiki):
     _schrijf(wiki, "beschikking", _bo())
-    _afleiden(wiki)
-    assert afleiden.afleiden(wiki).gewijzigd == []
+    _beslissen(wiki)
+    assert beslissen.beslissen(wiki).gewijzigd == []
     assert render.main(["--wiki", str(wiki), "--check"]) == 0
 
-    pagina = wiki / _lees(wiki, "beschikking")["afgeleid"]["pad"]
+    pagina = wiki / _lees(wiki, "beschikking")["beslist"]["pad"]
     pagina.write_text(pagina.read_text(encoding="utf-8") + "\nHandmatig.\n", encoding="utf-8")
     assert render.main(["--wiki", str(wiki), "--check"]) == 1
     (wiki / "bedrijfsarchitectuur/rollen").mkdir(parents=True)
@@ -160,47 +160,47 @@ def test_afleiden_en_render_zijn_idempotent_en_check_vangt_handwerk(wiki):
 
 def test_regelgeving_blijft_kandidaat_tot_de_redacteur_beslist(wiki):
     _schrijf(wiki, "beschikking", _bo(grondslag="regelgeving", grondslag_toelichting=["Gemeentewet art. 147."]))
-    _afleiden(wiki)
+    _beslissen(wiki)
     data = _lees(wiki, "beschikking")
     assert data["status"] == "kandidaat"
-    assert data["afgeleid"]["open"] == [bt.REDEN_REGELGEVING]
-    assert "## Ter discussie" in (wiki / data["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    assert data["beslist"]["open"] == [bt.REDEN_REGELGEVING]
+    assert "## Ter discussie" in (wiki / data["beslist"]["pad"]).read_text(encoding="utf-8")
 
     data["besluiten"] = [{"datum": "2026-10-01", "besluit": "Opnemen.", "gevolg": "opnemen",
                           "redenen": [bt.REDEN_REGELGEVING]}]
     _schrijf(wiki, "beschikking", data)
-    _afleiden(wiki)
+    _beslissen(wiki)
     assert _lees(wiki, "beschikking")["status"] == "review"
 
     data = _lees(wiki, "beschikking")
     data["besluiten"].append({"datum": "2026-10-02", "besluit": "Toch niet.", "gevolg": "afwijzen"})
     _schrijf(wiki, "beschikking", data)
-    _afleiden(wiki)
+    _beslissen(wiki)
     data = _lees(wiki, "beschikking")
-    assert data["status"] == "afgewezen" and "pad" not in data["afgeleid"]
+    assert data["status"] == "afgewezen" and "pad" not in data["beslist"]
     assert not (wiki / "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md").exists()
 
 
 def test_goedgekeurd_blijft_tot_de_inhoud_wijzigt(wiki):
     _schrijf(wiki, "beschikking", _bo())
-    _afleiden(wiki)
+    _beslissen(wiki)
     data = _lees(wiki, "beschikking")
     data["status"] = "goedgekeurd"
     _schrijf(wiki, "beschikking", data)
     logbook.append_log(wiki, "promote", "beschikking", "Redacteur", beoordeling.inhoud_hash(data))
-    _afleiden(wiki)
+    _beslissen(wiki)
     assert _lees(wiki, "beschikking")["status"] == "goedgekeurd"
 
     data = _lees(wiki, "beschikking")
     data["definitie"] = "Een andere definitie."
     _schrijf(wiki, "beschikking", data)
-    _afleiden(wiki)
+    _beslissen(wiki)
     assert _lees(wiki, "beschikking")["status"] == "review"
 
 
 def test_goedgekeurd_zonder_logregel_wordt_review(wiki):
     _schrijf(wiki, "beschikking", {**_bo(), "status": "goedgekeurd"})
-    _afleiden(wiki)
+    _beslissen(wiki)
     assert _lees(wiki, "beschikking")["status"] == "review"
 
 
@@ -218,7 +218,7 @@ def test_harde_fouten_schrijven_niets(wiki, wijziging, melding):
     proces = _proces()
     wijziging(proces)
     _schrijf(wiki, "behandelen-aanvraag", proces)
-    res = afleiden.afleiden(wiki)
+    res = beslissen.beslissen(wiki)
     assert any(melding in f for f in res.fouten), res.fouten
     assert "status" not in _lees(wiki, "beschikking")
 
@@ -230,11 +230,11 @@ def test_nieuwe_terugmelding_krijgt_het_volgende_nummer(wiki):
          "element": "beschikking", "status": "open"},
         {"domein": "Vergunningen", "type": "definitie", "bevinding": ["**Bevinding:** te smal.", "**Voorstel:** verbreden."],
          "element": "beschikking"}]}
-    beoordeling.schrijf(wiki / afleiden.TERUGMELDINGEN, register)
-    _afleiden(wiki)
-    meldingen = beoordeling.laad(wiki / afleiden.TERUGMELDINGEN)["terugmeldingen"]
+    beoordeling.schrijf(wiki / beslissen.TERUGMELDINGEN, register)
+    _beslissen(wiki)
+    meldingen = beoordeling.laad(wiki / beslissen.TERUGMELDINGEN)["terugmeldingen"]
     assert [(m["nummer"], m["status"]) for m in meldingen] == [(1, "open"), (2, "open")]
-    pagina = (wiki / _lees(wiki, "beschikking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    pagina = (wiki / _lees(wiki, "beschikking")["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "[Nummer 2](../../../../terugmeldingen/ggm-terugmeldingen.md)" in pagina
 
 
@@ -244,8 +244,8 @@ def test_open_terugmelding_zonder_voorstel_is_een_fout(wiki):
         {"nummer": 1, "domein": "Vergunningen", "type": "hiaat", "bevinding": ["**GGM:** ontbreekt.", "**Bevinding:** nodig."],
          "element": "beschikking", "status": "open"},
         {"nummer": 2, "domein": "Vergunningen", "type": "hiaat", "bevinding": "Oud.", "element": "beschikking", "status": "opgelost"}]}
-    beoordeling.schrijf(wiki / afleiden.TERUGMELDINGEN, register)
-    res = afleiden.afleiden(wiki, schrijven=False)
+    beoordeling.schrijf(wiki / beslissen.TERUGMELDINGEN, register)
+    res = beslissen.beslissen(wiki, schrijven=False)
     assert res.fouten == ["terugmelding 1: een open melding heeft een alinea die begint met **Voorstel:**"]
 
 
@@ -261,26 +261,26 @@ def test_gemma_terugmelding_noemt_wiki_en_gemma_elementen(wiki):
     register = {"terugmeldingen": [
         {"type": "element", "elementen": ["beschikking"], "gemma_elementen": [{"id": "id-functie", "naam": "Uitvoering veiligheid"}],
          "bevinding": ["**Bevinding:** vervalt in de wiki.", "**Voorstel:** herzien."]}]}
-    beoordeling.schrijf(wiki / afleiden.GEMMA_TERUGMELDINGEN, register)
-    _afleiden(wiki)
-    meldingen = beoordeling.laad(wiki / afleiden.GEMMA_TERUGMELDINGEN)["terugmeldingen"]
+    beoordeling.schrijf(wiki / beslissen.GEMMA_TERUGMELDINGEN, register)
+    _beslissen(wiki)
+    meldingen = beoordeling.laad(wiki / beslissen.GEMMA_TERUGMELDINGEN)["terugmeldingen"]
     assert [(m["nummer"], m["status"]) for m in meldingen] == [(1, "open")]
     lijst = (wiki / "terugmeldingen" / "gemma-terugmeldingen.md").read_text(encoding="utf-8")
     assert "Uitvoering veiligheid (GEMMA)" in lijst and "## Terugmeldingen" in lijst
-    pagina = (wiki / _lees(wiki, "beschikking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    pagina = (wiki / _lees(wiki, "beschikking")["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "[Nummer 1](../../../../terugmeldingen/gemma-terugmeldingen.md)" in pagina
     # een GEMMA-element dat niet bestaat of anders heet, is een fout
     register["terugmeldingen"][0]["gemma_elementen"] = [{"id": "id-functie", "naam": "Andere naam"}]
     register["terugmeldingen"][0] |= {"nummer": 1, "status": "open"}
-    beoordeling.schrijf(wiki / afleiden.GEMMA_TERUGMELDINGEN, register)
-    res = afleiden.afleiden(wiki, schrijven=False)
+    beoordeling.schrijf(wiki / beslissen.GEMMA_TERUGMELDINGEN, register)
+    res = beslissen.beslissen(wiki, schrijven=False)
     assert res.fouten == ["GEMMA-terugmelding 1: GEMMA-element 'id-functie' heet 'Uitvoering veiligheid', niet 'Andere naam'"]
 
 
 def test_signalen_noemen_de_regel_bij_naam(wiki):
     _schrijf(wiki, "beschikking", _bo(beschrijving=["Wordt geregistreerd in het zaaksysteem."]))
     _schrijf(wiki, "aanvraag-behandeling", _element("Aanvraagbehandeling", PROCES, kernobject="beschikking", afnemer="extern"))
-    res = afleiden.afleiden(wiki)
+    res = beslissen.beslissen(wiki)
     assert res.fouten == []
     assert any("regel Naamvorm" in w and "aanvraag-behandeling" in w for w in res.waarschuwingen)
     assert any("regel Beslistabel beslist" in w and "geregistreerd" in w for w in res.waarschuwingen)
@@ -292,7 +292,7 @@ def test_relatie_buiten_het_kennismodel_is_een_signaal_en_staat_op_de_pagina(wik
     proces = _proces()
     proces["relaties"][0].update(soort="associatie (gericht)", naam="betreft")
     _schrijf(wiki, "behandelen-aanvraag", proces)
-    res = _afleiden(wiki)
+    res = _beslissen(wiki)
     assert any("behandelen-aanvraag" in w and "nergens in het kennismodel" in w for w in res.waarschuwingen)
     for pad in wiki.rglob("behandelen-aanvraag.md"), wiki.rglob("beschikking.md"):
         tekst = next(pad).read_text(encoding="utf-8")
@@ -302,7 +302,7 @@ def test_relatie_buiten_het_kennismodel_is_een_signaal_en_staat_op_de_pagina(wik
 def test_relatie_in_het_kennismodel_heeft_geen_signaal_en_geen_markering(wiki):
     _schrijf(wiki, "beschikking", _bo())
     _schrijf(wiki, "behandelen-aanvraag", _proces())
-    res = _afleiden(wiki)
+    res = _beslissen(wiki)
     assert not any("kennismodel (" in w or "in het kennismodel;" in w for w in res.waarschuwingen)
     assert "niet in het kennismodel" not in next(wiki.rglob("beschikking.md")).read_text(encoding="utf-8")
 
@@ -312,16 +312,16 @@ def test_relatie_ongeldig_in_archimate_blijft_een_fout(wiki):
     proces = _proces()
     proces["relaties"][0].update(soort="compositie")  # gedrag → passief bestaat niet in ArchiMate
     _schrijf(wiki, "behandelen-aanvraag", proces)
-    assert any("niet geldig in de ArchiMate-relatietabel" in f for f in afleiden.afleiden(wiki).fouten)
+    assert any("niet geldig in de ArchiMate-relatietabel" in f for f in beslissen.beslissen(wiki).fouten)
 
 
 def test_kenmerk_ja_zonder_kernrelatie_is_een_signaal(wiki):
     _schrijf(wiki, "beschikking", _bo())  # wordt_bewerkt: ja, maar niets bewerkt haar
-    res = afleiden.afleiden(wiki)
+    res = beslissen.beslissen(wiki)
     assert res.fouten == []
     assert any("beschikking" in w and "kenmerk wordt_bewerkt is ja" in w for w in res.waarschuwingen)
     _schrijf(wiki, "behandelen-aanvraag", _proces())
-    assert not any("beschikking: kenmerk wordt_bewerkt" in w for w in afleiden.afleiden(wiki).waarschuwingen)
+    assert not any("beschikking: kenmerk wordt_bewerkt" in w for w in beslissen.beslissen(wiki).waarschuwingen)
 
 
 def test_bronanalyse_staat_in_de_map_van_haar_brontype(wiki):
@@ -329,14 +329,14 @@ def test_bronanalyse_staat_in_de_map_van_haar_brontype(wiki):
     fout = wiki / "bronanalyses" / "test" / "beleid" / f"{WET}.md"
     pad.rename(fout)
     _schrijf(wiki, "beschikking", _bo())
-    assert f"bronanalyses/test/beleid/{WET}.md: hoort in bronanalyses/test/rijksregelgeving/" in afleiden.afleiden(wiki).fouten
+    assert f"bronanalyses/test/beleid/{WET}.md: hoort in bronanalyses/test/rijksregelgeving/" in beslissen.beslissen(wiki).fouten
 
 
 def test_bronanalyse_zonder_bronregel_is_een_fout(wiki):
     pad = wiki / "bronanalyses" / "test" / "rijksregelgeving" / f"{WET}.md"
     pad.write_text(pad.read_text(encoding="utf-8").replace("Bron: ", "Zie: "), encoding="utf-8")
     _schrijf(wiki, "beschikking", _bo())
-    assert any("'Bron:'" in f for f in afleiden.afleiden(wiki).fouten)
+    assert any("'Bron:'" in f for f in beslissen.beslissen(wiki).fouten)
 
 
 def test_element_zonder_enige_bron_is_een_fout(wiki):
@@ -344,7 +344,7 @@ def test_element_zonder_enige_bron_is_een_fout(wiki):
     for antwoord in bo["kenmerken"].values():
         antwoord.pop("bronnen", None)
     _schrijf(wiki, "beschikking", bo)
-    fouten = afleiden.afleiden(wiki).fouten
+    fouten = beslissen.beslissen(wiki).fouten
     assert any("element zonder bron" in f for f in fouten)
     assert any("kenmerk 'ja' zonder bron" in f for f in fouten)
 
@@ -359,24 +359,24 @@ def _deelproces(**extra) -> dict:
 
 def test_object_zonder_proces_wordt_voorgelegd_en_een_kernobject_is_een_kernobject(wiki):
     _schrijf(wiki, "graf", _element("Graf", BO, ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}))
-    _afleiden(wiki)
+    _beslissen(wiki)
     data = _lees(wiki, "graf")
     assert data["status"] == "kandidaat"
-    assert any("levensloop" in r for r in data["afgeleid"]["voor_te_leggen"])
+    assert any("levensloop" in r for r in data["beslist"]["voor_te_leggen"])
 
     _schrijf(wiki, "beheren-graven", _element("Beheren graven", PROCES, kernobject="graf", afnemer="extern",
                                               relaties=[_rel("toegang (registreren)", "graf")]))
-    _afleiden(wiki)
-    assert _lees(wiki, "graf")["afgeleid"]["uitkomst"]["objectniveau"] == "kernobject"
+    _beslissen(wiki)
+    assert _lees(wiki, "graf")["beslist"]["uitkomst"]["objectniveau"] == "kernobject"
     assert _lees(wiki, "graf")["status"] == "review"
-    assert _lees(wiki, "beheren-graven")["afgeleid"]["uitkomst"]["procesniveau"] == "levensloopproces"
+    assert _lees(wiki, "beheren-graven")["beslist"]["uitkomst"]["procesniveau"] == "levensloopproces"
 
 
 def test_twee_processen_voor_een_kernobject_is_een_fout(wiki):
     _schrijf(wiki, "beschikking", _bo())
     _schrijf(wiki, "behandelen-aanvraag", _proces())
     _schrijf(wiki, "beheren", _element("Beheren beschikkingen", PROCES, kernobject="beschikking", afnemer="extern"))
-    res = afleiden.afleiden(wiki)
+    res = beslissen.beslissen(wiki)
     assert any("per kernobject één levensloopproces" in f for f in res.fouten)
 
 
@@ -387,7 +387,7 @@ def test_levensloopproces_onder_een_levensloopproces_is_een_fout(wiki):
     _schrijf(wiki, "behandelen-aanvraag", _element("Behandelen aanvragen", PROCES, kernobject="aanvraag", afnemer="extern"))
     _schrijf(wiki, "keten", _element("Afhandelen beschikkingen", PROCES, kernobject="beschikking", afnemer="extern",
                                      relaties=[_rel("aggregatie", "behandelen-aanvraag")]))
-    res = afleiden.afleiden(wiki)
+    res = beslissen.beslissen(wiki)
     assert any("levensloopproces aggregeert levensloopproces 'behandelen-aanvraag'" in f for f in res.fouten)
 
 
@@ -396,14 +396,14 @@ def test_indelingsveld_ontbreekt_wordt_voorgelegd_en_een_onbekende_waarde_is_een
     data = _proces()
     del data["afnemer"]
     _schrijf(wiki, "behandelen-aanvraag", data)
-    assert afleiden.afleiden(wiki).fouten == []
-    _afleiden(wiki)
-    afgeleid = _lees(wiki, "behandelen-aanvraag")
-    assert afgeleid["status"] == "kandidaat"
-    assert "indelingsveld ontbreekt: afnemer" in afgeleid["afgeleid"]["voor_te_leggen"]
+    assert beslissen.beslissen(wiki).fouten == []
+    _beslissen(wiki)
+    beslist = _lees(wiki, "behandelen-aanvraag")
+    assert beslist["status"] == "kandidaat"
+    assert "indelingsveld ontbreekt: afnemer" in beslist["beslist"]["voor_te_leggen"]
     data["afnemer"] = "allemaal"
     _schrijf(wiki, "behandelen-aanvraag", data)
-    assert any("allemaal" in f for f in afleiden.afleiden(wiki).fouten)  # het schema weigert de waarde
+    assert any("allemaal" in f for f in beslissen.beslissen(wiki).fouten)  # het schema weigert de waarde
 
 
 def test_via_moet_een_specialisatie_van_het_doel_zijn(wiki):
@@ -413,10 +413,10 @@ def test_via_moet_een_specialisatie_van_het_doel_zijn(wiki):
     proces = _proces()
     proces["relaties"][0]["via"] = "verlof"
     _schrijf(wiki, "behandelen-aanvraag", proces)
-    assert afleiden.afleiden(wiki).fouten == []
+    assert beslissen.beslissen(wiki).fouten == []
     proces["relaties"][0]["via"] = "beschikking"  # een element, geen specialisatie
     _schrijf(wiki, "behandelen-aanvraag", proces)
-    assert any("geen specialisatie van dat doel" in f for f in afleiden.afleiden(wiki).fouten)
+    assert any("geen specialisatie van dat doel" in f for f in beslissen.beslissen(wiki).fouten)
 
 
 def test_leidt_tot_gebeurtenis_vraagt_een_triggering(wiki):
@@ -425,10 +425,10 @@ def test_leidt_tot_gebeurtenis_vraagt_een_triggering(wiki):
     proces = _proces()
     proces["kenmerken"]["leidt_tot_gebeurtenis"] = {"waarde": "ja", "onderbouwing": "Eindigt in een overlijden.", "bronnen": [WET]}
     _schrijf(wiki, "behandelen-aanvraag", proces)
-    assert any("geen relatie 'triggering' naar een gebeurtenis" in f for f in afleiden.afleiden(wiki).fouten)
+    assert any("geen relatie 'triggering' naar een gebeurtenis" in f for f in beslissen.beslissen(wiki).fouten)
     proces["relaties"].append(_rel("triggering", "overlijden"))
     _schrijf(wiki, "behandelen-aanvraag", proces)
-    assert afleiden.afleiden(wiki).fouten == []
+    assert beslissen.beslissen(wiki).fouten == []
 
 
 def test_gemma_generiek_moet_in_het_gemma_model_staan(wiki):
@@ -441,9 +441,9 @@ def test_gemma_generiek_moet_in_het_gemma_model_staan(wiki):
                                          "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}}, "test")
     _schrijf(wiki, "beschikking", _bo())
     _schrijf(wiki, "behandelen-aanvraag", _proces(gemma_generiek={"id": "id-vergunning", "onderbouwing": "Generiek proces."}))
-    assert afleiden.afleiden(wiki).fouten == []
+    assert beslissen.beslissen(wiki).fouten == []
     _schrijf(wiki, "behandelen-aanvraag", _proces(gemma_generiek={"id": "id-weg", "onderbouwing": "Bestaat niet."}))
-    assert any("gemma_generiek 'id-weg' bestaat niet" in f for f in afleiden.afleiden(wiki).fouten)
+    assert any("gemma_generiek 'id-weg' bestaat niet" in f for f in beslissen.beslissen(wiki).fouten)
 
 
 def test_signalen_voor_de_indeling():
@@ -611,15 +611,15 @@ def _indeling_wiki(wiki):
     }
     for bid, data in gevallen.items():
         _schrijf(wiki, bid, data)
-    _afleiden(wiki)
+    _beslissen(wiki)
     return gevallen
 
 
 def test_pagina_toont_de_plaats_in_de_indelingen(wiki):
     _indeling_wiki(wiki)
     opgraven = _lees(wiki, "opgraven-lijk")
-    assert opgraven["afgeleid"]["uitkomst"]["procesniveau"] == "bedrijfsproces"
-    pagina = (wiki / opgraven["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    assert opgraven["beslist"]["uitkomst"]["procesniveau"] == "bedrijfsproces"
+    pagina = (wiki / opgraven["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "procesniveau: bedrijfsproces" in pagina and "afnemer: extern" in pagina
     assert "kernobject:" not in pagina.split("---")[1]  # een verwijzing staat niet in de frontmatter
     assert "#### Plaats in de indelingen" in pagina or "### Plaats in de indelingen" in pagina
@@ -630,21 +630,21 @@ def test_pagina_toont_de_plaats_in_de_indelingen(wiki):
         "specialisatie van**: GEMMA-element" in pagina
     assert "**Functie-indeling naar domein, bediend door**: [Exploiteren van begraafplaatsen]" in pagina
 
-    keten = (wiki / _lees(wiki, "bezorgen-lijken")["afgeleid"]["pad"]).read_text(encoding="utf-8")
-    assert "bedrijfsinteracties" in _lees(wiki, "bezorgen-lijken")["afgeleid"]["pad"]
+    keten = (wiki / _lees(wiki, "bezorgen-lijken")["beslist"]["pad"]).read_text(encoding="utf-8")
+    assert "bedrijfsinteracties" in _lees(wiki, "bezorgen-lijken")["beslist"]["pad"]
     assert "**Kernobject**: [Lijk]" in keten and "**Ketensamenwerking, bediend door**: [Opgraven lijk]" in keten
-    levensloop = (wiki / _lees(wiki, "toestaan-lijkbezorging")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    levensloop = (wiki / _lees(wiki, "toestaan-lijkbezorging")["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "**Procesniveau**: levensloopproces." in levensloop and "**Gestart door gebeurtenis**: [Overlijden]" in levensloop
     assert "omvat**: [Opgraven lijk]" in levensloop
 
-    lijk = (wiki / _lees(wiki, "lijk")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    lijk = (wiki / _lees(wiki, "lijk")["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "objectniveau: kernobject" in lijk and "**Levensloop bepaald door**: [Toestaan lijkbezorging]" in lijk
     assert "**Ketensamenwerking**: [Bezorgen lijken]" in lijk
-    bedekking = (wiki / _lees(wiki, "grafbedekking")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    bedekking = (wiki / _lees(wiki, "grafbedekking")["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "objectniveau: subobject" in bedekking and "**Subobject van**: [Lijk]" in bedekking
     assert "**Mutaties door bedrijfsprocessen**: [Opgraven lijk]" in bedekking
 
-    vergunning = (wiki / _lees(wiki, "vergunning")["afgeleid"]["pad"]).read_text(encoding="utf-8")
+    vergunning = (wiki / _lees(wiki, "vergunning")["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "objectniveau: generiek" in vergunning and "Specialisaties per onderwerp" in vergunning
     assert "**Vergunning tot opgraving**" in vergunning and "Genoemd door [Opgraven lijk]" in vergunning
 
@@ -712,7 +712,7 @@ def test_begrippenlijst_en_voortgang_tonen_thuisonderwerp_en_samenhang(wiki):
                         {"naam": "Ander", "status": "in-behandeling", "omschrijving": ["Een ander onderwerp."], "bronnen": []})
     _schrijf(wiki, "beschikking", _bo(onderwerpen=["ander", "test"]))
     _schrijf(wiki, "behandelen-aanvraag", _proces())
-    res = _afleiden(wiki)
+    res = _beslissen(wiki)
     assert not any("behandelen-aanvraag: thuisonderwerp" in w for w in res.waarschuwingen)  # generiek kernobject
     lijst = (wiki / "begrippen" / "test.md").read_text(encoding="utf-8")
     assert "Uit onderwerp [Ander](ander.md)." in lijst
@@ -728,7 +728,7 @@ def test_wettelijke_grondslag():
     def el(paginatype):
         return {"paginatype": paginatype, "soort": "element"}
     def data(bronnen, **extra):
-        return {"afgeleid": {"bronnen": bronnen}, **extra}
+        return {"beslist": {"bronnen": bronnen}, **extra}
     soorten = {"wet": "rijksregelgeving", "hup": "richtlijn", "2025-vng-upl-producten": "informatiemodel", "site": "overig"}
     alle = {
         "wet-x": data(["wet"], regelgever="rijk", relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
@@ -764,15 +764,15 @@ def test_besluiten_per_begrip_uit_beoordelingen_en_eerder(wiki):
                                                   "gevolg": "verwerkt"}]))
     eerder = {"besluiten": [{"datum": "2026-09-30", "begrip": "Uitdaagrecht", "onderwerp": "test",
                              "besluit": "Geen eigen pagina.", "stand": "geldt"}]}
-    beoordeling.schrijf(wiki / afleiden.BESLUITEN_EERDER, eerder)
-    _afleiden(wiki)
+    beoordeling.schrijf(wiki / beslissen.BESLUITEN_EERDER, eerder)
+    _beslissen(wiki)
     lijst = (wiki / "besluiten" / "per-begrip.md").read_text(encoding="utf-8")
     assert "## Test" in lijst and "| 2026-10-01 | [Beschikking](../" in lijst
     assert f"[{WET}](../bronanalyses/test/rijksregelgeving/{WET}.md)" in lijst
     assert "## Eerder" in lijst and "| 2026-09-30 | Uitdaagrecht | Test | Geen eigen pagina. | geldt |" in lijst
     # een eerder besluit zonder stand of met een onbekend onderwerp is een fout
     eerder["besluiten"][0] |= {"stand": "", "onderwerp": "onbekend"}
-    beoordeling.schrijf(wiki / afleiden.BESLUITEN_EERDER, eerder)
-    fouten = afleiden.afleiden(wiki, schrijven=False).fouten
+    beoordeling.schrijf(wiki / beslissen.BESLUITEN_EERDER, eerder)
+    fouten = beslissen.beslissen(wiki, schrijven=False).fouten
     assert "besluiten-eerder 1 (Uitdaagrecht): 'stand' ontbreekt" in fouten
     assert "besluiten-eerder 1 (Uitdaagrecht): onbekend onderwerp 'onbekend'" in fouten

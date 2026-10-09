@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "beoordeling",
-  "description": "Beoordeling van één begrip (beoordelingen/begrippen/<id>.yaml): het oordeel van de AI. `status` en `afgeleid` vullen de scripts (tools/afleiden.py, llmwiki promote); nooit zelf invullen. Gegenereerd door tools/bepaal_type.py schema.",
+  "description": "Beoordeling van één begrip (beoordelingen/begrippen/<id>.yaml): het oordeel van de AI. `status` en `beslist` vullen de scripts (tools/beslissen.py, llmwiki promote); nooit zelf invullen. Gegenereerd door tools/bepaal_type.py schema.",
   "type": "object",
   "required": [
     "begrip",
@@ -799,7 +799,7 @@
               "type": "string",
               "minLength": 1
             },
-            "description": "De voorgelegde redenen (uit afgeleid.voor_te_leggen) die dit besluit dekt"
+            "description": "De voorgelegde redenen (uit beslist.voor_te_leggen) die dit besluit dekt"
           }
         },
         "additionalProperties": false
@@ -812,11 +812,11 @@
         "goedgekeurd",
         "afgewezen"
       ],
-      "description": "Door tools/afleiden.py en llmwiki promote; niet zelf invullen"
+      "description": "Door tools/beslissen.py en llmwiki promote; niet zelf invullen"
     },
-    "afgeleid": {
+    "beslist": {
       "type": "object",
-      "description": "Door tools/afleiden.py; niet zelf invullen"
+      "description": "Door tools/beslissen.py; niet zelf invullen"
     }
   },
   "additionalProperties": false,

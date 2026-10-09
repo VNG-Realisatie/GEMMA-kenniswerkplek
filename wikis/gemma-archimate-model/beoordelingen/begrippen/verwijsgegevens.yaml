@@ -196,7 +196,7 @@ toelichting: 'Eigenschap van Ingeschreven persoon: een afgeleide verwijzing naar
 synoniemen:
 - naam: Verwijzing
   context: LO BRP
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

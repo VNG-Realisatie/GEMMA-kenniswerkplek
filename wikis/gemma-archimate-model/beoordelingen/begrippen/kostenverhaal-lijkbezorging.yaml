@@ -192,7 +192,7 @@ toelichting: 'Onderdeel van Verzorgen gemeentebegrafenis: Stap in Verzorgen geme
 genoemd_begrip: Verzorgen gemeentebegrafenis
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

@@ -194,7 +194,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Processtap zonder pagina: een andere manier van uitreiken, per huishouden op een adres in Nederland, niet bij een spoedaanvraag (Utrecht). Vermeld bij Uitreiken reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

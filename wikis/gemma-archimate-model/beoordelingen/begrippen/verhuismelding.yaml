@@ -236,7 +236,7 @@ relaties:
   - 2026-rvig-hup-verblijfplaats
   vindplaats: Verplichte of bevoegde aangever
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

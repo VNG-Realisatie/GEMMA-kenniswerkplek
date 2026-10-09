@@ -40,7 +40,7 @@ def _begrip(naam, atype, status="goedgekeurd", gemma_id=None, relaties=(), **ext
     data = {"begrip": naam, "definitie": f"Definitie van {naam}.", "beschrijving": ["Uitleg."],
             "gemma": {"id": gemma_id, "sterkte": "sterk"} if gemma_id else {"sterkte": "geen"},
             "relaties": list(relaties), "status": status,
-            "afgeleid": {"uitkomst": {"soort": "element", "archimate_type": atype, "paginatype": "bedrijfsobject"},
+            "beslist": {"uitkomst": {"soort": "element", "archimate_type": atype, "paginatype": "bedrijfsobject"},
                          "bronnen": ["2026-bron"], "pad": f"x/{naam}.md"}, **extra}
     return {k: v for k, v in data.items() if v is not None}
 
@@ -163,7 +163,7 @@ def test_goedgekeurd_zonder_logregel_is_fout(tmp_path):
 
 def test_afwijkend_type_is_fout(tmp_path):
     begrippen = _begrippen()
-    begrippen["beschikking"]["afgeleid"]["uitkomst"]["archimate_type"] = "contract"
+    begrippen["beschikking"]["beslist"]["uitkomst"]["archimate_type"] = "contract"
     uit, _ = _export(tmp_path, begrippen=begrippen)
     assert any("wijkt af van GEMMA" in f for f in uit.fouten)
 
@@ -232,24 +232,24 @@ GEMMA_INDELING = """<?xml version="1.0" encoding="UTF-8"?>
 def _indeling_begrippen():
     def element(naam, atype, paginatype, **extra):
         data = _begrip(naam, atype, status="review", **extra)
-        data["afgeleid"]["uitkomst"]["paginatype"] = paginatype
+        data["beslist"]["uitkomst"]["paginatype"] = paginatype
         return data
 
     beschikking = element("Beschikking", "business-object", "bedrijfsobject", gemma_id="id-beschikking",
                           taakveld="Bestuur", beleidsdomein="Besluitvorming")
-    beschikking["afgeleid"]["uitkomst"]["objectniveau"] = "generiek"
+    beschikking["beslist"]["uitkomst"]["objectniveau"] = "generiek"
     levensloop = element("Toestaan lijkbezorging", "business-process", "bedrijfsproces", kernobject="lijk",
                          relaties=[{"soort": "aggregatie", "naar": "opgraven-lijk", "grondslag": "bron",
                                     "bronnen": ["2026-bron"]}])
-    levensloop["afgeleid"]["uitkomst"]["procesniveau"] = "levensloopproces"
+    levensloop["beslist"]["uitkomst"]["procesniveau"] = "levensloopproces"
     deel = element("Opgraven lijk", "business-process", "bedrijfsproces", taakveld="Volksgezondheid",
                    beleidsdomein="Begraafplaatsen", kernobject="lijk", afnemer="extern",
                    gemma_generiek={"id": "id-generiek", "onderbouwing": "Een vergunningaanvraag."},
                    relaties=[{"soort": "toegang (registreren)", "naar": "beschikking", "grondslag": "bron",
                               "bronnen": ["2026-bron"], "via": "vergunning-tot-opgraving"}])
-    deel["afgeleid"]["uitkomst"]["procesniveau"] = "bedrijfsproces"
+    deel["beslist"]["uitkomst"]["procesniveau"] = "bedrijfsproces"
     lijk = element("Lijk", "business-object", "bedrijfsobject", taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen")
-    lijk["afgeleid"]["uitkomst"]["objectniveau"] = "kernobject"
+    lijk["beslist"]["uitkomst"]["objectniveau"] = "kernobject"
     functie = element("Exploiteren van begraafplaatsen", "business-function", "bedrijfsfunctie", domein="Fysieke leefomgeving")
     domeinfunctie = element("Uitvoering fysieke leefomgeving", "business-function", "bedrijfsfunctie",
                             gemma_id="id-uitvoering-fl", domein="Fysieke leefomgeving",
@@ -347,7 +347,7 @@ def test_beleidskader_hangt_naar_regelgever_in_landelijke_of_gemeentelijke_regel
                                   ("model-bv", "Model beheersverordening begraafplaatsen", "VNG-model")):
         data = _begrip(naam, "driver", status="review", taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen",
                        regelgever=regelgever)
-        data["afgeleid"]["uitkomst"]["paginatype"] = "beleidskader"
+        data["beslist"]["uitkomst"]["paginatype"] = "beleidskader"
         begrippen[bid] = data
     pad = tmp_path / "gemma-indeling.archimate"
     pad.write_text(GEMMA_INDELING, encoding="utf-8")
@@ -419,10 +419,10 @@ def test_functie_zonder_bovenliggende_functie_heeft_geen_plaats(tmp_path):
 def test_dienst_hangt_onder_haar_functie_en_niet_onder_de_domeingroepering(tmp_path):
     begrippen = _indeling_begrippen()
     dienst = _begrip("Graf aanvragen", "business-service", status="review", domein="Fysieke leefomgeving", afnemer="extern")
-    dienst["afgeleid"]["uitkomst"]["paginatype"] = "dienst"
+    dienst["beslist"]["uitkomst"]["paginatype"] = "dienst"
     begrippen["graf-aanvragen"] = dienst
     zonder = _begrip("Losse dienst", "business-service", status="review", domein="Fysieke leefomgeving", afnemer="extern")
-    zonder["afgeleid"]["uitkomst"]["paginatype"] = "dienst"
+    zonder["beslist"]["uitkomst"]["paginatype"] = "dienst"
     begrippen["losse-dienst"] = zonder
     begrippen["exploiteren"]["relaties"] = [{"soort": "aggregatie", "naar": "graf-aanvragen", "grondslag": "bron", "bronnen": ["2026-bron"]}]
     uit, root = _export_indeling(tmp_path, begrippen)
@@ -437,7 +437,7 @@ def test_product_hangt_aan_de_domeingroepering(tmp_path):
     # ArchiMate laat een functie geen product aggregeren: het product hangt via domein aan de groepering (2026-10-05)
     begrippen = _indeling_begrippen()
     product = _begrip("Grafuitgifte", "product", status="review", domein="Fysieke leefomgeving", afnemer="extern")
-    product["afgeleid"]["uitkomst"]["paginatype"] = "product"
+    product["beslist"]["uitkomst"]["paginatype"] = "product"
     begrippen["grafuitgifte"] = product
     uit, root = _export_indeling(tmp_path, begrippen)
     (agg,) = _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", ae.vast_id("element", "grafuitgifte"))
@@ -493,7 +493,7 @@ def test_element_zonder_plaats_in_een_indeling_wordt_gemeld(tmp_path):
 def test_gebeurtenis_hangt_onder_het_proces_in_de_procesindeling_naar_kernobject(tmp_path):
     begrippen = _indeling_begrippen()
     gebeurtenis = _begrip("Overlijden", "business-event", status="review")
-    gebeurtenis["afgeleid"]["uitkomst"]["paginatype"] = "gebeurtenis"
+    gebeurtenis["beslist"]["uitkomst"]["paginatype"] = "gebeurtenis"
     begrippen["overlijden"] = gebeurtenis
     uit, root = _export_indeling(tmp_path, begrippen)
     assert "Overlijden" in uit.zonder_plaats
@@ -523,7 +523,7 @@ def test_bedrijfsinteractie_staat_in_de_map_ketensamenwerking_onder_het_beleidsd
     begrippen = _indeling_begrippen()
     keten = _begrip("Bezorgen lijken", "business-interaction", status="review", taakveld="Volksgezondheid",
                     beleidsdomein="Begraafplaatsen", kernobject="lijk")
-    keten["afgeleid"]["uitkomst"]["paginatype"] = "bedrijfsinteractie"
+    keten["beslist"]["uitkomst"]["paginatype"] = "bedrijfsinteractie"
     begrippen["bezorgen-lijken"] = keten
     begrippen["opgraven-lijk"]["relaties"].append(
         {"soort": "bediening", "naar": "bezorgen-lijken", "grondslag": "bron", "bronnen": ["2026-bron"]})

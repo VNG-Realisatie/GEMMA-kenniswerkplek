@@ -254,7 +254,7 @@ relaties:
 onderwerpen:
 - lijkbezorging
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 35

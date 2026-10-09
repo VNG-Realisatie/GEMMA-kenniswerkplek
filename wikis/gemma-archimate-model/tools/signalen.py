@@ -1,4 +1,4 @@
-"""Signalen bij het afleiden: zachte waarschuwingen over het oordeel, en harde controles op de bronanalyses.
+"""Signalen bij het beslissen: zachte waarschuwingen over het oordeel, en harde controles op de bronanalyses.
 
 Een waarschuwing noemt de regel uit AGENTS.md of kennismodel/modelleerregels.md bij naam ("regel Naamvorm"). De AI beoordeelt elke waarschuwing
 inhoudelijk: oplossen in de beoordeling, of toelichten als de tekst terecht is. Een waarschuwing houdt niets tegen.
@@ -32,7 +32,7 @@ def _teksten(data: dict) -> list[str]:
     return [t for t in teksten if t]
 
 
-def per_begrip(bid: str, data: dict, uitkomst: dict, onderwerpnamen: list[str], afgeleid: dict) -> list[str]:
+def per_begrip(bid: str, data: dict, uitkomst: dict, onderwerpnamen: list[str], beslist: dict) -> list[str]:
     w = []
     tekst = "\n".join(_teksten(data))
     laag = tekst.lower()
@@ -64,7 +64,7 @@ def per_begrip(bid: str, data: dict, uitkomst: dict, onderwerpnamen: list[str], 
     for s in data.get("synoniemen", []):  # dezelfde naam mag in meer contexten staan (GGM en GEMMA)
         synoniemen.setdefault(s["naam"].strip().lower(), set()).add(s["context"].lower())
     for veld, context in (("ggm", "ggm_entiteit"), ("gemma", "gemma_naam")):
-        modelnaam = str((afgeleid.get(veld) or {}).get(context) or "").strip()
+        modelnaam = str((beslist.get(veld) or {}).get(context) or "").strip()
         if modelnaam and modelnaam.lower() != naam.lower() and veld not in synoniemen.get(modelnaam.lower(), set()):
             w.append(f"{bid}: de {veld.upper()}-naam '{modelnaam}' wijkt af van de naam: neem haar op in synoniemen met "
                      f"context '{veld.upper()}' (regel Match op betekenis)")
@@ -427,7 +427,7 @@ def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], bron
 
     def bronnen(b: str) -> set[str]:
         data = alle[b]
-        ids = set((data.get("afgeleid") or {}).get("bronnen", []))
+        ids = set((data.get("beslist") or {}).get("bronnen", []))
         for r in data.get("relaties", []):
             ids |= set(r.get("bronnen") or [])
         return ids

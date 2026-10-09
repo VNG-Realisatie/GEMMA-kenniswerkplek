@@ -197,7 +197,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: de aanduiding dat een EU-onderdaan aan de verkiezing van het Europees Parlement in Nederland deelneemt, op zijn verzoek met formulier Y32; zij eindigt op verzoek, bij vertrek of bij verkrijging van het Nederlanderschap (HUP Europees kiesrecht). Een processtap van Registreren kiesgerechtigdheid.'
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

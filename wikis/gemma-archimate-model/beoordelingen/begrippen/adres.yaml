@@ -203,7 +203,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Verwijzing zonder pagina: het adres (nummeraanduiding) hoort bij een later onderwerp BAG of adressen; daar krijgt Verblijfplaats er een relatie naar.'
   gevolg: verwerkt
-afgeleid:
+beslist:
   uitkomst:
     soort: verwijzing
     regel: 6

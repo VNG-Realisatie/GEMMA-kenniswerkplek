@@ -226,7 +226,7 @@ besluiten:
   besluit: 'Behouden met grondslag Wet BRP art. 2.20 lid 2, 2.22 en 2.26 (regel Wettelijke grondslag): de dienst is de toegang tot het wettelijke adresonderzoek. De UPL is geen bron (geen UPL-item); procesarchitectuur-terugmelding met het voorstel de melding als UPL-item op te nemen.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

@@ -1,15 +1,15 @@
-"""Afleiden: van het oordeel van de AI naar type, status en modelgegevens, met harde controles.
+"""Beslissen: van het oordeel van de AI naar type, status en modelgegevens, met harde controles.
 
 Leest elke beoordeling in `beoordelingen/begrippen/<id>.yaml` (het oordeel van de AI) en vult per beoordeling:
-- `afgeleid.uitkomst`: de uitkomst van de beslistabel (tools/bepaal_type.py) uit de kenmerken;
-- `afgeleid.voor_te_leggen` en `afgeleid.open`: waarom de redacteur moet beslissen, en wat geen besluit dekt;
+- `beslist.uitkomst`: de uitkomst van de beslistabel (tools/bepaal_type.py) uit de kenmerken;
+- `beslist.voor_te_leggen` en `beslist.open`: waarom de redacteur moet beslissen, en wat geen besluit dekt;
 - `status` (alleen bij een element): `kandidaat` als er iets open staat, anders `review`; `afgewezen` na het besluit
   `afwijzen`. `goedgekeurd` blijft staan zolang `log.md` een promotieregel met de hash van de inhoud heeft; zet
   alleen `llmwiki promote` (na akkoord). Elke inhoudelijke wijziging maakt een goedgekeurd element weer `review`;
-- `afgeleid.pad`: waar het render-script de pagina zet (map en submappen uit wiki.yaml: taakveld en beleidsdomein, bij een functie het domein);
-- `afgeleid.ggm`, `afgeleid.ggm_duplicaten`, `afgeleid.gemma`: de letterlijke velden bij de match die de AI koos
+- `beslist.pad`: waar het render-script de pagina zet (map en submappen uit wiki.yaml: taakveld en beleidsdomein, bij een functie het domein);
+- `beslist.ggm`, `beslist.ggm_duplicaten`, `beslist.gemma`: de letterlijke velden bij de match die de AI koos
   (tools/ggm.py, tools/gemma.py); de AI vult die nooit zelf;
-- `afgeleid.bronnen` en `afgeleid.herkomst`: alle bronnen van het begrip, en het brontype van de hoogste.
+- `beslist.bronnen` en `beslist.herkomst`: alle bronnen van het begrip, en het brontype van de hoogste.
 Nieuwe GGM-terugmeldingen in `beoordelingen/terugmeldingen/ggm.yaml` krijgen het volgende nummer.
 
 Harde controles (fout: er wordt niets geschreven): schema, kenmerken, verplichte velden van een element, bestaan van
@@ -19,7 +19,7 @@ ArchiMate-relatietabel, de bronanalyses, de gegenereerde modelmappen, het regist
 van de regel) staan in tools/signalen.py. Daarna draait het render-script (tools/render.py), tenzij `--zonder-render`.
 
 Gebruik (vanuit de wikimap):
-    uv run python tools/afleiden.py [--zonder-render]
+    uv run python tools/beslissen.py [--zonder-render]
 """
 from __future__ import annotations
 
@@ -67,7 +67,7 @@ def slug(tekst: str) -> str:
 
 
 def _schoon(obj):
-    """Laat lege waarden weg (None, '', [], {}), zodat `afgeleid` kort en stabiel blijft."""
+    """Laat lege waarden weg (None, '', [], {}), zodat `beslist` kort en stabiel blijft."""
     if isinstance(obj, dict):
         return {k: _schoon(v) for k, v in obj.items() if v is not None and v != "" and v != [] and v != {}}
     if isinstance(obj, list):
@@ -76,7 +76,7 @@ def _schoon(obj):
 
 
 class Context:
-    """Wat afleiden nodig heeft van buiten de beoordeling: wiki.yaml, bronnen, GGM, GEMMA, log."""
+    """Wat beslissen nodig heeft van buiten de beoordeling: wiki.yaml, bronnen, GGM, GEMMA, log."""
 
     def __init__(self, wiki_root: Path):
         self.wiki_root = wiki_root
@@ -150,7 +150,7 @@ def _controleer_element(ctx: Context, bid: str, data: dict, uitkomst: dict, res:
     for onderwerp in data.get("per_onderwerp", {}):
         if onderwerp not in data["onderwerpen"]:
             res.fouten.append(f"{bid}: per_onderwerp '{onderwerp}' staat niet in onderwerpen")
-    if data.get("grondslag") in ("regelgeving", "procesobject", "ggm-afgeleid") and not data.get("grondslag_toelichting"):
+    if data.get("grondslag") in ("regelgeving", "procesobject", "ggm-beslist") and not data.get("grondslag_toelichting"):
         res.fouten.append(f"{bid}: grondslag {data['grondslag']} zonder grondslag_toelichting")
 
 
@@ -158,12 +158,12 @@ def _modelvelden(ctx: Context, bid: str, data: dict, res: Resultaat) -> dict:
     import gemma as gemmatool
     import ggm as ggmtool
 
-    afgeleid = {}
+    beslist = {}
     ggm_keuze = data.get("ggm") or {}
     if ggm_keuze.get("guid"):
         treffers = ggmtool.zoek_entiteit(ctx.ggm(), ggm_keuze["guid"])
         if treffers:
-            afgeleid["ggm"] = ggmtool.velden(treffers[0])
+            beslist["ggm"] = ggmtool.velden(treffers[0])
         else:
             res.fouten.append(f"{bid}: GGM-guid {ggm_keuze['guid']} bestaat niet in het GGM")
     elif ggm_keuze and ggm_keuze.get("sterkte") != "geen":
@@ -177,12 +177,12 @@ def _modelvelden(ctx: Context, bid: str, data: dict, res: Resultaat) -> dict:
         v = ggmtool.velden(treffers[0])
         duplicaten.append({"entiteit": v.get("ggm_entiteit"), "guid": d["guid"],
                            "beleidsdomein": v.get("ggm_beleidsdomein"), "taakveld": v.get("ggm_taakveld")})
-    afgeleid["ggm_duplicaten"] = duplicaten
+    beslist["ggm_duplicaten"] = duplicaten
     gemma_keuze = data.get("gemma") or {}
     if gemma_keuze.get("id"):
         treffers = gemmatool.zoek_element(ctx.gemma(), gemma_keuze["id"])
         if treffers:
-            afgeleid["gemma"] = gemmatool.velden(treffers[0])
+            beslist["gemma"] = gemmatool.velden(treffers[0])
         else:
             res.fouten.append(f"{bid}: GEMMA-id {gemma_keuze['id']} bestaat niet in het GEMMA-model")
     elif gemma_keuze and gemma_keuze.get("sterkte") != "geen":
@@ -191,10 +191,10 @@ def _modelvelden(ctx: Context, bid: str, data: dict, res: Resultaat) -> dict:
     if generiek.get("id"):
         treffers = gemmatool.zoek_element(ctx.gemma(), generiek["id"])
         if treffers:
-            afgeleid["gemma_generiek"] = gemmatool.velden(treffers[0])
+            beslist["gemma_generiek"] = gemmatool.velden(treffers[0])
         else:
             res.fouten.append(f"{bid}: gemma_generiek '{generiek['id']}' bestaat niet in het GEMMA-model")
-    return afgeleid
+    return beslist
 
 
 def _controleer_bronnen(ctx: Context, bid: str, bronnen: list[str], res: Resultaat) -> None:
@@ -404,7 +404,7 @@ def _gemma_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Result
     return register
 
 
-def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
+def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     ctx = Context(wiki_root)
     res = Resultaat()
     alle = beoordeling.alle(wiki_root, ctx.wiki_yaml)
@@ -444,7 +444,7 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
                 res.fouten.append(f"{bid}: onderwerp '{onderwerp}' heeft geen {ONDERWERPEN.as_posix()}/{onderwerp}.yaml")
         ggm_sterkte = (data.get("ggm") or {}).get("sterkte")
         redenen = bepaal_type.voor_te_leggen(uitkomst, ggm_sterkte, data.get("grondslag"))
-        afgeleid = {"uitkomst": uitkomst, "voor_te_leggen": redenen,
+        beslist = {"uitkomst": uitkomst, "voor_te_leggen": redenen,
                     "open": bepaal_type.open_redenen(redenen, data.get("besluiten")),
                     "bronnen": bronnen, "herkomst": herkomst(ctx, bronnen)}
         status = None
@@ -453,24 +453,24 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
                 res.fouten.append(f"{bid}: element zonder bron (regel Elke claim een bron)")
             _controleer_element(ctx, bid, data, uitkomst, res)
             _controleer_verwijzingen(bid, data, uitkomsten, res, {b: d["begrip"] for b, (_, d) in alle.items()})
-            afgeleid.update(_modelvelden(ctx, bid, data, res))
+            beslist.update(_modelvelden(ctx, bid, data, res))
             status = bepaal_type.voorgestelde_status(uitkomst, ggm_sterkte, data.get("grondslag"), data.get("besluiten"))
             if status != "afgewezen":
-                afgeleid["pad"] = pagina_pad(ctx, uitkomst["paginatype"], data, bid)
+                beslist["pad"] = pagina_pad(ctx, uitkomst["paginatype"], data, bid)
             if data.get("status") == "goedgekeurd" and status == "review" \
                     and beoordeling.goedgekeurd_in_log(ctx.log, bid, data):
                 status = "goedgekeurd"
-        res.waarschuwingen += signalen.per_begrip(bid, data, uitkomst, onderwerpnamen, afgeleid)
+        res.waarschuwingen += signalen.per_begrip(bid, data, uitkomst, onderwerpnamen, beslist)
         bijgewerkt = beoordeling.inhoud(data)
         if status:
             bijgewerkt["status"] = status
-        bijgewerkt["afgeleid"] = _schoon(afgeleid)
+        bijgewerkt["beslist"] = _schoon(beslist)
         if bijgewerkt != data:
             nieuw[bid] = bijgewerkt
 
     paden = {}
     for bid, d in [(b, nieuw.get(b, alle[b][1])) for b in alle]:
-        pad = (d.get("afgeleid") or {}).get("pad")
+        pad = (d.get("beslist") or {}).get("pad")
         if pad and pad in paden:
             res.fouten.append(f"{bid}: zelfde paginapad als '{paden[pad]}' ({pad})")
         paden[pad] = bid
@@ -506,7 +506,7 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     if res.fouten:
         return res
     if not schrijven:
-        res.gewijzigd = sorted(nieuw)  # wat een run met schrijven zou bijwerken: niet leeg = afgeleid is verouderd
+        res.gewijzigd = sorted(nieuw)  # wat een run met schrijven zou bijwerken: niet leeg = beslist is verouderd
         return res
     for bid, data in nieuw.items():
         beoordeling.schrijf(alle[bid][0], data)
@@ -525,10 +525,10 @@ def afleiden(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--zonder-render", action="store_true", help="Alleen afleiden, geen pagina's maken")
+    parser.add_argument("--zonder-render", action="store_true", help="Alleen beslissen, geen pagina's maken")
     parser.add_argument("--wiki", type=Path, default=WIKI_ROOT, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
-    res = afleiden(args.wiki)
+    res = beslissen(args.wiki)
     for f in res.fouten:
         print(f"fout: {f}")
     for w in res.waarschuwingen:
@@ -536,7 +536,7 @@ def main(argv: list[str] | None = None) -> int:
     if res.fouten:
         print(f"{len(res.fouten)} fout(en): er is niets geschreven.")
         return 1
-    print(f"Afgeleid: {len(res.gewijzigd)} bestand(en) bijgewerkt.")
+    print(f"Beslist: {len(res.gewijzigd)} bestand(en) bijgewerkt.")
     if not args.zonder_render:
         import render
         return render.main(["--wiki", str(args.wiki)])

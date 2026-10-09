@@ -242,7 +242,7 @@ per_onderwerp:
   burgerzaken:
   - De uitvaartondernemer doet meestal de aangifte van overlijden, als gemachtigde van degene die in de lijkbezorging voorziet, online met eHerkenning of aan de balie (BW 1 art. 19h lid 2; Utrecht Overlijden, aangifte doen).
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

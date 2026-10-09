@@ -215,7 +215,7 @@ synoniemen:
 - naam: Paspoortsignalering
   context: beleid
 toelichting: 'Invoer van een andere partij: de minister vermeldt een persoon in het register paspoortsignaleringen op verzoek van een tot signalering bevoegd orgaan (openbaar ministerie, ministers, rechter-commissaris, of een tot invordering bevoegd orgaan zoals het college) en deelt dat de burgemeester mee (Paspoortwet art. 18 tot en met 25). De gemeente beslist niet over de signalering zelf: zij neemt haar op in categorie 12 van de persoonslijst, controleert de signaleringslijst bij elke aangifte van verblijf en adres, en de burgemeester weigert op die grond een reisdocument of houdt het in en verklaart het vervallen (art. 41, 44, 53; HUP Signalering). Geen pagina; vermeld bij Behandelen aanvraag reisdocument, Inhouden reisdocument en Vervallen verklaren reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

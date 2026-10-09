@@ -190,7 +190,7 @@ toelichting: 'Onderdeel van Begraafplaats: Muur met urnennissen op de begraafpla
 genoemd_begrip: Begraafplaats
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

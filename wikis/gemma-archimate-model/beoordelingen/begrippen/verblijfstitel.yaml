@@ -207,7 +207,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer van een andere partij: de IND levert de verblijfstitelgegevens met berichten, de gemeente neemt ze over en wijzigt ze alleen in overleg met de IND (HUP Verblijfstitel). Geen pagina; vermeld bij Ingeschreven persoon. Zelf laat de gemeente de verblijfstitel vervallen op de datum waarop de persoon het Nederlanderschap verkrijgt: een gevolg van de gebeurtenis Verkrijging van het Nederlanderschap in Bijhouden persoonsgegevens (HUP Verblijfstitel; HUP Nederlandse nationaliteit). Het GGM kent twee entiteiten Verblijfstitel (EAID_0F51B100_1C60_4d54_9B60_1C9BF9C856A2 en EAID_A660422D_E9ED_47c9_9978_480E57572775); GEMMA heeft het bedrijfsobject Verblijfstitel met de tweede GUID, dat ongekoppeld blijft.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

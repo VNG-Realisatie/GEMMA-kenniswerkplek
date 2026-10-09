@@ -258,7 +258,7 @@ besluiten:
   besluit: 'Procesindeling kiesrecht (optie A): Stempas is kernobject van het bedrijfsproces Beheren stempassen onder Verzorgen burgerzaken, met de deelprocessen Verstrekken stempas, Behandelen verzoek om kiezerspas en Behandelen verzoek om volmacht; de registratie van de kiesgerechtigdheid is het deelproces Registreren kiesgerechtigdheid onder Bijhouden persoonsgegevens.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 28

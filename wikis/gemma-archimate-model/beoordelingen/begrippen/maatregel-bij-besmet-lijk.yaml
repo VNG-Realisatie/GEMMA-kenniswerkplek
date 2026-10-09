@@ -202,7 +202,7 @@ besluiten:
 - datum: '2026-10-05'
   besluit: Naam Maatregel bij besmet stoffelijk overschot, in lijn met Treffen maatregel bij besmet stoffelijk overschot; geen vaste term (Wlb art. 22a). Het id blijft.
   gevolg: verwerkt
-afgeleid:
+beslist:
   uitkomst:
     soort: specialisatie
     regel: 24

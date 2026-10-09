@@ -195,7 +195,7 @@ besluiten:
   gevolg: afwijzen
   redenen:
   - 'herkenbaar: nee'
-afgeleid:
+beslist:
   uitkomst:
     soort: buiten_scope
     regel: 2

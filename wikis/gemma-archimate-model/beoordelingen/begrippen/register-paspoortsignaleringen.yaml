@@ -206,7 +206,7 @@ synoniemen:
 - naam: RPS
   context: dagelijks gebruik
 toelichting: 'Representatie, geen pagina: het register van de minister met de personen bij wie gronden tot weigering of vervallenverklaring bestaan (Paspoortwet art. 25 lid 3; Paspoortbesluit art. 1.1). Vermeld bij Signalering.'
-afgeleid:
+beslist:
   uitkomst:
     soort: geen_pagina
     regel: 19

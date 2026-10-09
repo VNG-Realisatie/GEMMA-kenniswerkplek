@@ -238,7 +238,7 @@ besluiten:
   besluit: 'Stoffelijk overschot in lopende tekst: de zin over het register beschrijft de inhoud, niet de naam.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

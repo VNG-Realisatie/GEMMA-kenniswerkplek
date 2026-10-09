@@ -234,7 +234,7 @@ besluiten:
   besluit: 'Vervalt in de wiki: omvat niets meer na het vervallen van Producten- en dienstenrealisatie veiligheidsdomein. Het GEMMA-element blijft in GEMMA; GEMMA-terugmelding 1.'
   gevolg: afwijzen
 status: afgewezen
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

@@ -234,7 +234,7 @@ gemma:
 genoemd_begrip: Behandelen aanvraag reisdocument
 toelichting: 'Deelproces zonder pagina van Behandelen aanvraag reisdocument, Behandelen aanvraag reisdocument niet-ingezetene: het na de verstrekking ter beschikking stellen van het reisdocument aan de aanvrager, die daarbij zijn oude Nederlandse reisdocumenten inlevert.'
 relaties: []
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 30

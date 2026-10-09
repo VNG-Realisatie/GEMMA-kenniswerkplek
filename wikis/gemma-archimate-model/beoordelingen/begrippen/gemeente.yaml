@@ -313,7 +313,7 @@ homoniemen:
   waar: GEMMA-rol, doelgroep in de Applicatieservice-indeling
   naamkeuze: 'Deze pagina heet Gemeente: de gemeente als rechtspersoon. De GEMMA-rol wordt niet gekoppeld; de verantwoordelijkheden van de gemeente zijn in de wiki eigen rollen.'
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

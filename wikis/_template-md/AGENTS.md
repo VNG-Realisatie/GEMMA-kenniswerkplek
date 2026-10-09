@@ -9,4 +9,4 @@ wiki. Dit sjabloon bevat opzettelijk geen domeinkennis.>
 
 ## Standaard Workflow
 
-Gebruik skill `wiki-curatie-update`: de AI schrijft per begrip een beoordeling, scripts van de wiki leiden af en renderen de pagina's, de redacteur geeft akkoord met AKKOORD in de chat. Daarvoor heeft de wiki in `wiki.yaml` `curation.beoordelingen`, `curation.afleiden` en `curation.render` nodig, met eigen scripts (de wiki gemma-archimate-model is een uitgewerkt voorbeeld); zie `docs/onderbouwing.md` 5.13c. Een wiki-specifieke workflow die uitbreidingen toevoegt, verwijst naar `wiki-curatie-update`.
+Gebruik skill `wiki-curatie-update`: de AI schrijft per begrip een beoordeling, scripts van de wiki beslissen en renderen de pagina's, de redacteur geeft akkoord met AKKOORD in de chat. Daarvoor heeft de wiki in `wiki.yaml` `curation.beoordelingen`, `curation.beslissen` en `curation.render` nodig, met eigen scripts (de wiki gemma-archimate-model is een uitgewerkt voorbeeld); zie `docs/onderbouwing.md` 5.13c. Een wiki-specifieke workflow die uitbreidingen toevoegt, verwijst naar `wiki-curatie-update`.

@@ -229,7 +229,7 @@ specialisaties:
 - naam: Adres in RNI wijzigen
   omschrijving: 'Wijziging van het buitenlandse adres van wie in de RNI staat, online, aan de balie of per post (Utrecht RNI). Geen eigen pagina: de UPL noemt het niet apart.'
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

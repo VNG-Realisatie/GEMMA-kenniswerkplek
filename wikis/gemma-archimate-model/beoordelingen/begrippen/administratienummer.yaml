@@ -196,7 +196,7 @@ toelichting: 'Eigenschap van Ingeschreven persoon: zijn identificatienummer in d
 synoniemen:
 - naam: A-nummer
   context: dagelijks gebruik
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

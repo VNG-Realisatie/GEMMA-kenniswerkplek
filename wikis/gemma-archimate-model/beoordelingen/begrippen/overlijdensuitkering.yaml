@@ -193,7 +193,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet beoordeeld: verwijzing naar een later onderwerp.'
 toelichting: 'Verwijzing: UPL-product nr. 317 (zonder grondslag) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): de uitkering hoort bij het sociaal domein (UPL-domein Sociaal, zonder grondslag) en niet bij de aangifte of akte van overlijden. Het product krijgt zijn pagina in een later onderwerp in het sociaal domein.'
-afgeleid:
+beslist:
   uitkomst:
     soort: verwijzing
     regel: 6

@@ -301,7 +301,7 @@ besluiten:
   besluit: 'Thuisonderwerp Algemeen (regel Thuishoren): een generieke functie die de publieksdiensten van alle onderwerpen dient; Lijkbezorging en Burgerzaken houden hun tekst per onderwerp. Het object in Archi blijft.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

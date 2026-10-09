@@ -197,7 +197,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Waarde van Nationaliteit, geen pagina: de gemeente neemt een vreemde nationaliteit op op grond van een brondocument of een mededeling van de minister van Justitie en Veiligheid (Wet BRP art. 2.17) en beëindigt haar bij verlies, afstand of verkrijging van het Nederlanderschap; naast de Nederlandse nationaliteit wordt geen vreemde nationaliteit opgenomen (HUP Vreemde nationaliteit). Een processtap van Bijhouden persoonsgegevens.'
-afgeleid:
+beslist:
   uitkomst:
     soort: eigenschap
     regel: 4

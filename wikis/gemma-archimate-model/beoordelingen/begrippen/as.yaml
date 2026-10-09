@@ -190,7 +190,7 @@ toelichting: 'Onderdeel van Urn: De inhoud van de urn (art. 58).'
 genoemd_begrip: Urn
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 5

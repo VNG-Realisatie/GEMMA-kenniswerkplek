@@ -226,7 +226,7 @@ besluiten:
   besluit: 'Vervalt (regel Wettelijke grondslag, groep C in docs/wettelijke-grondslag.md): geen UPL-product en geen landelijke wettelijke grondslag. De representatie Gewaarmerkte kopie gaat mee; procesarchitectuur-terugmelding 11 noemt de dienst niet meer als element. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
 status: afgewezen
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

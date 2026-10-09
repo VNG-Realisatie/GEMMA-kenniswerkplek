@@ -274,7 +274,7 @@ besluiten:
   besluit: 'Vervalt: samengevoegd in het levensloopproces Beheren Nederlanderschap, dat zijn object in Archi houdt (per kernobject één levensloopproces; geen ketensamenwerking). De eerste alinea is gelijk aan die van Beheren Nederlanderschap; de tweede, over het deel binnen het ketenproces, vervalt. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
 status: afgewezen
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 28

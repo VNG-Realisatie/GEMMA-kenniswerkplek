@@ -189,7 +189,7 @@ kenmerken:
 toelichting: 'Verwijzing: de Awb is een generiek kader; ze wordt beoordeeld in het algemene onderwerp besluitvorming.'
 onderwerpen:
 - lijkbezorging
-afgeleid:
+beslist:
   uitkomst:
     soort: verwijzing
     regel: 6

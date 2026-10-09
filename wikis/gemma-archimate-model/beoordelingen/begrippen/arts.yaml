@@ -240,7 +240,7 @@ besluiten:
   besluit: 'Actor Arts in plaats van Behandelende arts (synoniem, wet): behandelend is de hoedanigheid tegenover de overledene. Arts vervult Ketenpartner en Gemeentelijke lijkschouwer (art. 4, 5); Ketenpartner wordt ook toegewezen aan Schouwen lijk (art. 3). Geen directe relatie behandelt: de medische behandeling is de interne zaak van de ketenpartner en de overledene is geen element; de arts hangt via Schouwen lijk aan het Lijk.'
   gevolg: verwerkt
 status: goedgekeurd
-afgeleid:
+beslist:
   uitkomst:
     soort: element
     regel: 26

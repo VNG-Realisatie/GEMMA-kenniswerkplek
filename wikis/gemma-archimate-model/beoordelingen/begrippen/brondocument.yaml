@@ -202,7 +202,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer: een akte, rechterlijke uitspraak of buitenlands document dat een andere partij opmaakt en waaraan de gemeente de gegevens ontleent. Geen pagina; vermeld bij Bijhouden persoonsgegevens. De Nederlandse akte is het element Akte van de burgerlijke stand.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33

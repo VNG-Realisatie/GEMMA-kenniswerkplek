@@ -1198,7 +1198,7 @@ def schema() -> dict:
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "title": "beoordeling",
         "description": "Beoordeling van één begrip (beoordelingen/begrippen/<id>.yaml): het oordeel van de AI. "
-                       "`status` en `afgeleid` vullen de scripts (tools/afleiden.py, llmwiki promote); nooit zelf "
+                       "`status` en `beslist` vullen de scripts (tools/beslissen.py, llmwiki promote); nooit zelf "
                        "invullen. Gegenereerd door tools/bepaal_type.py schema.",
         "type": "object",
         "required": ["begrip", "onderwerpen", "kenmerken"],
@@ -1275,10 +1275,10 @@ def schema() -> dict:
                 ["datum", "besluit", "gevolg"], datum={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
                 besluit=tekst, gevolg={"enum": ["opnemen", "afwijzen", "verwerkt"]},
                 redenen={"type": "array", "items": tekst,
-                         "description": "De voorgelegde redenen (uit afgeleid.voor_te_leggen) die dit besluit dekt"})},
+                         "description": "De voorgelegde redenen (uit beslist.voor_te_leggen) die dit besluit dekt"})},
             "status": {"enum": ["kandidaat", "review", "goedgekeurd", "afgewezen"],
-                       "description": "Door tools/afleiden.py en llmwiki promote; niet zelf invullen"},
-            "afgeleid": {"type": "object", "description": "Door tools/afleiden.py; niet zelf invullen"},
+                       "description": "Door tools/beslissen.py en llmwiki promote; niet zelf invullen"},
+            "beslist": {"type": "object", "description": "Door tools/beslissen.py; niet zelf invullen"},
         },
         "additionalProperties": False,
         "$defs": {

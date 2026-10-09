@@ -204,7 +204,7 @@ kenmerken:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer van een andere partij: het register van de minister, dat de bevoegde autoriteiten gegevens levert voor hun taken (Paspoortwet art. 4c tot en met 4e). De gemeente raadpleegt het bij de aanvraag; een geregistreerde vermissing, inhouding of verval maakt het document er ongeldig (Paspoortbesluit art. 2.1; HUP Inhouding). Geen pagina; vermeld bij Behandelen aanvraag reisdocument.'
-afgeleid:
+beslist:
   uitkomst:
     soort: onderdeel
     regel: 33
