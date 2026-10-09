@@ -391,7 +391,7 @@ def release(xmi: Path | None, bron_id: str, titel: str, wiki_root: Path = WIKI_R
     werk.mkdir(parents=True, exist_ok=True)
     overzicht = werk / f"{bron_id}.md"
     overzicht.write_text(structuur_md(data, bron_id), encoding="utf-8")
-    sources.add(repo_root, bron_id, xmi, titel=titel, tags=["ggm"], uitgever="VNG", brontype="informatiemodel",
+    sources.add(repo_root, bron_id, xmi, titel=titel, tags=["ggm"], uitgever="VNG", brontype="model",
                 markdown_override=overzicht, beschrijving="GGM-release (XMI 2.1)",
                 url=url, url_pagina=weergave, opgehaald=date.today().isoformat() if url else "")
     ggm_dir = wiki_root / "ggm"

@@ -119,7 +119,7 @@ def test_release_schrijft_bron_json_paginas_en_wiki_yaml(tmp_path, archimate_rep
     assert resultaat["entiteiten"] == 5
     assert (root / "sources" / "raw" / "2024-vng-ggm-test.xml").exists()
     index = yaml.safe_load((root / "sources" / "index" / "2024-vng-ggm-test.md").read_text(encoding="utf-8").split("---")[1])
-    assert index["brontype"] == "informatiemodel"
+    assert index["brontype"] == "model"
     assert "bron: 2024-vng-ggm-test" in (wiki / "wiki.yaml").read_text(encoding="utf-8")
     pagina = wiki / "ggm" / "1-veiligheid" / "vergunningen.md"
     assert gam_gemeen.controleer_gegenereerd(pagina) is None

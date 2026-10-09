@@ -22,7 +22,7 @@ Kies het brontype volgens de regel Bronvoorrang in `kennismodel/modelleerregels.
 |---|---|
 | `europese-regelgeving` | eur-lex.europa.eu: AVG, AI-verordening |
 | `rijksregelgeving` | wetten.overheid.nl: wetten, AMvB's, ministeriële regelingen, verdragen |
-| `informatiemodel` | GGM, RSGB, RGBZ, ZTC, MIM-modellen, catalogi van basisregistraties, UPL-lijsten (zelfde voorrang) |
+| `informatiemodel` | RSGB, RGBZ, ZTC, MIM-modellen, catalogi van basisregistraties, UPL-lijsten (zelfde voorrang) |
 | `richtlijn` | HUP en circulaires van RvIG, handreikingen en werkinstructies van NVVB, VNG-handreikingen en -raadgevers, Divosa |
 | `gemeentelijke-regelgeving` | lokaleregelgeving.overheid.nl: verordeningen (ook de APV), nadere regels, beleidsregels; VNG-modelverordeningen |
 | `beleid` | beleidsnota's, visies, programma's en raadsvoorstellen van een gemeente |

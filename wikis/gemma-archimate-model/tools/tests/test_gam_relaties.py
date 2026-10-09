@@ -194,11 +194,21 @@ def test_combineer_bevestigt_ggm_relatie_met_bron(wiki):
     ggm_k = relaties.voorstel("beschikking", DATA, wiki)
     bron_k = [relaties.Kandidaat("aggregation", "beschikking", "onderdeel-beschikking", "bevat", "", "bron", [],
                                  bronnen=["2026-overheid-gemeentewet"], vindplaats="art. 1")]
-    samen = relaties.combineer(ggm_k, bron_k)
-    (bevat,) = [k for k in samen if k.doel == "onderdeel-beschikking"]
+    samen, alleen_ggm = relaties.combineer(ggm_k, bron_k)
+    (bevat,) = samen
+    assert bevat.doel == "onderdeel-beschikking"
     assert bevat.grondslag == "ggm-exact" and bevat.bronnen == ["2026-overheid-gemeentewet"]
     assert "bron noemt aggregation" in bevat.toelichting
-    assert len(samen) == len(ggm_k)
+    assert len(alleen_ggm) == len(ggm_k) - 1 and bevat not in alleen_ggm
+
+
+def test_ggm_relatie_zonder_gevonden_relatie_is_geen_voorstel(wiki):
+    ggm_k = relaties.voorstel("beschikking", DATA, wiki)
+    samen, alleen_ggm = relaties.combineer(ggm_k, [])
+    assert samen == [] and len(alleen_ggm) == len(ggm_k)
+    tekst = relaties.yaml_voorstel("beschikking", samen, alleen_ggm, {"onderdeel-beschikking"})
+    assert yaml.safe_load(tekst)["relaties"] is None
+    assert "# Alleen in het GGM" in tekst and "R_BEVAT; staat al in de beoordeling: matchen" in tekst
 
 
 def test_gemma_modelleerafspraken():

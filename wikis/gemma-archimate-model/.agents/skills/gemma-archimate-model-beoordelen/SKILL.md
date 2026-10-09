@@ -21,7 +21,7 @@ Eerst de `besluiten:` van het onderwerp en van de bestaande beoordelingen (wat a
 ## 2. Begrippen verzamelen
 
 - Alle kernbegrippen uit de bronanalyses van het onderwerp, plus wat al als beoordeling bestaat met dit onderwerp in `onderwerpen`.
-- De GGM-entiteiten van de betrokken beleidsdomeinen. Sla nooit een begrip over omdat het GGM er al een entiteit voor heeft: deze stap toetst ook het GGM.
+- Het GGM is matchdoel, geen bron: een GGM-entiteit wordt geen begrip omdat het GGM haar kent, en een begrip uit de bronnen sla je niet over omdat het GGM er al een entiteit voor heeft. Toets per betrokken beleidsdomein de dekking (`tools/ggm.py kandidaten`, `entiteit`): een bedrijfsobject zonder GGM-match is een hiaat en wordt een GGM-terugmelding; een GGM-entiteit van het beleidsdomein die in de bronnen niet voorkomt, noem je in de samenvatting, en zoek een bron als ze ertoe doet.
 - Kijk per partij ook naar kanalen, beleidskaders en samenwerkingen.
 - Een wet die de UPL noemt als grondslag van een UPL-product haal je op als bron. Daarna beoordeel je of ze een beleidskader wordt: alleen als ze de gemeente een taak of bevoegdheid geeft. Een wet die alleen een tarief of een regel buiten de gemeentelijke taak bevat (Wet griffierechten burgerlijke zaken, art. 23), blijft bron zonder beleidskader; zoek dan de bevoegdheidsgrondslag. Een verdrag is bron en geen beleidskader zolang de criteria geen regelgever verdrag kennen (Overeenkomst van München 1980; de Nederlandse uitvoering staat in BW boek 1 art. 49a).
 
@@ -98,7 +98,7 @@ De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet 
 
 ## 6. Relaties
 
-Na een eerste `uv run python tools/beslissen.py` (zonder relaties werkt dat al): `uv run python tools/relaties.py voorstel <id>` geeft kandidaten uit het GGM en uit de relatietabellen van de bronanalyses, als YAML voor `relaties:`. Kies, geef een herkenbare naam, controleer richting en kardinaliteit. Een relatie staat alleen in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. `uv run python tools/relaties.py uit-bronnen <onderwerp>` toont welke relaties uit de bronnen vervallen omdat een kant geen element is; leg belangrijke vervallen relaties voor.
+Na een eerste `uv run python tools/beslissen.py` (zonder relaties werkt dat al): `uv run python tools/relaties.py voorstel <id>` geeft de relaties uit de relatietabellen van de bronanalyses, gematcht op het GGM, als YAML voor `relaties:`. Een GGM-relatie dient alleen om een gevonden relatie te matchen: zonder gevonden relatie staat ze als commentaar en wordt ze geen voorstel. Kies, geef een herkenbare naam, controleer richting en kardinaliteit. Een relatie staat alleen in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. `uv run python tools/relaties.py uit-bronnen <onderwerp>` toont welke relaties uit de bronnen vervallen omdat een kant geen element is; leg belangrijke vervallen relaties voor.
 
 ## 7. Terugmeldingen (GGM, procesarchitectuur en GEMMA)
 

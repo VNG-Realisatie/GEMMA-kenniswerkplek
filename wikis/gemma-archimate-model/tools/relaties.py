@@ -1,4 +1,4 @@
-"""Relaties tussen elementen: kandidaten uit het GGM en uit de bronanalyses, en de toets aan ArchiMate.
+"""Relaties tussen elementen: kandidaten uit de bronanalyses, hun match in het GGM, en de toets aan ArchiMate.
 
 Een relatie staat in de beoordeling van het bronelement (`relaties:` in beoordelingen/begrippen/<id>.yaml); het
 render-script zet haar op de pagina, met de inkomende kant op de pagina van het doel. Deze tool doet voorstellen; de AI
@@ -17,6 +17,10 @@ Relaties uit de bronnen komen uit de tabel `## Relaties` van de bronanalyses (Va
 de begrippen worden opgelost via de beoordelingen (naam of synoniem), een eigenschap, onderdeel of specialisatie
 zonder pagina wordt opgetild naar het genoemde begrip, en de typen van beide kanten plus het werkwoord bepalen de
 soort relatie.
+
+Het GGM is matchdoel, geen bron: een GGM-relatie dient alleen om een gevonden relatie te matchen (`combineer`). Een
+GGM-relatie zonder gevonden relatie tussen dezelfde elementen wordt geen voorstel; `voorstel` noemt haar als
+commentaar, zodat de AI een bron kan zoeken of een relatie die al in de beoordeling staat kan matchen.
 
 Gebruik (vanuit de wikimap, na tools/beslissen.py):
     uv run python tools/relaties.py voorstel <element-id>      # kandidaten als YAML voor `relaties:`
@@ -494,12 +498,15 @@ def uit_bronnen(rijen: list[dict], begrippen_: dict[str, dict]) -> tuple[list[Ka
     return list(kandidaten.values()), vervallen
 
 
-def combineer(ggm_kandidaten: list[Kandidaat], bron_kandidaten: list[Kandidaat]) -> list[Kandidaat]:
-    """Een bronrelatie tussen dezelfde elementen als een GGM-kandidaat bevestigt die (bron-id's erbij);
-    anders komt ze erbij met grondslag `bron`. Wijkt het relatietype af, dan staat dat in de toelichting."""
-    result = list(ggm_kandidaten)
+def combineer(ggm_kandidaten: list[Kandidaat], bron_kandidaten: list[Kandidaat]) -> tuple[list[Kandidaat], list[Kandidaat]]:
+    """Match de gevonden relaties (uit de bronnen) op het GGM. Een GGM-kandidaat tussen dezelfde elementen als een
+    bronrelatie wordt de match (bron-id's erbij); wijkt het relatietype af, dan staat dat in de toelichting. Een
+    bronrelatie zonder GGM-kandidaat blijft met grondslag `bron`. Geeft (voorstellen, GGM-kandidaten zonder gevonden
+    relatie); die laatste zijn geen voorstel, want het GGM is matchdoel en geen bron."""
+    result: list[Kandidaat] = []
+    gematcht: list[Kandidaat] = []
     for b in bron_kandidaten:
-        gelijk = [g for g in result if g.grondslag != "bron" and {g.bron, g.doel} == {b.bron, b.doel}]
+        gelijk = [g for g in ggm_kandidaten if {g.bron, g.doel} == {b.bron, b.doel}]
         if not gelijk:
             result.append(b)
             continue
@@ -508,7 +515,11 @@ def combineer(ggm_kandidaten: list[Kandidaat], bron_kandidaten: list[Kandidaat])
             g.vindplaats = g.vindplaats or b.vindplaats
             if g.relatie != b.relatie:
                 g.toelichting = "; ".join(x for x in (g.toelichting, f"bron noemt {b.relatie} ('{b.naam}')") if x)
-    return result
+            if not any(g is m for m in gematcht):
+                gematcht.append(g)
+                result.append(g)
+    alleen_ggm = [g for g in ggm_kandidaten if not any(g is m for m in gematcht)]
+    return result, alleen_ggm
 
 
 def als_relatie(k: Kandidaat) -> dict:
@@ -524,8 +535,11 @@ def als_relatie(k: Kandidaat) -> dict:
     return {s: w for s, w in r.items() if w not in ("", [], None)}
 
 
-def yaml_voorstel(element_id: str, kandidaten: list[Kandidaat]) -> str:
-    """Uitgaande kandidaten als YAML voor `relaties:`; inkomende als commentaar (die horen bij het andere element)."""
+def yaml_voorstel(element_id: str, kandidaten: list[Kandidaat], alleen_ggm: list[Kandidaat] = (),
+                  bestaand: set[str] = frozenset()) -> str:
+    """Uitgaande kandidaten als YAML voor `relaties:`; inkomende als commentaar (die horen bij het andere element).
+    GGM-kandidaten zonder gevonden relatie (`alleen_ggm`) staan als commentaar, met een aanwijzing als er al een
+    relatie met dat element in de beoordeling staat (`bestaand`: de ids van die elementen)."""
     regels = ["relaties:"]
     for k in kandidaten:
         if k.bron != element_id:
@@ -538,6 +552,14 @@ def yaml_voorstel(element_id: str, kandidaten: list[Kandidaat]) -> str:
     if inkomend:
         regels.append("# Inkomend (hoort in de beoordeling van het andere element):")
         regels += [f"#   {k.bron} -> {als_relatie(k)['soort']} ({k.naam or 'zonder naam'})" for k in inkomend]
+    if alleen_ggm:
+        regels.append("# Alleen in het GGM, niet gevonden in de bronnen (geen voorstel; zoek een bron, of match een "
+                      "relatie die al in de beoordeling staat):")
+        for k in alleen_ggm:
+            ander = k.doel if k.bron == element_id else k.bron
+            hint = "; staat al in de beoordeling: matchen" if ander in bestaand else ""
+            regels.append(f"#   {k.bron} -> {als_relatie(k)['soort']} -> {k.doel} ({k.naam or 'zonder naam'}; "
+                          f"{k.grondslag}: {', '.join(k.ggm_relaties)}{hint})")
     return "\n".join(regels) + "\n"
 
 
@@ -563,8 +585,10 @@ def main(argv: list[str] | None = None) -> int:
     ggm_pad = a.wiki / "ggm" / "ggm_parsed.json"
     kandidaten = voorstel(a.element, ggm.laad(ggm_pad), a.wiki) if ggm_pad.exists() else []
     uit, _ = uit_bronnen(bronrelaties(a.wiki), alle)
-    kandidaten = combineer(kandidaten, [k for k in uit if a.element in (k.bron, k.doel)])
-    sys.stdout.write(yaml_voorstel(a.element, kandidaten))
+    kandidaten, alleen_ggm = combineer(kandidaten, [k for k in uit if a.element in (k.bron, k.doel)])
+    bestaand = {r.get("naar") for r in alle[a.element].get("relaties") or []}
+    bestaand |= {i for i, d in alle.items() if any(r.get("naar") == a.element for r in d.get("relaties") or [])}
+    sys.stdout.write(yaml_voorstel(a.element, kandidaten, alleen_ggm, bestaand))
     return 0
 
 

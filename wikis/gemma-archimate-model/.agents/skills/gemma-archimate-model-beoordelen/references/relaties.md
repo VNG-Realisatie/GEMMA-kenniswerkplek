@@ -26,9 +26,9 @@ De stappen, in deze volgorde; bij het beoordelen gebeuren ze vaak tegelijk, uit 
 
 ## Kandidaten
 
-`uv run python tools/relaties.py voorstel <id>` geeft de kandidaten uit het GGM en uit de relatietabellen van de bronanalyses samen, als YAML voor `relaties:`; inkomende kandidaten staan als commentaar (die horen in de beoordeling van het andere element). Kies, geef een herkenbare naam (beleid levert de taal), laat puur technische relaties weg, en controleer richting en kardinaliteit: in het GGM-export zijn die niet altijd eenduidig.
+`uv run python tools/relaties.py voorstel <id>` geeft de relaties uit de relatietabellen van de bronanalyses, met hun match in het GGM, als YAML voor `relaties:`; inkomende kandidaten staan als commentaar (die horen in de beoordeling van het andere element). Kies, geef een herkenbare naam (beleid levert de taal), laat puur technische relaties weg, en controleer richting en kardinaliteit: in het GGM-export zijn die niet altijd eenduidig.
 
-Voor het GGM-deel past de tool deze regels toe:
+Het GGM is matchdoel, geen bron: een GGM-relatie dient alleen om een gevonden relatie te matchen. Bij het zoeken van de match past de tool deze regels toe:
 
 - **Mappen waar het kan.** `ggm-exact`: één GGM-relatie tussen de GGM-entiteiten van beide elementen.
 - **Subtypes overslaan.** Een relatie op een specialisatie zonder pagina of een GGM-component wordt opgetild naar het element dat die draagt. Een keten A–X–B via een niet-opgenomen X wordt A–B (`ggm-afgeleid`), met het zwakste type in de keten (compositie > aggregatie > associatie) en een samengestelde kardinaliteit. Specialisaties worden niet geketend. Relaties naar enumeraties vervallen (eigenschap); dubbelingen worden samengevoegd; lussen vervallen.
@@ -43,7 +43,7 @@ Voor het GGM-deel past de tool deze regels toe:
   | Association, Usage | — | associatie; gericht als de naam een leesrichting heeft |
   | Abstraction | "is een" | specialisatie, anders associatie; terugmeldkandidaat |
 
-Een bronrelatie tussen dezelfde elementen als een GGM-relatie bevestigt die (de bron komt erbij, de grondslag blijft `ggm-*`); anders wordt het een relatie met grondslag `bron`.
+Een gevonden relatie tussen dezelfde elementen als een GGM-relatie krijgt die als match (de bron komt erbij, de grondslag wordt `ggm-*`); zonder GGM-relatie wordt het een relatie met grondslag `bron`. Een GGM-relatie zonder gevonden relatie wordt geen voorstel: de tool noemt haar als commentaar, met een aanwijzing als er al een relatie met dat element in de beoordeling staat (match die dan met de hand). Neem haar alleen op als een bron haar noemt (regel Elke claim een bron).
 
 ## Uit de bronnen
 
