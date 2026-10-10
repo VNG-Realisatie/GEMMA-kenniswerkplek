@@ -218,7 +218,6 @@ synoniemen:
   context: beleid
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
@@ -226,7 +225,7 @@ relaties:
 - soort: triggering
   naar: verwerken-vermissing-reisdocument
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven

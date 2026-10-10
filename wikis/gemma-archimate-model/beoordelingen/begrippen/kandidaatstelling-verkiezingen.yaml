@@ -25,7 +25,7 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   betekenis_in_onderwerp:
     waarde: nee
-    onderbouwing: 'Hoort niet bij Burgerzaken: de organisatie van de verkiezingen (kandidaatstelling, stembureaus, stemming, uitslag) valt buiten het onderwerp (besluit redacteur 2026-10-06, Afbakening Burgerzaken). Beoordelen in een later onderwerp verkiezingen, een onderwerp dat nog niet bestaat.'
+    onderbouwing: 'Hoort niet bij Burgerzaken: de organisatie van de verkiezingen (kandidaatstelling, stembureaus, stemming, uitslag) valt buiten het onderwerp (besluit 2026-10-06, Afbakening Burgerzaken). Beoordelen in een later onderwerp verkiezingen, een onderwerp dat nog niet bestaat.'
   gedrag:
     waarde: ja
     onderbouwing: Iets wat de gemeente aanbiedt.
@@ -192,7 +192,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: 'Niet beoordeeld: verwijzing naar een later onderwerp.'
-toelichting: 'Verwijzing: UPL-product nr. 205 (Kieswet art. H 1, R 1, Y 2 en Ya 4) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): de organisatie van de verkiezingen (kandidaatstelling, stembureaus, stemming, uitslag) valt buiten het onderwerp (besluit redacteur 2026-10-06, Afbakening Burgerzaken). Het product krijgt zijn pagina in een later onderwerp verkiezingen.'
+toelichting: 'Verwijzing: UPL-product nr. 205 (Kieswet art. H 1, R 1, Y 2 en Ya 4) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): de organisatie van de verkiezingen (kandidaatstelling, stembureaus, stemming, uitslag) valt buiten het onderwerp (besluit 2026-10-06, Afbakening Burgerzaken). Het product krijgt zijn pagina in een later onderwerp verkiezingen.'
 beslist:
   uitkomst:
     soort: verwijzing

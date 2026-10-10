@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het ontvangen en vastleggen van de verklaring dat een rijbewijs kwijt of gestolen is, waardoor het rijbewijs ongeldig wordt.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

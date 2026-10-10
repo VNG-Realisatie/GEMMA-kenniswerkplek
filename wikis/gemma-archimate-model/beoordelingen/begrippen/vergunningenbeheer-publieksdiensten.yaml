@@ -216,7 +216,6 @@ per_onderwerp:
   lijkbezorging:
   - Wie de uitvaart eerder dan 36 uur of later dan zes werkdagen na het overlijden wil laten plaatsvinden, heeft een vergunning nodig; de burgemeester geeft toestemming (RVO; Wet op de lijkbezorging art. 17).
 domein: Publieksdiensten
-grondslag: bron
 gemma:
   id: id-b7e4786e-cff2-40a8-ac4b-6c48a0abfbe0
   sterkte: exact
@@ -225,21 +224,21 @@ relaties:
 - soort: aggregatie
   naar: uitvaart-vervroegen-of-uitstellen
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   vindplaats: § Uitvaart vervroegen, § Uitvaart uitstellen
 - soort: bediening
   naar: stellen-andere-termijn
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17
 - soort: aggregatie
   naar: bijzondere-begraafplaats-toestemming
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 71 (GEMMA-domein Publieksdiensten)

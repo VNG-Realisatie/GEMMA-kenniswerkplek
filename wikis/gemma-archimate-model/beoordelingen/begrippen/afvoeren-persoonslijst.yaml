@@ -219,7 +219,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-toelichting: 'Processtap zonder pagina: een ten onrechte opgenomen persoonslijst, bijvoorbeeld na een dubbele inschrijving of identiteitsfraude, wordt opgeschort met reden F; er is geen eigen besluit of product (afbakening, besluit redacteur 2026-10-06). Het verwijderen van een geblokkeerde persoonslijst na verhuizing of emigratie is ook een registratiestap.'
+toelichting: 'Processtap zonder pagina: een ten onrechte opgenomen persoonslijst, bijvoorbeeld na een dubbele inschrijving of identiteitsfraude, wordt opgeschort met reden F; er is geen eigen besluit of product (afbakening, besluit 2026-10-06). Het verwijderen van een geblokkeerde persoonslijst na verhuizing of emigratie is ook een registratiestap.'
 synoniemen:
 - naam: Dubbelinschrijving afhandelen
   context: HUP

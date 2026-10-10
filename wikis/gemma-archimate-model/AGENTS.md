@@ -80,7 +80,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 | Elke claim een bron, Zonder bron | dit bestand | skill gemma-archimate-model-ingest | — | script |
 | Geen absolute taal | dit bestand | `references/definitie.md` | — | signaal |
 | Drie registers, GEMMA-terugmeldingen formuleren | dit bestand | `references/terugmeldingen.md` | secties 2 en 3.5 | script |
-| Bronvoorrang, Tegenspraak, Wettelijke grondslag | modelleerregels | skill gemma-archimate-model-ingest; `references/grondslag.md` | secties 3.4, 3.7 en 4.2 | script, signaal |
+| Bronvoorrang, Tegenspraak, Wettelijke grondslag | modelleerregels | skill gemma-archimate-model-ingest | secties 3.4, 3.7 en 4.2 | script, signaal |
 | Beslistabel beslist | modelleerregels | skill gemma-archimate-model-criteria | secties 4.1, 4.3 en 4.4 | script, signaal |
 | Match op betekenis, Zwakke match voorleggen | modelleerregels | `references/ggm-match.md`, `references/gemma-match.md` | secties 3.7, 4.5 en 6.4 | script, signaal |
 | Eén element in het hele model, Thuishoren, Relaties tussen onderwerpen | modelleerregels | `references/relaties.md` | sectie 3.3 | signaal |

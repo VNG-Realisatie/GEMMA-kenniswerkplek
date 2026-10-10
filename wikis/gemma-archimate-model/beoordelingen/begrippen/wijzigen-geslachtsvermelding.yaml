@@ -246,14 +246,14 @@ relaties:
 - soort: toegang (bijwerken)
   naar: akte-van-de-burgerlijke-stand
   naam: voegt latere vermelding toe aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 28b
 - soort: realisatie
   naar: geslachtswijzigingsaangifte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
@@ -261,7 +261,7 @@ relaties:
 - soort: triggering
   naar: behandelen-verzoek-om-verwijdering-van-gegevens
   naam: kan leiden tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-geslachtswijziging
   - 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
@@ -269,14 +269,13 @@ relaties:
 - soort: triggering
   naar: verval-van-het-reisdocument
   naam: doet het reisdocument vervallen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   vindplaats: Paspoortwet art. 47 lid 1 onder e; HUP Van rechtswege vervallen
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

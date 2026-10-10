@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Terrein waar stoffelijke overschotten worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
-grondslag: bron
 match:
   ggm: geen
   gemma: geen
@@ -35,7 +34,7 @@ Terrein waar stoffelijke overschotten worden begraven en urnen worden bijgezet, 
 
 ### Beschrijving
 
-Elke gemeente heeft ten minste één gemeentelijke begraafplaats, voor zich of samen met andere gemeenten (art. 33). Daarnaast bestaan bijzondere begraafplaatsen van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 24, 37). De gemeente beslist over grond voor en ingebruikname van bijzondere begraafplaatsen en kan begraafplaatsen sluiten (art. 40, 41, 43, 44). Op de begraafplaats liggen graven, urnenmuren en verstrooiingsplaatsen (Groningen art. 1). Een begraafplaats is een fysieke plaats, maar wordt hier als gemeentelijke voorziening beschreven (besluit redacteur 2026-09-30).
+Elke gemeente heeft ten minste één gemeentelijke begraafplaats, voor zich of samen met andere gemeenten (art. 33). Daarnaast bestaan bijzondere begraafplaatsen van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 24, 37). De gemeente beslist over grond voor en ingebruikname van bijzondere begraafplaatsen en kan begraafplaatsen sluiten (art. 40, 41, 43, 44). Op de begraafplaats liggen graven, urnenmuren en verstrooiingsplaatsen (Groningen art. 1). Een begraafplaats is een fysieke plaats, maar wordt hier als gemeentelijke voorziening beschreven (besluit 2026-09-30).
 
 ## Plaats in het model
 
@@ -113,4 +112,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-09-30: Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.
+- 2026-10-04: Kernobject van het nieuwe bedrijfsproces Beheren begraafplaatsen, met de nieuwe deelprocessen Verlenen toestemming bijzondere begraafplaats (Wlb art. 40–41) en Sluiten begraafplaats (art. 43–44). *Stand: geldt; procesniveaus herzien 2026-10-08: Beheren begraafplaatsen is levensloopproces*
 - 2026-10-05: Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie.

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Model van de VNG voor de verordening waarin een gemeente het beheer en het gebruik van haar begraafplaatsen regelt.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -91,8 +90,6 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-De modelverordening zelf ([2010-vng-model-beheersverordening-begraafplaatsen](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md)), genoemd door de VNG ([2026-vng-wet-op-de-lijkbezorging](../../../bronanalyses/lijkbezorging/overig/2026-vng-wet-op-de-lijkbezorging.md)).
 
 | Korte titel | Bron |
 |---|---|

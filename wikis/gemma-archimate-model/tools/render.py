@@ -2,7 +2,7 @@
 
 Invoer (alleen lezen): `beoordelingen/begrippen/<id>.yaml` (het oordeel van de AI, met `status` en `beslist` van
 tools/beslissen.py), `beoordelingen/onderwerpen/<id>.yaml`, `beoordelingen/terugmeldingen/ggm.yaml`,
-`beoordelingen/terugmeldingen/procesarchitectuur.yaml`, `beoordelingen/terugmeldingen/gemma.yaml`, `beoordelingen/beleidsdomeinen.yaml`, `beoordelingen/besluiten-eerder.yaml`, `log.md`, `wiki.yaml`,
+`beoordelingen/terugmeldingen/procesarchitectuur.yaml`, `beoordelingen/terugmeldingen/gemma.yaml`, `beoordelingen/beleidsdomeinen.yaml`, `log.md`, `wiki.yaml`,
 de bronanalyses en `sources/index` (titels). Het script oordeelt niet en schrijft nooit in `beoordelingen/`.
 
 Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--check` vangt dat):
@@ -63,7 +63,6 @@ PA_TERUGMELDLIJST = Path("terugmeldingen") / "procesarchitectuur-terugmeldingen.
 GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "gemma.yaml"
 GEMMA_TERUGMELDLIJST = Path("terugmeldingen") / "gemma-terugmeldingen.md"
 BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
-BESLUITEN_EERDER = Path("beoordelingen") / "besluiten-eerder.yaml"
 INDELINGSVELDEN = ("afnemer", "domein", "doelgroep", "regelgever")  # waarden zonder verwijzing: ook in de frontmatter
 
 STATUSSEN = ["kandidaat", "review", "goedgekeurd", "afgewezen"]
@@ -125,8 +124,6 @@ class Wiki:
         bd = wiki_root / BELEIDSDOMEINEN
         self.beleidsdomeinen = {b["beleidsdomein"]: b for b in beoordeling.laad(bd).get("beleidsdomeinen", [])} \
             if bd.exists() else {}
-        be = wiki_root / BESLUITEN_EERDER
-        self.besluiten_eerder = beoordeling.laad(be).get("besluiten", []) if be.exists() else []
         log = wiki_root / "log.md"
         self.log = log.read_text(encoding="utf-8") if log.exists() else ""
         self.onderwerp_dir = self.yaml["page_types"].get("onderwerp", {}).get("dir", "begrippen")
@@ -355,7 +352,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
         "id": bid, "type": u["paginatype"], "archimate_type": u["archimate_type"], "status": status,
         "naam": d["begrip"], "onderwerpen": d["onderwerpen"],
         **{k: d[k] for k in ("taakveld", "beleidsdomein") if d.get(k)},
-        "definitie": d["definitie"], "grondslag": d["grondslag"],
+        "definitie": d["definitie"],
         "match": {k: d[k]["sterkte"] for k in ("ggm", "gemma") if d.get(k)},
         "data_object": u.get("data_object", "nee"),
         **({"procesniveau": u["procesniveau"]} if u.get("procesniveau") else {}),
@@ -450,8 +447,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
         _sub("Kwaliteitsdoelen", kwaliteitsdoelen)])
 
     # Herkomst: waar het begrip is gevonden en hoe het aansluit op GGM en GEMMA.
-    bronnen = [*w.alineas(van, d.get("grondslag_toelichting")),
-               *_tabel(["Korte titel", "Bron"], [[w.bron(van, b, w.korte_titel(b)), w.titel(b)] for b in a.get("bronnen", [])])] \
+    bronnen = [*_tabel(["Korte titel", "Bron"], [[w.bron(van, b, w.korte_titel(b)), w.titel(b)] for b in a.get("bronnen", [])])] \
         if a.get("bronnen") else []
     ggm_regels = []
     if d.get("ggm"):
@@ -495,13 +491,20 @@ def element_pagina(w: Wiki, bid: str) -> str:
             f"- [Nummer {m['nummer']}]({lijst}) ({m['type']}, {m.get('status', 'open')}): "
             f"{_bevinding_regel(w, van, m['bevinding'])}"
             for m in gm], ""]
-    besluiten = [f"- {b['datum']}: {w.tekst(van, b['besluit'])}" for b in d.get("besluiten", [])]
+    besluiten = [_besluit(w, van, b) for b in d.get("besluiten", [])]
     r += _groep("Herkomst", [_sub("Bronnen", bronnen), _sub("Afstemming met GGM", ggm_regels),
                              _sub("Afstemming met GEMMA", gemma_regels), _sub("Besluiten redacteur", besluiten)])
     return _pagina(meta, r)
 
 
 # --- Begrippenlijst per onderwerp ---
+
+
+def _besluit(w: Wiki, van: str, b: dict) -> str:
+    """Een besluit: datum, bij een onderwerp het begrip zonder beoordeling, het besluit en de stand."""
+    begrip = f"**{b['begrip']}**: " if b.get("begrip") else ""
+    stand = f" *Stand: {w.tekst(van, b['stand'])}*" if b.get("stand") else ""
+    return f"- {b['datum']}: {begrip}{w.tekst(van, b['besluit'])}{stand}"
 
 
 def _begrip_cel(w: Wiki, van: str, bid: str, d: dict) -> str:
@@ -545,7 +548,7 @@ def begrippenlijst(w: Wiki, oid: str) -> str:
         rijen.append([_begrip_cel(w, van, bid, d), w.tekst(van, reden), herkomst or "—"])
     r += _sectie("Begrippen", ["Een begrip met een link is een element; cursief staat de uitkomst.", "",
                                *_tabel(["Begrip", "Reden", "Herkomst"], rijen)] if rijen else ["Nog geen begrippen beoordeeld.", ""])
-    besluiten = [f"- {b['datum']}: {w.tekst(van, b['besluit'])}" for b in o.get("besluiten") or []]
+    besluiten = [_besluit(w, van, b) for b in o.get("besluiten") or []]
     r += _sectie("Besluiten", [*besluiten, ""] if besluiten else [])
     r += _sectie("Open vragen", [f"- {w.tekst(van, v)}" for v in o.get("open_vragen", [])] + [""] if o.get("open_vragen") else [])
     return _pagina(meta, r)
@@ -650,7 +653,7 @@ def overzicht(w: Wiki, oid: str) -> str:
     generiek = [b for b in objecten if w.uitkomst(b).get("objectniveau") == "generiek"]
     overig = [b for b in objecten if b not in kern and b not in generiek and w.uitkomst(b).get("objectniveau") != "subobject"]
     r += _sectie("Objecten", [*(["**Kernobjecten**", "", *regels, ""] if regels else []),
-                              *([f"**Generiek** (verhuizen later naar een algemeen onderwerp): {_links(w, van, generiek)}.", ""] if generiek else []),
+                              *([f"**Generiek** (horen thuis in een thematisch gedeeld onderwerp of Kern): {_links(w, van, generiek)}.", ""] if generiek else []),
                               *([f"**Nog zonder niveau**: {_links(w, van, overig)}.", ""] if overig else [])])
 
     functies = [[w.link(van, f), _links(w, van, [v for v in w.inkomend_van(f, "aggregatie")
@@ -762,7 +765,7 @@ def pa_terugmeldlijst(w: Wiki) -> str:
     r = ["# Procesarchitectuur-terugmeldingen", "", _gegenereerd(PA_TERUGMELDINGEN.as_posix()), "",
          "Bevindingen voor de werkgroep procesarchitectuur: waar GEMMA tot een andere indeling of modellering komt dan de "
          "UPL-lijsten (producten en diensten, extern en intern) en het kennismodel procesarchitectuur. Het model mag "
-         "afwijken van de UPL-indeling, mits de afwijking hier is teruggemeld (besluit redacteur 2026-10-05); een "
+         "afwijken van de UPL-indeling, mits de afwijking hier is teruggemeld; een "
          "terugmelding dekt dan het signaal van tools/beslissen.py.", ""]
     per_type = []
     for soort, betekenis in PA_TYPEN.items():
@@ -791,8 +794,7 @@ def gemma_terugmeldlijst(w: Wiki) -> str:
     r = ["# GEMMA-terugmeldingen", "", _gegenereerd(GEMMA_TERUGMELDINGEN.as_posix()), "",
          "Voorstellen voor het GEMMA-team over het GEMMA-model zelf: elementen die ontbreken, vervallen of herzien moeten "
          "worden, en afwijkende indelingen, definities en relaties. De export naar Archi werkt alleen elementen bij die "
-         "de wiki kent; wat de wiki laat vervallen, blijft in GEMMA tot het GEMMA-team erover besluit (besluit redacteur "
-         "2026-10-08).", ""]
+         "de wiki kent; wat de wiki laat vervallen, blijft in GEMMA tot het GEMMA-team erover besluit.", ""]
     per_type = []
     for soort, betekenis in GEMMA_TYPEN.items():
         rijen = [[f"{m['nummer']} {m.get('status', 'open')}",

@@ -12,8 +12,11 @@ titel: Voortgang
 
 | Onderwerp | Status | Begrippen | Elementen |
 |---|---|---|---|
-| [Algemeen](begrippen/algemeen.md) | in-behandeling | 15 | 15 |
+| [Besluitvorming](begrippen/besluitvorming.md) | in-behandeling | 4 | 4 |
+| [Bestuur en organisatie](begrippen/bestuur-en-organisatie.md) | in-behandeling | 6 | 6 |
 | [Burgerzaken](begrippen/burgerzaken.md) | in-behandeling | 260 | 180 |
+| [Heffingen en betalingen](begrippen/heffingen-en-betalingen.md) | in-behandeling | 2 | 2 |
+| [Kern](begrippen/kern.md) | in-behandeling | 2 | 2 |
 | [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 186 | 95 |
 | [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
 
@@ -23,9 +26,12 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 | Onderwerp | Elementen | Gebruikt uit andere | Relaties binnen | Relaties met andere |
 |---|---|---|---|---|
-| Algemeen | 15 | 0 | 14 | Burgerzaken 28, Lijkbezorging 42 |
-| Burgerzaken | 169 | 8 | 498 | Algemeen 28, Lijkbezorging 8 |
-| Lijkbezorging | 70 | 19 | 179 | Algemeen 42, Burgerzaken 8 |
+| Besluitvorming | 4 | 0 | 2 | Heffingen en betalingen 1, Lijkbezorging 15 |
+| Bestuur en organisatie | 6 | 0 | 8 | Burgerzaken 20, Kern 1, Lijkbezorging 15 |
+| Burgerzaken | 169 | 8 | 500 | Bestuur en organisatie 20, Kern 10, Lijkbezorging 7 |
+| Heffingen en betalingen | 2 | 0 | 1 | Besluitvorming 1, Lijkbezorging 4 |
+| Kern | 2 | 0 | 0 | Bestuur en organisatie 1, Burgerzaken 10, Lijkbezorging 8 |
+| Lijkbezorging | 71 | 18 | 179 | Besluitvorming 15, Bestuur en organisatie 15, Burgerzaken 7, Heffingen en betalingen 4, Kern 8 |
 | Participatie | 0 | 0 | 0 | — |
 
 ## Elementen per type en status

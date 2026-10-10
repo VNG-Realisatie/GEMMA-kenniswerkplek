@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het melden van een voorgenomen geregistreerd partnerschap bij de gemeente waar men het wil laten registreren.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -74,7 +73,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke afnemer die erom vraagt. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Voorgenomen huwelijk melden](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger (UPL nr. 158): de aanstaande partners. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Voorgenomen huwelijk melden](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.md) |
 | **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Registreren partnerschap, in het deelproces Behandelen melding voorgenomen huwelijk of partnerschap (BW 1 art. 80a). [BW boek 1](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 158), apart van de huwelijksaangifte; de UPL noemt varianten apart (besluit redacteur 2026-10-06). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 158), apart van de huwelijksaangifte; de UPL noemt varianten apart (besluit 2026-10-06). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties
 

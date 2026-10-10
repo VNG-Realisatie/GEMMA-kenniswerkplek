@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van bestuur die de Wet basisregistratie personen uitwerkt, onder meer voor inschrijving, aangifte, adresonderzoek en verstrekking.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -96,8 +95,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Bronnen
 
-Het besluit zelf ([2026-rijk-besluit-brp-bwbr0034306](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md)).
-
 | Korte titel | Bron |
 |---|---|
 | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) | Besluit basisregistratie personen |
@@ -108,4 +105,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
+- 2026-10-07: Opnemen als beleidskader; grondslag van de BRP-diensten en -deelprocessen.
 - 2026-10-07: Opnemen als beleidskader: grondslag van inschrijving, adresonderzoek, emigratie en verstrekking (art. 24, 28a–g, 29, 30, 40); precedent Besluit op de lijkbezorging.

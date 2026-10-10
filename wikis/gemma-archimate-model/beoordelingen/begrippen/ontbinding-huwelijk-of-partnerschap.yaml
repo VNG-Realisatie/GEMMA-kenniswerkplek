@@ -221,14 +221,13 @@ relaties:
 - soort: triggering
   naar: inschrijven-ontbinding-huwelijk-of-partnerschap
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: Utrecht inleiding; art. 163
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

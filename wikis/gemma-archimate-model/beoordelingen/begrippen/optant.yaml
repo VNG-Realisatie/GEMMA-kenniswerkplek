@@ -202,7 +202,6 @@ beschrijving:
 - De optant legt de verklaring schriftelijk en in persoon af, verstrekt gegevens over zichzelf en de personen die hij in zijn optie betrekt, en verklaart dat die naar waarheid zijn (Besluit verkrijging en verlies Nederlanderschap art. 3, 6). Voor een minderjarige treedt de wettelijke vertegenwoordiger op (Rijkswet op het Nederlanderschap art. 2 lid 3; Besluit art. 60a lid 2). Na de bevestiging verschijnt de optant op oproeping bij de uitreiking en legt hij de verklaring van verbondenheid af (Besluit art. 60a). Utrecht spreekt van aanvrager.
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen rol voor dit begrip; nieuw voor GEMMA.
@@ -210,7 +209,7 @@ relaties:
 - soort: toewijzing
   naar: behandelen-optieverklaring
   naam: legt de optieverklaring af, legt de verklaring van verbondenheid af
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 3, 6, 7; art. 60a lid 2 en 4

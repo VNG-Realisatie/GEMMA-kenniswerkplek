@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het behandelen van optie, naturalisatie en afstand, waarmee een persoon het Nederlanderschap verkrijgt of verliest.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -45,7 +44,7 @@ Bij de naturalisatie is het een keten in het orkestratiemodel: de minister van J
 
 De verkrijging en het verlies werken door in de basisregistratie personen, het reisdocument en het kiesrecht: de gemeente neemt de Nederlandse nationaliteit op of beëindigt haar, beëindigt bij verkrijging de verblijfstitel en de aanduiding Europees kiesrecht, en een Nederlands reisdocument vervalt bij verlies van rechtswege (HUP Nederlandse nationaliteit; Paspoortwet art. 47 lid 1 onder a en b).
 
-De gemeente voert haar deel uit in drie bedrijfsprocessen: Behandelen optieverklaring en Behandelen verklaring van afstand, waarin de burgemeester zelf beslist, en Behandelen naturalisatieverzoek, dat de gemeente uitvoert voor de minister; optie en naturalisatie eindigen met het deelproces Houden naturalisatieceremonie; het deel van de minister staat alleen in deze beschrijving (besluit redacteur 2026-10-08).
+De gemeente voert haar deel uit in drie bedrijfsprocessen: Behandelen optieverklaring en Behandelen verklaring van afstand, waarin de burgemeester zelf beslist, en Behandelen naturalisatieverzoek, dat de gemeente uitvoert voor de minister; optie en naturalisatie eindigen met het deelproces Houden naturalisatieceremonie; het deel van de minister staat alleen in deze beschrijving (besluit 2026-10-08).
 
 ### Synoniemen
 
@@ -113,7 +112,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Ketenpartner](../../../rollen/ketenpartner.md) | beoordeelt en beslist over de naturalisatie *toewijzing* | Beheren Nederlanderschap | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [Utrecht Nederlander worden](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.md) (Besluit art. 37, 38; Utrecht) |
-| [Nederlanderschap diensten](../../../bedrijfsfuncties/publieksdiensten/nederlanderschap-diensten.md) | bedient *bediening* | Beheren Nederlanderschap | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (Besluit art. 2) |
+| [Nederlanderschap diensten](../../../bedrijfsfuncties/publieksdiensten/nederlanderschap-diensten.md) | bedient *bediening* | Beheren Nederlanderschap | [Besluit verkrijging en verlies Nederlanderschap](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (Besluit art. 2) |
 | [Rijkswet op het Nederlanderschap](../../../../motivatie/beleidskaders/rijksregelgeving/rijkswet-op-het-nederlanderschap.md) | is grondslag voor *associatie (gericht)* | Beheren Nederlanderschap | [Rijkswet op het Nederlanderschap](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) (art. 6, 7, 15, 21) |
 
 ## Herkomst
@@ -135,4 +134,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-07: Aggregeert alleen het bedrijfsproces Behandelen verkrijging en verlies Nederlanderschap (het deel van de gemeente), dat de vier deelprocessen en de toegang-relaties overneemt; de gebeurtenissen blijven bij het ketenproces.
+- 2026-10-08: Geen interactie: bij optie en afstand beslist de burgemeester zelf, bij de naturalisatie voert de gemeente delen uit voor de minister (orkestratie). Beheren Nederlanderschap blijft het levensloopproces met zijn object en aggregeert de vier bedrijfsprocessen; Behandelen verkrijging en verlies Nederlanderschap vervalt, samengevoegd. Behandelen naturalisatieverzoek en Houden naturalisatieceremonie specialiseren *Leveren dienst aan derden*.
 - 2026-10-08: Geen bedrijfsinteractie: bij optie en afstand beslist de burgemeester zelf, bij de naturalisatie voert de gemeente delen uit voor de minister (orkestratie, IK 27). Blijft het ene levensloopproces van Nederlanderschap, met zijn object in Archi; Behandelen verkrijging en verlies Nederlanderschap is erin samengevoegd: de vier bedrijfsprocessen en de toegangsrelaties komen hier terug, het object van Behandelen vervalt.

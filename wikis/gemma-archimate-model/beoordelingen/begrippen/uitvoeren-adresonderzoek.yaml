@@ -239,7 +239,6 @@ synoniemen:
   context: beleid
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -249,14 +248,14 @@ relaties:
 - soort: toegang (bijwerken)
   naar: verblijfplaats
   naam: verbetert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
   vindplaats: '4.8'
 - soort: realisatie
   naar: onjuiste-inschrijving-op-adres-melden
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   - 2026-rijk-wet-brp-bwbr0033715

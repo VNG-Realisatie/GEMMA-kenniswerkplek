@@ -7,7 +7,6 @@ naam: GGD
 onderwerpen:
 - lijkbezorging
 definitie: Gezondheidsdienst die de colleges van de gemeenten in een regio via een gemeenschappelijke regeling instellen en in stand houden voor de publieke gezondheid.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

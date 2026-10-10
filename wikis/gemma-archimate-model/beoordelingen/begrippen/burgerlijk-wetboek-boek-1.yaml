@@ -213,9 +213,6 @@ synoniemen:
 per_onderwerp:
   burgerzaken:
   - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De items van de burgerlijke stand zijn diensten (UPL nr. 5, 23, 28, 61, 118, 122, 129, 136 tot en met 138, 156 tot en met 159, 184, 185, 258, 315, 316, 414, 460), elk gerealiseerd door een bedrijfsproces onder Bijhouden burgerlijke stand; het boek is grondslag van die diensten en van het proces zelf.'
-grondslag: regelgeving
-grondslag_toelichting:
-- De wet zelf (BWBR0002656), zoals de UPL haar als grondslag noemt en het Besluit burgerlijke stand haar uitwerkt (BW 1 titel 4).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze wet; nieuw voor GEMMA.
@@ -224,14 +221,14 @@ relaties:
 - soort: associatie (gericht)
   naar: bijhouden-burgerlijke-stand
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 16a, 18
 - soort: associatie (gericht)
   naar: geboorteaangifte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -239,7 +236,7 @@ relaties:
 - soort: associatie (gericht)
   naar: geboorteakte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -247,7 +244,7 @@ relaties:
 - soort: associatie (gericht)
   naar: geboorteakte-levenloos-kind
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -255,7 +252,7 @@ relaties:
 - soort: associatie (gericht)
   naar: doodgeboren-kind-aangifte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -263,7 +260,7 @@ relaties:
 - soort: associatie (gericht)
   naar: erkenning-kind
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -271,7 +268,7 @@ relaties:
 - soort: associatie (gericht)
   naar: overlijdensaangifte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -279,7 +276,7 @@ relaties:
 - soort: associatie (gericht)
   naar: overlijdensakte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -287,7 +284,7 @@ relaties:
 - soort: associatie (gericht)
   naar: naamskeuzeverklaring
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -295,7 +292,7 @@ relaties:
 - soort: associatie (gericht)
   naar: geslachtswijzigingsaangifte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -303,7 +300,7 @@ relaties:
 - soort: associatie (gericht)
   naar: achternaamwijziging
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -311,7 +308,7 @@ relaties:
 - soort: associatie (gericht)
   naar: voornaamwijziging
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -319,7 +316,7 @@ relaties:
 - soort: associatie (gericht)
   naar: huwelijksaangifte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -327,7 +324,7 @@ relaties:
 - soort: associatie (gericht)
   naar: geregistreerd-partnerschapaangifte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -335,7 +332,7 @@ relaties:
 - soort: associatie (gericht)
   naar: huwelijk
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -343,7 +340,7 @@ relaties:
 - soort: associatie (gericht)
   naar: trouwlocatie
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -351,7 +348,7 @@ relaties:
 - soort: associatie (gericht)
   naar: ambtenaar-burgerlijke-stand-aanvragen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -359,7 +356,7 @@ relaties:
 - soort: associatie (gericht)
   naar: geregistreerd-partnerschap-omzetting-in-huwelijk
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -367,7 +364,7 @@ relaties:
 - soort: associatie (gericht)
   naar: geregistreerd-partnerschap-ontbinding
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -375,7 +372,7 @@ relaties:
 - soort: associatie (gericht)
   naar: echtscheiding-inschrijving
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -383,7 +380,7 @@ relaties:
 - soort: associatie (gericht)
   naar: uittreksel-burgerlijke-stand
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -391,7 +388,7 @@ relaties:
 - soort: associatie (gericht)
   naar: bewijs-van-in-leven-zijn
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -399,7 +396,7 @@ relaties:
 - soort: associatie (gericht)
   naar: verklaring-van-huwelijksbevoegdheid
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -424,8 +421,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern

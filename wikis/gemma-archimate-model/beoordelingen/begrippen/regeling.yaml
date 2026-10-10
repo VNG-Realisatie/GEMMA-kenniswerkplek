@@ -199,7 +199,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie (besluit redacteur 2026-09-30).
+    onderbouwing: Het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie (besluit 2026-09-30).
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
   generiek:
@@ -215,9 +215,6 @@ beschrijving:
 per_onderwerp:
   lijkbezorging:
   - De gemeenteraad stelt een beheersverordening begraafplaatsen vast, met de regels voor graven, grafrechten, grafbedekkingen en ruiming; de VNG biedt daarvoor een model (VNG Wet op de lijkbezorging; Groningen). De wet laat de raad verordenen over onder meer de tijden van begraven (art. 35, 90).
-grondslag: regelgeving
-grondslag_toelichting:
-- 'De soort regeling: algemeen verbindende voorschriften (Gemeentewet art. 147, 149); voor dit onderwerp de beheersverordening begraafplaatsen (Groningen, VNG-model).'
 homoniem_van: Regeling (GGM, Inkomen)
 homoniemen:
 - begrip: Regeling
@@ -238,7 +235,7 @@ specialisaties:
   omschrijving: Verordening over de heffing van belastingen en rechten.
   element: heffingsverordening
 naamkeuze:
-- 'Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschrift (Awb). Gekozen is Regeling, in lijn met het GEMMA-element; het GGM-begrip Regeling (Inkomen) is een ander begrip en krijgt hier geen pagina (besluit redacteur 2026-10-01).'
+- 'Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschrift (Awb). Gekozen is Regeling, in lijn met het GEMMA-element; het GGM-begrip Regeling (Inkomen) is een ander begrip en krijgt hier geen pagina (besluit 2026-10-01).'
 besluiten:
 - datum: '2026-09-30'
   besluit: Element op het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; opname akkoord.
@@ -250,17 +247,24 @@ besluiten:
   gevolg: opnemen
   redenen:
   - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+- datum: '2026-10-06'
+  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
+  gevolg: verwerkt
+  stand: geldt; Belanghebbende open (todo)
+- datum: '2026-10-10'
+  besluit: 'Wordt bewerkt zonder toegang: het proces dat een regeling vaststelt of raadpleegt, komt bij het onderwerp Heffingen en betalingen (via de specialisatie Heffingsverordening) of een later onderwerp; tot dan blijft het signaal staan.'
+  gevolg: verwerkt
 relaties:
 - soort: associatie (gericht)
   naar: begraafplaats
   naam: regelt (beheersverordening begraafplaatsen)
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-vng-wet-op-de-lijkbezorging
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: VNG inleiding; Groningen
 onderwerpen:
-- algemeen
+- besluitvorming
 - lijkbezorging
 status: goedgekeurd
 beslist:
@@ -279,7 +283,6 @@ beslist:
     typeregel: 21
   voor_te_leggen:
   - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-vng-wet-op-de-lijkbezorging

@@ -227,7 +227,6 @@ beschrijving:
 - Wie in de gemeente staat ingeschreven, kan een overzicht vragen van de persoonsgegevens die uit de BRP zijn verstrekt en wanneer; het Ministerie van BZK levert de gegevens (vanaf 6 januari 2013), de gemeente stuurt het overzicht met een begeleidende brief per beveiligde e-mail of aangetekende post (Utrecht Persoonsgegevens bekijken). Het overzicht wordt gemaakt met de ProtocolleringsOverzichtModule (LO BRP 1.5.2).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -237,14 +236,14 @@ relaties:
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: geeft overzicht over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
   vindplaats: Aanvragen overzicht
 - soort: realisatie
   naar: brp-inzagerecht-gegevensverstrekking
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen

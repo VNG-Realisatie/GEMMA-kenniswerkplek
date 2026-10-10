@@ -205,7 +205,6 @@ kenmerken:
 definitie: Verantwoordelijkheid van een gemeente voor de bijhouding van de gegevens van de ingezetenen die er hun adres hebben.
 beschrijving:
 - Het college van de gemeente waar een ingezetene zijn adres heeft, is verantwoordelijk voor de bijhouding van zijn gegevens (HUP Achtergronden). Bij een verhuizing naar een andere gemeente wordt die de nieuwe bijhoudingsgemeente; na emigratie blijft de laatste bijhoudingsgemeente verantwoordelijk voor rechtsfeiten van voor de emigratie (HUP Intergemeentelijke adreswijziging; HUP Emigratie).
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen rol voor dit begrip; nieuw voor GEMMA.
@@ -214,7 +213,7 @@ relaties:
 - soort: toewijzing
   naar: bijhouden-persoonsgegevens
   naam: houdt bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -222,7 +221,7 @@ relaties:
 - soort: toewijzing
   naar: inschrijven-ingezetene
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -230,7 +229,7 @@ relaties:
 - soort: toewijzing
   naar: verwerken-adreswijziging
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -238,7 +237,7 @@ relaties:
 - soort: toewijzing
   naar: verwerken-emigratie
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -246,7 +245,7 @@ relaties:
 - soort: toewijzing
   naar: inschrijven-op-briefadres
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -254,7 +253,7 @@ relaties:
 - soort: toewijzing
   naar: uitvoeren-adresonderzoek
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -262,7 +261,7 @@ relaties:
 - soort: toewijzing
   naar: behandelen-verzoek-om-geheimhouding
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -270,7 +269,7 @@ relaties:
 - soort: toewijzing
   naar: verstrekken-persoonsgegevens
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -278,7 +277,7 @@ relaties:
 - soort: toewijzing
   naar: verstrekken-overzicht-gegevensverstrekkingen
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -286,7 +285,7 @@ relaties:
 - soort: toewijzing
   naar: behandelen-verzoek-om-correctie
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -294,7 +293,7 @@ relaties:
 - soort: toewijzing
   naar: behandelen-verzoek-om-verwijdering-van-gegevens
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
@@ -302,11 +301,26 @@ relaties:
 - soort: toewijzing
   naar: wijzigen-identificatienummers
   naam: voert uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: BRP stelsel; Wet BRP art. 1.4 lid 1
+- soort: toewijzing
+  naar: wijzigen-naamgebruik
+  naam: voert uit
+  ggm_match: geen
+  bronnen:
+  - 2026-rvig-hup-wijziging-naamgebruik
+  vindplaats: regel 34, 60
+- soort: toewijzing
+  naar: verwerken-buitenlands-document
+  naam: voert uit
+  ggm_match: geen
+  bronnen:
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  - 2026-rvig-hup-overlijden-buitenland
+  vindplaats: 'Utrecht: Voorwaarden, Na uw afspraak; HUP regel 33'
 status: goedgekeurd
 beslist:
   uitkomst:
@@ -325,5 +339,8 @@ beslist:
   - 2026-rvig-hup-wijzigen-bsn
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-wijziging-naamgebruik
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  - 2026-rvig-hup-overlijden-buitenland
   herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/rollen/bijhoudingsgemeente.md

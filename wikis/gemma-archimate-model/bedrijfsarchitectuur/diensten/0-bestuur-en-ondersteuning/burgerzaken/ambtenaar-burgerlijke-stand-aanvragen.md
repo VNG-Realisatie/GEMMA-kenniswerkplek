@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het laten aanwijzen van een eigen trouwambtenaar voor één dag, voor de voltrekking van het eigen huwelijk of partnerschap.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

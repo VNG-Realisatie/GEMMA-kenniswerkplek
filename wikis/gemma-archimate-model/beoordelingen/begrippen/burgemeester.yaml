@@ -212,7 +212,6 @@ per_onderwerp:
   - De burgemeester draagt zorg voor de lijkbezorging als niemand daarin voorziet, verleent vergunning tot opgraving en verlof tot ontleding, stelt een andere termijn en treft maatregelen bij een besmet stoffelijk overschot (Wet op de lijkbezorging art. 17, 21, 22a, 29, 68).
   burgerzaken:
   - De burgemeester neemt aanvragen voor reisdocumenten in ontvangst van ingezetenen met een adres in zijn gemeente, verstrekt, reikt uit, wijzigt, weigert, verklaart vervallen en houdt in (Paspoortwet art. 26, 40, 42, 43, 44, 50b). Hij besluit tot afgifte van rijbewijzen en reikt ze uit (Wegenverkeerswet 1994 art. 116, 118a, 120a) en ontvangt de aanvraag voor een verklaring omtrent het gedrag, die hij doorzendt aan de minister (Wet justitiële en strafvorderlijke gegevens art. 30).
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: 'Het GEMMA-model kent geen actor Burgemeester (tools/gemma.py kandidaten: geen naamgenoot); nieuw voor GEMMA.'
@@ -220,7 +219,7 @@ relaties:
 - soort: toewijzing
   naar: beslisser
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-paspoortwet-bwbr0005212
@@ -230,26 +229,33 @@ relaties:
 - soort: associatie (gericht)
   naar: gemeenteraad
   naam: is voorzitter van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   vindplaats: art. 9
 - soort: associatie (gericht)
   naar: college-van-b-w
   naam: is voorzitter van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   vindplaats: art. 34 lid 2
 onderwerpen:
-- algemeen
+- bestuur-en-organisatie
 - lijkbezorging
 - burgerzaken
 doelgroep: gemeente
 besluiten:
+- datum: '2026-10-01'
+  besluit: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
+  gevolg: verwerkt
 - datum: '2026-10-05'
   besluit: 'Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.'
   gevolg: verwerkt
+- datum: '2026-10-06'
+  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
+  gevolg: verwerkt
+  stand: geldt; Belanghebbende open (todo)
 status: goedgekeurd
 beslist:
   uitkomst:

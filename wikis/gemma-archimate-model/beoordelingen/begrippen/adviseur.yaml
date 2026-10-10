@@ -204,7 +204,6 @@ kenmerken:
 definitie: Verantwoordelijkheid voor het geven van advies aan wie een besluit neemt.
 beschrijving:
 - Een adviseur geeft een bestuursorgaan vooraf advies over een besluit. De wet bepaalt wanneer advies nodig is, bijvoorbeeld het advies van de GGD aan de burgemeester bij een besmet stoffelijk overschot (Wet op de lijkbezorging art. 22a) of aan het college bij besluiten met belangrijke gevolgen voor de publieke gezondheid (Wet publieke gezondheid art. 16).
-grondslag: bron
 gemma:
   id: id-f3219a6a-532f-482d-897c-dafe0dc70bb0
   sterkte: sterk
@@ -213,7 +212,7 @@ relaties:
 - soort: toewijzing
   naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
   naam: adviseert over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22a

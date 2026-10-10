@@ -126,7 +126,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: 'Het bedrijfsproces Stellen andere termijn: de burgemeester stelt de andere termijn (art. 17; besluit redacteur 2026-10-04).'
+    onderbouwing: 'Het bedrijfsproces Stellen andere termijn: de burgemeester stelt de andere termijn (art. 17; besluit 2026-10-04).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   leidt_tot_gedrag:
@@ -208,7 +208,6 @@ kenmerken:
     onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -229,7 +228,7 @@ relaties:
 - soort: bediening
   naar: degene-die-in-de-lijkbezorging-voorziet
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   vindplaats: § Uitvaart vervroegen, § Uitvaart uitstellen

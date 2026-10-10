@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van bestuur die de ambtsuitoefening van de ambtenaar van de burgerlijke stand, de registers en de inhoud van de akten regelt.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -92,8 +91,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-Het besluit zelf (BWBR0006493), ter uitvoering van titel 4 van Boek 1 BW.
 
 | Korte titel | Bron |
 |---|---|

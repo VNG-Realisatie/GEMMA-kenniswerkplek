@@ -231,7 +231,6 @@ kernobject: stoffelijk-overschot
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -239,7 +238,7 @@ relaties:
 - soort: toegang (registreren)
   naar: beschikking
   naam: stelt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17 lid 1
@@ -247,14 +246,14 @@ relaties:
 - soort: toegang (bijwerken)
   naar: stoffelijk-overschot
   naam: betreft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17 lid 1
 - soort: realisatie
   naar: uitvaart-vervroegen-of-uitstellen
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden

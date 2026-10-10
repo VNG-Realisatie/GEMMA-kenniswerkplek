@@ -26,7 +26,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Het overlijden verandert de toestand van de persoon, de ingeschreven persoon van Bijhouden persoonsgegevens (opschorting van de persoonslijst), en leidt tot de akte van overlijden in Bijhouden burgerlijke stand; Lijkbezorging gebruikt de gebeurtenis voor het stoffelijk overschot dat daarbij ontstaat en houdt haar tekst per onderwerp (regel Thuishoren; besluit redacteur 2026-10-07).
+    onderbouwing: Het overlijden verandert de toestand van de persoon, de ingeschreven persoon van Bijhouden persoonsgegevens (opschorting van de persoonslijst), en leidt tot de akte van overlijden in Bijhouden burgerlijke stand; Lijkbezorging gebruikt de gebeurtenis voor het stoffelijk overschot dat daarbij ontstaat en houdt haar tekst per onderwerp (regel Thuishoren; besluit 2026-10-07).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-rvig-hup-overlijden-nederland
@@ -206,8 +206,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   generiek:
     waarde: nee
-    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke gebeurtenis zoals aanvraag ontvangen (besluit redacteur 2026-10-04); de plaats bij burgerzaken volgt bij dat onderwerp.
-grondslag: bron
+    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke gebeurtenis zoals aanvraag ontvangen (besluit 2026-10-04); de plaats bij burgerzaken volgt bij dat onderwerp.
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -223,28 +222,28 @@ relaties:
 - soort: triggering
   naar: schouwen-stoffelijk-overschot
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 3
 - soort: triggering
   naar: uitvoeren-lijkbezorging
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 16
 - soort: triggering
   naar: bezorgen-stoffelijk-overschot
   naam: start
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 3, 16
 - soort: triggering
   naar: opmaken-akte-van-overlijden
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
@@ -252,7 +251,7 @@ relaties:
 - soort: triggering
   naar: verval-van-het-reisdocument
   naam: doet het reisdocument vervallen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
@@ -269,6 +268,9 @@ besluiten:
   gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: 'Thuisonderwerp Burgerzaken (regel Thuishoren): het overlijden verandert de toestand van de Ingeschreven persoon en wordt vastgelegd in de akte van overlijden (BW 1 art. 19f, 19h); Lijkbezorging gebruikt de gebeurtenis met een relatie, de tekst voor lijkbezorging staat per onderwerp. Het object in Archi blijft.'
+  gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: 'Overlijden leidt tot de akte (Opmaken akte van overlijden, daarna Verlenen verlof) en tot het begraven of cremeren (Uitvoeren lijkbezorging). Bijzetten of verstrooien van de as wordt een deelproces van Uitvoeren lijkbezorging. Schouwen stoffelijk overschot blijft een eigen bedrijfsproces (de schouw gebeurt vóór de aangifte en de aanvraag van het verlof, door een andere rol); de verklaring van overlijden gaat als stroom naar Verlenen verlof (Wlb art. 12). Afgewezen: Schouwen als deelproces van Verlenen verlof.'
   gevolg: verwerkt
 specialisaties:
 - naam: Lijkvinding

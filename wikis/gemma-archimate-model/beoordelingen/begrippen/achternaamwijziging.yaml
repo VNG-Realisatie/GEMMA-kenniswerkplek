@@ -214,7 +214,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het laten opnemen van een bij koninklijk besluit gewijzigde achternaam in de geboorteakte en de basisregistratie personen.
 beschrijving:
-- Het verzoek gaat via Justis; de gemeente heeft een eigen handeling na het besluit en het product wordt daarom opgenomen (besluit redacteur 2026-10-06). De UPL noemt een digitaal kanaal (nr. 5). Grondslag art. 7 BW 1.
+- Het verzoek gaat via Justis; de gemeente heeft een eigen handeling na het besluit en het product wordt daarom opgenomen (besluit 2026-10-06). De UPL noemt een digitaal kanaal (nr. 5). Grondslag art. 7 BW 1.
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
@@ -222,7 +222,6 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

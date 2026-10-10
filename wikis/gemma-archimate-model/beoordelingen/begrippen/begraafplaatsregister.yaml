@@ -127,7 +127,6 @@ kenmerken:
     onderbouwing: De functie Exploiteren van begraafplaatsen, die het register als houder bijhoudt.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-gemma-2026-10-02
   leidt_tot_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -213,7 +212,6 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -237,6 +235,5 @@ beslist:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-vng-gemma-2026-10-02
   herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md

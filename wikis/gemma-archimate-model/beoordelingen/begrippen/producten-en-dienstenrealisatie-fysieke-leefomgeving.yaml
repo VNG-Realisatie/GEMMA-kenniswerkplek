@@ -11,7 +11,6 @@ kenmerken:
     waarde: ja
     onderbouwing: De gemeente levert er de producten in het domein Fysieke leefomgeving mee, waaronder drie producten van lijkbezorging (UPL).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
     - 2025-vng-upl-producten-en-diensten-extern
   buiten_dit_model:
     waarde: nee
@@ -217,7 +216,6 @@ per_onderwerp:
   lijkbezorging:
   - De UPL rekent verlof tot begraven, ontleding stoffelijk overschot toestemming en vervoersdocumenten stoffelijk overschot tot het domein Fysieke leefomgeving; ze vallen niet onder het exploiteren van begraafplaatsen (UPL).
 domein: Fysieke leefomgeving
-grondslag: bron
 gemma:
   id: id-9a066e58-f6b8-4761-8159-2f53b2ccf8c7
   sterkte: exact
@@ -226,35 +224,35 @@ relaties:
 - soort: aggregatie
   naar: verlof-tot-begraven
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 438 (GEMMA-domein Fysieke leefomgeving)
 - soort: aggregatie
   naar: ontleding-stoffelijk-overschot-toestemming
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 306 (GEMMA-domein Fysieke leefomgeving)
 - soort: aggregatie
   naar: vervoersdocumenten-stoffelijk-overschot
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 445 (GEMMA-domein Fysieke leefomgeving)
 - soort: bediening
   naar: verlenen-verlof-tot-ontleding
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 68
 - soort: bediening
   naar: afgeven-laissez-passer
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: art. 11

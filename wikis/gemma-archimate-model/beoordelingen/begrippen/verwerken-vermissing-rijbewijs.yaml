@@ -238,7 +238,6 @@ synoniemen:
   context: wet
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA. Het specialiseert het generieke proces Behandelen aangifte of melding.
@@ -251,7 +250,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: rijbewijs
   naam: registreert vermissing van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
@@ -259,7 +258,7 @@ relaties:
 - soort: realisatie
   naar: vermissing-of-diefstal-rijbewijs-doorgeven
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   vindplaats: Utrecht regel 134-140

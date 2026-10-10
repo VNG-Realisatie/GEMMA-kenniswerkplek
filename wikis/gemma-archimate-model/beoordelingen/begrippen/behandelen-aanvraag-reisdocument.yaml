@@ -224,7 +224,6 @@ kenmerken:
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product.
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-vng-gemma-2026-10-02
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
@@ -243,7 +242,6 @@ synoniemen:
   context: beleid
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA. Het specialiseert het generieke proces Behandelen aanvraag product.
@@ -256,14 +254,14 @@ relaties:
 - soort: toegang (registreren)
   naar: reisdocument
   naam: verstrekt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 1 onder d, 40
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: stelt identiteit en nationaliteit vast
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-paspoortbesluit-bwbr0044308
@@ -271,7 +269,7 @@ relaties:
 - soort: realisatie
   naar: paspoort
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -279,7 +277,7 @@ relaties:
 - soort: realisatie
   naar: paspoort-tweede
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -287,7 +285,7 @@ relaties:
 - soort: realisatie
   naar: zakenpaspoort
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -295,7 +293,7 @@ relaties:
 - soort: realisatie
   naar: vluchtelingenpaspoort
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -303,7 +301,7 @@ relaties:
 - soort: realisatie
   naar: vreemdelingenpaspoort
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -311,7 +309,7 @@ relaties:
 - soort: realisatie
   naar: identiteitskaart
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -319,14 +317,14 @@ relaties:
 - soort: toegang (bijwerken)
   naar: reisdocument
   naam: reikt uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 1 onder e, 42
 - soort: stroom
   naar: bijhouden-persoonsgegevens
   naam: geeft uitgereikt reisdocument door aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
   - 2026-rvig-hup-reisdocument
@@ -368,7 +366,6 @@ beslist:
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   - 2026-rijk-paspoortbesluit-bwbr0044308
   - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-vng-gemma-2026-10-02
   - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
   - 2026-rvig-hup-reisdocument
   herkomst: rijksregelgeving

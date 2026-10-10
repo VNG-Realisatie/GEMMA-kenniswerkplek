@@ -222,7 +222,6 @@ kenmerken:
     onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -247,7 +246,7 @@ relaties:
 - soort: toegang (raadplegen)
   naar: vergunning
   naam: vereist
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 11
@@ -255,35 +254,35 @@ relaties:
 - soort: toegang (bijwerken)
   naar: stoffelijk-overschot
   naam: bezorgt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 1
 - soort: toegang (bijwerken)
   naar: graf
   naam: begraaft in, zet bij in of op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 23 lid 2; art. 62 lid 1 b, 3
 - soort: toegang (raadplegen)
   naar: begraafplaats
   naam: geschiedt op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 23 lid 1
 - soort: toegang (raadplegen)
   naar: crematorium
   naam: geschiedt in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 49
 - soort: toegang (bijwerken)
   naar: urn
   naam: zet bij of verstrooit de as uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 59 lid 2

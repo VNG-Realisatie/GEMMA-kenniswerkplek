@@ -228,7 +228,6 @@ beschrijving:
 - De burger kan verstrekking aan overheidsorganen op grond van een autorisatiebesluit niet tegenhouden, maar wel schriftelijk verzoeken geen gegevens te verstrekken aan bepaalde derden (HUP Verstrekkingsbeperking). Het verzoek is vormvrij en hoeft niet te worden gemotiveerd; de gemeente stelt de identiteit vast, verwerkt het binnen vier weken, bevestigt het schriftelijk en weigert het niet als de juiste persoon het doet (HUP Verstrekkingsbeperking). Online kan het met DigiD binnen vijf werkdagen; de geheimhouding verhuist mee naar een nieuwe gemeente (Utrecht Persoonsgegevens geheimhouden).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -241,7 +240,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: ingeschreven-persoon
   naam: tekent geheimhouding aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-verstrekkingsbeperking
   - 2026-rijk-wet-brp-bwbr0033715
@@ -249,7 +248,7 @@ relaties:
 - soort: realisatie
   naar: brp-geheimhoudingsverzoek
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden

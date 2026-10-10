@@ -28,7 +28,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het kernobject Verklaring omtrent het gedrag is van dit onderwerp (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: het kernobject Verklaring omtrent het gedrag is van dit onderwerp (UPL taakveld 0.2, besluit 2026-10-07).'
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2025-vng-upl-producten-en-diensten-extern
@@ -223,12 +223,11 @@ definitie: Het ontvangen en onderzoeken van een aanvraag voor een verklaring omt
 beschrijving:
 - In het Europese deel van Nederland ontvangt de burgemeester de aanvraag van een natuurlijk persoon die als ingezetene in zijn gemeente staat, onderzoekt hij de volledigheid van de gegevens, verschaft hij zich zekerheid over de identiteit en zendt hij de aanvraag terstond door aan de minister; de gemeente kan een vergoeding verlangen en is de minister een vergoeding verschuldigd (Wet justitiële en strafvorderlijke gegevens art. 30, 39).
 - 'Het is een keten in het orkestratiemodel: de minister van Justitie en Veiligheid, in de praktijk Justis, onderzoekt de justitiële gegevens en politiegegevens, neemt de aanvraag zo nodig niet in behandeling, weigert of geeft af, en beslist binnen vier weken (art. 34 tot en met 37; Utrecht). Een aanvraag van een rechtspersoon, van wie niet als inwoner in de BRP staat ingeschreven of die een werkgever rechtstreeks bij Justis doet, loopt buiten de gemeente om (art. 30 lid 1, 31; Utrecht).'
-- Het deel van de gemeente is het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag; het deel van de minister staat alleen in deze beschrijving (besluit redacteur 2026-10-07).
+- Het deel van de gemeente is het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag; het deel van de minister staat alleen in deze beschrijving (besluit 2026-10-07).
 naamkeuze:
 - 'Infinitief met object in GEMMA-volgorde, naar de afgifte in de wet (art. 28, 37): het proces omvat de levensloop van de verklaring waarbij gemeente en minister handelen, van aanvraag tot afgifte of weigering. Beheren is niet gekozen: de verklaring wordt niet bijgehouden en heeft geen latere gebeurtenissen.'
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor de verklaring omtrent het gedrag. Nieuw voor GEMMA.
@@ -238,21 +237,21 @@ relaties:
 - soort: toegang (registreren)
   naar: verklaring-omtrent-het-gedrag
   naam: ontvangt de aanvraag voor, onderzoekt en geeft af
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 30, 35, 37
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: toetst de inschrijving in de basisregistratie personen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 30 lid 1
 - soort: aggregatie
   naar: behandelen-aanvraag-verklaring-omtrent-het-gedrag
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 30, 39

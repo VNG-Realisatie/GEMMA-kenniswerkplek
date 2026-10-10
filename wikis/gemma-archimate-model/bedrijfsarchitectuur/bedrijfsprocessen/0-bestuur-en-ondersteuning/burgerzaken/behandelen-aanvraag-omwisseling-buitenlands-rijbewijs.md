@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het in ontvangst nemen van een aanvraag om een buitenlands rijbewijs om te wisselen en het doorgeleiden ervan naar de RDW, die beslist.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

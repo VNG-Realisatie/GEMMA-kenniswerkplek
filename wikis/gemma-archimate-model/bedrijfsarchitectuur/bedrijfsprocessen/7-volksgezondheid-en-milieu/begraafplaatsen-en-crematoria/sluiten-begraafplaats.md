@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het besluit dat op een begraafplaats niet meer wordt begraven, of de geslotenverklaring na tien jaar zonder begraving.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

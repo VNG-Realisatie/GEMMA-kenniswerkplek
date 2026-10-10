@@ -7,7 +7,6 @@ naam: Rechthebbende op het graf
 onderwerpen:
 - lijkbezorging
 definitie: Wie het grafrecht op een particulier graf heeft en bepaalt wie daarin wordt begraven of bijgezet.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -44,7 +43,7 @@ De rechthebbende bepaalt wie in het particulier graf wordt begraven (art. 23 lid
 
 ### Naamkeuze
 
-Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, art. 23, 28), Rechthebbende grafrecht. Gekozen is Rechthebbende op het graf (besluit redacteur 2026-09-30), omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief: iemand die rechten heeft op een goed).
+Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, art. 23, 28), Rechthebbende grafrecht. Gekozen is Rechthebbende op het graf (besluit 2026-09-30), omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief: iemand die rechten heeft op een goed).
 
 ### Homoniemen
 

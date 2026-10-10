@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het opmaken en bijhouden van de akten van de burgerlijke stand in de registers van de gemeente, van opmaken tot latere vermelding en afgifte.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

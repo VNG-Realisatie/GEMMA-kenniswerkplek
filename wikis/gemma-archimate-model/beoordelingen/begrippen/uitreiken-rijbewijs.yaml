@@ -231,7 +231,6 @@ synoniemen:
   context: wet
 - naam: Rijbewijs ophalen
   context: beleid
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.

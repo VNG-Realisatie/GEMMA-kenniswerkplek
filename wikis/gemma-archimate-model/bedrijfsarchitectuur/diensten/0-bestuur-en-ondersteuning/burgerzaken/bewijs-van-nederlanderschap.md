@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het verkrijgen van een bewijs dat iemand de Nederlandse nationaliteit bezit, als uittreksel uit de basisregistratie personen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

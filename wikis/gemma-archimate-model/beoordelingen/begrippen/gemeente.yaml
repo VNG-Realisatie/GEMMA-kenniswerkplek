@@ -45,7 +45,7 @@ kenmerken:
     - 2024-rijk-gemeentewet-wettekst
   hoedanigheid:
     waarde: nee
-    onderbouwing: 'Een partij, geen verantwoordelijkheid: de verantwoordelijkheden van de gemeente zijn de rollen die zij vervult (besluit redacteur 2026-10-04).'
+    onderbouwing: 'Een partij, geen verantwoordelijkheid: de verantwoordelijkheden van de gemeente zijn de rollen die zij vervult (besluit 2026-10-04).'
   samenwerkingsverband:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
@@ -81,7 +81,7 @@ kenmerken:
     onderbouwing: Een actor hangt via zijn rollen aan gedrag.
   soort_partij:
     waarde: ja
-    onderbouwing: Elke gemeente; een soort partij, geen individuele gemeente (besluit redacteur 2026-10-04).
+    onderbouwing: Elke gemeente; een soort partij, geen individuele gemeente (besluit 2026-10-04).
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
   ontsluit_een_dienst:
@@ -234,76 +234,79 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Geen GEMMA-match: de actor Gemeente is een gemeente als rechtspersoon, de GEMMA-rol Gemeente is de verantwoordelijkheid die gemeenten hebben (doelgroep van applicatieservices). Het onderscheid staat in definitie, beschrijving en homoniemen.'
   gevolg: verwerkt
-grondslag: bron
+- datum: '2026-10-06'
+  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
+  gevolg: verwerkt
+  stand: geldt; Belanghebbende open (todo)
 gemma:
   sterkte: geen
-  onderbouwing: 'De GEMMA-rol Gemeente staat voor de verantwoordelijkheid die gemeenten hebben, en ordent als doelgroep de applicatieservices voor de medewerkers van de gemeente. Dit element is de gemeente als rechtspersoon, een actor: een ander begrip en een ander type, dus geen koppeling (besluit redacteur 2026-10-04).'
+  onderbouwing: 'De GEMMA-rol Gemeente staat voor de verantwoordelijkheid die gemeenten hebben, en ordent als doelgroep de applicatieservices voor de medewerkers van de gemeente. Dit element is de gemeente als rechtspersoon, een actor: een ander begrip en een ander type, dus geen koppeling (besluit 2026-10-04).'
 relaties:
 - soort: toewijzing
   naar: houder-van-de-begraafplaats
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 33, 39 lid 2
 - soort: toewijzing
   naar: houder-van-het-crematorium
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 51
 - soort: toewijzing
   naar: houder-van-een-plaats-van-bijzetting
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 62 lid 1
 - soort: toewijzing
   naar: kostendrager
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22
 - soort: aggregatie
   naar: gemeenteraad
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   vindplaats: art. 6
 - soort: aggregatie
   naar: college-van-b-w
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   vindplaats: art. 6
 - soort: aggregatie
   naar: burgemeester
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   vindplaats: art. 6
 - soort: toewijzing
   naar: bijhoudingsgemeente
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   vindplaats: BRP stelsel
 - soort: toewijzing
   naar: rni-loket
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
   vindplaats: Inschrijven RNI
 onderwerpen:
-- algemeen
+- bestuur-en-organisatie
 - lijkbezorging
 - burgerzaken
 doelgroep: gemeente

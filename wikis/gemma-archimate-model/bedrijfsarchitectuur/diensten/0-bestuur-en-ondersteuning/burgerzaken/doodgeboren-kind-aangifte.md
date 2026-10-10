@@ -10,7 +10,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het doen van aangifte van een levenloos geboren kind bij de gemeente van geboorte, waarna de gemeente een akte opmaakt.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -7,7 +7,6 @@ naam: Kerkgenootschap
 onderwerpen:
 - lijkbezorging
 definitie: Kerkelijke gemeenschap, met inbegrip van haar zelfstandige onderdelen en de lichamen waarin kerkgenootschappen zijn verenigd.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

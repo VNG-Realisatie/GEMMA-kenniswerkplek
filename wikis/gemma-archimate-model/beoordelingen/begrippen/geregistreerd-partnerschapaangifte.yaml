@@ -206,7 +206,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 158), apart van de huwelijksaangifte; de UPL noemt varianten apart (besluit redacteur 2026-10-06).
+    onderbouwing: Een eigen product in de UPL (nr. 158), apart van de huwelijksaangifte; de UPL noemt varianten apart (besluit 2026-10-06).
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
   generiek:
@@ -225,7 +225,6 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

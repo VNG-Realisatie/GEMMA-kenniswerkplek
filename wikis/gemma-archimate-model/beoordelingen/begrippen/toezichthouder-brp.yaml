@@ -199,7 +199,6 @@ kenmerken:
 definitie: Verantwoordelijkheid voor het toezicht op de juistheid van de inschrijving in de basisregistratie personen, onder meer met een huisbezoek.
 beschrijving:
 - De toezichthouder BRP heeft de bevoegdheid inlichtingen op te vragen en legt bij een adresonderzoek huisbezoeken af; het college kan ook externen tot onbezoldigd ambtenaar en toezichthouder benoemen (Circulaire adresonderzoek 4.4, 4.5).
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen rol voor dit begrip; nieuw voor GEMMA.
@@ -211,7 +210,7 @@ relaties:
 - soort: toewijzing
   naar: uitvoeren-adresonderzoek
   naam: legt huisbezoek af
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-rijk-wet-brp-bwbr0033715

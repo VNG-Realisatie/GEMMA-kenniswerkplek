@@ -31,7 +31,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij Burgerzaken: de aangifte wordt gedaan bij de ambtenaar van de burgerlijke stand en leidt tot de akte van overlijden (BW 1 art. 19f, 19h; besluit redacteur 2026-10-06).'
+    onderbouwing: 'Hoort bij Burgerzaken: de aangifte wordt gedaan bij de ambtenaar van de burgerlijke stand en leidt tot de akte van overlijden (BW 1 art. 19f, 19h; besluit 2026-10-06).'
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2025-vng-upl-producten-en-diensten-extern
@@ -231,7 +231,7 @@ synoniemen:
 - naam: Overlijden, aangifte doen
   context: beleid
 naamkeuze:
-- De UPL-naam letterlijk (regel Naamvorm, besluit redacteur 2026-10-05); de wetsterm aangifte van overlijden (BW 1 art. 19h), tot 2026-10-07 de naam van deze beoordeling, is een synoniem.
+- De UPL-naam letterlijk (regel Naamvorm, besluit 2026-10-05); de wetsterm aangifte van overlijden (BW 1 art. 19h), tot 2026-10-07 de naam van deze beoordeling, is een synoniem.
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst voor de aangifte van overlijden; nieuw voor GEMMA.
@@ -241,7 +241,6 @@ bronnen:
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

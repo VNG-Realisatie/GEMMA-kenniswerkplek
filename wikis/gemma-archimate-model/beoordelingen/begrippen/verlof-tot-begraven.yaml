@@ -214,7 +214,6 @@ afnemer: extern
 domein: Fysieke leefomgeving
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -222,7 +221,7 @@ relaties:
 - soort: bediening
   naar: degene-die-in-de-lijkbezorging-voorziet
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het bijwonen van de ceremonie waarin een nieuwe Nederlander de verklaring van verbondenheid aflegt en de bevestiging of het besluit ontvangt.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

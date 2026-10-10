@@ -1,7 +1,7 @@
 ---
 id: 2026-vng-gemma-proceshierarchie
 type: bronanalyse
-onderwerp: algemeen
+onderwerp: kern
 bronnen:
 - 2026-vng-gemma-proceshierarchie
 relevant: ja

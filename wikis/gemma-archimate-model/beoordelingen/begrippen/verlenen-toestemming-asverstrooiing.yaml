@@ -237,7 +237,6 @@ kernobject: urn
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -245,7 +244,7 @@ relaties:
 - soort: toegang (registreren)
   naar: vergunning
   naam: verleent
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-groningen-algemene-plaatselijke-verordening
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -254,14 +253,14 @@ relaties:
 - soort: toegang (bijwerken)
   naar: urn
   naam: betreft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-groningen-algemene-plaatselijke-verordening
   vindplaats: art. 5:27 lid 3
 - soort: realisatie
   naar: asverstrooiing
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-groningen-algemene-plaatselijke-verordening
   - 2025-vng-upl-producten-en-diensten-extern
@@ -269,9 +268,9 @@ relaties:
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt
-  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (docs/indelingen.md).
+  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL.
 - datum: '2026-10-08'
-  besluit: 'Vervalt (regel Wettelijke grondslag, besluit 3 in docs/wettelijke-grondslag.md): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Asverstrooiing (UPL nr. 32), met grondslag in de Model-APV art. 5:36. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
+  besluit: 'Vervalt (regel Wettelijke grondslag): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Asverstrooiing (UPL nr. 32), met grondslag in de Model-APV art. 5:36. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
 toelichting: 'Vervalt: geen landelijke wettelijke grondslag. Het proces realiseerde de dienst Asverstrooiing (UPL nr. 32), met grondslag in de Model-APV art. 5:36; zo''n UPL-product blijft, maar wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen (regel Wettelijke grondslag).'
 status: afgewezen

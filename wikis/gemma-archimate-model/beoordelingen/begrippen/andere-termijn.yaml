@@ -226,3 +226,7 @@ beslist:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
   herkomst: rijksregelgeving
+besluiten:
+- datum: '2026-10-06'
+  besluit: 'Vastgelegd als homoniemen (regel Eén element in het hele model): het besluit of document zelf is een specialisatie zonder pagina (van Beschikking, van Vergunning), de dienst heet Uitvaart vervroegen of uitstellen en Vervoersdocumenten stoffelijk overschot en houdt de term als synoniem (wet).'
+  gevolg: verwerkt

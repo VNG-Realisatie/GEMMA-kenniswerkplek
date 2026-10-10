@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Hoedanigheid van degene op wiens naam een reisdocument is of wordt gesteld en die het aanvraagt, ophaalt, vermissing meldt en inlevert.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -237,7 +237,6 @@ synoniemen:
   context: beleid
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -245,14 +244,14 @@ relaties:
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: toetst aan de basisregistratie personen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 35
 - soort: realisatie
   naar: naturalisatieverzoek
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
@@ -260,14 +259,14 @@ relaties:
 - soort: toegang (registreren)
   naar: nederlanderschap
   naam: doet in werking treden
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 60a lid 1, 60b lid 1
 - soort: realisatie
   naar: naturalisatieceremonie
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
@@ -275,7 +274,7 @@ relaties:
 - soort: triggering
   naar: verkrijging-van-het-nederlanderschap
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het lichaam van een overledene of doodgeborene.
-grondslag: bron
 match:
   ggm: geen
   gemma: geen
@@ -45,7 +44,7 @@ Het stoffelijk overschot wordt geschouwd, begraven, gecremeerd of ontleed, en so
 
 ### Naamkeuze
 
-Stoffelijk overschot is de term van de Uniforme Productenlijst ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk ([2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md)). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet (besluit redacteur 2026-10-05).
+Stoffelijk overschot is de term van de Uniforme Productenlijst ([2025-vng-upl-producten-en-diensten-extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk ([2026-rvo-aangifte-en-akte-van-overlijden](../../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md)). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet (besluit 2026-10-05).
 
 ## Plaats in het model
 
@@ -84,7 +83,6 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 |---|---|---|---|
 | [Afgeven laissez-passer](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/afgeven-laissez-passer.md) | betreft *toegang (bijwerken)* | Stoffelijk overschot | [Besluit op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) (art. 11 lid 1) |
 | [Begraven en cremeren stoffelijk overschot](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraven-en-cremeren-stoffelijk-overschot.md) | begraaft of cremeert *toegang (bijwerken)* | Stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 23, 49) |
-| [Besmet stoffelijk overschot gemeld](../../../gebeurtenissen/besmet-stoffelijk-overschot-gemeld.md) | betreft *associatie (gericht)* (*niet in het kennismodel, gaat niet mee in de export*) | Stoffelijk overschot | [Wet publieke gezondheid](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) (art. 21 lid 2) |
 | [Bezorgen stoffelijk overschot](../../../bedrijfsinteracties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bezorgen-stoffelijk-overschot.md) | bezorgt *toegang (bijwerken)* | Stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 1) |
 | [Gemeentebegrafenis](gemeentebegrafenis.md) | betreft *associatie (gericht)* | Stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 21) |
 | [Opgraven stoffelijk overschot](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-stoffelijk-overschot.md) | graaft op *toegang (bijwerken)* | Stoffelijk overschot | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29) |
@@ -115,3 +113,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-05: Naam Stoffelijk overschot, de term van de UPL; Lijk (wet, beheersverordening, VNG) wordt een synoniem.
+- 2026-10-08: Eén levensloopproces per partij: Toestaan lijkbezorging (de gemeente als overheid) en Begraven en cremeren stoffelijk overschot (de houder) blijven allebei levensloopproces van Stoffelijk overschot. Afgewezen: één levensloopproces Bezorgen stoffelijk overschot met de tien bedrijfsprocessen, en Toestaan lijkbezorging als enige levensloopproces.

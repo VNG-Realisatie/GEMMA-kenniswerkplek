@@ -7,7 +7,6 @@ naam: Toezichthouder BRP
 onderwerpen:
 - burgerzaken
 definitie: Verantwoordelijkheid voor het toezicht op de juistheid van de inschrijving in de basisregistratie personen, onder meer met een huisbezoek.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -213,7 +213,6 @@ synoniemen:
   context: wet
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen rol voor dit begrip; nieuw voor GEMMA.
@@ -224,7 +223,7 @@ relaties:
 - soort: toewijzing
   naar: behandelen-aanvraag-reisdocument
   naam: vraagt aan, haalt op en levert oude documenten in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -232,7 +231,7 @@ relaties:
 - soort: toewijzing
   naar: verwerken-vermissing-reisdocument
   naam: meldt vermissing
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
@@ -240,7 +239,7 @@ relaties:
 - soort: toewijzing
   naar: inhouden-reisdocument
   naam: levert in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing
@@ -248,14 +247,14 @@ relaties:
 - soort: toegang (houder)
   naar: reisdocument
   naam: is houder van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 1 onder f
 - soort: toewijzing
   naar: behandelen-aanvraag-reisdocument-niet-ingezetene
   naam: vraagt aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 3.2

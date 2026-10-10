@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het nemen van maatregelen om gevaar voor de volksgezondheid door een besmet stoffelijk overschot af te wenden.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -117,5 +116,6 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
+- 2026-10-04: Specialiseren zelf een GEMMA-proces: *Behandelen melding*, *Behandelen aanvraag product* en *Onderhouden*. Vervallen verklaren grafrecht niet naar *Opleggen sanctie*: het verval volgt uit de afspraak, niet uit handhaving. *Stand: geldt; Onderhouden graf vervallen 2026-10-08 (regel Wettelijke grondslag)*
 - 2026-10-04: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
 - 2026-10-05: Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).

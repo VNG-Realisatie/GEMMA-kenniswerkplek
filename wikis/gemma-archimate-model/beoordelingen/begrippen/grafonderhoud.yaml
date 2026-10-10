@@ -210,7 +210,6 @@ kenmerken:
     onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -221,7 +220,7 @@ relaties:
 - soort: bediening
   naar: rechthebbende-op-het-graf
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 23, 24 lid 3

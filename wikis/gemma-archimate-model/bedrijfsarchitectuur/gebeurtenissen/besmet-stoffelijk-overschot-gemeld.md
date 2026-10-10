@@ -7,7 +7,6 @@ naam: Besmet stoffelijk overschot gemeld
 onderwerpen:
 - lijkbezorging
 definitie: De burgemeester heeft van de GGD de melding ontvangen dat een stoffelijk overschot besmet is met gevaar voor de volksgezondheid.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -75,7 +74,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Besmet stoffelijk overschot gemeld | leidt tot *triggering* | [Treffen maatregel bij besmet stoffelijk overschot](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Wet publieke gezondheid](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) (Wlb art. 22a; Wpg art. 27 lid 3) |
-| Besmet stoffelijk overschot gemeld | betreft *associatie (gericht)* (*niet in het kennismodel, gaat niet mee in de export*) | [Stoffelijk overschot](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md) | [Wet publieke gezondheid](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) (art. 21 lid 2) |
 
 #### Inkomend
 
@@ -99,3 +97,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-05: Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).
+- 2026-10-10: De relatie *betreft* naar Stoffelijk overschot vervalt: het object volgt uit de indeling onder het levensloopproces Toestaan lijkbezorging, met kernobject Stoffelijk overschot (kennismodel: een gebeurtenis hangt niet direct aan een object).

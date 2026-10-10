@@ -1,4 +1,4 @@
-# Archi-objecten: welk bestaand object een element voortzet na hernoemen, samenvoegen of splitsen (besluit redacteur 2026-10-05).
+# Archi-objecten: welk bestaand object een element voortzet na hernoemen, samenvoegen of splitsen.
 # De export geeft het element en zijn relaties de id's van het object van `object_van`, zodat views in Archi blijven werken.
 # Hernoemd: altijd. Samengevoegd: de redacteur kiest of en welk object blijft. Gesplitst: de redacteur kiest of en welk deel het object krijgt.
 objecten:

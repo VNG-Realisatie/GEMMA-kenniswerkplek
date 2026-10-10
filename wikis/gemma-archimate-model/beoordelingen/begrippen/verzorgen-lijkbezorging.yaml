@@ -79,12 +79,12 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   groepeert_processen:
     waarde: ja
-    onderbouwing: Groepeert de processen rond de gemeentelijke taak lijkbezorging en wordt niet per geval doorlopen (besluit redacteur 2026-10-04).
+    onderbouwing: Groepeert de processen rond de gemeentelijke taak lijkbezorging en wordt niet per geval doorlopen (besluit 2026-10-04).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gegroepeerd_gedrag:
     waarde: nee
-    onderbouwing: 'Geen functie meer: de taak groepeert processen (besluit redacteur 2026-10-04).'
+    onderbouwing: 'Geen functie meer: de taak groepeert processen (besluit 2026-10-04).'
   toestandsverandering:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -209,8 +209,11 @@ beschrijving:
 - 'Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze (Wet op de lijkbezorging art. 1). De gemeente schouwt stoffelijke overschotten via de gemeentelijke lijkschouwer, geeft het verlof tot begraving of crematie af, heeft ten minste één gemeentelijke begraafplaats, geeft graven uit, staat opgraving en ruiming toe en draagt zorg voor de lijkbezorging als niemand daarin voorziet (art. 4, 11, 21, 28, 29, 31, 33). De taak groepeert de processen daarvoor, één per kernobject: het stoffelijk overschot, de gemeentebegrafenis, het grafrecht, het graf, de begraafplaats en het crematorium.'
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 besluiten:
+- datum: '2026-09-30'
+  besluit: '*Herzien op 2026-10-04.* Overkoepelende bedrijfsfunctie voor de gemeentelijke taken rond de lijkbezorging.'
+  gevolg: verwerkt
+  stand: herzien door 2026-10-04 (Verzorgen lijkbezorging), vervallen 2026-10-08
 - datum: '2026-09-30'
   besluit: Overkoepelende bedrijfsfunctie voor de gemeentelijke taken rond de lijkbezorging.
   gevolg: verwerkt
@@ -227,47 +230,47 @@ besluiten:
   - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
 gemma:
   sterkte: geen
-  onderbouwing: Het GEMMA-model kent geen taak voor de lijkbezorging. De partiële match met de functie Exploiteren van begraafplaatsen vervalt; die functie is een eigen element dat de processen bedient (besluit redacteur 2026-10-04).
+  onderbouwing: Het GEMMA-model kent geen taak voor de lijkbezorging. De partiële match met de functie Exploiteren van begraafplaatsen vervalt; die functie is een eigen element dat de processen bedient (besluit 2026-10-04).
 relaties:
 - soort: aggregatie
   naar: bezorgen-stoffelijk-overschot
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 1–22a
 - soort: aggregatie
   naar: beheren-grafrechten
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 28
 - soort: aggregatie
   naar: beheren-graven
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 23, 27, 31
 - soort: aggregatie
   naar: beheren-begraafplaatsen
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 33–47
 - soort: aggregatie
   naar: beheren-crematoria
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 50–56
 - soort: aggregatie
   naar: verzorgen-gemeentebegrafenis
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 20–22

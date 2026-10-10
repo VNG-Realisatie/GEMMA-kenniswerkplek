@@ -5,10 +5,9 @@ archimate_type: business-actor
 status: goedgekeurd
 naam: Gemeenteraad
 onderwerpen:
-- algemeen
+- bestuur-en-organisatie
 - lijkbezorging
 definitie: Bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt.
-grondslag: bron
 match:
   gemma: exact
 data_object: nee
@@ -112,3 +111,8 @@ Match **exact** met GEMMA-element *Gemeenteraad* (business-actor). Zelfde begrip
 GEMMA-terugmeldingen:
 
 - [Nummer 2](../../terugmeldingen/gemma-terugmeldingen.md) (definitie, open): **GEMMA:** de rol Kiezer en de actoren Gemeenteraad, College en Rijk hebben geen definitie ([2026-vng-gemma-2026-10-02](../../../../sources/raw/2026-vng-gemma-2026-10-02.md)). Rijk heeft ook geen relaties. **Bevinding:** de wiki heeft deze vier elementen aan GEMMA gekoppeld. De import vult dus de definities in en hernoemt College naar College van B&W, want "College" kan meerdere organen bedoelen. **Voorstel:** controleer de definities en de nieuwe naam bij de import: Kiezer: wie kiesgerechtigd en als kiezer geregistreerd is en bij een verkiezing mag stemmen; Gemeenteraad: het bestuursorgaan dat de bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt; College van B&W: het dagelijks bestuur, de burgemeester en de wethouders; Rijk: de Staat der Nederlanden als bestuurslaag, met zijn ministers en rijksdiensten, en de relaties daarvan.
+
+### Besluiten redacteur
+
+- 2026-10-01: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
+- 2026-10-06: Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd. *Stand: geldt; Belanghebbende open (todo)*

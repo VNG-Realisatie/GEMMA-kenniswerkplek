@@ -213,9 +213,6 @@ beleidsdomein: Burgerzaken
 per_onderwerp:
   burgerzaken:
   - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de diensten Naturalisatieoptie, Naturalisatieverzoek en Verklaring van afstand Nederlandse nationaliteit (UPL nr. 262, 263, 436), gerealiseerd door bedrijfsprocessen onder het levensloopproces Beheren Nederlanderschap.'
-grondslag: regelgeving
-grondslag_toelichting:
-- De regeling zelf (2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
@@ -223,7 +220,7 @@ relaties:
 - soort: associatie (gericht)
   naar: naturalisatieoptie
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2025-vng-upl-producten-en-diensten-extern
@@ -231,7 +228,7 @@ relaties:
 - soort: associatie (gericht)
   naar: naturalisatieverzoek
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2025-vng-upl-producten-en-diensten-extern
@@ -239,7 +236,7 @@ relaties:
 - soort: associatie (gericht)
   naar: verklaring-van-afstand-nederlandse-nationaliteit
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2025-vng-upl-producten-en-diensten-extern
@@ -247,11 +244,14 @@ relaties:
 - soort: associatie (gericht)
   naar: beheren-nederlanderschap
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   vindplaats: art. 6, 7, 15, 21
 besluiten:
+- datum: '2026-10-07'
+  besluit: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap (optie, naturalisatie, afstand) en van Beheren stempassen en Registreren kiesgerechtigdheid.
+  gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap, de optie, de naturalisatie en de afstand.
   gevolg: opnemen
@@ -269,8 +269,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2025-vng-upl-producten-en-diensten-extern

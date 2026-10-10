@@ -39,7 +39,6 @@ def _element(begrip: str, ja: set[str], **extra) -> dict:
         "beschrijving": [f"{begrip} volgens {WET}."],
         "taakveld": "8 Wonen",
         "beleidsdomein": "Vergunningen",
-        "grondslag": "bron",
         "gemma": {"sterkte": "geen", "onderbouwing": "Niet in GEMMA."},
         **extra,
     }
@@ -50,7 +49,7 @@ def _bo(**extra) -> dict:
 
 
 def _proces(**extra) -> dict:
-    relatie = {"soort": "toegang (registreren)", "naar": "beschikking", "naam": "stelt vast", "grondslag": "bron",
+    relatie = {"soort": "toegang (registreren)", "naar": "beschikking", "naam": "stelt vast", "ggm_match": "geen",
                "bronnen": [WET], "vindplaats": "art. 2"}
     return _element("Behandelen aanvraag", PROCES, relaties=[relatie], kernobject="beschikking", afnemer="extern",
                     **extra)
@@ -92,7 +91,7 @@ def test_beoordelingen_worden_paginas_met_relaties_in_beide_richtingen(wiki):
 
 
 def _rel(soort: str, naar: str) -> dict:
-    return {"soort": soort, "naar": naar, "grondslag": "bron", "bronnen": [WET], "vindplaats": "art. 3"}
+    return {"soort": soort, "naar": naar, "ggm_match": "geen", "bronnen": [WET], "vindplaats": "art. 3"}
 
 
 def test_elk_paginatype_wordt_afgeleid_en_gerenderd(wiki):
@@ -158,16 +157,17 @@ def test_beslissen_en_render_zijn_idempotent_en_check_vangt_handwerk(wiki):
     assert render.main(["--wiki", str(wiki), "--check"]) == 0
 
 
-def test_regelgeving_blijft_kandidaat_tot_de_redacteur_beslist(wiki):
-    _schrijf(wiki, "beschikking", _bo(grondslag="regelgeving", grondslag_toelichting=["Gemeentewet art. 147."]))
+def test_gegevensobject_zonder_ggm_blijft_kandidaat_tot_de_redacteur_beslist(wiki):
+    _schrijf(wiki, "beschikking", _element("Beschikking", BO | {"generiek", "geautomatiseerd_verwerkt"},
+                                           ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}))
     _beslissen(wiki)
     data = _lees(wiki, "beschikking")
     assert data["status"] == "kandidaat"
-    assert data["beslist"]["open"] == [bt.REDEN_REGELGEVING]
+    assert data["beslist"]["open"] == [bt.REDEN_GEEN_GGM]
     assert "## Ter discussie" in (wiki / data["beslist"]["pad"]).read_text(encoding="utf-8")
 
     data["besluiten"] = [{"datum": "2026-10-01", "besluit": "Opnemen.", "gevolg": "opnemen",
-                          "redenen": [bt.REDEN_REGELGEVING]}]
+                          "redenen": [bt.REDEN_GEEN_GGM]}]
     _schrijf(wiki, "beschikking", data)
     _beslissen(wiki)
     assert _lees(wiki, "beschikking")["status"] == "review"
@@ -322,6 +322,36 @@ def test_kenmerk_ja_zonder_kernrelatie_is_een_signaal(wiki):
     assert any("beschikking" in w and "kenmerk wordt_bewerkt is ja" in w for w in res.waarschuwingen)
     _schrijf(wiki, "behandelen-aanvraag", _proces())
     assert not any("beschikking: kenmerk wordt_bewerkt" in w for w in beslissen.beslissen(wiki).waarschuwingen)
+
+
+
+def test_kernrelatie_telt_ook_eronder():
+    """Een kernrelatie mag liggen bij wat het element omvat of bedient, bij een specialisatie of bij een gebeurtenis die
+    het triggert (regel Beslistabel beslist)."""
+    import signalen
+    rel = lambda van, soort, naar, doel="bedrijfsproces": (van, {"soort": soort, "naar": naar}, "x", doel)  # noqa: E731
+    relaties = [rel("levensloop", "aggregatie", "proces"), rel("functie", "bediening", "levensloop"),
+                rel("beschikking", "specialisatie", "besluit"), rel("verval", "triggering", "inlevering", "gebeurtenis"),
+                rel("inlevering", "triggering", "inhouden"), rel("rol", "toewijzing", "proces")]
+    assert signalen._eronder("functie", relaties) == {"functie", "levensloop", "proces"}
+    assert signalen._eronder("besluit", relaties) == {"besluit", "beschikking"}
+    assert signalen._eronder("verval", relaties) == {"verval", "inlevering"}   # niet verder dan de gebeurtenis
+    assert signalen._eronder("rol", relaties) == {"rol"}
+
+
+def test_model_als_bron_is_een_signaal(wiki, tmp_path):
+    """Het GGM en het GEMMA-model zijn matchdoel, geen bron (regel Bronvoorrang)."""
+    from llmwiki import sources
+    model = "2026-vng-gemma-2026-10-02"
+    origineel = tmp_path / f"{model}.md"
+    origineel.write_text("# GEMMA\n", encoding="utf-8")
+    sources.add(wiki.parent.parent, model, origineel, titel=model, tags=["test"], brontype="model")
+    bo = _bo()
+    bo["kenmerken"]["wordt_bewerkt"]["bronnen"] = [WET, model]
+    _schrijf(wiki, "beschikking", bo)
+    res = beslissen.beslissen(wiki, schrijven=False)
+    assert res.fouten == []
+    assert any(w.startswith(f"beschikking: {model} is een model, matchdoel en geen bron") for w in res.waarschuwingen)
 
 
 def test_bronanalyse_staat_in_de_map_van_haar_brontype(wiki):
@@ -715,7 +745,7 @@ def test_signalen_voor_een_model_over_alle_onderwerpen():
         "kerkgenootschap": {"begrip": "Kerkgenootschap", "onderwerpen": ["lijkbezorging"],
                             "synoniemen": [{"naam": "Gezindte", "context": "wet"}], "relaties": [rel("graf")]},
         "beheren-graf": {"begrip": "Beheren graf", "onderwerpen": ["burgerzaken", "lijkbezorging"], "kernobject": "graf"},
-        "beschikking": {"begrip": "Beschikking", "onderwerpen": ["algemeen"], "relaties": [rel("akte-opmaken")]},
+        "beschikking": {"begrip": "Beschikking", "onderwerpen": ["besluitvorming"], "relaties": [rel("akte-opmaken")]},
         "akte-opmaken": {"begrip": "Opmaken akte", "onderwerpen": ["burgerzaken"], "kernobject": "beschikking",
                          "relaties": [rel("ambtenaar")]},
         "ambtenaar": {"begrip": "Ambtenaar", "onderwerpen": ["lijkbezorging"], "relaties": [rel("beheren-graf")]},
@@ -726,14 +756,14 @@ def test_signalen_voor_een_model_over_alle_onderwerpen():
     uitkomsten = {b: el("bedrijfsobject") for b in alle}
     uitkomsten["gezindte"] = {"soort": "synoniem"}
     uitkomsten["akte"] = {"soort": "verwijzing"}
-    uitkomsten["beschikking"] = el("bedrijfsobject", objectniveau="generiek")
-    onderwerpen = {o: {"naam": o.capitalize()} for o in ("lijkbezorging", "burgerzaken", "algemeen")}
+    onderwerpen = {o: {"naam": o.capitalize()} for o in ("lijkbezorging", "burgerzaken")}
+    onderwerpen["besluitvorming"] = {"naam": "Besluitvorming", "laag": "thematisch"}   # thuis in een gedeeld onderwerp
     tekst = "\n".join(signalen.modulariteit(alle, uitkomsten, onderwerpen))
     assert "'grafplaats' is naam of synoniem van graf, grafplaats" in tekst and "regel Eén element" in tekst
     assert "gezindte" not in tekst
     assert "graf, grafplaats: zelfde GEMMA-match id-1" in tekst
     assert "beheren-graf: thuisonderwerp 'burgerzaken', maar het kernobject graf hoort bij 'lijkbezorging'" in tekst
-    assert "akte-opmaken: thuisonderwerp" not in tekst  # generiek kernobject
+    assert "akte-opmaken: thuisonderwerp" not in tekst  # kernobject in een gedeeld onderwerp
     assert "akte: verwijst naar onderwerp 'burgerzaken'" in tekst
     assert "wees: geen relatie met een ander element" in tekst
     assert "ambtenaar: 2 relaties met elementen van 'burgerzaken' en 0 met het eigen thuisonderwerp" in tekst
@@ -792,20 +822,27 @@ def test_wettelijke_grondslag():
     assert [s.split(":")[0] for s in signalen_] == ["rol-zonder"]
 
 
-def test_besluiten_eerder_en_besluiten_van_een_onderwerp(wiki):
-    eerder = {"besluiten": [{"datum": "2026-09-30", "begrip": "Uitdaagrecht", "onderwerp": "test",
-                             "besluit": "Geen eigen pagina.", "stand": "geldt"}]}
-    beoordeling.schrijf(wiki / beslissen.BESLUITEN_EERDER, eerder)
+def test_besluiten_van_een_onderwerp(wiki):
     onderwerp = beoordeling.laad(wiki / "beoordelingen/onderwerpen/test.yaml")
-    onderwerp["besluiten"] = [{"datum": "2026-10-01", "besluit": "Afbakening van het onderwerp."}]
+    onderwerp["besluiten"] = [{"datum": "2026-09-30", "begrip": "Uitdaagrecht", "besluit": "Geen eigen pagina.",
+                               "stand": "open (todo)"},
+                              {"datum": "2026-10-01", "besluit": "Afbakening van het onderwerp."}]
     beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/test.yaml", onderwerp)
     _beslissen(wiki)
     assert not (wiki / "besluiten").exists()
     lijst = (wiki / "begrippen" / "test.md").read_text(encoding="utf-8")
     assert "## Besluiten" in lijst and "- 2026-10-01: Afbakening van het onderwerp." in lijst
-    # een eerder besluit zonder stand of met een onbekend onderwerp is een fout
-    eerder["besluiten"][0] |= {"stand": "", "onderwerp": "onbekend"}
-    beoordeling.schrijf(wiki / beslissen.BESLUITEN_EERDER, eerder)
+    assert "- 2026-09-30: **Uitdaagrecht**: Geen eigen pagina. *Stand: open (todo)*" in lijst
+    # zonder datum, met een onbekend veld, over een begrip met een beoordeling of met een bestandspad: een fout
+    _schrijf(wiki, "beschikking", _bo())
+    begrip = "Beschikking"
+    onderwerp["besluiten"] = [{"besluit": "Zie references/relaties.md.", "onderwerp": "test"},
+                              {"datum": "2026-10-02", "begrip": begrip, "besluit": "Iets (regel Thuishoren, "
+                                                                              "ARCHITECTURE.md *Indelingen*)."}]
+    beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/test.yaml", onderwerp)
     fouten = beslissen.beslissen(wiki, schrijven=False).fouten
-    assert "besluiten-eerder 1 (Uitdaagrecht): 'stand' ontbreekt" in fouten
-    assert "besluiten-eerder 1 (Uitdaagrecht): onbekend onderwerp 'onbekend'" in fouten
+    assert "onderwerp test, besluit 1: 'datum' ontbreekt of is geen datum (jjjj-mm-dd)" in fouten
+    assert "onderwerp test, besluit 1: onbekend veld 'onderwerp'" in fouten
+    assert any(f.startswith("onderwerp test, besluit 1: 'besluit' noemt het bestandspad 'references/relaties.md'") for f in fouten)
+    assert any(f.startswith(f"onderwerp test, besluit 2: '{begrip}' heeft een beoordeling") for f in fouten)
+    assert not any("besluit 2: 'besluit' noemt" in f for f in fouten)   # ARCHITECTURE.md bij naam mag

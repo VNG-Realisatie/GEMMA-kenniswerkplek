@@ -5,11 +5,10 @@ archimate_type: business-function
 status: goedgekeurd
 naam: Producten- en dienstenrealisatie publieksdiensten
 onderwerpen:
-- algemeen
+- kern
 - lijkbezorging
 - burgerzaken
 definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
-grondslag: bron
 match:
   gemma: exact
 data_object: nee
@@ -131,4 +130,5 @@ Match **exact** met GEMMA-element *Producten- en dienstenrealisatie publieksdien
 
 ### Besluiten redacteur
 
+- 2026-10-07: Naar Algemeen (`algemeen` eerste in `onderwerpen`): generieke functie voor de publieksdiensten van alle onderwerpen; Lijkbezorging en Burgerzaken houden hun tekst per onderwerp.
 - 2026-10-07: Thuisonderwerp Algemeen (regel Thuishoren): een generieke functie die de publieksdiensten van alle onderwerpen dient; Lijkbezorging en Burgerzaken houden hun tekst per onderwerp. Het object in Archi blijft.

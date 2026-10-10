@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Toestemming van de gemeente om een bijzondere begraafplaats aan te leggen, uit te breiden of in gebruik te nemen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

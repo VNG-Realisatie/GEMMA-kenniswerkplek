@@ -60,7 +60,7 @@ def _vind(kandidaten, bron, doel):
 def test_exacte_compositie_en_specialisatie(wiki):
     k = relaties.voorstel("beschikking", DATA, wiki)
     (bevat,) = _vind(k, "beschikking", "onderdeel-beschikking")
-    assert (bevat.relatie, bevat.grondslag, bevat.ggm_relaties) == ("composition", "ggm-exact", ["R_BEVAT"])
+    assert (bevat.relatie, bevat.ggm_match, bevat.ggm_relaties) == ("composition", "exact", ["R_BEVAT"])
     (gen,) = _vind(k, "besluit", "beschikking")
     assert gen.relatie == "specialization"
 
@@ -72,7 +72,7 @@ def test_aggregatie_zonder_deel_geheel_naam_wordt_associatie_met_terugmelding(wi
 
 def test_keten_via_niet_opgenomen_entiteit_krijgt_zwakste_type(wiki):
     (keten,) = _vind(relaties.voorstel("beschikking", DATA, wiki), "beschikking", "zaak")
-    assert keten.relatie == "association" and keten.grondslag == "ggm-afgeleid"
+    assert keten.relatie == "association" and keten.ggm_match == "geen"
     assert keten.ggm_relaties == ["R_KETEN1", "R_KETEN2"]
     assert keten.kardinaliteit == "0..* → 1..*"
 
@@ -81,7 +81,7 @@ def test_enumeratie_vervalt_en_specialisatie_zonder_pagina_wordt_opgetild(wiki):
     k = relaties.voorstel("beschikking", DATA, wiki)
     assert not [x for x in k if "R_ENUM" in x.ggm_relaties]
     (opgetild,) = [x for x in k if "R_SUB" in x.ggm_relaties]
-    assert (opgetild.bron, opgetild.doel, opgetild.grondslag) == ("beschikking", "aanvraag", "ggm-afgeleid")
+    assert (opgetild.bron, opgetild.doel, opgetild.ggm_match) == ("beschikking", "aanvraag", "geen")
     assert opgetild.terugmelding is None
 
 
@@ -111,7 +111,7 @@ def test_voorstel_als_yaml_voor_de_beoordeling(wiki):
     uitgaand = yaml.safe_load(tekst)["relaties"]
     bevat = next(r for r in uitgaand if r["naar"] == "onderdeel-beschikking")
     assert bevat == {"soort": "compositie", "naar": "onderdeel-beschikking", "naam": "bevat", "kardinaliteit": "1 → 0..*",
-                     "grondslag": "ggm-exact", "ggm_relatie": ["R_BEVAT"]}
+                     "ggm_match": "exact", "ggm_relatie": ["R_BEVAT"]}
     assert "# Inkomend" in tekst and "besluit -> specialisatie" in tekst
 
 
@@ -171,8 +171,8 @@ def test_uit_bronnen_lost_op_tilt_op_en_laat_vervallen(wiki):
     ]
     kandidaten, vervallen = relaties.uit_bronnen(rijen, relaties.begrippen(wiki))
     rol = [k for k in kandidaten if k.bron == "heffingsambtenaar"][0]
-    assert (rol.relatie, rol.doel, rol.grondslag, rol.bronnen, rol.vindplaats) == (
-        "assignment", "aanslag-opleggen", "bron", ["2026-overheid-gemeentewet"], "art. 231")
+    assert (rol.relatie, rol.doel, rol.ggm_match, rol.bronnen, rol.vindplaats) == (
+        "assignment", "aanslag-opleggen", "geen", ["2026-overheid-gemeentewet"], "art. 231")
     opgetild = [k for k in kandidaten if k.doel == "beschikking"][0]  # Aanslagbedrag → Beschikking
     assert (opgetild.bron, opgetild.relatie, opgetild.toegang) == ("aanslag-opleggen", "access", "registreren")
     assert "opgetild" in opgetild.toelichting
@@ -197,7 +197,7 @@ def test_combineer_bevestigt_ggm_relatie_met_bron(wiki):
     samen, alleen_ggm = relaties.combineer(ggm_k, bron_k)
     (bevat,) = samen
     assert bevat.doel == "onderdeel-beschikking"
-    assert bevat.grondslag == "ggm-exact" and bevat.bronnen == ["2026-overheid-gemeentewet"]
+    assert bevat.ggm_match == "exact" and bevat.bronnen == ["2026-overheid-gemeentewet"]
     assert "bron noemt aggregation" in bevat.toelichting
     assert len(alleen_ggm) == len(ggm_k) - 1 and bevat not in alleen_ggm
 

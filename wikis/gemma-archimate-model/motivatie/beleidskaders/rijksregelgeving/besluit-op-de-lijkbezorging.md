@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Algemene maatregel van bestuur die de Wet op de lijkbezorging uitwerkt, onder meer voor het vervoer van een stoffelijk overschot naar en uit het buitenland.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -76,8 +75,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-Het besluit zelf ([2026-rijk-besluit-op-de-lijkbezorging-wettekst](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md)).
 
 | Korte titel | Bron |
 |---|---|

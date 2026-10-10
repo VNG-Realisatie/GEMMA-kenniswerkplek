@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het verlenen van de vergunning voor het vestigen, uitbreiden of wijzigen van een crematorium van een particuliere houder.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

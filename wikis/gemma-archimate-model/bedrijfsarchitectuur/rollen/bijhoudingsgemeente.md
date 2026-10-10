@@ -7,7 +7,6 @@ naam: Bijhoudingsgemeente
 onderwerpen:
 - burgerzaken
 definitie: Verantwoordelijkheid van een gemeente voor de bijhouding van de gegevens van de ingezetenen die er hun adres hebben.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -18,6 +17,9 @@ bronnen:
 - 2026-rvig-hup-wijzigen-bsn
 - 2026-rvig-hup-achtergronden-en-begrippen
 - 2026-rijk-wet-brp-bwbr0033715
+- 2026-rvig-hup-wijziging-naamgebruik
+- 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+- 2026-rvig-hup-overlijden-buitenland
 ---
 
 # Bijhoudingsgemeente
@@ -78,6 +80,8 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Bijhoudingsgemeente | voert uit *toewijzing* | [Behandelen verzoek om correctie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-correctie.md) | [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 2.58) |
 | Bijhoudingsgemeente | voert uit *toewijzing* | [Behandelen verzoek om verwijdering van gegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-verwijdering-van-gegevens.md) | [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 2.57) |
 | Bijhoudingsgemeente | voert uit *toewijzing* | [Wijzigen identificatienummers](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-identificatienummers.md) | [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (BRP stelsel; Wet BRP art. 1.4 lid 1) |
+| Bijhoudingsgemeente | voert uit *toewijzing* | [Wijzigen naamgebruik](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-naamgebruik.md) | [HUP BRP: Wijziging naamgebruik](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md) (regel 34, 60) |
+| Bijhoudingsgemeente | voert uit *toewijzing* | [Verwerken buitenlands document](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-buitenlands-document.md) | [Utrecht Buitenlandse documenten inschrijven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md), [HUP BRP: Overlijden buitenland](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-overlijden-buitenland.md) (Utrecht: Voorwaarden, Na uw afspraak; HUP regel 33) |
 
 #### Inkomend
 
@@ -97,6 +101,9 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [HUP BRP: Wijzigen bsn](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijzigen-bsn.md) | HUP BRP: Wijzigen bsn |
 | [HUP BRP Achtergronden en begrippen](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) | HUP BRP: Achtergronden en begrippen |
 | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
+| [HUP BRP: Wijziging naamgebruik](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md) | HUP BRP: Wijziging naamgebruik |
+| [Utrecht Buitenlandse documenten inschrijven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md) | Gemeente Utrecht: Buitenlandse documenten inschrijven |
+| [HUP BRP: Overlijden buitenland](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-overlijden-buitenland.md) | HUP BRP: Overlijden buitenland |
 
 ### Afstemming met GEMMA
 

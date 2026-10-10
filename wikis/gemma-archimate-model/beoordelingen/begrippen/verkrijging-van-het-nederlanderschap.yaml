@@ -214,7 +214,6 @@ synoniemen:
   context: informatiemodel
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
@@ -222,7 +221,7 @@ relaties:
 - soort: triggering
   naar: bijhouden-persoonsgegevens
   naam: leidt tot bijhouding van nationaliteit, verblijfstitel en Europees kiesrecht
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-nederlandse-nationaliteit
   - 2026-rvig-hup-verblijfstitel
@@ -231,7 +230,7 @@ relaties:
 - soort: triggering
   naar: verval-van-het-reisdocument
   naam: doet een reisdocument voor vluchtelingen of vreemdelingen vervallen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-nederlandse-nationaliteit

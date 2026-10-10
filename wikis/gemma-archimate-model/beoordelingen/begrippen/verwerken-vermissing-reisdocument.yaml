@@ -239,7 +239,6 @@ synoniemen:
   context: wet
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA. Het specialiseert het generieke proces Behandelen aangifte of melding.
@@ -252,7 +251,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: reisdocument
   naam: registreert vermissing van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   - 2026-rijk-paspoortwet-bwbr0005212
@@ -260,14 +259,14 @@ relaties:
 - soort: realisatie
   naar: vermissing-of-diefstal-reisdocument-doorgeven
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   vindplaats: regel 17-23
 - soort: stroom
   naar: bijhouden-persoonsgegevens
   naam: geeft vermissing door aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   - 2026-rvig-hup-reisdocument
@@ -275,7 +274,7 @@ relaties:
 - soort: triggering
   naar: verval-van-het-reisdocument
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing

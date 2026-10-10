@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Wet over het kiesrecht en de verkiezing van de vertegenwoordigende organen, waaronder de gemeenteraad.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -33,7 +32,7 @@ Wet over het kiesrecht en de verkiezing van de vertegenwoordigende organen, waar
 
 ### Beschrijving
 
-De Kieswet (BWBR0004627) regelt wie kiesgerechtigd is (hoofdstuk B), de registratie van de kiesgerechtigdheid door burgemeester en wethouders (D), de stempas (J), de kiezerspas (K) en het stemmen bij volmacht (L), en daarnaast de kandidaatstelling, de stembureaus, de stemming en de uitslag, die buiten dit onderwerp vallen (besluit redacteur 2026-10-06, Afbakening Burgerzaken).
+De Kieswet (BWBR0004627) regelt wie kiesgerechtigd is (hoofdstuk B), de registratie van de kiesgerechtigdheid door burgemeester en wethouders (D), de stempas (J), de kiezerspas (K) en het stemmen bij volmacht (L), en daarnaast de kandidaatstelling, de stembureaus, de stemming en de uitslag, die buiten dit onderwerp vallen (besluit 2026-10-06, Afbakening Burgerzaken).
 
 ### Per onderwerp
 
@@ -85,8 +84,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Bronnen
 
-De regeling zelf ([2026-rijk-kieswet-bwbr0004627](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md)).
-
 | Korte titel | Bron |
 |---|---|
 | [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
@@ -98,4 +95,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
+- 2026-10-07: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap (optie, naturalisatie, afstand) en van Beheren stempassen en Registreren kiesgerechtigdheid.
 - 2026-10-07: Opnemen als beleidskader; grondslag van Beheren stempassen en Registreren kiesgerechtigdheid.

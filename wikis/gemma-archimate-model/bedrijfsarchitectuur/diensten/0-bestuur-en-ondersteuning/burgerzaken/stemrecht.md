@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het registreren als kiezer van wie kiesgerechtigd is, en op verzoek meedelen of iemand als kiezer is geregistreerd.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -207,9 +207,6 @@ beschrijving:
 regelgever: rijk
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: regelgeving
-grondslag_toelichting:
-- Het besluit zelf (2026-rijk-besluit-op-de-lijkbezorging-wettekst).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -217,28 +214,28 @@ relaties:
 - soort: associatie (gericht)
   naar: afgeven-laissez-passer
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: art. 11
 - soort: associatie (gericht)
   naar: verlenen-verlof-tot-ontleding
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: art. 17
 - soort: associatie (gericht)
   naar: wet-op-de-lijkbezorging
   naam: werkt uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: aanhef
 - soort: associatie (gericht)
   naar: vervoersdocumenten-stoffelijk-overschot
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: UPL nr. 445, art. 11
@@ -260,8 +257,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

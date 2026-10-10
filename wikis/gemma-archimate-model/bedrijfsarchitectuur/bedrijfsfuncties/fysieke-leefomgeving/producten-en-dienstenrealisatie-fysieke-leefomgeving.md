@@ -7,7 +7,6 @@ naam: Producten- en dienstenrealisatie fysieke leefomgeving
 onderwerpen:
 - lijkbezorging
 definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen de fysieke leefomgeving.
-grondslag: bron
 match:
   gemma: exact
 data_object: nee
@@ -70,7 +69,7 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 | Kenmerk | Onderbouwing |
 |---|---|
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie onder Uitvoering fysieke leefomgeving. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente levert er de producten in het domein Fysieke leefomgeving mee, waaronder drie producten van lijkbezorging (UPL). [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente levert er de producten in het domein Fysieke leefomgeving mee, waaronder drie producten van lijkbezorging (UPL). [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige functie in de GEMMA-functie-indeling, met eigen functies eronder. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |

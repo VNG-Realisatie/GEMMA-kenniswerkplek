@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het melden dat iemand op het eigen adres staat ingeschreven die er niet woont, of dat een briefadreshouder niet bereikbaar is.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

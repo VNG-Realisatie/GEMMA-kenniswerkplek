@@ -214,7 +214,6 @@ synoniemen:
   context: informatiemodel
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
@@ -222,14 +221,14 @@ relaties:
 - soort: triggering
   naar: bijhouden-persoonsgegevens
   naam: leidt tot beëindiging van de Nederlandse nationaliteit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-nederlandse-nationaliteit
   vindplaats: HUP Nederlandse nationaliteit, kop Verlies
 - soort: triggering
   naar: verval-van-het-reisdocument
   naam: doet een Nederlands reisdocument vervallen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-nationaliteit

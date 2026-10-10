@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Een particulier graf, urnengraf of urnennis laten uitgeven, met het grafrecht daarop.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

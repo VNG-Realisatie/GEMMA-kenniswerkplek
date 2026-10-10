@@ -224,19 +224,18 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen proces voor het beheer van crematoria; nieuw voor GEMMA.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 relaties:
 - soort: aggregatie
   naar: verlenen-vergunning-bijzonder-crematorium
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 53–55
 - soort: toegang (bijwerken)
   naar: crematorium
   naam: beheert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 50, 51, 54

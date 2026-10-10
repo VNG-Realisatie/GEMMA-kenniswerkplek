@@ -205,7 +205,6 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in de lijkbezorging voor.
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -221,23 +220,19 @@ relaties:
 - soort: triggering
   naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-wet-publieke-gezondheid-wettekst
   vindplaats: Wlb art. 22a; Wpg art. 27 lid 3
-- soort: associatie (gericht)
-  naar: stoffelijk-overschot
-  naam: betreft
-  grondslag: bron
-  bronnen:
-  - 2026-rijk-wet-publieke-gezondheid-wettekst
-  vindplaats: art. 21 lid 2
 onderwerpen:
 - lijkbezorging
 besluiten:
 - datum: '2026-10-05'
   besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
+  gevolg: verwerkt
+- datum: '2026-10-10'
+  besluit: 'De relatie *betreft* naar Stoffelijk overschot vervalt: het object volgt uit de indeling onder het levensloopproces Toestaan lijkbezorging, met kernobject Stoffelijk overschot (kennismodel: een gebeurtenis hangt niet direct aan een object).'
   gevolg: verwerkt
 status: goedgekeurd
 beslist:

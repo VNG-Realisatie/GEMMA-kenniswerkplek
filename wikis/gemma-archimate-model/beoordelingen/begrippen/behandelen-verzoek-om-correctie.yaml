@@ -243,7 +243,6 @@ synoniemen:
   context: HUP
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -259,7 +258,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: ingeschreven-persoon
   naam: corrigeert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
@@ -268,7 +267,7 @@ relaties:
 - soort: realisatie
   naar: brp-wijzigingsverzoek
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp

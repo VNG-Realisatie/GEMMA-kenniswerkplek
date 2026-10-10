@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het document van de gemeente waarmee een stoffelijk overschot ongehinderd naar het buitenland wordt vervoerd.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

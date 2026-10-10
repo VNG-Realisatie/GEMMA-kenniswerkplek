@@ -7,7 +7,6 @@ kenmerken:
     waarde: ja
     onderbouwing: GEMMA-bedrijfsfunctie; na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof af (RVO).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gemeentelijk:
     waarde: ja
@@ -216,7 +215,6 @@ per_onderwerp:
   burgerzaken:
   - 'De functie bedient Bijhouden burgerlijke stand en omvat de diensten van de burgerlijke stand uit de UPL onder taakveld 0.2: aangiften, akten en uittreksels, erkenning en naamskeuze, huwelijk en geregistreerd partnerschap, naamswijziging en geslachtswijziging (UPL; BW 1 titel 4).'
 domein: Publieksdiensten
-grondslag: bron
 gemma:
   id: id-c689b2cc-4672-4474-a82f-44273c60d384
   sterkte: exact
@@ -225,14 +223,14 @@ relaties:
 - soort: bediening
   naar: verlenen-verlof-tot-begraving-of-crematie
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 11
 - soort: bediening
   naar: bijhouden-burgerlijke-stand
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
@@ -240,154 +238,154 @@ relaties:
 - soort: aggregatie
   naar: overlijdensaangifte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 315 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: overlijdensakte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 316 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: geboorteaangifte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 136 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: geboorteakte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 137 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: geboorteakte-levenloos-kind
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 138 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: doodgeboren-kind-aangifte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 118 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: erkenning-kind
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 129 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: naamskeuzeverklaring
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 258 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: geslachtswijzigingsaangifte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 159 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: achternaamwijziging
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 5 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: voornaamwijziging
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 460 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: huwelijksaangifte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 185 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: geregistreerd-partnerschapaangifte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 158 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: huwelijk
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 184 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: trouwlocatie
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 414 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: ambtenaar-burgerlijke-stand-aanvragen
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 28 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: geregistreerd-partnerschap-omzetting-in-huwelijk
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 156 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: geregistreerd-partnerschap-ontbinding
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 157 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: echtscheiding-inschrijving
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 122 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: verklaring-van-huwelijksbevoegdheid
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 437 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: uittreksel-burgerlijke-stand
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 23 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: bewijs-van-in-leven-zijn
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 61 (GEMMA-domein Publieksdiensten)
@@ -413,9 +411,9 @@ beslist:
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-vng-gemma-2026-10-02
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-gemma-2026-10-02
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: rijksregelgeving

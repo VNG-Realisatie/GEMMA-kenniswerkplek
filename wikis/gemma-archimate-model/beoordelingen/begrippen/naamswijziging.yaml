@@ -223,7 +223,7 @@ relaties:
 - soort: triggering
   naar: toevoegen-latere-vermelding
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
   - 2026-rijk-burgerlijk-wetboek-boek-1
@@ -231,7 +231,7 @@ relaties:
 - soort: triggering
   naar: verval-van-het-reisdocument
   naam: doet het reisdocument vervallen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
@@ -240,7 +240,6 @@ bronnen:
 - 2026-rvig-hup-wijziging-voornaam
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

@@ -220,7 +220,6 @@ synoniemen:
   context: wet
 - naam: College
   context: GEMMA
-grondslag: bron
 gemma:
   id: id-af1a85d2-b6d6-44da-b562-ef2ccd69108e
   sterkte: exact
@@ -229,15 +228,26 @@ relaties:
 - soort: toewijzing
   naar: beslisser
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 43, 53; Groningen art. 16, 20
 onderwerpen:
-- algemeen
+- bestuur-en-organisatie
 - lijkbezorging
 doelgroep: gemeente
+besluiten:
+- datum: '2026-09-30'
+  besluit: Naam *College van B&W*, de gangbare naam; de wetsterm *burgemeester en wethouders* en Groningen *college* zijn synoniemen.
+  gevolg: verwerkt
+- datum: '2026-10-01'
+  besluit: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
+  gevolg: verwerkt
+- datum: '2026-10-06'
+  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
+  gevolg: verwerkt
+  stand: geldt; Belanghebbende open (todo)
 status: goedgekeurd
 beslist:
   uitkomst:

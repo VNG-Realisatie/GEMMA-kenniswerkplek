@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het moment waarop een persoon het Nederlanderschap verliest, door afstand, een andere nationaliteit, verblijf in het buitenland of intrekking.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

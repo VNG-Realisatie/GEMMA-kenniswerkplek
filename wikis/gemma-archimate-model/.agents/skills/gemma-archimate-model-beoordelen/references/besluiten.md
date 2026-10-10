@@ -26,6 +26,7 @@ besluiten:
     besluit: Opnemen als gegevensobject zonder GGM-entiteit; terugmelding 3.
     gevolg: opnemen                 # opnemen | afwijzen | verwerkt
     redenen: [gegevensobject zonder sterke GGM-match]   # letterlijk uit beslist.voor_te_leggen
+    stand: herzien door <datum> (…)      # alleen bij een besluit dat later herzien is of nog open staat
 ```
 
 `opnemen` met de gedekte redenen maakt een kandidaat `review`; `afwijzen` maakt hem `afgewezen`; `verwerkt` legt een besluit vast dat de AI in de beoordeling heeft doorgevoerd (bijvoorbeeld een naamkeuze). Daarna weer `tools/beslissen.py`.
@@ -41,7 +42,7 @@ besluiten:
     besluit: Geen eigen pagina: …
 ```
 
-Een besluittekst noemt een regel of een sectie van ARCHITECTURE.md bij naam (regel Thuishoren, ARCHITECTURE.md *Processen en ketens*), nooit een bestandspad: een herstructurering van de wiki mag het model en zijn akkoord niet raken.
+Een besluittekst noemt een regel of een sectie van ARCHITECTURE.md bij naam (regel Thuishoren, ARCHITECTURE.md *Processen en ketens*), nooit een bestandspad: een herstructurering van de wiki mag het model en zijn akkoord niet raken. *(script: de vorm van een besluit van een onderwerp, een besluit over een begrip dat een beoordeling heeft, een bestandspad in een besluit of stand)*
 
 ## Wat al besloten is
 

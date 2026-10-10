@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het afleggen van een verklaring van afstand bij de gemeente om de Nederlandse nationaliteit op te geven.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

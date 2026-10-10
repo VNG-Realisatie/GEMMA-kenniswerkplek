@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het als kiezer ontvangen van een stempas voor een verkiezing, en bij verlies of niet-ontvangst een nieuwe aanvragen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

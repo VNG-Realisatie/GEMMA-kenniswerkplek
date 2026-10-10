@@ -240,7 +240,6 @@ synoniemen:
   context: HUP
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -253,7 +252,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: verblijfplaats
   naam: legt vast
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging
   - 2026-rijk-wet-brp-bwbr0033715
@@ -261,7 +260,7 @@ relaties:
 - soort: realisatie
   naar: verhuismelding
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-verhuizing-doorgeven

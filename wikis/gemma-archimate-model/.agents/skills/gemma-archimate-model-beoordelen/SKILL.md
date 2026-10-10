@@ -54,8 +54,6 @@ per_onderwerp:
 synoniemen: [{naam: begraafterrein, context: beleid}]
 taakveld: 7 Volksgezondheid en Milieu         # bij typen met submappen taakveld en beleidsdomein (wiki.yaml); niet bij een functie (submap domein)
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron                               # ggm-entiteit | ggm-afgeleid | procesobject | regelgeving | bron
-grondslag_toelichting: []                     # verplicht bij regelgeving, procesobject, ggm-afgeleid
 ggm: {sterkte: geen, onderbouwing: "Het GGM kent geen begraafplaats."}          # bij gegevensobjecten; met guid bij een match
 gemma: {sterkte: geen, onderbouwing: "Nieuw voor GEMMA."}                       # altijd; met id bij een match
 # Indeling (stap 7 van skill gemma-archimate-model-criteria), alleen waar het type erom vraagt:
@@ -68,7 +66,7 @@ kwaliteitsdoelen: [{id: id-…, sterkte: "++", onderbouwing: "De wet regelt de t
 gemma_generiek: {id: id-…, onderbouwing: "Een vergunningaanvraag."}   # specialisatie van een generiek GEMMA-element (exacte match)
 specialisaties: [{naam: Bijzondere begraafplaats, omschrijving: "Van een kerkgenootschap of rechtspersoon (art. 24)."}]
 relaties:
-  - {soort: aggregatie, naar: graf, naam: bevat, grondslag: bron, bronnen: [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen], vindplaats: art. 1}
+  - {soort: aggregatie, naar: graf, naam: bevat, ggm_match: geen, bronnen: [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen], vindplaats: art. 1}
 vragen: []                                    # open vragen aan de redacteur
 besluiten: []                                 # alleen na een antwoord van de redacteur
 ```
@@ -79,7 +77,6 @@ Velden en wat erin hoort:
 |---|---|
 | `definitie`, `definitie_formeel`, `definitie_formeel_bron`, `beschrijving`, `per_onderwerp` | `references/definitie.md` |
 | `begrip`, `synoniemen`, `naamkeuze`, `homoniemen` | `references/naamgeving.md` |
-| `grondslag`, `grondslag_toelichting` | `references/grondslag.md` |
 | `ggm` (guid, sterkte, onderbouwing, duplicaten) | `references/ggm-match.md` |
 | `gemma` (id, sterkte, onderbouwing) | `references/gemma-match.md` |
 | `generalisatie`, `specialisaties`, `ggm_componenten` | `references/hierarchie.md` |

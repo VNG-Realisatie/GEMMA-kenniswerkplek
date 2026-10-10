@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het moment waarop een persoon bij onherroepelijke rechterlijke uitspraak van het kiesrecht is uitgesloten.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

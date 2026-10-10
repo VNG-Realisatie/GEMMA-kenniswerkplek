@@ -220,7 +220,6 @@ beschrijving:
 - Na goedkeuring van de naturalisatie of optie nodigt de gemeente uit voor een naturalisatieceremonie; men wordt pas Nederlander als men daar de verklaring van verbondenheid heeft afgelegd (Utrecht; Besluit verkrijging en verlies Nederlanderschap art. 60a, 60b). Grondslag art. 60a Besluit; doelgroep burger; niet digitaal (UPL nr. 261).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
@@ -228,7 +227,7 @@ relaties:
 - soort: bediening
   naar: optant
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
@@ -236,7 +235,7 @@ relaties:
 - soort: bediening
   naar: verzoeker-om-naturalisatie
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

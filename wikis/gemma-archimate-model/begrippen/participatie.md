@@ -32,3 +32,10 @@ De views op de indelingen staan in het [overzicht](../overzichten/participatie.m
 ## Begrippen
 
 Nog geen begrippen beoordeeld.
+
+## Besluiten
+
+- 2026-09-30: **Uitdaagrecht**: Geen eigen pagina: dezelfde procedure van verzoek, beoordeling, afspraken en evaluatie als overheidsparticipatie.
+- 2026-09-30: **Uniforme openbare voorbereidingsprocedure**: Verhuist naar een algemeen onderwerp besluitvorming. *Stand: open: algemeen onderwerp besluitvorming (todo)*
+- 2026-09-30: **Bestuursorgaan**: Verhuist naar een algemeen onderwerp besluitvorming. *Stand: open: algemeen onderwerp besluitvorming (todo)*
+- 2026-09-30: **Participatiebeleid**: Variant van Beleidsnota; oppakken in een algemeen onderwerp. Tot dan vervallen de relaties van Gemeenteraad en Plan voor inwonersparticipatie naar het participatiebeleid. *Stand: open: algemeen onderwerp (todo)*

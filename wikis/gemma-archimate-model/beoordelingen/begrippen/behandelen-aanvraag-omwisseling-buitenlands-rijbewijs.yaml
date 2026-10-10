@@ -237,7 +237,6 @@ synoniemen:
   context: beleid
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA. Het specialiseert het generieke proces Behandelen aanvraag product.
@@ -250,21 +249,21 @@ relaties:
 - soort: specialisatie
   naar: behandelen-aanvraag-rijbewijs
   naam: is een
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 28, 45, 105 lid 2
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: raadpleegt de basisregistratie personen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 33 lid 2
 - soort: realisatie
   naar: rijbewijs-buitenlands-omwisseling
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het doorgeven van een verhuizing binnen of naar de gemeente, zodat het nieuwe adres in de basisregistratie personen komt.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -7,7 +7,6 @@ naam: Nabestaande
 onderwerpen:
 - lijkbezorging
 definitie: Naaste van een overledene die zorg draagt voor de uitvaart of de urn.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -224,7 +224,6 @@ beschrijving:
 - 'Een kiezer die verwacht niet in persoon te kunnen stemmen, kan bij volmacht stemmen: op een schriftelijke aanvraag bij de burgemeester, of door zijn stempas of kiezerspas met de gemachtigde te ondertekenen en over te dragen, zonder tussenkomst van de gemeente (Kieswet art. L 1, L 2, L 14). Bij het verzoekschrift op een formulier wijst de kiezer een gemachtigde aan die zelf als kiezer is geregistreerd en zich bereid verklaart (art. L 8). De burgemeester beslist zo spoedig mogelijk, niet eerder dan op de dag van de kandidaatstelling; bij inwilliging maakt hij een volmachtbewijs op voor de gemachtigde en wordt de stempas van de volmachtgever ongeldig; een afwijzing deelt hij met redenen mee (art. L 6, L 11, J 7a).'
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -232,14 +231,14 @@ relaties:
 - soort: toegang (beëindigen)
   naar: stempas
   naam: maakt de stempas van de volmachtgever ongeldig
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7a lid 2 onder a, L 11
 - soort: realisatie
   naar: volmachtbewijs-verkiezingen
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627

@@ -7,7 +7,6 @@ kenmerken:
     onderbouwing: Wetsbegrip (Kieswet art. J 7, K 1, L 1) en GEMMA-rol Kiezer.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-    - 2026-vng-gemma-2026-10-02
   gemeentelijk:
     waarde: ja
     onderbouwing: Ontvangt de stempas van de burgemeester en richt verzoeken aan hem (Kieswet art. J 7, J 8, K 3, L 8).
@@ -194,7 +193,6 @@ kenmerken:
     onderbouwing: Geen breder begrip in deze wiki; in GEMMA een specialisatie van Klant.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-    - 2026-vng-gemma-2026-10-02
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
@@ -204,7 +202,6 @@ beschrijving:
 - De kiezer ontvangt een stempas, kan een nieuwe stempas of een kiezerspas aanvragen en kan een andere kiezer machtigen om voor hem te stemmen; als volmachtgever wijst hij zelf een gemachtigde aan, die zelf als kiezer moet zijn geregistreerd (Kieswet art. J 7, J 8, K 3, L 2, L 8). GEMMA kent de rol Kiezer onder de rol Klant.
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   id: id-d649e10e-d9a6-4ac7-b436-2d659cb4fdbf
   sterkte: exact
@@ -218,28 +215,28 @@ relaties:
 - soort: toewijzing
   naar: verstrekken-stempas
   naam: ontvangt de stempas en vraagt een nieuwe aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7 lid 2, J 8
 - soort: toewijzing
   naar: behandelen-verzoek-om-kiezerspas
   naam: vraagt de kiezerspas aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. K 3
 - soort: toewijzing
   naar: behandelen-verzoek-om-volmacht
   naam: dient het verzoekschrift in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. L 8
 - soort: toewijzing
   naar: registreren-kiesgerechtigdheid
   naam: verzoekt om mededeling of registratie
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   - 2026-rvig-hup-europees-kiesrecht
@@ -247,7 +244,7 @@ relaties:
 - soort: toegang (houder)
   naar: stempas
   naam: ontvangt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7 lid 2
@@ -265,7 +262,6 @@ beslist:
     typeregel: 12
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
-  - 2026-vng-gemma-2026-10-02
   - 2026-rvig-hup-europees-kiesrecht
   herkomst: rijksregelgeving
   gemma:

@@ -7,7 +7,6 @@ naam: Briefadresgever
 onderwerpen:
 - burgerzaken
 definitie: Verantwoordelijkheid van een persoon of aangewezen rechtspersoon om post voor de houder van een briefadres in ontvangst te nemen en door te geven.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

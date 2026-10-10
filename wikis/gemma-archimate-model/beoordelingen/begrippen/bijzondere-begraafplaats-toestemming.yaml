@@ -211,7 +211,6 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -219,7 +218,7 @@ relaties:
 - soort: bediening
   naar: houder-van-de-begraafplaats
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 37, 40, 41

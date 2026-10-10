@@ -16,7 +16,7 @@ Nieuwe GGM-terugmeldingen in `beoordelingen/terugmeldingen/ggm.yaml` krijgen het
 Harde controles (fout: er wordt niets geschreven): schema, kenmerken, verplichte velden van een element, bestaan van
 bronnen (met bronanalyse), GGM-guid, GEMMA-id, doelen van relaties, specialisaties, tegenhanger en homoniemen, de
 ArchiMate-relatietabel, de bronanalyses, de gegenereerde modelmappen, het register van Archi-objecten
-(`beoordelingen/objecten.yaml`), het register van beleidsdomeinen (`beoordelingen/beleidsdomeinen.yaml`) en het register van eerdere besluiten (`beoordelingen/besluiten-eerder.yaml`). Zachte signalen (waarschuwingen, met de naam
+(`beoordelingen/objecten.yaml`), het register van beleidsdomeinen (`beoordelingen/beleidsdomeinen.yaml`) en de besluiten van onderwerpen en beoordelingen (vorm, geen bestandspad). Zachte signalen (waarschuwingen, met de naam
 van de regel) staan in tools/signalen.py. Daarna draait het render-script (tools/render.py), tenzij `--zonder-render`.
 
 Gebruik (vanuit de wikimap):
@@ -52,7 +52,6 @@ GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "gemma.yaml"
 GEMMA_TYPEN = ("element", "indeling", "definitie", "relatie")
 OBJECTEN = Path("beoordelingen") / "objecten.yaml"
 BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
-BESLUITEN_EERDER = Path("beoordelingen") / "besluiten-eerder.yaml"
 WIJZIGINGEN = ("hernoemd", "samengevoegd", "gesplitst")
 
 
@@ -140,7 +139,7 @@ def _relatie_archimate(soort: str) -> tuple[str, str | None]:
 
 def _controleer_element(ctx: Context, bid: str, data: dict, uitkomst: dict, res: Resultaat) -> None:
     paginatype = uitkomst["paginatype"]
-    for veld in ("definitie", "beschrijving", "grondslag", "gemma"):
+    for veld in ("definitie", "beschrijving", "gemma"):
         if not data.get(veld):
             res.fouten.append(f"{bid}: element zonder '{veld}'")
     for veld in ctx.wiki_yaml["page_types"][paginatype].get("submappen", []):
@@ -153,8 +152,6 @@ def _controleer_element(ctx: Context, bid: str, data: dict, uitkomst: dict, res:
     for onderwerp in data.get("per_onderwerp", {}):
         if onderwerp not in data["onderwerpen"]:
             res.fouten.append(f"{bid}: per_onderwerp '{onderwerp}' staat niet in onderwerpen")
-    if data.get("grondslag") in ("regelgeving", "procesobject", "ggm-beslist") and not data.get("grondslag_toelichting"):
-        res.fouten.append(f"{bid}: grondslag {data['grondslag']} zonder grondslag_toelichting")
 
 
 def _modelvelden(ctx: Context, bid: str, data: dict, res: Resultaat) -> dict:
@@ -268,8 +265,10 @@ def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], 
             toegestaan = relatietool.HANDELINGEN if soort == "gedrag" else relatietool.VERANTWOORDELIJKHEDEN
             if toegang not in toegestaan:
                 res.fouten.append(f"{bid}: toegang '{toegang}' vanuit {van_type}; kies uit {', '.join(toegestaan)}")
-        if r["grondslag"] == "bron" and not r.get("bronnen"):
-            res.fouten.append(f"{bid}: relatie naar '{r['naar']}' met grondslag bron zonder bronnen")
+        if not r.get("bronnen"):   # het GGM is matchdoel, geen bron
+            res.fouten.append(f"{bid}: relatie naar '{r['naar']}' zonder bronnen (regel Elke claim een bron)")
+        if r["ggm_match"] == "exact" and not r.get("ggm_relatie"):
+            res.fouten.append(f"{bid}: relatie naar '{r['naar']}' met ggm_match exact zonder ggm_relatie")
     for naam, doel in ([("specialisatie", s.get("element")) for s in data.get("specialisaties", [])]
                        + [("homoniem", h.get("element")) for h in data.get("homoniemen", [])]
                        + [("tegenhanger", (data.get("tegenhanger") or {}).get("element"))]):
@@ -307,7 +306,7 @@ def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat, r
         if b and not (isinstance(b, str) or (isinstance(b, list) and all(isinstance(a, str) and a for a in b))):
             res.fouten.append(f"{label} {m['nummer']}: 'bevinding' is een tekst of een lijst alinea's")
         elif b and m.get("status") == "open":
-            # een open melding is leesbaar en bruikbaar: de bevinding en een voorstel elk in een eigen alinea (2026-10-08)
+            # een open melding is leesbaar en bruikbaar: de bevinding en een voorstel elk in een eigen alinea
             alineas = [b] if isinstance(b, str) else b
             for kop in ("**Bevinding:**", "**Voorstel:**"):
                 if not any(a.startswith(kop) for a in alineas):
@@ -323,7 +322,7 @@ def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat, r
 
 def _objecten(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> None:
     """Het register van Archi-objecten: welk bestaand object een element voortzet na hernoemen, samenvoegen of splitsen
-    (besluit redacteur 2026-10-05). Een element zet hoogstens één object voort, een object wordt door hoogstens één
+   . Een element zet hoogstens één object voort, een object wordt door hoogstens één
     element voortgezet, en een begrip dat nog een element is, geeft zijn object niet door."""
     pad = ctx.wiki_root / OBJECTEN
     if not pad.exists():
@@ -349,25 +348,41 @@ def _objecten(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> None
         objecten.add(o.get("object_van"))
 
 
-def _besluiten_eerder(ctx: Context, res: Resultaat) -> None:
-    """Het register van eerdere besluiten per begrip (zonder overeenkomend besluit in een beoordeling): elk besluit heeft
-    een datum, begrip, bestaand onderwerp, besluit en stand."""
-    pad = ctx.wiki_root / BESLUITEN_EERDER
-    if not pad.exists():
-        return
-    onderwerpen = {p.stem for p in (ctx.wiki_root / ONDERWERPEN).glob("*.yaml")}
-    for i, b in enumerate(beoordeling.laad(pad).get("besluiten", []), 1):
-        naam = f"besluiten-eerder {i} ({b.get('begrip')})"
-        for veld in ("datum", "begrip", "onderwerp", "besluit", "stand"):
-            if not b.get(veld):
-                res.fouten.append(f"{naam}: '{veld}' ontbreekt")
-        if b.get("onderwerp") and b["onderwerp"] not in onderwerpen:
-            res.fouten.append(f"{naam}: onbekend onderwerp '{b['onderwerp']}'")
+BESTANDSPAD = re.compile(r"(?<![\w./-])(?!ARCHITECTURE\.md\b)[\w./-]+\.(?:md|ya?ml|py|json)\b|\b(?:docs|tools|beoordelingen"
+                         r"|besluiten|kennismodel|bronanalyses|sources|references|schemas|plannen|export)/[\w./-]*")
+
+
+def _besluittekst(naam: str, besluit: dict, res: Resultaat) -> None:
+    """Een besluittekst (en de stand) noemt een regel of sectie bij naam, nooit een bestandspad."""
+    for veld in ("besluit", "stand"):
+        pad = BESTANDSPAD.search(str(besluit.get(veld) or ""))
+        if pad:
+            res.fouten.append(f"{naam}: '{veld}' noemt het bestandspad '{pad.group(0)}'; noem de regel of de sectie "
+                              "van ARCHITECTURE.md bij naam")
+
+
+def _besluiten_onderwerp(oid: str, onderwerp: dict, begrippen: dict[str, str], res: Resultaat) -> None:
+    """De besluiten van een onderwerp: over het onderwerp als geheel, of over een begrip zonder beoordeling (`begrip`).
+    Elk besluit heeft een datum en een besluit; krijgt het begrip een beoordeling, dan hoort het besluit daar."""
+    for i, b in enumerate(onderwerp.get("besluiten") or [], 1):
+        naam = f"onderwerp {oid}, besluit {i}"
+        if not isinstance(b, dict):
+            res.fouten.append(f"{naam}: geen datum en besluit")
+            continue
+        if not re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", str(b.get("datum") or "")):
+            res.fouten.append(f"{naam}: 'datum' ontbreekt of is geen datum (jjjj-mm-dd)")
+        if not b.get("besluit"):
+            res.fouten.append(f"{naam}: 'besluit' ontbreekt")
+        for veld in sorted(set(b) - {"datum", "besluit", "begrip", "stand"}):
+            res.fouten.append(f"{naam}: onbekend veld '{veld}'")
+        if b.get("begrip") and str(b["begrip"]).lower() in begrippen:
+            res.fouten.append(f"{naam}: '{b['begrip']}' heeft een beoordeling ({begrippen[str(b['begrip']).lower()]}); "
+                              "zet het besluit daar (regel Letterlijk verplaatsen)")
+        _besluittekst(naam, b, res)
 
 
 def _beleidsdomeinen(ctx: Context, alle: dict[str, tuple[Path, dict]], uitkomsten: dict[str, dict], res: Resultaat) -> None:
-    """Het register van beleidsdomeinen: de beschrijving van een beleidsdomein in de Beleidsdomeinindeling (besluit
-    redacteur 2026-10-08, de tekst van een vervallen taak). Elk beleidsdomein komt hoogstens één keer voor, wordt door
+    """Het register van beleidsdomeinen: de beschrijving van een beleidsdomein in de Beleidsdomeinindeling (de tekst van een vervallen taak). Elk beleidsdomein komt hoogstens één keer voor, wordt door
     een element gebruikt, heeft het taakveld van die elementen, een beschrijving en bestaande bronnen."""
     pad = ctx.wiki_root / BELEIDSDOMEINEN
     if not pad.exists():
@@ -396,7 +411,7 @@ def _beleidsdomeinen(ctx: Context, alle: dict[str, tuple[Path, dict]], uitkomste
 
 
 def _pa_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> dict | None:
-    """Procesarchitectuur-terugmeldingen: het model mag afwijken van de UPL-indeling, mits teruggemeld (2026-10-05)."""
+    """Procesarchitectuur-terugmeldingen: het model mag afwijken van de UPL-indeling, mits teruggemeld."""
     register = _terugmeldingen(ctx, uitkomsten, res, PA_TERUGMELDINGEN, PA_TYPEN, ("bevinding",),
                                "procesarchitectuur-terugmelding")
     for m in (register or {}).get("terugmeldingen", []):
@@ -407,7 +422,7 @@ def _pa_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat
 
 def _gemma_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> dict | None:
     """GEMMA-terugmeldingen: voorstellen aan het GEMMA-team over elementen, indelingen, definities en relaties van het
-    GEMMA-model (besluit redacteur 2026-10-08). Een melding noemt elementen van de wiki of GEMMA-elementen (`id` en
+    GEMMA-model. Een melding noemt elementen van de wiki of GEMMA-elementen (`id` en
     `naam`, zoals in het GEMMA-model)."""
     register = _terugmeldingen(ctx, uitkomsten, res, GEMMA_TERUGMELDINGEN, GEMMA_TYPEN, ("bevinding",),
                                "GEMMA-terugmelding")
@@ -461,6 +476,11 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             continue
         bronnen = bronnen_van(data)
         _controleer_bronnen(ctx, bid, bronnen, res)
+        modelbronnen = sorted({b for a in [*data["kenmerken"].values(), *data.get("relaties", [])]
+                               for b in a.get("bronnen") or [] if ctx.brontype(b) == "model"})
+        if modelbronnen:
+            res.waarschuwingen.append(f"{bid}: {', '.join(modelbronnen)} is een model, matchdoel en geen bron; noem bij "
+                                      "het kenmerk of de relatie de bron van de bewering (regel Bronvoorrang)")
         zonder_bron = [bepaal_type.NAAM[s] for s, a in data["kenmerken"].items() if a["waarde"] == "ja" and not a.get("bronnen")]
         if zonder_bron:
             res.fouten.append(f"{bid}: kenmerk 'ja' zonder bron: {', '.join(zonder_bron)} (regel Elke claim een bron)")
@@ -468,7 +488,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             if onderwerp not in onderwerpen:
                 res.fouten.append(f"{bid}: onderwerp '{onderwerp}' heeft geen {ONDERWERPEN.as_posix()}/{onderwerp}.yaml")
         ggm_sterkte = (data.get("ggm") or {}).get("sterkte")
-        redenen = bepaal_type.voor_te_leggen(uitkomst, ggm_sterkte, data.get("grondslag"))
+        redenen = bepaal_type.voor_te_leggen(uitkomst, ggm_sterkte)
         beslist = {"uitkomst": uitkomst, "voor_te_leggen": redenen,
                     "open": bepaal_type.open_redenen(redenen, data.get("besluiten")),
                     "bronnen": bronnen, "herkomst": herkomst(ctx, bronnen)}
@@ -480,12 +500,14 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             _controleer_verwijzingen(bid, data, uitkomsten, res, {b: d["begrip"] for b, (_, d) in alle.items()})
             beslist.update(_modelvelden(ctx, bid, data, res))
             beslist.update(_kwaliteitsdoelen(ctx, bid, data, uitkomst, res))
-            status = bepaal_type.voorgestelde_status(uitkomst, ggm_sterkte, data.get("grondslag"), data.get("besluiten"))
+            status = bepaal_type.voorgestelde_status(uitkomst, ggm_sterkte, data.get("besluiten"))
             if status != "afgewezen":
                 beslist["pad"] = pagina_pad(ctx, uitkomst["paginatype"], data, bid)
             if data.get("status") == "goedgekeurd" and status == "review" \
                     and beoordeling.goedgekeurd_in_log(ctx.log, bid, data):
                 status = "goedgekeurd"
+        for i, b in enumerate(data.get("besluiten") or [], 1):
+            _besluittekst(f"{bid}: besluit {i}", b, res)
         res.waarschuwingen += signalen.per_begrip(bid, data, uitkomst, onderwerpnamen, beslist)
         bijgewerkt = beoordeling.inhoud(data)
         if status:
@@ -518,7 +540,12 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             [(van, r) for van in elementen for r in alle[van][1].get("relaties", [])], ctx.gemma() if gekoppeld else {})
     _objecten(ctx, uitkomsten, res)
     _beleidsdomeinen(ctx, alle, uitkomsten, res)
-    _besluiten_eerder(ctx, res)
+    begripnamen = {d["begrip"].lower(): b for b, (_, d) in alle.items()}
+    for oid, onderwerp in onderwerpen.items():
+        if onderwerp.get("laag") not in (None, *gam_gemeen.GEDEELD):
+            res.fouten.append(f"onderwerp {oid}: laag '{onderwerp['laag']}'; kies {' of '.join(gam_gemeen.GEDEELD)}, of "
+                              "laat haar weg bij een eigen onderwerp")
+        _besluiten_onderwerp(oid, onderwerp, begripnamen, res)
     if any(u["paginatype"] in ("product", "dienst") for u in elementen.values()) \
             and (wiki_root / "gemma" / "gemma_parsed.json").exists():
         res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,

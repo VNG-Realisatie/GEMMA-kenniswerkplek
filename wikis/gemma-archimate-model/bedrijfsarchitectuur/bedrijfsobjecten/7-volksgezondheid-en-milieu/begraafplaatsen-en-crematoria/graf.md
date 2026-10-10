@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Plaats op een begraafplaats waarin stoffelijke overschotten worden begraven of urnen worden bijgezet.
-grondslag: bron
 match:
   ggm: geen
   gemma: geen

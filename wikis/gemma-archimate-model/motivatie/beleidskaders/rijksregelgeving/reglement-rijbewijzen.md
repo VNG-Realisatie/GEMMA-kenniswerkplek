@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van bestuur met de regels voor de aanvraag, afgifte en omwisseling van rijbewijzen en de verklaringen van rijvaardigheid en geschiktheid.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -61,7 +60,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de algemene maatregel van bestuur over rijbewijzen (BWBR0008074); de UPL noemt het als grondslag van vier producten. [Reglement rijbewijzen](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft de burgemeester de aanvraag van een rijbewijs bij de gemeente van inschrijving, de doorgeleiding naar de Dienst Wegverkeer in bepaalde gevallen en de inneming van een buitenlands rijbewijs (art. 27, 28, 29, 109). [Reglement rijbewijzen](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Reglement rijbewijzen](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit redacteur 2026-10-07). [Reglement rijbewijzen](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit 2026-10-07). [Reglement rijbewijzen](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde regeling als geheel (BWBR0008074). [Reglement rijbewijzen](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, algemene maatregel van bestuur van het Rijk. [Reglement rijbewijzen](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Reglement rijbewijzen](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
@@ -85,8 +84,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-De regeling zelf ([2026-rijk-reglement-rijbewijzen-bwbr0008074](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md)).
 
 | Korte titel | Bron |
 |---|---|

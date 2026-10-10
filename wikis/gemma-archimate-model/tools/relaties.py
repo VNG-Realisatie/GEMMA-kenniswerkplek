@@ -10,8 +10,9 @@ Toegang van gedrag tot een object heeft een handeling, toegang van een rol of be
 verantwoordelijkheid; de vaste namen en het ArchiMate-toegangstype staan in het kennismodel (tools/kennismodel.py),
 net als welke relaties tussen de typen in het kennismodel van de wiki staan. Deze tool toetst de geldigheid in
 ArchiMate (`archimate_geldig`), aangescherpt met de GEMMA-modelleerafspraken (`toegestaan`).
-Grondslag: ggm-exact | ggm-afgeleid | bron. `ggm_relatie`: de GUID's, leeg bij `bron`. `bronnen`: verplicht bij
-`bron`, bij `ggm-*` de bronnen die de relatie bevestigen.
+`ggm_match`: `exact` als de relatie een GGM-relatie tussen de gematchte entiteiten is, anders `geen` (ook bij een
+relatie die via een niet-opgenomen entiteit of een opgetilde kant uit het GGM volgt). `ggm_relatie`: de GUID's van de
+GGM-relatie of de keten. `bronnen`: altijd verplicht; het GGM is geen bron.
 
 Relaties uit de bronnen komen uit de tabel `## Relaties` van de bronanalyses (Van | Werkwoord | Naar | Vindplaats):
 de begrippen worden opgelost via de beoordelingen (naam of synoniem), een eigenschap, onderdeel of specialisatie
@@ -46,7 +47,7 @@ WIKI_ROOT = gam_gemeen.WIKI_ROOT
 
 RELATIES = kennismodel.RELATIETYPEN  # Nederlandse relatienaam → ArchiMate-relatie
 TOEGANG = tuple(HANDELINGEN) + tuple(VERANTWOORDELIJKHEDEN)
-GRONDSLAGEN = ("ggm-exact", "ggm-afgeleid", "bron")
+GGM_MATCHES = ("exact", "geen")
 KOLOMMEN = ["Relatie", "Naar", "Naam", "Kardinaliteit", "Grondslag", "GGM-relatie", "Bron"]
 BRON_ID_RE = gam_gemeen.BRON_ID_RE
 
@@ -234,7 +235,7 @@ class Kandidaat:
     doel: str
     naam: str
     kardinaliteit: str
-    grondslag: str
+    ggm_match: str
     ggm_relaties: list[str]
     gericht: bool = False
     terugmelding: str | None = None
@@ -286,7 +287,7 @@ def voorstel(element_id: str, data: dict, wiki_root: Path = WIKI_ROOT) -> list[K
             doel = ander if bron == element_id else element_id
             voeg_toe(Kandidaat(a["relatie"], bron, doel, rel.get("name", ""),
                                f"{_kaart(rel, a['bron']) or '?'} → {_kaart(rel, a['doel']) or '?'}",
-                               "ggm-exact" if not opgetild and hoe == "eigen" else "ggm-afgeleid",
+                               "exact" if not opgetild and hoe == "eigen" else "geen",
                                [rel["id"]], a["gericht"], a["terugmelding"] if not opgetild and hoe == "eigen" else None,
                                "" if hoe == "eigen" and not opgetild else f"opgetild ({hoe if hoe != 'eigen' else 'eigen zijde'})"))
             continue
@@ -309,7 +310,7 @@ def voorstel(element_id: str, data: dict, wiki_root: Path = WIKI_ROOT) -> list[K
             kaart_a = samengestelde_multipliciteit(_kaart(rel2, daar), _kaart(rel, hier))
             voeg_toe(Kandidaat(zwakste, element_id, toewijzing[verder][0],
                                f"{rel.get('name', '')} / {rel2.get('name', '')}".strip(" /"),
-                               f"{kaart_a or '?'} → {kaart_b or '?'}", "ggm-afgeleid", [rel["id"], rel2["id"]],
+                               f"{kaart_a or '?'} → {kaart_b or '?'}", "geen", [rel["id"], rel2["id"]],
                                zwakste == "association", None,
                                f"via {entiteiten.get(daar, {}).get('name', daar)} (niet opgenomen)"))
     return sorted(kandidaten.values(), key=lambda k: (k.bron != element_id, k.relatie, k.doel))
@@ -492,7 +493,7 @@ def uit_bronnen(rijen: list[dict], begrippen_: dict[str, dict]) -> tuple[list[Ka
             k = kandidaten[sleutel]
             k.bronnen += [b for b in r.get("bronnen", []) if b not in k.bronnen]
             continue
-        kandidaten[sleutel] = Kandidaat(a["relatie"], bron, doel, r.get("werkwoord", ""), "", "bron", [],
+        kandidaten[sleutel] = Kandidaat(a["relatie"], bron, doel, r.get("werkwoord", ""), "", "geen", [],
                                         a["gericht"], None, toelichting, a["toegang"], list(r.get("bronnen", [])),
                                         r.get("vindplaats", ""))
     return list(kandidaten.values()), vervallen
@@ -501,7 +502,7 @@ def uit_bronnen(rijen: list[dict], begrippen_: dict[str, dict]) -> tuple[list[Ka
 def combineer(ggm_kandidaten: list[Kandidaat], bron_kandidaten: list[Kandidaat]) -> tuple[list[Kandidaat], list[Kandidaat]]:
     """Match de gevonden relaties (uit de bronnen) op het GGM. Een GGM-kandidaat tussen dezelfde elementen als een
     bronrelatie wordt de match (bron-id's erbij); wijkt het relatietype af, dan staat dat in de toelichting. Een
-    bronrelatie zonder GGM-kandidaat blijft met grondslag `bron`. Geeft (voorstellen, GGM-kandidaten zonder gevonden
+    bronrelatie zonder GGM-kandidaat blijft met `ggm_match: geen`. Geeft (voorstellen, GGM-kandidaten zonder gevonden
     relatie); die laatste zijn geen voorstel, want het GGM is matchdoel en geen bron."""
     result: list[Kandidaat] = []
     gematcht: list[Kandidaat] = []
@@ -530,7 +531,7 @@ def als_relatie(k: Kandidaat) -> dict:
         soort += " (gericht)"
     if k.relatie == "access":
         soort += f" ({k.toegang or 'bijwerken'})"
-    r = {"soort": soort, "naar": k.doel, "naam": k.naam, "kardinaliteit": k.kardinaliteit, "grondslag": k.grondslag,
+    r = {"soort": soort, "naar": k.doel, "naam": k.naam, "kardinaliteit": k.kardinaliteit, "ggm_match": k.ggm_match,
          "ggm_relatie": k.ggm_relaties, "bronnen": k.bronnen, "vindplaats": k.vindplaats}
     return {s: w for s, w in r.items() if w not in ("", [], None)}
 
@@ -559,7 +560,7 @@ def yaml_voorstel(element_id: str, kandidaten: list[Kandidaat], alleen_ggm: list
             ander = k.doel if k.bron == element_id else k.bron
             hint = "; staat al in de beoordeling: matchen" if ander in bestaand else ""
             regels.append(f"#   {k.bron} -> {als_relatie(k)['soort']} -> {k.doel} ({k.naam or 'zonder naam'}; "
-                          f"{k.grondslag}: {', '.join(k.ggm_relaties)}{hint})")
+                          f"ggm_match {k.ggm_match}: {', '.join(k.ggm_relaties)}{hint})")
     return "\n".join(regels) + "\n"
 
 

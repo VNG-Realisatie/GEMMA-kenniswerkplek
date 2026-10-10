@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het door een uitspraak van de rechtbank ontstaan van de familierechtelijke betrekking tussen een kind en zijn adoptiefouders.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

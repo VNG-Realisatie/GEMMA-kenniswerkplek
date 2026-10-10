@@ -8,7 +8,6 @@ onderwerpen:
 - burgerzaken
 - lijkbezorging
 definitie: Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -93,12 +92,6 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Ambtenaar van de burgerlijke stand | voltrekt, ontvangt kennisgeving *toewijzing* | [Voltrekken huwelijk](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/voltrekken-huwelijk.md) | [BW boek 1](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 63; art. 44) |
 | Ambtenaar van de burgerlijke stand | maakt akte op, ontvangt kennisgeving *toewijzing* | [Registreren partnerschap](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-partnerschap.md) | [BW boek 1](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80a lid 3, 80g; art. 44) |
 | Ambtenaar van de burgerlijke stand | schrijft in *toewijzing* | [Inschrijven ontbinding huwelijk of partnerschap](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ontbinding-huwelijk-of-partnerschap.md) | [BW boek 1](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 80c lid 2, 163) |
-
-#### Inkomend
-
-| Van | Relatie | Naar | Bron |
-|---|---|---|---|
-| [Gemeentelijke lijkschouwer](gemeentelijke-lijkschouwer.md) | waarschuwt bij een niet-natuurlijke dood *associatie (gericht)* (*niet in het kennismodel, gaat niet mee in de export*) | Ambtenaar van de burgerlijke stand | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10 lid 1) |
 
 ## Herkomst
 

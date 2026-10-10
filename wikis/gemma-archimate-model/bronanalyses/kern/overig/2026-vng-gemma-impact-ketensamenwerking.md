@@ -1,7 +1,7 @@
 ---
 id: 2026-vng-gemma-impact-ketensamenwerking
 type: bronanalyse
-onderwerp: algemeen
+onderwerp: kern
 bronnen:
 - 2026-vng-gemma-impact-ketensamenwerking
 relevant: ja

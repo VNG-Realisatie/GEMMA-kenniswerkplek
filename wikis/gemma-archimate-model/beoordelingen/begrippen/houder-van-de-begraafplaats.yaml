@@ -211,8 +211,7 @@ synoniemen:
 - naam: Beheerder
   context: beleid
 naamkeuze:
-- 'De naam blijft de wetsterm houder van de begraafplaats (Wlb art. 23, 27, 37): die omvat ook de houder van een bijzondere begraafplaats (kerkgenootschap, rechtspersoon of natuurlijk persoon). De gangbare term beheerder van de begraafplaats dekt alleen de ambtenaar die bij een gemeentelijke begraafplaats de taken van de houder uitvoert, en is daarom synoniem (besluit redacteur 2026-10-08).'
-grondslag: bron
+- 'De naam blijft de wetsterm houder van de begraafplaats (Wlb art. 23, 27, 37): die omvat ook de houder van een bijzondere begraafplaats (kerkgenootschap, rechtspersoon of natuurlijk persoon). De gangbare term beheerder van de begraafplaats dekt alleen de ambtenaar die bij een gemeentelijke begraafplaats de taken van de houder uitvoert, en is daarom synoniem (besluit 2026-10-08).'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -220,42 +219,42 @@ relaties:
 - soort: toewijzing
   naar: ruimen-graf
   naam: geeft last tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 31 lid 2
 - soort: toewijzing
   naar: uitvoeren-lijkbezorging
   naam: stelt de identiteit vast bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 8 lid 2
 - soort: toewijzing
   naar: vervallen-verklaren-grafrecht
   naam: stelt verklaring van verwaarlozing op bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 28 lid 4
 - soort: toegang (houder)
   naar: begraafplaats
   naam: houdt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 8, 23
 - soort: toegang (bronhouder)
   naar: graf
   naam: houdt het register van begraven lijken bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 27
 - soort: toegang (houder)
   naar: graf
   naam: bepaalt wie begraven wordt in (algemeen graf)
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -263,7 +262,7 @@ relaties:
 - soort: toewijzing
   naar: beheren-begraafplaatsen
   naam: houdt in stand
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 33, 37

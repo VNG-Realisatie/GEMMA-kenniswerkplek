@@ -236,7 +236,6 @@ synoniemen:
   context: beleid
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -249,21 +248,21 @@ relaties:
 - soort: toegang (verstrekken)
   naar: ingeschreven-persoon
   naam: verstrekt gegevens van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
   vindplaats: Schema 1 t/m 4
 - soort: realisatie
   naar: brp-inzagerecht
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 91
 - soort: realisatie
   naar: brp-uittreksel
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
@@ -271,21 +270,21 @@ relaties:
 - soort: realisatie
   naar: brp-uittreksel-met-gezag
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 94
 - soort: realisatie
   naar: bewijs-van-in-leven-zijn
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
   vindplaats: Bewijs van in leven zijn (uittreksel BRP)
 - soort: realisatie
   naar: bewijs-van-nederlanderschap
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605

@@ -20,7 +20,7 @@ from llmwiki import hashing, paths
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 GEGENEREERD_PREFIX = "<!-- gegenereerd door "
-ALGEMEEN = "algemeen"  # het onderwerp van de generieke elementen en de organen van de gemeente (besluit 2026-10-06)
+GEDEELD = ("thematisch", "kern")  # `laag` van een onderwerp dat elementen voor meer onderwerpen houdt (regel Thuishoren)
 GEGENEREERD_RE = re.compile(r"^<!-- gegenereerd door (?P<tool>\S+); hash: (?P<hash>[0-9a-f]{64}) -->\n")
 
 
@@ -143,7 +143,7 @@ def bronanalyse_map(wiki_root: Path = WIKI_ROOT) -> Path:
 
 
 def bronanalyses(wiki_root: Path = WIKI_ROOT, onderwerp: str = "*") -> list[Path]:
-    """De bronanalyses, in `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md` (besluit redacteur 2026-10-08)."""
+    """De bronanalyses, in `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md`."""
     return sorted(bronanalyse_map(wiki_root).glob(f"{onderwerp}/*/*.md"))
 
 
@@ -161,7 +161,7 @@ def bron_doel(wiki_root: Path, bron_id: str) -> Path | None:
     """Waar een verwijzing naar deze bron heen linkt: de bronanalyse. Een modelbron (GGM, GEMMA) heeft geen
     bronanalyse (tools/ggm.py en tools/gemma.py zijn haar lens) en linkt naar haar tekst in sources/raw/. Een bron die
     voor de hele wiki geldt (Over GEMMA, de GEMMA-procesarchitectuur), heeft haar bronanalyse bij het onderwerp
-    Algemeen."""
+    Kern."""
     if bron_id in modelbronnen(wiki_root):
         pad = paths.find_repo_root(wiki_root) / "sources" / "raw" / f"{bron_id}.md"
         return pad.resolve() if pad.exists() else None
@@ -223,10 +223,16 @@ def thuis(data: dict) -> str:
     return data["onderwerpen"][0]
 
 
-def is_generiek(data: dict, uitkomst: dict | None) -> bool:
-    """Generiek element (kenmerk *generiek*) of thuis in het algemene onderwerp: telt niet mee voor de koppeling."""
+def gedeelde_onderwerpen(onderwerpen: dict[str, dict]) -> set[str]:
+    """De thematisch gedeelde onderwerpen en Kern: `laag` thematisch of kern (regel Thuishoren)."""
+    return {oid for oid, o in onderwerpen.items() if (o or {}).get("laag") in GEDEELD}
+
+
+def is_generiek(data: dict, uitkomst: dict | None, gedeeld: set[str] = frozenset()) -> bool:
+    """Generiek element (kenmerk *generiek*) of thuis in een thematisch gedeeld onderwerp of Kern (`gedeeld`): telt
+    niet mee voor de koppeling."""
     u = uitkomst or {}
-    return thuis(data) == ALGEMEEN or bool(u.get("generiek")) or u.get("objectniveau") == "generiek"
+    return thuis(data) in gedeeld or bool(u.get("generiek")) or u.get("objectniveau") == "generiek"
 
 
 def relaties_per_onderwerp(alle: dict[str, dict], elementen: set[str]) -> dict[str, dict[str, int]]:

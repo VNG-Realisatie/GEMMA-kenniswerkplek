@@ -5,11 +5,10 @@ archimate_type: business-actor
 status: goedgekeurd
 naam: Burgemeester
 onderwerpen:
-- algemeen
+- bestuur-en-organisatie
 - lijkbezorging
 - burgerzaken
 definitie: Bestuursorgaan van de gemeente, voorzitter van gemeenteraad en college, benoemd bij koninklijk besluit.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -109,8 +108,10 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 6](../../terugmeldingen/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** het kennismodel procesarchitectuur kent geen relaties tussen actoren; een actor wordt alleen aan een rol toegewezen ([2026-vng-over-gemma](../../bronanalyses/algemeen/overig/2026-vng-over-gemma.md), regel 602). **Bevinding:** tussen actoren bestaan structurele relaties die de gemeente nodig heeft om haar organisatie te beschrijven. De Gemeente omvat de Gemeenteraad, het College van B&W en de Burgemeester, en de Burgemeester is voorzitter van de raad en van het college ([2024-rijk-gemeentewet-wettekst](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), art. 6, 9, 34). Het model gebruikt tussen actoren alleen deze structurele relaties; een handeling tussen partijen loopt via rollen en processen of een gebeurtenis. **Voorstel:** neem in het kennismodel structurele relaties tussen actoren op (deel van, lid van, voorzitter van), als aggregatie of associatie; handelingen tussen partijen blijven lopen via rollen.
+- [Nummer 6](../../terugmeldingen/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **Kennismodel:** het kennismodel procesarchitectuur kent geen relaties tussen actoren; een actor wordt alleen aan een rol toegewezen ([2026-vng-over-gemma](../../bronanalyses/kern/overig/2026-vng-over-gemma.md), regel 602). **Bevinding:** tussen actoren bestaan structurele relaties die de gemeente nodig heeft om haar organisatie te beschrijven. De Gemeente omvat de Gemeenteraad, het College van B&W en de Burgemeester, en de Burgemeester is voorzitter van de raad en van het college ([2024-rijk-gemeentewet-wettekst](../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), art. 6, 9, 34). Het model gebruikt tussen actoren alleen deze structurele relaties; een handeling tussen partijen loopt via rollen en processen of een gebeurtenis. **Voorstel:** neem in het kennismodel structurele relaties tussen actoren op (deel van, lid van, voorzitter van), als aggregatie of associatie; handelingen tussen partijen blijven lopen via rollen.
 
 ### Besluiten redacteur
 
+- 2026-10-01: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
 - 2026-10-05: Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.
+- 2026-10-06: Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd. *Stand: geldt; Belanghebbende open (todo)*

@@ -228,7 +228,7 @@ relaties:
 - soort: toewijzing
   naar: opmaken-geboorteakte
   naam: doet aangifte
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-geboorteaangifte-doen
@@ -236,7 +236,7 @@ relaties:
 - soort: toewijzing
   naar: opmaken-akte-van-erkenning
   naam: erkent of stemt toe
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-kind-erkennen
@@ -244,7 +244,7 @@ relaties:
 - soort: toewijzing
   naar: inschrijven-levenloos-geboren-kind
   naam: verzoekt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
@@ -252,7 +252,7 @@ relaties:
 - soort: toewijzing
   naar: opmaken-akte-van-naamskeuze
   naam: verklaart naamskeuze
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
@@ -260,7 +260,7 @@ relaties:
 - soort: toewijzing
   naar: behandelen-aanvraag-reisdocument
   naam: geeft toestemming voor een minderjarige
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -268,13 +268,12 @@ relaties:
 - soort: toewijzing
   naar: verwerken-vermissing-reisdocument
   naam: meldt vermissing voor een kind
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   vindplaats: regel 35-37
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

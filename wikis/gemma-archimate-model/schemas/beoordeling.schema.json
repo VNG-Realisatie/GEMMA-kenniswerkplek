@@ -415,23 +415,6 @@
       "type": "string",
       "minLength": 1
     },
-    "grondslag": {
-      "enum": [
-        "ggm-entiteit",
-        "ggm-afgeleid",
-        "procesobject",
-        "regelgeving",
-        "bron"
-      ]
-    },
-    "grondslag_toelichting": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "minLength": 1
-      },
-      "description": "Bij regelgeving de juridische bron, bij procesobject het proces, bij ggm-afgeleid de afleiding"
-    },
     "ggm": {
       "type": "object",
       "required": [
@@ -743,7 +726,7 @@
         "required": [
           "soort",
           "naar",
-          "grondslag"
+          "ggm_match"
         ],
         "properties": {
           "soort": {
@@ -762,12 +745,12 @@
             "type": "string",
             "minLength": 1
           },
-          "grondslag": {
+          "ggm_match": {
             "enum": [
-              "ggm-exact",
-              "ggm-afgeleid",
-              "bron"
-            ]
+              "exact",
+              "geen"
+            ],
+            "description": "exact: de relatie is een GGM-relatie tussen de gematchte entiteiten (`ggm_relatie`); geen: geen GGM-relatie, ook niet bij een afgeleide keten"
           },
           "via": {
             "type": "string",
@@ -844,6 +827,11 @@
               "minLength": 1
             },
             "description": "De voorgelegde redenen (uit beslist.voor_te_leggen) die dit besluit dekt"
+          },
+          "stand": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Bij een besluit dat later herzien is of nog open staat: hoe het nu staat"
           }
         },
         "additionalProperties": false

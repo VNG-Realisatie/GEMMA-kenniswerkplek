@@ -218,7 +218,6 @@ synoniemen:
   context: HUP
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: ggm-entiteit
 ggm:
   guid: EAID_AF9534B0_7CBD_4061_9276_A7B6698B383A
   sterkte: exact
@@ -237,7 +236,7 @@ relaties:
 - soort: compositie
   naar: verblijfplaats
   naam: heeft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   - 2026-rijk-wet-brp-bwbr0033715
@@ -246,7 +245,7 @@ relaties:
   naar: reisdocument
   naam: is houder van
   kardinaliteit: 1 → 0..*
-  grondslag: ggm-exact
+  ggm_match: exact
   ggm_relatie:
   - EAID_423300D3_B0CE_4c89_BA5F_84D7317DE876
   bronnen:
@@ -258,7 +257,7 @@ relaties:
 - soort: associatie (gericht)
   naar: akte-van-de-burgerlijke-stand
   naam: gegevens ontleend aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-algemeen
   - 2026-rvig-hup-achtergronden-en-begrippen

@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: 52e615ec420a0860f1bc46967349073f4b82391ced85726441d30f252f58377c -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 764dd1940bbd548f16776a066e0bee6aaf5d99ec8a2030bf323f6bef31a66226 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-09T21:28:14. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 29 gekoppeld aan GEMMA, 225 nieuw. Relaties: 13 gekoppeld, 975 nieuw, 0 overgeslagen. Indelingen: 185 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-10T08:10:38. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 29 gekoppeld aan GEMMA, 225 nieuw. Relaties: 13 gekoppeld, 979 nieuw, 0 overgeslagen. Indelingen: 185 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
 
 Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de groep Kennismodel met een groep per laag (map Other / wiki-gemma-model / Kennismodel).
 
@@ -84,8 +84,6 @@ Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMM
 
 Relaties uit de beoordelingen die niet in het kennismodel van de wiki staan; ze gaan niet mee.
 
-- Besmet stoffelijk overschot gemeld → Stoffelijk overschot (associatie (gericht)): het object volgt uit het levensloopproces waaronder de gebeurtenis hangt
-- Gemeentelijke lijkschouwer → Ambtenaar van de burgerlijke stand (associatie (gericht)): een handeling tussen rollen loopt via een proces (toewijzing), een stroom of een gebeurtenis, zoals tussen actoren
 - Heffingsverordening → Grafonderhoud (associatie (gericht)): een object hangt via het proces dat de dienst realiseert (toegang) aan een dienst
 
 ## Wijzigt een GEMMA-element

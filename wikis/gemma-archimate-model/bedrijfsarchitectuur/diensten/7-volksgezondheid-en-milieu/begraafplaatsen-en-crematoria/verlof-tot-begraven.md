@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Toestemming van de gemeente om een stoffelijk overschot te begraven of te cremeren.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

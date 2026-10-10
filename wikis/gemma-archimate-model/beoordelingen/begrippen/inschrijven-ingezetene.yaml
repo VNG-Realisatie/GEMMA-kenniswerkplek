@@ -240,7 +240,6 @@ synoniemen:
   context: LO BRP
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -253,21 +252,21 @@ relaties:
 - soort: toegang (registreren)
   naar: ingeschreven-persoon
   naam: schrijft in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-immigratie
   vindplaats: inleiding
 - soort: toegang (registreren)
   naar: verblijfplaats
   naam: legt vast
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-immigratie
   vindplaats: Stap 5
 - soort: toegang (raadplegen)
   naar: akte-van-de-burgerlijke-stand
   naam: ontleent gegevens aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-immigratie
   - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
@@ -275,7 +274,7 @@ relaties:
 - soort: realisatie
   naar: brp-inschrijving
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
@@ -283,7 +282,7 @@ relaties:
 - soort: realisatie
   naar: persoonsgegevens-verklaring-onder-eed-of-belofte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rvig-hup-immigratie
@@ -291,7 +290,7 @@ relaties:
 - soort: realisatie
   naar: adoptie-aangifte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven

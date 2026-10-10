@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Wet die regelt hoe een stoffelijk overschot wordt geschouwd, begraven, gecremeerd of anders bezorgd, en welke taken de gemeente daarbij heeft.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -102,8 +101,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-De wet zelf ([2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)).
 
 | Korte titel | Bron |
 |---|---|

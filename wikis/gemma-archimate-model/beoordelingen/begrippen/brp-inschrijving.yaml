@@ -220,7 +220,6 @@ synoniemen:
   context: wet
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
@@ -230,7 +229,7 @@ relaties:
 - soort: bediening
   naar: aangever
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   vindplaats: Verplichte of bevoegde aangever

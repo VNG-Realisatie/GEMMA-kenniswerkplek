@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Wet over het verkeer op de weg, met de regels voor de aanvraag, afgifte en geldigheid van rijbewijzen en de taken van de RDW en het CBR.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -61,7 +60,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de wet over het verkeer op de weg (BWBR0006622), afgekort Wvw 1994. [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft de burgemeester de bevoegdheid tot afgifte van rijbewijzen en tot het afgeven van internationale rijbewijzen (art. 116, 117), en de gemeente het tarief bij plaatselijke verordening (art. 111 lid 5). [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van het kernobject Rijbewijs en Beheren rijbewijzen (UPL taakveld 0.2, besluit redacteur 2026-10-07). [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van het kernobject Rijbewijs en Beheren rijbewijzen (UPL taakveld 0.2, besluit 2026-10-07). [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde regeling als geheel (BWBR0006622). [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, wet van het Rijk. [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht; enkele onderdelen zijn nog niet in werking (wijzigingen zonder datum van inwerkingtreding). [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
@@ -85,8 +84,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-De regeling zelf ([2026-rijk-wegenverkeerswet-1994-bwbr0006622](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md)).
 
 | Korte titel | Bron |
 |---|---|

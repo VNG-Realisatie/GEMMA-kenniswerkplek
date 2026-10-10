@@ -241,7 +241,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: ingeschreven-persoon
   naam: wijzigt naamgebruik van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-wijziging-naamgebruik
   - 2026-rijk-wet-brp-bwbr0033715
@@ -249,7 +249,7 @@ relaties:
 - soort: realisatie
   naar: naamgebruik-verzoek-aanduiding
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
@@ -257,7 +257,6 @@ relaties:
   vindplaats: UPL nr. 257; Wet BRP art. 2.25
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:
@@ -287,3 +286,7 @@ beslist:
       GEMMA type: Bedrijfsproces
       Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
   pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-naamgebruik.md
+besluiten:
+- datum: '2026-10-10'
+  besluit: Bijhoudingsgemeente en Beslisser krijgen een toewijzing naar dit bedrijfsproces, met de bronnen van het kenmerk toegewezen partij, zoals bij de andere bedrijfsprocessen onder Bijhouden persoonsgegevens.
+  gevolg: verwerkt

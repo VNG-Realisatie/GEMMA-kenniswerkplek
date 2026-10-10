@@ -229,7 +229,6 @@ kenmerken:
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product.
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-vng-gemma-2026-10-02
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
@@ -245,7 +244,6 @@ synoniemen:
   context: wet
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA. Het specialiseert het generieke proces Behandelen aanvraag product.
@@ -258,21 +256,21 @@ relaties:
 - soort: toegang (registreren)
   naar: rijbewijs
   naam: geeft af
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 116, 118a
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: raadpleegt de basisregistratie personen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 33 lid 2
 - soort: realisatie
   naar: rijbewijs-aanvragen
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
@@ -280,7 +278,7 @@ relaties:
 - soort: realisatie
   naar: rijbewijs-verlengen
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
@@ -289,7 +287,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: rijbewijs
   naam: reikt uit en neemt het eerdere rijbewijs in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 119 lid 2, 120a
@@ -329,7 +327,6 @@ beslist:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-vng-gemma-2026-10-02
   herkomst: rijksregelgeving
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75

@@ -211,7 +211,6 @@ beschrijving:
 synoniemen:
 - naam: A-verklaring
   context: dagelijks gebruik
-grondslag: bron
 ggm:
   sterkte: geen
   onderbouwing: 'Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers).'

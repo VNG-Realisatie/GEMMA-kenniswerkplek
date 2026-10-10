@@ -221,14 +221,13 @@ homoniemen:
   waar: GGM-entiteit Rechthebbende (EAID_9AE5BCE3_AD6D_4241_9651_823400E3745F), beleidsdomein Archief
   naamkeuze: Deze pagina heet Rechthebbende op het graf; het GGM-begrip krijgt hier geen pagina.
 naamkeuze:
-- 'Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, art. 23, 28), Rechthebbende grafrecht. Gekozen is Rechthebbende op het graf (besluit redacteur 2026-09-30), omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief: iemand die rechten heeft op een goed).'
+- 'Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, art. 23, 28), Rechthebbende grafrecht. Gekozen is Rechthebbende op het graf (besluit 2026-09-30), omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief: iemand die rechten heeft op een goed).'
 besluiten:
 - datum: '2026-09-30'
   besluit: Naam Rechthebbende op het graf, niet Rechthebbende of Rechthebbende grafrecht, omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief).
   gevolg: opnemen
   redenen:
   - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -236,7 +235,7 @@ relaties:
 - soort: toewijzing
   naar: verlenen-grafrecht
   naam: vraagt aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -244,14 +243,14 @@ relaties:
 - soort: toewijzing
   naar: opgraven-stoffelijk-overschot
   naam: vraagt aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 28 lid 1
 - soort: toegang (partij)
   naar: grafrecht
   naam: heeft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -259,14 +258,14 @@ relaties:
 - soort: toewijzing
   naar: ruimen-graf
   naam: geeft toestemming voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 31 lid 2
 - soort: toewijzing
   naar: uitvoeren-lijkbezorging
   naam: machtigt tot begraving in het particulier graf
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

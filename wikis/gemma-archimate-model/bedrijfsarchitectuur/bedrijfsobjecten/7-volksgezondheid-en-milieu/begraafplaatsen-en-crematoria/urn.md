@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Houder waarin de as van een overledene wordt geborgen en wordt bewaard, bijgezet of verstrooid.
-grondslag: bron
 match:
   ggm: geen
   gemma: geen

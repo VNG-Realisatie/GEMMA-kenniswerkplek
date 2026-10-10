@@ -15,10 +15,14 @@ Vergelijk de definities, volg relaties en generalisaties, en kijk naar het belei
 | `exact` | Zelfde begrip, definitie klopt | `guid` invullen |
 | `sterk` | Zelfde begrip, definitie of reikwijdte wijkt licht af | `guid` invullen, afwijking in de onderbouwing, terugmelden |
 | `partieel` | GGM dekt een deel, of het element bundelt meerdere entiteiten | `guid` van de beste entiteit, toelichting, terugmelding overwegen |
-| `zwak` | Verwant, maar wezenlijk andere reikwijdte of granulariteit | Geen grondslag; hooguit een relatie noteren |
-| `geen` | Geen GGM-entiteit | Geen `guid`; grondslag zonder GGM |
+| `zwak` | Verwant, maar wezenlijk andere reikwijdte of granulariteit | Geen `guid`; hooguit een relatie noteren |
+| `geen` | Geen GGM-entiteit | Geen `guid`; bij een object zeg je in de onderbouwing in welk proces het ontstaat, met de bron |
 
 Een gegevensobject (`data_object: ja`) met een match zwakker dan `sterk` wordt voorgelegd. Elk bedrijfsobject en product heeft een `ggm`-blok, ook bij `geen`.
+
+## Wat het GGM dekt
+
+Het GGM modelleert vooral gegevens. Processen, functies, diensten, gebeurtenissen en regelingen zijn er doorgaans niet compleet in gedekt (uitzonderingen bestaan, bijv. GGM-beleidsdomein Normafwijking met Maatregel en Boete). Het ontbreken van een GGM-match is daar normaal en geen hiaat.
 
 ## Duplicaten en homoniemen
 

@@ -224,12 +224,11 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 relaties:
 - soort: toegang (registreren)
   naar: beschikking
   naam: besluit tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 43 lid 2, 44
@@ -237,7 +236,7 @@ relaties:
 - soort: toegang (beëindigen)
   naar: begraafplaats
   naam: sluit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 43, 44

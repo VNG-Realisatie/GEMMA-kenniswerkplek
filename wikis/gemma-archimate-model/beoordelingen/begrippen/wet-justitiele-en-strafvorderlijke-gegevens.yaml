@@ -26,7 +26,7 @@ kenmerken:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Verklaring omtrent het gedrag en Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Verklaring omtrent het gedrag en Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2, besluit 2026-10-07).'
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2025-vng-upl-producten-en-diensten-extern
@@ -209,34 +209,31 @@ beschrijving:
 per_onderwerp:
   burgerzaken:
   - Grondslag van het levensloopproces Afgeven verklaring omtrent het gedrag, het bedrijfsproces en de dienst. De UPL noemt art. 28, dat de VOG definieert; de gemeentelijke taak staat in art. 30 en 39 (procesarchitectuur-terugmelding).
-grondslag_toelichting:
-- De regeling zelf (2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194).
 relaties:
 - soort: associatie (gericht)
   naar: afgeven-verklaring-omtrent-het-gedrag
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 28-39
 - soort: associatie (gericht)
   naar: behandelen-aanvraag-verklaring-omtrent-het-gedrag
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 30, 39
 - soort: associatie (gericht)
   naar: verklaring-omtrent-gedrag-aanvragen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: art. 28, 30
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: regelgeving
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
@@ -259,8 +256,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2025-vng-upl-producten-en-diensten-extern

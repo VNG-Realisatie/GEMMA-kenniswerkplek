@@ -5,12 +5,10 @@ archimate_type: driver
 status: goedgekeurd
 naam: Model-APV
 onderwerpen:
-- algemeen
 - lijkbezorging
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
 definitie: Model van de VNG voor de algemene plaatselijke verordening, waarin een gemeente de openbare orde en andere onderwerpen van haar huishouding regelt.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -92,8 +90,6 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-De modelverordening zelf ([2023-vng-model-apv](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md)), genoemd als grondslag in de UPL ([2025-vng-upl-producten-en-diensten-extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), nr. 32).
 
 | Korte titel | Bron |
 |---|---|

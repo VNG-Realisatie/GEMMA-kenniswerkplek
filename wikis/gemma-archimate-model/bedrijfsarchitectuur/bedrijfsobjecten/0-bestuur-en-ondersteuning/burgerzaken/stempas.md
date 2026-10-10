@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Persoonlijk document waarmee een kiezer bij een verkiezing kan stemmen, toegezonden door de gemeente waar hij als kiezer is geregistreerd.
-grondslag: procesobject
 match:
   ggm: geen
   gemma: geen
@@ -38,7 +37,7 @@ Daags na de kandidaatstelling stelt de burgemeester de gegevens vast van de kiez
 
 Een stempas wordt ongeldig als er een kiezerspas, volmachtbewijs, vervangende stempas of briefstembewijs voor in de plaats komt, als de houder niet als kiezer behoort te zijn geregistreerd of is overleden, of als zij is ontvreemd; de burgemeester stelt de dag voor de stemming een uittreksel uit het register van ongeldige stempassen vast en vernietigt het register drie maanden na de toelating van de gekozenen (art. J 7a). Een kiezer kan een andere kiezer machtigen door zijn stempas om te zetten in een volmachtbewijs en over te dragen (art. L 14).
 
-Het stemmen zelf, de stembureaus en de uitslag vallen buiten dit onderwerp (besluit redacteur 2026-10-06, Afbakening Burgerzaken).
+Het stemmen zelf, de stembureaus en de uitslag vallen buiten dit onderwerp (besluit 2026-10-06, Afbakening Burgerzaken).
 
 ### Homoniemen
 
@@ -102,8 +101,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Bronnen
 
-Ontstaat in Beheren stempassen: de burgemeester verstrekt de stempas aan elke geregistreerde kiezer ([2026-rijk-kieswet-bwbr0004627](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), art. J 7).
-
 | Korte titel | Bron |
 |---|---|
 | [Kieswet](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
@@ -111,7 +108,7 @@ Ontstaat in Beheren stempassen: de burgemeester verstrekt de stempas aan elke ge
 
 ### Afstemming met GGM
 
-Geen GGM-entiteit. Het GGM kent geen stempas en geen ander begrip voor de verkiezingen (GGM-terugmelding 17).
+Geen GGM-entiteit. Het GGM kent geen stempas en geen ander begrip voor de verkiezingen (GGM-terugmelding 17). Ontstaat in Beheren stempassen: de burgemeester verstrekt de stempas aan elke geregistreerde kiezer ([2026-rijk-kieswet-bwbr0004627](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), art. J 7).
 
 GGM-terugmeldingen:
 

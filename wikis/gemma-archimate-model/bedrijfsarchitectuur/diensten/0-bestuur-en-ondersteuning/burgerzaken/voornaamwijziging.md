@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het laten opnemen van een door de rechtbank gewijzigde voornaam in de geboorteakte en de basisregistratie personen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -35,7 +34,7 @@ Het laten opnemen van een door de rechtbank gewijzigde voornaam in de geboorteak
 
 ### Beschrijving
 
-Het verzoek gaat met een advocaat naar de rechtbank; de gemeente heeft een eigen handeling na de beschikking en het product wordt daarom opgenomen (besluit redacteur 2026-10-06). Grondslag art. 4 BW 1 (UPL nr. 460).
+Het verzoek gaat met een advocaat naar de rechtbank; de gemeente heeft een eigen handeling na de beschikking en het product wordt daarom opgenomen (besluit 2026-10-06). Grondslag art. 4 BW 1 (UPL nr. 460).
 
 ## Plaats in het model
 

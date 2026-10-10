@@ -11,7 +11,6 @@ kenmerken:
     waarde: ja
     onderbouwing: Het leveren van gemeentelijke producten in het domein Openbare orde en veiligheid; daaronder de ontheffing voor asverstrooiing (UPL; APV Groningen art. 5:27 lid 3).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
     - 2025-vng-upl-producten-en-diensten-extern
     - 2025-groningen-algemene-plaatselijke-verordening
   buiten_dit_model:
@@ -215,7 +214,6 @@ per_onderwerp:
   lijkbezorging:
   - Asverstrooiing valt eronder, via Producten- en dienstenrealisatie veiligheidsdomein (UPL).
 domein: Openbare orde en veiligheid
-grondslag: bron
 gemma:
   id: id-de168a10-7030-4026-bd95-298e6a6cb3e2
   sterkte: exact
@@ -224,12 +222,16 @@ relaties:
 - soort: aggregatie
   naar: producten-en-dienstenrealisatie-veiligheidsdomein
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-vng-gemma-2026-10-02
   vindplaats: GEMMA-relatie id-aaa45392-d081-4a55-97d9-698db0f4934f
-toelichting: 'Vervalt in de wiki: de functie omvatte alleen Producten- en dienstenrealisatie veiligheidsdomein, die vervalt (besluit 5 in docs/wettelijke-grondslag.md: een functie vervalt als zij niets meer omvat). Het GEMMA-element blijft; GEMMA-terugmelding 1.'
+toelichting: 'Vervalt in de wiki: de functie omvatte alleen Producten- en dienstenrealisatie veiligheidsdomein, die vervalt (regel Wettelijke grondslag: een functie vervalt als zij niets meer omvat). Het GEMMA-element blijft; GEMMA-terugmelding 1.'
 besluiten:
+- datum: '2026-10-08'
+  besluit: 'Vervallen in de wiki: ze omvatten alleen Asverstrooiing, die geen landelijke grondslag en geen proces heeft; Asverstrooiing gaat naar Exploiteren van begraafplaatsen. De regel Wettelijke grondslag over bedrijfsfuncties blijft, met een aanvulling. De GEMMA-elementen blijven; voorstel in GEMMA-terugmelding 1, in een nieuw register van GEMMA-terugmeldingen met de opbouw van de GGM- en procesarchitectuur-terugmeldingen.'
+  gevolg: verwerkt
+  stand: geldt; GEMMA-terugmelding 1
 - datum: '2026-10-08'
   besluit: 'Vervalt in de wiki: omvat niets meer na het vervallen van Producten- en dienstenrealisatie veiligheidsdomein. Het GEMMA-element blijft in GEMMA; GEMMA-terugmelding 1.'
   gevolg: afwijzen

@@ -236,7 +236,6 @@ kenmerken:
     onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -247,7 +246,7 @@ relaties:
 - soort: toegang (beëindigen)
   naar: grafrecht
   naam: doet vervallen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -255,7 +254,7 @@ relaties:
 - soort: toegang (registreren)
   naar: beschikking
   naam: stelt op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 28 lid 4
@@ -263,7 +262,7 @@ relaties:
 - soort: triggering
   naar: verval-van-het-grafrecht
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

@@ -1,0 +1,15 @@
+naam: Kern
+laag: kern
+status: in-behandeling
+omschrijving:
+- 'Wat in het hele model voorkomt en te breed is voor een thema: elementen die elk onderwerp gebruikt, bij voorkeur met een match in GGM 99-kern (zoals Persoon, Adres, Zaak en Document), en rollen en functies van GEMMA die in meer onderwerpen gelden, zoals Ketenpartner en Producten- en dienstenrealisatie publieksdiensten. Een element komt hier alleen als geen eigen en geen thematisch gedeeld onderwerp past (regel Thuishoren).'
+- 'Hier staan ook de bronanalyses van bronnen die voor de hele wiki gelden: Over GEMMA en de GEMMA-procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking).'
+bronnen:
+- 2026-vng-over-gemma
+- 2026-vng-gemma-proceshierarchie
+- 2026-vng-gemma-impact-ketensamenwerking
+besluiten:
+- datum: '2026-10-06'
+  besluit: 'Onderwerp Algemeen: Nu een licht onderwerp Algemeen voor de generieke elementen en de organen en organisatie van de gemeente, vóór Burgerzaken: nog geen eigen bronnen en geen herbeoordeling; bestaande elementen verhuizen per geval door `algemeen` als eerste in `onderwerpen` te zetten.'
+- datum: '2026-10-10'
+  besluit: 'Onderwerp Algemeen vervalt: de elementen verhuizen per geval volgens de voorrangsregel van de regel Thuishoren (eigen onderwerp, thematisch gedeeld onderwerp, Kern): Besluit, Beschikking, Vergunning en Regeling naar Besluitvorming; Heffing en Heffingsverordening naar Heffingen en betalingen; Gemeente, Gemeenteraad, College van B&W, Burgemeester, Beslisser en Rijk naar Bestuur en organisatie; Ketenpartner en Producten- en dienstenrealisatie publieksdiensten naar Kern; Model-APV naar Lijkbezorging, het enige onderwerp dat haar gebruikt. De bronanalyses over het kennismodel gaan naar Kern. De objecten in Archi blijven.'

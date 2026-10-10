@@ -457,7 +457,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                 ET.SubElement(el, "documentation").text = g["documentatie"]
             paren = _gemma_eigen(g["eigenschappen"]) if g is not None else []
             paren += [(eig("id"), f"{bid}#{i + 1}"), *b.gemeen("gekoppeld" if g is not None else "nieuw"),
-                      (eig("grondslag"), r.get("grondslag", "")), (eig("bronnen"), "; ".join(r.get("bronnen", []))),
+                      (eig("GGM-match"), r.get("ggm_match", "")), (eig("bronnen"), "; ".join(r.get("bronnen", []))),
                       (eig("vindplaats"), r.get("vindplaats", ""))]
             bron_u, doel_u = data["beslist"]["uitkomst"], gekozen[r["naar"]]["beslist"]["uitkomst"]
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == doel_u.get("paginatype") == "bedrijfsproces":
@@ -549,7 +549,7 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
     """Aggregaties vanuit de GEMMA-groepering van de Beleidsdomeinindeling en de Functie-indeling naar domein, en vanuit
     de groeperingen van de wiki voor de Grondslagindeling en de Doelgroepindeling; een beleidsdomein dat GEMMA niet kent
     wordt een nieuwe groepering onder het taakveld. De beschrijving uit het register van beleidsdomeinen wordt de documentatie van een nieuwe groepering, en
-    bij een GEMMA-groepering een wiki-eigenschap: de documentatie van GEMMA blijft (besluit redacteur 2026-10-08)."""
+    bij een GEMMA-groepering een wiki-eigenschap: de documentatie van GEMMA blijft."""
     nieuwe: dict[str, str] = {}
     nieuwe_regelgeving: dict[str, str] = {}
     nieuwe_doelgroepen: dict[str, str] = {}
@@ -873,10 +873,9 @@ def _indeling_van(obj: ET.Element) -> str | None:
 
 
 def _zonder_plaats(b: Bouwer, gekozen: dict, ids: dict) -> list[str]:
-    """De elementen die in geen enkele indeling staan (besluit 2026-10-04: alles wordt ingedeeld, geen wezen). Een
+    """De elementen die in geen enkele indeling staan (alles wordt ingedeeld, geen wezen). Een
     element staat in een indeling als een aggregatie met een indeling naar haar wijst of als zij een specialisatie met een
-    indeling heeft. Een levensloopproces en een bedrijfsinteractie staan in de Beleidsdomeinindeling (besluit
-    2026-10-08)."""
+    indeling heeft. Een levensloopproces en een bedrijfsinteractie staan in de Beleidsdomeinindeling."""
     geplaatst = set()
     for m in b.wortel.values():
         for r in _alle_objecten(m):

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Hoedanigheid van degene die een optieverklaring aflegt om Nederlander te worden.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

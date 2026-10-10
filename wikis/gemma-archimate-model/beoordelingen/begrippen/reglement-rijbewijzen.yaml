@@ -26,7 +26,7 @@ kenmerken:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit 2026-10-07).'
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
     - 2025-vng-upl-producten-en-diensten-extern
@@ -209,34 +209,32 @@ beschrijving:
 per_onderwerp:
   burgerzaken:
   - 'Grondslag van de bedrijfsprocessen en diensten van het rijbewijs. Het is de wet die de UPL noemt voor rijbewijs (art. 26), rijbewijs verlengen (art. 35), rijbewijs buitenlands omwisseling (art. 45) en rijbewijs gezondheidsverklaring (art. 100); bij die laatste past de grondslag niet bij een gemeentelijke taak: de gezondheidsverklaring is een onderdeel (subdienst) van Rijbewijs aanvragen (procesarchitectuur-terugmelding).'
-grondslag_toelichting:
-- De regeling zelf (2026-rijk-reglement-rijbewijzen-bwbr0008074).
 relaties:
 - soort: associatie (gericht)
   naar: behandelen-aanvraag-rijbewijs
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 26-39; art. 105a, 109
 - soort: associatie (gericht)
   naar: behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 28, 45, 105, 109
 - soort: associatie (gericht)
   naar: verwerken-vermissing-rijbewijs
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 39
 - soort: associatie (gericht)
   naar: rijbewijs-aanvragen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2025-vng-upl-producten-en-diensten-extern
@@ -244,7 +242,7 @@ relaties:
 - soort: associatie (gericht)
   naar: rijbewijs-verlengen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2025-vng-upl-producten-en-diensten-extern
@@ -252,7 +250,7 @@ relaties:
 - soort: associatie (gericht)
   naar: rijbewijs-buitenlands-omwisseling
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2025-vng-upl-producten-en-diensten-extern
@@ -260,13 +258,12 @@ relaties:
 - soort: associatie (gericht)
   naar: vermissing-of-diefstal-rijbewijs-doorgeven
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 39 lid 1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: regelgeving
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
@@ -289,8 +286,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2025-vng-upl-producten-en-diensten-extern

@@ -5,11 +5,10 @@ archimate_type: business-role
 status: goedgekeurd
 naam: Beslisser
 onderwerpen:
-- algemeen
+- bestuur-en-organisatie
 - lijkbezorging
 - burgerzaken
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
-grondslag: bron
 match:
   gemma: sterk
 data_object: nee
@@ -34,6 +33,9 @@ bronnen:
 - 2026-rijk-kieswet-bwbr0004627
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
 - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+- 2026-rvig-hup-wijziging-naamgebruik
+- 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+- 2026-rvig-hup-overlijden-buitenland
 gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
 gemma_naam: Beslisser
 gemma_type: business-role
@@ -56,7 +58,7 @@ Verantwoordelijkheid voor het nemen van het besluit in een proces.
 
 ### Beschrijving
 
-Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit redacteur 2026-10-01).
+Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit 2026-10-01).
 
 ### Per onderwerp
 
@@ -127,6 +129,8 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Beslisser | beslist op een aanvraag tot wijziging *toewijzing* | [Registreren kiesgerechtigdheid](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md) | [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (art. D 7) |
 | Beslisser | besluit tot afgifte of weigering *toewijzing* | [Behandelen aanvraag rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md) | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) (WVW art. 116, 118a; Reglement art. 27) |
 | Beslisser | verklaart vervallen *toewijzing* | [Inhouden reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Paspoortwet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) (art. 44, 46) |
+| Beslisser | beslist over *toewijzing* | [Wijzigen naamgebruik](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-naamgebruik.md) | [HUP BRP: Wijziging naamgebruik](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md) (regel 34) |
+| Beslisser | beslist over *toewijzing* | [Verwerken buitenlands document](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-buitenlands-document.md) | [Utrecht Buitenlandse documenten inschrijven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md), [HUP BRP: Overlijden buitenland](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-overlijden-buitenland.md) (Utrecht: Na uw afspraak; HUP regel 33) |
 
 #### Inkomend
 
@@ -161,6 +165,9 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
 | [Wegenverkeerswet 1994](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) | Wegenverkeerswet 1994 |
 | [Reglement rijbewijzen](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) | Reglement rijbewijzen |
+| [HUP BRP: Wijziging naamgebruik](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md) | HUP BRP: Wijziging naamgebruik |
+| [Utrecht Buitenlandse documenten inschrijven](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md) | Gemeente Utrecht: Buitenlandse documenten inschrijven |
+| [HUP BRP: Overlijden buitenland](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-overlijden-buitenland.md) | HUP BRP: Overlijden buitenland |
 
 ### Afstemming met GEMMA
 
@@ -172,4 +179,7 @@ GEMMA-terugmeldingen:
 
 ### Besluiten redacteur
 
+- 2026-10-01: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
 - 2026-10-01: Burgemeester, college en raad hangen via de rol Beslisser (GEMMA) aan gedrag; het bevoegde orgaan per proces staat in de beschrijving van het proces.
+- 2026-10-06: Generiek: de GEMMA-rol Beslisser geldt in elk onderwerp en verhuist naar Algemeen (`algemeen` eerste in `onderwerpen`). Het kenmerk *generiek* blijft nee: Beslisser is zelf de generieke GEMMA-rol, geen variant daarvan. Belanghebbende hoort ook bij Algemeen; die beoordeling volgt (nog een verwijzing).
+- 2026-10-10: Thuis in Bestuur en organisatie, bij de organen die de rol vervullen (regel Thuishoren).

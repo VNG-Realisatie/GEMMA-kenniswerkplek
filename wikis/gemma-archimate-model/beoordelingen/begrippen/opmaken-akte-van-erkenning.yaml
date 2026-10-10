@@ -248,21 +248,20 @@ relaties:
 - soort: toegang (registreren)
   naar: akte-van-de-burgerlijke-stand
   naam: maakt akte van erkenning op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 203
 - soort: realisatie
   naar: erkenning-kind
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-kind-erkennen
   vindplaats: UPL nr. 129
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

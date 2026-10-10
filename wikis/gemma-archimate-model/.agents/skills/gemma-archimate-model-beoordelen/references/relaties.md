@@ -4,12 +4,12 @@ Een relatie staat één keer, in `relaties` van de beoordeling van het **bronele
 
 ```yaml
 relaties:
-  - {soort: compositie, naar: onderdeel-beschikking, naam: bevat, kardinaliteit: "1 → 1..*", grondslag: ggm-exact, ggm_relatie: [EAID_…], bronnen: [2026-overheid-awb], vindplaats: art. 1:3}
-  - {soort: associatie (gericht), naar: zaak, naam: hoort bij, grondslag: ggm-afgeleid, ggm_relatie: [EAID_…, EAID_…]}
-  - {soort: toegang (registreren), naar: beschikking, naam: stelt vast, grondslag: bron, bronnen: [2026-utrecht-nota], vindplaats: § 3.2}
+  - {soort: compositie, naar: onderdeel-beschikking, naam: bevat, kardinaliteit: "1 → 1..*", ggm_match: exact, ggm_relatie: [EAID_…], bronnen: [2026-overheid-awb], vindplaats: art. 1:3}
+  - {soort: associatie (gericht), naar: zaak, naam: hoort bij, ggm_match: geen, ggm_relatie: [EAID_…, EAID_…], bronnen: [2026-overheid-awb], vindplaats: art. 4:1}
+  - {soort: toegang (registreren), naar: beschikking, naam: stelt vast, ggm_match: geen, bronnen: [2026-utrecht-nota], vindplaats: § 3.2}
 ```
 
-`soort`: `associatie`, `associatie (gericht)`, `aggregatie`, `compositie`, `specialisatie`, `toewijzing`, `toegang (<handeling>)` vanuit gedrag of `toegang (<verantwoordelijkheid>)` vanuit een rol of bedrijfssamenwerking, `triggering`, `stroom`, `realisatie`, `bediening`. `grondslag`: `ggm-exact`, `ggm-afgeleid` of `bron`; bij `bron` zijn `bronnen` verplicht. `tools/beslissen.py` toetst of de relatie geldig is in ArchiMate en of het doel een element is; dat zijn de enige fouten.
+`soort`: `associatie`, `associatie (gericht)`, `aggregatie`, `compositie`, `specialisatie`, `toewijzing`, `toegang (<handeling>)` vanuit gedrag of `toegang (<verantwoordelijkheid>)` vanuit een rol of bedrijfssamenwerking, `triggering`, `stroom`, `realisatie`, `bediening`. `ggm_match`: `exact` (de relatie is een GGM-relatie tussen de gematchte entiteiten, met `ggm_relatie`) of `geen`; `bronnen` zijn altijd verplicht, want het GGM is geen bron. `tools/beslissen.py` toetst of de relatie geldig is in ArchiMate en of het doel een element is; dat zijn de enige fouten.
 
 ## Volgorde
 
@@ -18,7 +18,7 @@ Leg per element alle relaties vast die de bronnen noemen en die geldig zijn in A
 De stappen, in deze volgorde; bij het beoordelen gebeuren ze vaak tegelijk, uit dezelfde wettekst:
 
 1. **Grondslag:** *is grondslag voor* vanuit een beleidskader (regel Wettelijke grondslag).
-2. **Kernrelatie** van het type: de relatie die het kenmerk waarmaakt. Een kenmerk `ja` zonder zo'n relatie geeft een signaal.
+2. **Kernrelatie** van het type: de relatie die het kenmerk waarmaakt. Een kenmerk `ja` zonder zo'n relatie, bij het element of bij wat eronder ligt (regel Beslistabel beslist), geeft een signaal.
 3. **Indelingsrelaties:** levensloopproces → aggregatie → bedrijfsproces, de functieketen, het kernobject.
 4. **Overige relaties** uit de bronanalyse: per partij wat zij houdt, beheert, uitvoert of vervult; toegang met een handeling of verantwoordelijkheid.
 5. **GGM-match van de relatie**, alleen bij bedrijfsobjecten, data-objecten en beleidsdomeinen (zie `ggm-match.md`).
@@ -30,8 +30,8 @@ De stappen, in deze volgorde; bij het beoordelen gebeuren ze vaak tegelijk, uit 
 
 Het GGM is matchdoel, geen bron: een GGM-relatie dient alleen om een gevonden relatie te matchen. Bij het zoeken van de match past de tool deze regels toe:
 
-- **Mappen waar het kan.** `ggm-exact`: één GGM-relatie tussen de GGM-entiteiten van beide elementen.
-- **Subtypes overslaan.** Een relatie op een specialisatie zonder pagina of een GGM-component wordt opgetild naar het element dat die draagt. Een keten A–X–B via een niet-opgenomen X wordt A–B (`ggm-afgeleid`), met het zwakste type in de keten (compositie > aggregatie > associatie) en een samengestelde kardinaliteit. Specialisaties worden niet geketend. Relaties naar enumeraties vervallen (eigenschap); dubbelingen worden samengevoegd; lussen vervallen.
+- **Mappen waar het kan.** `ggm_match: exact`: één GGM-relatie tussen de GGM-entiteiten van beide elementen.
+- **Subtypes overslaan.** Een relatie op een specialisatie zonder pagina of een GGM-component wordt opgetild naar het element dat die draagt. Een keten A–X–B via een niet-opgenomen X wordt A–B (`ggm_match: geen`, met de keten in `ggm_relatie`), met het zwakste type in de keten (compositie > aggregatie > associatie) en een samengestelde kardinaliteit. Specialisaties worden niet geketend. Relaties naar enumeraties vervallen (eigenschap); dubbelingen worden samengevoegd; lussen vervallen.
 - **Relatietype.**
 
   | GGM | Voorwaarde | ArchiMate |
@@ -43,7 +43,7 @@ Het GGM is matchdoel, geen bron: een GGM-relatie dient alleen om een gevonden re
   | Association, Usage | — | associatie; gericht als de naam een leesrichting heeft |
   | Abstraction | "is een" | specialisatie, anders associatie; terugmeldkandidaat |
 
-Een gevonden relatie tussen dezelfde elementen als een GGM-relatie krijgt die als match (de bron komt erbij, de grondslag wordt `ggm-*`); zonder GGM-relatie wordt het een relatie met grondslag `bron`. Een GGM-relatie zonder gevonden relatie wordt geen voorstel: de tool noemt haar als commentaar, met een aanwijzing als er al een relatie met dat element in de beoordeling staat (match die dan met de hand). Neem haar alleen op als een bron haar noemt (regel Elke claim een bron).
+Een gevonden relatie tussen dezelfde elementen als een GGM-relatie krijgt die als match (de bron komt erbij; `ggm_match: exact`, of `geen` bij een opgetilde kant of een keten); zonder GGM-relatie wordt het een relatie met `ggm_match: geen`. Een GGM-relatie zonder gevonden relatie wordt geen voorstel: de tool noemt haar als commentaar, met een aanwijzing als er al een relatie met dat element in de beoordeling staat (match die dan met de hand). Neem haar alleen op als een bron haar noemt (regel Elke claim een bron).
 
 ## Uit de bronnen
 
@@ -75,4 +75,4 @@ Controleer elke voorgestelde relatie op richting en betekenis; de tool kent alle
 
 ## Terugmelden
 
-Alleen bij `ggm-exact`: fout type, richting, kardinaliteit, naam of een dubbele relatie → een terugmelding van type `relatie` in `beoordelingen/terugmeldingen/ggm.yaml` (het voorstel noemt kandidaten in het commentaar). Nieuwe en afgeleide relaties worden niet teruggemeld. Bij tegenspraak tussen wet en GGM wint de wet.
+Alleen bij `ggm_match: exact`: fout type, richting, kardinaliteit, naam of een dubbele relatie → een terugmelding van type `relatie` in `beoordelingen/terugmeldingen/ggm.yaml` (het voorstel noemt kandidaten in het commentaar). Nieuwe en afgeleide relaties worden niet teruggemeld. Bij tegenspraak tussen wet en GGM wint de wet.

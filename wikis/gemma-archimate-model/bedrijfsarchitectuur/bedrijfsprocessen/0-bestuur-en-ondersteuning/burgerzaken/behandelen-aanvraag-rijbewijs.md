@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een rijbewijs, tot de uitreiking of weigering, ook bij vernieuwing of vervanging.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -22,7 +21,6 @@ bronnen:
 - 2026-rijk-reglement-rijbewijzen-bwbr0008074
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
 - 2025-vng-upl-producten-en-diensten-extern
-- 2026-vng-gemma-2026-10-02
 ---
 
 # Behandelen aanvraag rijbewijs
@@ -98,7 +96,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | **klant tot klant**: Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? | Ja, ja, van de aanvraag tot de uitreiking of de weigering. [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md), [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, het besluit tot afgifte of de weigering door de burgemeester (Wegenverkeerswet 1994 art. 111, 112, 116, 118a). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de diensten Rijbewijs aanvragen en Rijbewijs verlengen (UPL nr. 360, 363). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product. [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 
 ### Relaties
 
@@ -133,7 +131,6 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Reglement rijbewijzen](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) | Reglement rijbewijzen |
 | [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) | Gemeente Utrecht: Rijbewijs aanvragen of verlengen |
 | [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
-| [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 
 ### Afstemming met GEMMA
 

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het wijzigen van de voornaam door de rechtbank of van de geslachtsnaam bij koninklijk besluit.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

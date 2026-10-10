@@ -7,7 +7,6 @@ naam: Houder van een plaats van bijzetting
 onderwerpen:
 - lijkbezorging
 definitie: Verantwoordelijkheid voor een plaats waar urnen worden bijgezet.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Rijkswet over de verkrijging, het verlies en de vaststelling van het Nederlanderschap.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -91,8 +90,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Bronnen
 
-De regeling zelf ([2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md)).
-
 | Korte titel | Bron |
 |---|---|
 | [Rijkswet op het Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) | Rijkswet op het Nederlanderschap |
@@ -106,4 +103,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
+- 2026-10-07: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap (optie, naturalisatie, afstand) en van Beheren stempassen en Registreren kiesgerechtigdheid.
 - 2026-10-07: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap, de optie, de naturalisatie en de afstand.

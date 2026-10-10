@@ -217,7 +217,6 @@ beschrijving:
 - Kiesgerechtigd voor de gemeenteraad zijn ingezetenen van achttien jaar en ouder, ook niet-Nederlanders met verblijfsrecht na vijf jaar verblijf; een EU-onderdaan kan zich registreren voor de verkiezing van het Europees Parlement (Kieswet art. B 1-B 3; HUP Europees kiesrecht). De gemeente registreert de kiesgerechtigdheid en deelt op verzoek mee of iemand als kiezer is geregistreerd (art. D 1, D 5). Grondslag art. B 1, B 2, B 2a, B 3 en Y 2 Kieswet; doelgroep burger, SDG; niet digitaal (UPL nr. 398). De UPL-naam noemt het recht; de dienst is de registratie en de mededeling (procesarchitectuur-terugmelding).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
@@ -225,7 +224,7 @@ relaties:
 - soort: bediening
   naar: kiezer
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. D 5

@@ -217,7 +217,6 @@ beschrijving:
 - De kiezer vraagt schriftelijk of mondeling een kiezerspas aan bij de burgemeester; daarmee kan hij stemmen in elk stembureau in het gebied van de verkiezing, en zijn stempas wordt ongeldig (Kieswet art. K 1, K 3, K 4, J 7a). Grondslag art. K 1 Kieswet; doelgroep burger; niet digitaal (UPL nr. 208).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
@@ -231,7 +230,7 @@ relaties:
 - soort: bediening
   naar: kiezer
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. K 3

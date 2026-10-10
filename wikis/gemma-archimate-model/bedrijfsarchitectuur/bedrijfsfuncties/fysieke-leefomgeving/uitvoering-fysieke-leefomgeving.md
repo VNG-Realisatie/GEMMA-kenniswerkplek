@@ -7,7 +7,6 @@ naam: Uitvoering fysieke leefomgeving
 onderwerpen:
 - lijkbezorging
 definitie: Het leveren van gemeentelijke producten en diensten die tot het ruimtelijk domein worden gerekend.
-grondslag: bron
 match:
   gemma: exact
 data_object: nee
@@ -65,7 +64,7 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 | Kenmerk | Onderbouwing |
 |---|---|
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie op domeinniveau (GEMMA type Bedrijfsfunctie domein), onder de laag Uitvoering. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het leveren van gemeentelijke producten en diensten in het ruimtelijk domein; daaronder de gemeentelijke begraafplaats die elke gemeente heeft (art. 33). [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md), [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het leveren van gemeentelijke producten en diensten in het ruimtelijk domein; daaronder de gemeentelijke begraafplaats die elke gemeente heeft (art. 33). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige functie in de GEMMA-functie-indeling, met eigen functies eronder. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
 | **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |

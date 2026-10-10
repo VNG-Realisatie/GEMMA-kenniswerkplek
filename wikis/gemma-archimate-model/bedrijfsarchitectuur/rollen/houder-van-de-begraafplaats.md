@@ -7,7 +7,6 @@ naam: Houder van de begraafplaats
 onderwerpen:
 - lijkbezorging
 definitie: Verantwoordelijkheid voor het in stand houden en beheren van een begraafplaats.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -48,7 +47,7 @@ Bij een gemeentelijke begraafplaats laat de gemeente de taken van de houder mees
 
 ### Naamkeuze
 
-De naam blijft de wetsterm houder van de begraafplaats (Wlb art. 23, 27, 37): die omvat ook de houder van een bijzondere begraafplaats (kerkgenootschap, rechtspersoon of natuurlijk persoon). De gangbare term beheerder van de begraafplaats dekt alleen de ambtenaar die bij een gemeentelijke begraafplaats de taken van de houder uitvoert, en is daarom synoniem (besluit redacteur 2026-10-08).
+De naam blijft de wetsterm houder van de begraafplaats (Wlb art. 23, 27, 37): die omvat ook de houder van een bijzondere begraafplaats (kerkgenootschap, rechtspersoon of natuurlijk persoon). De gangbare term beheerder van de begraafplaats dekt alleen de ambtenaar die bij een gemeentelijke begraafplaats de taken van de houder uitvoert, en is daarom synoniem (besluit 2026-10-08).
 
 ## Plaats in het model
 

@@ -11,7 +11,6 @@ kenmerken:
     waarde: ja
     onderbouwing: Het leveren van gemeentelijke publieksdiensten; daaronder het verlof tot begraving of crematie van de ambtenaar van de burgerlijke stand (art. 11).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
     waarde: nee
@@ -214,7 +213,6 @@ per_onderwerp:
   lijkbezorging:
   - Het verlof tot begraving of crematie valt eronder, via Producten- en dienstenrealisatie publieksdiensten en Burgerlijke stand diensten.
 domein: Publieksdiensten
-grondslag: bron
 gemma:
   id: id-f54b116c-22f4-4f01-bf6d-997debf536c3
   sterkte: exact
@@ -223,7 +221,7 @@ relaties:
 - soort: aggregatie
   naar: producten-en-dienstenrealisatie-publieksdiensten
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-vng-gemma-2026-10-02
   vindplaats: GEMMA-relatie id-ec3df199-3782-479d-874e-73b99b31262b

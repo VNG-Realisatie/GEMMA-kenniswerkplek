@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Een gewaarmerkt uittreksel met de eigen gegevens uit de basisregistratie personen, als officieel bewijs van inschrijving.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

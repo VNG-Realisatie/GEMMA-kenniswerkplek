@@ -249,35 +249,35 @@ relaties:
 - soort: toegang (verstrekken)
   naar: akte-van-de-burgerlijke-stand
   naam: verstrekt afschriften en uittreksels van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 23
 - soort: realisatie
   naar: overlijdensakte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 316
 - soort: realisatie
   naar: geboorteakte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 137
 - soort: realisatie
   naar: geboorteakte-levenloos-kind
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 138
 - soort: realisatie
   naar: verklaring-van-huwelijksbevoegdheid
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
@@ -285,7 +285,7 @@ relaties:
 - soort: realisatie
   naar: uittreksel-burgerlijke-stand
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
@@ -293,14 +293,13 @@ relaties:
 - soort: realisatie
   naar: bewijs-van-in-leven-zijn
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: UPL nr. 61; art. 19k
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

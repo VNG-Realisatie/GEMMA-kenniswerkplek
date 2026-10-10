@@ -212,7 +212,6 @@ kenmerken:
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-    - 2026-vng-gemma-2026-10-02
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
@@ -223,7 +222,6 @@ beschrijving:
 - De kiezer richt zijn verzoek schriftelijk, tot de vijfde dag voor de stemming, of mondeling in persoon, tot de dag voor de stemming om twaalf uur, aan de burgemeester van de gemeente waar hij op de dag van de kandidaatstelling als kiezer is geregistreerd, met een kopie van een identiteitsbewijs; de burgemeester maakt de termijnen bekend in het gemeenteblad (Kieswet art. K 3, K 6). Als bewijs krijgt de kiezer een kiezerspas, waarmee hij in het hele gebied van de verkiezing kan stemmen; een kwijtgeraakte kiezerspas wordt niet vervangen en de stempas wordt ongeldig (art. K 1, K 4, J 7a).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -234,14 +232,14 @@ relaties:
 - soort: toegang (registreren)
   naar: stempas
   naam: reikt een kiezerspas uit in plaats van de stempas
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. K 4, J 7a lid 2 onder a
 - soort: realisatie
   naar: kiezerspas
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627
@@ -262,7 +260,6 @@ beslist:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627
-  - 2026-vng-gemma-2026-10-02
   herkomst: rijksregelgeving
   gemma_generiek:
     gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75

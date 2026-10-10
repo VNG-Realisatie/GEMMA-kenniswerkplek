@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het laten voltrekken van een huwelijk door de ambtenaar van de burgerlijke stand, op een gekozen datum en locatie.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

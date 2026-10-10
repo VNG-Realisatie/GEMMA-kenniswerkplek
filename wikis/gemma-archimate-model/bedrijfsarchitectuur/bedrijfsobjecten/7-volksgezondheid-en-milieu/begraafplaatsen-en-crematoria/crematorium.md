@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Inrichting waar stoffelijke overschotten worden gecremeerd en de as wordt geborgen.
-grondslag: bron
 match:
   ggm: geen
   gemma: geen
@@ -100,4 +99,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-09-30: Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.
+- 2026-10-04: Kernobject van het nieuwe bedrijfsproces Beheren crematoria, met het nieuwe deelproces Verlenen vergunning bijzonder crematorium (Wlb art. 53–55). *Stand: geldt; procesniveaus herzien 2026-10-08: Beheren crematoria is levensloopproces*
 - 2026-10-05: Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie.

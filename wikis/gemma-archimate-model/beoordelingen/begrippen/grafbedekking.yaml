@@ -215,7 +215,6 @@ synoniemen:
   context: beleid
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-grondslag: bron
 ggm:
   sterkte: geen
   onderbouwing: 'Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers).'
@@ -226,7 +225,7 @@ relaties:
 - soort: associatie (gericht)
   naar: graf
   naam: staat op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen

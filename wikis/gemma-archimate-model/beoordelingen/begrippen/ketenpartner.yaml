@@ -1,6 +1,6 @@
 begrip: Ketenpartner
 onderwerpen:
-- algemeen
+- kern
 - lijkbezorging
 - burgerzaken
 kenmerken:
@@ -8,7 +8,6 @@ kenmerken:
     waarde: ja
     onderbouwing: GEMMA kent de rol Ketenpartner en de doelgroep Ketenpartners; de officier van justitie is ketenpartner in de lijkbezorging (art. 10, 12).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
     waarde: ja
@@ -28,9 +27,8 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Generieke GEMMA-rol die in elk onderwerp kan gelden; nu in lijkbezorging en burgerzaken: thuisonderwerp Algemeen (regel Thuishoren; precedent Beslisser, besluit redacteur 2026-10-06).'
+    onderbouwing: 'Generieke GEMMA-rol die in elk onderwerp kan gelden; nu in lijkbezorging en burgerzaken: thuisonderwerp Kern, want geen thematisch gedeeld onderwerp past (regel Thuishoren).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   gedrag:
     waarde: nee
@@ -208,7 +206,6 @@ per_onderwerp:
   burgerzaken:
   - 'Het Rijk is ketenpartner in Beheren Nederlanderschap via de minister van Justitie en Veiligheid, in de praktijk de IND: hij ontvangt het naturalisatieverzoek met het advies van de burgemeester, beoordeelt het en beslist; de Koning verleent het Nederlanderschap op zijn voordracht, en hij adviseert bij sommige opties en kan het Nederlanderschap intrekken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Rijkswet op het Nederlanderschap art. 6 lid 3, 7, 15; Utrecht). Het Rijk is ook ketenpartner in Afgeven verklaring omtrent het gedrag via de minister van Justitie en Veiligheid, in de praktijk Justis: de gemeente ontvangt, controleert en zendt door, de minister onderzoekt het gedrag en beslist (Wet justitiële en strafvorderlijke gegevens art. 30, 36, 37; Utrecht). Bijhouden persoonsgegevens, Beheren reisdocumenten en Beheren rijbewijzen zijn geen keten: de minister van BZK voert daar tegenover de burger geen eigen deel uit, en de RDW en het CBR leveren productie, register en verklaring van geschiktheid als invoer terwijl de burgemeester besluit (Wegenverkeerswet 1994 art. 116, 118a; Reglement rijbewijzen art. 97, 105, 119).'
 doelgroep: ketenpartners
-grondslag: bron
 gemma:
   id: id-e03a0402-1890-4a21-8143-c44a8ba53ea4
   sterkte: exact
@@ -217,28 +214,28 @@ relaties:
 - soort: toewijzing
   naar: bezorgen-stoffelijk-overschot
   naam: voert zijn deel uit van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 10, 12, 17
 - soort: toewijzing
   naar: stellen-andere-termijn
   naam: stemt in met vervroegen bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17 lid 1
 - soort: toewijzing
   naar: schouwen-stoffelijk-overschot
   naam: schouwt als behandelende arts
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 3, 7 lid 1
 - soort: toewijzing
   naar: beheren-nederlanderschap
   naam: beoordeelt en beslist over de naturalisatie
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
@@ -246,7 +243,7 @@ relaties:
 - soort: toewijzing
   naar: afgeven-verklaring-omtrent-het-gedrag
   naam: onderzoekt het gedrag en beslist over de afgifte
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
@@ -276,7 +273,6 @@ beslist:
     generiek: false
     typeregel: 12
   bronnen:
-  - 2026-vng-gemma-2026-10-02
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

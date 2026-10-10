@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het door een uitspraak van de rechtbank ontstaan van het juridisch ouderschap van een man of vrouw over een kind.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

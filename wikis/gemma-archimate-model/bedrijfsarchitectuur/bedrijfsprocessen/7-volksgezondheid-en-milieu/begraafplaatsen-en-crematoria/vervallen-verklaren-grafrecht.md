@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het beëindigen van een grafrecht door de gemeente, bijvoorbeeld bij verwaarlozing van het graf of het uitblijven van betaling.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -197,7 +197,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie (besluit redacteur 2026-09-30).
+    onderbouwing: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie (besluit 2026-09-30).
     bronnen:
     - 2026-vng-retributies
   generiek:
@@ -215,7 +215,6 @@ per_onderwerp:
   - 'De gemeente heft lijkbezorgingsrechten, ook begraafplaatsrechten genoemd: retributies voor het gebruik van de gemeentelijke begraafplaats of het crematorium, voor de uitgifte en het onderhoud van graven en urnen, en voor gemeentelijke diensten (VNG retributies; Groningen art. 8, 23).'
   burgerzaken:
   - De gemeente heft rechten voor de handelingen van de burgemeester ten behoeve van de aanvraag van een reisdocument; ze gelden als gemeentelijke belasting en worden bij de indiening voldaan (Paspoortwet art. 7 lid 2 en 4, 33).
-grondslag: ggm-entiteit
 ggm:
   guid: EAID_B3371695_97AD_49d2_9AF1_15591B422007
   sterkte: exact
@@ -237,23 +236,27 @@ besluiten:
 - datum: '2026-09-30'
   besluit: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie.
   gevolg: verwerkt
+- datum: '2026-10-06'
+  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
+  gevolg: verwerkt
+  stand: geldt; Belanghebbende open (todo)
 relaties:
 - soort: associatie (gericht)
   naar: begraafplaats
   naam: voor het gebruik van (lijkbezorgingsrechten)
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-vng-retributies
   vindplaats: § Lijkbezorgingsrechten
 - soort: associatie (gericht)
   naar: crematorium
   naam: voor het gebruik van (lijkbezorgingsrechten)
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-vng-retributies
   vindplaats: § Lijkbezorgingsrechten
 onderwerpen:
-- algemeen
+- heffingen-en-betalingen
 - lijkbezorging
 - burgerzaken
 status: goedgekeurd

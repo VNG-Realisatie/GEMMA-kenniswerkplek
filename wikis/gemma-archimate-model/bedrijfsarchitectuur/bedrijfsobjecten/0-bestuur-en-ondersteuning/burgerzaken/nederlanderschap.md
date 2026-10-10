@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: De Nederlandse nationaliteit van een persoon, verkregen van rechtswege, door optie of door naturalisatie, tot het verlies ervan.
-grondslag: ggm-entiteit
 match:
   ggm: sterk
   gemma: geen

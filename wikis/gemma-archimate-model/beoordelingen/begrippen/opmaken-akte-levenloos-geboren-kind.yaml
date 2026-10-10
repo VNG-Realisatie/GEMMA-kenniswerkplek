@@ -241,20 +241,19 @@ relaties:
 - soort: toegang (registreren)
   naar: akte-van-de-burgerlijke-stand
   naam: maakt akte op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 19i
 - soort: realisatie
   naar: doodgeboren-kind-aangifte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 118
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

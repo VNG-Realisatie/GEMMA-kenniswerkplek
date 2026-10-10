@@ -221,7 +221,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
-toelichting: 'Processtap zonder pagina: de medewerker stelt bij elke aangifte of aanvraag de identiteit vast aan de hand van een identiteitsdocument, volgens het ID-protocol van de NVVB. Het is een stap in onder meer Inschrijven ingezetene en Verwerken adreswijziging, zonder eigen besluit, eigen wettelijke regels of eigen product. GEMMA kent daarnaast de generieke bedrijfsfunctie Identiteitvaststelling (Niet domeingebonden), die later in Algemeen kan worden beoordeeld.'
+toelichting: 'Processtap zonder pagina: de medewerker stelt bij elke aangifte of aanvraag de identiteit vast aan de hand van een identiteitsdocument, volgens het ID-protocol van de NVVB. Het is een stap in onder meer Inschrijven ingezetene en Verwerken adreswijziging, zonder eigen besluit, eigen wettelijke regels of eigen product. GEMMA kent daarnaast de generieke bedrijfsfunctie Identiteitvaststelling (Niet domeingebonden), die later in Kern kan worden beoordeeld.'
 synoniemen:
 - naam: Identiteitsvaststelling
   context: beleid

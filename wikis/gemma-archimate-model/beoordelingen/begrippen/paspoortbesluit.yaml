@@ -208,9 +208,6 @@ beleidsdomein: Burgerzaken
 per_onderwerp:
   burgerzaken:
   - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Reisdocument niet-ingezetene (UPL nr. 356 en 357) en van de bedrijfsprocessen waarin de gemeente reisdocumenten aanvraagt, uitreikt en inhoudt.'
-grondslag: regelgeving
-grondslag_toelichting:
-- De regeling zelf (2026-rijk-paspoortbesluit-bwbr0044308).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
@@ -219,42 +216,42 @@ relaties:
 - soort: associatie (gericht)
   naar: behandelen-aanvraag-reisdocument
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 2.1, 3.1, 3.2, 3.6; art. 4.6, 7.1
 - soort: associatie (gericht)
   naar: paspoort-tweede
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 2.14, 2.15, 3.1, 4.1
 - soort: associatie (gericht)
   naar: reisdocument-niet-ingezetene
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 3.2, 4.2
 - soort: associatie (gericht)
   naar: paspoortwet
   naam: werkt uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: aanhef
 - soort: associatie (gericht)
   naar: inhouden-reisdocument
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 6.1, 7.1
 - soort: associatie (gericht)
   naar: behandelen-aanvraag-reisdocument-niet-ingezetene
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 3.2, 4.2
@@ -276,8 +273,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   herkomst: rijksregelgeving

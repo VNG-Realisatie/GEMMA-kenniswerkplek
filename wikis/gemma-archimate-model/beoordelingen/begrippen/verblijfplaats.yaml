@@ -220,7 +220,6 @@ synoniemen:
   context: GGM
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: ggm-entiteit
 ggm:
   guid: EAID_F6DAC299_3F19_45c6_BFFE_EB38C1C51459
   sterkte: exact

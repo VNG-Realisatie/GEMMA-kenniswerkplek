@@ -242,14 +242,14 @@ relaties:
 - soort: toegang (bijwerken)
   naar: akte-van-de-burgerlijke-stand
   naam: voegt latere vermelding toe aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 20
 - soort: realisatie
   naar: achternaamwijziging
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
@@ -257,7 +257,7 @@ relaties:
 - soort: realisatie
   naar: voornaamwijziging
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
@@ -267,7 +267,6 @@ bronnen:
 - 2026-rvig-hup-ontkenning-ouderschap
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

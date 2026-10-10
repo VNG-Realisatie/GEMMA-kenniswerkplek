@@ -229,9 +229,6 @@ naamkeuze:
 per_onderwerp:
   burgerzaken:
   - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De BRP-items zijn diensten die bedrijfsprocessen onder Bijhouden persoonsgegevens realiseren; de wet is daarom grondslag van die diensten en bedrijfsprocessen (UPL nr. 1, 6, 62, 85 tot en met 95, 257, 335, 369, 424) en niet van een product.'
-grondslag: regelgeving
-grondslag_toelichting:
-- De wet zelf (BWBR0033715), zoals de UPL haar als grondslag noemt en het Besluit BRP haar uitwerkt (Wet BRP art. 1.1–1.10).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze wet; nieuw voor GEMMA.
@@ -240,7 +237,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-inschrijving
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -248,7 +245,7 @@ relaties:
 - soort: associatie (gericht)
   naar: verhuismelding
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -256,7 +253,7 @@ relaties:
 - soort: associatie (gericht)
   naar: aangifte-vertrek-buitenland
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -264,7 +261,7 @@ relaties:
 - soort: associatie (gericht)
   naar: briefadres-aanvragen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -272,7 +269,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-uittreksel
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -280,7 +277,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-inzagerecht
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -288,7 +285,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-geheimhoudingsverzoek
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -296,7 +293,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-wijzigingsverzoek
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -304,7 +301,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-adoptie-uitschrijving
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -312,7 +309,7 @@ relaties:
 - soort: associatie (gericht)
   naar: rni-inschrijving
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -320,7 +317,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-inzagerecht-gegevensverstrekking
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -328,7 +325,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-inschrijving-niet-in-leven-zijnd-kind
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -336,7 +333,7 @@ relaties:
 - soort: associatie (gericht)
   naar: adoptie-aangifte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -344,7 +341,7 @@ relaties:
 - soort: associatie (gericht)
   naar: naamgebruik-verzoek-aanduiding
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -352,7 +349,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-inschrijving-buitenlandse-akte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -360,7 +357,7 @@ relaties:
 - soort: associatie (gericht)
   naar: bewijs-van-nederlanderschap
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -368,7 +365,7 @@ relaties:
 - soort: associatie (gericht)
   naar: brp-uittreksel-met-gezag
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -376,7 +373,7 @@ relaties:
 - soort: associatie (gericht)
   naar: persoonsgegevens-verklaring-onder-eed-of-belofte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern
@@ -384,130 +381,133 @@ relaties:
 - soort: associatie (gericht)
   naar: briefadres
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 1.1, 2.23, 2.40
 - soort: associatie (gericht)
   naar: inschrijven-op-briefadres
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.23, 2.40, 2.41, 2.45
 - soort: associatie (gericht)
   naar: briefadresgever
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 1.1, 2.42, 2.45
 - soort: associatie (gericht)
   naar: verblijfplaats
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 1.1 onder o, p, q, 2.7 lid 1, 2.20, 2.39
 - soort: associatie (gericht)
   naar: verwerken-adreswijziging
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.20, 2.39
 - soort: associatie (gericht)
   naar: verhuizing
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.39
 - soort: associatie (gericht)
   naar: emigratie
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.43
 - soort: associatie (gericht)
   naar: vestiging-vanuit-het-buitenland
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.38
 - soort: associatie (gericht)
   naar: behandelen-verzoek-om-correctie
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.58
 - soort: associatie (gericht)
   naar: behandelen-verzoek-om-geheimhouding
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.59
 - soort: associatie (gericht)
   naar: behandelen-verzoek-om-verwijdering-van-gegevens
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.57
 - soort: associatie (gericht)
   naar: wijzigen-naamgebruik
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.25
 - soort: associatie (gericht)
   naar: ingeschreven-persoon
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 1.1 onder e, f, 2.2, 2.7
 - soort: associatie (gericht)
   naar: bijhoudingsgemeente
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 1.1 onder h, 1.4 lid 1
 - soort: associatie (gericht)
   naar: toezichthouder-brp
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 4.2
 - soort: associatie (gericht)
   naar: onjuiste-inschrijving-op-adres-melden
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.20 lid 2, 2.22, 2.26
 - soort: associatie (gericht)
   naar: inschrijven-niet-ingezetene
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.64, 2.66, 2.67
 - soort: associatie (gericht)
   naar: rni-loket
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.64, 2.67 lid 3, 2.79
 besluiten:
+- datum: '2026-10-07'
+  besluit: Opnemen als beleidskader; grondslag van de BRP-diensten en -deelprocessen.
+  gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: grondslag van de BRP-diensten in de UPL en kader van Besluit en Regeling BRP.'
   gevolg: opnemen
@@ -525,8 +525,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern

@@ -211,9 +211,6 @@ naamkeuze:
 per_onderwerp:
   burgerzaken:
   - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De UPL noemt het besluit bij geen enkel item; het is grondslag van Bijhouden burgerlijke stand en van de dienst Uittreksel burgerlijke stand (art. 24, 26), die de akte als afschrift of uittreksel verstrekt.'
-grondslag: regelgeving
-grondslag_toelichting:
-- Het besluit zelf (BWBR0006493), ter uitvoering van titel 4 van Boek 1 BW.
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor dit besluit; nieuw voor GEMMA.
@@ -222,21 +219,21 @@ relaties:
 - soort: associatie (gericht)
   naar: bijhouden-burgerlijke-stand
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   vindplaats: art. 5-7, 26
 - soort: associatie (gericht)
   naar: burgerlijk-wetboek-boek-1
   naam: werkt uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   vindplaats: aanhef; hoofdstuk 1
 - soort: associatie (gericht)
   naar: uittreksel-burgerlijke-stand
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   vindplaats: art. 24, 26
@@ -260,8 +257,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   herkomst: rijksregelgeving

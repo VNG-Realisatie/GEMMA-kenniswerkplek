@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Rijkswet over de soorten reisdocumenten, de aanspraak erop en de aanvraag, verstrekking, uitreiking, vervallenverklaring, het verval en de inhouding.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -94,8 +93,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-De regeling zelf ([2026-rijk-paspoortwet-bwbr0005212](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md)).
 
 | Korte titel | Bron |
 |---|---|

@@ -217,7 +217,6 @@ beschrijving:
 - In de BRP staan de gegevens over uitgereikte Nederlandse reisdocumenten en een signalering in categorie 12 van de persoonslijst; een nooddocument, diplomatiek paspoort, dienstpaspoort of buitenlands reisdocument wordt niet opgenomen (HUP Reisdocument; HUP Uitreiking; LO BRP 4.4).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: ggm-entiteit
 ggm:
   guid: EAID_CA9BC1BB_D572_4e47_BECF_17CFD379BD6A
   sterkte: sterk
@@ -249,11 +248,20 @@ relaties:
 - soort: associatie (gericht)
   naar: ingeschreven-persoon
   naam: staat op naam van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-reisdocument
   vindplaats: Paspoortwet art. 1 onder f, 26; HUP Reisdocument
+besluiten:
+- datum: '2026-10-07'
+  besluit: 'Reisdocument is kernobject van het nieuwe bedrijfsproces Beheren reisdocumenten onder Verzorgen burgerzaken (geen ketenproces: de minister voert tegenover de houder geen eigen deel uit), met de deelprocessen voor aanvraag, aanvraag niet-ingezetene, uitreiking, vermissing, inhouding en vervallenverklaring; de documentsoorten zijn specialisaties zonder pagina met de wetsterm, de diensten houden de UPL-naam.'
+  gevolg: verwerkt
+  stand: 'deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren reisdocumenten is levensloopproces'
+- datum: '2026-10-07'
+  besluit: Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12).
+  gevolg: verwerkt
+  stand: 'herzien door 2026-10-07: Akte van de burgerlijke stand opgenomen, Reisdocument kernobject'
 status: goedgekeurd
 beslist:
   uitkomst:

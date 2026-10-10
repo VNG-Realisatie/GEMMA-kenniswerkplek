@@ -207,7 +207,6 @@ beschrijving:
 per_onderwerp:
   lijkbezorging:
   - Op de gemeentelijke begraafplaats is de gemeente houder van de urnengraven en urnennissen (Groningen art. 1 u, v, 3).
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -215,21 +214,21 @@ relaties:
 - soort: toewijzing
   naar: ruimen-graf
   naam: ruimt asbussen bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 66
 - soort: toegang (bronhouder)
   naar: urn
   naam: houdt register van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 65
 - soort: toewijzing
   naar: uitvoeren-lijkbezorging
   naam: houdt het register bij en stelt de asbus ter beschikking bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 63, 65

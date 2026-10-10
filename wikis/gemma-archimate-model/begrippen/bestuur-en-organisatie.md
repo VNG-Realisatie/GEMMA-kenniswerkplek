@@ -1,0 +1,34 @@
+---
+id: bestuur-en-organisatie
+type: onderwerp
+naam: Bestuur en organisatie
+status: in-behandeling
+bronnen: []
+---
+
+# Bestuur en organisatie
+
+<!-- Gegenereerd door tools/render.py uit beoordelingen/onderwerpen/bestuur-en-organisatie.yaml en de beoordelingen van de begrippen. Wijzig de beoordeling, niet deze pagina. -->
+
+## Omschrijving
+
+De gemeente als organisatie en haar bestuursorganen: Gemeente, Gemeenteraad, College van B&W en Burgemeester, de rol Beslisser waarmee ze aan gedrag hangen, en het Rijk als partij tegenover de gemeente. Welk orgaan in een proces beslist, staat met het wetsartikel in de beschrijving van het proces. Nog te beoordelen: de Gemeentewet.
+
+## Overzicht
+
+De views op de indelingen staan in het [overzicht](../overzichten/bestuur-en-organisatie.md).
+
+## Bronnen
+
+## Begrippen
+
+Een begrip met een link is een element; cursief staat de uitkomst.
+
+| Begrip | Reden | Herkomst |
+|---|---|---|
+| [Beslisser](../bedrijfsarchitectuur/rollen/beslisser.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | rijksregelgeving |
+| [Burgemeester](../bedrijfsarchitectuur/actoren/burgemeester.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [College van B&W](../bedrijfsarchitectuur/actoren/college-van-b-w.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [Gemeente](../bedrijfsarchitectuur/actoren/gemeente.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [Gemeenteraad](../bedrijfsarchitectuur/actoren/gemeenteraad.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [Rijk](../bedrijfsarchitectuur/actoren/rijk.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |

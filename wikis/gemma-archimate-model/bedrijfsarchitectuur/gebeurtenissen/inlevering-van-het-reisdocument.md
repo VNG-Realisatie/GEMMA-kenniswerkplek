@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het moment waarop een reisdocument bij een tot inhouding bevoegde autoriteit komt, doordat de houder het inlevert of het aan de balie wordt ingenomen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -105,4 +104,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
+- 2026-10-08: Het verval van rechtswege triggert de inhouding niet. Nieuwe gebeurtenis Inlevering van het reisdocument (wetsterm, Paspoortwet art. 56) triggert Inhouden reisdocument, het bedrijfsproces voor elke inlevering (teruggevonden vermist, vervallen, beschadigd of gesignaleerd document, art. 54). Vervallen verklaren reisdocument wordt daarin een deelproces, alleen na een signalering (art. 44, 53). Verwerken vermissing reisdocument eindigt bij de registratie en het verval (art. 47 lid 1 onder j). Afgewezen: de vervallenverklaring onder Verwerken vermissing (een vermist document vervalt van rechtswege), en de inlevering van een teruggevonden document als tweede gebeurtenis van Verwerken vermissing (het inhouden zou dan op twee plaatsen staan).
 - 2026-10-08: Nieuwe gebeurtenis Inlevering van het reisdocument (wetsterm, Paspoortwet art. 56), die Inhouden reisdocument triggert, in plaats van het verval van rechtswege; werkt de processtap Inlevering reisdocument bij.

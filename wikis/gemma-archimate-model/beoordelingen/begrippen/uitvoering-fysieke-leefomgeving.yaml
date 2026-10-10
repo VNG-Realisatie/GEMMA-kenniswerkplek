@@ -11,7 +11,6 @@ kenmerken:
     waarde: ja
     onderbouwing: Het leveren van gemeentelijke producten en diensten in het ruimtelijk domein; daaronder de gemeentelijke begraafplaats die elke gemeente heeft (art. 33).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
     waarde: nee
@@ -214,7 +213,6 @@ per_onderwerp:
   lijkbezorging:
   - Het beheer van de gemeentelijke begraafplaats valt eronder, via Exploitatie fysieke leefomgeving en Exploiteren van begraafplaatsen.
 domein: Fysieke leefomgeving
-grondslag: bron
 gemma:
   id: id-f10ff76e-e4de-4f30-bb1f-81c7cfffb46a
   sterkte: exact
@@ -223,14 +221,14 @@ relaties:
 - soort: aggregatie
   naar: exploitatie-fysieke-leefomgeving
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-vng-gemma-2026-10-02
   vindplaats: GEMMA-relatie id-6e34e824-ae6b-4999-a141-0ceb1dd36099
 - soort: aggregatie
   naar: producten-en-dienstenrealisatie-fysieke-leefomgeving
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-vng-gemma-2026-10-02
   vindplaats: GEMMA-relatie id-abf62f00-46ee-4865-a01e-141b51a507c1

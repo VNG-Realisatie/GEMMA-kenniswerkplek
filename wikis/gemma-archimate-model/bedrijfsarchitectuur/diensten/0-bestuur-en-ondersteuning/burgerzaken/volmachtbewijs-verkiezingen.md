@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het aanvragen van een volmacht, zodat een andere kiezer met een volmachtbewijs namens de aanvrager stemt.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -36,7 +35,7 @@ Het aanvragen van een volmacht, zodat een andere kiezer met een volmachtbewijs n
 
 ### Beschrijving
 
-Een kiezer die niet in persoon kan stemmen, vraagt met een formulier bij de burgemeester een volmacht aan en wijst een gemachtigde aan; bij inwilliging krijgt de gemachtigde een volmachtbewijs. De kiezer kan ook zijn stempas of kiezerspas omzetten in een volmachtbewijs en aan de gemachtigde overdragen (Kieswet art. L 1, L 2, L 6, L 8, L 11, L 14). Grondslag art. L 14 en L 8 Kieswet; doelgroep burger; niet digitaal (UPL nr. 453). De volmacht is de dienst, het volmachtbewijs een onderdeel (besluit redacteur 2026-10-06).
+Een kiezer die niet in persoon kan stemmen, vraagt met een formulier bij de burgemeester een volmacht aan en wijst een gemachtigde aan; bij inwilliging krijgt de gemachtigde een volmachtbewijs. De kiezer kan ook zijn stempas of kiezerspas omzetten in een volmachtbewijs en aan de gemachtigde overdragen (Kieswet art. L 1, L 2, L 6, L 8, L 11, L 14). Grondslag art. L 14 en L 8 Kieswet; doelgroep burger; niet digitaal (UPL nr. 453). De volmacht is de dienst, het volmachtbewijs een onderdeel (besluit 2026-10-06).
 
 ### Synoniemen
 

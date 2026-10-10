@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het leegmaken van een graf, waarbij de resten worden herbegraven en de as wordt verstrooid.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

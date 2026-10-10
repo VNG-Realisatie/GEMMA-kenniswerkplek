@@ -9,14 +9,12 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Hoedanigheid van wie kiesgerechtigd en als kiezer geregistreerd is en bij een verkiezing mag stemmen.
-grondslag: bron
 match:
   gemma: exact
 data_object: nee
 doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
-- 2026-vng-gemma-2026-10-02
 - 2026-rvig-hup-europees-kiesrecht
 gemma_id: id-d649e10e-d9a6-4ac7-b436-2d659cb4fdbf
 gemma_naam: Kiezer
@@ -59,13 +57,13 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip (Kieswet art. J 7, K 1, L 1) en GEMMA-rol Kiezer. [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip (Kieswet art. J 7, K 1, L 1) en GEMMA-rol Kiezer. [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, ontvangt de stempas van de burgemeester en richt verzoeken aan hem (Kieswet art. J 7, J 8, K 3, L 8). [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen hoedanigheid. [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: de rol voert gedrag uit in Beheren stempassen en Registreren kiesgerechtigdheid. [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **hoedanigheid**: Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | Ja, de hoedanigheid van wie kiesgerechtigd is en als kiezer is geregistreerd (Kieswet art. D 1, J 7). [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, toegewezen aan Verstrekken stempas, Behandelen verzoek om kiezerspas, Behandelen verzoek om volmacht en Registreren kiesgerechtigdheid (Kieswet art. J 8, K 3, L 8, D 5). [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki; in GEMMA een specialisatie van Klant. [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki; in GEMMA een specialisatie van Klant. [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 
 ### Specialisaties
 
@@ -100,7 +98,6 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [Kieswet](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
-| [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [HUP Europees kiesrecht](../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-europees-kiesrecht.md) | HUP BRP: Europees kiesrecht |
 
 ### Afstemming met GEMMA

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Akte die de ambtenaar van de burgerlijke stand opmaakt over een geboorte, huwelijk, partnerschap, overlijden of ander feit van de burgerlijke stand.
-grondslag: bron
 match:
   ggm: geen
   gemma: geen
@@ -146,4 +145,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
+- 2026-10-07: Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12). *Stand: herzien door 2026-10-07: Akte van de burgerlijke stand opgenomen, Reisdocument kernobject*
 - 2026-10-07: Opnemen als gegevensobject zonder GGM-entiteit, kernobject van Bijhouden burgerlijke stand; GGM-terugmelding 12 (besluit 2026-10-07).

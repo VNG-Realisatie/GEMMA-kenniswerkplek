@@ -7,7 +7,6 @@ naam: Adviseur
 onderwerpen:
 - lijkbezorging
 definitie: Verantwoordelijkheid voor het geven van advies aan wie een besluit neemt.
-grondslag: bron
 match:
   gemma: sterk
 data_object: nee

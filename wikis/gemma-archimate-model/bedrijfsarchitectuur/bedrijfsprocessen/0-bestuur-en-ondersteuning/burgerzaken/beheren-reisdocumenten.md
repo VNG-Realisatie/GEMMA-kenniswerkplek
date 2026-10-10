@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het behandelen van aanvragen, verstrekken en uitreiken van reisdocumenten en het verwerken van vermissing, inhouding en verval ervan.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -111,7 +110,7 @@ Alleen de kenmerken met ja; de overige 46 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Officiële documenten verstrekking](../../../bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md) | bedient *bediening* | Beheren reisdocumenten | [Paspoortwet](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [GEMMA](../../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (Paspoortwet art. 40, 42) |
+| [Officiële documenten verstrekking](../../../bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md) | bedient *bediening* | Beheren reisdocumenten | [Paspoortwet](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) (Paspoortwet art. 40, 42) |
 
 ## Herkomst
 
@@ -131,4 +130,8 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 20](../../../../terugmeldingen/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **GEMMA Online, Proceshiërarchie:** het hoogste niveau van de hiërarchie is het klant-tot-klant- of bedrijfsproces; daarboven spreekt GEMMA van clusters van bedrijfsprocessen: een groepering van bedrijfsprocessen die bij elkaar horen omdat ze op hetzelfde thema betrekking hebben, bijvoorbeeld personeelszaken ([2026-vng-gemma-proceshierarchie](../../../../bronanalyses/algemeen/overig/2026-vng-gemma-proceshierarchie.md), regel 47, 91). **Bevinding:** het processenlandschap van het GEMMA-model deelt de uitvoerende processen alleen in naar soort werk (Uitvoeren, Handhaven, Nazorgen, Ontwikkelen; GEMMA type Bedrijfsproces (cluster)). Alleen de ondersteunende tak heeft clusters per thema, zoals Beheren personeel, zonder bedrijfsprocessen eronder. Het model groepeert de bedrijfsprocessen per kernobject in een levensloopproces: het gedrag over de levensloop van één kernobject van begin tot eind (Beheren grafrechten, Beheren graven, Bijhouden persoonsgegevens, Beheren reisdocumenten), met GEMMA type Bedrijfsproces (cluster). Daarboven staan het beleidsdomein en het taakveld, afgeleid uit het kernobject. **Voorstel:** neem het levensloopproces op als cluster per thema voor de uitvoerende processen, naast de indeling naar soort werk, die blijft; zie de themaclusters van de ondersteunende tak (Beheren personeel, Beheren financiën) als groepering per beleidsdomein, met levensloopprocessen per kernobject eronder, zoals in de uitvoerende tak.
+- [Nummer 20](../../../../terugmeldingen/procesarchitectuur-terugmeldingen.md) (kennismodel, open): **GEMMA Online, Proceshiërarchie:** het hoogste niveau van de hiërarchie is het klant-tot-klant- of bedrijfsproces; daarboven spreekt GEMMA van clusters van bedrijfsprocessen: een groepering van bedrijfsprocessen die bij elkaar horen omdat ze op hetzelfde thema betrekking hebben, bijvoorbeeld personeelszaken ([2026-vng-gemma-proceshierarchie](../../../../bronanalyses/kern/overig/2026-vng-gemma-proceshierarchie.md), regel 47, 91). **Bevinding:** het processenlandschap van het GEMMA-model deelt de uitvoerende processen alleen in naar soort werk (Uitvoeren, Handhaven, Nazorgen, Ontwikkelen; GEMMA type Bedrijfsproces (cluster)). Alleen de ondersteunende tak heeft clusters per thema, zoals Beheren personeel, zonder bedrijfsprocessen eronder. Het model groepeert de bedrijfsprocessen per kernobject in een levensloopproces: het gedrag over de levensloop van één kernobject van begin tot eind (Beheren grafrechten, Beheren graven, Bijhouden persoonsgegevens, Beheren reisdocumenten), met GEMMA type Bedrijfsproces (cluster). Daarboven staan het beleidsdomein en het taakveld, afgeleid uit het kernobject. **Voorstel:** neem het levensloopproces op als cluster per thema voor de uitvoerende processen, naast de indeling naar soort werk, die blijft; zie de themaclusters van de ondersteunende tak (Beheren personeel, Beheren financiën) als groepering per beleidsdomein, met levensloopprocessen per kernobject eronder, zoals in de uitvoerende tak.
+
+### Besluiten redacteur
+
+- 2026-10-07: Reisdocument is kernobject van het nieuwe bedrijfsproces Beheren reisdocumenten onder Verzorgen burgerzaken (geen ketenproces: de minister voert tegenover de houder geen eigen deel uit), met de deelprocessen voor aanvraag, aanvraag niet-ingezetene, uitreiking, vermissing, inhouding en vervallenverklaring; de documentsoorten zijn specialisaties zonder pagina met de wetsterm, de diensten houden de UPL-naam. *Stand: deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren reisdocumenten is levensloopproces*

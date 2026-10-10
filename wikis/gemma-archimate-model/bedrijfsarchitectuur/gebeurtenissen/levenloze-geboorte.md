@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het ter wereld komen van een kind dat bij de geboorte niet leeft.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

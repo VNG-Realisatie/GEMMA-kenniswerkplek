@@ -213,7 +213,6 @@ per_onderwerp:
 synoniemen:
 - naam: Gezindte
   context: beleid
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -221,14 +220,14 @@ relaties:
 - soort: toewijzing
   naar: houder-van-de-begraafplaats
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 37
 - soort: toewijzing
   naar: houder-van-het-crematorium
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 52

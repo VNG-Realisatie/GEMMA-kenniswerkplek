@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het levend ter wereld komen van een kind.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

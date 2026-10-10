@@ -81,12 +81,12 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   groepeert_processen:
     waarde: ja
-    onderbouwing: Groepeert de processen rond de gemeentelijke taak burgerzaken en wordt niet per geval doorlopen (besluit redacteur 2026-10-07).
+    onderbouwing: Groepeert de processen rond de gemeentelijke taak burgerzaken en wordt niet per geval doorlopen (besluit 2026-10-07).
     bronnen:
     - 2026-rijk-wet-brp-bwbr0033715
   gegroepeerd_gedrag:
     waarde: nee
-    onderbouwing: 'Geen functie meer: de taak groepeert processen (besluit redacteur 2026-10-04).'
+    onderbouwing: 'Geen functie meer: de taak groepeert processen (besluit 2026-10-04).'
   toestandsverandering:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -215,7 +215,6 @@ beschrijving:
 - 'Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42), neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit verkrijging en verlies Nederlanderschap art. 2), verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11), geeft rijbewijzen af (Wegenverkeerswet 1994 art. 116) en ontvangt de aanvraag voor een verklaring omtrent het gedrag, die de minister afgeeft (Wet justitiële en strafvorderlijke gegevens art. 30, 37). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon, Bijhouden burgerlijke stand met de akte van de burgerlijke stand, Beheren reisdocumenten met het reisdocument, Beheren Nederlanderschap met het Nederlanderschap, Beheren stempassen met de stempas, Beheren rijbewijzen met het rijbewijs en Afgeven verklaring omtrent het gedrag met de verklaring omtrent het gedrag als kernobject.'
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 besluiten:
 - datum: '2026-10-07'
   besluit: Nieuwe taak boven Bijhouden persoonsgegevens, met voorlopig één proces; de processen voor de akte van de burgerlijke stand (plak 2) en het reisdocument (plak 3) komen erbij. Afwijking van minstens twee processen per kernobject tot plak 2.
@@ -232,49 +231,49 @@ relaties:
 - soort: aggregatie
   naar: bijhouden-persoonsgegevens
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 1.4, hoofdstuk 2
 - soort: aggregatie
   naar: bijhouden-burgerlijke-stand
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 16a, 17
 - soort: aggregatie
   naar: beheren-reisdocumenten
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 26, 40, 42
 - soort: aggregatie
   naar: beheren-nederlanderschap
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 2, 7, 33, 63
 - soort: aggregatie
   naar: beheren-stempassen
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7, K 4, L 11
 - soort: aggregatie
   naar: beheren-rijbewijzen
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 113, 116, 123
 - soort: aggregatie
   naar: afgeven-verklaring-omtrent-het-gedrag
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 28-39

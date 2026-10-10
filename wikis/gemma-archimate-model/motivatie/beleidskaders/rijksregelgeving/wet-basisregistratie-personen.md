@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: 'Wet die de basisregistratie personen regelt: de inschrijving en bijhouding van gegevens over ingezetenen en niet-ingezetenen en de verstrekking daarvan.'
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -136,8 +135,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Bronnen
 
-De wet zelf (BWBR0033715), zoals de UPL haar als grondslag noemt en het Besluit BRP haar uitwerkt (Wet BRP art. 1.1–1.10).
-
 | Korte titel | Bron |
 |---|---|
 | [Wet BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
@@ -152,4 +149,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
+- 2026-10-07: Opnemen als beleidskader; grondslag van de BRP-diensten en -deelprocessen.
 - 2026-10-07: Opnemen als beleidskader: grondslag van de BRP-diensten in de UPL en kader van Besluit en Regeling BRP.

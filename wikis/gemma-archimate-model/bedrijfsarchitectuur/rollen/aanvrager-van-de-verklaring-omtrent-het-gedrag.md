@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Hoedanigheid van degene omtrent wiens gedrag een verklaring omtrent het gedrag wordt gevraagd en die de aanvraag indient.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

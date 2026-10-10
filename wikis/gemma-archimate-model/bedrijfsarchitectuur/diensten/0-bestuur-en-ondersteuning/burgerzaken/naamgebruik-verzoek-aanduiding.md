@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: 'Het kiezen welke achternaam de overheid gebruikt na een huwelijk of geregistreerd partnerschap: de eigen, die van de partner of een combinatie.'
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

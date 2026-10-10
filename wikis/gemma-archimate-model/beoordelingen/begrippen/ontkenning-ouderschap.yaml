@@ -227,14 +227,13 @@ relaties:
 - soort: triggering
   naar: toevoegen-latere-vermelding
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   - 2026-rvig-hup-ontkenning-ouderschap
   vindplaats: art. 49-52
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

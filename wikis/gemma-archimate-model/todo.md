@@ -28,21 +28,24 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 ## Kennismodel
 
+- **Documentbron voor de GEMMA-functie-indeling**: 14 bedrijfsfuncties en Rijk (15 beoordelingen, 100 kenmerken en relaties) hebben alleen het GEMMA-model als bron, terwijl het model matchdoel is (regel Bronvoorrang; signaal bij elke run). Neem de GEMMA Online-documentatie van de bedrijfsfuncties (functie-indeling en functieketen) op als bron van brontype `overig` in Kern, zoals Over GEMMA en Proceshiërarchie, met intake en bronanalyse, en laat die beweringen daarnaar verwijzen. Bij Rijk (*zelfstandige specialisatie*: geen bredere actor in deze wiki) een bron zoeken of de bewering herformuleren.
 - **Kwaliteitsdoelen per beleidskader beoordelen** (na fase 5 van het plan kennismodel, als eigen klus): het kennismodel, het veld `kwaliteitsdoelen`, de controle, de render en de export bestaan. Beoordeel per beleidskader aan welke kwaliteitsdoelen van GEMMA (`tools/gemma.py kwaliteitsdoelen`) het grondslag geeft en hoe sterk, met de bepalingen als onderbouwing; leg het voor en vraag AKKOORD.
 
 ## Export naar Archi
 
 - **Verzoek aan het GEMMA-team**: zet bij elke release naast `export/GEMMA release.xml` (AMEFF) ook `export/GEMMA release.archimate` in de GEMMA-Archi-repository (opslagformaat van Archi, met map-id's en profielen). Daarna `wiki.yaml` → `gemma.herkomst.pad` daarop zetten; na de overgang naar coArchi 2 op `model.archimate`. Tot dan neemt de redacteur een lokaal opgeslagen `.archimate` op (skill `gemma-archimate-model-gemma-release`).
 
-## Algemeen onderwerp besluitvorming en heffingen
+## Thematisch gedeelde onderwerpen: Besluitvorming, Bestuur en organisatie, Heffingen en betalingen
 
-- **Algemeen onderwerp besluitvorming** voor de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling, en voor Uniforme openbare voorbereidingsprocedure, Bestuursorgaan en Beleidsnota. Het onderwerp Algemeen bestaat sinds 2026-10-06 (licht ingericht); de elementen verhuizen per geval.
+- **Besluitvorming** inhoudelijk beoordelen, met eigen bronnen: de Algemene wet bestuursrecht (nu een verwijzing), Belanghebbende, Aanvraag, Uniforme openbare voorbereidingsprocedure, Bestuursorgaan en Beleidsnota (met Participatiebeleid als variant). De elementen Besluit, Beschikking, Vergunning en Regeling staan er al, zonder herbeoordeling.
+- **Bestuur en organisatie**: de Gemeentewet (nu een verwijzing) als bron en mogelijk beleidskader.
 - **Bestuursorgaan**: zolang het geen element is, staat de toewijzing van inspraak aan het college en de gemeenteraad niet in het model.
-- **VNG Modelverordening lijkbezorgingsrechten** (ledenbrief 2011, met kostenonderbouwing) als bron en mogelijk beleidskader opnemen bij het algemene onderwerp voor Heffing en Heffingsverordening De link op de VNG-pagina `https://vng.nl/artikelen/modelverordeningen-wet-op-de-lijkbezorging` geeft een 404; zoek een openbare kopie.
+- **Heffen van rechten** bij het onderwerp Heffingen en betalingen: het proces dat de heffingsverordening raadpleegt voor de tarieven bij uitgifte en onderhoud (Groningen art. 8, 23, 24). Dat lost de signalen *wordt bewerkt* zonder toegang bij Heffingsverordening en Regeling op, en geeft de relatie *regelt het recht voor* van Heffingsverordening naar Grafonderhoud (nu buiten het kennismodel) een plek via dat proces.
+- **VNG Modelverordening lijkbezorgingsrechten** (ledenbrief 2011, met kostenonderbouwing) als bron en mogelijk beleidskader opnemen bij Heffingen en betalingen. De link op de VNG-pagina `https://vng.nl/artikelen/modelverordeningen-wet-op-de-lijkbezorging` geeft een 404; zoek een openbare kopie.
 
 ## Onderwerpen als één model
 
-- **Belanghebbende** beoordelen in Algemeen (Awb art. 1:2; generiek, hoort bij Algemeen). Nu nog een verwijzing in Lijkbezorging; vraagt een volledige beoordeling met bron en GGM-terugmelding 9.
+- **Belanghebbende** beoordelen in Besluitvorming (Awb art. 1:2; generiek). Nu nog een verwijzing in Lijkbezorging; vraagt een volledige beoordeling met bron en GGM-terugmelding 9.
 - **Bronanalyse per onderwerp in de render**: een bron met een bronanalyse in meer onderwerpen (UPL extern: lijkbezorging en burgerzaken) krijgt op elke pagina een link naar de alfabetisch eerste lens; sinds Burgerzaken linken lijkbezorgingspagina's naar de lens van Burgerzaken. Kies de lens van het thuisonderwerp van de pagina.
 
 ## Verwijzingen vanuit Burgerzaken (onderwerp afgerond op 2026-10-07)

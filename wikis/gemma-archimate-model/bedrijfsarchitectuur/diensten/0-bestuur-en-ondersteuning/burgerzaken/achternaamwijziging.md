@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het laten opnemen van een bij koninklijk besluit gewijzigde achternaam in de geboorteakte en de basisregistratie personen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -35,7 +34,7 @@ Het laten opnemen van een bij koninklijk besluit gewijzigde achternaam in de geb
 
 ### Beschrijving
 
-Het verzoek gaat via Justis; de gemeente heeft een eigen handeling na het besluit en het product wordt daarom opgenomen (besluit redacteur 2026-10-06). De UPL noemt een digitaal kanaal (nr. 5). Grondslag art. 7 BW 1.
+Het verzoek gaat via Justis; de gemeente heeft een eigen handeling na het besluit en het product wordt daarom opgenomen (besluit 2026-10-06). De UPL noemt een digitaal kanaal (nr. 5). Grondslag art. 7 BW 1.
 
 ## Plaats in het model
 

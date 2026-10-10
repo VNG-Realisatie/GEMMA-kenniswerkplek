@@ -207,9 +207,6 @@ beschrijving:
 - De Wet op de lijkbezorging (BWBR0005009) bepaalt wat een lijk is, hoe lijkschouwing, begraving, crematie en ontleding verlopen, en welke besluiten burgemeester, college en raad daarbij nemen (art. 1–4, 11, 21, 29, 68). Ze verplicht elke gemeente tot ten minste één gemeentelijke begraafplaats (art. 33) en regelt het uitsluitend recht op een graf, de ruiming en de sluiting van begraafplaatsen (art. 28, 31, 43).
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: regelgeving
-grondslag_toelichting:
-- De wet zelf (2026-rijk-wet-op-de-lijkbezorging-wettekst).
 besluiten:
 - datum: '2026-10-01'
   besluit: Opnemen als beleidskader.
@@ -226,161 +223,161 @@ relaties:
 - soort: associatie (gericht)
   naar: schouwen-stoffelijk-overschot
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 3, 4, 7
 - soort: associatie (gericht)
   naar: uitvoeren-lijkbezorging
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 1, 23, 49; art. 59–66b
 - soort: associatie (gericht)
   naar: verzorgen-gemeentebegrafenis
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21, 22
 - soort: associatie (gericht)
   naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22a
 - soort: associatie (gericht)
   naar: verlenen-grafrecht
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 28 lid 1
 - soort: associatie (gericht)
   naar: vervallen-verklaren-grafrecht
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 28 lid 4–7
 - soort: associatie (gericht)
   naar: opgraven-stoffelijk-overschot
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 29
 - soort: associatie (gericht)
   naar: ruimen-graf
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 31
 - soort: associatie (gericht)
   naar: verlenen-toestemming-bijzondere-begraafplaats
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 40, 41
 - soort: associatie (gericht)
   naar: sluiten-begraafplaats
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 43, 44
 - soort: associatie (gericht)
   naar: verlenen-vergunning-bijzonder-crematorium
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 53–55
 - soort: associatie (gericht)
   naar: stellen-andere-termijn
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17
 - soort: associatie (gericht)
   naar: verlenen-verlof-tot-ontleding
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 67, 68
 - soort: associatie (gericht)
   naar: graf-aanvragen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 23 lid 2, 28 lid 1
 - soort: associatie (gericht)
   naar: grafuitgifte
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 23 lid 2, 28 lid 1, 33
 - soort: associatie (gericht)
   naar: begraafplaatsregister
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: UPL nr. 45, art. 27
 - soort: associatie (gericht)
   naar: bijzettingenregister
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: UPL nr. 70, art. 65
 - soort: associatie (gericht)
   naar: crematoriumregister
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: UPL nr. 106, art. 50
 - soort: associatie (gericht)
   naar: bijzondere-begraafplaats-toestemming
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: UPL nr. 71, art. 37, 40, 41
 - soort: associatie (gericht)
   naar: herbegraven-of-alsnog-cremeren
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: UPL nr. 171, art. 29
 - soort: associatie (gericht)
   naar: ontleding-stoffelijk-overschot-toestemming
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: UPL nr. 306, art. 67, 68
 - soort: associatie (gericht)
   naar: uitvaart-vervroegen-of-uitstellen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17
 - soort: associatie (gericht)
   naar: verlof-tot-begraven
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: UPL nr. 438, art. 11
@@ -399,8 +396,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-vng-wet-op-de-lijkbezorging

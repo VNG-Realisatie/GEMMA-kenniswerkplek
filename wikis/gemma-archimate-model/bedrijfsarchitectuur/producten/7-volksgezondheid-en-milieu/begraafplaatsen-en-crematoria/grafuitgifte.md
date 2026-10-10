@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Een particulier graf, urnengraf of urnennis op een gemeentelijke begraafplaats, met het uitsluitend recht daarop voor een vaste termijn.
-grondslag: bron
 match:
   ggm: geen
   gemma: geen

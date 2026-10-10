@@ -170,7 +170,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   afspraak:
     waarde: ja
-    onderbouwing: Tweezijdige afspraak tussen houder en rechthebbende met rechten en plichten (onderhoud, betaling, bepalen wie begraven wordt), ook als de gemeente het als besluit op aanvraag verleent (besluit redacteur 2026-09-30; tweewegenleer, VNG retributies).
+    onderbouwing: Tweezijdige afspraak tussen houder en rechthebbende met rechten en plichten (onderhoud, betaling, bepalen wie begraven wordt), ook als de gemeente het als besluit op aanvraag verleent (besluit 2026-09-30; tweewegenleer, VNG retributies).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -218,7 +218,7 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Uitsluitend recht om in een particulier graf stoffelijke overschotten te laten begraven of urnen te laten bijzetten, voor bepaalde of onbepaalde tijd.
 beschrijving:
 - Het grafrecht wordt schriftelijk gevestigd, voor onbepaalde tijd of voor ten minste tien jaar, en op verzoek verlengd (art. 28). De gemeente verleent het op aanvraag, voor 30 jaar bij een particulier graf of 5 tot 30 jaar bij een urnengraf (Groningen art. 16). Het recht kan worden overgeschreven (Groningen art. 18; VNG-model art. 17), de rechthebbende kan er afstand van doen (art. 19), en het vervalt door verloop van de termijn of wordt vervallen verklaard, bijvoorbeeld bij verwaarlozing of niet-betalen (art. 28 lid 4–6; Groningen art. 20). Verlenging, overschrijving en afstand zijn stappen in de levenscyclus van het grafrecht, geen eigen elementen.
-- 'Het grafrecht is een afspraak (besluit redacteur 2026-09-30): het legt de rechten en plichten van houder en rechthebbende vast, ook als de gemeente het in de vorm van een besluit op aanvraag verleent. De toelichting op het VNG-model noemt het een beschikking van het college (toelichting art. 17); die tegenspraak is met het besluit afgewogen.'
+- 'Het grafrecht is een afspraak (besluit 2026-09-30): het legt de rechten en plichten van houder en rechthebbende vast, ook als de gemeente het in de vorm van een besluit op aanvraag verleent. De toelichting op het VNG-model noemt het een beschikking van het college (toelichting art. 17); die tegenspraak is met het besluit afgewogen.'
 synoniemen:
 - naam: Uitsluitend recht op een graf
   context: wet
@@ -226,7 +226,6 @@ synoniemen:
   context: beleid
 - naam: Uitsluitend recht tot begraven
   context: beleid
-grondslag: bron
 ggm:
   sterkte: geen
   onderbouwing: Het GGM kent geen entiteit voor het grafrecht; GGM-terugmelding 4 (hiaat).
@@ -246,7 +245,7 @@ relaties:
 - soort: associatie (gericht)
   naar: graf
   naam: rust op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

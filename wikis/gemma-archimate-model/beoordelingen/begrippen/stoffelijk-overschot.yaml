@@ -201,7 +201,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het lichaam van een overledene of doodgeborene.
 beschrijving:
 - Het stoffelijk overschot wordt geschouwd, begraven, gecremeerd of ontleed, en soms opgegraven (art. 1, 3, 29). Bij een begraving of crematie stelt de houder de identiteit vast aan de hand van het nummer op kist en document (art. 8). Een doodgeborene (na ten minste 24 weken zwangerschap) valt ook onder het begrip lijk (wet) en daarmee onder stoffelijk overschot; dat is een indeling, geen eigen element (art. 2 lid 1 b).
-grondslag: bron
 ggm:
   sterkte: geen
   onderbouwing: 'Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers).'
@@ -217,8 +216,11 @@ besluiten:
 - datum: '2026-10-05'
   besluit: Naam Stoffelijk overschot, de term van de UPL; Lijk (wet, beheersverordening, VNG) wordt een synoniem.
   gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: 'Eén levensloopproces per partij: Toestaan lijkbezorging (de gemeente als overheid) en Begraven en cremeren stoffelijk overschot (de houder) blijven allebei levensloopproces van Stoffelijk overschot. Afgewezen: één levensloopproces Bezorgen stoffelijk overschot met de tien bedrijfsprocessen, en Toestaan lijkbezorging als enige levensloopproces.'
+  gevolg: verwerkt
 naamkeuze:
-- Stoffelijk overschot is de term van de Uniforme Productenlijst (2025-vng-upl-producten-en-diensten-extern, bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk (2026-rvo-aangifte-en-akte-van-overlijden). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet (besluit redacteur 2026-10-05).
+- Stoffelijk overschot is de term van de Uniforme Productenlijst (2025-vng-upl-producten-en-diensten-extern, bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk (2026-rvo-aangifte-en-akte-van-overlijden). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet (besluit 2026-10-05).
 status: goedgekeurd
 beslist:
   uitkomst:

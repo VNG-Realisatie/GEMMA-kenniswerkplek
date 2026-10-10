@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Toestemming van de gemeente om as te verstrooien op een plek waar dat zonder toestemming niet mag.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

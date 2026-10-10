@@ -204,7 +204,6 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in de lijkbezorging voor.
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -215,7 +214,7 @@ relaties:
 - soort: triggering
   naar: ruimen-graf
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 20 lid 4, 26

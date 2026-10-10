@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Verklaring van de minister dat uit een onderzoek naar iemands gedrag geen bezwaren zijn gebleken, gelet op het doel waarvoor ze wordt gevraagd.
-grondslag: procesobject
 match:
   ggm: geen
   gemma: geen
@@ -84,7 +83,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip en UPL-product: de verklaring omtrent het gedrag (Wet justitiële en strafvorderlijke gegevens art. 28; UPL nr. 434); gangbaar als VOG (Utrecht). [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht VOG aanvragen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester neemt de aanvraag van een inwoner in ontvangst, onderzoekt de volledigheid en de identiteit en zendt haar door; de verklaring zelf is van de minister (Wet justitiële en strafvorderlijke gegevens art. 28, 30). [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een verklaring met een eigen aanvraag, doel en beslissing per aanvrager (Wet justitiële en strafvorderlijke gegevens art. 28, 29, 32). [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: kernobject van Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2, besluit redacteur 2026-10-07). [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: kernobject van Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2, besluit 2026-10-07). [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke verklaring is afgegeven aan één aanvrager voor een doel (Wet justitiële en strafvorderlijke gegevens art. 28, 32). [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, wordt aangevraagd, onderzocht en afgegeven of geweigerd, of niet in behandeling genomen (Wet justitiële en strafvorderlijke gegevens art. 30, 34, 35, 37). [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, afgeven verklaring omtrent het gedrag ontvangt de aanvraag, onderzoekt haar en geeft de verklaring af of weigert (Wet justitiële en strafvorderlijke gegevens art. 30, 35, 37; Besluit justitiële en strafvorderlijke gegevens art. 48). [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [Besluit justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.md) |
@@ -114,8 +113,6 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 ### Bronnen
 
-Ontstaat in Afgeven verklaring omtrent het gedrag: de minister geeft de verklaring af op een aanvraag die de gemeente ontvangt en doorzendt ([2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), art. 28, 30, 37).
-
 | Korte titel | Bron |
 |---|---|
 | [Wet justitiële en strafvorderlijke gegevens](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) | Wet justitiële en strafvorderlijke gegevens |
@@ -125,8 +122,12 @@ Ontstaat in Afgeven verklaring omtrent het gedrag: de minister geeft de verklari
 
 ### Afstemming met GGM
 
-Geen GGM-entiteit. Het GGM kent geen verklaring omtrent het gedrag. De gegevens over de verklaring worden bij de minister beheerd en niet door de gemeente, daarom is geen hiaat teruggemeld (zie de vraag bij Afgeven verklaring omtrent het gedrag).
+Geen GGM-entiteit. Het GGM kent geen verklaring omtrent het gedrag. De gegevens over de verklaring worden bij de minister beheerd en niet door de gemeente, daarom is geen hiaat teruggemeld (zie de vraag bij Afgeven verklaring omtrent het gedrag). Ontstaat in Afgeven verklaring omtrent het gedrag: de minister geeft de verklaring af op een aanvraag die de gemeente ontvangt en doorzendt ([2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), art. 28, 30, 37).
 
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen bedrijfsobject voor de verklaring omtrent het gedrag. Nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-07: Binnen Burgerzaken (plak 5), niet een later onderwerp: UPL 360-363 en 434 staan onder 0.2 en op de Utrecht-hubpagina. Rijbewijs is gegevensobject zonder GGM-entiteit en kernobject van het bedrijfsproces Beheren rijbewijzen (de burgemeester besluit tot afgifte; RDW en CBR zijn producent en bron van invoer, geen eigen actor; de omwisseling van een buitenlands rijbewijs is een deelproces waarin de gemeente doorgeleidt, GGM-terugmelding 18). De VOG is kernobject van het ketenproces Afgeven verklaring omtrent het gedrag, met het Rijk (de minister van JenV) als Ketenpartner, zonder GGM-terugmelding. Beleidskaders: Wegenverkeerswet 1994, Reglement rijbewijzen en Wet justitiële en strafvorderlijke gegevens; het Besluit justitiële en strafvorderlijke gegevens is bron. *Stand: deels herzien door 2026-10-08: de VOG is orkestratie, geen ketenproces*

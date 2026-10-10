@@ -222,7 +222,6 @@ beschrijving:
 - Daags na de kandidaatstelling stelt de burgemeester de gegevens vast voor het personaliseren van de stempassen, met de informatie van de minister voor de productie (Kieswet art. J 7 lid 1 en 4). Ten minste veertien dagen voor de stemming ontvangt elke kiezer een stempas met volgnummer (art. J 7 lid 2). Wie zijn stempas kwijt is of niet heeft ontvangen, vraagt schriftelijk tot de vijfde dag voor de stemming of mondeling tot de dag voor de stemming om twaalf uur een nieuwe aan, met een kopie van een identiteitsbewijs; de oude wordt ongeldig. Een stempas die ongeldig is door een kiezerspas, volmacht, briefstembewijs, onterechte registratie of ontvreemding, wordt niet vervangen (art. J 7a, J 8).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -230,21 +229,21 @@ relaties:
 - soort: toegang (registreren)
   naar: stempas
   naam: verstrekt en vervangt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7, J 8
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: stelt de gegevens van de geregistreerde kiezers vast
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7 lid 1
 - soort: realisatie
   naar: stempas-ontvangen
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627

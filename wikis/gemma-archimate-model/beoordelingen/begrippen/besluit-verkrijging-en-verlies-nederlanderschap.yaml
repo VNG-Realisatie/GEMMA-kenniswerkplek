@@ -212,9 +212,6 @@ beleidsdomein: Burgerzaken
 per_onderwerp:
   burgerzaken:
   - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Naturalisatieceremonie (UPL nr. 261), van het bewijs van Nederlanderschap (art. 61) en van de bedrijfsprocessen onder Beheren Nederlanderschap.'
-grondslag: regelgeving
-grondslag_toelichting:
-- De regeling zelf (2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
@@ -222,7 +219,7 @@ relaties:
 - soort: associatie (gericht)
   naar: naturalisatieceremonie
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2025-vng-upl-producten-en-diensten-extern
@@ -230,39 +227,42 @@ relaties:
 - soort: associatie (gericht)
   naar: behandelen-optieverklaring
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 7-12; art. 60a, 60b
 - soort: associatie (gericht)
   naar: behandelen-naturalisatieverzoek
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 31-38; art. 60a, 60b
 - soort: associatie (gericht)
   naar: behandelen-verklaring-van-afstand
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 62-64
 - soort: associatie (gericht)
   naar: rijkswet-op-het-nederlanderschap
   naam: werkt uit
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: aanhef; art. 2
 - soort: associatie (gericht)
   naar: bewijs-van-nederlanderschap
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 61; UPL nr. 62
 besluiten:
+- datum: '2026-10-07'
+  besluit: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap (optie, naturalisatie, afstand) en van Beheren stempassen en Registreren kiesgerechtigdheid.
+  gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: Opnemen als beleidskader; bron van de gemeentelijke rol bij optie, naturalisatie en afstand (besluit Afbakening Burgerzaken 2026-10-06).
   gevolg: opnemen
@@ -280,8 +280,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2025-vng-upl-producten-en-diensten-extern

@@ -63,7 +63,7 @@ kenmerken:
     onderbouwing: Een ambtenaar van het openbaar ministerie, geen eigen rechtspersoon.
   vervult_een_rol:
     waarde: ja
-    onderbouwing: Ketenpartner in de ketensamenwerking Bezorgen stoffelijk overschot (art. 10, 12, 17; besluit redacteur 2026-10-04).
+    onderbouwing: Ketenpartner in de ketensamenwerking Bezorgen stoffelijk overschot (art. 10, 12, 17; besluit 2026-10-04).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   voert_gedrag_uit:
@@ -205,7 +205,6 @@ definitie: Lid van het openbaar ministerie dat beslist over strafrechtelijk onde
 beschrijving:
 - Bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar tegen begraving of crematie afgeeft als er geen strafrechtelijk onderzoek nodig is (Wet op de lijkbezorging art. 10, 12). Zonder die verklaring verleent de ambtenaar van de burgerlijke stand geen verlof. Een uitvaart binnen 36 uur vraagt ook zijn instemming (art. 17; RVO).
 doelgroep: ketenpartners
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen actor Officier van justitie; nieuw voor GEMMA.
@@ -213,7 +212,7 @@ relaties:
 - soort: toewijzing
   naar: ketenpartner
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 10, 12, 17

@@ -210,15 +210,12 @@ definitie: Persoonlijk document waarmee een kiezer bij een verkiezing kan stemme
 beschrijving:
 - Daags na de kandidaatstelling stelt de burgemeester de gegevens vast van de kiezers die op die dag in de gemeente als kiezer zijn geregistreerd; ten minste veertien dagen voor de stemming ontvangt elke kiezer een stempas met een volgnummer, naar een model van de minister (Kieswet art. J 7). Wie zijn stempas kwijt is of niet heeft ontvangen, krijgt op een schriftelijk of mondeling verzoek met een kopie van een identiteitsbewijs een nieuwe (art. J 8).
 - Een stempas wordt ongeldig als er een kiezerspas, volmachtbewijs, vervangende stempas of briefstembewijs voor in de plaats komt, als de houder niet als kiezer behoort te zijn geregistreerd of is overleden, of als zij is ontvreemd; de burgemeester stelt de dag voor de stemming een uittreksel uit het register van ongeldige stempassen vast en vernietigt het register drie maanden na de toelating van de gekozenen (art. J 7a). Een kiezer kan een andere kiezer machtigen door zijn stempas om te zetten in een volmachtbewijs en over te dragen (art. L 14).
-- Het stemmen zelf, de stembureaus en de uitslag vallen buiten dit onderwerp (besluit redacteur 2026-10-06, Afbakening Burgerzaken).
+- Het stemmen zelf, de stembureaus en de uitslag vallen buiten dit onderwerp (besluit 2026-10-06, Afbakening Burgerzaken).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: procesobject
-grondslag_toelichting:
-- 'Ontstaat in Beheren stempassen: de burgemeester verstrekt de stempas aan elke geregistreerde kiezer (2026-rijk-kieswet-bwbr0004627, art. J 7).'
 ggm:
   sterkte: geen
-  onderbouwing: Het GGM kent geen stempas en geen ander begrip voor de verkiezingen (GGM-terugmelding 17).
+  onderbouwing: 'Het GGM kent geen stempas en geen ander begrip voor de verkiezingen (GGM-terugmelding 17). Ontstaat in Beheren stempassen: de burgemeester verstrekt de stempas aan elke geregistreerde kiezer (2026-rijk-kieswet-bwbr0004627, art. J 7).'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen bedrijfsobject voor de stempas; de functie Verkiezingen gerelateerde diensten noemt het verstrekken van stempassen als voorbeeld. Nieuw voor GEMMA.
@@ -237,7 +234,7 @@ relaties:
 - soort: associatie (gericht)
   naar: ingeschreven-persoon
   naam: is bestemd voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7 lid 1-2

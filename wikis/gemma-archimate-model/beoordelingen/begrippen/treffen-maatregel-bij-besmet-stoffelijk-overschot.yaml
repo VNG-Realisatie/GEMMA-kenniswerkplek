@@ -222,7 +222,6 @@ kenmerken:
     onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -233,7 +232,7 @@ relaties:
 - soort: toegang (registreren)
   naar: beschikking
   naam: treft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22a
@@ -241,7 +240,7 @@ relaties:
 - soort: toegang (raadplegen)
   naar: stoffelijk-overschot
   naam: betreft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22a
@@ -253,6 +252,10 @@ gemma_generiek:
   id: id-729e05ea-f9f7-4583-a645-ec4e573b74ce
   onderbouwing: 'De GGD meldt een besmet lijk aan de burgemeester, die een maatregel treft (Wpg art. 27 lid 3; Wlb art. 22a): een melding waarop de gemeente actie onderneemt.'
 besluiten:
+- datum: '2026-10-04'
+  besluit: 'Specialiseren zelf een GEMMA-proces: *Behandelen melding*, *Behandelen aanvraag product* en *Onderhouden*. Vervallen verklaren grafrecht niet naar *Opleggen sanctie*: het verval volgt uit de afspraak, niet uit handhaving.'
+  gevolg: verwerkt
+  stand: geldt; Onderhouden graf vervallen 2026-10-08 (regel Wettelijke grondslag)
 - datum: '2026-10-04'
   besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
   gevolg: verwerkt

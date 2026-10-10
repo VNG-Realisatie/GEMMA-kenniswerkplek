@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Onderzoek van een stoffelijk overschot door een arts na het overlijden, om vast te stellen of de dood een natuurlijke oorzaak heeft.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -93,7 +92,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Schouwen stoffelijk overschot | schouwt *toegang (raadplegen)* | [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
-| Schouwen stoffelijk overschot | geeft de verklaring van overlijden door aan *stroom* | [Verlenen verlof tot begraving of crematie](verlenen-verlof-tot-begraving-of-crematie.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 7, 12) |
+| Schouwen stoffelijk overschot | geeft de verklaring van overlijden door aan, of waarschuwt bij een niet-natuurlijke dood *stroom* | [Verlenen verlof tot begraving of crematie](verlenen-verlof-tot-begraving-of-crematie.md) | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 7, 10 lid 1, 12) |
 
 #### Inkomend
 
@@ -120,3 +119,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-05: Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).
+- 2026-10-08: Overlijden leidt tot de akte (Opmaken akte van overlijden, daarna Verlenen verlof) en tot het begraven of cremeren (Uitvoeren lijkbezorging). Bijzetten of verstrooien van de as wordt een deelproces van Uitvoeren lijkbezorging. Schouwen stoffelijk overschot blijft een eigen bedrijfsproces (de schouw gebeurt vóór de aangifte en de aanvraag van het verlof, door een andere rol); de verklaring van overlijden gaat als stroom naar Verlenen verlof (Wlb art. 12). Afgewezen: Schouwen als deelproces van Verlenen verlof.
+- 2026-10-10: De waarschuwing van de gemeentelijke lijkschouwer aan de ambtenaar van de burgerlijke stand bij een niet-natuurlijke dood (Wlb art. 10 lid 1) is geen relatie tussen de rollen, maar hoort bij de stroom van Schouwen stoffelijk overschot naar Verlenen verlof tot begraving of crematie: geeft de verklaring van overlijden door aan, of waarschuwt bij een niet-natuurlijke dood (kennismodel: een handeling tussen rollen loopt via een proces, stroom of gebeurtenis).

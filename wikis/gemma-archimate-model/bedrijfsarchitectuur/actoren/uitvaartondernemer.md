@@ -8,7 +8,6 @@ onderwerpen:
 - lijkbezorging
 - burgerzaken
 definitie: Onderneming die in opdracht van nabestaanden de uitvaart verzorgt.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: 'Boek van het Burgerlijk Wetboek over personen- en familierecht: naam, burgerlijke stand, huwelijk, partnerschap, afstamming, adoptie en gezag.'
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -119,8 +118,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-De wet zelf (BWBR0002656), zoals de UPL haar als grondslag noemt en het Besluit burgerlijke stand haar uitwerkt (BW 1 titel 4).
 
 | Korte titel | Bron |
 |---|---|

@@ -25,7 +25,7 @@ kenmerken:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Rijbewijs en Beheren rijbewijzen (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Rijbewijs en Beheren rijbewijzen (UPL taakveld 0.2, besluit 2026-10-07).'
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
     - 2025-vng-upl-producten-en-diensten-extern
@@ -207,61 +207,58 @@ beschrijving:
 per_onderwerp:
   burgerzaken:
   - Grondslag van Beheren rijbewijzen, de bedrijfsprocessen en de diensten van het rijbewijs, naast het Reglement rijbewijzen, dat de aanvraag en afgifte uitwerkt. De UPL noemt alleen het Reglement als grondslag (nr. 360 tot en met 363); zie de procesarchitectuur-terugmelding.
-grondslag_toelichting:
-- De regeling zelf (2026-rijk-wegenverkeerswet-1994-bwbr0006622).
 relaties:
 - soort: associatie (gericht)
   naar: beheren-rijbewijzen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 113, 116, 123
 - soort: associatie (gericht)
   naar: behandelen-aanvraag-rijbewijs
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 111-113, 116, 118a, 119, 120; art. 111 lid 2, 119 lid 2, 120a
 - soort: associatie (gericht)
   naar: verwerken-vermissing-rijbewijs
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 123 lid 1 onder h
 - soort: associatie (gericht)
   naar: rijbewijs-aanvragen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 111, 113, 116
 - soort: associatie (gericht)
   naar: rijbewijs-verlengen
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 119 lid 1 onder a
 - soort: associatie (gericht)
   naar: behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 116 lid 1, 123 lid 1 onder b
 - soort: associatie (gericht)
   naar: vermissing-of-diefstal-rijbewijs-doorgeven
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 123 lid 1 onder h
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: regelgeving
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
@@ -284,8 +281,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2025-vng-upl-producten-en-diensten-extern

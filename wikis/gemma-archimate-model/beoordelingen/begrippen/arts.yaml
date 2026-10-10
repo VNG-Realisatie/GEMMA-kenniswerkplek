@@ -65,7 +65,7 @@ kenmerken:
     onderbouwing: Een arts als persoon, geen eigen rechtspersoon.
   vervult_een_rol:
     waarde: ja
-    onderbouwing: Ketenpartner als behandelende arts (art. 3, 7, 10a, 12) en Gemeentelijke lijkschouwer als forensisch arts die het college benoemt (art. 4, 5); besluit redacteur 2026-10-04.
+    onderbouwing: Ketenpartner als behandelende arts (art. 3, 7, 10a, 12) en Gemeentelijke lijkschouwer als forensisch arts die het college benoemt (art. 4, 5); besluit 2026-10-04.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   voert_gedrag_uit:
@@ -213,7 +213,6 @@ synoniemen:
 - naam: Behandelende arts
   context: wet
 doelgroep: ketenpartners
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen actor of rol voor een arts; nieuw voor GEMMA.
@@ -221,14 +220,14 @@ relaties:
 - soort: toewijzing
   naar: ketenpartner
   naam: vervult als behandelende arts
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 3, 7, 10a, 12
 - soort: toewijzing
   naar: gemeentelijke-lijkschouwer
   naam: vervult als forensisch arts
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 4, 5

@@ -217,7 +217,6 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 naamkeuze:
 - De naam is de wetsterm (BW 1 art. 23b, Besluit burgerlijke stand) en de naam van het UPL-product (nr. 23); de bronnen gebruiken geen andere gangbare term dan de verkorting Akte, die synoniem blijft. Akte alleen is niet ondubbelzinnig, want ook andere akten heten zo. De dienst heet Uittreksel burgerlijke stand (zie Homoniemen).
-grondslag: bron
 ggm:
   sterkte: geen
   onderbouwing: 'Het GGM kent geen entiteit voor de akte van de burgerlijke stand (tools/ggm.py kandidaten Akte: geen treffer in Burgerzaken of RSGBPlus); GGM-terugmelding 12 (hiaat).'
@@ -250,6 +249,10 @@ homoniemen:
   element: uittreksel-burgerlijke-stand
   naamkeuze: 'Deze pagina heet Akte van de burgerlijke stand: de akte zelf. De dienst heet Uittreksel burgerlijke stand, met de UPL-naam als synoniem.'
 besluiten:
+- datum: '2026-10-07'
+  besluit: Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12).
+  gevolg: verwerkt
+  stand: 'herzien door 2026-10-07: Akte van de burgerlijke stand opgenomen, Reisdocument kernobject'
 - datum: '2026-10-07'
   besluit: Opnemen als gegevensobject zonder GGM-entiteit, kernobject van Bijhouden burgerlijke stand; GGM-terugmelding 12 (besluit 2026-10-07).
   gevolg: opnemen

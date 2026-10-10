@@ -247,7 +247,7 @@ relaties:
 - soort: toegang (registreren)
   naar: akte-van-de-burgerlijke-stand
   naam: maakt huwelijksakte op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
@@ -255,7 +255,7 @@ relaties:
 - soort: realisatie
   naar: huwelijk
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-trouwen-in-utrecht
@@ -263,7 +263,7 @@ relaties:
 - soort: realisatie
   naar: trouwlocatie
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
@@ -271,7 +271,7 @@ relaties:
 - soort: realisatie
   naar: ambtenaar-burgerlijke-stand-aanvragen
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-trouwen-in-utrecht
@@ -279,28 +279,27 @@ relaties:
 - soort: stroom
   naar: bijhouden-persoonsgegevens
   naam: zendt huwelijksakte aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
   vindplaats: inleiding
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: verifieert gegevens van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 18 lid 2
 - soort: realisatie
   naar: huwelijksaangifte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
   vindplaats: UPL nr. 185
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 deelprocessen:
 - naam: Melding voorgenomen huwelijk
   omschrijving: De aanstaande echtgenoten melden het huwelijk minstens 14 dagen en hoogstens een jaar vooraf; de ambtenaar verifieert de gegevens en meldt een vermoeden van een schijnhuwelijk.
@@ -314,6 +313,10 @@ deelprocessen:
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 63-65
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'De klant wil trouwen of een partnerschap laten registreren: Voltrekken huwelijk en Registreren partnerschap zijn de bedrijfsprocessen, van de melding tot de akte; de melding wordt van beide een deelproces zonder pagina, de diensten van de melding gaan naar die bedrijfsprocessen en het Archi-object vervalt. Afgewezen: alle drie bedrijfsproces.'
+  gevolg: verwerkt
 status: goedgekeurd
 beslist:
   uitkomst:

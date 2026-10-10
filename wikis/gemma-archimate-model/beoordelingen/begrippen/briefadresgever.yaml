@@ -199,7 +199,6 @@ kenmerken:
 definitie: Verantwoordelijkheid van een persoon of aangewezen rechtspersoon om post voor de houder van een briefadres in ontvangst te nemen en door te geven.
 beschrijving:
 - De briefadresgever is een natuurlijk persoon of een door het college aangewezen rechtspersoon; hij stemt schriftelijk in, zorgt dat geschriften voor de houder worden doorgegeven en verstrekt het college inlichtingen (HUP Verblijfplaats). Zonder briefadresgever registreert de gemeente een adres van de gemeente zelf (HUP Verblijfplaats).
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen rol voor dit begrip; nieuw voor GEMMA.
@@ -208,7 +207,7 @@ relaties:
 - soort: toewijzing
   naar: inschrijven-op-briefadres
   naam: stemt in met
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   - 2026-rijk-wet-brp-bwbr0033715
@@ -216,7 +215,7 @@ relaties:
 - soort: toegang (beheerder)
   naar: briefadres
   naam: geeft post door
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   - 2026-rijk-wet-brp-bwbr0033715

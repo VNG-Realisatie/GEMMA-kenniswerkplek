@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het melden bij de gemeente dat een paspoort of identiteitskaart kwijt of gestolen is, zodat het document ongeldig wordt en misbruik wordt voorkomen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

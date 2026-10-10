@@ -7,7 +7,6 @@ kenmerken:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-rijk-wet-brp-bwbr0033715
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-vng-gemma-2026-10-02
   gemeentelijk:
     waarde: ja
     onderbouwing: 'Structurele, wettelijke relatie met elke gemeente: de minister van Justitie en Veiligheid beslist over het naturalisatieverzoek dat de burgemeester met advies toezendt (Besluit verkrijging en verlies Nederlanderschap art. 37), de minister van BZK houdt de niet-ingezetenen bij in de BRP en laat de reisdocumenten maken (Wet BRP art. 1.4 lid 2; Paspoortwet art. 2 lid 3).'
@@ -29,7 +28,7 @@ kenmerken:
     - 2026-rijk-bw2-rechtspersonen
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Generiek: het Rijk is partij in meer onderwerpen; thuis in Algemeen, zoals Gemeente (regel Thuishoren).'
+    onderbouwing: 'Generiek: het Rijk is partij in meer onderwerpen; thuis in Bestuur en organisatie, zoals Gemeente (regel Thuishoren).'
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   gedrag:
@@ -71,7 +70,7 @@ kenmerken:
     - 2026-rijk-bw2-rechtspersonen
   vervult_een_rol:
     waarde: ja
-    onderbouwing: 'Ketenpartner in Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; besluit redacteur 2026-10-07).'
+    onderbouwing: 'Ketenpartner in Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; besluit 2026-10-07).'
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   voert_gedrag_uit:
@@ -79,10 +78,9 @@ kenmerken:
     onderbouwing: Een actor hangt via zijn rol aan gedrag.
   soort_partij:
     waarde: ja
-    onderbouwing: De bestuurslaag als geheel, waarmee elke gemeente in dezelfde rol te maken heeft; zo ook Provincie en Waterschap (besluit redacteur 2026-10-07). Afzonderlijke ministeries en rijksdiensten zijn geen eigen actor.
+    onderbouwing: De bestuurslaag als geheel, waarmee elke gemeente in dezelfde rol te maken heeft; zo ook Provincie en Waterschap (besluit 2026-10-07). Afzonderlijke ministeries en rijksdiensten zijn geen eigen actor.
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-vng-gemma-2026-10-02
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -209,28 +207,30 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Een partij voor alle onderwerpen, net als Gemeente, maar geen variant van een generiek GEMMA-element: het is zelf de GEMMA-actor.'
 onderwerpen:
-- algemeen
+- bestuur-en-organisatie
 - burgerzaken
 definitie: De Staat der Nederlanden als bestuurslaag, die met zijn ministers en rijksdiensten wettelijke taken uitvoert waarmee elke gemeente te maken heeft.
 beschrijving:
 - 'Het Rijk handelt via zijn ministers, die elk een deel van de rijkstaken dragen, en hun diensten. Voor de gemeente gaat het om taken die in de wet naast de gemeentelijke taak staan: de minister van Binnenlandse Zaken en Koninkrijksrelaties (uitgevoerd door de Rijksdienst voor Identiteitsgegevens, RvIG) houdt de niet-ingezetenen bij in de BRP en de voorzieningen daarvoor in stand (Wet BRP art. 1.4 lid 2, 2.64), laat de reisdocumenten maken en houdt de registers van reisdocumenten bij (Paspoortwet art. 2 lid 3–4); de minister van Justitie en Veiligheid (uitgevoerd door de Immigratie- en Naturalisatiedienst, IND) beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38) en, in de praktijk via Justis, over de afgifte van de verklaring omtrent het gedrag (Wet justitiële en strafvorderlijke gegevens art. 30, 37).'
 - Het model kent het Rijk als één actor, de bestuurslaag als geheel, zoals Gemeente, Provincie en Waterschap; de afzonderlijke ministeries en rijksdiensten staan in de beschrijving en zijn geen eigen element. Waar de gemeente gegevens of registers van het Rijk gebruikt, zijn die invoer. De RDW en het CBR zijn zelfstandige bestuursorganen met een eigen rechtspersoonlijkheid; ze zijn geen eigen element en staan in de beschrijving van Beheren rijbewijzen (Wegenverkeerswet 1994 art. 4a, 4z).
 doelgroep: ketenpartners
-grondslag: bron
 gemma:
   id: id-9f6a80ba-b7fb-4a58-b599-b5f2b33b840e
   sterkte: exact
-  onderbouwing: 'GEMMA-actor Rijk (procesarchitectuur, actoren en rollen); zelfde begrip, in GEMMA zonder definitie en zonder relaties. Nieuw: een definitie (besluit redacteur 2026-10-07).'
+  onderbouwing: 'GEMMA-actor Rijk (procesarchitectuur, actoren en rollen); zelfde begrip, in GEMMA zonder definitie en zonder relaties. Nieuw: een definitie (besluit 2026-10-07).'
 relaties:
 - soort: toewijzing
   naar: ketenpartner
   naam: vervult
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 37, 38; Wjsg art. 30, 37
 besluiten:
+- datum: '2026-10-07'
+  besluit: 'Rijkskant: één actor Rijk (GEMMA-actor Rijk, exacte match; de export vult de lege GEMMA-definitie), thuis in Algemeen, die de rol Ketenpartner vervult in het ketenproces Beheren Nederlanderschap. De afzonderlijke ministers en rijksdiensten (minister van BZK met de RvIG, minister van JenV met de IND) zijn geen eigen actor en staan in de beschrijving van Rijk.'
+  gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: 'Rijkskant: één actor Rijk met de GEMMA-match, die de rol Ketenpartner vervult; de afzonderlijke ministers en rijksdiensten (minister van BZK met de RvIG, minister van JenV met de IND) staan in de beschrijving. Het Rijk is een soort partij: de bestuurslaag als geheel, waarmee elke gemeente te maken heeft, zoals Provincie en Waterschap.'
   gevolg: verwerkt
@@ -250,8 +250,8 @@ beslist:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-wet-brp-bwbr0033715
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  - 2026-vng-gemma-2026-10-02
   - 2026-rijk-bw2-rechtspersonen
+  - 2026-vng-gemma-2026-10-02
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   herkomst: rijksregelgeving
   gemma:

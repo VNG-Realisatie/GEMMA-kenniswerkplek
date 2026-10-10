@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het aanvragen en ophalen van een nationaal paspoort met 66 in plaats van 34 bladzijden.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -67,7 +66,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke aanvraag. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md), [HUP Uitreiking reisdocument](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, de aanvrager, een inwoner (UPL: doelgroep burger). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, behandelen aanvraag reisdocument. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Paspoort of identiteitskaart aanvragen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md), [HUP Uitreiking reisdocument](../../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, de UPL noemt het als eigen product (besluit redacteur 2026-10-06: varianten zijn een apart product waar de UPL ze apart noemt). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, de UPL noemt het als eigen product (besluit 2026-10-06: varianten zijn een apart product waar de UPL ze apart noemt). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties
 

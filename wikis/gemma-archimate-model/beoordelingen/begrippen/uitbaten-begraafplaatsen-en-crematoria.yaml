@@ -82,11 +82,10 @@ kenmerken:
     onderbouwing: Wordt niet per geval doorlopen; een groepering van processen.
   groepeert_processen:
     waarde: ja
-    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen (besluit redacteur 2026-10-04).
+    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen (besluit 2026-10-04).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-gemma-2026-10-02
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -212,7 +211,6 @@ beschrijving:
 - Op de gemeentelijke begraafplaats en in een gemeentelijk crematorium begraaft, cremeert en zet de gemeente bij, binnen de tijden die de verordening bepaalt (Wet op de lijkbezorging art. 23, 49, 56, 62; Groningen art. 7, 21), en ruimt zij graven om ruimte vrij te maken (art. 31; Groningen art. 27). Het cluster groepeert deze bedrijfsprocessen als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Een nieuw cluster; het specialiseert het GEMMA-proces Uitbaten gemeentelijke voorzieningen (zie Generiek GEMMA-element).
@@ -223,7 +221,7 @@ relaties:
 - soort: aggregatie
   naar: uitvoeren-lijkbezorging
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -231,12 +229,15 @@ relaties:
 - soort: aggregatie
   naar: ruimen-graf
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 31; Groningen art. 27
 besluiten:
+- datum: '2026-10-04'
+  besluit: Cluster naar soort werk met Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as en Ruimen graf; specialisatie van GEMMA *Uitbaten gemeentelijke voorzieningen*.
+  gevolg: verwerkt
 - datum: '2026-10-04'
   besluit: Cluster naar soort werk met Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as en Ruimen graf, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen.
   gevolg: verwerkt
@@ -256,7 +257,6 @@ beslist:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  - 2026-vng-gemma-2026-10-02
   herkomst: rijksregelgeving
   gemma_generiek:
     gemma_id: id-de88d348-dcce-4b8a-a3f6-cac6351a8311

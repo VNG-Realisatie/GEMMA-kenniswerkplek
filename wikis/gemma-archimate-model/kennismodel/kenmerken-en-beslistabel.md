@@ -160,7 +160,7 @@ Stap 0–4 van boven naar beneden: de eerste passende regel beslist en levert he
 | 29 | 7 Indeling | *bijdrage aan groter proces* met *klant tot klant* | procesniveau bedrijfsproces; `kernobject` verplicht; geaggregeerd door één levensloopproces |
 | 30 | 7 Indeling | *bijdrage aan groter proces* zonder *klant tot klant* | deelproces of processtap: onderdeel, geen pagina; `genoemd_begrip` is het bedrijfsproces, de tekst naar zijn `deelprocessen`; met *levert aanbod* voorleggen |
 | 31 | 7 Indeling | geen levensloop en geen bijdrage aan een groter proces | voorleggen: procesniveau niet te bepalen |
-| 32 | 7 Indeling | bedrijfsobject met *generiek* | objectniveau generiek (verhuist later naar een algemeen onderwerp) |
+| 32 | 7 Indeling | bedrijfsobject met *generiek* | objectniveau generiek (thuis in een thematisch gedeeld onderwerp of Kern) |
 | 33 | 7 Indeling | bedrijfsobject met *invoer van een ander* | onderdeel: geen pagina; vermelden bij het genoemde proces |
 | 34 | 7 Indeling | gebeurtenis, rol of dienst met *generiek* | specialisatie van een generiek GEMMA-element (exacte match) |
 | 35 | 7 Indeling | bedrijfsobject dat `kernobject` is van een levensloopproces | objectniveau kernobject; per kernobject één levensloopproces, of één per partij in een ketensamenwerking |

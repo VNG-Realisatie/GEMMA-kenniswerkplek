@@ -205,7 +205,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 137), apart van de akte van de burgerlijke stand (nr. 23); de UPL noemt varianten apart (besluit redacteur 2026-10-06).
+    onderbouwing: Een eigen product in de UPL (nr. 137), apart van de akte van de burgerlijke stand (nr. 23); de UPL noemt varianten apart (besluit 2026-10-06).
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
   generiek:
@@ -226,7 +226,6 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

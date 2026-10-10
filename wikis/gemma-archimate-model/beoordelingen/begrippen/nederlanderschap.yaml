@@ -225,7 +225,6 @@ synoniemen:
   context: GGM
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: ggm-entiteit
 ggm:
   guid: EAID_BA5F2281_466D_4c69_9EB8_D10614C5CD8E
   sterkte: sterk
@@ -237,7 +236,7 @@ relaties:
 - soort: associatie (gericht)
   naar: ingeschreven-persoon
   naam: is nationaliteit van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-nederlandse-nationaliteit
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738

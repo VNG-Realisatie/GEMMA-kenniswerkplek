@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Inschrijving in de basisregistratie personen van wie zich vanuit het buitenland in de gemeente vestigt.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

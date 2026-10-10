@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Adres waar post voor een ingeschreven persoon zonder woonadres in ontvangst wordt genomen door een briefadresgever.
-grondslag: ggm-entiteit
 match:
   ggm: exact
   gemma: exact

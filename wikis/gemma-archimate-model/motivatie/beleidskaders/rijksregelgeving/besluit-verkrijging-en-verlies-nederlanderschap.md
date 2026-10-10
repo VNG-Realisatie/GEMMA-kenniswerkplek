@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van rijksbestuur die de bevoegde autoriteiten aanwijst en de behandeling van optie, naturalisatie en afstand regelt.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -86,8 +85,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Bronnen
 
-De regeling zelf ([2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md)).
-
 | Korte titel | Bron |
 |---|---|
 | [Besluit verkrijging en verlies Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
@@ -100,4 +97,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
+- 2026-10-07: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap (optie, naturalisatie, afstand) en van Beheren stempassen en Registreren kiesgerechtigdheid.
 - 2026-10-07: Opnemen als beleidskader; bron van de gemeentelijke rol bij optie, naturalisatie en afstand (besluit Afbakening Burgerzaken 2026-10-06).

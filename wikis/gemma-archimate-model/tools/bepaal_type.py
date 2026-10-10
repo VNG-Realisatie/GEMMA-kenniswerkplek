@@ -1,6 +1,6 @@
 """Bepaal het ArchiMate-elementtype van een begrip uit zijn kenmerken.
 
-Eén bron van waarheid voor de criteria van deze wiki (criteria van 2026-10-04, procesniveaus van 2026-10-08):
+Eén bron van waarheid voor de criteria van deze wiki:
 - KENMERKEN: de neutrale eigenschappen die het model per begrip één keer beantwoordt (ja/nee), met de vraag die
   bepaalt of het kenmerk van toepassing is, en bij welke aard een ja mag (consistentie);
 - TYPEN: per elementtype het kenmerk dat het type bepaalt, de kernrelatie (moet ja), de overige drempelcriteria
@@ -20,7 +20,7 @@ blijven.
 
 Gebruik (vanuit de wikimap):
     uv run python tools/bepaal_type.py evalueer <assessment.json | beoordeling.json> [--schrijf]
-    uv run python tools/bepaal_type.py status --uitkomst <uitkomst.json> [--ggm-match sterk] [--grondslag ggm-entiteit]
+    uv run python tools/bepaal_type.py status --uitkomst <uitkomst.json> [--ggm-match sterk]
     uv run python tools/bepaal_type.py markdown [--schrijf]   # de vragenlijst in de criteria-skill
     uv run python tools/bepaal_type.py schema [--schrijf]     # schemas/beoordeling.schema.json
 """
@@ -734,7 +734,7 @@ INDELING = [
      "deelproces of processtap: onderdeel, geen pagina; `genoemd_begrip` is het bedrijfsproces, de tekst naar zijn "
      "`deelprocessen`; met *levert aanbod* voorleggen"),
     ("7 Indeling", "geen levensloop en geen bijdrage aan een groter proces", "voorleggen: procesniveau niet te bepalen"),
-    ("7 Indeling", "bedrijfsobject met *generiek*", "objectniveau generiek (verhuist later naar een algemeen onderwerp)"),
+    ("7 Indeling", "bedrijfsobject met *generiek*", "objectniveau generiek (thuis in een thematisch gedeeld onderwerp of Kern)"),
     ("7 Indeling", "bedrijfsobject met *invoer van een ander*", "onderdeel: geen pagina; vermelden bij het genoemde proces"),
     ("7 Indeling", "gebeurtenis, rol of dienst met *generiek*", "specialisatie van een generiek GEMMA-element (exacte match)"),
     ("7 Indeling", "bedrijfsobject dat `kernobject` is van een levensloopproces", "objectniveau kernobject; per "
@@ -836,7 +836,7 @@ def _indeling(u: Uitkomst, n: int) -> Uitkomst:
 
 def _niveau_proces(u: Uitkomst, k: dict, extra: dict) -> Uitkomst:
     """Stap 7, proces: levensloopproces, bedrijfsproces, cluster naar soort werk, of deelproces en processtap (geen
-    pagina). Procesniveaus volgens GEMMA Online, Proceshiërarchie (besluit redacteur 2026-10-08)."""
+    pagina). Procesniveaus volgens GEMMA Online, Proceshiërarchie."""
     if _ja(k, "groepeert_processen"):
         if extra.get("soort_werk_van"):
             u.procesniveau = "cluster naar soort werk"
@@ -941,7 +941,7 @@ def indeling(beoordelingen: dict[str, dict], uitkomsten: dict[str, dict | None])
     """Stap 7 met context: het objectniveau (kernobject, subobject of onderdeel) en de controle op `kernobject`.
 
     Wijzigt `uitkomsten` ter plekke; levert fouten (per `id: tekst`). De procesindeling naar kernobject is strikt
-    hiërarchisch (besluit redacteur 2026-10-08): per kernobject precies één levensloopproces, met het taakveld en
+    hiërarchisch: per kernobject precies één levensloopproces, met het taakveld en
     beleidsdomein van dat kernobject; meer alleen als ze allemaal een bedrijfsinteractie met dat kernobject bedienen
     (elk het deel van één partij in de ketensamenwerking); een levensloopproces aggregeert geen levensloopproces; een
     bedrijfsproces hangt
@@ -980,7 +980,7 @@ def indeling(beoordelingen: dict[str, dict], uitkomsten: dict[str, dict | None])
         if len(boven) > 1:
             fouten.append(f"{bid}: hangt onder meer levensloopprocessen ({', '.join(boven)}); een bedrijfsproces hangt "
                           "onder één levensloopproces")
-    # Triggering (besluit redacteur 2026-10-08, klant tot klant): een bedrijfsproces dat een ander bedrijfsproces onder
+    # Triggering (klant tot klant): een bedrijfsproces dat een ander bedrijfsproces onder
     # hetzelfde levensloopproces triggert, wijst op een deelproces (voorleggen); een gebeurtenis start altijd een
     # bedrijfsproces, nooit een deelproces (fout).
     for bid, d in sorted(beoordelingen.items()):
@@ -1053,20 +1053,15 @@ def indeling(beoordelingen: dict[str, dict], uitkomsten: dict[str, dict | None])
     return fouten
 
 
-GRONDSLAGEN = ("ggm-entiteit", "ggm-afgeleid", "procesobject", "regelgeving", "bron")
-REDEN_REGELGEVING = "grondslag regelgeving: altijd voorleggen"
 REDEN_GEEN_GGM = "gegevensobject zonder sterke GGM-match"
 
 
-def voor_te_leggen(uitkomst: Uitkomst | dict, ggm_match: str | None = None, grondslag: str | None = None) -> list[str]:
+def voor_te_leggen(uitkomst: Uitkomst | dict, ggm_match: str | None = None) -> list[str]:
     """De redenen waarom de redacteur over dit begrip moet beslissen (leeg: de AI mag het zelf afhandelen)."""
     u = uitkomst if isinstance(uitkomst, dict) else asdict(uitkomst)
     redenen = list(u["redenen"]) or (["voorleggen"] if u["voorleggen"] else [])
-    if u["soort"] == "element":
-        if grondslag == "regelgeving":
-            redenen.append(REDEN_REGELGEVING)
-        if u["data_object"] == "ja" and ggm_match not in ("exact", "sterk"):
-            redenen.append(REDEN_GEEN_GGM)
+    if u["soort"] == "element" and u["data_object"] == "ja" and ggm_match not in ("exact", "sterk"):
+        redenen.append(REDEN_GEEN_GGM)
     return redenen
 
 
@@ -1076,7 +1071,7 @@ def open_redenen(redenen: list[str], besluiten: list[dict] | None) -> list[str]:
     return [r for r in redenen if r not in gedekt]
 
 
-def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None, grondslag: str | None = None,
+def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None,
                         besluiten: list[dict] | None = None) -> str | None:
     """`review` als niets meer voorgelegd hoeft te worden; `kandidaat` als er een reden open staat; `afgewezen` als
     het laatste besluit van de redacteur `afwijzen` is.
@@ -1089,7 +1084,7 @@ def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None,
         return None
     if besluiten and besluiten[-1].get("gevolg") == "afwijzen":
         return "afgewezen"
-    if open_redenen(voor_te_leggen(u, ggm_match, grondslag), besluiten):
+    if open_redenen(voor_te_leggen(u, ggm_match), besluiten):
         return "kandidaat"
     return "review"
 
@@ -1229,9 +1224,6 @@ def schema() -> dict:
             "synoniemen": {"type": "array", "items": obj(["naam", "context"], naam=tekst, context=tekst)},
             "taakveld": tekst,
             "beleidsdomein": tekst,
-            "grondslag": {"enum": list(GRONDSLAGEN)},
-            "grondslag_toelichting": {**alineas, "description": "Bij regelgeving de juridische bron, bij "
-                                                                "procesobject het proces, bij ggm-afgeleid de afleiding"},
             "ggm": obj(["sterkte", "onderbouwing"], guid={"type": "string", "pattern": "^EAID_"}, sterkte=sterkte,
                        onderbouwing=tekst,
                        duplicaten={"type": "array", "items": obj(["guid", "toelichting"],
@@ -1266,11 +1258,14 @@ def schema() -> dict:
                                                               toelichting=tekst)},
             "tegenhanger": obj(["element", "toelichting"], element=id_, toelichting=tekst),
             "relaties": {"type": "array", "items": obj(
-                ["soort", "naar", "grondslag"],
+                ["soort", "naar", "ggm_match"],
                 soort={"type": "string", "pattern": r"^(associatie|associatie \(gericht\)|aggregatie|compositie|"
                                                     r"specialisatie|toewijzing|toegang \([a-zë-]+\)|triggering|"
                                                     r"stroom|realisatie|bediening)$"},
-                naar=id_, naam=tekst, kardinaliteit=tekst, grondslag={"enum": ["ggm-exact", "ggm-afgeleid", "bron"]},
+                naar=id_, naam=tekst, kardinaliteit=tekst,
+                ggm_match={"enum": ["exact", "geen"],
+                           "description": "exact: de relatie is een GGM-relatie tussen de gematchte entiteiten "
+                                          "(`ggm_relatie`); geen: geen GGM-relatie, ook niet bij een afgeleide keten"},
                 via={**id_, "description": "Een begrip met uitkomst specialisatie van het doel (een specialisatie "
                                            "zonder pagina)"},
                 ggm_relatie={"type": "array", "items": {"type": "string", "pattern": "^EAID_"}},
@@ -1282,7 +1277,9 @@ def schema() -> dict:
                 ["datum", "besluit", "gevolg"], datum={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
                 besluit=tekst, gevolg={"enum": ["opnemen", "afwijzen", "verwerkt"]},
                 redenen={"type": "array", "items": tekst,
-                         "description": "De voorgelegde redenen (uit beslist.voor_te_leggen) die dit besluit dekt"})},
+                         "description": "De voorgelegde redenen (uit beslist.voor_te_leggen) die dit besluit dekt"},
+                stand={**tekst, "description": "Bij een besluit dat later herzien is of nog open staat: hoe het nu "
+                                               "staat"})},
             "status": {"enum": ["kandidaat", "review", "goedgekeurd", "afgewezen"],
                        "description": "Door tools/beslissen.py en llmwiki promote; niet zelf invullen"},
             "beslist": {"type": "object", "description": "Door tools/beslissen.py; niet zelf invullen"},
@@ -1322,7 +1319,6 @@ def main(argv: list[str] | None = None) -> int:
     p_status = sub.add_parser("status", help="Voorgestelde status voor een uitkomst")
     p_status.add_argument("--uitkomst", required=True)
     p_status.add_argument("--ggm-match")
-    p_status.add_argument("--grondslag", choices=GRONDSLAGEN)
     p_md = sub.add_parser("markdown", help="De vragenlijst voor de criteria-skill")
     p_md.add_argument("--schrijf", action="store_true", help="Werk het gegenereerde blok in de skill bij")
     p_schema = sub.add_parser("schema", help="Beoordeling-schema")
@@ -1346,7 +1342,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if args.cmd == "status":
         uitkomst = json.loads(Path(args.uitkomst).read_text(encoding="utf-8"))
-        print(voorgestelde_status(uitkomst, args.ggm_match, args.grondslag))
+        print(voorgestelde_status(uitkomst, args.ggm_match))
         return 0
 
     pad = Path(args.bestand)

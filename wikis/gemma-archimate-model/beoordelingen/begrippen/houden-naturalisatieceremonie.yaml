@@ -162,7 +162,7 @@ kenmerken:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'Nee, de dienst levert het bedrijfsproces waarvan dit een deelproces is: Behandelen naturalisatieverzoek en Behandelen optieverklaring (UPL nr. 261) (besluit redacteur 2026-10-08, klant tot klant).'
+    onderbouwing: 'Nee, de dienst levert het bedrijfsproces waarvan dit een deelproces is: Behandelen naturalisatieverzoek en Behandelen optieverklaring (UPL nr. 261) (besluit 2026-10-08, klant tot klant).'
   bedient_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -225,7 +225,6 @@ definitie: Het oproepen van nieuwe Nederlanders en het uitreiken van de bevestig
 synoniemen:
 - naam: Uitreiken bevestiging of uittreksel
   context: wet
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.

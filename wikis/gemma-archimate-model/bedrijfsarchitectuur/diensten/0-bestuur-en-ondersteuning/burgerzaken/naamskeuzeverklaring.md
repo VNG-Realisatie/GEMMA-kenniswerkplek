@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het vastleggen van de keuze van de ouders voor de achternaam van hun kind bij de ambtenaar van de burgerlijke stand.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

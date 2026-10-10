@@ -238,21 +238,21 @@ relaties:
 - soort: toegang (registreren)
   naar: akte-van-de-burgerlijke-stand
   naam: maakt op en houdt bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 16a, 18, 20
 - soort: aggregatie
   naar: opmaken-akte-van-overlijden
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 19f
 - soort: aggregatie
   naar: verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
@@ -260,91 +260,91 @@ relaties:
 - soort: aggregatie
   naar: overlijden
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 19f, 19h
 - soort: aggregatie
   naar: opmaken-geboorteakte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 19, 19e
 - soort: aggregatie
   naar: opmaken-akte-levenloos-geboren-kind
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 19i
 - soort: aggregatie
   naar: opmaken-akte-van-erkenning
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 203
 - soort: aggregatie
   naar: toevoegen-latere-vermelding
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 20
 - soort: aggregatie
   naar: geboorte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 19e
 - soort: aggregatie
   naar: levenloze-geboorte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 19i
 - soort: aggregatie
   naar: adoptie
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   vindplaats: art. 53
 - soort: aggregatie
   naar: ontkenning-ouderschap
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   vindplaats: art. 49-52
 - soort: aggregatie
   naar: vaststelling-ouderschap
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-vaststelling-ouderschap
   vindplaats: inleiding
 - soort: aggregatie
   naar: opmaken-akte-van-naamskeuze
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 5
 - soort: aggregatie
   naar: wijzigen-geslachtsvermelding
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 28b
 - soort: aggregatie
   naar: naamswijziging
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
@@ -352,28 +352,28 @@ relaties:
 - soort: aggregatie
   naar: voltrekken-huwelijk
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 63
 - soort: aggregatie
   naar: registreren-partnerschap
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 80a, 80g
 - soort: aggregatie
   naar: inschrijven-ontbinding-huwelijk-of-partnerschap
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 80c, 163
 - soort: aggregatie
   naar: ontbinding-huwelijk-of-partnerschap
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 80c, 163
@@ -381,7 +381,6 @@ bronnen:
 - 2026-rvig-hup-algemeen
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

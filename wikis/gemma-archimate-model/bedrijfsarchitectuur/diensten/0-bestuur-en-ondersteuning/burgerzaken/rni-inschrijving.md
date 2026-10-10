@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Inschrijving in de registratie niet-ingezetenen van wie niet in Nederland woont maar wel een relatie heeft met de Nederlandse overheid.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

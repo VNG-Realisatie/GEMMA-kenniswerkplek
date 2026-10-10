@@ -7,7 +7,6 @@ kenmerken:
     onderbouwing: Het verstrekken en vervangen van stempassen, kiezerspassen en volmachtbewijzen is bij elke verkiezing een taak van de burgemeester (Kieswet art. J 7, J 8, K 4, L 11); GEMMA noemt het verstrekken van stempassen bij de functie Verkiezingen gerelateerde diensten.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-    - 2026-vng-gemma-2026-10-02
   gemeentelijk:
     waarde: ja
     onderbouwing: De burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11).
@@ -217,10 +216,9 @@ afnemer: extern
 definitie: Het verstrekken, vervangen en ongeldig maken van stempassen, kiezerspassen en volmachtbewijzen voor een verkiezing.
 beschrijving:
 - Bij elke verkiezing stelt de burgemeester daags na de kandidaatstelling de gegevens vast van de kiezers die op die dag in de gemeente als kiezer zijn geregistreerd en verstrekt hij hun ten minste veertien dagen voor de stemming een stempas (Kieswet art. J 7). Op verzoek reikt hij een vervangende stempas of een kiezerspas uit of verleent hij een volmacht; de stempas waarvoor iets anders in de plaats komt, wordt ongeldig en komt in het register van ongeldige stempassen (art. J 7a, J 8, K 3, K 4, L 8, L 11).
-- De organisatie van de verkiezing zelf, met de stembureaus, de stemming en de uitslag, valt buiten dit onderwerp (besluit redacteur 2026-10-06, Afbakening Burgerzaken). De minister van Binnenlandse Zaken en Koninkrijksrelaties stelt de modellen vast en levert de informatie voor de productie van stempas en kiezerspas (art. J 7 lid 3-4, K 4 lid 4).
+- De organisatie van de verkiezing zelf, met de stembureaus, de stemming en de uitslag, valt buiten dit onderwerp (besluit 2026-10-06, Afbakening Burgerzaken). De minister van Binnenlandse Zaken en Koninkrijksrelaties stelt de modellen vast en levert de informatie voor de productie van stempas en kiezerspas (art. J 7 lid 3-4, K 4 lid 4).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -228,32 +226,36 @@ relaties:
 - soort: toegang (registreren)
   naar: stempas
   naam: verstrekt, vervangt en maakt ongeldig
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7, J 7a, J 8
 - soort: aggregatie
   naar: verstrekken-stempas
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7, J 8
 - soort: aggregatie
   naar: behandelen-verzoek-om-kiezerspas
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. K 1-K 6
 - soort: aggregatie
   naar: behandelen-verzoek-om-volmacht
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. L 1-L 15
 besluiten:
+- datum: '2026-10-07'
+  besluit: Stempas is kernobject van het bedrijfsproces Beheren stempassen onder Verzorgen burgerzaken (stempas, kiezerspas, volmacht); de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie.
+  gevolg: verwerkt
+  stand: 'deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren stempassen is levensloopproces'
 - datum: '2026-10-07'
   besluit: 'Procesindeling kiesrecht (optie A): Stempas is kernobject van het bedrijfsproces Beheren stempassen onder Verzorgen burgerzaken, met de deelprocessen Verstrekken stempas, Behandelen verzoek om kiezerspas en Behandelen verzoek om volmacht; de registratie van de kiesgerechtigdheid is het deelproces Registreren kiesgerechtigdheid onder Bijhouden persoonsgegevens.'
   gevolg: verwerkt
@@ -272,7 +274,6 @@ beslist:
     typeregel: 17
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
-  - 2026-vng-gemma-2026-10-02
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md

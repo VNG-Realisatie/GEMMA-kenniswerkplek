@@ -212,12 +212,20 @@ kenmerken:
     onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element.
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 beschrijving:
-- 'Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit redacteur 2026-10-01).'
+- 'Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit 2026-10-01).'
 besluiten:
+- datum: '2026-10-01'
+  besluit: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
+  gevolg: verwerkt
 - datum: '2026-10-01'
   besluit: Burgemeester, college en raad hangen via de rol Beslisser (GEMMA) aan gedrag; het bevoegde orgaan per proces staat in de beschrijving van het proces.
   gevolg: verwerkt
-grondslag: bron
+- datum: '2026-10-06'
+  besluit: 'Generiek: de GEMMA-rol Beslisser geldt in elk onderwerp en verhuist naar Algemeen (`algemeen` eerste in `onderwerpen`). Het kenmerk *generiek* blijft nee: Beslisser is zelf de generieke GEMMA-rol, geen variant daarvan. Belanghebbende hoort ook bij Algemeen; die beoordeling volgt (nog een verwijzing).'
+  gevolg: verwerkt
+- datum: '2026-10-10'
+  besluit: Thuis in Bestuur en organisatie, bij de organen die de rol vervullen (regel Thuishoren).
+  gevolg: verwerkt
 gemma:
   id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
   sterkte: sterk
@@ -226,154 +234,154 @@ relaties:
 - soort: toewijzing
   naar: verlenen-grafrecht
   naam: beslist over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 16 lid 1
 - soort: toewijzing
   naar: vervallen-verklaren-grafrecht
   naam: beslist over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 18 lid 4, 20 lid 2
 - soort: toewijzing
   naar: opgraven-stoffelijk-overschot
   naam: verleent vergunning voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 29 lid 1
 - soort: toewijzing
   naar: verzorgen-gemeentebegrafenis
   naam: draagt zorg voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21 lid 1
 - soort: toewijzing
   naar: treffen-maatregel-bij-besmet-stoffelijk-overschot
   naam: treft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22a
 - soort: toewijzing
   naar: verlenen-toestemming-bijzondere-begraafplaats
   naam: beslist over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 40 lid 1, 41
 - soort: toewijzing
   naar: sluiten-begraafplaats
   naam: besluit tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 43 lid 2, 44
 - soort: toewijzing
   naar: verlenen-vergunning-bijzonder-crematorium
   naam: verleent
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 53
 - soort: toewijzing
   naar: stellen-andere-termijn
   naam: stelt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17 lid 1
 - soort: toewijzing
   naar: verlenen-verlof-tot-ontleding
   naam: geeft verlof voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 68 lid 1
 - soort: toewijzing
   naar: afgeven-laissez-passer
   naam: geeft af
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: art. 11 lid 1
 - soort: toewijzing
   naar: inschrijven-ingezetene
   naam: beslist over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-brp-bwbr0034306
   vindplaats: Besluit BRP art. 24
 - soort: toewijzing
   naar: inschrijven-op-briefadres
   naam: beslist over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   vindplaats: Briefadres
 - soort: toewijzing
   naar: uitvoeren-adresonderzoek
   naam: besluit na
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
   vindplaats: '4.6'
 - soort: toewijzing
   naar: behandelen-verzoek-om-geheimhouding
   naam: beslist over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-verstrekkingsbeperking
   vindplaats: art. 2.60 Wet BRP
 - soort: toewijzing
   naar: verstrekken-persoonsgegevens
   naam: beslist over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
   vindplaats: Belangenafweging
 - soort: toewijzing
   naar: behandelen-verzoek-om-correctie
   naam: beslist over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   vindplaats: Na uw aanvraag
 - soort: toewijzing
   naar: behandelen-verzoek-om-verwijdering-van-gegevens
   naam: beslist over
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   vindplaats: Na uw aanvraag
 - soort: toewijzing
   naar: wijzigen-identificatienummers
   naam: besluit tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-wijzigen-bsn
   vindplaats: regel 19-25
 - soort: toewijzing
   naar: behandelen-aanvraag-reisdocument
   naam: verstrekt of weigert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 40, 44
 - soort: toewijzing
   naar: behandelen-aanvraag-reisdocument-niet-ingezetene
   naam: verstrekt of weigert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 4.2
 - soort: toewijzing
   naar: behandelen-optieverklaring
   naam: bevestigt of weigert de optie
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
@@ -381,28 +389,28 @@ relaties:
 - soort: toewijzing
   naar: behandelen-verklaring-van-afstand
   naam: bevestigt de afstand
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 63
 - soort: toewijzing
   naar: behandelen-verzoek-om-volmacht
   naam: beslist op het verzoek
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. L 11
 - soort: toewijzing
   naar: registreren-kiesgerechtigdheid
   naam: beslist op een aanvraag tot wijziging
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. D 7
 - soort: toewijzing
   naar: behandelen-aanvraag-rijbewijs
   naam: besluit tot afgifte of weigering
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
@@ -410,12 +418,27 @@ relaties:
 - soort: toewijzing
   naar: inhouden-reisdocument
   naam: verklaart vervallen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 44, 46
+- soort: toewijzing
+  naar: wijzigen-naamgebruik
+  naam: beslist over
+  ggm_match: geen
+  bronnen:
+  - 2026-rvig-hup-wijziging-naamgebruik
+  vindplaats: regel 34
+- soort: toewijzing
+  naar: verwerken-buitenlands-document
+  naam: beslist over
+  ggm_match: geen
+  bronnen:
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  - 2026-rvig-hup-overlijden-buitenland
+  vindplaats: 'Utrecht: Na uw afspraak; HUP regel 33'
 onderwerpen:
-- algemeen
+- bestuur-en-organisatie
 - lijkbezorging
 - burgerzaken
 doelgroep: gemeente
@@ -457,6 +480,9 @@ beslist:
   - 2026-rijk-kieswet-bwbr0004627
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2026-rvig-hup-wijziging-naamgebruik
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  - 2026-rvig-hup-overlijden-buitenland
   herkomst: rijksregelgeving
   gemma:
     gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e

@@ -56,11 +56,11 @@ def _begrippen():
     return {
         "beschikking": _begrip("Beschikking", "business-object", gemma_id="id-beschikking",
                                taakveld="Bestuur", beleidsdomein="Besluitvorming", relaties=[
-                                   {"soort": "associatie (gericht)", "naar": "urn", "grondslag": "bron", "bronnen": ["2026-bron"]}]),
+                                   {"soort": "associatie (gericht)", "naar": "urn", "ggm_match": "geen", "bronnen": ["2026-bron"]}]),
         "behandelen-aanvraag": _begrip("Behandelen aanvraag", "business-process", gemma_id="id-proces", relaties=[
-            {"soort": "toegang (raadplegen)", "naar": "beschikking", "naam": "leest", "grondslag": "bron", "bronnen": ["2026-bron"]},
-            {"soort": "toegang (registreren)", "naar": "beschikking", "grondslag": "bron", "bronnen": ["2026-bron"]},
-            {"soort": "triggering", "naar": "graf", "grondslag": "bron", "bronnen": ["2026-bron"]}]),
+            {"soort": "toegang (raadplegen)", "naar": "beschikking", "naam": "leest", "ggm_match": "geen", "bronnen": ["2026-bron"]},
+            {"soort": "toegang (registreren)", "naar": "beschikking", "ggm_match": "geen", "bronnen": ["2026-bron"]},
+            {"soort": "triggering", "naar": "graf", "ggm_match": "geen", "bronnen": ["2026-bron"]}]),
         "urn": _begrip("Urn", "business-object", taakveld="Lijkbezorging", beleidsdomein="Begraven",
                        synoniemen=[{"naam": "Asbus", "context": "wet"}]),
         "graf": _begrip("Graf", "business-object", status="review"),
@@ -244,13 +244,13 @@ def _indeling_begrippen():
                           taakveld="Bestuur", beleidsdomein="Besluitvorming")
     beschikking["beslist"]["uitkomst"]["objectniveau"] = "generiek"
     levensloop = element("Toestaan lijkbezorging", "business-process", "bedrijfsproces", kernobject="lijk",
-                         relaties=[{"soort": "aggregatie", "naar": "opgraven-lijk", "grondslag": "bron",
+                         relaties=[{"soort": "aggregatie", "naar": "opgraven-lijk", "ggm_match": "geen",
                                     "bronnen": ["2026-bron"]}])
     levensloop["beslist"]["uitkomst"]["procesniveau"] = "levensloopproces"
     deel = element("Opgraven lijk", "business-process", "bedrijfsproces", taakveld="Volksgezondheid",
                    beleidsdomein="Begraafplaatsen", kernobject="lijk", afnemer="extern",
                    gemma_generiek={"id": "id-generiek", "onderbouwing": "Een vergunningaanvraag."},
-                   relaties=[{"soort": "toegang (registreren)", "naar": "beschikking", "grondslag": "bron",
+                   relaties=[{"soort": "toegang (registreren)", "naar": "beschikking", "ggm_match": "geen",
                               "bronnen": ["2026-bron"], "via": "vergunning-tot-opgraving"}])
     deel["beslist"]["uitkomst"]["procesniveau"] = "bedrijfsproces"
     lijk = element("Lijk", "business-object", "bedrijfsobject", taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen")
@@ -258,7 +258,7 @@ def _indeling_begrippen():
     functie = element("Exploiteren van begraafplaatsen", "business-function", "bedrijfsfunctie", domein="Fysieke leefomgeving")
     domeinfunctie = element("Uitvoering fysieke leefomgeving", "business-function", "bedrijfsfunctie",
                             gemma_id="id-uitvoering-fl", domein="Fysieke leefomgeving",
-                            relaties=[{"soort": "aggregatie", "naar": "exploiteren", "grondslag": "bron", "bronnen": ["2026-bron"]}])
+                            relaties=[{"soort": "aggregatie", "naar": "exploiteren", "ggm_match": "geen", "bronnen": ["2026-bron"]}])
     nabestaande = element("Nabestaande", "business-role", "rol", doelgroep="inwoners en ondernemers")
     zonder = element("Gemeente", "business-actor", "actor", doelgroep="onbekende groep")
     specialisatie = {"begrip": "Vergunning tot opgraving", "status": "review"}
@@ -449,7 +449,7 @@ def test_dienst_hangt_onder_haar_functie_en_niet_onder_de_domeingroepering(tmp_p
     zonder = _begrip("Losse dienst", "business-service", status="review", domein="Fysieke leefomgeving", afnemer="extern")
     zonder["beslist"]["uitkomst"]["paginatype"] = "dienst"
     begrippen["losse-dienst"] = zonder
-    begrippen["exploiteren"]["relaties"] = [{"soort": "aggregatie", "naar": "graf-aanvragen", "grondslag": "bron", "bronnen": ["2026-bron"]}]
+    begrippen["exploiteren"]["relaties"] = [{"soort": "aggregatie", "naar": "graf-aanvragen", "ggm_match": "geen", "bronnen": ["2026-bron"]}]
     uit, root = _export_indeling(tmp_path, begrippen)
     (agg,) = _relaties_van(root, "archimate:AggregationRelationship", ae.vast_id("element", "exploiteren"), ae.vast_id("element", "graf-aanvragen"))
     assert _props(agg)["wiki-gemma-model indeling"] == "Functie-indeling naar domein"
@@ -523,7 +523,7 @@ def test_gebeurtenis_hangt_onder_het_proces_in_de_procesindeling_naar_kernobject
     uit, root = _export_indeling(tmp_path, begrippen)
     assert "Overlijden" in uit.zonder_plaats
     begrippen["opgraven-lijk"]["relaties"].append(
-        {"soort": "aggregatie", "naar": "overlijden", "grondslag": "bron", "bronnen": ["2026-bron"]})
+        {"soort": "aggregatie", "naar": "overlijden", "ggm_match": "geen", "bronnen": ["2026-bron"]})
     uit, root = _export_indeling(tmp_path, begrippen)
     (agg,) = _relaties_van(root, "archimate:AggregationRelationship", ae.vast_id("element", "opgraven-lijk"),
                            ae.vast_id("element", "overlijden"))
@@ -551,7 +551,7 @@ def test_bedrijfsinteractie_staat_in_de_map_ketensamenwerking_onder_het_beleidsd
     keten["beslist"]["uitkomst"]["paginatype"] = "bedrijfsinteractie"
     begrippen["bezorgen-lijken"] = keten
     begrippen["opgraven-lijk"]["relaties"].append(
-        {"soort": "bediening", "naar": "bezorgen-lijken", "grondslag": "bron", "bronnen": ["2026-bron"]})
+        {"soort": "bediening", "naar": "bezorgen-lijken", "ggm_match": "geen", "bronnen": ["2026-bron"]})
     uit, root = _export_indeling(tmp_path, begrippen)
     assert not uit.fouten, uit.fouten
     eid = ae.vast_id("element", "bezorgen-lijken")
@@ -693,7 +693,7 @@ def test_kennismodel_wiki_heeft_een_groepering_per_indeling(tmp_path):
 def test_relatie_buiten_het_kennismodel_gaat_niet_mee_en_komt_in_het_rapport(tmp_path):
     begrippen = _begrippen()
     begrippen["behandelen-aanvraag"]["relaties"].append(
-        {"soort": "associatie (gericht)", "naar": "urn", "grondslag": "bron", "bronnen": ["2026-bron"]})  # proces → object
+        {"soort": "associatie (gericht)", "naar": "urn", "ggm_match": "geen", "bronnen": ["2026-bron"]})  # proces → object
     uit, root = _kennismodel_export(tmp_path, begrippen)
     assert any("Behandelen aanvraag → Urn" in x for x in uit.weggelaten)
     assert not [e for e in root.iter("element") if e.get(ae.XSI) == "archimate:AssociationRelationship"

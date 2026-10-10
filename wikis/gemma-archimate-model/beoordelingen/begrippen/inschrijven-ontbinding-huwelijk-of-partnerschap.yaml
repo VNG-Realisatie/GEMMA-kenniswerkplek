@@ -241,7 +241,7 @@ relaties:
 - soort: toegang (registreren)
   naar: akte-van-de-burgerlijke-stand
   naam: schrijft in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   - 2026-rijk-burgerlijk-wetboek-boek-1
@@ -249,7 +249,7 @@ relaties:
 - soort: realisatie
   naar: echtscheiding-inschrijving
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
@@ -257,14 +257,13 @@ relaties:
 - soort: realisatie
   naar: geregistreerd-partnerschap-ontbinding
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   vindplaats: UPL nr. 157
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

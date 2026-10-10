@@ -28,7 +28,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het kernobject Rijbewijs is van dit onderwerp (UPL taakveld 0.2, besluit redacteur 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: het kernobject Rijbewijs is van dit onderwerp (UPL taakveld 0.2, besluit 2026-10-07).'
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
     - 2025-vng-upl-producten-en-diensten-extern
@@ -231,7 +231,6 @@ naamkeuze:
 - 'Infinitief met object in GEMMA-volgorde, zoals Beheren reisdocumenten: het proces omvat de hele levensloop van het rijbewijs waarbij de gemeente handelt, van aanvraag en afgifte tot vermissing. Verstrekken rijbewijs is overwogen, maar de wet kent afgifte en uitreiking als twee momenten (Wegenverkeerswet 1994 art. 116, 120a).'
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor het rijbewijs; de functie Officiële documenten verstrekking bedient het.
@@ -241,21 +240,21 @@ relaties:
 - soort: toegang (registreren)
   naar: rijbewijs
   naam: geeft af, reikt uit en neemt in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 115, 116, 119, 120a
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: raadpleegt de basisregistratie personen
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 33 lid 2
 - soort: aggregatie
   naar: behandelen-aanvraag-rijbewijs
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
@@ -263,14 +262,14 @@ relaties:
 - soort: aggregatie
   naar: behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   vindplaats: art. 28, 45, 105 lid 2, 109
 - soort: aggregatie
   naar: verwerken-vermissing-rijbewijs
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
@@ -279,7 +278,7 @@ relaties:
 - soort: aggregatie
   naar: vermissing-van-het-rijbewijs
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 123 lid 1 onder h

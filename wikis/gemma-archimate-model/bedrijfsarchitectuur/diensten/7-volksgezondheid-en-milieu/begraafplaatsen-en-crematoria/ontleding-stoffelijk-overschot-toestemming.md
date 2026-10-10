@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Toestemming van de gemeente om een stoffelijk overschot in het belang van de wetenschap of het wetenschappelijk onderwijs te laten ontleden.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het doen van aangifte van de wijziging van de vermelding van het geslacht in de geboorteakte.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -230,7 +230,6 @@ synoniemen:
   context: wet
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor de bijhouding van de BRP; de functie Bevolkingsadministratie bijhouding bedient het.
@@ -240,21 +239,21 @@ relaties:
 - soort: toegang (bijwerken)
   naar: ingeschreven-persoon
   naam: houdt bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   vindplaats: BRP stelsel; De inschrijving
 - soort: toegang (raadplegen)
   naar: akte-van-de-burgerlijke-stand
   naam: ontleent gegevens aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-algemeen
   vindplaats: regel 55
 - soort: aggregatie
   naar: inschrijven-ingezetene
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-immigratie
   - 2026-rvig-hup-hervestiging
@@ -262,7 +261,7 @@ relaties:
 - soort: aggregatie
   naar: inschrijven-niet-ingezetene
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
@@ -270,7 +269,7 @@ relaties:
 - soort: aggregatie
   naar: verwerken-adreswijziging
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging
   - 2026-rvig-hup-intergemeentelijke-adreswijziging
@@ -278,42 +277,42 @@ relaties:
 - soort: aggregatie
   naar: verwerken-emigratie
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-emigratie
   vindplaats: inleiding
 - soort: aggregatie
   naar: inschrijven-op-briefadres
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   vindplaats: Briefadres
 - soort: aggregatie
   naar: uitvoeren-adresonderzoek
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
   vindplaats: par. 2, 4
 - soort: aggregatie
   naar: behandelen-verzoek-om-geheimhouding
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-verstrekkingsbeperking
   vindplaats: inleiding
 - soort: aggregatie
   naar: verstrekken-persoonsgegevens
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
   vindplaats: Waarom dit schema
 - soort: aggregatie
   naar: verstrekken-overzicht-gegevensverstrekkingen
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
   - 2025-vng-upl-producten-en-diensten-extern
@@ -321,14 +320,14 @@ relaties:
 - soort: aggregatie
   naar: behandelen-verzoek-om-correctie
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
   vindplaats: inleiding
 - soort: aggregatie
   naar: behandelen-verzoek-om-verwijdering-van-gegevens
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   - 2025-vng-upl-producten-en-diensten-extern
@@ -336,14 +335,14 @@ relaties:
 - soort: aggregatie
   naar: wijzigen-identificatienummers
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-wijzigen-identificatienummers
   vindplaats: regel 19
 - soort: aggregatie
   naar: verhuizing
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2026-rvig-hup-intergemeentelijke-adreswijziging
@@ -351,7 +350,7 @@ relaties:
 - soort: aggregatie
   naar: emigratie
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2026-rvig-hup-emigratie
@@ -359,7 +358,7 @@ relaties:
 - soort: aggregatie
   naar: vestiging-vanuit-het-buitenland
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2026-rvig-hup-immigratie
@@ -367,7 +366,7 @@ relaties:
 - soort: aggregatie
   naar: inschrijven-levenloos-geboren-kind
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2026-rvig-hup-geboorte
@@ -375,14 +374,14 @@ relaties:
 - soort: aggregatie
   naar: wijzigen-naamgebruik
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-wijziging-naamgebruik
   vindplaats: inleiding
 - soort: aggregatie
   naar: verwerken-buitenlands-document
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
   - 2026-rvig-hup-overlijden-buitenland
@@ -390,14 +389,14 @@ relaties:
 - soort: toegang (bijwerken)
   naar: nederlanderschap
   naam: neemt de Nederlandse nationaliteit op en beëindigt haar
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-nederlandse-nationaliteit
   vindplaats: HUP Nederlandse nationaliteit
 - soort: aggregatie
   naar: registreren-kiesgerechtigdheid
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   - 2026-rvig-hup-kiesrecht
@@ -405,7 +404,7 @@ relaties:
 - soort: aggregatie
   naar: uitsluiting-van-het-kiesrecht
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-nederlands-kiesrecht
   vindplaats: HUP Nederlands kiesrecht

@@ -212,7 +212,6 @@ kenmerken:
     onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -231,17 +230,17 @@ relaties:
 - soort: toegang (raadplegen)
   naar: stoffelijk-overschot
   naam: schouwt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 3
 - soort: stroom
   naar: verlenen-verlof-tot-begraving-of-crematie
-  naam: geeft de verklaring van overlijden door aan
-  grondslag: bron
+  naam: geeft de verklaring van overlijden door aan, of waarschuwt bij een niet-natuurlijke dood
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 7, 12
+  vindplaats: art. 7, 10 lid 1, 12
 onderwerpen:
 - lijkbezorging
 kernobject: stoffelijk-overschot
@@ -249,6 +248,12 @@ afnemer: extern
 besluiten:
 - datum: '2026-10-05'
   besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
+  gevolg: verwerkt
+- datum: '2026-10-08'
+  besluit: 'Overlijden leidt tot de akte (Opmaken akte van overlijden, daarna Verlenen verlof) en tot het begraven of cremeren (Uitvoeren lijkbezorging). Bijzetten of verstrooien van de as wordt een deelproces van Uitvoeren lijkbezorging. Schouwen stoffelijk overschot blijft een eigen bedrijfsproces (de schouw gebeurt vóór de aangifte en de aanvraag van het verlof, door een andere rol); de verklaring van overlijden gaat als stroom naar Verlenen verlof (Wlb art. 12). Afgewezen: Schouwen als deelproces van Verlenen verlof.'
+  gevolg: verwerkt
+- datum: '2026-10-10'
+  besluit: 'De waarschuwing van de gemeentelijke lijkschouwer aan de ambtenaar van de burgerlijke stand bij een niet-natuurlijke dood (Wlb art. 10 lid 1) is geen relatie tussen de rollen, maar hoort bij de stroom van Schouwen stoffelijk overschot naar Verlenen verlof tot begraving of crematie: geeft de verklaring van overlijden door aan, of waarschuwt bij een niet-natuurlijke dood (kennismodel: een handeling tussen rollen loopt via een proces, stroom of gebeurtenis).'
   gevolg: verwerkt
 status: goedgekeurd
 beslist:

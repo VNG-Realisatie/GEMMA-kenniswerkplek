@@ -241,14 +241,14 @@ relaties:
 - soort: toegang (registreren)
   naar: akte-van-de-burgerlijke-stand
   naam: maakt geboorteakte op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 19
 - soort: realisatie
   naar: geboorteaangifte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-geboorteaangifte-doen
@@ -256,14 +256,13 @@ relaties:
 - soort: stroom
   naar: bijhouden-persoonsgegevens
   naam: zendt geboorteakte aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-geboorte
   - 2026-utrecht-burgerzaken-geboorteaangifte-doen
   vindplaats: HUP Geboorte inleiding; Utrecht Na de aangifte
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

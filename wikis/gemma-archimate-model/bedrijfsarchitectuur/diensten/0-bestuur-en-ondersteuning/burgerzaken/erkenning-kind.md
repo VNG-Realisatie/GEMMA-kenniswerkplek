@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het erkennen van een kind door een man of vrouw bij de ambtenaar van de burgerlijke stand, voor of na de geboorte.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

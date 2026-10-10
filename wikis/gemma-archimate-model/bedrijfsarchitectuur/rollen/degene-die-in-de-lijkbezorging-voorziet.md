@@ -7,7 +7,6 @@ naam: Degene die in de lijkbezorging voorziet
 onderwerpen:
 - lijkbezorging
 definitie: Wie de lijkbezorging van een overledene regelt en daarvoor het verlof aanvraagt.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

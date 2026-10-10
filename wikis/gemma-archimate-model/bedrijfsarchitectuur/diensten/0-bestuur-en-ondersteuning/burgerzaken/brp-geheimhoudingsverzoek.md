@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het verzoek om persoonsgegevens uit de basisregistratie personen niet aan bepaalde derden te verstrekken, of om dat stop te zetten.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

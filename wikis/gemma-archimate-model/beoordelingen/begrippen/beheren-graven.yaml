@@ -234,7 +234,6 @@ kernobject: graf
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor het beheer van graven; nieuw voor GEMMA.
@@ -242,7 +241,7 @@ relaties:
 - soort: aggregatie
   naar: ruimen-graf
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -250,7 +249,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: graf
   naam: beheert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

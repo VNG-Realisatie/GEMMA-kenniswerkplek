@@ -206,14 +206,13 @@ kenmerken:
     - 2026-rvig-hup-emigratie
   generiek:
     waarde: nee
-    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke GEMMA-gebeurtenis (besluit redacteur 2026-10-04).
+    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke GEMMA-gebeurtenis (besluit 2026-10-04).
 definitie: Het vertrek van een ingezetene om ten minste acht maanden van een jaar in het buitenland te wonen.
 beschrijving:
 - Wie in een jaar acht maanden of langer in het buitenland gaat wonen, emigreert; ook een verhuizing naar het Caribisch deel van het Koninkrijk geldt als emigratie (Utrecht Emigratie doorgeven; HUP Emigratie).
 synoniemen:
 - naam: Vertrek naar het buitenland
   context: wet
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen gebeurtenis voor dit begrip; nieuw voor GEMMA.
@@ -221,7 +220,7 @@ relaties:
 - soort: triggering
   naar: verwerken-emigratie
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-emigratie
   - 2026-utrecht-burgerzaken-emigratie-doorgeven

@@ -224,14 +224,13 @@ relaties:
 - soort: triggering
   naar: opmaken-geboorteakte
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-geboorteaangifte-doen
   vindplaats: art. 19e
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het kiezen of laten goedkeuren van de locatie waar een huwelijk of partnerschap wordt voltrokken.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

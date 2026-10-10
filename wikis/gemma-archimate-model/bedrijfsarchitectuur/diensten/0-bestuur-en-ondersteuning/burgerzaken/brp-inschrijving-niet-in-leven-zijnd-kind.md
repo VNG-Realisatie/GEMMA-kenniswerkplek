@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het laten opnemen van de gegevens van een levenloos geboren kind in de basisregistratie personen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

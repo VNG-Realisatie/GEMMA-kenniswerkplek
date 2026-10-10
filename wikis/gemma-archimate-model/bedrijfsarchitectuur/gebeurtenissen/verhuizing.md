@@ -7,7 +7,6 @@ naam: Verhuizing
 onderwerpen:
 - burgerzaken
 definitie: Het gaan wonen van een persoon op een ander adres in Nederland.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

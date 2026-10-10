@@ -232,7 +232,6 @@ kernobject: grafrecht
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor het beheer van grafrechten; nieuw voor GEMMA.
@@ -240,7 +239,7 @@ relaties:
 - soort: aggregatie
   naar: verlenen-grafrecht
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -248,7 +247,7 @@ relaties:
 - soort: aggregatie
   naar: vervallen-verklaren-grafrecht
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -256,7 +255,7 @@ relaties:
 - soort: aggregatie
   naar: verval-van-het-grafrecht
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -264,7 +263,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: grafrecht
   naam: beheert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

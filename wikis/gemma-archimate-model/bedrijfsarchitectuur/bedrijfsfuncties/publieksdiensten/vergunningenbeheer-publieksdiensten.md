@@ -7,7 +7,6 @@ naam: Vergunningenbeheer Publieksdiensten
 onderwerpen:
 - lijkbezorging
 definitie: Het beheren en verlenen van vergunningen voor diverse soorten lokale activiteiten.
-grondslag: bron
 match:
   gemma: exact
 data_object: nee

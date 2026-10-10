@@ -24,7 +24,7 @@ REGISTR_RE = re.compile(r"\b\w*registr\w*", re.IGNORECASE)
 def _teksten(data: dict) -> list[str]:
     """Alle lopende tekst van de AI in een beoordeling."""
     teksten = [data.get("definitie", ""), data.get("toelichting", "")]
-    for veld in ("beschrijving", "grondslag_toelichting", "naamkeuze", "generalisatie"):
+    for veld in ("beschrijving", "naamkeuze", "generalisatie"):
         teksten += data.get(veld, [])
     for alineas in data.get("per_onderwerp", {}).values():
         teksten += alineas
@@ -151,7 +151,7 @@ def domein_en_beleidsdomein(alle: dict[str, dict], elementen: dict[str, dict], g
     """Signalen bij een product of dienst waarvan het domein (Functie-indeling naar domein) niet past bij de GEMMA-domeinen
     van zijn beleidsdomein (Beleidsdomeinindeling): in GEMMA aggregeert een domein de beleidsdomeinen. Een beleidsdomein
     dat GEMMA niet kent, geeft een signaal als zijn producten en diensten in meer domeinen vallen: het voorstel aan GEMMA
-    moet zeggen onder welk domein het hoort (besluit 2026-10-05). Het model mag afwijken, mits teruggemeld: een
+    moet zeggen onder welk domein het hoort. Het model mag afwijken, mits teruggemeld: een
     procesarchitectuur-terugmelding (`gemeld`) met het element of het beleidsdomein dekt het signaal."""
     if not gemma_data:
         return []
@@ -185,8 +185,8 @@ def functie_indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties
                      gemma_data: dict) -> list[str]:
     """Signalen bij de Functie-indeling naar domein: elke functie onder domeinniveau wordt geaggregeerd door één
     bovenliggende functie (een element), in hetzelfde domein en volgens de GEMMA-functieketen; een dienst door één
-    functie in hetzelfde domein (besluiten 2026-10-04). Een product hangt via `domein` aan de domeingroepering, want
-    ArchiMate laat een functie geen product aggregeren (besluit 2026-10-05)."""
+    functie in hetzelfde domein. Een product hangt via `domein` aan de domeingroepering, want
+    ArchiMate laat een functie geen product aggregeren."""
     w = []
     functies = {b for b, u in elementen.items() if u["paginatype"] == "bedrijfsfunctie"}
     for bid in sorted(b for b, u in elementen.items() if u["paginatype"] == "product"):
@@ -239,9 +239,29 @@ def _relatie_sleutels(alle: dict[str, dict], uitkomsten: dict[str, dict | None])
                      for r in alle[van].get("relaties", []) if r["naar"] in sleutel]
 
 
+def _eronder(bid: str, relaties: list) -> set[str]:
+    """Het element en wat eronder ligt: wat het omvat (aggregatie, ook de functieketen) of bedient (bediening), de
+    gebeurtenissen die het triggert en zijn specialisaties die een element zijn; ook verder naar beneden."""
+    groep, nieuw = {bid}, [bid]
+    while nieuw:
+        g = nieuw.pop()
+        for van, r, _, doel in relaties:
+            soort = km.kale_soort(r["soort"])
+            onder = (r["naar"] if van == g and (soort in ("aggregatie", "bediening")
+                                                 or (soort == "triggering" and doel == "gebeurtenis"))
+                     else van if r["naar"] == g and soort == "specialisatie" else None)
+            if onder and onder not in groep:
+                groep.add(onder)
+                nieuw.append(onder)
+    return groep
+
+
 def kennismodel(alle: dict[str, dict], uitkomsten: dict[str, dict | None]) -> list[str]:
     """Relaties buiten het kennismodel (geldig in ArchiMate, maar niet toegestaan) en kernrelaties die ontbreken.
-    Beide houden niets tegen: de beoordeling legt vast wat de bron zegt, de export filtert op het kennismodel."""
+    Beide houden niets tegen: de beoordeling legt vast wat de bron zegt, de export filtert op het kennismodel. Een
+    kernrelatie telt ook als ze bij iets eronder ligt (`_eronder`): de rol bij een bedrijfsproces onder het
+    levensloopproces of de functie, de bediening door een functie in de functieketen, de toegang tot een specialisatie,
+    de triggering door een gebeurtenis die het element triggert."""
     sleutel, relaties = _relatie_sleutels(alle, uitkomsten)
     w = []
     for van, r, bron, doel in relaties:
@@ -258,7 +278,8 @@ def kennismodel(alle: dict[str, dict], uitkomsten: dict[str, dict | None]) -> li
             kern = km.kernrelaties(kenmerk)
             if k["waarde"] != "ja" or not kern:
                 continue
-            if not any(bid in (van, r["naar"]) and any(
+            groep = _eronder(bid, relaties)
+            if not any((van in groep or r["naar"] in groep) and any(
                     (x.bron, km.kale_soort(x.soort), x.doel) == (bron, km.kale_soort(r["soort"]), doel) for x in kern)
                     for van, r, bron, doel in relaties):
                 w.append(f"{bid}: kenmerk {kenmerk} is ja, maar er is geen relatie van de kernrelatie "
@@ -293,8 +314,9 @@ def _gekoppeld(alle: dict[str, dict], a: str, b: str) -> bool:
 
 def modulariteit(alle: dict[str, dict], uitkomsten: dict[str, dict | None], onderwerpen: dict[str, dict]) -> list[str]:
     """Signalen voor één model over alle onderwerpen (regels Eén element in het hele model, Thuishoren, Relaties tussen
-    onderwerpen; besluit 2026-10-06). Het thuisonderwerp is het eerste in `onderwerpen`."""
+    onderwerpen). Het thuisonderwerp is het eerste in `onderwerpen`."""
     w = []
+    gedeeld = gam_gemeen.gedeelde_onderwerpen(onderwerpen)
     beoordeeld = {b for b, u in uitkomsten.items() if u}
     elementen = {b for b in beoordeeld if uitkomsten[b]["soort"] == "element" and not bepaal_type.is_afgewezen(alle[b])}
 
@@ -321,7 +343,7 @@ def modulariteit(alle: dict[str, dict], uitkomsten: dict[str, dict | None], onde
 
     for bid in sorted(elementen):
         ko = alle[bid].get("kernobject")
-        if ko in elementen and not gam_gemeen.is_generiek(alle[ko], uitkomsten[ko])                 and gam_gemeen.thuis(alle[bid]) != gam_gemeen.thuis(alle[ko]):
+        if ko in elementen and not gam_gemeen.is_generiek(alle[ko], uitkomsten[ko], gedeeld)                 and gam_gemeen.thuis(alle[bid]) != gam_gemeen.thuis(alle[ko]):
             w.append(f"{bid}: thuisonderwerp '{gam_gemeen.thuis(alle[bid])}', maar het kernobject {ko} hoort bij "
                      f"'{gam_gemeen.thuis(alle[ko])}' (regel Thuishoren)")
 
@@ -337,7 +359,7 @@ def modulariteit(alle: dict[str, dict], uitkomsten: dict[str, dict | None], onde
     for bid in sorted(elementen):
         if not alle_rel[bid]:
             w.append(f"{bid}: geen relatie met een ander element (regel Relaties tussen onderwerpen)")
-    specifiek = {b for b in elementen if not gam_gemeen.is_generiek(alle[b], uitkomsten[b])}
+    specifiek = {b for b in elementen if not gam_gemeen.is_generiek(alle[b], uitkomsten[b], gedeeld)}
     for bid, per in sorted(gam_gemeen.relaties_per_onderwerp(alle, specifiek).items()):
         eigen = per.get(gam_gemeen.thuis(alle[bid]), 0)
         for oid, n in sorted(per.items()):
@@ -399,12 +421,12 @@ UPL_BRON = re.compile(r"-vng-upl-")
 
 
 def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], brontype) -> tuple[list[str], list[str]]:
-    """Regel Wettelijke grondslag (besluiten redacteur 2026-10-08). `brontype` geeft per bron-id het brontype.
+    """Regel Wettelijke grondslag. `brontype` geeft per bron-id het brontype.
 
     Fout: een relatie *is grondslag voor* vanuit een beleidskader in Richtlijn (een richtlijn is geen wettelijke
     grondslag); een relatie *is grondslag voor* vanuit een beleidskader in Gemeentelijke regelgeving naar iets anders
     dan een UPL-product of -dienst zonder landelijke grondslag (die relatie heet *werkt uit voor*); en een bedrijfsproces dat een UPL-product zonder landelijke grondslag realiseert (zo'n product wordt
-    niet uitgewerkt; een fout sinds groep B is afgerond, 2026-10-08). Signaal: een element zonder landelijke wettelijke
+    niet uitgewerkt). Signaal: een element zonder landelijke wettelijke
     bron (een bron van `europese-regelgeving` of `rijksregelgeving`, of een relatie *is grondslag voor* van een
     beleidskader van de EU of het Rijk), behalve een UPL-product of -dienst, een bedrijfsfunctie en een beleidskader.
     Een vervallen element (status `afgewezen`) telt niet mee."""

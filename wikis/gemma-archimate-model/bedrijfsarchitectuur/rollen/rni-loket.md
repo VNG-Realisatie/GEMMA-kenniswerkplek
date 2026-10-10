@@ -7,7 +7,6 @@ naam: RNI-loket
 onderwerpen:
 - burgerzaken
 definitie: Verantwoordelijkheid van een daartoe aangewezen gemeente om personen in de registratie niet-ingezetenen in te schrijven en hun gegevens te verstrekken.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

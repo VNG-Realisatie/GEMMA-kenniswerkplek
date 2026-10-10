@@ -226,7 +226,6 @@ besluiten:
   gevolg: opnemen
   redenen:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-grondslag: bron
 ggm:
   sterkte: geen
   onderbouwing: 'Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers).'
@@ -237,7 +236,7 @@ relaties:
 - soort: associatie (gericht)
   naar: graf
   naam: wordt bijgezet in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -245,14 +244,14 @@ relaties:
 - soort: associatie (gericht)
   naar: begraafplaats
   naam: wordt bijgezet op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 62 lid 1 b
 - soort: associatie (gericht)
   naar: crematorium
   naam: wordt bijgezet in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 62 lid 1 a

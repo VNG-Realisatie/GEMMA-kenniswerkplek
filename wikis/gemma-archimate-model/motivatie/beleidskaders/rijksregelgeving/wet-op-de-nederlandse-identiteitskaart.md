@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Wet over de Nederlandse identiteitskaart, de aanspraak erop en de aanvraag, verstrekking, uitreiking, weigering, het verval en de inhouding.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -82,8 +81,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-De regeling zelf ([2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md)).
 
 | Korte titel | Bron |
 |---|---|

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Persoon die in de basisregistratie personen is ingeschreven, als ingezetene of als niet-ingezetene.
-grondslag: ggm-entiteit
 match:
   ggm: exact
   gemma: exact

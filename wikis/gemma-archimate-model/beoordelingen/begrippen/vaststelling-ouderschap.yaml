@@ -220,13 +220,12 @@ relaties:
 - soort: triggering
   naar: toevoegen-latere-vermelding
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-vaststelling-ouderschap
   vindplaats: inleiding
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

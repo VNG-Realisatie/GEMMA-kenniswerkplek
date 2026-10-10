@@ -175,7 +175,7 @@ def test_geen_pagina_en_herkend():
 
 
 def test_bedrijfsinteractie_is_een_element_dat_wordt_voorgelegd():
-    """Een ketensamenwerking is een bedrijfsinteractie (besluit redacteur 2026-10-08): een pagina met een kernobject,
+    """Een ketensamenwerking is een bedrijfsinteractie: een pagina met een kernobject,
     altijd voorgelegd (estafette of orkestratie)."""
     keten = BASIS | {"gedrag", "gezamenlijk_gedrag", "toegewezen_partij", "aanleiding", "benoembaar_resultaat"}
     u = bt.evalueer(beoordeling(keten, kernobject="stoffelijk-overschot"))
@@ -194,7 +194,7 @@ def test_aanvullingen():
     assert data_object.data_object == "ja"
     assert bt.voorgestelde_status(data_object, ggm_match="partieel") == "kandidaat"
     assert bt.voorgestelde_status(data_object, ggm_match="sterk") == "review"
-    assert bt.voorgestelde_status(bt.evalueer(beoordeling(BO)), grondslag="regelgeving") == "kandidaat"
+    assert bt.voorgestelde_status(bt.evalueer(beoordeling(BO))) == "review"   # geen gegevensobject: geen GGM nodig
     besluit = {"datum": "2026-10-01", "besluit": "Opnemen.", "gevolg": "opnemen", "redenen": [bt.REDEN_GEEN_GGM]}
     assert bt.voorgestelde_status(data_object, ggm_match="geen", besluiten=[besluit]) == "review"
     assert bt.voorgestelde_status(data_object, besluiten=[besluit, {**besluit, "gevolg": "afwijzen"}]) == "afgewezen"
@@ -242,7 +242,7 @@ def test_stap_7_procesniveau():
     zonder = bt.evalueer(beoordeling(PROCES))
     assert zonder.voorleggen and any("kernobject" in r for r in zonder.redenen)
     deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces"}
-    # klant tot klant maakt een bedrijfsproces (besluit redacteur 2026-10-08)
+    # klant tot klant maakt een bedrijfsproces
     u = bt.evalueer(beoordeling(deel | {"klant_tot_klant"}, kernobject="grafrecht", afnemer="extern"))
     assert (u.procesniveau, u.voorleggen) == ("bedrijfsproces", False)
     # zonder klant tot klant een deelproces of processtap, ook met eigen besluit of eigen normering: geen pagina
@@ -323,7 +323,7 @@ def test_indeling_is_strikt_hierarchisch():
     het beleidsdomein van een levensloopproces of bedrijfsinteractie volgt uit het kernobject (besluit 2026-10-08)."""
     deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}
     keten = BASIS | {"gedrag", "gezamenlijk_gedrag", "toegewezen_partij", "aanleiding", "benoembaar_resultaat"}
-    agg = lambda *naar: [{"soort": "aggregatie", "naar": n, "grondslag": "bron"} for n in naar]  # noqa: E731
+    agg = lambda *naar: [{"soort": "aggregatie", "naar": n, "ggm_match": "geen"} for n in naar]  # noqa: E731
     beoordelingen, uitkomsten = _bo_uitkomsten(
         graf=(BO, {"beleidsdomein": "Begraafplaatsen"}),
         recht=(BO, {"beleidsdomein": "Begraafplaatsen"}),
@@ -342,10 +342,10 @@ def test_indeling_is_strikt_hierarchisch():
 
 def test_triggering_wijst_op_een_deelproces():
     """Een bedrijfsproces dat een ander bedrijfsproces onder hetzelfde levensloopproces triggert: voorleggen; een
-    gebeurtenis die een deelproces triggert: fout (besluit redacteur 2026-10-08, klant tot klant)."""
+    gebeurtenis die een deelproces triggert: fout (klant tot klant)."""
     deel = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}
     stap = PROCES - {"omvat_levensloop"} | {"bijdrage_aan_groter_proces"}
-    rel = lambda soort, *naar: [{"soort": soort, "naar": n, "grondslag": "bron"} for n in naar]  # noqa: E731
+    rel = lambda soort, *naar: [{"soort": soort, "naar": n, "ggm_match": "geen"} for n in naar]  # noqa: E731
     beoordelingen, uitkomsten = _bo_uitkomsten(
         document=(BO, {}),
         beheren=(PROCES, {"kernobject": "document", "relaties": rel("aggregatie", "aanvragen", "uitreiken")}),
@@ -363,9 +363,9 @@ def test_triggering_wijst_op_een_deelproces():
 
 def test_een_levensloopproces_per_partij_binnen_een_ketensamenwerking():
     """Meer levensloopprocessen met hetzelfde kernobject mogen alleen als ze samen een bedrijfsinteractie met dat
-    kernobject bedienen: elk het deel van één partij (besluit redacteur 2026-10-08)."""
+    kernobject bedienen: elk het deel van één partij."""
     keten = BASIS | {"gedrag", "gezamenlijk_gedrag", "toegewezen_partij", "aanleiding", "benoembaar_resultaat"}
-    bedient = lambda naar: [{"soort": "bediening", "naar": naar, "grondslag": "bron"}]  # noqa: E731
+    bedient = lambda naar: [{"soort": "bediening", "naar": naar, "ggm_match": "geen"}]  # noqa: E731
     beoordelingen, uitkomsten = _bo_uitkomsten(
         lijk=(BO, {}), graf=(BO, {}),
         toestaan=(PROCES, {"kernobject": "lijk", "relaties": bedient("bezorgen")}),

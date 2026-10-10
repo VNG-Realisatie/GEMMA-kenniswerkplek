@@ -200,7 +200,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Specialisatie van Regeling met eigen gegevens (belastingplichtige, belastbaar feit, tarief, art. 217); het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten (besluit redacteur 2026-09-30).
+    onderbouwing: Specialisatie van Regeling met eigen gegevens (belastingplichtige, belastbaar feit, tarief, art. 217); het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten (besluit 2026-09-30).
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
   generiek:
@@ -219,7 +219,6 @@ per_onderwerp:
 synoniemen:
 - naam: Belastingverordening
   context: wet
-grondslag: ggm-entiteit
 ggm:
   guid: EAID_C29CCD49_04E2_44b4_A6B0_AD8B10552628
   sterkte: exact
@@ -235,11 +234,18 @@ besluiten:
 - datum: '2026-09-30'
   besluit: Het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten.
   gevolg: verwerkt
+- datum: '2026-10-06'
+  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
+  gevolg: verwerkt
+  stand: geldt; Belanghebbende open (todo)
+- datum: '2026-10-10'
+  besluit: Het proces dat de verordening raadpleegt (het heffen van lijkbezorgingsrechten) komt bij het onderwerp Heffingen en betalingen; tot dan blijft het kenmerk wordt bewerkt zonder toegang, en blijft de relatie *regelt het recht voor* naar Grafonderhoud staan, buiten het kennismodel en buiten de export.
+  gevolg: verwerkt
 relaties:
 - soort: associatie (gericht)
   naar: heffing
   naam: regelt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-vng-retributies
@@ -247,19 +253,19 @@ relaties:
 - soort: specialisatie
   naar: regeling
   naam: is een
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   vindplaats: art. 216
 - soort: associatie (gericht)
   naar: grafonderhoud
   naam: regelt het recht voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 23, 24
 onderwerpen:
-- algemeen
+- heffingen-en-betalingen
 - lijkbezorging
 status: goedgekeurd
 beslist:

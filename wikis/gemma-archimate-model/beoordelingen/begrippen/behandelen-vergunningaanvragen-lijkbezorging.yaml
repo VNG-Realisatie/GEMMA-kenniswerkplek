@@ -77,10 +77,9 @@ kenmerken:
     onderbouwing: Wordt niet per geval doorlopen; een groepering van processen.
   groepeert_processen:
     waarde: ja
-    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing (besluit redacteur 2026-10-04).
+    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing (besluit 2026-10-04).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-gemma-2026-10-02
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -206,7 +205,6 @@ beschrijving:
 - De vergunning grafbedekking en de ontheffing voor asverstrooiing zijn besluiten op grond van gemeentelijke regelgeving zonder landelijke wettelijke grondslag; ze staan in het model als de diensten Gedenkteken plaatsingsvergunning en Asverstrooiing, zonder eigen proces.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Een nieuw cluster; het specialiseert het GEMMA-proces Behandelen aanvraag vergunning of ontheffing (zie Generiek GEMMA-element).
@@ -217,49 +215,49 @@ relaties:
 - soort: aggregatie
   naar: verlenen-verlof-tot-begraving-of-crematie
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 11
 - soort: aggregatie
   naar: stellen-andere-termijn
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17
 - soort: aggregatie
   naar: opgraven-stoffelijk-overschot
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 29
 - soort: aggregatie
   naar: verlenen-toestemming-bijzondere-begraafplaats
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 40, 41
 - soort: aggregatie
   naar: verlenen-vergunning-bijzonder-crematorium
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 53
 - soort: aggregatie
   naar: verlenen-verlof-tot-ontleding
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 68
 - soort: aggregatie
   naar: afgeven-laissez-passer
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: Besluit op de lijkbezorging art. 11
@@ -282,7 +280,6 @@ beslist:
     typeregel: 17
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-vng-gemma-2026-10-02
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving
   gemma_generiek:

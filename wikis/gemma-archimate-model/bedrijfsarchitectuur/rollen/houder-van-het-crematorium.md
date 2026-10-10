@@ -7,7 +7,6 @@ naam: Houder van het crematorium
 onderwerpen:
 - lijkbezorging
 definitie: Verantwoordelijkheid voor een crematorium, het bergen van de as en de bestemming daarvan.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

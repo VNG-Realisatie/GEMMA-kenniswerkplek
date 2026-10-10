@@ -220,7 +220,6 @@ homoniemen:
   naamkeuze: 'Deze pagina heet Briefadres: het adres zelf. De dienst heet Briefadres aanvragen, met de UPL-naam als synoniem.'
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: ggm-entiteit
 ggm:
   guid: EAID_3015DCE3_7C05_4160_A717_533553258C15
   sterkte: exact
@@ -233,7 +232,7 @@ relaties:
 - soort: specialisatie
   naar: verblijfplaats
   naam: is een
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging

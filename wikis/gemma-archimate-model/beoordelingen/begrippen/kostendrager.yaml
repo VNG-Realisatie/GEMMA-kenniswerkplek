@@ -201,7 +201,6 @@ per_onderwerp:
   lijkbezorging:
   - De gemeente draagt de kosten van de lijkbezorging als de burgemeester ervoor zorgt omdat niemand anders erin voorziet, en kan ze verhalen op de nalatenschap, onderhoudsplichtige verwanten of de werkgever (Wet op de lijkbezorging art. 22).
 doelgroep: gemeente
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen rol voor wie de kosten draagt; nieuw voor GEMMA.
@@ -209,7 +208,7 @@ relaties:
 - soort: toewijzing
   naar: verzorgen-gemeentebegrafenis
   naam: draagt de kosten van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 22

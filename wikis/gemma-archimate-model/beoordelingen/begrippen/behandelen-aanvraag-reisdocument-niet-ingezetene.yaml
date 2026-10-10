@@ -219,7 +219,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Specialisatie van Behandelen aanvraag reisdocument met een eigen bevoegdheid, een eigen doelgroep en een taak die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2; besluit redacteur 2026-10-07).
+    onderbouwing: Specialisatie van Behandelen aanvraag reisdocument met een eigen bevoegdheid, een eigen doelgroep en een taak die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2; besluit 2026-10-07).
     bronnen:
     - 2026-rijk-paspoortbesluit-bwbr0044308
   generiek:
@@ -233,7 +233,6 @@ synoniemen:
   context: wet
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA. Het specialiseert het generieke proces Behandelen aanvraag product.
@@ -246,28 +245,28 @@ relaties:
 - soort: specialisatie
   naar: behandelen-aanvraag-reisdocument
   naam: is een
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 3.2, 4.2
 - soort: toegang (registreren)
   naar: reisdocument
   naam: verstrekt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 4.2
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: stelt identiteit en nationaliteit vast
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 2.1, 3.2
 - soort: realisatie
   naar: reisdocument-niet-ingezetene
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-paspoortbesluit-bwbr0044308

@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Bewijs van rijbevoegdheid op naam van een persoon, afgegeven voor het besturen van motorrijtuigen van een of meer categorieën.
-grondslag: procesobject
 match:
   ggm: geen
   gemma: geen
@@ -70,7 +69,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip en UPL-product: het rijbewijs, bedoeld in artikel 107 Wegenverkeerswet 1994 (art. 1 onder m); gangbaar in de gemeentelijke dienstverlening (UPL nr. 360; Utrecht). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester besluit tot afgifte, geeft het rijbewijs af en reikt het uit, voor wie als ingezetene met een adres in zijn gemeente staat (Wegenverkeerswet 1994 art. 116, 118a, 120a). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een document met een eigen afgiftedatum, geldigheidsduur en levensloop per houder (Wegenverkeerswet 1994 art. 118a, 122, 123). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: kernobject van Beheren rijbewijzen (UPL taakveld 0.2, besluit redacteur 2026-10-07). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: kernobject van Beheren rijbewijzen (UPL taakveld 0.2, besluit 2026-10-07). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elk rijbewijs is afgegeven aan één houder voor een of meer categorieën, met een afgiftedatum (Wegenverkeerswet 1994 art. 118, 118a). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, wordt afgegeven en uitgereikt, vernieuwd of vervangen, en verliest zijn geldigheid door het verstrijken van de geldigheidsduur, omwisseling, overlijden of aangifte van vermissing (Wegenverkeerswet 1994 art. 119, 120, 122, 123). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, beheren rijbewijzen neemt de aanvraag in ontvangst, geeft het rijbewijs af, reikt het uit en neemt het oude rijbewijs in (Wegenverkeerswet 1994 art. 113, 116, 119 lid 2, 120a). [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
@@ -107,8 +106,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Bronnen
 
-Ontstaat in Beheren rijbewijzen: de burgemeester geeft het rijbewijs af ([2026-rijk-wegenverkeerswet-1994-bwbr0006622](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), art. 116).
-
 | Korte titel | Bron |
 |---|---|
 | [Wegenverkeerswet 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) | Wegenverkeerswet 1994 |
@@ -118,7 +115,7 @@ Ontstaat in Beheren rijbewijzen: de burgemeester geeft het rijbewijs af ([2026-r
 
 ### Afstemming met GGM
 
-Geen GGM-entiteit. Het GGM kent geen rijbewijs (GGM-terugmelding 18).
+Geen GGM-entiteit. Het GGM kent geen rijbewijs (GGM-terugmelding 18). Ontstaat in Beheren rijbewijzen: de burgemeester geeft het rijbewijs af ([2026-rijk-wegenverkeerswet-1994-bwbr0006622](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), art. 116).
 
 GGM-terugmeldingen:
 
@@ -130,4 +127,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
+- 2026-10-07: Binnen Burgerzaken (plak 5), niet een later onderwerp: UPL 360-363 en 434 staan onder 0.2 en op de Utrecht-hubpagina. Rijbewijs is gegevensobject zonder GGM-entiteit en kernobject van het bedrijfsproces Beheren rijbewijzen (de burgemeester besluit tot afgifte; RDW en CBR zijn producent en bron van invoer, geen eigen actor; de omwisseling van een buitenlands rijbewijs is een deelproces waarin de gemeente doorgeleidt, GGM-terugmelding 18). De VOG is kernobject van het ketenproces Afgeven verklaring omtrent het gedrag, met het Rijk (de minister van JenV) als Ketenpartner, zonder GGM-terugmelding. Beleidskaders: Wegenverkeerswet 1994, Reglement rijbewijzen en Wet justitiële en strafvorderlijke gegevens; het Besluit justitiële en strafvorderlijke gegevens is bron. *Stand: deels herzien door 2026-10-08: de VOG is orkestratie, geen ketenproces*
 - 2026-10-07: Opgenomen als gegevensobject zonder GGM-entiteit, kernobject van Beheren rijbewijzen (GGM-terugmelding 18).

@@ -7,7 +7,6 @@ naam: Kostendrager
 onderwerpen:
 - lijkbezorging
 definitie: Verantwoordelijkheid voor het dragen van de kosten van een voorziening of handeling.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

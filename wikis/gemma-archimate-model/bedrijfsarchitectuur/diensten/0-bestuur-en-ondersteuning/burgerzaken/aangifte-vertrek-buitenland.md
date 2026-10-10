@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het doorgeven aan de gemeente van een vertrek naar het buitenland voor acht maanden of langer per jaar.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

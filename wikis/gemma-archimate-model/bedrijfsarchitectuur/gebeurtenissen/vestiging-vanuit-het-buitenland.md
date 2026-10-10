@@ -7,7 +7,6 @@ naam: Vestiging vanuit het buitenland
 onderwerpen:
 - burgerzaken
 definitie: Het gaan wonen in een Nederlandse gemeente van een persoon die in het buitenland woonde.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

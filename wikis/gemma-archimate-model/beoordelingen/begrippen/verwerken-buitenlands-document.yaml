@@ -248,14 +248,14 @@ relaties:
 - soort: toegang (bijwerken)
   naar: ingeschreven-persoon
   naam: verwerkt document bij
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
   vindplaats: inleiding
 - soort: realisatie
   naar: brp-inschrijving-buitenlandse-akte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
@@ -266,7 +266,6 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:
@@ -298,3 +297,7 @@ beslist:
       GEMMA type: Bedrijfsproces
       Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
   pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-buitenlands-document.md
+besluiten:
+- datum: '2026-10-10'
+  besluit: Bijhoudingsgemeente en Beslisser krijgen een toewijzing naar dit bedrijfsproces, met de bronnen van het kenmerk toegewezen partij, zoals bij de andere bedrijfsprocessen onder Bijhouden persoonsgegevens.
+  gevolg: verwerkt

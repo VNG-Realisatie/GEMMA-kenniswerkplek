@@ -240,7 +240,7 @@ relaties:
 - soort: toegang (registreren)
   naar: akte-van-de-burgerlijke-stand
   naam: maakt partnerschapsakte of akte van omzetting op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
@@ -248,7 +248,7 @@ relaties:
 - soort: realisatie
   naar: geregistreerd-partnerschap-omzetting-in-huwelijk
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
@@ -256,21 +256,20 @@ relaties:
 - soort: toegang (raadplegen)
   naar: ingeschreven-persoon
   naam: verifieert gegevens van
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 18 lid 2
 - soort: realisatie
   naar: geregistreerd-partnerschapaangifte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
   vindplaats: UPL nr. 158
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 deelprocessen:
 - naam: Melding voorgenomen partnerschap
   omschrijving: Zoals bij het huwelijk; een omzetting van een partnerschap in een huwelijk begint met een eigen verzoek, zonder melding.
@@ -283,6 +282,10 @@ deelprocessen:
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 80a, 80g
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'De klant wil trouwen of een partnerschap laten registreren: Voltrekken huwelijk en Registreren partnerschap zijn de bedrijfsprocessen, van de melding tot de akte; de melding wordt van beide een deelproces zonder pagina, de diensten van de melding gaan naar die bedrijfsprocessen en het Archi-object vervalt. Afgewezen: alle drie bedrijfsproces.'
+  gevolg: verwerkt
 status: goedgekeurd
 beslist:
   uitkomst:

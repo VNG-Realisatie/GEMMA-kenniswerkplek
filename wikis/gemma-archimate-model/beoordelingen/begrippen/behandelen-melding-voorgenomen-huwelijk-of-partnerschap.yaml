@@ -170,7 +170,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'Nee, de dienst levert het bedrijfsproces waarvan dit een deelproces is: Voltrekken huwelijk en Registreren partnerschap (UPL nr. 185, 158) (besluit redacteur 2026-10-08, klant tot klant).'
+    onderbouwing: 'Nee, de dienst levert het bedrijfsproces waarvan dit een deelproces is: Voltrekken huwelijk en Registreren partnerschap (UPL nr. 185, 158) (besluit 2026-10-08, klant tot klant).'
   bedient_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -237,7 +237,6 @@ synoniemen:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
-grondslag: bron
 genoemd_begrip: Voltrekken huwelijk
 toelichting: 'Deelproces zonder pagina van Voltrekken huwelijk, Registreren partnerschap: het ontvangen en toetsen van de melding van een voorgenomen huwelijk of geregistreerd partnerschap.'
 relaties: []
@@ -258,3 +257,7 @@ beslist:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
   herkomst: rijksregelgeving
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'De klant wil trouwen of een partnerschap laten registreren: Voltrekken huwelijk en Registreren partnerschap zijn de bedrijfsprocessen, van de melding tot de akte; de melding wordt van beide een deelproces zonder pagina, de diensten van de melding gaan naar die bedrijfsprocessen en het Archi-object vervalt. Afgewezen: alle drie bedrijfsproces.'
+  gevolg: verwerkt

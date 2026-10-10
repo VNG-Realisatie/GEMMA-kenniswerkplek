@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het laten inschrijven van een door de rechtbank uitgesproken echtscheiding in de registers van de burgerlijke stand.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

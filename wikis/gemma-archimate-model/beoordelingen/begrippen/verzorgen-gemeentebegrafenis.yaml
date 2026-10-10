@@ -134,7 +134,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: Een eigen levensloopproces met kernobject Gemeentebegrafenis, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces (besluit redacteur 2026-10-08).
+    onderbouwing: Een eigen levensloopproces met kernobject Gemeentebegrafenis, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces (besluit 2026-10-08).
   klant_tot_klant:
     waarde: nee
     onderbouwing: 'Niet van toepassing: levensloopproces.'
@@ -146,7 +146,6 @@ kenmerken:
     onderbouwing: 'Omvat de levensloop van de gemeentebegrafenis: de melding dat niemand in de lijkbezorging voorziet (art. 20), de zorg door de burgemeester (art. 21), het kostenverhaal (art. 22) en de afdoening (GGM-attributen datumGemeld, datumBegrafenis, verhaaldBedrag, datumAfgedaan).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-ggm-2-5-1
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
@@ -211,7 +210,6 @@ kenmerken:
     onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -225,21 +223,21 @@ relaties:
 - soort: toegang (raadplegen)
   naar: stoffelijk-overschot
   naam: betreft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21
 - soort: toegang (bijwerken)
   naar: gemeentebegrafenis
   naam: legt vast en handelt af
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21, 22
 - soort: bediening
   naar: bezorgen-stoffelijk-overschot
   naam: zorgt voor de bezorging in
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21
@@ -248,6 +246,10 @@ onderwerpen:
 kernobject: gemeentebegrafenis
 afnemer: extern
 besluiten:
+- datum: '2026-10-04'
+  besluit: 'Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), onder de taak en binnen het ketenproces Bezorgen lijken (kennismodel: een ketenproces bevat bedrijfsprocessen).'
+  gevolg: verwerkt
+  stand: 'deels herzien door 2026-10-08: levensloopproces dat de bedrijfsinteractie Bezorgen stoffelijk overschot bedient'
 - datum: '2026-10-04'
   besluit: Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), binnen het ketenproces Bezorgen lijken.
   gevolg: verwerkt
@@ -272,6 +274,5 @@ beslist:
     typeregel: 17
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-vng-ggm-2-5-1
   herkomst: rijksregelgeving
   pad: bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md

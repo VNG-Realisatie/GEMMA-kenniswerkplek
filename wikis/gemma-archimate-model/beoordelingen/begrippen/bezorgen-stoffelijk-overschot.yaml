@@ -153,7 +153,7 @@ kenmerken:
     - 2026-vng-gemma-proceshierarchie
   omvat_levensloop:
     waarde: nee
-    onderbouwing: De levensloop omvatten de levensloopprocessen van de partijen, elk voor het eigen deel; de interactie verbindt ze (besluit redacteur 2026-10-08).
+    onderbouwing: De levensloop omvatten de levensloopprocessen van de partijen, elk voor het eigen deel; de interactie verbindt ze (besluit 2026-10-08).
   eigen_besluit:
     waarde: nee
     onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
@@ -220,12 +220,11 @@ definitie: De samenwerking van gemeente, houder van begraafplaats of crematorium
 beschrijving:
 - Na het overlijden wordt het stoffelijk overschot geschouwd, verleent de ambtenaar van de burgerlijke stand verlof tot begraving of crematie, en wordt het binnen de wettelijke termijn begraven, gecremeerd of ontleed (Wet op de lijkbezorging art. 3, 11, 16, 67). Zorgt niemand anders voor de bezorging, dan draagt de burgemeester er zorg voor (art. 21); bij een besmet stoffelijk overschot kan hij maatregelen treffen (art. 22a). Ook een latere opgraving hoort bij de levensloop van het stoffelijk overschot (art. 29).
 - 'Het is een ketensamenwerking: bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar afgeeft voordat verlof kan worden verleend (art. 10, 12); een vervroegde uitvaart vraagt ook zijn instemming (art. 17). De uitvaartondernemer regelt de uitvaart namens de nabestaanden (RVO).'
-- 'Elke partij voert haar deel uit in een eigen levensloopproces, dat de ketensamenwerking bedient: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet. Niemand stuurt het geheel aan (estafette); het ketenproces erboven is geen element (besluit redacteur 2026-10-08).'
+- 'Elke partij voert haar deel uit in een eigen levensloopproces, dat de ketensamenwerking bedient: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet. Niemand stuurt het geheel aan (estafette); het ketenproces erboven is geen element (besluit 2026-10-08).'
 kernobject: stoffelijk-overschot
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor de lijkbezorging; nieuw voor GEMMA.
@@ -233,7 +232,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: stoffelijk-overschot
   naam: bezorgt
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 1

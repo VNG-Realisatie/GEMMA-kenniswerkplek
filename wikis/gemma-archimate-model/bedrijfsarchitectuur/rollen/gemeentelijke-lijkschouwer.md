@@ -7,7 +7,6 @@ naam: Gemeentelijke lijkschouwer
 onderwerpen:
 - lijkbezorging
 definitie: Arts die door het college is benoemd om stoffelijke overschotten te schouwen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -63,7 +62,6 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Gemeentelijke lijkschouwer | verricht *toewijzing* | [Schouwen stoffelijk overschot](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 3) |
-| Gemeentelijke lijkschouwer | waarschuwt bij een niet-natuurlijke dood *associatie (gericht)* (*niet in het kennismodel, gaat niet mee in de export*) | [Ambtenaar van de burgerlijke stand](ambtenaar-van-de-burgerlijke-stand.md) | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 10 lid 1) |
 
 #### Inkomend
 
@@ -86,3 +84,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-10-05: Stoffelijk overschot in lopende tekst: in definitie en beschrijving; de naam blijft (vaste term).
+- 2026-10-10: De waarschuwing van de gemeentelijke lijkschouwer aan de ambtenaar van de burgerlijke stand bij een niet-natuurlijke dood (Wlb art. 10 lid 1) is geen relatie tussen de rollen, maar hoort bij de stroom van Schouwen stoffelijk overschot naar Verlenen verlof tot begraving of crematie: geeft de verklaring van overlijden door aan, of waarschuwt bij een niet-natuurlijke dood (kennismodel: een handeling tussen rollen loopt via een proces, stroom of gebeurtenis).

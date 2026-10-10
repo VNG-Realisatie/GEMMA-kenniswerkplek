@@ -7,7 +7,6 @@ naam: Verval van het grafrecht
 onderwerpen:
 - lijkbezorging
 definitie: Het einde van een grafrecht door verloop van de termijn, afstand, opheffing van de begraafplaats of vervallenverklaring.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

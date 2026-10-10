@@ -5,13 +5,12 @@ archimate_type: business-object
 status: goedgekeurd
 naam: Heffing
 onderwerpen:
-- algemeen
+- heffingen-en-betalingen
 - lijkbezorging
 - burgerzaken
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Belastingen
 definitie: Een door de overheid opgelegde verplichting tot betaling.
-grondslag: ggm-entiteit
 match:
   ggm: exact
   gemma: exact
@@ -112,7 +111,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, opgelegd, betaald, ingevorderd (Gemeentewet hfst. XV). [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, vastgelegd bij de uitgifte van een graf en het onderhoud ervan (VNG retributies; Groningen art. 23). [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, GGM-entiteit. [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie (besluit redacteur 2026-09-30). [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie (besluit 2026-09-30). [VNG Retributies](../../../../bronanalyses/lijkbezorging/overig/2026-vng-retributies.md) |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, heffingen komen in veel onderwerpen voor: belastingen en rechten (Gemeentewet art. 216, 229). [Gemeentewet](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 
 ### Specialisaties
@@ -163,3 +162,4 @@ Match **exact** met GEMMA-element *Heffing* (business-object). Zelfde begrip.
 ### Besluiten redacteur
 
 - 2026-09-30: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie.
+- 2026-10-06: Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd. *Stand: geldt; Belanghebbende open (todo)*

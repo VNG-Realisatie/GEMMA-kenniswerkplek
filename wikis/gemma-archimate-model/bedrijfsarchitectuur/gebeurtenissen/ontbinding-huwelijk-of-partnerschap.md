@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het eindigen van een huwelijk door echtscheiding of van een geregistreerd partnerschap door beëindiging, anders dan door overlijden.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -5,17 +5,15 @@ archimate_type: business-role
 status: goedgekeurd
 naam: Ketenpartner
 onderwerpen:
-- algemeen
+- kern
 - lijkbezorging
 - burgerzaken
 definitie: Verantwoordelijkheid van een andere organisatie voor haar deel van een keten die zij met de gemeente uitvoert.
-grondslag: bron
 match:
   gemma: exact
 data_object: nee
 doelgroep: ketenpartners
 bronnen:
-- 2026-vng-gemma-2026-10-02
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
@@ -73,10 +71,10 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA kent de rol Ketenpartner en de doelgroep Ketenpartners; de officier van justitie is ketenpartner in de lijkbezorging (art. 10, 12). [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md), [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA kent de rol Ketenpartner en de doelgroep Ketenpartners; de officier van justitie is ketenpartner in de lijkbezorging (art. 10, 12). [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, structurele, wettelijke rol in een keten met de gemeente (art. 10, 12, 17). [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen verantwoordelijkheid in een keten. [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, generieke GEMMA-rol die in elk onderwerp kan gelden; nu in lijkbezorging en burgerzaken: thuisonderwerp Algemeen (regel Thuishoren; precedent Beslisser, besluit redacteur 2026-10-06). [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md), [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, generieke GEMMA-rol die in elk onderwerp kan gelden; nu in lijkbezorging en burgerzaken: thuisonderwerp Kern, want geen thematisch gedeeld onderwerp past (regel Thuishoren). [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **hoedanigheid**: Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | Ja, de verantwoordelijkheid van een andere organisatie voor haar deel van een keten. [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, bezorgen stoffelijk overschot: de officier van justitie geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (art. 12, 17). [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere rol in deze wiki. [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
@@ -107,7 +105,6 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [Wet op de lijkbezorging](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
 | [Utrecht Nederlander worden](../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.md) | Gemeente Utrecht: Nederlander worden door naturalisatie of optie |

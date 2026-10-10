@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het verzoek om onjuiste eigen gegevens in de basisregistratie personen te laten corrigeren.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

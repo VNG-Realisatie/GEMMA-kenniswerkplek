@@ -218,7 +218,6 @@ afnemer: extern
 domein: Fysieke leefomgeving
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 ggm:
   sterkte: geen
   onderbouwing: Het GGM kent geen entiteit voor graf of grafrecht (GGM-terugmeldingen 3 en 4).
@@ -229,7 +228,7 @@ relaties:
 - soort: aggregatie
   naar: graf-aanvragen
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -238,7 +237,7 @@ relaties:
 - soort: aggregatie
   naar: grafrecht
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -247,7 +246,7 @@ relaties:
 - soort: bediening
   naar: rechthebbende-op-het-graf
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen

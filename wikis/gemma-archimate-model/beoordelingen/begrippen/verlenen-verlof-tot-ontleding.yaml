@@ -227,7 +227,6 @@ kernobject: stoffelijk-overschot
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -235,7 +234,7 @@ relaties:
 - soort: toegang (registreren)
   naar: vergunning
   naam: geeft af
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 68 lid 1
@@ -243,14 +242,14 @@ relaties:
 - soort: toegang (bijwerken)
   naar: stoffelijk-overschot
   naam: betreft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 67, 68
 - soort: realisatie
   naar: ontleding-stoffelijk-overschot-toestemming
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
@@ -258,7 +257,7 @@ relaties:
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt
-  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL (docs/indelingen.md).
+  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL.
 status: goedgekeurd
 beslist:
   uitkomst:

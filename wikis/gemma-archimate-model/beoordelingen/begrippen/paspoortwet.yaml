@@ -208,9 +208,6 @@ beleidsdomein: Burgerzaken
 per_onderwerp:
   burgerzaken:
   - 'In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Elke soort reisdocument is een dienst die Behandelen aanvraag reisdocument realiseert, zonder gebundelde afspraken; de wet is grondslag van die diensten (UPL nr. 329, 330, 449, 462, 494) en van de bedrijfsprocessen. De UPL noemt haar ook bij de identiteitskaart (nr. 186), maar die grondslag is per 2026-10-01 vervallen (procesarchitectuur-terugmelding 9).'
-grondslag: regelgeving
-grondslag_toelichting:
-- De regeling zelf (2026-rijk-paspoortwet-bwbr0005212).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
@@ -219,63 +216,63 @@ relaties:
 - soort: associatie (gericht)
   naar: behandelen-aanvraag-reisdocument
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 26-41; art. 32, 42
 - soort: associatie (gericht)
   naar: paspoort
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 9, 26
 - soort: associatie (gericht)
   naar: paspoort-tweede
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 30
 - soort: associatie (gericht)
   naar: vluchtelingenpaspoort
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 11
 - soort: associatie (gericht)
   naar: vreemdelingenpaspoort
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 12-15, 40 lid 4
 - soort: associatie (gericht)
   naar: verwerken-vermissing-reisdocument
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 4a, 5a, 31, 47 lid 1 onder j
 - soort: associatie (gericht)
   naar: vermissing-of-diefstal-reisdocument-doorgeven
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 5a
 - soort: associatie (gericht)
   naar: inhouden-reisdocument
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 50b-57; art. 44-46
 - soort: associatie (gericht)
   naar: zakenpaspoort
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -298,8 +295,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

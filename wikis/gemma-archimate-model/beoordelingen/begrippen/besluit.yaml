@@ -194,23 +194,22 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen breder begrip; Beschikking is zijn specialisatie (besluit redacteur 2026-09-30).
+    onderbouwing: Geen breder begrip; Beschikking is zijn specialisatie (besluit 2026-09-30).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   generiek:
     waarde: ja
-    onderbouwing: 'Een besluit in de zin van de Awb komt in elk onderwerp voor (Awb art. 1:3; besluit redacteur 2026-09-30: generiek en domeinoverstijgend).'
+    onderbouwing: 'Een besluit in de zin van de Awb komt in elk onderwerp voor (Awb art. 1:3; besluit 2026-09-30: generiek en domeinoverstijgend).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
 definitie: Schriftelijke beslissing van een bestuursorgaan met rechtsgevolg, voor een concreet geval of van algemene strekking.
 beschrijving:
-- Een besluit is een schriftelijke beslissing van een bestuursorgaan, inhoudende een publiekrechtelijke rechtshandeling (Awb art. 1:3 lid 1). Een besluit voor een concreet geval is een beschikking, zoals een vergunning of een verlof; een besluit van algemene strekking is bijvoorbeeld de vaststelling van een verordening. Het element is generiek en domeinoverstijgend (besluit redacteur 2026-09-30).
+- Een besluit is een schriftelijke beslissing van een bestuursorgaan, inhoudende een publiekrechtelijke rechtshandeling (Awb art. 1:3 lid 1). Een besluit voor een concreet geval is een beschikking, zoals een vergunning of een verlof; een besluit van algemene strekking is bijvoorbeeld de vaststelling van een verordening. Het element is generiek en domeinoverstijgend (besluit 2026-09-30).
 per_onderwerp:
   lijkbezorging:
   - Raad, college en burgemeester nemen op grond van de Wet op de lijkbezorging een reeks besluiten; vrijwel allemaal zijn het beschikkingen, zoals vergunningen, verloven en de sluiting van een begraafplaats.
-grondslag: ggm-entiteit
 ggm:
   guid: EAID_AFB100D2_8C68_4488_8949_13E945D15920
   sterkte: sterk
@@ -230,8 +229,12 @@ besluiten:
 - datum: '2026-09-30'
   besluit: Element als breder begrip boven Beschikking; generiek en domeinoverstijgend.
   gevolg: verwerkt
+- datum: '2026-10-06'
+  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
+  gevolg: verwerkt
+  stand: geldt; Belanghebbende open (todo)
 onderwerpen:
-- algemeen
+- besluitvorming
 - lijkbezorging
 status: goedgekeurd
 beslist:

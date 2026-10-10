@@ -203,7 +203,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Lijkbezorging waarvoor de gemeente zorgt en betaalt omdat niemand anders daarin voorziet.
 beschrijving:
 - Een gemeentebegrafenis is het geval dat ontstaat als de burgemeester de lijkbezorging op zich neemt (art. 21). De gemeente draagt de kosten en verhaalt die zo mogelijk op de nalatenschap, de onderhoudsplichtige verwanten of de werkgever (art. 22). Het GGM legt per geval onder meer de melder, de kosten en de datum van begrafenis en ruiming vast.
-grondslag: ggm-entiteit
 ggm:
   guid: EAID_F2DBE01F_7535_4f26_9DF2_081EF8632F36
   sterkte: sterk
@@ -216,12 +215,17 @@ relaties:
 - soort: associatie (gericht)
   naar: stoffelijk-overschot
   naam: betreft
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 21
 onderwerpen:
 - lijkbezorging
+besluiten:
+- datum: '2026-10-04'
+  besluit: 'Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), onder de taak en binnen het ketenproces Bezorgen lijken (kennismodel: een ketenproces bevat bedrijfsprocessen).'
+  gevolg: verwerkt
+  stand: 'deels herzien door 2026-10-08: levensloopproces dat de bedrijfsinteractie Bezorgen stoffelijk overschot bedient'
 status: goedgekeurd
 beslist:
   uitkomst:

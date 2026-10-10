@@ -240,14 +240,14 @@ relaties:
 - soort: toegang (registreren)
   naar: akte-van-de-burgerlijke-stand
   naam: maakt akte van overlijden op
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 19f
 - soort: realisatie
   naar: overlijdensaangifte
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-burgerlijk-wetboek-boek-1
@@ -255,7 +255,7 @@ relaties:
 - soort: stroom
   naar: bijhouden-persoonsgegevens
   naam: zendt akte aan
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-overlijden-nederland
   - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
@@ -263,7 +263,7 @@ relaties:
 - soort: triggering
   naar: verlenen-verlof-tot-begraving-of-crematie
   naam: leidt tot
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
   - 2026-rvo-aangifte-en-akte-van-overlijden
@@ -274,7 +274,6 @@ bronnen:
 - 2026-rvig-hup-rechtsvermoeden-van-overlijden
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 status: goedgekeurd
 beslist:
   uitkomst:

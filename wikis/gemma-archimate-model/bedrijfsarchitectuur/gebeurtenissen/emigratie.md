@@ -7,7 +7,6 @@ naam: Emigratie
 onderwerpen:
 - burgerzaken
 definitie: Het vertrek van een ingezetene om ten minste acht maanden van een jaar in het buitenland te wonen.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

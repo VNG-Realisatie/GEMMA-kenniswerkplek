@@ -5,12 +5,11 @@ archimate_type: business-object
 status: goedgekeurd
 naam: Vergunning
 onderwerpen:
-- algemeen
+- besluitvorming
 - lijkbezorging
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
 definitie: Beschikking waarmee een bestuursorgaan toestemming geeft voor een handeling die zonder die toestemming niet mag.
-grondslag: procesobject
 match:
   ggm: geen
   gemma: geen
@@ -95,7 +94,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke vergunning apart. [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, aangevraagd, verleend, met voorschriften, ingetrokken (art. 29; Groningen art. 22 lid 5). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, afgegeven door de ambtenaar van de burgerlijke stand en de burgemeester, geraadpleegd in Uitvoeren lijkbezorging en Opgraven stoffelijk overschot (art. 11, 29). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, specialisatie van Beschikking met eigen werkwijze (aanvraag, voorschriften, intrekking); het gekozen niveau voor alle vergunningen en verloven in de lijkbezorging (besluit redacteur 2026-09-30). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, specialisatie van Beschikking met eigen werkwijze (aanvraag, voorschriften, intrekking); het gekozen niveau voor alle vergunningen en verloven in de lijkbezorging (besluit 2026-09-30). [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, vergunningen komen in veel onderwerpen voor; in de lijkbezorging alleen al negen soorten (Awb art. 1:3; Wlb art. 11, 29, 53, 64, 66b, 68). [Awb](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Specialisaties
@@ -136,8 +135,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 ### Bronnen
 
-Ontstaat in de gemeentelijke beslisprocessen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), Opgraven stoffelijk overschot (art. 29) en de vergunningen van art. 53, 64, 66b en 68.
-
 | Korte titel | Bron |
 |---|---|
 | [Wet op de lijkbezorging](../../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
@@ -147,7 +144,7 @@ Ontstaat in de gemeentelijke beslisprocessen: het verlof tot begraving of cremat
 
 ### Afstemming met GGM
 
-Geen GGM-entiteit. Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers).
+Geen GGM-entiteit. Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers). Ontstaat in de gemeentelijke beslisprocessen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), Opgraven stoffelijk overschot (art. 29) en de vergunningen van art. 53, 64, 66b en 68.
 
 ### Afstemming met GEMMA
 
@@ -156,3 +153,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 ### Besluiten redacteur
 
 - 2026-09-30: Het gekozen niveau voor de vergunningen en verloven in de lijkbezorging (geen element per soort vergunning of verlof).
+- 2026-10-06: Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd. *Stand: geldt; Belanghebbende open (todo)*

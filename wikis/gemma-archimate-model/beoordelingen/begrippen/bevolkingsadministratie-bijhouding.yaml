@@ -22,13 +22,11 @@ kenmerken:
     waarde: ja
     onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
     - 2026-rvig-hup-achtergronden-en-begrippen
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
     - 2026-rvig-hup-achtergronden-en-begrippen
   gedrag:
     waarde: ja
@@ -85,7 +83,6 @@ kenmerken:
     onderbouwing: Groepeert de bijhouding van de BRP en de dienstverlening daarover op grond van dezelfde kennis en bevoegdheid (medewerker BRP namens het college); geen eigen volgorde of doorlooptijd (HUP Algemeen).
     bronnen:
     - 2026-rvig-hup-algemeen
-    - 2026-vng-gemma-2026-10-02
   toestandsverandering:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -212,7 +209,6 @@ kenmerken:
 definitie: Het uitvoeren van taken om de basisregistratie personen actueel en betrouwbaar te houden.
 beschrijving:
 - De functie omvat de bijhouding van de BRP (inschrijving, adreswijziging, emigratie, adresonderzoek, correctie) en de diensten die daaruit voortkomen, zoals uittreksels, geheimhouding en de verhuismelding (HUP Achtergronden; UPL).
-grondslag: bron
 gemma:
   id: id-05ebfe88-2d7a-4093-bb4c-d9371baeb43c
   sterkte: exact
@@ -222,133 +218,133 @@ relaties:
 - soort: bediening
   naar: bijhouden-persoonsgegevens
   naam: bedient
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rvig-hup-algemeen
   vindplaats: Doelgroep
 - soort: aggregatie
   naar: brp-inschrijving
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 88 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: rni-inschrijving
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 369 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: verhuismelding
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 424 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: aangifte-vertrek-buitenland
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 1 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: briefadres-aanvragen
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 85 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: persoonsgegevens-verklaring-onder-eed-of-belofte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 335 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: brp-geheimhoudingsverzoek
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 87 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: brp-uittreksel
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 93 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: brp-uittreksel-met-gezag
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 94 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: brp-inzagerecht
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 91 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: brp-inzagerecht-gegevensverstrekking
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 92 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: brp-wijzigingsverzoek
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 95 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: brp-adoptie-uitschrijving
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 86 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: onjuiste-inschrijving-op-adres-melden
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   vindplaats: inleiding
 - soort: aggregatie
   naar: brp-inschrijving-niet-in-leven-zijnd-kind
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 90 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: adoptie-aangifte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 6 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: naamgebruik-verzoek-aanduiding
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 257 (GEMMA-domein Publieksdiensten)
 - soort: aggregatie
   naar: brp-inschrijving-buitenlandse-akte
   naam: omvat
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 89 (GEMMA-domein Publieksdiensten)

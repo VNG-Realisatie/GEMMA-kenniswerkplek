@@ -1,7 +1,7 @@
 ---
 id: 2026-vng-over-gemma
 type: bronanalyse
-onderwerp: algemeen
+onderwerp: kern
 bronnen:
 - 2026-vng-over-gemma
 relevant: ja

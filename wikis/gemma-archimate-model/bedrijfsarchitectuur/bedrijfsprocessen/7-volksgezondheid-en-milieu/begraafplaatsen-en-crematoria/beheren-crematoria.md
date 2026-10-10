@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: 'Het beheer van een crematorium over de hele levensloop: vestigen, uitbreiden of wijzigen, en opheffen.'
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

@@ -7,7 +7,6 @@ naam: Aangever
 onderwerpen:
 - burgerzaken
 definitie: Hoedanigheid van wie bij de gemeente aangifte doet van een feit voor de basisregistratie personen of de burgerlijke stand, voor zichzelf of een ander.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

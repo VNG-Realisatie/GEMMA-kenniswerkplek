@@ -239,7 +239,6 @@ synoniemen:
   context: dagelijks gebruik
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-grondslag: bron
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -247,7 +246,7 @@ relaties:
 - soort: toegang (bijwerken)
   naar: ingeschreven-persoon
   naam: registreert de kiesgerechtigdheid
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   - 2026-rvig-hup-nederlands-kiesrecht
@@ -256,11 +255,16 @@ relaties:
 - soort: realisatie
   naar: stemrecht
   naam: realiseert
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: UPL nr. 398
+besluiten:
+- datum: '2026-10-07'
+  besluit: Stempas is kernobject van het bedrijfsproces Beheren stempassen onder Verzorgen burgerzaken (stempas, kiezerspas, volmacht); de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie.
+  gevolg: verwerkt
+  stand: 'deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren stempassen is levensloopproces'
 status: goedgekeurd
 beslist:
   uitkomst:

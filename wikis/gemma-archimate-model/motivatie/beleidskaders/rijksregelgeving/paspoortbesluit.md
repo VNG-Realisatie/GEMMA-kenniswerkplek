@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van rijksbestuur die de Paspoortwet uitwerkt, zoals de geldigheid, de aanvraag en de bevoegdheden van burgemeesters.
-grondslag: regelgeving
 match:
   gemma: geen
 data_object: nee
@@ -83,8 +82,6 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ## Herkomst
 
 ### Bronnen
-
-De regeling zelf ([2026-rijk-paspoortbesluit-bwbr0044308](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md)).
 
 | Korte titel | Bron |
 |---|---|

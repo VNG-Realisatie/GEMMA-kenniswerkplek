@@ -214,9 +214,6 @@ per_onderwerp:
   - 'Lijkbezorging gebruikt alleen afdeling 9, Verstrooiing (art. 5:35–5:37): het verbod op incidentele asverstrooiing op bepaalde plaatsen en de ontheffing door het college op verzoek van de nabestaande die zorgdraagt voor de asbus (art. 5:36 lid 3). Gemeenten kiezen tussen twee varianten of laten de afdeling weg (2025-groningen-algemene-plaatselijke-verordening, art. 5:27).'
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
-grondslag: regelgeving
-grondslag_toelichting:
-- De modelverordening zelf (2023-vng-model-apv), genoemd als grondslag in de UPL (2025-vng-upl-producten-en-diensten-extern, nr. 32).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -224,7 +221,7 @@ relaties:
 - soort: associatie (gericht)
   naar: asverstrooiing
   naam: is grondslag voor
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-vng-model-apv
   - 2025-vng-upl-producten-en-diensten-extern
@@ -232,12 +229,11 @@ relaties:
 - soort: associatie (gericht)
   naar: regeling
   naam: is model voor (algemene plaatselijke verordening)
-  grondslag: bron
+  ggm_match: geen
   bronnen:
   - 2023-vng-model-apv
   vindplaats: aanhef; leeswijzer
 onderwerpen:
-- algemeen
 - lijkbezorging
 regelgever: VNG-model
 besluiten:
@@ -258,8 +254,6 @@ beslist:
     data_object: nee
     generiek: false
     typeregel: 16
-  voor_te_leggen:
-  - 'grondslag regelgeving: altijd voorleggen'
   bronnen:
   - 2023-vng-model-apv
   - 2025-vng-upl-producten-en-diensten-extern

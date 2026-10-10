@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het laten inschrijven van de beëindiging van een geregistreerd partnerschap.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee

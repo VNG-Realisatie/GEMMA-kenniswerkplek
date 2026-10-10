@@ -9,7 +9,6 @@ onderwerpen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 definitie: Het verkrijgen van een uittreksel of afschrift van de akte van overlijden.
-grondslag: bron
 match:
   gemma: geen
 data_object: nee
@@ -74,7 +73,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke afnemer die erom vraagt. [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Overlijden, aangifte doen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-overlijden-aangifte-doen.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger (UPL nr. 316); de nabestaande (Utrecht). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Overlijden, aangifte doen](../../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-overlijden-aangifte-doen.md) |
 | **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Verstrekken uittreksels en verklaringen burgerlijke stand (BW 1 art. 23; Besluit burgerlijke stand art. 26). [BW boek 1](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 316), apart van de akte van de burgerlijke stand (nr. 23); de UPL noemt varianten apart (besluit redacteur 2026-10-06). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 316), apart van de akte van de burgerlijke stand (nr. 23); de UPL noemt varianten apart (besluit 2026-10-06). [UPL-lijst extern](../../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties
 
