@@ -4,9 +4,9 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie Verkiezingen gerelateerde diensten, onder Producten- en dienstenrealisatie publieksdiensten (GEMMA).
+    onderbouwing: 'Het organiseren van verkiezingen is een eigen gemeentelijke taak: de burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen en B&W registreren de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11). GEMMA-bedrijfsfunctie Verkiezingen gerelateerde diensten, onder Producten- en dienstenrealisatie publieksdiensten.'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-rijk-kieswet-bwbr0004627
   gemeentelijk:
     waarde: ja
     onderbouwing: De burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen; B&W registreren de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11).
@@ -20,9 +20,9 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een zelfstandige groepering van gedrag.
+    onderbouwing: Een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: 'Hoort bij burgerzaken: bedient Beheren stempassen en Registreren kiesgerechtigdheid.'
@@ -30,9 +30,9 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   gedrag:
     waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
+    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -153,8 +153,8 @@ kenmerken:
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onder Producten- en dienstenrealisatie publieksdiensten (GEMMA).
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -200,8 +200,8 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp.
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
@@ -274,8 +274,8 @@ beslist:
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-vng-gemma-2026-10-02
   - 2026-rijk-kieswet-bwbr0004627
+  - 2026-vng-gemma-bedrijfsfuncties
   - 2026-rvig-hup-kiesrecht
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: rijksregelgeving

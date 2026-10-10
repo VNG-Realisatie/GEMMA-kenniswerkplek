@@ -764,6 +764,11 @@
               "pattern": "^EAID_"
             }
           },
+          "gemma_relatie": {
+            "type": "string",
+            "pattern": "^id-",
+            "description": "Een relatie binnen een GEMMA-indeling tussen twee gematchte elementen: het id van de GEMMA-relatie, in plaats van bronnen (regel Elke claim een bron); het script toetst haar aan het model"
+          },
           "bronnen": {
             "type": "array",
             "items": {
@@ -875,6 +880,15 @@
           "items": {
             "type": "string"
           }
+        },
+        "gemma_relatie": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^id-"
+          },
+          "description": "Alleen bij in_functie_indeling, zelfstandige_specialisatie: de GEMMA-relaties waarop de plek in een GEMMA-indeling steunt, in plaats van een bron (regel Elke claim een bron); het script toetst ze aan het model"
         }
       },
       "additionalProperties": false

@@ -34,7 +34,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 
 ### Bronnen
 
-- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron; citaten letterlijk, met vindplaats. *(script: elk kenmerk `ja` en elk element heeft een bron; elke bron bestaat en heeft een bronanalyse)*
+- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron; citaten letterlijk, met vindplaats. Eén uitzondering: de plek van een element in een GEMMA-indeling (de kenmerken *in functie-indeling* en *zelfstandige specialisatie*, en een relatie in de GEMMA-functieketen tussen twee gematchte elementen) steunt op de GEMMA-relatie (`gemma_relatie`), want de wiki volgt die indeling en het model is matchdoel; een pagina op GEMMA Online die het model toont (view, tabel, boom), is daarvoor geen bron. *(script: elk kenmerk `ja` en elk element heeft een bron of een GEMMA-relatie; elke bron bestaat en heeft een bronanalyse; een GEMMA-relatie staat in het model tussen de gematchte elementen)*
 - **Zonder bron** — Een claim zonder bron wordt een open vraag ("verificatie nodig").
 
 ### Tekst
@@ -77,7 +77,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 |---|---|---|---|---|
 | Navragen, Per geval | dit bestand | `references/besluiten.md` | secties 3.1 en 3.2 | — |
 | Eén naamgeving, Bestaand bijwerken, Letterlijk verplaatsen | dit bestand | — | — | — |
-| Elke claim een bron, Zonder bron | dit bestand | skill gemma-archimate-model-ingest | — | script |
+| Elke claim een bron, Zonder bron | dit bestand | skill gemma-archimate-model-ingest; `gemma_relatie`: `references/gemma-match.md` | secties 3.1 en 4.4 | script |
 | Geen absolute taal | dit bestand | `references/definitie.md` | — | signaal |
 | Drie registers, GEMMA-terugmeldingen formuleren | dit bestand | `references/terugmeldingen.md` | secties 2 en 3.5 | script |
 | Bronvoorrang, Tegenspraak, Wettelijke grondslag | modelleerregels | skill gemma-archimate-model-ingest | secties 3.4, 3.7 en 4.2 | script, signaal |

@@ -12,10 +12,10 @@ match:
 data_object: nee
 domein: Publieksdiensten
 bronnen:
-- 2026-vng-gemma-2026-10-02
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-vng-gemma-bedrijfsfuncties
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
 gemma_id: id-3668255a-275b-4c9a-9b61-f4a475600ed0
@@ -69,17 +69,17 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, het verstrekken van reisdocumenten en rijbewijzen is een eigen taak van de burgemeester (Paspoortwet art. 40, 42; Wegenverkeerswet 1994 art. 116, 120a). GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten. [Paspoortwet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42) en geeft rijbewijzen af en reikt ze uit (Wegenverkeerswet 1994 art. 116, 120a). [Paspoortwet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Paspoortwet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: de functie bedient Beheren reisdocumenten en Beheren rijbewijzen en omvat de diensten voor reisdocumenten en rijbewijzen (UPL taakveld 0.2). [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20). [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) |
 | **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert het op aanvraag verstrekken van persoonlijke documenten op grond van dezelfde kennis en bevoegdheid (de burgemeester, Paspoortwet art. 40); geen eigen volgorde of doorlooptijd. [Paspoortwet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, registreert en werkt het reisdocument bij (Paspoortwet art. 40, 42). [Paspoortwet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, volgt uit de wettelijke taak van de burgemeester, los van de organisatie (Paspoortwet art. 26, 40). [Paspoortwet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Beheren reisdocumenten en Beheren rijbewijzen. [Paspoortwet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling (GEMMA-relatie id-1f944d4b-41d8-40cb-be75-8706806e07cc). [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling. (GEMMA id-1f944d4b-41d8-40cb-be75-8706806e07cc) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar. (GEMMA id-1f944d4b-41d8-40cb-be75-8706806e07cc) |
 
 ### Relaties
 
@@ -106,7 +106,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Officiële documenten verstrekking | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-1f944d4b-41d8-40cb-be75-8706806e07cc) |
+| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Officiële documenten verstrekking | GEMMA (id-1f944d4b-41d8-40cb-be75-8706806e07cc) |
 
 ## Herkomst
 
@@ -114,10 +114,10 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [Paspoortwet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
 | [Wegenverkeerswet 1994](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) | Wegenverkeerswet 1994 |
 | [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
 | [Utrecht Vermissing paspoort of ID-kaart](../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven.md) | Gemeente Utrecht: Paspoort of ID-kaart kwijt |
 | [Utrecht Rijbewijs aanvragen of verlengen](../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) | Gemeente Utrecht: Rijbewijs aanvragen of verlengen |
 

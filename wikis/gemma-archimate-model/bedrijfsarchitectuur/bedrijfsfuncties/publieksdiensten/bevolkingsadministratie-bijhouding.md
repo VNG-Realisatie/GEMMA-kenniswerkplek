@@ -12,8 +12,8 @@ match:
 data_object: nee
 domein: Publieksdiensten
 bronnen:
-- 2026-vng-gemma-2026-10-02
 - 2026-rvig-hup-achtergronden-en-begrippen
+- 2026-vng-gemma-bedrijfsfuncties
 - 2026-rvig-hup-algemeen
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
@@ -62,18 +62,18 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de bijhouding van de BRP is een eigen taak: het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden). GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten. [HUP BRP Achtergronden en begrippen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [HUP BRP Achtergronden en begrippen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [HUP BRP Achtergronden en begrippen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20). [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) |
 | **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert de bijhouding van de BRP en de dienstverlening daarover op grond van dezelfde kennis en bevoegdheid (medewerker BRP namens het college); geen eigen volgorde of doorlooptijd (HUP Algemeen). [HUP BRP Algemeen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-algemeen.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, bijhoudingsgemeente (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, werkt de ingeschreven persoon en zijn verblijfplaats bij (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, volgt uit de wettelijke taak van het college in de BRP, los van de organisatie (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Bijhouden persoonsgegevens (HUP Algemeen). [HUP BRP Algemeen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-algemeen.md) |
-| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling (GEMMA-relatie id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb). [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling. (GEMMA id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar. (GEMMA id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb) |
 
 ### Relaties
 
@@ -105,7 +105,7 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Bevolkingsadministratie bijhouding | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb) |
+| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Bevolkingsadministratie bijhouding | GEMMA (id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb) |
 
 ## Herkomst
 
@@ -113,8 +113,8 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [HUP BRP Achtergronden en begrippen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) | HUP BRP: Achtergronden en begrippen |
+| [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
 | [HUP BRP Algemeen](../../../bronanalyses/burgerzaken/richtlijn/2026-rvig-hup-algemeen.md) | HUP BRP: Algemeen |
 | [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../bronanalyses/burgerzaken/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) | Gemeente Utrecht: Adresonderzoek |

@@ -369,6 +369,9 @@ KENMERKEN: list[Kenmerk] = [
 
 SLEUTELS = [k.sleutel for k in KENMERKEN]
 NAAM = {k.sleutel: k.naam for k in KENMERKEN}
+# Kenmerken die op de plek in een GEMMA-indeling kunnen steunen (`gemma_relatie`) in plaats van op een bron: de wiki
+# volgt de indelingen van GEMMA, en het model is daar matchdoel (ARCHITECTURE.md, secties 4.4 en 6.4).
+GEMMA_KENMERKEN = ("in_functie_indeling", "zelfstandige_specialisatie")
 KENMERK = {k.sleutel: k for k in KENMERKEN}
 GROEPEN = list(dict.fromkeys(k.groep for k in KENMERKEN))
 GROEP_ALS = {
@@ -1177,6 +1180,10 @@ def schema() -> dict:
             "waarde": {"enum": ["ja", "nee"]},
             "onderbouwing": {"type": "string", "minLength": 1},
             "bronnen": {"type": "array", "items": {"type": "string"}},
+            "gemma_relatie": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^id-"},
+                              "description": "Alleen bij " + ", ".join(GEMMA_KENMERKEN) + ": de GEMMA-relaties "
+                                             "waarop de plek in een GEMMA-indeling steunt, in plaats van een bron "
+                                             "(regel Elke claim een bron); het script toetst ze aan het model"},
         },
         "additionalProperties": False,
     }
@@ -1269,6 +1276,10 @@ def schema() -> dict:
                 via={**id_, "description": "Een begrip met uitkomst specialisatie van het doel (een specialisatie "
                                            "zonder pagina)"},
                 ggm_relatie={"type": "array", "items": {"type": "string", "pattern": "^EAID_"}},
+                gemma_relatie={"type": "string", "pattern": "^id-",
+                               "description": "Een relatie binnen een GEMMA-indeling tussen twee gematchte elementen: "
+                                              "het id van de GEMMA-relatie, in plaats van bronnen (regel Elke claim "
+                                              "een bron); het script toetst haar aan het model"},
                 bronnen=bron_ids, vindplaats=tekst)},
             "bronnen": {**bron_ids, "description": "Bronnen naast die in kenmerken en relaties, bijv. de algemene "
                                                    "bron van de beschrijving"},

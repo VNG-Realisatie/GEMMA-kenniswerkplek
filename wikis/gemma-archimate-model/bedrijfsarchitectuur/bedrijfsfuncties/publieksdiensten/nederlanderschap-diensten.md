@@ -12,8 +12,8 @@ match:
 data_object: nee
 domein: Publieksdiensten
 bronnen:
-- 2026-vng-gemma-2026-10-02
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+- 2026-vng-gemma-bedrijfsfuncties
 - 2025-vng-upl-producten-en-diensten-extern
 gemma_id: id-4c27c433-eded-46a9-bef1-002b82759ca9
 gemma_naam: Nederlanderschap diensten
@@ -66,17 +66,17 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie Nederlanderschap diensten, onder Producten- en dienstenrealisatie publieksdiensten (GEMMA). [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, het behandelen van optieverklaringen en naturalisatieverzoeken is een eigen taak van de burgemeester (Besluit verkrijging en verlies Nederlanderschap art. 2, 63). GEMMA-bedrijfsfunctie Nederlanderschap diensten, onder Producten- en dienstenrealisatie publieksdiensten. [Besluit verkrijging en verlies Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit art. 2, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige groepering van gedrag. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie. [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: bedient Beheren Nederlanderschap. [Besluit verkrijging en verlies Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20). [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) |
 | **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, doorlopende groepering van de dienstverlening rond het Nederlanderschap, op grond van dezelfde kennis van de Rijkswet en het Besluit, zonder eigen volgorde (GEMMA). [Besluit verkrijging en verlies Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, registreert en beëindigt het Nederlanderschap en raadpleegt de ingeschreven persoon (Besluit art. 9, 11, 60a, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, de taak volgt uit de wet en blijft bij een andere organisatie of werkwijze (Besluit art. 2). [Besluit verkrijging en verlies Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Beheren Nederlanderschap (Besluit art. 2, 7, 33, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onder Producten- en dienstenrealisatie publieksdiensten (GEMMA). [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onder Producten- en dienstenrealisatie publieksdiensten (GEMMA). (GEMMA id-21417578-47f0-4f78-a4ba-50b4ee134815) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp. (GEMMA id-21417578-47f0-4f78-a4ba-50b4ee134815) |
 
 ### Relaties
 
@@ -95,7 +95,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Nederlanderschap diensten | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-21417578-47f0-4f78-a4ba-50b4ee134815) |
+| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Nederlanderschap diensten | GEMMA (id-21417578-47f0-4f78-a4ba-50b4ee134815) |
 
 ## Herkomst
 
@@ -103,8 +103,8 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [Besluit verkrijging en verlies Nederlanderschap](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
+| [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
 | [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA

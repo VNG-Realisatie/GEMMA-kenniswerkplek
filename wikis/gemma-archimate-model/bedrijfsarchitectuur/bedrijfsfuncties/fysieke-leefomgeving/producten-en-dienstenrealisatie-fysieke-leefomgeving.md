@@ -12,8 +12,10 @@ match:
 data_object: nee
 domein: Fysieke leefomgeving
 bronnen:
-- 2026-vng-gemma-2026-10-02
+- 2026-vng-gemma-bedrijfsfuncties
+- 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-vng-gemma-2026-10-02
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
 gemma_id: id-9a066e58-f6b8-4761-8159-2f53b2ccf8c7
@@ -68,18 +70,18 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie onder Uitvoering fysieke leefomgeving. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, het leveren van producten en diensten aan klanten is in GEMMA de functie Uitvoering, per domein uitgewerkt (Bedrijfsfuncties, regel 24 en 346). Het domein Fysieke leefomgeving omvat functies waarbij ruimtelijke componenten een belangrijke rol spelen (Bedrijfsarchitectuur fysieke leefomgeving, regel 24). GEMMA-bedrijfsfunctie onder Uitvoering fysieke leefomgeving. [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md), [GEMMA Bedrijfsarchitectuur fysieke leefomgeving](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente levert er de producten in het domein Fysieke leefomgeving mee, waaronder drie producten van lijkbezorging (UPL). [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige functie in de GEMMA-functie-indeling, met eigen functies eronder. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie. [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert het leveren van producten en diensten in het domein Fysieke leefomgeving; geen eigen volgorde of doorlooptijd. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20). [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) |
+| **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert het leveren van producten en diensten in het domein Fysieke leefomgeving; geen eigen volgorde of doorlooptijd. Het domein Fysieke leefomgeving omvat functies waarbij ruimtelijke componenten een belangrijke rol spelen (Bedrijfsarchitectuur fysieke leefomgeving, regel 24). [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md), [GEMMA Bedrijfsarchitectuur fysieke leefomgeving](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, beslisser: de burgemeester en de ambtenaar van de burgerlijke stand beslissen over verlof en laissez-passer (Wlb art. 11, 68; Besluit op de lijkbezorging art. 11). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Besluit op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, legt de verloven en het laissez-passer vast (Wlb art. 11, 68; Besluit op de lijkbezorging art. 11). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Besluit op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, een functie van het GEMMA-bedrijfsfunctiemodel, los van de organisatie. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, een functie van het GEMMA-bedrijfsfunctiemodel, los van de organisatie. Een bedrijfsfunctie is een stabiel en voor langere tijd bruikbaar referentiekader (Bedrijfsfuncties, regel 20). [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) |
 | **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Verlenen verlof tot ontleding en Afgeven laissez-passer (Wlb art. 68; Besluit op de lijkbezorging art. 11). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Besluit op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onder Uitvoering fysieke leefomgeving in de GEMMA-functie-indeling (GEMMA-relatie id-abf62f00-46ee-4865-a01e-141b51a507c1). [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type: de bovenliggende functie aggregeert haar, ze specialiseert niets. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onder Uitvoering fysieke leefomgeving in de GEMMA-functie-indeling. (GEMMA id-abf62f00-46ee-4865-a01e-141b51a507c1) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type: de bovenliggende functie aggregeert haar, ze specialiseert niets. (GEMMA id-abf62f00-46ee-4865-a01e-141b51a507c1) |
 
 ### Relaties
 
@@ -97,7 +99,7 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Uitvoering fysieke leefomgeving](uitvoering-fysieke-leefomgeving.md) | omvat *aggregatie* | Producten- en dienstenrealisatie fysieke leefomgeving | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-abf62f00-46ee-4865-a01e-141b51a507c1) |
+| [Uitvoering fysieke leefomgeving](uitvoering-fysieke-leefomgeving.md) | omvat *aggregatie* | Producten- en dienstenrealisatie fysieke leefomgeving | GEMMA (id-abf62f00-46ee-4865-a01e-141b51a507c1) |
 
 ## Herkomst
 
@@ -105,8 +107,10 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
+| [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
+| [GEMMA Bedrijfsarchitectuur fysieke leefomgeving](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.md) | GEMMA Bedrijfsarchitectuur fysieke leefomgeving |
 | [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
 | [Besluit op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) | Besluit op de lijkbezorging |
 

@@ -4,9 +4,9 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten; vergunningverlening voor lokale activiteiten is een gangbaar begrip.
+    onderbouwing: GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten; vergunningverlening voor lokale activiteiten is een gangbaar begrip. Zo kent de Model-APV de evenementenvergunning (art. 2:25), de vergunning voor inzameling van geld of goederen (art. 5:13) en de standplaatsvergunning (art. 5:18).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2023-vng-model-apv
   gemeentelijk:
     waarde: ja
     onderbouwing: De gemeente verleent de vergunning om de uitvaart te vervroegen of uit te stellen, met toestemming van de burgemeester (RVO; art. 17).
@@ -21,9 +21,9 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een zelfstandige functie in de GEMMA-functie-indeling.
+    onderbouwing: Een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor vergunningen.
@@ -31,9 +31,9 @@ kenmerken:
     - 2026-vng-gemma-2026-10-02
   gedrag:
     waarde: ja
-    onderbouwing: Een groep van activiteiten.
+    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -83,7 +83,8 @@ kenmerken:
     waarde: ja
     onderbouwing: Groepeert het beheren en verlenen van vergunningen voor lokale activiteiten op grond van vergelijkbare kennis van aanvragen, toetsen en beslissen; geen eigen volgorde of doorlooptijd.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
+    - 2023-vng-model-apv
   toestandsverandering:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -154,9 +155,9 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   in_functie_indeling:
     waarde: ja
-    onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling (GEMMA-relatie id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc).
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
+    gemma_relatie:
+    - id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -202,13 +203,13 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc
   generiek:
     waarde: ja
-    onderbouwing: Komt met dezelfde betekenis voor bij elke vergunning voor een lokale activiteit.
+    onderbouwing: 'Komt met dezelfde betekenis voor bij elke vergunning voor een lokale activiteit. Zo in de Model-APV: evenementen (art. 2:25), inzameling van geld of goederen (art. 5:13) en standplaatsen (art. 5:18).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2023-vng-model-apv
 definitie: Het beheren en verlenen van vergunningen voor diverse soorten lokale activiteiten.
 beschrijving:
 - De gemeente beheert en verleent vergunningen voor lokale activiteiten die inwoners en ondernemers aanvragen, zoals vergunningen op grond van het Burgerlijk Wetboek en de APV.
@@ -255,9 +256,11 @@ beslist:
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-vng-gemma-2026-10-02
+  - 2023-vng-model-apv
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-gemma-bedrijfsfuncties
+  - 2026-vng-gemma-2026-10-02
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: rijksregelgeving
   gemma:

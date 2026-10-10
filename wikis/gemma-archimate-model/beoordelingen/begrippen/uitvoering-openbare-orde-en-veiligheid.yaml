@@ -4,9 +4,10 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie op domeinniveau (GEMMA type Bedrijfsfunctie domein), onder de laag Uitvoering.
+    onderbouwing: Het domein Openbare orde en veiligheid omvat alle taken betreffende de bestuurlijke handhaving in de veiligheidsketen (Bedrijfsarchitectuur openbare orde en veiligheid, regel 20). Het GEMMA-bedrijfsfunctiemodel is per domein uitgewerkt (Bedrijfsfuncties, regel 24). GEMMA-bedrijfsfunctie op domeinniveau (GEMMA type Bedrijfsfunctie domein), onder de laag Uitvoering.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
   gemeentelijk:
     waarde: ja
     onderbouwing: Het leveren van gemeentelijke producten in het domein Openbare orde en veiligheid; daaronder de ontheffing voor asverstrooiing (UPL; APV Groningen art. 5:27 lid 3).
@@ -21,9 +22,9 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een zelfstandige functie in de GEMMA-functie-indeling, met eigen functies eronder.
+    onderbouwing: Een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling.
@@ -31,9 +32,9 @@ kenmerken:
     - 2026-vng-gemma-2026-10-02
   gedrag:
     waarde: ja
-    onderbouwing: Een groep van activiteiten.
+    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -81,9 +82,10 @@ kenmerken:
     onderbouwing: Een functie, geen groepering van processen.
   gegroepeerd_gedrag:
     waarde: ja
-    onderbouwing: Groepeert alle uitvoerende functies van het domein Openbare orde en veiligheid; geen eigen volgorde of doorlooptijd.
+    onderbouwing: Groepeert alle uitvoerende functies van het domein Openbare orde en veiligheid; geen eigen volgorde of doorlooptijd. Het domein Openbare orde en veiligheid omvat alle taken betreffende de bestuurlijke handhaving in de veiligheidsketen (Bedrijfsarchitectuur openbare orde en veiligheid, regel 20).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
   toestandsverandering:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -115,9 +117,9 @@ kenmerken:
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   stabiel_over_tijd:
     waarde: ja
-    onderbouwing: Een domein van het GEMMA-bedrijfsfunctiemodel, los van de organisatie.
+    onderbouwing: Een domein van het GEMMA-bedrijfsfunctiemodel, los van de organisatie. Een bedrijfsfunctie is een stabiel en voor langere tijd bruikbaar referentiekader (Bedrijfsfuncties, regel 20).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   afnemer:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -152,9 +154,10 @@ kenmerken:
     - 2025-groningen-algemene-plaatselijke-verordening
   in_functie_indeling:
     waarde: ja
-    onderbouwing: 'Op domeinniveau: de GEMMA-groepering Openbare orde en veiligheid aggregeert haar, naast de laag Uitvoering (GEMMA-relaties id-9dff1655-dc62-4aa8-8b31-581dde14e8ea en id-238be067-61b2-4648-946b-27b3f4effd5b).'
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    onderbouwing: 'Op domeinniveau: de GEMMA-groepering Openbare orde en veiligheid aggregeert haar, naast de laag Uitvoering.'
+    gemma_relatie:
+    - id-238be067-61b2-4648-946b-27b3f4effd5b
+    - id-9dff1655-dc62-4aa8-8b31-581dde14e8ea
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -200,13 +203,14 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: 'Geen breder begrip van hetzelfde type: de bovenliggende functie aggregeert haar, ze specialiseert niets.'
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-238be067-61b2-4648-946b-27b3f4effd5b
+    - id-9dff1655-dc62-4aa8-8b31-581dde14e8ea
   generiek:
     waarde: ja
-    onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp van openbare orde en veiligheid.
+    onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp van openbare orde en veiligheid. Het domein Openbare orde en veiligheid omvat alle taken betreffende de bestuurlijke handhaving in de veiligheidsketen (Bedrijfsarchitectuur openbare orde en veiligheid, regel 20).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
 definitie: Het leveren van gemeentelijke producten en diensten die tot het domein openbare orde en veiligheid worden gerekend.
 beschrijving:
 - De uitvoerende functies van het domein Openbare orde en veiligheid in het GEMMA-bedrijfsfunctiemodel, tussen de laag Uitvoering en de functies per soort werk.
@@ -223,9 +227,7 @@ relaties:
   naar: producten-en-dienstenrealisatie-veiligheidsdomein
   naam: omvat
   ggm_match: geen
-  bronnen:
-  - 2026-vng-gemma-2026-10-02
-  vindplaats: GEMMA-relatie id-aaa45392-d081-4a55-97d9-698db0f4934f
+  gemma_relatie: id-aaa45392-d081-4a55-97d9-698db0f4934f
 toelichting: 'Vervalt in de wiki: de functie omvatte alleen Producten- en dienstenrealisatie veiligheidsdomein, die vervalt (regel Wettelijke grondslag: een functie vervalt als zij niets meer omvat). Het GEMMA-element blijft; GEMMA-terugmelding 1.'
 besluiten:
 - datum: '2026-10-08'
@@ -248,9 +250,11 @@ beslist:
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-vng-gemma-2026-10-02
+  - 2026-vng-gemma-bedrijfsfuncties
+  - 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
   - 2025-vng-upl-producten-en-diensten-extern
   - 2025-groningen-algemene-plaatselijke-verordening
+  - 2026-vng-gemma-2026-10-02
   herkomst: informatiemodel
   gemma:
     gemma_id: id-de168a10-7030-4026-bd95-298e6a6cb3e2

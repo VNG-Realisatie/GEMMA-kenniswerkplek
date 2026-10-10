@@ -4,9 +4,9 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten.
+    onderbouwing: 'De bijhouding van de BRP is een eigen taak: het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden). GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten.'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-rvig-hup-achtergronden-en-begrippen
   gemeentelijk:
     waarde: ja
     onderbouwing: Het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden).
@@ -30,9 +30,9 @@ kenmerken:
     - 2026-rvig-hup-achtergronden-en-begrippen
   gedrag:
     waarde: ja
-    onderbouwing: Een groep van activiteiten.
+    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -153,9 +153,9 @@ kenmerken:
     - 2026-rvig-hup-algemeen
   in_functie_indeling:
     waarde: ja
-    onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling (GEMMA-relatie id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb).
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
+    gemma_relatie:
+    - id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -201,8 +201,8 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar.
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
@@ -361,8 +361,8 @@ beslist:
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-vng-gemma-2026-10-02
   - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2026-vng-gemma-bedrijfsfuncties
   - 2026-rvig-hup-algemeen
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek

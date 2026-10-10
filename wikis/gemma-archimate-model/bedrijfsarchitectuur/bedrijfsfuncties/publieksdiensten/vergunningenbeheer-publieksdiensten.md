@@ -12,9 +12,11 @@ match:
 data_object: nee
 domein: Publieksdiensten
 bronnen:
-- 2026-vng-gemma-2026-10-02
+- 2023-vng-model-apv
 - 2026-rvo-aangifte-en-akte-van-overlijden
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-vng-gemma-bedrijfsfuncties
+- 2026-vng-gemma-2026-10-02
 - 2025-vng-upl-producten-en-diensten-extern
 gemma_id: id-b7e4786e-cff2-40a8-ac4b-6c48a0abfbe0
 gemma_naam: Vergunningenbeheer Publieksdiensten
@@ -67,19 +69,19 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten; vergunningverlening voor lokale activiteiten is een gangbaar begrip. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten; vergunningverlening voor lokale activiteiten is een gangbaar begrip. Zo kent de Model-APV de evenementenvergunning (art. 2:25), de vergunning voor inzameling van geld of goederen (art. 5:13) en de standplaatsvergunning (art. 5:18). [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente verleent de vergunning om de uitvaart te vervroegen of uit te stellen, met toestemming van de burgemeester (RVO; art. 17). [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md), [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige functie in de GEMMA-functie-indeling. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie. [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor vergunningen. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert het beheren en verlenen van vergunningen voor lokale activiteiten op grond van vergelijkbare kennis van aanvragen, toetsen en beslissen; geen eigen volgorde of doorlooptijd. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20). [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) |
+| **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert het beheren en verlenen van vergunningen voor lokale activiteiten op grond van vergelijkbare kennis van aanvragen, toetsen en beslissen; geen eigen volgorde of doorlooptijd. [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md), [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, de burgemeester beslist over een andere termijn voor begraving of crematie (art. 17). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, legt de vergunning vast die nabestaanden aanvragen bij de gemeente waar de persoon is overleden (RVO, § Uitvaart vervroegen, § Uitvaart uitstellen). [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, volgt uit wettelijke bevoegdheden zoals die van de burgemeester in art. 17, los van de organisatie. [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Stellen andere termijn (art. 17). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling (GEMMA-relatie id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc). [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, komt met dezelfde betekenis voor bij elke vergunning voor een lokale activiteit. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling. (GEMMA id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. (GEMMA id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc) |
+| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, komt met dezelfde betekenis voor bij elke vergunning voor een lokale activiteit. Zo in de Model-APV: evenementen (art. 2:25), inzameling van geld of goederen (art. 5:13) en standplaatsen (art. 5:18). [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
 
 ### Relaties
 
@@ -95,7 +97,7 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Vergunningenbeheer Publieksdiensten | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc) |
+| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Vergunningenbeheer Publieksdiensten | GEMMA (id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc) |
 
 ## Herkomst
 
@@ -103,9 +105,11 @@ Alleen de kenmerken met ja; de overige 47 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
+| [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) | Model Algemene plaatselijke verordening per 1 januari 2024 (VNG, november 2023) |
 | [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
 | [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
+| [GEMMA Bedrijfsfuncties](../../../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
+| [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA

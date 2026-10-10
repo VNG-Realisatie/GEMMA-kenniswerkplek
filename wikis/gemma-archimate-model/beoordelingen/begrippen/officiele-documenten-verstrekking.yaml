@@ -4,9 +4,10 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten.
+    onderbouwing: Het verstrekken van reisdocumenten en rijbewijzen is een eigen taak van de burgemeester (Paspoortwet art. 40, 42; Wegenverkeerswet 1994 art. 116, 120a). GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   gemeentelijk:
     waarde: ja
     onderbouwing: De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42) en geeft rijbewijzen af en reikt ze uit (Wegenverkeerswet 1994 art. 116, 120a).
@@ -32,9 +33,9 @@ kenmerken:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   gedrag:
     waarde: ja
-    onderbouwing: Een groep van activiteiten.
+    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -154,9 +155,9 @@ kenmerken:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   in_functie_indeling:
     waarde: ja
-    onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling (GEMMA-relatie id-1f944d4b-41d8-40cb-be75-8706806e07cc).
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
+    gemma_relatie:
+    - id-1f944d4b-41d8-40cb-be75-8706806e07cc
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -202,8 +203,8 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar.
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-1f944d4b-41d8-40cb-be75-8706806e07cc
   generiek:
     waarde: nee
     onderbouwing: Komt alleen in burgerzaken voor.
@@ -330,10 +331,10 @@ beslist:
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-vng-gemma-2026-10-02
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-vng-gemma-bedrijfsfuncties
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   herkomst: rijksregelgeving

@@ -265,8 +265,9 @@ def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], 
             toegestaan = relatietool.HANDELINGEN if soort == "gedrag" else relatietool.VERANTWOORDELIJKHEDEN
             if toegang not in toegestaan:
                 res.fouten.append(f"{bid}: toegang '{toegang}' vanuit {van_type}; kies uit {', '.join(toegestaan)}")
-        if not r.get("bronnen"):   # het GGM is matchdoel, geen bron
-            res.fouten.append(f"{bid}: relatie naar '{r['naar']}' zonder bronnen (regel Elke claim een bron)")
+        if not r.get("bronnen") and not r.get("gemma_relatie"):   # het GGM is matchdoel, geen bron
+            res.fouten.append(f"{bid}: relatie naar '{r['naar']}' zonder bronnen of gemma_relatie "
+                              "(regel Elke claim een bron)")
         if r["ggm_match"] == "exact" and not r.get("ggm_relatie"):
             res.fouten.append(f"{bid}: relatie naar '{r['naar']}' met ggm_match exact zonder ggm_relatie")
     for naam, doel in ([("specialisatie", s.get("element")) for s in data.get("specialisaties", [])]
@@ -278,6 +279,47 @@ def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], 
         u = uitkomsten.get(dp.get("begrip")) if dp.get("begrip") else None
         if dp.get("begrip") and (not u or u.get("soort") != "onderdeel"):
             res.fouten.append(f"{bid}: deelproces '{dp['begrip']}' is geen beoordeling van een deelproces zonder pagina")
+
+
+def _controleer_gemma_relaties(ctx: Context, bid: str, data: dict, alle: dict[str, dict], res: Resultaat) -> None:
+    """Een kenmerk of relatie die steunt op de plek in een GEMMA-indeling (`gemma_relatie`) in plaats van op een bron:
+    de GEMMA-relatie moet in het model staan, tussen de gematchte elementen (regel Elke claim een bron)."""
+    eigen = (data.get("gemma") or {}).get("id")
+    gebruikt = [s for s, a in data["kenmerken"].items() if a.get("gemma_relatie")] \
+        + [r["naar"] for r in data.get("relaties", []) if r.get("gemma_relatie")]
+    if not gebruikt:
+        return
+    if not eigen:
+        res.fouten.append(f"{bid}: gemma_relatie zonder GEMMA-match (gemma.id)")
+        return
+    model = ctx.gemma()["relaties"]
+    for s, a in data["kenmerken"].items():
+        for rid in a.get("gemma_relatie") or []:
+            g = model.get(rid)
+            if s not in bepaal_type.GEMMA_KENMERKEN or a["waarde"] != "ja":
+                res.fouten.append(f"{bid}: gemma_relatie bij kenmerk {bepaal_type.NAAM[s]}; alleen bij 'ja' en bij "
+                                  + ", ".join(bepaal_type.NAAM[k] for k in bepaal_type.GEMMA_KENMERKEN))
+            elif g is None:
+                res.fouten.append(f"{bid}: GEMMA-relatie {rid} bij {bepaal_type.NAAM[s]} staat niet in het GEMMA-model")
+            elif g["doel"] != eigen or g["type"] not in ("aggregation-relationship", "composition-relationship"):
+                res.fouten.append(f"{bid}: GEMMA-relatie {rid} bij {bepaal_type.NAAM[s]} is geen aggregatie of "
+                                  "compositie naar de GEMMA-match van dit element")
+        if s == "zelfstandige_specialisatie" and a.get("gemma_relatie") and any(
+                g["bron"] == eigen and g["type"] == "specialization-relationship" for g in model.values()):
+            res.fouten.append(f"{bid}: zelfstandige specialisatie op grond van GEMMA, maar de GEMMA-match "
+                              "specialiseert in het model een ander element")
+    for r in data.get("relaties", []):
+        rid = r.get("gemma_relatie")
+        if not rid:
+            continue
+        naar = ((alle.get(r["naar"]) or {}).get("gemma") or {}).get("id")
+        g = model.get(rid)
+        verwacht = f"{_relatie_archimate(r['soort'])[0]}-relationship"
+        if g is None:
+            res.fouten.append(f"{bid}: GEMMA-relatie {rid} naar '{r['naar']}' staat niet in het GEMMA-model")
+        elif (g["bron"], g["doel"], g["type"]) != (eigen, naar, verwacht):
+            res.fouten.append(f"{bid}: GEMMA-relatie {rid} is geen {r['soort']} van de GEMMA-match van dit element "
+                              f"naar die van '{r['naar']}'")
 
 
 def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat, rel: Path = TERUGMELDINGEN,
@@ -481,7 +523,8 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         if modelbronnen:
             res.waarschuwingen.append(f"{bid}: {', '.join(modelbronnen)} is een model, matchdoel en geen bron; noem bij "
                                       "het kenmerk of de relatie de bron van de bewering (regel Bronvoorrang)")
-        zonder_bron = [bepaal_type.NAAM[s] for s, a in data["kenmerken"].items() if a["waarde"] == "ja" and not a.get("bronnen")]
+        zonder_bron = [bepaal_type.NAAM[s] for s, a in data["kenmerken"].items()
+                       if a["waarde"] == "ja" and not a.get("bronnen") and not a.get("gemma_relatie")]
         if zonder_bron:
             res.fouten.append(f"{bid}: kenmerk 'ja' zonder bron: {', '.join(zonder_bron)} (regel Elke claim een bron)")
         for onderwerp in data["onderwerpen"]:
@@ -498,6 +541,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
                 res.fouten.append(f"{bid}: element zonder bron (regel Elke claim een bron)")
             _controleer_element(ctx, bid, data, uitkomst, res)
             _controleer_verwijzingen(bid, data, uitkomsten, res, {b: d["begrip"] for b, (_, d) in alle.items()})
+            _controleer_gemma_relaties(ctx, bid, data, {b: d for b, (_, d) in alle.items()}, res)
             beslist.update(_modelvelden(ctx, bid, data, res))
             beslist.update(_kwaliteitsdoelen(ctx, bid, data, uitkomst, res))
             status = bepaal_type.voorgestelde_status(uitkomst, ggm_sterkte, data.get("besluiten"))

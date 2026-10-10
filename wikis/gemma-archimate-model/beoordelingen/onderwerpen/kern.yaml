@@ -3,11 +3,15 @@ laag: kern
 status: in-behandeling
 omschrijving:
 - 'Wat in het hele model voorkomt en te breed is voor een thema: elementen die elk onderwerp gebruikt, bij voorkeur met een match in GGM 99-kern (zoals Persoon, Adres, Zaak en Document), en rollen en functies van GEMMA die in meer onderwerpen gelden, zoals Ketenpartner en Producten- en dienstenrealisatie publieksdiensten. Een element komt hier alleen als geen eigen en geen thematisch gedeeld onderwerp past (regel Thuishoren).'
-- 'Hier staan ook de bronanalyses van bronnen die voor de hele wiki gelden: Over GEMMA en de GEMMA-procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking).'
+- 'Hier staan ook de bronanalyses van bronnen die voor de hele wiki gelden: Over GEMMA, de GEMMA-procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking) en de redactionele tekst over de bedrijfsfuncties (Bedrijfsfuncties en de bedrijfsarchitectuur per domein).'
 bronnen:
 - 2026-vng-over-gemma
 - 2026-vng-gemma-proceshierarchie
 - 2026-vng-gemma-impact-ketensamenwerking
+- 2026-vng-gemma-bedrijfsfuncties
+- 2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten
+- 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
+- 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
 besluiten:
 - datum: '2026-10-06'
   besluit: 'Onderwerp Algemeen: Nu een licht onderwerp Algemeen voor de generieke elementen en de organen en organisatie van de gemeente, vóór Burgerzaken: nog geen eigen bronnen en geen herbeoordeling; bestaande elementen verhuizen per geval door `algemeen` als eerste in `onderwerpen` te zetten.'

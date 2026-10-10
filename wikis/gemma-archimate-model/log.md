@@ -1542,3 +1542,16 @@ Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen o
 | 2026-10-10 | promote | wijzigen-identificatienummers | Mark Backer | c32cce80 |
 | 2026-10-10 | promote | wijzigen-naamgebruik | Mark Backer | cf253aa7 |
 | 2026-10-10 | promote | zakenpaspoort | Mark Backer | 3dada957 |
+| 2026-10-10 | promote | bevolkingsadministratie-bijhouding | Mark Backer | c9a35d47 |
+| 2026-10-10 | promote | burgerlijke-stand-diensten | Mark Backer | 0f9a6033 |
+| 2026-10-10 | promote | exploitatie-fysieke-leefomgeving | Mark Backer | 350e6e5c |
+| 2026-10-10 | promote | exploiteren-van-begraafplaatsen | Mark Backer | e1cb166b |
+| 2026-10-10 | promote | nederlanderschap-diensten | Mark Backer | 87b4bb5c |
+| 2026-10-10 | promote | officiele-documenten-verstrekking | Mark Backer | 2927ba8a |
+| 2026-10-10 | promote | producten-en-dienstenrealisatie-fysieke-leefomgeving | Mark Backer | d4e9218b |
+| 2026-10-10 | promote | producten-en-dienstenrealisatie-publieksdiensten | Mark Backer | d57e569b |
+| 2026-10-10 | promote | rijk | Mark Backer | 28dd47b3 |
+| 2026-10-10 | promote | uitvoering-fysieke-leefomgeving | Mark Backer | 68cca8ba |
+| 2026-10-10 | promote | uitvoering-publieksdiensten | Mark Backer | 05a23be5 |
+| 2026-10-10 | promote | vergunningenbeheer-publieksdiensten | Mark Backer | ac755d2e |
+| 2026-10-10 | promote | verkiezingen-gerelateerde-diensten | Mark Backer | 4c05826a |

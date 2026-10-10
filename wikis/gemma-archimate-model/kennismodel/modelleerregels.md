@@ -24,7 +24,7 @@ Voor welke begrippen er zijn en wat ze formeel betekenen, gaat een bron met een 
 6. `beleid`: intern gericht beleid van een gemeente (beleidsnota's, visies, programma's).
 7. `overig`: praktijk, zoals productpagina's, websites en presentaties.
 
-Voorrang bepaalt nooit of iets een element is. De naam en de herkenbare definitie komen uit de gangbare taal van bronnen van `richtlijn`, `beleid` en `overig`; de wetsterm wordt een synoniem met context "wet". Precedent: Urn, niet Asbus. `europese-regelgeving` en `rijksregelgeving` heten samen landelijke regelgeving. Het GGM en het GEMMA-model (brontype `model`) zijn geen bron maar matchdoel en vallen buiten de volgorde; de UPL is bron én matchdoel. *(signaal; ook bij een bron van brontype `model` in een kenmerk of relatie)*
+Voorrang bepaalt nooit of iets een element is. De naam en de herkenbare definitie komen uit de gangbare taal van bronnen van `richtlijn`, `beleid` en `overig`; de wetsterm wordt een synoniem met context "wet". Precedent: Urn, niet Asbus. `europese-regelgeving` en `rijksregelgeving` heten samen landelijke regelgeving. Het GGM en het GEMMA-model (brontype `model`) zijn geen bron maar matchdoel en vallen buiten de volgorde; de UPL is bron én matchdoel. Ook een pagina die het model toont (een view, tabel of boom op GEMMA Online) is geen bron; alleen de redactionele tekst ervan is bron, van brontype `overig`. De plek in een GEMMA-indeling steunt op de GEMMA-relatie (regel Elke claim een bron). *(signaal; ook bij een bron van brontype `model` in een kenmerk of relatie)*
 
 ### Een element modelleren, in deze volgorde
 

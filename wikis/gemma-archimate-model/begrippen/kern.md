@@ -7,6 +7,10 @@ bronnen:
 - 2026-vng-over-gemma
 - 2026-vng-gemma-proceshierarchie
 - 2026-vng-gemma-impact-ketensamenwerking
+- 2026-vng-gemma-bedrijfsfuncties
+- 2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten
+- 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
+- 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
 ---
 
 # Kern
@@ -17,7 +21,7 @@ bronnen:
 
 Wat in het hele model voorkomt en te breed is voor een thema: elementen die elk onderwerp gebruikt, bij voorkeur met een match in GGM 99-kern (zoals Persoon, Adres, Zaak en Document), en rollen en functies van GEMMA die in meer onderwerpen gelden, zoals Ketenpartner en Producten- en dienstenrealisatie publieksdiensten. Een element komt hier alleen als geen eigen en geen thematisch gedeeld onderwerp past (regel Thuishoren).
 
-Hier staan ook de bronanalyses van bronnen die voor de hele wiki gelden: Over GEMMA en de GEMMA-procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking).
+Hier staan ook de bronanalyses van bronnen die voor de hele wiki gelden: Over GEMMA, de GEMMA-procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking) en de redactionele tekst over de bedrijfsfuncties (Bedrijfsfuncties en de bedrijfsarchitectuur per domein).
 
 ## Overzicht
 
@@ -28,6 +32,10 @@ De views op de indelingen staan in het [overzicht](../overzichten/kern.md).
 - [Over GEMMA (kennismodel en modelleerafspraken)](../bronanalyses/kern/overig/2026-vng-over-gemma.md)
 - [GEMMA Procesarchitectuur Proceshiërarchie](../bronanalyses/kern/overig/2026-vng-gemma-proceshierarchie.md)
 - [GEMMA Procesarchitectuur Impact van ketensamenwerking](../bronanalyses/kern/overig/2026-vng-gemma-impact-ketensamenwerking.md)
+- [GEMMA Bedrijfsfuncties](../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md)
+- [GEMMA Bedrijfsarchitectuur publieksdiensten](../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten.md)
+- [GEMMA Bedrijfsarchitectuur fysieke leefomgeving](../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.md)
+- [GEMMA Bedrijfsarchitectuur openbare orde en veiligheid](../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid.md)
 
 ## Begrippen
 

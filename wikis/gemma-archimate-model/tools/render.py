@@ -395,7 +395,9 @@ def element_pagina(w: Wiki, bid: str) -> str:
     ja = [s for s in bepaal_type.SLEUTELS if d["kenmerken"][s]["waarde"] == "ja"]
     kenmerken = [[f"**{bepaal_type.NAAM[s]}**: {VRAAG[s]}",
                   " ".join(x for x in (w.tekst(van, _ja(d["kenmerken"][s]["onderbouwing"])),
-                                       w.bronnen(van, d["kenmerken"][s].get("bronnen", []))) if x)] for s in ja]
+                                       w.bronnen(van, d["kenmerken"][s].get("bronnen", [])),
+                                       f"(GEMMA {', '.join(d['kenmerken'][s]['gemma_relatie'])})"
+                                       if d["kenmerken"][s].get("gemma_relatie") else "") if x)] for s in ja]
     nee = len(bepaal_type.SLEUTELS) - len(ja)
     niveau = u.get("procesniveau") or u.get("objectniveau")
     typering = [f"{ARCHIMATE_NAAM.get(u['archimate_type'], u['archimate_type'])}"
@@ -419,9 +421,10 @@ def element_pagina(w: Wiki, bid: str) -> str:
         return f"{tekst} (*niet in het kennismodel, gaat niet mee in de export*)" if buiten_kennismodel(van_id, x) else tekst
 
     def bron_cel(x: dict) -> str:
-        cel = w.bronnen(van, x.get("bronnen", []), x.get("vindplaats"))
-        ggm_relatie = ", ".join(x.get("ggm_relatie", []))
-        return f"{cel}; GGM ({ggm_relatie})" if cel and ggm_relatie else (cel or (f"GGM ({ggm_relatie})" if ggm_relatie else ""))
+        delen = [w.bronnen(van, x.get("bronnen", []), x.get("vindplaats")),
+                 f"GGM ({', '.join(x['ggm_relatie'])})" if x.get("ggm_relatie") else "",
+                 f"GEMMA ({x['gemma_relatie']})" if x.get("gemma_relatie") else ""]
+        return "; ".join(d for d in delen if d)
 
     kolommen = ["Van", "Relatie", "Naar", "Bron"]
     uitgaand = _tabel(kolommen, [[d["begrip"], relatie(x), w.link(van, x["naar"]), bron_cel(x)]

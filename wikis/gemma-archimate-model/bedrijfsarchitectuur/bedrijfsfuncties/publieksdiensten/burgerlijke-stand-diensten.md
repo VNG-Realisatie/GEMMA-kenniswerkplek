@@ -15,7 +15,6 @@ domein: Publieksdiensten
 bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-- 2026-vng-gemma-2026-10-02
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2025-vng-upl-producten-en-diensten-extern
 gemma_id: id-c689b2cc-4672-4474-a82f-44273c60d384
@@ -83,8 +82,8 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, raadpleegt de verklaring van overlijden en legt het verlof vast (art. 11–13). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, volgt uit de wettelijke taak van de ambtenaar van de burgerlijke stand, los van de organisatie (art. 11). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Verlenen verlof tot begraving of crematie (art. 11). [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere functie in deze wiki. [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling. (GEMMA id-efd77657-f6f9-457c-a9e8-93d6d11647df) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere functie in deze wiki. (GEMMA id-efd77657-f6f9-457c-a9e8-93d6d11647df) |
 
 ### Relaties
 
@@ -121,7 +120,7 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Burgerlijke stand diensten | [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) (GEMMA-relatie id-efd77657-f6f9-457c-a9e8-93d6d11647df) |
+| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Burgerlijke stand diensten | GEMMA (id-efd77657-f6f9-457c-a9e8-93d6d11647df) |
 
 ## Herkomst
 
@@ -131,7 +130,6 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 |---|---|
 | [Ondernemersplein Aangifte overlijden](../../../bronanalyses/lijkbezorging/overig/2026-rvo-aangifte-en-akte-van-overlijden.md) | Aangifte en akte van overlijden (Ondernemersplein) |
 | [Wet op de lijkbezorging](../../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) | Wet op de lijkbezorging |
-| [GEMMA](../../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [BW boek 1](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) | Burgerlijk Wetboek Boek 1 (Personen- en familierecht) |
 | [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 

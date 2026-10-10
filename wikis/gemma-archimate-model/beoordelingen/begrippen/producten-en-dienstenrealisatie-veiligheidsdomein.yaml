@@ -4,9 +4,10 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie onder Uitvoering openbare orde en veiligheid.
+    onderbouwing: Het leveren van producten en diensten aan klanten is in GEMMA de functie Uitvoering, per domein uitgewerkt (Bedrijfsfuncties, regel 24 en 346). Het domein Openbare orde en veiligheid omvat alle taken betreffende de bestuurlijke handhaving in de veiligheidsketen (Bedrijfsarchitectuur openbare orde en veiligheid, regel 20). GEMMA-bedrijfsfunctie onder Uitvoering openbare orde en veiligheid.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
   gemeentelijk:
     waarde: ja
     onderbouwing: De gemeente levert er de producten in het domein Openbare orde en veiligheid mee, waaronder asverstrooiing (UPL).
@@ -20,9 +21,9 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een zelfstandige functie in de GEMMA-functie-indeling, met eigen functies eronder.
+    onderbouwing: Een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling.
@@ -30,9 +31,9 @@ kenmerken:
     - 2026-vng-gemma-2026-10-02
   gedrag:
     waarde: ja
-    onderbouwing: Een groep van activiteiten.
+    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -80,9 +81,10 @@ kenmerken:
     onderbouwing: Een functie, geen groepering van processen.
   gegroepeerd_gedrag:
     waarde: ja
-    onderbouwing: Groepeert het leveren van producten en diensten in het domein Openbare orde en veiligheid; geen eigen volgorde of doorlooptijd.
+    onderbouwing: Groepeert het leveren van producten en diensten in het domein Openbare orde en veiligheid; geen eigen volgorde of doorlooptijd. Het domein Openbare orde en veiligheid omvat alle taken betreffende de bestuurlijke handhaving in de veiligheidsketen (Bedrijfsarchitectuur openbare orde en veiligheid, regel 20).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
   toestandsverandering:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -116,9 +118,9 @@ kenmerken:
     onderbouwing: Niet bij dit begrip aanwijsbaar.
   stabiel_over_tijd:
     waarde: ja
-    onderbouwing: Een functie van het GEMMA-bedrijfsfunctiemodel, los van de organisatie.
+    onderbouwing: Een functie van het GEMMA-bedrijfsfunctiemodel, los van de organisatie. Een bedrijfsfunctie is een stabiel en voor langere tijd bruikbaar referentiekader (Bedrijfsfuncties, regel 20).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   afnemer:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -153,9 +155,9 @@ kenmerken:
     - 2025-groningen-algemene-plaatselijke-verordening
   in_functie_indeling:
     waarde: ja
-    onderbouwing: Onder Uitvoering openbare orde en veiligheid in de GEMMA-functie-indeling (GEMMA-relatie id-aaa45392-d081-4a55-97d9-698db0f4934f).
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    onderbouwing: Onder Uitvoering openbare orde en veiligheid in de GEMMA-functie-indeling.
+    gemma_relatie:
+    - id-aaa45392-d081-4a55-97d9-698db0f4934f
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -201,8 +203,8 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: 'Geen breder begrip van hetzelfde type: de bovenliggende functie aggregeert haar, ze specialiseert niets.'
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-aaa45392-d081-4a55-97d9-698db0f4934f
   generiek:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -240,8 +242,10 @@ beslist:
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-vng-gemma-2026-10-02
+  - 2026-vng-gemma-bedrijfsfuncties
+  - 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
   - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-vng-gemma-2026-10-02
   - 2025-groningen-algemene-plaatselijke-verordening
   herkomst: informatiemodel
   gemma:

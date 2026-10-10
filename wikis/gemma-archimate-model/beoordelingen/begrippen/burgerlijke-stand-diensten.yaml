@@ -156,8 +156,8 @@ kenmerken:
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-efd77657-f6f9-457c-a9e8-93d6d11647df
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -203,8 +203,8 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen bredere functie in deze wiki.
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-efd77657-f6f9-457c-a9e8-93d6d11647df
   generiek:
     waarde: nee
     onderbouwing: Een domeinfunctie, niet in veel onderwerpen.
@@ -413,7 +413,6 @@ beslist:
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-vng-gemma-2026-10-02
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: rijksregelgeving

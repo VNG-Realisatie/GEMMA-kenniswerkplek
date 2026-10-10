@@ -200,9 +200,9 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Geen bredere actor in deze wiki.
+    onderbouwing: 'Geen bredere actor: de Staat staat in de wet als eigen rechtspersoon naast de provincies, de gemeenten en de waterschappen (BW Boek 2 art. 1 lid 1).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-rijk-bw2-rechtspersonen
   generiek:
     waarde: nee
     onderbouwing: 'Een partij voor alle onderwerpen, net als Gemeente, maar geen variant van een generiek GEMMA-element: het is zelf de GEMMA-actor.'
@@ -251,7 +251,6 @@ beslist:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-rijk-bw2-rechtspersonen
-  - 2026-vng-gemma-2026-10-02
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   herkomst: rijksregelgeving
   gemma:

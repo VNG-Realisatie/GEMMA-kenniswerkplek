@@ -17,7 +17,6 @@ bronnen:
 - 2026-rijk-wet-brp-bwbr0033715
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-rijk-bw2-rechtspersonen
-- 2026-vng-gemma-2026-10-02
 - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 gemma_id: id-9f6a80ba-b7fb-4a58-b599-b5f2b33b840e
 gemma_naam: Rijk
@@ -70,7 +69,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **eigen rechtspersoon**: Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | Ja, de Staat is rechtspersoon (BW Boek 2 art. 1); de ministers zijn zijn organen. [BW Boek 2](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) |
 | **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, ketenpartner in Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; besluit 2026-10-07). [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, de bestuurslaag als geheel, waarmee elke gemeente in dezelfde rol te maken heeft; zo ook Provincie en Waterschap (besluit 2026-10-07). Afzonderlijke ministeries en rijksdiensten zijn geen eigen actor. [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere actor in deze wiki. [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere actor: de Staat staat in de wet als eigen rechtspersoon naast de provincies, de gemeenten en de waterschappen (BW Boek 2 art. 1 lid 1). [BW Boek 2](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) |
 
 ### Relaties
 
@@ -90,7 +89,6 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | [Wet BRP](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 | [Besluit verkrijging en verlies Nederlanderschap](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
 | [BW Boek 2](../../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) | Burgerlijk Wetboek Boek 2 Rechtspersonen (BWBR0003045) |
-| [GEMMA](../../../../sources/raw/2026-vng-gemma-2026-10-02.md) | GEMMA-architectuurmodel |
 | [Wet justitiële en strafvorderlijke gegevens](../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) | Wet justitiële en strafvorderlijke gegevens |
 
 ### Afstemming met GEMMA

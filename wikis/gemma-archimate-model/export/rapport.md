@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: 764dd1940bbd548f16776a066e0bee6aaf5d99ec8a2030bf323f6bef31a66226 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 292a77050e2db745ce98d40ec70935807b94a633ffec52ea41c9e7373c1a3e17 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-10T08:10:38. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 29 gekoppeld aan GEMMA, 225 nieuw. Relaties: 13 gekoppeld, 979 nieuw, 0 overgeslagen. Indelingen: 185 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-10T18:54:11. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 29 gekoppeld aan GEMMA, 225 nieuw. Relaties: 13 gekoppeld, 979 nieuw, 0 overgeslagen. Indelingen: 185 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
 
 Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de groep Kennismodel met een groep per laag (map Other / wiki-gemma-model / Kennismodel).
 

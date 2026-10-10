@@ -4,9 +4,10 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie op domeinniveau (GEMMA type Bedrijfsfunctie domein), onder de laag Uitvoering.
+    onderbouwing: Het domein Fysieke leefomgeving omvat functies waarbij ruimtelijke componenten een belangrijke rol spelen (Bedrijfsarchitectuur fysieke leefomgeving, regel 24). Het GEMMA-bedrijfsfunctiemodel is per domein uitgewerkt (Bedrijfsfuncties, regel 24). GEMMA-bedrijfsfunctie op domeinniveau (GEMMA type Bedrijfsfunctie domein), onder de laag Uitvoering.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
   gemeentelijk:
     waarde: ja
     onderbouwing: Het leveren van gemeentelijke producten en diensten in het ruimtelijk domein; daaronder de gemeentelijke begraafplaats die elke gemeente heeft (art. 33).
@@ -20,9 +21,9 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een zelfstandige functie in de GEMMA-functie-indeling, met eigen functies eronder.
+    onderbouwing: Een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling.
@@ -30,9 +31,9 @@ kenmerken:
     - 2026-vng-gemma-2026-10-02
   gedrag:
     waarde: ja
-    onderbouwing: Een groep van activiteiten.
+    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -80,9 +81,10 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   gegroepeerd_gedrag:
     waarde: ja
-    onderbouwing: Groepeert alle uitvoerende functies van het domein Fysieke leefomgeving, zoals de exploitatie van voorzieningen; geen eigen volgorde of doorlooptijd.
+    onderbouwing: Groepeert alle uitvoerende functies van het domein Fysieke leefomgeving, zoals de exploitatie van voorzieningen; geen eigen volgorde of doorlooptijd. Het domein Fysieke leefomgeving omvat functies waarbij ruimtelijke componenten een belangrijke rol spelen (Bedrijfsarchitectuur fysieke leefomgeving, regel 24).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
   toestandsverandering:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -114,9 +116,9 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   stabiel_over_tijd:
     waarde: ja
-    onderbouwing: Een domein van het GEMMA-bedrijfsfunctiemodel, los van de organisatie.
+    onderbouwing: Een domein van het GEMMA-bedrijfsfunctiemodel, los van de organisatie. Een bedrijfsfunctie is een stabiel en voor langere tijd bruikbaar referentiekader (Bedrijfsfuncties, regel 20).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   afnemer:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -151,9 +153,10 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   in_functie_indeling:
     waarde: ja
-    onderbouwing: 'Op domeinniveau: de GEMMA-groepering Fysieke leefomgeving aggregeert haar, naast de laag Uitvoering (GEMMA-relaties id-21a05e99-5c2b-4fb1-ba92-fe754c8f9510 en id-14a95270-5e0b-4beb-971a-a26d86aaed86).'
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    onderbouwing: 'Op domeinniveau: de GEMMA-groepering Fysieke leefomgeving aggregeert haar, naast de laag Uitvoering.'
+    gemma_relatie:
+    - id-14a95270-5e0b-4beb-971a-a26d86aaed86
+    - id-21a05e99-5c2b-4fb1-ba92-fe754c8f9510
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -199,13 +202,14 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: 'Geen breder begrip van hetzelfde type: de bovenliggende functie aggregeert haar, ze specialiseert niets.'
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-14a95270-5e0b-4beb-971a-a26d86aaed86
+    - id-21a05e99-5c2b-4fb1-ba92-fe754c8f9510
   generiek:
     waarde: ja
-    onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp van het ruimtelijk domein.
+    onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp van het ruimtelijk domein. Het domein Fysieke leefomgeving omvat functies waarbij ruimtelijke componenten een belangrijke rol spelen (Bedrijfsarchitectuur fysieke leefomgeving, regel 24).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
 definitie: Het leveren van gemeentelijke producten en diensten die tot het ruimtelijk domein worden gerekend.
 beschrijving:
 - De uitvoerende functies van het domein Fysieke leefomgeving in het GEMMA-bedrijfsfunctiemodel, tussen de laag Uitvoering en de functies per soort werk. Ze omvat onder meer de exploitatie van gemeentelijke voorzieningen.
@@ -222,16 +226,12 @@ relaties:
   naar: exploitatie-fysieke-leefomgeving
   naam: omvat
   ggm_match: geen
-  bronnen:
-  - 2026-vng-gemma-2026-10-02
-  vindplaats: GEMMA-relatie id-6e34e824-ae6b-4999-a141-0ceb1dd36099
+  gemma_relatie: id-6e34e824-ae6b-4999-a141-0ceb1dd36099
 - soort: aggregatie
   naar: producten-en-dienstenrealisatie-fysieke-leefomgeving
   naam: omvat
   ggm_match: geen
-  bronnen:
-  - 2026-vng-gemma-2026-10-02
-  vindplaats: GEMMA-relatie id-abf62f00-46ee-4865-a01e-141b51a507c1
+  gemma_relatie: id-abf62f00-46ee-4865-a01e-141b51a507c1
 status: goedgekeurd
 beslist:
   uitkomst:
@@ -245,8 +245,10 @@ beslist:
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-vng-gemma-2026-10-02
+  - 2026-vng-gemma-bedrijfsfuncties
+  - 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-gemma-2026-10-02
   herkomst: rijksregelgeving
   gemma:
     gemma_id: id-f10ff76e-e4de-4f30-bb1f-81c7cfffb46a

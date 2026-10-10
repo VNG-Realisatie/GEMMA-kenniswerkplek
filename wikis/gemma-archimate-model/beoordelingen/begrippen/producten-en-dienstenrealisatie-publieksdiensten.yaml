@@ -6,9 +6,10 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie onder Uitvoering Publieksdiensten.
+    onderbouwing: Het leveren van producten en diensten aan klanten is in GEMMA de functie Uitvoering, per domein uitgewerkt (Bedrijfsfuncties, regel 24 en 346). Het domein Publieksdiensten omvat voor de buitenwereld herkenbare functies waarbij burgers en bedrijven vaak zelf diensten afnemen (Bedrijfsarchitectuur publieksdiensten, regel 24). GEMMA-bedrijfsfunctie onder Uitvoering Publieksdiensten.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten
   gemeentelijk:
     waarde: ja
     onderbouwing: Na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof af (RVO; art. 11).
@@ -23,9 +24,9 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een zelfstandige functie in de GEMMA-functie-indeling, met eigen functies eronder.
+    onderbouwing: Een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie.
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor de functie-indeling.
@@ -33,9 +34,9 @@ kenmerken:
     - 2026-vng-gemma-2026-10-02
   gedrag:
     waarde: ja
-    onderbouwing: Een groep van activiteiten.
+    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -83,9 +84,10 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   gegroepeerd_gedrag:
     waarde: ja
-    onderbouwing: Groepeert het leveren van producten en diensten aan inwoners en ondernemers in het domein Publieksdiensten, zoals burgerlijke stand, bevolkingsadministratie en officiële documenten; geen eigen volgorde of doorlooptijd.
+    onderbouwing: Groepeert het leveren van producten en diensten aan inwoners en ondernemers in het domein Publieksdiensten, zoals burgerlijke stand, bevolkingsadministratie en officiële documenten; geen eigen volgorde of doorlooptijd. Het domein Publieksdiensten omvat voor de buitenwereld herkenbare functies waarbij burgers en bedrijven vaak zelf diensten afnemen (Bedrijfsarchitectuur publieksdiensten, regel 24).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten
   toestandsverandering:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -156,9 +158,9 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   in_functie_indeling:
     waarde: ja
-    onderbouwing: Soort werk onder Uitvoering Publieksdiensten in de GEMMA-functie-indeling (GEMMA-relatie id-ec3df199-3782-479d-874e-73b99b31262b).
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    onderbouwing: Soort werk onder Uitvoering Publieksdiensten in de GEMMA-functie-indeling.
+    gemma_relatie:
+    - id-ec3df199-3782-479d-874e-73b99b31262b
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -204,13 +206,13 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: 'Geen breder begrip van hetzelfde type: de bovenliggende functie aggregeert haar, ze specialiseert niets.'
-    bronnen:
-    - 2026-vng-gemma-2026-10-02
+    gemma_relatie:
+    - id-ec3df199-3782-479d-874e-73b99b31262b
   generiek:
     waarde: ja
-    onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp van de publieksdienstverlening.
+    onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp van de publieksdienstverlening. Het domein Publieksdiensten omvat voor de buitenwereld herkenbare functies waarbij burgers en bedrijven vaak zelf diensten afnemen (Bedrijfsarchitectuur publieksdiensten, regel 24).
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten
 definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
 beschrijving:
 - De gemeente levert publieksdiensten aan inwoners en ondernemers, zoals de diensten van de burgerlijke stand, de bijhouding van de bevolkingsadministratie en de verstrekking van officiële documenten.
@@ -229,16 +231,12 @@ relaties:
   naar: burgerlijke-stand-diensten
   naam: omvat
   ggm_match: geen
-  bronnen:
-  - 2026-vng-gemma-2026-10-02
-  vindplaats: GEMMA-relatie id-efd77657-f6f9-457c-a9e8-93d6d11647df
+  gemma_relatie: id-efd77657-f6f9-457c-a9e8-93d6d11647df
 - soort: aggregatie
   naar: vergunningenbeheer-publieksdiensten
   naam: omvat
   ggm_match: geen
-  bronnen:
-  - 2026-vng-gemma-2026-10-02
-  vindplaats: GEMMA-relatie id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc
+  gemma_relatie: id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc
 - soort: aggregatie
   naar: begraafplaatsregister
   naam: omvat
@@ -250,9 +248,7 @@ relaties:
   naar: bevolkingsadministratie-bijhouding
   naam: omvat
   ggm_match: geen
-  bronnen:
-  - 2026-vng-gemma-2026-10-02
-  vindplaats: GEMMA-relatie id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
+  gemma_relatie: id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
 - soort: aggregatie
   naar: legalisatie-handtekening
   naam: omvat
@@ -271,23 +267,17 @@ relaties:
   naar: officiele-documenten-verstrekking
   naam: omvat
   ggm_match: geen
-  bronnen:
-  - 2026-vng-gemma-2026-10-02
-  vindplaats: GEMMA-relatie id-1f944d4b-41d8-40cb-be75-8706806e07cc
+  gemma_relatie: id-1f944d4b-41d8-40cb-be75-8706806e07cc
 - soort: aggregatie
   naar: nederlanderschap-diensten
   naam: omvat
   ggm_match: geen
-  bronnen:
-  - 2026-vng-gemma-2026-10-02
-  vindplaats: GEMMA-relatie id-21417578-47f0-4f78-a4ba-50b4ee134815
+  gemma_relatie: id-21417578-47f0-4f78-a4ba-50b4ee134815
 - soort: aggregatie
   naar: verkiezingen-gerelateerde-diensten
   naam: omvat
   ggm_match: geen
-  bronnen:
-  - 2026-vng-gemma-2026-10-02
-  vindplaats: GEMMA-relatie id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
+  gemma_relatie: id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
 - soort: aggregatie
   naar: verklaring-omtrent-gedrag-aanvragen
   naam: omvat
@@ -315,9 +305,11 @@ beslist:
     generiek: false
     typeregel: 17
   bronnen:
-  - 2026-vng-gemma-2026-10-02
+  - 2026-vng-gemma-bedrijfsfuncties
+  - 2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-gemma-2026-10-02
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
   herkomst: rijksregelgeving
