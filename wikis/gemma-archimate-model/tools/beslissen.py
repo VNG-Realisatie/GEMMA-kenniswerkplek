@@ -586,9 +586,9 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     _beleidsdomeinen(ctx, alle, uitkomsten, res)
     begripnamen = {d["begrip"].lower(): b for b, (_, d) in alle.items()}
     for oid, onderwerp in onderwerpen.items():
-        if onderwerp.get("laag") not in (None, *gam_gemeen.GEDEELD):
-            res.fouten.append(f"onderwerp {oid}: laag '{onderwerp['laag']}'; kies {' of '.join(gam_gemeen.GEDEELD)}, of "
-                              "laat haar weg bij een eigen onderwerp")
+        if onderwerp.get("niveau") not in gam_gemeen.NIVEAUS:
+            res.fouten.append(f"onderwerp {oid}: niveau '{onderwerp.get('niveau')}'; kies {', '.join(gam_gemeen.NIVEAUS)} "
+                              "(regel Thuishoren)")
         _besluiten_onderwerp(oid, onderwerp, begripnamen, res)
     if any(u["paginatype"] in ("product", "dienst") for u in elementen.values()) \
             and (wiki_root / "gemma" / "gemma_parsed.json").exists():

@@ -11,7 +11,7 @@ metadata:
 
 # Skill wiki-intake
 
-Doel: laag 2 van de bronnen vullen. De index is een **technisch hulpmiddel om context te sparen**: een Agent leest eerst de index (enkele honderden woorden) om te kiezen welke bron en welke passage ertoe doet, en leest daarna alleen die regels in laag 1. De index is **geen schakel in de herleidbaarheid**: pagina's verwijzen via de domein-lens (laag 3) rechtstreeks naar de tekst in `sources/raw/`, nooit naar de index. Waarom de index deze inhoud heeft: `docs/onderbouwing.md` 5.19.
+Doel: laag 2 van de bronnen vullen. De index is een **technisch hulpmiddel om context te sparen**: een Agent leest eerst de index (enkele honderden woorden) om te kiezen welke bron en welke passage ertoe doet, en leest daarna alleen die regels in laag 1. De index is **geen schakel in de herleidbaarheid**: pagina's verwijzen via de bronduiding (laag 3) rechtstreeks naar de tekst in `sources/raw/`, nooit naar de index. Waarom de index deze inhoud heeft: `docs/onderbouwing.md` 5.19.
 
 ## Stappen
 
@@ -50,6 +50,6 @@ Sectie *Begrippen*: alleen termen die de bron definieert, regelt of als eigen be
 
 ## Grenzen
 
-- Geen wiki-kennis: niets over elementen, modellen of de rol van de bron in één wiki. Dat hoort in de domein-lens (laag 3, `wiki-ingest`).
-- Geen citaten of interpretaties waarop een pagina steunt: pagina's citeren laag 1 via de domein-lens.
+- Geen wiki-kennis: niets over elementen, modellen of de rol van de bron in één wiki. Dat hoort in de bronduiding (laag 3, `wiki-ingest`).
+- Geen citaten of interpretaties waarop een pagina steunt: pagina's citeren laag 1 via de bronduiding.
 - Eén index per bron, gedeeld door alle wiki's; een bestaande index vul je aan, je maakt geen tweede.

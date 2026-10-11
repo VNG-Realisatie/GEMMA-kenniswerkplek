@@ -86,7 +86,7 @@ Achtergrond per onderdeel: `docs/onderbouwing.md` (sectienummers tussen haakjes)
    - `run start --onderwerp` legt de bronlijst van de onderwerppagina vast; INGEST en ASSESS krijgen alleen die bronnen;
    - `lint` voor skillnamen, voorvoegsels, frontmatter, `requires-skills` en verboden verwijzingen van gedeelde naar wiki-specifieke onderdelen (5.4, 5.7);
    - zonder MediaWiki-afhankelijkheid (5.18): Markdown-validatie (frontmatter per paginatype, relatieve links, statusovergangen), `promote plan|apply`, `log.md` en `voortgang.md`; writers voor ArchiMate Open Exchange en CSV pas bij een concrete `exports:`-behoefte (Klus 4); pywikibot alleen via de extra `mediawiki`. Test met een tweede sjabloon `wikis/_template-md` (type `curation`) naast het bestaande `wikis/_template` (type `sync`).
-2. Schrijf de gedeelde vaardigheden in `.agents/skills/`: `wiki-intake` (laag 2, controle van de conversie), `wiki-ingest` (laag 3, domein-lens), `wiki-publish` (sync), `wiki-kennis-ingest` (knowledge-base) (5.7). Alleen standaardvelden plus `metadata`; `wiki-publish` krijgt `disable-model-invocation: true` en `agents/openai.yaml` met `allow_implicit_invocation: false`.
+2. Schrijf de gedeelde vaardigheden in `.agents/skills/`: `wiki-intake` (laag 2, controle van de conversie), `wiki-ingest` (laag 3, bronduiding), `wiki-publish` (sync), `wiki-kennis-ingest` (knowledge-base) (5.7). Alleen standaardvelden plus `metadata`; `wiki-publish` krijgt `disable-model-invocation: true` en `agents/openai.yaml` met `allow_implicit_invocation: false`.
 3. Schrijf de gedeelde werkstromen `wiki-curatie-update` (curation: beoordelingen, scripts voor afleiden en renderen, akkoord in de chat; 5.13c) en `wiki-sync-edit` (sync) met stappen, rollen, uitbreidingspunten en de gate (5.8).
 4. Schrijf tests voor het gereedschap, met ten minste deze gevallen voor de gate:
    - voorstel op `nee` → weigeren;
@@ -117,7 +117,7 @@ Achtergrond per onderdeel: `docs/onderbouwing.md` (sectienummers tussen haakjes)
 
 1. Kopieer `wikis/_template` naar `wikis/gemma-online` (type `sync`, kale werkkopie). Vul `AGENTS.md` (domein, taal, stijl, doelgroep, naamgeving) en `wiki.yaml` (site, namespaces, gekozen smaak, bewaartermijn).
 2. Haal de content op met `llmwiki pull` en commit die.
-3. Optioneel, alleen voor zover een concreet probleem daarom vraagt: een losstaande curatie-wiki (bv. `wikis/gemma-begrippen`, type `curation` met een ingevuld `exports:`-blok voor ArchiMate) voor gestructureerde begrippenopbouw — géén onderdeel van `wikis/gemma-online` zelf (5.18: een sync-wiki heeft geen domein-lens). Voeg pas dan GEMMA-specifieke vaardigheden (`gemma-bo`, `gemma-archimate`), een schema en exportscripts toe, in die curatie-wiki.
+3. Optioneel, alleen voor zover een concreet probleem daarom vraagt: een losstaande curatie-wiki (bv. `wikis/gemma-begrippen`, type `curation` met een ingevuld `exports:`-blok voor ArchiMate) voor gestructureerde begrippenopbouw — géén onderdeel van `wikis/gemma-online` zelf (5.18: een sync-wiki heeft geen bronduiding). Voeg pas dan GEMMA-specifieke vaardigheden (`gemma-bo`, `gemma-archimate`), een schema en exportscripts toe, in die curatie-wiki.
 4. Schrijf zo nodig een dunne wiki-Workflow bovenop `wiki-sync-edit` (sync) die GEMMA-specifieke controles toevoegt op het uitbreidingspunt VALIDATE (5.8).
 5. Draai `llmwiki harness sync` en voer de pariteitstest uit in alle vijf omgevingen (sectie 8). Sluit de verificatiepunten V1 tot en met V10 af en werk `docs/onderbouwing.md` bij met de uitkomsten.
 

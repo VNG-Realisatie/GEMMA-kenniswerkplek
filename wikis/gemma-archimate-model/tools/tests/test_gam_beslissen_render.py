@@ -24,7 +24,7 @@ def wiki(archimate_repo):
         pad.write_text(f"---\nid: {bron_id}\ntype: bronanalyse\nonderwerp: test\nbronnen: [{bron_id}]\n---\n\n# {bron_id}\n\n"
                        f"Bron: [tekst](../../../../../sources/raw/{bron_id}.md)\n", encoding="utf-8")
     beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/test.yaml",
-                        {"naam": "Test", "status": "in-behandeling", "omschrijving": ["Een onderwerp."], "bronnen": bronnen})
+                        {"naam": "Test", "niveau": "eigen", "status": "in-behandeling", "omschrijving": ["Een onderwerp."], "bronnen": bronnen})
     (wiki / "beoordelingen/begrippen").mkdir(parents=True)
     return wiki
 
@@ -757,7 +757,7 @@ def test_signalen_voor_een_model_over_alle_onderwerpen():
     uitkomsten["gezindte"] = {"soort": "synoniem"}
     uitkomsten["akte"] = {"soort": "verwijzing"}
     onderwerpen = {o: {"naam": o.capitalize()} for o in ("lijkbezorging", "burgerzaken")}
-    onderwerpen["besluitvorming"] = {"naam": "Besluitvorming", "laag": "thematisch"}   # thuis in een gedeeld onderwerp
+    onderwerpen["besluitvorming"] = {"naam": "Besluitvorming", "niveau": "thematisch"}   # thuis in een gedeeld onderwerp
     tekst = "\n".join(signalen.modulariteit(alle, uitkomsten, onderwerpen))
     assert "'grafplaats' is naam of synoniem van graf, grafplaats" in tekst and "regel Eén element" in tekst
     assert "gezindte" not in tekst
@@ -772,7 +772,7 @@ def test_signalen_voor_een_model_over_alle_onderwerpen():
 
 def test_begrippenlijst_en_voortgang_tonen_thuisonderwerp_en_samenhang(wiki):
     beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/ander.yaml",
-                        {"naam": "Ander", "status": "in-behandeling", "omschrijving": ["Een ander onderwerp."], "bronnen": []})
+                        {"naam": "Ander", "niveau": "eigen", "status": "in-behandeling", "omschrijving": ["Een ander onderwerp."], "bronnen": []})
     _schrijf(wiki, "beschikking", _bo(onderwerpen=["ander", "test"]))
     _schrijf(wiki, "behandelen-aanvraag", _proces())
     res = _beslissen(wiki)

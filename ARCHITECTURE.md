@@ -22,6 +22,13 @@ De soorten vormen samen een keten. Wat de ene wiki oplevert, wordt een bron voor
 Beleidskader (curation) → Begrippen & ArchiMate (curation + exports) → Informatiemodellen (curation + exports) → GEMMA Online (sync)
 ```
 
+Wiki's wisselen nooit direct uit. Wat een wiki van een andere nodig heeft, komt als bron in `sources/`; wat een wiki aan een andere te melden heeft, gaat als terugmelding. Van een externe site zijn er daarom twee kopieën, elk met een eigen doel:
+
+| Kopie | Waar | Doel |
+|---|---|---|
+| Momentopname | `sources/` (laag 1, nooit bewerkt) | bron of matchdoel voor elke wiki, ook om conflicten met de site te vinden |
+| Werkkopie | `wikis/<sync-wiki>/content/`, een gedeeltelijke sync van de redactieomgeving | pagina's op de site bewerken en na akkoord publiceren |
+
 ### Gereedschap bij een sync-wiki
 
 Een sync-wiki gebruikt twee soorten toegang tot de externe site, elk voor een ander moment:
@@ -39,16 +46,37 @@ Alle bronnen staan één keer centraal in de repository en worden door alle wiki
 
 | Laag | Plaats | Wat | Voor wie |
 |---|---|---|---|
-| 1. Origineel | `sources/raw/` | Het document (pdf, docx) en een Markdown-versie met dezelfde naam. Wordt nooit gewijzigd | Alle wiki's |
+| 1. Origineel | `sources/raw/` voor documenten en pagina's, `sources/modellen/` voor modellen en lijsten | Het origineel met een omzetting met dezelfde naam: Markdown bij een document (pdf, docx, html), JSON bij een model of lijst (ArchiMate, XMI, een productenlijst). Wordt nooit gewijzigd | Alle wiki's |
 | 2. Technische index | `sources/index/<bron>.md` | Gegevens, korte samenvatting, trefwoorden, begrippen en een inhoudsopgave met regelnummers. Alleen voor de AI, om context te sparen (skill `wiki-intake`) | Alle wiki's |
-| 3. Domein-lens | `wikis/<wiki>/<map>/<onderwerp>/<bron>.md` (de map staat in `wiki.yaml`, bijv. `bronnen/` of `bronanalyses/`) | Wat deze bron betekent voor dit domein, met uittreksels, en onder de titel links naar laag 1 | Eén wiki |
+| 3. Bronduiding | `wikis/<wiki>/<map>/<onderwerp>/<bron>.md` (de map staat in `wiki.yaml`) | Wat deze bron betekent vanuit het perspectief van de wiki, met uittreksels, en onder de titel links naar laag 1 | Eén wiki |
 
-**Herleidbaarheid loopt via links, van pagina naar brontekst:** pagina → domein-lens → laag 1. Elke verwijzing naar een bron op een pagina is een link naar de domein-lens van die bron, ook in tabellen; de domein-lens linkt naar de tekst, het origineel en de online bron. De technische index zit niet in deze keten: een pagina linkt nooit naar laag 2.
+**Herleidbaarheid loopt via links, van pagina naar brontekst:** pagina → bronduiding → laag 1. Elke verwijzing naar een bron op een pagina is een link naar de bronduiding van die bron, ook in tabellen; de bronduiding linkt naar de tekst, het origineel en de online bron. De technische index zit niet in deze keten: een pagina linkt nooit naar laag 2.
+
+**Rol en vorm van een bron.** De vorm (document of model) bepaalt alleen de map in laag 1. Welke rol een bron heeft, bepaalt de wiki, in haar bronduiding:
+
+| Rol | Wat het doet | Voorbeeld |
+|---|---|---|
+| Bron voor de inhoud | Zegt welke begrippen er zijn en wat ze betekenen | een wet, een richtlijn |
+| Bron voor de methode | Zegt hoe je modelleert | de beschrijving van een kennismodel |
+| Matchdoel | Een bestaand model of een bestaande site waartegen de wiki haar inhoud toetst en koppelt; geen bron voor een claim, want dan onderbouwt een model zichzelf | een architectuurmodel, een gegevensmodel |
+
+Eén bron kan twee rollen hebben, zoals een productenlijst die zegt welke producten er zijn én waartegen de wiki matcht.
+
+Nog niet gebouwd: `sources/modellen/` en de omzetting naar JSON; de modellen staan nog in `sources/raw/`, en wiki's zetten ze zelf om.
 
 Zo voorkomen we dat een wiki verzuipt in alle bronnen:
 - **Filter per wiki.** In `wiki.yaml` staat welke thema's (tags) een wiki gebruikt. Andere bronnen ziet de AI voor die wiki niet.
 - **Werk vanuit een onderwerp.** Elke taak begint bij een onderwerppagina (`onderwerpen/<thema>.md`). Die pagina noemt de bronnen die ertoe doen; alleen die leest de AI.
 - **Eerst de index, dan de passage.** De AI leest eerst de technische index en daarna alleen de passages uit laag 1 die ertoe doen, op regelnummer.
+
+### Inhoud en indelingen (curatie)
+
+Een curatie-wiki bouwt haar inhoud op uit bronnen en toetst die daarna aan matchdoelen. Ze ordent de inhoud in indelingen van twee soorten:
+
+- **Ontstaan uit de bronnen**: indelingen die de wiki zelf maakt terwijl ze bronnen verwerkt, zoals de onderwerpen.
+- **Overgenomen uit een model**: een bestaande indeling, letterlijk overgenomen, zonder eigen oordeel en zonder bron. Een element hangt erin met de relatie uit het model.
+
+Een element staat in één of meer indelingen, en indelingen mogen overlappen. Ze zijn niet leidend: wat uit de bronnen komt, kan een indeling later doen veranderen.
 
 ## 2. Principes
 
@@ -71,12 +99,13 @@ llm-wikis/                    open deze map in Obsidian
 ├── docs/                     kluswijzer en onderbouwing
 │   └── plannen/              plannen voor de hele repository: <datum>-<titel>.md
 ├── sources/
-│   ├── raw/                  originelen + Markdown-versie   (nooit wijzigen)
+│   ├── raw/                  documenten: origineel + Markdown   (nooit wijzigen)
+│   ├── modellen/             modellen en lijsten: origineel + JSON   (nooit wijzigen)
 │   └── index/                één intakepagina per bron
 ├── .agents/skills/           gedeelde vaardigheden en de gedeelde werkstroom
 ├── tools/llmwiki/              gereedschap
 └── wikis/
-    ├── gemma/                type sync: GEMMA Online, kale werkkopie
+    ├── gemma-online/         type sync: GEMMA Online, kale werkkopie
     │   ├── AGENTS.md · wiki.yaml
     │   ├── content/          de MediaWiki-pagina's, directe werkkopie
     │   ├── revisies.json     conflictbasis: titel → laatst bekende revisie
@@ -127,7 +156,7 @@ De redacteur vraagt: *"Verwerk deze nota voor onderwerp lijkbezorging."* De wiki
 
 | Stap | Wat gebeurt er | Wie |
 |---|---|---|
-| Bronnen | Origineel en Markdown-versie in `sources/raw/`, intake in `sources/index/`, domein-lens (bronanalyse) in de wiki | Gereedschap en AI |
+| Bronnen | Origineel en omzetting in `sources/raw/` of `sources/modellen/`, intake in `sources/index/`, bronduiding in de wiki | Gereedschap en AI |
 | Beoordelen | Per begrip een beoordeling (YAML): kenmerken met bron, naam, definitie, beschrijving, match op betekenis, relaties | AI |
 | Afleiden en renderen | Type en status uit de beslistabel, letterlijke modelgegevens, harde controles; daarna alle pagina's en een overzicht van wat wacht op akkoord | Scripts van de wiki |
 | Voorleggen | Wat de scripts als open markeren, één vraag tegelijk in de chat; het antwoord wordt een besluit in de beoordeling | AI en redacteur |
@@ -169,8 +198,9 @@ Bij de eerste vraag in een nieuwe sessie controleert de AI of de werkplek in ord
 - Een gedeelde vaardigheid bevat nooit kennis van één specifieke wiki.
 - Vaardigheden van een wiki beginnen met de naam van die wiki (`gemma-…`). Gedeelde vaardigheden beginnen met `wiki-`.
 - Plaats geen `CLAUDE.md` in de repository: daarmee negeert Claude Code de huisregels.
-- Bestanden in `sources/raw/` worden nooit gewijzigd. Een nieuwe versie van een document is een nieuwe bron.
+- Bestanden in `sources/raw/` en `sources/modellen/` worden nooit gewijzigd. Een nieuwe versie van een document of model is een nieuwe bron.
 - Een wiki verwijst niet naar pagina's van een andere wiki. Wat de volgende wiki in de keten nodig heeft, wordt na goedkeuring als bron toegevoegd aan `sources/`.
+- Informatie die bij elke wijziging bijgehouden moet worden (tellingen, samenvattingen van lijsten, wijzigingen per release), komt pas in een pagina of overzicht na een besluit van de redacteur, en alleen als het gereedschap of de AI haar nodig heeft. Zo blijft er weinig te lezen en te onderhouden.
 - Een wiki mag een eigen `ARCHITECTURE.md` hebben voor haar eigen opzet (mappen, paginatypen, vaardigheden, gereedschap). De wiki-`AGENTS.md` blijft kort en verwijst ernaar.
 
 ### Soorten vaardigheden en gereedschap
@@ -215,6 +245,8 @@ De map `scripts/` in de hoofdmap is alleen voor het eenmalig inrichten van de we
 | Context | Wat de AI op dit moment "ziet" |
 | State | Waar een taak staat: bij een curatie-wiki in de werkboom (beoordelingen), bij een sync-wiki in het kladblok |
 | Resultaat | Bijgewerkte pagina's, verslagen en na akkoord de publicatie |
+| Bronduiding | Wat een bron betekent vanuit het perspectief van één wiki (laag 3) |
+| Matchdoel | Een bestaand model of een bestaande site waartegen een wiki haar inhoud toetst en koppelt; geen bron voor een claim |
 
 ## 7. Verder lezen
 

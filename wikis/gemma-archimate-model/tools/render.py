@@ -26,7 +26,7 @@ alleen met ja, Generalisatie, Specialisaties, GGM-componenten, Tegenhanger, Rela
 Afstemming met GGM met de GGM-terugmeldingen, Afstemming met GEMMA, Besluiten redacteur). Een bron heet in links naar
 haar `korte_titel` uit de bronanalyse.
 
-Wat de render garandeert: elke bronverwijzing is een link naar de bronanalyse (de domein-lens; een modelbron linkt
+Wat de render garandeert: elke bronverwijzing is een link naar de bronanalyse (de bronduiding; een modelbron linkt
 naar sources/raw), relaties staan in beide richtingen, er staan geen verwijzingen in de frontmatter en geen links naar
 tools of regels, en elke alinea staat op één regel. Twee keer renderen geeft hetzelfde resultaat.
 

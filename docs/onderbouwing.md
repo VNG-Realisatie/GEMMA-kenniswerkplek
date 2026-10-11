@@ -122,7 +122,7 @@ Frontmatter buiten de specificatie:
 
 | Concept | Definitie in deze architectuur | Wie levert het |
 |---|---|---|
-| **LLM-wiki** | Een zelfstandige eenheid bestaande uit: content, wiki-Rules, wiki-Skills (waaronder Workflows), een wiki-manifest en, waar nodig, wiki-schemas en -scripts. Is van soort `sync` (werkkopie van één MediaWiki-site, zonder domein-lens of curatiestatus), `curation` (domein-lens op de centrale bronnen, met pagina's en optionele curatiestatus, optioneel een exportdoel) of `knowledge-base` (ongestructureerde kennisopbouw, geen curatiestatus, geen run/gate); zie 5.18. | Repository (K) |
+| **LLM-wiki** | Een zelfstandige eenheid bestaande uit: content, wiki-Rules, wiki-Skills (waaronder Workflows), een wiki-manifest en, waar nodig, wiki-schemas en -scripts. Is van soort `sync` (werkkopie van één MediaWiki-site, zonder bronduiding of curatiestatus), `curation` (bronduiding op de centrale bronnen, met pagina's en optionele curatiestatus, optioneel een exportdoel) of `knowledge-base` (ongestructureerde kennisopbouw, geen curatiestatus, geen run/gate); zie 5.18. | Repository (K) |
 | **Generieke laag (core)** | Alles wat voor elke LLM-wiki geldt: repository-Rules, generieke Skills, de generieke Workflow, generieke schemas en het deterministische Python-pakket (pull, push, validatie, run-State). Kent geen enkele specifieke wiki. | Repository (K) |
 | **Wiki-laag** | Domeinspecifieke Rules, Skills, schemas, scripts, content en bronnen van één LLM-wiki. Mag de generieke laag gebruiken, nooit andersom. | Repository (K) |
 | **Rules** | Principes, beperkingen en instructies die tijdens uitvoering altijd gelden. Vorm: AGENTS.md. Klein houden; procedures horen in Skills. | Repository (S) |
@@ -900,7 +900,7 @@ Voor curatie-wiki's is dit voorstel vervangen door 5.13c; voor sync-wiki's met `
 **Keuze.** De AI levert alleen het oordeel per begrip, in een beoordeling (YAML) in de werkboom. Scripts van de wiki leiden daaruit af wat vast kan (type uit de beslistabel, status, letterlijke modelgegevens, paginapad; harde controles en zachte signalen) en maken alle leesbare pagina's en overzichten, deterministisch. De redacteur beoordeelt die pagina's (preview en Source Control) en een overzicht van wat wacht op akkoord, en geeft akkoord met het woord AKKOORD in de chat; `llmwiki promote apply` zet daarna de status en schrijft `log.md`, na de klik in het harness. Het akkoord hoort bij de inhoudshash van de beoordeling, niet van de pagina.
 
 - Geen run en geen kladblok voor curatie: de werkboom is de toestand, zichtbaar in Git. Hervatten is `git status`; afbreken is de wijzigingen terugdraaien.
-- Wat het render-script garandeert (links naar de domein-lens, relaties in beide richtingen, geen verwijzingen in de frontmatter, de vorm), is geen regel meer voor de AI. De regels van een wiki gaan over het oordeel en hebben een naam in plaats van een code.
+- Wat het render-script garandeert (links naar de bronduiding, relaties in beide richtingen, geen verwijzingen in de frontmatter, de vorm), is geen regel meer voor de AI. De regels van een wiki gaan over het oordeel en hebben een naam in plaats van een code.
 - Voorleggen gaat in de chat, één vraag tegelijk, met context, argumenten en advies; het antwoord wordt een besluit in de beoordeling dat de redenen noemt die het dekt. Zo heeft een besluit van de redacteur een vaste route naar `review`.
 - De pre-commit-controles: `render-check` (elke pagina gelijk aan de render van de beoordelingen) en `goedgekeurd-guard` (elke `goedgekeurd` met een regel in `log.md` met de inhoudshash).
 
@@ -1122,7 +1122,7 @@ Uitvoer: een korte tekst in gewone taal en, met `--json`, een machineleesbare st
 
 ### 5.18 Soorten wiki's: sync, curatie en knowledge-base
 
-**Correctie (deze versie).** Eerdere versies van dit document kenden drie typen A/B/C, waarbij "type A" (sync) óók de domein-lens (`onderwerpen/`, `bronnen/<onderwerp>/`) en het `records/`-archief van curatie kreeg, en "hybride" een eigen vierde letter-variant was. Onderzoek tijdens de bouw van Klus 2/3, tegen een al bestaande, in productie zijnde buursetup (een reëel MediaWiki-beheerproject met een aparte kennisbank ernaast, bewust van elkaar gescheiden), liet zien dat dit twee aparte problemen samenvoegde die niets met elkaar te maken hebben: (1) een site beheren (direct bewerken, git-diff-review, publiceren) en (2) kennis opbouwen (met of zonder formele curatiestatus). Vandaar de herziening hieronder. Wiki-soorten heten voortaan bij naam (`sync`/`curation`/`knowledge-base`), nooit als letter — dat botste leesbaar met "Model A–D" (4) en "smaak A/B" (5.13).
+**Correctie (deze versie).** Eerdere versies van dit document kenden drie typen A/B/C, waarbij "type A" (sync) óók de bronduiding (`onderwerpen/`, `bronnen/<onderwerp>/`) en het `records/`-archief van curatie kreeg, en "hybride" een eigen vierde letter-variant was. Onderzoek tijdens de bouw van Klus 2/3, tegen een al bestaande, in productie zijnde buursetup (een reëel MediaWiki-beheerproject met een aparte kennisbank ernaast, bewust van elkaar gescheiden), liet zien dat dit twee aparte problemen samenvoegde die niets met elkaar te maken hebben: (1) een site beheren (direct bewerken, git-diff-review, publiceren) en (2) kennis opbouwen (met of zonder formele curatiestatus). Vandaar de herziening hieronder. Wiki-soorten heten voortaan bij naam (`sync`/`curation`/`knowledge-base`), nooit als letter — dat botste leesbaar met "Model A–D" (4) en "smaak A/B" (5.13).
 
 Een LLM-wiki heeft niet altijd een MediaWiki-site als bron van waarheid. De architectuur kent drie soorten. Ze delen Rules, Skills, run-State, gate en de centrale bronnen (5.19); ze verschillen in doel, contentformaat en de laatste fase.
 
@@ -1152,7 +1152,7 @@ Keuzes:
 - **Bij curatie en knowledge-base zijn de pagina's het archief.** Geen aparte records voor bronnen en kandidaten — dubbele vastlegging. Het logboek is `log.md`. Een sync-wiki gebruikt óók `log.md` (één regel per publicatie, met titel en revisie) — geen apart `records/`-archief meer; de conflictbasis is `revisies.json`, geen `.meta.json`-sidecar per pagina (5.12, 5.13).
 - **`knowledge-base` gebruikt geen run/gate.** Er is niets om te publiceren; `llmwiki run start` weigert expliciet voor dit type (in plaats van stil iets verkeerds te doen). Review is een gewone `git diff`/commit.
 - **De Obsidian-vault is de repository-root.** Alleen dan werken relatieve links van een wiki naar `sources/` in Obsidian; [Inferred] Obsidian opent geen links naar bestanden buiten de vault. `.obsidian/app.json` in de root zet Markdown-links op relatief pad en sluit `tools/` en `tests/` uit via de uitsluitfilters. [Inferred] Mappen die met een punt beginnen (`.work`, `.agents`, `.claude`) toont Obsidian standaard niet.
-- **Bronnen per onderwerp (curatie).** Een curatie-wiki deelt zijn bronanalyses in naar onderwerp: `bronnen/<onderwerp>/<bron-id>.md`, waarbij `<onderwerp>` gelijk is aan de id van `onderwerpen/<onderwerp>.md`. Een bron die bij meer onderwerpen hoort, staat bij het hoofdonderwerp; andere onderwerppagina's linken ernaar. De mapnamen zijn standaardwaarden: een wiki kiest eigen namen via `page_types.<type>.dir` in `wiki.yaml` (bijv. `begrippen/` en `bronanalyses/` in `gemma-archimate-model`). `llmwiki run start --onderwerp` zoekt de onderwerppagina in de map van paginatype `onderwerp`.
+- **Bronnen per onderwerp (curatie).** Een curatie-wiki deelt zijn bronduidingen in naar onderwerp: `bronnen/<onderwerp>/<bron-id>.md`, waarbij `<onderwerp>` gelijk is aan de id van `onderwerpen/<onderwerp>.md`. Een bron die bij meer onderwerpen hoort, staat bij het hoofdonderwerp; andere onderwerppagina's linken ernaar. De mapnamen zijn standaardwaarden: een wiki kiest eigen namen via `page_types.<type>.dir` in `wiki.yaml` (bijv. `begrippen/` en `bronanalyses/` in `gemma-archimate-model`). `llmwiki run start --onderwerp` zoekt de onderwerppagina in de map van paginatype `onderwerp`.
 - **Paginatype-schema.** Staat bij een paginatype in `wiki.yaml` een `schema`, dan valideert `llmwiki validate --schema page` de frontmatter daartegen. Relatieve `$ref`s worden opgelost vanuit de map van het schema, zodat een wiki gedeelde definities in één bestand kan zetten. Gestagede pagina's worden met `--run <run-id>` beoordeeld op hun doelpad uit `changeset.json` (id, relatieve links; de andere pagina's uit dezelfde changeset gelden als bestaand).
 - **Promotie per status.** `promote apply` keurt alleen pagina's goed die de Agent op `review` zette. Een `kandidaat` (nog voor te leggen) wordt ongewijzigd geschreven, zonder logregel; een gestagede `goedgekeurd` weigert het plan.
 
@@ -1185,7 +1185,7 @@ llm-wikis/                          Git-root = Obsidian-vault
         ├── log.md                  logboek, alleen aanvullen, door de CLI
         ├── voortgang.md            gegenereerd overzicht
         ├── onderwerpen/            ingang voor elke taak: <thema>.md
-        ├── bronnen/<onderwerp>/    laag 3: domein-lens per bron
+        ├── bronnen/<onderwerp>/    laag 3: bronduiding per bron
         ├── kandidaten/             met curatiestatus
         ├── export/                 alleen met exports:-blok, alleen via de gate
         ├── schemas/ · mappings/    paginamodellen; vertaling naar exportdoelen
@@ -1320,17 +1320,17 @@ Gevolgen:
 
 | Laag | Plaats | Inhoud | Wie schrijft | Gedeeld |
 |---|---|---|---|---|
-| 1. Ruwe originelen | `sources/raw/<bron-id>.<ext>` en `sources/raw/<bron-id>.md` | Origineel (pdf, docx) en de Markdown-conversie met dezelfde naam | `llmwiki source add` (script) | Ja |
+| 1. Ruwe originelen | `sources/raw/<bron-id>.<ext>` en `sources/raw/<bron-id>.md`; voor modellen en lijsten `sources/modellen/<bron-id>.<ext>` en `sources/modellen/<bron-id>.json` (zie 5.19a) | Origineel (pdf, docx, html; ArchiMate, XMI, lijst) en de omzetting met dezelfde naam (Markdown of JSON) | `llmwiki source add` (script) | Ja |
 | 2. Technische index | `sources/index/<bron-id>.md` | Gegevens, samenvatting, trefwoorden, begrippen en inhoudsopgave met regelnummers; om context te sparen, geen schakel in de herleidbaarheid | `llmwiki source add` (gegevens, inhoudsopgave) en generieke Skill `wiki-intake` (tekst), één keer per bron | Ja |
-| 3. Domein-lens | `wikis/<key>/<map uit wiki.yaml>/<onderwerp>/<bron-id>.md` (bijv. `bronnen/` of `bronanalyses/`) | Wiki-specifieke analyse en uittreksels met vindplaats, en onder de titel links naar laag 1 | Wiki-Skill tijdens INGEST | Nee |
+| 3. Bronduiding | `wikis/<key>/<map uit wiki.yaml>/<onderwerp>/<bron-id>.md` (bijv. `bronnen/` of `bronanalyses/`) | Wiki-specifieke analyse en uittreksels met vindplaats, en onder de titel links naar laag 1 | Wiki-Skill tijdens INGEST | Nee |
 
 Regels:
 - **Bron-id** `<jaar>-<uitgever>-<korte-titel>`, kleine letters en koppeltekens; gelijk in alle drie lagen.
-- **Herleidbaarheid loopt via links, van pagina naar brontekst.** Elke verwijzing naar een bron op een pagina is een relatieve link naar de domein-lens van die bron; de domein-lens heeft direct onder de titel een regel met links naar laag 1 (tekst, origineel, online), gemaakt met `llmwiki source bronregel --schrijf`. De keten is dus pagina → domein-lens → laag 1. Laag 2 zit niet in die keten: een bron-id in de frontmatter is voor het gereedschap, een link is voor de lezer.
+- **Herleidbaarheid loopt via links, van pagina naar brontekst.** Elke verwijzing naar een bron op een pagina is een relatieve link naar de bronduiding van die bron; de bronduiding heeft direct onder de titel een regel met links naar laag 1 (tekst, origineel, online), gemaakt met `llmwiki source bronregel --schrijf`. De keten is dus pagina → bronduiding → laag 1. Laag 2 zit niet in die keten: een bron-id in de frontmatter is voor het gereedschap, een link is voor de lezer.
 - **Laag 1 is onveranderlijk.** Alles staat gewoon in Git, dus ook de pdf's. De pre-commit-hook staat in `sources/raw/` alleen toevoegen toe. Een nieuwe versie van een document krijgt een nieuw bron-id. [Inferred] De repository groeit met elke pdf; bij grote aantallen is Git LFS later zonder structuurwijziging in te voeren.
 - **Conversie is deterministisch.** `llmwiki source add <bestand>` kopieert het origineel, zet het om naar Markdown, berekent een hash en weigert als het bron-id al bestaat. Het zet ook de inhoudsopgave in de index. `wiki-intake` controleert daarna de conversie steekproefsgewijs (koppen, tabellen) en meldt problemen in plaats van de conversie te herschrijven.
 - **Laag 2 is generiek.** `wiki-intake` bevat geen wiki-kennis (regel 1 uit 5.4). Het schema `source-index.schema.json` in de core legt de frontmatter vast: id, titel, uitgever, datum, versie, pad en hash van laag 1, tags. Wat in de tekst van de index staat en waarom: zie *Laag 2 als technische index* hieronder.
-- **Hergebruik.** Bestaat `sources/index/<bron-id>.md` al, dan slaat INGEST laag 1 en 2 over en maakt alleen de domein-lens.
+- **Hergebruik.** Bestaat `sources/index/<bron-id>.md` al, dan slaat INGEST laag 1 en 2 over en maakt alleen de bronduiding.
 
 - **Ophalen via URL.** `llmwiki source add --url <url>` haalt een bron op en zet HTML deterministisch om naar Markdown: tekst blijft letterlijk, alleen opmaakruis (scripts, navigatie, voettekst, knoppenteksten) verdwijnt. Bekende weergave-URL's worden eerst omgezet naar de download-URL (bijv. iBabs, `*.bestuurlijkeinformatie.nl`). Pdf's worden omgezet met pymupdf4llm (groep `pdf`, standaard geïnstalleerd met `uv sync`). De intake legt `url`, `url_pagina` en `opgehaald` vast.
 - **Brontype en bronvoorrang.** De intake kent een optioneel `brontype` (`europese-regelgeving`, `rijksregelgeving`, `informatiemodel`, `richtlijn`, `gemeentelijke-regelgeving`, `beleid`, `overig`, `model`). Een wiki kan in `wiki.yaml` `bronvoorrang` een leesvolgorde op brontype vastleggen; `run start --onderwerp` zet de bronlijst in die volgorde. Wat de rangorde inhoudelijk betekent (bijv. voor definities), is een wiki-regel.
@@ -1339,13 +1339,13 @@ Regels:
 - *Herleidbaar via de bestandsnaam.* Het bron-id is in alle drie lagen de bestandsnaam; bestaan en uniciteit zijn een bestandscontrole (`source add` weigert een bestaand id, `validate` zoekt het bestand op).
 - *Contextbescherming.* Een run leest alleen de intakes van de bronnen uit de onderwerppagina; een catalogus met samenvattingen zou steeds helemaal geladen worden.
 - *Een intake is een pagina.* Metadata én tekst (samenvatting, inhoudsopgave), met hetzelfde frontmatter-, schema- en lintgereedschap als elke andere pagina.
-- *Backlinks.* Pagina's linken naar de domein-lens, en de domein-lens naar laag 1; Obsidian toont per domein-lens welke pagina's haar gebruiken. De index heeft geen backlinks nodig.
+- *Backlinks.* Pagina's linken naar de bronduiding, en de bronduiding naar laag 1; Obsidian toont per bronduiding welke pagina's haar gebruiken. De index heeft geen backlinks nodig.
 - *Git.* Gelijktijdige toevoegingen raken verschillende bestanden (geen merge-conflicten); `git log` per bron toont de historie van de intake.
 - *Niet in laag 1.* `sources/raw/` is onveranderlijk en letterlijk; een samenvatting of correctie achteraf kan daar niet staan.
 
 Afgewezen: één catalogusbestand (geen ruimte voor tekst, conflicten, alles laden), de intake in de frontmatter van `raw/<bron-id>.md` (laag 1 is onveranderlijk) en een intake per wiki (dubbel werk, in strijd met principe 3). Nadeel: geen overzicht in één oogopslag; dat levert `llmwiki source list` of een gegenereerd overzicht, dat nooit zelf de bron van waarheid is.
 
-**Laag 2 als technische index (analyse, 2026-09-30).** Laag 2 is een hulpmiddel voor de Agent om context te sparen, geen document voor de lezer en geen schakel in de herleidbaarheid (die loopt van pagina via domein-lens naar laag 1, zie hierboven). Tot deze datum bevatte geen enkele index tekst: `source add` schreef "Nog geen samenvatting." en de bedoelde Skill `wiki-intake` bestond niet.
+**Laag 2 als technische index (analyse, 2026-09-30).** Laag 2 is een hulpmiddel voor de Agent om context te sparen, geen document voor de lezer en geen schakel in de herleidbaarheid (die loopt van pagina via bronduiding naar laag 1, zie hierboven). Tot deze datum bevatte geen enkele index tekst: `source add` schreef "Nog geen samenvatting." en de bedoelde Skill `wiki-intake` bestond niet.
 
 *Omvang van laag 1.* 271 bronnen, samen 2,6 miljoen woorden. De mediaan is 1.700 woorden, 10% is langer dan 20.000 woorden, de grootste 266.000. De Wet op de lijkbezorging telt 8.400 woorden. Eén lange bron helemaal lezen kost meer context dan de rest van een run; kiezen wát je leest is dus de winst.
 
@@ -1367,7 +1367,7 @@ Afgewezen: één catalogusbestand (geen ruimte voor tekst, conflicten, alles lad
 - **Klein houden.** Tekstsecties samen hooguit 400 woorden en de inhoudsopgave hooguit ongeveer 60 rijen: dan leest een Agent de index van tien bronnen voor minder dan de tekst van één middelgrote bron. Bij een bron onder 2.000 woorden volstaan samenvatting en trefwoorden; de tekst zelf lezen is dan goedkoop.
 - **Zoeken met gewone middelen.** Trefwoorden en begrippen staan als platte tekst, zodat zoeken over `sources/index/` (grep, de zoekfunctie van de harness of Obsidian) direct de juiste bron en het regelnummer geeft. Een eigen zoekopdracht in `llmwiki` volgt pas als dat aantoonbaar tekortschiet (principe 7).
 
-*Niet in de index:* interpretatie voor één wiki (dat is de domein-lens), citaten waarop een pagina steunt (pagina's citeren laag 1 via de domein-lens), en links vanuit pagina's (een pagina linkt nooit naar de index).
+*Niet in de index:* interpretatie voor één wiki (dat is de bronduiding), citaten waarop een pagina steunt (pagina's citeren laag 1 via de bronduiding), en links vanuit pagina's (een pagina linkt nooit naar de index).
 
 **Contextbescherming.** Doel: een wiki verzuipt niet in alle bronnen van de repository, en een Sessie laadt alleen wat de taak nodig heeft.
 
@@ -1375,12 +1375,27 @@ Afgewezen: één catalogusbestand (geen ruimte voor tekst, conflicten, alles lad
 |---|---|---|
 | Scoping via tags | `sources.tags` en `sources.exclude_tags` in `wiki.yaml` bepalen welke bronnen een wiki ziet | `llmwiki source list` toont alleen bronnen in scope; `validate` meldt verwijzingen naar bronnen buiten scope |
 | Taakgericht werken | Elke run start vanuit een onderwerppagina: `/opzet2-update onderwerpen/zaakgericht-werken.md`. De `bronnen:`-lijst in die pagina bepaalt welke bronnen worden gelezen | `llmwiki run start --onderwerp` legt de bronlijst vast in de State; INGEST en ASSESS krijgen alleen die bron-id's |
-| Leesvolgorde | Eerst laag 2 (kort), dan laag 3; uit laag 1 alleen de passages die index of domein-lens aanwijzen, op regelnummer | Instructie in `wiki-assess` en de wiki-Rules |
+| Leesvolgorde | Eerst laag 2 (kort), dan laag 3; uit laag 1 alleen de passages die index of bronduiding aanwijzen, op regelnummer | Instructie in `wiki-assess` en de wiki-Rules |
 | Kleine index | Tekstsecties in laag 2 samen hooguit 400 woorden, inhoudsopgave hooguit ongeveer 60 rijen | Instructie in `wiki-intake` |
 
 [Inferred] De Obsidian-vault op root-niveau toont alle bronnen aan de mens; de scoping geldt voor de Agent en de CLI, niet voor wat een redacteur kan openen.
 
 ---
+
+#### 5.19a Bronnen, inhoud en indelingen (2026-10-11)
+
+**Aanleiding.** In de curatie-wiki `gemma-archimate-model` steunden functies op pagina's van GEMMA Online en op het GEMMA-model zelf, terwijl de wiki haar inhoud juist tegen GEMMA toetst. Ook lazen de tools de modellen uit eigen mappen in de wiki, zodat een andere wiki ze niet kon gebruiken. Plan: `wikis/gemma-archimate-model/plannen/2026-10-10-indelingen.md`.
+
+**Keuzes.**
+
+- **Rol los van vorm.** Een bron is voor een wiki een bron voor de inhoud, een bron voor de methode of een matchdoel (ARCHITECTURE.md, *Bronnen: drie lagen*). De vorm bepaalt alleen de map in laag 1. Waarom: wie een model onderbouwt met dat model of met de site die het toont, redeneert in een cirkel; een beschrijving van de methode is wel een bron, want die zegt hoe je modelleert en niet wat er in het model staat.
+- **Modellen in `sources/modellen/`, met JSON.** Een model of lijst wordt omgezet naar JSON, zoals een document naar Markdown; de omzetting zit in `llmwiki`. Waarom: dan kan elke wiki het model lezen, en is de omzetting net als de rest van laag 1 onveranderlijk en herleidbaar.
+- **Twee kopieën van een externe site.** Een momentopname in `sources/` en een werkkopie in de sync-wiki. Waarom: wiki's wisselen alleen uit via bronnen en terugmeldingen (5.18), en de werkkopie is gedeeltelijk en wordt bewerkt, dus geen betrouwbare bron.
+- **Ontstane en overgenomen indelingen.** Een overgenomen indeling komt letterlijk uit het model, zonder oordeel; een ontstane indeling komt uit de bronnen. Overlap mag. Waarom: een bestaande indeling maakt het resultaat herkenbaar, maar mag de inhoud niet sturen; consolidatie volgt later.
+- **Bronduiding in plaats van domein-lens.** Eén kort woord voor laag 3 dat zegt wat het is: wat een bron betekent vanuit het perspectief van de wiki.
+- **Eerst voorleggen wat onderhoud vraagt.** Tellingen en samenvattingen verouderen bij elke wijziging en kosten de redacteur leestijd; ze komen er alleen als het gereedschap of de AI ze nodig heeft.
+
+**Afgewezen.** Redactionele tekst van GEMMA Online als bron voor de inhoud (cirkelredenering); de modellen per wiki omzetten (niet herbruikbaar, dubbel); de hele overgenomen indeling exporteren als standaard (het tussenmodel wordt onoverzichtelijk; wel als optie, om gaten te zien).
 
 ## 6. Portability-analyse
 
@@ -1448,11 +1463,11 @@ Definitie van pariteit in deze architectuur: dezelfde Vraag in elk harness laadt
 | K19 | Drie wiki-soorten (`sync`, `curation`, `knowledge-base`), benoemd naar doel niet naar letter, met één contentformaat per wiki; wat voorheen "hybride" heette is `curation` met een ingevuld `exports:`-blok, geen aparte soort; laatste fase PUBLISH (sync), PROMOTE of PROMOTE + EXPORT (curation), of geen gate (knowledge-base), bepaald door `wiki.yaml` | K |
 | K20 | Curatiestatus in frontmatter; gated statussen alleen geldig met promotieregel in `log.md`, gecontroleerd door validate en pre-commit | K |
 | K21 | MediaWiki als optionele extra van `llmwiki`; ArchiMate Open Exchange en CSV als generieke writers (nog te bouwen bij een concrete `exports:`-behoefte), vertaling van paginatypen per wiki | S + K |
-| K22 | Centrale bronnen in drie lagen (raw, index, domein-lens) met één bron-id; raw onveranderlijk, alles in Git | K |
+| K22 | Centrale bronnen in drie lagen (raw, index, bronduiding) met één bron-id; raw onveranderlijk, alles in Git | K |
 | K23 | Contextbescherming: scoping via tags in `wiki.yaml`, runs starten vanuit een onderwerppagina | K |
 | K24 | Obsidian-vault is de repository-root; overdracht tussen wiki's in de keten via `sources/` | K |
 | K25 | `knowledge-base` is een eigen wiki-soort voor ongestructureerde kennisopbouw (notities, adviezen, ontwerpen, architectuurdocumenten), zonder run/gate; niet hetzelfde als `curation` (gestructureerd, richting een export) en niet een submap van een sync-wiki | K |
-| K26 | Sync-wiki: kale werkkopie zonder domein-lens of `records/`; conflictbasis `revisies.json` (gecommit, pad → titel/revid), geen `.meta.json`-sidecar per pagina; MediaWiki-toegang via MCP (alleen-lezen, altijd hoofddoel) voor verkennen en pywikibot (via `llmwiki pull`/`publish`) voor lezen/schrijven, met een family-bestand in de wiki-map en inloggegevens uit omgevingsvariabelen (5.10a) | K |
+| K26 | Sync-wiki: kale werkkopie zonder bronduiding of `records/`; conflictbasis `revisies.json` (gecommit, pad → titel/revid), geen `.meta.json`-sidecar per pagina; MediaWiki-toegang via MCP (alleen-lezen, altijd hoofddoel) voor verkennen en pywikibot (via `llmwiki pull`/`publish`) voor lezen/schrijven, met een family-bestand in de wiki-map en inloggegevens uit omgevingsvariabelen (5.10a) | K |
 
 ---
 

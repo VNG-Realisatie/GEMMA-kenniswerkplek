@@ -1,6 +1,6 @@
 ---
 name: wiki-curatie-update
-description: Werk een curatie-wiki bij op basis van bronnen — bronnen en bronanalyse, per begrip een beoordeling (het oordeel van de AI), beslissen en renderen door scripts, voorleggen in de chat, en goedkeuren na het woord AKKOORD van de redacteur. Gebruik wanneer de gebruiker vraagt een curatie-wiki bij te werken of een bron te verwerken.
+description: Werk een curatie-wiki bij op basis van bronnen — bronnen en bronduiding, per begrip een beoordeling (het oordeel van de AI), beslissen en renderen door scripts, voorleggen in de chat, en goedkeuren na het woord AKKOORD van de redacteur. Gebruik wanneer de gebruiker vraagt een curatie-wiki bij te werken of een bron te verwerken.
 metadata:
   kind: workflow
   scope: core
@@ -25,7 +25,7 @@ Er is geen run en geen kladblok: alles staat in de werkboom en is te zien in Git
 | # | Stap | Wie | Denkniveau | Hoe |
 |---|---|---|---|---|
 | 1 | Onderwerp | AI met redacteur | middel | Werk altijd vanuit één onderwerp; de wiki-workflow zegt waar het staat |
-| 2 | Bronnen en bronanalyse | AI | middel | `wiki-ingest` (laag 1 en 2, en de domein-lens); kernpunten bespreken met de redacteur |
+| 2 | Bronnen en bronduiding | AI | middel | `wiki-ingest` (laag 1 en 2, en de bronduiding); kernpunten bespreken met de redacteur |
 | 3 | Beoordelen | AI | hoog | De beoordelen-skill van de wiki: per begrip een beoordeling. Lees eerst de besluiten die de redacteur al nam |
 | 4 | Beslissen en renderen | script | hoog | Het beslis-script van de wiki (`curation.beslissen`). Een fout los je op in de beoordeling; een waarschuwing beoordeel je inhoudelijk |
 | 5 | Voorleggen | AI → redacteur | hoog | Wat het beslis-script als open markeert, één vraag tegelijk in de chat: context, argumenten voor en tegen, advies. Het antwoord komt als besluit in de beoordeling; daarna stap 4 |

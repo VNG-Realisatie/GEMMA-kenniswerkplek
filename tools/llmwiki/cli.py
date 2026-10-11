@@ -689,7 +689,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_source_inhoud.add_argument("--schrijf", action="store_true", help="Zet de sectie '## Inhoud' in sources/index/<id>.md")
     p_source_inhoud.set_defaults(func=cmd_source_inhoud)
 
-    p_source_bronregel = source_sub.add_parser("bronregel", help="Linkregel naar laag 1 voor een domein-lens")
+    p_source_bronregel = source_sub.add_parser("bronregel", help="Linkregel naar laag 1 voor een bronduiding")
     p_source_bronregel.add_argument("id")
     p_source_bronregel.add_argument("--van", required=True, help="Pad van de pagina waarin de regel komt")
     p_source_bronregel.add_argument("--schrijf", action="store_true", help="Zet de regel onder de titel van de pagina --van")

@@ -55,7 +55,7 @@ def test_wijziging_na_het_plan_wordt_geweigerd(wiki_met_scripts):
 
 def test_plan_per_onderwerp(wiki_met_scripts):
     wiki, y = wiki_met_scripts
-    beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/ander.yaml", {"naam": "Ander", "bronnen": []})
+    beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/ander.yaml", {"naam": "Ander", "niveau": "eigen", "bronnen": []})
     data = _lees(wiki, "beschikking")
     data["onderwerpen"] = ["ander"]
     _schrijf(wiki, "beschikking", data)

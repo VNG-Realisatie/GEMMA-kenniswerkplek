@@ -34,7 +34,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 
 ### Bronnen
 
-- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron; citaten letterlijk, met vindplaats. Eén uitzondering: de plek van een element in een GEMMA-indeling (de kenmerken *in functie-indeling* en *zelfstandige specialisatie*, en een relatie in de GEMMA-functieketen tussen twee gematchte elementen) steunt op de GEMMA-relatie (`gemma_relatie`), want de wiki volgt die indeling en het model is matchdoel; een pagina op GEMMA Online die het model toont (view, tabel, boom), is daarvoor geen bron. *(script: elk kenmerk `ja` en elk element heeft een bron of een GEMMA-relatie; elke bron bestaat en heeft een bronanalyse; een GEMMA-relatie staat in het model tussen de gematchte elementen)*
+- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron voor de inhoud; citaten letterlijk, met vindplaats. Een matchdoel (het GEMMA-model, GEMMA Online, het GGM) is nooit die bron. Eén uitzondering: de plek van een element in een overgenomen indeling (de kenmerken *in functie-indeling* en *zelfstandige specialisatie*, en een relatie in de GEMMA-functieketen tussen twee gematchte elementen) steunt op de relatie uit het model (`gemma_relatie`), want de wiki neemt die indeling letterlijk over. *(script: elk kenmerk `ja` en elk element heeft een bron of een GEMMA-relatie; elke bron bestaat en heeft een bronanalyse; een GEMMA-relatie staat in het model tussen de gematchte elementen)*
 - **Zonder bron** — Een claim zonder bron wordt een open vraag ("verificatie nodig").
 
 ### Tekst

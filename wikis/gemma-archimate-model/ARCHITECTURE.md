@@ -9,26 +9,32 @@ Deze wiki bouwt een onderbouwd, herleidbaar GEMMA-architectuurmodel van de bedri
 ## 2 Plaats in de keten
 
 ```text
-bronnen                                     matchdoelen
-wetten, informatiemodellen (UPL, RSGB),     GGM · GEMMA-model · UPL · Over GEMMA (kennismodel)
-richtlijnen, beleid, praktijk               indelingslijsten (Iv3, GGM-beleidsdomeinen, GEMMA-domeinen,
-        │                                   procesarchitectuur)
-        ▼                                           │
-   deze wiki  ◄─────────────── matchen ─────────────┘
+bronnen voor de inhoud                      matchdoelen
+wetten, informatiemodellen (UPL, RSGB),     GEMMA-model · GEMMA Online · GGM · UPL
+richtlijnen, beleid, praktijk               overgenomen indelingen (GEMMA, Iv3, GGM, UPL)
+        │                                           │
+        │   bronnen voor de methode                 │
+        │   Over GEMMA · Proceshiërarchie ·         │
+        │   Impact van ketensamenwerking            │
+        ▼          │                                │
+   deze wiki  ◄────┘◄────────────── matchen ────────┘
         │
-        ├──►  export naar Archi (.archimate, met de id's van GEMMA)  ──►  GEMMA-model
+        ├──►  export naar Archi (.archimate, met de id's van GEMMA)  ──►  tussenmodel  ──►  GEMMA-model
         └──►  terugmeldingen  ──►  GGM-beheer · werkgroep procesarchitectuur · GEMMA-team
 ```
 
-- **Bronnen** zeggen welke begrippen er zijn en wat ze betekenen: landelijke regelgeving, informatiemodellen zoals de UPL, richtlijnen, gemeentelijke regelgeving (de VNG-modellen), beleid en praktijk. Hun voorrang staat in de regel Bronvoorrang.
-- **Matchdoelen** zijn modellen waartegen de wiki een element toetst en koppelt: het GGM, het GEMMA-model, Over GEMMA (het GEMMA-kennismodel) en de indelingslijsten. Een matchdoel is geen bron: een claim steunt op een bron, niet op wat we ertegen matchen. De UPL is bron én matchdoel: zij noemt het aanbod van gemeenten, en een UPL-product valt nooit weg.
+Een bron heeft voor de wiki één van drie rollen; haar vorm (document of model) bepaalt alleen waar ze in `sources/` staat (ARCHITECTURE.md van de repository, *Bronnen: drie lagen*).
+
+- **Bronnen voor de inhoud** zeggen welke begrippen er zijn en wat ze betekenen: landelijke regelgeving, informatiemodellen zoals de UPL, richtlijnen, gemeentelijke regelgeving (de VNG-modellen), beleid en praktijk. Het model ontstaat uit deze bronnen. Hun voorrang staat in de regel Bronvoorrang.
+- **Bronnen voor de methode** zeggen hoe je modelleert: Over GEMMA (de metadata van GEMMA: elementtypen, relaties en werkwijze) en de pagina's over de procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking). Ze onderbouwen het kennismodel en een keuze voor een type of niveau, nooit de inhoud. De export markeert per elementtype en relatietype of het *in Over GEMMA* staat: dat vergelijkt het kennismodel van de wiki met dat van GEMMA, en een verschil is kandidaat voor een terugmelding.
+- **Matchdoelen** zijn bestaande modellen waartegen de wiki haar inhoud toetst en koppelt. Het GEMMA-model en GEMMA Online zijn allebei inhoud van GEMMA, gestructureerd en ongestructureerd, en ze vullen elkaar aan; verder het GGM en de overgenomen indelingen. Een matchdoel is geen bron: wie GEMMA met GEMMA onderbouwt, redeneert in een cirkel. De UPL is bron én matchdoel: zij noemt het aanbod van gemeenten, en een UPL-product valt nooit weg. Later vergelijkt de wiki haar inhoud ook met een momentopname van GEMMA Online, om conflicten te vinden; een conflict wordt een GEMMA-terugmelding.
 - **Terugmeldingen** gaan naar de beheerder van het matchdoel: een bevinding over het GGM naar GGM-beheer, over de UPL of het kennismodel procesarchitectuur naar de werkgroep procesarchitectuur, over het GEMMA-model zelf naar het GEMMA-team.
 
 ## 3 Uitgangspunten en voorrang
 
 ### 3.1 Herleidbaar model
 
-Elk element, elk kenmerk en elke relatie is herleidbaar tot een bron, met de vindplaats, of, voor de plek in een GEMMA-indeling, tot de GEMMA-relatie die het script in het model toetst (§4.4), en elk besluit van de redacteur over het model staat bij het begrip of het onderwerp waarover het gaat. Herleidbaarheid geldt voor het model, niet voor de regels, de skills en de documentatie: die zijn consistent en overzichtelijk, en hun geschiedenis staat in Git. Een regel draagt dus geen datum en geen besluit mee, en een besluittekst noemt een regel of sectie bij naam, nooit een bestandspad; zo raakt een herstructurering van de wiki het model niet.
+Elk element, elk kenmerk en elke relatie is herleidbaar tot een bron, met de vindplaats, of, voor de plek in een overgenomen indeling, tot de relatie uit het model die het script toetst (§4.4), en elk besluit van de redacteur over het model staat bij het begrip of het onderwerp waarover het gaat. Herleidbaarheid geldt voor het model, niet voor de regels, de skills en de documentatie: die zijn consistent en overzichtelijk, en hun geschiedenis staat in Git. Een regel draagt dus geen datum en geen besluit mee, en een besluittekst noemt een regel of sectie bij naam, nooit een bestandspad; zo raakt een herstructurering van de wiki het model niet.
 
 ### 3.2 Zacht oordeel, harde vorm
 
@@ -46,11 +52,15 @@ De AI oordeelt; het script beslist en rendert; de redacteur geeft akkoord. De AI
 
 Een begrip komt één keer voor in het hele model, ook als meer onderwerpen het gebruiken; een gelijke naam met een andere betekenis is een homoniem. Andere onderwerpen gebruiken het element met een relatie en maken geen kopie. Waar een element thuishoort, volgt een voorrangsregel (regel Thuishoren): een bedrijfsobject hoort bij het eigen onderwerp waar het ontstaat en beheerd wordt, dan bij een thematisch gedeeld onderwerp, dan bij Kern; proces, dienst, product en gebeurtenis horen bij het onderwerp van hun kernobject; actor, rol, functie, beleidskader en kanaal hebben geen eigen thuis en gaan naar een gedeeld onderwerp of Kern zodra meer onderwerpen ze gebruiken. De inhoud beslist, niet het aantal relaties en niet de volgorde waarin onderwerpen zijn beoordeeld. Een begrip mag verhuizen; het object in Archi blijft.
 
-| Laag | Onderwerpen | Voorbeelden |
-|---|---|---|
-| Eigen onderwerp | Burgerzaken, Lijkbezorging, Participatie, … | Graf, Reisdocument, Stoffelijk overschot |
-| Thematisch gedeeld | Besluitvorming · Bestuur en organisatie · Heffingen en betalingen · Adressen en gebieden; groeit met het beoordelen | Besluit, Beschikking, Vergunning · Gemeente, College van B&W, Burgemeester · Heffing |
-| Kern | Kern | wat echt overal is, bij voorkeur met een match in GGM 99-kern (Persoon, Adres, Zaak, Document); ook de bronnen over het kennismodel (Over GEMMA, Proceshiërarchie, Impact van ketensamenwerking) |
+De thuisonderwerpen samen zijn een indeling die uit de bronnen ontstaat (§4.4). Elk onderwerp heeft een niveau (`niveau`), met deze criteria:
+
+| Niveau | Criterium | Onderwerpen | Voorbeelden |
+|---|---|---|---|
+| `eigen` | één samenhangende taak van de gemeente uit landelijke regelgeving, met eigen kernobjecten die de gemeente over hun hele levensloop beheert; het onderwerp heet naar die taak | Burgerzaken, Lijkbezorging, Participatie, … | Graf, Reisdocument, Stoffelijk overschot |
+| `thematisch` | begrippen die meer eigen onderwerpen op dezelfde manier gebruiken, uit een eigen algemene regeling | Besluitvorming (Awb) · Bestuur en organisatie (Gemeentewet) · Heffingen en betalingen; groeit met het beoordelen | Besluit, Beschikking, Vergunning · Gemeente, College van B&W, Burgemeester · Heffing |
+| `kern` | wat overal voorkomt en te breed is voor een thema | Kern | Persoon, Adres, Zaak, Document |
+
+Een indeling uit een model, zoals de GEMMA-functiehiërarchie of een beleidsdomein, is geen onderwerp: zij staat ernaast als overgenomen indeling.
 
 ### 3.4 Voor alle gemeenten
 
@@ -74,7 +84,7 @@ Bij het modelleren geldt een vaste voorrang; de regels staan in de [modelleerreg
 - **Een element modelleren:** welk begrip (synoniem of homoniem) › grondslag › kenmerken en type › kernrelaties › indeling › overige relaties › matches.
 - **Matchen:** op betekenis, niet op naam; een zwakke of partiële GEMMA-match wordt voorgelegd, omdat de export dan een GEMMA-element overschrijft.
 - **Relaties:** grondslag › kernrelatie › indelingsrelaties › overige relaties uit de bronanalyse › GGM-match van de relatie › GEMMA.
-- **Thuishoren:** eigen onderwerp › thematisch gedeeld › Kern (§3.3).
+- **Thuishoren:** eigen onderwerp › thematisch gedeeld › Kern (§3.3); een overgenomen indeling staat ernaast.
 
 ## 4 Het kennismodel
 
@@ -87,7 +97,7 @@ Het [kennismodel](kennismodel/README.md) beschrijft wat het model is: per archit
 - **Namen uit het GEMMA-kennismodel.** De typen heten zoals in Over GEMMA (dienst, gebeurtenis, afspraak), met de GEMMA-definities waar die passen. De bedrijfsinteractie is een uitbreiding: GEMMA kent haar als element (*Ketensamenwerking*), niet in het kennismodel.
 - **Een regeling.** Een concreet benoemde regeling als geheel die een taak, bevoegdheid of plicht van de gemeente regelt, wordt een beleidskader (motivatielaag); de soort regeling is het bedrijfsobject Regeling, dat de gemeente vaststelt en bekendmaakt; een los artikel valt buiten het model. Een landelijke richtlijn als geheel kan ook een beleidskader zijn, maar is geen wettelijke grondslag.
 - **Wat geen element wordt.** Een representatie (bedrijfslaag) en een locatie (in ArchiMate een *Other*-element) zijn een vaste uitkomst zonder pagina; van de motivatielaag zit alleen het beleidskader in het model; een data-object is een annotatie bij een bedrijfsobject. Het kennismodel noemt per laag de typen die niet tot een element leiden, met de reden.
-- **Groepering.** Een groepering (ook een *Other*-element) is geen begrip uit een bron, maar de knoop van een indeling: taakveld, beleidsdomein, domein, de groep van de Grondslagindeling. Zij krijgt geen pagina en geen beoordeling; het script maakt haar bij de export uit de indelingsvelden. Zonder groeperingen hebben de indelingen geen relaties in GEMMA; daarom staan de groepering en haar aggregaties in het kennismodel.
+- **Groepering.** Een groepering (ook een *Other*-element) is geen begrip uit een bron, maar de knoop van een indeling: taakveld, beleidsdomein, domein, de groep van de Grondslagindeling. Zij krijgt geen pagina en geen beoordeling; het script maakt haar bij de export uit de indelingsvelden. Zonder groeperingen hebben de indelingen geen relaties in GEMMA; daarom staan de groepering en haar aggregaties in het kennismodel. Ook de functies van een overgenomen hiërarchie, zoals Uitvoering Publieksdiensten in de GEMMA-functiehiërarchie, zijn knopen zonder beoordeling (§4.4).
 
 ### 4.2 Relaties
 
@@ -110,10 +120,18 @@ Het [kennismodel](kennismodel/README.md) beschrijft wat het model is: per archit
 
 ### 4.4 Indelingen
 
-- **GEMMA volgen.** De indelingen van GEMMA blijven en worden gevolgd: de Beleidsdomeinindeling (taakveld en beleidsdomein), de Functie-indeling naar domein en de Procesindeling naar soort werk (het processenlandschap). Een nieuwe indeling komt er alleen waar GEMMA er geen heeft: de Procesindeling naar kernobject (levensloopprocessen en ketensamenwerkingen), Ketensamenwerking als map, en de Grondslagindeling (beleidskaders naar het brontype van hun regeling).
+- **Drie soorten indelingen.** Een element staat in één of meer indelingen, en indelingen mogen overlappen. Ze zijn niet leidend: wat uit de bronnen komt, kan een indeling later doen veranderen, en de indelingen worden geconsolideerd.
+
+  | Soort | Indelingen | Waarvoor |
+  |---|---|---|
+  | Ontstaan uit de bronnen | de thuisonderwerpen (§3.3), de Procesindeling naar kernobject (levensloopprocessen en ketensamenwerkingen, met Ketensamenwerking als map), de Grondslagindeling (beleidskaders naar het brontype van hun regeling) | de inhoud ordenen zoals de bronnen haar aanreiken |
+  | Overgenomen uit een model | GEMMA: de functiehiërarchie (Functie-indeling naar domein), de domeinen, de Beleidsdomeinindeling (taakveld uit Iv3, beleidsdomein) en de Procesindeling naar soort werk; de GGM-beleidsdomeinen; de UPL; later NORA | herkenbaarheid, en koppeling aan wat al bestaat |
+  | De ArchiMate-indeling | architectuurlaag › elementtype, uit de ArchiMate-standaard | de wiki zelf ordenen: het kennismodel, de elementpagina's, de mappen in de Archi-export en de typen van de beslistabel |
+- **Overnemen is letterlijk.** Een overgenomen indeling komt as-is uit het model, zonder beoordeling en zonder bron, ook de tussenliggende knopen (zoals de functies boven het niveau van een onderwerp). Een functie wordt alleen een wiki-element als een onderwerp haar betekenis geeft: zij bedient een proces van dat onderwerp, met een bron.
 - **Doelgroep als groepering.** GEMMA modelleert een doelgroep (gemeente, inwoners en ondernemers, ketenpartners) als rol die applicatieservices ordent. Een doelgroep is een ordening en geen hoedanigheid; in de wiki is zij daarom een groepering, die de actoren, rollen, samenwerkingen en kanalen van die doelgroep aggregeert. De afwijking is teruggemeld.
-- **Plek in een GEMMA-indeling.** Omdat de wiki de GEMMA-indelingen volgt, gaat een bewering over de plek van een element daarin (onder welke functie, of het een andere functie specialiseert) over het matchdoel zelf: zij steunt op de GEMMA-relatie, niet op een bron. GEMMA Online toont de functieketen alleen als weergave van het model; die weergave als bron nemen zou een cirkelredenering zijn. Wat een bedrijfsfunctie is (gegroepeerd gedrag, stabiel, met eigen taken), staat wel in redactionele tekst en heeft daar zijn bron.
+- **Plek in een overgenomen indeling.** Een bewering over de plek van een element in een overgenomen indeling (onder welke functie, of het een andere functie specialiseert) gaat over het matchdoel zelf: zij steunt op de relatie uit het model (`gemma_relatie`), en op een bron als het model die relatie niet heeft. Wat het element zelf is, steunt op een bron voor de inhoud, zoals bij elk element; een pagina van GEMMA Online is daarvoor geen bron, ook niet haar redactionele tekst over de inhoud (§2).
 - **Alles ingedeeld.** Elk element staat in minstens één indeling, ook in Archi; er zijn geen wezen. Een functie zonder GEMMA-match breidt de functieketen van GEMMA uit, onder een bestaande GEMMA-functie.
+- **Dekking.** De pagina van een overgenomen indeling toont de hele indeling as-is, met per knoop de wiki-elementen eronder; zo zijn de gaten te zien die de bronnen nog niet hebben gevonden. Ze wordt gegenereerd door de render; het exportrapport telt de knopen met en zonder inhoud.
 - **Specialisatie of aggregatie.** Specialisatie koppelt aan een indeling van GEMMA (wat voor soort is het?), aggregatie aan een eigen indeling (waar hoort het bij?).
 - **Hergebruik boven nieuwe indelingen.** Gebruikt een ander type hetzelfde criterium, dan valt het in de bestaande indeling: producten en diensten in de Beleidsdomeinindeling en de Functie-indeling, kanalen in de Doelgroepindeling. Een product hangt direct aan de domeingroepering, omdat een functie in ArchiMate geen product mag aggregeren.
 - **Strikt hiërarchisch** waar het kan: een bedrijfsproces hangt onder één levensloopproces, een levensloopproces aggregeert geen levensloopproces, en het beleidsdomein van een levensloopproces is dat van zijn kernobject.
@@ -206,7 +224,7 @@ De AI kiest de match op betekenis; het script haalt bij elke run de letterlijke 
 [tools/archimate_export.py](tools/archimate_export.py) schrijft de goedgekeurde elementen en relaties als `export/gemma-archimate-model.archimate`, om in Archi te bekijken en in het GEMMA-model te importeren (Archi voegt samen op id). Werkwijze: skill [gemma-archimate-model-archimate-export](.agents/skills/gemma-archimate-model-archimate-export/SKILL.md).
 
 - **Id's en mappen.** Een element met een GEMMA-match krijgt het GEMMA-id en staat in dezelfde mappen als in GEMMA; een nieuw element krijgt een vast id, afgeleid van het begrip-id, in de map `wiki-gemma-model`. Een relatie krijgt het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id. Naam en definitie komen uit de wiki, ook over een GEMMA-element heen; de oude gaan mee als eigenschap. De export vertrouwt de match; daarom wordt een zwakke match voorgelegd.
-- **Indelingen.** Elk element komt in zijn indelingen, met een aggregatie vanuit de groepering van GEMMA of een nieuwe groepering van de wiki, en een specialisatie naar een generiek GEMMA-element. De groeperingen houden hun id's.
+- **Indelingen.** Elk element komt in zijn indelingen, met een aggregatie vanuit de groepering van GEMMA of een nieuwe groepering van de wiki, en een specialisatie naar een generiek GEMMA-element. De groeperingen houden hun id's. Van een overgenomen indeling gaat elke gebruikte tak mee tot en met de wortel, letterlijk, met de id's van de knopen en relaties uit het model; een knoop wordt niet overschreven als wiki-element. Zo kan de redacteur het resultaat in een tussenmodel controleren en er views maken voordat het in GEMMA gaat. Met `--volledig` gaat de hele indeling mee, om de gaten te zien. De onderwerpen gaan pas mee na de consolidatie van de indelingen: GEMMA kent er geen tegenhanger van.
 - **Objectbehoud.** Een hernoemd, samengevoegd of gesplitst element zet het Archi-object voort dat `beoordelingen/objecten.yaml` noemt, zodat views in Archi blijven werken; de export weigert een typewijziging van een voortgezet object.
 - **Volledige sync.** Elk object draagt een exportdatum. Na de import verwijdert een jArchi-script wat de wiki zelf maakte en ouder is; bij een GEMMA-object haalt het alleen de wiki-eigenschappen weg.
 - **Kennismodel.** De groep *Kennismodel-wiki* bevat het volledige kennismodel van de wiki: een concept per elementtype, een relatie per toegestaan relatietype en de indelingen als groepering, met het id uit Over GEMMA waar dat bestaat, en de eigenschappen kernrelatie en *in Over GEMMA*. Het GEMMA-kennismodel uit Over GEMMA blijft een eigen groep, ter vergelijking.
@@ -216,5 +234,8 @@ De AI kiest de match op betekenis; het script haalt bij elke run de letterlijke 
 ## 7 Nog niet gebouwd
 
 - De applicatielaag: nu alleen het data-object, als annotatie bij een bedrijfsobject.
+- De overgenomen indelingen as-is (§4.4): de functiehiërarchie uit het model, de plek van een wiki-element erin (`gemma_functie`), de pagina per indeling met dekking, en de export tot en met de wortel met `--volledig`. Nu hebben de functies boven het niveau van een onderwerp nog een beoordeling.
+- Modellen en lijsten in `sources/modellen/`, met de omzetting naar JSON in llmwiki; nu leest de wiki ze uit `gemma/` en `ggm/`.
+- De vergelijking met een momentopname van GEMMA Online (§2).
 - Views in de export naar Archi; de wiki maakt wel overzichten per indeling.
 - Een dekkingsanalyse van het GGM per beleidsdomein.

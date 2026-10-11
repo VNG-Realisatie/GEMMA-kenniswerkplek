@@ -1,6 +1,6 @@
 ---
 name: wiki-ingest
-description: Neem een bron op in de centrale bronnen (laag 1 en 2) en maak of hergebruik de wiki-specifieke domein-lens (laag 3). Gebruik dit als eerste stap van elke wiki-update (wiki-curatie-update, wiki-kennis-ingest), wanneer nieuw bronmateriaal moet worden verwerkt.
+description: Neem een bron op in de centrale bronnen (laag 1 en 2) en maak of hergebruik de wiki-specifieke bronduiding (laag 3). Gebruik dit als eerste stap van elke wiki-update (wiki-curatie-update, wiki-kennis-ingest), wanneer nieuw bronmateriaal moet worden verwerkt.
 metadata:
   kind: capability
   scope: core
@@ -21,7 +21,7 @@ Doel: de bronnenstap van de generieke workflows. Zorgt dat een bron beschikbaar 
    - Een bron is een letterlijke kopie: haal een webpagina altijd op met `--url`, nooit met een samenvattende web-tool, en vertaal of herschrijf de tekst niet.
    - Staan er op een pagina links naar documenten die bij de bron horen (één niveau diep), voeg elk toe als eigen bron met `--url <document> --url-pagina <pagina>`.
    - Of `--brontype` verplicht is en welke volgorde geldt, staat in de wiki-Rules en `wiki.yaml` (`bronvoorrang`).
-4. Schrijf de domein-lens: een korte analyse van wat deze bron betekent voor het onderwerp, met paragraafverwijzingen naar laag 1, in `bronnen/<onderwerp>/<bron-id>.md` (of de locatie die `wiki.yaml` `page_types.bron.dir` aangeeft). Zet direct onder de titel de links naar laag 1: `llmwiki source bronregel <bron-id> --van <pad van de domein-lens> --schrijf`. Die regel is de schakel in de herleidbaarheid van pagina naar brontekst; de index (laag 2) is dat niet.
+4. Schrijf de bronduiding: een korte analyse van wat deze bron betekent voor het onderwerp, met paragraafverwijzingen naar laag 1, in `bronnen/<onderwerp>/<bron-id>.md` (of de locatie die `wiki.yaml` `page_types.bron.dir` aangeeft). Zet direct onder de titel de links naar laag 1: `llmwiki source bronregel <bron-id> --van <pad van de bronduiding> --schrijf`. Die regel is de schakel in de herleidbaarheid van pagina naar brontekst; de index (laag 2) is dat niet.
 
 ## Grenzen
 

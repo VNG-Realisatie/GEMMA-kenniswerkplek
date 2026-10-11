@@ -3,7 +3,7 @@
 - gegenereerde modelbestanden (ggm/, gemma/) schrijven met een hash-kop, en controleren dat niemand ze met de hand
   wijzigde;
 - secties, tabellen en links in Markdown lezen (bronanalyses);
-- bronverwijzingen: pagina → bronanalyse (domein-lens) → sources/raw/;
+- bronverwijzingen: pagina → bronanalyse (bronduiding) → sources/raw/;
 - modelbestanden ophalen van GitHub;
 - onderwerpen als één model: thuisonderwerp en relaties tussen onderwerpen (regels Thuishoren, Relaties tussen
   onderwerpen).
@@ -20,7 +20,8 @@ from llmwiki import hashing, paths
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 GEGENEREERD_PREFIX = "<!-- gegenereerd door "
-GEDEELD = ("thematisch", "kern")  # `laag` van een onderwerp dat elementen voor meer onderwerpen houdt (regel Thuishoren)
+NIVEAUS = ("eigen", "thematisch", "kern")  # `niveau` van een onderwerp in de onderwerpen-indeling (regel Thuishoren)
+GEDEELD = ("thematisch", "kern")  # `niveau` van een onderwerp dat elementen voor meer onderwerpen houdt
 GEGENEREERD_RE = re.compile(r"^<!-- gegenereerd door (?P<tool>\S+); hash: (?P<hash>[0-9a-f]{64}) -->\n")
 
 
@@ -128,7 +129,7 @@ def relatief(van: Path, naar: Path) -> str:
     return Path(os.path.relpath(naar.resolve(), van.resolve().parent)).as_posix()
 
 
-# --- Bronverwijzingen: pagina → bronanalyse (domein-lens) → sources/raw/ ---
+# --- Bronverwijzingen: pagina → bronanalyse (bronduiding) → sources/raw/ ---
 
 BRON_ID_RE = re.compile(r"\b[0-9]{4}-[a-z0-9]+(?:-[a-z0-9]+)*\b")
 
@@ -224,8 +225,8 @@ def thuis(data: dict) -> str:
 
 
 def gedeelde_onderwerpen(onderwerpen: dict[str, dict]) -> set[str]:
-    """De thematisch gedeelde onderwerpen en Kern: `laag` thematisch of kern (regel Thuishoren)."""
-    return {oid for oid, o in onderwerpen.items() if (o or {}).get("laag") in GEDEELD}
+    """De thematisch gedeelde onderwerpen en Kern: `niveau` thematisch of kern (regel Thuishoren)."""
+    return {oid for oid, o in onderwerpen.items() if (o or {}).get("niveau") in GEDEELD}
 
 
 def is_generiek(data: dict, uitkomst: dict | None, gedeeld: set[str] = frozenset()) -> bool:

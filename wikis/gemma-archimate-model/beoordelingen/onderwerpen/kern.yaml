@@ -1,8 +1,8 @@
 naam: Kern
-laag: kern
+niveau: kern
 status: in-behandeling
 omschrijving:
-- 'Wat in het hele model voorkomt en te breed is voor een thema: elementen die elk onderwerp gebruikt, bij voorkeur met een match in GGM 99-kern (zoals Persoon, Adres, Zaak en Document), en rollen en functies van GEMMA die in meer onderwerpen gelden, zoals Ketenpartner en Producten- en dienstenrealisatie publieksdiensten. Een element komt hier alleen als geen eigen en geen thematisch gedeeld onderwerp past (regel Thuishoren).'
+- 'Wat in het hele model voorkomt en te breed is voor een thema: elementen die elk onderwerp gebruikt (zoals Persoon, Adres, Zaak en Document), en rollen en functies van GEMMA die in meer onderwerpen gelden, zoals Ketenpartner en Producten- en dienstenrealisatie publieksdiensten. Een element komt hier alleen als geen eigen en geen thematisch gedeeld onderwerp past (regel Thuishoren).'
 - 'Hier staan ook de bronanalyses van bronnen die voor de hele wiki gelden: Over GEMMA, de GEMMA-procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking) en de redactionele tekst over de bedrijfsfuncties (Bedrijfsfuncties en de bedrijfsarchitectuur per domein).'
 bronnen:
 - 2026-vng-over-gemma

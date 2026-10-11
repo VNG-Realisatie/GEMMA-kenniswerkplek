@@ -4,7 +4,7 @@ Een waarschuwing noemt de regel uit AGENTS.md of kennismodel/modelleerregels.md 
 inhoudelijk: oplossen in de beoordeling, of toelichten als de tekst terecht is. Een waarschuwing houdt niets tegen.
 
 Harde controles (fouten) gaan over wat de AI met de hand schrijft buiten de beoordelingen: de bronanalyses (de
-domein-lens, schakel in de herleidbaarheid) en de gegenereerde modelmappen `ggm/` en `gemma/`.
+bronduiding, schakel in de herleidbaarheid) en de gegenereerde modelmappen `ggm/` en `gemma/`.
 """
 from __future__ import annotations
 
@@ -370,7 +370,7 @@ def modulariteit(alle: dict[str, dict], uitkomsten: dict[str, dict | None], onde
 
 
 def bronanalyses(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
-    """Harde controles op de domein-lens: plaats, eigen bron-id, de regel 'Bron:' naar sources/raw, de relatietabel,
+    """Harde controles op de bronduiding: plaats, eigen bron-id, de regel 'Bron:' naar sources/raw, de relatietabel,
     en dat de bron in de bronnenlijst van het onderwerp staat."""
     fouten = []
     repo = paths.find_repo_root(wiki_root)

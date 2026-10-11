@@ -211,7 +211,7 @@ def raw_paden(repo_root: Path, bron_id: str) -> tuple[Path | None, Path | None]:
 
 
 def bronregel(repo_root: Path, bron_id: str, van: Path) -> str:
-    """Linkregel van een pagina (domein-lens) naar laag 1: de tekst, het origineel en de online bron.
+    """Linkregel van een pagina (bronduiding) naar laag 1: de tekst, het origineel en de online bron.
 
     `van` is het pad van de pagina waarin de regel komt; de links zijn relatief daaraan.
     """
@@ -300,7 +300,7 @@ def schrijf_inhoud(repo_root: Path, bron_id: str, max_niveau: int = 3) -> Path:
 
 
 def schrijf_bronregel(repo_root: Path, bron_id: str, pagina: Path) -> None:
-    """Zet of vervang de regel `Bron: …` direct onder de `# `-titel van een pagina (domein-lens)."""
+    """Zet of vervang de regel `Bron: …` direct onder de `# `-titel van een pagina (bronduiding)."""
     page = frontmatter.read(pagina)
     regel = bronregel(repo_root, bron_id, pagina)
     body = re.sub(r"(?m)^Bron: .*\n\n?", "", page.body, count=1)
