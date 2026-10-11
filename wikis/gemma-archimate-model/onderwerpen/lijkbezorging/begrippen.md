@@ -45,7 +45,7 @@ De views op de indelingen staan in het [overzicht](overzicht.md).
 - [Algemene wet bestuursrecht (BWBR0005537)](bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
 - [Burgerlijk Wetboek Boek 2 Rechtspersonen (BWBR0003045)](bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md)
 - [Aangifte en akte van overlijden (Ondernemersplein)](bronduidingen/overig/2026-rvo-aangifte-en-akte-van-overlijden.md)
-- [Standaard producten en dienstenlijst extern basis UPL](../burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)
+- [Standaard producten en dienstenlijst extern basis UPL](../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)
 - [Besluit op de lijkbezorging](bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md)
 - [Algemene Plaatselijke Verordening Groningen 2021](bronduidingen/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md)
 

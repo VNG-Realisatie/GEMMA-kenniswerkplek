@@ -22,15 +22,16 @@ Kies het brontype volgens de regel Bronvoorrang in `kennismodel/modelleerregels.
 |---|---|
 | `europese-regelgeving` | eur-lex.europa.eu: AVG, AI-verordening |
 | `rijksregelgeving` | wetten.overheid.nl: wetten, AMvB's, ministeriële regelingen, verdragen |
-| `informatiemodel` | RSGB, RGBZ, ZTC, MIM-modellen, catalogi van basisregistraties, UPL-lijsten (zelfde voorrang) |
+| `informatiemodel` | RSGB, RGBZ, ZTC, MIM-modellen, catalogi van basisregistraties, de UPL van Logius en de UPL-lijsten van GEMMA (zelfde voorrang) |
 | `richtlijn` | HUP en circulaires van RvIG, handreikingen en werkinstructies van NVVB, VNG-handreikingen en -raadgevers, Divosa |
 | `gemeentelijke-regelgeving` | lokaleregelgeving.overheid.nl: verordeningen (ook de APV), nadere regels, beleidsregels; VNG-modelverordeningen |
 | `beleid` | beleidsnota's, visies, programma's en raadsvoorstellen van een gemeente |
 | `overig` | productpagina's, websites, presentaties |
+| `model` | matchdoel, geen bron voor een claim en buiten de volgorde: het GEMMA-model, het GGM en de GGM-website, een inhoudspagina van GEMMA Online |
 
 Alleen `europese-regelgeving` en `rijksregelgeving` tellen als landelijke wettelijke bron (regel Wettelijke grondslag).
 
-Het GGM en het GEMMA-model komen niet via deze stap binnen, maar via de release-skills.
+Het GGM en het GEMMA-model komen niet via deze stap binnen, maar via de release-skills; hun bronduiding verhuist bij een release mee. Een webpagina of lijst die bij een model hoort (de GGM-website, de UPL van Logius) neem je wel via deze stap op, met het brontype van haar rol: `model` voor het ongestructureerde deel van een matchdoel, `informatiemodel` voor de UPL.
 
 Een bron wordt letterlijk bewaard: ophalen met `llmwiki source add --url` (nooit een samenvatting of WebFetch-weergave als bron), nooit vertalen of herschrijven.
 
@@ -81,6 +82,8 @@ Welke objecten, rollen, processen, diensten of gebeurtenissen; welke specialisat
 ## Citaten
 > Letterlijke tekst die een begrip definieert. (vindplaats: art./§/pagina)
 ```
+
+Een bron van een model (het GEMMA-model, het GGM, de UPL, en bronnen voor de methode zoals Over GEMMA) heeft haar bronduiding in `modellen/<model>/bronduidingen/<brontype>/`, met `model:` in plaats van `onderwerp:`, en staat niet in de bronnen van een onderwerp. Eén bronduiding duidt soms meer bronnen samen, zoals de pagina's van een website of de tabellen bij een lijst: die bronnen staan alle in `bronnen:`, en een verwijzing naar één ervan linkt naar die bronduiding (`tools/gam_gemeen.py`, `bron_doel`). Een bronduiding van een model bevat alleen wat over releases heen gelijk blijft: geen tellingen, geen wijzigingen per release, geen samenvatting van terugmeldingen.
 
 De regel `Bron:` zet het gereedschap: `uv run python -m llmwiki source bronregel <bron-id> --van onderwerpen/<onderwerp>/bronduidingen/<brontype>/<bron-id>.md --schrijf`, nadat de pagina met titel bestaat. Het is de schakel van de pagina's naar de brontekst; zonder die regel meldt `tools/beslissen.py` een fout. Citaten zijn platte tekst, zonder links.
 

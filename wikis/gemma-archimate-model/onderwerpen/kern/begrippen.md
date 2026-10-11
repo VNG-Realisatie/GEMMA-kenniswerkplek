@@ -4,9 +4,6 @@ type: onderwerp
 naam: Kern
 status: in-behandeling
 bronnen:
-- 2026-vng-over-gemma
-- 2026-vng-gemma-proceshierarchie
-- 2026-vng-gemma-impact-ketensamenwerking
 - 2026-vng-gemma-bedrijfsfuncties
 - 2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten
 - 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
@@ -21,7 +18,7 @@ bronnen:
 
 Wat in het hele model voorkomt en te breed is voor een thema: elementen die elk onderwerp gebruikt (zoals Persoon, Adres, Zaak en Document), en rollen en functies van GEMMA die in meer onderwerpen gelden, zoals Ketenpartner en Producten- en dienstenrealisatie publieksdiensten. Een element komt hier alleen als geen eigen en geen thematisch gedeeld onderwerp past (regel Thuishoren).
 
-Hier staan ook de bronanalyses van bronnen die voor de hele wiki gelden: Over GEMMA, de GEMMA-procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking) en de redactionele tekst over de bedrijfsfuncties (Bedrijfsfuncties en de bedrijfsarchitectuur per domein).
+Bronnen die voor de hele wiki gelden, zoals Over GEMMA en de pagina's over de GEMMA-procesarchitectuur (Proceshiërarchie, Impact van ketensamenwerking), en de modellen zelf (het GEMMA-model, het GGM en de UPL) horen niet bij Kern: hun bronduiding staat bij hun model.
 
 ## Overzicht
 
@@ -29,9 +26,6 @@ De views op de indelingen staan in het [overzicht](overzicht.md).
 
 ## Bronnen
 
-- [Over GEMMA (kennismodel en modelleerafspraken)](../../modellen/gemma/bronduidingen/overig/2026-vng-over-gemma.md)
-- [GEMMA Procesarchitectuur Proceshiërarchie](../../modellen/gemma/bronduidingen/overig/2026-vng-gemma-proceshierarchie.md)
-- [GEMMA Procesarchitectuur Impact van ketensamenwerking](../../modellen/gemma/bronduidingen/overig/2026-vng-gemma-impact-ketensamenwerking.md)
 - [GEMMA Bedrijfsfuncties](bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md)
 - [GEMMA Bedrijfsarchitectuur publieksdiensten](bronduidingen/overig/2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten.md)
 - [GEMMA Bedrijfsarchitectuur fysieke leefomgeving](bronduidingen/overig/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.md)

@@ -26,8 +26,7 @@ alleen met ja, Generalisatie, Specialisaties, GGM-componenten, Tegenhanger, Rela
 Afstemming met GGM met de GGM-terugmeldingen, Afstemming met GEMMA, Besluiten redacteur). Een bron heet in links naar
 haar `korte_titel` uit de bronduiding.
 
-Wat de render garandeert: elke bronverwijzing is een link naar de bronduiding (een modelbron linkt
-naar sources/raw), relaties staan in beide richtingen, er staan geen verwijzingen in de frontmatter en geen links naar
+Wat de render garandeert: elke bronverwijzing is een link naar de bronduiding (ook bij een modelbron), relaties staan in beide richtingen, er staan geen verwijzingen in de frontmatter en geen links naar
 tools of regels, en elke alinea staat op één regel. Twee keer renderen geeft hetzelfde resultaat.
 
 Gebruik (vanuit de wikimap):
@@ -155,8 +154,8 @@ class Wiki:
                 return model.upper()
         if bron_id not in self._korte_titels:
             doel = gam_gemeen.bron_doel(self.root, bron_id)
-            binnen = doel is not None and doel.is_relative_to(self.root.resolve())
-            self._korte_titels[bron_id] = (frontmatter.read(doel).meta.get("korte_titel") if binnen else None) or self.titel(bron_id)
+            eigen = doel is not None and doel.stem == bron_id  # een bronduiding van meer bronnen heeft geen korte titel per bron
+            self._korte_titels[bron_id] = (frontmatter.read(doel).meta.get("korte_titel") if eigen else None) or self.titel(bron_id)
         return self._korte_titels[bron_id]
 
     def bron(self, van: str, bron_id: str, tekst: str | None = None) -> str:

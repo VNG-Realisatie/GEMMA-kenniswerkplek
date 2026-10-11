@@ -289,7 +289,7 @@ De views op de indelingen staan in het [overzicht](overzicht.md).
 - [Gemeente Utrecht: Paspoort of ID-kaart aanvragen](bronduidingen/overig/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md)
 - [Gemeente Utrecht: Paspoort of ID-kaart kwijt](bronduidingen/overig/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven.md)
 - [Gemeente Utrecht: Gewaarmerkte kopie reisdocument](bronduidingen/overig/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.md)
-- [Standaard producten en dienstenlijst extern basis UPL](bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)
+- [Standaard producten en dienstenlijst extern basis UPL](../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)
 - [HUP BRP: Reisdocument](bronduidingen/richtlijn/2026-rvig-hup-reisdocument.md)
 - [Kieswet](bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md)
 - [Rijkswet op het Nederlanderschap](bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md)

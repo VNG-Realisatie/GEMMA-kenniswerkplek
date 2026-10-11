@@ -19,3 +19,5 @@ sources/raw/*.archimate -text
 sources/modellen/*.xml -text
 sources/modellen/*.archimate -text
 sources/modellen/*.json -text
+sources/modellen/*.csv -text
+sources/raw/*.csv -text

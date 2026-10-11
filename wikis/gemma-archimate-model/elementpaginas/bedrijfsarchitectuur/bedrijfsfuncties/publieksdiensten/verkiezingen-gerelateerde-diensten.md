@@ -91,10 +91,10 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 |---|---|---|---|
 | Verkiezingen gerelateerde diensten | bedient *bediening* | [Beheren stempassen](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md) | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (Kieswet art. J 7) |
 | Verkiezingen gerelateerde diensten | bedient *bediening* | [Registreren kiesgerechtigdheid](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md) | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (Kieswet art. D 1) |
-| Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Stempas ontvangen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/stempas-ontvangen.md) | [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 397 (GEMMA-domein Publieksdiensten)) |
-| Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Kiezerspas](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/kiezerspas.md) | [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 208 (GEMMA-domein Publieksdiensten)) |
-| Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Volmachtbewijs verkiezingen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/volmachtbewijs-verkiezingen.md) | [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 453 (GEMMA-domein Publieksdiensten)) |
-| Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Stemrecht](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/stemrecht.md) | [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 398 (GEMMA-domein Publieksdiensten)) |
+| Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Stempas ontvangen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/stempas-ontvangen.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 397 (GEMMA-domein Publieksdiensten)) |
+| Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Kiezerspas](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/kiezerspas.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 208 (GEMMA-domein Publieksdiensten)) |
+| Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Volmachtbewijs verkiezingen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/volmachtbewijs-verkiezingen.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 453 (GEMMA-domein Publieksdiensten)) |
+| Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Stemrecht](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/stemrecht.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 398 (GEMMA-domein Publieksdiensten)) |
 
 #### Inkomend
 
@@ -111,7 +111,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
 | [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
 | [HUP Kiesrecht](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-kiesrecht.md) | HUP BRP: Kiesrecht |
-| [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 

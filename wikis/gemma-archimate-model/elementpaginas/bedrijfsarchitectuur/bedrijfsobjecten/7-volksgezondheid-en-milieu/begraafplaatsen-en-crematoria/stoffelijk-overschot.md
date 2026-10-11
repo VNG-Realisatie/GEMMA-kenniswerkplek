@@ -44,7 +44,7 @@ Het stoffelijk overschot wordt geschouwd, begraven, gecremeerd of ontleed, en so
 
 ### Naamkeuze
 
-Stoffelijk overschot is de term van de Uniforme Productenlijst ([2025-vng-upl-producten-en-diensten-extern](../../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk ([2026-rvo-aangifte-en-akte-van-overlijden](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-rvo-aangifte-en-akte-van-overlijden.md)). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet (besluit 2026-10-05).
+Stoffelijk overschot is de term van de Uniforme Productenlijst ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk ([2026-rvo-aangifte-en-akte-van-overlijden](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-rvo-aangifte-en-akte-van-overlijden.md)). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet (besluit 2026-10-05).
 
 ## Plaats in het model
 

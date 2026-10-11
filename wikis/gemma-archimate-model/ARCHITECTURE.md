@@ -188,8 +188,9 @@ wikis/gemma-archimate-model/
 │   ├── begrippen.md                  de begrippenlijst (gegenereerd door tools/render.py)
 │   └── overzicht.md                  de views op de indelingen (gegenereerd door tools/render.py)
 ├── modellen/<model>/                 per model: bronduidingen, overgenomen indelingen en terugmeldingen
-│   ├── gemma/                        bronduidingen/ (Over GEMMA, Proceshiërarchie, Impact) · indelingen/beleidsdomeinen.yaml · terugmeldingen/{gemma-team,procesarchitectuur}.yaml (AI) en .md (gegenereerd)
-│   └── ggm/                          terugmeldingen.yaml (AI) en terugmeldingen.md (gegenereerd)
+│   ├── gemma/                        bronduidingen/ (GEMMA-model; Over GEMMA, Proceshiërarchie, Impact) · indelingen/beleidsdomeinen.yaml · terugmeldingen/{gemma-team,procesarchitectuur}.yaml (AI) en .md (gegenereerd)
+│   ├── ggm/                          bronduidingen/ (GGM, GGM-website) · terugmeldingen.yaml (AI) en terugmeldingen.md (gegenereerd)
+│   └── upl/                          bronduidingen/ (UPL van Logius, de aangevulde lijsten extern en intern van GEMMA)
 ├── elementpaginas/                   gegenereerd door tools/render.py, volgens de ArchiMate-indeling (bedrijfsarchitectuur/, motivatie/)
 ├── ter-beoordeling.md · voortgang.md gegenereerd door tools/render.py
 ├── export/                           het Archi-bestand en het exportrapport
@@ -200,7 +201,7 @@ wikis/gemma-archimate-model/
 
 ### 6.2 Beoordelingen en registers
 
-Een beoordeling is het oordeel van de AI over één begrip: kenmerken, naam, definitie, beschrijving, tekst per onderwerp, synoniemen en homoniemen, de matches met GGM en GEMMA, relaties, indelingsvelden, open vragen en besluiten. Het schema wordt gegenereerd uit de beslistabel ([tools/bepaal_type.py](tools/bepaal_type.py)). Een relatie staat één keer, in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. De beoordeling staat in de map van haar thuisonderwerp (het eerste in `onderwerpen`; `tools/beslissen.py` controleert dat); een begrip dat verhuist, verhuist dus mee, en het pad van zijn elementpagina verandert niet, want elementpagina's volgen de ArchiMate-indeling. Naast de beoordelingen houdt de AI registers bij: de afbakening van elk onderwerp, de terugmeldingen per ontvanger (bij het model van de ontvanger) (met wat er nu staat, **Bevinding:** en **Voorstel:**), de objecten die in Archi worden voortgezet, en de beschrijving van de beleidsdomeinen.
+Een beoordeling is het oordeel van de AI over één begrip: kenmerken, naam, definitie, beschrijving, tekst per onderwerp, synoniemen en homoniemen, de matches met GGM en GEMMA, relaties, indelingsvelden, open vragen en besluiten. Het schema wordt gegenereerd uit de beslistabel ([tools/bepaal_type.py](tools/bepaal_type.py)). Een relatie staat één keer, in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. De beoordeling staat in de map van haar thuisonderwerp (het eerste in `onderwerpen`; `tools/beslissen.py` controleert dat); een begrip dat verhuist, verhuist dus mee, en het pad van zijn elementpagina verandert niet, want elementpagina's volgen de ArchiMate-indeling. Naast de beoordelingen houdt de AI registers bij: de afbakening van elk onderwerp, de terugmeldingen per ontvanger (bij het model van de ontvanger) (met wat er nu staat, **Bevinding:** en **Voorstel:**), en de beschrijving van de beleidsdomeinen.
 
 ### 6.3 Beslissen, renderen en controles
 
@@ -219,7 +220,7 @@ Een beoordeling is het oordeel van de AI over één begrip: kenmerken, naam, def
 | Letterlijke velden (script) | `velden` → `beslist.ggm` | `velden` → `beslist.gemma` |
 | Nieuwe versie | skill gemma-archimate-model-ggm-release | skill gemma-archimate-model-gemma-release |
 
-De AI kiest de match op betekenis; het script haalt bij elke run de letterlijke velden op, zodat een nieuwe release vanzelf meegaat. De tools lezen de JSON-omzetting in `sources/modellen/` van de bron die `wiki.yaml` (`ggm.bron`, `gemma.bron`) noemt; het model zelf lees je alleen via deze tools, nooit direct of via een kopie in de wiki. Het GGM is matchdoel voor bedrijfsobjecten, data-objecten en beleidsdomeinen: per beleidsdomein wordt de dekking getoetst, en een hiaat wordt een GGM-terugmelding; een GGM-entiteit is zelf geen begrip en wordt pas via een bron beoordeeld. Het GEMMA-model is matchdoel voor alle typen: zijn id gaat mee in de export.
+De AI kiest de match op betekenis; het script haalt bij elke run de letterlijke velden op, zodat een nieuwe release vanzelf meegaat. De tools lezen de JSON-omzetting in `sources/modellen/` van de bron die `wiki.yaml` (`ggm.bron`, `gemma.bron`) noemt; het model zelf lees je alleen via deze tools, nooit direct of via een kopie in de wiki. Het GGM is matchdoel voor bedrijfsobjecten, data-objecten en beleidsdomeinen: per beleidsdomein wordt de dekking getoetst, en een hiaat wordt een GGM-terugmelding; een GGM-entiteit is zelf geen begrip en wordt pas via een bron beoordeeld. Het GEMMA-model is matchdoel voor alle typen: zijn id gaat mee in de export. Wat een model voor de wiki betekent (zijn rol, de delen en eigenschappen die de wiki gebruikt), staat in zijn bronduiding in `modellen/<model>/bronduidingen/`; die verhuist bij een nieuwe release mee naar het nieuwe bron-id.
 
 ### 6.5 Export naar Archi
 

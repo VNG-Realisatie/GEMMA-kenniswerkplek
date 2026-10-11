@@ -18,7 +18,6 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 - **Definitie van Ketenpartner**: nu "verantwoordelijkheid van een andere organisatie", terwijl de rol wordt vervuld door personen (Arts als behandelende arts, Officier van justitie). Definitie verbreden naar een andere partij, of de organisatie (openbaar ministerie, zorgaanbieder) als actor nemen; meenemen in het voorstel aan het GEMMA-team over de definitie van de rol Ketenpartner.
 - **Verlengen en overschrijven van het grafrecht**: nu onderdelen van Grafrecht (eigen identiteit nee). Mogelijk eigen bedrijfsprocessen onder het levensloopproces Beheren grafrechten (eigen besluit, Wlb art. 28 lid 1–3; Groningen art. 16–20). De UPL kent er geen eigen product voor (beoordeling UPL-producten).
-- **Interne UPL-lijst**: staat in `sources/` en krijgt een bronduiding bij het eerste onderwerp met sturende of ondersteunende producten.
 - **Kennismodel-aanvullingen als GEMMA-terugmelding**: de wiki gebruikt elementen en relaties die Over GEMMA niet kent (`export/rapport.md`, Kennismodel-wiki): Afspraak met toegang door bedrijfsproces en rol, aggregatie van Dienst door Bedrijfsfunctie (76×), flow tussen bedrijfsprocessen (7×) en triggering tussen gebeurtenissen (5×). Bepaal of ze in het GEMMA-model zelf voorkomen en meld de ontbrekende bij de procesarchitectuur-terugmeldingen over het kennismodel (5 en 6).
 - **Voorstellen aan het GEMMA-team** (de voorstellen over het GEMMA-model zelf staan in `modellen/gemma/terugmeldingen/gemma-team.yaml`):
   - het beleidsdomein *Begraafplaatsen en crematoria* onder taakveld 7, met de GEMMA-domeinen waaronder het valt (procesarchitectuur-terugmelding 1);
@@ -28,7 +27,7 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 ## Kennismodel
 
-- **Bronnen, inhoud en indelingen**: fasen 4 en 5 van `plannen/2026-10-10-indelingen.md` (bronduidingen van GEMMA, GGM en UPL, de GEMMA-functiehiërarchie as-is met de acht functies erboven zonder beoordeling, en de twijfelgevallen daarbij).
+- **Bronnen, inhoud en indelingen**: fase 5 van `plannen/2026-10-10-indelingen.md` (de GEMMA-functiehiërarchie as-is met de acht functies erboven zonder beoordeling, en de twijfelgevallen daarbij).
 - **Consolidatie van indelingen** (na het plan hierboven, als eigen klus met een plan): de ontstane indelingen (onderwerpen, Procesindeling naar kernobject, Grondslagindeling) naast de overgenomen (GEMMA, Iv3, GGM, UPL) leggen, overlap beoordelen en bepalen wat in de export meegaat (ARCHITECTURE.md, sectie 4.4).
 - **Conflicten met GEMMA Online**: een momentopname van GEMMA Online in `sources/` (opgehaald met pywikibot, brontype `model`), en een vergelijking van de inhoud van de wiki daarmee; een conflict wordt een GEMMA-terugmelding (ARCHITECTURE.md, sectie 2).
 - **Kwaliteitsdoelen per beleidskader beoordelen** (na fase 5 van het plan kennismodel, als eigen klus): het kennismodel, het veld `kwaliteitsdoelen`, de controle, de render en de export bestaan. Beoordeel per beleidskader aan welke kwaliteitsdoelen van GEMMA (`tools/gemma.py kwaliteitsdoelen`) het grondslag geeft en hoe sterk, met de bepalingen als onderbouwing; leg het voor en vraag AKKOORD.
@@ -48,7 +47,6 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 ## Onderwerpen als één model
 
 - **Belanghebbende** beoordelen in Besluitvorming (Awb art. 1:2; generiek). Nu nog een verwijzing in Lijkbezorging; vraagt een volledige beoordeling met bron en GGM-terugmelding 9.
-- **Bronduiding per onderwerp in de render**: een bron met een bronduiding in meer onderwerpen (UPL extern: lijkbezorging en burgerzaken) krijgt op elke pagina een link naar de alfabetisch eerste lens; sinds Burgerzaken linken lijkbezorgingspagina's naar de lens van Burgerzaken. Kies de lens van het thuisonderwerp van de pagina.
 
 ## Verwijzingen vanuit Burgerzaken (onderwerp afgerond op 2026-10-07)
 

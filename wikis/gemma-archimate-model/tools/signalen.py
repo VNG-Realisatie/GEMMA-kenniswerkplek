@@ -416,7 +416,7 @@ def modelbestanden(wiki_root: Path) -> list[str]:
 
 
 LANDELIJK = ("europese-regelgeving", "rijksregelgeving")
-UPL_BRON = re.compile(r"-vng-upl-")
+UPL_BRON = re.compile(r"-(vng|logius)-upl-")  # de aangevulde lijsten van GEMMA en de UPL van Logius
 
 
 def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], brontype) -> tuple[list[str], list[str]]:

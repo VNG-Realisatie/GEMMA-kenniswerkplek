@@ -98,6 +98,8 @@ def extension_for(opgehaald: Opgehaald) -> str:
         return ".pdf"
     if opgehaald.content_type in ("text/markdown", "text/x-markdown"):
         return ".md"
+    if opgehaald.content_type == "text/csv":
+        return ".csv"
     if opgehaald.content_type == "text/plain":
         # Een ruwe download (bijv. raw.githubusercontent.com) is altijd text/plain; neem dan de extensie uit de URL.
         url_ext = Path(urlparse(opgehaald.url).path).suffix.lower()

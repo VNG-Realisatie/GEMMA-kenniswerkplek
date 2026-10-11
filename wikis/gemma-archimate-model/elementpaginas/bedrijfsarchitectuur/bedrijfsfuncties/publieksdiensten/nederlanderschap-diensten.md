@@ -85,11 +85,11 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Nederlanderschap diensten | bedient *bediening* | [Beheren Nederlanderschap](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-nederlanderschap.md) | [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (Besluit art. 2) |
-| Nederlanderschap diensten | omvat *aggregatie* | [Naturalisatieoptie](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieoptie.md) | [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 262 (GEMMA-domein Publieksdiensten)) |
-| Nederlanderschap diensten | omvat *aggregatie* | [Naturalisatieverzoek](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieverzoek.md) | [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 263 (GEMMA-domein Publieksdiensten)) |
-| Nederlanderschap diensten | omvat *aggregatie* | [Naturalisatieceremonie](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieceremonie.md) | [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 261 (GEMMA-domein Publieksdiensten)) |
-| Nederlanderschap diensten | omvat *aggregatie* | [Verklaring van afstand nederlandse nationaliteit](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-afstand-nederlandse-nationaliteit.md) | [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 436 (GEMMA-domein Publieksdiensten)) |
-| Nederlanderschap diensten | omvat *aggregatie* | [Bewijs van nederlanderschap](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md) | [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 62 (GEMMA-domein Publieksdiensten)) |
+| Nederlanderschap diensten | omvat *aggregatie* | [Naturalisatieoptie](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieoptie.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 262 (GEMMA-domein Publieksdiensten)) |
+| Nederlanderschap diensten | omvat *aggregatie* | [Naturalisatieverzoek](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieverzoek.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 263 (GEMMA-domein Publieksdiensten)) |
+| Nederlanderschap diensten | omvat *aggregatie* | [Naturalisatieceremonie](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieceremonie.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 261 (GEMMA-domein Publieksdiensten)) |
+| Nederlanderschap diensten | omvat *aggregatie* | [Verklaring van afstand nederlandse nationaliteit](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-afstand-nederlandse-nationaliteit.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 436 (GEMMA-domein Publieksdiensten)) |
+| Nederlanderschap diensten | omvat *aggregatie* | [Bewijs van nederlanderschap](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 62 (GEMMA-domein Publieksdiensten)) |
 
 #### Inkomend
 
@@ -105,7 +105,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 |---|---|
 | [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
 | [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
-| [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 

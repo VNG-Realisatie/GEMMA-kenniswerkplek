@@ -106,3 +106,8 @@ def test_raw_text_download_keeps_extension_from_url():
     assert fetch.extension_for(xml) == ".xml"
     tekst = fetch.Opgehaald(b"tekst", "text/plain", "https://example.org/bestand")
     assert fetch.extension_for(tekst) == ".txt"
+
+
+def test_csv_download_wordt_csv():
+    csv = fetch.Opgehaald(b"a,b\n1,2\n", "text/csv", "https://standaarden.overheid.nl/owms/oquery/UPL-actueel.csv")
+    assert fetch.extension_for(csv) == ".csv"

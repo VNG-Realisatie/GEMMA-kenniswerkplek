@@ -342,19 +342,59 @@ def test_kernrelatie_telt_ook_eronder():
     assert signalen._eronder("rol", relaties) == {"rol"}
 
 
+def _modelbron(wiki, tmp_path, bron_id, model, *, bronduiding=True, bronnen=()):
+    """Een bron van brontype `model` in sources/, met haar bronduiding in modellen/<model>/bronduidingen/model/."""
+    from llmwiki import sources
+    for b in (bron_id, *bronnen):
+        origineel = tmp_path / f"{b}.md"
+        origineel.write_text(f"# {b}\n", encoding="utf-8")
+        sources.add(wiki.parent.parent, b, origineel, titel=f"Titel van {b}", tags=["test"], brontype="model")
+    if bronduiding:
+        pad = wiki / "modellen" / model / "bronduidingen" / "model" / f"{bron_id}.md"
+        pad.parent.mkdir(parents=True, exist_ok=True)
+        pad.write_text(f"---\nid: {bron_id}\ntype: bronduiding\nmodel: {model}\nbronnen: [{', '.join((bron_id, *bronnen))}]\n"
+                       f"relevant: ja\nkorte_titel: Website\n---\n\n# {bron_id}\n\nBron: [tekst](../../../../../../sources/raw/{bron_id}.md)\n",
+                       encoding="utf-8")
+    return bron_id
+
+
 def test_model_als_bron_is_een_signaal(wiki, tmp_path):
     """Het GGM en het GEMMA-model zijn matchdoel, geen bron (regel Bronvoorrang)."""
-    from llmwiki import sources
-    model = "2026-vng-gemma-2026-10-02"
-    origineel = tmp_path / f"{model}.md"
-    origineel.write_text("# GEMMA\n", encoding="utf-8")
-    sources.add(wiki.parent.parent, model, origineel, titel=model, tags=["test"], brontype="model")
+    model = _modelbron(wiki, tmp_path, "2026-vng-gemma-2026-10-02", "gemma")
     bo = _bo()
     bo["kenmerken"]["wordt_bewerkt"]["bronnen"] = [WET, model]
     _schrijf(wiki, "beschikking", bo)
     res = beslissen.beslissen(wiki, schrijven=False)
     assert res.fouten == []
     assert any(w.startswith(f"beschikking: {model} is een model, matchdoel en geen bron") for w in res.waarschuwingen)
+
+
+def test_modelbron_linkt_naar_haar_bronduiding(wiki, tmp_path):
+    """Pagina → bronduiding → laag 1, ook bij het GEMMA-model (repo-AGENTS.md, Herleidbaarheid)."""
+    import gam_gemeen
+    model = _modelbron(wiki, tmp_path, "2026-vng-gemma-2026-10-02", "gemma")
+    assert gam_gemeen.bron_doel(wiki, model) == (wiki / f"modellen/gemma/bronduidingen/model/{model}.md").resolve()
+    assert render.Wiki(wiki).bron("elementpaginas/x.md", model) == f"[{model}](../modellen/gemma/bronduidingen/model/{model}.md)"
+
+
+def test_modelbron_zonder_bronduiding_is_een_fout(wiki, tmp_path):
+    model = _modelbron(wiki, tmp_path, "2026-vng-gemma-2026-10-02", "gemma", bronduiding=False)
+    bo = _bo()
+    bo["kenmerken"]["wordt_bewerkt"]["bronnen"] = [WET, model]
+    _schrijf(wiki, "beschikking", bo)
+    assert f"beschikking: bron {model} heeft geen bronduiding" in beslissen.beslissen(wiki, schrijven=False).fouten
+
+
+def test_een_bronduiding_duidt_ook_de_bronnen_in_haar_bronnenlijst(wiki, tmp_path):
+    """Een website van veel pagina's heeft één bronduiding; elke pagina linkt daarheen, met haar eigen titel."""
+    import gam_gemeen
+    _modelbron(wiki, tmp_path, "2026-ggm-website", "ggm", bronnen=["2026-ggm-website-cookbook"])
+    doel = (wiki / "modellen/ggm/bronduidingen/model/2026-ggm-website.md").resolve()
+    assert gam_gemeen.bron_doel(wiki, "2026-ggm-website-cookbook") == doel
+    w = render.Wiki(wiki)
+    assert w.korte_titel("2026-ggm-website") == "Website"
+    assert w.korte_titel("2026-ggm-website-cookbook") == "Titel van 2026-ggm-website-cookbook"
+    assert gam_gemeen.bron_doel(wiki, "2026-ggm-onbekend") is None
 
 
 def test_bronduiding_staat_in_de_map_van_haar_brontype(wiki):
@@ -795,7 +835,8 @@ def test_wettelijke_grondslag():
         return {"paginatype": paginatype, "soort": "element"}
     def data(bronnen, **extra):
         return {"beslist": {"bronnen": bronnen}, **extra}
-    soorten = {"wet": "rijksregelgeving", "hup": "richtlijn", "2025-vng-upl-producten": "informatiemodel", "site": "overig"}
+    soorten = {"wet": "rijksregelgeving", "hup": "richtlijn", "2025-vng-upl-producten": "informatiemodel",
+               "2026-logius-upl-actueel": "informatiemodel", "site": "overig"}
     alle = {
         "wet-x": data(["wet"], regelgever="rijk", relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
         "hup-x": data(["hup"], regelgever="landelijke organisatie",
@@ -810,11 +851,12 @@ def test_wettelijke_grondslag():
         "proces-vervallen": data(["site"], status="afgewezen", relaties=[{"soort": "realisatie", "naar": "dienst-upl"}]),
         "rol-zonder": data(["site"]),
         "functie": data(["site"]),
+        "dienst-logius": data(["2026-logius-upl-actueel"]),   # ook de UPL van Logius: geen signaal
     }
     elementen = {"wet-x": el("beleidskader"), "hup-x": el("beleidskader"), "vng-model": el("beleidskader"), "dienst-a": el("dienst"),
                  "dienst-upl": el("dienst"), "proces-upl": el("bedrijfsproces"),
                  "proces-vervallen": el("bedrijfsproces"), "rol-zonder": el("rol"),
-                 "functie": el("bedrijfsfunctie")}
+                 "functie": el("bedrijfsfunctie"), "dienst-logius": el("dienst")}
     fouten, signalen_ = signalen.wettelijke_grondslag(alle, elementen, soorten.get)
     assert fouten[0] == ("hup-x: een richtlijn is geen wettelijke grondslag; noem de relatie naar 'dienst-a' 'geeft "
                          "richtlijn voor' (regel Wettelijke grondslag)")

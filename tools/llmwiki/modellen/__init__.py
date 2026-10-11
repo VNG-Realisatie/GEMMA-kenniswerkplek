@@ -1,6 +1,6 @@
 """Modellen en lijsten als bron: de omzetting naar JSON (laag 1, `sources/modellen/`).
 
-Een model (ArchiMate, XMI) of lijst (xlsx) staat in `sources/modellen/` als origineel met een omzetting met dezelfde
+Een model (ArchiMate, XMI) of lijst (xlsx, csv) staat in `sources/modellen/` als origineel met een omzetting met dezelfde
 naam: `<bron-id>.<ext>` en `<bron-id>.json`, zoals een pdf in `sources/raw/` een Markdown-omzetting heeft. De omzetting
 is gereedschap van llmwiki; elke wiki leest de JSON en maakt een eigen bronduiding. Het formaat staat in FORMAAT.md.
 """
@@ -23,7 +23,7 @@ def herken(pad: Path) -> str | None:
     suffix = Path(pad).suffix.lower()
     if suffix == ".archimate":
         return "archimate"
-    if suffix == ".xlsx":
+    if suffix in (".xlsx", ".csv"):
         return "lijst"
     if suffix == ".xml":
         try:
@@ -45,8 +45,8 @@ def converteer(pad: Path, vorm: str | None = None) -> tuple[str, dict]:
     if vorm == "xmi":
         return vorm, xmi.parse_xmi(pad)
     if vorm == "lijst":
-        return vorm, lijst.parse_xlsx(pad)
-    raise ValueError(f"{pad}: geen herkend model of lijst (archimate, xmi of xlsx)")
+        return vorm, lijst.parse_csv(pad) if Path(pad).suffix.lower() == ".csv" else lijst.parse_xlsx(pad)
+    raise ValueError(f"{pad}: geen herkend model of lijst (archimate, xmi, xlsx of csv)")
 
 
 def _inhoud(data: dict) -> str:

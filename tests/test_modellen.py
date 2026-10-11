@@ -42,6 +42,7 @@ def test_herken_de_vorm_van_een_bestand(tmp_path):
     assert modellen.herken(ameff) == "archimate"
     assert modellen.herken(tmp_path / "x.archimate") == "archimate"
     assert modellen.herken(xlsx) == "lijst"
+    assert modellen.herken(tmp_path / "f.csv") == "lijst"
     assert modellen.herken(md) is None
     xmi = tmp_path / "d.xml"
     xmi.write_text(XMI_ZONDER_INHOUD, encoding="utf-8")
@@ -58,6 +59,24 @@ def test_een_lijst_wordt_per_werkblad_met_niet_lege_cellen_omgezet(tmp_path):
     assert data == {"werkbladen": [{"naam": "Producten", "rijen": [
         {"rij": 1, "cellen": {"B": "UniformeProductnaam"}},
         {"rij": 2, "cellen": {"A": "1", "B": "aangifte geboorte", "C": "X"}}]}]}
+
+
+def test_een_csv_wordt_een_werkblad_met_records_als_rijen(tmp_path):
+    pad = tmp_path / "2026-test-upl.csv"
+    pad.write_text('\ufeffUniformeProductnaam,URI,Gemeente\n'
+                   'aangifte vertrek buitenland,http://x/AangifteVertrekBuitenland,X\n'
+                   '"naam, met komma","regel\nover twee regels",\n'
+                   ',,\n'
+                   + ",".join(f"k{i}" for i in range(28)) + "\n", encoding="utf-8")
+    vorm, data = modellen.converteer(pad)
+    assert vorm == "lijst"
+    blad = data["werkbladen"][0]
+    assert blad["naam"] == "2026-test-upl"
+    assert blad["rijen"][:3] == [
+        {"rij": 1, "cellen": {"A": "UniformeProductnaam", "B": "URI", "C": "Gemeente"}},
+        {"rij": 2, "cellen": {"A": "aangifte vertrek buitenland", "B": "http://x/AangifteVertrekBuitenland", "C": "X"}},
+        {"rij": 3, "cellen": {"A": "naam, met komma", "B": "regel\nover twee regels"}}]
+    assert blad["rijen"][3]["rij"] == 5 and blad["rijen"][3]["cellen"]["AB"] == "k27"
 
 
 def test_json_omzetting_heeft_een_hash_die_wijziging_aanwijst(tmp_path):

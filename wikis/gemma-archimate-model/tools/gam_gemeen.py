@@ -127,11 +127,6 @@ def model_json(wiki_root: Path, sleutel: str) -> Path:
     return paths.find_repo_root(wiki_root) / "sources" / "modellen" / f"{bron}.json"
 
 
-def modelbronnen(wiki_root: Path = WIKI_ROOT) -> set[str]:
-    y = wiki_yaml(wiki_root)
-    return {y.get("ggm", {}).get("bron"), y.get("gemma", {}).get("bron")} - {None}
-
-
 def bronduidingen(wiki_root: Path = WIKI_ROOT, onderwerp: str = "*") -> list[Path]:
     """De bronduidingen: `onderwerpen/<onderwerp>/bronduidingen/<brontype>/<bron-id>.md`, en bij `onderwerp` `*` ook die
     van de modellen: `modellen/<model>/bronduidingen/<brontype>/<bron-id>.md`."""
@@ -152,18 +147,21 @@ def brontype(wiki_root: Path, bron_id: str) -> str | None:
 
 
 def bron_doel(wiki_root: Path, bron_id: str) -> Path | None:
-    """Waar een verwijzing naar deze bron heen linkt: de bronduiding. Een modelbron (GGM, GEMMA) heeft geen
-    bronduiding (tools/ggm.py en tools/gemma.py zijn haar lens) en linkt naar haar tekst in laag 1. Een bron van
-    een model of die voor de hele wiki geldt (Over GEMMA, de GEMMA-procesarchitectuur) heeft haar bronduiding in
-    `modellen/<model>/bronduidingen/`."""
-    if bron_id in modelbronnen(wiki_root):
-        from llmwiki import sources
-
-        repo = paths.find_repo_root(wiki_root)
-        pad = sources.bron_dir(repo, bron_id) / f"{bron_id}.md"
-        return pad.resolve() if pad.exists() else None
-    treffers = [p for p in bronduidingen(wiki_root) if p.stem == bron_id]
+    """Waar een verwijzing naar deze bron heen linkt: de bronduiding, ook bij een modelbron (het GGM, het GEMMA-model).
+    Dat is de bronduiding met dit bron-id als naam, en anders een bronduiding die de bron in `bronnen:` noemt (een
+    bronduiding van een website duidt alle pagina's samen). Een bron van een model of die voor de hele wiki geldt, heeft
+    haar bronduiding in `modellen/<model>/bronduidingen/`."""
+    paden = bronduidingen(wiki_root)
+    treffers = [p for p in paden if p.stem == bron_id] or [p for p in paden if bron_id in _geduide_bronnen(p, p.stat().st_mtime_ns)]
     return treffers[0].resolve() if treffers else None
+
+
+@functools.cache
+def _geduide_bronnen(pad: Path, _mtime: int) -> frozenset[str]:
+    """De bron-id's in `bronnen:` van een bronduiding; per versie van het bestand één keer gelezen."""
+    from llmwiki import frontmatter
+
+    return frozenset(frontmatter.read(pad).meta.get("bronnen") or [])
 
 
 def bronnen_als_link(van: Path, tekst: str, wiki_root: Path = WIKI_ROOT) -> str:

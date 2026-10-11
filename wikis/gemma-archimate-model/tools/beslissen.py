@@ -220,7 +220,7 @@ def _controleer_bronnen(ctx: Context, bid: str, bronnen: list[str], res: Resulta
         if ctx.brontype(bron_id) is None:
             res.fouten.append(f"{bid}: bron {bron_id} staat niet in sources/index")
         elif gam_gemeen.bron_doel(ctx.wiki_root, bron_id) is None:
-            res.fouten.append(f"{bid}: bron {bron_id} heeft geen bronduiding (of, bij een modelbron, geen tekst in laag 1)")
+            res.fouten.append(f"{bid}: bron {bron_id} heeft geen bronduiding")
 
 
 def herkomst(ctx: Context, bronnen: list[str]) -> str | None:

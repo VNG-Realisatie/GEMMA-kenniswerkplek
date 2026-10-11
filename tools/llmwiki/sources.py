@@ -97,7 +97,7 @@ def add(
     opgehaald: str = "",
     vorm: str | None = None,
 ) -> Path:
-    """Voeg een bron toe aan laag 1. Een model of lijst (ArchiMate, XMI, xlsx) gaat naar `sources/modellen/` met een
+    """Voeg een bron toe aan laag 1. Een model of lijst (ArchiMate, XMI, xlsx, csv) gaat naar `sources/modellen/` met een
     omzetting naar JSON; een document naar `sources/raw/` met een omzetting naar Markdown. `vorm` `document` dwingt
     `raw` af; de vorm bepaalt alleen de map, niet de rol van de bron (`brontype`)."""
     if brontype and brontype not in BRONTYPEN:

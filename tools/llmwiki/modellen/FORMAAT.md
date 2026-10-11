@@ -1,6 +1,6 @@
 # Het JSON-formaat van sources/modellen/
 
-Een model of lijst staat in `sources/modellen/` als origineel met een omzetting met dezelfde naam: `<bron-id>.<ext>` (het origineel, nooit gewijzigd) en `<bron-id>.json` (de omzetting). Eventueel staat er ook een `<bron-id>.md`: een leesbare weergave die de wiki erbij maakte, met regelnummers waar een bronduiding naar kan verwijzen. `llmwiki source add` kiest de map aan de hand van de vorm van het bestand (`.archimate`, AMEFF-xml en XMI-xml, `.xlsx`); de rol van de bron (`brontype`) doet daarbij niet mee.
+Een model of lijst staat in `sources/modellen/` als origineel met een omzetting met dezelfde naam: `<bron-id>.<ext>` (het origineel, nooit gewijzigd) en `<bron-id>.json` (de omzetting). Eventueel staat er ook een `<bron-id>.md`: een leesbare weergave die de wiki erbij maakte, met regelnummers waar een bronduiding naar kan verwijzen. `llmwiki source add` kiest de map aan de hand van de vorm van het bestand (`.archimate`, AMEFF-xml en XMI-xml, `.xlsx` en `.csv`); de rol van de bron (`brontype`) doet daarbij niet mee.
 
 Elke omzetting heeft dezelfde omhulling: `{"_gegenereerd": {"tool": "llmwiki.modellen", "vorm": "<vorm>", "hash": "<sha256 van data>"}, "data": {...}}`. De hash laat zien dat niemand de omzetting met de hand wijzigde (`llmwiki.modellen.controleer_json`). De sleutels van `data` staan alfabetisch.
 
@@ -24,4 +24,7 @@ Een XMI 2.1-export uit Enterprise Architect, zoals het Gemeentelijk Gegevensmode
 
 ## Vorm `lijst` (`lijst.py`)
 
-Een Excel-werkmap, zoals de Uniforme Productnamenlijst (UPL). `data.werkbladen` is een lijst van `{naam, rijen}`; elke rij is `{rij, cellen}` met het rijnummer uit Excel en de niet-lege cellen onder hun kolomletter (`{"A": "1", "B": "aangifte geboorte"}`). De celinhoud staat letterlijk in het JSON; een lege rij ontbreekt. De eerste rij van een werkblad is meestal de kop.
+Een Excel-werkmap of een CSV-bestand, zoals de Uniforme Productnamenlijst (UPL). `data.werkbladen` is een lijst van `{naam, rijen}`; elke rij is `{rij, cellen}` met het rijnummer en de niet-lege cellen onder hun kolomletter (`{"A": "1", "B": "aangifte geboorte"}`). De celinhoud staat letterlijk in het JSON; een lege rij ontbreekt. De eerste rij van een werkblad is meestal de kop.
+
+- Bij een werkmap is het rijnummer dat uit Excel.
+- Een CSV (UTF-8, komma als scheidingsteken) is één werkblad met de naam van het opgenomen bestand zonder extensie. Het rijnummer is het nummer van het record, de kop is rij 1; de kolommen krijgen letters zoals in Excel (A, B, … Z, AA).
