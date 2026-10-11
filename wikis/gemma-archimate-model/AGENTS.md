@@ -60,7 +60,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 | Werkinstructie per veld van een beoordeling | skill gemma-archimate-model-beoordelen en zijn `references/` | — | — | ja |
 | Sjablonen | beoordeling: skill gemma-archimate-model-beoordelen §4; bronduiding: skill gemma-archimate-model-ingest §4; terugmelding: `references/terugmeldingen.md`; besluit en voorleggen: `references/besluiten.md`; vorm: `schemas/` | — | — | ja |
 | Oordeel per begrip | `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` | — | de AI; `status` en `beslist` de scripts | ja, behalve `status` en `beslist` |
-| Registers | `onderwerpen/<onderwerp>/afbakening.yaml`, `modellen/*/terugmeldingen`, `modellen/gemma/indelingen/beleidsdomeinen.yaml`, `beoordelingen/objecten.yaml` | — | de AI | ja |
+| Registers | `onderwerpen/<onderwerp>/afbakening.yaml`, `modellen/*/terugmeldingen`, `modellen/gemma/indelingen/beleidsdomeinen.yaml` | — | de AI | ja |
 | Wat een bron betekent | `onderwerpen/<onderwerp>/bronduidingen/<brontype>/<bron-id>.md`, of `modellen/<model>/bronduidingen/<brontype>/<bron-id>.md` voor een bron van een model | bronduiding | de AI | ja |
 | Waarom: uitgangspunten en onderbouwing | [ARCHITECTURE.md](ARCHITECTURE.md) | — | de AI, na een besluit van de redacteur | ja |
 | Besluiten over een begrip of onderwerp | `besluiten:` van de beoordeling of het onderwerp; de begrippenlijst toont die van het onderwerp | — | de AI, met de redacteur | ja |

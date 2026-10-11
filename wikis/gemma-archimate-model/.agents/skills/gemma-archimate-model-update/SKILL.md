@@ -31,7 +31,7 @@ Volg skill `wiki-curatie-update`. Deze workflow vult de stappen in voor deze wik
 
 - Pagina's (`elementpaginas/`, `onderwerpen/<onderwerp>/begrippen.md` en `overzicht.md`, de lijsten bij `modellen/*/terugmeldingen`, `ter-beoordeling.md`, `voortgang.md`, alles met paginatype `lijst`) nooit met de hand bewerken: wijzig de beoordeling of het register en draai `tools/beslissen.py`.
 - `status:` en `beslist:` in een beoordeling nooit zelf invullen; de scripts zetten ze.
-- Hernoemen, samenvoegen of splitsen van een element: leg in `beoordelingen/objecten.yaml` vast welk Archi-object het voortzet (regel Objectbehoud). Bij samenvoegen en splitsen eerst de redacteur vragen.
+- Hernoemen, samenvoegen of splitsen van een element: leg in het veld `object_van` van de beoordeling vast welk Archi-object het voortzet (regel Objectbehoud). Bij samenvoegen en splitsen eerst de redacteur vragen.
 - Nooit zelf AKKOORD typen of `promote apply` draaien zonder dat de redacteur letterlijk AKKOORD typte.
 
 ## Delegatie

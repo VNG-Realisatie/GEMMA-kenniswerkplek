@@ -41,11 +41,11 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | actor | 0 | 0 | 10 | 0 |
 | bedrijfsfunctie | 0 | 0 | 12 | 2 |
 | bedrijfsinteractie | 0 | 0 | 1 | 0 |
-| bedrijfsobject | 0 | 0 | 22 | 0 |
-| bedrijfsproces | 0 | 0 | 71 | 6 |
+| bedrijfsobject | 0 | 1 | 21 | 0 |
+| bedrijfsproces | 0 | 3 | 68 | 6 |
 | beleidskader | 0 | 0 | 17 | 0 |
-| dienst | 0 | 0 | 76 | 1 |
-| gebeurtenis | 0 | 0 | 20 | 0 |
+| dienst | 0 | 1 | 75 | 1 |
+| gebeurtenis | 0 | 1 | 19 | 0 |
 | product | 0 | 0 | 1 | 0 |
 | rol | 0 | 0 | 24 | 0 |
 

@@ -15,8 +15,7 @@ Nieuwe GGM-terugmeldingen in `modellen/ggm/terugmeldingen.yaml` krijgen het volg
 
 Harde controles (fout: er wordt niets geschreven): schema, kenmerken, verplichte velden van een element, bestaan van
 bronnen (met bronduiding), GGM-guid, GEMMA-id, doelen van relaties, specialisaties, tegenhanger en homoniemen, de
-ArchiMate-relatietabel, de bronduidingen, de gegenereerde modelmappen, het register van Archi-objecten
-(`beoordelingen/objecten.yaml`), het register van beleidsdomeinen (`modellen/gemma/indelingen/beleidsdomeinen.yaml`) en de besluiten van onderwerpen en beoordelingen (vorm, geen bestandspad). Zachte signalen (waarschuwingen, met de naam
+ArchiMate-relatietabel, de bronduidingen, de gegenereerde modelmappen, het veld `object_van` (Archi-objecten), het register van beleidsdomeinen (`modellen/gemma/indelingen/beleidsdomeinen.yaml`) en de besluiten van onderwerpen en beoordelingen (vorm, geen bestandspad). Zachte signalen (waarschuwingen, met de naam
 van de regel) staan in tools/signalen.py. Daarna draait het render-script (tools/render.py), tenzij `--zonder-render`.
 
 Gebruik (vanuit de wikimap):
@@ -49,9 +48,7 @@ PA_TERUGMELDINGEN = gam_gemeen.PA_TERUGMELDINGEN
 PA_TYPEN = ("indeling", "grondslag", "product", "kennismodel")
 GEMMA_TERUGMELDINGEN = gam_gemeen.GEMMA_TERUGMELDINGEN
 GEMMA_TYPEN = ("element", "indeling", "definitie", "relatie")
-OBJECTEN = Path("beoordelingen") / "objecten.yaml"
 BELEIDSDOMEINEN = gam_gemeen.BELEIDSDOMEINEN
-WIJZIGINGEN = ("hernoemd", "samengevoegd", "gesplitst")
 
 
 @dataclass
@@ -361,32 +358,23 @@ def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat, r
     return register
 
 
-def _objecten(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> None:
-    """Het register van Archi-objecten: welk bestaand object een element voortzet na hernoemen, samenvoegen of splitsen
-   . Een element zet hoogstens één object voort, een object wordt door hoogstens één
-    element voortgezet, en een begrip dat nog een element is, geeft zijn object niet door."""
-    pad = ctx.wiki_root / OBJECTEN
-    if not pad.exists():
-        return
-    regels = beoordeling.laad(pad).get("objecten", [])
-    elementen, objecten = set(), set()
-    for i, o in enumerate(regels, 1):
-        naam = f"objecten {i} ({o.get('element')})"
-        for veld in ("element", "object_van", "wijziging", "datum"):
-            if not o.get(veld):
-                res.fouten.append(f"{naam}: '{veld}' ontbreekt")
-        if o.get("wijziging") and o["wijziging"] not in WIJZIGINGEN:
-            res.fouten.append(f"{naam}: wijziging '{o['wijziging']}' (kies uit {', '.join(WIJZIGINGEN)})")
-        if o.get("element") and (uitkomsten.get(o["element"]) or {}).get("soort") != "element":
-            res.fouten.append(f"{naam}: '{o['element']}' is geen element")
-        if o.get("object_van") and (uitkomsten.get(o["object_van"]) or {}).get("soort") == "element":
-            res.fouten.append(f"{naam}: '{o['object_van']}' is zelf nog een element en houdt zijn eigen object")
-        if o.get("element") in elementen:
-            res.fouten.append(f"{naam}: het element zet al een ander object voort")
-        if o.get("object_van") in objecten:
-            res.fouten.append(f"{naam}: het object van '{o['object_van']}' wordt al door een ander element voortgezet")
-        elementen.add(o.get("element"))
-        objecten.add(o.get("object_van"))
+def _objecten(alle: dict[str, tuple[Path, dict]], uitkomsten: dict[str, dict], res: Resultaat) -> None:
+    """Het veld `object_van`: welk bestaand Archi-object een element voortzet na hernoemen, samenvoegen of splitsen.
+    Een element zet hoogstens één object voort, een object wordt door hoogstens één element voortgezet, en een begrip
+    dat nog een element is, geeft zijn object niet door."""
+    objecten: dict[str, str] = {}
+    for bid, (_, data) in alle.items():
+        o = data.get("object_van")
+        if not o or uitkomsten.get(bid) is None:
+            continue
+        naam = f"{bid}: object_van"
+        if (uitkomsten.get(bid) or {}).get("soort") != "element":
+            res.fouten.append(f"{naam}: '{bid}' is geen element")
+        if (uitkomsten.get(o["id"]) or {}).get("soort") == "element":
+            res.fouten.append(f"{naam}: '{o['id']}' is zelf nog een element en houdt zijn eigen object")
+        if o["id"] in objecten:
+            res.fouten.append(f"{naam}: het object van '{o['id']}' wordt al door '{objecten[o['id']]}' voortgezet")
+        objecten[o["id"]] = bid
 
 
 BESTANDSPAD = re.compile(r"(?<![\w./-])(?!ARCHITECTURE\.md\b)[\w./-]+\.(?:md|ya?ml|py|json)\b|\b(?:docs|tools|beoordelingen"
@@ -584,7 +572,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         res.waarschuwingen += signalen.functie_indeling(
             {b: d for b, (_, d) in alle.items()}, elementen,
             [(van, r) for van in elementen for r in alle[van][1].get("relaties", [])], ctx.gemma() if gekoppeld else {})
-    _objecten(ctx, uitkomsten, res)
+    _objecten(alle, uitkomsten, res)
     _beleidsdomeinen(ctx, alle, uitkomsten, res)
     begripnamen = {d["begrip"].lower(): b for b, (_, d) in alle.items()}
     for oid, onderwerp in onderwerpen.items():

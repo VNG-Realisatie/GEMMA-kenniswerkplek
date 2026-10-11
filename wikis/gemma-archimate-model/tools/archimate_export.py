@@ -93,14 +93,13 @@ def vast_id(*delen: str) -> str:
     return "id-" + uuid.uuid5(NS, "/".join(delen)).hex
 
 
-OBJECTEN = Path("beoordelingen") / "objecten.yaml"
 BELEIDSDOMEINEN = gam_gemeen.BELEIDSDOMEINEN
 
 
-def object_sleutels(register: dict | None) -> dict[str, str]:
-    """Begrip-id → het begrip-id waarvan het Archi-object wordt voortgezet (na hernoemen, samenvoegen of splitsen),
-    langs een keten (a → b → c). Zo houdt een element zijn id in Archi en blijven views werken."""
-    direct = {o["element"]: o["object_van"] for o in (register or {}).get("objecten", [])}
+def object_sleutels(begrippen: dict[str, dict] | None) -> dict[str, str]:
+    """Begrip-id → het begrip-id waarvan het Archi-object wordt voortgezet (`object_van` in de beoordeling, na hernoemen,
+    samenvoegen of splitsen), langs een keten (a → b → c). Zo houdt een element zijn id in Archi en blijven views werken."""
+    direct = {bid: d["object_van"]["id"] for bid, d in (begrippen or {}).items() if d.get("object_van")}
     uit = {}
     for bid in direct:
         sleutel, gezien = bid, set()
@@ -341,11 +340,11 @@ GEMMA_TYPE_LEVENSLOOP = "Bedrijfsproces (cluster)"  # GEMMA type van de clusters
 
 
 def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstempel: str, concept: bool = False,
-         log: str = "", wiki_yaml: dict | None = None, objecten: dict | None = None,
+         log: str = "", wiki_yaml: dict | None = None,
          vorige: dict[str, str] | None = None, kennismodel: dict | None = None,
          beleidsdomeinen: dict[str, dict] | None = None) -> Uitkomst:
     uit = Uitkomst()
-    sleutels = object_sleutels(objecten)
+    sleutels = object_sleutels(begrippen)
     sleutel = lambda bid: sleutels.get(bid, bid)  # noqa: E731
     gekozen, uit.fouten = selectie(begrippen, log, concept)
     b = Bouwer(gemma_data, tijdstempel, concept)
@@ -368,7 +367,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
         if eid in (vorige or {}) and vorige[eid] != xsi_type(atype):
             uit.fouten.append(f"{bid}: zet het Archi-object van '{sleutel(bid)}' voort, maar het type wijzigt "
                               f"({vorige[eid]} → {xsi_type(atype)}); Archi kan het type van een bestaand object niet "
-                              "wijzigen bij een import. Leg dit voor aan de redacteur (beoordelingen/objecten.yaml).")
+                              "wijzigen bij een import. Leg dit voor aan de redacteur (veld object_van).")
             continue
         ids[bid] = eid
         el = ET.Element("element", {XSI: xsi_type(atype), "name": data["begrip"], "id": eid})
@@ -997,7 +996,6 @@ def main(argv: list[str] | None = None) -> int:
     tijdstempel = datetime.now().isoformat(timespec="seconds")
     begrippen = {bid: data for bid, (_, data) in beoordeling.alle(args.wiki, wiki_yaml).items()}
     log = (args.wiki / "log.md").read_text(encoding="utf-8") if (args.wiki / "log.md").exists() else ""
-    objecten = beoordeling.laad(args.wiki / OBJECTEN) if (args.wiki / OBJECTEN).exists() else None
     beleidsdomeinen = {x["beleidsdomein"]: x for x in beoordeling.laad(args.wiki / BELEIDSDOMEINEN).get("beleidsdomeinen", [])} \
         if (args.wiki / BELEIDSDOMEINEN).exists() else None
     vorige = vorige_typen(args.wiki / EXPORT)
@@ -1011,7 +1009,7 @@ def main(argv: list[str] | None = None) -> int:
         else:
             fouten.append(f"kennismodel: bron {km_pad} ontbreekt (wiki.yaml kennismodel.bron)")
     uit = Uitkomst() if fouten else bouw(gemma_data, begrippen, gemma_bron, tijdstempel, args.concept, log, wiki_yaml,
-                                         objecten, vorige, kennismodel, beleidsdomeinen)
+                                         vorige, kennismodel, beleidsdomeinen)
     fouten += uit.fouten
     fouten += [f"{naam}: geen plaats in een indeling (elk element staat in minstens één indeling)" for naam in uit.zonder_plaats]
     for f in fouten:

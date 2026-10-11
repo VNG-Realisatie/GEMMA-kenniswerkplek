@@ -849,3 +849,17 @@ def test_besluiten_van_een_onderwerp(wiki):
     assert any(f.startswith("onderwerp test, besluit 1: 'besluit' noemt het bestandspad 'references/relaties.md'") for f in fouten)
     assert any(f.startswith(f"onderwerp test, besluit 2: '{begrip}' heeft een beoordeling") for f in fouten)
     assert not any("besluit 2: 'besluit' noemt" in f for f in fouten)   # ARCHITECTURE.md bij naam mag
+
+
+def test_object_van_zet_een_object_voort_en_wordt_getoetst(wiki):
+    van = {"id": "oud-begrip", "wijziging": "hernoemd", "datum": "2026-10-05"}
+    _schrijf(wiki, "beschikking", _bo(object_van=van))
+    _schrijf(wiki, "behandelen-aanvraag", _proces())
+    assert _beslissen(wiki).fouten == []
+    # een tweede element dat hetzelfde object voortzet
+    _schrijf(wiki, "behandelen-aanvraag", _proces(object_van=van))
+    assert any("wordt al door 'behandelen-aanvraag' voortgezet" in f or "wordt al door 'beschikking' voortgezet" in f
+               for f in beslissen.beslissen(wiki).fouten)
+    # het object is zelf nog een element
+    _schrijf(wiki, "behandelen-aanvraag", _proces(object_van={**van, "id": "beschikking"}))
+    assert any("is zelf nog een element" in f for f in beslissen.beslissen(wiki).fouten)

@@ -407,6 +407,33 @@
         "additionalProperties": false
       }
     },
+    "object_van": {
+      "type": "object",
+      "required": [
+        "id",
+        "wijziging",
+        "datum"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "wijziging": {
+          "enum": [
+            "hernoemd",
+            "samengevoegd",
+            "gesplitst"
+          ]
+        },
+        "datum": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Het Archi-object dat dit element voortzet na hernoemen, samenvoegen of splitsen (regel Objectbehoud): het begrip-id van het oude begrip. Hernoemd: altijd; samengevoegd of gesplitst: de redacteur kiest of en welk object blijft"
+    },
     "taakveld": {
       "type": "string",
       "minLength": 1

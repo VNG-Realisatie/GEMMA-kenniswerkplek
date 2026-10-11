@@ -246,6 +246,10 @@ relaties:
   vindplaats: art. 22a
 onderwerpen:
 - lijkbezorging
+object_van:
+  id: treffen-maatregel-bij-besmet-lijk
+  wijziging: hernoemd
+  datum: '2026-10-05'
 kernobject: stoffelijk-overschot
 afnemer: extern
 gemma_generiek:
@@ -265,7 +269,7 @@ besluiten:
 synoniemen:
 - naam: Treffen maatregel bij besmet lijk
   context: wet
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

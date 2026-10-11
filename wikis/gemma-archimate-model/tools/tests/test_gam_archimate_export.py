@@ -470,10 +470,10 @@ def test_product_hangt_aan_de_domeingroepering(tmp_path):
     assert not any("Grafuitgifte" in o for o in uit.overgeslagen)
 
 
-def _export_met(tmp_path, begrippen, objecten=None, vorige=None):
+def _export_met(tmp_path, begrippen, vorige=None):
     pad = tmp_path / "gemma-indeling.archimate"
     pad.write_text(GEMMA_INDELING, encoding="utf-8")
-    uit = ae.bouw(gemma.parse(pad), begrippen, "2026-vng-gemma", "2026-10-05T12:00:00", True, "", WIKI_YAML, objecten, vorige)
+    uit = ae.bouw(gemma.parse(pad), begrippen, "2026-vng-gemma", "2026-10-05T12:00:00", True, "", WIKI_YAML, vorige)
     return uit, ET.fromstring(uit.xml)
 
 
@@ -486,9 +486,8 @@ def test_hernoemd_element_houdt_zijn_archi_object_en_relaties(tmp_path):
     deel["begrip"] = "Opgraven stoffelijk overschot"
     begrippen["opgraven-stoffelijk-overschot"] = deel
     begrippen["toestaan-lijkbezorging"]["relaties"][0]["naar"] = "opgraven-stoffelijk-overschot"
-    objecten = {"objecten": [{"element": "opgraven-stoffelijk-overschot", "object_van": "opgraven-lijk",
-                              "wijziging": "hernoemd", "datum": "2026-10-05"}]}
-    uit, na = _export_met(tmp_path, begrippen, objecten)
+    deel["object_van"] = {"id": "opgraven-lijk", "wijziging": "hernoemd", "datum": "2026-10-05"}
+    uit, na = _export_met(tmp_path, begrippen)
     assert not uit.fouten, uit.fouten
     el = _el(na, ae.vast_id("element", "opgraven-lijk"))
     assert el.get("name") == "Opgraven stoffelijk overschot"
@@ -499,14 +498,15 @@ def test_hernoemd_element_houdt_zijn_archi_object_en_relaties(tmp_path):
 
 
 def test_voortgezet_object_met_ander_type_is_een_fout(tmp_path):
-    objecten = {"objecten": [{"element": "lijk", "object_van": "oud-proces", "wijziging": "gesplitst", "datum": "2026-10-05"}]}
+    begrippen = _indeling_begrippen()
+    begrippen["lijk"]["object_van"] = {"id": "oud-proces", "wijziging": "gesplitst", "datum": "2026-10-05"}
     vorige = {ae.vast_id("element", "oud-proces"): "archimate:BusinessProcess"}
-    uit, _ = _export_met(tmp_path, _indeling_begrippen(), objecten, vorige)
+    uit, _ = _export_met(tmp_path, begrippen, vorige)
     assert any("lijk: zet het Archi-object van 'oud-proces' voort, maar het type wijzigt" in f for f in uit.fouten)
 
 
 def test_object_sleutels_volgen_een_keten():
-    reg = {"objecten": [{"element": "c", "object_van": "b"}, {"element": "b", "object_van": "a"}]}
+    reg = {"c": {"object_van": {"id": "b"}}, "b": {"object_van": {"id": "a"}}, "a": {}}
     assert ae.object_sleutels(reg) == {"c": "a", "b": "a"}
 
 def test_element_zonder_plaats_in_een_indeling_wordt_gemeld(tmp_path):

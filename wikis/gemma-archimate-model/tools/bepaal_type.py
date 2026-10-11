@@ -1229,6 +1229,11 @@ def schema() -> dict:
             "per_onderwerp": {"type": "object", "propertyNames": {"pattern": id_["pattern"]},
                               "additionalProperties": alineas},
             "synoniemen": {"type": "array", "items": obj(["naam", "context"], naam=tekst, context=tekst)},
+            "object_van": {**obj(["id", "wijziging", "datum"], id=id_, wijziging={"enum": ["hernoemd", "samengevoegd", "gesplitst"]},
+                                 datum={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}),
+                           "description": "Het Archi-object dat dit element voortzet na hernoemen, samenvoegen of splitsen "
+                                          "(regel Objectbehoud): het begrip-id van het oude begrip. Hernoemd: altijd; "
+                                          "samengevoegd of gesplitst: de redacteur kiest of en welk object blijft"},
             "taakveld": tekst,
             "beleidsdomein": tekst,
             "ggm": obj(["sterkte", "onderbouwing"], guid={"type": "string", "pattern": "^EAID_"}, sterkte=sterkte,

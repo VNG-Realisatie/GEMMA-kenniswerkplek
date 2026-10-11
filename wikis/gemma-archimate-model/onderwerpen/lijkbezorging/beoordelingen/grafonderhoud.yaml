@@ -226,6 +226,10 @@ relaties:
   vindplaats: art. 23, 24 lid 3
 onderwerpen:
 - lijkbezorging
+object_van:
+  id: onderhoud-van-graven
+  wijziging: hernoemd
+  datum: '2026-10-05'
 domein: Fysieke leefomgeving
 afnemer: extern
 synoniemen:
@@ -235,7 +239,7 @@ besluiten:
 - datum: '2026-10-05'
   besluit: Naam Grafonderhoud, de UPL-naam letterlijk; Onderhoud van graven (beleid) wordt een synoniem.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
