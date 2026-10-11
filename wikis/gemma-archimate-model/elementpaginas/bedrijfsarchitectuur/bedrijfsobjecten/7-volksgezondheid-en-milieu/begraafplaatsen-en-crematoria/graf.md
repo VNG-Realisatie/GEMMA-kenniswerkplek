@@ -34,7 +34,7 @@ Plaats op een begraafplaats waarin stoffelijke overschotten worden begraven of u
 
 ### Beschrijving
 
-Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k); het is een zandgraf of keldergraf (VNG-model art. 1 b). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven stoffelijke overschotten met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina. Graven van historische betekenis staan op een lijst; over het ruimen daarvan beslist de raad (VNG-model art. 26). Op het graf kan een grafbedekking staan, een gedenkteken of grafbeplanting; zolang het graf niet geruimd mag worden, wordt wat erop geplaatst is geen eigendom van de grondeigenaar (art. 32a).
+Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k); het is een zandgraf of keldergraf (VNG-modelverordening art. 1 b). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven stoffelijke overschotten met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina. Graven van historische betekenis staan op een lijst; over het ruimen daarvan beslist de raad (VNG-modelverordening art. 26). Op het graf kan een grafbedekking staan, een gedenkteken of grafbeplanting; zolang het graf niet geruimd mag worden, wordt wat erop geplaatst is geen eigendom van de grondeigenaar (art. 32a).
 
 ## Plaats in het model
 
@@ -74,10 +74,10 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 - **Particulier graf voor onbepaalde tijd**: Particulier graf tot de begraafplaats gesloten wordt verklaard (Groningen art. 1 t). Geen eigen pagina.
 - **Particulier kindergraf**: Particulier graf voor bepaalde tijd voor levenloos geborenen en kinderen beneden 12 jaar (Groningen art. 1 q). Geen eigen pagina.
 - **Particulier foetusgraf**: Graf waarin een foetus jonger dan 24 weken kan worden bijgezet (Groningen art. 1 o). Geen eigen pagina.
-- **Particulier urnengraf**: Graf met het uitsluitend recht tot bijzetten van asbussen of sierurnen, 5 tot 30 jaar (Groningen art. 1 u, 16; VNG-model art. 1 h). Geen eigen pagina.
-- **Algemeen urnengraf**: Graf bij de gemeente in beheer voor het bijzetten van asbussen (VNG-model art. 1 i). Geen eigen pagina.
-- **Particuliere urnennis**: Nis in een urnenmuur met het uitsluitend recht tot bijzetten van asbussen (Groningen art. 1 v; VNG-model art. 1 j). Geen eigen pagina.
-- **Particuliere gedenkplaats**: Plaats met het uitsluitend recht om overledenen te gedenken, bijvoorbeeld vermisten (VNG-model art. 1 k, toelichting art. 11). Geen eigen pagina.
+- **Particulier urnengraf**: Graf met het uitsluitend recht tot bijzetten van asbussen of sierurnen, 5 tot 30 jaar (Groningen art. 1 u, 16; VNG-modelverordening art. 1 h). Geen eigen pagina.
+- **Algemeen urnengraf**: Graf bij de gemeente in beheer voor het bijzetten van asbussen (VNG-modelverordening art. 1 i). Geen eigen pagina.
+- **Particuliere urnennis**: Nis in een urnenmuur met het uitsluitend recht tot bijzetten van asbussen (Groningen art. 1 v; VNG-modelverordening art. 1 j). Geen eigen pagina.
+- **Particuliere gedenkplaats**: Plaats met het uitsluitend recht om overledenen te gedenken, bijvoorbeeld vermisten (VNG-modelverordening art. 1 k, toelichting art. 11). Geen eigen pagina.
 - **Partnergraf**: Twee graven naast elkaar voor twee met namen aangeduide overledenen (Groningen art. 1 dd, 14). Geen eigen pagina.
 - **Vrije-veldgraf**: Particulier graf op het vrije begraafveld, met vrije keus van locatie en monument (Groningen art. 1 r, cc). Geen eigen pagina.
 

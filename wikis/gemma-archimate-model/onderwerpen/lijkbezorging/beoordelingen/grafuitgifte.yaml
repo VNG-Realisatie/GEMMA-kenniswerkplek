@@ -4,7 +4,7 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: UPL-product Grafuitgifte (nr. 165); uitgifte van graven op aanvraag is gangbaar in de beheersverordeningen (VNG-model art. 11, 13–15; Groningen art. 14, 16; VNG retributies).
+    onderbouwing: UPL-product Grafuitgifte (nr. 165); uitgifte van graven op aanvraag is gangbaar in de beheersverordeningen (VNG-modelverordening art. 11, 13–15; Groningen art. 14, 16; VNG retributies).
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -12,7 +12,7 @@ kenmerken:
     - 2026-vng-retributies
   gemeentelijk:
     waarde: ja
-    onderbouwing: De gemeente geeft graven uit op haar begraafplaatsen (VNG-model art. 13–15; Groningen art. 16).
+    onderbouwing: De gemeente geeft graven uit op haar begraafplaatsen (VNG-modelverordening art. 13–15; Groningen art. 16).
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -92,7 +92,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   aangeboden_gedrag:
     waarde: ja
-    onderbouwing: 'Prestatie die de gemeente aanbiedt: een particulier graf, urnengraf of urnennis laten uitgeven; de toelichting op het VNG-model spreekt van dienstverlening en een voorzieningenpakket (toelichting 2).'
+    onderbouwing: 'Prestatie die de gemeente aanbiedt: een particulier graf, urnengraf of urnennis laten uitgeven; de toelichting op de VNG-modelverordening spreekt van dienstverlening en een voorzieningenpakket (toelichting 2).'
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -110,7 +110,7 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: Het uitsluitend recht op een particulier graf voor een vaste termijn (VNG-model art. 15; Groningen art. 16).
+    onderbouwing: Het uitsluitend recht op een particulier graf voor een vaste termijn (VNG-modelverordening art. 15; Groningen art. 16).
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -213,7 +213,7 @@ kenmerken:
     onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Een particulier graf, urnengraf of urnennis laten uitgeven, met het grafrecht daarop.
 beschrijving:
-- De gemeente geeft op haar begraafplaatsen particuliere graven, urnengraven en urnennissen uit (VNG-model art. 11, 13–15; Groningen art. 14, 16). Wie een graf wil, dient een schriftelijke aanvraag in; het college verleent het recht voor een vaste termijn, voor zover er ruimte is, en de gemeente heft er lijkbezorgingsrechten voor (Groningen art. 16; VNG-model art. 15; VNG retributies); die staan in de UPL als het product grafrechten (Gemeentewet art. 229; VNG retributies). Het VNG-model beveelt aan aanvragen in te dienen bij de beheerder van de begraafplaats (toelichting 2).
+- De gemeente geeft op haar begraafplaatsen particuliere graven, urnengraven en urnennissen uit (VNG-modelverordening art. 11, 13–15; Groningen art. 14, 16). Wie een graf wil, dient een schriftelijke aanvraag in; het college verleent het recht voor een vaste termijn, voor zover er ruimte is, en de gemeente heft er lijkbezorgingsrechten voor (Groningen art. 16; VNG-modelverordening art. 15; VNG retributies); die staan in de UPL als het product grafrechten (Gemeentewet art. 229; VNG retributies). De VNG-modelverordening beveelt aan aanvragen in te dienen bij de beheerder van de begraafplaats (toelichting 2).
 - De UPL geeft als grondslag art. 11 van de model-beheersverordening (indeling graven en asbezorging); de uitgifte zelf staat in art. 13 tot 15 van dat model (UPL).
 synoniemen:
 - naam: Graf aanvragen
@@ -243,7 +243,7 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: Groningen art. 16; VNG-model art. 15; Wlb art. 23 lid 2, 28 lid 1
+  vindplaats: Groningen art. 16; VNG-modelverordening art. 15; Wlb art. 23 lid 2, 28 lid 1
 besluiten:
 - datum: '2026-10-01'
   besluit: Opnemen als dienst onder de naam Graf aanvragen, met synoniem Grafrecht aanvragen.

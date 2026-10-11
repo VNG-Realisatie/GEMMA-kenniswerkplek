@@ -39,9 +39,9 @@ Uitsluitend recht om in een particulier graf stoffelijke overschotten te laten b
 
 ### Beschrijving
 
-Het grafrecht wordt schriftelijk gevestigd, voor onbepaalde tijd of voor ten minste tien jaar, en op verzoek verlengd (art. 28). De gemeente verleent het op aanvraag, voor 30 jaar bij een particulier graf of 5 tot 30 jaar bij een urnengraf (Groningen art. 16). Het recht kan worden overgeschreven (Groningen art. 18; VNG-model art. 17), de rechthebbende kan er afstand van doen (art. 19), en het vervalt door verloop van de termijn of wordt vervallen verklaard, bijvoorbeeld bij verwaarlozing of niet-betalen (art. 28 lid 4–6; Groningen art. 20). Verlenging, overschrijving en afstand zijn stappen in de levenscyclus van het grafrecht, geen eigen elementen.
+Het grafrecht wordt schriftelijk gevestigd, voor onbepaalde tijd of voor ten minste tien jaar, en op verzoek verlengd (art. 28). De gemeente verleent het op aanvraag, voor 30 jaar bij een particulier graf of 5 tot 30 jaar bij een urnengraf (Groningen art. 16). Het recht kan worden overgeschreven (Groningen art. 18; VNG-modelverordening art. 17), de rechthebbende kan er afstand van doen (art. 19), en het vervalt door verloop van de termijn of wordt vervallen verklaard, bijvoorbeeld bij verwaarlozing of niet-betalen (art. 28 lid 4–6; Groningen art. 20). Verlenging, overschrijving en afstand zijn stappen in de levenscyclus van het grafrecht, geen eigen elementen.
 
-Het grafrecht is een afspraak (besluit 2026-09-30): het legt de rechten en plichten van houder en rechthebbende vast, ook als de gemeente het in de vorm van een besluit op aanvraag verleent. De toelichting op het VNG-model noemt het een beschikking van het college (toelichting art. 17); die tegenspraak is met het besluit afgewogen.
+Het grafrecht is een afspraak (besluit 2026-09-30): het legt de rechten en plichten van houder en rechthebbende vast, ook als de gemeente het in de vorm van een besluit op aanvraag verleent. De toelichting op de VNG-modelverordening noemt het een beschikking van het college (toelichting art. 17); die tegenspraak is met het besluit afgewogen.
 
 ### Synoniemen
 

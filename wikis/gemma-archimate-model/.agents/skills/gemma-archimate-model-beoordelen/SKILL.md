@@ -61,7 +61,7 @@ kernobject: graf                              # levensloopproces, bedrijfsproces
 afnemer: extern                               # proces, product, dienst: extern of intern
 domein: Fysieke leefomgeving                  # functie, product, dienst: GEMMA-domein
 doelgroep: gemeente                           # actor, rol, samenwerking, kanaal: gemeente | inwoners en ondernemers | ketenpartners
-regelgever: rijk                              # beleidskader: EU | rijk | VNG-model
+regelgever: rijk                              # beleidskader: EU | rijk | VNG-modelverordening
 kwaliteitsdoelen: [{id: id-…, sterkte: "++", onderbouwing: "De wet regelt de taak.", bronnen: [2026-rijk-…], vindplaats: art. 1}]   # beleidskader: GEMMA-kwaliteitsdoelen waaraan het grondslag geeft
 gemma_generiek: {id: id-…, onderbouwing: "Een vergunningaanvraag."}   # specialisatie van een generiek GEMMA-element (exacte match)
 gemma_functie: {id: id-…, gemma_relatie: id-…}   # functie, dienst: de bovenliggende GEMMA-functie zonder beoordeling (een knoop); met de GEMMA-relatie, of met bronnen en vindplaats (UPL)

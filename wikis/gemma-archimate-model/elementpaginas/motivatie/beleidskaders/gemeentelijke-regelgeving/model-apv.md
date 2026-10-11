@@ -12,7 +12,7 @@ definitie: Model van de VNG voor de algemene plaatselijke verordening, waarin ee
 match:
   gemma: geen
 data_object: nee
-regelgever: VNG-model
+regelgever: VNG-modelverordening
 synoniemen:
 - Model Algemene plaatselijke verordening (beleid)
 bronnen:
@@ -58,7 +58,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Plaats in de indelingen
 
-- **Regelgever**: VNG-model.
+- **Regelgever**: VNG-modelverordening.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
 
 ### Kenmerken
@@ -72,9 +72,9 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als modelverordening, niet als onderdeel van een ander begrip. [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, regelt de huishouding van de gemeente over veel beleidsdomeinen: openbare orde, evenementen, horeca, standplaatsen, asverstrooiing (hoofdstuk 1–6). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde VNG-modelverordening als geheel. [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
-| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, VNG-modelverordening, geen regeling van één gemeente. [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
+| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, VNG-modelverordening, geen regeling van één gemeente. [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, het model geldt; de openbare kopie is de versie van november 2023. De wijzigingen van zomer 2024 en zomer 2026 raken art. 5:35–5:37 niet. Een volledige herziening is aangekondigd voor begin 2027 (Toelichting). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, art. 5:36 lid 3 (ontheffing van het verbod op incidentele asverstrooiing): grondslag van de dienst Asverstrooiing, die de UPL zo noemt (nr. 32). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, werkt de VNG-modelverordening die uit, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, werkt uit, nooit grondslag: art. 5:36 lid 3 (ontheffing van het verbod op incidentele asverstrooiing) werkt de dienst Asverstrooiing uit, die geen landelijke wettelijke grondslag heeft; de UPL noemt het artikel als grondslag (nr. 32). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki. [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, regelt onderwerpen uit veel beleidsdomeinen en komt dus in veel onderwerpen voor (hoofdstuk 2–5). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
 
@@ -102,4 +102,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-08: Opnemen als beleidskader in Gemeentelijke regelgeving, grondslag van Asverstrooiing (art. 5:36 lid 3); bron is de openbare kopie van november 2023 (Opmeer), opgenomen met de VNG als eigenaar. Thuisonderwerp Algemeen, generiek: de APV regelt veel beleidsdomeinen. *Stand: herzien 2026-10-11: een VNG-model is nooit grondslag; de relatie naar Asverstrooiing heet werkt uit voor. Of de Model-APV beleidskader blijft, is een open punt (regel Bronvoorrang)*
+- 2026-10-08: Opnemen als beleidskader in Gemeentelijke regelgeving, grondslag van Asverstrooiing (art. 5:36 lid 3); bron is de openbare kopie van november 2023 (Opmeer), opgenomen met de VNG als eigenaar. Thuisonderwerp Algemeen, generiek: de APV regelt veel beleidsdomeinen. *Stand: herzien 2026-10-11: een VNG-modelverordening is nooit grondslag; de relatie naar Asverstrooiing heet werkt uit voor; de Model-APV blijft beleidskader (besluit 2026-10-11)*
+- 2026-10-11: Blijft beleidskader in de groep VNG-modelverordening, als gemeenschappelijke vorm van de gemeentelijke uitwerking: een VNG-modelverordening is een modelverordening van de VNG voor alle gemeenten, een bron zoals de regeling van een gemeente, maar nooit grondslag (regel Bronvoorrang). Het kenmerk is grondslag voor blijft ja en telt de relaties werkt uit voor.

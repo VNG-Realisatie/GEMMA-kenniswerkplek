@@ -4,7 +4,7 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: 'Gangbaar: de vergunning grafbedekking in de beheersverordeningen (VNG-model art. 19; Groningen art. 22).'
+    onderbouwing: 'Gangbaar: de vergunning grafbedekking in de beheersverordeningen (VNG-modelverordening art. 19; Groningen art. 22).'
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -123,7 +123,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   eigen_normering:
     waarde: ja
-    onderbouwing: 'Groningen art. 22: schriftelijke vergunning, nadere regels van het college, weigeringsgronden; VNG-model art. 19.'
+    onderbouwing: 'Groningen art. 22: schriftelijke vergunning, nadere regels van het college, weigeringsgronden; VNG-modelverordening art. 19.'
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -157,7 +157,7 @@ kenmerken:
     onderbouwing: Eén mutatie in de grafbedekking, binnen Beheren graven.
   eigen_besluit:
     waarde: ja
-    onderbouwing: Het college besluit over de vergunning (Groningen art. 22 lid 1, 4; VNG-model art. 19).
+    onderbouwing: Het college besluit over de vergunning (Groningen art. 22 lid 1, 4; VNG-modelverordening art. 19).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -226,7 +226,7 @@ kenmerken:
     onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het beslissen op een aanvraag om een vergunning voor een gedenkteken of andere grafbedekking op een particulier graf.
 beschrijving:
-- De rechthebbende van een particulier graf vraagt de vergunning aan; het college beslist en kan de vergunning weigeren als niet wordt voldaan aan de nadere regels over de aard en de afmetingen van de grafbedekking (Groningen art. 22; VNG-model art. 19). Beslisser is het college.
+- De rechthebbende van een particulier graf vraagt de vergunning aan; het college beslist en kan de vergunning weigeren als niet wordt voldaan aan de nadere regels over de aard en de afmetingen van de grafbedekking (Groningen art. 22; VNG-modelverordening art. 19). Beslisser is het college.
 kernobject: grafbedekking
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
@@ -242,7 +242,7 @@ relaties:
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: Groningen art. 22 lid 1; VNG-model art. 19 lid 1
+  vindplaats: Groningen art. 22 lid 1; VNG-modelverordening art. 19 lid 1
   via: vergunning-grafbedekking
 - soort: realisatie
   naar: gedenkteken-plaatsingsvergunning

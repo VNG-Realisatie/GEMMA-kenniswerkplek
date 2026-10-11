@@ -338,7 +338,7 @@ KENMERKEN: list[Kenmerk] = [
     Kenmerk("landelijk", "landelijk", "Beleidskader",
             "Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, "
             "ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een "
-            "landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één "
+            "landelijke organisatie) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één "
             "gemeente?",
             "Wet op de lijkbezorging; AVG; Circulaire adresonderzoek BRP (RvIG); modelverordening",
             "beheersverordening of beleidsnota van één gemeente (blijft bron)",
@@ -347,8 +347,9 @@ KENMERKEN: list[Kenmerk] = [
             "Is de regeling geldend recht, of als modelverordening actueel?",
             "Archiefwet 1995", "ingetrokken wet", "wiki", _bij("regeling_als_geheel")),
     Kenmerk("is_grondslag_voor", "is grondslag voor", "Beleidskader",
-            "Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die "
-            "uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag.",
+            "Geeft de regeling de gemeente een taak, bevoegdheid of plicht, werkt de VNG-modelverordening die uit, of schrijft de "
+            "richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de "
+            "paragraaf en het gedrag.",
             "Wet op de lijkbezorging art. 28 → Verlenen grafrecht", "BW boek 2, gebruikt voor één definitie",
             "GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader)",
             _bij("regeling_als_geheel")),

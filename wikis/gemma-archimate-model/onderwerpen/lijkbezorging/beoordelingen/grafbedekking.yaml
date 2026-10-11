@@ -159,7 +159,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: De gemeente vergunt, onderhoudt en verwijdert grafbedekkingen (Groningen art. 22, 23, 26; VNG-model art. 19–23).
+    onderbouwing: De gemeente vergunt, onderhoudt en verwijdert grafbedekkingen (Groningen art. 22, 23, 26; VNG-modelverordening art. 19–23).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -207,7 +207,7 @@ taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Gedenkteken en grafbeplanting op een graf, gedenkplaats of verstrooiingsplaats.
 beschrijving:
-- Voor een grafbedekking is een vergunning van het college nodig, die de rechthebbende aanvraagt (Groningen art. 22; VNG-model art. 19). De rechthebbende onderhoudt haar, of laat dat tegen betaling door de gemeente doen (art. 23, 24). Na afloop van de termijn van het graf kan het college de grafbedekking verwijderen; ze vervalt dan aan de gemeente (art. 26). Zolang het graf niet geruimd mag worden, is wat erop geplaatst is eigendom van de rechthebbende (Wet op de lijkbezorging art. 32a).
+- Voor een grafbedekking is een vergunning van het college nodig, die de rechthebbende aanvraagt (Groningen art. 22; VNG-modelverordening art. 19). De rechthebbende onderhoudt haar, of laat dat tegen betaling door de gemeente doen (art. 23, 24). Na afloop van de termijn van het graf kan het college de grafbedekking verwijderen; ze vervalt dan aan de gemeente (art. 26). Zolang het graf niet geruimd mag worden, is wat erop geplaatst is eigendom van de rechthebbende (Wet op de lijkbezorging art. 32a).
 synoniemen:
 - naam: Gedenkteken
   context: beleid
@@ -229,11 +229,11 @@ relaties:
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: Groningen art. 1 i; VNG-model art. 1 m
+  vindplaats: Groningen art. 1 i; VNG-modelverordening art. 1 m
 onderwerpen:
 - lijkbezorging
 genoemd_begrip: Graf
-toelichting: 'Onderdeel van Graf, zonder pagina: geen bedrijfsproces heeft de grafbedekking als kernobject. Vergunning, onderhoud door de gemeente en verwijdering zijn gemeentelijke uitwerking (VNG-model art. 19–23) van UPL-producten zonder landelijke wettelijke grondslag, die niet worden uitgewerkt in objecten (regel Wettelijke grondslag).'
+toelichting: 'Onderdeel van Graf, zonder pagina: geen bedrijfsproces heeft de grafbedekking als kernobject. Vergunning, onderhoud door de gemeente en verwijdering zijn gemeentelijke uitwerking (VNG-modelverordening art. 19–23) van UPL-producten zonder landelijke wettelijke grondslag, die niet worden uitgewerkt in objecten (regel Wettelijke grondslag).'
 besluiten:
 - datum: '2026-10-08'
   besluit: 'Geen subobject meer maar onderdeel van Graf, zonder pagina: de processen Verlenen vergunning grafbedekking en Onderhouden graf vervallen (regel Wettelijke grondslag), en landelijk regelt alleen Wlb art. 32a het eigendom van wat op het graf is geplaatst. De relatie onderhoudt vanuit Rechthebbende op het graf vervalt. Het object van dit element in Archi vervalt.'

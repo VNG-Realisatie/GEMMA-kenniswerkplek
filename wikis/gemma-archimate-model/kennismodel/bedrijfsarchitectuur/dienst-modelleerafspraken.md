@@ -27,7 +27,7 @@ titel: Dienst — modelleerafspraken
 
 - Een dienst wordt gerealiseerd door een bedrijfsproces of bedrijfsfunctie; de verantwoordelijke rol hangt aan dat proces of die functie, niet aan de dienst.
 - Een product of dienst valt nooit weg: wie het levert, is een bedrijfsproces.
-- Een dienst uit de UPL blijft ook zonder landelijke wettelijke grondslag (de hoek zonder grondslag): zij is dan geen wettelijke taak, wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen, wordt teruggemeld aan de procesarchitectuur en niet geëxporteerd; haar kenmerk *gerealiseerd door* steunt op de bron. Een VNG-model is nooit haar grondslag (*werkt uit voor*).
+- Een dienst uit de UPL blijft ook zonder landelijke wettelijke grondslag (de hoek zonder grondslag): zij is dan geen wettelijke taak, wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen, wordt teruggemeld aan de procesarchitectuur en niet geëxporteerd; haar kenmerk *gerealiseerd door* steunt op de bron. Een VNG-modelverordening is nooit haar grondslag (*werkt uit voor*).
 - Hangt de dienst onder een GEMMA-functie zonder beoordeling, dan noemt `gemma_functie` die functie, met de UPL als bron en het UPL-nummer als vindplaats.
 - Een beleidskader hangt bij voorkeur aan een dienst of product; aan een proces alleen zolang er geen dienst of product is.
 

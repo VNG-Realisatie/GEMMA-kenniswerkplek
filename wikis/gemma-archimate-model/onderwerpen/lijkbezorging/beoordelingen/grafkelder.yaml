@@ -20,7 +20,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
-    onderbouwing: 'Onderdeel van Graf: Constructie waarin een graf wordt aangelegd (keldergraf); onderdeel van het graf (Groningen art. 1 j; VNG-model art. 1 c).'
+    onderbouwing: 'Onderdeel van Graf: Constructie waarin een graf wordt aangelegd (keldergraf); onderdeel van het graf (Groningen art. 1 j; VNG-modelverordening art. 1 c).'
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
@@ -189,7 +189,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst onderdeel).'
-toelichting: 'Onderdeel van Graf: Constructie waarin een graf wordt aangelegd (keldergraf); onderdeel van het graf (Groningen art. 1 j; VNG-model art. 1 c).'
+toelichting: 'Onderdeel van Graf: Constructie waarin een graf wordt aangelegd (keldergraf); onderdeel van het graf (Groningen art. 1 j; VNG-modelverordening art. 1 c).'
 genoemd_begrip: Graf
 onderwerpen:
 - lijkbezorging

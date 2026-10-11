@@ -7,7 +7,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: De gemeente kan haar instellen (VNG-model toelichting 2).
+    onderbouwing: De gemeente kan haar instellen (VNG-modelverordening toelichting 2).
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   buiten_dit_model:
@@ -68,7 +68,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   soort_partij:
     waarde: nee
-    onderbouwing: Een adviescommissie is alleen een aanbeveling in het VNG-model; niet bij elke gemeente.
+    onderbouwing: Een adviescommissie is alleen een aanbeveling in de VNG-modelverordening; niet bij elke gemeente.
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -194,7 +194,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
-toelichting: 'Geen element: het VNG-model beveelt de commissie alleen aan (toelichting 2).'
+toelichting: 'Geen element: de VNG-modelverordening beveelt de commissie alleen aan (toelichting 2).'
 onderwerpen:
 - lijkbezorging
 besluiten:
@@ -204,7 +204,7 @@ besluiten:
   redenen:
   - 'vervult een rol: nee'
 - datum: '2026-10-04'
-  besluit: 'Geen element: de commissie wordt in het VNG-model alleen voorgesteld (toelichting 2), dus geen soort partij bij elke gemeente. Vult het besluit van 2026-10-01 aan.'
+  besluit: 'Geen element: de commissie wordt in de VNG-modelverordening alleen voorgesteld (toelichting 2), dus geen soort partij bij elke gemeente. Vult het besluit van 2026-10-01 aan.'
   gevolg: afwijzen
   redenen:
   - 'soort partij: nee'

@@ -349,7 +349,7 @@ def test_beleidskader_hangt_naar_regelgever_in_landelijke_of_gemeentelijke_regel
     begrippen = _indeling_begrippen()
     for bid, naam, regelgever in (("wlb", "Wet op de lijkbezorging", "rijk"), ("avg", "AVG", "EU"),
                                   ("hup", "HUP BRP", "landelijke organisatie"),
-                                  ("model-bv", "Model beheersverordening begraafplaatsen", "VNG-model")):
+                                  ("model-bv", "Model beheersverordening begraafplaatsen", "VNG-modelverordening")):
         data = _begrip(naam, "driver", status="review", taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen",
                        regelgever=regelgever)
         data["beslist"]["uitkomst"]["paginatype"] = "beleidskader"

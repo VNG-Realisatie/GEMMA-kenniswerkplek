@@ -8,7 +8,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: 'Gemeentelijk: Nis in een urnenmuur met het uitsluitend recht tot bijzetten van asbussen (Groningen art. 1 v; VNG-model art. 1 j).'
+    onderbouwing: 'Gemeentelijk: Nis in een urnenmuur met het uitsluitend recht tot bijzetten van asbussen (Groningen art. 1 v; VNG-modelverordening art. 1 j).'
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -199,7 +199,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
 genoemd_begrip: Graf
-toelichting: 'Specialisatie zonder pagina van Graf: Nis in een urnenmuur met het uitsluitend recht tot bijzetten van asbussen (Groningen art. 1 v; VNG-model art. 1 j).'
+toelichting: 'Specialisatie zonder pagina van Graf: Nis in een urnenmuur met het uitsluitend recht tot bijzetten van asbussen (Groningen art. 1 v; VNG-modelverordening art. 1 j).'
 onderwerpen:
 - lijkbezorging
 beslist:

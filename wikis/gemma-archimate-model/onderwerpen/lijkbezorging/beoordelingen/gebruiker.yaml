@@ -7,7 +7,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: Ontvangt mededelingen en verplichtingen van het college (VNG-model art. 21).
+    onderbouwing: Ontvangt mededelingen en verplichtingen van het college (VNG-modelverordening art. 21).
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   buiten_dit_model:
@@ -34,7 +34,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
   hoedanigheid:
     waarde: ja
-    onderbouwing: Wie een recht tot gebruik van een ruimte in een algemeen graf heeft (VNG-model art. 1 p).
+    onderbouwing: Wie een recht tot gebruik van een ruimte in een algemeen graf heeft (VNG-modelverordening art. 1 p).
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   samenwerkingsverband:
@@ -192,7 +192,7 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
-toelichting: 'Geen element: de gebruiker van een algemeen graf heeft plichten, maar is niet aan gemeentelijk gedrag toegewezen (VNG-model art. 1 p, 21).'
+toelichting: 'Geen element: de gebruiker van een algemeen graf heeft plichten, maar is niet aan gemeentelijk gedrag toegewezen (VNG-modelverordening art. 1 p, 21).'
 onderwerpen:
 - lijkbezorging
 besluiten:

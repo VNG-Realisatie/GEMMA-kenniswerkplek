@@ -9,7 +9,7 @@ kenmerken:
     - 2026-vng-retributies
   gemeentelijk:
     waarde: ja
-    onderbouwing: De gemeente voert het onderhoud uit (Groningen art. 23; VNG-model art. 20).
+    onderbouwing: De gemeente voert het onderhoud uit (Groningen art. 23; VNG-modelverordening art. 20).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -117,7 +117,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   benoembaar_resultaat:
     waarde: ja
-    onderbouwing: Schoongemaakte gedenktekens en onderhouden beplanting (Groningen art. 23 lid 3; VNG-model art. 20).
+    onderbouwing: Schoongemaakte gedenktekens en onderhouden beplanting (Groningen art. 23 lid 3; VNG-modelverordening art. 20).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -128,7 +128,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   eigen_normering:
     waarde: ja
-    onderbouwing: Groningen art. 23, 24 (termijn ten minste vijf jaar, betaling, verwijdering bij niet-betalen); VNG-model art. 20.
+    onderbouwing: Groningen art. 23, 24 (termijn ten minste vijf jaar, betaling, verwijdering bij niet-betalen); VNG-modelverordening art. 20.
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -232,7 +232,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 definitie: Het onderhouden van grafbedekking en beplanting op een graf door de gemeente.
 beschrijving:
-- De gemeente maakt gedenktekens schoon en onderhoudt de beplanting op graven, op sommige begraafplaatsen altijd en elders op schriftelijk verzoek van de rechthebbende voor ten minste vijf jaar, tegen betaling van een recht uit de heffingsverordening (Groningen art. 23, 24 lid 3). Bij niet-betalen wordt de grafbedekking na waarschuwing verwijderd (art. 23 lid 4). Het VNG-model regelt een minimaal onderhoud door de gemeente (art. 20).
+- De gemeente maakt gedenktekens schoon en onderhoudt de beplanting op graven, op sommige begraafplaatsen altijd en elders op schriftelijk verzoek van de rechthebbende voor ten minste vijf jaar, tegen betaling van een recht uit de heffingsverordening (Groningen art. 23, 24 lid 3). Bij niet-betalen wordt de grafbedekking na waarschuwing verwijderd (art. 23 lid 4). De VNG-modelverordening regelt een minimaal onderhoud door de gemeente (art. 20).
 relaties:
 - soort: toegang (registreren)
   naar: heffing
@@ -255,7 +255,7 @@ kernobject: grafbedekking
 afnemer: extern
 gemma_generiek:
   id: id-1a739ba4-08d4-4b65-84d8-4ea89499b4ca
-  onderbouwing: Het jaarlijkse onderhoud van grafbedekking en beplanting op de gemeentelijke begraafplaats (Groningen art. 23; VNG-model art. 20).
+  onderbouwing: Het jaarlijkse onderhoud van grafbedekking en beplanting op de gemeentelijke begraafplaats (Groningen art. 23; VNG-modelverordening art. 20).
 besluiten:
 - datum: '2026-10-04'
   besluit: 'Specialiseren zelf een GEMMA-proces: *Behandelen melding*, *Behandelen aanvraag product* en *Onderhouden*. Vervallen verklaren grafrecht niet naar *Opleggen sanctie*: het verval volgt uit de afspraak, niet uit handhaving.'

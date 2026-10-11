@@ -9,7 +9,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: Het college verleent het recht (Groningen art. 16; VNG-model art. 15).
+    onderbouwing: Het college verleent het recht (Groningen art. 16; VNG-modelverordening art. 15).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -116,7 +116,7 @@ kenmerken:
     - 2026-vng-retributies
   aanleiding:
     waarde: ja
-    onderbouwing: Schriftelijke aanvraag (Groningen art. 16 lid 1; VNG-model art. 15 lid 1).
+    onderbouwing: Schriftelijke aanvraag (Groningen art. 16 lid 1; VNG-modelverordening art. 15 lid 1).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -174,7 +174,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Grafuitgifte (Groningen art. 16; VNG-model art. 15).
+    onderbouwing: Realiseert de dienst Grafuitgifte (Groningen art. 16; VNG-modelverordening art. 15).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -241,7 +241,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 definitie: Het verlenen van een grafrecht op een particulier graf aan een rechthebbende.
 beschrijving:
-- Het college verleent op schriftelijke aanvraag een recht op een particulier graf, voor 30 jaar of bij een urnengraf voor 5 tot 30 jaar (Groningen art. 16; VNG-model art. 15); de wet spreekt van het vestigen van het uitsluitend recht, voor onbepaalde tijd of ten minste tien jaar (art. 28). Beslisser is het college; het VNG-model beveelt mandaat aan de beheerder aan. Graven worden in volgorde van ligging uitgegeven (Groningen art. 14). Verlenging volgt op verzoek van de rechthebbende (art. 28 lid 1). De gemeente heft voor de uitgifte lijkbezorgingsrechten (VNG retributies).
+- Het college verleent op schriftelijke aanvraag een recht op een particulier graf, voor 30 jaar of bij een urnengraf voor 5 tot 30 jaar (Groningen art. 16; VNG-modelverordening art. 15); de wet spreekt van het vestigen van het uitsluitend recht, voor onbepaalde tijd of ten minste tien jaar (art. 28). Beslisser is het college; de VNG-modelverordening beveelt mandaat aan de beheerder aan. Graven worden in volgorde van ligging uitgegeven (Groningen art. 14). Verlenging volgt op verzoek van de rechthebbende (art. 28 lid 1). De gemeente heft voor de uitgifte lijkbezorgingsrechten (VNG retributies).
 synoniemen:
 - naam: Uitgifte van een graf
   context: beleid
@@ -280,7 +280,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: Wlb art. 23 lid 2, 28 lid 1; Groningen art. 16; VNG-model art. 15
+  vindplaats: Wlb art. 23 lid 2, 28 lid 1; Groningen art. 16; VNG-modelverordening art. 15
 onderwerpen:
 - lijkbezorging
 kernobject: grafrecht

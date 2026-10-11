@@ -47,7 +47,7 @@ DOELGROEP_OMSCHRIJVING = {  # de documentatie van de groepering van een doelgroe
                                "te maken hebben.",
     "ketenpartners": "Organisaties waarmee de gemeente structureel samenwerkt of die zij opdracht geeft.",
 }
-REGELGEVERS = ("EU", "rijk", "landelijke organisatie", "VNG-model")
+REGELGEVERS = ("EU", "rijk", "landelijke organisatie", "VNG-modelverordening")
 WAARDEN = {"afnemer": AFNEMERS, "domein": DOMEINEN, "doelgroep": DOELGROEPEN, "regelgever": REGELGEVERS}
 
 EIGENSCHAPPEN = {  # veld in de beoordeling → wat het vastlegt
@@ -57,7 +57,7 @@ EIGENSCHAPPEN = {  # veld in de beoordeling → wat het vastlegt
                "externe en interne UPL-lijst)",
     "domein": "het GEMMA-domein, de plaats in de Functie-indeling naar domein",
     "doelgroep": "gemeente, inwoners en ondernemers of ketenpartners: de plaats in de Doelgroepindeling",
-    "regelgever": "EU, rijk, landelijke organisatie of VNG-model: bepaalt de groep in de Grondslagindeling",
+    "regelgever": "EU, rijk, landelijke organisatie of VNG-modelverordening: bepaalt de groep in de Grondslagindeling",
     "kwaliteitsdoelen": "de GEMMA-kwaliteitsdoelen waaraan het beleidskader grondslag geeft, met de sterkte van die "
                         "invloed, een onderbouwing en de bronnen",
     "taakveld": "het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling",
@@ -217,7 +217,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "Een dienst uit de UPL blijft ook zonder landelijke wettelijke grondslag (de hoek zonder grondslag): "
                    "zij is dan geen wettelijke taak, wordt niet uitgewerkt in processen, objecten, gebeurtenissen of "
                    "rollen, wordt teruggemeld aan de procesarchitectuur en niet geëxporteerd; haar kenmerk *gerealiseerd "
-                   "door* steunt op de bron. Een VNG-model is nooit haar grondslag (*werkt uit voor*).",
+                   "door* steunt op de bron. Een VNG-modelverordening is nooit haar grondslag (*werkt uit voor*).",
                    "Hangt de dienst onder een GEMMA-functie zonder beoordeling, dan noemt `gemma_functie` die functie, "
                    "met de UPL als bron en het UPL-nummer als vindplaats.",
                    "Een beleidskader hangt bij voorkeur aan een dienst of product; aan een proces alleen zolang er geen "
@@ -380,7 +380,7 @@ ELEMENTTYPEN: list[Elementtype] = [
         "kader van dat beleid zijn ontwikkeld, zoals wetten, regelgeving, Kamerstukken en bestuursakkoorden.", "NORA",
         True,
         "Een concreet benoemde regeling of richtlijn als geheel die voor alle gemeenten geldt: Europese regelgeving, "
-        "rijksregelgeving, een landelijke richtlijn of een VNG-model van gemeentelijke regelgeving.",
+        "rijksregelgeving, een landelijke richtlijn of een VNG-modelverordening van gemeentelijke regelgeving.",
         "de officiële citeertitel (Wet op de lijkbezorging); de afkorting wordt een synoniem",
         (GGM_GEEN, ("GEMMA-model", "match op betekenis; de motivatielaag van het GEMMA-model bevat nog vooral "
                                    "kernwaarden")),
@@ -389,7 +389,7 @@ ELEMENTTYPEN: list[Elementtype] = [
         "beheersverordening van één gemeente (blijft bron); artikel 16 (losse norm, buiten het model); 'verordening' "
         "als soort (bedrijfsobject Regeling)",
         eigenschappen=("regelgever", "taakveld", "beleidsdomein", "gemma", "kwaliteitsdoelen"), verplicht=("regelgever",),
-        afspraken=("Een regeling of beleid van één gemeente blijft bron en wordt geen element; het VNG-model staat in "
+        afspraken=("Een regeling of beleid van één gemeente blijft bron en wordt geen element; de VNG-modelverordening staat in "
                    "het model als gemeenschappelijke vorm.",
                    "Een beleidskader in de groep Richtlijn is geen wettelijke grondslag: zijn relatie heet *geeft "
                    "richtlijn voor*. Een beleidskader in Gemeentelijke regelgeving is alleen grondslag voor een "
@@ -595,10 +595,10 @@ RELATIES: list[Relatie] = [
               ("is_grondslag_voor",), "de grondslag; bij voorkeur naar een product")
       for doel in ("product", "dienst", "bedrijfsproces")],
     Relatie("beleidskader", "associatie (gericht)", "beleidskader", False, ("werkt uit", "verwijst naar"), (),
-            "een AMvB of VNG-model werkt een wet uit"),
+            "een AMvB of VNG-modelverordening werkt een wet uit"),
     *[Relatie("beleidskader", "associatie (gericht)", doel, False,
               ("is grondslag voor", "is model voor") if doel == "bedrijfsobject" else ("is grondslag voor",), (),
-              f"de regeling die {naam} regelt" + ("; *is model voor*: een VNG-model voor de soort regeling "
+              f"de regeling die {naam} regelt" + ("; *is model voor*: een VNG-modelverordening voor de soort regeling "
                                                      "(Regeling)" if doel == "bedrijfsobject" else ""))
       for doel, naam in (("rol", "de rol"), ("gebeurtenis", "de gebeurtenis"), ("bedrijfsobject", "het object"))],
     Relatie("beleidskader", "invloed", "kwaliteitsdoel", True, ("geeft grondslag aan",), (),
@@ -787,7 +787,7 @@ ALGEMENE_INDELINGSAFSPRAKEN = (
 # Grondslagindeling: een beleidskader valt onder het brontype van zijn regeling (regel Bronvoorrang), afgeleid uit de
 # regelgever. Groep en map heten als het brontype; de omschrijving is die van de regel Bronvoorrang.
 REGELGEVER_BRONTYPE = {"EU": "europese-regelgeving", "rijk": "rijksregelgeving", "landelijke organisatie": "richtlijn",
-                       "VNG-model": "gemeentelijke-regelgeving"}
+                       "VNG-modelverordening": "gemeentelijke-regelgeving"}
 BRONTYPE_OMSCHRIJVING = {
     "europese-regelgeving": "Regelgeving van de Europese Unie die voor alle gemeenten geldt, zoals verordeningen die "
                             "rechtstreeks werken (AVG, AI-verordening).",
@@ -796,8 +796,8 @@ BRONTYPE_OMSCHRIJVING = {
     "richtlijn": "Landelijke uitvoeringsvoorschriften, handleidingen, circulaires en handreikingen van het Rijk, "
                  "uitvoeringsorganisaties en koepels (HUP van RvIG, NVVB, VNG, Divosa).",
     "gemeentelijke-regelgeving": "Verordeningen, nadere regels, beleidsregels en regelingen van gemeenschappelijke "
-                                 "regelingen, die elke gemeente zelf vaststelt, en de VNG-modellen daarvan. Omdat de "
-                                 "inhoud per gemeente verschilt, staat in het model het VNG-model als gemeenschappelijke "
+                                 "regelingen, die elke gemeente zelf vaststelt, en de VNG-modelverordeningen daarvan. Omdat de "
+                                 "inhoud per gemeente verschilt, staat in het model de VNG-modelverordening als gemeenschappelijke "
                                  "vorm; de regeling van één gemeente is een voorbeeld en geen element.",
 }
 

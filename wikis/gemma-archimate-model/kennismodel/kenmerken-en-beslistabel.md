@@ -112,9 +112,9 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
-| 56 | *landelijk* | Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Wet op de lijkbezorging; AVG; Circulaire adresonderzoek BRP (RvIG); modelverordening | beheersverordening of beleidsnota van één gemeente (blijft bron) | GEMMA (definitie Beleidskader); wiki |
+| 56 | *landelijk* | Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Wet op de lijkbezorging; AVG; Circulaire adresonderzoek BRP (RvIG); modelverordening | beheersverordening of beleidsnota van één gemeente (blijft bron) | GEMMA (definitie Beleidskader); wiki |
 | 57 | *in werking* | Is de regeling geldend recht, of als modelverordening actueel? | Archiefwet 1995 | ingetrokken wet | wiki |
-| 58 | *is grondslag voor* | Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. | Wet op de lijkbezorging art. 28 → Verlenen grafrecht | BW boek 2, gebruikt voor één definitie | GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader) |
+| 58 | *is grondslag voor* | Geeft de regeling de gemeente een taak, bevoegdheid of plicht, werkt de VNG-modelverordening die uit, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. | Wet op de lijkbezorging art. 28 → Verlenen grafrecht | BW boek 2, gebruikt voor één definitie | GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader) |
 
 **Specialisatie.** Altijd, als het type een pagina heeft.
 

@@ -8,7 +8,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: 'Gemeentelijk: Plaats met het uitsluitend recht om overledenen te gedenken, bijvoorbeeld vermisten (VNG-model art. 1 k, toelichting art. 11).'
+    onderbouwing: 'Gemeentelijk: Plaats met het uitsluitend recht om overledenen te gedenken, bijvoorbeeld vermisten (VNG-modelverordening art. 1 k, toelichting art. 11).'
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -199,7 +199,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
 genoemd_begrip: Graf
-toelichting: 'Specialisatie zonder pagina van Graf: Plaats met het uitsluitend recht om overledenen te gedenken, bijvoorbeeld vermisten (VNG-model art. 1 k, toelichting art. 11).'
+toelichting: 'Specialisatie zonder pagina van Graf: Plaats met het uitsluitend recht om overledenen te gedenken, bijvoorbeeld vermisten (VNG-modelverordening art. 1 k, toelichting art. 11).'
 onderwerpen:
 - lijkbezorging
 beslist:

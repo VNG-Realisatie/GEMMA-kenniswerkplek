@@ -80,7 +80,7 @@ Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 
 
 #### Lijkbezorging
 
-- **Beheersverordening begraafplaatsen**: Specialisatie zonder pagina van Regeling: verordening van de gemeente over beheer en gebruik van haar begraafplaatsen (VNG; Groningen; VNG-model).
+- **Beheersverordening begraafplaatsen**: Specialisatie zonder pagina van Regeling: verordening van de gemeente over beheer en gebruik van haar begraafplaatsen (VNG; Groningen; VNG-modelverordening).
 
 ### Kenmerken
 

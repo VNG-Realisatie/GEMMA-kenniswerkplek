@@ -6,7 +6,7 @@ bronnen:
 - 2010-vng-model-beheersverordening-begraafplaatsen
 relevant: ja
 korte_titel: VNG Model-beheersverordening begraafplaatsen
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-11
 ---
 
 # Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting
@@ -15,7 +15,7 @@ Bron: [tekst](../../../../../../sources/raw/2010-vng-model-beheersverordening-be
 
 ## Samenvatting
 
-De VNG-model-beheersverordening begraafplaatsen, versie 2010, met algemene en artikelsgewijze toelichting. Het model is het sjabloon waarmee gemeenten hun beheersverordening vaststellen, "gelet op artikel 35 van de Wet op de lijkbezorging en artikel 149 van de Gemeentewet"; de verordening van Groningen volgt het vrijwel letterlijk. Als VNG-modelverordening is het een kandidaat-beleidskader: landelijk, geen regeling van één gemeente, en grondslag voor de gemeentelijke processen op de begraafplaats (uitgifte, verlenging, overschrijving en afstand van grafrechten, vergunningen voor grafbedekking en grafkelder, onderhoud, ruiming). De openbare kopie is de versie van 2010; nieuwere versies staan in de betaalde Kennisbank decentrale regelgeving. Of het model als modelverordening nog actueel is, is daarom niet vast te stellen; de toelichting citeert Wlb art. 28 lid 7 met "twintig jaar", waar de huidige wet "tien jaar" zegt (tegenspraak met de Wet op de lijkbezorging).
+De Model-beheersverordening begraafplaatsen van de VNG, versie 2010, met algemene en artikelsgewijze toelichting. Het model is het sjabloon waarmee gemeenten hun beheersverordening vaststellen, "gelet op artikel 35 van de Wet op de lijkbezorging en artikel 149 van de Gemeentewet"; de verordening van Groningen volgt het vrijwel letterlijk. Als VNG-modelverordening is het een beleidskader: landelijk, geen regeling van één gemeente, en het werkt de Wet op de lijkbezorging uit voor de gemeentelijke processen op de begraafplaats, zonder zelf grondslag te zijn (uitgifte, verlenging, overschrijving en afstand van grafrechten, vergunningen voor grafbedekking en grafkelder, onderhoud, ruiming). De openbare kopie is de versie van 2010; nieuwere versies staan in de betaalde Kennisbank decentrale regelgeving. Of het model als modelverordening nog actueel is, is daarom niet vast te stellen; de toelichting citeert Wlb art. 28 lid 7 met "twintig jaar", waar de huidige wet "tien jaar" zegt (tegenspraak met de Wet op de lijkbezorging).
 
 **Begrippen en dienstverlening.** Het model definieert de gangbare namen (art. 1): graf (zandgraf of keldergraf), particulier graf, algemeen graf, particulier en algemeen urnengraf, particuliere urnennis, particuliere gedenkplaats, asbus, urn, verstrooiingsplaats, grafbedekking, beheerder, rechthebbende en gebruiker. De toelichting spreekt uitdrukkelijk van "dienstverlening op de gemeentelijke begraafplaatsen" en "een uitgebreid voorzieningenpakket": algemene en particuliere graven, bestemmingen voor as en gedenkplaatsen voor vermisten of overledenen in het buitenland. Het onderhoud door de gemeente is een minimale zorg (gedenkteken jaarlijks schoonmaken, winterharde beplanting); het meeste onderhoud ligt bij de rechthebbende of gebruiker (art. 20, 21).
 
@@ -31,7 +31,7 @@ De VNG-model-beheersverordening begraafplaatsen, versie 2010, met algemene en ar
 
 | Begrip | Omschrijving in de bron | Andere termen in deze bron | Vindplaats |
 |---|---|---|---|
-| Model-beheersverordening begraafplaatsen | VNG-model voor de verordening op het beheer en het gebruik van de gemeentelijke begraafplaats(en) | modelbeheersverordening, model | titel, toelichting inleiding |
+| Model-beheersverordening begraafplaatsen | VNG-modelverordening voor de verordening op het beheer en het gebruik van de gemeentelijke begraafplaats(en) | modelbeheersverordening, model | titel, toelichting inleiding |
 | beheersverordening begraafplaatsen | verordening van de raad op het beheer en het gebruik van de gemeentelijke begraafplaats(en) | verordening | aanhef, art. 32 |
 | begraafplaats | de begraafplaats(en) van de gemeente | — | art. 1 a |
 | graf | een zandgraf of keldergraf | keldergraf, zandgraf | art. 1 b; toelichting art. 1 |
@@ -80,13 +80,13 @@ De VNG-model-beheersverordening begraafplaatsen, versie 2010, met algemene en ar
 
 | Van | Werkwoord | Naar | Vindplaats |
 |---|---|---|---|
-| Model-beheersverordening begraafplaatsen | is grondslag voor | uitgifte van graven | art. 11, 13, 15 |
-| Model-beheersverordening begraafplaatsen | is grondslag voor | verlenging | art. 15 lid 2 |
-| Model-beheersverordening begraafplaatsen | is grondslag voor | overschrijving van verleende rechten | art. 17 |
-| Model-beheersverordening begraafplaatsen | is grondslag voor | vergunning grafbedekking | art. 19 |
-| Model-beheersverordening begraafplaatsen | is grondslag voor | vergunning grafkelder | art. 16 |
-| Model-beheersverordening begraafplaatsen | is grondslag voor | onderhoud door de gemeente | art. 20 |
-| Model-beheersverordening begraafplaatsen | is grondslag voor | ruiming | art. 24 |
+| Model-beheersverordening begraafplaatsen | werkt uit voor | uitgifte van graven | art. 11, 13, 15 |
+| Model-beheersverordening begraafplaatsen | werkt uit voor | verlenging | art. 15 lid 2 |
+| Model-beheersverordening begraafplaatsen | werkt uit voor | overschrijving van verleende rechten | art. 17 |
+| Model-beheersverordening begraafplaatsen | werkt uit voor | vergunning grafbedekking | art. 19 |
+| Model-beheersverordening begraafplaatsen | werkt uit voor | vergunning grafkelder | art. 16 |
+| Model-beheersverordening begraafplaatsen | werkt uit voor | onderhoud door de gemeente | art. 20 |
+| Model-beheersverordening begraafplaatsen | werkt uit voor | ruiming | art. 24 |
 | Model-beheersverordening begraafplaatsen | werkt uit | Wet op de lijkbezorging | aanhef; toelichting 1.1, 3.1 |
 | raad | stelt vast, gelet op Wlb art. 35 en Gemeentewet art. 149 | beheersverordening begraafplaatsen | aanhef; toelichting 1.1 |
 | particulier urnengraf | is een | particulier graf | art. 2 lid 1 |
@@ -132,7 +132,7 @@ De VNG-model-beheersverordening begraafplaatsen, versie 2010, met algemene en ar
 
 ## Relevantie voor de architectuur
 
-- **Beleidskader (kandidaat):** de Model-beheersverordening begraafplaatsen zelf, als VNG-modelverordening: landelijk, grondslag voor uitgifte, verlenging, overschrijving en afstand van grafrechten, de vergunningen grafbedekking en grafkelder, onderhoud en ruiming. *In werking*: de openbare versie is van 2010 en mogelijk niet meer de actuele versie (tegenspraak over de termijn in Wlb art. 28 lid 7).
+- **Beleidskader:** de Model-beheersverordening begraafplaatsen zelf, als VNG-modelverordening: landelijk, nooit grondslag (regel Wettelijke grondslag), werkt uit voor uitgifte, verlenging, overschrijving en afstand van grafrechten, de vergunningen grafbedekking en grafkelder, onderhoud en ruiming. *In werking*: de openbare versie is van 2010 en mogelijk niet meer de actuele versie (tegenspraak over de termijn in Wlb art. 28 lid 7).
 - **Namen (gangbare taal):** particulier graf (wettelijk: graf met uitsluitend recht; oud spraakgebruik: eigen graf), urn naast asbus, rechthebbende, gebruiker, beheerder, grafbedekking. Het model is de bron van de begripsbepalingen die Groningen overneemt.
 - **Bedrijfsobjecten (kandidaten):** graf met de specialisaties particulier en algemeen graf, urnengraf, urnennis en gedenkplaats; grafrecht (recht op een particulier graf); grafbedekking; register; lijst historische graven.
 - **Tegenspraak:** de toelichting noemt het recht op een particulier graf een beschikking van het college; het besluit van de redacteur (2026-09-30) houdt Grafrecht als afspraak, ook als de gemeente het als besluit verleent.

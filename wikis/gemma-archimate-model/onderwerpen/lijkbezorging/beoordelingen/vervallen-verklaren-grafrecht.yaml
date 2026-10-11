@@ -132,7 +132,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   eigen_normering:
     waarde: ja
-    onderbouwing: Art. 28 lid 4–7 (verklaring van verwaarlozing, termijnen van één of vijf jaar); Groningen art. 20; VNG-model art. 17 lid 3.
+    onderbouwing: Art. 28 lid 4–7 (verklaring van verwaarlozing, termijnen van één of vijf jaar); Groningen art. 20; VNG-modelverordening art. 17 lid 3.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -241,7 +241,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 definitie: Het beëindigen van een grafrecht door de gemeente, bijvoorbeeld bij verwaarlozing van het graf of het uitblijven van betaling.
 beschrijving:
-- Bij kennelijke verwaarlozing van het onderhoud van een particulier graf legt de houder dat vast in een verklaring van verwaarlozing; voorziet de rechthebbende niet binnen één jaar (of vijf jaar na bekendmaking bij het graf) in het onderhoud, dan vervalt het recht (art. 28 lid 4–7). Het college kan het grafrecht ook vervallen verklaren bij wanbetaling, verzuim of als het na het overlijden van de rechthebbende niet tijdig wordt overgeschreven (Groningen art. 18 lid 4, 20 lid 2; VNG-model art. 17 lid 3). Beslisser is het college.
+- Bij kennelijke verwaarlozing van het onderhoud van een particulier graf legt de houder dat vast in een verklaring van verwaarlozing; voorziet de rechthebbende niet binnen één jaar (of vijf jaar na bekendmaking bij het graf) in het onderhoud, dan vervalt het recht (art. 28 lid 4–7). Het college kan het grafrecht ook vervallen verklaren bij wanbetaling, verzuim of als het na het overlijden van de rechthebbende niet tijdig wordt overgeschreven (Groningen art. 18 lid 4, 20 lid 2; VNG-modelverordening art. 17 lid 3). Beslisser is het college.
 relaties:
 - soort: toegang (beëindigen)
   naar: grafrecht

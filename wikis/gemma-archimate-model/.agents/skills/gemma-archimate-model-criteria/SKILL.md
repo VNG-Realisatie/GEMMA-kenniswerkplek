@@ -132,9 +132,9 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 
 **Beleidskader.** Alleen bij *regeling als geheel*.
 
-56. Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? (*landelijk*)
+56. Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? (*landelijk*)
 57. Is de regeling geldend recht, of als modelverordening actueel? (*in werking*)
-58. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. (*is grondslag voor*)
+58. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, werkt de VNG-modelverordening die uit, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. (*is grondslag voor*)
 
 **Specialisatie.** Altijd, als het type een pagina heeft.
 

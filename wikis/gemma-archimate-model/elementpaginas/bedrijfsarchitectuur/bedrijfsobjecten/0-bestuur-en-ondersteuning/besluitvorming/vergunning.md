@@ -74,8 +74,8 @@ Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 
 - **Toestemming ingebruikneming bijzondere begraafplaats**: Specialisatie zonder pagina van Vergunning: toestemming van B&W (art. 41). Genoemd door [Verlenen toestemming bijzondere begraafplaats](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-bijzondere-begraafplaats.md).
 - **Vergunning bewaarplaats**: Specialisatie zonder pagina van Vergunning: vergunning van B&W voor een bewaarplaats van asbussen (art. 64).
 - **Vergunning bijzonder crematorium**: Specialisatie zonder pagina van Vergunning: vergunning van B&W (art. 53). Genoemd door [Verlenen vergunning bijzonder crematorium](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-vergunning-bijzonder-crematorium.md).
-- **Vergunning grafbedekking**: Specialisatie zonder pagina van Vergunning: vergunning van het college (Groningen art. 22; VNG-model art. 19).
-- **Vergunning grafkelder**: Specialisatie zonder pagina van Vergunning: vergunning van het college (Groningen art. 17; VNG-model art. 16).
+- **Vergunning grafbedekking**: Specialisatie zonder pagina van Vergunning: vergunning van het college (Groningen art. 22; VNG-modelverordening art. 19).
+- **Vergunning grafkelder**: Specialisatie zonder pagina van Vergunning: vergunning van het college (Groningen art. 17; VNG-modelverordening art. 16).
 - **Vergunning tot opgraving**: Specialisatie zonder pagina van Vergunning: vergunning van de burgemeester (art. 29). Genoemd door [Opgraven stoffelijk overschot](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-stoffelijk-overschot.md).
 - **Vergunning verstrooiingsterrein**: Specialisatie zonder pagina van Vergunning: vergunning van B&W (art. 66b).
 - **Verlof tot begraving of crematie**: Specialisatie zonder pagina van Vergunning: schriftelijk verlof van de ambtenaar van de burgerlijke stand (art. 11, 12). Genoemd door [Uitvoeren lijkbezorging](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md), [Verlenen verlof tot begraving of crematie](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-begraving-of-crematie.md).
@@ -106,8 +106,8 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 - **Toestemming ingebruikneming bijzondere begraafplaats**: Toestemming van B&W (art. 41). Geen eigen pagina.
 - **Vergunning bewaarplaats**: Vergunning van B&W voor een bewaarplaats van asbussen (art. 64). Geen eigen pagina.
 - **Vergunning verstrooiingsterrein**: Vergunning van B&W voor een terrein om permanent as op te verstrooien (art. 66b). Geen eigen pagina.
-- **Vergunning grafbedekking**: Vergunning van het college, aangevraagd door de rechthebbende (Groningen art. 22; VNG-model art. 19). Geen eigen pagina.
-- **Vergunning grafkelder**: Vergunning van het college aan de rechthebbende voor het aanbrengen van een grafkelder (Groningen art. 17; VNG-model art. 16). Geen eigen pagina.
+- **Vergunning grafbedekking**: Vergunning van het college, aangevraagd door de rechthebbende (Groningen art. 22; VNG-modelverordening art. 19). Geen eigen pagina.
+- **Vergunning grafkelder**: Vergunning van het college aan de rechthebbende voor het aanbrengen van een grafkelder (Groningen art. 17; VNG-modelverordening art. 16). Geen eigen pagina.
 - **Toestemming asverstrooiing**: Ontheffing van het college van het verbod op asverstrooiing buiten de begraafplaats (APV Groningen art. 5:27 lid 3) en toestemming voor verstrooiing op een aangewezen plek op de begraafplaats (Groningen art. 21). Geen eigen pagina.
 - **Laissez-passer voor lijken**: Document van de burgemeester voor vervoer van een stoffelijk overschot naar een verdragsstaat van de Overeenkomst van Straatsburg (Besluit op de lijkbezorging art. 11). Geen eigen pagina.
 

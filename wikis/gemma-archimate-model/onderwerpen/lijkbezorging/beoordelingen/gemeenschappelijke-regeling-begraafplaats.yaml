@@ -41,7 +41,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: het begrip is een samenwerkingsverband.'
   samenwerkingsverband:
     waarde: ja
-    onderbouwing: Gemeenten die samen een begraafplaats hebben of die op het grondgebied van een andere gemeente laten liggen (Wlb art. 33, 36; VNG-model toelichting 1.2).
+    onderbouwing: Gemeenten die samen een begraafplaats hebben of die op het grondgebied van een andere gemeente laten liggen (Wlb art. 33, 36; VNG-modelverordening toelichting 1.2).
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -62,7 +62,7 @@ kenmerken:
     onderbouwing: Niet van toepassing.
   eigen_rechtspersoon:
     waarde: nee
-    onderbouwing: Een eenvoudige gemeenschappelijke regeling zonder openbaar lichaam (VNG-model toelichting 1.2).
+    onderbouwing: Een eenvoudige gemeenschappelijke regeling zonder openbaar lichaam (VNG-modelverordening toelichting 1.2).
   vervult_een_rol:
     waarde: nee
     onderbouwing: Niet van toepassing.

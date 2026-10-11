@@ -32,7 +32,7 @@ Naaste van een overledene die zorg draagt voor de uitvaart of de urn.
 
 ### Beschrijving
 
-De nabestaande draagt zorg voor de asbus, geeft opdracht tot bijzetting of verstrooiing en kan de as laten meegeven (art. 58–60, 62). Op de gemeentelijke begraafplaats kan hij werkzaamheden bij de begraving zelf verrichten en bij ruiming de resten laten herbegraven of cremeren (Groningen art. 7 lid 4, 27 lid 4; VNG-model art. 24 lid 4).
+De nabestaande draagt zorg voor de asbus, geeft opdracht tot bijzetting of verstrooiing en kan de as laten meegeven (art. 58–60, 62). Op de gemeentelijke begraafplaats kan hij werkzaamheden bij de begraving zelf verrichten en bij ruiming de resten laten herbegraven of cremeren (Groningen art. 7 lid 4, 27 lid 4; VNG-modelverordening art. 24 lid 4).
 
 ## Plaats in het model
 

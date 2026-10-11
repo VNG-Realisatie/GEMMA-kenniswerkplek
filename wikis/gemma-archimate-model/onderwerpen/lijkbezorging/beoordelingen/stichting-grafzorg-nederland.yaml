@@ -2,7 +2,7 @@ begrip: Stichting Grafzorg Nederland
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: Genoemd in de toelichting op het VNG-model.
+    onderbouwing: Genoemd in de toelichting op de VNG-modelverordening.
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   gemeentelijk:
@@ -186,12 +186,12 @@ kenmerken:
   generiek:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst buiten_scope).'
-toelichting: 'Buiten scope: alleen context (VNG-model, toelichting art. 17).'
+toelichting: 'Buiten scope: alleen context (VNG-modelverordening, toelichting art. 17).'
 onderwerpen:
 - lijkbezorging
 besluiten:
 - datum: '2026-10-04'
-  besluit: 'Buiten scope: alleen genoemd als mogelijke nieuwe rechthebbende op het graf (VNG-model, toelichting art. 17); geen structurele relatie met de gemeente.'
+  besluit: 'Buiten scope: alleen genoemd als mogelijke nieuwe rechthebbende op het graf (VNG-modelverordening, toelichting art. 17); geen structurele relatie met de gemeente.'
   gevolg: afwijzen
   redenen:
   - 'gemeentelijk: nee'

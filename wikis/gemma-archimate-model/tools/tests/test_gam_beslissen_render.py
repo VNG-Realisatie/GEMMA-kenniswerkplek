@@ -887,7 +887,7 @@ def test_wettelijke_grondslag():
         "wet-x": data(["wet"], regelgever="rijk", relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
         "hup-x": data(["hup"], regelgever="landelijke organisatie",
                       relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
-        "vng-model": data(["site"], regelgever="VNG-model",
+        "vng-model": data(["site"], regelgever="VNG-modelverordening",
                           relaties=[{"soort": "associatie (gericht)", "naar": "dienst-upl", "naam": "is grondslag voor"},
                                     {"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"},
                                     {"soort": "associatie (gericht)", "naar": "proces-upl", "naam": "werkt uit voor"}]),
@@ -906,9 +906,9 @@ def test_wettelijke_grondslag():
     fouten, signalen_ = signalen.wettelijke_grondslag(alle, elementen, soorten.get)
     assert fouten[0] == ("hup-x: een richtlijn is geen wettelijke grondslag; noem de relatie naar 'dienst-a' 'geeft "
                          "richtlijn voor' (regel Wettelijke grondslag)")
-    # een VNG-model is nooit grondslag, ook niet voor een UPL-dienst zonder landelijke grondslag
+    # een VNG-modelverordening is nooit grondslag, ook niet voor een UPL-dienst zonder landelijke grondslag
     assert [f.split(":")[0] for f in fouten] == ["hup-x", "vng-model", "vng-model", "proces-upl"]   # een vervallen proces telt niet mee
-    assert "een VNG-model is nooit grondslag; noem de relatie naar 'dienst-upl' 'werkt uit voor'" in fouten[1]
+    assert "een VNG-modelverordening is nooit grondslag; noem de relatie naar 'dienst-upl' 'werkt uit voor'" in fouten[1]
     assert "noem de relatie naar 'dienst-a' 'werkt uit voor'" in fouten[2]
     assert "realiseert UPL-dienst 'dienst-upl'" in fouten[3]
     assert [s.split(":")[0] for s in signalen_] == ["rol-zonder"]

@@ -212,7 +212,7 @@ taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Plaats op een begraafplaats waarin stoffelijke overschotten worden begraven of urnen worden bijgezet.
 beschrijving:
-- Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k); het is een zandgraf of keldergraf (VNG-model art. 1 b). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven stoffelijke overschotten met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina. Graven van historische betekenis staan op een lijst; over het ruimen daarvan beslist de raad (VNG-model art. 26). Op het graf kan een grafbedekking staan, een gedenkteken of grafbeplanting; zolang het graf niet geruimd mag worden, wordt wat erop geplaatst is geen eigendom van de grondeigenaar (art. 32a).
+- Een graf ligt op een begraafplaats en bestaat uit een of meer grafruimtes (Groningen art. 1 h, k); het is een zandgraf of keldergraf (VNG-modelverordening art. 1 b). De wet onderscheidt het algemeen graf, waarin de houder van de begraafplaats bepaalt wie er begraven wordt, en het particulier graf, waarop een grafrecht rust (art. 23 lid 2). Gemeenten delen graven verder in naar doelgroep, inhoud en termijn; die grafsoorten zijn specialisaties zonder eigen pagina. De houder houdt een openbaar register van de begraven stoffelijke overschotten met hun plaats (art. 27; Groningen art. 30); dat register is de vorm waarin de gegevens van graven worden bijgehouden en krijgt geen eigen pagina. Graven van historische betekenis staan op een lijst; over het ruimen daarvan beslist de raad (VNG-modelverordening art. 26). Op het graf kan een grafbedekking staan, een gedenkteken of grafbeplanting; zolang het graf niet geruimd mag worden, wordt wat erop geplaatst is geen eigendom van de grondeigenaar (art. 32a).
 ggm:
   sterkte: geen
   onderbouwing: Het GGM kent geen entiteit Graf, terwijl Gemeentebegrafenis er wel naar verwijst (attribuut datumRuimingGraf); GGM-terugmelding 3 (hiaat).
@@ -235,13 +235,13 @@ specialisaties:
 - naam: Particulier foetusgraf
   omschrijving: Graf waarin een foetus jonger dan 24 weken kan worden bijgezet (Groningen art. 1 o). Geen eigen pagina.
 - naam: Particulier urnengraf
-  omschrijving: Graf met het uitsluitend recht tot bijzetten van asbussen of sierurnen, 5 tot 30 jaar (Groningen art. 1 u, 16; VNG-model art. 1 h). Geen eigen pagina.
+  omschrijving: Graf met het uitsluitend recht tot bijzetten van asbussen of sierurnen, 5 tot 30 jaar (Groningen art. 1 u, 16; VNG-modelverordening art. 1 h). Geen eigen pagina.
 - naam: Algemeen urnengraf
-  omschrijving: Graf bij de gemeente in beheer voor het bijzetten van asbussen (VNG-model art. 1 i). Geen eigen pagina.
+  omschrijving: Graf bij de gemeente in beheer voor het bijzetten van asbussen (VNG-modelverordening art. 1 i). Geen eigen pagina.
 - naam: Particuliere urnennis
-  omschrijving: Nis in een urnenmuur met het uitsluitend recht tot bijzetten van asbussen (Groningen art. 1 v; VNG-model art. 1 j). Geen eigen pagina.
+  omschrijving: Nis in een urnenmuur met het uitsluitend recht tot bijzetten van asbussen (Groningen art. 1 v; VNG-modelverordening art. 1 j). Geen eigen pagina.
 - naam: Particuliere gedenkplaats
-  omschrijving: Plaats met het uitsluitend recht om overledenen te gedenken, bijvoorbeeld vermisten (VNG-model art. 1 k, toelichting art. 11). Geen eigen pagina.
+  omschrijving: Plaats met het uitsluitend recht om overledenen te gedenken, bijvoorbeeld vermisten (VNG-modelverordening art. 1 k, toelichting art. 11). Geen eigen pagina.
 - naam: Partnergraf
   omschrijving: Twee graven naast elkaar voor twee met namen aangeduide overledenen (Groningen art. 1 dd, 14). Geen eigen pagina.
 - naam: Vrije-veldgraf

@@ -9,7 +9,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: 'Gemeentelijk: verordening van de gemeente over beheer en gebruik van haar begraafplaatsen (VNG; Groningen; VNG-model).'
+    onderbouwing: 'Gemeentelijk: verordening van de gemeente over beheer en gebruik van haar begraafplaatsen (VNG; Groningen; VNG-modelverordening).'
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2026-vng-wet-op-de-lijkbezorging
@@ -209,7 +209,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
 genoemd_begrip: Regeling
-toelichting: 'Specialisatie zonder pagina van Regeling: verordening van de gemeente over beheer en gebruik van haar begraafplaatsen (VNG; Groningen; VNG-model).'
+toelichting: 'Specialisatie zonder pagina van Regeling: verordening van de gemeente over beheer en gebruik van haar begraafplaatsen (VNG; Groningen; VNG-modelverordening).'
 onderwerpen:
 - lijkbezorging
 beslist:

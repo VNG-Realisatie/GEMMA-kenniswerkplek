@@ -7,13 +7,12 @@ Open punten voor deze wiki. Een punt verdwijnt als het is afgehandeld; de afhand
 De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde pagina's; de elementpagina's van vóór de herziening staan in Git onder tag `voor-herbeoordeling`.
 
 - **Participatie** daarna, met de participatie-modelverordening als mogelijk beleidskader.
-- **Kanalen** als één centrale set. Input uit lijkbezorging (geen element daar): de elektronische weg (Wlb art. 7, Awb art. 2:13–2:15), het mededelingenbord en bordje bij het graf (Groningen art. 27, VNG-model art. 24), de beheerder als aanspreekpunt voor aanvragen (VNG-model toelichting 2), en digitaal aangifte doen met eHerkenning (RVO, burgerlijke stand).
+- **Kanalen** als één centrale set. Input uit lijkbezorging (geen element daar): de elektronische weg (Wlb art. 7, Awb art. 2:13–2:15), het mededelingenbord en bordje bij het graf (Groningen art. 27, VNG-modelverordening art. 24), de beheerder als aanspreekpunt voor aanvragen (VNG-modelverordening toelichting 2), en digitaal aangifte doen met eHerkenning (RVO, burgerlijke stand).
 
 ## Wettelijke grondslag (ARCHITECTURE.md, secties 3.4 en 4.2)
 
 - **Richtlijnen als beleidskader**: per onderwerp beoordelen welke landelijke richtlijnen als geheel een beleidskader worden, met relatie *geeft richtlijn voor*. Kandidaten in burgerzaken: de HUP van RvIG (per hoofdstuk of als geheel, voorleggen), de Circulaire adresonderzoek BRP, de NVVB-handreikingen adresonderzoek en gezag.
-- **Herbeoordeling van de elementen die op een VNG-model steunen** (regel Bronvoorrang, besluit 2026-10-11): een VNG-model is voor matchen en voor de termen en de taal, geen bron voor een claim en nooit grondslag. Beoordeel per element de kenmerken, relaties en teksten die op de Model beheersverordening begraafplaatsen (41 elementen) of de Model-APV (4) steunen, en vervang de bron door de wet of een gemeentelijke verordening als voorbeeld, of laat de claim vervallen. Bepaal daarbij of de Model-APV en de Model beheersverordening beleidskader blijven: hun kenmerk *is grondslag voor* staat nog op ja, terwijl hun relaties nu *werkt uit voor* heten. Leg elk geval voor.
-- **Licentie VNG-modellen**: de Model-APV (2023-vng-model-apv) en de Model beheersverordening (2010) staan letterlijk in `sources/raw/` van een publieke repository, zonder licentie in de bron. Laat de VNG (juridische zaken of het team modelverordeningen) bevestigen dat hergebruik mag, of er een licentie op zetten. De VNG herziet de Model-APV volledig (gepland begin 2027): vervang dan de bron.
+- **Licentie VNG-modelverordeningen**: de Model-APV (2023-vng-model-apv) en de Model beheersverordening (2010) staan letterlijk in `sources/raw/` van een publieke repository, zonder licentie in de bron. Laat de VNG (juridische zaken of het team modelverordeningen) bevestigen dat hergebruik mag, of er een licentie op zetten. De VNG herziet de Model-APV volledig (gepland begin 2027): vervang dan de bron.
 
 ## Indelingen (ARCHITECTURE.md, sectie 4.4)
 

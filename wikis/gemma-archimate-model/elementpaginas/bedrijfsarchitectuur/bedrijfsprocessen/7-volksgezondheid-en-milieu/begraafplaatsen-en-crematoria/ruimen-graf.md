@@ -37,7 +37,7 @@ Het leegmaken van een graf, waarbij de resten worden herbegraven en de as wordt 
 
 ### Beschrijving
 
-Een graf wordt geruimd op last van de houder van de begraafplaats, na ten minste tien jaar na de laatste begraving en bij een particulier graf met toestemming van de rechthebbende (art. 31). Het college kondigt een ruiming ten minste een jaar vooraf aan, per brief of met een bordje bij het graf en op het mededelingenbord; de beheerder ziet toe op een respectvolle omgang met de resten, die worden herbegraven, terwijl de as wordt verstrooid (Groningen art. 27; VNG-model art. 24). Asbussen worden geruimd door verstrooiing van de as (art. 66).
+Een graf wordt geruimd op last van de houder van de begraafplaats, na ten minste tien jaar na de laatste begraving en bij een particulier graf met toestemming van de rechthebbende (art. 31). Het college kondigt een ruiming ten minste een jaar vooraf aan, per brief of met een bordje bij het graf en op het mededelingenbord; de beheerder ziet toe op een respectvolle omgang met de resten, die worden herbegraven, terwijl de as wordt verstrooid (Groningen art. 27; VNG-modelverordening art. 24). Asbussen worden geruimd door verstrooiing van de as (art. 66).
 
 ### Synoniemen
 

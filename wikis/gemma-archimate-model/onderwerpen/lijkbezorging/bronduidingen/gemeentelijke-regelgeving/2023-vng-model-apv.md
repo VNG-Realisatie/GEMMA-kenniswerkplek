@@ -6,7 +6,7 @@ bronnen:
 - 2023-vng-model-apv
 relevant: ja
 korte_titel: Model-APV
-bijgewerkt: 2026-10-08
+bijgewerkt: 2026-10-11
 ---
 
 # Model Algemene plaatselijke verordening (VNG, november 2023), afdeling Verstrooiing
@@ -17,7 +17,7 @@ Bron: [tekst](../../../../../../sources/raw/2023-vng-model-apv.md) · [origineel
 
 Voor dit onderwerp is van de Model-APV alleen hoofdstuk 5, afdeling 9 *Verstrooiing* (art. 5:35–5:37) in scope. Het is de geconsolideerde modeltekst van de VNG per 1 januari 2024 (versie na de wijziging van najaar 2023, technisch aangepast aan de Omgevingswet), zonder toelichting. De VNG publiceert het model alleen in de Kennisbank Decentrale Regelgeving (KDER, Sdu) en in het portaal Modellen Decentrale Regelgeving (MDR, met wachtwoord); deze openbare kopie is een bijlage bij een raadsvoorstel van de gemeente Opmeer. De ledenbrieven met wijzigingen van zomer 2024 en zomer 2026 wijzigen art. 5:35–5:37 niet. De VNG werkt aan een volledige herziening van het model, bedoeld voor begin 2027 (Toelichting, regel 2634); dan moet deze bron worden vervangen.
 
-De UPL noemt art. 5:36 van de Model-APV als grondslag van het product asverstrooiing (2025-vng-upl-producten-en-diensten-extern, nr. 32). Daarmee is de Model-APV de gemeentelijke grondslag van dat UPL-product, in de vorm die de regel Wettelijke grondslag vraagt: een VNG-model, niet de verordening van één gemeente. De Wet op de lijkbezorging staat incidentele asverstrooiing toe (art. 66a); het verbod op bepaalde plaatsen en de ontheffing komen uit de APV.
+De UPL noemt art. 5:36 van de Model-APV als grondslag van het product asverstrooiing (2025-vng-upl-producten-en-diensten-extern, nr. 32). Een VNG-modelverordening is nooit grondslag (regel Wettelijke grondslag): de Model-APV werkt het UPL-product uit, dat geen landelijke wettelijke grondslag heeft. De Wet op de lijkbezorging staat incidentele asverstrooiing toe (art. 66a); het verbod op bepaalde plaatsen en de ontheffing komen uit de APV.
 
 Art. 5:36 heeft twee varianten waaruit de gemeente kiest. In variant 1 is verstrooien verboden op verharde delen van de weg en op gemeentelijke begraafplaatsen en crematoriumterreinen, en kan het college ontheffing verlenen van het verbod op de weg (lid 3). In variant 2 is verstrooien verboden buiten de plaatsen die de gemeente in de verordening opsomt, en kan het college ontheffing verlenen voor andere plaatsen (lid 3). In beide varianten is de dienst dezelfde: een ontheffing van het college op verzoek van de nabestaande die zorgdraagt voor de asbus, bij bijzondere omstandigheden.
 
@@ -45,11 +45,11 @@ Art. 5:36 heeft twee varianten waaruit de gemeente kiest. In variant 1 is verstr
 | nabestaande | draagt zorg voor | asbus | art. 5:36 lid 3 |
 | college | kan verbieden of onttrekken | plaatsen voor asverstrooiing | art. 5:36 lid 2 |
 | incidentele asverstrooiing | is verstrooien van as als bedoeld in | Wet op de lijkbezorging | art. 5:35 |
-| Model-APV | is grondslag voor | asverstrooiing (UPL) | art. 5:36; UPL nr. 32 |
+| Model-APV | werkt uit voor | asverstrooiing (UPL) | art. 5:36; UPL nr. 32 |
 
 ## Relevantie voor de architectuur
 
-- **Beleidskader:** de Model-APV als geheel is een VNG-modelverordening, in de groep Gemeentelijke regelgeving. Ze is grondslag voor de dienst *Asverstrooiing* (UPL nr. 32), met art. 5:36 lid 3. Een beleidskader in Gemeentelijke regelgeving is alleen grondslag voor een UPL-product of -dienst, niet voor een proces of object (regel Wettelijke grondslag).
+- **Beleidskader:** de Model-APV als geheel is een VNG-modelverordening, in de groep Gemeentelijke regelgeving. Ze werkt de dienst *Asverstrooiing* (UPL nr. 32) uit, met art. 5:36 lid 3; een VNG-modelverordening is nooit grondslag (regel Wettelijke grondslag).
 - **Geen uitwerking:** de ontheffing is een besluit van het college, maar wordt niet uitgewerkt in een proces, object of rol: daarvoor ontbreekt een landelijke wettelijke grondslag. Het proces *Verlenen toestemming asverstrooiing* vervalt.
 - **Bestaande begrippen:** *Incidentele asverstrooiing* (specialisatie zonder pagina van *Bijzetten of verstrooien van de as*), *Nabestaande* en *Urn* (wettelijk asbus).
 - **Overige afdelingen:** de rest van de Model-APV (openbare orde, evenementen, horeca, standplaatsen en meer) is buiten dit onderwerp; een later onderwerp openbare orde gebruikt hetzelfde beleidskader.

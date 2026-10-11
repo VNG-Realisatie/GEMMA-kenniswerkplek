@@ -4,14 +4,14 @@ onderwerpen:
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: Product in de UPL (nr. 142); de vergunning grafbedekking staat in de beheersverordeningen (VNG-model art. 19; Groningen art. 22).
+    onderbouwing: Product in de UPL (nr. 142); de vergunning grafbedekking staat in de beheersverordeningen (VNG-modelverordening art. 19; Groningen art. 22).
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
     - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: Het college verleent de vergunning (VNG-model art. 19 lid 1; Groningen art. 22 lid 1).
+    onderbouwing: Het college verleent de vergunning (VNG-modelverordening art. 19 lid 1; Groningen art. 22 lid 1).
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -209,7 +209,7 @@ kenmerken:
     onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Vergunning van de gemeente voor het plaatsen en hebben van een gedenkteken of andere grafbedekking op een graf.
 beschrijving:
-- Voor het hebben van een grafbedekking is een schriftelijke vergunning van het college nodig; de rechthebbende van een particulier graf vraagt haar aan (VNG-model art. 19 lid 1–2; Groningen art. 22 lid 1–2). Het college kan nadere regels stellen over de aanvraag, de aard en de afmetingen van de grafbedekking en kan de vergunning weigeren (Groningen art. 22 lid 3–4). De beheersverordeningen spreken van vergunning grafbedekking; de UPL van gedenkteken plaatsingsvergunning (UPL).
+- Voor het hebben van een grafbedekking is een schriftelijke vergunning van het college nodig; de rechthebbende van een particulier graf vraagt haar aan (VNG-modelverordening art. 19 lid 1–2; Groningen art. 22 lid 1–2). Het college kan nadere regels stellen over de aanvraag, de aard en de afmetingen van de grafbedekking en kan de vergunning weigeren (Groningen art. 22 lid 3–4). De beheersverordeningen spreken van vergunning grafbedekking; de UPL van gedenkteken plaatsingsvergunning (UPL).
 afnemer: extern
 domein: Fysieke leefomgeving
 taakveld: 7 Volksgezondheid en Milieu
@@ -225,7 +225,7 @@ relaties:
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vindplaats: VNG-model art. 19 lid 2; Groningen art. 22 lid 2
+  vindplaats: VNG-modelverordening art. 19 lid 2; Groningen art. 22 lid 2
 besluiten:
 - datum: '2026-10-05'
   gevolg: verwerkt

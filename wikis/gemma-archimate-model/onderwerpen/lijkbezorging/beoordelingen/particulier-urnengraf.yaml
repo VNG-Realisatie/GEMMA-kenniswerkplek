@@ -8,7 +8,7 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   gemeentelijk:
     waarde: ja
-    onderbouwing: 'Gemeentelijk: Graf met het uitsluitend recht tot bijzetten van asbussen of sierurnen, 5 tot 30 jaar (Groningen art. 1 u, 16; VNG-model art. 1 h).'
+    onderbouwing: 'Gemeentelijk: Graf met het uitsluitend recht tot bijzetten van asbussen of sierurnen, 5 tot 30 jaar (Groningen art. 1 u, 16; VNG-modelverordening art. 1 h).'
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -199,7 +199,7 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
 genoemd_begrip: Graf
-toelichting: 'Specialisatie zonder pagina van Graf: Graf met het uitsluitend recht tot bijzetten van asbussen of sierurnen, 5 tot 30 jaar (Groningen art. 1 u, 16; VNG-model art. 1 h).'
+toelichting: 'Specialisatie zonder pagina van Graf: Graf met het uitsluitend recht tot bijzetten van asbussen of sierurnen, 5 tot 30 jaar (Groningen art. 1 u, 16; VNG-modelverordening art. 1 h).'
 onderwerpen:
 - lijkbezorging
 beslist:
