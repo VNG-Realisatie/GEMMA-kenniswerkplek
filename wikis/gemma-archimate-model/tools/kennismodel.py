@@ -81,7 +81,7 @@ VERANTWOORDELIJKHEDEN = {"houder": "lezen-schrijven", "bronhouder": "schrijven",
                          "partij": "lezen-schrijven"}
 # Naam van de relatie van een beleidskader naar wat erop steunt, naar de groep in de Grondslagindeling
 GRONDSLAGNAMEN = {"is grondslag voor": "Europese regelgeving, Rijksregelgeving; Gemeentelijke regelgeving alleen naar "
-                                       "een UPL-product of -dienst zonder landelijke grondslag",
+                                       "een UPL-dienst zonder landelijke grondslag",
                   "werkt uit voor": "Gemeentelijke regelgeving: werkt de wet uit",
                   "geeft richtlijn voor": "Richtlijn: geen wettelijke grondslag"}
 
@@ -192,10 +192,8 @@ ELEMENTTYPEN: list[Elementtype] = [
         "bewonersparkeervergunning zoals de productencatalogus haar aanbiedt",
         "bezoekersparkeervergunning als tarief van de parkeervergunning (geen zelfstandig aanbod)",
         eigenschappen=("afnemer", "domein", "taakveld", "beleidsdomein", "gemma"), verplicht=("domein", "afnemer"),
-        afspraken=("Een product of dienst uit de UPL blijft ook zonder landelijke wettelijke grondslag; dan wordt het "
-                   "niet uitgewerkt in processen, objecten, gebeurtenissen of rollen.",
-                   "Een beleidskader hangt bij voorkeur aan een product; aan een proces of dienst alleen zolang er geen "
-                   "product is.")),
+        afspraken=("Een product komt nooit uit één UPL-item: een UPL-item is een dienst, en een product bundelt "
+                   "zulke diensten met afspraken.",)),
     Elementtype(
         "dienst", "Dienst", "Business Service", "business-service", "bedrijfsarchitectuur", "dienst",
         "Een afgebakende prestatie van een persoon of organisatie (de dienstverlener), die voorziet in een behoefte van "
@@ -204,7 +202,8 @@ ELEMENTTYPEN: list[Elementtype] = [
         "functie.",
         "vanuit de afnemer, wat die kan doen of krijgen (Melding openbare ruimte doen); staat het in de UPL, dan de "
         "UPL-naam letterlijk (Verlof tot begraven)",
-        (("UPL", "bron én matchdoel, als bij een product"), GGM_GEEN, GEMMA_MATCH,
+        (("UPL", "bron én matchdoel: elk UPL-item wordt een dienst, valt nooit weg en houdt zijn naam; zonder match een "
+                 "procesarchitectuur-terugmelding"), GGM_GEEN, GEMMA_MATCH,
          ("generiek GEMMA-element", "bij *generiek*: specialisatie van een generieke GEMMA-dienst (`gemma_generiek`, "
                                     "exacte match); ontbreekt die, dan een voorstel aan GEMMA")),
         "Onderhoud van graven; Melding openbare ruimte doen", "melding afhandelen (proces)",
@@ -212,7 +211,11 @@ ELEMENTTYPEN: list[Elementtype] = [
         verplicht=("domein", "afnemer"),
         afspraken=("Een dienst wordt gerealiseerd door een bedrijfsproces of bedrijfsfunctie; de verantwoordelijke rol "
                    "hangt aan dat proces of die functie, niet aan de dienst.",
-                   "Een product of dienst valt nooit weg: wie het levert, is een bedrijfsproces.")),
+                   "Een product of dienst valt nooit weg: wie het levert, is een bedrijfsproces.",
+                   "Een dienst uit de UPL blijft ook zonder landelijke wettelijke grondslag; dan wordt zij niet "
+                   "uitgewerkt in processen, objecten, gebeurtenissen of rollen.",
+                   "Een beleidskader hangt bij voorkeur aan een dienst of product; aan een proces alleen zolang er geen "
+                   "dienst of product is.")),
     Elementtype(
         "bedrijfsproces", "Bedrijfsproces", "Business Process", "business-process", "bedrijfsarchitectuur",
         "bedrijfsproces", "Reeks opeenvolgend uit te voeren activiteiten die bijdraagt aan een specifiek resultaat, "
@@ -381,7 +384,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "het model als gemeenschappelijke vorm.",
                    "Een beleidskader in de groep Richtlijn is geen wettelijke grondslag: zijn relatie heet *geeft "
                    "richtlijn voor*. Een beleidskader in Gemeentelijke regelgeving is alleen grondslag voor een "
-                   "UPL-product of -dienst zonder landelijke grondslag, en werkt voor de rest de wet uit (*werkt uit "
+                   "UPL-dienst zonder landelijke grondslag, en werkt voor de rest de wet uit (*werkt uit "
                    "voor*).",
                    "De relaties naar een ander beleidskader (*werkt uit*, *verwijst naar*) en naar een rol, gebeurtenis "
                    "of bedrijfsobject zijn een uitbreiding op het GEMMA-kennismodel, dat een beleidskader alleen aan "
@@ -758,8 +761,11 @@ INDELINGEN: list[Indeling] = [
 INDELING = {i.naam: i for i in INDELINGEN}
 ALGEMENE_INDELINGSAFSPRAKEN = (
     "Alles ingedeeld: elk element staat in minstens één indeling, ook in de export.",
-    "GEMMA volgen: de GEMMA-indelingen blijven ongewijzigd; een nieuwe indeling komt er alleen waar GEMMA er geen heeft, "
-    "en een tweede elementtype met hetzelfde criterium valt in de bestaande indeling.",
+    "Overlap mag: een element staat in één of meer indelingen. Een overgenomen indeling (GEMMA, Iv3, GGM, UPL) komt "
+    "letterlijk uit het model, zonder beoordeling en zonder bron; een ontstane indeling (de onderwerpen, de Procesindeling "
+    "naar kernobject, de Grondslagindeling) komt uit de bronnen. Indelingen zijn niet leidend en worden later "
+    "geconsolideerd.",
+    "Hergebruik: een tweede elementtype met hetzelfde criterium valt in de bestaande indeling.",
     "Specialisatie koppelt aan een GEMMA-indeling (wat voor soort is het?), aggregatie aan een eigen indeling (waar "
     "hoort het bij?).",
     "Bij voorkeur hiërarchisch; meer ouders geeft een signaal, behalve de twee ouders van een bedrijfsproces "

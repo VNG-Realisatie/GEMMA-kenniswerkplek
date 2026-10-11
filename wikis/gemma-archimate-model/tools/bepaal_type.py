@@ -123,7 +123,7 @@ KENMERKEN: list[Kenmerk] = [
     Kenmerk("aanbod_als_geheel", "aanbod als geheel", "Aard",
             "Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer "
             "wordt geleverd?",
-            "bewonersparkeervergunning zoals de productencatalogus haar aanbiedt", "parkeren",
+            "bewonersparkeervergunning zoals de productencatalogus haar aanbiedt", "parkeren; één UPL-item als zodanig (een dienst)",
             "GEMMA (definitie Product)"),
     Kenmerk("regeling_als_geheel", "regeling als geheel", "Aard",
             "Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel "
@@ -326,7 +326,7 @@ KENMERKEN: list[Kenmerk] = [
     Kenmerk("zelfstandig_aanbod", "zelfstandig aanbod", "Passief",
             "Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product?",
             "bewonersparkeervergunning", "bezoekersparkeervergunning als tarief van parkeervergunning",
-            "UPL (één product per productnaam)", _bij("aanbod_als_geheel")),
+            "UPL (één naam per aanbod)", _bij("aanbod_als_geheel")),
     Kenmerk("omvat_diensten_en_afspraken", "omvat diensten en afspraken", "Passief",
             "Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze.",
             "parkeervergunning (dienst parkeren, voorwaarden)", "losse dienst",

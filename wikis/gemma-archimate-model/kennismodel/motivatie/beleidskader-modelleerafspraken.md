@@ -26,7 +26,7 @@ titel: Beleidskader — modelleerafspraken
 ## Afspraken
 
 - Een regeling of beleid van één gemeente blijft bron en wordt geen element; het VNG-model staat in het model als gemeenschappelijke vorm.
-- Een beleidskader in de groep Richtlijn is geen wettelijke grondslag: zijn relatie heet *geeft richtlijn voor*. Een beleidskader in Gemeentelijke regelgeving is alleen grondslag voor een UPL-product of -dienst zonder landelijke grondslag, en werkt voor de rest de wet uit (*werkt uit voor*).
+- Een beleidskader in de groep Richtlijn is geen wettelijke grondslag: zijn relatie heet *geeft richtlijn voor*. Een beleidskader in Gemeentelijke regelgeving is alleen grondslag voor een UPL-dienst zonder landelijke grondslag, en werkt voor de rest de wet uit (*werkt uit voor*).
 - De relaties naar een ander beleidskader (*werkt uit*, *verwijst naar*) en naar een rol, gebeurtenis of bedrijfsobject zijn een uitbreiding op het GEMMA-kennismodel, dat een beleidskader alleen aan een product en een kwaliteitsdoel koppelt.
 
 ## Relaties

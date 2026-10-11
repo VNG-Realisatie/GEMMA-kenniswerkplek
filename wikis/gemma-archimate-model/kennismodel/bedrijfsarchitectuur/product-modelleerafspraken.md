@@ -25,8 +25,7 @@ titel: Product — modelleerafspraken
 
 ## Afspraken
 
-- Een product of dienst uit de UPL blijft ook zonder landelijke wettelijke grondslag; dan wordt het niet uitgewerkt in processen, objecten, gebeurtenissen of rollen.
-- Een beleidskader hangt bij voorkeur aan een product; aan een proces of dienst alleen zolang er geen product is.
+- Een product komt nooit uit één UPL-item: een UPL-item is een dienst, en een product bundelt zulke diensten met afspraken.
 
 ## Relaties
 

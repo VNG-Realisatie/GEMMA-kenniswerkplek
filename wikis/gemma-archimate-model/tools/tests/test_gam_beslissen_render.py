@@ -568,6 +568,7 @@ def test_signalen_voor_de_indeling():
         "lege-keten": el("bedrijfsinteractie"),
         "onderhoud": el("dienst"),
         "wet": el("beleidskader"),
+        "wet-dienst": el("beleidskader"),
         "gemeente": el("actor"),
         "raad": el("actor"),
         "arts": el("gebeurtenis", generiek=True),
@@ -577,6 +578,7 @@ def test_signalen_voor_de_indeling():
     alle["beheren"]["relaties"] = [rel("aggregatie", "deel")]
     alle["cluster"]["relaties"] = [rel("aggregatie", "deel"), rel("aggregatie", "alleen-soort")]
     alle["deel"]["relaties"] = [rel("realisatie", "onderhoud"), rel("bediening", "keten")]
+    alle["wet-dienst"]["relaties"] = [rel("associatie (gericht)", "onderhoud", "is grondslag voor")]
     alle["gemeente"]["relaties"] = [rel("associatie (gericht)", "raad", "geeft melding door aan"),
                                     rel("associatie (gericht)", "raad", "is voorzitter van")]
     relaties = [(van, r) for van in elementen for r in alle[van].get("relaties", [])]
@@ -585,7 +587,8 @@ def test_signalen_voor_de_indeling():
     assert "alleen-soort: hangt onder geen levensloopproces" in tekst  # een cluster naar soort werk telt niet
     assert "deel: hangt onder geen" not in tekst and "beheren: hangt" not in tekst
     assert "lege-keten: geen bedrijfsproces bedient" in tekst and "keten: geen bedrijfsproces" not in tekst.replace("lege-keten", "")
-    assert "wet: geen product heeft dit beleidskader" in tekst
+    assert "wet: geen dienst of product heeft dit beleidskader" in tekst
+    assert "wet-dienst: geen dienst" not in tekst  # grondslag voor een dienst volstaat
     assert "geeft melding door aan" in tekst and "is voorzitter van" not in tekst
     assert "arts: generiek, maar geen `gemma_generiek`" in tekst
 
@@ -863,7 +866,7 @@ def test_wettelijke_grondslag():
     # het VNG-model is grondslag voor de UPL-dienst zonder landelijke grondslag, niet voor dienst-a (die heeft er een)
     assert [f.split(":")[0] for f in fouten] == ["hup-x", "vng-model", "proces-upl"]   # een vervallen proces telt niet mee
     assert "noem de relatie naar 'dienst-a' 'werkt uit voor'" in fouten[1]
-    assert "realiseert UPL-product 'dienst-upl'" in fouten[2]
+    assert "realiseert UPL-dienst 'dienst-upl'" in fouten[2]
     assert [s.split(":")[0] for s in signalen_] == ["rol-zonder"]
 
 

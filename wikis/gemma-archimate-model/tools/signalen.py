@@ -105,10 +105,10 @@ def indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[t
             w.append(f"{bid}: geen bedrijfsproces bedient deze bedrijfsinteractie; in een ketensamenwerking komen de "
                      "bedrijfsprocessen van de partijen samen (GEMMA Online, Proceshiërarchie)")
         if u["paginatype"] == "beleidskader" and not any(
-                {(elementen.get(van) or {}).get("paginatype"), (elementen.get(r["naar"]) or {}).get("paginatype")} >= {"product", "beleidskader"}
+                {(elementen.get(van) or {}).get("paginatype"), (elementen.get(r["naar"]) or {}).get("paginatype")} & {"product", "dienst"}
                 and bid in (van, r["naar"]) for van, r in relaties):
-            w.append(f"{bid}: geen product heeft dit beleidskader als grondslag; bij voorkeur hangt het aan een product "
-                     "(kennismodel regel 595), aan een proces of dienst alleen tijdelijk")
+            w.append(f"{bid}: geen dienst of product heeft dit beleidskader als grondslag; bij voorkeur hangt het aan een "
+                     "dienst of product (modelleerafspraken Dienst), aan een proces alleen tijdelijk")
         if u.get("generiek") and not alle[bid].get("gemma_generiek"):
             w.append(f"{bid}: generiek, maar geen `gemma_generiek`: specialisatie van een GEMMA-element of voorstel aan GEMMA")
         if u["paginatype"] == "actor":
@@ -424,10 +424,10 @@ def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], bron
 
     Fout: een relatie *is grondslag voor* vanuit een beleidskader in Richtlijn (een richtlijn is geen wettelijke
     grondslag); een relatie *is grondslag voor* vanuit een beleidskader in Gemeentelijke regelgeving naar iets anders
-    dan een UPL-product of -dienst zonder landelijke grondslag (die relatie heet *werkt uit voor*); en een bedrijfsproces dat een UPL-product zonder landelijke grondslag realiseert (zo'n product wordt
+    dan een UPL-dienst zonder landelijke grondslag (die relatie heet *werkt uit voor*); en een bedrijfsproces dat een UPL-dienst zonder landelijke grondslag realiseert (zo'n dienst wordt
     niet uitgewerkt). Signaal: een element zonder landelijke wettelijke
     bron (een bron van `europese-regelgeving` of `rijksregelgeving`, of een relatie *is grondslag voor* van een
-    beleidskader van de EU of het Rijk), behalve een UPL-product of -dienst, een bedrijfsfunctie en een beleidskader.
+    beleidskader van de EU of het Rijk), behalve een UPL-dienst, een bedrijfsfunctie en een beleidskader.
     Een vervallen element (status `afgewezen`) telt niet mee."""
     fouten, signalen_ = [], []
     elementen = {b: u for b, u in elementen.items() if alle[b].get("status") != "afgewezen"}
@@ -464,7 +464,7 @@ def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], bron
             continue
         for r in alle[b].get("relaties", []):
             if r.get("naam") == "is grondslag voor" and r["naar"] in elementen and (not upl(r["naar"]) or landelijk(r["naar"])):
-                fouten.append(f"{b}: gemeentelijke regelgeving is alleen grondslag voor een UPL-product of -dienst zonder "
+                fouten.append(f"{b}: gemeentelijke regelgeving is alleen grondslag voor een UPL-dienst zonder "
                               f"landelijke grondslag; noem de relatie naar '{r['naar']}' 'werkt uit voor' (regel Wettelijke grondslag)")
     zonder = set()
     for b, u in sorted(elementen.items()):
@@ -480,6 +480,6 @@ def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], bron
             continue
         for r in alle[b].get("relaties", []):
             if r["soort"] == "realisatie" and r["naar"] in zonder:
-                fouten.append(f"{b}: realiseert UPL-product '{r['naar']}' zonder landelijke grondslag; zo'n product "
+                fouten.append(f"{b}: realiseert UPL-dienst '{r['naar']}' zonder landelijke grondslag; zo'n dienst "
                                  "wordt niet uitgewerkt in processen (regel Wettelijke grondslag)")
     return fouten, signalen_

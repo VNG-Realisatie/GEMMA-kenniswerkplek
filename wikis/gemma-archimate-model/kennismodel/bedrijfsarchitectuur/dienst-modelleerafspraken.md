@@ -20,13 +20,15 @@ titel: Dienst — modelleerafspraken
 | Eigenschappen | `afnemer` (verplicht): voor wie het is: extern of intern (de bovenste laag van het processenlandschap, de rol Klant en de externe en interne UPL-lijst) (extern, intern) · `domein` (verplicht): het GEMMA-domein, de plaats in de Functie-indeling naar domein (Bestuur, Fysieke leefomgeving, Niet domeingebonden, Openbare orde en veiligheid, Ondersteuning, Publieksdiensten, Sociaal domein) · `taakveld`: het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling · `beleidsdomein`: het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `gemma_generiek`: het generieke GEMMA-element waarvan dit een specialisatie is (exacte match) |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md); [Functie-indeling naar domein](../indelingen.md); [Procesindeling naar soort werk](../indelingen.md) (bij *generiek*) |
 | Naamvorm | vanuit de afnemer, wat die kan doen of krijgen (Melding openbare ruimte doen); staat het in de UPL, dan de UPL-naam letterlijk (Verlof tot begraven) |
-| Afstemming | UPL: bron én matchdoel, als bij een product · GGM: geen match: het GGM modelleert gegevens · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen · generiek GEMMA-element: bij *generiek*: specialisatie van een generieke GEMMA-dienst (`gemma_generiek`, exacte match); ontbreekt die, dan een voorstel aan GEMMA |
+| Afstemming | UPL: bron én matchdoel: elk UPL-item wordt een dienst, valt nooit weg en houdt zijn naam; zonder match een procesarchitectuur-terugmelding · GGM: geen match: het GGM modelleert gegevens · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen · generiek GEMMA-element: bij *generiek*: specialisatie van een generieke GEMMA-dienst (`gemma_generiek`, exacte match); ontbreekt die, dan een voorstel aan GEMMA |
 | Voorbeeld | wel: Onderhoud van graven; Melding openbare ruimte doen · niet: melding afhandelen (proces) |
 
 ## Afspraken
 
 - Een dienst wordt gerealiseerd door een bedrijfsproces of bedrijfsfunctie; de verantwoordelijke rol hangt aan dat proces of die functie, niet aan de dienst.
 - Een product of dienst valt nooit weg: wie het levert, is een bedrijfsproces.
+- Een dienst uit de UPL blijft ook zonder landelijke wettelijke grondslag; dan wordt zij niet uitgewerkt in processen, objecten, gebeurtenissen of rollen.
+- Een beleidskader hangt bij voorkeur aan een dienst of product; aan een proces alleen zolang er geen dienst of product is.
 
 ## Relaties
 

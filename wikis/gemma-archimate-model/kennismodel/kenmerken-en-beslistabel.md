@@ -44,7 +44,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 | 10 | *samenwerkingsverband* | Is het een (ook tijdelijke) samenstelling van twee of meer partijen of rollen die samen gedrag uitvoeren? | Zorg- en Veiligheidshuis; GGD (samenwerking van gemeenten) | GGD-arts | ArchiMate (definitie Bedrijfssamenwerking) |
 | 11 | *toegangspunt* | Is het een communicatiekanaal waarlangs een dienst beschikbaar komt? | publieksbalie; gemeentelijke website | klantcontact | NORA (definitie Kanaal) |
 | 12 | *plaats* | Is het een fysieke plaats als zodanig, en geen gebiedsindeling als gegeven? | stadskantoor als vestigingsplaats | wijk (indeling) | ArchiMate (Location) |
-| 13 | *aanbod als geheel* | Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer wordt geleverd? | bewonersparkeervergunning zoals de productencatalogus haar aanbiedt | parkeren | GEMMA (definitie Product) |
+| 13 | *aanbod als geheel* | Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer wordt geleverd? | bewonersparkeervergunning zoals de productencatalogus haar aanbiedt | parkeren; één UPL-item als zodanig (een dienst) | GEMMA (definitie Product) |
 | 14 | *regeling als geheel* | Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Wet op de lijkbezorging; modelverordening participatie; Circulaire adresonderzoek BRP | 'verordening' als soort (bedrijfsobject Regeling); artikel 16 (losse norm) | GEMMA (definitie Beleidskader) |
 
 **Partij.** Alleen bij *handelende partij*, *hoedanigheid*, *samenwerkingsverband* of *toegangspunt*; *soort partij* bij *handelende partij* en *samenwerkingsverband*.
@@ -104,7 +104,7 @@ Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee)
 | 50 | *waarneembare vorm* | Is het de vorm (document, formulier, register, bericht) waarin informatie van een ander begrip wordt vastgelegd of overgebracht? Noem dat begrip. | aanslagbiljet (van Aanslag); register van begraven lijken | aanslag | ArchiMate (Representation) |
 | 51 | *deel van object* | Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? Noem dat object. | grafbedekking (van Graf) | Graf | GEMMA (negatieve toets: eigen identiteit) |
 | 52 | *invoer van een ander* | Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. | verklaring van overlijden (de arts of lijkschouwer) | vergunning (de gemeente verleent haar) | wiki (abstractieniveau) |
-| 53 | *zelfstandig aanbod* | Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? | bewonersparkeervergunning | bezoekersparkeervergunning als tarief van parkeervergunning | UPL (één product per productnaam) |
+| 53 | *zelfstandig aanbod* | Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? | bewonersparkeervergunning | bezoekersparkeervergunning als tarief van parkeervergunning | UPL (één naam per aanbod) |
 | 54 | *omvat diensten en afspraken* | Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. | parkeervergunning (dienst parkeren, voorwaarden) | losse dienst | GEMMA (product bundelt dienst en afspraak) |
 | 55 | *geautomatiseerd verwerkt* | Wordt het als gegevensstructuur geautomatiseerd verwerkt? | zaak in het zaaksysteem | keukentafelgesprek | GEMMA (definitie Data-object) |
 

@@ -13,7 +13,8 @@ Waar staat elk element in het model? Een **indeling** ordent naar één criteriu
 ## Voor alle indelingen
 
 - Alles ingedeeld: elk element staat in minstens één indeling, ook in de export.
-- GEMMA volgen: de GEMMA-indelingen blijven ongewijzigd; een nieuwe indeling komt er alleen waar GEMMA er geen heeft, en een tweede elementtype met hetzelfde criterium valt in de bestaande indeling.
+- Overlap mag: een element staat in één of meer indelingen. Een overgenomen indeling (GEMMA, Iv3, GGM, UPL) komt letterlijk uit het model, zonder beoordeling en zonder bron; een ontstane indeling (de onderwerpen, de Procesindeling naar kernobject, de Grondslagindeling) komt uit de bronnen. Indelingen zijn niet leidend en worden later geconsolideerd.
+- Hergebruik: een tweede elementtype met hetzelfde criterium valt in de bestaande indeling.
 - Specialisatie koppelt aan een GEMMA-indeling (wat voor soort is het?), aggregatie aan een eigen indeling (waar hoort het bij?).
 - Bij voorkeur hiërarchisch; meer ouders geeft een signaal, behalve de twee ouders van een bedrijfsproces (levensloopproces en cluster naar soort werk).
 
