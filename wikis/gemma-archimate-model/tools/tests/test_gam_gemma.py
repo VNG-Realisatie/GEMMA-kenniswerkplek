@@ -136,3 +136,54 @@ def test_release_zonder_bestand_haalt_ameff_op(tmp_path, archimate_repo, monkeyp
     assert (root / "sources" / "modellen" / "2026-vng-gemma-2026-07-01.xml").exists()
     index = yaml.safe_load((root / "sources" / "index" / "2026-vng-gemma-2026-07-01.md").read_text(encoding="utf-8").split("---")[1])
     assert index["versie"] == "2026-07-01" and index["brontype"] == "model"
+
+
+FUNCTIES = """<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="GEMMA" id="m1" version="5.0.0">
+  <folder name="Business" id="f-business" type="business">
+    <folder name="Bedrijfsfuncties" id="f-bf">
+      <element xsi:type="archimate:BusinessFunction" name="Uitvoering Publieksdiensten" id="id-uitvoering">
+        <property key="GEMMA type" value="Bedrijfsfunctie domein"/>
+      </element>
+      <element xsi:type="archimate:BusinessFunction" name="Realisatie" id="id-realisatie"/>
+      <element xsi:type="archimate:BusinessFunction" name="Publicatie" id="id-publicatie"/>
+      <element xsi:type="archimate:BusinessFunction" name="Burgerlijke stand" id="id-bs"/>
+    </folder>
+  </folder>
+  <folder name="Other" id="f-other" type="other">
+    <folder name="Domeinen" id="f-domeinen">
+      <element xsi:type="archimate:Grouping" name="Publieksdiensten" id="id-domein"/>
+      <element xsi:type="archimate:Grouping" name="Niet domeingebonden" id="id-niet"/>
+    </folder>
+    <element xsi:type="archimate:Grouping" name="Beleidsdomein" id="id-bd"/>
+  </folder>
+  <folder name="Relations" id="f-rel" type="relations">
+    <element xsi:type="archimate:AggregationRelationship" id="r1" source="id-domein" target="id-uitvoering"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r2" source="id-uitvoering" target="id-realisatie"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r3" source="id-realisatie" target="id-bs"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r4" source="id-niet" target="id-publicatie"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r5" source="id-publicatie" target="id-bs"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r6" source="id-bd" target="id-bs"/>
+    <element xsi:type="archimate:ServingRelationship" id="r7" source="id-bs" target="id-realisatie"/>
+  </folder>
+</archimate:model>
+"""
+
+
+def test_functiehierarchie_is_de_hierarchie_van_gemma_as_is(tmp_path):
+    pad = tmp_path / "functies.archimate"
+    pad.write_text(FUNCTIES, encoding="utf-8")
+    data = gemma.parse_archimate(pad)
+    h = gemma.functiehierarchie(data)
+    # de wortels zijn de groeperingen in de map Domeinen die functies aggregeren; een andere groepering is geen knoop
+    assert h["wortels"] == ["id-niet", "id-domein"]
+    assert h["onder"]["id-realisatie"] == [("id-bs", "r3")]
+    assert sorted(h["boven"]["id-bs"]) == [("id-publicatie", "r5"), ("id-realisatie", "r3")]  # een functie kan onder meer ouders
+    assert "id-bd" not in h["boven"].get("id-bs", [])
+    assert gemma.functie_tak(h, "id-realisatie") == ({"id-realisatie", "id-uitvoering", "id-domein"}, {"r1", "r2"})
+    assert gemma.functie_tak(h, "id-bs")[1] == {"r1", "r2", "r3", "r4", "r5"}
+    assert gemma.functie_paden(data, h, "id-bs") == [
+        ["Niet domeingebonden", "Publicatie", "Burgerlijke stand"],
+        ["Publieksdiensten", "Uitvoering Publieksdiensten", "Realisatie", "Burgerlijke stand"]]
+    assert gemma.functie_domein_namen(data, h, "id-realisatie") == ["Publieksdiensten"]
+    assert gemma.functie_domein_namen(data, h, "id-bs") == ["Niet domeingebonden", "Publieksdiensten"]

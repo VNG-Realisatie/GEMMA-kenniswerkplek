@@ -220,7 +220,7 @@ gemma:
 relaties:
 - soort: associatie (gericht)
   naar: asverstrooiing
-  naam: is grondslag voor
+  naam: werkt uit voor
   ggm_match: geen
   bronnen:
   - 2023-vng-model-apv
@@ -242,6 +242,7 @@ besluiten:
   gevolg: opnemen
   redenen:
   - 'grondslag regelgeving: altijd voorleggen'
+  stand: 'herzien 2026-10-11: een VNG-model is nooit grondslag; de relatie naar Asverstrooiing heet werkt uit voor. Of de Model-APV beleidskader blijft, is een open punt (regel Bronvoorrang)'
 status: goedgekeurd
 beslist:
   uitkomst:

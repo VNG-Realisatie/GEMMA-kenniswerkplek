@@ -45,7 +45,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, onderdeel van**: [Producten- en dienstenrealisatie publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md).
+- **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Producten- en dienstenrealisatie publieksdiensten* (geen element van de wiki; Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten), bron: [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 45 (GEMMA-domein Publieksdiensten)).
 - **Afnemer**: extern.
 - **Domein**: Publieksdiensten.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
@@ -74,7 +74,6 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | realiseert *realisatie* | Begraafplaatsregister | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 27) |
-| [Producten- en dienstenrealisatie publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Begraafplaatsregister | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 45 (GEMMA-domein Publieksdiensten)) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/rijksregelgeving/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Begraafplaatsregister | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (UPL nr. 45, art. 27) |
 
 ## Herkomst

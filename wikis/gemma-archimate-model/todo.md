@@ -12,6 +12,7 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 ## Wettelijke grondslag (ARCHITECTURE.md, secties 3.4 en 4.2)
 
 - **Richtlijnen als beleidskader**: per onderwerp beoordelen welke landelijke richtlijnen als geheel een beleidskader worden, met relatie *geeft richtlijn voor*. Kandidaten in burgerzaken: de HUP van RvIG (per hoofdstuk of als geheel, voorleggen), de Circulaire adresonderzoek BRP, de NVVB-handreikingen adresonderzoek en gezag.
+- **Herbeoordeling van de elementen die op een VNG-model steunen** (regel Bronvoorrang, besluit 2026-10-11): een VNG-model is voor matchen en voor de termen en de taal, geen bron voor een claim en nooit grondslag. Beoordeel per element de kenmerken, relaties en teksten die op de Model beheersverordening begraafplaatsen (41 elementen) of de Model-APV (4) steunen, en vervang de bron door de wet of een gemeentelijke verordening als voorbeeld, of laat de claim vervallen. Bepaal daarbij of de Model-APV en de Model beheersverordening beleidskader blijven: hun kenmerk *is grondslag voor* staat nog op ja, terwijl hun relaties nu *werkt uit voor* heten. Leg elk geval voor.
 - **Licentie VNG-modellen**: de Model-APV (2023-vng-model-apv) en de Model beheersverordening (2010) staan letterlijk in `sources/raw/` van een publieke repository, zonder licentie in de bron. Laat de VNG (juridische zaken of het team modelverordeningen) bevestigen dat hergebruik mag, of er een licentie op zetten. De VNG herziet de Model-APV volledig (gepland begin 2027): vervang dan de bron.
 
 ## Indelingen (ARCHITECTURE.md, sectie 4.4)
@@ -27,8 +28,7 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 ## Kennismodel
 
-- **Bronnen, inhoud en indelingen**: fase 5 van `plannen/2026-10-10-indelingen.md` (de GEMMA-functiehiërarchie as-is met de acht functies erboven zonder beoordeling, en de twijfelgevallen daarbij).
-- **Consolidatie van indelingen** (na het plan hierboven, als eigen klus met een plan): de ontstane indelingen (onderwerpen, Procesindeling naar kernobject, Grondslagindeling) naast de overgenomen (GEMMA, Iv3, GGM, UPL) leggen, overlap beoordelen en bepalen wat in de export meegaat (ARCHITECTURE.md, sectie 4.4).
+- **Consolidatie van indelingen** (als eigen klus met een plan; `plannen/2026-10-10-indelingen.md` is klaar): de ontstane indelingen (onderwerpen, Procesindeling naar kernobject, Grondslagindeling) naast de overgenomen (GEMMA, Iv3, GGM, UPL) leggen, overlap beoordelen en bepalen wat in de export meegaat (ARCHITECTURE.md, sectie 4.4).
 - **Conflicten met GEMMA Online**: een momentopname van GEMMA Online in `sources/` (opgehaald met pywikibot, brontype `model`), en een vergelijking van de inhoud van de wiki daarmee; een conflict wordt een GEMMA-terugmelding (ARCHITECTURE.md, sectie 2).
 - **Kwaliteitsdoelen per beleidskader beoordelen** (na fase 5 van het plan kennismodel, als eigen klus): het kennismodel, het veld `kwaliteitsdoelen`, de controle, de render en de export bestaan. Beoordeel per beleidskader aan welke kwaliteitsdoelen van GEMMA (`tools/gemma.py kwaliteitsdoelen`) het grondslag geeft en hoe sterk, met de bepalingen als onderbouwing; leg het voor en vraag AKKOORD.
 
@@ -58,4 +58,4 @@ Begrippen die thuishoren in een onderwerp dat nog niet bestaat; ze staan als ver
 - **Openbare ruimte**: de vier meldingen openbare ruimte (UPL nr. 243 tot en met 246).
 - **Sociaal domein**: Overlijdensuitkering (UPL nr. 317).
 - **Dienstverlening aan inwoners en leefomgeving**: Contactgegevens aanpassing (UPL nr. 105), Reclamesticker (UPL nr. 348).
-- **Wet griffierechten burgerlijke zaken en Overeenkomst van München**: of ze bron en beleidskader worden, hangt af van de vragen bij Legalisatie handtekening en Verklaring van huwelijksbevoegdheid.
+- **Overeenkomst van München**: of zij bron en beleidskader wordt, hangt af van de vraag bij Verklaring van huwelijksbevoegdheid. De Wet griffierechten burgerlijke zaken is geen grondslag voor Legalisatie handtekening, die zonder grondslag is (besluit 2026-10-11).

@@ -1,7 +1,11 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: 292a77050e2db745ce98d40ec70935807b94a633ffec52ea41c9e7373c1a3e17 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: beecd17f0546e7ef1fb6a40911eaa1c7ca8b1f8e51cddfb7b038a4e3947d26eb -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-10T18:54:11. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 29 gekoppeld aan GEMMA, 225 nieuw. Relaties: 13 gekoppeld, 979 nieuw, 0 overgeslagen. Indelingen: 185 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-11T18:15:01. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 24 gekoppeld aan GEMMA, 220 nieuw. Relaties: 15 gekoppeld, 952 nieuw, 10 overgeslagen. Indelingen: 189 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
+
+## Dekking van de overgenomen indelingen
+
+Functie-indeling naar domein (de functiehiërarchie van GEMMA): 17 van 297 functies hebben inhoud van de wiki, zelf of eronder. In de export 13 functies (elke gebruikte tak tot en met het domein; `--volledig` neemt de hele hiërarchie mee).
 
 Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de groep Kennismodel met een groep per laag (map Other / wiki-gemma-model / Kennismodel).
 
@@ -63,7 +67,7 @@ Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMM
 - actor aggregatie actor: 3×
 - actor associatie actor: 2×
 - afspraak associatie bedrijfsobject: 1×
-- bedrijfsfunctie aggregatie dienst: 76×
+- bedrijfsfunctie aggregatie dienst: 67×
 - bedrijfsinteractie toegang bedrijfsobject: 1×
 - bedrijfsproces aggregatie gebeurtenis: 20×
 - bedrijfsproces bediening bedrijfsinteractie: 3×
@@ -72,19 +76,13 @@ Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMM
 - beleidskader associatie bedrijfsobject: 5×
 - beleidskader associatie bedrijfsproces: 55×
 - beleidskader associatie beleidskader: 7×
-- beleidskader associatie dienst: 82×
+- beleidskader associatie dienst: 79×
 - beleidskader associatie gebeurtenis: 3×
 - beleidskader associatie rol: 5×
 - gebeurtenis triggering bedrijfsinteractie: 1×
 - gebeurtenis triggering gebeurtenis: 5×
 - rol toegang afspraak: 1×
 - rol toewijzing bedrijfsinteractie: 1×
-
-## Weggelaten relaties
-
-Relaties uit de beoordelingen die niet in het kennismodel van de wiki staan; ze gaan niet mee.
-
-- Heffingsverordening → Grafonderhoud (associatie (gericht)): een object hangt via het proces dat de dienst realiseert (toegang) aan een dienst
 
 ## Wijzigt een GEMMA-element
 
@@ -165,6 +163,15 @@ Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder 
 - Ketenpartners (Doelgroepindeling)
 - Rijksregelgeving (Grondslagindeling)
 
+## Zonder grondslag
+
+UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, teruggemeld aan de procesarchitectuur en niet geëxporteerd (elementpaginas/overig/zonder-grondslag.md).
+
+- Asverstrooiing
+- Gedenkteken plaatsingsvergunning
+- Grafonderhoud
+- Legalisatie handtekening
+
 ## Nieuw in GEMMA
 
 - Aangever
@@ -179,7 +186,6 @@ Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder 
 - Ambtenaar burgerlijke stand aanvragen
 - Ambtenaar van de burgerlijke stand
 - Arts
-- Asverstrooiing
 - Begraafplaats
 - Begraafplaatsregister
 - Begraven en cremeren stoffelijk overschot
@@ -243,7 +249,6 @@ Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder 
 - Geboorteaangifte
 - Geboorteakte
 - Geboorteakte levenloos kind
-- Gedenkteken plaatsingsvergunning
 - Gemeente
 - Gemeentelijke lijkschouwer
 - Geregistreerd partnerschap omzetting in huwelijk
@@ -252,8 +257,6 @@ Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder 
 - Geslachtswijzigingsaangifte
 - GGD
 - Graf
-- Graf aanvragen
-- Grafonderhoud
 - Grafrecht
 - Grafuitgifte
 - Herbegraven of alsnog cremeren
@@ -276,7 +279,6 @@ Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder 
 - Kieswet
 - Kiezerspas
 - Kostendrager
-- Legalisatie handtekening
 - Levenloze geboorte
 - Model-APV
 - Model-beheersverordening begraafplaatsen
@@ -392,3 +394,16 @@ Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder 
 - Wijzigen identificatienummers
 - Wijzigen naamgebruik
 - Zakenpaspoort
+
+## Overgeslagen relaties
+
+- Exploiteren van begraafplaatsen → grafonderhoud (aggregatie): het doel gaat niet mee in deze export
+- Exploiteren van begraafplaatsen → gedenkteken-plaatsingsvergunning (aggregatie): het doel gaat niet mee in deze export
+- Exploiteren van begraafplaatsen → gedenkteken-plaatsingsvergunning (realisatie): het doel gaat niet mee in deze export
+- Exploiteren van begraafplaatsen → grafonderhoud (realisatie): het doel gaat niet mee in deze export
+- Exploiteren van begraafplaatsen → asverstrooiing (aggregatie): het doel gaat niet mee in deze export
+- Exploiteren van begraafplaatsen → asverstrooiing (realisatie): het doel gaat niet mee in deze export
+- Heffingsverordening → grafonderhoud (associatie (gericht)): het doel gaat niet mee in deze export
+- Model-APV → asverstrooiing (associatie (gericht)): het doel gaat niet mee in deze export
+- Model-beheersverordening begraafplaatsen → gedenkteken-plaatsingsvergunning (associatie (gericht)): het doel gaat niet mee in deze export
+- Model-beheersverordening begraafplaatsen → grafonderhoud (associatie (gericht)): het doel gaat niet mee in deze export

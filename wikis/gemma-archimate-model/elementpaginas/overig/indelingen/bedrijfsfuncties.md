@@ -1,0 +1,369 @@
+---
+id: bedrijfsfuncties
+type: indeling
+naam: bedrijfsfuncties
+---
+
+# Indeling: bedrijfsfuncties
+
+<!-- Gegenereerd door tools/render.py uit het GEMMA-model en de beoordelingen. Wijzig de beoordeling, niet deze pagina. -->
+
+De functiehiërarchie van het GEMMA-model, as-is (Functie-indeling naar domein): de domeinen, de functies en subfuncties, zonder beoordeling. Een functie met een pijl is een element van de wiki. Per functie de diensten, producten en functies van de wiki eronder; een vette functie heeft inhoud, zelf of eronder. Een functie die in GEMMA onder meer functies hangt, staat onder elk daarvan.
+
+Functies: 296; met inhoud van de wiki: 17.
+
+## Bestuur
+
+- Organisatieontwikkeling
+  - Interne efficiency verbetering
+- Sturing
+  - Besturing
+    - Besluitvorming lokale integrale veiligheid
+    - Governance inrichting
+    - Organisatiemanagement
+  - Samenwerkingsvorming
+    - Besluitvorming regionale integrale veiligheid
+    - Samenwerkingsafspraken partners integrale veiligheid
+    - Samenwerkingsvorming Omgevingsagenda
+    - Uit- en inbesteding
+  - Strategie
+    - Kaderstelling
+    - Strategievorming fysieke leefomgeving
+    - Strategische planning
+  - Verantwoording
+    - Begroting en verantwoording
+    - Besluitvormings verantwoording
+
+## Fysieke leefomgeving
+
+- Fysieke leefomgeving ontwikkeling
+  - Afronden procedures WRO-plannen
+  - Ontwikkeling algemeen verbindende voorschriften fysieke leefomgeving
+  - Ontwikkeling beheerbeleid fysieke leefomgeving
+  - Ontwikkeling exploitatiebeleid fysieke leefomgeving
+  - Ontwikkeling realisatiebeleid fysieke leefomgeving
+  - Ontwikkeling toezicht- en handhavingsbeleid fysieke leefomgeving
+- Ontvangst
+  - Afrekening
+  - Autorisatievaststelling
+  - Identiteitvaststelling
+  - Indiening c.q. wijziging aanvraag
+  - Informatieextractie en opslag
+  - Verstrekking rechten en plichten
+  - Voorwaardentoetsing
+  - Vormacceptatie
+  - Zelfredzaamheidbepaling
+- Opdrachtbewaking
+- Opdrachtverstrekking
+  - Maken van bestekken fysieke leefomgeving
+- Strategie
+  - Kaderstelling
+  - Strategievorming fysieke leefomgeving
+  - Strategische planning
+- **Uitvoering fysieke leefomgeving**
+  - Beheren fysieke leefomgeving
+    - Afvalinzameling
+    - Archeologische objectenbeheer
+    - BAG Beheer
+    - BGT Beheer
+    - BRO Beheer
+    - Beheren fysieke objecten
+      - Curatief beheer
+      - Preventief beheer
+    - Beperkingenbesluiten beheer
+    - Erfgoed- en monumentenbeheer
+    - Externe veiligheidbeheer
+    - Geluidbeheer
+    - Gemeentelijke eigendommenbeheer
+    - Kabels- en leidingenbeheer
+    - Luchtbeheer
+    - Verkeerbeheer
+  - **Exploitatie fysieke leefomgeving**
+    - Exploiteren van accommodaties
+    - Exploiteren van afvalopslag en -verwerking
+    - **Exploiteren van begraafplaatsen** → [Exploiteren van begraafplaatsen](../../bedrijfsarchitectuur/bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md)
+      - **dienst** (7): [Asverstrooiing](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md), [Bijzettingenregister](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzettingenregister.md), [Crematoriumregister](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematoriumregister.md), [Gedenkteken plaatsingsvergunning](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gedenkteken-plaatsingsvergunning.md), [Grafonderhoud](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafonderhoud.md), [Grafuitgifte](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafuitgifte.md), [Herbegraven of alsnog cremeren](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/herbegraven-of-alsnog-cremeren.md)
+    - Exploiteren van havens
+    - Exploiteren van parkeerplaatsen
+    - Exploiteren vastgoed en terreinen
+  - **Producten- en dienstenrealisatie fysieke leefomgeving**
+    - **dienst** (3): [Ontleding stoffelijk overschot toestemming](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ontleding-stoffelijk-overschot-toestemming.md), [Verlof tot begraven](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlof-tot-begraven.md), [Vervoersdocumenten stoffelijk overschot](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervoersdocumenten-stoffelijk-overschot.md)
+    - Erfpachtuitgifte
+    - Subsidieverlening ruimtelijk
+    - Toestemmingverlening activiteit fysieke leefomgeving
+  - Realiseren fysieke leefomgeving
+    - Ruimtelijke ontwerpen
+    - Ruimtelijke uitvoering
+  - Toezicht en handhaving fysieke leefomgeving
+    - Handhaving
+    - Toezicht
+
+## Niet domeingebonden
+
+- Bewaking
+  - Compliance management
+  - Kaderbewaking
+    - Dienstverleningskaders bewaking
+  - Performance management
+    - Dienstverlening servicemanagement
+  - Risicomanagement
+  - Samenwerkingsbewaking
+  - Verandermanagement
+- Gegevensmanagement
+- **Klant- en keteninteractie**
+  - Contactbeheer
+    - Aanmaken c.q. wijzigen klantafspraak
+    - Afhandeling klantcontactmoment
+  - **Informering**
+    - Gepersonaliseerde informering
+      - Attendering
+      - Kanaal personalisatie
+      - Persoonlijke nieuwsvoorziening
+    - Klantgeleiding
+      - Vraag-antwoord dialoog ondersteuning
+      - Zoekondersteuning
+    - **Openbare informering**
+      - Actieve openbaarmaking van informatie
+      - Algemene content publicatie
+      - Informatieobjecten publicatie
+      - Lokale bekendmakingen publicatie
+      - Lokale regelgeving publicatie
+      - Marketing en promotie
+      - Open data publicatie
+      - Plan en realisatie publicatie
+      - **Producten en diensten publicatie**
+        - **Burgerlijke stand diensten** → [Burgerlijke stand diensten](../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md)
+          - **dienst** (22): [Achternaamwijziging](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/achternaamwijziging.md), [Ambtenaar burgerlijke stand aanvragen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/ambtenaar-burgerlijke-stand-aanvragen.md), [Bewijs van in leven zijn](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-in-leven-zijn.md), [Doodgeboren kind aangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/doodgeboren-kind-aangifte.md), [Echtscheiding inschrijving](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/echtscheiding-inschrijving.md), [Erkenning kind](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/erkenning-kind.md), [Geboorteaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteaangifte.md), [Geboorteakte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteakte.md), [Geboorteakte levenloos kind](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteakte-levenloos-kind.md), [Geregistreerd partnerschap omzetting in huwelijk](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschap-omzetting-in-huwelijk.md), [Geregistreerd partnerschap ontbinding](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschap-ontbinding.md), [Geregistreerd partnerschapaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschapaangifte.md), [Geslachtswijzigingsaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geslachtswijzigingsaangifte.md), [Huwelijk](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/huwelijk.md), [Huwelijksaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/huwelijksaangifte.md), [Naamskeuzeverklaring](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naamskeuzeverklaring.md), [Overlijdensaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/overlijdensaangifte.md), [Overlijdensakte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/overlijdensakte.md), [Trouwlocatie](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/trouwlocatie.md), [Uittreksel burgerlijke stand](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/uittreksel-burgerlijke-stand.md), [Verklaring van huwelijksbevoegdheid](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-huwelijksbevoegdheid.md), [Voornaamwijziging](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/voornaamwijziging.md)
+      - Subsidies publicatie
+    - Vertrouwelijke informering
+      - Autorisatievaststelling
+      - Flankerende voorzieningen en advisering
+      - Identiteitvaststelling
+      - Persoonlijke gegevens informering
+      - Persoonsgegevens gebruik informering
+      - Zaken en casussen informering
+  - Klantenservice
+    - Dienstverlening serviceniveau meting
+    - Klantfeedback verzameling
+    - Klantondersteuning
+    - Klanttevredenheids meting
+  - Ontvangst
+    - Afrekening
+    - Autorisatievaststelling
+    - Identiteitvaststelling
+    - Indiening c.q. wijziging aanvraag
+    - Informatieextractie en opslag
+    - Verstrekking rechten en plichten
+    - Voorwaardentoetsing
+    - Vormacceptatie
+    - Zelfredzaamheidbepaling
+  - Samenwerking en participatie
+    - Algemene online samenwerking facilitering
+    - Beleid cocreatie (nieuw)
+    - Burgerinitiatieven facilitering
+    - Onderhouden van sociale netwerken
+  - Signaalverwerking
+    - Signalen bewerking
+    - Signalen detectie en ontvangst
+    - Signalen routering
+  - Verstrekking
+    - Afrekening
+    - Autorisatievaststelling
+    - Documentcreatie
+    - Identiteitvaststelling
+    - Informatiedeling georganiseerde criminaliteit
+    - Output archivering
+    - Output-opmaak
+    - Output-verzending
+    - Uitbetaling
+    - Verstrekking voorzieningen
+    - Waarmerking
+  - Zelfredzaamheidstimulering
+    - Burgerinitiatieven facilitering
+    - Kennis beschikbaarstelling
+    - Vraag en aanbod matching
+- Regievoering
+  - Afstemming
+  - Opdrachtbewaking
+  - Opdrachtverstrekking
+    - Maken van bestekken fysieke leefomgeving
+  - Organisatiekeuze
+
+## Ondersteuning
+
+- Ondersteuning
+  - Administratieve ondersteuning
+    - Kantoorwerkzaamheden-ondersteuning
+    - Middeleninzet planning
+  - Automatiseringsmanagement
+    - Applicatie-ontwikkeling
+    - Applicatiebeheer
+    - Functioneel beheer
+    - Identiteitenbeheer
+    - Systeembeheer
+  - Communicatiemanagement
+    - Externe communicatie
+    - Imago-ontwikkeling
+    - Interne communicatie
+  - Financieel management
+    - Activabeheer
+    - Begrotingbeheer
+    - Betalingbeheer
+    - Crediteurenbeheer
+    - Debiteurenbeheer
+    - Facturering
+    - Grootboekbeheer
+    - Vermogensbeheer
+  - Gegevensanalyse
+  - Gegevensmanagement
+  - Huisvesting
+    - Bedrijfshulpverlening
+    - Cateringbeheer
+    - Goederenafhandeling
+    - Intern afvalbeheer
+    - Schoonmaak
+    - Vastgoedbeheer
+  - Informatie- en archiefbeheer
+    - Algemeen beheer duurzame opslag informatieobjecten
+    - Duurzaam bewaren en beheren van informatieobjecten
+    - In bewaring nemen van informatieobjecten
+    - Ontsluiten van informatieobjecten
+  - Informatiseringsmanagement
+    - Architectuur management
+    - Kennismanagement
+  - Inkoop- en contractmanagement
+    - Aanbesteding
+    - Bestelling
+    - Contractbeheer
+    - Leveranciersbeheer
+  - Juridische ondersteuning
+    - Bezwaar- en beroepafhandeling
+    - Compliancebeheer
+    - Juridische advisering
+    - Klachtenafhandeling
+  - Personeelsmanagement
+    - Formatieplanning
+    - Medewerkeradministratie
+    - Medewerkerbeoordeling
+    - Medewerkerontwikkeling
+    - Salaris- en declaratieverwerking
+    - Tijdregistratie
+    - Werving en selectie
+    - Ziekte- en verlofadministratie
+  - Projectmanagement
+    - Programmabeheer
+    - Projectbeheer
+    - Projectportfoliobeheer
+  - Veiligheidsmanagement
+    - Beveiliging- en privacymanagement
+    - Gebouwen- en ruimtenbeveiliging
+
+## Openbare orde en veiligheid
+
+- Openbare orde en veiligheidontwikkeling
+  - Aanpak specifieke probleemgebieden openbare orde en veiligheid
+  - Kaderstelling integrale veiligheid vergunningverlening
+  - Plan- en organisatievorming rampen (koud)
+- Uitvoering openbare orde en veiligheid
+  - Beheren openbare orde en veiligheid
+    - Rampenbestrijding (warm)
+    - Rampenoefening en opleiding
+  - Casusregievoering veiligheidsdomein
+  - Producten- en dienstenrealisatie veiligheidsdomein
+    - Horeca vergunningverlening
+    - Preventiecampagnes
+    - Vergunningenbeheer evenementen
+  - Toezicht en handhaving veiligheidsdomein
+    - Handhaving
+    - Toezicht
+  - Veiligheidsdata-analyse
+    - Data-analyse, verwerking en visualisatie criminaliteit
+    - Data-analyse, verwerking en visualisatie integrale veiligheid
+    - Dataverwerving georganiseerde criminaliteit
+    - Dataverwerving integrale veiligheid
+    - Veiligheidsinformatie visualisatie
+
+## Publieksdiensten
+
+- Economische ontwikkeling
+  - Lokale en regionale economische ontwikkeling
+  - Overheid, kenniscentra en bedrijfsleven samenwerkingsontwikkeling
+  - Recreatie en toerisme ontwikkeling
+- Ontwikkeling dienstverlening
+  - Dienstenontwikkeling vanuit gebruikersperspectief
+  - Elektronische publieke diensten ontwikkeling
+  - Gemeenschappelijke voorzieningen ontwikkeling
+- **Uitvoering Publieksdiensten**
+  - Invordering publieksdiensten
+    - Belastinginvordering
+    - Naheffing en navordering
+  - **Producten- en dienstenrealisatie publieksdiensten**
+    - **dienst** (3): [Begraafplaatsregister](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md), [Legalisatie handtekening](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md), [Verklaring omtrent gedrag aanvragen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-omtrent-gedrag-aanvragen.md)
+    - Balie beheer
+    - Bedrijfsadvies en ondersteuning
+    - Bedrijfsgegevens beheer
+    - **Bevolkingsadministratie bijhouding** → [Bevolkingsadministratie bijhouding](../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md)
+      - **dienst** (18): [Aangifte vertrek buitenland](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/aangifte-vertrek-buitenland.md), [Adoptie aangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/adoptie-aangifte.md), [Briefadres aanvragen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/briefadres-aanvragen.md), [BRP-adoptie-uitschrijving](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-adoptie-uitschrijving.md), [BRP-geheimhoudingsverzoek](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-geheimhoudingsverzoek.md), [BRP-inschrijving](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving.md), [BRP-inschrijving buitenlandse akte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving-buitenlandse-akte.md), [BRP-inschrijving niet in leven zijnd kind](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving-niet-in-leven-zijnd-kind.md), [BRP-inzagerecht](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inzagerecht.md), [BRP-inzagerecht gegevensverstrekking](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inzagerecht-gegevensverstrekking.md), [BRP-uittreksel](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel.md), [BRP-uittreksel met gezag](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel-met-gezag.md), [BRP-wijzigingsverzoek](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-wijzigingsverzoek.md), [Naamgebruik verzoek aanduiding](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naamgebruik-verzoek-aanduiding.md), [Onjuiste inschrijving op adres melden](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/onjuiste-inschrijving-op-adres-melden.md), [Persoonsgegevens verklaring onder eed of belofte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/persoonsgegevens-verklaring-onder-eed-of-belofte.md), [RNI inschrijving](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rni-inschrijving.md), [Verhuismelding](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verhuismelding.md)
+    - **Burgerlijke stand diensten** → [Burgerlijke stand diensten](../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md)
+      - **dienst** (22): [Achternaamwijziging](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/achternaamwijziging.md), [Ambtenaar burgerlijke stand aanvragen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/ambtenaar-burgerlijke-stand-aanvragen.md), [Bewijs van in leven zijn](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-in-leven-zijn.md), [Doodgeboren kind aangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/doodgeboren-kind-aangifte.md), [Echtscheiding inschrijving](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/echtscheiding-inschrijving.md), [Erkenning kind](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/erkenning-kind.md), [Geboorteaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteaangifte.md), [Geboorteakte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteakte.md), [Geboorteakte levenloos kind](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteakte-levenloos-kind.md), [Geregistreerd partnerschap omzetting in huwelijk](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschap-omzetting-in-huwelijk.md), [Geregistreerd partnerschap ontbinding](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschap-ontbinding.md), [Geregistreerd partnerschapaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschapaangifte.md), [Geslachtswijzigingsaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geslachtswijzigingsaangifte.md), [Huwelijk](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/huwelijk.md), [Huwelijksaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/huwelijksaangifte.md), [Naamskeuzeverklaring](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naamskeuzeverklaring.md), [Overlijdensaangifte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/overlijdensaangifte.md), [Overlijdensakte](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/overlijdensakte.md), [Trouwlocatie](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/trouwlocatie.md), [Uittreksel burgerlijke stand](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/uittreksel-burgerlijke-stand.md), [Verklaring van huwelijksbevoegdheid](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-huwelijksbevoegdheid.md), [Voornaamwijziging](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/voornaamwijziging.md)
+    - Call center beheer
+    - City marketing en toeristische promotie
+    - Economische acquisitie en accountmanagement
+    - Ideeën verwerking
+    - Informatieverzoek verwerking
+    - Klachten afhandeling
+    - Media beheer
+    - **Nederlanderschap diensten** → [Nederlanderschap diensten](../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/nederlanderschap-diensten.md)
+      - **dienst** (5): [Bewijs van nederlanderschap](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md), [Naturalisatieceremonie](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieceremonie.md), [Naturalisatieoptie](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieoptie.md), [Naturalisatieverzoek](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieverzoek.md), [Verklaring van afstand nederlandse nationaliteit](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-afstand-nederlandse-nationaliteit.md)
+    - **Officiële documenten verstrekking** → [Officiële documenten verstrekking](../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md)
+      - **dienst** (12): [Identiteitskaart](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/identiteitskaart.md), [Paspoort](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort.md), [Paspoort tweede](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md), [Reisdocument niet-ingezetene](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument-niet-ingezetene.md), [Rijbewijs aanvragen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-aanvragen.md), [Rijbewijs buitenlands omwisseling](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-buitenlands-omwisseling.md), [Rijbewijs verlengen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-verlengen.md), [Vermissing of diefstal reisdocument doorgeven](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-reisdocument-doorgeven.md), [Vermissing of diefstal rijbewijs doorgeven](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-rijbewijs-doorgeven.md), [Vluchtelingenpaspoort](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vluchtelingenpaspoort.md), [Vreemdelingenpaspoort](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vreemdelingenpaspoort.md), [Zakenpaspoort](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/zakenpaspoort.md)
+    - Onderscheidingen beheer
+    - Schade gerelateerde diensten
+    - Sportstimulering
+    - Subsidieverlening Publieksdiensten
+    - **Vergunningenbeheer Publieksdiensten** → [Vergunningenbeheer Publieksdiensten](../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/vergunningenbeheer-publieksdiensten.md)
+      - **dienst** (2): [Bijzondere begraafplaats toestemming](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzondere-begraafplaats-toestemming.md), [Uitvaart vervroegen of uitstellen](../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvaart-vervroegen-of-uitstellen.md)
+    - **Verkiezingen gerelateerde diensten** → [Verkiezingen gerelateerde diensten](../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/verkiezingen-gerelateerde-diensten.md)
+      - **dienst** (4): [Kiezerspas](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/kiezerspas.md), [Stempas ontvangen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/stempas-ontvangen.md), [Stemrecht](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/stemrecht.md), [Volmachtbewijs verkiezingen](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/volmachtbewijs-verkiezingen.md)
+    - Verloren en gevonden voorwerpen beheer
+    - Winkels, markt- en straathandel beheer
+  - Toezicht en handhaving Publieksdiensten
+    - Handhaving
+    - Toezicht
+  - Waardering en heffing
+    - Belasting subject- en objectregistratie
+    - Kwijtschelding
+    - Waardering onroerende zaken
+
+## Sociaal domein
+
+- Sociale ontwikkeling
+- Uitvoering Sociaal Domein
+  - Casusregievoering sociaal domein
+    - Casus Beoordeling
+    - Casus Coordinatie
+    - Casus Evaluatie
+    - Casus Monitoring
+    - Casus Planvorming
+    - Casus Toekenning
+  - Producten- en dienstenrealisatie sociaal domein
+    - Arbeidsmarktbemiddeling
+    - Beheer sociale werkvoorziening
+    - Besluitvorming levensonderhoud
+    - Budgetbeheer
+    - Inkomensbeslaglegging derden
+    - Inkomensondersteuning
+    - Jeugdzorg
+    - Kredietverstrekking
+    - Leerlingenadministratie
+    - Leerlingenvervoer
+    - Schuldhulpverlening
+    - Uitvoering instrumenten
+    - Voorzieningenverstrekking
+    - Zelfredzaamheidontwikkeling
+  - Toezicht en handhaving sociaal domein
+    - Handhaving
+    - Toezicht
+  - Vordering sociaal domein
+    - Invordering uitkering
+    - Verhaal

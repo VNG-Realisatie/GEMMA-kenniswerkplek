@@ -45,7 +45,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, onderdeel van**: [Producten- en dienstenrealisatie fysieke leefomgeving](../../../bedrijfsfuncties/fysieke-leefomgeving/producten-en-dienstenrealisatie-fysieke-leefomgeving.md).
+- **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Producten- en dienstenrealisatie fysieke leefomgeving* (geen element van de wiki; Fysieke leefomgeving › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving), bron: [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 306 (GEMMA-domein Fysieke leefomgeving)).
 - **Afnemer**: extern.
 - **Domein**: Fysieke leefomgeving.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
@@ -73,7 +73,6 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Producten- en dienstenrealisatie fysieke leefomgeving](../../../bedrijfsfuncties/fysieke-leefomgeving/producten-en-dienstenrealisatie-fysieke-leefomgeving.md) | omvat *aggregatie* | Ontleding stoffelijk overschot toestemming | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 306 (GEMMA-domein Fysieke leefomgeving)) |
 | [Verlenen verlof tot ontleding](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-ontleding.md) | realiseert *realisatie* | Ontleding stoffelijk overschot toestemming | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (Wlb art. 68; UPL nr. 306) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/rijksregelgeving/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Ontleding stoffelijk overschot toestemming | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (UPL nr. 306, art. 67, 68) |
 

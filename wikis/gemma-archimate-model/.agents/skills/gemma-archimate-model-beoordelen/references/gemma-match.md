@@ -16,4 +16,14 @@ De wiki neemt de GEMMA-indelingen letterlijk over; een bewering over de plek van
 - Kenmerk *in functie-indeling* of *zelfstandige specialisatie* van een gematchte functie: geen `bronnen`, maar `gemma_relatie` met het id van de aggregatie of compositie naar de GEMMA-match, vanuit de bovenliggende functie of de domeingroepering (`uv run python tools/gemma.py relaties <id>`). Het script toetst dat de relatie bestaat en, bij *zelfstandige specialisatie*, dat de GEMMA-match geen ander element specialiseert.
 - Een aggregatie in de functieketen tussen twee gematchte functies: geen `bronnen` en `vindplaats`, maar `gemma_relatie: <id>`; het script toetst type, bron en doel.
 - Alleen de plek is uitgezonderd. Wat een functie is en doet (*gedrag*, *gegroepeerd gedrag*, *eigen identiteit*, *stabiel over tijd*, *herkenbaar*, *generiek*) heeft een bron voor de inhoud: de wet die de taak geeft, of een praktijkbron. GEMMA Online is matchdoel en geen bron, ook niet haar redactionele tekst over de inhoud (ARCHITECTURE.md, sectie 2).
-- Een functie die alleen als knoop in de GEMMA-functiehiërarchie voorkomt (boven het niveau van een onderwerp), krijgt geen beoordeling: de hiërarchie wordt as-is overgenomen (ARCHITECTURE.md, sectie 4.4).
+- Wat een functie is, steunt op de wet die de groep taken aan de gemeente toewijst, zoals bij Burgerlijke stand diensten; niet op de pagina Bedrijfsfuncties of het GEMMA-model (regel Bronvoorrang).
+- Een functie boven het bladniveau van de GEMMA-functiehiërarchie krijgt geen beoordeling: de hiërarchie wordt as-is overgenomen (ARCHITECTURE.md, sectie 4.4). Een bladfunctie wordt een element als zij een proces van een onderwerp bedient, met een bron.
+
+## De plek onder een knoop (`gemma_functie`)
+
+Hangt een wiki-functie of -dienst onder een GEMMA-functie zonder beoordeling, dan noemt `gemma_functie` die functie: `id` (zoek met `uv run python tools/gemma.py functie <naam>`, de hele hiërarchie met `uv run python tools/gemma.py functies`) en
+
+- bij een gematchte functie of dienst `gemma_relatie`: het id van de aggregatie van die GEMMA-functie naar de GEMMA-match van het element;
+- anders `bronnen` en `vindplaats`, zoals de UPL met het UPL-nummer bij een dienst.
+
+Het script toetst dat de functie bestaat, dat de relatie in het model staat tussen die functie en de match, en dat geen wiki-element met dezelfde GEMMA-match het element al aggregeert (één plek). Is de bovenliggende functie zelf een element van de wiki, dan is de plek een aggregatie in haar beoordeling en geen `gemma_functie`.

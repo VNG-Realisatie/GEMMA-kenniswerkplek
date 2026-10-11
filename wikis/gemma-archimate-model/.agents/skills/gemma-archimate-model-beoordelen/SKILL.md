@@ -64,6 +64,7 @@ doelgroep: gemeente                           # actor, rol, samenwerking, kanaal
 regelgever: rijk                              # beleidskader: EU | rijk | VNG-model
 kwaliteitsdoelen: [{id: id-…, sterkte: "++", onderbouwing: "De wet regelt de taak.", bronnen: [2026-rijk-…], vindplaats: art. 1}]   # beleidskader: GEMMA-kwaliteitsdoelen waaraan het grondslag geeft
 gemma_generiek: {id: id-…, onderbouwing: "Een vergunningaanvraag."}   # specialisatie van een generiek GEMMA-element (exacte match)
+gemma_functie: {id: id-…, gemma_relatie: id-…}   # functie, dienst: de bovenliggende GEMMA-functie zonder beoordeling (een knoop); met de GEMMA-relatie, of met bronnen en vindplaats (UPL)
 specialisaties: [{naam: Bijzondere begraafplaats, omschrijving: "Van een kerkgenootschap of rechtspersoon (art. 24)."}]
 relaties:
   - {soort: aggregatie, naar: graf, naam: bevat, ggm_match: geen, bronnen: [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen], vindplaats: art. 1}
@@ -78,7 +79,7 @@ Velden en wat erin hoort:
 | `definitie`, `definitie_formeel`, `definitie_formeel_bron`, `beschrijving`, `per_onderwerp` | `references/definitie.md` |
 | `begrip`, `synoniemen`, `naamkeuze`, `homoniemen` | `references/naamgeving.md` |
 | `ggm` (guid, sterkte, onderbouwing, duplicaten) | `references/ggm-match.md` |
-| `gemma` (id, sterkte, onderbouwing) | `references/gemma-match.md` |
+| `gemma` (id, sterkte, onderbouwing), `gemma_functie` (de plek in de functiehiërarchie) | `references/gemma-match.md` |
 | `generalisatie`, `specialisaties`, `ggm_componenten` | `references/hierarchie.md` |
 | `tegenhanger` | `references/tegenhangers.md` |
 | `relaties` (ook `via`: de specialisatie zonder pagina van het generieke doel) | `references/relaties.md` |
@@ -99,7 +100,7 @@ Na een eerste `uv run python tools/beslissen.py` (zonder relaties werkt dat al):
 
 ## 7. Terugmeldingen (GGM, procesarchitectuur en GEMMA)
 
-Een bevinding over het GGM, over de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel procesarchitectuur) of over het GEMMA-model zelf zet je zonder nummer in het register van de ontvanger: `beoordelingen/terugmeldingen/ggm.yaml`, `procesarchitectuur.yaml` of `gemma.yaml`. Welk register, welke velden en typen, de opbouw (**GGM:**/**UPL:**/**Kennismodel:**/**GEMMA:**, **Bevinding:**, **Voorstel:**) en hoe je schrijft voor een lezer buiten de wiki: `references/terugmeldingen.md`.
+Een bevinding over het GGM, over de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel procesarchitectuur) of over het GEMMA-model zelf zet je zonder nummer in het register van de ontvanger: `modellen/ggm/terugmeldingen.yaml`, `modellen/gemma/terugmeldingen/procesarchitectuur.yaml` of `modellen/gemma/terugmeldingen/gemma-team.yaml`. Welk register, welke velden en typen, de opbouw (**GGM:**/**UPL:**/**Kennismodel:**/**GEMMA:**, **Bevinding:**, **Voorstel:**) en hoe je schrijft voor een lezer buiten de wiki: `references/terugmeldingen.md`.
 
 ## 8. Beslissen en voorleggen
 

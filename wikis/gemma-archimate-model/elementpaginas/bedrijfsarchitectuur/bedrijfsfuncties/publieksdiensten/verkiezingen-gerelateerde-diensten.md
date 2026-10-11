@@ -13,7 +13,6 @@ data_object: nee
 domein: Publieksdiensten
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
-- 2026-vng-gemma-bedrijfsfuncties
 - 2026-rvig-hup-kiesrecht
 - 2025-vng-upl-producten-en-diensten-extern
 gemma_id: id-78bbc144-8a22-43a4-8233-c4cfaf7b73c2
@@ -60,7 +59,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, onderdeel van**: [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md).
+- **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Producten- en dienstenrealisatie publieksdiensten* (geen element van de wiki; Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten), GEMMA-relatie `id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff`.
 - **Functie-indeling naar domein, omvat**: [Kiezerspas](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/kiezerspas.md), [Stempas ontvangen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/stempas-ontvangen.md), [Stemrecht](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/stemrecht.md), [Volmachtbewijs verkiezingen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/volmachtbewijs-verkiezingen.md).
 - **Bedient**: [Beheren stempassen](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md), [Registreren kiesgerechtigdheid](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md).
 - **Domein**: Publieksdiensten.
@@ -73,9 +72,9 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 |---|---|
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, het organiseren van verkiezingen is een eigen gemeentelijke taak: de burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen en B&W registreren de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11). GEMMA-bedrijfsfunctie Verkiezingen gerelateerde diensten, onder Producten- en dienstenrealisatie publieksdiensten. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen; B&W registreren de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie. [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen taak van de gemeente, los van één ander begrip: burgemeester en wethouders registreren de kiesgerechtigdheid (Kieswet art. D 1) en de burgemeester verstrekt de stempassen (Kieswet art. J 7). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: bedient Beheren stempassen en Registreren kiesgerechtigdheid. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20). [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: het registreren van de kiesgerechtigdheid (Kieswet art. D 1) en het vaststellen en verstrekken van de stempassen (Kieswet art. J 7). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, doorlopende groepering van de gemeentelijke taken bij verkiezingen, op grond van dezelfde kennis van de Kieswet, zonder eigen volgorde (GEMMA). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, registreert en beëindigt de stempas en werkt de kiesrechtgegevens van de ingeschreven persoon bij (Kieswet art. J 7, J 7a; HUP Kiesrecht). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [HUP Kiesrecht](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-kiesrecht.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, de taak volgt uit de Kieswet en blijft bij een andere organisatie of werkwijze. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
@@ -96,12 +95,6 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Volmachtbewijs verkiezingen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/volmachtbewijs-verkiezingen.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 453 (GEMMA-domein Publieksdiensten)) |
 | Verkiezingen gerelateerde diensten | omvat *aggregatie* | [Stemrecht](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/stemrecht.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 398 (GEMMA-domein Publieksdiensten)) |
 
-#### Inkomend
-
-| Van | Relatie | Naar | Bron |
-|---|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Verkiezingen gerelateerde diensten | GEMMA (id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff) |
-
 ## Herkomst
 
 ### Bronnen
@@ -109,7 +102,6 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
-| [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
 | [HUP Kiesrecht](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-kiesrecht.md) | HUP BRP: Kiesrecht |
 | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 

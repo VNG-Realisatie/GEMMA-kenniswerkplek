@@ -63,6 +63,8 @@ EIGENSCHAPPEN = {  # veld in de beoordeling → wat het vastlegt
     "taakveld": "het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling",
     "beleidsdomein": "het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling",
     "gemma_generiek": "het generieke GEMMA-element waarvan dit een specialisatie is (exacte match)",
+    "gemma_functie": "de bovenliggende GEMMA-functie in de functiehiërarchie, die zelf geen element is: het id, met de "
+                     "GEMMA-relatie of een bron met vindplaats",
     "deelprocessen": "de deelprocessen in volgorde, elk met één of twee zinnen en een bron (geen eigen pagina)",
     "gemma": "de match met het GEMMA-model: het id gaat mee in de export",
     "ggm": "de match met het GGM: entiteit, sterkte en onderbouwing",
@@ -207,13 +209,17 @@ ELEMENTTYPEN: list[Elementtype] = [
          ("generiek GEMMA-element", "bij *generiek*: specialisatie van een generieke GEMMA-dienst (`gemma_generiek`, "
                                     "exacte match); ontbreekt die, dan een voorstel aan GEMMA")),
         "Onderhoud van graven; Melding openbare ruimte doen", "melding afhandelen (proces)",
-        eigenschappen=("afnemer", "domein", "taakveld", "beleidsdomein", "gemma", "gemma_generiek"),
+        eigenschappen=("afnemer", "domein", "gemma_functie", "taakveld", "beleidsdomein", "gemma", "gemma_generiek"),
         verplicht=("domein", "afnemer"),
         afspraken=("Een dienst wordt gerealiseerd door een bedrijfsproces of bedrijfsfunctie; de verantwoordelijke rol "
                    "hangt aan dat proces of die functie, niet aan de dienst.",
                    "Een product of dienst valt nooit weg: wie het levert, is een bedrijfsproces.",
-                   "Een dienst uit de UPL blijft ook zonder landelijke wettelijke grondslag; dan wordt zij niet "
-                   "uitgewerkt in processen, objecten, gebeurtenissen of rollen.",
+                   "Een dienst uit de UPL blijft ook zonder landelijke wettelijke grondslag (de hoek zonder grondslag): "
+                   "zij is dan geen wettelijke taak, wordt niet uitgewerkt in processen, objecten, gebeurtenissen of "
+                   "rollen, wordt teruggemeld aan de procesarchitectuur en niet geëxporteerd; haar kenmerk *gerealiseerd "
+                   "door* steunt op de bron. Een VNG-model is nooit haar grondslag (*werkt uit voor*).",
+                   "Hangt de dienst onder een GEMMA-functie zonder beoordeling, dan noemt `gemma_functie` die functie, "
+                   "met de UPL als bron en het UPL-nummer als vindplaats.",
                    "Een beleidskader hangt bij voorkeur aan een dienst of product; aan een proces alleen zolang er geen "
                    "dienst of product is.")),
     Elementtype(
@@ -274,10 +280,13 @@ ELEMENTTYPEN: list[Elementtype] = [
         (GGM_GEEN, ("GEMMA-model", "bij voorkeur een exacte match met een GEMMA-functie; een functie zonder match breidt "
                                    "de GEMMA-functieketen uit")),
         "Exploiteren van begraafplaatsen; Burgerlijke stand diensten", "Lijkbezorging als functie; aanslag opleggen",
-        eigenschappen=("domein", "gemma"), verplicht=("domein",),
+        eigenschappen=("domein", "gemma_functie", "gemma"), verplicht=("domein",),
         afspraken=("Een bedrijfsfunctie heeft geen eigen wettelijke bron nodig: zij volgt de grondslag van de diensten "
-                   "en processen die zij omvat, en vervalt alleen als zij niets meer omvat.",
-                   "Bedienende GEMMA-functies worden een element met een exacte match; een proces mag door meer "
+                   "en processen die zij omvat of bedient. Wat zij is, steunt op de wet die de groep taken aan de "
+                   "gemeente toewijst, niet op GEMMA (regel Bronvoorrang).",
+                   "Een bladfunctie van GEMMA die een proces van een onderwerp bedient, met een bron, wordt een element "
+                   "met een exacte match; een functie erboven is een knoop van de functiehiërarchie zonder beoordeling, "
+                   "en het element hangt eronder met `gemma_functie` (met de GEMMA-relatie). Een proces mag door meer "
                    "functies worden bediend.")),
     Elementtype(
         "gebeurtenis", "Gebeurtenis", "Business Event", "business-event", "bedrijfsarchitectuur", "gebeurtenis",
@@ -715,11 +724,14 @@ INDELINGEN: list[Indeling] = [
              {"bedrijfsfunctie": None, "product": None, "dienst": None},
              "domein › functie (de keten tot het domeinniveau) › dienst; domein › product", "GEMMA",
              "aggregatie vanuit de domeingroepering (een functie op domeinniveau, een product) of vanuit de "
-             "bovenliggende functie (een functie, een dienst)", ("domein",),
-             ("De Functie-indeling is een relatie, geen eigenschap: de bovenliggende functie wordt een element en "
-              "aggregeert de functie eronder, volgens de GEMMA-functieketen, tot en met de functie op domeinniveau "
-              "(GEMMA type *Bedrijfsfunctie domein*); alleen die hangt via `domein` aan de domeingroepering.",
-              "Een dienst hangt onder één functie in hetzelfde domein.",
+             "bovenliggende functie (een functie, een dienst)", ("domein", "gemma_functie"),
+             ("De hiërarchie komt as-is uit het GEMMA-model (`tools/gemma.py functies`), zonder beoordeling en zonder "
+              "bron; ook de functies erboven, tot en met het domeinniveau (GEMMA type *Bedrijfsfunctie domein*), zijn "
+              "knopen zonder pagina. Alleen een functie op domeinniveau hangt via `domein` aan de domeingroepering.",
+              "Een functie of dienst hangt onder één bovenliggende functie. Is die een element van de wiki, dan is dat "
+              "een aggregatie in zijn beoordeling; is het een GEMMA-functie zonder beoordeling, dan is dat het veld "
+              "`gemma_functie` (id, met de GEMMA-relatie of een bron met vindplaats). Een dienst hangt in hetzelfde "
+              "domein als haar functie.",
               "Een product hangt via `domein` direct aan de domeingroepering: ArchiMate laat een functie geen product "
               "aggregeren. De diensten die het omvat, hangen onder hun functie.",
               "Een functie bedient een proces; ze aggregeert geen proces.")),

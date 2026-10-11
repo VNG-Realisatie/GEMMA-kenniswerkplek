@@ -13,7 +13,7 @@ data_object: nee
 domein: Publieksdiensten
 bronnen:
 - 2026-rvig-hup-achtergronden-en-begrippen
-- 2026-vng-gemma-bedrijfsfuncties
+- 2026-rijk-wet-brp-bwbr0033715
 - 2026-rvig-hup-algemeen
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
@@ -51,7 +51,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, onderdeel van**: [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md).
+- **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Producten- en dienstenrealisatie publieksdiensten* (geen element van de wiki; Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten), GEMMA-relatie `id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb`.
 - **Functie-indeling naar domein, omvat**: [Aangifte vertrek buitenland](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/aangifte-vertrek-buitenland.md), [Adoptie aangifte](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/adoptie-aangifte.md), [Briefadres aanvragen](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/briefadres-aanvragen.md), [BRP-adoptie-uitschrijving](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-adoptie-uitschrijving.md), [BRP-geheimhoudingsverzoek](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-geheimhoudingsverzoek.md), [BRP-inschrijving](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving.md), [BRP-inschrijving buitenlandse akte](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving-buitenlandse-akte.md), [BRP-inschrijving niet in leven zijnd kind](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving-niet-in-leven-zijnd-kind.md), [BRP-inzagerecht](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inzagerecht.md), [BRP-inzagerecht gegevensverstrekking](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inzagerecht-gegevensverstrekking.md), [BRP-uittreksel](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel.md), [BRP-uittreksel met gezag](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel-met-gezag.md), [BRP-wijzigingsverzoek](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-wijzigingsverzoek.md), [Naamgebruik verzoek aanduiding](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naamgebruik-verzoek-aanduiding.md), [Onjuiste inschrijving op adres melden](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/onjuiste-inschrijving-op-adres-melden.md), [Persoonsgegevens verklaring onder eed of belofte](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/persoonsgegevens-verklaring-onder-eed-of-belofte.md), [RNI inschrijving](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/rni-inschrijving.md), [Verhuismelding](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/verhuismelding.md).
 - **Bedient**: [Bijhouden persoonsgegevens](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md).
 - **Domein**: Publieksdiensten.
@@ -66,7 +66,7 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20). [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: het college houdt de persoonsgegevens in de basisregistratie bij (Wet BRP art. 1.4 lid 1). [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) |
 | **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert de bijhouding van de BRP en de dienstverlening daarover op grond van dezelfde kennis en bevoegdheid (medewerker BRP namens het college); geen eigen volgorde of doorlooptijd (HUP Algemeen). [HUP BRP Algemeen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-algemeen.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, bijhoudingsgemeente (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, werkt de ingeschreven persoon en zijn verblijfplaats bij (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
@@ -101,12 +101,6 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 | Bevolkingsadministratie bijhouding | omvat *aggregatie* | [Naamgebruik verzoek aanduiding](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naamgebruik-verzoek-aanduiding.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 257 (GEMMA-domein Publieksdiensten)) |
 | Bevolkingsadministratie bijhouding | omvat *aggregatie* | [BRP-inschrijving buitenlandse akte](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving-buitenlandse-akte.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 89 (GEMMA-domein Publieksdiensten)) |
 
-#### Inkomend
-
-| Van | Relatie | Naar | Bron |
-|---|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Bevolkingsadministratie bijhouding | GEMMA (id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb) |
-
 ## Herkomst
 
 ### Bronnen
@@ -114,7 +108,7 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) | HUP BRP: Achtergronden en begrippen |
-| [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
+| [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 | [HUP BRP Algemeen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-algemeen.md) | HUP BRP: Algemeen |
 | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 | [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) | Gemeente Utrecht: Adresonderzoek |

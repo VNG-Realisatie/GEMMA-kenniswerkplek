@@ -14,6 +14,8 @@ Gebruik (vanuit de wikimap):
     uv run python tools/gemma.py koppel <ggm-guid>         # GEMMA-element met deze GGM-GUID als eigenschap
     uv run python tools/gemma.py velden <id>                # gemma_*-blok (YAML) voor een elementpagina
     uv run python tools/gemma.py groepering <id>            # groeperingen (beleidsdomein) die dit element aggregeren
+    uv run python tools/gemma.py functie <id|naam>          # plek in de functiehiërarchie: ouders (tot het domein) en kinderen
+    uv run python tools/gemma.py functies                   # de hele functiehiërarchie as-is
     uv run python tools/gemma.py relaties <id>
     uv run python tools/gemma.py kandidaten <naam> [--ggm-guid EAID_…] [--synoniemen a,b]
     uv run python tools/gemma.py kwaliteitsdoelen          # de kwaliteitsdoelen (id, naam, definitie) voor een beleidskader
@@ -110,6 +112,60 @@ def groepering(data: dict, element_id: str) -> list[str]:
     return sorted(namen)
 
 
+# --- De functiehiërarchie as-is ---
+
+FUNCTIEKETEN = ("aggregation-relationship", "composition-relationship")
+DOMEINEN_MAP = "Domeinen"  # de groeperingen onder `Domein en doelgroep`, de wortels van de functiehiërarchie
+
+
+def functiehierarchie(data: dict) -> dict:
+    """De functiehiërarchie van GEMMA letterlijk: de bedrijfsfuncties en de domeingroeperingen erboven, met de aggregaties
+    ertussen. Een functie kan onder meer ouders hangen (een DAG). `onder` en `boven`: id → [(id, relatie-id)];
+    `wortels`: de domeinen."""
+    el = data["elementen"]
+    knoop = lambda e: e["type"] == "business-function" or (e["type"] == "grouping" and e["map"].endswith(DOMEINEN_MAP))  # noqa: E731
+    onder: dict[str, list[tuple[str, str]]] = {}
+    boven: dict[str, list[tuple[str, str]]] = {}
+    for r in data["relaties"].values():
+        b, d = el.get(r["bron"]), el.get(r["doel"])
+        if r["type"] in FUNCTIEKETEN and b and d and knoop(b) and d["type"] == "business-function":
+            onder.setdefault(b["id"], []).append((d["id"], r["id"]))
+            boven.setdefault(d["id"], []).append((b["id"], r["id"]))
+    wortels = sorted((i for i, e in el.items() if e["type"] == "grouping" and e["map"].endswith(DOMEINEN_MAP) and i in onder),
+                     key=lambda i: el[i]["naam"])
+    return {"onder": onder, "boven": boven, "wortels": wortels}
+
+
+def functie_tak(h: dict, functie_id: str) -> tuple[set[str], set[str]]:
+    """De functie en alles erboven tot en met de domeinen: (knopen, relatie-id's), letterlijk."""
+    knopen, relaties, nieuw = {functie_id}, set(), [functie_id]
+    while nieuw:
+        for ouder, rid in h["boven"].get(nieuw.pop(), []):
+            relaties.add(rid)
+            if ouder not in knopen:
+                knopen.add(ouder)
+                nieuw.append(ouder)
+    return knopen, relaties
+
+
+def functie_paden(data: dict, h: dict, functie_id: str) -> list[list[str]]:
+    """Alle paden van een domein naar de functie, als lijsten van namen (domein eerst)."""
+    el = data["elementen"]
+    ouders = h["boven"].get(functie_id, [])
+    if not ouders:
+        return [[el[functie_id]["naam"]]]
+    return sorted(pad + [el[functie_id]["naam"]] for o, _ in ouders for pad in functie_paden(data, h, o))
+
+
+def functie_domeinen(h: dict, functie_id: str) -> set[str]:
+    """De domeingroeperingen (id's) boven een functie."""
+    return {i for i in functie_tak(h, functie_id)[0] if i in h["wortels"]}
+
+
+def functie_domein_namen(data: dict, h: dict, functie_id: str) -> list[str]:
+    return sorted(data["elementen"][i]["naam"] for i in functie_domeinen(h, functie_id))
+
+
 # --- Release en verrijken ---
 
 
@@ -182,8 +238,9 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--titel", default="GEMMA-architectuurmodel")
     r.add_argument("--ref", help="Andere branch of tag dan gemma.herkomst.ref")
     r.add_argument("--pad", help="Ander pad in de repository dan gemma.herkomst.pad")
-    for naam in ("zoek", "element", "koppel", "velden", "groepering", "relaties"):
+    for naam in ("zoek", "element", "koppel", "velden", "groepering", "relaties", "functie"):
         sub.add_parser(naam).add_argument("sleutel")
+    sub.add_parser("functies")
     k = sub.add_parser("kandidaten")
     k.add_argument("naam")
     k.add_argument("--ggm-guid")
@@ -203,7 +260,29 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         sys.stdout.write(yaml.safe_dump(velden(gevonden[0]), sort_keys=False, allow_unicode=True))
         return 0
-    if a.cmd == "kwaliteitsdoelen":
+    if a.cmd == "functie":
+        gevonden = [e for e in zoek_element(data, a.sleutel) if e["type"] == "business-function"]
+        if len(gevonden) != 1:
+            print(f"FOUT: {len(gevonden)} bedrijfsfuncties gevonden voor '{a.sleutel}'; gebruik het id", file=sys.stderr)
+            return 1
+        h = functiehierarchie(data)
+        el = data["elementen"]
+        resultaat = {"id": gevonden[0]["id"], "naam": gevonden[0]["naam"],
+                     "paden": [" › ".join(p) for p in functie_paden(data, h, gevonden[0]["id"])],
+                     "ouders": [{"id": i, "naam": el[i]["naam"], "relatie": rid} for i, rid in h["boven"].get(gevonden[0]["id"], [])],
+                     "kinderen": [{"id": i, "naam": el[i]["naam"], "relatie": rid} for i, rid in h["onder"].get(gevonden[0]["id"], [])]}
+    elif a.cmd == "functies":
+        h = functiehierarchie(data)
+        el = data["elementen"]
+
+        def boom(i: str, diepte: int) -> list[str]:
+            regels = ["  " * diepte + f"{el[i]['naam']} ({i})"]
+            for k, _ in sorted(h["onder"].get(i, []), key=lambda x: el[x[0]]["naam"]):
+                regels += boom(k, diepte + 1)
+            return regels
+        print("\n".join(r for w in h["wortels"] for r in boom(w, 0)))
+        return 0
+    elif a.cmd == "kwaliteitsdoelen":
         resultaat = kwaliteitsdoelen(data)
     elif a.cmd == "kandidaten":
         resultaat = kandidaten(data, a.naam, a.ggm_guid, [s.strip() for s in a.synoniemen.split(",") if s.strip()])

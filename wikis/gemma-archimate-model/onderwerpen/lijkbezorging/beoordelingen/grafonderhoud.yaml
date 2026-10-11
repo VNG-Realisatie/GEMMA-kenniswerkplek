@@ -239,7 +239,7 @@ besluiten:
 - datum: '2026-10-05'
   besluit: Naam Grafonderhoud, de UPL-naam letterlijk; Onderhoud van graven (beleid) wordt een synoniem.
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -258,3 +258,4 @@ beslist:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   herkomst: informatiemodel
   pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafonderhoud.md
+  zonder_grondslag: true

@@ -27,6 +27,8 @@ bronnen:
 
 **Status: goedgekeurd** door de redacteur.
 
+**Zonder landelijke wettelijke grondslag.** Een UPL-dienst die geen wettelijke taak is: ze wordt beschreven voor zover mogelijk, zonder processen, objecten, gebeurtenissen of rollen, is teruggemeld aan de procesarchitectuur ([nr. 21](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md)) en gaat niet naar het GEMMA-model ([lijst](../../../../overig/zonder-grondslag.md)).
+
 ## Betekenis
 
 ### Definitie
@@ -51,7 +53,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, onderdeel van**: [Producten- en dienstenrealisatie publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md).
+- **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Producten- en dienstenrealisatie publieksdiensten* (geen element van de wiki; Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten), bron: [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 226 (GEMMA-domein Publieksdiensten)).
 - **Afnemer**: extern.
 - **Domein**: Publieksdiensten.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
@@ -78,15 +80,6 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 - **Garantstelling en particuliere logiesverstrekking**: De gemeente legaliseert de handtekening van de gastheer op het formulier bewijs garantstelling en/of particuliere logiesverstrekking, dat de gast gebruikt voor een visumaanvraag; het formulier is een half jaar geldig (Utrecht Garantstelling). Geen eigen pagina: een legalisatie met een ander formulier, die de UPL niet apart noemt onder 0.2.
 
-### Relaties
-
-#### Inkomend
-
-| Van | Relatie | Naar | Bron |
-|---|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Legalisatie handtekening | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 226 (GEMMA-domein Publieksdiensten)) |
-| [Producten- en dienstenrealisatie publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) | realiseert *realisatie* | Legalisatie handtekening | [Utrecht Handtekening laten legaliseren](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) (inleiding) |
-
 ## Herkomst
 
 ### Bronnen
@@ -102,7 +95,7 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 Procesarchitectuur-terugmeldingen:
 
-- [Nummer 21](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md) (grondslag, open): **UPL:** legalisatie handtekening heeft als grondslag art. 23 Wet griffierechten burgerlijke zaken ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), nr. 226). **Bevinding:** art. 23 lid 2 regelt alleen het griffierecht voor de legalisatie van handtekeningen: een tarief, geen taak of bevoegdheid van de gemeente of de burgemeester ([2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899.md), art. 23, 24). Een andere landelijke grondslag is niet gevonden, en ook geen VNG-modelverordening die de dienst regelt; gemeenten legaliseren namens de burgemeester zonder een artikel te noemen. GEMMA houdt het product omdat het in de UPL staat, maar werkt het niet uit in processen, objecten of rollen. **Voorstel:** zoek de bevoegdheidsgrondslag van de burgemeester voor de legalisatie van een handtekening uit en neem die op in de UPL. Is er geen, vermeld dan dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), met de leges in de legesverordening, en noem de Wet griffierechten niet als grondslag.
+- [Nummer 21](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md) (grondslag, open): **UPL:** legalisatie handtekening heeft als grondslag art. 23 Wet griffierechten burgerlijke zaken ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), nr. 226). **Bevinding:** art. 23 lid 2 regelt alleen het griffierecht voor de legalisatie van handtekeningen: een tarief, geen taak of bevoegdheid van de gemeente of de burgemeester ([2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899.md), art. 23, 24). Een andere landelijke grondslag is niet gevonden, en ook geen VNG-modelverordening die de dienst regelt; gemeenten legaliseren namens de burgemeester zonder een artikel te noemen. Het is daarmee geen wettelijke taak. GEMMA beschrijft de dienst, maar neemt haar niet op in het GEMMA-model. **Voorstel:** zoek de bevoegdheidsgrondslag van de burgemeester voor de legalisatie van een handtekening uit en neem die op in de UPL. Is er geen, vermeld dan dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), met de leges in de legesverordening, en noem de Wet griffierechten niet als grondslag.
 
 ### Besluiten redacteur
 

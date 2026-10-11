@@ -58,7 +58,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, onderdeel van**: [Producten- en dienstenrealisatie fysieke leefomgeving](../../../bedrijfsfuncties/fysieke-leefomgeving/producten-en-dienstenrealisatie-fysieke-leefomgeving.md).
+- **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Producten- en dienstenrealisatie fysieke leefomgeving* (geen element van de wiki; Fysieke leefomgeving › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving), bron: [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 445 (GEMMA-domein Fysieke leefomgeving)).
 - **Afnemer**: extern.
 - **Domein**: Fysieke leefomgeving.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
@@ -94,7 +94,6 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 |---|---|---|---|
 | [Afgeven laissez-passer](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/afgeven-laissez-passer.md) | realiseert *realisatie* | Vervoersdocumenten stoffelijk overschot | [Besluit op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (Besluit op de lijkbezorging art. 11; UPL nr. 445) |
 | [Besluit op de lijkbezorging](../../../../motivatie/beleidskaders/rijksregelgeving/besluit-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Vervoersdocumenten stoffelijk overschot | [Besluit op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) (UPL nr. 445, art. 11) |
-| [Producten- en dienstenrealisatie fysieke leefomgeving](../../../bedrijfsfuncties/fysieke-leefomgeving/producten-en-dienstenrealisatie-fysieke-leefomgeving.md) | omvat *aggregatie* | Vervoersdocumenten stoffelijk overschot | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 445 (GEMMA-domein Fysieke leefomgeving)) |
 
 ## Herkomst
 

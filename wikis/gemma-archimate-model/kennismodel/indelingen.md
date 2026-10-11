@@ -42,10 +42,10 @@ Waar staat elk element in het model? Een **indeling** ordent naar één criteriu
 | Niveaus | domein › functie (de keten tot het domeinniveau) › dienst; domein › product |
 | Groepering | GEMMA |
 | In Archi | aggregatie vanuit de domeingroepering (een functie op domeinniveau, een product) of vanuit de bovenliggende functie (een functie, een dienst) |
-| Eigenschappen | `domein` |
+| Eigenschappen | `domein`, `gemma_functie` |
 
-- De Functie-indeling is een relatie, geen eigenschap: de bovenliggende functie wordt een element en aggregeert de functie eronder, volgens de GEMMA-functieketen, tot en met de functie op domeinniveau (GEMMA type *Bedrijfsfunctie domein*); alleen die hangt via `domein` aan de domeingroepering.
-- Een dienst hangt onder één functie in hetzelfde domein.
+- De hiërarchie komt as-is uit het GEMMA-model (`tools/gemma.py functies`), zonder beoordeling en zonder bron; ook de functies erboven, tot en met het domeinniveau (GEMMA type *Bedrijfsfunctie domein*), zijn knopen zonder pagina. Alleen een functie op domeinniveau hangt via `domein` aan de domeingroepering.
+- Een functie of dienst hangt onder één bovenliggende functie. Is die een element van de wiki, dan is dat een aggregatie in zijn beoordeling; is het een GEMMA-functie zonder beoordeling, dan is dat het veld `gemma_functie` (id, met de GEMMA-relatie of een bron met vindplaats). Een dienst hangt in hetzelfde domein als haar functie.
 - Een product hangt via `domein` direct aan de domeingroepering: ArchiMate laat een functie geen product aggregeren. De diensten die het omvat, hangen onder hun functie.
 - Een functie bedient een proces; ze aggregeert geen proces.
 

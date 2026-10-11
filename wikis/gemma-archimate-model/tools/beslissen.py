@@ -81,7 +81,7 @@ class Context:
         self.schema = json.loads((wiki_root / "schemas" / "beoordeling.schema.json").read_text(encoding="utf-8"))
         log = wiki_root / "log.md"
         self.log = log.read_text(encoding="utf-8") if log.exists() else ""
-        self._ggm = self._gemma = None
+        self._ggm = self._gemma = self._functies = None
         self._brontypen: dict[str, str | None] = {}
 
     def ggm(self) -> dict:
@@ -95,6 +95,13 @@ class Context:
             import gemma
             self._gemma = gemma.laad(gam_gemeen.model_json(self.wiki_root, "gemma"))
         return self._gemma
+
+    def functies(self) -> dict:
+        """De functiehiërarchie van GEMMA as-is (tools/gemma.py `functiehierarchie`)."""
+        if self._functies is None:
+            import gemma
+            self._functies = gemma.functiehierarchie(self.gemma())
+        return self._functies
 
     def brontype(self, bron_id: str) -> str | None:
         """brontype uit sources/index; None als de bron niet bestaat."""
@@ -115,6 +122,7 @@ def bronnen_van(data: dict) -> list[str]:
         ids += dp.get("bronnen", [])
     for k in data.get("kwaliteitsdoelen", []):
         ids += k.get("bronnen", [])
+    ids += (data.get("gemma_functie") or {}).get("bronnen", [])
     if data.get("definitie_formeel_bron"):
         ids.append(data["definitie_formeel_bron"]["bron"])
     return list(dict.fromkeys(ids))
@@ -190,6 +198,13 @@ def _modelvelden(ctx: Context, bid: str, data: dict, res: Resultaat) -> dict:
             beslist["gemma_generiek"] = gemmatool.velden(treffers[0])
         else:
             res.fouten.append(f"{bid}: gemma_generiek '{generiek['id']}' bestaat niet in het GEMMA-model")
+    functie = data.get("gemma_functie") or {}
+    if functie.get("id"):
+        treffers = [e for e in gemmatool.zoek_element(ctx.gemma(), functie["id"]) if e["type"] == "business-function"]
+        if treffers:
+            beslist["gemma_functie"] = {
+                **gemmatool.velden(treffers[0]),
+                "gemma_paden": [" › ".join(p) for p in gemmatool.functie_paden(ctx.gemma(), ctx.functies(), treffers[0]["id"])]}
     return beslist
 
 
@@ -316,6 +331,67 @@ def _controleer_gemma_relaties(ctx: Context, bid: str, data: dict, alle: dict[st
         elif (g["bron"], g["doel"], g["type"]) != (eigen, naar, verwacht):
             res.fouten.append(f"{bid}: GEMMA-relatie {rid} is geen {r['soort']} van de GEMMA-match van dit element "
                               f"naar die van '{r['naar']}'")
+
+
+def _controleer_gemma_functie(ctx: Context, bid: str, data: dict, uitkomst: dict, alle: dict[str, dict],
+                              res: Resultaat) -> None:
+    """`gemma_functie`: de plek van een functie of dienst in de GEMMA-functiehiërarchie, als het id van de bovenliggende
+    GEMMA-functie. Ze steunt op de GEMMA-relatie van die functie naar de GEMMA-match van dit element, of op een bron
+    met vindplaats (regel Elke claim een bron)."""
+    f = data.get("gemma_functie")
+    if not f:
+        return
+    if uitkomst.get("paginatype") not in ("bedrijfsfunctie", "dienst"):
+        res.fouten.append(f"{bid}: gemma_functie hoort alleen bij een bedrijfsfunctie of dienst")
+        return
+    model = ctx.gemma()
+    ouder = model["elementen"].get(f["id"])
+    if ouder is None or ouder["type"] != "business-function":
+        res.fouten.append(f"{bid}: gemma_functie '{f['id']}' is geen bedrijfsfunctie in het GEMMA-model "
+                          "(zoek met tools/gemma.py functie)")
+        return
+    if bool(f.get("gemma_relatie")) == bool(f.get("bronnen")):
+        res.fouten.append(f"{bid}: gemma_functie steunt op de GEMMA-relatie (gemma_relatie) of op bronnen met vindplaats, "
+                          "niet op beide of geen van beide (regel Elke claim een bron)")
+    elif f.get("bronnen") and not f.get("vindplaats"):
+        res.fouten.append(f"{bid}: gemma_functie met bronnen zonder vindplaats (regel Elke claim een bron)")
+    elif f.get("gemma_relatie"):
+        eigen = (data.get("gemma") or {}).get("id")
+        g = model["relaties"].get(f["gemma_relatie"])
+        if not eigen:
+            res.fouten.append(f"{bid}: gemma_functie met gemma_relatie zonder GEMMA-match (gemma.id)")
+        elif g is None:
+            res.fouten.append(f"{bid}: GEMMA-relatie {f['gemma_relatie']} bij gemma_functie staat niet in het GEMMA-model")
+        elif (g["bron"], g["doel"]) != (f["id"], eigen) or g["type"] not in gemmatool_functieketen():
+            res.fouten.append(f"{bid}: GEMMA-relatie {f['gemma_relatie']} is geen aggregatie van '{ouder['naam']}' "
+                              "naar de GEMMA-match van dit element")
+    if any(r["soort"] == "aggregatie" and r["naar"] == bid for d in alle.values()
+           if (d.get("gemma") or {}).get("id") == f["id"] for r in d.get("relaties", [])):
+        res.fouten.append(f"{bid}: '{ouder['naam']}' is een element van de wiki dat dit element al aggregeert: één plek "
+                          "(laat gemma_functie weg)")
+
+
+def gemmatool_functieketen() -> tuple[str, ...]:
+    import gemma as gemmatool
+    return gemmatool.FUNCTIEKETEN
+
+
+def _zonder_grondslag(alle: dict[str, tuple[Path, dict]], nieuw: dict[str, dict], zonder: set[str]) -> None:
+    """`beslist.zonder_grondslag`: een UPL-dienst zonder landelijke wettelijke grondslag (`signalen.zonder_grondslag`).
+    De render meldt het op de pagina en zet haar op de lijst; de export laat haar weg."""
+    for bid in alle:
+        data = nieuw.get(bid, alle[bid][1])
+        beslist = data.get("beslist")
+        if beslist is None or bool(beslist.get("zonder_grondslag")) == (bid in zonder):
+            continue
+        beslist = {k: v for k, v in beslist.items() if k != "zonder_grondslag"}
+        if bid in zonder:
+            beslist["zonder_grondslag"] = True
+        data = {**data, "beslist": beslist}
+        if data == alle[bid][1]:
+            nieuw.pop(bid, None)   # gelijk aan de beoordeling: niets te schrijven
+        else:
+            nieuw[bid] = data
 
 
 def _terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat, rel: Path = TERUGMELDINGEN,
@@ -505,7 +581,8 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             continue
         bronnen = bronnen_van(data)
         _controleer_bronnen(ctx, bid, bronnen, res)
-        modelbronnen = sorted({b for a in [*data["kenmerken"].values(), *data.get("relaties", [])]
+        modelbronnen = sorted({b for a in [*data["kenmerken"].values(), *data.get("relaties", []),
+                                           data.get("gemma_functie") or {}]
                                for b in a.get("bronnen") or [] if ctx.brontype(b) == "model"})
         if modelbronnen:
             res.waarschuwingen.append(f"{bid}: {', '.join(modelbronnen)} is een model, matchdoel en geen bron; noem bij "
@@ -532,6 +609,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             _controleer_element(ctx, bid, data, uitkomst, res)
             _controleer_verwijzingen(bid, data, uitkomsten, res, {b: d["begrip"] for b, (_, d) in alle.items()})
             _controleer_gemma_relaties(ctx, bid, data, {b: d for b, (_, d) in alle.items()}, res)
+            _controleer_gemma_functie(ctx, bid, data, uitkomst, {b: d for b, (_, d) in alle.items()}, res)
             beslist.update(_modelvelden(ctx, bid, data, res))
             beslist.update(_kwaliteitsdoelen(ctx, bid, data, uitkomst, res))
             status = bepaal_type.voorgestelde_status(uitkomst, ggm_sterkte, data.get("besluiten"))
@@ -560,15 +638,21 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     pa_register = _pa_terugmeldingen(ctx, uitkomsten, res)
     gemma_register = _gemma_terugmeldingen(ctx, uitkomsten, res)
     gemeld = [m for m in (pa_register or {}).get("terugmeldingen", []) if m.get("status") != "afgewezen"]
-    res.waarschuwingen += signalen.over_begrippen({b: d for b, (_, d) in alle.items()}, uitkomsten,
-                                                  {e for m in gemeld if m["type"] == "kennismodel" for e in m.get("elementen") or []})
-    res.waarschuwingen += signalen.kennismodel({b: d for b, (_, d) in alle.items()}, uitkomsten)
-    res.waarschuwingen += signalen.modulariteit({b: d for b, (_, d) in alle.items()}, uitkomsten, onderwerpen)
     elementen = {b: u for b, u in uitkomsten.items()   # een vervallen element (besluit afwijzen) telt niet mee
                  if u and u["soort"] == "element" and not bepaal_type.is_afgewezen(alle[b][1])}
+    brontype = lambda i: gam_gemeen.brontype(wiki_root, i)  # noqa: E731
+    zonder = signalen.zonder_grondslag({b: nieuw.get(b, alle[b][1]) for b in alle}, elementen, brontype)
+    _zonder_grondslag(alle, nieuw, zonder)
+    res.waarschuwingen += signalen.over_begrippen({b: d for b, (_, d) in alle.items()}, uitkomsten,
+                                                  {e for m in gemeld if m["type"] == "kennismodel" for e in m.get("elementen") or []},
+                                                  zonder)
+    res.waarschuwingen += signalen.kennismodel({b: d for b, (_, d) in alle.items()}, uitkomsten, zonder)
+    res.waarschuwingen += signalen.modulariteit({b: d for b, (_, d) in alle.items()}, uitkomsten, onderwerpen, zonder)
+    res.waarschuwingen += signalen.zonder_grondslag_terugmelding(zonder, gemeld)
     functies = [b for b, u in elementen.items() if u["paginatype"] == "bedrijfsfunctie"]
     if any(u["paginatype"] in ("bedrijfsfunctie", "product", "dienst") for u in elementen.values()):
-        gekoppeld = any((alle[b][1].get("gemma") or {}).get("id") for b in functies)
+        gekoppeld = any((alle[b][1].get("gemma") or {}).get("id") for b in functies) \
+            or any(alle[b][1].get("gemma_functie") for b in elementen)
         res.waarschuwingen += signalen.functie_indeling(
             {b: d for b, (_, d) in alle.items()}, elementen,
             [(van, r) for van in elementen for r in alle[van][1].get("relaties", [])], ctx.gemma() if gekoppeld else {})
@@ -585,8 +669,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,
                                                               ctx.gemma(), gemeld)
     res.fouten += signalen.bronduidingen(wiki_root, onderwerpen) + signalen.modelbestanden(wiki_root)
-    fouten, waarschuwingen = signalen.wettelijke_grondslag({b: nieuw.get(b, alle[b][1]) for b in alle}, elementen,
-                                                           lambda i: gam_gemeen.brontype(wiki_root, i))
+    fouten, waarschuwingen = signalen.wettelijke_grondslag({b: nieuw.get(b, alle[b][1]) for b in alle}, elementen, brontype)
     res.fouten += fouten
     res.waarschuwingen += waarschuwingen
     register = _terugmeldingen(ctx, uitkomsten, res)

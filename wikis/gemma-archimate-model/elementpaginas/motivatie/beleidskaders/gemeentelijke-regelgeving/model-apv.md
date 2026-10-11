@@ -84,7 +84,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Model-APV | is grondslag voor *associatie (gericht)* | [Asverstrooiing](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md) | [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 5:36 lid 3; UPL nr. 32) |
+| Model-APV | werkt uit voor *associatie (gericht)* | [Asverstrooiing](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md) | [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 5:36 lid 3; UPL nr. 32) |
 | Model-APV | is model voor (algemene plaatselijke verordening) *associatie (gericht)* | [Regeling](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) | [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) (aanhef; leeswijzer) |
 
 ## Herkomst
@@ -102,4 +102,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-08: Opnemen als beleidskader in Gemeentelijke regelgeving, grondslag van Asverstrooiing (art. 5:36 lid 3); bron is de openbare kopie van november 2023 (Opmeer), opgenomen met de VNG als eigenaar. Thuisonderwerp Algemeen, generiek: de APV regelt veel beleidsdomeinen.
+- 2026-10-08: Opnemen als beleidskader in Gemeentelijke regelgeving, grondslag van Asverstrooiing (art. 5:36 lid 3); bron is de openbare kopie van november 2023 (Opmeer), opgenomen met de VNG als eigenaar. Thuisonderwerp Algemeen, generiek: de APV regelt veel beleidsdomeinen. *Stand: herzien 2026-10-11: een VNG-model is nooit grondslag; de relatie naar Asverstrooiing heet werkt uit voor. Of de Model-APV beleidskader blijft, is een open punt (regel Bronvoorrang)*

@@ -593,21 +593,28 @@ def test_signalen_voor_de_indeling():
     assert "arts: generiek, maar geen `gemma_generiek`" in tekst
 
 
+def _functie_gemma():
+    """Een kleine GEMMA-functiehiërarchie: domein › domeinfunctie › soort › onderwerp, en een functie onder het domein."""
+    def el(id_, type_="business-function", gemma_type=None, map_="Business / Bedrijfsfuncties", naam=None):
+        return {"id": id_, "naam": naam or id_, "type": type_, "map": map_,
+                "eigenschappen": {"GEMMA type": gemma_type} if gemma_type else {}}
+    elementen = {
+        "g-fl": el("g-fl", "grouping", map_="Other / Domein en doelgroep / Domeinen", naam="Fysieke leefomgeving"),
+        "g-domein": el("g-domein", gemma_type="Bedrijfsfunctie domein"),
+        "g-soort": el("g-soort", gemma_type="Bedrijfsfunctie"),
+        "g-onderwerp": el("g-onderwerp"),
+        "g-elders": el("g-elders"),
+    }
+    agg = lambda i, bron, doel: {"id": i, "type": "aggregation-relationship", "bron": bron, "doel": doel}  # noqa: E731
+    relaties = {r["id"]: r for r in (agg("r0", "g-fl", "g-domein"), agg("r1", "g-domein", "g-soort"),
+                                     agg("r2", "g-soort", "g-onderwerp"))}
+    return {"elementen": elementen, "relaties": relaties}
+
+
 def test_signalen_voor_de_functie_indeling():
     import signalen
 
-    gemma_data = {
-        "elementen": {
-            "g-domein": {"eigenschappen": {"GEMMA type": "Bedrijfsfunctie domein"}},
-            "g-soort": {"eigenschappen": {"GEMMA type": "Bedrijfsfunctie"}},
-            "g-onderwerp": {"eigenschappen": {}},
-            "g-elders": {"eigenschappen": {}},
-        },
-        "relaties": {
-            "r1": {"type": "aggregation-relationship", "bron": "g-domein", "doel": "g-soort"},
-            "r2": {"type": "aggregation-relationship", "bron": "g-soort", "doel": "g-onderwerp"},
-        },
-    }
+    gemma_data = _functie_gemma()
     elementen = {b: {"paginatype": "bedrijfsfunctie", "soort": "element"}
                  for b in ("domein", "soort", "onderwerp", "nieuw", "wees", "elders", "eigen")}
     agg = lambda naar: {"soort": "aggregatie", "naar": naar}  # noqa: E731
@@ -644,6 +651,42 @@ def test_signalen_voor_de_functie_indeling():
     # domeinniveau hangt aan de groepering; een functie onder een GEMMA-functie die GEMMA volgt geeft geen signaal
     assert not any(tekst_regel.startswith(("domein:", "soort:", "onderwerp:", "nieuw:")) for tekst_regel in tekst.splitlines())
 
+
+def test_signalen_voor_gemma_functie():
+    """De bovenliggende functie is een GEMMA-functie zonder beoordeling (`gemma_functie`): zelfde controles."""
+    import signalen
+
+    gemma_data = _functie_gemma()
+    elementen = {b: {"paginatype": t, "soort": "element"}
+                 for b, t in (("kind", "bedrijfsfunctie"), ("dienst", "dienst"), ("elders-dienst", "dienst"),
+                              ("kind-elders", "bedrijfsfunctie"), ("tweeledig", "dienst"), ("product", "product"))}
+    fl = "Fysieke leefomgeving"
+    gf = lambda i: {"id": i}  # noqa: E731
+    alle = {
+        "kind": {"gemma": {"id": "g-onderwerp"}, "domein": fl, "gemma_functie": gf("g-soort")},
+        "dienst": {"domein": fl, "gemma_functie": gf("g-soort")},
+        "elders-dienst": {"domein": "Publieksdiensten", "gemma_functie": gf("g-soort")},
+        "kind-elders": {"gemma": {"id": "g-elders"}, "domein": fl, "gemma_functie": gf("g-soort")},
+        "tweeledig": {"domein": fl, "gemma_functie": gf("g-soort")},
+        "product": {"domein": fl, "gemma_functie": gf("g-soort")},
+    }
+    relaties = [("kind", {"soort": "aggregatie", "naar": "tweeledig"})]
+    elementen["kind"]["paginatype"] = "bedrijfsfunctie"
+    tekst = "\n".join(signalen.functie_indeling(alle, elementen, relaties, gemma_data))
+    regels = tekst.splitlines()
+    assert not any(r.startswith(("dienst:", "kind:")) for r in regels)  # gemma_functie volstaat, en GEMMA volgt de keten
+    assert "elders-dienst: domein 'Publieksdiensten' wijkt af van dat van de functie g-soort (Fysieke leefomgeving)" in tekst
+    assert "kind-elders: in GEMMA aggregeert g-soort deze functie niet" in tekst
+    assert "tweeledig: meer functies (kind, g-soort)" in tekst
+    assert "product: product onder een functie (g-soort)" in tekst
+    # een functie zonder beide plekken en een domeinfunctie met een bovenliggende functie
+    alle["los"] = {"gemma": {"sterkte": "geen"}, "domein": fl}
+    alle["g-domein-element"] = {"gemma": {"id": "g-domein"}, "domein": fl, "gemma_functie": gf("g-soort")}
+    elementen.update({"los": {"paginatype": "bedrijfsfunctie", "soort": "element"},
+                      "g-domein-element": {"paginatype": "bedrijfsfunctie", "soort": "element"}})
+    tekst = "\n".join(signalen.functie_indeling(alle, elementen, relaties, gemma_data))
+    assert "los: hangt onder geen bovenliggende functie: aggregatie vanaf een functie of `gemma_functie` ontbreekt" in tekst
+    assert "g-domein-element: functie op domeinniveau met een bovenliggende functie (g-soort)" in tekst
 
 
 def test_domein_past_bij_de_gemma_domeinen_van_het_beleidsdomein():
@@ -863,11 +906,34 @@ def test_wettelijke_grondslag():
     fouten, signalen_ = signalen.wettelijke_grondslag(alle, elementen, soorten.get)
     assert fouten[0] == ("hup-x: een richtlijn is geen wettelijke grondslag; noem de relatie naar 'dienst-a' 'geeft "
                          "richtlijn voor' (regel Wettelijke grondslag)")
-    # het VNG-model is grondslag voor de UPL-dienst zonder landelijke grondslag, niet voor dienst-a (die heeft er een)
-    assert [f.split(":")[0] for f in fouten] == ["hup-x", "vng-model", "proces-upl"]   # een vervallen proces telt niet mee
-    assert "noem de relatie naar 'dienst-a' 'werkt uit voor'" in fouten[1]
-    assert "realiseert UPL-dienst 'dienst-upl'" in fouten[2]
+    # een VNG-model is nooit grondslag, ook niet voor een UPL-dienst zonder landelijke grondslag
+    assert [f.split(":")[0] for f in fouten] == ["hup-x", "vng-model", "vng-model", "proces-upl"]   # een vervallen proces telt niet mee
+    assert "een VNG-model is nooit grondslag; noem de relatie naar 'dienst-upl' 'werkt uit voor'" in fouten[1]
+    assert "noem de relatie naar 'dienst-a' 'werkt uit voor'" in fouten[2]
+    assert "realiseert UPL-dienst 'dienst-upl'" in fouten[3]
     assert [s.split(":")[0] for s in signalen_] == ["rol-zonder"]
+    # de hoek zonder grondslag: UPL als bron, geen landelijke bron en geen 'is grondslag voor' van de EU of het Rijk
+    assert signalen.zonder_grondslag(alle, elementen, soorten.get) == {"dienst-upl", "dienst-logius"}
+    assert signalen.zonder_grondslag_terugmelding({"dienst-upl", "dienst-logius"}, [{"elementen": ["dienst-upl"]}]) == [
+        "dienst-logius: UPL-dienst zonder landelijke grondslag zonder procesarchitectuur-terugmelding; meld haar terug "
+        "als geen wettelijke taak (regel Wettelijke grondslag)"]
+
+
+def test_zonder_grondslag_geen_signalen_van_uitwerking():
+    """Een dienst zonder grondslag hoeft geen proces, geen kernrelatie en geen relatie met een ander element te hebben."""
+    import bepaal_type
+    import signalen
+
+    kenmerken = {k: {"waarde": "nee"} for k in bepaal_type.SLEUTELS}
+    kenmerken["gerealiseerd_door"] = {"waarde": "ja", "bronnen": ["upl"]}
+    alle = {"dienst-z": {"begrip": "Dienst Z", "onderwerpen": ["test"], "kenmerken": kenmerken}}
+    uitkomsten = {"dienst-z": {"soort": "element", "paginatype": "dienst", "archimate_type": "business-service"}}
+    for zonder, verwacht in ((set(), True), ({"dienst-z"}, False)):
+        w = (signalen.over_begrippen(alle, uitkomsten, zonder=zonder) + signalen.kennismodel(alle, uitkomsten, zonder)
+             + signalen.modulariteit(alle, uitkomsten, {"test": {"naam": "Test"}}, zonder))
+        assert any("geen proces of functie realiseert" in x for x in w) is verwacht
+        assert any("kenmerk gerealiseerd_door is ja" in x for x in w) is verwacht
+        assert any("geen relatie met een ander element" in x for x in w) is verwacht
 
 
 def test_besluiten_van_een_onderwerp(wiki):
@@ -908,3 +974,115 @@ def test_object_van_zet_een_object_voort_en_wordt_getoetst(wiki):
     # het object is zelf nog een element
     _schrijf(wiki, "behandelen-aanvraag", _proces(object_van={**van, "id": "beschikking"}))
     assert any("is zelf nog een element" in f for f in beslissen.beslissen(wiki).fouten)
+
+
+def _functie_model(wiki):
+    """Een GEMMA-model met de functiehiërarchie domein › domeinfunctie › soort › functie."""
+    import gam_gemeen
+
+    def el(id_, naam, type_="business-function", gemma_type=None, map_="Business / Bedrijfsfuncties"):
+        return {"id": id_, "naam": naam, "type": type_, "documentatie": "", "map": map_, "map_id": "f",
+                "eigenschappen": {"GEMMA type": gemma_type} if gemma_type else {}}
+
+    agg = lambda i, bron, doel: {"id": i, "type": "aggregation-relationship", "bron": bron, "doel": doel}  # noqa: E731
+    modellen.schrijf_json(
+        gam_gemeen.model_json(wiki, "gemma"), "archimate",
+        {"elementen": {
+            "id-fl": el("id-fl", "Fysieke leefomgeving", "grouping", map_="Other / Domein en doelgroep / Domeinen"),
+            "id-uitvoering": el("id-uitvoering", "Uitvoering fysieke leefomgeving", gemma_type="Bedrijfsfunctie domein"),
+            "id-exploitatie": el("id-exploitatie", "Exploitatie fysieke leefomgeving", gemma_type="Bedrijfsfunctie"),
+            "id-begraafplaatsen": el("id-begraafplaatsen", "Exploiteren van begraafplaatsen"),
+            "id-haven": el("id-haven", "Exploiteren van havens"),
+            "id-object": el("id-object", "Beschikking", "business-object", map_="Business / Bedrijfsobjecten")},
+         "mappen": {}, "model": {}, "relaties": {r["id"]: r for r in (
+             agg("id-r0", "id-fl", "id-uitvoering"), agg("id-r1", "id-uitvoering", "id-exploitatie"),
+             agg("id-r2", "id-exploitatie", "id-begraafplaatsen"), agg("id-r3", "id-exploitatie", "id-haven"))}})
+
+
+def test_gemma_functie_wordt_getoetst_en_gerenderd(wiki):
+    _functie_model(wiki)
+    _schrijf(wiki, "beschikking", _bo())
+    functie = _element("Exploiteren van begraafplaatsen", FUNCTIE, domein="Fysieke leefomgeving",
+                       gemma={"id": "id-begraafplaatsen", "sterkte": "exact", "onderbouwing": "Zelfde functie."},
+                       gemma_functie={"id": "id-exploitatie", "gemma_relatie": "id-r2"})
+    _schrijf(wiki, "exploiteren-van-begraafplaatsen", functie)
+    dienst = _element("Grafonderhoud", DIENST, domein="Fysieke leefomgeving", afnemer="extern",
+                      gemma_functie={"id": "id-exploitatie", "bronnen": [WET], "vindplaats": "art. 23"})
+    _schrijf(wiki, "grafonderhoud", dienst)
+    res = _beslissen(wiki)
+    assert not any("gemma_functie" in f for f in res.fouten)
+    functie = _lees(wiki, "exploiteren-van-begraafplaatsen")
+    assert functie["beslist"]["gemma_functie"]["gemma_naam"] == "Exploitatie fysieke leefomgeving"
+    assert functie["beslist"]["gemma_functie"]["gemma_paden"] == [
+        "Fysieke leefomgeving › Uitvoering fysieke leefomgeving › Exploitatie fysieke leefomgeving"]
+    pagina = (wiki / functie["beslist"]["pad"]).read_text(encoding="utf-8")
+    assert ("**Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Exploitatie fysieke leefomgeving* "
+            "(geen element van de wiki; Fysieke leefomgeving › Uitvoering fysieke leefomgeving › Exploitatie fysieke "
+            "leefomgeving), GEMMA-relatie `id-r2`.") in pagina
+    assert "`id-exploitatie`" not in pagina.split("---")[1]  # geen verwijzing in de frontmatter
+    dienstpagina = (wiki / _lees(wiki, "grafonderhoud")["beslist"]["pad"]).read_text(encoding="utf-8")
+    assert f"bron: [{WET}]" in dienstpagina or WET in dienstpagina
+
+    # de indelingspagina toont de hiërarchie as-is met de elementen eronder en de dekking
+    indeling = (wiki / "elementpaginas/overig/indelingen/bedrijfsfuncties.md").read_text(encoding="utf-8")
+    assert "## Fysieke leefomgeving" in indeling
+    assert "  - **Exploitatie fysieke leefomgeving**" in indeling
+    assert "    - **Exploiteren van begraafplaatsen** → [Exploiteren van begraafplaatsen]" in indeling
+    assert "    - Exploiteren van havens" in indeling  # een knoop zonder inhoud staat er ook, as-is
+    assert "**dienst** (1): [Grafonderhoud]" in indeling
+    assert "Functies: 4; met inhoud van de wiki: 3." in indeling
+    assert "## Niveau eigen" in (wiki / "elementpaginas/overig/indelingen/onderwerpen.md").read_text(encoding="utf-8")
+    assert (wiki / "elementpaginas/overig/indelingen/beleidsdomeinen.md").exists()
+    assert render.main(["--wiki", str(wiki), "--check"]) == 0
+
+    # de plek steunt op de GEMMA-relatie of op een bron, niet op beide; en alleen een functie of dienst
+    def fouten(**wijziging):
+        _schrijf(wiki, "exploiteren-van-begraafplaatsen", {**_lees(wiki, "exploiteren-van-begraafplaatsen"), **wijziging})
+        return beslissen.beslissen(wiki, schrijven=False).fouten
+
+    assert any("niet op beide of geen van beide" in f
+               for f in fouten(gemma_functie={"id": "id-exploitatie", "gemma_relatie": "id-r2", "bronnen": [WET],
+                                              "vindplaats": "art. 1"}))
+    assert any("is geen aggregatie van 'Exploitatie fysieke leefomgeving' naar de GEMMA-match" in f
+               for f in fouten(gemma_functie={"id": "id-exploitatie", "gemma_relatie": "id-r3"}))
+    assert any("'id-object' is geen bedrijfsfunctie" in f for f in fouten(gemma_functie={"id": "id-object", "gemma_relatie": "id-r2"}))
+    assert any("gemma_relatie zonder GEMMA-match" in f for f in fouten(
+        gemma_functie={"id": "id-exploitatie", "gemma_relatie": "id-r2"}, gemma={"sterkte": "geen", "onderbouwing": "Nee."}))
+    assert any("bronnen zonder vindplaats" in f for f in fouten(gemma_functie={"id": "id-exploitatie", "bronnen": [WET]}))
+    _schrijf(wiki, "beschikking", _bo(gemma_functie={"id": "id-exploitatie", "gemma_relatie": "id-r2"}))
+    assert any("beschikking: gemma_functie hoort alleen bij een bedrijfsfunctie of dienst" in f
+               for f in beslissen.beslissen(wiki, schrijven=False).fouten)
+
+
+def test_dienst_zonder_grondslag_krijgt_melding_en_staat_op_de_lijst(wiki):
+    """Een UPL-dienst zonder landelijke grondslag: `beslist.zonder_grondslag`, een melding op de pagina, de lijst
+    elementpaginas/overig/zonder-grondslag.md en een signaal zolang de procesarchitectuur-terugmelding ontbreekt."""
+    from llmwiki import sources
+
+    upl = "2025-vng-upl-test"
+    origineel = wiki.parent.parent.parent / f"{upl}.md"
+    origineel.write_text(f"# {upl}\n", encoding="utf-8")
+    sources.add(wiki.parent.parent, upl, origineel, titel=upl, tags=["test"], brontype="informatiemodel")
+    pad = wiki / "onderwerpen/test/bronduidingen/informatiemodel" / f"{upl}.md"
+    pad.parent.mkdir(parents=True, exist_ok=True)
+    pad.write_text(f"---\nid: {upl}\ntype: bronduiding\nonderwerp: test\nbronnen: [{upl}]\n---\n\n# {upl}\n\n"
+                   f"Bron: [tekst](../../../../../../sources/raw/{upl}.md)\n", encoding="utf-8")
+    afbakening = beoordeling.laad(wiki / "onderwerpen/test/afbakening.yaml")
+    afbakening["bronnen"].append(upl)
+    beoordeling.schrijf(wiki / "onderwerpen/test/afbakening.yaml", afbakening)
+    dienst = _element("Legaliseren", DIENST, afnemer="extern", domein="Publieksdiensten")
+    for k in dienst["kenmerken"].values():
+        if k.get("bronnen"):
+            k["bronnen"] = [upl]
+    dienst["beschrijving"] = ["Een UPL-dienst."]
+    _schrijf(wiki, "legaliseren", dienst)
+    res = _beslissen(wiki)
+    assert _lees(wiki, "legaliseren")["beslist"]["zonder_grondslag"] is True
+    assert any(w.startswith("legaliseren: UPL-dienst zonder landelijke grondslag zonder procesarchitectuur-terugmelding")
+               for w in res.waarschuwingen)
+    pagina = (wiki / _lees(wiki, "legaliseren")["beslist"]["pad"]).read_text(encoding="utf-8")
+    assert "**Zonder landelijke wettelijke grondslag.**" in pagina and "nog niet teruggemeld" in pagina
+    lijst = (wiki / render.ZONDER_GRONDSLAG).read_text(encoding="utf-8")
+    assert "| Test | ontbreekt |" in lijst and "Legaliseren" in lijst
+    # een tweede run vindt niets verouderd (de vlag blijft staan)
+    assert beslissen.beslissen(wiki, schrijven=False).gewijzigd == []

@@ -27,6 +27,8 @@ bronnen:
 
 **Status: goedgekeurd** door de redacteur.
 
+**Zonder landelijke wettelijke grondslag.** Een UPL-dienst die geen wettelijke taak is: ze wordt beschreven voor zover mogelijk, zonder processen, objecten, gebeurtenissen of rollen, is teruggemeld aan de procesarchitectuur ([nr. 24](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md)) en gaat niet naar het GEMMA-model ([lijst](../../../../overig/zonder-grondslag.md)).
+
 ## Betekenis
 
 ### Definitie
@@ -85,7 +87,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 |---|---|---|---|
 | [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | omvat *aggregatie* | Asverstrooiing | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Model-APV](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) (UPL nr. 32; Model-APV art. 5:36) |
 | [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | realiseert *realisatie* | Asverstrooiing | [Model-APV](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (Model-APV art. 5:36; UPL nr. 32) |
-| [Model-APV](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-apv.md) | is grondslag voor *associatie (gericht)* | Asverstrooiing | [Model-APV](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 5:36 lid 3; UPL nr. 32) |
+| [Model-APV](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-apv.md) | werkt uit voor *associatie (gericht)* | Asverstrooiing | [Model-APV](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 5:36 lid 3; UPL nr. 32) |
 
 ## Herkomst
 
@@ -101,6 +103,10 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 24](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md) (grondslag, open): **UPL:** asverstrooiing heeft als grondslag art. 5:36 van de Model-APV ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), nr. 32). **Bevinding:** de Model-APV is een model dat gemeenten invullen en waarvan ze bepalingen mogen weglaten; het is geen landelijke wettelijke grondslag ([2023-vng-model-apv](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md)). De Wet op de lijkbezorging staat het verstrooien door de nabestaande die de zorg voor de asbus heeft toe zonder toestemming van de gemeente, en geeft burgemeester en wethouders alleen een vergunning voor een terrein om permanent as op te verstrooien ([2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), art. 66a lid 2, 66b). De ontheffing of toestemming voor incidentele asverstrooiing regelt de gemeente zelf, in haar APV en beheersverordening ([2025-groningen-algemene-plaatselijke-verordening](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md), art. 5:27; [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), art. 21). Het is daarmee geen wettelijke taak. GEMMA beschrijft de dienst, maar neemt haar niet op in het GEMMA-model. **Voorstel:** vermeld bij het UPL-product dat er geen landelijke wettelijke grondslag is en dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), en noem art. 5:36 van de Model-APV als uitwerking, niet als grondslag.
 
 GEMMA-terugmeldingen:
 

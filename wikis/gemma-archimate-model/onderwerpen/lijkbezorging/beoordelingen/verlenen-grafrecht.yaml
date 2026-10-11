@@ -174,7 +174,7 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Graf aanvragen (Groningen art. 16; VNG-model art. 15).
+    onderbouwing: Realiseert de dienst Grafuitgifte (Groningen art. 16; VNG-model art. 15).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -273,7 +273,7 @@ relaties:
   - 2026-vng-retributies
   vindplaats: Gemeentewet art. 229 lid 1 onder a, b; VNG § Lijkbezorgingsrechten
 - soort: realisatie
-  naar: graf-aanvragen
+  naar: grafuitgifte
   naam: realiseert
   ggm_match: geen
   bronnen:

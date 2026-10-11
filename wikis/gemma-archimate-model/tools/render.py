@@ -12,9 +12,11 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 | `<map van het type>/<taakveld>/<beleidsdomein>/<id>.md` (pad uit `beslist.pad`) | Elementpagina |
 | `onderwerpen/<onderwerp>/begrippen.md` | Begrippenlijst: per begrip de uitkomst, de reden, de herkomst en de GGM-entiteit, en de besluiten over het onderwerp |
 | `onderwerpen/<onderwerp>/overzicht.md` | Overzicht per onderwerp: de views op de indelingen (processen naar kernobject en naar soort werk, ketensamenwerking, objecten, functies, doelgroepen, producten en diensten, beleidskaders) |
+| `elementpaginas/overig/indelingen/{onderwerpen,beleidsdomeinen,bedrijfsfuncties}.md` | De indelingen as-is (onderwerpen uit de afbakeningen; beleidsdomeinen en functiehiërarchie uit het GEMMA-model), per knoop de elementen van de wiki eronder, met dekking (tools/indelingspaginas.py) |
 | `modellen/ggm/terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
 | `modellen/gemma/terugmeldingen/procesarchitectuur.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel) |
 | `modellen/gemma/terugmeldingen/gemma-team.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model |
+| `elementpaginas/overig/zonder-grondslag.md` | De UPL-diensten zonder landelijke wettelijke grondslag (`beslist.zonder_grondslag`), met hun procesarchitectuur-terugmelding; de export laat ze weg |
 | `ter-beoordeling.md` | Wat wacht op akkoord (review), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 | `kennismodel/**` | Het kennismodel uit tools/kennismodel.py (behalve `kennismodel/modelleerregels.md`, met de hand) |
@@ -47,11 +49,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import bepaal_type  # noqa: E402
 import gam_gemeen  # noqa: E402
+import indelingspaginas  # noqa: E402
 import kennismodel  # noqa: E402
 from llmwiki import beoordeling, frontmatter, logbook, paths  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
 TER_BEOORDELING = Path("ter-beoordeling.md")
+ZONDER_GRONDSLAG = Path("elementpaginas/overig/zonder-grondslag.md")
 VOORTGANG = Path("voortgang.md")
 TERUGMELDINGEN = gam_gemeen.GGM_TERUGMELDINGEN
 TERUGMELDLIJST = gam_gemeen.GGM_TERUGMELDLIJST
@@ -236,6 +240,26 @@ def _links(w: Wiki, van: str, ids: list[str]) -> str:
     return ", ".join(w.link(van, i) for i in sorted(dict.fromkeys(ids), key=lambda i: w.naam(i).lower()))
 
 
+def _gemma_boven(w: Wiki, bid: str) -> str:
+    """De naam van de bovenliggende GEMMA-functie (`gemma_functie`), cursief: ze heeft geen pagina."""
+    gf = (w.begrippen[bid].get("beslist") or {}).get("gemma_functie")
+    return f"*{gf['gemma_naam']}*" if gf else ""
+
+
+def _gemma_functie_regel(w: Wiki, van: str, d: dict) -> str | None:
+    """De bovenliggende GEMMA-functie (`gemma_functie`), een knoop zonder pagina, met de paden in de hiërarchie en waar
+    de plek op steunt."""
+    f, gf = d.get("gemma_functie"), (d.get("beslist") or {}).get("gemma_functie")
+    if not f or not gf:
+        return None
+    paden = [p for p in gf.get("gemma_paden", []) if not d.get("domein") or p.startswith(f"{d['domein']} › ")] \
+        or gf.get("gemma_paden", [])
+    steun = f"GEMMA-relatie `{f['gemma_relatie']}`" if f.get("gemma_relatie") \
+        else f"bron: {w.bronnen(van, f.get('bronnen', []), f.get('vindplaats'))}"
+    return (f"- **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *{gf['gemma_naam']}* (geen element van de wiki; "
+            f"{'; '.join(paden)}), {steun}.")
+
+
 def indelingen(w: Wiki, van: str, bid: str, d: dict) -> list[str]:
     """De plaats van het element in de indelingen: boven, onder, kernobject, GEMMA, bediening en gebeurtenissen."""
     u = d["beslist"]["uitkomst"]
@@ -297,6 +321,8 @@ def indelingen(w: Wiki, van: str, bid: str, d: dict) -> list[str]:
                           "(een functie aggregeert geen product).")
         if boven:
             regels.append(f"- **Functie-indeling naar domein, onderdeel van**: {_links(w, van, boven)}.")
+        if _gemma_functie_regel(w, van, d):
+            regels.append(_gemma_functie_regel(w, van, d))
         if onder:
             regels.append(f"- **Functie-indeling naar domein, omvat**: {_links(w, van, onder)}.")
     if u.get("paginatype") == "bedrijfsfunctie" and w.uitgaand(bid, "bediening"):
@@ -361,6 +387,8 @@ def element_pagina(w: Wiki, bid: str) -> str:
     meta = {k: v for k, v in meta.items() if v not in ([], {}, None, "")}
 
     r = [f"# {d['begrip']}", "", _gegenereerd(f"de beoordeling {bid}.yaml"), "", STATUSREGEL[status], ""]
+    if a.get("zonder_grondslag"):
+        r += [_zonder_grondslag_regel(w, van, bid), ""]
     discussie = [f"- {w.tekst(van, x)}" for x in a.get("open", []) + d.get("vragen", [])]
     r += _sectie("Ter discussie", discussie + ([""] if discussie else []))
 
@@ -656,7 +684,8 @@ def overzicht(w: Wiki, oid: str) -> str:
                               *([f"**Nog zonder niveau**: {_links(w, van, overig)}.", ""] if overig else [])])
 
     functies = [[w.link(van, f), _links(w, van, [v for v in w.inkomend_van(f, "aggregatie")
-                                                 if w.paginatype(v) == "bedrijfsfunctie"]) or w.begrippen[f].get("domein") or "—",
+                                                 if w.paginatype(v) == "bedrijfsfunctie"]) or _gemma_boven(w, f)
+                 or w.begrippen[f].get("domein") or "—",
                  _links(w, van, w.uitgaand(f, "bediening")) or "—"] for f in van_type("bedrijfsfunctie")]
     r += _sectie("Functies", _tabel(["Functie", "Onderdeel van", "Bedient"], functies) if functies else [])
 
@@ -671,7 +700,8 @@ def overzicht(w: Wiki, oid: str) -> str:
 
     aanbod = [b for b in eigen if w.paginatype(b) in ("product", "dienst")]
     rijen = [[w.link(van, b), w.paginatype(b), w.begrippen[b].get("domein", "—"),
-              _links(w, van, [x for x in w.inkomend_van(b, "aggregatie") if w.paginatype(x) == "bedrijfsfunctie"]) or "—",
+              _links(w, van, [x for x in w.inkomend_van(b, "aggregatie") if w.paginatype(x) == "bedrijfsfunctie"])
+              or _gemma_boven(w, b) or "—",
               w.begrippen[b].get("afnemer", "—"),
               _links(w, van, [x for x in w.inkomend_van(b, "realisatie") if w.paginatype(x) == "bedrijfsproces"]) or "—"] for b in aanbod]
     r += _sectie("Producten en diensten", _tabel(["Element", "Type", "Domein", "Functie", "Afnemer", "Geleverd door"], rijen) if rijen else [])
@@ -807,6 +837,39 @@ def gemma_terugmeldlijst(w: Wiki) -> str:
     return _pagina(meta, r)
 
 
+def _pa_meldingen(w: Wiki, bid: str) -> list[dict]:
+    return sorted((m for m in w.pa_terugmeldingen if bid in (m.get("elementen") or []) and m.get("status") != "afgewezen"),
+                  key=lambda m: m["nummer"])
+
+
+def _zonder_grondslag_regel(w: Wiki, van: str, bid: str) -> str:
+    """De melding op de pagina van een UPL-dienst zonder landelijke wettelijke grondslag (regel Wettelijke grondslag)."""
+    meldingen = _pa_meldingen(w, bid)
+    gemeld = (f"teruggemeld aan de procesarchitectuur ([nr. {', '.join(str(m['nummer']) for m in meldingen)}]"
+              f"({w.rel(van, PA_TERUGMELDLIJST)}))" if meldingen else "nog niet teruggemeld aan de procesarchitectuur")
+    return (f"**Zonder landelijke wettelijke grondslag.** Een UPL-dienst die geen wettelijke taak is: ze wordt beschreven "
+            f"voor zover mogelijk, zonder processen, objecten, gebeurtenissen of rollen, is {gemeld} en gaat niet naar het "
+            f"GEMMA-model ([lijst]({w.rel(van, ZONDER_GRONDSLAG)})).")
+
+
+def zonder_grondslag(w: Wiki) -> str:
+    """De UPL-diensten zonder landelijke wettelijke grondslag, met hun procesarchitectuur-terugmelding."""
+    van = ZONDER_GRONDSLAG.as_posix()
+    meta = {"id": "zonder-grondslag", "type": "lijst", "titel": "Zonder grondslag"}
+    r = ["# Zonder grondslag", "", _gegenereerd("de beoordelingen (beslist.zonder_grondslag)"), "",
+         "De UPL-diensten zonder landelijke wettelijke grondslag: geen bron uit de europese-regelgeving of de "
+         "rijksregelgeving en geen beleidskader van de EU of het Rijk dat er grondslag voor is; een VNG-model is nooit "
+         "grondslag. Zo'n dienst is geen wettelijke taak. De wiki beschrijft haar voor zover mogelijk, zonder processen, "
+         "objecten, gebeurtenissen of rollen, meldt haar terug aan de procesarchitectuur en exporteert haar niet naar het "
+         "GEMMA-model.", ""]
+    rijen = [[w.link(van, bid), w.onderwerpen.get(gam_gemeen.thuis(d), {}).get("naam", gam_gemeen.thuis(d)),
+              ", ".join(f"[{m['nummer']}]({w.rel(van, PA_TERUGMELDLIJST)})" for m in _pa_meldingen(w, bid)) or "ontbreekt"]
+             for bid, d in sorted(w.begrippen.items(), key=lambda x: x[1]["begrip"].lower())
+             if (d.get("beslist") or {}).get("zonder_grondslag") and w.pad(bid)]
+    r += _sectie("Diensten", _tabel(["Dienst", "Onderwerp", "Terugmelding"], rijen) if rijen else ["Geen.", ""])
+    return _pagina(meta, r)
+
+
 def ter_beoordeling(w: Wiki) -> str:
     van = TER_BEOORDELING.as_posix()
     meta = {"id": "ter-beoordeling", "type": "lijst", "titel": "Ter beoordeling"}
@@ -907,6 +970,15 @@ def render(wiki_root: Path = WIKI_ROOT) -> dict[str, str]:
     uit[PA_TERUGMELDLIJST.as_posix()] = pa_terugmeldlijst(w)
     if w.gemma_terugmeldingen:
         uit[GEMMA_TERUGMELDLIJST.as_posix()] = gemma_terugmeldlijst(w)
+    model = gam_gemeen.model_json(wiki_root, "gemma")
+    if model.exists():
+        import gemma
+        gemma_data = gemma.laad(model)
+    else:
+        gemma_data = None
+    for naam, (meta, regels) in indelingspaginas.paginas(w, gemma_data).items():
+        uit[indelingspaginas.pad(naam)] = _pagina(meta, regels)
+    uit[ZONDER_GRONDSLAG.as_posix()] = zonder_grondslag(w)
     uit[TER_BEOORDELING.as_posix()] = ter_beoordeling(w)
     uit[VOORTGANG.as_posix()] = voortgang(w)
     uit.update(kennismodel.paginas())
@@ -922,6 +994,8 @@ def beheerd(wiki_root: Path) -> set[str]:
     bestaand = {p.relative_to(wiki_root).as_posix() for m in mappen for p in (wiki_root / m).rglob("*.md")} - handmatig
     for naam in ("begrippen.md", "overzicht.md"):
         bestaand |= {p.relative_to(wiki_root).as_posix() for p in (wiki_root / gam_gemeen.ONDERWERPEN).glob(f"*/{naam}")}
+    bestaand |= {p.relative_to(wiki_root).as_posix() for p in (wiki_root / indelingspaginas.MAP).glob("*.md")}
+    bestaand |= {ZONDER_GRONDSLAG.as_posix()} if (wiki_root / ZONDER_GRONDSLAG).exists() else set()
     return bestaand
 
 

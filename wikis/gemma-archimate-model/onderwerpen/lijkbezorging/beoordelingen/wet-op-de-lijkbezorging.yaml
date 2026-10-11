@@ -312,13 +312,6 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 67, 68
 - soort: associatie (gericht)
-  naar: graf-aanvragen
-  naam: is grondslag voor
-  ggm_match: geen
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  vindplaats: art. 23 lid 2, 28 lid 1
-- soort: associatie (gericht)
   naar: grafuitgifte
   naam: is grondslag voor
   ggm_match: geen

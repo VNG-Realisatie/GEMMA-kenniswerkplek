@@ -217,6 +217,11 @@ beleidsdomein: Begraafplaatsen en crematoria
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+gemma_functie:
+  id: id-9a066e58-f6b8-4761-8159-2f53b2ccf8c7
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: UPL nr. 438 (GEMMA-domein Fysieke leefomgeving)
 relaties:
 - soort: bediening
   naar: degene-die-in-de-lijkbezorging-voorziet
@@ -249,4 +254,17 @@ beslist:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-rvo-aangifte-en-akte-van-overlijden
   herkomst: rijksregelgeving
+  gemma_functie:
+    gemma_id: id-9a066e58-f6b8-4761-8159-2f53b2ccf8c7
+    gemma_naam: Producten- en dienstenrealisatie fysieke leefomgeving
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen de fysieke leefomgeving.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 9a066e58-f6b8-4761-8159-2f53b2ccf8c7
+      Toelichting: Bijv. bodembeheer, afvalinzameling, begraafplaatsexploitatie.
+    gemma_paden:
+    - Fysieke leefomgeving › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving
+    - Uitvoering › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving
   pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlof-tot-begraven.md

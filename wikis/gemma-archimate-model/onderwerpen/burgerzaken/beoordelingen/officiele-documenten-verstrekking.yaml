@@ -33,9 +33,10 @@ kenmerken:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   gedrag:
     waarde: ja
-    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
+    onderbouwing: 'Een groep van activiteiten: de burgemeester verstrekt nationale paspoorten en andere reisdocumenten (Paspoortwet art. 40 lid 1) en geeft rijbewijzen af (Wegenverkeerswet 1994 art. 116 lid 1).'
     bronnen:
-    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -219,6 +220,9 @@ gemma:
   id: id-3668255a-275b-4c9a-9b61-f4a475600ed0
   sterkte: exact
   onderbouwing: 'Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Officiële documenten verstrekking.'
+gemma_functie:
+  id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+  gemma_relatie: id-1f944d4b-41d8-40cb-be75-8706806e07cc
 relaties:
 - soort: bediening
   naar: beheren-reisdocumenten
@@ -334,7 +338,6 @@ beslist:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-vng-gemma-bedrijfsfuncties
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   herkomst: rijksregelgeving
@@ -347,4 +350,16 @@ beslist:
     gemma_eigenschappen:
       Object ID: 3668255a-275b-4c9a-9b61-f4a475600ed0
       Toelichting: Bijv. rijbewijzen, identiteitsbewijzen en reisdocumenten
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md

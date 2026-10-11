@@ -699,3 +699,103 @@ def test_relatie_buiten_het_kennismodel_gaat_niet_mee_en_komt_in_het_rapport(tmp
     assert not [e for e in root.iter("element") if e.get(ae.XSI) == "archimate:AssociationRelationship"
                 and e.get("source") == ae.vast_id("element", "behandelen-aanvraag")]
     assert "## Weggelaten relaties" in ae.rapport_md(uit, "t", "b", False)
+
+
+GEMMA_FUNCTIES = """<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="GEMMA" id="id-gemma" version="5.0.0">
+  <folder name="Business" id="f-business" type="business">
+    <folder name="Bedrijfsfuncties" id="f-bf">
+      <element xsi:type="archimate:BusinessFunction" name="Uitvoering fysieke leefomgeving" id="id-uitvoering">
+        <property key="GEMMA type" value="Bedrijfsfunctie domein"/>
+      </element>
+      <element xsi:type="archimate:BusinessFunction" name="Exploitatie fysieke leefomgeving" id="id-exploitatie"/>
+      <element xsi:type="archimate:BusinessFunction" name="Exploiteren van begraafplaatsen" id="id-begraafplaatsen"/>
+      <element xsi:type="archimate:BusinessFunction" name="Exploiteren van havens" id="id-haven"/>
+      <element xsi:type="archimate:BusinessFunction" name="Realisatie fysieke leefomgeving" id="id-realisatie"/>
+    </folder>
+  </folder>
+  <folder name="Other" id="f-other" type="other">
+    <folder name="Domein en doelgroep" id="f-dd">
+      <folder name="Domeinen" id="f-domeinen">
+        <element xsi:type="archimate:Grouping" name="Fysieke leefomgeving" id="id-domein-fl"/>
+      </folder>
+    </folder>
+  </folder>
+  <folder name="Relations" id="f-rel" type="relations">
+    <element xsi:type="archimate:AggregationRelationship" id="r-dom" source="id-domein-fl" target="id-uitvoering"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r-expl" source="id-uitvoering" target="id-exploitatie"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r-begr" source="id-exploitatie" target="id-begraafplaatsen"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r-haven" source="id-exploitatie" target="id-haven"/>
+    <element xsi:type="archimate:AggregationRelationship" id="r-real" source="id-uitvoering" target="id-realisatie"/>
+  </folder>
+</archimate:model>
+"""
+
+
+def _functie_begrippen():
+    def element(naam, atype, paginatype, **extra):
+        data = _begrip(naam, atype, status="review", **extra)
+        data["beslist"]["uitkomst"]["paginatype"] = paginatype
+        return data
+
+    functie = element("Exploiteren van begraafplaatsen", "business-function", "bedrijfsfunctie",
+                      gemma_id="id-begraafplaatsen", domein="Fysieke leefomgeving",
+                      gemma_functie={"id": "id-exploitatie", "gemma_relatie": "r-begr"})
+    dienst = element("Grafonderhoud", "business-service", "dienst", domein="Fysieke leefomgeving",
+                     gemma_functie={"id": "id-realisatie", "bronnen": ["2026-bron"], "vindplaats": "art. 23"})
+    return {"exploiteren": functie, "grafonderhoud": dienst}
+
+
+def _export_functies(tmp_path, volledig=False, begrippen=None):
+    pad = tmp_path / "gemma-functies.archimate"
+    pad.write_text(GEMMA_FUNCTIES, encoding="utf-8")
+    uit = ae.bouw(gemma.parse(pad), begrippen or _functie_begrippen(), "2026-vng-gemma", "2026-10-11T12:00:00", True, "",
+                  WIKI_YAML, volledig=volledig)
+    return uit, ET.fromstring(uit.xml)
+
+
+def test_gemma_functie_wordt_een_aggregatie_vanaf_de_gemma_functie_met_de_tak_tot_het_domein(tmp_path):
+    uit, root = _export_functies(tmp_path)
+    assert not uit.fouten, uit.fouten
+    # de functie hangt met de GEMMA-relatie onder haar ouder: hetzelfde id, niet opnieuw gemaakt
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", "id-exploitatie", "id-begraafplaatsen")
+    assert agg.get("id") == "r-begr" and _props(agg)["wiki-gemma-model herkomst"] == "gekoppeld"
+    # de dienst steunt op een bron: een nieuwe relatie, met de bron en de vindplaats als eigenschap
+    (nieuw,) = _relaties_van(root, "archimate:AggregationRelationship", "id-realisatie", ae.vast_id("element", "grafonderhoud"))
+    assert _props(nieuw)["wiki-gemma-model bronnen"] == "2026-bron" and _props(nieuw)["wiki-gemma-model vindplaats"] == "art. 23"
+    assert _props(nieuw)["wiki-gemma-model indeling"] == "Functie-indeling naar domein"
+    # de gebruikte takken gaan letterlijk mee tot en met het domein, zonder wiki-eigenschappen
+    for gid in ("id-exploitatie", "id-uitvoering", "id-realisatie", "id-domein-fl"):
+        assert not any(k.startswith("wiki-gemma-model") for k in _props(_el(root, gid)))
+    assert _pad(root, "id-domein-fl") == [("Other", "f-other"), ("Domein en doelgroep", "f-dd"), ("Domeinen", "f-domeinen")]
+    for rid in ("r-dom", "r-expl", "r-real"):
+        assert _el(root, rid).get("source") and not any(k.startswith("wiki-gemma-model indeling") for k in _props(_el(root, rid)))
+    # een knoop die niet in een gebruikte tak ligt, gaat niet mee, tenzij --volledig
+    assert not [e for e in root.iter("element") if e.get("id") == "id-haven"]
+    assert uit.functiehierarchie == (5, 4, 4)
+
+
+def test_volledig_neemt_de_hele_functiehierarchie_mee(tmp_path):
+    uit, root = _export_functies(tmp_path, volledig=True)
+    assert _el(root, "id-haven").get("name") == "Exploiteren van havens"
+    assert _el(root, "r-haven").get("target") == "id-haven"
+    assert uit.functiehierarchie == (5, 4, 5)
+    assert "de hele hiërarchie, `--volledig`" in ae.rapport_md(uit, "2026-10-11T12:00:00", "2026-vng-gemma", True)
+
+
+def test_gemma_functie_dat_niet_in_het_model_staat_is_een_fout(tmp_path):
+    begrippen = _functie_begrippen()
+    begrippen["grafonderhoud"]["gemma_functie"]["id"] = "id-weg"
+    uit, _ = _export_functies(tmp_path, begrippen=begrippen)
+    assert any("gemma_functie id-weg staat niet in het ingelezen GEMMA-model" in f for f in uit.fouten)
+
+
+def test_dienst_zonder_grondslag_gaat_niet_mee_en_staat_in_het_rapport(tmp_path):
+    begrippen = _begrippen()
+    begrippen["legaliseren"] = _begrip("Legaliseren", "business-service")
+    begrippen["legaliseren"]["beslist"]["zonder_grondslag"] = True
+    uit, root = _export(tmp_path, begrippen=begrippen)
+    assert not any(e.get("name") == "Legaliseren" for e in root.iter("element"))
+    assert uit.zonder_grondslag == ["Legaliseren"]
+    rapport = ae.rapport_md(uit, "2026-10-11T12:00:00", "2026-vng-gemma", False)
+    assert "## Zonder grondslag" in rapport and "- Legaliseren" in rapport

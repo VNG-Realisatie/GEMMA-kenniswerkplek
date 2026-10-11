@@ -26,6 +26,8 @@ bronnen:
 
 **Status: goedgekeurd** door de redacteur.
 
+**Zonder landelijke wettelijke grondslag.** Een UPL-dienst die geen wettelijke taak is: ze wordt beschreven voor zover mogelijk, zonder processen, objecten, gebeurtenissen of rollen, is teruggemeld aan de procesarchitectuur ([nr. 25](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md)) en gaat niet naar het GEMMA-model ([lijst](../../../../overig/zonder-grondslag.md)).
+
 ## Betekenis
 
 ### Definitie
@@ -80,7 +82,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 |---|---|---|---|
 | [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | omvat *aggregatie* | Gedenkteken plaatsingsvergunning | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 142; GEMMA-toelichting (vergunningen voor plaatsen van grafstenen)) |
 | [Exploiteren van begraafplaatsen](../../../bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md) | realiseert *realisatie* | Gedenkteken plaatsingsvergunning | [VNG Model-beheersverordening begraafplaatsen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (VNG-model art. 19; UPL nr. 142) |
-| [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md) | is grondslag voor *associatie (gericht)* | Gedenkteken plaatsingsvergunning | [VNG Model-beheersverordening begraafplaatsen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 19; UPL nr. 142) |
+| [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md) | werkt uit voor *associatie (gericht)* | Gedenkteken plaatsingsvergunning | [VNG Model-beheersverordening begraafplaatsen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 19; UPL nr. 142) |
 
 ## Herkomst
 
@@ -95,6 +97,10 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 25](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md) (grondslag, open): **UPL:** gedenkteken plaatsingsvergunning heeft als grondslag art. 19 van de Model beheersverordening begraafplaatsen ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), nr. 142). **Bevinding:** de vergunning voor een grafbedekking staat alleen in de beheersverordening van de gemeente, die het VNG-model uitwerkt ([2010-vng-model-beheersverordening-begraafplaatsen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), art. 19; [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), art. 22). Een VNG-model is geen landelijke wettelijke grondslag, en de Wet op de lijkbezorging regelt de grafbedekking niet ([2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md)). Het is daarmee geen wettelijke taak. GEMMA beschrijft de dienst, maar neemt haar niet op in het GEMMA-model. **Voorstel:** vermeld bij het UPL-product dat er geen landelijke wettelijke grondslag is en dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), en noem art. 19 van de Model beheersverordening begraafplaatsen als uitwerking, niet als grondslag.
 
 ### Besluiten redacteur
 

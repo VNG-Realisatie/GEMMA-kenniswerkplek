@@ -63,7 +63,7 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, onderdeel van**: [Producten- en dienstenrealisatie publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md).
+- **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Producten- en dienstenrealisatie publieksdiensten* (geen element van de wiki; Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten), bron: [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 434 (GEMMA-domein Publieksdiensten)).
 - **Afnemer**: extern.
 - **Domein**: Publieksdiensten.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
@@ -93,7 +93,6 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Behandelen aanvraag verklaring omtrent het gedrag](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-verklaring-omtrent-het-gedrag.md) | realiseert *realisatie* | Verklaring omtrent gedrag aanvragen | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht VOG aanvragen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) (UPL nr. 434; Utrecht regel 21-55) |
-| [Producten- en dienstenrealisatie publieksdiensten](../../../bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Verklaring omtrent gedrag aanvragen | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 434 (GEMMA-domein Publieksdiensten)) |
 | [Wet justitiële en strafvorderlijke gegevens](../../../../motivatie/beleidskaders/rijksregelgeving/wet-justitiele-en-strafvorderlijke-gegevens.md) | is grondslag voor *associatie (gericht)* | Verklaring omtrent gedrag aanvragen | [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 28, 30) |
 
 ## Herkomst

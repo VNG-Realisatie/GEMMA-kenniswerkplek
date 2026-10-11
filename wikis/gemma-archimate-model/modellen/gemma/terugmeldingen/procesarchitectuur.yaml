@@ -120,8 +120,8 @@ terugmeldingen:
   - grafonderhoud
   bevinding:
   - '**UPL:** grafonderhoud heeft als grondslag het Begraafplaatsenbeleid 2020-2030 van één gemeente (CVDR659831), geen landelijke regeling of modelverordening (2025-vng-upl-producten-en-diensten-extern, nr. 163).'
-  - '**Bevinding:** een beleidsstuk van één gemeente is geen grondslag die voor alle gemeenten geldt. De Model beheersverordening regelt in art. 20 het onderhoud dat de gemeente altijd doet (eenmaal per jaar schoonmaken, winterharde beplanting) en in art. 21 het onderhoud door de rechthebbende (2010-vng-model-beheersverordening-begraafplaatsen). Het betaalde onderhoud op verzoek van de rechthebbende staat er niet in, wel in verordeningen van afzonderlijke gemeenten (2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, art. 23, 24). Een landelijke grondslag voor het onderhoud door de gemeente is er niet; de Wet op de lijkbezorging legt alleen de onderhoudsplicht bij de rechthebbende als die niet bij de houder ligt (2026-rijk-wet-op-de-lijkbezorging-wettekst, art. 28 lid 4). GEMMA houdt het product, met de Model beheersverordening als grondslag, en werkt het niet uit in processen.'
-  - '**Voorstel:** noem in de UPL als grondslag art. 20 en 21 van de Model beheersverordening begraafplaatsen; neem het onderhoud op verzoek en tegen betaling op in de modelverordening, of beschrijf het product als het minimale onderhoud uit art. 20.'
+  - '**Bevinding:** een beleidsstuk van één gemeente is geen grondslag die voor alle gemeenten geldt. De Model beheersverordening regelt in art. 20 het onderhoud dat de gemeente altijd doet (eenmaal per jaar schoonmaken, winterharde beplanting) en in art. 21 het onderhoud door de rechthebbende (2010-vng-model-beheersverordening-begraafplaatsen). Het betaalde onderhoud op verzoek van de rechthebbende staat er niet in, wel in verordeningen van afzonderlijke gemeenten (2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, art. 23, 24). Een landelijke grondslag voor het onderhoud door de gemeente is er niet; de Wet op de lijkbezorging legt alleen de onderhoudsplicht bij de rechthebbende als die niet bij de houder ligt (2026-rijk-wet-op-de-lijkbezorging-wettekst, art. 28 lid 4). Een VNG-model is geen landelijke wettelijke grondslag. Het is daarmee geen wettelijke taak. GEMMA beschrijft de dienst, maar neemt haar niet op in het GEMMA-model.'
+  - '**Voorstel:** vermeld bij het UPL-product dat er geen landelijke wettelijke grondslag is en dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), en noem art. 20 en 21 van de Model beheersverordening begraafplaatsen als uitwerking, niet als grondslag; neem het onderhoud op verzoek en tegen betaling op in de modelverordening, of beschrijf het product als het minimale onderhoud uit art. 20.'
   nummer: 8
   status: open
 - type: grondslag
@@ -245,7 +245,7 @@ terugmeldingen:
   - legalisatie-handtekening
   bevinding:
   - '**UPL:** legalisatie handtekening heeft als grondslag art. 23 Wet griffierechten burgerlijke zaken (2025-vng-upl-producten-en-diensten-extern, nr. 226).'
-  - '**Bevinding:** art. 23 lid 2 regelt alleen het griffierecht voor de legalisatie van handtekeningen: een tarief, geen taak of bevoegdheid van de gemeente of de burgemeester (2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899, art. 23, 24). Een andere landelijke grondslag is niet gevonden, en ook geen VNG-modelverordening die de dienst regelt; gemeenten legaliseren namens de burgemeester zonder een artikel te noemen. GEMMA houdt het product omdat het in de UPL staat, maar werkt het niet uit in processen, objecten of rollen.'
+  - '**Bevinding:** art. 23 lid 2 regelt alleen het griffierecht voor de legalisatie van handtekeningen: een tarief, geen taak of bevoegdheid van de gemeente of de burgemeester (2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899, art. 23, 24). Een andere landelijke grondslag is niet gevonden, en ook geen VNG-modelverordening die de dienst regelt; gemeenten legaliseren namens de burgemeester zonder een artikel te noemen. Het is daarmee geen wettelijke taak. GEMMA beschrijft de dienst, maar neemt haar niet op in het GEMMA-model.'
   - '**Voorstel:** zoek de bevoegdheidsgrondslag van de burgemeester voor de legalisatie van een handtekening uit en neem die op in de UPL. Is er geen, vermeld dan dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), met de leges in de legesverordening, en noem de Wet griffierechten niet als grondslag.'
   nummer: 21
   status: open
@@ -269,3 +269,21 @@ terugmeldingen:
   - '**Voorstel:** vermeld bij het UPL-product dat alleen gemeenten met een RNI-loket het leveren, en verwijs naar de grondslag van de loketten (de afspraak of aanwijzing door de minister), zodat gemeenten zonder loket het product niet hoeven aan te bieden.'
   nummer: 23
   status: open
+- type: grondslag
+  elementen:
+  - asverstrooiing
+  bevinding:
+  - '**UPL:** asverstrooiing heeft als grondslag art. 5:36 van de Model-APV (2025-vng-upl-producten-en-diensten-extern, nr. 32).'
+  - '**Bevinding:** de Model-APV is een model dat gemeenten invullen en waarvan ze bepalingen mogen weglaten; het is geen landelijke wettelijke grondslag (2023-vng-model-apv). De Wet op de lijkbezorging staat het verstrooien door de nabestaande die de zorg voor de asbus heeft toe zonder toestemming van de gemeente, en geeft burgemeester en wethouders alleen een vergunning voor een terrein om permanent as op te verstrooien (2026-rijk-wet-op-de-lijkbezorging-wettekst, art. 66a lid 2, 66b). De ontheffing of toestemming voor incidentele asverstrooiing regelt de gemeente zelf, in haar APV en beheersverordening (2025-groningen-algemene-plaatselijke-verordening, art. 5:27; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, art. 21). Het is daarmee geen wettelijke taak. GEMMA beschrijft de dienst, maar neemt haar niet op in het GEMMA-model.'
+  - '**Voorstel:** vermeld bij het UPL-product dat er geen landelijke wettelijke grondslag is en dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), en noem art. 5:36 van de Model-APV als uitwerking, niet als grondslag.'
+  status: open
+  nummer: 24
+- type: grondslag
+  elementen:
+  - gedenkteken-plaatsingsvergunning
+  bevinding:
+  - '**UPL:** gedenkteken plaatsingsvergunning heeft als grondslag art. 19 van de Model beheersverordening begraafplaatsen (2025-vng-upl-producten-en-diensten-extern, nr. 142).'
+  - '**Bevinding:** de vergunning voor een grafbedekking staat alleen in de beheersverordening van de gemeente, die het VNG-model uitwerkt (2010-vng-model-beheersverordening-begraafplaatsen, art. 19; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, art. 22). Een VNG-model is geen landelijke wettelijke grondslag, en de Wet op de lijkbezorging regelt de grafbedekking niet (2026-rijk-wet-op-de-lijkbezorging-wettekst). Het is daarmee geen wettelijke taak. GEMMA beschrijft de dienst, maar neemt haar niet op in het GEMMA-model.'
+  - '**Voorstel:** vermeld bij het UPL-product dat er geen landelijke wettelijke grondslag is en dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), en noem art. 19 van de Model beheersverordening begraafplaatsen als uitwerking, niet als grondslag.'
+  status: open
+  nummer: 25

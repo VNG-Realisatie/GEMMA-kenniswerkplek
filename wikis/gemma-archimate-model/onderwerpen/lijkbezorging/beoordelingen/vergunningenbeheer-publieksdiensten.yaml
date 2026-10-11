@@ -21,19 +21,19 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie.
+    onderbouwing: 'Een eigen taak van de burgemeester, los van één ander begrip: na een arts te hebben gehoord een andere termijn stellen voor de begraving of crematie (Wet op de lijkbezorging art. 17 lid 1).'
     bronnen:
-    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor vergunningen.
+    onderbouwing: 'Hoort bij lijkbezorging: bedient Stellen andere termijn (Wet op de lijkbezorging art. 17 lid 1). Geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor vergunningen.'
     bronnen:
-    - 2026-vng-gemma-2026-10-02
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gedrag:
     waarde: ja
-    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
+    onderbouwing: Een groep van activiteiten, waaronder het stellen van een andere termijn voor de begraving of crematie door de burgemeester (Wet op de lijkbezorging art. 17 lid 1).
     bronnen:
-    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -83,7 +83,7 @@ kenmerken:
     waarde: ja
     onderbouwing: Groepeert het beheren en verlenen van vergunningen voor lokale activiteiten op grond van vergelijkbare kennis van aanvragen, toetsen en beslissen; geen eigen volgorde of doorlooptijd.
     bronnen:
-    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-vng-model-apv
   toestandsverandering:
     waarde: nee
@@ -221,6 +221,9 @@ gemma:
   id: id-b7e4786e-cff2-40a8-ac4b-6c48a0abfbe0
   sterkte: exact
   onderbouwing: 'Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Vergunningenbeheer Publieksdiensten.'
+gemma_functie:
+  id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+  gemma_relatie: id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc
 relaties:
 - soort: aggregatie
   naar: uitvaart-vervroegen-of-uitstellen
@@ -259,8 +262,6 @@ beslist:
   - 2023-vng-model-apv
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-vng-gemma-bedrijfsfuncties
-  - 2026-vng-gemma-2026-10-02
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: rijksregelgeving
   gemma:
@@ -272,4 +273,16 @@ beslist:
     gemma_eigenschappen:
       Object ID: b7e4786e-cff2-40a8-ac4b-6c48a0abfbe0
       Toelichting: Bijv. vergunningen voor loterijen, rommelmarkten, collectes, luchtbalonnen, textielinzameling. Andere domeinen waar andere typen vergunningen worden beheerd zijn de domeinen 'Veiligheid' en 'Ruimte'.
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/vergunningenbeheer-publieksdiensten.md

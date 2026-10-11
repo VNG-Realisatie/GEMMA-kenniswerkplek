@@ -218,6 +218,7 @@ besluiten:
 - datum: '2026-10-08'
   besluit: 'Is grondslag voor alleen bij UPL-producten zonder landelijke wettelijke grondslag (Gedenkteken plaatsingsvergunning, Grafonderhoud). De relaties naar Verlenen grafrecht, Vervallen verklaren grafrecht, Ruimen graf, Graf aanvragen en Grafuitgifte heten ''werkt uit voor'': daar is de Wet op de lijkbezorging de grondslag en regelt de verordening de uitvoering (regel Wettelijke grondslag).'
   gevolg: verwerkt
+  stand: 'herzien 2026-10-11: een VNG-model is nooit grondslag; ook de relaties naar Gedenkteken plaatsingsvergunning en Grafonderhoud heten werkt uit voor. Of de Model beheersverordening beleidskader blijft, is een open punt (regel Bronvoorrang)'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -232,13 +233,6 @@ relaties:
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   vindplaats: art. 15, 17
-- soort: associatie (gericht)
-  naar: graf-aanvragen
-  naam: werkt uit voor
-  ggm_match: geen
-  bronnen:
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  vindplaats: art. 15
 - soort: associatie (gericht)
   naar: vervallen-verklaren-grafrecht
   naam: werkt uit voor
@@ -278,7 +272,7 @@ relaties:
   vindplaats: art. 11, 13–15; UPL nr. 165
 - soort: associatie (gericht)
   naar: gedenkteken-plaatsingsvergunning
-  naam: is grondslag voor
+  naam: werkt uit voor
   ggm_match: geen
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -286,7 +280,7 @@ relaties:
   vindplaats: art. 19; UPL nr. 142
 - soort: associatie (gericht)
   naar: grafonderhoud
-  naam: is grondslag voor
+  naam: werkt uit voor
   ggm_match: geen
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen

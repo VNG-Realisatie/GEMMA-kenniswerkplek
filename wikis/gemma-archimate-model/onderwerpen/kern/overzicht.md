@@ -10,12 +10,6 @@ naam: Kern
 
 De views op de indelingen voor het onderwerp [Kern](begrippen.md). Per element de pagina met de details.
 
-## Functies
-
-| Functie | Onderdeel van | Bedient |
-|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](../../elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) | [Uitvoering Publieksdiensten](../../elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/uitvoering-publieksdiensten.md) | — |
-
 ## Doelgroepen
 
 - **ketenpartners**: rol: [Ketenpartner](../../elementpaginas/bedrijfsarchitectuur/rollen/ketenpartner.md).

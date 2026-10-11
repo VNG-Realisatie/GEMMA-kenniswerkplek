@@ -47,7 +47,6 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 - **Procesniveau**: bedrijfsproces.
 - **Procesindeling naar kernobject, onderdeel van**: [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md), [Toestaan lijkbezorging](toestaan-lijkbezorging.md).
 - **Kernobject**: [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md).
-- **Functie-indeling naar domein, bediend door**: [Producten- en dienstenrealisatie fysieke leefomgeving](../../../bedrijfsfuncties/fysieke-leefomgeving/producten-en-dienstenrealisatie-fysieke-leefomgeving.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 7 Volksgezondheid en Milieu, Begraafplaatsen en crematoria.
 
@@ -92,7 +91,6 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 | [Behandelen vergunningaanvragen lijkbezorging](behandelen-vergunningaanvragen-lijkbezorging.md) | omvat *aggregatie* | Verlenen verlof tot ontleding | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 68) |
 | [Beslisser](../../../rollen/beslisser.md) | geeft verlof voor *toewijzing* | Verlenen verlof tot ontleding | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 68 lid 1) |
 | [Besluit op de lijkbezorging](../../../../motivatie/beleidskaders/rijksregelgeving/besluit-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Verlenen verlof tot ontleding | [Besluit op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) (art. 17) |
-| [Producten- en dienstenrealisatie fysieke leefomgeving](../../../bedrijfsfuncties/fysieke-leefomgeving/producten-en-dienstenrealisatie-fysieke-leefomgeving.md) | bedient *bediening* | Verlenen verlof tot ontleding | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 68) |
 | [Toestaan lijkbezorging](toestaan-lijkbezorging.md) | omvat *aggregatie* | Verlenen verlof tot ontleding | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 67, 68) |
 | [Wet op de lijkbezorging](../../../../motivatie/beleidskaders/rijksregelgeving/wet-op-de-lijkbezorging.md) | is grondslag voor *associatie (gericht)* | Verlenen verlof tot ontleding | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 67, 68) |
 

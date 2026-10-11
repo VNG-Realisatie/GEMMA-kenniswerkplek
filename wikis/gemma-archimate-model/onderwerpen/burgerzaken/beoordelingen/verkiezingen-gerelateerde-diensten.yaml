@@ -20,9 +20,9 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie.
+    onderbouwing: 'Een eigen taak van de gemeente, los van één ander begrip: burgemeester en wethouders registreren de kiesgerechtigdheid (Kieswet art. D 1) en de burgemeester verstrekt de stempassen (Kieswet art. J 7).'
     bronnen:
-    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-rijk-kieswet-bwbr0004627
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: 'Hoort bij burgerzaken: bedient Beheren stempassen en Registreren kiesgerechtigdheid.'
@@ -30,9 +30,9 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   gedrag:
     waarde: ja
-    onderbouwing: 'Een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20).'
+    onderbouwing: 'Een groep van activiteiten: het registreren van de kiesgerechtigdheid (Kieswet art. D 1) en het vaststellen en verstrekken van de stempassen (Kieswet art. J 7).'
     bronnen:
-    - 2026-vng-gemma-bedrijfsfuncties
+    - 2026-rijk-kieswet-bwbr0004627
   handelende_partij:
     waarde: nee
     onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
@@ -218,6 +218,9 @@ gemma:
   id: id-78bbc144-8a22-43a4-8233-c4cfaf7b73c2
   sterkte: exact
   onderbouwing: 'Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Verkiezingen gerelateerde diensten. De wiki modelleert alleen het deel voor de kiezer; de functie zelf blijft ongewijzigd.'
+gemma_functie:
+  id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+  gemma_relatie: id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
 relaties:
 - soort: bediening
   naar: beheren-stempassen
@@ -275,7 +278,6 @@ beslist:
     typeregel: 17
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
-  - 2026-vng-gemma-bedrijfsfuncties
   - 2026-rvig-hup-kiesrecht
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: rijksregelgeving
@@ -288,4 +290,16 @@ beslist:
     gemma_eigenschappen:
       Object ID: 78bbc144-8a22-43a4-8233-c4cfaf7b73c2
       Toelichting: Bijv. het inrichten van stemlokalen en verstrekken van stempassen
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/verkiezingen-gerelateerde-diensten.md

@@ -34,7 +34,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 
 ### Bronnen
 
-- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron voor de inhoud; citaten letterlijk, met vindplaats. Een matchdoel (het GEMMA-model, GEMMA Online, het GGM) is nooit die bron. Eén uitzondering: de plek van een element in een overgenomen indeling (de kenmerken *in functie-indeling* en *zelfstandige specialisatie*, en een relatie in de GEMMA-functieketen tussen twee gematchte elementen) steunt op de relatie uit het model (`gemma_relatie`), want de wiki neemt die indeling letterlijk over. *(script: elk kenmerk `ja` en elk element heeft een bron of een GEMMA-relatie; elke bron bestaat en heeft een bronduiding; een GEMMA-relatie staat in het model tussen de gematchte elementen)*
+- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron voor de inhoud; citaten letterlijk, met vindplaats. Een matchdoel (het GEMMA-model, GEMMA Online, het GGM) is nooit die bron. Eén uitzondering: de plek van een element in een overgenomen indeling (de kenmerken *in functie-indeling* en *zelfstandige specialisatie*, en een relatie in de GEMMA-functieketen tussen twee gematchte elementen) steunt op de relatie uit het model (`gemma_relatie`), want de wiki neemt die indeling letterlijk over. *(script: elk kenmerk `ja` en elk element heeft een bron of een GEMMA-relatie (ook de plek onder een GEMMA-functie zonder beoordeling, `gemma_functie`); elke bron bestaat en heeft een bronduiding; een GEMMA-relatie staat in het model tussen de gematchte elementen)*
 - **Zonder bron** — Een claim zonder bron wordt een open vraag ("verificatie nodig").
 
 ### Tekst
@@ -65,7 +65,8 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 | Waarom: uitgangspunten en onderbouwing | [ARCHITECTURE.md](ARCHITECTURE.md) | — | de AI, na een besluit van de redacteur | ja |
 | Besluiten over een begrip of onderwerp | `besluiten:` van de beoordeling of het onderwerp; de begrippenlijst toont die van het onderwerp | — | de AI, met de redacteur | ja |
 | Elementpagina's en overzichten | `elementpaginas/`, `onderwerpen/<onderwerp>/begrippen.md` en `overzicht.md` | per elementtype | `tools/render.py` | nee |
-| Terugmeldlijsten, ter beoordeling, voortgang | `modellen/*/terugmeldingen/*.md`, [ter-beoordeling.md](ter-beoordeling.md), [voortgang.md](voortgang.md) | lijst | `tools/render.py` | nee |
+| Indelingspagina's: de indelingen as-is met dekking (onderwerpen, beleidsdomeinen, bedrijfsfuncties) | `elementpaginas/overig/indelingen/` | indeling | `tools/render.py` (met `tools/indelingspaginas.py`) | nee |
+| Terugmeldlijsten, diensten zonder grondslag, ter beoordeling, voortgang | `modellen/*/terugmeldingen/*.md`, `elementpaginas/overig/zonder-grondslag.md`, [ter-beoordeling.md](ter-beoordeling.md), [voortgang.md](voortgang.md) | lijst | `tools/render.py` | nee |
 | Open punten | [todo.md](todo.md) | — | de AI | ja |
 | Plannen voor grotere wijzigingen (een plan dat klaar is, blijft als geschiedenis) | `plannen/<datum>-<titel>.md` | — | de AI, met de redacteur | ja |
 | Akkoorden | [log.md](log.md) | — | `llmwiki promote apply` | nee |
@@ -77,10 +78,10 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 |---|---|---|---|---|
 | Navragen, Per geval | dit bestand | `references/besluiten.md` | secties 3.1 en 3.2 | — |
 | Eén naamgeving, Bestaand bijwerken, Letterlijk verplaatsen | dit bestand | — | — | — |
-| Elke claim een bron, Zonder bron | dit bestand | skill gemma-archimate-model-ingest; `gemma_relatie`: `references/gemma-match.md` | secties 3.1 en 4.4 | script |
+| Elke claim een bron, Zonder bron | dit bestand | skill gemma-archimate-model-ingest; `gemma_relatie` en `gemma_functie`: `references/gemma-match.md` | secties 3.1 en 4.4 | script |
 | Geen absolute taal | dit bestand | `references/definitie.md` | — | signaal |
 | Drie registers, GEMMA-terugmeldingen formuleren | dit bestand | `references/terugmeldingen.md` | secties 2 en 3.5 | script |
-| Bronvoorrang, Tegenspraak, Wettelijke grondslag | modelleerregels | skill gemma-archimate-model-ingest | secties 3.4, 3.7 en 4.2 | script, signaal |
+| Bronvoorrang, Tegenspraak, Wettelijke grondslag | modelleerregels | skill gemma-archimate-model-ingest; de hoek zonder grondslag: `references/terugmeldingen.md` | secties 2, 3.4, 3.7, 4.2 en 6.3 | script, signaal |
 | Beslistabel beslist | modelleerregels | skill gemma-archimate-model-criteria | secties 4.1, 4.3 en 4.4 | script, signaal |
 | Match op betekenis, Zwakke match voorleggen | modelleerregels | `references/ggm-match.md`, `references/gemma-match.md` | secties 3.7, 4.5 en 6.4 | script, signaal |
 | Eén element in het hele model, Thuishoren, Relaties tussen onderwerpen | modelleerregels | `references/relaties.md` | sectie 3.3 | signaal |

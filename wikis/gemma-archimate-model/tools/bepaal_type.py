@@ -1246,6 +1246,14 @@ def schema() -> dict:
                                "description": "Specialisatie van een generiek GEMMA-element (bedrijfsproces, "
                                               "gebeurtenis, dienst of rol), met het id van dat element; bij een "
                                               "cluster naar soort werk bepaalt dit het procesniveau"},
+            "gemma_functie": {**obj(["id"], id=tekst, gemma_relatie={"type": "string", "pattern": "^id-"},
+                                    bronnen={**bron_ids, "minItems": 1}, vindplaats=tekst),
+                              "description": "Bij een bedrijfsfunctie of dienst: de plek in de GEMMA-functiehiërarchie "
+                                             "(Functie-indeling naar domein), als het id van de bovenliggende GEMMA-functie, "
+                                             "die zelf geen element is. De plek steunt op de GEMMA-relatie van die functie "
+                                             "naar de GEMMA-match van dit element (`gemma_relatie`), of anders op "
+                                             "`bronnen` met `vindplaats` (regel Elke claim een bron); het script toetst "
+                                             "ze aan het model"},
             "kwaliteitsdoelen": {"type": "array", "items": obj(
                 ["id", "sterkte", "onderbouwing", "bronnen"], id=tekst, sterkte={"enum": list(km.STERKTEN)},
                 onderbouwing=tekst, bronnen={**bron_ids, "minItems": 1}, vindplaats=tekst),

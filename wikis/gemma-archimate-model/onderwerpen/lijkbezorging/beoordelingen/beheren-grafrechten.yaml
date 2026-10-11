@@ -167,7 +167,7 @@ kenmerken:
     onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'De bedrijfsprocessen leveren het aanbod (Verlenen grafrecht: Graf aanvragen).'
+    onderbouwing: 'De bedrijfsprocessen leveren het aanbod (Verlenen grafrecht: Grafuitgifte).'
   bedient_gedrag:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.

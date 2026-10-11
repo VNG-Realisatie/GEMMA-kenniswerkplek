@@ -13,7 +13,6 @@ data_object: nee
 domein: Publieksdiensten
 bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-- 2026-vng-gemma-bedrijfsfuncties
 - 2025-vng-upl-producten-en-diensten-extern
 gemma_id: id-4c27c433-eded-46a9-bef1-002b82759ca9
 gemma_naam: Nederlanderschap diensten
@@ -55,7 +54,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 
 ### Plaats in de indelingen
 
-- **Functie-indeling naar domein, onderdeel van**: [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md).
+- **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Producten- en dienstenrealisatie publieksdiensten* (geen element van de wiki; Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten), GEMMA-relatie `id-21417578-47f0-4f78-a4ba-50b4ee134815`.
 - **Functie-indeling naar domein, omvat**: [Bewijs van nederlanderschap](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md), [Naturalisatieceremonie](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieceremonie.md), [Naturalisatieoptie](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieoptie.md), [Naturalisatieverzoek](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieverzoek.md), [Verklaring van afstand nederlandse nationaliteit](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-afstand-nederlandse-nationaliteit.md).
 - **Bedient**: [Beheren Nederlanderschap](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-nederlanderschap.md).
 - **Domein**: Publieksdiensten.
@@ -68,9 +67,9 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 |---|---|
 | **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, het behandelen van optieverklaringen en naturalisatieverzoeken is een eigen taak van de burgemeester (Besluit verkrijging en verlies Nederlanderschap art. 2, 63). GEMMA-bedrijfsfunctie Nederlanderschap diensten, onder Producten- en dienstenrealisatie publieksdiensten. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit art. 2, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen eenheid met eigen taken en verantwoordelijkheden, zoals elke bedrijfsfunctie (Bedrijfsfuncties, regel 20); in de GEMMA-functie-indeling een zelfstandige functie. [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen taak van de burgemeester, los van één ander begrip: optieverklaringen en naturalisatieverzoeken in ontvangst nemen en uittreksels van naturalisatiebesluiten uitreiken (Besluit verkrijging en verlies Nederlanderschap art. 2). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: bedient Beheren Nederlanderschap. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: een bedrijfsfunctie is een logische eenheid waarin activiteiten zijn gegroepeerd (Bedrijfsfuncties, regel 20). [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: het in ontvangst nemen van optieverklaringen en naturalisatieverzoeken en het uitreiken van uittreksels van naturalisatiebesluiten (Besluit verkrijging en verlies Nederlanderschap art. 2). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, doorlopende groepering van de dienstverlening rond het Nederlanderschap, op grond van dezelfde kennis van de Rijkswet en het Besluit, zonder eigen volgorde (GEMMA). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, registreert en beëindigt het Nederlanderschap en raadpleegt de ingeschreven persoon (Besluit art. 9, 11, 60a, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, de taak volgt uit de wet en blijft bij een andere organisatie of werkwijze (Besluit art. 2). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
@@ -91,12 +90,6 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | Nederlanderschap diensten | omvat *aggregatie* | [Verklaring van afstand nederlandse nationaliteit](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-afstand-nederlandse-nationaliteit.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 436 (GEMMA-domein Publieksdiensten)) |
 | Nederlanderschap diensten | omvat *aggregatie* | [Bewijs van nederlanderschap](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 62 (GEMMA-domein Publieksdiensten)) |
 
-#### Inkomend
-
-| Van | Relatie | Naar | Bron |
-|---|---|---|---|
-| [Producten- en dienstenrealisatie publieksdiensten](producten-en-dienstenrealisatie-publieksdiensten.md) | omvat *aggregatie* | Nederlanderschap diensten | GEMMA (id-21417578-47f0-4f78-a4ba-50b4ee134815) |
-
 ## Herkomst
 
 ### Bronnen
@@ -104,7 +97,6 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) | Besluit verkrijging en verlies Nederlanderschap |
-| [GEMMA Bedrijfsfuncties](../../../../onderwerpen/kern/bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md) | GEMMA Bedrijfsfuncties |
 | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA

@@ -15,7 +15,9 @@ Indelingen (kennismodel/indelingen.md): een element krijgt de eigenschappen proc
 een aggregatie tussen processen heeft `indeling` en `procesniveau` ("levensloopproces → bedrijfsproces"), een aggregatie
 tussen functies, en van een functie naar een product of dienst, `indeling`; een functie hangt alleen op domeinniveau (GEMMA
 type *Bedrijfsfunctie domein*) aan de domeingroepering, daaronder aan haar bovenliggende functie; een product of dienst aan
-een functie; een proces zonder GEMMA-match staat in de map `Procesindeling naar kernobject`, een bedrijfsinteractie in de
+een functie, en is die functie een GEMMA-functie zonder beoordeling, dan staat ze in het veld `gemma_functie`: de export
+neemt haar letterlijk mee (id's van de knopen en relaties uit het model, zonder wiki-eigenschappen) met elke gebruikte tak
+tot en met het domein, en `--volledig` de hele hiërarchie; een proces zonder GEMMA-match staat in de map `Procesindeling naar kernobject`, een bedrijfsinteractie in de
 map `Ketensamenwerking` (zoals in GEMMA); een levensloopproces zonder GEMMA-match krijgt GEMMA type *Bedrijfsproces
 (cluster)* en valt, net als een bedrijfsinteractie, in de Beleidsdomeinindeling onder het beleidsdomein van zijn
 kernobject; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
@@ -38,12 +40,15 @@ elementtype (met het id uit Over GEMMA waar dat bestaat), een relatie per toeges
 indeling, met de eigenschappen `kernrelatie` en `in Over GEMMA`. De relaties van de elementen worden gefilterd op dat
 kennismodel; het rapport noemt wat wegvalt.
 
+Een UPL-dienst zonder landelijke wettelijke grondslag (`beslist.zonder_grondslag`, regel Wettelijke grondslag) gaat niet
+mee: ze is geen wettelijke taak. Het rapport noemt haar.
+
 Alleen begrippen met status `goedgekeurd` (akkoord van de redacteur); `--concept` neemt ook kandidaat en review mee,
 voor het bekijken, en schrijft naar het kladblok. Het GEMMA-model moet als Archi-bestand zijn ingelezen
 (tools/gemma.py release <bestand.archimate>): de AMEFF heeft geen map-id's.
 
 Gebruik (vanuit de wikimap):
-    uv run python tools/archimate_export.py [--concept] [--uit <pad>]
+    uv run python tools/archimate_export.py [--concept] [--volledig] [--uit <pad>]
     uv run python tools/archimate_export.py --check        # alleen de voorwaarden controleren
 """
 from __future__ import annotations
@@ -167,6 +172,9 @@ class Uitkomst:
     weggelaten: list[str] = field(default_factory=list)  # relaties van elementen buiten het kennismodel
     niet_in_over_gemma: dict = field(default_factory=dict)  # (bron, relatie, doel) → aantal in de elementen
     zonder_plaats: list[str] = field(default_factory=list)
+    zonder_grondslag: list[str] = field(default_factory=list)  # UPL-diensten zonder landelijke grondslag: niet geëxporteerd
+    functiehierarchie: tuple = (0, 0, 0)  # functies in GEMMA, met inhoud van de wiki (zelf of eronder), in de export
+    volledig: bool = False
 
 
 # --- Voorwaarden ---
@@ -307,11 +315,12 @@ def _stub(b: Bouwer, g: dict) -> None:
 
 def _relatie(b: Bouwer, uit: Uitkomst, gemma_relaties: dict, rtype: str, bron: str, doel: str, herkomst: str,
              paren: list[tuple[str, str]], naam: str = "", sleutel: str | None = None,
-             attributen: dict[str, str] | None = None) -> None:
+             attributen: dict[str, str] | None = None, relatie_id: str | None = None) -> None:
     """Een relatie met het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id
-    (uit `sleutel`, standaard de herkomst). `attributen`: extra XML-attributen, zoals `strength` bij een invloed."""
+    (uit `sleutel`, standaard de herkomst). `attributen`: extra XML-attributen, zoals `strength` bij een invloed;
+    `relatie_id`: precies deze GEMMA-relatie, als er meer zijn."""
     bestaand = sorted(gemma_relaties.get((rtype, bron, doel), []), key=lambda x: x["id"])
-    g = bestaand[0] if bestaand else None
+    g = next((x for x in bestaand if x["id"] == relatie_id), None) if relatie_id else (bestaand[0] if bestaand else None)
     rid = g["id"] if g else vast_id("relatie", sleutel or herkomst, rtype, bron, doel)
     if rid in b.relatie_ids:
         return
@@ -342,11 +351,13 @@ GEMMA_TYPE_LEVENSLOOP = "Bedrijfsproces (cluster)"  # GEMMA type van de clusters
 def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstempel: str, concept: bool = False,
          log: str = "", wiki_yaml: dict | None = None,
          vorige: dict[str, str] | None = None, kennismodel: dict | None = None,
-         beleidsdomeinen: dict[str, dict] | None = None) -> Uitkomst:
-    uit = Uitkomst()
+         beleidsdomeinen: dict[str, dict] | None = None, volledig: bool = False) -> Uitkomst:
+    uit = Uitkomst(volledig=volledig)
     sleutels = object_sleutels(begrippen)
     sleutel = lambda bid: sleutels.get(bid, bid)  # noqa: E731
     gekozen, uit.fouten = selectie(begrippen, log, concept)
+    uit.zonder_grondslag = sorted((d["begrip"] for d in gekozen.values() if d["beslist"].get("zonder_grondslag")), key=str.lower)
+    gekozen = {bid: d for bid, d in gekozen.items() if not d["beslist"].get("zonder_grondslag")}
     b = Bouwer(gemma_data, tijdstempel, concept)
     page_types = (wiki_yaml or {}).get("page_types", {})
     ids: dict[str, str] = {}
@@ -481,11 +492,69 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
     _gemma_specialisaties(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
     _kwaliteitsdoelen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
     _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels, beleidsdomeinen)
+    _functiehierarchie(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels, volledig)
     if kennismodel:
         _kennismodel(b, uit, kennismodel)
     uit.zonder_plaats = _zonder_plaats(b, gekozen, ids)
     uit.xml = _serialiseer(b, gemma_bron)
     return uit
+
+
+def _functiehierarchie(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict,
+                       sleutels: dict[str, str] | None = None, volledig: bool = False) -> None:
+    """De functiehiërarchie van GEMMA (Functie-indeling naar domein) as-is: `gemma_functie` wordt de aggregatie vanaf de
+    bovenliggende GEMMA-functie, die letterlijk meegaat met elke tak tot en met het domein (id's van de knopen en de
+    relaties uit het model, geen wiki-eigenschappen). Met `volledig` de hele hiërarchie, om de gaten te zien."""
+    import gemma
+
+    el = gemma_data["elementen"]
+    h = gemma.functiehierarchie(gemma_data)
+    inhoud: set[str] = set()   # de functies met inhoud van de wiki: zelf, of als bovenliggende functie
+    zelf: set[str] = set()     # de functies die als element van de wiki meegaan
+    knopen: set[str] = set()
+    relaties: set[str] = set()
+    for bid, data in sorted(gekozen.items()):
+        if bid not in ids:
+            continue
+        paginatype = data["beslist"]["uitkomst"].get("paginatype")
+        eigen = (data.get("gemma") or {}).get("id")
+        gf = data.get("gemma_functie")
+        if paginatype == "bedrijfsfunctie" and eigen in el:
+            inhoud.add(eigen)
+            zelf.add(eigen)
+            if not gf and not signalen.is_domeinfunctie(data, gemma_data):
+                k, r = gemma.functie_tak(h, eigen)
+                knopen |= k
+                relaties |= r
+        if not gf:
+            continue
+        if gf["id"] not in el:
+            uit.fouten.append(f"{bid}: gemma_functie {gf['id']} staat niet in het ingelezen GEMMA-model")
+            continue
+        inhoud.add(gf["id"])
+        k, r = gemma.functie_tak(h, gf["id"])
+        knopen |= k
+        relaties |= r
+        _relatie(b, uit, gemma_relaties, "aggregation-relationship", gf["id"], ids[bid], f"{bid}#gemma_functie",
+                 [(eig("indeling"), "Functie-indeling naar domein"), (eig("bronnen"), "; ".join(gf.get("bronnen", []))),
+                  (eig("vindplaats"), gf.get("vindplaats", ""))],
+                 sleutel=f"{(sleutels or {}).get(bid, bid)}#gemma_functie", relatie_id=gf.get("gemma_relatie"))
+        uit.indelingen += 1
+    if volledig:
+        knopen = set(h["onder"]) | {k for kinderen in h["onder"].values() for k, _ in kinderen}
+        relaties = {rid for kinderen in h["onder"].values() for _, rid in kinderen}
+    for i in sorted(knopen):
+        if i not in ids.values():
+            _stub(b, el[i])
+    for rid in sorted(relaties):
+        g = gemma_data["relaties"][rid]
+        _relatie(b, uit, gemma_relaties, g["type"], g["bron"], g["doel"], f"gemma_functie#{rid}", [],
+                 naam=g.get("naam", ""), relatie_id=rid)
+    functies = {i for i, e in el.items() if e["type"] == "business-function"}
+    met_inhoud = set()
+    for i in inhoud:
+        met_inhoud |= gemma.functie_tak(h, i)[0]
+    uit.functiehierarchie = (len(functies), len(functies & met_inhoud), len(functies & (knopen | zelf)))
 
 
 def _gemma_specialisaties(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict,
@@ -603,9 +672,10 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
         if paginatype in DOMEIN_TYPEN and paginatype != "product" and not signalen.is_domeinfunctie(data, gemma_data):
             # een dienst of functie onder domeinniveau: de aggregatie vanaf de (bovenliggende) functie, een relatie in
             # de beoordeling; een product en een functie op domeinniveau hangen aan de domeingroepering
-            if not any(r["soort"] == "aggregatie" and r["naar"] == bid and ids.get(van)
-                       and gekozen[van]["beslist"]["uitkomst"].get("paginatype") == "bedrijfsfunctie"
-                       for van in gekozen for r in gekozen[van].get("relaties", [])):
+            if not data.get("gemma_functie") and not any(
+                    r["soort"] == "aggregatie" and r["naar"] == bid and ids.get(van)
+                    and gekozen[van]["beslist"]["uitkomst"].get("paginatype") == "bedrijfsfunctie"
+                    for van in gekozen for r in gekozen[van].get("relaties", [])):
                 uit.overgeslagen.append(f"{data['begrip']}: geen plaats in de Functie-indeling naar domein (geen "
                                         "(bovenliggende) functie in deze export)")
         elif paginatype in DOMEIN_TYPEN and data.get("domein"):
@@ -936,6 +1006,13 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
               f"{len(uit.nieuw)} nieuw. Relaties: {uit.relaties_gekoppeld} gekoppeld, {uit.relaties_nieuw} nieuw, "
               f"{len(uit.overgeslagen)} overgeslagen. Indelingen: {uit.indelingen} aggregaties vanuit een groepering, "
               f"{len(uit.specialisaties)} specialisaties naar een GEMMA-element.", ""]
+    if uit.functiehierarchie[0]:
+        totaal, inhoud, mee = uit.functiehierarchie
+        regels += ["## Dekking van de overgenomen indelingen", "",
+                   f"Functie-indeling naar domein (de functiehiërarchie van GEMMA): {inhoud} van {totaal} functies hebben "
+                   f"inhoud van de wiki, zelf of eronder. In de export {mee} functies "
+                   + ("(de hele hiërarchie, `--volledig`)." if uit.volledig else
+                      "(elke gebruikte tak tot en met het domein; `--volledig` neemt de hele hiërarchie mee)."), ""]
     if uit.kennismodel_elementen:
         regels += [f"Kennismodel: {uit.kennismodel_elementen} elementen en {uit.kennismodel_relaties} relaties uit Over GEMMA, "
                    f"samengebracht in de groep {KENNISMODEL_GROEP} met een groep per laag (map Other / {PREFIX} / {KENNISMODEL_GROEP}).", ""]
@@ -972,6 +1049,11 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
                    "Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder het GEMMA-taakveld als "
                    "dat bestaat), de groepen van de Grondslagindeling en de doelgroepen.", ""]
         regels += [f"- {x}" for x in sorted(uit.groeperingen_nieuw)] + [""]
+    if uit.zonder_grondslag:
+        regels += ["## Zonder grondslag", "",
+                   "UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, teruggemeld aan de "
+                   "procesarchitectuur en niet geëxporteerd (elementpaginas/overig/zonder-grondslag.md).", ""]
+        regels += [f"- {x}" for x in uit.zonder_grondslag] + [""]
     if uit.nieuw:
         regels += ["## Nieuw in GEMMA", ""] + [f"- {e['naam']}" for e in sorted(uit.nieuw, key=lambda e: e["naam"].lower())] + [""]
     if uit.overgeslagen:
@@ -986,6 +1068,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--concept", action="store_true", help="Ook kandidaat en review, alleen om te bekijken")
     parser.add_argument("--uit", type=Path, help="Ander uitvoerbestand")
     parser.add_argument("--check", action="store_true", help="Alleen de voorwaarden controleren")
+    parser.add_argument("--volledig", action="store_true",
+                        help="Van een overgenomen indeling de hele indeling meenemen, niet alleen de gebruikte takken")
     parser.add_argument("--wiki", type=Path, default=WIKI_ROOT, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
 
@@ -1009,7 +1093,7 @@ def main(argv: list[str] | None = None) -> int:
         else:
             fouten.append(f"kennismodel: bron {km_pad} ontbreekt (wiki.yaml kennismodel.bron)")
     uit = Uitkomst() if fouten else bouw(gemma_data, begrippen, gemma_bron, tijdstempel, args.concept, log, wiki_yaml,
-                                         vorige, kennismodel, beleidsdomeinen)
+                                         vorige, kennismodel, beleidsdomeinen, args.volledig)
     fouten += uit.fouten
     fouten += [f"{naam}: geen plaats in een indeling (elk element staat in minstens één indeling)" for naam in uit.zonder_plaats]
     for f in fouten:

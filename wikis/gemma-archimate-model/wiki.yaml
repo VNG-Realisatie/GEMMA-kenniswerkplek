@@ -14,6 +14,8 @@ page_types:                          # pagina's van curated typen en onderwerpen
     files: onderwerpen/*/begrippen.md   # begrippenlijst per onderwerp (gegenereerd uit de beoordelingen)
   overzicht:
     files: onderwerpen/*/overzicht.md   # overzicht per onderwerp: de views op de indelingen (gegenereerd)
+  indeling:
+    files: elementpaginas/overig/indelingen/*.md   # de indelingen as-is met dekking (onderwerpen, beleidsdomeinen, bedrijfsfuncties; gegenereerd)
   bronduiding:
     files:                           # laag 3: wat een bron betekent vanuit het perspectief van de wiki
       - onderwerpen/*/bronduidingen/*/*.md
