@@ -488,9 +488,9 @@ def zonder_grondslag(alle: dict[str, dict], elementen: dict[str, dict], brontype
 def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], brontype) -> tuple[list[str], list[str]]:
     """Regel Wettelijke grondslag. `brontype` geeft per bron-id het brontype.
 
-    Fout: een relatie *is grondslag voor* vanuit een beleidskader in Richtlijn (een richtlijn is geen wettelijke
-    grondslag) of vanuit een VNG-modelverordening (een VNG-modelverordening is nooit grondslag; die relatie heet *werkt uit voor*); en een
-    bedrijfsproces dat een dienst zonder grondslag realiseert (`zonder_grondslag`; zo'n dienst wordt niet uitgewerkt).
+    Fout: een relatie *is grondslag voor* vanuit een VNG-modelverordening (een VNG-modelverordening is nooit
+    grondslag; die relatie heet *werkt uit voor*); en een bedrijfsproces dat een dienst zonder grondslag realiseert
+    (`zonder_grondslag`; zo'n dienst wordt niet uitgewerkt).
     Signaal: een element zonder landelijke wettelijke bron (`_grondslag`), behalve een UPL-dienst, een bedrijfsfunctie en
     een beleidskader. Een vervallen element (status `afgewezen`) telt niet mee."""
     fouten, signalen_ = [], []
@@ -501,9 +501,6 @@ def wettelijke_grondslag(alle: dict[str, dict], elementen: dict[str, dict], bron
         for r in alle[b].get("relaties", []):
             if r.get("naam") != "is grondslag voor":
                 continue
-            if alle[b].get("regelgever") == "landelijke organisatie":
-                fouten.append(f"{b}: een richtlijn is geen wettelijke grondslag; noem de relatie naar '{r['naar']}' "
-                              "'geeft richtlijn voor' (regel Wettelijke grondslag)")
             if alle[b].get("regelgever") == "VNG-modelverordening":
                 fouten.append(f"{b}: een VNG-modelverordening is nooit grondslag; noem de relatie naar '{r['naar']}' 'werkt uit voor' "
                               "(regel Wettelijke grondslag)")

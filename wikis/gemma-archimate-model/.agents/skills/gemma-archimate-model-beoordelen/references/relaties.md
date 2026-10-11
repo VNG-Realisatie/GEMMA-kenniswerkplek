@@ -65,7 +65,7 @@ De typen van beide elementen bepalen de soort relatie, het werkwoord de richting
 | proces/functie → dienst | realisatie | — |
 | dienst → rol of gedrag | bediening | — (een dienst krijgt geen rol toegewezen en heeft geen toegang tot een object) |
 | product → rol | bediening | het product bedient de rol van de afnemer (kennismodel regel 596: Product → bediening → Klant; Grafuitgifte bedient Rechthebbende op het graf) |
-| beleidskader → proces, dienst, product | associatie (gericht), naam "is grondslag voor"; bij een beleidskader in de groep Richtlijn "geeft richtlijn voor" (geen wettelijke grondslag); bij een beleidskader in de groep Gemeentelijke regelgeving altijd "werkt uit voor", ook naar een UPL-dienst zonder landelijke grondslag: een VNG-modelverordening is nooit grondslag (regel Wettelijke grondslag). Bij voorkeur naar een product (kennismodel regel 595); naar een proces of dienst als er geen product is | — |
+| beleidskader → proces, dienst, product | associatie (gericht), naam "is grondslag voor"; bij een beleidskader in de groep Gemeentelijke regelgeving altijd "werkt uit voor", ook naar een UPL-dienst zonder landelijke grondslag: een VNG-modelverordening is nooit grondslag (regel Wettelijke grondslag). Bij voorkeur naar een product (kennismodel regel 595); naar een proces of dienst als er geen product is | — |
 | gedrag → gedrag | stroom | "levert aan", "geeft door aan" |
 | elk → gelijk type | specialisatie | "is een" |
 | object → object, product → dienst/object | compositie of aggregatie | "bestaat uit" → compositie; "bevat", "omvat" → aggregatie; "maakt deel uit van" draait de richting om |

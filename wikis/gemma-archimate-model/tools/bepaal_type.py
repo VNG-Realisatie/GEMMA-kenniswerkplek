@@ -126,10 +126,11 @@ KENMERKEN: list[Kenmerk] = [
             "bewonersparkeervergunning zoals de productencatalogus haar aanbiedt", "parkeren; één UPL-item als zodanig (een dienst)",
             "GEMMA (definitie Product)"),
     Kenmerk("regeling_als_geheel", "regeling als geheel", "Aard",
-            "Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel "
-            "of een soort regeling?",
-            "Wet op de lijkbezorging; modelverordening participatie; Circulaire adresonderzoek BRP",
-            "'verordening' als soort (bedrijfsobject Regeling); artikel 16 (losse norm)",
+            "Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één "
+            "artikel, een soort regeling of een richtlijn?",
+            "Wet op de lijkbezorging; modelverordening participatie",
+            "'verordening' als soort (bedrijfsobject Regeling); artikel 16 (losse norm); Circulaire adresonderzoek BRP "
+            "(richtlijn, blijft bron)",
             "GEMMA (definitie Beleidskader)"),
     # Partij
     Kenmerk("los_van_verantwoordelijkheid", "los van verantwoordelijkheid", "Partij",
@@ -337,19 +338,17 @@ KENMERKEN: list[Kenmerk] = [
     # Beleidskader
     Kenmerk("landelijk", "landelijk", "Beleidskader",
             "Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, "
-            "ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een "
-            "landelijke organisatie) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één "
-            "gemeente?",
-            "Wet op de lijkbezorging; AVG; Circulaire adresonderzoek BRP (RvIG); modelverordening",
+            "ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of "
+            "beleid van één gemeente?",
+            "Wet op de lijkbezorging; AVG; modelverordening",
             "beheersverordening of beleidsnota van één gemeente (blijft bron)",
             "GEMMA (definitie Beleidskader); wiki", _bij("regeling_als_geheel")),
     Kenmerk("in_werking", "in werking", "Beleidskader",
             "Is de regeling geldend recht, of als modelverordening actueel?",
             "Archiefwet 1995", "ingetrokken wet", "wiki", _bij("regeling_als_geheel")),
     Kenmerk("is_grondslag_voor", "is grondslag voor", "Beleidskader",
-            "Geeft de regeling de gemeente een taak, bevoegdheid of plicht, werkt de VNG-modelverordening die uit, of schrijft de "
-            "richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? Noem het artikel of de "
-            "paragraaf en het gedrag.",
+            "Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, "
+            "in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag.",
             "Wet op de lijkbezorging art. 28 → Verlenen grafrecht", "BW boek 2, gebruikt voor één definitie",
             "GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader)",
             _bij("regeling_als_geheel")),

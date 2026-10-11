@@ -24,7 +24,7 @@ kernobject; `gemma_generiek` wordt een specialisatie naar het GEMMA-element (dat
 letterlijk meegaat); `kwaliteitsdoelen` van een beleidskader een invloed *geeft grondslag aan* met de sterkte naar
 het GEMMA-kwaliteitsdoel; beleidsdomein en domein worden een aggregatie vanuit de bestaande GEMMA-groepering, of vanuit een
 nieuwe groepering in de map van de wiki; doelgroep een aggregatie vanuit een groepering van de wiki per doelgroep, in de map `Doelgroepindeling`;
-een beleidskader daarnaast een aggregatie vanuit de groep Europese regelgeving, Rijksregelgeving, Richtlijn of
+een beleidskader daarnaast een aggregatie vanuit de groep Europese regelgeving, Rijksregelgeving of
 Gemeentelijke regelgeving (naar de regelgever), in de map `Grondslagindeling` van de wiki; alleen gevulde groepen. De
 id's van die groepen houden hun sleutel `regelgeving`, zodat ze bij het hernoemen van de indeling gelijk bleven.
 

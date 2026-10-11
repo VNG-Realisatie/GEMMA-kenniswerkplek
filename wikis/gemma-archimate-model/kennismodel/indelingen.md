@@ -96,7 +96,7 @@ Waar staat elk element in het model? Een **indeling** ordent naar één criteriu
 |---|---|
 | Deelt in | [Beleidskader](motivatie/beleidskader-modelleerafspraken.md) |
 | Naar | het brontype van de regeling, afgeleid uit de regelgever |
-| Niveaus | groep (Europese regelgeving, Rijksregelgeving, Richtlijn, Gemeentelijke regelgeving) › beleidskader |
+| Niveaus | groep (Europese regelgeving, Rijksregelgeving, Gemeentelijke regelgeving) › beleidskader |
 | Groepering | wiki |
 | In Archi | aggregatie vanuit de groep; groep en map heten als het brontype, in de map Grondslagindeling |
 | Eigenschappen | `regelgever` |
@@ -105,8 +105,7 @@ Waar staat elk element in het model? Een **indeling** ordent naar één criteriu
 |---|---|---|
 | EU | Europese regelgeving | Regelgeving van de Europese Unie die voor alle gemeenten geldt, zoals verordeningen die rechtstreeks werken (AVG, AI-verordening). |
 | rijk | Rijksregelgeving | Regelgeving van het Rijk die voor alle gemeenten gelijk is: wetten, algemene maatregelen van bestuur en ministeriële regelingen, en door Nederland goedgekeurde verdragen. |
-| landelijke organisatie | Richtlijn | Landelijke uitvoeringsvoorschriften, handleidingen, circulaires en handreikingen van het Rijk, uitvoeringsorganisaties en koepels (HUP van RvIG, NVVB, VNG, Divosa). |
 | VNG-modelverordening | Gemeentelijke regelgeving | Verordeningen, nadere regels, beleidsregels en regelingen van gemeenschappelijke regelingen, die elke gemeente zelf vaststelt, en de VNG-modelverordeningen daarvan. Omdat de inhoud per gemeente verschilt, staat in het model de VNG-modelverordening als gemeenschappelijke vorm; de regeling van één gemeente is een voorbeeld en geen element. |
 
 - Alleen gevulde groepen bestaan.
-- De naam van de relatie van een beleidskader volgt de groep: *is grondslag voor*, *werkt uit voor* of *geeft richtlijn voor*.
+- De naam van de relatie van een beleidskader volgt de groep: *is grondslag voor* of *werkt uit voor*.

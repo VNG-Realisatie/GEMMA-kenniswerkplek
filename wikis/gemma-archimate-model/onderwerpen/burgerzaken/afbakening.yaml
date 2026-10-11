@@ -159,3 +159,15 @@ besluiten:
   besluit: 'Afronding Burgerzaken: Alle UPL-regels onder 0.2 en alle Utrecht-pagina''s hebben een element of een vastgelegde uitkomst. Verwijzingen (geen element) naar latere onderwerpen: verkiezingsorganisatie (UPL 205, 395, 396), openbare ruimte (243-246), Overlijdensuitkering, Reclamesticker en Contactgegevens aanpassing. Het synoniem Doorgever bij Aangever vervalt (geen bron). De namen Akte van de burgerlijke stand, Wet en Besluit basisregistratie personen, Besluit burgerlijke stand 1994 en Verkiezingen gerelateerde diensten blijven, toegelicht in `naamkeuze`. Er is geen Product in Burgerzaken; de beleidskaders hangen aan de UPL-diensten en deelprocessen, met toelichting. Regeling BRP blijft bron. Overlijden blijft thuis in Burgerzaken. De diensten Rijbewijs aanvragen en Verklaring omtrent gedrag aanvragen krijgen de UPL-naam als synoniem (precedent Briefadres aanvragen). Tegenspraak vastgelegd: proces-verbaal bij vermissing (Reglement art. 39) tegenover vermissingsverklaring (Utrecht).'
 - datum: '2026-10-11'
   besluit: 'Functies van Burgerzaken: Burgerzaken houdt haar vijf functies (Burgerlijke stand diensten, Bevolkingsadministratie bijhouding, Nederlanderschap diensten, Officiële documenten verstrekking, Verkiezingen gerelateerde diensten), onder Producten- en dienstenrealisatie publieksdiensten als knoop (`gemma_functie`). Wat een functie is, steunt op de wet die de groep taken aan de gemeente toewijst. Legalisatie handtekening is een dienst zonder grondslag: geen wettelijke taak, teruggemeld aan de procesarchitectuur en niet naar GEMMA; de realisatie door Producten- en dienstenrealisatie publieksdiensten vervalt.'
+- datum: '2026-10-11'
+  begrip: Circulaire adresonderzoek BRP
+  besluit: 'Geen beleidskader: de circulaire blijft bron voor de taal en de werkwijze van Uitvoeren adresonderzoek en Onjuiste inschrijving op adres melden. Een landelijke richtlijn wordt nooit een beleidskader, ook niet als geheel (regel Wettelijke grondslag).'
+- datum: '2026-10-11'
+  begrip: Handleiding Uitvoeringsprocedures BRP
+  besluit: 'Geen beleidskader, niet als geheel en niet per hoofdstuk: de hoofdstukken van de HUP blijven bron voor gebeurtenissen, deelprocessen en taal; de registratiestappen blijven buiten het model (afbakening 2026-10-06). Er worden geen hoofdstukken meer opgenomen.'
+- datum: '2026-10-11'
+  begrip: NVVB-handreiking Adresonderzoek
+  besluit: 'Geen beleidskader: een verwijspagina naar de Circulaire adresonderzoek BRP zonder eigen werkwijze; blijft bron bij Uitvoeren adresonderzoek (het LAA-signaal als aanleiding).'
+- datum: '2026-10-11'
+  begrip: NVVB-handreikingen Gezag
+  besluit: 'Geen beleidskader: een verzameling losse hulpmiddelen (format uittreksel BRP met gezag, toestemmingsformulier, vragen en antwoorden, toolkit), met een werkinstructie die niet meer in werking is; blijft bron bij BRP-uittreksel met gezag. De bijlagen worden niet opgenomen.'

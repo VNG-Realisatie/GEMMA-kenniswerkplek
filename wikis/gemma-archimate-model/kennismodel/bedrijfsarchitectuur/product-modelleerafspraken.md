@@ -36,5 +36,5 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | uit | aggregatie | [Dienst](dienst-modelleerafspraken.md) | omvat | *omvat diensten en afspraken* | ja |  |
 | uit | aggregatie | [Afspraak](afspraak-modelleerafspraken.md) | omvat | *omvat diensten en afspraken* | ja |  |
 | uit | bediening | [Rol](rol-modelleerafspraken.md) | bedient |  | ja | de rol van de afnemer, een specialisatie van Klant |
-| in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor, werkt uit voor, geeft richtlijn voor | *is grondslag voor* | ja | de grondslag; bij voorkeur naar een product |
+| in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor, werkt uit voor | *is grondslag voor* | ja | de grondslag; bij voorkeur naar een product |
 | in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling; Functie-indeling naar domein |

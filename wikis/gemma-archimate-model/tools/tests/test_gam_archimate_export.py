@@ -348,7 +348,6 @@ def test_beleidsdomein_uit_gemma_wordt_hergebruikt_en_een_onbekende_wordt_nieuw(
 def test_beleidskader_hangt_naar_regelgever_in_landelijke_of_gemeentelijke_regelgeving(tmp_path):
     begrippen = _indeling_begrippen()
     for bid, naam, regelgever in (("wlb", "Wet op de lijkbezorging", "rijk"), ("avg", "AVG", "EU"),
-                                  ("hup", "HUP BRP", "landelijke organisatie"),
                                   ("model-bv", "Model beheersverordening begraafplaatsen", "VNG-modelverordening")):
         data = _begrip(naam, "driver", status="review", taakveld="Volksgezondheid", beleidsdomein="Begraafplaatsen",
                        regelgever=regelgever)
@@ -376,7 +375,6 @@ def test_beleidskader_hangt_naar_regelgever_in_landelijke_of_gemeentelijke_regel
     assert [n for n, _ in _pad(root, ae.vast_id("element", "avg"))][-1] == "Europese regelgeving"
     assert _relaties_van(root, "archimate:AggregationRelationship",
                          ae.vast_id("groepering", "regelgeving", "Europese regelgeving"), ae.vast_id("element", "avg"))
-    assert [n for n, _ in _pad(root, ae.vast_id("element", "hup"))][-1] == "Richtlijn"
     # zonder beleidskaders geen groepen van de Grondslagindeling
     _, leeg = _export_indeling(tmp_path)
     assert not any("regelgeving" in (e.get("name") or "").lower() for e in leeg.iter("element"))

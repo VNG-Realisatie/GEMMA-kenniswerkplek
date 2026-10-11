@@ -881,12 +881,10 @@ def test_wettelijke_grondslag():
         return {"paginatype": paginatype, "soort": "element"}
     def data(bronnen, **extra):
         return {"beslist": {"bronnen": bronnen}, **extra}
-    soorten = {"wet": "rijksregelgeving", "hup": "richtlijn", "2025-vng-upl-producten": "informatiemodel",
+    soorten = {"wet": "rijksregelgeving", "2025-vng-upl-producten": "informatiemodel",
                "2026-logius-upl-actueel": "informatiemodel", "site": "overig"}
     alle = {
         "wet-x": data(["wet"], regelgever="rijk", relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
-        "hup-x": data(["hup"], regelgever="landelijke organisatie",
-                      relaties=[{"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"}]),
         "vng-model": data(["site"], regelgever="VNG-modelverordening",
                           relaties=[{"soort": "associatie (gericht)", "naar": "dienst-upl", "naam": "is grondslag voor"},
                                     {"soort": "associatie (gericht)", "naar": "dienst-a", "naam": "is grondslag voor"},
@@ -899,18 +897,16 @@ def test_wettelijke_grondslag():
         "functie": data(["site"]),
         "dienst-logius": data(["2026-logius-upl-actueel"]),   # ook de UPL van Logius: geen signaal
     }
-    elementen = {"wet-x": el("beleidskader"), "hup-x": el("beleidskader"), "vng-model": el("beleidskader"), "dienst-a": el("dienst"),
+    elementen = {"wet-x": el("beleidskader"), "vng-model": el("beleidskader"), "dienst-a": el("dienst"),
                  "dienst-upl": el("dienst"), "proces-upl": el("bedrijfsproces"),
                  "proces-vervallen": el("bedrijfsproces"), "rol-zonder": el("rol"),
                  "functie": el("bedrijfsfunctie"), "dienst-logius": el("dienst")}
     fouten, signalen_ = signalen.wettelijke_grondslag(alle, elementen, soorten.get)
-    assert fouten[0] == ("hup-x: een richtlijn is geen wettelijke grondslag; noem de relatie naar 'dienst-a' 'geeft "
-                         "richtlijn voor' (regel Wettelijke grondslag)")
     # een VNG-modelverordening is nooit grondslag, ook niet voor een UPL-dienst zonder landelijke grondslag
-    assert [f.split(":")[0] for f in fouten] == ["hup-x", "vng-model", "vng-model", "proces-upl"]   # een vervallen proces telt niet mee
-    assert "een VNG-modelverordening is nooit grondslag; noem de relatie naar 'dienst-upl' 'werkt uit voor'" in fouten[1]
-    assert "noem de relatie naar 'dienst-a' 'werkt uit voor'" in fouten[2]
-    assert "realiseert UPL-dienst 'dienst-upl'" in fouten[3]
+    assert [f.split(":")[0] for f in fouten] == ["vng-model", "vng-model", "proces-upl"]   # een vervallen proces telt niet mee
+    assert "een VNG-modelverordening is nooit grondslag; noem de relatie naar 'dienst-upl' 'werkt uit voor'" in fouten[0]
+    assert "noem de relatie naar 'dienst-a' 'werkt uit voor'" in fouten[1]
+    assert "realiseert UPL-dienst 'dienst-upl'" in fouten[2]
     assert [s.split(":")[0] for s in signalen_] == ["rol-zonder"]
     # de hoek zonder grondslag: UPL als bron, geen landelijke bron en geen 'is grondslag voor' van de EU of het Rijk
     assert signalen.zonder_grondslag(alle, elementen, soorten.get) == {"dienst-upl", "dienst-logius"}
