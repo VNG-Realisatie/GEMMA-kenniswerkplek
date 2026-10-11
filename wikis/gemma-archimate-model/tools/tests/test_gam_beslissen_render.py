@@ -6,7 +6,7 @@ from test_gam_bepaal_type import (ACTOR, BELEIDSKADER, BO, DIENST, FUNCTIE, GEBE
 import beslissen
 import bepaal_type as bt
 import render
-from llmwiki import beoordeling, logbook
+from llmwiki import beoordeling, logbook, modellen
 
 WET = "2026-overheid-gemeentewet"
 
@@ -255,11 +255,11 @@ def test_open_terugmelding_zonder_voorstel_is_een_fout(wiki):
 def test_gemma_terugmelding_noemt_wiki_en_gemma_elementen(wiki):
     import gam_gemeen
 
-    gam_gemeen.schrijf_json_gegenereerd(
-        wiki / "gemma" / "gemma_parsed.json",
+    modellen.schrijf_json(
+        gam_gemeen.model_json(wiki, "gemma"), "archimate",
         {"elementen": {"id-functie": {"id": "id-functie", "naam": "Uitvoering veiligheid", "type": "business-function",
                                       "documentatie": "", "map": "Business", "map_id": "f", "eigenschappen": {}}},
-         "mappen": {}, "model": {}, "relaties": {}}, "test")
+         "mappen": {}, "model": {}, "relaties": {}})
     _schrijf(wiki, "beschikking", _bo())
     register = {"terugmeldingen": [
         {"type": "element", "elementen": ["beschikking"], "gemma_elementen": [{"id": "id-functie", "naam": "Uitvoering veiligheid"}],
@@ -467,11 +467,11 @@ def test_leidt_tot_gebeurtenis_vraagt_een_triggering(wiki):
 def test_gemma_generiek_moet_in_het_gemma_model_staan(wiki):
     import gam_gemeen
 
-    gam_gemeen.schrijf_json_gegenereerd(
-        wiki / "gemma" / "gemma_parsed.json",
+    modellen.schrijf_json(
+        gam_gemeen.model_json(wiki, "gemma"), "archimate",
         {"elementen": {"id-vergunning": {"id": "id-vergunning", "naam": "Behandelen aanvraag vergunning of ontheffing",
                                          "type": "business-process", "documentatie": "", "map": "Business", "map_id": "f",
-                                         "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}}, "test")
+                                         "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}})
     _schrijf(wiki, "beschikking", _bo())
     _schrijf(wiki, "behandelen-aanvraag", _proces(gemma_generiek={"id": "id-vergunning", "onderbouwing": "Generiek proces."}))
     assert beslissen.beslissen(wiki).fouten == []
@@ -486,10 +486,10 @@ def test_kwaliteitsdoelen_van_een_beleidskader(wiki):
         return {"id": f"id-{naam.lower()}", "naam": naam, "type": "goal", "documentatie": f"{naam} als doel.",
                 "map": "Motivation", "map_id": "f", "eigenschappen": {"GEMMA type": gemma_type}}
 
-    gam_gemeen.schrijf_json_gegenereerd(
-        wiki / "gemma" / "gemma_parsed.json",
+    modellen.schrijf_json(
+        gam_gemeen.model_json(wiki, "gemma"), "archimate",
         {"elementen": {"id-rechtmatig": goal("Rechtmatig"), "id-ander": goal("Ander", "Doel")},
-         "mappen": {}, "model": {}, "relaties": {}}, "test")
+         "mappen": {}, "model": {}, "relaties": {}})
     doel = {"id": "id-rechtmatig", "sterkte": "++", "onderbouwing": "De wet regelt de taak.", "bronnen": [WET],
             "vindplaats": "art. 1"}
     _schrijf(wiki, "behandelen-aanvraag", _proces())
@@ -648,11 +648,11 @@ def _indeling_wiki(wiki):
     object met specialisatie, een functie, een gebeurtenis en een dienst."""
     import gam_gemeen
 
-    gam_gemeen.schrijf_json_gegenereerd(
-        wiki / "gemma" / "gemma_parsed.json",
+    modellen.schrijf_json(
+        gam_gemeen.model_json(wiki, "gemma"), "archimate",
         {"elementen": {"id-vergunning": {"id": "id-vergunning", "naam": "Behandelen aanvraag vergunning of ontheffing",
                                          "type": "business-process", "documentatie": "", "map": "Business", "map_id": "f",
-                                         "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}}, "test")
+                                         "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}})
     geen_ggm = {"ggm": {"sterkte": "geen", "onderbouwing": "Niet in het GGM."}}
     keten = (PROCES - {"per_keer_doorlopen", "omvat_levensloop"}) | {"gezamenlijk_gedrag"}
     deel = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}

@@ -583,7 +583,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     import ggm
 
-    ggm_pad = a.wiki / "ggm" / "ggm_parsed.json"
+    ggm_pad = gam_gemeen.model_json(a.wiki, "ggm")
     kandidaten = voorstel(a.element, ggm.laad(ggm_pad), a.wiki) if ggm_pad.exists() else []
     uit, _ = uit_bronnen(bronrelaties(a.wiki), alle)
     kandidaten, alleen_ggm = combineer(kandidaten, [k for k in uit if a.element in (k.bron, k.doel)])

@@ -81,7 +81,7 @@ def ontvouw(tekst: str) -> str:
 
 
 def bestanden(repo_root: Path) -> list[Path]:
-    """Markdown-bestanden waarvoor de regel geldt (zie UITGESLOTEN_*; plus sources/raw en wikis/*/content)."""
+    """Markdown-bestanden waarvoor de regel geldt (zie UITGESLOTEN_*; plus sources/raw, sources/modellen en wikis/*/content)."""
     result = []
     for pad in sorted(repo_root.rglob("*.md")):
         rel = pad.relative_to(repo_root)
@@ -89,7 +89,7 @@ def bestanden(repo_root: Path) -> list[Path]:
         verborgen = any(d.startswith(".") and d != ".agents" for d in rel.parts[:-1])
         if verborgen or delen & UITGESLOTEN_DELEN or pad.name in UITGESLOTEN_NAMEN:
             continue
-        if rel.parts[:2] == ("sources", "raw") or (len(rel.parts) > 2 and rel.parts[0] == "wikis" and rel.parts[2] == "content"):
+        if rel.parts[:2] in (("sources", "raw"), ("sources", "modellen")) or (len(rel.parts) > 2 and rel.parts[0] == "wikis" and rel.parts[2] == "content"):
             continue
         result.append(pad)
     return result

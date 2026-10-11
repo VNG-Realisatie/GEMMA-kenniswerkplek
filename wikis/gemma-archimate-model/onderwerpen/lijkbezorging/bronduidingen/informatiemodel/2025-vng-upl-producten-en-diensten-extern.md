@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-04
 
 # Standaard producten en dienstenlijst extern basis UPL
 
-Bron: [tekst](../../../../../../sources/raw/2025-vng-upl-producten-en-diensten-extern.md) · [origineel (xlsx)](../../../../../../sources/raw/2025-vng-upl-producten-en-diensten-extern.xlsx) · [online](https://www.gemmaonline.nl/images/gemma/f/f9/Standaard_producten_en_dienstenlijst_extern_basis_UPL.zip)
+Bron: [tekst](../../../../../../sources/modellen/2025-vng-upl-producten-en-diensten-extern.md) · [origineel (xlsx)](../../../../../../sources/modellen/2025-vng-upl-producten-en-diensten-extern.xlsx) · [omzetting (json)](../../../../../../sources/modellen/2025-vng-upl-producten-en-diensten-extern.json) · [online](https://www.gemmaonline.nl/images/gemma/f/f9/Standaard_producten_en_dienstenlijst_extern_basis_UPL.zip)
 
 ## Samenvatting
 

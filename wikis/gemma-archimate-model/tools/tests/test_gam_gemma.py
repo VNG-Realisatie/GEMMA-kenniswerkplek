@@ -60,7 +60,9 @@ def test_release_zet_modelbron(tmp_path, archimate_repo):
     pad.write_text(ARCHIMATE, encoding="utf-8")
     assert gemma.release(pad, "2026-vng-gemma-model", "GEMMA", wiki_root=wiki)["elementen"] == 3
     assert "gemma:\n  bron: 2026-vng-gemma-model" in (wiki / "wiki.yaml").read_text(encoding="utf-8")
-    assert (root / "sources" / "raw" / "2026-vng-gemma-model.archimate").exists()
+    assert (root / "sources" / "modellen" / "2026-vng-gemma-model.archimate").exists()
+    assert (root / "sources" / "modellen" / "2026-vng-gemma-model.json").exists()  # de omzetting naar JSON
+    assert gemma.laad(root / "sources" / "modellen" / "2026-vng-gemma-model.json")["model"]["formaat"] == "archimate"
 
 
 AMEFF = """<?xml version="1.0" encoding="UTF-8"?>
@@ -131,6 +133,6 @@ def test_release_zonder_bestand_haalt_ameff_op(tmp_path, archimate_repo, monkeyp
     resultaat = gemma.release(None, "2026-vng-gemma-2026-07-01", "GEMMA", wiki_root=wiki)
     assert resultaat["formaat"] == "ameff" and resultaat["release"] == "2026-07-01"
     assert opgevraagd == ["https://raw.githubusercontent.com/VNG-Realisatie/GEMMA-Archi-repository/master/export/GEMMA%20release.xml"]
-    assert (root / "sources" / "raw" / "2026-vng-gemma-2026-07-01.xml").exists()
+    assert (root / "sources" / "modellen" / "2026-vng-gemma-2026-07-01.xml").exists()
     index = yaml.safe_load((root / "sources" / "index" / "2026-vng-gemma-2026-07-01.md").read_text(encoding="utf-8").split("---")[1])
     assert index["versie"] == "2026-07-01" and index["brontype"] == "model"

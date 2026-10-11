@@ -1,0 +1,2806 @@
+{
+ "_gegenereerd": {
+  "hash": "b4c8ce3f7d3c76e995999dd019590817dba2f45b3d404eac19ed3533a9ca92fe",
+  "tool": "llmwiki.modellen",
+  "vorm": "lijst"
+ },
+ "data": {
+  "werkbladen": [
+   {
+    "naam": "Producten en diensten",
+    "rijen": [
+     {
+      "cellen": {
+       "A": "Nummer",
+       "B": "UniformeProduct-dienstnaam ",
+       "C": "Schrijfwijze aanpast/geabstraheerd",
+       "D": "Grondslaglabel 1",
+       "E": "Grondlabel 2",
+       "F": "Type",
+       "G": "GEMMA domeinen",
+       "H": "SCOPAFIJTH",
+       "I": "Generiek/Specifek"
+      },
+      "rij": 1
+     },
+     {
+      "cellen": {
+       "A": "1",
+       "B": "213a-onderzoek uitvoeren",
+       "C": "213-a onderzoek",
+       "D": "Artikel 213 Gemeentewet",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 2
+     },
+     {
+      "cellen": {
+       "A": "2",
+       "B": "360 graden feedback uitvoeren",
+       "C": "Loopbaanontwikkeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Specifiek"
+      },
+      "rij": 3
+     },
+     {
+      "cellen": {
+       "A": "3",
+       "B": "Aangifte vennootschapsbelasting",
+       "C": "Belasting aangifte",
+       "D": "Wet op de vennootschapsbelasting 1969",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 4
+     },
+     {
+      "cellen": {
+       "A": "4",
+       "B": "Abonnementen en boeken",
+       "C": "Factiliteiten bestellen",
+       "D": "Aanbestedingwet 2012",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 5
+     },
+     {
+      "cellen": {
+       "A": "5",
+       "B": "Achiefbewaarplaats beheren",
+       "C": "Beheerde archiefbewaarplaats",
+       "D": "Artikel 32 Archiefwet 1995",
+       "E": "Hoofdstuk 4 Archiefregeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 6
+     },
+     {
+      "cellen": {
+       "A": "6",
+       "B": "Adressen muteren",
+       "C": "Adressenbeheer",
+       "D": "Wet basisregistratie adressen en gebouwen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 7
+     },
+     {
+      "cellen": {
+       "A": "7",
+       "B": "Advies leveren",
+       "C": "Adviseren",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 8
+     },
+     {
+      "cellen": {
+       "A": "8",
+       "B": "Adviesgesprek uitvoeren",
+       "C": "Adviseren",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 9
+     },
+     {
+      "cellen": {
+       "A": "9",
+       "B": "Applicatiebeheer",
+       "C": "Beheer informatiesystemen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 10
+     },
+     {
+      "cellen": {
+       "A": "10",
+       "B": "Arbeidsmarktbeleid opstellen",
+       "C": "Beleid",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Specifiek"
+      },
+      "rij": 11
+     },
+     {
+      "cellen": {
+       "A": "11",
+       "B": "Arbeidsongevallen onderzoek",
+       "C": "Arbo",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 12
+     },
+     {
+      "cellen": {
+       "A": "12",
+       "B": "Arbeidsrechtelijke casussen begeleiden",
+       "C": "Arbeidsrechtelijke begeleiding",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 13
+     },
+     {
+      "cellen": {
+       "A": "13",
+       "B": "Arbeidsvoorwaarden behandelen",
+       "C": "P&O-administratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 14
+     },
+     {
+      "cellen": {
+       "A": "14",
+       "B": "Archief beheren",
+       "C": "Archief beheer",
+       "D": "Artikel 3 Archiefwet 1995",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 15
+     },
+     {
+      "cellen": {
+       "A": "15",
+       "B": "Archief overbrengen / Verklaring van overbrenging",
+       "C": "Verklaring van overbrenging",
+       "D": "Artikel 12 Archiefwet 1995",
+       "E": "Hoofdstuk III Archiefbesluit 1995",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 16
+     },
+     {
+      "cellen": {
+       "A": "16",
+       "B": "Verklaring van vernietiging",
+       "C": "Archieven vernietiging",
+       "D": "Artikel 3 Archiefwet 1995",
+       "E": "Artikel 8 Archiefbesluit 1995",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 17
+     },
+     {
+      "cellen": {
+       "A": "17",
+       "B": "Archieven digitaliseren",
+       "C": "Archief beheer",
+       "D": "Artikel 12 Archiefwet 1995",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 18
+     },
+     {
+      "cellen": {
+       "A": "18",
+       "B": "Artikel 35 onderzoek uitvoeren",
+       "C": "artikel 35 onderzoek",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 19
+     },
+     {
+      "cellen": {
+       "A": "19",
+       "B": "Audiovisuele middelen beheren",
+       "C": "Faciliteiten uitgeven",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 20
+     },
+     {
+      "cellen": {
+       "A": "20",
+       "B": "Audits uitvoeren",
+       "C": "Audits",
+       "D": "Controle protocol 2024",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 21
+     },
+     {
+      "cellen": {
+       "A": "21",
+       "B": "Auto uitlenen",
+       "C": "Faciliteiten uitgeven",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 22
+     },
+     {
+      "cellen": {
+       "A": "22",
+       "B": "Autorisatiebeheer",
+       "C": "Identiteitsmanagement",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Specifiek"
+      },
+      "rij": 23
+     },
+     {
+      "cellen": {
+       "A": "23",
+       "B": "Bankmutaties verwerken",
+       "C": "Betalen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 24
+     },
+     {
+      "cellen": {
+       "A": "24",
+       "B": "Bedrijfshulpverlening (BHV)",
+       "C": "Arbo",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 25
+     },
+     {
+      "cellen": {
+       "A": "25",
+       "B": "Bedrijfsinformatie beheren",
+       "C": "Managementinformatie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 26
+     },
+     {
+      "cellen": {
+       "A": "26",
+       "B": "Bedrijfsregister onderdeel processen beheren",
+       "C": "Procesadministratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 27
+     },
+     {
+      "cellen": {
+       "A": "27",
+       "B": "Begroting",
+       "C": "Begroting en kadernota",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 28
+     },
+     {
+      "cellen": {
+       "A": "28",
+       "B": "Begrotingswijziging opstellen",
+       "C": "Financiele administratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 29
+     },
+     {
+      "cellen": {
+       "A": "29",
+       "B": "Beleid ontwikkelen (op het gebied van Arbo en BHV)",
+       "C": "Beleid",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 30
+     },
+     {
+      "cellen": {
+       "A": "30",
+       "B": "Beleid ontwikkelen (personeels- en organisatiebeleid)",
+       "C": "Beleid",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 31
+     },
+     {
+      "cellen": {
+       "A": "31",
+       "B": "Beleid ontwikkelen (Persoonlijk Keuze Budget PKB)",
+       "C": "Beleid",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 32
+     },
+     {
+      "cellen": {
+       "A": "32",
+       "B": "Bemiddeling uitvoeren",
+       "C": "Bemiddeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Specifiek"
+      },
+      "rij": 33
+     },
+     {
+      "cellen": {
+       "A": "33",
+       "B": "Beroep behandelen",
+       "C": "Beroep",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 34
+     },
+     {
+      "cellen": {
+       "A": "34",
+       "B": "Beroep tegen derde indienen",
+       "C": "Beroep procedure tegen derde ",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 35
+     },
+     {
+      "cellen": {
+       "A": "35",
+       "B": "Betaalpas",
+       "C": "Faciliteiten uitgeven",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 36
+     },
+     {
+      "cellen": {
+       "A": "36",
+       "B": "Bezwaar  behandelen",
+       "C": "Bezwaar ",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Specifiek"
+      },
+      "rij": 37
+     },
+     {
+      "cellen": {
+       "A": "37",
+       "B": "Bezwaarschrift tegen derde indienen",
+       "C": "Bezwaarschrift  procedure tegen derde ",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 38
+     },
+     {
+      "cellen": {
+       "A": "38",
+       "B": "Bloemen bestellen",
+       "C": "Factiliteiten bestellen",
+       "D": "Aanbestedingwet 2012",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 39
+     },
+     {
+      "cellen": {
+       "A": "39",
+       "B": "Burgemeestersbesluit",
+       "C": "Burgemeesterbesluit",
+       "D": "Artikel 172 Gemeentewet",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 40
+     },
+     {
+      "cellen": {
+       "A": "40",
+       "B": "Burgervoorlichting uitvoeren",
+       "C": "Burgervoorlichting",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Generiek"
+      },
+      "rij": 41
+     },
+     {
+      "cellen": {
+       "A": "41",
+       "B": "Capaciteitentest uitvoeren",
+       "C": "Loopbaanontwikkeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 42
+     },
+     {
+      "cellen": {
+       "A": "42",
+       "B": "Catering verzorgen",
+       "C": "Catering",
+       "D": "Aanbestedingwet 2012",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 43
+     },
+     {
+      "cellen": {
+       "A": "43",
+       "B": "Certificatien beheren",
+       "C": "Informatiebeveiliging",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 44
+     },
+     {
+      "cellen": {
+       "A": "44",
+       "B": "Civielrechtelijke procedure als eiser uitvoeren",
+       "C": "Civielrechtelijke procedure",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 45
+     },
+     {
+      "cellen": {
+       "A": "45",
+       "B": "Coaching uitvoeren",
+       "C": "Loopbaanontwikkeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 46
+     },
+     {
+      "cellen": {
+       "A": "46",
+       "B": "Collegebesluit",
+       "C": "Collegebesluit",
+       "D": "Artikel 56 Gemeentewet",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 47
+     },
+     {
+      "cellen": {
+       "A": "47",
+       "B": "SLA bewaken",
+       "C": "Contractmanagement",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 48
+     },
+     {
+      "cellen": {
+       "A": "48",
+       "B": "Contracten registreren en beheren",
+       "C": "Contractbeheer",
+       "D": "Aanbestedingwet 2012",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 49
+     },
+     {
+      "cellen": {
+       "A": "49",
+       "B": "Controlplan",
+       "C": "Controlplan",
+       "D": "Controle protocol 2024",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 50
+     },
+     {
+      "cellen": {
+       "A": "50",
+       "B": "Data Protection Impact Assessment uitvoeren",
+       "C": "Privacy",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 51
+     },
+     {
+      "cellen": {
+       "A": "51",
+       "B": "Datalek meldingen behandelen",
+       "C": "Informatiebeveiliging",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 52
+     },
+     {
+      "cellen": {
+       "A": "52",
+       "B": "Debiteurenvoorziening treffen",
+       "C": "Boekhouden",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 53
+     },
+     {
+      "cellen": {
+       "A": "53",
+       "B": "Derde geldstromen aanvragen",
+       "C": "Subsidiering",
+       "D": "Algemene wet bestuursrecht",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 54
+     },
+     {
+      "cellen": {
+       "A": "54",
+       "B": "Derde geldstromen beheren",
+       "C": "Beheerde geldstromen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 55
+     },
+     {
+      "cellen": {
+       "A": "55",
+       "B": "Dossieraanvraag behandelen",
+       "C": "Archief beheer",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 56
+     },
+     {
+      "cellen": {
+       "A": "56",
+       "B": "ENSIA zelfevaluatie informatieveiligheid uitvoeren",
+       "C": "Informatiebeveiliging",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 57
+     },
+     {
+      "cellen": {
+       "A": "57",
+       "B": "Externe privacy audit politiegegevens uitvoeren",
+       "C": "beheer politie gegevens",
+       "D": "Wet politie gegevens",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 58
+     },
+     {
+      "cellen": {
+       "A": "58",
+       "B": "Factuur betalen",
+       "C": "Facturering",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 59
+     },
+     {
+      "cellen": {
+       "A": "59",
+       "B": "Factuur verwerken",
+       "C": "Facturering",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 60
+     },
+     {
+      "cellen": {
+       "A": "60",
+       "B": "Factuur verzenden",
+       "C": "Post verzenden",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 61
+     },
+     {
+      "cellen": {
+       "A": "61",
+       "B": "Fiets uitlenen",
+       "C": "Faciliteiten uitgeven",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 62
+     },
+     {
+      "cellen": {
+       "A": "62",
+       "B": "Financiële rapportage opstellen",
+       "C": "Financiele verantwoording",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 63
+     },
+     {
+      "cellen": {
+       "A": "63",
+       "B": "Fiscale controle",
+       "C": "Gefiscaliseerde controle",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 64
+     },
+     {
+      "cellen": {
+       "A": "64",
+       "B": "Formatiebeheer uitvoeren",
+       "C": "P&O-administratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 65
+     },
+     {
+      "cellen": {
+       "A": "65",
+       "B": "Gemeentelijke gebouwenbeheer uitvoeren",
+       "C": "Gebouwen onderhoud",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 66
+     },
+     {
+      "cellen": {
+       "A": "66",
+       "B": "Gelden gemeentefonds beheren",
+       "C": "Beheerde gelden",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 67
+     },
+     {
+      "cellen": {
+       "A": "67",
+       "B": "Gemeenschappelijke regeling ",
+       "C": "Gemeenschappelijke regeling",
+       "D": "Wet gemeenschappelijke regelingen",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 68
+     },
+     {
+      "cellen": {
+       "A": "68",
+       "B": "Goede staat archief beoordelen",
+       "C": "Archief beheer",
+       "D": "Artikel 3 Archiefwet 1995",
+       "E": "Hoofdstuk 2 Archiefregeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 69
+     },
+     {
+      "cellen": {
+       "A": "69",
+       "B": "Grafische diensten",
+       "C": "Grafische vormgeving",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Generiek"
+      },
+      "rij": 70
+     },
+     {
+      "cellen": {
+       "A": "70",
+       "B": "Hardening uitvoeren",
+       "C": "Informatiebeveiliging",
+       "D": "Regeling veiligheid en integriteit telecommunicatie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 71
+     },
+     {
+      "cellen": {
+       "A": "71",
+       "B": "Hotspotmonitor",
+       "C": "Archief beheer",
+       "D": "Artikel 5 Archiefbesluit 1995",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 72
+     },
+     {
+      "cellen": {
+       "A": "72",
+       "B": "IB47 opstellen",
+       "C": "Belasting aangifte",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Specifiek"
+      },
+      "rij": 73
+     },
+     {
+      "cellen": {
+       "A": "73",
+       "B": "Incidenten en meldingen beheer",
+       "C": "Incidentmanagement",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 74
+     },
+     {
+      "cellen": {
+       "A": "74",
+       "B": "Incidentmeldingen informatiebeveiliging behandelen",
+       "C": "Informatiebeveiliging",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 75
+     },
+     {
+      "cellen": {
+       "A": "75",
+       "B": "Indiening aansprakelijkheidsstelling behandelen",
+       "C": "Aansprakelijkheid",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 76
+     },
+     {
+      "cellen": {
+       "A": "76",
+       "B": "Inentingsprotocol uitvoeren",
+       "C": "Arbo",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 77
+     },
+     {
+      "cellen": {
+       "A": "77",
+       "B": "Informatiearchitectuur",
+       "C": "Informatiearchitectuur",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 78
+     },
+     {
+      "cellen": {
+       "A": "78",
+       "B": "Informatiebeveiligingsdienst melding behandelen",
+       "C": "Informatiebeveiliging",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 79
+     },
+     {
+      "cellen": {
+       "A": "79",
+       "B": "Informatievoorziening verzorgen",
+       "C": "Informatievoorziening",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 80
+     },
+     {
+      "cellen": {
+       "A": "80",
+       "B": "Ingebrekestelling behandelen",
+       "C": "Aansprakelijkheid",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 81
+     },
+     {
+      "cellen": {
+       "A": "81",
+       "B": "Inkoopanalyse uitvoeren",
+       "C": "Inkoop",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 82
+     },
+     {
+      "cellen": {
+       "A": "82",
+       "B": "Inkooptrajecten uitvoeren",
+       "C": "Inkoop",
+       "D": "Aanbestedingwet 2012",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 83
+     },
+     {
+      "cellen": {
+       "A": "83",
+       "B": "Invorderingsactiviteiten uitvoeren",
+       "C": "Invordering",
+       "D": "Verordening op de heffing en de invordering van leges",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 84
+     },
+     {
+      "cellen": {
+       "A": "84",
+       "B": "Inzageverzoek persoonsgegevens beoordelen",
+       "C": "Privacy/externe",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 85
+     },
+     {
+      "cellen": {
+       "A": "85",
+       "B": "Inzageverzoek politiegegevens beoordelen",
+       "C": "beheer politiegegevens",
+       "D": "Wet politie gegevens",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 86
+     },
+     {
+      "cellen": {
+       "A": "86",
+       "B": "Jaarstukken",
+       "C": "Financiele verantwoording",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 87
+     },
+     {
+      "cellen": {
+       "A": "87",
+       "B": "Jubilaris aanmelden",
+       "C": "Personeelsadministratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 88
+     },
+     {
+      "cellen": {
+       "A": "88",
+       "B": "Juridische kwaliteitszorg uitvoeren",
+       "C": "Kwaliteitszorg",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 89
+     },
+     {
+      "cellen": {
+       "A": "89",
+       "B": "Kadernota",
+       "C": "Begroting en kadernota",
+       "D": "Artikel 213 Gemeentewet",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 90
+     },
+     {
+      "cellen": {
+       "A": "90",
+       "B": "Kantoorgebied melding afhandelen",
+       "C": "Facilitair onderhoud",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 91
+     },
+     {
+      "cellen": {
+       "A": "91",
+       "B": "Kasmutaties verwerken",
+       "C": "Boekhouden",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 92
+     },
+     {
+      "cellen": {
+       "A": "92",
+       "B": "Klacht behandelen",
+       "C": "Klachtafhandeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 93
+     },
+     {
+      "cellen": {
+       "A": "93",
+       "B": "Koffieautomaat storing verhelpen en onderhoud",
+       "C": "Facilitair onderhoud",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 94
+     },
+     {
+      "cellen": {
+       "A": "94",
+       "B": "Kwaliteitscontrole bedrijfsregister uitvoeren",
+       "C": "Kwaliteitsmanagement",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 95
+     },
+     {
+      "cellen": {
+       "A": "95",
+       "B": "Kwijtgeraakte toegangsdruppel blokkeren",
+       "C": "Faciliteiten beheer",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 96
+     },
+     {
+      "cellen": {
+       "A": "96",
+       "B": "Laptop en andere ICT faciliteiten uitlenen",
+       "C": "Faciliteiten uitgeven",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 97
+     },
+     {
+      "cellen": {
+       "A": "97",
+       "B": "Leerlijnen ontwikkelen",
+       "C": "Personeelsontwikkeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 98
+     },
+     {
+      "cellen": {
+       "A": "98",
+       "B": "Leges innen",
+       "C": "Leges innen",
+       "D": "Verordening op de heffing en de invordering van leges",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 99
+     },
+     {
+      "cellen": {
+       "A": "99",
+       "B": "Loonbeslag uitvoeren",
+       "C": "Salarisadministratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 100
+     },
+     {
+      "cellen": {
+       "A": "100",
+       "B": "Loonkostenverdeling actualiseren",
+       "C": "Salarisadministratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 101
+     },
+     {
+      "cellen": {
+       "A": "101",
+       "B": "Loopbaantraject uitvoeren",
+       "C": "Loopbaanontwikkeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 102
+     },
+     {
+      "cellen": {
+       "A": "102",
+       "B": "Lunch bestellen",
+       "C": "Catering",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 103
+     },
+     {
+      "cellen": {
+       "A": "103",
+       "B": "(Maand)afsluiting opstellen",
+       "C": "Maandelijkse financiele verantwoording",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Specifiek"
+      },
+      "rij": 104
+     },
+     {
+      "cellen": {
+       "A": "104",
+       "B": "(Maand) rapportage opstellen",
+       "C": "Financiele verantwoording",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 105
+     },
+     {
+      "cellen": {
+       "A": "105",
+       "B": "Marktconsultatie uitvoeren",
+       "C": "Inkoop",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 106
+     },
+     {
+      "cellen": {
+       "A": "106",
+       "B": "Mediabericht publiceren",
+       "C": "Gepubliceerd mediabericht",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Specifiek"
+      },
+      "rij": 107
+     },
+     {
+      "cellen": {
+       "A": "107",
+       "B": "Memorialen verwerken",
+       "C": "Boekhouden",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 108
+     },
+     {
+      "cellen": {
+       "A": "108",
+       "B": "Meubilair onderhoud en verhuizing",
+       "C": "Facilitair onderhoud",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 109
+     },
+     {
+      "cellen": {
+       "A": "109",
+       "B": "Migratie of conversie / Verklaring van migratie of conversie",
+       "C": "Archief beheer",
+       "D": "Artikel 25 Archiefregeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 110
+     },
+     {
+      "cellen": {
+       "A": "110",
+       "B": "Neveninkomsten (politieke) ambtsdrager verrekenen",
+       "C": "Salariskostenbeheer",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 111
+     },
+     {
+      "cellen": {
+       "A": "111",
+       "B": "Niet-standaard kantoorartikelen bestellen",
+       "C": "Kantoorartikelen bestellen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 112
+     },
+     {
+      "cellen": {
+       "A": "112",
+       "B": "Onboarding",
+       "C": "On boarding",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 113
+     },
+     {
+      "cellen": {
+       "A": "113",
+       "B": "Onderscheiding toekennen",
+       "C": "Onderscheiden van mensen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 114
+     },
+     {
+      "cellen": {
+       "A": "114",
+       "B": "Organisatieadvies leveren",
+       "C": "Bedrijfsvoeringsadvies",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 115
+     },
+     {
+      "cellen": {
+       "A": "115",
+       "B": "Organisatiewijziging uitvoeren",
+       "C": "P&O-administratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 116
+     },
+     {
+      "cellen": {
+       "A": "116",
+       "B": "P&O werkprocessen ontwikkelen",
+       "C": "Procesontwikkeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 117
+     },
+     {
+      "cellen": {
+       "A": "117",
+       "B": "PAGO/PMO aanbieden",
+       "C": "Vitaliteit",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 118
+     },
+     {
+      "cellen": {
+       "A": "118",
+       "B": "Papier en enveloppen bestellen",
+       "C": "Kantoorartikelen bestellen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 119
+     },
+     {
+      "cellen": {
+       "A": "119",
+       "B": "Persbericht uitsturen",
+       "C": "Uitgestuurd persbericht",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Generiek"
+      },
+      "rij": 120
+     },
+     {
+      "cellen": {
+       "A": "120",
+       "B": "Personeelsadvies leveren",
+       "C": "Bedrijfsvoeringsadvies",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 121
+     },
+     {
+      "cellen": {
+       "A": "121",
+       "B": "Personeelsmutaties verwerken",
+       "C": "P&O-administratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 122
+     },
+     {
+      "cellen": {
+       "A": "122",
+       "B": "Personeelsplanning adviseren",
+       "C": "Bedrijfsvoeringsadvies",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 123
+     },
+     {
+      "cellen": {
+       "A": "123",
+       "B": "Persoonlijk Keuze Budget (PKB) beheren",
+       "C": "Financiele administratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 124
+     },
+     {
+      "cellen": {
+       "A": "124",
+       "B": "Persvraag beantwoorden",
+       "C": "Beantwoorde persvraag",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Specifiek"
+      },
+      "rij": 125
+     },
+     {
+      "cellen": {
+       "A": "125",
+       "B": "Procesontwerp",
+       "C": "Procesmanagement",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 126
+     },
+     {
+      "cellen": {
+       "A": "126",
+       "B": "Procesarchitectuur beheren",
+       "C": "Procesarchitectuur",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 127
+     },
+     {
+      "cellen": {
+       "A": "127",
+       "B": "Gescande post",
+       "C": "Postbehandeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 128
+     },
+     {
+      "cellen": {
+       "A": "128",
+       "B": "Procesarchitectuur ontwerpen",
+       "C": "Procesarchitectuur",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 129
+     },
+     {
+      "cellen": {
+       "A": "129",
+       "B": "Processen beschrijven",
+       "C": "Procesadministratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 130
+     },
+     {
+      "cellen": {
+       "A": "130",
+       "B": "Procesvraagstukken begeleiden",
+       "C": "Projectmatig werken",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 131
+     },
+     {
+      "cellen": {
+       "A": "131",
+       "B": "Programmamanagement",
+       "C": "Programmamanagement",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 132
+     },
+     {
+      "cellen": {
+       "A": "132",
+       "B": "Projectportfolio beheren",
+       "C": "Portfoliomanagement",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 133
+     },
+     {
+      "cellen": {
+       "A": "133",
+       "B": "Publicaties uitgeven",
+       "C": "Archief beheer",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Generiek"
+      },
+      "rij": 134
+     },
+     {
+      "cellen": {
+       "A": "134",
+       "B": "Raadsbesluit",
+       "C": "Raadsbesluit",
+       "D": "Artikel 147 Gemeentewet",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 135
+     },
+     {
+      "cellen": {
+       "A": "135",
+       "B": "Recht op dataportibiliteid persoonsgegevens beoordelen",
+       "C": "beheer basisregistraties",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 136
+     },
+     {
+      "cellen": {
+       "A": "137",
+       "B": "Rechtspositie medewerker behandelen",
+       "C": "Rechtspositie",
+       "D": "Wet normalisering rechtspositie ambtenaren",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 137
+     },
+     {
+      "cellen": {
+       "A": "138",
+       "B": "Rectificatieverzoek politiegegevens behandelen",
+       "C": "beheer politiegegevens",
+       "D": "Wet politie gegevens",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 138
+     },
+     {
+      "cellen": {
+       "A": "139",
+       "B": "Regelgeving en verordeningen opstellen",
+       "C": "Regelgeving en verordeningen opstellen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 139
+     },
+     {
+      "cellen": {
+       "A": "140",
+       "B": "Rekenkameronderzoek",
+       "C": "Rekenkameronderzoek",
+       "D": "Artikel 182 Gemeentewet",
+       "F": "Sturend",
+       "G": "Bestuur",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 140
+     },
+     {
+      "cellen": {
+       "A": "141",
+       "B": "Relatiebeheer",
+       "C": "Accountmanagement relaties extern",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 141
+     },
+     {
+      "cellen": {
+       "A": "142",
+       "B": "Relatiegeschenken aanbieden",
+       "C": "Representatie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Generiek"
+      },
+      "rij": 142
+     },
+     {
+      "cellen": {
+       "A": "143",
+       "B": "Reserves en voorzieningen beheren",
+       "C": "Beheerde gelden",
+       "D": "Artikel 213 Gemeentewet",
+       "E": "Artikel 229b Gemeentewet",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 143
+     },
+     {
+      "cellen": {
+       "A": "144",
+       "B": "Risico Inventarisatie & Evaluatie",
+       "C": "Arbo",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 144
+     },
+     {
+      "cellen": {
+       "A": "145",
+       "B": "Salarismutaties en declaraties verwerken",
+       "C": "Salarisadministratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 145
+     },
+     {
+      "cellen": {
+       "A": "146",
+       "B": "Salaris verwerking",
+       "C": "Salarisadministratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 146
+     },
+     {
+      "cellen": {
+       "A": "147",
+       "B": "Schadeclaim behandelen",
+       "C": "Schadeclaim behandelen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 147
+     },
+     {
+      "cellen": {
+       "A": "148",
+       "B": "Schadeverhaal uitvoeren",
+       "C": "Schadeverhaal",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 148
+     },
+     {
+      "cellen": {
+       "A": "149",
+       "B": "Schatkistbankieren verwerken",
+       "C": "Boekhouden",
+       "D": "Regeling schatkistbankieren decentrale overheden",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 149
+     },
+     {
+      "cellen": {
+       "A": "150",
+       "B": "Schoonmaak",
+       "C": "Gebouwen onderhoud",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 150
+     },
+     {
+      "cellen": {
+       "A": "151",
+       "B": "Stages",
+       "C": "Stagebegeleiding",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 151
+     },
+     {
+      "cellen": {
+       "A": "152",
+       "B": "Standaarden en richtlijnen procesmatig werken opstellen",
+       "C": "Beleid",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Specifiek"
+      },
+      "rij": 152
+     },
+     {
+      "cellen": {
+       "A": "153",
+       "B": "Strategische kaders ontwikkelen",
+       "C": "Strategische kaders",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 153
+     },
+     {
+      "cellen": {
+       "A": "154",
+       "B": "Talentontwikkeling onderzoek",
+       "C": "Loopbaanontwikkeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Specifiek"
+      },
+      "rij": 154
+     },
+     {
+      "cellen": {
+       "A": "155",
+       "B": "Teamplan opstellen",
+       "C": "Teamplan ",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Specifiek"
+      },
+      "rij": 155
+     },
+     {
+      "cellen": {
+       "A": "156",
+       "B": "Toegangsdruppel/toegangspas beheren",
+       "C": "Faciliteiten uitgeven",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Specifiek"
+      },
+      "rij": 156
+     },
+     {
+      "cellen": {
+       "A": "157",
+       "B": "Toegangssleutel(s)",
+       "C": "Faciliteiten uitgeven",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Specifiek"
+      },
+      "rij": 157
+     },
+     {
+      "cellen": {
+       "A": "158",
+       "B": "Toezichtverslag informatie- en archiefbeheer",
+       "C": "Archief beheer",
+       "D": "Artikel 32 Archiefwet 1995",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 158
+     },
+     {
+      "cellen": {
+       "A": "159",
+       "B": "Trainingen en opleidingen organiseren",
+       "C": "Personeelsontwikkeling",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 159
+     },
+     {
+      "cellen": {
+       "A": "160",
+       "B": "Treasury uitvoeren",
+       "C": "Beheerde gelden",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 160
+     },
+     {
+      "cellen": {
+       "A": "161",
+       "B": "Tussenrekeningen beheren",
+       "C": "Boekhouden",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 161
+     },
+     {
+      "cellen": {
+       "A": "162",
+       "B": "Uitnodiging B&W behandelen",
+       "C": "Behandelde uitnodiging B&W",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 162
+     },
+     {
+      "cellen": {
+       "A": "163",
+       "B": "Uitvoeren evaluaties (preventiemedewerkers, beeldschermwerk, etc)",
+       "C": "Arbo",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 163
+     },
+     {
+      "cellen": {
+       "A": "164",
+       "B": "Uitwijktest uitvoeren",
+       "C": "Informatiebeveiliging",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 164
+     },
+     {
+      "cellen": {
+       "A": "165",
+       "B": "Verbijzonderde interne controle uitvoeren",
+       "C": "Interne controle",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 165
+     },
+     {
+      "cellen": {
+       "A": "166",
+       "B": "Vergadermiddelen en -ondersteuning",
+       "C": "Faciliteiten uitgeven",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Huisvesting (inc. Facilitair)",
+       "I": "Generiek"
+      },
+      "rij": 166
+     },
+     {
+      "cellen": {
+       "A": "167",
+       "B": "Verklaring van vervreemding ",
+       "C": "Archief beheer",
+       "D": "Artikel 8 Archiefbesluit 1995",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 167
+     },
+     {
+      "cellen": {
+       "A": "168",
+       "B": "Vernietingsverzoek politiegegevens behandelen",
+       "C": "beheer politiegegevens",
+       "D": "Wet politie gegevens",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 168
+     },
+     {
+      "cellen": {
+       "A": "169",
+       "B": "Vervangingsbesluit / Handboek vervanging verklaring van vervanging",
+       "C": "Archief beheer",
+       "D": "Artikel 7 Archiefwet 1995",
+       "E": "Artikel 6 Archiefbesluit 1995",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 169
+     },
+     {
+      "cellen": {
+       "A": "170",
+       "B": "Verwerkers- of gegevensuitwisselingsovereenkomst opstellen",
+       "C": "Informatiebeveiliging",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 170
+     },
+     {
+      "cellen": {
+       "A": "171",
+       "B": "Verzekeringen beheren",
+       "C": "Beheerde verzekeringen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 171
+     },
+     {
+      "cellen": {
+       "A": "172",
+       "B": "Verzoek beperken verwerking persoonsgegevens beoordelen",
+       "C": "beheer basisregistraties",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 172
+     },
+     {
+      "cellen": {
+       "A": "173",
+       "B": "Verzoek corrigeren persoonsgegevens beoordelen",
+       "C": "beheer basisregistraties",
+       "D": "Wet basisregistratie personen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 173
+     },
+     {
+      "cellen": {
+       "A": "174",
+       "B": "Verzoek verstrekking politiegegevens behandelen",
+       "C": "beheer polititegegevens",
+       "D": "Wet politie gegevens",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 174
+     },
+     {
+      "cellen": {
+       "A": "175",
+       "B": "Verzoek verwijderen persoonsgegevens beoordelen",
+       "C": "beheer basisregistraties",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 175
+     },
+     {
+      "cellen": {
+       "A": "176",
+       "B": "Verzuimbegeleiding",
+       "C": "Verzuimbegeleiding",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 176
+     },
+     {
+      "cellen": {
+       "A": "177",
+       "B": "Visie opstellen",
+       "C": "Visie opstellen",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Organisatie",
+       "I": "Generiek"
+      },
+      "rij": 177
+     },
+     {
+      "cellen": {
+       "A": "178",
+       "B": "Voorlichting veiligheidsmaatregelen uitvoeren",
+       "C": "Arbo",
+       "D": "Arbowetgeving 2017",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 178
+     },
+     {
+      "cellen": {
+       "A": "179",
+       "B": "Voortgangsraportage opstellen",
+       "C": "Voortgang verantwoording",
+       "F": "Sturend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 179
+     },
+     {
+      "cellen": {
+       "A": "180",
+       "B": "Websiteaanvraag behandelen",
+       "C": "Contentbeheer",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 180
+     },
+     {
+      "cellen": {
+       "A": "181",
+       "B": "Werkdrukonderzoek uitvoeren",
+       "C": "Arbo",
+       "D": "Arbowetgeving 2017",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 181
+     },
+     {
+      "cellen": {
+       "A": "182",
+       "B": "Werkkostenregeling toepassen",
+       "C": "Salarisadministratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 182
+     },
+     {
+      "cellen": {
+       "A": "183",
+       "B": "Werkplekbeheer",
+       "C": "Beheer informatiesystemen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 183
+     },
+     {
+      "cellen": {
+       "A": "184",
+       "B": "Werving en selectie uitvoeren",
+       "C": "Werving en selectie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 184
+     },
+     {
+      "cellen": {
+       "A": "185",
+       "B": "Wijzigingsbeheer",
+       "C": "Wijzigingsbeheer",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 185
+     },
+     {
+      "cellen": {
+       "A": "186",
+       "B": "Woordvoering ",
+       "C": "Woordvoering",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Generiek"
+      },
+      "rij": 186
+     },
+     {
+      "cellen": {
+       "A": "187",
+       "B": "Adresonderzoek",
+       "C": "beheer basisregistraties",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 187
+     },
+     {
+      "cellen": {
+       "A": "188",
+       "B": "Rechtspositie ambtsdrager behandelen",
+       "C": "Rechtspositie",
+       "D": "Wet normalisering rechtspositie ambtenaren",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 188
+     },
+     {
+      "cellen": {
+       "A": "189",
+       "B": "Digitoegankelijke website en andere ICT voorzieningen",
+       "C": "Contentbeheer",
+       "D": "EN 301 549 en Wet digitale overheid (Wdo) ",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 189
+     },
+     {
+      "cellen": {
+       "A": "190",
+       "B": "IT asset management",
+       "C": "Beheer ICT voorzieningen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 190
+     },
+     {
+      "cellen": {
+       "A": "191",
+       "B": "Problem management",
+       "C": "Beheer ICT voorzieningen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 191
+     },
+     {
+      "cellen": {
+       "A": "192",
+       "B": "Life cycle managemenet",
+       "C": "Beheer ICT voorzieningen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 192
+     },
+     {
+      "cellen": {
+       "A": "193",
+       "B": "Back up en Restore ICT voorzieningen",
+       "C": "Informatiebeveiliging",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 193
+     },
+     {
+      "cellen": {
+       "A": "194",
+       "B": "Monitoren beschikbaarheid ICT voorzieningen",
+       "C": "Informatiebeveiliging",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 194
+     },
+     {
+      "cellen": {
+       "A": "195",
+       "B": "Gebruikersondersteuning",
+       "C": "Beheer ICT voorzieningen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 195
+     },
+     {
+      "cellen": {
+       "A": "196",
+       "B": "Informatie beveiligen",
+       "C": "Infomatiebeveiliging",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 196
+     },
+     {
+      "cellen": {
+       "A": "197",
+       "B": "Interne communicatie",
+       "C": "Communicatie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Generiek"
+      },
+      "rij": 197
+     },
+     {
+      "cellen": {
+       "A": "198",
+       "B": "Organiseren van bewonersparticipatie",
+       "C": "Communicatie extern",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Generiek"
+      },
+      "rij": 198
+     },
+     {
+      "cellen": {
+       "A": "199",
+       "B": "Risicomanagement",
+       "C": "Kwaliteits- en risico management",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 199
+     },
+     {
+      "cellen": {
+       "A": "200",
+       "B": "Compliancy wetgeving/kaders",
+       "C": "Compliancy",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 200
+     },
+     {
+      "cellen": {
+       "A": "201",
+       "B": "Integriteit en ethische verantwoordelijkheid organisatie beoordelen",
+       "C": "Integriteit",
+       "F": "Ondersteunend",
+       "G": "Bestuur",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 201
+     },
+     {
+      "cellen": {
+       "A": "202",
+       "B": "Juridisch advies en procesvertegenwoordiging",
+       "C": "Juridisch",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Juridisch",
+       "I": "Generiek"
+      },
+      "rij": 202
+     },
+     {
+      "cellen": {
+       "A": "203",
+       "B": "Managementondersteuning",
+       "C": "Secretariaat",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Algemene Zaken (incl Administratieve organisatie",
+       "I": "Generiek"
+      },
+      "rij": 203
+     },
+     {
+      "cellen": {
+       "A": "204",
+       "B": "Open data ontsluiten",
+       "C": "Informatievoorziening",
+       "D": "Wet hergebruik van Overheidsinformatie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 204
+     },
+     {
+      "cellen": {
+       "A": "205",
+       "B": "Advisering Functionaris Gegevensbescherming/Privacy Officer",
+       "C": "Privacy",
+       "D": "Uitvoeringswet Agemene verordening gegevensbescherming",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 205
+     },
+     {
+      "cellen": {
+       "A": "206",
+       "B": "Informatie voor derden IV3 verstrekken",
+       "C": "Financiele administratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 206
+     },
+     {
+      "cellen": {
+       "A": "207",
+       "B": "Urenregistratie",
+       "C": "Financiele administratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Financiën (incl. Inkoop)",
+       "I": "Generiek"
+      },
+      "rij": 207
+     },
+     {
+      "cellen": {
+       "A": "208",
+       "B": "Werken onder architectuur borgen",
+       "C": "Enterprise Architectuur",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 208
+     },
+     {
+      "cellen": {
+       "A": "209",
+       "B": "Data management",
+       "C": "Datamanagement",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 209
+     },
+     {
+      "cellen": {
+       "A": "210",
+       "B": "Verzoek verwijderen van data en hardware behandelen",
+       "C": "Beheer ICT voorzieningen",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 210
+     },
+     {
+      "cellen": {
+       "A": "211",
+       "B": "Anomiseren documenten",
+       "C": "Documentbeheer",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Informatievoorziening en Privacy",
+       "I": "Generiek"
+      },
+      "rij": 211
+     },
+     {
+      "cellen": {
+       "A": "212",
+       "B": "Inhuur",
+       "C": "Werving en selectie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 212
+     },
+     {
+      "cellen": {
+       "A": "213",
+       "B": "Medewerkersonderzoek",
+       "C": "Personeelbeheer",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 213
+     },
+     {
+      "cellen": {
+       "A": "214",
+       "B": "Bedrijfscontinuiteit plan opstellen",
+       "C": "Beleid",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Security",
+       "I": "Generiek"
+      },
+      "rij": 214
+     },
+     {
+      "cellen": {
+       "A": "215",
+       "B": "Verlofregistratie en roosterplanning",
+       "C": "Tijdregistratie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Personeel",
+       "I": "Generiek"
+      },
+      "rij": 215
+     },
+     {
+      "cellen": {
+       "A": "216",
+       "B": "Redactie",
+       "F": "Ondersteunend",
+       "G": "Ondersteuning",
+       "H": "Communicatie",
+       "I": "Generiek"
+      },
+      "rij": 216
+     }
+    ]
+   },
+   {
+    "naam": "Toelichting tabel",
+    "rijen": [
+     {
+      "cellen": {
+       "A": "Soort product",
+       "B": "GEMMA domein",
+       "C": "SCOPAFIJTH",
+       "D": "Generiek/specifiek"
+      },
+      "rij": 1
+     },
+     {
+      "cellen": {
+       "A": "Sturend",
+       "B": "Sociaal",
+       "C": "Security",
+       "D": "Generiek"
+      },
+      "rij": 2
+     },
+     {
+      "cellen": {
+       "A": "Ondersteunend",
+       "B": "Ondersteuning",
+       "C": "Communicatie",
+       "D": "Specifiek"
+      },
+      "rij": 3
+     },
+     {
+      "cellen": {
+       "B": "Dienstverlening",
+       "C": "Organisatie"
+      },
+      "rij": 4
+     },
+     {
+      "cellen": {
+       "B": "Fysiek",
+       "C": "Personeel"
+      },
+      "rij": 5
+     },
+     {
+      "cellen": {
+       "B": "Bestuur",
+       "C": "Algemene Zaken (incl Administratieve organisatie"
+      },
+      "rij": 6
+     },
+     {
+      "cellen": {
+       "B": "Ketenpartners",
+       "C": "Financiën (incl. Inkoop)"
+      },
+      "rij": 7
+     },
+     {
+      "cellen": {
+       "B": "Veiligheid",
+       "C": "Informatievoorziening en Privacy"
+      },
+      "rij": 8
+     },
+     {
+      "cellen": {
+       "C": "Juridisch"
+      },
+      "rij": 9
+     },
+     {
+      "cellen": {
+       "C": "Technologie"
+      },
+      "rij": 10
+     },
+     {
+      "cellen": {
+       "C": "Huisvesting (inc. Facilitair)"
+      },
+      "rij": 11
+     },
+     {
+      "cellen": {
+       "C": "N.v.t."
+      },
+      "rij": 12
+     },
+     {
+      "cellen": {
+       "C": "Generiek"
+      },
+      "rij": 13
+     },
+     {
+      "cellen": {
+       "A": "Versiebeheer"
+      },
+      "rij": 16
+     },
+     {
+      "cellen": {
+       "A": "versie 0.9",
+       "B": "Voorgelegd aan expertgroep GEMMA procesarchitectuur ",
+       "D": "45735"
+      },
+      "rij": 18
+     },
+     {
+      "cellen": {
+       "A": "versie 1.0",
+       "B": "Vastgesteld in expergroep GEMMA procesarchitectuur en 1.0 versie van gemaakt",
+       "D": "45744"
+      },
+      "rij": 19
+     },
+     {
+      "cellen": {
+       "A": "Versie 1.1",
+       "B": "Afgestemd met release UPL april 2025",
+       "D": "45801"
+      },
+      "rij": 20
+     },
+     {
+      "cellen": {
+       "A": "Versie 1.2",
+       "B": "Wetgeving nog toegevoegd en opmaak nog verbeterd en generieker gemaakt en reviewversie klankbordgroep",
+       "D": "45821"
+      },
+      "rij": 21
+     }
+    ]
+   }
+  ]
+ }
+}

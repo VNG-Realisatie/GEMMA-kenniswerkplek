@@ -15,7 +15,7 @@ Nieuwe GGM-terugmeldingen in `modellen/ggm/terugmeldingen.yaml` krijgen het volg
 
 Harde controles (fout: er wordt niets geschreven): schema, kenmerken, verplichte velden van een element, bestaan van
 bronnen (met bronduiding), GGM-guid, GEMMA-id, doelen van relaties, specialisaties, tegenhanger en homoniemen, de
-ArchiMate-relatietabel, de bronduidingen, de gegenereerde modelmappen, het veld `object_van` (Archi-objecten), het register van beleidsdomeinen (`modellen/gemma/indelingen/beleidsdomeinen.yaml`) en de besluiten van onderwerpen en beoordelingen (vorm, geen bestandspad). Zachte signalen (waarschuwingen, met de naam
+ArchiMate-relatietabel, de bronduidingen, de omzettingen van de modellen in `sources/modellen/`, het veld `object_van` (Archi-objecten), het register van beleidsdomeinen (`modellen/gemma/indelingen/beleidsdomeinen.yaml`) en de besluiten van onderwerpen en beoordelingen (vorm, geen bestandspad). Zachte signalen (waarschuwingen, met de naam
 van de regel) staan in tools/signalen.py. Daarna draait het render-script (tools/render.py), tenzij `--zonder-render`.
 
 Gebruik (vanuit de wikimap):
@@ -87,13 +87,13 @@ class Context:
     def ggm(self) -> dict:
         if self._ggm is None:
             import ggm
-            self._ggm = ggm.laad(self.wiki_root / "ggm" / "ggm_parsed.json")
+            self._ggm = ggm.laad(gam_gemeen.model_json(self.wiki_root, "ggm"))
         return self._ggm
 
     def gemma(self) -> dict:
         if self._gemma is None:
             import gemma
-            self._gemma = gemma.laad(self.wiki_root / "gemma" / "gemma_parsed.json")
+            self._gemma = gemma.laad(gam_gemeen.model_json(self.wiki_root, "gemma"))
         return self._gemma
 
     def brontype(self, bron_id: str) -> str | None:
@@ -220,7 +220,7 @@ def _controleer_bronnen(ctx: Context, bid: str, bronnen: list[str], res: Resulta
         if ctx.brontype(bron_id) is None:
             res.fouten.append(f"{bid}: bron {bron_id} staat niet in sources/index")
         elif gam_gemeen.bron_doel(ctx.wiki_root, bron_id) is None:
-            res.fouten.append(f"{bid}: bron {bron_id} heeft geen bronduiding (of, bij een modelbron, geen tekst in sources/raw)")
+            res.fouten.append(f"{bid}: bron {bron_id} heeft geen bronduiding (of, bij een modelbron, geen tekst in laag 1)")
 
 
 def herkomst(ctx: Context, bronnen: list[str]) -> str | None:
@@ -455,7 +455,7 @@ def _gemma_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Result
     `naam`, zoals in het GEMMA-model)."""
     register = _terugmeldingen(ctx, uitkomsten, res, GEMMA_TERUGMELDINGEN, GEMMA_TYPEN, ("bevinding",),
                                "GEMMA-terugmelding")
-    gemma_model = (ctx.wiki_root / "gemma" / "gemma_parsed.json").exists()
+    gemma_model = gam_gemeen.model_json(ctx.wiki_root, "gemma").exists()
     for m in (register or {}).get("terugmeldingen", []):
         if not m.get("elementen") and not m.get("gemma_elementen"):
             res.fouten.append(f"GEMMA-terugmelding {m['nummer']}: noem 'elementen' of 'gemma_elementen'")
@@ -581,10 +581,10 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
                               "(regel Thuishoren)")
         _besluiten_onderwerp(oid, onderwerp, begripnamen, res)
     if any(u["paginatype"] in ("product", "dienst") for u in elementen.values()) \
-            and (wiki_root / "gemma" / "gemma_parsed.json").exists():
+            and gam_gemeen.model_json(wiki_root, "gemma").exists():
         res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,
                                                               ctx.gemma(), gemeld)
-    res.fouten += signalen.bronduidingen(wiki_root, onderwerpen) + signalen.modelmappen(wiki_root)
+    res.fouten += signalen.bronduidingen(wiki_root, onderwerpen) + signalen.modelbestanden(wiki_root)
     fouten, waarschuwingen = signalen.wettelijke_grondslag({b: nieuw.get(b, alle[b][1]) for b in alle}, elementen,
                                                            lambda i: gam_gemeen.brontype(wiki_root, i))
     res.fouten += fouten

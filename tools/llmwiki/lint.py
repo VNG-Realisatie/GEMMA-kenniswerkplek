@@ -108,11 +108,12 @@ def run_lint(repo_root: Path) -> list[str]:
 
 
 def check_sources_immutable(repo_root: Path, changed_paths: list[str]) -> list[str]:
-    """changed_paths: paden (relatief aan repo_root) die gewijzigd/verwijderd zijn (geen toevoeging)."""
+    """changed_paths: paden (relatief aan repo_root) die gewijzigd/verwijderd zijn (geen toevoeging). Een verplaatsing
+    zonder inhoudswijziging, zoals van sources/raw/ naar sources/modellen/, telt niet mee (zie cli `_git_changed_paths`)."""
     errors = []
     for rel_path in changed_paths:
-        if rel_path.startswith("sources/raw/"):
-            errors.append(f"{rel_path}: bestanden in sources/raw/ mogen alleen worden toegevoegd, nooit gewijzigd of verwijderd")
+        if rel_path.startswith(("sources/raw/", "sources/modellen/")):
+            errors.append(f"{rel_path}: bestanden in sources/raw/ en sources/modellen/ mogen alleen worden toegevoegd, nooit gewijzigd of verwijderd")
     return errors
 
 

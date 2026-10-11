@@ -4,7 +4,7 @@ Een waarschuwing noemt de regel uit AGENTS.md of kennismodel/modelleerregels.md 
 inhoudelijk: oplossen in de beoordeling, of toelichten als de tekst terecht is. Een waarschuwing houdt niets tegen.
 
 Harde controles (fouten) gaan over wat de AI met de hand schrijft buiten de beoordelingen: de bronduidingen (de
-bronduiding, schakel in de herleidbaarheid) en de gegenereerde modelmappen `ggm/` en `gemma/`.
+bronduiding, schakel in de herleidbaarheid) en de omzettingen van de modellen in `sources/modellen/`.
 """
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from pathlib import Path
 import bepaal_type
 import gam_gemeen
 import kennismodel as km
-from llmwiki import frontmatter, paths
+from llmwiki import frontmatter, modellen, paths, sources
 
 VERBODEN_ZINNEN = ("structureel buiten scope", "structureel out-of-scope", "structureel geen ggm-match",
                    "per definitie", "ggm modelleert nooit")
@@ -370,7 +370,7 @@ def modulariteit(alle: dict[str, dict], uitkomsten: dict[str, dict | None], onde
 
 
 def bronduidingen(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
-    """Harde controles op de bronduiding: plaats, eigen bron-id, de regel 'Bron:' naar sources/raw, de relatietabel,
+    """Harde controles op de bronduiding: plaats, eigen bron-id, de regel 'Bron:' naar laag 1 (sources/raw of sources/modellen), de relatietabel,
     en dat de bron in de bronnenlijst van het onderwerp staat."""
     fouten = []
     repo = paths.find_repo_root(wiki_root)
@@ -388,11 +388,12 @@ def bronduidingen(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
             fouten.append(f"{rel}: hoort in {'modellen' if model else 'onderwerpen'}/{model or onderwerp}/bronduidingen/{soort}/")
         if bron_id != pad.stem or bron_id not in (page.meta.get("bronnen") or []):
             fouten.append(f"{rel}: id is de bestandsnaam en staat zelf in bronnen:")
-        tekst = (repo / "sources" / "raw" / f"{bron_id}.md").resolve()
+        laag1 = sources.bron_dir(repo, bron_id)
+        tekst = {(laag1 / f"{bron_id}.md").resolve(), (laag1 / f"{bron_id}.json").resolve()}  # de tekst, of bij een model de omzetting
         regel = re.search(r"(?m)^Bron: .*$", page.body)
         gelinkt = {gam_gemeen.doel_van_link(pad, m.group("doel")) for m in gam_gemeen.LINK_RE.finditer(regel.group(0))} if regel else set()
-        if tekst not in gelinkt:
-            fouten.append(f"{rel}: onder de titel ontbreekt 'Bron:' met een link naar sources/raw/{bron_id}.md "
+        if not tekst & gelinkt:
+            fouten.append(f"{rel}: onder de titel ontbreekt 'Bron:' met een link naar de tekst van de bron in laag 1 ({bron_id}.md) "
                           f"(llmwiki source bronregel {bron_id} --van <pad> --schrijf)")
         rijen = gam_gemeen.tabel(gam_gemeen.sectie(page.body, "Relaties"))
         if rijen and not {"Van", "Werkwoord", "Naar", "Vindplaats"} <= set(rijen[0]):
@@ -402,18 +403,15 @@ def bronduidingen(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
     return fouten
 
 
-def modelmappen(wiki_root: Path) -> list[str]:
-    """`ggm/` en `gemma/` zijn gegenereerd door tools/ggm.py en tools/gemma.py en worden niet met de hand bewerkt."""
+def modelbestanden(wiki_root: Path) -> list[str]:
+    """De omzettingen van het GGM en het GEMMA-model in `sources/modellen/` zijn gemaakt door llmwiki en worden niet met
+    de hand bewerkt."""
     fouten = []
-    for map_ in ("ggm", "gemma"):
-        for pad in sorted((wiki_root / map_).rglob("*")):
-            melding = None
-            if pad.suffix == ".md":
-                melding = gam_gemeen.controleer_gegenereerd(pad)
-            elif pad.suffix == ".json":
-                melding = gam_gemeen.controleer_json_gegenereerd(pad)
-            if melding:
-                fouten.append(f"{pad.relative_to(wiki_root).as_posix()}: {melding}")
+    for sleutel in ("ggm", "gemma"):
+        pad = gam_gemeen.model_json(wiki_root, sleutel)
+        melding = modellen.controleer_json(pad) if pad.exists() else None
+        if melding:
+            fouten.append(melding)
     return fouten
 
 

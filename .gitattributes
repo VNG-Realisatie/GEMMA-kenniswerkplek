@@ -16,3 +16,6 @@
 # Originelen in sources/raw zijn letterlijke kopieën (hash in de intake): regeleinden niet omzetten
 sources/raw/*.xml -text
 sources/raw/*.archimate -text
+sources/modellen/*.xml -text
+sources/modellen/*.archimate -text
+sources/modellen/*.json -text

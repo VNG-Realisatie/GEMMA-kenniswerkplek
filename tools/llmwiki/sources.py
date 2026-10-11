@@ -1,4 +1,5 @@
-"""Bronbeheer: laag 1 (sources/raw, onveranderlijk) en laag 2 (sources/index, gedeelde intake)."""
+"""Bronbeheer: laag 1 (sources/raw voor documenten, sources/modellen voor modellen en lijsten; onveranderlijk) en laag 2
+(sources/index, gedeelde intake)."""
 from __future__ import annotations
 
 import re
@@ -6,7 +7,7 @@ import shutil
 import subprocess
 from pathlib import Path
 
-from . import frontmatter, hashing
+from . import frontmatter, hashing, modellen
 
 BRON_ID_PATTERN = re.compile(r"^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$")
 
@@ -21,6 +22,15 @@ class ConversionError(RuntimeError):
 
 def _raw_dir(repo_root: Path) -> Path:
     return repo_root / "sources" / "raw"
+
+
+def _modellen_dir(repo_root: Path) -> Path:
+    return repo_root / "sources" / "modellen"
+
+
+def bron_dir(repo_root: Path, bron_id: str) -> Path:
+    """De map van laag 1 waar een bron staat: `sources/modellen/` voor een model of lijst, anders `sources/raw/`."""
+    return _modellen_dir(repo_root) if any(_modellen_dir(repo_root).glob(f"{bron_id}.*")) else _raw_dir(repo_root)
 
 
 def _index_dir(repo_root: Path) -> Path:
@@ -85,31 +95,42 @@ def add(
     url: str = "",
     url_pagina: str = "",
     opgehaald: str = "",
+    vorm: str | None = None,
 ) -> Path:
+    """Voeg een bron toe aan laag 1. Een model of lijst (ArchiMate, XMI, xlsx) gaat naar `sources/modellen/` met een
+    omzetting naar JSON; een document naar `sources/raw/` met een omzetting naar Markdown. `vorm` `document` dwingt
+    `raw` af; de vorm bepaalt alleen de map, niet de rol van de bron (`brontype`)."""
     if brontype and brontype not in BRONTYPEN:
         raise ValueError(f"Onbekend brontype '{brontype}'; kies uit {', '.join(BRONTYPEN)}")
     if not BRON_ID_PATTERN.match(bron_id):
         raise ValueError(
             f"Ongeldig bron-id '{bron_id}': verwacht '<jaar>-<uitgever>-<korte-titel>', kleine letters en koppeltekens"
         )
-    raw_dir = _raw_dir(repo_root)
     index_dir = _index_dir(repo_root)
-    raw_dir.mkdir(parents=True, exist_ok=True)
     index_dir.mkdir(parents=True, exist_ok=True)
 
-    existing = list(raw_dir.glob(f"{bron_id}.*"))
+    existing = [*_raw_dir(repo_root).glob(f"{bron_id}.*"), *_modellen_dir(repo_root).glob(f"{bron_id}.*")]
     if existing:
         raise SourceExistsError(f"Bron-id '{bron_id}' bestaat al: {existing}")
 
     original = Path(original)
-    # Eerst converteren, dan kopiëren: een mislukte conversie laat niets achter in sources/raw/.
-    md_text = (
-        markdown_override.read_text(encoding="utf-8") if markdown_override else _convert_to_markdown(original, url)
-    )
+    model_vorm = None if vorm == "document" else (vorm or modellen.herken(original))
+    raw_dir = _modellen_dir(repo_root) if model_vorm else _raw_dir(repo_root)
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    # Eerst converteren, dan kopiëren: een mislukte conversie laat niets achter in laag 1.
+    if model_vorm:
+        model_vorm, model_data = modellen.converteer(original, model_vorm)
+        md_text = markdown_override.read_text(encoding="utf-8") if markdown_override else None
+    else:
+        md_text = (
+            markdown_override.read_text(encoding="utf-8") if markdown_override else _convert_to_markdown(original, url)
+        )
     dest_original = raw_dir / f"{bron_id}{original.suffix.lower()}"
     shutil.copyfile(original, dest_original)
     dest_md = raw_dir / f"{bron_id}.md"
-    if dest_md != dest_original:
+    if model_vorm:
+        modellen.schrijf_json(raw_dir / f"{bron_id}.json", model_vorm, model_data)
+    if md_text is not None and dest_md != dest_original:
         dest_md.write_text(md_text, encoding="utf-8", newline="\n")
 
     bron_hash = hashing.hash_file(dest_original)
@@ -180,7 +201,8 @@ def add_from_url(repo_root: Path, bron_id: str, url: str, workdir: Path, **kwarg
     tijdelijk = workdir / f"{bron_id}{fetch.extension_for(opgehaald)}"
     tijdelijk.write_bytes(opgehaald.inhoud)
     markdown_override = kwargs.pop("markdown_override", None)
-    if markdown_override is None:
+    is_model = kwargs.get("vorm") != "document" and modellen.herken(tijdelijk) is not None
+    if markdown_override is None and not is_model:
         md_path = workdir / f"{bron_id}.conversie.md"
         md_path.write_text(_convert_to_markdown(tijdelijk, url), encoding="utf-8")
         markdown_override = md_path
@@ -199,15 +221,21 @@ def add_from_url(repo_root: Path, bron_id: str, url: str, workdir: Path, **kwarg
 
 
 def raw_paden(repo_root: Path, bron_id: str) -> tuple[Path | None, Path | None]:
-    """(Markdown-versie, origineel) van een bron in sources/raw/; None als het bestand ontbreekt.
+    """(Markdown-versie, origineel) van een bron in sources/raw/ of sources/modellen/; None als het bestand ontbreekt.
 
     Is het origineel zelf Markdown, dan is het origineel None (het is de Markdown-versie).
     """
     meta = read_index_entry(repo_root, bron_id)
-    md = _raw_dir(repo_root) / f"{bron_id}.md"
+    md = bron_dir(repo_root, bron_id) / f"{bron_id}.md"
     origineel = repo_root / meta["pad"] if meta.get("pad") else None
     return (md if md.exists() else None,
             origineel if origineel and origineel != md and origineel.exists() else None)
+
+
+def json_pad(repo_root: Path, bron_id: str) -> Path | None:
+    """De omzetting naar JSON van een model of lijst in sources/modellen/; None bij een document."""
+    pad = _modellen_dir(repo_root) / f"{bron_id}.json"
+    return pad if pad.exists() else None
 
 
 def bronregel(repo_root: Path, bron_id: str, van: Path) -> str:
@@ -219,8 +247,9 @@ def bronregel(repo_root: Path, bron_id: str, van: Path) -> str:
 
     meta = read_index_entry(repo_root, bron_id)
     md, origineel = raw_paden(repo_root, bron_id)
+    omzetting = json_pad(repo_root, bron_id)
     if md is None and origineel is None:
-        raise FileNotFoundError(f"bron '{bron_id}' heeft geen bestand in sources/raw/")
+        raise FileNotFoundError(f"bron '{bron_id}' heeft geen bestand in sources/raw/ of sources/modellen/")
 
     def rel(doel: Path) -> str:
         return Path(os.path.relpath(doel.resolve(), Path(van).resolve().parent)).as_posix()
@@ -230,6 +259,8 @@ def bronregel(repo_root: Path, bron_id: str, van: Path) -> str:
         delen.append(f"[tekst]({rel(md)})")
     if origineel:
         delen.append(f"[origineel ({origineel.suffix.lstrip('.')})]({rel(origineel)})")
+    if omzetting:
+        delen.append(f"[omzetting (json)]({rel(omzetting)})")
     if meta.get("url"):
         delen.append(f"[online]({meta['url']})")
     return "Bron: " + " · ".join(delen)
@@ -247,7 +278,7 @@ def inhoud(repo_root: Path, bron_id: str, max_niveau: int = 3) -> tuple[int, lis
     """
     md, _ = raw_paden(repo_root, bron_id)
     if md is None:
-        raise FileNotFoundError(f"bron '{bron_id}' heeft geen Markdown-versie in sources/raw/")
+        raise FileNotFoundError(f"bron '{bron_id}' heeft geen Markdown-versie in sources/raw/ of sources/modellen/")
     regels = md.read_text(encoding="utf-8").splitlines()
     koppen, in_code = [], False
     for nr, regel in enumerate(regels, start=1):
@@ -272,7 +303,8 @@ def inhoud(repo_root: Path, bron_id: str, max_niveau: int = 3) -> tuple[int, lis
 def inhoud_markdown(repo_root: Path, bron_id: str, max_niveau: int = 3) -> str:
     """De inhoudsopgave als sectie `## Inhoud` voor sources/index/<bron-id>.md."""
     totaal, koppen = inhoud(repo_root, bron_id, max_niveau)
-    kop = f"## Inhoud\n\nTekst: `sources/raw/{bron_id}.md`, {totaal} woorden. Regel = regelnummer in die tekst.\n\n"
+    md, _ = raw_paden(repo_root, bron_id)
+    kop = f"## Inhoud\n\nTekst: `{md.relative_to(repo_root).as_posix()}`, {totaal} woorden. Regel = regelnummer in die tekst.\n\n"
     if not koppen:
         return kop + "De tekst heeft geen koppen.\n"
     rijen = ["| Kop | Regel | Woorden |", "|---|---|---|"]

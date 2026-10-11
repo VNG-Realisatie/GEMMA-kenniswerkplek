@@ -6,6 +6,7 @@ from gam_hulp import KENMERKEN_BO, element_tekst
 
 import ggm
 import gam_gemeen
+from llmwiki import modellen
 
 XMI = """<?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
@@ -87,15 +88,6 @@ def test_parser_domein_relaties_en_deel_geheel(tmp_path):
     assert (gen["source_id"], gen["target_id"]) == ("EAID_BESLUIT", "EAID_BESCHIKKING")
 
 
-def test_domeinpagina_toont_guid_en_definitie_van_relaties(tmp_path):
-    data = ggm.parse_xmi(_xmi(tmp_path))
-    pagina = ggm.domein_pagina(data, "1 Veiligheid", "Vergunningen")
-    assert "## Beschikking" in pagina
-    rij = next(r for r in pagina.splitlines() if r.startswith("- ") and "`EAID_AGG1`" in r)
-    assert "*Aggregation" in rij
-    assert rij.endswith(": De onderdelen van een beschikking | per besluit.")
-
-
 def test_velden_zijn_letterlijk_en_zonder_lege_waarden(tmp_path):
     data = ggm.parse_xmi(_xmi(tmp_path))
     v = ggm.velden(data["entities"]["EAID_BESCHIKKING"])
@@ -113,19 +105,20 @@ def test_bevragingen(tmp_path):
     assert any(e["id"] == "EAID_BESCHIKKING" for e in ggm.zoek(data, "op aanvraag"))
 
 
-def test_release_schrijft_bron_json_paginas_en_wiki_yaml(tmp_path, archimate_repo):
+def test_release_schrijft_bron_json_en_wiki_yaml(tmp_path, archimate_repo):
     root, wiki = archimate_repo
     resultaat = ggm.release(_xmi(tmp_path), "2024-vng-ggm-test", "GGM test", wiki_root=wiki)
     assert resultaat["entiteiten"] == 5
-    assert (root / "sources" / "raw" / "2024-vng-ggm-test.xml").exists()
+    assert (root / "sources" / "modellen" / "2024-vng-ggm-test.xml").exists()
+    assert not (root / "sources" / "raw" / "2024-vng-ggm-test.xml").exists()
     index = yaml.safe_load((root / "sources" / "index" / "2024-vng-ggm-test.md").read_text(encoding="utf-8").split("---")[1])
-    assert index["brontype"] == "model"
+    assert index["brontype"] == "model" and index["pad"] == "sources/modellen/2024-vng-ggm-test.xml"
     assert "bron: 2024-vng-ggm-test" in (wiki / "wiki.yaml").read_text(encoding="utf-8")
-    pagina = wiki / "ggm" / "1-veiligheid" / "vergunningen.md"
-    assert gam_gemeen.controleer_gegenereerd(pagina) is None
-    assert gam_gemeen.controleer_json_gegenereerd(wiki / "ggm" / "ggm_parsed.json") is None
-    pagina.write_text(pagina.read_text(encoding="utf-8") + "handmatig\n", encoding="utf-8")
-    assert "met de hand gewijzigd" in gam_gemeen.controleer_gegenereerd(pagina)
+    omzetting = root / "sources" / "modellen" / "2024-vng-ggm-test.json"
+    assert modellen.controleer_json(omzetting) is None
+    assert len(ggm.laad(omzetting)["entities"]) == 5
+    omzetting.write_text(omzetting.read_text(encoding="utf-8").replace("Beschikking", "Besch1kking", 1), encoding="utf-8")
+    assert "met de hand gewijzigd" in modellen.controleer_json(omzetting)
 
 
 def test_kandidaten_voor_de_match_op_betekenis(tmp_path):

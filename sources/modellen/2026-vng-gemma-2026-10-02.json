@@ -1,7 +1,8 @@
 {
  "_gegenereerd": {
   "hash": "b70b5b5f3f8320aee55e383fa0adb073f8ee6d39f685f3c443dba414d1496715",
-  "tool": "tools/gemma.py"
+  "tool": "llmwiki.modellen",
+  "vorm": "archimate"
  },
  "data": {
   "elementen": {

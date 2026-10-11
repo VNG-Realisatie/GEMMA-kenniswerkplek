@@ -108,7 +108,7 @@ def test_in_over_gemma_klopt_met_de_bron():
     import archimate_export as ae
 
     wiki_yaml = paths.load_wiki_yaml(WIKI)
-    pad = paths.find_repo_root(WIKI) / "sources" / "raw" / f"{wiki_yaml['kennismodel']['bron']}.xml"
+    pad = paths.find_repo_root(WIKI) / "sources" / "modellen" / f"{wiki_yaml['kennismodel']['bron']}.xml"
     if not pad.exists():
         pytest.skip("Over GEMMA (AMEFF) ontbreekt")
     og = ae.laad_kennismodel(pad, wiki_yaml["kennismodel"]["views"])

@@ -1,9 +1,8 @@
 """Gedeelde hulpfuncties voor de tools van gemma-archimate-model.
 
-- gegenereerde modelbestanden (ggm/, gemma/) schrijven met een hash-kop, en controleren dat niemand ze met de hand
-  wijzigde;
+- gegenereerde bestanden schrijven met een hash-kop, en controleren dat niemand ze met de hand wijzigde;
 - secties, tabellen en links in Markdown lezen (bronduidingen);
-- bronverwijzingen: pagina → bronduiding (bronduiding) → sources/raw/;
+- bronverwijzingen: pagina → bronduiding → laag 1 (sources/raw/ of sources/modellen/);
 - modelbestanden ophalen van GitHub;
 - onderwerpen als één model: thuisonderwerp en relaties tussen onderwerpen (regels Thuishoren, Relaties tussen
   onderwerpen).
@@ -65,27 +64,6 @@ def controleer_gegenereerd(pad: Path) -> str | None:
     return None
 
 
-def schrijf_json_gegenereerd(pad: Path, data: dict, tool: str) -> None:
-    pad.parent.mkdir(parents=True, exist_ok=True)
-    inhoud = json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True)
-    pad.write_text(
-        json.dumps({"_gegenereerd": {"tool": tool, "hash": hashing.hash_text(inhoud)}, "data": data}, ensure_ascii=False, indent=1, sort_keys=True),
-        encoding="utf-8",
-    )
-
-
-def lees_json_gegenereerd(pad: Path) -> dict:
-    return json.loads(pad.read_text(encoding="utf-8"))["data"]
-
-
-def controleer_json_gegenereerd(pad: Path) -> str | None:
-    geheel = json.loads(pad.read_text(encoding="utf-8"))
-    inhoud = json.dumps(geheel.get("data"), ensure_ascii=False, indent=1, sort_keys=True)
-    if hashing.hash_text(inhoud) != geheel.get("_gegenereerd", {}).get("hash"):
-        return f"{pad}: met de hand gewijzigd; genereer opnieuw met {geheel.get('_gegenereerd', {}).get('tool')}"
-    return None
-
-
 # --- Body: secties, tabellen en links ---
 
 LINK_RE = re.compile(r"\[(?P<tekst>[^\]]*)\]\((?P<doel>[^)\s]+)\)")
@@ -138,9 +116,15 @@ def relatief(van: Path, naar: Path) -> str:
     return Path(os.path.relpath(naar.resolve(), van.resolve().parent)).as_posix()
 
 
-# --- Bronverwijzingen: pagina → bronduiding (bronduiding) → sources/raw/ ---
+# --- Bronverwijzingen: pagina → bronduiding → laag 1 (sources/raw/ of sources/modellen/) ---
 
 BRON_ID_RE = re.compile(r"\b[0-9]{4}-[a-z0-9]+(?:-[a-z0-9]+)*\b")
+
+
+def model_json(wiki_root: Path, sleutel: str) -> Path:
+    """De JSON-omzetting in `sources/modellen/` van het model dat `wiki.yaml` `<sleutel>.bron` noemt (`ggm` of `gemma`)."""
+    bron = (wiki_yaml(wiki_root).get(sleutel) or {}).get("bron")
+    return paths.find_repo_root(wiki_root) / "sources" / "modellen" / f"{bron}.json"
 
 
 def modelbronnen(wiki_root: Path = WIKI_ROOT) -> set[str]:
@@ -169,11 +153,14 @@ def brontype(wiki_root: Path, bron_id: str) -> str | None:
 
 def bron_doel(wiki_root: Path, bron_id: str) -> Path | None:
     """Waar een verwijzing naar deze bron heen linkt: de bronduiding. Een modelbron (GGM, GEMMA) heeft geen
-    bronduiding (tools/ggm.py en tools/gemma.py zijn haar lens) en linkt naar haar tekst in sources/raw/. Een bron van
+    bronduiding (tools/ggm.py en tools/gemma.py zijn haar lens) en linkt naar haar tekst in laag 1. Een bron van
     een model of die voor de hele wiki geldt (Over GEMMA, de GEMMA-procesarchitectuur) heeft haar bronduiding in
     `modellen/<model>/bronduidingen/`."""
     if bron_id in modelbronnen(wiki_root):
-        pad = paths.find_repo_root(wiki_root) / "sources" / "raw" / f"{bron_id}.md"
+        from llmwiki import sources
+
+        repo = paths.find_repo_root(wiki_root)
+        pad = sources.bron_dir(repo, bron_id) / f"{bron_id}.md"
         return pad.resolve() if pad.exists() else None
     treffers = [p for p in bronduidingen(wiki_root) if p.stem == bron_id]
     return treffers[0].resolve() if treffers else None

@@ -192,7 +192,6 @@ wikis/gemma-archimate-model/
 │   └── ggm/                          terugmeldingen.yaml (AI) en terugmeldingen.md (gegenereerd)
 ├── elementpaginas/                   gegenereerd door tools/render.py, volgens de ArchiMate-indeling (bedrijfsarchitectuur/, motivatie/)
 ├── ter-beoordeling.md · voortgang.md gegenereerd door tools/render.py
-├── ggm/ · gemma/                     gegenereerd door tools/ggm.py en tools/gemma.py
 ├── export/                           het Archi-bestand en het exportrapport
 ├── schemas/                          beoordeling (gegenereerd), bronduiding, kennismodel, lijst
 ├── tools/                            het gereedschap van deze wiki, met tests in tools/tests/
@@ -213,13 +212,14 @@ Een beoordeling is het oordeel van de AI over één begrip: kenmerken, naam, def
 
 | | GGM | GEMMA-model |
 |---|---|---|
-| Bronbestand | XMI (Enterprise Architect), brontype `model` | Archi-bestand `.archimate` (met map-id's en profielen, nodig voor de export), brontype `model` |
+| Bronbestand | XMI (Enterprise Architect) in `sources/modellen/`, brontype `model` | Archi-bestand `.archimate` (met map-id's en profielen, nodig voor de export) in `sources/modellen/`, brontype `model` |
+| Omzetting | JSON naast het bestand, door llmwiki (`sources/modellen/<bron-id>.json`) | idem |
 | Tool | [tools/ggm.py](tools/ggm.py) | [tools/gemma.py](tools/gemma.py) |
 | Zoeken (AI) | `kandidaten`, `entiteit`, `naamgenoten`, `generalisaties`, `attribuut`, `relaties` | `kandidaten`, `element`, `koppel`, `zoek`, `groepering` |
 | Letterlijke velden (script) | `velden` → `beslist.ggm` | `velden` → `beslist.gemma` |
 | Nieuwe versie | skill gemma-archimate-model-ggm-release | skill gemma-archimate-model-gemma-release |
 
-De AI kiest de match op betekenis; het script haalt bij elke run de letterlijke velden op, zodat een nieuwe release vanzelf meegaat. De modellen worden alleen via deze tools gelezen, nooit direct of via een kopie. Het GGM is matchdoel voor bedrijfsobjecten, data-objecten en beleidsdomeinen: per beleidsdomein wordt de dekking getoetst, en een hiaat wordt een GGM-terugmelding; een GGM-entiteit is zelf geen begrip en wordt pas via een bron beoordeeld. Het GEMMA-model is matchdoel voor alle typen: zijn id gaat mee in de export.
+De AI kiest de match op betekenis; het script haalt bij elke run de letterlijke velden op, zodat een nieuwe release vanzelf meegaat. De tools lezen de JSON-omzetting in `sources/modellen/` van de bron die `wiki.yaml` (`ggm.bron`, `gemma.bron`) noemt; het model zelf lees je alleen via deze tools, nooit direct of via een kopie in de wiki. Het GGM is matchdoel voor bedrijfsobjecten, data-objecten en beleidsdomeinen: per beleidsdomein wordt de dekking getoetst, en een hiaat wordt een GGM-terugmelding; een GGM-entiteit is zelf geen begrip en wordt pas via een bron beoordeeld. Het GEMMA-model is matchdoel voor alle typen: zijn id gaat mee in de export.
 
 ### 6.5 Export naar Archi
 
@@ -237,7 +237,6 @@ De AI kiest de match op betekenis; het script haalt bij elke run de letterlijke 
 
 - De applicatielaag: nu alleen het data-object, als annotatie bij een bedrijfsobject.
 - De overgenomen indelingen as-is (§4.4): de functiehiërarchie uit het model, de plek van een wiki-element erin (`gemma_functie`), de pagina per indeling met dekking, en de export tot en met de wortel met `--volledig`. Nu hebben de functies boven het niveau van een onderwerp nog een beoordeling.
-- Modellen en lijsten in `sources/modellen/`, met de omzetting naar JSON in llmwiki; nu leest de wiki ze uit `gemma/` en `ggm/`.
 - De vergelijking met een momentopname van GEMMA Online (§2).
 - Views in de export naar Archi; de wiki maakt wel overzichten per indeling.
 - Een dekkingsanalyse van het GGM per beleidsdomein.

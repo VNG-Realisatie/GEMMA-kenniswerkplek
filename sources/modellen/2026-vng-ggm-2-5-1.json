@@ -1,7 +1,8 @@
 {
  "_gegenereerd": {
   "hash": "49f06f968af8a3428e676d3036788718251260510d8bafc589ae44d3dbf8b3de",
-  "tool": "tools/ggm.py"
+  "tool": "llmwiki.modellen",
+  "vorm": "xmi"
  },
  "data": {
   "diagrams": {

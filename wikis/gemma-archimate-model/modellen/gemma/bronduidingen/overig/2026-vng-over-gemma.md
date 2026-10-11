@@ -10,7 +10,7 @@ bijgewerkt: '2026-10-08'
 
 # Over GEMMA (kennismodel en modelleerafspraken)
 
-Bron: [tekst](../../../../../../sources/raw/2026-vng-over-gemma.md) · [origineel (xml)](../../../../../../sources/raw/2026-vng-over-gemma.xml) · [online](https://raw.githubusercontent.com/VNG-Realisatie/Over-GEMMA-Archi-repository/Master/export/Over%20GEMMA.xml)
+Bron: [tekst](../../../../../../sources/modellen/2026-vng-over-gemma.md) · [origineel (xml)](../../../../../../sources/modellen/2026-vng-over-gemma.xml) · [omzetting (json)](../../../../../../sources/modellen/2026-vng-over-gemma.json) · [online](https://raw.githubusercontent.com/VNG-Realisatie/Over-GEMMA-Archi-repository/Master/export/Over%20GEMMA.xml)
 
 ## Samenvatting
 

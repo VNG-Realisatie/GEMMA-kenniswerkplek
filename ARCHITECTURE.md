@@ -62,7 +62,7 @@ Alle bronnen staan één keer centraal in de repository en worden door alle wiki
 
 Eén bron kan twee rollen hebben, zoals een productenlijst die zegt welke producten er zijn én waartegen de wiki matcht.
 
-Nog niet gebouwd: `sources/modellen/` en de omzetting naar JSON; de modellen staan nog in `sources/raw/`, en wiki's zetten ze zelf om.
+De omzetting van een model of lijst naar JSON is gereedschap van llmwiki (`tools/llmwiki/modellen/`, formaat in `FORMAAT.md`): `llmwiki source add` kiest de map aan de hand van de vorm van het bestand (ArchiMate, XMI, xlsx), niet van de rol van de bron. Elke wiki leest de JSON en maakt een eigen bronduiding.
 
 Zo voorkomen we dat een wiki verzuipt in alle bronnen:
 - **Filter per wiki.** In `wiki.yaml` staat welke thema's (tags) een wiki gebruikt. Andere bronnen ziet de AI voor die wiki niet.

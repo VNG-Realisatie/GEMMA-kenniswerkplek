@@ -4,7 +4,7 @@ titel: Uniforme productenlijst sturende en ondersteunende producten en diensten
 uitgever: VNG
 datum: '2025-10-23'
 versie: '1.4'
-pad: sources/raw/2025-vng-upl-producten-en-diensten-intern.xlsx
+pad: sources/modellen/2025-vng-upl-producten-en-diensten-intern.xlsx
 hash: f54018359c70171db8bfe1726506e07d4a170f853551fde792dce56ad19ec3a2
 tags:
 - gemma
@@ -28,7 +28,7 @@ Excel-lijst van de GEMMA-expertgroep procesarchitectuur (VNG), versie 1.4, met 2
 interne producten, interne dienstverlening, bedrijfsvoering, ondersteunende processen, sturende processen, SCOPAFIJTH, security, communicatie, organisatie, personeel, HRM, algemene zaken, financiën, inkoop, informatievoorziening, privacy, juridisch, technologie, huisvesting, facilitair, PenD, productenlijst, procesarchitectuur, intern
 ## Inhoud
 
-Tekst: `sources/raw/2025-vng-upl-producten-en-diensten-intern.md`, 4908 woorden. Regel = regelnummer in die tekst.
+Tekst: `sources/modellen/2025-vng-upl-producten-en-diensten-intern.md`, 4908 woorden. Regel = regelnummer in die tekst.
 
 | Kop | Regel | Woorden |
 |---|---|---|

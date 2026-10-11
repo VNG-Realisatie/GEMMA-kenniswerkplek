@@ -4,7 +4,7 @@ titel: Standaard producten en dienstenlijst extern basis UPL
 uitgever: VNG
 datum: '2025-09-08'
 versie: '1.0'
-pad: sources/raw/2025-vng-upl-producten-en-diensten-extern.xlsx
+pad: sources/modellen/2025-vng-upl-producten-en-diensten-extern.xlsx
 hash: 96ad75a21ec109725641f0d87b52f34e318b38dcbf3359509014d6796cf45b3a
 tags:
 - gemma
@@ -48,7 +48,7 @@ UPL, uniforme productenlijst, productenlijst, dienstenlijst, productcatalogus, p
 
 ## Inhoud
 
-Tekst: `sources/raw/2025-vng-upl-producten-en-diensten-extern.md`, 21834 woorden. Regel = regelnummer in die tekst.
+Tekst: `sources/modellen/2025-vng-upl-producten-en-diensten-extern.md`, 21834 woorden. Regel = regelnummer in die tekst.
 
 | Kop | Regel | Woorden |
 |---|---|---|

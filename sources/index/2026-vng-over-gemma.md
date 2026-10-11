@@ -4,7 +4,7 @@ titel: Over GEMMA (kennismodel en modelleerafspraken)
 uitgever: VNG
 datum: ''
 versie: ''
-pad: sources/raw/2026-vng-over-gemma.xml
+pad: sources/modellen/2026-vng-over-gemma.xml
 hash: 2b80d21d844d9415535838dbf61feff156b6875babffc75035f8d2f8b6e21bfb
 tags:
 - gemma
@@ -71,7 +71,7 @@ NORA (definities van dienst, kanaal, beleidskader, kwaliteitsdoel en kernwaarde;
 
 ## Inhoud
 
-Tekst: `sources/raw/2026-vng-over-gemma.md`, 27527 woorden. Regel = regelnummer in die tekst.
+Tekst: `sources/modellen/2026-vng-over-gemma.md`, 27527 woorden. Regel = regelnummer in die tekst.
 
 | Kop | Regel | Woorden |
 |---|---|---|

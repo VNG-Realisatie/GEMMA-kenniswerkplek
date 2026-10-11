@@ -989,7 +989,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--wiki", type=Path, default=WIKI_ROOT, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
 
-    gemma_data = gemma.laad(args.wiki / "gemma" / "gemma_parsed.json")
+    gemma_data = gemma.laad(gam_gemeen.model_json(args.wiki, "gemma"))
     fouten = controleer(args.wiki, gemma_data)
     wiki_yaml = paths.load_wiki_yaml(args.wiki)
     gemma_bron = (wiki_yaml.get("gemma") or {}).get("bron", "")
@@ -1002,7 +1002,7 @@ def main(argv: list[str] | None = None) -> int:
     kennismodel = None
     km_config = wiki_yaml.get("kennismodel") or {}
     if km_config:
-        km_pad = paths.find_repo_root(args.wiki) / "sources" / "raw" / f"{km_config['bron']}.xml"
+        km_pad = paths.find_repo_root(args.wiki) / "sources" / "modellen" / f"{km_config['bron']}.xml"
         if km_pad.exists():
             kennismodel = laad_kennismodel(km_pad, km_config["views"])
             fouten += [f"kennismodel: view '{v}' staat niet in {km_pad.name}" for v in kennismodel["ontbrekende_views"]]

@@ -98,6 +98,7 @@ def cmd_source_add(args) -> int:
         beschrijving=args.beschrijving or "",
         url_pagina=args.url_pagina or "",
         markdown_override=Path(args.markdown) if args.markdown else None,
+        vorm=args.vorm,
     )
     try:
         if args.url:
@@ -578,7 +579,13 @@ def _git_changed_paths(repo_root: Path, statuses: str) -> list[str]:
     changed = []
     for line in result.stdout.splitlines():
         parts = line.split("\t")
-        if len(parts) >= 2 and parts[0][0] in statuses:
+        if len(parts) < 2:
+            continue
+        if parts[0][0] == "R":
+            # Een verplaatsing zonder inhoudswijziging (R100) is toegestaan; met wijziging telt het oude pad als gewijzigd.
+            if parts[0] != "R100" and "M" in statuses:
+                changed.append(parts[1])
+        elif parts[0][0] in statuses:
             changed.append(parts[-1])
     return changed
 
@@ -665,6 +672,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_source_add.add_argument("--url", help="Haal de bron op via deze URL (letterlijke kopie, geen samenvatting)")
     p_source_add.add_argument("--url-pagina", dest="url_pagina", help="Pagina waarop de link naar deze bron stond")
     p_source_add.add_argument("--brontype", choices=list(sources.BRONTYPEN))
+    p_source_add.add_argument("--vorm", choices=["document"], help="Dwing een document af voor sources/raw/ (anders bepaalt de vorm de map: modellen en lijsten gaan naar sources/modellen/ met een JSON-omzetting)")
     p_source_add.add_argument("--beschrijving", default="", help="Korte beschrijving, max. 1 zin")
     p_source_add.add_argument("--id", required=True)
     p_source_add.add_argument("--titel", required=True)
