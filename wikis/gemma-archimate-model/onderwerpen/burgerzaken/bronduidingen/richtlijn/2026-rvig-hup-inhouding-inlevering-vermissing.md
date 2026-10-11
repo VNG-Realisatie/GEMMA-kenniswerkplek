@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-inhouding-inlevering-vermissing
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-inhouding-inlevering-vermissing
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Inhouding, inlevering of vermissing (HUP, RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-inhouding-inlevering-vermissing.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-inhouding-inlevering-vermissing.html) · [online](https://www.rvig.nl/hup/inhouding-inlevering-vermissing)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-inhouding-inlevering-vermissing.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-inhouding-inlevering-vermissing.html) · [online](https://www.rvig.nl/hup/inhouding-inlevering-vermissing)
 
 ## Samenvatting
 

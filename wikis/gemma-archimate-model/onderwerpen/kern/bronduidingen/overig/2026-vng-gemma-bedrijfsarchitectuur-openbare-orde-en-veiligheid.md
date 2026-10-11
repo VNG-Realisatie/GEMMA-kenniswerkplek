@@ -1,6 +1,6 @@
 ---
 id: 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
-type: bronanalyse
+type: bronduiding
 onderwerp: kern
 bronnen:
 - 2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid
@@ -10,7 +10,7 @@ bijgewerkt: '2026-10-10'
 
 # GEMMA Bedrijfsarchitectuur openbare orde en veiligheid
 
-Bron: [tekst](../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid.md) · [origineel (html)](../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid.html) · [online](https://www.gemmaonline.nl/wiki/Bedrijfsarchitectuur_openbare_orde_en_veiligheid)
+Bron: [tekst](../../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid.md) · [origineel (html)](../../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid.html) · [online](https://www.gemmaonline.nl/wiki/Bedrijfsarchitectuur_openbare_orde_en_veiligheid)
 
 ## Samenvatting
 

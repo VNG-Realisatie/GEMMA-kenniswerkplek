@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Voornaam of achternaam veranderen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/voornaam-of-achternaam-veranderen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/voornaam-of-achternaam-veranderen)
 
 ## Samenvatting
 

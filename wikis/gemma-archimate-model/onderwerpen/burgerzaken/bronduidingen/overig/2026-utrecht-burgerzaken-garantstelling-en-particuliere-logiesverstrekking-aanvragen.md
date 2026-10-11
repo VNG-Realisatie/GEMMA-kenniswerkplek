@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Garantstelling en particuliere logiesverstrekking aanvragen | Gemeente Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/garantstelling-en-particuliere-logiesverstrekking-aanvragen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/garantstelling-en-particuliere-logiesverstrekking-aanvragen)
 
 ## Samenvatting
 

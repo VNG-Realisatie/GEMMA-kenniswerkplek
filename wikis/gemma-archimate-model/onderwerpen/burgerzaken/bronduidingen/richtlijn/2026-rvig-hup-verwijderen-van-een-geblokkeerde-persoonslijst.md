@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-verwijderen-van-een-geblokkeerde-persoonslijst
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-verwijderen-van-een-geblokkeerde-persoonslijst
@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Verwijderen van een geblokkeerde persoonslijst
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-verwijderen-van-een-geblokkeerde-persoonslijst.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-verwijderen-van-een-geblokkeerde-persoonslijst.html) · [online](https://www.rvig.nl/hup/verwijderen-van-een-geblokkeerde-persoonslijst)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-verwijderen-van-een-geblokkeerde-persoonslijst.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-verwijderen-van-een-geblokkeerde-persoonslijst.html) · [online](https://www.rvig.nl/hup/verwijderen-van-een-geblokkeerde-persoonslijst)
 
 ## Samenvatting
 

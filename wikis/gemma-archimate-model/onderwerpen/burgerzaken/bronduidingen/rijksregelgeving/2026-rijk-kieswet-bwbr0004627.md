@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-kieswet-bwbr0004627
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Kieswet
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-kieswet-bwbr0004627.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-kieswet-bwbr0004627.html) · [online](https://wetten.overheid.nl/BWBR0004627/2026-10-01)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-kieswet-bwbr0004627.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-kieswet-bwbr0004627.html) · [online](https://wetten.overheid.nl/BWBR0004627/2026-10-01)
 
 ## Samenvatting
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Buitenlandse documenten inschrijven
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/buitenlandse-documenten-inschrijven)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/buitenlandse-documenten-inschrijven)
 
 ## Samenvatting
 

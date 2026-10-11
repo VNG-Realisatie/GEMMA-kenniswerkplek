@@ -1,6 +1,6 @@
 ---
 id: 2026-vng-versterking-lokale-democratie
-type: bronanalyse
+type: bronduiding
 onderwerp: participatie
 bronnen:
 - 2026-vng-versterking-lokale-democratie
@@ -13,7 +13,7 @@ bijgewerkt: 2026-09-30
 
 # Versterking lokale democratie
 
-Bron: [tekst](../../../../../sources/raw/2026-vng-versterking-lokale-democratie.md) · [online](https://vng.nl/rubrieken/onderwerpen/versterking-lokale-democratie)
+Bron: [tekst](../../../../../../sources/raw/2026-vng-versterking-lokale-democratie.md) · [online](https://vng.nl/rubrieken/onderwerpen/versterking-lokale-democratie)
 
 ## Samenvatting
 

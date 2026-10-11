@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Bewijs van in leven zijn of attestatie de vita aanvragen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen)
 
 ## Samenvatting
 

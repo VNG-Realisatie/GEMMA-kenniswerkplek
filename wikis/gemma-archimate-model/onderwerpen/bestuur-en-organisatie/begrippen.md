@@ -8,7 +8,7 @@ bronnen: []
 
 # Bestuur en organisatie
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/onderwerpen/bestuur-en-organisatie.yaml en de beoordelingen van de begrippen. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit onderwerpen/bestuur-en-organisatie/afbakening.yaml en de beoordelingen van de begrippen. Wijzig de beoordeling, niet deze pagina. -->
 
 ## Omschrijving
 
@@ -16,7 +16,7 @@ De gemeente als organisatie en haar bestuursorganen: Gemeente, Gemeenteraad, Col
 
 ## Overzicht
 
-De views op de indelingen staan in het [overzicht](../overzichten/bestuur-en-organisatie.md).
+De views op de indelingen staan in het [overzicht](overzicht.md).
 
 ## Bronnen
 
@@ -26,9 +26,9 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 
 | Begrip | Reden | Herkomst |
 |---|---|---|
-| [Beslisser](../bedrijfsarchitectuur/rollen/beslisser.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | rijksregelgeving |
-| [Burgemeester](../bedrijfsarchitectuur/actoren/burgemeester.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
-| [College van B&W](../bedrijfsarchitectuur/actoren/college-van-b-w.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
-| [Gemeente](../bedrijfsarchitectuur/actoren/gemeente.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
-| [Gemeenteraad](../bedrijfsarchitectuur/actoren/gemeenteraad.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
-| [Rijk](../bedrijfsarchitectuur/actoren/rijk.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [Beslisser](../../elementpaginas/bedrijfsarchitectuur/rollen/beslisser.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | rijksregelgeving |
+| [Burgemeester](../../elementpaginas/bedrijfsarchitectuur/actoren/burgemeester.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [College van B&W](../../elementpaginas/bedrijfsarchitectuur/actoren/college-van-b-w.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [Gemeente](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeente.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [Gemeenteraad](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeenteraad.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [Rijk](../../elementpaginas/bedrijfsarchitectuur/actoren/rijk.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |

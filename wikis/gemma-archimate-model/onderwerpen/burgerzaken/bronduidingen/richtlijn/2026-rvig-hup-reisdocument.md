@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-reisdocument
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-reisdocument
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Reisdocument (HUP, RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-reisdocument.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-reisdocument.html) · [online](https://www.rvig.nl/hup/reisdocument)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-reisdocument.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-reisdocument.html) · [online](https://www.rvig.nl/hup/reisdocument)
 
 ## Samenvatting
 

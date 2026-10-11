@@ -1,6 +1,6 @@
 ---
 id: 2018-nvvb-stappenplan-identiteitswijziging-brp
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2018-nvvb-stappenplan-identiteitswijziging-brp
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Stappenplan Identiteitswijziging in de BRP
 
-Bron: [tekst](../../../../../sources/raw/2018-nvvb-stappenplan-identiteitswijziging-brp.md) · [origineel (html)](../../../../../sources/raw/2018-nvvb-stappenplan-identiteitswijziging-brp.html) · [online](https://nvvb.nl/nl/producten-en-diensten/handreikingen/stappenplan/)
+Bron: [tekst](../../../../../../sources/raw/2018-nvvb-stappenplan-identiteitswijziging-brp.md) · [origineel (html)](../../../../../../sources/raw/2018-nvvb-stappenplan-identiteitswijziging-brp.html) · [online](https://nvvb.nl/nl/producten-en-diensten/handreikingen/stappenplan/)
 
 ## Samenvatting
 

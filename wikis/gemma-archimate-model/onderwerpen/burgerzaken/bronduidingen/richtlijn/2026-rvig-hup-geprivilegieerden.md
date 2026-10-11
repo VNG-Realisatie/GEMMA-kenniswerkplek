@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-geprivilegieerden
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-geprivilegieerden
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Geprivilegieerden
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-geprivilegieerden.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-geprivilegieerden.html) · [online](https://www.rvig.nl/hup/geprivilegieerden)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-geprivilegieerden.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-geprivilegieerden.html) · [online](https://www.rvig.nl/hup/geprivilegieerden)
 
 ## Samenvatting
 

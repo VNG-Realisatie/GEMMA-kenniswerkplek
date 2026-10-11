@@ -1,7 +1,7 @@
 ---
 id: 2026-vng-gemma-impact-ketensamenwerking
-type: bronanalyse
-onderwerp: kern
+type: bronduiding
+model: gemma
 bronnen:
 - 2026-vng-gemma-impact-ketensamenwerking
 relevant: ja
@@ -10,7 +10,7 @@ bijgewerkt: '2026-10-08'
 
 # GEMMA Procesarchitectuur Impact van ketensamenwerking
 
-Bron: [tekst](../../../../../sources/raw/2026-vng-gemma-impact-ketensamenwerking.md) · [origineel (html)](../../../../../sources/raw/2026-vng-gemma-impact-ketensamenwerking.html) · [online](https://www.gemmaonline.nl/wiki/Procesarchitectuur_Impact_van_ketensamenwerking)
+Bron: [tekst](../../../../../../sources/raw/2026-vng-gemma-impact-ketensamenwerking.md) · [origineel (html)](../../../../../../sources/raw/2026-vng-gemma-impact-ketensamenwerking.html) · [online](https://www.gemmaonline.nl/wiki/Procesarchitectuur_Impact_van_ketensamenwerking)
 
 ## Samenvatting
 
@@ -32,7 +32,7 @@ Geen relatietabel: de bron beschrijft typen van elementen en relaties, geen begr
 
 ## Relevantie voor de architectuur
 
-Bepaalt per keten of het een bedrijfsinteractie wordt (estafette) of niet (orkestratie: het deel van de gemeente specialiseert *Leveren dienst aan derden*). De afweging staat in ARCHITECTURE.md, sectie [4.3 Processen en ketens](../../../ARCHITECTURE.md#43-processen-en-ketens).
+Bepaalt per keten of het een bedrijfsinteractie wordt (estafette) of niet (orkestratie: het deel van de gemeente specialiseert *Leveren dienst aan derden*). De afweging staat in ARCHITECTURE.md, sectie [4.3 Processen en ketens](../../../../ARCHITECTURE.md#43-processen-en-ketens).
 
 ## Citaten
 

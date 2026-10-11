@@ -34,7 +34,7 @@ Er is geen run en geen kladblok: alles staat in de werkboom en is te zien in Git
 | 8 | Vastleggen | script | laag | `llmwiki promote apply --akkoord-woord AKKOORD`. Het harness vraagt de redacteur om een klik; omzeil die niet |
 | 9 | Commit | redacteur of AI | laag | Beoordelingen, pagina's en `log.md` samen |
 
-Het denkniveau en wat het Model bij een overgang doet, staan in `AGENTS.md` (Werkwijze). Stap 3 tot en met 5 zijn één lus en houden hetzelfde niveau; zo wisselt het niveau twee keer per update: na de bronanalyse omhoog, na het voorleggen omlaag.
+Het denkniveau en wat het Model bij een overgang doet, staan in `AGENTS.md` (Werkwijze). Stap 3 tot en met 5 zijn één lus en houden hetzelfde niveau; zo wisselt het niveau twee keer per update: na de bronduiding omhoog, na het voorleggen omlaag.
 
 `llmwiki promote apply` weigert als er na de samenvatting iets is gewijzigd; maak dan een nieuw plan. Het zet de status `goedgekeurd` en schrijft per element een regel in `log.md` met de hash van de inhoud van de beoordeling. Een inhoudelijke wijziging maakt een goedgekeurd element via het beslis-script weer `review`; een andere opmaak of een bijgewerkt model niet.
 

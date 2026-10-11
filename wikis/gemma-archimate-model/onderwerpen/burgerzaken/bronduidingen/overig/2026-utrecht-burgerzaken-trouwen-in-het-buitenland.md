@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Trouwen in het buitenland
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-trouwen-in-het-buitenland.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-trouwen-in-het-buitenland.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/trouwen-in-het-buitenland)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-trouwen-in-het-buitenland.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-trouwen-in-het-buitenland.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/trouwen-in-het-buitenland)
 
 ## Samenvatting
 

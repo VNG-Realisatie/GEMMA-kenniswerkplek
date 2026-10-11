@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-europees-kiesrecht
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-europees-kiesrecht
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP Europees kiesrecht (RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-europees-kiesrecht.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-europees-kiesrecht.html) · [online](https://www.rvig.nl/hup/europees-kiesrecht)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-europees-kiesrecht.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-europees-kiesrecht.html) · [online](https://www.rvig.nl/hup/europees-kiesrecht)
 
 ## Samenvatting
 

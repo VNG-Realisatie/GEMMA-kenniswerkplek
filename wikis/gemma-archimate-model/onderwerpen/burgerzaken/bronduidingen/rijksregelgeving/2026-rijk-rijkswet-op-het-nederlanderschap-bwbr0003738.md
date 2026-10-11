@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Rijkswet op het Nederlanderschap
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.html) · [online](https://wetten.overheid.nl/BWBR0003738/2026-10-01)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.html) · [online](https://wetten.overheid.nl/BWBR0003738/2026-10-01)
 
 ## Samenvatting
 

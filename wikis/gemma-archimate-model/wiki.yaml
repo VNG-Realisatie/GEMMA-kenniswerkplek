@@ -11,64 +11,65 @@ bronvoorrang: [europese-regelgeving, rijksregelgeving, informatiemodel, richtlij
 
 page_types:                          # pagina's van curated typen en onderwerpen maakt tools/render.py; zonder schema
   onderwerp:
-    dir: begrippen                   # begrippenlijst per onderwerp (gegenereerd uit beoordelingen/onderwerpen)
+    files: onderwerpen/*/begrippen.md   # begrippenlijst per onderwerp (gegenereerd uit de beoordelingen)
   overzicht:
-    dir: overzichten                 # overzicht per onderwerp: de views op de indelingen (gegenereerd)
-  bronanalyse:
-    dir: bronanalyses
-    group_by: onderwerp              # en daaronder per brontype: bronanalyses/<onderwerp>/<brontype>/ (besluit 2026-10-08)
-    schema: schemas/bronanalyse.schema.json
+    files: onderwerpen/*/overzicht.md   # overzicht per onderwerp: de views op de indelingen (gegenereerd)
+  bronduiding:
+    files:                           # laag 3: wat een bron betekent vanuit het perspectief van de wiki
+      - onderwerpen/*/bronduidingen/*/*.md
+      - modellen/*/bronduidingen/*/*.md
+    schema: schemas/bronduiding.schema.json
   kennismodel:                       # wat het model is: elementtypen, relaties, indelingen (tools/kennismodel.py; modelleerregels.md met de hand)
     dir: kennismodel
     schema: schemas/kennismodel.schema.json
   lijst:                             # wat een script als lijst maakt: terugmeldingen/, ter-beoordeling.md, voortgang.md; geen eigen map
     schema: schemas/lijst.schema.json
   bedrijfsobject:                    # archimate_type business-object | contract
-    dir: bedrijfsarchitectuur/bedrijfsobjecten
+    dir: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten
     submappen: [taakveld, beleidsdomein]
     curated: true
   product:
-    dir: bedrijfsarchitectuur/producten
+    dir: elementpaginas/bedrijfsarchitectuur/producten
     submappen: [taakveld, beleidsdomein]
     curated: true
   dienst:                            # GEMMA-naam Dienst (Business Service)
-    dir: bedrijfsarchitectuur/diensten
+    dir: elementpaginas/bedrijfsarchitectuur/diensten
     submappen: [taakveld, beleidsdomein]
     curated: true
   bedrijfsproces:
-    dir: bedrijfsarchitectuur/bedrijfsprocessen
+    dir: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen
     submappen: [taakveld, beleidsdomein]
     curated: true
   bedrijfsinteractie:                # Business Interaction, zoals een ketensamenwerking (besluit 2026-10-08); map naar het kernobject
-    dir: bedrijfsarchitectuur/bedrijfsinteracties
+    dir: elementpaginas/bedrijfsarchitectuur/bedrijfsinteracties
     submappen: [taakveld, beleidsdomein]
     curated: true
   bedrijfsfunctie:                   # Functie-indeling naar domein, niet de Beleidsdomeinindeling (besluit 2026-10-04)
-    dir: bedrijfsarchitectuur/bedrijfsfuncties
+    dir: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties
     submappen: [domein]
     curated: true
   gebeurtenis:                       # GEMMA-naam Gebeurtenis (Business Event)
-    dir: bedrijfsarchitectuur/gebeurtenissen
+    dir: elementpaginas/bedrijfsarchitectuur/gebeurtenissen
     curated: true
   actor:
-    dir: bedrijfsarchitectuur/actoren
+    dir: elementpaginas/bedrijfsarchitectuur/actoren
     curated: true
   rol:
-    dir: bedrijfsarchitectuur/rollen
+    dir: elementpaginas/bedrijfsarchitectuur/rollen
     curated: true
   bedrijfssamenwerking:              # Business Collaboration, zonder eigen rechtspersoon
-    dir: bedrijfsarchitectuur/bedrijfssamenwerkingen
+    dir: elementpaginas/bedrijfsarchitectuur/bedrijfssamenwerkingen
     curated: true
   kanaal:                            # Business Interface; één centrale set
-    dir: bedrijfsarchitectuur/kanalen
+    dir: elementpaginas/bedrijfsarchitectuur/kanalen
     curated: true
   beleidskader:                      # Driver (motivatielaag); Europese of rijksregelgeving, landelijke richtlijn of VNG-model
-    dir: motivatie/beleidskaders
+    dir: elementpaginas/motivatie/beleidskaders
     submappen: [grondslag]           # de groep in de Grondslagindeling, afgeleid uit de regelgever (het brontype van de regeling)
     curated: true
 
 curation:
-  beoordelingen: beoordelingen/begrippen   # het oordeel van de AI per begrip (YAML); zie ARCHITECTURE.md
+  beoordelingen: onderwerpen/*/beoordelingen   # het oordeel van de AI per begrip (YAML), in de map van het thuisonderwerp; zie ARCHITECTURE.md
   beslissen: tools/beslissen.py              # type, status en modelvelden; daarna de render
   render: tools/render.py                  # alle pagina's uit de beoordelingen
   states: [kandidaat, review, goedgekeurd, afgewezen]

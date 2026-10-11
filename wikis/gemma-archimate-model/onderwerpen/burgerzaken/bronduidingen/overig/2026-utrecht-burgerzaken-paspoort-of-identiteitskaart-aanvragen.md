@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Paspoort of identiteitskaart aanvragen (gemeente Utrecht)
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/paspoort-of-identiteitskaart-aanvragen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/paspoort-of-identiteitskaart-aanvragen)
 
 ## Samenvatting
 

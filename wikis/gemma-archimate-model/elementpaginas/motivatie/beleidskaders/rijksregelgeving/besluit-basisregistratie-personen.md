@@ -21,7 +21,7 @@ bronnen:
 
 # Besluit basisregistratie personen
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/besluit-basisregistratie-personen.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit de beoordeling besluit-basisregistratie-personen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
 **Status: goedgekeurd** door de redacteur.
 
@@ -37,7 +37,7 @@ Het Besluit BRP (BWBR0034306) regelt wie niet als ingezetene wordt ingeschreven 
 
 ### Per onderwerp
 
-#### [Burgerzaken](../../../begrippen/burgerzaken.md)
+#### [Burgerzaken](../../../../onderwerpen/burgerzaken/begrippen.md)
 
 In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De UPL noemt het besluit bij geen enkel item, zodat het ook niet aan een UPL-dienst hangt; het is grondslag van de processen waarin het college de wet uitvoert (inschrijven, adresonderzoek, emigratie, verstrekking).
 
@@ -68,15 +68,15 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de AMvB bij de Wet BRP (BWBR0034306). [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft het college taken bij inschrijving, aangifte en verstrekking (art. 6, 24, 30, 40). [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde algemene maatregel van bestuur als geheel (BWBR0034306). [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving: een algemene maatregel van bestuur. [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, art. 24 (beslissing over inschrijving), 28a tot en met 28g (ondersteuning adresonderzoek), 29 en 30 (aangifte van vertrek, in persoon), 40 (weigering verstrekking): gedrag in Inschrijven ingezetene, Uitvoeren adresonderzoek, Verwerken emigratie en Verstrekken persoonsgegevens. [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki; het besluit werkt de Wet BRP uit. [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de AMvB bij de Wet BRP (BWBR0034306). [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft het college taken bij inschrijving, aangifte en verstrekking (art. 6, 24, 30, 40). [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde algemene maatregel van bestuur als geheel (BWBR0034306). [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving: een algemene maatregel van bestuur. [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, art. 24 (beslissing over inschrijving), 28a tot en met 28g (ondersteuning adresonderzoek), 29 en 30 (aangifte van vertrek, in persoon), 40 (weigering verstrekking): gedrag in Inschrijven ingezetene, Uitvoeren adresonderzoek, Verwerken emigratie en Verstrekken persoonsgegevens. [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki; het besluit werkt de Wet BRP uit. [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
 
 ### Relaties
 
@@ -84,12 +84,12 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Inschrijven ingezetene](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 24, 30) |
-| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Uitvoeren adresonderzoek](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitvoeren-adresonderzoek.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 28a–28g) |
-| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Verwerken emigratie](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-emigratie.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 29) |
-| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Verstrekken persoonsgegevens](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-persoonsgegevens.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 40) |
-| Besluit basisregistratie personen | werkt uit *associatie (gericht)* | [Wet basisregistratie personen](wet-basisregistratie-personen.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (aanhef) |
-| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [RNI-loket](../../../bedrijfsarchitectuur/rollen/rni-loket.md) | [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 36 (de gemeente waar de inschrijfvoorziening is ondergebracht)) |
+| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Inschrijven ingezetene](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md) | [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 24, 30) |
+| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Uitvoeren adresonderzoek](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitvoeren-adresonderzoek.md) | [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 28a–28g) |
+| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Verwerken emigratie](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-emigratie.md) | [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 29) |
+| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [Verstrekken persoonsgegevens](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-persoonsgegevens.md) | [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 40) |
+| Besluit basisregistratie personen | werkt uit *associatie (gericht)* | [Wet basisregistratie personen](wet-basisregistratie-personen.md) | [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (aanhef) |
+| Besluit basisregistratie personen | is grondslag voor *associatie (gericht)* | [RNI-loket](../../../bedrijfsarchitectuur/rollen/rni-loket.md) | [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) (art. 36 (de gemeente waar de inschrijfvoorziening is ondergebracht)) |
 
 ## Herkomst
 
@@ -97,7 +97,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Besluit BRP](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) | Besluit basisregistratie personen |
+| [Besluit BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) | Besluit basisregistratie personen |
 
 ### Afstemming met GEMMA
 

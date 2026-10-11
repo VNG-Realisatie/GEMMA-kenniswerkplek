@@ -48,7 +48,7 @@ Alle bronnen staan één keer centraal in de repository en worden door alle wiki
 |---|---|---|---|
 | 1. Origineel | `sources/raw/` voor documenten en pagina's, `sources/modellen/` voor modellen en lijsten | Het origineel met een omzetting met dezelfde naam: Markdown bij een document (pdf, docx, html), JSON bij een model of lijst (ArchiMate, XMI, een productenlijst). Wordt nooit gewijzigd | Alle wiki's |
 | 2. Technische index | `sources/index/<bron>.md` | Gegevens, korte samenvatting, trefwoorden, begrippen en een inhoudsopgave met regelnummers. Alleen voor de AI, om context te sparen (skill `wiki-intake`) | Alle wiki's |
-| 3. Bronduiding | `wikis/<wiki>/<map>/<onderwerp>/<bron>.md` (de map staat in `wiki.yaml`) | Wat deze bron betekent vanuit het perspectief van de wiki, met uittreksels, en onder de titel links naar laag 1 | Eén wiki |
+| 3. Bronduiding | `wikis/<wiki>/<map>/<onderwerp>/<bron>.md` (de mappen staan in `wiki.yaml`: `dir`, of `files` met een patroon als een type in meer mappen staat) | Wat deze bron betekent vanuit het perspectief van de wiki, met uittreksels, en onder de titel links naar laag 1 | Eén wiki |
 
 **Herleidbaarheid loopt via links, van pagina naar brontekst:** pagina → bronduiding → laag 1. Elke verwijzing naar een bron op een pagina is een link naar de bronduiding van die bron, ook in tabellen; de bronduiding linkt naar de tekst, het origineel en de online bron. De technische index zit niet in deze keten: een pagina linkt nooit naar laag 2.
 

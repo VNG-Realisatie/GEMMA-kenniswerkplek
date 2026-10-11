@@ -1,6 +1,6 @@
 ---
 id: 2025-rvig-logisch-ontwerp-brp-2025q1
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2025-rvig-logisch-ontwerp-brp-2025q1
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Logisch Ontwerp BRP versie 2025.Q1
 
-Bron: [tekst](../../../../../sources/raw/2025-rvig-logisch-ontwerp-brp-2025q1.md) · [online](https://www.rvig.nl/sites/default/files/2024-12/Logisch%20Ontwerp%20BRP%202025.Q1.pdf)
+Bron: [tekst](../../../../../../sources/raw/2025-rvig-logisch-ontwerp-brp-2025q1.md) · [online](https://www.rvig.nl/sites/default/files/2024-12/Logisch%20Ontwerp%20BRP%202025.Q1.pdf)
 
 ## Samenvatting
 

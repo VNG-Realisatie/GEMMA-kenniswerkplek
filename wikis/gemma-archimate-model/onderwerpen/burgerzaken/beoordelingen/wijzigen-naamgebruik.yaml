@@ -257,6 +257,10 @@ relaties:
   vindplaats: UPL nr. 257; Wet BRP art. 2.25
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
+besluiten:
+- datum: '2026-10-10'
+  besluit: Bijhoudingsgemeente en Beslisser krijgen een toewijzing naar dit bedrijfsproces, met de bronnen van het kenmerk toegewezen partij, zoals bij de andere bedrijfsprocessen onder Bijhouden persoonsgegevens.
+  gevolg: verwerkt
 status: goedgekeurd
 beslist:
   uitkomst:
@@ -285,8 +289,4 @@ beslist:
     gemma_eigenschappen:
       GEMMA type: Bedrijfsproces
       Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
-  pad: bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-naamgebruik.md
-besluiten:
-- datum: '2026-10-10'
-  besluit: Bijhoudingsgemeente en Beslisser krijgen een toewijzing naar dit bedrijfsproces, met de bronnen van het kenmerk toegewezen partij, zoals bij de andere bedrijfsprocessen onder Bijhouden persoonsgegevens.
-  gevolg: verwerkt
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-naamgebruik.md

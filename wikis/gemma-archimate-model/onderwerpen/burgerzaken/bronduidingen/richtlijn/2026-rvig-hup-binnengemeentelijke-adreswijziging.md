@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-binnengemeentelijke-adreswijziging
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-binnengemeentelijke-adreswijziging
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Binnengemeentelijke adreswijziging | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-binnengemeentelijke-adreswijziging.html) · [online](https://www.rvig.nl/hup/binnengemeentelijke-adreswijziging)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-binnengemeentelijke-adreswijziging.html) · [online](https://www.rvig.nl/hup/binnengemeentelijke-adreswijziging)
 
 ## Samenvatting
 

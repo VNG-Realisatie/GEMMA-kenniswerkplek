@@ -1,20 +1,20 @@
 """Render: alle leesbare pagina's van deze wiki uit de beoordelingen.
 
-Invoer (alleen lezen): `beoordelingen/begrippen/<id>.yaml` (het oordeel van de AI, met `status` en `beslist` van
-tools/beslissen.py), `beoordelingen/onderwerpen/<id>.yaml`, `beoordelingen/terugmeldingen/ggm.yaml`,
-`beoordelingen/terugmeldingen/procesarchitectuur.yaml`, `beoordelingen/terugmeldingen/gemma.yaml`, `beoordelingen/beleidsdomeinen.yaml`, `log.md`, `wiki.yaml`,
-de bronanalyses en `sources/index` (titels). Het script oordeelt niet en schrijft nooit in `beoordelingen/`.
+Invoer (alleen lezen): `onderwerpen/<onderwerp>/beoordelingen/<id>.yaml` (het oordeel van de AI, met `status` en `beslist` van
+tools/beslissen.py), `onderwerpen/<onderwerp>/afbakening.yaml`, `modellen/ggm/terugmeldingen.yaml`,
+`modellen/gemma/terugmeldingen/{procesarchitectuur,gemma-team}.yaml`, `modellen/gemma/indelingen/beleidsdomeinen.yaml`, `log.md`, `wiki.yaml`,
+de bronduidingen en `sources/index` (titels). Het script oordeelt niet en schrijft nooit in een map `beoordelingen/`.
 
 Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--check` vangt dat):
 
 | Bestand | Inhoud |
 |---|---|
 | `<map van het type>/<taakveld>/<beleidsdomein>/<id>.md` (pad uit `beslist.pad`) | Elementpagina |
-| `begrippen/<onderwerp>.md` | Begrippenlijst: per begrip de uitkomst, de reden, de herkomst en de GGM-entiteit, en de besluiten over het onderwerp |
-| `overzichten/<onderwerp>.md` | Overzicht per onderwerp: de views op de indelingen (processen naar kernobject en naar soort werk, ketensamenwerking, objecten, functies, doelgroepen, producten en diensten, beleidskaders) |
-| `terugmeldingen/ggm-terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
-| `terugmeldingen/procesarchitectuur-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel) |
-| `terugmeldingen/gemma-terugmeldingen.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model |
+| `onderwerpen/<onderwerp>/begrippen.md` | Begrippenlijst: per begrip de uitkomst, de reden, de herkomst en de GGM-entiteit, en de besluiten over het onderwerp |
+| `onderwerpen/<onderwerp>/overzicht.md` | Overzicht per onderwerp: de views op de indelingen (processen naar kernobject en naar soort werk, ketensamenwerking, objecten, functies, doelgroepen, producten en diensten, beleidskaders) |
+| `modellen/ggm/terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
+| `modellen/gemma/terugmeldingen/procesarchitectuur.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel) |
+| `modellen/gemma/terugmeldingen/gemma-team.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model |
 | `ter-beoordeling.md` | Wat wacht op akkoord (review), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 | `kennismodel/**` | Het kennismodel uit tools/kennismodel.py (behalve `kennismodel/modelleerregels.md`, met de hand) |
@@ -24,9 +24,9 @@ letterlijke `ggm_*`/`gemma_*`-velden), titel en status, Ter discussie; Betekenis
 onderwerp, Synoniemen, Naamkeuze, Homoniemen); Plaats in het model (Typering, Plaats in de indelingen, Kenmerken
 alleen met ja, Generalisatie, Specialisaties, GGM-componenten, Tegenhanger, Relaties uitgaand en inkomend, Kwaliteitsdoelen); Herkomst (Bronnen met korte titel,
 Afstemming met GGM met de GGM-terugmeldingen, Afstemming met GEMMA, Besluiten redacteur). Een bron heet in links naar
-haar `korte_titel` uit de bronanalyse.
+haar `korte_titel` uit de bronduiding.
 
-Wat de render garandeert: elke bronverwijzing is een link naar de bronanalyse (de bronduiding; een modelbron linkt
+Wat de render garandeert: elke bronverwijzing is een link naar de bronduiding (de bronduiding; een modelbron linkt
 naar sources/raw), relaties staan in beide richtingen, er staan geen verwijzingen in de frontmatter en geen links naar
 tools of regels, en elke alinea staat op één regel. Twee keer renderen geeft hetzelfde resultaat.
 
@@ -52,17 +52,15 @@ import kennismodel  # noqa: E402
 from llmwiki import beoordeling, frontmatter, logbook, paths  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
-ONDERWERPEN = Path("beoordelingen") / "onderwerpen"
-OVERZICHTEN = "overzichten"
-TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "ggm.yaml"
 TER_BEOORDELING = Path("ter-beoordeling.md")
 VOORTGANG = Path("voortgang.md")
-TERUGMELDLIJST = Path("terugmeldingen") / "ggm-terugmeldingen.md"
-PA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "procesarchitectuur.yaml"
-PA_TERUGMELDLIJST = Path("terugmeldingen") / "procesarchitectuur-terugmeldingen.md"
-GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "gemma.yaml"
-GEMMA_TERUGMELDLIJST = Path("terugmeldingen") / "gemma-terugmeldingen.md"
-BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
+TERUGMELDINGEN = gam_gemeen.GGM_TERUGMELDINGEN
+TERUGMELDLIJST = gam_gemeen.GGM_TERUGMELDLIJST
+PA_TERUGMELDINGEN = gam_gemeen.PA_TERUGMELDINGEN
+PA_TERUGMELDLIJST = gam_gemeen.PA_TERUGMELDLIJST
+GEMMA_TERUGMELDINGEN = gam_gemeen.GEMMA_TERUGMELDINGEN
+GEMMA_TERUGMELDLIJST = gam_gemeen.GEMMA_TERUGMELDLIJST
+BELEIDSDOMEINEN = gam_gemeen.BELEIDSDOMEINEN
 INDELINGSVELDEN = ("afnemer", "domein", "doelgroep", "regelgever")  # waarden zonder verwijzing: ook in de frontmatter
 
 STATUSSEN = ["kandidaat", "review", "goedgekeurd", "afgewezen"]
@@ -114,7 +112,7 @@ class Wiki:
         self.yaml = paths.load_wiki_yaml(wiki_root)
         self.repo = paths.find_repo_root(wiki_root)
         self.begrippen = {bid: data for bid, (_, data) in beoordeling.alle(wiki_root, self.yaml).items()}
-        self.onderwerpen = {p.stem: beoordeling.laad(p) for p in sorted((wiki_root / ONDERWERPEN).glob("*.yaml"))}
+        self.onderwerpen = gam_gemeen.afbakeningen(wiki_root)
         register = wiki_root / TERUGMELDINGEN
         self.terugmeldingen = beoordeling.laad(register).get("terugmeldingen", []) if register.exists() else []
         pa = wiki_root / PA_TERUGMELDINGEN
@@ -126,7 +124,6 @@ class Wiki:
             if bd.exists() else {}
         log = wiki_root / "log.md"
         self.log = log.read_text(encoding="utf-8") if log.exists() else ""
-        self.onderwerp_dir = self.yaml["page_types"].get("onderwerp", {}).get("dir", "begrippen")
         self._titels: dict[str, str] = {}
         self._korte_titels: dict[str, str] = {}
 
@@ -152,7 +149,7 @@ class Wiki:
         return self._titels[bron_id]
 
     def korte_titel(self, bron_id: str) -> str:
-        """Linktekst van een bron: `korte_titel` uit de bronanalyse; een modelbron heet GGM of GEMMA."""
+        """Linktekst van een bron: `korte_titel` uit de bronduiding; een modelbron heet GGM of GEMMA."""
         for model in ("ggm", "gemma"):
             if self.yaml.get(model, {}).get("bron") == bron_id:
                 return model.upper()
@@ -171,7 +168,7 @@ class Wiki:
         return f"{cel} ({vindplaats})" if vindplaats and cel else (vindplaats or cel)
 
     def tekst(self, van: str, tekst: str) -> str:
-        """Lopende tekst van de AI: bron-id's worden links naar de bronanalyse."""
+        """Lopende tekst van de AI: bron-id's worden links naar de bronduiding."""
         return gam_gemeen.bronnen_als_link(self.root / van, " ".join(str(tekst).split()), self.root)
 
     def alineas(self, van: str, alineas) -> list[str]:
@@ -364,7 +361,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
     }
     meta = {k: v for k, v in meta.items() if v not in ([], {}, None, "")}
 
-    r = [f"# {d['begrip']}", "", _gegenereerd(f"beoordelingen/begrippen/{bid}.yaml"), "", STATUSREGEL[status], ""]
+    r = [f"# {d['begrip']}", "", _gegenereerd(f"de beoordeling {bid}.yaml"), "", STATUSREGEL[status], ""]
     discussie = [f"- {w.tekst(van, x)}" for x in a.get("open", []) + d.get("vragen", [])]
     r += _sectie("Ter discussie", discussie + ([""] if discussie else []))
 
@@ -376,7 +373,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
     per_onderwerp = []
     for oid, alineas in d.get("per_onderwerp", {}).items():
         onaam = w.onderwerpen.get(oid, {}).get("naam", oid)
-        per_onderwerp += _sub(f"[{onaam}]({w.rel(van, f'{w.onderwerp_dir}/{oid}.md')})", w.alineas(van, alineas), 4)
+        per_onderwerp += _sub(f"[{onaam}]({w.rel(van, gam_gemeen.begrippen_pad(oid))})", w.alineas(van, alineas), 4)
     synoniemen = _tabel(["Synoniem", "Context"], [[s["naam"], s["context"]] for s in d.get("synoniemen", [])]) \
         if d.get("synoniemen") else []
     homoniemen = _tabel(["Begrip", "Betekenis", "Naamkeuze"], [
@@ -526,14 +523,14 @@ def _begrip_cel(w: Wiki, van: str, bid: str, d: dict) -> str:
 
 def begrippenlijst(w: Wiki, oid: str) -> str:
     o = w.onderwerpen[oid]
-    van = f"{w.onderwerp_dir}/{oid}.md"
+    van = gam_gemeen.begrippen_pad(oid)
     meta = {"id": oid, "type": "onderwerp", "naam": o["naam"], "status": o.get("status", "in-behandeling"),
             "bronnen": o.get("bronnen", [])}
     if o.get("conclusie"):
         meta["conclusie"] = o["conclusie"]
-    r = [f"# {o['naam']}", "", _gegenereerd(f"beoordelingen/onderwerpen/{oid}.yaml en de beoordelingen van de begrippen"), ""]
+    r = [f"# {o['naam']}", "", _gegenereerd(f"{gam_gemeen.afbakening_pad(oid).as_posix()} en de beoordelingen van de begrippen"), ""]
     r += _sectie("Omschrijving", w.alineas(van, o.get("omschrijving")))
-    r += _sectie("Overzicht", [f"De views op de indelingen staan in het [overzicht]({w.rel(van, f'{OVERZICHTEN}/{oid}.md')}).", ""])
+    r += _sectie("Overzicht", [f"De views op de indelingen staan in het [overzicht]({w.rel(van, gam_gemeen.overzicht_pad(oid))}).", ""])
     r += _sectie("Bronnen", [f"- {w.bron(van, b, w.titel(b))}" for b in o.get("bronnen", [])] + [""])
     rijen = []
     for bid, d in sorted(w.begrippen.items(), key=lambda x: x[1]["begrip"].lower()):
@@ -543,7 +540,7 @@ def begrippenlijst(w: Wiki, oid: str) -> str:
         reden = d.get("toelichting") or a["uitkomst"]["toelichting"]
         t = gam_gemeen.thuis(d)
         if t != oid:
-            reden = f"Uit onderwerp [{w.onderwerpen.get(t, {}).get('naam', t)}]({w.rel(van, f'{w.onderwerp_dir}/{t}.md')}). " + reden
+            reden = f"Uit onderwerp [{w.onderwerpen.get(t, {}).get('naam', t)}]({w.rel(van, gam_gemeen.begrippen_pad(t))}). " + reden
         if a.get("open"):
             reden += " Voorleggen: " + "; ".join(a["open"]) + "."
         ggm = (a.get("ggm") or {}).get("ggm_entiteit")
@@ -590,13 +587,13 @@ def _proces_regel(w: Wiki, van: str, bid: str, niveau: int) -> list[str]:
 
 def overzicht(w: Wiki, oid: str) -> str:
     o = w.onderwerpen[oid]
-    van = f"{OVERZICHTEN}/{oid}.md"
+    van = gam_gemeen.overzicht_pad(oid)
     meta = {"id": oid, "type": "overzicht", "naam": o["naam"]}
     eigen = sorted((b for b, d in w.begrippen.items() if oid in d.get("onderwerpen", []) and w.is_element(b)),
                    key=lambda b: w.naam(b).lower())
     van_type = lambda t: [b for b in eigen if w.paginatype(b) == t]  # noqa: E731
     r = [f"# Overzicht {o['naam']}", "", _gegenereerd("de beoordelingen van de elementen van dit onderwerp"), "",
-         f"De views op de indelingen voor het onderwerp [{o['naam']}](../{w.onderwerp_dir}/{oid}.md). Per element de pagina met de details.", ""]
+         f"De views op de indelingen voor het onderwerp [{o['naam']}](begrippen.md). Per element de pagina met de details.", ""]
 
     processen = van_type("bedrijfsproces")
     clusters = {b for b in processen if w.niveau(b) == "cluster naar soort werk"}
@@ -861,7 +858,7 @@ def voortgang(w: Wiki) -> str:
     rijen = []
     for oid, o in w.onderwerpen.items():
         eigen = [d for d in w.begrippen.values() if oid in d.get("onderwerpen", [])]
-        rijen.append([f"[{o['naam']}]({w.onderwerp_dir}/{oid}.md)", o.get("status", "in-behandeling"), len(eigen),
+        rijen.append([f"[{o['naam']}]({gam_gemeen.begrippen_pad(oid)})", o.get("status", "in-behandeling"), len(eigen),
                       sum(1 for d in eigen if d.get("status"))])
     r += _sectie("Onderwerpen", _tabel(["Onderwerp", "Status", "Begrippen", "Elementen"], rijen))
     r += _sectie("Samenhang tussen onderwerpen", _samenhang(w))
@@ -905,8 +902,8 @@ def render(wiki_root: Path = WIKI_ROOT) -> dict[str, str]:
         if w.pad(bid) and d.get("status"):
             uit[w.pad(bid)] = element_pagina(w, bid)
     for oid in w.onderwerpen:
-        uit[f"{w.onderwerp_dir}/{oid}.md"] = begrippenlijst(w, oid)
-        uit[f"{OVERZICHTEN}/{oid}.md"] = overzicht(w, oid)
+        uit[gam_gemeen.begrippen_pad(oid)] = begrippenlijst(w, oid)
+        uit[gam_gemeen.overzicht_pad(oid)] = overzicht(w, oid)
     uit[TERUGMELDLIJST.as_posix()] = terugmeldlijst(w)
     uit[PA_TERUGMELDLIJST.as_posix()] = pa_terugmeldlijst(w)
     if w.gemma_terugmeldingen:
@@ -918,13 +915,15 @@ def render(wiki_root: Path = WIKI_ROOT) -> dict[str, str]:
 
 
 def beheerd(wiki_root: Path) -> set[str]:
-    """Bestaande bestanden die de render beheert: alle pagina's in de mappen van de elementtypen en de begrippenlijsten."""
+    """Bestaande bestanden die de render beheert: alle pagina's in de mappen van de elementtypen, de begrippenlijst en het
+    overzicht van elk onderwerp, en het kennismodel."""
     y = paths.load_wiki_yaml(wiki_root)
-    mappen = [d["dir"] for d in y["page_types"].values() if d.get("curated")]
-    mappen.append(y["page_types"].get("onderwerp", {}).get("dir", "begrippen"))
-    mappen += [OVERZICHTEN, kennismodel.MAP]
+    mappen = [d["dir"] for d in y["page_types"].values() if d.get("curated")] + [kennismodel.MAP]
     handmatig = {f"{kennismodel.MAP}/{n}" for n in kennismodel.HANDMATIG}
-    return {p.relative_to(wiki_root).as_posix() for m in mappen for p in (wiki_root / m).rglob("*.md")} - handmatig
+    bestaand = {p.relative_to(wiki_root).as_posix() for m in mappen for p in (wiki_root / m).rglob("*.md")} - handmatig
+    for naam in ("begrippen.md", "overzicht.md"):
+        bestaand |= {p.relative_to(wiki_root).as_posix() for p in (wiki_root / gam_gemeen.ONDERWERPEN).glob(f"*/{naam}")}
+    return bestaand
 
 
 def verschillen(wiki_root: Path = WIKI_ROOT) -> tuple[dict[str, str], list[str], list[str]]:

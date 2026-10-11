@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-paspoortwet-bwbr0005212
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Paspoortwet
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-paspoortwet-bwbr0005212.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-paspoortwet-bwbr0005212.html) · [online](https://wetten.overheid.nl/BWBR0005212/2026-10-01)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-paspoortwet-bwbr0005212.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-paspoortwet-bwbr0005212.html) · [online](https://wetten.overheid.nl/BWBR0005212/2026-10-01)
 
 ## Samenvatting
 

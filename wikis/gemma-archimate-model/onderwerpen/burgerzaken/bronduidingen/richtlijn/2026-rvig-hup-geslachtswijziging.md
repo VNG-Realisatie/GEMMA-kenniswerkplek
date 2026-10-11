@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-geslachtswijziging
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-geslachtswijziging
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Geslachtswijziging
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-geslachtswijziging.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-geslachtswijziging.html) · [online](https://www.rvig.nl/hup/geslachtswijziging)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-geslachtswijziging.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-geslachtswijziging.html) · [online](https://www.rvig.nl/hup/geslachtswijziging)
 
 ## Samenvatting
 

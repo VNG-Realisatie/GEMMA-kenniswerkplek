@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Inschrijven vanuit het buitenland | Gemeente Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/inschrijven-vanuit-het-buitenland)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/inschrijven-vanuit-het-buitenland)
 
 ## Samenvatting
 

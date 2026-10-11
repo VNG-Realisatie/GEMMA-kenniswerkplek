@@ -1,6 +1,6 @@
 ---
 id: 2026-nvvb-werkinstructie-registratie-gezag
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-nvvb-werkinstructie-registratie-gezag
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Werkinstructie registratie gezag bij erkenning in de BRP
 
-Bron: [tekst](../../../../../sources/raw/2026-nvvb-werkinstructie-registratie-gezag.md) · [origineel (pdf)](../../../../../sources/raw/2026-nvvb-werkinstructie-registratie-gezag.pdf) · [online](https://nvvb.nl/media/filer_public/03/0c/030c6d36-0b91-4fbc-9ba9-0655057a3ec6/werkinstructie_registratie_gezag.pdf)
+Bron: [tekst](../../../../../../sources/raw/2026-nvvb-werkinstructie-registratie-gezag.md) · [origineel (pdf)](../../../../../../sources/raw/2026-nvvb-werkinstructie-registratie-gezag.pdf) · [online](https://nvvb.nl/media/filer_public/03/0c/030c6d36-0b91-4fbc-9ba9-0655057a3ec6/werkinstructie_registratie_gezag.pdf)
 
 ## Samenvatting
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-nvvb-handreiking-adresonderzoek
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-nvvb-handreiking-adresonderzoek
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Adresonderzoek (NVVB)
 
-Bron: [tekst](../../../../../sources/raw/2026-nvvb-handreiking-adresonderzoek.md) · [origineel (html)](../../../../../sources/raw/2026-nvvb-handreiking-adresonderzoek.html) · [online](https://nvvb.nl/nl/producten-en-diensten/handreikingen/adresonderzoek/)
+Bron: [tekst](../../../../../../sources/raw/2026-nvvb-handreiking-adresonderzoek.md) · [origineel (html)](../../../../../../sources/raw/2026-nvvb-handreiking-adresonderzoek.html) · [online](https://nvvb.nl/nl/producten-en-diensten/handreikingen/adresonderzoek/)
 
 ## Samenvatting
 

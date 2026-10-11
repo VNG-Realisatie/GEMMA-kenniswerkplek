@@ -1,7 +1,7 @@
 ---
 id: 2026-vng-gemma-proceshierarchie
-type: bronanalyse
-onderwerp: kern
+type: bronduiding
+model: gemma
 bronnen:
 - 2026-vng-gemma-proceshierarchie
 relevant: ja
@@ -10,7 +10,7 @@ bijgewerkt: '2026-10-08'
 
 # GEMMA Procesarchitectuur Proceshiërarchie
 
-Bron: [tekst](../../../../../sources/raw/2026-vng-gemma-proceshierarchie.md) · [origineel (html)](../../../../../sources/raw/2026-vng-gemma-proceshierarchie.html) · [online](https://www.gemmaonline.nl/wiki/Procesarchitectuur_Proceshi%C3%ABrarchie)
+Bron: [tekst](../../../../../../sources/raw/2026-vng-gemma-proceshierarchie.md) · [origineel (html)](../../../../../../sources/raw/2026-vng-gemma-proceshierarchie.html) · [online](https://www.gemmaonline.nl/wiki/Procesarchitectuur_Proceshi%C3%ABrarchie)
 
 ## Samenvatting
 
@@ -37,7 +37,7 @@ Geen relatietabel: de bron beschrijft typen van elementen en relaties, geen begr
 
 ## Relevantie voor de architectuur
 
-De procesniveaus van de wiki (levensloopproces, bedrijfsproces, deelproces) en de ketensamenwerking als bedrijfsinteractie volgen deze pagina. De afweging staat in ARCHITECTURE.md, sectie [4.3 Processen en ketens](../../../ARCHITECTURE.md#43-processen-en-ketens).
+De procesniveaus van de wiki (levensloopproces, bedrijfsproces, deelproces) en de ketensamenwerking als bedrijfsinteractie volgen deze pagina. De afweging staat in ARCHITECTURE.md, sectie [4.3 Processen en ketens](../../../../ARCHITECTURE.md#43-processen-en-ketens).
 
 ## Citaten
 

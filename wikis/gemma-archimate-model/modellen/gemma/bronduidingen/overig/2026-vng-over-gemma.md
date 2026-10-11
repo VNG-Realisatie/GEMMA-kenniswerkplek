@@ -1,7 +1,7 @@
 ---
 id: 2026-vng-over-gemma
-type: bronanalyse
-onderwerp: kern
+type: bronduiding
+model: gemma
 bronnen:
 - 2026-vng-over-gemma
 relevant: ja
@@ -10,7 +10,7 @@ bijgewerkt: '2026-10-08'
 
 # Over GEMMA (kennismodel en modelleerafspraken)
 
-Bron: [tekst](../../../../../sources/raw/2026-vng-over-gemma.md) · [origineel (xml)](../../../../../sources/raw/2026-vng-over-gemma.xml) · [online](https://raw.githubusercontent.com/VNG-Realisatie/Over-GEMMA-Archi-repository/Master/export/Over%20GEMMA.xml)
+Bron: [tekst](../../../../../../sources/raw/2026-vng-over-gemma.md) · [origineel (xml)](../../../../../../sources/raw/2026-vng-over-gemma.xml) · [online](https://raw.githubusercontent.com/VNG-Realisatie/Over-GEMMA-Archi-repository/Master/export/Over%20GEMMA.xml)
 
 ## Samenvatting
 
@@ -52,7 +52,7 @@ Geen relatietabel: de bron beschrijft typen van elementen en relaties, geen begr
 
 ## Relevantie voor de architectuur
 
-Levert de namen en definities van de elementtypen (skill gemma-archimate-model-criteria) en het kennismodel dat de export naar Archi meeneemt (`wiki.yaml` `kennismodel`). De vergelijking met de wiki staat in ARCHITECTURE.md, sectie [4.1 Elementtypen en kenmerken](../../../ARCHITECTURE.md#41-elementtypen-en-kenmerken), en in de [modelleerafspraken per elementtype](../../../kennismodel/README.md).
+Levert de namen en definities van de elementtypen (skill gemma-archimate-model-criteria) en het kennismodel dat de export naar Archi meeneemt (`wiki.yaml` `kennismodel`). De vergelijking met de wiki staat in ARCHITECTURE.md, sectie [4.1 Elementtypen en kenmerken](../../../../ARCHITECTURE.md#41-elementtypen-en-kenmerken), en in de [modelleerafspraken per elementtype](../../../../kennismodel/README.md).
 
 ## Citaten
 

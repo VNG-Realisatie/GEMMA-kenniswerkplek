@@ -33,7 +33,7 @@ Voorrang bepaalt nooit of iets een element is. De naam en de herkenbare definiti
 3. Kenmerken → type, via de beslistabel. De uitkomst is bindend (regel Beslistabel beslist).
 4. Kernrelaties, uit dezelfde wettekst.
 5. Indeling en indelingsrelaties ([indelingen](indelingen.md)).
-6. Overige relaties, uit de bronanalyse.
+6. Overige relaties, uit de bronduiding.
 7. Matches.
 
 ### Matchen
@@ -56,7 +56,7 @@ Ter uitleg als aparte stappen; bij het beoordelen gebeuren ze vaak tegelijk, uit
 1. grondslag (*is grondslag voor* vanuit een beleidskader);
 2. kernrelatie van het type;
 3. indelingsrelaties (levensloopproces → aggregatie → bedrijfsproces, functieketen, kernobject);
-4. overige relaties uit de bronanalyse (per partij wat zij houdt, beheert, uitvoert of vervult; toegang met een handeling of verantwoordelijkheid);
+4. overige relaties uit de bronduiding (per partij wat zij houdt, beheert, uitvoert of vervult; toegang met een handeling of verantwoordelijkheid);
 5. de GGM-match van de relatie, alleen bij bedrijfsobjecten, data-objecten en beleidsdomeinen;
 6. GEMMA (geen match: de relatie gaat als nieuw mee in de export).
 

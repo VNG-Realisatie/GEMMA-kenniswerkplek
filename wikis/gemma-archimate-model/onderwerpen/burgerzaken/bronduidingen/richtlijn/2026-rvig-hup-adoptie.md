@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-adoptie
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-adoptie
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Adoptie
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-adoptie.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-adoptie.html) · [online](https://www.rvig.nl/hup/adoptie)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-adoptie.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-adoptie.html) · [online](https://www.rvig.nl/hup/adoptie)
 
 ## Samenvatting
 

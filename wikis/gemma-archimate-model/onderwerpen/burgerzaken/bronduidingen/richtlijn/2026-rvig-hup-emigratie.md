@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-emigratie
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-emigratie
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Emigratie | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-emigratie.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-emigratie.html) · [online](https://www.rvig.nl/hup/emigratie)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-emigratie.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-emigratie.html) · [online](https://www.rvig.nl/hup/emigratie)
 
 ## Samenvatting
 

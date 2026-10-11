@@ -113,14 +113,22 @@ def append_log(
         fh.write(toevoeging)
 
 
+def paginas_van_type(wiki_root: Path, type_def: dict) -> list[Path]:
+    """De pagina's van een paginatype: `dir` (alle Markdown eronder) of `files` (een glob-patroon of een lijst ervan,
+    relatief aan de wiki, voor een type dat in meer mappen staat). Zonder beide: geen eigen map, dus geen pagina's."""
+    if "files" in type_def:
+        patronen = type_def["files"]
+        patronen = [patronen] if isinstance(patronen, str) else patronen
+        return sorted({p for patroon in patronen for p in wiki_root.glob(patroon)})
+    if "dir" in type_def:
+        page_dir = wiki_root / type_def["dir"]
+        return sorted(page_dir.rglob("*.md")) if page_dir.exists() else []
+    return []
+
+
 def _iter_pages(wiki_root: Path, wiki_yaml: dict):
     for type_name, type_def in wiki_yaml.get("page_types", {}).items():
-        if "dir" not in type_def:  # een type zonder eigen map (zoals gegenereerde lijsten) telt niet mee
-            continue
-        page_dir = wiki_root / type_def["dir"]
-        if not page_dir.exists():
-            continue
-        for path in sorted(page_dir.rglob("*.md")):
+        for path in paginas_van_type(wiki_root, type_def):
             yield type_name, path, frontmatter.read(path).meta
 
 

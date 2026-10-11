@@ -19,13 +19,13 @@ def wiki(archimate_repo):
     root, wiki = archimate_repo
     bronnen = [WET, "2026-vng-ggm", "2026-utrecht-nota"]
     for bron_id in bronnen:
-        pad = wiki / "bronanalyses" / "test" / BRONTYPE[bron_id] / f"{bron_id}.md"
+        pad = wiki / "onderwerpen" / "test" / "bronduidingen" / BRONTYPE[bron_id] / f"{bron_id}.md"
         pad.parent.mkdir(parents=True, exist_ok=True)
-        pad.write_text(f"---\nid: {bron_id}\ntype: bronanalyse\nonderwerp: test\nbronnen: [{bron_id}]\n---\n\n# {bron_id}\n\n"
-                       f"Bron: [tekst](../../../../../sources/raw/{bron_id}.md)\n", encoding="utf-8")
-    beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/test.yaml",
+        pad.write_text(f"---\nid: {bron_id}\ntype: bronduiding\nonderwerp: test\nbronnen: [{bron_id}]\n---\n\n# {bron_id}\n\n"
+                       f"Bron: [tekst](../../../../../../sources/raw/{bron_id}.md)\n", encoding="utf-8")
+    beoordeling.schrijf(wiki / "onderwerpen/test/afbakening.yaml",
                         {"naam": "Test", "niveau": "eigen", "status": "in-behandeling", "omschrijving": ["Een onderwerp."], "bronnen": bronnen})
-    (wiki / "beoordelingen/begrippen").mkdir(parents=True)
+    (wiki / "onderwerpen/test/beoordelingen").mkdir(parents=True)
     return wiki
 
 
@@ -56,11 +56,14 @@ def _proces(**extra) -> dict:
 
 
 def _schrijf(wiki, bid, data):
-    beoordeling.schrijf(wiki / f"beoordelingen/begrippen/{bid}.yaml", data)
+    """Schrijf de beoordeling in de map van haar thuisonderwerp (het eerste in `onderwerpen`)."""
+    for oud in wiki.glob(f"onderwerpen/*/beoordelingen/{bid}.yaml"):
+        oud.unlink()
+    beoordeling.schrijf(wiki / f"onderwerpen/{data['onderwerpen'][0]}/beoordelingen/{bid}.yaml", data)
 
 
 def _lees(wiki, bid):
-    return beoordeling.laad(wiki / f"beoordelingen/begrippen/{bid}.yaml")
+    return beoordeling.laad(next(wiki.glob(f"onderwerpen/*/beoordelingen/{bid}.yaml")))
 
 
 def _beslissen(wiki):
@@ -77,16 +80,16 @@ def test_beoordelingen_worden_paginas_met_relaties_in_beide_richtingen(wiki):
 
     bo, proces = _lees(wiki, "beschikking"), _lees(wiki, "behandelen-aanvraag")
     assert (bo["status"], proces["status"]) == ("review", "review")
-    assert bo["beslist"]["pad"] == "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md"
+    assert bo["beslist"]["pad"] == "elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md"
     assert bo["beslist"]["herkomst"] == "rijksregelgeving"
 
     pagina = (wiki / bo["beslist"]["pad"]).read_text(encoding="utf-8")
     assert "#### Inkomend" in pagina
     assert "[Behandelen aanvraag](../../../bedrijfsprocessen/8-wonen/vergunningen/behandelen-aanvraag.md)" in pagina
-    assert f"[{WET}](../../../../bronanalyses/test/rijksregelgeving/{WET}.md)" in pagina
+    assert f"[{WET}](../../../../../onderwerpen/test/bronduidingen/rijksregelgeving/{WET}.md)" in pagina
     assert "**Status: review.**" in pagina
-    lijst = (wiki / "begrippen/test.md").read_text(encoding="utf-8")
-    assert "[Beschikking](../bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md)" in lijst
+    lijst = (wiki / "onderwerpen/test/begrippen.md").read_text(encoding="utf-8")
+    assert "[Beschikking](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md)" in lijst
     assert "Behandelen aanvraag" in (wiki / "ter-beoordeling.md").read_text(encoding="utf-8")
 
 
@@ -137,7 +140,7 @@ def test_elk_paginatype_wordt_afgeleid_en_gerenderd(wiki):
         assert d["status"] == ("kandidaat" if paginatype == "kanaal" else "review"), (bid, d["beslist"].get("open"))
         assert d["beslist"]["pad"].startswith(beslissen.paths.load_wiki_yaml(wiki)["page_types"][paginatype]["dir"])
         assert (wiki / d["beslist"]["pad"]).exists(), bid
-    lijst = (wiki / "begrippen/test.md").read_text(encoding="utf-8")
+    lijst = (wiki / "onderwerpen/test/begrippen.md").read_text(encoding="utf-8")
     assert all(data["begrip"] in lijst for _, _, data in gevallen.values())
 
 
@@ -150,10 +153,10 @@ def test_beslissen_en_render_zijn_idempotent_en_check_vangt_handwerk(wiki):
     pagina = wiki / _lees(wiki, "beschikking")["beslist"]["pad"]
     pagina.write_text(pagina.read_text(encoding="utf-8") + "\nHandmatig.\n", encoding="utf-8")
     assert render.main(["--wiki", str(wiki), "--check"]) == 1
-    (wiki / "bedrijfsarchitectuur/rollen").mkdir(parents=True)
-    (wiki / "bedrijfsarchitectuur/rollen/los.md").write_text("# Los\n", encoding="utf-8")
+    (wiki / "elementpaginas/bedrijfsarchitectuur/rollen").mkdir(parents=True)
+    (wiki / "elementpaginas/bedrijfsarchitectuur/rollen/los.md").write_text("# Los\n", encoding="utf-8")
     assert render.main(["--wiki", str(wiki)]) == 0
-    assert not (wiki / "bedrijfsarchitectuur/rollen/los.md").exists()
+    assert not (wiki / "elementpaginas/bedrijfsarchitectuur/rollen/los.md").exists()
     assert render.main(["--wiki", str(wiki), "--check"]) == 0
 
 
@@ -178,7 +181,7 @@ def test_gegevensobject_zonder_ggm_blijft_kandidaat_tot_de_redacteur_beslist(wik
     _beslissen(wiki)
     data = _lees(wiki, "beschikking")
     assert data["status"] == "afgewezen" and "pad" not in data["beslist"]
-    assert not (wiki / "bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md").exists()
+    assert not (wiki / "elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/8-wonen/vergunningen/beschikking.md").exists()
 
 
 def test_goedgekeurd_blijft_tot_de_inhoud_wijzigt(wiki):
@@ -235,7 +238,7 @@ def test_nieuwe_terugmelding_krijgt_het_volgende_nummer(wiki):
     meldingen = beoordeling.laad(wiki / beslissen.TERUGMELDINGEN)["terugmeldingen"]
     assert [(m["nummer"], m["status"]) for m in meldingen] == [(1, "open"), (2, "open")]
     pagina = (wiki / _lees(wiki, "beschikking")["beslist"]["pad"]).read_text(encoding="utf-8")
-    assert "[Nummer 2](../../../../terugmeldingen/ggm-terugmeldingen.md)" in pagina
+    assert "[Nummer 2](../../../../../modellen/ggm/terugmeldingen.md)" in pagina
 
 
 def test_open_terugmelding_zonder_voorstel_is_een_fout(wiki):
@@ -265,10 +268,10 @@ def test_gemma_terugmelding_noemt_wiki_en_gemma_elementen(wiki):
     _beslissen(wiki)
     meldingen = beoordeling.laad(wiki / beslissen.GEMMA_TERUGMELDINGEN)["terugmeldingen"]
     assert [(m["nummer"], m["status"]) for m in meldingen] == [(1, "open")]
-    lijst = (wiki / "terugmeldingen" / "gemma-terugmeldingen.md").read_text(encoding="utf-8")
+    lijst = (wiki / "modellen/gemma/terugmeldingen/gemma-team.md").read_text(encoding="utf-8")
     assert "Uitvoering veiligheid (GEMMA)" in lijst and "## Terugmeldingen" in lijst
     pagina = (wiki / _lees(wiki, "beschikking")["beslist"]["pad"]).read_text(encoding="utf-8")
-    assert "[Nummer 1](../../../../terugmeldingen/gemma-terugmeldingen.md)" in pagina
+    assert "[Nummer 1](../../../../../modellen/gemma/terugmeldingen/gemma-team.md)" in pagina
     # een GEMMA-element dat niet bestaat of anders heet, is een fout
     register["terugmeldingen"][0]["gemma_elementen"] = [{"id": "id-functie", "naam": "Andere naam"}]
     register["terugmeldingen"][0] |= {"nummer": 1, "status": "open"}
@@ -354,16 +357,16 @@ def test_model_als_bron_is_een_signaal(wiki, tmp_path):
     assert any(w.startswith(f"beschikking: {model} is een model, matchdoel en geen bron") for w in res.waarschuwingen)
 
 
-def test_bronanalyse_staat_in_de_map_van_haar_brontype(wiki):
-    pad = wiki / "bronanalyses" / "test" / "rijksregelgeving" / f"{WET}.md"
-    fout = wiki / "bronanalyses" / "test" / "beleid" / f"{WET}.md"
+def test_bronduiding_staat_in_de_map_van_haar_brontype(wiki):
+    pad = wiki / "onderwerpen" / "test" / "bronduidingen" / "rijksregelgeving" / f"{WET}.md"
+    fout = wiki / "onderwerpen" / "test" / "bronduidingen" / "beleid" / f"{WET}.md"
     pad.rename(fout)
     _schrijf(wiki, "beschikking", _bo())
-    assert f"bronanalyses/test/beleid/{WET}.md: hoort in bronanalyses/test/rijksregelgeving/" in beslissen.beslissen(wiki).fouten
+    assert f"onderwerpen/test/bronduidingen/beleid/{WET}.md: hoort in onderwerpen/test/bronduidingen/rijksregelgeving/" in beslissen.beslissen(wiki).fouten
 
 
-def test_bronanalyse_zonder_bronregel_is_een_fout(wiki):
-    pad = wiki / "bronanalyses" / "test" / "rijksregelgeving" / f"{WET}.md"
+def test_bronduiding_zonder_bronregel_is_een_fout(wiki):
+    pad = wiki / "onderwerpen" / "test" / "bronduidingen" / "rijksregelgeving" / f"{WET}.md"
     pad.write_text(pad.read_text(encoding="utf-8").replace("Bron: ", "Zie: "), encoding="utf-8")
     _schrijf(wiki, "beschikking", _bo())
     assert any("'Bron:'" in f for f in beslissen.beslissen(wiki).fouten)
@@ -714,7 +717,7 @@ def test_pagina_toont_de_plaats_in_de_indelingen(wiki):
 
 def test_overzicht_per_onderwerp_toont_de_views(wiki):
     _indeling_wiki(wiki)
-    overzicht = (wiki / "overzichten" / "test.md").read_text(encoding="utf-8")
+    overzicht = (wiki / "onderwerpen" / "test" / "overzicht.md").read_text(encoding="utf-8")
     assert "## Procesindeling naar kernobject" in overzicht
     assert "- **Vergunningen** *(beleidsdomein, taakveld 8 Wonen)*" in overzicht
     assert "  - [Toestaan lijkbezorging](" in overzicht and "*(levensloopproces, afnemer extern)*" in overzicht
@@ -726,8 +729,8 @@ def test_overzicht_per_onderwerp_toont_de_views(wiki):
     assert "**Kernobjecten**" in overzicht and "subobjecten [Grafbedekking]" in overzicht
     assert "**Generiek**" in overzicht and "[Vergunning]" in overzicht
     assert "## Functies" in overzicht and "## Producten en diensten" in overzicht
-    lijst = (wiki / "begrippen" / "test.md").read_text(encoding="utf-8")
-    assert "overzichten/test.md" in lijst
+    lijst = (wiki / "onderwerpen" / "test" / "begrippen.md").read_text(encoding="utf-8")
+    assert "overzicht.md" in lijst
     assert render.main(["--wiki", str(wiki), "--check"]) == 0
 
 
@@ -771,15 +774,15 @@ def test_signalen_voor_een_model_over_alle_onderwerpen():
 
 
 def test_begrippenlijst_en_voortgang_tonen_thuisonderwerp_en_samenhang(wiki):
-    beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/ander.yaml",
+    beoordeling.schrijf(wiki / "onderwerpen/ander/afbakening.yaml",
                         {"naam": "Ander", "niveau": "eigen", "status": "in-behandeling", "omschrijving": ["Een ander onderwerp."], "bronnen": []})
     _schrijf(wiki, "beschikking", _bo(onderwerpen=["ander", "test"]))
     _schrijf(wiki, "behandelen-aanvraag", _proces())
     res = _beslissen(wiki)
     assert not any("behandelen-aanvraag: thuisonderwerp" in w for w in res.waarschuwingen)  # generiek kernobject
-    lijst = (wiki / "begrippen" / "test.md").read_text(encoding="utf-8")
-    assert "Uit onderwerp [Ander](ander.md)." in lijst
-    assert "Uit onderwerp" not in (wiki / "begrippen" / "ander.md").read_text(encoding="utf-8")
+    lijst = (wiki / "onderwerpen" / "test" / "begrippen.md").read_text(encoding="utf-8")
+    assert "Uit onderwerp [Ander](../ander/begrippen.md)." in lijst
+    assert "Uit onderwerp" not in (wiki / "onderwerpen" / "ander" / "begrippen.md").read_text(encoding="utf-8")
     voortgang = (wiki / "voortgang.md").read_text(encoding="utf-8")
     assert "## Samenhang tussen onderwerpen" in voortgang
     assert "| Ander | 1 | 0 | 0 | Test 1 |" in voortgang and "| Test | 1 | 1 | 0 | Ander 1 |" in voortgang
@@ -823,14 +826,14 @@ def test_wettelijke_grondslag():
 
 
 def test_besluiten_van_een_onderwerp(wiki):
-    onderwerp = beoordeling.laad(wiki / "beoordelingen/onderwerpen/test.yaml")
+    onderwerp = beoordeling.laad(wiki / "onderwerpen/test/afbakening.yaml")
     onderwerp["besluiten"] = [{"datum": "2026-09-30", "begrip": "Uitdaagrecht", "besluit": "Geen eigen pagina.",
                                "stand": "open (todo)"},
                               {"datum": "2026-10-01", "besluit": "Afbakening van het onderwerp."}]
-    beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/test.yaml", onderwerp)
+    beoordeling.schrijf(wiki / "onderwerpen/test/afbakening.yaml", onderwerp)
     _beslissen(wiki)
     assert not (wiki / "besluiten").exists()
-    lijst = (wiki / "begrippen" / "test.md").read_text(encoding="utf-8")
+    lijst = (wiki / "onderwerpen" / "test" / "begrippen.md").read_text(encoding="utf-8")
     assert "## Besluiten" in lijst and "- 2026-10-01: Afbakening van het onderwerp." in lijst
     assert "- 2026-09-30: **Uitdaagrecht**: Geen eigen pagina. *Stand: open (todo)*" in lijst
     # zonder datum, met een onbekend veld, over een begrip met een beoordeling of met een bestandspad: een fout
@@ -839,7 +842,7 @@ def test_besluiten_van_een_onderwerp(wiki):
     onderwerp["besluiten"] = [{"besluit": "Zie references/relaties.md.", "onderwerp": "test"},
                               {"datum": "2026-10-02", "begrip": begrip, "besluit": "Iets (regel Thuishoren, "
                                                                               "ARCHITECTURE.md *Indelingen*)."}]
-    beoordeling.schrijf(wiki / "beoordelingen/onderwerpen/test.yaml", onderwerp)
+    beoordeling.schrijf(wiki / "onderwerpen/test/afbakening.yaml", onderwerp)
     fouten = beslissen.beslissen(wiki, schrijven=False).fouten
     assert "onderwerp test, besluit 1: 'datum' ontbreekt of is geen datum (jjjj-mm-dd)" in fouten
     assert "onderwerp test, besluit 1: onbekend veld 'onderwerp'" in fouten

@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-achtergronden-en-begrippen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-achtergronden-en-begrippen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Achtergronden en Begrippen
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-achtergronden-en-begrippen.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-achtergronden-en-begrippen.html) · [online](https://www.rvig.nl/hup/achtergronden-en-begrippen)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-achtergronden-en-begrippen.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-achtergronden-en-begrippen.html) · [online](https://www.rvig.nl/hup/achtergronden-en-begrippen)
 
 ## Samenvatting
 

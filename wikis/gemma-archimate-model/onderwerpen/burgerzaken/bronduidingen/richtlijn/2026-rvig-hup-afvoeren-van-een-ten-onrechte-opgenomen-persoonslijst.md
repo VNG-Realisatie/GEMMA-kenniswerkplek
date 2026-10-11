@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Afvoeren van een ten onrechte opgenomen persoonslijst
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst.html) · [online](https://www.rvig.nl/hup/afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst.html) · [online](https://www.rvig.nl/hup/afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst)
 
 ## Samenvatting
 

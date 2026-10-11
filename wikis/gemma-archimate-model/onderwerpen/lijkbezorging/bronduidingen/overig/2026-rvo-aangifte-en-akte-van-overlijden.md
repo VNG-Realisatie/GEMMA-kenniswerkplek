@@ -1,6 +1,6 @@
 ---
 id: 2026-rvo-aangifte-en-akte-van-overlijden
-type: bronanalyse
+type: bronduiding
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-01
 
 # Aangifte en akte van overlijden (Ondernemersplein)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvo-aangifte-en-akte-van-overlijden.md) · [origineel (html)](../../../../../sources/raw/2026-rvo-aangifte-en-akte-van-overlijden.html) · [online](https://ondernemersplein.overheid.nl/wetten-en-regels/aangifte-en-akte-van-overlijden/)
+Bron: [tekst](../../../../../../sources/raw/2026-rvo-aangifte-en-akte-van-overlijden.md) · [origineel (html)](../../../../../../sources/raw/2026-rvo-aangifte-en-akte-van-overlijden.html) · [online](https://ondernemersplein.overheid.nl/wetten-en-regels/aangifte-en-akte-van-overlijden/)
 
 ## Samenvatting
 

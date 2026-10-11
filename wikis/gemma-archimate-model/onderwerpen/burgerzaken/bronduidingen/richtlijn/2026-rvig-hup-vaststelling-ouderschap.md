@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-vaststelling-ouderschap
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-vaststelling-ouderschap
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Vaststelling ouderschap
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-vaststelling-ouderschap.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-vaststelling-ouderschap.html) · [online](https://www.rvig.nl/hup/vaststelling-ouderschap)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-vaststelling-ouderschap.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-vaststelling-ouderschap.html) · [online](https://www.rvig.nl/hup/vaststelling-ouderschap)
 
 ## Samenvatting
 

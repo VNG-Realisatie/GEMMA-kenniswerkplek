@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Wegenverkeerswet 1994
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-wegenverkeerswet-1994-bwbr0006622.html) · [online](https://wetten.overheid.nl/BWBR0006622)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-wegenverkeerswet-1994-bwbr0006622.html) · [online](https://wetten.overheid.nl/BWBR0006622)
 
 ## Samenvatting
 

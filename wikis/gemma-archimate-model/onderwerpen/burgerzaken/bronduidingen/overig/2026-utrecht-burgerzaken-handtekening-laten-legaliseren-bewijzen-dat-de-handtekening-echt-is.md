@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Handtekening laten legaliseren (bewijzen dat de handtekening echt is)
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is)
 
 ## Samenvatting
 

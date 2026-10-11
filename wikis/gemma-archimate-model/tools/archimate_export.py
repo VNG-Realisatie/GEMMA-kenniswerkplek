@@ -94,7 +94,7 @@ def vast_id(*delen: str) -> str:
 
 
 OBJECTEN = Path("beoordelingen") / "objecten.yaml"
-BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
+BELEIDSDOMEINEN = gam_gemeen.BELEIDSDOMEINEN
 
 
 def object_sleutels(register: dict | None) -> dict[str, str]:

@@ -1,4 +1,4 @@
-"""tools/relaties.py: GGM-mapping, optillen, ketenen, ArchiMate-toets en relaties uit de bronanalyses."""
+"""tools/relaties.py: GGM-mapping, optillen, ketenen, ArchiMate-toets en relaties uit de bronduidingen."""
 import pytest
 import yaml
 
@@ -38,7 +38,7 @@ def _begrip(wiki, id_, naam, archimate="business-object", guid=None, soort="elem
     data = {"begrip": naam, **({"ggm": {"guid": guid, "sterkte": "exact", "onderbouwing": "x"}} if guid else {}),
             "status": "review" if soort == "element" else None, **extra,
             "beslist": {"uitkomst": {"soort": soort, "archimate_type": archimate, "genoemd_begrip": genoemd}}}
-    beoordeling.schrijf(wiki / f"beoordelingen/begrippen/{id_}.yaml", {k: v for k, v in data.items() if v is not None})
+    beoordeling.schrijf(wiki / f"onderwerpen/o/beoordelingen/{id_}.yaml", {k: v for k, v in data.items() if v is not None})
 
 
 @pytest.fixture
@@ -180,8 +180,8 @@ def test_uit_bronnen_lost_op_tilt_op_en_laat_vervallen(wiki):
     assert "afgewezen" in vervallen[1]["reden"]
 
 
-def test_bronrelaties_uit_de_relatietabel_van_een_bronanalyse(wiki):
-    pad = wiki / "bronanalyses/o/rijksregelgeving/2026-overheid-gemeentewet.md"
+def test_bronrelaties_uit_de_relatietabel_van_een_bronduiding(wiki):
+    pad = wiki / "onderwerpen/o/bronduidingen/rijksregelgeving/2026-overheid-gemeentewet.md"
     pad.parent.mkdir(parents=True)
     pad.write_text("# x\n\n## Relaties\n\n| Van | Werkwoord | Naar | Vindplaats |\n|---|---|---|---|\n"
                    "| Besluit | is een | Beschikking | art. 1 |\n", encoding="utf-8")

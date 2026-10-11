@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Gemeente Utrecht: Verklaring omtrent het gedrag (VOG) aanvragen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/verklaring-omtrent-het-gedrag-aanvragen-vog)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/verklaring-omtrent-het-gedrag-aanvragen-vog)
 
 ## Samenvatting
 

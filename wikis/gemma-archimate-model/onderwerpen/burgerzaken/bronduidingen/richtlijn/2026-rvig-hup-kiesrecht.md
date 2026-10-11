@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-kiesrecht
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-kiesrecht
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP Kiesrecht (RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-kiesrecht.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-kiesrecht.html) · [online](https://www.rvig.nl/hup/kiesrecht)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-kiesrecht.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-kiesrecht.html) · [online](https://www.rvig.nl/hup/kiesrecht)
 
 ## Samenvatting
 

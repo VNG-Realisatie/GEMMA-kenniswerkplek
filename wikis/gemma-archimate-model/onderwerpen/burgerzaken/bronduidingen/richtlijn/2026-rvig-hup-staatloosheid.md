@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-staatloosheid
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-staatloosheid
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP Staatloosheid (RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-staatloosheid.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-staatloosheid.html) · [online](https://www.rvig.nl/hup/staatloosheid)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-staatloosheid.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-staatloosheid.html) · [online](https://www.rvig.nl/hup/staatloosheid)
 
 ## Samenvatting
 

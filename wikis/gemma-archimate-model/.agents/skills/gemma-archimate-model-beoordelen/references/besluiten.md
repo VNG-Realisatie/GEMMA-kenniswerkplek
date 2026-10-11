@@ -15,7 +15,7 @@ Niet los voorleggen: een begrip zonder pagina waarvan de uitkomst eenduidig uit 
 Een besluit staat bij waar het over gaat; er is geen register en geen apart overzicht.
 
 - **Over één begrip:** in `besluiten:` van zijn beoordeling.
-- **Over een onderwerp als geheel** (afbakening, indeling, afronding): in `besluiten:` van het onderwerp (`beoordelingen/onderwerpen/<onderwerp>.yaml`).
+- **Over een onderwerp als geheel** (afbakening, indeling, afronding): in `besluiten:` van het onderwerp (`onderwerpen/<onderwerp>/afbakening.yaml`).
 - **Over een begrip zonder beoordeling:** voorlopig in `besluiten:` van het onderwerp, met `begrip`; krijgt het begrip een beoordeling, dan verhuist het besluit letterlijk daarheen (regel Letterlijk verplaatsen).
 
 In een beoordeling:

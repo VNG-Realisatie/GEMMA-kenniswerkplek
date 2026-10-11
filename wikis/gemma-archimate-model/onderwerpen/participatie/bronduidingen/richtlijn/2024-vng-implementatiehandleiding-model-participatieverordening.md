@@ -1,6 +1,6 @@
 ---
 id: 2024-vng-implementatiehandleiding-model-participatieverordening
-type: bronanalyse
+type: bronduiding
 onderwerp: participatie
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
@@ -11,7 +11,7 @@ bijgewerkt: 2026-09-30
 
 # Implementatiehandleiding VNG Model Participatieverordening 2024
 
-Bron: [tekst](../../../../../sources/raw/2024-vng-implementatiehandleiding-model-participatieverordening.md) · [online](https://vng.nl/sites/default/files/2024-12/bijlage_2_lb_24_051_implementatiehandleiding_vng_model_participatieverordening_2024.pdf)
+Bron: [tekst](../../../../../../sources/raw/2024-vng-implementatiehandleiding-model-participatieverordening.md) · [online](https://vng.nl/sites/default/files/2024-12/bijlage_2_lb_24_051_implementatiehandleiding_vng_model_participatieverordening_2024.pdf)
 
 ## Samenvatting
 

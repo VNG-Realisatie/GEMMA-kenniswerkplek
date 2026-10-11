@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Huwelijk/geregistreerd partnerschap
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-huwelijkgeregistreerd-partnerschap.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-huwelijkgeregistreerd-partnerschap.html) · [online](https://www.rvig.nl/hup/huwelijkgeregistreerd-partnerschap)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-huwelijkgeregistreerd-partnerschap.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-huwelijkgeregistreerd-partnerschap.html) · [online](https://www.rvig.nl/hup/huwelijkgeregistreerd-partnerschap)
 
 ## Samenvatting
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Wet griffierechten burgerlijke zaken
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899.html) · [online](https://wetten.overheid.nl/BWBR0028899/2024-01-01)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899.html) · [online](https://wetten.overheid.nl/BWBR0028899/2024-01-01)
 
 ## Samenvatting
 

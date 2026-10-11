@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Gemeente Utrecht: Rijbewijs buitenland omwisselen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/rijbewijs-buitenland-omwisselen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/rijbewijs-buitenland-omwisselen)
 
 ## Samenvatting
 

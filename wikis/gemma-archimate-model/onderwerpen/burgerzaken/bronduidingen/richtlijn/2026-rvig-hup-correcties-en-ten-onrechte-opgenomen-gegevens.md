@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Correcties en ten onrechte opgenomen gegevens
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.html) · [online](https://www.rvig.nl/hup/correcties-en-ten-onrechte-opgenomen-gegevens)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens.html) · [online](https://www.rvig.nl/hup/correcties-en-ten-onrechte-opgenomen-gegevens)
 
 ## Samenvatting
 

@@ -1,9 +1,9 @@
-"""Signalen bij het beslissen: zachte waarschuwingen over het oordeel, en harde controles op de bronanalyses.
+"""Signalen bij het beslissen: zachte waarschuwingen over het oordeel, en harde controles op de bronduidingen.
 
 Een waarschuwing noemt de regel uit AGENTS.md of kennismodel/modelleerregels.md bij naam ("regel Naamvorm"). De AI beoordeelt elke waarschuwing
 inhoudelijk: oplossen in de beoordeling, of toelichten als de tekst terecht is. Een waarschuwing houdt niets tegen.
 
-Harde controles (fouten) gaan over wat de AI met de hand schrijft buiten de beoordelingen: de bronanalyses (de
+Harde controles (fouten) gaan over wat de AI met de hand schrijft buiten de beoordelingen: de bronduidingen (de
 bronduiding, schakel in de herleidbaarheid) en de gegenereerde modelmappen `ggm/` en `gemma/`.
 """
 from __future__ import annotations
@@ -172,13 +172,13 @@ def domein_en_beleidsdomein(alle: dict[str, dict], elementen: dict[str, dict], g
         elif domein not in domeinen:
             w.append(f"{bid}: domein '{domein}' past niet bij beleidsdomein '{bd}', dat in GEMMA onder "
                      f"{', '.join(sorted(domeinen))} valt (Beleidsdomeinindeling tegenover Functie-indeling naar domein); "
-                     "herzien of terugmelden (beoordelingen/terugmeldingen/procesarchitectuur.yaml)")
+                     "herzien of terugmelden (modellen/gemma/terugmeldingen/procesarchitectuur.yaml)")
     for bd, per_domein in sorted(nieuw.items()):
         if len(per_domein) > 1:
             delen = "; ".join(f"{d}: {', '.join(ids)}" for d, ids in sorted(per_domein.items()))
             w.append(f"beleidsdomein '{bd}' (nieuw voor GEMMA): producten en diensten in {len(per_domein)} domeinen "
                      f"({delen}); leg vast hoe GEMMA het indeelt en meld het terug "
-                     "(beoordelingen/terugmeldingen/procesarchitectuur.yaml)")
+                     "(modellen/gemma/terugmeldingen/procesarchitectuur.yaml)")
     return w
 
 def functie_indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[tuple[str, dict]],
@@ -369,22 +369,23 @@ def modulariteit(alle: dict[str, dict], uitkomsten: dict[str, dict | None], onde
     return w
 
 
-def bronanalyses(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
+def bronduidingen(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
     """Harde controles op de bronduiding: plaats, eigen bron-id, de regel 'Bron:' naar sources/raw, de relatietabel,
     en dat de bron in de bronnenlijst van het onderwerp staat."""
     fouten = []
     repo = paths.find_repo_root(wiki_root)
-    map_ = gam_gemeen.bronanalyse_map(wiki_root)
-    for pad in sorted(map_.glob("*/*.md")):
+    for pad in sorted(wiki_root.glob("onderwerpen/*/bronduidingen/*.md")) + sorted(wiki_root.glob("modellen/*/bronduidingen/*.md")):
         fouten.append(f"{pad.relative_to(wiki_root).as_posix()}: hoort in een map per brontype, "
-                      f"{map_.name}/<onderwerp>/<brontype>/")
-    for pad in gam_gemeen.bronanalyses(wiki_root):
+                      f"{pad.parent.name}/<brontype>/")
+    for pad in gam_gemeen.bronduidingen(wiki_root):
         rel = pad.relative_to(wiki_root).as_posix()
         page = frontmatter.read(pad)
-        onderwerp, bron_id = page.meta.get("onderwerp"), page.meta.get("id")
+        onderwerp, model, bron_id = page.meta.get("onderwerp"), page.meta.get("model"), page.meta.get("id")
         soort = gam_gemeen.brontype(wiki_root, bron_id) or "zonder-brontype"
-        if pad.parent.parent.name != onderwerp or pad.parent.name != soort:
-            fouten.append(f"{rel}: hoort in {map_.name}/{onderwerp}/{soort}/")
+        # modellen/<model>/bronduidingen/<brontype>/ of onderwerpen/<onderwerp>/bronduidingen/<brontype>/
+        eigenaar = pad.parent.parent.parent.name
+        if eigenaar != (model or onderwerp) or pad.parent.name != soort:
+            fouten.append(f"{rel}: hoort in {'modellen' if model else 'onderwerpen'}/{model or onderwerp}/bronduidingen/{soort}/")
         if bron_id != pad.stem or bron_id not in (page.meta.get("bronnen") or []):
             fouten.append(f"{rel}: id is de bestandsnaam en staat zelf in bronnen:")
         tekst = (repo / "sources" / "raw" / f"{bron_id}.md").resolve()
@@ -397,7 +398,7 @@ def bronanalyses(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
         if rijen and not {"Van", "Werkwoord", "Naar", "Vindplaats"} <= set(rijen[0]):
             fouten.append(f"{rel}: de relatietabel mist kolom Van, Werkwoord, Naar of Vindplaats")
         if onderwerp in onderwerpen and bron_id not in onderwerpen[onderwerp].get("bronnen", []):
-            fouten.append(f"{rel}: de bron staat niet in de bronnen van beoordelingen/onderwerpen/{onderwerp}.yaml")
+            fouten.append(f"{rel}: de bron staat niet in de bronnen van onderwerpen/{onderwerp}/afbakening.yaml")
     return fouten
 
 

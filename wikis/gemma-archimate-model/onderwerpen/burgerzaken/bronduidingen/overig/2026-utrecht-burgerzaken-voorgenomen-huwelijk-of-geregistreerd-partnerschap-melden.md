@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Voorgenomen huwelijk of geregistreerd partnerschap melden
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden)
 
 ## Samenvatting
 

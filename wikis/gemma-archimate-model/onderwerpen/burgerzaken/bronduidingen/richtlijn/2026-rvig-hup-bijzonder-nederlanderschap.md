@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-bijzonder-nederlanderschap
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-bijzonder-nederlanderschap
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP Bijzonder Nederlanderschap (RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-bijzonder-nederlanderschap.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-bijzonder-nederlanderschap.html) · [online](https://www.rvig.nl/hup/bijzonder-nederlanderschap)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-bijzonder-nederlanderschap.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-bijzonder-nederlanderschap.html) · [online](https://www.rvig.nl/hup/bijzonder-nederlanderschap)
 
 ## Samenvatting
 

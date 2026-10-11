@@ -12,7 +12,7 @@ bronnen:
 
 # Participatie
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/onderwerpen/participatie.yaml en de beoordelingen van de begrippen. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit onderwerpen/participatie/afbakening.yaml en de beoordelingen van de begrippen. Wijzig de beoordeling, niet deze pagina. -->
 
 ## Omschrijving
 
@@ -20,14 +20,14 @@ Wat de gemeente ziet, doet en beslist bij het betrekken van inwoners en maatscha
 
 ## Overzicht
 
-De views op de indelingen staan in het [overzicht](../overzichten/participatie.md).
+De views op de indelingen staan in het [overzicht](overzicht.md).
 
 ## Bronnen
 
-- [Gemeentewet (BWBR0005416)](../bronanalyses/participatie/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md)
-- [Algemene wet bestuursrecht (BWBR0005537)](../bronanalyses/lijkbezorging/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
-- [Implementatiehandleiding VNG Model Participatieverordening 2024](../bronanalyses/participatie/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md)
-- [Versterking lokale democratie](../bronanalyses/participatie/overig/2026-vng-versterking-lokale-democratie.md)
+- [Gemeentewet (BWBR0005416)](bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md)
+- [Algemene wet bestuursrecht (BWBR0005537)](../lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
+- [Implementatiehandleiding VNG Model Participatieverordening 2024](bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md)
+- [Versterking lokale democratie](bronduidingen/overig/2026-vng-versterking-lokale-democratie.md)
 
 ## Begrippen
 

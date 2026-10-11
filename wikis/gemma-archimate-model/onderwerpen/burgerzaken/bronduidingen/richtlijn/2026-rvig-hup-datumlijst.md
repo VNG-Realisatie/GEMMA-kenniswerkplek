@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-datumlijst
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-datumlijst
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Datumlijst
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-datumlijst.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-datumlijst.html) · [online](https://www.rvig.nl/hup/datumlijst)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-datumlijst.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-datumlijst.html) · [online](https://www.rvig.nl/hup/datumlijst)
 
 ## Samenvatting
 

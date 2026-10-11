@@ -40,7 +40,7 @@ Elk element, elk kenmerk en elke relatie is herleidbaar tot een bron, met de vin
 
 | Wie | Wat | Waar |
 |---|---|---|
-| AI | het **oordeel** per begrip: kenmerken met onderbouwing en bron, naam, definitie, beschrijving, matches op betekenis, relaties, open vragen | `beoordelingen/begrippen/<id>.yaml` |
+| AI | het **oordeel** per begrip: kenmerken met onderbouwing en bron, naam, definitie, beschrijving, matches op betekenis, relaties, open vragen | `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` |
 | redacteur | **besluiten** over wat is voorgelegd; vastgelegd door de AI | `besluiten:` in de beoordeling of het onderwerp |
 | script | **beslissen**: type uit de beslistabel, status, letterlijke modelvelden, paginapad; harde controles en signalen | `status:` en `beslist:` in de beoordeling ([tools/beslissen.py](tools/beslissen.py)) |
 | script | **renderen**: alle leesbare pagina's en overzichten | [tools/render.py](tools/render.py) |
@@ -83,7 +83,7 @@ Bij het modelleren geldt een vaste voorrang; de regels staan in de [modelleerreg
 - **Bronnen:** europese-regelgeving › rijksregelgeving › informatiemodel › richtlijn › gemeentelijke-regelgeving › beleid › overig. Voorrang bepaalt wat formeel geldt en welke begrippen er zijn, nooit óf iets een element is. De naam komt uit de gangbare taal; de wetsterm wordt een synoniem.
 - **Een element modelleren:** welk begrip (synoniem of homoniem) › grondslag › kenmerken en type › kernrelaties › indeling › overige relaties › matches.
 - **Matchen:** op betekenis, niet op naam; een zwakke of partiële GEMMA-match wordt voorgelegd, omdat de export dan een GEMMA-element overschrijft.
-- **Relaties:** grondslag › kernrelatie › indelingsrelaties › overige relaties uit de bronanalyse › GGM-match van de relatie › GEMMA.
+- **Relaties:** grondslag › kernrelatie › indelingsrelaties › overige relaties uit de bronduiding › GGM-match van de relatie › GEMMA.
 - **Thuishoren:** eigen onderwerp › thematisch gedeeld › Kern (§3.3); een overgenomen indeling staat ernaast.
 
 ## 4 Het kennismodel
@@ -146,16 +146,16 @@ Synoniemen en homoniemen zijn geen kenmerken van een begrip maar verhoudingen tu
 Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update/SKILL.md) volgt de gedeelde `wiki-curatie-update`. Er is geen run: de werkboom is de toestand, en Git laat elke wijziging zien.
 
 ```text
- STAP                           WIE        RESULTAAT                                        STATUS
- 1 Onderwerp                    AI+redact. beoordelingen/onderwerpen/<onderwerp>.yaml         —
- 2 Bronnen en bronanalyse       AI         sources/, bronanalyses/                            —
- 3 Beoordelen                   AI         beoordelingen/begrippen/<id>.yaml                  —
- 4 Beslissen en renderen        script     status, beslist, alle pagina's                     kandidaat of review
- 5 Voorleggen (één voor één)    AI→redact. besluiten: in de beoordeling → terug naar 4        kandidaat → review of afgewezen
+ STAP                           WIE        RESULTAAT                                                      STATUS
+ 1 Onderwerp                    AI+redact. onderwerpen/<onderwerp>/afbakening.yaml                        —
+ 2 Bronnen en bronduiding       AI         sources/, onderwerpen/<onderwerp>/bronduidingen/                —
+ 3 Beoordelen                   AI         onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml            —
+ 4 Beslissen en renderen        script     status, beslist, alle pagina's                                 kandidaat of review
+ 5 Voorleggen (één voor één)    AI→redact. besluiten: in de beoordeling → terug naar 4                    kandidaat → review of afgewezen
  6 Bekijken                     redacteur  llmwiki promote plan; ter-beoordeling.md, pagina's, Source Control
  7 AKKOORD in de chat           redacteur
- 8 Vastleggen                   script     llmwiki promote apply; log.md                      review → goedgekeurd
- 9 Exporteren                   script     tools/archimate_export.py; export/                 —
+ 8 Vastleggen                   script     llmwiki promote apply; log.md                                  review → goedgekeurd
+ 9 Exporteren                   script     tools/archimate_export.py; export/                             —
 10 Commit                       redact./AI pre-commit-controles
 ```
 
@@ -181,31 +181,34 @@ wikis/gemma-archimate-model/
 ├── wiki.yaml · todo.md · log.md      instellingen · open punten · akkoorden (alleen aan te vullen)
 ├── kennismodel/                      wat het model is (gegenereerd), met modelleerregels.md (met de hand)
 ├── plannen/<datum>-<titel>.md        plannen voor grotere wijzigingen; een plan dat klaar is, blijft als geschiedenis
-├── beoordelingen/                    wat de AI schrijft (YAML)
-│   ├── begrippen/<id>.yaml           het oordeel per begrip; status en beslist zet het script
-│   ├── onderwerpen/<onderwerp>.yaml  naam, omschrijving, bronnen en besluiten van een onderwerp
-│   ├── terugmeldingen/               registers per ontvanger: ggm.yaml, procesarchitectuur.yaml, gemma.yaml
-│   ├── objecten.yaml                 welk Archi-object een hernoemd, samengevoegd of gesplitst element voortzet
-│   └── beleidsdomeinen.yaml          de beschrijving van een beleidsdomein
-├── bronanalyses/<onderwerp>/<brontype>/<bron-id>.md   wat een bron betekent voor de architectuur (AI)
-├── bedrijfsarchitectuur/ · motivatie/ · begrippen/ · overzichten/   gegenereerd door tools/render.py
-├── terugmeldingen/ · ter-beoordeling.md · voortgang.md              gegenereerd door tools/render.py
+├── onderwerpen/<onderwerp>/          de ontstane indeling: per onderwerp alles bij elkaar
+│   ├── afbakening.yaml               naam, niveau, status, omschrijving, bronnen en besluiten van het onderwerp (AI)
+│   ├── beoordelingen/<id>.yaml       het oordeel per begrip met dit thuisonderwerp (AI); status en beslist zet het script
+│   ├── bronduidingen/<brontype>/<bron-id>.md   wat een bron betekent voor de architectuur (AI)
+│   ├── begrippen.md                  de begrippenlijst (gegenereerd door tools/render.py)
+│   └── overzicht.md                  de views op de indelingen (gegenereerd door tools/render.py)
+├── modellen/<model>/                 per model: bronduidingen, overgenomen indelingen en terugmeldingen
+│   ├── gemma/                        bronduidingen/ (Over GEMMA, Proceshiërarchie, Impact) · indelingen/beleidsdomeinen.yaml · terugmeldingen/{gemma-team,procesarchitectuur}.yaml (AI) en .md (gegenereerd)
+│   └── ggm/                          terugmeldingen.yaml (AI) en terugmeldingen.md (gegenereerd)
+├── beoordelingen/objecten.yaml       welk Archi-object een hernoemd, samengevoegd of gesplitst element voortzet
+├── elementpaginas/                   gegenereerd door tools/render.py, volgens de ArchiMate-indeling (bedrijfsarchitectuur/, motivatie/)
+├── ter-beoordeling.md · voortgang.md gegenereerd door tools/render.py
 ├── ggm/ · gemma/                     gegenereerd door tools/ggm.py en tools/gemma.py
 ├── export/                           het Archi-bestand en het exportrapport
-├── schemas/                          beoordeling (gegenereerd), bronanalyse, kennismodel, lijst
+├── schemas/                          beoordeling (gegenereerd), bronduiding, kennismodel, lijst
 ├── tools/                            het gereedschap van deze wiki, met tests in tools/tests/
 └── .agents/skills/                   hoe je het doet
 ```
 
 ### 6.2 Beoordelingen en registers
 
-Een beoordeling is het oordeel van de AI over één begrip: kenmerken, naam, definitie, beschrijving, tekst per onderwerp, synoniemen en homoniemen, de matches met GGM en GEMMA, relaties, indelingsvelden, open vragen en besluiten. Het schema wordt gegenereerd uit de beslistabel ([tools/bepaal_type.py](tools/bepaal_type.py)). Een relatie staat één keer, in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. Naast de beoordelingen houdt de AI registers bij: de onderwerpen, de terugmeldingen per ontvanger (met wat er nu staat, **Bevinding:** en **Voorstel:**), de objecten die in Archi worden voortgezet, en de beschrijving van de beleidsdomeinen.
+Een beoordeling is het oordeel van de AI over één begrip: kenmerken, naam, definitie, beschrijving, tekst per onderwerp, synoniemen en homoniemen, de matches met GGM en GEMMA, relaties, indelingsvelden, open vragen en besluiten. Het schema wordt gegenereerd uit de beslistabel ([tools/bepaal_type.py](tools/bepaal_type.py)). Een relatie staat één keer, in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. De beoordeling staat in de map van haar thuisonderwerp (het eerste in `onderwerpen`; `tools/beslissen.py` controleert dat); een begrip dat verhuist, verhuist dus mee, en het pad van zijn elementpagina verandert niet, want elementpagina's volgen de ArchiMate-indeling. Naast de beoordelingen houdt de AI registers bij: de afbakening van elk onderwerp, de terugmeldingen per ontvanger (bij het model van de ontvanger) (met wat er nu staat, **Bevinding:** en **Voorstel:**), de objecten die in Archi worden voortgezet, en de beschrijving van de beleidsdomeinen.
 
 ### 6.3 Beslissen, renderen en controles
 
-[tools/beslissen.py](tools/beslissen.py) leest de beoordelingen, past de beslistabel toe, zet de status, haalt de letterlijke velden van de gekozen GGM- en GEMMA-match op, bepaalt het paginapad en roept daarna de render aan. Het houdt een fout tegen (er wordt dan niets geschreven): het schema, onvolledige kenmerken, een claim zonder bron, een bron zonder bronanalyse, een match die niet bestaat, een relatie die in ArchiMate niet geldig is of naar iets dat geen element is, een fout in de indeling of de hiërarchie, een ongeldige terugmelding, een besluit van een onderwerp over een begrip dat een beoordeling heeft, een besluittekst met een bestandspad, een handmatig gewijzigd modelbestand. [tools/signalen.py](tools/signalen.py) geeft signalen, met de naam van de regel: absolute taal, registratietaal, de naamvorm, een afwijkende modelnaam zonder synoniem, een kenmerk dat een kernrelatie is zonder die relatie, een relatie buiten het kennismodel, een element zonder relatie of zonder landelijke grondslag. Een signaal beoordeelt de AI inhoudelijk: oplossen of toelichten.
+[tools/beslissen.py](tools/beslissen.py) leest de beoordelingen, past de beslistabel toe, zet de status, haalt de letterlijke velden van de gekozen GGM- en GEMMA-match op, bepaalt het paginapad en roept daarna de render aan. Het houdt een fout tegen (er wordt dan niets geschreven): het schema, onvolledige kenmerken, een claim zonder bron, een bron zonder bronduiding, een match die niet bestaat, een relatie die in ArchiMate niet geldig is of naar iets dat geen element is, een fout in de indeling of de hiërarchie, een ongeldige terugmelding, een besluit van een onderwerp over een begrip dat een beoordeling heeft, een besluittekst met een bestandspad, een handmatig gewijzigd modelbestand. [tools/signalen.py](tools/signalen.py) geeft signalen, met de naam van de regel: absolute taal, registratietaal, de naamvorm, een afwijkende modelnaam zonder synoniem, een kenmerk dat een kernrelatie is zonder die relatie, een relatie buiten het kennismodel, een element zonder relatie of zonder landelijke grondslag. Een signaal beoordeelt de AI inhoudelijk: oplossen of toelichten.
 
-[tools/render.py](tools/render.py) maakt alle leesbare bestanden: de elementpagina's (de map volgt uit het type, de submappen uit de indelingsvelden), de begrippenlijst per onderwerp met de besluiten over het onderwerp, de overzichten per indeling, de terugmeldlijsten, `ter-beoordeling.md`, `voortgang.md` en het kennismodel. Het oordeelt niet en schrijft nooit in `beoordelingen/`; twee keer renderen geeft hetzelfde resultaat. Het garandeert de vorm: elke bronverwijzing is een link naar de bronanalyse, relaties staan in beide richtingen, verwijzingen staan als link in de tekst en niet in de frontmatter, er staan geen links naar tools of regels, en een relatie buiten het kennismodel staat erbij met de melding dat zij niet meegaat in de export. `render.py --check` in de pre-commit bewaakt dat de pagina's gelijk zijn aan de beoordelingen en het kennismodel aan zijn bron.
+[tools/render.py](tools/render.py) maakt alle leesbare bestanden: de elementpagina's (de map volgt uit het type, de submappen uit de indelingsvelden), de begrippenlijst per onderwerp met de besluiten over het onderwerp, de overzichten per indeling, de terugmeldlijsten, `ter-beoordeling.md`, `voortgang.md` en het kennismodel. Het oordeelt niet en schrijft nooit in een beoordeling; twee keer renderen geeft hetzelfde resultaat. Het garandeert de vorm: elke bronverwijzing is een link naar de bronduiding, relaties staan in beide richtingen, verwijzingen staan als link in de tekst en niet in de frontmatter, er staan geen links naar tools of regels, en een relatie buiten het kennismodel staat erbij met de melding dat zij niet meegaat in de export. `render.py --check` in de pre-commit bewaakt dat de pagina's gelijk zijn aan de beoordelingen en het kennismodel aan zijn bron.
 
 ### 6.4 GGM en GEMMA als matchdoel lezen
 

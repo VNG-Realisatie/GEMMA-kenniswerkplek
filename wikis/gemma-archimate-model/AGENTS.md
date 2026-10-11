@@ -10,13 +10,13 @@ Deze wiki valt onder de repository-Rules in `../../AGENTS.md`. Als die niet al i
 
 ## Standaard Workflow
 
-Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`beoordelingen/begrippen/<id>.yaml`); scripts beslissen type en status en maken alle pagina's (`tools/beslissen.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Besluiten van de redacteur over een begrip staan in de `besluiten:` van zijn beoordeling, over een onderwerp als geheel in de `besluiten:` van het onderwerp; besluiten over de werkwijze staan in de regel of skill waar ze gelden.
+Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. De AI geeft het oordeel per begrip in een beoordeling (`onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml`); scripts beslissen type en status en maken alle pagina's (`tools/beslissen.py`, `tools/render.py`). Pagina's en overzichten worden nooit met de hand bewerkt. De redacteur beoordeelt de pagina's en geeft akkoord met het woord AKKOORD in de chat. Besluiten van de redacteur over een begrip staan in de `besluiten:` van zijn beoordeling, over een onderwerp als geheel in de `besluiten:` van het onderwerp; besluiten over de werkwijze staan in de regel of skill waar ze gelden.
 
 ## Regels
 
 Verwijs naar een regel met haar naam, bijvoorbeeld "regel Navragen". Achter een regel staat of een script haar controleert: *(schema)* en *(script)* houden een fout tegen, *(signaal)* geeft een waarschuwing die de AI inhoudelijk beoordeelt. Zonder markering is het een regel voor het oordeel van de AI.
 
-Wat het render-script garandeert, is geen regel: bronverwijzingen als link naar de bronanalyse, relaties in beide richtingen, geen verwijzingen in de frontmatter, geen links naar tools of regels, de vorm van de pagina. De status zetten de scripts en het akkoord; de AI zet nooit een status.
+Wat het render-script garandeert, is geen regel: bronverwijzingen als link naar de bronduiding, relaties in beide richtingen, geen verwijzingen in de frontmatter, geen links naar tools of regels, de vorm van de pagina. De status zetten de scripts en het akkoord; de AI zet nooit een status.
 
 Een regel is kort: de kern. Staat er meer bij een regel, dan noemt zij waar de uitwerking staat (hoe, in een skill) en de onderbouwing (waarom, in `ARCHITECTURE.md`).
 
@@ -34,7 +34,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 
 ### Bronnen
 
-- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron voor de inhoud; citaten letterlijk, met vindplaats. Een matchdoel (het GEMMA-model, GEMMA Online, het GGM) is nooit die bron. Eén uitzondering: de plek van een element in een overgenomen indeling (de kenmerken *in functie-indeling* en *zelfstandige specialisatie*, en een relatie in de GEMMA-functieketen tussen twee gematchte elementen) steunt op de relatie uit het model (`gemma_relatie`), want de wiki neemt die indeling letterlijk over. *(script: elk kenmerk `ja` en elk element heeft een bron of een GEMMA-relatie; elke bron bestaat en heeft een bronanalyse; een GEMMA-relatie staat in het model tussen de gematchte elementen)*
+- **Elke claim een bron** — Elk kenmerk `ja`, elke relatie en elke bewering steunt op een bron voor de inhoud; citaten letterlijk, met vindplaats. Een matchdoel (het GEMMA-model, GEMMA Online, het GGM) is nooit die bron. Eén uitzondering: de plek van een element in een overgenomen indeling (de kenmerken *in functie-indeling* en *zelfstandige specialisatie*, en een relatie in de GEMMA-functieketen tussen twee gematchte elementen) steunt op de relatie uit het model (`gemma_relatie`), want de wiki neemt die indeling letterlijk over. *(script: elk kenmerk `ja` en elk element heeft een bron of een GEMMA-relatie; elke bron bestaat en heeft een bronduiding; een GEMMA-relatie staat in het model tussen de gematchte elementen)*
 - **Zonder bron** — Een claim zonder bron wordt een open vraag ("verificatie nodig").
 
 ### Tekst
@@ -58,14 +58,14 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 | Werkstroom: de stappen | skill `gemma-archimate-model-update` | — | — | ja |
 | Criteria: is het een element, en welk type | skill `gemma-archimate-model-criteria`; [kennismodel/kenmerken-en-beslistabel.md](kennismodel/kenmerken-en-beslistabel.md) | kennismodel | de vragenlijst en de stappentabel: `tools/bepaal_type.py` | alleen de tekst buiten het gegenereerde blok van de skill |
 | Werkinstructie per veld van een beoordeling | skill gemma-archimate-model-beoordelen en zijn `references/` | — | — | ja |
-| Sjablonen | beoordeling: skill gemma-archimate-model-beoordelen §4; bronanalyse: skill gemma-archimate-model-ingest §4; terugmelding: `references/terugmeldingen.md`; besluit en voorleggen: `references/besluiten.md`; vorm: `schemas/` | — | — | ja |
-| Oordeel per begrip | `beoordelingen/begrippen/<id>.yaml` | — | de AI; `status` en `beslist` de scripts | ja, behalve `status` en `beslist` |
-| Registers | `beoordelingen/terugmeldingen/`, `objecten.yaml`, `beleidsdomeinen.yaml`, `onderwerpen/` | — | de AI | ja |
-| Wat een bron betekent | `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md` | bronanalyse | de AI | ja |
+| Sjablonen | beoordeling: skill gemma-archimate-model-beoordelen §4; bronduiding: skill gemma-archimate-model-ingest §4; terugmelding: `references/terugmeldingen.md`; besluit en voorleggen: `references/besluiten.md`; vorm: `schemas/` | — | — | ja |
+| Oordeel per begrip | `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` | — | de AI; `status` en `beslist` de scripts | ja, behalve `status` en `beslist` |
+| Registers | `onderwerpen/<onderwerp>/afbakening.yaml`, `modellen/*/terugmeldingen`, `modellen/gemma/indelingen/beleidsdomeinen.yaml`, `beoordelingen/objecten.yaml` | — | de AI | ja |
+| Wat een bron betekent | `onderwerpen/<onderwerp>/bronduidingen/<brontype>/<bron-id>.md`, of `modellen/<model>/bronduidingen/<brontype>/<bron-id>.md` voor een bron van een model | bronduiding | de AI | ja |
 | Waarom: uitgangspunten en onderbouwing | [ARCHITECTURE.md](ARCHITECTURE.md) | — | de AI, na een besluit van de redacteur | ja |
 | Besluiten over een begrip of onderwerp | `besluiten:` van de beoordeling of het onderwerp; de begrippenlijst toont die van het onderwerp | — | de AI, met de redacteur | ja |
-| Elementpagina's en overzichten | `bedrijfsarchitectuur/`, `motivatie/`, `begrippen/`, `overzichten/` | per elementtype | `tools/render.py` | nee |
-| Terugmeldlijsten, ter beoordeling, voortgang | `terugmeldingen/`, [ter-beoordeling.md](ter-beoordeling.md), [voortgang.md](voortgang.md) | lijst | `tools/render.py` | nee |
+| Elementpagina's en overzichten | `elementpaginas/`, `onderwerpen/<onderwerp>/begrippen.md` en `overzicht.md` | per elementtype | `tools/render.py` | nee |
+| Terugmeldlijsten, ter beoordeling, voortgang | `modellen/*/terugmeldingen/*.md`, [ter-beoordeling.md](ter-beoordeling.md), [voortgang.md](voortgang.md) | lijst | `tools/render.py` | nee |
 | Open punten | [todo.md](todo.md) | — | de AI | ja |
 | Plannen voor grotere wijzigingen (een plan dat klaar is, blijft als geschiedenis) | `plannen/<datum>-<titel>.md` | — | de AI, met de redacteur | ja |
 | Akkoorden | [log.md](log.md) | — | `llmwiki promote apply` | nee |

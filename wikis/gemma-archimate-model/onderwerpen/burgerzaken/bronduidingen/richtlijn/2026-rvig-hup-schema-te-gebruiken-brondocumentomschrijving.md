@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-schema-te-gebruiken-brondocumentomschrijving
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-schema-te-gebruiken-brondocumentomschrijving
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Schema te gebruiken brondocumentomschrijving
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-schema-te-gebruiken-brondocumentomschrijving.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-schema-te-gebruiken-brondocumentomschrijving.html) · [online](https://www.rvig.nl/hup/schema-te-gebruiken-brondocumentomschrijving)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-schema-te-gebruiken-brondocumentomschrijving.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-schema-te-gebruiken-brondocumentomschrijving.html) · [online](https://www.rvig.nl/hup/schema-te-gebruiken-brondocumentomschrijving)
 
 ## Samenvatting
 

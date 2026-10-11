@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-signalering-verstrekking-reisdocument
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-signalering-verstrekking-reisdocument
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Signalering verstrekking reisdocument (HUP, RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-signalering-verstrekking-reisdocument.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-signalering-verstrekking-reisdocument.html) · [online](https://www.rvig.nl/hup/signalering-verstrekking-reisdocument)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-signalering-verstrekking-reisdocument.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-signalering-verstrekking-reisdocument.html) · [online](https://www.rvig.nl/hup/signalering-verstrekking-reisdocument)
 
 ## Samenvatting
 

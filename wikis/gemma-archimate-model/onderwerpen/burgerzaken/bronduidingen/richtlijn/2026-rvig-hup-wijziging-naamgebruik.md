@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-wijziging-naamgebruik
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-wijziging-naamgebruik
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Wijziging naamgebruik
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-wijziging-naamgebruik.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-wijziging-naamgebruik.html) · [online](https://www.rvig.nl/hup/wijziging-naamgebruik)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-wijziging-naamgebruik.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-wijziging-naamgebruik.html) · [online](https://www.rvig.nl/hup/wijziging-naamgebruik)
 
 ## Samenvatting
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Achternaamgebruik veranderen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-achternaamgebruik-veranderen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-achternaamgebruik-veranderen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/achternaamgebruik-veranderen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-achternaamgebruik-veranderen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-achternaamgebruik-veranderen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/achternaamgebruik-veranderen)
 
 ## Samenvatting
 

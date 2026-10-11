@@ -19,7 +19,7 @@ bronnen:
 
 # Paspoortbesluit
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/paspoortbesluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit de beoordeling paspoortbesluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
 **Status: goedgekeurd** door de redacteur.
 
@@ -35,7 +35,7 @@ Het Paspoortbesluit (BWBR0044308) regelt de geldigheidsduur per soort reisdocume
 
 ### Per onderwerp
 
-#### [Burgerzaken](../../../begrippen/burgerzaken.md)
+#### [Burgerzaken](../../../../onderwerpen/burgerzaken/begrippen.md)
 
 In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). Het besluit is grondslag van de dienst Reisdocument niet-ingezetene (UPL nr. 356 en 357) en van de bedrijfsprocessen waarin de gemeente reisdocumenten aanvraagt, uitreikt en inhoudt.
 
@@ -56,15 +56,15 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de algemene maatregel van rijksbestuur bij de Paspoortwet (BWBR0044308). [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft burgemeesters aanvullende bevoegdheden voor tweede paspoorten en, in aangewezen gemeenten, voor niet-ingezetenen (art. 3.1, 3.2, 4.1, 4.2) en regelt de identiteitsvaststelling bij aanvraag en uitreiking (art. 2.1, 4.6). [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde regeling als geheel (BWBR0044308). [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving van het Koninkrijk. [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, art. 2.1 en 3.6 (identiteit, vingerafdrukken bij de aanvraag), 2.14 en 3.1 (tweede paspoort), 3.2 en 4.2 (niet-ingezetenen), 4.6 (uitreiking), 6.1 en 7.1 (mededeling bij verval, onttrekking aan het verkeer): gedrag in Behandelen aanvraag reisdocument, Uitreiken reisdocument en de diensten Paspoort tweede en Reisdocument niet-ingezetene. [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de algemene maatregel van rijksbestuur bij de Paspoortwet (BWBR0044308). [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft burgemeesters aanvullende bevoegdheden voor tweede paspoorten en, in aangewezen gemeenten, voor niet-ingezetenen (art. 3.1, 3.2, 4.1, 4.2) en regelt de identiteitsvaststelling bij aanvraag en uitreiking (art. 2.1, 4.6). [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde regeling als geheel (BWBR0044308). [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving van het Koninkrijk. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, art. 2.1 en 3.6 (identiteit, vingerafdrukken bij de aanvraag), 2.14 en 3.1 (tweede paspoort), 3.2 en 4.2 (niet-ingezetenen), 4.6 (uitreiking), 6.1 en 7.1 (mededeling bij verval, onttrekking aan het verkeer): gedrag in Behandelen aanvraag reisdocument, Uitreiken reisdocument en de diensten Paspoort tweede en Reisdocument niet-ingezetene. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 
 ### Relaties
 
@@ -72,12 +72,12 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 2.1, 3.1, 3.2, 3.6; art. 4.6, 7.1) |
-| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Paspoort tweede](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md) | [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 2.14, 2.15, 3.1, 4.1) |
-| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument-niet-ingezetene.md) | [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 3.2, 4.2) |
-| Paspoortbesluit | werkt uit *associatie (gericht)* | [Paspoortwet](paspoortwet.md) | [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (aanhef) |
-| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Inhouden reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 6.1, 7.1) |
-| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md) | [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 3.2, 4.2) |
+| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md) | [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 2.1, 3.1, 3.2, 3.6; art. 4.6, 7.1) |
+| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Paspoort tweede](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md) | [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 2.14, 2.15, 3.1, 4.1) |
+| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument-niet-ingezetene.md) | [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 3.2, 4.2) |
+| Paspoortbesluit | werkt uit *associatie (gericht)* | [Paspoortwet](paspoortwet.md) | [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (aanhef) |
+| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Inhouden reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 6.1, 7.1) |
+| Paspoortbesluit | is grondslag voor *associatie (gericht)* | [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md) | [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 3.2, 4.2) |
 
 ## Herkomst
 
@@ -85,7 +85,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Paspoortbesluit](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) | Paspoortbesluit |
+| [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) | Paspoortbesluit |
 
 ### Afstemming met GEMMA
 

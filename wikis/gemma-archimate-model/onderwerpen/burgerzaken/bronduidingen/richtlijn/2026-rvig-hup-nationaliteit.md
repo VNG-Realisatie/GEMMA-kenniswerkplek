@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-nationaliteit
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-nationaliteit
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP Nationaliteit (RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-nationaliteit.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-nationaliteit.html) · [online](https://www.rvig.nl/hup/nationaliteit)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-nationaliteit.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-nationaliteit.html) · [online](https://www.rvig.nl/hup/nationaliteit)
 
 ## Samenvatting
 

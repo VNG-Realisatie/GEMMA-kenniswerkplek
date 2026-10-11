@@ -6,9 +6,9 @@ Een bevinding die niet in de wiki kan worden opgelost, gaat als terugmelding naa
 
 | Ontvanger | Register | Lijst | Typen | Velden |
 |---|---|---|---|---|
-| GGM-beheer | `beoordelingen/terugmeldingen/ggm.yaml` | `terugmeldingen/ggm-terugmeldingen.md` | `hiaat`, `definitie`, `structuur`, `scope`, `duplicaat`, `homoniem`, `relatie` | `{domein, entiteit, type, bevinding, element}` |
-| Werkgroep procesarchitectuur (UPL-lijsten, kennismodel procesarchitectuur) | `beoordelingen/terugmeldingen/procesarchitectuur.yaml` | `terugmeldingen/procesarchitectuur-terugmeldingen.md` | `indeling`, `grondslag`, `product`, `kennismodel` | `{type, bevinding, elementen of beleidsdomein}` |
-| GEMMA-team (het GEMMA-model zelf) | `beoordelingen/terugmeldingen/gemma.yaml` | `terugmeldingen/gemma-terugmeldingen.md` | `element`, `indeling`, `definitie`, `relatie` | `{type, bevinding, elementen en/of gemma_elementen}` |
+| GGM-beheer | `modellen/ggm/terugmeldingen.yaml` | `modellen/ggm/terugmeldingen.md` | `hiaat`, `definitie`, `structuur`, `scope`, `duplicaat`, `homoniem`, `relatie` | `{domein, entiteit, type, bevinding, element}` |
+| Werkgroep procesarchitectuur (UPL-lijsten, kennismodel procesarchitectuur) | `modellen/gemma/terugmeldingen/procesarchitectuur.yaml` | `modellen/gemma/terugmeldingen/procesarchitectuur.md` | `indeling`, `grondslag`, `product`, `kennismodel` | `{type, bevinding, elementen of beleidsdomein}` |
+| GEMMA-team (het GEMMA-model zelf) | `modellen/gemma/terugmeldingen/gemma-team.yaml` | `modellen/gemma/terugmeldingen/gemma-team.md` | `element`, `indeling`, `definitie`, `relatie` | `{type, bevinding, elementen en/of gemma_elementen}` |
 
 ## Opbouw
 

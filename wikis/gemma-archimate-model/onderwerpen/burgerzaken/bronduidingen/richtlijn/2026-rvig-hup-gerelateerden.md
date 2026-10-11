@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-gerelateerden
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-gerelateerden
@@ -15,7 +15,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Gerelateerden
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-gerelateerden.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-gerelateerden.html) · [online](https://www.rvig.nl/hup/gerelateerden)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-gerelateerden.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-gerelateerden.html) · [online](https://www.rvig.nl/hup/gerelateerden)
 
 ## Samenvatting
 

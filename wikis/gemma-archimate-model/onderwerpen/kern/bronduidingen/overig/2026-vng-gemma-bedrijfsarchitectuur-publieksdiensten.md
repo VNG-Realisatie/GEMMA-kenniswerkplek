@@ -1,6 +1,6 @@
 ---
 id: 2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten
-type: bronanalyse
+type: bronduiding
 onderwerp: kern
 bronnen:
 - 2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten
@@ -10,7 +10,7 @@ bijgewerkt: '2026-10-10'
 
 # GEMMA Bedrijfsarchitectuur publieksdiensten
 
-Bron: [tekst](../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten.md) · [origineel (html)](../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten.html) · [online](https://www.gemmaonline.nl/wiki/Bedrijfsarchitectuur_publieksdiensten)
+Bron: [tekst](../../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten.md) · [origineel (html)](../../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten.html) · [online](https://www.gemmaonline.nl/wiki/Bedrijfsarchitectuur_publieksdiensten)
 
 ## Samenvatting
 

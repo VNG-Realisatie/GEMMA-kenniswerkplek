@@ -1,6 +1,6 @@
 ---
 id: 2025-groningen-algemene-plaatselijke-verordening
-type: bronanalyse
+type: bronduiding
 onderwerp: lijkbezorging
 bronnen:
 - 2025-groningen-algemene-plaatselijke-verordening
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-08
 
 # Algemene Plaatselijke Verordening Groningen 2021, afdeling Verstrooiing van as
 
-Bron: [tekst](../../../../../sources/raw/2025-groningen-algemene-plaatselijke-verordening.md) · [origineel (html)](../../../../../sources/raw/2025-groningen-algemene-plaatselijke-verordening.html) · [online](https://lokaleregelgeving.overheid.nl/CVDR646003/13)
+Bron: [tekst](../../../../../../sources/raw/2025-groningen-algemene-plaatselijke-verordening.md) · [origineel (html)](../../../../../../sources/raw/2025-groningen-algemene-plaatselijke-verordening.html) · [online](https://lokaleregelgeving.overheid.nl/CVDR646003/13)
 
 ## Samenvatting
 

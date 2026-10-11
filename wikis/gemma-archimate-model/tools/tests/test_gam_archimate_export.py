@@ -67,7 +67,7 @@ def _begrippen():
     }
 
 
-WIKI_YAML = {"page_types": {"bedrijfsobject": {"dir": "bedrijfsarchitectuur/bedrijfsobjecten"}}}
+WIKI_YAML = {"page_types": {"bedrijfsobject": {"dir": "elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten"}}}
 
 
 def _export(tmp_path, concept=False, tijd="2026-10-02T12:00:00", begrippen=None):
@@ -356,7 +356,7 @@ def test_beleidskader_hangt_naar_regelgever_in_landelijke_of_gemeentelijke_regel
         begrippen[bid] = data
     pad = tmp_path / "gemma-indeling.archimate"
     pad.write_text(GEMMA_INDELING, encoding="utf-8")
-    wiki_yaml = {"page_types": {"beleidskader": {"dir": "motivatie/beleidskaders", "submappen": ["grondslag"]}}}
+    wiki_yaml = {"page_types": {"beleidskader": {"dir": "elementpaginas/motivatie/beleidskaders", "submappen": ["grondslag"]}}}
     uit = ae.bouw(gemma.parse(pad), begrippen, "2026-vng-gemma", "2026-10-04T12:00:00", True, "", wiki_yaml)
     root = ET.fromstring(uit.xml)
     landelijk = _el(root, ae.vast_id("groepering", "regelgeving", "Rijksregelgeving"))

@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-paspoortbesluit-bwbr0044308
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-paspoortbesluit-bwbr0044308
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Paspoortbesluit
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-paspoortbesluit-bwbr0044308.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-paspoortbesluit-bwbr0044308.html) · [online](https://wetten.overheid.nl/BWBR0044308/2026-10-01)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-paspoortbesluit-bwbr0044308.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-paspoortbesluit-bwbr0044308.html) · [online](https://wetten.overheid.nl/BWBR0044308/2026-10-01)
 
 ## Samenvatting
 

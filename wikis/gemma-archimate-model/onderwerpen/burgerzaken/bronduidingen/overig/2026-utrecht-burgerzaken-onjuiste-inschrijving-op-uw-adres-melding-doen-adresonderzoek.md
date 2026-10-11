@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Onjuiste inschrijving op uw adres, melding doen (adresonderzoek) | Gemeente Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek)
 
 ## Samenvatting
 

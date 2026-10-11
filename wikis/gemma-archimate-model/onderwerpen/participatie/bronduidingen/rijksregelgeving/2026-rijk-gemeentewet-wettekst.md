@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-gemeentewet-wettekst
-type: bronanalyse
+type: bronduiding
 onderwerp: participatie
 bronnen:
 - 2026-rijk-gemeentewet-wettekst
@@ -11,7 +11,7 @@ bijgewerkt: 2026-09-30
 
 # Gemeentewet
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-gemeentewet-wettekst.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-gemeentewet-wettekst.html) · [online](https://wetten.overheid.nl/BWBR0005416/)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-gemeentewet-wettekst.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-gemeentewet-wettekst.html) · [online](https://wetten.overheid.nl/BWBR0005416/)
 
 ## Samenvatting
 

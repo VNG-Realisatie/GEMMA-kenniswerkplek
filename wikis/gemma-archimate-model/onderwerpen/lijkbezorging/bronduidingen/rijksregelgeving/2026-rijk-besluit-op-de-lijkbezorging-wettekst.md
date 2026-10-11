@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-type: bronanalyse
+type: bronduiding
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-04
 
 # Besluit op de lijkbezorging
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-besluit-op-de-lijkbezorging-wettekst.html) · [online](https://wetten.overheid.nl/BWBR0009080/2025-07-01)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-besluit-op-de-lijkbezorging-wettekst.html) · [online](https://wetten.overheid.nl/BWBR0009080/2025-07-01)
 
 ## Samenvatting
 

@@ -1,12 +1,11 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "bronanalyse",
-  "description": "Wat één bron betekent voor de architectuur (map bronanalyses/<onderwerp>/<bron-id>.md). id = bron-id.",
+  "title": "bronduiding",
+  "description": "Wat één bron betekent vanuit het perspectief van de wiki (laag 3): onderwerpen/<onderwerp>/bronduidingen/<brontype>/<bron-id>.md, of modellen/<model>/bronduidingen/<brontype>/<bron-id>.md voor een bron van een model. id = bron-id.",
   "type": "object",
   "required": [
     "id",
     "type",
-    "onderwerp",
     "bronnen",
     "relevant"
   ],
@@ -16,10 +15,15 @@
       "pattern": "^[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*$"
     },
     "type": {
-      "const": "bronanalyse"
+      "const": "bronduiding"
     },
     "onderwerp": {
-      "type": "string"
+      "type": "string",
+      "description": "Het onderwerp waarin de bron is geduid (bij onderwerpen/<onderwerp>/)."
+    },
+    "model": {
+      "type": "string",
+      "description": "Het model waarvan de bron is (bij modellen/<model>/), in plaats van onderwerp."
     },
     "bronnen": {
       "type": "array",
@@ -59,5 +63,17 @@
       "reden"
     ]
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "oneOf": [
+    {
+      "required": [
+        "onderwerp"
+      ]
+    },
+    {
+      "required": [
+        "model"
+      ]
+    }
+  ]
 }

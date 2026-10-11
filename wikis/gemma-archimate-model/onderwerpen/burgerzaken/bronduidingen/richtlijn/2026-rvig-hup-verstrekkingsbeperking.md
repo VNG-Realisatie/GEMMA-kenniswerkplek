@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-verstrekkingsbeperking
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-verstrekkingsbeperking
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Verstrekkingsbeperking | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-verstrekkingsbeperking.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-verstrekkingsbeperking.html) · [online](https://www.rvig.nl/hup/verstrekkingsbeperking)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-verstrekkingsbeperking.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-verstrekkingsbeperking.html) · [online](https://www.rvig.nl/hup/verstrekkingsbeperking)
 
 ## Samenvatting
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-brondocumentomschrijvingen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-brondocumentomschrijvingen
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Brondocumentomschrijvingen
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-brondocumentomschrijvingen.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-brondocumentomschrijvingen.html) · [online](https://www.rvig.nl/hup/brondocumentomschrijvingen)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-brondocumentomschrijvingen.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-brondocumentomschrijvingen.html) · [online](https://www.rvig.nl/hup/brondocumentomschrijvingen)
 
 ## Samenvatting
 

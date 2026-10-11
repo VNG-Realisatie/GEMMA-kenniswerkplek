@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-burgerlijk-wetboek-boek-1
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Burgerlijk Wetboek Boek 1 (Personen- en familierecht)
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-burgerlijk-wetboek-boek-1.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-burgerlijk-wetboek-boek-1.html) · [online](https://wetten.overheid.nl/BWBR0002656)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-burgerlijk-wetboek-boek-1.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-burgerlijk-wetboek-boek-1.html) · [online](https://wetten.overheid.nl/BWBR0002656)
 
 ## Samenvatting
 

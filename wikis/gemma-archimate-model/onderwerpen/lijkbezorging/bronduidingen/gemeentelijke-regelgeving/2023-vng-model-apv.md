@@ -1,6 +1,6 @@
 ---
 id: 2023-vng-model-apv
-type: bronanalyse
+type: bronduiding
 onderwerp: lijkbezorging
 bronnen:
 - 2023-vng-model-apv
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-08
 
 # Model Algemene plaatselijke verordening (VNG, november 2023), afdeling Verstrooiing
 
-Bron: [tekst](../../../../../sources/raw/2023-vng-model-apv.md) · [origineel (pdf)](../../../../../sources/raw/2023-vng-model-apv.pdf) · [online](https://opmeer.bestuurlijkeinformatie.nl/Document/View/2ba28bca-45d6-4090-9b77-c6b2805c2238)
+Bron: [tekst](../../../../../../sources/raw/2023-vng-model-apv.md) · [origineel (pdf)](../../../../../../sources/raw/2023-vng-model-apv.pdf) · [online](https://opmeer.bestuurlijkeinformatie.nl/Document/View/2ba28bca-45d6-4090-9b77-c6b2805c2238)
 
 ## Samenvatting
 

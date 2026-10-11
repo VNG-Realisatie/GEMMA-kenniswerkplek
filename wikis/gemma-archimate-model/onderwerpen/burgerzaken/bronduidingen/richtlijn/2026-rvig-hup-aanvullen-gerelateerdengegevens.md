@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-aanvullen-gerelateerdengegevens
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-aanvullen-gerelateerdengegevens
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Aanvullen gerelateerdengegevens
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-aanvullen-gerelateerdengegevens.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-aanvullen-gerelateerdengegevens.html) · [online](https://www.rvig.nl/hup/aanvullen-gerelateerdengegevens)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-aanvullen-gerelateerdengegevens.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-aanvullen-gerelateerdengegevens.html) · [online](https://www.rvig.nl/hup/aanvullen-gerelateerdengegevens)
 
 ## Samenvatting
 

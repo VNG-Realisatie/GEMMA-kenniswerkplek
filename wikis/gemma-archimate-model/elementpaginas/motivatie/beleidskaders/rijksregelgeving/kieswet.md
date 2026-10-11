@@ -20,7 +20,7 @@ bronnen:
 
 # Kieswet
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/kieswet.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit de beoordeling kieswet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
 **Status: goedgekeurd** door de redacteur.
 
@@ -36,7 +36,7 @@ De Kieswet (BWBR0004627) regelt wie kiesgerechtigd is (hoofdstuk B), de registra
 
 ### Per onderwerp
 
-#### [Burgerzaken](../../../begrippen/burgerzaken.md)
+#### [Burgerzaken](../../../../onderwerpen/burgerzaken/begrippen.md)
 
 In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten met een afspraak voor de afnemer (kenmerk omvat diensten en afspraken). De wet is grondslag van de diensten Stempas ontvangen, Kiezerspas, Volmachtbewijs verkiezingen en Stemrecht (UPL nr. 397, 208, 453, 398) en van de processen Beheren stempassen en Registreren kiesgerechtigdheid. De UPL-items Kandidaatstelling verkiezingen, Stembiljet en Stemmen identificatieplicht (nr. 205, 395, 396) steunen ook op de Kieswet, maar vallen buiten de afbakening en zijn verwijzingen naar een later onderwerp verkiezingen.
 
@@ -57,15 +57,15 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, grondslag van de UPL-producten stempas, kiezerspas, volmachtbewijs verkiezingen en stemrecht (UPL nr. 397, 208, 453, 398). [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft B&W de registratie van de kiesgerechtigdheid en de burgemeester de verstrekking van stempas, kiezerspas en volmachtbewijs (art. D 1, J 7, K 4, L 11). [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige regeling. [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van Beheren stempassen en Registreren kiesgerechtigdheid. [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde wet als geheel (BWBR0004627). [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, wet. [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht (versie 2026-10-01). [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, art. J 7, K 1, L 8 en L 14 en B 1-B 3 zijn de grondslag van de diensten Stempas ontvangen, Kiezerspas, Volmachtbewijs verkiezingen en Stemrecht (UPL nr. 397, 208, 453, 398); art. D 1 van Registreren kiesgerechtigdheid. [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki. [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, grondslag van de UPL-producten stempas, kiezerspas, volmachtbewijs verkiezingen en stemrecht (UPL nr. 397, 208, 453, 398). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft B&W de registratie van de kiesgerechtigdheid en de burgemeester de verstrekking van stempas, kiezerspas en volmachtbewijs (art. D 1, J 7, K 4, L 11). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige regeling. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van Beheren stempassen en Registreren kiesgerechtigdheid. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde wet als geheel (BWBR0004627). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, wet. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht (versie 2026-10-01). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, art. J 7, K 1, L 8 en L 14 en B 1-B 3 zijn de grondslag van de diensten Stempas ontvangen, Kiezerspas, Volmachtbewijs verkiezingen en Stemrecht (UPL nr. 397, 208, 453, 398); art. D 1 van Registreren kiesgerechtigdheid. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 
 ### Relaties
 
@@ -73,12 +73,12 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Kieswet | is grondslag voor *associatie (gericht)* | [Stempas ontvangen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/stempas-ontvangen.md) | [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. J 7; UPL nr. 397) |
-| Kieswet | is grondslag voor *associatie (gericht)* | [Kiezerspas](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/kiezerspas.md) | [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. K 1; UPL nr. 208) |
-| Kieswet | is grondslag voor *associatie (gericht)* | [Volmachtbewijs verkiezingen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/volmachtbewijs-verkiezingen.md) | [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. L 8, L 14; UPL nr. 453) |
-| Kieswet | is grondslag voor *associatie (gericht)* | [Stemrecht](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/stemrecht.md) | [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. B 1-B 3; UPL nr. 398) |
-| Kieswet | is grondslag voor *associatie (gericht)* | [Beheren stempassen](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md) | [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (hoofdstuk J, K, L) |
-| Kieswet | is grondslag voor *associatie (gericht)* | [Registreren kiesgerechtigdheid](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md) | [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (art. B 5, D 1-D 7) |
+| Kieswet | is grondslag voor *associatie (gericht)* | [Stempas ontvangen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/stempas-ontvangen.md) | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. J 7; UPL nr. 397) |
+| Kieswet | is grondslag voor *associatie (gericht)* | [Kiezerspas](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/kiezerspas.md) | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. K 1; UPL nr. 208) |
+| Kieswet | is grondslag voor *associatie (gericht)* | [Volmachtbewijs verkiezingen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/volmachtbewijs-verkiezingen.md) | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. L 8, L 14; UPL nr. 453) |
+| Kieswet | is grondslag voor *associatie (gericht)* | [Stemrecht](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/stemrecht.md) | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. B 1-B 3; UPL nr. 398) |
+| Kieswet | is grondslag voor *associatie (gericht)* | [Beheren stempassen](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md) | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (hoofdstuk J, K, L) |
+| Kieswet | is grondslag voor *associatie (gericht)* | [Registreren kiesgerechtigdheid](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md) | [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (art. B 5, D 1-D 7) |
 
 ## Herkomst
 
@@ -86,8 +86,8 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Kieswet](../../../bronanalyses/burgerzaken/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
-| [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) | Kieswet |
+| [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 

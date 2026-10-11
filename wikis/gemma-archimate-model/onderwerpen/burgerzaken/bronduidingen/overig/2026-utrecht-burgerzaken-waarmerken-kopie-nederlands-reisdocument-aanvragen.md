@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Waarmerken kopie Nederlands reisdocument aanvragen (gemeente Utrecht)
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/waarmerken-kopie-nederlands-reisdocument-aanvragen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/waarmerken-kopie-nederlands-reisdocument-aanvragen)
 
 ## Samenvatting
 

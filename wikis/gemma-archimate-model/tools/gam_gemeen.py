@@ -2,8 +2,8 @@
 
 - gegenereerde modelbestanden (ggm/, gemma/) schrijven met een hash-kop, en controleren dat niemand ze met de hand
   wijzigde;
-- secties, tabellen en links in Markdown lezen (bronanalyses);
-- bronverwijzingen: pagina → bronanalyse (bronduiding) → sources/raw/;
+- secties, tabellen en links in Markdown lezen (bronduidingen);
+- bronverwijzingen: pagina → bronduiding (bronduiding) → sources/raw/;
 - modelbestanden ophalen van GitHub;
 - onderwerpen als één model: thuisonderwerp en relaties tussen onderwerpen (regels Thuishoren, Relaties tussen
   onderwerpen).
@@ -19,6 +19,15 @@ from pathlib import Path
 from llmwiki import hashing, paths
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
+# Plattegrond (ARCHITECTURE.md, 6.1): per onderwerp alles bij elkaar, per model zijn bronduidingen, indelingen en terugmeldingen
+ONDERWERPEN = Path("onderwerpen")
+GGM_TERUGMELDINGEN = Path("modellen/ggm/terugmeldingen.yaml")
+GGM_TERUGMELDLIJST = Path("modellen/ggm/terugmeldingen.md")
+PA_TERUGMELDINGEN = Path("modellen/gemma/terugmeldingen/procesarchitectuur.yaml")
+PA_TERUGMELDLIJST = Path("modellen/gemma/terugmeldingen/procesarchitectuur.md")
+GEMMA_TERUGMELDINGEN = Path("modellen/gemma/terugmeldingen/gemma-team.yaml")
+GEMMA_TERUGMELDLIJST = Path("modellen/gemma/terugmeldingen/gemma-team.md")
+BELEIDSDOMEINEN = Path("modellen/gemma/indelingen/beleidsdomeinen.yaml")
 GEGENEREERD_PREFIX = "<!-- gegenereerd door "
 NIVEAUS = ("eigen", "thematisch", "kern")  # `niveau` van een onderwerp in de onderwerpen-indeling (regel Thuishoren)
 GEDEELD = ("thematisch", "kern")  # `niveau` van een onderwerp dat elementen voor meer onderwerpen houdt
@@ -129,7 +138,7 @@ def relatief(van: Path, naar: Path) -> str:
     return Path(os.path.relpath(naar.resolve(), van.resolve().parent)).as_posix()
 
 
-# --- Bronverwijzingen: pagina → bronanalyse (bronduiding) → sources/raw/ ---
+# --- Bronverwijzingen: pagina → bronduiding (bronduiding) → sources/raw/ ---
 
 BRON_ID_RE = re.compile(r"\b[0-9]{4}-[a-z0-9]+(?:-[a-z0-9]+)*\b")
 
@@ -139,13 +148,13 @@ def modelbronnen(wiki_root: Path = WIKI_ROOT) -> set[str]:
     return {y.get("ggm", {}).get("bron"), y.get("gemma", {}).get("bron")} - {None}
 
 
-def bronanalyse_map(wiki_root: Path = WIKI_ROOT) -> Path:
-    return wiki_root / wiki_yaml(wiki_root).get("page_types", {}).get("bronanalyse", {}).get("dir", "bronanalyses")
-
-
-def bronanalyses(wiki_root: Path = WIKI_ROOT, onderwerp: str = "*") -> list[Path]:
-    """De bronanalyses, in `bronanalyses/<onderwerp>/<brontype>/<bron-id>.md`."""
-    return sorted(bronanalyse_map(wiki_root).glob(f"{onderwerp}/*/*.md"))
+def bronduidingen(wiki_root: Path = WIKI_ROOT, onderwerp: str = "*") -> list[Path]:
+    """De bronduidingen: `onderwerpen/<onderwerp>/bronduidingen/<brontype>/<bron-id>.md`, en bij `onderwerp` `*` ook die
+    van de modellen: `modellen/<model>/bronduidingen/<brontype>/<bron-id>.md`."""
+    gevonden = list(wiki_root.glob(f"onderwerpen/{onderwerp}/bronduidingen/*/*.md"))
+    if onderwerp == "*":
+        gevonden += wiki_root.glob("modellen/*/bronduidingen/*/*.md")
+    return sorted(gevonden)
 
 
 def brontype(wiki_root: Path, bron_id: str) -> str | None:
@@ -159,21 +168,21 @@ def brontype(wiki_root: Path, bron_id: str) -> str | None:
 
 
 def bron_doel(wiki_root: Path, bron_id: str) -> Path | None:
-    """Waar een verwijzing naar deze bron heen linkt: de bronanalyse. Een modelbron (GGM, GEMMA) heeft geen
-    bronanalyse (tools/ggm.py en tools/gemma.py zijn haar lens) en linkt naar haar tekst in sources/raw/. Een bron die
-    voor de hele wiki geldt (Over GEMMA, de GEMMA-procesarchitectuur), heeft haar bronanalyse bij het onderwerp
-    Kern."""
+    """Waar een verwijzing naar deze bron heen linkt: de bronduiding. Een modelbron (GGM, GEMMA) heeft geen
+    bronduiding (tools/ggm.py en tools/gemma.py zijn haar lens) en linkt naar haar tekst in sources/raw/. Een bron van
+    een model of die voor de hele wiki geldt (Over GEMMA, de GEMMA-procesarchitectuur) heeft haar bronduiding in
+    `modellen/<model>/bronduidingen/`."""
     if bron_id in modelbronnen(wiki_root):
         pad = paths.find_repo_root(wiki_root) / "sources" / "raw" / f"{bron_id}.md"
         return pad.resolve() if pad.exists() else None
-    treffers = sorted(bronanalyse_map(wiki_root).glob(f"*/*/{bron_id}.md"))
+    treffers = [p for p in bronduidingen(wiki_root) if p.stem == bron_id]
     return treffers[0].resolve() if treffers else None
 
 
 def bronnen_als_link(van: Path, tekst: str, wiki_root: Path = WIKI_ROOT) -> str:
     """Zet bron-id's die als platte tekst in `tekst` staan om naar links; bestaande links blijven staan.
 
-    Een id zonder bronanalyse (of een datum die op een id lijkt) blijft platte tekst: de controle meldt het.
+    Een id zonder bronduiding (of een datum die op een id lijkt) blijft platte tekst: de controle meldt het.
     """
     def vervang(m: re.Match) -> str:
         doel = bron_doel(wiki_root, m.group(0))
@@ -217,6 +226,25 @@ def haal_op(wiki_root: Path, sleutel: str, bron_id: str, ref: str | None = None,
 
 
 # --- Onderwerpen als één model ---
+
+
+def afbakening_pad(onderwerp: str) -> Path:
+    return ONDERWERPEN / onderwerp / "afbakening.yaml"
+
+
+def begrippen_pad(onderwerp: str) -> str:
+    return (ONDERWERPEN / onderwerp / "begrippen.md").as_posix()
+
+
+def overzicht_pad(onderwerp: str) -> str:
+    return (ONDERWERPEN / onderwerp / "overzicht.md").as_posix()
+
+
+def afbakeningen(wiki_root: Path = WIKI_ROOT) -> dict[str, dict]:
+    """onderwerp → afbakening (`onderwerpen/<onderwerp>/afbakening.yaml`: naam, niveau, omschrijving, bronnen, besluiten)."""
+    from llmwiki import beoordeling
+
+    return {p.parent.name: beoordeling.laad(p) for p in sorted((wiki_root / ONDERWERPEN).glob("*/afbakening.yaml"))}
 
 
 def thuis(data: dict) -> str:

@@ -1,6 +1,6 @@
 ---
 id: 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Schema verzoeken om schriftelijke gegevensverstrekking uit de BRP
 
-Bron: [tekst](../../../../../sources/raw/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) · [origineel (pdf)](../../../../../sources/raw/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.pdf) · [online](https://nvvb.nl/media/filer_public/42/f8/42f83479-ff63-426b-8d6b-ef57173f4e70/2024_schema_schriftelijke_verstrekkingen_brp_v2.pdf)
+Bron: [tekst](../../../../../../sources/raw/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) · [origineel (pdf)](../../../../../../sources/raw/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.pdf) · [online](https://nvvb.nl/media/filer_public/42/f8/42f83479-ff63-426b-8d6b-ef57173f4e70/2024_schema_schriftelijke_verstrekkingen_brp_v2.pdf)
 
 ## Samenvatting
 

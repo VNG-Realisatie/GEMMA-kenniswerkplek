@@ -1,12 +1,12 @@
 ---
 name: gemma-archimate-model-beoordelen
-description: Beoordeel de begrippen van een onderwerp in gemma-archimate-model — per begrip een beoordeling (beoordelingen/begrippen/<id>.yaml) met kenmerken, naam, definitie, beschrijving, GGM- en GEMMA-match op betekenis, relaties, hiërarchie en GGM-terugmeldingen. Scripts leiden daaruit type en status af en maken de pagina's. Gebruik binnen gemma-archimate-model-update, na de bronanalyse.
+description: Beoordeel de begrippen van een onderwerp in gemma-archimate-model — per begrip een beoordeling (onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml) met kenmerken, naam, definitie, beschrijving, GGM- en GEMMA-match op betekenis, relaties, hiërarchie en GGM-terugmeldingen. Scripts leiden daaruit type en status af en maken de pagina's. Gebruik binnen gemma-archimate-model-update, na de bronduiding.
 metadata:
   kind: capability
   scope: wiki
   requires-skills: "gemma-archimate-model-criteria"
   requires-tools: "python:tools/beslissen.py python:tools/bepaal_type.py python:tools/relaties.py python:tools/ggm.py python:tools/gemma.py"
-  reads: "bronanalyse"
+  reads: "bronduiding"
   writes: "beoordeling"
 ---
 
@@ -16,11 +16,11 @@ De AI schrijft alleen het oordeel. Type, status, letterlijke modelvelden, pagina
 
 ## 1. Lezen
 
-Eerst de `besluiten:` van het onderwerp en van de bestaande beoordelingen (wat al beslist is, vraag je niet opnieuw), dan de technische index (`sources/index/`), de bronanalyses van dit onderwerp, en uit `sources/raw/` alleen de passages die index of bronanalyse aanwijzen. Houd de regel Bronvoorrang aan: de hogere brontypen bepalen welke begrippen er zijn en wat ze formeel betekenen; `richtlijn`, `beleid` en `overig` laten zien hoe erover gesproken wordt.
+Eerst de `besluiten:` van het onderwerp en van de bestaande beoordelingen (wat al beslist is, vraag je niet opnieuw), dan de technische index (`sources/index/`), de bronduidingen van dit onderwerp, en uit `sources/raw/` alleen de passages die index of bronduiding aanwijzen. Houd de regel Bronvoorrang aan: de hogere brontypen bepalen welke begrippen er zijn en wat ze formeel betekenen; `richtlijn`, `beleid` en `overig` laten zien hoe erover gesproken wordt.
 
 ## 2. Begrippen verzamelen
 
-- Alle kernbegrippen uit de bronanalyses van het onderwerp, plus wat al als beoordeling bestaat met dit onderwerp in `onderwerpen`.
+- Alle kernbegrippen uit de bronduidingen van het onderwerp, plus wat al als beoordeling bestaat met dit onderwerp in `onderwerpen`.
 - Het GGM is matchdoel, geen bron: een GGM-entiteit wordt geen begrip omdat het GGM haar kent, en een begrip uit de bronnen sla je niet over omdat het GGM er al een entiteit voor heeft. Toets per betrokken beleidsdomein de dekking (`tools/ggm.py kandidaten`, `entiteit`): een bedrijfsobject zonder GGM-match is een hiaat en wordt een GGM-terugmelding; een GGM-entiteit van het beleidsdomein die in de bronnen niet voorkomt, noem je in de samenvatting, en zoek een bron als ze ertoe doet.
 - Kijk per partij ook naar kanalen, beleidskaders en samenwerkingen.
 - Een wet die de UPL noemt als grondslag van een UPL-product haal je op als bron. Daarna beoordeel je of ze een beleidskader wordt: alleen als ze de gemeente een taak of bevoegdheid geeft. Een wet die alleen een tarief of een regel buiten de gemeentelijke taak bevat (Wet griffierechten burgerlijke zaken, art. 23), blijft bron zonder beleidskader; zoek dan de bevoegdheidsgrondslag. Een verdrag is bron en geen beleidskader zolang de criteria geen regelgever verdrag kennen (Overeenkomst van München 1980; de Nederlandse uitvoering staat in BW boek 1 art. 49a).
@@ -35,7 +35,7 @@ Eerst de `besluiten:` van het onderwerp en van de bestaande beoordelingen (wat a
 
 ## 4. De beoordeling schrijven
 
-Eén bestand per begrip: `beoordelingen/begrippen/<id>.yaml`, met als id de naam in kleine letters met koppeltekens. Ook een begrip dat geen element wordt, krijgt een beoordeling (alle kenmerken en een `toelichting`); het komt dan alleen in de begrippenlijst. Elke tekst staat op één regel; meer alinea's zijn meer lijstitems. Bron-id's in lopende tekst worden vanzelf links.
+Eén bestand per begrip: `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml`, met als id de naam in kleine letters met koppeltekens. Ook een begrip dat geen element wordt, krijgt een beoordeling (alle kenmerken en een `toelichting`); het komt dan alleen in de begrippenlijst. Elke tekst staat op één regel; meer alinea's zijn meer lijstitems. Bron-id's in lopende tekst worden vanzelf links.
 
 ```yaml
 begrip: Begraafplaats
@@ -87,7 +87,7 @@ Velden en wat erin hoort:
 | `kwaliteitsdoelen` (alleen bij een beleidskader) | de modelleerafspraken van Kwaliteitsdoel en Beleidskader in het kennismodel. Een kwaliteitsdoel is een element van GEMMA: kies het uit `uv run python tools/gemma.py kwaliteitsdoelen` en noem het `id`. De sterkte en wat ze betekent, staan in de modelleerafspraken van Kwaliteitsdoel; onderbouw ze met de bepalingen uit de regeling die eisen of normen voor het doel stellen. |
 | `kernobject`, `afnemer`, `domein`, `doelgroep`, `regelgever`, `gemma_generiek` | skill `gemma-archimate-model-criteria`, stap 7 (achtergrond: ARCHITECTURE.md, sectie 4.4 Indelingen) |
 
-De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet in een beoordeling of in de omschrijving van een onderwerp, maar in het register `beoordelingen/beleidsdomeinen.yaml` (`beleidsdomein`, `taakveld`, `beschrijving`, `bronnen`); de render toont haar in het overzicht en de export zet haar op de groepering. `tools/beslissen.py` controleert dat een element het beleidsdomein gebruikt en het taakveld klopt.
+De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet in een beoordeling of in de omschrijving van een onderwerp, maar in het register `modellen/gemma/indelingen/beleidsdomeinen.yaml` (`beleidsdomein`, `taakveld`, `beschrijving`, `bronnen`); de render toont haar in het overzicht en de export zet haar op de groepering. `tools/beslissen.py` controleert dat een element het beleidsdomein gebruikt en het taakveld klopt.
 
 ## 5. Match op betekenis
 
@@ -95,7 +95,7 @@ De beschrijving van een beleidsdomein (wat erbij hoort, met bronnen) staat niet 
 
 ## 6. Relaties
 
-Na een eerste `uv run python tools/beslissen.py` (zonder relaties werkt dat al): `uv run python tools/relaties.py voorstel <id>` geeft de relaties uit de relatietabellen van de bronanalyses, gematcht op het GGM, als YAML voor `relaties:`. Een GGM-relatie dient alleen om een gevonden relatie te matchen: zonder gevonden relatie staat ze als commentaar en wordt ze geen voorstel. Kies, geef een herkenbare naam, controleer richting en kardinaliteit. Een relatie staat alleen in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. `uv run python tools/relaties.py uit-bronnen <onderwerp>` toont welke relaties uit de bronnen vervallen omdat een kant geen element is; leg belangrijke vervallen relaties voor.
+Na een eerste `uv run python tools/beslissen.py` (zonder relaties werkt dat al): `uv run python tools/relaties.py voorstel <id>` geeft de relaties uit de relatietabellen van de bronduidingen, gematcht op het GGM, als YAML voor `relaties:`. Een GGM-relatie dient alleen om een gevonden relatie te matchen: zonder gevonden relatie staat ze als commentaar en wordt ze geen voorstel. Kies, geef een herkenbare naam, controleer richting en kardinaliteit. Een relatie staat alleen in de beoordeling van het bronelement; de render zet de inkomende kant op de pagina van het doel. `uv run python tools/relaties.py uit-bronnen <onderwerp>` toont welke relaties uit de bronnen vervallen omdat een kant geen element is; leg belangrijke vervallen relaties voor.
 
 ## 7. Terugmeldingen (GGM, procesarchitectuur en GEMMA)
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Geslacht, vermelding aanpassen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/geslacht-vermelding-aanpassen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/geslacht-vermelding-aanpassen)
 
 ## Samenvatting
 

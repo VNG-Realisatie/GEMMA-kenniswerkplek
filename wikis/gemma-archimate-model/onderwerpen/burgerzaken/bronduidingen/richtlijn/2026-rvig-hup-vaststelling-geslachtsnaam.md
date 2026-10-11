@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-vaststelling-geslachtsnaam
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-vaststelling-geslachtsnaam
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Vaststelling geslachtsnaam
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-vaststelling-geslachtsnaam.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-vaststelling-geslachtsnaam.html) · [online](https://www.rvig.nl/hup/vaststelling-geslachtsnaam)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-vaststelling-geslachtsnaam.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-vaststelling-geslachtsnaam.html) · [online](https://www.rvig.nl/hup/vaststelling-geslachtsnaam)
 
 ## Samenvatting
 

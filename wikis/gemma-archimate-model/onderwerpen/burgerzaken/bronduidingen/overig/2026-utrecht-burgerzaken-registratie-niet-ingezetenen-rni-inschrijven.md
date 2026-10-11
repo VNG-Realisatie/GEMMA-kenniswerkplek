@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Registratie Niet-Ingezetenen (RNI) inschrijven | Gemeente Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/registratie-niet-ingezetenen-rni-inschrijven)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/registratie-niet-ingezetenen-rni-inschrijven)
 
 ## Samenvatting
 

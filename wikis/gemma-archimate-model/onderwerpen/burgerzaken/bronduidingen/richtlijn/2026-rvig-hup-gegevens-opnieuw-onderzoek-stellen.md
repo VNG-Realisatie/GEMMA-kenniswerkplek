@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-gegevens-opnieuw-onderzoek-stellen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-gegevens-opnieuw-onderzoek-stellen
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # Gegevens opnieuw in onderzoek stellen | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-gegevens-opnieuw-onderzoek-stellen.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-gegevens-opnieuw-onderzoek-stellen.html) · [online](https://www.rvig.nl/hup/gegevens-opnieuw-onderzoek-stellen)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-gegevens-opnieuw-onderzoek-stellen.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-gegevens-opnieuw-onderzoek-stellen.html) · [online](https://www.rvig.nl/hup/gegevens-opnieuw-onderzoek-stellen)
 
 ## Samenvatting
 

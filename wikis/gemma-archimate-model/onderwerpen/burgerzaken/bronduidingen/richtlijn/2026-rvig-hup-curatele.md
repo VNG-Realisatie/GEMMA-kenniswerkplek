@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-curatele
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-curatele
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Curatele
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-curatele.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-curatele.html) · [online](https://www.rvig.nl/hup/curatele)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-curatele.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-curatele.html) · [online](https://www.rvig.nl/hup/curatele)
 
 ## Samenvatting
 

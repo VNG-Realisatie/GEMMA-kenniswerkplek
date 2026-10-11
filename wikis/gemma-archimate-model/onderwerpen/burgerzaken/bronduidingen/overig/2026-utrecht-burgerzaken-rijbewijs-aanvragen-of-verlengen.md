@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Gemeente Utrecht: Rijbewijs aanvragen of verlengen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/rijbewijs-aanvragen-of-verlengen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/rijbewijs-aanvragen-of-verlengen)
 
 ## Samenvatting
 

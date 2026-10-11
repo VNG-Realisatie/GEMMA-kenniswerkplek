@@ -1,6 +1,6 @@
 ---
 id: 2026-nvvb-id-protocol-medewerkers
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-nvvb-id-protocol-medewerkers
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # NVVB: ID-protocol medewerkers (juni 2026)
 
-Bron: [tekst](../../../../../sources/raw/2026-nvvb-id-protocol-medewerkers.md) · [origineel (pdf)](../../../../../sources/raw/2026-nvvb-id-protocol-medewerkers.pdf) · [online](https://nvvb.nl/media/filer_public/52/97/52972044-97ab-4a30-a1b4-0bf64775932a/id_protocol_medewerkers_versie_juni_2026.pdf)
+Bron: [tekst](../../../../../../sources/raw/2026-nvvb-id-protocol-medewerkers.md) · [origineel (pdf)](../../../../../../sources/raw/2026-nvvb-id-protocol-medewerkers.pdf) · [online](https://nvvb.nl/media/filer_public/52/97/52972044-97ab-4a30-a1b4-0bf64775932a/id_protocol_medewerkers_versie_juni_2026.pdf)
 
 ## Samenvatting
 

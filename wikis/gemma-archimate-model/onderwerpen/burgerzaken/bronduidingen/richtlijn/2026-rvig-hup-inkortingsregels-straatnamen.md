@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-inkortingsregels-straatnamen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-inkortingsregels-straatnamen
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Inkortingsregels straatnamen
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-inkortingsregels-straatnamen.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-inkortingsregels-straatnamen.html) · [online](https://www.rvig.nl/hup/inkortingsregels-straatnamen)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-inkortingsregels-straatnamen.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-inkortingsregels-straatnamen.html) · [online](https://www.rvig.nl/hup/inkortingsregels-straatnamen)
 
 ## Samenvatting
 

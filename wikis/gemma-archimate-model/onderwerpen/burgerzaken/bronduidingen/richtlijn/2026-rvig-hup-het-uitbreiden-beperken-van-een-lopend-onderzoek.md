@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-het-uitbreiden-beperken-van-een-lopend-onderzoek
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-het-uitbreiden-beperken-van-een-lopend-onderzoek
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # Het uitbreiden of beperken van een lopend onderzoek | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-het-uitbreiden-beperken-van-een-lopend-onderzoek.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-het-uitbreiden-beperken-van-een-lopend-onderzoek.html) · [online](https://www.rvig.nl/hup/het-uitbreiden-beperken-van-een-lopend-onderzoek)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-het-uitbreiden-beperken-van-een-lopend-onderzoek.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-het-uitbreiden-beperken-van-een-lopend-onderzoek.html) · [online](https://www.rvig.nl/hup/het-uitbreiden-beperken-van-een-lopend-onderzoek)
 
 ## Samenvatting
 

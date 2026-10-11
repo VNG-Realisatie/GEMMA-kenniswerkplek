@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Gemeente Utrecht: Gezondheidsverklaring en medische keuring voor rijbewijs
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs.html) · [online](https://www.utrecht.nl/wonen-en-leven/gezondheidsverklaring-en-medische-keuring-voor-rijbewijs)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs.html) · [online](https://www.utrecht.nl/wonen-en-leven/gezondheidsverklaring-en-medische-keuring-voor-rijbewijs)
 
 ## Samenvatting
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-wet-brp-bwbr0033715
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-wet-brp-bwbr0033715
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Wet basisregistratie personen
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-wet-brp-bwbr0033715.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-wet-brp-bwbr0033715.html) · [online](https://wetten.overheid.nl/BWBR0033715/2026-10-01)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-wet-brp-bwbr0033715.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-wet-brp-bwbr0033715.html) · [online](https://wetten.overheid.nl/BWBR0033715/2026-10-01)
 
 ## Samenvatting
 

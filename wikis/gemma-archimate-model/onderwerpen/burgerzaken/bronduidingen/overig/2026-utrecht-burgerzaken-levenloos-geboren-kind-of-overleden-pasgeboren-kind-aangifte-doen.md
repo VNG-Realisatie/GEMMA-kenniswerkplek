@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Levenloos geboren kind of overleden pasgeboren kind, aangifte doen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen)
 
 ## Samenvatting
 

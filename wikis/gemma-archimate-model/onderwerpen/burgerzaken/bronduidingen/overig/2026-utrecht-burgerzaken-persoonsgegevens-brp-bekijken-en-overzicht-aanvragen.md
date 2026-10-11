@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Persoonsgegevens BRP bekijken en overzicht aanvragen | Gemeente Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/persoonsgegevens-brp-bekijken-en-overzicht-aanvragen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/persoonsgegevens-brp-bekijken-en-overzicht-aanvragen)
 
 ## Samenvatting
 

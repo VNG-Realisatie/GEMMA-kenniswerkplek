@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-het-opnemen-van-het-deelresultaat-van-een-adresonderzoek
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-het-opnemen-van-het-deelresultaat-van-een-adresonderzoek
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # Het opnemen van het deelresultaat van een adresonderzoek | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-het-opnemen-van-het-deelresultaat-van-een-adresonderzoek.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-het-opnemen-van-het-deelresultaat-van-een-adresonderzoek.html) · [online](https://www.rvig.nl/hup/het-opnemen-van-het-deelresultaat-van-een-adresonderzoek)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-het-opnemen-van-het-deelresultaat-van-een-adresonderzoek.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-het-opnemen-van-het-deelresultaat-van-een-adresonderzoek.html) · [online](https://www.rvig.nl/hup/het-opnemen-van-het-deelresultaat-van-een-adresonderzoek)
 
 ## Samenvatting
 

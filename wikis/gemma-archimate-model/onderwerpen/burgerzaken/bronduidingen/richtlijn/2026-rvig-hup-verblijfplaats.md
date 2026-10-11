@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-verblijfplaats
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-verblijfplaats
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Verblijfplaats | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-verblijfplaats.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-verblijfplaats.html) · [online](https://www.rvig.nl/hup/verblijfplaats)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-verblijfplaats.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-verblijfplaats.html) · [online](https://www.rvig.nl/hup/verblijfplaats)
 
 ## Samenvatting
 

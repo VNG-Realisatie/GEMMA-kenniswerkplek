@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-lijkvinding
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-lijkvinding
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Lijkvinding
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-lijkvinding.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-lijkvinding.html) · [online](https://www.rvig.nl/hup/lijkvinding)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-lijkvinding.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-lijkvinding.html) · [online](https://www.rvig.nl/hup/lijkvinding)
 
 ## Samenvatting
 

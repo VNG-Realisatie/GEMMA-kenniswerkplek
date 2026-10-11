@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-wet-publieke-gezondheid-wettekst
-type: bronanalyse
+type: bronduiding
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-wet-publieke-gezondheid-wettekst
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-01
 
 # Wet publieke gezondheid
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-wet-publieke-gezondheid-wettekst.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-wet-publieke-gezondheid-wettekst.html) · [online](https://wetten.overheid.nl/BWBR0024705/)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-wet-publieke-gezondheid-wettekst.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-wet-publieke-gezondheid-wettekst.html) · [online](https://wetten.overheid.nl/BWBR0024705/)
 
 ## Samenvatting
 

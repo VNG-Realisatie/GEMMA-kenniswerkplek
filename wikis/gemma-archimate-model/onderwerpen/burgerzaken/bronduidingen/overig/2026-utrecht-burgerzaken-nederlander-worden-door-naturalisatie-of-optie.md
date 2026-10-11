@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Gemeente Utrecht: Nederlander worden door naturalisatie of optie
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/nederlander-worden-door-naturalisatie-of-optie)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/nederlander-worden-door-naturalisatie-of-optie)
 
 ## Samenvatting
 

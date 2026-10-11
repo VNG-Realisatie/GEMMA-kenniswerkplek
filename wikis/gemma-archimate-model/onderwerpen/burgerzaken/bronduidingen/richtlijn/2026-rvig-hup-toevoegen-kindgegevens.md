@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-toevoegen-kindgegevens
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-toevoegen-kindgegevens
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Toevoegen kindgegevens
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-toevoegen-kindgegevens.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-toevoegen-kindgegevens.html) · [online](https://www.rvig.nl/hup/toevoegen-kindgegevens)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-toevoegen-kindgegevens.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-toevoegen-kindgegevens.html) · [online](https://www.rvig.nl/hup/toevoegen-kindgegevens)
 
 ## Samenvatting
 

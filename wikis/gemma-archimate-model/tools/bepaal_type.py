@@ -1199,7 +1199,7 @@ def schema() -> dict:
     return {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "title": "beoordeling",
-        "description": "Beoordeling van één begrip (beoordelingen/begrippen/<id>.yaml): het oordeel van de AI. "
+        "description": "Beoordeling van één begrip (onderwerpen/<onderwerp>/beoordelingen/<id>.yaml): het oordeel van de AI. "
                        "`status` en `beslist` vullen de scripts (tools/beslissen.py, llmwiki promote); nooit zelf "
                        "invullen. Gegenereerd door tools/bepaal_type.py schema.",
         "type": "object",

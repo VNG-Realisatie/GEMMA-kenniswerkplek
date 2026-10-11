@@ -1,6 +1,6 @@
 ---
 id: 1980-munchen-overeenkomst-verklaring-huwelijksbevoegdheid-bwbv0003766
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 1980-munchen-overeenkomst-verklaring-huwelijksbevoegdheid-bwbv0003766
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Overeenkomst betreffende de afgifte van een verklaring van huwelijksbevoegdheid (München, 5 september 1980)
 
-Bron: [tekst](../../../../../sources/raw/1980-munchen-overeenkomst-verklaring-huwelijksbevoegdheid-bwbv0003766.md) · [origineel (html)](../../../../../sources/raw/1980-munchen-overeenkomst-verklaring-huwelijksbevoegdheid-bwbv0003766.html) · [online](https://wetten.overheid.nl/jci1.3:c:BWBV0003766&z=1985-02-01&g=1985-02-01)
+Bron: [tekst](../../../../../../sources/raw/1980-munchen-overeenkomst-verklaring-huwelijksbevoegdheid-bwbv0003766.md) · [origineel (html)](../../../../../../sources/raw/1980-munchen-overeenkomst-verklaring-huwelijksbevoegdheid-bwbv0003766.html) · [online](https://wetten.overheid.nl/jci1.3:c:BWBV0003766&z=1985-02-01&g=1985-02-01)
 
 ## Samenvatting
 

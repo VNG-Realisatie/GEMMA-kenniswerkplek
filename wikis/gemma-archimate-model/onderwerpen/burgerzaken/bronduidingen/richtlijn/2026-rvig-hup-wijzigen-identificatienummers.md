@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-wijzigen-identificatienummers
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-wijzigen-identificatienummers
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Wijzigen identificatienummers
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-wijzigen-identificatienummers.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-wijzigen-identificatienummers.html) · [online](https://www.rvig.nl/hup/wijzigen-identificatienummers)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-wijzigen-identificatienummers.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-wijzigen-identificatienummers.html) · [online](https://www.rvig.nl/hup/wijzigen-identificatienummers)
 
 ## Samenvatting
 

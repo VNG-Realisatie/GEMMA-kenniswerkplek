@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Trouwlocaties in Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-trouwlocaties-in-utrecht.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-trouwlocaties-in-utrecht.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/trouwlocaties-in-utrecht)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-trouwlocaties-in-utrecht.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-trouwlocaties-in-utrecht.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/trouwlocaties-in-utrecht)
 
 ## Samenvatting
 

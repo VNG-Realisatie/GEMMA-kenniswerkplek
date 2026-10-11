@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-kind-erkennen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-kind-erkennen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Kind erkennen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-kind-erkennen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-kind-erkennen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/kind-erkennen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-kind-erkennen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-kind-erkennen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/kind-erkennen)
 
 ## Samenvatting
 

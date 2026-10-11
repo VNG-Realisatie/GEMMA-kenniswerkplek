@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-overleden-na-eerder-ten-onterechte-overleden
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-overleden-na-eerder-ten-onterechte-overleden
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Overleden na eerder ten onrechte overleden
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-overleden-na-eerder-ten-onterechte-overleden.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-overleden-na-eerder-ten-onterechte-overleden.html) · [online](https://www.rvig.nl/hup/overleden-na-eerder-ten-onterechte-overleden)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-overleden-na-eerder-ten-onterechte-overleden.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-overleden-na-eerder-ten-onterechte-overleden.html) · [online](https://www.rvig.nl/hup/overleden-na-eerder-ten-onterechte-overleden)
 
 ## Samenvatting
 

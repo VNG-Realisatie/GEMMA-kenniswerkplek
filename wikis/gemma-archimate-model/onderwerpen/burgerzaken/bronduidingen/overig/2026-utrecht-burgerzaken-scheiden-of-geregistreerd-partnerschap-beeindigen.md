@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Scheiden of geregistreerd partnerschap beëindigen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/scheiden-of-geregistreerd-partnerschap-beeindigen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/scheiden-of-geregistreerd-partnerschap-beeindigen)
 
 ## Samenvatting
 

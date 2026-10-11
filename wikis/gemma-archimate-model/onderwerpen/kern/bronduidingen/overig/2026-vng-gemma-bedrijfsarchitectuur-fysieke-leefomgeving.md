@@ -1,6 +1,6 @@
 ---
 id: 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
-type: bronanalyse
+type: bronduiding
 onderwerp: kern
 bronnen:
 - 2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving
@@ -10,7 +10,7 @@ bijgewerkt: '2026-10-10'
 
 # GEMMA Bedrijfsarchitectuur fysieke leefomgeving
 
-Bron: [tekst](../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.md) · [origineel (html)](../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.html) · [online](https://www.gemmaonline.nl/wiki/Bedrijfsarchitectuur_fysieke_leefomgeving)
+Bron: [tekst](../../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.md) · [origineel (html)](../../../../../../sources/raw/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.html) · [online](https://www.gemmaonline.nl/wiki/Bedrijfsarchitectuur_fysieke_leefomgeving)
 
 ## Samenvatting
 

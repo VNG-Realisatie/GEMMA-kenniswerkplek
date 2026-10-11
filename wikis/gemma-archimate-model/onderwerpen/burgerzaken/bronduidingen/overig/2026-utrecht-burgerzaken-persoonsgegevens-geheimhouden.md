@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Persoonsgegevens geheimhouden | Gemeente Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/persoonsgegevens-geheimhouden)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/persoonsgegevens-geheimhouden)
 
 ## Samenvatting
 

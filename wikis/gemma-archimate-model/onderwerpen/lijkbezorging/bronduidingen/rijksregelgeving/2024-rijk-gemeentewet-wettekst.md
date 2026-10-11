@@ -1,6 +1,6 @@
 ---
 id: 2024-rijk-gemeentewet-wettekst
-type: bronanalyse
+type: bronduiding
 onderwerp: lijkbezorging
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-01
 
 # Gemeentewet
 
-Bron: [tekst](../../../../../sources/raw/2024-rijk-gemeentewet-wettekst.md) · [online](https://wetten.overheid.nl/BWBR0005416/2024-01-31/)
+Bron: [tekst](../../../../../../sources/raw/2024-rijk-gemeentewet-wettekst.md) · [online](https://wetten.overheid.nl/BWBR0005416/2024-01-31/)
 
 ## Samenvatting
 

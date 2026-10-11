@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-het-onderzoek-stellen-van-gegevens
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-het-onderzoek-stellen-van-gegevens
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # Het in onderzoek stellen van gegevens | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-het-onderzoek-stellen-van-gegevens.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-het-onderzoek-stellen-van-gegevens.html) · [online](https://www.rvig.nl/hup/het-onderzoek-stellen-van-gegevens)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-het-onderzoek-stellen-van-gegevens.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-het-onderzoek-stellen-van-gegevens.html) · [online](https://www.rvig.nl/hup/het-onderzoek-stellen-van-gegevens)
 
 ## Samenvatting
 

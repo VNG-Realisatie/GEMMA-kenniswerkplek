@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-algemene-wet-bestuursrecht-wettekst
-type: bronanalyse
+type: bronduiding
 onderwerp: lijkbezorging
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-01
 
 # Algemene wet bestuursrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-algemene-wet-bestuursrecht-wettekst.html) · [online](https://wetten.overheid.nl/BWBR0005537/)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-algemene-wet-bestuursrecht-wettekst.html) · [online](https://wetten.overheid.nl/BWBR0005537/)
 
 ## Samenvatting
 

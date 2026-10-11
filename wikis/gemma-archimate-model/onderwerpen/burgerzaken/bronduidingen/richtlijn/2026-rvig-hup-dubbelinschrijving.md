@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-dubbelinschrijving
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-dubbelinschrijving
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # Dubbelinschrijving | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-dubbelinschrijving.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-dubbelinschrijving.html) · [online](https://www.rvig.nl/hup/dubbelinschrijving)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-dubbelinschrijving.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-dubbelinschrijving.html) · [online](https://www.rvig.nl/hup/dubbelinschrijving)
 
 ## Samenvatting
 

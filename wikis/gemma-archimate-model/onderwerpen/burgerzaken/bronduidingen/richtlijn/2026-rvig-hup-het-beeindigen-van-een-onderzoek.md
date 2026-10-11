@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-het-beeindigen-van-een-onderzoek
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-het-beeindigen-van-een-onderzoek
@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-06
 
 # Het beëindigen van een onderzoek | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-het-beeindigen-van-een-onderzoek.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-het-beeindigen-van-een-onderzoek.html) · [online](https://www.rvig.nl/hup/het-beeindigen-van-een-onderzoek)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-het-beeindigen-van-een-onderzoek.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-het-beeindigen-van-een-onderzoek.html) · [online](https://www.rvig.nl/hup/het-beeindigen-van-een-onderzoek)
 
 ## Samenvatting
 

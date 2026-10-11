@@ -1,6 +1,6 @@
 ---
 id: 2026-nvvb-beleidsregel-briefadres
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-nvvb-beleidsregel-briefadres
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Beleidsregel briefadres (NVVB)
 
-Bron: [tekst](../../../../../sources/raw/2026-nvvb-beleidsregel-briefadres.md) · [origineel (html)](../../../../../sources/raw/2026-nvvb-beleidsregel-briefadres.html) · [online](https://nvvb.nl/nl/producten-en-diensten/handreikingen/beleidsregel-briefadres/)
+Bron: [tekst](../../../../../../sources/raw/2026-nvvb-beleidsregel-briefadres.md) · [origineel (html)](../../../../../../sources/raw/2026-nvvb-beleidsregel-briefadres.html) · [online](https://nvvb.nl/nl/producten-en-diensten/handreikingen/beleidsregel-briefadres/)
 
 ## Samenvatting
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-rechtsvermoeden-van-overlijden
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-rechtsvermoeden-van-overlijden
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Rechtsvermoeden van overlijden
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-rechtsvermoeden-van-overlijden.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-rechtsvermoeden-van-overlijden.html) · [online](https://www.rvig.nl/hup/rechtsvermoeden-van-overlijden)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-rechtsvermoeden-van-overlijden.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-rechtsvermoeden-van-overlijden.html) · [online](https://www.rvig.nl/hup/rechtsvermoeden-van-overlijden)
 
 ## Samenvatting
 

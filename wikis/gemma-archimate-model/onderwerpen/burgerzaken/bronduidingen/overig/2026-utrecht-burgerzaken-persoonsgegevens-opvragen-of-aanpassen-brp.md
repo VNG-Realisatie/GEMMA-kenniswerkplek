@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Persoonsgegevens opvragen of aanpassen (BRP) | Gemeente Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/persoonsgegevens-opvragen-of-aanpassen-brp)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/persoonsgegevens-opvragen-of-aanpassen-brp)
 
 ## Samenvatting
 

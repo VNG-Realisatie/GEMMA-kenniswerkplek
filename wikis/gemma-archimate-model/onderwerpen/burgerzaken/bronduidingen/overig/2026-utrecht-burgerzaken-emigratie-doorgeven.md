@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-emigratie-doorgeven
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-emigratie-doorgeven
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Emigratie doorgeven | Gemeente Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-emigratie-doorgeven.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-emigratie-doorgeven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/emigratie-doorgeven)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-emigratie-doorgeven.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-emigratie-doorgeven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/emigratie-doorgeven)
 
 ## Samenvatting
 

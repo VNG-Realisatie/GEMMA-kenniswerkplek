@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-vreemde-nationaliteit
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-vreemde-nationaliteit
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP Vreemde nationaliteit (RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-vreemde-nationaliteit.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-vreemde-nationaliteit.html) · [online](https://www.rvig.nl/hup/vreemde-nationaliteit)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-vreemde-nationaliteit.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-vreemde-nationaliteit.html) · [online](https://www.rvig.nl/hup/vreemde-nationaliteit)
 
 ## Samenvatting
 

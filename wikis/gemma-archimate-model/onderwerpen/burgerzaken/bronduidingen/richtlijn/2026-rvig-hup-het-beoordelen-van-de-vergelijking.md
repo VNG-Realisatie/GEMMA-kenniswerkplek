@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-het-beoordelen-van-de-vergelijking
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-het-beoordelen-van-de-vergelijking
@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-06
 
 # Het beoordelen van de vergelijking | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-het-beoordelen-van-de-vergelijking.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-het-beoordelen-van-de-vergelijking.html) · [online](https://www.rvig.nl/hup/het-beoordelen-van-de-vergelijking)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-het-beoordelen-van-de-vergelijking.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-het-beoordelen-van-de-vergelijking.html) · [online](https://www.rvig.nl/hup/het-beoordelen-van-de-vergelijking)
 
 ## Samenvatting
 

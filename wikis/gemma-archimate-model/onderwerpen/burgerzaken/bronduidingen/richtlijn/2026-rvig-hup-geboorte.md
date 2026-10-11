@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-geboorte
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-geboorte
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Geboorte
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-geboorte.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-geboorte.html) · [online](https://www.rvig.nl/hup/geboorte)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-geboorte.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-geboorte.html) · [online](https://www.rvig.nl/hup/geboorte)
 
 ## Samenvatting
 

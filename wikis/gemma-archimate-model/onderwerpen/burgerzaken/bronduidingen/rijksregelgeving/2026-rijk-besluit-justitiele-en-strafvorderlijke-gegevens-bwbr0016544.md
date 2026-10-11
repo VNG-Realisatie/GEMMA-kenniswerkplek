@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Besluit justitiële en strafvorderlijke gegevens
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.html) · [online](https://wetten.overheid.nl/BWBR0016544)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.html) · [online](https://wetten.overheid.nl/BWBR0016544)
 
 ## Samenvatting
 

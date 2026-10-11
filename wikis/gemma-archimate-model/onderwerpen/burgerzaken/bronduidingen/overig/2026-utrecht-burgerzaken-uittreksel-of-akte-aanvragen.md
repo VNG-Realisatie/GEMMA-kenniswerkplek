@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Uittreksel of akte aanvragen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/uittreksel-of-akte-aanvragen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/uittreksel-of-akte-aanvragen)
 
 ## Samenvatting
 

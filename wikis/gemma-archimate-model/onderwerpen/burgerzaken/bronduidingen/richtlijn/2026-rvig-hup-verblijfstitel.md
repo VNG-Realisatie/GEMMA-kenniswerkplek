@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-verblijfstitel
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-verblijfstitel
@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-06
 
 # HUP Verblijfstitel (RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-verblijfstitel.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-verblijfstitel.html) · [online](https://www.rvig.nl/hup/verblijfstitel)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-verblijfstitel.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-verblijfstitel.html) · [online](https://www.rvig.nl/hup/verblijfstitel)
 
 ## Samenvatting
 

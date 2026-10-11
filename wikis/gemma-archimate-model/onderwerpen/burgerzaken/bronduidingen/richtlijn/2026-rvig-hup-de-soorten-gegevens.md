@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-de-soorten-gegevens
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-de-soorten-gegevens
@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: De soorten gegevens
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-de-soorten-gegevens.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-de-soorten-gegevens.html) · [online](https://www.rvig.nl/hup/de-soorten-gegevens)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-de-soorten-gegevens.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-de-soorten-gegevens.html) · [online](https://www.rvig.nl/hup/de-soorten-gegevens)
 
 ## Samenvatting
 

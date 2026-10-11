@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # Verwijdering van reisdocumentgegevens (HUP, RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-verwijdering-van-reisdocumentgegevens.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-verwijdering-van-reisdocumentgegevens.html) · [online](https://www.rvig.nl/hup/verwijdering-van-reisdocumentgegevens)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-verwijdering-van-reisdocumentgegevens.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-verwijdering-van-reisdocumentgegevens.html) · [online](https://www.rvig.nl/hup/verwijdering-van-reisdocumentgegevens)
 
 ## Samenvatting
 

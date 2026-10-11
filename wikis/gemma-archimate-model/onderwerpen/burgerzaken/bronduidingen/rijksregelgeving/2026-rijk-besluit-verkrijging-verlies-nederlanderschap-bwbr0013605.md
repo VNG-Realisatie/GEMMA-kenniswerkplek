@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Besluit verkrijging en verlies Nederlanderschap
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.html) · [online](https://wetten.overheid.nl/BWBR0013605)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.html) · [online](https://wetten.overheid.nl/BWBR0013605)
 
 ## Samenvatting
 

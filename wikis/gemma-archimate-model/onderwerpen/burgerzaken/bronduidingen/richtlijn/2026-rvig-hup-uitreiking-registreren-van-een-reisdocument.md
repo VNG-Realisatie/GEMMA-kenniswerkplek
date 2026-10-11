@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Uitreiking of registreren van een reisdocument (HUP, RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.html) · [online](https://www.rvig.nl/hup/uitreiking-registreren-van-een-reisdocument)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-uitreiking-registreren-van-een-reisdocument.html) · [online](https://www.rvig.nl/hup/uitreiking-registreren-van-een-reisdocument)
 
 ## Samenvatting
 

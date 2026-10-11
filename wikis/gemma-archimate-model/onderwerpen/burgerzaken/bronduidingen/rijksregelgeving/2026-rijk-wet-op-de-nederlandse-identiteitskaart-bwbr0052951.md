@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Wet op de Nederlandse identiteitskaart
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.html) · [online](https://wetten.overheid.nl/BWBR0052951/2026-10-01)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.html) · [online](https://wetten.overheid.nl/BWBR0052951/2026-10-01)
 
 ## Samenvatting
 

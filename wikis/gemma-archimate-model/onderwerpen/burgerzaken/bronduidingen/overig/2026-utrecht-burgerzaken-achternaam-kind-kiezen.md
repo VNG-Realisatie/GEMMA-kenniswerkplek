@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-achternaam-kind-kiezen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Achternaam kind kiezen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-achternaam-kind-kiezen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-achternaam-kind-kiezen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/achternaam-kind-kiezen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-achternaam-kind-kiezen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-achternaam-kind-kiezen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/achternaam-kind-kiezen)
 
 ## Samenvatting
 

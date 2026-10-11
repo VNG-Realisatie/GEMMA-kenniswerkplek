@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-geboorteaangifte-doen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-geboorteaangifte-doen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Geboorteaangifte doen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-geboorteaangifte-doen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-geboorteaangifte-doen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/geboorteaangifte-doen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-geboorteaangifte-doen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-geboorteaangifte-doen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/geboorteaangifte-doen)
 
 ## Samenvatting
 

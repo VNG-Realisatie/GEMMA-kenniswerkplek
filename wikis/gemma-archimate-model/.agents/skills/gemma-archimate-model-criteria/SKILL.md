@@ -5,7 +5,7 @@ metadata:
   kind: capability
   scope: wiki
   requires-tools: "python:tools/bepaal_type.py"
-  reads: "bronanalyse"
+  reads: "bronduiding"
   writes: "beoordeling"
 ---
 
@@ -23,7 +23,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
 ## Werkwijze
 
 1. **Stap 0: welk begrip?** Bepaal vóór de kenmerken of het woord een synoniem is van een bestaand element (of van een begrip dat nu wordt beoordeeld), en of dezelfde naam al voor een ander begrip bestaat: in de wiki, het GGM of het GEMMA-model (`tools/ggm.py kandidaten <naam>`, `tools/gemma.py kandidaten <naam>`) of een bron. Vul `synoniem_van` of `homoniem_van` in. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
-2. Beantwoord **alle** kenmerken uit de vragenlijst hieronder, ook als ze niet bij het vermoedelijke type horen (dan nee). Gebruik de bronnen in de volgorde van de regel Bronvoorrang. Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; staat die niet in de bronanalyse, vul dan eerst de bronanalyse aan. Twijfel je over een kenmerk, kijk dan naar de voorbeelden in [kenmerken en beslistabel](../../../kennismodel/kenmerken-en-beslistabel.md).
+2. Beantwoord **alle** kenmerken uit de vragenlijst hieronder, ook als ze niet bij het vermoedelijke type horen (dan nee). Gebruik de bronnen in de volgorde van de regel Bronvoorrang. Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; staat die niet in de bronduiding, vul dan eerst de bronduiding aan. Twijfel je over een kenmerk, kijk dan naar de voorbeelden in [kenmerken en beslistabel](../../../kennismodel/kenmerken-en-beslistabel.md).
 3. Let op:
    - *zelfstandige specialisatie*: kijk eerst naar boven. Zoek de generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek`) en noteer de keten (bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Het kenmerk gaat over de "is een"-relatie, niet over herkomst uit wet of beleid; zie skill `gemma-archimate-model-beoordelen` §3 en `references/hierarchie.md`.
    - *los van verantwoordelijkheid* en *eigen rechtspersoon* beslissen tussen actor, rol en bedrijfssamenwerking; *soort partij* volgt de afspraken in de modelleerafspraken van [Actor](../../../kennismodel/bedrijfsarchitectuur/actor-modelleerafspraken.md).
@@ -36,7 +36,7 @@ Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eers
    - `genoemd_begrip` bij *slechts eigenschap*, *eigen identiteit* nee (het geheel), *zelfstandige specialisatie* nee (het bredere begrip) of *waarneembare vorm* (het object);
    - `archimate_buiten_model` bij *buiten dit model*;
    - de eigenschappen van het type uit zijn modelleerafspraken, zoals `kernobject`, `gemma_generiek` en de indelingsvelden `domein`, `afnemer`, `doelgroep` en `regelgever`, naast `taakveld` en `beleidsdomein`. Een relatie naar een generiek object noemt zijn specialisatie zonder pagina in `via`.
-5. Leg de beoordeling vast in `beoordelingen/begrippen/<id>.yaml` (schema `schemas/beoordeling.schema.json`, zie skill `gemma-archimate-model-beoordelen`) en draai `uv run python tools/beslissen.py`. De uitkomst is bindend.
+5. Leg de beoordeling vast in `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` (schema `schemas/beoordeling.schema.json`, zie skill `gemma-archimate-model-beoordelen`) en draai `uv run python tools/beslissen.py`. De uitkomst is bindend.
 6. Is de uitkomst `conflict` of staat `voorleggen` aan, dan leg je het begrip voor aan de redacteur, met de redenen uit de uitkomst. Pas je antwoorden niet aan om een conflict weg te werken, tenzij een antwoord aantoonbaar fout was.
 
 ## Vragenlijst

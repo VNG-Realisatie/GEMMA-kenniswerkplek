@@ -1,6 +1,6 @@
 ---
 id: 2010-vng-model-beheersverordening-begraafplaatsen
-type: bronanalyse
+type: bronduiding
 onderwerp: lijkbezorging
 bronnen:
 - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-01
 
 # Model-beheersverordening begraafplaatsen 2010 (VNG), met toelichting
 
-Bron: [tekst](../../../../../sources/raw/2010-vng-model-beheersverordening-begraafplaatsen.md) · [origineel (pdf)](../../../../../sources/raw/2010-vng-model-beheersverordening-begraafplaatsen.pdf) · [online](https://www.eerstekamer.nl/overig/20101206/model_beheersverordening/document)
+Bron: [tekst](../../../../../../sources/raw/2010-vng-model-beheersverordening-begraafplaatsen.md) · [origineel (pdf)](../../../../../../sources/raw/2010-vng-model-beheersverordening-begraafplaatsen.pdf) · [online](https://www.eerstekamer.nl/overig/20101206/model_beheersverordening/document)
 
 ## Samenvatting
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-immigratie
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-immigratie
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Immigratie | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-immigratie.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-immigratie.html) · [online](https://www.rvig.nl/hup/immigratie)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-immigratie.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-immigratie.html) · [online](https://www.rvig.nl/hup/immigratie)
 
 ## Samenvatting
 

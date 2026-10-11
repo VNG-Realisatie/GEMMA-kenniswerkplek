@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-wijziging-voornaam
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-wijziging-voornaam
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Wijziging voornaam
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-wijziging-voornaam.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-wijziging-voornaam.html) · [online](https://www.rvig.nl/hup/wijziging-voornaam)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-wijziging-voornaam.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-wijziging-voornaam.html) · [online](https://www.rvig.nl/hup/wijziging-voornaam)
 
 ## Samenvatting
 

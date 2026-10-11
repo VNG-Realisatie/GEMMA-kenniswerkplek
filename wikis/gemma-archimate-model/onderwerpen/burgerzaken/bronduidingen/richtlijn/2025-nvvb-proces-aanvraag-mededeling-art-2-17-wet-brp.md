@@ -1,6 +1,6 @@
 ---
 id: 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Proces aanvraag mededeling ex artikel 2.17 Wet BRP
 
-Bron: [tekst](../../../../../sources/raw/2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp.md) · [origineel (pdf)](../../../../../sources/raw/2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp.pdf) · [online](https://nvvb.nl/media/filer_public/68/61/6861126c-4a15-487b-b6ee-e246566f2d3f/update_30_stap_6_aangepast_pro_aanvr_mededeling_ex_artikel_2_17_wet_brp_juli2025.pdf)
+Bron: [tekst](../../../../../../sources/raw/2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp.md) · [origineel (pdf)](../../../../../../sources/raw/2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp.pdf) · [online](https://nvvb.nl/media/filer_public/68/61/6861126c-4a15-487b-b6ee-e246566f2d3f/update_30_stap_6_aangepast_pro_aanvr_mededeling_ex_artikel_2_17_wet_brp_juli2025.pdf)
 
 ## Samenvatting
 

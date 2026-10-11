@@ -1,6 +1,6 @@
-"""Relaties tussen elementen: kandidaten uit de bronanalyses, hun match in het GGM, en de toets aan ArchiMate.
+"""Relaties tussen elementen: kandidaten uit de bronduidingen, hun match in het GGM, en de toets aan ArchiMate.
 
-Een relatie staat in de beoordeling van het bronelement (`relaties:` in beoordelingen/begrippen/<id>.yaml); het
+Een relatie staat in de beoordeling van het bronelement (`relaties:` in onderwerpen/<onderwerp>/beoordelingen/<id>.yaml); het
 render-script zet haar op de pagina, met de inkomende kant op de pagina van het doel. Deze tool doet voorstellen; de AI
 kiest, geeft een herkenbare naam en schrijft ze in de beoordeling. tools/beslissen.py toetst elke relatie.
 
@@ -14,7 +14,7 @@ ArchiMate (`archimate_geldig`), aangescherpt met de GEMMA-modelleerafspraken (`t
 relatie die via een niet-opgenomen entiteit of een opgetilde kant uit het GGM volgt). `ggm_relatie`: de GUID's van de
 GGM-relatie of de keten. `bronnen`: altijd verplicht; het GGM is geen bron.
 
-Relaties uit de bronnen komen uit de tabel `## Relaties` van de bronanalyses (Van | Werkwoord | Naar | Vindplaats):
+Relaties uit de bronnen komen uit de tabel `## Relaties` van de bronduidingen (Van | Werkwoord | Naar | Vindplaats):
 de begrippen worden opgelost via de beoordelingen (naam of synoniem), een eigenschap, onderdeel of specialisatie
 zonder pagina wordt opgetild naar het genoemde begrip, en de typen van beide kanten plus het werkwoord bepalen de
 soort relatie.
@@ -25,7 +25,7 @@ commentaar, zodat de AI een bron kan zoeken of een relatie die al in de beoordel
 
 Gebruik (vanuit de wikimap, na tools/beslissen.py):
     uv run python tools/relaties.py voorstel <element-id>      # kandidaten als YAML voor `relaties:`
-    uv run python tools/relaties.py uit-bronnen [<onderwerp>]  # alle relaties uit de bronanalyses, met wat vervalt
+    uv run python tools/relaties.py uit-bronnen [<onderwerp>]  # alle relaties uit de bronduidingen, met wat vervalt
 """
 from __future__ import annotations
 
@@ -439,9 +439,9 @@ def van_bron(bron_type: str, doel_type: str, werkwoord: str) -> dict:
 
 
 def bronrelaties(wiki_root: Path = WIKI_ROOT, onderwerp: str | None = None) -> list[dict]:
-    """De rijen van `## Relaties` in de bronanalyses: {van, werkwoord, naar, bronnen, vindplaats}."""
+    """De rijen van `## Relaties` in de bronduidingen: {van, werkwoord, naar, bronnen, vindplaats}."""
     rijen = []
-    for pad in gam_gemeen.bronanalyses(wiki_root, onderwerp or "*"):
+    for pad in gam_gemeen.bronduidingen(wiki_root, onderwerp or "*"):
         for rij in gam_gemeen.tabel(gam_gemeen.sectie(pad.read_text(encoding="utf-8"), "Relaties")):
             if rij.get("Van") and rij.get("Naar"):
                 rijen.append({"van": rij["Van"], "werkwoord": rij.get("Werkwoord", ""), "naar": rij["Naar"],

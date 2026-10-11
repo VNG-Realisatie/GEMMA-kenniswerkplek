@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-wat-een-gerelateerde-en-wat-relatielegging
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-wat-een-gerelateerde-en-wat-relatielegging
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Wat is een gerelateerde en wat is relatielegging
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-wat-een-gerelateerde-en-wat-relatielegging.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-wat-een-gerelateerde-en-wat-relatielegging.html) · [online](https://www.rvig.nl/hup/wat-een-gerelateerde-en-wat-relatielegging)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-wat-een-gerelateerde-en-wat-relatielegging.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-wat-een-gerelateerde-en-wat-relatielegging.html) · [online](https://www.rvig.nl/hup/wat-een-gerelateerde-en-wat-relatielegging)
 
 ## Samenvatting
 

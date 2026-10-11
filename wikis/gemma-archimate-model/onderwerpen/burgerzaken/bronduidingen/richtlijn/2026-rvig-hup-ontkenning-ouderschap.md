@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-ontkenning-ouderschap
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-ontkenning-ouderschap
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Ontkenning ouderschap
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-ontkenning-ouderschap.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-ontkenning-ouderschap.html) · [online](https://www.rvig.nl/hup/ontkenning-ouderschap)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-ontkenning-ouderschap.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-ontkenning-ouderschap.html) · [online](https://www.rvig.nl/hup/ontkenning-ouderschap)
 
 ## Samenvatting
 

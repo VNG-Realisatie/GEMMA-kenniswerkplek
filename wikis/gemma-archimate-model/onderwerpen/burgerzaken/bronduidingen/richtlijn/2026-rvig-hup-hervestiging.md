@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-hervestiging
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-hervestiging
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Hervestiging | RvIG (HUP)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-hervestiging.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-hervestiging.html) · [online](https://www.rvig.nl/hup/hervestiging)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-hervestiging.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-hervestiging.html) · [online](https://www.rvig.nl/hup/hervestiging)
 
 ## Samenvatting
 

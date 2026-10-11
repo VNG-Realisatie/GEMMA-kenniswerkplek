@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-overlijden-aangifte-doen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Overlijden, aangifte doen
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-overlijden-aangifte-doen.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-overlijden-aangifte-doen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/overlijden-aangifte-doen)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-overlijden-aangifte-doen.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-overlijden-aangifte-doen.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/overlijden-aangifte-doen)
 
 ## Samenvatting
 

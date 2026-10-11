@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-proceduregegevens
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-proceduregegevens
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Proceduregegevens
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-proceduregegevens.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-proceduregegevens.html) · [online](https://www.rvig.nl/hup/proceduregegevens)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-proceduregegevens.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-proceduregegevens.html) · [online](https://www.rvig.nl/hup/proceduregegevens)
 
 ## Samenvatting
 

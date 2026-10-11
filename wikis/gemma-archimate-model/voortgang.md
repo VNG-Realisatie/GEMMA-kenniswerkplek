@@ -12,13 +12,13 @@ titel: Voortgang
 
 | Onderwerp | Status | Begrippen | Elementen |
 |---|---|---|---|
-| [Besluitvorming](begrippen/besluitvorming.md) | in-behandeling | 4 | 4 |
-| [Bestuur en organisatie](begrippen/bestuur-en-organisatie.md) | in-behandeling | 6 | 6 |
-| [Burgerzaken](begrippen/burgerzaken.md) | in-behandeling | 260 | 180 |
-| [Heffingen en betalingen](begrippen/heffingen-en-betalingen.md) | in-behandeling | 2 | 2 |
-| [Kern](begrippen/kern.md) | in-behandeling | 2 | 2 |
-| [Lijkbezorging](begrippen/lijkbezorging.md) | in-behandeling | 186 | 95 |
-| [Participatie](begrippen/participatie.md) | in-behandeling | 0 | 0 |
+| [Besluitvorming](onderwerpen/besluitvorming/begrippen.md) | in-behandeling | 4 | 4 |
+| [Bestuur en organisatie](onderwerpen/bestuur-en-organisatie/begrippen.md) | in-behandeling | 6 | 6 |
+| [Burgerzaken](onderwerpen/burgerzaken/begrippen.md) | in-behandeling | 260 | 180 |
+| [Heffingen en betalingen](onderwerpen/heffingen-en-betalingen/begrippen.md) | in-behandeling | 2 | 2 |
+| [Kern](onderwerpen/kern/begrippen.md) | in-behandeling | 2 | 2 |
+| [Lijkbezorging](onderwerpen/lijkbezorging/begrippen.md) | in-behandeling | 186 | 95 |
+| [Participatie](onderwerpen/participatie/begrippen.md) | in-behandeling | 0 | 0 |
 
 ## Samenhang tussen onderwerpen
 
@@ -51,12 +51,12 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 ## GGM-terugmeldingen
 
-[18 terugmeldingen](terugmeldingen/ggm-terugmeldingen.md): open 18.
+[18 terugmeldingen](modellen/ggm/terugmeldingen.md): open 18.
 
 ## Procesarchitectuur-terugmeldingen
 
-[23 terugmeldingen](terugmeldingen/procesarchitectuur-terugmeldingen.md): open 22, opgelost 1.
+[23 terugmeldingen](modellen/gemma/terugmeldingen/procesarchitectuur.md): open 22, opgelost 1.
 
 ## GEMMA-terugmeldingen
 
-[6 terugmeldingen](terugmeldingen/gemma-terugmeldingen.md): open 6.
+[6 terugmeldingen](modellen/gemma/terugmeldingen/gemma-team.md): open 6.

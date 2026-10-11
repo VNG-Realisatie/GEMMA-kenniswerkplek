@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-overlijden-buitenland
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-overlijden-buitenland
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Overlijden in het buitenland
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-overlijden-buitenland.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-overlijden-buitenland.html) · [online](https://www.rvig.nl/hup/overlijden-buitenland)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-overlijden-buitenland.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-overlijden-buitenland.html) · [online](https://www.rvig.nl/hup/overlijden-buitenland)
 
 ## Samenvatting
 

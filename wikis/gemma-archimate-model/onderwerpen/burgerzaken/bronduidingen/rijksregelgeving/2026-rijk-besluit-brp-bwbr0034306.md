@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-besluit-brp-bwbr0034306
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-besluit-brp-bwbr0034306
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Besluit basisregistratie personen
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-besluit-brp-bwbr0034306.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-besluit-brp-bwbr0034306.html) · [online](https://wetten.overheid.nl/BWBR0034306)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-besluit-brp-bwbr0034306.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-besluit-brp-bwbr0034306.html) · [online](https://wetten.overheid.nl/BWBR0034306)
 
 ## Samenvatting
 

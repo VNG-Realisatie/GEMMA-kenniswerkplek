@@ -1,6 +1,6 @@
 ---
 id: 2026-vng-retributies
-type: bronanalyse
+type: bronduiding
 onderwerp: lijkbezorging
 bronnen:
 - 2026-vng-retributies
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-01
 
 # Retributies (VNG), paragraaf Lijkbezorgingsrechten
 
-Bron: [tekst](../../../../../sources/raw/2026-vng-retributies.md) · [online](https://vng.nl/artikelen/retributies)
+Bron: [tekst](../../../../../../sources/raw/2026-vng-retributies.md) · [online](https://vng.nl/artikelen/retributies)
 
 ## Samenvatting
 

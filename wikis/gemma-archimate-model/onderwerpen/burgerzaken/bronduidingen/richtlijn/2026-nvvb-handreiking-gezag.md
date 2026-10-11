@@ -1,6 +1,6 @@
 ---
 id: 2026-nvvb-handreiking-gezag
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-nvvb-handreiking-gezag
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Gezag (NVVB, Handreikingen)
 
-Bron: [tekst](../../../../../sources/raw/2026-nvvb-handreiking-gezag.md) · [origineel (html)](../../../../../sources/raw/2026-nvvb-handreiking-gezag.html) · [online](https://nvvb.nl/nl/producten-en-diensten/handreikingen/gezag/)
+Bron: [tekst](../../../../../../sources/raw/2026-nvvb-handreiking-gezag.md) · [origineel (html)](../../../../../../sources/raw/2026-nvvb-handreiking-gezag.html) · [online](https://nvvb.nl/nl/producten-en-diensten/handreikingen/gezag/)
 
 ## Samenvatting
 

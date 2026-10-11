@@ -15,7 +15,7 @@ bronnen:
 
 # Kern
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/onderwerpen/kern.yaml en de beoordelingen van de begrippen. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit onderwerpen/kern/afbakening.yaml en de beoordelingen van de begrippen. Wijzig de beoordeling, niet deze pagina. -->
 
 ## Omschrijving
 
@@ -25,17 +25,17 @@ Hier staan ook de bronanalyses van bronnen die voor de hele wiki gelden: Over GE
 
 ## Overzicht
 
-De views op de indelingen staan in het [overzicht](../overzichten/kern.md).
+De views op de indelingen staan in het [overzicht](overzicht.md).
 
 ## Bronnen
 
-- [Over GEMMA (kennismodel en modelleerafspraken)](../bronanalyses/kern/overig/2026-vng-over-gemma.md)
-- [GEMMA Procesarchitectuur Proceshiërarchie](../bronanalyses/kern/overig/2026-vng-gemma-proceshierarchie.md)
-- [GEMMA Procesarchitectuur Impact van ketensamenwerking](../bronanalyses/kern/overig/2026-vng-gemma-impact-ketensamenwerking.md)
-- [GEMMA Bedrijfsfuncties](../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsfuncties.md)
-- [GEMMA Bedrijfsarchitectuur publieksdiensten](../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten.md)
-- [GEMMA Bedrijfsarchitectuur fysieke leefomgeving](../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.md)
-- [GEMMA Bedrijfsarchitectuur openbare orde en veiligheid](../bronanalyses/kern/overig/2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid.md)
+- [Over GEMMA (kennismodel en modelleerafspraken)](../../modellen/gemma/bronduidingen/overig/2026-vng-over-gemma.md)
+- [GEMMA Procesarchitectuur Proceshiërarchie](../../modellen/gemma/bronduidingen/overig/2026-vng-gemma-proceshierarchie.md)
+- [GEMMA Procesarchitectuur Impact van ketensamenwerking](../../modellen/gemma/bronduidingen/overig/2026-vng-gemma-impact-ketensamenwerking.md)
+- [GEMMA Bedrijfsfuncties](bronduidingen/overig/2026-vng-gemma-bedrijfsfuncties.md)
+- [GEMMA Bedrijfsarchitectuur publieksdiensten](bronduidingen/overig/2026-vng-gemma-bedrijfsarchitectuur-publieksdiensten.md)
+- [GEMMA Bedrijfsarchitectuur fysieke leefomgeving](bronduidingen/overig/2026-vng-gemma-bedrijfsarchitectuur-fysieke-leefomgeving.md)
+- [GEMMA Bedrijfsarchitectuur openbare orde en veiligheid](bronduidingen/overig/2026-vng-gemma-bedrijfsarchitectuur-openbare-orde-en-veiligheid.md)
 
 ## Begrippen
 
@@ -43,8 +43,8 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 
 | Begrip | Reden | Herkomst |
 |---|---|---|
-| [Ketenpartner](../bedrijfsarchitectuur/rollen/ketenpartner.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | rijksregelgeving |
-| [Producten- en dienstenrealisatie publieksdiensten](../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) *Bedrijfsfunctie, goedgekeurd* | Gedrag, *gegroepeerd gedrag* (kern ja, 4/4) | rijksregelgeving |
+| [Ketenpartner](../../elementpaginas/bedrijfsarchitectuur/rollen/ketenpartner.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | rijksregelgeving |
+| [Producten- en dienstenrealisatie publieksdiensten](../../elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/producten-en-dienstenrealisatie-publieksdiensten.md) *Bedrijfsfunctie, goedgekeurd* | Gedrag, *gegroepeerd gedrag* (kern ja, 4/4) | rijksregelgeving |
 
 ## Besluiten
 

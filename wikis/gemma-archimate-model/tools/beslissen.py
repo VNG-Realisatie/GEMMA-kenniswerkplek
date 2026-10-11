@@ -1,6 +1,6 @@
 """Beslissen: van het oordeel van de AI naar type, status en modelgegevens, met harde controles.
 
-Leest elke beoordeling in `beoordelingen/begrippen/<id>.yaml` (het oordeel van de AI) en vult per beoordeling:
+Leest elke beoordeling in `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` (het oordeel van de AI) en vult per beoordeling:
 - `beslist.uitkomst`: de uitkomst van de beslistabel (tools/bepaal_type.py) uit de kenmerken;
 - `beslist.voor_te_leggen` en `beslist.open`: waarom de redacteur moet beslissen, en wat geen besluit dekt;
 - `status` (alleen bij een element): `kandidaat` als er iets open staat, anders `review`; `afgewezen` na het besluit
@@ -11,12 +11,12 @@ Leest elke beoordeling in `beoordelingen/begrippen/<id>.yaml` (het oordeel van d
   (tools/ggm.py, tools/gemma.py); de AI vult die nooit zelf;
 - `beslist.kwaliteitsdoelen`: bij een beleidskader de letterlijke naam en definitie van elk GEMMA-kwaliteitsdoel;
 - `beslist.bronnen` en `beslist.herkomst`: alle bronnen van het begrip, en het brontype van de hoogste.
-Nieuwe GGM-terugmeldingen in `beoordelingen/terugmeldingen/ggm.yaml` krijgen het volgende nummer.
+Nieuwe GGM-terugmeldingen in `modellen/ggm/terugmeldingen.yaml` krijgen het volgende nummer.
 
 Harde controles (fout: er wordt niets geschreven): schema, kenmerken, verplichte velden van een element, bestaan van
-bronnen (met bronanalyse), GGM-guid, GEMMA-id, doelen van relaties, specialisaties, tegenhanger en homoniemen, de
-ArchiMate-relatietabel, de bronanalyses, de gegenereerde modelmappen, het register van Archi-objecten
-(`beoordelingen/objecten.yaml`), het register van beleidsdomeinen (`beoordelingen/beleidsdomeinen.yaml`) en de besluiten van onderwerpen en beoordelingen (vorm, geen bestandspad). Zachte signalen (waarschuwingen, met de naam
+bronnen (met bronduiding), GGM-guid, GEMMA-id, doelen van relaties, specialisaties, tegenhanger en homoniemen, de
+ArchiMate-relatietabel, de bronduidingen, de gegenereerde modelmappen, het register van Archi-objecten
+(`beoordelingen/objecten.yaml`), het register van beleidsdomeinen (`modellen/gemma/indelingen/beleidsdomeinen.yaml`) en de besluiten van onderwerpen en beoordelingen (vorm, geen bestandspad). Zachte signalen (waarschuwingen, met de naam
 van de regel) staan in tools/signalen.py. Daarna draait het render-script (tools/render.py), tenzij `--zonder-render`.
 
 Gebruik (vanuit de wikimap):
@@ -42,16 +42,15 @@ import signalen  # noqa: E402
 from llmwiki import beoordeling, frontmatter, paths  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
-TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "ggm.yaml"
-ONDERWERPEN = Path("beoordelingen") / "onderwerpen"
+TERUGMELDINGEN = gam_gemeen.GGM_TERUGMELDINGEN
 TERUGMELDTYPEN = ("hiaat", "definitie", "structuur", "scope", "duplicaat", "homoniem", "relatie")
 TERUGMELDSTATUS = ("open", "gemeld", "opgelost", "afgewezen")
-PA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "procesarchitectuur.yaml"
+PA_TERUGMELDINGEN = gam_gemeen.PA_TERUGMELDINGEN
 PA_TYPEN = ("indeling", "grondslag", "product", "kennismodel")
-GEMMA_TERUGMELDINGEN = Path("beoordelingen") / "terugmeldingen" / "gemma.yaml"
+GEMMA_TERUGMELDINGEN = gam_gemeen.GEMMA_TERUGMELDINGEN
 GEMMA_TYPEN = ("element", "indeling", "definitie", "relatie")
 OBJECTEN = Path("beoordelingen") / "objecten.yaml"
-BELEIDSDOMEINEN = Path("beoordelingen") / "beleidsdomeinen.yaml"
+BELEIDSDOMEINEN = gam_gemeen.BELEIDSDOMEINEN
 WIJZIGINGEN = ("hernoemd", "samengevoegd", "gesplitst")
 
 
@@ -224,7 +223,7 @@ def _controleer_bronnen(ctx: Context, bid: str, bronnen: list[str], res: Resulta
         if ctx.brontype(bron_id) is None:
             res.fouten.append(f"{bid}: bron {bron_id} staat niet in sources/index")
         elif gam_gemeen.bron_doel(ctx.wiki_root, bron_id) is None:
-            res.fouten.append(f"{bid}: bron {bron_id} heeft geen bronanalyse (of, bij een modelbron, geen tekst in sources/raw)")
+            res.fouten.append(f"{bid}: bron {bron_id} heeft geen bronduiding (of, bij een modelbron, geen tekst in sources/raw)")
 
 
 def herkomst(ctx: Context, bronnen: list[str]) -> str | None:
@@ -391,7 +390,7 @@ def _objecten(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> None
 
 
 BESTANDSPAD = re.compile(r"(?<![\w./-])(?!ARCHITECTURE\.md\b)[\w./-]+\.(?:md|ya?ml|py|json)\b|\b(?:docs|tools|beoordelingen"
-                         r"|besluiten|kennismodel|bronanalyses|sources|references|schemas|plannen|export)/[\w./-]*")
+                         r"|besluiten|kennismodel|bronduidingen|onderwerpen|modellen|elementpaginas|sources|references|schemas|plannen|export)/[\w./-]*")
 
 
 def _besluittekst(naam: str, besluit: dict, res: Resultaat) -> None:
@@ -449,7 +448,7 @@ def _beleidsdomeinen(ctx: Context, alle: dict[str, tuple[Path, dict]], uitkomste
                               f"({', '.join(sorted(gebruikt[b['beleidsdomein']]))})")
         for bron in b.get("bronnen") or []:
             if gam_gemeen.bron_doel(ctx.wiki_root, bron) is None:
-                res.fouten.append(f"{naam}: bron '{bron}' heeft geen bronanalyse")
+                res.fouten.append(f"{naam}: bron '{bron}' heeft geen bronduiding")
 
 
 def _pa_terugmeldingen(ctx: Context, uitkomsten: dict[str, dict], res: Resultaat) -> dict | None:
@@ -492,7 +491,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     alle = beoordeling.alle(wiki_root, ctx.wiki_yaml)
     validator = jsonschema.Draft202012Validator(ctx.schema)
 
-    onderwerpen = {p.stem: beoordeling.laad(p) for p in sorted((wiki_root / ONDERWERPEN).glob("*.yaml"))}
+    onderwerpen = gam_gemeen.afbakeningen(wiki_root)
     onderwerpnamen = sorted({o.get("naam", "").lower() for o in onderwerpen.values()} - {""}, key=len, reverse=True)
     uitkomsten: dict[str, dict | None] = {}
     for bid, (pad, data) in alle.items():
@@ -527,9 +526,12 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
                        if a["waarde"] == "ja" and not a.get("bronnen") and not a.get("gemma_relatie")]
         if zonder_bron:
             res.fouten.append(f"{bid}: kenmerk 'ja' zonder bron: {', '.join(zonder_bron)} (regel Elke claim een bron)")
+        if pad.parent.parent.name != gam_gemeen.thuis(data):
+            res.fouten.append(f"{bid}: het thuisonderwerp is '{gam_gemeen.thuis(data)}' (het eerste in onderwerpen) en de "
+                              f"beoordeling staat in de map van '{pad.parent.parent.name}' (regel Thuishoren)")
         for onderwerp in data["onderwerpen"]:
             if onderwerp not in onderwerpen:
-                res.fouten.append(f"{bid}: onderwerp '{onderwerp}' heeft geen {ONDERWERPEN.as_posix()}/{onderwerp}.yaml")
+                res.fouten.append(f"{bid}: onderwerp '{onderwerp}' heeft geen {gam_gemeen.afbakening_pad(onderwerp).as_posix()}")
         ggm_sterkte = (data.get("ggm") or {}).get("sterkte")
         redenen = bepaal_type.voor_te_leggen(uitkomst, ggm_sterkte)
         beslist = {"uitkomst": uitkomst, "voor_te_leggen": redenen,
@@ -594,7 +596,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             and (wiki_root / "gemma" / "gemma_parsed.json").exists():
         res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,
                                                               ctx.gemma(), gemeld)
-    res.fouten += signalen.bronanalyses(wiki_root, onderwerpen) + signalen.modelmappen(wiki_root)
+    res.fouten += signalen.bronduidingen(wiki_root, onderwerpen) + signalen.modelmappen(wiki_root)
     fouten, waarschuwingen = signalen.wettelijke_grondslag({b: nieuw.get(b, alle[b][1]) for b in alle}, elementen,
                                                            lambda i: gam_gemeen.brontype(wiki_root, i))
     res.fouten += fouten

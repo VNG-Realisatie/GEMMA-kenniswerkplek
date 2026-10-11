@@ -1,6 +1,6 @@
 ---
 id: 2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-08
 
 # Hoe kan ik mij inschrijven in de RNI?
 
-Bron: [tekst](../../../../../sources/raw/2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven.md) · [origineel (html)](../../../../../sources/raw/2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven.html) · [online](https://www.nederlandwereldwijd.nl/wonen-werken/registratie-niet-ingezetenen/inschrijven-in-de-rni/hoe-kan-ik-mij-inschrijven)
+Bron: [tekst](../../../../../../sources/raw/2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven.md) · [origineel (html)](../../../../../../sources/raw/2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven.html) · [online](https://www.nederlandwereldwijd.nl/wonen-werken/registratie-niet-ingezetenen/inschrijven-in-de-rni/hoe-kan-ik-mij-inschrijven)
 
 ## Samenvatting
 

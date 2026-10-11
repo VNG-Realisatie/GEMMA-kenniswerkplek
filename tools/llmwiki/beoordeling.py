@@ -5,7 +5,8 @@ render-script maakt er leesbare pagina's van. Het akkoord van de redacteur hoort
 (`inhoud_hash`): alles behalve `status` en `beslist`, want die zetten de scripts. Zo vraagt een andere opmaak of een
 bijgewerkt model geen nieuw akkoord, en een inhoudelijke wijziging wel.
 
-Waar de beoordelingen staan, zegt `wiki.yaml` `curation.beoordelingen` (een map, relatief aan de wiki).
+Waar de beoordelingen staan, zegt `wiki.yaml` `curation.beoordelingen`: een map of een patroon met `*`, relatief aan de
+wiki (bijvoorbeeld `onderwerpen/*/beoordelingen`). Het id van een beoordeling is de bestandsnaam en is uniek in de wiki.
 """
 from __future__ import annotations
 
@@ -21,9 +22,16 @@ from . import hashing
 SCRIPTVELDEN = ("status", "beslist")
 
 
-def map_(wiki_root: Path, wiki_yaml: dict) -> Path | None:
-    rel = (wiki_yaml.get("curation") or {}).get("beoordelingen")
-    return wiki_root / rel if rel else None
+def patroon(wiki_yaml: dict) -> str | None:
+    return (wiki_yaml.get("curation") or {}).get("beoordelingen")
+
+
+def mappen(wiki_root: Path, wiki_yaml: dict) -> list[Path]:
+    """De mappen met beoordelingen: de map of de mappen die het patroon `curation.beoordelingen` aanwijst."""
+    rel = patroon(wiki_yaml)
+    if not rel:
+        return []
+    return sorted(p for p in wiki_root.glob(rel) if p.is_dir())
 
 
 def laad(pad: Path) -> dict:
@@ -45,10 +53,13 @@ def schrijf(pad: Path, data: dict) -> None:
 
 def alle(wiki_root: Path, wiki_yaml: dict) -> dict[str, tuple[Path, dict]]:
     """id → (pad, data) voor elke beoordeling; het id is de bestandsnaam zonder extensie."""
-    map_pad = map_(wiki_root, wiki_yaml)
-    if not map_pad or not map_pad.exists():
-        return {}
-    return {p.stem: (p, laad(p)) for p in sorted(map_pad.glob("*.yaml"))}
+    uit: dict[str, tuple[Path, dict]] = {}
+    for map_pad in mappen(wiki_root, wiki_yaml):
+        for p in sorted(map_pad.glob("*.yaml")):
+            if p.stem in uit:
+                raise ValueError(f"beoordeling {p.stem} staat twee keer: {uit[p.stem][0]} en {p}")
+            uit[p.stem] = (p, laad(p))
+    return dict(sorted(uit.items()))
 
 
 def inhoud(data: dict) -> dict:

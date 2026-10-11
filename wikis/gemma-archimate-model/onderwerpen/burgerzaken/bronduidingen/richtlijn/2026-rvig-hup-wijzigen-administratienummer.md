@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-wijzigen-administratienummer
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-wijzigen-administratienummer
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Wijzigen administratienummer
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-wijzigen-administratienummer.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-wijzigen-administratienummer.html) · [online](https://www.rvig.nl/hup/wijzigen-administratienummer)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-wijzigen-administratienummer.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-wijzigen-administratienummer.html) · [online](https://www.rvig.nl/hup/wijzigen-administratienummer)
 
 ## Samenvatting
 

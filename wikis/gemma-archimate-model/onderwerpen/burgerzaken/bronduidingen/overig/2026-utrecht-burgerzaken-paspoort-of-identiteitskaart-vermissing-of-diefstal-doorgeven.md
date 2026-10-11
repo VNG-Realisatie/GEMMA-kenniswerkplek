@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Paspoort of identiteitskaart, vermissing of diefstal doorgeven (gemeente Utrecht)
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven)
 
 ## Samenvatting
 

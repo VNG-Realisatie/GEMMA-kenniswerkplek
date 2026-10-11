@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-reglement-rijbewijzen-bwbr0008074
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-reglement-rijbewijzen-bwbr0008074
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Reglement rijbewijzen
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-reglement-rijbewijzen-bwbr0008074.html) · [online](https://wetten.overheid.nl/BWBR0008074)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-reglement-rijbewijzen-bwbr0008074.html) · [online](https://wetten.overheid.nl/BWBR0008074)
 
 ## Samenvatting
 

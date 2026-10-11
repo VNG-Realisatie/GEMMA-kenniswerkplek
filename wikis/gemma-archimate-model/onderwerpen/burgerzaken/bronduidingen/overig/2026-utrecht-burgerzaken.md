@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Burgerzaken (overzicht, gemeente Utrecht)
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken.html) · [online](https://www.utrecht.nl/wonen-en-leven/burgerzaken)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken.html) · [online](https://www.utrecht.nl/wonen-en-leven/burgerzaken)
 
 ## Samenvatting
 

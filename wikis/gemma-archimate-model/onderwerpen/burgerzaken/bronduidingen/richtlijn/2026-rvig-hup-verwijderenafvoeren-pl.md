@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-verwijderenafvoeren-pl
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-verwijderenafvoeren-pl
@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Verwijderen/afvoeren PL
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-verwijderenafvoeren-pl.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-verwijderenafvoeren-pl.html) · [online](https://www.rvig.nl/hup/verwijderenafvoeren-pl)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-verwijderenafvoeren-pl.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-verwijderenafvoeren-pl.html) · [online](https://www.rvig.nl/hup/verwijderenafvoeren-pl)
 
 ## Samenvatting
 

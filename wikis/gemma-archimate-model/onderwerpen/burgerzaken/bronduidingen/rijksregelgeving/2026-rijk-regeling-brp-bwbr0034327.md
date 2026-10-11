@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-regeling-brp-bwbr0034327
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-regeling-brp-bwbr0034327
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Regeling basisregistratie personen
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-regeling-brp-bwbr0034327.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-regeling-brp-bwbr0034327.html) · [online](https://wetten.overheid.nl/BWBR0034327)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-regeling-brp-bwbr0034327.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-regeling-brp-bwbr0034327.html) · [online](https://wetten.overheid.nl/BWBR0034327)
 
 ## Samenvatting
 

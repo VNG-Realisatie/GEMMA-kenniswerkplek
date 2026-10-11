@@ -1,6 +1,6 @@
 ---
 id: 2026-vng-gemma-bedrijfsfuncties
-type: bronanalyse
+type: bronduiding
 onderwerp: kern
 bronnen:
 - 2026-vng-gemma-bedrijfsfuncties
@@ -10,7 +10,7 @@ bijgewerkt: '2026-10-10'
 
 # GEMMA Bedrijfsfuncties
 
-Bron: [tekst](../../../../../sources/raw/2026-vng-gemma-bedrijfsfuncties.md) · [origineel (html)](../../../../../sources/raw/2026-vng-gemma-bedrijfsfuncties.html) · [online](https://www.gemmaonline.nl/wiki/Bedrijfsfuncties)
+Bron: [tekst](../../../../../../sources/raw/2026-vng-gemma-bedrijfsfuncties.md) · [origineel (html)](../../../../../../sources/raw/2026-vng-gemma-bedrijfsfuncties.html) · [online](https://www.gemmaonline.nl/wiki/Bedrijfsfuncties)
 
 ## Samenvatting
 

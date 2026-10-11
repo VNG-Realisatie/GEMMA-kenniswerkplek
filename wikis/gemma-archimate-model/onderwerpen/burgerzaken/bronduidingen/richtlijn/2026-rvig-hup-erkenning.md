@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-erkenning
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-erkenning
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Erkenning
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-erkenning.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-erkenning.html) · [online](https://www.rvig.nl/hup/erkenning)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-erkenning.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-erkenning.html) · [online](https://www.rvig.nl/hup/erkenning)
 
 ## Samenvatting
 

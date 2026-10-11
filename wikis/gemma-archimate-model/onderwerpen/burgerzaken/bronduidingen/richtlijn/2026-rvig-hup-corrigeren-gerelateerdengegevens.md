@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-corrigeren-gerelateerdengegevens
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-corrigeren-gerelateerdengegevens
@@ -13,7 +13,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Corrigeren gerelateerdengegevens
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-corrigeren-gerelateerdengegevens.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-corrigeren-gerelateerdengegevens.html) · [online](https://www.rvig.nl/hup/corrigeren-gerelateerdengegevens)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-corrigeren-gerelateerdengegevens.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-corrigeren-gerelateerdengegevens.html) · [online](https://www.rvig.nl/hup/corrigeren-gerelateerdengegevens)
 
 ## Samenvatting
 

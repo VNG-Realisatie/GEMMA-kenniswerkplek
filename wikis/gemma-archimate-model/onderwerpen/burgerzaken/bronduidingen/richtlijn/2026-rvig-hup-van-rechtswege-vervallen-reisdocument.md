@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Van rechtswege vervallen reisdocument (HUP, RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.html) · [online](https://www.rvig.nl/hup/van-rechtswege-vervallen-reisdocument)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.html) · [online](https://www.rvig.nl/hup/van-rechtswege-vervallen-reisdocument)
 
 ## Samenvatting
 

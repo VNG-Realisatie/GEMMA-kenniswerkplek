@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-algemeen
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-algemeen
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Algemeen
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-algemeen.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-algemeen.html) · [online](https://www.rvig.nl/hup/algemeen)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-algemeen.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-algemeen.html) · [online](https://www.rvig.nl/hup/algemeen)
 
 ## Samenvatting
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-nederlands-kiesrecht
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-nederlands-kiesrecht
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # HUP Nederlands kiesrecht (RvIG)
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-nederlands-kiesrecht.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-nederlands-kiesrecht.html) · [online](https://www.rvig.nl/hup/nederlands-kiesrecht)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-nederlands-kiesrecht.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-nederlands-kiesrecht.html) · [online](https://www.rvig.nl/hup/nederlands-kiesrecht)
 
 ## Samenvatting
 

@@ -20,13 +20,13 @@ De stappen, in deze volgorde; bij het beoordelen gebeuren ze vaak tegelijk, uit 
 1. **Grondslag:** *is grondslag voor* vanuit een beleidskader (regel Wettelijke grondslag).
 2. **Kernrelatie** van het type: de relatie die het kenmerk waarmaakt. Een kenmerk `ja` zonder zo'n relatie, bij het element of bij wat eronder ligt (regel Beslistabel beslist), geeft een signaal.
 3. **Indelingsrelaties:** levensloopproces → aggregatie → bedrijfsproces, de functieketen, het kernobject.
-4. **Overige relaties** uit de bronanalyse: per partij wat zij houdt, beheert, uitvoert of vervult; toegang met een handeling of verantwoordelijkheid.
+4. **Overige relaties** uit de bronduiding: per partij wat zij houdt, beheert, uitvoert of vervult; toegang met een handeling of verantwoordelijkheid.
 5. **GGM-match van de relatie**, alleen bij bedrijfsobjecten, data-objecten en beleidsdomeinen (zie `ggm-match.md`).
 6. **GEMMA:** zonder match gaat de relatie als nieuw mee in de export.
 
 ## Kandidaten
 
-`uv run python tools/relaties.py voorstel <id>` geeft de relaties uit de relatietabellen van de bronanalyses, met hun match in het GGM, als YAML voor `relaties:`; inkomende kandidaten staan als commentaar (die horen in de beoordeling van het andere element). Kies, geef een herkenbare naam (beleid levert de taal), laat puur technische relaties weg, en controleer richting en kardinaliteit: in het GGM-export zijn die niet altijd eenduidig.
+`uv run python tools/relaties.py voorstel <id>` geeft de relaties uit de relatietabellen van de bronduidingen, met hun match in het GGM, als YAML voor `relaties:`; inkomende kandidaten staan als commentaar (die horen in de beoordeling van het andere element). Kies, geef een herkenbare naam (beleid levert de taal), laat puur technische relaties weg, en controleer richting en kardinaliteit: in het GGM-export zijn die niet altijd eenduidig.
 
 Het GGM is matchdoel, geen bron: een GGM-relatie dient alleen om een gevonden relatie te matchen. Bij het zoeken van de match past de tool deze regels toe:
 
@@ -47,7 +47,7 @@ Een gevonden relatie tussen dezelfde elementen als een GGM-relatie krijgt die al
 
 ## Uit de bronnen
 
-De bronanalyse noemt in `## Relaties` de verbanden tussen begrippen zoals de bron ze formuleert (`| Van | Werkwoord | Naar | Vindplaats |`). De tool lost de begrippen op via de beoordelingen (naam of synoniem); is een kant een eigenschap, onderdeel of specialisatie zonder pagina, dan wordt de relatie opgetild naar het genoemde begrip; is een kant geen element, dan vervalt ze (`tools/relaties.py uit-bronnen <onderwerp>` toont welke en waarom). Leg vervallen relaties die wel belangrijk lijken voor aan de redacteur.
+De bronduiding noemt in `## Relaties` de verbanden tussen begrippen zoals de bron ze formuleert (`| Van | Werkwoord | Naar | Vindplaats |`). De tool lost de begrippen op via de beoordelingen (naam of synoniem); is een kant een eigenschap, onderdeel of specialisatie zonder pagina, dan wordt de relatie opgetild naar het genoemde begrip; is een kant geen element, dan vervalt ze (`tools/relaties.py uit-bronnen <onderwerp>` toont welke en waarom). Leg vervallen relaties die wel belangrijk lijken voor aan de redacteur.
 
 De typen van beide elementen bepalen de soort relatie, het werkwoord de richting en de variant:
 

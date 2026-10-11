@@ -1,6 +1,6 @@
 ---
 id: 2023-rvig-circulaire-adresonderzoek-brp
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Circulaire adresonderzoek BRP
 
-Bron: [tekst](../../../../../sources/raw/2023-rvig-circulaire-adresonderzoek-brp.md) · [origineel (pdf)](../../../../../sources/raw/2023-rvig-circulaire-adresonderzoek-brp.pdf) · [online](https://www.rvig.nl/sites/default/files/2023-05/Circulaire%20adresonderzoek%20BRP.pdf)
+Bron: [tekst](../../../../../../sources/raw/2023-rvig-circulaire-adresonderzoek-brp.md) · [origineel (pdf)](../../../../../../sources/raw/2023-rvig-circulaire-adresonderzoek-brp.pdf) · [online](https://www.rvig.nl/sites/default/files/2023-05/Circulaire%20adresonderzoek%20BRP.pdf)
 
 ## Samenvatting
 

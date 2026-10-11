@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-07
 
 # Wet justitiële en strafvorderlijke gegevens
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.html) · [online](https://wetten.overheid.nl/BWBR0014194)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.html) · [online](https://wetten.overheid.nl/BWBR0014194)
 
 ## Samenvatting
 

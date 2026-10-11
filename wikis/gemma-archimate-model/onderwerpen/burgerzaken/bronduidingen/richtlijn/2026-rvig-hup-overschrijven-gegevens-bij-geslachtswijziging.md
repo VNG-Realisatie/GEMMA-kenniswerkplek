@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Overschrijven gegevens bij geslachtswijziging
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging.html) · [online](https://www.rvig.nl/hup/overschrijven-gegevens-bij-geslachtswijziging)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging.html) · [online](https://www.rvig.nl/hup/overschrijven-gegevens-bij-geslachtswijziging)
 
 ## Samenvatting
 

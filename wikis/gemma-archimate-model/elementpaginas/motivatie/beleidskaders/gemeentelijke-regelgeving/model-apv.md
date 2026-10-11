@@ -22,7 +22,7 @@ bronnen:
 
 # Model-APV
 
-<!-- Gegenereerd door tools/render.py uit beoordelingen/begrippen/model-apv.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit de beoordeling model-apv.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
 **Status: goedgekeurd** door de redacteur.
 
@@ -40,9 +40,9 @@ Het model is een basistekst: de gemeente vult bepalingen in, kiest tussen varian
 
 ### Per onderwerp
 
-#### [Lijkbezorging](../../../begrippen/lijkbezorging.md)
+#### [Lijkbezorging](../../../../onderwerpen/lijkbezorging/begrippen.md)
 
-Lijkbezorging gebruikt alleen afdeling 9, Verstrooiing (art. 5:35–5:37): het verbod op incidentele asverstrooiing op bepaalde plaatsen en de ontheffing door het college op verzoek van de nabestaande die zorgdraagt voor de asbus (art. 5:36 lid 3). Gemeenten kiezen tussen twee varianten of laten de afdeling weg ([2025-groningen-algemene-plaatselijke-verordening](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md), art. 5:27).
+Lijkbezorging gebruikt alleen afdeling 9, Verstrooiing (art. 5:35–5:37): het verbod op incidentele asverstrooiing op bepaalde plaatsen en de ontheffing door het college op verzoek van de nabestaande die zorgdraagt voor de asbus (art. 5:36 lid 3). Gemeenten kiezen tussen twee varianten of laten de afdeling weg ([2025-groningen-algemene-plaatselijke-verordening](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md), art. 5:27).
 
 ### Synoniemen
 
@@ -67,16 +67,16 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de VNG publiceert de Model-APV als modelverordening; gemeenten nemen haar over en passen haar aan, en de UPL noemt haar als grondslag (nr. 32). [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, model voor de algemene plaatselijke verordening die de raad vaststelt (aanhef: Gemeentewet art. 149 e.v.). [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als modelverordening, niet als onderdeel van een ander begrip. [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, regelt de huishouding van de gemeente over veel beleidsdomeinen: openbare orde, evenementen, horeca, standplaatsen, asverstrooiing (hoofdstuk 1–6). [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde VNG-modelverordening als geheel. [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
-| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, VNG-modelverordening, geen regeling van één gemeente. [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
-| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, het model geldt; de openbare kopie is de versie van november 2023. De wijzigingen van zomer 2024 en zomer 2026 raken art. 5:35–5:37 niet. Een volledige herziening is aangekondigd voor begin 2027 (Toelichting). [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, art. 5:36 lid 3 (ontheffing van het verbod op incidentele asverstrooiing): grondslag van de dienst Asverstrooiing, die de UPL zo noemt (nr. 32). [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki. [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
-| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, regelt onderwerpen uit veel beleidsdomeinen en komt dus in veel onderwerpen voor (hoofdstuk 2–5). [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de VNG publiceert de Model-APV als modelverordening; gemeenten nemen haar over en passen haar aan, en de UPL noemt haar als grondslag (nr. 32). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, model voor de algemene plaatselijke verordening die de raad vaststelt (aanhef: Gemeentewet art. 149 e.v.). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als modelverordening, niet als onderdeel van een ander begrip. [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, regelt de huishouding van de gemeente over veel beleidsdomeinen: openbare orde, evenementen, horeca, standplaatsen, asverstrooiing (hoofdstuk 1–6). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
+| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, verordening of landelijke richtlijn als geheel, en niet één artikel of een soort regeling? | Ja, een concreet benoemde VNG-modelverordening als geheel. [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
+| **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling), een landelijke richtlijn (uitvoeringsvoorschrift, handleiding of circulaire van een landelijke organisatie) of een VNG-model van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, VNG-modelverordening, geen regeling van één gemeente. [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
+| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, het model geldt; de openbare kopie is de versie van november 2023. De wijzigingen van zomer 2024 en zomer 2026 raken art. 5:35–5:37 niet. Een volledige herziening is aangekondigd voor begin 2027 (Toelichting). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of schrijft de richtlijn voor hoe zij die uitvoert, in een aanwijsbaar proces, dienst of product? | Ja, art. 5:36 lid 3 (ontheffing van het verbod op incidentele asverstrooiing): grondslag van de dienst Asverstrooiing, die de UPL zo noemt (nr. 32). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki. [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
+| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, regelt onderwerpen uit veel beleidsdomeinen en komt dus in veel onderwerpen voor (hoofdstuk 2–5). [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) |
 
 ### Relaties
 
@@ -84,8 +84,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Model-APV | is grondslag voor *associatie (gericht)* | [Asverstrooiing](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md) | [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 5:36 lid 3; UPL nr. 32) |
-| Model-APV | is model voor (algemene plaatselijke verordening) *associatie (gericht)* | [Regeling](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) | [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) (aanhef; leeswijzer) |
+| Model-APV | is grondslag voor *associatie (gericht)* | [Asverstrooiing](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md) | [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md), [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 5:36 lid 3; UPL nr. 32) |
+| Model-APV | is model voor (algemene plaatselijke verordening) *associatie (gericht)* | [Regeling](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) | [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) (aanhef; leeswijzer) |
 
 ## Herkomst
 
@@ -93,8 +93,8 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Korte titel | Bron |
 |---|---|
-| [Model-APV](../../../bronanalyses/lijkbezorging/gemeentelijke-regelgeving/2023-vng-model-apv.md) | Model Algemene plaatselijke verordening per 1 januari 2024 (VNG, november 2023) |
-| [UPL-lijst extern](../../../bronanalyses/burgerzaken/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Model-APV](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) | Model Algemene plaatselijke verordening per 1 januari 2024 (VNG, november 2023) |
+| [UPL-lijst extern](../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
 
 ### Afstemming met GEMMA
 

@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Adoptie, kind inschrijven
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/adoptie-kind-inschrijven)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-adoptie-kind-inschrijven.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/adoptie-kind-inschrijven)
 
 ## Samenvatting
 

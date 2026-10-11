@@ -1,6 +1,6 @@
 ---
 id: 2026-utrecht-burgerzaken-trouwen-in-utrecht
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-utrecht-burgerzaken-trouwen-in-utrecht
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Trouwen in Utrecht
 
-Bron: [tekst](../../../../../sources/raw/2026-utrecht-burgerzaken-trouwen-in-utrecht.md) · [origineel (html)](../../../../../sources/raw/2026-utrecht-burgerzaken-trouwen-in-utrecht.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/trouwen-in-utrecht)
+Bron: [tekst](../../../../../../sources/raw/2026-utrecht-burgerzaken-trouwen-in-utrecht.md) · [origineel (html)](../../../../../../sources/raw/2026-utrecht-burgerzaken-trouwen-in-utrecht.html) · [online](https://loket.digitaal.utrecht.nl/nl/producten/trouwen-in-utrecht)
 
 ## Samenvatting
 

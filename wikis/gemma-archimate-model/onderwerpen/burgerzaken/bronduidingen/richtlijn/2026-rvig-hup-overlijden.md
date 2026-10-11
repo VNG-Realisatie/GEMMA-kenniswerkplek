@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-overlijden
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-overlijden
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Overlijden
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-overlijden.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-overlijden.html) · [online](https://www.rvig.nl/hup/overlijden)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-overlijden.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-overlijden.html) · [online](https://www.rvig.nl/hup/overlijden)
 
 ## Samenvatting
 

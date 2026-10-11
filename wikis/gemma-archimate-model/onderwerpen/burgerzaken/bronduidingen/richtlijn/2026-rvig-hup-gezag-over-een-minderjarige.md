@@ -1,6 +1,6 @@
 ---
 id: 2026-rvig-hup-gezag-over-een-minderjarige
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rvig-hup-gezag-over-een-minderjarige
@@ -10,7 +10,7 @@ bijgewerkt: 2026-10-06
 
 # HUP BRP: Gezag over een minderjarige
 
-Bron: [tekst](../../../../../sources/raw/2026-rvig-hup-gezag-over-een-minderjarige.md) · [origineel (html)](../../../../../sources/raw/2026-rvig-hup-gezag-over-een-minderjarige.html) · [online](https://www.rvig.nl/hup/gezag-over-een-minderjarige)
+Bron: [tekst](../../../../../../sources/raw/2026-rvig-hup-gezag-over-een-minderjarige.md) · [origineel (html)](../../../../../../sources/raw/2026-rvig-hup-gezag-over-een-minderjarige.html) · [online](https://www.rvig.nl/hup/gezag-over-een-minderjarige)
 
 ## Samenvatting
 

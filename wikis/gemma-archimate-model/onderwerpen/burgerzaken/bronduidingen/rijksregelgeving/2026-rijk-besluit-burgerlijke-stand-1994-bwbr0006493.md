@@ -1,6 +1,6 @@
 ---
 id: 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-type: bronanalyse
+type: bronduiding
 onderwerp: burgerzaken
 bronnen:
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-06
 
 # Besluit burgerlijke stand 1994
 
-Bron: [tekst](../../../../../sources/raw/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) · [origineel (html)](../../../../../sources/raw/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.html) · [online](https://wetten.overheid.nl/BWBR0006493)
+Bron: [tekst](../../../../../../sources/raw/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) · [origineel (html)](../../../../../../sources/raw/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.html) · [online](https://wetten.overheid.nl/BWBR0006493)
 
 ## Samenvatting
 
