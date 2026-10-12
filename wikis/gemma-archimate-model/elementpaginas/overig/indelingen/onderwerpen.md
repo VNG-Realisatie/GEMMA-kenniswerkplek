@@ -50,7 +50,11 @@ Status: in-behandeling. Overzicht: [overzicht](../../../onderwerpen/participatie
 
 Status: in-behandeling. Overzicht: [overzicht](../../../onderwerpen/besluitvorming/overzicht.md).
 
-- **bedrijfsobject** (4): [Beschikking](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md), [Besluit](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md), [Regeling](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md), [Vergunning](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md)
+- **bedrijfsobject** (7): [Aanvraag](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/aanvraag.md), [Beleidsnota](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsnota.md), [Beleidsregel](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsregel.md), [Beschikking](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md), [Besluit](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md), [Regeling](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md), [Vergunning](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md)
+- **bedrijfsproces** (1): [Uitvoeren uniforme openbare voorbereidingsprocedure](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md)
+- **beleidskader** (1): [Algemene wet bestuursrecht](../../motivatie/beleidskaders/rijksregelgeving/algemene-wet-bestuursrecht.md)
+- **dienst** (1): [Zienswijze](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/zienswijze.md)
+- **rol** (1): [Belanghebbende](../../bedrijfsarchitectuur/rollen/belanghebbende.md)
 
 ### [Bestuur en organisatie](../../../onderwerpen/bestuur-en-organisatie/begrippen.md)
 

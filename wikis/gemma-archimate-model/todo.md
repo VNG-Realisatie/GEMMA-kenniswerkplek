@@ -15,6 +15,7 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 ## Indelingen (ARCHITECTURE.md, sectie 4.4)
 
+- **Functie-indeling naar domein: welke elementtypen en op welk niveau**: bepaal welke elementtypen volgens de Functie-indeling worden ingedeeld (nu functies, producten en diensten; een dienst hangt onder één bovenliggende functie), en op welk niveau van de functiehiërarchie: een duidelijk niveau, de bedrijfsfunctie of hoger, nooit een subfunctie. Indelen is alles of niks, maar de huidige plekken komen inhoudelijk willekeurig over: zo hangt Uitvaart vervroegen of uitstellen onder Vergunningbeheer publieksdiensten, een subfunctie van Producten- en dienstenrealisatie publieksdiensten. Tot dit is beslist, krijgt een nieuwe dienst geen functie als die niet eenduidig volgt, en blijft de waarschuwing "hangt onder geen functie" staan (Zienswijze, besluit 2026-10-11).
 - **Definitie van Ketenpartner**: nu "verantwoordelijkheid van een andere organisatie", terwijl de rol wordt vervuld door personen (Arts als behandelende arts, Officier van justitie). Definitie verbreden naar een andere partij, of de organisatie (openbaar ministerie, zorgaanbieder) als actor nemen; meenemen in het voorstel aan het GEMMA-team over de definitie van de rol Ketenpartner.
 - **Verlengen en overschrijven van het grafrecht**: nu onderdelen van Grafrecht (eigen identiteit nee). Mogelijk eigen bedrijfsprocessen onder het levensloopproces Beheren grafrechten (eigen besluit, Wlb art. 28 lid 1–3; Groningen art. 16–20). De UPL kent er geen eigen product voor (beoordeling UPL-producten).
 - **Kennismodel-aanvullingen als GEMMA-terugmelding**: de wiki gebruikt elementen en relaties die Over GEMMA niet kent (`export/rapport.md`, Kennismodel-wiki): Afspraak met toegang door bedrijfsproces en rol, aggregatie van Dienst door Bedrijfsfunctie (76×), flow tussen bedrijfsprocessen (7×) en triggering tussen gebeurtenissen (5×). Bepaal of ze in het GEMMA-model zelf voorkomen en meld de ontbrekende bij de procesarchitectuur-terugmeldingen over het kennismodel (5 en 6).
@@ -36,15 +37,10 @@ De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde p
 
 ## Thematisch gedeelde onderwerpen: Besluitvorming, Bestuur en organisatie, Heffingen en betalingen
 
-- **Besluitvorming** inhoudelijk beoordelen, met eigen bronnen: de Algemene wet bestuursrecht (nu een verwijzing), Belanghebbende, Aanvraag, Uniforme openbare voorbereidingsprocedure, Bestuursorgaan en Beleidsnota (met Participatiebeleid als variant). De elementen Besluit, Beschikking, Vergunning en Regeling staan er al, zonder herbeoordeling.
+- **Besluitvorming, plak 2**: de overige UPL-diensten met de Awb als grondslag beoordelen: bezwaar (art. 7:1), beroep (art. 8:1), klacht (art. 9:1), bekendmaking (art. 3:40), dwangsom bij niet tijdig beslissen (art. 4:17), nadeelcompensatie (art. 4:126) en de UPL-dienst beschikking (art. 1:3, naast het bedrijfsobject Beschikking); bepalen waar subsidie (art. 4:21), bestuurlijke boete (art. 5:40), spoedeisende bestuursdwang (art. 5:31) en belastingaanslag bezwaar (art. 7:1) thuishoren. Lees daarvoor de hoofdstukken 3 (bekendmaking), 4 (dwangsom, nadeelcompensatie), 6 tot en met 9 van de Awb en vul de bronduiding aan. Plak 1 (Awb als beleidskader, Belanghebbende, Aanvraag, Uitvoeren uniforme openbare voorbereidingsprocedure met Zienswijze, Bestuursorgaan als synoniem van Beslisser, Beleidsnota, Beleidsregel) is afgerond.
 - **Bestuur en organisatie**: de Gemeentewet (nu een verwijzing) als bron en mogelijk beleidskader.
-- **Bestuursorgaan**: zolang het geen element is, staat de toewijzing van inspraak aan het college en de gemeenteraad niet in het model.
 - **Heffen van rechten** bij het onderwerp Heffingen en betalingen: het proces dat de heffingsverordening raadpleegt voor de tarieven bij uitgifte en onderhoud (Groningen art. 8, 23, 24). Dat lost de signalen *wordt bewerkt* zonder toegang bij Heffingsverordening en Regeling op, en geeft de relatie *regelt het recht voor* van Heffingsverordening naar Grafonderhoud (nu buiten het kennismodel) een plek via dat proces.
 - **VNG Modelverordening lijkbezorgingsrechten** (ledenbrief 2011, met kostenonderbouwing) als bron en mogelijk beleidskader opnemen bij Heffingen en betalingen. De link op de VNG-pagina `https://vng.nl/artikelen/modelverordeningen-wet-op-de-lijkbezorging` geeft een 404; zoek een openbare kopie.
-
-## Onderwerpen als één model
-
-- **Belanghebbende** beoordelen in Besluitvorming (Awb art. 1:2; generiek). Nu nog een verwijzing in Lijkbezorging; vraagt een volledige beoordeling met bron en GGM-terugmelding 9.
 
 ## Verwijzingen vanuit Burgerzaken (onderwerp afgerond op 2026-10-07)
 

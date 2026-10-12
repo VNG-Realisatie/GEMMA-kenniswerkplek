@@ -6,6 +6,7 @@ Het GEMMA-model (AMEFF-export of Archi-bronbestand) is een matchdoel: hoe staat 
 2. Kies op betekenis en leg vast in `gemma`: `id` (bij een match), `sterkte` (zelfde schaal als bij het GGM) en `onderbouwing`: wat dit element verandert ten opzichte van GEMMA (nieuwe definitie, ander type, splitsing of samenvoeging). Geen GEMMA-element: `sterkte: geen` en in de onderbouwing waarom het nieuw is.
 3. Een match met `id` is een koppeling: de export naar Archi geeft het element dat GEMMA-id en overschrijft daarmee naam en definitie van het GEMMA-element. Een `zwak` of `partieel` match leg je daarom altijd voor (regel Zwakke match voorleggen); is het niet hetzelfde begrip, dan `sterkte: geen` en het GEMMA-element in de onderbouwing.
 4. De letterlijke `gemma_*`-velden haalt `tools/beslissen.py` op. Wijkt de GEMMA-naam af van de naam: neem haar op in `synoniemen` met context "GEMMA".
+5. Staat een begrip meer dan eens als GGM-bedrijfsobject in GEMMA, omdat GEMMA de duplicaten van het GGM als losse objecten overneemt, koppel dan het object van de primaire GGM-entiteit (`ggm-match.md`, Duplicaten en homoniemen); de andere blijven ongewijzigd in GEMMA. Dat staat in één GEMMA-terugmelding voor alle duplicaten; meld het niet per geval. Een naamgenoot die een ander begrip is (een homoniem, zoals de interne Aanvraag van ICT), blijft ongekoppeld.
 
 De groepering op beleidsdomein is in GEMMA een aggregatie vanuit een Grouping; die leg je niet vast als relatie.
 

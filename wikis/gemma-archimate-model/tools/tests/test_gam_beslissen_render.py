@@ -564,6 +564,8 @@ def test_signalen_voor_de_indeling():
         "deel": el("bedrijfsproces", procesniveau="bedrijfsproces"),
         "wees": el("bedrijfsproces", procesniveau="bedrijfsproces"),
         "alleen-soort": el("bedrijfsproces", procesniveau="bedrijfsproces"),
+        "procedure": el("bedrijfsproces", procesniveau="bedrijfsproces"),
+        "besluit": el("bedrijfsobject", objectniveau="generiek"),
         "keten": el("bedrijfsinteractie"),
         "lege-keten": el("bedrijfsinteractie"),
         "onderhoud": el("dienst"),
@@ -576,6 +578,7 @@ def test_signalen_voor_de_indeling():
     rel = lambda soort, naar, naam=None: {"soort": soort, "naar": naar, "naam": naam}  # noqa: E731
     alle = {b: {"onderwerpen": ["lijkbezorging" if b != "elders" else "burgerzaken"]} for b in elementen}
     alle["beheren"]["relaties"] = [rel("aggregatie", "deel")]
+    alle["procedure"]["kernobject"] = "besluit"
     alle["cluster"]["relaties"] = [rel("aggregatie", "deel"), rel("aggregatie", "alleen-soort")]
     alle["deel"]["relaties"] = [rel("realisatie", "onderhoud"), rel("bediening", "keten")]
     alle["wet-dienst"]["relaties"] = [rel("associatie (gericht)", "onderhoud", "is grondslag voor")]
@@ -586,6 +589,7 @@ def test_signalen_voor_de_indeling():
     assert "wees: hangt onder geen levensloopproces" in tekst
     assert "alleen-soort: hangt onder geen levensloopproces" in tekst  # een cluster naar soort werk telt niet
     assert "deel: hangt onder geen" not in tekst and "beheren: hangt" not in tekst
+    assert "procedure: hangt onder geen" not in tekst  # generiek bedrijfsproces: kernobject is een generiek object
     assert "lege-keten: geen bedrijfsproces bedient" in tekst and "keten: geen bedrijfsproces" not in tekst.replace("lege-keten", "")
     assert "wet: geen dienst of product heeft dit beleidskader" in tekst
     assert "wet-dienst: geen dienst" not in tekst  # grondslag voor een dienst volstaat

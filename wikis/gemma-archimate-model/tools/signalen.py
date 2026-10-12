@@ -80,6 +80,14 @@ def per_begrip(bid: str, data: dict, uitkomst: dict, onderwerpnamen: list[str], 
 STRUCTUREEL = ("voorzitter", "lid van", "deel van", "onderdeel", "omvat", "bevat", "bestaat uit", "maakt deel uit")
 
 
+def generiek_proces(alle: dict[str, dict], elementen: dict[str, dict], bid: str) -> bool:
+    """Een generiek bedrijfsproces: zijn kernobject is een generiek object, dat geen levensloopproces heeft. Het hangt,
+    net als een levensloopproces, onder het beleidsdomein van zijn kernobject (Beleidsdomeinindeling)."""
+    kern = alle.get(bid, {}).get("kernobject")
+    return (elementen.get(bid, {}).get("procesniveau") == "bedrijfsproces"
+            and (elementen.get(kern) or {}).get("objectniveau") == "generiek")
+
+
 def indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[tuple[str, dict]],
              gemeld: set[str] = frozenset()) -> list[str]:
     """Signalen bij stap 7 (indeling): de plaats in de procesindeling naar kernobject, afwijkingen van het kennismodel.
@@ -93,7 +101,8 @@ def indeling(alle: dict[str, dict], elementen: dict[str, dict], relaties: list[t
             ouders.setdefault(r["naar"], []).append(van)
     for bid, n in sorted(niveau.items()):
         boven = [o for o in ouders.get(bid, []) if o in niveau]
-        if n == "bedrijfsproces" and not any(niveau[o] == "levensloopproces" for o in boven):
+        if n == "bedrijfsproces" and not any(niveau[o] == "levensloopproces" for o in boven) \
+                and not generiek_proces(alle, elementen, bid):
             w.append(f"{bid}: hangt onder geen levensloopproces: aggregatie vanaf het levensloopproces van het "
                      "kernobject ontbreekt (procesindeling naar kernobject)")
         if len(boven) > 2:

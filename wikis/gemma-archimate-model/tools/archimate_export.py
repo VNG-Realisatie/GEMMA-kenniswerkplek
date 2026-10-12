@@ -602,9 +602,9 @@ def _kwaliteitsdoelen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict,
             uit.kwaliteitsdoelen.append(f"{data['begrip']} → {g['naam']} ({k['sterkte']})")
 
 
-# De paginatypen die altijd in een indeling vallen (kennismodel). Een levensloopproces en een bedrijfsinteractie vallen
-# ook in de Beleidsdomeinindeling, onder het beleidsdomein van hun kernobject: daarboven staat in de Procesindeling naar
-# kernobject niets.
+# De paginatypen die altijd in een indeling vallen (kennismodel). Een levensloopproces, een generiek bedrijfsproces (met
+# een generiek object als kernobject) en een bedrijfsinteractie vallen ook in de Beleidsdomeinindeling, onder het
+# beleidsdomein van hun kernobject: daarboven staat in de Procesindeling naar kernobject niets.
 BELEIDSDOMEIN_TYPEN = km.paginatypen_in("Beleidsdomeinindeling")
 DOMEIN_TYPEN = km.paginatypen_in("Functie-indeling naar domein")
 DOELGROEP_TYPEN = km.paginatypen_in("Doelgroepindeling")
@@ -636,8 +636,11 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
         paginatype = data["beslist"]["uitkomst"].get("paginatype")
         element = ids[bid]
         beleidsdomein = data.get("beleidsdomein")
-        bovenaan = paginatype == "bedrijfsinteractie" or (
-            paginatype == "bedrijfsproces" and data["beslist"]["uitkomst"].get("procesniveau") == "levensloopproces")
+        procesniveau = data["beslist"]["uitkomst"].get("procesniveau")
+        kern = (gekozen.get(data.get("kernobject")) or {}).get("beslist", {}).get("uitkomst", {})
+        bovenaan = paginatype == "bedrijfsinteractie" or (paginatype == "bedrijfsproces" and (
+            procesniveau == "levensloopproces"
+            or (procesniveau == "bedrijfsproces" and kern.get("objectniveau") == "generiek")))
         if (paginatype in BELEIDSDOMEIN_TYPEN or bovenaan) and beleidsdomein:
             groep = _vind_groepering(gemma_data, "Beleidsdomein", beleidsdomein)
             if groep is None:
@@ -944,7 +947,8 @@ def _indeling_van(obj: ET.Element) -> str | None:
 def _zonder_plaats(b: Bouwer, gekozen: dict, ids: dict) -> list[str]:
     """De elementen die in geen enkele indeling staan (alles wordt ingedeeld, geen wezen). Een
     element staat in een indeling als een aggregatie met een indeling naar haar wijst of als zij een specialisatie met een
-    indeling heeft. Een levensloopproces en een bedrijfsinteractie staan in de Beleidsdomeinindeling."""
+    indeling heeft. Een levensloopproces, een generiek bedrijfsproces en een bedrijfsinteractie staan in de
+    Beleidsdomeinindeling."""
     geplaatst = set()
     for m in b.wortel.values():
         for r in _alle_objecten(m):

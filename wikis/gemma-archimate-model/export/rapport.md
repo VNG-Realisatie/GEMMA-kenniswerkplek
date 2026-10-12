@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: b4f7dc9acfa0d64380db92c83035536ae278dc55bf4965eb027710afad976071 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: b4c204cee734833ea1aa2e99298712c296031ba035ac7c517fd2be879491ba2d -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-11T18:46:59. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 24 gekoppeld aan GEMMA, 220 nieuw. Relaties: 15 gekoppeld, 952 nieuw, 10 overgeslagen. Indelingen: 189 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-12T08:14:58. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 26 gekoppeld aan GEMMA, 225 nieuw. Relaties: 15 gekoppeld, 970 nieuw, 11 overgeslagen. Indelingen: 197 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
 
 ## Dekking van de overgenomen indelingen
 
@@ -76,7 +76,7 @@ Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMM
 - beleidskader associatie bedrijfsobject: 5×
 - beleidskader associatie bedrijfsproces: 55×
 - beleidskader associatie beleidskader: 7×
-- beleidskader associatie dienst: 79×
+- beleidskader associatie dienst: 80×
 - beleidskader associatie gebeurtenis: 3×
 - beleidskader associatie rol: 5×
 - gebeurtenis triggering bedrijfsinteractie: 1×
@@ -88,7 +88,9 @@ Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMM
 
 | Begrip | Naam in GEMMA | Definitie gewijzigd |
 |---|---|---|
+| Aanvraag | Aanvraag | ja |
 | Adviseur | Adviseur | ja |
+| Belanghebbende | Belanghebbende | ja |
 | Beschikking | Beschikking | ja |
 | Beslisser | Beslisser | ja |
 | Besluit | Besluit | ja |
@@ -183,6 +185,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Afgeven laissez-passer
 - Afgeven verklaring omtrent het gedrag
 - Akte van de burgerlijke stand
+- Algemene wet bestuursrecht
 - Ambtenaar burgerlijke stand aanvragen
 - Ambtenaar van de burgerlijke stand
 - Arts
@@ -211,6 +214,8 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Beheren reisdocumenten
 - Beheren rijbewijzen
 - Beheren stempassen
+- Beleidsnota
+- Beleidsregel
 - Besluit basisregistratie personen
 - Besluit burgerlijke stand 1994
 - Besluit op de lijkbezorging
@@ -343,6 +348,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Uitvaartondernemer
 - Uitvoeren adresonderzoek
 - Uitvoeren lijkbezorging
+- Uitvoeren uniforme openbare voorbereidingsprocedure
 - Urn
 - Vaststelling ouderschap
 - Vergunning
@@ -394,6 +400,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Wijzigen identificatienummers
 - Wijzigen naamgebruik
 - Zakenpaspoort
+- Zienswijze
 
 ## Overgeslagen relaties
 
@@ -407,3 +414,4 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Model-APV → asverstrooiing (associatie (gericht)): het doel gaat niet mee in deze export
 - Model-beheersverordening begraafplaatsen → gedenkteken-plaatsingsvergunning (associatie (gericht)): het doel gaat niet mee in deze export
 - Model-beheersverordening begraafplaatsen → grafonderhoud (associatie (gericht)): het doel gaat niet mee in deze export
+- Zienswijze: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)

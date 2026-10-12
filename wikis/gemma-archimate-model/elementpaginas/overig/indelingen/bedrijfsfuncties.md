@@ -367,3 +367,7 @@ Functies: 296; met inhoud van de wiki: 17.
   - Vordering sociaal domein
     - Invordering uitkering
     - Verhaal
+
+## Zonder plek in de hiërarchie
+
+Functies en diensten die nog niet onder een bovenliggende functie hangen (`gemma_functie` of een aggregatie): [Zienswijze](../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/zienswijze.md).

@@ -213,6 +213,10 @@ kenmerken:
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 beschrijving:
 - 'Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit 2026-10-01).'
+- 'De Algemene wet bestuursrecht noemt dit het bestuursorgaan: een orgaan van een publiekrechtelijke rechtspersoon, of een ander persoon of college met openbaar gezag (Awb art. 1:1). Een besluit is een beslissing van een bestuursorgaan (art. 1:3).'
+synoniemen:
+- naam: Bestuursorgaan
+  context: wet
 besluiten:
 - datum: '2026-10-01'
   besluit: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
@@ -226,11 +230,28 @@ besluiten:
 - datum: '2026-10-10'
   besluit: Thuis in Bestuur en organisatie, bij de organen die de rol vervullen (regel Thuishoren).
   gevolg: verwerkt
+- datum: '2026-10-12'
+  besluit: Bestuursorgaan (Awb art. 1:1) is een synoniem met context wet; Beslisser wordt toegewezen aan Uitvoeren uniforme openbare voorbereidingsprocedure en gebruikt in Besluitvorming.
+  gevolg: verwerkt
 gemma:
   id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
   sterkte: sterk
   onderbouwing: 'GEMMA-rol Beslisser uit de procesbouwstenen; zelfde begrip, in GEMMA zonder definitie. Nieuw: een definitie.'
 relaties:
+- soort: toegang (houder)
+  naar: beleidsregel
+  naam: houder
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:81
+- soort: toewijzing
+  naar: uitvoeren-uniforme-openbare-voorbereidingsprocedure
+  naam: legt het ontwerp ter inzage en neemt het besluit
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 3:11, 3:12, 3:17, 3:18
 - soort: toewijzing
   naar: verlenen-grafrecht
   naam: beslist over
@@ -441,6 +462,7 @@ onderwerpen:
 - bestuur-en-organisatie
 - lijkbezorging
 - burgerzaken
+- besluitvorming
 doelgroep: gemeente
 per_onderwerp:
   burgerzaken:
@@ -448,6 +470,8 @@ per_onderwerp:
   - 'Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdocument en verklaart het vervallen (Paspoortwet art. 40, 44). Over het rijbewijs beslist de burgemeester: hij besluit tot afgifte of weigering (Wegenverkeerswet 1994 art. 116, 118a; Reglement rijbewijzen art. 27).'
   - 'Over het Nederlanderschap beslist de burgemeester: hij bevestigt of weigert de optie en bevestigt de afstand (Rijkswet op het Nederlanderschap art. 6; Besluit verkrijging en verlies Nederlanderschap art. 2, 11, 63). Over de naturalisatie beslist de minister van Justitie en Veiligheid; de burgemeester adviseert.'
   - Bij het kiesrecht beslissen burgemeester en wethouders over de registratie van de kiesgerechtigdheid en de burgemeester over een verzoek om bij volmacht te stemmen (Kieswet art. D 1, D 7, L 11).
+  besluitvorming:
+  - 'Het bestuursorgaan bereidt een besluit voor met de uniforme openbare voorbereidingsprocedure als een wettelijk voorschrift of het bestuursorgaan dat bepaalt: het legt het ontwerp ter inzage, geeft er kennis van, maakt een verslag van mondelinge zienswijzen en neemt het besluit (Awb art. 3:10–3:18).'
 status: goedgekeurd
 beslist:
   uitkomst:
@@ -466,6 +490,7 @@ beslist:
   - 2024-rijk-gemeentewet-wettekst
   - 2025-groningen-algemene-plaatselijke-verordening
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-besluit-brp-bwbr0034306
   - 2026-rvig-hup-verblijfplaats
   - 2023-rvig-circulaire-adresonderzoek-brp

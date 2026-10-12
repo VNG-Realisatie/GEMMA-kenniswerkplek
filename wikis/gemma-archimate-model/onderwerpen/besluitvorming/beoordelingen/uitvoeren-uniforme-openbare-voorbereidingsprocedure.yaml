@@ -1,0 +1,304 @@
+begrip: Uitvoeren uniforme openbare voorbereidingsprocedure
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wettelijke procedure (Awb afdeling 3.4), in de praktijk bekend als de uniforme openbare voorbereidingsprocedure; GEMMA kent haar als procesbouwsteen.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Gemeentelijke bestuursorganen bereiden besluiten zo voor als een wettelijk voorschrift of het bestuursorgaan dat bepaalt; inspraak verloopt via deze procedure (Awb art. 3:10; Gemeentewet art. 150 lid 2).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-gemeentewet-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandige procedure die in veel beslisprocessen terugkomt, niet een stap van één ander begrip (Awb art. 3:10).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: een algemene procedure voor de voorbereiding van besluiten (Awb afdeling 3.4).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat gedaan wordt: het voorbereiden van een besluit.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: 'Wordt per besluit van begin tot eind doorlopen: ontwerp ter inzage, kennisgeving, zienswijzen, besluit (art. 3:11–3:18).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Een procedure, beschreven naar hoe het besluit wordt voorbereid; wat de afnemer krijgt is de dienst Zienswijze.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (het bestuursorgaan legt het ontwerp ter inzage, geeft kennis, maakt het verslag en neemt het besluit) en Belanghebbende (brengt een zienswijze naar voren) (art. 3:11–3:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Legt het besluit vast, eerst als ontwerp dat ter inzage ligt (art. 3:11, 3:18); raadpleegt bij een besluit op aanvraag de aanvraag (art. 3:13, 3:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een aanvraag waarop afdeling 3.4 van toepassing is, of het besluit van het bestuursorgaan om een besluit zo voor te bereiden (art. 3:10, 3:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Het besluit, genomen na de zienswijzen (art. 3:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk besluit waarvoor een wettelijk voorschrift of het bestuursorgaan de procedure voorschrijft.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Afdeling 3.4: terinzagelegging, kennisgeving, termijn van zes weken voor zienswijzen, verslag, beslistermijn van zes maanden (art. 3:11–3:18).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Eén mutatie in de levensloop van een besluit: van ontwerp tot genomen besluit (art. 3:11, 3:18).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: 'Bij een besluit op aanvraag loopt de procedure van de ontvangst van de aanvraag tot het besluit: het ontwerp gaat naar de aanvrager en het besluit volgt binnen zes maanden na ontvangst (art. 3:13, 3:18; besluit 2026-10-11).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Omvat geen andere processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Eén mutatie in de levensloop van een besluit, niet de hele levensloop.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Eindigt in het besluit van het bevoegde bestuursorgaan (art. 3:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Zienswijze (UPL nr. 497; art. 3:15).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf het generieke proces voor elk besluit dat volgens afdeling 3.4 wordt voorbereid, geen specialisatie van een generiek GEMMA-element; zo ook Beslisser.
+kernobject: besluit
+afnemer: extern
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: Het voorbereiden van een besluit door het ontwerp ter inzage te leggen, belanghebbenden hun zienswijze te laten geven en daarna te besluiten.
+beschrijving:
+- De uniforme openbare voorbereidingsprocedure (Awb afdeling 3.4) geldt voor de voorbereiding van een besluit als een wettelijk voorschrift of het bestuursorgaan dat bepaalt (art. 3:10). Het bestuursorgaan legt het ontwerp met de stukken ter inzage, maakt dat vooraf bekend en zendt het toe aan de aanvrager en de belanghebbenden tot wie het besluit zal zijn gericht (art. 3:11–3:13). Belanghebbenden, en als dat is bepaald ook anderen, brengen binnen zes weken schriftelijk of mondeling hun zienswijze naar voren; van mondelinge zienswijzen wordt een verslag gemaakt (art. 3:15–3:17). Een besluit op aanvraag volgt uiterlijk zes maanden na ontvangst van de aanvraag (art. 3:18).
+- Inspraak over gemeentelijk beleid verloopt via deze procedure, tenzij de verordening van de raad anders bepaalt (Gemeentewet art. 150 lid 2).
+synoniemen:
+- naam: Uniforme openbare voorbereidingsprocedure
+  context: wet
+gemma:
+  sterkte: geen
+  onderbouwing: GEMMA kent de Uniforme openbare voorbereidingsprocedure als dienst in de procesbouwstenen (id-f321df1c-c7dd-4d11-b42b-534a37a53d9e), zonder definitie of relaties; dat is een ander elementtype. Het Generiek deelproces Uitvoeren inspraakprocedure (Vaststellen omgevingsplan) is beperkt tot het omgevingsplan. Nieuw voor GEMMA.
+deelprocessen:
+- naam: Ter inzage leggen ontwerp
+  omschrijving: Het bestuursorgaan legt het ontwerp van het besluit met de stukken ter inzage, geeft daar vooraf kennis van in het publicatieblad en zendt het toe aan de aanvrager en de belanghebbenden tot wie het besluit zal zijn gericht (art. 3:11–3:13).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Ontvangen zienswijzen
+  omschrijving: Belanghebbenden brengen binnen zes weken schriftelijk of mondeling hun zienswijze naar voren; van mondelinge zienswijzen wordt een verslag gemaakt; de aanvrager kan zo nodig reageren (art. 3:15–3:17).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Nemen besluit
+  omschrijving: Het bestuursorgaan neemt het besluit, bij een besluit op aanvraag uiterlijk zes maanden na ontvangst van de aanvraag; zijn er geen zienswijzen, dan meldt het dat en besluit het binnen vier weken (art. 3:18).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+relaties:
+- soort: realisatie
+  naar: zienswijze
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 3:15; UPL nr. 497
+- soort: toegang (registreren)
+  naar: besluit
+  naam: legt ter inzage als ontwerp en neemt
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 3:11, 3:18
+- soort: toegang (raadplegen)
+  naar: beleidsnota
+  naam: legt het ontwerp ter inzage bij inspraak
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: Gemeentewet art. 150 lid 2; Awb art. 3:11
+- soort: toegang (raadplegen)
+  naar: aanvraag
+  naam: raadpleegt
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 3:13, 3:18
+besluiten:
+- datum: '2026-09-30'
+  besluit: Verhuist naar een algemeen onderwerp besluitvorming.
+  gevolg: verwerkt
+- datum: '2026-10-11'
+  besluit: 'Generiek bedrijfsproces met pagina, met de naam Uitvoeren uniforme openbare voorbereidingsprocedure: bij een besluit op aanvraag loopt de procedure van de aanvraag tot het besluit (klant tot klant). Het proces realiseert de UPL-dienst Zienswijze; Beslisser en Belanghebbende worden eraan toegewezen; de Awb is er grondslag voor. Processen in andere onderwerpen die afdeling 3.4 volgen, zoals inspraak, verwijzen ernaar.'
+  gevolg: verwerkt
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-gemeentewet-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md

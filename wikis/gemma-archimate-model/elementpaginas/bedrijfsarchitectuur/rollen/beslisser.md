@@ -8,17 +8,21 @@ onderwerpen:
 - bestuur-en-organisatie
 - lijkbezorging
 - burgerzaken
+- besluitvorming
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 match:
   gemma: sterk
 data_object: nee
 doelgroep: gemeente
+synoniemen:
+- Bestuursorgaan (wet)
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2024-rijk-gemeentewet-wettekst
 - 2025-groningen-algemene-plaatselijke-verordening
 - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-besluit-brp-bwbr0034306
 - 2026-rvig-hup-verblijfplaats
 - 2023-rvig-circulaire-adresonderzoek-brp
@@ -60,6 +64,8 @@ Verantwoordelijkheid voor het nemen van het besluit in een proces.
 
 Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit 2026-10-01).
 
+De Algemene wet bestuursrecht noemt dit het bestuursorgaan: een orgaan van een publiekrechtelijke rechtspersoon, of een ander persoon of college met openbaar gezag (Awb art. 1:1). Een besluit is een beslissing van een bestuursorgaan (art. 1:3).
+
 ### Per onderwerp
 
 #### [Burgerzaken](../../../onderwerpen/burgerzaken/begrippen.md)
@@ -71,6 +77,16 @@ Over reisdocumenten beslist de burgemeester: hij verstrekt of weigert het reisdo
 Over het Nederlanderschap beslist de burgemeester: hij bevestigt of weigert de optie en bevestigt de afstand (Rijkswet op het Nederlanderschap art. 6; Besluit verkrijging en verlies Nederlanderschap art. 2, 11, 63). Over de naturalisatie beslist de minister van Justitie en Veiligheid; de burgemeester adviseert.
 
 Bij het kiesrecht beslissen burgemeester en wethouders over de registratie van de kiesgerechtigdheid en de burgemeester over een verzoek om bij volmacht te stemmen (Kieswet art. D 1, D 7, L 11).
+
+#### [Besluitvorming](../../../onderwerpen/besluitvorming/begrippen.md)
+
+Het bestuursorgaan bereidt een besluit voor met de uniforme openbare voorbereidingsprocedure als een wettelijk voorschrift of het bestuursorgaan dat bepaalt: het legt het ontwerp ter inzage, geeft er kennis van, maakt een verslag van mondelinge zienswijzen en neemt het besluit (Awb art. 3:10–3:18).
+
+### Synoniemen
+
+| Synoniem | Context |
+|---|---|
+| Bestuursorgaan | wet |
 
 ## Plaats in het model
 
@@ -102,6 +118,8 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| Beslisser | houder *toegang (houder)* | [Beleidsregel](../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsregel.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:81) |
+| Beslisser | legt het ontwerp ter inzage en neemt het besluit *toewijzing* | [Uitvoeren uniforme openbare voorbereidingsprocedure](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 3:11, 3:12, 3:17, 3:18) |
 | Beslisser | beslist over *toewijzing* | [Verlenen grafrecht](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 16 lid 1) |
 | Beslisser | beslist over *toewijzing* | [Vervallen verklaren grafrecht](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 18 lid 4, 20 lid 2) |
 | Beslisser | verleent vergunning voor *toewijzing* | [Opgraven stoffelijk overschot](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-stoffelijk-overschot.md) | [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 29 lid 1) |
@@ -151,6 +169,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [Gemeentewet](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) - geldend per 2024-01-31 |
 | [APV Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md) | Algemene Plaatselijke Verordening Groningen 2021 |
 | [Besluit op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) | Besluit op de lijkbezorging |
+| [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) | Algemene wet bestuursrecht (BWBR0005537) |
 | [Besluit BRP](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) | Besluit basisregistratie personen |
 | [HUP Verblijfplaats](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md) | HUP BRP: Verblijfplaats |
 | [RvIG Circulaire adresonderzoek BRP](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) | Circulaire adresonderzoek BRP |
@@ -183,3 +202,4 @@ GEMMA-terugmeldingen:
 - 2026-10-01: Burgemeester, college en raad hangen via de rol Beslisser (GEMMA) aan gedrag; het bevoegde orgaan per proces staat in de beschrijving van het proces.
 - 2026-10-06: Generiek: de GEMMA-rol Beslisser geldt in elk onderwerp en verhuist naar Algemeen (`algemeen` eerste in `onderwerpen`). Het kenmerk *generiek* blijft nee: Beslisser is zelf de generieke GEMMA-rol, geen variant daarvan. Belanghebbende hoort ook bij Algemeen; die beoordeling volgt (nog een verwijzing).
 - 2026-10-10: Thuis in Bestuur en organisatie, bij de organen die de rol vervullen (regel Thuishoren).
+- 2026-10-12: Bestuursorgaan (Awb art. 1:1) is een synoniem met context wet; Beslisser wordt toegewezen aan Uitvoeren uniforme openbare voorbereidingsprocedure en gebruikt in Besluitvorming.

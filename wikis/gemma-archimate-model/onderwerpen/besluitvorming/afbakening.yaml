@@ -2,5 +2,12 @@ naam: Besluitvorming
 niveau: thematisch
 status: in-behandeling
 omschrijving:
-- 'De begrippen van het bestuursrecht die in elk onderwerp terugkomen: het besluit en de beschikking (Awb art. 1:3), de vergunning als toestemming en de regeling als algemeen verbindend voorschrift. Een eigen onderwerp gebruikt ze met relaties, zet wat alleen daar geldt onder per_onderwerp of legt het vast als specialisatie zonder pagina, zoals het verlof tot begraving of crematie. Nog te beoordelen: de Algemene wet bestuursrecht, Belanghebbende, Aanvraag, Bestuursorgaan en de Uniforme openbare voorbereidingsprocedure.'
-bronnen: []
+- 'De begrippen van het bestuursrecht die in elk onderwerp terugkomen, uit de Algemene wet bestuursrecht: het besluit en de beschikking (art. 1:3), de vergunning als toestemming, de regeling als algemeen verbindend voorschrift, de beleidsregel (art. 1:3 lid 4) en het gemeentelijk beleid in een beleidsnota (Gemeentewet art. 150). De aanvraag is het verzoek van een belanghebbende om een besluit (art. 1:3 lid 3); de belanghebbende is de rol van wie belang heeft bij een besluit, de beslisser (in de wet het bestuursorgaan) die van het orgaan dat besluit. De uniforme openbare voorbereidingsprocedure (afdeling 3.4) is het generieke proces waarin een besluit met zienswijzen wordt voorbereid; zij realiseert de UPL-dienst Zienswijze, met de Awb als grondslag. Het zijn generieke objecten: de kernobjecten van de beslisprocessen horen bij de eigen onderwerpen.'
+- Een eigen onderwerp gebruikt deze begrippen met relaties, zet wat alleen daar geldt onder per_onderwerp of legt het vast als specialisatie zonder pagina, zoals het verlof tot begraving of crematie. De organen van de gemeente (raad, college, burgemeester) en de rol Beslisser horen bij Bestuur en organisatie; inspraak en het participatiebeleid als toepassing bij Participatie; de kanalen, met het verkeer langs elektronische weg (Awb afdeling 2.3), in de centrale set kanalen.
+- 'Nog te beoordelen, in een tweede plak: de overige UPL-diensten met de Awb als grondslag (bezwaar, beroep, klacht, bekendmaking, dwangsom bij niet tijdig beslissen, nadeelcompensatie en de UPL-dienst beschikking), en waar subsidie, bestuurlijke boete, spoedeisende bestuursdwang en belastingaanslag bezwaar thuishoren.'
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- 2026-rijk-gemeentewet-wettekst
+besluiten:
+- datum: '2026-10-11'
+  besluit: 'Afbakening Besluitvorming: twee plakken. De eerste plak omvat de Awb als bron en beleidskader, Belanghebbende, Aanvraag, de uniforme openbare voorbereidingsprocedure met de UPL-dienst Zienswijze, Bestuursorgaan en Beleidsnota met Participatiebeleid; de tweede plak volgt direct, met de overige UPL-diensten die de Awb als grondslag hebben. De Gemeentewet is bron voor art. 6 en 150; als geheel hoort zij bij Bestuur en organisatie.'

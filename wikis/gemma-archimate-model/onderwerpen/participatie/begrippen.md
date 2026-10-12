@@ -24,8 +24,8 @@ De views op de indelingen staan in het [overzicht](overzicht.md).
 
 ## Bronnen
 
-- [Gemeentewet (BWBR0005416)](bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md)
-- [Algemene wet bestuursrecht (BWBR0005537)](../lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
+- [Gemeentewet (BWBR0005416)](../besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md)
+- [Algemene wet bestuursrecht (BWBR0005537)](../besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md)
 - [Implementatiehandleiding VNG Model Participatieverordening 2024](bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md)
 - [Versterking lokale democratie](bronduidingen/overig/2026-vng-versterking-lokale-democratie.md)
 
@@ -36,6 +36,3 @@ Nog geen begrippen beoordeeld.
 ## Besluiten
 
 - 2026-09-30: **Uitdaagrecht**: Geen eigen pagina: dezelfde procedure van verzoek, beoordeling, afspraken en evaluatie als overheidsparticipatie.
-- 2026-09-30: **Uniforme openbare voorbereidingsprocedure**: Verhuist naar een algemeen onderwerp besluitvorming. *Stand: open: algemeen onderwerp besluitvorming (todo)*
-- 2026-09-30: **Bestuursorgaan**: Verhuist naar een algemeen onderwerp besluitvorming. *Stand: open: algemeen onderwerp besluitvorming (todo)*
-- 2026-09-30: **Participatiebeleid**: Variant van Beleidsnota; oppakken in een algemeen onderwerp. Tot dan vervallen de relaties van Gemeenteraad en Plan voor inwonersparticipatie naar het participatiebeleid. *Stand: open: algemeen onderwerp (todo)*

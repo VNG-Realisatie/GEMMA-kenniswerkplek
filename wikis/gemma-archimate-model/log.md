@@ -1596,3 +1596,11 @@ Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen o
 | 2026-10-11 | promote | verlenen-grafrecht | Mark Backer | 1a5e5cfa |
 | 2026-10-11 | promote | verlof-tot-begraven | Mark Backer | 2b8ecdd1 |
 | 2026-10-11 | promote | vervallen-verklaren-grafrecht | Mark Backer | 5ce394b2 |
+| 2026-10-12 | promote | aanvraag | Mark Backer | 20907ab9 |
+| 2026-10-12 | promote | algemene-wet-bestuursrecht | Mark Backer | e6c10a93 |
+| 2026-10-12 | promote | belanghebbende | Mark Backer | 51192a1d |
+| 2026-10-12 | promote | beleidsnota | Mark Backer | d6864a72 |
+| 2026-10-12 | promote | beleidsregel | Mark Backer | 7808d4ac |
+| 2026-10-12 | promote | beslisser | Mark Backer | d319f9bc |
+| 2026-10-12 | promote | uitvoeren-uniforme-openbare-voorbereidingsprocedure | Mark Backer | 119f2c15 |
+| 2026-10-12 | promote | zienswijze | Mark Backer | e4b317b5 |

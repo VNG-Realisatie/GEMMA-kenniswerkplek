@@ -258,7 +258,9 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "voortzetting te zijn van een ander proces voor hetzelfde geval. *Eigen besluit* en *eigen "
                    "normering* bepalen het procesniveau niet; *levert aanbod* zonder *klant tot klant* wordt "
                    "voorgelegd.",
-                   "Een bedrijfsproces hangt onder één levensloopproces. Triggert een bedrijfsproces een ander "
+                   "Een bedrijfsproces hangt onder één levensloopproces; een generiek bedrijfsproces, met een generiek "
+                   "object als kernobject (Uitvoeren uniforme openbare voorbereidingsprocedure, kernobject Besluit), "
+                   "hangt onder het beleidsdomein van zijn kernobject. Triggert een bedrijfsproces een ander "
                    "bedrijfsproces onder hetzelfde levensloopproces voor hetzelfde geval, dan wordt dat voorgelegd "
                    "(mogelijk een deelproces).",
                    "Een groepering van processen is alleen een cluster naar soort werk, met `gemma_generiek`, en alleen "
@@ -610,7 +612,7 @@ RELATIES: list[Relatie] = [
         ("afspraak", "Beleidsdomeinindeling"),
         ("product", "Beleidsdomeinindeling; Functie-indeling naar domein"),
         ("dienst", "Beleidsdomeinindeling"),
-        ("bedrijfsproces", "Beleidsdomeinindeling: alleen een levensloopproces"),
+        ("bedrijfsproces", "Beleidsdomeinindeling: alleen een levensloopproces of een generiek bedrijfsproces"),
         ("bedrijfsinteractie", "Beleidsdomeinindeling"),
         ("bedrijfsfunctie", "Functie-indeling naar domein: alleen een functie op domeinniveau"),
         ("beleidskader", "Beleidsdomeinindeling; Grondslagindeling"),
@@ -707,13 +709,16 @@ INDELINGEN: list[Indeling] = [
     Indeling("Beleidsdomeinindeling", "objecten, aanbod, beleidskaders, en de bovenste knoop van de processen",
              "het taakveld (Iv3) en het beleidsdomein",
              {"bedrijfsobject": None, "afspraak": None, "product": None, "dienst": None, "beleidskader": None,
-              "bedrijfsproces": "alleen een levensloopproces, onder het beleidsdomein van zijn kernobject",
+              "bedrijfsproces": "alleen een levensloopproces of een generiek bedrijfsproces, onder het beleidsdomein van zijn kernobject",
               "bedrijfsinteractie": "onder het beleidsdomein van haar kernobject"},
              "taakveld › beleidsdomein › element", "GEMMA",
              "aggregatie vanuit de groepering van het beleidsdomein; een beleidsdomein dat GEMMA niet kent wordt een "
              "nieuwe groepering onder het taakveld, in de map van de wiki", ("taakveld", "beleidsdomein"),
              ("Een bedrijfsobject heeft één beleidsdomein; het beleidsdomein van een levensloopproces en een "
               "bedrijfsinteractie volgt uit hun kernobject.",
+              "Een generiek bedrijfsproces, waarvan het kernobject een generiek object is (zoals Besluit), heeft geen "
+              "levensloopproces boven zich; het hangt, net als een levensloopproces, onder het beleidsdomein van zijn "
+              "kernobject.",
               "Een beleidsdomein dat GEMMA niet kent, wordt een gemeentelijk beleidsdomein met een terugmelding; zijn "
               "beschrijving staat in het register van beleidsdomeinen.",
               "Het domein van een product of dienst past bij de GEMMA-domeinen van zijn beleidsdomein.")),

@@ -133,7 +133,7 @@ Beleidsdomein (Beleidsdomeinindeling) → levensloopproces per kernobject → be
 - [Stempas](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/stempas.md): levensloop door [Beheren stempassen](../../elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md).
 - [Verklaring omtrent het gedrag](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-omtrent-het-gedrag.md): levensloop door [Afgeven verklaring omtrent het gedrag](../../elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/afgeven-verklaring-omtrent-het-gedrag.md).
 
-**Generiek** (horen thuis in een thematisch gedeeld onderwerp of Kern): [Heffing](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md).
+**Generiek** (horen thuis in een thematisch gedeeld onderwerp of Kern): [Aanvraag](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/aanvraag.md), [Heffing](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md).
 
 ## Functies
 

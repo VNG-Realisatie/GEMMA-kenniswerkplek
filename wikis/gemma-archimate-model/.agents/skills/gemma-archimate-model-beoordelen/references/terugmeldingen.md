@@ -28,7 +28,7 @@ Schrijf voor een lezer zonder deze wiki: korte zinnen, de kern vooraan, bronnen 
 
 ## GGM
 
-Een bevinding over het GGM (hiaat, definitie, structuur, scope, duplicaat, homoniem, relatie). Een hiaat alleen bij een gegevensobject zonder GGM-match, conservatief: motiveer waar de gegevens worden beheerd, welke attributen relevant zijn en in welk beleidsdomein het past. Een proces, functie of regeling zonder GGM-entiteit is geen hiaat.
+Een bevinding over het GGM (hiaat, definitie, structuur, scope, duplicaat, homoniem, relatie). Een hiaat alleen bij een gegevensobject zonder GGM-match, conservatief: motiveer waar de gegevens worden beheerd, welke attributen relevant zijn en in welk beleidsdomein het past. Een proces, functie of regeling zonder GGM-entiteit is geen hiaat. Een duplicaat meld je niet per geval terug; een homoniem wel, ook als de GGM-definities gelijk zijn (`ggm-match.md`, Duplicaten en homoniemen).
 
 ## Procesarchitectuur
 

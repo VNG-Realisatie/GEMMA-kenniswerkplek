@@ -1,53 +1,55 @@
-begrip: Algemene wet bestuursrecht
+begrip: Beslistermijn
+onderwerpen:
+- besluitvorming
 kenmerken:
   herkenbaar:
     waarde: ja
-    onderbouwing: Concreet benoemde wet (Awb).
+    onderbouwing: Gangbaar als beslistermijn; de Awb spreekt van de termijn waarbinnen een beschikking wordt gegeven (art. 4:13).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gemeentelijk:
     waarde: ja
-    onderbouwing: Algemene regels voor het handelen van bestuursorganen, ook van de gemeente.
+    onderbouwing: Het gemeentelijke bestuursorgaan geeft de beschikking binnen de termijn (art. 4:13, 4:14).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
     waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
+    onderbouwing: 'Een norm (Constraint): de beschikking volgt binnen de wettelijke termijn of anders binnen een redelijke termijn van ten hoogste acht weken (art. 4:13); zo ook Termijn van lijkbezorging.'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Een norm voor het geven van een beschikking, geen eigenschap van één begrip.
+  eigen_identiteit:
+    waarde: nee
+    onderbouwing: 'Niet beoordeeld: een eigenschap van de beschikking.'
   betekenis_in_onderwerp:
     waarde: nee
-    onderbouwing: 'Hoort bij het algemene onderwerp besluitvorming (nog te starten): voor de lijkbezorging levert ze de begrippen besluit, beschikking, aanvraag, belanghebbende en het verkeer langs elektronische weg.'
+    onderbouwing: 'Niet beoordeeld: een eigenschap van de beschikking.'
   gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
   handelende_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
   hoedanigheid:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
   samenwerkingsverband:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
   toegangspunt:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
   plaats:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
   aanbod_als_geheel:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
   regeling_als_geheel:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is een regeling als geheel.'
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
@@ -62,7 +64,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen partij.'
   soort_partij:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen partij.'
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen partij.'
@@ -71,7 +73,7 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen gedrag.'
   groepeert_processen:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen gedrag.'
@@ -122,34 +124,34 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_processen:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   omvat_levensloop:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   eigen_besluit:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   bedient_gedrag:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   in_functie_indeling:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   leidt_tot_gebeurtenis:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
   onderscheidbare_exemplaren:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: 'Niet beoordeeld: een eigenschap.'
   levenscyclus:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: 'Niet beoordeeld: een eigenschap.'
   wordt_bewerkt:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: 'Niet beoordeeld: een eigenschap.'
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -158,16 +160,16 @@ kenmerken:
     onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
   deel_van_object:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
+    onderbouwing: Geen onderdeel van een ander object; de gemeente maakt of beheert het zelf.
   invoer_van_een_ander:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
+    onderbouwing: Geen onderdeel van een ander object; de gemeente maakt of beheert het zelf.
   zelfstandig_aanbod:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
   omvat_diensten_en_afspraken:
     waarde: nee
-    onderbouwing: Geen gebundeld aanbod.
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -182,18 +184,18 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: nee
-    onderbouwing: 'Niet beoordeeld: het begrip wordt in een ander onderwerp beoordeeld.'
+    onderbouwing: 'Niet van toepassing: geen element (eigenschap).'
   generiek:
     waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst verwijzing).'
-toelichting: 'Verwijzing: de Awb is een generiek kader; ze wordt beoordeeld in het algemene onderwerp besluitvorming.'
-onderwerpen:
-- lijkbezorging
+    onderbouwing: 'Niet van toepassing: geen element (eigenschap).'
+archimate_buiten_model: Constraint
+toelichting: 'Buiten dit model (Constraint): norm voor het geven van een beschikking, binnen de wettelijke termijn of anders binnen een redelijke termijn van ten hoogste acht weken; kan dat niet, dan meldt het bestuursorgaan een nieuwe termijn (Awb art. 4:13, 4:14). Bij de uniforme openbare voorbereidingsprocedure is de termijn zes maanden (art. 3:18).'
 beslist:
   uitkomst:
-    soort: verwijzing
-    regel: 6
-    toelichting: Hoort bij een ander onderwerp
+    soort: buiten_model
+    regel: 3
+    toelichting: Buiten dit model
+    archimate_type: Constraint
     voorleggen: false
     data_object: nee
     generiek: false

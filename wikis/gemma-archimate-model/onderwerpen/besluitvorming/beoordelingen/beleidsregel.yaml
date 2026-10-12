@@ -1,0 +1,235 @@
+begrip: Beleidsregel
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Kernbegrip van de Awb (art. 1:3 lid 4, titel 4.3).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Een bestuursorgaan van de gemeente kan beleidsregels vaststellen voor een bevoegdheid die het heeft (art. 4:81).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig als besluit van algemene strekking; geen onderdeel van één ander begrip (art. 1:3 lid 4).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: het begrip komt uit de Awb en geldt voor elke bevoegdheid (art. 4:81).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een ding.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Per bevoegdheid een eigen beleidsregel, vastgesteld bij besluit (art. 1:3 lid 4, 4:81).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Wordt bij besluit vastgesteld en bekendgemaakt, en geldt tot zij wordt gewijzigd of ingetrokken (art. 1:3 lid 4, 3:42, 4:83).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: 'Het bestuursorgaan stelt haar vast (art. 4:81) en past haar toe bij het nemen van besluiten: het handelt ernaar en mag ernaar verwijzen ter motivering (art. 4:82, 4:84).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: De regel zelf; geen vorm van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Geen onderdeel van een ander object.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Het bestuursorgaan stelt haar zelf vast (art. 4:81).
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: 'Geen breder object in deze wiki: geen algemeen verbindend voorschrift (Regeling) en geen beleidsnota (art. 1:3 lid 4).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: ja
+    onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp waarin een bestuursorgaan een bevoegdheid heeft.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+definitie: Algemene regel die een bestuursorgaan bij besluit vaststelt over hoe het een bevoegdheid gebruikt, zonder algemeen verbindend voorschrift te zijn.
+beschrijving:
+- Een beleidsregel is een bij besluit vastgestelde algemene regel, niet zijnde een algemeen verbindend voorschrift, over de afweging van belangen, de vaststelling van feiten of de uitleg van wettelijke voorschriften bij het gebruik van een bevoegdheid van een bestuursorgaan (Awb art. 1:3 lid 4). Een bestuursorgaan kan beleidsregels vaststellen voor een bevoegdheid die het heeft of heeft gedelegeerd (art. 4:81). Het bestuursorgaan handelt ernaar, tenzij dat voor een belanghebbende door bijzondere omstandigheden onevenredige gevolgen heeft, en kan ter motivering van een besluit naar de beleidsregel verwijzen (art. 4:82, 4:84). De beleidsregel wordt bekendgemaakt zoals een besluit dat niet tot belanghebbenden is gericht (art. 3:42).
+- Een beleidsregel bindt alleen het bestuursorgaan zelf, anders dan een Regeling, die iedereen bindt; en zij gaat over het gebruik van één bevoegdheid, anders dan een Beleidsnota, die het beleid voor een onderwerp vastlegt.
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+ggm:
+  sterkte: geen
+  onderbouwing: Het GGM kent geen beleidsregel. Zij ontstaat in het besluit waarmee een bestuursorgaan haar vaststelt (art. 4:81), een proces dat de wiki nog niet heeft.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen bedrijfsobject voor dit begrip (alleen technologie, zoals Policy editor); nieuw voor GEMMA.
+besluiten:
+- datum: '2026-10-12'
+  besluit: 'Eigen generiek bedrijfsobject naast Regeling en Beleidsnota: een besluit van algemene strekking dat alleen het bestuursorgaan bindt (Awb art. 1:3 lid 4, 4:84), geen algemeen verbindend voorschrift en geen beleidsnota. Beslisser stelt haar vast (art. 4:81). Het proces dat haar vaststelt komt later; tot dan het signaal wordt bewerkt zonder toegang, zoals bij Regeling.'
+  gevolg: verwerkt
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 32
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    data_object: nee
+    objectniveau: generiek
+    generiek: false
+    typeregel: 21
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsregel.md

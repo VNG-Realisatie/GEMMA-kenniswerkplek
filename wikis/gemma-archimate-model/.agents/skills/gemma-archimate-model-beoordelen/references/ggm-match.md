@@ -26,8 +26,9 @@ Het GGM modelleert vooral gegevens. Processen, functies, diensten, gebeurtenisse
 
 ## Duplicaten en homoniemen
 
-- **Duplicaat** (zelfde begrip in meerdere beleidsdomeinen, andere GUID): één element. De thematisch passende GUID wordt `guid`; de andere gaan in `duplicaten` (`guid`, `toelichting`). Leg de keuze van de primaire GUID voor en meld terug als `duplicaat`.
-- **Homoniem** (zelfde naam, ander begrip): niet in `duplicaten`, wel in `homoniemen`; naam kiezen volgens `naamgeving.md`, terugmelden als `homoniem`.
+- **Eerst de betekenis, ook bij gelijke definitie.** Een naamgenoot is pas een duplicaat als het hetzelfde begrip is. Kijk naar de klant: de GEMMA-procesarchitectuur onderscheidt processen met externe klanten (van aanvraag tot product) van processen met interne klanten (Proceshiërarchie, Typen processen; Over GEMMA, Klant intern of extern). Een begrip dat de wet aan een externe klant koppelt, zoals de aanvraag, het besluit en de belanghebbende uit de Awb, is in een beleidsdomein van de interne organisatie (Financiën, HR, ICT, Inkoop, Organisatie, Subsidies, Vastgoed) meestal een ander begrip: een homoniem, ook als de GGM-definitie gelijk is. Precedent: Aanvraag in ICT is een interne aanvraag, Aanvraag in Archief en Diensten de externe aanvraag volgens de Awb.
+- **Duplicaat** (zelfde begrip in meer beleidsdomeinen, andere GUID): één element. De thematisch passende GUID wordt `guid`; de andere gaan in `duplicaten` (`guid`, `toelichting`). Voor de relaties tellen alle GUID's even zwaar (`tools/relaties.py`); de keuze van de primaire GUID bepaalt alleen welke GGM-velden de pagina toont en welk GEMMA-object de wiki koppelt (zie `gemma-match.md`). Leg de keuze voor als de entiteiten elk een GEMMA-object hebben. Meld een duplicaat niet terug: het GGM werkt bewust met duplicaten, en dat GEMMA ze als losse bedrijfsobjecten overneemt, staat in één GEMMA-terugmelding voor alle duplicaten (Aanvraag en Pand als voorbeeld).
+- **Homoniem** (zelfde naam, ander begrip): niet in `duplicaten`, wel in `homoniemen`; naam kiezen volgens `naamgeving.md`, terugmelden als `homoniem`, met een voorstel voor een onderscheidende naam en een definitie die het verschil vastlegt (zoals Interne aanvraag).
 
 ## Velden en afwijking
 

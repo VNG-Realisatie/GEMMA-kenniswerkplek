@@ -1,0 +1,265 @@
+begrip: Belanghebbende
+onderwerpen:
+- besluitvorming
+- lijkbezorging
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Kernbegrip van de Awb (art. 1:2), ook gangbaar in de praktijk; de Wet op de lijkbezorging en de VNG-modelverordening gebruiken het voor de nabestaanden bij een algemeen graf (Wlb art. 27a; VNG-modelverordening art. 24).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: 'De gemeente neemt besluiten waarbij belanghebbenden betrokken zijn: zij vragen besluiten aan, brengen zienswijzen naar voren en ontvangen mededelingen (Awb art. 1:3 lid 3, 3:15; Wlb art. 27a).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig als hoedanigheid tegenover elk besluit, niet als onderdeel van één ander begrip (Awb art. 1:2).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: het begrip komt uit de Awb en geldt bij elk besluit (art. 1:2).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  hoedanigheid:
+    waarde: ja
+    onderbouwing: 'De hoedanigheid waarin een persoon, rechtspersoon of bestuursorgaan optreedt tegenover een besluit: degene wiens belang rechtstreeks bij een besluit is betrokken (Awb art. 1:2).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is een partij of verantwoordelijkheid.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Een verantwoordelijkheid of hoedanigheid tegenover een besluit, geen zelfstandige partij: wie belanghebbende is, verschilt per besluit (Awb art. 1:2).'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij of verband.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is zelf een rol.'
+  voert_gedrag_uit:
+    waarde: ja
+    onderbouwing: 'Toegewezen aan Ruimen graf: de belanghebbende bij een algemeen graf ontvangt bericht van het verstrijken van de termijn en het voornemen tot ruiming (Wlb art. 27a; VNG-modelverordening art. 24 lid 1). In de besluitvorming dient de belanghebbende een aanvraag in en brengt een zienswijze naar voren (Awb art. 1:3 lid 3, 3:15).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    - 2010-vng-model-beheersverordening-begraafplaatsen
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: alleen bij een handelende partij of samenwerkingsverband.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  benoembaar_resultaat:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  komt_herhaald_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_normering:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld; het GGM kent wel een entiteit Belanghebbende (Musea), maar de bronnen noemen geen gegevens die de gemeente over belanghebbenden vastlegt.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen ding.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder element in deze wiki; Belanghebbende is zelf het generieke begrip.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element; zo ook Beslisser.
+doelgroep: inwoners en ondernemers
+definitie: Hoedanigheid van degene wiens belang rechtstreeks bij een besluit van een bestuursorgaan is betrokken.
+beschrijving:
+- Belanghebbende is degene wiens belang rechtstreeks bij een besluit is betrokken (Awb art. 1:2 lid 1). Dat kan een inwoner of onderneming zijn, maar ook een bestuursorgaan voor de belangen die het zijn toevertrouwd en een rechtspersoon voor de algemene en collectieve belangen die het behartigt (art. 1:2 lid 2 en 3). Een belanghebbende kan een besluit aanvragen (art. 1:3 lid 3) en zijn zienswijze over een ontwerpbesluit naar voren brengen (art. 3:15).
+per_onderwerp:
+  lijkbezorging:
+  - De belanghebbende bij een algemeen graf, meestal een nabestaande, krijgt van de houder van de begraafplaats bericht van het verstrijken van de termijn van uitgifte en van het voornemen tot ruiming (Wlb art. 27a; VNG-modelverordening art. 24 lid 1). Bij een particulier graf heeft de rechthebbende die positie.
+gemma:
+  id: id-bd369f13-44a4-41f0-8b95-7925a0c0eaa9
+  sterkte: sterk
+  onderbouwing: 'GEMMA-rol Belanghebbende uit de procesbouwstenen; zelfde begrip, in GEMMA zonder definitie. Nieuw: een definitie volgens de Awb. Het GEMMA-bedrijfsobject Belanghebbende (groepering Museum, uit het GGM) is de gegevensentiteit, geen rol.'
+specialisaties:
+- naam: Aanvrager
+  omschrijving: Belanghebbende die een aanvraag indient en de gegevens en bescheiden verschaft (Awb art. 1:3 lid 3, 4:2). Geen eigen pagina; in een onderwerp heet de rol naar het object, zoals Houder van het reisdocument.
+- naam: Belanghebbende bij een algemeen graf
+  omschrijving: Nabestaande die bericht krijgt van het verstrijken van de termijn van uitgifte en van de ruiming (Wlb art. 27a; VNG-modelverordening art. 24). Geen eigen pagina.
+relaties:
+- soort: toewijzing
+  naar: uitvoeren-uniforme-openbare-voorbereidingsprocedure
+  naam: brengt een zienswijze naar voren
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 3:15
+- soort: toewijzing
+  naar: ruimen-graf
+  naam: ontvangt bericht van de ruiming (bij een algemeen graf)
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  vindplaats: Wlb art. 27a; VNG-modelverordening art. 24 lid 1
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 12
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-bd369f13-44a4-41f0-8b95-7925a0c0eaa9
+    gemma_naam: Belanghebbende
+    gemma_type: business-role
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: bd369f13-44a4-41f0-8b95-7925a0c0eaa9
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/belanghebbende.md
+besluiten:
+- datum: '2026-10-11'
+  besluit: Element in Besluitvorming (thuisonderwerp), met Lijkbezorging als tweede onderwerp. Aanvrager (Awb art. 1:3 lid 3, 4:2) is een specialisatie zonder pagina; in een onderwerp heet de rol naar het object, zoals Houder van het reisdocument.
+  gevolg: verwerkt

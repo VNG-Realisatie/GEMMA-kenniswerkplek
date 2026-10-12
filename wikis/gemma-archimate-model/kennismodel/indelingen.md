@@ -22,7 +22,7 @@ Waar staat elk element in het model? Een **indeling** ordent naar één criteriu
 
 |  |  |
 |---|---|
-| Deelt in | [Bedrijfsobject](bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md); [Afspraak](bedrijfsarchitectuur/afspraak-modelleerafspraken.md); [Product](bedrijfsarchitectuur/product-modelleerafspraken.md); [Dienst](bedrijfsarchitectuur/dienst-modelleerafspraken.md); [Beleidskader](motivatie/beleidskader-modelleerafspraken.md); [Bedrijfsproces](bedrijfsarchitectuur/bedrijfsproces-modelleerafspraken.md) (alleen een levensloopproces, onder het beleidsdomein van zijn kernobject); [Bedrijfsinteractie](bedrijfsarchitectuur/bedrijfsinteractie-modelleerafspraken.md) (onder het beleidsdomein van haar kernobject) |
+| Deelt in | [Bedrijfsobject](bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md); [Afspraak](bedrijfsarchitectuur/afspraak-modelleerafspraken.md); [Product](bedrijfsarchitectuur/product-modelleerafspraken.md); [Dienst](bedrijfsarchitectuur/dienst-modelleerafspraken.md); [Beleidskader](motivatie/beleidskader-modelleerafspraken.md); [Bedrijfsproces](bedrijfsarchitectuur/bedrijfsproces-modelleerafspraken.md) (alleen een levensloopproces of een generiek bedrijfsproces, onder het beleidsdomein van zijn kernobject); [Bedrijfsinteractie](bedrijfsarchitectuur/bedrijfsinteractie-modelleerafspraken.md) (onder het beleidsdomein van haar kernobject) |
 | Naar | het taakveld (Iv3) en het beleidsdomein |
 | Niveaus | taakveld › beleidsdomein › element |
 | Groepering | GEMMA |
@@ -30,6 +30,7 @@ Waar staat elk element in het model? Een **indeling** ordent naar één criteriu
 | Eigenschappen | `taakveld`, `beleidsdomein` |
 
 - Een bedrijfsobject heeft één beleidsdomein; het beleidsdomein van een levensloopproces en een bedrijfsinteractie volgt uit hun kernobject.
+- Een generiek bedrijfsproces, waarvan het kernobject een generiek object is (zoals Besluit), heeft geen levensloopproces boven zich; het hangt, net als een levensloopproces, onder het beleidsdomein van zijn kernobject.
 - Een beleidsdomein dat GEMMA niet kent, wordt een gemeentelijk beleidsdomein met een terugmelding; zijn beschrijving staat in het register van beleidsdomeinen.
 - Het domein van een product of dienst past bij de GEMMA-domeinen van zijn beleidsdomein.
 

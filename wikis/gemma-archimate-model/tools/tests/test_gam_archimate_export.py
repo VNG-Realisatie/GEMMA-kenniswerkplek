@@ -542,6 +542,20 @@ def test_levensloopproces_hangt_onder_zijn_beleidsdomein_met_gemma_type_cluster(
     assert not _relaties_van(root, "archimate:AggregationRelationship", nieuw, ae.vast_id("element", "opgraven-lijk"))
 
 
+def test_generiek_bedrijfsproces_hangt_onder_het_beleidsdomein_van_zijn_generieke_kernobject(tmp_path):
+    begrippen = _indeling_begrippen()
+    proces = _begrip("Uitvoeren procedure", "business-process", status="review", taakveld="Bestuur",
+                     beleidsdomein="Besluitvorming", kernobject="beschikking", afnemer="extern")
+    proces["beslist"]["uitkomst"].update(paginatype="bedrijfsproces", procesniveau="bedrijfsproces")
+    begrippen["uitvoeren-procedure"] = proces
+    uit, root = _export_indeling(tmp_path, begrippen)
+    assert "Uitvoeren procedure" not in uit.zonder_plaats
+    eid = ae.vast_id("element", "uitvoeren-procedure")
+    aggs = [r for r in root.iter("element") if r.get("{http://www.w3.org/2001/XMLSchema-instance}type")
+            == "archimate:AggregationRelationship" and r.get("target") == eid]
+    assert [_props(r)["wiki-gemma-model indeling"] for r in aggs] == ["Beleidsdomeinindeling"]
+
+
 def test_bedrijfsinteractie_staat_in_de_map_ketensamenwerking_onder_het_beleidsdomein(tmp_path):
     begrippen = _indeling_begrippen()
     keten = _begrip("Bezorgen lijken", "business-interaction", status="review", taakveld="Volksgezondheid",

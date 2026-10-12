@@ -217,3 +217,16 @@ terugmeldingen:
   - '**Voorstel:** opnemen in RSGBPlus bij het beleidsdomein Burgerzaken, met een relatie naar IngeschrevenPersoon; alleen de gegevens die de gemeente voor de afgifte nodig heeft, niet het rijbewijzenregister van de RDW.'
   nummer: 18
   status: open
+- domein: ICT
+  entiteit: Aanvraag
+  type: homoniem
+  element: aanvraag
+  bevinding:
+  - '**GGM:** Aanvraag komt voor in drie beleidsdomeinen:'
+  - '- Archief (EAID_2F2A3590_9B34_4ec5_B0AE_B487ED241155): "(officieel) verzoek, iets (officieel) vragen aan een bevoegde macht"; een bezoeker doet een aanvraag voor een archiefstuk;'
+  - '- ICT (EAID_446E3931_B9F2_4b5c_80E7_5B240B8F816F): dezelfde definitie, zonder relaties;'
+  - '- Diensten (EAID_208D605F_BDE5_700A_13F6_281C3303691F): een verzoek om dienstverlening volgens de Participatiewet, dat leidt tot een besluit.'
+  - '**Bevinding:** de aanvraag in Archief en Diensten is een externe aanvraag van een inwoner of bedrijf. Volgens de Algemene wet bestuursrecht is dat een verzoek van een belanghebbende om een besluit te nemen (art. 1:3 lid 3, 4:1). De aanvraag in ICT, een domein van de interne organisatie, is een interne aanvraag, bijvoorbeeld van een medewerker voor een voorziening; die leidt niet tot een besluit. De GEMMA-procesarchitectuur onderscheidt ook processen met externe klanten (van aanvraag tot product) van processen met interne klanten (2026-vng-gemma-proceshierarchie, Typen processen; 2026-vng-over-gemma, Klant intern of extern). Gelijke naam en definitie dekken hier dus twee begrippen.'
+  - '**Voorstel:** geef de entiteit in ICT een eigen naam en definitie, bijvoorbeeld Interne aanvraag, en laat de definitie van de externe aanvraag aansluiten op de Awb: verzoek van een belanghebbende aan een bestuursorgaan om een besluit te nemen. Toets bij andere naamgenoten in de domeinen van de interne organisatie (Financiën, HR, ICT, Inkoop, Organisatie, Vastgoed) op dezelfde manier of het om een interne of een externe klant gaat.'
+  nummer: 19
+  status: open
