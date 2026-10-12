@@ -12,7 +12,7 @@ titel: Voortgang
 
 | Onderwerp | Status | Begrippen | Elementen |
 |---|---|---|---|
-| [Besluitvorming](onderwerpen/besluitvorming/begrippen.md) | in-behandeling | 15 | 12 |
+| [Besluitvorming](onderwerpen/besluitvorming/begrippen.md) | in-behandeling | 35 | 31 |
 | [Bestuur en organisatie](onderwerpen/bestuur-en-organisatie/begrippen.md) | in-behandeling | 6 | 6 |
 | [Burgerzaken](onderwerpen/burgerzaken/begrippen.md) | in-behandeling | 260 | 180 |
 | [Heffingen en betalingen](onderwerpen/heffingen-en-betalingen/begrippen.md) | in-behandeling | 2 | 2 |
@@ -26,8 +26,8 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 | Onderwerp | Elementen | Gebruikt uit andere | Relaties binnen | Relaties met andere |
 |---|---|---|---|---|
-| Besluitvorming | 11 | 1 | 9 | Bestuur en organisatie 2, Heffingen en betalingen 1, Lijkbezorging 16 |
-| Bestuur en organisatie | 6 | 0 | 8 | Besluitvorming 2, Burgerzaken 20, Kern 1, Lijkbezorging 15 |
+| Besluitvorming | 30 | 1 | 45 | Bestuur en organisatie 9, Heffingen en betalingen 1, Lijkbezorging 16 |
+| Bestuur en organisatie | 6 | 0 | 8 | Besluitvorming 9, Burgerzaken 20, Kern 1, Lijkbezorging 15 |
 | Burgerzaken | 169 | 8 | 500 | Bestuur en organisatie 20, Kern 2, Lijkbezorging 7 |
 | Heffingen en betalingen | 2 | 0 | 1 | Besluitvorming 1, Lijkbezorging 4 |
 | Kern | 1 | 0 | 0 | Bestuur en organisatie 1, Burgerzaken 2, Lijkbezorging 5 |
@@ -41,20 +41,20 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | actor | 0 | 0 | 10 | 0 |
 | bedrijfsfunctie | 0 | 0 | 7 | 0 |
 | bedrijfsinteractie | 0 | 0 | 1 | 0 |
-| bedrijfsobject | 0 | 0 | 25 | 0 |
-| bedrijfsproces | 0 | 0 | 72 | 6 |
-| beleidskader | 0 | 0 | 18 | 0 |
-| dienst | 0 | 0 | 77 | 1 |
+| bedrijfsobject | 0 | 0 | 27 | 0 |
+| bedrijfsproces | 0 | 0 | 79 | 6 |
+| beleidskader | 0 | 0 | 19 | 0 |
+| dienst | 0 | 0 | 85 | 1 |
 | gebeurtenis | 0 | 0 | 20 | 0 |
-| rol | 0 | 0 | 25 | 0 |
+| rol | 0 | 0 | 26 | 0 |
 
 ## GGM-terugmeldingen
 
-[19 terugmeldingen](modellen/ggm/terugmeldingen.md): open 19.
+[21 terugmeldingen](modellen/ggm/terugmeldingen.md): open 21.
 
 ## Procesarchitectuur-terugmeldingen
 
-[25 terugmeldingen](modellen/gemma/terugmeldingen/procesarchitectuur.md): open 24, opgelost 1.
+[28 terugmeldingen](modellen/gemma/terugmeldingen/procesarchitectuur.md): open 27, opgelost 1.
 
 ## GEMMA-terugmeldingen
 

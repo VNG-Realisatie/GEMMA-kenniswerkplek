@@ -230,3 +230,38 @@ terugmeldingen:
   - '**Voorstel:** geef de entiteit in ICT een eigen naam en definitie, bijvoorbeeld Interne aanvraag, en laat de definitie van de externe aanvraag aansluiten op de Awb: verzoek van een belanghebbende aan een bestuursorgaan om een besluit te nemen. Toets bij andere naamgenoten in de domeinen van de interne organisatie (Financiën, HR, ICT, Inkoop, Organisatie, Vastgoed) op dezelfde manier of het om een interne of een externe klant gaat.'
   nummer: 19
   status: open
+- domein: RGBZPlus
+  entiteit: null
+  type: hiaat
+  element: bezwaarschrift
+  bevinding:
+  - '**GGM:** het GGM kent geen bezwaar of bezwaarschrift.'
+  - '**Bevinding:** een belanghebbende maakt bezwaar tegen een besluit door een bezwaarschrift in te dienen bij het bestuursorgaan dat het besluit nam; dat bestuursorgaan hoort de belanghebbenden, heroverweegt het besluit en beslist op het bezwaar (2026-rijk-algemene-wet-bestuursrecht-wettekst, art. 6:4, 6:5, 7:2, 7:10–7:12). Elke gemeente behandelt bezwaarschriften, in elk domein. Relevante attributen:'
+  - '- indiener (naam en adres) en eventuele gemachtigde;'
+  - '- dagtekening en datum van ontvangst;'
+  - '- bestreden besluit (relatie naar Besluit);'
+  - '- gronden van het bezwaar;'
+  - '- ontvankelijk, met datum van herstel van een verzuim;'
+  - '- datum van horen, met verslag; advies van een adviescommissie;'
+  - '- beslistermijn en verdaging;'
+  - '- beslissing op bezwaar (gegrond, ongegrond, niet-ontvankelijk) en datum.'
+  - '**Voorstel:** opnemen als entiteit Bezwaarschrift in RGBZPlus, naast Besluit, met een relatie naar het bestreden Besluit en naar het besluit dat de beslissing op bezwaar is.'
+  nummer: 20
+  status: open
+- domein: RGBZPlus
+  entiteit: null
+  type: hiaat
+  element: schriftelijke-klacht
+  bevinding:
+  - '**GGM:** het GGM kent geen algemene klacht; alleen een klacht over leerlingenvervoer.'
+  - '**Bevinding:** ieder kan bij een bestuursorgaan een klacht indienen over de manier waarop het zich heeft gedragen. Het bestuursorgaan bevestigt de ontvangst, hoort de klager, handelt de klacht binnen zes weken af met een gemotiveerd oordeel, en registreert en publiceert de schriftelijke klachten (2026-rijk-algemene-wet-bestuursrecht-wettekst, art. 9:1, 9:4, 9:6, 9:10–9:12a). Elke gemeente behandelt klachten, in elk domein. Relevante attributen:'
+  - '- klager (naam en adres);'
+  - '- dagtekening en datum van ontvangst, met ontvangstbevestiging;'
+  - '- omschrijving van de gedraging, met datum en betrokken medewerker of orgaan;'
+  - '- in behandeling genomen, of de reden om dat niet te doen;'
+  - '- datum van horen, met verslag; advies van een klachtadviescommissie;'
+  - '- afhandeltermijn en verdaging;'
+  - '- oordeel (gegrond, ongegrond) en conclusies, met datum.'
+  - '**Voorstel:** opnemen als entiteit Klacht (of Schriftelijke klacht) in RGBZPlus, voor alle domeinen; Klacht Leerlingenvervoer wordt daar een specialisatie van.'
+  nummer: 21
+  status: open

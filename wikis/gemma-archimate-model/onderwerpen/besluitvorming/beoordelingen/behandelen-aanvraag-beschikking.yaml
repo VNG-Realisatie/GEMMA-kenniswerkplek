@@ -1,0 +1,287 @@
+begrip: Behandelen aanvraag beschikking
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wettelijke procedure (Awb afdeling 4.1); gangbaar als het behandelen van een aanvraag; GEMMA kent specifieke varianten zoals Behandelen aanvraag product.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het gemeentelijke bestuursorgaan ontvangt de aanvraag en beslist erop (art. 4:1, 4:13).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandige procedure met eigen termijnen, niet een stap van één ander begrip (afdeling 4.1).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: het generieke gedrag voor elke beschikking op aanvraag (Awb afdeling 4.1).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat gedaan wordt: beslissen op een aanvraag om een beschikking.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: 'Wordt per aanvraag van begin tot eind doorlopen: ontvangst, aanvullen, voorbereiden en horen, beschikking (art. 4:1, 4:5, 4:7, 4:13).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Een procedure, beschreven naar hoe de aanvraag wordt behandeld; wat de afnemer krijgt is de dienst Beschikking aanvragen.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (het bestuursorgaan beslist op de aanvraag en geeft de beschikking) en Belanghebbende (vraagt aan, of brengt als derde zijn zienswijze naar voren) (art. 1:3 lid 3, 4:1, 4:7, 4:8).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Neemt de aanvraag in behandeling en laat haar zo nodig aanvullen (art. 4:1, 4:5); legt de beschikking vast (art. 1:3 lid 2, 4:13).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een aanvraag van een belanghebbende om een beschikking (art. 1:3 lid 3, 4:1).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De beschikking op de aanvraag, toewijzend of afwijzend, of het besluit de aanvraag niet te behandelen (art. 1:3 lid 2, 4:5).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elke aanvraag om een beschikking.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Afdeling 4.1 Awb: indieningseisen, aanvullen, zienswijze van aanvrager en derden, beslistermijn en opschorting (art. 4:1–4:15).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Eén mutatie in de levensloop van een beschikking: van aanvraag tot gegeven beschikking (art. 4:1, 4:13).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Loopt van de aanvraag van de belanghebbende tot de beschikking aan hem (art. 4:1, 4:13).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Omvat geen andere processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Behandelt één aanvraag; geen groepering van processen over de levensloop van een object.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Eindigt in de beschikking van het bevoegde bestuursorgaan (art. 1:3 lid 2, 4:1).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Beschikking aanvragen (UPL nr. 55; art. 1:3).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki; het is zelf het generieke beslisproces op aanvraag.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf het generieke proces voor elke beschikking op aanvraag; de GEMMA-processen Behandelen aanvraag product en Behandelen aanvraag vergunning of ontheffing zijn smallere varianten, geen generiek element waarvan dit een specialisatie is.
+afnemer: extern
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+kernobject: beschikking
+definitie: 'Het beslissen op een aanvraag om een beschikking: de aanvraag ontvangen en zo nodig laten aanvullen, het besluit voorbereiden en binnen de termijn beslissen.'
+beschrijving:
+- Een belanghebbende dient een aanvraag om een beschikking schriftelijk in bij het bevoegde bestuursorgaan (Awb art. 1:3 lid 3, 4:1, 4:2). Is de aanvraag onvolledig, dan krijgt de aanvrager gelegenheid haar aan te vullen; anders kan het bestuursorgaan besluiten haar niet te behandelen (art. 4:5). Steunt een voorgenomen afwijzing op gegevens die afwijken van wat de aanvrager zelf gaf, of heeft een andere belanghebbende naar verwachting bedenkingen, dan kan die vooraf zijn zienswijze geven (art. 4:7–4:9). Het bestuursorgaan geeft de beschikking binnen de wettelijke termijn, of anders binnen een redelijke termijn van ten hoogste acht weken; lukt dat niet, dan meldt het een nieuwe termijn, en de termijn wordt opgeschort tijdens het aanvullen (art. 4:13–4:15). Is een wettelijk voorschrift of het bestuursorgaan dat zo bepaalt, dan wordt het besluit voorbereid met de uniforme openbare voorbereidingsprocedure (art. 3:10). De beslisprocessen op aanvraag in de onderwerpen, zoals Behandelen aanvraag reisdocument, zijn gevallen van dit generieke proces.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen generiek proces voor elke beschikking op aanvraag; Behandelen aanvraag product (producten die gereed liggen) en Behandelen aanvraag vergunning of ontheffing (toestemmingen) zijn smaller. Nieuw voor GEMMA.
+deelprocessen:
+- naam: Ontvangen aanvraag
+  omschrijving: Het bestuursorgaan ontvangt de aanvraag, toetst de indieningseisen en laat haar zo nodig aanvullen, of besluit haar niet te behandelen (art. 4:1–4:5).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Voorbereiden beschikking
+  omschrijving: Het bestuursorgaan verzamelt de kennis over feiten en belangen en stelt de aanvrager of een derde-belanghebbende zo nodig in de gelegenheid zijn zienswijze te geven (art. 3:2, 4:7–4:9).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Beslissen op aanvraag
+  omschrijving: Het bestuursorgaan geeft de beschikking binnen de beslistermijn, of meldt een nieuwe termijn (art. 4:13–4:15).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+relaties:
+- soort: realisatie
+  naar: beschikking-aanvragen
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 1:3, 4:1; UPL nr. 55
+- soort: toegang (registreren)
+  naar: beschikking
+  naam: geeft
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 1:3 lid 2, 4:13
+- soort: toegang (raadplegen)
+  naar: aanvraag
+  naam: neemt in behandeling
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:1, 4:5
+besluiten:
+- datum: '2026-10-12'
+  besluit: Generiek bedrijfsproces met pagina, met Beschikking als kernobject; het realiseert de UPL-dienst Beschikking aanvragen. Beslisser en Belanghebbende worden eraan toegewezen. De beslisprocessen op aanvraag in de onderwerpen houden hun koppeling met GEMMA (gemma_generiek); specialisatierelaties naar dit proces volgen later (todo).
+  gevolg: verwerkt
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-beschikking.md

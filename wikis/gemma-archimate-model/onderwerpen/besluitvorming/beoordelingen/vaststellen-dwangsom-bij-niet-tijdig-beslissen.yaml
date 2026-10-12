@@ -1,0 +1,283 @@
+begrip: Vaststellen dwangsom bij niet tijdig beslissen
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Wettelijke taak (Awb art. 4:18): de dwangsom bij beschikking vaststellen; gangbaar als de dwangsom bij niet tijdig beslissen.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het gemeentelijke bestuursorgaan stelt verschuldigdheid en hoogte van de dwangsom vast en betaalt haar (art. 4:17, 4:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandig proces met een eigen beschikking, dat op elk te laat beslisproces kan volgen (art. 4:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: geldt voor elke beschikking op aanvraag (Awb § 4.1.3.2).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat gedaan wordt: de dwangsom vaststellen.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: 'Wordt per ingebrekestelling van begin tot eind doorlopen: ingebrekestelling ontvangen, verschuldigdheid en hoogte vaststellen, betalen (art. 4:17, 4:18).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Een procedure, beschreven naar hoe de dwangsom wordt vastgesteld; wat de afnemer krijgt is de dienst Dwangsom bij niet tijdig beslissen.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (het bestuursorgaan stelt de dwangsom bij beschikking vast) en Belanghebbende (de aanvrager stelt in gebreke) (art. 4:17 lid 3, 4:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Raadpleegt de aanvraag en haar beslistermijn; legt de beschikking tot vaststelling van de dwangsom vast (art. 4:17, 4:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een schriftelijke ingebrekestelling door de aanvrager na het verstrijken van de beslistermijn (art. 4:17 lid 3).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De beschikking tot vaststelling van verschuldigdheid en hoogte van de dwangsom (art. 4:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elke ingebrekestelling na een te late beschikking op aanvraag.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Paragraaf 4.1.3.2 Awb: aanvang twee weken na de ingebrekestelling, bedragen per dag, ten hoogste 42 dagen, vaststelling binnen twee weken, terugvordering (art. 4:17, 4:18, 4:20).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Eén mutatie in de levensloop van een beschikking: de vaststelling van de dwangsom bij een te late beschikking (art. 4:18).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Loopt van de ingebrekestelling door de aanvrager tot de beschikking tot vaststelling aan hem (art. 4:17 lid 3, 4:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Omvat geen andere processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Stelt één dwangsom vast; geen groepering van processen over de levensloop van een object.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Eindigt in de beschikking tot vaststelling van de dwangsom van het bestuursorgaan (art. 4:18).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Dwangsom bij niet tijdig beslissen (UPL rij 330; art. 4:17).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-logius-upl-actueel
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf het generieke proces voor elke beschikking op aanvraag, geen specialisatie van een generiek GEMMA-element.
+afnemer: extern
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+kernobject: beschikking
+definitie: Het vaststellen en betalen van de dwangsom die de gemeente verschuldigd is als zij na een ingebrekestelling niet tijdig op een aanvraag beslist.
+beschrijving:
+- Is de beslistermijn voor een beschikking op aanvraag verstreken, dan kan de aanvrager het bestuursorgaan schriftelijk in gebreke stellen. Vanaf twee weken na ontvangst verbeurt het bestuursorgaan een dwangsom per dag, ten hoogste 42 dagen (Awb art. 4:17). Het stelt verschuldigdheid en hoogte bij beschikking vast binnen twee weken na de laatste dag waarover de dwangsom verschuldigd was (art. 4:18). Bezwaar tegen de beschikking op de aanvraag geldt ook voor deze beschikking, voor zover de belanghebbende haar betwist (art. 4:19); een onverschuldigd betaalde dwangsom kan binnen vijf jaar worden teruggevorderd (art. 4:20). De ingebrekestelling start het proces en is geen eigen element.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor de dwangsom bij niet tijdig beslissen. Nieuw voor GEMMA.
+deelprocessen:
+- naam: Ontvangen ingebrekestelling
+  omschrijving: Het bestuursorgaan ontvangt de schriftelijke ingebrekestelling na het verstrijken van de beslistermijn; twee weken later begint de dwangsom te lopen (art. 4:17 lid 3).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Vaststellen dwangsom
+  omschrijving: Het bestuursorgaan stelt verschuldigdheid en hoogte bij beschikking vast binnen twee weken na de laatste dag, rekening houdend met de uitzonderingen (art. 4:17 lid 5, 4:18).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+relaties:
+- soort: realisatie
+  naar: dwangsom-bij-niet-tijdig-beslissen
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-logius-upl-actueel
+  vindplaats: art. 4:17; UPL rij 330
+- soort: toegang (registreren)
+  naar: beschikking
+  naam: stelt de dwangsom vast bij
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:18
+- soort: toegang (raadplegen)
+  naar: aanvraag
+  naam: raadpleegt
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:17 lid 1, 5
+besluiten:
+- datum: '2026-10-12'
+  besluit: Generiek bedrijfsproces met pagina, met Beschikking als kernobject (de vaststelling is een beschikking, art. 4:18); het realiseert de UPL-dienst Dwangsom bij niet tijdig beslissen. Beslisser en Belanghebbende worden eraan toegewezen; de ingebrekestelling start het proces en is geen eigen element.
+  gevolg: verwerkt
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-logius-upl-actueel
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/vaststellen-dwangsom-bij-niet-tijdig-beslissen.md

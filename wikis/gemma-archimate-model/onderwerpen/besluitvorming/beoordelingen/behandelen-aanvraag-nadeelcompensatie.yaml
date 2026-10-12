@@ -1,0 +1,287 @@
+begrip: Behandelen aanvraag nadeelcompensatie
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wettelijke procedure (Awb titel 4.5); gangbaar als het behandelen van een verzoek om nadeelcompensatie.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het gemeentelijke bestuursorgaan beslist op de aanvraag en kent de vergoeding toe (art. 4:126, 4:130).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandige procedure met eigen termijnen, niet een stap van één ander begrip (art. 4:127–4:131).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: geldt voor elk bestuursorgaan (Awb titel 4.5).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat gedaan wordt: beslissen op een aanvraag om nadeelcompensatie.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: 'Wordt per aanvraag van begin tot eind doorlopen: aanvraag, beoordeling van de schade, eventueel advies, beschikking (art. 4:127, 4:130).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Een procedure, beschreven naar hoe de aanvraag wordt behandeld; wat de afnemer krijgt is de dienst Nadeelcompensatie.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (het bestuursorgaan beslist op de aanvraag en kent de vergoeding toe) en Belanghebbende (de benadeelde vraagt de vergoeding aan) (art. 4:126, 4:127, 4:130).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Neemt de aanvraag in behandeling (art. 4:127); legt de beschikking over de vergoeding vast (art. 4:126, 4:130).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een aanvraag van de benadeelde, met de schadeveroorzakende gebeurtenis en de schade (art. 4:127).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een beschikking die de vergoeding toekent of de aanvraag afwijst (art. 4:126, 4:130, 4:131).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elke aanvraag om nadeelcompensatie.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Titel 4.5 Awb: inhoud van de aanvraag, recht van ten hoogste € 500, beslistermijn van acht weken of zes maanden met een adviescommissie, verdaging, verjaring (art. 4:127–4:131).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Eén mutatie in de levensloop van een beschikking: het besluit over de vergoeding (art. 4:126, 4:130).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Loopt van de aanvraag van de benadeelde tot de beschikking aan hem (art. 4:127, 4:130).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Omvat geen andere processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Behandelt één aanvraag; geen groepering van processen over de levensloop van een object.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Eindigt in de beschikking van het bestuursorgaan over de vergoeding (art. 4:126, 4:130).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Nadeelcompensatie (UPL nr. 260; art. 4:126).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf het generieke proces voor nadeelcompensatie door elk bestuursorgaan; het GEMMA-proces Behandelen aanvraag product gaat over producten die gereed liggen, niet over een schadebeoordeling.
+afnemer: extern
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+kernobject: beschikking
+definitie: Het beslissen op een aanvraag om vergoeding van onevenredige schade door rechtmatig handelen van de gemeente.
+beschrijving:
+- De benadeelde dient een aanvraag in met de schadeveroorzakende gebeurtenis en de aard en zo mogelijk het bedrag van de schade; een verordening kan een recht van ten hoogste € 500 heffen voor de behandeling (Awb art. 4:127, 4:128). Het bestuursorgaan beoordeelt of de schade boven het normale maatschappelijke risico uitgaat en de benadeelde onevenredig treft, en wat voor rekening van de aanvrager blijft (art. 4:126). Het beslist binnen acht weken, of binnen zes maanden als een adviescommissie met een onafhankelijke voorzitter adviseert, en kan eenmaal verdagen of de beslissing aanhouden tot een schadeveroorzakend besluit onherroepelijk is (art. 4:130). Kent het een vergoeding toe, dan vergoedt het ook redelijke kosten, het betaalde recht en de wettelijke rente (art. 4:129); na vijf of twintig jaar kan het de aanvraag afwijzen (art. 4:131).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen proces voor nadeelcompensatie. Nieuw voor GEMMA.
+deelprocessen:
+- naam: Ontvangen aanvraag nadeelcompensatie
+  omschrijving: Het bestuursorgaan ontvangt de aanvraag met de gebeurtenis en de schade, en heft zo nodig een recht (art. 4:127, 4:128).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Beoordelen schade
+  omschrijving: Het bestuursorgaan beoordeelt of de schade boven het normale maatschappelijke risico uitgaat en onevenredig is, eventueel met advies van een onafhankelijke adviescommissie (art. 4:126, 4:130).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Beslissen op aanvraag nadeelcompensatie
+  omschrijving: Het bestuursorgaan kent de vergoeding toe, met kosten en rente, of wijst de aanvraag af (art. 4:126, 4:129–4:131).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+relaties:
+- soort: realisatie
+  naar: nadeelcompensatie
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 4:126; UPL nr. 260
+- soort: toegang (registreren)
+  naar: beschikking
+  naam: kent de vergoeding toe of wijst af bij
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:126, 4:130
+- soort: toegang (raadplegen)
+  naar: aanvraag
+  naam: neemt in behandeling
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:127
+besluiten:
+- datum: '2026-10-12'
+  besluit: Generiek bedrijfsproces met pagina, met Beschikking als kernobject; het realiseert de UPL-dienst Nadeelcompensatie. Beslisser en Belanghebbende worden eraan toegewezen; de adviescommissie en het recht staan in de beschrijving.
+  gevolg: verwerkt
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-nadeelcompensatie.md

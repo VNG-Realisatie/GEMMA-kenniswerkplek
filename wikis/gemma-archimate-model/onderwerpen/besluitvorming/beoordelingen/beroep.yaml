@@ -1,0 +1,247 @@
+begrip: Beroep
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Product in de UPL (nr. 54, beroep); gangbaar: in beroep gaan bij de rechter (Awb art. 8:1).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het beroep richt zich tegen een besluit van een gemeentelijk bestuursorgaan; de gemeente is partij, zendt de stukken, voert verweer en neemt zo nodig een nieuw besluit (art. 8:42, 8:72 lid 4). De bestuursrechter beslist op het beroep.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 54).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: beroep staat open tegen elk besluit van een bestuursorgaan (Awb art. 8:1).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat wordt aangeboden: de rechterlijke toetsing van een besluit van de gemeente, waaraan de gemeente als partij meewerkt.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Een aangeboden prestatie, geen reeks activiteiten; die staat in het realiserende proces.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: ja
+    onderbouwing: 'Een prestatie voor de belanghebbende: zijn beroep tegen een besluit wordt door de bestuursrechter getoetst; de gemeente levert daarvoor de stukken en haar verweer, en voert de uitspraak uit (art. 8:1, 8:42, 8:72; UPL nr. 54).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Een dienst krijgt geen rol toegewezen; de rollen hangen aan het realiserende proces.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Een dienst gebruikt geen objecten; dat doet het realiserende proces.
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst; de aanleiding hoort bij het proces.'
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een uitspraak van de bestuursrechter; bij een gegrond beroep is het besluit vernietigd en neemt de gemeente zo nodig een nieuw besluit (art. 8:72).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk besluit waartegen een belanghebbende beroep instelt.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Hoofdstuk 6 en 8 Awb: beroepschrift bij de bestuursrechter, termijn van zes weken, bezwaar vooraf, stukken en verweerschrift binnen vier weken (art. 6:4 lid 3, 6:7, 7:1, 8:42).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: ja
+    onderbouwing: 'Burger en bedrijf (UPL nr. 54): de belanghebbende bij het besluit (art. 8:1).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gerealiseerd_door:
+    waarde: ja
+    onderbouwing: Voor het deel van de gemeente het bedrijfsproces Voeren verweer in beroep (art. 8:42, 8:72 lid 4); het beroep zelf behandelt de bestuursrechter.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het is zelf het aanbod.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL (nr. 54); geen bredere dienst in deze wiki.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf de generieke dienst voor beroep tegen elk besluit, geen specialisatie van een generiek GEMMA-element; GEMMA kent geen dienst beroep.
+afnemer: extern
+domein: Bestuur
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: Het instellen van beroep bij de bestuursrechter tegen een besluit van de gemeente.
+beschrijving:
+- 'Een belanghebbende kan tegen een besluit beroep instellen bij de bestuursrechter, door binnen zes weken een beroepschrift bij die rechter in te dienen (Awb art. 8:1, 6:4 lid 3, 6:7). Meestal gaat bezwaar vooraf; tegen de beslissing op bezwaar staat dan beroep open, en na de uniforme openbare voorbereidingsprocedure gaat de belanghebbende direct in beroep (art. 7:1). Bij de bekendmaking van een besluit vermeldt de gemeente of en waar beroep openstaat (art. 3:45). De bestuursrechter behandelt het beroep; de gemeente is partij: zij zendt binnen vier weken de stukken, kan een verweerschrift indienen, en neemt een nieuw besluit als de rechter het besluit vernietigt en dat opdraagt (art. 8:42, 8:72). De UPL noemt de dienst voor burgers en bedrijven (nr. 54).'
+synoniemen:
+- naam: Beroep instellen
+  context: wet
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen dienst en geen proces voor beroep; alleen de functie Bezwaar- en beroepafhandeling. Nieuw voor GEMMA.
+besluiten:
+- datum: '2026-10-12'
+  besluit: 'Dienst Beroep blijft (een UPL-item valt nooit weg), gerealiseerd door het generieke bedrijfsproces Voeren verweer in beroep: het deel van de gemeente, die partij is; de bestuursrechter behandelt het beroep en staat in de beschrijving, niet als element. Procesarchitectuur-terugmelding. Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Bezwaar- en beroepafhandeling onder Ondersteuning, een interne functie, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
+  gevolg: verwerkt
+  stand: 'open: Functie-indeling naar domein (todo)'
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/beroep.md

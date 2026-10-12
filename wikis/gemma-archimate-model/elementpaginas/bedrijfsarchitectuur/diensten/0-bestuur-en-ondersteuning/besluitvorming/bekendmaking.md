@@ -1,0 +1,99 @@
+---
+id: bekendmaking
+type: dienst
+archimate_type: business-service
+status: goedgekeurd
+naam: Bekendmaking
+onderwerpen:
+- besluitvorming
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: Het kenbaar maken van een besluit aan wie het aangaat, waarna het in werking treedt.
+match:
+  gemma: geen
+data_object: nee
+afnemer: extern
+domein: Bestuur
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- 2026-rijk-bekendmakingswet-wettekst
+---
+
+# Bekendmaking
+
+<!-- Gegenereerd door tools/render.py uit de beoordeling bekendmaking.yaml. Wijzig de beoordeling, niet deze pagina. -->
+
+**Status: goedgekeurd** door de redacteur.
+
+## Betekenis
+
+### Definitie
+
+Het kenbaar maken van een besluit aan wie het aangaat, waarna het in werking treedt.
+
+### Beschrijving
+
+Een besluit treedt niet in werking voordat het is bekendgemaakt (Awb art. 3:40). Een besluit dat tot belanghebbenden is gericht, zoals een vergunning, wordt hun toegezonden of uitgereikt; een besluit dat niet tot belanghebbenden is gericht, wordt bekendgemaakt in het gemeenteblad (art. 3:41, 3:42; Bekendmakingswet art. 6). Wie een zienswijze gaf, krijgt een mededeling, en bekendmaking en mededeling vermelden of en bij wie bezwaar of beroep openstaat (art. 3:43–3:45). De UPL noemt de dienst voor burgers en bedrijven (nr. 47).
+
+## Plaats in het model
+
+### Typering
+
+Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
+
+### Plaats in de indelingen
+
+- **Afnemer**: extern.
+- **Domein**: Bestuur.
+- **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
+
+### Kenmerken
+
+Alleen de kenmerken met ja; de overige 48 zijn nee.
+
+| Kenmerk | Onderbouwing |
+|---|---|
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, product in de UPL (nr. 47, bekendmaking); gangbaar: de bekendmaking van een besluit (Awb art. 3:40). [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het gemeentelijke bestuursorgaan maakt zijn besluiten bekend, door toezending aan de belanghebbenden of in het gemeenteblad (Awb art. 3:41, 3:42; Bekendmakingswet art. 6). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 47). [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: elk besluit treedt pas na bekendmaking in werking (Awb art. 3:40). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat de gemeente aanbiedt: een besluit kenbaar maken aan wie het aangaat. [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, een prestatie voor burgers en bedrijven: zij krijgen het besluit toegezonden of kunnen het in het gemeenteblad lezen, met de mogelijkheid van bezwaar en beroep (Awb art. 3:41–3:45; UPL nr. 47). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, het besluit is bekendgemaakt en treedt in werking; wie een zienswijze gaf, heeft een mededeling ontvangen (art. 3:40, 3:43). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk besluit van de gemeente. [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, afdeling 3.6 Awb: toezending of uitreiking, of plaatsing volgens de Bekendmakingswet, mededeling, vermelding van bezwaar en beroep (art. 3:40–3:45). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger en bedrijf (UPL nr. 47): de belanghebbenden tot wie het besluit is gericht en, bij een besluit zonder geadresseerden, ieder (art. 3:41, 3:42). [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Bekendmaken besluit (art. 3:40–3:45). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 47); geen bredere dienst in deze wiki. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+
+### Relaties
+
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Algemene wet bestuursrecht](../../../../motivatie/beleidskaders/rijksregelgeving/algemene-wet-bestuursrecht.md) | is grondslag voor *associatie (gericht)* | Bekendmaking | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 3:40–3:45) |
+| [Bekendmaken besluit](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/bekendmaken-besluit.md) | realiseert *realisatie* | Bekendmaking | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 3:40; UPL nr. 47) |
+
+## Herkomst
+
+### Bronnen
+
+| Korte titel | Bron |
+|---|---|
+| [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) | Algemene wet bestuursrecht (BWBR0005537) |
+| [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) | Bekendmakingswet (BWBR0004287) |
+
+### Afstemming met GEMMA
+
+Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen dienst bekendmaking; alleen de procesbouwsteen Bekendmaken besluit vergunningaanvraag en de functie Lokale bekendmakingen publicatie. Nieuw voor GEMMA.
+
+Procesarchitectuur-terugmeldingen:
+
+- [Nummer 27](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md) (indeling, open): **UPL:** bekendmaking (nr. 47, grondslag art. 3:40 Awb) en bekendmaking algemeen verbindend voorschrift (nr. 48, grondslag Bekendmakingswet) staan in het GEMMA-domein Fysieke leefomgeving, zonder taakveld ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), nr. 47, 48). **Bevinding:** elk besluit van de gemeente treedt pas na bekendmaking in werking, en elke verordening wordt in het gemeenteblad bekendgemaakt, in elk domein ([2026-rijk-algemene-wet-bestuursrecht-wettekst](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), art. 3:40–3:42; [2026-rijk-bekendmakingswet-wettekst](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md), art. 2 lid 2, 6, 8). De diensten horen dus niet bij de fysieke leefomgeving. GEMMA plaatst ze in het domein Bestuur, taakveld 0 Bestuur en Ondersteuning, bij het beleidsdomein Besluitvorming, gerealiseerd door het generieke proces Bekendmaken besluit. **Voorstel:** zet beide producten in het domein Bestuur, net als zienswijze, bezwaar en klacht, en geef ze een taakveld onder 0 Bestuur en Ondersteuning.
+
+### Besluiten redacteur
+
+- 2026-10-12: Dienst Bekendmaking, gerealiseerd door het generieke bedrijfsproces Bekendmaken besluit, dat ook de dienst Bekendmaking algemeen verbindend voorschrift realiseert; de Bekendmakingswet is bron. Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding). Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Lokale bekendmakingen publicatie onder Openbare informering (Niet domeingebonden), en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen). *Stand: open: Functie-indeling naar domein (todo)*

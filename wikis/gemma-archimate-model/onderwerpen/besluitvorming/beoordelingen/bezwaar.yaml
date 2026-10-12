@@ -1,0 +1,247 @@
+begrip: Bezwaar
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Product in de UPL (nr. 64, bezwaar); gangbaar: bezwaar maken tegen een besluit (Awb art. 6:4).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De belanghebbende maakt bezwaar bij het gemeentelijke bestuursorgaan dat het besluit nam, en dat beslist op het bezwaar (art. 6:4 lid 1, 7:11).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 64).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: bezwaar staat open tegen elk besluit van een bestuursorgaan, in elk onderwerp (Awb art. 7:1).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat de gemeente aanbiedt: de heroverweging van een besluit op bezwaar.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Een aangeboden prestatie, geen reeks activiteiten; die staat in het realiserende proces.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: ja
+    onderbouwing: 'Een prestatie voor de belanghebbende: zijn bezwaar tegen een besluit wordt gehoord en het besluit wordt heroverwogen, zonder naar de rechter te hoeven (art. 7:1, 7:2, 7:11; UPL nr. 64).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Een dienst krijgt geen rol toegewezen; de rollen hangen aan het realiserende proces.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Een dienst gebruikt geen objecten; dat doet het realiserende proces.
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst; de aanleiding hoort bij het proces.'
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een gemotiveerde beslissing op het bezwaar; zo nodig is het besluit herroepen en vervangen door een nieuw besluit (art. 7:11, 7:12).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk besluit waartegen een belanghebbende bezwaar maakt.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Hoofdstuk 6 en 7 Awb: bezwaarschrift met eisen aan de inhoud, termijn van zes weken, horen, beslistermijn van zes of twaalf weken (art. 6:5, 6:7, 7:2, 7:10).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: ja
+    onderbouwing: 'Burger en bedrijf (UPL nr. 64): de belanghebbende bij het besluit (art. 6:4, 8:1).'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gerealiseerd_door:
+    waarde: ja
+    onderbouwing: Het bedrijfsproces Behandelen bezwaar (art. 7:2–7:12).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het is zelf het aanbod.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL (nr. 64); geen bredere dienst in deze wiki.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf de generieke dienst voor bezwaar tegen elk besluit, geen specialisatie van een generiek GEMMA-element; GEMMA kent geen dienst bezwaar.
+afnemer: extern
+domein: Bestuur
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: Het maken van bezwaar tegen een besluit bij het bestuursorgaan dat het nam, zodat het het besluit heroverweegt.
+beschrijving:
+- Een belanghebbende die het niet eens is met een besluit, maakt bezwaar door binnen zes weken na de bekendmaking een bezwaarschrift in te dienen bij het bestuursorgaan dat het besluit nam (Awb art. 6:4 lid 1, 6:7, 6:8). Bezwaar gaat in de regel vooraf aan beroep bij de bestuursrechter; dat geldt niet voor een besluit dat met de uniforme openbare voorbereidingsprocedure is voorbereid (art. 7:1). Het bestuursorgaan hoort de belanghebbenden, heroverweegt het besluit en beslist binnen zes weken, of binnen twaalf weken als een adviescommissie adviseert (art. 7:2, 7:10, 7:11). De UPL noemt de dienst voor burgers en bedrijven (nr. 64).
+synoniemen:
+- naam: Bezwaar maken
+  context: wet
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen dienst bezwaar; wel het bedrijfsproces Behandelen bezwaar, dat de wiki koppelt aan het realiserende proces. Nieuw voor GEMMA.
+besluiten:
+- datum: '2026-10-12'
+  besluit: 'Dienst Bezwaar, gerealiseerd door het generieke bedrijfsproces Behandelen bezwaar, met het nieuwe bedrijfsobject Bezwaarschrift als kernobject (GGM-terugmelding hiaat). Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Bezwaar- en beroepafhandeling onder Ondersteuning, een interne functie, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
+  gevolg: verwerkt
+  stand: 'open: Functie-indeling naar domein (todo)'
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/bezwaar.md

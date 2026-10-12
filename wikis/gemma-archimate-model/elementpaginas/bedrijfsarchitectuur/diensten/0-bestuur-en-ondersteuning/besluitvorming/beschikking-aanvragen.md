@@ -1,0 +1,113 @@
+---
+id: beschikking-aanvragen
+type: dienst
+archimate_type: business-service
+status: goedgekeurd
+naam: Beschikking aanvragen
+onderwerpen:
+- besluitvorming
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: Het aanvragen van een besluit van de gemeente in een concreet geval, zoals een vergunning of ontheffing.
+match:
+  gemma: geen
+data_object: nee
+afnemer: extern
+domein: Bestuur
+synoniemen:
+- Beschikking (UPL)
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-logius-upl-actueel
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+---
+
+# Beschikking aanvragen
+
+<!-- Gegenereerd door tools/render.py uit de beoordeling beschikking-aanvragen.yaml. Wijzig de beoordeling, niet deze pagina. -->
+
+**Status: goedgekeurd** door de redacteur.
+
+## Betekenis
+
+### Definitie
+
+Het aanvragen van een besluit van de gemeente in een concreet geval, zoals een vergunning of ontheffing.
+
+### Beschrijving
+
+Een belanghebbende kan het bestuursorgaan vragen een beschikking te geven: een besluit in een concreet geval, zoals een vergunning (Awb art. 1:3). De aanvraag is schriftelijk, ondertekend en bevat ten minste naam en adres, dagtekening en de gevraagde beschikking (art. 4:1, 4:2). Het bestuursorgaan laat een onvolledige aanvraag aanvullen, hoort de aanvrager bij een voorgenomen afwijzing op afwijkende gegevens en geeft de beschikking binnen de wettelijke termijn of anders binnen acht weken (art. 4:5, 4:7, 4:13, 4:14). Het is het algemene aanbod waarvan de diensten op aanvraag in de onderwerpen, zoals een verlof of een reisdocument, gevallen zijn. De UPL noemt de dienst voor burgers en bedrijven (nr. 55).
+
+### Synoniemen
+
+| Synoniem | Context |
+|---|---|
+| Beschikking | UPL |
+
+### Naamkeuze
+
+Beschikking aanvragen: de dienst geformuleerd vanuit de afnemer, met de UPL-naam Beschikking als synoniem (precedent Rijbewijs aanvragen), zodat zij niet dezelfde naam draagt als het bedrijfsobject Beschikking (besluit 2026-10-12).
+
+### Homoniemen
+
+| Begrip | Betekenis | Naamkeuze |
+|---|---|---|
+| [Beschikking](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md) (bedrijfsobject Beschikking in deze wiki) | Het besluit zelf, niet van algemene strekking (Awb art. 1:3 lid 2): het bedrijfsobject dat deze dienst oplevert | De dienst heet Beschikking aanvragen; het bedrijfsobject houdt de naam Beschikking. |
+
+## Plaats in het model
+
+### Typering
+
+Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
+
+### Plaats in de indelingen
+
+- **Afnemer**: extern.
+- **Domein**: Bestuur.
+- **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
+
+### Kenmerken
+
+Alleen de kenmerken met ja; de overige 48 zijn nee.
+
+| Kenmerk | Onderbouwing |
+|---|---|
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, product in de UPL (nr. 55, beschikking, soort aanvraag); gangbaar: een beschikking aanvragen (Awb art. 1:3 lid 3, 4:1). [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [UPL](../../../../../modellen/upl/bronduidingen/informatiemodel/2026-logius-upl-actueel.md), [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het gemeentelijke bestuursorgaan beslist op de aanvraag en geeft de beschikking (art. 4:1, 4:13). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 55). [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: het algemene aanbod om op een aanvraag een beschikking te krijgen, in elk onderwerp (Awb afdeling 4.1). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat de gemeente aanbiedt: beslissen op een aanvraag om een beschikking. [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, een prestatie voor de aanvrager: op zijn aanvraag krijgt hij binnen de beslistermijn een beschikking (art. 1:3, 4:1, 4:13; UPL nr. 55). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een beschikking, ook als die de aanvraag afwijst (art. 1:3 lid 2). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elke aanvraag om een beschikking. [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, afdeling 4.1 Awb: indieningseisen, aanvullen, zienswijze bij een voorgenomen afwijzing, beslistermijn van ten hoogste acht weken (art. 4:1–4:15). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger en bedrijf (UPL nr. 55): de aanvrager, een belanghebbende (art. 1:3 lid 3). [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Behandelen aanvraag beschikking (Awb afdeling 4.1). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 55); de generieke dienst waarvan de diensten op aanvraag in de onderwerpen gevallen zijn; geen bredere dienst in deze wiki. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+
+### Relaties
+
+#### Inkomend
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| [Algemene wet bestuursrecht](../../../../motivatie/beleidskaders/rijksregelgeving/algemene-wet-bestuursrecht.md) | is grondslag voor *associatie (gericht)* | Beschikking aanvragen | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 1:3, afdeling 4.1) |
+| [Behandelen aanvraag beschikking](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-beschikking.md) | realiseert *realisatie* | Beschikking aanvragen | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 1:3, 4:1; UPL nr. 55) |
+
+## Herkomst
+
+### Bronnen
+
+| Korte titel | Bron |
+|---|---|
+| [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
+| [UPL](../../../../../modellen/upl/bronduidingen/informatiemodel/2026-logius-upl-actueel.md) | Uniforme Productnamenlijst (UPL), actueel |
+| [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) | Algemene wet bestuursrecht (BWBR0005537) |
+
+### Afstemming met GEMMA
+
+Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen generieke dienst voor een beschikking; het bedrijfsobject Beschikking is een ander elementtype. Nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-12: Generieke dienst Beschikking aanvragen, met de UPL-naam Beschikking als synoniem (geen homoniem van het bedrijfsobject), gerealiseerd door het generieke bedrijfsproces Behandelen aanvraag beschikking. De specialisatierelaties van de diensten en processen op aanvraag in de onderwerpen naar deze generieke elementen volgen later (todo). Geen plek in de Functie-indeling naar domein: welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen). *Stand: open: Functie-indeling naar domein en specialisaties (todo)*

@@ -40,6 +40,7 @@ bronnen:
 - 2026-rvig-hup-wijziging-naamgebruik
 - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
 - 2026-rvig-hup-overlijden-buitenland
+- 2026-rijk-bekendmakingswet-wettekst
 gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
 gemma_naam: Beslisser
 gemma_type: business-role
@@ -149,6 +150,13 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Beslisser | verklaart vervallen *toewijzing* | [Inhouden reisdocument](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | [Paspoortwet](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) (art. 44, 46) |
 | Beslisser | beslist over *toewijzing* | [Wijzigen naamgebruik](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-naamgebruik.md) | [HUP BRP: Wijziging naamgebruik](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md) (regel 34) |
 | Beslisser | beslist over *toewijzing* | [Verwerken buitenlands document](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-buitenlands-document.md) | [Utrecht Buitenlandse documenten inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md), [HUP BRP: Overlijden buitenland](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-overlijden-buitenland.md) (Utrecht: Na uw afspraak; HUP regel 33) |
+| Beslisser | heroverweegt het besluit en beslist op het bezwaar *toewijzing* | [Behandelen bezwaar](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-bezwaar.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 7:11, 7:12) |
+| Beslisser | behandelt de klacht en meldt zijn oordeel *toewijzing* | [Behandelen klacht](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-klacht.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 9:2, 9:11, 9:12) |
+| Beslisser | zendt de stukken, voert verweer en neemt zo nodig een nieuw besluit *toewijzing* | [Voeren verweer in beroep](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/voeren-verweer-in-beroep.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 8:42, 8:72 lid 4) |
+| Beslisser | maakt het besluit bekend en doet mededeling *toewijzing* | [Bekendmaken besluit](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/bekendmaken-besluit.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) (Awb art. 3:41–3:43; Bekendmakingswet art. 6) |
+| Beslisser | stelt de dwangsom bij beschikking vast *toewijzing* | [Vaststellen dwangsom bij niet tijdig beslissen](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/vaststellen-dwangsom-bij-niet-tijdig-beslissen.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:18) |
+| Beslisser | beslist op de aanvraag en kent de vergoeding toe *toewijzing* | [Behandelen aanvraag nadeelcompensatie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-nadeelcompensatie.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:126, 4:130) |
+| Beslisser | beslist op de aanvraag en geeft de beschikking *toewijzing* | [Behandelen aanvraag beschikking](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-beschikking.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:1, 4:13) |
 
 #### Inkomend
 
@@ -187,6 +195,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [HUP BRP: Wijziging naamgebruik](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-wijziging-naamgebruik.md) | HUP BRP: Wijziging naamgebruik |
 | [Utrecht Buitenlandse documenten inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md) | Gemeente Utrecht: Buitenlandse documenten inschrijven |
 | [HUP BRP: Overlijden buitenland](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-overlijden-buitenland.md) | HUP BRP: Overlijden buitenland |
+| [Bekendmakingswet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) | Bekendmakingswet (BWBR0004287) |
 
 ### Afstemming met GEMMA
 

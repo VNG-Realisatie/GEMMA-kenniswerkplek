@@ -190,7 +190,7 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Art. 3:15 (zienswijze, UPL nr. 497) en afdeling 3.4 (uniforme openbare voorbereidingsprocedure); de UPL noemt de Awb ook als grondslag van bezwaar (art. 7:1), beroep (art. 8:1), klacht (art. 9:1), bekendmaking (art. 3:40), dwangsom bij niet tijdig beslissen (art. 4:17) en nadeelcompensatie (art. 4:126), die in de tweede plak van dit onderwerp volgen.
+    onderbouwing: Grondslag voor de UPL-diensten Zienswijze (art. 3:15, afdeling 3.4, de uniforme openbare voorbereidingsprocedure), Bekendmaking (art. 3:40), Beschikking aanvragen (art. 1:3, afdeling 4.1), Dwangsom bij niet tijdig beslissen (art. 4:17), Nadeelcompensatie (art. 4:126), Bezwaar (art. 7:1), Beroep (art. 8:1) en Klacht (art. 9:1); de UPL noemt de Awb ook als grondslag van subsidie (art. 4:21), bestuurlijke boete (art. 5:40) en spoedeisende bestuursdwang (art. 5:31), die bij andere onderwerpen horen.
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
     - 2025-vng-upl-producten-en-diensten-extern
@@ -219,6 +219,67 @@ beleidsdomein: Besluitvorming
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+relaties:
+- soort: associatie (gericht)
+  naar: zienswijze
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 3:15
+- soort: associatie (gericht)
+  naar: bezwaar
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 6:4, 7:1
+- soort: associatie (gericht)
+  naar: klacht
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 9:1, 9:2
+- soort: associatie (gericht)
+  naar: beroep
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 8:1
+- soort: associatie (gericht)
+  naar: bekendmaking
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 3:40–3:45
+- soort: associatie (gericht)
+  naar: dwangsom-bij-niet-tijdig-beslissen
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:17, 4:18
+- soort: associatie (gericht)
+  naar: nadeelcompensatie
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:126
+- soort: associatie (gericht)
+  naar: beschikking-aanvragen
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 1:3, afdeling 4.1
+besluiten:
+- datum: '2026-10-11'
+  besluit: 'Beleidskader in Besluitvorming (thuisonderwerp), met Lijkbezorging als tweede onderwerp. Is grondslag voor alleen naar diensten en processen (Zienswijze, de uniforme openbare voorbereidingsprocedure; in de tweede plak bezwaar, klacht en de andere UPL-diensten), niet naar de rol en de objecten die de wet definieert: die hebben de Awb als bron.'
+  gevolg: verwerkt
 status: goedgekeurd
 beslist:
   uitkomst:
@@ -236,15 +297,3 @@ beslist:
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: rijksregelgeving
   pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/algemene-wet-bestuursrecht.md
-relaties:
-- soort: associatie (gericht)
-  naar: zienswijze
-  naam: is grondslag voor
-  ggm_match: geen
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  vindplaats: art. 3:15
-besluiten:
-- datum: '2026-10-11'
-  besluit: 'Beleidskader in Besluitvorming (thuisonderwerp), met Lijkbezorging als tweede onderwerp. Is grondslag voor alleen naar diensten en processen (Zienswijze, de uniforme openbare voorbereidingsprocedure; in de tweede plak bezwaar, klacht en de andere UPL-diensten), niet naar de rol en de objecten die de wet definieert: die hebben de Awb als bron.'
-  gevolg: verwerkt

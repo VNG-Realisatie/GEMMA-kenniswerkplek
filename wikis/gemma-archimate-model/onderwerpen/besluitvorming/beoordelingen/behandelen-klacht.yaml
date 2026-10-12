@@ -1,0 +1,289 @@
+begrip: Behandelen klacht
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wettelijke procedure (Awb titel 9.1); gangbaar als klachtbehandeling of klachtafhandeling; GEMMA kent het proces Behandelen klacht.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het gemeentelijke bestuursorgaan behandelt de klachten over zijn gedragingen en die van wie onder zijn verantwoordelijkheid werkt (art. 9:1, 9:2).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandige procedure, los van een besluit, niet een stap van één ander begrip (art. 9:2).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: een algemene procedure van elk bestuursorgaan uit de Awb (titel 9.1).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat gedaan wordt: het behandelen van een klacht.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: 'Wordt per schriftelijke klacht van begin tot eind doorlopen: ontvangstbevestiging, horen, onderzoek, gemotiveerd oordeel (art. 9:6, 9:10–9:12).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Een procedure, beschreven naar hoe de klacht wordt behandeld; wat de afnemer krijgt is de dienst Klacht.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (het bestuursorgaan draagt zorg voor de behandeling, handelt af en meldt zijn oordeel) en Klager (dient de klacht in en wordt gehoord) (art. 9:2, 9:4, 9:10–9:12).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Ontvangt en behandelt de schriftelijke klacht; de klachten worden jaarlijks gepubliceerd (art. 9:6, 9:12a).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een klacht over een gedraging van het bestuursorgaan, voor de procedure van afdeling 9.1.2 een schriftelijke klacht (art. 9:1, 9:4).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Een schriftelijke en gemotiveerde kennisgeving aan de klager van de bevindingen, het oordeel en de conclusies (art. 9:12).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elke klacht over een gedraging.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Titel 9.1 Awb: ontvangstbevestiging, behandeling door iemand die niet bij de gedraging betrokken was, horen met verslag, afhandeling binnen zes of tien weken, jaarlijkse publicatie (art. 9:6, 9:7, 9:10, 9:11, 9:12a).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: Eén afhandeling binnen de klachtbehandeling van het bestuursorgaan, dat alle schriftelijke klachten bijhoudt en jaarlijks publiceert (art. 9:2, 9:12a).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Loopt van de klacht van de klager tot de kennisgeving van het oordeel aan hem (art. 9:4, 9:12).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Omvat geen andere processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Behandelt één klacht tot het oordeel; geen groepering van processen over de levensloop van een object.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Eindigt in een oordeel over de klacht, niet in een besluit waartegen beroep openstaat (art. 9:3, 9:12).
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Klacht (UPL nr. 212; art. 9:1).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf het generieke proces voor een klacht over elk bestuursorgaan, en de GEMMA-match zelf (Behandelen klacht), geen specialisatie ervan.
+afnemer: extern
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+kernobject: schriftelijke-klacht
+definitie: 'Het behandelen van een klacht over een gedraging van een bestuursorgaan: de klager horen, de klacht onderzoeken en een oordeel geven.'
+beschrijving:
+- Het bestuursorgaan draagt zorg voor een behoorlijke behandeling van mondelinge en schriftelijke klachten over zijn gedragingen en die van wie onder zijn verantwoordelijkheid werkt (Awb art. 9:1, 9:2). Voor een schriftelijke klacht bevestigt het de ontvangst, laat het de klacht behandelen door iemand die niet bij de gedraging betrokken was, hoort het de klager en degene over wie geklaagd wordt en maakt het een verslag (art. 9:4, 9:6, 9:7, 9:10). Het kan een klacht onder voorwaarden niet behandelen, bijvoorbeeld als bezwaar of beroep openstond (art. 9:8). Het handelt de klacht af binnen zes weken, of tien weken als een klachtadviescommissie adviseert, en meldt de klager schriftelijk en gemotiveerd zijn bevindingen en oordeel, met de ombudsman bij wie hij daarna terecht kan (art. 9:11, 9:12, afdeling 9.1.3). Het houdt de schriftelijke klachten bij en publiceert ze jaarlijks (art. 9:12a).
+gemma:
+  id: id-904ab005-ae79-48be-8200-14ccb6676a53
+  sterkte: sterk
+  onderbouwing: 'Hetzelfde proces: het afhandelen van een klacht over een gedraging. GEMMA beperkt het tot gedrag of houding van een ambtenaar; de Awb omvat ook gedragingen van het bestuursorgaan zelf (art. 9:1). Nieuw: een definitie volgens de Awb, het kernobject Schriftelijke klacht en de relaties.'
+deelprocessen:
+- naam: Ontvangen klacht
+  omschrijving: Het bestuursorgaan bevestigt de ontvangst van de schriftelijke klacht en beoordeelt of het de klacht behandelt (art. 9:4, 9:6, 9:8).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Onderzoeken klacht
+  omschrijving: Iemand die niet bij de gedraging betrokken was, onderzoekt de klacht en hoort de klager en degene over wie geklaagd wordt, met een verslag; eventueel adviseert een klachtadviescommissie (art. 9:7, 9:9, 9:10, afdeling 9.1.3).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Afhandelen klacht
+  omschrijving: Het bestuursorgaan meldt de klager schriftelijk en gemotiveerd de bevindingen, het oordeel en de conclusies, met de ombudsman; de klacht komt in het jaarlijkse overzicht (art. 9:11, 9:12, 9:12a).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+relaties:
+- soort: realisatie
+  naar: klacht
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 9:1; UPL nr. 212
+- soort: toegang (registreren)
+  naar: schriftelijke-klacht
+  naam: behandelt
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 9:4, 9:6, 9:12a
+besluiten:
+- datum: '2026-10-12'
+  besluit: Generiek bedrijfsproces met pagina, gekoppeld aan het GEMMA-proces Behandelen klacht; het realiseert de UPL-dienst Klacht en heeft het bedrijfsobject Klaagschrift als kernobject. Beslisser en Klager worden eraan toegewezen. Mondelinge klachten en de klachtadviescommissie staan in de beschrijving.
+  gevolg: verwerkt
+  stand: 'herzien 2026-10-12: het kernobject heet Schriftelijke klacht, met Klaagschrift als synoniem (regel Bronvoorrang)'
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-904ab005-ae79-48be-8200-14ccb6676a53
+    gemma_naam: Behandelen klacht
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van klachten tegen het "gedrag of een houding" van een gemeentelijke ambtenaar. Elke blijk van onvrede over gedrag en/of houding met betrekking tot dienstverlening, tussen een klant en een of meer ambtenaren in functie.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 904ab005-ae79-48be-8200-14ccb6676a53
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-klacht.md

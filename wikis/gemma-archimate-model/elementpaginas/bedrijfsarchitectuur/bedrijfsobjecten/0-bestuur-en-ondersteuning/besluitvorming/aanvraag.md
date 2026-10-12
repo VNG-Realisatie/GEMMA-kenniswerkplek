@@ -117,7 +117,10 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Behandelen aanvraag beschikking](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-beschikking.md) | neemt in behandeling *toegang (raadplegen)* | Aanvraag | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:1, 4:5) |
+| [Behandelen aanvraag nadeelcompensatie](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-nadeelcompensatie.md) | neemt in behandeling *toegang (raadplegen)* | Aanvraag | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:127) |
 | [Uitvoeren uniforme openbare voorbereidingsprocedure](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md) | raadpleegt *toegang (raadplegen)* | Aanvraag | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 3:13, 3:18) |
+| [Vaststellen dwangsom bij niet tijdig beslissen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/vaststellen-dwangsom-bij-niet-tijdig-beslissen.md) | raadpleegt *toegang (raadplegen)* | Aanvraag | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:17 lid 1, 5) |
 
 ## Herkomst
 

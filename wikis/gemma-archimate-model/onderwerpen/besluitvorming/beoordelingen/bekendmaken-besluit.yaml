@@ -1,0 +1,308 @@
+begrip: Bekendmaken besluit
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wettelijke stap na elk besluit (Awb afdeling 3.6; Bekendmakingswet); GEMMA kent haar als procesbouwsteen en deelproces Bekendmaken.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-bekendmakingswet-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het gemeentelijke bestuursorgaan maakt zijn besluiten en regelingen bekend; het college geeft het gemeenteblad uit (Awb art. 3:41, 3:42; Bekendmakingswet art. 2 lid 2, 6).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-bekendmakingswet-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandig proces met eigen regels dat op elk besluit volgt, niet een stap van één ander begrip (art. 3:40–3:45).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: elk besluit en elke regeling wordt zo bekendgemaakt (Awb afdeling 3.6).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat gedaan wordt: een besluit bekendmaken.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: 'Wordt per besluit van begin tot eind doorlopen: toezenden of plaatsen in het gemeenteblad, mededeling aan wie een zienswijze gaf, kennisgeving van de terinzagelegging (Awb art. 3:41–3:44; Bekendmakingswet art. 6, 12).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-bekendmakingswet-wettekst
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Een procedure, beschreven naar hoe het besluit wordt bekendgemaakt; wat de afnemer krijgt zijn de diensten Bekendmaking en Bekendmaking algemeen verbindend voorschrift.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (het bestuursorgaan dat het besluit nam, maakt het bekend en doet mededeling) (Awb art. 3:41–3:43; Bekendmakingswet art. 6).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-bekendmakingswet-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Verstrekt het besluit door toezending of plaatsing in het gemeenteblad, en een regeling door plaatsing in het gemeenteblad (Awb art. 3:41, 3:42; Bekendmakingswet art. 6).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-bekendmakingswet-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een genomen besluit of vastgestelde regeling, die pas na bekendmaking in werking treedt (Awb art. 3:40; Bekendmakingswet art. 8).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-bekendmakingswet-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Het bekendgemaakte besluit, dat in werking treedt, met de vermelding van bezwaar en beroep; de mededelingen aan wie een zienswijze gaf (art. 3:40, 3:43, 3:45).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk besluit en elke regeling.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-bekendmakingswet-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Afdeling 3.6 Awb en de Bekendmakingswet: wijze van bekendmaken, mededeling, vermelding van bezwaar en beroep, inwerkingtreding, terinzagelegging (Awb art. 3:40–3:45; Bekendmakingswet art. 6, 8, 10, 12, 13).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-bekendmakingswet-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Eén mutatie in de levensloop van een besluit: van genomen tot in werking (Awb art. 3:40).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Loopt van het genomen besluit tot het moment dat de belanghebbenden en ieder het kennen en het in werking treedt (art. 3:40–3:45).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Omvat geen andere processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Maakt één besluit bekend; geen groepering van processen over de levensloop van een object.
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Maakt een besluit bekend dat al genomen is; neemt zelf geen besluit.
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de diensten Bekendmaking (UPL nr. 47) en Bekendmaking algemeen verbindend voorschrift (UPL nr. 48).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2026-rijk-bekendmakingswet-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: De inwerkingtreding volgt uit de bekendmaking, maar is in de bronnen geen benoemde gebeurtenis die een ander proces start.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf het generieke proces voor de bekendmaking van elk besluit; de GEMMA-procesbouwsteen Bekendmaken besluit vergunningaanvraag is een smallere toepassing, geen generiek element waarvan dit een specialisatie is.
+afnemer: extern
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+kernobject: besluit
+definitie: Het kenbaar maken van een genomen besluit of vastgestelde regeling, door toezending aan belanghebbenden of plaatsing in het gemeenteblad.
+beschrijving:
+- Een besluit treedt niet in werking voordat het is bekendgemaakt (Awb art. 3:40). Het bestuursorgaan zendt een besluit dat tot belanghebbenden is gericht aan hen toe of reikt het uit; een algemeen verbindend voorschrift, een beleidsregel of een ander besluit dat niet tot belanghebbenden is gericht, plaatst het in het gemeenteblad, dat het college uitgeeft (art. 3:41, 3:42; Bekendmakingswet art. 2 lid 2, 6). Tegelijk of kort daarna doet het mededeling aan wie een zienswijze gaf; na de uniforme openbare voorbereidingsprocedure legt het het besluit met de stukken ter inzage en geeft het daarvan kennis (Awb art. 3:43, 3:44; Bekendmakingswet art. 12, 13). Bekendmaking en mededeling vermelden of, binnen welke termijn en bij wie bezwaar of beroep openstaat (Awb art. 3:45). Een algemeen verbindend voorschrift treedt zonder andere aanduiding op de achtste dag na de bekendmaking in werking (Bekendmakingswet art. 8, 10 lid 2).
+synoniemen:
+- naam: Bekendmaken
+  context: GEMMA
+gemma:
+  sterkte: geen
+  onderbouwing: 'Het GEMMA-model kent alleen smallere toepassingen: de procesbouwsteen Bekendmaken besluit vergunningaanvraag (id-f2fcbce2-f5ae-4f84-8b52-7c07fe8f3062) en het Deelproces Bekendmaken bij het omgevingsplan (id-d77cf7f1-2756-4b4a-8d17-ade11dbc9d6c). Nieuw voor GEMMA als generiek proces.'
+deelprocessen:
+- naam: Bekendmaken aan belanghebbenden
+  omschrijving: Het bestuursorgaan zendt het besluit toe of reikt het uit aan de belanghebbenden tot wie het is gericht, onder wie de aanvrager (Awb art. 3:41).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Plaatsen in het gemeenteblad
+  omschrijving: Een algemeen verbindend voorschrift, een beleidsregel of een besluit zonder geadresseerden wordt in het gemeenteblad geplaatst (Awb art. 3:42; Bekendmakingswet art. 6).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-bekendmakingswet-wettekst
+- naam: Doen van mededeling
+  omschrijving: Mededeling aan wie een zienswijze gaf, en na afdeling 3.4 kennisgeving van de terinzagelegging; met de vermelding van bezwaar en beroep (Awb art. 3:43–3:45; Bekendmakingswet art. 12, 13).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-bekendmakingswet-wettekst
+relaties:
+- soort: realisatie
+  naar: bekendmaking
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 3:40; UPL nr. 47
+- soort: realisatie
+  naar: bekendmaking-algemeen-verbindend-voorschrift
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-bekendmakingswet-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 6, 8; UPL nr. 48
+- soort: toegang (verstrekken)
+  naar: besluit
+  naam: maakt bekend
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 3:41, 3:42
+- soort: toegang (verstrekken)
+  naar: regeling
+  naam: plaatst in het gemeenteblad
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-bekendmakingswet-wettekst
+  vindplaats: art. 6, 8
+besluiten:
+- datum: '2026-10-12'
+  besluit: Generiek bedrijfsproces met pagina, met Besluit als kernobject; het realiseert de UPL-diensten Bekendmaking en Bekendmaking algemeen verbindend voorschrift. Beslisser wordt eraan toegewezen. Het gemeenteblad staat in de beschrijving.
+  gevolg: verwerkt
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-bekendmakingswet-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/bekendmaken-besluit.md

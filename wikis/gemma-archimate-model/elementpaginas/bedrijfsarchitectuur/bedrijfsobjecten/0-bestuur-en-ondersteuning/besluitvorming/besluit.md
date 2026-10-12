@@ -79,7 +79,7 @@ Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 
 ### Plaats in de indelingen
 
 - **Objectniveau**: generiek.
-- **Mutaties door bedrijfsprocessen**: [Uitvoeren uniforme openbare voorbereidingsprocedure](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md).
+- **Mutaties door bedrijfsprocessen**: [Bekendmaken besluit](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/bekendmaken-besluit.md), [Uitvoeren uniforme openbare voorbereidingsprocedure](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md), [Voeren verweer in beroep](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/voeren-verweer-in-beroep.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
 
 ### Kenmerken
@@ -109,8 +109,13 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Aanvraag](aanvraag.md) | leidt tot *associatie (gericht)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 1:3 lid 3, 4:1); GGM (EAID_1778947E_A0EE_C776_2C1C_281C33036576) |
+| [Behandelen bezwaar](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-bezwaar.md) | heroverweegt en herroept zo nodig *toegang (bijwerken)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 7:11) |
+| [Bekendmaken besluit](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/bekendmaken-besluit.md) | maakt bekend *toegang (verstrekken)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 3:41, 3:42) |
 | [Beschikking](beschikking.md) | is een *specialisatie* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 1:3 lid 2) |
+| [Bezwaarschrift](bezwaarschrift.md) | is gericht tegen *associatie (gericht)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 6:5 lid 1 onder c, 7:11) |
 | [Uitvoeren uniforme openbare voorbereidingsprocedure](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md) | legt ter inzage als ontwerp en neemt *toegang (registreren)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 3:11, 3:18) |
+| [Voeren verweer in beroep](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/voeren-verweer-in-beroep.md) | zendt de stukken over het bestreden besluit *toegang (raadplegen)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 8:42 lid 1) |
+| [Voeren verweer in beroep](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/voeren-verweer-in-beroep.md) | neemt na vernietiging zo nodig een nieuw *toegang (registreren)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 8:72 lid 4) |
 
 ## Herkomst
 

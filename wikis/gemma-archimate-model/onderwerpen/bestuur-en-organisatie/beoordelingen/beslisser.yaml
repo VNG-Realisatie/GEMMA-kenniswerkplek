@@ -458,6 +458,56 @@ relaties:
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
   - 2026-rvig-hup-overlijden-buitenland
   vindplaats: 'Utrecht: Na uw afspraak; HUP regel 33'
+- soort: toewijzing
+  naar: behandelen-bezwaar
+  naam: heroverweegt het besluit en beslist op het bezwaar
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 7:11, 7:12
+- soort: toewijzing
+  naar: behandelen-klacht
+  naam: behandelt de klacht en meldt zijn oordeel
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 9:2, 9:11, 9:12
+- soort: toewijzing
+  naar: voeren-verweer-in-beroep
+  naam: zendt de stukken, voert verweer en neemt zo nodig een nieuw besluit
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 8:42, 8:72 lid 4
+- soort: toewijzing
+  naar: bekendmaken-besluit
+  naam: maakt het besluit bekend en doet mededeling
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-bekendmakingswet-wettekst
+  vindplaats: Awb art. 3:41–3:43; Bekendmakingswet art. 6
+- soort: toewijzing
+  naar: vaststellen-dwangsom-bij-niet-tijdig-beslissen
+  naam: stelt de dwangsom bij beschikking vast
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:18
+- soort: toewijzing
+  naar: behandelen-aanvraag-nadeelcompensatie
+  naam: beslist op de aanvraag en kent de vergoeding toe
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:126, 4:130
+- soort: toewijzing
+  naar: behandelen-aanvraag-beschikking
+  naam: beslist op de aanvraag en geeft de beschikking
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 4:1, 4:13
 onderwerpen:
 - bestuur-en-organisatie
 - lijkbezorging
@@ -508,6 +558,7 @@ beslist:
   - 2026-rvig-hup-wijziging-naamgebruik
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
   - 2026-rvig-hup-overlijden-buitenland
+  - 2026-rijk-bekendmakingswet-wettekst
   herkomst: rijksregelgeving
   gemma:
     gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e

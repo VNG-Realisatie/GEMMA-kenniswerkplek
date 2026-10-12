@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: b4c204cee734833ea1aa2e99298712c296031ba035ac7c517fd2be879491ba2d -->
+<!-- gegenereerd door tools/archimate_export.py; hash: b823309c729ab7654e86b784651a5cc57816e74c809cab60417e8a7d6effa608 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-12T08:14:58. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 26 gekoppeld aan GEMMA, 225 nieuw. Relaties: 15 gekoppeld, 970 nieuw, 11 overgeslagen. Indelingen: 197 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-12T19:25:41. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 28 gekoppeld aan GEMMA, 242 nieuw. Relaties: 15 gekoppeld, 1033 nieuw, 19 overgeslagen. Indelingen: 217 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
 
 ## Dekking van de overgenomen indelingen
 
@@ -76,7 +76,7 @@ Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMM
 - beleidskader associatie bedrijfsobject: 5×
 - beleidskader associatie bedrijfsproces: 55×
 - beleidskader associatie beleidskader: 7×
-- beleidskader associatie dienst: 80×
+- beleidskader associatie dienst: 88×
 - beleidskader associatie gebeurtenis: 3×
 - beleidskader associatie rol: 5×
 - gebeurtenis triggering bedrijfsinteractie: 1×
@@ -90,6 +90,8 @@ Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMM
 |---|---|---|
 | Aanvraag | Aanvraag | ja |
 | Adviseur | Adviseur | ja |
+| Behandelen bezwaar | Behandelen bezwaar | ja |
+| Behandelen klacht | Behandelen klacht | ja |
 | Belanghebbende | Belanghebbende | ja |
 | Beschikking | Beschikking | ja |
 | Beslisser | Beslisser | ja |
@@ -192,6 +194,8 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Begraafplaats
 - Begraafplaatsregister
 - Begraven en cremeren stoffelijk overschot
+- Behandelen aanvraag beschikking
+- Behandelen aanvraag nadeelcompensatie
 - Behandelen aanvraag omwisseling buitenlands rijbewijs
 - Behandelen aanvraag reisdocument
 - Behandelen aanvraag reisdocument niet-ingezetene
@@ -214,8 +218,14 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Beheren reisdocumenten
 - Beheren rijbewijzen
 - Beheren stempassen
+- Bekendmaken besluit
+- Bekendmaking
+- Bekendmaking algemeen verbindend voorschrift
+- Bekendmakingswet
 - Beleidsnota
 - Beleidsregel
+- Beroep
+- Beschikking aanvragen
 - Besluit basisregistratie personen
 - Besluit burgerlijke stand 1994
 - Besluit op de lijkbezorging
@@ -224,6 +234,8 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Bewijs van in leven zijn
 - Bewijs van nederlanderschap
 - Bezorgen stoffelijk overschot
+- Bezwaar
+- Bezwaarschrift
 - Bijhouden burgerlijke stand
 - Bijhouden persoonsgegevens
 - Bijhoudingsgemeente
@@ -247,6 +259,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Crematoriumregister
 - Degene die in de lijkbezorging voorziet
 - Doodgeboren kind aangifte
+- Dwangsom bij niet tijdig beslissen
 - Echtscheiding inschrijving
 - Emigratie
 - Erkenning kind
@@ -283,6 +296,8 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Kerkgenootschap
 - Kieswet
 - Kiezerspas
+- Klacht
+- Klager
 - Kostendrager
 - Levenloze geboorte
 - Model-APV
@@ -291,6 +306,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Naamskeuzeverklaring
 - Naamswijziging
 - Nabestaande
+- Nadeelcompensatie
 - Naturalisatieceremonie
 - Naturalisatieoptie
 - Naturalisatieverzoek
@@ -330,6 +346,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - RNI-loket
 - Ruimen graf
 - Schouwen stoffelijk overschot
+- Schriftelijke klacht
 - Sluiten begraafplaats
 - Stellen andere termijn
 - Stempas
@@ -350,6 +367,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Uitvoeren lijkbezorging
 - Uitvoeren uniforme openbare voorbereidingsprocedure
 - Urn
+- Vaststellen dwangsom bij niet tijdig beslissen
 - Vaststelling ouderschap
 - Vergunning
 - Verhuismelding
@@ -387,6 +405,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Verzorgen gemeentebegrafenis
 - Vestiging vanuit het buitenland
 - Vluchtelingenpaspoort
+- Voeren verweer in beroep
 - Volmachtbewijs verkiezingen
 - Voltrekken huwelijk
 - Voornaamwijziging
@@ -414,4 +433,12 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Model-APV → asverstrooiing (associatie (gericht)): het doel gaat niet mee in deze export
 - Model-beheersverordening begraafplaatsen → gedenkteken-plaatsingsvergunning (associatie (gericht)): het doel gaat niet mee in deze export
 - Model-beheersverordening begraafplaatsen → grafonderhoud (associatie (gericht)): het doel gaat niet mee in deze export
+- Bekendmaking: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
+- Bekendmaking algemeen verbindend voorschrift: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
+- Beroep: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
+- Beschikking aanvragen: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
+- Bezwaar: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
+- Dwangsom bij niet tijdig beslissen: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
+- Klacht: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
+- Nadeelcompensatie: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
 - Zienswijze: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)

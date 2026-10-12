@@ -1,0 +1,297 @@
+begrip: Behandelen bezwaar
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Wettelijke procedure (Awb hoofdstuk 6 en 7, afdeling 7.2); gangbaar als bezwaarprocedure; GEMMA kent het proces Behandelen bezwaar.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het gemeentelijke bestuursorgaan dat het besluit nam, behandelt het bezwaar en beslist erop (art. 6:4 lid 1, 7:11).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een zelfstandige procedure die op elk besluit kan volgen, niet een stap van één ander begrip (art. 7:1).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: een algemene procedure voor bezwaar tegen besluiten (Awb afdeling 7.2).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat gedaan wordt: het behandelen van een bezwaar.'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: 'Wordt per bezwaarschrift van begin tot eind doorlopen: ontvangst, horen, heroverweging, beslissing op bezwaar (art. 6:4, 7:2, 7:11, 7:12).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Wordt per geval doorlopen; geen groepering.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: nee
+    onderbouwing: Een procedure, beschreven naar hoe het bezwaar wordt behandeld; wat de afnemer krijgt is de dienst Bezwaar.
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: Beslisser (het bestuursorgaan dat het besluit nam, hoort, heroverweegt en beslist op het bezwaar) en Belanghebbende (maakt bezwaar en wordt gehoord) (art. 6:4, 7:2, 7:11).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: 'Ontvangt en behandelt het bezwaarschrift (art. 6:4–6:6, 7:4); werkt het bestreden besluit bij: heroverwegen, zo nodig herroepen en vervangen door een nieuw besluit (art. 7:11).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  aanleiding:
+    waarde: ja
+    onderbouwing: Een bezwaarschrift tegen een besluit, ingediend binnen zes weken na de bekendmaking (art. 6:4, 6:7, 6:8).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: De gemotiveerde beslissing op het bezwaar, bekendgemaakt aan wie bezwaar maakte (art. 7:11, 7:12).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk bezwaarschrift tegen een besluit.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Afdeling 7.2 Awb: horen, stukken ter inzage, verslag, beslistermijn van zes of twaalf weken, heroverweging, motivering (art. 7:2–7:13).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  afnemer:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  gerealiseerd_door:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gedrag.'
+  bijdrage_aan_groter_proces:
+    waarde: ja
+    onderbouwing: 'Eén mutatie in de levensloop van een besluit: de heroverweging van het bestreden besluit (art. 7:11).'
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Loopt van het bezwaarschrift van de belanghebbende tot de bekendmaking van de beslissing op bezwaar aan hem (art. 6:4, 7:12).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  omvat_processen:
+    waarde: nee
+    onderbouwing: Omvat geen andere processen.
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: Behandelt één bezwaarschrift tot de beslissing; geen groepering van processen over de levensloop van een object.
+  eigen_besluit:
+    waarde: ja
+    onderbouwing: Eindigt in de beslissing op het bezwaar van het bestuursorgaan dat het besluit nam (art. 7:11, 7:12).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  levert_aanbod:
+    waarde: ja
+    onderbouwing: Realiseert de dienst Bezwaar (UPL nr. 64; art. 7:1).
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in deze wiki.
+    bronnen:
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf het generieke proces voor bezwaar tegen elk besluit, en de GEMMA-match zelf (Behandelen bezwaar), geen specialisatie ervan.
+afnemer: extern
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+kernobject: bezwaarschrift
+definitie: 'Het behandelen van een bezwaarschrift tegen een besluit: belanghebbenden horen, het besluit heroverwegen en op het bezwaar beslissen.'
+beschrijving:
+- Een belanghebbende maakt bezwaar door een bezwaarschrift in te dienen bij het bestuursorgaan dat het besluit nam, binnen zes weken na de bekendmaking; een bezwaarschrift dat niet aan de eisen voldoet, kan na een herstelmogelijkheid niet-ontvankelijk worden verklaard (Awb art. 6:4–6:8). Voordat het bestuursorgaan beslist, stelt het de belanghebbenden in de gelegenheid te worden gehoord, legt het de stukken ter inzage en maakt het een verslag (art. 7:2–7:7). Is het bezwaar ontvankelijk, dan heroverweegt het het bestreden besluit en herroept en vervangt het dat zo nodig (art. 7:11). Het beslist binnen zes weken, en binnen twaalf weken als een adviescommissie met een onafhankelijke voorzitter hoort en adviseert; de beslissing wordt gemotiveerd en bekendgemaakt (art. 7:10, 7:12, 7:13). Tegen de beslissing op bezwaar staat beroep open bij de bestuursrechter (art. 7:1 lid 2).
+gemma:
+  id: id-1e66364c-80c6-4d9f-9737-bab779a23119
+  sterkte: sterk
+  onderbouwing: 'Hetzelfde proces: het afhandelen van een bezwaar tegen een besluit bij het bestuursorgaan dat het nam. Nieuw: een definitie volgens de Awb, het kernobject Bezwaarschrift en de relaties.'
+deelprocessen:
+- naam: Ontvangen bezwaarschrift
+  omschrijving: Het bestuursorgaan ontvangt het bezwaarschrift, toetst termijn en vereisten en laat een verzuim zo nodig herstellen (art. 6:4–6:8).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Horen belanghebbenden
+  omschrijving: Het bestuursorgaan of een adviescommissie hoort de belanghebbenden, met de stukken vooraf ter inzage en een verslag (art. 7:2–7:9, 7:13).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- naam: Beslissen op bezwaar
+  omschrijving: Het bestuursorgaan heroverweegt het besluit, herroept en vervangt het zo nodig, en maakt de gemotiveerde beslissing bekend (art. 7:10–7:12).
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+relaties:
+- soort: realisatie
+  naar: bezwaar
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  vindplaats: art. 7:1; UPL nr. 64
+- soort: toegang (registreren)
+  naar: bezwaarschrift
+  naam: behandelt
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 6:4–6:6, 7:4
+- soort: toegang (bijwerken)
+  naar: besluit
+  naam: heroverweegt en herroept zo nodig
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 7:11
+besluiten:
+- datum: '2026-10-12'
+  besluit: 'Generiek bedrijfsproces met pagina, gekoppeld aan het GEMMA-proces Behandelen bezwaar; het realiseert de UPL-dienst Bezwaar en heeft het bedrijfsobject Bezwaarschrift als kernobject. Beslisser en Belanghebbende worden eraan toegewezen. De adviescommissie (art. 7:13) staat in de beschrijving: het bestuursorgaan kan haar instellen.'
+  gevolg: verwerkt
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 29
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-1e66364c-80c6-4d9f-9737-bab779a23119
+    gemma_naam: Behandelen bezwaar
+    gemma_type: business-process
+    gemma_definitie: 'Het afhandelen van bezwaren: door een wettelijk voorschrift bestaande bevoegdheid een voorziening tegen een besluit te vragen bij de gemeente dat het besluit heeft genomen. Een voorbeeld is het bezwaar tegen de hoogte van de WOZ-waarde of het niet toekennen van een bepaalde gevraagde Wmo-voorziening.'
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1e66364c-80c6-4d9f-9737-bab779a23119
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-bezwaar.md

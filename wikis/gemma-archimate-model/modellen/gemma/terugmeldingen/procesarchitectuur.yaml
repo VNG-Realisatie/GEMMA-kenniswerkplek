@@ -287,3 +287,32 @@ terugmeldingen:
   - '**Voorstel:** vermeld bij het UPL-product dat er geen landelijke wettelijke grondslag is en dat het een taak is die de gemeente zelf op zich neemt (Gemeentewet art. 108 lid 1), en noem art. 19 van de Model beheersverordening begraafplaatsen als uitwerking, niet als grondslag.'
   status: open
   nummer: 25
+- type: product
+  elementen:
+  - beroep
+  - voeren-verweer-in-beroep
+  bevinding:
+  - '**UPL:** beroep is een gemeentelijk product met grondslag art. 8:1 Awb, domein Bestuur (2025-vng-upl-producten-en-diensten-extern, nr. 54; Logius: ook voor gemeenten). De interne lijst noemt Beroep behandelen als ondersteunend proces (2025-vng-upl-producten-en-diensten-intern, nr. 33).'
+  - '**Bevinding:** het beroep wordt ingesteld bij en behandeld door de bestuursrechter, niet door de gemeente (2026-rijk-algemene-wet-bestuursrecht-wettekst, art. 6:4 lid 3, 8:1). De gemeente is partij: zij zendt binnen vier weken de stukken en kan een verweerschrift indienen, en neemt een nieuw besluit als de rechter dat opdraagt (art. 8:42, 8:72 lid 4). GEMMA houdt de dienst Beroep, omdat een UPL-product niet wegvalt, en laat haar realiseren door het proces Voeren verweer in beroep, het deel van de gemeente; de bestuursrechter is geen element.'
+  - '**Voorstel:** vermeld bij het UPL-product dat de bestuursrechter het beroep behandelt en dat de gemeente partij is (stukken, verweer, uitvoeren van de uitspraak), en noem art. 8:42 naast art. 8:1 als grondslag voor de taak van de gemeente. Noem het interne proces Voeren verweer in beroep in plaats van Beroep behandelen.'
+  nummer: 26
+  status: open
+- type: indeling
+  elementen:
+  - bekendmaking
+  - bekendmaking-algemeen-verbindend-voorschrift
+  bevinding:
+  - '**UPL:** bekendmaking (nr. 47, grondslag art. 3:40 Awb) en bekendmaking algemeen verbindend voorschrift (nr. 48, grondslag Bekendmakingswet) staan in het GEMMA-domein Fysieke leefomgeving, zonder taakveld (2025-vng-upl-producten-en-diensten-extern, nr. 47, 48).'
+  - '**Bevinding:** elk besluit van de gemeente treedt pas na bekendmaking in werking, en elke verordening wordt in het gemeenteblad bekendgemaakt, in elk domein (2026-rijk-algemene-wet-bestuursrecht-wettekst, art. 3:40–3:42; 2026-rijk-bekendmakingswet-wettekst, art. 2 lid 2, 6, 8). De diensten horen dus niet bij de fysieke leefomgeving. GEMMA plaatst ze in het domein Bestuur, taakveld 0 Bestuur en Ondersteuning, bij het beleidsdomein Besluitvorming, gerealiseerd door het generieke proces Bekendmaken besluit.'
+  - '**Voorstel:** zet beide producten in het domein Bestuur, net als zienswijze, bezwaar en klacht, en geef ze een taakveld onder 0 Bestuur en Ondersteuning.'
+  nummer: 27
+  status: open
+- type: product
+  elementen:
+  - dwangsom-bij-niet-tijdig-beslissen
+  bevinding:
+  - '**UPL:** de UPL van Logius noemt dwangsom bij niet tijdig beslissen als product van onder meer gemeenten, met grondslag art. 4:17 Awb (2026-logius-upl-actueel, rij 330). De UPL-lijst extern van GEMMA noemt het niet (2025-vng-upl-producten-en-diensten-extern).'
+  - '**Bevinding:** elk gemeentelijk bestuursorgaan dat een beschikking op aanvraag na een ingebrekestelling niet tijdig geeft, verbeurt een dwangsom aan de aanvrager en stelt die bij beschikking vast (2026-rijk-algemene-wet-bestuursrecht-wettekst, art. 4:17, 4:18). Het is daarmee een wettelijke taak van elke gemeente. GEMMA modelleert het als de dienst Dwangsom bij niet tijdig beslissen, gerealiseerd door het generieke proces Vaststellen dwangsom bij niet tijdig beslissen.'
+  - '**Voorstel:** neem dwangsom bij niet tijdig beslissen op in de UPL-lijst extern, met grondslag art. 4:17 Awb, domein Bestuur.'
+  nummer: 28
+  status: open

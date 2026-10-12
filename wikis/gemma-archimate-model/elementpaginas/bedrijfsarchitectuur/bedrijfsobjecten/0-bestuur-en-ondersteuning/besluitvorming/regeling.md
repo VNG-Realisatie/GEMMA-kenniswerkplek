@@ -115,6 +115,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Bekendmaken besluit](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/bekendmaken-besluit.md) | plaatst in het gemeenteblad *toegang (verstrekken)* | Regeling | [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) (art. 6, 8) |
 | [Heffingsverordening](../belastingen/heffingsverordening.md) | is een *specialisatie* | Regeling | [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 216) |
 | [Model-APV](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-apv.md) | is model voor (algemene plaatselijke verordening) *associatie (gericht)* | Regeling | [Model-APV](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) (aanhef; leeswijzer) |
 | [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md) | is model voor (beheersverordening begraafplaatsen) *associatie (gericht)* | Regeling | [VNG Model-beheersverordening begraafplaatsen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-wet-op-de-lijkbezorging.md) (aanhef; VNG inleiding) |

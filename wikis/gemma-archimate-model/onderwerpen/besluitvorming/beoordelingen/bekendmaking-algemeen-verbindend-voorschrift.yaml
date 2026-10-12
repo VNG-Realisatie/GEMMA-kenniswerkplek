@@ -1,0 +1,247 @@
+begrip: Bekendmaking algemeen verbindend voorschrift
+onderwerpen:
+- besluitvorming
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Product in de UPL (nr. 48, bekendmaking algemeen verbindend voorschrift); gangbaar: de publicatie van een verordening in het gemeenteblad.'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-bekendmakingswet-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het college geeft het gemeenteblad uit, en het gemeentelijke bestuursorgaan maakt zijn algemeen verbindende voorschriften daarin bekend (Bekendmakingswet art. 2 lid 2, 6).
+    bronnen:
+    - 2026-rijk-bekendmakingswet-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 48).
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij besluitvorming: een regeling van de gemeente treedt pas na bekendmaking in werking (Bekendmakingswet art. 8).'
+    bronnen:
+    - 2026-rijk-bekendmakingswet-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: 'Iets wat de gemeente aanbiedt: haar regelingen kenbaar maken aan ieder.'
+    bronnen:
+    - 2026-rijk-bekendmakingswet-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  handelende_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  hoedanigheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  samenwerkingsverband:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  toegangspunt:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  plaats:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  aanbod_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  eigen_rechtspersoon:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  vervult_een_rol:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  voert_gedrag_uit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  soort_partij:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  ontsluit_een_dienst:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen partij.'
+  per_keer_doorlopen:
+    waarde: nee
+    onderbouwing: Een aangeboden prestatie, geen reeks activiteiten; die staat in het realiserende proces.
+  groepeert_processen:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  gegroepeerd_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  aangeboden_gedrag:
+    waarde: ja
+    onderbouwing: 'Een prestatie voor burgers en bedrijven: zij kunnen de geldende regels van de gemeente elektronisch en kosteloos lezen in het gemeenteblad (Bekendmakingswet art. 2, 3, 6; UPL nr. 48).'
+    bronnen:
+    - 2026-rijk-bekendmakingswet-wettekst
+    - 2025-vng-upl-producten-en-diensten-extern
+  gezamenlijk_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toegewezen_partij:
+    waarde: nee
+    onderbouwing: Een dienst krijgt geen rol toegewezen; de rollen hangen aan het realiserende proces.
+  gebruikt_objecten:
+    waarde: nee
+    onderbouwing: Een dienst gebruikt geen objecten; dat doet het realiserende proces.
+  aanleiding:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst; de aanleiding hoort bij het proces.'
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Het algemeen verbindend voorschrift is in het gemeenteblad geplaatst en treedt in werking, zonder andere aanduiding op de achtste dag na de bekendmaking (art. 8, 10 lid 2).
+    bronnen:
+    - 2026-rijk-bekendmakingswet-wettekst
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elke verordening of andere algemeen verbindende regel van de gemeente.
+    bronnen:
+    - 2026-rijk-bekendmakingswet-wettekst
+  eigen_normering:
+    waarde: ja
+    onderbouwing: 'Bekendmakingswet: plaatsing in het gemeenteblad, inwerkingtreding na bekendmaking, kosteloze toegang (art. 3, 6, 8, 10).'
+    bronnen:
+    - 2026-rijk-bekendmakingswet-wettekst
+  stabiel_over_tijd:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  afnemer:
+    waarde: ja
+    onderbouwing: 'Burger en bedrijf (UPL nr. 48): ieder die aan de regels gebonden is.'
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-bekendmakingswet-wettekst
+  gerealiseerd_door:
+    waarde: ja
+    onderbouwing: Het bedrijfsproces Bekendmaken besluit (Bekendmakingswet art. 6; Awb art. 3:42).
+    bronnen:
+    - 2026-rijk-bekendmakingswet-wettekst
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  leidt_tot_gedrag:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  klant_tot_klant:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  omvat_processen:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  omvat_levensloop:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: een dienst.'
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: het is zelf het aanbod.'
+  bedient_gedrag:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  in_functie_indeling:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen functie.'
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  afspraak:
+    waarde: nee
+    onderbouwing: Geen overeenkomst tussen partijen.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
+  zelfstandig_aanbod:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  omvat_diensten_en_afspraken:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen gebundeld aanbod.'
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  landelijk:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  in_werking:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  is_grondslag_voor:
+    waarde: nee
+    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Een eigen product in de UPL (nr. 48), met een eigen wet; geen specialisatie van Bekendmaking, die de Awb regelt.
+    bronnen:
+    - 2025-vng-upl-producten-en-diensten-extern
+    - 2026-rijk-bekendmakingswet-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Is zelf de generieke dienst voor de bekendmaking van elke gemeentelijke regeling, geen specialisatie van een generiek GEMMA-element.
+afnemer: extern
+domein: Bestuur
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: Het publiceren van een verordening of andere algemeen verbindende regel van de gemeente in het gemeenteblad, waarna zij geldt.
+beschrijving:
+- Het college van burgemeester en wethouders geeft een gemeenteblad uit, elektronisch en kosteloos toegankelijk (Bekendmakingswet art. 2 lid 2, 3). Algemeen verbindende voorschriften van de gemeente, zoals verordeningen, en ook beleidsregels en andere besluiten die niet tot belanghebbenden zijn gericht, worden bekendgemaakt door plaatsing in het gemeenteblad (art. 6). Een algemeen verbindend voorschrift treedt pas na bekendmaking in werking, zonder andere aanduiding op de achtste dag erna (art. 8, 10 lid 2). De UPL noemt de dienst voor burgers en bedrijven (nr. 48).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen dienst voor de bekendmaking van algemeen verbindende voorschriften; wel de buitengemeentelijke service Geconsolideerde teksten digitaal ter beschikking te stellen (CVDR), een andere dienst. Nieuw voor GEMMA.
+besluiten:
+- datum: '2026-10-12'
+  besluit: 'Dienst in Besluitvorming, met de Bekendmakingswet als bron en grondslag, gerealiseerd door het generieke bedrijfsproces Bekendmaken besluit. Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding). Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Lokale bekendmakingen publicatie onder Openbare informering (Niet domeingebonden), en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
+  gevolg: verwerkt
+  stand: 'open: Functie-indeling naar domein (todo)'
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-bekendmakingswet-wettekst
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/bekendmaking-algemeen-verbindend-voorschrift.md
