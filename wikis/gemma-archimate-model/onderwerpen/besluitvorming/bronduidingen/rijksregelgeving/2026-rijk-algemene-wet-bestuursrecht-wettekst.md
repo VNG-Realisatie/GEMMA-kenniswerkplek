@@ -25,7 +25,7 @@ Hoofdstuk 5 regelt handhaving: overtreding en overtreder, bestuurlijke sancties 
 
 De hoofdstukken 6 tot en met 8 regelen bezwaar en beroep. Bezwaar maken is een bezwaarschrift indienen bij het bestuursorgaan dat het besluit nam, binnen zes weken na de bekendmaking (art. 6:4, 6:7, 6:8); het niet tijdig nemen van een besluit staat gelijk aan een besluit (art. 6:2). Wie beroep kan instellen, maakt eerst bezwaar, behalve onder meer na afdeling 3.4 (art. 7:1). Het bestuursorgaan hoort de belanghebbenden, heroverweegt het besluit en beslist binnen zes weken, of twaalf weken met een adviescommissie (art. 7:2, 7:10, 7:11, 7:13). Beroep wordt ingesteld bij de bestuursrechter (art. 8:1); de gemeente is daar partij, niet beslisser. Hoofdstuk 9 geeft ieder het recht te klagen over een gedraging van een bestuursorgaan: het bestuursorgaan bevestigt de ontvangst, hoort, handelt af binnen zes weken, meldt zijn oordeel en de mogelijkheid van de ombudsman, en registreert en publiceert de klachten (art. 9:1–9:12a).
 
-De Awb is beleidskader (plak 1). De UPL noemt de Awb als grondslag van gemeentelijke diensten: zienswijze (art. 3:15), bekendmaking (art. 3:40), beschikking (art. 1:3), dwangsom bij niet tijdig beslissen (art. 4:17), subsidie (art. 4:21), nadeelcompensatie (art. 4:126), spoedeisende bestuursdwang (art. 5:31), bestuurlijke boete (art. 5:40), bezwaar en belastingaanslag bezwaar (art. 7:1), beroep (art. 8:1) en klacht (art. 9:1). Afdeling 2.3 (elektronisch verkeer) hoort bij de centrale set kanalen.
+De Awb is beleidskader (deel 1). De UPL noemt de Awb als grondslag van gemeentelijke diensten: zienswijze (art. 3:15), bekendmaking (art. 3:40), beschikking (art. 1:3), dwangsom bij niet tijdig beslissen (art. 4:17), subsidie (art. 4:21), nadeelcompensatie (art. 4:126), spoedeisende bestuursdwang (art. 5:31), bestuurlijke boete (art. 5:40), bezwaar en belastingaanslag bezwaar (art. 7:1), beroep (art. 8:1) en klacht (art. 9:1). Afdeling 2.3 (elektronisch verkeer) hoort bij de centrale set kanalen.
 
 ## Kernbegrippen
 
@@ -152,7 +152,7 @@ De Awb is beleidskader (plak 1). De UPL noemt de Awb als grondslag van gemeentel
 - **Bedrijfsobjecten:** het bezwaarschrift en het klaagschrift zijn de stukken waarmee een bezwaar of klacht wordt ingediend (art. 6:5, 9:4); het bestreden besluit is een besluit. De beschikking tot vaststelling van de dwangsom, de subsidieverlening en -vaststelling zijn beschikkingen.
 - **Rollen:** de indiener van een bezwaar en de klager zijn hoedanigheden van een belanghebbende of van een ieder; de benadeelde (art. 4:126) en de overtreder (art. 5:1) zijn hoedanigheden van een partij. De adviescommissie (art. 7:13) en de ombudsman (art. 9:17) zijn partijen buiten het bestuursorgaan.
 - **Andere onderwerpen:** subsidie (titel 4.2) heeft eigen kernobjecten (subsidie, subsidieverlening en -vaststelling) en een gemeentelijke subsidieverordening als regeling van de activiteiten (art. 4:23); handhaving (hoofdstuk 5) heeft eigen begrippen (overtreding, overtreder, bestuurlijke sanctie, last onder bestuursdwang, bestuurlijke boete) die in veel onderwerpen terugkomen.
-- **Beleidskader:** de Awb als geheel (plak 1).
+- **Beleidskader:** de Awb als geheel (deel 1).
 
 ## Citaten
 
