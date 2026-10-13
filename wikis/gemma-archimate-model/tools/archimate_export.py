@@ -8,6 +8,8 @@ Het bestand is bedoeld om in Archi te bekijken (File › Open) en om in het GEMM
 - een nieuw element krijgt een vast id (uuid5 van het begrip-id) in de map `wiki-gemma-model`; een volgende export
   werkt het dus bij in plaats van het te verdubbelen;
 - een relatie krijgt het id van de GEMMA-relatie van hetzelfde type tussen dezelfde elementen, anders een vast id;
+- per paar elementen één toegangsrelatie: de toegangsrelaties van een beoordeling naar hetzelfde doel worden één, met de
+  vereniging van de toegangstypen; het rapport noemt ze;
 - elk element en elke relatie krijgt `wiki-gemma-model exportdatum`: na de import verwijdert het jArchi-script van de
   skill wat een oudere datum heeft (volledige sync).
 
@@ -36,8 +38,8 @@ wiki-map van hun laag. Ze hangen met een aggregatie aan één groep `Kennismodel
 Kennismodel`); onder die groep hangen de groepen Bedrijfsarchitectuur, Applicatiearchitectuur, Technische architectuur en
 Motivatie, die elk de elementen van hun laag aggregeren (een element van een andere laag hangt aan Kennismodel zelf).
 Daarnaast het volledige kennismodel van de wiki (tools/kennismodel.py) in de groep `Kennismodel-wiki`: een concept per
-elementtype (met het id uit Over GEMMA waar dat bestaat), een relatie per toegestaan relatietype en een groepering per
-indeling, met de eigenschappen `kernrelatie` en `in Over GEMMA`. De relaties van de elementen worden gefilterd op dat
+elementtype (met het id uit Over GEMMA waar dat bestaat), een relatie per toegestaan relatietype (bij toegang één,
+lezen-schrijven, of die van Over GEMMA) en een groepering per indeling, met de eigenschappen `kernrelatie` en `in Over GEMMA`. De relaties van de elementen worden gefilterd op dat
 kennismodel; het rapport noemt wat wegvalt.
 
 Een UPL-dienst zonder landelijke wettelijke grondslag (`beslist.zonder_grondslag`, regel Wettelijke grondslag) gaat niet
@@ -141,6 +143,41 @@ def relatie_archimate(soort: str) -> tuple[str, str | None]:
     return relatietool.RELATIES[naam] + "-relationship", toevoeging
 
 
+def _uniek(waarden) -> list[str]:
+    return list(dict.fromkeys(w for w in waarden if w))
+
+
+def _toegang_per_paar(relaties: list[tuple[int, dict]]) -> list[tuple[list[int], dict, list[str], str | None]]:
+    """Per paar elementen één toegangsrelatie: de toegangsrelaties van een element naar hetzelfde doel worden één, met de
+    vereniging van de toegangstypen (lezen en schrijven samen: lezen-schrijven) en de namen, bronnen en vindplaatsen van
+    alle; de soort (en dus het id) is die van de eerste. De beoordeling houdt elke gevonden relatie; alleen de export
+    voegt samen. Per relatie: de nummers in de beoordeling, de relatie, de handelingen of verantwoordelijkheden en het
+    toegangstype (leeg en None bij een andere relatie dan toegang)."""
+    uit: list[tuple[list[int], dict, list[str], str | None]] = []
+    per_doel: dict[str, int] = {}
+    for i, r in relaties:
+        rtype, toegang = relatie_archimate(r["soort"])
+        if rtype != "access-relationship":
+            uit.append(([i], r, [], None))
+            continue
+        handeling = r["soort"][len("toegang ("):-1]
+        if r["naar"] not in per_doel:
+            per_doel[r["naar"]] = len(uit)
+            uit.append(([i], r, [handeling], toegang))
+            continue
+        nummers, eerste, handelingen, toegang_eerst = uit[per_doel[r["naar"]]]
+        groep = [eerste, r]
+        samengevoegd = {**eerste, "naam": "; ".join(_uniek(x.get("naam") for x in groep)),
+                        "ggm_match": "; ".join(_uniek(x.get("ggm_match") for x in groep)),
+                        "bronnen": _uniek(b for x in groep for b in x.get("bronnen", [])),
+                        "vindplaats": "; ".join(_uniek(x.get("vindplaats") for x in groep)),
+                        "via": "; ".join(_uniek(x.get("via") for x in groep))}
+        uit[per_doel[r["naar"]]] = ([*nummers, i], {k: v for k, v in samengevoegd.items() if v},
+                                    _uniek([*handelingen, handeling]),
+                                    toegang_eerst if toegang_eerst == toegang else "lezen-schrijven")
+    return uit
+
+
 @dataclass
 class Map:
     id: str
@@ -170,6 +207,7 @@ class Uitkomst:
     kennismodel_wiki: list[str] = field(default_factory=list)  # concepten en relaties van de wiki die Over GEMMA niet kent
     kennismodel_wiki_aantal: tuple = (0, 0, 0)  # concepten, relaties, indelingen
     weggelaten: list[str] = field(default_factory=list)  # relaties van elementen buiten het kennismodel
+    samengevoegd: list[str] = field(default_factory=list)  # toegangsrelaties van één paar elementen, samen één
     niet_in_over_gemma: dict = field(default_factory=dict)  # (bron, relatie, doel) → aantal in de elementen
     zonder_plaats: list[str] = field(default_factory=list)
     zonder_grondslag: list[str] = field(default_factory=list)  # UPL-diensten zonder landelijke grondslag: niet geëxporteerd
@@ -431,6 +469,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
     for bid, data in sorted(gekozen.items()):
         if bid not in ids:
             continue
+        geldig: list[tuple[int, dict]] = []
         for i, r in enumerate(data.get("relaties", [])):
             if r["naar"] not in ids:
                 uit.overgeslagen.append(f"{data['begrip']} → {r['naar']} ({r['soort']}): het doel gaat niet mee in deze export")
@@ -446,11 +485,18 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             if not toegestaan_.over_gemma:
                 sl = (sleutels_[0], km.kale_soort(r["soort"]), sleutels_[1])
                 uit.niet_in_over_gemma[sl] = uit.niet_in_over_gemma.get(sl, 0) + 1
+            geldig.append((i, r))
+        for nummers, r, toegang, toegangstype in _toegang_per_paar(geldig):
             rtype, toevoeging = relatie_archimate(r["soort"])
+            if toegangstype:
+                toevoeging = toegangstype
+            if len(nummers) > 1:
+                uit.samengevoegd.append(f"{data['begrip']} → {gekozen[r['naar']]['begrip']}: {', '.join(toegang)} → {toevoeging}")
             bron_id, doel_id = ids[bid], ids[r["naar"]]
-            bestaand = sorted((x for x in gemma_relaties.get((rtype, bron_id, doel_id), [])
-                               if rtype != "access-relationship" or x.get("toegang", 0) == int(ACCESS_TYPE[toevoeging])),
-                              key=lambda x: x["id"])
+            # bij toegang: één relatie per paar; een GEMMA-relatie met hetzelfde toegangstype gaat voor, anders de eerste
+            bestaand = sorted(gemma_relaties.get((rtype, bron_id, doel_id), []),
+                              key=lambda x: (rtype == "access-relationship" and x.get("toegang", 0) != int(ACCESS_TYPE[toevoeging]),
+                                             x["id"]))
             g = bestaand[0] if bestaand else None
             rid = g["id"] if g else vast_id("relatie", sleutel(bid), r["soort"], sleutel(r["naar"]), r.get("naam", ""))
             b.relatie_ids.add(rid)
@@ -466,9 +512,12 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             if g is not None and g.get("documentatie"):
                 ET.SubElement(el, "documentation").text = g["documentatie"]
             paren = _gemma_eigen(g["eigenschappen"]) if g is not None else []
-            paren += [(eig("id"), f"{bid}#{i + 1}"), *b.gemeen("gekoppeld" if g is not None else "nieuw"),
+            paren += [(eig("id"), f"{bid}#{'+'.join(str(n + 1) for n in nummers)}"),
+                      *b.gemeen("gekoppeld" if g is not None else "nieuw"),
                       (eig("GGM-match"), r.get("ggm_match", "")), (eig("bronnen"), "; ".join(r.get("bronnen", []))),
                       (eig("vindplaats"), r.get("vindplaats", ""))]
+            if toegang:
+                paren.append((eig("toegang"), ", ".join(toegang)))
             bron_u, doel_u = data["beslist"]["uitkomst"], gekozen[r["naar"]]["beslist"]["uitkomst"]
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == doel_u.get("paginatype") == "bedrijfsproces":
                 paren += [(eig("indeling"), PROCESINDELING),
@@ -480,7 +529,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                     and doel_u.get("paginatype") in ("bedrijfsfunctie", "product", "dienst"):
                 paren.append((eig("indeling"), "Functie-indeling naar domein"))
             if r.get("via"):
-                paren.append((eig("specialisatie"), (begrippen.get(r["via"]) or {}).get("begrip", r["via"])))
+                paren.append((eig("specialisatie"), "; ".join((begrippen.get(v) or {}).get("begrip", v)
+                                                               for v in r["via"].split("; "))))
             _eigenschappen(el, paren)
             if g is not None:
                 uit.relaties_gekoppeld += 1
@@ -883,35 +933,38 @@ def _kennismodel_wiki(b: Bouwer, uit: Uitkomst, kennismodel: dict, wiki_gid: str
         if r.bron not in concept or r.doel not in concept:
             continue
         rtype = relatie_archimate(r.soort)[0]
-        toegangen = sorted({ACCESS_TYPE[km.toegangstype(n)] for n in r.namen}) if rtype == "access-relationship" else [None]
-        for toegang in toegangen:
-            bestaand = next((i for i, x in rel_van.items()
-                             if (x.get(XSI), x.get("source"), x.get("target")) == (xsi_type(rtype), concept[r.bron], concept[r.doel])
-                             and (toegang is None or x.get("accessType", "0") == toegang)), None)
-            rid = bestaand or vast_id("relatie", "kennismodel-wiki", r.soort, concept[r.bron], concept[r.doel], toegang or "")
-            if bestaand:
-                el = rel_van[rid]
-            else:
-                attrs = {XSI: xsi_type(rtype), "id": rid, "source": concept[r.bron], "target": concept[r.doel]}
-                if toegang is not None:
-                    attrs["accessType"] = toegang
-                if "(gericht)" in r.soort:
-                    attrs["directed"] = "true"
-                el = ET.Element("element", attrs)
-                namen_tekst = f" Namen: {', '.join(r.namen)}." if r.namen else ""
-                ET.SubElement(el, "documentation").text = (
-                    f"{namen[concept[r.bron]]} → {namen[concept[r.doel]]}." + namen_tekst + (f" {r.toelichting}" if r.toelichting else ""))
-                _eigenschappen(el, [(eig("id"), f"kennismodel-wiki#{r.soort}:{r.bron}>{r.doel}:{toegang or ''}"),
-                                    (eig("herkomst"), "kennismodel-wiki"), *gemeen[1:]])
-                b.eigen_map("relations", [KENNISMODEL_GROEP, WIKI_GROEP]).objecten.append(el)
-                b.relatie_ids.add(rid)
-                rel_van[rid] = el
-            _eigenschappen(el, [(eig("kernrelatie"), "ja" if r.kern else "nee"),
-                                (eig("in Over GEMMA"), "ja" if r.over_gemma else "nee")])
-            gerealiseerd += 1
-            if not r.over_gemma:
-                uit.kennismodel_wiki.append(f"relatie {km.kale_soort(r.soort)} {namen[concept[r.bron]]} → "
-                                            f"{namen[concept[r.doel]]}{' (' + TOEGANG_NAAM[toegang] + ')' if toegang else ''}")
+        # één relatie per paar elementtypen, ook bij toegang: het toegangstype hoort bij de relatie in het inhoudelijk
+        # model; een relatie uit Over GEMMA houdt haar id en toegangstype, een nieuwe is lezen-schrijven
+        toegang = ACCESS_TYPE["lezen-schrijven"] if rtype == "access-relationship" else None
+        bestaand = next((i for i, x in rel_van.items()
+                         if (x.get(XSI), x.get("source"), x.get("target")) == (xsi_type(rtype), concept[r.bron], concept[r.doel])),
+                        None)
+        rid = bestaand or vast_id("relatie", "kennismodel-wiki", r.soort, concept[r.bron], concept[r.doel], toegang or "")
+        if bestaand:
+            el = rel_van[rid]
+            toegang = el.get("accessType", "0") if toegang is not None else None
+        else:
+            attrs = {XSI: xsi_type(rtype), "id": rid, "source": concept[r.bron], "target": concept[r.doel]}
+            if toegang is not None:
+                attrs["accessType"] = toegang
+            if "(gericht)" in r.soort:
+                attrs["directed"] = "true"
+            el = ET.Element("element", attrs)
+            namen_tekst = (f" Namen: {', '.join(f'{n} ({km.toegangstype(n)})' if toegang else n for n in r.namen)}."
+                           if r.namen else "")
+            ET.SubElement(el, "documentation").text = (
+                f"{namen[concept[r.bron]]} → {namen[concept[r.doel]]}." + namen_tekst + (f" {r.toelichting}" if r.toelichting else ""))
+            _eigenschappen(el, [(eig("id"), f"kennismodel-wiki#{r.soort}:{r.bron}>{r.doel}:{toegang or ''}"),
+                                (eig("herkomst"), "kennismodel-wiki"), *gemeen[1:]])
+            b.eigen_map("relations", [KENNISMODEL_GROEP, WIKI_GROEP]).objecten.append(el)
+            b.relatie_ids.add(rid)
+            rel_van[rid] = el
+        _eigenschappen(el, [(eig("kernrelatie"), "ja" if r.kern else "nee"),
+                            (eig("in Over GEMMA"), "ja" if r.over_gemma else "nee")])
+        gerealiseerd += 1
+        if not r.over_gemma:
+            uit.kennismodel_wiki.append(f"relatie {km.kale_soort(r.soort)} {namen[concept[r.bron]]} → "
+                                        f"{namen[concept[r.doel]]}{' (' + TOEGANG_NAAM[toegang] + ')' if toegang else ''}")
     for i in km.INDELINGEN:
         gid_i = vast_id("groepering", "kennismodel", "indeling", i.naam)
         el = ET.Element("element", {XSI: "archimate:Grouping", "name": i.naam, "id": gid_i})
@@ -1034,6 +1087,11 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
         regels += ["## Weggelaten relaties", "",
                    "Relaties uit de beoordelingen die niet in het kennismodel van de wiki staan; ze gaan niet mee.", ""]
         regels += [f"- {x}" for x in uit.weggelaten] + [""]
+    if uit.samengevoegd:
+        regels += ["## Samengevoegde toegangsrelaties", "",
+                   "Per paar elementen één toegangsrelatie: de handelingen of verantwoordelijkheden uit de beoordeling, en het "
+                   "toegangstype van de relatie in de export.", ""]
+        regels += [f"- {x}" for x in uit.samengevoegd] + [""]
     gewijzigd = [e for e in uit.gekoppeld if e["naam"] != e["gemma_naam"] or e["definitie_gewijzigd"]]
     if gewijzigd:
         regels += ["## Wijzigt een GEMMA-element", "", "| Begrip | Naam in GEMMA | Definitie gewijzigd |", "|---|---|---|"]

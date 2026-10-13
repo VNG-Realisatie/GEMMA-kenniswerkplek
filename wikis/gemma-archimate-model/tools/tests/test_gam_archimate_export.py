@@ -133,17 +133,43 @@ def test_nieuw_element_krijgt_vast_id_in_eigen_map(tmp_path):
 
 
 def test_relaties_hergebruiken_gemma_id_en_hebben_expliciet_toegangstype(tmp_path):
-    uit, root = _export(tmp_path)
+    begrippen = _begrippen()
+    del begrippen["behandelen-aanvraag"]["relaties"][1]  # alleen raadplegen: hetzelfde toegangstype als r-lezen
+    uit, root = _export(tmp_path, begrippen=begrippen)
     lezen = _el(root, "r-lezen")
     assert lezen.get("accessType") == "1" and lezen.get("name") == "leest"
     assert _pad(root, "r-lezen") == [("Relations", "f-rel"), ("GGM", "f-rel-ggm")]
-    schrijven = _el(root, ae.vast_id("relatie", "behandelen-aanvraag", "toegang (registreren)", "beschikking", ""))
-    assert schrijven.get("accessType") == "0"
+    assert _props(lezen)["wiki-gemma-model toegang"] == "raadplegen"
     gericht = _el(root, ae.vast_id("relatie", "beschikking", "associatie (gericht)", "urn", ""))
     assert gericht.get("directed") == "true"
     # de twee bedrijfsobjecten met een beleidsdomein krijgen elk een aggregatie vanuit een nieuwe groepering
-    assert uit.relaties_gekoppeld == 1 and uit.relaties_nieuw == 4
+    assert uit.relaties_gekoppeld == 1 and uit.relaties_nieuw == 3 and not uit.samengevoegd
     assert any("graf" in o for o in uit.overgeslagen)
+
+
+def test_toegangsrelaties_naar_hetzelfde_doel_worden_een_met_de_vereniging_van_de_toegangstypen(tmp_path):
+    uit, root = _export(tmp_path)
+    toegang = [e for e in root.iter("element") if e.get(ae.XSI) == "archimate:AccessRelationship"]
+    assert [e.get("id") for e in toegang] == ["r-lezen"]  # één relatie, met het id van de GEMMA-relatie van het paar
+    (el,) = toegang
+    assert el.get("accessType") == "3" and el.get("name") == "leest"
+    props = _props(el)
+    assert props["wiki-gemma-model toegang"] == "raadplegen, registreren"
+    assert props["wiki-gemma-model id"] == "behandelen-aanvraag#1+2"
+    assert uit.samengevoegd == ["Behandelen aanvraag → Beschikking: raadplegen, registreren → lezen-schrijven"]
+    assert uit.relaties_gekoppeld == 1 and uit.relaties_nieuw == 3
+
+
+def test_toegang_per_paar_houdt_een_enkel_type_en_voegt_namen_en_bronnen_samen():
+    rel = [(0, {"soort": "toegang (registreren)", "naar": "a", "naam": "maakt", "bronnen": ["b1"], "vindplaats": "art. 1"}),
+           (1, {"soort": "triggering", "naar": "a"}),
+           (2, {"soort": "toegang (beëindigen)", "naar": "a", "naam": "trekt in", "bronnen": ["b1", "b2"]}),
+           (3, {"soort": "toegang (raadplegen)", "naar": "c"})]
+    (n1, r1, h1, t1), (n2, _, h2, t2), (n3, _, h3, t3) = ae._toegang_per_paar(rel)
+    assert (n1, h1, t1) == ([0, 2], ["registreren", "beëindigen"], "schrijven")
+    assert (r1["soort"], r1["naam"], r1["bronnen"], r1["vindplaats"]) == ("toegang (registreren)", "maakt; trekt in", ["b1", "b2"], "art. 1")
+    assert (n2, h2, t2) == ([1], [], None)
+    assert (n3, h3, t3) == ([3], ["raadplegen"], "lezen")
 
 
 def test_alleen_goedgekeurd_tenzij_concept(tmp_path):
@@ -687,6 +713,16 @@ def test_kennismodel_wiki_relaties_hebben_kernrelatie_en_in_over_gemma(tmp_path)
     assert _props(stroom)["wiki-gemma-model kernrelatie"] == "nee" and _props(stroom)["wiki-gemma-model in Over GEMMA"] == "nee"
     assert _pad(root, stroom.get("id"))[-1][0] == "Kennismodel-wiki"
     assert any("relatie stroom Bedrijfsproces → Bedrijfsproces" in x for x in uit.kennismodel_wiki)
+
+
+def test_kennismodel_wiki_heeft_een_toegangsrelatie_per_paar_elementtypen(tmp_path):
+    _, root = _kennismodel_export(tmp_path)
+    toegang = [e for e in root.iter("element") if e.get(ae.XSI) == "archimate:AccessRelationship"]
+    paren = [(e.get("source"), e.get("target")) for e in toegang]
+    assert len(paren) == len(set(paren))
+    # rol → bedrijfsobject uit Over GEMMA houdt id en toegangstype (Read); een nieuwe relatie is lezen-schrijven
+    assert _el(root, "id-km-r1").get("accessType") == "1"
+    assert all(e.get("accessType") == "3" for e in toegang if e.get("id") != "id-km-r1")
 
 
 def test_kennismodel_wiki_heeft_een_groepering_per_indeling(tmp_path):

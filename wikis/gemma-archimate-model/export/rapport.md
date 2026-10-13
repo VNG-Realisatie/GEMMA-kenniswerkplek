@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: b823309c729ab7654e86b784651a5cc57816e74c809cab60417e8a7d6effa608 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: c888b5a6cc257ea0696d88d4b8a5ac71a07b0e16fbdeb2e82faca7b3068c68b4 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-12T19:25:41. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 28 gekoppeld aan GEMMA, 242 nieuw. Relaties: 15 gekoppeld, 1033 nieuw, 19 overgeslagen. Indelingen: 217 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-13T09:46:05. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 28 gekoppeld aan GEMMA, 242 nieuw. Relaties: 15 gekoppeld, 1029 nieuw, 19 overgeslagen. Indelingen: 217 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
 
 ## Dekking van de overgenomen indelingen
 
@@ -11,25 +11,17 @@ Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de gro
 
 ## Kennismodel-wiki
 
-Het kennismodel van de wiki: 16 elementtypen, 87 relaties en 6 indelingen, in de groep Kennismodel-wiki. Wat Over GEMMA niet kent, is een kandidaat voor een terugmelding over het kennismodel:
+Het kennismodel van de wiki: 16 elementtypen, 73 relaties en 6 indelingen, in de groep Kennismodel-wiki. Wat Over GEMMA niet kent, is een kandidaat voor een terugmelding over het kennismodel:
 
 - elementtype Bedrijfsinteractie (business-interaction)
 - relatie aggregatie Actor → Actor
 - relatie associatie Actor → Actor
 - relatie toewijzing Bedrijfssamenwerking → Bedrijfsfunctie
 - relatie toewijzing Bedrijfssamenwerking → Bedrijfsinteractie
-- relatie toegang Bedrijfssamenwerking → Bedrijfsobject (schrijven)
-- relatie toegang Bedrijfssamenwerking → Bedrijfsobject (lezen)
 - relatie toegang Bedrijfssamenwerking → Bedrijfsobject (lezen-schrijven)
 - relatie toewijzing Rol → Bedrijfsinteractie
-- relatie toegang Rol → Afspraak (schrijven)
-- relatie toegang Rol → Afspraak (lezen)
 - relatie toegang Rol → Afspraak (lezen-schrijven)
-- relatie toegang Bedrijfsproces → Afspraak (schrijven)
-- relatie toegang Bedrijfsproces → Afspraak (lezen)
 - relatie toegang Bedrijfsproces → Afspraak (lezen-schrijven)
-- relatie toegang Bedrijfsinteractie → Bedrijfsobject (schrijven)
-- relatie toegang Bedrijfsinteractie → Bedrijfsobject (lezen)
 - relatie toegang Bedrijfsinteractie → Bedrijfsobject (lezen-schrijven)
 - relatie bediening Bedrijfsproces → Bedrijfsinteractie
 - relatie aggregatie Bedrijfsfunctie → Dienst
@@ -83,6 +75,15 @@ Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMM
 - gebeurtenis triggering gebeurtenis: 5×
 - rol toegang afspraak: 1×
 - rol toewijzing bedrijfsinteractie: 1×
+
+## Samengevoegde toegangsrelaties
+
+Per paar elementen één toegangsrelatie: de handelingen of verantwoordelijkheden uit de beoordeling, en het toegangstype van de relatie in de export.
+
+- Behandelen aanvraag reisdocument → Reisdocument: registreren, bijwerken → lezen-schrijven
+- Behandelen aanvraag rijbewijs → Rijbewijs: registreren, bijwerken → lezen-schrijven
+- Houder van de begraafplaats → Graf: bronhouder, houder → lezen-schrijven
+- Voeren verweer in beroep → Besluit: raadplegen, registreren → lezen-schrijven
 
 ## Wijzigt een GEMMA-element
 
