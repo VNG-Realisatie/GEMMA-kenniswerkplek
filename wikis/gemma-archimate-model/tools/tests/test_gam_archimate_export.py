@@ -161,11 +161,13 @@ def test_toegangsrelaties_naar_hetzelfde_doel_worden_een_met_de_vereniging_van_d
 
 
 def test_toegang_per_paar_houdt_een_enkel_type_en_voegt_namen_en_bronnen_samen():
+    import kennismodel as km
+
     rel = [(0, {"soort": "toegang (registreren)", "naar": "a", "naam": "maakt", "bronnen": ["b1"], "vindplaats": "art. 1"}),
            (1, {"soort": "triggering", "naar": "a"}),
            (2, {"soort": "toegang (beëindigen)", "naar": "a", "naam": "trekt in", "bronnen": ["b1", "b2"]}),
            (3, {"soort": "toegang (raadplegen)", "naar": "c"})]
-    (n1, r1, h1, t1), (n2, _, h2, t2), (n3, _, h3, t3) = ae._toegang_per_paar(rel)
+    (n1, r1, h1, t1), (n2, _, h2, t2), (n3, _, h3, t3) = km.toegang_per_paar(rel)
     assert (n1, h1, t1) == ([0, 2], ["registreren", "beëindigen"], "schrijven")
     assert (r1["soort"], r1["naam"], r1["bronnen"], r1["vindplaats"]) == ("toegang (registreren)", "maakt; trekt in", ["b1", "b2"], "art. 1")
     assert (n2, h2, t2) == ([1], [], None)

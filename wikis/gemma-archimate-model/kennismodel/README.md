@@ -68,7 +68,7 @@ Elementtypen zonder element: [weggefilterd](overig/weggefilterd.md) (locatie).
 | compositie | composition | het deel bestaat alleen in het geheel |
 | specialisatie | specialization | is een: het doel is het bredere begrip van hetzelfde type |
 | toewijzing | assignment | wie het gedrag uitvoert, of welke actor een rol vervult |
-| toegang | access | gedrag of een rol gebruikt een object, met een vaste handeling of verantwoordelijkheid |
+| toegang | access | gedrag of een rol gebruikt een object, met een vaste handeling of verantwoordelijkheid; per paar elementen één relatie, met de vereniging van de toegangstypen |
 | triggering | triggering | het een start het ander, in de tijd |
 | stroom | flow | gedrag geeft iets door aan ander gedrag |
 | realisatie | realization | gedrag realiseert een dienst; een data-object realiseert een bedrijfsobject |

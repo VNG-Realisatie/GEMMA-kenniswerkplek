@@ -302,6 +302,22 @@ def test_relatie_buiten_het_kennismodel_is_een_signaal_en_staat_op_de_pagina(wik
         assert "niet in het kennismodel, gaat niet mee in de export" in tekst
 
 
+def test_toegangsrelaties_naar_hetzelfde_doel_staan_als_een_op_beide_paginas(wiki):
+    """Zoals in de export: één toegangsrelatie per paar, met de vereniging van de toegangstypen."""
+    _schrijf(wiki, "beschikking", _bo())
+    proces = _proces()
+    proces["relaties"].append({"soort": "toegang (raadplegen)", "naar": "beschikking", "naam": "leest",
+                               "ggm_match": "geen", "bronnen": [WET], "vindplaats": "art. 4"})
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+    _beslissen(wiki)
+    assert len(_lees(wiki, "behandelen-aanvraag")["relaties"]) == 2  # de beoordeling houdt beide
+    for naam in "behandelen-aanvraag.md", "beschikking.md":
+        tekst = next(wiki.rglob(naam)).read_text(encoding="utf-8")
+        assert "stelt vast; leest *toegang (registreren, raadplegen: lezen-schrijven)*" in tekst
+        assert "(art. 2; art. 4)" in tekst
+        assert "*toegang (registreren)*" not in tekst and "*toegang (raadplegen)*" not in tekst
+
+
 def test_relatie_in_het_kennismodel_heeft_geen_signaal_en_geen_markering(wiki):
     _schrijf(wiki, "beschikking", _bo())
     _schrijf(wiki, "behandelen-aanvraag", _proces())

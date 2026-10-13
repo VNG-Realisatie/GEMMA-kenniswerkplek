@@ -143,41 +143,6 @@ def relatie_archimate(soort: str) -> tuple[str, str | None]:
     return relatietool.RELATIES[naam] + "-relationship", toevoeging
 
 
-def _uniek(waarden) -> list[str]:
-    return list(dict.fromkeys(w for w in waarden if w))
-
-
-def _toegang_per_paar(relaties: list[tuple[int, dict]]) -> list[tuple[list[int], dict, list[str], str | None]]:
-    """Per paar elementen één toegangsrelatie: de toegangsrelaties van een element naar hetzelfde doel worden één, met de
-    vereniging van de toegangstypen (lezen en schrijven samen: lezen-schrijven) en de namen, bronnen en vindplaatsen van
-    alle; de soort (en dus het id) is die van de eerste. De beoordeling houdt elke gevonden relatie; alleen de export
-    voegt samen. Per relatie: de nummers in de beoordeling, de relatie, de handelingen of verantwoordelijkheden en het
-    toegangstype (leeg en None bij een andere relatie dan toegang)."""
-    uit: list[tuple[list[int], dict, list[str], str | None]] = []
-    per_doel: dict[str, int] = {}
-    for i, r in relaties:
-        rtype, toegang = relatie_archimate(r["soort"])
-        if rtype != "access-relationship":
-            uit.append(([i], r, [], None))
-            continue
-        handeling = r["soort"][len("toegang ("):-1]
-        if r["naar"] not in per_doel:
-            per_doel[r["naar"]] = len(uit)
-            uit.append(([i], r, [handeling], toegang))
-            continue
-        nummers, eerste, handelingen, toegang_eerst = uit[per_doel[r["naar"]]]
-        groep = [eerste, r]
-        samengevoegd = {**eerste, "naam": "; ".join(_uniek(x.get("naam") for x in groep)),
-                        "ggm_match": "; ".join(_uniek(x.get("ggm_match") for x in groep)),
-                        "bronnen": _uniek(b for x in groep for b in x.get("bronnen", [])),
-                        "vindplaats": "; ".join(_uniek(x.get("vindplaats") for x in groep)),
-                        "via": "; ".join(_uniek(x.get("via") for x in groep))}
-        uit[per_doel[r["naar"]]] = ([*nummers, i], {k: v for k, v in samengevoegd.items() if v},
-                                    _uniek([*handelingen, handeling]),
-                                    toegang_eerst if toegang_eerst == toegang else "lezen-schrijven")
-    return uit
-
-
 @dataclass
 class Map:
     id: str
@@ -486,7 +451,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                 sl = (sleutels_[0], km.kale_soort(r["soort"]), sleutels_[1])
                 uit.niet_in_over_gemma[sl] = uit.niet_in_over_gemma.get(sl, 0) + 1
             geldig.append((i, r))
-        for nummers, r, toegang, toegangstype in _toegang_per_paar(geldig):
+        for nummers, r, toegang, toegangstype in km.toegang_per_paar(geldig):
             rtype, toevoeging = relatie_archimate(r["soort"])
             if toegangstype:
                 toevoeging = toegangstype

@@ -91,8 +91,7 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Voeren verweer in beroep | realiseert *realisatie* | [Beroep](../../../diensten/0-bestuur-en-ondersteuning/besluitvorming/beroep.md) | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (art. 8:1, 8:42; UPL nr. 54) |
-| Voeren verweer in beroep | zendt de stukken over het bestreden besluit *toegang (raadplegen)* | [Besluit](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md) | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 8:42 lid 1) |
-| Voeren verweer in beroep | neemt na vernietiging zo nodig een nieuw *toegang (registreren)* | [Besluit](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md) | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 8:72 lid 4) |
+| Voeren verweer in beroep | zendt de stukken over het bestreden besluit; neemt na vernietiging zo nodig een nieuw *toegang (raadplegen, registreren: lezen-schrijven)* | [Besluit](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md) | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 8:42 lid 1; art. 8:72 lid 4) |
 
 #### Inkomend
 

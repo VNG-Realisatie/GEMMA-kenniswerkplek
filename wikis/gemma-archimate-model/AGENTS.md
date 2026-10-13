@@ -16,7 +16,7 @@ Gebruik skill `gemma-archimate-model-update` voor elke inhoudelijke wijziging. D
 
 Verwijs naar een regel met haar naam, bijvoorbeeld "regel Navragen". Achter een regel staat of een script haar controleert: *(schema)* en *(script)* houden een fout tegen, *(signaal)* geeft een waarschuwing die de AI inhoudelijk beoordeelt. Zonder markering is het een regel voor het oordeel van de AI.
 
-Wat het render-script garandeert, is geen regel: bronverwijzingen als link naar de bronduiding, relaties in beide richtingen, geen verwijzingen in de frontmatter, geen links naar tools of regels, de vorm van de pagina. De status zetten de scripts en het akkoord; de AI zet nooit een status.
+Wat het render-script garandeert, is geen regel: bronverwijzingen als link naar de bronduiding, relaties in beide richtingen, één toegangsrelatie per paar elementen (zoals in de export), geen verwijzingen in de frontmatter, geen links naar tools of regels, de vorm van de pagina. De status zetten de scripts en het akkoord; de AI zet nooit een status.
 
 Een regel is kort: de kern. Staat er meer bij een regel, dan noemt zij waar de uitwerking staat (hoe, in een skill) en de onderbouwing (waarom, in `ARCHITECTURE.md`).
 

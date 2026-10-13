@@ -111,7 +111,8 @@ RELATIETYPE_UITLEG = {
     "compositie": "het deel bestaat alleen in het geheel",
     "specialisatie": "is een: het doel is het bredere begrip van hetzelfde type",
     "toewijzing": "wie het gedrag uitvoert, of welke actor een rol vervult",
-    "toegang": "gedrag of een rol gebruikt een object, met een vaste handeling of verantwoordelijkheid",
+    "toegang": "gedrag of een rol gebruikt een object, met een vaste handeling of verantwoordelijkheid; per paar elementen "
+               "één relatie, met de vereniging van de toegangstypen",
     "triggering": "het een start het ander, in de tijd",
     "stroom": "gedrag geeft iets door aan ander gedrag",
     "realisatie": "gedrag realiseert een dienst; een data-object realiseert een bedrijfsobject",
@@ -683,6 +684,42 @@ def weggefilterd(bron: str, soort: str, doel: str) -> Weggefilterd | None:
 def toegangstype(naam: str | None) -> str | None:
     """ArchiMate-toegangstype (lezen, schrijven, lezen-schrijven) bij een handeling of verantwoordelijkheid."""
     return HANDELINGEN.get(naam) or VERANTWOORDELIJKHEDEN.get(naam)
+
+
+def _uniek(waarden) -> list:
+    return list(dict.fromkeys(w for w in waarden if w))
+
+
+def toegang_per_paar(relaties: list[tuple[int, dict]]) -> list[tuple[list[int], dict, list[str], str | None]]:
+    """Per paar elementen één toegangsrelatie, op de pagina en in de export: de toegangsrelaties van een element naar
+    hetzelfde doel worden één, met de vereniging van de toegangstypen (lezen en schrijven samen: lezen-schrijven) en de
+    namen, bronnen en vindplaatsen van alle; de soort (en dus het id in de export) is die van de eerste. De beoordeling
+    houdt elke gevonden relatie. Per relatie: de nummers in de beoordeling, de relatie, de handelingen of
+    verantwoordelijkheden en het toegangstype (leeg en None bij een andere relatie dan toegang)."""
+    uit: list[tuple[list[int], dict, list[str], str | None]] = []
+    per_doel: dict[str, int] = {}
+    for i, r in relaties:
+        if kale_soort(r["soort"]) != "toegang":
+            uit.append(([i], r, [], None))
+            continue
+        handeling = r["soort"][len("toegang ("):-1]
+        toegang = toegangstype(handeling)
+        if r["naar"] not in per_doel:
+            per_doel[r["naar"]] = len(uit)
+            uit.append(([i], r, [handeling], toegang))
+            continue
+        nummers, eerste, handelingen, toegang_eerst = uit[per_doel[r["naar"]]]
+        groep = [eerste, r]
+        samen = {**eerste, "naam": "; ".join(_uniek(x.get("naam") for x in groep)),
+                 "ggm_match": "; ".join(_uniek(x.get("ggm_match") for x in groep)),
+                 "bronnen": _uniek(b for x in groep for b in x.get("bronnen", [])),
+                 "vindplaats": "; ".join(_uniek(x.get("vindplaats") for x in groep)),
+                 "via": "; ".join(_uniek(x.get("via") for x in groep)),
+                 "ggm_relatie": _uniek(g for x in groep for g in x.get("ggm_relatie", [])),
+                 "gemma_relatie": "; ".join(_uniek(x.get("gemma_relatie") for x in groep))}
+        uit[per_doel[r["naar"]]] = ([*nummers, i], {k: v for k, v in samen.items() if v}, _uniek([*handelingen, handeling]),
+                                    toegang_eerst if toegang_eerst == toegang else "lezen-schrijven")
+    return uit
 
 
 def kernrelaties(kenmerk: str) -> list[Relatie]:

@@ -439,8 +439,9 @@ def element_pagina(w: Wiki, bid: str) -> str:
         bron, doel = (kennismodel.sleutel_van(w.uitkomst(b)["archimate_type"]) for b in (van_id, x["naar"]))
         return not kennismodel.toegestaan(bron, x["soort"], doel)
 
-    def relatie(x: dict, van_id: str = bid) -> str:
-        soort = ", ".join(v for v in (x["soort"], x.get("kardinaliteit", "")) if v)
+    def relatie(x: dict, van_id: str = bid, handelingen: list[str] = (), toegang: str | None = None) -> str:
+        soort = (f"toegang ({', '.join(handelingen)}: {toegang})" if len(handelingen) > 1
+                 else ", ".join(v for v in (x["soort"], x.get("kardinaliteit", "")) if v))
         tekst = f"{x['naam']} *{soort}*" if x.get("naam") else soort
         return f"{tekst} (*niet in het kennismodel, gaat niet mee in de export*)" if buiten_kennismodel(van_id, x) else tekst
 
@@ -451,9 +452,15 @@ def element_pagina(w: Wiki, bid: str) -> str:
         return "; ".join(d for d in delen if d)
 
     kolommen = ["Van", "Relatie", "Naar", "Bron"]
-    uitgaand = _tabel(kolommen, [[d["begrip"], relatie(x), w.link(van, x["naar"]), bron_cel(x)]
-                                 for x in d.get("relaties", [])]) if d.get("relaties") else []
-    inkomend = [[w.link(van, v), relatie(x, v), d["begrip"], bron_cel(x)] for v, x in w.inkomend(bid)]
+    # per paar elementen één toegangsrelatie, zoals in de export (kennismodel.toegang_per_paar)
+    uitgaand = _tabel(kolommen, [[d["begrip"], relatie(x, bid, h, t), w.link(van, x["naar"]), bron_cel(x)]
+                                 for _, x, h, t in kennismodel.toegang_per_paar(list(enumerate(d["relaties"])))]
+                      ) if d.get("relaties") else []
+    per_van: dict[str, list[dict]] = {}
+    for v, x in w.inkomend(bid):
+        per_van.setdefault(v, []).append(x)
+    inkomend = [[w.link(van, v), relatie(x, v, h, t), d["begrip"], bron_cel(x)] for v, xs in per_van.items()
+                for _, x, h, t in kennismodel.toegang_per_paar(list(enumerate(xs)))]
     relaties = _sub("Uitgaand", uitgaand, 4) + _sub("Inkomend", _tabel(kolommen, inkomend) if inkomend else [], 4)
     doelnaam = {k["gemma_id"]: k["gemma_naam"] for k in a.get("kwaliteitsdoelen", [])}
     kwaliteitsdoelen = [
