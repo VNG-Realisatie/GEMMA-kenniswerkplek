@@ -183,7 +183,7 @@ def kandidaten(data: dict, naam: str, synoniemen: list[str] = ()) -> dict:
 
     termen = [naam, *synoniemen]
     def woordbegin(e: dict, t: str) -> bool:
-        return any(re.search(rf"{re.escape(t)}", x, re.IGNORECASE) for x in [e["name"], e.get("tags", {}).get("Synoniemen", ""), schoon_tekst(e.get("documentation", ""))])
+        return any(re.search(rf"\b{re.escape(t)}", x, re.IGNORECASE) for x in [e["name"], e.get("tags", {}).get("Synoniemen", ""), schoon_tekst(e.get("documentation", ""))])
 
     treffers = {e["id"]: e for t in termen for e in zoek(data, t) if woordbegin(e, t)}
     return {"naamgenoten": [kort(e) for t in termen for e in naamgenoten(data, t)],

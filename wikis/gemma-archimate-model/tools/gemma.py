@@ -218,7 +218,7 @@ def kandidaten(data: dict, naam: str, ggm_guid: str | None = None, synoniemen: l
 
     termen = [naam, *synoniemen]
     def woordbegin(e: dict, t: str) -> bool:
-        return any(re.search(rf"{re.escape(t)}", x, re.IGNORECASE) for x in [e["naam"], e["documentatie"]])
+        return any(re.search(rf"\b{re.escape(t)}", x, re.IGNORECASE) for x in [e["naam"], e["documentatie"]])
 
     treffers = {e["id"]: e for t in termen for e in zoek(data, t) if woordbegin(e, t)}
     return {"via_ggm_guid": [kort(e) for e in koppel(data, ggm_guid)] if ggm_guid else [],

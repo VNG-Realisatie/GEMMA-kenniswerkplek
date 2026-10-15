@@ -128,6 +128,7 @@ def test_kandidaten_voor_de_match_op_betekenis(tmp_path):
     assert k["naamgenoten"][0]["definitie"] == "Een besluit over een individueel geval."
     assert k["naamgenoten"][0]["specialisaties"] == ["Besluit"]
     assert ggm.kandidaten(data, "schikking")["treffers"] == []  # alleen treffers aan het begin van een woord
+    assert "EAID_BESCHIKKING" in [t["guid"] for t in ggm.kandidaten(data, "besluit")["treffers"]]  # in de definitie
 
 
 def test_release_zonder_bestand_haalt_op_van_herkomst(tmp_path, archimate_repo, monkeypatch):

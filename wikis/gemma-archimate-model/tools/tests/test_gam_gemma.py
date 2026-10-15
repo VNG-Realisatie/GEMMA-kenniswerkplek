@@ -187,3 +187,12 @@ def test_functiehierarchie_is_de_hierarchie_van_gemma_as_is(tmp_path):
         ["Publieksdiensten", "Uitvoering Publieksdiensten", "Realisatie", "Burgerlijke stand"]]
     assert gemma.functie_domein_namen(data, h, "id-realisatie") == ["Publieksdiensten"]
     assert gemma.functie_domein_namen(data, h, "id-bs") == ["Niet domeingebonden", "Publieksdiensten"]
+
+
+def test_kandidaten_naamgenoten_en_treffers_aan_het_begin_van_een_woord(tmp_path):
+    data = _data(tmp_path)
+    k = gemma.kandidaten(data, "Beschikking")
+    assert [e["id"] for e in k["naamgenoten"]] == ["id-beschikking"]
+    assert k["naamgenoten"][0]["groepering"] == ["Vergunningen"]
+    assert [e["id"] for e in gemma.kandidaten(data, "besluit")["treffers"]] == ["id-beschikking"]  # in de definitie
+    assert gemma.kandidaten(data, "schikking")["treffers"] == []
