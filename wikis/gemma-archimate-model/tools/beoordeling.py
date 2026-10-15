@@ -91,7 +91,8 @@ def besluiten(wiki: Path, onderwerp: str) -> list[str]:
         for b in lijst:
             tekst = b.get("besluit") or "(advies gevolgd)"
             stand = f" [stand: {b['stand']}]" if b.get("stand") else ""
-            uit.append(f"{label} {b.get('datum')} {b.get('gevolg', '')}: {tekst}{stand}".replace("  ", " "))
+            gevolg = f" {b['gevolg']}" if b.get("gevolg") else ""
+            uit.append(f"{label} {b.get('datum')}{gevolg}: {tekst}{stand}")
 
     toon(f"[{onderwerp}]", afb[onderwerp].get("besluiten") or [])
     for bid, (_, d) in _alle(wiki).items():
