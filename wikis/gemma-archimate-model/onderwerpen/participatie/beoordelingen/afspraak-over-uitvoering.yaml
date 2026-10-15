@@ -1,0 +1,46 @@
+begrip: Afspraak over uitvoering
+onderwerpen:
+- participatie
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Bij toewijzing van een verzoek leggen gemeente en indiener afspraken vast over proces, budget, contactmomenten en beëindiging (var. 1 art. 9, var. 2 art. 14).
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente legt de afspraken vast en ziet toe op de nakoming.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig tot de uitvoering is beëindigd en geëvalueerd.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort bij participatie.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gedrag: nee
+  handelende_partij: nee
+  hoedanigheid: nee
+  samenwerkingsverband: nee
+  toegangspunt: nee
+  plaats: nee
+  aanbod_als_geheel: nee
+  regeling_als_geheel: nee
+  afspraak:
+    waarde: ja
+    onderbouwing: Afspraken tussen gemeente en indiener met rechten en plichten, ook bij niet nakomen (var. 1 art. 9).
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: De afspraak zelf.

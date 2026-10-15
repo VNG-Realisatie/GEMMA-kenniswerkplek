@@ -1,0 +1,25 @@
+begrip: Beoordeling verzoek
+onderwerpen:
+- participatie
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Het bevoegde orgaan beslist op het verzoek, met afwijzingsgronden en termijnen (var. 1 art. 8).
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het college of het bevoegde orgaan beslist.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: nee
+    onderbouwing: Deelstap van Behandelen verzoek uitdaagrecht (var. 1 art. 8).
+genoemd_begrip: Behandelen verzoek uitdaagrecht
+toelichting: Deelstap van Behandelen verzoek uitdaagrecht (variant 1 art. 8).

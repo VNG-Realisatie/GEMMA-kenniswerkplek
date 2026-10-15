@@ -15,4 +15,5 @@ De AI kiest eerst het vak in de ArchiMate-matrix: de laag (bedrijf, applicatie, 
 De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde pagina's; de elementpagina's van vóór de herziening staan in Git onder tag `voor-herbeoordeling`.
 
 - **Participatie** daarna, als proef van de lichtere werkwijze (stap 9 van het plan), met de participatie-modelverordening als mogelijk beleidskader.
+- **Gemeentewet als grondslag voor de andere onderwerpen** (besluit 2026-10-15 bij Gemeentewet): de relaties *is grondslag voor* naar de elementen van Lijkbezorging (art. 147, 149, 229), Heffingen en betalingen en Besluitvorming (art. 150 bij Beleidsnota), na de afronding van Participatie.
 - **Kanalen** als één centrale set. Input uit lijkbezorging (geen element daar): de elektronische weg (Wlb art. 7, Awb art. 2:13–2:15), het mededelingenbord en bordje bij het graf (Groningen art. 27, VNG-modelverordening art. 24), de beheerder als aanspreekpunt voor aanvragen (VNG-modelverordening toelichting 2), en digitaal aangifte doen met eHerkenning (RVO, burgerlijke stand).

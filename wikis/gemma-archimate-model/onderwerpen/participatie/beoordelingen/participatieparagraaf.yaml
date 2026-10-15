@@ -1,0 +1,25 @@
+begrip: Participatieparagraaf
+onderwerpen:
+- participatie
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Facultatief onderdeel van begroting en jaarverslag over participatie (var. 1 art. 10).
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het college neemt haar op.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: nee
+    onderbouwing: Onderdeel van de begroting en het jaarverslag (var. 1 art. 10).
+genoemd_begrip: Begroting
+toelichting: Onderdeel van begroting en jaarverslag, geen element (variant 1 art. 10).

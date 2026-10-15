@@ -1,0 +1,49 @@
+begrip: Gemeentewet
+onderwerpen:
+- bestuur-en-organisatie
+- lijkbezorging
+- participatie
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Concreet benoemde wet.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Regelt inrichting, bestuursorganen, bevoegdheden en financiën van de gemeente.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Een wet als geheel, geen losse norm of doel.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig als wet.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort bij Bestuur en organisatie, de wet van de bestuursorganen van de gemeente; andere onderwerpen gebruiken haar als grondslag (participatie art. 150, lijkbezorging art. 147, 149, 229).
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  gedrag: nee
+  handelende_partij: nee
+  hoedanigheid: nee
+  samenwerkingsverband: nee
+  toegangspunt: nee
+  plaats: nee
+  aanbod_als_geheel: nee
+  regeling_als_geheel:
+    waarde: ja
+    onderbouwing: Concreet benoemde wet als geheel.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+besluiten:
+- datum: '2026-10-15'
+  besluit: Beleidskader met thuis Bestuur en organisatie, in plaats van een verwijzing; in de ronde Participatie alleen de relaties voor Participatie, die van de andere onderwerpen volgen later.
+  gevolg: verwerkt
+  advies: gevolgd

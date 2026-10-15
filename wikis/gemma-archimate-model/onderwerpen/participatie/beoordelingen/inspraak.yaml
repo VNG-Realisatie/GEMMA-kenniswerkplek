@@ -1,0 +1,31 @@
+begrip: Inspraak
+onderwerpen:
+- participatie
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Inwoners geven hun mening over voorgenomen beleid; volgt afdeling 3.4 Awb tenzij de verordening anders bepaalt (art. 150 lid 2; var. 1 art. 4).
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De raad regelt inspraak in de verordening.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: ja
+    onderbouwing: De tweede trede van de participatieladder, een vorm van inwonersparticipatie; het gedrag is de uniforme openbare voorbereidingsprocedure (art. 150 lid 2; bijlage 4).
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+genoemd_begrip: Uitvoeren inwonersparticipatie
+toelichting: 'Vorm van inwonersparticipatie, geen eigen element: inspraak verloopt via Uitvoeren uniforme openbare voorbereidingsprocedure (art. 150 lid 2 Gemeentewet).'
+besluiten:
+- datum: '2026-10-15'
+  besluit: 'Geen eigen element: een vorm van inwonersparticipatie; Uitvoeren inwonersparticipatie krijgt bij inspraak een relatie naar Uitvoeren uniforme openbare voorbereidingsprocedure.'
+  gevolg: verwerkt
+  advies: gevolgd

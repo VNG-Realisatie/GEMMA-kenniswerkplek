@@ -1,0 +1,21 @@
+begrip: Participatie
+onderwerpen:
+- participatie
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: Samenwerking tussen een bestuursorgaan en inwoners of maatschappelijke partijen, in welke vorm dan ook (var. 2 art. 1, bijlage 1).
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente betrekt inwoners bij haar beleid (art. 150).
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  buiten_dit_model:
+    waarde: ja
+    onderbouwing: 'Een thema, de naam van het onderwerp: het omvat inwonersparticipatie en overheidsparticipatie (bijlage 1).'
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+archimate_buiten_model: Grouping
+toelichting: 'Thema, geen element: het onderwerp zelf, met Uitvoeren inwonersparticipatie en Behandelen verzoek uitdaagrecht.'

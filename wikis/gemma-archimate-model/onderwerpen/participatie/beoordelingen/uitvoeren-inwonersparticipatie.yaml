@@ -1,0 +1,62 @@
+begrip: Uitvoeren inwonersparticipatie
+onderwerpen:
+- participatie
+kernobject: participatieplan
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Inwonersparticipatie: het op initiatief van de gemeente betrekken van inwoners bij voorbereiding, uitvoering of evaluatie van beleid (bijlage 1; art. 150 lid 1).'
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+    - 2026-rijk-gemeentewet-wettekst
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het bestuursorgaan beslist of participatie plaatsvindt, stelt het plan op en maakt het eindverslag openbaar (var. 1 art. 2, 3, 5).
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Een eigen traject met plan vooraf en eindverslag achteraf, niet een stap van één ander proces.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort bij participatie.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  gedrag:
+    waarde: ja
+    onderbouwing: Het betrekken van inwoners bij beleid.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  handelende_partij: nee
+  hoedanigheid: nee
+  samenwerkingsverband: nee
+  toegangspunt: nee
+  plaats: nee
+  aanbod_als_geheel: nee
+  regeling_als_geheel: nee
+  per_keer_doorlopen:
+    waarde: ja
+    onderbouwing: Per beleidsvoornemen van besluit tot participatie, via het plan, tot het eindverslag (var. 1 art. 2–5).
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  groepeert_processen: nee
+  gegroepeerd_gedrag: nee
+  toestandsverandering: nee
+  aangeboden_gedrag: nee
+  gezamenlijk_gedrag: nee
+synoniemen:
+- naam: Inwonersparticipatie
+  context: beleid
+besluiten:
+- datum: '2026-10-15'
+  besluit: 'Eigen bedrijfsproces met Participatieplan als kernobject, geen deelproces van het vaststellen van beleid en geen bedrijfsinteractie: eigen aanleiding, plan en eindverslag van het bestuursorgaan.'
+  gevolg: verwerkt
+  advies: gevolgd

@@ -1,0 +1,47 @@
+begrip: Participatieplan
+onderwerpen:
+- participatie
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: 'Openbaar plan vooraf: waarom participatie, de rol van inwoners en maatschappelijke partijen, het proces (var. 1 art. 3, var. 2 art. 7).'
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: Het college of het bestuursorgaan stelt het op en maakt het openbaar.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig als plan, ook na de participatie.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort bij participatie.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gedrag: nee
+  handelende_partij: nee
+  hoedanigheid: nee
+  samenwerkingsverband: nee
+  toegangspunt: nee
+  plaats: nee
+  aanbod_als_geheel: nee
+  regeling_als_geheel: nee
+  afspraak:
+    waarde: nee
+    onderbouwing: Een eenzijdig plan van het bestuursorgaan.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Het plan zelf.
+synoniemen:
+- naam: Plan voor inwonersparticipatie
+  context: beleid, variant 1

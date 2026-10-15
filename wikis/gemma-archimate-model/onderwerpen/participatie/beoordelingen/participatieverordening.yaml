@@ -1,0 +1,52 @@
+begrip: Participatieverordening
+onderwerpen:
+- participatie
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De raad stelt een verordening vast over het betrekken van ingezetenen en belanghebbenden bij beleid (art. 150 lid 1); gangbaar heet zij participatieverordening.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De raad stelt haar vast.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig als verordening van de gemeente.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: 'Hoort bij participatie: de verordening van art. 150 Gemeentewet.'
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  gedrag: nee
+  handelende_partij: nee
+  hoedanigheid: nee
+  samenwerkingsverband: nee
+  toegangspunt: nee
+  plaats: nee
+  aanbod_als_geheel: nee
+  regeling_als_geheel:
+    waarde: nee
+    onderbouwing: De verordening van één gemeente als soort, geen concreet benoemde regeling; het model is Model Participatieverordening.
+  afspraak:
+    waarde: nee
+    onderbouwing: Een regeling van de raad, geen overeenkomst.
+  waarneembare_vorm:
+    waarde: nee
+    onderbouwing: Geen vorm van een ander begrip.
+synoniemen:
+- naam: Verordening over betrekken bij beleid
+  context: wet
+- naam: Inspraakverordening
+  context: voorganger, te vervangen vóór 1 januari 2027

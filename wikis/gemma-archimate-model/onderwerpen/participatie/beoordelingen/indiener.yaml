@@ -1,0 +1,42 @@
+begrip: Indiener
+onderwerpen:
+- participatie
+kenmerken:
+  herkenbaar:
+    waarde: ja
+    onderbouwing: De indiener van een verzoek om toepassing van het uitdaagrecht (var. 1 art. 7).
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gemeentelijk:
+    waarde: ja
+    onderbouwing: De gemeente ondersteunt de indiener en maakt afspraken met hem (var. 1 art. 7, 9).
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  buiten_dit_model:
+    waarde: nee
+    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
+  slechts_eigenschap:
+    waarde: nee
+    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
+  eigen_identiteit:
+    waarde: ja
+    onderbouwing: Bestaat zelfstandig als hoedanigheid bij een verzoek.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  betekenis_in_onderwerp:
+    waarde: ja
+    onderbouwing: Hoort bij participatie.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  gedrag: nee
+  handelende_partij: nee
+  hoedanigheid:
+    waarde: ja
+    onderbouwing: De hoedanigheid van een inwoner of maatschappelijke partij die een verzoek indient.
+    bronnen:
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  samenwerkingsverband: nee
+  toegangspunt: nee
+  plaats: nee
+  aanbod_als_geheel: nee
+  regeling_als_geheel: nee
