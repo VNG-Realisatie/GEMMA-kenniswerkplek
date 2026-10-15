@@ -4,7 +4,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from . import frontmatter
+from . import frontmatter, paths
 
 ALLOWED_FIELDS = {"name", "description", "license", "compatibility", "metadata", "disable-model-invocation"}
 MAX_LINES = 500
@@ -96,11 +96,36 @@ def run_lint(repo_root: Path) -> list[str]:
             "herstel met 'llmwiki ontvouw --schrijf'"
         )
 
+    errors.extend(check_woordbudget(repo_root))
+
     names = [meta["meta"].get("name") for meta in skills.values()]
     duplicates = {n for n in names if names.count(n) > 1}
     if duplicates:
         errors.append(f"Dubbele skillnamen gevonden: {sorted(duplicates)}")
 
+    return errors
+
+
+def check_woordbudget(repo_root: Path) -> list[str]:
+    """Woordbudget per wiki (`lint.woordbudget` in wiki.yaml: glob → maximaal aantal woorden,
+    opgeteld over de bestanden die de glob vindt). Een wiki zonder budget wordt niet gecontroleerd."""
+    errors: list[str] = []
+    for key in _wiki_keys(repo_root):
+        wiki_root = repo_root / "wikis" / key
+        if not (wiki_root / "wiki.yaml").exists():
+            continue
+        budget = (paths.load_wiki_yaml(wiki_root).get("lint") or {}).get("woordbudget") or {}
+        for patroon, maximum in budget.items():
+            bestanden = sorted(p for p in wiki_root.glob(patroon) if p.is_file())
+            if not bestanden:
+                errors.append(f"wikis/{key}/wiki.yaml: woordbudget '{patroon}' vindt geen bestanden")
+                continue
+            woorden = sum(len(b.read_text(encoding="utf-8").split()) for b in bestanden)
+            if woorden > maximum:
+                errors.append(
+                    f"wikis/{key}: '{patroon}' telt {woorden} woorden (budget {maximum}); leg de nieuwe regel of "
+                    "tekst eerst aan de redacteur voor en verhoog dan het budget in wiki.yaml (lint.woordbudget)"
+                )
     return errors
 
 

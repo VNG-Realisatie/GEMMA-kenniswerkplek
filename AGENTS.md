@@ -47,3 +47,4 @@ Bij tegenstrijdigheid: repository-veiligheidsregels > wiki-Rules > Skill-instruc
 
 - Gedeelde Skills in `.agents/skills/` bevatten geen kennis van één specifieke wiki en verwijzen nooit naar een pad onder `wikis/`. Gecontroleerd door `llmwiki lint`.
 - Wiki-Skills beginnen met de wiki-key (bijv. `gemma-`), gedeelde Skills met `wiki-`.
+- Een wiki kan een woordbudget hebben (`lint.woordbudget` in `wiki.yaml`: per bestand of groep een maximum aan woorden, gecontroleerd door `llmwiki lint`). Een nieuwe regel of tekst die het budget overschrijdt, leg je eerst aan de redacteur voor; het budget gaat pas omhoog na zijn besluit.
