@@ -6,11 +6,12 @@ Overdracht naar de volgende Sessie (2026-10-15). Wordt bij elke overdracht overs
 
 - Plan goedgekeurd: [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md).
 - Stap 1 uitgevoerd (commit "rules: afspraken lichtere werkwijze"): commitprefixen in AGENTS.md met `llmwiki commit-check` (geen hook), F1–F3, D1, G1 en E1 in `references/besluiten.md`, de update-skill en `wiki-curatie-update`, en een besluit zonder tekst (`advies: gevolgd`, schema, render, test).
-- Volgende stap: stap 2, `tools/beoordeling.py` met `zoek`, `besluiten`, `toon --oordeel`, `zet`, `relatie`, `besluit`, plus A7 (compacte uitvoer en `.gitattributes`).
+- Stap 2 uitgevoerd (commit "tools: beoordeling.py"): `tools/beoordeling.py` (`zoek`, `besluiten`, `toon --oordeel`, `zet`, `relatie`, `besluit`, met tests), `beslissen.py` toont standaard alleen waarschuwingen van gewijzigde beoordelingen plus een telling per regel (`--alles` voor alles), `archimate_export.py` toont kop en tellingen (`--rapport` voor alles), `export/*.archimate -diff` in `.gitattributes`. Nog niet gedaan: compacte uitvoer van `promote plan` (zit in `tools/llmwiki`) en het noemen van de nieuwe commando's en `-q` in de skills (hoort bij stap 5, A6).
+- Volgende stap: stap 3, `tools/werkpakket.py` (A1).
 
 ## Scope
 
-Stap 2 van het plan, zie de sectie Uitvoering en de rijen A2–A4, A7, C2 en C5 (alleen A7 en C2 nu). Daarna stap 3 en verder, elk in een eigen commit na akkoord.
+Stap 3 van het plan, zie de sectie Uitvoering en rij A1 (met A5 niet). Daarna stap 4 en verder, elk in een eigen commit na akkoord.
 
 ## Besluiten die gelden
 
@@ -29,10 +30,10 @@ Stap 2 van het plan, zie de sectie Uitvoering en de rijen A2–A4, A7, C2 en C5 
 
 ## Modeladvies
 
-Stap 2 is denkniveau middel (scripts schrijven met tests); een snel model of een middelhoge redeneerinspanning volstaat. Stap 3 tot en met 5 vragen denkniveau hoog. Begin een nieuwe Sessie: deze Sessie bevat de stap-1-context niet meer nodig.
+Stap 3 tot en met 5 vragen denkniveau hoog (wat in het werkpakket moet, bepaalt de kwaliteit); gebruik het sterkste model of de hoogste redeneerinspanning. Begin een nieuwe Sessie.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en voer stap 2 uit van plannen/2026-10-15-lichtere-werkwijze.md (sectie Uitvoering). Lees uit het plan alleen de rijen A2–A4, A7 en C2 en de sectie Controle. Leg kort voor wat je bouwt, voer uit na mijn akkoord, en commit met een prefix.
+Lees wikis/gemma-archimate-model/handoff.md en voer stap 3 uit van plannen/2026-10-15-lichtere-werkwijze.md (sectie Uitvoering): tools/werkpakket.py (A1), met batch-kandidaten voor GGM, GEMMA en UPL en relatievoorstellen per onderwerp. Lees uit het plan alleen rij A1, A2–A4 (al gebouwd in tools/beoordeling.py) en de sectie Controle. Leg kort voor wat je bouwt, voer uit na mijn akkoord, en commit met een prefix.
 ```

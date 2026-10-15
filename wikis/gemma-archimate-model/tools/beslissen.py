@@ -693,16 +693,36 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     return res
 
 
+def compact(waarschuwingen: list[str], gewijzigd: list[str], alles: bool = False) -> list[str]:
+    """De regels die de run toont: alle met `alles`, anders die over een in deze run gewijzigde beoordeling en een
+    telling van de rest per regel (de laatste term tussen haakjes). De volledige lijst blijft op te vragen."""
+    if alles:
+        return [f"waarschuwing: {w}" for w in waarschuwingen]
+    uit = [f"waarschuwing: {w}" for w in waarschuwingen if w.split(":", 1)[0] in gewijzigd]
+    rest = [w for w in waarschuwingen if w.split(":", 1)[0] not in gewijzigd]
+    if rest:
+        telling: dict[str, int] = {}
+        for w in rest:
+            m = re.search(r"\(([^()]*)\)\s*$", w)
+            telling[m.group(1) if m else "overig"] = telling.get(m.group(1) if m else "overig", 0) + 1
+        uit.append(f"{len(rest)} andere waarschuwing(en), per regel: "
+                   + "; ".join(f"{k} {n}" for k, n in sorted(telling.items(), key=lambda x: -x[1]))
+                   + " (alles tonen: --alles)")
+    return uit
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--zonder-render", action="store_true", help="Alleen beslissen, geen pagina's maken")
+    parser.add_argument("--alles", action="store_true",
+                        help="Alle waarschuwingen tonen (standaard: die van de gewijzigde beoordelingen, plus een telling)")
     parser.add_argument("--wiki", type=Path, default=WIKI_ROOT, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
     res = beslissen(args.wiki)
     for f in res.fouten:
         print(f"fout: {f}")
-    for w in res.waarschuwingen:
-        print(f"waarschuwing: {w}")
+    for w in compact(res.waarschuwingen, res.gewijzigd, args.alles):
+        print(w)
     if res.fouten:
         print(f"{len(res.fouten)} fout(en): er is niets geschreven.")
         return 1

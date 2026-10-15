@@ -1088,6 +1088,21 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
     return "\n".join(regels)
 
 
+def rapport_compact(rapport: str) -> str:
+    """De kop van het rapport en per sectie het aantal regels; de volledige tekst staat in het rapportbestand."""
+    kop, secties, huidig = [], [], None
+    for regel in rapport.splitlines():
+        if regel.startswith("## "):
+            huidig = [regel[3:], 0]
+            secties.append(huidig)
+        elif huidig is None:
+            kop.append(regel)
+        elif regel.strip():
+            huidig[1] += 1
+    return "\n".join(kop).rstrip() + "\n\n" + "\n".join(f"- {naam}: {n} regel(s)" for naam, n in secties) \
+        + "\n(volledig rapport: --rapport)"
+
+
 def main(argv: list[str] | None = None) -> int:
     import gemma
 
@@ -1095,6 +1110,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--concept", action="store_true", help="Ook kandidaat en review, alleen om te bekijken")
     parser.add_argument("--uit", type=Path, help="Ander uitvoerbestand")
     parser.add_argument("--check", action="store_true", help="Alleen de voorwaarden controleren")
+    parser.add_argument("--rapport", action="store_true", help="Het volledige rapport tonen (standaard: kop en tellingen)")
     parser.add_argument("--volledig", action="store_true",
                         help="Van een overgenomen indeling de hele indeling meenemen, niet alleen de gebruikte takken")
     parser.add_argument("--wiki", type=Path, default=WIKI_ROOT, help=argparse.SUPPRESS)
@@ -1130,7 +1146,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     rapport = rapport_md(uit, tijdstempel, gemma_bron, args.concept)
     if args.check:
-        print(rapport)
+        print(rapport if args.rapport else rapport_compact(rapport))
         print("Voorwaarden in orde; er is niets geschreven.")
         return 0
     doel = args.uit or args.wiki / (CONCEPT if args.concept else EXPORT)
@@ -1138,7 +1154,7 @@ def main(argv: list[str] | None = None) -> int:
     doel.write_bytes(uit.xml)
     if not args.concept and not args.uit:
         gam_gemeen.schrijf_gegenereerd(args.wiki / RAPPORT, rapport, TOOL)
-    print(rapport)
+    print(rapport if args.rapport else rapport_compact(rapport))
     print(f"Geschreven: {doel}")
     return 0
 

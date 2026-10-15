@@ -21,3 +21,6 @@ sources/modellen/*.archimate -text
 sources/modellen/*.json -text
 sources/modellen/*.csv -text
 sources/raw/*.csv -text
+
+# De export is gegenereerd: de inhoud staat in de diff van de beoordelingen (gebruik git diff --stat)
+wikis/gemma-archimate-model/export/*.archimate -diff
