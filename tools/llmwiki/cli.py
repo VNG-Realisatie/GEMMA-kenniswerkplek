@@ -634,6 +634,30 @@ def cmd_precommit_render(args) -> int:
     return 1 if fouten else 0
 
 
+def cmd_commit_check(args) -> int:
+    """Controleer commitberichten op een prefix: een bestand, een revisiebereik (a..b) of, zonder argument, HEAD."""
+    repo_root = _repo_root()
+    doel = args.doel
+    if doel and Path(doel).is_file():
+        berichten = {doel: Path(doel).read_text(encoding="utf-8")}
+    else:
+        revs = ["log", "--format=%H%x00%B%x01", doel] if doel and ".." in doel else ["log", "-1", "--format=%H%x00%B%x01", doel or "HEAD"]
+        r = subprocess.run(["git", *revs], cwd=repo_root, capture_output=True, text=True, check=False)
+        if r.returncode != 0:
+            print(f"FOUT: {r.stderr.strip()}", file=sys.stderr)
+            return 1
+        berichten = {}
+        for blok in filter(None, (b.strip("\n") for b in r.stdout.split("\x01"))):
+            sha, _, tekst = blok.partition("\x00")
+            berichten[sha[:7]] = tekst
+    fouten = 0
+    for naam, tekst in berichten.items():
+        for err in lint.check_commitbericht(tekst):
+            print(f"FOUT: {naam}: {err}", file=sys.stderr)
+            fouten += 1
+    return 1 if fouten else 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="llmwiki")
     parser.add_argument("--version", action="store_true", help="Toon de versie en stop")
@@ -818,6 +842,10 @@ def build_parser() -> argparse.ArgumentParser:
     p_pc_log.set_defaults(func=cmd_precommit_log)
     p_pc_render = precommit_sub.add_parser("render-check", help="Gegenereerde pagina's gelijk aan de beoordelingen")
     p_pc_render.set_defaults(func=cmd_precommit_render)
+
+    p_commit_check = sub.add_parser("commit-check", help="Commitberichten beginnen met een prefix (AGENTS.md, Werkwijze)")
+    p_commit_check.add_argument("doel", nargs="?", help="bestand met een bericht, revisiebereik (a..b) of commit; standaard HEAD")
+    p_commit_check.set_defaults(func=cmd_commit_check)
 
     return parser
 

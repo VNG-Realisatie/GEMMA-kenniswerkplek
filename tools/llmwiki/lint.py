@@ -117,6 +117,21 @@ def check_sources_immutable(repo_root: Path, changed_paths: list[str]) -> list[s
     return errors
 
 
+COMMIT_PREFIXEN = ("add", "update", "fix", "remove", "rules", "tools", "docs", "export", "chore")
+
+
+def check_commitbericht(bericht: str) -> list[str]:
+    """Een commitbericht begint met `<prefix>: ` (AGENTS.md, Werkwijze). Een merge-, revert-, fixup- of
+    squash-bericht en een leeg bericht (door git afgebroken) zijn uitgezonderd."""
+    eerste = next((r for r in bericht.splitlines() if r.strip() and not r.startswith("#")), "")
+    if not eerste or eerste.startswith(("Merge ", "Revert ", "fixup! ", "squash! ", "amend! ")):
+        return []
+    prefix = eerste.split(":", 1)[0] if ": " in eerste else ""
+    if prefix not in COMMIT_PREFIXEN:
+        return [f"commitbericht begint niet met een prefix ({', '.join(COMMIT_PREFIXEN)}) en ': ': '{eerste[:60]}'"]
+    return []
+
+
 def check_log_alleen_aanvullen(repo_root: Path, vorige: dict[str, str]) -> list[str]:
     """Elk logboek begint met dezelfde gebeurtenissen als de vorige versie (`vorige`: pad relatief aan
     repo_root → tekst, meestal uit HEAD). Vergelijkt de inhoud, niet de opmaak: een omzetting van het oude

@@ -416,3 +416,13 @@ def test_elk_type_met_pagina_is_compleet():
         assert t.kern, t.naam
         assert bt.km.indeling_tekst(t.paginatype), t.naam
         assert "zelfstandige_specialisatie" in bt.SLEUTELS
+
+
+def test_besluit_zonder_tekst_alleen_bij_advies_gevolgd():
+    schema = bt.schema()
+    basis = beoordeling({"herkenbaar"})
+    zonder_tekst = {"datum": "2026-10-15", "gevolg": "opnemen", "redenen": ["x"]}
+    validator = jsonschema.Draft202012Validator(schema)
+    assert any("besluiten" in "/".join(map(str, e.path)) for e in validator.iter_errors({**basis, "besluiten": [zonder_tekst]}))
+    assert not any("besluiten" in "/".join(map(str, e.path))
+                   for e in validator.iter_errors({**basis, "besluiten": [{**zonder_tekst, "advies": "gevolgd"}]}))

@@ -28,8 +28,8 @@ Er is geen run en geen kladblok: alles staat in de werkboom en is te zien in Git
 | 2 | Bronnen en bronduiding | AI | middel | `wiki-ingest` (laag 1 en 2, en de bronduiding); kernpunten bespreken met de redacteur |
 | 3 | Beoordelen | AI | hoog | De beoordelen-skill van de wiki: per begrip een beoordeling. Lees eerst de besluiten die de redacteur al nam |
 | 4 | Beslissen en renderen | script | hoog | Het beslis-script van de wiki (`curation.beslissen`). Een fout los je op in de beoordeling; een waarschuwing beoordeel je inhoudelijk |
-| 5 | Voorleggen | AI → redacteur | hoog | Wat het beslis-script als open markeert, één vraag tegelijk in de chat: context, argumenten voor en tegen, advies. Het antwoord komt als besluit in de beoordeling; daarna stap 4 |
-| 6 | Bekijken | redacteur | laag | `llmwiki promote plan [--onderwerp <id>]`; toon de samenvatting in de chat. De redacteur leest de pagina's en de wijzigingen in Source Control |
+| 5 | Voorleggen | AI → redacteur | hoog | Wat het beslis-script als open markeert, gebundeld per fase in één tabel (alleen een blokkerende vraag komt meteen): context, argumenten voor en tegen, advies. Het antwoord komt als besluit in de beoordeling, alleen als het de uitkomst of de werkwijze raakt; daarna stap 4 |
+| 6 | Bekijken | redacteur | laag | Per afgerond onderwerp of deel, niet per begrip: `llmwiki promote plan [--onderwerp <id>]`; toon de samenvatting in de chat. De redacteur leest de pagina's en de wijzigingen in Source Control |
 | 7 | Akkoord | redacteur | laag | De redacteur typt letterlijk AKKOORD. "Prima" of "ziet er goed uit" is geen akkoord; vraag dan opnieuw |
 | 8 | Vastleggen | script | laag | `llmwiki promote apply --akkoord-woord AKKOORD`. Het harness vraagt de redacteur om een klik; omzeil die niet |
 | 9 | Commit | redacteur of AI | laag | Beoordelingen, pagina's en `log.md` samen |
@@ -38,11 +38,11 @@ Het denkniveau en wat het Model bij een overgang doet, staan in `AGENTS.md` (Wer
 
 `llmwiki promote apply` weigert als er na de samenvatting iets is gewijzigd; maak dan een nieuw plan. Het zet de status `goedgekeurd` en schrijft per element een regel in `log.md` met de hash van de inhoud van de beoordeling. Een inhoudelijke wijziging maakt een goedgekeurd element via het beslis-script weer `review`; een andere opmaak of een bijgewerkt model niet.
 
-## Een onderwerp in één keer afronden
+## Een onderwerp in opeenvolgende Sessies afronden
 
-- Rond een onderwerp zoveel mogelijk in één keer af voordat je aan een volgend begint: elk begrip beoordeeld, elke vraag beslist, elke ontbrekende bron opgenomen. Opnieuw opstarten kost het opnieuw inlezen van bronnen, besluiten en samenhang, en geparkeerde punten raken uit beeld of worden later zonder de oorspronkelijke afweging opgepakt.
+- Rond een onderwerp af voordat je aan een volgend begint, in opeenvolgende Sessies zonder ander werk ertussen: een Sessie per fase (bronnen en een eerste indeling, het beoordelen, beslissen met voorleggen en vastleggen). Elke fase begint met een schone context; de overdracht staat in de werkboom (beoordelingen, `vragen:`) en in de handoff. Binnen een fase: elk begrip beoordeeld, elke vraag beslist, elke ontbrekende bron opgenomen. elk begrip beoordeeld, elke vraag beslist, elke ontbrekende bron opgenomen. Opnieuw opstarten kost het opnieuw inlezen van bronnen, besluiten en samenhang, en geparkeerde punten raken uit beeld of worden later zonder de oorspronkelijke afweging opgepakt.
 - Een open punt binnen de scope van het onderwerp los je meteen op, niet als todo: ontbreekt bijvoorbeeld de wet die grondslag is van een product, haal haar dan op als bron en beoordeel of ze een beleidskader wordt (een wet die alleen een tarief of een andere regel buiten de gemeentelijke taak bevat, is geen grondslag).
-- Past een onderwerp niet in één Sessie, verdeel het dan in samenhangende delen, kort: delen (een kernobject of proces). Elk deel wordt volledig afgerond (akkoord, vastleggen, commit) en de delen volgen direct op elkaar; wat voor een volgend deel blijft, staat onder het onderwerp in de todo van de wiki en in de startprompt van dat deel, en verdwijnt uit de todo zodra dat deel is afgerond.
+- Past een onderwerp niet in de Sessies van één ronde, verdeel het dan in samenhangende delen, kort: delen (een kernobject of proces). Elk deel wordt volledig afgerond (akkoord, vastleggen, commit) en de delen volgen direct op elkaar; wat voor een volgend deel blijft, staat onder het onderwerp in de todo van de wiki en in de startprompt van dat deel, en verdwijnt uit de todo zodra dat deel is afgerond.
 - Een todo is alleen voor wat binnen het onderwerp niet kan: een begrip dat thuishoort in een onderwerp dat nog niet bestaat (een verwijzing), of een voorstel aan of besluit van een andere partij.
 
 ## Grenzen

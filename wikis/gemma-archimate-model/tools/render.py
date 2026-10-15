@@ -538,7 +538,8 @@ def _besluit(w: Wiki, van: str, b: dict) -> str:
     """Een besluit: datum, bij een onderwerp het begrip zonder beoordeling, het besluit en de stand."""
     begrip = f"**{b['begrip']}**: " if b.get("begrip") else ""
     stand = f" *Stand: {w.tekst(van, b['stand'])}*" if b.get("stand") else ""
-    return f"- {b['datum']}: {begrip}{w.tekst(van, b['besluit'])}{stand}"
+    tekst = w.tekst(van, b["besluit"]) if b.get("besluit") else f"Advies gevolgd ({b.get('gevolg')})."
+    return f"- {b['datum']}: {begrip}{tekst}{stand}"
 
 
 def _begrip_cel(w: Wiki, van: str, bid: str, d: dict) -> str:

@@ -10,6 +10,8 @@
 - [ ] **Curatie-sjabloon met beoordelingen.** `wikis/_template-md` volgt nu `wiki-curatie-update`, maar heeft nog geen eigen schema, beslis- en render-script. Maak een klein generiek voorbeeld (beoordeling met naam, definitie, bronnen en status; render naar één pagina per begrip) zodra een tweede curatie-wiki begint.
 - [ ] **Oude curatie-gate opruimen.** De run-gebaseerde promotie (`gate.py`, curatie-tak van `promote plan/apply` met `--run`, `voorstellen/` voor curatie) wordt door geen wiki meer gebruikt sinds 5.13c. Verwijderen, met de tests `tests/test_gate.py` en `tests/test_curatie_status.py` voor zover ze curatie betreffen.
 
+- [ ] **Gereedschapsspecifieke hooks.** De repository wil geen hooks van een gereedschap of harness voorschrijven (besluit redacteur 2026-10-15; commitberichten worden daarom gecontroleerd met `llmwiki commit-check`). `.pre-commit-config.yaml` gebruikt wel het pre-commit-framework voor lint, sources-immutable, goedgekeurd-guard, log-alleen-aanvullen, render-check en harness-check. Besluit of dat blijft, of dat die controles ook gewone commando's worden (bijvoorbeeld één `llmwiki check-all`) die elk harness of elke mens kan draaien.
+
 ## Afgerond
 
 - [x] Harde regelovergangen verwijderd uit alle Markdown waarvoor de regel in `AGENTS.md` (Schrijfwijze) geldt (35 bestanden), met `llmwiki ontvouw --schrijf`. `llmwiki lint` meldt nieuwe harde regelovergangen; codeblokken, frontmatter, tabellen, koppen en tekst zijn ongewijzigd gebleven (gecontroleerd).

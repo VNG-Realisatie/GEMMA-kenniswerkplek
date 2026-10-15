@@ -49,3 +49,12 @@ def test_goedgekeurd_guard_checks_nested_directories(repo):
     )
     errors = lint.check_goedgekeurd_guard(root)
     assert any("kandidaat-diep" in e for e in errors)
+
+
+def test_commitbericht_vraagt_een_prefix():
+    assert lint.check_commitbericht("docs: plan goedgekeurd.\n\nMeer tekst.") == []
+    assert lint.check_commitbericht("Merge branch 'x'") == []
+    assert lint.check_commitbericht("# commentaar\n") == []
+    assert lint.check_commitbericht("Besluitvorming plak 2") != []
+    assert lint.check_commitbericht("feature: iets") != []
+    assert lint.check_commitbericht("docs:zonder spatie") != []

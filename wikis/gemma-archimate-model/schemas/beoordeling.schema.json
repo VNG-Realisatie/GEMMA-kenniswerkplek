@@ -862,7 +862,6 @@
         "type": "object",
         "required": [
           "datum",
-          "besluit",
           "gevolg"
         ],
         "properties": {
@@ -881,6 +880,12 @@
               "verwerkt"
             ]
           },
+          "advies": {
+            "enum": [
+              "gevolgd"
+            ],
+            "description": "De redacteur volgde het advies van de AI: een besluit zonder tekst"
+          },
           "redenen": {
             "type": "array",
             "items": {
@@ -895,7 +900,19 @@
             "description": "Bij een besluit dat later herzien is of nog open staat: hoe het nu staat"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "anyOf": [
+          {
+            "required": [
+              "besluit"
+            ]
+          },
+          {
+            "required": [
+              "advies"
+            ]
+          }
+        ]
       }
     },
     "status": {

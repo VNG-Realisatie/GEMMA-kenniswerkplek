@@ -1297,13 +1297,16 @@ def schema() -> dict:
             "bronnen": {**bron_ids, "description": "Bronnen naast die in kenmerken en relaties, bijv. de algemene "
                                                    "bron van de beschrijving"},
             "vragen": {"type": "array", "items": tekst, "description": "Open vragen aan de redacteur"},
-            "besluiten": {"type": "array", "items": obj(
-                ["datum", "besluit", "gevolg"], datum={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+            "besluiten": {"type": "array", "items": {**obj(
+                ["datum", "gevolg"], datum={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
                 besluit=tekst, gevolg={"enum": ["opnemen", "afwijzen", "verwerkt"]},
+                advies={"enum": ["gevolgd"],
+                        "description": "De redacteur volgde het advies van de AI: een besluit zonder tekst"},
                 redenen={"type": "array", "items": tekst,
                          "description": "De voorgelegde redenen (uit beslist.voor_te_leggen) die dit besluit dekt"},
                 stand={**tekst, "description": "Bij een besluit dat later herzien is of nog open staat: hoe het nu "
-                                               "staat"})},
+                                               "staat"}),
+                "anyOf": [{"required": ["besluit"]}, {"required": ["advies"]}]}},
             "status": {"enum": ["kandidaat", "review", "goedgekeurd", "afgewezen"],
                        "description": "Door tools/beslissen.py en llmwiki promote; niet zelf invullen"},
             "beslist": {"type": "object", "description": "Door tools/beslissen.py; niet zelf invullen"},

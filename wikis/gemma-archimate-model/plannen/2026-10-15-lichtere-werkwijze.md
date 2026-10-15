@@ -112,7 +112,7 @@ Een grote context is ook slecht voor de kwaliteit: het model let slechter op det
 | | **G. Bundelen, geschiedenis, en blijvend licht** | | | |
 | G1 | **Promote, terugmeldingen en AKKOORD per afgerond onderwerp of deel.** | N, V | −1% | 0 |
 | G2 | **Export alleen op verzoek**; per commit `--check`. | g | −1% | 0 |
-| G3 | **Korte commitberichten met een prefix**, gecontroleerd door de pre-commit-controle. | — | klein | 0; leesbare geschiedenis |
+| G3 | **Korte commitberichten met een prefix**, gecontroleerd door het commando `llmwiki commit-check` (geen hook: de wiki blijft portable). | — | klein | 0; leesbare geschiedenis |
 | G4 | **Woordbudget in `llmwiki lint`** voor skills, kennismodel en AGENTS.md; een nieuwe regel wordt altijd voorgelegd. | g | houdt A6 vast | + overzichtelijke regels |
 | G5 | **Opruimen in `.claude/skills/`**: de oude kopieën. | — | klein | + geen verkeerde skill |
 
@@ -173,7 +173,7 @@ Elke stap is een eigen commit, na akkoord, met de handoff in `wikis/gemma-archim
 
 | Stap | Wat | Denkniveau | Klaar als |
 |---|---|---|---|
-| 1 | **Afspraken**: G3 (prefixen, controle in de pre-commit), F1–F3, D1, G1 en E1 in AGENTS.md, `references/besluiten.md`, de update-skill en `wiki-curatie-update`; het besluit zonder tekst in `beslissen.py`. | middel | lint en pytest zonder fouten; een commitbericht zonder prefix wordt geweigerd |
+| 1 | **Afspraken**: G3 (prefixen, controle met `llmwiki commit-check`), F1–F3, D1, G1 en E1 in AGENTS.md, `references/besluiten.md`, de update-skill en `wiki-curatie-update`; het besluit zonder tekst in `beslissen.py`. | middel | lint en pytest zonder fouten; `llmwiki commit-check` meldt een commitbericht zonder prefix (geen hook, besluit redacteur 2026-10-15) |
 | 2 | **`tools/beoordeling.py`**: `zoek`, `besluiten`, `toon --oordeel`, `zet`, `relatie`, `besluit`. Plus A7: compacte uitvoer en `.gitattributes`. | middel | tests per subcommando; `zoek` vindt elk begrip op naam en synoniem |
 | 3 | **`tools/werkpakket.py`** (A1), met batch-kandidaten voor GGM, GEMMA en UPL, en relatievoorstellen per onderwerp. | hoog (wat erin moet, bepaalt de kwaliteit) | het werkpakket voor Besluitvorming bevat alles wat in deel 2 met de hand werd opgezocht (te controleren in het transcript) |
 | 4 | **Twee fasen** (B1, A5, C1, C5): `bepaal_type.py vragen`, het pad en de afgeleide nee in `beslissen.py`, het schema, `normaliseer`, en het opschonen van de 453 bestanden. | hoog | dezelfde uitkomst (`beslist:`) voor alle 453 beoordelingen; de pagina's gelijk; de export inhoudelijk gelijk |
