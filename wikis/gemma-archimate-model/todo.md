@@ -4,7 +4,7 @@ Het actieve werk van deze wiki; de rest staat in [todo-later.md](todo-later.md).
 
 ## Werkwijze lichter maken (vraag redacteur 2026-10-14, eerst, vóór het volgende onderwerp)
 
-Uitvoeren volgens het goedgekeurde plan [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md), sectie Uitvoering, stap 1 tot en met 9; elke stap een eigen commit na akkoord. Daarna de punten Levensloopproces realiseert altijd een dienst en Verzorgen gemeentebegrafenis als proef (stap 9).
+Uitgevoerd volgens het goedgekeurde plan [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md), stap 1 tot en met 8. Stap 9, de proef, is het onderwerp Participatie (Herbeoordeling hieronder), gemeten volgens het plan (Afwijking bij stap 9).
 
 ## ArchiMate-indeling als eerste selectie in de beslistabel (vraag redacteur 2026-10-15, na de lichtere werkwijze en vóór de Applicatielaag)
 
@@ -14,10 +14,5 @@ De AI kiest eerst het vak in de ArchiMate-matrix: de laag (bedrijf, applicatie, 
 
 De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde pagina's; de elementpagina's van vóór de herziening staan in Git onder tag `voor-herbeoordeling`.
 
-- **Participatie** daarna, met de participatie-modelverordening als mogelijk beleidskader.
+- **Participatie** daarna, als proef van de lichtere werkwijze (stap 9 van het plan), met de participatie-modelverordening als mogelijk beleidskader.
 - **Kanalen** als één centrale set. Input uit lijkbezorging (geen element daar): de elektronische weg (Wlb art. 7, Awb art. 2:13–2:15), het mededelingenbord en bordje bij het graf (Groningen art. 27, VNG-modelverordening art. 24), de beheerder als aanspreekpunt voor aanvragen (VNG-modelverordening toelichting 2), en digitaal aangifte doen met eHerkenning (RVO, burgerlijke stand).
-
-## Proef (stap 9 van het plan)
-
-- **Levensloopproces realiseert altijd een dienst** (besluit redacteur 2026-10-14, nog niet uitgevoerd): elk levensloopproces met afnemer extern realiseert minstens één UPL-dienst, zelf of via zijn bedrijfsprocessen; niet elk bedrijfsproces (Schouwen stoffelijk overschot, Sluiten begraafplaats, Vervallen verklaren grafrecht en andere ambtshalve processen realiseren er geen). Ontbreekt de dienst in de UPL: een procesarchitectuur-terugmelding én een dienst in de wiki waarin expliciet staat dat ze in de UPL ontbreekt. Afspraak in het kennismodel (Bedrijfsproces, Dienst), signaal in `tools/signalen.py`, test. Nu zonder dienst: Verzorgen gemeentebegrafenis (geen UPL-dienst voor Wlb art. 20–22).
-- **Verzorgen gemeentebegrafenis: levensloopproces of bedrijfsproces** (vraag redacteur 2026-10-14): het is een levensloopproces zonder bedrijfsprocessen of gebeurtenissen eronder, omdat een gemeentebegrafenis één keer wordt doorlopen (melding art. 20, zorg art. 21, kostenverhaal art. 22); eigenlijk ligt de levensloop op het niveau van de keten (Bezorgen stoffelijk overschot). Opties: (1) levensloop en proces vallen samen, de stappen in `deelprocessen` (kleinste wijziging, advies); (2) bedrijfsproces onder Toestaan lijkbezorging, maar dat is bewust de gemeente als overheid (besluit 2026-10-07) en Gemeentebegrafenis (GGM en GEMMA sterk) verliest dan objectniveau kernobject (beslistabel regel 38); (3) levensloopproces met kernobject Stoffelijk overschot als deel van de gemeente als verzorger in de keten, met hetzelfde gevolg voor Gemeentebegrafenis. Daarnaast de dienst Gemeentebegrafenis met terugmelding (punt hierboven). Stappen uit de praktijk (nabestaanden zoeken, uitvaartondernemer inschakelen) alleen met een bron. Na het lichter maken van de werkwijze.
