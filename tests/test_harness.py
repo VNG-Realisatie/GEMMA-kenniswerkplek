@@ -126,3 +126,24 @@ def test_check_detects_stale_copy_bridge(harness_repo):
     )
     problems = harness.check(root)
     assert any("Verouderde kopie" in p for p in problems)
+
+
+def test_stale_bridges_reported_and_removed_but_own_skills_kept(harness_repo):
+    root, wiki_root = harness_repo
+    harness.sync(root)
+    skills = root / ".claude" / "skills"
+    (skills / "wiki-oud").symlink_to(root / ".agents" / "skills" / "wiki-oud")  # verwijst naar een verdwenen skill
+    oude_kopie = wiki_root / ".claude" / "skills" / "template-oud"
+    harness.bridge_skill(wiki_root / ".agents" / "skills" / "template-edit", oude_kopie)
+    eigen = skills / "eigen"
+    eigen.mkdir()
+    (eigen / "SKILL.md").write_text("x", encoding="utf-8")
+
+    problems = harness.check(root)
+    assert any("wiki-oud" in p for p in problems) and any("template-oud" in p for p in problems)
+    assert not any("eigen" in p for p in problems)
+
+    harness.sync(root)
+    assert not (skills / "wiki-oud").is_symlink() and not oude_kopie.exists()
+    assert eigen.exists()
+    assert harness.check(root) == []

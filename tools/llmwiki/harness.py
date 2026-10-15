@@ -106,6 +106,26 @@ def _bridge_pairs(repo_root: Path) -> list[tuple[Path, Path]]:
     return pairs
 
 
+def _stale_bridges(repo_root: Path) -> list[Path]:
+    """Bruggen in .claude/skills/ waarvan de canonieke skill niet meer bestaat: een
+    verwijzing naar .agents/skills/ of een beheerde kopie (.bridge-source.json).
+    Eigen skills van de gebruiker blijven staan."""
+    verwacht = {target for _, target in _bridge_pairs(repo_root)}
+    oud: list[Path] = []
+    for root in [repo_root, *_all_wikis(repo_root)]:
+        skills_dir = root / ".claude" / "skills"
+        if not skills_dir.is_dir():
+            continue
+        for entry in sorted(skills_dir.iterdir()):
+            if entry in verwacht:
+                continue
+            if entry.is_symlink() and ".agents" in os.readlink(entry):
+                oud.append(entry)
+            elif entry.is_dir() and not entry.is_symlink() and (entry / ".bridge-source.json").exists():
+                oud.append(entry)
+    return oud
+
+
 # --- Permissies (.claude/settings.json) ---
 
 # llmwiki wordt altijd aangeroepen als `uv run python -m llmwiki` (zie tools/llmwiki/__main__.py).
@@ -230,6 +250,10 @@ def sync(repo_root: Path) -> dict:
         methode = bridge_skill(source_dir, target_dir)
         verslag["bruggen"].append({"skill": source_dir.name, "doel": str(target_dir), "methode": methode})
 
+    for oud in _stale_bridges(repo_root):
+        _remove_existing(oud)
+        verslag["bruggen"].append({"skill": oud.name, "doel": str(oud), "methode": "verwijderd"})
+
     for path, content in _generate_all(repo_root).items():
         _write_json(path, content)
         verslag["bestanden"].append(str(path))
@@ -250,6 +274,9 @@ def check(repo_root: Path, bruggen: bool = True) -> list[str]:
         issue = _check_bridge(source_dir, target_dir)
         if issue:
             problems.append(issue)
+
+    for oud in _stale_bridges(repo_root) if bruggen else []:
+        problems.append(f"Brug van een skill die niet meer bestaat (draai 'llmwiki harness sync'): {oud}")
 
     for path, expected in _generate_all(repo_root).items():
         if not path.exists():
