@@ -23,6 +23,19 @@ Het GGM is matchdoel, geen bron: een GGM-relatie dient alleen om een gevonden re
 GGM-relatie zonder gevonden relatie tussen dezelfde elementen wordt geen voorstel; `voorstel` noemt haar als
 commentaar, zodat de AI een bron kan zoeken of een relatie die al in de beoordeling staat kan matchen.
 
+Bij het zoeken van de GGM-match past de tool deze regels toe:
+- Mappen waar het kan: `ggm_match: exact` is één GGM-relatie tussen de GGM-entiteiten van beide elementen.
+- Subtypes overslaan: een relatie op een specialisatie zonder pagina of een GGM-component wordt opgetild naar het
+  element dat die draagt. Een keten A–X–B via een niet-opgenomen X wordt A–B (`ggm_match: geen`, met de keten in
+  `ggm_relatie`), met het zwakste type in de keten (compositie > aggregatie > associatie) en een samengestelde
+  kardinaliteit. Specialisaties worden niet geketend. Relaties naar enumeraties vervallen (eigenschap); dubbelingen
+  worden samengevoegd; lussen vervallen.
+- Relatietype (GGM → ArchiMate): Generalization tussen twee opgenomen kanten → specialisatie; Aggregation composite
+  of shared met een deel-geheelnaam ("bevat", "bestaat uit") of zonder naam → compositie of aggregatie (geheel → deel);
+  Aggregation met een andere naam ("leidt tot", "beschrijft") → associatie (gericht), terugmeldkandidaat; Association
+  en Usage → associatie, gericht als de naam een leesrichting heeft; Abstraction "is een" → specialisatie, anders
+  associatie, terugmeldkandidaat.
+
 Gebruik (vanuit de wikimap, na tools/beslissen.py):
     uv run python tools/relaties.py voorstel <element-id>      # kandidaten als YAML voor `relaties:`
     uv run python tools/relaties.py uit-bronnen [<onderwerp>]  # alle relaties uit de bronduidingen, met wat vervalt

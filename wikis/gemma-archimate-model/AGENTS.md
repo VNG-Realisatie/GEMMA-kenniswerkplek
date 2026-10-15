@@ -55,10 +55,10 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 | Werkwijze van de AI | dit bestand | — | de AI, na een besluit van de redacteur | ja |
 | Wat het model is: elementtypen, relaties, indelingen | [kennismodel/](kennismodel/README.md), per type de modelleerafspraken | kennismodel | `tools/kennismodel.py` | nee |
 | Regels voor het modelleren, met de voorrang | [kennismodel/modelleerregels.md](kennismodel/modelleerregels.md) | kennismodel | de AI, na een besluit van de redacteur | ja |
-| Werkstroom: de stappen | skill `gemma-archimate-model-update` | — | — | ja |
-| Criteria: is het een element, en welk type | skill `gemma-archimate-model-criteria`; [kennismodel/kenmerken-en-beslistabel.md](kennismodel/kenmerken-en-beslistabel.md) | kennismodel | de vragenlijst en de stappentabel: `tools/bepaal_type.py` | alleen de tekst buiten het gegenereerde blok van de skill |
-| Werkinstructie per veld van een beoordeling | skill gemma-archimate-model-beoordelen en zijn `references/` | — | — | ja |
-| Sjablonen | beoordeling: skill gemma-archimate-model-beoordelen §4; bronduiding: skill gemma-archimate-model-ingest §4; terugmelding: `references/terugmeldingen.md`; besluit en voorleggen: `references/besluiten.md`; vorm: `schemas/` | — | — | ja |
+| Werkstroom: de stappen in drie fasen, met wat je per fase leest en de opdracht voor de beoordelingsagent | skill `gemma-archimate-model-update` | — | — | ja |
+| Criteria: is het een element, en welk type (fase A) | skill `gemma-archimate-model-criteria`; de vragen per fase: `tools/bepaal_type.py vragen`; de volledige vragenlijst en de stappentabel: [kennismodel/kenmerken-en-beslistabel.md](kennismodel/kenmerken-en-beslistabel.md) | kennismodel | de vragen en de stappentabel: `tools/bepaal_type.py` | de skill ja; de vragen en de stappentabel nee |
+| Werkinstructie per veld van een beoordeling (fase B) | skill gemma-archimate-model-beoordelen en zijn `references/` | — | — | ja |
+| Sjablonen | beoordeling: skill gemma-archimate-model-criteria, stap 5 (fase A), en skill gemma-archimate-model-beoordelen, Velden (fase B); bronduiding: skill gemma-archimate-model-ingest §4; terugmelding: `references/terugmeldingen.md`; besluit en voorleggen: `references/besluiten.md`; vorm: `schemas/` | — | — | ja |
 | Oordeel per begrip | `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` | — | de AI; `status` en `beslist` de scripts | ja, behalve `status` en `beslist` |
 | Registers | `onderwerpen/<onderwerp>/afbakening.yaml`, `modellen/*/terugmeldingen`, `modellen/gemma/indelingen/beleidsdomeinen.yaml` | — | de AI | ja |
 | Wat een bron betekent | `onderwerpen/<onderwerp>/bronduidingen/<brontype>/<bron-id>.md`, of `modellen/<model>/bronduidingen/<brontype>/<bron-id>.md` voor een bron van een model | bronduiding | de AI | ja |

@@ -1,6 +1,6 @@
 ---
 name: gemma-archimate-model-archimate-export
-description: Exporteer de goedgekeurde elementen en relaties van gemma-archimate-model als Archi-bestand (.archimate) met de technische id's van het GEMMA-model, om in Archi te bekijken en in het GEMMA-model te importeren, met een volledige sync via de exportdatum en een jArchi-script. Gebruik na elk AKKOORD (stap 9 van gemma-archimate-model-update) en wanneer de redacteur het model in Archi wil zien of naar GEMMA wil brengen.
+description: Exporteer de goedgekeurde elementen en relaties van gemma-archimate-model als Archi-bestand (.archimate) met de technische id's van het GEMMA-model, om in Archi te bekijken en in het GEMMA-model te importeren, met een volledige sync via de exportdatum en een jArchi-script. Gebruik na elk AKKOORD (stap 16 van gemma-archimate-model-update) en wanneer de redacteur het model in Archi wil zien of naar GEMMA wil brengen.
 metadata:
   kind: capability
   scope: wiki

@@ -14,16 +14,14 @@ Eén bron van waarheid voor de criteria van deze wiki:
 Het model vult de kenmerken op het pad in (`pad`: fase A en fase B, met onderbouwing en bron-id's); buiten het pad
 leidt deze tool nee af, en ze past de regels toe. De elementtypen zelf
 (naam, ArchiMate-type, paginatype), hun eigenschappen en indelingen staan in het kennismodel (tools/kennismodel.py).
-De vragenlijst in skill `gemma-archimate-model-criteria` en `schemas/beoordeling.schema.json` worden hieruit gegenereerd
-(`markdown --schrijf`, `schema --schrijf`); de vragenlijst met voorbeelden en de stappentabel staan in
-`kennismodel/kenmerken-en-beslistabel.md` (gegenereerd door tools/kennismodel.py). Een test bewaakt dat ze gelijk
-blijven.
+`schemas/beoordeling.schema.json` wordt hieruit gegenereerd (`schema --schrijf`); de vragen per fase geeft `vragen`, en
+de vragenlijst met voorbeelden en de stappentabel staan in `kennismodel/kenmerken-en-beslistabel.md` (gegenereerd door
+tools/kennismodel.py). Een test bewaakt dat ze gelijk blijven.
 
 Gebruik (vanuit de wikimap):
     uv run python tools/bepaal_type.py evalueer <assessment.json | beoordeling.json> [--schrijf]
     uv run python tools/bepaal_type.py vragen [<id>] [--type <paginatype>]   # de vragen voor de volgende fase
     uv run python tools/bepaal_type.py status --uitkomst <uitkomst.json> [--ggm-match sterk]
-    uv run python tools/bepaal_type.py markdown [--schrijf]   # de vragenlijst in de criteria-skill
     uv run python tools/bepaal_type.py schema [--schrijf]     # schemas/beoordeling.schema.json
 """
 
@@ -44,7 +42,6 @@ from kennismodel import AFNEMERS, DOELGROEPEN, DOMEINEN, REGELGEVERS, VERPLICHT,
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = WIKI_ROOT / "schemas" / "beoordeling.schema.json"
-SKILL_PATH = WIKI_ROOT / ".agents" / "skills" / "gemma-archimate-model-criteria" / "SKILL.md"
 CRITERIA_VERSIE = "2026-10-08"
 
 GEEN_AARD = ""  # in `bij`: ja mag ook als het begrip geen aard heeft (een ding)
@@ -1267,7 +1264,7 @@ def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None,
     return "review"
 
 
-# --- Generatie: documentatie (criteria-skill, wikipagina) en het beoordeling-schema ---
+# --- Generatie: documentatie (wikipagina) en het beoordeling-schema ---
 
 def _cel(tekst: str) -> str:
     return tekst.replace("|", "\\|")
@@ -1290,18 +1287,6 @@ PAD_UITLEG = ("Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_typ
               "onderbouwing. Fase B: de kenmerken van het type, elk met een onderbouwing. Een kenmerk buiten het pad laat "
               "je weg: het script leidt nee af. Bij \"Noem …\" hoort bij ja een concreet begrip, artikel of relatie uit de "
               "bronnen; zonder zo'n verwijzing is het antwoord nee.")
-
-
-def doc_vragenlijst() -> list[str]:
-    regels = ["### Kenmerken: vragenlijst in volgorde van beoordelen", "", PAD_UITLEG, ""]
-    nr = 0
-    for groep in GROEPEN:
-        regels += [f"**{groep}.** {GROEP_ALS[groep]}", ""]
-        for km in (k for k in KENMERKEN if k.groep == groep):
-            nr += 1
-            regels.append(f"{nr}. {km.vraag} (*{km.naam}*)")
-        regels.append("")
-    return regels
 
 
 def doc_vragentabel() -> list[str]:
@@ -1332,22 +1317,6 @@ def doc_stappen() -> list[str]:
     regels += [f"| — | {s} | {_cel(a)} | {_cel(d)} |" for s, a, d in NAREGELS]
     regels.append("")
     return regels
-
-
-def markdown() -> str:
-    """De gegenereerde vragenlijst in de criteria-skill: stap 0 en de vragen in volgorde van beoordelen."""
-    return "\n".join(doc_stap0() + doc_vragenlijst()).rstrip("\n") + "\n"
-
-
-BEGIN = "<!-- BEGIN gegenereerd uit de beslistabel; niet met de hand bewerken -->"
-EINDE = "<!-- EINDE gegenereerd -->"
-
-
-def vervang_blok(tekst: str, blok: str) -> str:
-    patroon = re.compile(r"<!-- BEGIN gegenereerd[^>]*-->.*?<!-- EINDE gegenereerd -->", re.S)
-    if not patroon.search(tekst):
-        raise ValueError("geen gegenereerd blok gevonden")
-    return patroon.sub(lambda _: f"{BEGIN}\n{blok}{EINDE}", tekst, count=1)
 
 
 def schema() -> dict:
@@ -1509,15 +1478,6 @@ def _beoordelingen(data: dict) -> list[tuple[str, dict]]:
     return [(data.get("begrip", "?"), data)]
 
 
-def schrijf_documentatie() -> list[Path]:
-    tekst = SKILL_PATH.read_text(encoding="utf-8")
-    nieuw = vervang_blok(tekst, markdown())
-    if nieuw == tekst:
-        return []
-    SKILL_PATH.write_text(nieuw, encoding="utf-8", newline="\n")
-    return [SKILL_PATH]
-
-
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -1527,8 +1487,6 @@ def main(argv: list[str] | None = None) -> int:
     p_status = sub.add_parser("status", help="Voorgestelde status voor een uitkomst")
     p_status.add_argument("--uitkomst", required=True)
     p_status.add_argument("--ggm-match")
-    p_md = sub.add_parser("markdown", help="De vragenlijst voor de criteria-skill")
-    p_md.add_argument("--schrijf", action="store_true", help="Werk het gegenereerde blok in de skill bij")
     p_schema = sub.add_parser("schema", help="Beoordeling-schema")
     p_schema.add_argument("--schrijf", action="store_true", help=f"Schrijf naar {SCHEMA_PATH.relative_to(WIKI_ROOT)}")
     p_vragen = sub.add_parser("vragen", help="De vragen voor de volgende fase van een beoordeling")
@@ -1553,13 +1511,6 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         return 0
 
-    if args.cmd == "markdown":
-        if args.schrijf:
-            for pad in schrijf_documentatie():
-                print(f"Bijgewerkt: {pad.relative_to(WIKI_ROOT)}")
-            return 0
-        sys.stdout.write(markdown())
-        return 0
     if args.cmd == "schema":
         tekst = json.dumps(schema(), indent=2, ensure_ascii=False) + "\n"
         if args.schrijf:

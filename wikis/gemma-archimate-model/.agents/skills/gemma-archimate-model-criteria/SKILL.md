@@ -1,145 +1,41 @@
 ---
 name: gemma-archimate-model-criteria
-description: De criteria van deze wiki voor de vraag of een begrip een ArchiMate-element is en van welk type (bedrijfsobject, afspraak, product, dienst, proces, functie, gebeurtenis, actor, rol, bedrijfssamenwerking, kanaal, beleidskader). Laad deze skill bij elke beoordeling van een begrip, vóór er een elementpagina wordt voorgesteld.
+description: Fase A van de beoordeling in gemma-archimate-model — valt een begrip af, en zo niet, welke aard heeft het (gedrag, partij, rol, samenwerking, kanaal, plaats, aanbod, regeling of een ding) — met de vragen uit tools/bepaal_type.py vragen, in de schrijfvorm van één regel. Gebruik in fase 1 van gemma-archimate-model-update, voor elk nieuw begrip; fase B (de kenmerken van het type) staat in gemma-archimate-model-beoordelen.
 metadata:
   kind: capability
   scope: wiki
-  requires-tools: "python:tools/bepaal_type.py"
+  requires-tools: "python:tools/bepaal_type.py python:tools/beoordeling.py python:tools/werkpakket.py"
   reads: "bronduiding"
   writes: "beoordeling"
 ---
 
-# Criteria: is dit begrip een ArchiMate-element, en welk?
+# Criteria: fase A
 
-Deze skill zegt hoe je beoordeelt of een begrip een element van dit model wordt, en van welk type. Wat de typen zijn, met hun kernrelatie, niveaus, eigenschappen, indelingen en naamvorm, staat in het kennismodel: [kennismodel/README.md](../../../kennismodel/README.md), per type de modelleerafspraken. De vragen met voorbeelden en herkomst, en de stappentabel van de beslistabel, staan in [kenmerken en beslistabel](../../../kennismodel/kenmerken-en-beslistabel.md); de regels voor het modelleren in [modelleerregels](../../../kennismodel/modelleerregels.md). Hoe je het begrip daarna vastlegt (GGM-match, naam, definitie, relaties) staat in skill `gemma-archimate-model-beoordelen`.
+Het type is de uitkomst van de beslistabel (`tools/bepaal_type.py`), geen keuze vooraf (regel Beslistabel beslist). Jij beantwoordt kenmerken: neutrale eigenschappen van het begrip, elk met ja of nee, een onderbouwing en de bron-id's. De beslistabel loop je af in twee fasen. Fase A (deze skill) is de poort, met een stop als het begrip afvalt, de aard en de groep van die aard. Fase B (skill `gemma-archimate-model-beoordelen`) vraagt alleen de kenmerken van het type. Een kenmerk buiten het pad laat je weg: het script leidt nee af. De volledige vragenlijst met voorbeelden en herkomst, en de stappentabel, staan in [kenmerken en beslistabel](../../../kennismodel/kenmerken-en-beslistabel.md); lees die alleen bij twijfel over een kenmerk.
 
-## Kenmerk en criterium
+## Stappen
 
-- Een **kenmerk** is een neutrale eigenschap van het begrip zelf, bijvoorbeeld *onderscheidbare exemplaren*. Je beantwoordt het met ja of nee, met een onderbouwing en de bron-id's waarop die steunt. Een kenmerk oordeelt niet over het type.
-- Een **criterium** is een regel in de beslistabel (stap 0 tot 7): welke combinatie van kenmerken tot welk type leidt. De tool `tools/bepaal_type.py` past de criteria toe; jij beoordeelt ze niet los.
+1. **Begrippen verzamelen.** De begrippen van het onderwerp staan in het werkpakket (sectie Begrippen): de kernbegrippen uit de bronduidingen en de beoordelingen die het onderwerp al kent. Kijk per partij ook naar kanalen, beleidskaders en samenwerkingen. Het GGM is matchdoel, geen bron: een GGM-entiteit wordt geen begrip omdat het GGM haar kent, en een begrip uit de bronnen sla je niet over omdat het GGM het al kent. Een GGM-entiteit van het beleidsdomein die de bronnen niet noemen, noem je in de tabel; zoek een bron als ze ertoe doet.
+2. **Welk begrip? (stap 0)** Een ander woord voor een element dat bestaat of nu wordt beoordeeld: `synoniem_van`, met de context van het woord. Dezelfde naam voor een ander begrip, in de wiki, het GGM, het GEMMA-model of een bron (de naamgenoten '=' in het werkpakket): `homoniem_van`, en de naamkeuze gaat in de tabel. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem. Staat een begrip niet in het werkpakket: `uv run python tools/beoordeling.py zoek <naam> [<synoniem> …]`.
+3. **Naam en thuisonderwerp.** De naam is de gangbare term uit beleid en praktijk; de wetsterm wordt een synoniem met context "wet" (regel Bronvoorrang). Het id is de naam in kleine letters met koppeltekens. Het thuisonderwerp volgt uit de inhoud (regel Thuishoren) en staat als eerste in `onderwerpen`; de beoordeling staat in `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml`. Hoort het begrip bij een onderwerp dat nog niet bestaat, dan is *betekenis in onderwerp* nee (een verwijzing).
+4. **De vragen.** `uv run python tools/bepaal_type.py vragen` geeft de vragen van fase A met voorbeelden; één keer per Sessie.
+5. **Schrijven.** Per kenmerk één regel onder `kenmerken:`, in de volgorde van de vragen:
 
-Zo beantwoord je alle kenmerken **één keer, tegelijk**. Je kiest dus niet eerst een type om daarna te toetsen of het klopt. Het type is de uitkomst.
+   ```yaml
+   begrip: Ruimen graf
+   onderwerpen: [lijkbezorging]
+   kenmerken:
+     herkenbaar: ja — De wet regelt het ruimen van graven (art. 31). [2026-rijk-wet-op-de-lijkbezorging-wettekst]
+     buiten_dit_model: nee — Gedrag, geen doel of norm.
+     handelende_partij: nee
+   ```
 
-## Werkwijze
+   Een ja heeft de bron-id's tussen haken; een plek in een GEMMA-indeling het id van de GEMMA-relatie (`[id-…]`). Een nee in de poort heeft een onderbouwing; in Aard en Soort gedrag is een kale nee genoeg. Zet de tekst tussen aanhalingstekens als hij `: ` of ` #` bevat. Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; staat die niet in de bronduiding, vul dan eerst de bronduiding aan. Valt het begrip af, stop dan bij dat kenmerk, met `genoemd_begrip` (bij *slechts eigenschap* en bij *eigen identiteit* nee) of `archimate_buiten_model` (bij *buiten dit model*), en een `toelichting` van één zin voor de begrippenlijst. Bij *waarneembare vorm* ja is `genoemd_begrip` het object. Een begrip dat afvalt, blijft in de begrippenlijst staan. Ken je het kernobject van een proces, dienst of gebeurtenis al, zet dan ook `kernobject: <id>`.
+6. **Normaliseren.** `uv run python tools/beoordeling.py normaliseer <id> …` maakt van de regels de opgeslagen vorm, laat een nee buiten het pad weg en noemt wat op het pad nog open staat. Een fout los je op in de regel; lees het bestand niet terug. De eerste regel van `uv run python tools/bepaal_type.py vragen <id>` noemt het type voor fase B ("Fase B, Bedrijfsproces"). `tools/beslissen.py` draai je pas in fase B.
 
-1. **Stap 0: welk begrip?** Bepaal vóór de kenmerken of het woord een synoniem is van een bestaand element (of van een begrip dat nu wordt beoordeeld), en of dezelfde naam al voor een ander begrip bestaat: in de wiki, het GGM of het GEMMA-model (`tools/ggm.py kandidaten <naam>`, `tools/gemma.py kandidaten <naam>`) of een bron. Vul `synoniem_van` of `homoniem_van` in. Een actor of rol en een bedrijfsobject met dezelfde naam zijn een tegenhanger, geen homoniem.
-2. Beantwoord **alle** kenmerken uit de vragenlijst hieronder, ook als ze niet bij het vermoedelijke type horen (dan nee). Gebruik de bronnen in de volgorde van de regel Bronvoorrang. Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; staat die niet in de bronduiding, vul dan eerst de bronduiding aan. Twijfel je over een kenmerk, kijk dan naar de voorbeelden in [kenmerken en beslistabel](../../../kennismodel/kenmerken-en-beslistabel.md).
-3. Let op:
-   - *zelfstandige specialisatie*: kijk eerst naar boven. Zoek de generalisaties in de wiki, het GGM (`tools/ggm.py generalisaties`, `naamgenoten`) en het GEMMA-model (`tools/gemma.py zoek`) en noteer de keten (bijv. Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Het kenmerk gaat over de "is een"-relatie, niet over herkomst uit wet of beleid; zie skill `gemma-archimate-model-beoordelen` §3 en `references/hierarchie.md`.
-   - *los van verantwoordelijkheid* en *eigen rechtspersoon* beslissen tussen actor, rol en bedrijfssamenwerking; *soort partij* volgt de afspraken in de modelleerafspraken van [Actor](../../../kennismodel/bedrijfsarchitectuur/actor-modelleerafspraken.md).
-   - *gebruikt objecten* en *wordt bewerkt*: noem de handeling uit de vaste reeks (zie het [kennismodel](../../../kennismodel/README.md), Relatietypen).
-   - Een proces: bepaal het procesniveau (stap 7) met de niveaus en afspraken in de modelleerafspraken van [Bedrijfsproces](../../../kennismodel/bedrijfsarchitectuur/bedrijfsproces-modelleerafspraken.md); een ketensamenwerking met die van [Bedrijfsinteractie](../../../kennismodel/bedrijfsarchitectuur/bedrijfsinteractie-modelleerafspraken.md). Een vervallen of samengevoegd element krijgt het besluit `afwijzen`; de controles op de indeling slaan het over.
-   - Een object: bepaal het objectniveau (stap 7) met de modelleerafspraken van [Bedrijfsobject](../../../kennismodel/bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md). Voor een gebeurtenis, rol of dienst met *generiek*: vul `gemma_generiek`, een specialisatie van een GEMMA-element met exacte match; ontbreekt dat element, leg het dan voor als voorstel aan GEMMA.
-   - Een doelgroep (minima, jongeren) is geen actor of rol maar een indeling van een actor: *slechts eigenschap* ja, met de actor als `genoemd_begrip`.
-   - Een regeling: volg de modelleerafspraken van [Beleidskader](../../../kennismodel/motivatie/beleidskader-modelleerafspraken.md); een los artikel is *buiten dit model*.
-4. Vul waar nodig de extra velden in:
-   - `genoemd_begrip` bij *slechts eigenschap*, *eigen identiteit* nee (het geheel), *zelfstandige specialisatie* nee (het bredere begrip) of *waarneembare vorm* (het object);
-   - `archimate_buiten_model` bij *buiten dit model*;
-   - de eigenschappen van het type uit zijn modelleerafspraken, zoals `kernobject`, `gemma_generiek` en de indelingsvelden `domein`, `afnemer`, `doelgroep` en `regelgever`, naast `taakveld` en `beleidsdomein`. Een relatie naar een generiek object noemt zijn specialisatie zonder pagina in `via`.
-5. Leg de beoordeling vast in `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` (schema `schemas/beoordeling.schema.json`, zie skill `gemma-archimate-model-beoordelen`) en draai `uv run python tools/beslissen.py`. De uitkomst is bindend.
-6. Is de uitkomst `conflict` of staat `voorleggen` aan, dan leg je het begrip voor aan de redacteur, met de redenen uit de uitkomst. Pas je antwoorden niet aan om een conflict weg te werken, tenzij een antwoord aantoonbaar fout was.
+## Let op
 
-## Vragenlijst
-
-Gegenereerd uit de beslistabel (`uv run python tools/bepaal_type.py markdown --schrijf`); dezelfde vragen met voorbeelden en herkomst, en de stappentabel, staan in [kenmerken en beslistabel](../../../kennismodel/kenmerken-en-beslistabel.md).
-
-<!-- BEGIN gegenereerd uit de beslistabel; niet met de hand bewerken -->
-### Stap 0: welk begrip?
-
-Vóór de kenmerken: bepaal welk begrip bedoeld is. Synoniemen en homoniemen zijn geen kenmerken van een begrip, maar verhoudingen tussen een woord en een begrip.
-
-| Veld | Vraag | Uitkomst |
-|---|---|---|
-| `synoniem_van` | Is dit een ander woord voor een begrip dat al een element is, of in deze run wordt beoordeeld? Noem dat element en de context van het woord. | synoniem: geen pagina; het woord naar de synoniemen van het element |
-| `homoniem_van` | Bestaat dezelfde naam al voor een ander begrip, in de wiki, het GGM, het GEMMA-model of een bron? Noem dat begrip en waar het voorkomt. | door naar de kenmerken; naamkeuze voorleggen |
-
-### Kenmerken: vragenlijst in volgorde van beoordelen
-
-Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_type.py vragen <id>`). Fase A: de poort, met een stop als het begrip afvalt, de aard en de groep van die aard; een nee in Aard en Soort gedrag zonder onderbouwing. Fase B: de kenmerken van het type, elk met een onderbouwing. Een kenmerk buiten het pad laat je weg: het script leidt nee af. Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; zonder zo'n verwijzing is het antwoord nee.
-
-**Poort.** Altijd.
-
-1. Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? (*herkenbaar*)
-2. Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? (*gemeentelijk*)
-3. Is het een doel, waarde, drijfveer, principe, losse norm of eis, vermogen of thema, en geen beleidskader? Noem het ArchiMate-type. (*buiten dit model*)
-4. Is het alleen een eigenschap, status, waarde, classificatie of indeling van één ander begrip, ook een doelgroep? Noem dat begrip. (*slechts eigenschap*)
-5. Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? Noem bij nee dat begrip. (*eigen identiteit*)
-6. Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? Noem bij nee het onderwerp waar het thuishoort. (*betekenis in onderwerp*)
-
-**Aard.** Altijd. Precies één ja; alleen *handelende partij* met *hoedanigheid* of met *samenwerkingsverband* mag samen.
-
-7. Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? (*gedrag*)
-8. Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren? (*handelende partij*)
-9. Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? (*hoedanigheid*)
-10. Is het een (ook tijdelijke) samenstelling van twee of meer partijen of rollen die samen gedrag uitvoeren? (*samenwerkingsverband*)
-11. Is het een communicatiekanaal waarlangs een dienst beschikbaar komt? (*toegangspunt*)
-12. Is het een fysieke plaats als zodanig, en geen gebiedsindeling als gegeven? (*plaats*)
-13. Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer wordt geleverd? (*aanbod als geheel*)
-14. Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? (*regeling als geheel*)
-
-**Partij.** Alleen bij *handelende partij*, *hoedanigheid*, *samenwerkingsverband* of *toegangspunt*; *soort partij* bij *handelende partij* en *samenwerkingsverband*.
-
-15. Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? (*los van verantwoordelijkheid*)
-16. Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? (*eigen rechtspersoon*)
-17. Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? Noem de rol. (*vervult een rol*)
-18. Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? Noem het. (*voert gedrag uit*)
-19. Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. (*soort partij*)
-20. Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst. (*ontsluit een dienst*)
-
-**Soort gedrag.** Alleen bij *gedrag*. Precies één ja.
-
-21. Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? (*per keer doorlopen*)
-22. Is het een groepering van bedrijfsprocessen van één soort werk, die niet per geval wordt doorlopen? (*groepeert processen*)
-23. Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? (*gegroepeerd gedrag*)
-24. Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? (*toestandsverandering*)
-25. Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? (*aangeboden gedrag*)
-26. Kan het alleen door twee of meer partijen samen worden uitgevoerd, zoals een ketensamenwerking waarin de bedrijfsprocessen van de partijen samenkomen? (*gezamenlijk gedrag*)
-
-**Gedrag.** Alleen bij *gedrag*; *afnemer* en *benoembaar resultaat* ook bij *aanbod als geheel*.
-
-27. Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? Noem de rol. (*toegewezen partij*)
-28. Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? Noem object en handeling. (*gebruikt objecten*)
-29. Start het door een aanwijsbare gebeurtenis, verzoek of termijn? Noem die. (*aanleiding*)
-30. Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? Noem het. (*benoembaar resultaat*)
-31. Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? (*komt herhaald voor*)
-32. Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? Noem het artikel. (*eigen normering*)
-33. Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? (*stabiel over tijd*)
-34. Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? Noem die. (*afnemer*)
-35. Is er een proces of functie aanwijsbaar dat de dienst uitvoert? Noem het. (*gerealiseerd door*)
-36. Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? Noem het. (*leidt tot gedrag*)
-37. Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? Noem dat proces. (*bijdrage aan groter proces*)
-38. Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? Noem begin en eind. (*klant tot klant*)
-39. Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? Noem ze. (*omvat processen*)
-40. Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? Noem het object. (*omvat levensloop*)
-41. Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. (*eigen besluit*)
-42. Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). (*levert aanbod*)
-43. Ondersteunt de functie aanwijsbaar een proces? Noem het. (*bedient gedrag*)
-44. Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. (*in functie-indeling*)
-45. Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. (*leidt tot gebeurtenis*)
-
-**Passief.** Bij een ding (geen aard); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en *geautomatiseerd verwerkt* bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; *omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.
-
-46. Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? (*onderscheidbare exemplaren*)
-47. Ontstaan, veranderen en eindigen de exemplaren? (*levenscyclus*)
-48. Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? Noem het gedrag. (*wordt bewerkt*)
-49. Is het een overeenkomst tussen twee of meer partijen met rechten en plichten, en geen eenzijdig besluit of regeling? (*afspraak*)
-50. Is het de vorm (document, formulier, register, bericht) waarin informatie van een ander begrip wordt vastgelegd of overgebracht? Noem dat begrip. (*waarneembare vorm*)
-51. Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? Noem dat object. (*deel van object*)
-52. Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. (*invoer van een ander*)
-53. Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? (*zelfstandig aanbod*)
-54. Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. (*omvat diensten en afspraken*)
-55. Wordt het als gegevensstructuur geautomatiseerd verwerkt? (*geautomatiseerd verwerkt*)
-
-**Beleidskader.** Alleen bij *regeling als geheel*.
-
-56. Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? (*landelijk*)
-57. Is de regeling geldend recht, of als modelverordening actueel? (*in werking*)
-58. Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. (*is grondslag voor*)
-
-**Specialisatie.** Altijd, als het type een pagina heeft.
-
-59. Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. (*zelfstandige specialisatie*)
-60. Komt het met dezelfde betekenis in veel onderwerpen voor? (*generiek*)
-<!-- EINDE gegenereerd -->
-
-Een begrip met uitkomst "geen element" wordt niet weggelaten: het blijft in de begrippenlijst van het onderwerp staan, met de uitkomst en de reden.
+- Een eigenschap of waarde van een ander begrip (`uv run python tools/ggm.py attribuut <term>`) is *slechts eigenschap* ja, met dat begrip als `genoemd_begrip`. Een doelgroep (minima, jongeren) is geen actor of rol maar een indeling van een actor: *slechts eigenschap* ja, met de actor als `genoemd_begrip`.
+- *Handelende partij*, *hoedanigheid* en *samenwerkingsverband* leiden naar actor, rol en bedrijfssamenwerking; in fase B beslissen *los van verantwoordelijkheid* en *eigen rechtspersoon* ertussen.
+- Een concreet benoemde regeling als geheel is *regeling als geheel*; een los artikel is *buiten dit model*; een soort regeling is een ding (Regeling); een richtlijn blijft bron (modelleerafspraken van [Beleidskader](../../../kennismodel/motivatie/beleidskader-modelleerafspraken.md)). Een wet die de UPL als grondslag van een UPL-item noemt, haal je op als bron; zij wordt alleen een beleidskader als ze de gemeente een taak of bevoegdheid geeft. Een wet met alleen een tarief of een regel buiten de gemeentelijke taak (Wet griffierechten burgerlijke zaken, art. 23) blijft bron; zoek dan de bevoegdheidsgrondslag. Een verdrag blijft bron zolang de criteria geen regelgever verdrag kennen.
+- Bij gedrag kiest *soort gedrag* tussen proces, procesgroep, functie, gebeurtenis, dienst en bedrijfsinteractie. Het procesniveau (levensloopproces, bedrijfsproces, deelproces) volgt in fase B; voor de tabel noem je het verwachte niveau.

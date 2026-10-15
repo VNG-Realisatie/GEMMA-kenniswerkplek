@@ -2,7 +2,7 @@
 
 ## Specialisaties (neerwaarts)
 
-Welk niveau een eigen element wordt, volgt uit het hoogste herkenbare niveau (SKILL.md §3) en de beslistabel (stap 6, *zelfstandige specialisatie*). Een specialisatie wordt alleen een eigen element als domeinexperts de term zelf gebruiken, ze eigen gegevens of een eigen levenscyclus heeft (niet alleen een eigen wetsartikel) en GEMMA vergelijkbare specialisaties op dat niveau kent. Anders is ze een specialisatie zonder pagina van het bredere element.
+Welk niveau een eigen element wordt, volgt uit het hoogste herkenbare niveau (SKILL.md, stap 2) en de beslistabel (stap 6, *zelfstandige specialisatie*). Een specialisatie wordt alleen een eigen element als domeinexperts de term zelf gebruiken, ze eigen gegevens of een eigen levenscyclus heeft (niet alleen een eigen wetsartikel) en GEMMA vergelijkbare specialisaties op dat niveau kent. Anders is ze een specialisatie zonder pagina van het bredere element.
 
 Alle specialisaties, met of zonder eigen element, staan in `specialisaties` van het bredere element:
 

@@ -18,8 +18,13 @@ bronnen (met bronduiding), GGM-guid, GEMMA-id, doelen van relaties, specialisati
 ArchiMate-relatietabel, de bronduidingen, de omzettingen van de modellen in `sources/modellen/`, het veld `object_van` (Archi-objecten), het register van beleidsdomeinen (`modellen/gemma/indelingen/beleidsdomeinen.yaml`) en de besluiten van onderwerpen en beoordelingen (vorm, geen bestandspad). Zachte signalen (waarschuwingen, met de naam
 van de regel) staan in tools/signalen.py. Daarna draait het render-script (tools/render.py), tenzij `--zonder-render`.
 
+Met `--alleen <id>…` beslist het script over alles, maar schrijft en rendert het niets, en toont het alleen de fouten,
+waarschuwingen en uitkomsten van die beoordelingen: zo controleert een beoordelingsagent zijn eigen bestanden zonder
+de bestanden van een andere agent te raken.
+
 Gebruik (vanuit de wikimap):
-    uv run python tools/beslissen.py [--zonder-render]
+    uv run python tools/beslissen.py [--zonder-render] [--alles]
+    uv run python tools/beslissen.py --alleen <id> [<id> …]
 """
 from __future__ import annotations
 
@@ -56,6 +61,7 @@ class Resultaat:
     fouten: list[str] = field(default_factory=list)
     waarschuwingen: list[str] = field(default_factory=list)
     gewijzigd: list[str] = field(default_factory=list)
+    uitkomsten: dict[str, dict] = field(default_factory=dict)  # per beoordeling: soort, paginatype, status, open
 
 
 def slug(tekst: str) -> str:
@@ -626,6 +632,8 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         for i, b in enumerate(data.get("besluiten") or [], 1):
             _besluittekst(f"{bid}: besluit {i}", b, res)
         res.waarschuwingen += signalen.per_begrip(bid, data, uitkomst, onderwerpnamen, beslist)
+        res.uitkomsten[bid] = {"soort": uitkomst["soort"], "paginatype": uitkomst.get("paginatype"),
+                               "procesniveau": uitkomst.get("procesniveau"), "status": status, "open": beslist["open"]}
         bijgewerkt = beoordeling.inhoud(data)
         if status:
             bijgewerkt["status"] = status
@@ -716,13 +724,44 @@ def compact(waarschuwingen: list[str], gewijzigd: list[str], alles: bool = False
     return uit
 
 
+def eigen(melding: str, ids: set[str]) -> bool:
+    """Gaat de melding over een van deze beoordelingen (`<id>: …` of `<id>.yaml: …`)?"""
+    kop = melding.split(":", 1)[0]
+    return kop in ids or kop.removesuffix(".yaml") in ids
+
+
+def alleen(res: Resultaat, ids: list[str], bekend: set[str]) -> list[str]:
+    """De uitvoer van `--alleen`: fouten, waarschuwingen en uitkomst van deze beoordelingen, en een telling van de rest."""
+    uit = [f"fout: '{i}' is geen beoordeling" for i in ids if i not in bekend]
+    gekozen = set(ids)
+    uit += [f"fout: {f}" for f in res.fouten if eigen(f, gekozen)]
+    uit += [f"waarschuwing: {w}" for w in res.waarschuwingen if eigen(w, gekozen)]
+    for i in ids:
+        u = res.uitkomsten.get(i)
+        if u:
+            soort = " ".join(filter(None, [u["soort"], u["paginatype"], u["procesniveau"]]))
+            uit.append(f"{i}: {soort}" + (f", {u['status']}" if u["status"] else "")
+                       + (f"; open: {'; '.join(u['open'])}" if u["open"] else ""))
+    rest = [f for f in res.fouten if not eigen(f, gekozen)]
+    if rest:
+        uit.append(f"{len(rest)} fout(en) bij andere beoordelingen of registers, niet getoond.")
+    return uit
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--zonder-render", action="store_true", help="Alleen beslissen, geen pagina's maken")
     parser.add_argument("--alles", action="store_true",
                         help="Alle waarschuwingen tonen (standaard: die van de gewijzigde beoordelingen, plus een telling)")
+    parser.add_argument("--alleen", nargs="+", metavar="ID",
+                        help="Alleen deze beoordelingen controleren; er wordt niets geschreven of gerenderd")
     parser.add_argument("--wiki", type=Path, default=WIKI_ROOT, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
+    if args.alleen:
+        res = beslissen(args.wiki, schrijven=False)
+        uit = alleen(res, args.alleen, set(beoordeling.alle(args.wiki, paths.load_wiki_yaml(args.wiki))))
+        print("\n".join(uit))
+        return 1 if any(r.startswith("fout:") for r in uit) else 0
     res = beslissen(args.wiki)
     for f in res.fouten:
         print(f"fout: {f}")

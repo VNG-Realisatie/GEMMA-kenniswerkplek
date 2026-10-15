@@ -2,13 +2,13 @@
 
 ## Voorleggen
 
-Leg na `uv run python tools/beslissen.py` de begrippen met open redenen (`beslist.open`, ook in `ter-beoordeling.md`) voor in de chat, per fase in één tabel. Spaar vragen op in `vragen:` van de beoordeling; alleen een blokkerende vraag (zonder het antwoord kun je niet verder) komt meteen. Voor te leggen is wat een keuze van de redacteur vraagt: een element met open redenen, een open vraag, twijfel over een kenmerk, een nieuw element of een afwijking van een eerder besluit.
+Leg per fase in één tabel voor in de chat: in fase 1 de uitkomst van fase A voor het hele onderwerp, in fase 3 na `uv run python tools/beslissen.py` de begrippen met open redenen (`beslist.open`, ook in `ter-beoordeling.md`) en de `vragen:`. Spaar vragen op in `vragen:` van de beoordeling; alleen een blokkerende vraag (zonder het antwoord kun je niet verder) komt meteen. Voor te leggen is wat een keuze van de redacteur vraagt: een element met open redenen, een open vraag, twijfel over een kenmerk, een nieuw element of een afwijking van een eerder besluit.
 
 - Context: welk begrip, wat de beslistabel zegt, met de bronpassage.
 - Argumenten voor en tegen, en een advies.
 - In eenvoudige taal en analytisch, zoals voor een architect: de stand in GGM en GEMMA, de opties, het gevolg voor het model per optie, een advies, de bron als link en een concreet voorbeeld uit het model.
 
-Niet los voorleggen: een begrip zonder pagina waarvan de uitkomst eenduidig uit de beslistabel of een eerdere afbakening volgt (buiten scope, geen element zonder twijfel). Noem die samen in de samenvatting van stap 6 van skill gemma-archimate-model-update. Ook zonder voorleggen, met een vermelding in de samenvatting ter bevestiging: een thuisonderwerp dat eenduidig uit de inhoud volgt (regel Thuishoren) en een landelijke grondslag die eenduidig in de nagelezen wettekst staat (regel Wettelijke grondslag).
+Niet los voorleggen: een begrip zonder pagina waarvan de uitkomst eenduidig uit de beslistabel of een eerdere afbakening volgt (buiten scope, geen element zonder twijfel). Noem die samen in de samenvatting bij het bekijken (skill gemma-archimate-model-update, stap 13). Ook zonder voorleggen, met een vermelding in de samenvatting ter bevestiging: een thuisonderwerp dat eenduidig uit de inhoud volgt (regel Thuishoren) en een landelijke grondslag die eenduidig in de nagelezen wettekst staat (regel Wettelijke grondslag).
 
 ## Vastleggen
 

@@ -41,19 +41,7 @@ Precedenten uit de vorige wiki: Woonboot → Vaartuig hernoemd (enige toepassing
 
 ## Naamvorm per type (regel Naamvorm)
 
-GEMMA onderscheidt gedrag in de naam; deze wiki volgt dat.
-
-| Type | Vorm | Voorbeelden | Het begrip uit de bron |
-|---|---|---|---|
-| Proces | infinitief + object, werkwoord eerst | Behandelen verzoek om overheidsparticipatie; Uitvoeren inspraakprocedure; Ruimen graf | Synoniem met context "beleid" (Overheidsparticipatie, Inspraak, Ruiming) |
-| Functie | zelfstandig naamwoord voor een doorlopend gebied van gedrag, vaak op -ing, -beheer, -verlening | Participatie; Vergunningverlening; Handhaving | Meestal gelijk aan de naam |
-| Gebeurtenis | voltooide toestandsverandering | Overlijden; Verval van het grafrecht; Aanvraag ontvangen | |
-| Dienst | vanuit de afnemer, wat die kan doen of krijgen; staat het in de UPL, dan de UPL-naam letterlijk | Melding openbare ruimte doen; Verlof tot begraven (UPL) | Synoniem waar het betekenis toevoegt (de wetsterm, de term uit de beheersverordening) |
-| Product | de UPL-naam letterlijk | Grafuitgifte | Synoniem waar het betekenis toevoegt |
-
-- Het object in een procesnaam is de gangbare term (zie hierboven), zonder lidwoord: "Uitgeven graf", niet "Uitgeven van een graf".
-- Bestaat er een GEMMA-proces met dezelfde betekenis, neem dan de GEMMA-naam over (bijv. *Uitvoeren inspraakprocedure*).
-- Een functie en een proces mogen niet dezelfde naam hebben: de functie is het gebied (*Participatie*), het proces de handeling daarbinnen (*Uitvoeren inwonersparticipatie*).
+De naamvorm per type staat in de regel Naamvorm (`kennismodel/modelleerregels.md`) en in de modelleerafspraken van het type. Het object in een procesnaam is de gangbare term, zonder lidwoord ("Uitgeven graf"). Het begrip uit de bron wordt een synoniem waar het betekenis toevoegt, bij een proces met context "beleid" (Overheidsparticipatie, Inspraak, Ruiming).
 
 ## Synoniemen
 

@@ -17,8 +17,7 @@ De wiki neemt de GEMMA-indelingen letterlijk over; een bewering over de plek van
 - Kenmerk *in functie-indeling* of *zelfstandige specialisatie* van een gematchte functie: geen `bronnen`, maar `gemma_relatie` met het id van de aggregatie of compositie naar de GEMMA-match, vanuit de bovenliggende functie of de domeingroepering (`uv run python tools/gemma.py relaties <id>`). Het script toetst dat de relatie bestaat en, bij *zelfstandige specialisatie*, dat de GEMMA-match geen ander element specialiseert.
 - Een aggregatie in de functieketen tussen twee gematchte functies: geen `bronnen` en `vindplaats`, maar `gemma_relatie: <id>`; het script toetst type, bron en doel.
 - Alleen de plek is uitgezonderd. Wat een functie is en doet (*gedrag*, *gegroepeerd gedrag*, *eigen identiteit*, *stabiel over tijd*, *herkenbaar*, *generiek*) heeft een bron voor de inhoud: de wet die de taak geeft, of een praktijkbron. GEMMA Online is matchdoel en geen bron, ook niet haar redactionele tekst over de inhoud (ARCHITECTURE.md, sectie 2).
-- Wat een functie is, steunt op de wet die de groep taken aan de gemeente toewijst, zoals bij Burgerlijke stand diensten; niet op de pagina Bedrijfsfuncties of het GEMMA-model (regel Bronvoorrang).
-- Een functie boven het bladniveau van de GEMMA-functiehiërarchie krijgt geen beoordeling: de hiërarchie wordt as-is overgenomen (ARCHITECTURE.md, sectie 4.4). Een bladfunctie wordt een element als zij een proces van een onderwerp bedient, met een bron.
+- Wat een functie is, en welke functie een element wordt: de regels Bronvoorrang en Wettelijke grondslag.
 
 ## De plek onder een knoop (`gemma_functie`)
 

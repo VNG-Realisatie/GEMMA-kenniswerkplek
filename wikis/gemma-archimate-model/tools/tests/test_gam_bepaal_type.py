@@ -304,12 +304,6 @@ def test_gegenereerd_schema_is_actueel_en_geldig():
     jsonschema.Draft202012Validator(opgeslagen).validate({**beoordeling(BO), "onderwerpen": ["test"]})
 
 
-def test_documentatie_is_gegenereerd():
-    skill = bt.SKILL_PATH.read_text(encoding="utf-8")
-    assert bt.markdown() in skill, "draai: uv run python tools/bepaal_type.py markdown --schrijf"
-    assert "### Stappentabel" not in skill
-
-
 def test_stap_7_procesniveau():
     proces = bt.evalueer(beoordeling(PROCES, kernobject="grafrecht", afnemer="extern"))
     assert (proces.procesniveau, proces.voorleggen, proces.regel) == ("levensloopproces", False, bt.EERSTE_INDELINGSREGEL + 1)

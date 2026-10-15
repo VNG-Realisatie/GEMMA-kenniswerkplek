@@ -226,6 +226,22 @@ def test_harde_fouten_schrijven_niets(wiki, wijziging, melding):
     assert "status" not in _lees(wiki, "beschikking")
 
 
+def test_alleen_toont_eigen_meldingen_en_schrijft_niets(wiki, capsys):
+    _schrijf(wiki, "beschikking", _bo())
+    proces = _proces()
+    proces["relaties"][0].update(naar="onbekend")
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+
+    assert beslissen.main(["--wiki", str(wiki), "--alleen", "beschikking"]) == 0
+    uit = capsys.readouterr().out
+    assert "beschikking: element bedrijfsobject" in uit and "onbekend" not in uit
+    assert "1 fout(en) bij andere beoordelingen" in uit
+    assert "status" not in _lees(wiki, "beschikking") and not (wiki / "elementpaginas").exists()
+
+    assert beslissen.main(["--wiki", str(wiki), "--alleen", "behandelen-aanvraag", "bestaat-niet"]) == 1
+    uit = capsys.readouterr().out
+    assert "fout: behandelen-aanvraag:" in uit and "'bestaat-niet' is geen beoordeling" in uit
+
 def test_nieuwe_terugmelding_krijgt_het_volgende_nummer(wiki):
     _schrijf(wiki, "beschikking", _bo())
     register = {"terugmeldingen": [

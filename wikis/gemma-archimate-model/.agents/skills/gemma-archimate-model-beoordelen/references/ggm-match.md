@@ -2,7 +2,7 @@
 
 ## Zoeken
 
-`uv run python tools/ggm.py kandidaten <naam> [--synoniemen a,b]` geeft in één overzicht de entiteiten met dezelfde naam (mogelijke homoniemen of duplicaten), de treffers op naam, synoniem en definitie, en de termen die als attribuut of waarde voorkomen, elk met definitie, beleidsdomein en generalisaties. Verder: `entiteit <guid|naam>`, `relaties <guid>`, `generalisaties <guid>`. Nooit het XMI of `ggm/ggm_parsed.json` zelf doorzoeken; `ggm/` is alleen om te lezen.
+`uv run python tools/ggm.py kandidaten <naam> [--synoniemen a,b]` geeft de naamgenoten (mogelijke homoniemen of duplicaten), de treffers en de termen die als attribuut of waarde voorkomen. Verder: `entiteit <guid|naam>`, `relaties <guid>`, `generalisaties <guid>`. Nooit het XMI of `ggm/ggm_parsed.json` zelf doorzoeken; `ggm/` is alleen om te lezen.
 
 ## Kiezen op betekenis
 
