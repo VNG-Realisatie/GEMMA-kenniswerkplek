@@ -1,6 +1,6 @@
 ---
 name: gemma-archimate-model-archimate-export
-description: Exporteer de goedgekeurde elementen en relaties van gemma-archimate-model als Archi-bestand (.archimate) met de technische id's van het GEMMA-model, om in Archi te bekijken en in het GEMMA-model te importeren, met een volledige sync via de exportdatum en een jArchi-script. Gebruik na elk AKKOORD (stap 16 van gemma-archimate-model-update) en wanneer de redacteur het model in Archi wil zien of naar GEMMA wil brengen.
+description: Exporteer de goedgekeurde elementen en relaties van gemma-archimate-model als Archi-bestand (.archimate) met de technische id's van het GEMMA-model, om in Archi te bekijken en in het GEMMA-model te importeren, met een volledige sync via de exportdatum en een jArchi-script. Gebruik alleen op verzoek van de redacteur (stap 16 van gemma-archimate-model-update), om de export te maken, het model in Archi te zien of naar GEMMA te brengen.
 metadata:
   kind: capability
   scope: wiki
@@ -41,6 +41,6 @@ Naam en definitie komen uit de wiki en overschrijven die van GEMMA. De GEMMA-eig
 
 ## Grenzen
 
-- Nooit exporteren of importeren zonder akkoord van de redacteur. Het AKKOORD bij `llmwiki promote apply` dekt de export die daar direct op volgt; importeren in GEMMA blijft aan de redacteur. Een definitieve export bevat alleen goedgekeurde elementen; akkoordvelden vul je nooit zelf in.
+- Nooit exporteren of importeren zonder akkoord van de redacteur. De export draait alleen op verzoek van de redacteur; het AKKOORD bij `llmwiki promote apply` dekt hem niet. Importeren in GEMMA blijft aan de redacteur. Een definitieve export bevat alleen goedgekeurde elementen; akkoordvelden vul je nooit zelf in.
 - Het exportbestand en het rapport zijn gegenereerd: nooit met de hand bewerken.
 - Geen views: de export bevat alleen elementen, relaties en mappen.

@@ -4,7 +4,7 @@
 volgorde en met een stop bij de eerste fout:
 1. het akkoord is vastgelegd: `log.md` is gewijzigd en nog niet gecommit (anders weigert het script);
 2. `commit-check` op het bericht (een bericht zonder geldige prefix stopt hier, vóór de export);
-3. `archimate_export.py --check`, dan `archimate_export.py`;
+3. `archimate_export.py --check`, en met `--export` daarna `archimate_export.py` (de export draait alleen op verzoek van de redacteur);
 4. `render.py --check` en `llmwiki lint`;
 5. `git add` van de wikimap en de commit met het bericht.
 
@@ -12,6 +12,7 @@ Het script zet geen akkoordvelden en geen status; het bevestigt een akkoord dat 
 
 Gebruik (vanuit de wikimap):
     uv run python tools/afronden.py --bericht "update: Besluitvorming verwerkt (12 elementen)"
+    uv run python tools/afronden.py --bericht "…" --export     # ook exporteren, op verzoek van de redacteur
     uv run python tools/afronden.py --bericht "…" --droog      # alleen tonen wat er zou draaien
 """
 from __future__ import annotations
@@ -48,18 +49,19 @@ def akkoord_vastgelegd(wiki: Path, run=_run) -> bool:
     return r.returncode == 0 and bool(r.stdout.strip())
 
 
-def stappen(wiki: Path, bericht_bestand: Path) -> list[tuple[str, list[str]]]:
+def stappen(wiki: Path, bericht_bestand: Path, exporteren: bool = False) -> list[tuple[str, list[str]]]:
     py = sys.executable
+    export = [("export", [py, str(TOOLS / "archimate_export.py")])] if exporteren else []
     return [
         ("berichtcontrole", [py, "-m", "llmwiki", "commit-check", str(bericht_bestand)]),
         ("export-check", [py, str(TOOLS / "archimate_export.py"), "--check"]),
-        ("export", [py, str(TOOLS / "archimate_export.py")]),
+        *export,
         ("render-check", [py, str(TOOLS / "render.py"), "--check"]),
         ("lint", [py, "-m", "llmwiki", "lint"]),
     ]
 
 
-def afronden(wiki: Path, bericht: str, droog: bool = False, run=_run) -> list[str]:
+def afronden(wiki: Path, bericht: str, droog: bool = False, exporteren: bool = False, run=_run) -> list[str]:
     """Voer de stappen uit; geeft de meldingen. Gooit `Gestopt` bij de eerste fout, zonder te committen."""
     bericht = bericht.strip()
     if not bericht:
@@ -73,7 +75,7 @@ def afronden(wiki: Path, bericht: str, droog: bool = False, run=_run) -> list[st
     with tempfile.TemporaryDirectory() as tmp:
         bestand = Path(tmp) / "bericht.txt"
         bestand.write_text(bericht + "\n", encoding="utf-8")
-        for naam, cmd in stappen(wiki, bestand):
+        for naam, cmd in stappen(wiki, bestand, exporteren):
             if droog:
                 uit.append(f"{naam}: {' '.join(cmd[:4])} …")
                 continue
@@ -93,11 +95,12 @@ def afronden(wiki: Path, bericht: str, droog: bool = False, run=_run) -> list[st
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--bericht", required=True, help="Commitbericht: <prefix>: één of twee zinnen")
+    parser.add_argument("--export", action="store_true", help="Ook exporteren (alleen op verzoek van de redacteur)")
     parser.add_argument("--droog", action="store_true", help="Alleen tonen wat er zou draaien")
     parser.add_argument("--wiki", type=Path, default=WIKI_ROOT, help=argparse.SUPPRESS)
     a = parser.parse_args(argv)
     try:
-        print("\n".join(afronden(a.wiki, a.bericht, a.droog)))
+        print("\n".join(afronden(a.wiki, a.bericht, a.droog, a.export)))
     except Gestopt as exc:
         print(f"gestopt: {exc}")
         return 1

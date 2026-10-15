@@ -19,10 +19,18 @@ class Nep:
         return subprocess.CompletedProcess(cmd, 0, "", "")
 
 
+def test_standaard_geen_export_alleen_check(archimate_repo):
+    _, wiki = archimate_repo
+    nep = Nep()
+    afronden.afronden(wiki, "update: x", run=nep)
+    export = [c for c in nep.aanroepen if any("archimate_export.py" in a for a in c)]
+    assert len(export) == 1 and export[0][-1] == "--check"
+
+
 def test_alle_stappen_in_volgorde_en_dan_commit(archimate_repo):
     _, wiki = archimate_repo
     nep = Nep()
-    uit = afronden.afronden(wiki, "update: iets bijgewerkt", run=nep)
+    uit = afronden.afronden(wiki, "update: iets bijgewerkt", exporteren=True, run=nep)
     soorten = [" ".join(c[1:] if c[0] != "git" else c) for c in nep.aanroepen]
     def plek(sleutel, zonder=None):
         return next(i for i, t in enumerate(soorten) if sleutel in t and not (zonder and zonder in t))

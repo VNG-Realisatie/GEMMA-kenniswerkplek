@@ -228,7 +228,7 @@ De AI kiest de match op betekenis; het script haalt bij elke run de letterlijke 
 - **Kennismodel.** De groep *Kennismodel-wiki* bevat het volledige kennismodel van de wiki: een concept per elementtype, een relatie per toegestaan relatietype (bij toegang één per paar elementtypen: het toegangstype hoort bij de relatie in het inhoudelijk model) en de indelingen als groepering, met het id uit Over GEMMA waar dat bestaat, en de eigenschappen kernrelatie en *in Over GEMMA*. Het GEMMA-kennismodel uit Over GEMMA blijft een eigen groep, ter vergelijking.
 - **Zonder grondslag.** Een UPL-dienst zonder landelijke grondslag gaat niet mee (`beslist.zonder_grondslag`): zij is geen wettelijke taak (§3.4).
 - **Filter en rapport.** De relaties van de elementen worden gefilterd op het kennismodel. Het rapport noemt de weggelaten relaties, de samengevoegde toegangsrelaties, wat niet in Over GEMMA staat als kandidaat voor een terugmelding, de specialisaties, de nieuwe groeperingen, de dekking van de functiehiërarchie en de diensten zonder grondslag.
-- **Gate.** Alleen `goedgekeurd`, met een regel in `log.md`; `--concept` is alleen om te bekijken. De export weigert bij een fout of een verouderde beslissing of render. Na elk AKKOORD volgt een nieuwe export, die meegaat in de commit; importeren in GEMMA doet de redacteur.
+- **Gate.** Alleen `goedgekeurd`, met een regel in `log.md`; `--concept` is alleen om te bekijken. De export weigert bij een fout of een verouderde beslissing of render. De export draait alleen op verzoek van de redacteur (per afronding volstaat `--check`) en gaat dan mee in de commit; importeren in GEMMA doet de redacteur.
 
 ## 7 Nog niet gebouwd
 
