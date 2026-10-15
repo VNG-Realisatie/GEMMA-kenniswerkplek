@@ -173,7 +173,7 @@ Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update
 wikis/gemma-archimate-model/
 ├── ARCHITECTURE.md                   dit document: waarom en hoe (leidend)
 ├── AGENTS.md                         de werkwijze van de AI, met de kaart "Waar vind je wat"
-├── wiki.yaml · todo.md · log.md      instellingen · open punten · akkoorden (alleen aan te vullen)
+├── wiki.yaml · todo.md · todo-later.md · log.md      instellingen · open punten (actief, later) · akkoorden (alleen aan te vullen)
 ├── kennismodel/                      wat het model is (gegenereerd), met modelleerregels.md (met de hand)
 ├── plannen/<datum>-<titel>.md        plannen voor grotere wijzigingen; een plan dat klaar is, blijft als geschiedenis
 ├── onderwerpen/<onderwerp>/          de ontstane indeling: per onderwerp alles bij elkaar

@@ -67,7 +67,7 @@ De regels voor het modelleren staan in [kennismodel/modelleerregels.md](kennismo
 | Elementpagina's en overzichten | `elementpaginas/`, `onderwerpen/<onderwerp>/begrippen.md` en `overzicht.md` | per elementtype | `tools/render.py` | nee |
 | Indelingspagina's: de indelingen as-is met dekking (onderwerpen, beleidsdomeinen, bedrijfsfuncties) | `elementpaginas/overig/indelingen/` | indeling | `tools/render.py` (met `tools/indelingspaginas.py`) | nee |
 | Terugmeldlijsten, diensten zonder grondslag, ter beoordeling, voortgang | `modellen/*/terugmeldingen/*.md`, `elementpaginas/overig/zonder-grondslag.md`, [ter-beoordeling.md](ter-beoordeling.md), [voortgang.md](voortgang.md) | lijst | `tools/render.py` | nee |
-| Open punten | [todo.md](todo.md) | — | de AI | ja |
+| Open punten | [todo.md](todo.md) (actief), [todo-later.md](todo-later.md) (later) | — | de AI | ja |
 | Plannen voor grotere wijzigingen (een plan dat klaar is, blijft als geschiedenis) | `plannen/<datum>-<titel>.md` | — | de AI, met de redacteur | ja |
 | Akkoorden | [log.md](log.md) | — | `llmwiki promote apply` | nee |
 | Controles | `tools/beslissen.py` (fout), `tools/signalen.py` (signaal) | — | — | — |
