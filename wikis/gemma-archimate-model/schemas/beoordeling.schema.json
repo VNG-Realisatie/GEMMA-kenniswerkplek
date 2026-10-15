@@ -25,251 +25,190 @@
     },
     "kenmerken": {
       "type": "object",
-      "required": [
-        "herkenbaar",
-        "gemeentelijk",
-        "buiten_dit_model",
-        "slechts_eigenschap",
-        "eigen_identiteit",
-        "betekenis_in_onderwerp",
-        "gedrag",
-        "handelende_partij",
-        "hoedanigheid",
-        "samenwerkingsverband",
-        "toegangspunt",
-        "plaats",
-        "aanbod_als_geheel",
-        "regeling_als_geheel",
-        "los_van_verantwoordelijkheid",
-        "eigen_rechtspersoon",
-        "vervult_een_rol",
-        "voert_gedrag_uit",
-        "soort_partij",
-        "ontsluit_een_dienst",
-        "per_keer_doorlopen",
-        "groepeert_processen",
-        "gegroepeerd_gedrag",
-        "toestandsverandering",
-        "aangeboden_gedrag",
-        "gezamenlijk_gedrag",
-        "toegewezen_partij",
-        "gebruikt_objecten",
-        "aanleiding",
-        "benoembaar_resultaat",
-        "komt_herhaald_voor",
-        "eigen_normering",
-        "stabiel_over_tijd",
-        "afnemer",
-        "gerealiseerd_door",
-        "leidt_tot_gedrag",
-        "bijdrage_aan_groter_proces",
-        "klant_tot_klant",
-        "omvat_processen",
-        "omvat_levensloop",
-        "eigen_besluit",
-        "levert_aanbod",
-        "bedient_gedrag",
-        "in_functie_indeling",
-        "leidt_tot_gebeurtenis",
-        "onderscheidbare_exemplaren",
-        "levenscyclus",
-        "wordt_bewerkt",
-        "afspraak",
-        "waarneembare_vorm",
-        "deel_van_object",
-        "invoer_van_een_ander",
-        "zelfstandig_aanbod",
-        "omvat_diensten_en_afspraken",
-        "geautomatiseerd_verwerkt",
-        "landelijk",
-        "in_werking",
-        "is_grondslag_voor",
-        "zelfstandige_specialisatie",
-        "generiek"
-      ],
       "properties": {
         "herkenbaar": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "gemeentelijk": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "buiten_dit_model": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "slechts_eigenschap": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "eigen_identiteit": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "betekenis_in_onderwerp": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "gedrag": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "handelende_partij": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "hoedanigheid": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "samenwerkingsverband": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "toegangspunt": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "plaats": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "aanbod_als_geheel": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "regeling_als_geheel": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "los_van_verantwoordelijkheid": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "eigen_rechtspersoon": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "vervult_een_rol": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "voert_gedrag_uit": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "soort_partij": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "ontsluit_een_dienst": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "per_keer_doorlopen": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "groepeert_processen": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "gegroepeerd_gedrag": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "toestandsverandering": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "aangeboden_gedrag": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "gezamenlijk_gedrag": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "toegewezen_partij": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "gebruikt_objecten": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "aanleiding": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "benoembaar_resultaat": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "komt_herhaald_voor": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "eigen_normering": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "stabiel_over_tijd": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "afnemer": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "gerealiseerd_door": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "leidt_tot_gedrag": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "bijdrage_aan_groter_proces": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "klant_tot_klant": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "omvat_processen": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "omvat_levensloop": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "eigen_besluit": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "levert_aanbod": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "bedient_gedrag": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "in_functie_indeling": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "leidt_tot_gebeurtenis": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "onderscheidbare_exemplaren": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "levenscyclus": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "wordt_bewerkt": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "afspraak": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "waarneembare_vorm": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "deel_van_object": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "invoer_van_een_ander": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "zelfstandig_aanbod": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "omvat_diensten_en_afspraken": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "geautomatiseerd_verwerkt": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "landelijk": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "in_werking": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "is_grondslag_voor": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "zelfstandige_specialisatie": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         },
         "generiek": {
-          "$ref": "#/$defs/antwoord"
+          "$ref": "#/$defs/kenmerk"
         }
       },
-      "additionalProperties": false
+      "additionalProperties": false,
+      "description": "De kenmerken op het pad (tools/bepaal_type.py vragen); buiten het pad leidt het script nee af. Een kale nee alleen in Aard en Soort gedrag (script)"
     },
     "synoniem_van": {
       "type": "string",
@@ -931,6 +870,17 @@
   },
   "additionalProperties": false,
   "$defs": {
+    "kenmerk": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/antwoord"
+        },
+        {
+          "const": "nee",
+          "description": "Een nee zonder onderbouwing"
+        }
+      ]
+    },
     "antwoord": {
       "type": "object",
       "required": [

@@ -109,3 +109,45 @@ def test_zoek_vindt_elk_begrip_van_de_wiki():
     for bid, (_, d) in alle.items():
         for naam in [d["begrip"], *(s["naam"] for s in d.get("synoniemen") or [])]:
             assert any(r.startswith(f"{bid} |") for r in cli.zoek(WIKI, [naam], alle)), (bid, naam)
+
+
+def test_regel_naar_antwoord():
+    assert cli.regel_naar_antwoord("x", "ja — Want art. 1 [2024-wet-a, id-123]") == {
+        "waarde": "ja", "onderbouwing": "Want art. 1", "bronnen": ["2024-wet-a"], "gemma_relatie": ["id-123"]}
+    assert cli.regel_naar_antwoord("x", "nee") == "nee"
+    assert cli.regel_naar_antwoord("x", "nee - Feitelijk handelen [zie boven]") == {
+        "waarde": "nee", "onderbouwing": "Feitelijk handelen [zie boven]"}
+    for fout in ("misschien", "ja", "ja [2024-wet-a]"):
+        with pytest.raises(cli.Fout):
+            cli.regel_naar_antwoord("x", fout)
+
+
+def test_normaliseer_schrijfvorm_en_nee_buiten_het_pad(wiki):
+    pad = wiki / "onderwerpen" / "demo" / "beoordelingen" / "aanvraag.yaml"
+    data = beoordeling.laad(pad)
+    data["kenmerken"]["herkenbaar"] = "ja — Komt in de Awb voor [2024-wet-a]"
+    data["kenmerken"]["gedrag"] = "nee"
+    data["kenmerken"]["eigen_besluit"]["bronnen"] = ["2024-wet-a"]  # buiten het pad, met bron: blijft
+    beoordeling.schrijf(pad, data)
+    uit = cli.normaliseer(wiki, ["aanvraag"])
+    assert uit[0].startswith("aanvraag: genormaliseerd (") and uit[-1] == "Draai tools/beslissen.py."
+    kenmerken = beoordeling.laad(pad)["kenmerken"]
+    assert kenmerken["herkenbaar"] == {"waarde": "ja", "onderbouwing": "Komt in de Awb voor", "bronnen": ["2024-wet-a"]}
+    assert kenmerken["gedrag"] == "nee" and "eigen_besluit" in kenmerken
+    assert "per_keer_doorlopen" not in kenmerken and "afspraak" in kenmerken  # buiten het pad weg, op het pad blijft
+    assert list(kenmerken) == [s for s in cli.bepaal_type.SLEUTELS if s in kenmerken]
+    assert cli.normaliseer(wiki, ["aanvraag"]) == ["Niets te normaliseren."]
+    del kenmerken["afspraak"]
+    beoordeling.schrijf(pad, {**beoordeling.laad(pad), "kenmerken": kenmerken})
+    assert cli.normaliseer(wiki, ["aanvraag"]) == ["aanvraag: op het pad nog niet beantwoord: afspraak"]
+    with pytest.raises(cli.Fout):
+        cli.normaliseer(wiki, [])
+
+
+def test_zet_kenmerk_in_schrijfvorm(wiki):
+    cli.normaliseer(wiki, ["besluit"])
+    cli.zet(wiki, "besluit", "kenmerken.gedrag", "nee")
+    cli.zet(wiki, "besluit", "kenmerken.afspraak", "nee — Een eenzijdig besluit")
+    kenmerken = beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "besluit.yaml")["kenmerken"]
+    assert kenmerken["gedrag"] == "nee"
+    assert kenmerken["afspraak"] == {"waarde": "nee", "onderbouwing": "Een eenzijdig besluit"}

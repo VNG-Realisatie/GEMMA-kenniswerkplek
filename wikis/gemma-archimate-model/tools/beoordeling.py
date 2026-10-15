@@ -6,7 +6,9 @@ Subcommando's:
 - `toon <id> --oordeel`: de beoordeling zonder `beslist:` en `status:` en zonder de standaard-nee ("Niet van toepassing");
 - `zet <id> <veld> <waarde>`: zet een veld (een punt-pad als `kenmerken.herkenbaar.waarde` mag; de waarde is YAML);
 - `relatie <id> --soort … --naar …`: voeg een relatie toe of vervang die met dezelfde soort en hetzelfde doel (`--verwijder`);
-- `besluit <id> --datum … --gevolg … (--tekst … | --advies-gevolgd)`: voeg een besluit toe.
+- `besluit <id> --datum … --gevolg … (--tekst … | --advies-gevolgd)`: voeg een besluit toe;
+- `normaliseer <id>… | --alle`: de kenmerken in de opgeslagen vorm (de schrijfvorm van één regel, `herkenbaar: ja —
+  onderbouwing [bron-id]`, wordt een object; een nee buiten het pad valt weg), met wat op het pad nog open staat.
 
 Het wijzigen valideert tegen het schema en raakt `status` en `beslist` niet aan; draai daarna `tools/beslissen.py`.
 Het akkoord van de redacteur blijft buiten bereik: dit gereedschap zet nooit een status.
@@ -18,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -26,12 +29,14 @@ import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import bepaal_type  # noqa: E402
 import gam_gemeen  # noqa: E402
 from llmwiki import beoordeling  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
 GEWEIGERD = ("status", "beslist", "begrip", "onderwerpen")  # van de scripts, of de identiteit van het begrip
 STANDAARD_NEE = "Niet van toepassing"
+BRON_ID = re.compile(r"[0-9]{4}-[a-z0-9]+(-[a-z0-9]+)*")
 
 
 class Fout(Exception):
@@ -105,8 +110,72 @@ def oordeel(data: dict) -> dict:
     """De beoordeling zonder scriptvelden en zonder de standaard-nee; de nee die de uitkomst bepaalt, blijft."""
     uit = {k: v for k, v in data.items() if k not in beoordeling.SCRIPTVELDEN}
     uit["kenmerken"] = {s: a for s, a in (data.get("kenmerken") or {}).items()
-                        if not (a.get("waarde") == "nee" and str(a.get("onderbouwing", "")).startswith(STANDAARD_NEE))}
+                        if not (isinstance(a, dict) and a.get("waarde") == "nee"
+                                and str(a.get("onderbouwing", "")).startswith(STANDAARD_NEE))}
     return uit
+
+
+def regel_naar_antwoord(sleutel: str, tekst: str) -> dict | str:
+    """De schrijfvorm van één regel, `ja — onderbouwing [bron-id, id-…]`, als antwoord: een id met `id-` is een
+    GEMMA-relatie (`gemma_relatie`), de andere zijn bronnen. Een nee zonder onderbouwing en bronnen blijft de kale nee."""
+    m = re.fullmatch(r"\s*(ja|nee)\b(.*)", tekst, re.S)
+    if not m:
+        raise Fout(f"kenmerk {sleutel}: '{tekst}' begint niet met ja of nee")
+    waarde, rest = m.group(1), m.group(2).strip()
+    ids: list[str] = []
+    lijst = re.fullmatch(r"(.*?)\s*\[([^\[\]]*)\]", rest, re.S)
+    if lijst:
+        kandidaten = [i.strip() for i in lijst.group(2).split(",") if i.strip()]
+        if kandidaten and all(BRON_ID.fullmatch(i) or i.startswith("id-") for i in kandidaten):
+            rest, ids = lijst.group(1), kandidaten
+    onderbouwing = re.sub(r"^[\s—–:-]+", "", rest).strip()
+    bronnen = [i for i in ids if not i.startswith("id-")]
+    relaties = [i for i in ids if i.startswith("id-")]
+    if not onderbouwing:
+        if waarde == "nee" and not ids:
+            return bepaal_type.KALE_NEE
+        raise Fout(f"kenmerk {sleutel}: {waarde} zonder onderbouwing")
+    return {"waarde": waarde, "onderbouwing": onderbouwing, **({"bronnen": bronnen} if bronnen else {}),
+            **({"gemma_relatie": relaties} if relaties else {})}
+
+
+def normaliseer_data(data: dict) -> tuple[dict, list[str]]:
+    """De kenmerken in de opgeslagen vorm: de schrijfvorm van één regel wordt een object, een nee buiten het pad valt
+    weg (behalve met bronnen of een GEMMA-relatie), de volgorde is die van de vragenlijst. Geeft ook wat op het pad nog
+    open staat."""
+    kenmerken = {s: regel_naar_antwoord(s, a) if isinstance(a, str) and a != bepaal_type.KALE_NEE else a
+                 for s, a in (data.get("kenmerken") or {}).items()}
+    tijdelijk = {**data, "kenmerken": kenmerken}
+    a, b = bepaal_type.pad(bepaal_type.waarden(tijdelijk), bepaal_type.extra_velden(tijdelijk))
+    op_pad = set(a) | set(b)
+
+    def blijft(s: str, x) -> bool:
+        if s in op_pad or s not in bepaal_type.NAAM or bepaal_type.antwoord(kenmerken, s)["waarde"] == "ja":
+            return True
+        return isinstance(x, dict) and bool(x.get("bronnen") or x.get("gemma_relatie"))
+
+    volgorde = {s: i for i, s in enumerate(bepaal_type.SLEUTELS)}
+    nieuw = dict(sorted(((s, x) for s, x in kenmerken.items() if blijft(s, x)), key=lambda p: volgorde.get(p[0], 999)))
+    open_ = [bepaal_type.NAAM[s] for s in a + b if s not in nieuw]
+    return {**data, "kenmerken": nieuw}, ([f"op het pad nog niet beantwoord: {', '.join(open_)}"] if open_ else [])
+
+
+def normaliseer(wiki: Path, ids: list[str], alles: bool = False) -> list[str]:
+    alle = _alle(wiki)
+    if not ids and not alles:
+        raise Fout("geef een of meer id's, of --alle")
+    uit: list[str] = []
+    for bid in (sorted(alle) if alles else ids):
+        pad, data = _vind(alle, bid)
+        nieuw, meldingen = normaliseer_data(data)
+        weg = len(data.get("kenmerken") or {}) - len(nieuw["kenmerken"])
+        if nieuw != data:
+            _opslaan(wiki, bid, pad, nieuw)
+            uit.append(f"{bid}: genormaliseerd ({weg} nee buiten het pad weggelaten)" if weg else f"{bid}: genormaliseerd")
+        uit += [f"{bid}: {m}" for m in meldingen]
+    if not uit:
+        uit.append("Niets te normaliseren.")
+    return uit + (["Draai tools/beslissen.py."] if any("genormaliseerd" in r for r in uit) else [])
 
 
 def toon(wiki: Path, bid: str, alleen_oordeel: bool) -> str:
@@ -150,11 +219,15 @@ def zet(wiki: Path, bid: str, veld: str, waarde: str) -> str:
     if delen[0] in GEWEIGERD:
         raise Fout(f"'{delen[0]}' zet dit gereedschap niet (scripts, of de identiteit van het begrip)")
     nieuw = yaml.safe_load(waarde)
+    if len(delen) == 2 and delen[0] == "kenmerken" and isinstance(nieuw, str):
+        nieuw = regel_naar_antwoord(delen[1], nieuw)
     if len(delen) == 1:
         data = _zet_sleutel(data, delen[0], nieuw)
     else:
         cur = data.setdefault(delen[0], {})
         for d in delen[1:-1]:
+            if isinstance(cur.get(d), str):  # een kale nee
+                cur[d] = {"waarde": cur[d]}
             cur = cur.setdefault(d, {})
         cur[delen[-1]] = nieuw
     _opslaan(wiki, bid, pad, data)
@@ -226,6 +299,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--tekst")
     p.add_argument("--advies-gevolgd", action="store_true")
     p.add_argument("--reden", action="append", dest="redenen")
+    p = sub.add_parser("normaliseer")
+    p.add_argument("ids", nargs="*")
+    p.add_argument("--alle", action="store_true")
     a = parser.parse_args(argv)
     try:
         if a.cmd == "zoek":
@@ -238,6 +314,8 @@ def main(argv: list[str] | None = None) -> int:
             uit = zet(a.wiki, a.id, a.veld, a.waarde)
         elif a.cmd == "relatie":
             uit = relatie(a.wiki, a.id, a.soort, a.naar, a.naam, a.bronnen, a.vindplaats, a.ggm_match, a.verwijder)
+        elif a.cmd == "normaliseer":
+            uit = "\n".join(normaliseer(a.wiki, a.ids, a.alle))
         else:
             uit = besluit(a.wiki, a.id, a.datum, a.gevolg, a.tekst, a.advies_gevolgd, a.redenen)
     except Fout as exc:

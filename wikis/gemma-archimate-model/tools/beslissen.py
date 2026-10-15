@@ -114,7 +114,7 @@ class Context:
 def bronnen_van(data: dict) -> list[str]:
     """Alle bronnen van een beoordeling, in volgorde: expliciet, kenmerken, relaties, formele definitie."""
     ids = list(data.get("bronnen", []))
-    for antwoord in data.get("kenmerken", {}).values():
+    for antwoord in bepaal_type.antwoorden(data).values():
         ids += antwoord.get("bronnen", [])
     for r in data.get("relaties", []):
         ids += r.get("bronnen", [])
@@ -256,8 +256,7 @@ def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], 
         doel = namen.get(r["naar"], r["naar"]).lower()
         if not u or u.get("soort") != "specialisatie" or str(u.get("genoemd_begrip") or "").lower() != doel:
             res.fouten.append(f"{bid}: via '{via}' bij de relatie naar '{r['naar']}' is geen specialisatie van dat doel")
-    kenmerken = data.get("kenmerken", {})
-    if kenmerken.get("leidt_tot_gebeurtenis", {}).get("waarde") == "ja" and not any(
+    if bepaal_type.waarden(data)["leidt_tot_gebeurtenis"] == "ja" and not any(
             r["soort"] == "triggering" and (uitkomsten.get(r["naar"]) or {}).get("paginatype") == "gebeurtenis"
             for r in data.get("relaties", [])):
         res.fouten.append(f"{bid}: leidt tot gebeurtenis, maar geen relatie 'triggering' naar een gebeurtenis")
@@ -296,7 +295,7 @@ def _controleer_gemma_relaties(ctx: Context, bid: str, data: dict, alle: dict[st
     """Een kenmerk of relatie die steunt op de plek in een GEMMA-indeling (`gemma_relatie`) in plaats van op een bron:
     de GEMMA-relatie moet in het model staan, tussen de gematchte elementen (regel Elke claim een bron)."""
     eigen = (data.get("gemma") or {}).get("id")
-    gebruikt = [s for s, a in data["kenmerken"].items() if a.get("gemma_relatie")] \
+    gebruikt = [s for s, a in bepaal_type.antwoorden(data).items() if a.get("gemma_relatie")] \
         + [r["naar"] for r in data.get("relaties", []) if r.get("gemma_relatie")]
     if not gebruikt:
         return
@@ -304,7 +303,7 @@ def _controleer_gemma_relaties(ctx: Context, bid: str, data: dict, alle: dict[st
         res.fouten.append(f"{bid}: gemma_relatie zonder GEMMA-match (gemma.id)")
         return
     model = ctx.gemma()["relaties"]
-    for s, a in data["kenmerken"].items():
+    for s, a in bepaal_type.antwoorden(data).items():
         for rid in a.get("gemma_relatie") or []:
             g = model.get(rid)
             if s not in bepaal_type.GEMMA_KENMERKEN or a["waarde"] != "ja":
@@ -561,6 +560,12 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     for bid, (pad, data) in alle.items():
         if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", bid):
             res.fouten.append(f"{pad.name}: de bestandsnaam is het id (kleine letters, cijfers, koppeltekens)")
+        regelvorm = bepaal_type.regelvorm(data)
+        if regelvorm:
+            res.fouten.append(f"{bid}: kenmerken in de schrijfvorm van één regel ({', '.join(regelvorm)}); draai "
+                              f"tools/beoordeling.py normaliseer {bid}")
+            uitkomsten[bid] = None
+            continue
         schemafouten = [f"{bid}: {'/'.join(map(str, e.path)) or '(top)'}: {e.message}" for e in validator.iter_errors(data)]
         if schemafouten:
             res.fouten += schemafouten
@@ -581,13 +586,13 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             continue
         bronnen = bronnen_van(data)
         _controleer_bronnen(ctx, bid, bronnen, res)
-        modelbronnen = sorted({b for a in [*data["kenmerken"].values(), *data.get("relaties", []),
+        modelbronnen = sorted({b for a in [*bepaal_type.antwoorden(data).values(), *data.get("relaties", []),
                                            data.get("gemma_functie") or {}]
                                for b in a.get("bronnen") or [] if ctx.brontype(b) == "model"})
         if modelbronnen:
             res.waarschuwingen.append(f"{bid}: {', '.join(modelbronnen)} is een model, matchdoel en geen bron; noem bij "
                                       "het kenmerk of de relatie de bron van de bewering (regel Bronvoorrang)")
-        zonder_bron = [bepaal_type.NAAM[s] for s, a in data["kenmerken"].items()
+        zonder_bron = [bepaal_type.NAAM[s] for s, a in bepaal_type.antwoorden(data).items()
                        if a["waarde"] == "ja" and not a.get("bronnen") and not a.get("gemma_relatie")]
         if zonder_bron:
             res.fouten.append(f"{bid}: kenmerk 'ja' zonder bron: {', '.join(zonder_bron)} (regel Elke claim een bron)")

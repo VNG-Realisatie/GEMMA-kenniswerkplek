@@ -28,7 +28,7 @@ def _teksten(data: dict) -> list[str]:
         teksten += data.get(veld, [])
     for alineas in data.get("per_onderwerp", {}).values():
         teksten += alineas
-    teksten += [a.get("onderbouwing", "") for a in data.get("kenmerken", {}).values()]
+    teksten += [a.get("onderbouwing", "") for a in bepaal_type.antwoorden(data).values()]
     return [t for t in teksten if t]
 
 
@@ -312,7 +312,7 @@ def kennismodel(alle: dict[str, dict], uitkomsten: dict[str, dict | None], zonde
     for bid, d in sorted(alle.items()):
         if bid not in sleutel or bid in zonder:
             continue
-        for kenmerk, k in d["kenmerken"].items():
+        for kenmerk, k in bepaal_type.antwoorden(d).items():
             kern = km.kernrelaties(kenmerk)
             if k["waarde"] != "ja" or not kern:
                 continue
@@ -390,7 +390,7 @@ def modulariteit(alle: dict[str, dict], uitkomsten: dict[str, dict | None], onde
                      f"'{gam_gemeen.thuis(alle[ko])}' (regel Thuishoren)")
 
     for bid in sorted(b for b in beoordeeld if uitkomsten[b]["soort"] == "verwijzing"):
-        tekst = (alle[bid]["kenmerken"].get("betekenis_in_onderwerp") or {}).get("onderbouwing", "")
+        tekst = bepaal_type.antwoord(alle[bid]["kenmerken"], "betekenis_in_onderwerp").get("onderbouwing", "")
         for oid, o in sorted(onderwerpen.items()):
             if oid != gam_gemeen.thuis(alle[bid]) and re.search(
                     rf"\b(?:{re.escape(oid)}|{re.escape(o.get('naam') or oid)})\b", tekst, re.IGNORECASE):

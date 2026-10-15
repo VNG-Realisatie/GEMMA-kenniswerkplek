@@ -416,7 +416,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
         _sub("Naamkeuze", w.alineas(van, d.get("naamkeuze"))), _sub("Homoniemen", homoniemen)])
 
     # Plaats in het model: typering, kenmerken en samenhang met andere elementen.
-    ja = [s for s in bepaal_type.SLEUTELS if d["kenmerken"][s]["waarde"] == "ja"]
+    ja = [s for s, waarde in bepaal_type.waarden(d).items() if waarde == "ja"]
     kenmerken = [[f"**{bepaal_type.NAAM[s]}**: {VRAAG[s]}",
                   " ".join(x for x in (w.tekst(van, _ja(d["kenmerken"][s]["onderbouwing"])),
                                        w.bronnen(van, d["kenmerken"][s].get("bronnen", [])),

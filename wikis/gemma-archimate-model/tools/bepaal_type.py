@@ -11,7 +11,8 @@ Eén bron van waarheid voor de criteria van deze wiki:
   context van alle begrippen in `indeling`) voor een voorlopig type met een pagina;
 - NAREGELS: aanvullingen op de uitkomst (tegenhanger, procesniveau, annotatie, homoniem).
 
-Het model vult de kenmerken in (met onderbouwing en bron-id's); deze tool past de regels toe. De elementtypen zelf
+Het model vult de kenmerken op het pad in (`pad`: fase A en fase B, met onderbouwing en bron-id's); buiten het pad
+leidt deze tool nee af, en ze past de regels toe. De elementtypen zelf
 (naam, ArchiMate-type, paginatype), hun eigenschappen en indelingen staan in het kennismodel (tools/kennismodel.py).
 De vragenlijst in skill `gemma-archimate-model-criteria` en `schemas/beoordeling.schema.json` worden hieruit gegenereerd
 (`markdown --schrijf`, `schema --schrijf`); de vragenlijst met voorbeelden en de stappentabel staan in
@@ -20,6 +21,7 @@ blijven.
 
 Gebruik (vanuit de wikimap):
     uv run python tools/bepaal_type.py evalueer <assessment.json | beoordeling.json> [--schrijf]
+    uv run python tools/bepaal_type.py vragen [<id>] [--type <paginatype>]   # de vragen voor de volgende fase
     uv run python tools/bepaal_type.py status --uitkomst <uitkomst.json> [--ggm-match sterk]
     uv run python tools/bepaal_type.py markdown [--schrijf]   # de vragenlijst in de criteria-skill
     uv run python tools/bepaal_type.py schema [--schrijf]     # schemas/beoordeling.schema.json
@@ -774,25 +776,199 @@ class BeoordelingFout(ValueError):
         super().__init__("; ".join(fouten))
 
 
+# --- Het pad: de kenmerken die de beslistabel voor dit begrip leest ---
+#
+# Fase A: de poort (met een stop als het begrip afvalt), de aard en de groep van die aard. Fase B: de kenmerken van
+# het type (kernrelatie, eis, drempel, aanvullingen) en wat stap 6, stap 7 en de naregels lezen. Een kenmerk buiten het
+# pad hoeft niet in de beoordeling: het script leidt nee af. Elk kenmerk op het pad staat er expliciet in (de nee die
+# de uitkomst bepaalt, als dubbelcheck), met een onderbouwing; alleen in de groepen met precies één ja (Aard, Soort
+# gedrag) mag een kale `nee`.
+
+KALE_NEE = "nee"
+EENDUIDIG = frozenset(AARD) | frozenset(SOORT_GEDRAG)  # precies één ja: een nee zonder onderbouwing mag
+POORT_STOP = (("buiten_dit_model", "ja"), ("slechts_eigenschap", "ja"), ("eigen_identiteit", "nee"),
+              ("betekenis_in_onderwerp", "nee"))
+TYPEGROEP = (  # (aarden, kenmerken): de groep die het type kiest, als een van de aarden ja is
+    ({"gedrag"}, tuple(SOORT_GEDRAG)),
+    ({"handelende_partij", "hoedanigheid"}, ("los_van_verantwoordelijkheid",)),
+    ({"samenwerkingsverband"}, ("eigen_rechtspersoon",)),
+    ({"regeling_als_geheel"}, ("landelijk",)),
+    (set(), ("waarneembare_vorm", "afspraak")),  # geen aard: een ding
+)
+STAP_7 = {"bedrijfsproces": ("omvat_levensloop", "bijdrage_aan_groter_proces", "klant_tot_klant", "levert_aanbod"),
+          "bedrijfsobject": ("generiek", "invoer_van_een_ander", "deel_van_object")}
+ELK_ELEMENT = ("zelfstandige_specialisatie", "generiek", "geautomatiseerd_verwerkt")
+
+
+def antwoord(kenmerken: dict, sleutel: str) -> dict:
+    """Het antwoord op een kenmerk als object; een kale nee of een ontbrekend kenmerk (afgeleid) is {'waarde': 'nee'}."""
+    a = kenmerken.get(sleutel)
+    return a if isinstance(a, dict) else {"waarde": "nee"}
+
+
+def antwoorden(beoordeling: dict) -> dict[str, dict]:
+    """De kenmerken die in de beoordeling staan, elk als object (een kale nee als {'waarde': 'nee'})."""
+    kenmerken = beoordeling.get("kenmerken") or {}
+    return {s: antwoord(kenmerken, s) for s in kenmerken}
+
+
+def regelvorm(beoordeling: dict) -> list[str]:
+    """De kenmerken die nog in de schrijfvorm van één regel staan (`ja — onderbouwing [bron]`)."""
+    return [s for s, a in (beoordeling.get("kenmerken") or {}).items() if isinstance(a, str) and a != KALE_NEE]
+
+
+def extra_velden(beoordeling: dict) -> dict:
+    extra = {s: beoordeling.get(s) for s in EXTRA_VELDEN}
+    extra["soort_werk_van"] = (beoordeling.get("gemma_generiek") or {}).get("id")
+    return extra
+
+
+def _poort(k: dict, extra: dict) -> list[str]:
+    """De poort tot en met de stop; *herkenbaar* en *gemeentelijk* altijd samen (samen de reden van buiten scope)."""
+    if extra.get("synoniem_van"):
+        return []
+    pad = ["herkenbaar", "gemeentelijk"]
+    if not (_ja(k, "herkenbaar") and _ja(k, "gemeentelijk")):
+        return pad
+    for sleutel, stop in POORT_STOP:
+        pad.append(sleutel)
+        if k[sleutel] == stop:
+            return pad
+    return pad
+
+
+def fase_a(k: dict, extra: dict) -> list[str]:
+    """Poort, aard en de groep van die aard, met een stop als het begrip afvalt."""
+    pad = _poort(k, extra)
+    if len(pad) < len(POORT_STOP) + 2 or k["betekenis_in_onderwerp"] == "nee":
+        return pad
+    aard = _aard(k)
+    pad += AARD
+    for aarden, groep in TYPEGROEP:
+        if _past_groep(aard, aarden):
+            pad += [s for s in groep if s not in pad]
+    return pad
+
+
+def _past_groep(aard: set[str], aarden: set[str]) -> bool:
+    """Telt de groep van `aarden` bij deze aard? Soort gedrag alleen bij gedrag alleen (stap 4)."""
+    if aarden == {"gedrag"}:
+        return aard == aarden
+    return bool(aard & aarden) if aarden else not aard
+
+
+def fase_b_type(t: Typedef) -> list[str]:
+    """De kenmerken van een type met een pagina: kernrelatie, eis, drempel, aanvullingen, stap 6 en 7, naregels."""
+    stap_7 = STAP_7.get(t.paginatype, ()) if not t.keuze else ()
+    return list(dict.fromkeys(s for s in (t.kern, *t.eis, *t.drempel, *t.aanvulling, *stap_7, *ELK_ELEMENT) if s))
+
+
+def pad(k: dict, extra: dict) -> tuple[list[str], list[str]]:
+    """(fase A, fase B): de kenmerken die de beslistabel leest, bij deze waarden (een ontbrekend kenmerk is nee)."""
+    a = fase_a(k, extra)
+    u = _stap_0_tot_4(k, extra)
+    if u.soort != "element":  # afgevallen, of een type zonder pagina: geen fase B
+        return a, []
+    return a, [s for s in fase_b_type(typedef(u.paginatype, u.archimate_type, k)) if s not in a]
+
+
+POORT = [k.sleutel for k in KENMERKEN if k.groep == "Poort"]
+GROEPLABEL = {"gedrag": "Alleen bij gedrag (precies één ja; een nee zonder onderbouwing)",
+              "handelende_partij": "Alleen bij handelende partij of hoedanigheid",
+              "samenwerkingsverband": "Alleen bij samenwerkingsverband",
+              "regeling_als_geheel": "Alleen bij regeling als geheel",
+              "": "Alleen zonder aard (een ding)"}
+SCHRIJFVORM = ("Schrijf per kenmerk één regel onder `kenmerken:`: `sleutel: ja — onderbouwing [bron-id, …]` (een plek in "
+               "een GEMMA-indeling: `[id-…]`, het id van de GEMMA-relatie); een nee: `sleutel: nee — onderbouwing`, in "
+               "Aard en Soort gedrag een kale `sleutel: nee`; tussen aanhalingstekens als de tekst `: ` of ` #` bevat. "
+               "Daarna: tools/beoordeling.py normaliseer <id>.")
+
+
+def _vraagregel(sleutel: str) -> str:
+    k = KENMERK[sleutel]
+    return f"- `{sleutel}`: {k.vraag} Ja: {k.ja}. Nee: {k.nee}."
+
+
+def type_van(paginatype: str) -> Typedef:
+    """Het type bij een paginatype; `procescluster` is het bedrijfsproces dat processen groepeert."""
+    if paginatype == "procescluster":
+        return next(t for t in TYPEN if t.keuze == "groepeert_processen")
+    for t in TYPEN:
+        if t.paginatype == paginatype and not t.keuze:
+            return t
+    raise ValueError(f"onbekend paginatype '{paginatype}'; kies uit {', '.join(PAGINATYPEN)} of procescluster")
+
+
+def vragen(beoordeling: dict | None = None, paginatype: str | None = None) -> list[str]:
+    """De vragen voor de volgende fase: de kenmerken op het pad die nog niet beantwoord zijn, met de voorbeelden.
+    Fase A zolang de poort of de aard open is (met de groepen per aard), daarna fase B van het type."""
+    if paginatype:
+        t = type_van(paginatype)
+        return [f"Fase B, {t.naam}: de kenmerken van het type, elk met een onderbouwing.",
+                *map(_vraagregel, fase_b_type(t)), "", SCHRIJFVORM]
+    beoordeling = beoordeling or {}
+    kenmerken = beoordeling.get("kenmerken") or {}
+    extra = extra_velden(beoordeling)
+    if extra.get("synoniem_van"):
+        return ["Synoniem (stap 0): geen kenmerken."]
+    open_ = lambda sleutels: [s for s in sleutels if s not in kenmerken]  # noqa: E731
+    a, b = pad(waarden(beoordeling), extra)
+    if set(open_(a)) & set(POORT + AARD):
+        uit = ["Fase A. Poort, in volgorde: het begrip valt af bij de eerste die afwijkt (herkenbaar of gemeentelijk "
+               "nee; buiten dit model of slechts eigenschap ja; eigen identiteit of betekenis in onderwerp nee), dan stop.",
+               *map(_vraagregel, open_(POORT)), "",
+               "Aard: precies één ja (handelende partij met hoedanigheid of met samenwerkingsverband mag samen); een "
+               "nee zonder onderbouwing.", *map(_vraagregel, open_(AARD))]
+        for aarden, groep in TYPEGROEP:
+            if open_(groep):
+                uit += ["", GROEPLABEL[min(aarden) if aarden else ""] + ":", *map(_vraagregel, open_(groep))]
+        return uit + ["", SCHRIJFVORM]
+    if open_(a):
+        return ["Fase A, de groep van de aard:", *map(_vraagregel, open_(a)), "", SCHRIJFVORM]
+    u = _stap_0_tot_4(waarden(beoordeling), extra)
+    if not b:
+        return [f"Geen fase B: uitkomst {u.soort} (regel {u.regel}). Draai tools/beslissen.py."]
+    t = typedef(u.paginatype, u.archimate_type, waarden(beoordeling))
+    if not open_(b):
+        return [f"Alle kenmerken op het pad van {t.naam} zijn beantwoord. Draai tools/beslissen.py."]
+    return [f"Fase B, {t.naam}: de kenmerken van het type, elk met een onderbouwing.", *map(_vraagregel, open_(b)),
+            "", SCHRIJFVORM]
+
+
 def controleer(beoordeling: dict) -> list[str]:
-    """Structurele controle van een beoordeling (aanvullend op het JSON-schema)."""
+    """Structurele controle van een beoordeling (aanvullend op het JSON-schema), en het pad: elk kenmerk op het pad
+    staat er expliciet in; een nee op het pad heeft een onderbouwing, behalve in Aard en Soort gedrag."""
     fouten = []
-    kenmerken = beoordeling.get("kenmerken", {})
-    ontbrekend = [s for s in SLEUTELS if s not in kenmerken]
-    if ontbrekend:
-        fouten.append(f"kenmerken niet beantwoord: {', '.join(NAAM[s] for s in ontbrekend)}")
-    for sleutel, antwoord in kenmerken.items():
+    kenmerken = beoordeling.get("kenmerken") or {}
+    for sleutel, a in kenmerken.items():
         if sleutel not in NAAM:
             fouten.append(f"onbekend kenmerk '{sleutel}'")
-        elif not isinstance(antwoord, dict) or antwoord.get("waarde") not in ("ja", "nee"):
+        elif isinstance(a, str) and a != KALE_NEE:
+            fouten.append(f"kenmerk '{NAAM[sleutel]}' staat in de schrijfvorm van één regel; draai "
+                          "tools/beoordeling.py normaliseer")
+        elif isinstance(a, str):
+            continue
+        elif not isinstance(a, dict) or a.get("waarde") not in ("ja", "nee"):
             fouten.append(f"kenmerk '{NAAM[sleutel]}': waarde moet 'ja' of 'nee' zijn")
-        elif not str(antwoord.get("onderbouwing", "")).strip():
+        elif not str(a.get("onderbouwing", "")).strip():
             fouten.append(f"kenmerk '{NAAM[sleutel]}': onderbouwing ontbreekt")
+    if fouten:
+        return fouten
+    a, b = pad(waarden(beoordeling), extra_velden(beoordeling))
+    ontbrekend = [s for s in a + b if s not in kenmerken]
+    if ontbrekend:
+        fouten.append(f"kenmerken op het pad niet beantwoord: {', '.join(NAAM[s] for s in ontbrekend)} "
+                      "(tools/bepaal_type.py vragen)")
+    kaal = [s for s in a + b if kenmerken.get(s) == KALE_NEE and s not in EENDUIDIG]
+    if kaal:
+        fouten.append(f"nee zonder onderbouwing op het pad (alleen in Aard en Soort gedrag): {_namen(kaal)}")
     return fouten
 
 
 def waarden(beoordeling: dict) -> dict[str, str]:
-    return {s: beoordeling["kenmerken"][s]["waarde"] for s in SLEUTELS}
+    """De waarde van elk kenmerk; buiten het pad leidt het script nee af."""
+    kenmerken = beoordeling.get("kenmerken") or {}
+    return {s: antwoord(kenmerken, s)["waarde"] for s in SLEUTELS}
 
 
 def _stap_0_tot_4(k: dict, extra: dict) -> Uitkomst:
@@ -908,8 +1084,7 @@ def evalueer(beoordeling: dict) -> Uitkomst:
     if fouten:
         raise BeoordelingFout(fouten)
     k = waarden(beoordeling)
-    extra = {s: beoordeling.get(s) for s in EXTRA_VELDEN}
-    extra["soort_werk_van"] = (beoordeling.get("gemma_generiek") or {}).get("id")
+    extra = extra_velden(beoordeling)
     uitkomst = _stap_0_tot_4(k, extra)
     if uitkomst.soort == "element":
         uitkomst = _stap_5_en_6(uitkomst, k, extra)
@@ -1110,10 +1285,15 @@ def doc_stap0() -> list[str]:
             "een bron? Noem dat begrip en waar het voorkomt. | door naar de kenmerken; naamkeuze voorleggen |", ""]
 
 
+PAD_UITLEG = ("Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_type.py vragen <id>`). Fase A: de poort, met "
+              "een stop als het begrip afvalt, de aard en de groep van die aard; een nee in Aard en Soort gedrag zonder "
+              "onderbouwing. Fase B: de kenmerken van het type, elk met een onderbouwing. Een kenmerk buiten het pad laat "
+              "je weg: het script leidt nee af. Bij \"Noem …\" hoort bij ja een concreet begrip, artikel of relatie uit de "
+              "bronnen; zonder zo'n verwijzing is het antwoord nee.")
+
+
 def doc_vragenlijst() -> list[str]:
-    regels = ["### Kenmerken: vragenlijst in volgorde van beoordelen", "",
-              "Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee). Bij \"Noem …\" hoort bij "
-              "ja een concreet begrip, artikel of relatie uit de bronnen; zonder zo'n verwijzing is het antwoord nee.", ""]
+    regels = ["### Kenmerken: vragenlijst in volgorde van beoordelen", "", PAD_UITLEG, ""]
     nr = 0
     for groep in GROEPEN:
         regels += [f"**{groep}.** {GROEP_ALS[groep]}", ""]
@@ -1126,9 +1306,7 @@ def doc_vragenlijst() -> list[str]:
 
 def doc_vragentabel() -> list[str]:
     """De vragenlijst met voorbeelden en herkomst, per groep (kennismodel/kenmerken-en-beslistabel.md)."""
-    regels = ["### Kenmerken", "",
-              "Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee). Bij \"Noem …\" hoort bij "
-              "ja een concreet begrip, artikel of relatie uit de bronnen; zonder zo'n verwijzing is het antwoord nee.", ""]
+    regels = ["### Kenmerken", "", PAD_UITLEG, ""]
     nr = 0
     for groep in GROEPEN:
         regels += [f"**{groep}.** {GROEP_ALS[groep]}", "", "| Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |",
@@ -1211,9 +1389,10 @@ def schema() -> dict:
                                            "element met relaties en per_onderwerp"},
             "kenmerken": {
                 "type": "object",
-                "required": SLEUTELS,
-                "properties": {s: {"$ref": "#/$defs/antwoord"} for s in SLEUTELS},
+                "properties": {s: {"$ref": "#/$defs/kenmerk"} for s in SLEUTELS},
                 "additionalProperties": False,
+                "description": "De kenmerken op het pad (tools/bepaal_type.py vragen); buiten het pad leidt het script "
+                               "nee af. Een kale nee alleen in Aard en Soort gedrag (script)",
             },
             **{s: {"type": "string", "description": d} for s, d in EXTRA_VELDEN.items()},
             **{s: {"enum": list(w), "description": "Indelingsveld: de plaats in de indelingen (stap 7)"}
@@ -1313,6 +1492,8 @@ def schema() -> dict:
         },
         "additionalProperties": False,
         "$defs": {
+            "kenmerk": {"oneOf": [{"$ref": "#/$defs/antwoord"},
+                                  {"const": KALE_NEE, "description": "Een nee zonder onderbouwing"}]},
             "antwoord": antwoord,
         },
     }
@@ -1350,7 +1531,27 @@ def main(argv: list[str] | None = None) -> int:
     p_md.add_argument("--schrijf", action="store_true", help="Werk het gegenereerde blok in de skill bij")
     p_schema = sub.add_parser("schema", help="Beoordeling-schema")
     p_schema.add_argument("--schrijf", action="store_true", help=f"Schrijf naar {SCHEMA_PATH.relative_to(WIKI_ROOT)}")
+    p_vragen = sub.add_parser("vragen", help="De vragen voor de volgende fase van een beoordeling")
+    p_vragen.add_argument("id", nargs="?", help="De beoordeling; zonder id of bij een nieuw begrip: fase A")
+    p_vragen.add_argument("--type", dest="paginatype", help="Fase B van dit paginatype (of procescluster)")
+    p_vragen.add_argument("--wiki", type=Path, default=WIKI_ROOT, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
+
+    if args.cmd == "vragen":
+        data = None
+        if args.id:
+            import gam_gemeen
+            from llmwiki import beoordeling as beoordelingen
+            alle = beoordelingen.alle(args.wiki, gam_gemeen.wiki_yaml(args.wiki))
+            data = alle[args.id][1] if args.id in alle else None
+            if data is None:
+                print(f"Geen beoordeling '{args.id}': een nieuw begrip.")
+        try:
+            print("\n".join(vragen(data, args.paginatype)))
+        except ValueError as exc:
+            print(f"fout: {exc}")
+            return 1
+        return 0
 
     if args.cmd == "markdown":
         if args.schrijf:

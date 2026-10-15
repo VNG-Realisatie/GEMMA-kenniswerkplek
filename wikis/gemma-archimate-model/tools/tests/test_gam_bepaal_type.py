@@ -208,12 +208,86 @@ def test_buiten_scope_en_eigenschap():
 
 def test_onvolledige_beoordeling_wordt_geweigerd():
     b = beoordeling(SCOPE)
-    del b["kenmerken"]["plaats"]
     b["kenmerken"]["herkenbaar"]["onderbouwing"] = ""
     with pytest.raises(bt.BeoordelingFout) as exc:
         bt.evalueer(b)
-    assert any("plaats" in f for f in exc.value.fouten)
     assert any("onderbouwing" in f for f in exc.value.fouten)
+    b = beoordeling(SCOPE)
+    del b["kenmerken"]["eigen_identiteit"]  # op het pad: de nee die de uitkomst bepaalt
+    with pytest.raises(bt.BeoordelingFout) as exc:
+        bt.evalueer(b)
+    assert any("op het pad niet beantwoord: eigen identiteit" in f for f in exc.value.fouten)
+
+
+def _op_pad(b: dict) -> dict:
+    """De beoordeling met alleen de kenmerken op het pad en de ja's."""
+    a, f = bt.pad(bt.waarden(b), bt.extra_velden(b))
+    return {**b, "kenmerken": {s: x for s, x in b["kenmerken"].items() if s in a + f or x["waarde"] == "ja"}}
+
+
+@pytest.mark.parametrize("ja", [BO, ACTOR, ROL, PROCES, FUNCTIE, DIENST, GEBEURTENIS, PRODUCT, SAMENWERKING, KANAAL,
+                                BELEIDSKADER, SCOPE, SCOPE | {"buiten_dit_model"}, BASIS | {"plaats"},
+                                BO | {"waarneembare_vorm"}, BASIS | {"regeling_als_geheel"}])
+def test_buiten_het_pad_leidt_het_script_nee_af(ja):
+    b = beoordeling(ja, genoemd_begrip="Graf", kernobject="Graf", afnemer="extern")
+    kort = _op_pad(b)
+    assert len(kort["kenmerken"]) < len(bt.SLEUTELS)
+    assert bt.evalueer(kort) == bt.evalueer(b)
+
+
+def test_pad_per_fase():
+    a, f = bt.pad(bt.waarden(beoordeling(PROCES)), {})
+    assert a == bt.POORT + bt.AARD + bt.SOORT_GEDRAG
+    assert {"toegewezen_partij", "aanleiding", "omvat_levensloop", "klant_tot_klant", "zelfstandige_specialisatie",
+            "geautomatiseerd_verwerkt"} <= set(f)
+    assert "wordt_bewerkt" not in f
+    a, f = bt.pad(bt.waarden(beoordeling(BO)), {})
+    assert a[-2:] == ["waarneembare_vorm", "afspraak"] and f[0] == "wordt_bewerkt"
+    assert bt.pad(bt.waarden(beoordeling(SCOPE | {"buiten_dit_model"})), {}) == (
+        ["herkenbaar", "gemeentelijk", "buiten_dit_model"], [])
+    assert bt.pad(bt.waarden(beoordeling(set())), {}) == (["herkenbaar", "gemeentelijk"], [])
+    assert bt.pad(bt.waarden(beoordeling(BO)), {"synoniem_van": "Graf"}) == ([], [])
+
+
+def test_kale_nee_alleen_in_aard_en_soort_gedrag():
+    b = _op_pad(beoordeling(PROCES))
+    b["kenmerken"]["plaats"] = b["kenmerken"]["groepeert_processen"] = bt.KALE_NEE
+    assert bt.evalueer(b).paginatype == "bedrijfsproces"
+    b["kenmerken"]["eigen_besluit"] = bt.KALE_NEE
+    with pytest.raises(bt.BeoordelingFout) as exc:
+        bt.evalueer(b)
+    assert any("nee zonder onderbouwing op het pad" in f and "eigen besluit" in f for f in exc.value.fouten)
+    b["kenmerken"]["eigen_besluit"] = "ja — volgt uit art. 1 [2024-test]"
+    with pytest.raises(bt.BeoordelingFout) as exc:
+        bt.evalueer(b)
+    assert any("normaliseer" in f for f in exc.value.fouten)
+
+
+def test_schema_kale_nee():
+    validator = jsonschema.Draft202012Validator(bt.schema())
+    b = _op_pad(beoordeling(PROCES))
+    b["kenmerken"]["plaats"] = bt.KALE_NEE
+    assert not list(validator.iter_errors({**b, "onderwerpen": ["test"]}))
+    b["kenmerken"]["plaats"] = "ja"
+    assert list(validator.iter_errors({**b, "onderwerpen": ["test"]}))
+
+
+def test_vragen_per_fase():
+    nieuw = "\n".join(bt.vragen(None))
+    assert nieuw.startswith("Fase A") and "`herkenbaar`" in nieuw and "`per_keer_doorlopen`" in nieuw
+    assert "Alleen bij gedrag" in nieuw and "normaliseer" in nieuw
+    b = _op_pad(beoordeling(BO))
+    fase_a = {s: x for s, x in b["kenmerken"].items() if s in bt.POORT + bt.AARD}
+    tekst = "\n".join(bt.vragen({**b, "kenmerken": fase_a}))
+    assert tekst.startswith("Fase A, de groep") and "`afspraak`" in tekst and "`herkenbaar`" not in tekst
+    fase_a |= {"waarneembare_vorm": b["kenmerken"]["waarneembare_vorm"], "afspraak": b["kenmerken"]["afspraak"]}
+    tekst = "\n".join(bt.vragen({**b, "kenmerken": fase_a}))
+    assert tekst.startswith("Fase B, Bedrijfsobject") and "`wordt_bewerkt`" in tekst and "`afspraak`" not in tekst
+    assert bt.vragen(b)[0].startswith("Alle kenmerken op het pad")
+    assert bt.vragen(_op_pad(beoordeling(SCOPE)))[0].startswith("Geen fase B: uitkomst onderdeel")
+    assert "`omvat_processen`" in "\n".join(bt.vragen(paginatype="procescluster"))
+    with pytest.raises(ValueError):
+        bt.vragen(paginatype="onbekend")
 
 
 def test_elk_kenmerk_telt_ergens():

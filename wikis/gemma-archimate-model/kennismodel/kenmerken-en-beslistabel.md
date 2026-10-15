@@ -21,7 +21,7 @@ Vóór de kenmerken: bepaal welk begrip bedoeld is. Synoniemen en homoniemen zij
 
 ## Kenmerken
 
-Beantwoord alle vragen, ook die niet bij de aard van het begrip passen (dan nee). Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; zonder zo'n verwijzing is het antwoord nee.
+Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_type.py vragen <id>`). Fase A: de poort, met een stop als het begrip afvalt, de aard en de groep van die aard; een nee in Aard en Soort gedrag zonder onderbouwing. Fase B: de kenmerken van het type, elk met een onderbouwing. Een kenmerk buiten het pad laat je weg: het script leidt nee af. Bij "Noem …" hoort bij ja een concreet begrip, artikel of relatie uit de bronnen; zonder zo'n verwijzing is het antwoord nee.
 
 **Poort.** Altijd.
 
