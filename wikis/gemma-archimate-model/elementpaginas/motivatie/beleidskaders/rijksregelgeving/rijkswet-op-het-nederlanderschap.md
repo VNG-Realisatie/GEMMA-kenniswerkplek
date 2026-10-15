@@ -100,8 +100,3 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-07: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap (optie, naturalisatie, afstand) en van Beheren stempassen en Registreren kiesgerechtigdheid.
-- 2026-10-07: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap, de optie, de naturalisatie en de afstand.

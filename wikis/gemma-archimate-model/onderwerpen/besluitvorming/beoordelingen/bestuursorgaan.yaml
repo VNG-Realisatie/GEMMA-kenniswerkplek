@@ -30,13 +30,10 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
     - 2026-rijk-gemeentewet-wettekst
 synoniem_van: Beslisser
-toelichting: Synoniem (context wet) van de rol Beslisser (besluit 2026-10-12). De Awb noemt bestuursorgaan het orgaan dat besluiten neemt (art. 1:1, 1:3); in de gemeente zijn dat raad, college en burgemeester (Gemeentewet art. 6), die als actor de rol Beslisser vervullen.
+toelichting: Synoniem (context wet) van de rol Beslisser. De Awb noemt bestuursorgaan het orgaan dat besluiten neemt (art. 1:1, 1:3); in de gemeente zijn dat raad, college en burgemeester (Gemeentewet art. 6), die als actor de rol Beslisser vervullen.
 besluiten:
-- datum: '2026-09-30'
-  besluit: Verhuist naar een algemeen onderwerp besluitvorming.
-  gevolg: verwerkt
 - datum: '2026-10-12'
-  besluit: Synoniem (context wet) van Beslisser, geen eigen element. Inspraak hangt via Beslisser, toegewezen aan Uitvoeren uniforme openbare voorbereidingsprocedure, aan raad en college; het todo-punt Bestuursorgaan vervalt.
+  besluit: Synoniem (context wet) van Beslisser, geen eigen element.
   gevolg: verwerkt
 beslist:
   uitkomst:

@@ -98,13 +98,6 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   vindplaats: Paspoortwet art. 54, 56; HUP Inhouding
-besluiten:
-- datum: '2026-10-08'
-  besluit: 'Het verval van rechtswege triggert de inhouding niet. Nieuwe gebeurtenis Inlevering van het reisdocument (wetsterm, Paspoortwet art. 56) triggert Inhouden reisdocument, het bedrijfsproces voor elke inlevering (teruggevonden vermist, vervallen, beschadigd of gesignaleerd document, art. 54). Vervallen verklaren reisdocument wordt daarin een deelproces, alleen na een signalering (art. 44, 53). Verwerken vermissing reisdocument eindigt bij de registratie en het verval (art. 47 lid 1 onder j). Afgewezen: de vervallenverklaring onder Verwerken vermissing (een vermist document vervalt van rechtswege), en de inlevering van een teruggevonden document als tweede gebeurtenis van Verwerken vermissing (het inhouden zou dan op twee plaatsen staan).'
-  gevolg: verwerkt
-- datum: '2026-10-08'
-  besluit: Nieuwe gebeurtenis Inlevering van het reisdocument (wetsterm, Paspoortwet art. 56), die Inhouden reisdocument triggert, in plaats van het verval van rechtswege; werkt de processtap Inlevering reisdocument bij.
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

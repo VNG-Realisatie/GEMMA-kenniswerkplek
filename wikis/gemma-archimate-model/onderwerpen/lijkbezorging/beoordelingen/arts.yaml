@@ -7,7 +7,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
     waarde: ja
-    onderbouwing: 'Als behandelende arts een wettelijke meld- en overlegplicht met de gemeentelijke lijkschouwer: meldt hem als hij geen verklaring van overlijden kan afgeven, overlegt met hem voordat hij die bij een minderjarige afgeeft en geeft hem informatie voor het nader onderzoek (art. 7 lid 2 en 6, art. 10a lid 1 en 3); zonder zijn verklaring geen verlof (art. 12). Als forensisch arts benoemd tot gemeentelijke lijkschouwer (art. 4, 5). Besluit redacteur 2026-10-04.'
+    onderbouwing: 'Als behandelende arts een wettelijke meld- en overlegplicht met de gemeentelijke lijkschouwer: meldt hem als hij geen verklaring van overlijden kan afgeven, overlegt met hem voordat hij die bij een minderjarige afgeeft en geeft hem informatie voor het nader onderzoek (art. 7 lid 2 en 6, art. 10a lid 1 en 3); zonder zijn verklaring geen verlof (art. 12). Als forensisch arts benoemd tot gemeentelijke lijkschouwer (art. 4, 5).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   buiten_dit_model:
@@ -50,7 +50,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   vervult_een_rol:
     waarde: ja
-    onderbouwing: Ketenpartner als behandelende arts (art. 3, 7, 10a, 12) en Gemeentelijke lijkschouwer als forensisch arts die het college benoemt (art. 4, 5); besluit 2026-10-04.
+    onderbouwing: Ketenpartner als behandelende arts (art. 3, 7, 10a, 12) en Gemeentelijke lijkschouwer als forensisch arts die het college benoemt (art. 4, 5).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   soort_partij:
@@ -110,7 +110,7 @@ relaties:
   vindplaats: art. 4, 5
 besluiten:
 - datum: '2026-10-04'
-  besluit: 'Actor als ketenpartner in het ketenproces Bezorgen lijken, zoals de Officier van justitie: wettelijke overlegplicht (art. 10a lid 1) en meldplicht (art. 7 lid 2 en 6) met de gemeentelijke lijkschouwer. Herziet de uitkomst buiten scope en het voorbeeld in de beslistabel.'
+  besluit: 'Actor als ketenpartner in Bezorgen stoffelijk overschot, zoals de Officier van justitie: wettelijke overlegplicht (Wlb art. 10a lid 1) en meldplicht (art. 7 lid 2 en 6) met de gemeentelijke lijkschouwer. Herziet de uitkomst buiten scope.'
   gevolg: verwerkt
 - datum: '2026-10-04'
   besluit: 'Actor Arts in plaats van Behandelende arts (synoniem, wet): behandelend is de hoedanigheid tegenover de overledene. Arts vervult Ketenpartner en Gemeentelijke lijkschouwer (art. 4, 5); Ketenpartner wordt ook toegewezen aan Schouwen lijk (art. 3). Geen directe relatie behandelt: de medische behandeling is de interne zaak van de ketenpartner en de overledene is geen element; de arts hangt via Schouwen lijk aan het Lijk.'

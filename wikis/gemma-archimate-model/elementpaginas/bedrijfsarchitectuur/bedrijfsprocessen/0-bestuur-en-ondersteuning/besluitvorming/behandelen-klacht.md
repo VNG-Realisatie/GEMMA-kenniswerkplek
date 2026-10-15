@@ -115,7 +115,3 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 Match **sterk** met GEMMA-element *Behandelen klacht* (business-process). Hetzelfde proces: het afhandelen van een klacht over een gedraging. GEMMA beperkt het tot gedrag of houding van een ambtenaar; de Awb omvat ook gedragingen van het bestuursorgaan zelf (art. 9:1). Nieuw: een definitie volgens de Awb, het kernobject Schriftelijke klacht en de relaties.
 
 > Het afhandelen van klachten tegen het "gedrag of een houding" van een gemeentelijke ambtenaar. Elke blijk van onvrede over gedrag en/of houding met betrekking tot dienstverlening, tussen een klant en een of meer ambtenaren in functie.
-
-### Besluiten redacteur
-
-- 2026-10-12: Generiek bedrijfsproces met pagina, gekoppeld aan het GEMMA-proces Behandelen klacht; het realiseert de UPL-dienst Klacht en heeft het bedrijfsobject Klaagschrift als kernobject. Beslisser en Klager worden eraan toegewezen. Mondelinge klachten en de klachtadviescommissie staan in de beschrijving. *Stand: herzien 2026-10-12: het kernobject heet Schriftelijke klacht, met Klaagschrift als synoniem (regel Bronvoorrang)*

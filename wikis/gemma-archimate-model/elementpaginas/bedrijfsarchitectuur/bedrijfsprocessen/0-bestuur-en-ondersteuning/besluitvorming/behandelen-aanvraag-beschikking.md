@@ -107,7 +107,3 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen generiek proces voor elke beschikking op aanvraag; Behandelen aanvraag product (producten die gereed liggen) en Behandelen aanvraag vergunning of ontheffing (toestemmingen) zijn smaller. Nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-12: Generiek bedrijfsproces met pagina, met Beschikking als kernobject; het realiseert de UPL-dienst Beschikking aanvragen. Beslisser en Belanghebbende worden eraan toegewezen. De beslisprocessen op aanvraag in de onderwerpen houden hun koppeling met GEMMA (gemma_generiek); specialisatierelaties naar dit proces volgen later (todo).

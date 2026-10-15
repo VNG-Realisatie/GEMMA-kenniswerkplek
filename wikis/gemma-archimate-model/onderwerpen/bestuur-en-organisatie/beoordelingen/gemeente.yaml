@@ -43,7 +43,7 @@ kenmerken:
     - 2024-rijk-gemeentewet-wettekst
   hoedanigheid:
     waarde: nee
-    onderbouwing: 'Een partij, geen verantwoordelijkheid: de verantwoordelijkheden van de gemeente zijn de rollen die zij vervult (besluit 2026-10-04).'
+    onderbouwing: 'Een partij, geen verantwoordelijkheid: de verantwoordelijkheden van de gemeente zijn de rollen die zij vervult.'
   samenwerkingsverband: nee
   toegangspunt: nee
   plaats: nee
@@ -66,7 +66,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   soort_partij:
     waarde: ja
-    onderbouwing: Elke gemeente; een soort partij, geen individuele gemeente (besluit 2026-10-04).
+    onderbouwing: Elke gemeente; een soort partij, geen individuele gemeente.
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
   onderscheidbare_exemplaren:
@@ -105,22 +105,15 @@ per_onderwerp:
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
 besluiten:
-- datum: '2026-09-30'
-  besluit: 'Rol, geen actor: Gemeente is de hoedanigheid; de afzonderlijke gemeenten zijn de actoren.'
-  gevolg: verwerkt
 - datum: '2026-10-04'
-  besluit: Actor als soort partij (elke gemeente), geen rol meer. Vervult Houder van de begraafplaats, Houder van het crematorium, Houder van een plaats van bijzetting en Kostendrager; omvat Gemeenteraad, College van B&W en Burgemeester. Herziet het besluit van 2026-09-30.
+  besluit: 'Actor als soort partij (elke gemeente), geen rol: de afzonderlijke gemeenten zijn geen eigen element.'
   gevolg: verwerkt
 - datum: '2026-10-04'
   besluit: 'Geen GEMMA-match: de actor Gemeente is een gemeente als rechtspersoon, de GEMMA-rol Gemeente is de verantwoordelijkheid die gemeenten hebben (doelgroep van applicatieservices). Het onderscheid staat in definitie, beschrijving en homoniemen.'
   gevolg: verwerkt
-- datum: '2026-10-06'
-  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
-  gevolg: verwerkt
-  stand: geldt; Belanghebbende open (todo)
 gemma:
   sterkte: geen
-  onderbouwing: 'De GEMMA-rol Gemeente staat voor de verantwoordelijkheid die gemeenten hebben, en ordent als doelgroep de applicatieservices voor de medewerkers van de gemeente. Dit element is de gemeente als rechtspersoon, een actor: een ander begrip en een ander type, dus geen koppeling (besluit 2026-10-04).'
+  onderbouwing: 'De GEMMA-rol Gemeente staat voor de verantwoordelijkheid die gemeenten hebben, en ordent als doelgroep de applicatieservices voor de medewerkers van de gemeente. Dit element is de gemeente als rechtspersoon, een actor: een ander begrip en een ander type, dus geen koppeling.'
 relaties:
 - soort: toewijzing
   naar: houder-van-de-begraafplaats

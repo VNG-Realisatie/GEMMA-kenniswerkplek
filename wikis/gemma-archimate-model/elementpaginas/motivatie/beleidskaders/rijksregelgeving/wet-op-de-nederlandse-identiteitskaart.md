@@ -89,7 +89,3 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-07: Opnemen als bron en beleidskader: grondslag van de dienst Identiteitskaart en, voor de identiteitskaart, van de aanvraag, uitreiking, vermissing en inhouding.

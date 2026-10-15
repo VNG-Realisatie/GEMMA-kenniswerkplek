@@ -103,11 +103,6 @@ synoniemen:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst klacht; wel het bedrijfsproces Behandelen klacht, dat de wiki koppelt aan het realiserende proces. Nieuw voor GEMMA.
-besluiten:
-- datum: '2026-10-12'
-  besluit: 'Dienst Klacht in Besluitvorming, gerealiseerd door het generieke bedrijfsproces Behandelen klacht, met het nieuwe bedrijfsobject Klaagschrift als kernobject (GGM-terugmelding hiaat) en de nieuwe rol Klager. Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Klachtenafhandeling zowel onder Juridische ondersteuning als onder Publieksdiensten, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
-  gevolg: verwerkt
-  stand: 'open: Functie-indeling naar domein (todo); herzien 2026-10-12: het kernobject heet Schriftelijke klacht, met Klaagschrift als synoniem (regel Bronvoorrang)'
 status: review
 beslist:
   uitkomst:

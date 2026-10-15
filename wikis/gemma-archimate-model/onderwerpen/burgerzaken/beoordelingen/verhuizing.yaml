@@ -84,7 +84,7 @@ kenmerken:
     - 2026-rvig-hup-intergemeentelijke-adreswijziging
   generiek:
     waarde: nee
-    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke GEMMA-gebeurtenis (besluit 2026-10-04).
+    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke GEMMA-gebeurtenis.
 definitie: Het gaan wonen van een persoon op een ander adres in Nederland.
 beschrijving:
 - Bij een verhuizing binnen of naar een gemeente doet de persoon aangifte van adreswijziging in de nieuwe gemeente (Utrecht Verhuizing doorgeven; HUP Intergemeentelijke adreswijziging).
@@ -104,7 +104,7 @@ relaties:
   - 2026-utrecht-burgerzaken-verhuizing-doorgeven
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: HUP inleiding; Utrecht inleiding; Wet BRP art. 2.39 lid 1
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

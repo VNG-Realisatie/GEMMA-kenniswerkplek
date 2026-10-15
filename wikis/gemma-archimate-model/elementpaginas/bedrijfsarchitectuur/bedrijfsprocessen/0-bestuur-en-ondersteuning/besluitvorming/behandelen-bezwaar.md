@@ -120,4 +120,4 @@ Match **sterk** met GEMMA-element *Behandelen bezwaar* (business-process). Hetze
 
 ### Besluiten redacteur
 
-- 2026-10-12: Generiek bedrijfsproces met pagina, gekoppeld aan het GEMMA-proces Behandelen bezwaar; het realiseert de UPL-dienst Bezwaar en heeft het bedrijfsobject Bezwaarschrift als kernobject. Beslisser en Belanghebbende worden eraan toegewezen. De adviescommissie (art. 7:13) staat in de beschrijving: het bestuursorgaan kan haar instellen.
+- 2026-10-12: De adviescommissie (Awb art. 7:13) is geen element: het bestuursorgaan kan haar instellen; zij staat in de beschrijving.

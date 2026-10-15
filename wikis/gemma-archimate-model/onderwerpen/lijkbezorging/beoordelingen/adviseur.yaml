@@ -91,10 +91,6 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: ketenpartners
-besluiten:
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: in de beschrijving; de export zet die als eigenschap op het GEMMA-element Adviseur.'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

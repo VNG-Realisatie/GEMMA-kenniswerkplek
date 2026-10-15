@@ -127,7 +127,3 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen beleidskader voor deze wet; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-07: Opnemen als beleidskader: grondslag van Bijhouden burgerlijke stand, de akten en de diensten van de burgerlijke stand; in scope alleen afstamming, naam, gezag, huwelijk, geregistreerd partnerschap en de akten (besluit 2026-10-06).

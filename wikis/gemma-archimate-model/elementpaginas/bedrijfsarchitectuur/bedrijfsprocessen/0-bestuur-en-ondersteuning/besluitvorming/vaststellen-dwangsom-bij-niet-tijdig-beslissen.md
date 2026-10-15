@@ -109,4 +109,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-12: Generiek bedrijfsproces met pagina, met Beschikking als kernobject (de vaststelling is een beschikking, art. 4:18); het realiseert de UPL-dienst Dwangsom bij niet tijdig beslissen. Beslisser en Belanghebbende worden eraan toegewezen; de ingebrekestelling start het proces en is geen eigen element.
+- 2026-10-12: De ingebrekestelling start het proces en is geen eigen element.

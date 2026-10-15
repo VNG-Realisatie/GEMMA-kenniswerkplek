@@ -170,10 +170,6 @@ object_van:
   datum: '2026-10-05'
 kernobject: stoffelijk-overschot
 afnemer: extern
-besluiten:
-- datum: '2026-10-05'
-  besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

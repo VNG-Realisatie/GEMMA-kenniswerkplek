@@ -95,7 +95,3 @@ GGM-terugmeldingen:
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen bedrijfsobject bezwaarschrift; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-12: Nieuw generiek bedrijfsobject, kernobject van Behandelen bezwaar; het GGM kent het niet (GGM-terugmelding hiaat).

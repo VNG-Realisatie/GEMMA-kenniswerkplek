@@ -88,7 +88,7 @@ kenmerken:
     - 2024-vng-model-participatieverordening
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: Geen deel van een groter proces, ook niet van het vaststellen van beleid; eigen aanleiding, plan en eindverslag (besluit 2026-10-15).
+    onderbouwing: Geen deel van een groter proces, ook niet van het vaststellen van beleid; eigen aanleiding, plan en eindverslag.
   klant_tot_klant:
     waarde: ja
     onderbouwing: Van het besluit dat inwonersparticipatie plaatsvindt tot het openbare eindverslag (var. 1 art. 2 lid 1, 5 lid 1).
@@ -184,9 +184,6 @@ object_van:
   wijziging: hernoemd
   datum: '2026-10-15'
 besluiten:
-- datum: '2026-10-15'
-  besluit: 'Eigen bedrijfsproces met Participatieplan als kernobject, geen deelproces van het vaststellen van beleid en geen bedrijfsinteractie: eigen aanleiding, plan en eindverslag van het bestuursorgaan.'
-  gevolg: verwerkt
 - datum: '2026-10-15'
   besluit: 'Heroverweging van het besluit over het eigen proces (fase 1, genomen op eerste indruk, met participatie in het sociaal domein in gedachten): levensloopproces met kernobject Participatieplan, één proces voor participatie bij beleid in elk domein (Gemeentewet art. 150 lid 1). Geen generiek deelproces van het vaststellen van beleid en geen bedrijfsinteractie. Zekerheid: logica; opnieuw toetsen als er een proces voor het vaststellen van beleid komt.'
   gevolg: verwerkt

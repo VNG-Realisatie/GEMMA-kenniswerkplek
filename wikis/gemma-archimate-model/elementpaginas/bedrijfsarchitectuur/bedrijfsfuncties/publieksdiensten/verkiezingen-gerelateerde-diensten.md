@@ -2,7 +2,7 @@
 id: verkiezingen-gerelateerde-diensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Verkiezingen gerelateerde diensten
 onderwerpen:
 - burgerzaken
@@ -29,7 +29,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verkiezingen-gerelateerde-diensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -45,11 +45,11 @@ GEMMA noemt als voorbeeld het inrichten van stemlokalen en het verstrekken van s
 
 #### [Burgerzaken](../../../../onderwerpen/burgerzaken/begrippen.md)
 
-Van deze functie valt alleen de gemeentelijke taak voor de kiezer in dit onderwerp: ze bedient Beheren stempassen en Registreren kiesgerechtigdheid en omvat de diensten Stempas ontvangen, Kiezerspas, Volmachtbewijs verkiezingen en Stemrecht (UPL nr. 397, 208, 453, 398). De organisatie van de verkiezing zelf (kandidaatstelling, stembureaus, stemming, uitslag) valt erbuiten (besluit 2026-10-06, Afbakening Burgerzaken).
+Van deze functie valt alleen de gemeentelijke taak voor de kiezer in dit onderwerp: ze bedient Beheren stempassen en Registreren kiesgerechtigdheid en omvat de diensten Stempas ontvangen, Kiezerspas, Volmachtbewijs verkiezingen en Stemrecht (UPL nr. 397, 208, 453, 398). De organisatie van de verkiezing zelf (kandidaatstelling, stembureaus, stemming, uitslag) valt erbuiten (afbakening Burgerzaken).
 
 ### Naamkeuze
 
-De naam is de GEMMA-naam, met de GEMMA-definitie (besluit 2026-10-04: bedienende functies met een exacte GEMMA-match houden de GEMMA-naam, precedent Exploiteren van begraafplaatsen en Burgerlijke stand diensten). Het signaal dat de naam een proces lijkt, is hier een vals alarm: Verkiezingen is een meervoudig zelfstandig naamwoord, geen werkwoord, en de naam is een zelfstandig naamwoord voor het gebied van gedrag.
+De naam is de GEMMA-naam, met de GEMMA-definitie. Het signaal dat de naam een proces lijkt, is hier een vals alarm: Verkiezingen is een meervoudig zelfstandig naamwoord, geen werkwoord, en de naam is een zelfstandig naamwoord voor het gebied van gedrag.
 
 ## Plaats in het model
 

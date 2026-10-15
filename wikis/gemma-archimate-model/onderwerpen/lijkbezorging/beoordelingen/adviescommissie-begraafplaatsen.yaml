@@ -73,11 +73,8 @@ toelichting: 'Geen element: de VNG-modelverordening beveelt de commissie alleen 
 onderwerpen:
 - lijkbezorging
 besluiten:
-- datum: '2026-10-01'
-  besluit: 'Geen element: alleen een aanbeveling in de bron.'
-  gevolg: afwijzen
 - datum: '2026-10-04'
-  besluit: 'Geen element: de commissie wordt in de VNG-modelverordening alleen voorgesteld (toelichting 2), dus geen soort partij bij elke gemeente. Vult het besluit van 2026-10-01 aan.'
+  besluit: 'Geen element: de commissie wordt in de VNG-modelverordening alleen voorgesteld (toelichting 2), dus geen soort partij bij elke gemeente.'
   gevolg: afwijzen
 beslist:
   uitkomst:

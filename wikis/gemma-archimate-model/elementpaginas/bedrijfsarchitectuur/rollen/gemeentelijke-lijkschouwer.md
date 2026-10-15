@@ -80,8 +80,3 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-05: Stoffelijk overschot in lopende tekst: in definitie en beschrijving; de naam blijft (vaste term).
-- 2026-10-10: De waarschuwing van de gemeentelijke lijkschouwer aan de ambtenaar van de burgerlijke stand bij een niet-natuurlijke dood (Wlb art. 10 lid 1) is geen relatie tussen de rollen, maar hoort bij de stroom van Schouwen stoffelijk overschot naar Verlenen verlof tot begraving of crematie: geeft de verklaring van overlijden door aan, of waarschuwt bij een niet-natuurlijke dood (kennismodel: een handeling tussen rollen loopt via een proces, stroom of gebeurtenis).

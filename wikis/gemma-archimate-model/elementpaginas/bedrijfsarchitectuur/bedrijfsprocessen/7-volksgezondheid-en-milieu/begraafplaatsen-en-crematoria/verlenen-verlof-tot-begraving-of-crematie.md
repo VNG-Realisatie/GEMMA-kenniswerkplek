@@ -115,6 +115,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-01: Afwijzen: geen eigen proces; het verlof blijft een specialisatie van Vergunning (precedent 2026-09-29). De ambtenaar van de burgerlijke stand hangt via de functie Lijkbezorging aan gedrag.
-- 2026-10-04: Deelproces van het ketenproces Bezorgen lijken; levert het verlof tot begraven. Herziet het besluit van 2026-10-01 (geen eigen proces).
-- 2026-10-05: Stoffelijk overschot in lopende tekst: in de definitie.
+- 2026-10-04: Eigen proces dat het verlof tot begraven levert, niet alleen een specialisatie van Vergunning. Herziet het besluit van 2026-10-01.

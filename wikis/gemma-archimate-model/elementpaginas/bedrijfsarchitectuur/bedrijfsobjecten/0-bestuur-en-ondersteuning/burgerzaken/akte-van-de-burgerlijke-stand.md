@@ -146,8 +146,3 @@ GGM-terugmeldingen:
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen bedrijfsobject Akte; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-07: Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12). *Stand: herzien door 2026-10-07: Akte van de burgerlijke stand opgenomen, Reisdocument kernobject*
-- 2026-10-07: Opnemen als gegevensobject zonder GGM-entiteit, kernobject van Bijhouden burgerlijke stand; GGM-terugmelding 12 (besluit 2026-10-07).

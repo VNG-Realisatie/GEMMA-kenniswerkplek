@@ -134,4 +134,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-07: Reisdocument is kernobject van het nieuwe bedrijfsproces Beheren reisdocumenten onder Verzorgen burgerzaken (geen ketenproces: de minister voert tegenover de houder geen eigen deel uit), met de deelprocessen voor aanvraag, aanvraag niet-ingezetene, uitreiking, vermissing, inhouding en vervallenverklaring; de documentsoorten zijn specialisaties zonder pagina met de wetsterm, de diensten houden de UPL-naam. *Stand: deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren reisdocumenten is levensloopproces*
+- 2026-10-07: Geen ketenproces: de minister voert tegenover de houder geen eigen deel uit. De documentsoorten zijn specialisaties zonder pagina met de wetsterm; de diensten houden de UPL-naam.

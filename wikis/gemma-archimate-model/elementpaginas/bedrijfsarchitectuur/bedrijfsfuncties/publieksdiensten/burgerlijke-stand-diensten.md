@@ -132,8 +132,3 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 Match **exact** met GEMMA-element *Burgerlijke stand diensten* (business-function). Zelfde begrip en zelfde definitie: de GEMMA-bedrijfsfunctie Burgerlijke stand diensten.
 
 > Het bijhouden van de burgerlijke staat van personen n.a.v. geboorte, overlijden, huwelijk en verhuizing
-
-### Besluiten redacteur
-
-- 2026-10-04: Opnemen als bedienende functie met exacte GEMMA-match, met de GEMMA-naam en -definitie.
-- 2026-10-07: Thuisonderwerp Burgerzaken (regel Thuishoren): de functie bedient Bijhouden burgerlijke stand en omvat de diensten van de burgerlijke stand; Lijkbezorging houdt haar tekst per onderwerp. Inhoudelijk eenduidig; dat de functie eerst in Lijkbezorging is beoordeeld, komt door de volgorde van inlezen en is geen argument. Het object in Archi blijft.

@@ -130,5 +130,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-04: Specialiseren zelf een GEMMA-proces: *Behandelen melding*, *Behandelen aanvraag product* en *Onderhouden*. Vervallen verklaren grafrecht niet naar *Opleggen sanctie*: het verval volgt uit de afspraak, niet uit handhaving. *Stand: geldt; Onderhouden graf vervallen 2026-10-08 (regel Wettelijke grondslag)*
-- 2026-10-04: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
+- 2026-10-04: Vervallen verklaren grafrecht specialiseert niet Opleggen sanctie: het verval volgt uit de afspraak, niet uit handhaving.

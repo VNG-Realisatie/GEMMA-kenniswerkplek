@@ -92,15 +92,8 @@ object_van:
 synoniemen:
 - naam: Lijk
   context: wet
-besluiten:
-- datum: '2026-10-05'
-  besluit: Naam Stoffelijk overschot, de term van de UPL; Lijk (wet, beheersverordening, VNG) wordt een synoniem.
-  gevolg: verwerkt
-- datum: '2026-10-08'
-  besluit: 'Eén levensloopproces per partij: Toestaan lijkbezorging (de gemeente als overheid) en Begraven en cremeren stoffelijk overschot (de houder) blijven allebei levensloopproces van Stoffelijk overschot. Afgewezen: één levensloopproces Bezorgen stoffelijk overschot met de tien bedrijfsprocessen, en Toestaan lijkbezorging als enige levensloopproces.'
-  gevolg: verwerkt
 naamkeuze:
-- Stoffelijk overschot is de term van de Uniforme Productenlijst (2025-vng-upl-producten-en-diensten-extern, bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk (2026-rvo-aangifte-en-akte-van-overlijden). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet (besluit 2026-10-05).
+- Stoffelijk overschot is de term van de Uniforme Productenlijst (2025-vng-upl-producten-en-diensten-extern, bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk (2026-rvo-aangifte-en-akte-van-overlijden). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet.
 status: review
 beslist:
   uitkomst:

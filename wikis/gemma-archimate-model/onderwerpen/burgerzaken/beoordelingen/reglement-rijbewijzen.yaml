@@ -26,7 +26,7 @@ kenmerken:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2, besluit 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2).'
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
     - 2025-vng-upl-producten-en-diensten-extern
@@ -134,10 +134,6 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
 regelgever: rijk
-besluiten:
-- datum: '2026-10-07'
-  besluit: 'Opnemen als beleidskader: grondslag van de rijbewijsdiensten (UPL 360, 361, 363) en de deelprocessen, onder meer de omwisseling van een buitenlands rijbewijs en de controle van de verklaring van geschiktheid.'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

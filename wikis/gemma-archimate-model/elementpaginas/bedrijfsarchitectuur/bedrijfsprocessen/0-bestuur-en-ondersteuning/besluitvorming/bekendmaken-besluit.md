@@ -116,7 +116,3 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent alleen smallere toepassingen: de procesbouwsteen Bekendmaken besluit vergunningaanvraag (id-f2fcbce2-f5ae-4f84-8b52-7c07fe8f3062) en het Deelproces Bekendmaken bij het omgevingsplan (id-d77cf7f1-2756-4b4a-8d17-ade11dbc9d6c). Nieuw voor GEMMA als generiek proces.
-
-### Besluiten redacteur
-
-- 2026-10-12: Generiek bedrijfsproces met pagina, met Besluit als kernobject; het realiseert de UPL-diensten Bekendmaking en Bekendmaking algemeen verbindend voorschrift. Beslisser wordt eraan toegewezen. Het gemeenteblad staat in de beschrijving.

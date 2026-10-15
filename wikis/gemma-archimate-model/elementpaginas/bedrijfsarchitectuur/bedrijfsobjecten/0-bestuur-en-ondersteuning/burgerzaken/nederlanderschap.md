@@ -138,4 +138,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-07: Naam Nederlanderschap blijft (wetsterm en term van het besluit van 2026-10-07), met Nederlandse nationaliteit als synoniem (beleid).
+- 2026-10-07: Naam Nederlanderschap, de wetsterm, met Nederlandse nationaliteit (beleid) als synoniem.

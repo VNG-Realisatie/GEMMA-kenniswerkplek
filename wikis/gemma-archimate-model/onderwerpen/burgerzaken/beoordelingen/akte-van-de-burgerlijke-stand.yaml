@@ -124,14 +124,6 @@ homoniemen:
   waar: UPL-lijst extern
   element: uittreksel-burgerlijke-stand
   naamkeuze: 'Deze pagina heet Akte van de burgerlijke stand: de akte zelf. De dienst heet Uittreksel burgerlijke stand, met de UPL-naam als synoniem.'
-besluiten:
-- datum: '2026-10-07'
-  besluit: Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12).
-  gevolg: verwerkt
-  stand: 'herzien door 2026-10-07: Akte van de burgerlijke stand opgenomen, Reisdocument kernobject'
-- datum: '2026-10-07'
-  besluit: Opnemen als gegevensobject zonder GGM-entiteit, kernobject van Bijhouden burgerlijke stand; GGM-terugmelding 12 (besluit 2026-10-07).
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

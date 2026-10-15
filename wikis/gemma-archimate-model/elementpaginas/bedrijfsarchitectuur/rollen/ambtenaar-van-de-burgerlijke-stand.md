@@ -107,7 +107,3 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-07: Thuisonderwerp Burgerzaken (regel Thuishoren): de ambtenaar maakt alle akten van de burgerlijke stand op en houdt de registers bij (BW 1 art. 16a, 18, 20); het verlof tot begraving of crematie staat onder de tekst per onderwerp van Lijkbezorging. Het object in Archi blijft.

@@ -67,11 +67,8 @@ toelichting: 'Geen element: de bronnen beschrijven alleen de mogelijkheid van ee
 onderwerpen:
 - lijkbezorging
 besluiten:
-- datum: '2026-10-01'
-  besluit: 'Geen element: de bronnen beschrijven alleen de mogelijkheid; genoemd bij Begraafplaats.'
-  gevolg: afwijzen
 - datum: '2026-10-04'
-  besluit: 'Geen element: de wet noemt alleen de mogelijkheid (Wlb art. 33), dus geen samenwerkingsverband bij elke gemeente. Vult het besluit van 2026-10-01 aan.'
+  besluit: 'Geen element: de wet noemt alleen de mogelijkheid (Wlb art. 33), dus geen samenwerkingsverband bij elke gemeente.'
   gevolg: afwijzen
 beslist:
   uitkomst:

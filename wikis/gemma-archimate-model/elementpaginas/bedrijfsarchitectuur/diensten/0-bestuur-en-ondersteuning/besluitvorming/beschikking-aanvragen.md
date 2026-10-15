@@ -46,7 +46,7 @@ Een belanghebbende kan het bestuursorgaan vragen een beschikking te geven: een b
 
 ### Naamkeuze
 
-Beschikking aanvragen: de dienst geformuleerd vanuit de afnemer, met de UPL-naam Beschikking als synoniem (precedent Rijbewijs aanvragen), zodat zij niet dezelfde naam draagt als het bedrijfsobject Beschikking (besluit 2026-10-12).
+Beschikking aanvragen: de dienst geformuleerd vanuit de afnemer, met de UPL-naam Beschikking als synoniem (precedent Rijbewijs aanvragen), zodat zij niet dezelfde naam draagt als het bedrijfsobject Beschikking.
 
 ### Homoniemen
 
@@ -110,4 +110,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-12: Generieke dienst Beschikking aanvragen, met de UPL-naam Beschikking als synoniem (geen homoniem van het bedrijfsobject), gerealiseerd door het generieke bedrijfsproces Behandelen aanvraag beschikking. De specialisatierelaties van de diensten en processen op aanvraag in de onderwerpen naar deze generieke elementen volgen later (todo). Geen plek in de Functie-indeling naar domein: welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen). *Stand: open: Functie-indeling naar domein en specialisaties (todo)*
+- 2026-10-12: De UPL-naam Beschikking is een synoniem van de dienst Beschikking aanvragen: zo is de dienst geen homoniem van het bedrijfsobject Beschikking.

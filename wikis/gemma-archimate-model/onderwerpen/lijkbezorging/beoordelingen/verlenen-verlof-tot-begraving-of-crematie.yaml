@@ -134,14 +134,8 @@ definitie: Het afgeven van het schriftelijk verlof waarmee een stoffelijk oversc
 beschrijving:
 - Geen begraving of crematie geschiedt zonder schriftelijk verlof van de ambtenaar van de burgerlijke stand, dat kosteloos wordt afgegeven (art. 11). Hij verleent het alleen als hij beschikt over een verklaring van overlijden van de behandelend arts of de gemeentelijke lijkschouwer, of over een verklaring van geen bezwaar van de officier van justitie (art. 12). De stukken worden bij de akte van overlijden gevoegd (art. 13). In de praktijk krijgt de uitvaartondernemer het verlof na de aangifte van overlijden (Ondernemersplein).
 besluiten:
-- datum: '2026-10-01'
-  besluit: 'Afwijzen: geen eigen proces; het verlof blijft een specialisatie van Vergunning (precedent 2026-09-29). De ambtenaar van de burgerlijke stand hangt via de functie Lijkbezorging aan gedrag.'
-  gevolg: afwijzen
 - datum: '2026-10-04'
-  besluit: Deelproces van het ketenproces Bezorgen lijken; levert het verlof tot begraven. Herziet het besluit van 2026-10-01 (geen eigen proces).
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: in de definitie.'
+  besluit: Eigen proces dat het verlof tot begraven levert, niet alleen een specialisatie van Vergunning. Herziet het besluit van 2026-10-01.
   gevolg: verwerkt
 relaties:
 - soort: toegang (registreren)

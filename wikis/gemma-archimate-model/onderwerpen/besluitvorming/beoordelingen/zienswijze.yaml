@@ -101,11 +101,6 @@ beleidsdomein: Besluitvorming
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst Zienswijze; de Deelservice Inspraakprocedure (Vaststellen omgevingsplan) is een interne deeldienst voor het omgevingsplan. Nieuw voor GEMMA.
-besluiten:
-- datum: '2026-10-11'
-  besluit: 'Geen plek in de Functie-indeling naar domein: GEMMA heeft in domein Bestuur geen functie die diensten realiseert, en welke elementtypen op welk niveau van de functiehiërarchie worden ingedeeld, moet eerst worden bepaald (todo, Indelingen). Tot dan blijft de waarschuwing hangt onder geen functie staan.'
-  gevolg: verwerkt
-  stand: 'open: Functie-indeling naar domein (todo)'
 status: review
 beslist:
   uitkomst:

@@ -119,8 +119,3 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-07: Van deelproces naar bedrijfsproces: het deel van de gemeente binnen Afgeven verklaring omtrent het gedrag, met kernobject Verklaring omtrent het gedrag zoals het ketenproces; het realiseert de dienst Verklaring omtrent gedrag aanvragen. Het deel van de minister blijft in de beschrijving van het ketenproces.
-- 2026-10-08: Bedrijfsproces onder het levensloopproces Afgeven verklaring omtrent het gedrag, in het orkestratiemodel: het deel dat de gemeente voor de minister uitvoert. Specialiseert het GEMMA-proces Leveren dienst aan derden en realiseert de dienst Verklaring omtrent gedrag aanvragen.

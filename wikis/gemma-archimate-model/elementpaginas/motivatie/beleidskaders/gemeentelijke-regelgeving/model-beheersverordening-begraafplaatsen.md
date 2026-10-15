@@ -99,9 +99,3 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-01: Opnemen als beleidskader, met de versie 2010 en de tegenspraak over de termijn in de beschrijving; een actuele versie later opnemen als die openbaar wordt.
-- 2026-10-08: Is grondslag voor alleen bij UPL-producten zonder landelijke wettelijke grondslag (Gedenkteken plaatsingsvergunning, Grafonderhoud). De relaties naar Verlenen grafrecht, Vervallen verklaren grafrecht, Ruimen graf, Graf aanvragen en Grafuitgifte heten 'werkt uit voor': daar is de Wet op de lijkbezorging de grondslag en regelt de verordening de uitvoering (regel Wettelijke grondslag). *Stand: herzien 2026-10-11: een VNG-modelverordening is nooit grondslag; ook de relaties naar Gedenkteken plaatsingsvergunning en Grafonderhoud heten werkt uit voor; de Model beheersverordening blijft beleidskader (besluit 2026-10-11)*
-- 2026-10-11: Blijft beleidskader in de groep VNG-modelverordening, als gemeenschappelijke vorm van de gemeentelijke uitwerking: een VNG-modelverordening is een modelverordening van de VNG voor alle gemeenten, een bron zoals de regeling van een gemeente, maar nooit grondslag (regel Bronvoorrang). Het kenmerk is grondslag voor blijft ja en telt de relaties werkt uit voor.

@@ -109,8 +109,3 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-01: Opnemen als beleidskader.
-- 2026-10-05: Stoffelijk overschot in lopende tekst: in de definitie; in de beschrijving blijft 'bepaalt wat een lijk is' (de wetsterm zelf).

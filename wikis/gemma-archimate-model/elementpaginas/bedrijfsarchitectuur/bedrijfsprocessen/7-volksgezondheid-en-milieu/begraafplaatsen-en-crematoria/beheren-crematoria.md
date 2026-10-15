@@ -98,7 +98,3 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor het beheer van crematoria; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-04: Nieuw bedrijfsproces met kernobject Crematorium, met het deelproces Verlenen vergunning bijzonder crematorium.

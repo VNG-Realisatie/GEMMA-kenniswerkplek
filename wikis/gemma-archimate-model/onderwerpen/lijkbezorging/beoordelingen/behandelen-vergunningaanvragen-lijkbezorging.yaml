@@ -45,7 +45,7 @@ kenmerken:
     onderbouwing: Wordt niet per geval doorlopen; een groepering van processen.
   groepeert_processen:
     waarde: ja
-    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing (besluit 2026-10-04).
+    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gegroepeerd_gedrag: nee
@@ -131,10 +131,6 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: Besluit op de lijkbezorging art. 11
-besluiten:
-- datum: '2026-10-04'
-  besluit: Cluster naar soort werk met vijf deelprocessen, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

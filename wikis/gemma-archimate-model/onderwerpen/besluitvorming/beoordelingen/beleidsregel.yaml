@@ -90,7 +90,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen bedrijfsobject voor dit begrip (alleen technologie, zoals Policy editor); nieuw voor GEMMA.
 besluiten:
 - datum: '2026-10-12'
-  besluit: 'Eigen generiek bedrijfsobject naast Regeling en Beleidsnota: een besluit van algemene strekking dat alleen het bestuursorgaan bindt (Awb art. 1:3 lid 4, 4:84), geen algemeen verbindend voorschrift en geen beleidsnota. Beslisser stelt haar vast (art. 4:81). Het proces dat haar vaststelt komt later; tot dan het signaal wordt bewerkt zonder toegang, zoals bij Regeling.'
+  besluit: 'Eigen generiek bedrijfsobject naast Regeling en Beleidsnota: een besluit van algemene strekking dat alleen het bestuursorgaan bindt (Awb art. 1:3 lid 4, 4:84), geen algemeen verbindend voorschrift en geen beleidsnota.'
   gevolg: verwerkt
 status: review
 beslist:

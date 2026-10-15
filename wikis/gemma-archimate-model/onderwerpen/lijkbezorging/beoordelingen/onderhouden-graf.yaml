@@ -158,13 +158,6 @@ gemma_generiek:
   id: id-1a739ba4-08d4-4b65-84d8-4ea89499b4ca
   onderbouwing: Het jaarlijkse onderhoud van grafbedekking en beplanting op de gemeentelijke begraafplaats (Groningen art. 23; VNG-modelverordening art. 20).
 besluiten:
-- datum: '2026-10-04'
-  besluit: 'Specialiseren zelf een GEMMA-proces: *Behandelen melding*, *Behandelen aanvraag product* en *Onderhouden*. Vervallen verklaren grafrecht niet naar *Opleggen sanctie*: het verval volgt uit de afspraak, niet uit handhaving.'
-  gevolg: verwerkt
-  stand: geldt; Onderhouden graf vervallen 2026-10-08 (regel Wettelijke grondslag)
-- datum: '2026-10-04'
-  besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
-  gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Vervalt (regel Wettelijke grondslag): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Grafonderhoud (UPL nr. 163), met grondslag in de Model beheersverordening begraafplaatsen art. 20. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen

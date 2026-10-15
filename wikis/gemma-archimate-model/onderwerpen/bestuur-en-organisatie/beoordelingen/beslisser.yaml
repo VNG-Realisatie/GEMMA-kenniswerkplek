@@ -84,27 +84,11 @@ kenmerken:
     onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element.
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 beschrijving:
-- 'Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit 2026-10-01).'
+- 'Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces.'
 - 'De Algemene wet bestuursrecht noemt dit het bestuursorgaan: een orgaan van een publiekrechtelijke rechtspersoon, of een ander persoon of college met openbaar gezag (Awb art. 1:1). Een besluit is een beslissing van een bestuursorgaan (art. 1:3).'
 synoniemen:
 - naam: Bestuursorgaan
   context: wet
-besluiten:
-- datum: '2026-10-01'
-  besluit: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
-  gevolg: verwerkt
-- datum: '2026-10-01'
-  besluit: Burgemeester, college en raad hangen via de rol Beslisser (GEMMA) aan gedrag; het bevoegde orgaan per proces staat in de beschrijving van het proces.
-  gevolg: verwerkt
-- datum: '2026-10-06'
-  besluit: 'Generiek: de GEMMA-rol Beslisser geldt in elk onderwerp en verhuist naar Algemeen (`algemeen` eerste in `onderwerpen`). Het kenmerk *generiek* blijft nee: Beslisser is zelf de generieke GEMMA-rol, geen variant daarvan. Belanghebbende hoort ook bij Algemeen; die beoordeling volgt (nog een verwijzing).'
-  gevolg: verwerkt
-- datum: '2026-10-10'
-  besluit: Thuis in Bestuur en organisatie, bij de organen die de rol vervullen (regel Thuishoren).
-  gevolg: verwerkt
-- datum: '2026-10-12'
-  besluit: Bestuursorgaan (Awb art. 1:1) is een synoniem met context wet; Beslisser wordt toegewezen aan Uitvoeren uniforme openbare voorbereidingsprocedure en gebruikt in Besluitvorming.
-  gevolg: verwerkt
 gemma:
   id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
   sterkte: sterk

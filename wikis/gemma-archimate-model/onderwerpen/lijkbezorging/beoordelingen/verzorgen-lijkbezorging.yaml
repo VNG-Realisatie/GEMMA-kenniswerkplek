@@ -45,12 +45,12 @@ kenmerken:
   per_keer_doorlopen: nee
   groepeert_processen:
     waarde: ja
-    onderbouwing: Groepeert de processen rond de gemeentelijke taak lijkbezorging en wordt niet per geval doorlopen (besluit 2026-10-04).
+    onderbouwing: Groepeert de processen rond de gemeentelijke taak lijkbezorging en wordt niet per geval doorlopen.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gegroepeerd_gedrag:
     waarde: nee
-    onderbouwing: 'Geen functie meer: de taak groepeert processen (besluit 2026-10-04).'
+    onderbouwing: 'Geen functie meer: de taak groepeert processen.'
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
@@ -86,25 +86,12 @@ beschrijving:
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 besluiten:
-- datum: '2026-09-30'
-  besluit: '*Herzien op 2026-10-04.* Overkoepelende bedrijfsfunctie voor de gemeentelijke taken rond de lijkbezorging.'
-  gevolg: verwerkt
-  stand: herzien door 2026-10-04 (Verzorgen lijkbezorging), vervallen 2026-10-08
-- datum: '2026-09-30'
-  besluit: Overkoepelende bedrijfsfunctie voor de gemeentelijke taken rond de lijkbezorging.
-  gevolg: verwerkt
-- datum: '2026-10-04'
-  besluit: De functie wordt de taak Verzorgen lijkbezorging, een procescluster boven Bezorgen lijken, Beheren grafrechten en Beheren graven. De partiële GEMMA-match met Exploiteren van begraafplaatsen vervalt; die GEMMA-functie wordt een eigen element dat de processen bedient.
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: in definitie en beschrijving, met het kernobject Stoffelijk overschot.'
-  gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Vervalt: de taak is geen procesniveau meer (besluit 2026-10-08, procesniveaus volgens GEMMA Online, Proceshiërarchie). Boven de levensloopprocessen staat het beleidsdomein Begraafplaatsen en crematoria; de beschrijving staat letterlijk, zonder de zin over de taak als groepering, in het register van beleidsdomeinen. Het object in Archi vervalt; een typewijziging naar groepering kan niet (regel Objectbehoud).'
   gevolg: afwijzen
 gemma:
   sterkte: geen
-  onderbouwing: Het GEMMA-model kent geen taak voor de lijkbezorging. De partiële match met de functie Exploiteren van begraafplaatsen vervalt; die functie is een eigen element dat de processen bedient (besluit 2026-10-04).
+  onderbouwing: Het GEMMA-model kent geen taak voor de lijkbezorging. De partiële match met de functie Exploiteren van begraafplaatsen vervalt; die functie is een eigen element dat de processen bedient.
 relaties:
 - soort: aggregatie
   naar: bezorgen-stoffelijk-overschot

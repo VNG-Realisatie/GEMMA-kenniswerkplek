@@ -96,13 +96,6 @@ per_onderwerp:
 synoniemen:
 - naam: Gemeentelijke gezondheidsdienst
   context: wet
-besluiten:
-- datum: '2026-09-30'
-  besluit: 'Actor, op grond van het precedent GGD: mede-eigenaar en opdrachtgever via de gemeenschappelijke regeling.'
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.'
-  gevolg: verwerkt
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.

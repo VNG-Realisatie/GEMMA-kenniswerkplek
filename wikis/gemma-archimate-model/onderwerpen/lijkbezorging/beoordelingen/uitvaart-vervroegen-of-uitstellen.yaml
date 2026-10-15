@@ -66,7 +66,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: 'Het bedrijfsproces Stellen andere termijn: de burgemeester stelt de andere termijn (art. 17; besluit 2026-10-04).'
+    onderbouwing: 'Het bedrijfsproces Stellen andere termijn: de burgemeester stelt de andere termijn (art. 17).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   geautomatiseerd_verwerkt:
@@ -91,13 +91,6 @@ beschrijving:
 synoniemen:
 - naam: Andere termijn
   context: wet
-besluiten:
-- datum: '2026-10-01'
-  besluit: Dienst, gerealiseerd door de functie Lijkbezorging; geen eigen proces voor het stellen van een andere termijn.
-  gevolg: verwerkt
-- datum: '2026-10-04'
-  besluit: Gerealiseerd door het nieuwe deelproces Stellen andere termijn; herziet het besluit van 2026-10-01 (gerealiseerd door de functie Lijkbezorging).
-  gevolg: verwerkt
 relaties:
 - soort: bediening
   naar: degene-die-in-de-lijkbezorging-voorziet

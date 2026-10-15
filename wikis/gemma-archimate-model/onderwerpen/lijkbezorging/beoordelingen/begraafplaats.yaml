@@ -41,7 +41,7 @@ kenmerken:
   toegangspunt: nee
   plaats:
     waarde: nee
-    onderbouwing: Beoordeeld als gemeentelijke voorziening die wordt aangelegd, beheerd, in gebruik genomen en gesloten, niet als fysieke plaats (besluit 2026-09-30).
+    onderbouwing: Beoordeeld als gemeentelijke voorziening die wordt aangelegd, beheerd, in gebruik genomen en gesloten, niet als fysieke plaats.
   aanbod_als_geheel: nee
   regeling_als_geheel: nee
   onderscheidbare_exemplaren:
@@ -87,7 +87,7 @@ taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Terrein waar stoffelijke overschotten worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
 beschrijving:
-- Elke gemeente heeft ten minste één gemeentelijke begraafplaats, voor zich of samen met andere gemeenten (art. 33). Daarnaast bestaan bijzondere begraafplaatsen van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 24, 37). De gemeente beslist over grond voor en ingebruikname van bijzondere begraafplaatsen en kan begraafplaatsen sluiten (art. 40, 41, 43, 44). Op de begraafplaats liggen graven, urnenmuren en verstrooiingsplaatsen (Groningen art. 1). Een begraafplaats is een fysieke plaats, maar wordt hier als gemeentelijke voorziening beschreven (besluit 2026-09-30).
+- Elke gemeente heeft ten minste één gemeentelijke begraafplaats, voor zich of samen met andere gemeenten (art. 33). Daarnaast bestaan bijzondere begraafplaatsen van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 24, 37). De gemeente beslist over grond voor en ingebruikname van bijzondere begraafplaatsen en kan begraafplaatsen sluiten (art. 40, 41, 43, 44). Op de begraafplaats liggen graven, urnenmuren en verstrooiingsplaatsen (Groningen art. 1). Een begraafplaats is een fysieke plaats, maar wordt hier als gemeentelijke voorziening beschreven.
 ggm:
   sterkte: geen
   onderbouwing: 'Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kandidaten: geen naamgenoten of treffers).'
@@ -104,13 +104,6 @@ specialisaties:
 besluiten:
 - datum: '2026-09-30'
   besluit: 'Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.'
-  gevolg: verwerkt
-- datum: '2026-10-04'
-  besluit: Kernobject van het nieuwe bedrijfsproces Beheren begraafplaatsen, met de nieuwe deelprocessen Verlenen toestemming bijzondere begraafplaats (Wlb art. 40–41) en Sluiten begraafplaats (art. 43–44).
-  gevolg: verwerkt
-  stand: 'geldt; procesniveaus herzien 2026-10-08: Beheren begraafplaatsen is levensloopproces'
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie.'
   gevolg: verwerkt
 relaties:
 - soort: aggregatie

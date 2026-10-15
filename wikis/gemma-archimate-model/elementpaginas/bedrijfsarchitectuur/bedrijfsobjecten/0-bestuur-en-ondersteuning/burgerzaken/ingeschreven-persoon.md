@@ -247,4 +247,4 @@ Match **exact** met GEMMA-element *IngeschrevenPersoon* (business-object). GEMMA
 
 ### Besluiten redacteur
 
-- 2026-10-07: Thuisonderwerp Burgerzaken, kenmerk generiek nee: de persoon ontstaat en verandert in de bijhouding van de BRP (regel Thuishoren); geen abstract type met domeinspecialisaties zoals Besluit, maar één concreet object dat andere onderwerpen met relaties gebruiken.
+- 2026-10-07: Kenmerk generiek nee: één concreet object dat andere onderwerpen met relaties gebruiken, geen abstract type met domeinspecialisaties zoals Besluit.

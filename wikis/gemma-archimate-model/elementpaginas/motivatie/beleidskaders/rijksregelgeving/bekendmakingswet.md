@@ -82,7 +82,3 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-12: Bron en beleidskader in Besluitvorming, grondslag voor de UPL-dienst Bekendmaking algemeen verbindend voorschrift (nr. 48).

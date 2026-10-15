@@ -33,7 +33,7 @@ kenmerken:
   toegangspunt: nee
   plaats:
     waarde: nee
-    onderbouwing: Beoordeeld als voorziening die wordt gevestigd en in werking gehouden, niet als fysieke plaats (besluit 2026-09-30).
+    onderbouwing: Beoordeeld als voorziening die wordt gevestigd en in werking gehouden, niet als fysieke plaats.
   aanbod_als_geheel: nee
   regeling_als_geheel: nee
   onderscheidbare_exemplaren:
@@ -90,17 +90,6 @@ specialisaties:
   omschrijving: Crematorium van de gemeente; vestiging na openbare kennisgeving (art. 51, 54, 56). Geen eigen pagina.
 - naam: Bijzonder crematorium
   omschrijving: Crematorium van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52). Geen eigen pagina.
-besluiten:
-- datum: '2026-09-30'
-  besluit: 'Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.'
-  gevolg: verwerkt
-- datum: '2026-10-04'
-  besluit: Kernobject van het nieuwe bedrijfsproces Beheren crematoria, met het nieuwe deelproces Verlenen vergunning bijzonder crematorium (Wlb art. 53–55).
-  gevolg: verwerkt
-  stand: 'geldt; procesniveaus herzien 2026-10-08: Beheren crematoria is levensloopproces'
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie.'
-  gevolg: verwerkt
 onderwerpen:
 - lijkbezorging
 status: review

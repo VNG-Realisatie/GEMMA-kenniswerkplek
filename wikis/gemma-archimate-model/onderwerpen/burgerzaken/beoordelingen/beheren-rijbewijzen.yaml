@@ -28,7 +28,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het kernobject Rijbewijs is van dit onderwerp (UPL taakveld 0.2, besluit 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: het kernobject Rijbewijs is van dit onderwerp (UPL taakveld 0.2).'
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
     - 2025-vng-upl-producten-en-diensten-extern

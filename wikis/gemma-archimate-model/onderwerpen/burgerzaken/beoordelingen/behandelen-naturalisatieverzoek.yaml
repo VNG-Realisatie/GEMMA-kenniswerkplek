@@ -183,10 +183,6 @@ relaties:
 gemma_generiek:
   id: id-874c14bc-24ec-409a-9d68-56d7c4f18eb7
   onderbouwing: 'De burgemeester ontvangt en onderzoekt het verzoek en adviseert de minister, die het besluit voordraagt (Rijkswet art. 7; Besluit art. 31-38): een deel van de naturalisatie dat de gemeente uitvoert voor de minister, zoals GEMMA Leveren dienst aan derden beschrijft (''een (deel)proces dat aan de gemeente is uitbesteed''); orkestratie (IK 27).'
-besluiten:
-- datum: '2026-10-08'
-  besluit: 'Bedrijfsproces onder het levensloopproces Beheren Nederlanderschap; specialiseert het GEMMA-proces Leveren dienst aan derden (orkestratie: de gemeente voert het uit voor de minister).'
-  gevolg: verwerkt
 deelprocessen:
 - naam: Verzoek innemen
   omschrijving: De verzoeker dient het verzoek in persoon in en betaalt het naturalisatiegeld.

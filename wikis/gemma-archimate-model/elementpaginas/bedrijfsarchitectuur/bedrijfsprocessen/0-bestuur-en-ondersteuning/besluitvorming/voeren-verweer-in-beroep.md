@@ -119,4 +119,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-12: Generiek bedrijfsproces met pagina: het deel van de gemeente als partij in een beroep, met Besluit als kernobject; het realiseert de UPL-dienst Beroep. Beslisser en Belanghebbende worden eraan toegewezen; de bestuursrechter staat in de beschrijving, niet als element.
+- 2026-10-12: De bestuursrechter is geen element: de gemeente is partij in het beroep, de rechter staat in de beschrijving.

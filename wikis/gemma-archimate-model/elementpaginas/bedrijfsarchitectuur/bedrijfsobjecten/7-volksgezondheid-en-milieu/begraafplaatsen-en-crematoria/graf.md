@@ -121,8 +121,3 @@ GGM-terugmeldingen:
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-09-30: Opname akkoord als gegevensobject zonder GGM-entiteit (GGM-terugmelding 3).
-- 2026-10-05: Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie en in de zin over het register (die beschrijft de inhoud, niet de naam).

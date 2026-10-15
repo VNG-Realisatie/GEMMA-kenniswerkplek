@@ -47,7 +47,7 @@ De rechthebbende bepaalt wie in het particulier graf wordt begraven (art. 23 lid
 
 ### Naamkeuze
 
-Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, art. 23, 28), Rechthebbende grafrecht. Gekozen is Rechthebbende op het graf (besluit 2026-09-30), omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief: iemand die rechten heeft op een goed).
+Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, art. 23, 28), Rechthebbende grafrecht. Gekozen is Rechthebbende op het graf, omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief: iemand die rechten heeft op een goed).
 
 ### Homoniemen
 
@@ -119,7 +119,3 @@ GGM-terugmeldingen:
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-09-30: Naam Rechthebbende op het graf, niet Rechthebbende of Rechthebbende grafrecht, omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief).

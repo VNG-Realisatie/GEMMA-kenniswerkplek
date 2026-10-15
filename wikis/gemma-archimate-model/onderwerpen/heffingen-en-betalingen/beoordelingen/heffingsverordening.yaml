@@ -76,7 +76,7 @@ kenmerken:
     - 2024-rijk-gemeentewet-wettekst
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Specialisatie van Regeling met eigen gegevens (belastingplichtige, belastbaar feit, tarief, art. 217); het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten (besluit 2026-09-30).
+    onderbouwing: Specialisatie van Regeling met eigen gegevens (belastingplichtige, belastbaar feit, tarief, art. 217); het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten.
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
   generiek:
@@ -107,13 +107,6 @@ specialisaties:
 - naam: Verordening lijkbezorgingsrechten
   omschrijving: Verordening die de retributies en vergoedingen voor begraafplaats en crematorium regelt (VNG retributies). Geen eigen pagina.
 besluiten:
-- datum: '2026-09-30'
-  besluit: Het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten.
-  gevolg: verwerkt
-- datum: '2026-10-06'
-  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
-  gevolg: verwerkt
-  stand: geldt; Belanghebbende open (todo)
 - datum: '2026-10-10'
   besluit: Het proces dat de verordening raadpleegt (het heffen van lijkbezorgingsrechten) komt bij het onderwerp Heffingen en betalingen; tot dan blijft het kenmerk wordt bewerkt zonder toegang, en blijft de relatie *regelt het recht voor* naar Grafonderhoud staan, buiten het kennismodel en buiten de export.
   gevolg: verwerkt

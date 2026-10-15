@@ -28,7 +28,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het kernobject Verklaring omtrent het gedrag is van dit onderwerp (UPL taakveld 0.2, besluit 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: het kernobject Verklaring omtrent het gedrag is van dit onderwerp (UPL taakveld 0.2).'
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2025-vng-upl-producten-en-diensten-extern
@@ -124,7 +124,7 @@ definitie: Het ontvangen en onderzoeken van een aanvraag voor een verklaring omt
 beschrijving:
 - In het Europese deel van Nederland ontvangt de burgemeester de aanvraag van een natuurlijk persoon die als ingezetene in zijn gemeente staat, onderzoekt hij de volledigheid van de gegevens, verschaft hij zich zekerheid over de identiteit en zendt hij de aanvraag terstond door aan de minister; de gemeente kan een vergoeding verlangen en is de minister een vergoeding verschuldigd (Wet justitiële en strafvorderlijke gegevens art. 30, 39).
 - 'Het is een keten in het orkestratiemodel: de minister van Justitie en Veiligheid, in de praktijk Justis, onderzoekt de justitiële gegevens en politiegegevens, neemt de aanvraag zo nodig niet in behandeling, weigert of geeft af, en beslist binnen vier weken (art. 34 tot en met 37; Utrecht). Een aanvraag van een rechtspersoon, van wie niet als inwoner in de BRP staat ingeschreven of die een werkgever rechtstreeks bij Justis doet, loopt buiten de gemeente om (art. 30 lid 1, 31; Utrecht).'
-- Het deel van de gemeente is het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag; het deel van de minister staat alleen in deze beschrijving (besluit 2026-10-07).
+- Het deel van de gemeente is het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag; het deel van de minister staat alleen in deze beschrijving.
 naamkeuze:
 - 'Infinitief met object in GEMMA-volgorde, naar de afgifte in de wet (art. 28, 37): het proces omvat de levensloop van de verklaring waarbij gemeente en minister handelen, van aanvraag tot afgifte of weigering. Beheren is niet gekozen: de verklaring wordt niet bijgehouden en heeft geen latere gebeurtenissen.'
 taakveld: 0 Bestuur en Ondersteuning
@@ -158,12 +158,6 @@ relaties:
   vindplaats: art. 30, 39
 vragen: []
 besluiten:
-- datum: '2026-10-07'
-  besluit: Ketenproces met het Rijk als Ketenpartner (de minister beslist, de gemeente handelt de aanvraag af en regelt de rest met de ketenpartner), zoals Beheren Nederlanderschap; geen GGM-terugmelding hiaat voor de VOG.
-  gevolg: verwerkt
-- datum: '2026-10-07'
-  besluit: Aggregeert het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag (het deel van de gemeente), dat van deelproces bedrijfsproces wordt.
-  gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Orkestratie (IK 27): de minister is verantwoordelijk voor de verklaring, de gemeente voert de ontvangst en het onderzoek van de aanvraag voor hem uit (Wet justitiële en strafvorderlijke gegevens art. 30, 35-37). Geen bedrijfsinteractie; blijft het levensloopproces van Verklaring omtrent het gedrag, met het deel van de minister in de beschrijving, en aggregeert het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag.'
   gevolg: verwerkt

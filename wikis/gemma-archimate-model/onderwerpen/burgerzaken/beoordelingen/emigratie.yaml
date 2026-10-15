@@ -77,7 +77,7 @@ kenmerken:
     - 2026-rvig-hup-emigratie
   generiek:
     waarde: nee
-    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke GEMMA-gebeurtenis (besluit 2026-10-04).
+    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke GEMMA-gebeurtenis.
 definitie: Het vertrek van een ingezetene om ten minste acht maanden van een jaar in het buitenland te wonen.
 beschrijving:
 - Wie in een jaar acht maanden of langer in het buitenland gaat wonen, emigreert; ook een verhuizing naar het Caribisch deel van het Koninkrijk geldt als emigratie (Utrecht Emigratie doorgeven; HUP Emigratie).
@@ -97,7 +97,7 @@ relaties:
   - 2026-utrecht-burgerzaken-emigratie-doorgeven
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: inleiding; Wet BRP art. 2.43 lid 1
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

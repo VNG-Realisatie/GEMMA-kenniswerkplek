@@ -103,9 +103,8 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst bekendmaking; alleen de procesbouwsteen Bekendmaken besluit vergunningaanvraag en de functie Lokale bekendmakingen publicatie. Nieuw voor GEMMA.
 besluiten:
 - datum: '2026-10-12'
-  besluit: 'Dienst Bekendmaking, gerealiseerd door het generieke bedrijfsproces Bekendmaken besluit, dat ook de dienst Bekendmaking algemeen verbindend voorschrift realiseert; de Bekendmakingswet is bron. Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding). Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Lokale bekendmakingen publicatie onder Openbare informering (Niet domeingebonden), en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
+  besluit: 'Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding).'
   gevolg: verwerkt
-  stand: 'open: Functie-indeling naar domein (todo)'
 status: review
 beslist:
   uitkomst:

@@ -65,7 +65,7 @@ Verantwoordelijkheid voor het nemen van het besluit in een proces.
 
 ### Beschrijving
 
-Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces (besluit 2026-10-01).
+Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces.
 
 De Algemene wet bestuursrecht noemt dit het bestuursorgaan: een orgaan van een publiekrechtelijke rechtspersoon, of een ander persoon of college met openbaar gezag (Awb art. 1:1). Een besluit is een beslissing van een bestuursorgaan (art. 1:3).
 
@@ -209,11 +209,3 @@ Match **sterk** met GEMMA-element *Beslisser* (business-role). GEMMA-rol Besliss
 GEMMA-terugmeldingen:
 
 - [Nummer 4](../../../modellen/gemma/terugmeldingen/gemma-team.md) (definitie, open): **GEMMA:** de rollen Ketenpartner, Adviseur en Beslisser in de procesarchitectuur hebben geen definitie ([2026-vng-gemma-2026-10-02](../../../modellen/gemma/bronduidingen/model/2026-vng-gemma-2026-10-02.md)). **Bevinding:** de wiki heeft deze drie rollen aan GEMMA gekoppeld en gebruikt ze in lijkbezorging en burgerzaken. De import vult dus de definities in. Via Beslisser hangen burgemeester, college en raad aan de processen; welk orgaan beslist, staat in de beschrijving van het proces. De definitie van Ketenpartner spreekt van een andere organisatie, terwijl in de wiki ook personen de rol vervullen, zoals de behandelende arts en de officier van justitie; de wiki kan die definitie nog verbreden. **Voorstel:** controleer de definities bij de import: Ketenpartner: verantwoordelijkheid van een andere organisatie voor haar deel van een keten die zij met de gemeente uitvoert; Adviseur: verantwoordelijkheid voor het geven van advies aan wie een besluit neemt; Beslisser: verantwoordelijkheid voor het nemen van het besluit in een proces.
-
-### Besluiten redacteur
-
-- 2026-10-01: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
-- 2026-10-01: Burgemeester, college en raad hangen via de rol Beslisser (GEMMA) aan gedrag; het bevoegde orgaan per proces staat in de beschrijving van het proces.
-- 2026-10-06: Generiek: de GEMMA-rol Beslisser geldt in elk onderwerp en verhuist naar Algemeen (`algemeen` eerste in `onderwerpen`). Het kenmerk *generiek* blijft nee: Beslisser is zelf de generieke GEMMA-rol, geen variant daarvan. Belanghebbende hoort ook bij Algemeen; die beoordeling volgt (nog een verwijzing).
-- 2026-10-10: Thuis in Bestuur en organisatie, bij de organen die de rol vervullen (regel Thuishoren).
-- 2026-10-12: Bestuursorgaan (Awb art. 1:1) is een synoniem met context wet; Beslisser wordt toegewezen aan Uitvoeren uniforme openbare voorbereidingsprocedure en gebruikt in Besluitvorming.

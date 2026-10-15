@@ -20,7 +20,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Bestaat zelfstandig als het deel van de gemeente als overheid in de ketensamenwerking Bezorgen stoffelijk overschot (besluit 2026-10-07).
+    onderbouwing: Bestaat zelfstandig als het deel van de gemeente als overheid in de ketensamenwerking Bezorgen stoffelijk overschot.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   betekenis_in_onderwerp:
@@ -85,7 +85,7 @@ kenmerken:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: 'Een eigen levensloopproces: het deel van de gemeente als overheid in de levensloop van het stoffelijk overschot, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces (besluit 2026-10-08).'
+    onderbouwing: 'Een eigen levensloopproces: het deel van de gemeente als overheid in de levensloop van het stoffelijk overschot, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces.'
   klant_tot_klant:
     waarde: nee
     onderbouwing: 'Niet van toepassing: levensloopproces.'
@@ -126,7 +126,7 @@ beschrijving:
 - 'Geen begraving, crematie of ontleding zonder schriftelijk verlof: de ambtenaar van de burgerlijke stand verleent verlof tot begraving of crematie als hij beschikt over een verklaring van overlijden van de behandelend arts of de gemeentelijke lijkschouwer, of over een verklaring van geen bezwaar van de officier van justitie; de burgemeester verleent verlof tot ontleding (Wet op de lijkbezorging art. 3, 4, 11, 12, 68). De burgemeester kan een andere termijn stellen, geeft het laissez-passer af voor vervoer naar het buitenland, treft maatregelen bij een besmet stoffelijk overschot en verleent vergunning tot opgraving; het college staat asverstrooiing toe (art. 17, 22a, 29; Besluit op de lijkbezorging art. 11; APV Groningen art. 5:27).'
 - Het is het deel van de gemeente als overheid in de ketensamenwerking Bezorgen stoffelijk overschot; het begraven en cremeren zelf is het deel van de houder van de begraafplaats of het crematorium. De schouwing door de behandelend arts valt buiten het gemeentelijk perspectief.
 naamkeuze:
-- 'Infinitief met object in GEMMA-volgorde: de kern zijn de verloven, vergunningen en toestemmingen; de schouwing is de voorwaarde voor het verlof (art. 12) en de maatregel stuurt de bezorging bij (art. 22a). Toezien op lijkbezorging is overwogen, maar kan verward worden met toezicht en handhaving (besluit 2026-10-07).'
+- 'Infinitief met object in GEMMA-volgorde: de kern zijn de verloven, vergunningen en toestemmingen; de schouwing is de voorwaarde voor het verlof (art. 12) en de maatregel stuurt de bezorging bij (art. 22a). Toezien op lijkbezorging is overwogen, maar kan verward worden met toezicht en handhaving.'
 kernobject: stoffelijk-overschot
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
@@ -208,17 +208,7 @@ relaties:
 vragen: []
 besluiten:
 - datum: '2026-10-07'
-  besluit: 'Bezorgen stoffelijk overschot per partij in de keten, met de gemeente in de hoedanigheid waarin ze optreedt: Toestaan lijkbezorging (de gemeente als overheid: Schouwen, Verlenen verlof tot begraving of crematie, Stellen andere termijn, Verlenen verlof tot ontleding, Afgeven laissez-passer, Verlenen toestemming asverstrooiing, Opgraven, Treffen maatregel bij besmet stoffelijk overschot) en Begraven en cremeren stoffelijk overschot (de houder van de begraafplaats of het crematorium: Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as); Verzorgen gemeentebegrafenis blijft. Een groep arts vervalt: in het model schouwt alleen de gemeentelijke lijkschouwer, die de gemeente benoemt (Wlb art. 3, 4). Afgewezen: één gemeentelijk deel met alle tien (bijna gelijk aan het ketenproces, mengt overheid en houder) en fasegroepen (volgen de fase, niet de partij). Namen: Toezien op lijkbezorging afgewezen (homoniem met toezicht), Bezorgen en bestemmen afgewezen (bijna de naam van het ketenproces).'
-  gevolg: verwerkt
-  stand: 'deels herzien door 2026-10-08: levensloopprocessen die de bedrijfsinteractie Bezorgen stoffelijk overschot bedienen'
-- datum: '2026-10-07'
-  besluit: Nieuw bedrijfsproces voor het deel van de gemeente als overheid binnen Bezorgen stoffelijk overschot, met acht deelprocessen; de groep arts valt weg omdat in het model alleen de gemeentelijke lijkschouwer schouwt. Kernobject Stoffelijk overschot, zoals het ketenproces. Naam Toestaan lijkbezorging.
-  gevolg: verwerkt
-- datum: '2026-10-08'
-  besluit: 'Eén levensloopproces per partij: Toestaan lijkbezorging (de gemeente als overheid) en Begraven en cremeren stoffelijk overschot (de houder) blijven allebei levensloopproces van Stoffelijk overschot. Afgewezen: één levensloopproces Bezorgen stoffelijk overschot met de tien bedrijfsprocessen, en Toestaan lijkbezorging als enige levensloopproces.'
-  gevolg: verwerkt
-- datum: '2026-10-08'
-  besluit: 'Levensloopproces van de gemeente als overheid voor het stoffelijk overschot, één per partij in de ketensamenwerking: bedient de bedrijfsinteractie Bezorgen stoffelijk overschot in plaats van erin te hangen (procesniveaus volgens GEMMA Online, Proceshiërarchie).'
+  besluit: 'Afgewezen: één gemeentelijk deel met alle tien bedrijfsprocessen (bijna gelijk aan de ketensamenwerking, mengt overheid en houder) en groepen per fase (volgen de fase, niet de partij). Een groep arts vervalt: in het model schouwt alleen de gemeentelijke lijkschouwer, die de gemeente benoemt (Wlb art. 3, 4). Namen afgewezen: Toezien op lijkbezorging (homoniem met toezicht), Bezorgen en bestemmen (bijna de naam van de ketensamenwerking).'
   gevolg: verwerkt
 status: review
 beslist:

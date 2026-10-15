@@ -99,13 +99,6 @@ gemma:
 specialisaties:
 - naam: Participatiebeleid
   omschrijving: Beleid van de gemeenteraad met de uitgangspunten voor participatie, waarnaar de participatieverordening en het plan voor inwonersparticipatie kunnen verwijzen (VNG-implementatiehandleiding, bijlage 2; var. 1 art. 3). Geen eigen pagina.
-besluiten:
-- datum: '2026-09-30'
-  besluit: 'Participatiebeleid: Variant van Beleidsnota; oppakken in een algemeen onderwerp. Tot dan vervallen de relaties van Gemeenteraad en Plan voor inwonersparticipatie naar het participatiebeleid.'
-  gevolg: verwerkt
-- datum: '2026-10-12'
-  besluit: Element als generiek bedrijfsobject, met de Gemeentewet (art. 150) als landelijke bron en Participatiebeleid als specialisatie zonder pagina. Uitvoeren uniforme openbare voorbereidingsprocedure heeft er toegang toe bij inspraak (art. 150 lid 2). Het vaststellen door de raad komt later als proces; tot dan mogelijk een signaal, zoals bij Regeling.
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

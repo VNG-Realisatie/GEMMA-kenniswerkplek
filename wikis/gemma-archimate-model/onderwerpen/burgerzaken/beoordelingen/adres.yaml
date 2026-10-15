@@ -40,10 +40,6 @@ ggm:
   sterkte: exact
   onderbouwing: GGM-entiteit Nummeraanduiding (BAG); het GGM kent een tweede Nummeraanduiding in RSGBPlus (EAID_31A87864_6CE0_4e93_A493_ECD0FBDD4461). Te beoordelen in het onderwerp waar het adres thuishoort.
 vragen: []
-besluiten:
-- datum: '2026-10-07'
-  besluit: 'Verwijzing zonder pagina: het adres (nummeraanduiding) hoort bij een later onderwerp BAG of adressen; daar krijgt Verblijfplaats er een relatie naar.'
-  gevolg: verwerkt
 beslist:
   uitkomst:
     soort: verwijzing

@@ -122,7 +122,3 @@ GGM-terugmeldingen:
 Match **sterk** met GEMMA-element *Gemeentebegrafenis* (business-object). Overgenomen uit het GGM. Nieuw: een definitie die ook crematie omvat, en plaatsing in beleidsdomein Begraafplaatsen en crematoria.
 
 > Teraardebestelling onder verantwoordelijjkheid van de gemeente.
-
-### Besluiten redacteur
-
-- 2026-10-04: Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), onder de taak en binnen het ketenproces Bezorgen lijken (kennismodel: een ketenproces bevat bedrijfsprocessen). *Stand: deels herzien door 2026-10-08: levensloopproces dat de bedrijfsinteractie Bezorgen stoffelijk overschot bedient*

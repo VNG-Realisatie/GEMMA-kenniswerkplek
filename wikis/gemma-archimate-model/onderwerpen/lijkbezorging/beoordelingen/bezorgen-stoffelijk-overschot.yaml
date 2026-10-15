@@ -111,7 +111,7 @@ definitie: De samenwerking van gemeente, houder van begraafplaats of crematorium
 beschrijving:
 - Na het overlijden wordt het stoffelijk overschot geschouwd, verleent de ambtenaar van de burgerlijke stand verlof tot begraving of crematie, en wordt het binnen de wettelijke termijn begraven, gecremeerd of ontleed (Wet op de lijkbezorging art. 3, 11, 16, 67). Zorgt niemand anders voor de bezorging, dan draagt de burgemeester er zorg voor (art. 21); bij een besmet stoffelijk overschot kan hij maatregelen treffen (art. 22a). Ook een latere opgraving hoort bij de levensloop van het stoffelijk overschot (art. 29).
 - 'Het is een ketensamenwerking: bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar afgeeft voordat verlof kan worden verleend (art. 10, 12); een vervroegde uitvaart vraagt ook zijn instemming (art. 17). De uitvaartondernemer regelt de uitvaart namens de nabestaanden (RVO).'
-- 'Elke partij voert haar deel uit in een eigen levensloopproces, dat de ketensamenwerking bedient: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet. Niemand stuurt het geheel aan (estafette); het ketenproces erboven is geen element (besluit 2026-10-08).'
+- 'Elke partij voert haar deel uit in een eigen levensloopproces, dat de ketensamenwerking bedient: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet. Niemand stuurt het geheel aan (estafette); het ketenproces erboven is geen element.'
 kernobject: stoffelijk-overschot
 afnemer: extern
 taakveld: 7 Volksgezondheid en Milieu
@@ -131,12 +131,6 @@ synoniemen:
 - naam: Bezorgen lijken
   context: wet
 besluiten:
-- datum: '2026-10-05'
-  besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
-  gevolg: verwerkt
-- datum: '2026-10-07'
-  besluit: 'Aggregeert alleen bedrijfsprocessen: Toestaan lijkbezorging (gemeente als overheid, acht deelprocessen), Begraven en cremeren stoffelijk overschot (houder, twee deelprocessen) en Verzorgen gemeentebegrafenis.'
-  gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Estafette: gemeente, houder en officier van justitie werken elk onder eigen verantwoordelijkheid samen, zonder aansturing van het geheel (IK 27-34; PH 144). Wordt een bedrijfsinteractie met kernobject Stoffelijk overschot, bediend door Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis; de aggregaties worden bedieningen, Besmet stoffelijk overschot gemeld gaat naar Toestaan lijkbezorging en Overlijden start de interactie. Het object in Archi (Bezorgen lijken) vervalt: proces naar interactie is een typewijziging (regel Objectbehoud); de interactie is een nieuw object.'
   gevolg: verwerkt

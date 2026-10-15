@@ -167,8 +167,3 @@ GGM-terugmeldingen:
 Match **sterk** met GEMMA-element *Reisdocument* (business-object). GEMMA-bedrijfsobject Reisdocument, overgenomen uit het GGM (zelfde GGM-guid en definitie). Nieuw: een definitie volgens de Paspoortwet.
 
 > Een document dat vereist is voor reizen naar het buitenland
-
-### Besluiten redacteur
-
-- 2026-10-07: Reisdocument is kernobject van het nieuwe bedrijfsproces Beheren reisdocumenten onder Verzorgen burgerzaken (geen ketenproces: de minister voert tegenover de houder geen eigen deel uit), met de deelprocessen voor aanvraag, aanvraag niet-ingezetene, uitreiking, vermissing, inhouding en vervallenverklaring; de documentsoorten zijn specialisaties zonder pagina met de wetsterm, de diensten houden de UPL-naam. *Stand: deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren reisdocumenten is levensloopproces*
-- 2026-10-07: Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12). *Stand: herzien door 2026-10-07: Akte van de burgerlijke stand opgenomen, Reisdocument kernobject*

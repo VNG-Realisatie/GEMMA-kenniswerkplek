@@ -29,7 +29,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort primair bij burgerzaken: dienst van Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2, besluit 2026-10-07).'
+    onderbouwing: 'Hoort primair bij burgerzaken: dienst van Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2).'
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
     - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
@@ -120,7 +120,7 @@ gemma_functie:
   vindplaats: UPL nr. 434 (GEMMA-domein Publieksdiensten)
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

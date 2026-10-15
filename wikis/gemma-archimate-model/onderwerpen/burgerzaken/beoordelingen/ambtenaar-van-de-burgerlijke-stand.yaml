@@ -188,10 +188,6 @@ doelgroep: gemeente
 specialisaties:
 - naam: Buitengewoon ambtenaar van de burgerlijke stand
   omschrijving: Ambtenaar met een beperkter takenpakket, zoals het voltrekken van huwelijken en registreren van partnerschappen; ook voor één dag aangewezen op verzoek van het bruidspaar (BW 1 art. 16, 16a lid 2). Geen eigen pagina.
-besluiten:
-- datum: '2026-10-07'
-  besluit: 'Thuisonderwerp Burgerzaken (regel Thuishoren): de ambtenaar maakt alle akten van de burgerlijke stand op en houdt de registers bij (BW 1 art. 16a, 18, 20); het verlof tot begraving of crematie staat onder de tekst per onderwerp van Lijkbezorging. Het object in Archi blijft.'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

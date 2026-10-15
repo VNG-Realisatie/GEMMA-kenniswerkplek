@@ -167,9 +167,6 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: APV Groningen art. 5:27 lid 3; UPL nr. 32
 besluiten:
-- datum: '2026-10-05'
-  gevolg: verwerkt
-  besluit: Nieuw deelproces dat een UPL-product van lijkbezorging levert; gat uit de ijking met de UPL.
 - datum: '2026-10-08'
   besluit: 'Vervalt (regel Wettelijke grondslag): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Asverstrooiing (UPL nr. 32), met grondslag in de Model-APV art. 5:36. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen

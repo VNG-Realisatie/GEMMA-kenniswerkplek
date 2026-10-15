@@ -61,7 +61,7 @@ De gemeenteraad stelt een beheersverordening begraafplaatsen vast, met de regels
 
 ### Naamkeuze
 
-Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschrift (Awb). Gekozen is Regeling, in lijn met het GEMMA-element; het GGM-begrip Regeling (Inkomen) is een ander begrip en krijgt hier geen pagina (besluit 2026-10-01).
+Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschrift (Awb). Gekozen is Regeling, in lijn met het GEMMA-element; het GGM-begrip Regeling (Inkomen) is een ander begrip en krijgt hier geen pagina.
 
 ### Homoniemen
 
@@ -99,7 +99,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke regeling apart. [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, vastgesteld, gewijzigd, ingetrokken (Groningen art. 31). [Beheersverordening begraafplaatsen Groningen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, de raad stelt de beheersverordening vast; beheerder en college passen haar toe en stellen nadere regels (Gemeentewet art. 149; Groningen intitulé, art. 2 lid 2). [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie (besluit 2026-09-30). [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie. [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, regelingen komen in elk onderwerp voor; de gemeentelijke verordening op grond van de Gemeentewet (art. 147). [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 
 ### Specialisaties
@@ -152,7 +152,4 @@ Match **sterk** met GEMMA-element *Regeling* (business-object). Zelfde begrip (v
 
 ### Besluiten redacteur
 
-- 2026-09-30: Element op het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; opname akkoord.
-- 2026-10-01: Naam Regeling houden, in lijn met GEMMA; het GGM-homoniem staat bij Homoniemen.
-- 2026-10-06: Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd. *Stand: geldt; Belanghebbende open (todo)*
 - 2026-10-10: Wordt bewerkt zonder toegang: het proces dat een regeling vaststelt of raadpleegt, komt bij het onderwerp Heffingen en betalingen (via de specialisatie Heffingsverordening) of een later onderwerp; tot dan blijft het signaal staan.

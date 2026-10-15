@@ -47,7 +47,7 @@ Bij een gemeentelijke begraafplaats laat de gemeente de taken van de houder mees
 
 ### Naamkeuze
 
-De naam blijft de wetsterm houder van de begraafplaats (Wlb art. 23, 27, 37): die omvat ook de houder van een bijzondere begraafplaats (kerkgenootschap, rechtspersoon of natuurlijk persoon). De gangbare term beheerder van de begraafplaats dekt alleen de ambtenaar die bij een gemeentelijke begraafplaats de taken van de houder uitvoert, en is daarom synoniem (besluit 2026-10-08).
+De naam blijft de wetsterm houder van de begraafplaats (Wlb art. 23, 27, 37): die omvat ook de houder van een bijzondere begraafplaats (kerkgenootschap, rechtspersoon of natuurlijk persoon). De gangbare term beheerder van de begraafplaats dekt alleen de ambtenaar die bij een gemeentelijke begraafplaats de taken van de houder uitvoert, en is daarom synoniem.
 
 ## Plaats in het model
 
@@ -107,8 +107,3 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-05: Stoffelijk overschot in lopende tekst: bij de identiteitsvaststelling; het register van begraven lijken blijft (besluit 2026-10-05).
-- 2026-10-08: Beheerder van de begraafplaats wordt synoniem (context beleid) van deze rol; een zin over het mandaat in de beschrijving (regel Wettelijke grondslag).

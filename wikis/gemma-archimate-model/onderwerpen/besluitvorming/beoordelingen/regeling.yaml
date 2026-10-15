@@ -75,7 +75,7 @@ kenmerken:
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie (besluit 2026-09-30).
+    onderbouwing: Het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie.
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
   generiek:
@@ -114,18 +114,8 @@ specialisaties:
   omschrijving: Verordening van de raad over de manier waarop inwoners en maatschappelijke partijen bij het beleid worden betrokken, met het uitdaagrecht (Gemeentewet art. 150).
   element: participatieverordening
 naamkeuze:
-- 'Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschrift (Awb). Gekozen is Regeling, in lijn met het GEMMA-element; het GGM-begrip Regeling (Inkomen) is een ander begrip en krijgt hier geen pagina (besluit 2026-10-01).'
+- 'Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschrift (Awb). Gekozen is Regeling, in lijn met het GEMMA-element; het GGM-begrip Regeling (Inkomen) is een ander begrip en krijgt hier geen pagina.'
 besluiten:
-- datum: '2026-09-30'
-  besluit: Element op het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; opname akkoord.
-  gevolg: verwerkt
-- datum: '2026-10-01'
-  besluit: Naam Regeling houden, in lijn met GEMMA; het GGM-homoniem staat bij Homoniemen.
-  gevolg: verwerkt
-- datum: '2026-10-06'
-  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
-  gevolg: verwerkt
-  stand: geldt; Belanghebbende open (todo)
 - datum: '2026-10-10'
   besluit: 'Wordt bewerkt zonder toegang: het proces dat een regeling vaststelt of raadpleegt, komt bij het onderwerp Heffingen en betalingen (via de specialisatie Heffingsverordening) of een later onderwerp; tot dan blijft het signaal staan.'
   gevolg: verwerkt

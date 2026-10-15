@@ -86,7 +86,3 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen rol voor wie de kosten draagt; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-04: Nieuwe rol die de Gemeente vervult (besluit Gemeente 2026-10-04).

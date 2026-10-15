@@ -41,7 +41,7 @@ Daags na de kandidaatstelling stelt de burgemeester de gegevens vast van de kiez
 
 Een stempas wordt ongeldig als er een kiezerspas, volmachtbewijs, vervangende stempas of briefstembewijs voor in de plaats komt, als de houder niet als kiezer behoort te zijn geregistreerd of is overleden, of als zij is ontvreemd; de burgemeester stelt de dag voor de stemming een uittreksel uit het register van ongeldige stempassen vast en vernietigt het register drie maanden na de toelating van de gekozenen (art. J 7a). Een kiezer kan een andere kiezer machtigen door zijn stempas om te zetten in een volmachtbewijs en over te dragen (art. L 14).
 
-Het stemmen zelf, de stembureaus en de uitslag vallen buiten dit onderwerp (besluit 2026-10-06, Afbakening Burgerzaken).
+Het stemmen zelf, de stembureaus en de uitslag vallen buiten dit onderwerp (afbakening Burgerzaken).
 
 ### Homoniemen
 
@@ -121,7 +121,3 @@ GGM-terugmeldingen:
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen bedrijfsobject voor de stempas; de functie Verkiezingen gerelateerde diensten noemt het verstrekken van stempassen als voorbeeld. Nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-07: Opnemen als gegevensobject zonder GGM-entiteit, kernobject van Beheren stempassen (GGM-terugmelding 17); precedent Akte van de burgerlijke stand.

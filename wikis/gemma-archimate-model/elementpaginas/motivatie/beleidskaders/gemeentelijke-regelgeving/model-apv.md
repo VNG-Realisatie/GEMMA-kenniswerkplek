@@ -99,8 +99,3 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-08: Opnemen als beleidskader in Gemeentelijke regelgeving, grondslag van Asverstrooiing (art. 5:36 lid 3); bron is de openbare kopie van november 2023 (Opmeer), opgenomen met de VNG als eigenaar. Thuisonderwerp Algemeen, generiek: de APV regelt veel beleidsdomeinen. *Stand: herzien 2026-10-11: een VNG-modelverordening is nooit grondslag; de relatie naar Asverstrooiing heet werkt uit voor; de Model-APV blijft beleidskader (besluit 2026-10-11)*
-- 2026-10-11: Blijft beleidskader in de groep VNG-modelverordening, als gemeenschappelijke vorm van de gemeentelijke uitwerking: een VNG-modelverordening is een modelverordening van de VNG voor alle gemeenten, een bron zoals de regeling van een gemeente, maar nooit grondslag (regel Bronvoorrang). Het kenmerk is grondslag voor blijft ja en telt de relaties werkt uit voor.

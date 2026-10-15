@@ -96,4 +96,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-12: Dienst Bekendmaking, gerealiseerd door het generieke bedrijfsproces Bekendmaken besluit, dat ook de dienst Bekendmaking algemeen verbindend voorschrift realiseert; de Bekendmakingswet is bron. Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding). Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Lokale bekendmakingen publicatie onder Openbare informering (Niet domeingebonden), en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen). *Stand: open: Functie-indeling naar domein (todo)*
+- 2026-10-12: Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding).

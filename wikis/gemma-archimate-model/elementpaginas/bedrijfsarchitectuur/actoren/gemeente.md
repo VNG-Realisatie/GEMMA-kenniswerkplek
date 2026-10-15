@@ -80,7 +80,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 | **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, blijft bestaan als een rol wegvalt en vervult meer rollen: houder van de begraafplaats, het crematorium en een plaats van bijzetting, en kostendrager (art. 22, 33). [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen rechtspersoon**: Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | Ja, gemeenten bezitten rechtspersoonlijkheid (BW 2 art. 1). [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) |
 | **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, houder van de begraafplaats (art. 33, 39 lid 2), Houder van het crematorium (art. 51), Houder van een plaats van bijzetting (art. 62) en Kostendrager (art. 22). [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, elke gemeente; een soort partij, geen individuele gemeente (besluit 2026-10-04). [Gemeentewet](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
+| **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, elke gemeente; een soort partij, geen individuele gemeente. [Gemeentewet](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki. [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md), [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, komt in elk onderwerp voor: de gemeente als partij (Gemeentewet art. 6). [Gemeentewet](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 
@@ -115,7 +115,7 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 
 ### Afstemming met GEMMA
 
-Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. De GEMMA-rol Gemeente staat voor de verantwoordelijkheid die gemeenten hebben, en ordent als doelgroep de applicatieservices voor de medewerkers van de gemeente. Dit element is de gemeente als rechtspersoon, een actor: een ander begrip en een ander type, dus geen koppeling (besluit 2026-10-04).
+Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. De GEMMA-rol Gemeente staat voor de verantwoordelijkheid die gemeenten hebben, en ordent als doelgroep de applicatieservices voor de medewerkers van de gemeente. Dit element is de gemeente als rechtspersoon, een actor: een ander begrip en een ander type, dus geen koppeling.
 
 Procesarchitectuur-terugmeldingen:
 
@@ -123,7 +123,5 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-09-30: Rol, geen actor: Gemeente is de hoedanigheid; de afzonderlijke gemeenten zijn de actoren.
-- 2026-10-04: Actor als soort partij (elke gemeente), geen rol meer. Vervult Houder van de begraafplaats, Houder van het crematorium, Houder van een plaats van bijzetting en Kostendrager; omvat Gemeenteraad, College van B&W en Burgemeester. Herziet het besluit van 2026-09-30.
+- 2026-10-04: Actor als soort partij (elke gemeente), geen rol: de afzonderlijke gemeenten zijn geen eigen element.
 - 2026-10-04: Geen GEMMA-match: de actor Gemeente is een gemeente als rechtspersoon, de GEMMA-rol Gemeente is de verantwoordelijkheid die gemeenten hebben (doelgroep van applicatieservices). Het onderscheid staat in definitie, beschrijving en homoniemen.
-- 2026-10-06: Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd. *Stand: geldt; Belanghebbende open (todo)*

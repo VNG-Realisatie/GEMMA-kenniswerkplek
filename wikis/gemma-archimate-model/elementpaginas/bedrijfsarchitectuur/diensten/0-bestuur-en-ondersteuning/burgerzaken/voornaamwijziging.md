@@ -2,7 +2,7 @@
 id: voornaamwijziging
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Voornaamwijziging
 onderwerpen:
 - burgerzaken
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling voornaamwijziging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -34,7 +34,7 @@ Het laten opnemen van een door de rechtbank gewijzigde voornaam in de geboorteak
 
 ### Beschrijving
 
-Het verzoek gaat met een advocaat naar de rechtbank; de gemeente heeft een eigen handeling na de beschikking en het product wordt daarom opgenomen (besluit 2026-10-06). Grondslag art. 4 BW 1 (UPL nr. 460).
+Het verzoek gaat met een advocaat naar de rechtbank; de gemeente heeft een eigen handeling na de beschikking en het product wordt daarom opgenomen. Grondslag art. 4 BW 1 (UPL nr. 460).
 
 ## Plaats in het model
 

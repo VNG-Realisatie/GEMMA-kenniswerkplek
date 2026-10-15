@@ -35,7 +35,7 @@ Het verstrekken, vervangen en ongeldig maken van stempassen, kiezerspassen en vo
 
 Bij elke verkiezing stelt de burgemeester daags na de kandidaatstelling de gegevens vast van de kiezers die op die dag in de gemeente als kiezer zijn geregistreerd en verstrekt hij hun ten minste veertien dagen voor de stemming een stempas (Kieswet art. J 7). Op verzoek reikt hij een vervangende stempas of een kiezerspas uit of verleent hij een volmacht; de stempas waarvoor iets anders in de plaats komt, wordt ongeldig en komt in het register van ongeldige stempassen (art. J 7a, J 8, K 3, K 4, L 8, L 11).
 
-De organisatie van de verkiezing zelf, met de stembureaus, de stemming en de uitslag, valt buiten dit onderwerp (besluit 2026-10-06, Afbakening Burgerzaken). De minister van Binnenlandse Zaken en Koninkrijksrelaties stelt de modellen vast en levert de informatie voor de productie van stempas en kiezerspas (art. J 7 lid 3-4, K 4 lid 4).
+De organisatie van de verkiezing zelf, met de stembureaus, de stemming en de uitslag, valt buiten dit onderwerp (afbakening Burgerzaken). De minister van Binnenlandse Zaken en Koninkrijksrelaties stelt de modellen vast en levert de informatie voor de productie van stempas en kiezerspas (art. J 7 lid 3-4, K 4 lid 4).
 
 ## Plaats in het model
 
@@ -107,5 +107,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-07: Stempas is kernobject van het bedrijfsproces Beheren stempassen onder Verzorgen burgerzaken (stempas, kiezerspas, volmacht); de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie. *Stand: deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren stempassen is levensloopproces*
-- 2026-10-07: Procesindeling kiesrecht (optie A): Stempas is kernobject van het bedrijfsproces Beheren stempassen onder Verzorgen burgerzaken, met de deelprocessen Verstrekken stempas, Behandelen verzoek om kiezerspas en Behandelen verzoek om volmacht; de registratie van de kiesgerechtigdheid is het deelproces Registreren kiesgerechtigdheid onder Bijhouden persoonsgegevens.
+- 2026-10-07: Procesindeling kiesrecht: Stempas is kernobject van Beheren stempassen, met de deelprocessen Verstrekken stempas, Behandelen verzoek om kiezerspas en Behandelen verzoek om volmacht; de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie.

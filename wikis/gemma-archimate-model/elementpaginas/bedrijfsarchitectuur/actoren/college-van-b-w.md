@@ -119,5 +119,3 @@ GEMMA-terugmeldingen:
 ### Besluiten redacteur
 
 - 2026-09-30: Naam *College van B&W*, de gangbare naam; de wetsterm *burgemeester en wethouders* en Groningen *college* zijn synoniemen.
-- 2026-10-01: De bestuursorganen hangen via de rol Beslisser (GEMMA, procesbouwstenen) aan gedrag; welk orgaan bij welk proces beslist, staat met het wetsartikel in de beschrijving van het proces.
-- 2026-10-06: Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd. *Stand: geldt; Belanghebbende open (todo)*

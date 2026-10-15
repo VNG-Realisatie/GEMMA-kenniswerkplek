@@ -100,11 +100,6 @@ beschrijving:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst of proces voor nadeelcompensatie; alleen de functie Schade gerelateerde diensten. Nieuw voor GEMMA.
-besluiten:
-- datum: '2026-10-12'
-  besluit: 'Dienst Nadeelcompensatie, gerealiseerd door het generieke bedrijfsproces Behandelen aanvraag nadeelcompensatie. Omgevingswet nadeelcompensatie (UPL nr. 296) is een verwijzing naar een later onderwerp over de Omgevingswet. Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Schade gerelateerde diensten onder Producten- en dienstenrealisatie publieksdiensten, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
-  gevolg: verwerkt
-  stand: 'open: Functie-indeling naar domein (todo)'
 status: review
 beslist:
   uitkomst:

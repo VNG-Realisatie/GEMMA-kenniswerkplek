@@ -113,9 +113,3 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-04: Specialiseren zelf een GEMMA-proces: *Behandelen melding*, *Behandelen aanvraag product* en *Onderhouden*. Vervallen verklaren grafrecht niet naar *Opleggen sanctie*: het verval volgt uit de afspraak, niet uit handhaving. *Stand: geldt; Onderhouden graf vervallen 2026-10-08 (regel Wettelijke grondslag)*
-- 2026-10-04: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
-- 2026-10-05: Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).

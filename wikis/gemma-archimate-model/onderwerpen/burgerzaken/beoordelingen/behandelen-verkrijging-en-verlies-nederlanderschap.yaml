@@ -20,7 +20,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: ja
-    onderbouwing: Bestaat zelfstandig als het deel van de gemeente binnen het ketenproces Beheren Nederlanderschap (besluit 2026-10-07).
+    onderbouwing: Bestaat zelfstandig als het deel van de gemeente binnen het ketenproces Beheren Nederlanderschap.
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   betekenis_in_onderwerp:
@@ -83,7 +83,7 @@ kenmerken:
     - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Beheren Nederlanderschap: het deel van de gemeente, geen deelproces (besluit 2026-10-07).'
+    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Beheren Nederlanderschap: het deel van de gemeente, geen deelproces.'
   klant_tot_klant:
     waarde: nee
     onderbouwing: 'Niet van toepassing: levensloopproces.'
@@ -123,7 +123,7 @@ beschrijving:
 - In het Europese deel van Nederland neemt de burgemeester optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst van wie in zijn gemeente is ingeschreven of verblijft (Besluit verkrijging en verlies Nederlanderschap art. 2, 7, 33, 63). Bij optie behandelt hij de verklaring zelf en bevestigt of weigert hij de verkrijging; bij naturalisatie onderzoekt hij het verzoek, adviseert hij de minister van Justitie en Veiligheid en reikt hij het uittreksel van het besluit uit; bij afstand neemt hij de verklaring in ontvangst en bevestigt hij haar (Rijkswet op het Nederlanderschap art. 6, 7; Besluit art. 11, 36-38, 60a, 60b, 63).
 - Het is het deel van de gemeente binnen het ketenproces Beheren Nederlanderschap; het deel van de minister staat in de beschrijving van dat ketenproces.
 naamkeuze:
-- Infinitief met object in GEMMA-volgorde, naar de titel van het Besluit verkrijging en verlies Nederlanderschap, dat vooral de administratieve behandeling door de burgemeester regelt. Behandelen verzoeken en verklaringen Nederlanderschap is overwogen, maar de ceremonie is geen verzoek en geen verklaring (besluit 2026-10-07).
+- Infinitief met object in GEMMA-volgorde, naar de titel van het Besluit verkrijging en verlies Nederlanderschap, dat vooral de administratieve behandeling door de burgemeester regelt. Behandelen verzoeken en verklaringen Nederlanderschap is overwogen, maar de ceremonie is geen verzoek en geen verklaring.
 kernobject: nederlanderschap
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
@@ -170,16 +170,6 @@ relaties:
   vindplaats: art. 62-64
 vragen: []
 besluiten:
-- datum: '2026-10-07'
-  besluit: Nieuw bedrijfsproces voor het deel van de gemeente binnen Beheren Nederlanderschap, met alle vier de deelprocessen (optieverklaring, naturalisatieverzoek, naturalisatieceremonie, verklaring van afstand); de indeling 2+2 vervalt. De toegang-relaties naar Nederlanderschap en Ingeschreven persoon verhuizen van het ketenproces; de gebeurtenissen, Ketenpartner, de functie en de Rijkswet blijven bij het ketenproces. Naam naar de titel van het Besluit verkrijging en verlies Nederlanderschap; Behandelen verzoeken en verklaringen Nederlanderschap is afgewezen omdat de ceremonie geen verzoek of verklaring is.
-  gevolg: verwerkt
-  stand: 'herzien door 2026-10-08: samengevoegd in Beheren Nederlanderschap'
-- datum: '2026-10-07'
-  besluit: Nieuw bedrijfsproces voor het deel van de gemeente binnen Beheren Nederlanderschap, met alle vier de deelprocessen; de indeling 2+2 vervalt. Kernobject Nederlanderschap, zoals het ketenproces; de toegang-relaties verhuizen van het ketenproces, de gebeurtenissen blijven daar. Naam Behandelen verkrijging en verlies Nederlanderschap.
-  gevolg: verwerkt
-- datum: '2026-10-08'
-  besluit: 'Geen interactie: bij optie en afstand beslist de burgemeester zelf, bij de naturalisatie voert de gemeente delen uit voor de minister (orkestratie). Beheren Nederlanderschap blijft het levensloopproces met zijn object en aggregeert de vier bedrijfsprocessen; Behandelen verkrijging en verlies Nederlanderschap vervalt, samengevoegd. Behandelen naturalisatieverzoek en Houden naturalisatieceremonie specialiseren *Leveren dienst aan derden*.'
-  gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Vervalt: samengevoegd in het levensloopproces Beheren Nederlanderschap, dat zijn object in Archi houdt (per kernobject één levensloopproces; geen ketensamenwerking). De eerste alinea is gelijk aan die van Beheren Nederlanderschap; de tweede, over het deel binnen het ketenproces, vervalt. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen

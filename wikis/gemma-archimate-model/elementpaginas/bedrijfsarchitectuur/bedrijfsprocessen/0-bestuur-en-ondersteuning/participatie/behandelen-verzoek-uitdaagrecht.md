@@ -139,5 +139,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-09-30: Geen eigen pagina: dezelfde procedure van verzoek, beoordeling, afspraken en evaluatie als overheidsparticipatie.
 - 2026-10-15: Levensloopproces met kernobject Verzoek uitdaagrecht, van indienen tot evaluatie van de uitvoering. Zekerheid: logica.

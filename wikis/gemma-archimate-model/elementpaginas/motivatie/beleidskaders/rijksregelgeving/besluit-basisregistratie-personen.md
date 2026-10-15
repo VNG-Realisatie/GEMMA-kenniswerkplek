@@ -102,8 +102,3 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen beleidskader voor dit besluit; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-07: Opnemen als beleidskader; grondslag van de BRP-diensten en -deelprocessen.
-- 2026-10-07: Opnemen als beleidskader: grondslag van inschrijving, adresonderzoek, emigratie en verstrekking (art. 24, 28a–g, 29, 30, 40); precedent Besluit op de lijkbezorging.

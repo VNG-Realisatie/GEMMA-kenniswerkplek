@@ -21,7 +21,7 @@ kenmerken:
     onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
-    onderbouwing: Het resultaat van Behandelen verzoek om volmacht, of een omgezette stempas of kiezerspas (Kieswet art. L 11, L 14); de volmacht is de dienst, het bewijs een onderdeel (besluit 2026-10-06).
+    onderbouwing: Het resultaat van Behandelen verzoek om volmacht, of een omgezette stempas of kiezerspas (Kieswet art. L 11, L 14); de volmacht is de dienst, het bewijs een onderdeel.
   betekenis_in_onderwerp:
     waarde: ja
     onderbouwing: Hoort bij burgerzaken.
@@ -32,7 +32,7 @@ kenmerken:
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-toelichting: 'Onderdeel, geen pagina (besluit 2026-10-06: de volmacht is een dienst, het bewijs een onderdeel): bij inwilliging van het verzoek maakt de burgemeester een volmachtbewijs op, of de kiezer zet zijn stempas of kiezerspas om in een volmachtbewijs (Kieswet art. L 6, L 11, L 14). De dienst heet met de UPL-naam Volmachtbewijs verkiezingen.'
+toelichting: 'Onderdeel, geen pagina: bij inwilliging van het verzoek maakt de burgemeester een volmachtbewijs op, of de kiezer zet zijn stempas of kiezerspas om in een volmachtbewijs (Kieswet art. L 6, L 11, L 14). De dienst heet met de UPL-naam Volmachtbewijs verkiezingen.'
 beslist:
   uitkomst:
     soort: onderdeel

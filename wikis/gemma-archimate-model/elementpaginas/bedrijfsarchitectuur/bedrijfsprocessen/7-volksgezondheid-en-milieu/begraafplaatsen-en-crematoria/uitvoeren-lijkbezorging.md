@@ -130,8 +130,3 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-04: Bijzetting en verstrooiing van de as gaan naar het nieuwe deelproces Bijzetten of verstrooien van de as, met Urn als subobject van Lijk.
-- 2026-10-05: Stoffelijk overschot in lopende tekst: in de definitie en de omschrijvingen van de specialisaties; de naam blijft (lijkbezorging is een vaste term).

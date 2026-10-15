@@ -103,11 +103,6 @@ synoniemen:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst en geen proces voor beroep; alleen de functie Bezwaar- en beroepafhandeling. Nieuw voor GEMMA.
-besluiten:
-- datum: '2026-10-12'
-  besluit: 'Dienst Beroep blijft (een UPL-item valt nooit weg), gerealiseerd door het generieke bedrijfsproces Voeren verweer in beroep: het deel van de gemeente, die partij is; de bestuursrechter behandelt het beroep en staat in de beschrijving, niet als element. Procesarchitectuur-terugmelding. Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Bezwaar- en beroepafhandeling onder Ondersteuning, een interne functie, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
-  gevolg: verwerkt
-  stand: 'open: Functie-indeling naar domein (todo)'
 status: review
 beslist:
   uitkomst:

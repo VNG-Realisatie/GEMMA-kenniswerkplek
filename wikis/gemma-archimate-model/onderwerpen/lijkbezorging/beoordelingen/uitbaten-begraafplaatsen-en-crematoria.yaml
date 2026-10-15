@@ -50,7 +50,7 @@ kenmerken:
     onderbouwing: Wordt niet per geval doorlopen; een groepering van processen.
   groepeert_processen:
     waarde: ja
-    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen (besluit 2026-10-04).
+    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -104,13 +104,6 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 31; Groningen art. 27
-besluiten:
-- datum: '2026-10-04'
-  besluit: Cluster naar soort werk met Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as en Ruimen graf; specialisatie van GEMMA *Uitbaten gemeentelijke voorzieningen*.
-  gevolg: verwerkt
-- datum: '2026-10-04'
-  besluit: Cluster naar soort werk met Uitvoeren lijkbezorging, Bijzetten of verstrooien van de as en Ruimen graf, als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen.
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

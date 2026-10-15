@@ -43,7 +43,7 @@ Na het overlijden wordt het stoffelijk overschot geschouwd, verleent de ambtenaa
 
 Het is een ketensamenwerking: bij een niet-natuurlijke dood brengt de gemeentelijke lijkschouwer verslag uit aan de officier van justitie, die een verklaring van geen bezwaar afgeeft voordat verlof kan worden verleend (art. 10, 12); een vervroegde uitvaart vraagt ook zijn instemming (art. 17). De uitvaartondernemer regelt de uitvaart namens de nabestaanden (RVO).
 
-Elke partij voert haar deel uit in een eigen levensloopproces, dat de ketensamenwerking bedient: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet. Niemand stuurt het geheel aan (estafette); het ketenproces erboven is geen element (besluit 2026-10-08).
+Elke partij voert haar deel uit in een eigen levensloopproces, dat de ketensamenwerking bedient: Toestaan lijkbezorging door de gemeente als overheid, Begraven en cremeren stoffelijk overschot door de houder van de begraafplaats of het crematorium, en Verzorgen gemeentebegrafenis, waarin de burgemeester de bezorging regelt als niemand anders dat doet. Niemand stuurt het geheel aan (estafette); het ketenproces erboven is geen element.
 
 ### Synoniemen
 
@@ -125,6 +125,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-05: Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).
-- 2026-10-07: Aggregeert alleen bedrijfsprocessen: Toestaan lijkbezorging (gemeente als overheid, acht deelprocessen), Begraven en cremeren stoffelijk overschot (houder, twee deelprocessen) en Verzorgen gemeentebegrafenis.
 - 2026-10-08: Estafette: gemeente, houder en officier van justitie werken elk onder eigen verantwoordelijkheid samen, zonder aansturing van het geheel (IK 27-34; PH 144). Wordt een bedrijfsinteractie met kernobject Stoffelijk overschot, bediend door Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis; de aggregaties worden bedieningen, Besmet stoffelijk overschot gemeld gaat naar Toestaan lijkbezorging en Overlijden start de interactie. Het object in Archi (Bezorgen lijken) vervalt: proces naar interactie is een typewijziging (regel Objectbehoud); de interactie is een nieuw object.

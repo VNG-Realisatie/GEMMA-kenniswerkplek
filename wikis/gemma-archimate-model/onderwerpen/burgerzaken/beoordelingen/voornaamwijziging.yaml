@@ -91,7 +91,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het laten opnemen van een door de rechtbank gewijzigde voornaam in de geboorteakte en de basisregistratie personen.
 beschrijving:
-- Het verzoek gaat met een advocaat naar de rechtbank; de gemeente heeft een eigen handeling na de beschikking en het product wordt daarom opgenomen (besluit 2026-10-06). Grondslag art. 4 BW 1 (UPL nr. 460).
+- Het verzoek gaat met een advocaat naar de rechtbank; de gemeente heeft een eigen handeling na de beschikking en het product wordt daarom opgenomen. Grondslag art. 4 BW 1 (UPL nr. 460).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
@@ -99,7 +99,7 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

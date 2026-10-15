@@ -95,7 +95,3 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen dienst bezwaar; wel het bedrijfsproces Behandelen bezwaar, dat de wiki koppelt aan het realiserende proces. Nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-12: Dienst Bezwaar, gerealiseerd door het generieke bedrijfsproces Behandelen bezwaar, met het nieuwe bedrijfsobject Bezwaarschrift als kernobject (GGM-terugmelding hiaat). Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Bezwaar- en beroepafhandeling onder Ondersteuning, een interne functie, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen). *Stand: open: Functie-indeling naar domein (todo)*

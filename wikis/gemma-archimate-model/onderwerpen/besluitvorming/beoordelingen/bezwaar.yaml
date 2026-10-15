@@ -103,11 +103,6 @@ synoniemen:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst bezwaar; wel het bedrijfsproces Behandelen bezwaar, dat de wiki koppelt aan het realiserende proces. Nieuw voor GEMMA.
-besluiten:
-- datum: '2026-10-12'
-  besluit: 'Dienst Bezwaar, gerealiseerd door het generieke bedrijfsproces Behandelen bezwaar, met het nieuwe bedrijfsobject Bezwaarschrift als kernobject (GGM-terugmelding hiaat). Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Bezwaar- en beroepafhandeling onder Ondersteuning, een interne functie, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
-  gevolg: verwerkt
-  stand: 'open: Functie-indeling naar domein (todo)'
 status: review
 beslist:
   uitkomst:

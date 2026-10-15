@@ -26,7 +26,7 @@ kenmerken:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Verklaring omtrent het gedrag en Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2, besluit 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Verklaring omtrent het gedrag en Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2).'
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2025-vng-upl-producten-en-diensten-extern
@@ -104,10 +104,6 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
 regelgever: rijk
-besluiten:
-- datum: '2026-10-07'
-  besluit: 'Opnemen als beleidskader: grondslag van het ketenproces Afgeven verklaring omtrent het gedrag en de dienst (art. 28 e.v., gemeentelijke taak art. 30 en 39). Het Besluit justitiële en strafvorderlijke gegevens blijft bron, geen kader.'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

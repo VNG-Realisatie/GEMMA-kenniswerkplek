@@ -156,17 +156,6 @@ afnemer: extern
 gemma_generiek:
   id: id-729e05ea-f9f7-4583-a645-ec4e573b74ce
   onderbouwing: 'De GGD meldt een besmet lijk aan de burgemeester, die een maatregel treft (Wpg art. 27 lid 3; Wlb art. 22a): een melding waarop de gemeente actie onderneemt.'
-besluiten:
-- datum: '2026-10-04'
-  besluit: 'Specialiseren zelf een GEMMA-proces: *Behandelen melding*, *Behandelen aanvraag product* en *Onderhouden*. Vervallen verklaren grafrecht niet naar *Opleggen sanctie*: het verval volgt uit de afspraak, niet uit handhaving.'
-  gevolg: verwerkt
-  stand: geldt; Onderhouden graf vervallen 2026-10-08 (regel Wettelijke grondslag)
-- datum: '2026-10-04'
-  besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).'
-  gevolg: verwerkt
 synoniemen:
 - naam: Treffen maatregel bij besmet lijk
   context: wet

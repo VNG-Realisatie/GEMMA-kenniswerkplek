@@ -137,7 +137,7 @@ kenmerken:
     onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het beslissen op het verzoek van een ouder om de gegevens van een levenloos geboren kind in de basisregistratie personen op te nemen.
 beschrijving:
-- 'Een levenloos geboren kind wordt alleen op verzoek van een ouder in de BRP opgenomen; een kind dat kort heeft geleefd wordt automatisch ingeschreven (HUP Geboorte; Utrecht). Het weigeren van de opname is een besluit in de zin van de Awb (Wet BRP art. 2.60; HUP Geboorte). Afbakening als bedrijfsproces: besluit 2026-10-06.'
+- Een levenloos geboren kind wordt alleen op verzoek van een ouder in de BRP opgenomen; een kind dat kort heeft geleefd wordt automatisch ingeschreven (HUP Geboorte; Utrecht). Het weigeren van de opname is een besluit in de zin van de Awb (Wet BRP art. 2.60; HUP Geboorte).
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
@@ -163,7 +163,7 @@ relaties:
   vindplaats: UPL nr. 90
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

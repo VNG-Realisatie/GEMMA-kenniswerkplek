@@ -75,7 +75,7 @@ kenmerken:
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Specialisatie van Beschikking met eigen werkwijze (aanvraag, voorschriften, intrekking); het gekozen niveau voor alle vergunningen en verloven in de lijkbezorging (besluit 2026-09-30).
+    onderbouwing: Specialisatie van Beschikking met eigen werkwijze (aanvraag, voorschriften, intrekking); het gekozen niveau voor alle vergunningen en verloven in de lijkbezorging.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -131,10 +131,6 @@ besluiten:
 - datum: '2026-09-30'
   besluit: Het gekozen niveau voor de vergunningen en verloven in de lijkbezorging (geen element per soort vergunning of verlof).
   gevolg: verwerkt
-- datum: '2026-10-06'
-  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
-  gevolg: verwerkt
-  stand: geldt; Belanghebbende open (todo)
 relaties:
 - soort: specialisatie
   naar: beschikking

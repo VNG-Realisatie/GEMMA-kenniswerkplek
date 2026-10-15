@@ -274,13 +274,6 @@ relaties:
   vindplaats: UPL nr. 61 (GEMMA-domein Publieksdiensten)
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt akten op van geboorte, huwelijk en overlijden en verleent het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11; RVO). De functie bedient de processen daarvoor.
-besluiten:
-- datum: '2026-10-04'
-  besluit: Opnemen als bedienende functie met exacte GEMMA-match, met de GEMMA-naam en -definitie.
-  gevolg: verwerkt
-- datum: '2026-10-07'
-  besluit: 'Thuisonderwerp Burgerzaken (regel Thuishoren): de functie bedient Bijhouden burgerlijke stand en omvat de diensten van de burgerlijke stand; Lijkbezorging houdt haar tekst per onderwerp. Inhoudelijk eenduidig; dat de functie eerst in Lijkbezorging is beoordeeld, komt door de volgorde van inlezen en is geen argument. Het object in Archi blijft.'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

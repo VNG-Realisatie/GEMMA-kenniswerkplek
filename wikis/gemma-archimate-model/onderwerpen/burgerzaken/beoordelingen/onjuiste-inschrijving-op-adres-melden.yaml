@@ -97,10 +97,6 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-besluiten:
-- datum: '2026-10-08'
-  besluit: 'Behouden met grondslag Wet BRP art. 2.20 lid 2, 2.22 en 2.26 (regel Wettelijke grondslag): de dienst is de toegang tot het wettelijke adresonderzoek. De UPL is geen bron (geen UPL-item); procesarchitectuur-terugmelding met het voorstel de melding als UPL-item op te nemen.'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

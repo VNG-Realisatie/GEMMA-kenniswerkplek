@@ -99,7 +99,7 @@ kenmerken:
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: 'De UPL noemt het als eigen product (besluit 2026-10-06: varianten zijn een apart product waar de UPL ze apart noemt).'
+    onderbouwing: De UPL noemt het als eigen product.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
   generiek:
@@ -118,7 +118,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

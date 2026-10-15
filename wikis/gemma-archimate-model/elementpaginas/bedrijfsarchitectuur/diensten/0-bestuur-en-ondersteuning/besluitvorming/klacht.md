@@ -95,7 +95,3 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen dienst klacht; wel het bedrijfsproces Behandelen klacht, dat de wiki koppelt aan het realiserende proces. Nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-12: Dienst Klacht in Besluitvorming, gerealiseerd door het generieke bedrijfsproces Behandelen klacht, met het nieuwe bedrijfsobject Klaagschrift als kernobject (GGM-terugmelding hiaat) en de nieuwe rol Klager. Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Klachtenafhandeling zowel onder Juridische ondersteuning als onder Publieksdiensten, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen). *Stand: open: Functie-indeling naar domein (todo); herzien 2026-10-12: het kernobject heet Schriftelijke klacht, met Klaagschrift als synoniem (regel Bronvoorrang)*

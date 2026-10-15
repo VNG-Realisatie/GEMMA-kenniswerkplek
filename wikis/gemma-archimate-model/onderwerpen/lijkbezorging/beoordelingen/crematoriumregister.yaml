@@ -90,10 +90,6 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 relaties: []
-besluiten:
-- datum: '2026-10-05'
-  gevolg: verwerkt
-  besluit: 'Dienst met de UPL-naam: inzage in het openbare register, gerealiseerd door Exploiteren van begraafplaatsen (keuze B; een product of dienst uit de UPL valt niet weg). Het register zelf blijft een representatie zonder pagina.'
 status: review
 beslist:
   uitkomst:

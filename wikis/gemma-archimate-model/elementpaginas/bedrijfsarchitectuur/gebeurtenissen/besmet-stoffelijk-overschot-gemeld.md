@@ -93,8 +93,3 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-05: Hernoemd volgens de terminologie van de UPL: stoffelijk overschot in plaats van lijk; de oude naam is een synoniem (wet).
-- 2026-10-10: De relatie *betreft* naar Stoffelijk overschot vervalt: het object volgt uit de indeling onder het levensloopproces Toestaan lijkbezorging, met kernobject Stoffelijk overschot (kennismodel: een gebeurtenis hangt niet direct aan een object).

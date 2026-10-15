@@ -191,11 +191,7 @@ gemma_generiek:
   onderbouwing: 'Een grafrecht wordt op aanvraag uitgegeven, in volgorde van ligging en voor zover er ruimte is (Groningen art. 14, 16): een product dat gereed ligt.'
 besluiten:
 - datum: '2026-10-04'
-  besluit: 'Specialiseren zelf een GEMMA-proces: *Behandelen melding*, *Behandelen aanvraag product* en *Onderhouden*. Vervallen verklaren grafrecht niet naar *Opleggen sanctie*: het verval volgt uit de afspraak, niet uit handhaving.'
-  gevolg: verwerkt
-  stand: geldt; Onderhouden graf vervallen 2026-10-08 (regel Wettelijke grondslag)
-- datum: '2026-10-04'
-  besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
+  besluit: 'Vervallen verklaren grafrecht specialiseert niet Opleggen sanctie: het verval volgt uit de afspraak, niet uit handhaving.'
   gevolg: verwerkt
 status: review
 beslist:

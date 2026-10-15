@@ -88,7 +88,3 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-05: Dienst met de UPL-naam: inzage in het openbare register, gerealiseerd door Exploiteren van begraafplaatsen (keuze B; een product of dienst uit de UPL valt niet weg). Het register zelf blijft een representatie zonder pagina.

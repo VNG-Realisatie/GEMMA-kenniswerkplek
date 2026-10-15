@@ -112,4 +112,4 @@ Match **sterk** met GEMMA-element *Belanghebbende* (business-role). GEMMA-rol Be
 
 ### Besluiten redacteur
 
-- 2026-10-11: Element in Besluitvorming (thuisonderwerp), met Lijkbezorging als tweede onderwerp. Aanvrager (Awb art. 1:3 lid 3, 4:2) is een specialisatie zonder pagina; in een onderwerp heet de rol naar het object, zoals Houder van het reisdocument.
+- 2026-10-11: Aanvrager (Awb art. 1:3 lid 3, 4:2) is een specialisatie zonder pagina; in een onderwerp heet de rol naar het object, zoals Houder van het reisdocument.

@@ -80,7 +80,7 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bijdrage_aan_groter_proces:
     waarde: nee
-    onderbouwing: Een eigen levensloopproces met kernobject Gemeentebegrafenis, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces (besluit 2026-10-08).
+    onderbouwing: Een eigen levensloopproces met kernobject Gemeentebegrafenis, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces.
   klant_tot_klant:
     waarde: nee
     onderbouwing: 'Niet van toepassing: levensloopproces.'
@@ -146,20 +146,6 @@ onderwerpen:
 - lijkbezorging
 kernobject: gemeentebegrafenis
 afnemer: extern
-besluiten:
-- datum: '2026-10-04'
-  besluit: 'Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), onder de taak en binnen het ketenproces Bezorgen lijken (kennismodel: een ketenproces bevat bedrijfsprocessen).'
-  gevolg: verwerkt
-  stand: 'deels herzien door 2026-10-08: levensloopproces dat de bedrijfsinteractie Bezorgen stoffelijk overschot bedient'
-- datum: '2026-10-04'
-  besluit: Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), binnen het ketenproces Bezorgen lijken.
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: twee keer in de beschrijving; lijkschouwing en lijkbezorging blijven (vaste termen).'
-  gevolg: verwerkt
-- datum: '2026-10-08'
-  besluit: Levensloopproces van de gemeentebegrafenis; bedient de bedrijfsinteractie Bezorgen stoffelijk overschot in plaats van erin te hangen.
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

@@ -109,10 +109,6 @@ afnemer: extern
 synoniemen:
 - naam: Onderhoud van graven
   context: beleid
-besluiten:
-- datum: '2026-10-05'
-  besluit: Naam Grafonderhoud, de UPL-naam letterlijk; Onderhoud van graven (beleid) wordt een synoniem.
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

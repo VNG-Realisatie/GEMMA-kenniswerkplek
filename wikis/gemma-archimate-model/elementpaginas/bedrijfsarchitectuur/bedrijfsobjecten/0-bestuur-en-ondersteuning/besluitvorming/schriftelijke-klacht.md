@@ -44,7 +44,7 @@ Een schriftelijke klacht, in de wet ook klaagschrift, is een klacht over een ged
 
 ### Naamkeuze
 
-Schriftelijke klacht: de gangbare term, die ook in de wet staat (Awb art. 9:2, 9:4 lid 1); de wetsterm Klaagschrift is een synoniem (regel Bronvoorrang). De naam Klacht is van de UPL-dienst (besluit 2026-10-12).
+Schriftelijke klacht: de gangbare term, die ook in de wet staat (Awb art. 9:2, 9:4 lid 1); de wetsterm Klaagschrift is een synoniem (regel Bronvoorrang). De naam Klacht is van de UPL-dienst.
 
 ## Plaats in het model
 
@@ -101,8 +101,3 @@ GGM-terugmeldingen:
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen algemeen bedrijfsobject klacht; Klacht Leerlingenvervoer (uit het GGM) is een specialisatie voor leerlingenvervoer. Nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-12: Nieuw generiek bedrijfsobject, kernobject van Behandelen klacht; het GGM kent het niet (GGM-terugmelding hiaat). *Stand: herzien 2026-10-12: het kernobject heet Schriftelijke klacht, met Klaagschrift als synoniem (regel Bronvoorrang)*
-- 2026-10-12: Naam Schriftelijke klacht, de gangbare term, met de wetsterm Klaagschrift als synoniem (regel Bronvoorrang); de dienst houdt de UPL-naam Klacht.

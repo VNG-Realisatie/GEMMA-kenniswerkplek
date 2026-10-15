@@ -73,7 +73,7 @@ kenmerken:
     - 2024-rijk-gemeentewet-wettekst
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie (besluit 2026-09-30).
+    onderbouwing: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie.
     bronnen:
     - 2026-vng-retributies
   generiek:
@@ -108,14 +108,6 @@ specialisaties:
   omschrijving: De lijkbezorgingsrechten voor de uitgifte van een graf, in de UPL een eigen product (UPL nr. 164; Gemeentewet art. 229). Geen eigen pagina.
 - naam: Leges reisdocumenten
   omschrijving: Rechten voor de aanvraag van een reisdocument, gemeentelijke belasting (Paspoortwet art. 7, 33; voor de identiteitskaart Wet op de Nederlandse identiteitskaart art. 9). Geen eigen pagina.
-besluiten:
-- datum: '2026-09-30'
-  besluit: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie.
-  gevolg: verwerkt
-- datum: '2026-10-06'
-  besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
-  gevolg: verwerkt
-  stand: geldt; Belanghebbende open (todo)
 relaties:
 - soort: associatie (gericht)
   naar: begraafplaats

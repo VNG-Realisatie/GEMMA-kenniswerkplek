@@ -2,7 +2,7 @@
 id: achternaamwijziging
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Achternaamwijziging
 onderwerpen:
 - burgerzaken
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling achternaamwijziging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -34,7 +34,7 @@ Het laten opnemen van een bij koninklijk besluit gewijzigde achternaam in de geb
 
 ### Beschrijving
 
-Het verzoek gaat via Justis; de gemeente heeft een eigen handeling na het besluit en het product wordt daarom opgenomen (besluit 2026-10-06). De UPL noemt een digitaal kanaal (nr. 5). Grondslag art. 7 BW 1.
+Het verzoek gaat via Justis; de gemeente heeft een eigen handeling na het besluit en het product wordt daarom opgenomen. De UPL noemt een digitaal kanaal (nr. 5). Grondslag art. 7 BW 1.
 
 ## Plaats in het model
 

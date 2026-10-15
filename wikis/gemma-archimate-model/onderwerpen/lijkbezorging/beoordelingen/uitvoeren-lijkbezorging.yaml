@@ -191,13 +191,6 @@ onderwerpen:
 - lijkbezorging
 kernobject: stoffelijk-overschot
 afnemer: extern
-besluiten:
-- datum: '2026-10-04'
-  besluit: Bijzetting en verstrooiing van de as gaan naar het nieuwe deelproces Bijzetten of verstrooien van de as, met Urn als subobject van Lijk.
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: in de definitie en de omschrijvingen van de specialisaties; de naam blijft (lijkbezorging is een vaste term).'
-  gevolg: verwerkt
 deelprocessen:
 - naam: Begraven of cremeren
   omschrijving: Na het verlof bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, binnen de termijn na het overlijden.

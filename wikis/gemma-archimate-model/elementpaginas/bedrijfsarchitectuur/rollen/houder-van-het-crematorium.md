@@ -84,7 +84,3 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-05: Stoffelijk overschot in lopende tekst: de zin over het register beschrijft de inhoud, niet de naam.

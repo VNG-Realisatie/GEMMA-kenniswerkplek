@@ -57,7 +57,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   soort_partij:
     waarde: nee
-    onderbouwing: Eén organisatie van het Rijk, geen soort partij die bij elke gemeente als eigen exemplaar voorkomt (zoals de minister van BZK, besluit 2026-10-07).
+    onderbouwing: Eén organisatie van het Rijk, geen soort partij die bij elke gemeente als eigen exemplaar voorkomt (zoals de minister van BZK).
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -85,9 +85,6 @@ synoniemen:
 - naam: Minister van Justitie en Veiligheid
   context: wet
 besluiten:
-- datum: '2026-10-07'
-  besluit: 'Rijkskant: één actor Rijk (GEMMA-actor Rijk, exacte match; de export vult de lege GEMMA-definitie), thuis in Algemeen, die de rol Ketenpartner vervult in het ketenproces Beheren Nederlanderschap. De afzonderlijke ministers en rijksdiensten (minister van BZK met de RvIG, minister van JenV met de IND) zijn geen eigen actor en staan in de beschrijving van Rijk.'
-  gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: 'Rijkskant (plak 4): geen eigen actor; het Rijk is de actor (GEMMA-actor Rijk) die Ketenpartner vervult, en de minister van Justitie en Veiligheid met de IND staat in de beschrijving van Rijk.'
   gevolg: afwijzen

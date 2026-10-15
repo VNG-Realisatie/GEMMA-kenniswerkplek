@@ -107,7 +107,3 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor nadeelcompensatie. Nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-12: Generiek bedrijfsproces met pagina, met Beschikking als kernobject; het realiseert de UPL-dienst Nadeelcompensatie. Beslisser en Belanghebbende worden eraan toegewezen; de adviescommissie en het recht staan in de beschrijving.

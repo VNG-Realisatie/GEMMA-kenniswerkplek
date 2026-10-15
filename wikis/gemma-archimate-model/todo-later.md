@@ -5,6 +5,7 @@ Punten die nu niet aan de orde zijn. [todo.md](todo.md) heeft het actieve werk; 
 ## Wettelijke grondslag (ARCHITECTURE.md, secties 3.4 en 4.2)
 
 - **Licentie VNG-modelverordeningen**: de Model-APV (2023-vng-model-apv) en de Model beheersverordening (2010) staan letterlijk in `sources/raw/` van een publieke repository, zonder licentie in de bron. Laat de VNG (juridische zaken of het team modelverordeningen) bevestigen dat hergebruik mag, of er een licentie op zetten. De VNG herziet de Model-APV volledig (gepland begin 2027): vervang dan de bron.
+- **Actuele Model beheersverordening begraafplaatsen**: de wiki gebruikt de versie van 2010; neem een actuele versie op als die openbaar wordt.
 
 ## Indelingen (ARCHITECTURE.md, sectie 4.4)
 
@@ -44,13 +45,15 @@ Punten die nu niet aan de orde zijn. [todo.md](todo.md) heeft het actieve werk; 
 - **Handhaving** (thematisch onderwerp, Awb hoofdstuk 5): overtreding, bestuurlijke sanctie, last onder bestuursdwang en last onder dwangsom, de GEMMA-processen Opleggen sanctie en Uitvoeren sanctie en het GGM-domein Normafwijking; de diensten Bestuurlijke boete (UPL nr. 59) en Spoedeisende bestuursdwang (UPL nr. 386).
 - **Omgevingswet**: Omgevingswet nadeelcompensatie (UPL nr. 296, afdeling 15.1 Omgevingswet) staat als verwijzing in de begrippenlijst van Besluitvorming, mogelijk als specialisatie van Nadeelcompensatie.
 
+- **Specialisaties naar de generieke beslisprocessen**: de diensten en processen op aanvraag in de onderwerpen (zoals de aanvragen in Burgerzaken en Lijkbezorging) worden specialisatie van de generieke dienst Beschikking aanvragen en het generieke bedrijfsproces Behandelen aanvraag beschikking; tot dan houden ze hun eigen koppeling met GEMMA (`gemma_generiek`).
+
 ## Verwijzingen vanuit Burgerzaken (onderwerp afgerond op 2026-10-07)
 
 Begrippen die thuishoren in een onderwerp dat nog niet bestaat; ze staan als verwijzing in de begrippenlijst van Burgerzaken.
 
 - **Verkiezingen** (organisatie): Kandidaatstelling verkiezingen, Stembiljet, Stemmen identificatieplicht (UPL nr. 205, 395, 396; Kieswet).
 - **Invordering**: Verzoeken om signalering (Paspoortwet art. 22).
-- **Adressen en BAG**: Adres.
+- **Adressen en BAG**: Adres; Verblijfplaats krijgt daar een relatie naar het adres (nummeraanduiding).
 - **Openbare ruimte**: de vier meldingen openbare ruimte (UPL nr. 243 tot en met 246).
 - **Sociaal domein**: Overlijdensuitkering (UPL nr. 317).
 - **Dienstverlening aan inwoners en leefomgeving**: Contactgegevens aanpassing (UPL nr. 105), Reclamesticker (UPL nr. 348).

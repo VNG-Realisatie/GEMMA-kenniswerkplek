@@ -44,7 +44,7 @@ Het stoffelijk overschot wordt geschouwd, begraven, gecremeerd of ontleed, en so
 
 ### Naamkeuze
 
-Stoffelijk overschot is de term van de Uniforme Productenlijst ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk ([2026-rvo-aangifte-en-akte-van-overlijden](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-rvo-aangifte-en-akte-van-overlijden.md)). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet (besluit 2026-10-05).
+Stoffelijk overschot is de term van de Uniforme Productenlijst ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk ([2026-rvo-aangifte-en-akte-van-overlijden](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-rvo-aangifte-en-akte-van-overlijden.md)). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet.
 
 ## Plaats in het model
 
@@ -109,8 +109,3 @@ Geen GGM-entiteit. Het GGM kent geen entiteit voor dit begrip (tools/ggm.py kand
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-05: Naam Stoffelijk overschot, de term van de UPL; Lijk (wet, beheersverordening, VNG) wordt een synoniem.
-- 2026-10-08: Eén levensloopproces per partij: Toestaan lijkbezorging (de gemeente als overheid) en Begraven en cremeren stoffelijk overschot (de houder) blijven allebei levensloopproces van Stoffelijk overschot. Afgewezen: één levensloopproces Bezorgen stoffelijk overschot met de tien bedrijfsprocessen, en Toestaan lijkbezorging als enige levensloopproces.

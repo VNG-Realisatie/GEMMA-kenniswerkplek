@@ -104,10 +104,6 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: gemeente
-besluiten:
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: de zin over het register beschrijft de inhoud, niet de naam.'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

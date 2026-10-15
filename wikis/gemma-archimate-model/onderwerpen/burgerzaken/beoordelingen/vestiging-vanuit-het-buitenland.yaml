@@ -85,7 +85,7 @@ kenmerken:
     - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
   generiek:
     waarde: nee
-    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke GEMMA-gebeurtenis (besluit 2026-10-04).
+    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke GEMMA-gebeurtenis.
 definitie: Het gaan wonen in een Nederlandse gemeente van een persoon die in het buitenland woonde.
 beschrijving:
 - Wie vanuit het buitenland in een gemeente komt wonen, of het komende half jaar ten minste vier maanden, schrijft zich binnen vijf dagen in (Utrecht Inschrijven vanuit het buitenland). Stond de persoon nooit in de BRP of RNI, dan is het een immigratie (eerste inschrijving); stond hij in de RNI, dan een hervestiging (HUP Immigratie; HUP Hervestiging).
@@ -107,7 +107,7 @@ relaties:
   - 2026-rvig-hup-hervestiging
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: inleiding; Wet BRP art. 2.2, 2.38 lid 1
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

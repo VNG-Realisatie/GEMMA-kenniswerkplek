@@ -129,15 +129,6 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-reisdocument
   vindplaats: Paspoortwet art. 1 onder f, 26; HUP Reisdocument
-besluiten:
-- datum: '2026-10-07'
-  besluit: 'Reisdocument is kernobject van het nieuwe bedrijfsproces Beheren reisdocumenten onder Verzorgen burgerzaken (geen ketenproces: de minister voert tegenover de houder geen eigen deel uit), met de deelprocessen voor aanvraag, aanvraag niet-ingezetene, uitreiking, vermissing, inhouding en vervallenverklaring; de documentsoorten zijn specialisaties zonder pagina met de wetsterm, de diensten houden de UPL-naam.'
-  gevolg: verwerkt
-  stand: 'deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren reisdocumenten is levensloopproces'
-- datum: '2026-10-07'
-  besluit: Kandidaat tot plak 2 en 3, waar een proces ze als kernobject krijgt; de akte wordt dan gegevensobject zonder GGM-entiteit (GGM-terugmelding 12).
-  gevolg: verwerkt
-  stand: 'herzien door 2026-10-07: Akte van de burgerlijke stand opgenomen, Reisdocument kernobject'
 status: review
 beslist:
   uitkomst:

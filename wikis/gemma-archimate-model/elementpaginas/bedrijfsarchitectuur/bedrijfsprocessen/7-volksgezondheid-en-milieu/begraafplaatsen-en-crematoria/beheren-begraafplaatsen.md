@@ -101,7 +101,3 @@ Alleen de kenmerken met ja; de overige 44 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen proces voor het beheer van begraafplaatsen; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-04: Nieuw bedrijfsproces met kernobject Begraafplaats, met de deelprocessen Verlenen toestemming bijzondere begraafplaats en Sluiten begraafplaats.

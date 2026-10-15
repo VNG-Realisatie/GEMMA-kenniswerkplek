@@ -122,16 +122,6 @@ relaties:
   vindplaats: art. 30, 36, 37; Utrecht regel 59
 beschrijving:
 - Een ketenpartner is een andere organisatie die een eigen deel van een keten uitvoert, vanuit een eigen wettelijke taak, en niet als klant of alleen als adviseur. GEMMA kent de rol Ketenpartner in de procesarchitectuur en de doelgroep Ketenpartners.
-besluiten:
-- datum: '2026-10-04'
-  besluit: Nieuwe rol Ketenpartner met exacte GEMMA-match; vervuld door de Officier van justitie, toegewezen aan Bezorgen lijken en Stellen andere termijn.
-  gevolg: verwerkt
-- datum: '2026-10-04'
-  besluit: Ook vervuld door de Arts als behandelende arts, en toegewezen aan Schouwen lijk (art. 3).
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

@@ -25,7 +25,7 @@ kenmerken:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Rijbewijs en Beheren rijbewijzen (UPL taakveld 0.2, besluit 2026-10-07).'
+    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Rijbewijs en Beheren rijbewijzen (UPL taakveld 0.2).'
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
     - 2025-vng-upl-producten-en-diensten-extern
@@ -129,10 +129,6 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
 regelgever: rijk
-besluiten:
-- datum: '2026-10-07'
-  besluit: 'Opnemen als beleidskader: grondslag van Beheren rijbewijzen, de rijbewijsdiensten en de deelprocessen (de burgemeester besluit tot afgifte, art. 116 en 118a).'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

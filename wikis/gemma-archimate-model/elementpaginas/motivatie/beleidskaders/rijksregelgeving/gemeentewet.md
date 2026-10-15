@@ -99,4 +99,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-15: Beleidskader met thuis Bestuur en organisatie, in plaats van een verwijzing; in de ronde Participatie alleen de relaties voor Participatie, die van de andere onderwerpen volgen later.
+- 2026-10-15: Beleidskader met thuis Bestuur en organisatie, geen verwijzing.

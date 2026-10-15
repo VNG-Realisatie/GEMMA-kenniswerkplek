@@ -166,10 +166,6 @@ relaties:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 4:1, 4:5
-besluiten:
-- datum: '2026-10-12'
-  besluit: Generiek bedrijfsproces met pagina, met Beschikking als kernobject; het realiseert de UPL-dienst Beschikking aanvragen. Beslisser en Belanghebbende worden eraan toegewezen. De beslisprocessen op aanvraag in de onderwerpen houden hun koppeling met GEMMA (gemma_generiek); specialisatierelaties naar dit proces volgen later (todo).
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

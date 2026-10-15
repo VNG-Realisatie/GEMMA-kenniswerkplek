@@ -543,8 +543,8 @@ def maak(wiki: Path, onderwerp: str, cluster: str | None = None, alles: bool = F
     bronnen = list(dict.fromkeys([*(a.get("bronnen") or []), *(p.stem for p in gam_gemeen.bronduidingen(wiki, onderwerp))]))
     kort = {b: f"B{i}" for i, b in enumerate(bronnen, 1)}
     regels = [f"{a.get('naam', onderwerp)} ({a.get('niveau', '?')}, {a.get('status', '?')}).", "", "Bronnen:", "",
-              *(f"- {kort[b]}: {b} ({brontype(b)})" for b in bronnen), "", "Besluiten (zonder de herziene):", ""]
-    besluiten = [r for r in opzoeken.besluiten(wiki, onderwerp) if "[stand: herzien" not in r]
+              *(f"- {kort[b]}: {b} ({brontype(b)})" for b in bronnen), "", "Besluiten:", ""]
+    besluiten = opzoeken.besluiten(wiki, onderwerp)
     if cl:
         besluiten = [r for r in besluiten if r.startswith(f"[{onderwerp}]") or r.split("]")[0][1:] in ons]
     regels += [f"- {r}" for r in besluiten] or ["- geen"]

@@ -88,7 +88,3 @@ Alleen de kenmerken met ja; de overige 48 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen dienst Zienswijze; de Deelservice Inspraakprocedure (Vaststellen omgevingsplan) is een interne deeldienst voor het omgevingsplan. Nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-11: Geen plek in de Functie-indeling naar domein: GEMMA heeft in domein Bestuur geen functie die diensten realiseert, en welke elementtypen op welk niveau van de functiehiërarchie worden ingedeeld, moet eerst worden bepaald (todo, Indelingen). Tot dan blijft de waarschuwing hangt onder geen functie staan. *Stand: open: Functie-indeling naar domein (todo)*

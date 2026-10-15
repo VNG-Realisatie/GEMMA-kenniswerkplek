@@ -84,7 +84,7 @@ kenmerken:
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 316), apart van de akte van de burgerlijke stand (nr. 23); de UPL noemt varianten apart (besluit 2026-10-06).
+    onderbouwing: Een eigen product in de UPL (nr. 316), apart van de akte van de burgerlijke stand (nr. 23); de UPL noemt varianten apart.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
   generiek:
@@ -105,7 +105,7 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

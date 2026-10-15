@@ -94,8 +94,3 @@ Alleen de kenmerken met ja; de overige 49 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-09-30: Actor, op grond van het precedent GGD: mede-eigenaar en opdrachtgever via de gemeenschappelijke regeling.
-- 2026-10-05: Stoffelijk overschot in lopende tekst: per onderwerp lijkbezorging.

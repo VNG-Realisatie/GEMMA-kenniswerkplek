@@ -161,10 +161,7 @@ relaties:
   vindplaats: art. 17; § Uitvaart vervroegen, § Uitvaart uitstellen
 besluiten:
 - datum: '2026-10-04'
-  besluit: Nieuw deelproces van Bezorgen lijken dat de dienst Uitvaart vervroegen of uitstellen realiseert. Herziet het besluit van 2026-10-01 (geen eigen proces).
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: in de beschrijving.'
+  besluit: Eigen deelproces dat de dienst Uitvaart vervroegen of uitstellen realiseert, niet de functie Lijkbezorging. Herziet het besluit van 2026-10-01.
   gevolg: verwerkt
 status: review
 beslist:

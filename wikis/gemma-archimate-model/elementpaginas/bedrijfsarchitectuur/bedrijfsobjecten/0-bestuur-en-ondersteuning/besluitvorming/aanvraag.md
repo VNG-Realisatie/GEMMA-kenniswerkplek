@@ -70,7 +70,7 @@ De aanvraag van een reisdocument, rijbewijs of verklaring omtrent het gedrag sta
 
 ### Naamkeuze
 
-Aanvraag: de wetsterm (Awb art. 1:3 lid 3) en de gangbare term voor een verzoek aan de gemeente om een besluit. De interne aanvraag (ICT) is een ander begrip en krijgt hier geen pagina (besluit 2026-10-12).
+Aanvraag: de wetsterm (Awb art. 1:3 lid 3) en de gangbare term voor een verzoek aan de gemeente om een besluit. De interne aanvraag (ICT) is een ander begrip en krijgt hier geen pagina.
 
 ### Homoniemen
 

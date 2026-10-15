@@ -58,12 +58,12 @@ kenmerken:
     - 2026-rijk-bw2-rechtspersonen
   vervult_een_rol:
     waarde: ja
-    onderbouwing: 'Ketenpartner in Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; besluit 2026-10-07).'
+    onderbouwing: 'Ketenpartner in Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38).'
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   soort_partij:
     waarde: ja
-    onderbouwing: De bestuurslaag als geheel, waarmee elke gemeente in dezelfde rol te maken heeft; zo ook Provincie en Waterschap (besluit 2026-10-07). Afzonderlijke ministeries en rijksdiensten zijn geen eigen actor.
+    onderbouwing: De bestuurslaag als geheel, waarmee elke gemeente in dezelfde rol te maken heeft; zo ook Provincie en Waterschap. Afzonderlijke ministeries en rijksdiensten zijn geen eigen actor.
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   onderscheidbare_exemplaren:
@@ -97,7 +97,7 @@ doelgroep: ketenpartners
 gemma:
   id: id-9f6a80ba-b7fb-4a58-b599-b5f2b33b840e
   sterkte: exact
-  onderbouwing: 'GEMMA-actor Rijk (procesarchitectuur, actoren en rollen); zelfde begrip, in GEMMA zonder definitie en zonder relaties. Nieuw: een definitie (besluit 2026-10-07).'
+  onderbouwing: 'GEMMA-actor Rijk (procesarchitectuur, actoren en rollen); zelfde begrip, in GEMMA zonder definitie en zonder relaties. Nieuw: een definitie.'
 relaties:
 - soort: toewijzing
   naar: ketenpartner
@@ -107,13 +107,6 @@ relaties:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 37, 38; Wjsg art. 30, 37
-besluiten:
-- datum: '2026-10-07'
-  besluit: 'Rijkskant: één actor Rijk (GEMMA-actor Rijk, exacte match; de export vult de lege GEMMA-definitie), thuis in Algemeen, die de rol Ketenpartner vervult in het ketenproces Beheren Nederlanderschap. De afzonderlijke ministers en rijksdiensten (minister van BZK met de RvIG, minister van JenV met de IND) zijn geen eigen actor en staan in de beschrijving van Rijk.'
-  gevolg: verwerkt
-- datum: '2026-10-07'
-  besluit: 'Rijkskant: één actor Rijk met de GEMMA-match, die de rol Ketenpartner vervult; de afzonderlijke ministers en rijksdiensten (minister van BZK met de RvIG, minister van JenV met de IND) staan in de beschrijving. Het Rijk is een soort partij: de bestuurslaag als geheel, waarmee elke gemeente te maken heeft, zoals Provincie en Waterschap.'
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

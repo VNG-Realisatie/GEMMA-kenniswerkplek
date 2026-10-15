@@ -71,7 +71,7 @@ kenmerken:
 regelgever: rijk
 definitie: Wet over het kiesrecht en de verkiezing van de vertegenwoordigende organen, waaronder de gemeenteraad.
 beschrijving:
-- De Kieswet (BWBR0004627) regelt wie kiesgerechtigd is (hoofdstuk B), de registratie van de kiesgerechtigdheid door burgemeester en wethouders (D), de stempas (J), de kiezerspas (K) en het stemmen bij volmacht (L), en daarnaast de kandidaatstelling, de stembureaus, de stemming en de uitslag, die buiten dit onderwerp vallen (besluit 2026-10-06, Afbakening Burgerzaken).
+- De Kieswet (BWBR0004627) regelt wie kiesgerechtigd is (hoofdstuk B), de registratie van de kiesgerechtigdheid door burgemeester en wethouders (D), de stempas (J), de kiezerspas (K) en het stemmen bij volmacht (L), en daarnaast de kandidaatstelling, de stembureaus, de stemming en de uitslag, die buiten dit onderwerp vallen (afbakening Burgerzaken).
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 per_onderwerp:
@@ -127,13 +127,6 @@ relaties:
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. B 5, D 1-D 7
-besluiten:
-- datum: '2026-10-07'
-  besluit: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap (optie, naturalisatie, afstand) en van Beheren stempassen en Registreren kiesgerechtigdheid.
-  gevolg: verwerkt
-- datum: '2026-10-07'
-  besluit: Opnemen als beleidskader; grondslag van Beheren stempassen en Registreren kiesgerechtigdheid.
-  gevolg: verwerkt
 status: review
 beslist:
   uitkomst:

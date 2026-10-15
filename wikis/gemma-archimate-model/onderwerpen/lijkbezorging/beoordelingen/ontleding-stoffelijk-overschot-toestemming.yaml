@@ -95,10 +95,6 @@ gemma_functie:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 306 (GEMMA-domein Fysieke leefomgeving)
 relaties: []
-besluiten:
-- datum: '2026-10-05'
-  gevolg: verwerkt
-  besluit: 'UPL-product van lijkbezorging, beoordeeld met de toets van 2026-10-05: een product bij een dienst met een afspraak, anders een dienst; de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt.'
 status: review
 beslist:
   uitkomst:

@@ -104,8 +104,3 @@ Geen GGM-entiteit. Het GGM kent geen beleidsnota of gemeentelijk beleid. Het ont
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA. Het vaststellen ervan valt onder het GEMMA-proces Ontwikkelen regelingen, verordeningen en beleid (id-e240247c-c05a-4f50-8dd1-534658504e38).
-
-### Besluiten redacteur
-
-- 2026-09-30: Participatiebeleid: Variant van Beleidsnota; oppakken in een algemeen onderwerp. Tot dan vervallen de relaties van Gemeenteraad en Plan voor inwonersparticipatie naar het participatiebeleid.
-- 2026-10-12: Element als generiek bedrijfsobject, met de Gemeentewet (art. 150) als landelijke bron en Participatiebeleid als specialisatie zonder pagina. Uitvoeren uniforme openbare voorbereidingsprocedure heeft er toegang toe bij inspraak (art. 150 lid 2). Het vaststellen door de raad komt later als proces; tot dan mogelijk een signaal, zoals bij Regeling.

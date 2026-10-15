@@ -93,11 +93,7 @@ homoniemen:
   waar: GGM-entiteit Rechthebbende (EAID_9AE5BCE3_AD6D_4241_9651_823400E3745F), beleidsdomein Archief
   naamkeuze: Deze pagina heet Rechthebbende op het graf; het GGM-begrip krijgt hier geen pagina.
 naamkeuze:
-- 'Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, art. 23, 28), Rechthebbende grafrecht. Gekozen is Rechthebbende op het graf (besluit 2026-09-30), omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief: iemand die rechten heeft op een goed).'
-besluiten:
-- datum: '2026-09-30'
-  besluit: Naam Rechthebbende op het graf, niet Rechthebbende of Rechthebbende grafrecht, omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief).
-  gevolg: verwerkt
+- 'Overwogen: Rechthebbende (Groningen art. 1 w), Rechthebbende op het graf (wet, art. 23, 28), Rechthebbende grafrecht. Gekozen is Rechthebbende op het graf, omdat GGM en GEMMA al een ander begrip Rechthebbende kennen (Archief: iemand die rechten heeft op een goed).'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.

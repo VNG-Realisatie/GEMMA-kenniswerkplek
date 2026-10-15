@@ -105,7 +105,7 @@ kenmerken:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   levert_aanbod:
     waarde: nee
-    onderbouwing: 'Nee, de dienst levert het bedrijfsproces waarvan dit een deelproces is: Behandelen naturalisatieverzoek en Behandelen optieverklaring (UPL nr. 261) (besluit 2026-10-08, klant tot klant).'
+    onderbouwing: 'Nee, de dienst levert het bedrijfsproces waarvan dit een deelproces is: Behandelen naturalisatieverzoek en Behandelen optieverklaring (UPL nr. 261).'
   leidt_tot_gebeurtenis:
     waarde: ja
     onderbouwing: Verkrijging van het Nederlanderschap (Besluit art. 60a lid 1, 60b lid 1).
@@ -129,10 +129,6 @@ synoniemen:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen proces voor dit begrip; nieuw voor GEMMA.
-besluiten:
-- datum: '2026-10-08'
-  besluit: 'Bedrijfsproces onder het levensloopproces Beheren Nederlanderschap; specialiseert het GEMMA-proces Leveren dienst aan derden (orkestratie: de gemeente voert het uit voor de minister).'
-  gevolg: verwerkt
 genoemd_begrip: Behandelen naturalisatieverzoek
 toelichting: 'Deelproces zonder pagina van Behandelen naturalisatieverzoek, Behandelen optieverklaring: het oproepen van nieuwe Nederlanders en het uitreiken van de bevestiging of het naturalisatiebesluit, na de verklaring van verbondenheid.'
 relaties: []

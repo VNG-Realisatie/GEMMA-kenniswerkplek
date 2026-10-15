@@ -122,5 +122,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-04: Nieuw deelproces van Bezorgen lijken dat de dienst Uitvaart vervroegen of uitstellen realiseert. Herziet het besluit van 2026-10-01 (geen eigen proces).
-- 2026-10-05: Stoffelijk overschot in lopende tekst: in de beschrijving.
+- 2026-10-04: Eigen deelproces dat de dienst Uitvaart vervroegen of uitstellen realiseert, niet de functie Lijkbezorging. Herziet het besluit van 2026-10-01.

@@ -92,7 +92,3 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 Procesarchitectuur-terugmeldingen:
 
 - [Nummer 3](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md) (indeling, open): **UPL:** ontleding stoffelijk overschot toestemming heeft geen Iv3-taakveld ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)). **Bevinding:** ontleding is een wettelijke wijze van lijkbezorging ([2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), art. 67, 68). GEMMA zet het product onder 7.5, beleidsdomein Begraafplaatsen en crematoria. **Voorstel:** geef het product in de UPL taakveld 7.5.
-
-### Besluiten redacteur
-
-- 2026-10-05: UPL-product van lijkbezorging, beoordeeld met de toets van 2026-10-05: een product bij een dienst met een afspraak, anders een dienst; de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt.

@@ -120,13 +120,6 @@ definitie: 'Het geven van een bestemming aan de as na een crematie: bijzetten va
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-besluiten:
-- datum: '2026-10-04'
-  besluit: Nieuw deelproces van Bezorgen lijken met kernobject Urn (subobject van Lijk); bijzetting en verstrooiing komen over van Uitvoeren lijkbezorging.
-  gevolg: verwerkt
-- datum: '2026-10-08'
-  besluit: 'Overlijden leidt tot de akte (Opmaken akte van overlijden, daarna Verlenen verlof) en tot het begraven of cremeren (Uitvoeren lijkbezorging). Bijzetten of verstrooien van de as wordt een deelproces van Uitvoeren lijkbezorging. Schouwen stoffelijk overschot blijft een eigen bedrijfsproces (de schouw gebeurt vóór de aangifte en de aanvraag van het verlof, door een andere rol); de verklaring van overlijden gaat als stroom naar Verlenen verlof (Wlb art. 12). Afgewezen: Schouwen als deelproces van Verlenen verlof.'
-  gevolg: verwerkt
 genoemd_begrip: Uitvoeren lijkbezorging
 toelichting: 'Deelproces zonder pagina van Uitvoeren lijkbezorging: het geven van een bestemming aan de as na een crematie: bijzetten van de urn, verstrooien van de as of meegeven aan de nabestaande.'
 beslist:

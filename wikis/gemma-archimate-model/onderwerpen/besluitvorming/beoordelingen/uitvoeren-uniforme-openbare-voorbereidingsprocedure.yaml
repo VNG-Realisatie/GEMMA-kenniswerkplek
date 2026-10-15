@@ -91,7 +91,7 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   klant_tot_klant:
     waarde: ja
-    onderbouwing: 'Bij een besluit op aanvraag loopt de procedure van de ontvangst van de aanvraag tot het besluit: het ontwerp gaat naar de aanvrager en het besluit volgt binnen zes maanden na ontvangst (art. 3:13, 3:18; besluit 2026-10-11).'
+    onderbouwing: 'Bij een besluit op aanvraag loopt de procedure van de ontvangst van de aanvraag tot het besluit: het ontwerp gaat naar de aanvrager en het besluit volgt binnen zes maanden na ontvangst (art. 3:13, 3:18).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   omvat_levensloop:
@@ -181,9 +181,6 @@ relaties:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 3:13, 3:18
 besluiten:
-- datum: '2026-09-30'
-  besluit: Verhuist naar een algemeen onderwerp besluitvorming.
-  gevolg: verwerkt
 - datum: '2026-10-11'
   besluit: 'Generiek bedrijfsproces met pagina, met de naam Uitvoeren uniforme openbare voorbereidingsprocedure: bij een besluit op aanvraag loopt de procedure van de aanvraag tot het besluit (klant tot klant). Het proces realiseert de UPL-dienst Zienswijze; Beslisser en Belanghebbende worden eraan toegewezen; de Awb is er grondslag voor. Processen in andere onderwerpen die afdeling 3.4 volgen, zoals inspraak, verwijzen ernaar.'
   gevolg: verwerkt

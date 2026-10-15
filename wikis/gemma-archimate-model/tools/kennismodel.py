@@ -334,7 +334,9 @@ ELEMENTTYPEN: list[Elementtype] = [
         eigenschappen=("doelgroep", "gemma", "gemma_generiek"), verplicht=("doelgroep",),
         afspraken=("Wat een rol met een object is, is toegang met een vaste verantwoordelijkheid; een handeling "
                    "(aanvragen, afgeven) is een toewijzing van de rol aan het proces dat het object gebruikt of maakt.",
-                   "Een doelgroep (minima, jongeren) is geen rol maar een indeling van een actor.")),
+                   "Een doelgroep (minima, jongeren) is geen rol maar een indeling van een actor.",
+                   "Een bestuursorgaan (gemeenteraad, college, burgemeester) hangt via de rol Beslisser aan gedrag; welk "
+                   "orgaan bij welk proces bevoegd is, staat met het wetsartikel in de beschrijving van het proces.")),
     Elementtype(
         "bedrijfssamenwerking", "Bedrijfssamenwerking", "Business Collaboration", "business-collaboration",
         "bedrijfsarchitectuur", "bedrijfssamenwerking",

@@ -102,7 +102,3 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 Procesarchitectuur-terugmeldingen:
 
 - [Nummer 2](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md) (indeling, open): **UPL:** verlof tot begraven valt onder Iv3 0.2 (Burgerzaken); de andere producten van de lijkbezorging vallen onder 7.5 ([2025-vng-upl-producten-en-diensten-extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md)). **Bevinding:** het verlof hoort bij de lijkbezorging, ook al geeft de ambtenaar van de burgerlijke stand het af ([2026-rijk-wet-op-de-lijkbezorging-wettekst](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), art. 11). GEMMA zet het onder 7.5, beleidsdomein Begraafplaatsen en crematoria, naast het bedrijfsproces Verlenen verlof tot begraving of crematie onder Toestaan lijkbezorging. **Voorstel:** verplaats verlof tot begraven in de UPL naar taakveld 7.5.
-
-### Besluiten redacteur
-
-- 2026-10-05: UPL-product van lijkbezorging, beoordeeld met de toets van 2026-10-05: een product bij een dienst met een afspraak, anders een dienst; de UPL-naam letterlijk, met een synoniem waar dat betekenis toevoegt.

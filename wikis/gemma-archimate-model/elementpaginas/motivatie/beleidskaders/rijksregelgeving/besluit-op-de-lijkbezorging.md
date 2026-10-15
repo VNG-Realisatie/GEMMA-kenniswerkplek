@@ -84,7 +84,3 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-
-### Besluiten redacteur
-
-- 2026-10-05: Opnemen als beleidskader: grondslag van Afgeven laissez-passer (art. 11) en Verlenen verlof tot ontleding (art. 17); werkt de Wet op de lijkbezorging uit.

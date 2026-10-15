@@ -122,13 +122,6 @@ specialisaties:
   omschrijving: Twee graven naast elkaar voor twee met namen aangeduide overledenen (Groningen art. 1 dd, 14). Geen eigen pagina.
 - naam: Vrije-veldgraf
   omschrijving: Particulier graf op het vrije begraafveld, met vrije keus van locatie en monument (Groningen art. 1 r, cc). Geen eigen pagina.
-besluiten:
-- datum: '2026-09-30'
-  besluit: Opname akkoord als gegevensobject zonder GGM-entiteit (GGM-terugmelding 3).
-  gevolg: verwerkt
-- datum: '2026-10-05'
-  besluit: 'Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie en in de zin over het register (die beschrijft de inhoud, niet de naam).'
-  gevolg: verwerkt
 onderwerpen:
 - lijkbezorging
 status: review

@@ -48,7 +48,7 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   vervult_een_rol:
     waarde: ja
-    onderbouwing: Ketenpartner in de ketensamenwerking Bezorgen stoffelijk overschot (art. 10, 12, 17; besluit 2026-10-04).
+    onderbouwing: Ketenpartner in de ketensamenwerking Bezorgen stoffelijk overschot (art. 10, 12, 17).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   soort_partij:
@@ -95,7 +95,7 @@ relaties:
   vindplaats: art. 10, 12, 17
 besluiten:
 - datum: '2026-10-04'
-  besluit: Actor als ketenpartner in het ketenproces Bezorgen lijken (Wlb art. 10, 12), zonder eigen deelproces. Herziet de uitkomst buiten scope.
+  besluit: Actor als ketenpartner in Bezorgen stoffelijk overschot (Wlb art. 10, 12), zonder eigen deelproces. Herziet de uitkomst buiten scope.
   gevolg: verwerkt
 status: review
 beslist:
