@@ -2,7 +2,7 @@
 id: belanghebbende
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Belanghebbende
 onderwerpen:
 - besluitvorming
@@ -29,7 +29,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling belanghebbende.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

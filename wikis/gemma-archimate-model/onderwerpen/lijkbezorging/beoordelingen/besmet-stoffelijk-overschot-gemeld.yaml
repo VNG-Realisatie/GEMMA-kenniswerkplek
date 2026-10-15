@@ -102,7 +102,7 @@ object_van:
   id: besmet-lijk-gemeld
   wijziging: hernoemd
   datum: '2026-10-05'
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

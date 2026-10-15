@@ -163,7 +163,7 @@ besluiten:
 - datum: '2026-10-04'
   besluit: Eigen deelproces dat de dienst Uitvaart vervroegen of uitstellen realiseert, niet de functie Lijkbezorging. Herziet het besluit van 2026-10-01.
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

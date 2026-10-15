@@ -2,7 +2,7 @@
 id: bekendmaken-besluit
 type: bedrijfsproces
 archimate_type: business-process
-status: review
+status: goedgekeurd
 naam: Bekendmaken besluit
 onderwerpen:
 - besluitvorming
@@ -26,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bekendmaken-besluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

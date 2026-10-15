@@ -112,6 +112,7 @@ besluiten:
 - datum: '2026-09-30'
   besluit: 'Afspraak: tweezijdig, met rechten en plichten, ook als het grafrecht als besluit op aanvraag wordt verleend.'
   gevolg: verwerkt
+  zekerheid: kennis
 relaties:
 - soort: associatie (gericht)
   naar: graf
@@ -123,7 +124,7 @@ relaties:
   vindplaats: Wlb art. 23 lid 2; Groningen art. 1 p
 onderwerpen:
 - lijkbezorging
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -137,8 +138,6 @@ beslist:
     generiek: false
     typeregel: 20
   voor_te_leggen:
-  - gegevensobject zonder sterke GGM-match
-  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

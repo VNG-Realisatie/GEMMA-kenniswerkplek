@@ -2,7 +2,7 @@
 id: inhouden-reisdocument
 type: bedrijfsproces
 archimate_type: business-process
-status: review
+status: goedgekeurd
 naam: Inhouden reisdocument
 onderwerpen:
 - burgerzaken
@@ -29,7 +29,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling inhouden-reisdocument.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -138,4 +138,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-08: Het verval van rechtswege triggert de inhouding niet. Nieuwe gebeurtenis Inlevering van het reisdocument (wetsterm, Paspoortwet art. 56) triggert Inhouden reisdocument, het bedrijfsproces voor elke inlevering (teruggevonden vermist, vervallen, beschadigd of gesignaleerd document, art. 54). Vervallen verklaren reisdocument wordt daarin een deelproces, alleen na een signalering (art. 44, 53). Verwerken vermissing reisdocument eindigt bij de registratie en het verval (art. 47 lid 1 onder j). Afgewezen: de vervallenverklaring onder Verwerken vermissing (een vermist document vervalt van rechtswege), en de inlevering van een teruggevonden document als tweede gebeurtenis van Verwerken vermissing (het inhouden zou dan op twee plaatsen staan). *Zekerheid: logica.*
+- 2026-10-08: Het verval van rechtswege triggert de inhouding niet. Nieuwe gebeurtenis Inlevering van het reisdocument (wetsterm, Paspoortwet art. 56) triggert Inhouden reisdocument, het bedrijfsproces voor elke inlevering (teruggevonden vermist, vervallen, beschadigd of gesignaleerd document, art. 54). Vervallen verklaren reisdocument wordt daarin een deelproces, alleen na een signalering (art. 44, 53). Verwerken vermissing reisdocument eindigt bij de registratie en het verval (art. 47 lid 1 onder j). Afgewezen: de vervallenverklaring onder Verwerken vermissing (een vermist document vervalt van rechtswege), en de inlevering van een teruggevonden document als tweede gebeurtenis van Verwerken vermissing (het inhouden zou dan op twee plaatsen staan). *Zekerheid: kennis.*

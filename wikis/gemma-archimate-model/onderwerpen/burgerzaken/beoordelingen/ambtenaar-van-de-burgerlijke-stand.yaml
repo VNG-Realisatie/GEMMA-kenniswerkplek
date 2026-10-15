@@ -188,7 +188,7 @@ doelgroep: gemeente
 specialisaties:
 - naam: Buitengewoon ambtenaar van de burgerlijke stand
   omschrijving: Ambtenaar met een beperkter takenpakket, zoals het voltrekken van huwelijken en registreren van partnerschappen; ook voor één dag aangewezen op verzoek van het bruidspaar (BW 1 art. 16, 16a lid 2). Geen eigen pagina.
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

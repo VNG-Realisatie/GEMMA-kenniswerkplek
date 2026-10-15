@@ -92,7 +92,8 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'Eigen generiek bedrijfsobject naast Regeling en Beleidsnota: een besluit van algemene strekking dat alleen het bestuursorgaan bindt (Awb art. 1:3 lid 4, 4:84), geen algemeen verbindend voorschrift en geen beleidsnota.'
   gevolg: verwerkt
-status: review
+  zekerheid: kennis
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

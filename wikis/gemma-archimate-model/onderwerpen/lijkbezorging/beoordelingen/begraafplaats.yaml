@@ -105,6 +105,7 @@ besluiten:
 - datum: '2026-09-30'
   besluit: 'Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.'
   gevolg: verwerkt
+  zekerheid: indruk
 relaties:
 - soort: aggregatie
   naar: graf
@@ -116,7 +117,7 @@ relaties:
   vindplaats: Wlb art. 23 lid 1, 2; Groningen art. 1 d, h
 onderwerpen:
 - lijkbezorging
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

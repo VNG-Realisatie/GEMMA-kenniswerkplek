@@ -195,7 +195,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Geen ketenproces: de minister voert tegenover de houder geen eigen deel uit. De documentsoorten zijn specialisaties zonder pagina met de wetsterm; de diensten houden de UPL-naam.'
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

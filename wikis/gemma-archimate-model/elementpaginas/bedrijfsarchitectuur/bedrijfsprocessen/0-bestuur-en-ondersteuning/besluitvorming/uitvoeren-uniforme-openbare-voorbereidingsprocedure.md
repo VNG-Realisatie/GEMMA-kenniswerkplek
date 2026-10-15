@@ -2,7 +2,7 @@
 id: uitvoeren-uniforme-openbare-voorbereidingsprocedure
 type: bedrijfsproces
 archimate_type: business-process
-status: review
+status: goedgekeurd
 naam: Uitvoeren uniforme openbare voorbereidingsprocedure
 onderwerpen:
 - besluitvorming
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling uitvoeren-uniforme-openbare-voorbereidingsprocedure.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

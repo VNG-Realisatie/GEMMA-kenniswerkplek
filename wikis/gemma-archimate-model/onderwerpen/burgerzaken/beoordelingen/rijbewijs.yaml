@@ -127,7 +127,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Binnen Burgerzaken, niet een later onderwerp: UPL 360-363 en 434 staan onder 0.2 en op de Utrecht-hubpagina.'
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -141,8 +141,6 @@ beslist:
     generiek: false
     typeregel: 21
   voor_te_leggen:
-  - gegevensobject zonder sterke GGM-match
-  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622

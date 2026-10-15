@@ -140,7 +140,7 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: inwoners en ondernemers
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -155,8 +155,6 @@ beslist:
     generiek: false
     typeregel: 12
   voor_te_leggen:
-  - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
-  open:
   - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

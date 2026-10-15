@@ -2,7 +2,7 @@
 id: model-beheersverordening-begraafplaatsen
 type: beleidskader
 archimate_type: driver
-status: review
+status: goedgekeurd
 naam: Model-beheersverordening begraafplaatsen
 onderwerpen:
 - lijkbezorging
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling model-beheersverordening-begraafplaatsen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

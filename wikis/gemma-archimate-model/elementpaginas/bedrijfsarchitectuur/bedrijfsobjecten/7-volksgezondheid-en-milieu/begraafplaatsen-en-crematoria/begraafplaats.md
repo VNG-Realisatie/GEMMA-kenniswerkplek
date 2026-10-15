@@ -2,7 +2,7 @@
 id: begraafplaats
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Begraafplaats
 onderwerpen:
 - lijkbezorging
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling begraafplaats.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -111,4 +111,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-09-30: Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats. *Zekerheid: logica.*
+- 2026-09-30: Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats. *Zekerheid: indruk.*

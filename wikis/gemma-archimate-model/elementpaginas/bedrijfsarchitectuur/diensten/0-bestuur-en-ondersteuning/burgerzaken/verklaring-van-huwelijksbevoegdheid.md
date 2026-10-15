@@ -2,7 +2,7 @@
 id: verklaring-van-huwelijksbevoegdheid
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Verklaring van huwelijksbevoegdheid
 onderwerpen:
 - burgerzaken
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verklaring-van-huwelijksbevoegdheid.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -91,4 +91,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-07: De Overeenkomst van München 1980 is bron en geen beleidskader; de Nederlandse uitvoering is BW boek 1 art. 49a. Genoemd in de beschrijving van de dienst. *Zekerheid: logica.*
+- 2026-10-07: De Overeenkomst van München 1980 is bron en geen beleidskader; de Nederlandse uitvoering is BW boek 1 art. 49a. Genoemd in de beschrijving van de dienst. *Zekerheid: kennis.*

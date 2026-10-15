@@ -128,7 +128,7 @@ relaties:
   vindplaats: art. 62 lid 1 a
 onderwerpen:
 - lijkbezorging
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -143,8 +143,6 @@ beslist:
     generiek: false
     typeregel: 21
   voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

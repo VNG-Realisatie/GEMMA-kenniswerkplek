@@ -2,7 +2,7 @@
 id: klager
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Klager
 onderwerpen:
 - besluitvorming
@@ -19,7 +19,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling klager.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -77,4 +77,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-12: Nieuwe generieke rol in Besluitvorming: ieder kan klagen, ook over een gedraging jegens een ander, dus de rol Belanghebbende past niet (Awb art. 9:1). *Zekerheid: logica.*
+- 2026-10-12: Nieuwe generieke rol in Besluitvorming: ieder kan klagen, ook over een gedraging jegens een ander, dus de rol Belanghebbende past niet (Awb art. 9:1). *Zekerheid: kennis.*

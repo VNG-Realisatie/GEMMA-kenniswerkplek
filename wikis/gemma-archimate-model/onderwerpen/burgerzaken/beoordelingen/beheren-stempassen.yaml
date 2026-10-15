@@ -156,7 +156,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Procesindeling kiesrecht: Stempas is kernobject van Beheren stempassen, met de deelprocessen Verstrekken stempas, Behandelen verzoek om kiezerspas en Behandelen verzoek om volmacht; de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie.'
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

@@ -40,6 +40,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Buiten scope: loopt via de IND, zonder handeling van de gemeente.'
   gevolg: afwijzen
+  zekerheid: kennis
 beslist:
   uitkomst:
     soort: buiten_scope

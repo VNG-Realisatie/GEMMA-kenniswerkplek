@@ -2,7 +2,7 @@
 id: beheren-rijbewijzen
 type: bedrijfsproces
 archimate_type: business-process
-status: review
+status: goedgekeurd
 naam: Beheren rijbewijzen
 onderwerpen:
 - burgerzaken
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beheren-rijbewijzen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

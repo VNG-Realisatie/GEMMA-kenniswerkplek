@@ -2,7 +2,7 @@
 id: vergunning
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Vergunning
 onderwerpen:
 - besluitvorming
@@ -29,7 +29,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vergunning.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -152,4 +152,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-09-30: Het gekozen niveau voor de vergunningen en verloven in de lijkbezorging (geen element per soort vergunning of verlof). *Zekerheid: logica.*
+- 2026-09-30: Het gekozen niveau voor de vergunningen en verloven in de lijkbezorging (geen element per soort vergunning of verlof). *Zekerheid: indruk.*

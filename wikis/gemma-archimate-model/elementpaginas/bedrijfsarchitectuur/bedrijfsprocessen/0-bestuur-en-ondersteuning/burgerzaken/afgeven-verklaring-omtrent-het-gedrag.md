@@ -2,7 +2,7 @@
 id: afgeven-verklaring-omtrent-het-gedrag
 type: bedrijfsproces
 archimate_type: business-process
-status: review
+status: goedgekeurd
 naam: Afgeven verklaring omtrent het gedrag
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling afgeven-verklaring-omtrent-het-gedrag.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -115,4 +115,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-08: Orkestratie (IK 27): de minister is verantwoordelijk voor de verklaring, de gemeente voert de ontvangst en het onderzoek van de aanvraag voor hem uit (Wet justitiële en strafvorderlijke gegevens art. 30, 35-37). Geen bedrijfsinteractie; blijft het levensloopproces van Verklaring omtrent het gedrag, met het deel van de minister in de beschrijving, en aggregeert het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag. *Zekerheid: logica.*
+- 2026-10-08: Orkestratie (IK 27): de minister is verantwoordelijk voor de verklaring, de gemeente voert de ontvangst en het onderzoek van de aanvraag voor hem uit (Wet justitiële en strafvorderlijke gegevens art. 30, 35-37). Geen bedrijfsinteractie; blijft het levensloopproces van Verklaring omtrent het gedrag, met het deel van de minister in de beschrijving, en aggregeert het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag. *Zekerheid: kennis.*

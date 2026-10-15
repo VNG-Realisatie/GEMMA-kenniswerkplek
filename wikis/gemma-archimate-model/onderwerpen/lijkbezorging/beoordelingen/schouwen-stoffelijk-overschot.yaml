@@ -150,7 +150,7 @@ object_van:
   datum: '2026-10-05'
 kernobject: stoffelijk-overschot
 afnemer: extern
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

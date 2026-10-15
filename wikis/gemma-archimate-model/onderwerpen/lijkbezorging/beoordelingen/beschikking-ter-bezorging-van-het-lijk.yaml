@@ -25,6 +25,7 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Buiten scope: wilsbeschikking van de overledene zelf (art. 19); de gemeente beslist er niet over. Ook als invoer bij een gemeentebegrafenis geen pagina (precedent Verklaring van overlijden).'
   gevolg: afwijzen
+  zekerheid: kennis
 beslist:
   uitkomst:
     soort: buiten_scope

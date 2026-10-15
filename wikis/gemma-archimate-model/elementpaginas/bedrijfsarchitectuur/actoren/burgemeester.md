@@ -2,7 +2,7 @@
 id: burgemeester
 type: actor
 archimate_type: business-actor
-status: review
+status: goedgekeurd
 naam: Burgemeester
 onderwerpen:
 - bestuur-en-organisatie
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling burgemeester.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

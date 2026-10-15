@@ -59,6 +59,7 @@ besluiten:
 - datum: '2026-09-30'
   besluit: 'Geen pagina: de vorm (representation) van de gegevens van graven, toegelicht bij Graf.'
   gevolg: verwerkt
+  zekerheid: indruk
 onderwerpen:
 - lijkbezorging
 beslist:

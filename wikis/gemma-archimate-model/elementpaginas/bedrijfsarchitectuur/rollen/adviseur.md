@@ -2,7 +2,7 @@
 id: adviseur
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Adviseur
 onderwerpen:
 - lijkbezorging
@@ -26,7 +26,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling adviseur.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

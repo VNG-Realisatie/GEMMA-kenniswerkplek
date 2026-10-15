@@ -2,7 +2,7 @@
 id: besluit
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Besluit
 onderwerpen:
 - besluitvorming
@@ -52,7 +52,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

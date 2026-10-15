@@ -2,7 +2,7 @@
 id: bezorgen-stoffelijk-overschot
 type: bedrijfsinteractie
 archimate_type: business-interaction
-status: review
+status: goedgekeurd
 naam: Bezorgen stoffelijk overschot
 onderwerpen:
 - lijkbezorging
@@ -25,11 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bezorgen-stoffelijk-overschot.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
-
-## Ter discussie
-
-- bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -125,4 +121,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-08: Estafette: gemeente, houder en officier van justitie werken elk onder eigen verantwoordelijkheid samen, zonder aansturing van het geheel (IK 27-34; PH 144). Wordt een bedrijfsinteractie met kernobject Stoffelijk overschot, bediend door Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis; de aggregaties worden bedieningen, Besmet stoffelijk overschot gemeld gaat naar Toestaan lijkbezorging en Overlijden start de interactie. Het object in Archi (Bezorgen lijken) vervalt: proces naar interactie is een typewijziging (regel Objectbehoud); de interactie is een nieuw object. *Zekerheid: logica.*
+- 2026-10-08: Estafette: gemeente, houder en officier van justitie werken elk onder eigen verantwoordelijkheid samen, zonder aansturing van het geheel (IK 27-34; PH 144). Wordt een bedrijfsinteractie met kernobject Stoffelijk overschot, bediend door Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis; de aggregaties worden bedieningen, Besmet stoffelijk overschot gemeld gaat naar Toestaan lijkbezorging en Overlijden start de interactie. Het object in Archi (Bezorgen lijken) vervalt: proces naar interactie is een typewijziging (regel Objectbehoud); de interactie is een nieuw object. *Zekerheid: kennis.*

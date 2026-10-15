@@ -114,7 +114,7 @@ relaties:
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7 lid 1-2
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -128,8 +128,6 @@ beslist:
     generiek: false
     typeregel: 21
   voor_te_leggen:
-  - gegevensobject zonder sterke GGM-match
-  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627

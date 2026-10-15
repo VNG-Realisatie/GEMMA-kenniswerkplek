@@ -193,7 +193,7 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Vervallen verklaren grafrecht specialiseert niet Opleggen sanctie: het verval volgt uit de afspraak, niet uit handhaving.'
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

@@ -167,7 +167,7 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'De bestuursrechter is geen element: de gemeente is partij in het beroep, de rechter staat in de beschrijving.'
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

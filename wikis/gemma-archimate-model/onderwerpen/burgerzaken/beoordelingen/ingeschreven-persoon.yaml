@@ -144,7 +144,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Kenmerk generiek nee: één concreet object dat andere onderwerpen met relaties gebruiken, geen abstract type met domeinspecialisaties zoals Besluit.'
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

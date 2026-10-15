@@ -2,7 +2,7 @@
 id: beschikking
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Beschikking
 onderwerpen:
 - besluitvorming
@@ -50,7 +50,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beschikking.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

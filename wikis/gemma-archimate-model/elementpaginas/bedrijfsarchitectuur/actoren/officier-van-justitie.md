@@ -2,7 +2,7 @@
 id: officier-van-justitie
 type: actor
 archimate_type: business-actor
-status: review
+status: goedgekeurd
 naam: Officier van justitie
 onderwerpen:
 - lijkbezorging
@@ -20,7 +20,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling officier-van-justitie.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -81,4 +81,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-04: Actor als ketenpartner in Bezorgen stoffelijk overschot (Wlb art. 10, 12), zonder eigen deelproces. Herziet de uitkomst buiten scope. *Zekerheid: logica.*
+- 2026-10-04: Actor als ketenpartner in Bezorgen stoffelijk overschot (Wlb art. 10, 12), zonder eigen deelproces. Herziet de uitkomst buiten scope. *Zekerheid: kennis.*

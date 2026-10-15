@@ -2,7 +2,7 @@
 id: beheren-nederlanderschap
 type: bedrijfsproces
 archimate_type: business-process
-status: review
+status: goedgekeurd
 naam: Beheren Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -28,7 +28,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beheren-nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -133,4 +133,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-08: Geen bedrijfsinteractie: bij optie en afstand beslist de burgemeester zelf, bij de naturalisatie voert de gemeente delen uit voor de minister (orkestratie, IK 27). Blijft het ene levensloopproces van Nederlanderschap, met zijn object in Archi; Behandelen verkrijging en verlies Nederlanderschap is erin samengevoegd: de vier bedrijfsprocessen en de toegangsrelaties komen hier terug, het object van Behandelen vervalt. *Zekerheid: logica.*
+- 2026-10-08: Geen bedrijfsinteractie: bij optie en afstand beslist de burgemeester zelf, bij de naturalisatie voert de gemeente delen uit voor de minister (orkestratie, IK 27). Blijft het ene levensloopproces van Nederlanderschap, met zijn object in Archi; Behandelen verkrijging en verlies Nederlanderschap is erin samengevoegd: de vier bedrijfsprocessen en de toegangsrelaties komen hier terug, het object van Behandelen vervalt. *Zekerheid: kennis.*

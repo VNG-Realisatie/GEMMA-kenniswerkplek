@@ -124,7 +124,7 @@ homoniemen:
   waar: UPL-lijst extern
   element: uittreksel-burgerlijke-stand
   naamkeuze: 'Deze pagina heet Akte van de burgerlijke stand: de akte zelf. De dienst heet Uittreksel burgerlijke stand, met de UPL-naam als synoniem.'
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -138,8 +138,6 @@ beslist:
     generiek: false
     typeregel: 21
   voor_te_leggen:
-  - gegevensobject zonder sterke GGM-match
-  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1

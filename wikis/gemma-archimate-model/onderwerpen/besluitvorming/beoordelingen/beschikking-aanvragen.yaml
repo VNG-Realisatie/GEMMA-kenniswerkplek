@@ -116,7 +116,7 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'De UPL-naam Beschikking is een synoniem van de dienst Beschikking aanvragen: zo is de dienst geen homoniem van het bedrijfsobject Beschikking.'
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
