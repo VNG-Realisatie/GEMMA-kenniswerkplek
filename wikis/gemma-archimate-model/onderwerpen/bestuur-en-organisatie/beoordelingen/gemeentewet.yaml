@@ -92,6 +92,37 @@ relaties:
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
   vindplaats: art. 150 lid 1
+- soort: associatie (gericht)
+  naar: regeling
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  vindplaats: art. 147 lid 1, 149
+  via: beheersverordening-begraafplaatsen
+- soort: associatie (gericht)
+  naar: heffingsverordening
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  vindplaats: art. 216
+  via: verordening-lijkbezorgingsrechten
+- soort: associatie (gericht)
+  naar: heffing
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  vindplaats: art. 229 lid 1, 229b lid 1
+  via: lijkbezorgingsrechten
+- soort: associatie (gericht)
+  naar: beleidsnota
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  vindplaats: art. 150 lid 1
 regelgever: rijk
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -122,5 +153,6 @@ beslist:
     typeregel: 16
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
+  - 2024-rijk-gemeentewet-wettekst
   herkomst: rijksregelgeving
   pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/gemeentewet.md

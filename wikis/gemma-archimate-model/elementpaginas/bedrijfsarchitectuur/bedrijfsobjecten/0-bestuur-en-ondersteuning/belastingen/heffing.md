@@ -94,7 +94,7 @@ Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 
 #### Lijkbezorging
 
 - **Grafrechten**: Specialisatie zonder pagina van Heffing: in de UPL het product grafrechten (nr. 164, Gemeentewet art. 229), de lijkbezorgingsrechten voor de uitgifte van een graf; het tarief van de dienst Grafuitgifte. Niet te verwarren met Grafrecht, het recht op het graf zelf.
-- **Lijkbezorgingsrechten**: Specialisatie zonder pagina van Heffing: retributies voor het gebruik van begraafplaats of crematorium (VNG retributies).
+- **Lijkbezorgingsrechten**: Specialisatie zonder pagina van Heffing: retributies voor het gebruik van begraafplaats of crematorium (VNG retributies). Genoemd door [Gemeentewet](../../../../motivatie/beleidskaders/rijksregelgeving/gemeentewet.md).
 - **Retributie**: Specialisatie zonder pagina van Heffing: heffing voor het gebruik van gemeentebezittingen of het genot van gemeentelijke diensten (Gemeentewet art. 229; VNG retributies).
 
 ### Kenmerken
@@ -134,6 +134,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Gemeentewet](../../../../motivatie/beleidskaders/rijksregelgeving/gemeentewet.md) | is grondslag voor *associatie (gericht)* | Heffing | [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 229 lid 1, 229b lid 1) |
 | [Heffingsverordening](heffingsverordening.md) | regelt *associatie (gericht)* | Heffing | [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-retributies.md) (Gemeentewet art. 216, 229; § Lijkbezorgingsrechten) |
 | [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | leidt tot (lijkbezorgingsrechten) *toegang (registreren)* | Heffing | [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md), [VNG Retributies](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-retributies.md) (Gemeentewet art. 229 lid 1 onder a, b; VNG § Lijkbezorgingsrechten) |
 

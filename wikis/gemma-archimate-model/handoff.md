@@ -17,17 +17,16 @@ Overdracht naar de volgende Sessie (2026-10-15). Wordt bij elke overdracht overs
 
 ## Volgende klus
 
-In [todo.md](todo.md), in deze volgorde:
+In [todo.md](todo.md): **ArchiMate-indeling als eerste selectie in de beslistabel**, een eigen klus op denkniveau hoog, met een plan, vóór de Applicatielaag. Begin met een plan in `plannen/` en leg dat aan de redacteur voor; raak `tools/bepaal_type.py`, het schema en de beoordelingen pas na akkoord.
 
-1. **Gemeentewet als grondslag voor de andere onderwerpen** (Herbeoordeling): de relaties *is grondslag voor* naar Lijkbezorging (art. 147, 149, 229), Heffingen en betalingen en Besluitvorming (art. 150 bij Beleidsnota). Klein, denkniveau middel; een onderdeel van een onderwerp volgens skill gemma-archimate-model-update, fase 3.
-2. **ArchiMate-indeling als eerste selectie in de beslistabel**: een eigen klus op denkniveau hoog, met een plan, vóór de Applicatielaag.
+Afgerond in de laatste Sessie: de relaties *is grondslag voor* van de Gemeentewet naar Regeling (art. 147, 149), Heffingsverordening (art. 216), Heffing (art. 229, 229b) en Beleidsnota (art. 150 lid 1), via de specialisaties zonder pagina; AKKOORD 2026-10-15.
 
 ## Modeladvies
 
-Klus 1 vraagt denkniveau middel: relaties toevoegen met bron en vindplaats, beslissen, voorleggen in één tabel, akkoord. Een sneller model volstaat. Begin een nieuwe Sessie: deze is gevuld met de besluiten.
+Denkniveau hoog: een sterker model of hoge redeneerinspanning, voor het plan en de omzetting van alle beoordelingen. Begin een nieuwe Sessie: de vorige draaide op een sneller model en is gevuld met de relaties.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en todo.md. Voer de todo "Gemeentewet als grondslag voor de andere onderwerpen" uit volgens skill gemma-archimate-model-update (fase 3, zonder nieuwe begrippen): leg per element de relatie is grondslag voor vanuit de beoordeling gemeentewet vast, met het artikel als vindplaats en een citaat in de bronduiding (tools/bronduiding.py). Draai tools/beslissen.py, leg in één tabel voor met de kolommen Voorleggen omdat en Eerder besluit (zekerheid), en vraag om AKKOORD. Leg een besluit alleen vast volgens de criteria in references/besluiten.md. Daarna afronden met tools/afronden.py en een commit met prefix add of update.
+Lees wikis/gemma-archimate-model/handoff.md en todo.md. Maak een plan (plannen/<datum>-archimate-indeling.md) voor de todo "ArchiMate-indeling als eerste selectie in de beslistabel": de laag en het aspect als eerste keuze, de bestaande kenmerken als controle, een omzetting met een script waarbij de uitkomsten gelijk blijven, en waar Product en Locatie komen. Leg het plan voor aan de redacteur en begin pas na akkoord met de uitvoering.
 ```

@@ -17,6 +17,7 @@ data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-gemeentewet-wettekst
+- 2024-rijk-gemeentewet-wettekst
 ---
 
 # Gemeentewet
@@ -78,6 +79,10 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Gemeentewet | is grondslag voor *associatie (gericht)* | [Betrekken inwoners bij beleid](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md) | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1 en 2) |
 | Gemeentewet | is grondslag voor *associatie (gericht)* | [Behandelen verzoek uitdaagrecht](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md) | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 3) |
 | Gemeentewet | is grondslag voor *associatie (gericht)* | [Participatieverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md) | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1) |
+| Gemeentewet | is grondslag voor *associatie (gericht)* | [Regeling](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md) | [Gemeentewet](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 147 lid 1, 149) |
+| Gemeentewet | is grondslag voor *associatie (gericht)* | [Heffingsverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) | [Gemeentewet](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 216) |
+| Gemeentewet | is grondslag voor *associatie (gericht)* | [Heffing](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) | [Gemeentewet](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 229 lid 1, 229b lid 1) |
+| Gemeentewet | is grondslag voor *associatie (gericht)* | [Beleidsnota](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsnota.md) | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1) |
 
 #### Inkomend
 
@@ -92,6 +97,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | Korte titel | Bron |
 |---|---|
 | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) |
+| [Gemeentewet](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) - geldend per 2024-01-31 |
 
 ### Afstemming met GEMMA
 

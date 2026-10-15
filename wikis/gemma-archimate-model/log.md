@@ -2085,3 +2085,4 @@ Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen o
 | 2026-10-15 | promote | wijzigen-naamgebruik | Mark Backer | 7203f204 |
 | 2026-10-15 | promote | zakenpaspoort | Mark Backer | 15de0d30 |
 | 2026-10-15 | promote | zienswijze | Mark Backer | 1b87e9f4 |
+| 2026-10-15 | promote | gemeentewet | Mark Backer | 5ef439a0 |
