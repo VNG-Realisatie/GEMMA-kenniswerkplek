@@ -2,12 +2,12 @@
 id: model-participatieverordening
 type: beleidskader
 archimate_type: driver
-status: review
+status: goedgekeurd
 naam: Model Participatieverordening
 onderwerpen:
 - participatie
 taakveld: 0 Bestuur en Ondersteuning
-beleidsdomein: Besluitvorming
+beleidsdomein: Participatie
 definitie: VNG-modelverordening voor de verordening waarin een gemeente het betrekken van inwoners bij beleid en het uitdaagrecht regelt.
 match:
   gemma: geen
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling model-participatieverordening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -56,7 +56,7 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 ### Plaats in de indelingen
 
 - **Regelgever**: VNG-modelverordening.
-- **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
+- **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Participatie.
 
 ### Kenmerken
 
@@ -71,7 +71,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, concreet benoemde VNG-modelverordening als geheel. [VNG Implementatiehandleiding participatieverordening](../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, VNG-modelverordening voor alle gemeenten, geen regeling van één gemeente. [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, actueel model van december 2024, voor de wet die sinds 1 januari 2025 geldt (Stb. 2024, 203); gemeenten vervangen hun inspraakverordening vóór 1 januari 2027. [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md), [VNG Implementatiehandleiding participatieverordening](../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, werkt uit, nooit grondslag; var. 1 art. 2–5 en var. 2 art. [3], [7]–[10] werken art. 150 lid 1 en 2 Gemeentewet uit voor Uitvoeren inwonersparticipatie (besluit over participatie, plan, inspraak, eindverslag); var. 1 art. 6–[9] en var. 2 art. [11]–[14] werken art. 150 lid 3 uit voor Behandelen verzoek uitdaagrecht (verzoek, beoordeling, afspraken). [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, werkt uit, nooit grondslag; var. 1 art. 2–5 en var. 2 art. [3], [7]–[10] werken art. 150 lid 1 en 2 Gemeentewet uit voor Betrekken inwoners bij beleid (besluit over participatie, plan, inspraak, eindverslag); var. 1 art. 6–[9] en var. 2 art. [11]–[14] werken art. 150 lid 3 uit voor Behandelen verzoek uitdaagrecht (verzoek, beoordeling, afspraken). [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki. [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 
 ### Relaties
@@ -80,10 +80,10 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Model Participatieverordening | werkt uit voor *associatie (gericht)* | [Uitvoeren inwonersparticipatie](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md) | [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2–5, var. 2 art. [3], [7]–[10]) |
+| Model Participatieverordening | werkt uit voor *associatie (gericht)* | [Betrekken inwoners bij beleid](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md) | [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2–5, var. 2 art. [3], [7]–[10]) |
 | Model Participatieverordening | werkt uit voor *associatie (gericht)* | [Behandelen verzoek uitdaagrecht](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md) | [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 6–[9], var. 2 art. [11]–[14]) |
 | Model Participatieverordening | werkt uit *associatie (gericht)* | [Gemeentewet](../rijksregelgeving/gemeentewet.md) | [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (aanhef (art. 149 en 150 Gemeentewet); var. 1 art. 1 (uitdaagrecht, art. 150 lid 3)) |
-| Model Participatieverordening | is model voor *associatie (gericht)* | [Participatieverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/participatieverordening.md) | [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (aanhef; var. 1 art. [14] lid 2) |
+| Model Participatieverordening | is model voor *associatie (gericht)* | [Participatieverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md) | [VNG Model Participatieverordening](../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (aanhef; var. 1 art. [14] lid 2) |
 
 ### Kwaliteitsdoelen
 

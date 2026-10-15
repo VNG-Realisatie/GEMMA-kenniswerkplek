@@ -100,7 +100,7 @@ per_onderwerp:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent de actor Burger (procesarchitectuur, Actoren en rollen) zonder definitie en zonder relaties; een burger is niet altijd ingezetene van de gemeente, dus geen match op betekenis. Ingezetene (RSGB) is een bedrijfsobject, de registratie van de persoon, geen partij. Nieuw voor GEMMA.
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

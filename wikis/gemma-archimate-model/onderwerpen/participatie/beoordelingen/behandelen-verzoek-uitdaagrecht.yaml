@@ -129,6 +129,9 @@ besluiten:
 - datum: '2026-09-30'
   besluit: 'Geen eigen pagina: dezelfde procedure van verzoek, beoordeling, afspraken en evaluatie als overheidsparticipatie.'
   gevolg: verwerkt
+- datum: '2026-10-15'
+  besluit: 'Levensloopproces met kernobject Verzoek uitdaagrecht, van indienen tot evaluatie van de uitvoering. Zekerheid: logica.'
+  gevolg: verwerkt
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Participatie
@@ -192,7 +195,7 @@ relaties:
   bronnen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. 6–[9]; var. 2 art. [11]–[14]
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

@@ -1,50 +1,39 @@
 ---
-id: uitvoeren-inwonersparticipatie
+id: betrekken-inwoners-bij-beleid
 type: bedrijfsproces
 archimate_type: business-process
-status: review
-naam: Uitvoeren inwonersparticipatie
+status: goedgekeurd
+naam: Betrekken inwoners bij beleid
 onderwerpen:
 - participatie
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Participatie
-definitie: Het op initiatief van de gemeente betrekken van inwoners en maatschappelijke partijen bij de voorbereiding, uitvoering of evaluatie van beleid.
+definitie: Het op initiatief van de gemeente betrekken van inwoners en maatschappelijke partijen bij de voorbereiding, uitvoering of evaluatie van gemeentelijk beleid.
 match:
-  gemma: partieel
+  gemma: geen
 data_object: nee
 procesniveau: levensloopproces
 afnemer: extern
 synoniemen:
 - Inwonersparticipatie (beleid)
-- Generiek deelproces Uitvoeren participatie (GEMMA)
+- Uitvoeren inwonersparticipatie (wiki)
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
 - 2024-vng-model-participatieverordening
-gemma_id: id-fcd03bc4-cf22-493d-ad97-fba88be7b13a
-gemma_naam: Generiek deelproces Uitvoeren participatie
-gemma_type: business-process
-gemma_map: Business / Procesarchitectuur / Vaststellen omgevingsplan
-gemma_eigenschappen:
-  Object ID: fcd03bc4-cf22-493d-ad97-fba88be7b13a
 ---
 
-# Uitvoeren inwonersparticipatie
+# Betrekken inwoners bij beleid
 
-<!-- Gegenereerd door tools/render.py uit de beoordeling uitvoeren-inwonersparticipatie.yaml. Wijzig de beoordeling, niet deze pagina. -->
+<!-- Gegenereerd door tools/render.py uit de beoordeling betrekken-inwoners-bij-beleid.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
-
-## Ter discussie
-
-- Beleidsdomein: het GGM kent onder taakveld 0 alleen Griffie, en de wiki gebruikt Besluitvorming voor de algemene bestuursrechtelijke procedures. Participatie past in geen van beide: het is een eigen taak uit art. 150 Gemeentewet met eigen kernobjecten (Participatieplan, Verzoek uitdaagrecht). Advies: een gemeentelijk beleidsdomein Participatie onder 0 Bestuur en Ondersteuning (zo ingevuld bij dit proces, Participatieplan en Eindverslag inwonersparticipatie), met een beschrijving in het register van beleidsdomeinen en een GGM-terugmelding (hiaat). Alternatief: Besluitvorming, maar dat is een thematisch onderwerp en geen eigen taak.
-- Procesniveau: dit proces omvat de hele levensloop van één participatieplan, van opstellen tot het eindverslag, en is daarom een levensloopproces (bedrijfsproces in ArchiMate) met kernobject Participatieplan; besluit K4 noemt het een eigen bedrijfsproces. Er is geen ander proces op het participatieplan, dus geen bedrijfsproces eronder. Advies: levensloopproces bevestigen; de deelprocessen (plan, betrekken, eindverslag) staan in deelprocessen.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
 ### Definitie
 
-Het op initiatief van de gemeente betrekken van inwoners en maatschappelijke partijen bij de voorbereiding, uitvoering of evaluatie van beleid.
+Het op initiatief van de gemeente betrekken van inwoners en maatschappelijke partijen bij de voorbereiding, uitvoering of evaluatie van gemeentelijk beleid.
 
 ### Beschrijving
 
@@ -67,7 +56,7 @@ De VNG-modelverordening sluit inwonersparticipatie facultatief uit, onder meer b
 | Synoniem | Context |
 |---|---|
 | Inwonersparticipatie | beleid |
-| Generiek deelproces Uitvoeren participatie | GEMMA |
+| Uitvoeren inwonersparticipatie | wiki |
 
 ## Plaats in het model
 
@@ -111,19 +100,18 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Uitvoeren inwonersparticipatie | stelt op en maakt openbaar *toegang (registreren)* | [Participatieplan](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieplan.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3 lid 1, 3; var. 2 art. [7] lid 1, 3) |
-| Uitvoeren inwonersparticipatie | stelt op en maakt openbaar *toegang (registreren)* | [Eindverslag inwonersparticipatie](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/eindverslag-inwonersparticipatie.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 5 lid 1, 3; var. 2 art. [10] lid 1, 3) |
-| Uitvoeren inwonersparticipatie | leidt tot (bij inspraak) *triggering* | [Uitvoeren uniforme openbare voorbereidingsprocedure](../besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md) | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 2; var. 1 art. 4; var. 2 art. [8]) |
-| Uitvoeren inwonersparticipatie | stelt het plan op aan de hand van (participatiebeleid) *toegang (raadplegen)* | [Beleidsnota](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsnota.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3 lid 1; var. 2 art. [7] lid 1) |
-| Uitvoeren inwonersparticipatie | volgt de regels van *toegang (raadplegen)* | [Participatieverordening](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/participatieverordening.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2–5; var. 2 art. [3]–[10]) |
+| Betrekken inwoners bij beleid | stelt op en maakt openbaar *toegang (registreren)* | [Participatieplan](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieplan.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3 lid 1, 3; var. 2 art. [7] lid 1, 3) |
+| Betrekken inwoners bij beleid | leidt tot (bij inspraak) *triggering* | [Uitvoeren uniforme openbare voorbereidingsprocedure](../besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md) | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 2; var. 1 art. 4; var. 2 art. [8]) |
+| Betrekken inwoners bij beleid | stelt het plan op aan de hand van (participatiebeleid) *toegang (raadplegen)* | [Beleidsnota](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsnota.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3 lid 1; var. 2 art. [7] lid 1) |
+| Betrekken inwoners bij beleid | volgt de regels van *toegang (raadplegen)* | [Participatieverordening](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2–5; var. 2 art. [3]–[10]) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Beslisser](../../../rollen/beslisser.md) | besluit over inwonersparticipatie en stelt plan en eindverslag op *toewijzing* | Uitvoeren inwonersparticipatie | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2 lid 1, 3 lid 1, 5 lid 1; var. 2 art. [3], [7], [10]) |
-| [Gemeentewet](../../../../motivatie/beleidskaders/rijksregelgeving/gemeentewet.md) | is grondslag voor *associatie (gericht)* | Uitvoeren inwonersparticipatie | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1 en 2) |
-| [Model Participatieverordening](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-participatieverordening.md) | werkt uit voor *associatie (gericht)* | Uitvoeren inwonersparticipatie | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2–5, var. 2 art. [3], [7]–[10]) |
+| [Beslisser](../../../rollen/beslisser.md) | besluit over inwonersparticipatie en stelt plan en eindverslag op *toewijzing* | Betrekken inwoners bij beleid | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2 lid 1, 3 lid 1, 5 lid 1; var. 2 art. [3], [7], [10]) |
+| [Gemeentewet](../../../../motivatie/beleidskaders/rijksregelgeving/gemeentewet.md) | is grondslag voor *associatie (gericht)* | Betrekken inwoners bij beleid | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1 en 2) |
+| [Model Participatieverordening](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-participatieverordening.md) | werkt uit voor *associatie (gericht)* | Betrekken inwoners bij beleid | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2–5, var. 2 art. [3], [7]–[10]) |
 
 ## Herkomst
 
@@ -137,8 +125,10 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 
 ### Afstemming met GEMMA
 
-Match **partieel** met GEMMA-element *Generiek deelproces Uitvoeren participatie* (business-process). GEMMA kent het Generiek deelproces Uitvoeren participatie, zonder definitie, in de procesarchitectuur van Vaststellen omgevingsplan, waar het de Deelservice Participatie realiseert. Dit element is breder en van een ander niveau, een eigen proces van plan tot eindverslag voor beleid in elk domein; de export geeft het GEMMA-element deze naam en definitie (besluit K4, voorleggen in fase 3).
+Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. GEMMA kent het Generiek deelproces Uitvoeren participatie in de procesarchitectuur van Vaststellen omgevingsplan, waar het de Deelservice Participatie realiseert: participatie op grond van de Omgevingswet. Dit element is de participatie bij gemeentelijk beleid in elk domein op grond van art. 150 Gemeentewet, van plan tot eindverslag; een ander begrip, en de naam maakt dat onderscheid. Nieuw voor GEMMA.
 
 ### Besluiten redacteur
 
 - 2026-10-15: Eigen bedrijfsproces met Participatieplan als kernobject, geen deelproces van het vaststellen van beleid en geen bedrijfsinteractie: eigen aanleiding, plan en eindverslag van het bestuursorgaan.
+- 2026-10-15: Heroverweging van het besluit over het eigen proces (fase 1, genomen op eerste indruk, met participatie in het sociaal domein in gedachten): levensloopproces met kernobject Participatieplan, één proces voor participatie bij beleid in elk domein (Gemeentewet art. 150 lid 1). Geen generiek deelproces van het vaststellen van beleid en geen bedrijfsinteractie. Zekerheid: logica; opnieuw toetsen als er een proces voor het vaststellen van beleid komt.
+- 2026-10-15: Geen GEMMA-match met het Generiek deelproces Uitvoeren participatie (Vaststellen omgevingsplan): participatie in het fysieke domein (Omgevingswet) en in het sociaal domein is een andere participatie dan die bij gemeentelijk beleid uit art. 150 Gemeentewet. Hernoemd tot Betrekken inwoners bij beleid, zodat de naam dat onderscheid laat zien. Zekerheid: kennis.

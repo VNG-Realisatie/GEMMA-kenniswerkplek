@@ -102,7 +102,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 - **Beheersverordening begraafplaatsen**: Verordening waarin de gemeente de regels voor de begraafplaats vastlegt; de VNG biedt een model (VNG; Groningen). Geen eigen pagina.
 - **[Heffingsverordening](../belastingen/heffingsverordening.md)**: Verordening over de heffing van belastingen en rechten.
-- **[Participatieverordening](participatieverordening.md)**: Verordening van de raad over de manier waarop inwoners en maatschappelijke partijen bij het beleid worden betrokken, met het uitdaagrecht (Gemeentewet art. 150).
+- **[Participatieverordening](../participatie/participatieverordening.md)**: Verordening van de raad over de manier waarop inwoners en maatschappelijke partijen bij het beleid worden betrokken, met het uitdaagrecht (Gemeentewet art. 150).
 
 ### Relaties
 
@@ -120,7 +120,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 | [Heffingsverordening](../belastingen/heffingsverordening.md) | is een *specialisatie* | Regeling | [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 216) |
 | [Model-APV](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-apv.md) | is model voor (algemene plaatselijke verordening) *associatie (gericht)* | Regeling | [Model-APV](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-vng-model-apv.md) (aanhef; leeswijzer) |
 | [Model-beheersverordening begraafplaatsen](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md) | is model voor (beheersverordening begraafplaatsen) *associatie (gericht)* | Regeling | [VNG Model-beheersverordening begraafplaatsen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-wet-op-de-lijkbezorging.md) (aanhef; VNG inleiding) |
-| [Participatieverordening](participatieverordening.md) | is een *specialisatie* | Regeling | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 1; model aanhef) |
+| [Participatieverordening](../participatie/participatieverordening.md) | is een *specialisatie* | Regeling | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 1; model aanhef) |
 
 ## Herkomst
 

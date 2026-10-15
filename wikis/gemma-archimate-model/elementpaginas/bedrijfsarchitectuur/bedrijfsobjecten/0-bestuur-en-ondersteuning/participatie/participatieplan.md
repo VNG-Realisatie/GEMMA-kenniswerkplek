@@ -2,7 +2,7 @@
 id: participatieplan
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Participatieplan
 onderwerpen:
 - participatie
@@ -27,11 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling participatieplan.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
-
-## Ter discussie
-
-- Wettelijke grondslag: de Gemeentewet schrijft geen participatieplan voor; art. 150 lid 1 eist alleen een verordening over de wijze waarop ingezetenen en belanghebbenden bij beleid worden betrokken. Plan en eindverslag komen uit de VNG-modelverordening (var. 1 art. 3, 5), die een gemeente kan aanpassen. Het kenmerk betekenis in onderwerp en de beschrijving steunen daarom op art. 150 lid 1. Advies: houden als kernobject (besluit K4), met art. 150 lid 1 als landelijke bron, en in de beschrijving vermelden dat de wet het plan niet voorschrijft (zo verwerkt). Geldt ook voor Eindverslag inwonersparticipatie.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -67,7 +63,7 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 ### Plaats in de indelingen
 
 - **Objectniveau**: kernobject.
-- **Levensloop bepaald door**: [Uitvoeren inwonersparticipatie](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md).
+- **Levensloop bepaald door**: [Betrekken inwoners bij beleid](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Participatie.
 
 ### Kenmerken
@@ -82,7 +78,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 | **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij participatie: het plan geeft vorm aan het betrekken van ingezetenen bij beleid dat de verordening regelt (art. 150 lid 1; var. 1 art. 3). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, eén plan per beleid dat voorbereid, uitgevoerd of geëvalueerd wordt (var. 1 art. 3 lid 2 onder a). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, ontstaat vóór de participatie, wordt openbaar gemaakt en is afgerond als na afloop het eindverslag is opgesteld (var. 1 art. 3 lid 1, 5 lid 1). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, het bestuursorgaan stelt het plan op en maakt het openbaar, binnen Uitvoeren inwonersparticipatie (var. 1 art. 3 lid 1; var. 2 art. [7] lid 1). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, het bestuursorgaan stelt het plan op en maakt het openbaar, binnen Betrekken inwoners bij beleid (var. 1 art. 3 lid 1; var. 2 art. [7] lid 1). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in de wiki, het GGM of GEMMA; een plan met eigen voorgeschreven inhoud en openbaarmaking (var. 1 art. 3 lid 2; var. 2 art. [7] lid 2). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 
 ### Relaties
@@ -91,8 +87,8 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| [Participatieverordening](../besluitvorming/participatieverordening.md) | regelt de inhoud van *associatie (gericht)* | Participatieplan | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3, var. 2 art. [7]) |
-| [Uitvoeren inwonersparticipatie](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md) | stelt op en maakt openbaar *toegang (registreren)* | Participatieplan | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3 lid 1, 3; var. 2 art. [7] lid 1, 3) |
+| [Betrekken inwoners bij beleid](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md) | stelt op en maakt openbaar *toegang (registreren)* | Participatieplan | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3 lid 1, 3; var. 2 art. [7] lid 1, 3) |
+| [Participatieverordening](participatieverordening.md) | regelt de inhoud van *associatie (gericht)* | Participatieplan | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3, var. 2 art. [7]) |
 
 ## Herkomst
 

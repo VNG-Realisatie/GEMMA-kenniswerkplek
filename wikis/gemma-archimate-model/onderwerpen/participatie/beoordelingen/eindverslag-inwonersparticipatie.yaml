@@ -47,7 +47,7 @@ kenmerken:
     onderbouwing: Wordt eenmaal opgesteld en openbaar gemaakt; de bronnen noemen geen wijziging of einde.
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: Het bestuursorgaan stelt het verslag op en maakt het openbaar, binnen Uitvoeren inwonersparticipatie (var. 1 art. 5 lid 1; var. 2 art. [10] lid 1).
+    onderbouwing: Het bestuursorgaan stelt het verslag op en maakt het openbaar, binnen Betrekken inwoners bij beleid (var. 1 art. 5 lid 1; var. 2 art. [10] lid 1).
     bronnen:
     - 2024-vng-model-participatieverordening
   afspraak:
@@ -86,10 +86,13 @@ ggm:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
-vragen:
-- 'Wettelijke grondslag: net als het participatieplan schrijft de Gemeentewet het eindverslag niet voor; het komt uit de VNG-modelverordening (var. 1 art. 5; var. 2 art. [10]). Zie de vraag bij Participatieplan. Advies: houden, met art. 150 lid 1 als landelijke bron (zo verwerkt).'
-- 'Objectniveau: de beslistabel laat dit object open (kandidaat): het is geen kernobject van een proces, geen deel van een ander object en niet generiek, en het heeft geen eigen levenscyclus (wordt eenmaal opgesteld en openbaar gemaakt, var. 1 art. 5). Het is het resultaat van Uitvoeren inwonersparticipatie en sluit de levensloop van het participatieplan af. Opties: (1) geen eigen element: het eindverslag staat als resultaat in de beschrijving en het deelproces Opstellen eindverslag van Uitvoeren inwonersparticipatie en in de beschrijving van Participatieplan; besluit afwijzen. (2) Houden als element, als eigen openbaar document met voorgeschreven inhoud; dat vraagt een afwijking van de beslistabel. Advies: (1), omdat het object geen eigen proces en geen eigen levensloop heeft; de relatie vanuit Uitvoeren inwonersparticipatie vervalt dan.'
-status: kandidaat
+besluiten:
+- datum: '2026-10-15'
+  gevolg: afwijzen
+  advies: gevolgd
+  redenen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+status: afgewezen
 beslist:
   uitkomst:
     soort: element
@@ -105,11 +108,8 @@ beslist:
     typeregel: 21
   voor_te_leggen:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst
   - 2024-vng-model-participatieverordening
   herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/eindverslag-inwonersparticipatie.md

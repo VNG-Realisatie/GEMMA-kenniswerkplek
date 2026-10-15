@@ -106,7 +106,7 @@ besluiten:
   besluit: 'Geen plek in de Functie-indeling naar domein: GEMMA heeft in domein Bestuur geen functie die diensten realiseert, en welke elementtypen op welk niveau van de functiehiërarchie worden ingedeeld, moet eerst worden bepaald (todo, Indelingen). Tot dan blijft de waarschuwing hangt onder geen functie staan.'
   gevolg: verwerkt
   stand: 'open: Functie-indeling naar domein (todo)'
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

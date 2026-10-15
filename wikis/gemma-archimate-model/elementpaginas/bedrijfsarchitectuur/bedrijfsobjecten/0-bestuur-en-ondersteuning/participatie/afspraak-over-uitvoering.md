@@ -2,7 +2,7 @@
 id: afspraak-over-uitvoering
 type: bedrijfsobject
 archimate_type: contract
-status: kandidaat
+status: goedgekeurd
 naam: Afspraak over uitvoering
 onderwerpen:
 - participatie
@@ -23,12 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling afspraak-over-uitvoering.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-- Afspraak over uitvoering heeft geen eigen levensloopproces (beslistabel regel 38: voorleggen). Context: de afspraken ontstaan bij toewijzing van het verzoek, lopen tijdens de uitvoering van de taak en eindigen na afloop of bij tussentijdse beëindiging, met een evaluatie (VNG-modelverordening var. 1 art. [9], var. 2 art. [14]). Volgens het besluit van 2026-09-30 omvat Behandelen verzoek uitdaagrecht verzoek, beoordeling, afspraken en evaluatie; daar staan Maken afspraken over uitvoering en Evalueren uitvoering als deelprocessen. Opties: (a) opnemen als eigen afspraak zonder eigen levensloopproces, met de levensloop in Behandelen verzoek uitdaagrecht (precedent Urn, besluit 2026-10-08); (b) een eigen levensloopproces voor de uitvoering (bijvoorbeeld Begeleiden uitvoering overgenomen taak), waarvoor de bronnen alleen het contact, de ondersteuning en de evaluatie noemen. Advies: (a).
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -100,3 +95,7 @@ Geen GGM-entiteit. Het GGM kent geen entiteit voor afspraken over de uitvoering 
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen afspraak voor dit begrip; Contract (uit het GGM, Inkoop) is een bindende overeenkomst in de inkoop. Nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-15: Advies gevolgd (opnemen).

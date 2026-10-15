@@ -20,7 +20,7 @@ kenmerken:
     onderbouwing: Een indeling van inwonersparticipatie naar de mate van invloed.
     bronnen:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
-genoemd_begrip: Uitvoeren inwonersparticipatie
+genoemd_begrip: Betrekken inwoners bij beleid
 toelichting: 'Indeling, geen element: de mate van invloed bij inwonersparticipatie (bijlage 4).'
 beslist:
   uitkomst:
@@ -29,7 +29,7 @@ beslist:
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     data_object: nee
-    genoemd_begrip: Uitvoeren inwonersparticipatie
+    genoemd_begrip: Betrekken inwoners bij beleid
     generiek: false
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening

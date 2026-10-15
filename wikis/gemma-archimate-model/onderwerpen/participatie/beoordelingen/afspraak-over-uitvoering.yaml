@@ -97,9 +97,13 @@ relaties:
   bronnen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. [9]; var. 2 art. [14]
-vragen:
-- 'Afspraak over uitvoering heeft geen eigen levensloopproces (beslistabel regel 38: voorleggen). Context: de afspraken ontstaan bij toewijzing van het verzoek, lopen tijdens de uitvoering van de taak en eindigen na afloop of bij tussentijdse beëindiging, met een evaluatie (VNG-modelverordening var. 1 art. [9], var. 2 art. [14]). Volgens het besluit van 2026-09-30 omvat Behandelen verzoek uitdaagrecht verzoek, beoordeling, afspraken en evaluatie; daar staan Maken afspraken over uitvoering en Evalueren uitvoering als deelprocessen. Opties: (a) opnemen als eigen afspraak zonder eigen levensloopproces, met de levensloop in Behandelen verzoek uitdaagrecht (precedent Urn, besluit 2026-10-08); (b) een eigen levensloopproces voor de uitvoering (bijvoorbeeld Begeleiden uitvoering overgenomen taak), waarvoor de bronnen alleen het contact, de ondersteuning en de evaluatie noemen. Advies: (a).'
-status: kandidaat
+besluiten:
+- datum: '2026-10-15'
+  gevolg: opnemen
+  advies: gevolgd
+  redenen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -114,8 +118,6 @@ beslist:
     generiek: false
     typeregel: 20
   voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening

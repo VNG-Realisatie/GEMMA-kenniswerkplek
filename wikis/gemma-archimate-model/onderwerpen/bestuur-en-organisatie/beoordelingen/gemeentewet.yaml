@@ -49,7 +49,7 @@ kenmerken:
     - 2026-rijk-gemeentewet-wettekst
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Art. 150 lid 1 en 2 geeft de raad de plicht ingezetenen en belanghebbenden bij beleid te betrekken (Uitvoeren inwonersparticipatie) en art. 150 lid 3 de plicht voorwaarden te stellen voor de uitvoering van taken door ingezetenen en maatschappelijke partijen (Behandelen verzoek uitdaagrecht).
+    onderbouwing: Art. 150 lid 1 en 2 geeft de raad de plicht ingezetenen en belanghebbenden bij beleid te betrekken (Betrekken inwoners bij beleid) en art. 150 lid 3 de plicht voorwaarden te stellen voor de uitvoering van taken door ingezetenen en maatschappelijke partijen (Behandelen verzoek uitdaagrecht).
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
   in_werking:
@@ -72,7 +72,7 @@ kenmerken:
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 relaties:
 - soort: associatie (gericht)
-  naar: uitvoeren-inwonersparticipatie
+  naar: betrekken-inwoners-bij-beleid
   naam: is grondslag voor
   ggm_match: geen
   bronnen:
@@ -109,7 +109,7 @@ per_onderwerp:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor de Gemeentewet; nieuw voor GEMMA.
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

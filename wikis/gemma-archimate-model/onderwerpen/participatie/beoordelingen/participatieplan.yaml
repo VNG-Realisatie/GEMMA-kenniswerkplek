@@ -49,7 +49,7 @@ kenmerken:
     - 2024-vng-model-participatieverordening
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: Het bestuursorgaan stelt het plan op en maakt het openbaar, binnen Uitvoeren inwonersparticipatie (var. 1 art. 3 lid 1; var. 2 art. [7] lid 1).
+    onderbouwing: Het bestuursorgaan stelt het plan op en maakt het openbaar, binnen Betrekken inwoners bij beleid (var. 1 art. 3 lid 1; var. 2 art. [7] lid 1).
     bronnen:
     - 2024-vng-model-participatieverordening
   afspraak:
@@ -95,9 +95,7 @@ ggm:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; Participatiedossier gaat over integratie en participatie van één inwoner bij inburgering. Nieuw voor GEMMA.
-vragen:
-- 'Wettelijke grondslag: de Gemeentewet schrijft geen participatieplan voor; art. 150 lid 1 eist alleen een verordening over de wijze waarop ingezetenen en belanghebbenden bij beleid worden betrokken. Plan en eindverslag komen uit de VNG-modelverordening (var. 1 art. 3, 5), die een gemeente kan aanpassen. Het kenmerk betekenis in onderwerp en de beschrijving steunen daarom op art. 150 lid 1. Advies: houden als kernobject (besluit K4), met art. 150 lid 1 als landelijke bron, en in de beschrijving vermelden dat de wet het plan niet voorschrijft (zo verwerkt). Geldt ook voor Eindverslag inwonersparticipatie.'
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

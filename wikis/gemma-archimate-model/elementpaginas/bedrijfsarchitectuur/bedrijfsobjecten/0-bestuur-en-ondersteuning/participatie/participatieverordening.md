@@ -2,12 +2,12 @@
 id: participatieverordening
 type: bedrijfsobject
 archimate_type: business-object
-status: kandidaat
+status: goedgekeurd
 naam: Participatieverordening
 onderwerpen:
 - participatie
 taakveld: 0 Bestuur en Ondersteuning
-beleidsdomein: Besluitvorming
+beleidsdomein: Participatie
 definitie: Verordening van de gemeenteraad met regels over het betrekken van inwoners en belanghebbenden bij beleid en de voorwaarden voor het uitdaagrecht.
 match:
   ggm: geen
@@ -26,14 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling participatieverordening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-- Zelfstandige specialisatie van Regeling, of een specialisatie zonder pagina? Context: Beheersverordening begraafplaatsen is een specialisatie van Regeling zonder eigen pagina (besluit Regeling 2026-09-30), Heffingsverordening een element (eigen gegevens, generiek). De participatieverordening heeft geen eigen gegevens in het GGM, maar de wet verplicht elke gemeente haar vast te stellen met voorgeschreven inhoud (Gemeentewet art. 150 lid 1–3), en Uitvoeren inwonersparticipatie en Behandelen verzoek uitdaagrecht volgen haar regels. Gevolg zonder pagina: Participatieverordening wordt een specialisatie in de beoordeling van Regeling, de Model Participatieverordening is dan model voor Regeling (via Participatieverordening), en de synoniemen Inspraakverordening en Verordening over betrekken bij beleid verhuizen naar die specialisatie. Advies: zelfstandig element, zoals nu beoordeeld.
-- Geen proces voor de levensloop: de gemeenteraad stelt de verordening vast, wijzigt en trekt haar in (Gemeentewet art. 150 lid 1; model var. 1 art. [13]–[14]), maar de wiki heeft nog geen proces voor het vaststellen van een regeling; daarom blijft het object open als kandidaat. Bij Beleidsnota en Regeling is besloten het signaal te laten staan tot dat proces er is (besluiten 2026-10-10 en 2026-10-12). Advies: hier hetzelfde, met het proces voor het vaststellen van regelingen in todo.
-- Beleidsdomein: Participatie heeft nog geen beleidsdomein; het GGM kent er geen voor participatie. Voorlopig Besluitvorming, zoals Regeling en Beleidsnota. Alternatief: een gemeentelijk beleidsdomein Participatie in het register, met een GGM-terugmelding. Advies: Besluitvorming, tenzij meer elementen van Participatie een eigen domein vragen; het besluit geldt dan voor het hele onderwerp.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -64,7 +57,7 @@ Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Plaats in de indelingen
 
-- **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Besluitvorming.
+- **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Participatie.
 
 ### Kenmerken
 
@@ -87,18 +80,18 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Participatieverordening | is een *specialisatie* | [Regeling](regeling.md) | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 1; model aanhef) |
-| Participatieverordening | regelt de inhoud van *associatie (gericht)* | [Participatieplan](../participatie/participatieplan.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3, var. 2 art. [7]) |
-| Participatieverordening | stelt voorwaarden voor *associatie (gericht)* | [Verzoek uitdaagrecht](../participatie/verzoek-uitdaagrecht.md) | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 3; var. 1 art. 6, [8], var. 2 art. [11], [13]) |
+| Participatieverordening | is een *specialisatie* | [Regeling](../besluitvorming/regeling.md) | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 1; model aanhef) |
+| Participatieverordening | regelt de inhoud van *associatie (gericht)* | [Participatieplan](participatieplan.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3, var. 2 art. [7]) |
+| Participatieverordening | stelt voorwaarden voor *associatie (gericht)* | [Verzoek uitdaagrecht](verzoek-uitdaagrecht.md) | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 3; var. 1 art. 6, [8], var. 2 art. [11], [13]) |
 
 #### Inkomend
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Behandelen verzoek uitdaagrecht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md) | volgt de regels van *toegang (raadplegen)* | Participatieverordening | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 6–[9]; var. 2 art. [11]–[14]) |
+| [Betrekken inwoners bij beleid](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md) | volgt de regels van *toegang (raadplegen)* | Participatieverordening | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2–5; var. 2 art. [3]–[10]) |
 | [Gemeentewet](../../../../motivatie/beleidskaders/rijksregelgeving/gemeentewet.md) | is grondslag voor *associatie (gericht)* | Participatieverordening | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1) |
 | [Model Participatieverordening](../../../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-participatieverordening.md) | is model voor *associatie (gericht)* | Participatieverordening | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (aanhef; var. 1 art. [14] lid 2) |
-| [Uitvoeren inwonersparticipatie](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md) | volgt de regels van *toegang (raadplegen)* | Participatieverordening | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2–5; var. 2 art. [3]–[10]) |
 
 ## Herkomst
 
@@ -117,3 +110,7 @@ Geen GGM-entiteit. Het GGM kent geen participatieverordening en geen algemene en
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA, als specialisatie van Regeling.
+
+### Besluiten redacteur
+
+- 2026-10-15: Advies gevolgd (opnemen).

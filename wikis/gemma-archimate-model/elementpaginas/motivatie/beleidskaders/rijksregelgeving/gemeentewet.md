@@ -2,7 +2,7 @@
 id: gemeentewet
 type: beleidskader
 archimate_type: driver
-status: review
+status: goedgekeurd
 naam: Gemeentewet
 onderwerpen:
 - bestuur-en-organisatie
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeentewet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -65,7 +65,7 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 | **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, concreet benoemde wet als geheel. [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijkswet voor alle gemeenten. [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht; art. 150 in de versie sinds 1 januari 2025. [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, art. 150 lid 1 en 2 geeft de raad de plicht ingezetenen en belanghebbenden bij beleid te betrekken (Uitvoeren inwonersparticipatie) en art. 150 lid 3 de plicht voorwaarden te stellen voor de uitvoering van taken door ingezetenen en maatschappelijke partijen (Behandelen verzoek uitdaagrecht). [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, art. 150 lid 1 en 2 geeft de raad de plicht ingezetenen en belanghebbenden bij beleid te betrekken (Betrekken inwoners bij beleid) en art. 150 lid 3 de plicht voorwaarden te stellen voor de uitvoering van taken door ingezetenen en maatschappelijke partijen (Behandelen verzoek uitdaagrecht). [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki; de wet staat op zichzelf. [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, geldt met dezelfde betekenis in elk onderwerp waarin de gemeente een orgaan, een verordening of een heffing gebruikt (participatie art. 150, lijkbezorging art. 147, 149, 229). [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 
@@ -75,9 +75,9 @@ Alleen de kenmerken met ja; de overige 50 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
-| Gemeentewet | is grondslag voor *associatie (gericht)* | [Uitvoeren inwonersparticipatie](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md) | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1 en 2) |
+| Gemeentewet | is grondslag voor *associatie (gericht)* | [Betrekken inwoners bij beleid](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md) | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1 en 2) |
 | Gemeentewet | is grondslag voor *associatie (gericht)* | [Behandelen verzoek uitdaagrecht](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md) | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 3) |
-| Gemeentewet | is grondslag voor *associatie (gericht)* | [Participatieverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/participatieverordening.md) | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1) |
+| Gemeentewet | is grondslag voor *associatie (gericht)* | [Participatieverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md) | [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) (art. 150 lid 1) |
 
 #### Inkomend
 

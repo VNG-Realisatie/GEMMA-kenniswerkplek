@@ -4,48 +4,35 @@ Overdracht naar de volgende Sessie (2026-10-15). Wordt bij elke overdracht overs
 
 ## Stand van zaken
 
-- Plan: [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md), stap 9 (de proef) met het onderwerp Participatie. Fase 1 en fase 2 zijn gecommit; fase 3 (beslissen, voorleggen, akkoord, commit) is de volgende.
-- K1 uitgevoerd: bron `2024-vng-model-participatieverordening` (gemeentelijke-regelgeving, bijlage 1 bij VNG-ledenbrief 24/051), bronduiding in `onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/`.
-- Fase B gedaan door drie beoordelingsagenten (Participatieplan; Verzoek uitdaagrecht; zonder kernobject). `beslissen.py` geeft geen fouten; lint en pytest slagen. Status: review voor Uitvoeren inwonersparticipatie, Participatieplan, Behandelen verzoek uitdaagrecht, Verzoek uitdaagrecht, Indiener, Inwoner, Maatschappelijke partij, Model Participatieverordening en Gemeentewet; kandidaat voor Eindverslag inwonersparticipatie, Afspraak over uitvoering en Participatieverordening (geen proces bepaalt de levensloop).
-- Gebundeld door de hoofdsessie: toewijzing van Beslisser naar beide processen; toegang (raadplegen) van beide processen naar Participatieverordening; Participatieverordening als specialisatie (met element) van Regeling; de zin over burgerzaken in Inwoner herschreven (regel Los van het onderwerp); terugmeldingen procesarchitectuur (UPL-product voor het uitdaagrecht) en GEMMA-team (actor Burger naast Inwoner).
-- Overgebleven waarschuwingen zijn toegelicht: 'Registreert' in Uitvoeren inwonersparticipatie (vaste handeling); Gemeentewet en Model Participatieverordening hangen alleen aan processen (geen UPL-product, teruggemeld); de naam Model Participatieverordening volgt het precedent van de Model beheersverordening.
+- Plan: [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md), stap 9 (de proef, onderwerp Participatie): fase 1, 2 en 3 zijn gecommit; 16 elementen goedgekeurd (AKKOORD 2026-10-15), Eindverslag inwonersparticipatie afgewezen.
+- Besluiten in fase 3: beleidsdomein Participatie onder taakveld 0 (niet Sociaal domein), met register en procesarchitectuur-terugmelding 30; Uitvoeren inwonersparticipatie hernoemd tot Betrekken inwoners bij beleid, zonder GEMMA-match met het Generiek deelproces Uitvoeren participatie (Omgevingswet); K4 heroverwogen (levensloopproces); Afspraak over uitvoering en Participatieverordening opgenomen; Verzoek uitdaagrecht en Indiener zonder specialisatie naar Aanvraag en Belanghebbende.
+- Nieuw werkwijzebesluit: zekerheid van besluiten (`kennis`, `logica`, `indruk`), in [todo.md](todo.md); tot de uitvoering staat de zekerheid in de besluittekst. Dit is de volgende klus, in een eigen commit `rules:`.
 
-## Voor te leggen in fase 3 (`vragen:` en open redenen)
+## Meting fase 3 (transcript, tot de commit)
 
-1. Beleidsdomein voor het hele onderwerp: een gemeentelijk beleidsdomein Participatie onder taakveld 0 (nu bij de twee processen, Participatieplan, Eindverslag, Verzoek uitdaagrecht, Afspraak) of Besluitvorming (nu bij Participatieverordening, Model en Gemeentewet). Eén besluit; daarna gelijktrekken, en bij Participatie de regel in `modellen/gemma/indelingen/beleidsdomeinen.yaml` en een procesarchitectuur-terugmelding (beleidsdomein).
-2. Uitvoeren inwonersparticipatie en Behandelen verzoek uitdaagrecht zijn levensloopproces (K4 zei bedrijfsproces): bevestigen.
-3. Participatieplan en Eindverslag: grondslag art. 150 lid 1 Gemeentewet, de wet schrijft plan en verslag niet voor (alleen de VNG-modelverordening).
-4. Eindverslag inwonersparticipatie: advies geen eigen element (afwijzen); het staat als resultaat in het proces. Bij afwijzen vervalt de relatie vanuit het proces.
-5. Afspraak over uitvoering zonder eigen levensloopproces: advies opnemen, levensloop in Behandelen verzoek uitdaagrecht (precedent Urn, 2026-10-08).
-6. Verzoek uitdaagrecht geen specialisatie van Aanvraag (Awb), en Indiener geen specialisatie van Belanghebbende: advies nee, want geen bron noemt de reactie een besluit (bevestigen).
-7. Participatieverordening: zelfstandige specialisatie van Regeling (advies ja); het signaal over de levensloop laten staan zoals bij Beleidsnota en Regeling.
-8. GEMMA-match partieel van Uitvoeren inwonersparticipatie op Generiek deelproces Uitvoeren participatie (K4). Blijft hij, dan een GEMMA-terugmelding (de import geeft dat deelproces een naam, definitie en niveau; controleren in Vaststellen omgevingsplan).
-- Niet aangemaakt, advies geen element: reactie op het verzoek, formulier, experimenteerprogramma; participatiejaarverslag is synoniem van Participatieparagraaf (variant 2). Kandidaat-bedrijfsfunctie: GEMMA-bladfunctie Burgerinitiatieven facilitering (id-27250af5-c8bc-4167-a743-9b1c6d6edef6) onder Samenwerking en participatie.
-- Rol van het college als centraal loket voor verzoeken: nu alleen in de beschrijving.
-- Vermoedelijke verwijsfout in de VNG-modelverordening (var. 2 art. [13] lid 3 onder c: artikel 12 in plaats van [11]); past in geen register.
+| | Fase 1 | Fase 2 | Fase 3 | Proef totaal | Plan "Straks" | Deel 2 (nu) |
+|---|---|---|---|---|---|---|
+| Beurten | 42 | 213 | 44 | ongeveer 300 | ongeveer 80 | 156 |
+| Totale invoer | 5,6 mln | 26,0 mln | 3,8 mln | ongeveer 35 mln | 4 à 5 mln | 48 mln |
+| Startcontext | 40.400 | 34.000 à 40.300 | 40.600 | — | ongeveer 40.000 | 43.000 |
+| Grootste context | 205.000 | 211.000 | 127.000 | 211.000 | ongeveer 80.000 | 487.000 |
+| Vragenrondes | 1 tabel | 0 | 1 tabel en 3 vervolgrondes | 2 tabellen, 3 vervolg | 2 à 3 tabellen | verspreid |
+| Nieuwe besluiten | 6 | 0 | 8 | 14 | ongeveer 10 | ongeveer 30 |
 
-## Meting fase 2 (transcripten)
+## Samenvatting van de proef
 
-| | Hoofdsessie | Ingest | Participatieplan | Verzoek uitdaagrecht | Zonder kernobject | Fase 2 totaal | Fase 1 | Deel 2, heel onderwerp |
-|---|---|---|---|---|---|---|---|---|
-| Beurten | 30 (tot de meting) | 18 | 44 | 56 | 65 | 213 | 42 | 156 |
-| Totale invoer | 2,8 mln | 1,3 mln | 5,1 mln | 7,9 mln | 8,9 mln | 26,0 mln | 5,6 mln | 48 mln |
-| Startcontext | 40.300 | 34.000 | 34.400 | 34.500 | 34.600 | — | 40.400 | 43.000 |
-| Grootste context | 131.000 | 100.000 | 162.000 | 211.000 | 198.000 | — | 205.000 | 487.000 |
-| Gelezen (woorden, eigen opgave) | — | 13.000 | 17.000 | 21.000 | 21.000 | — | — | — |
-
-- Werkpakket per cluster (met `--alles`): Participatieplan 1.423, Verzoek uitdaagrecht 3.486, het hele onderwerp 21.243 woorden (zonder `--alles` 730, 1.209 en 9.879). De agent zonder kernobject las er gefilterd ongeveer 7.500 uit.
-- Wat de agenten lazen: regels en skills 6.000 à 7.800 woorden, bronnen ongeveer 4.000, en bestaande beoordelingen en code als precedent 3.500 à 5.000, wat niet in hun opdracht stond. De beurten (44 à 65 per agent) zijn de grootste post: de invoer groeit kwadratisch met de beurten.
-- Ingest-subagent: 18 beurten, 1,3 mln; `tools/bronduiding.py citaat` kon de bron niet lezen (zie todo), citaten overgetypt en gecontroleerd. Bronduiding na fase A aangevuld: 0 keer.
-- Uitvoer van de subagenten staat niet betrouwbaar in hun transcript (een paar honderd tokens); niet meegeteld.
-- E2 (beoordelingsagenten): fase 2 kost met 26 mln meer dan het plan verwachtte (ongeveer neutraal). Drie agenten met elk 34.000 startcontext en 44–65 beurten, voor 12 begrippen. De afweging voor een klein onderwerp: één hoofdsessie (skill, stap 8: "bij een handvol begrippen") is waarschijnlijk goedkoper.
+- **Totale invoer −26%** ten opzichte van deel 2 (35 tegen 48 mln), maar zeven keer de schatting van het plan. Fase 1 en 3 samen (9,4 mln, 86 beurten) zitten dicht bij het plan; het verschil zit in fase 2: drie beoordelingsagenten met 44–65 beurten voor 12 begrippen (26 mln).
+- **Grootste context** bleef ruim onder deel 2 (211.000 tegen 487.000), boven de 80.000 van het plan: elke agent groeide tot 160.000–210.000.
+- **Voorleggen in één tabel werkt**, maar vroeg in fase 3 drie vervolgrondes: twee begrippen (K4, levensloopproces) waren onduidelijk, en een besluit uit fase 1 bleek op een verkeerd beeld te rusten. Dat leidde tot het werkwijzebesluit over zekerheid.
+- **Nieuwe besluiten** 14 tegen ongeveer 30, iets boven de schatting.
+- Advies voor het plan: bij een klein onderwerp (tot ongeveer 15 begrippen voor fase B) fase B in de hoofdsessie doen in plaats van agenten (skill, stap 8); en de bevindingen van fase 2 in todo.md (werkpakket `--alles`, `--ids`, `bronduiding.py citaat`, agenten die precedenten lezen) oppakken. Leg dit voor bij de volgende Sessie, samen met het afsluiten van stap 9 in het plan.
 
 ## Modeladvies
 
-Fase 3 vraagt denkniveau hoog (voorleggen in één tabel, oordelen per vraag); stap 13 tot en met 17 laag. Begin een nieuwe Sessie: fase 3 begint met een schone context.
+De volgende klus (zekerheid van besluiten: regels, `beoordeling.py`, `werkpakket.py`, schema) vraagt denkniveau middel voor de code en hoog voor de regelteksten en de omgang met bestaande besluiten. Begin een nieuwe Sessie: de context is gevuld met Participatie.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en voer fase 3 uit van skill gemma-archimate-model-update voor het onderwerp Participatie (stap 9, de proef, van plannen/2026-10-15-lichtere-werkwijze.md). Draai beslissen.py, leg de acht punten uit de handoff en de open redenen voor in één tabel zoals voor een architect (references/besluiten.md), verwerk mijn antwoorden per geval en draai opnieuw. Daarna promote plan; ik geef akkoord met AKKOORD; dan afronden.py met een prefix. Meet beurten, totale invoer en grootste context van fase 3, en vat de proef samen tegen de tabel "Totaal per onderwerp" van het plan.
+Lees wikis/gemma-archimate-model/handoff.md en todo.md. Voer de todo "Zekerheid van besluiten" uit (besluit redacteur 2026-10-15): het veld zekerheid (kennis, logica, indruk) in het schema, tools/beoordeling.py (--zekerheid), tools/werkpakket.py (niveau tonen; agenten volgen alleen kennis als regel), de regel Navragen in de wiki-AGENTS.md, references/besluiten.md en de precedentregel van skill gemma-archimate-model-beoordelen, en de kolom Eerder besluit (zekerheid) in fase 3 van skill gemma-archimate-model-update. Bestaande besluiten zonder veld tellen als logica; zet de zekerheid van de Participatie-besluiten van 2026-10-15 uit hun tekst in het veld. Controleer eerst het woordbudget. Daarna pytest en lint, en een commit met prefix rules. Leg daarna de samenvatting van de proef (handoff) voor en sluit stap 9 van het plan af.
 ```

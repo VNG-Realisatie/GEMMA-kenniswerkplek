@@ -2,7 +2,7 @@
 id: behandelen-verzoek-uitdaagrecht
 type: bedrijfsproces
 archimate_type: business-process
-status: review
+status: goedgekeurd
 naam: Behandelen verzoek uitdaagrecht
 onderwerpen:
 - participatie
@@ -29,7 +29,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-verzoek-uitdaagrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -108,7 +108,7 @@ Alleen de kenmerken met ja; de overige 45 zijn nee.
 |---|---|---|---|
 | Behandelen verzoek uitdaagrecht | neemt in ontvangst en beslist op *toegang (registreren)* | [Verzoek uitdaagrecht](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/verzoek-uitdaagrecht.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 6 lid 1, [8]; var. 2 art. [11] lid 1, [13]) |
 | Behandelen verzoek uitdaagrecht | legt bij toewijzing vast *toegang (registreren)* | [Afspraak over uitvoering](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/afspraak-over-uitvoering.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. [9]; var. 2 art. [14]) |
-| Behandelen verzoek uitdaagrecht | volgt de regels van *toegang (raadplegen)* | [Participatieverordening](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/participatieverordening.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 6–[9]; var. 2 art. [11]–[14]) |
+| Behandelen verzoek uitdaagrecht | volgt de regels van *toegang (raadplegen)* | [Participatieverordening](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md) | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 6–[9]; var. 2 art. [11]–[14]) |
 
 #### Inkomend
 
@@ -140,3 +140,4 @@ Procesarchitectuur-terugmeldingen:
 ### Besluiten redacteur
 
 - 2026-09-30: Geen eigen pagina: dezelfde procedure van verzoek, beoordeling, afspraken en evaluatie als overheidsparticipatie.
+- 2026-10-15: Levensloopproces met kernobject Verzoek uitdaagrecht, van indienen tot evaluatie van de uitvoering. Zekerheid: logica.

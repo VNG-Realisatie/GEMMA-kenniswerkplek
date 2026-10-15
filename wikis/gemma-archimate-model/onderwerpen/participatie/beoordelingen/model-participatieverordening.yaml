@@ -48,7 +48,7 @@ kenmerken:
     - 2024-vng-model-participatieverordening
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Werkt uit, nooit grondslag; var. 1 art. 2–5 en var. 2 art. [3], [7]–[10] werken art. 150 lid 1 en 2 Gemeentewet uit voor Uitvoeren inwonersparticipatie (besluit over participatie, plan, inspraak, eindverslag); var. 1 art. 6–[9] en var. 2 art. [11]–[14] werken art. 150 lid 3 uit voor Behandelen verzoek uitdaagrecht (verzoek, beoordeling, afspraken).
+    onderbouwing: Werkt uit, nooit grondslag; var. 1 art. 2–5 en var. 2 art. [3], [7]–[10] werken art. 150 lid 1 en 2 Gemeentewet uit voor Betrekken inwoners bij beleid (besluit over participatie, plan, inspraak, eindverslag); var. 1 art. 6–[9] en var. 2 art. [11]–[14] werken art. 150 lid 3 uit voor Behandelen verzoek uitdaagrecht (verzoek, beoordeling, afspraken).
     bronnen:
     - 2024-vng-model-participatieverordening
   in_werking:
@@ -73,7 +73,7 @@ synoniemen:
   context: beleid
 relaties:
 - soort: associatie (gericht)
-  naar: uitvoeren-inwonersparticipatie
+  naar: betrekken-inwoners-bij-beleid
   naam: werkt uit voor
   ggm_match: geen
   bronnen:
@@ -102,7 +102,7 @@ relaties:
   vindplaats: aanhef; var. 1 art. [14] lid 2
 regelgever: VNG-modelverordening
 taakveld: 0 Bestuur en Ondersteuning
-beleidsdomein: Besluitvorming
+beleidsdomein: Participatie
 definitie: VNG-modelverordening voor de verordening waarin een gemeente het betrekken van inwoners bij beleid en het uitdaagrecht regelt.
 beschrijving:
 - Het model werkt art. 150 Gemeentewet uit zoals gewijzigd door de Wet versterking participatie op decentraal niveau (Stb. 2024, 203), in werking sinds 1 januari 2025; de raad stelt de verordening vast op grond van art. 149 en 150 Gemeentewet (2024-vng-model-participatieverordening, aanhef en toelichting).
@@ -124,7 +124,7 @@ kwaliteitsdoelen:
   bronnen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. 6 lid 1, art. 7, art. [8] lid 5
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

@@ -96,7 +96,7 @@ per_onderwerp:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen actor voor maatschappelijke organisaties; MaatschappelijkeActiviteit (RSGB) is een ander begrip, de activiteit van een onderneming of rechtspersoon in het Handelsregister. Nieuw voor GEMMA.
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

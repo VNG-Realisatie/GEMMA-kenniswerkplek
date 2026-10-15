@@ -32,21 +32,21 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | Heffingen en betalingen | 2 | 0 | 1 | Besluitvorming 1, Lijkbezorging 4 |
 | Kern | 1 | 0 | 0 | Bestuur en organisatie 1, Burgerzaken 2, Lijkbezorging 5 |
 | Lijkbezorging | 66 | 20 | 166 | Besluitvorming 16, Bestuur en organisatie 15, Burgerzaken 7, Heffingen en betalingen 4, Kern 5 |
-| Participatie | 11 | 6 | 16 | Besluitvorming 3, Bestuur en organisatie 6 |
+| Participatie | 10 | 6 | 15 | Besluitvorming 3, Bestuur en organisatie 6 |
 
 ## Elementen per type en status
 
 | Type | kandidaat | review | goedgekeurd | afgewezen |
 |---|---|---|---|---|
-| actor | 0 | 2 | 10 | 0 |
+| actor | 0 | 0 | 12 | 0 |
 | bedrijfsfunctie | 0 | 0 | 7 | 0 |
 | bedrijfsinteractie | 0 | 0 | 1 | 0 |
-| bedrijfsobject | 3 | 4 | 25 | 0 |
-| bedrijfsproces | 0 | 3 | 78 | 6 |
-| beleidskader | 0 | 2 | 19 | 0 |
-| dienst | 0 | 1 | 84 | 1 |
+| bedrijfsobject | 0 | 1 | 30 | 1 |
+| bedrijfsproces | 0 | 0 | 81 | 6 |
+| beleidskader | 0 | 0 | 21 | 0 |
+| dienst | 0 | 0 | 85 | 1 |
 | gebeurtenis | 0 | 0 | 20 | 0 |
-| rol | 0 | 3 | 24 | 0 |
+| rol | 0 | 0 | 27 | 0 |
 
 ## GGM-terugmeldingen
 
@@ -54,7 +54,7 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 ## Procesarchitectuur-terugmeldingen
 
-[29 terugmeldingen](modellen/gemma/terugmeldingen/procesarchitectuur.md): open 28, opgelost 1.
+[30 terugmeldingen](modellen/gemma/terugmeldingen/procesarchitectuur.md): open 29, opgelost 1.
 
 ## GEMMA-terugmeldingen
 

@@ -1,4 +1,4 @@
-begrip: Uitvoeren inwonersparticipatie
+begrip: Betrekken inwoners bij beleid
 onderwerpen:
 - participatie
 kernobject: participatieplan
@@ -122,9 +122,9 @@ kenmerken:
 synoniemen:
 - naam: Inwonersparticipatie
   context: beleid
-- naam: Generiek deelproces Uitvoeren participatie
-  context: GEMMA
-definitie: Het op initiatief van de gemeente betrekken van inwoners en maatschappelijke partijen bij de voorbereiding, uitvoering of evaluatie van beleid.
+- naam: Uitvoeren inwonersparticipatie
+  context: wiki
+definitie: Het op initiatief van de gemeente betrekken van inwoners en maatschappelijke partijen bij de voorbereiding, uitvoering of evaluatie van gemeentelijk beleid.
 beschrijving:
 - De raad regelt in een verordening hoe ingezetenen en belanghebbenden bij de voorbereiding, uitvoering en evaluatie van gemeentelijk beleid worden betrokken (2026-rijk-gemeentewet-wettekst, art. 150 lid 1). Elk bestuursorgaan (raad, college of burgemeester) besluit over zijn eigen beleid of inwonersparticipatie plaatsvindt (2024-vng-model-participatieverordening, var. 1 art. 2 lid 1).
 - Vooraf stelt het bestuursorgaan een participatieplan op en maakt het openbaar; daarna betrekt het inwoners en maatschappelijke partijen in de gekozen vorm, van informeren tot beslissen; na afloop stelt het een eindverslag op en maakt het openbaar (2024-vng-model-participatieverordening, var. 1 art. 3–5; var. 2 art. [7], [10]). Bereidt het college een besluit van de raad voor, dan stelt het college plan en eindverslag op en informeert het de raad (var. 1 art. 3 lid 3, 5 lid 3).
@@ -147,9 +147,8 @@ deelprocessen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. 5; var. 2 art. [10]
 gemma:
-  id: id-fcd03bc4-cf22-493d-ad97-fba88be7b13a
-  sterkte: partieel
-  onderbouwing: GEMMA kent het Generiek deelproces Uitvoeren participatie, zonder definitie, in de procesarchitectuur van Vaststellen omgevingsplan, waar het de Deelservice Participatie realiseert. Dit element is breder en van een ander niveau, een eigen proces van plan tot eindverslag voor beleid in elk domein; de export geeft het GEMMA-element deze naam en definitie (besluit K4, voorleggen in fase 3).
+  sterkte: geen
+  onderbouwing: 'GEMMA kent het Generiek deelproces Uitvoeren participatie in de procesarchitectuur van Vaststellen omgevingsplan, waar het de Deelservice Participatie realiseert: participatie op grond van de Omgevingswet. Dit element is de participatie bij gemeentelijk beleid in elk domein op grond van art. 150 Gemeentewet, van plan tot eindverslag; een ander begrip, en de naam maakt dat onderscheid. Nieuw voor GEMMA.'
 relaties:
 - soort: toegang (registreren)
   naar: participatieplan
@@ -158,13 +157,6 @@ relaties:
   bronnen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. 3 lid 1, 3; var. 2 art. [7] lid 1, 3
-- soort: toegang (registreren)
-  naar: eindverslag-inwonersparticipatie
-  naam: stelt op en maakt openbaar
-  ggm_match: geen
-  bronnen:
-  - 2024-vng-model-participatieverordening
-  vindplaats: var. 1 art. 5 lid 1, 3; var. 2 art. [10] lid 1, 3
 - soort: triggering
   naar: uitvoeren-uniforme-openbare-voorbereidingsprocedure
   naam: leidt tot (bij inspraak)
@@ -187,15 +179,22 @@ relaties:
   bronnen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. 2–5; var. 2 art. [3]–[10]
-vragen:
-- 'Beleidsdomein: het GGM kent onder taakveld 0 alleen Griffie, en de wiki gebruikt Besluitvorming voor de algemene bestuursrechtelijke procedures. Participatie past in geen van beide: het is een eigen taak uit art. 150 Gemeentewet met eigen kernobjecten (Participatieplan, Verzoek uitdaagrecht). Advies: een gemeentelijk beleidsdomein Participatie onder 0 Bestuur en Ondersteuning (zo ingevuld bij dit proces, Participatieplan en Eindverslag inwonersparticipatie), met een beschrijving in het register van beleidsdomeinen en een GGM-terugmelding (hiaat). Alternatief: Besluitvorming, maar dat is een thematisch onderwerp en geen eigen taak.'
-- 'Procesniveau: dit proces omvat de hele levensloop van één participatieplan, van opstellen tot het eindverslag, en is daarom een levensloopproces (bedrijfsproces in ArchiMate) met kernobject Participatieplan; besluit K4 noemt het een eigen bedrijfsproces. Er is geen ander proces op het participatieplan, dus geen bedrijfsproces eronder. Advies: levensloopproces bevestigen; de deelprocessen (plan, betrekken, eindverslag) staan in deelprocessen.'
+object_van:
+  id: uitvoeren-inwonersparticipatie
+  wijziging: hernoemd
+  datum: '2026-10-15'
 besluiten:
 - datum: '2026-10-15'
   besluit: 'Eigen bedrijfsproces met Participatieplan als kernobject, geen deelproces van het vaststellen van beleid en geen bedrijfsinteractie: eigen aanleiding, plan en eindverslag van het bestuursorgaan.'
   gevolg: verwerkt
   advies: gevolgd
-status: review
+- datum: '2026-10-15'
+  besluit: 'Heroverweging van het besluit over het eigen proces (fase 1, genomen op eerste indruk, met participatie in het sociaal domein in gedachten): levensloopproces met kernobject Participatieplan, één proces voor participatie bij beleid in elk domein (Gemeentewet art. 150 lid 1). Geen generiek deelproces van het vaststellen van beleid en geen bedrijfsinteractie. Zekerheid: logica; opnieuw toetsen als er een proces voor het vaststellen van beleid komt.'
+  gevolg: verwerkt
+- datum: '2026-10-15'
+  besluit: 'Geen GEMMA-match met het Generiek deelproces Uitvoeren participatie (Vaststellen omgevingsplan): participatie in het fysieke domein (Omgevingswet) en in het sociaal domein is een andere participatie dan die bij gemeentelijk beleid uit art. 150 Gemeentewet. Hernoemd tot Betrekken inwoners bij beleid, zodat de naam dat onderscheid laat zien. Zekerheid: kennis.'
+  gevolg: verwerkt
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -213,11 +212,4 @@ beslist:
   - 2026-rijk-gemeentewet-wettekst
   - 2024-vng-model-participatieverordening
   herkomst: rijksregelgeving
-  gemma:
-    gemma_id: id-fcd03bc4-cf22-493d-ad97-fba88be7b13a
-    gemma_naam: Generiek deelproces Uitvoeren participatie
-    gemma_type: business-process
-    gemma_map: Business / Procesarchitectuur / Vaststellen omgevingsplan
-    gemma_eigenschappen:
-      Object ID: fcd03bc4-cf22-493d-ad97-fba88be7b13a
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md

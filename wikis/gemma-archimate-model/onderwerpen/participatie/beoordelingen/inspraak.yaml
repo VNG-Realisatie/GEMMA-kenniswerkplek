@@ -22,7 +22,7 @@ kenmerken:
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
     - 2024-vng-implementatiehandleiding-model-participatieverordening
-genoemd_begrip: Uitvoeren inwonersparticipatie
+genoemd_begrip: Betrekken inwoners bij beleid
 toelichting: 'Vorm van inwonersparticipatie, geen eigen element: inspraak verloopt via Uitvoeren uniforme openbare voorbereidingsprocedure (art. 150 lid 2 Gemeentewet).'
 besluiten:
 - datum: '2026-10-15'
@@ -36,7 +36,7 @@ beslist:
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     data_object: nee
-    genoemd_begrip: Uitvoeren inwonersparticipatie
+    genoemd_begrip: Betrekken inwoners bij beleid
     generiek: false
   bronnen:
   - 2026-rijk-gemeentewet-wettekst

@@ -2,7 +2,7 @@
 id: verzoek-uitdaagrecht
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Verzoek uitdaagrecht
 onderwerpen:
 - participatie
@@ -29,11 +29,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verzoek-uitdaagrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
-
-## Ter discussie
-
-- Is Verzoek uitdaagrecht een specialisatie van Aanvraag (Awb)? Context: Aanvraag is een verzoek van een belanghebbende om een besluit te nemen (Awb art. 1:3 lid 3). De VNG-modelverordening spreekt van een verzoek waarop het bevoegde bestuursorgaan reageert en dat het toewijst of afwijst; bij toewijzing volgen afspraken, bij voorkeur in een overeenkomst (var. 1 art. [8], [9] en toelichting). Geen bron noemt de reactie een besluit of beschikking of noemt bezwaar, en de indiener hoeft geen belanghebbende te zijn: Gemeentewet art. 150 lid 3 noemt ingezetenen en maatschappelijke partijen. Gevolg bij ja: het element blijft (eigen regels in de verordening), met een specialisatie naar Aanvraag; Behandelen verzoek uitdaagrecht krijgt dan mogelijk een specialisatie naar Behandelen aanvraag beschikking, en Indiener naar Belanghebbende (als Aanvrager). Advies: nee. Houd het verzoek zelfstandig zolang geen bron (wet, rechtspraak of handreiking) de reactie als besluit kwalificeert; Indiener blijft dan ook zelfstandig, want art. 150 lid 3 vraagt geen rechtstreeks belang bij een besluit.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -92,7 +88,7 @@ Alleen de kenmerken met ja; de overige 52 zijn nee.
 |---|---|---|---|
 | [Afspraak over uitvoering](afspraak-over-uitvoering.md) | volgt uit de toewijzing van *associatie (gericht)* | Verzoek uitdaagrecht | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. [9]; var. 2 art. [14]) |
 | [Behandelen verzoek uitdaagrecht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md) | neemt in ontvangst en beslist op *toegang (registreren)* | Verzoek uitdaagrecht | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 6 lid 1, [8]; var. 2 art. [11] lid 1, [13]) |
-| [Participatieverordening](../besluitvorming/participatieverordening.md) | stelt voorwaarden voor *associatie (gericht)* | Verzoek uitdaagrecht | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 3; var. 1 art. 6, [8], var. 2 art. [11], [13]) |
+| [Participatieverordening](participatieverordening.md) | stelt voorwaarden voor *associatie (gericht)* | Verzoek uitdaagrecht | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 3; var. 1 art. 6, [8], var. 2 art. [11], [13]) |
 
 ## Herkomst
 
@@ -112,3 +108,7 @@ Geen GGM-entiteit. Het GGM kent geen entiteit voor dit verzoek; Verzoek (Omgevin
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen object voor dit verzoek; Verzoek (Omgevingswet) is een vraag aan het bevoegd gezag om een product of dienst te leveren. Nieuw voor GEMMA.
+
+### Besluiten redacteur
+
+- 2026-10-15: Geen specialisatie van Aanvraag, en Indiener geen specialisatie van Belanghebbende: geen bron noemt de reactie op het verzoek een besluit, en art. 150 lid 3 Gemeentewet vraagt geen rechtstreeks belang. Zekerheid: logica; opnieuw toetsen als rechtspraak of een handreiking de reactie als besluit kwalificeert.
