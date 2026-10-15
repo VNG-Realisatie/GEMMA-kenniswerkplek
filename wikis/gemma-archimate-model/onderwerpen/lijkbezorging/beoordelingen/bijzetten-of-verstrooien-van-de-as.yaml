@@ -35,65 +35,23 @@ kenmerken:
     onderbouwing: Iets wat gedaan wordt.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  hoedanigheid:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  samenwerkingsverband:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  toegangspunt:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  plaats:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  aanbod_als_geheel:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  regeling_als_geheel:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  eigen_rechtspersoon:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  vervult_een_rol:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  voert_gedrag_uit:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  soort_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  ontsluit_een_dienst:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
+  handelende_partij: nee
+  hoedanigheid: nee
+  samenwerkingsverband: nee
+  toegangspunt: nee
+  plaats: nee
+  aanbod_als_geheel: nee
+  regeling_als_geheel: nee
   per_keer_doorlopen:
     waarde: ja
     onderbouwing: Wordt per asbus doorlopen, van bewaring na de crematie tot de bestemming (art. 59).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  groepeert_processen:
-    waarde: nee
-    onderbouwing: Wordt per geval doorlopen; geen groepering.
-  gegroepeerd_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  toestandsverandering:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  aangeboden_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  gezamenlijk_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  groepeert_processen: nee
+  gegroepeerd_gedrag: nee
+  toestandsverandering: nee
+  aangeboden_gedrag: nee
+  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Houder van het crematorium (art. 59), Houder van een plaats van bijzetting (art. 63, 65) en Nabestaande, die opdracht geeft (art. 62 lid 2).
@@ -125,18 +83,6 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  stabiel_over_tijd:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen functie.'
-  afnemer:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  gerealiseerd_door:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  leidt_tot_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
   bijdrage_aan_groter_proces:
     waarde: ja
     onderbouwing: 'Draagt bij aan het levensloopproces Begraven en cremeren stoffelijk overschot: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59).'
@@ -147,9 +93,6 @@ kenmerken:
     onderbouwing: Nee, volgt op de crematie in Uitvoeren lijkbezorging, voor hetzelfde stoffelijk overschot en door dezelfde houder.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_processen:
-    waarde: nee
-    onderbouwing: Omvat geen andere processen.
   omvat_levensloop:
     waarde: nee
     onderbouwing: Eén mutatie in de levensloop van het lijk, binnen Bezorgen stoffelijk overschot.
@@ -159,54 +102,12 @@ kenmerken:
   levert_aanbod:
     waarde: nee
     onderbouwing: De bronnen in de wiki noemen geen product of dienst; de UPL noemt asverstrooiing (model-APV, nog geen bron).
-  bedient_gedrag:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen functie.'
-  in_functie_indeling:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen functie.'
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een bijgezette, verstrooide of meegegeven asbus, niet in een benoemde toestandsverandering.
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  zelfstandig_aanbod:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  omvat_diensten_en_afspraken:
-    waarde: nee
-    onderbouwing: Geen gebundeld aanbod.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  landelijk:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
-  in_werking:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
-  is_grondslag_voor:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.

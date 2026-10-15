@@ -34,89 +34,29 @@ kenmerken:
     onderbouwing: Iets wat de gemeente aanbiedt.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  hoedanigheid:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  samenwerkingsverband:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  toegangspunt:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  plaats:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  aanbod_als_geheel:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  regeling_als_geheel:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  eigen_rechtspersoon:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  vervult_een_rol:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  voert_gedrag_uit:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  soort_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  ontsluit_een_dienst:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  per_keer_doorlopen:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces.'
-  groepeert_processen:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: een dienst, geen proces of functie.'
-  gegroepeerd_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  toestandsverandering:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  handelende_partij: nee
+  hoedanigheid: nee
+  samenwerkingsverband: nee
+  toegangspunt: nee
+  plaats: nee
+  aanbod_als_geheel: nee
+  regeling_als_geheel: nee
+  per_keer_doorlopen: nee
+  groepeert_processen: nee
+  gegroepeerd_gedrag: nee
+  toestandsverandering: nee
   aangeboden_gedrag:
     waarde: ja
     onderbouwing: 'Een prestatie die de gemeente aan de rechthebbende aanbiedt: toestemming om op te graven en elders te begraven of te cremeren (Wlb art. 29; Groningen art. 28).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gezamenlijk_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  toegewezen_partij:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  gebruikt_objecten:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  aanleiding:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
+  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een vergunning tot opgraving met voorschriften over geneeskundig toezicht, vervoer en bestemming (Wlb art. 29 lid 2).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  eigen_normering:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  stabiel_over_tijd:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
   afnemer:
     waarde: ja
     onderbouwing: Burger en bedrijf (UPL); de rechthebbende dient de aanvraag in bij de burgemeester (Groningen art. 28 lid 1).
@@ -128,75 +68,9 @@ kenmerken:
     onderbouwing: Het bedrijfsproces Opgraven stoffelijk overschot (Wlb art. 29).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  leidt_tot_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen proces dat per keer wordt doorlopen.'
-  omvat_processen:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  bedient_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  in_functie_indeling:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  zelfstandig_aanbod:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  omvat_diensten_en_afspraken:
-    waarde: nee
-    onderbouwing: 'Geen gebundeld aanbod: één prestatie, uitkomst een beschikking, geen afspraak.'
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  landelijk:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
-  in_werking:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
-  is_grondslag_voor:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen bredere dienst in deze wiki of in het GEMMA-model.

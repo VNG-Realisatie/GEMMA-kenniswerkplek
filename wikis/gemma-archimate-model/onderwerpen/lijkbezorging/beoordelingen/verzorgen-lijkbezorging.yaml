@@ -35,48 +35,14 @@ kenmerken:
     onderbouwing: Een groep van activiteiten.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  hoedanigheid:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  samenwerkingsverband:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  toegangspunt:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  plaats:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  aanbod_als_geheel:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  regeling_als_geheel:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: het begrip is gedrag.'
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  eigen_rechtspersoon:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  vervult_een_rol:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  voert_gedrag_uit:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  soort_partij:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  ontsluit_een_dienst:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen partij.'
-  per_keer_doorlopen:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  handelende_partij: nee
+  hoedanigheid: nee
+  samenwerkingsverband: nee
+  toegangspunt: nee
+  plaats: nee
+  aanbod_als_geheel: nee
+  regeling_als_geheel: nee
+  per_keer_doorlopen: nee
   groepeert_processen:
     waarde: ja
     onderbouwing: Groepeert de processen rond de gemeentelijke taak lijkbezorging en wordt niet per geval doorlopen (besluit 2026-10-04).
@@ -85,15 +51,9 @@ kenmerken:
   gegroepeerd_gedrag:
     waarde: nee
     onderbouwing: 'Geen functie meer: de taak groepeert processen (besluit 2026-10-04).'
-  toestandsverandering:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  aangeboden_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  gezamenlijk_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
+  toestandsverandering: nee
+  aangeboden_gedrag: nee
+  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: De rollen Houder van de begraafplaats, Houder van het crematorium en Houder van een plaats van bijzetting, die de gemeente vervult (art. 33, 37, 52, 63).
@@ -104,98 +64,14 @@ kenmerken:
     onderbouwing: 'Raadpleegt en werkt bij: graf, grafrecht, begraafplaats, lijk, urn (art. 23, 27, 28).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  aanleiding:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  benoembaar_resultaat:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  komt_herhaald_voor:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_normering:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  stabiel_over_tijd:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen functie.'
-  afnemer:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  gerealiseerd_door:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  leidt_tot_gedrag:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen proces dat per keer wordt doorlopen.'
   omvat_processen:
     waarde: ja
     onderbouwing: 'Per kernobject één proces: Bezorgen stoffelijk overschot (art. 1–22a), Verzorgen gemeentebegrafenis (art. 20–22), Beheren grafrechten (art. 28), Beheren graven (art. 23, 27, 31), Beheren begraafplaatsen (art. 33–47) en Beheren crematoria (art. 50–56).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Omvat de processen van drie kernobjecten, niet de levensloop van één.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Levert zelf geen product of dienst; dat doen de deelprocessen.
-  bedient_gedrag:
-    waarde: nee
-    onderbouwing: Een taak bedient geen processen maar omvat ze; de functies Exploiteren van begraafplaatsen en Burgerlijke stand diensten bedienen de processen.
-  in_functie_indeling:
-    waarde: nee
-    onderbouwing: 'Geen functie: een taak staat in de Procesindeling naar taak.'
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in één toestandsverandering.
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  zelfstandig_aanbod:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: past niet bij de aard van het begrip.'
-  omvat_diensten_en_afspraken:
-    waarde: nee
-    onderbouwing: Geen gebundeld aanbod.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  landelijk:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
-  in_werking:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
-  is_grondslag_voor:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen regeling als geheel.'
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen breder element in deze wiki.
