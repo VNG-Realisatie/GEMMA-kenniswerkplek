@@ -110,7 +110,7 @@ De Wet BRP is de formele grondslag van de basisregistratie personen en van de ge
 
 ## Citaten
 
-> het college van burgemeester en wethouders is verantwoordelijk voor het bijhouden van persoonsgegevens in de basisregistratie overeenkomstig afdeling 1 van hoofdstuk 2. (art. 1.4 lid 1)
+> Het college van burgemeester en wethouders is verantwoordelijk voor het bijhouden van persoonsgegevens in de basisregistratie overeenkomstig afdeling 1 van hoofdstuk 2. (art. 1.4 lid 1)
 
 > de ingezetene: de ingeschrevene die zijn adres heeft in een gemeente in Nederland en op wiens persoonslijst niet het gegeven van zijn overlijden of van vertrek uit Nederland als actueel gegeven is opgenomen; (art. 1.1 onder f)
 

@@ -166,7 +166,7 @@ Afbakening: de lijst van Groningse begraafplaatsen (art. 3 lid 1), openingstijde
 
 > beheerder: de ambtenaar die belast is met de dagelijkse leiding van de begraafplaats(en) of degene die hem vervangt; (art. 1 onder e)
 
-> particulier graf: een graf waarvoor aan een natuurlijk persoon of rechtspersoon het uitsluitend recht is verleend tot: het doen begraven en begraven houden van lijken; het doen bijzetten en bijgezet houden van asbussen/sierurnen. (art. 1 onder p)
+> particulier graf: een graf waarvoor aan een natuurlijk persoon of rechtspersoon het uitsluitend recht is verleend tot: 1. het doen begraven en begraven houden van lijken; 2. het doen bijzetten en bijgezet houden van asbussen/sierurnen. (art. 1 onder p)
 
 > rechthebbende: natuurlijk persoon of rechtspersoon aan wie een uitsluitend recht is verleend op een particulier graf of een particulier urnengraf of urnennis dan wel degene die redelijkerwijze geacht kan worden in diens plaats te zijn getreden; (art. 1 onder w)
 

@@ -62,4 +62,4 @@ Buiten de afbakening: de stappen van de BRP-ambtenaar, categorie 11, groep 82 en
 
 > In de BRP wordt gezag bijgehouden in categorie 11, aan de hand van meldingen uit het gezagsregister. (vindplaats: Inleiding)
 
-> Er wordt daarvoor geen melding uit het gezagsregister verkregen, omdat gezag van rechtswege daarin niet geregistreerd wordt. (vindplaats: Inleiding)
+> Er wordt daarvoor geen melding uit het gezagsregister verkregen, omdat gezag van rechtswege daarin niet wordt geregistreerd. (vindplaats: Inleiding)

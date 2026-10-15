@@ -46,6 +46,6 @@ Overzichtspagina van de HUP over de gegevensgroep nationaliteit in de BRP. Als b
 
 ## Citaten
 
-> Als basisregel geldt dat je bij het opnemen, actualiseren en corrigeren elke nationaliteit een eigen stapel hebt. (kop Elke nationaliteit een eigen stapel)
+> Als basisregel geldt dat je bij het opnemen, actualiseren en corrigeren elke nationaliteit een eigen stapel heeft. (kop Elke nationaliteit een eigen stapel)
 
 > Een persoon die beweert staatloos te zijn, moet dat normaal gesproken zelf aantonen door het tonen van brondocumenten. De gemeente is niet verplicht om zelfstandig de staatloosheid te onderzoeken of vast te stellen. (kop Staatloosheid)

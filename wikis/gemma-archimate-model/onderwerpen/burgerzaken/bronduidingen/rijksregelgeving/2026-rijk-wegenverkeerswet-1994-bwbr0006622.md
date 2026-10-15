@@ -66,6 +66,6 @@ De gemeentelijke rol is dus de aanvraag, de afgifte (het besluit tot afgifte, ar
 
 > Degene die is belast met de afgifte van rijbewijzen, verschaft zich de nodige zekerheid over de identiteit van de aanvrager. (vindplaats: art. 113 lid 2)
 
-> Het nieuwe of vervangende rijbewijs wordt niet uitgereikt indien tussen de aanvraag en de uitreiking omstandigheden bekend zijn geworden die, indien zij bekend waren geweest bij de aanvraag ertoe hadden geleid dat geen besluit van afgifte was genomen. (vindplaats: art. 120a lid 2)
+> Het wordt niet uitgereikt indien tussen de aanvraag en de uitreiking omstandigheden bekend zijn geworden die, indien zij bekend waren geweest bij de aanvraag ertoe hadden geleid dat geen besluit van afgifte was genomen. (vindplaats: art. 120a lid 2)
 
 > Er is een rijbewijzenregister. De Dienst Wegverkeer is beheerder en verwerkingsverantwoordelijke van het rijbewijzenregister. (vindplaats: art. 126 lid 1)

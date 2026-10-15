@@ -41,6 +41,6 @@ De procesniveaus van de wiki (levensloopproces, bedrijfsproces, deelproces) en d
 
 ## Citaten
 
-> het hoogste niveau dat we in deze hiërarchie onderkennen is het klant-tot-klant- ofwel bedrijfsproces (PH 47)
+> Het hoogste niveau dat we in deze hiërarchie onderkennen is het klant-tot-klant- ofwel bedrijfsproces (PH 47)
 
 > Ketensamenwerking wordt soms aangeduid als 'ketenproces', een proces op een hoger niveau dan de eigen bedrijfsprocessen. […] vanuit de procesarchitectuur gezien niet correct (PH 146)

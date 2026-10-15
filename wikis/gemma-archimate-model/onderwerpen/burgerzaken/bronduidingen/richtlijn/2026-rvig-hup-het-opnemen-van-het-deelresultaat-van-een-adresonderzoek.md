@@ -35,4 +35,4 @@ Geen: Registratiestap van de uitvoering (waarde 089999 in rubriek 83.10); het de
 
 ## Citaten
 
-> Wanneer, tijdens de uitvoer van het onderzoek, vastgesteld wordt dat een persoon niet meer woont op het adres waarop hij is ingeschreven, kan dit deel van het onderzoeksresultaat al worden opgenomen op de persoonslijst van de persoon. (inleiding)
+> Wanneer, tijdens de uitvoer van het onderzoek, vastgesteld wordt dat een persoon niet meer woont op het adres waarop hij is ingeschreven in de BRP, kan dit deel van het onderzoeksresultaat al worden opgenomen op de persoonslijst van de persoon. (inleiding)

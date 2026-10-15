@@ -46,4 +46,4 @@ Korte NVVB-pagina over de modelbeleidsregel briefadres. Sinds 1 januari 2022 is 
 
 ## Citaten
 
-> sinds 1 januari 2022 is de gemeente verplicht om burgers die geen beschikking hebben over een woonadres en geen aangifte van adreswijziging doen ambtshalve te registreren op een briefadres. (alinea 1)
+> Sinds 1 januari 2022 is de wet BRP aangepast inzake het briefadres. … is de gemeente sinds 1 januari vorig jaar verplicht om burgers die geen beschikking hebben over een woonadres en geen aangifte van adreswijziging doen ambtshalve te registreren op een briefadres. (alinea 1)

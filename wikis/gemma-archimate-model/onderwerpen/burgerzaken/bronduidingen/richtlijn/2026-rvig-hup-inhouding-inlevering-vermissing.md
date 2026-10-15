@@ -46,6 +46,6 @@ Procedure waarin de bijhoudingsgemeente de inhouding, inlevering of vermissing v
 
 ## Citaten
 
-> Inhouding gebeurt altijd door een daartoe bevoegde Nederlandse autoriteit. Inlevering gebeurt daarentegen op initiatief van de persoon zelf. (vindplaats: inleiding)
+> De inhouding van een Nederlands reisdocument gebeurt altijd door een daartoe bevoegde Nederlandse autoriteit. Inlevering gebeurt daarentegen op initiatief van de persoon zelf. (vindplaats: inleiding)
 
 > Het is niet/nooit toegestaan om na registratie van een vermissing het teruggevonden reisdocument weer terug te geven aan de houder. (vindplaats: sectie Inhouding/inlevering reisdocument ná vermissing)
