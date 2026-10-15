@@ -25,9 +25,10 @@ kenmerken:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Hoort bij participatie.
+    onderbouwing: 'Hoort bij participatie: het plan geeft vorm aan het betrekken van ingezetenen bij beleid dat de verordening regelt (art. 150 lid 1; var. 1 art. 3).'
     bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
+    - 2026-rijk-gemeentewet-wettekst
+    - 2024-vng-model-participatieverordening
   gedrag: nee
   handelende_partij: nee
   hoedanigheid: nee
@@ -36,12 +37,82 @@ kenmerken:
   plaats: nee
   aanbod_als_geheel: nee
   regeling_als_geheel: nee
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Eén plan per beleid dat voorbereid, uitgevoerd of geëvalueerd wordt (var. 1 art. 3 lid 2 onder a).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Ontstaat vóór de participatie, wordt openbaar gemaakt en is afgerond als na afloop het eindverslag is opgesteld (var. 1 art. 3 lid 1, 5 lid 1).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: Het bestuursorgaan stelt het plan op en maakt het openbaar, binnen Uitvoeren inwonersparticipatie (var. 1 art. 3 lid 1; var. 2 art. [7] lid 1).
+    bronnen:
+    - 2024-vng-model-participatieverordening
   afspraak:
     waarde: nee
     onderbouwing: Een eenzijdig plan van het bestuursorgaan.
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Het plan zelf.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: De vorm is vrij; het plan kan deel zijn van een voordracht, projectplan of beleidsstuk, maar ook een losstaand document (toelichting var. 1 art. 3).
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Het bestuursorgaan stelt het op, eventueel in overleg met inwoners en maatschappelijke partijen (var. 1 art. 3 lid 1; toelichting).
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip in de wiki, het GGM of GEMMA; een plan met eigen voorgeschreven inhoud en openbaarmaking (var. 1 art. 3 lid 2; var. 2 art. [7] lid 2).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  generiek:
+    waarde: nee
+    onderbouwing: Alleen in het onderwerp Participatie.
+definitie: Openbaar plan waarin een bestuursorgaan vooraf vastlegt waarom, hoe en wanneer het inwoners betrekt bij de voorbereiding, uitvoering of evaluatie van beleid.
+beschrijving:
+- Het bestuursorgaan stelt het plan op voordat het beleid wordt voorbereid, uitgevoerd of geëvalueerd, en maakt het openbaar; bereidt het college een besluit van de raad voor, dan stelt het college het op en informeert het de raad over de inhoud (2024-vng-model-participatieverordening, var. 1 art. 3 lid 1, 3; var. 2 art. [7] lid 1, 3).
+- Het plan bevat in elk geval een omschrijving van het beleid, het doel, het proces en de planning van de participatie, en de ambtelijke en bestuurlijke besluitvorming over het beleid; in variant 2 ook het oogmerk en de vorm van participatie, van informeren tot beslissen, en de te betrekken doelgroepen (2024-vng-model-participatieverordening, var. 1 art. 3 lid 2; var. 2 art. [7] lid 2). Het kan worden opgesteld aan de hand van het participatiebeleid van de raad.
+- 'De vorm is vrij: het plan kan deel zijn van een voordracht, projectplan of beleidsstuk, of een losstaand document (2024-vng-model-participatieverordening, toelichting var. 1 art. 3). De wet schrijft het plan niet voor; de raad regelt in de participatieverordening hoe inwoners worden betrokken (2026-rijk-gemeentewet-wettekst, art. 150 lid 1).'
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Participatie
 synoniemen:
 - naam: Plan voor inwonersparticipatie
-  context: beleid, variant 1
+  context: VNG-modelverordening
+- naam: Plan voor participatie
+  context: VNG-modelverordening, variant 2
+naamkeuze:
+- Participatieplan is de gangbare term in de implementatiehandleiding en in de toelichting bij de VNG-modelverordening (2024-vng-implementatiehandleiding-model-participatieverordening; 2024-vng-model-participatieverordening, toelichting); de modeltekst zegt plan voor inwonersparticipatie, in variant 2 plan voor participatie of inwonersparticipatie. Participatieplan dekt beide varianten.
+ggm:
+  sterkte: geen
+  onderbouwing: Het GGM kent geen participatieplan; ParticipatieDeelname (beleidsdomein Inburgering) gaat over deelname aan participatie in het inburgeringstraject, een ander begrip.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; Participatiedossier gaat over integratie en participatie van één inwoner bij inburgering. Nieuw voor GEMMA.
+vragen:
+- 'Wettelijke grondslag: de Gemeentewet schrijft geen participatieplan voor; art. 150 lid 1 eist alleen een verordening over de wijze waarop ingezetenen en belanghebbenden bij beleid worden betrokken. Plan en eindverslag komen uit de VNG-modelverordening (var. 1 art. 3, 5), die een gemeente kan aanpassen. Het kenmerk betekenis in onderwerp en de beschrijving steunen daarom op art. 150 lid 1. Advies: houden als kernobject (besluit K4), met art. 150 lid 1 als landelijke bron, en in de beschrijving vermelden dat de wet het plan niet voorschrijft (zo verwerkt). Geldt ook voor Eindverslag inwonersparticipatie.'
+status: review
+beslist:
+  uitkomst:
+    soort: element
+    regel: 35
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    data_object: nee
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 21
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieplan.md

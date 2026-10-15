@@ -2,6 +2,9 @@ begrip: Uitvoeren inwonersparticipatie
 onderwerpen:
 - participatie
 kernobject: participatieplan
+afnemer: extern
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Participatie
 kenmerken:
   herkenbaar:
     waarde: ja
@@ -52,11 +55,169 @@ kenmerken:
   toestandsverandering: nee
   aangeboden_gedrag: nee
   gezamenlijk_gedrag: nee
+  toegewezen_partij:
+    waarde: ja
+    onderbouwing: 'Beslisser: het bevoegde bestuursorgaan (raad, college of burgemeester) besluit over zijn eigen beleid of inwonersparticipatie plaatsvindt, stelt plan en eindverslag op; het college bij voorbereiding van een raadsbesluit (var. 1 art. 2 lid 1, 3 lid 3, 5 lid 3).'
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert het participatieplan en het eindverslag en maakt ze openbaar (var. 1 art. 3 lid 1, 5 lid 1).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  aanleiding:
+    waarde: ja
+    onderbouwing: Het besluit van het bestuursorgaan dat over zijn beleid inwonersparticipatie plaatsvindt, voorafgaand aan de voorbereiding, uitvoering of evaluatie van dat beleid (var. 1 art. 2 lid 1, 3 lid 1).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  benoembaar_resultaat:
+    waarde: ja
+    onderbouwing: Het openbare eindverslag met proces, uitkomsten, een onderbouwde reactie en een evaluatie (var. 1 art. 5; var. 2 art. [10]).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  komt_herhaald_voor:
+    waarde: ja
+    onderbouwing: Bij elk beleid waarover een bestuursorgaan inwonersparticipatie laat plaatsvinden (var. 1 art. 2 lid 1).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  eigen_normering:
+    waarde: ja
+    onderbouwing: Art. 150 lid 1 en 2 (verordening, inspraak via afdeling 3.4 Awb); in de VNG-modelverordening plan, inspraak en eindverslag met termijnen (var. 1 art. 3–5; var. 2 art. [7]–[10]).
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+    - 2024-vng-model-participatieverordening
+  bijdrage_aan_groter_proces:
+    waarde: nee
+    onderbouwing: Geen deel van een groter proces, ook niet van het vaststellen van beleid; eigen aanleiding, plan en eindverslag (besluit 2026-10-15).
+  klant_tot_klant:
+    waarde: ja
+    onderbouwing: Van het besluit dat inwonersparticipatie plaatsvindt tot het openbare eindverslag (var. 1 art. 2 lid 1, 5 lid 1).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  omvat_levensloop:
+    waarde: ja
+    onderbouwing: Omvat de hele levensloop van één participatieplan, van opstellen en openbaar maken vóór de participatie tot het eindverslag na afloop (var. 1 art. 3, 5; var. 2 art. [7], [10]).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  eigen_besluit:
+    waarde: nee
+    onderbouwing: Eindigt in een eindverslag, niet in een besluit; het besluit over het beleid zelf valt buiten dit proces.
+  levert_aanbod:
+    waarde: nee
+    onderbouwing: Realiseert geen dienst of product uit de UPL; het resultaat is een openbaar verslag en invloed op het beleid.
+  leidt_tot_gebeurtenis:
+    waarde: nee
+    onderbouwing: Eindigt in het openbare eindverslag, niet in een benoemde toestandsverandering.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder proces in de wiki; Participatie (var. 2 art. 1) is het onderwerp zelf en geen element.
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  generiek:
+    waarde: nee
+    onderbouwing: Eén proces van het onderwerp Participatie; beleid in andere domeinen gebruikt het via relaties.
 synoniemen:
 - naam: Inwonersparticipatie
   context: beleid
+- naam: Generiek deelproces Uitvoeren participatie
+  context: GEMMA
+definitie: Het op initiatief van de gemeente betrekken van inwoners en maatschappelijke partijen bij de voorbereiding, uitvoering of evaluatie van beleid.
+beschrijving:
+- De raad regelt in een verordening hoe ingezetenen en belanghebbenden bij de voorbereiding, uitvoering en evaluatie van gemeentelijk beleid worden betrokken (2026-rijk-gemeentewet-wettekst, art. 150 lid 1). Elk bestuursorgaan (raad, college of burgemeester) besluit over zijn eigen beleid of inwonersparticipatie plaatsvindt (2024-vng-model-participatieverordening, var. 1 art. 2 lid 1).
+- Vooraf stelt het bestuursorgaan een participatieplan op en maakt het openbaar; daarna betrekt het inwoners en maatschappelijke partijen in de gekozen vorm, van informeren tot beslissen; na afloop stelt het een eindverslag op en maakt het openbaar (2024-vng-model-participatieverordening, var. 1 art. 3–5; var. 2 art. [7], [10]). Bereidt het college een besluit van de raad voor, dan stelt het college plan en eindverslag op en informeert het de raad (var. 1 art. 3 lid 3, 5 lid 3).
+- Kiest het bestuursorgaan voor inspraak, of is inspraak wettelijk verplicht, dan verloopt de inspraak via de uniforme openbare voorbereidingsprocedure van afdeling 3.4 Awb, tenzij de verordening of het bestuursorgaan een ander proces vaststelt (2026-rijk-gemeentewet-wettekst, art. 150 lid 2; 2024-vng-model-participatieverordening, var. 1 art. 4, var. 2 art. [8]).
+- De VNG-modelverordening sluit inwonersparticipatie facultatief uit, onder meer bij spoed, bij uitvoering van hogere regelgeving zonder beleidsvrijheid, bij interne aangelegenheden en bij begroting, tarieven en belastingen; haar termijnen zijn voorbeeldwaarden die de gemeente zelf invult (2024-vng-model-participatieverordening, var. 1 art. 2 lid 3, 3 lid 1, 5 lid 1).
+deelprocessen:
+- naam: Opstellen participatieplan
+  omschrijving: Het bestuursorgaan stelt vóór de voorbereiding, uitvoering of evaluatie van het beleid een plan op met het beleid, het doel, het proces en de planning van de participatie, en maakt het openbaar; bij een besluit van de raad doet het college dat en informeert het de raad.
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 3; var. 2 art. [7]
+- naam: Betrekken inwoners en maatschappelijke partijen
+  omschrijving: Het bestuursorgaan betrekt inwoners en maatschappelijke partijen in de vorm uit het plan; bij inspraak volgt het de uniforme openbare voorbereidingsprocedure, tenzij het een ander proces vaststelt. Het college zorgt voor laagdrempelige ondersteuning van deelnemers.
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 4; var. 2 art. [8], [9]
+- naam: Opstellen eindverslag
+  omschrijving: Na afloop stelt het bestuursorgaan een eindverslag op met het gevolgde proces, de uitkomsten, een onderbouwde reactie daarop en een evaluatie, en maakt het openbaar.
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 5; var. 2 art. [10]
+gemma:
+  id: id-fcd03bc4-cf22-493d-ad97-fba88be7b13a
+  sterkte: partieel
+  onderbouwing: GEMMA kent het Generiek deelproces Uitvoeren participatie, zonder definitie, in de procesarchitectuur van Vaststellen omgevingsplan, waar het de Deelservice Participatie realiseert. Dit element is breder en van een ander niveau, een eigen proces van plan tot eindverslag voor beleid in elk domein; de export geeft het GEMMA-element deze naam en definitie (besluit K4, voorleggen in fase 3).
+relaties:
+- soort: toegang (registreren)
+  naar: participatieplan
+  naam: stelt op en maakt openbaar
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 3 lid 1, 3; var. 2 art. [7] lid 1, 3
+- soort: toegang (registreren)
+  naar: eindverslag-inwonersparticipatie
+  naam: stelt op en maakt openbaar
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 5 lid 1, 3; var. 2 art. [10] lid 1, 3
+- soort: triggering
+  naar: uitvoeren-uniforme-openbare-voorbereidingsprocedure
+  naam: leidt tot (bij inspraak)
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  vindplaats: Gemeentewet art. 150 lid 2; var. 1 art. 4; var. 2 art. [8]
+- soort: toegang (raadplegen)
+  naar: beleidsnota
+  naam: stelt het plan op aan de hand van (participatiebeleid)
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 3 lid 1; var. 2 art. [7] lid 1
+- soort: toegang (raadplegen)
+  naar: participatieverordening
+  naam: volgt de regels van
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 2–5; var. 2 art. [3]–[10]
+vragen:
+- 'Beleidsdomein: het GGM kent onder taakveld 0 alleen Griffie, en de wiki gebruikt Besluitvorming voor de algemene bestuursrechtelijke procedures. Participatie past in geen van beide: het is een eigen taak uit art. 150 Gemeentewet met eigen kernobjecten (Participatieplan, Verzoek uitdaagrecht). Advies: een gemeentelijk beleidsdomein Participatie onder 0 Bestuur en Ondersteuning (zo ingevuld bij dit proces, Participatieplan en Eindverslag inwonersparticipatie), met een beschrijving in het register van beleidsdomeinen en een GGM-terugmelding (hiaat). Alternatief: Besluitvorming, maar dat is een thematisch onderwerp en geen eigen taak.'
+- 'Procesniveau: dit proces omvat de hele levensloop van één participatieplan, van opstellen tot het eindverslag, en is daarom een levensloopproces (bedrijfsproces in ArchiMate) met kernobject Participatieplan; besluit K4 noemt het een eigen bedrijfsproces. Er is geen ander proces op het participatieplan, dus geen bedrijfsproces eronder. Advies: levensloopproces bevestigen; de deelprocessen (plan, betrekken, eindverslag) staan in deelprocessen.'
 besluiten:
 - datum: '2026-10-15'
   besluit: 'Eigen bedrijfsproces met Participatieplan als kernobject, geen deelproces van het vaststellen van beleid en geen bedrijfsinteractie: eigen aanleiding, plan en eindverslag van het bestuursorgaan.'
   gevolg: verwerkt
   advies: gevolgd
+status: review
+beslist:
+  uitkomst:
+    soort: element
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    data_object: nee
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 17
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-fcd03bc4-cf22-493d-ad97-fba88be7b13a
+    gemma_naam: Generiek deelproces Uitvoeren participatie
+    gemma_type: business-process
+    gemma_map: Business / Procesarchitectuur / Vaststellen omgevingsplan
+    gemma_eigenschappen:
+      Object ID: fcd03bc4-cf22-493d-ad97-fba88be7b13a
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md

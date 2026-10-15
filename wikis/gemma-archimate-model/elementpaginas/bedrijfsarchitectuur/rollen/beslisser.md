@@ -2,13 +2,14 @@
 id: beslisser
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Beslisser
 onderwerpen:
 - bestuur-en-organisatie
 - lijkbezorging
 - burgerzaken
 - besluitvorming
+- participatie
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 match:
   gemma: sterk
@@ -41,6 +42,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
 - 2026-rvig-hup-overlijden-buitenland
 - 2026-rijk-bekendmakingswet-wettekst
+- 2024-vng-model-participatieverordening
 gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e
 gemma_naam: Beslisser
 gemma_type: business-role
@@ -53,7 +55,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beslisser.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -157,6 +159,8 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | Beslisser | stelt de dwangsom bij beschikking vast *toewijzing* | [Vaststellen dwangsom bij niet tijdig beslissen](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/vaststellen-dwangsom-bij-niet-tijdig-beslissen.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:18) |
 | Beslisser | beslist op de aanvraag en kent de vergoeding toe *toewijzing* | [Behandelen aanvraag nadeelcompensatie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-nadeelcompensatie.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:126, 4:130) |
 | Beslisser | beslist op de aanvraag en geeft de beschikking *toewijzing* | [Behandelen aanvraag beschikking](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-beschikking.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:1, 4:13) |
+| Beslisser | besluit over inwonersparticipatie en stelt plan en eindverslag op *toewijzing* | [Uitvoeren inwonersparticipatie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md) | [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2 lid 1, 3 lid 1, 5 lid 1; var. 2 art. [3], [7], [10]) |
+| Beslisser | reageert op het verzoek en wijst het toe of af *toewijzing* | [Behandelen verzoek uitdaagrecht](../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md) | [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. [8]; var. 2 art. [13]) |
 
 #### Inkomend
 
@@ -196,6 +200,7 @@ Alleen de kenmerken met ja; de overige 53 zijn nee.
 | [Utrecht Buitenlandse documenten inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven.md) | Gemeente Utrecht: Buitenlandse documenten inschrijven |
 | [HUP BRP: Overlijden buitenland](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-overlijden-buitenland.md) | HUP BRP: Overlijden buitenland |
 | [Bekendmakingswet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) | Bekendmakingswet (BWBR0004287) |
+| [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) | VNG Model Participatieverordening 2024 |
 
 ### Afstemming met GEMMA
 

@@ -4,52 +4,48 @@ Overdracht naar de volgende Sessie (2026-10-15). Wordt bij elke overdracht overs
 
 ## Stand van zaken
 
-- Plan: [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md), stap 9 (de proef) met het onderwerp Participatie. Fase 1 (bronnen en fase A) is gecommit; fase 2 (fase B per cluster) is de volgende.
-- Fase A staat in `onderwerpen/participatie/beoordelingen/` (28 beoordelingen: 12 naar fase B, 17 vallen af) en in `onderwerpen/bestuur-en-organisatie/beoordelingen/gemeentewet.yaml` (verplaatst uit Lijkbezorging). Belanghebbende, Beslisser, Beleidsnota, Uitvoeren uniforme openbare voorbereidingsprocedure en Zienswijze hebben `participatie` in `onderwerpen`.
-- `tools/beslissen.py` meldt 12 fouten: de kenmerken van fase B. Het schrijft pas na fase B; tot dan wijken de pagina's af van de beoordelingen (`render.py --check`). Lint en pytest slagen.
+- Plan: [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md), stap 9 (de proef) met het onderwerp Participatie. Fase 1 en fase 2 zijn gecommit; fase 3 (beslissen, voorleggen, akkoord, commit) is de volgende.
+- K1 uitgevoerd: bron `2024-vng-model-participatieverordening` (gemeentelijke-regelgeving, bijlage 1 bij VNG-ledenbrief 24/051), bronduiding in `onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/`.
+- Fase B gedaan door drie beoordelingsagenten (Participatieplan; Verzoek uitdaagrecht; zonder kernobject). `beslissen.py` geeft geen fouten; lint en pytest slagen. Status: review voor Uitvoeren inwonersparticipatie, Participatieplan, Behandelen verzoek uitdaagrecht, Verzoek uitdaagrecht, Indiener, Inwoner, Maatschappelijke partij, Model Participatieverordening en Gemeentewet; kandidaat voor Eindverslag inwonersparticipatie, Afspraak over uitvoering en Participatieverordening (geen proces bepaalt de levensloop).
+- Gebundeld door de hoofdsessie: toewijzing van Beslisser naar beide processen; toegang (raadplegen) van beide processen naar Participatieverordening; Participatieverordening als specialisatie (met element) van Regeling; de zin over burgerzaken in Inwoner herschreven (regel Los van het onderwerp); terugmeldingen procesarchitectuur (UPL-product voor het uitdaagrecht) en GEMMA-team (actor Burger naast Inwoner).
+- Overgebleven waarschuwingen zijn toegelicht: 'Registreert' in Uitvoeren inwonersparticipatie (vaste handeling); Gemeentewet en Model Participatieverordening hangen alleen aan processen (geen UPL-product, teruggemeld); de naam Model Participatieverordening volgt het precedent van de Model beheersverordening.
 
-## Besluiten fase 1 (2026-10-15, advies gevolgd)
+## Voor te leggen in fase 3 (`vragen:` en open redenen)
 
-- K1: de VNG Model Participatieverordening 2024 wordt een eigen bron (brontype gemeentelijke-regelgeving), als eerste stap van fase 2, met skill `gemma-archimate-model-ingest` in een subagent; de implementatiehandleiding (richtlijn) bevat de modeltekst niet. Model Participatieverordening wordt beleidskader (VNG-modelverordening) dat de Gemeentewet uitwerkt.
-- K2: Gemeentewet wordt beleidskader met thuis Bestuur en organisatie; in deze ronde alleen de relaties voor Participatie (art. 150). De rest staat in [todo.md](todo.md).
-- K3: het verzoekproces heet Behandelen verzoek uitdaagrecht (kernobject Verzoek uitdaagrecht); Overheidsparticipatie is synoniem (variant 2). Het besluit over het uitdaagrecht van 2026-09-30 staat nu letterlijk in die beoordeling.
-- K4: Uitvoeren inwonersparticipatie is een eigen bedrijfsproces met kernobject Participatieplan. GEMMA kent alleen het Generiek deelproces Uitvoeren participatie (partieel, voorleggen in fase 3) en de functie Samenwerking en participatie.
-- K5: Inspraak is geen element; Uitvoeren inwonersparticipatie krijgt bij inspraak een relatie naar Uitvoeren uniforme openbare voorbereidingsprocedure (Gemeentewet art. 150 lid 2).
-- K6: Inspraakverordening is synoniem van Participatieverordening (voorganger).
-- Voor fase B: Verzoek uitdaagrecht mogelijk specialisatie van Aanvraag (Awb), Indiener mogelijk specialisatie van Belanghebbende; Inwoner thuis Participatie zolang alleen Participatie haar gebruikt.
+1. Beleidsdomein voor het hele onderwerp: een gemeentelijk beleidsdomein Participatie onder taakveld 0 (nu bij de twee processen, Participatieplan, Eindverslag, Verzoek uitdaagrecht, Afspraak) of Besluitvorming (nu bij Participatieverordening, Model en Gemeentewet). Eén besluit; daarna gelijktrekken, en bij Participatie de regel in `modellen/gemma/indelingen/beleidsdomeinen.yaml` en een procesarchitectuur-terugmelding (beleidsdomein).
+2. Uitvoeren inwonersparticipatie en Behandelen verzoek uitdaagrecht zijn levensloopproces (K4 zei bedrijfsproces): bevestigen.
+3. Participatieplan en Eindverslag: grondslag art. 150 lid 1 Gemeentewet, de wet schrijft plan en verslag niet voor (alleen de VNG-modelverordening).
+4. Eindverslag inwonersparticipatie: advies geen eigen element (afwijzen); het staat als resultaat in het proces. Bij afwijzen vervalt de relatie vanuit het proces.
+5. Afspraak over uitvoering zonder eigen levensloopproces: advies opnemen, levensloop in Behandelen verzoek uitdaagrecht (precedent Urn, 2026-10-08).
+6. Verzoek uitdaagrecht geen specialisatie van Aanvraag (Awb), en Indiener geen specialisatie van Belanghebbende: advies nee, want geen bron noemt de reactie een besluit (bevestigen).
+7. Participatieverordening: zelfstandige specialisatie van Regeling (advies ja); het signaal over de levensloop laten staan zoals bij Beleidsnota en Regeling.
+8. GEMMA-match partieel van Uitvoeren inwonersparticipatie op Generiek deelproces Uitvoeren participatie (K4). Blijft hij, dan een GEMMA-terugmelding (de import geeft dat deelproces een naam, definitie en niveau; controleren in Vaststellen omgevingsplan).
+- Niet aangemaakt, advies geen element: reactie op het verzoek, formulier, experimenteerprogramma; participatiejaarverslag is synoniem van Participatieparagraaf (variant 2). Kandidaat-bedrijfsfunctie: GEMMA-bladfunctie Burgerinitiatieven facilitering (id-27250af5-c8bc-4167-a743-9b1c6d6edef6) onder Samenwerking en participatie.
+- Rol van het college als centraal loket voor verzoeken: nu alleen in de beschrijving.
+- Vermoedelijke verwijsfout in de VNG-modelverordening (var. 2 art. [13] lid 3 onder c: artikel 12 in plaats van [11]); past in geen register.
 
-## Clusters voor fase B
+## Meting fase 2 (transcripten)
 
-1. Participatieplan: `uitvoeren-inwonersparticipatie`, `participatieplan`, `eindverslag-inwonersparticipatie`.
-2. Verzoek uitdaagrecht: `behandelen-verzoek-uitdaagrecht`, `verzoek-uitdaagrecht`, `afspraak-over-uitvoering`, `indiener`.
-3. Zonder kernobject: `model-participatieverordening`, `participatieverordening`, `inwoner`, `maatschappelijke-partij`, `gemeentewet`.
+| | Hoofdsessie | Ingest | Participatieplan | Verzoek uitdaagrecht | Zonder kernobject | Fase 2 totaal | Fase 1 | Deel 2, heel onderwerp |
+|---|---|---|---|---|---|---|---|---|
+| Beurten | 30 (tot de meting) | 18 | 44 | 56 | 65 | 213 | 42 | 156 |
+| Totale invoer | 2,8 mln | 1,3 mln | 5,1 mln | 7,9 mln | 8,9 mln | 26,0 mln | 5,6 mln | 48 mln |
+| Startcontext | 40.300 | 34.000 | 34.400 | 34.500 | 34.600 | — | 40.400 | 43.000 |
+| Grootste context | 131.000 | 100.000 | 162.000 | 211.000 | 198.000 | — | 205.000 | 487.000 |
+| Gelezen (woorden, eigen opgave) | — | 13.000 | 17.000 | 21.000 | 21.000 | — | — | — |
 
-Advies: drie beoordelingsagenten (plan E2), ook al is het onderwerp klein, zodat de proef E2 meet.
-
-## Meting fase 1 (transcript)
-
-| | Fase 1 gemeten | Plan, fase 1 | Deel 2, heel onderwerp |
-|---|---|---|---|
-| Beurten | 42 (tot de meting; met handoff en commit ongeveer 47) | ongeveer 30 | 156 |
-| Totale invoer | 5,6 miljoen | deel van 4 à 5 miljoen | 48 miljoen |
-| Startcontext | 40.400 | ongeveer 40.000 | 43.000 |
-| Grootste context | 205.000 | ongeveer 80.000 | 487.000 |
-| Groei per beurt | ongeveer 3.900 tokens | ongeveer 1.200 | ongeveer 2.800 |
-| Uitvoer | 51.000 | — | 189.000 |
-| Vragenrondes | 2 (voorstel; één tabel met 6 keuzes) | 2 à 3 per onderwerp | verspreid |
-| Nieuwe besluiten | 3 (plus 1 letterlijk verplaatst) | ongeveer 10 per onderwerp | ongeveer 30 |
-
-- Woorden: toolresultaten 31.200 (werkpakket 13.200), toolaanroepen 3.500, chat 1.850; beoordelingen 3.400 woorden voor 28 bestanden (ongeveer 120 per begrip, tegen 980 vóór B1).
-- Werkpakket: 13.196 woorden voor het hele onderwerp (40 begrippen; Lijkbezorging 35.000). De passage van Gemeentewet art. 150 staat er vijf keer in (bij elk begrip uit dat artikel): een kandidaat om te ontdubbelen. Een leesopdracht van het werkpakket gaf een te grote uitvoer en werd opnieuw gelezen (plan, A7). Per cluster nog niet gemeten (fase 2).
-- Ingest-subagent: niet gebruikt in fase 1 (bronduidingen bestonden, citaten letterlijk); in fase 2 wel (K1), meten. Bronduiding na fase A aangevuld: 0 keer.
-- De grootste context komt vooral uit het lezen van de regels en het werkpakket (ongeveer 12.000 + 13.000 woorden) en de beoordelingen schrijven; het kwadratische deel blijft, ook met 42 beurten.
+- Werkpakket per cluster (met `--alles`): Participatieplan 1.423, Verzoek uitdaagrecht 3.486, het hele onderwerp 21.243 woorden (zonder `--alles` 730, 1.209 en 9.879). De agent zonder kernobject las er gefilterd ongeveer 7.500 uit.
+- Wat de agenten lazen: regels en skills 6.000 à 7.800 woorden, bronnen ongeveer 4.000, en bestaande beoordelingen en code als precedent 3.500 à 5.000, wat niet in hun opdracht stond. De beurten (44 à 65 per agent) zijn de grootste post: de invoer groeit kwadratisch met de beurten.
+- Ingest-subagent: 18 beurten, 1,3 mln; `tools/bronduiding.py citaat` kon de bron niet lezen (zie todo), citaten overgetypt en gecontroleerd. Bronduiding na fase A aangevuld: 0 keer.
+- Uitvoer van de subagenten staat niet betrouwbaar in hun transcript (een paar honderd tokens); niet meegeteld.
+- E2 (beoordelingsagenten): fase 2 kost met 26 mln meer dan het plan verwachtte (ongeveer neutraal). Drie agenten met elk 34.000 startcontext en 44–65 beurten, voor 12 begrippen. De afweging voor een klein onderwerp: één hoofdsessie (skill, stap 8: "bij een handvol begrippen") is waarschijnlijk goedkoper.
 
 ## Modeladvies
 
-Fase 2 vraagt denkniveau hoog (fase B, een sterker model of hoge redeneerinspanning); de ingest-subagent middel. Begin een nieuwe Sessie: fase 2 begint met een schone context.
+Fase 3 vraagt denkniveau hoog (voorleggen in één tabel, oordelen per vraag); stap 13 tot en met 17 laag. Begin een nieuwe Sessie: fase 3 begint met een schone context.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en voer fase 2 uit van skill gemma-archimate-model-update voor het onderwerp Participatie (stap 9, de proef, van plannen/2026-10-15-lichtere-werkwijze.md). Begin met K1: neem de VNG Model Participatieverordening 2024 op als bron met skill gemma-archimate-model-ingest in een subagent op denkniveau middel. Doe daarna fase B per cluster met drie beoordelingsagenten op denkniveau hoog, en draai beslissen.py. Leg kort voor wat je doet, voer uit na mijn akkoord, en commit met een prefix. Meet beurten, totale invoer, grootste context en woorden van de fase, van de ingest-subagent en van elke beoordelingsagent, en de omvang van het werkpakket per cluster.
+Lees wikis/gemma-archimate-model/handoff.md en voer fase 3 uit van skill gemma-archimate-model-update voor het onderwerp Participatie (stap 9, de proef, van plannen/2026-10-15-lichtere-werkwijze.md). Draai beslissen.py, leg de acht punten uit de handoff en de open redenen voor in één tabel zoals voor een architect (references/besluiten.md), verwerk mijn antwoorden per geval en draai opnieuw. Daarna promote plan; ik geef akkoord met AKKOORD; dan afronden.py met een prefix. Meet beurten, totale invoer en grootste context van fase 3, en vat de proef samen tegen de tabel "Totaal per onderwerp" van het plan.
 ```

@@ -23,3 +23,15 @@ kenmerken:
     onderbouwing: Deelstap Ter inzage leggen ontwerp van Uitvoeren uniforme openbare voorbereidingsprocedure (art. 3:12).
 genoemd_begrip: Uitvoeren uniforme openbare voorbereidingsprocedure
 toelichting: Deelstap van Uitvoeren uniforme openbare voorbereidingsprocedure (Awb art. 3:12).
+beslist:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    data_object: nee
+    genoemd_begrip: Uitvoeren uniforme openbare voorbereidingsprocedure
+    generiek: false
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving

@@ -29,3 +29,16 @@ besluiten:
   besluit: 'Geen eigen element: een vorm van inwonersparticipatie; Uitvoeren inwonersparticipatie krijgt bij inspraak een relatie naar Uitvoeren uniforme openbare voorbereidingsprocedure.'
   gevolg: verwerkt
   advies: gevolgd
+beslist:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    data_object: nee
+    genoemd_begrip: Uitvoeren inwonersparticipatie
+    generiek: false
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: rijksregelgeving

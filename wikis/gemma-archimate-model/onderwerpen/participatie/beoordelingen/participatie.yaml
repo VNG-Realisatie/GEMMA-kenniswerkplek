@@ -19,3 +19,16 @@ kenmerken:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
 archimate_buiten_model: Grouping
 toelichting: 'Thema, geen element: het onderwerp zelf, met Uitvoeren inwonersparticipatie en Behandelen verzoek uitdaagrecht.'
+beslist:
+  uitkomst:
+    soort: buiten_model
+    regel: 3
+    toelichting: Buiten dit model
+    archimate_type: Grouping
+    voorleggen: false
+    data_object: nee
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  herkomst: rijksregelgeving

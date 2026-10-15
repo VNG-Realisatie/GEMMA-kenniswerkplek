@@ -118,3 +118,15 @@ terugmeldingen:
   - '**Voorstel:** neem per begrip één bedrijfsobject op en voeg de duplicaten daarin samen, het liefst in het object dat de wiki koppelt; geef een naamgenoot die een ander begrip is een onderscheidende naam, zoals Interne aanvraag. Het GGM kan zijn duplicaten houden: de koppeling tussen een bedrijfsobject en de GGM-entiteiten waarop het steunt, kan meer dan één GGM-entiteit omvatten.'
   nummer: 7
   status: open
+- type: element
+  elementen:
+  - inwoner
+  gemma_elementen:
+  - id: id-f1051f8a-6f85-4c12-a490-43ba1410536b
+    naam: Burger
+  bevinding:
+  - '**GEMMA:** de actor Burger staat in de procesarchitectuur (Actoren en rollen), zonder definitie en zonder relaties (2026-vng-gemma-2026-10-02).'
+  - '**Bevinding:** de import voegt de actor Inwoner toe: een ingezetene van de gemeente, die bij het beleid wordt betrokken en een verzoek kan indienen om een gemeentelijke taak over te nemen (2026-rijk-gemeentewet-wettekst, art. 150; 2024-vng-model-participatieverordening, art. 1). De wiki koppelt Inwoner niet aan Burger, omdat Burger geen definitie heeft en een burger niet altijd ingezetene van de gemeente is.'
+  - '**Voorstel:** geef Burger een definitie en beslis of Burger een generalisatie van Inwoner wordt, of vervalt ten gunste van Inwoner.'
+  nummer: 8
+  status: open

@@ -23,3 +23,15 @@ kenmerken:
     onderbouwing: Handeling binnen Behandelen verzoek uitdaagrecht; facultatief (var. 1 art. 7).
 genoemd_begrip: Behandelen verzoek uitdaagrecht
 toelichting: Handeling binnen Behandelen verzoek uitdaagrecht, facultatief (variant 1 art. 7).
+beslist:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    data_object: nee
+    genoemd_begrip: Behandelen verzoek uitdaagrecht
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn

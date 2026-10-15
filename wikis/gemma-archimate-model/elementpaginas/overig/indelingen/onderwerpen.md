@@ -42,7 +42,11 @@ Status: in-behandeling. Overzicht: [overzicht](../../../onderwerpen/lijkbezorgin
 
 Status: in-behandeling. Overzicht: [overzicht](../../../onderwerpen/participatie/overzicht.md).
 
-- nog geen elementen
+- **actor** (2): [Inwoner](../../bedrijfsarchitectuur/actoren/inwoner.md), [Maatschappelijke partij](../../bedrijfsarchitectuur/actoren/maatschappelijke-partij.md)
+- **bedrijfsobject** (5): [Afspraak over uitvoering](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/afspraak-over-uitvoering.md), [Eindverslag inwonersparticipatie](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/eindverslag-inwonersparticipatie.md), [Participatieplan](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieplan.md), [Participatieverordening](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/participatieverordening.md), [Verzoek uitdaagrecht](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/verzoek-uitdaagrecht.md)
+- **bedrijfsproces** (2): [Behandelen verzoek uitdaagrecht](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md), [Uitvoeren inwonersparticipatie](../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md)
+- **beleidskader** (1): [Model Participatieverordening](../../motivatie/beleidskaders/gemeentelijke-regelgeving/model-participatieverordening.md)
+- **rol** (1): [Indiener](../../bedrijfsarchitectuur/rollen/indiener.md)
 
 ## Niveau thematisch
 
@@ -61,6 +65,7 @@ Status: in-behandeling. Overzicht: [overzicht](../../../onderwerpen/besluitvormi
 Status: in-behandeling. Overzicht: [overzicht](../../../onderwerpen/bestuur-en-organisatie/overzicht.md).
 
 - **actor** (5): [Burgemeester](../../bedrijfsarchitectuur/actoren/burgemeester.md), [College van B&W](../../bedrijfsarchitectuur/actoren/college-van-b-w.md), [Gemeente](../../bedrijfsarchitectuur/actoren/gemeente.md), [Gemeenteraad](../../bedrijfsarchitectuur/actoren/gemeenteraad.md), [Rijk](../../bedrijfsarchitectuur/actoren/rijk.md)
+- **beleidskader** (1): [Gemeentewet](../../motivatie/beleidskaders/rijksregelgeving/gemeentewet.md)
 - **rol** (1): [Beslisser](../../bedrijfsarchitectuur/rollen/beslisser.md)
 
 ### [Heffingen en betalingen](../../../onderwerpen/heffingen-en-betalingen/begrippen.md)

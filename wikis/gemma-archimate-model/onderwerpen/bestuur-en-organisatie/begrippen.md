@@ -26,9 +26,10 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 
 | Begrip | Reden | Herkomst |
 |---|---|---|
-| [Beslisser](../../elementpaginas/bedrijfsarchitectuur/rollen/beslisser.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | rijksregelgeving |
+| [Beslisser](../../elementpaginas/bedrijfsarchitectuur/rollen/beslisser.md) *Rol, review* | Hoedanigheid (kern ja) | rijksregelgeving |
 | [Burgemeester](../../elementpaginas/bedrijfsarchitectuur/actoren/burgemeester.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
 | [College van B&W](../../elementpaginas/bedrijfsarchitectuur/actoren/college-van-b-w.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
 | [Gemeente](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeente.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
 | [Gemeenteraad](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeenteraad.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |
+| [Gemeentewet](../../elementpaginas/motivatie/beleidskaders/rijksregelgeving/gemeentewet.md) *Beleidskader, review* | Regeling als geheel, landelijk (kern ja, 1/1) | rijksregelgeving |
 | [Rijk](../../elementpaginas/bedrijfsarchitectuur/actoren/rijk.md) *Actor, goedgekeurd* | Handelende partij (kern ja) | rijksregelgeving |

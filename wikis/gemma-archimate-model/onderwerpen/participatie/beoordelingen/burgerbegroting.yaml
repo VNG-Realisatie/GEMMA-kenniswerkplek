@@ -22,3 +22,15 @@ kenmerken:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
 genoemd_begrip: Uitvoeren inwonersparticipatie
 toelichting: 'Participatievorm, geen element: een vorm van inwonersparticipatie (bijlage 4).'
+beslist:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    data_object: nee
+    genoemd_begrip: Uitvoeren inwonersparticipatie
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn

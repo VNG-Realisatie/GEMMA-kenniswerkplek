@@ -2,11 +2,12 @@
 id: belanghebbende
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Belanghebbende
 onderwerpen:
 - besluitvorming
 - lijkbezorging
+- participatie
 definitie: Hoedanigheid van degene wiens belang rechtstreeks bij een besluit van een bestuursorgaan is betrokken.
 match:
   gemma: sterk
@@ -28,7 +29,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling belanghebbende.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

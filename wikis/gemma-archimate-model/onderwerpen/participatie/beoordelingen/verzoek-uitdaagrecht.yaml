@@ -37,14 +37,84 @@ kenmerken:
   plaats: nee
   aanbod_als_geheel: nee
   regeling_als_geheel: nee
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elk verzoek heeft een indiener en omschrijft de taak of de gewenste overheidsparticipatie, de reden en het beoogde resultaat (var. 1 art. 6 lid 2; var. 2 art. [11] lid 2).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Wordt ingediend, eventueel aangevuld, doorgezonden en toegewezen of afgewezen, met een openbare reactie (var. 1 art. 6, [8]; var. 2 art. [11], [13]).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: 'Behandelen verzoek uitdaagrecht bewerkt het: het college neemt het in ontvangst, kan aanvullende informatie opvragen en zendt het door; het bevoegde bestuursorgaan wijst het toe of af (var. 1 art. 6 lid 5, [8]; var. 2 art. [11] lid 5, [13]).'
+    bronnen:
+    - 2024-vng-model-participatieverordening
   afspraak:
     waarde: nee
     onderbouwing: Een eenzijdig verzoek.
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Het verzoek zelf, niet de vorm ervan.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Een zelfstandig verzoek, geen onderdeel van een ander object.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: De indiener stelt het op, maar de gemeente behandelt het en het bevoegde bestuursorgaan beslist erop, zoals bij een aanvraag.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur, alleen een facultatief formulier (var. 1 art. 6 lid 4).
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: 'De bronnen noemen geen breder begrip: zij spreken van een verzoek waarop het bestuursorgaan reageert en dat het toewijst of afwijst, niet van een aanvraag om een besluit (var. 1 art. [8]; Awb art. 1:3 lid 3). Of het een specialisatie van Aanvraag is, staat in de vragen.'
+    bronnen:
+    - 2024-vng-model-participatieverordening
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in participatie voor.
 synoniemen:
 - naam: Verzoek toepassing uitdaagrecht
   context: beleid, variant 1
 - naam: Verzoek om overheidsparticipatie
   context: beleid, variant 2
+- naam: Overheidsparticipatieverzoek
+  context: beleid, toelichting variant 2
+definitie: Verzoek van inwoners of maatschappelijke partijen aan het college om een gemeentelijke taak over te nemen of de gemeente bij hun initiatief te betrekken.
+beschrijving:
+- Het verzoek wordt altijd bij het college ingediend en bevat een omschrijving van de taak of van de gewenste overheidsparticipatie, de reden en het beoogde resultaat. De gemeente kan meer vragen (de betrokkenheid, kennis en ervaring van de indiener, de kosten of middelen, en hoe de indiener de kwaliteit en de uitvoering van de taak waarborgt) en een formulier vaststellen (2024-vng-model-participatieverordening, var. 1 art. 6; var. 2 art. [11]).
+- Het bevoegde bestuursorgaan wijst het verzoek toe of af en maakt de reactie met de onderbouwing openbaar; bij toewijzing volgen afspraken over de uitvoering (2024-vng-model-participatieverordening, var. 1 art. [8], [9]; var. 2 art. [13], [14]).
+- 'In variant 1 van de VNG-modelverordening is het een verzoek om toepassing van het uitdaagrecht: het recht van inwoners en maatschappelijke partijen om de feitelijke uitvoering van een gemeentelijke taak over te nemen (2026-rijk-gemeentewet-wettekst, art. 150 lid 3; 2024-vng-model-participatieverordening, var. 1 art. 1, 6). In variant 2 is het een verzoek om overheidsparticipatie en is het breder: het vraagt de gemeente te betrekken bij de voorbereiding, uitvoering of evaluatie van beleid, met het uitdaagrecht als onderdeel (2024-vng-model-participatieverordening, var. 2 art. 1, [11]).'
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Participatie
+ggm:
+  sterkte: geen
+  onderbouwing: Het GGM kent geen entiteit voor dit verzoek; Verzoek (Omgevingswet) is een vraag aan het bevoegd gezag om een product of dienst te leveren, een ander begrip. Het verzoek ontstaat in Behandelen verzoek uitdaagrecht (2024-vng-model-participatieverordening, var. 1 art. 6).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen object voor dit verzoek; Verzoek (Omgevingswet) is een vraag aan het bevoegd gezag om een product of dienst te leveren. Nieuw voor GEMMA.
+vragen:
+- 'Is Verzoek uitdaagrecht een specialisatie van Aanvraag (Awb)? Context: Aanvraag is een verzoek van een belanghebbende om een besluit te nemen (Awb art. 1:3 lid 3). De VNG-modelverordening spreekt van een verzoek waarop het bevoegde bestuursorgaan reageert en dat het toewijst of afwijst; bij toewijzing volgen afspraken, bij voorkeur in een overeenkomst (var. 1 art. [8], [9] en toelichting). Geen bron noemt de reactie een besluit of beschikking of noemt bezwaar, en de indiener hoeft geen belanghebbende te zijn: Gemeentewet art. 150 lid 3 noemt ingezetenen en maatschappelijke partijen. Gevolg bij ja: het element blijft (eigen regels in de verordening), met een specialisatie naar Aanvraag; Behandelen verzoek uitdaagrecht krijgt dan mogelijk een specialisatie naar Behandelen aanvraag beschikking, en Indiener naar Belanghebbende (als Aanvrager). Advies: nee. Houd het verzoek zelfstandig zolang geen bron (wet, rechtspraak of handreiking) de reactie als besluit kwalificeert; Indiener blijft dan ook zelfstandig, want art. 150 lid 3 vraagt geen rechtstreeks belang bij een besluit.'
+status: review
+beslist:
+  uitkomst:
+    soort: element
+    regel: 35
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    data_object: nee
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 21
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/verzoek-uitdaagrecht.md

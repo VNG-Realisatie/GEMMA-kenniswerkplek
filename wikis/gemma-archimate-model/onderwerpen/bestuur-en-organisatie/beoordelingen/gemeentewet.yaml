@@ -42,8 +42,86 @@ kenmerken:
     onderbouwing: Concreet benoemde wet als geheel.
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
+  landelijk:
+    waarde: ja
+    onderbouwing: Rijkswet voor alle gemeenten.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  is_grondslag_voor:
+    waarde: ja
+    onderbouwing: Art. 150 lid 1 en 2 geeft de raad de plicht ingezetenen en belanghebbenden bij beleid te betrekken (Uitvoeren inwonersparticipatie) en art. 150 lid 3 de plicht voorwaarden te stellen voor de uitvoering van taken door ingezetenen en maatschappelijke partijen (Behandelen verzoek uitdaagrecht).
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  in_werking:
+    waarde: ja
+    onderbouwing: Geldend recht; art. 150 in de versie sinds 1 januari 2025.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder beleidskader in deze wiki; de wet staat op zichzelf.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  generiek:
+    waarde: ja
+    onderbouwing: Geldt met dezelfde betekenis in elk onderwerp waarin de gemeente een orgaan, een verordening of een heffing gebruikt (participatie art. 150, lijkbezorging art. 147, 149, 229).
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+relaties:
+- soort: associatie (gericht)
+  naar: uitvoeren-inwonersparticipatie
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  vindplaats: art. 150 lid 1 en 2
+- soort: associatie (gericht)
+  naar: behandelen-verzoek-uitdaagrecht
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  vindplaats: art. 150 lid 3
+- soort: associatie (gericht)
+  naar: participatieverordening
+  naam: is grondslag voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  vindplaats: art. 150 lid 1
+regelgever: rijk
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
 besluiten:
 - datum: '2026-10-15'
   besluit: Beleidskader met thuis Bestuur en organisatie, in plaats van een verwijzing; in de ronde Participatie alleen de relaties voor Participatie, die van de andere onderwerpen volgen later.
   gevolg: verwerkt
   advies: gevolgd
+definitie: Wet die de inrichting, de bestuursorganen, de bevoegdheden en de financiën van de gemeente regelt.
+beschrijving:
+- De Gemeentewet regelt de gemeenteraad, het college van burgemeester en wethouders en de burgemeester, hun bevoegdheden en de verordeningen van de raad (2026-rijk-gemeentewet-wettekst).
+per_onderwerp:
+  participatie:
+  - De raad stelt een verordening vast met regels over het betrekken van ingezetenen en belanghebbenden bij de voorbereiding, uitvoering en evaluatie van gemeentelijk beleid; inspraak verloopt volgens afdeling 3.4 Awb, tenzij de verordening anders bepaalt; en de verordening bepaalt de voorwaarden waaronder ingezetenen en maatschappelijke partijen gemeentelijke taken kunnen uitvoeren (2026-rijk-gemeentewet-wettekst, art. 150, sinds 1 januari 2025).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor de Gemeentewet; nieuw voor GEMMA.
+status: review
+beslist:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/gemeentewet.md

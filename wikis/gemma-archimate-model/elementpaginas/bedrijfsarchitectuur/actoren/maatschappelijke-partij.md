@@ -1,0 +1,90 @@
+---
+id: maatschappelijke-partij
+type: actor
+archimate_type: business-actor
+status: review
+naam: Maatschappelijke partij
+onderwerpen:
+- participatie
+definitie: Vereniging, stichting, buurtcomité of andere organisatie die een actieve bijdrage levert aan de samenleving in de gemeente.
+match:
+  gemma: geen
+data_object: nee
+doelgroep: inwoners en ondernemers
+bronnen:
+- 2024-vng-implementatiehandleiding-model-participatieverordening
+- 2026-rijk-gemeentewet-wettekst
+- 2024-vng-model-participatieverordening
+---
+
+# Maatschappelijke partij
+
+<!-- Gegenereerd door tools/render.py uit de beoordeling maatschappelijke-partij.yaml. Wijzig de beoordeling, niet deze pagina. -->
+
+**Status: review.** Wacht op het akkoord van de redacteur.
+
+## Betekenis
+
+### Definitie
+
+Vereniging, stichting, buurtcomité of andere organisatie die een actieve bijdrage levert aan de samenleving in de gemeente.
+
+### Beschrijving
+
+De wet noemt maatschappelijke partijen naast ingezetenen bij het uitvoeren van gemeentelijke taken, maar definieert het begrip niet; de gemeente bakent de groep af in haar verordening ([2026-rijk-gemeentewet-wettekst](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), art. 150 lid 3; [2024-vng-implementatiehandleiding-model-participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md), var. 1 art. 1).
+
+De Model Participatieverordening legt de nadruk op lokale binding; facultatief vallen ook sociale ondernemingen, ondernemingen zonder winstoogmerk of ondernemingen die geen winst uitkeren eronder, of alleen organisaties die een collectief vormen ([2024-vng-model-participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md), var. 1 art. 1 en toelichting).
+
+### Per onderwerp
+
+#### [Participatie](../../../onderwerpen/participatie/begrippen.md)
+
+Maatschappelijke partijen kunnen bij het college een verzoek om toepassing van het uitdaagrecht indienen, in variant 2 een verzoek om overheidsparticipatie, en zo de feitelijke uitvoering van een gemeentelijke taak overnemen ([2024-vng-model-participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md), var. 1 art. 6 lid 1, var. 2 art. [11] lid 1).
+
+## Plaats in het model
+
+### Typering
+
+Actor. Uitkomst van de beslistabel: Handelende partij (kern ja).
+
+### Plaats in de indelingen
+
+- **Doelgroep**: inwoners en ondernemers.
+
+### Kenmerken
+
+Alleen de kenmerken met ja; de overige 51 zijn nee.
+
+| Kenmerk | Onderbouwing |
+|---|---|
+| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, partij met een actieve bijdrage aan de samenleving in de gemeente: verenigingen, stichtingen, buurtcomités (var. 1 art. 1; art. 150 lid 3). [VNG Implementatiehandleiding participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md), [Gemeentewet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
+| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, kan onder voorwaarden van de verordening gemeentelijke taken uitvoeren (art. 150 lid 3). [Gemeentewet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
+| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als organisatie. [VNG Implementatiehandleiding participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
+| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij participatie. [Gemeentewet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
+| **handelende partij**: Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren? | Ja, een organisatie die een verzoek indient en een taak uitvoert. [Gemeentewet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Implementatiehandleiding participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
+| **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, verenigingen, stichtingen en buurtcomités bestaan los van participatie; zij kunnen ook andere rollen vervullen, zoals indiener van een verzoek. [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, vervult de rol Indiener; maatschappelijke partijen kunnen bij het college een verzoek om toepassing van het uitdaagrecht of om overheidsparticipatie indienen (var. 1 art. 6 lid 1, var. 2 art. [11] lid 1). [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, in elke gemeente kunnen maatschappelijke partijen gemeentelijke taken uitvoeren onder de voorwaarden van de verordening (art. 150 lid 3). [Gemeentewet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
+| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder actor in deze wiki. [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+
+### Relaties
+
+#### Uitgaand
+
+| Van | Relatie | Naar | Bron |
+|---|---|---|---|
+| Maatschappelijke partij | dient een verzoek in als *toewijzing* | [Indiener](../rollen/indiener.md) | [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 6 lid 1, var. 2 art. [11] lid 1) |
+
+## Herkomst
+
+### Bronnen
+
+| Korte titel | Bron |
+|---|---|
+| [VNG Implementatiehandleiding participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) | Implementatiehandleiding VNG Model Participatieverordening 2024 |
+| [Gemeentewet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) | Gemeentewet (BWBR0005416) |
+| [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) | VNG Model Participatieverordening 2024 |
+
+### Afstemming met GEMMA
+
+Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen actor voor maatschappelijke organisaties; MaatschappelijkeActiviteit (RSGB) is een ander begrip, de activiteit van een onderneming of rechtspersoon in het Handelsregister. Nieuw voor GEMMA.

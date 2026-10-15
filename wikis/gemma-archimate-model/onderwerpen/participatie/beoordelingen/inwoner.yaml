@@ -42,6 +42,79 @@ kenmerken:
   plaats: nee
   aanbod_als_geheel: nee
   regeling_als_geheel: nee
+  los_van_verantwoordelijkheid:
+    waarde: ja
+    onderbouwing: Een inwoner is ingezetene van de gemeente, los van participatie; zij kan ook andere rollen vervullen, zoals indiener van een verzoek of belanghebbende bij inspraak.
+    bronnen:
+    - 2024-vng-model-participatieverordening
+    - 2026-rijk-gemeentewet-wettekst
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld.
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder actor in deze wiki.
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  vervult_een_rol:
+    waarde: ja
+    onderbouwing: Vervult de rol Indiener; inwoners kunnen bij het college een verzoek om toepassing van het uitdaagrecht of om overheidsparticipatie indienen (var. 1 art. 6 lid 1, var. 2 art. [11] lid 1).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  soort_partij:
+    waarde: ja
+    onderbouwing: Elke gemeente betrekt haar ingezetenen bij beleid en stelt voorwaarden voor de uitvoering van taken door hen (art. 150 lid 1 en 3).
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: In deze wiki gebruikt alleen participatie de inwoner als partij; andere onderwerpen gebruiken rollen zoals Aangever of Belanghebbende.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: Als partij niet; de gegevens van een ingezetene staan in de BRP, als Ingeschreven persoon (burgerzaken).
 synoniemen:
 - naam: Ingezetene
   context: wet
+doelgroep: inwoners en ondernemers
+relaties:
+- soort: toewijzing
+  naar: indiener
+  naam: dient een verzoek in als
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 6 lid 1, var. 2 art. [11] lid 1
+definitie: Persoon die ingezetene is van de gemeente.
+beschrijving:
+- De Model Participatieverordening definieert inwoners als ingezetenen als bedoeld in artikel 2 van de Gemeentewet; een gemeente kan daar ondernemers aan toevoegen (2024-vng-model-participatieverordening, var. 1 art. 1). De wet spreekt van ingezetenen (2026-rijk-gemeentewet-wettekst, art. 150).
+- De gegevens van de ingezetene staan in het bedrijfsobject Ingeschreven persoon, met de specialisatie Ingezetene.
+per_onderwerp:
+  participatie:
+  - De gemeente betrekt inwoners bij de voorbereiding, uitvoering en evaluatie van haar beleid, en inwoners kunnen bij het college een verzoek indienen om de feitelijke uitvoering van een gemeentelijke taak over te nemen, het uitdaagrecht (2026-rijk-gemeentewet-wettekst, art. 150 lid 1 en 3; 2024-vng-model-participatieverordening, var. 1 art. 6 lid 1).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent de actor Burger (procesarchitectuur, Actoren en rollen) zonder definitie en zonder relaties; een burger is niet altijd ingezetene van de gemeente, dus geen match op betekenis. Ingezetene (RSGB) is een bedrijfsobject, de registratie van de persoon, geen partij. Nieuw voor GEMMA.
+status: review
+beslist:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 11
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/actoren/inwoner.md

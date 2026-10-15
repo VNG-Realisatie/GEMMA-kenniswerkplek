@@ -316,3 +316,12 @@ terugmeldingen:
   - '**Voorstel:** neem dwangsom bij niet tijdig beslissen op in de UPL-lijst extern, met grondslag art. 4:17 Awb, domein Bestuur.'
   nummer: 28
   status: open
+- type: product
+  elementen:
+  - behandelen-verzoek-uitdaagrecht
+  bevinding:
+  - '**UPL:** de UPL-lijst extern kent geen product voor het uitdaagrecht of voor een verzoek om overheidsparticipatie. Burgerinitiatief (nr. 96, grondslag Grondwet art. 5 en de APV) is een ander begrip (2025-vng-upl-producten-en-diensten-extern, nr. 96).'
+  - '**Bevinding:** sinds 1 januari 2025 regelt elke gemeente in een verordening de voorwaarden waaronder ingezetenen en maatschappelijke partijen de uitvoering van een gemeentelijke taak kunnen overnemen (2026-rijk-gemeentewet-wettekst, art. 150 lid 3). Inwoners en maatschappelijke partijen dienen daarvoor een verzoek in bij het college; het bevoegde bestuursorgaan reageert binnen een termijn en maakt bij toewijzing afspraken over de uitvoering (2024-vng-model-participatieverordening, var. 1 art. 6, [8], [9]; var. 2 art. [11], [13], [14]). GEMMA modelleert dit als het proces Behandelen verzoek uitdaagrecht, nog zonder dienst.'
+  - '**Voorstel:** neem een extern product op voor het verzoek om toepassing van het uitdaagrecht (of breder: verzoek om overheidsparticipatie), met grondslag art. 150 lid 3 Gemeentewet, domein Bestuur, taakveld 0 Bestuur en Ondersteuning.'
+  nummer: 29
+  status: open

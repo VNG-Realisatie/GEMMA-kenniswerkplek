@@ -25,9 +25,10 @@ kenmerken:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
   betekenis_in_onderwerp:
     waarde: ja
-    onderbouwing: Hoort bij participatie.
+    onderbouwing: 'Hoort bij participatie: het verslag sluit het betrekken van ingezetenen bij beleid af dat de verordening regelt (art. 150 lid 1; var. 1 art. 5).'
     bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
+    - 2026-rijk-gemeentewet-wettekst
+    - 2024-vng-model-participatieverordening
   gedrag: nee
   handelende_partij: nee
   hoedanigheid: nee
@@ -36,9 +37,79 @@ kenmerken:
   plaats: nee
   aanbod_als_geheel: nee
   regeling_als_geheel: nee
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Eén verslag per afgeronde inwonersparticipatie (var. 1 art. 5 lid 1).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Wordt eenmaal opgesteld en openbaar gemaakt; de bronnen noemen geen wijziging of einde.
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: Het bestuursorgaan stelt het verslag op en maakt het openbaar, binnen Uitvoeren inwonersparticipatie (var. 1 art. 5 lid 1; var. 2 art. [10] lid 1).
+    bronnen:
+    - 2024-vng-model-participatieverordening
   afspraak:
     waarde: nee
     onderbouwing: Een eenzijdig verslag.
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Het verslag zelf.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Een eigen document na afloop, naast het participatieplan, dat dan al bestaat.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: Het bestuursorgaan stelt het op; bij een raadsbesluit het college (var. 1 art. 5 lid 3).
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder begrip in de wiki, het GGM of GEMMA; een verslag met eigen voorgeschreven inhoud en openbaarmaking (var. 1 art. 5 lid 2; var. 2 art. [10] lid 2).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  generiek:
+    waarde: nee
+    onderbouwing: Alleen in het onderwerp Participatie.
+definitie: Openbaar verslag waarin een bestuursorgaan na afloop van inwonersparticipatie het proces, de uitkomsten, zijn reactie daarop en een evaluatie vastlegt.
+beschrijving:
+- Nadat inwonersparticipatie heeft plaatsgevonden stelt het bestuursorgaan het eindverslag op en maakt het openbaar; heeft het college het plan opgesteld, dan stelt het ook het eindverslag op en informeert het de raad over de inhoud (2024-vng-model-participatieverordening, var. 1 art. 5 lid 1, 3; var. 2 art. [10] lid 1, 3).
+- Het verslag bevat in elk geval een beschrijving van het gevolgde proces, de uitkomsten en de argumenten die naar voren zijn gebracht, een onderbouwde reactie daarop met hoe het beleid is aangepast, en een evaluatie van het proces (2024-vng-model-participatieverordening, var. 1 art. 5 lid 2; var. 2 art. [10] lid 2).
+- Het verslag geeft ook inwoners die niet hebben deelgenomen inzicht in het proces, en kan verbeterpunten aanwijzen, ook voor de participatieverordening (2024-vng-implementatiehandleiding-model-participatieverordening, art. 5). De wet schrijft het verslag niet voor; de raad regelt in de participatieverordening hoe inwoners worden betrokken (2026-rijk-gemeentewet-wettekst, art. 150 lid 1).
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Participatie
+ggm:
+  sterkte: geen
+  onderbouwing: Het GGM kent geen verslag van inwonersparticipatie; de enige treffer, Proces-verbaal-MOOR-melding (Beheer Openbare Ruimte), is een ander begrip.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+vragen:
+- 'Wettelijke grondslag: net als het participatieplan schrijft de Gemeentewet het eindverslag niet voor; het komt uit de VNG-modelverordening (var. 1 art. 5; var. 2 art. [10]). Zie de vraag bij Participatieplan. Advies: houden, met art. 150 lid 1 als landelijke bron (zo verwerkt).'
+- 'Objectniveau: de beslistabel laat dit object open (kandidaat): het is geen kernobject van een proces, geen deel van een ander object en niet generiek, en het heeft geen eigen levenscyclus (wordt eenmaal opgesteld en openbaar gemaakt, var. 1 art. 5). Het is het resultaat van Uitvoeren inwonersparticipatie en sluit de levensloop van het participatieplan af. Opties: (1) geen eigen element: het eindverslag staat als resultaat in de beschrijving en het deelproces Opstellen eindverslag van Uitvoeren inwonersparticipatie en in de beschrijving van Participatieplan; besluit afwijzen. (2) Houden als element, als eigen openbaar document met voorgeschreven inhoud; dat vraagt een afwijking van de beslistabel. Advies: (1), omdat het object geen eigen proces en geen eigen levensloop heeft; de relatie vanuit Uitvoeren inwonersparticipatie vervalt dan.'
+status: kandidaat
+beslist:
+  uitkomst:
+    soort: element
+    regel: 38
+    toelichting: 'Passief (kern ja, 1/2, ontbreekt: *levenscyclus*)'
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    data_object: nee
+    generiek: false
+    typeregel: 21
+  voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/eindverslag-inwonersparticipatie.md

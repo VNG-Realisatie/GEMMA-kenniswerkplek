@@ -45,8 +45,107 @@ kenmerken:
   waarneembare_vorm:
     waarde: nee
     onderbouwing: Geen vorm van een ander begrip.
+  wordt_bewerkt:
+    waarde: ja
+    onderbouwing: De gemeenteraad stelt haar vast (art. 150 lid 1); het bestuursorgaan raadpleegt haar bij elke inwonersparticipatie (plan, inspraak, eindverslag) en bij elk verzoek om toepassing van het uitdaagrecht (indieningseisen, afwijzingsgronden, termijnen, afspraken).
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+    - 2024-vng-model-participatieverordening
+  onderscheidbare_exemplaren:
+    waarde: ja
+    onderbouwing: Elke gemeente heeft haar eigen verordening, met de citeertitel Participatieverordening [naam gemeente, jaartal] (var. 1 art. [14] lid 2).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  levenscyclus:
+    waarde: ja
+    onderbouwing: Vastgesteld door de raad, in werking op een datum, en ingetrokken als een nieuwe verordening haar vervangt, met overgangsrecht (var. 1 art. [13]–[14]).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  deel_van_object:
+    waarde: nee
+    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
+  invoer_van_een_ander:
+    waarde: nee
+    onderbouwing: De gemeenteraad stelt haar zelf vast (art. 150 lid 1).
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in participatie voor.
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Specialisatie van Regeling die de gemeente anders behandelt; elke gemeente moet haar vaststellen, met door de wet voorgeschreven inhoud (regels over het betrekken bij voorbereiding, uitvoering en evaluatie van beleid, voorwaarden voor het uitdaagrecht), en de processen van participatie volgen haar regels (art. 150 lid 1–3). Keten Regeling → Participatieverordening.
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+    - 2024-vng-model-participatieverordening
 synoniemen:
 - naam: Verordening over betrekken bij beleid
   context: wet
 - naam: Inspraakverordening
   context: voorganger, te vervangen vóór 1 januari 2027
+definitie: Verordening van de gemeenteraad met regels over het betrekken van inwoners en belanghebbenden bij beleid en de voorwaarden voor het uitdaagrecht.
+beschrijving:
+- De raad stelt een verordening vast met regels over de wijze waarop ingezetenen en belanghebbenden worden betrokken bij de voorbereiding, uitvoering en evaluatie van gemeentelijk beleid; regelt hij die betrokkenheid als inspraak, dan geldt afdeling 3.4 van de Awb, tenzij de verordening anders bepaalt (2026-rijk-gemeentewet-wettekst, art. 150 lid 1 en 2). De verordening bepaalt ook de voorwaarden waaronder ingezetenen en maatschappelijke partijen gemeentelijke taken kunnen uitvoeren, gangbaar het uitdaagrecht (art. 150 lid 3).
+- Sinds 1 januari 2025 gaat het niet alleen om de voorbereiding maar ook om de uitvoering en evaluatie van beleid; gemeenten vervangen hun inspraakverordening vóór 1 januari 2027 door een participatieverordening (2024-vng-implementatiehandleiding-model-participatieverordening, hfst. 2). De nieuwe verordening trekt de oude in; die blijft van toepassing op een al gestarte inspraak- of participatieprocedure (2024-vng-model-participatieverordening, var. 1 art. [13]).
+- De raad stelt de verordening vast op grond van art. 149 en 150 Gemeentewet, meestal naar de Model Participatieverordening van de VNG, en geeft haar de citeertitel Participatieverordening [naam gemeente, jaartal] (2024-vng-model-participatieverordening, aanhef; var. 1 art. [14]).
+ggm:
+  sterkte: geen
+  onderbouwing: Het GGM kent geen participatieverordening en geen algemene entiteit voor een verordening; de enige verordening in het GGM is Heffingsverordening (1 Veiligheid en Vergunningen), een ander begrip.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA, als specialisatie van Regeling.
+vragen:
+- 'Zelfstandige specialisatie van Regeling, of een specialisatie zonder pagina? Context: Beheersverordening begraafplaatsen is een specialisatie van Regeling zonder eigen pagina (besluit Regeling 2026-09-30), Heffingsverordening een element (eigen gegevens, generiek). De participatieverordening heeft geen eigen gegevens in het GGM, maar de wet verplicht elke gemeente haar vast te stellen met voorgeschreven inhoud (Gemeentewet art. 150 lid 1–3), en Uitvoeren inwonersparticipatie en Behandelen verzoek uitdaagrecht volgen haar regels. Gevolg zonder pagina: Participatieverordening wordt een specialisatie in de beoordeling van Regeling, de Model Participatieverordening is dan model voor Regeling (via Participatieverordening), en de synoniemen Inspraakverordening en Verordening over betrekken bij beleid verhuizen naar die specialisatie. Advies: zelfstandig element, zoals nu beoordeeld.'
+- 'Geen proces voor de levensloop: de gemeenteraad stelt de verordening vast, wijzigt en trekt haar in (Gemeentewet art. 150 lid 1; model var. 1 art. [13]–[14]), maar de wiki heeft nog geen proces voor het vaststellen van een regeling; daarom blijft het object open als kandidaat. Bij Beleidsnota en Regeling is besloten het signaal te laten staan tot dat proces er is (besluiten 2026-10-10 en 2026-10-12). Advies: hier hetzelfde, met het proces voor het vaststellen van regelingen in todo.'
+- 'Beleidsdomein: Participatie heeft nog geen beleidsdomein; het GGM kent er geen voor participatie. Voorlopig Besluitvorming, zoals Regeling en Beleidsnota. Alternatief: een gemeentelijk beleidsdomein Participatie in het register, met een GGM-terugmelding. Advies: Besluitvorming, tenzij meer elementen van Participatie een eigen domein vragen; het besluit geldt dan voor het hele onderwerp.'
+relaties:
+- soort: specialisatie
+  naar: regeling
+  naam: is een
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  vindplaats: Gemeentewet art. 150 lid 1; model aanhef
+- soort: associatie (gericht)
+  naar: participatieplan
+  naam: regelt de inhoud van
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 3, var. 2 art. [7]
+- soort: associatie (gericht)
+  naar: verzoek-uitdaagrecht
+  naam: stelt voorwaarden voor
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  vindplaats: Gemeentewet art. 150 lid 3; var. 1 art. 6, [8], var. 2 art. [11], [13]
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+status: kandidaat
+beslist:
+  uitkomst:
+    soort: element
+    regel: 38
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    data_object: nee
+    generiek: false
+    typeregel: 21
+  voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/participatieverordening.md

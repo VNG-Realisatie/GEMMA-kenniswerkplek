@@ -2,10 +2,11 @@
 id: uitvoeren-uniforme-openbare-voorbereidingsprocedure
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Uitvoeren uniforme openbare voorbereidingsprocedure
 onderwerpen:
 - besluitvorming
+- participatie
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
 definitie: Het voorbereiden van een besluit door het ontwerp ter inzage te leggen, belanghebbenden hun zienswijze te laten geven en daarna te besluiten.
@@ -26,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling uitvoeren-uniforme-openbare-voorbereidingsprocedure.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -106,6 +107,7 @@ Alleen de kenmerken met ja; de overige 43 zijn nee.
 |---|---|---|---|
 | [Belanghebbende](../../../rollen/belanghebbende.md) | brengt een zienswijze naar voren *toewijzing* | Uitvoeren uniforme openbare voorbereidingsprocedure | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 3:15) |
 | [Beslisser](../../../rollen/beslisser.md) | legt het ontwerp ter inzage en neemt het besluit *toewijzing* | Uitvoeren uniforme openbare voorbereidingsprocedure | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 3:11, 3:12, 3:17, 3:18) |
+| [Uitvoeren inwonersparticipatie](../participatie/uitvoeren-inwonersparticipatie.md) | leidt tot (bij inspraak) *triggering* | Uitvoeren uniforme openbare voorbereidingsprocedure | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (Gemeentewet art. 150 lid 2; var. 1 art. 4; var. 2 art. [8]) |
 
 ## Herkomst
 

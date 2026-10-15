@@ -380,6 +380,20 @@ relaties:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 4:1, 4:13
+- soort: toewijzing
+  naar: uitvoeren-inwonersparticipatie
+  naam: besluit over inwonersparticipatie en stelt plan en eindverslag op
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 2 lid 1, 3 lid 1, 5 lid 1; var. 2 art. [3], [7], [10]
+- soort: toewijzing
+  naar: behandelen-verzoek-uitdaagrecht
+  naam: reageert op het verzoek en wijst het toe of af
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. [8]; var. 2 art. [13]
 onderwerpen:
 - bestuur-en-organisatie
 - lijkbezorging
@@ -395,7 +409,7 @@ per_onderwerp:
   - Bij het kiesrecht beslissen burgemeester en wethouders over de registratie van de kiesgerechtigdheid en de burgemeester over een verzoek om bij volmacht te stemmen (Kieswet art. D 1, D 7, L 11).
   besluitvorming:
   - 'Het bestuursorgaan bereidt een besluit voor met de uniforme openbare voorbereidingsprocedure als een wettelijk voorschrift of het bestuursorgaan dat bepaalt: het legt het ontwerp ter inzage, geeft er kennis van, maakt een verslag van mondelinge zienswijzen en neemt het besluit (Awb art. 3:10–3:18).'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -432,6 +446,7 @@ beslist:
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
   - 2026-rvig-hup-overlijden-buitenland
   - 2026-rijk-bekendmakingswet-wettekst
+  - 2024-vng-model-participatieverordening
   herkomst: rijksregelgeving
   gemma:
     gemma_id: id-8ee6ba79-47ed-47d5-8fc4-a707fbea233e

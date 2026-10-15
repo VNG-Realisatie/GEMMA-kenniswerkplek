@@ -14,3 +14,9 @@ De views op de indelingen voor het onderwerp [Bestuur en organisatie](begrippen.
 
 - **gemeente**: actor: [Burgemeester](../../elementpaginas/bedrijfsarchitectuur/actoren/burgemeester.md), [College van B&W](../../elementpaginas/bedrijfsarchitectuur/actoren/college-van-b-w.md), [Gemeente](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeente.md), [Gemeenteraad](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeenteraad.md); rol: [Beslisser](../../elementpaginas/bedrijfsarchitectuur/rollen/beslisser.md).
 - **ketenpartners**: actor: [Rijk](../../elementpaginas/bedrijfsarchitectuur/actoren/rijk.md).
+
+## Beleidskaders
+
+| Beleidskader | Regelgever | Grondslag voor |
+|---|---|---|
+| [Gemeentewet](../../elementpaginas/motivatie/beleidskaders/rijksregelgeving/gemeentewet.md) | rijk | [Behandelen verzoek uitdaagrecht](../../elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md), [Participatieverordening](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/participatieverordening.md), [Uitvoeren inwonersparticipatie](../../elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md) |

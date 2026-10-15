@@ -110,6 +110,9 @@ specialisaties:
 - naam: Heffingsverordening
   omschrijving: Verordening over de heffing van belastingen en rechten.
   element: heffingsverordening
+- naam: Participatieverordening
+  omschrijving: Verordening van de raad over de manier waarop inwoners en maatschappelijke partijen bij het beleid worden betrokken, met het uitdaagrecht (Gemeentewet art. 150).
+  element: participatieverordening
 naamkeuze:
 - 'Overwogen: Regeling (GEMMA, gangbaar), Regelgeving, Algemeen verbindend voorschrift (Awb). Gekozen is Regeling, in lijn met het GEMMA-element; het GGM-begrip Regeling (Inkomen) is een ander begrip en krijgt hier geen pagina (besluit 2026-10-01).'
 besluiten:
@@ -142,7 +145,7 @@ relaties:
 onderwerpen:
 - besluitvorming
 - lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

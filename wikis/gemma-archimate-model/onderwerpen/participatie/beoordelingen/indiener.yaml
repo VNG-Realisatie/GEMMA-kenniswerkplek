@@ -40,3 +40,75 @@ kenmerken:
   plaats: nee
   aanbod_als_geheel: nee
   regeling_als_geheel: nee
+  los_van_verantwoordelijkheid:
+    waarde: nee
+    onderbouwing: De rol bestaat alleen voor wie een verzoek wil indienen of heeft ingediend; een inwoner of maatschappelijke partij vervult haar (var. 1 art. 6 lid 1, 7 lid 1).
+  voert_gedrag_uit:
+    waarde: ja
+    onderbouwing: 'Toegewezen aan Behandelen verzoek uitdaagrecht: dient het verzoek in, verstrekt aanvullende informatie, wordt geïnformeerd over de doorzending en maakt bij toewijzing afspraken over de uitvoering (var. 1 art. 6, [8] lid 1, [9]; var. 2 art. [11], [13] lid 1, [14]).'
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  onderscheidbare_exemplaren:
+    waarde: nee
+    onderbouwing: Wordt niet als ding behandeld; de bronnen noemen geen gegevens over indieners naast het verzoek.
+  levenscyclus:
+    waarde: nee
+    onderbouwing: Geen eigen levensloop naast het verzoek.
+  wordt_bewerkt:
+    waarde: nee
+    onderbouwing: De gemeente informeert en ondersteunt de indiener, maar de bronnen noemen geen gegevens die zij los van het verzoek over hem vastlegt.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: 'Geen specialisatie van Belanghebbende: indienen kunnen ingezetenen en maatschappelijke partijen (Gemeentewet art. 150 lid 3; var. 1 art. 6 lid 1), ook zonder een belang dat rechtstreeks bij een besluit is betrokken (Awb art. 1:2). Evenmin van Aanvrager zolang het verzoek geen aanvraag is (vraag bij Verzoek uitdaagrecht).'
+    bronnen:
+    - 2026-rijk-gemeentewet-wettekst
+    - 2024-vng-model-participatieverordening
+    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in participatie voor.
+doelgroep: inwoners en ondernemers
+definitie: Hoedanigheid van de inwoner of maatschappelijke partij die bij het college een verzoek uitdaagrecht indient of wil indienen.
+beschrijving:
+- Inwoners en maatschappelijke partijen kunnen bij het college een verzoek indienen; de indiener omschrijft de taak of de gewenste overheidsparticipatie, de reden en het beoogde resultaat, en verstrekt desgevraagd aanvullende informatie (2024-vng-model-participatieverordening, var. 1 art. 6; var. 2 art. [11]). Het college ondersteunt wie een verzoek wil indienen of heeft ingediend op een laagdrempelige manier in de buurt, bijvoorbeeld via een (buurt)loket (var. 1 art. 7; var. 2 art. [12] en toelichting).
+- Het college informeert de indiener over de doorzending aan het bevoegde bestuursorgaan; bij toewijzing maakt het bestuursorgaan met de indiener afspraken over de uitvoering (2024-vng-model-participatieverordening, var. 1 art. [8] lid 1, [9]; var. 2 art. [13] lid 1, [14]).
+gemma:
+  sterkte: geen
+  onderbouwing: 'Het GEMMA-model kent Indiener alleen als bedrijfsobject uit het GGM (Griffie; Veiligheid en Vergunningen: persoon die een melding of aanvraag doet), een gegevensentiteit en geen rol. Nieuw voor GEMMA.'
+relaties:
+- soort: toewijzing
+  naar: behandelen-verzoek-uitdaagrecht
+  naam: dient verzoek in
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 6 lid 1; var. 2 art. [11] lid 1
+- soort: toegang (partij)
+  naar: afspraak-over-uitvoering
+  naam: maakt afspraken met het bestuursorgaan
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. [9]; var. 2 art. [14]
+status: review
+beslist:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 12
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2024-vng-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/indiener.md

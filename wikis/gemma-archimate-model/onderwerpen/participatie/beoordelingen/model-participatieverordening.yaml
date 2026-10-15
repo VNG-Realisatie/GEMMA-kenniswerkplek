@@ -41,6 +41,111 @@ kenmerken:
     onderbouwing: Concreet benoemde VNG-modelverordening als geheel.
     bronnen:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
+  landelijk:
+    waarde: ja
+    onderbouwing: VNG-modelverordening voor alle gemeenten, geen regeling van één gemeente.
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  is_grondslag_voor:
+    waarde: ja
+    onderbouwing: Werkt uit, nooit grondslag; var. 1 art. 2–5 en var. 2 art. [3], [7]–[10] werken art. 150 lid 1 en 2 Gemeentewet uit voor Uitvoeren inwonersparticipatie (besluit over participatie, plan, inspraak, eindverslag); var. 1 art. 6–[9] en var. 2 art. [11]–[14] werken art. 150 lid 3 uit voor Behandelen verzoek uitdaagrecht (verzoek, beoordeling, afspraken).
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  in_werking:
+    waarde: ja
+    onderbouwing: Actueel model van december 2024, voor de wet die sinds 1 januari 2025 geldt (Stb. 2024, 203); gemeenten vervangen hun inspraakverordening vóór 1 januari 2027.
+    bronnen:
+    - 2024-vng-model-participatieverordening
+    - 2024-vng-implementatiehandleiding-model-participatieverordening
+  zelfstandige_specialisatie:
+    waarde: ja
+    onderbouwing: Geen breder beleidskader in deze wiki.
+    bronnen:
+    - 2024-vng-model-participatieverordening
+  generiek:
+    waarde: nee
+    onderbouwing: Komt alleen in participatie voor.
+  geautomatiseerd_verwerkt:
+    waarde: nee
+    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 synoniemen:
 - naam: VNG Model Participatieverordening 2024
   context: beleid
+relaties:
+- soort: associatie (gericht)
+  naar: uitvoeren-inwonersparticipatie
+  naam: werkt uit voor
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 2–5, var. 2 art. [3], [7]–[10]
+- soort: associatie (gericht)
+  naar: behandelen-verzoek-uitdaagrecht
+  naam: werkt uit voor
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 6–[9], var. 2 art. [11]–[14]
+- soort: associatie (gericht)
+  naar: gemeentewet
+  naam: werkt uit
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: aanhef (art. 149 en 150 Gemeentewet); var. 1 art. 1 (uitdaagrecht, art. 150 lid 3)
+- soort: associatie (gericht)
+  naar: participatieverordening
+  naam: is model voor
+  ggm_match: geen
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: aanhef; var. 1 art. [14] lid 2
+regelgever: VNG-modelverordening
+taakveld: 0 Bestuur en Ondersteuning
+beleidsdomein: Besluitvorming
+definitie: VNG-modelverordening voor de verordening waarin een gemeente het betrekken van inwoners bij beleid en het uitdaagrecht regelt.
+beschrijving:
+- Het model werkt art. 150 Gemeentewet uit zoals gewijzigd door de Wet versterking participatie op decentraal niveau (Stb. 2024, 203), in werking sinds 1 januari 2025; de raad stelt de verordening vast op grond van art. 149 en 150 Gemeentewet (2024-vng-model-participatieverordening, aanhef en toelichting).
+- Variant 1 (Inwonersparticipatie en uitdaagrecht) regelt inwonersparticipatie op initiatief van de gemeente, met een plan vooraf, inspraak volgens afdeling 3.4 Awb tenzij het bestuursorgaan een ander proces vaststelt, en een eindverslag achteraf, en daarnaast het verzoek om toepassing van het uitdaagrecht. Variant 2 (Inwonersparticipatie en overheidsparticipatie) voegt overheidsparticipatie toe, met het uitdaagrecht als onderdeel, en facultatief een zorgplicht van het bestuursorgaan, een participatiejaarverslag en een experimenteerprogramma (2024-vng-model-participatieverordening; 2024-vng-implementatiehandleiding-model-participatieverordening).
+- Bepalingen tussen haken zijn facultatief of door de gemeente in te vullen, zoals de termijnen; de nummering van de artikelen verschilt daardoor per gemeente (2024-vng-model-participatieverordening, leeswijzer).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
+kwaliteitsdoelen:
+- id: id-d78c3f24-70bd-11e4-67ab-0050568a6200
+  sterkte: ++
+  onderbouwing: Het model verplicht het bestuursorgaan het plan, het eindverslag en de onderbouwde reactie op een verzoek binnen een termijn openbaar te maken.
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 3 lid 1, art. 5 lid 1, art. [8] lid 6
+- id: id-d78c3f24-70bd-11e4-67ab-0050568a6202
+  sterkte: +
+  onderbouwing: Inwoners en maatschappelijke partijen dienen een verzoek altijd bij het college in, dat binnen een termijn reageert en facultatief laagdrempelige ondersteuning biedt.
+  bronnen:
+  - 2024-vng-model-participatieverordening
+  vindplaats: var. 1 art. 6 lid 1, art. 7, art. [8] lid 5
+status: review
+beslist:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    data_object: nee
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  kwaliteitsdoelen:
+  - gemma_id: id-d78c3f24-70bd-11e4-67ab-0050568a6200
+    gemma_naam: Transparant
+    gemma_definitie: Burgers en bedrijven kunnen gemakkelijk te weten komen hoe de overheid werkt en krijgen inzicht waarom ze voor bepaalde dienstverlening wel of niet in aanmerking komen. De overheid houdt hen op de hoogte van het verloop van procedures waarbij ze betrokken zijn. De overheid zorgt ervoor dat haar werkwijze transparant is, kan zich hierover verantwoorden en stelt de informatie die hiervoor nodig is actief beschikbaar. Burgers en bedrijven kunnen de prestaties van overheden vergelijken, controleren en beoordelen. De overheid stelt de informatie die daarvoor nodig is actief beschikbaar. Dit is belangrijk voor het vertrouwen van burgers en bedrijven in de overheid.
+  - gemma_id: id-d78c3f24-70bd-11e4-67ab-0050568a6202
+    gemma_naam: Ontvankelijk
+    gemma_definitie: Burgers en bedrijven kunnen gemakkelijk terecht bij de dienstverlener met verzoeken, ideeën voor verbetering, meldingen of klachten. De overheidsdienstverlener herstelt met deze inbreng fouten, compenseert tekortkomingen en leert hiervan om haar dienstverlening continu te verbeteren. Bij innovaties en het vernieuwen van diensten is het belangrijk om alle belanghebbenden in beeld te hebben en te betrekken. Bij inzet van nieuwe technologieën wordt rekening gehouden met de waarden, belangen, verwachtingen en zorgen van burgers en bedrijven.
+  pad: elementpaginas/motivatie/beleidskaders/gemeentelijke-regelgeving/model-participatieverordening.md

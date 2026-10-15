@@ -2,10 +2,11 @@
 id: beleidsnota
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Beleidsnota
 onderwerpen:
 - besluitvorming
+- participatie
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
 definitie: Document waarin de gemeente haar beleid voor een onderwerp vastlegt, met de doelen en uitgangspunten.
@@ -26,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beleidsnota.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -83,6 +84,7 @@ Alleen de kenmerken met ja; de overige 51 zijn nee.
 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
+| [Uitvoeren inwonersparticipatie](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/uitvoeren-inwonersparticipatie.md) | stelt het plan op aan de hand van (participatiebeleid) *toegang (raadplegen)* | Beleidsnota | [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 3 lid 1; var. 2 art. [7] lid 1) |
 | [Uitvoeren uniforme openbare voorbereidingsprocedure](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md) | legt het ontwerp ter inzage bij inspraak *toegang (raadplegen)* | Beleidsnota | [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (Gemeentewet art. 150 lid 2; Awb art. 3:11) |
 
 ## Herkomst
