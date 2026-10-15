@@ -445,6 +445,19 @@ def bronduidingen(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
     return fouten
 
 
+def citaten(wiki_root: Path) -> list[str]:
+    """Signaal: een citaat in een bronduiding dat niet letterlijk in de bron staat (`tools/bronduiding.py`). Een citaat is
+    letterlijk (regel Elke claim een bron); een verschil in leestekens of opmaak telt niet."""
+    import bronduiding
+
+    repo = paths.find_repo_root(wiki_root)
+    uit = []
+    for pad in gam_gemeen.bronduidingen(wiki_root):
+        page = frontmatter.read(pad)
+        uit += [f"{pad.relative_to(wiki_root).as_posix()}: {m} (regel Elke claim een bron)" for m in bronduiding.controleer(repo, page.meta.get("bronnen") or [], page.body)]
+    return uit
+
+
 def modelbestanden(wiki_root: Path) -> list[str]:
     """De omzettingen van het GGM en het GEMMA-model in `sources/modellen/` zijn gemaakt door llmwiki en worden niet met
     de hand bewerkt."""
