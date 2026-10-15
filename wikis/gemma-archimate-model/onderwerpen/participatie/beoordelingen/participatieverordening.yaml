@@ -121,13 +121,7 @@ relaties:
   vindplaats: Gemeentewet art. 150 lid 3; var. 1 art. 6, [8], var. 2 art. [11], [13]
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Participatie
-besluiten:
-- datum: '2026-10-15'
-  gevolg: opnemen
-  advies: gevolgd
-  redenen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -142,6 +136,8 @@ beslist:
     generiek: false
     typeregel: 21
   voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-gemeentewet-wettekst

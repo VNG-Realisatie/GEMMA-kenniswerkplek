@@ -117,10 +117,8 @@ relaties:
 besluiten:
 - datum: '2026-10-07'
   besluit: Opnemen als gegevensobject zonder GGM-entiteit, kernobject van Beheren stempassen (GGM-terugmelding 17); precedent Akte van de burgerlijke stand.
-  gevolg: opnemen
-  redenen:
-  - gegevensobject zonder sterke GGM-match
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -134,6 +132,8 @@ beslist:
     generiek: false
     typeregel: 21
   voor_te_leggen:
+  - gegevensobject zonder sterke GGM-match
+  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627

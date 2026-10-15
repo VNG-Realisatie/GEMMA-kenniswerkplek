@@ -190,7 +190,7 @@ besluiten:
 - datum: '2026-10-12'
   besluit: Generiek bedrijfsproces met pagina, met Besluit als kernobject; het realiseert de UPL-diensten Bekendmaking en Bekendmaking algemeen verbindend voorschrift. Beslisser wordt eraan toegewezen. Het gemeenteblad staat in de beschrijving.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

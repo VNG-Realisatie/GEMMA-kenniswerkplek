@@ -801,6 +801,7 @@
         "type": "object",
         "required": [
           "datum",
+          "besluit",
           "gevolg"
         ],
         "properties": {
@@ -814,49 +815,21 @@
           },
           "gevolg": {
             "enum": [
-              "opnemen",
               "afwijzen",
               "verwerkt"
             ]
           },
-          "advies": {
-            "enum": [
-              "gevolgd"
-            ],
-            "description": "De redacteur volgde het advies van de AI: een besluit zonder tekst"
-          },
-          "redenen": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "minLength": 1
-            },
-            "description": "De voorgelegde redenen (uit beslist.voor_te_leggen) die dit besluit dekt"
-          },
           "stand": {
             "type": "string",
             "minLength": 1,
-            "description": "Bij een besluit dat later herzien is of nog open staat: hoe het nu staat"
+            "description": "Bij een besluit dat nog open staat: hoe het nu staat"
           }
         },
-        "additionalProperties": false,
-        "anyOf": [
-          {
-            "required": [
-              "besluit"
-            ]
-          },
-          {
-            "required": [
-              "advies"
-            ]
-          }
-        ]
+        "additionalProperties": false
       }
     },
     "status": {
       "enum": [
-        "kandidaat",
         "review",
         "goedgekeurd",
         "afgewezen"

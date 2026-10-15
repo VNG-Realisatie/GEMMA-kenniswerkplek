@@ -197,7 +197,7 @@ besluiten:
 - datum: '2026-10-04'
   besluit: Specialiseert zelf het generieke GEMMA-proces (gemma_generiek); geen cluster naar soort werk, want het is het enige deelproces van die soort.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

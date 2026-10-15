@@ -170,7 +170,7 @@ besluiten:
 synoniemen:
 - naam: Treffen maatregel bij besmet lijk
   context: wet
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

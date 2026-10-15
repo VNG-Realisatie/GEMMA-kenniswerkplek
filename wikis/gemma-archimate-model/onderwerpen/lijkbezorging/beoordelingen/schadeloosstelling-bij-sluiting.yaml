@@ -75,9 +75,6 @@ besluiten:
 - datum: '2026-10-01'
   besluit: 'Geen element: gedeputeerde staten stellen haar vast; de gemeente betaalt alleen.'
   gevolg: afwijzen
-  redenen:
-  - 'wordt bewerkt: nee'
-  - 'levenscyclus: nee'
 beslist:
   uitkomst:
     soort: geen_element

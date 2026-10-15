@@ -2,7 +2,7 @@
 id: vervoersdocumenten-stoffelijk-overschot
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Vervoersdocumenten stoffelijk overschot
 onderwerpen:
 - lijkbezorging
@@ -26,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vervoersdocumenten-stoffelijk-overschot.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

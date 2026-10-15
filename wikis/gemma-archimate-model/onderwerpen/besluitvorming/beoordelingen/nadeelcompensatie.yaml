@@ -105,7 +105,7 @@ besluiten:
   besluit: 'Dienst Nadeelcompensatie, gerealiseerd door het generieke bedrijfsproces Behandelen aanvraag nadeelcompensatie. Omgevingswet nadeelcompensatie (UPL nr. 296) is een verwijzing naar een later onderwerp over de Omgevingswet. Geen plek in de Functie-indeling naar domein: GEMMA heeft de functie Schade gerelateerde diensten onder Producten- en dienstenrealisatie publieksdiensten, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
   gevolg: verwerkt
   stand: 'open: Functie-indeling naar domein (todo)'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

@@ -166,7 +166,7 @@ besluiten:
 - datum: '2026-10-05'
   besluit: 'Stoffelijk overschot in lopende tekst: in de beschrijving.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

@@ -66,9 +66,8 @@ GEMMA_TERUGMELDLIJST = gam_gemeen.GEMMA_TERUGMELDLIJST
 BELEIDSDOMEINEN = gam_gemeen.BELEIDSDOMEINEN
 INDELINGSVELDEN = ("afnemer", "domein", "doelgroep", "regelgever")  # waarden zonder verwijzing: ook in de frontmatter
 
-STATUSSEN = ["kandidaat", "review", "goedgekeurd", "afgewezen"]
+STATUSSEN = ["review", "goedgekeurd", "afgewezen"]
 STATUSREGEL = {
-    "kandidaat": "**Status: kandidaat.** Er staat een vraag open voor de redacteur (zie *Ter discussie*).",
     "review": "**Status: review.** Wacht op het akkoord van de redacteur.",
     "goedgekeurd": "**Status: goedgekeurd** door de redacteur.",
 }
@@ -386,7 +385,8 @@ def element_pagina(w: Wiki, bid: str) -> str:
     }
     meta = {k: v for k, v in meta.items() if v not in ([], {}, None, "")}
 
-    r = [f"# {d['begrip']}", "", _gegenereerd(f"de beoordeling {bid}.yaml"), "", STATUSREGEL[status], ""]
+    r = [f"# {d['begrip']}", "", _gegenereerd(f"de beoordeling {bid}.yaml"), "",
+         STATUSREGEL[status] + (" De beslistabel legt dit element voor (zie *Ter discussie*)." if a.get("open") else ""), ""]
     if a.get("zonder_grondslag"):
         r += [_zonder_grondslag_regel(w, van, bid), ""]
     discussie = [f"- {w.tekst(van, x)}" for x in a.get("open", []) + d.get("vragen", [])]
@@ -538,7 +538,7 @@ def _besluit(w: Wiki, van: str, b: dict) -> str:
     """Een besluit: datum, bij een onderwerp het begrip zonder beoordeling, het besluit en de stand."""
     begrip = f"**{b['begrip']}**: " if b.get("begrip") else ""
     stand = f" *Stand: {w.tekst(van, b['stand'])}*" if b.get("stand") else ""
-    tekst = w.tekst(van, b["besluit"]) if b.get("besluit") else f"Advies gevolgd ({b.get('gevolg')})."
+    tekst = w.tekst(van, b["besluit"])
     return f"- {b['datum']}: {begrip}{tekst}{stand}"
 
 

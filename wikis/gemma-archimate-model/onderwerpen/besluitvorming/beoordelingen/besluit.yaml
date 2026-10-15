@@ -112,7 +112,7 @@ besluiten:
 onderwerpen:
 - besluitvorming
 - lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

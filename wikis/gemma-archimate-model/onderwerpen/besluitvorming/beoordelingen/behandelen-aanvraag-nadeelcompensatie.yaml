@@ -170,7 +170,7 @@ besluiten:
 - datum: '2026-10-12'
   besluit: Generiek bedrijfsproces met pagina, met Beschikking als kernobject; het realiseert de UPL-dienst Nadeelcompensatie. Beslisser en Belanghebbende worden eraan toegewezen; de adviescommissie en het recht staan in de beschrijving.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

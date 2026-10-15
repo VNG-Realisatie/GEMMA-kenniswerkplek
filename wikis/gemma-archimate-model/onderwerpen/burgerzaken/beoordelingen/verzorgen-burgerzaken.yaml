@@ -94,12 +94,10 @@ beleidsdomein: Burgerzaken
 besluiten:
 - datum: '2026-10-07'
   besluit: Nieuwe taak boven Bijhouden persoonsgegevens, met voorlopig één proces; de processen voor de akte van de burgerlijke stand (plak 2) en het reisdocument (plak 3) komen erbij. Afwijking van minstens twee processen per kernobject tot plak 2.
-  gevolg: opnemen
+  gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Vervalt: de taak is geen procesniveau meer (besluit 2026-10-08, procesniveaus volgens GEMMA Online, Proceshiërarchie). Boven de levensloopprocessen staat het beleidsdomein Burgerzaken; de beschrijving staat letterlijk, zonder de zin over de taak als groepering, in het register van beleidsdomeinen. Het object in Archi vervalt; een typewijziging naar groepering kan niet (regel Objectbehoud).'
   gevolg: afwijzen
-  redenen:
-  - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen taak voor burgerzaken; Burgerzaken is in GEMMA een beleidsdomein (groepering), geen gedrag.

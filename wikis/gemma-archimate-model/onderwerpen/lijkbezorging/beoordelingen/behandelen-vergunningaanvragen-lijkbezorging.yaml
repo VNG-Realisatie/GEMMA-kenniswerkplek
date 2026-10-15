@@ -135,7 +135,7 @@ besluiten:
 - datum: '2026-10-04'
   besluit: Cluster naar soort werk met vijf deelprocessen, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

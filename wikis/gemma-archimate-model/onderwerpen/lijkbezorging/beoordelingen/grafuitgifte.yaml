@@ -134,7 +134,7 @@ besluiten:
 - datum: '2026-10-11'
   besluit: 'Grafuitgifte (UPL nr. 165) wordt een dienst, volgens de regel dat een UPL-item altijd een dienst is; het besluit van 2026-10-05 (product bij een dienst met een afspraak) is herzien. Graf aanvragen gaat erin op: één dienst Grafuitgifte met de synoniemen Graf aanvragen en Grafrecht aanvragen, en de relaties van beide (Exploiteren van begraafplaatsen omvat haar, Verlenen grafrecht realiseert haar, zij bedient de Rechthebbende op het graf). Zij zet het Archi-object van Graf aanvragen voort. Er komt geen product; de afspraak Grafrecht blijft via Verlenen grafrecht.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

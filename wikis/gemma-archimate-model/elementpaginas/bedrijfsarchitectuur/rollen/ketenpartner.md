@@ -2,7 +2,7 @@
 id: ketenpartner
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Ketenpartner
 onderwerpen:
 - kern
@@ -31,7 +31,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ketenpartner.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

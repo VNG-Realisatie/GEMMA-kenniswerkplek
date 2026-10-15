@@ -118,14 +118,10 @@ naamkeuze:
 besluiten:
 - datum: '2026-09-30'
   besluit: Element op het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; opname akkoord.
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
+  gevolg: verwerkt
 - datum: '2026-10-01'
   besluit: Naam Regeling houden, in lijn met GEMMA; het GGM-homoniem staat bij Homoniemen.
-  gevolg: opnemen
-  redenen:
-  - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+  gevolg: verwerkt
 - datum: '2026-10-06'
   besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
   gevolg: verwerkt
@@ -161,6 +157,8 @@ beslist:
     generiek: false
     typeregel: 21
   voor_te_leggen:
+  - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+  open:
   - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
   bronnen:
   - 2024-rijk-gemeentewet-wettekst

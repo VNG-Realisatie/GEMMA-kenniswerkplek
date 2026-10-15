@@ -2,7 +2,7 @@
 id: besluit-verkrijging-en-verlies-nederlanderschap
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Besluit verkrijging en verlies Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit-verkrijging-en-verlies-nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

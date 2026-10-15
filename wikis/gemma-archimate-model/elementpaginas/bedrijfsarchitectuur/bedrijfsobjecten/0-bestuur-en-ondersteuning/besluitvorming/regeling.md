@@ -37,7 +37,11 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling regeling.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen
 
 ## Betekenis
 

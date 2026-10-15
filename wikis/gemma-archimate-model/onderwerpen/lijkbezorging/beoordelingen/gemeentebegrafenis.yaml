@@ -102,7 +102,7 @@ besluiten:
   besluit: 'Bedrijfsproces met kernobject Gemeentebegrafenis (van melding tot kostenverhaal en afdoening), onder de taak en binnen het ketenproces Bezorgen lijken (kennismodel: een ketenproces bevat bedrijfsprocessen).'
   gevolg: verwerkt
   stand: 'deels herzien door 2026-10-08: levensloopproces dat de bedrijfsinteractie Bezorgen stoffelijk overschot bedient'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

@@ -2,7 +2,7 @@
 
 ## Voorleggen
 
-Leg per fase in één tabel voor in de chat: in fase 1 de uitkomst van fase A voor het hele onderwerp, in fase 3 na `uv run python tools/beslissen.py` de begrippen met open redenen (`beslist.open`, ook in `ter-beoordeling.md`) en de `vragen:`. Spaar vragen op in `vragen:` van de beoordeling; alleen een blokkerende vraag (zonder het antwoord kun je niet verder) komt meteen. Voor te leggen is wat een keuze van de redacteur vraagt: een element met open redenen, een open vraag, twijfel over een kenmerk, een nieuw element of een afwijking van een eerder besluit.
+Leg per fase in één tabel voor in de chat: in fase 1 de uitkomst van fase A voor het hele onderwerp, in fase 3 na `uv run python tools/beslissen.py` de begrippen met redenen om voor te leggen (`beslist.open`, ook in `ter-beoordeling.md`) en de `vragen:`. Spaar vragen op in `vragen:` van de beoordeling; alleen een blokkerende vraag (zonder het antwoord kun je niet verder) komt meteen. Voor te leggen is wat een keuze van de redacteur vraagt: een element met redenen om voor te leggen, een open vraag, twijfel over een kenmerk, een nieuw element of een afwijking van een eerder besluit.
 
 - Context: welk begrip, wat de beslistabel zegt, met de bronpassage.
 - Argumenten voor en tegen, en een advies.
@@ -23,15 +23,12 @@ In een beoordeling:
 ```yaml
 besluiten:
   - datum: 2026-10-01
-    besluit: Opnemen als gegevensobject zonder GGM-entiteit; terugmelding 3.
-    gevolg: opnemen                 # opnemen | afwijzen | verwerkt
-    redenen: [gegevensobject zonder sterke GGM-match]   # letterlijk uit beslist.voor_te_leggen
-    stand: herzien door <datum> (…)      # alleen bij een besluit dat later herzien is of nog open staat
+    besluit: Geen GEMMA-match met Uitvoeren participatie (Omgevingswet): een andere participatie; afgewezen: deelproces van Vaststellen beleid.
+    gevolg: verwerkt                # verwerkt | afwijzen
+    stand: open: …                  # alleen bij een besluit dat nog open staat
 ```
 
-Volgt de redacteur het advies van de AI, dan schrijf je het besluit zonder tekst: `advies: gevolgd` met `gevolg` en `redenen` (het veld `besluit` mag dan ontbreken). De gate blijft: een kandidaat wordt pas `review` na een besluit met `gevolg: opnemen`.
-
-`opnemen` met de gedekte redenen maakt een kandidaat `review`; `afwijzen` maakt hem `afgewezen`; `verwerkt` legt een besluit vast dat de AI in de beoordeling heeft doorgevoerd (bijvoorbeeld een naamkeuze). Daarna weer `tools/beslissen.py`.
+`afwijzen` maakt een element `afgewezen`; `verwerkt` legt een keuze vast die de AI in de beoordeling heeft doorgevoerd. Het ja op opnemen is geen besluit: na `tools/beslissen.py` staat een element op `review`, met de redenen om voor te leggen (`beslist.open`) tot het AKKOORD, dat ze afsluit.
 
 In een onderwerp:
 
@@ -48,26 +45,25 @@ Een besluittekst noemt een regel of een sectie van ARCHITECTURE.md bij naam (reg
 
 ## Wat je vastlegt
 
-| Soort | Vastleggen? |
-|---|---|
-| Regelbesluit: raakt de werkwijze, de beslistabel of het kennismodel | Ja, als regel, na voorleggen (zie Een besluit over de werkwijze). |
-| Afwijking per element, of een herziening | Ja, kort, met de reden. |
-| Keuze waar de beslistabel open laat | Ja, alleen de optie en waarom; bij advies gevolgd zonder tekst. |
-| Naam of tekst | Nee: het resultaat staat in de beoordeling. |
-| Toepassing van een regel of precedent | Nee. |
-| Bevestiging | Nee: het AKKOORD dekt het. |
-| Aanvulling op ontbrekende inhoud | Nee: het wordt een bron. |
-| Uitstel of open punt | Nee: een todo of `vragen:`. |
-| Terugmelding | Nee: de terugmelding is het verslag. |
+Toets: zou een nieuwe Sessie met alleen de bronnen, het kennismodel en de beoordeling de vraag opnieuw stellen, of een ander antwoord kiezen? Dan leg je het vast, kort: de keuze, de reden en het afgewezen alternatief.
 
-Bestaande besluiten blijven staan.
+| Vastleggen | Niet vastleggen (waar het wel staat) |
+|---|---|
+| Een keuze tussen verdedigbare alternatieven die niet uit de beslistabel, een regel of een bron volgt | Het ja op opnemen (het AKKOORD in `log.md`) |
+| Een afgewezen alternatief dat voor de hand ligt | Wat zonder alternatief in de beoordeling staat: naam, type, relatie, tekst |
+| Een afwijking van een regel, de beslistabel, een bron, GGM of GEMMA | De toepassing van een regel of precedent (de regel) |
+| Domeinkennis van de redacteur die in geen bron staat | Uitstel of een open punt (todo of `vragen:`); een terugmelding (het register) |
+| Een afbakening: wat buiten het onderwerp of het model valt | Een herzien besluit (Git) |
+| Een afwijzing, met de reden | Een besluit dat in meer onderwerpen geldt: één keer, als regel (Een besluit over de werkwijze) |
+
+Een besluit is nooit een bron in de inhoud: een kenmerk of beschrijving noemt de bron of regel waarop het besluit steunt.
 
 ## Wat al besloten is
 
-Lees vóór het beoordelen de `besluiten:` van het onderwerp en van de beoordelingen die je bijwerkt; de begrippenlijst van een onderwerp toont de besluiten over het onderwerp. Wat daar staat, vraag je niet opnieuw (regel Navragen). Een besluit dat niet meer past bij de criteria, leg je wel opnieuw voor, met de reden; het nieuwe besluit komt erbij, het oude blijft staan.
+Lees vóór het beoordelen de `besluiten:` van het onderwerp en van de beoordelingen die je bijwerkt; de begrippenlijst van een onderwerp toont de besluiten over het onderwerp. Wat daar staat, vraag je niet opnieuw (regel Navragen). Een besluit dat niet meer past bij de criteria, leg je wel opnieuw voor, met de reden. Het nieuwe besluit vervangt het oude en noemt wat het herziet; Git bewaart het oude.
 
 ## Een besluit over de werkwijze
 
-Een besluit over de werkwijze of de criteria (niet over één begrip of onderwerp) verwerk je waar het geldt: de werkwijze in `AGENTS.md`, de modellering in het kennismodel (`kennismodel/modelleerregels.md` of `tools/kennismodel.py`), het waarom in `ARCHITECTURE.md`, de stappen in de skill. Zonder datum, zonder verwijzing naar het besluit en zonder register: de regel zegt wat nu geldt, Git bewaart de geschiedenis.
+Een besluit over de werkwijze of de criteria, of een besluit dat in meer onderwerpen geldt, verwerk je waar het geldt, met de onderbouwing: de werkwijze in `AGENTS.md`, de modellering in het kennismodel (`kennismodel/modelleerregels.md` of `tools/kennismodel.py`), het waarom in `ARCHITECTURE.md`, de stappen in de skill. Zonder datum, zonder verwijzing naar het besluit en zonder register: de regel zegt wat nu geldt, Git bewaart de geschiedenis.
 
 Een precedent wordt pas een regel na voorleggen: na drie gelijke gevallen legt de AI een voorstel voor een regel voor; na akkoord komt de regel in het kennismodel. Zonder akkoord blijft het een toepassing per geval (regel Per geval).

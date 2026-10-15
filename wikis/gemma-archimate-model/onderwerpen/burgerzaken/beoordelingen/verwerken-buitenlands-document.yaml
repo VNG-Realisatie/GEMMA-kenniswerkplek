@@ -171,7 +171,7 @@ besluiten:
 - datum: '2026-10-10'
   besluit: Bijhoudingsgemeente en Beslisser krijgen een toewijzing naar dit bedrijfsproces, met de bronnen van het kenmerk toegewezen partij, zoals bij de andere bedrijfsprocessen onder Bijhouden persoonsgegevens.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

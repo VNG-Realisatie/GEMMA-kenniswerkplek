@@ -114,7 +114,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'De Wet griffierechten burgerlijke zaken is bron en geen beleidskader: art. 23 bevat alleen het tarief. De bevoegdheidsgrondslag van de gemeentelijke legalisatie is niet gevonden (verificatie nodig). Regel: een wet die de UPL als grondslag noemt, wordt als bron opgehaald en dan beoordeeld of ze een beleidskader wordt.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

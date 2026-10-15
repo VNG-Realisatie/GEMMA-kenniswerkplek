@@ -41,8 +41,6 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Buiten scope: verleent het Nederlanderschap bij koninklijk besluit op voordracht van de minister, zonder structurele samenwerking met de gemeente; genoemd in de beschrijving van Beheren Nederlanderschap.'
   gevolg: afwijzen
-  redenen:
-  - 'gemeentelijk: nee'
 beslist:
   uitkomst:
     soort: buiten_scope

@@ -108,10 +108,8 @@ beleidsdomein: Burgerzaken
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: werkt de registers en akten van de burgerlijke stand uit; grondslag van Bijhouden burgerlijke stand.'
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

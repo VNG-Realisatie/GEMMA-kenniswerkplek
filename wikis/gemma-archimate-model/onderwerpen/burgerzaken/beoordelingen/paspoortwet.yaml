@@ -146,10 +146,8 @@ relaties:
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: grondslag van Beheren reisdocumenten, de deelprocessen en de diensten van reisdocumenten.'
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

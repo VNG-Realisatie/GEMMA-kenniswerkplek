@@ -45,7 +45,7 @@ kennismodel; het rapport noemt wat wegvalt.
 Een UPL-dienst zonder landelijke wettelijke grondslag (`beslist.zonder_grondslag`, regel Wettelijke grondslag) gaat niet
 mee: ze is geen wettelijke taak. Het rapport noemt haar.
 
-Alleen begrippen met status `goedgekeurd` (akkoord van de redacteur); `--concept` neemt ook kandidaat en review mee,
+Alleen begrippen met status `goedgekeurd` (akkoord van de redacteur); `--concept` neemt ook review mee,
 voor het bekijken, en schrijft naar het kladblok. Het GEMMA-model moet als Archi-bestand zijn ingelezen
 (tools/gemma.py release <bestand.archimate>): de AMEFF heeft geen map-id's.
 
@@ -1107,7 +1107,7 @@ def main(argv: list[str] | None = None) -> int:
     import gemma
 
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--concept", action="store_true", help="Ook kandidaat en review, alleen om te bekijken")
+    parser.add_argument("--concept", action="store_true", help="Ook review, alleen om te bekijken")
     parser.add_argument("--uit", type=Path, help="Ander uitvoerbestand")
     parser.add_argument("--check", action="store_true", help="Alleen de voorwaarden controleren")
     parser.add_argument("--rapport", action="store_true", help="Het volledige rapport tonen (standaard: kop en tellingen)")

@@ -99,7 +99,6 @@ besluiten:
 - datum: '2026-10-15'
   besluit: Beleidskader met thuis Bestuur en organisatie, in plaats van een verwijzing; in de ronde Participatie alleen de relaties voor Participatie, die van de andere onderwerpen volgen later.
   gevolg: verwerkt
-  advies: gevolgd
 definitie: Wet die de inrichting, de bestuursorganen, de bevoegdheden en de financiën van de gemeente regelt.
 beschrijving:
 - De Gemeentewet regelt de gemeenteraad, het college van burgemeester en wethouders en de burgemeester, hun bevoegdheden en de verordeningen van de raad (2026-rijk-gemeentewet-wettekst).
@@ -109,7 +108,7 @@ per_onderwerp:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor de Gemeentewet; nieuw voor GEMMA.
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

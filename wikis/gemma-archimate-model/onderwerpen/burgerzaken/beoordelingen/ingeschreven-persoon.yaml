@@ -144,7 +144,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Thuisonderwerp Burgerzaken, kenmerk generiek nee: de persoon ontstaat en verandert in de bijhouding van de BRP (regel Thuishoren); geen abstract type met domeinspecialisaties zoals Besluit, maar één concreet object dat andere onderwerpen met relaties gebruiken.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

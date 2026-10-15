@@ -111,9 +111,7 @@ gemma:
 besluiten:
 - datum: '2026-09-30'
   besluit: 'Afspraak (contract): tweezijdig, met rechten en plichten, ook als besluit op aanvraag verleend. Opname akkoord als gegevensobject zonder GGM-entiteit (GGM-terugmelding 4).'
-  gevolg: opnemen
-  redenen:
-  - gegevensobject zonder sterke GGM-match
+  gevolg: verwerkt
 - datum: '2026-10-05'
   besluit: 'Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie; uitsluitend recht blijft (wetsterm).'
   gevolg: verwerkt
@@ -128,7 +126,7 @@ relaties:
   vindplaats: Wlb art. 23 lid 2; Groningen art. 1 p
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -142,6 +140,8 @@ beslist:
     generiek: false
     typeregel: 20
   voor_te_leggen:
+  - gegevensobject zonder sterke GGM-match
+  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

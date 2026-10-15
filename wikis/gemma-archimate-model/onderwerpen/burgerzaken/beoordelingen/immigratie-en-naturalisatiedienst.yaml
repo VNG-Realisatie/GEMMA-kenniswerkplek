@@ -91,8 +91,6 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Rijkskant (plak 4): geen eigen actor; het Rijk is de actor (GEMMA-actor Rijk) die Ketenpartner vervult, en de minister van Justitie en Veiligheid met de IND staat in de beschrijving van Rijk.'
   gevolg: afwijzen
-  redenen:
-  - 'soort partij: nee'
 beslist:
   uitkomst:
     soort: geen_element

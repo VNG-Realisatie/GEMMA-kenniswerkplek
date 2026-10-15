@@ -188,7 +188,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Bedrijfsproces, geen ketenproces: de burgemeester besluit tot afgifte; RDW en CBR zijn producent en bron van invoer en geen eigen actor. De omwisseling van een buitenlands rijbewijs is een deelproces waarin de gemeente doorgeleidt.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

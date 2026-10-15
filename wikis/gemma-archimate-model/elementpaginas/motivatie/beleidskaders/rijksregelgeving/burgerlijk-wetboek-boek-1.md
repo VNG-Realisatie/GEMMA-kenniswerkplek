@@ -2,7 +2,7 @@
 id: burgerlijk-wetboek-boek-1
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Burgerlijk Wetboek Boek 1
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling burgerlijk-wetboek-boek-1.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

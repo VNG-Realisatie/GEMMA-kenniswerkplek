@@ -163,7 +163,7 @@ besluiten:
   besluit: Generiek bedrijfsproces met pagina, gekoppeld aan het GEMMA-proces Behandelen klacht; het realiseert de UPL-dienst Klacht en heeft het bedrijfsobject Klaagschrift als kernobject. Beslisser en Klager worden eraan toegewezen. Mondelinge klachten en de klachtadviescommissie staan in de beschrijving.
   gevolg: verwerkt
   stand: 'herzien 2026-10-12: het kernobject heet Schriftelijke klacht, met Klaagschrift als synoniem (regel Bronvoorrang)'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

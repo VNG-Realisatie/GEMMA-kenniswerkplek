@@ -2,7 +2,7 @@
 id: verlof-tot-begraven
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Verlof tot begraven
 onderwerpen:
 - lijkbezorging
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verlof-tot-begraven.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

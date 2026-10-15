@@ -69,8 +69,6 @@ besluiten:
 - datum: '2026-10-01'
   besluit: Geen beleidskader in dit onderwerp; komt terug bij een onderwerp publieke gezondheid.
   gevolg: afwijzen
-  redenen:
-  - 'is grondslag voor: nee'
 beslist:
   uitkomst:
     soort: geen_element

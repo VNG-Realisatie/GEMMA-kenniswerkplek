@@ -132,10 +132,8 @@ regelgever: rijk
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: grondslag van Beheren rijbewijzen, de rijbewijsdiensten en de deelprocessen (de burgemeester besluit tot afgifte, art. 116 en 118a).'
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

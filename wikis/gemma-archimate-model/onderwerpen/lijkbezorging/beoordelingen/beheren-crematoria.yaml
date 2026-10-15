@@ -150,7 +150,7 @@ besluiten:
 - datum: '2026-10-04'
   besluit: Nieuw bedrijfsproces met kernobject Crematorium, met het deelproces Verlenen vergunning bijzonder crematorium.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

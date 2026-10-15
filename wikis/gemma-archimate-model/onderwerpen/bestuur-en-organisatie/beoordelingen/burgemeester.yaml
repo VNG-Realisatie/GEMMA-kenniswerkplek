@@ -131,7 +131,7 @@ besluiten:
   besluit: 'Per geval beoordeeld en verplaatst door `algemeen` als eerste in `onderwerpen` te zetten: de generieke elementen Besluit, Beschikking, Vergunning, Heffing, Heffingsverordening en Regeling en de organen Gemeente, Gemeenteraad, College van B&W en Burgemeester (regel Thuishoren). Lijkbezorging blijft tweede onderwerp met de tekst per onderwerp; de objecten in Archi blijven. De tien beoordelingen zijn weer `review`. Beslisser en Belanghebbende blijven nog voorgelegd.'
   gevolg: verwerkt
   stand: geldt; Belanghebbende open (todo)
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

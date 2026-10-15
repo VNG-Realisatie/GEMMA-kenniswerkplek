@@ -99,7 +99,7 @@ besluiten:
 - datum: '2026-10-12'
   besluit: Nieuw generiek bedrijfsobject, kernobject van Behandelen bezwaar; het GGM kent het niet (GGM-terugmelding hiaat).
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

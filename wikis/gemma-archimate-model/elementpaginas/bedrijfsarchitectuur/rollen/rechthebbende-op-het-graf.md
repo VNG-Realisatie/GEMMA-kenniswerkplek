@@ -2,7 +2,7 @@
 id: rechthebbende-op-het-graf
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Rechthebbende op het graf
 onderwerpen:
 - lijkbezorging
@@ -23,7 +23,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rechthebbende-op-het-graf.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen
 
 ## Betekenis
 

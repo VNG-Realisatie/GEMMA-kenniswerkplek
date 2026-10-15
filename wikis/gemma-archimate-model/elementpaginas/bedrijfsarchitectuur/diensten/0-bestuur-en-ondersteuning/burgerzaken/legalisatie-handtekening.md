@@ -2,7 +2,7 @@
 id: legalisatie-handtekening
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Legalisatie handtekening
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling legalisatie-handtekening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 **Zonder landelijke wettelijke grondslag.** Een UPL-dienst die geen wettelijke taak is: ze wordt beschreven voor zover mogelijk, zonder processen, objecten, gebeurtenissen of rollen, is teruggemeld aan de procesarchitectuur ([nr. 21](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md)) en gaat niet naar het GEMMA-model ([lijst](../../../../overig/zonder-grondslag.md)).
 

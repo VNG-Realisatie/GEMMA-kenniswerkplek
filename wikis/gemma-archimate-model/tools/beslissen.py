@@ -2,9 +2,10 @@
 
 Leest elke beoordeling in `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` (het oordeel van de AI) en vult per beoordeling:
 - `beslist.uitkomst`: de uitkomst van de beslistabel (tools/bepaal_type.py) uit de kenmerken;
-- `beslist.voor_te_leggen` en `beslist.open`: waarom de redacteur moet beslissen, en wat geen besluit dekt;
-- `status` (alleen bij een element): `kandidaat` als er iets open staat, anders `review`; `afgewezen` na het besluit
-  `afwijzen`. `goedgekeurd` blijft staan zolang `log.md` een promotieregel met de hash van de inhoud heeft; zet
+- `beslist.voor_te_leggen` en `beslist.open`: waarom de redacteur moet beslissen, en wat daarvan nog voorligt (bij een
+  element tot het akkoord, bij een begrip zonder pagina tot een besluit `afwijzen`);
+- `status` (alleen bij een element): `review`, of `afgewezen` na het besluit `afwijzen`; de redenen om voor te leggen
+  houden de status niet tegen. `goedgekeurd` blijft staan zolang `log.md` een promotieregel met de hash van de inhoud heeft; zet
   alleen `llmwiki promote` (na akkoord). Elke inhoudelijke wijziging maakt een goedgekeurd element weer `review`;
 - `beslist.pad`: waar het render-script de pagina zet (map en submappen uit wiki.yaml: taakveld en beleidsdomein, bij een functie het domein);
 - `beslist.ggm`, `beslist.ggm_duplicaten`, `beslist.gemma`: de letterlijke velden bij de match die de AI koos
@@ -615,8 +616,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
                 res.fouten.append(f"{bid}: onderwerp '{onderwerp}' heeft geen {gam_gemeen.afbakening_pad(onderwerp).as_posix()}")
         ggm_sterkte = (data.get("ggm") or {}).get("sterkte")
         redenen = bepaal_type.voor_te_leggen(uitkomst, ggm_sterkte)
-        beslist = {"uitkomst": uitkomst, "voor_te_leggen": redenen,
-                    "open": bepaal_type.open_redenen(redenen, data.get("besluiten")),
+        beslist = {"uitkomst": uitkomst, "voor_te_leggen": redenen, "open": [],
                     "bronnen": bronnen, "herkomst": herkomst(ctx, bronnen)}
         status = None
         if uitkomst["soort"] == "element":
@@ -634,6 +634,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             if data.get("status") == "goedgekeurd" and status == "review" \
                     and beoordeling.goedgekeurd_in_log(ctx.log, bid, data):
                 status = "goedgekeurd"
+        beslist["open"] = bepaal_type.open_redenen(redenen, status, data.get("besluiten"))
         for i, b in enumerate(data.get("besluiten") or [], 1):
             _besluittekst(f"{bid}: besluit {i}", b, res)
         res.waarschuwingen += signalen.per_begrip(bid, data, uitkomst, onderwerpnamen, beslist)

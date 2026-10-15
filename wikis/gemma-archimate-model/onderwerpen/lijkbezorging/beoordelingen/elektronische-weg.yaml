@@ -64,8 +64,6 @@ besluiten:
 - datum: '2026-10-01'
   besluit: 'Geen element: ontsluit geen gemeentelijke dienst; input voor de centrale kanalenset.'
   gevolg: afwijzen
-  redenen:
-  - 'ontsluit een dienst: nee'
 beslist:
   uitkomst:
     soort: geen_element

@@ -41,8 +41,6 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Buiten scope: beslist per geval en op verzoek over de vaststelling van het Nederlanderschap, geen structurele samenwerking met de gemeente (precedent Gedeputeerde staten).'
   gevolg: afwijzen
-  redenen:
-  - 'gemeentelijk: nee'
 beslist:
   uitkomst:
     soort: buiten_scope

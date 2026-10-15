@@ -75,7 +75,7 @@ def test_stap_0_synoniem_en_homoniem():
     assert (u.soort, u.genoemd_begrip, u.paginatype) == ("synoniem", "Urn", None)
     u = bt.evalueer(beoordeling(BO, homoniem_van="Regeling (GGM Inkomen)"))
     assert u.soort == "element" and u.voorleggen and any("naamkeuze" in r for r in u.redenen)
-    assert bt.voorgestelde_status(u) == "kandidaat"
+    assert bt.voorgestelde_status(u) == "review"   # voorgelegd bij het akkoord, geen eigen status
 
 
 def test_niet_in_dit_onderwerp_is_verwijzing():
@@ -153,7 +153,7 @@ def test_actor_rol_en_samenwerking():
 
 def test_kanaal_wordt_altijd_voorgelegd():
     u = bt.evalueer(beoordeling(KANAAL))
-    assert u.paginatype == "kanaal" and u.voorleggen and bt.voorgestelde_status(u) == "kandidaat"
+    assert u.paginatype == "kanaal" and u.voorleggen and bt.voorgestelde_status(u) == "review"
 
 
 def test_regeling_landelijk_of_bron():
@@ -180,8 +180,7 @@ def test_bedrijfsinteractie_is_een_element_dat_wordt_voorgelegd():
     keten = BASIS | {"gedrag", "gezamenlijk_gedrag", "toegewezen_partij", "aanleiding", "benoembaar_resultaat"}
     u = bt.evalueer(beoordeling(keten, kernobject="stoffelijk-overschot"))
     assert (u.soort, u.paginatype, u.archimate_type) == ("element", "bedrijfsinteractie", "business-interaction")
-    assert u.voorleggen and bt.REDEN_INTERACTIE in u.redenen and bt.voorgestelde_status(u) == "kandidaat"
-    assert bt.voorgestelde_status(u, besluiten=[{"gevolg": "opnemen", "redenen": [bt.REDEN_INTERACTIE]}]) == "review"
+    assert u.voorleggen and bt.REDEN_INTERACTIE in u.redenen and bt.voorgestelde_status(u) == "review"
     assert any("kernobject ontbreekt" in r for r in bt.evalueer(beoordeling(keten)).redenen)
     assert bt.evalueer(beoordeling(keten - {"toegewezen_partij"})).soort == "geen_element"
 
@@ -192,12 +191,13 @@ def test_aanvullingen():
     assert bt.evalueer(beoordeling(ACTOR)).tegenhanger is None
     data_object = bt.evalueer(beoordeling(BO | {"geautomatiseerd_verwerkt"}))
     assert data_object.data_object == "ja"
-    assert bt.voorgestelde_status(data_object, ggm_match="partieel") == "kandidaat"
-    assert bt.voorgestelde_status(data_object, ggm_match="sterk") == "review"
-    assert bt.voorgestelde_status(bt.evalueer(beoordeling(BO))) == "review"   # geen gegevensobject: geen GGM nodig
-    besluit = {"datum": "2026-10-01", "besluit": "Opnemen.", "gevolg": "opnemen", "redenen": [bt.REDEN_GEEN_GGM]}
-    assert bt.voorgestelde_status(data_object, ggm_match="geen", besluiten=[besluit]) == "review"
+    assert bt.REDEN_GEEN_GGM in bt.voor_te_leggen(data_object, "partieel")
+    assert bt.REDEN_GEEN_GGM not in bt.voor_te_leggen(data_object, "sterk")
+    assert not bt.voor_te_leggen(bt.evalueer(beoordeling(BO)))   # geen gegevensobject: geen GGM nodig
+    assert bt.voorgestelde_status(data_object, ggm_match="partieel") == "review"
+    besluit = {"datum": "2026-10-01", "besluit": "Keuze.", "gevolg": "verwerkt"}
     assert bt.voorgestelde_status(data_object, besluiten=[besluit, {**besluit, "gevolg": "afwijzen"}]) == "afgewezen"
+    assert bt.voorgestelde_status(data_object, besluiten=[{**besluit, "gevolg": "afwijzen"}, besluit]) == "review"
 
 
 def test_buiten_scope_en_eigenschap():
@@ -453,12 +453,13 @@ def test_indelingsvelden_zijn_verplicht_en_beperkt():
     product = bt.evalueer(beoordeling(PRODUCT))
     assert product.voorleggen and "indelingsveld ontbreekt: domein" in product.redenen
     assert "indelingsveld ontbreekt: afnemer" in product.redenen
-    assert bt.voorgestelde_status(product) == "kandidaat"
+    assert bt.voorgestelde_status(product) == "review"
     compleet = bt.evalueer(beoordeling(PRODUCT, domein="Publieksdiensten", afnemer="extern"))
     assert not compleet.voorleggen and bt.voorgestelde_status(compleet) == "review"
-    # een besluit van de redacteur dekt een reden alleen als hij haar noemt
-    assert bt.open_redenen(product.redenen, [{"redenen": ["indelingsveld ontbreekt: domein"]}]) == [
-        "indelingsveld ontbreekt: afnemer"]
+    # de redenen liggen voor tot het akkoord, bij een begrip zonder pagina tot een afwijzing
+    assert bt.open_redenen(product.redenen, "review", None) == product.redenen
+    assert bt.open_redenen(product.redenen, "goedgekeurd", None) == []
+    assert bt.open_redenen(["x"], None, [{"gevolg": "afwijzen"}]) == [] and bt.open_redenen(["x"], None, None) == ["x"]
     # de waarden zijn beperkt
     assert bt.controleer_indelingsvelden({"domein": "Verkeerd", "afnemer": "extern"}, bt.asdict(compleet))
     assert bt.controleer_indelingsvelden({"domein": "Publieksdiensten", "afnemer": "extern"}, bt.asdict(compleet)) == []
@@ -486,11 +487,15 @@ def test_elk_type_met_pagina_is_compleet():
         assert "zelfstandige_specialisatie" in bt.SLEUTELS
 
 
-def test_besluit_zonder_tekst_alleen_bij_advies_gevolgd():
-    schema = bt.schema()
+def test_besluit_heeft_altijd_tekst_en_is_verwerkt_of_afwijzen():
+    validator = jsonschema.Draft202012Validator(bt.schema())
     basis = beoordeling({"herkenbaar"})
-    zonder_tekst = {"datum": "2026-10-15", "gevolg": "opnemen", "redenen": ["x"]}
-    validator = jsonschema.Draft202012Validator(schema)
-    assert any("besluiten" in "/".join(map(str, e.path)) for e in validator.iter_errors({**basis, "besluiten": [zonder_tekst]}))
-    assert not any("besluiten" in "/".join(map(str, e.path))
-                   for e in validator.iter_errors({**basis, "besluiten": [{**zonder_tekst, "advies": "gevolgd"}]}))
+
+    def fout(b: dict) -> bool:
+        return any("besluiten" in "/".join(map(str, e.path)) for e in validator.iter_errors({**basis, "besluiten": [b]}))
+
+    assert not fout({"datum": "2026-10-15", "besluit": "Keuze.", "gevolg": "verwerkt"})
+    assert fout({"datum": "2026-10-15", "gevolg": "afwijzen"})
+    assert fout({"datum": "2026-10-15", "besluit": "Keuze.", "gevolg": "opnemen"})
+    assert fout({"datum": "2026-10-15", "besluit": "Keuze.", "gevolg": "verwerkt", "redenen": ["x"]})
+

@@ -6,7 +6,7 @@ Subcommando's:
 - `toon <id> --oordeel`: de beoordeling zonder `beslist:` en `status:` en zonder de standaard-nee ("Niet van toepassing");
 - `zet <id> <veld> <waarde>`: zet een veld (een punt-pad als `kenmerken.herkenbaar.waarde` mag; de waarde is YAML);
 - `relatie <id> --soort … --naar …`: voeg een relatie toe of vervang die met dezelfde soort en hetzelfde doel (`--verwijder`);
-- `besluit <id> --datum … --gevolg … (--tekst … | --advies-gevolgd)`: voeg een besluit toe;
+- `besluit <id> --datum … --gevolg verwerkt|afwijzen --tekst …`: voeg een besluit toe;
 - `sjabloon upl-dienst <id> --naam … --onderwerp … --kernobject … --bron … (--proces <id> | --proces-naam …)`: zet de
   beoordelingen van een patroon klaar (zie tools/sjablonen.py); de inhoud blijft `TODO` tot de AI haar invult;
 - `normaliseer <id>… | --alle`: de kenmerken in de opgeslagen vorm (de schrijfvorm van één regel, `herkenbaar: ja —
@@ -97,7 +97,7 @@ def besluiten(wiki: Path, onderwerp: str) -> list[str]:
 
     def toon(label: str, lijst: list[dict]) -> None:
         for b in lijst:
-            tekst = b.get("besluit") or "(advies gevolgd)"
+            tekst = b.get("besluit", "")
             stand = f" [stand: {b['stand']}]" if b.get("stand") else ""
             gevolg = f" {b['gevolg']}" if b.get("gevolg") else ""
             uit.append(f"{label} {b.get('datum')}{gevolg}: {tekst}{stand}")
@@ -291,13 +291,9 @@ def relatie(wiki: Path, bid: str, soort: str, naar: str, naam: str | None = None
     return f"{bid}: relatie {soort} naar {naar} {melding}; draai tools/beslissen.py"
 
 
-def besluit(wiki: Path, bid: str, datum: str, gevolg: str, tekst: str | None = None, advies_gevolgd: bool = False,
-            redenen: list[str] | None = None) -> str:
-    if not tekst and not advies_gevolgd:
-        raise Fout("geef --tekst of --advies-gevolgd")
+def besluit(wiki: Path, bid: str, datum: str, gevolg: str, tekst: str) -> str:
     pad, data = _vind(_alle(wiki), bid)
-    nieuw = {"datum": datum, **({"besluit": tekst} if tekst else {}), "gevolg": gevolg,
-             **({"advies": "gevolgd"} if advies_gevolgd else {}), **({"redenen": redenen} if redenen else {})}
+    nieuw = {"datum": datum, "besluit": tekst, "gevolg": gevolg}
     data = _zet_sleutel(data, "besluiten", [*(data.get("besluiten") or []), nieuw])
     _opslaan(wiki, bid, pad, data)
     return f"{bid}: besluit van {datum} toegevoegd; draai tools/beslissen.py"
@@ -330,10 +326,8 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("besluit")
     p.add_argument("id")
     p.add_argument("--datum", required=True)
-    p.add_argument("--gevolg", required=True, choices=["opnemen", "afwijzen", "verwerkt"])
-    p.add_argument("--tekst")
-    p.add_argument("--advies-gevolgd", action="store_true")
-    p.add_argument("--reden", action="append", dest="redenen")
+    p.add_argument("--gevolg", required=True, choices=["verwerkt", "afwijzen"])
+    p.add_argument("--tekst", required=True)
     p = sub.add_parser("sjabloon")
     p.add_argument("patroon", choices=sjablonen.PATRONEN)
     p.add_argument("id")
@@ -371,7 +365,7 @@ def main(argv: list[str] | None = None) -> int:
         elif a.cmd == "normaliseer":
             uit = "\n".join(normaliseer(a.wiki, a.ids, a.alle))
         else:
-            uit = besluit(a.wiki, a.id, a.datum, a.gevolg, a.tekst, a.advies_gevolgd, a.redenen)
+            uit = besluit(a.wiki, a.id, a.datum, a.gevolg, a.tekst)
     except Fout as exc:
         print(f"fout: {exc}")
         return 1

@@ -105,7 +105,7 @@ besluiten:
   besluit: 'Dienst Dwangsom bij niet tijdig beslissen, gerealiseerd door het generieke bedrijfsproces Vaststellen dwangsom bij niet tijdig beslissen; procesarchitectuur-terugmelding: de dienst ontbreekt in de UPL-lijst extern van GEMMA. Geen plek in de Functie-indeling naar domein: GEMMA heeft geen functie voor de dwangsom bij niet tijdig beslissen, en welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
   gevolg: verwerkt
   stand: 'open: Functie-indeling naar domein (todo)'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

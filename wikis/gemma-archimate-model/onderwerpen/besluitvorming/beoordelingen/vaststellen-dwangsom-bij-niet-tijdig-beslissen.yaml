@@ -166,7 +166,7 @@ besluiten:
 - datum: '2026-10-12'
   besluit: Generiek bedrijfsproces met pagina, met Beschikking als kernobject (de vaststelling is een beschikking, art. 4:18); het realiseert de UPL-dienst Dwangsom bij niet tijdig beslissen. Beslisser en Belanghebbende worden eraan toegewezen; de ingebrekestelling start het proces en is geen eigen element.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

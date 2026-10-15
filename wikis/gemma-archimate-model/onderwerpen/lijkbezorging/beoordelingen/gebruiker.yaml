@@ -71,8 +71,6 @@ besluiten:
 - datum: '2026-10-01'
   besluit: 'Geen element: niet toegewezen aan gemeentelijk gedrag.'
   gevolg: afwijzen
-  redenen:
-  - 'voert gedrag uit: nee'
 beslist:
   uitkomst:
     soort: geen_element

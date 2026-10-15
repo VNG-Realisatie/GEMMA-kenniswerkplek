@@ -148,7 +148,7 @@ besluiten:
 - datum: '2026-10-08'
   besluit: Beheerder van de begraafplaats wordt synoniem (context beleid) van deze rol; een zin over het mandaat in de beschrijving (regel Wettelijke grondslag).
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

@@ -2,7 +2,7 @@
 id: behandelen-klacht
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Behandelen klacht
 onderwerpen:
 - besluitvorming
@@ -31,7 +31,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-klacht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

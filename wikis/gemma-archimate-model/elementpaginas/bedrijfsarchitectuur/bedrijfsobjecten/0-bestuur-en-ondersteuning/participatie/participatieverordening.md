@@ -2,7 +2,7 @@
 id: participatieverordening
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Participatieverordening
 onderwerpen:
 - participatie
@@ -26,7 +26,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling participatieverordening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
 
 ## Betekenis
 
@@ -110,7 +114,3 @@ Geen GGM-entiteit. Het GGM kent geen participatieverordening en geen algemene en
 ### Afstemming met GEMMA
 
 Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA, als specialisatie van Regeling.
-
-### Besluiten redacteur
-
-- 2026-10-15: Advies gevolgd (opnemen).

@@ -139,10 +139,8 @@ besluiten:
   gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Estafette: gemeente, houder en officier van justitie werken elk onder eigen verantwoordelijkheid samen, zonder aansturing van het geheel (IK 27-34; PH 144). Wordt een bedrijfsinteractie met kernobject Stoffelijk overschot, bediend door Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis; de aggregaties worden bedieningen, Besmet stoffelijk overschot gemeld gaat naar Toestaan lijkbezorging en Overlijden start de interactie. Het object in Archi (Bezorgen lijken) vervalt: proces naar interactie is een typewijziging (regel Objectbehoud); de interactie is een nieuw object.'
-  gevolg: opnemen
-  redenen:
-  - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -157,6 +155,8 @@ beslist:
     generiek: false
     typeregel: 17
   voor_te_leggen:
+  - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
+  open:
   - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

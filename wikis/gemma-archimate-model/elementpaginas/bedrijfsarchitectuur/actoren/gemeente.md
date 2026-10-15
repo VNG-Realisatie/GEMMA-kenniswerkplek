@@ -2,7 +2,7 @@
 id: gemeente
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Gemeente
 onderwerpen:
 - bestuur-en-organisatie
@@ -26,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeente.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

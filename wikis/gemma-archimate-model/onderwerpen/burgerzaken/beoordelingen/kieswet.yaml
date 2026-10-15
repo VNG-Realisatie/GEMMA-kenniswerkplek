@@ -133,10 +133,8 @@ besluiten:
   gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: Opnemen als beleidskader; grondslag van Beheren stempassen en Registreren kiesgerechtigdheid.
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

@@ -1240,16 +1240,19 @@ def voor_te_leggen(uitkomst: Uitkomst | dict, ggm_match: str | None = None) -> l
     return redenen
 
 
-def open_redenen(redenen: list[str], besluiten: list[dict] | None) -> list[str]:
-    """Redenen die geen besluit van de redacteur dekt. Een besluit dekt de redenen die het noemt."""
-    gedekt = {r for b in besluiten or [] for r in b.get("redenen", [])}
-    return [r for r in redenen if r not in gedekt]
+def open_redenen(redenen: list[str], status: str | None, besluiten: list[dict] | None) -> list[str]:
+    """Wat nog voorgelegd moet worden: bij een element tot het akkoord (`review`), bij een begrip zonder pagina tot een
+    besluit `afwijzen`. Een besluit dekt geen reden; het akkoord of de afwijzing sluit ze af."""
+    if status in ("goedgekeurd", "afgewezen") or (status is None and is_afgewezen({"besluiten": besluiten})):
+        return []
+    return list(redenen)
 
 
 def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None,
                         besluiten: list[dict] | None = None) -> str | None:
-    """`review` als niets meer voorgelegd hoeft te worden; `kandidaat` als er een reden open staat; `afgewezen` als
-    het laatste besluit van de redacteur `afwijzen` is.
+    """`afgewezen` als het laatste besluit van de redacteur `afwijzen` is, anders `review`: het akkoord maakt het
+    element `goedgekeurd`. De redenen om voor te leggen (`voor_te_leggen`) houden de status niet tegen; ze staan bij
+    het element tot het akkoord.
 
     Geen pagina (synoniem, bron, buiten scope, eigenschap, onderdeel, verwijzing, specialisatie, geen element,
     conflict, herkend, geen pagina) → None.
@@ -1257,10 +1260,8 @@ def voorgestelde_status(uitkomst: Uitkomst | dict, ggm_match: str | None = None,
     u = uitkomst if isinstance(uitkomst, dict) else asdict(uitkomst)
     if u["soort"] != "element":
         return None
-    if besluiten and besluiten[-1].get("gevolg") == "afwijzen":
+    if is_afgewezen({"besluiten": besluiten}):
         return "afgewezen"
-    if open_redenen(voor_te_leggen(u, ggm_match), besluiten):
-        return "kandidaat"
     return "review"
 
 
@@ -1446,16 +1447,10 @@ def schema() -> dict:
                                                    "bron van de beschrijving"},
             "vragen": {"type": "array", "items": tekst, "description": "Open vragen aan de redacteur"},
             "besluiten": {"type": "array", "items": {**obj(
-                ["datum", "gevolg"], datum={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
-                besluit=tekst, gevolg={"enum": ["opnemen", "afwijzen", "verwerkt"]},
-                advies={"enum": ["gevolgd"],
-                        "description": "De redacteur volgde het advies van de AI: een besluit zonder tekst"},
-                redenen={"type": "array", "items": tekst,
-                         "description": "De voorgelegde redenen (uit beslist.voor_te_leggen) die dit besluit dekt"},
-                stand={**tekst, "description": "Bij een besluit dat later herzien is of nog open staat: hoe het nu "
-                                               "staat"}),
-                "anyOf": [{"required": ["besluit"]}, {"required": ["advies"]}]}},
-            "status": {"enum": ["kandidaat", "review", "goedgekeurd", "afgewezen"],
+                ["datum", "besluit", "gevolg"], datum={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+                besluit=tekst, gevolg={"enum": ["afwijzen", "verwerkt"]},
+                stand={**tekst, "description": "Bij een besluit dat nog open staat: hoe het nu staat"})}},
+            "status": {"enum": ["review", "goedgekeurd", "afgewezen"],
                        "description": "Door tools/beslissen.py en llmwiki promote; niet zelf invullen"},
             "beslist": {"type": "object", "description": "Door tools/beslissen.py; niet zelf invullen"},
         },

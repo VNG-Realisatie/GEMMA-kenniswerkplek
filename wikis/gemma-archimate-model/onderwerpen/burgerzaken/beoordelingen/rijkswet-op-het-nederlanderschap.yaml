@@ -120,10 +120,8 @@ besluiten:
   gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: Opnemen als beleidskader; grondslag van Beheren Nederlanderschap, de optie, de naturalisatie en de afstand.
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

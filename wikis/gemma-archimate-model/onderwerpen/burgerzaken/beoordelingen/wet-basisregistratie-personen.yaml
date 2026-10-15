@@ -376,10 +376,8 @@ besluiten:
   gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: grondslag van de BRP-diensten in de UPL en kader van Besluit en Regeling BRP.'
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

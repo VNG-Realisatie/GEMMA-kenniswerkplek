@@ -2,7 +2,7 @@
 id: behandelen-aanvraag-beschikking
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Behandelen aanvraag beschikking
 onderwerpen:
 - besluitvorming
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-aanvraag-beschikking.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

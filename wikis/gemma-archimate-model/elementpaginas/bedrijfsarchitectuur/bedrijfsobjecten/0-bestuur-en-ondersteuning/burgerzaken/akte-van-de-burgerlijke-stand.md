@@ -2,7 +2,7 @@
 id: akte-van-de-burgerlijke-stand
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Akte van de burgerlijke stand
 onderwerpen:
 - burgerzaken
@@ -26,7 +26,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling akte-van-de-burgerlijke-stand.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- gegevensobject zonder sterke GGM-match
 
 ## Betekenis
 

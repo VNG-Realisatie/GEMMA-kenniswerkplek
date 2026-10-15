@@ -130,10 +130,8 @@ besluiten:
   stand: 'deels herzien door 2026-10-08: de VOG is orkestratie, geen ketenproces'
 - datum: '2026-10-07'
   besluit: Opgenomen als gegevensobject zonder GGM-entiteit, kernobject van Beheren rijbewijzen (GGM-terugmelding 18).
-  gevolg: opnemen
-  redenen:
-  - gegevensobject zonder sterke GGM-match
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -147,6 +145,8 @@ beslist:
     generiek: false
     typeregel: 21
   voor_te_leggen:
+  - gegevensobject zonder sterke GGM-match
+  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622

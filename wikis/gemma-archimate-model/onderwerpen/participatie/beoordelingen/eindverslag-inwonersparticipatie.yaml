@@ -88,10 +88,8 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 besluiten:
 - datum: '2026-10-15'
+  besluit: 'Geen element, op advies: geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek.'
   gevolg: afwijzen
-  advies: gevolgd
-  redenen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
 status: afgewezen
 beslist:
   uitkomst:

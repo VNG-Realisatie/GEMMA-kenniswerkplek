@@ -136,8 +136,9 @@ def test_elk_paginatype_wordt_afgeleid_en_gerenderd(wiki):
         uitkomst = d["beslist"]["uitkomst"]
         assert (uitkomst["soort"], uitkomst["paginatype"], uitkomst["archimate_type"]) == \
             ("element", paginatype, archimate_type), bid
-        # Een kanaal wordt altijd voorgelegd (centrale set); de rest is na beslissen klaar voor review.
-        assert d["status"] == ("kandidaat" if paginatype == "kanaal" else "review"), (bid, d["beslist"].get("open"))
+        # Na beslissen is elk element klaar voor review; een kanaal ligt voor bij het akkoord (centrale set).
+        assert d["status"] == "review", (bid, d["beslist"].get("open"))
+        assert bool(d["beslist"].get("open")) == (paginatype == "kanaal"), bid
         assert d["beslist"]["pad"].startswith(beslissen.paths.load_wiki_yaml(wiki)["page_types"][paginatype]["dir"])
         assert (wiki / d["beslist"]["pad"]).exists(), bid
     lijst = (wiki / "onderwerpen/test/begrippen.md").read_text(encoding="utf-8")
@@ -160,20 +161,26 @@ def test_beslissen_en_render_zijn_idempotent_en_check_vangt_handwerk(wiki):
     assert render.main(["--wiki", str(wiki), "--check"]) == 0
 
 
-def test_gegevensobject_zonder_ggm_blijft_kandidaat_tot_de_redacteur_beslist(wiki):
+def test_gegevensobject_zonder_ggm_ligt_voor_tot_het_akkoord(wiki):
     _schrijf(wiki, "beschikking", _element("Beschikking", BO | {"generiek", "geautomatiseerd_verwerkt"},
                                            ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}))
     _beslissen(wiki)
     data = _lees(wiki, "beschikking")
-    assert data["status"] == "kandidaat"
+    assert data["status"] == "review"
     assert data["beslist"]["open"] == [bt.REDEN_GEEN_GGM]
     assert "## Ter discussie" in (wiki / data["beslist"]["pad"]).read_text(encoding="utf-8")
 
-    data["besluiten"] = [{"datum": "2026-10-01", "besluit": "Opnemen.", "gevolg": "opnemen",
-                          "redenen": [bt.REDEN_GEEN_GGM]}]
+    data["status"] = "goedgekeurd"
+    _schrijf(wiki, "beschikking", data)
+    logbook.append_log(wiki, "promote", "beschikking", "Redacteur", beoordeling.inhoud_hash(data))
+    _beslissen(wiki)
+    data = _lees(wiki, "beschikking")
+    assert data["status"] == "goedgekeurd" and "open" not in data["beslist"]   # het akkoord sluit de reden af
+
+    data["besluiten"] = [{"datum": "2026-10-01", "besluit": "Keuze.", "gevolg": "verwerkt"}]
     _schrijf(wiki, "beschikking", data)
     _beslissen(wiki)
-    assert _lees(wiki, "beschikking")["status"] == "review"
+    assert _lees(wiki, "beschikking")["status"] == "goedgekeurd"   # een besluit raakt de hash van het akkoord niet
 
     data = _lees(wiki, "beschikking")
     data["besluiten"].append({"datum": "2026-10-02", "besluit": "Toch niet.", "gevolg": "afwijzen"})
@@ -466,7 +473,7 @@ def test_object_zonder_proces_wordt_voorgelegd_en_een_kernobject_is_een_kernobje
     _schrijf(wiki, "graf", _element("Graf", BO, ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}))
     _beslissen(wiki)
     data = _lees(wiki, "graf")
-    assert data["status"] == "kandidaat"
+    assert data["status"] == "review"
     assert any("levensloop" in r for r in data["beslist"]["voor_te_leggen"])
 
     _schrijf(wiki, "beheren-graven", _element("Beheren graven", PROCES, kernobject="graf", afnemer="extern",
@@ -504,8 +511,8 @@ def test_indelingsveld_ontbreekt_wordt_voorgelegd_en_een_onbekende_waarde_is_een
     assert beslissen.beslissen(wiki).fouten == []
     _beslissen(wiki)
     beslist = _lees(wiki, "behandelen-aanvraag")
-    assert beslist["status"] == "kandidaat"
-    assert "indelingsveld ontbreekt: afnemer" in beslist["beslist"]["voor_te_leggen"]
+    assert beslist["status"] == "review"
+    assert "indelingsveld ontbreekt: afnemer" in beslist["beslist"]["open"]
     data["afnemer"] = "allemaal"
     _schrijf(wiki, "behandelen-aanvraag", data)
     assert any("allemaal" in f for f in beslissen.beslissen(wiki).fouten)  # het schema weigert de waarde

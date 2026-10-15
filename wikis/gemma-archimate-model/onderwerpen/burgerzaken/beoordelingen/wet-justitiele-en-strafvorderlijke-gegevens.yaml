@@ -107,10 +107,8 @@ regelgever: rijk
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: grondslag van het ketenproces Afgeven verklaring omtrent het gedrag en de dienst (art. 28 e.v., gemeentelijke taak art. 30 en 39). Het Besluit justitiële en strafvorderlijke gegevens blijft bron, geen kader.'
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

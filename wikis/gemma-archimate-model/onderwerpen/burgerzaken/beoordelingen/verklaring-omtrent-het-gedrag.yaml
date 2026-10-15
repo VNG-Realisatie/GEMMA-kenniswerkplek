@@ -128,7 +128,7 @@ besluiten:
   besluit: 'Binnen Burgerzaken (plak 5), niet een later onderwerp: UPL 360-363 en 434 staan onder 0.2 en op de Utrecht-hubpagina. Rijbewijs is gegevensobject zonder GGM-entiteit en kernobject van het bedrijfsproces Beheren rijbewijzen (de burgemeester besluit tot afgifte; RDW en CBR zijn producent en bron van invoer, geen eigen actor; de omwisseling van een buitenlands rijbewijs is een deelproces waarin de gemeente doorgeleidt, GGM-terugmelding 18). De VOG is kernobject van het ketenproces Afgeven verklaring omtrent het gedrag, met het Rijk (de minister van JenV) als Ketenpartner, zonder GGM-terugmelding. Beleidskaders: Wegenverkeerswet 1994, Reglement rijbewijzen en Wet justitiële en strafvorderlijke gegevens; het Besluit justitiële en strafvorderlijke gegevens is bron.'
   gevolg: verwerkt
   stand: 'deels herzien door 2026-10-08: de VOG is orkestratie, geen ketenproces'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

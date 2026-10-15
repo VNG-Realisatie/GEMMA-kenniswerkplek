@@ -2,7 +2,7 @@
 id: afgeven-laissez-passer
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Afgeven laissez-passer
 onderwerpen:
 - lijkbezorging
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling afgeven-laissez-passer.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

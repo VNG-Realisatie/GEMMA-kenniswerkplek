@@ -36,17 +36,17 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 ## Elementen per type en status
 
-| Type | kandidaat | review | goedgekeurd | afgewezen |
-|---|---|---|---|---|
-| actor | 0 | 0 | 12 | 0 |
-| bedrijfsfunctie | 0 | 0 | 7 | 0 |
-| bedrijfsinteractie | 0 | 0 | 1 | 0 |
-| bedrijfsobject | 0 | 1 | 30 | 1 |
-| bedrijfsproces | 0 | 0 | 81 | 6 |
-| beleidskader | 0 | 0 | 21 | 0 |
-| dienst | 0 | 0 | 85 | 1 |
-| gebeurtenis | 0 | 0 | 20 | 0 |
-| rol | 0 | 0 | 27 | 0 |
+| Type | review | goedgekeurd | afgewezen |
+|---|---|---|---|
+| actor | 8 | 4 | 0 |
+| bedrijfsfunctie | 2 | 5 | 0 |
+| bedrijfsinteractie | 1 | 0 | 0 |
+| bedrijfsobject | 29 | 2 | 1 |
+| bedrijfsproces | 41 | 40 | 6 |
+| beleidskader | 20 | 1 | 0 |
+| dienst | 27 | 58 | 1 |
+| gebeurtenis | 4 | 16 | 0 |
+| rol | 12 | 15 | 0 |
 
 ## GGM-terugmeldingen
 

@@ -166,7 +166,7 @@ besluiten:
   besluit: Stempas is kernobject van het bedrijfsproces Beheren stempassen onder Verzorgen burgerzaken (stempas, kiezerspas, volmacht); de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie.
   gevolg: verwerkt
   stand: 'deels herzien door 2026-10-08: de taak Verzorgen burgerzaken vervalt; Beheren stempassen is levensloopproces'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

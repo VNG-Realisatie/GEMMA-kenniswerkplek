@@ -113,7 +113,7 @@ besluiten:
 - datum: '2026-10-05'
   besluit: Naam Grafonderhoud, de UPL-naam letterlijk; Onderhoud van graven (beleid) wordt een synoniem.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

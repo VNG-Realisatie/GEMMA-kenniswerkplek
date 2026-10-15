@@ -137,10 +137,8 @@ regelgever: rijk
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: grondslag van de rijbewijsdiensten (UPL 360, 361, 363) en de deelprocessen, onder meer de omwisseling van een buitenlands rijbewijs en de controle van de verklaring van geschiktheid.'
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

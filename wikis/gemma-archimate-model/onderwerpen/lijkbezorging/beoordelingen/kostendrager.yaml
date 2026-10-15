@@ -90,7 +90,7 @@ besluiten:
   gevolg: verwerkt
 beschrijving:
 - Een kostendrager betaalt voor een voorziening of handeling die een ander uitvoert of die hij zelf laat uitvoeren, en kan de kosten soms verhalen.
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

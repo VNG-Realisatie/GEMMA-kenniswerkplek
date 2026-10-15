@@ -35,7 +35,7 @@ Een bron heeft voor de wiki één van drie rollen; haar vorm (document of model)
 
 ### 3.1 Herleidbaar model
 
-Elk element, elk kenmerk en elke relatie is herleidbaar tot een bron, met de vindplaats, of, voor de plek in een overgenomen indeling, tot de relatie uit het model die het script toetst (§4.4), en elk besluit van de redacteur over het model staat bij het begrip of het onderwerp waarover het gaat. Herleidbaarheid geldt voor het model, niet voor de regels, de skills en de documentatie: die zijn consistent en overzichtelijk, en hun geschiedenis staat in Git. Een regel draagt dus geen datum en geen besluit mee, en een besluittekst noemt een regel of sectie bij naam, nooit een bestandspad; zo raakt een herstructurering van de wiki het model niet.
+Elk element, elk kenmerk en elke relatie is herleidbaar tot een bron, met de vindplaats, of, voor de plek in een overgenomen indeling, tot de relatie uit het model die het script toetst (§4.4), en elk inhoudelijk besluit van de redacteur over een begrip of onderwerp staat bij dat begrip of onderwerp. Een besluit dat breder geldt (in meer onderwerpen, of als patroon) wordt één keer bewaard: als regel in het kennismodel, met de onderbouwing in dit document. Herleidbaarheid geldt voor het model, niet voor de regels, de skills en de documentatie: die zijn consistent en overzichtelijk, en hun geschiedenis staat in Git. Een regel draagt dus geen datum en geen besluit mee, en een besluittekst noemt een regel of sectie bij naam, nooit een bestandspad; zo raakt een herstructurering van de wiki het model niet.
 
 ### 3.2 Zacht oordeel, harde vorm
 
@@ -145,8 +145,8 @@ Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update
  1 Onderwerp                    AI+redact. onderwerpen/<onderwerp>/afbakening.yaml                        —
  2 Bronnen en bronduiding       AI         sources/, onderwerpen/<onderwerp>/bronduidingen/                —
  3 Beoordelen                   AI         onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml            —
- 4 Beslissen en renderen        script     status, beslist, alle pagina's                                 kandidaat of review
- 5 Voorleggen (één voor één)    AI→redact. besluiten: in de beoordeling → terug naar 4                    kandidaat → review of afgewezen
+ 4 Beslissen en renderen        script     status, beslist, alle pagina's                                 review
+ 5 Voorleggen (één tabel)       AI→redact. besluiten: in de beoordeling → terug naar 4                    review of afgewezen
  6 Bekijken                     redacteur  llmwiki promote plan; ter-beoordeling.md, pagina's, Source Control
  7 AKKOORD in de chat           redacteur
  8 Vastleggen                   script     llmwiki promote apply; log.md                                  review → goedgekeurd
@@ -156,14 +156,13 @@ Skill [gemma-archimate-model-update](.agents/skills/gemma-archimate-model-update
 
 | Status | Wie | Wanneer |
 |---|---|---|
-| `kandidaat` | `tools/beslissen.py` | er staat een reden open die geen besluit van de redacteur dekt (de beslistabel zegt voorleggen, zoals bij een nieuwe bedrijfsinteractie of een kanaal, of een geautomatiseerd verwerkt object heeft geen sterke GGM-match) |
-| `review` | `tools/beslissen.py` | niets meer voor te leggen; wacht op akkoord |
+| `review` | `tools/beslissen.py` | wacht op akkoord; zegt de beslistabel voorleggen (zoals bij een nieuwe bedrijfsinteractie of een kanaal, of een geautomatiseerd verwerkt object zonder sterke GGM-match), dan staat de reden in `beslist.open` en op de pagina tot het akkoord |
 | `goedgekeurd` | `llmwiki promote apply`, na AKKOORD | met een regel in `log.md` met de hash van de inhoud van de beoordeling |
 | `afgewezen` | `tools/beslissen.py`, na het besluit afwijzen | geen pagina; blijft in de begrippenlijst |
 
-**Wanneer opnieuw akkoord.** De hash dekt de hele beoordeling behalve de scriptvelden `status` en `beslist`. Een inhoudelijke wijziging maakt een goedgekeurde beoordeling weer `review`; een andere opmaak, een nieuw script, een nieuwe modelrelease of een ander filter in het kennismodel niet. De pre-commit-controle `goedgekeurd-guard` weigert `goedgekeurd` zonder overeenkomende regel in `log.md`, en `log-alleen-aanvullen` weigert een gewijzigde of verwijderde regel.
+**Wanneer opnieuw akkoord.** De hash dekt de hele beoordeling behalve de scriptvelden `status` en `beslist` en de `besluiten`: het akkoord keurt het model goed, niet het verslag van de besluiten. Een inhoudelijke wijziging maakt een goedgekeurde beoordeling weer `review`; een andere opmaak, een nieuw script, een nieuwe modelrelease, een ander filter in het kennismodel of een gewijzigd besluit niet. De pre-commit-controle `goedgekeurd-guard` weigert `goedgekeurd` zonder overeenkomende regel in `log.md`, en `log-alleen-aanvullen` weigert een gewijzigde of verwijderde regel.
 
-**Besluiten.** Een besluit over een begrip staat in de `besluiten:` van zijn beoordeling, een besluit over een onderwerp als geheel in de `besluiten:` van het onderwerp; de begrippenlijst van een onderwerp toont ze. Er is geen apart register. Wat al besloten is, vraagt de AI niet opnieuw (regel Navragen). Een besluit over de werkwijze wordt verwerkt in de regel of de skill waar het hoort.
+**Besluiten.** Een besluit legt inhoud vast: een keuze, een afwijking, een afbakening of een afwijzing, niet het ja op opnemen (dat is het akkoord). Een besluit over een begrip staat in de `besluiten:` van zijn beoordeling, een besluit over een onderwerp als geheel in de `besluiten:` van het onderwerp; de begrippenlijst van een onderwerp toont ze. Er is geen apart register, en een herzien besluit verdwijnt (Git bewaart het). Wat al besloten is, vraagt de AI niet opnieuw (regel Navragen). Een besluit over de werkwijze wordt verwerkt in de regel of de skill waar het hoort.
 
 ## 6 Hoe de wiki werkt
 

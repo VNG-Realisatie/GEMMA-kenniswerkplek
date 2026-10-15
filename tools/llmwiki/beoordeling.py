@@ -2,8 +2,9 @@
 
 Een beoordeling is de invoer voor de scripts van de wiki: een beslis-script vult `beslist:` en `status:`, een
 render-script maakt er leesbare pagina's van. Het akkoord van de redacteur hoort bij de inhoud van de beoordeling
-(`inhoud_hash`): alles behalve `status` en `beslist`, want die zetten de scripts. Zo vraagt een andere opmaak of een
-bijgewerkt model geen nieuw akkoord, en een inhoudelijke wijziging wel.
+(`inhoud_hash`): alles behalve `status` en `beslist`, want die zetten de scripts, en `besluiten`, want het akkoord keurt
+het model goed en niet het verslag van de besluiten. Zo vraagt een andere opmaak, een bijgewerkt model of een opgeschoond
+besluit geen nieuw akkoord, en een inhoudelijke wijziging wel.
 
 Waar de beoordelingen staan, zegt `wiki.yaml` `curation.beoordelingen`: een map of een patroon met `*`, relatief aan de
 wiki (bijvoorbeeld `onderwerpen/*/beoordelingen`). Het id van een beoordeling is de bestandsnaam en is uniek in de wiki.
@@ -20,6 +21,7 @@ SNELLE_LOADER = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
 from . import hashing
 
 SCRIPTVELDEN = ("status", "beslist")
+BUITEN_HASH = (*SCRIPTVELDEN, "besluiten")
 
 
 def patroon(wiki_yaml: dict) -> str | None:
@@ -67,7 +69,7 @@ def inhoud(data: dict) -> dict:
 
 
 def inhoud_hash(data: dict) -> str:
-    return hashing.hash_json(inhoud(data))
+    return hashing.hash_json({k: v for k, v in data.items() if k not in BUITEN_HASH})
 
 
 def goedgekeurd_in_log(log_tekst: str, beoordeling_id: str, data: dict) -> bool:

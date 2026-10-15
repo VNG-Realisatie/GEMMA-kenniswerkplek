@@ -2,7 +2,7 @@
 id: besluit-op-de-lijkbezorging
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Besluit op de lijkbezorging
 onderwerpen:
 - lijkbezorging
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit-op-de-lijkbezorging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

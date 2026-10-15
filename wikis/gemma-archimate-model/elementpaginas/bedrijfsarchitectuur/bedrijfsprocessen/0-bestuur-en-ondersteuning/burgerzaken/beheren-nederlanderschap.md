@@ -2,7 +2,7 @@
 id: beheren-nederlanderschap
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Beheren Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -28,7 +28,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beheren-nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

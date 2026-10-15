@@ -157,7 +157,7 @@ besluiten:
 - datum: '2026-10-04'
   besluit: Nieuw bedrijfsproces met kernobject Begraafplaats, met de deelprocessen Verlenen toestemming bijzondere begraafplaats en Sluiten begraafplaats.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

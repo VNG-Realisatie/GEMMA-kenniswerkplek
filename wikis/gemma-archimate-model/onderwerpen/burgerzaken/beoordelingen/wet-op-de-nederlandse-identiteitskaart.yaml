@@ -118,10 +118,8 @@ synoniemen: []
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Opnemen als bron en beleidskader: grondslag van de dienst Identiteitskaart en, voor de identiteitskaart, van de aanvraag, uitreiking, vermissing en inhouding.'
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

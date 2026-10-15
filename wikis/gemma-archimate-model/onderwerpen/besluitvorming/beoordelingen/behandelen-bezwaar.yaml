@@ -171,7 +171,7 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'Generiek bedrijfsproces met pagina, gekoppeld aan het GEMMA-proces Behandelen bezwaar; het realiseert de UPL-dienst Bezwaar en heeft het bedrijfsobject Bezwaarschrift als kernobject. Beslisser en Belanghebbende worden eraan toegewezen. De adviescommissie (art. 7:13) staat in de beschrijving: het bestuursorgaan kan haar instellen.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

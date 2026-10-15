@@ -192,7 +192,7 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Thuisonderwerp Burgerzaken (regel Thuishoren): de ambtenaar maakt alle akten van de burgerlijke stand op en houdt de registers bij (BW 1 art. 16a, 18, 20); het verlof tot begraving of crematie staat onder de tekst per onderwerp van Lijkbezorging. Het object in Archi blijft.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

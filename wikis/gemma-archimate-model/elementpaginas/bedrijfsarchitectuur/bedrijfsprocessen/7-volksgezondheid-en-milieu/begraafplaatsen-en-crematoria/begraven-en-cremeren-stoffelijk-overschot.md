@@ -2,7 +2,7 @@
 id: begraven-en-cremeren-stoffelijk-overschot
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Begraven en cremeren stoffelijk overschot
 onderwerpen:
 - lijkbezorging
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling begraven-en-cremeren-stoffelijk-overschot.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

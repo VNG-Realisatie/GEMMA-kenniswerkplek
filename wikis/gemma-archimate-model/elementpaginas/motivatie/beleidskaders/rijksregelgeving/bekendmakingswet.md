@@ -2,7 +2,7 @@
 id: bekendmakingswet
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Bekendmakingswet
 onderwerpen:
 - besluitvorming
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bekendmakingswet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

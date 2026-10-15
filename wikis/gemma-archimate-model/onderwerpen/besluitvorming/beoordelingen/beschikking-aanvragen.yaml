@@ -117,7 +117,7 @@ besluiten:
   besluit: 'Generieke dienst Beschikking aanvragen, met de UPL-naam Beschikking als synoniem (geen homoniem van het bedrijfsobject), gerealiseerd door het generieke bedrijfsproces Behandelen aanvraag beschikking. De specialisatierelaties van de diensten en processen op aanvraag in de onderwerpen naar deze generieke elementen volgen later (todo). Geen plek in de Functie-indeling naar domein: welke elementtypen op welk niveau worden ingedeeld, moet eerst worden bepaald (todo, Indelingen).'
   gevolg: verwerkt
   stand: 'open: Functie-indeling naar domein en specialisaties (todo)'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

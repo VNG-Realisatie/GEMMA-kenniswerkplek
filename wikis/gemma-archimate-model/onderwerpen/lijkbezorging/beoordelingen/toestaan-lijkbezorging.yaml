@@ -213,14 +213,14 @@ besluiten:
   stand: 'deels herzien door 2026-10-08: levensloopprocessen die de bedrijfsinteractie Bezorgen stoffelijk overschot bedienen'
 - datum: '2026-10-07'
   besluit: Nieuw bedrijfsproces voor het deel van de gemeente als overheid binnen Bezorgen stoffelijk overschot, met acht deelprocessen; de groep arts valt weg omdat in het model alleen de gemeentelijke lijkschouwer schouwt. Kernobject Stoffelijk overschot, zoals het ketenproces. Naam Toestaan lijkbezorging.
-  gevolg: opnemen
+  gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Eén levensloopproces per partij: Toestaan lijkbezorging (de gemeente als overheid) en Begraven en cremeren stoffelijk overschot (de houder) blijven allebei levensloopproces van Stoffelijk overschot. Afgewezen: één levensloopproces Bezorgen stoffelijk overschot met de tien bedrijfsprocessen, en Toestaan lijkbezorging als enige levensloopproces.'
   gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Levensloopproces van de gemeente als overheid voor het stoffelijk overschot, één per partij in de ketensamenwerking: bedient de bedrijfsinteractie Bezorgen stoffelijk overschot in plaats van erin te hangen (procesniveaus volgens GEMMA Online, Proceshiërarchie).'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

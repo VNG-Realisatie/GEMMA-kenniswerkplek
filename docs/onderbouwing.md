@@ -910,6 +910,8 @@ Voor curatie-wiki's is dit voorstel vervangen door 5.13c; voor sync-wiki's met `
 
 **Afgewezen.** Concepten in de werkboom laten schrijven door de AI met het oude voorstel erbij (de diffs bleven ruis van handmatige opmaak); pagina's pas na het akkoord renderen (de redacteur zou YAML moeten lezen in plaats van pagina's); oude pagina's omzetten naar beoordelingen (de criteria waren zo veranderd dat bijna alles opnieuw moest; de oude pagina's staan onder tag `voor-herbeoordeling`).
 
+**Herzien 2026-10-15.** Het besluit `opnemen` met de redenen die het dekt, en de status `kandidaat` die het ophief, vervallen. Het was een procesmatig ja dat ook na het akkoord moest blijven staan, en omdat de besluiten in de inhoudshash zaten, kostte elke opschoning van een besluit een nieuw akkoord. Nu staat een element na beslissen op `review`; de redenen om voor te leggen staan bij het element en in de tabel voor de redacteur tot het akkoord, dat ze afsluit. De inhoudshash dekt de besluiten niet meer: het akkoord keurt het model goed, niet het verslag van de besluiten. Een besluit legt alleen nog inhoud vast (een keuze, afwijking, afbakening of afwijzing); `afwijzen` blijft de route naar `afgewezen`. `goedgekeurd-guard` en de regel in `log.md` blijven ongewijzigd.
+
 ### 5.14 Een wiki als zelfstandig subproject openen
 
 **Gevolgen van de keuze van werkmap.**

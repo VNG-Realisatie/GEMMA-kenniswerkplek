@@ -104,8 +104,8 @@ besluiten:
   gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: Nieuwe gebeurtenis Inlevering van het reisdocument (wetsterm, Paspoortwet art. 56), die Inhouden reisdocument triggert, in plaats van het verval van rechtswege; werkt de processtap Inlevering reisdocument bij.
-  gevolg: opnemen
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

@@ -109,7 +109,7 @@ besluiten:
 - datum: '2026-10-10'
   besluit: 'De relatie *betreft* naar Stoffelijk overschot vervalt: het object volgt uit de indeling onder het levensloopproces Toestaan lijkbezorging, met kernobject Stoffelijk overschot (kennismodel: een gebeurtenis hangt niet direct aan een object).'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

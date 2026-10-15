@@ -124,10 +124,8 @@ relaties:
 besluiten:
 - datum: '2026-10-07'
   besluit: 'Opnemen als beleidskader: werkt de Paspoortwet uit; grondslag van de aanvraag, uitreiking en de aanvraag van een niet-ingezetene.'
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

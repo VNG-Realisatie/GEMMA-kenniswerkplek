@@ -105,14 +105,12 @@ regelgever: VNG-modelverordening
 besluiten:
 - datum: '2026-10-08'
   besluit: 'Opnemen als beleidskader in Gemeentelijke regelgeving, grondslag van Asverstrooiing (art. 5:36 lid 3); bron is de openbare kopie van november 2023 (Opmeer), opgenomen met de VNG als eigenaar. Thuisonderwerp Algemeen, generiek: de APV regelt veel beleidsdomeinen.'
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
+  gevolg: verwerkt
   stand: 'herzien 2026-10-11: een VNG-modelverordening is nooit grondslag; de relatie naar Asverstrooiing heet werkt uit voor; de Model-APV blijft beleidskader (besluit 2026-10-11)'
 - datum: '2026-10-11'
   besluit: 'Blijft beleidskader in de groep VNG-modelverordening, als gemeenschappelijke vorm van de gemeentelijke uitwerking: een VNG-modelverordening is een modelverordening van de VNG voor alle gemeenten, een bron zoals de regeling van een gemeente, maar nooit grondslag (regel Bronvoorrang). Het kenmerk is grondslag voor blijft ja en telt de relaties werkt uit voor.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

@@ -103,7 +103,7 @@ besluiten:
   gevolg: verwerkt
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

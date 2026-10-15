@@ -40,9 +40,9 @@ def test_zoek_naam_synoniem_id_en_deel(wiki):
 
 def test_besluiten_van_onderwerp_en_begrip(wiki):
     assert cli.zet(wiki, "besluit", "kernobject", "aanvraag")
-    cli.besluit(wiki, "besluit", "2026-10-02", "opnemen", advies_gevolgd=True)
+    cli.besluit(wiki, "besluit", "2026-10-02", "verwerkt", "Breder begrip boven Beschikking.")
     uit = cli.besluiten(wiki, "demo")
-    assert uit[0].startswith("[demo] 2026-10-01") and "(advies gevolgd)" in uit[1]
+    assert uit[0].startswith("[demo] 2026-10-01") and "verwerkt: Breder begrip" in uit[1]
     with pytest.raises(cli.Fout):
         cli.besluiten(wiki, "bestaatniet")
 
@@ -82,14 +82,11 @@ def test_relatie_toevoegen_vervangen_verwijderen(wiki):
         cli.relatie(wiki, "aanvraag", "onzin", "besluit")
 
 
-def test_besluit_met_tekst_of_advies(wiki):
+def test_besluit_met_tekst(wiki):
     pad = wiki / "onderwerpen" / "demo" / "beoordelingen" / "besluit.yaml"
-    cli.besluit(wiki, "besluit", "2026-10-15", "opnemen", tekst="Opnemen.", redenen=["reden"])
-    cli.besluit(wiki, "besluit", "2026-10-16", "opnemen", advies_gevolgd=True)
-    b = beoordeling.laad(pad)["besluiten"]
-    assert b[0]["besluit"] == "Opnemen." and b[1] == {"datum": "2026-10-16", "gevolg": "opnemen", "advies": "gevolgd"}
-    with pytest.raises(cli.Fout):
-        cli.besluit(wiki, "besluit", "2026-10-17", "opnemen")
+    cli.besluit(wiki, "besluit", "2026-10-15", "verwerkt", "Breder begrip.")
+    assert beoordeling.laad(pad)["besluiten"][-1] == {"datum": "2026-10-15", "besluit": "Breder begrip.",
+                                                      "gevolg": "verwerkt"}
 
 
 def test_compacte_waarschuwingen():

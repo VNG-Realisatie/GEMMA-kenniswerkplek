@@ -11,8 +11,8 @@ met het woord AKKOORD in de chat. Daarna vraagt het harness nog om één klik op
   `log.md` met de inhoudshash en de naam van de redacteur (`git config user.name`), en het render-script
   (`curation.render`).
 
-Het akkoord hoort bij de inhoud van de beoordeling (`beoordeling.inhoud_hash`). Een nieuwe opmaak of een bijgewerkt
-model raakt die niet; een inhoudelijke wijziging zet het element via het beslis-script terug op `review`.
+Het akkoord hoort bij de inhoud van de beoordeling (`beoordeling.inhoud_hash`), zonder de besluiten. Een nieuwe opmaak,
+een bijgewerkt model of een opgeschoond besluit raakt die niet; een inhoudelijke wijziging zet het element via het beslis-script terug op `review`.
 """
 from __future__ import annotations
 

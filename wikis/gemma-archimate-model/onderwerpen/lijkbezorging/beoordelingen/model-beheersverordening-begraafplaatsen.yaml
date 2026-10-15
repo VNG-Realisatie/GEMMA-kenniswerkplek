@@ -78,9 +78,7 @@ beleidsdomein: Begraafplaatsen en crematoria
 besluiten:
 - datum: '2026-10-01'
   besluit: Opnemen als beleidskader, met de versie 2010 en de tegenspraak over de termijn in de beschrijving; een actuele versie later opnemen als die openbaar wordt.
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
+  gevolg: verwerkt
 - datum: '2026-10-08'
   besluit: 'Is grondslag voor alleen bij UPL-producten zonder landelijke wettelijke grondslag (Gedenkteken plaatsingsvergunning, Grafonderhoud). De relaties naar Verlenen grafrecht, Vervallen verklaren grafrecht, Ruimen graf, Graf aanvragen en Grafuitgifte heten ''werkt uit voor'': daar is de Wet op de lijkbezorging de grondslag en regelt de verordening de uitvoering (regel Wettelijke grondslag).'
   gevolg: verwerkt
@@ -158,7 +156,7 @@ relaties:
 onderwerpen:
 - lijkbezorging
 regelgever: VNG-modelverordening
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element

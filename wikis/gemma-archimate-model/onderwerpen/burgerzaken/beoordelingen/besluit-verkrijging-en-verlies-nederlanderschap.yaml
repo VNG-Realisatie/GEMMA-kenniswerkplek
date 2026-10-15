@@ -131,10 +131,8 @@ besluiten:
   gevolg: verwerkt
 - datum: '2026-10-07'
   besluit: Opnemen als beleidskader; bron van de gemeentelijke rol bij optie, naturalisatie en afstand (besluit Afbakening Burgerzaken 2026-10-06).
-  gevolg: opnemen
-  redenen:
-  - 'grondslag regelgeving: altijd voorleggen'
-status: goedgekeurd
+  gevolg: verwerkt
+status: review
 beslist:
   uitkomst:
     soort: element

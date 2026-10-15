@@ -125,15 +125,13 @@ specialisaties:
 besluiten:
 - datum: '2026-09-30'
   besluit: Opname akkoord als gegevensobject zonder GGM-entiteit (GGM-terugmelding 3).
-  gevolg: opnemen
-  redenen:
-  - gegevensobject zonder sterke GGM-match
+  gevolg: verwerkt
 - datum: '2026-10-05'
   besluit: 'Stoffelijk overschot in lopende tekst: lijken wordt stoffelijke overschotten in de definitie en in de zin over het register (die beschrijft de inhoud, niet de naam).'
   gevolg: verwerkt
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -147,6 +145,8 @@ beslist:
     generiek: false
     typeregel: 21
   voor_te_leggen:
+  - gegevensobject zonder sterke GGM-match
+  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

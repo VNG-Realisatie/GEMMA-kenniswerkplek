@@ -102,8 +102,6 @@ besluiten:
 - datum: '2026-10-08'
   besluit: 'Vervalt: de taak is geen procesniveau meer (besluit 2026-10-08, procesniveaus volgens GEMMA Online, Proceshiërarchie). Boven de levensloopprocessen staat het beleidsdomein Begraafplaatsen en crematoria; de beschrijving staat letterlijk, zonder de zin over de taak als groepering, in het register van beleidsdomeinen. Het object in Archi vervalt; een typewijziging naar groepering kan niet (regel Objectbehoud).'
   gevolg: afwijzen
-  redenen:
-  - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen taak voor de lijkbezorging. De partiële match met de functie Exploiteren van begraafplaatsen vervalt; die functie is een eigen element dat de processen bedient (besluit 2026-10-04).
