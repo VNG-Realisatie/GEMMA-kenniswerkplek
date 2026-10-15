@@ -11,9 +11,11 @@ De uitkomst staat in [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-
 - **`tools/bronduiding.py citaat` leest geen bron met varianten en artikelnummers tussen haken** (de VNG-modelverordening Participatie): de citaten zijn overgetypt en met `controleer` nagekeken.
 - **Beoordelingsagenten lezen precedenten buiten hun opdracht** (bestaande beoordelingen en code, 3.500 à 5.000 woorden). Sinds het opschonen van de besluiten staan brede besluiten als regel in het kennismodel; meet bij het volgende onderwerp met agenten of het lezen buiten de opdracht afneemt.
 
-## ArchiMate-indeling als eerste selectie in de beslistabel (vraag redacteur 2026-10-15, na de lichtere werkwijze en vóór de Applicatielaag)
+## ArchiMate-indeling, lichtere kenmerken, data-object en capability (plan 2026-10-15)
 
-De AI kiest eerst het vak in de ArchiMate-matrix: de laag (bedrijf, applicatie, technologie, motivatie, …) en het aspect (actieve structuur, gedrag, passieve structuur), met intern of extern. De bestaande kenmerken worden de controle op die keuze. Nu herkent de aard vooral de actieve structuur en het gedrag; een passief ding is "geen van de acht". Product en Locatie passen niet in één aspect; bepaal waar ze komen. Winst: fase A wordt een paar keuzes; de redacteur beoordeelt in de taal van ArchiMate; de applicatielaag wordt een laag in dezelfde matrix. Het raakt `tools/bepaal_type.py`, het schema en alle beoordelingen (omzetting met een script, de uitkomsten moeten gelijk blijven). Een eigen klus op denkniveau hoog.
+Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Stap 1 en 2 zijn gedaan (O2 en O3: ja); volgende stap: stap 3–7, de omzetting.
+
+- **`beslist` uit de beoordeling halen** (uit de analyse van het plan): het blok is 23.000 woorden en wordt meegelezen bij elk precedent; het kan naar een gegenereerd bestand per onderwerp.
 
 ## Herbeoordeling met de nieuwe werkwijze
 
