@@ -7,6 +7,8 @@ Subcommando's:
 - `zet <id> <veld> <waarde>`: zet een veld (een punt-pad als `kenmerken.herkenbaar.waarde` mag; de waarde is YAML);
 - `relatie <id> --soort … --naar …`: voeg een relatie toe of vervang die met dezelfde soort en hetzelfde doel (`--verwijder`);
 - `besluit <id> --datum … --gevolg … (--tekst … | --advies-gevolgd)`: voeg een besluit toe;
+- `sjabloon upl-dienst <id> --naam … --onderwerp … --kernobject … --bron … (--proces <id> | --proces-naam …)`: zet de
+  beoordelingen van een patroon klaar (zie tools/sjablonen.py); de inhoud blijft `TODO` tot de AI haar invult;
 - `normaliseer <id>… | --alle`: de kenmerken in de opgeslagen vorm (de schrijfvorm van één regel, `herkenbaar: ja —
   onderbouwing [bron-id]`, wordt een object; een nee buiten het pad valt weg), met wat op het pad nog open staat.
 
@@ -31,6 +33,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import bepaal_type  # noqa: E402
 import gam_gemeen  # noqa: E402
+import sjablonen  # noqa: E402
 from llmwiki import beoordeling  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
@@ -178,6 +181,38 @@ def normaliseer(wiki: Path, ids: list[str], alles: bool = False) -> list[str]:
     return uit + (["Draai tools/beslissen.py."] if any("genormaliseerd" in r for r in uit) else [])
 
 
+def sjabloon(wiki: Path, patroon: str, params: sjablonen.Params) -> list[str]:
+    """Zet de beoordelingen van een patroon klaar; een bestaande beoordeling blijft ongemoeid (regel Bestaand bijwerken),
+    behalve dat een bestaand proces de relatie realisatie erbij krijgt."""
+    alle = _alle(wiki)
+    try:
+        nieuw = sjablonen.bouw(patroon, params)
+    except sjablonen.SjabloonFout as exc:
+        raise Fout(str(exc)) from exc
+    if params.onderwerp not in gam_gemeen.afbakeningen(wiki):
+        raise Fout(f"onderwerp '{params.onderwerp}' bestaat niet; zie onderwerpen/")
+    for naar in (params.kernobject, params.proces):
+        if naar and naar not in alle:
+            raise Fout(f"geen beoordeling '{naar}'; zoek met `zoek`")
+    bestaat = [b for b in nieuw if b in alle and b != params.proces]
+    if bestaat:
+        raise Fout(f"beoordeling bestaat al: {', '.join(bestaat)}; werk haar bij met `zet` of `relatie`")
+    uit: list[str] = []
+    for bid, data in nieuw.items():
+        if bid == params.proces:
+            continue
+        data, _ = normaliseer_data(data)
+        pad = wiki / "onderwerpen" / params.onderwerp / "beoordelingen" / f"{bid}.yaml"
+        _valideer(wiki, bid, data)
+        pad.parent.mkdir(parents=True, exist_ok=True)
+        beoordeling.schrijf(pad, data)
+        uit.append(f"{bid}: klaargezet, {len(sjablonen.open_todo(data))} TODO's")
+    if params.proces:
+        r = nieuw[params.proces]["relaties"][0]
+        uit.append(relatie(wiki, params.proces, r["soort"], r["naar"], r["naam"], r["bronnen"], r["vindplaats"]))
+    return uit + ["Vervang elke TODO (`toon <id>`, `zet <id> <veld> <waarde>`), dan tools/beslissen.py."]
+
+
 def toon(wiki: Path, bid: str, alleen_oordeel: bool) -> str:
     _, data = _vind(_alle(wiki), bid)
     return beoordeling.dump(oordeel(data) if alleen_oordeel else data)
@@ -299,6 +334,21 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--tekst")
     p.add_argument("--advies-gevolgd", action="store_true")
     p.add_argument("--reden", action="append", dest="redenen")
+    p = sub.add_parser("sjabloon")
+    p.add_argument("patroon", choices=sjablonen.PATRONEN)
+    p.add_argument("id")
+    p.add_argument("--naam", required=True)
+    p.add_argument("--onderwerp", required=True)
+    p.add_argument("--kernobject", required=True)
+    p.add_argument("--bron", action="append", dest="bronnen", default=[])
+    p.add_argument("--upl-nr")
+    p.add_argument("--taakveld")
+    p.add_argument("--beleidsdomein")
+    p.add_argument("--domein")
+    p.add_argument("--proces")
+    p.add_argument("--proces-naam")
+    p.add_argument("--proces-id")
+    p.add_argument("--toegang", choices=["raadplegen", "registreren"])
     p = sub.add_parser("normaliseer")
     p.add_argument("ids", nargs="*")
     p.add_argument("--alle", action="store_true")
@@ -314,6 +364,10 @@ def main(argv: list[str] | None = None) -> int:
             uit = zet(a.wiki, a.id, a.veld, a.waarde)
         elif a.cmd == "relatie":
             uit = relatie(a.wiki, a.id, a.soort, a.naar, a.naam, a.bronnen, a.vindplaats, a.ggm_match, a.verwijder)
+        elif a.cmd == "sjabloon":
+            uit = "\n".join(sjabloon(a.wiki, a.patroon, sjablonen.Params(
+                a.id, a.naam, a.onderwerp, a.kernobject, a.bronnen, a.upl_nr, a.taakveld, a.beleidsdomein, a.domein,
+                a.proces, a.proces_naam, a.proces_id, a.toegang)))
         elif a.cmd == "normaliseer":
             uit = "\n".join(normaliseer(a.wiki, a.ids, a.alle))
         else:

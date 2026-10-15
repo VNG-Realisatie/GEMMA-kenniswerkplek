@@ -42,6 +42,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bepaal_type  # noqa: E402
 import gam_gemeen  # noqa: E402
 import relaties as relatietool  # noqa: E402
+import sjablonen  # noqa: E402
 import signalen  # noqa: E402
 from llmwiki import beoordeling, frontmatter, paths  # noqa: E402
 
@@ -590,6 +591,10 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         uitkomst = uitkomsten[bid]
         if uitkomst is None:
             continue
+        open_todo = sjablonen.open_todo(data)
+        if open_todo:
+            res.fouten.append(f"{bid}: nog een TODO uit een sjabloon in {', '.join(open_todo[:4])}"
+                              f"{' …' if len(open_todo) > 4 else ''} ({len(open_todo)}); vul de onderbouwing in")
         bronnen = bronnen_van(data)
         _controleer_bronnen(ctx, bid, bronnen, res)
         modelbronnen = sorted({b for a in [*bepaal_type.antwoorden(data).values(), *data.get("relaties", []),

@@ -151,3 +151,85 @@ def test_zet_kenmerk_in_schrijfvorm(wiki):
     kenmerken = beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "besluit.yaml")["kenmerken"]
     assert kenmerken["gedrag"] == "nee"
     assert kenmerken["afspraak"] == {"waarde": "nee", "onderbouwing": "Een eenzijdig besluit"}
+
+
+def _sjabloon_wiki(archimate_repo):
+    _, wiki = archimate_repo
+    (wiki / "onderwerpen" / "demo" / "beoordelingen").mkdir(parents=True)
+    (wiki / "onderwerpen" / "demo" / "afbakening.yaml").write_text(yaml.safe_dump(
+        {"naam": "Demo", "niveau": "eigen", "besluiten": [{"datum": "2026-10-01", "besluit": "Afbakening", "gevolg": "opnemen"}]}),
+        encoding="utf-8")
+    bd = wiki / "onderwerpen" / "demo" / "bronduidingen" / "rijksregelgeving"
+    bd.mkdir(parents=True)
+    (bd / "2026-overheid-gemeentewet.md").write_text("# Gemeentewet\n", encoding="utf-8")
+    return wiki
+
+
+def _bron_vervang(wiki, bid):
+    """Vervang elke TODO door een tekst, zoals de AI doet."""
+    import sjablonen
+
+    pad = wiki / "onderwerpen" / "demo" / "beoordelingen" / f"{bid}.yaml"
+    tekst = pad.read_text(encoding="utf-8")
+    pad.write_text(tekst.replace(sjablonen.TODO + ": ", "Onderbouwd: "), encoding="utf-8")
+
+
+def test_sjabloon_dienst_met_nieuw_proces_komt_door_beslissen(archimate_repo):
+    wiki = _sjabloon_wiki(archimate_repo)
+    import sjablonen
+
+    p = sjablonen.Params("beroep", "Beroep", "demo", "besluit", ["2026-overheid-gemeentewet"], upl_nr="54",
+                         taakveld="0 Bestuur en Ondersteuning", beleidsdomein="Besluitvorming", domein="Bestuur",
+                         proces_naam="Voeren verweer in beroep", toegang="raadplegen")
+    # het kernobject moet bestaan
+    bo = {"begrip": "Besluit", "onderwerpen": ["demo"], "kenmerken": _kenmerken(), "definitie": "Besluit.",
+          "beslist": {"uitkomst": {"soort": "element", "archimate_type": "business-object"}}, "status": "review"}
+    beoordeling.schrijf(wiki / "onderwerpen" / "demo" / "beoordelingen" / "besluit.yaml", bo)
+    uit = cli.sjabloon(wiki, "upl-dienst", p)
+    assert uit[0].startswith("beroep: klaargezet") and uit[1].startswith("voeren-verweer-in-beroep: klaargezet")
+    dienst = beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "beroep.yaml")
+    assert "status" not in dienst and "beslist" not in dienst
+    assert dienst["kenmerken"]["aangeboden_gedrag"]["bronnen"] == ["2026-overheid-gemeentewet"]
+    res = beslissen.beslissen(wiki, schrijven=False)
+    assert any("beroep: nog een TODO" in f for f in res.fouten)          # de onderbouwing is verplicht
+    assert not any("kenmerken" in f and "pad" in f for f in res.fouten)
+    for bid in ("beroep", "voeren-verweer-in-beroep"):
+        _bron_vervang(wiki, bid)
+    res = beslissen.beslissen(wiki, schrijven=False)
+    assert not [f for f in res.fouten if f.startswith(("beroep:", "voeren-verweer-in-beroep:"))], res.fouten
+    assert res.uitkomsten["beroep"]["paginatype"] == "dienst"
+    assert res.uitkomsten["voeren-verweer-in-beroep"]["paginatype"] == "bedrijfsproces"
+
+
+def test_sjabloon_bestaand_proces_krijgt_realisatie_en_bestaande_beoordeling_blijft(archimate_repo):
+    wiki = _sjabloon_wiki(archimate_repo)
+    import sjablonen
+
+    for bid in ("besluit", "behandelen"):
+        beoordeling.schrijf(wiki / "onderwerpen" / "demo" / "beoordelingen" / f"{bid}.yaml",
+                            {"begrip": bid, "onderwerpen": ["demo"], "kenmerken": _kenmerken()})
+    p = sjablonen.Params("beschikking-aanvragen", "Beschikking aanvragen", "demo", "besluit", ["2026-overheid-gemeentewet"],
+                         proces="behandelen")
+    uit = cli.sjabloon(wiki, "upl-dienst", p)
+    assert uit[0].startswith("beschikking-aanvragen: klaargezet") and "relatie realisatie naar beschikking-aanvragen" in uit[1]
+    proces = beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "behandelen.yaml")
+    assert proces["relaties"][0]["naar"] == "beschikking-aanvragen" and proces["kenmerken"]
+    with pytest.raises(cli.Fout, match="bestaat al"):
+        cli.sjabloon(wiki, "upl-dienst", p)
+
+
+def test_sjabloon_weigert_onbekend_onderwerp_kernobject_en_foute_opties(archimate_repo):
+    wiki = _sjabloon_wiki(archimate_repo)
+    import sjablonen
+
+    basis = dict(id="d", naam="D", onderwerp="demo", kernobject="bestaatniet", bronnen=["2026-overheid-gemeentewet"],
+                 proces_naam="P")
+    with pytest.raises(cli.Fout, match="geen beoordeling 'bestaatniet'"):
+        cli.sjabloon(wiki, "upl-dienst", sjablonen.Params(**basis))
+    with pytest.raises(cli.Fout, match="onderwerp 'nergens'"):
+        cli.sjabloon(wiki, "upl-dienst", sjablonen.Params(**{**basis, "onderwerp": "nergens"}))
+    with pytest.raises(cli.Fout, match="--bron"):
+        cli.sjabloon(wiki, "upl-dienst", sjablonen.Params(**{**basis, "bronnen": []}))
+    with pytest.raises(cli.Fout, match="niet beide"):
+        cli.sjabloon(wiki, "upl-dienst", sjablonen.Params(**{**basis, "proces": "x"}))
+    assert not list((wiki / "onderwerpen" / "demo" / "beoordelingen").glob("*.yaml"))
