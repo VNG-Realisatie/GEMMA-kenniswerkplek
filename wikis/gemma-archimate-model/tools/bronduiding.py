@@ -24,7 +24,7 @@ import werkpakket  # noqa: E402
 from llmwiki import paths  # noqa: E402
 
 WIKI_ROOT = gam_gemeen.WIKI_ROOT
-VINDPLAATS = re.compile(r"\s*\((?:vindplaats:\s*)?(?P<plaats>[^()]*)\)\s*$")
+VINDPLAATS = re.compile(r"\s*\((?:vindplaats:\s*)?(?P<plaats>(?:[^()]|\([^()]*\))*)\)\s*$")
 WEGLATING = re.compile(r"\s*(?:\[…\]|…|\[\.\.\.\])\s*")
 LID = re.compile(r"^(\d+[a-z]?)\s+\S")
 

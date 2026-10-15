@@ -446,7 +446,7 @@ def bronduidingen(wiki_root: Path, onderwerpen: dict[str, dict]) -> list[str]:
 
 
 def citaten(wiki_root: Path) -> list[str]:
-    """Signaal: een citaat in een bronduiding dat niet letterlijk in de bron staat (`tools/bronduiding.py`). Een citaat is
+    """Harde controle: een citaat in een bronduiding dat niet letterlijk in de bron staat (`tools/bronduiding.py`). Een citaat is
     letterlijk (regel Elke claim een bron); een verschil in leestekens of opmaak telt niet."""
     import bronduiding
 

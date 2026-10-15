@@ -99,6 +99,11 @@ def test_controle_op_letterlijke_citaten(repo):
     assert bronduiding.controleer(repo, ["2026-onbekend"], fout) == []  # een modelbron heeft geen tekst in sources/raw/
 
 
+def test_vindplaats_met_haakjes_in_de_kop(repo):
+    body = "## Citaten\n\n> Een klacht gaat over een gedraging. (vindplaats: kop Klacht (BRP))\n"
+    assert bronduiding.citaten(body) == [("Een klacht gaat over een gedraging.", "kop Klacht (BRP)")]
+
+
 def test_signaal_voor_de_hele_wiki(repo, archimate_repo):
     _, wiki = archimate_repo
     map_ = wiki / "onderwerpen" / "demo" / "bronduidingen" / "rijksregelgeving"

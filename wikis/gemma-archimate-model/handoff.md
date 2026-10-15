@@ -6,8 +6,9 @@ Overdracht naar de volgende Sessie (2026-10-15). Wordt bij elke overdracht overs
 
 - Plan: [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md), stap 1 tot en met 8 uitgevoerd (`git log` op de prefixen `rules:` en `tools:` sinds "rules: afspraken lichtere werkwijze").
 - Stap 8: workspace-check herstelt bruggen van verdwenen skills (G5); woordbudget in `llmwiki lint` via `lint.woordbudget` in `wiki.yaml` (G4); export alleen op verzoek, `afronden.py --export` (G2); de todo is gesplitst in [todo.md](todo.md) (actief) en [todo-later.md](todo-later.md) (E4).
-- Controle: pytest (415) en lint zonder fouten; `render.py --check` en `archimate_export.py --check` slagen.
-- Nog niet gedaan: de 11 citaten die niet letterlijk in de bron staan (per geval aan de redacteur voorleggen: `uv run python tools/bronduiding.py controleer $(find onderwerpen modellen -path '*bronduidingen*' -name '*.md')`; daarna de waarschuwing een fout maken); compacte uitvoer van `llmwiki promote plan`.
+- Controle: pytest (416) en lint zonder fouten; `render.py --check` en `archimate_export.py --check` slagen.
+- De 11 niet-letterlijke citaten zijn per geval met de redacteur hersteld; een citaat dat niet letterlijk in de bron staat is nu een fout in `beslissen.py`.
+- Nog niet gedaan: compacte uitvoer van `llmwiki promote plan`.
 
 ## Scope
 

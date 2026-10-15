@@ -687,7 +687,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
         res.waarschuwingen += signalen.domein_en_beleidsdomein({b: d for b, (_, d) in alle.items()}, elementen,
                                                               ctx.gemma(), gemeld)
     res.fouten += signalen.bronduidingen(wiki_root, onderwerpen) + signalen.modelbestanden(wiki_root)
-    res.waarschuwingen += signalen.citaten(wiki_root)
+    res.fouten += signalen.citaten(wiki_root)
     fouten, waarschuwingen = signalen.wettelijke_grondslag({b: nieuw.get(b, alle[b][1]) for b in alle}, elementen, brontype)
     res.fouten += fouten
     res.waarschuwingen += waarschuwingen
